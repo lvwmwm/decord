@@ -1,11 +1,11 @@
-// Module ID: 3985
-// Function ID: 33089
+// Module ID: 3987
+// Function ID: 33094
 // Name: MobileHomeDrawerExperiment
-// Dependencies: []
+// Dependencies: [1325, 2]
 
-// Module 3985 (MobileHomeDrawerExperiment)
-const obj = { y: "2026-03_file_upload_250_mb_powerup", DateToSystemTimezoneSetter: "File Upload 250MB Powerup", defaultConfig: { delete: true, useEffect: false, httpServerLocation: false }, variations: { [1]: { delete: true, useEffect: true, httpServerLocation: true }, [2]: {} } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerExperiment.tsx");
+// Module 3987 (MobileHomeDrawerExperiment)
+const obj = { name: "2025-10-mobile-home-drawer", kind: "user", defaultConfig: { enableHome: false, landOnHome: false, enablePeekHint: false }, variations: { [1]: { enableHome: true, landOnHome: false, enablePeekHint: true }, [2]: { enableHome: true, landOnHome: true, enablePeekHint: false } } };
+const tmp2 = require("getUnitId")(obj);
+const result = require("set").fileFinishedImporting("modules/home_drawer/native/HomeDrawerExperiment.tsx");
 
 export const MobileHomeDrawerExperiment = tmp2;

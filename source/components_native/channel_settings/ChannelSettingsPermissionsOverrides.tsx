@@ -1,87 +1,93 @@
-// Module ID: 15396
-// Function ID: 117434
+// Module ID: 15513
+// Function ID: 119608
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: []
+// Dependencies: [57, 5, 31, 27, 1391, 1348, 1910, 1838, 3758, 3767, 1849, 653, 33, 4130, 689, 1456, 1557, 566, 3763, 483, 8415, 4140, 1881, 3969, 4470, 1212, 3827, 1920, 1356, 15514, 9122, 4126, 4320, 10179, 5165, 5503, 15518, 15519, 2]
 // Exports: default
 
-// Module 15396 (ChannelSettingsPermissionsOverrides)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-({ View: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[3]));
-const isGuildOwner = arg1(dependencyMap[4]).isGuildOwner;
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
-let closure_14 = importDefault(dependencyMap[9]);
-let closure_15 = importDefault(dependencyMap[10]);
-const tmp2 = arg1(dependencyMap[3]);
-({ PermissionOverrideType: closure_16, HelpdeskArticles: closure_17, Permissions: closure_18 } = arg1(dependencyMap[11]));
-const tmp3 = arg1(dependencyMap[11]);
-({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[12]));
-let obj = arg1(dependencyMap[13]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWER };
-obj.container = obj;
-const tmp4 = arg1(dependencyMap[12]);
-obj.containerContent = { paddingTop: importDefault(dependencyMap[14]).space.PX_16, paddingBottom: importDefault(dependencyMap[14]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[14]).space.PX_12 };
-const obj1 = { paddingTop: importDefault(dependencyMap[14]).space.PX_16, paddingBottom: importDefault(dependencyMap[14]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[14]).space.PX_12 };
-obj.section = { marginBottom: importDefault(dependencyMap[14]).space.PX_16 };
-let closure_21 = obj.createStyles(obj);
-const obj2 = { marginBottom: importDefault(dependencyMap[14]).space.PX_16 };
-const result = arg1(dependencyMap[38]).fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrides.tsx");
+// Module 15513 (ChannelSettingsPermissionsOverrides)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import Text from "Text";
+import get_ActivityIndicator from "wrapURL";
+import { isGuildOwner } from "isGuildOwner";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_createForOfIteratorHelperLoose";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "memoResult1";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
+({ PermissionOverrideType: closure_16, HelpdeskArticles: closure_17, Permissions: closure_18 } = ME);
+({ jsx: closure_19, jsxs: closure_20 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.containerContent = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.section = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("result").fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrides.tsx");
 
 export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   let id;
-  ({ channelId: closure_0, id } = fromCreate);
-  const importDefault = id;
+  let require;
+  ({ channelId: require, id } = fromCreate);
   fromCreate = fromCreate.fromCreate;
-  const importAll = fromCreate;
   let React;
-  const tmp = callback4();
+  let tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = arg1(dependencyMap[15]);
+  let obj = require(1456) /* useNavigation */;
   const navigation = obj.useNavigation();
-  const callback = navigation;
-  let obj1 = arg1(dependencyMap[17]);
+  let obj1 = require(566) /* initialize */;
   const items = [closure_10];
-  const stateFromStores = obj1.useStateFromStores(items, () => channel.getChannel(closure_0));
-  let closure_5 = stateFromStores;
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_10.getChannel(closure_0));
   const items1 = [stateFromStores, id];
-  React = React.useCallback(() => {
+  React = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = stateFromStores(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items1);
+  })(), items1);
   const items2 = [stateFromStores];
   let closure_7 = React.useCallback((VIEW_CHANNEL) => {
-    const guild = guild.getGuild(stateFromStores.guild_id);
-    const currentUser = currentUser.getCurrentUser();
+    const guild = outer1_12.getGuild(stateFromStores.guild_id);
+    const currentUser = outer1_15.getCurrentUser();
     if (null != guild) {
       if (null != currentUser) {
         let canResult = first(guild, currentUser);
         if (!canResult) {
-          canResult = closure_13.can(constants.ADMINISTRATOR, guild);
+          canResult = outer1_13.can(outer1_18.ADMINISTRATOR, guild);
         }
         if (!canResult) {
-          canResult = closure_13.can(constants.MANAGE_ROLES, stateFromStores, undefined, undefined, true);
+          canResult = outer1_13.can(outer1_18.MANAGE_ROLES, stateFromStores, undefined, undefined, true);
         }
         if (stateFromStores.isGuildStageVoice()) {
-          const STAGE_CHANNEL_DISABLED_PERMISSIONS = callback(tmp[28]).STAGE_CHANNEL_DISABLED_PERMISSIONS;
+          const STAGE_CHANNEL_DISABLED_PERMISSIONS = outer1_0(tmp[28]).STAGE_CHANNEL_DISABLED_PERMISSIONS;
           if (STAGE_CHANNEL_DISABLED_PERMISSIONS.has(VIEW_CHANNEL)) {
-            const intl2 = callback(tmp[25]).intl;
-            let stringResult = intl2.string(callback(tmp[25]).t.bTS5lf);
+            const intl2 = outer1_0(tmp[25]).intl;
+            let stringResult = intl2.string(outer1_0(tmp[25]).t.bTS5lf);
           }
           return stringResult;
         }
-        stringResult = VIEW_CHANNEL === constants.MANAGE_ROLES && !canResult;
+        stringResult = VIEW_CHANNEL === outer1_18.MANAGE_ROLES && !canResult;
         if (!stringResult) {
           let tmp15 = null != VIEW_CHANNEL;
           if (tmp15) {
-            tmp15 = !closure_13.can(VIEW_CHANNEL, guild);
+            tmp15 = !outer1_13.can(VIEW_CHANNEL, guild);
           }
           if (tmp15) {
             tmp15 = !canResult;
@@ -89,8 +95,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
           stringResult = tmp15;
         }
         if (stringResult) {
-          const intl = callback(tmp[25]).intl;
-          stringResult = intl.string(callback(tmp[25]).t.nOtPMM);
+          const intl = outer1_0(tmp[25]).intl;
+          stringResult = intl.string(outer1_0(tmp[25]).t.nOtPMM);
         }
       }
     }
@@ -99,53 +105,52 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   const items3 = [stateFromStores, id];
   let closure_8 = React.useCallback((arg0) => {
     let allow;
-    if (null != stateFromStores.permissionOverwrites[closure_1]) {
+    if (null != stateFromStores.permissionOverwrites[id]) {
       allow = tmp.allow;
     }
     if (obj.has(allow, arg0)) {
-      let ALLOW = callback(tmp[18]).ALLOW;
+      let ALLOW = outer1_0(tmp[18]).ALLOW;
     } else {
       let deny;
       if (null != tmp) {
         deny = tmp.deny;
       }
       const hasItem = fromCreate(tmp[19]).has(deny, arg0);
-      const tmp9 = callback(tmp[18]);
+      const tmp9 = outer1_0(tmp[18]);
       ALLOW = hasItem ? tmp9.DENY : tmp9.PASSTHROUGH;
       const obj2 = fromCreate(tmp[19]);
     }
     return ALLOW;
   }, items3);
-  const first = callback(React.useState(() => id(tmp[29]).generateChannelPermissionSpec(stateFromStores.guild_id, stateFromStores, id === stateFromStores.guild_id)), 2)[0];
-  const isGuildOwner = first;
+  const first = navigation(React.useState(() => id(tmp[29]).generateChannelPermissionSpec(stateFromStores.guild_id, stateFromStores, id === stateFromStores.guild_id)), 2)[0];
   const items4 = [fromCreate, navigation];
   const effect = React.useEffect(() => {
     if (fromCreate) {
-      const obj = {
+      let obj = {
         headerRight() {
             const obj = {
               onPress() {
-
+                outer2_4.pop();
               }
             };
-            const intl = callback(closure_3[25]).intl;
-            obj.label = intl.string(callback(closure_3[25]).t.i4jeWR);
-            return callback2(callback(closure_3[30]).HeaderTextButton, obj);
+            const intl = outer2_0(1212).intl;
+            obj.label = intl.string(outer2_0(1212).t.i4jeWR);
+            return outer2_19(outer2_0(9122).HeaderTextButton, obj);
           }
       };
       navigation.setOptions(obj);
     }
   }, items4);
-  obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
-  let obj3 = arg1(dependencyMap[32]);
+  obj = { variant: "text-md/medium", color: "text-muted" };
+  let obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
   obj.children = obj3.computeChannelName(stateFromStores, closure_15, closure_14, true);
-  const tmp6 = callback2(arg1(dependencyMap[31]).Text, obj);
+  const tmp6 = callback(require(4126) /* Text */.Text, obj);
   if (fromCreate.type === constants.MEMBER) {
     obj = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp6 };
-    let tmp7Result = callback2(importDefault(dependencyMap[33]), obj);
+    let tmp7Result = callback(id(10179), obj);
   } else {
-    obj1 = {};
-    const role = role.getRole(stateFromStores.guild_id, id);
+    obj1 = { end: true, label: null, start: true };
+    role = role.getRole(stateFromStores.guild_id, id);
     let name;
     if (null != role) {
       name = role.name;
@@ -156,14 +161,14 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     }
     obj1.label = str;
     obj1.trailing = tmp6;
-    tmp7Result = callback2(arg1(dependencyMap[34]).TableRow, obj1);
-    const tmp7 = callback2;
+    tmp7Result = callback(require(5165) /* TableRowInner */.TableRow, obj1);
+    const tmp7 = callback;
   }
-  const obj2 = { style: tmp.container, contentContainerStyle: items5 };
-  const items5 = [tmp.containerContent, { paddingBottom: tmp.containerContent.paddingBottom + importDefault(dependencyMap[16])().bottom }];
+  let obj2 = { style: tmp.container, contentContainerStyle: items5 };
+  items5 = [tmp.containerContent, { paddingBottom: tmp.containerContent.paddingBottom + id(1557)().bottom }];
   obj3 = { style: tmp.section, children: tmp7Result };
   const items6 = [
-    callback2(closure_7, obj3),
+    callback(closure_7, obj3),
     first.map((permissions) => {
       permissions = permissions.permissions;
       let obj = { style: tmp.section };
@@ -179,25 +184,25 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         let title;
         flag = flag.flag;
         ({ title, description } = flag);
-        const tmp = callback2(flag);
-        let obj = { cachedAt: null, edpbxy: null, children: flag(closure_3[36]).renderDescription(description) };
-        const obj2 = flag(closure_3[36]);
+        const tmp = outer1_7(flag);
+        let obj = { variant: "text-xs/medium", color: "text-subtle", children: outer2_0(15518).renderDescription(description) };
+        const obj2 = outer2_0(15518);
         const tmp2 = null != tmp && tmp;
-        obj = { disabled: tmp4, label: title, subLabel: callback4(flag(closure_3[31]).Text, obj) };
+        obj = { disabled: tmp4, label: title, subLabel: outer2_19(outer2_0(4126).Text, obj) };
         obj = {};
-        const tmp3 = callback4(flag(closure_3[31]).Text, obj);
-        obj.value = callback3(flag);
+        const tmp3 = outer2_19(outer2_0(4126).Text, obj);
+        obj.value = outer1_8(flag);
         obj.disabled = false !== tmp2;
         obj.onValueChange = function onValueChange(arg0) {
-          callback(flag, arg0);
+          outer2_6(flag, arg0);
         };
-        obj.trailing = callback4(callback(closure_3[37]), obj);
-        return callback4(flag(closure_3[34]).TableRow, obj, "row-" + arg1);
+        obj.trailing = outer2_19(id(15519), obj);
+        return outer2_19(outer2_0(5165).TableRow, obj, "row-" + arg1);
       });
-      obj.children = closure_19(callback(closure_19[35]).TableRowGroup, obj);
-      return closure_19(closure_7, obj, "section-" + arg1);
+      obj.children = outer1_19(outer1_0(outer1_19[35]).TableRowGroup, obj);
+      return outer1_19(closure_7, obj, "section-" + arg1);
     })
   ];
   obj2.children = items6;
-  return callback3(closure_8, obj2);
+  return callback2(closure_8, obj2);
 };

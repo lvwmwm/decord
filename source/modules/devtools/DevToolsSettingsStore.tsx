@@ -1,9 +1,16 @@
-// Module ID: 6955
-// Function ID: 55579
+// Module ID: 6960
+// Function ID: 55613
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 6961, 686, 566, 2]
 
-// Module 6955 (_isNativeReflectConstruct)
+// Module 6960 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,26 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = { devWidgetPosition: { 0: "%FunctionPrototype%", 0: "paddingStart" }, sortedScreenKeys: [] };
-let tmp2 = (DeviceSettingsStore) => {
+let obj = { sidebarWidth: 460, lastOpenTabId: null, lastOpenSubTabId: null, displayTools: false, showDevWidget: false, devWidgetPosition: { x: 0, y: 0 }, sortedScreenKeys: [] };
+let tmp2 = ((DeviceSettingsStore) => {
   class DevToolsSettingsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, DevToolsSettingsStore);
-      obj = closure_5(DevToolsSettingsStore);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, DevToolsSettingsStore);
+      obj = outer1_5(DevToolsSettingsStore);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,31 +42,31 @@ let tmp2 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = DevToolsSettingsStore;
   callback2(DevToolsSettingsStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        tmp = obj;
+        tmp = outer1_8;
       }
-      let obj = tmp;
+      outer1_8 = tmp;
       let sortedScreenKeys = tmp.sortedScreenKeys;
       if (null == sortedScreenKeys) {
         sortedScreenKeys = [];
       }
-      obj = {};
-      const merged = Object.assign(obj);
+      const obj = {};
+      const merged = Object.assign(outer1_8);
       obj["sortedScreenKeys"] = sortedScreenKeys;
-      DevToolsSettingsStore(closure_1[6]).actionLogger.persist = closure_7.isDeveloper;
+      outer1_8 = obj;
+      DevToolsSettingsStore(outer1_1[6]).actionLogger.persist = outer1_7.isDeveloper;
     }
   };
   const items = [obj, , , , , , , , ];
   obj = {
     key: "getUserAgnosticState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
@@ -74,7 +75,7 @@ let tmp2 = (DeviceSettingsStore) => {
     get() {
       let num = 0;
       if (this.displayTools) {
-        num = closure_8.sidebarWidth;
+        num = outer1_8.sidebarWidth;
       }
       return num;
     }
@@ -83,7 +84,7 @@ let tmp2 = (DeviceSettingsStore) => {
   items[3] = {
     key: "lastOpenTabId",
     get() {
-      const lastOpenTabId = closure_8.lastOpenTabId;
+      const lastOpenTabId = outer1_8.lastOpenTabId;
       let tmp = null;
       if (null != lastOpenTabId) {
         tmp = lastOpenTabId;
@@ -94,7 +95,7 @@ let tmp2 = (DeviceSettingsStore) => {
   items[4] = {
     key: "lastOpenSubTabId",
     get() {
-      const lastOpenSubTabId = closure_8.lastOpenSubTabId;
+      const lastOpenSubTabId = outer1_8.lastOpenSubTabId;
       let tmp = null;
       if (null != lastOpenSubTabId) {
         tmp = lastOpenSubTabId;
@@ -105,9 +106,9 @@ let tmp2 = (DeviceSettingsStore) => {
   items[5] = {
     key: "displayTools",
     get() {
-      let displayTools = closure_7.isDeveloper;
+      let displayTools = outer1_7.isDeveloper;
       if (displayTools) {
-        displayTools = closure_8.displayTools;
+        displayTools = outer1_8.displayTools;
       }
       return displayTools;
     }
@@ -115,9 +116,9 @@ let tmp2 = (DeviceSettingsStore) => {
   items[6] = {
     key: "showDevWidget",
     get() {
-      let showDevWidget = closure_7.isDeveloper;
+      let showDevWidget = outer1_7.isDeveloper;
       if (showDevWidget) {
-        showDevWidget = closure_8.showDevWidget;
+        showDevWidget = outer1_8.showDevWidget;
       }
       return showDevWidget;
     }
@@ -125,30 +126,30 @@ let tmp2 = (DeviceSettingsStore) => {
   items[7] = {
     key: "devWidgetPosition",
     get() {
-      return closure_8.devWidgetPosition;
+      return outer1_8.devWidgetPosition;
     }
   };
   items[8] = {
     key: "sortedScreenKeys",
     get() {
-      return closure_8.sortedScreenKeys;
+      return outer1_8.sortedScreenKeys;
     }
   };
   return callback(DevToolsSettingsStore, items);
-}(importDefault(dependencyMap[7]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "DevToolsSettingsStore";
 tmp2.persistKey = "DevToolsSettingsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+obj = {
   DEV_TOOLS_SETTINGS_UPDATE: function handleDevToolsSettingsUpdate(settings) {
     if (isDeveloper.isDeveloper) {
       const obj = {};
-      const merged = Object.assign(closure_8);
+      const merged = Object.assign(obj);
       const merged1 = Object.assign(settings.settings);
-      closure_8 = obj;
     }
   }
-});
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/devtools/DevToolsSettingsStore.tsx");
+};
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/devtools/DevToolsSettingsStore.tsx");
 
 export default tmp2;
 export const DEVTOOLS_SIDEBAR_MIN_WIDTH = 460;

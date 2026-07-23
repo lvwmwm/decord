@@ -1,20 +1,22 @@
-// Module ID: 10396
-// Function ID: 80129
+// Module ID: 10406
+// Function ID: 80179
 // Name: useChannelSafetyWarning
-// Dependencies: []
+// Dependencies: [9101, 566, 2]
 // Exports: useChannelSafetyWarning
 
-// Module 10396 (useChannelSafetyWarning)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/self_mod/hooks/useChannelSafetyWarning.tsx");
+// Module 10406 (useChannelSafetyWarning)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useChannelSafetyWarning.tsx");
 
 export const useChannelSafetyWarning = function useChannelSafetyWarning(channelId, LIKELY_ATO) {
-  LIKELY_ATO = channelId;
+  const _require = channelId;
   const dependencyMap = LIKELY_ATO;
-  const items = [closure_2];
+  const items = [_isNativeReflectConstruct];
   const items1 = [channelId];
-  const stateFromStores = LIKELY_ATO(dependencyMap[1]).useStateFromStores(items, () => channelSafetyWarnings.getChannelSafetyWarnings(arg0), items1);
-  const found = stateFromStores.filter((type) => type.type === arg1);
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getChannelSafetyWarnings(closure_0), items1);
+  const found = stateFromStores.filter((type) => type.type === closure_1);
   return found.find((dismiss_timestamp) => {
     let tmp = null == dismiss_timestamp.dismiss_timestamp;
     if (tmp) {

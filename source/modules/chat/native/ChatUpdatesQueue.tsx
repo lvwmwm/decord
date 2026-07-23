@@ -1,19 +1,20 @@
-// Module ID: 10449
-// Function ID: 80673
+// Module ID: 10459
+// Function ID: 80723
 // Name: ChatUpdatesQueue
-// Dependencies: []
+// Dependencies: [6, 7, 27, 2]
 
-// Module 10449 (ChatUpdatesQueue)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const NativeEventEmitter = tmp2.NativeEventEmitter;
-const DCDChatBlockerManager = tmp2.NativeModules.DCDChatBlockerManager;
-const tmp3 = () => {
+// Module 10459 (ChatUpdatesQueue)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import get_ActivityIndicator from "get ActivityIndicator";
+
+const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;
+const DCDChatBlockerManager = get_ActivityIndicator.NativeModules.DCDChatBlockerManager;
+let tmp3 = (() => {
   class ChatUpdatesQueue {
     constructor(arg0, arg1) {
-      ChatUpdatesQueue = this;
-      tmp = ChatUpdatesQueue(this, ChatUpdatesQueue);
+      self = this;
+      tmp = ChatUpdatesQueue(this, self);
       set = new Set();
       this.blockers = set;
       this.queue = [];
@@ -23,7 +24,7 @@ const tmp3 = () => {
       };
       this.getReactTag = arg0;
       this.onFlushItem = arg1;
-      tmp3 = new closure_2(closure_3);
+      tmp3 = new outer1_2(outer1_3);
       this.eventEmitter = tmp3;
       eventEmitter = this.eventEmitter;
       this.addBlockerSubscription = eventEmitter.addListener("AddBlocker", (reactTag) => {
@@ -42,7 +43,6 @@ const tmp3 = () => {
       return;
     }
   }
-  let closure_0 = ChatUpdatesQueue;
   let obj = {
     key: "hasUpdates",
     value() {
@@ -130,7 +130,7 @@ const tmp3 = () => {
   items[7] = {
     key: "flush",
     value() {
-      const ChatUpdatesQueue = this;
+      const self = this;
       this.queueStartTimestamp = null;
       const queue = this.queue;
       const item = queue.forEach((arg0) => {
@@ -154,7 +154,7 @@ const tmp3 = () => {
     }
   };
   return callback(ChatUpdatesQueue, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/chat/native/ChatUpdatesQueue.tsx");
+})();
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/chat/native/ChatUpdatesQueue.tsx");
 
 export default tmp3;

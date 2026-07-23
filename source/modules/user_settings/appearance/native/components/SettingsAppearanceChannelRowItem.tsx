@@ -1,39 +1,43 @@
-// Module ID: 14065
-// Function ID: 106836
+// Module ID: 14179
+// Function ID: 108992
 // Name: ChannelRowItem
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 9096, 4126, 2]
 // Exports: default
 
-// Module 14065 (ChannelRowItem)
+// Module 14179 (ChannelRowItem)
+import "result";
+import { View } from "get ActivityIndicator";
+import { StatusTypes } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import Button from "Button";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 let num = 0;
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const StatusTypes = arg1(dependencyMap[2]).StatusTypes;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).radii.sm, paddingVertical: importDefault(dependencyMap[5]).space.PX_8, paddingRight: importDefault(dependencyMap[5]).space.PX_16, paddingLeft: importDefault(dependencyMap[5]).space.PX_8 };
-obj.channelItemContainer = obj;
-obj.channelItemLeft = { <string:3596066964>: null, <string:3638417373>: null };
-const tmp3 = arg1(dependencyMap[3]);
-obj.channelItemUnreadIndicator = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { adjustPan: "string", adjustResize: "string", variant: "color", marginRight: importDefault(dependencyMap[5]).space.PX_8 };
-obj.channelItemAvatar = obj2;
-obj.channelItemContent = { avatar: "low", name: "subtle", channel: null };
-const obj3 = { alignSelf: "{0} og {1}", top: "{0}, {1}", left: "{0} og {1}", borderColor: "{0}, {1}", gap: importDefault(dependencyMap[5]).space.PX_4 };
-obj.channelItemTop = obj3;
-let closure_6 = obj.createStyles(obj);
-const obj4 = { direction: arg1(dependencyMap[6]).CutoutDirection.BOTTOM_RIGHT };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
-const statusSize = arg1(dependencyMap[6]).getStatusSize(arg1(dependencyMap[6]).AvatarSizes.LARGE_48);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.channelItemContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.channelItemLeft = { alignItems: "center", justifyContent: "center" };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, height: 8, width: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, margin: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.channelItemUnreadIndicator = obj1;
+let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8, justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.channelItemAvatar = obj2;
+_createForOfIteratorHelperLoose.channelItemContent = { flexDirection: "column", flex: 1, justifyContent: "center" };
+let obj3 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_4, justifyContent: "space-between", alignItems: "center" };
+_createForOfIteratorHelperLoose.channelItemTop = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { direction: require("Button").CutoutDirection.BOTTOM_RIGHT };
+const statusSize = Button.getStatusSize(require("Button").AvatarSizes.LARGE_48);
 if (null != statusSize) {
   num = statusSize;
 }
 obj4.radius = num / 2 + 4;
-obj4.imageType = arg1(dependencyMap[6]).CutoutType.CIRCULAR;
+obj4.imageType = require("Button").CutoutType.CIRCULAR;
 obj4.inset = -4;
-const obj8 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelRowItem.tsx");
+const result = require("ME").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelRowItem.tsx");
 
 export default function ChannelRowItem(isUnread) {
   let animatedStyles;
@@ -52,7 +56,7 @@ export default function ChannelRowItem(isUnread) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp2 = callback2();
+  const tmp2 = _createForOfIteratorHelperLoose();
   let obj = { style: tmp2.channelItemContainer };
   obj = { style: tmp2.channelItemLeft };
   obj = {};
@@ -72,21 +76,22 @@ export default function ChannelRowItem(isUnread) {
     const obj3 = {};
     const items2 = [avatar1, avatar2];
     obj3.sources = items2;
-    obj3.size = arg1(dependencyMap[6]).AvatarSizes.LARGE_48;
-    let tmp12 = callback(arg1(dependencyMap[7]).FacepileGroupDMAvatar, obj3);
+    obj3.size = require(1273) /* Button */.AvatarSizes.LARGE_48;
+    let tmp12 = callback(require(9096) /* FacepileGroupDMAvatar */.FacepileGroupDMAvatar, obj3);
   } else {
     const obj4 = { status, source: avatar1 };
     obj4.cutout = obj4;
-    obj4.size = arg1(dependencyMap[6]).AvatarSizes.LARGE_48;
-    tmp12 = callback(arg1(dependencyMap[6]).Avatar, obj4);
+    obj4.size = require(1273) /* Button */.AvatarSizes.LARGE_48;
+    tmp12 = callback(require(1273) /* Button */.Avatar, obj4);
   }
   obj2.children = tmp12;
   items1[1] = callback(View, obj2);
   const obj5 = { style: tmp2.channelItemContent };
   const obj6 = { style: tmp2.channelItemTop };
-  const items3 = [callback(arg1(dependencyMap[8]).Text, { style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, children: title }), ];
-  const obj8 = { canCreateGuild: -18, _hasMore: -12, GameDepthTier9LargeBadge: 0.625, style: animatedStyles.textMuted, children: timestamp };
-  items3[1] = callback(arg1(dependencyMap[8]).Text, obj8);
+  const obj7 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title };
+  const items3 = [callback(require(4126) /* Text */.Text, obj7), ];
+  const obj8 = { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp };
+  items3[1] = callback(require(4126) /* Text */.Text, obj8);
   obj6.children = items3;
   const items4 = [closure_5(View, obj6), ];
   if (null == preview) {
@@ -96,8 +101,8 @@ export default function ChannelRowItem(isUnread) {
     obj.children = items1;
     return closure_5(tmp4, obj);
   } else {
-    const obj9 = { style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, children: preview };
-    callback(arg1(dependencyMap[8]).Text, obj9);
+    const obj9 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/message-preview/medium", lineClamp: 1, children: preview };
+    callback(require(4126) /* Text */.Text, obj9);
     const tmp19 = callback;
   }
 };

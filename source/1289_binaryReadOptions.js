@@ -1,28 +1,29 @@
 // Module ID: 1289
-// Function ID: 15062
+// Function ID: 15063
 // Name: binaryReadOptions
-// Dependencies: []
+// Dependencies: [57, 164, 65, 6, 7, 1290, 1288, 1291]
 // Exports: binaryReadOptions
 
 // Module 1289 (binaryReadOptions)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-let closure_6 = require(dependencyMap[4]);
+import _slicedToArray from "_slicedToArray";
+import _construct from "_construct";
+import _toConsumableArray from "_toConsumableArray";
+import _classCallCheck from "onRead";
+import _defineProperties from "_callSuper";
+
 let closure_7 = {
   readUnknownField: true,
   readerFactory(arg0) {
-    return new tmp2(arg0);
+    return new closure_8(arg0);
   }
 };
-const tmp2 = () => {
+const tmp2 = (() => {
   class BinaryReader {
     constructor(arg0, arg1) {
       textDecoder = arg1;
-      tmp2 = closure_5(this, BinaryReader);
-      this.varint64 = BinaryReader(closure_1[5]).varint64read;
-      this.uint32 = BinaryReader(closure_1[5]).varint32read;
+      tmp2 = outer1_5(this, BinaryReader);
+      this.varint64 = BinaryReader(outer1_1[5]).varint64read;
+      this.uint32 = BinaryReader(outer1_1[5]).varint32read;
       this.buf = arg0;
       this.len = arg0.length;
       this.pos = 0;
@@ -34,13 +35,12 @@ const tmp2 = () => {
         tmp4 = new.target;
         str = "utf-8";
         tmp5 = new.target;
-        textDecoder = new TextDecoder("utf-8", { "Null": null, "Null": null });
+        textDecoder = new TextDecoder("utf-8", { fatal: true, ignoreBOM: true });
       }
       this.textDecoder = textDecoder;
       return;
     }
   }
-  const require = BinaryReader;
   let obj = {
     key: "tag",
     value: function tag() {
@@ -57,14 +57,14 @@ const tmp2 = () => {
       throw error;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "skip",
     value: function skip(arg0) {
       let EndGroup;
       let tmp14;
       const self = this;
-      if (BinaryReader(closure_1[6]).WireType.Varint === arg0) {
+      if (BinaryReader(outer1_1[6]).WireType.Varint === arg0) {
         self.pos = +self.pos + 1;
         if (128 & self.buf[+self.pos]) {
           do {
@@ -74,19 +74,19 @@ const tmp2 = () => {
           } while (tmp14);
         }
       } else {
-        if (BinaryReader(closure_1[6]).WireType.Bit64 === arg0) {
+        if (BinaryReader(outer1_1[6]).WireType.Bit64 === arg0) {
           self.pos = self.pos + 4;
-        } else if (BinaryReader(closure_1[6]).WireType.Bit32 !== arg0) {
-          if (BinaryReader(closure_1[6]).WireType.LengthDelimited === arg0) {
+        } else if (BinaryReader(outer1_1[6]).WireType.Bit32 !== arg0) {
+          if (BinaryReader(outer1_1[6]).WireType.LengthDelimited === arg0) {
             self.pos = self.pos + self.uint32();
-          } else if (BinaryReader(closure_1[6]).WireType.StartGroup === arg0) {
+          } else if (BinaryReader(outer1_1[6]).WireType.StartGroup === arg0) {
             const tmp6 = self.tag()[1];
-            if (tmp6 !== BinaryReader(closure_1[6]).WireType.EndGroup) {
+            if (tmp6 !== BinaryReader(outer1_1[6]).WireType.EndGroup) {
               do {
                 let skipResult = self.skip(self.tag()[1]);
-                let tmp10 = closure_0;
-                let tmp11 = closure_1;
-                EndGroup = closure_0(closure_1[6]).WireType.EndGroup;
+                let tmp10 = BinaryReader;
+                let tmp11 = outer1_1;
+                EndGroup = BinaryReader(outer1_1[6]).WireType.EndGroup;
               } while (tmp6 !== EndGroup);
             }
           } else {
@@ -130,28 +130,28 @@ const tmp2 = () => {
   items[5] = {
     key: "int64",
     value: function int64() {
-      return callback2(BinaryReader(closure_1[7]).PbLong, callback3(this.varint64()));
+      return outer1_3(BinaryReader(outer1_1[7]).PbLong, outer1_4(this.varint64()));
     }
   };
   items[6] = {
     key: "uint64",
     value: function uint64() {
-      return callback2(BinaryReader(closure_1[7]).PbULong, callback3(this.varint64()));
+      return outer1_3(BinaryReader(outer1_1[7]).PbULong, outer1_4(this.varint64()));
     }
   };
   items[7] = {
     key: "sint64",
     value: function sint64() {
-      const tmp = callback(this.varint64(), 2);
+      const tmp = outer1_2(this.varint64(), 2);
       const first = tmp[0];
-      const pbLong = new BinaryReader(closure_1[7]).PbLong((first >>> 1 | (1 & tmp[1]) << 31) ^ tmp4, tmp[1] >>> 1 ^ tmp4);
+      const pbLong = new BinaryReader(outer1_1[7]).PbLong((first >>> 1 | (1 & tmp[1]) << 31) ^ tmp4, tmp[1] >>> 1 ^ tmp4);
       return pbLong;
     }
   };
   items[8] = {
     key: "bool",
     value: function bool() {
-      const tmp = callback(this.varint64(), 2);
+      const tmp = outer1_2(this.varint64(), 2);
       return 0 !== tmp[0] || 0 !== tmp[1];
     }
   };
@@ -176,14 +176,14 @@ const tmp2 = () => {
   items[11] = {
     key: "fixed64",
     value: function fixed64() {
-      const pbULong = new BinaryReader(closure_1[7]).PbULong(this.sfixed32(), this.sfixed32());
+      const pbULong = new BinaryReader(outer1_1[7]).PbULong(this.sfixed32(), this.sfixed32());
       return pbULong;
     }
   };
   items[12] = {
     key: "sfixed64",
     value: function sfixed64() {
-      const pbLong = new BinaryReader(closure_1[7]).PbLong(this.sfixed32(), this.sfixed32());
+      const pbLong = new BinaryReader(outer1_1[7]).PbLong(this.sfixed32(), this.sfixed32());
       return pbLong;
     }
   };
@@ -223,8 +223,9 @@ const tmp2 = () => {
       return textDecoder.decode(this.bytes());
     }
   };
-  return callback(BinaryReader, items);
-}();
+  return _defineProperties(BinaryReader, items);
+})();
+let closure_8 = tmp2;
 
 export const binaryReadOptions = function binaryReadOptions(BINARY_READ_OPTIONS) {
   if (BINARY_READ_OPTIONS) {

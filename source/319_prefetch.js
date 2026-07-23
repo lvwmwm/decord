@@ -1,33 +1,36 @@
 // Module ID: 319
 // Function ID: 4864
 // Name: prefetch
-// Dependencies: []
+// Dependencies: [29, 5, 31, 33, 320, 322, 90, 147, 323, 324, 327, 328, 253]
 
 // Module 319 (prefetch)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import getImageSourcesFromImageProps from "getImageSourcesFromImageProps";
+import "result";
+import { jsx } from "jsxProd";
+import set from "set";
+
+const require = arg1;
 function prefetch(arg0, arg1) {
   let closure_7 = tmp + 1;
   if (arg1) {
     arg1(tmp);
   }
-  return importDefault(dependencyMap[4]).prefetchImage(arg0, +closure_7);
+  return importDefault(320).prefetchImage(arg0, +closure_7);
 }
 async function _queryCache(arg0, arg1) {
   if (obj) {
     return obj.resume();
   } else {
-    return callback(closure_2[4]).queryCache(arg0);
+    return outer2_1(outer2_2[4]).queryCache(arg0);
   }
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-importAll(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = 1;
+let closure_3 = ["ref"];
+let c7 = 1;
 class BaseImage {
   constructor(arg0) {
-    size = closure_4(global, _queryCache);
-    obj = arg1(closure_2[5]);
+    size = _objectWithoutProperties(global, _queryCache);
+    obj = require("getImageSourcesFromImageProps");
     size2 = obj.getImageSourcesFromImageProps(size);
     if (!size2) {
       obj = {};
@@ -36,8 +39,8 @@ class BaseImage {
       obj.height = undefined;
       size2 = obj;
     }
-    tmp = closure_1(closure_2[6])(size.defaultSource);
-    tmp2 = closure_1(closure_2[6])(size.loadingIndicatorSource);
+    tmp = require("getSourceCodeScriptURL")(size.defaultSource);
+    tmp2 = require("getSourceCodeScriptURL")(size.loadingIndicatorSource);
     if (null != size.children) {
       tmp32 = globalThis;
       _Error2 = Error;
@@ -65,9 +68,9 @@ class BaseImage {
       tmp3 = globalThis;
       _Array = Array;
       if (Array.isArray(size2)) {
-        tmp6 = closure_8;
+        tmp6 = c8;
         items = [, ];
-        items[0] = closure_8.base;
+        items[0] = c8.base;
         items[1] = size.style;
         items1 = items;
         items2 = size2;
@@ -91,8 +94,8 @@ class BaseImage {
         obj1.height = height;
         items1 = [, , ];
         items1[0] = obj1;
-        tmp5 = closure_8;
-        items1[1] = closure_8.base;
+        tmp5 = c8;
+        items1[1] = c8.base;
         items1[2] = size.style;
         items2 = [];
         items2[0] = size2;
@@ -137,7 +140,7 @@ class BaseImage {
         tmp2 = null;
       }
       obj2.loadingIndicatorSrc = tmp2;
-      alt = size.aria-label;
+      alt = size["aria-label"];
       if (null == alt) {
         alt = size.accessibilityLabel;
       }
@@ -147,7 +150,7 @@ class BaseImage {
       obj2.accessibilityLabel = alt;
       prop = undefined;
       if (null != size) {
-        prop = size.aria-labelledby;
+        prop = size["aria-labelledby"];
       }
       if (null == prop) {
         prop1 = undefined;
@@ -159,65 +162,65 @@ class BaseImage {
       obj2.accessibilityLabelledBy = prop;
       obj2.accessible = undefined !== size.alt || size.accessible;
       obj3 = {};
-      aria-busy = size.aria-busy;
+      aria_busy = size["aria-busy"];
       if (null == aria_busy) {
         accessibilityState = size.accessibilityState;
         busy = undefined;
         if (null != accessibilityState) {
           busy = accessibilityState.busy;
         }
-        aria-busy = busy;
+        aria_busy = busy;
       }
       obj3.busy = aria_busy;
-      aria-checked = size.aria-checked;
+      aria_checked = size["aria-checked"];
       if (null == aria_checked) {
         accessibilityState2 = size.accessibilityState;
         checked = undefined;
         if (null != accessibilityState2) {
           checked = accessibilityState2.checked;
         }
-        aria-checked = checked;
+        aria_checked = checked;
       }
       obj3.checked = aria_checked;
-      aria-disabled = size.aria-disabled;
+      aria_disabled = size["aria-disabled"];
       if (null == aria_disabled) {
         accessibilityState3 = size.accessibilityState;
         disabled = undefined;
         if (null != accessibilityState3) {
           disabled = accessibilityState3.disabled;
         }
-        aria-disabled = disabled;
+        aria_disabled = disabled;
       }
       obj3.disabled = aria_disabled;
-      aria-expanded = size.aria-expanded;
+      aria_expanded = size["aria-expanded"];
       if (null == aria_expanded) {
         accessibilityState4 = size.accessibilityState;
         expanded = undefined;
         if (null != accessibilityState4) {
           expanded = accessibilityState4.expanded;
         }
-        aria-expanded = expanded;
+        aria_expanded = expanded;
       }
       obj3.expanded = aria_expanded;
-      aria-selected = size.aria-selected;
+      aria_selected = size["aria-selected"];
       if (null == aria_selected) {
         accessibilityState5 = size.accessibilityState;
         selected = undefined;
         if (null != accessibilityState5) {
           selected = accessibilityState5.selected;
         }
-        aria-selected = selected;
+        aria_selected = selected;
       }
       obj3.selected = aria_selected;
       obj2.accessibilityState = obj3;
-      arg1 = Object.assign({}, size, obj2);
-      tmp17 = closure_1;
-      tmp18 = closure_2;
+      accessible = Object.assign({}, size, obj2);
+      tmp17 = cover;
+      tmp18 = c2;
       num2 = 7;
-      tmp19 = closure_1(closure_2[7])(items1);
-      tmp20 = arg1;
+      tmp19 = require("flattenStyle")(items1);
+      tmp20 = accessible;
       num3 = 8;
-      obj6 = arg1(closure_2[8]);
+      obj6 = require("convertObjectFitToResizeMode");
       objectFit = undefined;
       if (null != tmp19) {
         objectFit = tmp19.objectFit;
@@ -233,14 +236,14 @@ class BaseImage {
       if (!str3) {
         str3 = "cover";
       }
-      closure_1 = str3;
-      tmp23 = arg1;
-      tmp24 = closure_2;
+      cover = str3;
+      tmp23 = accessible;
+      tmp24 = c2;
       num4 = 9;
-      obj7 = arg1(closure_2[9]);
-      closure_2 = obj7.useWrapRefWithImageAttachedCallbacks(global.ref);
+      obj7 = require("set");
+      c2 = obj7.useWrapRefWithImageAttachedCallbacks(global.ref);
       tmp25 = jsx;
-      tmp26 = closure_1;
+      tmp26 = cover;
       num5 = 10;
       obj4 = {};
       obj4.children = function children(internal_analyticTag) {
@@ -251,24 +254,24 @@ class BaseImage {
         } else {
           merged = closure_0;
         }
-        obj = { resizeMode: str3, ref: closure_2 };
-        return callback(str3(closure_2[11]), Object.assign({}, merged, obj));
+        obj = { resizeMode: str3, ref: table };
+        return outer1_6(str3(table[11]), Object.assign({}, merged, obj));
       };
-      return jsx(closure_1(closure_2[10]).Consumer, obj4);
+      return jsx(require("result").Consumer, obj4);
     }
   }
 }
-const result = arg1(dependencyMap[9]).unstable_getImageComponentDecorator();
+set = set.unstable_getImageComponentDecorator();
 let resultResult = BaseImage;
-if (null != result) {
-  resultResult = result(BaseImage);
+if (null != set) {
+  resultResult = set(BaseImage);
 }
 resultResult.displayName = "Image";
 resultResult.getSize = function getSize(arg0, arg1, arg2) {
   let fn = arg2;
-  arg1 = arg0;
+  let closure_0 = arg0;
   const importDefault = arg1;
-  const size = importDefault(dependencyMap[4]).getSize(arg0);
+  const size = importDefault(320).getSize(arg0);
   if ("function" !== typeof arg1) {
     return size;
   } else {
@@ -277,15 +280,15 @@ resultResult.getSize = function getSize(arg0, arg1, arg2) {
         console.warn(`Failed to get size for image: ${closure_0}`);
       };
     }
-    size.then((width) => arg1(width.width, width.height)).catch(fn);
+    size.then((width) => callback(width.width, width.height)).catch(fn);
   }
-  const obj = importDefault(dependencyMap[4]);
+  const obj = importDefault(320);
 };
 resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1) {
   let fn = arg3;
-  arg1 = arg0;
+  let closure_0 = arg0;
   const importDefault = arg2;
-  const sizeWithHeaders = importDefault(dependencyMap[4]).getSizeWithHeaders(arg0, arg1);
+  const sizeWithHeaders = importDefault(320).getSizeWithHeaders(arg0, arg1);
   if ("function" !== typeof arg2) {
     return sizeWithHeaders;
   } else {
@@ -294,22 +297,21 @@ resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1) {
         console.warn(`Failed to get size for image: ${closure_0}`);
       };
     }
-    sizeWithHeaders.then((width) => arg2(width.width, width.height)).catch(fn);
+    sizeWithHeaders.then((width) => callback(width.width, width.height)).catch(fn);
   }
-  const obj = importDefault(dependencyMap[4]);
+  const obj = importDefault(320);
 };
 resultResult.prefetch = prefetch;
 resultResult.prefetchWithMetadata = function prefetchWithMetadata(arg0, arg1, arg2, arg3) {
   return prefetch(arg0, arg3);
 };
 resultResult.abortPrefetch = function abortPrefetch(_requestId) {
-  importDefault(dependencyMap[4]).abortRequest(_requestId);
+  importDefault(320).abortRequest(_requestId);
 };
 resultResult.queryCache = function queryCache(arg0) {
   return _queryCache(...arguments);
 };
-resultResult.resolveAssetSource = importDefault(dependencyMap[6]);
-const obj = arg1(dependencyMap[9]);
-let closure_8 = importDefault(dependencyMap[12]).create({ base: { overflow: "hidden" } });
+resultResult.resolveAssetSource = require("getSourceCodeScriptURL");
+let closure_8 = require("setStyleAttributePreprocessor").create({ base: { overflow: "hidden" } });
 
 export default resultResult;

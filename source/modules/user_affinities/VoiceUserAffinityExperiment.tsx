@@ -1,15 +1,15 @@
-// Module ID: 7743
-// Function ID: 61524
+// Module ID: 7749
+// Function ID: 61561
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
-// Module 7743 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "<string:3847753826>", "Bool(false)": "<string:1305670207>", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false, sortType: undefined }, [1]: { accessibilityRole: "2a4178fd61be5173c63df5a107198d76", join: "InstagramNeutralIcon" }, [2]: { accessibilityRole: true, join: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/user_affinities/VoiceUserAffinityExperiment.tsx");
+// Module 7749 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false, sortType: undefined }, [1]: { enabled: true, sortType: "vc_probability" }, [2]: { enabled: true, sortType: "communication_probability" } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/user_affinities/VoiceUserAffinityExperiment.tsx");
 
 export default apexExperiment;
 export const getVoiceUserAffinitySortType = function getVoiceUserAffinitySortType(location) {

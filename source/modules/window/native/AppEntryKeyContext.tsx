@@ -1,26 +1,27 @@
 // Module ID: 1453
-// Function ID: 16956
+// Function ID: 16957
 // Name: context
-// Dependencies: [100204544, 100335616, 100270080]
+// Dependencies: [31, 3, 2]
 // Exports: useAppEntryKey
 
 // Module 1453 (context)
-const importAllResult = importAll(dependencyMap[0]);
-let importDefaultResult = importDefault(dependencyMap[1]);
+import importAllResult from "result";
+import importDefaultResult from "timestamp";
+
 importDefaultResult = new importDefaultResult("AppEntryKeyContext");
-const context = importAllResult.createContext(undefined);
-let closure_3 = false;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/window/native/AppEntryKeyContext.tsx");
+let context = importAllResult.createContext(undefined);
+let c3 = false;
+const result = require("set").fileFinishedImporting("modules/window/native/AppEntryKeyContext.tsx");
 
 export const DEFAULT_APP_ENTRY_KEY = "main";
 export const AppEntryKeyContext = context;
 export const useAppEntryKey = function useAppEntryKey() {
-  const context = importAllResult.useContext(context);
+  context = context.useContext(context);
   const items = [context];
-  const effect = importAllResult.useEffect(() => {
+  const effect = context.useEffect(() => {
     if (!tmp) {
-      let closure_3 = true;
-      closure_1.warn("AppEntryKey context was not provided; falling back to default entry key \"main\".");
+      const outer1_3 = true;
+      outer1_1.warn("AppEntryKey context was not provided; falling back to default entry key \"main\".");
     }
   }, items);
   let str = "main";

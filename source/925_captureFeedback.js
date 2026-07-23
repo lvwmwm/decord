@@ -1,9 +1,11 @@
 // Module ID: 925
-// Function ID: 10084
+// Function ID: 10085
 // Name: captureFeedback
-// Dependencies: []
+// Dependencies: [825]
 
 // Module 925 (captureFeedback)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.captureFeedback = function captureFeedback(tags) {
   if (arguments.length > 1) {
@@ -14,7 +16,7 @@ arg5.captureFeedback = function captureFeedback(tags) {
       if (undefined !== arguments[2]) {
         let currentScope = arguments[2];
       }
-      obj = { "Null": null, "Null": null, "Null": null };
+      obj = { contexts: null, type: "feedback", level: "info" };
       obj = {};
       let obj1 = {};
       ({ email: obj6.contact_email, name: obj6.name, message: obj6.message, url: obj6.url, source: obj6.source, associatedEventId: obj6.associated_event_id } = tags);
@@ -26,15 +28,15 @@ arg5.captureFeedback = function captureFeedback(tags) {
         client = currentScope.getClient();
       }
       if (!client) {
-        client = arg1(arg6[0]).getClient();
-        const obj7 = arg1(arg6[0]);
+        client = require(825) /* getCurrentScope */.getClient();
+        const obj7 = require(825) /* getCurrentScope */;
       }
       if (client) {
         client.emit("beforeSendFeedback", obj, obj);
       }
       return currentScope.captureEvent(obj, obj);
     }
-    obj1 = arg1(arg6[0]);
+    obj1 = require(825) /* getCurrentScope */;
     currentScope = obj1.getCurrentScope();
   }
   obj = {};

@@ -1,39 +1,41 @@
-// Module ID: 9824
-// Function ID: 76214
+// Module ID: 9831
+// Function ID: 76255
 // Name: measureView
-// Dependencies: []
+// Dependencies: [2]
 // Exports: measureViewRef, measureViewRefInView, measureViewRefInWindow
 
-// Module 9824 (measureView)
+// Module 9831 (measureView)
 function measureView(current) {
-  const measureView = current;
+  let closure_0 = current;
   return new Promise((arg0) => {
-    arg0.measure((arg0, arg1, width, height, pageX, pageY) => {
-      arg0({ x: arg0, y: arg1, width, height, pageX, pageY });
+    const current = arg0;
+    current.measure((arg0, arg1, width, height, pageX, pageY) => {
+      callback({ x: arg0, y: arg1, width, height, pageX, pageY });
     });
   });
 }
 function measureViewInWindow(current) {
-  const measureView = current;
+  let closure_0 = current;
   return new Promise((arg0) => {
-    arg0.measureInWindow((arg0, arg1, width, height) => {
-      arg0({ x: arg0, y: arg1, width, height });
+    const current = arg0;
+    current.measureInWindow((arg0, arg1, width, height) => {
+      callback({ x: arg0, y: arg1, width, height });
     });
   });
 }
 function measureViewInView(current, current) {
-  const measureView = current;
-  const measureViewInWindow = current;
+  let closure_0 = current;
+  let closure_1 = current;
   return new Promise((arg0) => {
-    arg0.measureLayout(arg1, (arg0, arg1, width, height) => {
-      arg0({ x: arg0, y: arg1, width, height });
+    const current = arg0;
+    current.measureLayout(closure_1, (arg0, arg1, width, height) => {
+      callback({ x: arg0, y: arg1, width, height });
     }, () => {
-      arg0(undefined);
+      callback(undefined);
     });
   });
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/view_measure/ViewMeasureUtils.native.tsx");
+const result = require("set").fileFinishedImporting("modules/view_measure/ViewMeasureUtils.native.tsx");
 
 export { measureView };
 export const measureViewRef = function measureViewRef(current) {

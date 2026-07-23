@@ -1,14 +1,14 @@
-// Module ID: 7481
-// Function ID: 60061
-// Dependencies: []
+// Module ID: 7486
+// Function ID: 60095
+// Name: getSystemLocale
+// Dependencies: [1212, 2]
 
-// Module 7481
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");
+// Module 7486 (getSystemLocale)
+const result = require("set").fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");
 
 export default {
   getForumChannelPermissionText() {
-    const intl = require(dependencyMap[0]).intl;
-    return intl.string(require(dependencyMap[0]).t.LG9VAi);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.LG9VAi);
   }
 };

@@ -1,55 +1,58 @@
-// Module ID: 14566
-// Function ID: 109759
+// Module ID: 14681
+// Function ID: 111923
 // Name: showAgeVerificationTestModal
-// Dependencies: []
+// Dependencies: [5, 31, 27, 33, 4130, 689, 7542, 7536, 3831, 7538, 1557, 5503, 5165, 9210, 5171, 2]
 // Exports: default
 
-// Module 14566 (showAgeVerificationTestModal)
+// Module 14681 (showAgeVerificationTestModal)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import "result";
+import { ScrollView } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function showAgeVerificationTestModal() {
   return _showAgeVerificationTestModal(...arguments);
 }
 function _showAgeVerificationTestModal() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _showAgeVerificationTestModal = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const ScrollView = arg1(dependencyMap[2]).ScrollView;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.content = { padding: importDefault(dependencyMap[5]).space.PX_16 };
-let closure_7 = obj.createStyles(obj);
-const obj1 = { padding: importDefault(dependencyMap[5]).space.PX_16 };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.content = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx");
 
 export default function DevToolsAgeVerificationScreen() {
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   const items = [tmp.content, ];
-  obj = { paddingBottom: tmp.content.padding + importDefault(dependencyMap[10])().bottom };
+  obj = { paddingBottom: tmp.content.padding + importDefault(1557)().bottom };
   items[1] = obj;
   obj.contentContainerStyle = items;
-  obj = { -9223372036854775808: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
-  const obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: callback2(arg1(dependencyMap[13]).KeyIcon, {}), trailing: callback2(arg1(dependencyMap[14]).TableRowArrow, {}) };
-  const items1 = [callback2(arg1(dependencyMap[12]).TableRow, obj1), ];
+  obj = { title: "Quick Actions", hasIcons: true };
+  const obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: callback2(require(9210) /* KeyIcon */.KeyIcon, {}), trailing: callback2(require(5171) /* TableRowArrow */.TableRowArrow, {}) };
+  const items1 = [callback2(require(5165) /* TableRowInner */.TableRow, obj1), ];
   const obj2 = {
     label: "Launch Age Verification Modal",
     onPress() {
-      let obj = callback2(closure_2[7]);
-      obj = { entryPoint: callback(closure_2[9]).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
+      let obj = outer1_1(outer1_2[7]);
+      obj = { entryPoint: outer1_0(outer1_2[9]).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
       return obj.showAgeVerificationGetStartedModal(obj);
     },
-    icon: callback2(arg1(dependencyMap[13]).KeyIcon, {}),
-    trailing: callback2(arg1(dependencyMap[14]).TableRowArrow, {})
+    icon: callback2(require(9210) /* KeyIcon */.KeyIcon, {}),
+    trailing: callback2(require(5171) /* TableRowArrow */.TableRowArrow, {})
   };
-  items1[1] = callback2(arg1(dependencyMap[12]).TableRow, obj2);
+  items1[1] = callback2(require(5165) /* TableRowInner */.TableRow, obj2);
   obj.children = items1;
-  obj.children = callback3(arg1(dependencyMap[11]).TableRowGroup, obj);
+  obj.children = callback3(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
   return callback2(ScrollView, obj);
 };

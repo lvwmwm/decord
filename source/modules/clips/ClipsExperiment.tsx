@@ -1,32 +1,34 @@
-// Module ID: 4185
-// Function ID: 36020
+// Module ID: 4189
+// Function ID: 36052
 // Name: isUserPremiumTypeForClipsEarlyAccess
-// Dependencies: []
+// Dependencies: [4177, 1849, 1851, 1428, 4190, 566, 3776, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 4185 (isUserPremiumTypeForClipsEarlyAccess)
+// Module 4189 (isUserPremiumTypeForClipsEarlyAccess)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { PremiumTypes } from "GuildFeatures";
+import ApexExperiment from "ApexExperiment";
+
+const require = arg1;
 function isUserPremiumTypeForClipsEarlyAccess(currentUser) {
   let premiumType;
   if (null != currentUser) {
     premiumType = currentUser.premiumType;
   }
-  return importDefault(dependencyMap[6]).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
+  return importDefault(3776).isPremiumAtLeast(premiumType, PremiumTypes.TIER_2);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
-let obj = arg1(dependencyMap[3]);
-obj = { "Bool(false)": "<string:1698824193>", "Bool(false)": "<string:822084165>", defaultConfig: { end: true, colors: true }, variations: { [1]: { end: "<string:1040334421>", colors: "<string:1040334338>" }, [2]: { end: null, colors: null } } };
-const apexExperiment = obj.createApexExperiment(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/clips/ClipsExperiment.tsx");
+ApexExperiment = { kind: "user", name: "2026-03-clips-experiment", defaultConfig: { enableClips: false, ignorePlatformRestriction: false }, variations: { [1]: { enableClips: true, ignorePlatformRestriction: false }, [2]: { enableClips: true, ignorePlatformRestriction: true } } };
+ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+const result = require("GuildFeatures").fileFinishedImporting("modules/clips/ClipsExperiment.tsx");
 
-export const ClipsExperiment = apexExperiment;
+export const ClipsExperiment = ApexExperiment;
 export const areClipsAvailable = function areClipsAvailable() {
-  if (importDefault(dependencyMap[4])(closure_3)) {
+  if (importDefault(4190)(_isNativeReflectConstruct)) {
     let enableClips = isUserPremiumTypeForClipsEarlyAccess(currentUser.getCurrentUser());
     const obj = { location: "areClipsEnabled" };
     if (!enableClips) {
-      enableClips = apexExperiment.getConfig(obj).enableClips;
+      enableClips = ApexExperiment.getConfig(obj).enableClips;
     }
     return enableClips;
   } else {
@@ -34,11 +36,11 @@ export const areClipsAvailable = function areClipsAvailable() {
   }
 };
 export const useIsClipsAvailable = function useIsClipsAvailable() {
-  const tmp = importDefault(dependencyMap[4])(closure_3);
+  const tmp = importDefault(4190)(_isNativeReflectConstruct);
   const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => callback(currentUser.getCurrentUser()));
-  const obj = arg1(dependencyMap[5]);
-  return (apexExperiment.getConfig({ location: "useEnableClips" }).enableClips || stateFromStores) && tmp;
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_7(outer1_4.getCurrentUser()));
+  const obj = require(566) /* initialize */;
+  return (ApexExperiment.getConfig({ location: "useEnableClips" }).enableClips || stateFromStores) && tmp;
 };
 export { isUserPremiumTypeForClipsEarlyAccess };
 export function isScreenshotKeybindEnabled() {

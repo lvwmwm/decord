@@ -4,20 +4,21 @@
 // Dependencies: []
 
 // Module 509 (_createForOfIteratorHelper)
-function _createForOfIteratorHelper(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const exports = arg5;
+function _createForOfIteratorHelper(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  let _createForOfIteratorHelper = Symbol_iterator;
-  if (Symbol_iterator) {
-    let closure_4 = true;
-    let closure_5 = false;
+  let arr = iterable;
+  if (iterable) {
+    let c4 = true;
+    let c5 = false;
     let obj = {
       s() {
 
@@ -28,17 +29,18 @@ function _createForOfIteratorHelper(@@iterator) {
           return iter;
         },
       e(arg0) {
-          let closure_5 = true;
+          let c5 = true;
+          let closure_3 = arg0;
         },
       f() {
-          let tmp = closure_4;
-          if (!closure_4) {
+          let tmp = c4;
+          if (!c4) {
             tmp = null == arr.return;
           }
           if (!tmp) {
             arr.return();
           }
-          if (closure_5) {
+          if (c5) {
             throw closure_3;
           }
         }
@@ -46,14 +48,14 @@ function _createForOfIteratorHelper(@@iterator) {
     return obj;
   } else {
     const _Array = Array;
-    if (!Array.isArray(Symbol_iterator)) {
-      let arr;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          arr = _arrayLikeToArray(Symbol_iterator, undefined);
+    if (!Array.isArray(iterable)) {
+      arr = undefined;
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          arr = _arrayLikeToArray(iterable, undefined);
         } else {
           const _Object = Object;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           class F {
             constructor() {
               return;
@@ -61,24 +63,23 @@ function _createForOfIteratorHelper(@@iterator) {
           }
           let name = substr;
           if (tmp2) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                arr = _arrayLikeToArray(iterable, undefined);
               } else {
                 obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp2 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp2 = "Object" === substr && iterable.constructor;
         }
       }
-      _createForOfIteratorHelper = arr;
       if (!arr) {
         const _TypeError = TypeError;
         const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
@@ -90,10 +91,10 @@ function _createForOfIteratorHelper(@@iterator) {
         throw typeError;
       }
     }
-    if (_createForOfIteratorHelper) {
-      closure_0 = _createForOfIteratorHelper;
+    if (arr) {
+      closure_0 = arr;
     }
-    const _arrayLikeToArray = 0;
+    _arrayLikeToArray = 0;
     class F {
       constructor() {
         return;
@@ -193,13 +194,13 @@ arg5.parseLinks = (str) => {
   obj2.f();
 };
 arg5.cleanHeader = (arg0, arg1) => {
-  delete r0.content-type;
-  delete r0.content-length;
-  delete r0.transfer-encoding;
-  delete r0.host;
+  delete tmp["content-type"];
+  delete tmp["content-length"];
+  delete tmp["transfer-encoding"];
+  delete tmp.host;
   if (arg1) {
-    delete r0.authorization;
-    delete r0.cookie;
+    delete tmp.authorization;
+    delete tmp.cookie;
   }
   return arg0;
 };
@@ -210,7 +211,7 @@ arg5.isObject = (arg0) => {
   }
   return tmp;
 };
-arg5.hasOwn = Object.hasOwn || (arg0, arg1) => {
+arg5.hasOwn = Object.hasOwn || ((arg0, arg1) => {
   if (null == arg0) {
     const _TypeError = TypeError;
     const typeError = new TypeError("Cannot convert undefined or null to object");
@@ -221,16 +222,16 @@ arg5.hasOwn = Object.hasOwn || (arg0, arg1) => {
     const object = new Object(arg0);
     return hasOwnProperty.call(object, arg1);
   }
-};
+});
 arg5.mixin = (arg0, obj) => {
   for (const key10004 in arg1) {
     let tmp = key10004;
-    let tmp2 = closure_0;
-    if (!closure_0.hasOwn(arg1, key10004)) {
+    let tmp2 = exports;
+    if (!exports.hasOwn(arg1, key10004)) {
       continue;
     } else {
       arg0[key10004] = arg1[key10004];
-      // continue
+      continue;
     }
     continue;
   }

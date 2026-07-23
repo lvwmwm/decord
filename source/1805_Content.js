@@ -1,17 +1,20 @@
 // Module ID: 1805
-// Function ID: 19925
+// Function ID: 19926
 // Name: Content
-// Dependencies: [0, 4294967295, 4294967295, 4294967295]
+// Dependencies: [31, 27, 33, 1800]
 // Exports: default
 
 // Module 1805 (Content)
-import "__exportStarResult1";
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
 
 let StyleSheet;
-({ StyleSheet, View: closure_2 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
+let closure_2;
+const require = arg1;
+({ StyleSheet, View: closure_2 } = get_ActivityIndicator);
 const styles = StyleSheet.create({ flex: { flex: 1 } });
 
 export default function Content(children) {
-  return <closure_2 style={styles.flex} testID={arg1(dependencyMap[3]).TEST_ID_KEYBOARD_TOOLBAR_CONTENT}>{arg0.children}</closure_2>;
+  return <closure_2 style={styles.flex} testID={require(1800) /* TEST_ID_KEYBOARD_TOOLBAR */.TEST_ID_KEYBOARD_TOOLBAR_CONTENT}>{arg0.children}</closure_2>;
 };

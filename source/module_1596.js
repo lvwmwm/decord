@@ -1,55 +1,59 @@
 // Module ID: 1596
-// Function ID: 17782
-// Dependencies: []
+// Function ID: 17783
+// Dependencies: [57, 6, 7, 100, 1585, 1597, 1598, 1607, 1593, 1586]
 
 // Module 1596
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let obj = arg1(dependencyMap[4]);
-if (!obj.isJest()) {
+import _slicedToArray from "_slicedToArray";
+import WorkletsModule from "WorkletsModule";
+import isWorkletFunction from "isWorkletFunction";
+import isJest from "isJest";
+import { mockedRequestAnimationFrame } from "mockedRequestAnimationFrame";
+
+const require = arg1;
+if (!isJest.isJest()) {
   const _globalThis = globalThis;
   if (requestAnimationFrame) {
     const _globalThis2 = globalThis;
     let mockedRequestAnimationFrame = requestAnimationFrame;
   }
   let closure_6 = importDefaultResult("workletsModule");
-  let closure_7 = () => {
+  let closure_7 = (() => {
     class JSReanimated {
       constructor() {
-        JSReanimated = this;
-        tmp = closure_3(this, JSReanimated);
-        obj = { writable: true, value: JSReanimated(closure_1[6]).WorkletsModule };
-        definePropertyResult = Object.defineProperty(this, closure_6, obj);
+        self = this;
+        tmp = outer1_3(this, self);
+        obj = { writable: true, value: JSReanimated(outer1_1[6]).WorkletsModule };
+        definePropertyResult = Object.defineProperty(this, outer1_6, obj);
         this.nextSensorId = 0;
         map = new Map();
         this.sensors = map;
         this.platform = undefined;
         this.getSensorCallback = (arg0, arg1, arg2) => {
-          const self = arg0;
-          if (self(arg2[7]).SensorType.ACCELEROMETER !== arg1) {
-            if (self(arg2[7]).SensorType.GRAVITY !== arg1) {
-              if (self(arg2[7]).SensorType.GYROSCOPE !== arg1) {
-                if (self(arg2[7]).SensorType.MAGNETIC_FIELD !== arg1) {
-                  if (self(arg2[7]).SensorType.ROTATION === arg1) {
-                    return (self) => {
+          let closure_0 = arg0;
+          let closure_1 = arg2;
+          if (JSReanimated(outer2_1[7]).SensorType.ACCELEROMETER !== arg1) {
+            if (JSReanimated(outer2_1[7]).SensorType.GRAVITY !== arg1) {
+              if (JSReanimated(outer2_1[7]).SensorType.GYROSCOPE !== arg1) {
+                if (JSReanimated(outer2_1[7]).SensorType.MAGNETIC_FIELD !== arg1) {
+                  if (JSReanimated(outer2_1[7]).SensorType.ROTATION === arg1) {
+                    return () => {
                       let tmp6;
                       let tmp7;
-                      const tmp = callback(self.quaternion, 4);
+                      const tmp = outer3_2(closure_0.quaternion, 4);
                       const first = tmp[0];
-                      if (self.platform === constants.WEB_ANDROID) {
+                      if (closure_0.platform === outer3_8.WEB_ANDROID) {
                         const items = [tmp5, -tmp4];
                         [tmp6, tmp7] = items;
                       }
                       const tmp8 = -Math.atan2(2 * (tmp[2] * tmp[3] + first * tmp[1]), first * first - tmp[1] * tmp[1] - tmp[2] * tmp[2] + tmp[3] * tmp[3]);
                       const obj = { qw: first, qx: tmp[1], qy: tmp[2], qz: tmp[3], yaw: tmp8, pitch: Math.sin(-2 * (tmp[1] * tmp[3] - first * tmp[2])), roll: -Math.atan2(2 * (tmp[1] * tmp[2] + first * tmp[3]), first * first + tmp[1] * tmp[1] - tmp[2] * tmp[2] - tmp[3] * tmp[3]), interfaceOrientation: 0 };
-                      arg2(obj);
+                      callback(obj);
                     };
                   }
                 }
               }
-              return (self) => {
-                arg2({ x: self.x, y: self.y, z: self.z, interfaceOrientation: 0 });
+              return () => {
+                callback({ x: closure_0.x, y: closure_0.y, z: closure_0.z, interfaceOrientation: 0 });
               };
             }
           }
@@ -57,35 +61,34 @@ if (!obj.isJest()) {
             let x;
             let y;
             let z;
-            ({ x, y, z } = arg0);
+            ({ x, y, z } = closure_0);
             let first = x;
             let tmp2 = y;
             let tmp3 = z;
-            if (arg0.platform === constants.WEB_ANDROID) {
+            if (closure_0.platform === outer3_8.WEB_ANDROID) {
               const items = [-x, -y, -z];
               first = items[0];
               tmp2 = items[1];
               tmp3 = items[2];
             }
             const obj = { x: first, y: tmp2, z: tmp3, interfaceOrientation: 0 };
-            arg2(obj);
+            callback(obj);
           };
         };
         return;
       }
     }
-    const arg1 = JSReanimated;
     let obj = {
       key: "scheduleOnUI",
       value: function scheduleOnUI(arg0) {
-        callback2(arg0);
+        outer1_5(arg0);
       }
     };
-    const items = [obj, , , , , , , , , , , , , , , , , , , , ];
+    let items = [obj, , , , , , , , , , , , , , , , , , , , ];
     obj = {
       key: "createWorkletRuntime",
       value: function createWorkletRuntime(arg0, arg1) {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("createWorkletRuntime is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("createWorkletRuntime is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
@@ -93,7 +96,7 @@ if (!obj.isJest()) {
     obj = {
       key: "scheduleOnRuntime",
       value: function scheduleOnRuntime() {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("scheduleOnRuntime is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("scheduleOnRuntime is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
@@ -101,14 +104,14 @@ if (!obj.isJest()) {
     items[3] = {
       key: "registerEventHandler",
       value: function registerEventHandler(arg0, arg1, arg2) {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("registerEventHandler is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("registerEventHandler is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
     items[4] = {
       key: "unregisterEventHandler",
       value: function unregisterEventHandler(arg0) {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("unregisterEventHandler is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("unregisterEventHandler is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
@@ -124,16 +127,16 @@ if (!obj.isJest()) {
             logger2.warn("Layout Animations are no-ops when using Jest.");
           } else {
             const tmp3Result = tmp3(tmp4[4]);
-            const logger = JSReanimated(closure_1[9]).logger;
+            const logger = JSReanimated(outer1_1[9]).logger;
             const warn = logger.warn;
             if (isChromeDebuggerResult) {
               warn("Layout Animations are no-ops when using Chrome Debugger.");
             } else {
               warn("Layout Animations are not supported on this configuration.");
             }
-            const isChromeDebuggerResult = tmp3(tmp4[4]).isChromeDebugger();
+            isChromeDebuggerResult = tmp3(tmp4[4]).isChromeDebugger();
           }
-          const tmpResult = tmp(tmp2[4]);
+          tmpResult = tmp(tmp2[4]);
         }
       }
     };
@@ -170,7 +173,7 @@ if (!obj.isJest()) {
             self.nextSensorId = +self.nextSensorId + 1;
             return +self.nextSensorId;
           } else {
-            const logger = JSReanimated(closure_1[9]).logger;
+            const logger = JSReanimated(outer1_1[9]).logger;
             let str = "";
             let str2 = "";
             if (obj2.isWeb()) {
@@ -180,7 +183,7 @@ if (!obj.isJest()) {
                 str2 = " Make sure you use secure origin with `npx expo start --web --https`.";
               }
             }
-            if (self.platform === constants.WEB_IOS) {
+            if (self.platform === outer1_8.WEB_IOS) {
               str = " For iOS web, you will also have to also grant permission in the browser: https://dev.to/li/how-to-requestpermission-for-devicemotion-and-deviceorientation-events-in-ios-13-46g2.";
             }
             logger.warn(`Sensor is not available.${str2}${str}`);
@@ -189,7 +192,7 @@ if (!obj.isJest()) {
         } else {
           return -1;
         }
-        const obj = JSReanimated(closure_1[4]);
+        obj = JSReanimated(outer1_1[4]);
       }
     };
     items[9] = {
@@ -216,16 +219,16 @@ if (!obj.isJest()) {
             logger2.warn("useAnimatedKeyboard is not available when using Jest.");
           } else {
             const tmp3Result = tmp3(tmp4[4]);
-            const logger = JSReanimated(closure_1[9]).logger;
+            const logger = JSReanimated(outer1_1[9]).logger;
             const warn = logger.warn;
             if (isChromeDebuggerResult) {
               warn("useAnimatedKeyboard is not available when using Chrome Debugger.");
             } else {
               warn("useAnimatedKeyboard is not available on this configuration.");
             }
-            const isChromeDebuggerResult = tmp3(tmp4[4]).isChromeDebugger();
+            isChromeDebuggerResult = tmp3(tmp4[4]).isChromeDebugger();
           }
-          const tmpResult = tmp(tmp2[4]);
+          tmpResult = tmp(tmp2[4]);
         }
         return -1;
       }
@@ -244,27 +247,27 @@ if (!obj.isJest()) {
         } else {
           obj = { frequency: 1000 / arg1 };
         }
-        if (JSReanimated(closure_1[7]).SensorType.ACCELEROMETER === arg0) {
+        if (JSReanimated(outer1_1[7]).SensorType.ACCELEROMETER === arg0) {
           const _window5 = window;
           const prototype5 = Accelerometer.prototype;
           const accelerometer = new Accelerometer(obj);
           return accelerometer;
-        } else if (JSReanimated(closure_1[7]).SensorType.GYROSCOPE === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.GYROSCOPE === arg0) {
           const _window4 = window;
           const prototype4 = Gyroscope.prototype;
           const gyroscope = new Gyroscope(obj);
           return gyroscope;
-        } else if (JSReanimated(closure_1[7]).SensorType.GRAVITY === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.GRAVITY === arg0) {
           const _window3 = window;
           const prototype3 = GravitySensor.prototype;
           const gravitySensor = new GravitySensor(obj);
           return gravitySensor;
-        } else if (JSReanimated(closure_1[7]).SensorType.MAGNETIC_FIELD === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.MAGNETIC_FIELD === arg0) {
           const _window2 = window;
           const prototype2 = Magnetometer.prototype;
           const magnetometer = new Magnetometer(obj);
           return magnetometer;
-        } else if (JSReanimated(closure_1[7]).SensorType.ROTATION === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.ROTATION === arg0) {
           const _window = window;
           const prototype = AbsoluteOrientationSensor.prototype;
           const absoluteOrientationSensor = new AbsoluteOrientationSensor(obj);
@@ -275,15 +278,15 @@ if (!obj.isJest()) {
     items[13] = {
       key: "getSensorName",
       value: function getSensorName(arg0) {
-        if (JSReanimated(closure_1[7]).SensorType.ACCELEROMETER === arg0) {
+        if (JSReanimated(outer1_1[7]).SensorType.ACCELEROMETER === arg0) {
           return "Accelerometer";
-        } else if (JSReanimated(closure_1[7]).SensorType.GRAVITY === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.GRAVITY === arg0) {
           return "GravitySensor";
-        } else if (JSReanimated(closure_1[7]).SensorType.GYROSCOPE === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.GYROSCOPE === arg0) {
           return "Gyroscope";
-        } else if (JSReanimated(closure_1[7]).SensorType.MAGNETIC_FIELD === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.MAGNETIC_FIELD === arg0) {
           return "Magnetometer";
-        } else if (JSReanimated(closure_1[7]).SensorType.ROTATION === arg0) {
+        } else if (JSReanimated(outer1_1[7]).SensorType.ROTATION === arg0) {
           return "AbsoluteOrientationSensor";
         }
       }
@@ -291,7 +294,7 @@ if (!obj.isJest()) {
     items[14] = {
       key: "getSettledUpdates",
       value: function getSettledUpdates() {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("`getSettledUpdates` is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("`getSettledUpdates` is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
@@ -309,63 +312,62 @@ if (!obj.isJest()) {
           opera = window.opera;
         }
         if (undefined === opera) {
-          self.platform = constants.UNKNOWN;
+          self.platform = outer1_8.UNKNOWN;
         } else {
           if (obj.test(opera)) {
-            self.platform = constants.WEB_IOS;
+            self.platform = outer1_8.WEB_IOS;
           } else {
             if (obj2.test(opera)) {
               self.platform = tmp.WEB_ANDROID;
             } else {
               self.platform = tmp.WEB;
             }
-            const obj2 = /android/i;
+            obj2 = /android/i;
           }
-          const obj = /iPad|iPhone|iPod/;
+          obj = /iPad|iPhone|iPod/;
         }
       }
     };
     items[16] = {
       key: "getViewProp",
       value: function getViewProp(arg0, arg1, arg2, arg3) {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("getViewProp is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("getViewProp is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
     items[17] = {
       key: "configureProps",
       value: function configureProps() {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("configureProps is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("configureProps is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
     items[18] = {
       key: "executeOnUIRuntimeSync",
       value: function executeOnUIRuntimeSync(arg0) {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("`executeOnUIRuntimeSync` is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("`executeOnUIRuntimeSync` is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
     items[19] = {
       key: "markNodeAsRemovable",
       value: function markNodeAsRemovable(arg0) {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("markNodeAsRemovable is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("markNodeAsRemovable is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
     items[20] = {
       key: "unmarkNodeAsRemovable",
       value: function unmarkNodeAsRemovable(arg0) {
-        const reanimatedError = new JSReanimated(closure_1[8]).ReanimatedError("unmarkNodeAsRemovable is not available in JSReanimated.");
+        const reanimatedError = new JSReanimated(outer1_1[8]).ReanimatedError("unmarkNodeAsRemovable is not available in JSReanimated.");
         throw reanimatedError;
       }
     };
     return callback(JSReanimated, items);
-  }();
-  obj = { WEB_IOS: "web iOS", WEB_ANDROID: "web Android", WEB: "web", UNKNOWN: "unknown" };
+  })();
+  isJest = { WEB_IOS: "web iOS", WEB_ANDROID: "web Android", WEB: "web", UNKNOWN: "unknown" };
   exports.createJSReanimatedModule = function createJSReanimatedModule() {
     return new closure_7();
   };
-  exports.Platform = obj;
+  exports.Platform = isJest;
 }
-mockedRequestAnimationFrame = arg1(dependencyMap[5]).mockedRequestAnimationFrame;

@@ -1,15 +1,23 @@
-// Module ID: 5662
-// Function ID: 48650
+// Module ID: 5667
+// Function ID: 48677
 // Name: canReportUser
-// Dependencies: []
+// Dependencies: [1348, 4051, 3758, 1849, 653, 2]
 // Exports: canDeleteAndReportMessage
 
-// Module 5662 (canReportUser)
+// Module 5667 (canReportUser)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
 function canReportUser(author) {
   if (null == author) {
     return false;
   } else {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let tmp3 = null != currentUser;
     if (tmp3) {
       let tmp4 = currentUser.id !== author.id;
@@ -29,7 +37,7 @@ function canReportMessage(message) {
   return tmp;
 }
 function canReportAndDeleteInChannel(channelId) {
-  const channel = channel.getChannel(channelId);
+  channel = channel.getChannel(channelId);
   if (null == channel) {
     return false;
   } else {
@@ -37,7 +45,7 @@ function canReportAndDeleteInChannel(channelId) {
       if (channel.type !== constants.GROUP_DM) {
         const obj = { channelId };
         if (closure_2.canWithPartialContext(constants2.MANAGE_MESSAGES, obj)) {
-          const memberCount = memberCount.getMemberCount(channel.getGuildId());
+          memberCount = memberCount.getMemberCount(channel.getGuildId());
           let tmp6 = null != memberCount;
           if (tmp6) {
             tmp6 = memberCount >= 50;
@@ -51,13 +59,8 @@ function canReportAndDeleteInChannel(channelId) {
     return true;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-({ ChannelTypes: closure_4, Permissions: closure_5 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("utils/ReportUtils.tsx");
+({ ChannelTypes: closure_4, Permissions: closure_5 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/ReportUtils.tsx");
 
 export { canReportUser };
 export { canReportMessage };

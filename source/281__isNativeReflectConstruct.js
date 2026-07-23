@@ -1,9 +1,20 @@
 // Module ID: 281
 // Function ID: 4389
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 282, 117, 115, 38, 44]
 
 // Module 281 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import jsxProd from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import { cloneElement } from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,21 +24,12 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-const cloneElement = arg1(dependencyMap[6]).cloneElement;
-const jsx = arg1(dependencyMap[7]).jsx;
-const tmp3 = (Component) => {
+let closure_3 = ["onBlur", "onFocus"];
+let tmp3 = ((Component) => {
   class TouchableNativeFeedback {
     constructor() {
       self = this;
-      tmp = closure_5(this, TouchableNativeFeedback);
+      tmp = outer1_5(this, TouchableNativeFeedback);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -35,35 +37,34 @@ const tmp3 = (Component) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_8(TouchableNativeFeedback);
-      tmp4 = closure_7;
-      if (closure_14()) {
+      obj = outer1_8(TouchableNativeFeedback);
+      tmp4 = outer1_7;
+      if (outer1_14()) {
         items1 = combined;
         if (!combined) {
           items1 = [];
         }
-        tmp6 = closure_8;
-        constructResult = Reflect.construct(obj, items1, closure_8(self).constructor);
+        tmp6 = outer1_8;
+        constructResult = Reflect.construct(obj, items1, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp4Result = tmp4(self, constructResult);
       obj = {};
-      tmp7 = closure_1(closure_2[8]);
+      tmp7 = outer1_1(outer1_2[8]);
       tmp7 = new tmp7(tmp4Result._createPressabilityConfig());
       obj.pressability = tmp7;
       tmp4Result.state = obj;
       return tmp4Result;
     }
   }
-  const arg1 = TouchableNativeFeedback;
   callback2(TouchableNativeFeedback, Component);
   let obj = {
     key: "_createPressabilityConfig",
     value: function _createPressabilityConfig() {
-      const self = this;
-      const TouchableNativeFeedback = this;
-      let disabled = this.props.aria-disabled;
+      let self = this;
+      self = this;
+      let disabled = this.props["aria-disabled"];
       if (null == disabled) {
         const accessibilityState = self.props.accessibilityState;
         disabled = undefined;
@@ -106,16 +107,16 @@ const tmp3 = (Component) => {
       return obj;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "_dispatchPressedStateChange",
     value: function _dispatchPressedStateChange(arg0) {
-      const result = TouchableNativeFeedback(closure_2[9]).findHostInstance_DEPRECATED(this);
+      const result = TouchableNativeFeedback(outer1_2[9]).findHostInstance_DEPRECATED(this);
       if (null == result) {
         const _console = console;
         console.warn("Touchable: Unable to find HostComponent instance. Has your Touchable component been unmounted?");
       } else {
-        const Commands = TouchableNativeFeedback(closure_2[10]).Commands;
+        const Commands = TouchableNativeFeedback(outer1_2[10]).Commands;
         Commands.setPressed(result, arg0);
       }
     }
@@ -127,12 +128,12 @@ const tmp3 = (Component) => {
       let locationX;
       let locationY;
       ({ locationX, locationY } = nativeEvent.nativeEvent);
-      const result = TouchableNativeFeedback(closure_2[9]).findHostInstance_DEPRECATED(this);
+      const result = TouchableNativeFeedback(outer1_2[9]).findHostInstance_DEPRECATED(this);
       if (null == result) {
         const _console = console;
         console.warn("Touchable: Unable to find HostComponent instance. Has your Touchable component been unmounted?");
       } else {
-        const Commands = TouchableNativeFeedback(closure_2[10]).Commands;
+        const Commands = TouchableNativeFeedback(outer1_2[10]).Commands;
         let num2 = 0;
         if (null != locationX) {
           num2 = locationX;
@@ -152,61 +153,61 @@ const tmp3 = (Component) => {
       let onBlur;
       let onFocus;
       const self = this;
-      const Children = React.Children;
+      const Children = outer1_10.Children;
       const onlyResult = Children.only(this.props.children);
       const items = [onlyResult.props.children];
       const pressability = this.state.pressability;
       const eventHandlers = pressability.getEventHandlers();
       ({ onBlur, onFocus } = eventHandlers);
       let obj = {};
-      aria-busy = this.props.aria-busy;
+      aria_busy = this.props["aria-busy"];
       if (null == aria_busy) {
         const accessibilityState = self.props.accessibilityState;
         let busy;
         if (null != accessibilityState) {
           busy = accessibilityState.busy;
         }
-        aria-busy = busy;
+        aria_busy = busy;
       }
       obj.busy = aria_busy;
-      aria-checked = self.props.aria-checked;
+      aria_checked = self.props["aria-checked"];
       if (null == aria_checked) {
         const accessibilityState2 = self.props.accessibilityState;
         let checked;
         if (null != accessibilityState2) {
           checked = accessibilityState2.checked;
         }
-        aria-checked = checked;
+        aria_checked = checked;
       }
       obj.checked = aria_checked;
-      aria-disabled = self.props.aria-disabled;
+      aria_disabled = self.props["aria-disabled"];
       if (null == aria_disabled) {
         const accessibilityState3 = self.props.accessibilityState;
         let disabled;
         if (null != accessibilityState3) {
           disabled = accessibilityState3.disabled;
         }
-        aria-disabled = disabled;
+        aria_disabled = disabled;
       }
       obj.disabled = aria_disabled;
-      aria-expanded = self.props.aria-expanded;
+      aria_expanded = self.props["aria-expanded"];
       if (null == aria_expanded) {
         const accessibilityState4 = self.props.accessibilityState;
         let expanded;
         if (null != accessibilityState4) {
           expanded = accessibilityState4.expanded;
         }
-        aria-expanded = expanded;
+        aria_expanded = expanded;
       }
       obj.expanded = aria_expanded;
-      aria-selected = self.props.aria-selected;
+      aria_selected = self.props["aria-selected"];
       if (null == aria_selected) {
         const accessibilityState5 = self.props.accessibilityState;
         let selected;
         if (null != accessibilityState5) {
           selected = accessibilityState5.selected;
         }
-        aria-selected = selected;
+        aria_selected = selected;
       }
       obj.selected = aria_selected;
       let merged = obj;
@@ -216,55 +217,55 @@ const tmp3 = (Component) => {
         merged = Object.assign({}, obj, obj);
       }
       obj = {};
-      aria-valuemax = self.props.aria-valuemax;
+      aria_valuemax = self.props["aria-valuemax"];
       if (null == aria_valuemax) {
         const accessibilityValue = self.props.accessibilityValue;
         let max;
         if (null != accessibilityValue) {
           max = accessibilityValue.max;
         }
-        aria-valuemax = max;
+        aria_valuemax = max;
       }
       obj.max = aria_valuemax;
-      aria-valuemin = self.props.aria-valuemin;
+      aria_valuemin = self.props["aria-valuemin"];
       if (null == aria_valuemin) {
         const accessibilityValue2 = self.props.accessibilityValue;
         let min;
         if (null != accessibilityValue2) {
           min = accessibilityValue2.min;
         }
-        aria-valuemin = min;
+        aria_valuemin = min;
       }
       obj.min = aria_valuemin;
-      aria-valuenow = self.props.aria-valuenow;
+      aria_valuenow = self.props["aria-valuenow"];
       if (null == aria_valuenow) {
         const accessibilityValue3 = self.props.accessibilityValue;
         let now;
         if (null != accessibilityValue3) {
           now = accessibilityValue3.now;
         }
-        aria-valuenow = now;
+        aria_valuenow = now;
       }
       obj.now = aria_valuenow;
-      aria-valuetext = self.props.aria-valuetext;
+      aria_valuetext = self.props["aria-valuetext"];
       if (null == aria_valuetext) {
         const accessibilityValue4 = self.props.accessibilityValue;
         let text;
         if (null != accessibilityValue4) {
           text = accessibilityValue4.text;
         }
-        aria-valuetext = text;
+        aria_valuetext = text;
       }
       obj.text = aria_valuetext;
       let str = "none";
-      if ("off" !== self.props.aria-live) {
-        let accessibilityLiveRegion = self.props.aria-live;
+      if ("off" !== self.props["aria-live"]) {
+        let accessibilityLiveRegion = self.props["aria-live"];
         if (null == accessibilityLiveRegion) {
           accessibilityLiveRegion = self.props.accessibilityLiveRegion;
         }
         str = accessibilityLiveRegion;
       }
-      let accessibilityLabel = self.props.aria-label;
+      let accessibilityLabel = self.props["aria-label"];
       if (null == accessibilityLabel) {
         accessibilityLabel = self.props.accessibilityLabel;
       }
@@ -274,21 +275,21 @@ const tmp3 = (Component) => {
       } else {
         background = self.props.background;
       }
-      const tmp16 = closure_13;
-      const tmp3 = callback2(eventHandlers, closure_3);
+      const tmp16 = outer1_13;
+      const tmp3 = outer1_4(eventHandlers, outer1_3);
       const obj1 = { accessible: false !== self.props.accessible, accessibilityHint: self.props.accessibilityHint, accessibilityLanguage: self.props.accessibilityLanguage, accessibilityLabel, accessibilityRole: self.props.accessibilityRole, accessibilityState: merged, accessibilityActions: self.props.accessibilityActions, onAccessibilityAction: self.props.onAccessibilityAction, accessibilityValue: obj };
       let str2 = "no-hide-descendants";
-      if (true !== self.props.aria-hidden) {
+      if (true !== self.props["aria-hidden"]) {
         str2 = self.props.importantForAccessibility;
       }
       obj1.importantForAccessibility = str2;
-      let accessibilityViewIsModal = self.props.aria-modal;
+      let accessibilityViewIsModal = self.props["aria-modal"];
       if (null == accessibilityViewIsModal) {
         accessibilityViewIsModal = self.props.accessibilityViewIsModal;
       }
       obj1.accessibilityViewIsModal = accessibilityViewIsModal;
       obj1.accessibilityLiveRegion = str;
-      let accessibilityElementsHidden = self.props.aria-hidden;
+      let accessibilityElementsHidden = self.props["aria-hidden"];
       if (null == accessibilityElementsHidden) {
         accessibilityElementsHidden = self.props.accessibilityElementsHidden;
       }
@@ -308,8 +309,8 @@ const tmp3 = (Component) => {
       obj1.nextFocusUp = self.props.nextFocusUp;
       obj1.onLayout = self.props.onLayout;
       obj1.testID = self.props.testID;
-      items1[1] = Object.assign({}, tmp3, closure_13(background, true === self.props.useForeground), obj1);
-      return callback5.apply(undefined, items1.concat(items));
+      items1[1] = Object.assign({}, tmp3, outer1_13(background, true === self.props.useForeground), obj1);
+      return outer1_11.apply(undefined, items1.concat(items));
     }
   };
   items[4] = {
@@ -334,22 +335,23 @@ const tmp3 = (Component) => {
     }
   };
   return callback(TouchableNativeFeedback, items);
-}(importAllResult.Component);
+})(importAllResult.Component);
+let closure_12 = tmp3;
 tmp3.SelectableBackground = (rippleRadius) => {
-  const obj = { "Bool(false)": true, "Bool(false)": true, rippleRadius };
+  const obj = { type: "ThemeAttrAndroid", attribute: "selectableItemBackground", rippleRadius };
   return obj;
 };
 tmp3.SelectableBackgroundBorderless = (rippleRadius) => {
-  const obj = { "Bool(false)": null, "Bool(false)": 1, rippleRadius };
+  const obj = { type: "ThemeAttrAndroid", attribute: "selectableItemBackgroundBorderless", rippleRadius };
   return obj;
 };
 tmp3.Ripple = (arg0, borderless, rippleRadius) => {
-  const tmp = importDefault(dependencyMap[11])(arg0);
+  const tmp = importDefault(38)(arg0);
   let tmp3 = null == tmp;
   if (!tmp3) {
     tmp3 = "number" === typeof tmp;
   }
-  importDefault(dependencyMap[12])(tmp3, "Unexpected color given for Ripple color");
+  importDefault(44)(tmp3, "Unexpected color given for Ripple color");
   return { type: "RippleAndroid", color: tmp, borderless, rippleRadius };
 };
 tmp3.canUseNativeForeground = () => true;

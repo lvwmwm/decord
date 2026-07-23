@@ -1,18 +1,19 @@
-// Module ID: 10828
-// Function ID: 84072
+// Module ID: 10838
+// Function ID: 84121
 // Name: _launchActivityInBotDM
-// Dependencies: []
+// Dependencies: [5, 10513, 10514, 4140, 10827, 2]
 // Exports: launchActivityInBotDM
 
-// Module 10828 (_launchActivityInBotDM)
+// Module 10838 (_launchActivityInBotDM)
+import set from "set";
+
+const require = arg1;
 function _launchActivityInBotDM() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _launchActivityInBotDM = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/app_launcher/utils/AppLauncherPlayUtils.tsx");
+const result = require("stashPendingFrameLaunch").fileFinishedImporting("modules/app_launcher/utils/AppLauncherPlayUtils.tsx");
 
 export const launchActivityInBotDM = function launchActivityInBotDM(arg0) {
   return _launchActivityInBotDM(...arguments);

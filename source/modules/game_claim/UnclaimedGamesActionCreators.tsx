@@ -1,17 +1,22 @@
-// Module ID: 14904
-// Function ID: 112278
+// Module ID: 15020
+// Function ID: 114446
 // Name: fetchUnclaimedGames
-// Dependencies: []
+// Dependencies: [5, 15021, 653, 507, 686, 566, 664, 561, 2]
 // Exports: useHasUnclaimedGames
 
-// Module 14904 (fetchUnclaimedGames)
+// Module 15020 (fetchUnclaimedGames)
+import closure_3 from "initialize";
+import importDefaultResult from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import initialize from "initialize";
+
+const require = arg1;
 function fetchUnclaimedGames() {
   return _fetchUnclaimedGames(...arguments);
 }
 function _fetchUnclaimedGames() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchUnclaimedGames = obj;
   return obj(...arguments);
 }
 function useUnclaimedGameIdsForGuild(id, flag) {
@@ -28,12 +33,8 @@ function useUnclaimedGameIdsForGuild(id, flag) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
 let closure_6 = [];
-let obj = arg1(dependencyMap[5]);
-obj = {
+initialize = {
   getQueryId(arg0) {
     let str = null;
     if (arg0) {
@@ -47,19 +48,19 @@ obj = {
   load() {
     return fetchUnclaimedGames();
   },
-  staleAfter: importDefault(dependencyMap[6]).Seconds.DAY,
-  retryConfig: obj
+  staleAfter: require("set").Seconds.DAY,
+  retryConfig: initialize
 };
-obj = {
+initialize = {
   backoff() {
-    let tmp = importDefault(dependencyMap[7]);
-    tmp = new tmp(5 * importDefault(dependencyMap[6]).Millis.MINUTE);
+    let tmp = importDefault(561);
+    tmp = new tmp(5 * importDefault(664).Millis.MINUTE);
     return tmp;
   },
   maxRetries: 10
 };
-const fetchStore = obj.createFetchStore(importDefaultResult, obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/game_claim/UnclaimedGamesActionCreators.tsx");
+const fetchStore = initialize.createFetchStore(importDefaultResult, initialize);
+const result = require("ME").fileFinishedImporting("modules/game_claim/UnclaimedGamesActionCreators.tsx");
 
 export default { fetch: fetchUnclaimedGames };
 export { fetchUnclaimedGames };

@@ -1,52 +1,59 @@
-// Module ID: 6716
-// Function ID: 52205
+// Module ID: 6721
+// Function ID: 52237
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 1316, 1194, 3, 1898, 1882, 22, 2]
 
-// Module 6716 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6721 (_createForOfIteratorHelperLoose)
+import timestamp from "timestamp";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,18 +90,12 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("UserSettingsProto");
-let tmp4 = () => {
+let tmp4 = (() => {
   class UserSettingsProto {
     constructor() {
-      f52217 = this;
-      tmp = closure_3(this, UserSettingsProto);
+      self = this;
+      tmp = outer1_3(this, UserSettingsProto);
       this.actions = {
         CONNECTION_OPEN() {
               return self.throttledOnChange();
@@ -110,12 +111,12 @@ let tmp4 = () => {
             }
       };
       this.handleUserSettingsProtoChange = () => {
-        const id = id.getId();
-        const databaseResult = self(closure_1[6]).database(id);
+        const id = outer2_6.getId();
+        const databaseResult = _self(UserSettingsProto[6]).database(id);
         if (null != databaseResult) {
           databaseResult.transaction((arg0) => {
-            const state = closure_5.computeState();
-            let obj = callback(closure_1[7]);
+            const state = outer3_5.computeState();
+            let obj = callback(UserSettingsProto[7]);
             const result = obj.userSettingsTransaction(arg0);
             for (const key10015 in state) {
               let tmp4 = key10015;
@@ -124,8 +125,9 @@ let tmp4 = () => {
               obj.id = Number(key10015);
               obj.value = state[key10015];
               let putResult = result.put(obj);
+              continue;
             }
-            const versions = closure_5.settings.versions;
+            const versions = outer3_5.settings.versions;
             let dataVersion;
             if (null != versions) {
               dataVersion = versions.dataVersion;
@@ -134,27 +136,26 @@ let tmp4 = () => {
             if (null != dataVersion) {
               num = dataVersion;
             }
-            const result1 = callback(closure_1[7]).nonGuildVersionsTransaction(arg0);
+            const result1 = callback(UserSettingsProto[7]).nonGuildVersionsTransaction(arg0);
             obj = { id: "user_settings_version", version: num };
             result1.put(obj);
           }, "handleUserSettingsProtoChange");
         }
       };
-      obj = f52217(UserSettingsProto[8]);
+      obj = f52249(UserSettingsProto[8]);
       this.throttledOnChange = obj.debounce(this.handleUserSettingsProtoChange, 0);
       return;
     }
   }
-  const dependencyMap = UserSettingsProto;
   let obj = { key: "getAll" };
   let closure_0 = callback(async (arg0) => {
     let done;
-    let obj = callback(closure_1[7]);
+    let obj = callback(UserSettingsProto[7]);
     const nowResult = performance.now();
     const arr = yield obj.userSettings(arg0).getMany();
-    closure_7.verbose("loaded in " + performance.now() - nowResult + "ms (settings: " + arr.length + ")");
+    outer2_7.verbose("loaded in " + performance.now() - nowResult + "ms (settings: " + arr.length + ")");
     obj = {};
-    const tmp3 = callback2(arr);
+    const tmp3 = outer2_8(arr);
     let iter = tmp3();
     if (!iter.done) {
       do {
@@ -179,8 +180,8 @@ let tmp4 = () => {
   };
   items[1] = obj;
   return callback2(UserSettingsProto, items);
-}();
+})();
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/app_database/modules/UserSettingsProto.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/UserSettingsProto.tsx");
 
 export default tmp4;

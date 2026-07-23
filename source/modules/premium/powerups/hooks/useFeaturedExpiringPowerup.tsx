@@ -1,29 +1,28 @@
-// Module ID: 11528
-// Function ID: 89819
+// Module ID: 11538
+// Function ID: 89868
 // Name: useFeaturedExpiringPowerup
-// Dependencies: []
+// Dependencies: [31, 4038, 4017, 566, 11539, 6786, 2]
 // Exports: default
 
-// Module 11528 (useFeaturedExpiringPowerup)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/useFeaturedExpiringPowerup.tsx");
+// Module 11538 (useFeaturedExpiringPowerup)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/hooks/useFeaturedExpiringPowerup.tsx");
 
 export default function useFeaturedExpiringPowerup(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => stateForGuild.getStateForGuild(arg0));
-  const dependencyMap = stateFromStores;
-  const obj = arg1(dependencyMap[3]);
-  const items1 = [closure_3];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => expiringPowerupCoachmarkEnabled.getStateForGuild(arg0));
-  const React = stateFromStores1;
-  const obj2 = arg1(dependencyMap[3]);
-  const expiringPowerupCoachmarkEnabled = arg1(dependencyMap[4]).useExpiringPowerupCoachmarkEnabled("useFeaturedExpiringPowerup");
-  closure_3 = expiringPowerupCoachmarkEnabled;
+  const _require = arg0;
+  let items = [closure_4];
+  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => outer1_4.getStateForGuild(closure_0));
+  let obj = _require(stateFromStores[3]);
+  const items1 = [expiringPowerupCoachmarkEnabled];
+  const stateFromStores1 = _require(stateFromStores[3]).useStateFromStores(items1, () => expiringPowerupCoachmarkEnabled.getStateForGuild(closure_0));
+  const obj2 = _require(stateFromStores[3]);
+  expiringPowerupCoachmarkEnabled = _require(stateFromStores[4]).useExpiringPowerupCoachmarkEnabled("useFeaturedExpiringPowerup");
   const items2 = [stateFromStores, stateFromStores1, expiringPowerupCoachmarkEnabled];
-  return React.useMemo(() => {
+  return stateFromStores1.useMemo(() => {
     if (expiringPowerupCoachmarkEnabled) {
       let unlockedPowerups;
       if (null != stateFromStores) {
@@ -91,8 +90,8 @@ export default function useFeaturedExpiringPowerup(arg0) {
         const _Math = Math;
         const _Date = Date;
         const date = new Date(reduced.ends_at);
-        obj.daysUntilExpiry = Math.max(0, arg0(stateFromStores[5]).getDaysRemaining(date));
-        const metadata = reduced.metadata;
+        obj.daysUntilExpiry = Math.max(0, callback(stateFromStores[5]).getDaysRemaining(date));
+        let metadata = reduced.metadata;
         let num_expiring_boosts;
         if (null != metadata) {
           num_expiring_boosts = metadata.num_expiring_boosts;

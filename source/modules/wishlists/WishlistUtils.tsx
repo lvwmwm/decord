@@ -1,23 +1,25 @@
-// Module ID: 11987
-// Function ID: 92654
+// Module ID: 12106
+// Function ID: 94842
 // Name: createNitroSuggestedSku
-// Dependencies: []
+// Dependencies: [57, 4169, 8680, 8681, 8682, 653, 1851, 1212, 5615, 3776, 2]
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 11987 (createNitroSuggestedSku)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).isCollectiblesWishlistItemRecord;
-let closure_6 = arg1(dependencyMap[3]).isPremiumWishlistItemRecord;
-const isSKUWishlistItemRecord = arg1(dependencyMap[4]).isSKUWishlistItemRecord;
-const SKUProductLines = arg1(dependencyMap[5]).SKUProductLines;
-const PremiumSubscriptionSKUs = arg1(dependencyMap[6]).PremiumSubscriptionSKUs;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
+// Module 12106 (createNitroSuggestedSku)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { isCollectiblesWishlistItemRecord as closure_5 } from "_createForOfIteratorHelperLoose";
+import { isPremiumWishlistItemRecord as closure_6 } from "_isNativeReflectConstruct";
+import { isSKUWishlistItemRecord } from "_isNativeReflectConstruct";
+import { SKUProductLines } from "ME";
+import { PremiumSubscriptionSKUs } from "GuildFeatures";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
 
 export const createNitroSuggestedSku = function createNitroSuggestedSku() {
   const obj = { id: PremiumSubscriptionSKUs.TIER_2, productLine: SKUProductLines.PREMIUM };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.name = intl.string(arg1(dependencyMap[7]).t.lG6a5x);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.name = intl.string(require(1212) /* getSystemLocale */.t.lG6a5x);
   obj.features = new Set();
   const set = new Set();
   obj.genres = new Set();
@@ -29,7 +31,7 @@ export const createNitroSuggestedSku = function createNitroSuggestedSku() {
   obj.eligibleOffers = [];
   obj.prices = {};
   const set1 = new Set();
-  return new closure_4(obj);
+  return new _isNativeReflectConstruct(obj);
 };
 export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnMobile(sku, isWishlistOwner) {
   isWishlistOwner = isWishlistOwner.isWishlistOwner;
@@ -38,8 +40,8 @@ export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnM
       let tmp5 = !tmp4;
       if (!!isWishlistOwner.isSocialLayerStorefrontMobilePurchasingEnabled) {
         if (!isWishlistOwner) {
-          isWishlistOwner = isWishlistOwner(dependencyMap[8]).isSlayerSkuAvailableOnThisPlatform(sku.sku);
-          const obj = isWishlistOwner(dependencyMap[8]);
+          isWishlistOwner = require(5615) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
+          const obj = require(5615) /* transformStorefrontSKUPricesServer */;
         }
         tmp5 = isWishlistOwner;
       }
@@ -96,7 +98,7 @@ export const buildReorderedWishlistData = function buildReorderedWishlistData(se
   return obj;
 };
 export const buildReorderedNitroFirstWishlistItems = function buildReorderedNitroFirstWishlistItems(arr) {
-  const findIndexResult = arr.findIndex((skuId) => callback(closure_2[9]).isPremiumSku(skuId.skuId));
+  const findIndexResult = arr.findIndex((skuId) => outer1_1(outer1_2[9]).isPremiumSku(skuId.skuId));
   if (findIndexResult <= 0) {
     return arr;
   } else {

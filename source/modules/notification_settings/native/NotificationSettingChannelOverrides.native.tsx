@@ -1,60 +1,64 @@
-// Module ID: 16370
-// Function ID: 126313
-// Dependencies: []
+// Module ID: 16487
+// Function ID: 128487
+// Dependencies: [57, 31, 27, 1352, 5070, 3767, 1849, 653, 33, 4130, 689, 566, 5160, 5071, 4320, 5045, 1212, 3843, 8832, 5165, 5170, 4593, 8827, 5772, 1273, 8502, 9244, 2]
 
-// Module 16370
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const isGuildReadableType = arg1(dependencyMap[3]).isGuildReadableType;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ ChannelTypes: closure_10, NotificationSettingsSections: closure_11 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
-let obj1 = arg1(dependencyMap[9]);
+// Module 16487
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "set";
+import { isGuildReadableType } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+const require = arg1;
+({ ChannelTypes: closure_10, NotificationSettingsSections: closure_11 } = ME);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
 let obj = {};
-obj = { marginHorizontal: importDefault(dependencyMap[10]).space.PX_8, flex: 1 };
+obj = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, flex: 1 };
 obj.container = obj;
-obj1 = { paddingVertical: importDefault(dependencyMap[10]).space.PX_16 };
-obj.searchContainer = obj1;
-let closure_14 = obj1.createStyles(obj);
-const tmp3 = arg1(dependencyMap[8]);
+_createForOfIteratorHelperLoose = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj.searchContainer = _createForOfIteratorHelperLoose;
+let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function NotificationSettingChannelOverrides(arg0) {
   let navigation;
-  ({ guildId: closure_0, navigation } = arg0);
-  const importDefault = navigation;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => categories.getCategories(closure_0));
-  const dependencyMap = stateFromStores;
-  const tmp3 = callback(importAllResult.useState(""), 2);
-  const first = tmp3[0];
-  let callback = first;
+  let require;
+  ({ guildId: require, navigation } = arg0);
+  let tmp = callback2();
+  let obj = require(stateFromStores[11]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCategories(closure_0));
+  let tmp3 = first(channels.useState(""), 2);
+  first = tmp3[0];
   const items1 = [stateFromStores, first];
-  const memo = importAllResult.useMemo(() => {
+  const memo = channels.useMemo(() => {
     const channels = navigation(stateFromStores[13])(stateFromStores._categories, stateFromStores, (channel) => {
       channel = channel.channel;
-      let tmp = callback3(channel.type);
+      let tmp = outer2_6(channel.type);
       if (!tmp) {
-        let tmp3 = channel.type === constants.GUILD_CATEGORY;
+        let tmp3 = channel.type === outer2_10.GUILD_CATEGORY;
         if (tmp3) {
-          tmp3 = null != closure_2[channel.id];
+          tmp3 = null != outer1_2[channel.id];
         }
         if (tmp3) {
-          tmp3 = closure_2[channel.id].length > 0;
+          tmp3 = outer1_2[channel.id].length > 0;
         }
         tmp = tmp3;
       }
       if (tmp) {
-        if ("" !== closure_3) {
-          if (null != closure_3) {
-            const obj = callback(closure_2[14]);
-            const formatted = callback(closure_2[14]).computeChannelName(channel, closure_9, closure_8).toLowerCase();
-            const str2 = callback(closure_2[14]).computeChannelName(channel, closure_9, closure_8);
-            return callback2(closure_2[15])(closure_3.toLowerCase(), formatted);
+        if ("" !== outer1_3) {
+          if (null != outer1_3) {
+            const obj = outer2_0(stateFromStores[14]);
+            const formatted = outer2_0(stateFromStores[14]).computeChannelName(channel, outer2_9, outer2_8).toLowerCase();
+            const str2 = outer2_0(stateFromStores[14]).computeChannelName(channel, outer2_9, outer2_8);
+            return navigation(stateFromStores[15])(outer1_3.toLowerCase(), formatted);
           }
         }
         return tmp;
@@ -65,65 +69,65 @@ const memoResult = importAllResult.memo(function NotificationSettingChannelOverr
     const sections = [channels.length];
     return { channels, sections };
   }, items1);
-  const channels = memo.channels;
+  channels = memo.channels;
   const items2 = [channels, first];
-  const effect = importAllResult.useEffect(() => {
+  const effect = channels.useEffect(() => {
     if (null != first) {
       if ("" !== first) {
         if (channels.length > 0) {
-          const intl2 = callback(stateFromStores[16]).intl;
+          const intl2 = outer1_0(stateFromStores[16]).intl;
           const obj = { count: length };
-          let formatToPlainStringResult = intl2.formatToPlainString(callback(stateFromStores[16]).t.ZGVL3g, obj);
+          let formatToPlainStringResult = intl2.formatToPlainString(outer1_0(stateFromStores[16]).t.ZGVL3g, obj);
         } else {
-          const intl = callback(stateFromStores[16]).intl;
-          formatToPlainStringResult = intl.string(callback(stateFromStores[16]).t.f5cMAg);
+          const intl = outer1_0(stateFromStores[16]).intl;
+          formatToPlainStringResult = intl.string(outer1_0(stateFromStores[16]).t.f5cMAg);
         }
-        const AccessibilityAnnouncer = callback(stateFromStores[17]).AccessibilityAnnouncer;
+        const AccessibilityAnnouncer = outer1_0(stateFromStores[17]).AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce(formatToPlainStringResult);
       }
     }
   }, items2);
   const items3 = [channels, navigation];
-  callback = importAllResult.useCallback((arg0, arg1) => {
-    const tmp = channels[arg1];
+  const callback = channels.useCallback((arg0, arg1) => {
+    let closure_0 = tmp;
     let obj = {};
-    obj = { IconComponent: tmp(stateFromStores[21]).getChannelIconComponent(tmp) };
-    obj.icon = callback2(tmp(stateFromStores[20]).TableRowIcon, obj);
+    obj = { IconComponent: outer1_0(stateFromStores[21]).getChannelIconComponent(channels[arg1]) };
+    obj.icon = outer1_12(outer1_0(stateFromStores[20]).TableRowIcon, obj);
     obj.start = 0 === arg1;
     obj.end = arg1 === channels.length - 1;
-    const obj3 = tmp(stateFromStores[21]);
-    obj.label = tmp(stateFromStores[14]).computeChannelName(tmp, closure_9, closure_8);
+    const obj3 = outer1_0(stateFromStores[21]);
+    obj.label = outer1_0(stateFromStores[14]).computeChannelName(channels[arg1], outer1_9, outer1_8);
     obj.labelLineClamp = 1;
     obj.arrow = true;
     obj.onPress = function onPress() {
-
+      outer1_1.push(outer2_11.CHANNEL_OVERRIDE, { channelId: tmp.id });
     };
-    return callback2(tmp(stateFromStores[19]).TableRow, obj);
+    return outer1_12(outer1_0(stateFromStores[19]).TableRow, obj);
   }, items3);
   obj = { style: tmp.container };
   obj = { style: tmp.searchContainer };
-  const tmp7 = importDefault(dependencyMap[18])();
+  const tmp7 = navigation(stateFromStores[18])();
   const obj1 = {};
-  const intl = arg1(dependencyMap[16]).intl;
-  obj1.placeholder = intl.string(arg1(dependencyMap[16]).t.5h0QOP);
+  let intl = require(stateFromStores[16]).intl;
+  obj1.placeholder = intl.string(require(stateFromStores[16]).t["5h0QOP"]);
   obj1.onChange = tmp3[1];
-  obj.children = callback2(arg1(dependencyMap[23]).SearchField, obj1);
-  const items4 = [callback2(View, obj), ];
+  obj.children = callback(require(stateFromStores[23]).SearchField, obj1);
+  const items4 = [callback(View, obj), ];
   if (0 === channels.length) {
-    const obj2 = { Illustration: arg1(dependencyMap[25]).NoResults };
-    const intl2 = arg1(dependencyMap[16]).intl;
-    obj2.title = intl2.string(arg1(dependencyMap[16]).t.wM7uRI);
-    const intl3 = arg1(dependencyMap[16]).intl;
-    obj2.body = intl3.string(arg1(dependencyMap[16]).t.f5cMAg);
-    let tmp15 = callback2(arg1(dependencyMap[24]).EmptyState, obj2);
+    const obj2 = { Illustration: require(stateFromStores[25]).NoResults };
+    let intl2 = require(stateFromStores[16]).intl;
+    obj2.title = intl2.string(require(stateFromStores[16]).t.wM7uRI);
+    const intl3 = require(stateFromStores[16]).intl;
+    obj2.body = intl3.string(require(stateFromStores[16]).t.f5cMAg);
+    let tmp15 = callback(require(stateFromStores[24]).EmptyState, obj2);
   } else {
-    const obj3 = { sections: memo.sections, renderItem: callback, itemSize: tmp7, insetEnd: importDefault(dependencyMap[12])().insets.bottom, estimatedListSize: "windowSize", placeholderConfig: tmp9, wrapChildren: true };
-    tmp15 = callback2(importDefault(dependencyMap[26]), obj3);
+    let obj3 = { sections: memo.sections, renderItem: callback, itemSize: tmp7, insetEnd: navigation(stateFromStores[12])().insets.bottom, estimatedListSize: "windowSize", placeholderConfig: tmp9, wrapChildren: true };
+    tmp15 = callback(navigation(stateFromStores[26]), obj3);
   }
   items4[1] = tmp15;
   obj.children = items4;
   return closure_13(View, obj);
 });
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/notification_settings/native/NotificationSettingChannelOverrides.native.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/notification_settings/native/NotificationSettingChannelOverrides.native.tsx");
 
 export default memoResult;

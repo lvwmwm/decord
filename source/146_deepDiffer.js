@@ -79,9 +79,9 @@ function deepDiffer(name, name2, closure_55, arg3) {
               } else {
                 for (const key10003 in arg0) {
                   let tmp18 = key10003;
-                  let tmp19 = closure_1;
+                  let tmp19 = deepDiffer;
                   let tmp20 = tmp2;
-                  if (!closure_1(arg0[key10003], arg1[key10003], num - 1, tmp2)) {
+                  if (!deepDiffer(arg0[key10003], arg1[key10003], num - 1, tmp2)) {
                     continue;
                   } else {
                     let flag = true;
@@ -112,6 +112,6 @@ function deepDiffer(name, name2, closure_55, arg3) {
   }
 }
 deepDiffer.unstable_setLogListeners = function unstable_setLogListeners(arg0) {
-
+  let closure_0 = arg0;
 };
 arg5.default = deepDiffer;

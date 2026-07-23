@@ -1,19 +1,24 @@
-// Module ID: 9237
-// Function ID: 72253
-// Dependencies: []
+// Module ID: 9244
+// Function ID: 72294
+// Dependencies: [153, 31, 33, 3991, 9245, 5189, 9246, 9247, 9249, 9250, 9251, 9254, 9255, 9259, 2]
 
-// Module 9237
-importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-const animatedComponent = importDefault(dependencyMap[3]).createAnimatedComponent(importDefault(dependencyMap[4]));
-const importDefaultResult1 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[3]).createAnimatedComponent(importDefault(dependencyMap[4]));
-const importDefaultResult2 = importDefault(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[5]).createBottomSheetScrollableComponent(arg1(dependencyMap[5]).SCROLLABLE_TYPE.SCROLLVIEW, animatedComponent);
-let closure_9 = 0;
-const obj4 = arg1(dependencyMap[5]);
+// Module 9244
+import "_readOnlyError";
+import importAllResult from "result";
+import jsxProd from "jsxProd";
+import animatedComponent from "__INTERNAL_VIEW_CONFIG";
+import importDefaultResult1 from "module_3991";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import BottomSheetModal from "BottomSheetModal";
+import importDefaultResult2 from "module_3991";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_8 = BottomSheetModal.createBottomSheetScrollableComponent(require("BottomSheetModal").SCROLLABLE_TYPE.SCROLLVIEW, animatedComponent);
+let c9 = 0;
 const forwardRefResult = importAllResult.forwardRef(function FastestList(keyExtractor) {
   let inActionSheet;
   let itemSize;
@@ -44,7 +49,7 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(keyExtr
   let style;
   let style2;
   let wrapChildren;
-  const arg1 = keyExtractor;
+  let closure_0 = keyExtractor;
   const enabled = keyExtractor.enabled;
   let tmp = undefined === enabled;
   if (!tmp) {
@@ -71,7 +76,6 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(keyExtr
     num2 = insetEnd;
   }
   const listId = keyExtractor.listId;
-  const importDefault = listId;
   ({ placeholderConfig, renderAhead } = keyExtractor);
   let str = "nominal";
   ({ itemSize, listFooterSize, listFooterAlwaysMounted, listHeaderSize, listHeaderAlwaysMounted, onLayout, placeholdersForceEnabled } = keyExtractor);
@@ -92,24 +96,23 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(keyExtr
   }
   const showsVerticalScrollIndicator = keyExtractor.showsVerticalScrollIndicator;
   ({ style, wrapChildren } = keyExtractor);
-  const ref = importAllResult.useRef(null);
-  const dependencyMap = ref;
-  const ref1 = importAllResult.useRef(null);
-  const ref2 = importAllResult.useRef(keyExtractor);
+  const ref = ref1.useRef(null);
+  ref1 = ref1.useRef(null);
+  const ref2 = ref1.useRef(keyExtractor);
   const items = [keyExtractor];
-  const effect = importAllResult.useEffect(() => {
-    ref2.current = arg0;
+  const effect = ref1.useEffect(() => {
+    ref2.current = closure_0;
   }, items);
-  ({ style: style2, marginEnd, marginStart } = importDefault(dependencyMap[6])({ style }));
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  ({ style: style2, marginEnd, marginStart } = listId(ref[6])({ style }));
+  const imperativeHandle = ref1.useImperativeHandle(arg1, () => ({
     scrollToTop() {
       let flag = arg0;
       if (arg0 === undefined) {
         flag = false;
       }
-      if (null != closure_2.current) {
-        const Commands = callback(closure_2[4]).Commands;
-        Commands.scrollToTop(closure_2.current, flag);
+      if (null != outer1_2.current) {
+        const Commands = callback(ref[4]).Commands;
+        Commands.scrollToTop(outer1_2.current, flag);
       }
     },
     scrollToLocation(paddingStart) {
@@ -124,45 +127,45 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(keyExtr
       if (num === undefined) {
         num = 0;
       }
-      if (null != closure_2.current) {
-        const Commands = callback(closure_2[4]).Commands;
-        Commands.scrollToLocation(closure_2.current, section, item, animated, num);
+      if (null != outer1_2.current) {
+        const Commands = callback(ref[4]).Commands;
+        Commands.scrollToLocation(outer1_2.current, section, item, animated, num);
       }
     }
   }));
   const items1 = [ref1];
-  const tmp10 = importDefault(dependencyMap[6])({ style });
+  const tmp10 = listId(ref[6])({ style });
   const tmp5 = undefined === showsVerticalScrollIndicator || showsVerticalScrollIndicator;
-  const callback = importAllResult.useCallback((nativeEvent) => {
+  const callback = ref1.useCallback((nativeEvent) => {
     const current = ref1.current;
     if (null != current) {
       current.setVisibleItems(nativeEvent.nativeEvent);
     }
   }, items1);
   let obj = { estimatedListSize: keyExtractor.estimatedListSize, horizontal: tmp2 };
-  const tmp12 = importDefault(dependencyMap[7])(ref2);
+  const tmp12 = listId(ref[7])(ref2);
   const items2 = [listId];
-  const tmp14 = importDefault(dependencyMap[8])(obj);
-  const memo = importAllResult.useMemo(() => {
+  const tmp14 = listId(ref[8])(obj);
+  const memo = ref1.useMemo(() => {
     let str = "fst";
     if (null != listId) {
       str = listId;
     }
-    let closure_9 = tmp + 1;
-    return "" + str + "-" + +closure_9;
+    const outer1_9 = tmp + 1;
+    return "" + str + "-" + +outer1_9;
   }, items2);
-  const tmp17 = importDefault(dependencyMap[10])({ fastestListId: memo, itemSize, keyExtractor: keyExtractor.keyExtractor, listFooterSize, listHeaderSize, sections, sectionHeaderSize, sectionFooterSize });
-  const tmp15 = importDefault(dependencyMap[9])(placeholderConfig);
-  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = importDefault(dependencyMap[11])(keyExtractor, tmp2));
+  const tmp17 = listId(ref[10])({ fastestListId: memo, itemSize, keyExtractor: keyExtractor.keyExtractor, listFooterSize, listHeaderSize, sections, sectionHeaderSize, sectionFooterSize });
+  const tmp15 = listId(ref[9])(placeholderConfig);
+  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = listId(ref[11])(keyExtractor, tmp2));
   if (tmp3) {
     let tmp21 = closure_8;
   } else {
     if ("animatedScrollPosition" !== scrollReporting) {
       if ("animatedCallbacks" !== scrollReporting) {
-        tmp21 = importDefault(dependencyMap[4]);
+        tmp21 = listId(ref[4]);
       }
     }
-    tmp21 = closure_7;
+    tmp21 = __INTERNAL_VIEW_CONFIG;
   }
   obj = { accessibilityLabel: keyExtractor.accessibilityLabel, horizontal: tmp2, insetStart: num, insetEnd: num2 };
   let tmp23 = "on-drag" === keyboardDismissMode;
@@ -184,7 +187,7 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(keyExtr
   obj.showsHorizontalScrollIndicator = tmp4;
   obj.showsVerticalScrollIndicator = tmp5;
   obj.style = style2;
-  const tmp18 = importDefault(dependencyMap[11])(keyExtractor, tmp2);
+  const tmp18 = listId(ref[11])(keyExtractor, tmp2);
   const tmp22 = ref2;
   obj = { estimatedListSize: tmp14, horizontal: tmp2, listFooterAlwaysMounted, listHeaderAlwaysMounted, marginEnd, marginStart, placeholdersForceEnabled, ref: ref1, renderItem, renderListFooter, renderListHeader, renderSectionFooter, renderSectionHeader, sectionsVersioned: tmp17, wrapChildren };
   if (tmp) {
@@ -197,10 +200,10 @@ const forwardRefResult = importAllResult.forwardRef(function FastestList(keyExtr
     return tmp28;
   }
   const obj2 = {};
-  const tmp22Result = ref2(tmp21, obj);
+  tmp22Result = ref2(tmp21, obj);
   const merged = Object.assign(keyExtractor);
-  tmp28 = ref2(importDefault(dependencyMap[13]), obj2);
+  tmp28 = ref2(listId(ref[13]), obj2);
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/fastest_list/FastestList.android.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/fastest_list/FastestList.android.tsx");
 
 export default forwardRefResult;

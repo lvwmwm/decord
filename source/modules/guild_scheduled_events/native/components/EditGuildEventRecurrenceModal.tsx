@@ -1,38 +1,40 @@
-// Module ID: 8360
-// Function ID: 66656
+// Module ID: 8366
+// Function ID: 66693
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: []
+// Dependencies: [5, 57, 31, 33, 4130, 689, 8351, 8346, 8359, 1820, 8367, 4543, 1212, 8368, 8345, 8369, 8370, 4126, 5519, 2]
 // Exports: default
 
-// Module 8360 (EditGuildEventRecurrenceModal)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.cardStyle = obj;
-let closure_9 = obj.createStyles(obj);
+// Module 8366 (EditGuildEventRecurrenceModal)
+import closure_4 from "_createForOfIteratorHelperLoose";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.cardStyle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = { TIME: "TIME" };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventRecurrenceModal.tsx");
+let result = require("result").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventRecurrenceModal.tsx");
 
 export default function EditGuildEventRecurrenceModal(guildEvent) {
+  let importDefault;
   let recurrenceId;
   guildEvent = guildEvent.guildEvent;
-  const arg1 = guildEvent;
-  ({ onCloseModal: closure_1, recurrenceId } = guildEvent);
-  const importAll = recurrenceId;
-  let closure_4;
+  ({ onCloseModal: importDefault, recurrenceId } = guildEvent);
+  let scheduleForRecurrenceWithException;
   let callback;
   let React;
   let closure_8;
-  let callback2;
+  let _createForOfIteratorHelperLoose;
   function _handleSave() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = scheduleForRecurrenceWithException(tmp);
-    const _handleSave = obj;
     return obj(...arguments);
   }
   function handleScheduleChange(arg0) {
@@ -44,30 +46,28 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
       const cloneResult = startDate.clone();
     }
     const obj = { startDate, endDate };
-    callback2(obj);
-    callback3(null);
+    callback(obj);
+    callback2(null);
   }
-  const tmp2 = importDefault(dependencyMap[6])(recurrenceId, guildEvent.id);
+  let tmp2 = importDefault(8351)(recurrenceId, guildEvent.id);
   const dependencyMap = tmp2;
-  let obj = arg1(dependencyMap[7]);
+  let obj = guildEvent(8346);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj1 = arg1(dependencyMap[7]);
-  const scheduleForRecurrenceWithException = obj1.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp2);
-  closure_4 = scheduleForRecurrenceWithException;
+  let obj1 = guildEvent(8346);
+  scheduleForRecurrenceWithException = obj1.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp2);
   const tmp5 = callback(React.useState(scheduleForRecurrenceWithException), 2);
   callback = tmp5[0];
   React = tmp5[1];
   const tmp6 = callback(React.useState(null), 2);
   const first = tmp6[0];
   closure_8 = tmp6[1];
-  const tmp8 = callback(importDefault(dependencyMap[8])(() => {
+  const tmp8 = callback(importDefault(8359)(() => {
     const result = recurrenceId(tmp2[9]).dismissGlobalKeyboard();
-    return callback(tmp2[10])(guildEvent, recurrenceId, closure_5, tmp2);
+    return outer1_1(tmp2[10])(guildEvent, recurrenceId, _slicedToArray, tmp2);
   }), 2);
-  callback2 = tmp8[0];
+  _createForOfIteratorHelperLoose = tmp8[0];
   const error = tmp8[1].error;
-  const constants = error;
-  const items = [error];
+  let items = [error];
   const effect = React.useEffect(() => {
     let anyErrorMessage;
     if (null != error) {
@@ -80,30 +80,30 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     closure_8(tmp4);
   }, items);
   obj = { size: "md" };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.text = intl.string(arg1(dependencyMap[12]).t.R3BPH+);
+  const intl = guildEvent(1212).intl;
+  obj.text = intl.string(guildEvent(1212).t["R3BPH+"]);
   obj.onPress = function handleSave() {
     return _handleSave(...arguments);
   };
   obj.disabled = null != first;
-  let closure_11 = first(arg1(dependencyMap[11]).Button, obj);
+  let closure_11 = first(guildEvent(4543).Button, obj);
   obj = {
     title: "",
     customNavbar() {
-      const obj = { screen: guildEvent(tmp2[14]).EditGuildEventScreens.DETAILS, onClose: callback };
-      return first(callback(tmp2[13]), obj);
+      const obj = { screen: guildEvent(tmp2[14]).EditGuildEventScreens.DETAILS, onClose: closure_1 };
+      return first(outer1_1(tmp2[13]), obj);
     },
     headerLeft() {
       return null;
     },
     render() {
       let obj = { action: closure_11 };
-      const tmp2 = callback(tmp2[15]);
-      obj = { guildEvent, recurrenceId, schedule: closure_5, onChange: handleScheduleChange };
-      const items = [first(callback(tmp2[16]), obj), ];
+      tmp2 = outer1_1(tmp2[15]);
+      obj = { guildEvent, recurrenceId, schedule: _slicedToArray, onChange: handleScheduleChange };
+      const items = [first(outer1_1(tmp2[16]), obj), ];
       let tmp3 = null;
       if (null != first) {
-        obj = { children: first };
+        obj = { variant: "text-md/normal", color: "text-feedback-critical", children: first };
         tmp3 = first(guildEvent(tmp2[17]).Text, obj);
       }
       items[1] = tmp3;
@@ -112,6 +112,6 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     },
     fullscreen: true
   };
-  obj1 = { screens: { [closure_10.TIME]: obj }, initialRouteName: constants.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: callback2().cardStyle };
-  return first(arg1(dependencyMap[18]).Navigator, obj1);
+  obj1 = { screens: { [closure_10.TIME]: obj }, initialRouteName: error.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: _createForOfIteratorHelperLoose().cardStyle };
+  return first(guildEvent(5519).Navigator, obj1);
 };

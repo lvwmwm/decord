@@ -1,34 +1,36 @@
-// Module ID: 14774
-// Function ID: 111355
+// Module ID: 14890
+// Function ID: 113523
 // Name: registerGuildVisibilityMethod
-// Dependencies: []
+// Dependencies: [9445, 1838, 4970, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 14774 (registerGuildVisibilityMethod)
-const _module = require(dependencyMap[0]);
-({ setGetVisibleChannelIds: closure_0, setGetVisibleGuildIds: closure_1 } = _module);
-let closure_2 = importDefault(dependencyMap[1]);
-let closure_3 = importDefault(dependencyMap[2]);
-const GuildsNodeType = require(dependencyMap[2]).GuildsNodeType;
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/guilds_bar/native/utils/registerSidebarVisibilityMethods.tsx");
+// Module 14890 (registerGuildVisibilityMethod)
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GuildsNodeType } from "_isNativeReflectConstruct";
+
+let closure_0;
+let closure_1;
+({ setGetVisibleChannelIds: closure_0, setGetVisibleGuildIds: closure_1 } = SidebarVisibilityMethodStore);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guilds_bar/native/utils/registerSidebarVisibilityMethods.tsx");
 
 export const registerGuildVisibilityMethod = function registerGuildVisibilityMethod(fastListRef) {
   const current = fastListRef.current;
   if (null != current) {
-    callback(() => {
+    callback2(() => {
       if (null == store) {
         return [];
       } else {
         const items = store.getItems();
-        const store = store.getScrollPosition();
+        store = store.getScrollPosition();
         const containerSize = store.containerSize;
-        const guilds = guilds.getGuilds();
-        const guildsTree = guildsTree.getGuildsTree();
+        const guilds = outer1_2.getGuilds();
+        const guildsTree = outer1_3.getGuildsTree();
         const _Set = Set;
         const set = new Set();
-        const item = items.forEach((recyclerKey) => {
-          const node = node.getNode(recyclerKey.recyclerKey);
+        let item = items.forEach((recyclerKey) => {
+          node = node.getNode(recyclerKey.recyclerKey);
           if (undefined !== node) {
             const layoutStart = recyclerKey.layoutStart;
             let tmp3 = layoutStart + recyclerKey.layoutSize >= closure_0;
@@ -36,22 +38,22 @@ export const registerGuildVisibilityMethod = function registerGuildVisibilityMet
               tmp3 = layoutStart <= closure_0 + containerSize;
             }
             if (tmp3) {
-              function addGuildsInNode(node) {
-                if (node.type === constants.FOLDER) {
+              (function addGuildsInNode(node) {
+                if (node.type === outer3_4.FOLDER) {
                   let children = node.children;
                 } else {
                   children = [node];
                 }
                 const item = children.forEach((type) => {
-                  let tmp = type.type === set.GUILD;
+                  let tmp = type.type === outer4_4.GUILD;
                   if (tmp) {
-                    tmp = type.id in closure_2;
+                    tmp = type.id in outer2_2;
                   }
                   if (tmp) {
-                    set.add(type.id);
+                    outer2_4.add(type.id);
                   }
                 });
-              }(node);
+              })(node);
             }
           }
         });
@@ -62,18 +64,19 @@ export const registerGuildVisibilityMethod = function registerGuildVisibilityMet
   }
 };
 export const registerFastListChannelVisibilityMethod = function registerFastListChannelVisibilityMethod(ref, guildChannels) {
+  const callback = guildChannels;
   const current = ref.current;
   if (null != current) {
-    guildChannels(() => {
-      if (null == current) {
+    callback(() => {
+      if (null == containerSize) {
         return [];
       } else {
-        const items = current.getItems();
-        const scrollPosition = current.getScrollPosition();
-        const current = current.containerSize;
+        const items = containerSize.getItems();
+        const scrollPosition = containerSize.getScrollPosition();
+        containerSize = containerSize.containerSize;
         const items1 = [];
         const item = items.forEach((section) => {
-          const channelFromSectionRow = channelFromSectionRow.getChannelFromSectionRow(section.section, section.item);
+          channelFromSectionRow = channelFromSectionRow.getChannelFromSectionRow(section.section, section.item);
           let channel;
           if (null != channelFromSectionRow) {
             channel = channelFromSectionRow.channel;

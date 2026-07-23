@@ -1,32 +1,34 @@
-// Module ID: 8496
-// Function ID: 67839
+// Module ID: 8502
+// Function ID: 67876
 // Name: getNoResultsSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 8503, 8504, 8505, 3976, 2]
 // Exports: NoResults
 
-// Module 8496 (getNoResultsSource)
+// Module 8502 (getNoResultsSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getNoResultsSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useNoResultsSource() {
-  return getNoResultsSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getNoResultsSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResults.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResults.tsx");
 
 export { getNoResultsSource };
 export { useNoResultsSource };
@@ -34,5 +36,5 @@ export const NoResults = function NoResults(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useNoResultsSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

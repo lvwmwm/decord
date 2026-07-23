@@ -1,19 +1,22 @@
-// Module ID: 12529
-// Function ID: 96153
+// Module ID: 12643
+// Function ID: 98309
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1917, 1838, 3767, 1849, 653, 4351, 1360, 566, 686, 2]
 
-// Module 12529 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
+// Module 12643 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { MessageFlags } from "ME";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,49 +26,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -76,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -110,7 +113,7 @@ function findMessage(channelId, messageId) {
   }
   if (null == guildId) {
     return null;
-  } else if (null == closure_13[guildId]) {
+  } else if (null == dependencyMap[guildId]) {
     return null;
   } else {
     let tmp6 = null;
@@ -122,34 +125,35 @@ function findMessage(channelId, messageId) {
   }
 }
 function updateGuildState(guildId, arg1) {
-  if (null != closure_13[guildId]) {
-    let obj = {};
-    const merged = Object.assign(closure_13);
+  if (null != obj[guildId]) {
+    obj = {};
+    const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(tmp);
     const merged2 = Object.assign(arg1(tmp));
     obj[guildId] = obj;
-    closure_13 = obj;
   }
 }
 function prependRecord(guildId, messageRecord) {
+  let closure_0 = messageRecord;
   updateGuildState(guildId, (ids) => {
     let obj = {};
-    const items = [arg1.id, ...ids.ids];
+    const items = [messageRecord.id, ...ids.ids];
     obj.ids = items;
     obj = {};
     const merged = Object.assign(ids.messages);
-    obj[arg1.id] = arg1;
+    obj[messageRecord.id] = messageRecord;
     obj.messages = obj;
     return obj;
   });
 }
 function updateMessage(guildId) {
+  let closure_0 = arg1;
   updateGuildState(guildId, (messages) => {
     let obj = {};
     obj = {};
     const merged = Object.assign(messages.messages);
-    obj[arg1.id] = arg1;
+    obj[id.id] = id;
     obj.messages = obj;
     return obj;
   });
@@ -157,43 +161,41 @@ function updateMessage(guildId) {
 function handleChannelDelete(channel) {
   let iter;
   channel = channel.channel;
-  let arg1;
-  let dependencyMap;
+  let items;
+  let obj;
   const guild_id = channel.guild_id;
   if (null == guild_id) {
     return false;
-  } else if (null == closure_13[guild_id]) {
+  } else if (null == dependencyMap[guild_id]) {
     return false;
   } else {
-    const items = [];
-    arg1 = items;
-    const obj = {};
-    const merged = Object.assign(tmp7.messages);
-    dependencyMap = obj;
-    const tmp11 = _createForOfIteratorHelperLoose(tmp7.ids);
-    let iter2 = tmp11();
+    items = [];
+    obj = {};
+    const merged = Object.assign(tmp9.messages);
+    const tmp13 = _createForOfIteratorHelperLoose(tmp9.ids);
+    let iter2 = tmp13();
     if (!iter2.done) {
       do {
         let value = iter2.value;
-        let tmp = tmp7.messages[value];
+        let tmp3 = tmp9.messages[value];
         let channel_id;
-        if (null != tmp) {
-          channel_id = tmp.channel_id;
+        if (null != tmp3) {
+          channel_id = tmp3.channel_id;
         }
         if (channel_id === channel.id) {
-          delete r9[r6];
+          delete tmp2[tmp];
         } else {
           let arr = items.push(value);
         }
-        iter = tmp11();
+        iter = tmp13();
         iter2 = iter;
       } while (!iter.done);
     }
-    if (items.length === tmp7.ids.length) {
+    if (items.length === tmp9.ids.length) {
       return false;
     } else {
       updateGuildState(guild_id, () => {
-        const obj = { ids: items, messages: obj };
+        obj = { ids: items, messages: obj };
         return obj;
       });
     }
@@ -201,17 +203,17 @@ function handleChannelDelete(channel) {
 }
 function handleRelationshipUpdate() {
   let obj = {};
-  const keys = Object.keys(closure_13);
+  const keys = Object.keys(obj);
   let num = 0;
   let flag = false;
   let flag2 = false;
   if (0 < keys.length) {
     do {
       let tmp3 = keys[num];
-      let tmp4 = closure_13;
-      let tmp5 = closure_13[tmp3];
-      let tmp6 = closure_15;
-      let tmp7 = closure_15(tmp5.ids);
+      let tmp4 = obj;
+      let tmp5 = obj[tmp3];
+      let tmp6 = _createForOfIteratorHelperLoose;
+      let tmp7 = _createForOfIteratorHelperLoose(tmp5.ids);
       let iter = tmp7();
       let tmp8 = tmp;
       let tmp9 = tmp2;
@@ -247,14 +249,14 @@ function handleRelationshipUpdate() {
               tmp9 = isIgnoredForMessageResult;
             }
           }
-          let iter3 = tmp7();
+          iter3 = tmp7();
           tmp10 = tmp12;
           iter2 = iter3;
           tmp11 = tmp12;
           let tmp17 = value;
           let tmp18 = obj1;
-          let tmp = tmp8;
-          let tmp2 = tmp9;
+          tmp = tmp8;
+          tmp2 = tmp9;
         } while (!iter3.done);
       }
       if (null == tmp11) {
@@ -274,28 +276,24 @@ function handleRelationshipUpdate() {
       flag2 = flag3;
     } while (num < keys.length);
   }
-  if (flag2) {
-    closure_13 = obj;
-  } else {
+  if (!flag2) {
     return false;
   }
 }
-let closure_11 = importDefault(dependencyMap[9]);
-const MessageFlags = arg1(dependencyMap[10]).MessageFlags;
 let closure_13 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class GuildOfficialMessagesStore {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, GuildOfficialMessagesStore);
-      obj = closure_5(GuildOfficialMessagesStore);
-      tmp2 = closure_4;
-      if (closure_14()) {
+      tmp = outer1_2(this, GuildOfficialMessagesStore);
+      obj = outer1_5(GuildOfficialMessagesStore);
+      tmp2 = outer1_4;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -304,19 +302,18 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildOfficialMessagesStore;
   callback2(GuildOfficialMessagesStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8, closure_9, closure_10, closure_11);
+      this.waitFor(outer1_7, outer1_8, outer1_9, outer1_10, outer1_11);
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "getState",
     value(arg0) {
-      return closure_13[arg0];
+      return outer1_13[arg0];
     }
   };
   items[1] = obj;
@@ -324,7 +321,7 @@ let tmp2 = (Store) => {
     key: "getMessage",
     value(arg0, arg1) {
       let tmp2;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         tmp2 = tmp.messages[arg1];
       }
       return tmp2;
@@ -335,7 +332,7 @@ let tmp2 = (Store) => {
     key: "getMessages",
     value(arg0) {
       const GuildOfficialMessagesStore = tmp;
-      if (null == closure_13[arg0]) {
+      if (null == outer1_13[arg0]) {
         let items = [];
       } else {
         const ids = tmp.ids;
@@ -349,7 +346,7 @@ let tmp2 = (Store) => {
     key: "isLoading",
     value(arg0) {
       let loading;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         loading = tmp.loading;
       }
       return null != loading && loading;
@@ -359,7 +356,7 @@ let tmp2 = (Store) => {
     key: "isLoaded",
     value(arg0) {
       let loaded;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         loaded = tmp.loaded;
       }
       return null != loaded && loaded;
@@ -369,23 +366,23 @@ let tmp2 = (Store) => {
     key: "hasMore",
     value(arg0) {
       let hasMore;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         hasMore = tmp.hasMore;
       }
       return null != hasMore && hasMore;
     }
   };
   return callback(GuildOfficialMessagesStore, items);
-}(importDefault(dependencyMap[13]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildOfficialMessagesStore";
-tmp2 = new tmp2(importDefault(dependencyMap[14]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let closure_13 = {};
   },
   LOAD_OFFICIAL_MESSAGES: function handleLoadOfficialMessages(guildId) {
     guildId = guildId.guildId;
     let loading;
-    if (null != closure_13[guildId]) {
+    if (null != obj[guildId]) {
       loading = tmp.loading;
     }
     if (true === loading) {
@@ -394,50 +391,51 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
       if (null == tmp) {
         return false;
       } else {
-        let obj = {};
-        const merged = Object.assign(closure_13);
+        obj = {};
+        const merged = Object.assign(obj);
         obj = {};
         const merged1 = Object.assign(tmp);
         obj["loading"] = true;
         obj[guildId] = obj;
-        closure_13 = obj;
       }
     } else {
       obj = {};
-      const merged2 = Object.assign(closure_13);
-      const obj1 = { 9223372036854775807: "<string:4128768>", 9223372036854775807: "isArray", 9223372036854775807: "<string:2335309824>", 0: "<string:2851858284>", 9223372036854775807: "<string:1514128113>", 0: "<string:1340029796>", ids: [], messages: {} };
+      const merged2 = Object.assign(obj);
+      const obj1 = { ids: [], messages: {}, hasMore: false, loading: true, loaded: false, error: false };
       obj[guildId] = obj1;
-      closure_13 = obj;
     }
   },
   LOAD_OFFICIAL_MESSAGES_SUCCESS: function handleLoadOfficialMessagesSuccess(arg0) {
+    let _isNativeReflectConstruct;
+    let dependencyMap;
     let guildId;
-    ({ guildId, messages: closure_0, hasMore: closure_1, before: __exportStarResult1 } = arg0);
-    if (null == closure_13[guildId]) {
+    let require;
+    ({ guildId, messages: require, hasMore: dependencyMap, before: _isNativeReflectConstruct } = arg0);
+    if (null == dependencyMap[guildId]) {
       return false;
     } else {
       updateGuildState(guildId, (ids) => {
         let iter2;
-        if (null != __exportStarResult1) {
+        if (null != _isNativeReflectConstruct) {
           const items = [];
           HermesBuiltin.arraySpread(ids.ids, 0);
           let items1 = items;
         } else {
           items1 = [];
         }
-        if (null != __exportStarResult1) {
+        if (null != _isNativeReflectConstruct) {
           let obj = {};
           const merged = Object.assign(ids.messages);
         } else {
           obj = {};
         }
-        const tmp5 = callback(closure_0);
+        const tmp5 = outer1_15(closure_0);
         let iter = tmp5();
         if (!iter.done) {
           do {
-            let tmp6 = closure_0;
-            let tmp7 = closure_1;
-            let obj3 = closure_0(closure_1[11]);
+            let tmp6 = outer1_0;
+            let tmp7 = outer1_1;
+            let obj3 = outer1_0(outer1_1[11]);
             let messageRecord = obj3.createMessageRecord(iter.value);
             if (null == obj[messageRecord.id]) {
               let arr = items1.push(messageRecord.id);
@@ -447,7 +445,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
             iter = iter2;
           } while (!iter2.done);
         }
-        obj = { 9223372036854775807: "leftRock", 9223372036854775807: 122, 9223372036854775807: 58, 0: 48, 9223372036854775807: 10, 0: 4, ids: items1 };
+        obj = { ids: items1, messages: null, hasMore: null, loading: false, loaded: true, error: false };
         obj.messages = obj;
         obj.hasMore = closure_1;
         return obj;
@@ -456,22 +454,21 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
   },
   LOAD_OFFICIAL_MESSAGES_FAILURE: function handleLoadOfficialMessagesFailure(guildId) {
     guildId = guildId.guildId;
-    if (null == closure_13[guildId]) {
+    if (null == dependencyMap[guildId]) {
       return false;
     } else {
-      updateGuildState(guildId, null != tmp ? () => ({ loading: false }) : () => ({ "Null": 1766088043, "Null": 827788593 }));
+      updateGuildState(guildId, null != tmp ? (() => ({ loading: false })) : (() => ({ loading: false, error: true })));
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     guild = guild.guild;
-    if (null == closure_13[guild.id]) {
+    if (null == obj[guild.id]) {
       return false;
     } else {
-      const obj = {};
-      const merged = Object.assign(closure_13);
+      obj = {};
+      const merged = Object.assign(obj);
       const id = guild.id;
-      delete r0[r2];
-      closure_13 = obj;
+      delete tmp[tmp2];
     }
   },
   CHANNEL_DELETE: handleChannelDelete,
@@ -492,14 +489,14 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
             let tmp5 = null != tmp4;
             if (tmp5) {
               if (null == tmp4.messages[message.id]) {
-                prependRecord(guildId, arg1(dependencyMap[11]).createMessageRecord(message));
-                const obj = arg1(dependencyMap[11]);
+                prependRecord(guildId, require(4351) /* createMinimalMessageRecord */.createMessageRecord(message));
+                const obj = require(4351) /* createMinimalMessageRecord */;
               }
               tmp5 = tmp6;
             }
             return tmp5;
           }
-          const obj2 = arg1(dependencyMap[12]);
+          obj2 = require(1360) /* hasFlag */;
         }
         return false;
       }
@@ -508,7 +505,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
     message = message.message;
-    let arg1;
+    let id;
     if (null == message.id) {
       return false;
     } else {
@@ -519,12 +516,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
       }
       if (null == guildId) {
         return false;
-      } else if (null == closure_13[guildId]) {
+      } else if (null == dependencyMap[guildId]) {
         return false;
       } else if (null == message.author) {
         if (null != tmp22) {
-          updateMessage(guildId, arg1(dependencyMap[11]).updateMessageRecord(tmp22, message));
-          const obj3 = arg1(dependencyMap[11]);
+          updateMessage(guildId, id(4351).updateMessageRecord(tmp22, message));
+          const obj3 = id(4351);
         }
         return null != tmp22;
       } else {
@@ -533,30 +530,30 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
         if (null != flags) {
           num = flags;
         }
-        const hasFlagResult = arg1(dependencyMap[12]).hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL);
+        const hasFlagResult = id(1360).hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL);
         if (hasFlagResult) {
           if (null == tmp22) {
-            prependRecord(guildId, arg1(dependencyMap[11]).createMessageRecord(message));
-            const obj2 = arg1(dependencyMap[11]);
+            prependRecord(guildId, id(4351).createMessageRecord(message));
+            const obj2 = id(4351);
           }
         }
         if (!hasFlagResult) {
           if (null != tmp22) {
-            arg1 = message.id;
+            id = message.id;
             updateGuildState(guildId, (messages) => {
               let obj = {};
               const merged = Object.assign(messages.messages);
-              delete r1[r0];
-              obj = { ids: ids.filter((arg0) => arg0 !== closure_0), messages: obj };
-              const ids = messages.ids;
+              delete tmp2[tmp];
+              obj = { ids: ids.filter((arg0) => arg0 !== outer1_0), messages: obj };
+              ids = messages.ids;
               return obj;
             });
           }
         }
         if (hasFlagResult) {
           if (null != tmp22) {
-            updateMessage(guildId, arg1(dependencyMap[11]).updateMessageRecord(tmp22, message));
-            const obj = arg1(dependencyMap[11]);
+            updateMessage(guildId, id(4351).updateMessageRecord(tmp22, message));
+            let obj = id(4351);
           }
         }
         return false;
@@ -637,21 +634,20 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
   },
   MESSAGE_DELETE: function handleMessageDelete(id) {
     id = id.id;
-    const arg1 = id;
     const guildId = id.guildId;
     let tmp = null != guildId;
     if (tmp) {
       let tmp4;
-      if (null != closure_13[guildId]) {
+      if (null != dependencyMap[guildId]) {
         tmp4 = tmp3.messages[id];
       }
       if (null != tmp4) {
         updateGuildState(guildId, (messages) => {
           let obj = {};
           const merged = Object.assign(messages.messages);
-          delete r1[r0];
-          obj = { ids: ids.filter((arg0) => arg0 !== closure_0), messages: obj };
-          const ids = messages.ids;
+          delete tmp2[tmp];
+          obj = { ids: ids.filter((arg0) => arg0 !== outer1_0), messages: obj };
+          ids = messages.ids;
           return obj;
         });
       }
@@ -664,39 +660,36 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
     let ids;
     let iter2;
     ({ ids, guildId } = arg0);
-    let arg1;
-    let dependencyMap;
-    let __exportStarResult1;
+    let set;
+    let found;
+    let obj;
     if (null == guildId) {
       return false;
-    } else if (null == closure_13[guildId]) {
+    } else if (null == dependencyMap[guildId]) {
       return false;
     } else {
       const _Set = Set;
-      const set = new Set(ids);
-      arg1 = set;
-      ids = tmp8.ids;
-      const found = ids.filter((arg0) => !set.has(arg0));
-      dependencyMap = found;
-      if (found.length === tmp8.ids.length) {
+      set = new Set(ids);
+      ids = tmp10.ids;
+      found = ids.filter((arg0) => !set.has(arg0));
+      if (found.length === tmp10.ids.length) {
         return false;
       } else {
-        const obj = {};
-        const merged = Object.assign(tmp8.messages);
-        __exportStarResult1 = obj;
-        const tmp4 = _createForOfIteratorHelperLoose(tmp8.ids);
-        let iter = tmp4();
+        obj = {};
+        const merged = Object.assign(tmp10.messages);
+        const tmp6 = _createForOfIteratorHelperLoose(tmp10.ids);
+        let iter = tmp6();
         if (!iter.done) {
           do {
             if (set.has(iter.value)) {
-              delete r7[r4];
+              delete tmp2[tmp];
             }
-            iter2 = tmp4();
+            iter2 = tmp6();
             iter = iter2;
           } while (!iter2.done);
         }
         updateGuildState(guildId, () => {
-          const obj = { ids: found, messages: obj };
+          obj = { ids: found, messages: obj };
           return obj;
         });
       }
@@ -706,6 +699,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
   RELATIONSHIP_REMOVE: handleRelationshipUpdate,
   RELATIONSHIP_UPDATE: handleRelationshipUpdate
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/messages/GuildOfficialMessagesStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/GuildOfficialMessagesStore.tsx");
 
 export default tmp2;

@@ -1,32 +1,33 @@
-// Module ID: 9614
-// Function ID: 74907
+// Module ID: 9621
+// Function ID: 74948
 // Name: StickerOptionsActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 5492, 3830, 4098, 5500, 5503, 5165, 4074, 1212, 2]
 // Exports: default
 
-// Module 9614 (StickerOptionsActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/stickers/native/StickerOptionsActionSheet.tsx");
+// Module 9621 (StickerOptionsActionSheet)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("_copy").fileFinishedImporting("modules/stickers/native/StickerOptionsActionSheet.tsx");
 
 export default function StickerOptionsActionSheet(stickerUrl) {
   stickerUrl = stickerUrl.stickerUrl;
-  const arg1 = stickerUrl;
   const items = [stickerUrl];
   const callback = React.useCallback(() => {
-    stickerUrl(closure_2[2]).copy(stickerUrl);
-    const obj = stickerUrl(closure_2[2]);
-    const result = stickerUrl(closure_2[3]).presentCopiedToClipboard();
-    const obj2 = stickerUrl(closure_2[3]);
-    callback(closure_2[4]).hideActionSheet();
+    stickerUrl(outer1_2[2]).copy(stickerUrl);
+    const obj = stickerUrl(outer1_2[2]);
+    const result = stickerUrl(outer1_2[3]).presentCopiedToClipboard();
+    const obj2 = stickerUrl(outer1_2[3]);
+    outer1_1(outer1_2[4]).hideActionSheet();
   }, items);
   let obj = {};
   obj = { hasIcons: true };
-  obj = { icon: jsx(arg1(dependencyMap[8]).LinkIcon, {}) };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.label = intl.string(arg1(dependencyMap[9]).t.B1ubHx);
+  obj = { icon: jsx(stickerUrl(4074).LinkIcon, {}) };
+  const intl = stickerUrl(1212).intl;
+  obj.label = intl.string(stickerUrl(1212).t.B1ubHx);
   obj.onPress = callback;
-  obj.children = jsx(arg1(dependencyMap[7]).TableRow, obj);
-  obj.children = jsx(arg1(dependencyMap[6]).TableRowGroup, obj);
-  return jsx(arg1(dependencyMap[5]).ActionSheet, obj);
+  obj.children = jsx(stickerUrl(5165).TableRow, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
+  obj.children = jsx(stickerUrl(5503).TableRowGroup, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
+  return jsx(stickerUrl(5500).ActionSheet, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
 };

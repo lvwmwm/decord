@@ -1,13 +1,13 @@
-// Module ID: 6149
-// Function ID: 50156
+// Module ID: 6154
+// Function ID: 50185
 // Name: GamePresenceIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6155, 2]
 // Exports: GamePresenceIllocon
 
-// Module 6149 (GamePresenceIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GamePresenceIllocon.native.tsx");
+// Module 6154 (GamePresenceIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GamePresenceIllocon.native.tsx");
 
 export const GamePresenceIllocon = function GamePresenceIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const GamePresenceIllocon = function GamePresenceIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6155) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const GamePresenceIllocon = function GamePresenceIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

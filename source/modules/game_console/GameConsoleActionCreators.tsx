@@ -1,14 +1,24 @@
-// Module ID: 9033
-// Function ID: 70973
+// Module ID: 9040
+// Function ID: 71014
 // Name: logRemoteCommand
-// Dependencies: []
+// Dependencies: [5, 4202, 4145, 4144, 653, 675, 686, 4470, 1212, 8845, 9041, 507, 1184, 9042, 9043, 9046, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9033 (logRemoteCommand)
+// Module 9040 (logRemoteCommand)
+import expandLocation from "expandLocation";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function logRemoteCommand(AUDIO_SETTINGS_UPDATE, sessionId) {
-  let obj = importDefault(dependencyMap[5]);
+  let obj = importDefault(675);
   obj = { command_type: AUDIO_SETTINGS_UPDATE };
-  const sessionById = sessionById.getSessionById(sessionId);
+  sessionById = sessionById.getSessionById(sessionId);
   let os;
   if (null != sessionById) {
     const clientInfo = sessionById.clientInfo;
@@ -25,7 +35,6 @@ function disconnectRemote() {
 function _disconnectRemote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _disconnectRemote = obj;
   return obj(...arguments);
 }
 function getConnectNonce() {
@@ -34,23 +43,20 @@ function getConnectNonce() {
 function _getConnectNonce() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getConnectNonce = obj;
   return obj(...arguments);
 }
 function cancelConnectRequest(arg0) {
-  const HTTP = arg1(dependencyMap[11]).HTTP;
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   return HTTP.del({ url: closure_8.CONNECT_REQUEST(arg0), rejectWithError: false });
 }
 function _fetchDevices() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchDevices = obj;
   return obj(...arguments);
 }
 function _sendConnectVoiceCommand() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _sendConnectVoiceCommand = obj;
   return obj(...arguments);
 }
 function cancelCommand() {
@@ -59,31 +65,24 @@ function cancelCommand() {
 function _cancelCommand() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _cancelCommand = obj;
   return obj(...arguments);
 }
 function _transferToPlayStation() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _transferToPlayStation = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ AnalyticEvents: closure_7, Endpoints: closure_8, PlatformTypes: closure_9 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/game_console/GameConsoleActionCreators.tsx");
+({ AnalyticEvents: closure_7, Endpoints: closure_8, PlatformTypes: closure_9 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_console/GameConsoleActionCreators.tsx");
 
 export const waitForSession = function waitForSession(XBOX, id, nonce) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "WAIT_FOR_REMOTE_SESSION", sessionType: XBOX, nonce, channelId: id };
   obj.dispatch(obj);
 };
 export { disconnectRemote };
 export const connectToRemote = function connectToRemote(sessionId) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "REMOTE_SESSION_CONNECT", sessionId };
   obj.dispatch(obj);
 };
@@ -91,29 +90,29 @@ export const remoteVoiceStateUpdate = function remoteVoiceStateUpdate(remoteSess
   let selfDeaf;
   let selfMute;
   ({ selfMute, selfDeaf } = arg1);
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "REMOTE_COMMAND", sessionId: remoteSessionId, payload: { type: "VOICE_STATE_UPDATE", self_mute: selfMute, self_deaf: selfDeaf } };
   obj.dispatch(obj);
   logRemoteCommand("VOICE_STATE_UPDATE", remoteSessionId);
 };
 export const remoteDisconnect = function remoteDisconnect(remoteSessionId) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "REMOTE_COMMAND", sessionId: remoteSessionId, payload: { type: "DISCONNECT" } };
   obj.dispatch(obj);
   logRemoteCommand("DISCONNECT", remoteSessionId);
   disconnectRemote();
 };
 export const remoteAudioSettingsUpdate = function remoteAudioSettingsUpdate(sessionId, id) {
-  let obj = id(dependencyMap[9]);
+  let obj = require(8845) /* snapVolumeToDefault */;
   const result = obj.coerceAudioContextForProto(arg2);
   if (null != result) {
     obj = { type: "REMOTE_COMMAND", sessionId };
     obj = { type: "AUDIO_SETTINGS_UPDATE", context: result, id };
     const merged = Object.assign(arg3);
     obj.payload = obj;
-    importDefault(dependencyMap[6]).dispatch(obj);
+    importDefault(686).dispatch(obj);
     logRemoteCommand("AUDIO_SETTINGS_UPDATE", sessionId);
-    const obj2 = importDefault(dependencyMap[6]);
+    const obj2 = importDefault(686);
   }
 };
 export { getConnectNonce };
@@ -122,7 +121,7 @@ export const fetchDevices = function fetchDevices(closure_0) {
   return _fetchDevices(...arguments);
 };
 export const persistSelectedDeviceId = function persistSelectedDeviceId(closure_0, value) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "GAME_CONSOLE_SELECT_DEVICE", platform: closure_0, deviceId: value };
   obj.dispatch(obj);
 };

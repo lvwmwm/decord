@@ -1,9 +1,17 @@
-// Module ID: 12456
-// Function ID: 95093
+// Module ID: 12570
+// Function ID: 97249
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4223, 12571, 21, 631, 2]
 
-// Module 12456 (_isNativeReflectConstruct)
+// Module 12570 (_isNativeReflectConstruct)
+import Opcode from "Opcode";
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +21,19 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const tmp2 = (EventEmitter) => {
+const tmp2 = ((EventEmitter) => {
   class GatewaySocketOpCodes {
     constructor() {
       self = this;
-      tmp = closure_3(this, GatewaySocketOpCodes);
-      obj = closure_6(GatewaySocketOpCodes);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      tmp = outer1_3(this, GatewaySocketOpCodes);
+      obj = outer1_6(GatewaySocketOpCodes);
+      tmp2 = outer1_5;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,15 +42,14 @@ const tmp2 = (EventEmitter) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GatewaySocketOpCodes;
   callback2(GatewaySocketOpCodes, EventEmitter);
   let obj = {
     key: "presenceUpdate",
     value(status, since, activities, afk) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.PRESENCE_UPDATE, { status, since, activities, afk });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.PRESENCE_UPDATE, { status, since, activities, afk });
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "voiceStateUpdate",
     value(guildId) {
@@ -92,7 +93,7 @@ const tmp2 = (EventEmitter) => {
       const obj = { guild_id: guildId, channel_id: channelId, self_mute: flag, self_deaf: flag2, self_video: flag3, flags: num };
       let result = null != channelId;
       if (result) {
-        result = closure_8.shouldIncludePreferredRegion();
+        result = outer1_8.shouldIncludePreferredRegion();
       }
       if (result) {
         obj.preferred_region = preferredRegion;
@@ -105,14 +106,14 @@ const tmp2 = (EventEmitter) => {
         }
         obj.tracks = mapped;
       }
-      self.send(GatewaySocketOpCodes(closure_2[6]).Opcode.VOICE_STATE_UPDATE, obj);
+      self.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.VOICE_STATE_UPDATE, obj);
     }
   };
   items[1] = obj;
   obj = {
     key: "voiceServerPing",
     value() {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.VOICE_SERVER_PING, null);
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.VOICE_SERVER_PING, null);
     }
   };
   items[2] = obj;
@@ -124,7 +125,7 @@ const tmp2 = (EventEmitter) => {
       let query;
       let userIds;
       ({ query, limit, userIds, presences } = arg1);
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.REQUEST_GUILD_MEMBERS, { guild_id, query, limit, user_ids: userIds, presences });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.REQUEST_GUILD_MEMBERS, { guild_id, query, limit, user_ids: userIds, presences });
     }
   };
   items[4] = {
@@ -144,40 +145,41 @@ const tmp2 = (EventEmitter) => {
         tmp = continuationToken;
       }
       obj.continuation_token = tmp;
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.SEARCH_RECENT_MEMBERS, obj);
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.SEARCH_RECENT_MEMBERS, obj);
     }
   };
   items[5] = {
     key: "updateGuildSubscriptions",
     value(arg0) {
-      const self = this;
-      const GatewaySocketOpCodes = this;
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
       let closure_2 = {};
-      let closure_3 = 0;
-      let obj = arg0(closure_2[7]);
+      let c3 = 0;
+      let obj = outer1_1(outer1_2[7]);
       const keys = obj.keys(arg0);
       const item = keys.forEach((arg0) => {
-        const items = [arg0, arg0[arg0]];
+        const items = [arg0, table[arg0]];
         const length = JSON.stringify(items).length;
-        if (closure_3 + length > 15360) {
+        if (Opcode + length > 15360) {
           const obj = { subscriptions: closure_2 };
-          self.send(self(closure_2[6]).Opcode.GUILD_SUBSCRIPTIONS_BULK, obj);
+          self.send(GatewaySocketOpCodes(outer2_2[6]).Opcode.GUILD_SUBSCRIPTIONS_BULK, obj);
           closure_2 = {};
-          closure_3 = 0;
+          Opcode = 0;
         }
-        closure_2[arg0] = arg0[arg0];
-        closure_3 = closure_3 + length;
+        closure_2[arg0] = table[arg0];
+        Opcode = Opcode + length;
       });
-      if (closure_3 > 0) {
+      if (c3 > 0) {
         obj = { subscriptions: closure_2 };
-        self.send(GatewaySocketOpCodes(closure_2[6]).Opcode.GUILD_SUBSCRIPTIONS_BULK, obj);
+        self.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.GUILD_SUBSCRIPTIONS_BULK, obj);
       }
     }
   };
   items[6] = {
     key: "callConnect",
     value(channel_id) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.CALL_CONNECT, { channel_id });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.CALL_CONNECT, { channel_id });
     }
   };
   items[7] = {
@@ -189,85 +191,85 @@ const tmp2 = (EventEmitter) => {
         tmp = null;
       }
       const obj = { type, guild_id, channel_id, preferred_region: tmp };
-      self.send(GatewaySocketOpCodes(closure_2[6]).Opcode.STREAM_CREATE, obj);
+      self.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.STREAM_CREATE, obj);
     }
   };
   items[8] = {
     key: "streamWatch",
     value(stream_key) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.STREAM_WATCH, { stream_key });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.STREAM_WATCH, { stream_key });
     }
   };
   items[9] = {
     key: "streamPing",
     value(stream_key) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.STREAM_PING, { stream_key });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.STREAM_PING, { stream_key });
     }
   };
   items[10] = {
     key: "streamDelete",
     value(stream_key) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.STREAM_DELETE, { stream_key });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.STREAM_DELETE, { stream_key });
     }
   };
   items[11] = {
     key: "streamSetPaused",
     value(stream_key, paused) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.STREAM_SET_PAUSED, { stream_key, paused });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.STREAM_SET_PAUSED, { stream_key, paused });
     }
   };
   items[12] = {
     key: "requestForumUnreads",
     value(guild_id, channel_id, arr) {
       const obj = { guild_id, channel_id, threads: arr.map((threadId) => ({ thread_id: threadId.threadId, ack_message_id: threadId.ackMessageId })) };
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.REQUEST_FORUM_UNREADS, obj);
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.REQUEST_FORUM_UNREADS, obj);
     }
   };
   items[13] = {
     key: "requestSoundboardSounds",
     value(guild_ids) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.REQUEST_SOUNDBOARD_SOUNDS, { guild_ids });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.REQUEST_SOUNDBOARD_SOUNDS, { guild_ids });
     }
   };
   items[14] = {
     key: "requestLastMessages",
     value(guild_id, channel_ids) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.REQUEST_LAST_MESSAGES, { guild_id, channel_ids });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.REQUEST_LAST_MESSAGES, { guild_id, channel_ids });
     }
   };
   items[15] = {
     key: "getDeletedEntityIdsNotMatchingHash",
     value(guild_id, channel_ids_hash, role_ids_hash, emoji_ids_hash, sticker_ids_hash) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH, { guild_id, channel_ids_hash, role_ids_hash, emoji_ids_hash, sticker_ids_hash });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH, { guild_id, channel_ids_hash, role_ids_hash, emoji_ids_hash, sticker_ids_hash });
     }
   };
   items[16] = {
     key: "triggerGuildChannelResync",
     value(guild_id, obfuscated_channel_ids) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.GUILD_CHANNELS_RESYNC, { guild_id, obfuscated_channel_ids });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.GUILD_CHANNELS_RESYNC, { guild_id, obfuscated_channel_ids });
     }
   };
   items[17] = {
     key: "requestChannelInfo",
     value(guild_id, fields) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.REQUEST_CHANNEL_INFO, { guild_id, fields });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.REQUEST_CHANNEL_INFO, { guild_id, fields });
     }
   };
   items[18] = {
     key: "requestChannelMemberCount",
     value(guild_id, channel_id) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.REQUEST_CHANNEL_MEMBER_COUNT, { guild_id, channel_id });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.REQUEST_CHANNEL_MEMBER_COUNT, { guild_id, channel_id });
     }
   };
   items[19] = {
     key: "remoteCommand",
     value(target_session_id, payload) {
-      this.send(GatewaySocketOpCodes(closure_2[6]).Opcode.REMOTE_COMMAND, { target_session_id, payload });
+      this.send(GatewaySocketOpCodes(outer1_2[6]).Opcode.REMOTE_COMMAND, { target_session_id, payload });
     }
   };
   return callback(GatewaySocketOpCodes, items);
-}(arg1(dependencyMap[8]).EventEmitter);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/gateway/GatewaySocketOpCodes.tsx");
+})(require("EventEmitter").EventEmitter);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/gateway/GatewaySocketOpCodes.tsx");
 
 export default tmp2;
-export const Opcode = arg1(dependencyMap[6]).Opcode;
+export const Opcode = require("Opcode").Opcode;

@@ -1,53 +1,85 @@
-// Module ID: 15617
-// Function ID: 119123
+// Module ID: 15734
+// Function ID: 121296
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 1347, 4143, 8293, 10620, 10539, 1348, 4177, 4202, 4342, 10015, 10013, 653, 4155, 10226, 4148, 10016, 33, 15735, 3991, 9423, 664, 15736, 566, 3831, 10593, 1212, 15737, 15738, 8843, 10486, 15739, 1450, 1557, 15762, 10017, 10019, 22, 491, 1207, 682, 10395, 11110, 6838, 675, 8303, 10532, 15691, 4476, 15763, 4323, 4324, 3989, 5584, 15764, 15765, 3748, 15766, 15772, 15773, 15696, 1184, 15774, 10014, 4011, 2]
 // Exports: default
 
-// Module 15617 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15734 (_createForOfIteratorHelperLoose)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown";
+import { AppState } from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import module_8293 from "module_8293";
+import module_10620 from "module_10620";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import withEqualityFn from "withEqualityFn";
+import VoicePanelModes from "VoicePanelModes";
+import VoicePanelControlsModes from "VoicePanelControlsModes";
+import ME from "ME";
+import { OrientationLockState } from "items3";
+import { ActivityPanelModes } from "ActivityPanelModes";
+import { isActivityParticipant } from "ParticipantTypes";
+import { MorphablePanelModes } from "MIN_PAN_GESTURE_MOVE";
+import { jsx } from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
+
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_24;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +90,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -88,47 +120,34 @@ function useLayoutManagerState(windowDimensions) {
   let items;
   let pushToTalk;
   windowDimensions = windowDimensions.windowDimensions;
-  const arg1 = windowDimensions;
   const safeArea = windowDimensions.safeArea;
-  const importDefault = safeArea;
   const contentDimensions = windowDimensions.contentDimensions;
-  const dependencyMap = contentDimensions;
-  const isConnected = windowDimensions.isConnected;
-  let callback = isConnected;
+  let isConnected = windowDimensions.isConnected;
   const layoutManager = windowDimensions.layoutManager;
-  const React = layoutManager;
-  let closure_13;
+  let c13;
   ({ items, pushToTalk } = windowDimensions);
-  const tmp = callback(React.useState(() => {
+  let tmp = isConnected(layoutManager.useState(() => {
     let height;
     let width;
     let obj = windowDimensions(contentDimensions[35]);
-    const windowDimensions = obj.getWindowDimensions();
+    windowDimensions = obj.getWindowDimensions();
     ({ width, height } = windowDimensions);
     obj = { width, height, landscape: width > height };
     return obj;
   }), 2);
-  const size = tmp[0];
-  const AppState = size;
-  let closure_6 = tmp2;
-  let obj = arg1(dependencyMap[36]);
-  const tmp3 = callback(React.useState(obj.getSafeAreaInsets()), 2);
+  let size = tmp[0];
+  let _isNativeReflectConstruct = tmp2;
+  let obj = windowDimensions(contentDimensions[36]);
+  const tmp3 = isConnected(layoutManager.useState(obj.getSafeAreaInsets()), 2);
   const rect = tmp3[0];
-  let closure_7 = rect;
   let closure_8 = tmp4;
-  const managerSubscription = arg1(dependencyMap[38]).useManagerSubscription(layoutManager);
-  let closure_9 = managerSubscription;
-  const ref = React.useRef({ timeout: -1, layoutKey: managerSubscription, connected: isConnected, windowState: size, safeAreaState: rect, contentDimensions: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } });
-  let closure_10 = ref;
-  function useUpdateLayoutManagerState(isConnected) {
+  const managerSubscription = windowDimensions(contentDimensions[38]).useManagerSubscription(layoutManager);
+  const ref = layoutManager.useRef({ timeout: -1, layoutKey: managerSubscription, connected: isConnected, windowState: size, safeAreaState: rect, contentDimensions: { width: 0, height: 0 } });
+  (function useUpdateLayoutManagerState(isConnected) {
     isConnected = isConnected.isConnected;
-    const windowDimensions = isConnected;
     const currentUpdatesRef = isConnected.currentUpdatesRef;
-    const safeArea = currentUpdatesRef;
     const setWindowState = isConnected.setWindowState;
-    const contentDimensions = setWindowState;
     const setSafeAreaState = isConnected.setSafeAreaState;
-    isConnected = setSafeAreaState;
     const items = [currentUpdatesRef, isConnected, setWindowState, setSafeAreaState];
     const layoutEffect = layoutManager.useLayoutEffect(() => {
       if (currentUpdatesRef.current.connected !== isConnected) {
@@ -137,58 +156,57 @@ function useLayoutManagerState(windowDimensions) {
           let height;
           let width;
           let windowState = safeAreaState;
-          const windowDimensions = callback(closure_2[35]).getWindowDimensions();
+          windowDimensions = windowDimensions(contentDimensions[35]).getWindowDimensions();
           ({ width, height } = windowDimensions);
-          closure_1.current.windowState = { width, height, landscape: width > height };
-          const obj = callback(closure_2[35]);
-          if (!obj2.cheapWorkletShallowEqual(safeAreaState, closure_1.current.windowState)) {
-            windowState = closure_1.current.windowState;
+          outer1_1.current.windowState = { width, height, landscape: width > height };
+          const obj = windowDimensions(contentDimensions[35]);
+          if (!obj2.cheapWorkletShallowEqual(safeAreaState, outer1_1.current.windowState)) {
+            windowState = outer1_1.current.windowState;
           }
           return windowState;
         });
         setSafeAreaState((safeAreaState) => {
-          closure_1.current.safeAreaState = callback(closure_2[36]).getSafeAreaInsets();
-          const obj = callback(closure_2[36]);
-          if (!obj2.cheapWorkletShallowEqual(safeAreaState, closure_1.current.safeAreaState)) {
-            safeAreaState = closure_1.current.safeAreaState;
+          outer1_1.current.safeAreaState = windowDimensions(contentDimensions[36]).getSafeAreaInsets();
+          const obj = windowDimensions(contentDimensions[36]);
+          if (!obj2.cheapWorkletShallowEqual(safeAreaState, outer1_1.current.safeAreaState)) {
+            safeAreaState = outer1_1.current.safeAreaState;
           }
           return safeAreaState;
         });
       }
     }, items);
-  }({ isConnected, currentUpdatesRef: ref, setWindowState: tmp[1], setSafeAreaState: tmp3[1] });
-  callback = React.useCallback(() => {
+  })({ isConnected, currentUpdatesRef: ref, setWindowState: tmp[1], setSafeAreaState: tmp3[1] });
+  const callback = layoutManager.useCallback(() => {
     clearTimeout(ref.current.timeout);
     ref.current.timeout = setTimeout(() => {
-      clearTimeout(ref.current.timeout);
-      callback(closure_2[43]).batchUpdates(() => {
-        callback((safeAreaState2) => {
+      clearTimeout(outer1_10.current.timeout);
+      windowDimensions(contentDimensions[43]).batchUpdates(() => {
+        outer2_6((safeAreaState2) => {
           let windowState = safeAreaState2;
-          if (!obj.cheapWorkletShallowEqual(closure_10.current.windowState, safeAreaState2)) {
-            windowState = closure_10.current.windowState;
+          if (!obj.cheapWorkletShallowEqual(outer3_10.current.windowState, safeAreaState2)) {
+            windowState = outer3_10.current.windowState;
           }
           return windowState;
         });
-        callback2((safeAreaState2) => {
+        outer2_8((safeAreaState2) => {
           let safeAreaState = safeAreaState2;
-          if (!obj.cheapWorkletShallowEqual(closure_10.current.safeAreaState, safeAreaState2)) {
-            safeAreaState = closure_10.current.safeAreaState;
+          if (!obj.cheapWorkletShallowEqual(outer3_10.current.safeAreaState, safeAreaState2)) {
+            safeAreaState = outer3_10.current.safeAreaState;
           }
           return safeAreaState;
         });
       });
     }, 60);
   }, []);
-  let closure_11 = callback;
   items = [callback];
-  const layoutEffect = React.useLayoutEffect(() => {
+  let layoutEffect = layoutManager.useLayoutEffect(() => {
     function updateSafeAreas(safeAreaInsets) {
-      let obj = callback(closure_2[23]);
-      if (!obj.cheapWorkletShallowEqual(closure_10.current.safeAreaState, safeAreaInsets)) {
+      let obj = windowDimensions(contentDimensions[23]);
+      if (!obj.cheapWorkletShallowEqual(outer1_10.current.safeAreaState, safeAreaInsets)) {
         obj = {};
         const merged = Object.assign(safeAreaInsets);
-        closure_10.current.safeAreaState = obj;
-        callback3();
+        outer1_10.current.safeAreaState = obj;
+        outer1_11();
       }
     }
     function updateWindowDimensions() {
@@ -196,48 +214,46 @@ function useLayoutManagerState(windowDimensions) {
       let width;
       let windowDimensions = arg0;
       if (arg0 === undefined) {
-        let obj = callback(closure_2[35]);
+        let obj = windowDimensions(contentDimensions[35]);
         windowDimensions = obj.getWindowDimensions();
       }
       ({ width, height } = windowDimensions);
       obj = { width, height, landscape: width > height };
-      if (!obj3.cheapWorkletShallowEqual(closure_10.current.windowState, obj)) {
-        closure_10.current.windowState = obj;
-        callback3();
+      if (!obj3.cheapWorkletShallowEqual(outer1_10.current.windowState, obj)) {
+        outer1_10.current.windowState = obj;
+        outer1_11();
       }
     }
-    const windowDimensions = safeArea(contentDimensions[44])(updateSafeAreas);
+    let closure_0 = safeArea(contentDimensions[44])(updateSafeAreas);
     updateSafeAreas(windowDimensions(contentDimensions[36]).getSafeAreaInsets());
-    const safeArea = safeArea(contentDimensions[45])(updateWindowDimensions);
+    let closure_1 = safeArea(contentDimensions[45])(updateWindowDimensions);
     const result = updateWindowDimensions();
     return () => {
       callback();
       callback2();
     };
   }, items);
-  const id = React.useId();
-  let closure_12 = id;
+  const id = layoutManager.useId();
   const items1 = [isConnected, id];
-  const layoutEffect1 = React.useLayoutEffect(() => {
+  const layoutEffect1 = layoutManager.useLayoutEffect(() => {
     if (isConnected) {
-      const state = ref.getState();
+      let state = ref.getState();
       const obj = { key: id, lockEnabled: true };
-      const safeAreaDisableLock = state.requestSafeAreaDisableLock(obj);
+      let safeAreaDisableLock = state.requestSafeAreaDisableLock(obj);
       return () => {
-        const state = state.getState();
-        const safeAreaDisableLock = state.requestSafeAreaDisableLock({ key: closure_12, lockEnabled: false });
+        const state = ref.getState();
+        const safeAreaDisableLock = state.requestSafeAreaDisableLock({ key: outer1_12, lockEnabled: false });
       };
     }
   }, items1);
   obj = { windowWidth: size.width, windowHeight: size.height, safeAreaLeft: rect.left, safeAreaRight: rect.right, safeAreaTop: rect.top, safeAreaBottom: rect.bottom, controlBarSize: pushToTalk ? closure_19 : closure_18 };
   const updateStateResult = layoutManager.updateState(items, obj);
-  closure_13 = updateStateResult;
+  c13 = updateStateResult;
   const items2 = [contentDimensions, updateStateResult, managerSubscription, layoutManager, safeArea, rect, windowDimensions, size, isConnected];
-  const layoutEffect2 = React.useLayoutEffect(() => {
-    function executeLayoutManagerEffect(arg0) {
-      return closure_4.handleLayoutEffect();
+  const layoutEffect2 = layoutManager.useLayoutEffect(() => {
+    function executeLayoutManagerEffect() {
+      return outer1_4.handleLayoutEffect();
     }
-    const windowDimensions = executeLayoutManagerEffect;
     ref.current.layoutKey = managerSubscription;
     let obj = windowDimensions(contentDimensions[22]);
     const fn = function e(arg0) {
@@ -245,124 +261,102 @@ function useLayoutManagerState(windowDimensions) {
       let safeAreaState;
       let windowState;
       ({ windowState, safeAreaState, contentState } = arg0);
-      let tmp = closure_3;
-      if (closure_3) {
-        tmp = !executeLayoutManagerEffect(store2[23]).cheapWorkletShallowEqual(store2.get(), contentState);
-        const obj = executeLayoutManagerEffect(store2[23]);
+      let tmp = outer1_3;
+      if (outer1_3) {
+        tmp = !windowDimensions(contentDimensions[23]).cheapWorkletShallowEqual(outer1_2.get(), contentState);
+        const obj = windowDimensions(contentDimensions[23]);
       }
       if (tmp) {
-        const result = store2.set(contentState);
+        const result = outer1_2.set(contentState);
       }
       if (!obj2.cheapWorkletShallowEqual(executeLayoutManagerEffect.get(), windowState)) {
         const result1 = executeLayoutManagerEffect.set(windowState);
       }
-      const obj2 = executeLayoutManagerEffect(store2[23]);
-      if (!obj3.cheapWorkletShallowEqual(store.get(), safeAreaState)) {
-        const result2 = store.set(safeAreaState);
+      obj2 = windowDimensions(contentDimensions[23]);
+      if (!obj3.cheapWorkletShallowEqual(outer1_1.get(), safeAreaState)) {
+        const result2 = outer1_1.set(safeAreaState);
       }
-      const obj3 = executeLayoutManagerEffect(store2[23]);
-      executeLayoutManagerEffect(store2[22]).runOnJS(executeLayoutManagerEffect)();
+      obj3 = windowDimensions(contentDimensions[23]);
+      windowDimensions(contentDimensions[22]).runOnJS(executeLayoutManagerEffect)();
     };
-    obj = { isConnected, cheapWorkletShallowEqual: windowDimensions(contentDimensions[23]).cheapWorkletShallowEqual, contentDimensions, windowDimensions, safeArea, runOnJS: windowDimensions(contentDimensions[22]).runOnJS, executeLayoutManagerEffect };
+    obj = { isConnected, cheapWorkletShallowEqual: windowDimensions(contentDimensions[23]).cheapWorkletShallowEqual, contentDimensions, windowDimensions: executeLayoutManagerEffect, safeArea, runOnJS: windowDimensions(contentDimensions[22]).runOnJS, executeLayoutManagerEffect };
     fn.__closure = obj;
     fn.__workletHash = 13791383688018;
-    fn.__initData = closure_41;
-    obj = { windowState: size, safeAreaState: rect, contentState: updateStateResult };
+    fn.__initData = outer1_41;
+    obj = { windowState: size, safeAreaState: rect, contentState: c13 };
     obj.runOnUI(fn)(obj);
   }, items2);
   const items3 = [layoutManager];
-  const effect = React.useEffect(() => {
+  const effect = layoutManager.useEffect(() => {
     function checkDimensions() {
-      if (!closure_3) {
-        const size = callback(closure_2[35]).getWindowDimensions();
+      if (!c3) {
+        const size = windowDimensions(contentDimensions[35]).getWindowDimensions();
         const width = size.width;
-        const callback = width;
         const height = size.height;
         let timeout = height;
         const result = checkDimensions.checkDimensionsMismatch(width, height);
-        closure_2 = result;
+        let closure_2 = result;
         if (null != result) {
           const _setTimeout = setTimeout;
           timeout = setTimeout(() => {
             let height;
             let width;
-            let obj = width(result[35]);
-            const windowDimensions = obj.getWindowDimensions();
+            let obj = windowDimensions(contentDimensions[35]);
+            windowDimensions = obj.getWindowDimensions();
             ({ width, height } = windowDimensions);
             let tmp2 = width === width;
             if (tmp2) {
-              tmp2 = callback === height;
+              tmp2 = closure_1 === height;
             }
             if (tmp2) {
-              if (null != closure_4.checkDimensionsMismatch(width, height)) {
-                let closure_3 = true;
-                obj = { layout_width: result.staleWidth, layout_height: result.staleHeight, window_width: width, window_height: callback, was_dirty: result.wasDirty };
-                callback(result[47]).track(constants.VOICE_PANEL_LAYOUT_DESYNC, obj);
-                const callback = null;
-                const obj2 = callback(result[47]);
+              if (null != checkDimensions.checkDimensionsMismatch(width, height)) {
+                const outer1_3 = true;
+                obj = { layout_width: closure_2.staleWidth, layout_height: closure_2.staleHeight, window_width: width, window_height: closure_1, was_dirty: closure_2.wasDirty };
+                safeArea(contentDimensions[47]).track(outer3_22.VOICE_PANEL_LAYOUT_DESYNC, obj);
+                closure_1 = null;
+                const obj2 = safeArea(contentDimensions[47]);
               }
             }
           }, 250);
         }
-        const obj = callback(closure_2[35]);
+        let obj = windowDimensions(contentDimensions[35]);
       }
     }
-    const layoutManager = checkDimensions;
-    if (!windowDimensions(closure_2[46]).isStable) {
-      const _setInterval = setInterval;
-      const windowDimensions = setInterval(checkDimensions, 1000);
-      let closure_1 = null;
-      closure_2 = size.addEventListener("change", (arg0) => {
+    if (!windowDimensions(contentDimensions[46]).isStable) {
+      let _setInterval = setInterval;
+      let interval = setInterval(checkDimensions, 1000);
+      let c1 = null;
+      let closure_2 = size.addEventListener("change", (arg0) => {
         if ("active" === arg0) {
           if (null == interval) {
             const _setInterval = setInterval;
-            let interval = setInterval(checkDimensions, 1000);
+            interval = setInterval(checkDimensions, 1000);
           }
         }
         if ("active" !== arg0) {
           const _clearInterval = clearInterval;
           clearInterval(interval);
           const _clearTimeout = clearTimeout;
-          clearTimeout(closure_1);
+          clearTimeout(c1);
           interval = null;
         }
       });
-      let closure_3 = false;
+      let c3 = false;
       return () => {
         clearInterval(closure_0);
-        clearTimeout(closure_1);
+        clearTimeout(c1);
         closure_2.remove();
       };
     }
   }, items3);
-  const layoutEffect3 = React.useLayoutEffect(() => () => clearTimeout(ref.current.timeout), []);
+  const layoutEffect3 = layoutManager.useLayoutEffect(() => () => clearTimeout(outer1_10.current.timeout), []);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const AppState = arg1(dependencyMap[2]).AppState;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-({ VoicePanelModes: closure_16, getAnalyticsNameForVoicePanelMode: closure_17 } = arg1(dependencyMap[13]));
-const tmp2 = arg1(dependencyMap[13]);
-({ CONTROLS_HEIGHT: closure_18, CONTROLS_HEIGHT_PTT: closure_19, CONTROLS_HIDE_TIMEOUT: closure_20, VoicePanelControlsModes: closure_21 } = arg1(dependencyMap[14]));
-const tmp3 = arg1(dependencyMap[14]);
-({ AnalyticEvents: closure_22, ComponentActions: closure_23, InputModes: closure_24 } = arg1(dependencyMap[15]));
-const OrientationLockState = arg1(dependencyMap[16]).OrientationLockState;
-const ActivityPanelModes = arg1(dependencyMap[17]).ActivityPanelModes;
-const isActivityParticipant = arg1(dependencyMap[18]).isActivityParticipant;
-const MorphablePanelModes = arg1(dependencyMap[19]).MorphablePanelModes;
-const jsx = arg1(dependencyMap[20]).jsx;
+({ VoicePanelModes: closure_16, getAnalyticsNameForVoicePanelMode: closure_17 } = VoicePanelModes);
+({ CONTROLS_HEIGHT: closure_18, CONTROLS_HEIGHT_PTT: closure_19, CONTROLS_HIDE_TIMEOUT: closure_20, VoicePanelControlsModes: closure_21 } = VoicePanelControlsModes);
+({ AnalyticEvents: closure_22, ComponentActions: closure_23, InputModes: closure_24 } = ME);
 let closure_30 = { code: "function VoicePanelControllerTsx1(){const{focused,mode,connected}=this.__closure;var _focused$get;return[(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,mode.get(),connected.get()];}" };
 let closure_31 = { code: "function VoicePanelControllerTsx2(props,previous){const{cheapWorkletArrayShallowEqual,runOnJS,handleAnimatedReaction}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[focusedParticipantId,voicePanelMode,connectedValue]=props;runOnJS(handleAnimatedReaction)({focusedParticipantId:focusedParticipantId,voicePanelMode:voicePanelMode,connectedValue:connectedValue});}" };
-let closure_32 = 5 * importDefault(dependencyMap[24]).Millis.MINUTE;
+let closure_32 = 5 * require("set").Millis.MINUTE;
 let closure_33 = { code: "function VoicePanelControllerTsx3(){const{focused,pipState}=this.__closure;var _focused$get;return[(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,pipState.id];}" };
 let closure_34 = { code: "function VoicePanelControllerTsx4(props,previous){const{cheapWorkletArrayShallowEqual,runOnJS,handleStateUpdates}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[focusedId,pipParticipantId]=props;runOnJS(handleStateUpdates)({focusedId:focusedId,pipParticipantId:pipParticipantId});}" };
 let closure_35 = { code: "function VoicePanelControllerTsx5(value){const{isFocusedVideoZoomed}=this.__closure;isFocusedVideoZoomed.set(value);}" };
@@ -376,11 +370,27 @@ let closure_42 = { code: "function VoicePanelControllerTsx12(){const{connected,m
 let closure_43 = { code: "function VoicePanelControllerTsx13(props,previous){const{cheapWorkletArrayShallowEqual,TransitionStates,VoicePanelModes,runOnJS,setMode}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[isConnected,currentMode,currentTransitionState]=props;if(currentTransitionState===TransitionStates.YEETED){if(currentMode!==VoicePanelModes.DISMISSED){runOnJS(setMode)(VoicePanelModes.DISMISSED);}}else if(currentMode===VoicePanelModes.DISMISSED){var _previous$;let previousMode=(_previous$=previous===null||previous===void 0?void 0:previous[1])!==null&&_previous$!==void 0?_previous$:VoicePanelModes.PANEL;switch(previousMode){case VoicePanelModes.PANEL:case VoicePanelModes.PIP:if(!isConnected){previousMode=VoicePanelModes.PANEL;}break;default:previousMode=VoicePanelModes.PANEL;}runOnJS(setMode)(previousMode);}else if(!isConnected&&(previous===null||previous===void 0?void 0:previous[0])===true&&currentMode===VoicePanelModes.PIP){runOnJS(setMode)(VoicePanelModes.PANEL);}}" };
 let closure_44 = { code: "function VoicePanelControllerTsx14(){const{mode,controlsSpecs}=this.__closure;return[mode.get(),controlsSpecs.get().mode];}" };
 let closure_45 = { code: "function VoicePanelControllerTsx15(props,previous){const{cheapWorkletArrayShallowEqual,VoicePanelControlsModes,VoicePanelModes,runOnJS,dismissKeyboard}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[currentMode,currentControlsMode]=props;if(currentControlsMode!==VoicePanelControlsModes.DRAWER||currentMode!==VoicePanelModes.PANEL||(previous===null||previous===void 0?void 0:previous[0])!==VoicePanelModes.PANEL){runOnJS(dismissKeyboard)();}}" };
-const tmp4 = arg1(dependencyMap[15]);
-const result = arg1(dependencyMap[68]).fileFinishedImporting("modules/voice_panel/native/VoicePanelController.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/VoicePanelController.tsx");
 
 export default function VoicePanelController(channelId) {
+  let ActivityPanelModes;
+  let c34;
+  let c35;
   let children;
+  let closure_12;
+  let closure_14;
+  let closure_16;
+  let closure_17;
+  let closure_18;
+  let closure_19;
+  let closure_20;
+  let closure_21;
+  let closure_22;
+  let closure_23;
+  let closure_31;
+  let trackActivityThermalStateNoticeShown;
+  let closure_7;
+  let module_8293;
   let connected;
   let controlsSpecs;
   let focused;
@@ -393,44 +403,41 @@ export default function VoicePanelController(channelId) {
   let transitionCleanUp;
   let windowDimensions;
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  const guildId = channelId.guildId;
-  const importDefault = guildId;
-  const transitionState = channelId.transitionState;
+  let guildId = channelId.guildId;
+  let transitionState = channelId.transitionState;
   let closure_33;
-  let closure_34;
-  let closure_35;
+  c34 = undefined;
+  c35 = undefined;
   let closure_36;
-  let closure_37;
+  let ref;
   ({ children, transitionCleanUp } = channelId);
-  let obj = arg1(dependencyMap[26]);
-  items = [closure_13];
-  const stateFromStores = obj.useStateFromStores(items, () => safeArea.getMode() === controlsSpecs.PUSH_TO_TALK);
-  const first = callback(React.useState(() => {
+  let obj = channelId(first[26]);
+  items = [safeArea];
+  let stateFromStores = obj.useStateFromStores(items, () => safeArea.getMode() === controlsSpecs.PUSH_TO_TALK);
+  first = callback(React.useState(() => {
     let tmp = guildId(first[57]);
     tmp = new tmp(safeArea.getMediaEngine());
     return tmp;
   }), 1)[0];
-  const dependencyMap = first;
-  const items1 = [first];
-  const effect = React.useEffect(() => () => closure_2.cleanUp(), items1);
-  ({ items, isConnected } = importDefault(dependencyMap[58])(channelId, guildId));
-  const callback = function useMountedCards(items, isConnected) {
-    const channelId = items;
-    const guildId = isConnected;
-    const first = callback(React.useState(() => new Set()), 1)[0];
+  let items1 = [first];
+  let effect = React.useEffect(() => () => outer1_2.cleanUp(), items1);
+  ({ items, isConnected } = guildId(first[58])(channelId, guildId));
+  callback = (function useMountedCards(items, isConnected) {
+    let closure_0 = items;
+    let closure_1 = isConnected;
+    const first = callback(outer1_4.useState(() => new Set()), 1)[0];
     items = [isConnected, items, first];
-    const effect = React.useEffect(() => {
-      if (arg1) {
-        const items = items(first[56]).runAfterInteractions(() => {
+    const effect = outer1_4.useEffect(() => {
+      if (closure_1) {
+        let closure_0 = channelId(first[56]).runAfterInteractions(() => {
           let done;
-          closure_2.clear();
-          const tmp2 = callback(closure_0);
+          outer1_2.clear();
+          const tmp2 = outer3_46(closure_0);
           let iter = tmp2();
           if (!iter.done) {
             do {
-              let tmp3 = closure_2;
-              let addResult = closure_2.add(iter.value.id);
+              let tmp3 = outer1_2;
+              let addResult = outer1_2.add(iter.value.id);
               let iter2 = tmp2();
               iter = iter2;
               done = iter2.done;
@@ -447,11 +454,12 @@ export default function VoicePanelController(channelId) {
       }
     }, items);
     return first;
-  }(items, isConnected);
-  const tmp5 = function useCoreSharedState(channelId, isConnected, items, stateFromStores) {
-    const guildId = items;
-    let first = stateFromStores;
-    const channel = channel.getChannel(channelId);
+  })(items, isConnected);
+  const tmp5 = (function useCoreSharedState(channelId, isConnected, items, stateFromStores) {
+    let closure_0 = channelId;
+    let closure_1 = items;
+    let closure_2 = stateFromStores;
+    const channel = outer1_12.getChannel(channelId);
     let isDMResult;
     if (null != channel) {
       isDMResult = channel.isDM();
@@ -463,15 +471,13 @@ export default function VoicePanelController(channelId) {
     let obj1 = channelId(first[22]);
     const sharedValue = obj1.useSharedValue(isConnected);
     let obj2 = channelId(first[22]);
-    const sharedValue1 = obj2.useSharedValue(constants.PANEL);
-    let callback = sharedValue1;
+    const sharedValue1 = obj2.useSharedValue(outer1_16.PANEL);
     let obj3 = channelId(first[35]);
     const size = obj3.getWindowDimensions();
     let obj4 = channelId(first[22]);
     let obj = { width: size.width, height: size.height, landscape: size.width > size.height };
     const sharedValue2 = obj4.useSharedValue(obj);
     const rect = channelId(first[36]).getSafeAreaInsets();
-    const connected = rect;
     const obj7 = channelId(first[36]);
     const tmp2 = null != isDMResult && isDMResult;
     obj = {};
@@ -488,7 +494,7 @@ export default function VoicePanelController(channelId) {
     obj2.pipX = -1;
     obj2.pipY = -1;
     obj2.animated = true;
-    obj2.mode = constants.PANEL;
+    obj2.mode = outer1_16.PANEL;
     const sharedValue4 = obj12.useSharedValue(obj2);
     const obj14 = channelId(first[37]);
     const sharedValue5 = channelId(first[22]).useSharedValue(0);
@@ -502,63 +508,60 @@ export default function VoicePanelController(channelId) {
     const sharedValue9 = channelId(first[22]).useSharedValue(false);
     const obj19 = channelId(first[22]);
     const sharedValue10 = channelId(first[22]).useSharedValue(false);
-    const contentDimensions = sharedValue10;
     const fn = function c(arg0) {
       const result = sharedValue10.set(arg0);
     };
     fn.__closure = { isFocusedVideoZoomed: sharedValue10 };
     fn.__workletHash = 13885070318174;
-    fn.__initData = closure_35;
+    fn.__initData = c35;
     items = [sharedValue10];
-    callback = size.useCallback(fn, items);
+    const callback = outer1_4.useCallback(fn, items);
     const obj20 = channelId(first[22]);
     const sharedValue11 = channelId(first[22]).useSharedValue(contentDimensions.useReducedMotion);
     const items1 = [sharedValue11];
-    const effect = size.useEffect(() => {
+    const effect = outer1_4.useEffect(() => {
       function onChange() {
-        const result = closure_7.set(closure_6.useReducedMotion);
+        const result = outer1_7.set(contentDimensions.useReducedMotion);
       }
-      const arg0 = onChange;
-      const result = sharedValue10.addReactChangeListener(onChange);
+      let result = contentDimensions.addReactChangeListener(onChange);
       return () => {
-        const result = closure_6.removeReactChangeListener(onChange);
+        const result = contentDimensions.removeReactChangeListener(onChange);
       };
     }, items1);
     const obj21 = channelId(first[22]);
-    const sharedValue12 = channelId(first[22]).useSharedValue({ progressViewOffset: true, refreshing: true, id: true });
+    const sharedValue12 = channelId(first[22]).useSharedValue({ gestureActive: false, x: 0, y: 0 });
     const obj22 = channelId(first[22]);
     class W {
       constructor() {
-        value = closure_3.get();
-        if (closure_16.PANEL === value) {
-          tmp5 = closure_28;
-          return closure_28.PANEL;
+        value = _createForOfIteratorHelperLoose.get();
+        if (wrapperDimensions.PANEL === value) {
+          tmp5 = selectedMode;
+          return selectedMode.PANEL;
         } else {
-          tmp2 = closure_16;
-          if (closure_16.PIP === value) {
-            tmp4 = closure_28;
-            return closure_28.PIP;
+          tmp2 = wrapperDimensions;
+          if (wrapperDimensions.PIP === value) {
+            tmp4 = selectedMode;
+            return selectedMode.PIP;
           } else {
-            tmp3 = closure_28;
-            return closure_28.UNDEFINED;
+            tmp3 = selectedMode;
+            return selectedMode.UNDEFINED;
           }
         }
       }
     }
-    obj3 = { mode: sharedValue1, VoicePanelModes: constants, MorphablePanelModes: selectedMode };
+    obj3 = { mode: sharedValue1, VoicePanelModes: outer1_16, MorphablePanelModes: selectedMode };
     W.__closure = obj3;
     W.__workletHash = 931249605381;
     W.__initData = closure_36;
     const derivedValue = channelId(first[22]).useDerivedValue(W);
-    first = callback(size.useState(() => {
-      let tmp = arg2(arg3[38]);
-      tmp = new tmp(arg0);
-      tmp.updateState(arg2, { windowWidth: size.width, windowHeight: size.height, safeAreaLeft: rect.left, safeAreaRight: rect.right, safeAreaTop: rect.top, safeAreaBottom: rect.bottom, controlBarSize: arg3 ? closure_19 : closure_18 });
+    first = callback(outer1_4.useState(() => {
+      let tmp = guildId(first[38]);
+      tmp = new tmp(closure_0);
+      tmp.updateState(closure_1, { windowWidth: size.width, windowHeight: size.height, safeAreaLeft: rect.left, safeAreaRight: rect.right, safeAreaTop: rect.top, safeAreaBottom: rect.bottom, controlBarSize: closure_2 ? outer2_19 : outer2_18 });
       return tmp;
     }), 1)[0];
-    const focused = first;
     const items2 = [first];
-    const layoutEffect = size.useLayoutEffect(() => () => closure_8.cleanUp(), items2);
+    const layoutEffect = outer1_4.useLayoutEffect(() => () => outer1_8.cleanUp(), items2);
     obj4 = { channelType: type, connected: sharedValue };
     const obj23 = channelId(first[22]);
     obj4.contentDimensions = channelId(first[22]).useSharedValue(first.getContentDimensions());
@@ -579,73 +582,65 @@ export default function VoicePanelController(channelId) {
     obj4.morphablePanelMode = derivedValue;
     obj4.panelCardStillInPIP = sharedValue9;
     return obj4;
-  }(channelId, isConnected, items, stateFromStores);
-  ({ channelType: closure_4, connected } = tmp5);
-  const AppState = connected;
+  })(channelId, isConnected, items, stateFromStores);
+  ({ channelType: trackActivityThermalStateNoticeShown, connected } = tmp5);
   const contentDimensions = tmp5.contentDimensions;
-  let closure_6 = contentDimensions;
   ({ dragScrolling: closure_7, focused } = tmp5);
-  let closure_8 = focused;
-  ({ isCall: closure_9, layoutManager } = tmp5);
-  let closure_10 = layoutManager;
-  const mode = tmp5.mode;
-  let closure_11 = mode;
+  ({ isCall: module_8293, layoutManager } = tmp5);
+  let mode = tmp5.mode;
   ({ preJoinContentSize: closure_12, safeArea } = tmp5);
-  closure_13 = safeArea;
   ({ scrollPosition: closure_14, windowDimensions } = tmp5);
-  let closure_15 = windowDimensions;
   ({ wrapperDimensions: closure_16, isFocusedVideoZoomed: closure_17, setIsFocusedVideoZoomed: closure_18, useReducedMotion: closure_19, wrapperOffset: closure_20, morphablePanelMode: closure_21, panelCardStillInPIP: closure_22 } = tmp5);
-  const tmp6 = function useControlsState(mode, isConnected, connected, stateFromStores) {
-    const channelId = mode;
-    const guildId = isConnected;
-    const first = connected;
-    let closure_3 = stateFromStores;
+  let tmp6 = (function useControlsState(mode, isConnected, connected, stateFromStores) {
+    let closure_0 = mode;
+    let closure_1 = isConnected;
+    let closure_2 = connected;
+    let _createForOfIteratorHelperLoose = stateFromStores;
     channelId(first[22]);
-    let obj = { mode: constants2.FLOATING_DEFAULT, locked: false };
+    let obj = { mode: outer1_21.FLOATING_DEFAULT, locked: false };
     if (stateFromStores) {
       if (isConnected) {
-        let tmp3 = closure_19;
+        let tmp3 = outer1_19;
       }
       obj.height = tmp3;
       obj.pushToTalk = stateFromStores;
       const tmp2Result = tmp2(obj);
-      let closure_5 = tmp2Result.useRef(-1);
-      const callback = tmp2Result.useCallback(() => {
+      let trackActivityThermalStateNoticeShown = tmp2Result;
+      let closure_5 = outer1_4.useRef(-1);
+      const callback = outer1_4.useCallback(() => {
         if (-1 !== ref.current) {
           const _clearTimeout = clearTimeout;
           clearTimeout(ref.current);
           ref.current = -1;
         }
       }, []);
-      const contentDimensions = callback;
       const items = [tmp2Result, callback, mode];
-      const callback1 = tmp2Result.useCallback(() => {
+      const callback1 = outer1_4.useCallback(() => {
         callback();
         if (-1 === ref.current) {
           const _setTimeout = setTimeout;
           ref.current = setTimeout(() => {
-            callback2();
-            if (closure_0.get() === constants.PANEL) {
-              let locked = store.get().mode !== constants2.FLOATING_DEFAULT;
+            outer1_6();
+            if (outer1_0.get() === outer3_16.PANEL) {
+              let locked = outer1_4.get().mode !== outer3_21.FLOATING_DEFAULT;
               if (!locked) {
-                locked = store.get().locked;
+                locked = outer1_4.get().locked;
               }
               if (!locked) {
-                const obj = { mode: constants2.HIDDEN };
-                callback(closure_2[39])(store, obj);
+                const obj = { mode: outer3_21.HIDDEN };
+                guildId(first[39])(outer1_4, obj);
               }
             }
-          }, closure_20);
+          }, outer2_20);
         }
       }, items);
       const items1 = [tmp2Result, callback1];
-      const memo = tmp2Result.useMemo(() => {
+      const memo = outer1_4.useMemo(() => {
         function _setControlsMode(mode, FLOATING_DEFAULT) {
-          _setControlsMode(closure_2[39])(closure_4, { mode, returnMode: FLOATING_DEFAULT });
-          callback();
+          guildId(first[39])(outer1_4, { mode, returnMode: FLOATING_DEFAULT });
+          outer1_7();
         }
-        const arg1 = _setControlsMode;
-        let obj = arg1(arg2[40]);
+        let obj = guildId(first[40]);
         let closure_0 = obj.debounce(_setControlsMode, 200);
         obj = {
           cancelControlsDebounce() {
@@ -660,7 +655,7 @@ export default function VoicePanelController(channelId) {
             }
             let FLOATING_DEFAULT = returnMode.returnMode;
             if (FLOATING_DEFAULT === undefined) {
-              FLOATING_DEFAULT = constants.FLOATING_DEFAULT;
+              FLOATING_DEFAULT = outer3_21.FLOATING_DEFAULT;
             }
             if (debounce) {
               obj(mode, FLOATING_DEFAULT);
@@ -673,61 +668,60 @@ export default function VoicePanelController(channelId) {
         return obj;
       }, items1);
       const cancelControlsDebounce = memo.cancelControlsDebounce;
-      const focused = cancelControlsDebounce;
       const setControlsMode = memo.setControlsMode;
       const _Set = Set;
       const set = new Set();
-      let closure_10 = tmp2Result.useRef(set);
+      let module_10620 = outer1_4.useRef(set);
       const items2 = [tmp2Result, callback1, callback];
       const items3 = [setControlsMode];
-      const callback2 = tmp2Result.useCallback((arg0) => {
+      const callback2 = outer1_4.useCallback((arg0) => {
         let v4Result = arg0;
         if (null == arg0) {
-          let obj = arg0(arg2[41]);
+          let obj = channelId(first[41]);
           v4Result = obj.v4();
         }
-        arg0 = v4Result;
+        let closure_0 = v4Result;
         obj = {
           lock(mode) {
-            const current = closure_10.current;
-            if (!current.has(v4Result)) {
-              callback2();
-              const current2 = closure_10.current;
-              current2.add(v4Result);
-              const obj = { locked: closure_10.current.size > 0 };
+            const current = outer1_10.current;
+            if (!current.has(closure_0)) {
+              outer1_6();
+              const current2 = outer1_10.current;
+              current2.add(closure_0);
+              const obj = { locked: outer1_10.current.size > 0 };
               if (null != mode) {
                 obj.mode = mode;
               }
-              callback(closure_2[39])(closure_4, obj);
+              guildId(first[39])(outer1_4, obj);
             }
           },
           unlock(mode) {
-            const current = closure_10.current;
-            if (current.has(v4Result)) {
-              const current2 = closure_10.current;
-              current2.delete(v4Result);
-              const obj = { locked: closure_10.current.size > 0 };
+            const current = outer1_10.current;
+            if (current.has(closure_0)) {
+              const current2 = outer1_10.current;
+              current2.delete(closure_0);
+              const obj = { locked: outer1_10.current.size > 0 };
               if (null != mode) {
                 obj.mode = mode;
               }
-              callback(closure_2[39])(closure_4, obj);
-              callback3();
+              guildId(first[39])(outer1_4, obj);
+              outer1_7();
             }
           }
         };
         return obj;
       }, items2);
       const items4 = [setControlsMode, tmp2Result];
-      const callback3 = tmp2Result.useCallback(() => {
+      const callback3 = outer1_4.useCallback(() => {
         let tmp = arg0;
         if (arg0 === undefined) {
           let obj = { debounce: false };
           tmp = obj;
         }
-        obj = { mode: constants2.HIDDEN, debounce: tmp.debounce };
+        obj = { mode: outer2_21.HIDDEN, debounce: tmp.debounce };
         setControlsMode(obj);
       }, items3);
-      const callback4 = tmp2Result.useCallback(() => {
+      const callback4 = outer1_4.useCallback(() => {
         let obj = arg0;
         if (arg0 === undefined) {
           obj = {};
@@ -739,7 +733,7 @@ export default function VoicePanelController(channelId) {
         obj = {};
         let FLOATING_DEFAULT = tmp2Result.get().returnMode;
         if (null == FLOATING_DEFAULT) {
-          FLOATING_DEFAULT = constants2.FLOATING_DEFAULT;
+          FLOATING_DEFAULT = outer2_21.FLOATING_DEFAULT;
         }
         obj.mode = FLOATING_DEFAULT;
         obj.debounce = flag;
@@ -747,109 +741,104 @@ export default function VoicePanelController(channelId) {
       }, items4);
       let obj1 = channelId(first[22]);
       const fn = function s() {
-        return arg0.get();
+        return mode.get();
       };
       obj = { mode };
       fn.__closure = obj;
       fn.__workletHash = 12140218650562;
       fn.__initData = ref;
       const fn2 = function r(arg0) {
-        if (arg0 === constants.PANEL) {
-          arg0(arg2[22]).runOnJS(callback1)();
-          const obj2 = arg0(arg2[22]);
+        if (arg0 === outer2_16.PANEL) {
+          channelId(first[22]).runOnJS(callback1)();
+          const obj2 = channelId(first[22]);
         } else {
-          arg0(arg2[22]).runOnJS(callback)();
-          const obj = arg0(arg2[22]);
+          channelId(first[22]).runOnJS(callback)();
+          const obj = channelId(first[22]);
         }
       };
-      obj = { VoicePanelModes: closure_16, runOnJS: channelId(first[22]).runOnJS, _queueHideControls: callback1, _clearHideControlsQueue: callback };
+      obj = { VoicePanelModes: outer1_16, runOnJS: channelId(first[22]).runOnJS, _queueHideControls: callback1, _clearHideControlsQueue: callback };
       fn2.__closure = obj;
       fn2.__workletHash = 7742206515980;
-      fn2.__initData = closure_38;
+      fn2.__initData = outer1_38;
       const animatedReaction = obj1.useAnimatedReaction(fn, fn2);
       const items5 = [stateFromStores, tmp2Result, isConnected];
-      const layoutEffect = tmp2Result.useLayoutEffect(() => {
+      const layoutEffect = outer1_4.useLayoutEffect(() => {
         const obj = {};
-        if (arg3) {
-          if (arg1) {
-            let tmp4 = closure_19;
+        if (_createForOfIteratorHelperLoose) {
+          if (closure_1) {
+            let tmp4 = outer2_19;
           }
           obj.height = tmp4;
-          obj.pushToTalk = arg3;
+          obj.pushToTalk = _createForOfIteratorHelperLoose;
           tmp(tmp2, obj);
         }
-        tmp4 = closure_18;
+        tmp4 = outer2_18;
       }, items5);
       const fn3 = function c() {
-        return arg2.get();
+        return connected.get();
       };
       obj1 = { connected };
       fn3.__closure = obj1;
       fn3.__workletHash = 16653595323628;
-      fn3.__initData = closure_39;
+      fn3.__initData = outer1_39;
       const fn4 = function l(arg0) {
         const obj = {};
-        if (arg3) {
+        if (_createForOfIteratorHelperLoose) {
           if (arg0) {
-            let tmp4 = closure_19;
+            let tmp4 = outer2_19;
           }
           obj.height = tmp4;
-          obj.pushToTalk = arg3;
+          obj.pushToTalk = _createForOfIteratorHelperLoose;
           tmp(tmp2, obj);
         }
-        tmp4 = closure_18;
+        tmp4 = outer2_18;
       };
-      const obj2 = { updateSharedValueIfChanged: guildId(first[39]), controlsSpecs: tmp2Result, pushToTalk: stateFromStores, CONTROLS_HEIGHT_PTT: closure_19, CONTROLS_HEIGHT: closure_18 };
+      let obj2 = { updateSharedValueIfChanged: guildId(first[39]), controlsSpecs: tmp2Result, pushToTalk: stateFromStores, CONTROLS_HEIGHT_PTT: outer1_19, CONTROLS_HEIGHT: outer1_18 };
       fn4.__closure = obj2;
       fn4.__workletHash = 2154816141018;
-      fn4.__initData = closure_40;
+      fn4.__initData = outer1_40;
       const animatedReaction1 = channelId(first[22]).useAnimatedReaction(fn3, fn4);
       const items6 = [cancelControlsDebounce, callback];
-      const layoutEffect1 = tmp2Result.useLayoutEffect(() => () => {
-        callback2();
-        callback();
+      const layoutEffect1 = outer1_4.useLayoutEffect(() => () => {
+        outer1_8();
+        outer1_6();
       }, items6);
       const items7 = [setControlsMode];
-      const effect = tmp2Result.useEffect(() => {
-        function closeTiV(arg0) {
-          callback({ mode: constants.FLOATING_DEFAULT });
+      const effect = outer1_4.useEffect(() => {
+        function closeTiV() {
+          outer1_9({ mode: outer3_21.FLOATING_DEFAULT });
         }
-        const arg0 = closeTiV;
-        const ComponentDispatch = arg0(arg2[42]).ComponentDispatch;
-        const subscription = ComponentDispatch.subscribe(constants3.VOICE_PANEL_TIV_CLOSE, closeTiV);
+        let ComponentDispatch = channelId(first[42]).ComponentDispatch;
+        const subscription = ComponentDispatch.subscribe(outer2_23.VOICE_PANEL_TIV_CLOSE, closeTiV);
         return () => {
-          const ComponentDispatch = closeTiV(closure_2[42]).ComponentDispatch;
-          ComponentDispatch.unsubscribe(constants2.VOICE_PANEL_TIV_CLOSE, closeTiV);
+          const ComponentDispatch = channelId(first[42]).ComponentDispatch;
+          ComponentDispatch.unsubscribe(outer3_23.VOICE_PANEL_TIV_CLOSE, closeTiV);
         };
       }, items7);
       const obj3 = { generateStateLocker: callback2, setControlsMode, showControls: callback4, hideControls: callback3, controlsSpecs: tmp2Result };
       return obj3;
     }
-    tmp3 = closure_18;
-  }(mode, isConnected, connected, stateFromStores);
+    tmp3 = outer1_18;
+  })(mode, isConnected, connected, stateFromStores);
   ({ generateStateLocker: closure_23, controlsSpecs } = tmp6);
-  const showControls = tmp6.showControls;
-  const OrientationLockState = showControls;
-  ({ hideControls: closure_26, setControlsMode } = tmp6);
-  const isActivityParticipant = setControlsMode;
-  const tmp7 = function useSelectedMode(channelId) {
+  let showControls = tmp6.showControls;
+  ({ hideControls: ActivityPanelModes, setControlsMode } = tmp6);
+  let tmp7 = (function useSelectedMode(channelId) {
+    let trackActivityThermalStateNoticeShown;
     let controlsSpecs;
+    let guildId;
     let mode;
     channelId = channelId.channelId;
-    ({ isConnected: closure_1, mode } = channelId);
-    let first = mode;
-    let connected = channelId.connected;
-    const callback = connected;
-    ({ transitionState: closure_4, controlsSpecs } = channelId);
-    connected = controlsSpecs;
+    ({ isConnected: guildId, mode } = channelId);
+    const connected = channelId.connected;
+    ({ transitionState: trackActivityThermalStateNoticeShown, controlsSpecs } = channelId);
     const setControlsMode = channelId.setControlsMode;
-    const contentDimensions = setControlsMode;
-    const tmp = callback(React.useState(constants.PANEL), 2);
-    first = tmp[0];
+    const tmp = callback(outer1_4.useState(outer1_16.PANEL), 2);
+    const first = tmp[0];
     const focused = tmp3;
-    const layoutEffect = React.useLayoutEffect(() => {
+    const layoutEffect = outer1_4.useLayoutEffect(() => {
       const result = mode.set(first);
-      if (closure_4 !== channelId(mode[51]).TransitionStates.YEETED) {
+      if (trackActivityThermalStateNoticeShown !== channelId(first[51]).TransitionStates.YEETED) {
         const result1 = connected.set(closure_1);
       }
     });
@@ -857,68 +846,61 @@ export default function VoicePanelController(channelId) {
     return {
       selectedMode: first,
       setMode: tmp[1],
-      dismissPanel: React.useCallback(() => {
-        if (controlsSpecs.get().mode === constants2.DRAWER) {
-          const obj = { mode: constants2.FLOATING_DEFAULT };
+      dismissPanel: outer1_4.useCallback(() => {
+        if (controlsSpecs.get().mode === outer2_21.DRAWER) {
+          const obj = { mode: outer2_21.FLOATING_DEFAULT };
           setControlsMode(obj);
           let flag = true;
         } else if (connected.get()) {
-          let flag2 = mode.get() === constants.PANEL;
+          let flag2 = mode.get() === outer2_16.PANEL;
           if (flag2) {
-            tmp3(constants.PIP);
+            tmp3(outer2_16.PIP);
             flag2 = true;
           }
           flag = flag2;
         } else {
-          const state = state.getState();
+          const state = windowDimensions.getState();
           state.closeChannel(channelId);
           flag = true;
         }
         return flag;
       }, items)
     };
-  }({ channelId, isConnected, mode, connected, transitionState, controlsSpecs, setControlsMode });
-  const selectedMode = tmp7.selectedMode;
-  const MorphablePanelModes = selectedMode;
-  const setMode = tmp7.setMode;
-  const jsx = setMode;
+  })({ channelId, isConnected, mode, connected, transitionState, controlsSpecs, setControlsMode });
+  let selectedMode = tmp7.selectedMode;
+  let setMode = tmp7.setMode;
   const dismissPanel = tmp7.dismissPanel;
-  const tmp4 = importDefault(dependencyMap[58])(channelId, guildId);
-  ({ manualFocusedItem, setFocused: closure_31 } = function useManuallyFocusedItem(guildId) {
+  let tmp4 = guildId(first[58])(channelId, guildId);
+  ({ manualFocusedItem, setFocused: closure_31 } = (function useManuallyFocusedItem(guildId) {
     let focused;
     let layoutManager;
     guildId = guildId.guildId;
-    let channelId = guildId;
-    channelId = guildId.channelId;
-    guildId = channelId;
+    const channelId = guildId.channelId;
     ({ layoutManager, focused } = guildId);
-    const first = focused;
-    let contentDimensions;
-    let tmp6;
+    let targetDimensions;
+    let c7;
     const items = [focused];
-    const manualFocusedItem = channelId(first[26]).useStateFromStores(items, () => selectedParticipantId.getSelectedParticipantId(channelId));
-    let closure_3 = manualFocusedItem;
+    const manualFocusedItem = channelId(first[26]).useStateFromStores(items, () => focused.getSelectedParticipantId(channelId));
     const items1 = [guildId, channelId];
-    const setFocused = setFocused.useCallback((embeddedActivityParticipantId) => {
+    const setFocused = outer1_4.useCallback((embeddedActivityParticipantId) => {
       let result = null == embeddedActivityParticipantId;
       if (!result) {
-        result = guildId(focused[52]).isVoicePanelParticipantFocusable(guildId, channelId, embeddedActivityParticipantId);
-        const obj = guildId(focused[52]);
+        result = channelId(first[52]).isVoicePanelParticipantFocusable(guildId, channelId, embeddedActivityParticipantId);
+        const obj = channelId(first[52]);
       }
       if (result) {
-        const participant = channelId(focused[53]).selectParticipant(channelId, embeddedActivityParticipantId);
-        const obj2 = channelId(focused[53]);
+        const participant = guildId(first[53]).selectParticipant(channelId, embeddedActivityParticipantId);
+        const obj2 = guildId(first[53]);
       }
     }, items1);
-    let closure_5 = setFocused.useRef(undefined);
+    let closure_5 = outer1_4.useRef(undefined);
     let tmp3;
     if (null != manualFocusedItem) {
       tmp3 = manualFocusedItem;
     }
-    const targetDimensions = layoutManager.getTargetDimensions(tmp3);
-    contentDimensions = targetDimensions;
+    targetDimensions = layoutManager.getTargetDimensions(tmp3);
     const items2 = [focused, manualFocusedItem, targetDimensions];
-    const layoutEffect = setFocused.useLayoutEffect(() => {
+    const layoutEffect = outer1_4.useLayoutEffect(() => {
       let tmp = null;
       if (null != manualFocusedItem) {
         const obj = { id: manualFocusedItem };
@@ -939,48 +921,46 @@ export default function VoicePanelController(channelId) {
         const result = focused.set(tmp);
       }
     }, items2);
-    tmp6 = guildId(first[52])(guildId, channelId, manualFocusedItem);
+    let tmp6 = guildId(first[52])(guildId, channelId, manualFocusedItem);
+    c7 = tmp6;
     const items3 = [manualFocusedItem, tmp6, setFocused];
-    const effect = setFocused.useEffect(() => {
+    const effect = outer1_4.useEffect(() => {
       if (null != manualFocusedItem) {
-        if (!tmp6) {
+        if (!c7) {
           setFocused(null);
         }
       }
     }, items3);
     const items4 = [setFocused];
-    const effect1 = setFocused.useEffect(() => () => callback(null), items4);
+    const effect1 = outer1_4.useEffect(() => () => outer1_4(null), items4);
     return { setFocused, manualFocusedItem };
-  }({ guildId, channelId, layoutManager, focused }));
-  let obj1 = arg1(dependencyMap[26]);
-  const items2 = [closure_7];
+  })({ guildId, channelId, layoutManager, focused }));
+  let obj1 = channelId(first[26]);
+  let items2 = [closure_7];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => {
-    const connectedActivityLocation = store.getConnectedActivityLocation();
+    const connectedActivityLocation = outer1_7.getConnectedActivityLocation();
     const embeddedActivityLocationChannelId = channelId(first[59]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
     let tmp4 = null != connectedActivityLocation;
-    const activityPanelMode = store.getActivityPanelMode();
+    const activityPanelMode = outer1_7.getActivityPanelMode();
     if (tmp4) {
       tmp4 = embeddedActivityLocationChannelId !== channelId;
     }
     if (tmp4) {
-      tmp4 = activityPanelMode === constants3.PANEL;
+      tmp4 = activityPanelMode === outer1_26.PANEL;
     }
     return tmp4;
   });
-  let closure_32 = stateFromStores1;
   useLayoutManagerState({ isConnected, windowDimensions, contentDimensions, safeArea, layoutManager, items, pushToTalk: stateFromStores });
-  const items3 = [selectedMode, stateFromStores1];
-  const layoutEffect = React.useLayoutEffect(() => {
+  let items3 = [selectedMode, stateFromStores1];
+  let layoutEffect = React.useLayoutEffect(() => {
     if (tmp) {
-      const result = channelId(first[33]).updateActivityPanelMode(constants3.PIP);
+      const result = channelId(first[33]).updateActivityPanelMode(outer1_26.PIP);
       const obj = channelId(first[33]);
     }
   }, items3);
-  function useKeyboardDismissHandler(mode) {
+  (function useKeyboardDismissHandler(mode) {
     mode = mode.mode;
-    const channelId = mode;
     const controlsSpecs = mode.controlsSpecs;
-    const guildId = controlsSpecs;
     let obj = channelId(first[22]);
     const fn = function a() {
       const items = [mode.get(), controlsSpecs.get().mode];
@@ -988,69 +968,64 @@ export default function VoicePanelController(channelId) {
     };
     fn.__closure = { mode, controlsSpecs };
     fn.__workletHash = 10791754460802;
-    fn.__initData = closure_44;
+    fn.__initData = outer1_44;
     const fn2 = function n(arg0, arg1) {
       let tmp;
       if (null != arg1) {
         tmp = arg1;
       }
       if (!obj.cheapWorkletArrayShallowEqual(arg0, tmp)) {
-        let tmp6 = callback(arg0, 2)[1] === constants2.DRAWER;
+        let tmp6 = callback(arg0, 2)[1] === outer2_21.DRAWER;
         if (tmp6) {
-          tmp6 = tmp4 === constants.PANEL;
+          tmp6 = tmp4 === outer2_16.PANEL;
         }
         if (tmp6) {
           let first;
           if (null != arg1) {
             first = arg1[0];
           }
-          tmp6 = first === constants.PANEL;
+          tmp6 = first === outer2_16.PANEL;
         }
         if (!tmp6) {
-          mode(closure_2[22]).runOnJS(mode(closure_2[55]).dismissKeyboard)();
-          const obj2 = mode(closure_2[22]);
+          channelId(first[22]).runOnJS(channelId(first[55]).dismissKeyboard)();
+          const obj2 = channelId(first[22]);
         }
         const tmp3 = callback(arg0, 2);
       }
     };
-    obj = { cheapWorkletArrayShallowEqual: channelId(first[23]).cheapWorkletArrayShallowEqual, VoicePanelControlsModes: closure_21, VoicePanelModes: closure_16, runOnJS: channelId(first[22]).runOnJS, dismissKeyboard: channelId(first[55]).dismissKeyboard };
+    obj = { cheapWorkletArrayShallowEqual: channelId(first[23]).cheapWorkletArrayShallowEqual, VoicePanelControlsModes: outer1_21, VoicePanelModes: outer1_16, runOnJS: channelId(first[22]).runOnJS, dismissKeyboard: channelId(first[55]).dismissKeyboard };
     fn2.__closure = obj;
     fn2.__workletHash = 16494740341507;
-    fn2.__initData = closure_45;
+    fn2.__initData = outer1_45;
     const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  }({ mode, controlsSpecs });
-  function useTransitionState(channelId) {
+  })({ mode, controlsSpecs });
+  (function useTransitionState(channelId) {
     channelId = channelId.channelId;
     const transitionState = channelId.transitionState;
-    const guildId = transitionState;
     const transitionCleanUp = channelId.transitionCleanUp;
-    const first = transitionCleanUp;
-    let connected = channelId.connected;
-    let closure_3 = connected;
+    const connected = channelId.connected;
     const mode = channelId.mode;
     const setMode = channelId.setMode;
-    connected = setMode;
     let obj = channelId(first[22]);
     const sharedValue = obj.useSharedValue(transitionState);
-    const contentDimensions = sharedValue;
-    const items = [transitionState, sharedValue, transitionCleanUp, channelId];
-    const layoutEffect = mode.useLayoutEffect(() => {
+    let items = [transitionState, sharedValue, transitionCleanUp, channelId];
+    const layoutEffect = outer1_4.useLayoutEffect(() => {
       const result = sharedValue.set(transitionState);
-      if (transitionState === channelId(transitionCleanUp[51]).TransitionStates.YEETED) {
-        const state = state.getState();
+      if (transitionState === channelId(first[51]).TransitionStates.YEETED) {
+        const state = outer2_9.getState();
         const obj = { lockEnabled: false };
         const _HermesInternal = HermesInternal;
-        obj.key = "voice-panel-freeze-" + channelId;
+        obj.key = "voice-panel-freeze-" + timeout;
         const freezeLock = state.requestFreezeLock(obj);
         const _setTimeout = setTimeout;
-        const channelId = setTimeout(transitionCleanUp, 500);
+        timeout = setTimeout(transitionCleanUp, 500);
         return () => clearTimeout(closure_0);
       }
     }, items);
     const items1 = [channelId];
-    const layoutEffect1 = mode.useLayoutEffect(() => () => {
-      const state = state.getState();
-      const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: "voice-panel-freeze-" + closure_0 });
+    const layoutEffect1 = outer1_4.useLayoutEffect(() => () => {
+      const state = outer3_9.getState();
+      const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: "voice-panel-freeze-" + outer1_0 });
     }, items1);
     const fn = function h() {
       const items = [connected.get(), mode.get(), sharedValue.get()];
@@ -1058,7 +1033,7 @@ export default function VoicePanelController(channelId) {
     };
     fn.__closure = { connected, mode, sharedTransitionState: sharedValue };
     fn.__workletHash = 7656858903152;
-    fn.__initData = closure_42;
+    fn.__initData = outer1_42;
     const fn2 = function u(arg0, arg1) {
       let tmp;
       if (null != arg1) {
@@ -1067,28 +1042,28 @@ export default function VoicePanelController(channelId) {
       if (!obj.cheapWorkletArrayShallowEqual(arg0, tmp)) {
         const tmp3 = connected(arg0, 3);
         const first = tmp3[0];
-        if (tmp3[2] === channelId(transitionCleanUp[51]).TransitionStates.YEETED) {
-          if (tmp5 !== constants.DISMISSED) {
-            channelId(transitionCleanUp[22]).runOnJS(setMode)(constants.DISMISSED);
-            const obj4 = channelId(transitionCleanUp[22]);
+        if (tmp3[2] === channelId(first[51]).TransitionStates.YEETED) {
+          if (tmp5 !== outer2_16.DISMISSED) {
+            channelId(first[22]).runOnJS(setMode)(outer2_16.DISMISSED);
+            const obj4 = channelId(first[22]);
           }
-        } else if (tmp5 === constants.DISMISSED) {
+        } else if (tmp5 === outer2_16.DISMISSED) {
           let PANEL;
           if (null != arg1) {
             PANEL = arg1[1];
           }
           if (null == PANEL) {
-            PANEL = constants.PANEL;
+            PANEL = outer2_16.PANEL;
           }
-          if (constants.PANEL !== PANEL) {
-            if (constants.PIP !== PANEL) {
-              PANEL = constants.PANEL;
+          if (outer2_16.PANEL !== PANEL) {
+            if (outer2_16.PIP !== PANEL) {
+              PANEL = outer2_16.PANEL;
             }
-            channelId(transitionCleanUp[22]).runOnJS(setMode)(PANEL);
-            const obj3 = channelId(transitionCleanUp[22]);
+            channelId(first[22]).runOnJS(setMode)(PANEL);
+            const obj3 = channelId(first[22]);
           }
           if (!first) {
-            PANEL = constants.PANEL;
+            PANEL = outer2_16.PANEL;
           }
         } else {
           let tmp8 = first;
@@ -1100,22 +1075,22 @@ export default function VoicePanelController(channelId) {
             tmp8 = true !== first1;
           }
           if (!tmp8) {
-            tmp8 = tmp5 !== constants.PIP;
+            tmp8 = tmp5 !== outer2_16.PIP;
           }
           if (!tmp8) {
-            channelId(transitionCleanUp[22]).runOnJS(setMode)(constants.PANEL);
-            const obj2 = channelId(transitionCleanUp[22]);
+            channelId(first[22]).runOnJS(setMode)(outer2_16.PANEL);
+            const obj2 = channelId(first[22]);
           }
         }
       }
     };
-    obj = { cheapWorkletArrayShallowEqual: channelId(first[23]).cheapWorkletArrayShallowEqual, TransitionStates: channelId(first[51]).TransitionStates, VoicePanelModes: closure_16, runOnJS: channelId(first[22]).runOnJS, setMode };
+    obj = { cheapWorkletArrayShallowEqual: channelId(first[23]).cheapWorkletArrayShallowEqual, TransitionStates: channelId(first[51]).TransitionStates, VoicePanelModes: outer1_16, runOnJS: channelId(first[22]).runOnJS, setMode };
     fn2.__closure = obj;
     fn2.__workletHash = 5740547237317;
-    fn2.__initData = closure_43;
+    fn2.__initData = outer1_43;
     const animatedReaction = channelId(first[22]).useAnimatedReaction(fn, fn2);
-  }({ channelId, transitionState, transitionCleanUp, connected, mode, setMode });
-  let obj2 = arg1(dependencyMap[60]);
+  })({ channelId, transitionState, transitionCleanUp, connected, mode, setMode });
+  let obj2 = channelId(first[60]);
   obj = { channelId, connected: isConnected };
   let tmp14;
   if (null != manualFocusedItem) {
@@ -1125,60 +1100,56 @@ export default function VoicePanelController(channelId) {
   obj.layoutManager = layoutManager;
   obj.mode = selectedMode;
   const controllerPIPState = obj2.useControllerPIPState(obj);
-  closure_33 = importDefault(dependencyMap[61])({ mode, controlsSpecs, safeArea, windowDimensions });
-  function useSelectedParticipantEffects(channelId) {
+  closure_33 = guildId(first[61])({ mode, controlsSpecs, safeArea, windowDimensions });
+  (function useSelectedParticipantEffects(channelId) {
     channelId = channelId.channelId;
     const selectedMode = channelId.selectedMode;
-    const guildId = selectedMode;
-    let closure_2 = React.useRef(null);
+    let closure_2 = outer1_4.useRef(null);
     const items = [selectedMode, channelId.manualFocusedItem, channelId];
-    const layoutEffect = React.useLayoutEffect(() => {
-      const rTCConnection = store.getRTCConnection();
+    const layoutEffect = outer1_4.useLayoutEffect(() => {
+      const rTCConnection = outer2_14.getRTCConnection();
       let tmp = null != rTCConnection;
       if (tmp) {
-        tmp = store.getChannelId() === channelId;
+        tmp = outer2_14.getChannelId() === channelId;
       }
       if (tmp) {
-        if (ref.current !== constants.PIP) {
-          if (selectedMode === constants.PIP) {
+        if (ref.current !== outer2_16.PIP) {
+          if (selectedMode === outer2_16.PIP) {
             rTCConnection.setPipOpen(true);
           }
         }
-        let tmp11 = ref.current === constants.PIP;
+        let tmp11 = ref.current === outer2_16.PIP;
         if (tmp11) {
-          tmp11 = selectedMode !== constants.PIP;
+          tmp11 = selectedMode !== outer2_16.PIP;
         }
         if (tmp11) {
           rTCConnection.setPipOpen(false);
         }
       }
     }, items);
-    const layoutEffect1 = React.useLayoutEffect(() => {
+    const layoutEffect1 = outer1_4.useLayoutEffect(() => {
       closure_2.current = selectedMode;
     });
-  }({ channelId, selectedMode, manualFocusedItem });
-  function useHandleThermalState(channelId) {
+  })({ channelId, selectedMode, manualFocusedItem });
+  (function useHandleThermalState(channelId) {
     channelId = channelId.channelId;
     const focused = channelId.focused;
-    const guildId = focused;
     const pipState = channelId.pipState;
-    const first = pipState;
     const manuallyFocusedId = channelId.manuallyFocusedId;
-    let closure_3 = manuallyFocusedId;
-    const items = [channelId];
-    const callback = callback.useCallback((arg0) => {
+    let items = [channelId];
+    const callback = outer1_4.useCallback((arg0) => {
       let focusedId;
       let pipParticipantId;
       ({ focusedId, pipParticipantId } = arg0);
-      const result = closure_11.shouldReactToSeriousThermalStateWhenActivityFocused();
+      const result = mode.shouldReactToSeriousThermalStateWhenActivityFocused();
       let tmp3 = null != focusedId;
-      const result1 = closure_11.consumedRequestToRespondToSeriousThermalState();
+      const result1 = mode.consumedRequestToRespondToSeriousThermalState();
       if (tmp3) {
-        tmp3 = callback(store.getParticipant(channelId, focusedId));
+        tmp3 = setControlsMode(focused.getParticipant(channelId, focusedId));
       }
       let participant;
       if (null != pipParticipantId) {
-        participant = store.getParticipant(channelId, pipParticipantId);
+        participant = focused.getParticipant(channelId, pipParticipantId);
       }
       let streamId;
       if (null != participant) {
@@ -1198,45 +1169,44 @@ export default function VoicePanelController(channelId) {
       if (tmp3) {
         if (result) {
           if (!result1) {
-            const isVideoEnabledResult = videoEnabled.isVideoEnabled();
+            const isVideoEnabledResult = safeArea.isVideoEnabled();
             let tmp15 = isVideoEnabledResult;
             if (!isVideoEnabledResult) {
               tmp15 = tmp11;
             }
             if (tmp15) {
-              let obj = focused(pipState[27]);
-              obj = { "Bool(false)": "onPress", "Bool(false)": "Array", "Bool(false)": "title", "Bool(false)": "__closure", "Bool(false)": "r", icon: focused(pipState[30]) };
-              const intl = channelId(pipState[29]).intl;
-              obj.content = intl.string(channelId(pipState[29]).t.O2IlPT);
+              let obj = guildId(first[27]);
+              obj = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: guildId(first[30]), content: null, disableAnimations: true, toastDurationMs: 3000 };
+              const intl = channelId(first[29]).intl;
+              obj.content = intl.string(channelId(first[29]).t.O2IlPT);
               obj.open(obj);
-              const result2 = channelId(pipState[31]).trackActivityThermalStateNoticeShown();
-              const obj3 = channelId(pipState[31]);
+              const result2 = channelId(first[31]).trackActivityThermalStateNoticeShown();
+              const obj3 = channelId(first[31]);
             }
             if (isVideoEnabledResult) {
-              focused(pipState[32]).setVideoEnabled(false);
-              const obj4 = focused(pipState[32]);
+              guildId(first[32]).setVideoEnabled(false);
+              const obj4 = guildId(first[32]);
             }
-            const result3 = channelId(pipState[33]).consumeRequestToReactToSeriousThermalState();
-            const obj5 = channelId(pipState[33]);
+            const result3 = channelId(first[33]).consumeRequestToReactToSeriousThermalState();
+            const obj5 = channelId(first[33]);
           }
         }
       }
     }, items);
     const items1 = [manuallyFocusedId, pipState, callback, channelId];
-    const effect = callback.useEffect(() => {
-      const items = [closure_11, closure_8];
-      const batchedStoreListener = new channelId(pipState[26]).BatchedStoreListener(items, () => {
+    const effect = outer1_4.useEffect(() => {
+      const items = [mode, focused];
+      const batchedStoreListener = new channelId(first[26]).BatchedStoreListener(items, () => {
         const obj = {};
         let tmp2;
-        if (null != closure_3) {
-          tmp2 = closure_3;
+        if (null != outer1_3) {
+          tmp2 = outer1_3;
         }
         obj.focusedId = tmp2;
-        obj.pipParticipantId = id.id;
-        closure_4(obj);
+        obj.pipParticipantId = outer1_2.id;
+        outer1_4(obj);
       });
-      const channelId = batchedStoreListener;
-      batchedStoreListener.attach("thermal-state-reactions-" + channelId);
+      batchedStoreListener.attach("thermal-state-reactions-" + batchedStoreListener);
       return () => batchedStoreListener.detach();
     }, items1);
     let obj = channelId(first[22]);
@@ -1255,7 +1225,7 @@ export default function VoicePanelController(channelId) {
     const fn2 = function l(arg0, arg1) {
       let tmp4;
       let tmp5;
-      let obj = channelId(pipState[23]);
+      let obj = channelId(first[23]);
       let tmp;
       if (null != arg1) {
         tmp = arg1;
@@ -1264,40 +1234,37 @@ export default function VoicePanelController(channelId) {
         [tmp4, tmp5] = manuallyFocusedId(arg0, 2);
         const tmp3 = manuallyFocusedId(arg0, 2);
         obj = { focusedId: tmp4, pipParticipantId: tmp5 };
-        channelId(pipState[22]).runOnJS(callback)(obj);
-        const obj2 = channelId(pipState[22]);
+        channelId(first[22]).runOnJS(callback)(obj);
+        const obj2 = channelId(first[22]);
       }
     };
     obj = { cheapWorkletArrayShallowEqual: channelId(first[23]).cheapWorkletArrayShallowEqual, runOnJS: channelId(first[22]).runOnJS, handleStateUpdates: callback };
     fn2.__closure = obj;
     fn2.__workletHash = 15246095289306;
-    fn2.__initData = closure_34;
+    fn2.__initData = c34;
     const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  }({ channelId, focused, pipState: controllerPIPState, manuallyFocusedId: manualFocusedItem });
-  function useActivityFocused(channelId) {
+  })({ channelId, focused, pipState: controllerPIPState, manuallyFocusedId: manualFocusedItem });
+  (function useActivityFocused(channelId) {
     channelId = channelId.channelId;
     const focused = channelId.focused;
-    const guildId = focused;
     const mode = channelId.mode;
-    const first = mode;
     const connected = channelId.connected;
-    let closure_3 = connected;
-    const items = [channelId];
-    const callback = callback.useCallback((arg0) => {
+    let items = [channelId];
+    const callback = outer1_4.useCallback((arg0) => {
       let connectedValue;
       let focusedParticipantId;
       ({ focusedParticipantId, connectedValue } = arg0);
       if (connectedValue) {
-        connectedValue = tmp === constants.PANEL;
+        connectedValue = tmp === outer2_16.PANEL;
       }
       let tmp3 = null != focusedParticipantId;
       if (tmp3) {
-        tmp3 = callback(participant.getParticipant(channelId, focusedParticipantId));
+        tmp3 = setControlsMode(focused.getParticipant(channelId, focusedParticipantId));
       }
       if (tmp3) {
         tmp3 = connectedValue;
       }
-      const state = state.getState();
+      const state = windowDimensions.getState();
       state.setIsActivityFocused(tmp3);
     }, items);
     let obj = channelId(first[22]);
@@ -1317,7 +1284,7 @@ export default function VoicePanelController(channelId) {
       let tmp4;
       let tmp5;
       let tmp6;
-      let obj = channelId(mode[23]);
+      let obj = channelId(first[23]);
       let tmp;
       if (null != arg1) {
         tmp = arg1;
@@ -1326,71 +1293,63 @@ export default function VoicePanelController(channelId) {
         [tmp4, tmp5, tmp6] = connected(arg0, 3);
         const tmp3 = connected(arg0, 3);
         obj = { focusedParticipantId: tmp4, voicePanelMode: tmp5, connectedValue: tmp6 };
-        channelId(mode[22]).runOnJS(callback)(obj);
-        const obj2 = channelId(mode[22]);
+        channelId(first[22]).runOnJS(callback)(obj);
+        const obj2 = channelId(first[22]);
       }
     };
     obj = { cheapWorkletArrayShallowEqual: channelId(first[23]).cheapWorkletArrayShallowEqual, runOnJS: channelId(first[22]).runOnJS, handleAnimatedReaction: callback };
     fn2.__closure = obj;
     fn2.__workletHash = 15290799116693;
-    fn2.__initData = closure_31;
+    fn2.__initData = outer1_31;
     const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  }({ channelId, focused, mode, connected });
-  function useActivityConnected(setControlsMode) {
+  })({ channelId, focused, mode, connected });
+  (function useActivityConnected(setControlsMode) {
     setControlsMode = setControlsMode.setControlsMode;
-    const channelId = setControlsMode;
     const items = [setControlsMode];
-    const callback = React.useCallback(() => {
-      setControlsMode({ mode: constants.FLOATING_DEFAULT });
+    const callback = outer1_4.useCallback(() => {
+      setControlsMode({ mode: outer2_21.FLOATING_DEFAULT });
     }, items);
     guildId(first[21])({ onTransition: callback });
-  }({ setControlsMode });
-  function useSpeakingWhileMutedNotification(showControls) {
+  })({ setControlsMode });
+  (function useSpeakingWhileMutedNotification(showControls) {
     showControls = showControls.showControls;
-    const channelId = showControls;
-    const enableMuteWarning = guildId(closure_2[25]).useConfig({ location: "VoicePanelController" }).enableMuteWarning;
-    const guildId = enableMuteWarning;
-    closure_2 = React.useRef(0);
-    const obj = guildId(closure_2[25]);
+    const enableMuteWarning = guildId(first[25]).useConfig({ location: "VoicePanelController" }).enableMuteWarning;
+    let closure_2 = outer1_4.useRef(0);
+    let obj = guildId(first[25]);
     const items = [safeArea];
-    const stateFromStores = channelId(closure_2[26]).useStateFromStores(items, () => speakingWhileMuted.getSpeakingWhileMuted());
-    let closure_3 = stateFromStores;
+    const stateFromStores = channelId(first[26]).useStateFromStores(items, () => safeArea.getSpeakingWhileMuted());
     const items1 = [stateFromStores, enableMuteWarning, showControls];
-    const effect = React.useEffect(() => {
+    const effect = outer1_4.useEffect(() => {
       let tmp = stateFromStores;
       if (stateFromStores) {
         tmp = enableMuteWarning;
       }
       if (tmp) {
         const _performance = performance;
-        if (performance.now() - ref.current >= closure_32) {
+        if (performance.now() - ref.current >= stateFromStores1) {
           const _performance2 = performance;
           ref.current = performance.now();
           showControls();
-          let obj = enableMuteWarning(ref[27]);
-          obj = { key: "SPEAKING_WHILE_MUTED", icon: enableMuteWarning(ref[28]) };
-          const intl = showControls(ref[29]).intl;
-          obj.content = intl.string(showControls(ref[29]).t.29gnR4);
+          let obj = guildId(first[27]);
+          obj = { key: "SPEAKING_WHILE_MUTED", icon: guildId(first[28]) };
+          const intl = channelId(first[29]).intl;
+          obj.content = intl.string(channelId(first[29]).t["29gnR4"]);
           obj.toastDurationMs = 3000;
           obj.open(obj);
         }
       }
     }, items1);
-  }({ showControls });
-  importDefault(dependencyMap[62])(channelId, mode, setMode, connected);
-  importDefault(dependencyMap[63])();
-  function useActivityOrientationState(isConnected) {
+  })({ showControls });
+  guildId(first[62])(channelId, mode, setMode, connected);
+  guildId(first[63])();
+  (function useActivityOrientationState(isConnected) {
     isConnected = isConnected.isConnected;
-    const channelId = isConnected;
     const selectedMode = isConnected.selectedMode;
-    const guildId = selectedMode;
     const manualFocusedItem = isConnected.manualFocusedItem;
-    const first = manualFocusedItem;
     const isNonVoiceEmbeddedActivityInPanelMode = isConnected.isNonVoiceEmbeddedActivityInPanelMode;
-    let closure_3 = isNonVoiceEmbeddedActivityInPanelMode;
-    const items = [closure_7];
+    const items = [outer1_7];
     const stateFromStoresObject = channelId(first[26]).useStateFromStoresObject(items, () => {
-      const currentEmbeddedActivity = store.getCurrentEmbeddedActivity();
+      const currentEmbeddedActivity = outer2_7.getCurrentEmbeddedActivity();
       let applicationId;
       if (null != currentEmbeddedActivity) {
         applicationId = currentEmbeddedActivity.applicationId;
@@ -1402,93 +1361,84 @@ export default function VoicePanelController(channelId) {
       }
       obj.instanceId = compositeInstanceId;
       if (null == applicationId) {
-        let UNLOCKED = constants2.UNLOCKED;
+        let UNLOCKED = showControls.UNLOCKED;
       } else {
-        UNLOCKED = store.getOrientationLockStateForApp(applicationId);
+        UNLOCKED = outer2_7.getOrientationLockStateForApp(applicationId);
       }
       obj.activityOrientationLockState = UNLOCKED;
       return obj;
     });
-    const applicationId = stateFromStoresObject.applicationId;
+    let applicationId = stateFromStoresObject.applicationId;
     const activityOrientationLockState = stateFromStoresObject.activityOrientationLockState;
-    const connected = activityOrientationLockState;
     const instanceId = stateFromStoresObject.instanceId;
-    const contentDimensions = instanceId;
     const items1 = [applicationId, isConnected, selectedMode, activityOrientationLockState, manualFocusedItem, isNonVoiceEmbeddedActivityInPanelMode, instanceId];
-    const layoutEffect = applicationId.useLayoutEffect(() => {
+    const layoutEffect = outer1_4.useLayoutEffect(() => {
       if (!isNonVoiceEmbeddedActivityInPanelMode) {
-        if (selectedMode === constants.PANEL) {
+        if (selectedMode === outer2_16.PANEL) {
           if (isConnected) {
             if (null != applicationId) {
               let obj = { applicationId, instanceId };
               if (manualFocusedItem === obj2.getEmbeddedActivityParticipantId(obj)) {
-                selectedMode(manualFocusedItem[50])(activityOrientationLockState);
+                guildId(first[50])(activityOrientationLockState);
               }
-              const obj2 = isConnected(manualFocusedItem[49]);
+              obj2 = channelId(first[49]);
             }
             obj = { unlockAfterRotatingToPreviousLock: false };
-            isConnected(manualFocusedItem[48]).unlockOrientation(obj);
-            const obj4 = isConnected(manualFocusedItem[48]);
+            channelId(first[48]).unlockOrientation(obj);
+            const obj4 = channelId(first[48]);
           }
         }
-        obj = isConnected(manualFocusedItem[48]);
+        obj = channelId(first[48]);
         const result = obj.restoreDefaultOrientation();
       }
     }, items1);
-    const layoutEffect1 = applicationId.useLayoutEffect(() => () => callback(closure_2[48]).restoreDefaultOrientation(), []);
-  }({ isConnected, selectedMode, manualFocusedItem, isNonVoiceEmbeddedActivityInPanelMode: stateFromStores1 });
-  function useVoicePanelAnalytics(channelId) {
+    const layoutEffect1 = outer1_4.useLayoutEffect(() => () => channelId(first[48]).restoreDefaultOrientation(), []);
+  })({ isConnected, selectedMode, manualFocusedItem, isNonVoiceEmbeddedActivityInPanelMode: stateFromStores1 });
+  (function useVoicePanelAnalytics(channelId) {
     channelId = channelId.channelId;
     const isConnected = channelId.isConnected;
-    const guildId = isConnected;
     const selectedMode = channelId.selectedMode;
-    const first = selectedMode;
     const items = [selectedMode, channelId, isConnected];
-    const effect = React.useEffect(() => {
+    const effect = outer1_4.useEffect(() => {
       if (tmp) {
-        let obj = isConnected(selectedMode[47]);
-        obj = { video_layout: callback(selectedMode) };
-        const merged = Object.assign(channelId(selectedMode[54]).collectVoiceAnalyticsMetadata(channelId));
-        obj.track(constants2.VIDEO_LAYOUT_TOGGLED, obj);
-        const obj3 = channelId(selectedMode[54]);
+        let obj = guildId(first[47]);
+        obj = { video_layout: outer2_17(selectedMode) };
+        const merged = Object.assign(channelId(first[54]).collectVoiceAnalyticsMetadata(channelId));
+        obj.track(outer2_22.VIDEO_LAYOUT_TOGGLED, obj);
+        const obj3 = channelId(first[54]);
       }
     }, items);
-  }({ channelId, isConnected, selectedMode });
-  const tmp8 = function useManuallyFocusedItem(guildId) {
+  })({ channelId, isConnected, selectedMode });
+  let tmp8 = (function useManuallyFocusedItem(guildId) {
     let focused;
     let layoutManager;
     guildId = guildId.guildId;
-    let channelId = guildId;
-    channelId = guildId.channelId;
-    guildId = channelId;
+    const channelId = guildId.channelId;
     ({ layoutManager, focused } = guildId);
-    const first = focused;
-    let contentDimensions;
-    let tmp6;
+    let targetDimensions;
+    let c7;
     const items = [focused];
-    const manualFocusedItem = channelId(first[26]).useStateFromStores(items, () => selectedParticipantId.getSelectedParticipantId(channelId));
-    let closure_3 = manualFocusedItem;
+    const manualFocusedItem = channelId(first[26]).useStateFromStores(items, () => focused.getSelectedParticipantId(channelId));
     const items1 = [guildId, channelId];
-    const setFocused = setFocused.useCallback((embeddedActivityParticipantId) => {
+    const setFocused = outer1_4.useCallback((embeddedActivityParticipantId) => {
       let result = null == embeddedActivityParticipantId;
       if (!result) {
-        result = guildId(focused[52]).isVoicePanelParticipantFocusable(guildId, channelId, embeddedActivityParticipantId);
-        const obj = guildId(focused[52]);
+        result = channelId(first[52]).isVoicePanelParticipantFocusable(guildId, channelId, embeddedActivityParticipantId);
+        const obj = channelId(first[52]);
       }
       if (result) {
-        const participant = channelId(focused[53]).selectParticipant(channelId, embeddedActivityParticipantId);
-        const obj2 = channelId(focused[53]);
+        const participant = guildId(first[53]).selectParticipant(channelId, embeddedActivityParticipantId);
+        const obj2 = guildId(first[53]);
       }
     }, items1);
-    let closure_5 = setFocused.useRef(undefined);
+    let closure_5 = outer1_4.useRef(undefined);
     let tmp3;
     if (null != manualFocusedItem) {
       tmp3 = manualFocusedItem;
     }
-    const targetDimensions = layoutManager.getTargetDimensions(tmp3);
-    contentDimensions = targetDimensions;
+    targetDimensions = layoutManager.getTargetDimensions(tmp3);
     const items2 = [focused, manualFocusedItem, targetDimensions];
-    const layoutEffect = setFocused.useLayoutEffect(() => {
+    const layoutEffect = outer1_4.useLayoutEffect(() => {
       let tmp = null;
       if (null != manualFocusedItem) {
         const obj = { id: manualFocusedItem };
@@ -1509,68 +1459,67 @@ export default function VoicePanelController(channelId) {
         const result = focused.set(tmp);
       }
     }, items2);
-    tmp6 = guildId(first[52])(guildId, channelId, manualFocusedItem);
+    let tmp6 = guildId(first[52])(guildId, channelId, manualFocusedItem);
+    c7 = tmp6;
     const items3 = [manualFocusedItem, tmp6, setFocused];
-    const effect = setFocused.useEffect(() => {
+    const effect = outer1_4.useEffect(() => {
       if (null != manualFocusedItem) {
-        if (!tmp6) {
+        if (!c7) {
           setFocused(null);
         }
       }
     }, items3);
     const items4 = [setFocused];
-    const effect1 = setFocused.useEffect(() => () => callback(null), items4);
+    const effect1 = outer1_4.useEffect(() => () => outer1_4(null), items4);
     return { setFocused, manualFocusedItem };
-  }({ guildId, channelId, layoutManager, focused });
-  ({ showFloatingCTA: closure_34, setShowFloatingCTA: closure_35 } = function useShowFloatingCTA(mode) {
-    const channelId = mode;
-    let closure_1 = React.useRef(-1);
+  })({ guildId, channelId, layoutManager, focused });
+  ({ showFloatingCTA: c34, setShowFloatingCTA: c35 } = (function useShowFloatingCTA(mode) {
+    let closure_0 = mode;
+    let closure_1 = outer1_4.useRef(-1);
     const showFloatingCTA = channelId(first[22]).useSharedValue(null);
-    const first = showFloatingCTA;
     const items = [mode, showFloatingCTA];
-    const setShowFloatingCTA = React.useCallback((arg0) => {
-      if (arg0.get() === constants.PANEL) {
-        const result = showFloatingCTA.set(arg0);
+    const setShowFloatingCTA = outer1_4.useCallback((arg0) => {
+      if (mode.get() === outer2_16.PANEL) {
+        let result = showFloatingCTA.set(arg0);
         if (null != arg0) {
           const _clearTimeout = clearTimeout;
           clearTimeout(ref.current);
           const _setTimeout = setTimeout;
           ref.current = setTimeout(() => {
-            const result = closure_2.set(null);
-          }, arg0(showFloatingCTA[34]).FLOATING_CTA_HIDE_TIMEOUT);
+            const result = outer1_2.set(null);
+          }, channelId(first[34]).FLOATING_CTA_HIDE_TIMEOUT);
         }
       }
     }, items);
-    const layoutEffect = React.useLayoutEffect(() => () => clearTimeout(ref.current), []);
+    const layoutEffect = outer1_4.useLayoutEffect(() => () => clearTimeout(outer1_1.current), []);
     return { showFloatingCTA, setShowFloatingCTA };
-  }(mode));
+  })(mode));
   closure_36 = React.useRef(undefined);
-  const ref = React.useRef(0);
-  closure_37 = ref;
-  const effect1 = React.useEffect(() => {
+  ref = React.useRef(0);
+  let effect1 = React.useEffect(() => {
     ref.current = 0;
   });
   if (null != ref.current) {
     ref.current = ref.current + 1;
     if (ref.current > 10) {
       obj = { category: "voice-panel" };
-      const _HermesInternal = HermesInternal;
+      let _HermesInternal = HermesInternal;
       obj.message = "VoicePanelController is rendering too many times (>" + ref.current + ")";
-      importDefault(dependencyMap[64]).addBreadcrumb(obj);
+      guildId(first[64]).addBreadcrumb(obj);
       ref.current = null;
-      const obj5 = importDefault(dependencyMap[64]);
+      let obj5 = guildId(first[64]);
     }
   }
-  obj1 = { value: callback(React.useState(() => ({ channelId, channelType: closure_4, connected, contentDimensions, controlsSpecs, dismissPanel, dismissToPIPGestureRef: closure_36, dragScrolling: closure_7, focused, generateStateLocker: closure_23, guildId, hideControls: closure_26, isCall: closure_9, isFocusedVideoZoomed: closure_17, layoutManager, mode, morphablePanelMode: closure_21, mountedCards: closure_3, pipAvoidanceSpecs: closure_33, preJoinContentSize: closure_12, safeArea, scrollPosition: closure_14, setControlsMode, setFocused: closure_31, setIsFocusedVideoZoomed: closure_18, setMode, setShowFloatingCTA: closure_35, showControls, showFloatingCTA: closure_34, streamOutputSinkStack: first, usePIPState: channelId(first[65]).usePIPState, useReducedMotion: closure_19, windowDimensions, wrapperDimensions: closure_16, wrapperOffset: closure_20, panelCardStillInPIP: closure_22 })), 1)[0] };
+  obj1 = { value: callback(React.useState(() => ({ channelId, channelType: trackActivityThermalStateNoticeShown, connected, contentDimensions, controlsSpecs, dismissPanel, dismissToPIPGestureRef: closure_36, dragScrolling: closure_7, focused, generateStateLocker: closure_23, guildId, hideControls: closure_26, isCall: module_8293, isFocusedVideoZoomed: closure_17, layoutManager, mode, morphablePanelMode: closure_21, mountedCards: _createForOfIteratorHelperLoose, pipAvoidanceSpecs: closure_33, preJoinContentSize: closure_12, safeArea, scrollPosition: closure_14, setControlsMode, setFocused: closure_31, setIsFocusedVideoZoomed: closure_18, setMode, setShowFloatingCTA: c35, showControls, showFloatingCTA: c34, streamOutputSinkStack: first, usePIPState: channelId(first[65]).usePIPState, useReducedMotion: closure_19, windowDimensions, wrapperDimensions: closure_16, wrapperOffset: closure_20, panelCardStillInPIP: closure_22 })), 1)[0] };
   obj2 = { value: controllerPIPState };
-  const obj3 = {};
+  let obj3 = {};
   let tmp33 = null;
   if (null != guildId) {
     tmp33 = guildId;
   }
   obj3.value = tmp33;
   obj3.children = children;
-  obj2.children = jsx(importDefault(dependencyMap[67]).Provider, obj3);
-  obj1.children = jsx(arg1(dependencyMap[65]).VoicePanelPIPStateContext.Provider, obj2);
-  return jsx(importDefault(dependencyMap[66]).Provider, obj1);
+  obj2.children = setMode(guildId(first[67]).Provider, obj3);
+  obj1.children = setMode(channelId(first[65]).VoicePanelPIPStateContext.Provider, obj2);
+  return setMode(guildId(first[66]).Provider, obj1);
 };

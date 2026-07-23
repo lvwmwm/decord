@@ -1,36 +1,37 @@
-// Module ID: 16257
-// Function ID: 125588
+// Module ID: 16374
+// Function ID: 127762
 // Name: useGuildApplication
-// Dependencies: []
+// Dependencies: [5, 57, 31, 4167, 566, 5465, 4029, 2]
 // Exports: default
 
-// Module 16257 (useGuildApplication)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/applications/useGuildApplication.tsx");
+// Module 16374 (useGuildApplication)
+import fetchApplication from "fetchApplication";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/applications/useGuildApplication.tsx");
 
 export default function useGuildApplication(arg0, arg1) {
+  let fetchApplication;
   let tmp4;
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_6];
-  const application = arg1(dependencyMap[4]).useStateFromStores(items, () => guildApplication.getGuildApplication(arg0, arg1));
-  const dependencyMap = application;
-  const obj = arg1(dependencyMap[4]);
-  [tmp4, closure_3] = callback2(React.useState(null == application), 2);
-  const error = callback2(React.useState(), 2);
-  const callback2 = error[1];
-  const tmp6 = callback2(React.useState(false), 2);
-  const first = tmp6[0];
-  const React = first;
-  closure_6 = tmp6[1];
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_isNativeReflectConstruct];
+  application = _require(application[4]).useStateFromStores(items, () => guildApplication.getGuildApplication(closure_0, closure_1));
+  const obj = _require(application[4]);
+  [tmp4, fetchApplication] = callback2(first.useState(null == application), 2);
+  const error = callback2(first.useState(), 2);
+  callback2 = error[1];
+  const tmp6 = callback2(first.useState(false), 2);
+  first = tmp6[0];
+  _isNativeReflectConstruct = tmp6[1];
   // CreateGeneratorClosureLongIndex (0x67)
   const items1 = [application, arg1, arg0];
-  const callback = React.useCallback(callback(tmp), items1);
+  callback = first.useCallback(callback(tmp), items1);
   const items2 = [first, callback];
-  const effect = React.useEffect(() => {
+  const effect = first.useEffect(() => {
     if (!first) {
       callback();
     }

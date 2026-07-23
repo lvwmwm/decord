@@ -1,32 +1,34 @@
-// Module ID: 16225
-// Function ID: 125421
+// Module ID: 16342
+// Function ID: 127594
 // Name: getInviteEmptySource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 10187, 16343, 10186, 3976, 2]
 // Exports: InviteEmpty
 
-// Module 16225 (getInviteEmptySource)
+// Module 16342 (getInviteEmptySource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getInviteEmptySource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useInviteEmptySource() {
-  return getInviteEmptySource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getInviteEmptySource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/InviteEmpty.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/InviteEmpty.tsx");
 
 export { getInviteEmptySource };
 export { useInviteEmptySource };
@@ -34,5 +36,5 @@ export const InviteEmpty = function InviteEmpty(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useInviteEmptySource();
-  return <Image {...obj} />;
+  return <Image />;
 };

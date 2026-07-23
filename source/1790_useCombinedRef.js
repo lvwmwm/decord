@@ -1,11 +1,11 @@
 // Module ID: 1790
-// Function ID: 19837
+// Function ID: 19838
 // Name: useCombinedRef
-// Dependencies: []
+// Dependencies: [31]
 // Exports: default
 
 // Module 1790 (useCombinedRef)
-require(dependencyMap[0]).useCallback;
+require("result").useCallback;
 
 export default function useCombinedRef() {
   const length = arguments.length;
@@ -30,7 +30,7 @@ export default function useCombinedRef() {
           tmp2.current = current;
         }
       }
-      // continue
+      continue;
     }
   }, array);
 };

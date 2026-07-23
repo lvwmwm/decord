@@ -1,56 +1,57 @@
-// Module ID: 5134
-// Function ID: 44504
+// Module ID: 5137
+// Function ID: 44523
 // Name: isElectronBuiltInSpellcheckerSupported
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [5, 3741, 477, 5138, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5134 (isElectronBuiltInSpellcheckerSupported)
-import __exportStarResult1 from "__exportStarResult1";
+// Module 5137 (isElectronBuiltInSpellcheckerSupported)
+import asyncGeneratorStep from "asyncGeneratorStep";
 
+const require = arg1;
 function isElectronBuiltInSpellcheckerSupported() {
   let spellCheck;
-  if (null != importDefault(dependencyMap[1])) {
-    spellCheck = importDefault(dependencyMap[1]).spellCheck;
+  if (null != importDefault(3741)) {
+    spellCheck = importDefault(3741).spellCheck;
   }
   return null != spellCheck;
 }
 function isSupported() {
-  let isDesktopResult = arg1(dependencyMap[2]).isDesktop();
+  let isDesktopResult = require(477) /* set */.isDesktop();
   if (isDesktopResult) {
     isDesktopResult = isElectronBuiltInSpellcheckerSupported();
   }
   return isDesktopResult;
 }
-async function _setEnabled(enabled, arg1) {
-  const tmp = yield closure_4;
+async function _setEnabled(arg0, arg1) {
+  const tmp = yield outer2_4;
   if (null != tmp) {
-    tmp.enabled = enabled;
+    tmp.enabled = arg0;
   }
 }
 async function _setLearnedWords(arg0, arg1) {
-  const obj = yield closure_4;
+  const obj = yield outer2_4;
   if (null != obj) {
     obj.setLearnedWords(arg0);
   }
 }
 async function _isMisspelled(arg0, arg1) {
-  const fn = function*(arg0, flag) {
+  let iter = (function*(arg0, flag) {
     if (flag === undefined) {
       flag = false;
     }
     yield undefined;
-    const obj = yield closure_4;
+    const obj = yield outer2_4;
     let isMisspelledResult = null != obj;
     if (isMisspelledResult) {
       isMisspelledResult = obj.isMisspelled(arg0, flag);
     }
     return isMisspelledResult;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _getCorrections(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let flag = arg1;
     let num = arg2;
     if (flag === undefined) {
@@ -60,7 +61,7 @@ async function _getCorrections(arg0, arg1) {
       num = 5;
     }
     yield undefined;
-    const obj = yield closure_4;
+    const obj = yield outer2_4;
     if (null == obj) {
       let items = [];
     } else {
@@ -68,19 +69,19 @@ async function _getCorrections(arg0, arg1) {
       items = correctionsForMisspelling.slice(0, num);
     }
     return items;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _getCachedMisspelling() {
-  const fn = function*() {
+  let iter = (function*() {
     let corrections;
     let num = arg0;
     if (num === undefined) {
       num = 5;
     }
     yield undefined;
-    let obj = yield closure_4;
+    let obj = yield outer2_4;
     if (null == obj) {
       obj = { misspelledWord: "", corrections: [] };
       return obj;
@@ -91,28 +92,28 @@ async function _getCachedMisspelling() {
       obj.corrections = corrections.slice(0, num);
       return obj;
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _replaceWithCorrection(arg0, arg1) {
-  const obj = yield closure_4;
+  const obj = yield outer2_4;
   if (null != obj) {
     obj.replaceMisspelling(arg0);
   }
 }
 async function _setAppLocale(arg0, arg1) {
-  const obj = yield closure_4;
+  const obj = yield outer2_4;
   if (null != obj) {
     obj.setAppLocale(arg0);
   }
 }
 let installResult = null;
 if (isSupported()) {
-  installResult = require("__exportStarResult1").install();
-  const obj = require("__exportStarResult1");
+  installResult = require("normalizeLocale").install();
+  let obj = require("normalizeLocale");
 }
-const result = require("__exportStarResult1").fileFinishedImporting("utils/SpellcheckUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/SpellcheckUtils.tsx");
 
 export { isSupported };
 export const setEnabled = function setEnabled() {
@@ -138,7 +139,7 @@ export const setAppLocale = function setAppLocale() {
 };
 export const addResultListener = function addResultListener(arg0) {
   if (isElectronBuiltInSpellcheckerSupported()) {
-    const spellCheck = importDefault(dependencyMap[1]).spellCheck;
+    const spellCheck = importDefault(3741).spellCheck;
     let fn = spellCheck.on("spellcheck-result", arg0);
     if (null == fn) {
       fn = () => {

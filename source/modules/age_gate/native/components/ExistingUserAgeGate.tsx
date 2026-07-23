@@ -1,43 +1,50 @@
-// Module ID: 15866
-// Function ID: 121403
+// Module ID: 15983
+// Function ID: 123576
 // Name: ExistingUserAgeGate
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1342, 1849, 1197, 15981, 653, 33, 4130, 1456, 566, 675, 1212, 1920, 44, 14745, 4337, 3712, 14768, 5121, 4126, 15984, 4543, 2]
 // Exports: default
 
-// Module 15866 (ExistingUserAgeGate)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ AgeGateAnalyticAction: closure_9, AgeGateSource: closure_10 } = arg1(dependencyMap[6]));
-let closure_11 = arg1(dependencyMap[7]).ExistingUserAgeGateScreens;
-const tmp2 = arg1(dependencyMap[6]);
-({ AnalyticEvents: closure_12, HelpdeskArticles: closure_13 } = arg1(dependencyMap[8]));
-const tmp3 = arg1(dependencyMap[8]);
-({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
-const tmp4 = arg1(dependencyMap[9]);
-let closure_16 = arg1(dependencyMap[10]).createStyles({ container: {}, header: { value: null, on: null }, body: {}, inputGroup: { "Bool(false)": "column", "Bool(false)": "flex-end" }, buttonWrapper: { width: "100%" } });
-const obj = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGate.tsx");
+// Module 15983 (ExistingUserAgeGate)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import closure_5 from "result";
+import { View } from "get ActivityIndicator";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import result from "result";
+import { ExistingUserAgeGateScreens as closure_11 } from "ExistingUserAgeGateScreens";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_9;
+const require = arg1;
+({ AgeGateAnalyticAction: closure_9, AgeGateSource: closure_10 } = result);
+({ AnalyticEvents: closure_12, HelpdeskArticles: closure_13 } = ME);
+({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
+let closure_16 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 8, textAlign: "center" }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, inputGroup: { marginBottom: 16, width: "100%" }, buttonWrapper: { width: "100%" } });
+result = require("result").fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGate.tsx");
 
 export default function ExistingUserAgeGate(onSuccess) {
   let NSFW_CHANNEL;
   let NSFW_VOICE_CHANNEL;
+  let c7;
+  let c8;
   let tmp11;
   let tmp13;
   onSuccess = onSuccess.onSuccess;
-  const arg1 = onSuccess;
   const onClose = onSuccess.onClose;
-  const importDefault = onClose;
   const source = onSuccess.source;
-  const dependencyMap = source;
-  let closure_3;
+  let navigation;
   let React;
-  let View;
-  let closure_7;
-  let closure_8;
+  let first;
+  c7 = undefined;
+  c8 = undefined;
   let stateFromStores1;
   function submitBirthday(arg0) {
     return _submitBirthday(...arguments);
@@ -45,23 +52,19 @@ export default function ExistingUserAgeGate(onSuccess) {
   function _submitBirthday() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = navigation(tmp);
-    const _submitBirthday = obj;
     return obj(...arguments);
   }
   function _submitBirthdayWithAgeConfirmation() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = navigation(tmp);
-    const _submitBirthdayWithAgeConfirmation = obj;
     return obj(...arguments);
   }
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[11]);
-  const navigation = obj.useNavigation();
-  closure_3 = navigation;
-  let obj1 = arg1(dependencyMap[12]);
-  const items = [closure_8];
-  const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const callback = stateFromStores;
+  const tmp = callback2();
+  let obj = onSuccess(source[11]);
+  navigation = obj.useNavigation();
+  let obj1 = onSuccess(source[12]);
+  const items = [c8];
+  const stateFromStores = obj1.useStateFromStores(items, () => _undefined2.getCurrentUser());
   let tmp5 = source === submitBirthday.NSFW_SERVER;
   ({ NSFW_CHANNEL, NSFW_VOICE_CHANNEL } = submitBirthday);
   if (!tmp5) {
@@ -71,16 +74,15 @@ export default function ExistingUserAgeGate(onSuccess) {
     tmp5 = source === submitBirthday.NSFW_SERVER_INVITE_EMBED;
   }
   React = tmp5;
-  const tmp8 = callback(React.useState(null), 2);
-  const first = tmp8[0];
-  View = first;
-  [tmp11, closure_7] = callback(React.useState(null), 2);
-  const tmp10 = callback(React.useState(null), 2);
-  [tmp13, closure_8] = callback(React.useState(false), 2);
-  const tmp12 = callback(React.useState(false), 2);
-  let obj2 = arg1(dependencyMap[12]);
-  const items1 = [closure_7];
-  stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
+  const tmp8 = stateFromStores(React.useState(null), 2);
+  first = tmp8[0];
+  [tmp11, c7] = stateFromStores(React.useState(null), 2);
+  const tmp10 = stateFromStores(React.useState(null), 2);
+  [tmp13, c8] = stateFromStores(React.useState(false), 2);
+  const tmp12 = stateFromStores(React.useState(false), 2);
+  let obj2 = onSuccess(source[12]);
+  const items1 = [c7];
+  stateFromStores1 = obj2.useStateFromStores(items1, () => _undefined.getAction());
   const items2 = [stateFromStores1, onClose];
   const effect = React.useEffect(() => {
     if (null != stateFromStores1) {
@@ -96,7 +98,7 @@ export default function ExistingUserAgeGate(onSuccess) {
       nsfwAllowed = stateFromStores.nsfwAllowed;
     }
     if (false === nsfwAllowed) {
-      if (tmp5) {
+      if (c5) {
         navigation.push(_submitBirthday.Pawtect);
       }
     }
@@ -117,64 +119,64 @@ export default function ExistingUserAgeGate(onSuccess) {
   if (source !== NSFW_CHANNEL) {
     if (source !== NSFW_VOICE_CHANNEL) {
       if (!tmp5) {
-        const intl = arg1(dependencyMap[14]).intl;
+        const intl = onSuccess(source[14]).intl;
         if (tmp4) {
           let stringResult = intl.string(tmp19(tmp20[14]).t.mhUrKS);
         } else {
           obj = {};
-          let obj4 = importDefault(tmp20[15]);
+          let obj4 = onClose(tmp20[15]);
           obj.helpURL = obj4.getArticleURL(constants.AGE_GATE);
           stringResult = intl.format(tmp19(tmp20[14]).t.EcJBEI, obj);
         }
       }
-      const intl3 = arg1(dependencyMap[14]).intl;
+      const intl3 = onSuccess(source[14]).intl;
       const string = intl3.string;
-      const t = arg1(dependencyMap[14]).t;
+      const t = onSuccess(source[14]).t;
       if (tmp5) {
-        let stringResult1 = string(t.H0SG/g);
+        let stringResult1 = string(t["H0SG/g"]);
       } else if (tmp4) {
         stringResult1 = string(t.M7mt7m);
       } else {
         stringResult1 = string(t.F8otRo);
       }
-      const tmp29 = !importDefault(dependencyMap[20])(first);
+      const tmp29 = !onClose(source[20])(first);
       let stringResult2 = tmp11;
       if (tmp29) {
         stringResult2 = tmp11;
         if (null != first) {
-          const intl4 = arg1(dependencyMap[14]).intl;
-          stringResult2 = intl4.string(arg1(dependencyMap[14]).t.udnqh6);
+          const intl4 = onSuccess(source[14]).intl;
+          stringResult2 = intl4.string(onSuccess(source[14]).t.udnqh6);
         }
       }
       obj = { top: true, style: tmp.container };
-      obj1 = { style: tmp.header, children: stringResult1 };
-      const items5 = [callback2(arg1(dependencyMap[22]).Text, obj1), , , ];
-      obj2 = { "Null": -1493172224, "Null": 1962934272, alignItems: 0, style: tmp.body, children: stringResult };
-      items5[1] = callback2(arg1(dependencyMap[22]).Text, obj2);
+      obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult1 };
+      const items5 = [callback(onSuccess(source[22]).Text, obj1), , , ];
+      obj2 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: stringResult };
+      items5[1] = callback(onSuccess(source[22]).Text, obj2);
       const obj3 = { style: tmp.inputGroup, ref };
-      const intl5 = arg1(dependencyMap[14]).intl;
-      obj3.label = intl5.string(arg1(dependencyMap[14]).t.xNpFJ6);
+      const intl5 = onSuccess(source[14]).intl;
+      obj3.label = intl5.string(onSuccess(source[14]).t.xNpFJ6);
       obj3.date = first;
       obj3.onChangeDate = tmp8[1];
       obj3.error = stringResult2;
-      items5[2] = callback2(importDefault(dependencyMap[23]), obj3);
+      items5[2] = callback(onClose(source[23]), obj3);
       obj4 = { style: tmp.buttonWrapper };
       const obj5 = { loading: tmp13, disabled: tmp13 };
-      const intl6 = arg1(dependencyMap[14]).intl;
-      obj5.text = intl6.string(arg1(dependencyMap[14]).t.PDTjLN);
+      const intl6 = onSuccess(source[14]).intl;
+      obj5.text = intl6.string(onSuccess(source[14]).t.PDTjLN);
       obj5.onPress = function submitBirthdayWithAgeConfirmation() {
         return _submitBirthdayWithAgeConfirmation(...arguments);
       };
       obj5.grow = true;
-      obj4.children = callback2(arg1(dependencyMap[24]).Button, obj5);
-      items5[3] = callback2(View, obj4);
+      obj4.children = callback(onSuccess(source[24]).Button, obj5);
+      items5[3] = callback(first, obj4);
       obj.children = items5;
-      return closure_15(arg1(dependencyMap[21]).SafeAreaPaddingView, obj);
+      return closure_15(onSuccess(source[21]).SafeAreaPaddingView, obj);
     }
   }
-  const intl2 = arg1(dependencyMap[14]).intl;
+  const intl2 = onSuccess(source[14]).intl;
   let obj6 = {};
-  obj6 = importDefault(dependencyMap[15]);
+  obj6 = onClose(source[15]);
   obj6.helpURL = obj6.getArticleURL(constants.AGE_GATE);
-  stringResult = intl2.format(arg1(dependencyMap[14]).t.n3QjDE, obj6);
+  stringResult = intl2.format(onSuccess(source[14]).t.n3QjDE, obj6);
 };

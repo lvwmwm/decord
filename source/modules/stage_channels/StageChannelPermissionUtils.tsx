@@ -1,10 +1,22 @@
-// Module ID: 4945
-// Function ID: 42405
+// Module ID: 4948
+// Function ID: 42423
 // Name: createOrUpdateModeratorOverwrite
-// Dependencies: []
+// Dependencies: [3759, 1391, 1194, 1348, 1838, 3758, 1353, 653, 483, 3763, 1356, 566, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 4945 (createOrUpdateModeratorOverwrite)
+// Module 4948 (createOrUpdateModeratorOverwrite)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { isGuildOwner } from "isGuildOwner";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function createOrUpdateModeratorOverwrite(id, type, deny) {
   const obj = { id, type };
   deny = undefined;
@@ -12,43 +24,35 @@ function createOrUpdateModeratorOverwrite(id, type, deny) {
     deny = deny.deny;
   }
   if (null == deny) {
-    deny = importAll(dependencyMap[9]).NONE;
+    deny = importAll(3763).NONE;
   }
-  obj.deny = importAll(dependencyMap[8]).remove(deny, type(dependencyMap[10]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
-  const obj2 = importAll(dependencyMap[8]);
+  obj.deny = importAll(483).remove(deny, require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  const obj2 = importAll(483);
   let allow;
   if (null != deny) {
     allow = deny.allow;
   }
   if (null == allow) {
-    allow = importAll(dependencyMap[9]).NONE;
+    allow = importAll(3763).NONE;
   }
-  obj.allow = importAll(dependencyMap[8]).combine(type(dependencyMap[10]).MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
+  obj.allow = importAll(483).combine(require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const isGuildOwner = arg1(dependencyMap[1]).isGuildOwner;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ GuildFeatures: closure_10, Permissions: closure_11 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/stage_channels/StageChannelPermissionUtils.tsx");
+({ GuildFeatures: closure_10, Permissions: closure_11 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelPermissionUtils.tsx");
 
-export const createModeratorOverwrite = function createModeratorOverwrite(id, MEMBER, closure_0) {
+export const createModeratorOverwrite = function createModeratorOverwrite(id, MEMBER, outer3_0) {
   let tmp2;
-  if (null != closure_0) {
-    tmp2 = closure_0.permissionOverwrites[id];
+  if (null != outer3_0) {
+    tmp2 = outer3_0.permissionOverwrites[id];
   }
   return createOrUpdateModeratorOverwrite(id, MEMBER, tmp2);
 };
 export { createOrUpdateModeratorOverwrite };
-export const removeModeratorOverwrite = function removeModeratorOverwrite(id, MEMBER, channel) {
+export const removeModeratorOverwrite = function removeModeratorOverwrite(id, MEMBER, closure_0) {
   let tmp;
-  if (null != channel) {
-    tmp = channel.permissionOverwrites[id];
+  if (null != closure_0) {
+    tmp = closure_0.permissionOverwrites[id];
   }
   const obj = { id, type: MEMBER };
   let deny;
@@ -56,7 +60,7 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (null == deny) {
-    deny = importAll(dependencyMap[9]).NONE;
+    deny = importAll(3763).NONE;
   }
   obj.deny = deny;
   let allow;
@@ -64,39 +68,39 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     allow = tmp.allow;
   }
   if (null == allow) {
-    allow = importAll(dependencyMap[9]).NONE;
+    allow = importAll(3763).NONE;
   }
-  obj.allow = importAll(dependencyMap[8]).remove(allow, MEMBER(dependencyMap[10]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
+  obj.allow = importAll(483).remove(allow, require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   return obj;
 };
 export const isEmptyOverwrite = function isEmptyOverwrite(arg0) {
   let allow;
   let deny;
   ({ allow, deny } = arg0);
-  let equalsResult = importAll(dependencyMap[8]).equals(allow, importAll(dependencyMap[9]).NONE);
+  let equalsResult = importAll(483).equals(allow, importAll(3763).NONE);
   if (equalsResult) {
-    equalsResult = importAll(dependencyMap[8]).equals(deny, importAll(dependencyMap[9]).NONE);
-    const obj2 = importAll(dependencyMap[8]);
+    equalsResult = importAll(483).equals(deny, importAll(3763).NONE);
+    const obj2 = importAll(483);
   }
   return equalsResult;
 };
 export const useCanCreateStageChannelByGuild = function useCanCreateStageChannelByGuild(guildId) {
-  const arg1 = guildId;
-  const items = [closure_8, closure_5, closure_7];
+  const _require = guildId;
+  const items = [closure_8, closure_5, _createForOfIteratorHelperLoose];
   const items1 = [guildId];
-  return arg1(dependencyMap[11]).useStateFromStores(items, () => {
-    const id = id.getId();
-    const guild = guild.getGuild(arg0);
+  return _require(566).useStateFromStores(items, () => {
+    const id = outer1_5.getId();
+    const guild = outer1_7.getGuild(guildId);
     let tmp3 = null != guild;
     if (tmp3) {
       const features = guild.features;
-      const tmp5 = !features.has(constants.COMMUNITY);
+      const tmp5 = !features.has(outer1_10.COMMUNITY);
       let tmp6 = !tmp5;
       if (!tmp5) {
-        const tmp8 = !callback(guild, id);
+        const tmp8 = !outer1_4(guild, id);
         let canResult = !tmp8;
         if (tmp8) {
-          canResult = closure_8.can(arg0(closure_2[10]).CREATE_STAGE_CHANNEL_PERMISSIONS, guild);
+          canResult = outer1_8.can(guildId(outer1_2[10]).CREATE_STAGE_CHANNEL_PERMISSIONS, guild);
         }
         tmp6 = canResult;
       }
@@ -106,34 +110,34 @@ export const useCanCreateStageChannelByGuild = function useCanCreateStageChannel
   }, items1);
 };
 export const useCanUpdateStageChannelModerators = function useCanUpdateStageChannelModerators(id) {
-  const arg1 = id;
-  const items = [closure_8, closure_7, closure_6];
+  const _require = id;
+  const items = [closure_8, _createForOfIteratorHelperLoose, closure_6];
   const items1 = [id];
-  return arg1(dependencyMap[11]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(arg0);
+  return _require(566).useStateFromStores(items, () => {
+    const channel = outer1_6.getChannel(id);
     let guildId;
     if (null != channel) {
       guildId = channel.getGuildId();
     }
-    let tmp3 = !closure_8.can(constants.ADMINISTRATOR, guild.getGuild(guildId));
+    let tmp3 = !outer1_8.can(outer1_11.ADMINISTRATOR, outer1_7.getGuild(guildId));
     if (tmp3) {
-      tmp3 = !closure_8.can(constants.MANAGE_ROLES, channel, undefined, undefined, true);
+      tmp3 = !outer1_8.can(outer1_11.MANAGE_ROLES, channel, undefined, undefined, true);
     }
     let canResult = !tmp3;
     if (tmp3) {
-      canResult = closure_8.can(arg0(closure_2[10]).UPDATE_STAGE_CHANNEL_MODERATOR_PERMISSIONS, channel);
+      canResult = outer1_8.can(id(outer1_2[10]).UPDATE_STAGE_CHANNEL_MODERATOR_PERMISSIONS, channel);
     }
     return canResult;
   }, items1);
 };
 export const useCanModerateRequestToSpeak = function useCanModerateRequestToSpeak(id) {
-  const arg1 = id;
+  const _require = id;
   const items = [closure_6, closure_8];
   const items1 = [id];
-  return arg1(dependencyMap[11]).useStateFromStores(items, () => {
-    let canResult = null != arg0;
+  return _require(566).useStateFromStores(items, () => {
+    let canResult = null != closure_0;
     if (canResult) {
-      canResult = closure_8.can(constants.MUTE_MEMBERS, channel.getChannel(arg0));
+      canResult = outer1_8.can(outer1_11.MUTE_MEMBERS, outer1_6.getChannel(closure_0));
     }
     return canResult;
   }, items1);
@@ -148,7 +152,7 @@ export const canLurkerListen = function canLurkerListen(channel) {
       const tmp7 = !_public.isPublic(channel.id);
       let canResult = !tmp7;
       if (!tmp7) {
-        canResult = closure_8.can(arg1(dependencyMap[10]).JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
+        canResult = closure_8.can(require(1356) /* Permissions */.JOIN_VOCAL_CHANNEL_PERMISSIONS, channel);
       }
       tmp5 = canResult;
     }

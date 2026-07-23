@@ -1,14 +1,14 @@
-// Module ID: 8650
-// Function ID: 68476
+// Module ID: 8657
+// Function ID: 68516
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42, 2]
 
-// Module 8650 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "DCDImageWithThumbhashPlaceholderView", validAttributes: {} };
-const _module = require(dependencyMap[0]);
-const value = _module.get("DCDImageWithThumbhashPlaceholderView", () => obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ImageWithThumbhashPlaceholderNativeComponent.tsx");
+// Module 8657 (__INTERNAL_VIEW_CONFIG)
+import get from "get";
+
+const obj = { uiViewClassName: "DCDImageWithThumbhashPlaceholderView", validAttributes: { uri: true, placeholder: true, placeholderVersion: true, alt: true } };
+const value = get.get("DCDImageWithThumbhashPlaceholderView", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ImageWithThumbhashPlaceholderNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

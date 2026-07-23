@@ -1,65 +1,64 @@
-// Module ID: 16016
-// Function ID: 122881
+// Module ID: 16133
+// Function ID: 125054
 // Name: DiscoverabilityLandingScene
-// Dependencies: []
+// Dependencies: [31, 27, 11706, 1849, 653, 33, 4130, 689, 5084, 1456, 566, 11713, 668, 16134, 11733, 11726, 480, 11725, 5519, 1212, 2]
 
-// Module 16016 (DiscoverabilityLandingScene)
+// Module 16133 (DiscoverabilityLandingScene)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { useContactSyncModalStore } from "initialValues";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function DiscoverabilityLandingScene(onComplete) {
   onComplete = onComplete.onComplete;
-  const arg1 = onComplete;
-  let closure_6;
-  const navigation = arg1(dependencyMap[9]).useNavigation();
-  const importDefault = navigation;
-  const obj = arg1(dependencyMap[9]);
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items, () => {
-    const currentUser = tmp4.getCurrentUser();
+  let c6;
+  const navigation = onComplete(stateFromStores[9]).useNavigation();
+  let obj = onComplete(stateFromStores[9]);
+  const items = [c6];
+  stateFromStores = onComplete(stateFromStores[10]).useStateFromStores(items, () => {
+    const currentUser = _undefined.getCurrentUser();
     let phone;
     if (null != currentUser) {
       phone = currentUser.phone;
     }
     return phone;
   });
-  const dependencyMap = stateFromStores;
-  const tmp3 = useContactSyncModalStore();
+  const tmp3 = allowEmail();
   const allowPhone = tmp3.allowPhone;
-  const React = allowPhone;
   const name = tmp3.name;
-  const View = name;
-  const allowEmail = tmp3.allowEmail;
-  const useContactSyncModalStore = allowEmail;
+  allowEmail = tmp3.allowEmail;
   let tmp4 = allowPhone;
   if (!allowPhone) {
     tmp4 = allowEmail;
   }
-  closure_6 = tmp4;
+  c6 = tmp4;
   const items1 = [allowPhone, allowEmail, tmp4, stateFromStores, name, navigation, onComplete];
-  const onNext = React.useCallback(() => {
+  const onNext = allowPhone.useCallback(() => {
     let obj = navigation(stateFromStores[11]);
     obj = { phone: allowPhone, email: allowEmail };
     const result = obj.updateDiscoverability(obj);
-    if (tmp4) {
+    if (c6) {
       if (null != stateFromStores) {
         if (allowPhone) {
           if (null == name) {
             navigation.push(onComplete(stateFromStores[12]).DiscoverabilityScenes.NAME);
           }
         }
-        const tmp4 = allowPhone;
       }
     }
     onComplete();
   }, items1);
-  return jsx(importDefault(dependencyMap[13]), { onNext });
+  return jsx(navigation(stateFromStores[13]), { onNext });
 }
 function DiscoverabilityNameScene(onComplete) {
   let allowPhone;
   let name;
   onComplete = onComplete.onComplete;
-  const arg1 = onComplete;
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   ({ name, allowPhone } = useContactSyncModalStore());
-  const importDefault = allowPhone;
   const items = [allowPhone, onComplete];
   const effect = React.useEffect(() => {
     if (!allowPhone) {
@@ -69,7 +68,7 @@ function DiscoverabilityNameScene(onComplete) {
   const items1 = [onComplete];
   let obj = { style: tmp.container };
   const callback = React.useCallback((arg0) => {
-    const result = onComplete(closure_2[14]).startContactSyncForDiscoverability(arg0);
+    const result = onComplete(outer1_2[14]).startContactSyncForDiscoverability(arg0);
     onComplete();
   }, items1);
   obj = { onNext: callback, loading: false };
@@ -82,21 +81,23 @@ function DiscoverabilityNameScene(onComplete) {
     str = name;
   }
   obj.initialName = str;
-  obj.children = tmp7(importDefault(dependencyMap[15]), obj);
+  obj.children = tmp7(allowPhone(11726), obj);
   return tmp5(tmp6, obj);
 }
 class RedesignDiscoverabilityModal {
   constructor(arg0) {
     onComplete = global.route.params.onComplete;
-    arg1 = onComplete;
-    tmp = closure_8();
+    tmp = c8();
     obj = { headerStyle: tmp.header };
     items = [];
     items[0] = onComplete;
-    obj.screens = importAll.useMemo(() => function getScreens(arg0) {
+    obj.screens = result.useMemo(() => (function getScreens(arg0) {
+      let closure_0 = arg0;
       let obj = {};
       obj = {
-        impressionName: arg0(closure_2[16]).ImpressionNames.DISCOVERABILITY,
+        ignoreKeyboard: true,
+        impressionName: onComplete(outer2_2[16]).ImpressionNames.DISCOVERABILITY,
+        fullscreen: true,
         headerLeft() {
           return null;
         },
@@ -107,48 +108,44 @@ class RedesignDiscoverabilityModal {
           const obj = { insideNavigator: true };
           const merged = Object.assign(arg0);
           obj["onPress"] = function onPress() {
-            return callback(true);
+            return outer1_0(true);
           };
-          return callback2(callback(closure_2[17]), obj);
+          return outer3_7(outer3_1(outer3_2[17]), obj);
         },
         render() {
-          return callback2(closure_9, { onComplete: arg0 });
+          return outer3_7(outer3_9, { onComplete: closure_0 });
         }
       };
-      obj[arg0(closure_2[12]).DiscoverabilityScenes.LANDING] = obj;
+      obj[onComplete(outer2_2[12]).DiscoverabilityScenes.LANDING] = obj;
       obj = {
-        impressionName: arg0(closure_2[16]).ImpressionNames.DISCOVERABILITY,
+        ignoreKeyboard: true,
+        impressionName: onComplete(outer2_2[16]).ImpressionNames.DISCOVERABILITY,
+        fullscreen: true,
         headerTitle() {
           return null;
         },
         render() {
-          return callback2(closure_10, { onComplete: arg0 });
+          return outer3_7(outer3_10, { onComplete: closure_0 });
         }
       };
-      obj[arg0(closure_2[12]).DiscoverabilityScenes.NAME] = obj;
+      obj[onComplete(outer2_2[12]).DiscoverabilityScenes.NAME] = obj;
       return obj;
-    }(null != onComplete ? onComplete : () => {
+    })(null != onComplete ? onComplete : (() => {
 
-    }), items);
-    obj.initialRouteName = arg1(dependencyMap[12]).DiscoverabilityScenes.LANDING;
-    intl = arg1(dependencyMap[19]).intl;
-    obj.headerBackTitle = intl.string(arg1(dependencyMap[19]).t.13/7kX);
-    return jsx(arg1(dependencyMap[18]).Navigator, obj);
+    })), items);
+    obj.initialRouteName = require("keys").DiscoverabilityScenes.LANDING;
+    intl = require("getSystemLocale").intl;
+    obj.headerBackTitle = intl.string(require("getSystemLocale").t["13/7kX"]);
+    return jsx(require("NavigationStack").Navigator, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const useContactSyncModalStore = arg1(dependencyMap[2]).useContactSyncModalStore;
-let closure_6 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { isArray: null, surrogates: "c7e2eadc5cd55417a6c70f428f65fac7", withSpring: "SlashIcon", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.header = obj;
-obj.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
-let closure_8 = obj.createStyles(obj);
-RedesignDiscoverabilityModal.modalConfig = { animation: arg1(dependencyMap[4]).ModalAnimation.SLIDE_IN_OUT };
-const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/nuf/native/components/RedesignDiscoverabilityModal.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderBottomWidth: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
+_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+const obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+_createForOfIteratorHelperLoose.container = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+RedesignDiscoverabilityModal.modalConfig = { animation: require("ME").ModalAnimation.SLIDE_IN_OUT };
+let result = require("initialValues").fileFinishedImporting("modules/nuf/native/components/RedesignDiscoverabilityModal.tsx");
 
 export default RedesignDiscoverabilityModal;

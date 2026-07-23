@@ -1,61 +1,63 @@
-// Module ID: 11701
-// Function ID: 90878
+// Module ID: 11711
+// Function ID: 90927
 // Name: Steps
-// Dependencies: []
+// Dependencies: [1849, 11706, 11707, 653, 11709, 675, 11712, 2]
 // Exports: trackFlowEnd, trackFlowStart, trackFlowStep
 
-// Module 11701 (Steps)
-let closure_3 = importDefault(dependencyMap[0]);
-const getIsOnboarding = arg1(dependencyMap[1]).getIsOnboarding;
-const ContactPermissions = arg1(dependencyMap[2]).ContactPermissions;
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const obj = { INITIALIZED: "Flow Initialized", LANDING: "Landing", PERMISSION_REQUESTED: "Contacts Permission Requested", NAME_INPUT: "Name Input", SUGGESTIONS_RESULTS: "Suggestions Results", CONTACT_INVITES: "Contact Invites", ADD_PHONE_NUMBER: "Add Phone Number", VERIFY_PHONE_NUMBER: "Verify Phone Number", PASSWORD_CONFIRM: "Password Confirmation", COMPLETE: "Complete" };
-let closure_8 = null;
-let closure_9 = 0;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/contact_sync/native/ContactSyncAnalyticsUtils.tsx");
+// Module 11711 (Steps)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { getIsOnboarding } from "initialValues";
+import { ContactPermissions } from "ContactSyncLandingPage";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+let obj = { INITIALIZED: "Flow Initialized", LANDING: "Landing", PERMISSION_REQUESTED: "Contacts Permission Requested", NAME_INPUT: "Name Input", SUGGESTIONS_RESULTS: "Suggestions Results", CONTACT_INVITES: "Contact Invites", ADD_PHONE_NUMBER: "Add Phone Number", VERIFY_PHONE_NUMBER: "Verify Phone Number", PASSWORD_CONFIRM: "Password Confirmation", COMPLETE: "Complete" };
+let c8 = null;
+let c9 = 0;
+let result = require("ContactSyncLandingPage").fileFinishedImporting("modules/contact_sync/native/ContactSyncAnalyticsUtils.tsx");
 
 export const Steps = obj;
 export const CONTACT_SYNC_ONBOARDING_LOCATION = "Onboarding";
 export const trackFlowStart = function trackFlowStart(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const LANDING = obj.LANDING;
   let closure_9 = Date.now();
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let phone;
   if (null != currentUser) {
     phone = currentUser.phone;
   }
   let closure_1 = null != phone;
-  const obj = arg1(dependencyMap[4]);
+  obj = _require(11709);
   const result = obj.checkContactPermissions();
   result.then((arg0) => {
     let tmp = null;
-    if (arg0 !== constants.NOT_DETERMINED) {
+    if (arg0 !== outer1_5.NOT_DETERMINED) {
       let str = "denied";
-      if (arg0 === constants.AUTHORIZED) {
+      if (arg0 === outer1_5.AUTHORIZED) {
         str = "accepted";
       }
       tmp = str;
     }
-    let obj = callback(closure_2[5]);
+    let obj = callback(outer1_2[5]);
     obj = {};
-    const merged = Object.assign(arg0);
+    const merged = Object.assign(closure_0);
     obj["flow_type"] = "Contact Sync";
-    obj["from_step"] = constants3.INITIALIZED;
-    obj["to_step"] = constants3.LANDING;
+    obj["from_step"] = outer1_7.INITIALIZED;
+    obj["to_step"] = outer1_7.LANDING;
     obj["skip"] = false;
     obj["back"] = false;
     obj["seconds_on_from_step"] = 0;
     obj["has_phone_number"] = callback;
     obj["mobile_contacts_permission"] = tmp;
-    obj.track(constants2.CONTACT_SYNC_FLOW_KEY, obj);
+    obj.track(outer1_6.CONTACT_SYNC_FLOW_KEY, obj);
   });
 };
 export const trackFlowStep = function trackFlowStep(ADD_PHONE_NUMBER, skip, arg2, location) {
   const tmp = getIsOnboarding();
   const timestamp = Date.now();
-  const result = (timestamp - closure_9) / 1000;
-  let obj = importDefault(dependencyMap[5]);
+  const result = (timestamp - timestamp) / 1000;
+  let obj = importDefault(675);
   obj = {};
   const merged = Object.assign(location);
   let str = "Onboarding";
@@ -76,15 +78,14 @@ export const trackFlowStep = function trackFlowStep(ADD_PHONE_NUMBER, skip, arg2
   obj.track(AnalyticEvents.CONTACT_SYNC_FLOW_KEY, obj);
   if (tmp) {
     obj = { skip };
-    skip(dependencyMap[6]).trackNUFStep(closure_8, ADD_PHONE_NUMBER, obj);
-    const obj3 = skip(dependencyMap[6]);
+    require(11712) /* trackNUFStep */.trackNUFStep(closure_8, ADD_PHONE_NUMBER, obj);
+    const obj3 = require(11712) /* trackNUFStep */;
   }
-  closure_9 = timestamp;
   closure_8 = ADD_PHONE_NUMBER;
 };
 export const trackFlowEnd = function trackFlowEnd(flag, location) {
   const timestamp = Date.now();
-  let obj = importDefault(dependencyMap[5]);
+  let obj = importDefault(675);
   obj = {};
   const merged = Object.assign(location);
   let str = "Onboarding";
@@ -97,11 +98,11 @@ export const trackFlowEnd = function trackFlowEnd(flag, location) {
   }
   obj["location"] = str;
   obj["flow_type"] = "Contact Sync";
-  obj["from_step"] = closure_8;
+  obj["from_step"] = c8;
   obj["to_step"] = obj.COMPLETE;
   obj["skip"] = flag;
   obj["back"] = false;
-  obj["seconds_on_from_step"] = (timestamp - closure_9) / 1000;
+  obj["seconds_on_from_step"] = (timestamp - c9) / 1000;
   obj.track(AnalyticEvents.CONTACT_SYNC_FLOW_KEY, obj);
-  closure_8 = null;
+  c8 = null;
 };

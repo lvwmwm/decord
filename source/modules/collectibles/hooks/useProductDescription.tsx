@@ -1,53 +1,55 @@
-// Module ID: 8756
-// Function ID: 69243
+// Module ID: 8763
+// Function ID: 69284
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 1212, 1876, 2]
 // Exports: useProductDescription
 
-// Module 8756 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8763 (_createForOfIteratorHelperLoose)
+import { useMemo } from "result";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,7 +93,7 @@ function getBundleDescription(bundledProducts) {
     flag = false;
   }
   if (flag) {
-    const intl5 = require(dependencyMap[1]).intl;
+    const intl5 = require(1212) /* getSystemLocale */.intl;
     let obj = {};
     bundledProducts = bundledProducts.bundledProducts;
     let length;
@@ -99,7 +101,7 @@ function getBundleDescription(bundledProducts) {
       length = bundledProducts.length;
     }
     obj.num = length;
-    return intl5.formatToPlainString(require(dependencyMap[1]).t./0Yndu, obj);
+    return intl5.formatToPlainString(require(1212) /* getSystemLocale */.t["/0Yndu"], obj);
   } else {
     const items = [];
     let bundledProducts1 = bundledProducts.bundledProducts;
@@ -115,35 +117,35 @@ function getBundleDescription(bundledProducts) {
       do {
         let value = iter2.value;
         let type = value.type;
-        let tmp4 = closure_0;
-        let tmp5 = closure_1;
-        if (closure_0(closure_1[2]).CollectiblesItemType.AVATAR_DECORATION === type) {
-          let tmp9 = closure_0;
-          let tmp10 = closure_1;
-          let intl2 = closure_0(closure_1[1]).intl;
+        let tmp4 = require;
+        let tmp5 = dependencyMap;
+        if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+          let tmp9 = require;
+          let tmp10 = dependencyMap;
+          let intl2 = require(1212) /* getSystemLocale */.intl;
           obj = { itemName: value.name };
-          let arr = items.push(intl2.formatToPlainString(closure_0(closure_1[1]).t.Ntv9Jt, obj));
+          let arr = items.push(intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.Ntv9Jt, obj));
           let flag4 = flag2;
         } else {
-          let tmp22 = closure_0;
-          let tmp23 = closure_1;
-          if (closure_0(closure_1[2]).CollectiblesItemType.PROFILE_EFFECT === type) {
-            let tmp6 = closure_0;
-            let tmp7 = closure_1;
-            let intl = closure_0(closure_1[1]).intl;
+          let tmp22 = require;
+          let tmp23 = dependencyMap;
+          if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+            let tmp6 = require;
+            let tmp7 = dependencyMap;
+            let intl = require(1212) /* getSystemLocale */.intl;
             obj = { itemName: value.name };
-            arr = items.push(intl.formatToPlainString(closure_0(closure_1[1]).t.3Y8q7a, obj));
+            arr = items.push(intl.formatToPlainString(require(1212) /* getSystemLocale */.t["3Y8q7a"], obj));
             flag4 = flag2;
           } else {
-            let tmp24 = closure_0;
-            let tmp25 = closure_1;
+            let tmp24 = require;
+            let tmp25 = dependencyMap;
             flag4 = flag2;
-            if (closure_0(closure_1[2]).CollectiblesItemType.NAMEPLATE === type) {
-              let tmp26 = closure_0;
-              let tmp27 = closure_1;
-              let intl6 = closure_0(closure_1[1]).intl;
+            if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+              let tmp26 = require;
+              let tmp27 = dependencyMap;
+              let intl6 = require(1212) /* getSystemLocale */.intl;
               let obj1 = { itemName: value.name };
-              let arr1 = items.push(intl6.formatToPlainString(closure_0(closure_1[1]).t.2keXky, obj1));
+              let arr1 = items.push(intl6.formatToPlainString(require(1212) /* getSystemLocale */.t["2keXky"], obj1));
               flag4 = true;
             }
           }
@@ -157,62 +159,59 @@ function getBundleDescription(bundledProducts) {
     const join = items.join;
     if (flag3) {
       const replaced = join(", ").replace(/, ([^,]*)$/, " & $1");
-      const intl4 = require(dependencyMap[1]).intl;
+      const intl4 = require(1212) /* getSystemLocale */.intl;
       const obj2 = { joinedItems: replaced };
-      return intl4.formatToPlainString(require(dependencyMap[1]).t.Ofrqj6, obj2);
+      return intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.Ofrqj6, obj2);
     } else {
       const joined = join(" & ");
-      const intl3 = require(dependencyMap[1]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       const obj3 = { joinedItems: joined };
-      return intl3.formatToPlainString(require(dependencyMap[1]).t.Ofrqj6, obj3);
+      return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.Ofrqj6, obj3);
     }
     const tmp = _createForOfIteratorHelperLoose;
   }
 }
-const useMemo = require(dependencyMap[0]).useMemo;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/collectibles/hooks/useProductDescription.tsx");
+const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductDescription.tsx");
 
 export const useProductDescription = function useProductDescription(product) {
   let flag = arg1;
-  const require = product;
+  let closure_0 = product;
   if (arg1 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   const items = [product, flag];
-  return useMemo((self) => {
-    if (null != self) {
-      if (null != self.summary) {
-        if ("" !== self.summary) {
-          if (self.type === self(flag[2]).CollectiblesItemType.BUNDLE) {
-            const summary = self.summary;
+  return useMemo(() => {
+    if (null != product) {
+      if (null != product.summary) {
+        if ("" !== product.summary) {
+          if (product.type === product(flag[2]).CollectiblesItemType.BUNDLE) {
+            const summary = product.summary;
             if (summary.includes("{joinedItems}")) {
-              return self.summary.replace("{joinedItems}", callback(self, flag));
+              return product.summary.replace("{joinedItems}", outer1_5(product, flag));
             }
           }
-          return self.summary;
+          return product.summary;
         }
       }
     }
     let type;
-    if (null != self) {
-      type = self.type;
+    if (null != product) {
+      type = product.type;
     }
-    if (self(flag[2]).CollectiblesItemType.AVATAR_DECORATION === type) {
-      const intl4 = self(flag[1]).intl;
-      return intl4.string(self(flag[1]).t.3lv7q2);
-    } else if (self(flag[2]).CollectiblesItemType.PROFILE_EFFECT === type) {
-      const intl3 = self(flag[1]).intl;
-      return intl3.string(self(flag[1]).t.VhJL72);
-    } else if (self(flag[2]).CollectiblesItemType.NAMEPLATE === type) {
-      const intl2 = self(flag[1]).intl;
-      return intl2.string(self(flag[1]).t.ik37EZ);
-    } else if (self(flag[2]).CollectiblesItemType.PROFILE_FRAME === type) {
-      const intl = self(flag[1]).intl;
-      return intl.string(self(flag[1]).t.fWzWPp);
-    } else if (self(flag[2]).CollectiblesItemType.BUNDLE === type) {
-      return callback(self, flag);
+    if (product(flag[2]).CollectiblesItemType.AVATAR_DECORATION === type) {
+      const intl4 = product(flag[1]).intl;
+      return intl4.string(product(flag[1]).t["3lv7q2"]);
+    } else if (product(flag[2]).CollectiblesItemType.PROFILE_EFFECT === type) {
+      const intl3 = product(flag[1]).intl;
+      return intl3.string(product(flag[1]).t.VhJL72);
+    } else if (product(flag[2]).CollectiblesItemType.NAMEPLATE === type) {
+      const intl2 = product(flag[1]).intl;
+      return intl2.string(product(flag[1]).t.ik37EZ);
+    } else if (product(flag[2]).CollectiblesItemType.PROFILE_FRAME === type) {
+      const intl = product(flag[1]).intl;
+      return intl.string(product(flag[1]).t.fWzWPp);
+    } else if (product(flag[2]).CollectiblesItemType.BUNDLE === type) {
+      return outer1_5(product, flag);
     } else {
       return "";
     }

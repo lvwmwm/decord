@@ -1,16 +1,17 @@
-// Module ID: 13985
-// Function ID: 106255
+// Module ID: 14099
+// Function ID: 108411
 // Name: useRestorePurchases
-// Dependencies: []
+// Dependencies: [5, 57, 31, 3, 6658, 2]
 // Exports: default
 
-// Module 13985 (useRestorePurchases)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-let importDefaultResult = importDefault(dependencyMap[3]);
+// Module 14099 (useRestorePurchases)
+import set from "set";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import importDefaultResult from "timestamp";
+
 importDefaultResult = new importDefaultResult("useRestorePurchases");
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/billing/native/subscription/useRestorePurchases.tsx");
+const result = require("result").fileFinishedImporting("modules/billing/native/subscription/useRestorePurchases.tsx");
 
 export default function useRestorePurchases() {
   let obj = arg0;
@@ -21,18 +22,16 @@ export default function useRestorePurchases() {
   if (flag === undefined) {
     flag = true;
   }
-  const importDefault = flag;
   let closure_1;
-  let closure_2;
-  function _restore(closure_4, arg1) {
+  let set;
+  function _restore(result, arg1) {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = callback(tmp);
-    const _restore = obj;
     return obj(...arguments);
   }
   closure_1 = React.useRef(false);
-  const tmp = _restore(React.useState(false), 2);
-  closure_2 = tmp[1];
+  let tmp = _restore(React.useState(false), 2);
+  set = tmp[1];
   const items = [flag];
   const effect = React.useEffect(() => {
     let tmp = flag;
@@ -40,9 +39,9 @@ export default function useRestorePurchases() {
       tmp = !ref.current;
     }
     if (tmp) {
-      function restore() {
-        return callback(...arguments);
-      }();
+      (function restore() {
+        return outer1_3(...arguments);
+      })();
     }
   }, items);
   return tmp[0];

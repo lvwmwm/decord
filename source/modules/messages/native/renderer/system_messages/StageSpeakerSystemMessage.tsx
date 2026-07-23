@@ -1,21 +1,20 @@
-// Module ID: 7709
-// Function ID: 61416
+// Module ID: 7715
+// Function ID: 61453
 // Name: createStageSpeakerSystemMessage
-// Dependencies: []
+// Dependencies: [7649, 1212, 7651, 7652, 2]
 // Exports: createStageSpeakerSystemMessage
 
-// Module 7709 (createStageSpeakerSystemMessage)
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageSpeakerSystemMessage.tsx");
+// Module 7715 (createStageSpeakerSystemMessage)
+const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/StageSpeakerSystemMessage.tsx");
 
 export const createStageSpeakerSystemMessage = function createStageSpeakerSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(dependencyMap[0]);
+  let obj = require(7649) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   obj = {};
-  const intl = require(dependencyMap[1]).intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(dependencyMap[2])({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
-  obj.content = intl.formatToParts(require(dependencyMap[1]).t.V4uCm4, obj);
-  const merged = Object.assign(importDefault(dependencyMap[3])(roleStyle));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7651)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.V4uCm4, obj);
+  const merged = Object.assign(importDefault(7652)(roleStyle));
   return obj;
 };

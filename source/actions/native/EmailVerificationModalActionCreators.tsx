@@ -1,11 +1,11 @@
-// Module ID: 9174
-// Function ID: 71867
-// Dependencies: []
+// Module ID: 9181
+// Function ID: 71908
+// Dependencies: [653, 675, 4337, 9182, 1934, 686, 2]
 
-// Module 9174
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("actions/native/EmailVerificationModalActionCreators.tsx");
+// Module 9181
+import { AnalyticEvents } from "ME";
+
+const result = require("module_4337").fileFinishedImporting("actions/native/EmailVerificationModalActionCreators.tsx");
 
 export default {
   open() {
@@ -14,15 +14,15 @@ export default {
       flag = false;
     }
     if (flag) {
-      let obj = importDefault(dependencyMap[1]);
+      let obj = importDefault(675);
       obj.track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
     }
     obj = { isChangeEmail: flag };
-    importDefault(dependencyMap[2]).pushLazy(require(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), obj, "EMAIL_VERIFICATION_MODAL_KEY");
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(9182, dependencyMap.paths), obj, "EMAIL_VERIFICATION_MODAL_KEY");
   },
   close() {
-    importDefault(dependencyMap[5]).wait(() => {
-      callback(closure_2[2]).popWithKey("EMAIL_VERIFICATION_MODAL_KEY");
+    importDefault(686).wait(() => {
+      outer1_1(outer1_2[2]).popWithKey("EMAIL_VERIFICATION_MODAL_KEY");
     });
   }
 };

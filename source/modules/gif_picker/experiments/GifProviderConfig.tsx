@@ -1,23 +1,25 @@
-// Module ID: 9570
-// Function ID: 74592
+// Module ID: 9577
+// Function ID: 74633
 // Name: getGifProviderConfig
-// Dependencies: []
+// Dependencies: [3, 9578, 9579, 2]
 // Exports: getExperimentContext, getProviderForAPIRequest
 
-// Module 9570 (getGifProviderConfig)
+// Module 9577 (getGifProviderConfig)
+import importDefaultResult from "set";
+
+const require = arg1;
 function getGifProviderConfig() {
-  const GifProvidersExperiment = arg1(dependencyMap[1]).GifProvidersExperiment;
+  const GifProvidersExperiment = require(9578) /* apexExperiment */.GifProvidersExperiment;
   const config = GifProvidersExperiment.getConfig({ location: "gif_picker" });
   return { enabled: config.enableMetrics, userProvider: config.provider, sendProviderToAPI: true, fallbackProvider: config.fallbackProvider };
 }
-let importDefaultResult = importDefault(dependencyMap[0]);
 importDefaultResult = new importDefaultResult("GifProviderConfig");
-let closure_3 = "tenor";
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/gif_picker/experiments/GifProviderConfig.tsx");
+const tenor = "tenor";
+const result = require("items").fileFinishedImporting("modules/gif_picker/experiments/GifProviderConfig.tsx");
 
 export { getGifProviderConfig };
 export const getProviderForAPIRequest = function getProviderForAPIRequest() {
-  const GifProvidersExperiment = arg1(dependencyMap[1]).GifProvidersExperiment;
+  const GifProvidersExperiment = require(9578) /* apexExperiment */.GifProvidersExperiment;
   return GifProvidersExperiment.getConfig({ location: "gif_picker" }).provider;
 };
 export const getExperimentContext = function getExperimentContext() {
@@ -26,7 +28,7 @@ export const getExperimentContext = function getExperimentContext() {
   if (null != tmp.userProvider) {
     let userProvider = tmp2.userProvider;
   } else {
-    userProvider = closure_3;
+    userProvider = tenor;
   }
   obj.provider = userProvider;
   obj.enabled = tmp.enabled;

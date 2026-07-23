@@ -1,10 +1,33 @@
-// Module ID: 16128
-// Function ID: 124305
+// Module ID: 16245
+// Function ID: 126478
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1857, 3767, 1849, 653, 33, 4130, 689, 1395, 1392, 4814, 3976, 5470, 4126, 16228, 1212, 3969, 1273, 1387, 4320, 4312, 3712, 1327, 665, 9644, 5151, 5167, 16237, 4660, 4098, 8492, 13574, 3842, 566, 2]
 
-// Module 16128 (_isNativeReflectConstruct)
+// Module 16245 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ensureAvatarSource from "ensureAvatarSource";
+import getPlatformUserUrl from "getPlatformUserUrl";
+import AccessibilityAnnouncer from "AccessibilityAnnouncer";
+import importAllResult from "AppliedForumTag";
+import { View } from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "getCardBackgroundToken";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult1 from "initialize";
+
 let Fonts;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,14 +43,14 @@ function getUserAvatarSource(arg0, action, guildId) {
       if (action.action !== constants.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
         if (action.action !== constants.AUTO_MODERATION_QUARANTINE_USER) {
           if (null != action.options.integration_type) {
-            const value = importDefault(dependencyMap[17]).get(action.options.integration_type);
+            const value = importDefault(4814).get(action.options.integration_type);
             if (null != value) {
               const icon = value.icon;
-              const obj2 = action(dependencyMap[18]);
-              const tmp9 = action(dependencyMap[18]).isThemeDark(arg0) ? icon.darkPNG : icon.lightPNG;
-              return action(dependencyMap[16]).makeSource(tmp9);
+              const obj2 = require(3976) /* AccessibilityAnnouncer */;
+              const tmp9 = require(3976) /* AccessibilityAnnouncer */.isThemeDark(arg0) ? icon.darkPNG : icon.lightPNG;
+              return require(1392) /* getAvatarURL */.makeSource(tmp9);
             }
-            const obj = importDefault(dependencyMap[17]);
+            const obj = importDefault(4814);
           }
           let tmp4;
           if (null != guildId) {
@@ -43,79 +66,67 @@ function getUserAvatarSource(arg0, action, guildId) {
       }
     }
   }
-  const obj4 = action(dependencyMap[15]);
-  const obj5 = action(dependencyMap[16]);
-  return obj4.ensureAvatarSource(obj5.makeSource(action(dependencyMap[15]).getAutomodAvatarURL()));
+  const obj4 = require(1395) /* ensureAvatarSource */;
+  const obj5 = require(1392) /* getAvatarURL */;
+  return obj4.ensureAvatarSource(obj5.makeSource(require(1395) /* ensureAvatarSource */.getAutomodAvatarURL()));
 }
 function ApplicationHook(applicationId) {
-  let obj = arg1(dependencyMap[19]);
+  let obj = require(5470) /* useGetOrFetchApplications */;
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId);
   let tmp2 = null;
   if (null != getOrFetchApplication) {
-    obj = { cachedAt: 1, edpbxy: 1, children: getOrFetchApplication.name };
-    tmp2 = callback3(arg1(dependencyMap[20]).Text, obj);
+    obj = { variant: "text-md/normal", color: "text-default", children: getOrFetchApplication.name };
+    tmp2 = callback3(require(4126) /* Text */.Text, obj);
   }
   return tmp2;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-const View = arg1(dependencyMap[6]).View;
-const importDefaultResult = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-({ AuditLogTargetTypes: closure_15, AuditLogActionTypes: closure_16, AuditLogActions: closure_17, Fonts, AuditLogChangeKeys: closure_18 } = arg1(dependencyMap[11]));
-const tmp4 = arg1(dependencyMap[11]);
-({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[12]));
-let obj = arg1(dependencyMap[13]);
-obj = { container: { 0: 1350123793, 0: 275906562, 0: -738197503 }, rowContainer: { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true }, titleContainer: { "Bool(false)": null, "Bool(false)": null }, title: { marginHorizontal: 8 } };
-obj = { color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
-obj.discriminator = obj;
-obj.avatar = { ti: "isArray", scales: "FOCUS_EXPANDED_CONTROLS", flexDirection: "COLLECTIBLES_SHOP_CARD_HEIGHT" };
-const obj1 = { y: "accessibilityRole", openConversationNavigator: "filter", y: "memo", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
-obj.timestamp = obj1;
-const tmp5 = arg1(dependencyMap[12]);
-obj.arrow = { tintColor: importDefault(dependencyMap[14]).colors.INTERACTIVE_TEXT_DEFAULT };
-const items = [{ rotate: "90deg" }];
-obj.rotate90 = { transform: items };
-const obj2 = { tintColor: importDefault(dependencyMap[14]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.changesContainer = { marginTop: importDefault(dependencyMap[14]).space.PX_4, padding: importDefault(dependencyMap[14]).space.PX_8, borderRadius: importDefault(dependencyMap[14]).radii.md, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_MOD_MUTED };
-obj.changeRow = {};
-obj.changeNumberText = { fontFamily: Fonts.CODE_BOLD };
-const obj4 = { flexWrap: "isArray", columnGap: "accessibilityRole", rowGap: "useStateFromStores", color: importDefault(dependencyMap[14]).unsafe_rawColors.PRIMARY_400 };
-obj.changeItemText = obj4;
-const obj5 = { "Null": "Array", "Null": "isArray", "Null": "key", borderColor: importDefault(dependencyMap[14]).unsafe_rawColors.TRANSPARENT };
-obj.colorHook = obj5;
-obj.colorsHook = { fontFamily: Fonts.PRIMARY_MEDIUM };
-obj.changeItemContent = {};
-obj.changeItemTextContainer = { "Null": "ref", "Null": "t", "Null": "Text" };
-obj.forumTag = { "Null": null, "Null": null, "Null": null };
-obj.imageEmoji = { hideWhenScrolling: "<string:1912602975>", autoCapitalize: "height" };
-obj.textEmoji = {};
-let closure_21 = obj.createLegacyClassComponentStyles(obj);
-const tmp6 = (PureComponent) => {
+({ AuditLogTargetTypes: closure_15, AuditLogActionTypes: closure_16, AuditLogActions: closure_17, Fonts, AuditLogChangeKeys: closure_18 } = ME);
+({ jsx: closure_19, jsxs: closure_20 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { marginHorizontal: 8, marginVertical: 4, borderRadius: 3 }, rowContainer: { flex: 1, flexDirection: "row", alignItems: "center" }, titleContainer: { marginRight: 24, flex: 1 }, title: { marginHorizontal: 8 } };
+_createForOfIteratorHelperLoose = { fontSize: 12, lineHeight: 30, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400 };
+_createForOfIteratorHelperLoose.discriminator = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.avatar = { marginLeft: 10, height: 32, width: 32 };
+let obj1 = { fontSize: 12, marginHorizontal: 8, marginTop: 8, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400 };
+_createForOfIteratorHelperLoose.timestamp = obj1;
+let obj2 = { height: 13, width: 8, marginRight: 8, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.arrow = obj2;
+let items = [{ rotate: "90deg" }];
+_createForOfIteratorHelperLoose.rotate90 = { transform: items };
+_createForOfIteratorHelperLoose.changesContainer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, padding: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
+_createForOfIteratorHelperLoose.changeRow = { flexDirection: "row", flex: 1, alignItems: "flex-start" };
+let obj4 = { marginRight: 10, fontFamily: Fonts.CODE_BOLD, lineHeight: 24 };
+_createForOfIteratorHelperLoose.changeNumberText = obj4;
+let obj5 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400, alignItems: "baseline", fontSize: 14 };
+_createForOfIteratorHelperLoose.changeItemText = obj5;
+let obj6 = { height: 10, width: 10, borderRadius: 5, borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.TRANSPARENT };
+_createForOfIteratorHelperLoose.colorHook = obj6;
+let obj7 = { display: "flex", flexDirection: "row", fontFamily: Fonts.PRIMARY_MEDIUM, justifyContent: "center", alignItems: "center", marginTop: -2 };
+_createForOfIteratorHelperLoose.colorsHook = obj7;
+_createForOfIteratorHelperLoose.changeItemContent = { flex: 1, alignItems: "flex-start" };
+_createForOfIteratorHelperLoose.changeItemTextContainer = { alignItems: "center", flexDirection: "row", lineHeight: 24 };
+_createForOfIteratorHelperLoose.forumTag = { height: "auto", paddingVertical: 0, paddingHorizontal: 4 };
+_createForOfIteratorHelperLoose.imageEmoji = { height: 14, width: 14 };
+_createForOfIteratorHelperLoose.textEmoji = { fontSize: 14, lineHeight: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+const tmp6 = ((PureComponent) => {
   class AuditLog {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_4(this, AuditLog);
+      tmp = outer1_4(this, apply);
       items1 = [...items];
-      obj = closure_7(AuditLog);
-      tmp2 = closure_6;
-      if (closure_22()) {
+      obj = outer1_7(apply);
+      tmp2 = outer1_6;
+      if (outer1_22()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items1, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items1, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      AuditLog = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.onHeaderClick = () => {
         const props = tmp2Result.props;
         props.onHeaderClick(props.log);
@@ -123,87 +134,87 @@ const tmp6 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = AuditLog;
   callback2(AuditLog, PureComponent);
   let obj = {
     key: "renderTitle",
     value() {
-      const tmp = callback6(this.context);
+      const tmp = outer1_21(this.context);
       const AuditLog = tmp;
       const log = this.props.log;
       const user = log.user;
       const target = log.target;
       let subtarget = log.options;
-      let obj = user(target[21]);
+      let obj = outer1_2(outer1_3[21]);
       const changeTitle = obj.getChangeTitle(log);
       if (null == changeTitle) {
         return null;
       } else {
-        obj = { alignSelf: 278528.4455614287, justifyContent: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001327944972994, alignItems: -87816669682240180000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: -508692516418188600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.title };
-        const intl = AuditLog(target[22]).intl;
+        obj = { style: tmp.title, accessibilityRole: "header", variant: "text-md/medium", color: "mobile-text-heading-primary" };
+        let intl = AuditLog(outer1_3[22]).intl;
         obj = {
           user,
           target,
           userHook() {
               if (null != user) {
-                let obj = {};
+                let obj = { variant: "text-md/medium", color: "text-default" };
                 obj = { mode: "username" };
-                const items = [log(target[23]).getUserTag(user, obj), ];
+                const items = [outer2_1(outer2_3[23]).getUserTag(user, obj), ];
                 let tmp19 = !user.hasUniqueUsername();
                 if (tmp19) {
-                  const obj1 = { style: tmp.discriminator, children: `#${closure_2.discriminator}` };
-                  tmp19 = callback(tmp(target[24]).LegacyText, obj1);
+                  const obj1 = { style: tmp.discriminator, children: `#${user.discriminator}` };
+                  tmp19 = outer2_19(AuditLog(outer2_3[24]).LegacyText, obj1);
                 }
                 items[1] = tmp19;
                 obj.children = items;
-                return closure_20(tmp(target[20]).Text, obj, "user" + user.id);
+                return outer2_20(AuditLog(outer2_3[20]).Text, obj, "user" + user.id);
               } else if (null != subtarget.integration_type) {
-                obj = log(target[17]);
+                obj = outer2_1(outer2_3[17]);
                 const value = obj.get(subtarget.integration_type);
                 let name;
                 if (null != value) {
                   name = value.name;
                 }
                 if (null == name) {
-                  const intl2 = tmp(target[22]).intl;
-                  name = intl2.string(tmp(target[22]).t.n+olu7);
+                  const intl2 = AuditLog(outer2_3[22]).intl;
+                  name = intl2.string(AuditLog(outer2_3[22]).t["n+olu7"]);
                 }
-                const obj2 = { children: name };
-                return callback(tmp(target[20]).Text, obj2, "integration" + subtarget.integration_type);
+                const obj2 = { variant: "text-md/medium", color: "text-default", children: name };
+                return outer2_19(AuditLog(outer2_3[20]).Text, obj2, "integration" + subtarget.integration_type);
               } else {
-                const intl = tmp(target[22]).intl;
-                return intl.string(tmp(target[22]).t.30mdIx);
+                const intl = AuditLog(outer2_3[22]).intl;
+                return intl.string(AuditLog(outer2_3[22]).t["30mdIx"]);
               }
             },
           targetHook(children) {
-              if (log.targetType === constants.USER) {
-                if (target instanceof closure_12) {
-                  let obj = {};
+              if (log.targetType === outer2_15.USER) {
+                if (target instanceof outer2_12) {
+                  let obj = { variant: "text-md/medium", color: "text-default" };
                   obj = { mode: "username" };
-                  const items = [log(target[23]).getUserTag(target, obj), ];
+                  const items = [outer2_1(outer2_3[23]).getUserTag(target, obj), ];
                   let tmp17 = "0" !== target.discriminator;
                   if (tmp17) {
-                    const obj1 = { style: tmp.discriminator, children: `#${closure_3.discriminator}` };
-                    tmp17 = callback(tmp(target[24]).LegacyText, obj1);
+                    const obj1 = { style: tmp.discriminator, children: `#${target.discriminator}` };
+                    tmp17 = outer2_19(AuditLog(outer2_3[24]).LegacyText, obj1);
                   }
                   items[1] = tmp17;
                   obj.children = items;
-                  let tmp12Result = closure_20(tmp(target[20]).Text, obj, `target${closure_3.id}`);
-                  const obj5 = log(target[23]);
-                  const tmp12 = closure_20;
+                  let tmp12Result = outer2_20(AuditLog(outer2_3[20]).Text, obj, `target${target.id}`);
+                  const obj5 = outer2_1(outer2_3[23]);
+                  const tmp12 = outer2_20;
                 }
                 return tmp12Result;
               }
-              if (log.targetType === constants.GUILD) {
+              if (log.targetType === outer2_15.GUILD) {
                 if ("object" === typeof target) {
-                  obj = tmp(target[25]);
+                  obj = AuditLog(outer2_3[25]);
                   if (obj.isGuildRecord(target)) {
-                    const obj2 = { children: target.name };
-                    tmp12Result = callback(tmp(target[20]).Text, obj2, `target${closure_3.id}`);
+                    const obj2 = { variant: "text-md/medium", color: "text-default", children: target.name };
+                    tmp12Result = outer2_19(AuditLog(outer2_3[20]).Text, obj2, `target${target.id}`);
                   }
                 }
               }
-              tmp12Result = callback(tmp(target[20]).Text, { children }, arg1);
+              const obj3 = { variant: "text-md/medium", color: "text-default", children };
+              tmp12Result = outer2_19(AuditLog(outer2_3[20]).Text, obj3, arg1);
             }
         };
         const count = subtarget.count;
@@ -214,25 +225,26 @@ const tmp6 = (PureComponent) => {
         obj.count = str;
         if (null != subtarget.channel) {
           if ("string" !== typeof subtarget.channel) {
-            const obj4 = AuditLog(target[26]);
-            let channel = obj4.computeChannelName(subtarget.channel, closure_14, closure_13, true);
+            const obj4 = AuditLog(outer1_3[26]);
+            let channel = obj4.computeChannelName(subtarget.channel, outer1_14, outer1_13, true);
           }
           obj.channel = channel;
           obj.channelHook = function channelHook(children) {
-            return callback(tmp(target[20]).Text, { children }, arg1);
+            const obj = { variant: "text-md/medium", color: "text-default", children };
+            return outer2_19(AuditLog(outer2_3[20]).Text, obj, arg1);
           };
           subtarget = subtarget.subtarget;
           obj.subtarget = subtarget;
           obj = intl.format(changeTitle, obj);
           obj.children = obj;
-          tmp3(AuditLog(target[20]).Text, obj);
+          tmp3(AuditLog(outer1_3[20]).Text, obj);
         }
         channel = subtarget.channel;
-        const tmp3 = closure_19;
+        tmp3 = outer1_19;
       }
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "renderRoleUpdate",
     value(newValue) {
@@ -240,8 +252,8 @@ const tmp6 = (PureComponent) => {
       let mapped = null;
       if (Array.isArray(newValue)) {
         mapped = newValue.map((name) => {
-          const obj = { cachedAt: "y", edpbxy: "isArray", children: name.name };
-          return callback2(callback(closure_3[20]).Text, obj, name.id);
+          const obj = { variant: "text-sm/medium", color: "text-muted", children: name.name };
+          return outer2_19(AuditLog(outer2_3[20]).Text, obj, name.id);
         });
       }
       return mapped;
@@ -251,13 +263,13 @@ const tmp6 = (PureComponent) => {
   obj = {
     key: "renderPermissionUpdate",
     value(newValue) {
-      const AuditLog = this;
+      const self = this;
       newValue = newValue.newValue;
       let mapped = null;
       if (Array.isArray(newValue)) {
         mapped = newValue.map((arg0) => {
-          const obj = { cachedAt: "y", edpbxy: "isArray", children: callback(closure_3[21]).getStringForPermission(arg0, self.props.log) };
-          return callback2(self(closure_3[20]).Text, obj, arg0);
+          const obj = { variant: "text-sm/medium", color: "text-muted", children: outer2_2(outer2_3[21]).getStringForPermission(arg0, self.props.log) };
+          return outer2_19(AuditLog(outer2_3[20]).Text, obj, arg0);
         });
       }
       return mapped;
@@ -267,35 +279,37 @@ const tmp6 = (PureComponent) => {
   items[3] = {
     key: "renderChangeDetails",
     value(arg0) {
-      const AuditLog = this;
-      const tmp = callback6(this.context);
+      const self = this;
+      let closure_1 = arg0;
+      let tmp = outer1_21(this.context);
+      let closure_2 = tmp;
       const log = this.props.log;
       if (null == log.changes) {
         return null;
       } else {
-        let closure_4 = 0;
+        let c4 = 0;
         const changes = log.changes;
-        const obj = {
+        let obj = {
           style: tmp.changesContainer,
           children: changes.map((key) => {
-              let obj = tmp(log[21]);
+              let obj = outer2_2(outer2_3[21]);
               if (obj.shouldNotRenderChangeDetail(log, key)) {
                 return null;
               } else {
-                if (log.action === constants3.CHANNEL_UPDATE) {
-                  if (key.key === constants4.TYPE) {
+                if (log.action === outer2_17.CHANNEL_UPDATE) {
+                  if (key.key === outer2_18.TYPE) {
                     obj = {};
                     let oldValue = key.oldValue;
                     if (null == oldValue) {
-                      let obj10 = self(log[27]);
+                      let obj10 = AuditLog(outer2_3[27]);
                       obj = { type: key.oldValue };
                       oldValue = obj10.channelTypeString(obj);
                     }
                     obj.oldValue = oldValue;
                     let newValue2 = key.newValue;
                     if (null == newValue2) {
-                      let obj12 = self(log[27]);
-                      const obj1 = { type: key.newValue };
+                      let obj12 = AuditLog(outer2_3[27]);
+                      let obj1 = { type: key.newValue };
                       newValue2 = obj12.channelTypeString(obj1);
                     }
                     obj.newValue = newValue2;
@@ -303,19 +317,17 @@ const tmp6 = (PureComponent) => {
                     let obj15 = obj;
                   }
                   const oldValue2 = obj15.oldValue;
-                  const self = oldValue2;
                   let newValue = obj15.newValue;
-                  key = newValue;
-                  if (log.action !== constants3.MEMBER_ROLE_UPDATE) {
-                    if (log.action === constants3.INVITE_CREATE) {
+                  if (log.action !== outer2_17.MEMBER_ROLE_UPDATE) {
+                    if (log.action === outer2_17.INVITE_CREATE) {
                       let tmp35Result;
-                      if (null != key[key.key]) {
+                      if (null != newValue[key.key]) {
                         tmp35Result = tmp35(key);
                       }
                       if (null == tmp35Result) {
                         return null;
                       } else {
-                        const intl = self(log[22]).intl;
+                        const intl = AuditLog(outer2_3[22]).intl;
                         const obj2 = { oldValue: oldValue2, newValue };
                         const _Array = Array;
                         let num5 = 0;
@@ -336,10 +348,10 @@ const tmp6 = (PureComponent) => {
                           return null;
                         };
                         obj2.newColorsHook = function newColorsHook(arg0, arg1) {
-                          const obj = { style: closure_2.colorsHook };
-                          const items = [, , ];
+                          let obj = { style: outer1_2.colorsHook };
+                          let items = [, , ];
                           ({ primary_color: arr[0], secondary_color: arr[1], tertiary_color: arr[2] } = newValue);
-                          const found = items.filter(oldValue2(closure_3[29]).isNotNullish);
+                          const found = items.filter(AuditLog(outer3_3[29]).isNotNullish);
                           obj.children = found.map((color) => {
                             let obj = {};
                             obj = { variant: "text-sm/bold" };
@@ -347,54 +359,54 @@ const tmp6 = (PureComponent) => {
                             if (arg1 > 0) {
                               str = ", ";
                             }
-                            const obj3 = callback(closure_3[30]);
-                            const tmp = closure_20;
-                            const tmp2 = callback2;
-                            obj.children = "" + str + callback(closure_3[30]).int2hex(color).toUpperCase() + " ";
-                            const items = [tmp2(callback(closure_3[20]).Text, obj), ];
+                            const obj3 = AuditLog(outer4_3[30]);
+                            const tmp = outer4_20;
+                            const tmp2 = outer4_19;
+                            obj.children = "" + str + AuditLog(outer4_3[30]).int2hex(color).toUpperCase() + " ";
+                            const items = [tmp2(AuditLog(outer4_3[20]).Text, obj), ];
                             obj = {};
-                            const items1 = [colorHook.colorHook, ];
+                            const items1 = [outer2_2.colorHook, ];
                             const obj1 = {};
-                            const str2 = callback(closure_3[30]).int2hex(color);
-                            obj1.backgroundColor = callback(closure_3[30]).int2hex(color);
+                            const str2 = AuditLog(outer4_3[30]).int2hex(color);
+                            obj1.backgroundColor = AuditLog(outer4_3[30]).int2hex(color);
                             items1[1] = obj1;
                             obj.style = items1;
-                            items[1] = callback2(closure_10, obj);
+                            items[1] = outer4_19(outer4_10, obj);
                             obj.children = items;
-                            return tmp(React.Fragment, obj, arg1);
+                            return tmp(outer4_9.Fragment, obj, arg1);
                           });
-                          return callback(closure_10, obj, arg1);
+                          return outer3_19(outer3_10, obj, arg1);
                         };
                         obj2.oldColorHook = function oldColorHook() {
                           return null;
                         };
                         obj2.oldTagHook = function oldTagHook(arg0, arg1) {
-                          return callback(oldValue2(closure_3[31]).AppliedForumTagPill, { tag: oldValue2, containerStyle: closure_2.forumTag, disableEndMargin: true }, arg1);
+                          return outer3_19(AuditLog(outer3_3[31]).AppliedForumTagPill, { tag: oldValue2, containerStyle: outer1_2.forumTag, disableEndMargin: true }, arg1);
                         };
                         obj2.newTagHook = function newTagHook(arg0, arg1) {
-                          return callback(oldValue2(closure_3[31]).AppliedForumTagPill, { tag: newValue, containerStyle: closure_2.forumTag, disableEndMargin: true }, arg1);
+                          return outer3_19(AuditLog(outer3_3[31]).AppliedForumTagPill, { tag: newValue, containerStyle: outer1_2.forumTag, disableEndMargin: true }, arg1);
                         };
                         obj2.oldEmojiHook = function oldEmojiHook(arg0, arg1) {
                           let emojiURL;
                           if (null != oldValue2) {
-                            let obj = newValue(closure_3[16]);
-                            obj = { id: oldValue2 };
+                            let obj = outer3_1(outer3_3[16]);
+                            obj = { id: oldValue2, animated: false, size: 24 };
                             emojiURL = obj.getEmojiURL(obj);
                           }
                           obj = { src: emojiURL, name: oldValue2 };
-                          ({ textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = closure_2);
-                          return callback(newValue(closure_3[32]), obj, arg1);
+                          ({ textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = outer1_2);
+                          return outer3_19(outer3_1(outer3_3[32]), obj, arg1);
                         };
                         obj2.newEmojiHook = function newEmojiHook(arg0, arg1) {
                           let emojiURL;
                           if (null != newValue) {
-                            let obj = newValue(closure_3[16]);
-                            obj = { id: newValue };
+                            let obj = outer3_1(outer3_3[16]);
+                            obj = { id: newValue, animated: false, size: 24 };
                             emojiURL = obj.getEmojiURL(obj);
                           }
                           obj = { src: emojiURL, name: newValue };
-                          ({ textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = closure_2);
-                          return callback(newValue(closure_3[32]), obj, arg1);
+                          ({ textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = outer1_2);
+                          return outer3_19(outer3_1(outer3_3[32]), obj, arg1);
                         };
                         obj2.applicationHook = function applicationHook(arg0, arg1) {
                           const obj = {};
@@ -410,38 +422,38 @@ const tmp6 = (PureComponent) => {
                             application_id = application_id1;
                           }
                           obj.applicationId = application_id;
-                          return closure_19(closure_24, obj, arg1);
+                          return outer3_19(outer3_24, obj, arg1);
                         };
                         const formatResult = intl.format(tmp35Result, obj2);
                         if (null == formatResult) {
                           return null;
                         } else {
                           const actionType = log.actionType;
-                          if (constants2.CREATE === actionType) {
-                            let RED_400 = key(log[14]).unsafe_rawColors.GREEN_360;
-                          } else if (constants2.UPDATE === actionType) {
-                            RED_400 = key(log[14]).unsafe_rawColors.YELLOW_300;
-                          } else if (constants2.DELETE === actionType) {
-                            RED_400 = key(log[14]).unsafe_rawColors.RED_400;
+                          if (outer2_16.CREATE === actionType) {
+                            let RED_400 = outer2_1(outer2_3[14]).unsafe_rawColors.GREEN_360;
+                          } else if (outer2_16.UPDATE === actionType) {
+                            RED_400 = outer2_1(outer2_3[14]).unsafe_rawColors.YELLOW_300;
+                          } else if (outer2_16.DELETE === actionType) {
+                            RED_400 = outer2_1(outer2_3[14]).unsafe_rawColors.RED_400;
                           }
-                          closure_4 = closure_4 + 1;
+                          getActivityIndicator = getActivityIndicator + 1;
                           let obj3 = { style: tmp.changeRow };
                           const obj4 = { variant: "text-sm/bold" };
-                          const items = [tmp.changeNumberText, ];
+                          let items = [tmp.changeNumberText, ];
                           let obj5 = { color: RED_400 };
                           items[1] = obj5;
                           obj4.style = items;
                           let str4 = null;
-                          if (closure_4 < 10) {
+                          if (getActivityIndicator < 10) {
                             str4 = "0";
                           }
-                          const items1 = [str4, closure_4, " \u2014"];
+                          let items1 = [str4, getActivityIndicator, " \u2014"];
                           obj4.children = items1;
-                          const items2 = [closure_20(self(log[20]).Text, obj4), ];
+                          const items2 = [outer2_20(AuditLog(outer2_3[20]).Text, obj4), ];
                           const obj6 = { style: tmp.changeItemContent };
                           let obj7 = { style: tmp.changeItemTextContainer };
                           const obj8 = { variant: "text-sm/normal", style: tmp.changeItemTextContainer, children: formatResult };
-                          const items3 = [callback(self(log[20]).Text, obj8), ];
+                          const items3 = [outer2_19(AuditLog(outer2_3[20]).Text, obj8), ];
                           let tmp62 = null;
                           if (null != newValue) {
                             tmp62 = null;
@@ -451,36 +463,36 @@ const tmp6 = (PureComponent) => {
                               obj10 = { backgroundColor: newValue };
                               items4[1] = obj10;
                               obj9.style = items4;
-                              tmp62 = callback(closure_10, obj9);
+                              tmp62 = outer2_19(outer2_10, obj9);
                             }
                           }
                           items3[1] = tmp62;
                           obj7.children = items3;
-                          const items5 = [closure_20(closure_10, obj7), ];
+                          const items5 = [outer2_20(outer2_10, obj7), ];
                           let tmp66 = null;
                           if (null != result) {
                             tmp66 = result;
                           }
                           items5[1] = tmp66;
                           obj6.children = items5;
-                          items2[1] = closure_20(closure_10, obj6);
+                          items2[1] = outer2_20(outer2_10, obj6);
                           obj3.children = items2;
-                          return closure_20(closure_10, obj3, arg1);
+                          return outer2_20(outer2_10, obj3, arg1);
                         }
                       }
                     }
-                    if (log.targetType !== constants.ROLE) {
-                      if (log.action !== constants3.CHANNEL_OVERWRITE_CREATE) {
-                        let result = null;
+                    if (log.targetType !== outer2_15.ROLE) {
+                      if (log.action !== outer2_17.CHANNEL_OVERWRITE_CREATE) {
+                        result = null;
                       }
                     }
-                    result = self.renderPermissionUpdate(key);
+                    result = oldValue2.renderPermissionUpdate(key);
                   }
-                  result = self.renderRoleUpdate(key);
+                  result = oldValue2.renderRoleUpdate(key);
                 }
-                if (log.action === constants3.MEMBER_UPDATE) {
-                  if (key.key === constants4.COMMUNICATION_DISABLED_UNTIL) {
-                    obj7 = key(log[28])(key.newValue);
+                if (log.action === outer2_17.MEMBER_UPDATE) {
+                  if (key.key === outer2_18.COMMUNICATION_DISABLED_UNTIL) {
+                    obj7 = outer2_1(outer2_3[28])(key.newValue);
                     const obj11 = { oldValue: key.oldValue };
                     if (obj7.isValid()) {
                       newValue = obj7.calendar();
@@ -492,13 +504,13 @@ const tmp6 = (PureComponent) => {
                     obj15 = obj11;
                   }
                 }
-                if (log.action === constants3.GUILD_UPDATE) {
-                  if (key.key === constants4.OWNER_ID) {
+                if (log.action === outer2_17.GUILD_UPDATE) {
+                  if (key.key === outer2_18.OWNER_ID) {
                     obj12 = {};
-                    obj3 = key(log[23]);
+                    obj3 = outer2_1(outer2_3[23]);
                     const obj13 = { mode: "username" };
                     obj12.oldValue = obj3.getUserTag(key.oldValue, obj13);
-                    obj5 = key(log[23]);
+                    obj5 = outer2_1(outer2_3[23]);
                     const obj14 = { mode: "username" };
                     obj12.newValue = obj5.getUserTag(key.newValue, obj14);
                     obj12.transformedValues = true;
@@ -511,7 +523,7 @@ const tmp6 = (PureComponent) => {
               }
             })
         };
-        return callback4(closure_10, obj);
+        return outer1_19(outer1_10, obj);
       }
     }
   };
@@ -521,8 +533,8 @@ const tmp6 = (PureComponent) => {
       const self = this;
       let renderChangeDetailsResult = null;
       if (this.props.expanded) {
-        renderChangeDetailsResult = self.renderChangeDetails(callback(closure_3[21]).getChangeStrings(tmp));
-        const obj = callback(closure_3[21]);
+        renderChangeDetailsResult = self.renderChangeDetails(outer1_2(outer1_3[21]).getChangeStrings(tmp));
+        const obj = outer1_2(outer1_3[21]);
       }
       return renderChangeDetailsResult;
     }
@@ -530,18 +542,19 @@ const tmp6 = (PureComponent) => {
   items[5] = {
     key: "render",
     value() {
+      let AuditLog;
       let containerStyle;
       let expanded;
       let guildId;
       let log;
       let theme;
       const self = this;
-      const tmp = callback6(this.context);
+      const tmp = outer1_21(this.context);
       const props = this.props;
-      ({ log, expanded, channel: closure_0 } = props);
+      ({ log, expanded, channel: AuditLog } = props);
       const user = log.user;
       ({ guildId, containerStyle, theme } = props);
-      let obj = callback(closure_3[21]);
+      let obj = outer1_2(outer1_3[21]);
       const checkChangesToRenderResult = obj.checkChangesToRender(log);
       const timestampStart = log.timestampStart;
       const calendarResult = timestampStart.calendar();
@@ -549,12 +562,12 @@ const tmp6 = (PureComponent) => {
       const calendarResult1 = timestampEnd.calendar();
       if (calendarResult === calendarResult1) {
         obj = { style: tmp.timestamp, children: calendarResult };
-        let tmp8 = callback4(AuditLog(closure_3[24]).LegacyText, obj);
+        let tmp8 = outer1_19(AuditLog(outer1_3[24]).LegacyText, obj);
       } else {
         obj = { style: tmp.timestamp };
         const items = [calendarResult, "\u2014", calendarResult1];
         obj.children = items;
-        tmp8 = callback5(AuditLog(closure_3[24]).LegacyText, obj);
+        tmp8 = outer1_20(AuditLog(outer1_3[24]).LegacyText, obj);
       }
       let onHeaderClick;
       if (checkChangesToRenderResult) {
@@ -565,7 +578,7 @@ const tmp6 = (PureComponent) => {
         rotate90 = tmp.rotate90;
       }
       const obj1 = { accessible: false, style: items1 };
-      const items1 = [tmp.container, containerStyle];
+      items1 = [tmp.container, containerStyle];
       let str2 = "secondary";
       if (expanded) {
         str2 = "primary";
@@ -578,58 +591,57 @@ const tmp6 = (PureComponent) => {
       obj1.border = str3;
       obj1.onPress = onHeaderClick;
       const obj2 = { style: tmp.rowContainer };
-      const items2 = [callback4(user(closure_3[34]), { action: log.action }), , , ];
+      const items2 = [outer1_19(outer1_1(outer1_3[34]), { action: log.action }), , , ];
       const obj4 = { accessibilityRole: "button" };
-      const intl = AuditLog(closure_3[22]).intl;
-      obj4.accessibilityLabel = intl.string(AuditLog(closure_3[22]).t.iXAna6);
+      const intl = AuditLog(outer1_3[22]).intl;
+      obj4.accessibilityLabel = intl.string(AuditLog(outer1_3[22]).t.iXAna6);
       let username;
       if (null != user) {
         username = user.username;
       }
       obj4.accessibilityHint = username;
       obj4.onPress = function onPress() {
-        let obj = user(closure_3[36]);
+        let obj = outer2_1(outer2_3[36]);
         obj.hideActionSheet();
         if (null != user) {
           obj = { userId: user.id, channelId: id.id };
-          user(closure_3[37])(obj);
+          outer2_1(outer2_3[37])(obj);
         }
       };
-      const obj5 = { style: tmp.avatar, source: callback8(theme, log, guildId), size: AuditLog(closure_3[24]).AvatarSizes.SMALL };
-      obj4.children = callback4(AuditLog(closure_3[24]).Avatar, obj5);
-      items2[1] = callback4(AuditLog(closure_3[35]).PressableOpacity, obj4);
+      const obj5 = { style: tmp.avatar, source: outer1_23(theme, log, guildId), size: AuditLog(outer1_3[24]).AvatarSizes.SMALL };
+      obj4.children = outer1_19(AuditLog(outer1_3[24]).Avatar, obj5);
+      items2[1] = outer1_19(AuditLog(outer1_3[35]).PressableOpacity, obj4);
       const obj6 = { accessibilityRole: "button", accessibilityState: obj7, onPress: onHeaderClick, style: tmp.titleContainer, disabled: !checkChangesToRenderResult };
       const items3 = [self.renderTitle(), tmp8];
       obj6.children = items3;
-      items2[2] = callback5(AuditLog(closure_3[35]).PressableOpacity, obj6);
+      items2[2] = outer1_20(AuditLog(outer1_3[35]).PressableOpacity, obj6);
       let tmp19 = null;
       if (checkChangesToRenderResult) {
         const obj8 = {};
         const items4 = [tmp.arrow, rotate90];
         obj8.style = items4;
-        obj8.size = AuditLog(closure_3[24]).Icon.Sizes.CUSTOM;
-        obj8.source = user(closure_3[38]);
-        tmp19 = callback4(AuditLog(closure_3[24]).Icon, obj8);
+        obj8.size = AuditLog(outer1_3[24]).Icon.Sizes.CUSTOM;
+        obj8.source = outer1_1(outer1_3[38]);
+        tmp19 = outer1_19(AuditLog(outer1_3[24]).Icon, obj8);
       }
       items2[3] = tmp19;
       obj2.children = items2;
-      const items5 = [callback5(closure_10, obj2), ];
+      const items5 = [outer1_20(outer1_10, obj2), ];
       let renderChangeSummaryResult = null;
       if (expanded) {
         renderChangeSummaryResult = self.renderChangeSummary();
       }
       items5[1] = renderChangeSummaryResult;
       obj1.children = items5;
-      return callback5(AuditLog(closure_3[33]).Card, obj1);
+      return outer1_20(AuditLog(outer1_3[33]).Card, obj1);
     }
   };
   return callback(AuditLog, items);
-}(importAllResult.PureComponent);
-tmp6.contextType = arg1(dependencyMap[39]).ThemeContext;
-const obj3 = { marginTop: importDefault(dependencyMap[14]).space.PX_4, padding: importDefault(dependencyMap[14]).space.PX_8, borderRadius: importDefault(dependencyMap[14]).radii.md, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_MOD_MUTED };
-const items1 = [importDefaultResult];
-const importDefaultResult1 = importDefault(dependencyMap[40]);
-const tmp7 = importDefault(dependencyMap[40]).connectStores(items1, () => ({ theme: importDefaultResult.theme }))(tmp6);
-const result = arg1(dependencyMap[41]).fileFinishedImporting("modules/guild_settings/audit_log/native/AuditLog.tsx");
+})(importAllResult.PureComponent);
+tmp6.contextType = require("ManaContext").ThemeContext;
+let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, padding: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
+let items1 = [importDefaultResult];
+const tmp7 = require("initialize").connectStores(items1, () => ({ theme: importDefaultResult.theme }))(tmp6);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_settings/audit_log/native/AuditLog.tsx");
 
 export default tmp7;

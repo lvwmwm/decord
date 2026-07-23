@@ -1,10 +1,10 @@
 // Module ID: 246
 // Function ID: 3303
-// Dependencies: []
+// Dependencies: [101, 247]
 
 // Module 246
 let closure_2 = [];
-importDefault(dependencyMap[0]).addListener("hardwareBackPress", () => {
+require("_isNativeReflectConstruct").addListener("hardwareBackPress", () => {
   let obj;
   let diff = arr.length - 1;
   if (diff >= 0) {
@@ -22,23 +22,23 @@ importDefault(dependencyMap[0]).addListener("hardwareBackPress", () => {
   }
   obj.exitApp();
 });
-const obj = {
+let obj = {
   exitApp() {
-    if (importDefault(dependencyMap[1])) {
-      const result = importDefault(dependencyMap[1]).invokeDefaultBackPressHandler();
-      const obj = importDefault(dependencyMap[1]);
+    if (importDefault(247)) {
+      const result = importDefault(247).invokeDefaultBackPressHandler();
+      const obj = importDefault(247);
     }
   },
   addEventListener(arg0, arg1) {
-    const importDefault = arg1;
+    let closure_0 = arg1;
     if (-1 === arr.indexOf(arg1)) {
-      const arr = arr.push(arg1);
+      arr = arr.push(arg1);
     }
     return {
       remove() {
-        const index = arr.indexOf(arg1);
+        const index = outer1_2.indexOf(closure_0);
         if (-1 !== index) {
-          arr.splice(index, 1);
+          outer1_2.splice(index, 1);
         }
       }
     };

@@ -1,11 +1,10 @@
-// Module ID: 6384
-// Function ID: 50509
+// Module ID: 6389
+// Function ID: 50538
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6384 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWumpusThumbsUp3dIllustration-2x.png.js");
+// Module 6389 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWumpusThumbsUp3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/daeefbd0a61eb4481c55a572425aa63d946f6c4a7c91f68f09583d1a6a9796c9.png";
 export const metadata = { fileBytes: 216429 };

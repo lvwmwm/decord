@@ -1,15 +1,16 @@
 // Module ID: 1460
-// Function ID: 16992
+// Function ID: 16993
 // Name: PrivateValueStore
-// Dependencies: []
+// Dependencies: [7, 6]
 
 // Module 1460 (PrivateValueStore)
-let closure_0 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+
 class PrivateValueStore {
   constructor() {
-    tmp = closure_0(this, PrivateValueStore);
+    tmp = c0(this, PrivateValueStore);
     return;
   }
 }
 
-export const PrivateValueStore = importDefault(dependencyMap[0])(PrivateValueStore);
+export const PrivateValueStore = require("_defineProperties")(PrivateValueStore);

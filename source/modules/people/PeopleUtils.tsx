@@ -1,9 +1,13 @@
-// Module ID: 9050
-// Function ID: 71067
+// Module ID: 9057
+// Function ID: 71108
 // Name: acceptFriendRequest
-// Dependencies: []
+// Dependencies: [3767, 653, 9058, 8923, 3809, 3816, 9059, 9060, 686, 2]
 
-// Module 9050 (acceptFriendRequest)
+// Module 9057 (acceptFriendRequest)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AbortCodes } from "ME";
+
+const require = arg1;
 function acceptFriendRequest(location) {
   let applicationId;
   let confirmStrangerRequest;
@@ -14,10 +18,10 @@ function acceptFriendRequest(location) {
   }
   if (null != applicationId) {
     let obj = { userId, applicationId };
-    let result = importDefault(dependencyMap[2]).acceptGameFriendRequest(obj);
-    const obj4 = importDefault(dependencyMap[2]);
+    let result = importDefault(9058).acceptGameFriendRequest(obj);
+    const obj4 = importDefault(9058);
   } else {
-    obj = importDefault(dependencyMap[3]);
+    obj = importDefault(8923);
     obj = { userId, confirmStrangerRequest };
     const obj1 = { location: location.location };
     obj.context = obj1;
@@ -26,6 +30,7 @@ function acceptFriendRequest(location) {
   return result;
 }
 function handleFriendRequestAcceptError(body, userId) {
+  const _require = userId;
   let code;
   if (null != body) {
     body = body.body;
@@ -34,43 +39,41 @@ function handleFriendRequestAcceptError(body, userId) {
     }
   }
   if (code === AbortCodes.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
-    let obj = { height: null, flexDirection: null, GameDepthTier8SmallBadge: null, userId: userId.userId };
+    let obj = { type: "UPDATE_STRANGER_STATUS", userId: userId.userId, isStranger: true };
     let flag = true;
-    importDefault(dependencyMap[8]).dispatch(obj);
-    const obj3 = importDefault(dependencyMap[8]);
+    importDefault(686).dispatch(obj);
+    const obj3 = importDefault(686);
     obj = {
       onConfirm() {
           const obj = {};
-          const merged = Object.assign(arg1);
+          const merged = Object.assign(userId);
           obj["confirmStrangerRequest"] = true;
-          callback(obj);
-          if (null != arg1.onConfirm) {
-            arg1.onConfirm();
+          outer1_5(obj);
+          if (null != userId.onConfirm) {
+            userId.onConfirm();
           }
         },
       onCancel() {
-          if (null != arg1.onCancel) {
-            arg1.onCancel();
+          if (null != userId.onCancel) {
+            userId.onCancel();
           }
         }
     };
-    const result = userId(dependencyMap[7]).openAcceptFriendRequestConfirmModal(obj);
-    const obj5 = userId(dependencyMap[7]);
+    const result = _require(9060).openAcceptFriendRequestConfirmModal(obj);
+    const obj5 = _require(9060);
   } else {
     flag = false;
     if (tmp2) {
-      obj = importDefault(dependencyMap[8]);
-      const obj1 = { userId: userId.userId };
+      obj = importDefault(686);
+      const obj1 = { type: "UPDATE_STRANGER_STATUS", userId: userId.userId, isStranger: false };
       obj.dispatch(obj1);
       flag = false;
     }
-    const tmp2 = null != body && body.ok;
+    tmp2 = null != body && body.ok;
   }
   return flag;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const AbortCodes = arg1(dependencyMap[1]).AbortCodes;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/people/PeopleUtils.tsx");
+let result = require("showRequestFailedAlert").fileFinishedImporting("modules/people/PeopleUtils.tsx");
 
 export default {
   removeFriend(arg0) {
@@ -79,10 +82,10 @@ export default {
     ({ userId, applicationId } = arg0);
     if (null != applicationId) {
       let obj = { userId, applicationId };
-      importDefault(dependencyMap[2]).removeGameFriend(obj);
-      const obj3 = importDefault(dependencyMap[2]);
+      importDefault(9058).removeGameFriend(obj);
+      const obj3 = importDefault(9058);
     } else {
-      obj = importDefault(dependencyMap[3]);
+      obj = importDefault(8923);
       obj = { location: tmp };
       obj.removeFriend(userId, obj);
     }
@@ -93,10 +96,10 @@ export default {
     ({ userId, applicationId } = arg0);
     if (null != applicationId) {
       let obj = { userId, applicationId };
-      let result = importDefault(dependencyMap[2]).cancelGameFriendRequest(obj);
-      const obj3 = importDefault(dependencyMap[2]);
+      let result = importDefault(9058).cancelGameFriendRequest(obj);
+      const obj3 = importDefault(9058);
     } else {
-      obj = importDefault(dependencyMap[3]);
+      obj = importDefault(8923);
       obj = { location: tmp };
       result = obj.cancelFriendRequest(userId, obj);
     }
@@ -104,16 +107,16 @@ export default {
   },
   acceptFriendRequest,
   maybeConfirmFriendRequestAccept(userId) {
+    let AbortCodes;
+    let acceptFriendRequest;
+    let _isNativeReflectConstruct;
     userId = userId.userId;
-    const arg1 = userId;
     const applicationId = userId.applicationId;
-    const importDefault = applicationId;
     const _location = userId.location;
-    const dependencyMap = _location;
-    ({ onConfirm: closure_3, onCancel: closure_4, onFinally: closure_5 } = userId);
-    let obj = arg1(dependencyMap[4]);
-    const result = obj.isSettingTeenByDefault(arg1(dependencyMap[5]).SettingsDefaultFeature.FRIEND_REQUEST_STRANGER_CONFIRMATION);
-    const result1 = arg1(dependencyMap[6]).isFriendRequestAlertsV2Enabled("maybeConfirmFriendRequestAccept");
+    ({ onConfirm: _isNativeReflectConstruct, onCancel: AbortCodes, onFinally: acceptFriendRequest } = userId);
+    let obj = userId(_location[4]);
+    const result = obj.isSettingTeenByDefault(userId(_location[5]).SettingsDefaultFeature.FRIEND_REQUEST_STRANGER_CONFIRMATION);
+    const result1 = userId(_location[6]).isFriendRequestAlertsV2Enabled("maybeConfirmFriendRequestAccept");
     const isStrangerResult = stranger.isStranger(userId);
     if (null == applicationId) {
       if (result) {
@@ -121,7 +124,7 @@ export default {
           if (isStrangerResult) {
             obj = {
               onConfirm() {
-                        callback3({ userId, applicationId, location: _location, confirmStrangerRequest: true });
+                        outer1_5({ userId, applicationId, location: _location, confirmStrangerRequest: true });
                         if (null != callback) {
                           callback();
                         }
@@ -137,13 +140,13 @@ export default {
                         }
                       }
             };
-            const result2 = arg1(dependencyMap[7]).openAcceptFriendRequestConfirmModal(obj);
-            const obj4 = arg1(dependencyMap[7]);
+            const result2 = userId(_location[7]).openAcceptFriendRequestConfirmModal(obj);
+            const obj4 = userId(_location[7]);
           } else {
             obj = { userId, applicationId, location: _location };
             const promise = acceptFriendRequest(obj);
             const nextPromise = acceptFriendRequest(obj).then((arg0) => {
-              let tmp = callback4(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
+              let tmp = outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
               if (!tmp) {
                 tmp = null == callback;
               }
@@ -152,7 +155,7 @@ export default {
               }
             });
             acceptFriendRequest(obj).then((arg0) => {
-              let tmp = callback4(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
+              let tmp = outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
               if (!tmp) {
                 tmp = null == callback;
               }
@@ -160,14 +163,14 @@ export default {
                 callback();
               }
             }).catch((arg0) => {
-              callback4(arg0, { userId, applicationId, location: _location, onConfirm: closure_3, onCancel: closure_4 });
+              outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: _isNativeReflectConstruct, onCancel: closure_4 });
             }).finally(() => {
               if (null != callback3) {
                 callback3();
               }
             });
             const catchPromise = acceptFriendRequest(obj).then((arg0) => {
-              let tmp = callback4(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
+              let tmp = outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
               if (!tmp) {
                 tmp = null == callback;
               }
@@ -175,13 +178,13 @@ export default {
                 callback();
               }
             }).catch((arg0) => {
-              callback4(arg0, { userId, applicationId, location: _location, onConfirm: closure_3, onCancel: closure_4 });
+              outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: _isNativeReflectConstruct, onCancel: closure_4 });
             });
           }
         }
       }
     }
-    const obj2 = arg1(dependencyMap[6]);
+    const obj2 = userId(_location[6]);
     return acceptFriendRequest({ userId, applicationId, location: _location, confirmStrangerRequest: true }).then(() => {
       if (null != callback) {
         callback();

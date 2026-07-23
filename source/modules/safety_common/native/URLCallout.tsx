@@ -1,39 +1,46 @@
-// Module ID: 12107
-// Function ID: 93319
+// Module ID: 12221
+// Function ID: 95470
 // Name: URLCallout
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 12222, 4126, 2]
 // Exports: URLCallout
 
-// Module 12107 (URLCallout)
-importAll(dependencyMap[0]);
-const ScrollView = arg1(dependencyMap[1]).ScrollView;
-({ jsxs: closure_3, jsx: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Bool(false)": "0vh", "Bool(false)": 1, "Bool(false)": "row", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
-obj.linkCalloutContainer = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.linkCalloutContainerText = { padding: importDefault(dependencyMap[4]).space.PX_8, paddingVertical: importDefault(dependencyMap[4]).space.PX_12, textAlign: "center" };
-let closure_5 = obj.createStyles(obj);
-const obj1 = { padding: importDefault(dependencyMap[4]).space.PX_8, paddingVertical: importDefault(dependencyMap[4]).space.PX_12, textAlign: "center" };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/safety_common/native/URLCallout.tsx");
+// Module 12221 (URLCallout)
+import "result";
+import { ScrollView } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsxs: closure_3, jsx: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { maxHeight: 300, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, width: "100%", borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.linkCalloutContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.linkCalloutContainerText = { padding: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, textAlign: "center" };
+const result = require("jsxProd").fileFinishedImporting("modules/safety_common/native/URLCallout.tsx");
 
 export const URLCallout = function URLCallout(url) {
   let hostname;
   let protocol;
   let theRestOfTheUrl;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(12222) /* useUrlParts */;
   const urlParts = obj.useUrlParts(url.url);
   obj = { style: tmp.linkCalloutContainer };
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);
   obj = { style: tmp.linkCalloutContainerText, variant: "text-md/normal" };
+  const obj1 = { variant: "text-md/normal", color: "text-muted" };
   const items = [protocol, "//"];
-  const items1 = [callback(arg1(dependencyMap[6]).Text, { children: items }), , ];
-  const obj1 = { cachedAt: null, edpbxy: "Array", children: hostname };
-  items1[1] = callback2(arg1(dependencyMap[6]).Text, obj1);
-  items1[2] = callback2(arg1(dependencyMap[6]).Text, { children: theRestOfTheUrl });
+  obj1.children = items;
+  const items1 = [callback(require(4126) /* Text */.Text, obj1), , ];
+  const obj2 = { variant: "text-md/semibold", color: "text-default", children: hostname };
+  items1[1] = callback2(require(4126) /* Text */.Text, obj2);
+  const obj3 = { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl };
+  items1[2] = callback2(require(4126) /* Text */.Text, obj3);
   obj.children = items1;
-  obj.children = callback(arg1(dependencyMap[6]).Text, obj);
+  obj.children = callback(require(4126) /* Text */.Text, obj);
   return callback2(ScrollView, obj);
 };

@@ -1,29 +1,31 @@
-// Module ID: 9935
-// Function ID: 76879
+// Module ID: 9943
+// Function ID: 76919
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8390, 1212, 2]
 // Exports: default
 
-// Module 9935 (ContextMenuSubmenuActionSheetHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = arg1(dependencyMap[3]).createStyles({ headerContainer: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
+// Module 9943 (ContextMenuSubmenuActionSheetHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
+const result = require("jsxProd").fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
 
 export default function ContextMenuSubmenuActionSheetHeader(onBack) {
   let fn = onBack.onBack;
   let obj = { style: callback().headerContainer };
   obj = {};
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.label = intl.string(arg1(dependencyMap[5]).t.13/7kX);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
   if (null == fn) {
     fn = () => {
 
     };
   }
   obj.onPress = fn;
-  obj.children = jsx(arg1(dependencyMap[4]).ActionSheetHeaderPressableText, obj);
-  return <View {...obj} />;
+  obj.children = jsx(require(8390) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, {});
+  return <View />;
 };

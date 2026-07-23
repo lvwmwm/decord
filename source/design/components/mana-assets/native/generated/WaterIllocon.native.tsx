@@ -1,13 +1,13 @@
-// Module ID: 6609
-// Function ID: 50846
+// Module ID: 6614
+// Function ID: 50875
 // Name: WaterIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6615, 2]
 // Exports: WaterIllocon
 
-// Module 6609 (WaterIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WaterIllocon.native.tsx");
+// Module 6614 (WaterIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WaterIllocon.native.tsx");
 
 export const WaterIllocon = function WaterIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const WaterIllocon = function WaterIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6615) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const WaterIllocon = function WaterIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

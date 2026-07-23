@@ -1,9 +1,18 @@
-// Module ID: 10354
-// Function ID: 79918
+// Module ID: 10364
+// Function ID: 79968
 // Name: _toPropertyKey
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 10365, 2]
 
-// Module 10354 (_toPropertyKey)
+// Module 10364 (_toPropertyKey)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import getChildMapping from "getChildMapping";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+
+const require = arg1;
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -39,38 +48,31 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-const tmp3 = (Component) => {
+let tmp3 = ((Component) => {
   class TransitionGroup {
     constructor(arg0) {
       self = this;
-      tmp = closure_3(this, TransitionGroup);
+      tmp = outer1_3(this, apply);
       items = [];
       items[0] = Component;
-      obj = closure_6(TransitionGroup);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      TransitionGroup = tmp2Result;
+      apply = tmp2Result;
       tmp2Result._keyChildMapping = {};
       tmp2Result.addChildRef = (arg0, arg1) => {
         tmp2Result._keyChildMapping[arg0] = arg1;
       };
       obj = {};
-      obj3 = TransitionGroup(closure_1[7]);
+      obj3 = TransitionGroup(outer1_1[7]);
       obj.children = obj3.getChildMapping(Component.children);
       obj.firstRender = true;
       tmp2Result.state = obj;
@@ -82,7 +84,6 @@ const tmp3 = (Component) => {
       return tmp2Result;
     }
   }
-  const arg1 = TransitionGroup;
   callback2(TransitionGroup, Component);
   let obj = {
     key: "componentDidMount",
@@ -97,14 +98,14 @@ const tmp3 = (Component) => {
             continue;
           } else {
             let performAppearResult = self.performAppear(key10008);
-            // continue
+            continue;
           }
           continue;
         }
       }
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "componentWillUnmount",
     value() {
@@ -130,7 +131,7 @@ const tmp3 = (Component) => {
           const item1 = _keysToLeave.forEach(self.performLeave, self);
         }
       }
-      let obj = TransitionGroup(closure_1[7]);
+      let obj = TransitionGroup(outer1_1[7]);
       const childMapping = obj.getChildMapping(self.props.children);
       children = children2.children;
       if (self.props.transitionEnter) {
@@ -145,11 +146,11 @@ const tmp3 = (Component) => {
         const items = [];
         _enqueueTransitions(children, childMapping, items);
         let num3 = 0;
-        const obj2 = TransitionGroup(closure_1[7]);
+        const obj2 = TransitionGroup(outer1_1[7]);
         if (0 < items.length) {
           do {
-            let tmp7 = items[num3];
-            delete r7[r9];
+            let tmp9 = items[num3];
+            delete tmp[tmp2];
             num3 = num3 + 1;
           } while (num3 < length);
         }
@@ -160,7 +161,7 @@ const tmp3 = (Component) => {
         if (self._keysToLeave.length > 0) {
           self._keysToLeave = [];
         }
-        const mergeChildMappingsResult = TransitionGroup(closure_1[7]).mergeChildMappings(children, childMapping);
+        mergeChildMappingsResult = TransitionGroup(outer1_1[7]).mergeChildMappings(children, childMapping);
       }
     }
   };
@@ -186,7 +187,7 @@ const tmp3 = (Component) => {
           continue;
         } else {
           arr = arg2.push(key10006);
-          // continue
+          continue;
         }
         continue;
       }
@@ -196,15 +197,17 @@ const tmp3 = (Component) => {
     key: "_perform",
     value(arg0, arg1, arg2) {
       let flag = arg3;
-      const self = this;
-      const TransitionGroup = this;
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
+      let _objectWithoutProperties = arg2;
       if (arg3 === undefined) {
         flag = false;
       }
       const _currentlyTransitioningKeys = self._currentlyTransitioningKeys;
       _currentlyTransitioningKeys.add(arg0);
       function callback() {
-        return self._handleDonePerform(arg0, arg2, flag);
+        return self._handleDonePerform(closure_1, _objectWithoutProperties, flag);
       }
       if (null != self._keyChildMapping[arg0]) {
         if (null != tmp2[arg1]) {
@@ -219,7 +222,7 @@ const tmp3 = (Component) => {
     value(arg0, arg1) {
       let flag = arg2;
       const self = this;
-      const TransitionGroup = arg0;
+      let closure_0 = arg0;
       if (arg2 === undefined) {
         flag = false;
       }
@@ -228,7 +231,7 @@ const tmp3 = (Component) => {
       }
       const _currentlyTransitioningKeys = self._currentlyTransitioningKeys;
       _currentlyTransitioningKeys.delete(arg0);
-      const childMapping = TransitionGroup(closure_1[7]).getChildMapping(self.props.children);
+      const childMapping = TransitionGroup(outer1_1[7]).getChildMapping(self.props.children);
       if (flag) {
         if (null != childMapping) {
           if (childMapping.hasOwnProperty(arg0)) {
@@ -236,14 +239,14 @@ const tmp3 = (Component) => {
           }
         }
         self.setState((children) => {
-          const items = [children];
-          return { children: callback(children.children, items.map(closure_9)) };
+          const items = [closure_0];
+          return { children: outer2_2(children.children, items.map(outer2_9)) };
         });
       } else {
         if (!tmp5) {
           self.performLeave(arg0);
         }
-        const tmp5 = null != childMapping && childMapping.hasOwnProperty(arg0);
+        tmp5 = null != childMapping && childMapping.hasOwnProperty(arg0);
       }
     }
   };
@@ -268,7 +271,7 @@ const tmp3 = (Component) => {
   items[9] = {
     key: "render",
     value() {
-      const TransitionGroup = this;
+      const self = this;
       const props = this.props;
       const childFactory = props.childFactory;
       const children = this.state.children;
@@ -276,15 +279,16 @@ const tmp3 = (Component) => {
       for (const key10011 in children) {
         let tmp4 = key10011;
         let tmpResult = tmp(key10011);
+        continue;
       }
-      const obj = {};
+      let obj = {};
       const merged = Object.assign(this.props);
-      const keys = Object.keys(TransitionGroup.defaultProps);
+      const keys = Object.keys(self.defaultProps);
       const item = keys.forEach((arg0) => {
-        delete r1[r0];
+        delete tmp2[tmp];
         return arg0;
       });
-      return <props.component {......obj}>{items}</props.component>;
+      return <props.component>{items}</props.component>;
     }
   };
   const items1 = [
@@ -293,13 +297,13 @@ const tmp3 = (Component) => {
       value: function getDerivedStateFromProps(children) {
         let firstRender;
         ({ children, firstRender } = arg1);
-        let obj = TransitionGroup(closure_1[7]);
+        let obj = TransitionGroup(outer1_1[7]);
         const childMapping = obj.getChildMapping(children.children);
         obj = {};
         let mergeChildMappingsResult = childMapping;
         if (!firstRender) {
-          mergeChildMappingsResult = TransitionGroup(closure_1[7]).mergeChildMappings(children, childMapping);
-          const obj3 = TransitionGroup(closure_1[7]);
+          mergeChildMappingsResult = TransitionGroup(outer1_1[7]).mergeChildMappings(children, childMapping);
+          const obj3 = TransitionGroup(outer1_1[7]);
         }
         obj.children = mergeChildMappingsResult;
         obj.firstRender = false;
@@ -308,8 +312,8 @@ const tmp3 = (Component) => {
     }
   ];
   return callback(TransitionGroup, items, items1);
-}(importAllResult.Component);
-tmp3.defaultProps = { <string:1378613573>: 1, <string:2131464820>: 2, <string:2931602258>: 3, <string:3165869028>: 4, <string:4094289070>: 5 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionGroup.tsx");
+})(importAllResult.Component);
+tmp3.defaultProps = { component: "span", transitionAppear: true, transitionLeave: true, transitionEnter: true, childFactory: null };
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionGroup.tsx");
 
 export const TransitionGroup = tmp3;

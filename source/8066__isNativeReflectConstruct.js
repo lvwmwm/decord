@@ -1,9 +1,16 @@
 // Module ID: 8066
-// Function ID: 63996
+// Function ID: 63999
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 8034]
 
 // Module 8066 (_isNativeReflectConstruct)
+import pickNotNil from "pickNotNil";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,26 +20,19 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class FeFlood {
+const tmp2 = ((Component) => {
+  class FeDistantLight {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeFlood);
-      obj = closure_6(FeFlood);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      tmp = outer1_2(this, FeDistantLight);
+      obj = outer1_5(FeDistantLight);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,27 +41,19 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeFlood;
-  callback2(FeFlood, arg0);
+  callback2(FeDistantLight, Component);
   const items = [
     {
       key: "render",
       value: function render() {
-        const FeFlood = this;
-        const obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        const tmp = callback(closure_2[7]);
-        const obj2 = FeFlood(closure_2[8]);
-        return callback4(tmp, Object.assign(obj, FeFlood(closure_2[8]).extractFilter(this.props), callback(closure_2[8])(this.props)));
+        const result = FeDistantLight(outer1_1[6]).warnUnimplementedFilter();
+        return null;
       }
     }
   ];
-  return callback(FeFlood, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeFlood";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { cancelLocalNotifications: false, unstable_getCurrentPriorityLevel: false });
+  return callback(FeDistantLight, items);
+})(require("result").Component);
+tmp2.displayName = "FeDistantLight";
+tmp2.defaultProps = {};
 
-export default tmp3;
+export default tmp2;

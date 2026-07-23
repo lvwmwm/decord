@@ -1,18 +1,21 @@
-// Module ID: 5716
-// Function ID: 49142
+// Module ID: 5721
+// Function ID: 49169
 // Name: getPreviousSafeRouteForNsfwReturn
-// Dependencies: []
+// Dependencies: [5722, 1348, 1907, 653, 4345, 5723, 2]
 // Exports: default
 
-// Module 5716 (getPreviousSafeRouteForNsfwReturn)
-const _module = require(dependencyMap[0]);
-({ CHANNEL_PREFIX: closure_2, GUILD_PREFIX: closure_3, getIdFromHistoryItem: closure_4 } = _module);
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-let closure_7 = importDefault(dependencyMap[2]);
-const ME = require(dependencyMap[3]).ME;
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/age_gate/getPreviousSafeRouteForNsfwReturn.native.tsx");
+// Module 5721 (getPreviousSafeRouteForNsfwReturn)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { ME } from "ME";
+
+let closure_2;
+let closure_3;
+let closure_4;
+({ CHANNEL_PREFIX: closure_2, GUILD_PREFIX: closure_3, getIdFromHistoryItem: closure_4 } = _createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/age_gate/getPreviousSafeRouteForNsfwReturn.native.tsx");
 
 export default function getPreviousSafeRouteForNsfwReturn() {
   let defaultChannel;
@@ -27,7 +30,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
       let tmp8 = closure_2;
       if (obj.startsWith(closure_2)) {
         let tmp18 = channel;
-        let channel = channel.getChannel(tmp7);
+        channel = channel.getChannel(tmp7);
         let tmp10 = tmp7;
         let tmp11 = channel;
         let tmp12 = tmp4;
@@ -35,7 +38,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
         if (null != channel) {
           let tmp20 = require;
           let tmp21 = dependencyMap;
-          let obj4 = require(dependencyMap[4]);
+          let obj4 = require(4345) /* shouldAgeVerifyForAgeGate */;
           tmp10 = tmp7;
           tmp11 = channel;
           tmp12 = tmp4;
@@ -43,7 +46,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
           if (!obj4.isChannelContentGated(channel)) {
             let tmp22 = require;
             let tmp23 = dependencyMap;
-            let obj5 = require(dependencyMap[5]);
+            let obj5 = require(5723) /* getSpoilerGatingChannelId */;
             tmp10 = tmp7;
             tmp11 = channel;
             tmp12 = tmp4;
@@ -76,7 +79,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
           if (null != defaultChannel) {
             let tmp24 = require;
             let tmp25 = dependencyMap;
-            let obj7 = require(dependencyMap[4]);
+            let obj7 = require(4345) /* shouldAgeVerifyForAgeGate */;
             tmp10 = tmp2;
             tmp11 = tmp3;
             tmp12 = tmp7;
@@ -84,7 +87,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
             if (!obj7.isChannelContentGated(defaultChannel)) {
               let tmp16 = require;
               let tmp17 = dependencyMap;
-              let obj2 = require(dependencyMap[5]);
+              let obj2 = require(5723) /* getSpoilerGatingChannelId */;
               tmp10 = tmp2;
               tmp11 = tmp3;
               tmp12 = tmp7;
@@ -97,10 +100,10 @@ export default function getPreviousSafeRouteForNsfwReturn() {
         }
       }
       diff = diff - 1;
-      let tmp2 = tmp10;
-      let tmp3 = tmp11;
-      let tmp4 = tmp12;
-      let tmp5 = tmp13;
+      tmp2 = tmp10;
+      tmp3 = tmp11;
+      tmp4 = tmp12;
+      tmp5 = tmp13;
     }
     obj = { guildId: tmp7, channelId: defaultChannel.id };
     return obj;

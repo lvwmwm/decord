@@ -1,15 +1,17 @@
-// Module ID: 10201
-// Function ID: 78755
+// Module ID: 10213
+// Function ID: 78827
 // Name: useSelectedParticipant
-// Dependencies: []
+// Dependencies: [4143, 566, 2]
 // Exports: default
 
-// Module 10201 (useSelectedParticipant)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/video_calls/useSelectedParticipant.tsx");
+// Module 10213 (useSelectedParticipant)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/video_calls/useSelectedParticipant.tsx");
 
 export default function useSelectedParticipant(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => selectedParticipant.getSelectedParticipant(arg0.id));
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => outer1_2.getSelectedParticipant(id.id));
 };

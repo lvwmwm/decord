@@ -1,10 +1,15 @@
-// Module ID: 9475
-// Function ID: 73820
+// Module ID: 9482
+// Function ID: 73861
 // Name: isNewMessageGroup
-// Dependencies: []
+// Dependencies: [653, 664, 5651, 21, 3800, 2]
 // Exports: isNewGroupItem
 
-// Module 9475 (isNewMessageGroup)
+// Module 9482 (isNewMessageGroup)
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+let closure_5;
 function isNewMessageGroup(isForumPost, content, hasFlag) {
   let type = hasFlag;
   const tmp = !hasFlag.hasFlag(constants3.HAS_THREAD) && !type.isCommandType();
@@ -13,14 +18,14 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
     if (content.blocked !== type.blocked || content.ignored !== type.ignored) {
       tmp2 = tmp3;
     } else if (type.type > constants.DEFAULT) {
-      let tmp35 = !importDefault(dependencyMap[2])(content);
+      let tmp35 = !importDefault(5651)(content);
       if (!tmp35) {
         type = type.type;
         tmp35 = type === constants.REPLY;
       }
       let tmp32 = tmp35;
     } else {
-      const tmp40 = !importDefault(dependencyMap[2])(content);
+      const tmp40 = !importDefault(5651)(content);
       tmp32 = !tmp40;
       if (tmp40) {
         let tmp5 = content.author.id !== type.author.id;
@@ -31,14 +36,14 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
             if (!tmp11) {
               let tmp12 = null == isForumPost || !isForumPost.isForumPost();
               if (!tmp12) {
-                tmp12 = content.id !== importDefault(dependencyMap[3]).castChannelIdAsMessageId(isForumPost.id);
-                const obj = importDefault(dependencyMap[3]);
+                tmp12 = content.id !== importDefault(21).castChannelIdAsMessageId(isForumPost.id);
+                const obj = importDefault(21);
               }
               let tmp15 = !tmp12;
               if (tmp12) {
-                let tmp18 = !require(dependencyMap[4]).isSameDay(content.timestamp, type.timestamp);
+                let tmp18 = !require(3800) /* resetCache */.isSameDay(content.timestamp, type.timestamp);
                 if (!tmp18) {
-                  let tmp22 = !require(dependencyMap[4]).isWithinInterval(content.timestamp, type.timestamp, closure_6);
+                  let tmp22 = !require(3800) /* resetCache */.isWithinInterval(content.timestamp, type.timestamp, closure_6);
                   if (!tmp22) {
                     let hasFlagResult1 = !type.hasFlag(constants3.SUPPRESS_NOTIFICATIONS);
                     if (!hasFlagResult1) {
@@ -60,10 +65,10 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                     tmp22 = tmp26;
                   }
                   tmp18 = tmp22;
-                  const obj3 = require(dependencyMap[4]);
+                  const obj3 = require(3800) /* resetCache */;
                 }
                 tmp15 = tmp18;
-                const obj2 = require(dependencyMap[4]);
+                const obj2 = require(3800) /* resetCache */;
               }
               tmp11 = tmp15;
             }
@@ -78,11 +83,9 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
   }
   return tmp2;
 }
-const _module = require(dependencyMap[0]);
-({ MessageTypes: closure_3, ChannelStreamTypes: closure_4, MessageFlags: closure_5 } = _module);
-let closure_6 = 7 * importDefault(dependencyMap[1]).Millis.MINUTE;
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/messages/isNewMessageGroup.tsx");
+({ MessageTypes: closure_3, ChannelStreamTypes: closure_4, MessageFlags: closure_5 } = ME);
+let closure_6 = 7 * require("set").Millis.MINUTE;
+const result = require("isSystemMessage").fileFinishedImporting("modules/messages/isNewMessageGroup.tsx");
 
 export default isNewMessageGroup;
 export const isNewGroupItem = function isNewGroupItem(isForumPost, type, hasFlag) {

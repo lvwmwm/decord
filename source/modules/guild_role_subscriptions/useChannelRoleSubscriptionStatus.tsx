@@ -1,33 +1,33 @@
-// Module ID: 4570
-// Function ID: 40078
+// Module ID: 4574
+// Function ID: 40110
 // Name: getChannelRoleSubscriptionStatus
-// Dependencies: [3827, 44, 2, 27, 4589, 3769]
+// Dependencies: [1908, 1348, 3758, 653, 566, 2]
 // Exports: default
 
-// Module 4570 (getChannelRoleSubscriptionStatus)
-import closure_2 from "t";
-import invariant from "invariant";
-import result2 from "result2";
-import { Permissions } from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 4574 (getChannelRoleSubscriptionStatus)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
 
-function getChannelRoleSubscriptionStatus(id, result2, invariant, closure_6) {
-  let obj = result2;
-  let obj2 = invariant;
+const require = arg1;
+function getChannelRoleSubscriptionStatus(id, closure_4, closure_3, closure_6) {
+  let obj = closure_4;
+  let obj2 = closure_3;
   let tmp = closure_6;
-  if (result2 === undefined) {
-    obj = invariant;
+  if (closure_4 === undefined) {
+    obj = closure_3;
   }
   if (obj2 === undefined) {
-    obj2 = closure_2;
+    obj2 = _isNativeReflectConstruct;
   }
   if (tmp === undefined) {
-    tmp = result2;
+    tmp = closure_4;
   }
   const channel = obj.getChannel(id);
   if (null != channel) {
     if (channel.isRoleSubscriptionTemplatePreviewChannel()) {
-      obj = { USE_EXIF: null, USE_IPTC: null };
+      obj = { isSubscriptionGated: true, needSubscriptionToAccess: true };
     }
     return obj;
   }
@@ -47,13 +47,13 @@ function getChannelRoleSubscriptionStatus(id, result2, invariant, closure_6) {
   }
   obj = closure_6;
 }
-let closure_6 = { 0: true, 0: true };
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
+let closure_6 = { needSubscriptionToAccess: false, isSubscriptionGated: false };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
 
 export default function useChannelRoleSubscriptionStatus(arg0) {
-  const arg1 = arg0;
-  const items = [invariant, closure_2, result2];
+  const _require = arg0;
+  const items = [closure_3, _isNativeReflectConstruct, closure_4];
   const items1 = [arg0];
-  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => callback(arg0, invariant, closure_2, result2), items1);
+  return _require(566).useStateFromStoresObject(items, () => outer1_7(closure_0, outer1_3, outer1_2, outer1_4), items1);
 };
 export { getChannelRoleSubscriptionStatus };

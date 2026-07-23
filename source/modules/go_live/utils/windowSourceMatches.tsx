@@ -1,12 +1,13 @@
-// Module ID: 12724
-// Function ID: 97642
+// Module ID: 12838
+// Function ID: 99798
 // Name: windowSourceMatches
-// Dependencies: []
+// Dependencies: [57, 2]
 // Exports: default
 
-// Module 12724 (windowSourceMatches)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/go_live/utils/windowSourceMatches.tsx");
+// Module 12838 (windowSourceMatches)
+import _slicedToArray from "_slicedToArray";
+
+const result = require("set").fileFinishedImporting("modules/go_live/utils/windowSourceMatches.tsx");
 
 export default function windowSourceMatches(str) {
   if (null == arg1) {

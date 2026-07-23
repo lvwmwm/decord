@@ -1,11 +1,20 @@
-// Module ID: 15220
-// Function ID: 114881
+// Module ID: 15336
+// Function ID: 117051
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 9103, 1361, 22, 566, 686, 2]
 
-// Module 15220 (_isNativeReflectConstruct)
+// Module 15336 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import exact from "exact";
+import apply from "apply";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+
 let NATIVE_SEARCH_HISTORY_STORAGE_KEY;
 let NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME;
+let closure_7;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -16,48 +25,42 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getOrCreateSearchHistory(id) {
-  let tmp = closure_9[id];
+  let tmp = table[id];
   if (null == tmp) {
     const prototype = ctor.prototype;
     tmp = new ctor();
   }
-  closure_9[id] = tmp;
+  table[id] = tmp;
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ SearchHistoryItemTypes: closure_7, NATIVE_SEARCH_HISTORY_STORAGE_KEY, NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME } = arg1(dependencyMap[5]));
-let closure_8 = () => {
+({ SearchHistoryItemTypes: closure_7, NATIVE_SEARCH_HISTORY_STORAGE_KEY, NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME } = SearchAutocompleteSelectAnalyticsActions);
+let closure_8 = (() => {
   class SearchHistory {
     constructor() {
-      tmp = closure_5(this, SearchHistory);
+      tmp = outer1_5(this, SearchHistory);
       this.items = [];
       return;
     }
   }
-  const arg1 = SearchHistory;
   let obj = {
     key: "deserialize",
     value(arr) {
       this.items = arr.slice(0, 3);
       const items = this.items;
       this.items = items.filter((type) => {
-        let everyResult = type.type !== constants.TEXT;
+        let everyResult = type.type !== outer2_7.TEXT;
         if (!everyResult) {
           everyResult = null == type.tags;
         }
         if (!everyResult) {
           const tags = type.tags;
-          everyResult = tags.every((arg0) => callback(closure_1[6]).hasOwnProperty(arg0, "type"));
+          everyResult = tags.every((arg0) => SearchHistory(outer3_1[6]).hasOwnProperty(arg0, "type"));
         }
         return everyResult;
       });
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "serialize",
     value() {
@@ -69,7 +72,7 @@ let closure_8 = () => {
     key: "add",
     value(type) {
       const self = this;
-      let tmp = type.type === constants.TEXT;
+      let tmp = type.type === outer1_7.TEXT;
       if (tmp) {
         tmp = "" === type.text.trim();
         const str = type.text;
@@ -94,27 +97,27 @@ let closure_8 = () => {
   items[3] = {
     key: "remove",
     value(arg0) {
-      const SearchHistory = arg0;
+      let closure_0 = arg0;
       const items = this.items;
-      this.items = items.filter((arg0) => !arg0(closure_1[7]).isEqual(arg0, arg0));
+      this.items = items.filter((arg0) => !SearchHistory(outer2_1[7]).isEqual(arg0, closure_0));
     }
   };
   return callback2(SearchHistory, items);
-}();
+})();
 let closure_9 = {};
-let tmp3 = (PersistedStore) => {
+let tmp3 = ((PersistedStore) => {
   class SearchHistoryStore {
     constructor() {
       self = this;
-      tmp = closure_5(this, SearchHistoryStore);
-      obj = closure_3(SearchHistoryStore);
-      tmp2 = closure_2;
-      if (closure_10()) {
+      tmp = outer1_5(this, SearchHistoryStore);
+      obj = outer1_3(SearchHistoryStore);
+      tmp2 = outer1_2;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -123,14 +126,12 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SearchHistoryStore;
   callback(SearchHistoryStore, PersistedStore);
   let obj = {
     key: "getState",
     value() {
       const searchHistories = {};
-      const SearchHistoryStore = searchHistories;
-      const entries = Object.entries(closure_9);
+      const entries = Object.entries(outer1_9);
       const item = entries.forEach((arg0) => {
         let obj;
         let tmp;
@@ -151,12 +152,12 @@ let tmp3 = (PersistedStore) => {
         searchHistories = searchHistories.searchHistories;
       }
       if (null != searchHistories) {
-        let closure_9 = SearchHistoryStore(closure_1[7]).mapValues(searchHistories, (arg0) => {
-          const obj = new closure_8();
+        const outer1_9 = SearchHistoryStore(outer1_1[7]).mapValues(searchHistories, (arg0) => {
+          const obj = new outer2_8();
           obj.deserialize(arg0);
           return obj;
         });
-        const obj = SearchHistoryStore(closure_1[7]);
+        let obj = SearchHistoryStore(outer1_1[7]);
       }
     }
   };
@@ -164,17 +165,17 @@ let tmp3 = (PersistedStore) => {
   obj = {
     key: "getSearchHistory",
     value(arg0) {
-      return callback4(arg0).serialize();
+      return outer1_11(arg0).serialize();
     }
   };
   items[2] = obj;
   return callback2(SearchHistoryStore, items);
-}(importDefault(dependencyMap[8]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME;
 tmp3.persistKey = NATIVE_SEARCH_HISTORY_STORAGE_KEY;
-tmp3 = new tmp3(importDefault(dependencyMap[9]), {
+tmp3 = new tmp3(require("dispatcher"), {
   SEARCH_HISTORY_NATIVE_CLEAR_ITEMS: function handleSearchHistoryClearItems(arg0) {
-    delete r0[r1];
+    delete tmp[tmp2];
   },
   SEARCH_HISTORY_NATIVE_REMOVE_ITEM: function handleSearchHistoryRemoveItem(id) {
     getOrCreateSearchHistory(id.id).remove(id.item);
@@ -183,18 +184,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
     getOrCreateSearchHistory(id.id).add(id.item);
   }
 });
-const obj = {
-  SEARCH_HISTORY_NATIVE_CLEAR_ITEMS: function handleSearchHistoryClearItems(arg0) {
-    delete r0[r1];
-  },
-  SEARCH_HISTORY_NATIVE_REMOVE_ITEM: function handleSearchHistoryRemoveItem(id) {
-    getOrCreateSearchHistory(id.id).remove(id.item);
-  },
-  SEARCH_HISTORY_NATIVE_ADD_ITEM: function handleSearchHistoryAddItem(id) {
-    getOrCreateSearchHistory(id.id).add(id.item);
-  }
-};
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/search/native/stores/SearchHistoryStore.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchHistoryStore.tsx");
 
 export default tmp3;

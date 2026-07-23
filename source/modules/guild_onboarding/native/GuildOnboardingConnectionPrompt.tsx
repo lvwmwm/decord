@@ -1,53 +1,71 @@
-// Module ID: 5458
-// Function ID: 46634
+// Module ID: 5461
+// Function ID: 46653
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 27, 5082, 5066, 4812, 1838, 5058, 5059, 5055, 653, 33, 4130, 5084, 689, 1456, 1557, 566, 5065, 675, 4324, 5057, 5121, 4126, 1212, 5462, 5484, 4543, 2]
 // Exports: default
 
-// Module 5458 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5461 (_createForOfIteratorHelperLoose)
+import result from "result";
+import get_ActivityIndicator from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import { OnboardingConnectionType } from "_createForOfIteratorHelperLoose";
+import { GuildOnboardingModalStates as closure_12 } from "GUILD_ONBOARDING_MODAL_KEY";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_14;
+let closure_15;
+let closure_4;
+let closure_5;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,87 +102,67 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const OnboardingConnectionType = arg1(dependencyMap[7]).OnboardingConnectionType;
-let closure_12 = arg1(dependencyMap[8]).GuildOnboardingModalStates;
-const AnalyticEvents = arg1(dependencyMap[9]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[10]));
-let obj = arg1(dependencyMap[11]);
-obj = { flex: { flex: 1 } };
-obj = { marginTop: arg1(dependencyMap[12]).NAV_BAR_HEIGHT, marginBottom: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[10]);
-obj.scrollContainer = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-obj.header = { marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
-const obj2 = { marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
-obj.title = { marginBottom: importDefault(dependencyMap[13]).space.PX_8 };
-const obj3 = { marginBottom: importDefault(dependencyMap[13]).space.PX_8 };
-obj.description = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
-const obj4 = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
-obj.connectionsList = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
-const obj6 = { updateWith: "row", addDependencies: "center", addWindow: "center", onBeginFocus: "hidden", GF: 100, useFramePreviewOverrideStore: 45, explicitContentGuilds: null, handleUserUpdate: "text-sm/semibold", paddingBottom: importDefault(dependencyMap[13]).space.PX_8, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-obj.footer = obj6;
-const obj5 = { marginTop: importDefault(dependencyMap[13]).space.PX_8 };
-obj.footerContent = { width: "100%", paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
-let closure_16 = obj.createStyles(obj);
-const obj7 = { width: "100%", paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConnectionPrompt.tsx");
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
+_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
+_createForOfIteratorHelperLoose = { display: "flex", flex: 1, flexGrow: 1, marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { display: "flex", flexGrow: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.scrollContainer = obj1;
+_createForOfIteratorHelperLoose.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.title = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.description = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.connectionsList = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj6 = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, position: "absolute", width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.footer = obj6;
+let obj5 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.footerContent = { width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj7 = { width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConnectionPrompt.tsx");
 
 export default function GuildOnboardingConnectionPrompt(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const onComplete = guildId.onComplete;
-  const importDefault = onComplete;
   const isLastStep = guildId.isLastStep;
-  const dependencyMap = isLastStep;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[14]);
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = guildId(isLastStep[14]);
   const navigation = obj.useNavigation();
-  const React = navigation;
-  const bottom = importDefault(dependencyMap[15])().bottom;
+  const bottom = onComplete(isLastStep[15])().bottom;
   const sum = 64 + bottom;
-  const sum1 = sum + importDefault(dependencyMap[13]).space.PX_8;
-  let closure_4 = React.useRef(false);
-  let obj1 = arg1(dependencyMap[16]);
-  const items = [closure_10];
+  const sum1 = sum + onComplete(isLastStep[13]).space.PX_8;
+  let closure_4 = navigation.useRef(false);
+  let obj1 = guildId(isLastStep[16]);
+  const items = [stateFromStores4];
   const stateFromStores = obj1.useStateFromStores(items, () => stateFromStores4.getOnboardingConnections(guildId));
-  let obj2 = arg1(dependencyMap[16]);
-  const items1 = [closure_10];
+  let obj2 = guildId(isLastStep[16]);
+  const items1 = [stateFromStores4];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => stateFromStores4.getOnboardingPromptsForOnboarding(guildId));
-  let closure_6 = stateFromStoresArray;
-  let obj3 = arg1(dependencyMap[16]);
-  const items2 = [closure_9];
+  let obj3 = guildId(isLastStep[16]);
+  const items2 = [stateFromStores3];
   const stateFromStores1 = obj3.useStateFromStores(items2, () => stateFromStores3.getGuild(guildId));
-  let closure_7 = stateFromStores1;
-  let obj4 = arg1(dependencyMap[16]);
-  const items3 = [closure_6];
+  let obj4 = guildId(isLastStep[16]);
+  const items3 = [stateFromStoresArray];
   const stateFromStores2 = obj4.useStateFromStores(items3, () => stateFromStoresArray.getRulesPrompt(guildId));
-  let closure_8 = stateFromStores2;
-  let obj5 = arg1(dependencyMap[16]);
-  const items4 = [closure_10];
-  const stateFromStores3 = obj5.useStateFromStores(items4, () => stateFromStores4.isLoading());
-  closure_9 = stateFromStores3;
-  let obj6 = arg1(dependencyMap[16]);
-  const items5 = [closure_7, closure_8];
+  let obj5 = guildId(isLastStep[16]);
+  const items4 = [stateFromStores4];
+  stateFromStores3 = obj5.useStateFromStores(items4, () => stateFromStores4.isLoading());
+  let obj6 = guildId(isLastStep[16]);
+  const items5 = [stateFromStores1, stateFromStores2];
   const items6 = [stateFromStores];
-  const stateFromStores4 = obj6.useStateFromStores(items5, () => {
-    const tmp = callback2(stateFromStores);
+  stateFromStores4 = obj6.useStateFromStores(items5, () => {
+    const tmp = outer1_17(stateFromStores);
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
       while (true) {
         let value = iter2.value;
         let connection_type = value.connection_type;
-        let tmp3 = constants;
-        if (constants.APPLICATION === connection_type) {
+        let tmp3 = outer1_11;
+        if (outer1_11.APPLICATION === connection_type) {
           let tmp8 = stateFromStores1;
           let tmp5 = tmp2;
           if (null != stateFromStores1.getNewestTokenForApplication(value.application_id)) {
@@ -172,8 +170,8 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
             return true;
           }
         } else {
-          let tmp4 = constants;
-          if (constants.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
+          let tmp4 = outer1_11;
+          if (outer1_11.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
             tmp5 = tmp2;
             if (null != value.provider_id) {
               let tmp6 = stateFromStores2;
@@ -192,16 +190,15 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
           }
         }
         let iter3 = tmp();
-        let tmp2 = tmp5;
+        tmp2 = tmp5;
         iter2 = iter3;
       }
       return true;
     }
     return false;
   }, items6);
-  closure_10 = stateFromStores4;
   const items7 = [guildId, stateFromStores3, stateFromStores];
-  const effect = React.useEffect(() => {
+  const effect = navigation.useEffect(() => {
     if (!stateFromStores3) {
       if (0 !== stateFromStores.length) {
         if (!ref.current) {
@@ -218,7 +215,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
           obj["provider_connections_not_connected"] = providerConnectionState.notConnected;
           obj["application_connections_connected"] = applicationConnectionState.connected;
           obj["application_connections_not_connected"] = applicationConnectionState.notConnected;
-          obj3.track(constants3.GUILD_ONBOARDING_STEP_VIEWED, obj);
+          obj3.track(outer1_13.GUILD_ONBOARDING_STEP_VIEWED, obj);
           ref.current = true;
           const obj5 = guildId(isLastStep[19]);
         }
@@ -226,7 +223,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     }
   }, items7);
   const items8 = [stateFromStoresArray.length, stateFromStores1, stateFromStores2, navigation, onComplete, stateFromStores, stateFromStores4, isLastStep, guildId];
-  const callback = React.useCallback(() => {
+  const callback = navigation.useCallback(() => {
     let obj = guildId(isLastStep[17]);
     const providerConnectionState = obj.getProviderConnectionState(stateFromStores);
     const applicationConnectionState = guildId(isLastStep[17]).getApplicationConnectionState(stateFromStores);
@@ -244,30 +241,30 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     obj["provider_connections_not_connected"] = providerConnectionState.notConnected;
     obj["application_connections_connected"] = applicationConnectionState.connected;
     obj["application_connections_not_connected"] = applicationConnectionState.notConnected;
-    obj3.track(constants3.GUILD_ONBOARDING_STEP_COMPLETED, obj);
+    obj3.track(outer1_13.GUILD_ONBOARDING_STEP_COMPLETED, obj);
     if (stateFromStoresArray.length > 0) {
       obj = { currentPrompt: 0 };
-      navigation.push(constants2.PROMPT, obj);
+      navigation.push(outer1_12.PROMPT, obj);
     } else {
       if (obj6.showRulesInOnboarding(stateFromStores1, stateFromStores2)) {
-        navigation.push(constants2.RULES);
+        navigation.push(outer1_12.RULES);
       } else {
         onComplete();
       }
-      const obj6 = guildId(isLastStep[17]);
+      obj6 = guildId(isLastStep[17]);
     }
   }, items8);
   obj = { top: true, style: items9 };
-  const items9 = [, ];
+  items9 = [, ];
   ({ flex: arr12[0], container: arr12[1] } = tmp);
   if (stateFromStores3) {
     obj = {};
-    const items10 = [tmp.flex, { "Bool(false)": null, "Bool(false)": null }];
+    const items10 = [tmp.flex, { justifyContent: "center", alignItems: "center" }];
     obj.style = items10;
-    obj1 = {};
-    const intl4 = arg1(dependencyMap[23]).intl;
-    obj1.children = intl4.string(arg1(dependencyMap[23]).t.ZTNur7);
-    obj.children = callback(arg1(dependencyMap[22]).Text, obj1);
+    obj1 = { variant: "text-md/normal", color: "text-muted" };
+    const intl4 = guildId(isLastStep[23]).intl;
+    obj1.children = intl4.string(guildId(isLastStep[23]).t.ZTNur7);
+    obj.children = callback(guildId(isLastStep[22]).Text, obj1);
     obj.children = callback(closure_4, obj);
     let tmp22 = obj;
   } else {
@@ -278,21 +275,21 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     items11[1] = obj4;
     obj3.contentContainerStyle = items11;
     obj5 = { style: tmp.header };
-    obj6 = { style: tmp.title };
-    const intl = arg1(dependencyMap[23]).intl;
-    obj6.children = intl.string(arg1(dependencyMap[23]).t.eDVMrA);
-    const items12 = [callback(arg1(dependencyMap[22]).Text, obj6), ];
-    const obj7 = { style: tmp.description };
-    const intl2 = arg1(dependencyMap[23]).intl;
-    obj7.children = intl2.string(arg1(dependencyMap[23]).t.BozOXu);
-    items12[1] = callback(arg1(dependencyMap[22]).Text, obj7);
+    obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary" };
+    const intl = guildId(isLastStep[23]).intl;
+    obj6.children = intl.string(guildId(isLastStep[23]).t.eDVMrA);
+    const items12 = [callback(guildId(isLastStep[22]).Text, obj6), ];
+    const obj7 = { style: tmp.description, variant: "text-md/normal", color: "text-muted" };
+    const intl2 = guildId(isLastStep[23]).intl;
+    obj7.children = intl2.string(guildId(isLastStep[23]).t.BozOXu);
+    items12[1] = callback(guildId(isLastStep[22]).Text, obj7);
     obj5.children = items12;
     const items13 = [callback2(closure_4, obj5), ];
     const obj8 = {
       style: tmp.connectionsList,
       children: stateFromStores.map((connection) => {
           const obj = { connection, guildId, location: onComplete(isLastStep[25]).GUILD_ONBOARDING };
-          return callback(onComplete(isLastStep[24]), obj, arg1);
+          return outer1_14(onComplete(isLastStep[24]), obj, arg1);
         })
     };
     items13[1] = callback(closure_4, obj8);
@@ -312,26 +309,26 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     }
     obj11.variant = str;
     obj11.size = "md";
-    const intl3 = arg1(dependencyMap[23]).intl;
+    const intl3 = guildId(isLastStep[23]).intl;
     const string = intl3.string;
-    const t = arg1(dependencyMap[23]).t;
+    const t = guildId(isLastStep[23]).t;
     if (isLastStep) {
       const _HermesInternal = HermesInternal;
-      let combined = "" + string(t.8SuVoE) + " \u{1F389}";
+      let combined = "" + string(t["8SuVoE"]) + " \u{1F389}";
     } else if (stateFromStores4) {
       combined = string(t.PDTjLN);
     } else {
-      combined = string(t.5Wxrcd);
+      combined = string(t["5Wxrcd"]);
     }
     obj11.text = combined;
     obj11.onPress = callback;
     obj11.grow = true;
-    obj9.children = callback(arg1(dependencyMap[26]).Button, obj11);
+    obj9.children = callback(guildId(isLastStep[26]).Button, obj11);
     items14[1] = callback(closure_4, obj9);
     obj2.children = items14;
     obj.children = callback2(closure_4, obj2);
     tmp22 = obj;
     const tmp12 = callback2;
   }
-  return callback(arg1(dependencyMap[21]).SafeAreaPaddingView, tmp22);
+  return callback(guildId(isLastStep[21]).SafeAreaPaddingView, tmp22);
 };

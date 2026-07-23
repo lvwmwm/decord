@@ -1,10 +1,11 @@
-// Module ID: 4174
-// Function ID: 35807
-// Dependencies: []
+// Module ID: 4178
+// Function ID: 35839
+// Dependencies: [4179, 4180, 2]
 
-// Module 4174
-const _module = require(dependencyMap[0]);
-_module.inject({
+// Module 4178
+import assertInjected from "assertInjected";
+
+assertInjected.inject({
   supported() {
     return true;
   },
@@ -16,11 +17,10 @@ _module.inject({
 
   },
   getVoiceEngine() {
-    return require(dependencyMap[1]).default;
+    return require(4180) /* base64Decode */.default;
   },
   getOpenH264LibraryPath() {
 
   }
 });
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("lib/injectMediaEngine.native.tsx");
+const result = require("set").fileFinishedImporting("lib/injectMediaEngine.native.tsx");

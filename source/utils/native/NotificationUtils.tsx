@@ -1,17 +1,19 @@
-// Module ID: 11447
-// Function ID: 89145
-// Dependencies: []
+// Module ID: 11457
+// Function ID: 89195
+// Dependencies: [5, 27, 11448, 653, 11451, 675, 10638, 10246, 2]
 
-// Module 11447
-let closure_3 = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-const PermissionStateType = arg1(dependencyMap[2]).PermissionStateType;
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("utils/native/NotificationUtils.tsx");
+// Module 11457
+import expandLocation from "expandLocation";
+import { NativeModules } from "get ActivityIndicator";
+import { PermissionStateType } from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/native/NotificationUtils.tsx");
 
 export default {
   hasPermission() {
-    return importDefault(dependencyMap[6]).requestPermissions((badge) => {
+    return importDefault(10638).requestPermissions((badge) => {
       let _alert;
       let sound;
       ({ alert: _alert, sound } = badge);
@@ -25,12 +27,12 @@ export default {
     });
   },
   requestPermission(arg0) {
-    const arg1 = arg0;
-    const result = arg1(dependencyMap[4]).setPushPermissionState(PermissionStateType.REQUESTED);
-    const obj = arg1(dependencyMap[4]);
-    importDefault(dependencyMap[5]).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
-    const obj2 = importDefault(dependencyMap[5]);
-    const permissions = importDefault(dependencyMap[6]).requestPermissions();
+    const _require = arg0;
+    let result = _require(11451).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(11451);
+    importDefault(675).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
+    const obj2 = importDefault(675);
+    const permissions = importDefault(10638).requestPermissions();
     permissions.then((sound) => {
       let _alert;
       let badge;
@@ -41,25 +43,25 @@ export default {
       if (!_alert) {
         _alert = badge;
       }
-      let obj = callback(closure_2[5]);
+      let obj = outer1_1(outer1_2[5]);
       obj = { type: "notification" };
       let str = "denied";
       if (_alert) {
         str = "accepted";
       }
       obj.action = str;
-      obj.track(constants.PERMISSIONS_ACKED, obj);
-      const NativePermissionManager = obj.NativePermissionManager;
+      obj.track(outer1_6.PERMISSIONS_ACKED, obj);
+      const NativePermissionManager = outer1_4.NativePermissionManager;
       const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
       notificationAuthorizationStatus.then((authorizationStatus) => {
         if (null != authorizationStatus) {
-          const result = callback(closure_2[4]).updateNotificationAuthorizationStatus(authorizationStatus);
-          const obj = callback(closure_2[4]);
+          const result = callback(outer2_2[4]).updateNotificationAuthorizationStatus(authorizationStatus);
+          const obj = callback(outer2_2[4]);
         }
       });
       if (null != _alert) {
-        if (null != sound) {
-          sound(_alert);
+        if (null != callback) {
+          callback(_alert);
         }
       }
     });
@@ -74,6 +76,6 @@ export default {
     if (arg1 === undefined) {
       num = 1;
     }
-    arg1(dependencyMap[7]).playSound(arg0, num, undefined, arg2);
+    require(10246) /* createSound */.playSound(arg0, num, undefined, arg2);
   }
 };

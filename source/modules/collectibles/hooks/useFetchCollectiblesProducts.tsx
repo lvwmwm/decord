@@ -1,60 +1,60 @@
-// Module ID: 11838
-// Function ID: 91758
+// Module ID: 11850
+// Function ID: 91811
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 8194, 33, 5082, 4126, 689, 44, 1876]
+// Dependencies: [57, 31, 4175, 6774, 653, 624, 1876, 6773, 2]
 // Exports: useFetchCollectiblesProducts
 
-// Module 11838 (_createForOfIteratorHelperLoose)
-import module_31 from "module_31";
-import { useEffect } from "get ActivityIndicator";
-import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO";
-import module_33 from "module_33";
-import { SKUProductLines } from "preload";
-import CollectiblesItemType from "CollectiblesItemType";
+// Module 11850 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import { useEffect } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { SKUProductLines } from "ME";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -65,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,52 +91,48 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const result = CollectiblesItemType.fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProducts.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProducts.tsx");
 
 export const useFetchCollectiblesProducts = function useFetchCollectiblesProducts(first) {
-  const arg1 = first;
+  const _require = first;
   const dependencyMap = arg1;
-  const items = [SAMPLE_PROFILE_ASPECT_RATIO];
-  const stateFromStoresArray = arg1(dependencyMap[5]).useStateFromStoresArray(items, () => arg0.map((arg0) => SAMPLE_PROFILE_ASPECT_RATIO.get(arg0)));
-  let module_31 = stateFromStoresArray;
-  const obj = arg1(dependencyMap[5]);
-  const items1 = [module_33];
-  const stateFromStoresArray1 = arg1(dependencyMap[5]).useStateFromStoresArray(items1, () => arg0.map((arg0) => product.getProduct(arg0)));
-  const useEffect = stateFromStoresArray1;
-  const obj2 = arg1(dependencyMap[5]);
-  const items2 = [module_33];
-  const stateFromStoresArray2 = arg1(dependencyMap[5]).useStateFromStoresArray(items2, () => arg0.map((arg0) => productFetch.getProductFetch(arg0)));
-  SAMPLE_PROFILE_ASPECT_RATIO = stateFromStoresArray2;
-  const obj4 = arg1(dependencyMap[5]);
-  const items3 = [module_33];
-  const stateFromStoresArray3 = arg1(dependencyMap[5]).useStateFromStoresArray(items3, () => arg0.map((arg0) => productFetchBackedOff.isProductFetchBackedOff(arg0)));
-  module_33 = stateFromStoresArray3;
+  const items = [stateFromStoresArray2];
+  const stateFromStoresArray = _require(624).useStateFromStoresArray(items, () => lib.map((arg0) => stateFromStoresArray2.get(arg0)));
+  let obj = _require(624);
+  const items1 = [stateFromStoresArray3];
+  const stateFromStoresArray1 = _require(624).useStateFromStoresArray(items1, () => lib.map((arg0) => stateFromStoresArray3.getProduct(arg0)));
+  const obj2 = _require(624);
+  const items2 = [stateFromStoresArray3];
+  stateFromStoresArray2 = _require(624).useStateFromStoresArray(items2, () => lib.map((arg0) => stateFromStoresArray3.getProductFetch(arg0)));
+  const obj4 = _require(624);
+  const items3 = [stateFromStoresArray3];
+  stateFromStoresArray3 = _require(624).useStateFromStoresArray(items3, () => lib.map((arg0) => stateFromStoresArray3.isProductFetchBackedOff(arg0)));
   const items4 = [first, stateFromStoresArray, stateFromStoresArray2, stateFromStoresArray1, arg1, stateFromStoresArray3];
-  useEffect(() => {
+  stateFromStoresArray1(() => {
     let iter2;
-    const tmp = callback(arg0.entries());
+    const tmp = outer1_7(lib.entries());
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = module_31;
-        let tmp3 = module_31(iter.value, 2);
+        let tmp2 = stateFromStoresArray;
+        let tmp3 = stateFromStoresArray(iter.value, 2);
         let first = tmp3[0];
-        let tmp5 = module_31;
-        let tmp6 = module_31[first];
-        let tmp7 = closure_3;
-        let tmp8 = closure_3[first];
-        let tmp9 = SAMPLE_PROFILE_ASPECT_RATIO;
-        let tmp10 = SAMPLE_PROFILE_ASPECT_RATIO[first];
-        let tmp11 = closure_1;
-        let tmp12 = true === closure_1;
+        let tmp5 = stateFromStoresArray;
+        let tmp6 = stateFromStoresArray[first];
+        let tmp7 = stateFromStoresArray1;
+        let tmp8 = stateFromStoresArray1[first];
+        let tmp9 = stateFromStoresArray2;
+        let tmp10 = stateFromStoresArray2[first];
+        let tmp11 = dependencyMap;
+        let tmp12 = true === dependencyMap;
         if (tmp12) {
           let type;
           if (null != tmp8) {
             type = tmp8.type;
           }
-          let tmp14 = closure_0;
-          let tmp15 = closure_1;
-          tmp12 = type === closure_0(closure_1[6]).CollectiblesItemType.BUNDLE;
+          let tmp14 = lib;
+          let tmp15 = dependencyMap;
+          tmp12 = type === lib(1876).CollectiblesItemType.BUNDLE;
         }
         if (tmp12) {
           tmp12 = 0 === tmp8.items.length;
@@ -145,8 +141,8 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
         if (!tmp16) {
           let tmp17 = null != tmp6;
           if (tmp17) {
-            let tmp18 = closure_6;
-            tmp17 = tmp6.productLine !== closure_6.COLLECTIBLES;
+            let tmp18 = outer1_6;
+            tmp17 = tmp6.productLine !== outer1_6.COLLECTIBLES;
           }
           tmp16 = tmp17;
         }
@@ -158,16 +154,16 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
           tmp16 = "fetching" === state;
         }
         if (!tmp16) {
-          let tmp20 = module_33;
-          tmp16 = module_33[first];
+          let tmp20 = stateFromStoresArray3;
+          tmp16 = stateFromStoresArray3[first];
         }
         if (!tmp16) {
-          let tmp21 = closure_0;
-          let tmp22 = closure_1;
-          let obj = closure_0(closure_1[7]);
+          let tmp21 = lib;
+          let tmp22 = dependencyMap;
+          let obj = lib(6773);
           obj = {};
-          let tmp23 = closure_1;
-          obj.includeBundles = closure_1;
+          let tmp23 = dependencyMap;
+          obj.includeBundles = dependencyMap;
           let collectiblesProduct = obj.fetchCollectiblesProduct(tmp3[1], obj);
         }
         iter2 = tmp();

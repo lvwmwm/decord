@@ -1,13 +1,20 @@
-// Module ID: 8265
-// Function ID: 65212
+// Module ID: 8271
+// Function ID: 65249
 // Name: urlUserId
-// Dependencies: []
+// Dependencies: [5, 1849, 653, 686, 507, 6837, 6842, 1184, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8265 (urlUserId)
+// Module 8271 (urlUserId)
+import set from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function urlUserId(arg0) {
   let tmp = arg0;
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let id;
   if (null != currentUser) {
     id = currentUser.id;
@@ -18,7 +25,7 @@ function urlUserId(arg0) {
   return tmp;
 }
 async function _fetchBadgeDirectory(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let tmp = arg0;
     let obj = arg1;
     if (obj === undefined) {
@@ -26,7 +33,7 @@ async function _fetchBadgeDirectory(arg0, arg1) {
     }
     yield undefined;
     if (null == tmp) {
-      const currentUser = authStore.getCurrentUser();
+      const currentUser = outer2_4.getCurrentUser();
       let id;
       if (null != currentUser) {
         id = currentUser.id;
@@ -34,7 +41,7 @@ async function _fetchBadgeDirectory(arg0, arg1) {
       tmp = id;
     }
     if (null != tmp) {
-      const currentUser1 = authStore.getCurrentUser();
+      const currentUser1 = outer2_4.getCurrentUser();
       let id1;
       if (null != currentUser1) {
         id1 = currentUser1.id;
@@ -55,11 +62,11 @@ async function _fetchBadgeDirectory(arg0, arg1) {
       const text = `attempt:${str4}`;
       const _Date = Date;
       const timestamp = Date.now();
-      let obj1 = callback2(closure_2[3]);
+      let obj1 = outer2_1(outer2_2[3]);
       obj = { type: "BADGE_DIRECTORY_FETCH_START", userId: tmp6 };
       obj1.dispatch(obj);
-      const HTTP = callback(closure_2[4]).HTTP;
-      obj = { url: closure_5.USER_BADGES(callback3(tmp6)), rejectWithError: true };
+      const HTTP = outer2_0(outer2_2[4]).HTTP;
+      obj = { url: outer2_5.USER_BADGES(outer2_7(tmp6)), rejectWithError: true };
       const body = yield HTTP.get(obj).body;
       const items = [combined, "result:success", , ];
       let str8 = "non_empty";
@@ -68,22 +75,22 @@ async function _fetchBadgeDirectory(arg0, arg1) {
       }
       items[2] = `catalog_state:${str8}`;
       items[3] = text;
-      obj1 = { name: callback(closure_2[6]).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH, tags: items };
+      obj1 = { name: outer2_0(outer2_2[6]).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH, tags: items };
       const _Date2 = Date;
-      callback2(closure_2[5]).distribution(obj1, Date.now() - timestamp);
-      const obj5 = callback2(closure_2[5]);
+      outer2_1(outer2_2[5]).distribution(obj1, Date.now() - timestamp);
+      const obj5 = outer2_1(outer2_2[5]);
       const obj2 = { type: "BADGE_DIRECTORY_FETCH_SUCCESS", userId: tmp6, badges: body.badges };
-      callback2(closure_2[3]).dispatch(obj2);
-      const obj7 = callback2(closure_2[3]);
+      outer2_1(outer2_2[3]).dispatch(obj2);
+      const obj7 = outer2_1(outer2_2[3]);
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _fetchBadge(arg0, arg1, arg2) {
   let tmp = arg1;
   if (null == tmp) {
-    const currentUser = currentUser.getCurrentUser();
+    const currentUser = outer2_4.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
@@ -91,19 +98,16 @@ async function _fetchBadge(arg0, arg1, arg2) {
     tmp = id;
   }
   if (null != tmp) {
-    const HTTP = callback(closure_2[4]).HTTP;
-    let obj = { url: closure_5.USER_BADGE(callback3(tmp5), arg0), rejectWithError: true };
-    obj = callback2(closure_2[3]);
+    const HTTP = outer2_0(outer2_2[4]).HTTP;
+    let obj = { url: outer2_5.USER_BADGE(outer2_7(tmp5), arg0), rejectWithError: true };
+    obj = outer2_1(outer2_2[3]);
     obj = { type: "BADGE_FETCH_SUCCESS", userId: tmp, badge: yield HTTP.get(obj).body };
     obj.dispatch(obj);
     const tmp14 = yield HTTP.get(obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ Endpoints: closure_5, ME: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/badges/BadgeDirectoryActionCreators.tsx");
+({ Endpoints: closure_5, ME: closure_6 } = ME);
+const result = require("ME").fileFinishedImporting("modules/badges/BadgeDirectoryActionCreators.tsx");
 
 export const fetchBadgeDirectory = function fetchBadgeDirectory(id) {
   return _fetchBadgeDirectory(...arguments);
@@ -112,7 +116,7 @@ export const fetchBadge = function fetchBadge(GIFTING) {
   return _fetchBadge(...arguments);
 };
 export const markBadgeDirectoryBadgeIndicatorSeen = function markBadgeDirectoryBadgeIndicatorSeen(badgeId) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(686);
   obj = { type: "BADGE_DIRECTORY_MARK_BADGE_INDICATOR_SEEN", badgeId };
   obj.dispatch(obj);
 };

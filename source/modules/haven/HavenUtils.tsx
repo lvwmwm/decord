@@ -1,18 +1,17 @@
-// Module ID: 12574
-// Function ID: 96743
+// Module ID: 12688
+// Function ID: 98899
 // Name: parseParticipant
-// Dependencies: []
+// Dependencies: [12689, 1212, 2910, 2]
 // Exports: getHavenSoundControlName, parseRoom
 
-// Module 12574 (parseParticipant)
+// Module 12688 (parseParticipant)
 function parseParticipant(userId) {
   return { userId: userId.user_id, position: userId.position, avatar: userId.avatar };
 }
 function parseSeat(id) {
   return { id: id.id, claimedBy: id.claimed_by };
 }
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/haven/HavenUtils.tsx");
+const result = require("messagesProxy").fileFinishedImporting("modules/haven/HavenUtils.tsx");
 
 export { parseParticipant };
 export { parseSeat };
@@ -22,15 +21,15 @@ export const parseRoom = function parseRoom(roomId) {
   return { roomId: roomId.room_id, participants: participants.map(parseParticipant), seats: seats.map(parseSeat) };
 };
 export const getHavenSoundControlName = function getHavenSoundControlName(arg0) {
-  if (require(dependencyMap[0]).HavenSoundKeys.RADIO === arg0) {
-    const intl3 = require(dependencyMap[1]).intl;
-    return intl3.string(importDefault(dependencyMap[2]).AjiGKB);
-  } else if (require(dependencyMap[0]).HavenSoundKeys.ENVIRONMENT === arg0) {
-    const intl2 = require(dependencyMap[1]).intl;
-    return intl2.string(importDefault(dependencyMap[2]).YEYIbI);
-  } else if (require(dependencyMap[0]).HavenSoundKeys.CAMPFIRE === arg0) {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(importDefault(dependencyMap[2]).Vk9+Ez);
+  if (require(12689) /* HavenGenres */.HavenSoundKeys.RADIO === arg0) {
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(importDefault(2910).AjiGKB);
+  } else if (require(12689) /* HavenGenres */.HavenSoundKeys.ENVIRONMENT === arg0) {
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(importDefault(2910).YEYIbI);
+  } else if (require(12689) /* HavenGenres */.HavenSoundKeys.CAMPFIRE === arg0) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2910)["Vk9+Ez"]);
   } else {
     return "";
   }

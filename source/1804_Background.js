@@ -1,12 +1,14 @@
 // Module ID: 1804
-// Function ID: 19923
+// Function ID: 19924
 // Name: Background
-// Dependencies: []
+// Dependencies: [31, 33]
 // Exports: default
 
 // Module 1804 (Background)
-importDefault(dependencyMap[0]);
-({ Fragment: closure_0, jsx: closure_1 } = arg1(dependencyMap[1]));
+import "result";
+import jsxProd from "jsxProd";
+
+({ Fragment: closure_0, jsx: closure_1 } = jsxProd);
 
 export default function Background(children) {
   return closure_1(closure_0, { children: children.children });

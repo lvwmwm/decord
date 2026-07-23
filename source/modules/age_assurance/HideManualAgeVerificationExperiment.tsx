@@ -1,14 +1,15 @@
-// Module ID: 7555
-// Function ID: 60478
+// Module ID: 7561
+// Function ID: 60515
 // Name: useIsManualAgeVerificationHidden
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden
 
-// Module 7555 (useIsManualAgeVerificationHidden)
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { isHidden: false }, variations: { [1]: { isHidden: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/age_assurance/HideManualAgeVerificationExperiment.tsx");
+// Module 7561 (useIsManualAgeVerificationHidden)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2025-11-hide-manual-link", defaultConfig: { isHidden: false }, variations: { [1]: { isHidden: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/age_assurance/HideManualAgeVerificationExperiment.tsx");
 
 export const useIsManualAgeVerificationHidden = function useIsManualAgeVerificationHidden(age_verification_get_started_modal) {
   return closure_0.useConfig({ location: age_verification_get_started_modal }).isHidden;

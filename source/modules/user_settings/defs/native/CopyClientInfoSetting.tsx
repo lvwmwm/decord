@@ -1,9 +1,17 @@
-// Module ID: 14273
-// Function ID: 107855
+// Module ID: 14387
+// Function ID: 110008
 // Name: getClientInfoString
-// Dependencies: []
+// Dependencies: [10440, 33, 1554, 4098, 10939, 5492, 3830, 5500, 5186, 1212, 5502, 3994, 4078, 4110, 10095, 9157, 3803, 2]
 
-// Module 14273 (getClientInfoString)
+// Module 14387 (getClientInfoString)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import createToggle from "createToggle";
+import importAllResult from "getConstants";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function getClientInfoString(ReleaseChannel) {
   let str = "N/A";
   if (null != ReleaseChannel) {
@@ -18,7 +26,7 @@ function getClientInfo() {
   const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
   let tmp;
   if (null != overrides) {
-    tmp = overrides[closure_0(undefined, closure_2[4]).DEVICE_FIELD];
+    tmp = overrides[require(undefined, 10939) /* setBuildOverrideForBranch */.DEVICE_FIELD];
   }
   let str2 = "N/A";
   let str3 = "N/A";
@@ -29,7 +37,7 @@ function getClientInfo() {
     str2 = tmp.id;
   }
   const obj = {};
-  const str = closure_6.Manifest;
+  str = closure_6.Manifest;
   const tmp5 = getClientInfoString;
   const tmp6 = getClientInfoString(closure_6.Build);
   obj.appVersion = getClientInfoString(closure_6.Version);
@@ -40,149 +48,147 @@ function getClientInfo() {
   return obj;
 }
 function copyToast(arg0) {
-  arg1(dependencyMap[5]).copy(arg0);
-  const obj = arg1(dependencyMap[5]);
-  const result = arg1(dependencyMap[6]).presentCopiedToClipboard();
+  require(5492) /* _copy */.copy(arg0);
+  const obj = require(5492) /* _copy */;
+  const result = require(3830) /* presentAddedFriendToast */.presentCopiedToClipboard();
 }
 function ClientClientInfoActionSheet() {
   let obj = {};
   obj = {};
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.title = intl.string(arg1(dependencyMap[9]).t.Na2lF9);
-  obj.header = callback(arg1(dependencyMap[8]).BottomSheetTitleHeader, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.Na2lF9);
+  obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj.startExpanded = true;
   obj = { hasIcons: false };
   const obj1 = {};
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj1.label = intl2.string(arg1(dependencyMap[9]).t.H66MEk);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.label = intl2.string(require(1212) /* getSystemLocale */.t.H66MEk);
   obj1.subLabel = getClientInfo().appVersion;
   obj1.onPress = function onPress() {
-    callback3(callback2().appVersion);
+    outer1_9(outer1_8().appVersion);
   };
-  const items = [callback(arg1(dependencyMap[10]).ActionSheetRow, obj1), , , , , , ];
+  const items = [callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj1), , , , , , ];
   const obj2 = {};
-  const intl3 = arg1(dependencyMap[9]).intl;
-  obj2.label = intl3.string(arg1(dependencyMap[9]).t.zuaWIt);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.zuaWIt);
   obj2.subLabel = getClientInfo().buildNumber;
   obj2.onPress = function onPress() {
-    callback3(callback2().buildNumber);
+    outer1_9(outer1_8().buildNumber);
   };
-  items[1] = callback(arg1(dependencyMap[10]).ActionSheetRow, obj2);
+  items[1] = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
   const obj3 = {};
-  const intl4 = arg1(dependencyMap[9]).intl;
-  obj3.label = intl4.string(arg1(dependencyMap[9]).t.YD/2+H);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj3.label = intl4.string(require(1212) /* getSystemLocale */.t["YD/2+H"]);
   obj3.subLabel = getClientInfo().releaseChannel;
   obj3.onPress = function onPress() {
-    callback3(callback2().releaseChannel);
+    outer1_9(outer1_8().releaseChannel);
   };
-  items[2] = callback(arg1(dependencyMap[10]).ActionSheetRow, obj3);
+  items[2] = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj3);
   const obj4 = {};
-  const intl5 = arg1(dependencyMap[9]).intl;
-  obj4.label = intl5.string(arg1(dependencyMap[9]).t.4bhpIV);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj4.label = intl5.string(require(1212) /* getSystemLocale */.t["4bhpIV"]);
   obj4.subLabel = getClientInfo().manifest;
   obj4.onPress = function onPress() {
-    callback3(callback2().manifest);
+    outer1_9(outer1_8().manifest);
   };
-  items[3] = callback(arg1(dependencyMap[10]).ActionSheetRow, obj4);
+  items[3] = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj4);
   const obj5 = {};
-  const intl6 = arg1(dependencyMap[9]).intl;
-  obj5.label = intl6.string(arg1(dependencyMap[9]).t.Wj3LW4);
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj5.label = intl6.string(require(1212) /* getSystemLocale */.t.Wj3LW4);
   obj5.subLabel = getClientInfo().buildOverride;
   obj5.onPress = function onPress() {
-    callback3(callback2().buildOverride);
+    outer1_9(outer1_8().buildOverride);
   };
-  items[4] = callback(arg1(dependencyMap[10]).ActionSheetRow, obj5);
-  let obj8 = arg1(dependencyMap[11]);
+  items[4] = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj5);
+  let obj8 = require(3994) /* isFabric */;
   let tmp3 = null;
   if (obj8.isFabric()) {
     const obj6 = {
+      label: "React Native New Architecture",
+      subLabel: "Enabled",
       onPress() {
-          callback3("React Native New Architecture is enabled.");
+          outer1_9("React Native New Architecture is enabled.");
         }
     };
-    tmp3 = callback(arg1(dependencyMap[10]).ActionSheetRow, obj6);
+    tmp3 = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj6);
   }
   items[5] = tmp3;
   let tmp8Result = null;
   if (obj11.isFabric()) {
     const obj7 = { label: "Bridgeless mode" };
     let str2 = "Disabled";
-    if (arg1(dependencyMap[11]).isBridgeless) {
+    if (require(3994) /* isFabric */.isBridgeless) {
       str2 = "Enabled";
     }
     obj7.subLabel = str2;
     obj7.onPress = function onPress() {
       let str = "disabled";
-      if (callback(closure_2[11]).isBridgeless) {
+      if (outer1_0(outer1_2[11]).isBridgeless) {
         str = "enabled";
       }
-      closure_9("Bridgeless is " + str + ".");
+      outer1_9("Bridgeless is " + str + ".");
     };
-    tmp8Result = callback(arg1(dependencyMap[10]).ActionSheetRow, obj7);
+    tmp8Result = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj7);
     const tmp8 = callback;
   }
   items[6] = tmp8Result;
   obj.children = items;
-  const items1 = [closure_5(arg1(dependencyMap[10]).ActionSheetRow.Group, obj), ];
+  const items1 = [closure_5(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj), ];
   obj8 = { hasIcons: true };
-  const obj9 = { icon: callback(arg1(dependencyMap[12]).CopyIcon, {}) };
-  const intl7 = arg1(dependencyMap[9]).intl;
-  obj9.label = intl7.string(arg1(dependencyMap[9]).t.7dqZ6H);
+  const obj9 = { icon: callback(require(4078) /* CopyIcon */.CopyIcon, {}) };
+  const intl7 = require(1212) /* getSystemLocale */.intl;
+  obj9.label = intl7.string(require(1212) /* getSystemLocale */.t["7dqZ6H"]);
   obj9.onPress = function onPress() {
     let appVersion;
     let buildNumber;
     let buildOverride;
     let manifest;
     let releaseChannel;
-    const tmp = callback2();
+    const tmp = outer1_8();
     ({ appVersion, buildNumber } = tmp);
     ({ releaseChannel, buildOverride, manifest } = tmp);
-    const deviceInfo = callback(closure_2[13]).getDeviceInfo();
-    const obj = callback(closure_2[13]);
-    callback3("App: " + appVersion + " (" + buildNumber + ") " + releaseChannel + "; Manifest: " + manifest + "; Build Override: " + buildOverride + "; " + "Device: " + deviceInfo + " OS " + callback(closure_2[13]).getSystemVersion() + ";");
+    const deviceInfo = outer1_0(outer1_2[13]).getDeviceInfo();
+    const obj = outer1_0(outer1_2[13]);
+    outer1_9("App: " + appVersion + " (" + buildNumber + ") " + releaseChannel + "; Manifest: " + manifest + "; Build Override: " + buildOverride + "; " + "Device: " + deviceInfo + " OS " + outer1_0(outer1_2[13]).getSystemVersion() + ";");
   };
-  obj8.children = callback(arg1(dependencyMap[10]).ActionSheetRow, obj9);
-  items1[1] = callback(arg1(dependencyMap[10]).ActionSheetRow.Group, obj8);
+  obj8.children = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj9);
+  items1[1] = callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj8);
   obj.children = items1;
-  return closure_5(arg1(dependencyMap[7]).ActionSheet, obj);
+  return closure_5(require(5500) /* ActionSheet */.ActionSheet, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const constants = importAll(dependencyMap[2]).getConstants();
-const importAllResult = importAll(dependencyMap[2]);
-const obj2 = arg1(dependencyMap[14]);
-const pressable = obj2.createPressable({
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const constants = require("getConstants").getConstants();
+const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = arg1(dependencyMap[9]).intl;
-    return intl.string(arg1(dependencyMap[9]).t.Na2lF9);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.Na2lF9);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[15]).ClipboardListIcon,
+  IconComponent: require("ClipboardListIcon").ClipboardListIcon,
   onPress: function handleClientInfoPress() {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(4098);
     obj = { default: ClientClientInfoActionSheet };
     obj.openLazy(Promise.resolve(obj), "ClientClientInfoActionSheet");
   },
-  usePredicate: arg1(dependencyMap[16]).DeveloperMode.useSetting,
+  usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   withArrow: true
 });
-const obj = {
+let obj = {
   useTitle() {
-    const intl = arg1(dependencyMap[9]).intl;
-    return intl.string(arg1(dependencyMap[9]).t.Na2lF9);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.Na2lF9);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[15]).ClipboardListIcon,
+  IconComponent: require("ClipboardListIcon").ClipboardListIcon,
   onPress: function handleClientInfoPress() {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(4098);
     obj = { default: ClientClientInfoActionSheet };
     obj.openLazy(Promise.resolve(obj), "ClientClientInfoActionSheet");
   },
-  usePredicate: arg1(dependencyMap[16]).DeveloperMode.useSetting,
+  usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting,
   withArrow: true
 };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/defs/native/CopyClientInfoSetting.tsx");
+let result = require("getConstants").fileFinishedImporting("modules/user_settings/defs/native/CopyClientInfoSetting.tsx");
 
 export default pressable;
 export { getClientInfoString };

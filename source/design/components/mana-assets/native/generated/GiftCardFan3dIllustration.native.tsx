@@ -1,13 +1,13 @@
-// Module ID: 6191
-// Function ID: 50219
+// Module ID: 6196
+// Function ID: 50248
 // Name: GiftCardFan3dIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6197, 2]
 // Exports: GiftCardFan3dIllustration
 
-// Module 6191 (GiftCardFan3dIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardFan3dIllustration.native.tsx");
+// Module 6196 (GiftCardFan3dIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardFan3dIllustration.native.tsx");
 
 export const GiftCardFan3dIllustration = function GiftCardFan3dIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const GiftCardFan3dIllustration = function GiftCardFan3dIllustration(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6197) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const GiftCardFan3dIllustration = function GiftCardFan3dIllustration(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

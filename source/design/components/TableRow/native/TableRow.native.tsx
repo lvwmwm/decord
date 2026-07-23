@@ -1,9 +1,20 @@
-// Module ID: 5162
-// Function ID: 44949
+// Module ID: 5165
+// Function ID: 44968
 // Name: TableRowInner
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1324, 5166, 3834, 5167, 5125, 5170, 5171, 5174, 4549, 477, 5175, 4126, 2]
 
-// Module 5162 (TableRowInner)
+// Module 5165 (TableRowInner)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 class TableRow {
   constructor(arg0) {
     ({ icon, disabled } = global);
@@ -15,22 +26,22 @@ class TableRow {
     if (variant === undefined) {
       variant = "default";
     }
-    obj = {};
+    obj = { label: 0, subLabel: 0, icon: 0, trailing: 0, arrow: 0, onPress: 0, disabled: 0, start: 0, end: 0, labelLineClamp: 0, subLabelLineClamp: 0, variant: 0, draggable: 0, dragHandlePressableProps: 0, height: 0 };
     ({ draggable, dragHandlePressableProps, height } = global);
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
-    MobileVisualRefreshExperiment = arg1(dependencyMap[5]).MobileVisualRefreshExperiment;
+    MobileVisualRefreshExperiment = require("useIsMobileVisualRefreshExperimentEnabled").MobileVisualRefreshExperiment;
     enabled = MobileVisualRefreshExperiment.useConfig({ location: "TableRow" }).enabled;
-    context = importAll.useContext(arg1(dependencyMap[6]).TableRowGroupContext);
+    context = result.useContext(require("context").TableRowGroupContext);
     tmp4 = !context;
     if (tmp4) {
       flag = true;
       tmp4 = true === end;
     }
-    obj2 = arg1(dependencyMap[7]);
-    token = obj2.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
+    obj2 = require("map");
+    token = obj2.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS);
     tmp6 = jsx;
-    obj = { -1861921109: 24, -1779290825: 24, -1724409913: null };
+    obj = { radius: null, shadow: "none", border: "none" };
     obj.radius = token;
     str = undefined;
     if (enabled) {
@@ -57,7 +68,7 @@ class TableRow {
     obj1.dragHandlePressableProps = dragHandlePressableProps;
     obj1.isRefreshEnabled = enabled;
     obj["children"] = jsx(TableRowInner, obj1);
-    tmp6Result = tmp6(arg1(dependencyMap[8]).InternalCard, obj);
+    tmp6Result = tmp6(require("getCardBackgroundToken").InternalCard, obj);
     tmp10 = tmp6Result;
     if (!context) {
       tmp10 = tmp6Result;
@@ -68,12 +79,12 @@ class TableRow {
         items = [, ];
         items[0] = tmp6Result;
         tmp13 = jsx;
-        tmp14 = arg1;
-        tmp15 = dependencyMap;
+        tmp14 = closure_0;
+        tmp15 = closure_2;
         num = 9;
         obj3 = {};
         obj3.adjustSpacingForIcon = null != icon;
-        items[1] = jsx(arg1(dependencyMap[9]).TableRowDivider, obj3);
+        items[1] = jsx(require("TableRowDivider").TableRowDivider, obj3);
         obj2.children = items;
         tmp10 = jsxs(Fragment, obj2);
       }
@@ -94,19 +105,19 @@ class TableRowInner {
     }
     dragHandlePressableProps = global.dragHandlePressableProps;
     ({ borderRadius, height } = global);
-    tmp = importDefault(dependencyMap[5])("TableRowInner");
+    tmp = require("useIsMobileVisualRefreshExperimentEnabled")("TableRowInner");
     tmp2 = undefined;
-    if (importAll.isValidElement(trailing)) {
-      tmp3 = arg1;
-      tmp4 = dependencyMap;
+    if (result.isValidElement(trailing)) {
+      tmp3 = closure_0;
+      tmp4 = closure_2;
       num = 12;
-      if (trailing.type === arg1(dependencyMap[12]).TableRowTrailingText) {
+      if (trailing.type === require("TableRowTrailingText").TableRowTrailingText) {
         tmp2 = trailing;
       }
     }
-    obj = arg1(dependencyMap[13]);
+    obj = require("getFontScale");
     fontScale = obj.useFontScale();
-    obj2 = arg1(dependencyMap[14]);
+    obj2 = require("set");
     if (obj2.isAndroid()) {
       num3 = 1.2;
       tmp6 = fontScale > 1.2;
@@ -114,15 +125,15 @@ class TableRowInner {
       num2 = 1.5;
       tmp6 = fontScale > 1.5;
     }
-    tmp7 = f44952(true === disabled, null != tmp2, tmp6, tmp);
-    obj3 = arg1(dependencyMap[7]);
-    token = obj3.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
-    obj4 = arg1(dependencyMap[7]);
+    tmp7 = f44971(true === disabled, null != tmp2, tmp6, tmp);
+    obj3 = require("map");
+    token = obj3.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
+    obj4 = require("map");
     obj = { style: items };
     items = [, ];
     items[0] = tmp7.row;
     items[1] = { borderRadius, height };
-    token1 = obj4.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_LABEL_COLOR);
+    token1 = obj4.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_LABEL_COLOR);
     tmp10 = jsxs;
     tmp11 = View;
     if (flag) {
@@ -133,15 +144,15 @@ class TableRowInner {
       tmp15 = dragHandlePressableProps;
       merged = Object.assign(dragHandlePressableProps);
       tmp17 = jsx;
-      tmp18 = arg1;
-      tmp19 = dependencyMap;
+      tmp18 = closure_0;
+      tmp19 = closure_2;
       num4 = 15;
       obj2 = {};
       str = "xs";
       obj2.size = "xs";
       obj2.style = tmp7.dragHandle;
       str2 = "children";
-      obj1["children"] = jsx(arg1(dependencyMap[15]).DragIcon, obj2);
+      obj1["children"] = jsx(require("DragIcon").DragIcon, obj2);
       flag = jsx(Pressable, obj1);
     }
     items1 = [, , , , ];
@@ -163,9 +174,9 @@ class TableRowInner {
     tmp25 = jsxs;
     tmp26 = View;
     tmp28Result = label;
-    if (!importAll.isValidElement(label)) {
-      tmp29 = arg1;
-      tmp30 = dependencyMap;
+    if (!result.isValidElement(label)) {
+      tmp29 = closure_0;
+      tmp30 = closure_2;
       num5 = 16;
       tmp28 = jsx;
       obj6 = {};
@@ -177,18 +188,19 @@ class TableRowInner {
       }
       obj6.color = str3;
       obj6.lineClamp = labelLineClamp;
+      obj6.includeFontPadding = true;
       obj6.children = label;
-      tmp28Result = tmp28(arg1(dependencyMap[16]).Text, obj6);
+      tmp28Result = tmp28(require("Text").Text, obj6);
     }
     items2 = [, ];
     items2[0] = tmp28Result;
     tmp31 = null != subLabel;
     if (tmp31) {
-      tmp32 = importAll;
+      tmp32 = result;
       tmp34Result = subLabel;
-      if (!importAll.isValidElement(subLabel)) {
-        tmp35 = arg1;
-        tmp36 = dependencyMap;
+      if (!result.isValidElement(subLabel)) {
+        tmp35 = closure_0;
+        tmp36 = closure_2;
         num6 = 16;
         tmp34 = jsx;
         obj7 = {};
@@ -201,8 +213,9 @@ class TableRowInner {
         }
         obj7.color = str6;
         obj7.lineClamp = subLabelLineClamp;
+        obj7.includeFontPadding = true;
         obj7.children = subLabel;
-        tmp34Result = tmp34(arg1(dependencyMap[16]).Text, obj7);
+        tmp34Result = tmp34(require("Text").Text, obj7);
       }
       tmp31 = tmp34Result;
     }
@@ -236,29 +249,26 @@ class TableRowInner {
     items1[3] = tmp40;
     if (arrow) {
       tmp43 = jsx;
-      tmp44 = arg1;
-      tmp45 = dependencyMap;
+      tmp44 = closure_0;
+      tmp45 = closure_2;
       num7 = 11;
-      arrow = jsx(arg1(dependencyMap[11]).TableRowArrow, {});
+      arrow = jsx(require("TableRowArrow").TableRowArrow, {});
     }
     items1[4] = arrow;
     obj.children = items1;
     return tmp10(tmp11, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
+({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_9 = { padding: 0 };
-const tmp3 = arg1(dependencyMap[2]);
-let closure_10 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
+let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2) => {
   let flag = arg3;
   if (arg3 === undefined) {
     flag = false;
   }
   let obj = {};
-  obj = { padding: importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_PADDING, minHeight: importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center" };
+  obj = { padding: importDefault(689).modules.mobile.TABLE_ROW_PADDING, minHeight: importDefault(689).modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center" };
   let str = "row";
   let str2 = "center";
   let num = 1;
@@ -268,15 +278,15 @@ let closure_10 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   obj.opacity = num;
   let md;
   if (flag) {
-    md = importDefault(dependencyMap[4]).radii.md;
+    md = importDefault(689).radii.md;
   }
   obj.borderRadius = md;
   obj.row = obj;
-  obj = { minWidth: importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_ICON_SIZE, marginEnd: importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_PADDING, alignItems: str2, justifyContent: str2 };
+  obj = { minWidth: importDefault(689).modules.mobile.TABLE_ROW_ICON_SIZE, marginEnd: importDefault(689).modules.mobile.TABLE_ROW_PADDING, alignItems: str2, justifyContent: str2 };
   obj.iconContainer = obj;
   let num2 = 18;
   obj.trailing = { marginStart: 18 };
-  const obj1 = { createStyles: null, guild_id: 1, bottom: "absolute", flexDirection: "100%", alignItems: "100%" };
+  const obj1 = { flexShrink: 1, flexGrow: 1, flexDirection: null, alignItems: null, justifyContent: "space-between" };
   if (arg2) {
     str = "column";
   }
@@ -321,11 +331,10 @@ let closure_10 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   obj.dragHandle = { marginEnd: 8 };
   return obj;
 });
-TableRow.Icon = arg1(dependencyMap[10]).TableRowIcon;
-TableRow.Arrow = arg1(dependencyMap[11]).TableRowArrow;
-TableRow.TrailingText = arg1(dependencyMap[12]).TableRowTrailingText;
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("design/components/TableRow/native/TableRow.native.tsx");
+TableRow.Icon = require("TableRowIcon").TableRowIcon;
+TableRow.Arrow = require("TableRowArrow").TableRowArrow;
+TableRow.TrailingText = require("TableRowTrailingText").TableRowTrailingText;
+const result = require("jsxProd").fileFinishedImporting("design/components/TableRow/native/TableRow.native.tsx");
 
 export { TableRow };
 export { TableRowInner };

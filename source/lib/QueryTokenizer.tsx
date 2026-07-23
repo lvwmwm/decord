@@ -1,12 +1,11 @@
-// Module ID: 10076
-// Function ID: 77989
+// Module ID: 10084
+// Function ID: 78029
 // Name: getMatch
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 10076 (getMatch)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 10084 (getMatch)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
 function getMatch(str, arg1, index) {
   if (null == arg1) {
@@ -64,7 +63,7 @@ function getMatch(str, arg1, index) {
             } else {
               let result = cache.set(tmp2[0], tmp21);
               tmp6 = tmp21;
-              // break
+              break;
             }
           }
         }
@@ -84,17 +83,17 @@ function fixMatchIndex(arg0, index) {
     return items;
   }
 }
-let closure_2 = /.+/g;
-const tmp2 = () => {
+const re2 = /.+/g;
+let tmp2 = (() => {
   class QueryTokenizer {
     constructor() {
       items = arg0;
       self = this;
-      QueryTokenizer = this;
+      self = this;
       if (arg0 === undefined) {
         items = [];
       }
-      tmp = QueryTokenizer(self, QueryTokenizer);
+      tmp = QueryTokenizer(self, self);
       self._rules = [];
       self._followers = {};
       self._nonTokenType = "NON_TOKEN";
@@ -103,7 +102,6 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = QueryTokenizer;
   let obj = {
     key: "reset",
     value() {
@@ -112,13 +110,13 @@ const tmp2 = () => {
       this._nonTokenType = "NON_TOKEN";
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "addRule",
     value(type) {
       let follows;
       let validator;
-      const QueryTokenizer = this;
+      const self = this;
       type = type.type;
       ({ follows, validator } = type);
       const regex = type.regex;
@@ -168,20 +166,20 @@ const tmp2 = () => {
           if (null != _getMatchResult) {
             let tmp4 = null != `` && "" !== ``;
             if (tmp4) {
-              let tmp5 = closure_3;
-              let tmp6 = closure_5;
-              let tmp7 = closure_2;
-              let prototype = closure_3.prototype;
+              let tmp5 = outer1_3;
+              let tmp6 = outer1_5;
+              let tmp7 = outer1_2;
+              let prototype = outer1_3.prototype;
               let tmp8 = new.target;
               let tmp9 = new.target;
-              let tmp10 = new closure_3(closure_5(str2.match(closure_2), num), self._nonTokenType);
+              let tmp10 = new outer1_3(outer1_5(str2.match(outer1_2), num), self._nonTokenType);
               let tmp11 = tmp10;
               let arr = items.push(tmp10);
             }
             arr = items.push(_getMatchResult);
             let sum = num + (_getMatchResult.length + str2.length);
             str = str.substring(_getMatchResult.length);
-            let tmp = _getMatchResult;
+            tmp = _getMatchResult;
             let str4 = "";
           } else {
             str4 = str2 + str[0];
@@ -195,8 +193,8 @@ const tmp2 = () => {
         } while (str.length > 0);
       }
       if (tmp14) {
-        const prototype2 = ctor.prototype;
-        const tmp20 = new ctor(callback2(str3.match(closure_2), num2), self._nonTokenType);
+        const prototype2 = outer1_3.prototype;
+        const tmp20 = new outer1_3(outer1_5(str3.match(outer1_2), num2), self._nonTokenType);
         items.push(tmp20);
       }
       return items;
@@ -226,6 +224,7 @@ const tmp2 = () => {
           }
           return clearResult;
         });
+        continue;
       }
     }
   };
@@ -244,17 +243,17 @@ const tmp2 = () => {
       let tmp3;
       if (end === arg2) {
         const _String = String;
-        tmp3 = callback(arg0, self._followers[String(undefined, type)], arg2);
+        tmp3 = outer1_4(arg0, self._followers[String(undefined, type)], arg2);
       }
       if (null == tmp3) {
-        tmp3 = callback(arg0, self._rules, arg2);
+        tmp3 = outer1_4(arg0, self._rules, arg2);
       }
       return tmp3;
     }
   };
   return callback(QueryTokenizer, items);
-}();
-const tmp3 = () => {
+})();
+let tmp3 = (() => {
   class Token {
     constructor(arg0, arg1) {
       self = this;
@@ -301,14 +300,13 @@ const tmp3 = () => {
       return;
     }
   }
-  let closure_0 = Token;
   let obj = {
     key: "end",
     get() {
       return this.start + this.length;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "length",
     get() {
@@ -362,10 +360,11 @@ const tmp3 = () => {
     }
   };
   return callback(Token, items);
-}();
+})();
+let closure_3 = tmp3;
 tmp2.NON_TOKEN_TYPE = "NON_TOKEN";
 tmp2.Token = tmp3;
-const result = items.fileFinishedImporting("lib/QueryTokenizer.tsx");
+let result = require("set").fileFinishedImporting("lib/QueryTokenizer.tsx");
 
 export default tmp2;
 export const NON_TOKEN_TYPE = "NON_TOKEN";

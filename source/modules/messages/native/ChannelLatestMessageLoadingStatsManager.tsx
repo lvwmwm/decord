@@ -1,21 +1,23 @@
-// Module ID: 10852
-// Function ID: 84313
+// Module ID: 10862
+// Function ID: 84362
 // Name: ChannelLatestMessageLoadingStatsManager
-// Dependencies: []
+// Dependencies: [6, 7, 653, 6700, 2]
 
-// Module 10852 (ChannelLatestMessageLoadingStatsManager)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const tmp2 = () => {
+// Module 10862 (ChannelLatestMessageLoadingStatsManager)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { AnalyticEvents } from "ME";
+import set from "ME";
+
+const require = arg1;
+const tmp2 = (() => {
   class ChannelLatestMessageLoadingStatsManager {
     constructor(arg0) {
-      tmp = closure_2(this, ChannelLatestMessageLoadingStatsManager);
+      tmp = outer1_2(this, ChannelLatestMessageLoadingStatsManager);
       this.label = arg0;
       return;
     }
   }
-  const arg1 = ChannelLatestMessageLoadingStatsManager;
   let obj = {
     key: "start",
     value(channelId) {
@@ -44,9 +46,9 @@ const tmp2 = () => {
             const seenChannelIds = ChannelLatestMessageLoadingStatsManager.seenChannelIds;
             seenChannelIds.add(channelId.channelId);
           }
-          let obj = ChannelLatestMessageLoadingStatsManager(closure_1[3]);
+          let obj = ChannelLatestMessageLoadingStatsManager(outer1_1[3]);
           obj = { load_duration_ms: diff, were_messages_cached: channelId.areMessagesCached, is_first_load: tmp11 };
-          obj.trackClickstream(constants.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, obj);
+          obj.trackClickstream(outer1_4.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, obj);
           tmp.latestChannelMessagesLoad = undefined;
         }
       }
@@ -54,9 +56,9 @@ const tmp2 = () => {
   };
   items[2] = obj;
   return callback(ChannelLatestMessageLoadingStatsManager, items);
-}();
-tmp2.seenChannelIds = new Set();
-const set = new Set();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/messages/native/ChannelLatestMessageLoadingStatsManager.tsx");
+})();
+let set = new Set();
+tmp2.seenChannelIds = set;
+const result = set.fileFinishedImporting("modules/messages/native/ChannelLatestMessageLoadingStatsManager.tsx");
 
 export default tmp2;

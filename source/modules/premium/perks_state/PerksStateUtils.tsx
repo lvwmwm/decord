@@ -1,18 +1,21 @@
 // Module ID: 1865
-// Function ID: 20535
+// Function ID: 20536
 // Name: parseServerPerkConfigKind
-// Dependencies: []
+// Dependencies: [57, 1866, 483, 1867, 2]
 // Exports: getPerkConfig, parseServerPerks
 
 // Module 1865 (parseServerPerkConfigKind)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
 function parseServerPerkConfigKind(kind) {
   if (null != kind.kind) {
     const type = kind.kind.type;
-    if (arg1(dependencyMap[1]).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE === type) {
-      let obj = { type: arg1(dependencyMap[1]).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE, maxSize: kind.kind.max_size };
+    if (require(1866) /* PerkConfigType */.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE === type) {
+      let obj = { type: require(1866) /* PerkConfigType */.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE, maxSize: kind.kind.max_size };
       return obj;
-    } else if (arg1(dependencyMap[1]).PerkConfigType.INCREASED_GUILD_LIMIT === type) {
-      obj = { type: arg1(dependencyMap[1]).PerkConfigType.INCREASED_GUILD_LIMIT, maxGuilds: kind.kind.max_guilds };
+    } else if (require(1866) /* PerkConfigType */.PerkConfigType.INCREASED_GUILD_LIMIT === type) {
+      obj = { type: require(1866) /* PerkConfigType */.PerkConfigType.INCREASED_GUILD_LIMIT, maxGuilds: kind.kind.max_guilds };
       return obj;
     }
   }
@@ -26,11 +29,11 @@ function hasPerk(perks, MONTHLY_ORBS) {
     const rounded = Math.floor(MONTHLY_ORBS / 64);
     let hasItem = !tmp7;
     if (rounded < activePerksBitmask.length) {
-      const obj = importAll(dependencyMap[2]);
-      const obj2 = importAll(dependencyMap[2]);
-      const deserializeResult = importAll(dependencyMap[2]).deserialize(activePerksBitmask[rounded]);
-      hasItem = obj.has(deserializeResult, importAll(dependencyMap[2]).getFlag(MONTHLY_ORBS % 64));
-      const obj3 = importAll(dependencyMap[2]);
+      const obj = importAll(483);
+      const obj2 = importAll(483);
+      const deserializeResult = importAll(483).deserialize(activePerksBitmask[rounded]);
+      hasItem = obj.has(deserializeResult, importAll(483).getFlag(MONTHLY_ORBS % 64));
+      const obj3 = importAll(483);
     }
     return hasItem;
   }
@@ -38,21 +41,21 @@ function hasPerk(perks, MONTHLY_ORBS) {
 function getPerkSource(perks, MONTHLY_ORBS) {
   if (null != perks) {
     const _String = String;
+    const tmp2 = perks.configByPerk[String(undefined, MONTHLY_ORBS)];
     let source;
-    if (null != perks.configByPerk[String(undefined, MONTHLY_ORBS)]) {
+    if (null != tmp2) {
       source = tmp2.source;
     }
     if (null != source) {
       source = tmp2.source;
     } else if (hasPerk(perks, MONTHLY_ORBS)) {
-      const items = [MONTHLY_ORBS(dependencyMap[3]).PerkSource.SOURCE_NITRO];
+      const items = [require(1867) /* _callSuper */.PerkSource.SOURCE_NITRO];
       source = items;
     }
     return source;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/perks_state/PerksStateUtils.tsx");
+const result = require("fromHexReverseArray").fileFinishedImporting("modules/premium/perks_state/PerksStateUtils.tsx");
 
 export const parseServerPerks = function parseServerPerks(perks) {
   let length;
@@ -65,12 +68,12 @@ export const parseServerPerks = function parseServerPerks(perks) {
     let num = 0;
     if (0 < entries.length) {
       do {
-        let tmp = closure_3;
-        let tmp2 = closure_3(entries[num], 2);
+        let tmp = callback;
+        let tmp2 = callback(entries[num], 2);
         let tmp3 = tmp2[1];
         obj = { source: tmp3.source };
-        let tmp4 = closure_4;
-        obj.kind = closure_4(tmp3);
+        let tmp4 = parseServerPerkConfigKind;
+        obj.kind = parseServerPerkConfigKind(tmp3);
         obj[tmp2[0]] = obj;
         num = num + 1;
         length = entries.length;
@@ -87,7 +90,8 @@ export { getPerkSource };
 export const getPerkConfig = function getPerkConfig(perks, MONTHLY_ORBS) {
   if (null != perks) {
     const _String = String;
-    if (null != perks.configByPerk[String(undefined, MONTHLY_ORBS)]) {
+    const tmp2 = perks.configByPerk[String(undefined, MONTHLY_ORBS)];
+    if (null != tmp2) {
       const obj = { source: getPerkSource(perks, MONTHLY_ORBS), kind: tmp2.kind };
       return obj;
     }

@@ -1,9 +1,22 @@
-// Module ID: 4137
-// Function ID: 34433
+// Module ID: 4141
+// Function ID: 34463
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1921, 1316, 1905, 587, 3803, 566, 686, 2]
 
-// Module 4137 (_isNativeReflectConstruct)
+// Module 4141 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "CHANGELOG_MODAL_KEY";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import CHANGELOG_MODAL_KEY from "CHANGELOG_MODAL_KEY";
+import set from "_possibleConstructorReturn";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,38 +27,31 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleUserSettingsProtoStoreChange() {
-  const LastReceivedChangelogId = arg1(dependencyMap[9]).LastReceivedChangelogId;
+  const LastReceivedChangelogId = require(3803) /* explicitContentFromProto */.LastReceivedChangelogId;
   const setting = LastReceivedChangelogId.getSetting();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-({ AssetType: closure_9, ChangelogLoadState: closure_10 } = arg1(dependencyMap[7]));
+({ AssetType: closure_9, ChangelogLoadState: closure_10 } = CHANGELOG_MODAL_KEY);
 let closure_11 = {};
 let closure_12 = {};
-let closure_13 = null;
-let closure_14 = null;
-let closure_15 = null;
-let closure_16 = null;
-let closure_17 = null;
-const set = new Set();
-let tmp4 = (Store) => {
+let c13 = null;
+let c14 = null;
+let c15 = null;
+let c16 = null;
+let c17 = null;
+let set = new Set();
+let tmp4 = ((Store) => {
   class ChangelogStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ChangelogStore);
-      obj = closure_5(ChangelogStore);
-      tmp2 = closure_4;
-      if (closure_19()) {
+      tmp = outer1_2(this, ChangelogStore);
+      obj = outer1_5(ChangelogStore);
+      tmp2 = outer1_4;
+      if (outer1_19()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -54,30 +60,30 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ChangelogStore;
   callback2(ChangelogStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8);
-      const items = [closure_7];
+      this.waitFor(outer1_7, outer1_8);
+      const items = [outer1_7];
       this.syncWith(items, () => true);
-      const items1 = [closure_8];
-      this.syncWith(items1, closure_20);
-      const Storage = ChangelogStore(closure_1[8]).Storage;
+      const items1 = [outer1_8];
+      this.syncWith(items1, outer1_20);
+      const Storage = ChangelogStore(outer1_1[8]).Storage;
       const value = Storage.get("lastChangeLogDate");
       if (null != value) {
         const _Date = Date;
         const date = new Date(tmp5);
+        const outer1_17 = date;
       }
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "getChangelog",
     value(arg0, arg1) {
       let tmp2;
-      if (null != closure_11[arg0]) {
+      if (null != outer1_11[arg0]) {
         tmp2 = tmp[arg1];
       }
       let tmp4 = null;
@@ -91,7 +97,7 @@ let tmp4 = (Store) => {
   obj = {
     key: "latestChangelogId",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[2] = obj;
@@ -99,11 +105,11 @@ let tmp4 = (Store) => {
     key: "getChangelogLoadStatus",
     value(arg0, arg1) {
       let NOT_LOADED;
-      if (null != closure_12[arg0]) {
+      if (null != outer1_12[arg0]) {
         NOT_LOADED = tmp[arg1];
       }
       if (null == NOT_LOADED) {
-        NOT_LOADED = constants.NOT_LOADED;
+        NOT_LOADED = outer1_10.NOT_LOADED;
       }
       return NOT_LOADED;
     }
@@ -111,76 +117,78 @@ let tmp4 = (Store) => {
   items[4] = {
     key: "hasLoadedConfig",
     value() {
-      return null != closure_15;
+      return null != outer1_15;
     }
   };
   items[5] = {
     key: "getConfig",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[6] = {
     key: "overrideId",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[7] = {
     key: "lastSeenChangelogId",
     value() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[8] = {
     key: "lastSeenChangelogDate",
     value() {
-      return closure_17;
+      return outer1_17;
     }
   };
   items[9] = {
     key: "getStateForDebugging",
     value() {
-      return { changelogConfig: closure_15, loadedChangelogs: closure_12, lastSeenChangelogId: closure_16, lastSeenChangelogDate: closure_17 };
+      return { changelogConfig: outer1_15, loadedChangelogs: outer1_12, lastSeenChangelogId: outer1_16, lastSeenChangelogDate: outer1_17 };
     }
   };
   items[10] = {
     key: "isLocked",
     value() {
-      return size.size > 0;
+      return outer1_18.size > 0;
     }
   };
   return callback(ChangelogStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "ChangelogStore";
-tmp4 = new tmp4(importDefault(dependencyMap[11]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CHANGE_LOG_LOCK: function handleChangeLogLock(key) {
     if (set.has(key.key)) {
       return false;
     } else {
       const _Set = Set;
-      const set = new Set(set);
+      set = new Set(set);
       set.add(key);
     }
   },
   CHANGE_LOG_UNLOCK: function handleChangeLogUnlock(key) {
     if (set.has(key.key)) {
       const _Set = Set;
-      const set = new Set(set);
+      set = new Set(set);
       set.delete(key);
     } else {
       return false;
     }
   },
   CHANGE_LOG_SET_CONFIG: function handleConfig(arg0) {
-    ({ latestChangelogId: closure_13, config: closure_15 } = arg0);
+    let c13;
+    let c15;
+    ({ latestChangelogId: c13, config: c15 } = arg0);
   },
   CHANGE_LOG_FETCH_SUCCESS: function handleChangelogFetch(arg0) {
     let changelog;
     let id;
     ({ id, changelog } = arg0);
-    if (null == closure_11[id]) {
-      closure_11[id] = {};
+    if (null == dependencyMap[id]) {
+      dependencyMap[id] = {};
     }
     const obj = { id, date: changelog.date, body: changelog.content, revision: 1, locale: changelog.locale };
     let str = "image";
@@ -188,102 +196,36 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
       str = "youtube_video_id";
     }
     obj[str] = changelog.asset;
-    closure_11[id][changelog.locale] = obj;
-    if (null == closure_12[id]) {
-      closure_12[id] = {};
+    dependencyMap[id][changelog.locale] = obj;
+    if (null == dependencyMap2[id]) {
+      dependencyMap2[id] = {};
     }
-    closure_12[id][changelog.locale] = constants2.LOADED_SUCCESS;
+    dependencyMap2[id][changelog.locale] = constants2.LOADED_SUCCESS;
   },
   CHANGE_LOG_FETCH_FAILED: function handleChangelogFetchFailed(arg0) {
     let id;
     let locale;
     ({ id, locale } = arg0);
-    if (null != closure_11[id]) {
-      if (null != closure_11[id][locale]) {
+    if (null != dependencyMap[id]) {
+      if (null != dependencyMap[id][locale]) {
         return false;
       }
     }
-    if (null == closure_12[id]) {
-      closure_12[id] = {};
+    if (null == dependencyMap2[id]) {
+      dependencyMap2[id] = {};
     }
-    closure_12[id][locale] = constants2.LOADED_FAILURE;
+    dependencyMap2[id][locale] = constants2.LOADED_FAILURE;
   },
   CHANGE_LOG_SET_OVERRIDE: function handleChangelogSetOverride(id) {
     id = id.id;
   },
   CHANGE_LOG_MARK_SEEN: function handleDismiss(changelogDate) {
     changelogDate = changelogDate.changelogDate;
-    let closure_17 = new Date(changelogDate);
-    const Storage = arg1(dependencyMap[8]).Storage;
+    const date = new Date(changelogDate);
+    const Storage = require(587) /* Storage */.Storage;
     const result = Storage.set("lastChangeLogDate", changelogDate);
   }
 });
-const obj = {
-  CHANGE_LOG_LOCK: function handleChangeLogLock(key) {
-    if (set.has(key.key)) {
-      return false;
-    } else {
-      const _Set = Set;
-      const set = new Set(set);
-      set.add(key);
-    }
-  },
-  CHANGE_LOG_UNLOCK: function handleChangeLogUnlock(key) {
-    if (set.has(key.key)) {
-      const _Set = Set;
-      const set = new Set(set);
-      set.delete(key);
-    } else {
-      return false;
-    }
-  },
-  CHANGE_LOG_SET_CONFIG: function handleConfig(arg0) {
-    ({ latestChangelogId: closure_13, config: closure_15 } = arg0);
-  },
-  CHANGE_LOG_FETCH_SUCCESS: function handleChangelogFetch(arg0) {
-    let changelog;
-    let id;
-    ({ id, changelog } = arg0);
-    if (null == closure_11[id]) {
-      closure_11[id] = {};
-    }
-    const obj = { id, date: changelog.date, body: changelog.content, revision: 1, locale: changelog.locale };
-    let str = "image";
-    if (changelog.asset_type === constants.YOUTUBE_VIDEO_ID) {
-      str = "youtube_video_id";
-    }
-    obj[str] = changelog.asset;
-    closure_11[id][changelog.locale] = obj;
-    if (null == closure_12[id]) {
-      closure_12[id] = {};
-    }
-    closure_12[id][changelog.locale] = constants2.LOADED_SUCCESS;
-  },
-  CHANGE_LOG_FETCH_FAILED: function handleChangelogFetchFailed(arg0) {
-    let id;
-    let locale;
-    ({ id, locale } = arg0);
-    if (null != closure_11[id]) {
-      if (null != closure_11[id][locale]) {
-        return false;
-      }
-    }
-    if (null == closure_12[id]) {
-      closure_12[id] = {};
-    }
-    closure_12[id][locale] = constants2.LOADED_FAILURE;
-  },
-  CHANGE_LOG_SET_OVERRIDE: function handleChangelogSetOverride(id) {
-    id = id.id;
-  },
-  CHANGE_LOG_MARK_SEEN: function handleDismiss(changelogDate) {
-    changelogDate = changelogDate.changelogDate;
-    let closure_17 = new Date(changelogDate);
-    const Storage = arg1(dependencyMap[8]).Storage;
-    const result = Storage.set("lastChangeLogDate", changelogDate);
-  }
-};
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/changelog/ChangelogStore.tsx");
+let result = set.fileFinishedImporting("modules/changelog/ChangelogStore.tsx");
 
 export default tmp4;

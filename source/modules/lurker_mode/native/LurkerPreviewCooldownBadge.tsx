@@ -1,44 +1,43 @@
-// Module ID: 14711
-// Function ID: 110999
+// Module ID: 14826
+// Function ID: 113163
 // Name: useHasExpired
-// Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 0]
+// Dependencies: [57, 31, 27, 33, 3991, 8018, 4130, 689, 1273, 5715, 3834, 4131, 2]
 // Exports: useHasExpired
 
-// Module 14711 (useHasExpired)
-import __exportStarResult1 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
+// Module 14826 (useHasExpired)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
 
+const require = arg1;
 let closure_7 = 2 * Math.PI * 6;
-let obj = { duration: 1000, easing: require("__exportStarResult1").Easing.linear };
-let closure_9 = require("__exportStarResult1").createAnimatedComponent(require("__exportStarResult1").Circle);
+let obj = { duration: 1000, easing: require("module_3991").Easing.linear };
+let closure_9 = require("module_3991").createAnimatedComponent(require("inlineStyles").Circle);
 obj = {};
-const obj1 = { borderRadius: "FRAME_SET_PROXY_TICKET_REFRESHING", kind: null, index: false, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, bottom: -require("__exportStarResult1").BADGE_PADDING, right: -require("__exportStarResult1").BADGE_PADDING, padding: require("__exportStarResult1").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
+let obj1 = { borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -require("Button").BADGE_PADDING, right: -require("Button").BADGE_PADDING, padding: require("Button").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
 obj.outerRing = obj1;
-const obj4 = arg1(dependencyMap[6]);
-obj.innerFill = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
-const items = [{ rotate: "90deg" }, { scaleX: -1 }];
+let obj2 = { borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 16, width: 16, alignItems: "center", justifyContent: "center" };
+obj.innerFill = obj2;
+let items = [{ rotate: "90deg" }, { scaleX: -1 }];
 obj.progressRing = { position: "absolute", transform: items };
-let closure_10 = obj4.createStyles(obj);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_11 = { code: "function LurkerPreviewCooldownBadgeTsx1(){const{PROGRESS_CIRCUMFERENCE,animatedProgress}=this.__closure;return{strokeDashoffset:PROGRESS_CIRCUMFERENCE*(1-animatedProgress.get())};}" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
 const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expiresAt) {
   expiresAt = expiresAt.expiresAt;
-  const arg1 = expiresAt;
   let LURKER_PREVIEW_PERSIST_MS = expiresAt.totalDurationMs;
   if (LURKER_PREVIEW_PERSIST_MS === undefined) {
-    LURKER_PREVIEW_PERSIST_MS = arg1(dependencyMap[9]).LURKER_PREVIEW_PERSIST_MS;
+    LURKER_PREVIEW_PERSIST_MS = expiresAt(callback[9]).LURKER_PREVIEW_PERSIST_MS;
   }
-  const importDefault = LURKER_PREVIEW_PERSIST_MS;
-  let dependencyMap;
-  let __exportStarResult1;
+  callback = undefined;
+  let sharedValue;
   const tmp3 = callback2();
-  let obj = arg1(dependencyMap[10]);
+  let obj = expiresAt(callback[10]);
   const items = [expiresAt, LURKER_PREVIEW_PERSIST_MS];
-  const token = obj.useToken(importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND);
-  const callback = importAllResult.useCallback(() => {
+  const token = obj.useToken(LURKER_PREVIEW_PERSIST_MS(callback[7]).colors.BACKGROUND_BRAND);
+  callback = importAllResult.useCallback(() => {
     const result = (expiresAt - Date.now()) / LURKER_PREVIEW_PERSIST_MS;
     let num = 0;
     if (result >= 0) {
@@ -50,43 +49,43 @@ const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expi
     }
     return 0.9 * num;
   }, items);
-  dependencyMap = callback;
-  let obj1 = arg1(dependencyMap[4]);
-  const sharedValue = obj1.useSharedValue(callback());
-  __exportStarResult1 = sharedValue;
+  let obj1 = expiresAt(callback[4]);
+  sharedValue = obj1.useSharedValue(callback());
   const items1 = [sharedValue, callback];
   const effect = importAllResult.useEffect(() => {
-    const result = sharedValue.set(expiresAt(callback[11]).withTiming(callback(), closure_8, "animate-always"));
-    const expiresAt = setInterval(() => {
-      const result = __exportStarResult1.set(callback(callback2[11]).withTiming(callback2(), closure_8, "animate-always"));
+    let result = sharedValue.set(expiresAt(callback[11]).withTiming(callback(), outer1_8, "animate-always"));
+    const interval = setInterval(() => {
+      const result = outer1_3.set(expiresAt(callback[11]).withTiming(outer1_2(), outer2_8, "animate-always"));
     }, 1000);
     return () => {
       clearInterval(closure_0);
     };
   }, items1);
-  let obj2 = arg1(dependencyMap[4]);
+  let obj2 = expiresAt(callback[4]);
   const fn = function p() {
-    return { strokeDashoffset: closure_7 * (1 - sharedValue.get()) };
+    return { strokeDashoffset: outer1_7 * (1 - sharedValue.get()) };
   };
   obj = { PROGRESS_CIRCUMFERENCE: closure_7, animatedProgress: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 7162520447613;
   fn.__initData = closure_11;
-  obj = { 1649302097: "50%", -866014378: 60, 77722194: 60, -1594137938: true };
+  obj = { style: null, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const items2 = [tmp3.outerRing, expiresAt.style];
   obj.style = items2;
   obj1 = { style: tmp3.innerFill };
   const animatedProps = obj2.useAnimatedProps(fn);
-  obj2 = { "Null": null, "Null": null, style: tmp3.progressRing, children: <closure_9 stroke={token} strokeDasharray={closure_7} animatedProps={animatedProps} /> };
-  obj1.children = jsx(importDefault(dependencyMap[5]), obj2);
-  obj.children = <View {...obj1} />;
-  return <View {...obj} />;
+  obj2 = { width: 16, height: 16, style: tmp3.progressRing };
+  const obj3 = { cx: 8, cy: 8, r: 6, fill: "none", stroke: token, strokeWidth: 4, strokeDasharray: closure_7, strokeLinecap: "butt", animatedProps };
+  obj2.children = <closure_9 cx={8} cy={8} r={6} fill="none" stroke={token} strokeWidth={4} strokeDasharray={closure_7} strokeLinecap="butt" animatedProps={animatedProps} />;
+  obj1.children = jsx(LURKER_PREVIEW_PERSIST_MS(callback[5]), { width: 16, height: 16, style: tmp3.progressRing });
+  obj.children = <View style={tmp3.innerFill} />;
+  return <View style={null} pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants" />;
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/lurker_mode/native/LurkerPreviewCooldownBadge.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/lurker_mode/native/LurkerPreviewCooldownBadge.tsx");
 
 export default memoResult;
 export const useHasExpired = function useHasExpired(prop) {
-  const arg1 = prop;
+  let closure_0 = prop;
   const tmp = callback(importAllResult.useState(null), 2);
   let closure_1 = tmp[1];
   const items = [prop];
@@ -95,7 +94,7 @@ export const useHasExpired = function useHasExpired(prop) {
       const _Math = Math;
       const _Date = Date;
       const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => callback(closure_0), Math.max(0, timeout - Date.now()));
+      timeout = setTimeout(() => outer1_1(closure_0), Math.max(0, timeout - Date.now()));
       return () => clearTimeout(closure_0);
     }
   }, items);

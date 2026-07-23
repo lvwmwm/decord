@@ -1,9 +1,22 @@
-// Module ID: 8872
-// Function ID: 69940
+// Module ID: 8879
+// Function ID: 69981
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 4202, 4216, 8880, 8881, 653, 8897, 4194, 4227, 566, 686, 2]
 
-// Module 8872 (_isNativeReflectConstruct)
+// Module 8879 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import dispatcher from "dispatcher";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { RTCConnectionStates } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +26,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,11 +106,11 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function computeStreamVerifications() {
-  const allActiveStreamKeys = allActiveStreamKeys.getAllActiveStreamKeys();
+  allActiveStreamKeys = allActiveStreamKeys.getAllActiveStreamKeys();
   return allActiveStreamKeys.reduce((arg0, streamKey) => {
-    const tmp = true === closure_13.get(callback(closure_1[12]).decodeStreamKey(streamKey).ownerId);
-    const tmp2 = store.get(streamKey) !== tmp;
-    const result = store.set(streamKey, tmp);
+    const tmp = true === outer1_13.get(outer1_0(outer1_1[12]).decodeStreamKey(streamKey).ownerId);
+    const tmp2 = outer1_14.get(streamKey) !== tmp;
+    const result = outer1_14.set(streamKey, tmp);
     let tmp4 = tmp2;
     if (!tmp2) {
       tmp4 = arg0;
@@ -136,8 +149,7 @@ function computeCallVerification() {
       break;
     }
   }
-  let closure_15 = flag;
-  return flag !== closure_15;
+  return flag !== flag;
 }
 function handleUserUpdate(userId) {
   userId = userId.userId;
@@ -159,7 +171,7 @@ function handleUserUpdate(userId) {
       }
       flag = isKeyVerifiedResult !== map.get(userId);
       const result = map.set(userId, isKeyVerifiedResult);
-      const obj = arg1(dependencyMap[11]);
+      obj = require(8897) /* _createForOfIteratorHelperLoose */;
     }
     const tmp18 = computeStreamVerifications();
     if (!flag) {
@@ -174,36 +186,25 @@ function handleUserUpdate(userId) {
 function handleReset() {
   map.clear();
   map1.clear();
-  let closure_15 = false;
+  let c15 = false;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-const RTCConnectionStates = arg1(dependencyMap[10]).RTCConnectionStates;
 const map = new Map();
 const map1 = new Map();
-let closure_15 = false;
-let closure_16 = null;
-let tmp4 = (Store) => {
+let c15 = false;
+let c16 = null;
+let tmp4 = ((Store) => {
   class SecureFramesVerifiedStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, SecureFramesVerifiedStore);
-      obj = closure_5(SecureFramesVerifiedStore);
-      tmp2 = closure_4;
-      if (closure_17()) {
+      tmp = outer1_2(this, SecureFramesVerifiedStore);
+      obj = outer1_5(SecureFramesVerifiedStore);
+      tmp2 = outer1_4;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -212,46 +213,44 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SecureFramesVerifiedStore;
   callback2(SecureFramesVerifiedStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8, closure_9, closure_10, closure_11);
+      this.waitFor(outer1_7, outer1_8, outer1_9, outer1_10, outer1_11);
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "isCallVerified",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[1] = obj;
   obj = {
     key: "isStreamVerified",
     value(arg0) {
-      return closure_14.get(arg0);
+      return outer1_14.get(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isUserVerified",
     value(arg0) {
-      return closure_13.get(arg0);
+      return outer1_13.get(arg0);
     }
   };
   return callback(SecureFramesVerifiedStore, items);
-}(importDefault(dependencyMap[14]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "SecureFramesVerifiedStore";
-tmp4 = new tmp4(importDefault(dependencyMap[15]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: handleReset,
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
     channelId = channelId.channelId;
-    if (channelId === closure_16) {
+    if (channelId === channelId) {
       return false;
     } else {
-      closure_16 = channelId;
       handleReset();
     }
   },
@@ -261,14 +260,14 @@ tmp4 = new tmp4(importDefault(dependencyMap[15]), {
     ({ streamKey, context } = state);
     if (state.state !== RTCConnectionStates.DISCONNECTED) {
       return false;
-    } else if (arg1(dependencyMap[13]).MediaEngineContextTypes.STREAM === context) {
+    } else if (require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM === context) {
       let tmp8 = null != streamKey;
       if (tmp8) {
         map1.delete(streamKey);
         tmp8 = computeCallVerification();
       }
       return tmp8;
-    } else if (arg1(dependencyMap[13]).MediaEngineContextTypes.DEFAULT === context) {
+    } else if (require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT === context) {
       handleReset();
     }
   },
@@ -279,7 +278,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[15]), {
       let tmp = arg0;
       if (closure_0 !== userId) {
         const obj = { userId };
-        const tmp3 = !callback(obj);
+        const tmp3 = !outer1_22(obj);
         let tmp4 = !tmp3;
         if (tmp3) {
           tmp4 = arg0;
@@ -303,6 +302,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[15]), {
   SECURE_FRAMES_VERIFIED_KEY_DELETE: handleUserUpdate,
   SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: handleUserUpdate
 });
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/rtc/SecureFramesVerifiedStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/rtc/SecureFramesVerifiedStore.tsx");
 
 export default tmp4;

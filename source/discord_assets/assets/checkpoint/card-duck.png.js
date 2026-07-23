@@ -1,11 +1,10 @@
-// Module ID: 7825
-// Function ID: 62420
+// Module ID: 7831
+// Function ID: 62457
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7825 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/checkpoint/card-duck.png.js");
+// Module 7831 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/checkpoint/card-duck.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5548a717f75e56c4efc11115ddab778b222576682a73b2835ff6549e461f619d.png";
 export const metadata = { fileBytes: 6815 };

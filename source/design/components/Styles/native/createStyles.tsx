@@ -1,53 +1,60 @@
-// Module ID: 4126
-// Function ID: 34320
+// Module ID: 4130
+// Function ID: 34350
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 27, 4122, 3942, 3842, 477, 689, 3835, 3991, 4131, 4134, 4063, 1324, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, useLegacyClassComponentStyles
 
-// Module 4126 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4130 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import { processColor } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import set from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -123,9 +130,9 @@ function parseThemedStyles(arg0, enabledExperiments) {
       if (null != obj2) {
         if (obj2.hasOwnProperty("resolve")) {
           obj = { theme };
-          let tmp30 = enabledExperiments;
+          let tmp30 = require;
           let tmp31 = dependencyMap;
-          let obj5 = enabledExperiments(dependencyMap[5]);
+          let obj5 = require(477) /* set */;
           obj.isAndroid = obj5.isAndroid();
           enabledExperiments = enabledExperiments.enabledExperiments;
           let items = enabledExperiments;
@@ -140,21 +147,21 @@ function parseThemedStyles(arg0, enabledExperiments) {
           }
           obj.density = str4;
           obj[tmp8] = obj2.resolve(obj);
-          // continue
+          continue;
         }
       }
       let tmp12 = importDefault;
       let tmp13 = dependencyMap;
-      let internal = importDefault(dependencyMap[6]).internal;
+      let internal = importDefault(689).internal;
       if (internal.isSemanticColor(obj2)) {
-        let tmp26 = enabledExperiments;
+        let tmp26 = require;
         let tmp27 = dependencyMap;
-        let obj3 = enabledExperiments(dependencyMap[7]);
+        let obj3 = require(3835) /* getSemanticColorContextFromThemeContext */;
         let tmp29 = importDefault;
         let semanticColorContextFromThemeContext = obj3.getSemanticColorContextFromThemeContext(enabledExperiments);
-        let internal4 = importDefault(dependencyMap[6]).internal;
+        let internal4 = importDefault(689).internal;
         obj[tmp8] = internal4.resolveSemanticColor(theme, obj2, semanticColorContextFromThemeContext);
-        // continue
+        continue;
       } else {
         if (tmp2) {
           let tmp14 = obj2;
@@ -179,14 +186,14 @@ function parseThemedStyles(arg0, enabledExperiments) {
               if (tmp2) {
                 let tmp16 = importDefault;
                 let tmp17 = dependencyMap;
-                let internal2 = importDefault(dependencyMap[6]).internal;
+                let internal2 = importDefault(689).internal;
                 result = internal2.adjustColorSaturation(obj2, saturation, str3);
               }
               let adjustColorContrastResult = result;
               if (1 !== contrast) {
                 let tmp19 = importDefault;
                 let tmp20 = dependencyMap;
-                let internal3 = importDefault(dependencyMap[6]).internal;
+                let internal3 = importDefault(689).internal;
                 let tmp21 = internal3;
                 let tmp22 = result;
                 let tmp23 = contrast;
@@ -203,46 +210,40 @@ function parseThemedStyles(arg0, enabledExperiments) {
           tmp14 = obj2;
         }
         obj[tmp8] = tmp14;
-        // continue
+        continue;
       }
       continue;
     }
   }
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const processColor = arg1(dependencyMap[1]).processColor;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-new Set([]);
+let set = new Set(["backgroundColor", "borderBottomColor", "borderColor", "borderEndColor", "borderLeftColor", "borderRightColor", "borderStartColor", "borderTopColor", "color", "shadowColor", "shadowOffset", "shadowOpacity", "shadowRadius", "elevation", "textDecorationColor", "textShadowColor", "tintColor"]);
 let closure_7 = Symbol.for("dynamicToken");
-let closure_8 = [];
+let closure_8 = ["light", "darker", "midnight"];
 let closure_9 = { code: "function createStylesTsx1(){const{resolvedStyles,withTiming,interpolateColor,themeIndex,stops,timingStandard}=this.__closure;const result={};for(const propertyName in resolvedStyles){const value=resolvedStyles[propertyName];if(Array.isArray(value)){result[propertyName]=withTiming(interpolateColor(themeIndex.get(),stops,value),timingStandard);}else{result[propertyName]=value;}}return result;}" };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("design/components/Styles/native/createStyles.tsx");
+let result = set.fileFinishedImporting("design/components/Styles/native/createStyles.tsx");
 
 export const experimental_createToken = function experimental_createToken(arg0) {
-  const arg1 = arg0;
-  return { [closure_7]: (arg0) => arg0(arg0) };
+  let closure_0 = arg0;
+  return { [closure_7]: (arg0) => callback(arg0) };
 };
-export const createStyles = function createStyles(__exportStarResult1) {
-  const arg1 = __exportStarResult1;
-  const importDefault = new Map();
-  let closure_2 = "function" === typeof __exportStarResult1;
+export const createStyles = function createStyles(_createForOfIteratorHelperLoose) {
+  let closure_0 = _createForOfIteratorHelperLoose;
+  const map = new Map();
+  let closure_2 = "function" === typeof _createForOfIteratorHelperLoose;
   return (arg0) => {
-    const items = [...arguments];
-    arg0 = items;
-    let closure_2;
-    let obj = arg0(closure_2[4]);
+    let items = [...arguments];
+    let obj;
+    obj = _createForOfIteratorHelperLoose(table[4]);
     const themeContext = obj.useThemeContext();
-    const tmp2 = callback(...items, themeContext.key);
-    const value = map.get(tmp2);
+    const tmp2 = outer1_12(...items, themeContext.key);
+    const value = themeContext.get(tmp2);
     if (null != value) {
       return value;
     } else {
       obj = {};
-      closure_2 = obj;
       const _Object3 = Object;
-      if (closure_2) {
+      if (obj) {
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
         keys = keys(HermesBuiltin.apply(items1, undefined));
@@ -252,103 +253,105 @@ export const createStyles = function createStyles(__exportStarResult1) {
       const _Object = Object;
       const _Object2 = Object;
       Object.defineProperties(obj, Object.fromEntries(keys.map((arg0) => {
-        let items = arg0;
-        items = [arg0, ];
+        let closure_0 = arg0;
+        let items = [arg0, ];
         const obj = {
-          "Null": null,
-          "Null": null,
+          configurable: true,
+          enumerable: true,
           get() {
-            if (closure_2) {
+            if (obj) {
               const items = [];
-              HermesBuiltin.arraySpread(arg0, 0);
+              HermesBuiltin.arraySpread(closure_0, 0);
               let applyResult = HermesBuiltin.apply(items, undefined);
             } else {
               applyResult = tmp2;
             }
-            const tmpResult = closure_14(applyResult[closure_0], closure_1);
-            Object.defineProperty(closure_2, arg0, { value: tmpResult, enumerable: true });
+            const tmpResult = outer3_14(applyResult[closure_0], outer1_1);
+            Object.defineProperty(outer1_2, closure_0, { value: tmpResult, enumerable: true });
             return tmpResult;
           }
         };
         items[1] = obj;
         return items;
       })));
-      const result = map.set(tmp2, obj);
+      const result = themeContext.set(tmp2, obj);
       return obj;
     }
   };
 };
-export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(__exportStarResult1) {
-  const arg1 = __exportStarResult1;
-  const importDefault = new Map();
+export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(_createForOfIteratorHelperLoose) {
+  let closure_0 = _createForOfIteratorHelperLoose;
+  const map = new Map();
   return (key) => {
-    const FALLBACK_THEME_CONTEXT_VALUE = key(closure_2[4]).FALLBACK_THEME_CONTEXT_VALUE;
-    const value = map.get(key.key);
+    const _createForOfIteratorHelperLoose = key;
+    const FALLBACK_THEME_CONTEXT_VALUE = _createForOfIteratorHelperLoose(outer1_2[4]).FALLBACK_THEME_CONTEXT_VALUE;
+    const value = obj.get(key.key);
     if (null != value) {
       return value;
     } else {
-      const obj = {};
+      obj = {};
       const _Object = Object;
-      const keys = Object.keys(key);
+      const keys = Object.keys(_createForOfIteratorHelperLoose);
       const _Object2 = Object;
       const _Object3 = Object;
       Object.defineProperties(obj, Object.fromEntries(keys.map((arg0) => {
+        let closure_0 = arg0;
         const items = [arg0, ];
         const obj = {
-          "Null": null,
-          "Null": null,
+          configurable: true,
+          enumerable: true,
           get() {
-            const tmp = callback(arg0[closure_0], arg0);
-            Object.defineProperty(closure_1, arg0, { value: tmp, enumerable: true });
+            const tmp = outer3_14(table[table], table);
+            Object.defineProperty(outer1_1, table, { value: tmp, enumerable: true });
             return tmp;
           }
         };
         items[1] = obj;
         return items;
       })));
-      const result = map.set(key.key, obj);
+      const result = obj.set(key.key, obj);
       return obj;
     }
   };
 };
-export const useLegacyClassComponentStyles = function useLegacyClassComponentStyles(closure_22) {
-  return closure_22(arg1(dependencyMap[4]).useThemeContext());
+export const useLegacyClassComponentStyles = function useLegacyClassComponentStyles(_createForOfIteratorHelperLoose) {
+  return _createForOfIteratorHelperLoose(require(3842) /* ManaContext */.useThemeContext());
 };
-export const createStyleProperties = function createStyleProperties(arg0) {
-  const arg1 = arg0;
-  const importDefault = new Map();
+export const createStyleProperties = function createStyleProperties(_createForOfIteratorHelperLoose) {
+  let closure_0 = _createForOfIteratorHelperLoose;
+  const map = new Map();
   return (arg0) => {
     const items = [...arguments];
-    const themeContext = arg0(closure_2[4]).useThemeContext();
-    const tmp2 = callback(...items, themeContext.key);
+    const themeContext = _createForOfIteratorHelperLoose(outer1_2[4]).useThemeContext();
+    const tmp2 = outer1_12(...items, themeContext.key);
     const value = map.get(tmp2);
     if (null != value) {
       return value;
     } else {
-      if ("function" === typeof arg0) {
+      if ("function" === typeof _createForOfIteratorHelperLoose) {
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
         let applyResult = HermesBuiltin.apply(items1, undefined);
       } else {
-        applyResult = arg0;
+        applyResult = _createForOfIteratorHelperLoose;
       }
-      const tmp4Result = closure_14(applyResult, themeContext);
+      const tmp4Result = outer1_14(applyResult, themeContext);
       const result = map.set(tmp2, tmp4Result);
       return tmp4Result;
     }
-    const obj = arg0(closure_2[4]);
+    const obj = _createForOfIteratorHelperLoose(outer1_2[4]);
   };
 };
 export { processColorOrThrow };
-export const createNativeStyleProperties = function createNativeStyleProperties(arg0) {
-  const arg1 = arg0;
-  const importDefault = new Map();
+export const createNativeStyleProperties = function createNativeStyleProperties(_createForOfIteratorHelperLoose) {
+  let closure_0 = _createForOfIteratorHelperLoose;
+  const map = new Map();
   return (arg0, arg1) => {
     const substr = [...arguments].slice();
-    let obj = arg0(closure_2[11]);
+    let obj = _createForOfIteratorHelperLoose(outer1_2[11]);
     let gradientPreset = obj.getCustomBackgroundGradient();
     if (null == gradientPreset) {
-      gradientPreset = gradientPreset.gradientPreset;
+      gradientPreset = outer1_6.gradientPreset;
     }
     let tmp3 = null;
     if (null != gradientPreset) {
@@ -364,9 +367,9 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
         tmp14 = items;
       }
       obj = {};
-      const merged = Object.assign(arg0(closure_2[4]).FALLBACK_THEME_CONTEXT_VALUE);
+      const merged = Object.assign(_createForOfIteratorHelperLoose(outer1_2[4]).FALLBACK_THEME_CONTEXT_VALUE);
       obj["flags"] = 0;
-      obj["saturation"] = saturation.saturation;
+      obj["saturation"] = outer1_5.saturation;
       obj["theme"] = arg0;
       obj["enabledExperiments"] = tmp14;
       obj["gradient"] = tmp3;
@@ -385,70 +388,70 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
         return value;
       } else {
         let items2 = "function";
-        if ("function" === typeof arg0) {
+        if ("function" === typeof _createForOfIteratorHelperLoose) {
           items2 = [];
           arraySpreadResult = HermesBuiltin.arraySpread(substr, 0);
           let applyResult1 = HermesBuiltin.apply(items2, undefined);
         } else {
-          applyResult1 = arg0;
+          applyResult1 = _createForOfIteratorHelperLoose;
         }
-        const tmp46Result = closure_14(applyResult1, obj);
+        const tmp46Result = outer1_14(applyResult1, obj);
         for (const key10107 in tmp46Result) {
           let tmp48 = key10107;
-          let tmp49 = closure_13;
-          tmp46Result[key10107] = closure_13(tmp46Result[key10107]);
+          let tmp49 = outer1_13;
+          tmp46Result[key10107] = outer1_13(tmp46Result[key10107]);
+          continue;
         }
         const result = map.set(applyResult, tmp46Result);
         return tmp46Result;
       }
-      const obj3 = arg0(closure_2[12]);
+      obj3 = _createForOfIteratorHelperLoose(outer1_2[12]);
     } else {
       if ("light" === tmp3.theme) {
-        let MOBILE_DARK_GRADIENT_THEME_ENABLED = arg0(closure_2[4]).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
+        let MOBILE_DARK_GRADIENT_THEME_ENABLED = _createForOfIteratorHelperLoose(outer1_2[4]).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
       } else {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = arg0(closure_2[4]).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = _createForOfIteratorHelperLoose(outer1_2[4]).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
       }
-      arg0(closure_2[4]).setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
-      const obj2 = arg0(closure_2[4]);
+      _createForOfIteratorHelperLoose(outer1_2[4]).setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
+      const obj2 = _createForOfIteratorHelperLoose(outer1_2[4]);
     }
   };
 };
-export const createAnimatedThemedStyles = function createAnimatedThemedStyles(obj, items) {
+export const createAnimatedThemedStyles = function createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items) {
   let arr = items;
   if (items === undefined) {
     arr = closure_8;
   }
-  items = arr;
-  let closure_3;
-  let processColor;
+  let _slicedToArray;
+  let map;
   items = [];
-  const importDefault = items;
-  obj = {};
-  const dependencyMap = obj;
+  let obj = {};
   for (const key10008 in arg0) {
     let tmp3 = key10008;
     let tmp4 = arg0[key10008];
-    let tmp5 = closure_1;
-    let tmp6 = closure_2;
-    let internal = closure_1(closure_2[6]).internal;
+    let tmp5 = items;
+    let tmp6 = obj;
+    let internal = items(obj[6]).internal;
     if (internal.isSemanticColor(tmp4)) {
       let items1 = [key10008, tmp4];
       arr = items.push(items1);
-      // continue
+      continue;
     } else {
       obj[key10008] = tmp4;
-      // continue
+      continue;
     }
     continue;
   }
-  closure_3 = arr.map((arg0, arg1) => arg1);
-  processColor = new Map();
+  _slicedToArray = arr.map((arg0, arg1) => arg1);
+  map = new Map();
   return (themeIndex) => {
+    let callback;
     let done;
-    let obj = arr(obj[4]);
+    let closure_0 = themeIndex;
+    obj = arr(obj[4]);
     const themeContext = obj.useThemeContext();
     const value = map.get(themeContext.key);
-    let items = value;
+    obj = value;
     let tmp3 = value;
     if (null == value) {
       obj = {};
@@ -479,20 +482,20 @@ export const createAnimatedThemedStyles = function createAnimatedThemedStyles(ob
       obj.contrast = num4;
       obj = {};
       const merged = Object.assign(obj);
-      items = obj;
       function _loop(arg0) {
-        obj[closure_3] = arg0.map((theme) => {
-          const internal = callback(closure_2[6]).internal;
-          return internal.resolveSemanticColor(theme, theme, closure_2);
+        const themeIndex = arg0;
+        obj[_slicedToArray] = themeIndex.map((theme) => {
+          const internal = items(obj[6]).internal;
+          return internal.resolveSemanticColor(theme, closure_0, outer1_2);
         });
       }
-      const tmp9 = callback(items);
+      const tmp9 = outer1_10(obj);
       let iter = tmp9();
       if (!iter.done) {
         do {
-          let tmp10 = closure_3;
-          let tmp11 = closure_3(iter.value, 2);
-          closure_3 = tmp11[0];
+          let tmp10 = callback;
+          let tmp11 = callback(iter.value, 2);
+          callback = tmp11[0];
           let _loopResult = _loop(tmp11[1]);
           let iter2 = tmp9();
           iter = iter2;
@@ -506,31 +509,31 @@ export const createAnimatedThemedStyles = function createAnimatedThemedStyles(ob
       const obj = {};
       for (const key10008 in closure_4) {
         let tmp6 = key10008;
-        let tmp7 = closure_4;
-        let tmp8 = closure_4[key10008];
+        let tmp7 = tmp3;
+        let tmp8 = tmp3[key10008];
         let _Array = Array;
         if (Array.isArray(tmp8)) {
-          let tmp = closure_0;
-          let tmp2 = closure_2;
-          let obj2 = closure_0(closure_2[9]);
-          let obj3 = closure_0(closure_2[8]);
-          let tmp3 = closure_0;
-          let tmp4 = closure_3;
-          let interpolateColorResult = obj3.interpolateColor(closure_0.get(), closure_3, tmp8);
-          obj[key10008] = obj2.withTiming(interpolateColorResult, closure_0(closure_2[10]).timingStandard);
-          // continue
+          let tmp = arr;
+          let tmp2 = obj;
+          let obj2 = arr(obj[9]);
+          let obj3 = arr(obj[8]);
+          let tmp3 = themeIndex;
+          let tmp4 = outer1_3;
+          let interpolateColorResult = obj3.interpolateColor(themeIndex.get(), outer1_3, tmp8);
+          obj[key10008] = obj2.withTiming(interpolateColorResult, arr(obj[10]).timingStandard);
+          continue;
         } else {
           obj[key10008] = tmp8;
-          // continue
+          continue;
         }
         continue;
       }
       return obj;
     };
-    const obj1 = { resolvedStyles: tmp3, withTiming: themeIndex(obj[9]).withTiming, interpolateColor: themeIndex(obj[8]).interpolateColor, themeIndex, stops: closure_3, timingStandard: themeIndex(obj[10]).timingStandard };
+    const obj1 = { resolvedStyles: tmp3, withTiming: arr(obj[9]).withTiming, interpolateColor: arr(obj[8]).interpolateColor, themeIndex, stops: callback, timingStandard: arr(obj[10]).timingStandard };
     fn.__closure = obj1;
     fn.__workletHash = 6815805628278;
-    fn.__initData = closure_9;
-    return themeIndex(obj[8]).useAnimatedStyle(fn);
+    fn.__initData = outer1_9;
+    return arr(obj[8]).useAnimatedStyle(fn);
   };
 };

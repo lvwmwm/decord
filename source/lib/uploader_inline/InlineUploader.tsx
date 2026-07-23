@@ -1,33 +1,34 @@
-// Module ID: 7846
-// Function ID: 62566
+// Module ID: 7852
+// Function ID: 62603
 // Name: InlineUploader
-// Dependencies: []
+// Dependencies: [5, 6, 7, 4693, 7853, 2]
 
-// Module 7846 (InlineUploader)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = /^[a-f0-9]{32}$/;
-const tmp2 = () => {
+// Module 7852 (InlineUploader)
+import set from "set";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const re6 = /^[a-f0-9]{32}$/;
+let tmp2 = (() => {
   class InlineUploader {
     constructor(arg0, arg1) {
-      tmp = closure_4(this, InlineUploader);
+      tmp = outer1_4(this, InlineUploader);
       this.surface = arg0;
       this.originalMd5Promise = arg1;
       return;
     }
   }
-  const importDefault = InlineUploader;
   let obj = {
     key: "getOriginalMd5",
     value() {
       return this.originalMd5Promise;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = { key: "buildHeaders" };
   let closure_0 = callback(async function(arg0) {
-    return closure_1.buildHeadersForMd5(yield this.originalMd5Promise, arg0);
+    return outer1_1.buildHeadersForMd5(yield this.originalMd5Promise, arg0);
   });
   obj.value = function buildHeaders() {
     return callback(...arguments);
@@ -36,22 +37,22 @@ const tmp2 = () => {
   obj = {
     key: "fromBlob",
     value(surface) {
-      const obj = InlineUploader(closure_2[3]);
-      const fromBlobResult = InlineUploader(closure_2[3]).fromBlob(arg1);
-      return new InlineUploader(surface, InlineUploader(closure_2[3]).fromBlob(arg1).catch(() => null));
+      const obj = InlineUploader(outer1_2[3]);
+      const fromBlobResult = InlineUploader(outer1_2[3]).fromBlob(arg1);
+      return new InlineUploader(surface, InlineUploader(outer1_2[3]).fromBlob(arg1).catch(() => null));
     }
   };
-  const items1 = [
+  let items1 = [
     obj,
     {
       key: "buildHeadersForMd5",
       value(arg0, arg1) {
-        const tmp = function serializeOriginalMd5Header(arg0) {
+        let tmp = (function serializeOriginalMd5Header(arg0) {
           if (null == arg0) {
             return null;
           } else if ("string" === typeof arg0) {
             let tmp9 = null;
-            if (regex.test(arg0)) {
+            if (outer2_6.test(arg0)) {
               tmp9 = arg0;
             }
             return tmp9;
@@ -64,8 +65,8 @@ const tmp2 = () => {
               let tmp2 = arg0[tmp];
               let isMatch = null != tmp2;
               if (isMatch) {
-                let tmp4 = regex;
-                isMatch = regex.test(tmp2);
+                let tmp4 = outer2_6;
+                isMatch = outer2_6.test(tmp2);
               }
               if (isMatch) {
                 let items1 = [tmp, tmp2];
@@ -99,12 +100,12 @@ const tmp2 = () => {
             }
             return joined;
           }
-        }(arg0);
+        })(arg0);
         let tmp2 = arg1;
         if (null != tmp) {
           const obj = {};
           const merged = Object.assign(arg1);
-          obj[callback(closure_2[4]).ORIGINAL_MD5_HEADER] = tmp;
+          obj[callback(outer1_2[4]).ORIGINAL_MD5_HEADER] = tmp;
           tmp2 = obj;
         }
         return tmp2;
@@ -112,7 +113,7 @@ const tmp2 = () => {
     }
   ];
   return callback2(InlineUploader, items, items1);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("lib/uploader_inline/InlineUploader.tsx");
+})();
+const result = require("_defineProperties").fileFinishedImporting("lib/uploader_inline/InlineUploader.tsx");
 
 export default tmp2;

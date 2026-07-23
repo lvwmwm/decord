@@ -1,27 +1,29 @@
-// Module ID: 10503
-// Function ID: 82042
+// Module ID: 10513
+// Function ID: 82092
 // Name: tryLaunchAsFrame
-// Dependencies: []
+// Dependencies: [4167, 10482, 10483, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 10503 (tryLaunchAsFrame)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");
+// Module 10513 (tryLaunchAsFrame)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_launchFrameOnNative").fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");
 
 export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   applicationId = applicationId.applicationId;
-  const application = application.getApplication(applicationId);
+  application = application.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
-    let obj = arg1(dependencyMap[1]);
+    let obj = require(10482) /* canLaunchFrame */;
     tmp2 = !obj.canLaunchFrame(application);
   }
   let flag = !tmp2;
   if (!tmp2) {
     obj = { applicationId };
-    importDefault(dependencyMap[2]).launchFrame(obj);
+    importDefault(10483).launchFrame(obj);
     flag = true;
-    const obj2 = importDefault(dependencyMap[2]);
+    const obj2 = importDefault(10483);
   }
   return flag;
 };

@@ -1,11 +1,12 @@
-// Module ID: 10841
-// Function ID: 84132
+// Module ID: 10851
+// Function ID: 84181
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 10841 (context)
-const context = importAll(dependencyMap[0]).createContext(null);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/chat/native/ChatViewWidthContext.tsx");
+// Module 10851 (context)
+import importAllResult from "result";
+
+const context = require("result").createContext(null);
+const result = require("set").fileFinishedImporting("modules/chat/native/ChatViewWidthContext.tsx");
 
 export default context;

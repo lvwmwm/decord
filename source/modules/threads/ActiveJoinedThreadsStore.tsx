@@ -1,9 +1,26 @@
-// Module ID: 5036
-// Function ID: 43455
+// Module ID: 5039
+// Function ID: 43473
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 1838, 4142, 1906, 5040, 3760, 1355, 21, 4345, 5041, 686, 22, 566, 2]
 
-// Module 5036 (_isNativeReflectConstruct)
+// Module 5039 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import getThreadLastActivityTime from "getThreadLastActivityTime";
+import apply from "apply";
+import initialize from "initialize";
+import _callSuper from "_callSuper";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import { ChannelFlags } from "set";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +30,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +83,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -102,32 +119,34 @@ function rebuild() {
   for (const key10012 in closure_24) {
     let tmp3 = key10012;
     let _clearTimeout = clearTimeout;
-    let tmp4 = closure_24;
-    let clearTimeoutResult = clearTimeout(closure_24[key10012]);
+    let tmp4 = dependencyMap7;
+    let clearTimeoutResult = clearTimeout(dependencyMap7[key10012]);
+    continue;
   }
-  let closure_24 = {};
+  const dependencyMap7 = {};
   closure_14.forEachGuild((arg0) => {
-    callback(arg0);
+    outer1_35(arg0);
   });
   rebuildNewThreadCounts();
 }
-function rebuildGuild(arg0) {
-  delete r0[r7];
-  delete r0[r7];
-  delete r0[r7];
-  delete r0[r7];
-  delete r0[r7];
-  rebuildGuild_(arg0);
+function rebuildGuild(guild_id) {
+  delete tmp[tmp2];
+  delete tmp[tmp2];
+  delete tmp[tmp2];
+  delete tmp[tmp2];
+  delete tmp[tmp2];
+  rebuildGuild_(guild_id);
   for (const key10012 in closure_19[arg0]) {
-    let tmp2 = key10012;
-    let tmp3 = closure_38;
-    let tmp4 = closure_38(arg0, key10012);
+    let tmp4 = key10012;
+    let tmp5 = recountParent;
+    let tmp6 = recountParent(arg0, key10012);
+    continue;
   }
 }
-function rebuildGuild_(arg0) {
+function rebuildGuild_(guild_id) {
   let isTimedRelevant;
   let isUnread;
-  const threadsForGuild = closure_14.getThreadsForGuild(arg0);
+  const threadsForGuild = closure_14.getThreadsForGuild(guild_id);
   const keys = Object.keys();
   if (keys !== undefined) {
     while (keys[tmp2] !== undefined) {
@@ -142,12 +161,12 @@ function rebuildGuild_(arg0) {
       if (keys1 === undefined) {
         continue;
       } else {
-        let tmp4 = tmp35;
-        let tmp5 = tmp36;
-        let tmp6 = tmp37;
-        let tmp7 = tmp38;
-        let tmp8 = tmp39;
-        let tmp9 = tmp40;
+        tmp4 = tmp35;
+        tmp5 = tmp36;
+        tmp6 = tmp37;
+        tmp7 = tmp38;
+        tmp8 = tmp39;
+        tmp9 = tmp40;
         let tmp21 = keys1[tmp];
         while (tmp21 !== undefined) {
           let tmp65 = tmp21;
@@ -211,7 +230,7 @@ function rebuildGuild_(arg0) {
                 tmp38 = obj;
                 tmp39 = isUnread;
                 tmp40 = isTimedRelevant;
-                // continue
+                continue;
               }
               continue;
             } else {
@@ -238,7 +257,7 @@ function rebuildGuild_(arg0) {
               tmp38 = tmp18;
               tmp39 = tmp19;
               tmp40 = tmp20;
-              // continue
+              continue;
             }
             continue;
           }
@@ -253,7 +272,7 @@ function rebuildNewThreadCounts() {
   let closure_22 = {};
   for (const key10004 in closure_19) {
     let tmp3 = key10004;
-    let tmp4 = closure_19;
+    let tmp4 = dependencyMap3;
     let keys = Object.keys();
     if (keys === undefined) {
       continue;
@@ -261,16 +280,16 @@ function rebuildNewThreadCounts() {
       let tmp2 = keys[tmp];
       while (tmp2 !== undefined) {
         let tmp6 = tmp2;
-        let tmp7 = closure_38;
-        let tmp8 = closure_38(key10004, tmp2);
-        // continue
+        let tmp7 = recountParent;
+        let tmp8 = recountParent(key10004, tmp2);
+        continue;
       }
     }
     continue;
   }
 }
-function recountChannelId(closure_23) {
-  const basicChannel = store.getBasicChannel(closure_23);
+function recountChannelId(channelId) {
+  const basicChannel = store.getBasicChannel(channelId);
   let hasItem = null != basicChannel;
   if (hasItem) {
     hasItem = set.has(basicChannel.type);
@@ -283,21 +302,21 @@ function recountParent(guild_id, id) {
   const channel = store.getChannel(id);
   if (null != channel) {
     if (channel.isForumLikeChannel()) {
-      if (null == closure_22[guild_id]) {
-        closure_22[guild_id] = {};
+      if (null == dependencyMap6[guild_id]) {
+        dependencyMap6[guild_id] = {};
       }
-      closure_22[guild_id][id] = 0;
-      if (null != closure_19[guild_id]) {
-        if (null != closure_19[guild_id][id]) {
-          const guild = guild.getGuild(guild_id);
+      dependencyMap6[guild_id][id] = 0;
+      if (null != dependencyMap3[guild_id]) {
+        if (null != dependencyMap3[guild_id][id]) {
+          guild = guild.getGuild(guild_id);
           if (null != guild) {
             let trackedAckMessageId = store2.getTrackedAckMessageId(id);
             if (null == trackedAckMessageId) {
               const _Date3 = Date;
               let timestamp = Date.now();
               if (null == guild.joinedAt) {
-                trackedAckMessageId = importDefault(dependencyMap[13]).fromTimestamp(timestamp);
-                const obj3 = importDefault(dependencyMap[13]);
+                trackedAckMessageId = importDefault(21).fromTimestamp(timestamp);
+                const obj3 = importDefault(21);
               } else {
                 const _Date = Date;
                 const joinedAt = guild.joinedAt;
@@ -312,34 +331,34 @@ function recountParent(guild_id, id) {
             }
             for (const key10046 in closure_19[arg0][arg1]) {
               let tmp29 = key10046;
-              let tmp30 = closure_23;
-              if (arg1 === closure_23) {
-                let tmp20 = closure_12;
-                if (!closure_12.isNewForumThread(key10046, arg1, guild)) {
+              let tmp30 = c23;
+              if (arg1 === c23) {
+                let tmp20 = store2;
+                if (!store2.isNewForumThread(key10046, arg1, guild)) {
                   continue;
                 } else {
-                  let tmp21 = closure_22;
-                  let tmp22 = closure_22[arg0];
+                  let tmp21 = dependencyMap6;
+                  let tmp22 = dependencyMap6[arg0];
                   tmp22[arg1] = tmp22[arg1] + 1;
-                  // continue
+                  continue;
                 }
                 continue;
               } else {
-                let tmp14 = closure_1;
-                let tmp15 = closure_2;
-                let obj4 = closure_1(closure_2[13]);
+                let tmp14 = importDefault;
+                let tmp15 = dependencyMap;
+                let obj4 = importDefault(21);
                 let tmp16 = obj4.compare(key10046, trackedAckMessageId) > 0;
                 if (tmp16) {
-                  let tmp17 = closure_12;
-                  tmp16 = !closure_12.hasOpenedThread(key10046);
+                  let tmp17 = store2;
+                  tmp16 = !store2.hasOpenedThread(key10046);
                 }
                 if (!tmp16) {
                   continue;
                 } else {
-                  let tmp18 = closure_22;
-                  let tmp19 = closure_22[arg0];
+                  let tmp18 = dependencyMap6;
+                  let tmp19 = dependencyMap6[arg0];
                   tmp19[arg1] = tmp19[arg1] + 1;
-                  // continue
+                  continue;
                 }
                 continue;
               }
@@ -393,7 +412,7 @@ function updateThread(guild_id, parent_id, id) {
           }
           updateIn(closure_20, channel, tmp32, true);
           clearTimer(channel.id);
-          const isForumPostUnreadResult = store2.isForumPostUnread(channel.id);
+          isForumPostUnreadResult = store2.isForumPostUnread(channel.id);
           const tmp76 = updateIn;
         }
         recountParent(guild_id, parent_id);
@@ -416,15 +435,15 @@ function anyThreadsNSFW(guild_id, parent_id) {
     return false;
   } else {
     let tmp = null;
-    if (null != closure_17[guild_id]) {
+    if (null != dependencyMap[guild_id]) {
       tmp = tmp10[parent_id];
     }
     if (null != tmp) {
       for (const key10008 in tmp) {
         let tmp11 = key10008;
-        let tmp12 = closure_0;
-        let tmp13 = closure_2;
-        let obj = closure_0(closure_2[14]);
+        let tmp12 = require;
+        let tmp13 = dependencyMap;
+        let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
         if (!obj.isChannelContentGated(tmp[key10008].channel)) {
           continue;
         } else {
@@ -434,7 +453,7 @@ function anyThreadsNSFW(guild_id, parent_id) {
       }
     }
     let tmp5 = null;
-    if (null != closure_19[guild_id]) {
+    if (null != dependencyMap3[guild_id]) {
       tmp5 = tmp4[parent_id];
     }
     if (null != tmp5) {
@@ -442,9 +461,9 @@ function anyThreadsNSFW(guild_id, parent_id) {
       if (keys !== undefined) {
         while (keys[14] !== undefined) {
           let tmp14 = tmp8;
-          let tmp15 = parent_id;
+          let tmp15 = require;
           let tmp16 = dependencyMap;
-          let obj2 = parent_id(dependencyMap[14]);
+          let obj2 = require(4345) /* shouldAgeVerifyForAgeGate */;
           if (!obj2.isChannelContentGated(tmp5[tmp8])) {
             continue;
           } else {
@@ -482,7 +501,7 @@ function handleReadStateChannelAction(channelId) {
     if (set2.has(channel.type)) {
       if (null == parent_id) {
         return false;
-      } else if (exists(closure_17, channel)) {
+      } else if (exists(dependencyMap, channel)) {
         const tmp21 = parseThreadState(channel);
         ({ isUnread, isRelevant } = tmp21);
         syncTimer(channel, tmp21.isTimedRelevant);
@@ -502,7 +521,7 @@ function handleReadStateChannelAction(channelId) {
         updateIn(closure_18, channel, tmp33, true);
         updateIn(closure_21, channel, tmp30, true);
         recountParent(guild_id, parent_id);
-        const tmp26 = exists(closure_18, channel);
+        tmp26 = exists(closure_18, channel);
         const tmp31 = updateIn;
       } else {
         const isForumPostUnreadResult = store2.isForumPostUnread(channel.id);
@@ -516,11 +535,11 @@ function handleReadStateChannelAction(channelId) {
           updateIn(closure_20, channel, tmp15, true);
           const tmp13 = updateIn;
         }
-        const tmp10 = exists(closure_20, channel);
+        tmp10 = exists(closure_20, channel);
       }
     } else {
       let tmp5;
-      if (null != closure_22[guild_id]) {
+      if (null != dependencyMap6[guild_id]) {
         tmp5 = tmp4[channel.id];
       }
       let flag = Number(tmp5) > 0;
@@ -541,7 +560,7 @@ function rebuildReadStates() {
   if (keys !== undefined) {
     while (keys[tmp2] !== undefined) {
       let tmp52 = tmp12;
-      let tmp53 = closure_17;
+      let tmp53 = dependencyMap;
       let tmp20 = tmp3;
       let tmp17 = tmp4;
       let tmp18 = tmp5;
@@ -550,17 +569,17 @@ function rebuildReadStates() {
       if (keys1 === undefined) {
         continue;
       } else {
-        let tmp3 = tmp20;
+        tmp3 = tmp20;
         let tmp13 = tmp17;
         let tmp14 = tmp18;
         let tmp15 = tmp19;
-        let tmp4 = tmp17;
-        let tmp5 = tmp18;
-        let tmp6 = tmp19;
+        tmp4 = tmp17;
+        tmp5 = tmp18;
+        tmp6 = tmp19;
         let tmp16 = keys1[tmp];
         while (tmp16 !== undefined) {
           let tmp55 = tmp16;
-          let tmp56 = closure_17;
+          let tmp56 = dependencyMap;
           tmp20 = tmp16;
           let tmp32 = tmp17;
           isRelevant = tmp18;
@@ -576,8 +595,8 @@ function rebuildReadStates() {
             let tmp21 = keys2[tmp4];
             while (tmp21 !== undefined) {
               let tmp58 = tmp21;
-              let tmp59 = closure_17;
-              let tmp60 = closure_17[tmp12][tmp16][tmp21];
+              let tmp59 = dependencyMap;
+              let tmp60 = dependencyMap[tmp12][tmp16][tmp21];
               let tmp61 = parseThreadState;
               let tmp62 = parseThreadState(tmp60.channel);
               ({ isRelevant, isTimedRelevant } = tmp62);
@@ -599,7 +618,7 @@ function rebuildReadStates() {
               let tmp31 = syncTimer(tmp60.channel, isTimedRelevant);
               tmp32 = tmp60;
               tmp33 = isTimedRelevant;
-              // continue
+              continue;
             }
           }
           continue;
@@ -613,20 +632,20 @@ function rebuildReadStates() {
   if (keys3 !== undefined) {
     while (keys3[tmp12] !== undefined) {
       let tmp63 = tmp39;
-      let tmp64 = closure_19;
+      let tmp64 = dependencyMap3;
       let tmp43 = tmp34;
       let tmp42 = tmp35;
       let keys4 = Object.keys();
       if (keys4 === undefined) {
         continue;
       } else {
-        let tmp34 = tmp43;
+        tmp34 = tmp43;
         let tmp40 = tmp42;
-        let tmp35 = tmp42;
+        tmp35 = tmp42;
         let tmp41 = keys4[tmp16];
         while (tmp41 !== undefined) {
           let tmp66 = tmp41;
-          let tmp67 = closure_19;
+          let tmp67 = dependencyMap3;
           tmp43 = tmp41;
           let tmp50 = tmp42;
           let keys5 = Object.keys();
@@ -638,8 +657,8 @@ function rebuildReadStates() {
             let tmp44 = keys5[tmp37];
             while (tmp44 !== undefined) {
               let tmp69 = tmp44;
-              let tmp70 = closure_19;
-              let tmp71 = closure_19[tmp39][tmp41][tmp44];
+              let tmp70 = dependencyMap3;
+              let tmp71 = dependencyMap3[tmp39][tmp41][tmp44];
               let tmp72 = store2;
               tmp50 = tmp71;
               if (!store2.isForumPostUnread(tmp44)) {
@@ -652,7 +671,7 @@ function rebuildReadStates() {
                 let flag3 = false;
                 let tmp49 = updateIn(closure_20, tmp71, tmp71, false);
                 tmp50 = tmp71;
-                // continue
+                continue;
               }
               continue;
             }
@@ -667,14 +686,13 @@ function rebuildReadStates() {
 }
 function updateSelectedChannel() {
   const channelId = store3.getChannelId();
-  let closure_23 = channelId;
-  if (channelId === closure_23) {
+  if (channelId === channelId) {
     return false;
   } else {
     recountChannelId(tmp);
-    recountChannelId(closure_23);
+    recountChannelId(channelId);
   }
-  const tmp = closure_23;
+  tmp = channelId;
 }
 function parseThreadState(channel) {
   const tmp = store2.getMentionCount(channel.id) > 0;
@@ -687,8 +705,8 @@ function parseThreadState(channel) {
   let tmp6 = isActiveThreadResult;
   if (isActiveThreadResult) {
     const _Date = Date;
-    tmp6 = importDefault(dependencyMap[15])(channel) > Date.now();
-    const tmp9 = importDefault(dependencyMap[15])(channel);
+    tmp6 = importDefault(5041)(channel) > Date.now();
+    const tmp9 = importDefault(5041)(channel);
   }
   const obj = {};
   if (!isActiveThreadResult) {
@@ -721,23 +739,24 @@ function parseThreadState(channel) {
 function syncTimer(channel, isTimedRelevant) {
   clearTimer(channel.id);
   if (isTimedRelevant) {
-    function setTimer(channel_id, mute_config, arg2) {
-      closure_24[channel_id.id] = setTimeout(() => {
-        const channel = channel.getChannel(arg0.id);
+    (function setTimer(channel_id, mute_config, arg2) {
+      let closure_0 = channel_id;
+      outer1_24[channel_id.id] = setTimeout(() => {
+        const channel = outer2_10.getChannel(id.id);
         if (null != channel) {
-          let obj = callback(closure_2[16]);
+          let obj = outer2_1(outer2_2[16]);
           obj = { type: "THREAD_UPDATE", channel };
           obj.dispatch(obj);
         }
-      }, callback(closure_2[15])(channel_id) - Date.now() + 1);
-    }(channel);
+      }, outer1_1(outer1_2[15])(channel_id) - Date.now() + 1);
+    })(channel);
   }
 }
 function clearTimer(id) {
-  if (id in closure_24) {
+  if (id in dependencyMap7) {
     const _clearTimeout = clearTimeout;
-    clearTimeout(closure_24[id]);
-    delete r0[r1];
+    clearTimeout(dependencyMap7[id]);
+    delete tmp[tmp2];
   }
 }
 function updateIn(closure_17, channel, channel2, arg3) {
@@ -745,7 +764,7 @@ function updateIn(closure_17, channel, channel2, arg3) {
   let id;
   let parent_id;
   ({ guild_id, parent_id, id } = channel);
-  if (tmp) {
+  if (tmp5) {
     if (!(guild_id in closure_17)) {
       closure_17[guild_id] = {};
     }
@@ -761,33 +780,33 @@ function updateIn(closure_17, channel, channel2, arg3) {
       closure_17[guild_id] = obj;
     }
     if (null === channel2) {
-      delete r3[r4];
+      delete tmp3[tmp4];
       if (obj3.isEmpty(closure_17[guild_id][parent_id])) {
-        delete r0[r1];
+        delete tmp[tmp2];
       }
-      const obj3 = importDefault(dependencyMap[17]);
+      obj3 = importDefault(22);
     } else {
       closure_17[guild_id][parent_id][id] = channel2;
     }
   }
 }
 function deleteIn(closure_17, guild_id, parent_id, id) {
-  let tmp = null != guild_id && null != parent_id && null != id;
-  if (tmp) {
-    tmp = existsIn(closure_17, guild_id, parent_id, id);
+  let tmp5 = null != guild_id && null != parent_id && null != id;
+  if (tmp5) {
+    tmp5 = existsIn(closure_17, guild_id, parent_id, id);
   }
-  if (tmp) {
+  if (tmp5) {
     let obj = {};
     const merged = Object.assign(closure_17[guild_id]);
     obj = {};
     const merged1 = Object.assign(closure_17[guild_id][parent_id]);
     obj[parent_id] = obj;
     closure_17[guild_id] = obj;
-    delete r3[r4];
+    delete tmp3[tmp4];
     if (obj3.isEmpty(closure_17[guild_id][parent_id])) {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
-    const obj3 = importDefault(dependencyMap[17]);
+    obj3 = importDefault(22);
   }
 }
 function exists(closure_17, guild_id) {
@@ -800,45 +819,33 @@ function existsIn(closure_17, guild_id, parent_id, id) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ THREADED_CHANNEL_TYPES: closure_8, THREAD_CHANNEL_TYPES: closure_9 } = arg1(dependencyMap[5]));
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-let closure_15 = importDefault(dependencyMap[11]);
-const ChannelFlags = arg1(dependencyMap[12]).ChannelFlags;
+({ THREADED_CHANNEL_TYPES: closure_8, THREAD_CHANNEL_TYPES: closure_9 } = _callSuper);
 let closure_17 = {};
 let closure_18 = {};
 let closure_19 = {};
 let closure_20 = {};
 let closure_21 = {};
 let closure_22 = {};
-let closure_23 = null;
+let c23 = null;
 let closure_24 = {};
 let obj = {};
 let closure_26 = {};
 let closure_27 = {};
 let closure_28 = {};
 let closure_29 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class ActiveJoinedThreadsStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ActiveJoinedThreadsStore);
-      obj = closure_6(ActiveJoinedThreadsStore);
-      tmp2 = closure_5;
-      if (closure_30()) {
+      tmp = outer1_3(this, ActiveJoinedThreadsStore);
+      obj = outer1_6(ActiveJoinedThreadsStore);
+      tmp2 = outer1_5;
+      if (outer1_30()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -847,23 +854,22 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ActiveJoinedThreadsStore;
   callback2(ActiveJoinedThreadsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_14, closure_10, closure_11, closure_15, closure_12, closure_13);
-      const items = [closure_13];
-      this.syncWith(items, closure_43);
+      this.waitFor(outer1_14, outer1_10, outer1_11, outer1_15, outer1_12, outer1_13);
+      const items = [outer1_13];
+      this.syncWith(items, outer1_43);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "hasActiveJoinedUnreadThreads",
     value(arg0, arg1) {
-      let tmp = arg0 in closure_18;
+      let tmp = arg0 in outer1_18;
       if (tmp) {
-        tmp = arg1 in closure_18[arg0];
+        tmp = arg1 in outer1_18[arg0];
       }
       return tmp;
     }
@@ -872,8 +878,8 @@ let tmp3 = (Store) => {
   obj = {
     key: "getActiveUnjoinedThreadsForParent",
     value(arg0, arg1) {
-      if (!(arg0 in closure_19)) {
-        const tmp3 = closure_28;
+      if (!(arg0 in outer1_19)) {
+        const tmp3 = outer1_28;
       }
       return tmp3;
     }
@@ -882,8 +888,8 @@ let tmp3 = (Store) => {
   items[3] = {
     key: "getActiveJoinedThreadsForParent",
     value(arg0, arg1) {
-      if (!(arg0 in closure_17)) {
-        const tmp3 = closure_27;
+      if (!(arg0 in outer1_17)) {
+        const tmp3 = outer1_27;
       }
       return tmp3;
     }
@@ -891,15 +897,15 @@ let tmp3 = (Store) => {
   items[4] = {
     key: "getAllActiveJoinedThreads",
     value() {
-      return closure_17;
+      return outer1_17;
     }
   };
   items[5] = {
     key: "getActiveJoinedThreadsForGuild",
     value(arg0) {
-      let tmp = closure_17[arg0];
+      let tmp = outer1_17[arg0];
       if (null == tmp) {
-        tmp = closure_25;
+        tmp = outer1_25;
       }
       return tmp;
     }
@@ -907,9 +913,9 @@ let tmp3 = (Store) => {
   items[6] = {
     key: "getActiveJoinedUnreadThreadsForGuild",
     value(arg0) {
-      let tmp = closure_18[arg0];
+      let tmp = outer1_18[arg0];
       if (null == tmp) {
-        tmp = closure_25;
+        tmp = outer1_25;
       }
       return tmp;
     }
@@ -919,7 +925,7 @@ let tmp3 = (Store) => {
     value(arg0, arg1) {
       let tmp = this.getActiveJoinedUnreadThreadsForGuild(arg0)[arg1];
       if (null == tmp) {
-        tmp = closure_27;
+        tmp = outer1_27;
       }
       return tmp;
     }
@@ -927,9 +933,9 @@ let tmp3 = (Store) => {
   items[8] = {
     key: "getActiveJoinedRelevantThreadsForGuild",
     value(arg0) {
-      let tmp = closure_21[arg0];
+      let tmp = outer1_21[arg0];
       if (null == tmp) {
-        tmp = closure_25;
+        tmp = outer1_25;
       }
       return tmp;
     }
@@ -939,7 +945,7 @@ let tmp3 = (Store) => {
     value(arg0, arg1) {
       let tmp = this.getActiveJoinedRelevantThreadsForGuild(arg0)[arg1];
       if (null == tmp) {
-        tmp = closure_27;
+        tmp = outer1_27;
       }
       return tmp;
     }
@@ -947,9 +953,9 @@ let tmp3 = (Store) => {
   items[10] = {
     key: "getActiveUnjoinedThreadsForGuild",
     value(arg0) {
-      let tmp = closure_19[arg0];
+      let tmp = outer1_19[arg0];
       if (null == tmp) {
-        tmp = closure_26;
+        tmp = outer1_26;
       }
       return tmp;
     }
@@ -957,9 +963,9 @@ let tmp3 = (Store) => {
   items[11] = {
     key: "getActiveUnjoinedUnreadThreadsForGuild",
     value(arg0) {
-      let tmp = closure_20[arg0];
+      let tmp = outer1_20[arg0];
       if (null == tmp) {
-        tmp = closure_25;
+        tmp = outer1_25;
       }
       return tmp;
     }
@@ -969,7 +975,7 @@ let tmp3 = (Store) => {
     value(arg0, arg1) {
       let tmp = this.getActiveUnjoinedUnreadThreadsForGuild(arg0)[arg1];
       if (null == tmp) {
-        tmp = closure_27;
+        tmp = outer1_27;
       }
       return tmp;
     }
@@ -977,9 +983,9 @@ let tmp3 = (Store) => {
   items[13] = {
     key: "getNewThreadCountsForGuild",
     value(arg0) {
-      let tmp = closure_22[arg0];
+      let tmp = outer1_22[arg0];
       if (null == tmp) {
-        tmp = closure_29;
+        tmp = outer1_29;
       }
       return tmp;
     }
@@ -994,16 +1000,16 @@ let tmp3 = (Store) => {
           let tmp12 = tmp6;
           if (tmp6 === arg0) {
             let tmp8 = tmp3;
-            let tmp7 = closure_17;
+            let tmp7 = outer1_17;
             let keys1 = Object.keys();
             if (keys1 === undefined) {
               continue;
             } else {
-              let tmp3 = tmp8;
+              tmp3 = tmp8;
               let tmp10 = keys1[tmp];
               while (tmp10 !== undefined) {
                 let tmp13 = tmp10;
-                let tmp14 = closure_17;
+                let tmp14 = outer1_17;
                 tmp8 = tmp10;
                 let keys2 = Object.keys();
                 if (keys2 === undefined) {
@@ -1013,9 +1019,9 @@ let tmp3 = (Store) => {
                   let tmp11 = keys2[tmp7];
                   while (tmp11 !== undefined) {
                     let tmp16 = tmp11;
-                    let tmp17 = closure_17;
-                    let arr = items.push(closure_17[tmp6][tmp10][tmp11].channel);
-                    // continue
+                    let tmp17 = outer1_17;
+                    let arr = items.push(outer1_17[tmp6][tmp10][tmp11].channel);
+                    continue;
                   }
                 }
                 continue;
@@ -1033,7 +1039,7 @@ let tmp3 = (Store) => {
     key: "getNewThreadCount",
     value(arg0, arg1) {
       let tmp2;
-      if (null != closure_22[arg0]) {
+      if (null != outer1_22[arg0]) {
         tmp2 = tmp[arg1];
       }
       let num = 0;
@@ -1046,9 +1052,9 @@ let tmp3 = (Store) => {
   items[16] = {
     key: "getActiveThreadCount",
     value(arg0, arg1) {
-      let obj = callback(closure_2[17]);
+      let obj = outer1_1(outer1_2[17]);
       obj = undefined;
-      if (null != closure_17[arg0]) {
+      if (null != outer1_17[arg0]) {
         obj = tmp[arg1];
       }
       if (null == obj) {
@@ -1056,17 +1062,17 @@ let tmp3 = (Store) => {
       }
       const sizeResult = obj.size(obj);
       obj = undefined;
-      if (null != closure_19[arg0]) {
+      if (null != outer1_19[arg0]) {
         obj = tmp3[arg1];
       }
       if (null == obj) {
         obj = {};
       }
-      return sizeResult + callback(closure_2[17]).size(obj);
+      return sizeResult + outer1_1(outer1_2[17]).size(obj);
     }
   };
   return callback(ActiveJoinedThreadsStore, items);
-}(importDefault(dependencyMap[18]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ActiveJoinedThreadsStore";
 obj = {
   CONNECTION_OPEN: rebuild,
@@ -1100,7 +1106,7 @@ obj = {
     let iter = tmp();
     if (!iter.done) {
       const value = iter.value;
-      const result = arg1(dependencyMap[14]).isChannelContentGated(value);
+      const result = require(4345) /* shouldAgeVerifyForAgeGate */.isChannelContentGated(value);
       while (result === anyThreadsNSFW(value.guild_id, value.parent_id)) {
         let iter2 = tmp();
         iter = iter2;
@@ -1112,54 +1118,54 @@ obj = {
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     channel = channel.channel;
     let flag = false;
-    if (tmp) {
-      let tmp3 = channel.guild_id in closure_17;
-      if (tmp3) {
-        tmp3 = channel.parent_id in closure_17[channel.guild_id];
+    if (tmp3) {
+      let tmp5 = channel.guild_id in dependencyMap;
+      if (tmp5) {
+        tmp5 = channel.parent_id in dependencyMap[channel.guild_id];
       }
       let flag2 = false;
-      if (tmp3) {
+      if (tmp5) {
         const parent_id = channel.parent_id;
-        delete r5[r4];
+        delete tmp2[tmp];
         flag2 = true;
       }
-      let tmp8 = channel.guild_id in closure_18;
-      if (tmp8) {
-        tmp8 = channel.parent_id in closure_18[channel.guild_id];
+      let tmp10 = channel.guild_id in dependencyMap2;
+      if (tmp10) {
+        tmp10 = channel.parent_id in dependencyMap2[channel.guild_id];
       }
-      if (tmp8) {
+      if (tmp10) {
         const parent_id2 = channel.parent_id;
-        delete r5[r4];
+        delete tmp2[tmp];
         flag2 = true;
       }
-      let tmp13 = channel.guild_id in closure_21;
-      if (tmp13) {
-        tmp13 = channel.parent_id in closure_21[channel.guild_id];
+      let tmp15 = channel.guild_id in dependencyMap5;
+      if (tmp15) {
+        tmp15 = channel.parent_id in dependencyMap5[channel.guild_id];
       }
-      if (tmp13) {
-        const keys = importDefault(dependencyMap[13]).keys(closure_21[channel.guild_id][channel.parent_id]);
+      if (tmp15) {
+        const keys = importDefault(21).keys(dependencyMap5[channel.guild_id][channel.parent_id]);
         const item = keys.forEach(clearTimer);
         const parent_id3 = channel.parent_id;
-        delete r5[r4];
+        delete tmp2[tmp];
         flag2 = true;
-        const obj = importDefault(dependencyMap[13]);
+        const obj = importDefault(21);
       }
-      let tmp23 = channel.guild_id in closure_19;
-      if (tmp23) {
-        tmp23 = channel.parent_id in closure_19[channel.guild_id];
+      let tmp25 = channel.guild_id in dependencyMap3;
+      if (tmp25) {
+        tmp25 = channel.parent_id in dependencyMap3[channel.guild_id];
       }
-      if (tmp23) {
+      if (tmp25) {
         const parent_id4 = channel.parent_id;
-        delete r5[r4];
+        delete tmp2[tmp];
         flag2 = true;
       }
-      let tmp28 = channel.guild_id in closure_20;
-      if (tmp28) {
-        tmp28 = channel.parent_id in closure_20[channel.guild_id];
+      let tmp30 = channel.guild_id in dependencyMap4;
+      if (tmp30) {
+        tmp30 = channel.parent_id in dependencyMap4[channel.guild_id];
       }
-      if (tmp28) {
+      if (tmp30) {
         const parent_id5 = channel.parent_id;
-        delete r5[r4];
+        delete tmp2[tmp];
         flag2 = true;
       }
       flag = flag2;
@@ -1201,9 +1207,8 @@ obj = {
   TRY_ACK: rebuildReadStates,
   BULK_ACK: rebuildReadStates
 };
-tmp3 = new tmp3(importDefault(dependencyMap[16]), obj);
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/threads/ActiveJoinedThreadsStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/threads/ActiveJoinedThreadsStore.tsx");
 
 export default tmp3;
 export const NO_GUILD_JOINED_THREADS = obj;

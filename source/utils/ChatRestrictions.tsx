@@ -1,22 +1,23 @@
-// Module ID: 9545
-// Function ID: 74422
+// Module ID: 9552
+// Function ID: 74463
 // Name: items
-// Dependencies: []
+// Dependencies: [653, 9553, 1212, 2]
 
-// Module 9545 (items)
-const TOKEN_REGEX = require(dependencyMap[0]).TOKEN_REGEX;
+// Module 9552 (items)
+import { TOKEN_REGEX } from "ME";
+
 let obj = {
   check(arg0, getGuildId) {
     if (arg2) {
       if (null == getGuildId.getGuildId()) {
         return false;
       } else {
-        const extractEveryoneRoleResult = importDefault(dependencyMap[1]).extractEveryoneRole(arg0, getGuildId);
+        const extractEveryoneRoleResult = importDefault(9553).extractEveryoneRole(arg0, getGuildId);
         if (null == extractEveryoneRoleResult) {
           return false;
         } else {
           if (obj6.shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId)) {
-            let obj = importDefault(dependencyMap[1]);
+            let obj = importDefault(9553);
             const everyoneMemberCountResult = obj.everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
             const _Math = Math;
             const _Math2 = Math;
@@ -26,21 +27,21 @@ let obj = {
             } else if (getGuildId.isThread()) {
             }
             obj = {};
-            const intl = require(dependencyMap[2]).intl;
+            const intl = require(1212) /* getSystemLocale */.intl;
             obj = { role: extractEveryoneRoleResult };
             const _Math4 = Math;
             const result = Math.trunc(everyoneMemberCountResult / powResult) * powResult;
             obj.count = result.toLocaleString();
             obj.body = intl.formatToPlainString(_2YaiQ1, obj);
-            const intl2 = require(dependencyMap[2]).intl;
-            obj.footer = intl2.string(require(dependencyMap[2]).t.mVyrtu);
+            const intl2 = require(1212) /* getSystemLocale */.intl;
+            obj.footer = intl2.string(require(1212) /* getSystemLocale */.t.mVyrtu);
             return obj;
           } else {
             return false;
           }
-          const obj6 = importDefault(dependencyMap[1]);
+          obj6 = importDefault(9553);
         }
-        const obj5 = importDefault(dependencyMap[1]);
+        const obj5 = importDefault(9553);
       }
     } else {
       return false;
@@ -56,8 +57,8 @@ obj = {
     let tmp2 = !tmp;
     if (!tmp) {
       const obj = {};
-      const intl = require(dependencyMap[2]).intl;
-      obj.body = intl.string(require(dependencyMap[2]).t.sTwS1a);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj.body = intl.string(require(1212) /* getSystemLocale */.t.sTwS1a);
       tmp2 = obj;
     }
     return tmp2;
@@ -65,7 +66,6 @@ obj = {
   analyticsType: "API Token Warning"
 };
 items[1] = obj;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("utils/ChatRestrictions.tsx");
+let result = require("getSystemLocale").fileFinishedImporting("utils/ChatRestrictions.tsx");
 
 export const RESTRICTIONS = items;

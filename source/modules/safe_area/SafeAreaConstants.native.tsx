@@ -1,13 +1,13 @@
 // Module ID: 1559
-// Function ID: 17606
+// Function ID: 17607
 // Name: EMPTY_SAFE_AREA_INSETS
-// Dependencies: []
+// Dependencies: [1560, 2]
 
 // Module 1559 (EMPTY_SAFE_AREA_INSETS)
-const obj = { wideBannerAnimatedUrl: -24, SPACE_32: null, np: 1, linkedUsers: "Malaysia" };
+const obj = { top: 0, bottom: 0, left: 0, right: 0 };
 let initialWindowMetrics;
-if (null != require(dependencyMap[0]).initialWindowMetrics) {
-  initialWindowMetrics = require(dependencyMap[0]).initialWindowMetrics;
+if (null != require("module_1560").initialWindowMetrics) {
+  initialWindowMetrics = require("module_1560").initialWindowMetrics;
 }
 let insets;
 if (null != initialWindowMetrics) {
@@ -17,10 +17,9 @@ let tmp4 = obj;
 if (null != insets) {
   tmp4 = insets;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/safe_area/SafeAreaConstants.native.tsx");
+const result = require("set").fileFinishedImporting("modules/safe_area/SafeAreaConstants.native.tsx");
 
 export const EMPTY_SAFE_AREA_INSETS = obj;
-export const META_QUEST_SAFE_AREA_INSETS = { wideBannerAnimatedUrl: "FadeInLeft", SPACE_32: null, np: 0.3, linkedUsers: "FadeInUp" };
+export const META_QUEST_SAFE_AREA_INSETS = { top: 4, bottom: 4, left: 0, right: 0 };
 export const INITIAL_SAFE_AREA_METRICS = initialWindowMetrics;
 export const INITIAL_SAFE_AREA_INSETS = tmp4;

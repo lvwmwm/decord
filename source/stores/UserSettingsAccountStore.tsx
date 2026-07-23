@@ -1,15 +1,23 @@
-// Module ID: 5792
-// Function ID: 49507
+// Module ID: 5797
+// Function ID: 49536
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 653, 566, 686, 2]
 
-// Module 5792 (_isNativeReflectConstruct)
+// Module 5797 (_isNativeReflectConstruct)
+import ME from "ME";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FormStates } from "ME";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return ME;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -18,7 +26,7 @@ function handleFormInit() {
   if (null == currentUser) {
     handleFormClose();
   } else {
-    const CLOSED = FormStates.OPEN;
+    const OPEN = FormStates.OPEN;
     let closure_8 = {};
     let obj = {};
     ({ id: obj2.userId, username: obj2.username, discriminator: obj2.discriminator, email: obj2.email, avatar: obj2.avatar } = currentUser);
@@ -27,41 +35,33 @@ function handleFormInit() {
     obj.claimed = currentUser.isClaimed();
     obj = {};
     const merged = Object.assign(obj);
-    let closure_9 = obj;
   }
 }
 function handleFormClose() {
   const CLOSED = FormStates.CLOSED;
-  let closure_9 = null;
+  let c9 = null;
   let closure_8 = {};
 }
 function handleFormSubmitComplete() {
-  const CLOSED = FormStates.OPEN;
+  const OPEN = FormStates.OPEN;
   let closure_8 = {};
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-const FormStates = arg1(dependencyMap[6]).FormStates;
-const CLOSED = FormStates.CLOSED;
+let CLOSED = FormStates.CLOSED;
 let closure_8 = {};
-let closure_9 = null;
-let tmp2 = (Store) => {
+let c9 = null;
+let tmp2 = ((Store) => {
   class UserSettingsAccountStore {
     constructor() {
       self = this;
       tmp = UserSettingsAccountStore(this, UserSettingsAccountStore);
-      obj = closure_3(UserSettingsAccountStore);
-      tmp2 = closure_2;
-      if (closure_10()) {
+      obj = outer1_3(UserSettingsAccountStore);
+      tmp2 = outer1_2;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -70,39 +70,38 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = UserSettingsAccountStore;
   callback2(UserSettingsAccountStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getErrors",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
   obj = {
     key: "getSubmitting",
     value() {
-      return closure_7 === constants.SUBMITTING;
+      return outer1_7 === outer1_6.SUBMITTING;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getSettings",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   return callback(UserSettingsAccountStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "UserSettingsAccountStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   USER_SETTINGS_MODAL_OPEN: function handleFormOpen() {
     handleFormInit();
   },
@@ -110,27 +109,26 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
   USER_SETTINGS_MODAL_CLOSE: handleFormClose,
   LOGOUT: handleFormClose,
   USER_SETTINGS_MODAL_SUBMIT: function handleFormSubmit() {
-    const CLOSED = FormStates.SUBMITTING;
+    const SUBMITTING = FormStates.SUBMITTING;
   },
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: function handleFormSubmitFailure(errors) {
-    if (CLOSED !== FormStates.SUBMITTING) {
+    if (OPEN !== FormStates.SUBMITTING) {
       return false;
     } else {
-      const CLOSED = FormStates.OPEN;
+      OPEN = FormStates.OPEN;
       errors = errors.errors;
       if (null == errors) {
         errors = {};
       }
-      let closure_8 = errors;
     }
   },
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: function handleUpdateAccount(settings) {
-    if (null == closure_9) {
-      closure_9 = {};
+    if (null == obj) {
+      obj = {};
     }
-    const merged = Object.assign(closure_9);
+    obj = {};
+    const merged = Object.assign(obj);
     const merged1 = Object.assign(settings.settings);
-    closure_9 = {};
   },
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: handleFormSubmitComplete,
   USER_SETTINGS_MODAL_RESET: function handleFormReset() {
@@ -144,10 +142,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
       obj.claimed = currentUser.isClaimed();
       obj = {};
       const merged = Object.assign(obj);
-      let closure_9 = obj;
     }
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/UserSettingsAccountStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/UserSettingsAccountStore.tsx");
 
 export default tmp2;

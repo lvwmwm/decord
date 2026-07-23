@@ -1,9 +1,16 @@
-// Module ID: 4141
-// Function ID: 34828
+// Module ID: 4145
+// Function ID: 34858
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 22, 566, 686, 2]
 
-// Module 4141 (_isNativeReflectConstruct)
+// Module 4145 (_isNativeReflectConstruct)
+import apply from "apply";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,27 +27,21 @@ function handleUpdate(sessions) {
     closure_9[sessionId.sessionId] = sessionId;
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = Object.freeze([]);
 let closure_9 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class SessionsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, SessionsStore);
-      obj = closure_5(SessionsStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, SessionsStore);
+      obj = outer1_5(SessionsStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -49,19 +50,18 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = SessionsStore;
   callback2(SessionsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "getSessions",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
@@ -69,7 +69,7 @@ let tmp2 = (Store) => {
     key: "getSession",
     value() {
       const self = this;
-      const sessionId = store.getSessionId();
+      const sessionId = outer1_7.getSessionId();
       let sessionById = null;
       if (null != sessionId) {
         sessionById = self.getSessionById(sessionId);
@@ -81,22 +81,22 @@ let tmp2 = (Store) => {
   items[3] = {
     key: "getRemoteActivities",
     value() {
-      const SessionsStore = store.getSessionId();
-      const found = SessionsStore(closure_1[6]).find(closure_9, (active) => {
+      const sessionId = outer1_7.getSessionId();
+      const found = SessionsStore(outer1_1[6]).find(outer1_9, (active) => {
         active = active.active;
         if (active) {
           active = active.sessionId !== closure_0;
         }
         return active;
       });
-      return null != found ? found.activities : closure_8;
+      return null != found ? found.activities : outer1_8;
     }
   };
   items[4] = {
     key: "getHiddenActivities",
     value() {
-      const SessionsStore = store.getSessionId();
-      const found = SessionsStore(closure_1[6]).find(closure_9, (active) => {
+      const sessionId = outer1_7.getSessionId();
+      const found = SessionsStore(outer1_1[6]).find(outer1_9, (active) => {
         active = active.active;
         if (active) {
           active = active.sessionId !== closure_0;
@@ -109,30 +109,30 @@ let tmp2 = (Store) => {
         }
         return hiddenActivities;
       }
-      hiddenActivities = closure_8;
+      hiddenActivities = outer1_8;
     }
   };
   items[5] = {
     key: "getSessionById",
     value(arg0) {
-      return closure_9[arg0];
+      return outer1_9[arg0];
     }
   };
   items[6] = {
     key: "getActiveSession",
     value() {
-      return SessionsStore(closure_1[6]).find(closure_9, (active) => active.active);
+      return SessionsStore(outer1_1[6]).find(outer1_9, (active) => active.active);
     }
   };
   items[7] = {
     key: "getRemoteApplicationActivity",
     value(arg0) {
-      const SessionsStore = arg0;
+      let closure_0 = arg0;
       if (null == arg0) {
         return null;
       } else {
-        const sessionId = store.getSessionId();
-        const found = SessionsStore(sessionId[6]).find(closure_9, (active) => {
+        const sessionId = outer1_7.getSessionId();
+        const found = SessionsStore(outer1_1[6]).find(outer1_9, (active) => {
           active = active.active;
           if (active) {
             active = active.sessionId !== closure_1;
@@ -143,25 +143,25 @@ let tmp2 = (Store) => {
           return null;
         } else {
           const activities = found.activities;
-          let found1 = activities.find((application_id) => application_id.application_id === application_id);
+          let found1 = activities.find((application_id) => application_id.application_id === closure_0);
           if (null == found1) {
             const hiddenActivities = found.hiddenActivities;
             let found2;
             if (null != hiddenActivities) {
-              found2 = hiddenActivities.find((application_id) => application_id.application_id === application_id);
+              found2 = hiddenActivities.find((application_id) => application_id.application_id === closure_0);
             }
             found1 = found2;
           }
           return found1;
         }
-        const arr3 = SessionsStore(sessionId[6]);
+        const arr3 = SessionsStore(outer1_1[6]);
       }
     }
   };
   return callback(SessionsStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "SessionsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), { CONNECTION_OPEN: handleUpdate, SESSIONS_REPLACE: handleUpdate });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/SessionsStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), { CONNECTION_OPEN: handleUpdate, SESSIONS_REPLACE: handleUpdate });
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/SessionsStore.tsx");
 
 export default tmp2;

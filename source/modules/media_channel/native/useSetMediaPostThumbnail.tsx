@@ -1,21 +1,23 @@
-// Module ID: 9818
-// Function ID: 76182
+// Module ID: 9825
+// Function ID: 76223
 // Name: useSetMediaPostThumbnail
-// Dependencies: []
+// Dependencies: [31, 4468, 4467, 624, 4665, 7938, 4098, 2]
 // Exports: default
 
-// Module 9818 (useSetMediaPostThumbnail)
-let closure_3 = importAll(dependencyMap[0]);
-const DraftType = arg1(dependencyMap[1]).DraftType;
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/media_channel/native/useSetMediaPostThumbnail.tsx");
+// Module 9825 (useSetMediaPostThumbnail)
+import result from "result";
+import { DraftType } from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_channel/native/useSetMediaPostThumbnail.tsx");
 
 export default function useSetMediaPostThumbnail(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const uploads = uploads.getUploads(arg0, closure_4.ChannelMessage);
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => {
+    const uploads = outer1_5.getUploads(closure_0, outer1_4.ChannelMessage);
     const found = uploads.find((item) => {
       let platform;
       if (null != item) {
@@ -24,7 +26,7 @@ export default function useSetMediaPostThumbnail(arg0, arg1) {
           platform = item.platform;
         }
       }
-      let tmp2 = platform === callback(closure_2[4]).UploadPlatform.REACT_NATIVE;
+      let tmp2 = platform === callback(stateFromStores[4]).UploadPlatform.REACT_NATIVE;
       if (tmp2) {
         tmp2 = true === item.isThumbnail;
       }
@@ -36,40 +38,39 @@ export default function useSetMediaPostThumbnail(arg0, arg1) {
     }
     return tmp2;
   });
-  const dependencyMap = stateFromStores;
   const items1 = [stateFromStores, arg0, arg1];
-  return React.useCallback((arg0, self) => {
+  return React.useCallback(() => {
     let id;
-    if (null != self) {
-      id = self.id;
+    if (null != lib) {
+      id = lib.id;
     }
     if (null != id) {
       let tmp7 = null != stateFromStores;
       if (tmp7) {
         let id1;
-        if (null != self) {
-          id1 = self.id;
+        if (null != lib) {
+          id1 = lib.id;
         }
         tmp7 = stateFromStores.id !== id1;
       }
       if (tmp7) {
-        let obj = self(stateFromStores[5]);
+        let obj = lib(stateFromStores[5]);
         obj = { thumbnail: false };
-        obj.update(arg0, stateFromStores.id, closure_4.ChannelMessage, obj);
+        obj.update(closure_0, stateFromStores.id, outer1_4.ChannelMessage, obj);
       }
       let isThumbnail;
-      if (null != self) {
-        isThumbnail = self.isThumbnail;
+      if (null != lib) {
+        isThumbnail = lib.isThumbnail;
       }
-      const obj3 = self(stateFromStores[5]);
+      const obj3 = lib(stateFromStores[5]);
       let id2;
-      if (null != self) {
-        id2 = self.id;
+      if (null != lib) {
+        id2 = lib.id;
       }
       obj = { thumbnail: !(null != isThumbnail && isThumbnail), spoiler: false };
-      obj3.update(arg0, id2, closure_4.ChannelMessage, obj);
-      self(stateFromStores[6]).hideActionSheet();
-      const obj5 = self(stateFromStores[6]);
+      obj3.update(closure_0, id2, outer1_4.ChannelMessage, obj);
+      lib(stateFromStores[6]).hideActionSheet();
+      const obj5 = lib(stateFromStores[6]);
       const tmp19 = null != isThumbnail && isThumbnail;
     }
   }, items1);

@@ -1,10 +1,10 @@
-// Module ID: 15198
-// Function ID: 114622
+// Module ID: 15314
+// Function ID: 116792
 // Name: formSubmitError
-// Dependencies: []
+// Dependencies: [1212, 7109, 2]
 // Exports: makeApiNameRequiredError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTitleError, renderError
 
-// Module 15198 (formSubmitError)
+// Module 15314 (formSubmitError)
 function formSubmitError(type) {
   const obj = { type };
   let tmp = null;
@@ -17,25 +17,24 @@ function formSubmitError(type) {
 function makeEmptyContentError(arg0) {
   return formSubmitError(obj.EmptyContent, arg0);
 }
-const obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", ApiValidation: 2, [2]: "ApiValidation" };
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/threads/FormError.tsx");
+let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", ApiValidation: 2, [2]: "ApiValidation" };
+const result = require("set").fileFinishedImporting("modules/threads/FormError.tsx");
 
 export const FormSubmitErrorType = obj;
 export const makeEmptyTitleError = function makeEmptyTitleError() {
-  const intl = require(dependencyMap[0]).intl;
-  return makeEmptyContentError(intl.string(require(dependencyMap[0]).t.uXA573));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return makeEmptyContentError(intl.string(require(1212) /* getSystemLocale */.t.uXA573));
 };
 export const makeEmptyMessageError = function makeEmptyMessageError() {
-  const intl = require(dependencyMap[0]).intl;
-  return makeEmptyContentError(intl.string(require(dependencyMap[0]).t.kesTVT));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return makeEmptyContentError(intl.string(require(1212) /* getSystemLocale */.t.kesTVT));
 };
 export const makeApiNameRequiredError = function makeApiNameRequiredError() {
-  const intl = require(dependencyMap[0]).intl;
-  return formSubmitError(obj.ApiValidation, intl.string(require(dependencyMap[0]).t.uXA573));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return formSubmitError(obj.ApiValidation, intl.string(require(1212) /* getSystemLocale */.t.uXA573));
 };
 export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
-  const obj = require(dependencyMap[1]);
+  const obj = require(7109) /* _callSuper */;
   id = undefined;
   if (null != id) {
     id = id.id;

@@ -1,12 +1,14 @@
-// Module ID: 8879
-// Function ID: 69997
+// Module ID: 8886
+// Function ID: 70038
 // Name: compareArrays
-// Dependencies: []
+// Dependencies: [5, 8885, 8887, 2]
 // Exports: generatePairwiseFingerprint
 
-// Module 8879 (compareArrays)
+// Module 8886 (compareArrays)
+import asyncGeneratorStep from "asyncGeneratorStep";
 import module_36 from "module_36";
 
+const require = arg1;
 function compareArrays(arg0, arg1) {
   if (0 < arg0.length) {
     let num = 0;
@@ -22,12 +24,10 @@ function compareArrays(arg0, arg1) {
 function _generatePairwiseFingerprint() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _generatePairwiseFingerprint = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_4 = { -9223372036854775808: 9, 0: null, -9223372036854775808: "", 0: "" };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/libdave/package/src/PairwiseFingerprint.ts");
+let closure_4 = { N: 16384, r: 8, p: 2, dkLen: 64 };
+const result = require("XorAndSalsa").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/PairwiseFingerprint.ts");
 
 export const generatePairwiseFingerprint = function generatePairwiseFingerprint(arg0, uint8Array, arg2, uint8Array1, arg4) {
   return _generatePairwiseFingerprint(...arguments);

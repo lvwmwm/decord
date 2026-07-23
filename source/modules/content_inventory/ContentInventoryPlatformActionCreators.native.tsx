@@ -1,13 +1,12 @@
-// Module ID: 11072
-// Function ID: 86145
+// Module ID: 11082
+// Function ID: 86195
 // Name: showUserProfile
-// Dependencies: []
+// Dependencies: [8492, 2]
 // Exports: showUserProfile
 
-// Module 11072 (showUserProfile)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/content_inventory/ContentInventoryPlatformActionCreators.native.tsx");
+// Module 11082 (showUserProfile)
+const result = require("set").fileFinishedImporting("modules/content_inventory/ContentInventoryPlatformActionCreators.native.tsx");
 
 export const showUserProfile = function showUserProfile(arg0) {
-  importDefault(dependencyMap[0])(arg0);
+  importDefault(8492)(arg0);
 };

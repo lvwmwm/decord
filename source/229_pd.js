@@ -34,7 +34,7 @@ function setCancelFlag(passiveListener) {
 class Event {
   constructor(arg0, arg1) {
     self = this;
-    obj = { borderStyle: 1, displayProfile: true, NitroGem24Lottie: null, T8sBLJ: true, EphemeralMessageReason: false, lottieComponent: false, Zt4Mf4: true, GUILD_SETTINGS_ENABLE_COMMUNITY: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+    obj = { eventTarget: null, event: null, eventPhase: 2, currentTarget: null, canceled: false, stopped: false, immediateStopped: false, passiveListener: null };
     obj.eventTarget = global;
     obj.event = require;
     obj.currentTarget = global;
@@ -47,7 +47,7 @@ class Event {
     }
     obj.timeStamp = timeStamp;
     result = WeakMap.set(self, obj);
-    definePropertyResult = Object.defineProperty(self, "isTrusted", { onDownloadProgress: 1766088043, GUILD_TAG_AVAILABLE_COACHMARK_V2: 827788593 });
+    definePropertyResult = Object.defineProperty(self, "isTrusted", { value: false, enumerable: true });
     keys = Object.keys(require);
     for (let num = 0; num < keys.length; num = num + 1) {
       tmp5 = keys[num];
@@ -61,42 +61,42 @@ class Event {
   }
 }
 function defineRedirectDescriptor(arg0) {
-  const weakMap = arg0;
+  let closure_0 = arg0;
   return {
     get() {
-      return callback(this).event[closure_0];
+      return outer1_3(this).event[closure_0];
     },
     set(arg0) {
-      callback(this).event[arg0] = arg0;
+      outer1_3(this).event[closure_0] = arg0;
     },
     configurable: true,
     enumerable: true
   };
 }
 function defineCallDescriptor(arg0) {
-  const weakMap = arg0;
+  let closure_0 = arg0;
   const obj = {
-    "Bool(false)": null,
-    "Bool(false)": null,
-    "Bool(false)": null,
     value() {
-      const event = callback(this).event;
+      const event = outer1_3(this).event;
       return event[closure_0](...arguments);
-    }
+    },
+    configurable: true,
+    enumerable: true
   };
   return obj;
 }
 function getWrapper(prototypeOf) {
   if (null != prototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     if (prototypeOf !== Object.prototype) {
       let value = weakMap1.get(prototypeOf);
       if (null == value) {
         const _Object2 = Object;
-        const tmp5 = function defineWrapper(wrapper, prototypeOf) {
+        const tmp5 = (function defineWrapper(wrapper, prototypeOf) {
+          let closure_0 = wrapper;
           class CustomEvent {
             constructor(arg0, arg1) {
-              callResult = wrapper.call(this, wrapper, prototypeOf);
+              callResult = closure_0.call(this, wrapper, prototypeOf);
               return;
             }
           }
@@ -106,10 +106,10 @@ function getWrapper(prototypeOf) {
           } else {
             const _Object = Object;
             let obj = {};
-            obj = { "Null": null, "Null": null, "Null": null };
+            obj = { value: null, configurable: true, writable: true };
             class CustomEvent {
               constructor(arg0, arg1) {
-                callResult = wrapper.call(this, wrapper, prototypeOf);
+                callResult = closure_0.call(this, wrapper, prototypeOf);
                 return;
               }
             }
@@ -122,20 +122,20 @@ function getWrapper(prototypeOf) {
               }
               class CustomEvent {
                 constructor(arg0, arg1) {
-                  callResult = wrapper.call(this, wrapper, prototypeOf);
+                  callResult = closure_0.call(this, wrapper, prototypeOf);
                   return;
                 }
               }
               if ("function" === typeof Object.getOwnPropertyDescriptor(prototypeOf, keys[num]).value) {
-                let tmp3 = callback2(tmp);
+                let tmp3 = outer1_7(tmp);
               } else {
-                tmp3 = callback(tmp);
+                tmp3 = outer1_6(tmp);
               }
               Object.defineProperty(CustomEvent.prototype, keys[num], tmp3);
             }
             return CustomEvent;
           }
-        }(getWrapper(Object.getPrototypeOf(prototypeOf)), prototypeOf);
+        })(getWrapper(Object.getPrototypeOf(prototypeOf)), prototypeOf);
         const result = weakMap1.set(prototypeOf, tmp5);
         value = tmp5;
       }
@@ -169,10 +169,11 @@ function getListeners(self) {
 }
 function defineEventAttribute(prototype, abort) {
   const combined = "on" + abort;
-  Object.defineProperty(prototype, combined, function defineEventAttributeDescriptor(abort) {
+  Object.defineProperty(prototype, combined, (function defineEventAttributeDescriptor(abort) {
+    let closure_0 = abort;
     return {
       get() {
-        let iter = callback2(this).get(arg0);
+        let iter = outer2_12(this).get(closure_0);
         if (null != iter) {
           while (3 !== iter.listenerType) {
             iter = iter.next;
@@ -184,14 +185,14 @@ function defineEventAttribute(prototype, abort) {
       set(arg0) {
         let tmp = "function" === typeof arg0;
         if (!tmp) {
-          tmp = callback(arg0);
+          tmp = outer2_11(arg0);
         }
         let tmp3 = arg0;
         if (!tmp) {
           tmp3 = null;
         }
-        let obj = callback2(this);
-        const value = obj.get(arg0);
+        let obj = outer2_12(this);
+        const value = obj.get(closure_0);
         let tmp5 = null;
         let iter = value;
         let tmp6 = null;
@@ -218,9 +219,9 @@ function defineEventAttribute(prototype, abort) {
           } while (null != iter);
         }
         if (null !== tmp3) {
-          obj = { marginHorizontal: "<string:827788593>", marginVertical: "<string:4211945741>", justifyContent: "<string:4229692187>", alignItems: true, INVITE_LINK: true, listener: tmp3 };
+          obj = { listener: tmp3, listenerType: 3, passive: false, once: false, next: null };
           if (null === tmp6) {
-            const result1 = obj.set(arg0, obj);
+            const result1 = obj.set(closure_0, obj);
           } else {
             tmp6.next = obj;
           }
@@ -229,23 +230,23 @@ function defineEventAttribute(prototype, abort) {
       configurable: true,
       enumerable: true
     };
-  }(abort));
+  })(abort));
 }
 function defineCustomEventTarget(array) {
   let length;
   class CustomEventTarget {
     constructor() {
-      callResult = closure_15.call(this);
+      callResult = outer1_15.call(this);
       return;
     }
   }
-  const obj = { "Null": null, "Null": null, "Null": null, value: CustomEventTarget };
+  const obj = { value: CustomEventTarget, configurable: true, writable: true };
   CustomEventTarget.prototype = Object.create(EventTarget.prototype, { constructor: obj });
   let num = 0;
   if (0 < array.length) {
     do {
-      let tmp = closure_13;
-      let tmp2 = closure_13(CustomEventTarget.prototype, array[num]);
+      let tmp = defineEventAttribute;
+      let tmp2 = defineEventAttribute(CustomEventTarget.prototype, array[num]);
       num = num + 1;
       length = array.length;
     } while (num < length);
@@ -435,7 +436,7 @@ obj.initEvent = function initEvent() {
 
 };
 Event.prototype = obj;
-obj = { "Null": null, "Null": null, "Null": null, value: Event };
+obj = { value: Event, configurable: true, writable: true };
 Object.defineProperty(Event.prototype, "constructor", obj);
 let tmp5 = "undefined" !== typeof window;
 if (tmp5) {
@@ -443,14 +444,14 @@ if (tmp5) {
   tmp5 = undefined !== window.Event;
 }
 if (tmp5) {
-  const _Object = Object;
+  let _Object = Object;
   const _window2 = window;
   Object.setPrototypeOf(Event.prototype, window.Event.prototype);
   const _window3 = window;
   class Event {
     constructor(arg0, arg1) {
       self = this;
-      obj = { borderStyle: 1, displayProfile: true, NitroGem24Lottie: null, T8sBLJ: true, EphemeralMessageReason: false, lottieComponent: false, Zt4Mf4: true, GUILD_SETTINGS_ENABLE_COMMUNITY: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+      obj = { eventTarget: null, event: null, eventPhase: 2, currentTarget: null, canceled: false, stopped: false, immediateStopped: false, passiveListener: null };
       obj.eventTarget = global;
       obj.event = require;
       obj.currentTarget = global;
@@ -463,7 +464,7 @@ if (tmp5) {
       }
       obj.timeStamp = timeStamp;
       result = WeakMap.set(self, obj);
-      definePropertyResult = Object.defineProperty(self, "isTrusted", { onDownloadProgress: 1766088043, GUILD_TAG_AVAILABLE_COACHMARK_V2: 827788593 });
+      definePropertyResult = Object.defineProperty(self, "isTrusted", { value: false, enumerable: true });
       keys = Object.keys(require);
       for (let num = 0; num < keys.length; num = num + 1) {
         tmp5 = keys[num];
@@ -671,7 +672,7 @@ EventTarget.prototype = {
     throw typeError;
   }
 };
-obj = { "Null": null, "Null": null, "Null": null, value: EventTarget };
+obj = { value: EventTarget, configurable: true, writable: true };
 Object.defineProperty(EventTarget.prototype, "constructor", obj);
 let tmp9 = "undefined" !== typeof window;
 if (tmp9) {
@@ -679,7 +680,7 @@ if (tmp9) {
   tmp9 = undefined !== window.EventTarget;
 }
 if (tmp9) {
-  const _Object2 = Object;
+  let _Object2 = Object;
   const _window5 = window;
   Object.setPrototypeOf(EventTarget.prototype, window.EventTarget.prototype);
 }

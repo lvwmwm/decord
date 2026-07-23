@@ -4,11 +4,11 @@
 // Dependencies: []
 
 // Module 323 (convertObjectFitToResizeMode)
-let closure_0 = { onRequestClose: true, onShow: true, onDismiss: true, onOrientationChange: true, gap: true };
+let closure_0 = { contain: "contain", cover: "cover", fill: "stretch", "scale-down": "contain", none: "none" };
 arg5.convertObjectFitToResizeMode = function convertObjectFitToResizeMode(objectFit) {
   let tmp;
   if (null != objectFit) {
-    tmp = closure_0[objectFit];
+    tmp = table[objectFit];
   }
   return tmp;
 };

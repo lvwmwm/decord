@@ -1,20 +1,24 @@
-// Module ID: 12844
-// Function ID: 98212
+// Module ID: 12958
+// Function ID: 100368
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 33, 12924, 8018, 2]
 // Exports: GuildBadgePottedPlant
 
-// Module 12844 (items)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373682772776, -92559631349653940000000000000000000000000000000000000000000000, 8592595432.156181];
-let closure_5 = ["<string:3704409292>", "<string:1154433343>", "<string:2470576129>"];
-const items = [{}, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
-let closure_7 = [null, null, "IconAnimation_Notifications_3D_LottieFix02"];
-let closure_8 = [];
-const items1 = [{}, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgePottedPlant.tsx");
+// Module 12958 (items)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+let closure_4 = ["#003E22", "#027D46", "#14A95C"];
+let closure_5 = [0.1, 0.25, 0.45];
+let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }, { base: 3, tint: 1 }];
+let closure_7 = ["#FD7531", "#FFAE49", "#FFC781"];
+let closure_8 = [0.45, 0.6, 0.75];
+const items1 = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }, { base: 3, tint: 1 }];
+const result = require("getTransformedBadgeColors").fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgePottedPlant.tsx");
 
 export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   let primaryColorsTransformed;
@@ -29,11 +33,11 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
+  let obj = { width: 0, height: 0, primaryTintColor: 0, secondaryTintColor: 0 };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
-  let obj1 = arg1(dependencyMap[2]);
+  let obj1 = require(12924) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items, secondaryBaseColors: closure_7, secondaryTintColor, secondaryTintLuminances: closure_8, secondaryLuminanceWeights: items1 };
   const transformedBadgeColors = obj1.getTransformedBadgeColors(obj);
   ({ primaryColorsTransformed, secondaryColorsTransformed } = transformedBadgeColors);
@@ -44,11 +48,11 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
   obj1 = { d: "M7 6h-2v-1h1v-1h1v2ZM10 5h1v1h-2v-2h1v1ZM5 5h-1v-1h1v1ZM12 5h-1v-1h1v1ZM4 4h-1v-1h1v1ZM13 4h-1v-1h1v1Z", fill: primaryColorsTransformed[0] };
-  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, { d: "M8 9h-1V4h1v5Z", fill: primaryColorsTransformed[2] }), , , , , , , , ];
-  const obj3 = { "Bool(true)": 4, "Bool(true)": 8, "Bool(true)": 4, fill: primaryColorsTransformed[2] };
-  items[2] = callback(arg1(dependencyMap[3]).Path, obj3);
-  items[3] = callback(arg1(dependencyMap[3]).Path, { d: "M14 3h-2v1h-1v1h-1v-2h1V2h3v1Z", fill: primaryColorsTransformed[2] });
-  items[4] = callback(arg1(dependencyMap[3]).Path, { d: "M9 9h-1V4h1v5ZM5 6h-2v-1h2v1ZM15 4h-1v1h-1v1h-2v-1h1v-1h1v-1h1V2h1v2Z", fill: primaryColorsTransformed[1] });
+  items = [callback(require(8018) /* inlineStyles */.Path, obj1), callback(require(8018) /* inlineStyles */.Path, { d: "M8 9h-1V4h1v5Z", fill: primaryColorsTransformed[2] }), , , , , , , , ];
+  const obj3 = { d: "M6 3h1v1h-1v1h-1v-1h-1v1H2V2h4v1Zm-3 1h1v-1h-1v1Z", fill: primaryColorsTransformed[2], fillRule: "evenodd" };
+  items[2] = callback(require(8018) /* inlineStyles */.Path, obj3);
+  items[3] = callback(require(8018) /* inlineStyles */.Path, { d: "M14 3h-2v1h-1v1h-1v-2h1V2h3v1Z", fill: primaryColorsTransformed[2] });
+  items[4] = callback(require(8018) /* inlineStyles */.Path, { d: "M9 9h-1V4h1v5ZM5 6h-2v-1h2v1ZM15 4h-1v1h-1v1h-2v-1h1v-1h1v-1h1V2h1v2Z", fill: primaryColorsTransformed[1] });
   const obj6 = { d: "M13 11v1H3v-1h10Z" };
   let first;
   if (null != secondaryColorsTransformed) {
@@ -59,8 +63,8 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
     str = first;
   }
   obj6.fill = str;
-  items[5] = callback(arg1(dependencyMap[3]).Path, obj6);
-  items[6] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null });
+  items[5] = callback(require(8018) /* inlineStyles */.Path, obj6);
+  items[6] = callback(require(8018) /* inlineStyles */.Path, { d: "M4 14h-1v-2h1v2ZM5 11h-2v-1h2v1ZM2 4H1V2h1v2ZM10 4h-1v-1h1v1ZM11 3h-1V2h1v1ZM5 2H2V1h3v1ZM14 2H11V1h3v1Z", fill: "white" });
   const obj7 = { d: "M12 14H4v-2h8v2ZM13 11H5v-1h8v1Z" };
   let tmp9;
   if (null != secondaryColorsTransformed) {
@@ -71,7 +75,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
     str2 = tmp9;
   }
   obj7.fill = str2;
-  items[7] = callback(arg1(dependencyMap[3]).Path, obj7);
+  items[7] = callback(require(8018) /* inlineStyles */.Path, obj7);
   const obj8 = { d: "M12 14v1H4v-1h8ZM13 14h-1v-2h1v2Z" };
   let tmp11;
   if (null != secondaryColorsTransformed) {
@@ -82,8 +86,8 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
     str3 = tmp11;
   }
   obj8.fill = str3;
-  items[8] = callback(arg1(dependencyMap[3]).Path, obj8);
-  items[9] = callback(arg1(dependencyMap[3]).Path, { "Bool(true)": 16, "Bool(true)": 16 });
+  items[8] = callback(require(8018) /* inlineStyles */.Path, obj8);
+  items[9] = callback(require(8018) /* inlineStyles */.Path, { d: "M12 15v1H4v-1h8ZM4 15h-1v-1h1v1ZM13 15h-1v-1h1v1ZM7 9h2V6h4v1H10v2h4v5h-1V10H3v4H2V9h4v-2H3v-1h4v3ZM3 6H2v-1h1v1ZM14 6h-1v-1h1v1ZM2 5H1v-1h1v1ZM15 5h-1v-1h1v1ZM1 4H0V2h1v2ZM9 4h-2v-1h2v1ZM16 4h-1V2h1v2ZM7 3h-1V2h1v1ZM10 3h-1V2h1v1ZM2 2H1V1h1v1ZM6 2h-1V1h1v1ZM11 2h-1V1h1v1ZM15 2h-1V1h1v1ZM5 1H2V0h3v1ZM14 1H11V0h3v1Z", fill: "black" });
   obj["children"] = items;
-  return closure_3(arg1(dependencyMap[3]).Svg, obj);
+  return closure_3(require(8018) /* inlineStyles */.Svg, obj);
 };

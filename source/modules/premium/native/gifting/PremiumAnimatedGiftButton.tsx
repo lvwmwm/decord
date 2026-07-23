@@ -1,26 +1,28 @@
-// Module ID: 11345
-// Function ID: 88220
+// Module ID: 11355
+// Function ID: 88270
 // Name: PremiumAnimatedGiftButton
-// Dependencies: []
+// Dependencies: [31, 4122, 33, 4130, 689, 1324, 3834, 566, 477, 3991, 4660, 5453, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11345 (PremiumAnimatedGiftButton)
-let closure_3 = importAll(dependencyMap[0]);
-const useRef = arg1(dependencyMap[0]).useRef;
-let closure_5 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = arg1(dependencyMap[3]).createStyles((width, marginHorizontal) => {
+// Module 11355 (PremiumAnimatedGiftButton)
+import result from "result";
+import { useRef } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles((width, marginHorizontal) => {
   let obj = {};
-  obj = { backgroundColor: importDefault(dependencyMap[4]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, width, height: width, borderRadius: importDefault(dependencyMap[4]).radii.round, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
+  obj = { backgroundColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, width, height: width, borderRadius: importDefault(689).radii.round, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
   obj.container = obj;
-  obj = { width, height: width, borderRadius: importDefault(dependencyMap[4]).radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
+  obj = { width, height: width, borderRadius: importDefault(689).radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
   obj.containerRefresh = obj;
-  obj.animation = {};
-  obj.animationRefresh = {};
+  obj.animation = { width: 30, height: 30 };
+  obj.animationRefresh = { width: 24, height: 24 };
   return obj;
 });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/gifting/PremiumAnimatedGiftButton.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumAnimatedGiftButton.tsx");
 
 export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0) {
   let accessibilityState;
@@ -34,21 +36,20 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   let style;
   ({ active, disabled, accessibilityState } = arg0);
   ({ style, activeStyle, channelId, animationDataUrl, onAnimationFinished, loop } = arg0);
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const enabled = obj.useMobileVisualRefreshConfig({ location: "PremiumAnimatedGiftButton" }).enabled;
-  let obj1 = arg1(dependencyMap[6]);
-  const token = obj1.useToken(importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  let obj2 = arg1(dependencyMap[6]);
-  const token1 = obj2.useToken(importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const token2 = arg1(dependencyMap[6]).useToken(importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  let obj1 = require(3834) /* map */;
+  const token = obj1.useToken(stateFromStores(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  let obj2 = require(3834) /* map */;
+  const token1 = obj2.useToken(stateFromStores(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const token2 = require(3834) /* map */.useToken(stateFromStores(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp4 = callback(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   const tmp6 = useRef(null);
-  const arg1 = tmp6;
-  const obj4 = arg1(dependencyMap[6]);
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const importDefault = stateFromStores;
+  require = tmp6;
+  const obj4 = require(3834) /* map */;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.useReducedMotion);
   const items1 = [channelId, stateFromStores];
   const effect = React.useEffect(() => {
     if (!stateFromStores) {
@@ -72,13 +73,13 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
       if (!tmp10) {
         obj3.play();
       }
-      const obj = tmp6(closure_2[8]);
+      obj = tmp6(outer1_2[8]);
     }
   }, items1);
   obj = {};
   let FadeOut;
   if (!stateFromStores) {
-    FadeOut = arg1(dependencyMap[9]).FadeOut;
+    FadeOut = require(3991).FadeOut;
   }
   obj.exiting = FadeOut;
   obj = {};
@@ -102,7 +103,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj.accessibilityState = obj1;
   const merged1 = Object.assign(arg0);
   obj2 = { ref: tmp6, style: enabled ? tmp4.animationRefresh : tmp4.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished };
-  obj["children"] = jsx(importDefault(dependencyMap[11]), obj2);
-  obj.children = jsx(arg1(dependencyMap[10]).PressableOpacity, obj);
-  return jsx(importDefault(dependencyMap[9]).View, obj);
+  obj["children"] = jsx(stateFromStores(5453), { ref: tmp6, style: enabled ? tmp4.animationRefresh : tmp4.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj.children = jsx(require(4660) /* PressableBase */.PressableOpacity, {});
+  return jsx(stateFromStores(3991).View, {});
 };

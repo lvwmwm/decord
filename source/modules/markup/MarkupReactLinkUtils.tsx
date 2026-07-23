@@ -1,22 +1,21 @@
-// Module ID: 9481
-// Function ID: 73908
+// Module ID: 9488
+// Function ID: 73949
 // Name: isLinkTrusted
-// Dependencies: []
+// Dependencies: [8336, 7674, 2]
 // Exports: isLinkTrusted
 
-// Module 9481 (isLinkTrusted)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/markup/MarkupReactLinkUtils.tsx");
+// Module 9488 (isLinkTrusted)
+const result = require("set").fileFinishedImporting("modules/markup/MarkupReactLinkUtils.tsx");
 
 export const isLinkTrusted = function isLinkTrusted(target) {
   if (null == target.target) {
     return tmp;
   } else {
-    require(dependencyMap[0]);
+    require(8336) /* isLinkTrusted */;
     if (null == target.title) {
-      let title = require(dependencyMap[1]).astToString(target.content);
+      let title = require(7674) /* reactParserFor */.astToString(target.content);
       tmp5(tmp6, title);
-      const obj = require(dependencyMap[1]);
+      const obj = require(7674) /* reactParserFor */;
     }
     title = target.title;
   }

@@ -1,14 +1,17 @@
-// Module ID: 16217
-// Function ID: 125336
+// Module ID: 16334
+// Function ID: 127509
 // Name: importDefaultResult1
-// Dependencies: []
+// Dependencies: [5, 16335, 653, 566, 507, 686, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 16217 (importDefaultResult1)
-const importDefaultResult1 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-let obj = arg1(dependencyMap[3]);
-obj = {
+// Module 16334 (importDefaultResult1)
+import importDefaultResult1 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import initialize from "initialize";
+import importDefaultResult from "dispatcher";
+
+const require = arg1;
+initialize = {
   getQueryId(arg0) {
     let tmp = null;
     if (null != arg0) {
@@ -18,7 +21,7 @@ obj = {
   },
   get
 };
-function get(FRECENCY_AND_FAVORITES_SETTINGS) {
+get = function get(FRECENCY_AND_FAVORITES_SETTINGS) {
   let tmp = null;
   if (null != FRECENCY_AND_FAVORITES_SETTINGS) {
     let gates = null;
@@ -28,15 +31,14 @@ function get(FRECENCY_AND_FAVORITES_SETTINGS) {
     tmp = gates;
   }
   return tmp;
-}
+};
 // CreateGeneratorClosureLongIndex (0x67)
-let closure_3 = importDefault(dependencyMap[0])(get);
-obj.load = function() {
+let closure_3 = require("dispatcher")(get);
+initialize.load = function() {
   return callback(...arguments);
 };
-let closure_6 = obj.createFetchStore(importDefaultResult1, obj);
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
+let closure_6 = initialize.createFetchStore(importDefaultResult1, initialize);
+const result = require("ME").fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
 
 export const useGuildVerificationRoleEnabled = function useGuildVerificationRoleEnabled(arg0) {
   let prop;

@@ -1,17 +1,19 @@
-// Module ID: 14398
-// Function ID: 108627
+// Module ID: 14512
+// Function ID: 110780
 // Name: CollectiblesProgressiveImage
-// Dependencies: [7656, 653, 10087, 1212, 14406, 2]
+// Dependencies: [31, 27, 33, 3991, 4131, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 14398 (CollectiblesProgressiveImage)
-import "MobileSetting";
-import ME from "ME";
-import { jsx } from "createToggle";
-import result2 from "result2";
+// Module 14512 (CollectiblesProgressiveImage)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
 
-({ View: closure_3, StyleSheet: closure_4 } = ME);
-const result = result2.fileFinishedImporting("modules/collectibles/native/CollectiblesProgressiveImage.tsx");
+let closure_3;
+let closure_4;
+const require = arg1;
+({ View: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
+let result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesProgressiveImage.tsx");
 
 export const CollectiblesProgressiveImage = function CollectiblesProgressiveImage(arg0) {
   let source;
@@ -21,9 +23,8 @@ export const CollectiblesProgressiveImage = function CollectiblesProgressiveImag
   obj.source = 0;
   obj.style = 0;
   const merged = Object.assign(arg0, obj);
-  obj = arg1(dependencyMap[3]);
-  const sharedValue = obj.useSharedValue(0);
-  const arg1 = sharedValue;
+  obj = sharedValue(3991);
+  sharedValue = obj.useSharedValue(0);
   obj = { style };
   const obj1 = {};
   const merged1 = Object.assign(merged);
@@ -33,12 +34,12 @@ export const CollectiblesProgressiveImage = function CollectiblesProgressiveImag
   obj2["opacity"] = sharedValue;
   obj1["style"] = obj2;
   obj1["onLoad"] = function onLoad() {
-    let obj = sharedValue(closure_2[4]);
+    let obj = sharedValue(outer1_2[4]);
     obj = { duration: 500 };
-    const Easing = sharedValue(closure_2[3]).Easing;
-    obj.easing = Easing.inOut(sharedValue(closure_2[3]).Easing.ease);
+    const Easing = sharedValue(outer1_2[3]).Easing;
+    obj.easing = Easing.inOut(sharedValue(outer1_2[3]).Easing.ease);
     const result = sharedValue.set(obj.withTiming(1, obj));
   };
-  obj.children = jsx(importDefault(dependencyMap[3]).Image, obj1);
-  return <closure_3 {...obj} />;
+  obj.children = jsx(importDefault(3991).Image, {});
+  return <closure_3 style={style} />;
 };

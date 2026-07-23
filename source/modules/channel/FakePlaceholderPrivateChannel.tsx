@@ -1,13 +1,12 @@
-// Module ID: 5603
-// Function ID: 47654
+// Module ID: 5606
+// Function ID: 47677
 // Name: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID
-// Dependencies: []
+// Dependencies: [1352, 653, 2]
 
-// Module 5603 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
-const obj = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "constructor", type: require(dependencyMap[1]).ChannelTypes.DM };
-const channelRecord = require(dependencyMap[0]).createChannelRecord(obj);
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/channel/FakePlaceholderPrivateChannel.tsx");
+// Module 5606 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
+const obj = { id: "131", type: require("ME").ChannelTypes.DM, name: "Placeholder Channel" };
+const channelRecord = require("_callSuper").createChannelRecord(obj);
+const result = require("set").fileFinishedImporting("modules/channel/FakePlaceholderPrivateChannel.tsx");
 
 export const FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = "131";
 export const FAKE_PLACEHOLDER_PRIVATE_CHANNEL = channelRecord;

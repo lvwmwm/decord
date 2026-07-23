@@ -1,20 +1,34 @@
-// Module ID: 11253
-// Function ID: 87557
+// Module ID: 11263
+// Function ID: 87607
 // Name: Tag
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 7370, 4153, 653, 33, 689, 4130, 4126, 10884, 11264, 11177, 11171, 6755, 7919, 1212, 675, 8182, 4543, 4140, 10827, 10830, 5464, 5484, 4663, 566, 5125, 5504, 10828, 7512, 5470, 11265, 11266, 11267, 1273, 11203, 9011, 4646, 11269, 2]
 // Exports: default
 
-// Module 11253 (Tag)
+// Module 11263 (Tag)
+import _callSuper from "_callSuper";
+import _slicedToArray from "_slicedToArray";
+import TextInput from "TextInput";
+import { View } from "initialize";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_callSuper";
+import { AnalyticEvents } from "ME";
+import jsxProd from "useDelayedSwapToActivityActionLeave";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_13;
+const require = arg1;
 function Tag(arg0) {
   let accessibilityLabel;
   let icon;
   let tagName;
   ({ tagName, icon, accessibilityLabel } = arg0);
-  const tmp = callback5();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.tag, accessible: true, accessibilityLabel };
   const items = [icon, ];
   obj = { variant: "text-sm/normal", style: tmp.tagText, children: tagName };
-  items[1] = callback3(arg1(dependencyMap[10]).Text, obj);
+  items[1] = callback3(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback4(View, obj);
 }
@@ -26,54 +40,47 @@ function PrimaryEntryPointButton(applicationId) {
   let primaryEntryPointCommand;
   let sectionName;
   applicationId = applicationId.applicationId;
-  const arg1 = applicationId;
   ({ context, primaryEntryPointCommand } = applicationId);
-  const importDefault = primaryEntryPointCommand;
   const activityAction = applicationId.activityAction;
-  const importAll = activityAction;
-  let React;
+  let handleActivityItemSelected;
   ({ sectionName, disabled, onActivityItemSelected, entrypoint } = applicationId);
-  const id = React.useId();
-  let obj = arg1(dependencyMap[11]);
+  const id = handleActivityItemSelected.useId();
+  let obj = applicationId(chatInputRef[11]);
   const requiredAppLauncherContext = obj.useRequiredAppLauncherContext();
-  const chatInputRef = requiredAppLauncherContext.chatInputRef;
-  const dependencyMap = chatInputRef;
+  chatInputRef = requiredAppLauncherContext.chatInputRef;
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
-  let closure_4 = keyboardCloseReasonRef;
   const items = [chatInputRef, keyboardCloseReasonRef];
-  const callback = React.useCallback(() => {
+  const callback = handleActivityItemSelected.useCallback(() => {
     keyboardCloseReasonRef.current = applicationId(chatInputRef[11]).AppLauncherKeyboardCloseReason.ACTIVITY;
     const current = chatInputRef.current;
     if (null != current) {
       current.closeCustomKeyboard();
     }
   }, items);
-  let closure_5 = callback;
   obj = { applicationId, context, launchingComponentId: id };
   let tmp5;
-  if (activityAction !== arg1(dependencyMap[13]).ActivityAction.LEAVE) {
+  if (activityAction !== applicationId(chatInputRef[13]).ActivityAction.LEAVE) {
     tmp5 = callback;
   }
   obj.onSubmissionComplete = tmp5;
-  const tmp4 = importDefault(dependencyMap[12]);
-  obj = { applicationId, context, sectionName, onActivityItemSelected, location: arg1(dependencyMap[15]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW, entrypoint, launchingComponentId: id };
-  const handleActivityItemSelected = arg1(dependencyMap[14]).useHandleActivityItemSelected(obj).handleActivityItemSelected;
-  React = handleActivityItemSelected;
+  const tmp4 = primaryEntryPointCommand(chatInputRef[12]);
+  obj = { applicationId, context, sectionName, onActivityItemSelected, location: applicationId(chatInputRef[15]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW, entrypoint, launchingComponentId: id };
+  handleActivityItemSelected = applicationId(chatInputRef[14]).useHandleActivityItemSelected(obj).handleActivityItemSelected;
   const items1 = [primaryEntryPointCommand.displayName];
-  let memo = React.useMemo(() => applicationId(chatInputRef[16]).formatPrimaryEntryPointCommandName(primaryEntryPointCommand.displayName), items1);
+  let memo = handleActivityItemSelected.useMemo(() => applicationId(chatInputRef[16]).formatPrimaryEntryPointCommandName(primaryEntryPointCommand.displayName), items1);
   if (null == memo) {
-    const intl = arg1(dependencyMap[17]).intl;
-    memo = intl.string(arg1(dependencyMap[17]).t.zKX8Nu);
+    const intl = applicationId(chatInputRef[17]).intl;
+    memo = intl.string(applicationId(chatInputRef[17]).t.zKX8Nu);
   }
-  if (activityAction === arg1(dependencyMap[13]).ActivityAction.JOIN) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    memo = intl2.string(arg1(dependencyMap[17]).t.d9PsMj);
+  if (activityAction === applicationId(chatInputRef[13]).ActivityAction.JOIN) {
+    const intl2 = applicationId(chatInputRef[17]).intl;
+    memo = intl2.string(applicationId(chatInputRef[17]).t.d9PsMj);
     let str = "active";
   } else {
     str = "primary";
-    if (activityAction === arg1(dependencyMap[13]).ActivityAction.LEAVE) {
-      const intl3 = arg1(dependencyMap[17]).intl;
-      memo = intl3.string(arg1(dependencyMap[17]).t.Hi1/aQ);
+    if (activityAction === applicationId(chatInputRef[13]).ActivityAction.LEAVE) {
+      const intl3 = applicationId(chatInputRef[17]).intl;
+      memo = intl3.string(applicationId(chatInputRef[17]).t["Hi1/aQ"]);
       str = "destructive";
     }
   }
@@ -81,19 +88,16 @@ function PrimaryEntryPointButton(applicationId) {
   let tmp14 = null;
   if ("channel" === context.type) {
     const obj1 = { size: "lg", loading: tmp4(obj).submitting, variant: str, text: memo, disabled, onPress: tmp13 };
-    tmp14 = callback3(arg1(dependencyMap[20]).Button, obj1);
+    tmp14 = callback3(applicationId(chatInputRef[20]).Button, obj1);
   }
   return tmp14;
 }
 function TryItOutButton(botUserId) {
   botUserId = botUserId.botUserId;
-  const arg1 = botUserId;
   const applicationId = botUserId.applicationId;
-  const importDefault = applicationId;
   const analyticsLocations = botUserId.analyticsLocations;
-  const importAll = analyticsLocations;
   const tmp2 = callback2(React.useState(false), 2);
-  let closure_3 = tmp2[1];
+  const dependencyMap = tmp2[1];
   let callback = React.useRef(null);
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [botUserId, applicationId, analyticsLocations];
@@ -103,43 +107,34 @@ function TryItOutButton(botUserId) {
     str = "secondary";
   }
   const obj = { size: "lg", loading: tmp2[0], variant: str };
-  const intl = arg1(closure_3[17]).intl;
-  obj.text = intl.string(arg1(closure_3[17]).t.AUM8hY);
+  const intl = botUserId(1212).intl;
+  obj.text = intl.string(botUserId(1212).t.AUM8hY);
   obj.onPress = callback;
-  return callback3(arg1(closure_3[20]).Button, obj);
+  return callback3(botUserId(4543).Button, obj);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[7]));
-const PX_12 = importDefault(dependencyMap[8]).space.PX_12;
-let obj = arg1(dependencyMap[9]);
-obj = { container: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.lg, overflow: "hidden", gap: importDefault(dependencyMap[8]).space.PX_16, paddingBottom: PX_12 };
-obj.cardContainer = obj;
-obj.activityHeroDetailsLandscape = { flexDirection: "row" };
-obj.heroMediaContainerLandscape = { width: "65%" };
-obj.detailsContainerLandscape = { width: "35%" };
-obj.details = { paddingHorizontal: PX_12 };
-const obj1 = { position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, location: 0.000000007919535119815975, body: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, style: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586903747, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015493702643854248, mode: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003341471991908205, marginTop: importDefault(dependencyMap[8]).space.PX_8 };
-obj.tagList = obj1;
-const tmp2 = arg1(dependencyMap[7]);
-obj.tag = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[8]).radii.round };
-obj.tagText = { top: -1 };
-obj.tagIcon = { marginRight: 4 };
-obj.buttonContainer = { paddingTop: 16 };
-obj.activityUrlOverrideInputContainer = { marginTop: -4 };
-obj.expandDescriptionCTAStyle = { <string:1627544401>: "%FunctionPrototype%", <string:3359199659>: "paddingStart" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[8]).radii.round };
-obj.primaryEntryPointButtonDisabledCTA = { marginTop: importDefault(dependencyMap[8]).space.PX_12, color: importDefault(dependencyMap[8]).colors.TEXT_MUTED, textAlign: "center" };
-obj.tryItOutButtonContainerStyle = { marginTop: 8 };
-let closure_15 = obj.createStyles(obj);
-const obj3 = { marginTop: importDefault(dependencyMap[8]).space.PX_12, color: importDefault(dependencyMap[8]).colors.TEXT_MUTED, textAlign: "center" };
-const result = arg1(dependencyMap[41]).fileFinishedImporting("modules/app_launcher/native/screens/application_view/activity/ActivityDetailContent.tsx");
+({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
+const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
+_createForOfIteratorHelperLoose = { container: { flex: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden", gap: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: PX_12 };
+_createForOfIteratorHelperLoose.cardContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.activityHeroDetailsLandscape = { flexDirection: "row" };
+_createForOfIteratorHelperLoose.heroMediaContainerLandscape = { width: "65%" };
+_createForOfIteratorHelperLoose.detailsContainerLandscape = { width: "35%" };
+let obj1 = { marginTop: 16, paddingHorizontal: PX_12, rowGap: 4 };
+_createForOfIteratorHelperLoose.details = obj1;
+let obj2 = { display: "flex", flexDirection: "row", flexWrap: "wrap", marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, columnGap: 4, rowGap: 6 };
+_createForOfIteratorHelperLoose.tagList = obj2;
+let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: 12, paddingVertical: 4 };
+_createForOfIteratorHelperLoose.tag = obj3;
+_createForOfIteratorHelperLoose.tagText = { top: -1 };
+_createForOfIteratorHelperLoose.tagIcon = { marginRight: 4 };
+_createForOfIteratorHelperLoose.buttonContainer = { paddingTop: 16 };
+_createForOfIteratorHelperLoose.activityUrlOverrideInputContainer = { marginTop: -4 };
+_createForOfIteratorHelperLoose.primaryEntryPointButtonDisabledCTA = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, textAlign: "center" };
+_createForOfIteratorHelperLoose.tryItOutButtonContainerStyle = { marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, textAlign: "center" };
+let result = require("result").fileFinishedImporting("modules/app_launcher/native/screens/application_view/activity/ActivityDetailContent.tsx");
 
 export default function ActivityDetailContent(application) {
   let activityUrlOverride;
@@ -151,23 +146,22 @@ export default function ActivityDetailContent(application) {
   let sectionName;
   let useActivityUrlOverride;
   application = application.application;
-  const arg1 = application;
   ({ context, entrypoint } = application);
   ({ sectionName, onActivityItemSelected, hasCommands } = application);
-  let mapped = callback5();
-  let obj = arg1(dependencyMap[11]);
+  let mapped = _createForOfIteratorHelperLoose();
+  let obj = application(10884);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj1 = arg1(dependencyMap[23]);
+  let obj1 = application(10830);
   const getPrimaryAppCommand = obj1.useGetPrimaryAppCommand(context, application.id);
-  const analyticsLocations = importDefault(dependencyMap[24])(importDefault(dependencyMap[25]).APP_DETAIL).analyticsLocations;
-  let obj2 = arg1(dependencyMap[26]);
+  const analyticsLocations = importDefault(5464)(importDefault(5484).APP_DETAIL).analyticsLocations;
+  let obj2 = application(4663);
   const isScreenLandscape = obj2.useIsScreenLandscape();
-  let detailsContainerLandscape = entrypoint !== arg1(dependencyMap[19]).AppLauncherEntrypoint.VOICE && isScreenLandscape;
-  let obj3 = arg1(dependencyMap[27]);
-  const items = [closure_8];
-  const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ isDeveloperOfThisApp: store.inDevModeForApplication(application.id), activityUrlOverride: store.getActivityUrlOverride(), useActivityUrlOverride: store.getUseActivityUrlOverride() }));
+  let detailsContainerLandscape = entrypoint !== application(8182).AppLauncherEntrypoint.VOICE && isScreenLandscape;
+  let obj3 = application(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ isDeveloperOfThisApp: outer1_8.inDevModeForApplication(application.id), activityUrlOverride: outer1_8.getActivityUrlOverride(), useActivityUrlOverride: outer1_8.getUseActivityUrlOverride() }));
   ({ isDeveloperOfThisApp, activityUrlOverride, useActivityUrlOverride } = stateFromStoresObject);
-  let obj4 = arg1(dependencyMap[16]);
+  let obj4 = application(7919);
   if (obj4.isRealApplication(application)) {
     const tmp12 = application instanceof closure_9 ? application.maxParticipants : application.max_participants;
     let num = 0;
@@ -184,14 +178,14 @@ export default function ActivityDetailContent(application) {
       }
       obj.marginBottom = num2;
       obj.style = obj;
-      const items1 = [callback3(arg1(dependencyMap[28]).TableRowDivider, {}), , ];
+      const items1 = [callback3(application(5125).TableRowDivider, {}), , ];
       obj1 = {};
-      const intl = arg1(dependencyMap[17]).intl;
-      obj1.label = intl.string(arg1(dependencyMap[17]).t.3TSGuD);
+      let intl = application(1212).intl;
+      obj1.label = intl.string(application(1212).t["3TSGuD"]);
       obj1.value = useActivityUrlOverride;
-      obj1.onValueChange = importAll(dependencyMap[30]).toggleUseActivityUrlOverride;
+      obj1.onValueChange = importAll(10828).toggleUseActivityUrlOverride;
       obj1.end = true;
-      items1[1] = callback3(arg1(dependencyMap[29]).TableSwitchRow, obj1);
+      items1[1] = callback3(application(5504).TableSwitchRow, obj1);
       let tmp25Result = null;
       if (useActivityUrlOverride) {
         obj2 = { style: mapped.activityUrlOverrideInputContainer };
@@ -201,8 +195,8 @@ export default function ActivityDetailContent(application) {
           tmp30 = activityUrlOverride;
         }
         obj3.value = tmp30;
-        obj3.onChange = importAll(dependencyMap[30]).setActivityUrlOverride;
-        obj2.children = callback3(arg1(dependencyMap[31]).TextInput, obj3);
+        obj3.onChange = importAll(10828).setActivityUrlOverride;
+        obj2.children = callback3(application(7512).TextInput, obj3);
         tmp25Result = callback3(View, obj2);
         const tmp25 = callback3;
         const tmp26 = View;
@@ -214,23 +208,23 @@ export default function ActivityDetailContent(application) {
       const tmp15 = closure_12;
       const tmp16 = View;
     }
-    let obj10 = arg1(dependencyMap[32]);
+    let obj10 = application(5470);
     const getOrFetchApplication = obj10.useGetOrFetchApplication(application.id);
     let bot;
     if (null != getOrFetchApplication) {
       bot = getOrFetchApplication.bot;
     }
-    let obj11 = arg1(dependencyMap[13]);
+    let obj11 = application(11177);
     obj4 = { context, applicationId: application.id };
     const activityAction = obj11.useActivityAction(obj4);
-    let obj13 = arg1(dependencyMap[33]);
+    let obj13 = application(11265);
     const delayedSwapToActivityActionLeave = obj13.useDelayedSwapToActivityActionLeave(activityAction);
     const obj5 = { context, application, activityAction: delayedSwapToActivityActionLeave };
-    const tmp42 = importDefault(dependencyMap[34])(obj5);
+    const tmp42 = importDefault(11266)(obj5);
     const reason = tmp42.reason;
     const obj6 = { context, application };
     let id;
-    importDefault(dependencyMap[35]);
+    importDefault(11267);
     if (null != bot) {
       id = bot.id;
     }
@@ -260,7 +254,7 @@ export default function ActivityDetailContent(application) {
       let tmp67 = null != reason;
       if (tmp67) {
         const obj12 = { variant: "text-sm/normal", style: mapped.primaryEntryPointButtonDisabledCTA, children: reason };
-        tmp67 = callback3(arg1(dependencyMap[10]).Text, obj12);
+        tmp67 = callback3(application(4126).Text, obj12);
       }
       items3[1] = tmp67;
       obj11.children = items3;
@@ -274,15 +268,15 @@ export default function ActivityDetailContent(application) {
         isDeveloperOfThisApp = !hasCommands;
       }
       if (isDeveloperOfThisApp) {
-        let obj16 = arg1(dependencyMap[16]);
+        let obj16 = application(7919);
         isDeveloperOfThisApp = obj16.isEmbeddedApp(application);
       }
       if (isDeveloperOfThisApp) {
         obj13 = { style: mapped.buttonContainer };
-        const obj14 = { messageType: arg1(dependencyMap[36]).HelpMessageTypes.WARNING };
-        const intl2 = arg1(dependencyMap[17]).intl;
-        obj14.children = intl2.format(arg1(dependencyMap[17]).t.s/3hjE, {});
-        obj13.children = callback3(arg1(dependencyMap[36]).HelpMessage, obj14);
+        const obj14 = { messageType: application(1273).HelpMessageTypes.WARNING };
+        const intl2 = application(1212).intl;
+        obj14.children = intl2.format(application(1212).t["s/3hjE"], {});
+        obj13.children = callback3(application(1273).HelpMessage, obj14);
         const tmp49 = callback3(View, obj13);
       }
     }
@@ -309,7 +303,7 @@ export default function ActivityDetailContent(application) {
       result = 65 * width / 100;
     }
     obj20.width = result;
-    obj19.children = callback3(importDefault(dependencyMap[37]), obj20);
+    obj19.children = callback3(importDefault(11203), obj20);
     const items5 = [callback3(View, obj19), ];
     const obj21 = {};
     const items6 = [mapped.details, ];
@@ -318,12 +312,12 @@ export default function ActivityDetailContent(application) {
     }
     items6[1] = detailsContainerLandscape;
     obj21.style = items6;
-    const obj22 = { application, expandDescriptionCTAStyle: mapped.expandDescriptionCTAStyle };
-    const items7 = [callback3(importDefault(dependencyMap[38]), obj22), , , , ];
+    const obj22 = { application };
+    const items7 = [callback3(importDefault(9011), obj22), , , , ];
     const obj23 = { style: mapped.tagList };
     const obj24 = {};
     const obj25 = { style: mapped.tagIcon, size: "xs" };
-    obj24.icon = callback3(arg1(dependencyMap[39]).GroupIcon, obj25);
+    obj24.icon = callback3(application(4646).GroupIcon, obj25);
     const tmp71 = callback3;
     const tmp74 = callback3;
     const tmp75 = View;
@@ -334,7 +328,7 @@ export default function ActivityDetailContent(application) {
     const tmp80 = callback3;
     const tmp81 = View;
     const tmp82 = callback3;
-    const tmp85 = importDefault(dependencyMap[37]);
+    const tmp85 = importDefault(11203);
     const tmp87 = closure_12;
     const tmp88 = View;
     const tmp92 = closure_12;
@@ -345,23 +339,23 @@ export default function ActivityDetailContent(application) {
     if (null != num) {
       num22 = num;
     }
-    obj24.tagName = arg1(dependencyMap[40]).getItemSubtitleForMaxPlayersShort(num22);
+    obj24.tagName = application(11269).getItemSubtitleForMaxPlayersShort(num22);
     let num23 = 0;
-    const obj37 = arg1(dependencyMap[40]);
+    const obj37 = application(11269);
     if (null != num) {
       num23 = num;
     }
-    obj24.accessibilityLabel = importDefault(dependencyMap[40])(num23);
+    obj24.accessibilityLabel = importDefault(11269)(num23);
     const items8 = [tmp94(tmp95, obj24, "participants"), ];
     const tags = application.tags;
     mapped = undefined;
     if (null != tags) {
       mapped = tags.map((tagName) => {
         let obj = { tagName };
-        const intl = application(closure_3[17]).intl;
+        const intl = application(outer1_3[17]).intl;
         obj = { tagName };
-        obj.accessibilityLabel = intl.formatToPlainString(application(closure_3[17]).t.tXXD6v, obj);
-        return callback(closure_16, obj, tagName);
+        obj.accessibilityLabel = intl.formatToPlainString(application(outer1_3[17]).t.tXXD6v, obj);
+        return outer1_11(outer1_16, obj, tagName);
       });
     }
     items8[1] = mapped;
@@ -376,11 +370,11 @@ export default function ActivityDetailContent(application) {
     obj17.children = tmp78(tmp79, obj18);
     obj16.children = tmp76(tmp77, obj17);
     obj15.children = tmp74(tmp75, obj16);
-    return tmp71(arg1(dependencyMap[24]).AnalyticsLocationProvider, obj15);
+    return tmp71(application(5464).AnalyticsLocationProvider, obj15);
   } else {
     const _Error = Error;
     const error = new Error("ActivityDetailContent was passed the Built-in App, which is not supported.");
     throw error;
   }
-  const tmp3 = importDefault(dependencyMap[24]);
+  const tmp3 = importDefault(5464);
 };

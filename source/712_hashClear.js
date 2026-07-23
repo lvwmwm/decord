@@ -1,14 +1,14 @@
 // Module ID: 712
-// Function ID: 8730
+// Function ID: 8731
 // Name: hashClear
-// Dependencies: []
+// Dependencies: [713]
 
 // Module 712 (hashClear)
 
 export default function hashClear() {
   const self = this;
-  if (require(dependencyMap[0])) {
-    let obj = require(dependencyMap[0])(null);
+  if (require(713) /* getNative */) {
+    let obj = require(713) /* getNative */(null);
   } else {
     obj = {};
   }

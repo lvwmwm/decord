@@ -1,42 +1,47 @@
-// Module ID: 13937
-// Function ID: 105915
+// Module ID: 14051
+// Function ID: 108071
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 6944, 33, 4130, 689, 1557, 9458, 9444, 5500, 5186, 1212, 5189, 4541, 4126, 2]
 // Exports: default
 
-// Module 13937 (VideoQuestTranscriptActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
-({ FetchStatus: closure_5, useVideoQuestUIStore: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { paddingBottom: importDefault(dependencyMap[5]).space.PX_8 };
-obj.content = obj;
-obj.loadingSpinner = { height: 100 };
-let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestTranscriptActionSheet.tsx");
+// Module 14051 (VideoQuestTranscriptActionSheet)
+import result from "result";
+import { ActivityIndicator } from "get ActivityIndicator";
+import _toPropertyKey from "_toPropertyKey";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ FetchStatus: closure_5, useVideoQuestUIStore: closure_6 } = _toPropertyKey);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.loadingSpinner = { height: 100 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_toPropertyKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestTranscriptActionSheet.tsx");
 
 export default function VideoQuestTranscriptActionSheet(quest) {
   quest = quest.quest;
-  const arg1 = quest;
-  const tmp = callback3();
-  const tmp2 = callback((transcript) => transcript.transcript);
+  const tmp = _createForOfIteratorHelperLoose();
+  let tmp2 = callback((transcript) => transcript.transcript);
   const importDefault = tmp2;
-  const items = [quest, tmp2];
+  let items = [quest, tmp2];
   const effect = React.useEffect(() => {
-    const questAsset = quest(closure_2[7]).getQuestAsset(quest, quest(closure_2[7]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, true);
-    let tmp2 = null == tmp2;
+    const questAsset = quest(outer1_2[7]).getQuestAsset(quest, quest(outer1_2[7]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, true);
+    tmp2 = null == tmp2;
     if (!tmp2) {
       tmp2 = tmp2.questId !== quest.id;
     }
     if (!tmp2) {
-      tmp2 = tmp2.fetchStatus === constants.NONE;
+      tmp2 = tmp2.fetchStatus === outer1_5.NONE;
     }
     if (!tmp2) {
-      let tmp9 = tmp2.fetchStatus === constants.SUCCESS;
+      let tmp9 = tmp2.fetchStatus === outer1_5.SUCCESS;
       if (tmp9) {
         let url;
         if (null != questAsset) {
@@ -47,8 +52,8 @@ export default function VideoQuestTranscriptActionSheet(quest) {
       tmp2 = tmp9;
     }
     if (tmp2) {
-      const videoTranscript = quest(closure_2[8]).fetchVideoTranscript(quest, true);
-      const obj2 = quest(closure_2[8]);
+      const videoTranscript = quest(outer1_2[8]).fetchVideoTranscript(quest, true);
+      const obj2 = quest(outer1_2[8]);
     }
   }, items);
   let text;
@@ -73,10 +78,10 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   }, items1);
   let obj = { scrollable: true };
   obj = {};
-  const intl = arg1(dependencyMap[11]).intl;
-  obj.title = intl.string(arg1(dependencyMap[11]).t.1YS80z);
-  obj.header = callback2(arg1(dependencyMap[10]).BottomSheetTitleHeader, obj);
-  obj = { contentContainerStyle: { paddingBottom: importDefault(dependencyMap[6])().bottom } };
+  const intl = quest(1212).intl;
+  obj.title = intl.string(quest(1212).t["1YS80z"]);
+  obj.header = callback2(quest(5186).BottomSheetTitleHeader, obj);
+  obj = { contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
   const obj1 = { spacing: 16, style: tmp.content };
   let fetchStatus;
   if (null != tmp2) {
@@ -84,18 +89,18 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   }
   let tmp9 = fetchStatus === constants.FETCHING;
   if (tmp9) {
-    const obj2 = { style: tmp.loadingSpinner, size: "large" };
+    let obj2 = { style: tmp.loadingSpinner, size: "large" };
     tmp9 = callback2(ActivityIndicator, obj2);
   }
   const items2 = [
     tmp9,
     memo.length > 0 && memo.map((children) => {
-      const obj = { cachedAt: "tappableDots", edpbxy: "getQuestOrbMultiplierSource", children };
-      return callback(quest(closure_2[14]).Text, obj, arg1);
+      const obj = { variant: "heading-md/normal", color: "text-muted", children };
+      return outer1_7(quest(outer1_2[14]).Text, obj, arg1);
     })
   ];
   obj1.children = items2;
-  obj.children = closure_8(arg1(dependencyMap[13]).Stack, obj1);
-  obj.children = callback2(arg1(dependencyMap[12]).BottomSheetScrollView, obj);
-  return callback2(arg1(dependencyMap[9]).ActionSheet, obj);
+  obj.children = closure_8(quest(4541).Stack, obj1);
+  obj.children = callback2(quest(5189).BottomSheetScrollView, obj);
+  return callback2(quest(5500).ActionSheet, obj);
 };

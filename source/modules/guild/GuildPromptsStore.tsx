@@ -1,37 +1,38 @@
-// Module ID: 11672
-// Function ID: 90564
+// Module ID: 11682
+// Function ID: 90613
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 11672 (_isNativeReflectConstruct)
+// Module 11682 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class GuildPromptsStore {
     constructor() {
       self = this;
       tmp = GuildPromptsStore(this, GuildPromptsStore);
-      obj = closure_3(GuildPromptsStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(GuildPromptsStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,20 +41,20 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildPromptsStore;
   callback2(GuildPromptsStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(obj) {
       for (const key10004 in arg0) {
         let tmp = key10004;
-        let tmp2 = closure_5;
+        let tmp2 = outer1_5;
         let _Set = Set;
         let tmp3 = new.target;
         let tmp4 = new.target;
         let set = new Set(arg0[key10004]);
         let tmp6 = set;
-        closure_5[key10004] = set;
+        outer1_5[key10004] = set;
+        continue;
       }
     }
   };
@@ -72,26 +73,26 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[2] = obj;
   return callback(GuildPromptsStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "GuildPromptsStore";
 tmp2.persistKey = "GuildPromptsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GUILD_PROMPT_VIEWED: function handleGuildPromptViewed(arg0) {
     let _prompt;
     let guildId;
     ({ prompt: _prompt, guildId } = arg0);
-    if (null == closure_5[guildId]) {
+    if (null == dependencyMap[guildId]) {
       const _Set = Set;
       const set = new Set();
-      closure_5[guildId] = set;
-      closure_5[guildId].add(_prompt);
+      dependencyMap[guildId] = set;
+      dependencyMap[guildId].add(_prompt);
       let flag = true;
-      const obj2 = closure_5[guildId];
+      const obj2 = dependencyMap[guildId];
     } else {
       flag = !obj.has(_prompt);
       if (flag) {
@@ -103,15 +104,15 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     guild = guild.guild;
-    let flag = null != closure_5[guild.id] && !guild.unavailable;
+    let flag = null != dependencyMap[guild.id] && !guild.unavailable;
     if (flag) {
       const id = guild.id;
-      delete r2[r1];
+      delete tmp2[tmp];
       flag = true;
     }
     return flag;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild/GuildPromptsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild/GuildPromptsStore.tsx");
 
 export default tmp2;

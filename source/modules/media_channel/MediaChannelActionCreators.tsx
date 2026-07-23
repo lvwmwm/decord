@@ -1,28 +1,28 @@
-// Module ID: 11010
-// Function ID: 85667
+// Module ID: 11020
+// Function ID: 85717
 // Name: _fetchMediaPostEmbed
-// Dependencies: []
+// Dependencies: [5, 653, 686, 507, 4029, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 11010 (_fetchMediaPostEmbed)
+// Module 11020 (_fetchMediaPostEmbed)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _fetchMediaPostEmbed() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchMediaPostEmbed = obj;
   return obj(...arguments);
 }
 function _unfurlEmbedUrl() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _unfurlEmbedUrl = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/media_channel/MediaChannelActionCreators.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/media_channel/MediaChannelActionCreators.tsx");
 
 export const dismissMediaPostSharePrompt = function dismissMediaPostSharePrompt(threadId) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "DISMISS_MEDIA_POST_SHARE_PROMPT", threadId };
   obj.dispatch(obj);
 };

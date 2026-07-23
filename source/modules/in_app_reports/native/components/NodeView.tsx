@@ -1,66 +1,73 @@
-// Module ID: 7602
-// Function ID: 60935
+// Module ID: 7608
+// Function ID: 60972
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [57, 31, 27, 4129, 1348, 3758, 7609, 7606, 653, 482, 33, 4130, 689, 5450, 4562, 4126, 3974, 4086, 566, 4660, 7610, 1456, 4528, 4539, 7603, 7601, 4324, 3843, 7612, 7616, 7123, 5121, 7617, 7618, 7619, 7620, 12326, 12327, 12328, 12329, 12330, 12331, 12332, 12333, 12334, 12336, 12337, 12338, 12339, 12340, 12341, 12342, 12343, 12346, 2]
 // Exports: default
 
-// Module 7602 (_createForOfIteratorHelperLoose)
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import { REMEDIATION_ELEMENT_TYPES } from "__exportStarResult1";
-import { IN_APP_REPORTS_NODE } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { Permissions } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 7608 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import SafeAreaPaddingView from "SafeAreaPaddingView";
+import get_ActivityIndicator from "AccessibilityAnnouncer";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { REMEDIATION_ELEMENT_TYPES } from "REMEDIATION_ELEMENT_TYPES";
+import { IN_APP_REPORTS_NODE } from "IN_APP_REPORTS_NODE";
+import ME from "ME";
+import { Permissions } from "sum";
+import jsxProd from "TextLineElement";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_13;
+let closure_14;
+let closure_16;
+let closure_17;
+let closure_6;
+let closure_7;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -71,16 +78,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -102,23 +109,23 @@ function HeaderView(node) {
   let header;
   let subheader;
   ({ header, subheader, description } = node.node);
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.headerContainer };
   let tmp5 = null != header;
   if (tmp5) {
     tmp5 = "" !== header;
   }
   if (tmp5) {
-    obj = { "Bool(false)": "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 1 \u03CE\u03C1\u03B1", "Bool(false)": "\u03C0\u03B5\u03C1\u03AF\u03C0\u03BF\u03C5 {{count}} \u03CE\u03C1\u03B5\u03C2", "Bool(false)": "1 \u03CE\u03C1\u03B1", "Bool(false)": "{{count}} \u03CE\u03C1\u03B5\u03C2", "Bool(false)": "1 \u03B7\u03BC\u03AD\u03C1\u03B1", ref: node.headerRef, style: tmp.header, children: header };
-    tmp5 = callback2(arg1(dependencyMap[15]).Text, obj);
+    obj = { ref: node.headerRef, style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
+    tmp5 = callback2(require(4126) /* Text */.Text, obj);
   }
   const items = [tmp5, , ];
   let tmp9 = null;
   if (null != subheader) {
     tmp9 = null;
     if (subheader.length > 0) {
-      obj = { style: tmp.subheader, children: tmp2(subheader) };
-      tmp9 = callback2(arg1(dependencyMap[15]).Text, obj);
+      obj = { style: tmp.subheader, variant: "text-md/medium", color: "text-default", children: tmp2(subheader) };
+      tmp9 = callback2(require(4126) /* Text */.Text, obj);
     }
   }
   items[1] = tmp9;
@@ -126,8 +133,8 @@ function HeaderView(node) {
   if (null != description) {
     tmp13 = null;
     if (description.length > 0) {
-      const obj1 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.description, children: description };
-      tmp13 = callback2(arg1(dependencyMap[15]).Text, obj1);
+      const obj1 = { style: tmp.description, variant: "text-xs/medium", color: "text-default", children: description };
+      tmp13 = callback2(require(4126) /* Text */.Text, obj1);
     }
   }
   items[2] = tmp13;
@@ -136,21 +143,21 @@ function HeaderView(node) {
 }
 function InfoView(node) {
   const info = node.node.info;
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   let tmp3 = null;
   if (null != info) {
     let obj = {};
     const items = [tmp.infoBox, ];
-    obj = { backgroundColor: arg1(dependencyMap[16]).hexWithOpacity(tmp.infoBox.backgroundColor, 0.1) };
+    obj = { backgroundColor: require(3974) /* hexToRgb */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1) };
     items[1] = obj;
     obj.style = items;
     obj = { size: "md", color: tmp.infoBox.backgroundColor };
-    const items1 = [callback2(arg1(dependencyMap[17]).CircleInformationIcon, obj), ];
-    const obj1 = { style: tmp.infoBoxText, children: tmp2(info) };
-    items1[1] = callback2(arg1(dependencyMap[15]).Text, obj1);
+    const items1 = [callback2(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
+    const obj1 = { style: tmp.infoBoxText, variant: "text-sm/normal", color: "interactive-text-active", children: tmp2(info) };
+    items1[1] = callback2(require(4126) /* Text */.Text, obj1);
     obj.children = items1;
     tmp3 = callback3(closure_6, obj);
-    const obj3 = arg1(dependencyMap[16]);
+    const obj3 = require(3974) /* hexToRgb */;
   }
   return tmp3;
 }
@@ -158,41 +165,42 @@ function ChildItem(child) {
   let tmp4;
   let tmp5;
   child = child.child;
-  const arg1 = child;
   let obj = Object.create(null);
   obj.child = 0;
   obj.nodeMap = 0;
   const importDefault = Object.assign(child, obj);
-  const tmp2 = __exportStarResult1();
+  const tmp2 = _createForOfIteratorHelperLoose();
   [tmp4, tmp5] = callback(child, 2);
-  obj = arg1(dependencyMap[18]);
-  const items = [closure_8];
-  let stateFromStores = obj.useStateFromStores(items, () => closure_8.get("iar_show_report_sub_type_labels"));
+  obj = child(566);
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = obj.useStateFromStores(items, () => outer1_8.get("iar_show_report_sub_type_labels"));
   if (null != child.nodeMap[tmp5]) {
     const report_type = tmp7.report_type;
   }
-  obj = { style: tmp2.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => closure_1.onPress(closure_0)), 1)[0] };
+  obj = { style: tmp2.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => outer1_1.onPress(outer1_0)), 1)[0] };
   const obj1 = { style: tmp2.childContainer };
   const obj2 = { style: tmp2.childContent };
-  const obj3 = { "Null": true, "Null": true, alignItems: true, style: tmp2.childButtonText, children: tmp4 };
-  const items1 = [callback2(arg1(dependencyMap[15]).Text, obj3), ];
+  const obj3 = { style: tmp2.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp4 };
+  const items1 = [callback2(child(4126).Text, obj3), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
-    const obj4 = { style: tmp2.debugText, children: report_type };
-    stateFromStores = callback2(arg1(dependencyMap[15]).Text, obj4);
+    const obj4 = { style: tmp2.debugText, variant: "text-xs/normal", color: "text-muted", children: report_type };
+    stateFromStores = callback2(child(4126).Text, obj4);
   }
   items1[1] = stateFromStores;
   obj2.children = items1;
-  const items2 = [closure_17(closure_6, obj2), callback2(importDefault(dependencyMap[20]), {})];
+  const items2 = [closure_17(closure_6, obj2), callback2(importDefault(7610), {})];
   obj1.children = items2;
   obj.children = closure_17(closure_6, obj1);
-  return callback2(arg1(dependencyMap[19]).PressableHighlight, obj);
+  return callback2(child(4660).PressableHighlight, obj);
 }
 function ChildrenView(node) {
+  let importDefault;
+  let require;
   const children = node.node.children;
-  ({ onSelectChild: closure_0, nodeMap: closure_1 } = node);
+  ({ onSelectChild: require, nodeMap: importDefault } = node);
   let tmp2 = null;
   if (null != children) {
     tmp2 = null;
@@ -200,8 +208,8 @@ function ChildrenView(node) {
       const obj = {
         style: tmp.childrenContainer,
         children: children.map((child) => {
-              const tmp = callback(child, 2);
-              return callback2(closure_23, { child, nodeMap: closure_1, onPress: closure_0 }, "" + tmp[0] + "+" + tmp[1]);
+              const tmp = outer1_4(child, 2);
+              return outer1_16(outer1_23, { child, nodeMap: closure_1, onPress: closure_0 }, "" + tmp[0] + "+" + tmp[1]);
             })
       };
       tmp2 = callback2(closure_6, obj);
@@ -211,73 +219,70 @@ function ChildrenView(node) {
 }
 function getElementForType(node, block_users) {
   const elements = node.elements;
-  return elements.find((type) => type.type === arg1);
+  let closure_0 = block_users;
+  return elements.find((type) => type.type === closure_0);
 }
 function getElementsForType(node, external_link) {
   const elements = node.elements;
-  let closure_0 = "external_link";
-  return elements.filter((type) => type.type === closure_0);
+  external_link = "external_link";
+  return elements.filter((type) => type.type === external_link);
 }
 function hasAnyRemediationElement(node) {
   const elements = node.elements;
-  return elements.some((type) => closure_11.includes(type.type));
+  return elements.some((type) => outer1_11.includes(type.type));
 }
 function NullComponent() {
   return null;
 }
-({ View: closure_6, ScrollView: closure_7 } = __exportStarResult1);
-let closure_9 = importDefault(dependencyMap[4]);
-({ AnalyticEvents: closure_13, ChannelTypes: closure_14 } = __exportStarResult1);
-({ jsx: closure_16, jsxs: closure_17 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { -1395371693: null, -1403887007: null, 1644431020: null, -865752234: null, -323880032: null, 1359659601: null, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.scrollView = { responsesApiToolCalls: true, shouldListenToVisibleIndices: true, _totalAmount: true };
-__exportStarResult1.childrenContainer = { "Bool(false)": "LIGHT", "Bool(false)": "DARK", "Bool(false)": "backgroundColor" };
-__exportStarResult1.headerContainer = { 1262610906: "<string:1908422942>", 1442841695: "a", -1313882688: "<string:37390401>" };
-__exportStarResult1.header = { value: null, on: null };
-__exportStarResult1.subheader = {};
-__exportStarResult1.description = {};
-const obj1 = { payload: "center", action: "center", next: null, isTransition: 32, status: 32, value: "flex-start", reason: "center", title: "flex", description: "row", backgroundColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345, borderRadius: require("__exportStarResult1").radii.xs, borderColor: require("__exportStarResult1").unsafe_rawColors.BLUE_345 };
-__exportStarResult1.infoBox = obj1;
-__exportStarResult1.infoBoxText = {};
-__exportStarResult1.childButton = { marginBottom: 8, borderRadius: require("__exportStarResult1").radii.xs };
-const obj3 = { format_type: "<string:3212574722>", description: "<string:4132503554>", name: "<string:306254317>", action: "<string:1912603178>", messageReference: "toString", medium: true, action: true, threadId: true, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.xs };
-__exportStarResult1.childContainer = obj3;
-__exportStarResult1.childContent = { flex: 1 };
-__exportStarResult1.childButtonText = { lineHeight: 20 };
-__exportStarResult1.debugText = {};
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
+({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
+({ AnalyticEvents: closure_13, ChannelTypes: closure_14 } = ME);
+({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.scrollView = { flex: 1, alignSelf: "stretch", marginTop: 24 };
+_createForOfIteratorHelperLoose.childrenContainer = { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose.headerContainer = { alignSelf: "stretch", marginBottom: 24, paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose.header = { marginBottom: 8, textAlign: "center" };
+_createForOfIteratorHelperLoose.subheader = { lineHeight: 20, marginBottom: 8, textAlign: "center" };
+_createForOfIteratorHelperLoose.description = { lineHeight: 16, marginBottom: 8, textAlign: "center" };
+let obj1 = { alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
+_createForOfIteratorHelperLoose.infoBox = obj1;
+_createForOfIteratorHelperLoose.infoBoxText = { flex: 1, lineHeight: 18, marginStart: 8, marginTop: 3 };
+_createForOfIteratorHelperLoose.childButton = { marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+let obj3 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.childContainer = obj3;
+_createForOfIteratorHelperLoose.childContent = { flex: 1 };
+_createForOfIteratorHelperLoose.childButtonText = { lineHeight: 20 };
+_createForOfIteratorHelperLoose.debugText = { marginTop: 4, lineHeight: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/in_app_reports/native/components/NodeView.tsx");
 
 export default function NodeView(node) {
   let history;
   let onNavigate;
   let reportId;
   let reportSubType;
-  const arg1 = node;
-  let should_submit_data = __exportStarResult1();
-  let obj = arg1(dependencyMap[21]);
-  const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  let obj1 = arg1(dependencyMap[22]);
+  const _require = node;
+  let should_submit_data = _createForOfIteratorHelperLoose();
+  let obj = _require(ref[21]);
+  let navigation = obj.useNavigation();
+  let obj1 = _require(ref[22]);
   const isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
-  const importAll = isScreenReaderEnabled;
-  const ref = React.useRef(null);
-  const dependencyMap = ref;
-  let callback = React.useRef(false);
-  const items = [navigation, isScreenReaderEnabled];
-  const effect = React.useEffect(() => {
+  ref = node.useRef(null);
+  let callback = node.useRef(false);
+  let items = [navigation, isScreenReaderEnabled];
+  const effect = node.useEffect(() => {
     function focusHeader() {
-      if (!ref.current) {
-        ref.current = true;
-        let obj = callback(closure_3[23]);
-        obj = { ref: closure_3, delay: 300 };
+      if (!outer1_4.current) {
+        outer1_4.current = true;
+        let obj = callback(ref[23]);
+        obj = { ref: outer1_3, delay: 300 };
         const result = obj.setAccessibilityFocus(obj);
       }
     }
-    const isScreenReaderEnabled = focusHeader;
-    if (isScreenReaderEnabled) {
+    if (focusHeader) {
       let closure_0 = navigation.addListener("transitionEnd", (data) => {
         data = data.data;
         let closing;
@@ -289,7 +294,7 @@ export default function NodeView(node) {
         }
       });
       const _setTimeout = setTimeout;
-      const navigation = setTimeout(focusHeader, 500);
+      navigation = setTimeout(focusHeader, 500);
       return () => {
         callback();
         clearTimeout(closure_1);
@@ -297,19 +302,14 @@ export default function NodeView(node) {
     }
   }, items);
   node = node.node;
-  const React = node;
   const reportType = node.reportType;
   ({ reportSubType, history } = node);
   const nodeMap = node.nodeMap;
-  let closure_8 = nodeMap;
   const closeModal = node.closeModal;
-  let closure_9 = closeModal;
   const onSubmit = node.onSubmit;
-  let closure_10 = onSubmit;
   ({ reportId, onNavigate } = node);
-  const REMEDIATION_ELEMENT_TYPES = onNavigate;
-  const items1 = [reportType];
-  const memo = React.useMemo(() => {
+  let items1 = [reportType];
+  const memo = node.useMemo(() => {
     let channel_id;
     if ("message" === reportType.name) {
       channel_id = reportType.record.channel_id;
@@ -320,20 +320,21 @@ export default function NodeView(node) {
   const IN_APP_REPORTS_NODE = tmp7;
   const tmp8 = getElementForType(node, "text_line_resource");
   const tmp9 = getElementForType(node, "text");
-  const REPORT_TO_MOD = arg1(dependencyMap[24]).ReportMenuTypeSets.REPORT_TO_MOD;
+  const REPORT_TO_MOD = _require(ref[24]).ReportMenuTypeSets.REPORT_TO_MOD;
   const hasItem = REPORT_TO_MOD.has(reportType.name);
-  const tmp11 = callback(React.useState(false), 2);
+  const tmp11 = callback(node.useState(false), 2);
   let first = tmp11[0];
   let closure_13 = tmp11[1];
-  const tmp13 = callback(React.useState(false), 2);
+  const tmp13 = callback(node.useState(false), 2);
   const first1 = tmp13[0];
   let closure_15 = tmp13[1];
-  const tmp15 = callback(React.useState(() => ({})), 2);
+  const tmp15 = callback(node.useState(() => ({})), 2);
   const first2 = tmp15[0];
   let closure_17 = tmp15[1];
-  const tmp17 = callback(React.useState(false), 2);
+  const tmp17 = callback(node.useState(false), 2);
+  _createForOfIteratorHelperLoose = tmp17[1];
   const items2 = [node, tmp7, first2];
-  callback = React.useCallback((destination) => {
+  callback = node.useCallback((destination) => {
     let obj = { nodeRef: node.id, destination };
     let tmp;
     if (null != tmp7) {
@@ -343,19 +344,20 @@ export default function NodeView(node) {
     obj.multiSelect = tmp;
     return obj;
   }, items2);
-  const _createForOfIteratorHelperLoose = callback;
   const items3 = [tmp7];
-  const effect1 = React.useEffect(() => {
+  const effect1 = node.useEffect(() => {
     let done;
     if (null != tmp7) {
       const data = tmp7.data;
       if (null != data) {
         function _loop(arg0, arg1) {
-          if (true === arg0) {
-            callback((arg0) => {
+          let closure_0 = arg0;
+          let closure_1 = arg1;
+          if (true === closure_0) {
+            outer1_17((arg0) => {
               const obj = {};
               const merged = Object.assign(arg0);
-              obj[arg0] = arg1;
+              obj[closure_0] = closure_1;
               return obj;
             });
           }
@@ -364,10 +366,10 @@ export default function NodeView(node) {
         let iter = tmp3();
         if (!iter.done) {
           do {
-            let tmp4 = closure_4;
-            let tmp5 = closure_4(iter.value, 4);
+            let tmp4 = callback;
+            let tmp5 = callback(iter.value, 4);
             let tmp6 = tmp5[2];
-            closure_0 = tmp5[3];
+            let closure_0 = tmp5[3];
             let _loopResult = _loop(tmp5[0], tmp5[1]);
             let iter2 = tmp3();
             iter = iter2;
@@ -378,13 +380,13 @@ export default function NodeView(node) {
     }
   }, items3);
   const items4 = [navigation, node];
-  const effect2 = React.useEffect(() => navigation.addListener("beforeRemove", () => {
-    if (null != closure_0.onNavigate) {
-      closure_0.onNavigate("..");
+  const effect2 = node.useEffect(() => navigation.addListener("beforeRemove", () => {
+    if (null != outer1_0.onNavigate) {
+      outer1_0.onNavigate("..");
     }
   }), items4);
   const items5 = [node.is_auto_submit, first1, onSubmit, node.id];
-  const effect3 = React.useEffect(() => {
+  const effect3 = node.useEffect(() => {
     let is_auto_submit = node.is_auto_submit;
     if (is_auto_submit) {
       is_auto_submit = !first1;
@@ -392,28 +394,29 @@ export default function NodeView(node) {
     if (is_auto_submit) {
       lib(true);
       const obj = { nodeRef: node.id };
-      const items = [2060509169, node.id];
+      const items = ["", node.id];
       obj.destination = items;
       onSubmit(obj);
     }
   }, items5);
   const items6 = [node, nodeMap, navigation, history, onNavigate, closeModal, reportType, callback];
-  const callback1 = React.useCallback((arg0) => {
-    if (null == nodeMap[closure_4(undefined, arg0, 2)[1]]) {
+  const callback1 = node.useCallback((arg0) => {
+    const tmp2 = nodeMap[callback(undefined, arg0, 2)[1]];
+    if (null == tmp2) {
       closeModal();
     } else {
-      if (null != callback2(tmp2, "skip")) {
+      if (null != outer1_25(tmp2, "skip")) {
         const button = tmp2.button;
         let type;
         if (null != button) {
           type = button.type;
         }
         if ("next" === type) {
-          const items = [2060509169, tmp2.button.target];
+          const items = ["", tmp2.button.target];
           return callback1(items);
         }
       }
-      if (reportType.name === arg0(ref[25]).ReportNames.MESSAGE) {
+      if (reportType.name === node(ref[25]).ReportNames.MESSAGE) {
         let obj = navigation(ref[26]);
         obj = { message_id: reportType.record.id, content_type: reportType.name, report_sub_type: tmp2.report_type, current_node: node.id, next_node: tmp2.id };
         obj.trackWithMetadata(constants.IAR_NAVIGATE, obj);
@@ -424,15 +427,14 @@ export default function NodeView(node) {
       items1[arraySpreadResult] = tmp;
       const sum = arraySpreadResult + 1;
       obj.history = items1;
-      navigation.push(tmp7, obj);
+      navigation.push(closure_12, obj);
       if (null != onNavigate) {
         onNavigate(tmp2.key);
       }
     }
   }, items6);
-  const _arrayLikeToArray = callback1;
   const items7 = [node, history, navigation];
-  const effect4 = React.useEffect(() => {
+  const effect4 = node.useEffect(() => {
     const button = node.button;
     let type;
     if (null != button) {
@@ -451,11 +453,11 @@ export default function NodeView(node) {
       tmp2 = 0 === history.length;
     }
     if (tmp2) {
-      const obj = { headerLeft: closure_28 };
+      const obj = { headerLeft: outer1_28 };
       navigation.setOptions(obj);
     }
   }, items7);
-  const callback2 = React.useCallback((getChannelId) => {
+  const callback2 = node.useCallback((getChannelId) => {
     const channel = closeModal.getChannel(getChannelId.getChannelId());
     let tmp2 = null != channel;
     if (tmp2) {
@@ -471,7 +473,7 @@ export default function NodeView(node) {
     }
     return tmp2;
   }, []);
-  let obj2 = arg1(dependencyMap[28]);
+  let obj2 = _require(ref[28]);
   const iarReportSettingsUpsells = obj2.useIarReportSettingsUpsells(reportSubType);
   let tmp26 = null != getElementForType(node, "ignore_users");
   if (tmp26) {
@@ -487,9 +489,9 @@ export default function NodeView(node) {
     }
     tmp26 = tmp27;
   }
-  let obj3 = arg1(dependencyMap[29]);
+  let obj3 = _require(ref[29]);
   let userIsTeen = obj3.useUserIsTeen();
-  let obj4 = arg1(dependencyMap[30]);
+  let obj4 = _require(ref[30]);
   const activeLinkUsers = obj4.useActiveLinkUsers();
   if (userIsTeen) {
     userIsTeen = activeLinkUsers.length > 0;
@@ -497,20 +499,20 @@ export default function NodeView(node) {
   if (userIsTeen) {
     userIsTeen = null != getElementForType(node, "share_with_parents");
   }
-  obj = { isInlineReplyPreview: null, hasSpoilerEmbeds: null, hasBailedAst: null, style: should_submit_data.container };
+  obj = { style: should_submit_data.container, bottom: true, top: true };
   obj = { style: should_submit_data.scrollView };
   obj1 = { element: getElementForType(node, "success") };
-  const items8 = [first2(importDefault(dependencyMap[32]), obj1), first2(HeaderView, { node, headerRef: ref }), first2(InfoView, { node }), , , , , , , , , , , , , , , ];
+  const items8 = [first2(navigation(ref[32]), obj1), first2(HeaderView, { node, headerRef: ref }), first2(InfoView, { node }), , , , , , , , , , , , , , , ];
   let tmp34 = null;
   if (null != tmp8) {
     obj2 = { element: tmp8 };
-    tmp34 = first2(importDefault(dependencyMap[33]), obj2);
+    tmp34 = first2(navigation(ref[33]), obj2);
   }
   items8[3] = tmp34;
   let tmp38 = null != tmp9;
   if (tmp38) {
     obj3 = { element: tmp9 };
-    tmp38 = first2(importDefault(dependencyMap[34]), obj3);
+    tmp38 = first2(navigation(ref[34]), obj3);
   }
   items8[4] = tmp38;
   let tmp42 = null;
@@ -521,7 +523,7 @@ export default function NodeView(node) {
       }
     }
     obj4 = { message: reportType.record };
-    tmp42 = first2(importDefault(dependencyMap[35]), obj4);
+    tmp42 = first2(navigation(ref[35]), obj4);
   }
   items8[5] = tmp42;
   let tmp46 = null;
@@ -529,7 +531,7 @@ export default function NodeView(node) {
     tmp46 = null;
     if ("user" === reportType.name) {
       const obj5 = { user: reportType.record };
-      tmp46 = first2(importDefault(dependencyMap[36]), obj5);
+      tmp46 = first2(navigation(ref[36]), obj5);
     }
   }
   items8[6] = tmp46;
@@ -538,7 +540,7 @@ export default function NodeView(node) {
     tmp50 = null;
     if ("widget" === reportType.name) {
       ({ widget: obj13.widget, user_id: obj13.userId } = reportType);
-      tmp50 = first2(importDefault(dependencyMap[37]), {});
+      tmp50 = first2(navigation(ref[37]), {});
       const obj6 = {};
     }
   }
@@ -548,7 +550,7 @@ export default function NodeView(node) {
     tmp54 = null;
     if ("stage_channel" === reportType.name) {
       const obj7 = { stageInstance: reportType.record };
-      tmp54 = first2(importDefault(dependencyMap[38]), obj7);
+      tmp54 = first2(navigation(ref[38]), obj7);
     }
   }
   items8[8] = tmp54;
@@ -557,7 +559,7 @@ export default function NodeView(node) {
     tmp58 = null;
     if ("guild" === reportType.name) {
       const obj8 = { guild: reportType.record };
-      tmp58 = first2(importDefault(dependencyMap[39]), obj8);
+      tmp58 = first2(navigation(ref[39]), obj8);
     }
   }
   items8[9] = tmp58;
@@ -566,7 +568,7 @@ export default function NodeView(node) {
     tmp62 = null;
     if ("guild_scheduled_event" === reportType.name) {
       const obj9 = { event: reportType.record };
-      tmp62 = first2(importDefault(dependencyMap[40]), obj9);
+      tmp62 = first2(navigation(ref[40]), obj9);
     }
   }
   items8[10] = tmp62;
@@ -575,20 +577,19 @@ export default function NodeView(node) {
     tmp66 = null;
     if ("guild_discovery" === reportType.name) {
       const obj10 = { guild: reportType.record };
-      tmp66 = first2(importDefault(dependencyMap[41]), obj10);
+      tmp66 = first2(navigation(ref[41]), obj10);
     }
   }
   items8[11] = tmp66;
   const obj11 = {};
-  const __exportStarResult1 = tmp17[1];
   const tmp30 = closure_17;
   const tmp31 = closure_17;
   const tmp32 = history;
-  const tmp33 = importDefault(dependencyMap[32]);
+  const tmp33 = navigation(ref[32]);
   obj11.element = getElementForType(node, "breadcrumbs");
   obj11.menuName = reportType.name;
   obj11.history = history;
-  items8[12] = first2(importDefault(dependencyMap[42]), obj11);
+  items8[12] = first2(navigation(ref[42]), obj11);
   let tmp72Result = hasAnyRemediationElement(node);
   if (tmp72Result) {
     const obj12 = {};
@@ -596,7 +597,7 @@ export default function NodeView(node) {
       const items9 = [tmp26, , , , , ];
       if (userIsTeen) {
         const obj13 = { parents: activeLinkUsers };
-        userIsTeen = first2(importDefault(dependencyMap[45]), obj13);
+        userIsTeen = first2(navigation(ref[45]), obj13);
       }
       items9[1] = userIsTeen;
       let tmp86 = null != getElementForType(node, "block_users");
@@ -647,10 +648,10 @@ export default function NodeView(node) {
           }
           if (should_submit_data) {
             should_submit_data = first2;
-            should_submit_data = importDefault;
-            should_submit_data = dependencyMap;
+            should_submit_data = navigation;
+            should_submit_data = ref;
             const obj14 = { message: reportType.record, reportId };
-            should_submit_data = first2(importDefault(dependencyMap[48]), obj14);
+            should_submit_data = first2(navigation(ref[48]), obj14);
           }
           items9[4] = should_submit_data;
           should_submit_data = getElementForType;
@@ -660,10 +661,10 @@ export default function NodeView(node) {
           }
           if (should_submit_data) {
             should_submit_data = first2;
-            should_submit_data = importDefault;
-            should_submit_data = dependencyMap;
+            should_submit_data = navigation;
+            should_submit_data = ref;
             const obj15 = { guild: reportType.record, reportId, addCallback: node.addOnCloseCallback };
-            should_submit_data = first2(importDefault(dependencyMap[49]), obj15);
+            should_submit_data = first2(navigation(ref[49]), obj15);
           }
           items9[5] = should_submit_data;
           obj12.children = items9;
@@ -678,9 +679,9 @@ export default function NodeView(node) {
           obj16.user = author3;
           obj16.channelId = memo;
           obj16.reportId = reportId;
-          should_submit_data = first2(importDefault(dependencyMap[47]), obj16);
+          should_submit_data = first2(navigation(ref[47]), obj16);
           const tmp96 = first2;
-          const tmp99 = importDefault(dependencyMap[47]);
+          const tmp99 = navigation(ref[47]);
         }
       } else {
         const obj17 = {};
@@ -692,9 +693,9 @@ export default function NodeView(node) {
         obj17.user = author2;
         obj17.channelId = memo;
         obj17.reportId = reportId;
-        first2(importDefault(dependencyMap[46]), obj17);
+        first2(navigation(ref[46]), obj17);
         const tmp88 = first2;
-        const tmp91 = importDefault(dependencyMap[46]);
+        const tmp91 = navigation(ref[46]);
       }
     } else {
       const obj18 = {};
@@ -706,11 +707,11 @@ export default function NodeView(node) {
       obj18.user = author;
       obj18.channelId = memo;
       obj18.reportId = reportId;
-      first2(importDefault(dependencyMap[44]), obj18);
+      first2(navigation(ref[44]), obj18);
       const tmp77 = first2;
-      const tmp80 = importDefault(dependencyMap[44]);
+      const tmp80 = navigation(ref[44]);
     }
-    const tmp72 = closure_17;
+    tmp72 = closure_17;
   }
   items8[13] = tmp72Result;
   should_submit_data = null != getElementForType(node, "settings_upsells");
@@ -725,35 +726,35 @@ export default function NodeView(node) {
   }
   if (should_submit_data) {
     should_submit_data = first2;
-    should_submit_data = importDefault;
-    should_submit_data = dependencyMap;
+    should_submit_data = navigation;
+    should_submit_data = ref;
     const obj19 = { settingsUpsells: iarReportSettingsUpsells, channelId: reportType.record.channel_id, reportId, reportType, reportSubType };
-    should_submit_data = first2(importDefault(dependencyMap[50]), obj19);
+    should_submit_data = first2(navigation(ref[50]), obj19);
   }
   items8[14] = should_submit_data;
-  items8[15] = first2(importDefault(dependencyMap[51]), {
+  items8[15] = first2(navigation(ref[51]), {
     element: tmp7,
     state: first2,
     onPress(arg0, arg1) {
       const obj = {};
       const merged = Object.assign(first2);
       if (arg0 in first2) {
-        delete r2[r1];
+        delete tmp2[tmp];
       } else {
         obj[arg0] = arg1;
       }
-      callback(obj);
+      callback2(obj);
     }
   });
   items8[16] = first2(ChildrenView, { node, onSelectChild: callback1, nodeMap });
   should_submit_data = null;
   if (null != getElementForType(node, "external_link")) {
     should_submit_data = first2;
-    should_submit_data = importDefault;
-    should_submit_data = dependencyMap;
+    should_submit_data = navigation;
+    should_submit_data = ref;
     const obj21 = {};
     should_submit_data = getElementsForType;
-    should_submit_data = importDefault(dependencyMap[52]);
+    should_submit_data = navigation(ref[52]);
     obj21.elements = getElementsForType(node, "external_link");
     should_submit_data = first2(should_submit_data, obj21);
   }
@@ -762,7 +763,7 @@ export default function NodeView(node) {
   const items10 = [tmp31(tmp32, obj), ];
   should_submit_data = first2;
   const obj22 = { isModeratorReport: hasItem };
-  should_submit_data = importDefault(dependencyMap[53]);
+  should_submit_data = navigation(ref[53]);
   if (!first) {
     should_submit_data = undefined;
     if (null != tmp7) {
@@ -784,50 +785,49 @@ export default function NodeView(node) {
     if ("done" !== type) {
       if ("cancel" !== type) {
         if ("next" === type) {
-          const items = [2060509169, type.target];
+          let items = ["", type.target];
           callback1(items);
         } else if ("submit" === type) {
-          function handleSubmit() {
-            callback2(true);
-            const items = [2060509169];
-            items[1] = items.successNodeId;
-            const promise = callback(callback3(items));
-            const nextPromise = callback(callback3(items)).then(() => {
-              callback2(false);
+          (function handleSubmit() {
+            outer1_13(true);
+            const items = ["", outer1_0.successNodeId];
+            const promise = outer1_10(outer1_19(items));
+            const nextPromise = outer1_10(outer1_19(items)).then(() => {
+              outer2_18(false);
               let header;
-              if (null != closure_8[closure_0.successNodeId]) {
+              if (null != outer2_8[outer2_0.successNodeId]) {
                 header = tmp2.header;
               }
               if (null != header) {
-                const AccessibilityAnnouncer = items(closure_3[27]).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer = items(ref[27]).AccessibilityAnnouncer;
                 AccessibilityAnnouncer.announce(tmp2.header);
               }
-              callback3(items);
+              outer2_20(items);
             });
-            callback(callback3(items)).then(() => {
-              callback2(false);
+            outer1_10(outer1_19(items)).then(() => {
+              outer2_18(false);
               let header;
-              if (null != closure_8[closure_0.successNodeId]) {
+              if (null != outer2_8[outer2_0.successNodeId]) {
                 header = tmp2.header;
               }
               if (null != header) {
-                const AccessibilityAnnouncer = items(closure_3[27]).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer = items(ref[27]).AccessibilityAnnouncer;
                 AccessibilityAnnouncer.announce(tmp2.header);
               }
-              callback3(items);
+              outer2_20(items);
             }).catch(() => {
-              callback2(true);
+              outer2_18(true);
             }).finally(() => {
-              callback(false);
+              outer2_13(false);
             });
-          }();
+          })();
         }
       }
     }
-    const items1 = [2060509169, -1];
+    const items1 = ["", -1];
     callback1(items1);
   };
   items10[1] = should_submit_data(should_submit_data, obj22);
   obj.children = items10;
-  return tmp30(arg1(dependencyMap[31]).SafeAreaPaddingView, obj);
+  return tmp30(_require(ref[31]).SafeAreaPaddingView, obj);
 };

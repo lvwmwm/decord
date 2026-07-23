@@ -1,11 +1,11 @@
-// Module ID: 11796
-// Function ID: 91574
+// Module ID: 11806
+// Function ID: 91623
 // Name: getSelectedSpecialNavigationPath
-// Dependencies: [0, 0, 0]
+// Dependencies: [653, 3958, 2]
 // Exports: useSelectedSpecialNavigationPath
 
-// Module 11796 (getSelectedSpecialNavigationPath)
-import { Routes } from "__exportStarResult1";
+// Module 11806 (getSelectedSpecialNavigationPath)
+import { Routes } from "ME";
 
 function getSelectedSpecialNavigationPath(pathname) {
   if (pathname.pathname === Routes.FRIENDS) {
@@ -13,10 +13,10 @@ function getSelectedSpecialNavigationPath(pathname) {
   }
 }
 const obj = { FRIENDS: 0, [0]: "FRIENDS" };
-const result = require("__exportStarResult1").fileFinishedImporting("modules/navbars/native/NavigationPathUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/navbars/native/NavigationPathUtils.tsx");
 
 export const SpecialNavigationPath = obj;
 export { getSelectedSpecialNavigationPath };
 export const useSelectedSpecialNavigationPath = function useSelectedSpecialNavigationPath() {
-  return getSelectedSpecialNavigationPath(require(dependencyMap[1]).useLocation());
+  return getSelectedSpecialNavigationPath(require(3958) /* _extends */.useLocation());
 };

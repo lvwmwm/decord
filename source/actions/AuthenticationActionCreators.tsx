@@ -1,17 +1,33 @@
-// Module ID: 5587
-// Function ID: 47414
+// Module ID: 5590
+// Function ID: 47437
 // Name: dispatchLogout
-// Dependencies: []
+// Dependencies: [5, 5591, 1194, 5592, 653, 5593, 3, 4124, 686, 3982, 1198, 4337, 4942, 480, 507, 4029, 5594, 5595, 587, 684, 2]
 
-// Module 5587 (dispatchLogout)
+// Module 5590 (dispatchLogout)
+import closure_5 from "str2";
+import { setPromoEmailConsentState } from "setPromoEmailConsentState";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "_isNativeReflectConstruct";
+import str2 from "str2";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_9;
+const require = arg1;
 function dispatchLogout(arg0) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(4124);
   const result = obj.clearNavigationHistory();
   obj = { type: "LOGOUT" };
   const merged = Object.assign(arg0);
-  const obj3 = importDefault(dependencyMap[8]);
-  importDefault(dependencyMap[8]).dispatch(obj).catch((error) => {
-    closure_16.error("Error while dispatching LOGOUT", error);
+  const obj3 = importDefault(686);
+  importDefault(686).dispatch(obj).catch((error) => {
+    outer1_16.error("Error while dispatching LOGOUT", error);
     if (null != DiscordErrors) {
       DiscordErrors.softCrash(error);
     }
@@ -25,40 +41,34 @@ function handleLogout(source, CHANNELResult) {
   }
   dispatchLogout();
   if (null != DEFAULT_LOGGED_OUT) {
-    const rootNavigationRef = CHANNELResult(dependencyMap[9]).getRootNavigationRef();
+    const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
     if (null != rootNavigationRef) {
-      importDefault(dependencyMap[11]).popAll();
+      importDefault(4337).popAll();
       let obj = { index: 0 };
       obj = { name: "auth" };
       const items = [obj];
       obj.routes = items;
       rootNavigationRef.reset(obj);
-      const obj3 = importDefault(dependencyMap[11]);
+      const obj3 = importDefault(4337);
     } else {
-      obj = CHANNELResult(dependencyMap[10]);
+      obj = require(1198) /* shouldNavigate */;
       const obj1 = { source };
       obj.transitionTo(DEFAULT_LOGGED_OUT, obj1);
     }
-    const obj6 = CHANNELResult(dependencyMap[9]);
+    const obj6 = require(3982) /* getRootNavigationRef */;
   }
 }
-let closure_5 = importDefault(dependencyMap[0]);
-const setPromoEmailConsentState = arg1(dependencyMap[1]).setPromoEmailConsentState;
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-({ Endpoints: closure_9, DEVICE_TOKEN: closure_10, DEVICE_VOIP_TOKEN: closure_11, AbortCodes: closure_12, Routes: closure_13 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-({ DEVICE_PUSH_VOIP_PROVIDER: closure_14, getDevicePushProvider: closure_15 } = arg1(dependencyMap[5]));
-let importDefaultResult = importDefault(dependencyMap[6]);
+({ Endpoints: closure_9, DEVICE_TOKEN: closure_10, DEVICE_VOIP_TOKEN: closure_11, AbortCodes: closure_12, Routes: closure_13 } = ME);
+({ DEVICE_PUSH_VOIP_PROVIDER: closure_14, getDevicePushProvider: closure_15 } = require("str2"));
 importDefaultResult = new importDefaultResult("AuthenticationActionCreators");
-let closure_17 = null;
+let c17 = null;
 let obj = { MFA: "MFA", SUCCESS: "SUCCESS" };
 obj = {
   startSession(arg0) {
-    const arg1 = arg0;
-    importDefault(dependencyMap[8]).wait(() => {
-      let obj = callback(closure_3[8]);
-      obj = { type: "START_SESSION", token: arg0 };
+    let closure_0 = arg0;
+    importDefault(686).wait(() => {
+      let obj = outer1_1(outer1_3[8]);
+      obj = { type: "START_SESSION", token: closure_0 };
       obj.dispatch(obj);
     });
   },
@@ -68,19 +78,16 @@ obj = {
     let isMultiAccount;
     let source;
     let undelete;
-    const arg1 = this;
+    const self = this;
     login = login.login;
-    const importDefault = login;
     const password = login.password;
-    const importAll = password;
     ({ invite, isMultiAccount } = login);
-    const dependencyMap = isMultiAccount;
     ({ undelete, source, giftCodeSKUId } = login);
-    let obj = importDefault(dependencyMap[8]);
-    obj.dispatch({});
-    let obj1 = importDefault(dependencyMap[12]);
+    let obj = login(isMultiAccount[8]);
+    obj.dispatch({ type: "LOGIN", isPasswordAttempt: true });
+    let obj1 = login(isMultiAccount[12]);
     obj = { url: closure_9.LOGIN, body: { login, password, undelete, login_source: source, gift_code_sku_id: giftCodeSKUId }, retries: 2, oldFormErrors: true };
-    obj = { event: arg1(dependencyMap[13]).NetworkActionNames.USER_LOGIN };
+    obj = { event: self(isMultiAccount[13]).NetworkActionNames.USER_LOGIN };
     obj1 = {};
     let code;
     if (null != invite) {
@@ -91,16 +98,16 @@ obj = {
     obj.properties = obj1;
     obj.trackedActionData = obj;
     if (isMultiAccount) {
-      const obj2 = {};
-      const obj3 = { authorization: "" };
+      let obj2 = {};
+      let obj3 = { authorization: "" };
       obj2.headers = obj3;
       let obj4 = obj2;
     } else {
       obj4 = {};
     }
     const merged = Object.assign(obj4);
-    obj["rejectWithError"] = arg1(dependencyMap[14]).rejectWithMigratedError();
-    const obj9 = arg1(dependencyMap[14]);
+    obj["rejectWithError"] = self(isMultiAccount[14]).rejectWithMigratedError();
+    let obj9 = self(isMultiAccount[14]);
     return obj1.post(obj).then((body) => {
       let backup;
       let login_instance_id;
@@ -152,7 +159,7 @@ obj = {
       if (null != body2) {
         code = body2.code;
       }
-      if (code === constants.ACCOUNT_SCHEDULED_FOR_DELETION) {
+      if (code === outer1_12.ACCOUNT_SCHEDULED_FOR_DELETION) {
         if (null != password) {
           if ("" !== password) {
             obj = { type: "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION" };
@@ -164,7 +171,7 @@ obj = {
           throw v6OrEarlierAPIError;
         }
       }
-      if (code === constants.ACCOUNT_DISABLED) {
+      if (code === outer1_12.ACCOUNT_DISABLED) {
         if (null != password) {
           if ("" !== password) {
             let obj5 = login(isMultiAccount[8]);
@@ -175,7 +182,7 @@ obj = {
           }
         }
       }
-      if (code === constants.PHONE_VERIFICATION_REQUIRED) {
+      if (code === outer1_12.PHONE_VERIFICATION_REQUIRED) {
         obj2 = login(isMultiAccount[8]);
         const obj4 = { type: "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED" };
         obj5 = { login, password };
@@ -191,36 +198,37 @@ obj = {
   loginMFAv2(arg0) {
     let code;
     let giftCodeSKUId;
+    let importDefault;
     let loginInstanceId;
     let mfaType;
     let source;
     let ticket;
-    const arg1 = this;
-    ({ isMultiAccount: closure_1, loginInstanceId } = arg0);
+    const self = this;
+    ({ isMultiAccount: importDefault, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
-    let obj = importDefault(dependencyMap[12]);
-    obj = { url: closure_9.LOGIN_MFA(mfaType) };
+    let obj = importDefault(4942);
+    obj = { url: closure_9.LOGIN_MFA(mfaType), body: null, retries: 2, oldFormErrors: true, trackedActionData: null, rejectWithError: true };
     obj = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId };
     if (null == loginInstanceId) {
       loginInstanceId = authStore.getLoginInstanceId();
     }
     obj.login_instance_id = loginInstanceId;
     obj.body = obj;
-    obj.trackedActionData = { event: arg1(dependencyMap[13]).NetworkActionNames.USER_LOGIN_MFA };
-    const obj1 = { event: arg1(dependencyMap[13]).NetworkActionNames.USER_LOGIN_MFA };
+    obj.trackedActionData = { event: self(480).NetworkActionNames.USER_LOGIN_MFA };
+    const obj1 = { event: self(480).NetworkActionNames.USER_LOGIN_MFA };
     const postResult = obj.post(obj);
     return obj.post(obj).then((body) => {
-      if (callback) {
+      if (closure_1) {
         self.switchAccountToken(body.body.token);
       } else {
-        let obj = callback(closure_3[8]);
+        let obj = outer1_1(outer1_3[8]);
         obj = { type: "LOGIN_SUCCESS", token: body.body.token };
         obj.dispatch(obj);
       }
     }).catch((body) => {
       if (null != body.body) {
         if (null != body.body.suspended_user_token) {
-          let obj = callback(closure_3[8]);
+          let obj = outer1_1(outer1_3[8]);
           obj = { type: "LOGIN_SUSPENDED_USER", suspendedUserToken: body.body.suspended_user_token };
           obj.dispatch(obj);
         }
@@ -230,7 +238,7 @@ obj = {
       if (null != body) {
         code = body.code;
       }
-      if (code === constants.MFA_INVALID_CODE) {
+      if (code === outer1_12.MFA_INVALID_CODE) {
         const _Error = Error;
         const error = new Error(body.body.message);
         throw error;
@@ -240,18 +248,23 @@ obj = {
     });
   },
   authenticatePasswordless(arg0) {
-    ({ authenticateFunc: closure_0, conditionalMediationAbortController: closure_1, source: closure_2, giftCodeSKUId: closure_3, isMultiAccount: closure_4 } = arg0);
-    const callback = this;
-    return callback(async () => {
-      if (null != lib) {
-        lib.abort("Starting non-conditional mediation");
+    let closure_4;
+    let dependencyMap;
+    let importAll;
+    let importDefault;
+    let require;
+    ({ authenticateFunc: require, conditionalMediationAbortController: importDefault, source: importAll, giftCodeSKUId: dependencyMap, isMultiAccount: closure_4 } = arg0);
+    const self = this;
+    return self(async () => {
+      if (null != outer1_1) {
+        outer1_1.abort("Starting non-conditional mediation");
       }
-      let obj = lib(closure_3[8]);
+      let obj = outer2_1(outer2_3[8]);
       obj.dispatch({ type: "PASSWORDLESS_START" });
-      const tmp4 = yield callback(closure_3[16]).fetchWebAuthnPasswordlessChallenge();
-      const obj2 = callback(closure_3[16]);
-      obj = { ticket: tmp4.ticket, credential: yield closure_0(tmp4.challenge), source: closure_2, giftCodeSKUId: closure_3, isMultiAccount: closure_4 };
-      yield closure_5.loginWebAuthn(obj);
+      const tmp4 = yield outer2_0(outer2_3[16]).fetchWebAuthnPasswordlessChallenge();
+      const obj2 = outer2_0(outer2_3[16]);
+      obj = { ticket: tmp4.ticket, credential: yield outer1_0(tmp4.challenge), source: outer1_2, giftCodeSKUId: outer1_3, isMultiAccount: outer1_4 };
+      yield outer1_5.loginWebAuthn(obj);
     })();
   },
   loginWebAuthn(isMultiAccount) {
@@ -259,12 +272,12 @@ obj = {
     let giftCodeSKUId;
     let source;
     let ticket;
-    const arg1 = this;
-    const importDefault = isMultiAccount.isMultiAccount;
+    const self = this;
+    isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    let obj = importDefault(dependencyMap[12]);
+    let obj = isMultiAccount(4942);
     obj = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1 };
-    obj = { event: arg1(dependencyMap[13]).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
+    obj = { event: self(480).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     obj.trackedActionData = obj;
     obj.rejectWithError = true;
     const postResult = obj.post(obj);
@@ -274,24 +287,24 @@ obj = {
       body = body.body;
       const token = body.token;
       ({ user_id, required_actions } = body);
-      let obj = isMultiAccount(closure_3[8]);
+      let obj = isMultiAccount(outer1_3[8]);
       obj.dispatch({ type: "LOGIN_ATTEMPTED", user_id, required_actions });
       if (isMultiAccount) {
         self.switchAccountToken(token);
       } else {
         obj = { type: "LOGIN_SUCCESS", token };
-        isMultiAccount(closure_3[8]).dispatch(obj);
-        const obj2 = isMultiAccount(closure_3[8]);
+        isMultiAccount(outer1_3[8]).dispatch(obj);
+        const obj2 = isMultiAccount(outer1_3[8]);
       }
     }).catch((body) => {
       let aPIError = body;
-      if (body instanceof self(closure_3[14]).HTTPResponseError) {
+      if (body instanceof self(outer1_3[14]).HTTPResponseError) {
         if (null != body.body.suspended_user_token) {
-          let obj = isMultiAccount(closure_3[8]);
+          let obj = isMultiAccount(outer1_3[8]);
           obj = { type: "LOGIN_SUSPENDED_USER", suspendedUserToken: body.body.suspended_user_token };
           obj.dispatch(obj);
         } else {
-          const APIError = self(closure_3[15]).APIError;
+          const APIError = self(outer1_3[15]).APIError;
           const prototype = APIError.prototype;
           aPIError = new APIError(body);
         }
@@ -301,42 +314,41 @@ obj = {
   },
   loginToken(Authorization, arg1) {
     let flag = arg1;
-    arg1 = this;
+    const self = this;
     const importDefault = Authorization;
     if (arg1 === undefined) {
       flag = true;
     }
-    const importAll = flag;
-    importDefault(dependencyMap[8]).dispatch({ type: "LOGIN" });
-    const obj = importDefault(dependencyMap[8]);
+    importDefault(686).dispatch({ type: "LOGIN" });
+    let obj = importDefault(686);
     return new Promise((arg0) => {
-      const self = arg0;
+      let closure_0 = arg0;
       setImmediate(() => {
-        let obj = callback(closure_3[8]);
-        obj = { type: "LOGIN_SUCCESS", token: callback };
+        let obj = callback(outer2_3[8]);
+        obj = { type: "LOGIN_SUCCESS", token: outer1_1 };
         obj.dispatch(obj);
-        if (closure_2) {
-          arg0.startSession(callback);
+        if (outer1_2) {
+          lib.startSession(outer1_1);
         }
-        arg0();
+        lib();
       });
     });
   },
   oneTimeLogin(arg0) {
-    const arg1 = arg0;
-    const importDefault = this;
+    let closure_0 = arg0;
+    const self = this;
     return callback(async () => {
-      let obj = callback2(closure_3[8]);
+      let obj = self(outer2_3[8]);
       obj.dispatch({ type: "LOGIN" });
-      let obj1 = callback2(closure_3[12]);
-      obj = { url: constants.ONE_TIME_LOGIN, body: obj, oldFormErrors: true };
-      obj = { ticket: callback };
-      obj1 = { event: callback(closure_3[13]).NetworkActionNames.USER_ONE_TIME_LOGIN };
+      let obj1 = self(outer2_3[12]);
+      obj = { url: outer2_9.ONE_TIME_LOGIN, body: obj, oldFormErrors: true };
+      obj = { ticket: outer1_0 };
+      obj1 = { event: callback(outer2_3[13]).NetworkActionNames.USER_ONE_TIME_LOGIN };
       obj.trackedActionData = obj1;
       obj.rejectWithError = true;
       const token = yield obj1.post(obj).body.token;
       if (token) {
-        yield closure_1.loginToken(tmp2, false);
+        yield outer1_1.loginToken(tmp2, false);
         return token;
       } else {
         const _Error = Error;
@@ -346,40 +358,39 @@ obj = {
     })();
   },
   loginReset(isMultiAccount) {
-    let obj = importDefault(dependencyMap[8]);
+    let obj = importDefault(686);
     obj = { type: "LOGIN_RESET", isMultiAccount };
     obj.dispatch(obj);
   },
   loginStatusReset() {
-    importDefault(dependencyMap[8]).dispatch({ type: "LOGIN_STATUS_RESET" });
+    importDefault(686).dispatch({ type: "LOGIN_STATUS_RESET" });
   },
   logoutInternal(arg0) {
     dispatchLogout(arg0);
   },
   logout(TTI_test, LOGIN) {
     let DEFAULT_LOGGED_OUT = LOGIN;
-    LOGIN = TTI_test;
+    const _require = TTI_test;
     if (LOGIN === undefined) {
       DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
     }
-    const importDefault = DEFAULT_LOGGED_OUT;
     const importAll = arg2;
-    let obj = importDefault(dependencyMap[12]);
+    let obj = DEFAULT_LOGGED_OUT(4942);
     obj = { url: closure_9.LOGOUT };
     obj = { provider: callback2() };
-    const Storage = LOGIN(dependencyMap[18]).Storage;
+    const Storage = _require(587).Storage;
     obj.token = Storage.get(closure_10);
     obj.voip_provider = closure_14;
-    const Storage2 = LOGIN(dependencyMap[18]).Storage;
+    const Storage2 = _require(587).Storage;
     obj.voip_token = Storage2.get(closure_11);
     obj.body = obj;
     obj.oldFormErrors = true;
-    obj.trackedActionData = { event: LOGIN(dependencyMap[13]).NetworkActionNames.USER_LOGOUT, properties: obj2 };
+    obj.trackedActionData = { event: _require(480).NetworkActionNames.USER_LOGOUT, properties: obj2 };
     let tmp2 = null != arg2;
     if (tmp2) {
       const obj3 = {};
       const obj4 = {};
-      const token = importAll(dependencyMap[19]).getToken(arg2);
+      const token = importAll(684).getToken(arg2);
       let str = "";
       if (null != token) {
         str = token;
@@ -387,26 +398,26 @@ obj = {
       obj4.authorization = str;
       obj3.headers = obj4;
       tmp2 = obj3;
-      const obj8 = importAll(dependencyMap[19]);
+      const obj8 = importAll(684);
     }
     const merged = Object.assign(tmp2);
-    const obj1 = { event: LOGIN(dependencyMap[13]).NetworkActionNames.USER_LOGOUT, properties: obj2 };
-    obj["rejectWithError"] = LOGIN(dependencyMap[14]).rejectWithMigratedError();
-    const obj9 = LOGIN(dependencyMap[14]);
+    const obj1 = { event: _require(480).NetworkActionNames.USER_LOGOUT, properties: obj2 };
+    obj["rejectWithError"] = _require(507).rejectWithMigratedError();
+    const obj9 = _require(507);
     return obj.post(obj).finally(() => {
-      let tmp = null != arg2;
+      let tmp = null != closure_2;
       if (tmp) {
-        tmp = arg2 !== id.getId();
+        tmp = closure_2 !== outer1_7.getId();
       }
       if (!tmp) {
-        callback(arg0, DEFAULT_LOGGED_OUT);
+        outer1_20(closure_0, DEFAULT_LOGGED_OUT);
       }
     });
   },
   switchAccountToken(token, switchSynchronously) {
     let flag = switchSynchronously;
     const self = this;
-    switchSynchronously = token;
+    let closure_0 = token;
     if (switchSynchronously === undefined) {
       flag = true;
     }
@@ -416,148 +427,151 @@ obj = {
     obj = { isSwitchingAccount: true, goHomeAfterSwitching: flag };
     dispatchLogout(obj);
     return self.loginToken(token, true).then(() => {
-      const tmp = arg0 === token.getToken();
-      closure_16.log("Switched accounts finished", { isCorrectToken: tmp });
+      const tmp = closure_0 === outer1_7.getToken();
+      outer1_16.log("Switched accounts finished", { isCorrectToken: tmp });
       return tmp;
     });
   },
   verifySSOToken(arg0) {
     let DEFAULT_LOGGED_OUT = arg1;
-    const arg1 = arg0;
+    const _require = arg0;
     if (arg1 === undefined) {
       DEFAULT_LOGGED_OUT = constants.DEFAULT_LOGGED_OUT;
     }
-    const importDefault = DEFAULT_LOGGED_OUT;
-    const HTTP = arg1(dependencyMap[14]).HTTP;
-    const obj = { y: null, isArray: null, accessible: null, url: closure_9.ME };
+    const HTTP = _require(507).HTTP;
+    const obj = { url: closure_9.ME, oldFormErrors: true, rejectWithError: true };
     const value = HTTP.get(obj);
     return value.catch(() => {
-      callback(arg0, DEFAULT_LOGGED_OUT);
+      outer1_20(closure_0, DEFAULT_LOGGED_OUT);
     });
   },
   verify(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return callback(async () => {
-      let obj = callback2(closure_3[12]);
-      obj = { url: constants.VERIFY, body: obj };
-      obj = { token: callback, trackedActionData: { event: callback(closure_3[13]).NetworkActionNames.USER_VERIFY } };
-      const obj1 = { event: callback(closure_3[13]).NetworkActionNames.USER_VERIFY };
-      obj.rejectWithError = callback(closure_3[14]).rejectWithMigratedError();
+      let obj = outer2_1(outer2_3[12]);
+      obj = { url: outer2_9.VERIFY, body: obj };
+      obj = { token: outer1_0, trackedActionData: { event: callback(outer2_3[13]).NetworkActionNames.USER_VERIFY } };
+      const obj1 = { event: callback(outer2_3[13]).NetworkActionNames.USER_VERIFY };
+      obj.rejectWithError = callback(outer2_3[14]).rejectWithMigratedError();
       const tmp = yield obj.post(obj);
-      const obj5 = callback(closure_3[14]);
-      callback2(closure_3[8]).dispatch({ type: "LOGIN_SUCCESS", token: tmp.body.token });
+      const obj5 = callback(outer2_3[14]);
+      outer2_1(outer2_3[8]).dispatch({ type: "LOGIN_SUCCESS", token: tmp.body.token });
       return tmp.body.user_id;
     })();
   },
   authorizePayment(token) {
-    let obj = importDefault(dependencyMap[12]);
+    let obj = importDefault(4942);
     obj = { url: closure_9.AUTHORIZE_PAYMENT, body: obj };
-    obj = { token, trackedActionData: { event: arg1(dependencyMap[13]).NetworkActionNames.AUTHORIZE_PAYMENT }, rejectWithError: true };
+    obj = { token, trackedActionData: { event: require(480) /* isThrottled */.NetworkActionNames.AUTHORIZE_PAYMENT }, rejectWithError: true };
     return obj.post(obj);
   },
   authorizeIPAddress(token) {
-    let obj = importDefault(dependencyMap[12]);
+    let obj = importDefault(4942);
     obj = { url: closure_9.AUTHORIZE_IP, body: obj };
-    obj = { token, trackedActionData: { event: arg1(dependencyMap[13]).NetworkActionNames.AUTHORIZE_IP }, rejectWithError: true };
+    obj = { token, trackedActionData: { event: require(480) /* isThrottled */.NetworkActionNames.AUTHORIZE_IP }, rejectWithError: true };
     return obj.post(obj);
   },
   verifyResend() {
-    let obj = importDefault(dependencyMap[12]);
+    let obj = importDefault(4942);
     obj = { url: closure_9.VERIFY_RESEND, oldFormErrors: true };
-    obj = { event: arg1(dependencyMap[13]).NetworkActionNames.USER_VERIFY_RESEND };
+    obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_VERIFY_RESEND };
     obj.trackedActionData = obj;
-    obj.rejectWithError = arg1(dependencyMap[14]).rejectWithMigratedError();
+    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return obj.post(obj);
   },
   resetPassword(arg0, arg1, arg2) {
-    arg1 = arg0;
-    const importDefault = arg1;
-    const importAll = arg2;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
     return callback(async () => {
-      let obj = callback2(closure_3[8]);
+      let obj = callback2(outer2_3[8]);
       obj.dispatch({ type: "LOGIN" });
-      obj = { token: callback, password: callback2, source: closure_2 };
-      const Storage = callback(closure_3[18]).Storage;
-      let value = Storage.get(closure_10);
-      const tmp4 = callback3();
+      obj = { token: outer1_0, password: outer1_1, source: outer1_2 };
+      const Storage = callback(outer2_3[18]).Storage;
+      let value = Storage.get(outer2_10);
+      const tmp4 = outer2_15();
       if (tmp5) {
         tmp2.push_provider = tmp4;
         tmp2.push_token = value;
       }
-      const Storage2 = callback(closure_3[18]).Storage;
-      value = Storage2.get(closure_11);
+      const Storage2 = callback(outer2_3[18]).Storage;
+      value = Storage2.get(outer2_11);
       if (tmp8) {
-        tmp2.push_voip_provider = closure_14;
+        tmp2.push_voip_provider = outer2_14;
         tmp2.push_voip_token = value;
       }
-      let obj2 = callback2(closure_3[12]);
-      obj = { url: constants.RESET_PASSWORD, body: obj, oldFormErrors: true, trackedActionData: { event: callback(closure_3[13]).NetworkActionNames.USER_RESET_PASSWORD } };
-      const obj1 = { event: callback(closure_3[13]).NetworkActionNames.USER_RESET_PASSWORD };
-      const tmp5 = null != tmp4 && null != value;
-      const tmp8 = null != closure_14 && null != value;
-      obj.rejectWithError = callback(closure_3[14]).rejectWithMigratedError();
+      let obj2 = callback2(outer2_3[12]);
+      obj = { url: outer2_9.RESET_PASSWORD, body: obj, oldFormErrors: true, trackedActionData: { event: callback(outer2_3[13]).NetworkActionNames.USER_RESET_PASSWORD } };
+      const obj1 = { event: callback(outer2_3[13]).NetworkActionNames.USER_RESET_PASSWORD };
+      tmp5 = null != tmp4 && null != value;
+      tmp8 = null != outer2_14 && null != value;
+      obj.rejectWithError = callback(outer2_3[14]).rejectWithMigratedError();
       const body = yield obj2.post(obj).body;
       obj2 = { result: body.mfa ? tmp11.MFA : tmp11.SUCCESS, sms: body.sms, webauthn: body.webauthn, ticket: body.ticket, token: body.token, backup: body.backup, totp: body.totp };
       return obj2;
     })();
   },
   resetPasswordMFAv2(arg0) {
-    ({ method: closure_0, code: closure_1, ticket: closure_2, password: closure_3, token: closure_4, source: closure_5 } = arg0);
+    let closure_4;
+    let closure_5;
+    let dependencyMap;
+    let importAll;
+    let importDefault;
+    let require;
+    ({ method: require, code: importDefault, ticket: importAll, password: dependencyMap, token: closure_4, source: closure_5 } = arg0);
     return callback(async () => {
-      let obj = callback2(closure_3[8]);
+      let obj = outer2_1(outer2_3[8]);
       obj.dispatch({ type: "LOGIN_MFA" });
-      let obj1 = callback2(closure_3[12]);
-      obj = { url: constants.RESET_PASSWORD, body: obj, oldFormErrors: true };
-      obj = { code: callback2, ticket: closure_2, password: closure_3, token: closure_4, source: closure_5, method: callback };
-      obj1 = { event: callback(closure_3[13]).NetworkActionNames.USER_RESET_PASSWORD, properties: { mfa: true } };
+      let obj1 = outer2_1(outer2_3[12]);
+      obj = { url: outer2_9.RESET_PASSWORD, body: obj, oldFormErrors: true };
+      obj = { code: outer1_1, ticket: outer1_2, password: outer1_3, token: outer1_4, source: outer1_5, method: outer1_0 };
+      obj1 = { event: outer2_0(outer2_3[13]).NetworkActionNames.USER_RESET_PASSWORD, properties: { mfa: true } };
       obj.trackedActionData = obj1;
       obj.rejectWithError = true;
       return yield obj1.post(obj).body.token;
     })();
   },
   forgotPassword(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return callback(async () => {
-      let obj = callback2(closure_3[8]);
+      let obj = outer2_1(outer2_3[8]);
       obj.dispatch({ type: "FORGOT_PASSWORD_REQUEST" });
-      let obj1 = callback2(closure_3[12]);
-      obj = { url: constants.FORGOT_PASSWORD, body: obj, oldFormErrors: true };
-      obj = { login: callback };
-      obj1 = { event: callback(closure_3[13]).NetworkActionNames.FORGOT_PASSWORD };
+      let obj1 = outer2_1(outer2_3[12]);
+      obj = { url: outer2_9.FORGOT_PASSWORD, body: obj, oldFormErrors: true };
+      obj = { login: outer1_0 };
+      obj1 = { event: callback(outer2_3[13]).NetworkActionNames.FORGOT_PASSWORD };
       obj.trackedActionData = obj1;
-      obj.rejectWithError = callback(closure_3[14]).rejectWithMigratedError();
-      const obj6 = callback(closure_3[14]);
+      obj.rejectWithError = callback(outer2_3[14]).rejectWithMigratedError();
+      const obj6 = callback(outer2_3[14]);
       const tmp2 = yield obj1.post(obj);
-      callback2(closure_3[8]).dispatch({ type: "FORGOT_PASSWORD_SENT" });
+      outer2_1(outer2_3[8]).dispatch({ type: "FORGOT_PASSWORD_SENT" });
       return tmp2.body.method;
     })();
   },
   setFingerprint(fingerprint) {
-    let obj = importDefault(dependencyMap[8]);
+    let obj = importDefault(686);
     obj = { type: "FINGERPRINT", fingerprint };
     obj.dispatch(obj);
   },
   getExperiments(withGuildExperiments) {
-    let obj = importDefault(dependencyMap[8]);
+    let obj = importDefault(686);
     obj = { type: "EXPERIMENTS_FETCH", withGuildExperiments };
     obj.dispatch(obj);
   },
   getLocationMetadata() {
-    if (null != closure_17) {
-      let nextPromise = closure_17;
-    } else {
+    if (null == nextPromise) {
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
       const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => {
-        callback(closure_3[8]).dispatch({});
+      timeout = setTimeout(() => {
+        outer1_1(outer1_3[8]).dispatch({ type: "SET_CONSENT_REQUIRED", consentRequired: true });
       }, 5000);
-      const HTTP = arg1(dependencyMap[14]).HTTP;
-      const obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, url: closure_9.AUTH_LOCATION_METADATA };
+      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+      let obj = { url: closure_9.AUTH_LOCATION_METADATA, retries: 2, oldFormErrors: true, rejectWithError: true };
       const value = HTTP.get(obj);
       nextPromise = value.then((body) => {
         clearTimeout(closure_4);
-        if (null == authenticationConsentRequired.getAuthenticationConsentRequired()) {
+        if (null == outer1_8.getAuthenticationConsentRequired()) {
           let consent_required;
           if (null != body) {
             body = body.body;
@@ -565,7 +579,7 @@ obj = {
               consent_required = body.consent_required;
             }
           }
-          let obj = callback(closure_3[8]);
+          let obj = outer1_1(outer1_3[8]);
           obj = { type: "SET_CONSENT_REQUIRED", consentRequired: null == consent_required || consent_required };
           obj.dispatch(obj);
           const tmp3 = null == consent_required || consent_required;
@@ -583,8 +597,7 @@ obj = {
           tmp8 = country_code;
         }
         obj.countryCode = tmp8;
-        callback(closure_3[8]).dispatch(obj);
-        let closure_17 = null;
+        outer1_1(outer1_3[8]).dispatch(obj);
         let prop;
         if (null != body) {
           const body3 = body.body;
@@ -594,24 +607,21 @@ obj = {
         }
         if (null != prop) {
           ({ required: obj5.required, pre_checked: obj5.checked, pre_checked: obj5.preChecked } = body.body.promotional_email_opt_in);
-          callback2({});
+          outer1_6({});
           const obj1 = {};
         }
       }, () => {
         clearTimeout(closure_4);
-        callback(closure_3[8]).dispatch({});
-        let closure_17 = null;
+        outer1_1(outer1_3[8]).dispatch({ type: "SET_CONSENT_REQUIRED", consentRequired: true });
       });
-      closure_17 = nextPromise;
     }
     return nextPromise;
   },
   closeSuspendedUser() {
-    importDefault(dependencyMap[8]).dispatch({ type: "CLOSE_SUSPENDED_USER" });
+    importDefault(686).dispatch({ type: "CLOSE_SUSPENDED_USER" });
   }
 };
-const tmp3 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("actions/AuthenticationActionCreators.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/AuthenticationActionCreators.tsx");
 
 export default obj;
 export const PasswordResetResult = obj;

@@ -1,9 +1,21 @@
-// Module ID: 12091
-// Function ID: 93250
+// Module ID: 12205
+// Function ID: 95401
 // Name: EmptyDisplay
-// Dependencies: []
+// Dependencies: [31, 27, 4217, 1849, 482, 33, 4130, 689, 5052, 7491, 12206, 4126, 1212, 7495, 5085, 5464, 566, 1273, 9429, 3969, 8492, 12207, 5189, 5586, 2]
 
-// Module 12091 (EmptyDisplay)
+// Module 12205 (EmptyDisplay)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { Fonts } from "sum";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function EmptyDisplay(arg0) {
   let children;
   let style;
@@ -11,37 +23,37 @@ function EmptyDisplay(arg0) {
   let obj = {};
   const items = [callback3().emptyDisplayContainer, style];
   obj.style = items;
-  obj = { icon: importDefault(dependencyMap[10]) };
-  const items1 = [callback(importDefault(dependencyMap[9]), obj), children];
+  obj = { icon: importDefault(12206) };
+  const items1 = [callback(importDefault(7491), obj), children];
   obj.children = items1;
   return callback2(View, obj);
 }
 function FetchErrorDisplay(style) {
   let obj = { style: style.style };
-  obj = { "Null": false, "Null": 0, alignItems: 4, style: callback3().emptyDisplayTitle };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.children = intl.string(arg1(dependencyMap[12]).t.obChXk);
-  obj.children = callback(arg1(dependencyMap[11]).Text, obj);
+  obj = { style: callback3().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.obChXk);
+  obj.children = callback(require(4126) /* Text */.Text, obj);
   return callback(EmptyDisplay, obj);
 }
 function NoUsersDisplay(style) {
   let obj = { style: style.style };
-  obj = { "Null": false, "Null": 0, alignItems: 4, style: callback3().emptyDisplayTitle };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.children = intl.string(arg1(dependencyMap[12]).t.hW0mBR);
-  obj.children = callback(arg1(dependencyMap[11]).Text, obj);
+  obj = { style: callback3().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.hW0mBR);
+  obj.children = callback(require(4126) /* Text */.Text, obj);
   return callback(EmptyDisplay, obj);
 }
 function RemainingUsersRow(remainingUsersGroup) {
   const tmp = callback3();
   let obj = { DEPRECATED_style: tmp.userListRow };
   obj = { style: tmp.remainingUsersIconContainer };
-  obj = { source: importDefault(dependencyMap[10]), style: tmp.remainingUsersIcon };
-  obj.children = callback(importDefault(dependencyMap[14]), obj);
+  obj = { source: importDefault(12206), style: tmp.remainingUsersIcon };
+  obj.children = callback(importDefault(5085), obj);
   obj.leading = callback(View, obj);
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.label = intl.formatToPlainString(arg1(dependencyMap[12]).t.BdQTfR, { userRemainCount: remainingUsersGroup.remainingUsersGroup.count });
-  return callback(arg1(dependencyMap[13]).FormRow, obj, "userRemaining");
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.BdQTfR, { userRemainCount: remainingUsersGroup.remainingUsersGroup.count });
+  return callback(require(7495) /* Form */.FormRow, obj, "userRemaining");
 }
 function keyExtractor(count) {
   if (obj.isRemainingUsersGroup(count)) {
@@ -55,33 +67,32 @@ function keyExtractor(count) {
 class EventDetailRsvpSheet {
   constructor(arg0) {
     ({ userListItems, guildId } = global);
-    arg1 = guildId;
-    ({ contentHeight: closure_1, safeBottomPadding } = global);
+    ({ contentHeight, safeBottomPadding } = global);
     class StaticMessageContainer {
       constructor(arg0) {
-        tmp = closure_9();
+        tmp = outer1_9();
         obj = { style: tmp.staticMessageContentContainer, scrollEnabled: false };
         items = [, ];
         items[0] = tmp.staticMessageContentContainer;
         obj = { minHeight: contentHeight };
         items[1] = obj;
-        obj.children = closure_7(closure_4, { style: items, children: global.children });
-        return closure_7(guildId(closure_2[22]).BottomSheetScrollView, obj);
+        obj.children = outer1_7(outer1_4, { style: items, children: global.children });
+        return outer1_7(require("BottomSheetModal").BottomSheetScrollView, obj);
       }
     }
     ({ loading, error } = global);
-    tmp = closure_9();
+    tmp = c9();
     items = [];
     items[0] = guildId;
     callback = closure_3.useCallback((item) => {
       item = item.item;
-      let obj = guildId(closure_2[21]);
+      let obj = guildId(outer1_2[21]);
       if (obj.isRemainingUsersGroup(item)) {
         obj = { remainingUsersGroup: item };
-        let tmpResult = tmp(closure_14, obj);
+        let tmpResult = tmp(outer1_14, obj);
       } else {
         obj = { eventUser: item, guildId };
-        tmpResult = tmp(closure_10, obj);
+        tmpResult = tmp(outer1_10, obj);
       }
       return tmpResult;
     }, items);
@@ -90,26 +101,26 @@ class EventDetailRsvpSheet {
       if (0 === userListItems.length) {
         tmp12 = jsx;
         obj = {};
-        tmp13 = arg1;
-        tmp14 = dependencyMap;
+        tmp13 = guildId;
+        tmp14 = closure_2;
         num4 = 23;
         obj1 = {};
         class StaticMessageContainer {
           constructor(arg0) {
-            tmp = closure_9();
+            tmp = outer1_9();
             obj = { style: tmp.staticMessageContentContainer, scrollEnabled: false };
             items = [, ];
             items[0] = tmp.staticMessageContentContainer;
             obj = { minHeight: contentHeight };
             items[1] = obj;
-            obj.children = closure_7(closure_4, { style: items, children: global.children });
-            return closure_7(guildId(closure_2[22]).BottomSheetScrollView, obj);
+            obj.children = outer1_7(outer1_4, { style: items, children: global.children });
+            return outer1_7(require("BottomSheetModal").BottomSheetScrollView, obj);
           }
         }
         tmp15[0] = tmp.staticMessageContent;
         tmp15[1] = { paddingBottom: safeBottomPadding };
         obj1.style = tmp15;
-        obj.children = jsx(arg1(dependencyMap[23]).ActivityIndicator, obj1);
+        obj.children = jsx(require("ActivityIndicator").ActivityIndicator, obj1);
         tmp7 = jsx(StaticMessageContainer, obj);
       }
       return tmp7;
@@ -123,14 +134,14 @@ class EventDetailRsvpSheet {
       items1[0] = tmp.staticMessageContent;
       class StaticMessageContainer {
         constructor(arg0) {
-          tmp = closure_9();
+          tmp = outer1_9();
           obj = { style: tmp.staticMessageContentContainer, scrollEnabled: false };
           items = [, ];
           items[0] = tmp.staticMessageContentContainer;
           obj = { minHeight: contentHeight };
           items[1] = obj;
-          obj.children = closure_7(closure_4, { style: items, children: global.children });
-          return closure_7(guildId(closure_2[22]).BottomSheetScrollView, obj);
+          obj.children = outer1_7(outer1_4, { style: items, children: global.children });
+          return outer1_7(require("BottomSheetModal").BottomSheetScrollView, obj);
         }
       }
       obj3.style = items1;
@@ -147,14 +158,14 @@ class EventDetailRsvpSheet {
         items2[0] = tmp.staticMessageContent;
         class StaticMessageContainer {
           constructor(arg0) {
-            tmp = closure_9();
+            tmp = outer1_9();
             obj = { style: tmp.staticMessageContentContainer, scrollEnabled: false };
             items = [, ];
             items[0] = tmp.staticMessageContentContainer;
             obj = { minHeight: contentHeight };
             items[1] = obj;
-            obj.children = closure_7(closure_4, { style: items, children: global.children });
-            return closure_7(guildId(closure_2[22]).BottomSheetScrollView, obj);
+            obj.children = outer1_7(outer1_4, { style: items, children: global.children });
+            return outer1_7(require("BottomSheetModal").BottomSheetScrollView, obj);
           }
         }
         obj5.style = items2;
@@ -162,21 +173,21 @@ class EventDetailRsvpSheet {
         tmp7 = jsx(StaticMessageContainer, obj4);
       } else {
         tmp3 = jsx;
-        tmp4 = arg1;
-        tmp5 = dependencyMap;
+        tmp4 = guildId;
+        tmp5 = closure_2;
         num2 = 22;
         obj = {};
         items3 = [, ];
         class StaticMessageContainer {
           constructor(arg0) {
-            tmp = closure_9();
+            tmp = outer1_9();
             obj = { style: tmp.staticMessageContentContainer, scrollEnabled: false };
             items = [, ];
             items[0] = tmp.staticMessageContentContainer;
             obj = { minHeight: contentHeight };
             items[1] = obj;
-            obj.children = closure_7(closure_4, { style: items, children: global.children });
-            return closure_7(guildId(closure_2[22]).BottomSheetScrollView, obj);
+            obj.children = outer1_7(outer1_4, { style: items, children: global.children });
+            return outer1_7(require("BottomSheetModal").BottomSheetScrollView, obj);
           }
         }
         obj6 = {};
@@ -186,59 +197,50 @@ class EventDetailRsvpSheet {
         obj.data = userListItems;
         obj.renderItem = callback;
         num3 = 13;
-        obj.ItemSeparatorComponent = arg1(dependencyMap[13]).FormDivider;
+        obj.ItemSeparatorComponent = require("Form").FormDivider;
         tmp6 = keyExtractor;
         obj.keyExtractor = keyExtractor;
-        tmp7 = jsx(arg1(dependencyMap[22]).BottomSheetFlatList, obj);
+        tmp7 = jsx(require("BottomSheetModal").BottomSheetFlatList, obj);
       }
     }
     return;
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const Fonts = arg1(dependencyMap[4]).Fonts;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
-let obj1 = arg1(dependencyMap[6]);
-let obj = { staticMessageContentContainer: { backgroundColor: "vertical", paddingVertical: false }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 } };
-obj = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16 };
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let obj = { staticMessageContentContainer: { flex: 1, padding: 16 }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16 };
 obj.userName = obj;
-obj.emptyDisplayContainer = { -54378: null, 0: null, 0: null };
+obj.emptyDisplayContainer = { alignItems: "center", justifyContent: "center", minHeight: 200 };
 obj.staticMessageContent = { height: "100%" };
-obj1 = { paddingTop: 24 };
-const tmp2 = arg1(dependencyMap[5]);
-const merged = Object.assign(importDefault(dependencyMap[8])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, 20, { marginBottom: 8 }));
-obj1["textAlign"] = "center";
-obj.emptyDisplayTitle = obj1;
-const obj3 = { "Null": "never", "Null": true, -28220831: "compatibility", tintColor: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose = { paddingTop: 24 };
+const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 20, { marginBottom: 8 }));
+_createForOfIteratorHelperLoose["textAlign"] = "center";
+obj.emptyDisplayTitle = _createForOfIteratorHelperLoose;
+let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, height: 18, width: 18 };
 obj.remainingUsersIcon = obj3;
-const importDefaultResult = importDefault(dependencyMap[8]);
-const obj2 = { marginBottom: 8 };
-obj.remainingUsersIconContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
-let closure_9 = obj1.createStyles(obj);
+let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: 16, height: 32, width: 32, alignItems: "center", justifyContent: "center" };
+obj.remainingUsersIconContainer = obj4;
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((eventUser) => {
   let isMobileOnline;
   let isVROnline;
   let status;
   eventUser = eventUser.eventUser;
-  const arg1 = eventUser;
   const tmp = callback3();
-  const importDefault = importDefault(dependencyMap[15])().analyticsLocations;
-  let obj = arg1(dependencyMap[16]);
+  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  let obj = eventUser(566);
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(eventUser.user_id));
-  let obj1 = arg1(dependencyMap[16]);
-  const items1 = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(eventUser.user_id));
+  let obj1 = eventUser(566);
+  const items1 = [_isNativeReflectConstruct];
   const items2 = [eventUser.user_id];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: closure_5.isMobileOnline(eventUser.user_id), isVROnline: closure_5.isVROnline(eventUser.user_id), status: closure_5.getStatus(eventUser.user_id) }), items2);
+  const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: outer1_5.isMobileOnline(eventUser.user_id), isVROnline: outer1_5.isVROnline(eventUser.user_id), status: outer1_5.getStatus(eventUser.user_id) }), items2);
   ({ isMobileOnline, isVROnline, status } = stateFromStoresObject);
   obj = { DEPRECATED_style: tmp.userListRow };
   let tmp5 = null;
   if (null != stateFromStores) {
-    obj = { user: stateFromStores, guildId: eventUser.guildId, isMobileOnline, isVROnline, status, size: arg1(dependencyMap[17]).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
-    tmp5 = callback(arg1(dependencyMap[17]).Avatar, obj);
+    obj = { user: stateFromStores, guildId: eventUser.guildId, isMobileOnline, isVROnline, status, size: eventUser(1273).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
+    tmp5 = callback(eventUser(1273).Avatar, obj);
   }
   obj.leading = tmp5;
   obj1 = { user: stateFromStores };
@@ -248,20 +250,20 @@ const memoResult = importAllResult.memo((eventUser) => {
     nick = member.nick;
   }
   if (null == nick) {
-    nick = importDefault(dependencyMap[19]).getName(eventUser.user);
-    const obj6 = importDefault(dependencyMap[19]);
+    nick = analyticsLocations(3969).getName(eventUser.user);
+    const obj6 = analyticsLocations(3969);
   }
   obj1.nick = nick;
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);
-  obj.label = callback(importDefault(dependencyMap[18]), obj1);
+  obj.label = callback(analyticsLocations(9429), obj1);
   obj.onPress = function onPress() {
-    analyticsLocations(closure_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
+    analyticsLocations(outer1_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return callback(arg1(dependencyMap[13]).FormRow, obj, eventUser.user_id);
+  return callback(eventUser(7495).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
-const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailRsvpSheet.tsx");
+let obj2 = { marginBottom: 8 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailRsvpSheet.tsx");
 
 export default EventDetailRsvpSheet;
 export const UserRow = memoResult;

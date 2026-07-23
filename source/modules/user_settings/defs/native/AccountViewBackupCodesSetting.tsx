@@ -1,69 +1,72 @@
-// Module ID: 13584
-// Function ID: 102963
+// Module ID: 13698
+// Function ID: 105119
 // Name: route
-// Dependencies: []
+// Dependencies: [31, 7662, 653, 13647, 1212, 1273, 13699, 10095, 13648, 13646, 2]
 
-// Module 13584 (route)
-let closure_3 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[2]);
-const NOOP_NULL = tmp2.NOOP_NULL;
-let obj = arg1(dependencyMap[7]);
-obj = {
+// Module 13698 (route)
+import result from "result";
+import ME from "ME";
+import createToggle from "createToggle";
+
+const require = arg1;
+const NOOP_NULL = ME.NOOP_NULL;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.xZEzbu);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.xZEzbu);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.ACCOUNT,
-  usePredicate: arg1(dependencyMap[8]).useIs2FAEnabled,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  usePredicate: require("useIs2FAEnabled").useIs2FAEnabled,
   usePreNavigationAction: function useOnViewBackups() {
     return React.useCallback((arg0) => {
-      const obj = {
+      let closure_0 = arg0;
+      let obj = {
         onSubmit(password) {
-          const result = callback(closure_2[3]).sendMFABackupCodesVerificationKeyEmail(password);
+          const result = outer2_1(outer2_2[3]).sendMFABackupCodesVerificationKeyEmail(password);
           return result.then(() => {
-            function onConfirmBackups(closure_0) {
+            (function onConfirmBackups(outer1_0) {
               const obj = { onSubmit() { ... } };
-              const intl = callback(closure_2[4]).intl;
-              obj.title = intl.string(callback(closure_2[4]).t.mGppp/);
-              const intl2 = callback(closure_2[4]).intl;
-              obj.helpText = intl2.string(callback(closure_2[4]).t.37S9yU);
-              const intl3 = callback(closure_2[4]).intl;
-              obj.inputLabel = intl3.string(callback(closure_2[4]).t.TjGb4Q);
+              const intl = outer4_0(outer4_2[4]).intl;
+              obj.title = intl.string(outer4_0(outer4_2[4]).t["mGppp/"]);
+              const intl2 = outer4_0(outer4_2[4]).intl;
+              obj.helpText = intl2.string(outer4_0(outer4_2[4]).t["37S9yU"]);
+              const intl3 = outer4_0(outer4_2[4]).intl;
+              obj.inputLabel = intl3.string(outer4_0(outer4_2[4]).t.TjGb4Q);
               obj.closeOnSuccess = true;
-              obj.onSuccess = closure_0;
+              obj.onSuccess = outer1_0;
               obj.secureTextEntry = false;
-              const intl4 = callback(closure_2[4]).intl;
-              obj.actionText = intl4.string(callback(closure_2[4]).t.geKm7t);
-              obj.confirmColor = callback(closure_2[5]).ButtonColors.BRAND;
+              const intl4 = outer4_0(outer4_2[4]).intl;
+              obj.actionText = intl4.string(outer4_0(outer4_2[4]).t.geKm7t);
+              obj.confirmColor = outer4_0(outer4_2[5]).ButtonColors.BRAND;
               obj.useKeyboardAwareWrapper = true;
-              callback2(closure_2[6])(obj);
-            }(closure_0);
+              outer4_1(outer4_2[6])(obj);
+            })(outer1_0);
           });
         },
-        onSuccess: closure_4
+        onSuccess: outer1_4
       };
-      const intl = arg0(closure_2[4]).intl;
-      obj.title = intl.string(arg0(closure_2[4]).t.PsQmzU);
-      const intl2 = arg0(closure_2[4]).intl;
-      obj.inputLabel = intl2.string(arg0(closure_2[4]).t.CIGa+7);
+      let intl = outer1_0(outer1_2[4]).intl;
+      obj.title = intl.string(outer1_0(outer1_2[4]).t.PsQmzU);
+      let intl2 = outer1_0(outer1_2[4]).intl;
+      obj.inputLabel = intl2.string(outer1_0(outer1_2[4]).t["CIGa+7"]);
       obj.closeOnSuccess = false;
-      const intl3 = arg0(closure_2[4]).intl;
-      obj.actionText = intl3.string(arg0(closure_2[4]).t.PDTjLN);
-      obj.confirmColor = arg0(closure_2[5]).ButtonColors.BRAND;
+      let intl3 = outer1_0(outer1_2[4]).intl;
+      obj.actionText = intl3.string(outer1_0(outer1_2[4]).t.PDTjLN);
+      obj.confirmColor = outer1_0(outer1_2[5]).ButtonColors.BRAND;
       obj.useKeyboardAwareWrapper = true;
-      callback(closure_2[6])(obj);
+      outer1_1(outer1_2[6])(obj);
       return false;
     }, []);
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: tmp2.UserSettingsSections.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES,
+createToggle = {
+  route: ME.UserSettingsSections.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES,
   getComponent() {
-    return arg1(dependencyMap[9]).default;
+    return require(13646) /* CodeRow */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/defs/native/AccountViewBackupCodesSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+let result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccountViewBackupCodesSetting.tsx");
 
-export default route;
+export default createToggle;

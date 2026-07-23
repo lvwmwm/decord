@@ -1,52 +1,56 @@
-// Module ID: 6980
-// Function ID: 55805
+// Module ID: 6985
+// Function ID: 55839
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 6986, 2]
 
-// Module 6980 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6985 (_createForOfIteratorHelperLoose)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,13 +87,11 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class Histogram {
     constructor() {
-      tmp = closure_2(this, Histogram);
-      digest = new Histogram(closure_1[2]).Digest();
+      tmp = outer1_2(this, Histogram);
+      digest = new Histogram(outer1_1[2]).Digest();
       this.digest = digest;
       this.total = 0;
       this.samples = 0;
@@ -97,14 +99,13 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = Histogram;
   let obj = {
     key: "getSamples",
     value() {
       return this.samples;
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "addSample",
     value(arg0) {
@@ -116,7 +117,7 @@ const tmp2 = () => {
       self.total = self.total + arg0 * num;
       self.totalWeight = self.totalWeight + num;
       self.samples = self.samples + 1;
-      const push = Histogram(closure_1[2]).TDigest.prototype.push;
+      const push = Histogram(outer1_1[2]).TDigest.prototype.push;
       push.call(self.digest, arg0, num);
       const digest = self.digest;
       digest.check_continuous();
@@ -131,11 +132,10 @@ const tmp2 = () => {
       if (arg1 === undefined) {
         num = 1;
       }
-      const Histogram = num;
       self.total = self.total + arr.reduce((arg0, arg1) => arg0 + arg1 * num, 0);
       self.totalWeight = self.totalWeight + num * arr.length;
       self.samples = self.samples + arr.length;
-      const push = Histogram(closure_1[2]).TDigest.prototype.push;
+      const push = Histogram(outer1_1[2]).TDigest.prototype.push;
       push.call(self.digest, arr, num);
       const digest = self.digest;
       digest.check_continuous();
@@ -149,10 +149,10 @@ const tmp2 = () => {
       let items = arg0;
       const self = this;
       if (arg0 === undefined) {
-        items = [];
+        items = [25, 50, 75, 90, 95];
       }
       let obj = {};
-      const tmp = callback2(items);
+      const tmp = outer1_4(items);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -213,7 +213,7 @@ const tmp2 = () => {
     }
   };
   return callback(Histogram, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/Histogram.tsx");
+})();
+const result = require("TDigest").fileFinishedImporting("lib/Histogram.tsx");
 
 export const Histogram = tmp2;

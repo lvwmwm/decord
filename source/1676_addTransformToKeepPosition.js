@@ -1,10 +1,13 @@
 // Module ID: 1676
-// Function ID: 18576
+// Function ID: 18577
 // Name: addTransformToKeepPosition
-// Dependencies: []
+// Dependencies: [57, 1638]
 // Exports: EntryExitTransition
 
 // Module 1676 (addTransformToKeepPosition)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
 function addTransformToKeepPosition(style, style2, arg2, arg3) {
   let tmp19;
   let tmp20;
@@ -41,20 +44,19 @@ function addTransformToKeepPosition(style, style2, arg2, arg3) {
     let _HermesInternal = HermesInternal;
     let tmp16 = tmp20;
     style["" + bound] = tmp21;
-    // continue
+    continue;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
 
 export const EntryExitTransition = function EntryExitTransition(name, translateX) {
   let obj = {};
-  const structuredCloneResult = structuredClone(translateX(dependencyMap[1]).AnimationsData[translateX.exiting]);
+  const structuredCloneResult = structuredClone(require(1638) /* TransitionType */.AnimationsData[translateX.exiting]);
   obj.translateX = "" + translateX.translateX + "px";
   obj.translateY = "" + translateX.translateY + "px";
   obj.scale = "" + translateX.scaleX + "," + translateX.scaleY;
   obj = { name, style: {}, duration: 300 };
   addTransformToKeepPosition(obj.style, structuredCloneResult.style, obj, true);
-  addTransformToKeepPosition(obj.style, structuredClone(translateX(dependencyMap[1]).AnimationsData[translateX.entering]).style, { "Null": "construct", "Null": "isArray", marginBottom: "isArray" }, false);
+  addTransformToKeepPosition(obj.style, structuredClone(require(1638) /* TransitionType */.AnimationsData[translateX.entering]).style, { translateX: "0px", translateY: "0px", scale: "1,1" }, false);
   const style = obj.style;
   const map = new Map();
   if (undefined === style[0].opacity) {
@@ -65,7 +67,7 @@ export const EntryExitTransition = function EntryExitTransition(name, translateX
     const result2 = map.set(50, 0);
     const result3 = map.set(51, 1);
   }
-  const structuredCloneResult1 = structuredClone(translateX(dependencyMap[1]).AnimationsData[translateX.entering]);
+  const structuredCloneResult1 = structuredClone(require(1638) /* TransitionType */.AnimationsData[translateX.entering]);
   while (tmp10 !== undefined) {
     let tmp12 = callback;
     let tmp13 = callback(tmp11, 2);
@@ -74,7 +76,7 @@ export const EntryExitTransition = function EntryExitTransition(name, translateX
     let _Object = Object;
     obj = { opacity: tmp13[1] };
     tmp5[first] = Object.assign({}, tmp5[first], obj);
-    // continue
+    continue;
   }
   return obj;
 };

@@ -1,32 +1,39 @@
-// Module ID: 8627
-// Function ID: 68350
+// Module ID: 8634
+// Function ID: 68390
 // Name: ImageItem
-// Dependencies: []
+// Dependencies: [57, 31, 27, 482, 33, 4130, 689, 8600, 8274, 8302, 478, 1450, 8628, 1426, 4369, 2]
 // Exports: default
 
-// Module 8627 (ImageItem)
+// Module 8634 (ImageItem)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { NOOP } from "sum";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function ImageItem(index) {
   let height;
   let url;
   let width;
   index = index.index;
-  const arg1 = index;
   const sources = index.sources;
-  const importDefault = sources;
   const trackAction = index.trackAction;
-  const dependencyMap = trackAction;
   const onScrollToIndex = index.onScrollToIndex;
-  let closure_3 = onScrollToIndex;
   const setMediaModalOpen = index.setMediaModalOpen;
-  const React = setMediaModalOpen;
   ({ url, width, height } = index);
-  const tmp = callback2();
-  const ref = React.useRef(null);
+  const tmp = _createForOfIteratorHelperLoose();
+  const ref = setMediaModalOpen.useRef(null);
   const items = [sources, index, trackAction, onScrollToIndex, setMediaModalOpen];
-  let obj = {
+  obj = {
     ref,
     style: items1,
-    onPress: React.useCallback(() => {
+    onPress: setMediaModalOpen.useCallback(() => {
       trackAction(index(trackAction[7]).GameProfileTrackActionActions.ClickImage);
       setMediaModalOpen(true);
       let obj = index(trackAction[8]);
@@ -37,19 +44,19 @@ function ImageItem(index) {
         analyticsSource: "game_profile",
         openAs: "action-sheet",
         onIndexChange(arg0) {
-          return callback(arg0);
+          return outer1_3(arg0);
         },
         onClose() {
-          return callback2(false);
+          return outer1_4(false);
         }
       };
       obj.openMediaModal(obj);
     }, items),
     children: <closure_7 {...obj} />
   };
-  const items1 = [tmp.mediaItem, { width, height }];
+  items1 = [tmp.mediaItem, { width, height }];
   obj = { source: { uri: url }, style: tmp.mediaImage };
-  return <closure_8 {...obj} />;
+  return <closure_8 source={{ uri: url }} style={tmp.mediaImage} />;
 }
 function TrailerItem(active) {
   let height;
@@ -57,32 +64,26 @@ function TrailerItem(active) {
   let url;
   let width;
   active = active.active;
-  const arg1 = active;
   const index = active.index;
-  const importDefault = index;
   const sources = active.sources;
-  const dependencyMap = sources;
   const trackAction = active.trackAction;
-  let callback = trackAction;
   const onScrollToIndex = active.onScrollToIndex;
-  const React = onScrollToIndex;
   const setMediaModalOpen = active.setMediaModalOpen;
   ({ url, posterUrl, width, height } = active);
-  const tmp = callback2();
-  const ref = React.useRef(null);
-  let closure_7 = React.useRef(0);
-  const tmp3 = callback(React.useState(0), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const ref = onScrollToIndex.useRef(null);
+  let closure_7 = onScrollToIndex.useRef(0);
+  const tmp3 = trackAction(onScrollToIndex.useState(0), 2);
   let closure_8 = tmp3[1];
-  callback = React.useCallback((current) => {
+  const callback = onScrollToIndex.useCallback((current) => {
     closure_7.current = current;
   }, []);
-  let obj = arg1(dependencyMap[9]);
-  const ref1 = React.useRef(obj.createVideoControls(NOOP));
-  const NOOP = ref1;
-  const current = ref1.current;
-  const subscribe = current.useSubscribe(callback, NOOP, NOOP);
+  let obj = active(sources[9]);
+  ref1 = onScrollToIndex.useRef(obj.createVideoControls(ref1));
+  let current = ref1.current;
+  const subscribe = current.useSubscribe(callback, ref1, ref1);
   const items = [active];
-  const effect = React.useEffect(() => {
+  const effect = onScrollToIndex.useEffect(() => {
     if (obj.isAndroid()) {
       if (!active) {
         callback((arg0) => arg0 + 1);
@@ -95,7 +96,7 @@ function TrailerItem(active) {
   obj = {
     ref,
     style: items2,
-    onPress: React.useCallback(() => {
+    onPress: onScrollToIndex.useCallback(() => {
       trackAction(active(sources[7]).GameProfileTrackActionActions.ClickTrailer);
       setMediaModalOpen(true);
       let obj = active(sources[8]);
@@ -107,82 +108,75 @@ function TrailerItem(active) {
         analyticsSource: "game_profile",
         openAs: "action-sheet",
         onIndexChange(arg0) {
-          return callback(arg0);
+          return outer1_4(arg0);
         },
         onClose() {
-          return callback2(false);
+          return outer1_5(false);
         }
       };
       obj.openMediaModal(obj);
     }, items1)
   };
-  const items2 = [tmp.mediaItem, { width, height }];
+  items2 = [tmp.mediaItem, { width, height }];
   obj = { style: tmp.mediaVideo, source: { uri: url }, poster: posterUrl, paused: !active, muted: true, resizeMode: "cover", pauseWhileAppInactive: true, controls: ref1.current };
   let combined;
   if (obj4.isAndroid()) {
     const _HermesInternal = HermesInternal;
     combined = "render-" + tmp3[0];
   }
-  obj.children = jsx(arg1(dependencyMap[9]).VideoComponent, obj, combined);
-  return <closure_8 {...obj} />;
+  obj.children = jsx(active(sources[9]).VideoComponent, { style: tmp.mediaVideo, source: { uri: url }, poster: posterUrl, paused: !active, muted: true, resizeMode: "cover", pauseWhileAppInactive: true, controls: ref1.current }, combined);
+  return <closure_8 style={tmp.mediaVideo} source={{ uri: url }} poster={posterUrl} paused={!active} muted resizeMode="cover" pauseWhileAppInactive controls={ref1.current} />;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6, Image: closure_7, Pressable: closure_8 } = arg1(dependencyMap[2]));
-const NOOP = arg1(dependencyMap[3]).NOOP;
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { gap: importDefault(dependencyMap[6]).space.PX_12, marginHorizontal: -importDefault(dependencyMap[6]).space.PX_16 };
-obj.container = obj;
-obj.scrollView = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013949958030794747, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017312769635221254 };
-const tmp2 = arg1(dependencyMap[2]);
-obj.scrollViewContent = { gap: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_HIGH);
-obj.mediaItem = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.mediaImage = {};
-const obj2 = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.mediaVideo = { backgroundColor: importDefault(dependencyMap[6]).colors.BLACK };
-let closure_11 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BLACK };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/game_profile/native/components/GameProfileMedia.tsx");
+({ View: closure_5, ScrollView: closure_6, Image: closure_7, Pressable: closure_8 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, marginHorizontal: -require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.scrollView = { flexDirection: "row", overflow: "visible" };
+_createForOfIteratorHelperLoose.scrollViewContent = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj2 = { maxWidth: 366, maxHeight: 200, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
+_createForOfIteratorHelperLoose.mediaItem = obj2;
+_createForOfIteratorHelperLoose.mediaImage = { width: "100%", height: "100%", resizeMode: "cover" };
+const obj3 = { width: "100%", height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
+_createForOfIteratorHelperLoose.mediaVideo = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/game_profile/native/components/GameProfileMedia.tsx");
 
 export default function GameProfileMedia(game) {
+  let NOOP;
+  let closure_6;
+  let closure_7;
+  let closure_8;
   game = game.game;
-  const arg1 = game;
-  const importDefault = game.trackAction;
-  const tmp = callback2();
-  const width = importDefault(dependencyMap[11])().width;
-  const dependencyMap = width;
-  let obj = arg1(dependencyMap[12]);
-  let callback = obj.useObscuredSurface().obscured;
-  const tmp2 = callback(React.useState(0), 2);
-  const first = tmp2[0];
-  const React = first;
+  const trackAction = game.trackAction;
+  let tmp = first1();
+  width = trackAction(width[11])().width;
+  let obj = game(width[12]);
+  const obscured = obj.useObscuredSurface().obscured;
+  let tmp2 = obscured(first.useState(0), 2);
+  first = tmp2[0];
   let closure_5 = tmp2[1];
-  [closure_6, closure_7] = callback(React.useState(0), 2);
-  const tmp4 = callback(React.useState(0), 2);
-  [closure_8, closure_9] = callback(React.useState(false), 2);
+  [closure_6, closure_7] = obscured(first.useState(0), 2);
+  let tmp4 = obscured(first.useState(0), 2);
+  [closure_8, NOOP] = obscured(first.useState(false), 2);
   let tmp6 = null;
-  const ref = React.useRef(null);
-  const jsx = ref;
-  const items = [width];
-  const tmp8 = callback(React.useMemo(() => {
+  const ref = first.useRef(null);
+  let items = [width];
+  const tmp8 = obscured(first.useMemo(() => {
     const bound = Math.min(width, 1920);
     const obj = game(width[13]);
     const bestMediaProxySize = obj.getBestMediaProxySize(bound * game(width[13]).getDevicePixelRatio());
     const items = [bestMediaProxySize, bestMediaProxySize / 1.83];
     return items;
   }, items), 2);
-  const first1 = tmp8[0];
-  const callback2 = first1;
+  first1 = tmp8[0];
   const ImageItem = tmp10;
   const items1 = [game, first1, width];
-  callback = React.useCallback((nativeEvent) => {
+  const callback = first.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const memo = React.useMemo(() => {
+  const memo = first.useMemo(() => {
     if (null == game) {
       let items = [];
     } else {
@@ -193,30 +187,29 @@ export default function GameProfileMedia(game) {
       items = [];
       let arraySpreadResult = HermesBuiltin.arraySpread(trailers.map((application_id) => {
         let id;
-        const obj = { type: "trailer", url: callback(closure_2[14]).getAssetURL(application_id.application_id, application_id.id, 1920, "mp4") };
-        const obj2 = callback(closure_2[14]);
+        const obj = { type: "trailer", url: game(width[14]).getAssetURL(application_id.application_id, application_id.id, 1920, "mp4") };
+        const obj2 = game(width[14]);
         ({ application_id, id } = application_id);
-        obj.thumbnailUrl = callback(closure_2[14]).getAssetURL(application_id, id, Math.min(closure_2, 1920), "webp");
+        obj.thumbnailUrl = game(width[14]).getAssetURL(application_id, id, Math.min(outer1_2, 1920), "webp");
         return obj;
       }), 0);
       let screenshotUrls = game.screenshotUrls;
       if (null == screenshotUrls) {
         screenshotUrls = [];
       }
-      arraySpreadResult = HermesBuiltin.arraySpread(screenshotUrls.map((url) => ({ type: "image", url, thumbnailUrl: url.replace(/size=\d+/g, "size=" + closure_11) })), arraySpreadResult);
+      arraySpreadResult = HermesBuiltin.arraySpread(screenshotUrls.map((url) => ({ type: "image", url, thumbnailUrl: url.replace(/size=\d+/g, "size=" + outer1_11) })), arraySpreadResult);
     }
     return items;
   }, items1);
-  const TrailerItem = memo;
   const items2 = [first];
-  const memo1 = React.useMemo(() => {
+  const memo1 = first.useMemo(() => {
     const diff = first - trackAction(width[6]).space.PX_12;
     return Math.max(0, Math.min(366, diff - 2 * trackAction(width[6]).space.PX_16));
   }, items2);
   const items3 = [memo1];
-  let closure_15 = React.useMemo(() => Math.min(200, memo1 / 1.83), items3);
+  let closure_15 = first.useMemo(() => Math.min(200, memo1 / 1.83), items3);
   const items4 = [memo, first1, tmp8[1]];
-  let closure_16 = React.useMemo(() => memo.map((uri, mediaIndex) => {
+  let closure_16 = first.useMemo(() => memo.map((uri, mediaIndex) => {
     let obj = { uri: uri.url };
     let url;
     if ("trailer" === uri.type) {
@@ -226,22 +219,22 @@ export default function GameProfileMedia(game) {
     obj.mediaIndex = mediaIndex;
     obj.width = 1920;
     obj.height = 1080;
-    obj = { width: closure_11, height: closure_12, uri: uri.thumbnailUrl };
+    obj = { width: outer1_11, height: outer1_12, uri: uri.thumbnailUrl };
     obj.thumbnail = obj;
     obj.accessoryType = "embed";
     obj.disableDownload = true;
     return obj;
   }), items4);
   const items5 = [memo, first, memo1];
-  const memo2 = React.useMemo(() => {
+  const memo2 = first.useMemo(() => {
     const diff = first - memo1;
     let closure_0 = (diff - 2 * trackAction(width[6]).space.PX_16) / 2;
-    const trackAction = memo1 + trackAction(width[6]).space.PX_12;
+    let closure_1 = memo1 + trackAction(width[6]).space.PX_12;
     return memo.map((arg0, arg1) => Math.max(0, arg1 * closure_1 - closure_0));
   }, items5);
   const items6 = [memo2];
   const items7 = [memo2];
-  const callback1 = React.useCallback((nativeEvent) => {
+  const callback1 = first.useCallback((nativeEvent) => {
     if (0 !== memo2.length) {
       const x = nativeEvent.nativeEvent.contentOffset.x;
       const _Math2 = Math;
@@ -252,31 +245,31 @@ export default function GameProfileMedia(game) {
       if (1 < memo2.length) {
         do {
           let _Math = Math;
-          let tmp = closure_17;
-          let absolute1 = Math.abs(closure_17[num2] - x);
+          let tmp = memo2;
+          let absolute1 = Math.abs(memo2[num2] - x);
           if (absolute1 < absolute) {
             num = num2;
             absolute = absolute1;
           }
           num2 = num2 + 1;
-          let tmp4 = closure_17;
+          let tmp4 = memo2;
           num3 = num;
-        } while (num2 < closure_17.length);
+        } while (num2 < memo2.length);
       }
       callback2(num3);
     }
   }, items6);
-  let closure_18 = React.useCallback((arg0) => {
+  let closure_18 = first.useCallback((arg0) => {
     const current = ref.current;
     if (null != current) {
-      const obj = { 0: "_desired", 0: "hash", 9223372036854775807: "constructor", x: memo2[arg0] };
+      const obj = { x: memo2[arg0], y: 0, animated: false };
       current.scrollTo(obj);
     }
     callback2(arg0);
   }, items7);
   if (0 !== memo.length) {
     obj = { style: tmp.container, onLayout: callback };
-    obj = { ref };
+    obj = { ref, horizontal: true, showsHorizontalScrollIndicator: false, style: null, contentContainerStyle: null, decelerationRate: "fast" };
     ({ scrollView: obj3.style, scrollViewContent: obj3.contentContainerStyle } = tmp);
     obj.snapToOffsets = memo2;
     obj.snapToStart = false;
@@ -308,12 +301,12 @@ export default function GameProfileMedia(game) {
       } else {
         obj = { url: type.url, index, sources: closure_16, trackAction, width: memo1, height: closure_15, onScrollToIndex: closure_18, setMediaModalOpen: closure_9 };
         const _HermesInternal2 = HermesInternal;
-        tmpResult = ref(tmp10, obj, "" + type.url + "-" + index);
+        tmpResult = ref(closure_12, obj, "" + type.url + "-" + index);
       }
       return tmpResult;
     });
-    obj.children = <closure_6 {...obj} />;
-    tmp6 = <closure_5 {...obj} />;
+    obj.children = ref(closure_6, obj);
+    tmp6 = ref(closure_5, obj);
   }
   return tmp6;
 };

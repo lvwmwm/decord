@@ -1,11 +1,12 @@
 // Module ID: 311
 // Function ID: 4773
 // Name: horizontalOrDefault
-// Dependencies: []
+// Dependencies: [31]
 // Exports: horizontalOrDefault, initialNumToRenderOrDefault, maxToRenderPerBatchOrDefault, onEndReachedThresholdOrDefault, onStartReachedThresholdOrDefault, windowSizeOrDefault
 
 // Module 311 (horizontalOrDefault)
-importAll(dependencyMap[0]);
+import "result";
+
 
 export const horizontalOrDefault = function horizontalOrDefault(horizontal) {
   return null != horizontal && horizontal;

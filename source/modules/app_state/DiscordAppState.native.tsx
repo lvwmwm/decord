@@ -1,20 +1,20 @@
-// Module ID: 9449
-// Function ID: 73635
+// Module ID: 9456
+// Function ID: 73676
 // Name: canUIRequestGatewaySocket
-// Dependencies: [9451, 9466, 2]
+// Dependencies: [6651, 566, 2]
 
-// Module 9449 (canUIRequestGatewaySocket)
-import resolveAsset from "resolveAsset";
-import result2 from "result2";
+// Module 9456 (canUIRequestGatewaySocket)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
+const require = arg1;
 function canUIRequestGatewaySocket() {
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = resolveAsset;
+    obj = _isNativeReflectConstruct;
   }
   return "active" === obj.getState();
 }
-const result = result2.fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
+const result = require("set").fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
 
 export default {
   canUIRequestGatewaySocket() {
@@ -24,7 +24,7 @@ export default {
     return state.getState();
   },
   useCanUIRequestGatewaySocket() {
-    const items = [resolveAsset];
-    return arg1(dependencyMap[1]).useStateFromStores(items, () => callback(resolveAsset));
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3(outer1_2));
   }
 };

@@ -1,11 +1,10 @@
 // Module ID: 476
 // Function ID: 6166
 // Name: HELLO_KEY
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 476 (HELLO_KEY)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/app_database/modules/KvCacheVersionConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/app_database/modules/KvCacheVersionConstants.tsx");
 
 export const HELLO_KEY = "hello";
 export const VERSION_TO_SKIP_READING_THE_DATABASE_KEY = "version";

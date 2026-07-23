@@ -1,65 +1,66 @@
 // Module ID: 155
 // Function ID: 2423
 // Name: PerformanceEntry
-// Dependencies: []
+// Dependencies: [6, 7, 99, 100, 129]
 
 // Module 155 (PerformanceEntry)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[3]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import importDefaultResult from "_classPrivateFieldKey";
+import setPlatformObject from "setPlatformObject";
+
 let closure_3 = importDefaultResult("name");
 let closure_4 = importDefaultResult("entryType");
 let closure_5 = importDefaultResult("startTime");
 let closure_6 = importDefaultResult("duration");
-const tmp3 = () => {
+const tmp3 = (() => {
   class PerformanceEntry {
     constructor(arg0) {
       tmp = PerformanceEntry(this, PerformanceEntry);
-      definePropertyResult = Object.defineProperty(this, closure_3, { writable: true, value: undefined });
-      definePropertyResult1 = Object.defineProperty(this, closure_4, { writable: true, value: undefined });
-      definePropertyResult2 = Object.defineProperty(this, closure_5, { writable: true, value: undefined });
-      definePropertyResult3 = Object.defineProperty(this, closure_6, { writable: true, value: undefined });
-      ({ name: closure_2(undefined, this, closure_3)[closure_3], entryType: closure_2(undefined, this, closure_4)[closure_4], startTime: closure_2(undefined, this, closure_5)[closure_5], duration: closure_2(undefined, this, closure_6)[closure_6] } = arg0);
+      definePropertyResult = Object.defineProperty(this, outer1_3, { writable: true, value: undefined });
+      definePropertyResult1 = Object.defineProperty(this, outer1_4, { writable: true, value: undefined });
+      definePropertyResult2 = Object.defineProperty(this, outer1_5, { writable: true, value: undefined });
+      definePropertyResult3 = Object.defineProperty(this, outer1_6, { writable: true, value: undefined });
+      ({ name: outer1_2(undefined, this, outer1_3)[outer1_3], entryType: outer1_2(undefined, this, outer1_4)[outer1_4], startTime: outer1_2(undefined, this, outer1_5)[outer1_5], duration: outer1_2(undefined, this, outer1_6)[outer1_6] } = arg0);
       return;
     }
   }
-  let closure_0 = PerformanceEntry;
   let obj = {
     key: "name",
     get() {
-      return callback(this, closure_3)[closure_3];
+      return outer1_2(this, outer1_3)[outer1_3];
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "entryType",
     get() {
-      return callback(this, closure_4)[closure_4];
+      return outer1_2(this, outer1_4)[outer1_4];
     }
   };
   items[1] = obj;
   obj = {
     key: "startTime",
     get() {
-      return callback(this, closure_5)[closure_5];
+      return outer1_2(this, outer1_5)[outer1_5];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "duration",
     get() {
-      return callback(this, closure_6)[closure_6];
+      return outer1_2(this, outer1_6)[outer1_6];
     }
   };
   items[4] = {
     key: "toJSON",
     value: function toJSON() {
-      return { name: callback(this, closure_3)[closure_3], entryType: callback(this, closure_4)[closure_4], startTime: callback(this, closure_5)[closure_5], duration: callback(this, closure_6)[closure_6] };
+      return { name: outer1_2(this, outer1_3)[outer1_3], entryType: outer1_2(this, outer1_4)[outer1_4], startTime: outer1_2(this, outer1_5)[outer1_5], duration: outer1_2(this, outer1_6)[outer1_6] };
     }
   };
   return callback(PerformanceEntry, items);
-}();
-arg1(dependencyMap[4]).setPlatformObject(tmp3);
+})();
+setPlatformObject.setPlatformObject(tmp3);
 
 export const PerformanceEntry = tmp3;

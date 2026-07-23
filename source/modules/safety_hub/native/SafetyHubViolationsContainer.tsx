@@ -1,32 +1,49 @@
-// Module ID: 13544
-// Function ID: 102723
+// Module ID: 13658
+// Function ID: 104879
 // Name: SafetyHubViolationsHeader
-// Dependencies: []
+// Dependencies: [57, 31, 27, 11026, 7544, 653, 33, 4130, 689, 8474, 7576, 4126, 1212, 12506, 8525, 7543, 21, 13659, 7545, 4337, 11023, 1934, 11033, 566, 675, 11031, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 13544 (SafetyHubViolationsHeader)
+// Module 13658 (SafetyHubViolationsHeader)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import SafetyHubLinks from "SafetyHubLinks";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function SafetyHubViolationsHeader(count) {
   let onClick;
   let opened;
   let status;
   ({ onClick, opened, status } = count);
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { onPress: onClick, style: items };
-  const items = [tmp.header];
+  items = [tmp.header];
   obj = { style: items1 };
-  const items1 = [tmp.iconBackground];
+  items1 = [tmp.iconBackground];
   obj = {};
-  const colors = importDefault(dependencyMap[8]).colors;
+  const colors = importDefault(689).colors;
   obj.color = "active" === status ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED;
   obj.size = "xs";
-  obj.children = closure_11(arg1(dependencyMap[10]).WarningIcon, obj);
+  obj.children = closure_11(require(7576) /* WarningIcon */.WarningIcon, obj);
   const items2 = [closure_11(closure_6, obj), , ];
   const obj1 = { style: items3 };
-  const items3 = [tmp.headerTextContainer];
+  items3 = [tmp.headerTextContainer];
   const obj2 = { variant: "heading-sm/semibold" };
-  const intl = arg1(dependencyMap[12]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = arg1(dependencyMap[12]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if ("active" === status) {
     const obj3 = { count: str.toString() };
     let formatToPlainStringResult = formatToPlainString(t.IeV2oY, obj3);
@@ -35,83 +52,80 @@ function SafetyHubViolationsHeader(count) {
     formatToPlainStringResult = formatToPlainString(t.fZAHBT, obj4);
   }
   obj2.children = formatToPlainStringResult;
-  const items4 = [closure_11(arg1(dependencyMap[11]).Text, obj2), ];
-  const obj5 = {};
-  const intl2 = arg1(dependencyMap[12]).intl;
+  const items4 = [closure_11(require(4126) /* Text */.Text, obj2), ];
+  const obj5 = { variant: "text-xxs/normal", color: "text-muted" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
   const string = intl2.string;
-  const t2 = arg1(dependencyMap[12]).t;
+  const t2 = require(1212) /* getSystemLocale */.t;
   if ("active" === status) {
     let stringResult = string(t2.XJ2YVR);
   } else {
     stringResult = string(t2.SzGV0g);
   }
   obj5.children = stringResult;
-  items4[1] = closure_11(arg1(dependencyMap[11]).Text, obj5);
+  items4[1] = closure_11(require(4126) /* Text */.Text, obj5);
   obj1.children = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp15(tmp16[13]).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp15(12506).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp15(tmp16[14]).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp15(8525).ChevronSmallDownIcon;
   }
   const items5 = [tmp.chevron];
   items2[2] = closure_11(ChevronSmallDownIcon, { size: "md", style: items5 });
   obj.children = items2;
-  return closure_12(importDefault(dependencyMap[9]), obj);
+  return closure_12(importDefault(8474), obj);
 }
 function EmptyActiveState() {
   let obj = {};
-  const items = [callback4().emptyState];
+  const items = [_createForOfIteratorHelperLoose().emptyState];
   obj.style = items;
   obj = { variant: "heading-sm/extrabold" };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.children = intl.string(arg1(dependencyMap[12]).t.reLFaV);
-  const items1 = [callback2(arg1(dependencyMap[11]).Text, obj), ];
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.reLFaV);
+  const items1 = [callback(require(4126) /* Text */.Text, obj), ];
   obj = { variant: "text-xs/normal" };
-  const intl2 = arg1(dependencyMap[12]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[12]).t.ERdH1o);
-  items1[1] = callback2(arg1(dependencyMap[11]).Text, obj);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.ERdH1o);
+  items1[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items1;
-  return callback3(closure_6, obj);
+  return callback2(closure_6, obj);
 }
 function EmptyExpiredState() {
   let obj = {};
-  const items = [callback4().emptyState];
+  const items = [_createForOfIteratorHelperLoose().emptyState];
   obj.style = items;
   obj = { variant: "text-xs/normal" };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.children = intl.string(arg1(dependencyMap[12]).t.RV3AXf);
-  obj.children = callback2(arg1(dependencyMap[11]).Text, obj);
-  return callback2(closure_6, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.RV3AXf);
+  obj.children = callback(require(4126) /* Text */.Text, obj);
+  return callback(closure_6, obj);
 }
 function RelativeIncidentTime(timestamp) {
-  let obj = { style: callback4().incidentDate };
-  obj = { variant: "text-xs/medium", children: arg1(dependencyMap[15]).getClassificationRelativeIncidentTime(timestamp.timestamp) };
-  obj.children = callback2(arg1(dependencyMap[11]).Text, obj);
-  return callback2(closure_6, obj);
+  let obj = { style: _createForOfIteratorHelperLoose().incidentDate };
+  obj = { variant: "text-xs/medium", children: require(7543) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp) };
+  obj.children = callback(require(4126) /* Text */.Text, obj);
+  return callback(closure_6, obj);
 }
 function NewBadge() {
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [, ];
+  items = [, ];
   ({ incidentDate: arr[0], incidentDateNew: arr[1] } = tmp);
-  obj = { style: tmp.newText };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.children = intl.string(arg1(dependencyMap[12]).t.QKMRC4);
-  obj.children = callback2(arg1(dependencyMap[11]).Text, obj);
-  return callback2(closure_6, obj);
+  obj = { variant: "text-xs/medium", color: "text-overlay-light", style: tmp.newText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.QKMRC4);
+  obj.children = callback(require(4126) /* Text */.Text, obj);
+  return callback(closure_6, obj);
 }
 function ClassificationDetail(classification) {
   classification = classification.classification;
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   const id = classification.id;
-  const arg1 = id;
   const description = classification.description;
-  const importDefault = description;
   const guild_metadata = classification.guild_metadata;
-  const dependencyMap = guild_metadata;
-  let obj = importDefault(dependencyMap[16]);
-  let obj1 = arg1(dependencyMap[17]);
+  let obj = description(guild_metadata[16]);
+  let obj1 = id(guild_metadata[17]);
   const isNewClassification = obj1.useIsNewClassification(classification);
   const items = [description, guild_metadata];
   obj = {};
@@ -119,7 +133,7 @@ function ClassificationDetail(classification) {
   let prop = null;
   const memo = React.useMemo(() => {
     function hook(children) {
-      return callback2(callback(closure_2[11]).Text, { variant: "heading-md/extrabold", children }, arg1);
+      return outer2_11(id(guild_metadata[11]).Text, { variant: "heading-md/extrabold", children }, arg1);
     }
     let obj = { description, descriptionHook: hook };
     if (null != guild_metadata) {
@@ -162,91 +176,84 @@ function ClassificationDetail(classification) {
   obj = {
     onPress() {
       let obj = description(guild_metadata[19]);
-      obj = { classificationId: id, source: StandingTab.StandingTab };
+      obj = { classificationId: id, source: outer1_8.StandingTab };
       obj.pushLazy(id(guild_metadata[21])(guild_metadata[20], guild_metadata.paths), obj);
     }
   };
   obj1 = { style: items2 };
-  const items2 = [tmp.detailContainerInner];
+  items2 = [tmp.detailContainerInner];
   const extractTimestampResult = obj.extractTimestamp(id);
-  const tmp5 = callback2;
+  const tmp5 = callback;
   const tmp6 = closure_6;
-  const tmp8 = callback2;
+  const tmp8 = callback;
   if (isNewClassification) {
     let tmp12Result = tmp12(NewBadge, {});
   } else {
     const obj2 = { timestamp: extractTimestampResult };
     tmp12Result = tmp12(RelativeIncidentTime, obj2);
   }
-  const items3 = [tmp12Result, callback2(arg1(dependencyMap[11]).Text, { variant: "heading-md/normal", children: memo })];
+  const items3 = [tmp12Result, callback(id(guild_metadata[11]).Text, { variant: "heading-md/normal", children: memo })];
   obj1.children = items3;
   obj.children = closure_12(closure_6, obj1);
-  obj.children = tmp8(importDefault(dependencyMap[9]), obj);
+  obj.children = tmp8(description(guild_metadata[9]), obj);
   return tmp5(tmp6, obj);
 }
 class SafetyHubViolationsContainer {
   constructor(arg0) {
     ({ status, classifications } = global);
-    arg1 = classifications;
-    closure_8 = undefined;
-    tmp = closure_14();
-    tmp2 = closure_3(importAll.useState(false), 2);
+    c8 = undefined;
+    tmp = c14();
+    tmp2 = _slicedToArray(useState.useState(false), 2);
     first = tmp2[0];
-    importDefault = first;
-    closure_2 = tmp2[1];
-    tmp4 = closure_3(require("module_3"), 2);
+    closure_1 = first;
+    c2 = tmp2[1];
+    tmp4 = _slicedToArray(require("_isNativeReflectConstruct"), 2);
     first1 = tmp4[0];
-    closure_3 = first1;
-    importAll = tmp4[1];
-    obj = arg1(closure_2[22]);
+    _slicedToArray = first1;
+    useState = tmp4[1];
+    obj = require("useSafetyHubAccountStanding");
     safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
     Pressable = safetyHubAccountStanding;
-    obj2 = arg1(closure_2[23]);
+    obj2 = require("initialize");
     items = [];
-    items[0] = closure_7;
+    items[0] = c7;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f102734 = stateFromStores;
+    f104890 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
-    memo = importAll.useMemo(() => classifications.slice(0, first1), items1);
-    closure_7 = memo;
+    memo = useState.useMemo(() => classifications.slice(0, first1), items1);
+    c7 = memo;
     items2 = [, , , ];
     items2[0] = first;
     items2[1] = safetyHubAccountStanding.state;
     items2[2] = memo;
     items2[3] = stateFromStores;
-    effect = importAll.useEffect(() => {
+    effect = useState.useEffect(() => {
       if (first) {
-        let obj = first(closure_2[24]);
-        obj = {};
-        obj.action = obj.ViewViolationsDropdown;
-        obj.account_standing = safetyHubAccountStanding.state;
-        obj.classification_ids = memo.map((id) => Number(id.id));
-        obj.source = 24.StandingTab;
-        obj.is_violative_content_shown = false;
-        obj.is_dsa_eligible = stateFromStores;
-        obj.track(constants.SAFETY_HUB_ACTION, obj);
+        let obj = first(675);
+        obj = { action: outer1_9.ViewViolationsDropdown, account_standing: safetyHubAccountStanding.state, classification_ids: memo.map((id) => Number(id.id)), source: 24.StandingTab, is_violative_content_shown: false, is_dsa_eligible: stateFromStores };
+        obj.track(outer1_10.SAFETY_HUB_ACTION, obj);
       }
     }, items2);
     num = 3;
     if (classifications.length - memo.length <= 3) {
       num = classifications.length - memo.length;
     }
-    closure_8 = num;
+    c8 = num;
     obj = { style: items3 };
     items3 = [];
     items3[0] = tmp.container;
     obj1 = {
       status,
       onClick() {
-            return callback((arg0) => !arg0);
+            return dependencyMap((arg0) => !arg0);
           }
     };
     obj1.opened = first;
     obj1.count = classifications.length;
     tmp9 = jsxs;
-    tmp10 = f102734;
+    tmp10 = f104890;
     items4 = [, ];
     items4[0] = jsx(SafetyHubViolationsHeader, obj1);
     if (first) {
@@ -257,10 +264,10 @@ class SafetyHubViolationsContainer {
       items5[0] = tmp.separator;
       obj3.style = items5;
       tmp11 = jsxs;
-      tmp12 = f102734;
+      tmp12 = f104890;
       items6 = [, , , , ];
-      items6[0] = jsx(f102734, obj3);
-      tmp14 = memo.length > 0 && memo.map((classification) => callback3(closure_20, { classification }, classification.id));
+      items6[0] = jsx(f104890, obj3);
+      tmp14 = memo.length > 0 && memo.map((classification) => outer1_11(outer1_20, { classification }, classification.id));
       items6[1] = tmp14;
       tmp15 = memo.length < classifications.length;
       if (tmp15) {
@@ -268,15 +275,15 @@ class SafetyHubViolationsContainer {
         tmp17 = Fragment;
         obj4 = {};
         tmp18 = jsx;
-        tmp19 = f102734;
+        tmp19 = f104890;
         obj5 = {};
         items7 = [];
         items7[0] = tmp.separator;
         obj5.style = items7;
         items8 = [, ];
-        items8[0] = jsx(f102734, obj5);
+        items8[0] = jsx(f104890, obj5);
         tmp20 = jsx;
-        tmp21 = f102734;
+        tmp21 = f104890;
         obj6 = {};
         items9 = [];
         items9[0] = tmp.moreButtonContainer;
@@ -288,23 +295,23 @@ class SafetyHubViolationsContainer {
         items10[0] = tmp.moreButton;
         obj7.style = items10;
         obj7.onPress = function onPress() {
-          return callback2((arg0) => arg0 + closure_8);
+          return callback((arg0) => arg0 + outer1_8);
         };
         tmp24 = jsx;
-        tmp25 = arg1;
-        tmp26 = closure_2;
+        tmp25 = classifications;
+        tmp26 = c2;
         num2 = 11;
         obj8 = {};
         str = "heading-sm/semibold";
         obj8.variant = "heading-sm/semibold";
         num3 = 12;
-        intl = arg1(closure_2[12]).intl;
+        intl = require("getSystemLocale").intl;
         obj9 = {};
         obj9.nextPageSize = num;
-        obj8.children = intl.format(arg1(closure_2[12]).t.9Ml56H, obj9);
-        obj7.children = jsx(arg1(closure_2[11]).Text, obj8);
+        obj8.children = intl.format(require("getSystemLocale").t["9Ml56H"], obj9);
+        obj7.children = jsx(require("Text").Text, obj8);
         obj6.children = jsx(Pressable, obj7);
-        items8[1] = jsx(f102734, obj6);
+        items8[1] = jsx(f104890, obj6);
         obj4.children = items8;
         tmp15 = jsxs(Fragment, obj4);
       }
@@ -339,65 +346,57 @@ class SafetyHubViolationsContainer {
     return tmp9(tmp10, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ Pressable: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[2]);
-({ SafetyHubAnalyticsActionSource: closure_8, SafetyHubAnalyticsActions: closure_9 } = arg1(dependencyMap[4]));
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const tmp3 = arg1(dependencyMap[4]);
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { "Bool(false)": 1, "Bool(false)": 162, "Bool(false)": -42, marginTop: importDefault(dependencyMap[8]).space.PX_12, gap: importDefault(dependencyMap[8]).space.PX_12 };
-obj.connectedContainer = obj;
-const tmp4 = arg1(dependencyMap[6]);
-obj.container = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, padding: importDefault(dependencyMap[8]).space.PX_8, width: "100%" };
-const obj2 = { muted: "none", SUSPICIOUS_CHANGE_EMAIL_REASONS: 8, _totalAmount: "oneTimeCode", maxWidth: "stretch", useFramePreviewOverrideStore: 1, gap: importDefault(dependencyMap[8]).space.PX_16 };
-obj.header = obj2;
-const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, padding: importDefault(dependencyMap[8]).space.PX_8, width: "100%" };
-obj.detailContainerOuter = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.md, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: 10 };
-const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.md, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: 10 };
-obj.detailContainerOuterNew = { borderColor: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
-const obj4 = { borderColor: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
-obj.detailContainerInner = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj6 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
-obj.iconBackground = obj6;
-obj.chevron = { marginLeft: "auto" };
-const obj5 = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.incidentDate = { alignSelf: "flex-start", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[8]).radii.md, paddingVertical: importDefault(dependencyMap[8]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_8 };
-const obj7 = { alignSelf: "flex-start", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[8]).radii.md, paddingVertical: importDefault(dependencyMap[8]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_8 };
-obj.incidentDateNew = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, color: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-obj.newText = { textTransform: "capitalize" };
-const obj9 = { "Null": true, "Null": true, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[8]).radii.md, gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_8, paddingTop: importDefault(dependencyMap[8]).space.PX_24, paddingBottom: importDefault(dependencyMap[8]).space.PX_24 };
-obj.emptyState = obj9;
-const obj8 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND, color: importDefault(dependencyMap[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-obj.separator = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
-obj.moreButtonContainer = {};
-const obj10 = { backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
-obj.moreButton = { borderBottomEndRadius: importDefault(dependencyMap[8]).radii.xs, borderBottomStartRadius: importDefault(dependencyMap[8]).radii.xs, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
-obj.headerTextContainer = { marginLeft: 250, marginRight: true, getVoiceStateChannelSummaryFromVoiceStates: true };
-let closure_14 = obj.createStyles(obj);
-const obj11 = { borderBottomEndRadius: importDefault(dependencyMap[8]).radii.xs, borderBottomStartRadius: importDefault(dependencyMap[8]).radii.xs, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/safety_hub/native/SafetyHubViolationsContainer.tsx");
+({ Pressable: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ SafetyHubAnalyticsActionSource: closure_8, SafetyHubAnalyticsActions: closure_9 } = SafetyHubLinks);
+({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: 36, gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.connectedContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.container = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, padding: require("_createForOfIteratorHelperLoose").space.PX_8, width: "100%" };
+let obj2 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16, width: "100%" };
+_createForOfIteratorHelperLoose.header = obj2;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, padding: require("_createForOfIteratorHelperLoose").space.PX_8, width: "100%" };
+_createForOfIteratorHelperLoose.detailContainerOuter = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, padding: require("_createForOfIteratorHelperLoose").space.PX_12, marginTop: 10 };
+let obj4 = { borderColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, borderWidth: 1, borderStyle: "solid" };
+_createForOfIteratorHelperLoose.detailContainerOuterNew = obj4;
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, padding: require("_createForOfIteratorHelperLoose").space.PX_12, marginTop: 10 };
+_createForOfIteratorHelperLoose.detailContainerInner = { display: "flex", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj6 = { display: "flex", borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", padding: 6 };
+_createForOfIteratorHelperLoose.iconBackground = obj6;
+_createForOfIteratorHelperLoose.chevron = { marginLeft: "auto" };
+let obj5 = { display: "flex", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.incidentDate = { alignSelf: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj7 = { alignSelf: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.incidentDateNew = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, color: require("_createForOfIteratorHelperLoose").colors.CONTROL_PRIMARY_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.newText = { textTransform: "capitalize" };
+const obj9 = { display: "flex", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.emptyState = obj9;
+const obj10 = { height: 1, width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: 10 };
+_createForOfIteratorHelperLoose.separator = obj10;
+_createForOfIteratorHelperLoose.moreButtonContainer = { display: "flex", alignItems: "center", justifyContent: "center" };
+const obj11 = { display: "flex", alignItems: "center", justifyContent: "center", borderBottomEndRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderBottomStartRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, height: 29, width: 207 };
+_createForOfIteratorHelperLoose.moreButton = obj11;
+_createForOfIteratorHelperLoose.headerTextContainer = { flexShrink: 0, flexGrow: 1, gap: 2 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj8 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, color: require("_createForOfIteratorHelperLoose").colors.CONTROL_PRIMARY_TEXT_DEFAULT };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/safety_hub/native/SafetyHubViolationsContainer.tsx");
 
 export default SafetyHubViolationsContainer;
 export const ConnectedSafetyHubViolationsContainer = function ConnectedSafetyHubViolationsContainer() {
-  let obj = arg1(dependencyMap[25]);
+  let obj = require(11031) /* useSafetyHubClassifications */;
   const activeSafetyHubClassifications = obj.useActiveSafetyHubClassifications();
-  let obj1 = arg1(dependencyMap[25]);
+  let obj1 = require(11031) /* useSafetyHubClassifications */;
   const expiredSafetyHubClassifications = obj1.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     obj = {};
     const items = [tmp.connectedContainer];
     obj.style = items;
     obj = { status: "active", classifications: activeSafetyHubClassifications };
-    const items1 = [callback2(SafetyHubViolationsContainer, obj), ];
+    const items1 = [callback(SafetyHubViolationsContainer, obj), ];
     obj1 = { status: "expired", classifications: expiredSafetyHubClassifications };
-    items1[1] = callback2(SafetyHubViolationsContainer, obj1);
+    items1[1] = callback(SafetyHubViolationsContainer, obj1);
     obj.children = items1;
-    let tmp2 = callback3(closure_6, obj);
+    let tmp2 = callback2(closure_6, obj);
   } else {
     tmp2 = null;
   }

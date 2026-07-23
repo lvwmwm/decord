@@ -1,50 +1,46 @@
-// Module ID: 8871
-// Function ID: 69933
+// Module ID: 8878
+// Function ID: 69974
 // Name: useIsUserSecureFramesVerified
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [1194, 4202, 8879, 8916, 566, 8919, 4194, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
-// Module 8871 (useIsUserSecureFramesVerified)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 8878 (useIsUserSecureFramesVerified)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesVerified.tsx");
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesVerified.tsx");
 
 export const useIsUserSecureFramesVerified = function useIsUserSecureFramesVerified(channelId) {
   const userId = channelId.userId;
-  const arg1 = userId;
-  const isSecureFramesUIEnabled = arg1(dependencyMap[3]).useIsSecureFramesUIEnabled({ channelId: channelId.channelId });
-  const dependencyMap = isSecureFramesUIEnabled;
-  const obj = arg1(dependencyMap[3]);
-  const items = [closure_4, __exportStarResult1, closure_3];
+  isSecureFramesUIEnabled = userId(isSecureFramesUIEnabled[3]).useIsSecureFramesUIEnabled({ channelId: channelId.channelId });
+  const obj = userId(isSecureFramesUIEnabled[3]);
+  const items = [closure_4, _isNativeReflectConstruct, closure_3];
   const items1 = [isSecureFramesUIEnabled, userId];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  return userId(isSecureFramesUIEnabled[4]).useStateFromStores(items, () => {
     let isUserConnectedResult = null != userId && isSecureFramesUIEnabled;
     if (isUserConnectedResult) {
-      isUserConnectedResult = userConnected.isUserConnected(userId);
+      isUserConnectedResult = outer1_3.isUserConnected(userId);
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = id.getId() !== userId;
+      isUserConnectedResult = outer1_2.getId() !== userId;
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = userVerified.isUserVerified(userId);
+      isUserConnectedResult = outer1_4.isUserVerified(userId);
     }
     return isUserConnectedResult;
   }, items1);
 };
 export const useIsStreamSecureFramesVerified = function useIsStreamSecureFramesVerified(channelId) {
   const streamKey = channelId.streamKey;
-  const arg1 = streamKey;
-  const isSecureFramesUIEnabled = arg1(dependencyMap[3]).useIsSecureFramesUIEnabled({ channelId: channelId.channelId });
-  const dependencyMap = isSecureFramesUIEnabled;
-  const obj = arg1(dependencyMap[3]);
-  const isStreamRTCConnectionEmpty = arg1(dependencyMap[5]).useIsStreamRTCConnectionEmpty(streamKey);
-  let __exportStarResult1 = isStreamRTCConnectionEmpty;
-  const obj2 = arg1(dependencyMap[5]);
-  const items = [closure_4, __exportStarResult1];
+  isSecureFramesUIEnabled = streamKey(isSecureFramesUIEnabled[3]).useIsSecureFramesUIEnabled({ channelId: channelId.channelId });
+  const obj = streamKey(isSecureFramesUIEnabled[3]);
+  const isStreamRTCConnectionEmpty = streamKey(isSecureFramesUIEnabled[5]).useIsStreamRTCConnectionEmpty(streamKey);
+  const obj2 = streamKey(isSecureFramesUIEnabled[5]);
+  const items = [closure_4, isStreamRTCConnectionEmpty];
   const items1 = [isStreamRTCConnectionEmpty, isSecureFramesUIEnabled, streamKey];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  return streamKey(isSecureFramesUIEnabled[4]).useStateFromStores(items, () => {
     if (isSecureFramesUIEnabled) {
       if (!isStreamRTCConnectionEmpty) {
         if (null == streamKey) {
@@ -53,7 +49,7 @@ export const useIsStreamSecureFramesVerified = function useIsStreamSecureFramesV
           const id = isStreamRTCConnectionEmpty.getId();
           let isStreamVerifiedResult = streamKey(isSecureFramesUIEnabled[6]).decodeStreamKey(streamKey).ownerId !== id;
           if (isStreamVerifiedResult) {
-            isStreamVerifiedResult = streamVerified.isStreamVerified(streamKey);
+            isStreamVerifiedResult = outer1_4.isStreamVerified(streamKey);
           }
           return isStreamVerifiedResult;
         }
@@ -63,18 +59,16 @@ export const useIsStreamSecureFramesVerified = function useIsStreamSecureFramesV
   }, items1);
 };
 export const useIsCallSecureFramesVerified = function useIsCallSecureFramesVerified(channelId) {
-  const isSecureFramesUIEnabled = arg1(dependencyMap[3]).useIsSecureFramesUIEnabled({ channelId: channelId.channelId });
-  const arg1 = isSecureFramesUIEnabled;
-  const obj = arg1(dependencyMap[3]);
-  const isCallRTCConnectionEmpty = arg1(dependencyMap[5]).useIsCallRTCConnectionEmpty();
-  const dependencyMap = isCallRTCConnectionEmpty;
-  const obj2 = arg1(dependencyMap[5]);
+  isSecureFramesUIEnabled = isSecureFramesUIEnabled(isCallRTCConnectionEmpty[3]).useIsSecureFramesUIEnabled({ channelId: channelId.channelId });
+  const obj = isSecureFramesUIEnabled(isCallRTCConnectionEmpty[3]);
+  isCallRTCConnectionEmpty = isSecureFramesUIEnabled(isCallRTCConnectionEmpty[5]).useIsCallRTCConnectionEmpty();
+  const obj2 = isSecureFramesUIEnabled(isCallRTCConnectionEmpty[5]);
   const items = [closure_4];
   const items1 = [isCallRTCConnectionEmpty, isSecureFramesUIEnabled];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  return isSecureFramesUIEnabled(isCallRTCConnectionEmpty[4]).useStateFromStores(items, () => {
     let isCallVerifiedResult = !(!isSecureFramesUIEnabled || isCallRTCConnectionEmpty);
     if (isCallVerifiedResult) {
-      isCallVerifiedResult = callVerified.isCallVerified();
+      isCallVerifiedResult = outer1_4.isCallVerified();
     }
     return isCallVerifiedResult;
   }, items1);

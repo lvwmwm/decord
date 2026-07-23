@@ -1,18 +1,22 @@
-// Module ID: 11161
-// Function ID: 86786
+// Module ID: 11171
+// Function ID: 86836
 // Name: handleApplicationSelected
-// Dependencies: []
+// Dependencies: [31, 1348, 1849, 1455, 653, 4566, 4324, 6755, 11172, 6753, 1881, 7020, 1831, 7919, 1392, 10884, 9383, 11177, 5470, 10525, 4099, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11161 (handleApplicationSelected)
-let closure_4 = importAll(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-({ APP_LAUNCHER_BUILT_IN_SECTION_ICON: closure_7, AppLauncherRouteName: closure_8 } = arg1(dependencyMap[3]));
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const BuiltInSectionId = arg1(dependencyMap[5]).BuiltInSectionId;
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeUtils.tsx");
+// Module 11171 (handleApplicationSelected)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import { AnalyticEvents } from "ME";
+import { BuiltInSectionId } from "TRUE_OPTION_NAME";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ APP_LAUNCHER_BUILT_IN_SECTION_ICON: closure_7, AppLauncherRouteName: closure_8 } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeUtils.tsx");
 
 export const handleApplicationSelected = function handleApplicationSelected(entrypoint) {
   let _location;
@@ -30,12 +34,12 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
     navigates = true;
   }
   entrypoint = entrypoint.entrypoint;
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(4324) /* _createForOfIteratorHelperLoose */;
   obj = { location: _location };
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    let APP = arg1(dependencyMap[7]).ApplicationCommandTriggerSections.BUILT_IN;
+    let APP = require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = arg1(dependencyMap[7]).ApplicationCommandTriggerSections.APP;
+    APP = require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.APP;
   }
   obj.section = APP;
   const id = application.id;
@@ -68,8 +72,8 @@ export const handleViewAllSelected = function handleViewAllSelected(arg0) {
   let title;
   ({ navigation, sectionName, applications, sectionItemType, commands } = arg0);
   ({ location: _location, context, sectionOverallPosition, sectionDescriptors, title, promotedApplicationIds } = arg0);
-  let obj = arg1(dependencyMap[6]);
-  obj = { section_name: sectionName, num: sectionItemType === arg1(dependencyMap[8]).SectionItemType.APPS ? applications.length : commands.length };
+  let obj = require(4324) /* _createForOfIteratorHelperLoose */;
+  obj = { section_name: sectionName, num: sectionItemType === require(11172) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
   obj.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_SECTION_VIEW_MORE, obj);
   navigation.navigate(constants.APP_LIST_VIEW, { analyticsLocation: _location, context, sectionName, sectionOverallPosition, applications, sectionItemType, commands, sectionDescriptors, title, promotedApplicationIds });
 };
@@ -87,13 +91,12 @@ export const handleApplicationCommandSelected = function handleApplicationComman
   let sectionDescriptors;
   let sectionName;
   ({ location: _location, context, command } = arg0);
-  const arg1 = command;
   ({ section, sectionDescriptors, query, navigation, installOnDemand, sectionName, entrypoint } = arg0);
   ({ searchResultsPosition, onCommandExecuted } = arg0);
-  let obj = arg1(dependencyMap[9]);
-  obj = { command, location: _location, triggerSection: arg1(dependencyMap[9]).getCommandTriggerSection(section), queryLength: query.length, sectionName, query, searchResultsPosition, source: entrypoint };
+  let obj = command(6753);
+  obj = { command, location: _location, triggerSection: command(6753).getCommandTriggerSection(section), queryLength: query.length, sectionName, query, searchResultsPosition, source: entrypoint };
   obj.trackCommandSelected(obj);
-  if (command.type === arg1(dependencyMap[10]).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
+  if (command.type === command(1881).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
     obj = { application: section.application, context, installOnDemand, sectionName, entrypoint };
     navigation.navigate(constants.APPLICATION_VIEW, obj);
   } else {
@@ -106,10 +109,10 @@ export const handleApplicationCommandSelected = function handleApplicationComman
       }
     }
     if ("channel" === context.type) {
-      const result = importAll(dependencyMap[11]).setAppLauncherActiveCommand(context.channel.id, command);
+      const result = importAll(7020).setAppLauncherActiveCommand(context.channel.id, command);
       const obj1 = { command, section: tmp4, context, installOnDemand, sectionName, analyticsLocation: _location, onCommandExecuted };
       navigation.navigate(constants.COMMAND_VIEW, obj1);
-      const obj4 = importAll(dependencyMap[11]);
+      const obj4 = importAll(7020);
     }
   }
 };
@@ -117,10 +120,9 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
   let prefilledValues;
   let roles;
   option = option.option;
-  const arg1 = option;
   ({ prefilledValues, roles } = option);
-  let importDefault;
   let found;
+  found = undefined;
   if (null != prefilledValues) {
     found = prefilledValues.find((name) => {
       let tmp = name.name === option.name;
@@ -130,9 +132,8 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
       return tmp;
     });
   }
-  importDefault = found;
   const type = option.type;
-  if (arg1(dependencyMap[10]).ApplicationCommandOptionType.BOOLEAN === type) {
+  if (option(1881).ApplicationCommandOptionType.BOOLEAN === type) {
     if (null != found) {
       let obj = { type: "text" };
       const _String8 = String;
@@ -141,14 +142,14 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
       const items = [obj];
       let items1 = items;
     } else {
-      items1 = [{}];
+      items1 = [{ type: "text", text: "false" }];
     }
     return items1;
   } else {
-    if (arg1(dependencyMap[10]).ApplicationCommandOptionType.STRING !== type) {
-      if (arg1(dependencyMap[10]).ApplicationCommandOptionType.INTEGER !== type) {
-        if (arg1(dependencyMap[10]).ApplicationCommandOptionType.NUMBER !== type) {
-          if (arg1(dependencyMap[10]).ApplicationCommandOptionType.CHANNEL === type) {
+    if (option(1881).ApplicationCommandOptionType.STRING !== type) {
+      if (option(1881).ApplicationCommandOptionType.INTEGER !== type) {
+        if (option(1881).ApplicationCommandOptionType.NUMBER !== type) {
+          if (option(1881).ApplicationCommandOptionType.CHANNEL === type) {
             if (null != found) {
               const _String5 = String;
               if (null != channel.getChannel(String(found.value))) {
@@ -160,8 +161,8 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items3;
             }
-            items3 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
-          } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.USER === type) {
+            items3 = [{ type: "text", text: "" }];
+          } else if (option(1881).ApplicationCommandOptionType.USER === type) {
             if (null != found) {
               const _String3 = String;
               if (null != authStore.getUser(String(found.value))) {
@@ -173,8 +174,8 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items5;
             }
-            items5 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
-          } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.ROLE === type) {
+            items5 = [{ type: "text", text: "" }];
+          } else if (option(1881).ApplicationCommandOptionType.ROLE === type) {
             if (null != found) {
               if ("string" === typeof found.value) {
                 if (found.value in roles) {
@@ -185,11 +186,11 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 return items7;
               }
             }
-            items7 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
-          } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.MENTIONABLE === type) {
+            items7 = [{ type: "text", text: "" }];
+          } else if (option(1881).ApplicationCommandOptionType.MENTIONABLE === type) {
             if (null != found) {
               if (found.value === option.guildId) {
-                const items8 = [{}];
+                const items8 = [{ type: "textMention", text: "@everyone" }];
                 return items8;
               } else {
                 if ("string" === typeof found.value) {
@@ -209,10 +210,10 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 }
               }
             }
-            const items11 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
+            const items11 = [{ type: "text", text: "" }];
             return items11;
           } else {
-            const items12 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
+            const items12 = [{ type: "text", text: "" }];
             return items12;
           }
         }
@@ -236,16 +237,16 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
         }
       }
     }
-    const items15 = [{ -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" }];
+    const items15 = [{ type: "text", text: "" }];
     return items15;
   }
 };
 export const getAppLauncherIconSource = function getAppLauncherIconSource(application) {
   if (null == application) {
-    let applicationIconSource = importDefault(dependencyMap[12]);
+    let applicationIconSource = importDefault(1831);
   } else {
-    const obj2 = arg1(dependencyMap[13]);
-    const obj3 = importDefault(dependencyMap[14]);
+    const obj2 = require(7919) /* _createForOfIteratorHelperLoose */;
+    const obj3 = importDefault(1392);
     if (isRealApplicationResult) {
       const obj = {};
       ({ id: obj.id, icon: obj.icon, bot: obj.bot } = application);
@@ -254,20 +255,19 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
     } else {
       applicationIconSource = obj3.makeSource(closure_7);
     }
-    const isRealApplicationResult = arg1(dependencyMap[13]).isRealApplication(application);
+    isRealApplicationResult = require(7919) /* _createForOfIteratorHelperLoose */.isRealApplication(application);
   }
   return applicationIconSource;
 };
 export const useLogAppLauncherEmptyStateView = function useLogAppLauncherEmptyStateView(COMMAND_NOT_FOUND, query) {
-  query = COMMAND_NOT_FOUND;
-  const entrypoint = query(dependencyMap[15]).useAppLauncherContext().entrypoint;
-  const importDefault = entrypoint;
+  const _require = COMMAND_NOT_FOUND;
+  const entrypoint = _require(10884).useAppLauncherContext().entrypoint;
   const items = [COMMAND_NOT_FOUND, query, entrypoint];
   const effect = React.useEffect(() => {
-    if (null != arg0) {
-      let obj = arg0(closure_3[6]);
-      obj = { type: arg0, source: entrypoint };
-      obj.trackWithMetadata(constants.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, obj);
+    if (null != COMMAND_NOT_FOUND) {
+      let obj = COMMAND_NOT_FOUND(outer1_3[6]);
+      obj = { type: COMMAND_NOT_FOUND, source: entrypoint };
+      obj.trackWithMetadata(outer1_9.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, obj);
     }
   }, items);
 };
@@ -275,30 +275,30 @@ export const useHandleActivityItemSelected = function useHandleActivityItemSelec
   let applicationId;
   let context;
   let entrypoint;
+  let importAll;
+  let importDefault;
   let sectionName;
   ({ applicationId, context, sectionName } = fetchesApplication);
-  const arg1 = sectionName;
-  ({ onActivityItemSelected: closure_1, location: closure_2, entrypoint } = fetchesApplication);
-  const dependencyMap = entrypoint;
+  ({ onActivityItemSelected: importDefault, location: importAll, entrypoint } = fetchesApplication);
   let flag = fetchesApplication.fetchesApplication;
   if (flag === undefined) {
     flag = true;
   }
-  let closure_4;
-  let closure_5;
-  let obj = arg1(dependencyMap[16]);
+  let result;
+  let _isNativeReflectConstruct;
+  let obj = sectionName(entrypoint[16]);
   const analyticsContext = obj.useAnalyticsContext();
-  let obj1 = arg1(dependencyMap[17]);
+  let obj1 = sectionName(entrypoint[17]);
   obj = { context, applicationId, fetchesApplication: flag };
-  closure_4 = obj1.useActivityAction(obj);
-  const getOrFetchApplication = arg1(dependencyMap[18]).useGetOrFetchApplication(applicationId, flag);
-  const obj4 = arg1(dependencyMap[18]);
-  const entrypointParams = arg1(dependencyMap[15]).useAppLauncherContext().entrypointParams;
-  const obj5 = arg1(dependencyMap[15]);
+  result = obj1.useActivityAction(obj);
+  const getOrFetchApplication = sectionName(entrypoint[18]).useGetOrFetchApplication(applicationId, flag);
+  const obj4 = sectionName(entrypoint[18]);
+  const entrypointParams = sectionName(entrypoint[15]).useAppLauncherContext().entrypointParams;
+  const obj5 = sectionName(entrypoint[15]);
   obj = {
     application: getOrFetchApplication,
     context,
-    embeddedActivitiesManager: importDefault(dependencyMap[19]),
+    embeddedActivitiesManager: importDefault(entrypoint[19]),
     locationObject: analyticsContext.location,
     onActivityItemSelectedProp(applicationId) {
       applicationId = applicationId.applicationId;
@@ -306,11 +306,11 @@ export const useHandleActivityItemSelected = function useHandleActivityItemSelec
         let obj = { applicationId };
         callback(obj);
       }
-      obj = { location: closure_2, application_id: applicationId, section_name: sectionName, action: closure_4, source: entrypoint };
-      sectionName(entrypoint[6]).trackWithMetadata(constants.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, obj);
+      obj = { location: closure_2, application_id: applicationId, section_name: sectionName, action: result, source: entrypoint };
+      sectionName(entrypoint[6]).trackWithMetadata(outer1_9.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, obj);
     },
     launchingComponentId: fetchesApplication.launchingComponentId,
-    commandOrigin: arg1(dependencyMap[7]).CommandOrigin.APPLICATION_LAUNCHER,
+    commandOrigin: sectionName(entrypoint[7]).CommandOrigin.APPLICATION_LAUNCHER,
     sectionName,
     source: entrypoint,
     fetchesApplication: flag
@@ -325,7 +325,7 @@ export const useHandleActivityItemSelected = function useHandleActivityItemSelec
     referrerId = entrypointParams.referrerId;
   }
   obj.referrerId = referrerId;
-  closure_5 = arg1(dependencyMap[17]).useOnActivityItemSelected(obj);
+  _isNativeReflectConstruct = sectionName(entrypoint[17]).useOnActivityItemSelected(obj);
   obj1 = {
     handleActivityItemSelected() {
       const result = sectionName(entrypoint[20]).triggerHapticFeedback(sectionName(entrypoint[20]).HapticFeedbackTypes.IMPACT_MEDIUM);

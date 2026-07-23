@@ -1,12 +1,11 @@
-// Module ID: 10513
-// Function ID: 82086
+// Module ID: 10523
+// Function ID: 82136
 // Name: shouldOpenActivityInPopoutWindow
-// Dependencies: []
+// Dependencies: [2]
 // Exports: shouldOpenActivityInPopoutWindow, wrapPreemptiveActivityPopout
 
-// Module 10513 (shouldOpenActivityInPopoutWindow)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/activities/ActivityPopoutUtils.native.tsx");
+// Module 10523 (shouldOpenActivityInPopoutWindow)
+const result = require("set").fileFinishedImporting("modules/activities/ActivityPopoutUtils.native.tsx");
 
 export function shouldOpenActivityInPopoutWindow() {
   return false;

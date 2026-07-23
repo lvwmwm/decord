@@ -1,35 +1,37 @@
-// Module ID: 11727
-// Function ID: 91080
-// Dependencies: []
+// Module ID: 11737
+// Function ID: 91129
+// Dependencies: [9227, 4337, 11738, 1934, 11733, 2]
 
-// Module 11727
-const _module = require(dependencyMap[0]);
-({ CreateGuildModalStates: closure_3, IN_APP_GUILD_TEMPLATES_MODAL_KEY: closure_4 } = _module);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/create_guild/native/CreateGuildModalActionCreators.tsx");
+// Module 11737
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
+
+let closure_3;
+let closure_4;
+({ CreateGuildModalStates: closure_3, IN_APP_GUILD_TEMPLATES_MODAL_KEY: closure_4 } = NUXGuildTemplatesAnalytics);
+const result = require("getScreens").fileFinishedImporting("modules/create_guild/native/CreateGuildModalActionCreators.tsx");
 
 export default {
   openCreateGuildModal(onSuccess) {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(4337);
     obj = { onSuccess };
-    obj.pushLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(11738, dependencyMap.paths), obj, closure_4);
   },
   closeCreateGuildModal() {
-    importDefault(dependencyMap[1]).popWithKey(closure_4);
+    importDefault(4337).popWithKey(closure_4);
   },
   closeCreateGuildOnboardingModal() {
-    importDefault(dependencyMap[1]).popWithKey(closure_4);
-    const obj = importDefault(dependencyMap[1]);
-    require(dependencyMap[4]).nextOnboardingStep({});
+    importDefault(4337).popWithKey(closure_4);
+    const obj = importDefault(4337);
+    require(11733) /* _startContactSyncForDiscoverability */.nextOnboardingStep({});
   },
   openGuildInviteScreen(stateFromStores1) {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(4337);
     obj = { channel: stateFromStores1 };
-    obj.pushLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(11738, dependencyMap.paths), obj, closure_4);
   },
   openGuildJoinServerScreen() {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(4337);
     obj = { initialState: constants.JOIN_SERVER };
-    obj.pushLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(11738, dependencyMap.paths), obj, closure_4);
   }
 };

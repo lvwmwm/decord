@@ -1,53 +1,64 @@
-// Module ID: 11085
-// Function ID: 86214
+// Module ID: 11095
+// Function ID: 86264
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [10442, 6923, 7080, 7622, 653, 21, 9482, 11096, 1212, 3800, 7663, 9965, 5650, 2]
 // Exports: default
 
-// Module 11085 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11095 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import Changeset from "Changeset";
+import { MessageFlags } from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,31 +95,35 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ Changeset: closure_6, LoadingType: closure_7, RowType: closure_8, SeparatorType: closure_9 } = arg1(dependencyMap[3]));
-const MessageFlags = arg1(dependencyMap[4]).MessageFlags;
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/messages/native/createChannelStream.tsx");
+({ Changeset: closure_6, LoadingType: closure_7, RowType: closure_8, SeparatorType: closure_9 } = Changeset);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/createChannelStream.tsx");
 
 export default function createChannelStream(forceRender) {
+  let MessageFlags;
+  let _arrayLikeToArray;
+  let _createForOfIteratorHelperLoose;
+  let _isNativeReflectConstruct;
+  let closure_4;
+  let closure_5;
+  let closure_6;
+  let closure_7;
+  let dependencyMap;
   let iter2;
   let messages;
+  let require;
   let roleStyle;
   let uploads;
-  ({ channel: closure_0, messages } = forceRender);
-  const importDefault = messages;
-  ({ uploads, oldestUnreadMessageId: closure_2, replyingMessageId: closure_3, currentUserId: closure_4, canAddNewReactions: closure_5, selectedSummary: closure_6, chatManager: closure_7, roleStyle } = forceRender);
+  ({ channel: require, messages } = forceRender);
+  ({ uploads, oldestUnreadMessageId: dependencyMap, replyingMessageId: _isNativeReflectConstruct, currentUserId: closure_4, canAddNewReactions: closure_5, selectedSummary: closure_6, chatManager: closure_7, roleStyle } = forceRender);
   forceRender = forceRender.forceRender;
-  ({ updateMessageIds: closure_10, isResourceChannel: closure_11, unloadableContentEntryMessageIds: closure_12 } = forceRender);
+  ({ updateMessageIds: MessageFlags, isResourceChannel: _createForOfIteratorHelperLoose, unloadableContentEntryMessageIds: _arrayLikeToArray } = forceRender);
   let items1;
   function unreadFilter(id) {
-    if (forumPost.isForumPost()) {
+    if (closure_0.isForumPost()) {
       let tmp3 = tmp;
       if (tmp) {
-        tmp3 = id.id !== messages(closure_2[5]).castChannelIdAsMessageId(forumPost.id);
-        const obj = messages(closure_2[5]);
+        tmp3 = id.id !== messages(outer1_2[5]).castChannelIdAsMessageId(closure_0.id);
+        const obj = messages(outer1_2[5]);
       }
       let tmp2 = tmp3;
     } else {
@@ -120,7 +135,7 @@ export default function createChannelStream(forceRender) {
     const first = items1[0];
     if (null != first) {
       if (!unreadFilter(message)) {
-        if (messages(closure_2[6])(closure_0, first[first.length - 1], message)) {
+        if (messages(outer1_2[6])(closure_0, first[first.length - 1], message)) {
           const items = [message];
           items1.unshift(items);
         } else {
@@ -128,7 +143,7 @@ export default function createChannelStream(forceRender) {
         }
       }
     }
-    const items1 = [message];
+    items1 = [message];
     items1.unshift(items1);
   }
   function determineChangeType(message) {
@@ -138,16 +153,16 @@ export default function createChannelStream(forceRender) {
     }
     return store.determineChangeType({ message, updateMessageIds: closure_10, forceRender }, flag);
   }
-  const items = [];
+  let items = [];
   let arr = {};
   const substr = uploads.slice();
-  const tmp = _createForOfIteratorHelperLoose(substr.reverse());
+  let tmp = _createForOfIteratorHelperLoose(substr.reverse());
   let iter = tmp();
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp2 = closure_5;
-      let messageForFile = closure_5.getMessageForFile(value.id);
+      let tmp2 = messageForFile;
+      messageForFile = messageForFile.getMessageForFile(value.id);
       let nonce;
       if (null != messageForFile) {
         nonce = messageForFile.nonce;
@@ -161,7 +176,7 @@ export default function createChannelStream(forceRender) {
   }
   items1 = [];
   const item = messages.forEach((id) => {
-    const result = forumPost(id[7]).tryCreateInjectedMessage(id, forumPost);
+    const result = outer1_0(outer1_2[7]).tryCreateInjectedMessage(id, closure_0);
     let tmp2 = null != result;
     if (tmp2) {
       tmp2 = "before" === result.position;
@@ -181,42 +196,43 @@ export default function createChannelStream(forceRender) {
       insertMessage(result.message);
     }
   });
-  const item1 = items1.forEach((self) => {
+  const item1 = items1.forEach((closure_0) => {
+    let iter2;
     function processHiddenMessageRow(merged) {
       let iter2;
       let obj;
-      const tmp = callback(merged);
+      const tmp = outer2_11(systemDM);
       let iter = tmp();
       if (!iter.done) {
         do {
           let value = iter.value;
-          let tmp2 = closure_18;
-          let tmp3 = closure_6;
-          let tmp4 = closure_18(value) !== closure_6.NOOP;
+          let tmp2 = outer1_18;
+          let tmp3 = outer2_6;
+          let tmp4 = outer1_18(value) !== outer2_6.NOOP;
           if (tmp4) {
-            let tmp5 = closure_6;
-            tmp4 = merged.changeType === closure_6.NOOP;
+            let tmp5 = outer2_6;
+            tmp4 = merged.changeType === outer2_6.NOOP;
           }
           if (tmp4) {
-            let tmp6 = closure_6;
-            merged.changeType = closure_6.UPDATE;
+            let tmp6 = outer2_6;
+            merged.changeType = outer2_6.UPDATE;
           }
           let content = merged.content;
           obj = {};
-          let tmp7 = closure_8;
-          obj.rowType = closure_8.MESSAGE;
-          let tmp8 = closure_6;
-          obj.changeType = closure_6.NOOP;
-          let tmp9 = closure_8;
-          obj.roleStyle = closure_8;
+          let tmp7 = roleStyle;
+          obj.rowType = roleStyle.MESSAGE;
+          let tmp8 = outer2_6;
+          obj.changeType = outer2_6.NOOP;
+          let tmp9 = outer1_8;
+          obj.roleStyle = outer1_8;
           obj.message = value;
-          let tmp10 = closure_0;
-          let tmp11 = closure_0.isSystemDM() && value.isSystemDM();
+          let tmp10 = systemDM;
+          let tmp11 = systemDM.isSystemDM() && value.isSystemDM();
           obj.isSystemDM = tmp11;
-          let tmp12 = closure_1;
-          obj.isFirst = value === closure_1;
-          let tmp13 = closure_5;
-          obj.canAddNewReactions = closure_5;
+          let tmp12 = obj;
+          obj.isFirst = value === obj;
+          let tmp13 = outer1_5;
+          obj.canAddNewReactions = outer1_5;
           let arr = content.unshift(obj);
           iter2 = tmp();
           iter = iter2;
@@ -226,35 +242,34 @@ export default function createChannelStream(forceRender) {
       merged.context = obj.id;
       return merged;
     }
-    let obj = self[self.length - 1];
-    const messages = obj;
+    let obj = closure_0[closure_0.length - 1];
     let merged = arg1 === items1.length - 1;
     let hasMoreAfter = 0 === arg1;
     if (hasMoreAfter) {
-      hasMoreAfter = messages.hasMoreAfter;
+      hasMoreAfter = obj.hasMoreAfter;
     }
     if (!hasMoreAfter) {
-      let tmp11 = messages.hasMoreBefore && merged;
+      let tmp11 = obj.hasMoreBefore && merged;
       let tmp13 = unreadFilter(obj);
       let timestamp = null;
       if (!merged) {
         timestamp = items1[arg1 + 1][0].timestamp;
       }
       if (merged) {
-        let isDMResult = self.isDM();
+        let isDMResult = closure_0.isDM();
         if (isDMResult) {
-          isDMResult = !messages.hasMoreBefore;
+          isDMResult = !obj.hasMoreBefore;
         }
         if (isDMResult) {
           isDMResult = merged;
         }
         if (!isDMResult) {
-          let isThreadResult = self.isThread();
+          let isThreadResult = closure_0.isThread();
           if (isThreadResult) {
-            isThreadResult = !self.isForumPost();
+            isThreadResult = !closure_0.isForumPost();
           }
           if (isThreadResult) {
-            isThreadResult = !messages.hasMoreBefore;
+            isThreadResult = !obj.hasMoreBefore;
           }
           if (isThreadResult) {
             isThreadResult = merged;
@@ -266,14 +281,14 @@ export default function createChannelStream(forceRender) {
           flag = true;
         }
       } else {
-        let obj2 = self(closure_2[9]);
+        let obj2 = outer1_0(outer1_2[9]);
         flag = true;
       }
-      obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, roleStyle };
+      obj = { roleStyle, message: null, isFirst: true, content: null, text: "", revealed: false };
       obj.message = obj;
       obj.content = [];
-      let tmp28 = items[closure_13.length - 1];
-      if (obj.hasFlag(constants.HIDDEN_SUSPENDED_USER)) {
+      let tmp28 = items[items.length - 1];
+      if (obj.hasFlag(outer1_10.HIDDEN_SUSPENDED_USER)) {
         if (null == tmp28) {
           merged = determineChangeType;
           obj = {};
@@ -292,25 +307,25 @@ export default function createChannelStream(forceRender) {
           merged = roleStyle;
         }
         merged = processHiddenMessageRow(tmp28);
-        merged = self;
-        merged = closure_2;
-        const intl4 = self(closure_2[8]).intl;
+        merged = outer1_0;
+        merged = outer1_2;
+        const intl4 = outer1_0(outer1_2[8]).intl;
         const obj1 = { count: tmp28.content.length };
-        tmp28.text = intl4.formatToPlainString(self(closure_2[8]).t.rHRovo, obj1);
+        tmp28.text = intl4.formatToPlainString(outer1_0(outer1_2[8]).t.rHRovo, obj1);
       } else if (obj.blocked) {
         if (null == tmp28) {
           merged = determineChangeType;
           merged = determineChangeType(obj);
-          merged = closure_6;
-          merged = merged === closure_6.NOOP;
+          merged = outer1_6;
+          merged = merged === outer1_6.NOOP;
           if (merged) {
             merged = store;
             merged = store.getBlocked(obj);
           }
           let INSERT2 = merged;
           if (merged) {
-            merged = closure_6;
-            INSERT2 = closure_6.INSERT;
+            merged = outer1_6;
+            INSERT2 = outer1_6.INSERT;
           }
           obj2 = {};
           merged = obj2;
@@ -327,24 +342,24 @@ export default function createChannelStream(forceRender) {
           merged = tmp28;
         }
         merged = processHiddenMessageRow(merged);
-        merged = self;
-        merged = closure_2;
-        const intl3 = self(closure_2[8]).intl;
+        merged = outer1_0;
+        merged = outer1_2;
+        const intl3 = outer1_0(outer1_2[8]).intl;
         const obj3 = { count: merged.content.length };
-        merged.text = intl3.formatToPlainString(self(closure_2[8]).t.+FcYM/, obj3);
+        merged.text = intl3.formatToPlainString(outer1_0(outer1_2[8]).t["+FcYM/"], obj3);
       } else if (obj.ignored) {
         if (null == tmp28) {
           const tmp99 = determineChangeType(obj);
-          merged = closure_6;
-          merged = tmp99 === closure_6.NOOP;
+          merged = outer1_6;
+          merged = tmp99 === outer1_6.NOOP;
           if (merged) {
             merged = store;
             merged = store.getIgnored(obj);
           }
           let INSERT = tmp99;
           if (merged) {
-            merged = closure_6;
-            INSERT = closure_6.INSERT;
+            merged = outer1_6;
+            INSERT = outer1_6.INSERT;
           }
           let obj4 = {};
           merged = obj4;
@@ -360,41 +375,41 @@ export default function createChannelStream(forceRender) {
           tmp97 = tmp28;
         }
         merged = processHiddenMessageRow(tmp97);
-        merged = self;
-        merged = closure_2;
-        const intl2 = self(closure_2[8]).intl;
+        merged = outer1_0;
+        merged = outer1_2;
+        const intl2 = outer1_0(outer1_2[8]).intl;
         let obj5 = { count: tmp97.content.length };
-        tmp97.text = intl2.formatToPlainString(self(closure_2[8]).t.VFWjc+, obj5);
+        tmp97.text = intl2.formatToPlainString(outer1_0(outer1_2[8]).t["VFWjc+"], obj5);
       } else {
-        const tmp31 = callback(self);
+        const tmp31 = outer1_11(closure_0);
         let iter = tmp31();
         if (!iter.done) {
-          while (true) {
+          do {
             let value = iter.value;
             let tmp32 = value !== obj;
-            let tmp33 = editing;
-            let tmp34 = self;
-            let isEditingResult = editing.isEditing(self.id, value.id);
+            let tmp33 = outer1_4;
+            let tmp34 = closure_0;
+            let isEditingResult = outer1_4.isEditing(closure_0.id, value.id);
             if (!isEditingResult) {
-              let tmp36 = pushFeedback;
-              isEditingResult = pushFeedback === value.id;
+              let tmp36 = _isNativeReflectConstruct;
+              isEditingResult = _isNativeReflectConstruct === value.id;
             }
-            let tmp37 = pushFeedback;
-            let pushFeedback = pushFeedback.getPushFeedback(value.channel_id, value.id);
-            let tmp39 = self;
-            let tmp40 = closure_2;
-            obj4 = self(closure_2[10]);
-            let tmp41 = self;
+            let tmp37 = outer1_3;
+            let pushFeedback = outer1_3.getPushFeedback(value.channel_id, value.id);
+            let tmp39 = outer1_0;
+            let tmp40 = outer1_2;
+            obj4 = outer1_0(outer1_2[10]);
+            let tmp41 = closure_0;
             let tmp43 = messages;
-            let canReplyToMessageResult = obj4.canReplyToMessage(self, value);
-            let tmp44 = editing;
-            let tmp45 = messages(closure_2[11])(value, editing);
+            let canReplyToMessageResult = obj4.canReplyToMessage(closure_0, value);
+            let tmp44 = closure_4;
+            let tmp45 = messages(outer1_2[11])(value, closure_4);
             if (tmp45) {
-              let tmp46 = self;
-              let tmp47 = closure_2;
-              obj5 = self(closure_2[12]);
-              let tmp48 = self;
-              tmp45 = !obj5.isNonModInLockedThread(self);
+              let tmp46 = outer1_0;
+              let tmp47 = outer1_2;
+              obj5 = outer1_0(outer1_2[12]);
+              let tmp48 = closure_0;
+              tmp45 = !obj5.isNonModInLockedThread(closure_0);
             }
             let tmp49 = arr;
             if (arr.hasOwnProperty(value.id)) {
@@ -427,22 +442,22 @@ export default function createChannelStream(forceRender) {
               let tmp62 = closure_6;
               obj6.summary = closure_6;
               obj6.isBeforeContent = false;
-              let arr = items.push(obj6);
+              arr = items.push(obj6);
             }
             let obj7 = {};
             let tmp65 = roleStyle;
             obj7.roleStyle = roleStyle;
             obj7.message = value;
-            let tmp66 = self;
+            let tmp66 = closure_0;
             let tmp64 = items;
-            let tmp67 = self.isSystemDM() && value.isSystemDM();
+            let tmp67 = closure_0.isSystemDM() && value.isSystemDM();
             obj7.isSystemDM = tmp67;
             obj7.isFirst = value === obj;
             obj7.isEditing = isEditingResult;
             let tmp68 = !tmp32;
             if (!tmp32) {
-              let tmp69 = callback;
-              tmp68 = !callback;
+              let tmp69 = closure_11;
+              tmp68 = !closure_11;
             }
             if (tmp68) {
               let tmp70 = flag;
@@ -457,27 +472,27 @@ export default function createChannelStream(forceRender) {
             obj7.separatorBefore = tmp68;
             let tmp71 = closure_5;
             obj7.canAddNewReactions = closure_5;
-            let tmp72 = self;
-            let isForumPostResult = self.isForumPost();
+            let tmp72 = closure_0;
+            let isForumPostResult = closure_0.isForumPost();
             if (isForumPostResult) {
               let tmp74 = messages;
-              let tmp75 = closure_2;
-              let obj8 = messages(closure_2[5]);
-              let tmp76 = self;
-              isForumPostResult = value.id === obj8.castChannelIdAsMessageId(self.id);
+              let tmp75 = outer1_2;
+              let obj8 = messages(outer1_2[5]);
+              let tmp76 = closure_0;
+              isForumPostResult = value.id === obj8.castChannelIdAsMessageId(closure_0.id);
             }
             obj7.alwaysShowAddReaction = isForumPostResult;
-            let tmp77 = callback;
-            obj7.renderContentOnly = callback;
+            let tmp77 = closure_11;
+            obj7.renderContentOnly = closure_11;
             let pushType;
             if (null != pushFeedback) {
               pushType = pushFeedback.pushType;
             }
             obj7.pushFeedbackType = pushType;
-            let tmp79 = callback;
-            obj7.canReply = !callback && canReplyToMessageResult;
-            let tmp80 = callback;
-            obj7.canEdit = !callback && tmp45;
+            let tmp79 = closure_11;
+            obj7.canReply = !closure_11 && canReplyToMessageResult;
+            let tmp80 = closure_11;
+            obj7.canEdit = !closure_11 && tmp45;
             let tmp81 = roleStyle;
             obj7.rowType = roleStyle.MESSAGE;
             obj7.changeType = result;
@@ -513,28 +528,23 @@ export default function createChannelStream(forceRender) {
               obj8.isBeforeContent = true;
               let arr1 = items.push(obj8);
             }
-            let iter2 = tmp31();
+            iter2 = tmp31();
             iter = iter2;
-            if (iter2.done) {
-              break;
-            } else {
-              // continue
-            }
-          }
+          } while (!iter2.done);
         }
       }
       if (flag) {
-        merged = callback;
-        if (!callback) {
+        merged = closure_11;
+        if (!closure_11) {
           merged = determineChangeType;
           let NOOP = determineChangeType(obj);
-          merged = closure_6;
-          if (NOOP === closure_6.UPDATE) {
-            merged = closure_6;
-            NOOP = closure_6.NOOP;
+          merged = outer1_6;
+          if (NOOP === outer1_6.UPDATE) {
+            merged = outer1_6;
+            NOOP = outer1_6.NOOP;
           }
-          merged = self;
-          merged = closure_2;
+          merged = outer1_0;
+          merged = outer1_2;
           merged = items;
           const obj9 = {};
           merged = forceRender;
@@ -542,14 +552,14 @@ export default function createChannelStream(forceRender) {
           obj9.changeType = NOOP;
           merged = roleStyle;
           obj9.roleStyle = roleStyle;
-          obj9.text = self(closure_2[9]).dateFormat(obj.timestamp, "LL");
+          obj9.text = outer1_0(outer1_2[9]).dateFormat(obj.timestamp, "LL");
           merged = items.push(obj9);
-          const obj17 = self(closure_2[9]);
+          const obj17 = outer1_0(outer1_2[9]);
         }
       }
       if (tmp13) {
-        merged = callback;
-        tmp13 = !callback;
+        merged = closure_11;
+        tmp13 = !closure_11;
       }
       if (tmp13) {
         merged = items;
@@ -560,50 +570,50 @@ export default function createChannelStream(forceRender) {
         obj10.changeType = determineChangeType(obj);
         merged = roleStyle;
         obj10.roleStyle = roleStyle;
-        merged = self;
-        merged = closure_2;
-        const intl5 = self(closure_2[8]).intl;
-        obj10.text = intl5.string(self(closure_2[8]).t.q7hm3m).toUpperCase();
+        merged = outer1_0;
+        merged = outer1_2;
+        const intl5 = outer1_0(outer1_2[8]).intl;
+        obj10.text = intl5.string(outer1_0(outer1_2[8]).t.q7hm3m).toUpperCase();
         merged = items.push(obj10);
-        const str9 = intl5.string(self(closure_2[8]).t.q7hm3m);
+        const str9 = intl5.string(outer1_0(outer1_2[8]).t.q7hm3m);
       }
       if (tmp11) {
-        merged = callback;
-        tmp11 = !callback;
+        merged = closure_11;
+        tmp11 = !closure_11;
       }
       if (tmp11) {
         let obj11 = {};
-        merged = store;
-        obj11.rowType = store.LOAD_BEFORE;
+        merged = outer1_7;
+        obj11.rowType = outer1_7.LOAD_BEFORE;
         merged = forceRender;
-        merged = closure_6;
+        merged = outer1_6;
         obj11.changeType = forceRender ? merged.UPDATE : merged.NOOP;
         merged = roleStyle;
         obj11.roleStyle = roleStyle;
-        merged = messages;
-        obj11.isLoading = messages.loadingMore;
-        merged = self;
-        merged = closure_2;
+        merged = obj;
+        obj11.isLoading = obj.loadingMore;
+        merged = outer1_0;
+        merged = outer1_2;
         merged = items;
-        const intl6 = self(closure_2[8]).intl;
-        obj11.text = intl6.string(self(closure_2[8]).t.XBlaiC);
+        const intl6 = outer1_0(outer1_2[8]).intl;
+        obj11.text = intl6.string(outer1_0(outer1_2[8]).t.XBlaiC);
         obj11 = items.push(obj11);
       }
     } else {
-      let obj12 = { rowType: store.LOAD_AFTER };
-      let intl = closure_6;
+      let obj12 = { rowType: outer1_7.LOAD_AFTER };
+      let intl = outer1_6;
       obj12.changeType = forceRender ? intl.UPDATE : intl.NOOP;
       obj12.roleStyle = roleStyle;
-      obj12.isLoading = messages.loadingMore;
-      intl = self(closure_2[8]).intl;
-      obj12.text = intl.string(self(closure_2[8]).t.XBlaiC);
+      obj12.isLoading = obj.loadingMore;
+      intl = outer1_0(outer1_2[8]).intl;
+      obj12.text = intl.string(outer1_0(outer1_2[8]).t.XBlaiC);
       obj12 = items.push(obj12);
     }
   });
   let tmp7 = 0 === items1.length && !messages.loadingMore;
   if (tmp7) {
     tmp7 = messages.hasMoreAfter || messages.hasMoreBefore;
-    const tmp8 = messages.hasMoreAfter || messages.hasMoreBefore;
+    let tmp8 = messages.hasMoreAfter || messages.hasMoreBefore;
   }
   if (!tmp7) {
     return items;
@@ -614,9 +624,9 @@ export default function createChannelStream(forceRender) {
     arr.roleStyle = roleStyle;
     arr.isLoading = messages.loadingMore;
     tmp10 = dependencyMap;
-    roleStyle = arg1(dependencyMap[8]).intl;
+    roleStyle = require(1212) /* getSystemLocale */.intl;
     messages = roleStyle.string;
-    arr.text = messages(arg1(dependencyMap[8]).t.XBlaiC);
+    arr.text = messages(require(1212) /* getSystemLocale */.t.XBlaiC);
     arr = items.push(arr);
   }
 };

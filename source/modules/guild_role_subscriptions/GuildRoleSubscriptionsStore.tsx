@@ -1,9 +1,17 @@
-// Module ID: 3750
-// Function ID: 28604
+// Module ID: 3752
+// Function ID: 28609
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 3753, 3754, 44, 566, 686, 2]
 
-// Module 3750 (_isNativeReflectConstruct)
+// Module 3752 (_isNativeReflectConstruct)
+import sortedInsert from "sortedInsert";
+import invariant from "invariant";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { DefaultCreatorMonetizationRestrictions as closure_7 } from "CreatorMonetizationRestrictions";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +21,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -119,8 +127,8 @@ function saveGroupListing(groupListing) {
   let iter = tmp3Result();
   if (!iter.done) {
     do {
-      let tmp5 = closure_29;
-      let tmp6 = closure_29(iter.value);
+      let tmp5 = saveListing;
+      let tmp6 = saveListing(iter.value);
       let iter2 = tmp3Result();
       iter = iter2;
       done = iter2.done;
@@ -137,32 +145,26 @@ function saveBenefitChannels(benefitChannels) {
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp2 = closure_18;
-      let result = closure_18.set(value.id, value);
+      let tmp2 = map1;
+      let result = map1.set(value.id, value);
       let iter2 = tmp();
       iter = iter2;
       done = iter2.done;
     } while (!done);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = arg1(dependencyMap[5]).DefaultCreatorMonetizationRestrictions;
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
-const secondaryIndexMap = new arg1(dependencyMap[6]).SecondaryIndexMap((guild_id) => {
-  const items = [makeGroupListingIndexGuildTag(guild_id.guild_id), ...prop.map(closure_24)];
-  const prop = guild_id.subscription_listings_ids;
+const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap((guild_id) => {
+  const items = [makeGroupListingIndexGuildTag(guild_id.guild_id), ...prop.map(makeGroupListingIndexSubscriptionListingTag)];
+  prop = guild_id.subscription_listings_ids;
   return items;
 }, (id) => id.id);
-const secondaryIndexMap1 = new arg1(dependencyMap[6]).SecondaryIndexMap((application_id) => {
+const secondaryIndexMap1 = new require("sortedInsert").SecondaryIndexMap((application_id) => {
   const items = [makeListingIndexApplicationTag(application_id.application_id), makeListingIndexPlanTag(application_id.subscription_plans[0].id)];
   return items;
 }, (id) => id.id);
 let closure_11 = {};
-const set = new Set();
+let set = new Set();
 let closure_13 = {};
 let closure_14 = {};
 let closure_15 = {};
@@ -170,19 +172,19 @@ let closure_16 = {};
 const map = new Map();
 const map1 = new Map();
 let closure_19 = [];
-let tmp7 = (Store) => {
+let tmp7 = ((Store) => {
   class GuildRoleSubscriptionsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildRoleSubscriptionsStore);
-      obj = closure_5(GuildRoleSubscriptionsStore);
-      tmp2 = closure_4;
-      if (closure_20()) {
+      tmp = outer1_2(this, GuildRoleSubscriptionsStore);
+      obj = outer1_5(GuildRoleSubscriptionsStore);
+      tmp2 = outer1_4;
+      if (outer1_20()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -191,14 +193,13 @@ let tmp7 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = GuildRoleSubscriptionsStore;
   callback2(GuildRoleSubscriptionsStore, Store);
   let obj = {
     key: "getSubscriptionGroupListingsForGuildFetchState",
     value(arg0) {
-      let NOT_FETCHED = closure_11[arg0];
+      let NOT_FETCHED = outer1_11[arg0];
       if (null == NOT_FETCHED) {
-        NOT_FETCHED = constants.NOT_FETCHED;
+        NOT_FETCHED = outer1_8.NOT_FETCHED;
       }
       return NOT_FETCHED;
     }
@@ -207,35 +208,35 @@ let tmp7 = (Store) => {
   obj = {
     key: "getDidFetchListingForSubscriptionPlanId",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_12.has(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getSubscriptionGroupListing",
     value(arg0) {
-      return closure_9.get(arg0);
+      return outer1_9.get(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getSubscriptionGroupListingsForGuild",
     value(arg0) {
-      return callback7(arg0);
+      return outer1_27(arg0);
     }
   };
   items[4] = {
     key: "getSubscriptionGroupListingForSubscriptionListing",
     value(arg0) {
-      const values = closure_9.values(callback4(arg0));
-      GuildRoleSubscriptionsStore(closure_1[7])(values.length <= 1, "Found multiple group listings for listing");
+      const values = outer1_9.values(outer1_24(arg0));
+      GuildRoleSubscriptionsStore(outer1_1[7])(values.length <= 1, "Found multiple group listings for listing");
       return values[0];
     }
   };
   items[5] = {
     key: "getSubscriptionListing",
     value(arg0) {
-      return closure_10.get(arg0);
+      return outer1_10.get(arg0);
     }
   };
   items[6] = {
@@ -247,9 +248,9 @@ let tmp7 = (Store) => {
         application_id = first.application_id;
       }
       if (null != application_id) {
-        let values = closure_10.values(callback5(application_id));
+        let values = outer1_10.values(outer1_25(application_id));
       } else {
-        values = closure_19;
+        values = outer1_19;
       }
       return values;
     }
@@ -257,35 +258,35 @@ let tmp7 = (Store) => {
   items[7] = {
     key: "getSubscriptionListingForPlan",
     value(arg0) {
-      const values = closure_10.values(callback6(arg0));
-      GuildRoleSubscriptionsStore(closure_1[7])(values.length <= 1, "Found multiple listings for plan");
+      const values = outer1_10.values(outer1_26(arg0));
+      GuildRoleSubscriptionsStore(outer1_1[7])(values.length <= 1, "Found multiple listings for plan");
       return values[0];
     }
   };
   items[8] = {
     key: "getSubscriptionSettings",
     value(arg0) {
-      return closure_13[arg0];
+      return outer1_13[arg0];
     }
   };
   items[9] = {
     key: "getSubscriptionTrial",
     value(arg0) {
-      return closure_14[arg0];
+      return outer1_14[arg0];
     }
   };
   items[10] = {
     key: "getMonetizationRestrictions",
     value(arg0) {
-      return closure_15[arg0];
+      return outer1_15[arg0];
     }
   };
   items[11] = {
     key: "getMonetizationRestrictionsFetchState",
     value(arg0) {
-      let NOT_FETCHED = closure_16[arg0];
+      let NOT_FETCHED = outer1_16[arg0];
       if (null == NOT_FETCHED) {
-        NOT_FETCHED = constants.NOT_FETCHED;
+        NOT_FETCHED = outer1_8.NOT_FETCHED;
       }
       return NOT_FETCHED;
     }
@@ -293,17 +294,17 @@ let tmp7 = (Store) => {
   items[12] = {
     key: "getApplicationIdForGuild",
     value(arg0) {
-      return closure_17.get(arg0);
+      return outer1_17.get(arg0);
     }
   };
   items[13] = {
     key: "getBenefitChannel",
     value(arg0) {
-      return closure_18.get(arg0);
+      return outer1_18.get(arg0);
     }
   };
   return callback(GuildRoleSubscriptionsStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp7.displayName = "GuildRoleSubscriptionsStore";
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
@@ -331,18 +332,18 @@ obj = {
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_9;
-        let deleteResult = closure_9.delete(value.id);
-        let tmp4 = closure_21;
-        let tmp5 = closure_21(value.subscription_listings_ids);
+        let tmp2 = secondaryIndexMap;
+        let deleteResult = secondaryIndexMap.delete(value.id);
+        let tmp4 = _createForOfIteratorHelperLoose;
+        let tmp5 = _createForOfIteratorHelperLoose(value.subscription_listings_ids);
         let iter2 = tmp5();
         if (!iter2.done) {
           do {
-            let tmp6 = closure_10;
-            let deleteResult1 = closure_10.delete(iter2.value);
+            let tmp6 = secondaryIndexMap1;
+            let deleteResult1 = secondaryIndexMap1.delete(iter2.value);
             let iter3 = tmp5();
             iter2 = iter3;
-            let done = iter3.done;
+            done = iter3.done;
           } while (!done);
         }
         iter4 = tmp();
@@ -363,8 +364,8 @@ obj = {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_28;
-        let tmp3 = closure_28(iter.value);
+        let tmp2 = saveGroupListing;
+        let tmp3 = saveGroupListing(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -435,8 +436,8 @@ obj = {
     closure_16[guildId.guildId] = obj.NOT_FETCHED;
   }
 };
-tmp7 = new tmp7(importDefault(dependencyMap[9]), obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsStore.tsx");
+tmp7 = new tmp7(require("dispatcher"), obj);
+let result = set.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsStore.tsx");
 
 export default tmp7;
 export const FetchState = obj;

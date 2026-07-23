@@ -1,13 +1,13 @@
-// Module ID: 6449
-// Function ID: 50606
+// Module ID: 6454
+// Function ID: 50635
 // Name: SafetyShieldCenter3dIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6455, 2]
 // Exports: SafetyShieldCenter3dIllustration
 
-// Module 6449 (SafetyShieldCenter3dIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldCenter3dIllustration.native.tsx");
+// Module 6454 (SafetyShieldCenter3dIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldCenter3dIllustration.native.tsx");
 
 export const SafetyShieldCenter3dIllustration = function SafetyShieldCenter3dIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const SafetyShieldCenter3dIllustration = function SafetyShieldCenter3dIll
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6455) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const SafetyShieldCenter3dIllustration = function SafetyShieldCenter3dIll
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

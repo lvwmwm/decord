@@ -1,53 +1,53 @@
-// Module ID: 8595
-// Function ID: 68268
+// Module ID: 8602
+// Function ID: 68308
 // Name: useInAppBrowserReturn
-// Dependencies: []
+// Dependencies: [31, 8596, 478, 4096, 8594, 8600, 2]
 // Exports: default
 
-// Module 8595 (useInAppBrowserReturn)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");
+// Module 8602 (useInAppBrowserReturn)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("isWindows").fileFinishedImporting("modules/game_profile/native/hooks/useInAppBrowserReturn.tsx");
 
 export default function useInAppBrowserReturn(gameId) {
   gameId = gameId.gameId;
-  const arg1 = gameId;
   const scrollOffsetRef = gameId.scrollOffsetRef;
-  const importDefault = scrollOffsetRef;
   const items = [gameId, scrollOffsetRef];
   const effect = React.useEffect(() => {
-    if (null != gameId) {
+    if (null != c0) {
       if (obj.isIOS()) {
-        const gameId = false;
-        let closure_1 = gameId(closure_2[3]).subscribeToIsInAppBrowserOpen((arg0, arg1) => {
+        c0 = false;
+        let closure_1 = gameId(outer1_2[3]).subscribeToIsInAppBrowserOpen((arg0, arg1) => {
           if (!arg1) {
             if (arg0) {
-              let callback = true;
-              let obj = ref(closure_2[4]);
-              obj = { gameId: callback, initialScrollOffset: ref.current };
+              let c0 = true;
+              let obj = scrollOffsetRef(outer2_2[4]);
+              obj = { gameId: c0, initialScrollOffset: ref.current };
               const result = obj.setGameProfilePendingReturn(obj);
             }
           }
           if (arg1) {
             if (!arg0) {
               ref();
-              callback = false;
-              const pendingReturn = pendingReturn.getPendingReturn();
+              c0 = false;
+              const pendingReturn = outer2_4.getPendingReturn();
               if (null != pendingReturn) {
-                obj = { gameId: pendingReturn.gameId, source: callback(closure_2[5]).GameProfileSources.InAppBrowserReturn, initialScrollOffset: pendingReturn.initialScrollOffset };
-                ref(closure_2[4]).returnToGameProfile(obj);
-                const obj3 = ref(closure_2[4]);
+                obj = { gameId: pendingReturn.gameId, source: gameId(outer2_2[5]).GameProfileSources.InAppBrowserReturn, initialScrollOffset: pendingReturn.initialScrollOffset };
+                scrollOffsetRef(outer2_2[4]).returnToGameProfile(obj);
+                const obj3 = scrollOffsetRef(outer2_2[4]);
               }
             }
           }
         });
         return () => {
-          if (!closure_0) {
+          if (!c0) {
             ref();
           }
         };
       }
-      const obj = gameId(closure_2[2]);
+      obj = gameId(outer1_2[2]);
     }
   }, items);
 };

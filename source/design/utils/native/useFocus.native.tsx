@@ -1,24 +1,25 @@
-// Module ID: 3837
-// Function ID: 32004
+// Module ID: 3839
+// Function ID: 32009
 // Name: useFocus
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: useFocus
 
-// Module 3837 (useFocus)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("design/utils/native/useFocus.native.tsx");
+// Module 3839 (useFocus)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("set").fileFinishedImporting("design/utils/native/useFocus.native.tsx");
 
 export const useFocus = function useFocus() {
   const tmp = callback(React.useState(false), 2);
-  const callback = tmp[1];
+  callback = tmp[1];
   return {
     focusProps: React.useMemo(() => ({
       onFocus() {
-        return callback(true);
+        return outer1_0(true);
       },
       onBlur() {
-        return callback(false);
+        return outer1_0(false);
       }
     }), []),
     isFocused: tmp[0]

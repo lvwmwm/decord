@@ -1,24 +1,23 @@
-// Module ID: 8738
-// Function ID: 69116
+// Module ID: 8745
+// Function ID: 69157
 // Name: useCollectiblesExternalGatewayFacet
-// Dependencies: []
+// Dependencies: [31, 1849, 566, 8719, 2]
 // Exports: default
 
-// Module 8738 (useCollectiblesExternalGatewayFacet)
-const useMemo = require(dependencyMap[0]).useMemo;
-let closure_3 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/collectibles/native/hooks/useCollectiblesExternalGatewayFacet.android.tsx");
+// Module 8745 (useCollectiblesExternalGatewayFacet)
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("initialize").fileFinishedImporting("modules/collectibles/native/hooks/useCollectiblesExternalGatewayFacet.android.tsx");
 
 export default function useCollectiblesExternalGatewayFacet(arg0) {
-  const require = arg0;
-  const items = [closure_3];
-  const stateFromStores = require(dependencyMap[2]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const dependencyMap = stateFromStores;
+  const _require = arg0;
+  let items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getCurrentUser());
   const items1 = [stateFromStores, arg0];
   return useMemo(() => {
-    let obj = arg0(stateFromStores[3]);
-    const collectibleGoogleSkuId = obj.getCollectibleGoogleSkuId(arg0, stateFromStores);
+    let obj = callback(stateFromStores[3]);
+    const collectibleGoogleSkuId = obj.getCollectibleGoogleSkuId(callback, stateFromStores);
     if (null != collectibleGoogleSkuId) {
       obj = {};
       obj = { external_product_id: collectibleGoogleSkuId };

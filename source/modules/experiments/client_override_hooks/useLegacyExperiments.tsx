@@ -1,30 +1,37 @@
-// Module ID: 10451
-// Function ID: 80700
+// Module ID: 10461
+// Function ID: 80750
 // Name: bucketVariantType
-// Dependencies: []
+// Dependencies: [57, 31, 4044, 4045, 7784, 4052, 7782, 566, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 10451 (bucketVariantType)
+// Module 10461 (bucketVariantType)
+import _slicedToArray from "_slicedToArray";
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ExperimentBuckets from "ExperimentBuckets";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function bucketVariantType(arg0) {
   if (arg0 === constants.CONTROL) {
-    let TREATMENT = arg1(dependencyMap[4]).Variation_Type.CONTROL;
+    let TREATMENT = require(7784) /* _callSuper */.Variation_Type.CONTROL;
   } else if (arg0 === constants.NOT_ELIGIBLE) {
-    TREATMENT = arg1(dependencyMap[4]).Variation_Type.UNSPECIFIED;
+    TREATMENT = require(7784) /* _callSuper */.Variation_Type.UNSPECIFIED;
   } else {
-    TREATMENT = arg1(dependencyMap[4]).Variation_Type.TREATMENT;
+    TREATMENT = require(7784) /* _callSuper */.Variation_Type.TREATMENT;
   }
   return TREATMENT;
 }
 function parseRegisteredExperiments(registeredExperiments) {
   let length;
-  const obj = {};
-  const arg1 = obj;
+  let obj = {};
   function _loop(type) {
     let buckets;
-    let obj = type;
-    obj = { system: obj(closure_2[5]).ExperimentSystem.LEGACY };
+    let closure_0 = type;
+    obj = { system: obj(outer1_2[5]).ExperimentSystem.LEGACY };
     let str = "guild";
-    if (type.type === constants.USER) {
+    if (type.type === outer1_7.USER) {
       str = "user";
     }
     obj.kind = str;
@@ -32,26 +39,26 @@ function parseRegisteredExperiments(registeredExperiments) {
     ({ title: obj.title, buckets } = type);
     obj.variants = buckets.map((bucket) => {
       const obj = { id: bucket.valueOf() };
-      if ("object" === typeof bucket.description) {
-        let experimentBucketName = bucket.description[arg1];
+      if ("object" === typeof type.description) {
+        let experimentBucketName = type.description[arg1];
       } else {
-        experimentBucketName = callback(closure_2[6]).getExperimentBucketName(bucket);
-        const obj2 = callback(closure_2[6]);
+        experimentBucketName = outer2_1(outer2_2[6]).getExperimentBucketName(bucket);
+        const obj2 = outer2_1(outer2_2[6]);
       }
       obj.label = experimentBucketName;
-      obj.shortLabel = callback(closure_2[6]).getExperimentBucketName(bucket);
-      obj.type = callback2(bucket);
+      obj.shortLabel = outer2_1(outer2_2[6]).getExperimentBucketName(bucket);
+      obj.type = outer2_8(bucket);
       return obj;
     });
-    obj[closure_1] = obj;
+    closure_0[closure_1] = obj;
   }
   const entries = Object.entries(registeredExperiments);
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp = closure_3;
-      let tmp2 = closure_3(entries[num], 2);
-      closure_1 = tmp2[0];
+      let tmp = callback;
+      let tmp2 = callback(entries[num], 2);
+      let importDefault = tmp2[0];
       let _loopResult = _loop(tmp2[1]);
       num = num + 1;
       length = entries.length;
@@ -66,8 +73,8 @@ function getLegacyOverridesInfo(allExperimentOverrideDescriptors) {
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp = closure_3;
-      let tmp2 = closure_3(entries[num], 2);
+      let tmp = callback;
+      let tmp2 = callback(entries[num], 2);
       let first = tmp2[0];
       let tmp4 = tmp2[1];
       obj = { experimentId: first };
@@ -81,12 +88,8 @@ function getLegacyOverridesInfo(allExperimentOverrideDescriptors) {
   }
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const useMemo = arg1(dependencyMap[1]).useMemo;
-let closure_5 = importDefault(dependencyMap[2]);
-({ ExperimentBuckets: closure_6, ExperimentTypes: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/experiments/client_override_hooks/useLegacyExperiments.tsx");
+({ ExperimentBuckets: closure_6, ExperimentTypes: closure_7 } = ExperimentBuckets);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/client_override_hooks/useLegacyExperiments.tsx");
 
 export { parseRegisteredExperiments };
 export { getLegacyOverridesInfo };
@@ -99,15 +102,13 @@ export const getLegacyExperiments = function getLegacyExperiments() {
   return obj;
 };
 export const useLegacyExperiments = function useLegacyExperiments() {
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => store.getRegisteredExperiments());
-  const arg1 = stateFromStoresObject;
-  const items1 = [closure_5];
-  const stateFromStoresObject1 = arg1(dependencyMap[7]).useStateFromStoresObject(items1, () => store.getAllExperimentOverrideDescriptors());
-  const importDefault = stateFromStoresObject1;
-  obj = { experiments: useMemo(() => callback(stateFromStoresObject), items2), overridesInfo: useMemo(() => callback2(stateFromStoresObject1), items3) };
-  const items2 = [stateFromStoresObject];
-  const items3 = [stateFromStoresObject1];
+  let obj = stateFromStoresObject(566);
+  const items = [_isNativeReflectConstruct];
+  stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_5.getRegisteredExperiments());
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStoresObject1 = stateFromStoresObject(566).useStateFromStoresObject(items1, () => outer1_5.getAllExperimentOverrideDescriptors());
+  obj = { experiments: useMemo(() => outer1_9(stateFromStoresObject), items2), overridesInfo: useMemo(() => outer1_10(stateFromStoresObject1), items3) };
+  items2 = [stateFromStoresObject];
+  items3 = [stateFromStoresObject1];
   return obj;
 };

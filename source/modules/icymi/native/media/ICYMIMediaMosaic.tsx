@@ -1,15 +1,36 @@
-// Module ID: 15109
-// Function ID: 113913
+// Module ID: 15224
+// Function ID: 116082
 // Name: isMediaSourceGif
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 1348, 3767, 1849, 8306, 653, 33, 4130, 689, 4317, 668, 566, 8298, 8302, 3991, 4131, 15225, 5085, 4126, 1212, 8286, 4674, 4660, 8321, 10717, 4658, 15180, 8276, 7087, 1327, 22, 5069, 8274, 4320, 2]
 // Exports: default
 
-// Module 15109 (isMediaSourceGif)
+// Module 15224 (isMediaSourceGif)
+import _slicedToArray from "_slicedToArray";
+import MessageEmbedTypes from "MessageEmbedTypes";
+import get_ActivityIndicator from "VoiceXIcon";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "apply";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_5;
+let closure_6;
+const require = arg1;
 function isMediaSourceGif(source) {
   let isGIFV = source.isGIFV;
   if (!isGIFV) {
-    isGIFV = arg1(dependencyMap[12]).urlMatchesFileExtension(source.sourceURI, arg1(dependencyMap[13]).GIF_RE_IOS);
-    const obj = arg1(dependencyMap[12]);
+    isGIFV = require(4317) /* urlMatchesFileExtension */.urlMatchesFileExtension(source.sourceURI, require(668) /* keys */.GIF_RE_IOS);
+    const obj = require(4317) /* urlMatchesFileExtension */;
   }
   return isGIFV;
 }
@@ -21,14 +42,14 @@ function MediaMosaicVideo(source) {
   source = source.source;
   ({ height, width, autoplay, style } = source);
   const tmp = callback4();
-  let obj = arg1(dependencyMap[14]);
+  let obj = require(566) /* initialize */;
   const items = [closure_11];
-  let isGIFV = obj.useStateFromStores(items, () => closure_11.videosMuted());
-  const rnvHttpEngine = arg1(dependencyMap[15]).useRnvHttpEngine();
+  let isGIFV = obj.useStateFromStores(items, () => outer1_11.videosMuted());
+  const rnvHttpEngine = require(8298) /* apexExperiment */.useRnvHttpEngine();
   obj = {};
   obj = {};
   let uri = source.videoURI;
-  const obj2 = arg1(dependencyMap[15]);
+  const obj2 = require(8298) /* apexExperiment */;
   const tmp3 = closure_15;
   if (null == uri) {
     uri = source.sourceURI;
@@ -52,31 +73,29 @@ function MediaMosaicVideo(source) {
   }
   obj.disableFocus = isGIFV;
   obj.httpEngine = rnvHttpEngine;
-  return tmp3(importDefault(dependencyMap[16]), obj);
+  return tmp3(importDefault(8302), obj);
 }
 function MediaMosaicImage(source) {
   let dimensions;
   let style;
   source = source.source;
-  const arg1 = source;
   ({ dimensions, style } = source);
   const tmp = callback4();
   const tmp2 = callback(React.useState(false), 2);
   let num = 0;
   const first = tmp2[0];
-  const importDefault = first;
-  let closure_2 = tmp2[1];
-  let obj = arg1(closure_2[17]);
+  const dependencyMap = tmp2[1];
+  let obj = source(3991);
   const fn = function c() {
     const obj = {};
     let num = 1;
     if (first) {
       num = 0;
     }
-    obj.opacity = source(closure_2[18]).withTiming(num, { duration: 150 });
+    obj.opacity = source(4131).withTiming(num, { duration: 150 });
     return obj;
   };
-  obj = { withTiming: arg1(closure_2[18]).withTiming, imageFinishedLoading: first };
+  obj = { withTiming: source(4131).withTiming, imageFinishedLoading: first };
   fn.__closure = obj;
   fn.__workletHash = 7803531897566;
   fn.__initData = closure_19;
@@ -86,29 +105,29 @@ function MediaMosaicImage(source) {
   obj = {};
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
-      const obj = { uri: source(closure_2[19]).createThumbhashImageFromPlaceholder(source.placeholder) };
+      const obj = { uri: source(15225).createThumbhashImageFromPlaceholder(source.placeholder) };
       ({ width: obj.width, height: obj.height } = source);
       return obj;
     }
   }, items);
   const obj1 = { style: items1 };
-  const items1 = [animatedStyle, tmp.thumbhashMedia];
+  items1 = [animatedStyle, tmp.thumbhashMedia];
   const items2 = [style, tmp.media, dimensions];
-  obj1.children = callback2(importDefault(closure_2[20]), { source: memo, style: items2 });
-  const items3 = [callback2(importDefault(closure_2[17]).View, obj1), ];
+  obj1.children = callback2(first(5085), { source: memo, style: items2 });
+  const items3 = [callback2(first(3991).View, obj1), ];
   const obj2 = {
     source,
     style: items4,
     onLoadEnd() {
-      return callback(true);
+      return dependencyMap(true);
     }
   };
-  const items4 = [tmp.media, style, dimensions];
+  items4 = [tmp.media, style, dimensions];
   if (source.isSpoiler) {
     num = 100;
   }
   obj2.blurRadius = num;
-  items3[1] = callback2(importDefault(closure_2[17]).Image, obj2, source.uri);
+  items3[1] = callback2(first(3991).Image, obj2, source.uri);
   obj.children = items3;
   return closure_17(closure_16, obj);
 }
@@ -117,27 +136,23 @@ function Media(handlePressMedia) {
   let initialIndex;
   let source;
   ({ source, dimensions, initialIndex } = handlePressMedia);
-  const arg1 = initialIndex;
   handlePressMedia = handlePressMedia.handlePressMedia;
-  const importDefault = handlePressMedia;
   const style = handlePressMedia.style;
-  let callback;
+  let first;
   let React;
   let stateFromStores;
   const tmp = callback4();
   const ref = React.useRef(null);
-  const dependencyMap = ref;
   const spoiler = source.spoiler;
   let tmp4 = null != spoiler;
   if (tmp4) {
     tmp4 = spoiler;
   }
-  const tmp5 = callback(React.useState(tmp4), 2);
-  const first = tmp5[0];
-  callback = first;
+  const tmp5 = first(React.useState(tmp4), 2);
+  first = tmp5[0];
   React = tmp5[1];
   const items = [handlePressMedia, initialIndex, first];
-  callback = React.useCallback(() => {
+  const callback = React.useCallback(() => {
     if (first) {
       callback(false);
     } else {
@@ -145,24 +160,24 @@ function Media(handlePressMedia) {
       handlePressMedia(obj);
     }
   }, items);
-  let obj = arg1(dependencyMap[14]);
+  let obj = initialIndex(ref[14]);
   const items1 = [closure_11];
-  stateFromStores = obj.useStateFromStores(items1, () => closure_11.videosMuted());
-  let obj1 = arg1(dependencyMap[14]);
-  const items2 = [closure_7];
+  stateFromStores = obj.useStateFromStores(items1, () => outer1_11.videosMuted());
+  let obj1 = initialIndex(ref[14]);
+  const items2 = [_isNativeReflectConstruct];
   obj = { ref, onPress: callback, style: dimensions };
   let tmp12 = first;
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => useReducedMotion.useReducedMotion);
+  const stateFromStores1 = obj1.useStateFromStores(items2, () => outer1_7.useReducedMotion);
   if (first) {
     obj = { style: tmp.centerContainer };
     obj1 = { style: tmp.spoilerText };
-    const obj2 = { "Null": 28945, "Null": -583991296, "Null": -1786706396 };
-    const intl = arg1(dependencyMap[22]).intl;
-    obj2.children = intl.string(arg1(dependencyMap[22]).t.F+x38C).toUpperCase();
-    obj1.children = callback2(arg1(dependencyMap[21]).Text, obj2);
+    const obj2 = { maxFontSizeMultiplier: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
+    const intl = initialIndex(ref[22]).intl;
+    obj2.children = intl.string(initialIndex(ref[22]).t["F+x38C"]).toUpperCase();
+    obj1.children = callback2(initialIndex(ref[21]).Text, obj2);
     obj.children = callback2(closure_6, obj1);
     tmp12 = callback2(closure_6, obj);
-    const str = intl.string(arg1(dependencyMap[22]).t.F+x38C);
+    const str = intl.string(initialIndex(ref[22]).t["F+x38C"]);
   }
   const items3 = [tmp12, , , ];
   let tmp20 = null != source.videoURI && !first;
@@ -175,13 +190,13 @@ function Media(handlePressMedia) {
   if (tmp20) {
     const obj3 = { style: tmp.centerContainer };
     const obj4 = { style: tmp.videoIcon };
-    const obj5 = { color: importDefault(dependencyMap[11]).colors.REDESIGN_BUTTON_TERTIARY_TEXT, size: "lg" };
-    obj4.children = callback2(arg1(dependencyMap[23]).PlayIcon, obj5);
+    const obj5 = { color: handlePressMedia(ref[11]).colors.REDESIGN_BUTTON_TERTIARY_TEXT, size: "lg" };
+    obj4.children = callback2(initialIndex(ref[23]).PlayIcon, obj5);
     obj3.children = callback2(closure_6, obj4);
     tmp20 = callback2(closure_6, obj3);
   }
   items3[1] = tmp20;
-  let obj9 = arg1(dependencyMap[24]);
+  let obj9 = initialIndex(ref[24]);
   let tmp30 = null;
   if (obj9.isVideo(source.uri)) {
     tmp30 = null;
@@ -194,17 +209,17 @@ function Media(handlePressMedia) {
         return handlePressMedia(ref[26]).setVideosMuted(!stateFromStores);
       };
       obj7.activeOpacity = 0.8;
-      let VoiceXIcon = arg1;
+      let VoiceXIcon = initialIndex;
       if (stateFromStores) {
         VoiceXIcon = VoiceXIcon(tmp38[27]).VoiceXIcon;
-        const obj8 = { color: importDefault(tmp38[11]).colors.INTERACTIVE_TEXT_DEFAULT, size: "sm" };
+        const obj8 = { color: handlePressMedia(tmp38[11]).colors.INTERACTIVE_TEXT_DEFAULT, size: "sm" };
         let tmp37Result = tmp37(VoiceXIcon, obj8);
       } else {
-        obj9 = { color: importDefault(tmp38[11]).colors.BLACK, size: "sm" };
+        obj9 = { color: handlePressMedia(tmp38[11]).colors.BLACK, size: "sm" };
         tmp37Result = tmp37(VoiceXIcon(tmp38[28]).VoiceNormalIcon, obj9);
       }
       obj7.children = tmp37Result;
-      obj7 = callback2(arg1(dependencyMap[25]).PressableOpacity, obj7);
+      obj7 = callback2(initialIndex(ref[25]).PressableOpacity, obj7);
       obj6.children = obj7;
       callback2(closure_6, obj6);
       const tmp32 = callback2;
@@ -233,20 +248,22 @@ function OneImageRow(arg0) {
   let widthOverride;
   ({ source, handlePressMedia, widthOverride } = arg0);
   const tmp2 = useMaxWidth(widthOverride);
-  let obj = { style: items, children: callback2(Media, { handlePressMedia, initialIndex: 0, source, dimensions: obj }) };
-  const items = [, ];
+  obj = { style: items, children: callback2(Media, { handlePressMedia, initialIndex: 0, source, dimensions: obj }) };
+  items = [, ];
   ({ imageRow: arr[0], topRow: arr[1] } = callback4());
   obj = { width: tmp2, height: tmp2 / 1.5 };
   return callback2(closure_6, obj);
 }
 function ThreeImagesRow(widthOverride) {
   let end;
+  let importDefault;
+  let require;
   let sources;
   let start;
-  ({ sources, start, end, offset: closure_0, handlePressMedia: closure_1 } = widthOverride);
+  ({ sources, start, end, offset: require, handlePressMedia: importDefault } = widthOverride);
   const tmp = callback4();
   let closure_2 = useMaxWidth(widthOverride.widthOverride);
-  const obj = {};
+  let obj = {};
   const items = [tmp.imageRow, , ];
   if (start) {
     start = tmp.topRow;
@@ -258,20 +275,20 @@ function ThreeImagesRow(widthOverride) {
   items[2] = end;
   obj.style = items;
   obj.children = sources.map((source) => {
-    let obj = { handlePressMedia: closure_1, initialIndex: closure_0 + arg1, source, dimensions: obj };
+    obj = { handlePressMedia: closure_1, initialIndex: closure_0 + arg1, source, dimensions: obj };
     obj = { width: (closure_2 - 8) / 3, height: (closure_2 - 8) / 3 };
-    return callback(closure_23, obj, closure_0 + arg1);
+    return outer1_15(outer1_23, obj, closure_0 + arg1);
   });
   return closure_15(closure_6, obj);
 }
 function TwoImagesRow(widthOverride) {
   let end;
+  let require;
   let sources;
-  ({ sources, handlePressMedia: closure_0, end } = widthOverride);
+  ({ sources, handlePressMedia: require, end } = widthOverride);
   const tmp = callback4();
   const tmp2 = useMaxWidth(widthOverride.widthOverride);
   let obj = { width: (tmp2 - 4) / 2, height: (tmp2 - 4) / 2 / 0.75 };
-  const importDefault = obj;
   obj = {};
   const items = [, , ];
   ({ imageRow: arr[0], topRow: arr[1] } = tmp);
@@ -281,8 +298,8 @@ function TwoImagesRow(widthOverride) {
   items[2] = end;
   obj.style = items;
   obj.children = sources.map((source, initialIndex) => {
-    const obj = { handlePressMedia: closure_0, initialIndex, source, dimensions: obj };
-    return callback(closure_23, obj, initialIndex);
+    obj = { handlePressMedia: closure_0, initialIndex, source, dimensions: obj };
+    return outer1_15(outer1_23, obj, initialIndex);
   });
   return closure_15(closure_6, obj);
 }
@@ -293,7 +310,7 @@ function ThreeImages(widthOverride) {
   const tmp = callback4();
   const tmp2 = useMaxWidth(widthOverride.widthOverride);
   let obj = { style: items };
-  const items = [, ];
+  items = [, ];
   ({ imagesContainer: arr[0], imageRow: arr[1] } = tmp);
   obj = { style: tmp.leftColumn, children: callback2(Media, obj) };
   obj = { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: obj1 };
@@ -314,13 +331,13 @@ function FourImages(widthOverride) {
   let obj = { width: tmp2 / 2 - 4, height: (tmp2 / 2 - 4) / 1.5 };
   obj = { style: tmp.imagesContainer };
   obj = { style: items };
-  const items = [, ];
+  items = [, ];
   ({ imageRow: arr[0], topRow: arr[1] } = tmp);
   const items1 = [callback2(Media, { handlePressMedia, initialIndex: 0, source: sources[0], dimensions: obj }), callback2(Media, { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: obj })];
   obj.children = items1;
   const items2 = [callback3(closure_6, obj), ];
   const obj3 = { style: items3 };
-  const items3 = [, ];
+  items3 = [, ];
   ({ imageRow: arr4[0], bottomRow: arr4[1] } = tmp);
   const items4 = [callback2(Media, { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: obj }), callback2(Media, { handlePressMedia, initialIndex: 3, source: sources[3], dimensions: obj })];
   obj3.children = items4;
@@ -334,7 +351,6 @@ function SingleImage(source) {
   let visible;
   let widthOverride;
   source = source.source;
-  const arg1 = source;
   ({ initialIndex, handlePressMedia, visible, widthOverride } = source);
   const tmp = callback4();
   const tmp2 = useMaxWidth(widthOverride);
@@ -351,15 +367,15 @@ function SingleImage(source) {
       const result = source.width / source.height;
       if (result >= 1) {
         const _Math2 = Math;
-        const bound = Math.min(source.width, tmp2);
+        const bound = Math.min(source.width, closure_1);
         let obj = { height: bound / result, width: bound };
         return obj;
       } else {
         const _Math = Math;
         const bound1 = Math.min(source.height, 330);
         const result1 = bound1 * result;
-        if (result1 > globalThis) {
-          obj = { width: tmp2, height: tmp2 / result };
+        if (result1 > closure_1) {
+          obj = { width: closure_1, height: closure_1 / result };
         } else {
           obj = { width: result1, height: bound1 };
         }
@@ -375,17 +391,14 @@ function SingleImage(source) {
 class GravityAttachmentMediaMosaic {
   constructor(arg0) {
     sources = global.sources;
-    arg1 = sources;
     handlePressMedia = global.handlePressMedia;
-    importDefault = handlePressMedia;
     widthOverride = global.widthOverride;
-    dependencyMap = widthOverride;
     length = sources.length;
     items = [, ];
     items[0] = length;
     items[1] = sources;
-    tmp = f113939();
-    memo = importAll.useMemo(() => {
+    tmp = f116108();
+    memo = MessageEmbedTypes.useMemo(() => {
       let sum;
       const items = [];
       const result = length % 3;
@@ -396,16 +409,16 @@ class GravityAttachmentMediaMosaic {
       items.push(sources.slice(0, num));
       if (num < length) {
         do {
-          let tmp3 = closure_0;
+          let tmp3 = sources;
           sum = num + 3;
-          let arr = items.push(closure_0.slice(num, sum));
-          let tmp6 = closure_3;
+          let arr = items.push(sources.slice(num, sum));
+          let tmp6 = length;
           num = sum;
-        } while (sum < closure_3);
+        } while (sum < length);
       }
       return items;
     }, items);
-    importAll = memo;
+    MessageEmbedTypes = memo;
     num = 0;
     if (0 === length) {
       return null;
@@ -450,17 +463,17 @@ class GravityAttachmentMediaMosaic {
             obj.children = memo.map((sources) => {
               if (1 === sources.length) {
                 let obj = { handlePressMedia, source: sources[0] };
-                return callback(closure_24, obj, arg1);
+                return outer1_15(outer1_24, obj, arg1);
               } else if (2 === sources.length) {
                 obj = { widthOverride, sources, handlePressMedia, end: arg1 === memo.length - 1 };
-                return callback(closure_26, obj, arg1);
+                return outer1_15(outer1_26, obj, arg1);
               } else {
                 let num2 = 0;
                 if (0 !== arg1) {
                   num2 = memo[0].length + 3 * (arg1 - 1);
                 }
                 obj = { widthOverride, handlePressMedia, offset: num2, sources, start: 0 === arg1, end: arg1 === memo.length - 1 };
-                return callback(closure_25, obj, arg1);
+                return outer1_15(outer1_25, obj, arg1);
               }
             });
             tmp4 = jsx(View, obj);
@@ -474,7 +487,7 @@ class GravityAttachmentMediaMosaic {
 }
 function useMaxWidth(widthOverride) {
   let diff = widthOverride;
-  const context = React.useContext(arg1(dependencyMap[29]).ICYMIContext);
+  const context = React.useContext(require(15180) /* useICYMIContextConstructor */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (null != context) {
@@ -484,87 +497,71 @@ function useMaxWidth(widthOverride) {
   }
   return diff;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ Pressable: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-const tmp2 = arg1(dependencyMap[2]);
-({ AnalyticsObjectTypes: closure_12, AnalyticsObjects: closure_13, AnalyticsPages: closure_14 } = arg1(dependencyMap[8]));
-const tmp3 = arg1(dependencyMap[8]);
-({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = arg1(dependencyMap[9]));
-const tmp4 = arg1(dependencyMap[9]);
-let closure_18 = arg1(dependencyMap[10]).createStyles(() => {
+({ Pressable: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ AnalyticsObjectTypes: closure_12, AnalyticsObjects: closure_13, AnalyticsPages: closure_14 } = ME);
+({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = jsxProd);
+let closure_18 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs };
+  obj = { borderRadius: importDefault(689).radii.xs };
   obj.media = obj;
-  obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
+  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH };
   obj.video = obj;
-  obj.thumbhashMedia = {};
+  obj.thumbhashMedia = { position: "absolute", top: 0, left: 0, zIndex: 1 };
   obj.container = { gap: 4 };
-  obj.imagesContainer = { position: "/assets/design/components/Illustration/native/redesign/generated/images", bottom: 160, left: 160 };
-  obj.imageRow = {};
-  obj.topRow = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderTopStartRadius: importDefault(dependencyMap[11]).radii.lg };
-  const obj1 = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderTopStartRadius: importDefault(dependencyMap[11]).radii.lg };
-  obj.bottomRow = { overflow: "hidden", borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomStartRadius: importDefault(dependencyMap[11]).radii.lg };
-  const obj2 = { overflow: "hidden", borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomStartRadius: importDefault(dependencyMap[11]).radii.lg };
-  obj.videoIcon = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[11]).radii.round, padding: 16 };
-  const obj4 = { 9223372036854775807: "display", 0: false, 9223372036854775807: 800, 9223372036854775807: 16, 0: 20, borderRadius: importDefault(dependencyMap[11]).radii.round, padding: importDefault(dependencyMap[11]).space.PX_4 };
+  obj.imagesContainer = { justifyContent: "center", gap: 4, width: "100%" };
+  obj.imageRow = { flexDirection: "row", gap: 4 };
+  obj.topRow = { overflow: "hidden", borderTopEndRadius: importDefault(689).radii.lg, borderTopStartRadius: importDefault(689).radii.lg };
+  const obj1 = { overflow: "hidden", borderTopEndRadius: importDefault(689).radii.lg, borderTopStartRadius: importDefault(689).radii.lg };
+  obj.bottomRow = { overflow: "hidden", borderBottomEndRadius: importDefault(689).radii.lg, borderBottomStartRadius: importDefault(689).radii.lg };
+  const obj2 = { overflow: "hidden", borderBottomEndRadius: importDefault(689).radii.lg, borderBottomStartRadius: importDefault(689).radii.lg };
+  obj.videoIcon = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(689).radii.round, padding: 16 };
+  const obj4 = { position: "absolute", borderRadius: importDefault(689).radii.round, padding: importDefault(689).space.PX_4, bottom: 8, right: 8 };
   obj.muteIcon = obj4;
-  const obj3 = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[11]).radii.round, padding: 16 };
-  obj.spoilerText = { backgroundColor: importDefault(dependencyMap[11]).colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: importDefault(dependencyMap[11]).radii.lg, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, paddingVertical: 6 };
-  const obj5 = { backgroundColor: importDefault(dependencyMap[11]).colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: importDefault(dependencyMap[11]).radii.lg, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, paddingVertical: 6 };
-  obj.leftColumn = { overflow: "hidden", borderTopStartRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomStartRadius: importDefault(dependencyMap[11]).radii.lg };
-  const obj6 = { overflow: "hidden", borderTopStartRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomStartRadius: importDefault(dependencyMap[11]).radii.lg };
-  obj.rightColumn = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, gap: 4 };
-  const obj7 = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, gap: 4 };
-  obj.singleImage = { overflow: "hidden", borderRadius: importDefault(dependencyMap[11]).radii.lg };
-  obj.centerContainer = { status: null, constructor: null, borderRadius: null, position: null, top: null, accessibilityRole: null };
-  obj.absoluteContainer = {};
-  const obj8 = { overflow: "hidden", borderRadius: importDefault(dependencyMap[11]).radii.lg };
-  obj.iconBg = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
-  const obj9 = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
-  obj.iconBgSelected = { backgroundColor: importDefault(dependencyMap[11]).colors.WHITE };
+  const obj3 = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(689).radii.round, padding: 16 };
+  obj.spoilerText = { backgroundColor: importDefault(689).colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: importDefault(689).radii.lg, paddingHorizontal: importDefault(689).space.PX_12, paddingVertical: 6 };
+  const obj5 = { backgroundColor: importDefault(689).colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: importDefault(689).radii.lg, paddingHorizontal: importDefault(689).space.PX_12, paddingVertical: 6 };
+  obj.leftColumn = { overflow: "hidden", borderTopStartRadius: importDefault(689).radii.lg, borderBottomStartRadius: importDefault(689).radii.lg };
+  const obj6 = { overflow: "hidden", borderTopStartRadius: importDefault(689).radii.lg, borderBottomStartRadius: importDefault(689).radii.lg };
+  obj.rightColumn = { overflow: "hidden", borderTopEndRadius: importDefault(689).radii.lg, borderBottomEndRadius: importDefault(689).radii.lg, gap: 4 };
+  const obj7 = { overflow: "hidden", borderTopEndRadius: importDefault(689).radii.lg, borderBottomEndRadius: importDefault(689).radii.lg, gap: 4 };
+  obj.singleImage = { overflow: "hidden", borderRadius: importDefault(689).radii.lg };
+  obj.centerContainer = { position: "absolute", width: "100%", height: "100%", alignItems: "center", justifyContent: "center", zIndex: 2 };
+  obj.absoluteContainer = { position: "absolute", width: "100%", height: "100%", zIndex: 2 };
+  const obj8 = { overflow: "hidden", borderRadius: importDefault(689).radii.lg };
+  obj.iconBg = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWER };
+  const obj9 = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWER };
+  obj.iconBgSelected = { backgroundColor: importDefault(689).colors.WHITE };
   return obj;
 });
 let closure_19 = { code: "function ICYMIMediaMosaicTsx1(){const{withTiming,imageFinishedLoading}=this.__closure;return{opacity:withTiming(imageFinishedLoading?0:1,{duration:150})};}" };
-const obj = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[37]).fileFinishedImporting("modules/icymi/native/media/ICYMIMediaMosaic.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/media/ICYMIMediaMosaic.tsx");
 
 export default function ICYMIMediaMosaic(message) {
   message = message.message;
-  const arg1 = message;
   const widthOverride = message.widthOverride;
-  const importDefault = widthOverride;
   const itemType = message.itemType;
-  const dependencyMap = itemType;
-  let tmp4;
+  let c5;
   let allMediaSources;
-  let closure_7;
-  let closure_8;
-  let obj = arg1(dependencyMap[14]);
-  const items = [closure_8];
+  let nonEmbedSources;
+  let callback;
+  let obj = message(itemType[14]);
+  let items = [callback];
   const stateFromStores = obj.useStateFromStores(items, () => callback.getChannel(message.getChannelId()));
-  let callback = stateFromStores;
-  const tmp3 = callback(React.useState(false), 2);
-  const React = tmp3[1];
-  tmp4 = !tmp3[0] && message.visible;
+  const tmp3 = stateFromStores(React.useState(false), 2);
+  React = tmp3[1];
+  c5 = tmp4;
   const items1 = [message];
   const memo = React.useMemo(() => {
     let obj = message(itemType[30]);
     const result = obj.extractMediaSourcesFromMessage(message, message, undefined, message(itemType[31]).GRAVITY_VALID_EMBED_TYPES);
-    const mapped = result.map((closure_1) => callback(closure_2[30]).flattenSource(closure_1));
+    const mapped = result.map((closure_1) => message(itemType[30]).flattenSource(closure_1));
     const found = mapped.filter(message(itemType[32]).isNotNullish);
     const tmp2 = stateFromStores(message(itemType[33]).partition(found, (accessoryType) => "embed" === accessoryType.accessoryType), 2);
     obj = { allMediaSources: found, nonEmbedSources: tmp2[1], embedSources: tmp2[0] };
     return obj;
   }, items1);
   allMediaSources = memo.allMediaSources;
-  const nonEmbedSources = memo.nonEmbedSources;
-  closure_7 = nonEmbedSources;
+  nonEmbedSources = memo.nonEmbedSources;
   const embedSources = memo.embedSources;
   const items2 = [, , , , ];
   ({ channel_id: arr5[0], id: arr5[1] } = message);
@@ -576,14 +573,13 @@ export default function ICYMIMediaMosaic(message) {
     let ref;
     ({ ref, initialIndex } = arg0);
     let obj = widthOverride(itemType[26]);
-    obj.itemInteracted(message.id, "message", "press_media");
+    obj.itemInteracted(items.id, "message", "press_media");
     let obj1 = widthOverride(itemType[26]);
-    obj = { itemId: message.id, itemType, actionParameters: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false } };
+    obj = { itemId: items.id, itemType, actionParameters: { actionGestureType: "press", actionTargetElement: "media_mosaic", actionIntentType: "open", actionDestinationType: null } };
     obj1.feedItemActioned(obj);
-    obj = { page: constants3.ICYMI, object: constants2.ACK_MEDIA_VIEWED, objectType: constants.ACK_SEMI_AUTOMATIC };
-    message(itemType[34]).ack(message.channel_id, obj, true, true, message.id);
-    const items = [];
-    const message = items;
+    obj = { page: outer1_14.ICYMI, object: outer1_13.ACK_MEDIA_VIEWED, objectType: outer1_12.ACK_SEMI_AUTOMATIC };
+    message(itemType[34]).ack(items.channel_id, obj, true, true, items.id);
+    items = [];
     const item = allMediaSources.forEach((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
@@ -592,28 +588,27 @@ export default function ICYMIMediaMosaic(message) {
     });
     callback(true);
     const obj4 = message(itemType[34]);
-    obj1 = { disableDownload: false, initialSources: items, initialIndex, analyticsSource: "Channel", channelId: message.channel_id };
+    obj1 = { disableDownload: false, initialSources: items, initialIndex, analyticsSource: "Channel", channelId: items.channel_id };
     let str = "";
     if (null != stateFromStores) {
-      str = message(itemType[36]).computeChannelName(stateFromStores, closure_10, closure_9);
+      str = message(itemType[36]).computeChannelName(stateFromStores, outer1_10, outer1_9);
       const obj8 = message(itemType[36]);
     }
     obj1.contextName = str;
     obj1.contextIcon = undefined;
     obj1.originViewOrOriginLayout = ref.current;
     obj1.onClose = function onClose() {
-      return callback(false);
+      return outer1_4(false);
     };
     message(itemType[35]).openMediaModal(obj1);
   }, items2);
-  closure_8 = callback;
   if (0 !== nonEmbedSources.length) {
     obj = { style: tmp.container };
     obj = { widthOverride, sources: nonEmbedSources, handlePressMedia: callback, visible: tmp4 };
     const items3 = [callback2(GravityAttachmentMediaMosaic, obj), ];
     let mapped;
     if (null != embedSources) {
-      mapped = embedSources.map((source) => callback2(closure_29, { widthOverride, handlePressMedia: callback, initialIndex: arg1 + nonEmbedSources.length, source, visible: tmp4 }, "gif-" + arg1));
+      mapped = embedSources.map((source) => outer1_15(outer1_29, { widthOverride, handlePressMedia: callback, initialIndex: arg1 + nonEmbedSources.length, source, visible: c5 }, "gif-" + arg1));
     }
     items3[1] = mapped;
     obj.children = items3;

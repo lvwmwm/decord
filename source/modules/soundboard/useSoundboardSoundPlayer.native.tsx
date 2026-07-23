@@ -1,20 +1,22 @@
-// Module ID: 15638
-// Function ID: 119419
+// Module ID: 15755
+// Function ID: 121592
 // Name: useSoundboardSoundPlayer
-// Dependencies: []
+// Dependencies: [31, 4578, 8844, 3803, 15756, 566, 5739, 2]
 // Exports: default
 
-// Module 15638 (useSoundboardSoundPlayer)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const SoundOutputChannel = arg1(dependencyMap[2]).SoundOutputChannel;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/soundboard/useSoundboardSoundPlayer.native.tsx");
+// Module 15755 (useSoundboardSoundPlayer)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SoundOutputChannel } from "SoundOutputChannel";
+
+const require = arg1;
+const result = require("SoundOutputChannel").fileFinishedImporting("modules/soundboard/useSoundboardSoundPlayer.native.tsx");
 
 export default function useSoundboardSoundPlayer(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const importDefault = arg1;
   if (arg2 === undefined) {
-    const SoundboardSettings = arg1(dependencyMap[3]).SoundboardSettings;
+    const SoundboardSettings = _require(audioRef[3]).SoundboardSettings;
     const setting = SoundboardSettings.getSetting();
     let volume;
     if (null != setting) {
@@ -24,23 +26,22 @@ export default function useSoundboardSoundPlayer(arg0, arg1) {
   if (arg3 === undefined) {
     const DEFAULT = SoundOutputChannel.DEFAULT;
   }
-  let dependencyMap;
-  const audioRef = React.useContext(importDefault(dependencyMap[4])).audioRef;
-  dependencyMap = audioRef;
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_4];
+  audioRef = undefined;
+  audioRef = React.useContext(importDefault(audioRef[4])).audioRef;
+  let obj = _require(audioRef[5]);
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0];
   obj = {};
   const items2 = [arg0, audioRef, arg1];
-  const stateFromStores = obj.useStateFromStores(items, () => playingSound.isPlayingSound(arg0.soundId), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.isPlayingSound(lib.soundId), items1);
   obj.playSoundboardSound = React.useCallback((arg0) => {
     if (null != audioRef.current) {
       const current = audioRef.current;
       current.pause();
     }
-    if (null != arg1) {
-      arg0(audioRef[6]).playSound(arg0, arg1, arg0);
-      const obj = arg0(audioRef[6]);
+    if (null != closure_1) {
+      lib(audioRef[6]).playSound(lib, closure_1, arg0);
+      const obj = lib(audioRef[6]);
     }
   }, items2);
   obj.isPlayingSound = stateFromStores;

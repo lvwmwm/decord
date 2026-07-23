@@ -1,63 +1,63 @@
-// Module ID: 6895
-// Function ID: 54910
+// Module ID: 6900
+// Function ID: 54944
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 6910, 3986, 2, 6, 7, 15, 17, 18, 27, 6913]
+// Dependencies: [5, 6, 7, 6901, 6902, 3767, 1849, 653, 3, 1882, 6904, 2]
 
-// Module 6895 (_createForOfIteratorHelperLoose)
-import _slicedToArray from "_slicedToArray";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import enforcing from "enforcing";
-import closure_6 from "enforcing";
-import result2 from "result2";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import { RelationshipTypes } from "_possibleConstructorReturn";
-import importDefaultResult from "_getPrototypeOf";
-import ProcessUtils from "ProcessUtils";
+// Module 6900 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+import importDefaultResult from "_isNativeReflectConstruct";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -68,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -95,12 +95,12 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 importDefaultResult = new importDefaultResult("UserSearchItems");
-let closure_12 = false;
-let tmp4 = () => {
+let c12 = false;
+let tmp4 = (() => {
   class UserSearchItems {
     constructor() {
-      f54917 = this;
-      tmp = asyncGeneratorStep(this, UserSearchItems);
+      self = this;
+      tmp = outer1_4(this, UserSearchItems);
       this.actions = {
         POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
         WRITE_CACHES(arg0, arg1) {
@@ -110,21 +110,20 @@ let tmp4 = () => {
       return;
     }
   }
-  const importDefault = UserSearchItems;
   let obj = { key: "getAll" };
   let closure_0 = callback(async () => {
     const nowResult = performance.now();
-    const userSearchItemsResult = callback(closure_2[9]).userSearchItems();
+    const userSearchItemsResult = UserSearchItems(outer2_2[9]).userSearchItems();
     if (null == userSearchItemsResult) {
       return [];
     } else {
       const arr = yield userSearchItemsResult.getMany();
       const _performance = performance;
       const _HermesInternal = HermesInternal;
-      closure_11.log("asynchronously loaded in " + performance.now() - nowResult + "ms (userSearchItems: " + arr.length + ")");
+      outer2_11.log("asynchronously loaded in " + performance.now() - nowResult + "ms (userSearchItems: " + arr.length + ")");
       return arr;
     }
-    const obj = callback(closure_2[9]);
+    const obj = UserSearchItems(outer2_2[9]);
   });
   obj.value = function getAll() {
     return callback(...arguments);
@@ -140,14 +139,14 @@ let tmp4 = () => {
   obj = {
     key: "shouldUseCache",
     get() {
-      return !closure_12;
+      return !outer1_12;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "handlePostConnectionOpen",
     value() {
-      let closure_12 = true;
+      const outer1_12 = true;
     }
   };
   items[4] = {
@@ -156,26 +155,26 @@ let tmp4 = () => {
       let iter3;
       let iter6;
       let obj = {};
-      const tmp = callback3(friendIDs.getFriendIDs());
+      const tmp = outer1_13(outer1_8.getFriendIDs());
       const iter = tmp();
       let iter2 = iter;
       if (!iter.done) {
         do {
           let value = iter2.value;
-          let tmp2 = _defineProperties;
-          let user = _defineProperties.getUser(value);
+          let tmp2 = outer1_9;
+          let user = outer1_9.getUser(value);
           if (null != user) {
-            let tmp15 = closure_0;
-            let tmp16 = closure_2;
-            let obj5 = closure_0(closure_2[10]);
+            let tmp15 = callback;
+            let tmp16 = outer1_2;
+            let obj5 = callback(outer1_2[10]);
             let names = obj5.getNames(user);
             obj = { id: value };
-            let tmp18 = closure_10;
-            obj.type = closure_10.FRIEND;
+            let tmp18 = outer1_10;
+            obj.type = outer1_10.FRIEND;
             obj.user = user;
             ({ names: obj6.names, nick: obj6.nick } = names);
-            let tmp19 = result2;
-            let userAffinity = result2.getUserAffinity(value);
+            let tmp19 = outer1_7;
+            let userAffinity = outer1_7.getUserAffinity(value);
             let prop;
             if (null != userAffinity) {
               prop = userAffinity.communicationProbability;
@@ -193,28 +192,28 @@ let tmp4 = () => {
           iter2 = iter3;
         } while (!iter3.done);
       }
-      const gameRelationships = gameRelationships.getGameRelationships();
+      const gameRelationships = outer1_6.getGameRelationships();
       const values = gameRelationships.values();
-      const tmp7 = callback3(values.filter((type) => type.type === constants.FRIEND));
+      const tmp7 = outer1_13(values.filter((type) => type.type === outer2_10.FRIEND));
       const iter4 = tmp7();
       let iter5 = iter4;
       if (!iter4.done) {
         do {
           value = iter5.value;
-          let tmp8 = _defineProperties;
-          let user1 = _defineProperties.getUser(value.id);
+          let tmp8 = outer1_9;
+          let user1 = outer1_9.getUser(value.id);
           if (null != user1) {
-            let tmp21 = closure_0;
-            let tmp22 = closure_2;
-            let obj7 = closure_0(closure_2[10]);
+            let tmp21 = callback;
+            let tmp22 = outer1_2;
+            let obj7 = callback(outer1_2[10]);
             let names1 = obj7.getNames(user1);
             obj = { id: value.id };
-            let tmp24 = closure_10;
-            obj.type = closure_10.FRIEND;
+            let tmp24 = outer1_10;
+            obj.type = outer1_10.FRIEND;
             obj.user = user1;
             ({ names: obj8.names, nick: obj8.nick } = names1);
-            let tmp25 = result2;
-            let userAffinity1 = result2.getUserAffinity(value.id);
+            let tmp25 = outer1_7;
+            let userAffinity1 = outer1_7.getUserAffinity(value.id);
             let prop1;
             if (null != userAffinity1) {
               prop1 = userAffinity1.communicationProbability;
@@ -232,14 +231,14 @@ let tmp4 = () => {
           iter5 = iter6;
         } while (!iter6.done);
       }
-      const result = UserSearchItems(closure_2[9]).userSearchItemsTransaction(arg0);
+      const result = UserSearchItems(outer1_2[9]).userSearchItemsTransaction(arg0);
       result.delete();
       result.putAll(Object.values(obj));
     }
   };
   return callback2(UserSearchItems, items);
-}();
+})();
 tmp4 = new tmp4();
-const result = ProcessUtils.fileFinishedImporting("modules/app_database/modules/UserSearchItems.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/UserSearchItems.tsx");
 
 export default tmp4;

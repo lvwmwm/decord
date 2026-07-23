@@ -1,9 +1,18 @@
-// Module ID: 5651
-// Function ID: 48365
+// Module ID: 5656
+// Function ID: 48392
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5657, 1849, 21, 4351, 566, 686, 2]
 
-// Module 5651 (_isNativeReflectConstruct)
+// Module 5656 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -104,7 +113,7 @@ function handleLoadThreadsSuccess(firstMessages) {
     if (!iter2.done) {
       do {
         let tmp2 = closure_10;
-        closure_10[iter2.value.id] = {};
+        closure_10[iter2.value.id] = { loaded: true, firstMessage: null };
         let iter = tmp8();
         iter2 = iter;
         done = iter.done;
@@ -115,8 +124,8 @@ function handleLoadThreadsSuccess(firstMessages) {
     if (!iter3.done) {
       do {
         let value = iter3.value;
-        let tmp5 = closure_14;
-        let tmp6 = closure_14(value.channel_id, value);
+        let tmp5 = storeFirstMessage;
+        let tmp6 = storeFirstMessage(value.channel_id, value);
         let iter4 = tmp4();
         iter3 = iter4;
         done2 = iter4.done;
@@ -124,11 +133,11 @@ function handleLoadThreadsSuccess(firstMessages) {
     }
   }
 }
-function storeFirstMessage(channel_id, message) {
+function storeFirstMessage(channel_id, first_message) {
   let messageRecord = null;
-  if (null != message) {
-    let obj = message(dependencyMap[8]);
-    messageRecord = obj.createMessageRecord(message);
+  if (null != first_message) {
+    let obj = require(4351) /* createMinimalMessageRecord */;
+    messageRecord = obj.createMessageRecord(first_message);
   }
   obj = { loaded: true, firstMessage: messageRecord };
   closure_10[channel_id] = obj;
@@ -138,7 +147,7 @@ function handleReaction(colors) {
   let emoji;
   let reactionType;
   ({ channelId, emoji, reactionType } = colors);
-  if (null != closure_10[channelId]) {
+  if (null != dependencyMap[channelId]) {
     if (null != tmp5.firstMessage) {
       if (tmp2 !== tmp5.firstMessage.id) {
         return false;
@@ -151,7 +160,7 @@ function handleReaction(colors) {
         }
         const obj = {};
         const merged = Object.assign(tmp5);
-        closure_10[channelId] = obj;
+        dependencyMap[channelId] = obj;
         if ("MESSAGE_REACTION_ADD" === tmp) {
           const firstMessage2 = tmp5.firstMessage;
           let addReactionResult = firstMessage2.addReaction(emoji, tmp6, colors.colors, reactionType);
@@ -159,33 +168,26 @@ function handleReaction(colors) {
           const firstMessage = tmp5.firstMessage;
           addReactionResult = firstMessage.removeReaction(emoji, tmp6, reactionType);
         }
-        closure_10[channelId].firstMessage = addReactionResult;
+        dependencyMap[channelId].firstMessage = addReactionResult;
       }
     }
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
 let closure_10 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class ForumPostMessagesStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ForumPostMessagesStore);
-      obj = closure_6(ForumPostMessagesStore);
-      tmp2 = closure_5;
-      if (closure_11()) {
+      tmp = outer1_3(this, ForumPostMessagesStore);
+      obj = outer1_6(ForumPostMessagesStore);
+      tmp2 = outer1_5;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -194,12 +196,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ForumPostMessagesStore;
   callback2(ForumPostMessagesStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9);
+      this.waitFor(outer1_8, outer1_9);
     }
   };
   const items = [obj, , ];
@@ -207,7 +208,7 @@ let tmp2 = (Store) => {
     key: "isLoading",
     value(arg0) {
       let loaded;
-      if (null != closure_10[arg0]) {
+      if (null != outer1_10[arg0]) {
         loaded = tmp.loaded;
       }
       return true !== loaded;
@@ -217,29 +218,29 @@ let tmp2 = (Store) => {
   obj = {
     key: "getMessage",
     value(arg0) {
-      if (!(arg0 in closure_10)) {
-        closure_10[arg0] = { "Bool(true)": "L", "Bool(true)": "L" };
+      if (!(arg0 in outer1_10)) {
+        outer1_10[arg0] = { loaded: false, firstMessage: null };
       }
-      return closure_10[arg0];
+      return outer1_10[arg0];
     }
   };
   items[2] = obj;
   return callback(ForumPostMessagesStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ForumPostMessagesStore";
-tmp2 = new tmp2(importDefault(dependencyMap[10]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let closure_10 = {};
   },
   MESSAGE_CREATE: function handleMessageCreate(isPushNotification) {
     let tmp = !isPushNotification.isPushNotification;
     if (tmp) {
-      const tmp4 = isPushNotification.message.id === importDefault(dependencyMap[7]).castChannelIdAsMessageId(isPushNotification.message.channel_id);
+      const tmp4 = isPushNotification.message.id === importDefault(21).castChannelIdAsMessageId(isPushNotification.message.channel_id);
       if (tmp4) {
         storeFirstMessage(isPushNotification.message.channel_id, isPushNotification.message);
       }
       tmp = tmp4;
-      const obj = importDefault(dependencyMap[7]);
+      const obj = importDefault(21);
     }
     return tmp;
   },
@@ -247,17 +248,18 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     if (message.message.id !== message.message.channel_id) {
       return false;
     } else {
-      const obj4 = importDefault(dependencyMap[7]);
+      const obj4 = importDefault(21);
+      const tmp14 = dependencyMap[obj4.castMessageIdAsChannelId(obj4, message.message.id)];
       let tmp10 = null != tmp14;
       if (tmp10) {
         if (null != tmp14.firstMessage) {
-          let obj = importDefault(dependencyMap[7]);
+          let obj = importDefault(21);
           obj = {};
           const result = obj.castMessageIdAsChannelId(message.message.id);
           const merged = Object.assign(tmp14);
-          obj["firstMessage"] = arg1(dependencyMap[8]).updateMessageRecord(tmp14.firstMessage, message.message);
-          closure_10[result] = obj;
-          const obj3 = arg1(dependencyMap[8]);
+          obj["firstMessage"] = require(4351) /* createMinimalMessageRecord */.updateMessageRecord(tmp14.firstMessage, message.message);
+          dependencyMap[result] = obj;
+          const obj3 = require(4351) /* createMinimalMessageRecord */;
         }
         tmp10 = tmp;
       }
@@ -268,16 +270,16 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     if (id.id !== obj.castChannelIdAsMessageId(id.channelId)) {
       return false;
     } else {
-      closure_10[id.channelId] = {};
+      closure_10[id.channelId] = { loaded: true, firstMessage: null };
     }
-    const obj = importDefault(dependencyMap[7]);
+    obj = importDefault(21);
   },
   THREAD_CREATE: function handleThreadCreate(channel) {
-    let tmp = null == closure_10[channel.channel.id];
+    let tmp = null == dependencyMap[channel.channel.id];
     if (tmp) {
       const tmp3 = !subscribedToThreads.isSubscribedToThreads(channel.channel.guild_id);
       if (!tmp3) {
-        closure_10[channel.channel.id] = {};
+        dependencyMap[channel.channel.id] = { loaded: true, firstMessage: null };
       }
       tmp = !tmp3;
       const tmp4 = !tmp3;
@@ -298,7 +300,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
         const merged = Object.assign(tmp);
         const firstMessage = tmp.firstMessage;
         obj["firstMessage"] = firstMessage.set("reactions", []);
-        closure_10[channelId] = obj;
+        dependencyMap[channelId] = obj;
       }
       tmp2 = tmp3;
     }
@@ -319,7 +321,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
         const merged = Object.assign(tmp);
         const firstMessage = tmp.firstMessage;
         obj["firstMessage"] = firstMessage.removeReactionsForEmoji(emoji);
-        closure_10[channelId] = obj;
+        dependencyMap[channelId] = obj;
       }
       tmp2 = tmp3;
     }
@@ -327,7 +329,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
   },
   MESSAGE_REACTION_ADD_MANY: function handleReactionBatch(channelId) {
     channelId = channelId.channelId;
-    if (null != closure_10[channelId]) {
+    if (null != dependencyMap[channelId]) {
       if (null != tmp3.firstMessage) {
         if (tmp !== tmp3.firstMessage.id) {
           return false;
@@ -341,7 +343,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
           const obj = {};
           const merged = Object.assign(tmp3);
           obj["firstMessage"] = firstMessage.addReactionBatch(tmp2, id);
-          closure_10[channelId] = obj;
+          dependencyMap[channelId] = obj;
         }
       }
     }
@@ -351,8 +353,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     threads = threads.threads;
     for (const key10005 in threads) {
       let tmp = key10005;
-      let tmp2 = closure_14;
-      let tmp3 = closure_14(key10005, threads[key10005].first_message);
+      let tmp2 = storeFirstMessage;
+      let tmp3 = storeFirstMessage(key10005, threads[key10005].first_message);
+      continue;
     }
   },
   LOAD_THREADS_SUCCESS: handleLoadThreadsSuccess,
@@ -363,16 +366,16 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     ({ channelId, messages } = arg0);
     let tmp2 = null != tmp;
     if (tmp2) {
-      let obj = importDefault(dependencyMap[7]);
+      let obj = importDefault(21);
       tmp2 = tmp.id === obj.castChannelIdAsMessageId(channelId);
     }
     if (tmp2) {
-      obj = { loaded: true, firstMessage: arg1(dependencyMap[8]).createMessageRecord(tmp) };
+      obj = { loaded: true, firstMessage: require(4351) /* createMinimalMessageRecord */.createMessageRecord(tmp) };
       closure_10[channelId] = obj;
-      const obj3 = arg1(dependencyMap[8]);
+      const obj3 = require(4351) /* createMinimalMessageRecord */;
     }
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/ForumPostMessagesStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/ForumPostMessagesStore.tsx");
 
 export default tmp2;

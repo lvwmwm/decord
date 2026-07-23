@@ -1,10 +1,14 @@
-// Module ID: 5718
-// Function ID: 49163
+// Module ID: 5723
+// Function ID: 49190
 // Name: getSpoilerGatingChannelId
-// Dependencies: []
+// Dependencies: [1348, 5724, 566, 2]
 // Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId
 
-// Module 5718 (getSpoilerGatingChannelId)
+// Module 5723 (getSpoilerGatingChannelId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getSpoilerGatingChannelId(isSpoilerChannel, arg1, arg2) {
   let obj = arg1;
   let obj2 = arg2;
@@ -12,7 +16,7 @@ function getSpoilerGatingChannelId(isSpoilerChannel, arg1, arg2) {
     obj = closure_3;
   }
   if (obj2 === undefined) {
-    obj2 = closure_2;
+    obj2 = _isNativeReflectConstruct;
   }
   if (null == isSpoilerChannel) {
     return null;
@@ -43,32 +47,30 @@ function isChannelSpoilerGated(channel) {
     tmp = closure_3;
   }
   if (tmp2 === undefined) {
-    tmp2 = closure_2;
+    tmp2 = _isNativeReflectConstruct;
   }
   return null != getSpoilerGatingChannelId(channel, tmp, tmp2);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/spoiler_channels/SpoilerChannelUtils.tsx");
+const result = require("initialize").fileFinishedImporting("modules/spoiler_channels/SpoilerChannelUtils.tsx");
 
 export const useGetSpoilerGatingChannelId = function useGetSpoilerGatingChannelId(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3, closure_2];
+  const _require = arg0;
+  const items = [closure_3, _isNativeReflectConstruct];
   const items1 = [arg0];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => callback(arg0, closure_3, closure_2), items1);
+  return _require(566).useStateFromStores(items, () => outer1_4(closure_0, outer1_3, outer1_2), items1);
 };
 export { isChannelSpoilerGated };
 export const useIsChannelSpoilerGated = function useIsChannelSpoilerGated(stateFromStores) {
-  const arg1 = stateFromStores;
-  const items = [closure_3, closure_2];
+  const _require = stateFromStores;
+  const items = [closure_3, _isNativeReflectConstruct];
   const items1 = [stateFromStores];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => callback(arg0, closure_3, closure_2), items1);
+  return _require(566).useStateFromStores(items, () => outer1_5(closure_0, outer1_3, outer1_2), items1);
 };
 export const useShouldShowSpoilerGateForChannelId = function useShouldShowSpoilerGateForChannelId(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_3];
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct, closure_3];
   const items1 = [arg0];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => callback(channel.getChannel(arg0), closure_3, channel), items1);
+  return _require(566).useStateFromStores(items, () => outer1_5(outer1_2.getChannel(closure_0), outer1_3, outer1_2), items1);
 };
 export const shouldShowSpoilerGateForChannelId = function shouldShowSpoilerGateForChannelId(channelId) {
   let tmp = null != channelId;

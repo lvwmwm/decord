@@ -1,10 +1,12 @@
 // Module ID: 810
-// Function ID: 9078
+// Function ID: 9079
 // Name: createStackParser
-// Dependencies: []
+// Dependencies: [65]
 // Exports: getFramesFromEvent, getFunctionName, getVueInternalName, normalizeStackTracePath, stackParserFromStackParserOptions
 
 // Module 810 (createStackParser)
+import _toConsumableArray from "_toConsumableArray";
+
 function createStackParser() {
   const length = arguments.length;
   const array = new Array(length);
@@ -37,12 +39,12 @@ function createStackParser() {
         if (arr3.length > 1024) {
           str = arr3.slice(0, 1024);
         }
-        let tmp = regex;
+        let tmp = outer1_1;
         let tmp2 = str;
         let str2 = str;
-        if (regex.test(str)) {
-          let tmp3 = regex;
-          str2 = str.replace(regex, "$1");
+        if (outer1_1.test(str)) {
+          let tmp3 = outer1_1;
+          str2 = str.replace(outer1_1, "$1");
         }
         let tmp4 = str2;
         if (str2.match(/\S*Error: /)) {
@@ -61,9 +63,7 @@ function createStackParser() {
               let tmp11 = item10043Result;
               let arr = items.push(tmp9);
               obj.return();
-              // break
-            } else {
-              // continue
+              break;
             }
             continue;
           }
@@ -75,33 +75,32 @@ function createStackParser() {
         break;
       }
     }
-    return callback(items.slice(num2));
+    return outer1_4(items.slice(num2));
   };
 }
 function stripSentryFramesAndReverse(arg0) {
   if (arg0.length) {
     const _Array = Array;
     let arr = Array.from(arg0);
-    let closure_0 = arr;
     if (obj.test(tmp3)) {
       arr = arr.pop();
     }
     const reversed = arr.reverse();
-    const obj = /sentryWrapped/;
-    const tmp3 = getLastStackFrame(arr).function || "";
+    obj = /sentryWrapped/;
+    tmp3 = getLastStackFrame(arr).function || "";
     if (regex.test(tmp8)) {
       arr = arr.pop();
       if (regex.test(tmp12)) {
         arr.pop();
       }
-      const tmp12 = getLastStackFrame(arr).function || "";
+      tmp12 = getLastStackFrame(arr).function || "";
     }
     const substr = arr.slice(0, 50);
     return substr.map((filename) => {
       const obj = {};
       filename = filename.filename;
       if (!filename) {
-        filename = callback(arr).filename;
+        filename = outer1_5(arr).filename;
       }
       obj.filename = filename;
       obj.function = filename.function || "?";
@@ -114,10 +113,9 @@ function stripSentryFramesAndReverse(arg0) {
 function getLastStackFrame(arg0) {
   return arg0[arg0.length - 1] || {};
 }
-let closure_0 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_1 = /\(error: (.*)\)/;
-let closure_2 = /captureMessage|captureException/;
+const re1 = /\(error: (.*)\)/;
+const re2 = /captureMessage|captureException/;
 
 export const UNKNOWN_FUNCTION = "?";
 export { createStackParser };
@@ -125,7 +123,6 @@ export const getFramesFromEvent = function getFramesFromEvent(exception) {
   exception = exception.exception;
   if (exception) {
     const items = [];
-    let closure_0 = items;
     const values = exception.values;
     const item = values.forEach((stacktrace) => {
       if (stacktrace.stacktrace.frames) {
@@ -178,7 +175,7 @@ export const normalizeStackTracePath = function normalizeStackTracePath(nextResu
 export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
   let applyResult = arg0;
   if (Array.isArray(arg0)) {
-    applyResult = createStackParser.apply(undefined, callback(arg0));
+    applyResult = createStackParser.apply(undefined, _toConsumableArray(arg0));
   }
   return applyResult;
 };

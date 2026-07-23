@@ -1,13 +1,13 @@
-// Module ID: 6299
-// Function ID: 50381
+// Module ID: 6304
+// Function ID: 50410
 // Name: MoonIllocon
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6305, 2]
 // Exports: MoonIllocon
 
-// Module 6299 (MoonIllocon)
-import { jsx } from "__exportStarResult1";
+// Module 6304 (MoonIllocon)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MoonIllocon.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MoonIllocon.native.tsx");
 
 export const MoonIllocon = function MoonIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const MoonIllocon = function MoonIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6305) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const MoonIllocon = function MoonIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

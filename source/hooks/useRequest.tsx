@@ -1,17 +1,19 @@
-// Module ID: 11313
-// Function ID: 88046
+// Module ID: 11323
+// Function ID: 88096
 // Name: useRequest
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1212, 4030, 2]
 // Exports: default
 
-// Module 11313 (useRequest)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("hooks/useRequest.tsx");
+// Module 11323 (useRequest)
+import set from "set";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("hooks/useRequest.tsx");
 
 export default function useRequest(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const tmp2 = callback2(React.useState(false), 2);
   let closure_1 = tmp2[1];
   const tmp3 = callback2(React.useState(null), 2);

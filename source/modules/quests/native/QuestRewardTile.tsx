@@ -1,50 +1,51 @@
-// Module ID: 10912
-// Function ID: 84811
+// Module ID: 10922
+// Function ID: 84860
 // Name: QuestRewardTile
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 33, 4130, 689, 477, 566, 9463, 9458, 8302, 5085, 2]
 // Exports: default
 
-// Module 10912 (QuestRewardTile)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const useMemo = arg1(dependencyMap[1]).useMemo;
-({ AppState: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[4]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-let closure_10 = arg1(dependencyMap[5]).createStyles(() => {
+// Module 10922 (QuestRewardTile)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { useMemo } from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ AppState: closure_6, View: closure_7 } = get_ActivityIndicator);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
+  obj = { borderRadius: importDefault(689).radii.sm, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
   obj.container = obj;
-  obj.video = { libvpx: 2085683.2, numOfEmbeds: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010811969863144788, diffed: 0.0000000000000000000000000000000000000000000000000000000000000000000000012058167407260115 };
-  obj.image = {};
+  obj.video = { overflow: "hidden", height: "100%", width: "100%" };
+  obj.image = { height: "100%", width: "100%" };
   return obj;
 });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/quests/native/QuestRewardTile.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/QuestRewardTile.tsx");
 
 export default function QuestRewardTile(quest) {
   quest = quest.quest;
-  const arg1 = quest;
   const height = quest.height;
-  const importDefault = height;
   const width = quest.width;
-  const dependencyMap = width;
   let flag = quest.paused;
   if (flag === undefined) {
     flag = false;
   }
   let withAnimation = quest.withAnimation;
   if (withAnimation === undefined) {
-    let obj = arg1(dependencyMap[7]);
+    let obj = quest(width[7]);
     withAnimation = obj.isIOS();
   }
   let callback;
   let React;
-  let obj1 = arg1(dependencyMap[8]);
-  const items = [closure_8];
+  let obj1 = quest(width[8]);
+  const items = [_isNativeReflectConstruct];
   const items1 = [quest];
-  const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_8.useReducedMotion);
   const tmp4 = useMemo(() => quest(width[9]).getQuestPrimaryReward(quest), items1);
   if (null != tmp4.name) {
     let name = tmp4.name;
@@ -59,9 +60,9 @@ export default function QuestRewardTile(quest) {
   React = tmp7[1];
   const items3 = [tmp5.isAnimated];
   const effect = React.useEffect(() => {
-    if (tmp5.isAnimated) {
-      let closure_0 = closure_6.addEventListener("change", (arg0) => {
-        callback("active" === arg0);
+    if (_undefined.isAnimated) {
+      let closure_0 = outer1_6.addEventListener("change", (arg0) => {
+        outer1_4("active" === arg0);
       });
       return () => {
         closure_0.remove();
@@ -71,16 +72,16 @@ export default function QuestRewardTile(quest) {
   const items4 = [tmp5, width, height];
   const memo = React.useMemo(() => {
     let obj = quest(width[10]);
-    obj = { assetUrl: tmp5.url, width, height };
+    obj = { assetUrl: _undefined.url, width, height };
     return obj.getScaledImageUrl(obj);
   }, items4);
   const items5 = [quest.accessibilityLabelPrefix, name];
   const found = items5.filter(Boolean);
   obj = { accessibilityLabel: found.join(", "), style: items6 };
-  const items6 = [tmp6.container, { height, width }, quest.style];
+  items6 = [tmp6.container, { height, width }, quest.style];
   if (tmp5.isAnimated) {
     if (withAnimation) {
-      obj = { style: tmp6.video };
+      obj = { style: tmp6.video, source: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", poster: null, resizeMode: "cover" };
       obj1 = { uri: tmp5.url };
       obj.source = obj1;
       obj.poster = memo;
@@ -93,11 +94,11 @@ export default function QuestRewardTile(quest) {
       }
       obj.paused = tmp16;
       obj.muted = true;
-      let tmp13Result = jsx(arg1(dependencyMap[11]).VideoComponent, obj);
+      let tmp13Result = jsx(quest(width[11]).VideoComponent, { style: tmp6.video, source: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", poster: null, resizeMode: "cover" });
       const tmp13 = jsx;
     }
     obj.children = tmp13Result;
     return tmp10(tmp11, obj);
   }
-  tmp13Result = jsx(importDefault(dependencyMap[12]), { source: { uri: memo }, style: tmp6.image });
+  tmp13Result = jsx(height(width[12]), { source: { uri: memo }, style: tmp6.image });
 };

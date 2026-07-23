@@ -1,45 +1,42 @@
-// Module ID: 11740
-// Function ID: 91195
+// Module ID: 11750
+// Function ID: 91244
 // Name: AcceptInviteContainer
-// Dependencies: []
+// Dependencies: [5, 31, 1917, 1838, 4115, 3746, 33, 4130, 689, 1456, 566, 5087, 1360, 5053, 1934, 6978, 8365, 5691, 7460, 9348, 11751, 5121, 3842, 2]
 // Exports: default
 
-// Module 11740 (AcceptInviteContainer)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const GuildMemberFlags = arg1(dependencyMap[5]).GuildMemberFlags;
-const jsx = arg1(dependencyMap[6]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = { flex: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.paddingContainer = obj;
-let closure_10 = obj.createStyles(obj);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/create_guild/native/components/AcceptInviteContainer.tsx");
+// Module 11750 (AcceptInviteContainer)
+import GuildMemberFlags from "GuildMemberFlags";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import { GuildMemberFlags } from "GuildMemberFlags";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.paddingContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/create_guild/native/components/AcceptInviteContainer.tsx");
 
 export default function AcceptInviteContainer(code) {
   code = code.code;
-  const arg1 = code;
   const onPressClose = code.onPressClose;
-  const importDefault = onPressClose;
   const inviteInstanceId = code.inviteInstanceId;
-  const dependencyMap = inviteInstanceId;
-  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
+  let obj = { code: 0, onPressClose: 0, inviteInstanceId: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(code, obj);
   const isRegistration = merged.isRegistration;
-  let callback = isRegistration;
-  const tmp4 = callback2();
-  const navigation = arg1(dependencyMap[9]).useNavigation();
-  const React = navigation;
-  const obj2 = arg1(dependencyMap[9]);
-  const items = [closure_7, closure_5, closure_6];
-  const stateFromStoresObject = arg1(dependencyMap[10]).useStateFromStoresObject(items, () => {
-    const invite = store.getInvite(code);
+  let tmp4 = _createForOfIteratorHelperLoose();
+  const navigation = code(inviteInstanceId[9]).useNavigation();
+  let obj2 = code(inviteInstanceId[9]);
+  const items = [closure_7, stateFromStoresObject, callback];
+  stateFromStoresObject = code(inviteInstanceId[10]).useStateFromStoresObject(items, () => {
+    const invite = outer1_7.getInvite(_Set);
     let guild;
-    const inviteError = store.getInviteError(code);
+    const inviteError = outer1_7.getInviteError(_Set);
     if (null != invite) {
       guild = invite.guild;
     }
@@ -65,7 +62,7 @@ export default function AcceptInviteContainer(code) {
       if (null != roles) {
         flag = false;
         if (invite.roles.length > 0) {
-          let _Set = Set;
+          _Set = Set;
           let roles1;
           if (null != selfMember) {
             roles1 = selfMember.roles;
@@ -75,7 +72,6 @@ export default function AcceptInviteContainer(code) {
           }
           const prototype = _Set.prototype;
           _Set = new _Set(roles1);
-          const code = _Set;
           roles = invite.roles;
           flag = roles.some((id) => !_Set.has(id.id));
         }
@@ -89,9 +85,8 @@ export default function AcceptInviteContainer(code) {
     obj.guildMember = selfMember;
     return obj;
   });
-  closure_5 = stateFromStoresObject;
   const items1 = [stateFromStoresObject, navigation, onPressClose];
-  const layoutEffect = React.useLayoutEffect(() => {
+  const layoutEffect = navigation.useLayoutEffect(() => {
     const obj = {};
     if (null != stateFromStoresObject.invite) {
       let fn = () => null;
@@ -104,19 +99,18 @@ export default function AcceptInviteContainer(code) {
   }, items1);
   // CreateGeneratorClosureLongIndex (0x67)
   const items2 = [isRegistration, stateFromStoresObject];
-  callback = React.useCallback(callback(items1), items2);
-  closure_6 = callback;
+  callback = navigation.useCallback(isRegistration(items1), items2);
   // CreateGeneratorClosureLongIndex (0x67)
   const items3 = [stateFromStoresObject, callback, onPressClose, inviteInstanceId, code];
-  const callback1 = React.useCallback(callback(tmp), items3);
+  const callback1 = navigation.useCallback(isRegistration(tmp), items3);
   obj = { code, onPressClose, onPressJoin: callback1 };
-  const obj3 = arg1(dependencyMap[10]);
+  const obj3 = code(inviteInstanceId[10]);
   const merged1 = Object.assign(merged);
   const merged2 = Object.assign(stateFromStoresObject);
-  const tmp10 = importDefault(dependencyMap[20]);
+  const tmp10 = onPressClose(inviteInstanceId[20]);
   obj = { style: items4, bottom: true };
-  const items4 = [, ];
+  items4 = [, ];
   ({ flex: arr5[0], paddingContainer: arr5[1] } = tmp4);
-  obj.children = jsx(arg1(dependencyMap[22]).ThemeContextProvider, { theme: "darker", children: jsx(importDefault(dependencyMap[20]), obj) });
-  return jsx(arg1(dependencyMap[21]).SafeAreaPaddingView, obj);
+  obj.children = jsx(code(inviteInstanceId[22]).ThemeContextProvider, { theme: "darker", children: jsx(onPressClose(inviteInstanceId[20]), { style: items4, bottom: true }) });
+  return jsx(code(inviteInstanceId[21]).SafeAreaPaddingView, { style: items4, bottom: true });
 };

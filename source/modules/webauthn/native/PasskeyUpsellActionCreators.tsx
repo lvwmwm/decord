@@ -1,33 +1,32 @@
-// Module ID: 13516
-// Function ID: 102550
-// Dependencies: []
+// Module ID: 13630
+// Function ID: 104706
+// Dependencies: [3946, 1334, 1336, 4337, 13631, 1934, 4098, 13632, 13634, 2]
 
-// Module 13516
-const _module = require(dependencyMap[9]);
-const result = _module.fileFinishedImporting("modules/webauthn/native/PasskeyUpsellActionCreators.tsx");
+// Module 13630
+let result = require("addVersionedDismissedContent").fileFinishedImporting("modules/webauthn/native/PasskeyUpsellActionCreators.tsx");
 
 export default {
   openPasskeyUpsell() {
     const self = this;
-    if (!obj.UNSAFE_isDismissibleContentDismissed(require(dependencyMap[1]).DismissibleContent.PASSWORDLESS_UPSELL)) {
-      const markDismissibleContentAsShown = require(dependencyMap[2]).requestMarkDismissibleContentAsShown(require(dependencyMap[1]).DismissibleContent.PASSWORDLESS_UPSELL);
+    if (!obj.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.PASSWORDLESS_UPSELL)) {
+      const markDismissibleContentAsShown = require(1336) /* addVersionedDismissedContent */.requestMarkDismissibleContentAsShown(require(1334) /* DismissibleContent */.DismissibleContent.PASSWORDLESS_UPSELL);
       const result = self.openPasskeyUpsellPromoSheet();
-      const obj2 = require(dependencyMap[2]);
+      const obj2 = require(1336) /* addVersionedDismissedContent */;
     }
   },
   openPasskeyUpsellModal() {
-    importDefault(dependencyMap[3]).pushLazy(require(dependencyMap[5])(dependencyMap[4], dependencyMap.paths), undefined, "PASSKEY_UPSELL_KEY");
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(13631, dependencyMap.paths), undefined, "PASSKEY_UPSELL_KEY");
   },
   closePasskeyUpsellModal() {
-    importDefault(dependencyMap[3]).popWithKey("PASSKEY_UPSELL_KEY");
+    importDefault(4337).popWithKey("PASSKEY_UPSELL_KEY");
   },
   openPasskeyUpsellPromoSheet() {
-    importDefault(dependencyMap[6]).openLazy(require(dependencyMap[5])(dependencyMap[7], dependencyMap.paths), "PASSKEY_UPSELL_KEY");
+    importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13632, dependencyMap.paths), "PASSKEY_UPSELL_KEY");
   },
   closePasskeyUpsellPromoSheet() {
-    importDefault(dependencyMap[6]).hideActionSheet("PASSKEY_UPSELL_KEY");
+    importDefault(4098).hideActionSheet("PASSKEY_UPSELL_KEY");
   },
-  openPasskeyUpsellPromoModal(closure_2) {
-    importDefault(dependencyMap[3]).pushLazy(require(dependencyMap[5])(dependencyMap[8], dependencyMap.paths), closure_2, "PASSKEY_UPSELL_KEY");
+  openPasskeyUpsellPromoModal(merged) {
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(13634, dependencyMap.paths), merged, "PASSKEY_UPSELL_KEY");
   }
 };

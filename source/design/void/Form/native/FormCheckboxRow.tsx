@@ -1,15 +1,17 @@
-// Module ID: 5154
-// Function ID: 44921
+// Module ID: 5157
+// Function ID: 44940
 // Name: FormCheckboxRow
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 3848, 5158, 5183, 2]
 // Exports: default
 
-// Module 5154 (FormCheckboxRow)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_4 = arg1(dependencyMap[2]).createStyles({ checkboxWrapperStyle: { flexShrink: 0 } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/void/Form/native/FormCheckboxRow.tsx");
+// Module 5157 (FormCheckboxRow)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ checkboxWrapperStyle: { flexShrink: 0 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/void/Form/native/FormCheckboxRow.tsx");
 
 export default function FormCheckboxRow(selected) {
   let accessibilityRole;
@@ -18,7 +20,7 @@ export default function FormCheckboxRow(selected) {
   let obj = Object.create(null);
   obj.selected = 0;
   const merged = Object.assign(selected, obj);
-  obj = arg1(dependencyMap[3]);
+  obj = require(3848) /* useCheckboxA11yNative */;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   obj = {};
@@ -26,7 +28,7 @@ export default function FormCheckboxRow(selected) {
   const merged1 = Object.assign(merged);
   obj["accessibilityRole"] = accessibilityRole;
   obj["accessibilityState"] = accessibilityState;
-  obj["trailing"] = jsx(importDefault(dependencyMap[5]), { selected });
+  obj["trailing"] = jsx(importDefault(5183), { selected });
   obj["trailingWrapperStyle"] = tmp3.checkboxWrapperStyle;
-  return jsx(importDefault(dependencyMap[4]), obj);
+  return jsx(importDefault(5158), {});
 };

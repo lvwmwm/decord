@@ -1,15 +1,21 @@
-// Module ID: 4049
-// Function ID: 33780
+// Module ID: 4051
+// Function ID: 33789
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 4049 (_isNativeReflectConstruct)
+// Module 4051 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -28,26 +34,21 @@ function handleInviteData(invite) {
   }
   return false;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = {};
 let closure_6 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class GuildMemberCountStore {
     constructor() {
       self = this;
       tmp = GuildMemberCountStore(this, GuildMemberCountStore);
-      obj = closure_3(GuildMemberCountStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(GuildMemberCountStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -56,12 +57,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildMemberCountStore;
   callback2(GuildMemberCountStore, Store);
   let obj = {
     key: "getMemberCounts",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   const items = [obj, , ];
@@ -70,7 +70,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        tmp = closure_5[arg0];
+        tmp = outer1_5[arg0];
       }
       return tmp;
     }
@@ -81,16 +81,16 @@ let tmp2 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        tmp = closure_6[arg0];
+        tmp = outer1_6[arg0];
       }
       return tmp;
     }
   };
   items[2] = obj;
   return callback(GuildMemberCountStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildMemberCountStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     guilds = guilds.guilds;
     let closure_5 = {};
@@ -99,8 +99,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     });
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(guildMemberCounts) {
+    const obj = {};
     const merged = Object.assign(guildMemberCounts.guildMemberCounts);
-    let closure_5 = {};
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
     guild = guild.guild;
@@ -108,13 +108,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     guild = guild.guild;
-    if (null == closure_5[guild.id]) {
-      if (null == closure_6[guild.id]) {
+    if (null == dependencyMap[guild.id]) {
+      if (null == dependencyMap2[guild.id]) {
         return false;
       }
     }
-    delete r3[r2];
-    delete r1[r0];
+    delete tmp4[tmp3];
+    delete tmp2[tmp];
   },
   GUILD_MEMBER_LIST_UPDATE: function handleGuildMemberListUpdate(arg0) {
     let guildId;
@@ -122,12 +122,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     let onlineCount;
     ({ guildId, memberCount, onlineCount } = arg0);
     let flag = false;
-    if (closure_5[guildId] !== memberCount) {
-      closure_5[guildId] = memberCount;
+    if (dependencyMap[guildId] !== memberCount) {
+      dependencyMap[guildId] = memberCount;
       flag = true;
     }
-    if (closure_6[guildId] !== onlineCount) {
-      closure_6[guildId] = onlineCount;
+    if (dependencyMap2[guildId] !== onlineCount) {
+      dependencyMap2[guildId] = onlineCount;
       flag = true;
     }
     return flag;
@@ -146,6 +146,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     return false;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("stores/GuildMemberCountStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildMemberCountStore.tsx");
 
 export default tmp2;

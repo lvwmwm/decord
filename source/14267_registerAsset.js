@@ -1,0 +1,11 @@
+// Module ID: 14267
+// Function ID: 109477
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 14267 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "8d1d548a64761f0c5b1d7c9e00ae66a6", name: "fr", type: "png" };
+
+export default registerAsset.registerAsset(obj);

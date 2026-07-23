@@ -1,13 +1,13 @@
-// Module ID: 6039
-// Function ID: 49991
+// Module ID: 6044
+// Function ID: 50020
 // Name: ExperimentalGameWidgetsAbstractUI
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6045, 2]
 // Exports: ExperimentalGameWidgetsAbstractUI
 
-// Module 6039 (ExperimentalGameWidgetsAbstractUI)
-import { jsx } from "__exportStarResult1";
+// Module 6044 (ExperimentalGameWidgetsAbstractUI)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGameWidgetsAbstractUI.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGameWidgetsAbstractUI.native.tsx");
 
 export const ExperimentalGameWidgetsAbstractUI = function ExperimentalGameWidgetsAbstractUI(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ExperimentalGameWidgetsAbstractUI = function ExperimentalGameWidget
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6045) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ExperimentalGameWidgetsAbstractUI = function ExperimentalGameWidget
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

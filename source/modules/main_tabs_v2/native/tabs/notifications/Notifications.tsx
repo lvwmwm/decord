@@ -1,12 +1,23 @@
-// Module ID: 15012
-// Function ID: 113030
+// Module ID: 15128
+// Function ID: 115198
 // Name: goBack
-// Dependencies: []
+// Dependencies: [31, 27, 8772, 1345, 33, 4130, 689, 3982, 8133, 9535, 15129, 5121, 4660, 1212, 15130, 4126, 15131, 9533, 15133, 5464, 5484, 6707, 5093, 5449, 15137, 15138, 10025, 3977, 1557, 14799, 4662, 3842, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15012 (goBack)
+// Module 15128 (goBack)
+import importAllResult from "ManaContext";
+import { View } from "getGuildThemeName";
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+let closure_9;
+let require = arg1;
 function goBack() {
-  const navigation = arg1(dependencyMap[7]).getRootNavigationRef();
+  const navigation = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != navigation) {
     if (navigation.canGoBack()) {
       navigation.goBack();
@@ -25,17 +36,17 @@ class Notifications {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = closure_9();
-    tmp2 = importDefault(dependencyMap[18]);
-    layoutEffect = Object.useLayoutEffect(() => callback(closure_2[20]).trackAppUIViewed(), []);
+    tmp = c10();
+    tmp2 = require("mergeLocations");
+    layoutEffect = Object.useLayoutEffect(() => outer1_0(outer1_2[21]).trackAppUIViewed(), []);
     callback = Object.useCallback(() => {
-      callback2();
+      outer1_12();
       return true;
     }, []);
-    obj = arg1(dependencyMap[21]);
+    obj = require("useNavigatorBackPressHandler");
     navigatorBackPressHandler = obj.useNavigatorBackPressHandler(callback);
     obj = { zIndex: 1 };
-    obj1 = { value: tmp2(importDefault(dependencyMap[19]).NOTIFICATIONS).analyticsLocations };
+    obj1 = { value: tmp2(require("QUICK_SWITCHER").NOTIFICATIONS).analyticsLocations };
     obj2 = { style: items };
     items = [, ];
     items[0] = tmp.container;
@@ -45,49 +56,47 @@ class Notifications {
     obj3.inNestedNavigator = flag2;
     items1 = [, , , ];
     items1[0] = jsx(HeaderInner, obj3);
-    items1[1] = jsx(importDefault(dependencyMap[23]), {});
+    items1[1] = jsx(require("NotificationCenterBannerImpl"), {});
     obj4 = {};
     obj4.nestedInLaunchPad = flag;
-    items1[2] = jsx(arg1(dependencyMap[24]).NotificationCenterForYou, obj4);
-    items1[3] = jsx(arg1(dependencyMap[25]).TTIFirstContentfulPaint, { label: "notifications" });
+    items1[2] = jsx(require("isHoisted").NotificationCenterForYou, obj4);
+    items1[3] = jsx(require("TTIFirstContentfulPaint").TTIFirstContentfulPaint, { label: "notifications" });
     obj2.children = items1;
     obj1.children = jsxs(View, obj2);
-    obj.children = jsx(arg1(dependencyMap[18]).AnalyticsLocationProvider, obj1);
-    return jsx(arg1(dependencyMap[22]).LayerScope, obj);
+    obj.children = jsx(require("mergeLocations").AnalyticsLocationProvider, obj1);
+    return jsx(require("Layer").LayerScope, obj);
   }
 }
 class ThemedNotifications {
   constructor(arg0) {
-    tmp = importDefault(dependencyMap[26])();
-    top = importDefault(dependencyMap[27])().top;
-    arg1 = top;
-    tmp2 = importDefault(dependencyMap[8])();
-    importDefault = tmp2;
-    tmp3 = closure_9();
-    dependencyMap = tmp3;
+    tmp = require("getGuildThemeName")();
+    top = require("useSafeAreaInsets")().top;
+    tmp2 = require("useIsWindowLarge")();
+    closure_1 = tmp2;
+    tmp3 = c10();
+    closure_2 = tmp3;
     items = [, , ];
     items[0] = tmp3;
     items[1] = tmp2;
     items[2] = top;
     memo = Object.useMemo(() => {
-      if (tmp2) {
+      if (closure_1) {
         const items = [tmp.containerOuterTablet, ];
         const obj = { paddingTop: top };
         items[1] = obj;
         let containerOuter = items;
-        const tmp2 = top;
       } else {
         containerOuter = tmp.containerOuter;
       }
       return containerOuter;
     }, items);
-    obj = arg1(dependencyMap[28]);
+    obj = require("trackForScreen");
     trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.NOTIFICATIONS);
     obj = { style: memo };
     tmp6 = jsxs;
     tmp7 = View;
     items1 = [, ];
-    items1[0] = jsx(importDefault(dependencyMap[29]), { absolute: true });
+    items1[0] = jsx(require("getThemeMixColor"), { absolute: true });
     tmp8 = jsx;
     obj1 = { gradient: tmp };
     obj2 = {};
@@ -104,40 +113,34 @@ class ThemedNotifications {
     }
     obj2["inNestedNavigator"] = inNestedNavigator;
     obj1.children = tmp9(tmp10, obj2);
-    items1[1] = tmp8(arg1(dependencyMap[30]).ThemeContextProvider, obj1);
+    items1[1] = tmp8(require("ManaContext").ThemeContextProvider, obj1);
     obj.children = items1;
     return tmp6(tmp7, obj);
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const YouBarNavigatorScreens = arg1(dependencyMap[2]).YouBarNavigatorScreens;
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj1 = arg1(dependencyMap[5]);
+({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 let obj = { containerOuter: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, flex: 1 };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, flex: 1 };
 obj.containerOuterTablet = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[6]).radii.sm, flexGrow: 1 };
-obj.container = obj1;
-obj.headerTitle = { "Null": null, "Null": "flex-start", "Null": "hidden", "Null": 1 };
-obj.actionButtons = {};
-const tmp2 = arg1(dependencyMap[4]);
-obj.headerClose = { marginRight: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_32, width: importDefault(dependencyMap[6]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.headerText = { loginWebAuthn: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Ŕ: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
-const obj2 = { marginRight: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_32, width: importDefault(dependencyMap[6]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.headerBorder = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-let closure_9 = obj1.createStyles(obj);
-let closure_10 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, flexGrow: 1 };
+obj.container = _createForOfIteratorHelperLoose;
+obj.headerTitle = { height: 56, marginHorizontal: 16, flexDirection: "row", alignItems: "center" };
+obj.actionButtons = { flexDirection: "row", gap: 12 };
+obj.headerClose = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_16, height: require("_createForOfIteratorHelperLoose").space.PX_32, width: require("_createForOfIteratorHelperLoose").space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+obj.headerText = { flex: 1, marginTop: 2 };
+let obj3 = { left: 0, bottom: 0, height: 1, width: "100%", position: "absolute", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+obj.headerBorder = obj3;
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   const tmp = callback3();
-  let obj = importDefault(dependencyMap[9]);
+  let obj = importDefault(9535);
   const ref = importAllResult.useRef(null);
-  const tmp4 = importDefault(dependencyMap[10])(ref);
-  const arg1 = tmp4;
+  const tmp4 = importDefault(15129)(ref);
+  const require = tmp4;
   const items = [tmp4];
+  const callback = importAllResult.useCallback(() => tmp4(outer1_6.TAKE_ACTION), items);
   obj = {};
-  const callback = importAllResult.useCallback(() => tmp4(constants.TAKE_ACTION), items);
   obj = {};
   let tmp9 = !nestedInLaunchPad;
   if (tmp9) {
@@ -148,40 +151,49 @@ let closure_10 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   if (!nestedInLaunchPad) {
     const obj1 = { style: tmp.headerTitle };
     const obj2 = { style: tmp.headerClose };
-    const intl = arg1(dependencyMap[13]).intl;
-    obj2.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.13/7kX);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj2.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
     obj2.onPress = goBack;
-    obj2.children = callback(arg1(dependencyMap[14]).LeftBackIconWithBadge, {});
-    const items1 = [callback(arg1(dependencyMap[12]).PressableOpacity, obj2), , ];
-    const obj3 = { style: tmp.headerText };
-    const intl2 = arg1(dependencyMap[13]).intl;
-    obj3.children = intl2.string(arg1(dependencyMap[13]).t.HcoRu0);
-    items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
+    obj2.children = callback(require(15130) /* IconWithBadge */.LeftBackIconWithBadge, {});
+    const items1 = [callback(require(4660) /* PressableBase */.PressableOpacity, obj2), , ];
+    const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header" };
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.HcoRu0);
+    items1[1] = callback(require(4126) /* Text */.Text, obj3);
     const obj4 = { style: tmp.actionButtons };
     let tmp21 = null;
     if (obj.useConfig({ location: "NativeNotifications" }).enabled) {
-      const obj5 = { ref, onOpen: callback };
-      tmp21 = callback(importDefault(dependencyMap[16]), obj5);
+      const obj5 = {};
+      const obj6 = { ref, type: require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK, onOpen: callback };
+      const items2 = [callback(importDefault(15131), obj6), ];
+      const obj7 = {};
+      const tmp27 = importDefault(15131);
+      obj7.type = require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
+      obj7.onOpen = callback;
+      items2[1] = callback(importDefault(15131), obj7);
+      obj5.children = items2;
+      tmp21 = callback2(closure_8, obj5);
+      const tmp30 = importDefault(15131);
     }
-    const items2 = [tmp21, callback(importDefault(dependencyMap[17]), {})];
-    obj4.children = items2;
-    items1[2] = closure_8(View, obj4);
+    const items3 = [tmp21, callback(importDefault(15133), {})];
+    obj4.children = items3;
+    items1[2] = callback2(View, obj4);
     obj1.children = items1;
-    tmp11Result = closure_8(View, obj1);
-    const tmp11 = closure_8;
+    tmp11Result = callback2(View, obj1);
+    const tmp11 = callback2;
     const tmp12 = View;
-    const tmp19 = closure_8;
+    const tmp19 = callback2;
     const tmp20 = View;
   }
   obj.children = tmp11Result;
-  const items3 = [callback(arg1(dependencyMap[11]).SafeAreaPaddingView, obj), ];
-  const items4 = [tmp.headerBorder];
-  items3[1] = callback(View, { style: items4 });
-  obj.children = items3;
-  return closure_8(View, obj);
+  const items4 = [callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj), ];
+  const items5 = [tmp.headerBorder];
+  items4[1] = callback(View, { style: items5 });
+  obj.children = items4;
+  return callback2(View, obj);
 });
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/Notifications.tsx");
+let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_16, height: require("_createForOfIteratorHelperLoose").space.PX_32, width: require("_createForOfIteratorHelperLoose").space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/Notifications.tsx");
 
 export default Notifications;
 export { goBack };

@@ -1,27 +1,43 @@
-// Module ID: 14458
-// Function ID: 108943
+// Module ID: 14572
+// Function ID: 111096
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 2364, 3803, 14573, 14574, 2]
 
-// Module 14458 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14572 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(importDefault(dependencyMap[3]).F3llsQ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2364).F3llsQ);
   },
   useDescription() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(importDefault(dependencyMap[3]).6goWcz);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2364)["6goWcz"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.DATA_AND_PRIVACY,
-  useValue: require(dependencyMap[4]).NotifyFriendsOnProfileUpdate.useSetting,
-  onValueChange: require(dependencyMap[5]).onNotifyFriendsOnProfileUpdateSettingsChanged,
+  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
+  useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,
+  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged,
   usePredicate() {
-    return require(dependencyMap[6]).useNotifyFriendsOnProfileUpdateExperiment("NotifyFriendsOnProfileUpdateSetting");
+    return require(14574) /* apexExperiment */.useNotifyFriendsOnProfileUpdateExperiment("NotifyFriendsOnProfileUpdateSetting");
   }
 });
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnProfileUpdateSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2364).F3llsQ);
+  },
+  useDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2364)["6goWcz"]);
+  },
+  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
+  useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,
+  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged,
+  usePredicate() {
+    return require(14574) /* apexExperiment */.useNotifyFriendsOnProfileUpdateExperiment("NotifyFriendsOnProfileUpdateSetting");
+  }
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnProfileUpdateSetting.tsx");
 
 export default toggle;

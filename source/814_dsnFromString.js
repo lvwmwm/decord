@@ -1,17 +1,19 @@
 // Module ID: 814
-// Function ID: 9114
+// Function ID: 9115
 // Name: dsnFromString
-// Dependencies: []
+// Dependencies: [57, 801, 800]
 // Exports: dsnToString, extractOrgIdFromClient, makeDsn
 
 // Module 814 (dsnFromString)
+import _slicedToArray from "_slicedToArray";
+
 function dsnFromString(arg0) {
   let tmp6;
   let tmp7;
-  const require = arg0;
+  const _require = arg0;
   const match = regex.exec(arg0);
   if (match) {
-    const tmp5 = callback(match.slice(1), 6);
+    const tmp5 = _slicedToArray(match.slice(1), 6);
     let str = "";
     let str2 = "";
     [tmp6, tmp7] = tmp5;
@@ -48,9 +50,9 @@ function dsnFromString(arg0) {
     let obj = { host: tmp10, pass: str2, path: str, projectId: first, port: tmp12, protocol: tmp6, publicKey: tmp7 };
     return dsnFromComponents(obj);
   } else {
-    obj = require(dependencyMap[1]);
+    obj = _require(801);
     obj.consoleSandbox(() => {
-      console.error("Invalid Sentry Dsn: " + arg0);
+      console.error("Invalid Sentry Dsn: " + closure_0);
     });
   }
 }
@@ -65,10 +67,9 @@ function extractOrgIdFromDsnHost(host) {
   }
   return tmp2;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_3 = /^o(\d+)\./;
-let closure_4 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)((?:\[[:.%\w]+\]|[\w.-]+))(?::(\d+))?\/(.+)/;
+const re3 = /^o(\d+)\./;
+const re4 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)((?:\[[:.%\w]+\]|[\w.-]+))(?::(\d+))?\/(.+)/;
 
 export { dsnFromString };
 export const dsnToString = function dsnToString(arg0) {
@@ -119,17 +120,18 @@ export const makeDsn = function makeDsn(arg0) {
     tmp2 = dsnFromComponents(arg0);
   }
   if (tmp2) {
-    if (function validateDsn(arg0) {
+    if ((function validateDsn(arg0) {
       let port;
       let projectId;
       let protocol;
-      if (arg0(closure_1[2]).DEBUG_BUILD) {
+      let closure_0 = arg0;
+      if (outer1_0(outer1_1[2]).DEBUG_BUILD) {
         ({ port, projectId, protocol } = arg0);
-        const items = [];
+        const items = ["protocol", "publicKey", "host", "projectId"];
         const found = items.find((arg0) => {
-          let flag = !arg0[arg0];
+          let flag = !table[arg0];
           if (flag) {
-            const debug = arg0(closure_1[1]).debug;
+            const debug = outer2_0(outer2_1[1]).debug;
             const _HermesInternal = HermesInternal;
             debug.error("Invalid Sentry Dsn: " + arg0 + " missing");
             flag = true;
@@ -140,8 +142,8 @@ export const makeDsn = function makeDsn(arg0) {
           return !found;
         } else {
           if (!projectId.match(/^\d+$/)) {
-            const debug2 = arg0(closure_1[1]).debug;
-            const _HermesInternal = HermesInternal;
+            const debug2 = outer1_0(outer1_1[1]).debug;
+            let _HermesInternal = HermesInternal;
             debug2.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
           }
           let tmp6 = "http" === protocol;
@@ -156,7 +158,7 @@ export const makeDsn = function makeDsn(arg0) {
               num3 = isNaN(parseInt(port, 10));
             }
             if (num3) {
-              const debug = arg0(closure_1[1]).debug;
+              let debug = outer1_0(outer1_1[1]).debug;
               const _HermesInternal3 = HermesInternal;
               debug.error("Invalid Sentry Dsn: Invalid port " + port);
               num3 = 1;
@@ -164,7 +166,7 @@ export const makeDsn = function makeDsn(arg0) {
             let num2 = num3;
           } else {
             num2 = 1;
-            const debug3 = arg0(closure_1[1]).debug;
+            const debug3 = outer1_0(outer1_1[1]).debug;
             const _HermesInternal2 = HermesInternal;
             debug3.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
           }
@@ -172,7 +174,7 @@ export const makeDsn = function makeDsn(arg0) {
       } else {
         return true;
       }
-    }(tmp2)) {
+    })(tmp2)) {
       return tmp2;
     }
   }

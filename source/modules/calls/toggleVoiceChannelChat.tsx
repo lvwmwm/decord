@@ -1,14 +1,15 @@
-// Module ID: 13322
-// Function ID: 101187
+// Module ID: 13436
+// Function ID: 103343
 // Name: toggleVoiceChannelChat
-// Dependencies: []
+// Dependencies: [1348, 4202, 4143, 4323, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 13322 (toggleVoiceChannelChat)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/calls/toggleVoiceChannelChat.tsx");
+// Module 13436 (toggleVoiceChannelChat)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/calls/toggleVoiceChannelChat.tsx");
 
 export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
   let tmp = open;
@@ -17,13 +18,13 @@ export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
     if (null == channelId) {
       return null;
     } else {
-      const channel = channel.getChannel(channelId);
+      channel = channel.getChannel(channelId);
       if (null != channel) {
         if (channel.isGuildVoice()) {
           if (null == tmp) {
             tmp = !chatOpen.getChatOpen(channelId);
           }
-          importDefault(dependencyMap[3]).updateChatOpen(channelId, tmp);
+          importDefault(4323).updateChatOpen(channelId, tmp);
           const obj = { channelId, chatOpen: tmp };
           return obj;
         }

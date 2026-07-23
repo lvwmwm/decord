@@ -1,12 +1,11 @@
-// Module ID: 12168
-// Function ID: 93607
+// Module ID: 12282
+// Function ID: 95758
 // Name: createActivityMessageEmbed
-// Dependencies: []
+// Dependencies: [11084, 12209, 2]
 // Exports: createActivityMessageEmbed
 
-// Module 12168 (createActivityMessageEmbed)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/applications/message_embed/native/createActivityMessageEmbed.tsx");
+// Module 12282 (createActivityMessageEmbed)
+const result = require("set").fileFinishedImporting("modules/applications/message_embed/native/createActivityMessageEmbed.tsx");
 
 export const createActivityMessageEmbed = function createActivityMessageEmbed(app) {
   let embedUrl;
@@ -15,7 +14,7 @@ export const createActivityMessageEmbed = function createActivityMessageEmbed(ap
   let theme;
   app = app.app;
   ({ theme, embedUrl, message, params } = app);
-  let obj = require(dependencyMap[0]);
+  let obj = require(11084) /* createBlockedAppMessageEmbed */;
   const appMessageEmbed = obj.createAppMessageEmbed({ theme, embedUrl, message, app });
   if (null == appMessageEmbed) {
     return null;
@@ -24,7 +23,7 @@ export const createActivityMessageEmbed = function createActivityMessageEmbed(ap
     if (null == linkId) {
       return appMessageEmbed;
     } else {
-      const orFetchCustomActivityLink = require(dependencyMap[1]).getOrFetchCustomActivityLink(app.id, linkId);
+      const orFetchCustomActivityLink = require(12209) /* fetchCustomActivityLink */.getOrFetchCustomActivityLink(app.id, linkId);
       let tmp7 = null;
       if (null != orFetchCustomActivityLink) {
         obj = {};

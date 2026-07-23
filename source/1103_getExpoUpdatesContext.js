@@ -1,11 +1,13 @@
 // Module ID: 1103
-// Function ID: 12599
+// Function ID: 12600
 // Name: getExpoUpdatesContext
-// Dependencies: []
+// Dependencies: [978, 977, 794, 979]
 
 // Module 1103 (getExpoUpdatesContext)
+const require = arg1;
+const dependencyMap = arg6;
 function getExpoUpdatesContext() {
-  let obj = arg1(arg6[3]);
+  let obj = require(979) /* getExpoConstants */;
   const expoUpdates = obj.getExpoUpdates();
   if (expoUpdates) {
     obj = { is_enabled: expoUpdates.isEnabled, is_embedded_launch: expoUpdates.isEmbeddedLaunch, is_emergency_launch: expoUpdates.isEmergencyLaunch, is_using_embedded_assets: expoUpdates.isUsingEmbeddedAssets };
@@ -45,9 +47,10 @@ function getExpoUpdatesContext() {
 arg5.OTA_UPDATES_CONTEXT_KEY = "ota_updates";
 arg5.expoContextIntegration = function expoContextIntegration() {
   function getExpoUpdatesContextCached() {
-    let tmp = tmp3;
-    if (!tmp3) {
-      const tmp3 = callback2();
+    let tmp = closure_0;
+    if (!closure_0) {
+      const tmp3 = outer1_2();
+      closure_0 = tmp3;
       tmp = tmp3;
     }
     return tmp;
@@ -55,26 +58,27 @@ arg5.expoContextIntegration = function expoContextIntegration() {
   return {
     name: "ExpoContext",
     setup(on) {
+      let closure_0 = on;
       on.on("afterInit", () => {
-        if (arg0.getOptions().enableNative) {
+        if (options.getOptions().enableNative) {
           if (obj.isExpo()) {
             if (!obj2.isExpoGo()) {
-              const tmp6 = callback();
-              const NATIVE = arg0(callback[1]).NATIVE;
+              const tmp6 = outer1_1();
+              const NATIVE = outer2_0(getExpoUpdatesContextCached[1]).NATIVE;
               NATIVE.setContext("ota_updates", tmp6);
             }
-            const obj2 = arg0(callback[0]);
+            obj2 = outer2_0(getExpoUpdatesContextCached[0]);
           }
-          const obj = arg0(callback[0]);
+          obj = outer2_0(getExpoUpdatesContextCached[0]);
         }
       });
     },
     processEvent(contexts) {
       if (obj.isExpo()) {
-        function addExpoGoContext(contexts) {
-          let obj = callback(closure_1[0]);
+        (function addExpoGoContext(contexts) {
+          let obj = outer2_0(getExpoUpdatesContextCached[0]);
           if (obj.isExpoGo()) {
-            const expoDevice = callback(closure_1[3]).getExpoDevice();
+            const expoDevice = outer2_0(getExpoUpdatesContextCached[3]).getExpoDevice();
             let tmp4;
             if (expoDevice) {
               obj = { name: expoDevice.deviceName };
@@ -92,8 +96,8 @@ arg5.expoContextIntegration = function expoContextIntegration() {
               const _Object2 = Object;
               contexts.contexts.device = Object.assign(Object.assign({}, tmp4), contexts.contexts.device);
             }
-            const obj2 = callback(closure_1[3]);
-            const expoDevice1 = callback(closure_1[3]).getExpoDevice();
+            const obj2 = outer2_0(getExpoUpdatesContextCached[3]);
+            const expoDevice1 = outer2_0(getExpoUpdatesContextCached[3]).getExpoDevice();
             let tmp11;
             if (expoDevice1) {
               obj = {};
@@ -107,9 +111,9 @@ arg5.expoContextIntegration = function expoContextIntegration() {
               contexts.contexts.os = Object.assign(Object.assign({}, tmp11), contexts.contexts.os);
             }
           }
-        }(contexts);
+        })(contexts);
         contexts.contexts = contexts.contexts || {};
-        const _Object = Object;
+        let _Object = Object;
         contexts.contexts.ota_updates = Object.assign({}, getExpoUpdatesContextCached());
       }
       return contexts;

@@ -1,14 +1,15 @@
-// Module ID: 11998
-// Function ID: 92709
+// Module ID: 12114
+// Function ID: 94886
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getIsInPrivateProfilesStrictExperiment, useIsInPrivateProfilesStrictExperiment
 
-// Module 11998 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true }, [2]: { enabled: true }, [3]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/user_profile/PrivateProfilesStrictExperiment.tsx");
+// Module 12114 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-03-private-profiles-strict", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true }, [2]: { enabled: true }, [3]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/user_profile/PrivateProfilesStrictExperiment.tsx");
 
 export const PrivateProfilesStrictExperiment = apexExperiment;
 export const useIsInPrivateProfilesStrictExperiment = function useIsInPrivateProfilesStrictExperiment(location) {

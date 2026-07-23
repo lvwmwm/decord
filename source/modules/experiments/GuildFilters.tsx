@@ -1,52 +1,65 @@
-// Module ID: 4047
-// Function ID: 33748
+// Module ID: 4049
+// Function ID: 33757
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 4050, 4051, 1838, 24, 1193, 21, 664, 2]
 
-// Module 4047 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4049 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createBuffer";
+import importDefaultResult1 from "createBuffer";
+import importDefaultResult2 from "createBuffer";
+import importDefaultResult3 from "createBuffer";
+import importDefaultResult4 from "createBuffer";
+import importDefaultResult5 from "createBuffer";
+import importDefaultResult6 from "createBuffer";
+import importDefaultResult7 from "createBuffer";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +70,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,14 +97,14 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function isInRange(arg0, arg1, arg2) {
-  const obj = importDefault(dependencyMap[4])(arg0);
+  const obj = importDefault(24)(arg0);
   let tmp = null;
   if (null != arg1) {
-    tmp = importDefault(dependencyMap[4])(arg1);
+    tmp = importDefault(24)(arg1);
   }
   let tmp5 = null;
   if (null != arg2) {
-    tmp5 = importDefault(dependencyMap[4])(arg2);
+    tmp5 = importDefault(24)(arg2);
   }
   let tmp10 = tmp9;
   if (null != tmp) {
@@ -118,18 +131,18 @@ function getRangeData(arg0) {
   let tmp5;
   if (!iter.done) {
     do {
-      let tmp6 = closure_2;
-      let tmp7 = closure_2(iter2.value, 2);
+      let tmp6 = callback;
+      let tmp7 = callback(iter2.value, 2);
       [tmp8, tmp9] = tmp7;
-      let tmp10 = closure_0;
-      let tmp11 = closure_1;
-      let obj = closure_0(closure_1[5]);
+      let tmp10 = importDefault;
+      let tmp11 = dependencyMap;
+      let obj = importDefault(1193);
       let tmp12 = tmp9;
       let tmp13 = tmp3;
       if (obj.v3("min_id") !== tmp8) {
-        let tmp14 = closure_0;
-        let tmp15 = closure_1;
-        let obj2 = closure_0(closure_1[5]);
+        let tmp14 = importDefault;
+        let tmp15 = dependencyMap;
+        let obj2 = importDefault(1193);
         tmp12 = tmp2;
         tmp13 = tmp3;
         if (obj2.v3("max_id") === tmp8) {
@@ -138,8 +151,8 @@ function getRangeData(arg0) {
         }
       }
       iter3 = tmp();
-      let tmp2 = tmp12;
-      let tmp3 = tmp13;
+      tmp2 = tmp12;
+      tmp3 = tmp13;
       iter2 = iter3;
       tmp4 = tmp12;
       tmp5 = tmp13;
@@ -148,28 +161,24 @@ function getRangeData(arg0) {
   obj = { min: tmp4, max: tmp5 };
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const obj = {};
-obj[importDefault(dependencyMap[5]).v3("guild_ids")] = (arg0) => {
+let obj = {};
+obj[require("createBuffer").v3("guild_ids")] = (arg0) => {
   let iter2;
   let tmp4;
   let tmp5;
-  let closure_0 = [];
+  let importDefault = [];
   const tmp = _createForOfIteratorHelperLoose(arg0);
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp2 = closure_2;
-      let tmp3 = closure_2(iter.value, 2);
-      let tmp6 = closure_0;
-      let tmp7 = closure_1;
+      let tmp2 = callback;
+      let tmp3 = callback(iter.value, 2);
+      let tmp6 = importDefault;
+      let tmp7 = dependencyMap;
       [tmp4, tmp5] = tmp3;
-      let obj = closure_0(closure_1[5]);
+      let obj = importDefault(1193);
       if (tmp4 === obj.v3("guild_ids")) {
-        closure_0 = tmp5;
+        importDefault = tmp5;
       }
       iter2 = tmp();
       iter = iter2;
@@ -177,43 +186,44 @@ obj[importDefault(dependencyMap[5]).v3("guild_ids")] = (arg0) => {
   }
   return (arg0) => closure_0.includes(arg0);
 };
-const importDefaultResult = importDefault(dependencyMap[5]);
-obj[importDefault(dependencyMap[5]).v3("guild_id_range")] = (arg0) => {
-  ({ min: closure_0, max: closure_1 } = getRangeData(arg0));
-  return (arg0) => callback(arg0, closure_0, closure_1);
+obj[require("createBuffer").v3("guild_id_range")] = (arg0) => {
+  let dependencyMap;
+  let importDefault;
+  ({ min: importDefault, max: dependencyMap } = getRangeData(arg0));
+  return (arg0) => outer1_8(arg0, closure_0, closure_1);
 };
-const importDefaultResult1 = importDefault(dependencyMap[5]);
-obj[importDefault(dependencyMap[5]).v3("guild_age_range_days")] = (arg0) => {
-  ({ min: closure_0, max: closure_1 } = getRangeData(arg0));
+obj[require("createBuffer").v3("guild_age_range_days")] = (arg0) => {
+  let dependencyMap;
+  let importDefault;
+  ({ min: importDefault, max: dependencyMap } = getRangeData(arg0));
   return (arg0) => {
-    const obj = callback(closure_1[6]);
-    return callback2(Math.floor(callback(closure_1[6]).age(arg0) / callback(closure_1[7]).Millis.DAY), callback, closure_1);
+    const obj = outer1_0(outer1_1[6]);
+    return outer1_8(Math.floor(outer1_0(outer1_1[6]).age(arg0) / outer1_0(outer1_1[7]).Millis.DAY), closure_0, closure_1);
   };
 };
-const importDefaultResult2 = importDefault(dependencyMap[5]);
-obj[importDefault(dependencyMap[5]).v3("guild_member_count_range")] = (arg0) => {
-  ({ min: closure_0, max: closure_1 } = getRangeData(arg0));
+obj[require("createBuffer").v3("guild_member_count_range")] = (arg0) => {
+  let dependencyMap;
+  let importDefault;
+  ({ min: importDefault, max: dependencyMap } = getRangeData(arg0));
   return (arg0) => {
-    const memberCount = memberCount.getMemberCount(arg0);
+    const memberCount = outer1_4.getMemberCount(arg0);
     let tmp2 = null != memberCount;
     if (tmp2) {
-      tmp2 = callback(memberCount, closure_0, closure_1);
+      tmp2 = outer1_8(memberCount, closure_0, closure_1);
     }
     return tmp2;
   };
 };
-const importDefaultResult3 = importDefault(dependencyMap[5]);
-obj[importDefault(dependencyMap[5]).v3("guild_has_feature")] = (arg0) => {
+obj[require("createBuffer").v3("guild_has_feature")] = (arg0) => {
   let closure_0 = callback(callback(arg0, 1)[0], 2)[1];
   return (guildId) => {
-    let guild = guild2.getGuild(guildId);
+    let guild = outer1_5.getGuild(guildId);
     if (null == guild) {
-      guild = guild.getGuild(guildId);
+      guild = outer1_3.getGuild(guildId);
     }
-    let closure_0 = guild;
     let someResult = null != guild;
     if (someResult) {
-      someResult = closure_0.some((arg0) => {
+      someResult = guild.some((arg0) => {
         const features = guild.features;
         return features.has(arg0);
       });
@@ -221,32 +231,29 @@ obj[importDefault(dependencyMap[5]).v3("guild_has_feature")] = (arg0) => {
     return someResult;
   };
 };
-const importDefaultResult4 = importDefault(dependencyMap[5]);
-obj[importDefault(dependencyMap[5]).v3("guild_hub_types")] = (arg0) => {
+obj[require("createBuffer").v3("guild_hub_types")] = (arg0) => {
   let closure_0 = callback(callback(arg0, 1)[0], 2)[1];
   return (guildId) => {
-    let guild = guild2.getGuild(guildId);
+    let guild = outer1_5.getGuild(guildId);
     if (null == guild) {
-      guild = guild.getGuild(guildId);
+      guild = outer1_3.getGuild(guildId);
     }
-    let closure_0 = guild;
     let someResult = null != guild;
     if (someResult) {
       someResult = "number" === typeof guild.hubType;
     }
     if (someResult) {
-      someResult = closure_0.some((arg0) => guild.hubType === arg0);
+      someResult = guild.some((arg0) => guild.hubType === arg0);
     }
     return someResult;
   };
 };
-const importDefaultResult5 = importDefault(dependencyMap[5]);
-obj[importDefault(dependencyMap[5]).v3("guild_has_vanity_url")] = (arg0) => {
+obj[require("createBuffer").v3("guild_has_vanity_url")] = (arg0) => {
   let closure_0 = callback(callback(arg0, 1)[0], 2)[1];
   return (guildId) => {
-    let guild = guild2.getGuild(guildId);
+    let guild = outer1_5.getGuild(guildId);
     if (null == guild) {
-      guild = guild.getGuild(guildId);
+      guild = outer1_3.getGuild(guildId);
     }
     if (null == guild) {
       return false;
@@ -255,8 +262,7 @@ obj[importDefault(dependencyMap[5]).v3("guild_has_vanity_url")] = (arg0) => {
     }
   };
 };
-const importDefaultResult6 = importDefault(dependencyMap[5]);
-obj[importDefault(dependencyMap[5]).v3("guild_in_range_by_hash")] = (arg0) => {
+obj[require("createBuffer").v3("guild_in_range_by_hash")] = (arg0) => {
   let iter2;
   let tmp5;
   let tmp6;
@@ -264,19 +270,19 @@ obj[importDefault(dependencyMap[5]).v3("guild_in_range_by_hash")] = (arg0) => {
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp3 = closure_2;
-      let tmp4 = closure_2(iter.value, 2);
+      let tmp3 = callback;
+      let tmp4 = callback(iter.value, 2);
       [tmp5, tmp6] = tmp4;
-      let tmp7 = closure_0;
-      let tmp8 = closure_1;
-      let obj = closure_0(closure_1[5]);
+      let tmp7 = importDefault;
+      let tmp8 = dependencyMap;
+      let obj = importDefault(1193);
       if (obj.v3("hash_key") === tmp5) {
-        closure_0 = tmp6;
+        importDefault = tmp6;
         let tmp11 = tmp2;
       } else {
-        let tmp9 = closure_0;
-        let tmp10 = closure_1;
-        let obj2 = closure_0(closure_1[5]);
+        let tmp9 = importDefault;
+        let tmp10 = dependencyMap;
+        let obj2 = importDefault(1193);
         tmp11 = tmp2;
         if (obj2.v3("target") === tmp5) {
           let _parseInt = parseInt;
@@ -285,21 +291,20 @@ obj[importDefault(dependencyMap[5]).v3("guild_in_range_by_hash")] = (arg0) => {
           if (null != parsed) {
             num = parsed;
           }
-          closure_1 = num;
+          dependencyMap = num;
           tmp11 = parsed;
         }
       }
       iter2 = tmp();
-      let tmp2 = tmp11;
+      tmp2 = tmp11;
       iter = iter2;
     } while (!iter2.done);
   }
   return (arg0) => {
-    const v3Result = callback(closure_1[5]).v3("" + callback + ":" + arg0);
-    return v3Result > 0 ? v3Result + v3Result : v3Result >>> 0 % 10000 < closure_1;
+    const v3Result = outer1_0(outer1_1[5]).v3("" + closure_0 + ":" + arg0);
+    return (v3Result > 0 ? v3Result + v3Result : v3Result >>> 0) % 10000 < closure_1;
   };
 };
-const importDefaultResult7 = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/experiments/GuildFilters.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/GuildFilters.tsx");
 
 export const GUILD_FILTERS = obj;

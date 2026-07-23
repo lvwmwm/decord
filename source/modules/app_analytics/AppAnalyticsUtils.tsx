@@ -1,53 +1,82 @@
-// Module ID: 4320
-// Function ID: 37849
+// Module ID: 4324
+// Function ID: 37881
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1352, 1194, 1348, 1907, 4051, 1917, 1910, 1838, 4177, 3758, 4217, 4202, 4142, 3767, 1906, 3947, 4325, 1849, 4146, 653, 1355, 3763, 483, 4327, 675, 664, 4328, 4332, 22, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, trackWithMetadata
 
-// Module 4320 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4324 (_createForOfIteratorHelperLoose)
+import { THREAD_CHANNEL_TYPES } from "_callSuper";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_13 from "_createForOfIteratorHelperLoose";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import closure_18 from "_isNativeReflectConstruct";
+import closure_19 from "_isNativeReflectConstruct";
+import closure_20 from "_isNativeReflectConstruct";
+import closure_21 from "_isNativeReflectConstruct";
+import closure_22 from "_isNativeReflectConstruct";
+import closure_23 from "_isNativeReflectConstruct";
+import closure_24 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { isStaticChannelRoute } from "set";
+
+let closure_25;
+let closure_26;
+let closure_27;
+let closure_28;
+let closure_7;
+let closure_8;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +87,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,7 +121,7 @@ function countKeys(voiceStates) {
     num2 = num;
     while (keys[tmp] !== undefined) {
       num = num + 1;
-      // continue
+      continue;
     }
   }
   return num2;
@@ -105,9 +134,9 @@ function collectGuildAnalyticsMetadata(guildId) {
     if (null == guild) {
       return null;
     } else {
-      const numRoles = numRoles.getNumRoles(guild.id);
-      const member = member.getMember(guildId, id.getId());
-      const channels = channels.getChannels(guildId);
+      numRoles = numRoles.getNumRoles(guild.id);
+      member = member.getMember(guildId, id.getId());
+      channels = channels.getChannels(guildId);
       const obj = { guild_id: guild.id };
       const voiceStates = store4.getVoiceStates(guildId);
       obj.guild_size_total = memberCount.getMemberCount(guildId);
@@ -122,7 +151,7 @@ function collectGuildAnalyticsMetadata(guildId) {
       obj.guild_member_num_roles = num;
       let NONE = store3.getGuildPermissions(guild);
       if (null == NONE) {
-        NONE = importAll(dependencyMap[21]).NONE;
+        NONE = importAll(3763).NONE;
       }
       obj.guild_member_perms = String(NONE);
       const features = guild.features;
@@ -145,8 +174,8 @@ function collectChannelAnalyticsMetadata(channel) {
     } else {
       let hasItem = null != tmp2;
       if (hasItem) {
-        hasItem = callback(closure_3[22]).has(tmp2.deny, constants.VIEW_CHANNEL);
-        const obj = callback(closure_3[22]);
+        hasItem = outer1_2(outer1_3[22]).has(tmp2.deny, outer1_27.VIEW_CHANNEL);
+        const obj = outer1_2(outer1_3[22]);
       }
       return hasItem;
     }
@@ -155,9 +184,8 @@ function collectChannelAnalyticsMetadata(channel) {
     return null;
   } else {
     const guildId = channel.getGuildId();
-    const require = guildId;
     if (null == guildId) {
-      const obj = {};
+      let obj = {};
       ({ id: obj.channel_id, type: obj.channel_type } = channel);
       let num = 0;
       if (channel.isPrivate()) {
@@ -165,7 +193,7 @@ function collectChannelAnalyticsMetadata(channel) {
       }
       obj.channel_size_total = num;
       if (null == guildId) {
-        let NONE = importAll(dependencyMap[21]).NONE;
+        let NONE = importAll(3763).NONE;
       } else {
         NONE = store3.getChannelPermissions(channel);
       }
@@ -221,7 +249,7 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, trackWithMetadataResult, hasIt
     } else {
       tmp11 = null;
       if (!channel.isPrivate()) {
-        const guildId = channel.getGuildId();
+        guildId = channel.getGuildId();
         let tmp13 = guild_id;
         if (null != guildId) {
           tmp13 = guildId;
@@ -243,7 +271,7 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, trackWithMetadataResult, hasIt
         obj = { flush: flag };
         num.track(TEXT_AREA_CTA_CLICKED, obj, obj);
       }
-      let tmp24 = collectStaticChannelRouteAnalyticsMetadata(0, channel_id);
+      tmp24 = collectStaticChannelRouteAnalyticsMetadata(0, channel_id);
     }
     tmp24 = collectChannelAnalyticsMetadata(channel);
   }
@@ -257,9 +285,9 @@ function getRecipientFriendCounts(recipients) {
   let num2 = 0;
   if (!iter.done) {
     do {
-      let tmp2 = closure_19;
+      let tmp2 = friend;
       let sum = num;
-      if (closure_19.isFriend(iter2.value)) {
+      if (friend.isFriend(iter2.value)) {
         sum = num + 1;
       }
       iter3 = tmp();
@@ -272,12 +300,11 @@ function getRecipientFriendCounts(recipients) {
   return obj;
 }
 function getVoiceStateMetadata(guildId, channelId, videoEnabled) {
-  const require = channelId;
-  const obj = { marginLeft: "%FunctionPrototype%", marginRight: "paddingStart", video_enabled: videoEnabled };
-  const importDefault = obj;
-  const tmp = importDefault(dependencyMap[28]);
-  const found = importDefault(dependencyMap[28])(store4.getVoiceStates(guildId)).filter((channelId) => channelId.channelId === arg1);
-  const found1 = found.filter((userId) => userId.userId !== id.getId());
+  let closure_0 = channelId;
+  const obj = { voice_state_count: 0, video_stream_count: 0, video_enabled: videoEnabled };
+  const tmp = obj(22);
+  const found = obj(22)(store4.getVoiceStates(guildId)).filter((channelId) => channelId.channelId === closure_0);
+  const found1 = found.filter((userId) => userId.userId !== outer1_5.getId());
   const item = found1.forEach((selfVideo) => {
     obj.voice_state_count = obj.voice_state_count + 1;
     if (tmp) {
@@ -286,32 +313,9 @@ function getVoiceStateMetadata(guildId, channelId, videoEnabled) {
   });
   return obj;
 }
-const THREAD_CHANNEL_TYPES = require(dependencyMap[0]).THREAD_CHANNEL_TYPES;
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[3]);
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_7, GUILD_VOCAL_CHANNELS_KEY: closure_8 } = _module);
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-let closure_11 = importDefault(dependencyMap[5]);
-let closure_12 = importDefault(dependencyMap[6]);
-let closure_13 = importDefault(dependencyMap[7]);
-let closure_14 = importDefault(dependencyMap[8]);
-let closure_15 = importDefault(dependencyMap[9]);
-let closure_16 = importDefault(dependencyMap[10]);
-let closure_17 = importDefault(dependencyMap[11]);
-let closure_18 = importDefault(dependencyMap[12]);
-let closure_19 = importDefault(dependencyMap[13]);
-let closure_20 = importDefault(dependencyMap[14]);
-let closure_21 = importDefault(dependencyMap[15]);
-let closure_22 = importDefault(dependencyMap[16]);
-let closure_23 = importDefault(dependencyMap[17]);
-let closure_24 = importDefault(dependencyMap[18]);
-const _module1 = require(dependencyMap[19]);
-({ GuildFeatures: closure_25, AnalyticsLocations: closure_26, Permissions: closure_27, ActivityTypes: closure_28 } = _module1);
-const isStaticChannelRoute = require(dependencyMap[20]).isStaticChannelRoute;
-const _module2 = require(dependencyMap[29]);
-const result = _module2.fileFinishedImporting("modules/app_analytics/AppAnalyticsUtils.tsx");
+({ GUILD_SELECTABLE_CHANNELS_KEY: closure_7, GUILD_VOCAL_CHANNELS_KEY: closure_8 } = _isNativeReflectConstruct);
+({ GuildFeatures: closure_25, AnalyticsLocations: closure_26, Permissions: closure_27, ActivityTypes: closure_28 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_analytics/AppAnalyticsUtils.tsx");
 
 export default { trackWithMetadata, getVoiceStateMetadata };
 export { collectGuildAnalyticsMetadata };
@@ -339,12 +343,12 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
     } else {
       const obj = {};
       ({ id: obj2.channel_id, type: obj2.channel_type } = channel);
-      const mediaSessionId = mediaSessionId.getMediaSessionId();
+      mediaSessionId = mediaSessionId.getMediaSessionId();
       obj.guild_id = channel.getGuildId();
       obj.media_session_id = mediaSessionId;
       const merged = Object.assign(getVoiceStateMetadata(channel.getGuildId(), channel.id, videoEnabled.isVideoEnabled()));
       const isVideoEnabledResult = videoEnabled.isVideoEnabled();
-      const merged1 = Object.assign(require(dependencyMap[23]).getVoiceAnalyticsMetadataAdditional());
+      const merged1 = Object.assign(require(4327) /* getVoiceAnalyticsMetadataAdditional */.getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }
@@ -364,7 +368,7 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
       if (null == guild) {
         let flag = false;
         if (channel.isDM()) {
-          const user = user.getUser(channel.recipients[0]);
+          user = user.getUser(channel.recipients[0]);
           flag = false;
           if (null != user) {
             flag = user.bot;
@@ -385,7 +389,7 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
         const merged = Object.assign(tmp7);
         return obj1;
       } else {
-        const snapshot = snapshot.getSnapshot(selectedChannelId, 10 * importDefault(dependencyMap[25]).Millis.SECOND);
+        snapshot = snapshot.getSnapshot(selectedChannelId, 10 * importDefault(664).Millis.SECOND);
         const obj3 = { channel_id: selectedChannelId };
         ({ unread: obj6.channel_was_unread, mentionCount: obj6.channel_mention_count } = snapshot);
         obj3.channel_is_muted = closure_22.isChannelMuted(channel.guild_id, channel.id);
@@ -393,17 +397,17 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
         obj3.channel_is_spoiler = channel.isSpoilerChannel();
         obj3.channel_resolved_unread_setting = closure_22.resolveUnreadSetting(channel);
         const unreadSetting = closure_22.resolveUnreadSetting(channel);
-        obj3.channel_preset = require(dependencyMap[26]).presetFromSettings(unreadSetting, closure_22.resolvedMessageNotifications(channel));
+        obj3.channel_preset = require(4328) /* Presets */.presetFromSettings(unreadSetting, closure_22.resolvedMessageNotifications(channel));
         obj3.guild_id = channel.guild_id;
         ({ guildUnread: obj6.guild_was_unread, guildMentionCount: obj6.guild_mention_count } = snapshot);
         obj3.guild_is_muted = closure_22.isMuted(channel.guild_id);
         obj3.guild_resolved_unread_setting = closure_22.resolveGuildUnreadSetting(guild);
-        const obj7 = require(dependencyMap[26]);
+        const obj7 = require(4328) /* Presets */;
         const guildUnreadSetting = closure_22.resolveGuildUnreadSetting(guild);
-        obj3.guild_preset = require(dependencyMap[26]).presetFromSettings(guildUnreadSetting, closure_22.getMessageNotifications(channel.guild_id));
+        obj3.guild_preset = require(4328) /* Presets */.presetFromSettings(guildUnreadSetting, closure_22.getMessageNotifications(channel.guild_id));
         ({ parent_id: obj6.parent_id, parentChannelThreadType: obj6.parent_channel_type } = channel);
-        const obj8 = require(dependencyMap[26]);
-        obj3.has_pending_member_action = require(dependencyMap[27]).hasPendingMemberAction(channel.guild_id, selectedChannelId);
+        const obj8 = require(4328) /* Presets */;
+        obj3.has_pending_member_action = require(4332) /* hasPendingMemberAction */.hasPendingMemberAction(channel.guild_id, selectedChannelId);
         obj3.can_send_message = store3.can(constants3.SEND_MESSAGES, channel);
         obj3.is_app_dm = false;
         return obj3;
@@ -413,15 +417,14 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
 };
 export { getRecipientFriendCounts };
 export { getVoiceStateMetadata };
-export const getCustomStatusMetadata = function getCustomStatusMetadata(guildId) {
-  const require = arg1;
+export const getCustomStatusMetadata = function getCustomStatusMetadata(closure_0) {
+  closure_0 = arg1;
   const obj = { custom_status_count: 0 };
-  const importDefault = obj;
-  const tmp = importDefault(dependencyMap[28]);
-  const item = importDefault(dependencyMap[28])(store4.getVoiceStates(guildId)).forEach((channelId) => {
-    let tmp = channelId.channelId === arg1;
+  let tmp = obj(22);
+  const item = obj(22)(store4.getVoiceStates(closure_0)).forEach((channelId) => {
+    let tmp = channelId.channelId === closure_0;
     if (tmp) {
-      tmp = null != closure_16.findActivity(channelId.userId, (type) => type.type === constants.CUSTOM_STATUS);
+      tmp = null != outer1_16.findActivity(channelId.userId, (type) => type.type === outer2_28.CUSTOM_STATUS);
     }
     if (tmp) {
       obj.custom_status_count = obj.custom_status_count + 1;

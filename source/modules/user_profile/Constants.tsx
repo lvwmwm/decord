@@ -1,17 +1,17 @@
-// Module ID: 8258
-// Function ID: 65136
+// Module ID: 8264
+// Function ID: 65173
 // Name: USER_PROFILE_TOOLTIP_DELAY
-// Dependencies: []
+// Dependencies: [653, 8265, 2]
 // Exports: getBadgeAssetFromCDN, getBadgeName
 
-// Module 8258 (USER_PROFILE_TOOLTIP_DELAY)
-const Endpoints = require(dependencyMap[0]).Endpoints;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/user_profile/Constants.tsx");
+// Module 8264 (USER_PROFILE_TOOLTIP_DELAY)
+import { Endpoints } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/user_profile/Constants.tsx");
 
 export const USER_PROFILE_TOOLTIP_DELAY = 300;
 export const getBadgeName = function getBadgeName(arg0) {
-  return require(dependencyMap[1]).BadgeId[arg0].toLowerCase();
+  return require(8265) /* BadgeId */.BadgeId[arg0].toLowerCase();
 };
 export const USER_PROFILE_POPOUT_KEY = "user-profile-popout";
 export const UserProfileSections = { FEATURED: "FEATURED", USER_INFO: "USER_INFO", BOT_INFO: "BOT_INFO", ACTIVITY: "ACTIVITY", MUTUALS: "MUTUALS", MUTUAL_GUILDS: "MUTUAL_GUILDS", MUTUAL_FRIENDS: "MUTUAL_FRIENDS", BOT_DATA_ACCESS: "BOT_DATA_ACCESS", WIDGETS: "WIDGETS", WISHLIST: "WISHLIST", MAIN: "MAIN" };

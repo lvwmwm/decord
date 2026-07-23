@@ -1,19 +1,19 @@
-// Module ID: 11315
-// Function ID: 88064
+// Module ID: 11325
+// Function ID: 88114
 // Name: _downloadPollGif
-// Dependencies: []
+// Dependencies: [5, 7071, 2]
 // Exports: downloadPollGif, getFileNameFromGifUrl, getFilePathForGif
 
-// Module 11315 (_downloadPollGif)
+// Module 11325 (_downloadPollGif)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER";
+
 function _downloadPollGif() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _downloadPollGif = obj;
   return obj(...arguments);
 }
-let closure_0 = importDefault(dependencyMap[0]);
-const POLL_ATTACHMENT_FOLDER = arg1(dependencyMap[1]).POLL_ATTACHMENT_FOLDER;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/polls/PollAttachmentUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/polls/PollAttachmentUtils.tsx");
 
 export const getFileNameFromGifUrl = function getFileNameFromGifUrl(localCreationAnswerId, mediaURL) {
   const parts = decodeURIComponent(mediaURL).split("/");

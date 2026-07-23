@@ -1,18 +1,19 @@
-// Module ID: 5697
-// Function ID: 49063
+// Module ID: 5702
+// Function ID: 49090
 // Name: resolveImageSource
-// Dependencies: []
+// Dependencies: [5703, 5705, 5706, 5707, 5708, 5709, 5710, 5711, 5712, 3976, 5704, 2]
 // Exports: getGuildBadgeImageSource
 
-// Module 5697 (resolveImageSource)
-function resolveImageSource(premiumImageSource, guildTraits, theme) {
+// Module 5702 (resolveImageSource)
+const require = arg1;
+function resolveImageSource(premiumImageSource, guildTraits, closure_2) {
   if (guildTraits.premium) {
     if (null != premiumImageSource.premiumImageSource) {
       let imageSource = premiumImageSource.premiumImageSource;
     }
     return imageSource;
   }
-  if (obj.isThemeLight(theme)) {
+  if (obj.isThemeLight(closure_2)) {
     if (null != premiumImageSource.imageSourceLight) {
       imageSource = premiumImageSource.imageSourceLight;
     }
@@ -20,30 +21,31 @@ function resolveImageSource(premiumImageSource, guildTraits, theme) {
   imageSource = premiumImageSource.imageSource;
 }
 let obj = {};
-obj = { imageSource: importDefault(dependencyMap[1]) };
-obj[arg1(dependencyMap[0]).BadgeCategory.STAFF] = obj;
-obj = { imageSource: importDefault(dependencyMap[2]) };
-obj[arg1(dependencyMap[0]).BadgeCategory.PARTNERED] = obj;
-const obj1 = { imageSource: importDefault(dependencyMap[1]) };
-obj[arg1(dependencyMap[0]).BadgeCategory.VERIFIED] = obj1;
-const obj2 = { imageSource: importDefault(dependencyMap[3]), imageSourceLight: importDefault(dependencyMap[4]), premiumImageSource: importDefault(dependencyMap[5]) };
-obj[arg1(dependencyMap[0]).BadgeCategory.COMMUNITY] = obj2;
-const obj3 = { imageSource: importDefault(dependencyMap[6]), imageSourceLight: importDefault(dependencyMap[7]), premiumImageSource: importDefault(dependencyMap[8]) };
-obj[arg1(dependencyMap[0]).BadgeCategory.DISCOVERABLE] = obj3;
-const obj4 = { imageSource: importDefault(dependencyMap[1]) };
-obj[arg1(dependencyMap[0]).BadgeCategory.VERIFIED_AND_PARTNERED] = obj4;
-obj[arg1(dependencyMap[0]).BadgeCategory.NONE] = {};
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_badge/native/GuildBadgeImageSource.tsx");
+obj = { imageSource: require("registerAsset") };
+obj[require("BadgeCategory").BadgeCategory.STAFF] = obj;
+obj = { imageSource: require("registerAsset") };
+obj[require("BadgeCategory").BadgeCategory.PARTNERED] = obj;
+const obj1 = { imageSource: require("registerAsset") };
+obj[require("BadgeCategory").BadgeCategory.VERIFIED] = obj1;
+let obj2 = { imageSource: require("registerAsset"), imageSourceLight: require("registerAsset"), premiumImageSource: require("registerAsset") };
+obj[require("BadgeCategory").BadgeCategory.COMMUNITY] = obj2;
+const obj3 = { imageSource: require("registerAsset"), imageSourceLight: require("registerAsset"), premiumImageSource: require("registerAsset") };
+obj[require("BadgeCategory").BadgeCategory.DISCOVERABLE] = obj3;
+const obj4 = { imageSource: require("registerAsset") };
+obj[require("BadgeCategory").BadgeCategory.VERIFIED_AND_PARTNERED] = obj4;
+obj[require("BadgeCategory").BadgeCategory.NONE] = {};
+const result = require("registerAsset").fileFinishedImporting("modules/guild_badge/native/GuildBadgeImageSource.tsx");
 
 export const badgeVariants = obj;
 export { resolveImageSource };
-export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild, theme) {
-  const obj = theme(dependencyMap[10]);
+export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild, closure_2) {
+  const obj = require(5704) /* isPremiumGuild */;
   const guildTraits = obj.getGuildTraits(guild);
-  const obj2 = theme(dependencyMap[0]);
+  const obj2 = require(5703) /* BadgeCategory */;
+  const tmp2 = obj[obj2.getBadgeCategory(obj2, guildTraits)];
   let tmp3 = null;
-  if (null != obj[obj2.getBadgeCategory(obj2, guildTraits)]) {
-    tmp3 = resolveImageSource(tmp2, guildTraits, theme);
+  if (null != tmp2) {
+    tmp3 = resolveImageSource(tmp2, guildTraits, closure_2);
   }
   return tmp3;
 };

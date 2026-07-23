@@ -1,12 +1,13 @@
 // Module ID: 1500
-// Function ID: 17281
+// Function ID: 17282
 // Name: joinPaths
-// Dependencies: []
+// Dependencies: [77, 65, 1493, 1501, 1475, 1495]
 // Exports: default
 
 // Module 1500 (joinPaths)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
+import _defineProperty from "_defineProperty";
+import _toConsumableArray from "_toConsumableArray";
+
 function joinPaths() {
   const length = arguments.length;
   const arr = new Array(length);
@@ -19,25 +20,23 @@ function joinPaths() {
   return found.join("/");
 }
 function matchAgainstConfigs(arg0, sorted) {
-  const importDefault = sorted;
-  const dependencyMap = arg0;
+  let closure_0 = sorted;
+  let closure_2 = arg0;
   function _loop() {
-    if (closure_3.regex) {
-      const match = closure_2.match(closure_3.regex);
-      const arg1 = match;
+    if (_defineProperty.regex) {
+      const match = closure_2.match(_defineProperty.regex);
       if (match) {
         let reduced;
-        if (null != closure_3.pattern) {
-          const parts = str.split("/");
-          const found = parts.filter((str) => str.startsWith(":"));
+        if (null != _defineProperty.pattern) {
+          let parts = str.split("/");
+          let found = parts.filter((str) => str.startsWith(":"));
           reduced = found.reduce((arg0, arg1, arg2) => Object.assign(arg0, callback({}, arg1, match[2 * (arg2 + 1)].replace(/\//, ""))), {});
         }
         let closure_1 = reduced;
-        const routeNames = closure_3.routeNames;
+        const routeNames = _defineProperty.routeNames;
         closure_1 = routeNames.map((name) => {
-          const match = name;
-          const found = match.find((screen) => screen.screen === screen);
-          let closure_1 = found;
+          let closure_0 = name;
+          const found = match.find((screen) => screen.screen === closure_0);
           let reduced;
           if (null != found) {
             if (null != found.path) {
@@ -80,23 +79,23 @@ function matchAgainstConfigs(arg0, sorted) {
   }
   const iter = sorted[Symbol.iterator]();
   while (iter !== undefined) {
-    let closure_3 = iter.next();
+    let _defineProperty = iter.next();
     let tmp = _loop;
     let _loopResult = _loop();
     if (0 !== _loopResult) {
       let tmp4 = _loopResult;
       if (1 === tmp3) {
         iter.return();
-        // break
+        break;
       }
       let obj = {};
       let tmp5 = importAll;
       obj.routes = importAll;
-      let tmp6 = dependencyMap;
-      obj.remainingPath = dependencyMap;
+      let tmp6 = closure_2;
+      obj.remainingPath = closure_2;
       return obj;
     }
-    // continue
+    continue;
   }
 }
 function createNormalizedConfigs(arg0, arg1) {
@@ -104,7 +103,6 @@ function createNormalizedConfigs(arg0, arg1) {
     if (undefined !== arguments[2]) {
       let items1 = arguments[2];
     }
-    const importDefault = items1;
     let tmp;
     if (arguments.length > 3) {
       tmp = arguments[3];
@@ -119,9 +117,8 @@ function createNormalizedConfigs(arg0, arg1) {
     if (arguments.length > 5) {
       tmp3 = arguments[5];
     }
-    let closure_3 = tmp3;
+    let _defineProperty = tmp3;
     const items = [];
-    let closure_4 = items;
     items1.push(arg0);
     tmp2.push(arg0);
     const joinPaths = tmp7;
@@ -142,7 +139,7 @@ function createNormalizedConfigs(arg0, arg1) {
           const keys = Object.keys(tmp7.screens);
           const item = keys.forEach((arg0) => {
             const push = items.push;
-            push.apply(items, items(closure_7(arg0, tmp7.screens, items1, tmp, items(items1), null != tmp10Result ? tmp10Result : closure_7)));
+            push.apply(items, items(outer1_7(arg0, tmp7.screens, items1, closure_1, items(closure_2), null != closure_6 ? closure_6 : _defineProperty)));
           });
         }
       } else {
@@ -193,14 +190,14 @@ function createConfigItem(screen, arg1, str, path, parse) {
       } else {
         str = ".*";
         if ("*" !== str) {
-          str = callback(closure_2[3])(str);
+          str = outer1_0(outer1_2[3])(str);
         }
         const _HermesInternal = HermesInternal;
         combined = "" + str + "\\/";
       }
       return combined;
     });
-    const _HermesInternal = HermesInternal;
+    let _HermesInternal = HermesInternal;
     regExp = new RegExp("^(" + mapped.join("") + ")");
   }
   obj.regex = regExp;
@@ -245,7 +242,7 @@ function findInitialRoute(name, items, items) {
         return initialRouteName;
       }
     }
-    // continue
+    continue;
   }
 }
 function createStateObject(arg0, arr, arg2) {
@@ -311,7 +308,7 @@ function createNestedStateObject(path, mapped, items, sorted) {
       tmp10 = state;
     }
   }
-  const tmp11 = importDefault(dependencyMap[4])(tmp4);
+  const tmp11 = importDefault(1475)(tmp4);
   tmp11.path = path;
   if (!sorted) {
     const tmp20 = parseQueryParams(path, undefined);
@@ -330,32 +327,29 @@ function createNestedStateObject(path, mapped, items, sorted) {
       if (tmp12 === nextResult.routeNames[nextResult.routeNames.length - 1]) {
         iter.return();
         let parse = nextResult.parse;
-        // break
-      } else {
-        // continue
+        break;
       }
       let tmp19 = parse;
       let tmp18 = __exception;
       iter.return();
       throw tmp18;
     }
-    const tmp12 = name;
+    tmp12 = name;
   }
 }
 function parseQueryParams(path, arg1) {
-  const importDefault = arg1;
-  const parsed = importAll(dependencyMap[5]).parse(path.split("?")[1]);
-  const importAll = parsed;
+  let closure_0 = arg1;
+  parsed = parsed(1495).parse(path.split("?")[1]);
   if (arg1) {
     const _Object = Object;
     const keys = Object.keys(parsed);
     const item = keys.forEach((arg0) => {
-      let callResult = hasOwnProperty.call(arg1, arg0);
+      let callResult = hasOwnProperty.call(dependencyMap, arg0);
       if (callResult) {
         callResult = "string" === typeof parsed[arg0];
       }
       if (callResult) {
-        parsed[arg0] = arg1[arg0](parsed[arg0]);
+        parsed[arg0] = dependencyMap[arg0](parsed[arg0]);
       }
     });
   }
@@ -370,31 +364,29 @@ export default function getStateFromPath(path, config) {
   let remainingPath;
   let routes;
   if (config) {
-    importDefault(dependencyMap[2])(config);
+    items(sorted[2])(config);
   }
-  const items = [];
-  const importDefault = items;
+  items = [];
   if (tmp4) {
-    const obj = { initialRouteName: config.initialRouteName, parentScreens: [] };
+    let obj = { initialRouteName: config.initialRouteName, parentScreens: [] };
     items.push(obj);
   }
   let screens;
   if (null != config) {
     screens = config.screens;
   }
-  const importAll = screens;
   const str = path.replace(/\/+/g, "/");
-  const tmp4 = null != config && config.initialRouteName;
+  tmp4 = null != config && config.initialRouteName;
   const replaced = path.replace(/\/+/g, "/").replace(/^\//, "").replace(/\?.*$/, "");
   let str3 = replaced;
   if (!replaced.endsWith("/")) {
-    const _HermesInternal = HermesInternal;
+    let _HermesInternal = HermesInternal;
     str3 = "" + replaced + "/";
   }
   if (undefined === screens) {
-    const parts = str3.split("/");
+    let parts = str3.split("/");
     const _Boolean = Boolean;
-    const found = parts.filter(Boolean);
+    let found = parts.filter(Boolean);
     const mapped = found.map((arg0) => ({ name: decodeURIComponent(arg0) }));
     let tmp24;
     if (mapped.length) {
@@ -406,7 +398,7 @@ export default function getStateFromPath(path, config) {
     const concat = items1.concat;
     const _Object = Object;
     const keys = Object.keys(screens);
-    const sorted = concat.apply(items1, callback(keys.map((arg0) => callback2(arg0, screens, [], items, [])))).sort((pattern, pattern2) => {
+    sorted = concat.apply(items1, callback(keys.map((arg0) => outer1_7(arg0, screens, [], items, [])))).sort((pattern, pattern2) => {
       if (pattern.pattern === pattern2.pattern) {
         const routeNames = pattern2.routeNames;
         const joined = routeNames.join(">");
@@ -461,13 +453,10 @@ export default function getStateFromPath(path, config) {
         }
       }
     });
-    const dependencyMap = sorted;
     const reduced = sorted.reduce((arg0, routeNames) => {
       if (arg0[routeNames.pattern]) {
         routeNames = arg0[routeNames.pattern].routeNames;
-        const items = routeNames;
         const routeNames1 = routeNames.routeNames;
-        const screens = routeNames1;
         if (routeNames.length > routeNames1.length) {
           let everyResult = routeNames1.every((arg0, arg1) => routeNames[arg1] === arg0);
         } else {
@@ -482,7 +471,7 @@ export default function getStateFromPath(path, config) {
           throw error;
         }
       }
-      return Object.assign(arg0, callback({}, routeNames.pattern, routeNames));
+      return Object.assign(arg0, outer1_3({}, routeNames.pattern, routeNames));
     }, {});
     if ("/" === str3) {
       const found1 = sorted.find((path) => {
@@ -490,7 +479,8 @@ export default function getStateFromPath(path, config) {
         if (everyResult) {
           const routeNames = path.routeNames;
           everyResult = routeNames.every((arg0) => {
-            const found = closure_2.find((screen) => screen.screen === screen);
+            let closure_0 = arg0;
+            const found = outer1_2.find((screen) => screen.screen === closure_0);
             return !(null != found && found.path);
           });
         }
@@ -498,7 +488,7 @@ export default function getStateFromPath(path, config) {
       });
       let tmp18;
       if (found1) {
-        const routeNames = found1.routeNames;
+        let routeNames = found1.routeNames;
         tmp18 = createNestedStateObject(path, routeNames.map((name) => ({ name })), items, sorted);
       }
       return tmp18;
@@ -524,7 +514,7 @@ export default function getStateFromPath(path, config) {
         }
       }
     }
-    const applyResult = concat.apply(items1, callback(keys.map((arg0) => callback2(arg0, screens, [], items, []))));
+    const applyResult = concat.apply(items1, callback(keys.map((arg0) => outer1_7(arg0, screens, [], items, []))));
   }
   const str2 = path.replace(/\/+/g, "/").replace(/^\//, "");
 };

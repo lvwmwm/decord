@@ -1,19 +1,20 @@
 // Module ID: 1482
-// Function ID: 17179
+// Function ID: 17180
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 33]
 // Exports: default
 
 // Module 1482 (context)
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
 const context = importAllResult.createContext(undefined);
 
 export default function EnsureSingleNavigator(children) {
-  const React = React.useRef();
-  return <context.Provider value={React.useMemo(() => ({
+  importAllResult = importAllResult.useRef();
+  return <context.Provider value={importAllResult.useMemo(() => ({
     register(current) {
-      current = ref.current;
+      current = outer1_0.current;
       if (undefined !== current) {
         if (current !== current) {
           const _Error = Error;
@@ -21,11 +22,11 @@ export default function EnsureSingleNavigator(children) {
           throw error;
         }
       }
-      ref.current = current;
+      outer1_0.current = current;
     },
     unregister(arg0) {
-      if (arg0 === ref.current) {
-        ref.current = undefined;
+      if (arg0 === outer1_0.current) {
+        outer1_0.current = undefined;
       }
     }
   }), [])}>{arg0.children}</context.Provider>;

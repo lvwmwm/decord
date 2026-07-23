@@ -1,50 +1,50 @@
-// Module ID: 15280
-// Function ID: 115344
+// Module ID: 15397
+// Function ID: 117518
 // Name: ThreadListTableRow
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 33, 4130, 5165, 15398, 566, 2]
 
-// Module 15280 (ThreadListTableRow)
+// Module 15397 (ThreadListTableRow)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function ThreadListTableRow(thread) {
   let end;
   let start;
   thread = thread.thread;
-  const arg1 = thread;
   const onPress = thread.onPress;
-  const dependencyMap = onPress;
   ({ start, end } = thread);
   const items = [onPress, thread.id];
-  const memo = importAllResult.useMemo(() => null != onPress ? () => callback(id.id) : undefined, items);
+  const memo = importAllResult.useMemo(() => null != onPress ? (() => outer1_1(outer1_0.id)) : undefined, items);
   let obj = { label: thread.name };
-  obj = { style: callback().subLabel, children: jsx(arg1(dependencyMap[6]).ThreadSubtext, { thread }) };
-  obj.subLabel = <View {...obj} />;
+  obj = { style: callback().subLabel, children: jsx(thread(onPress[6]).ThreadSubtext, { thread }) };
+  obj.subLabel = <View style={callback().subLabel}>{jsx(thread(onPress[6]).ThreadSubtext, { thread })}</View>;
   obj.onPress = memo;
   obj.start = start;
   obj.end = end;
   obj.arrow = true;
-  return jsx(arg1(dependencyMap[5]).TableRow, obj);
+  return jsx(thread(onPress[5]).TableRow, { style: callback().subLabel, children: jsx(thread(onPress[6]).ThreadSubtext, { thread }) });
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ subLabel: { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021615382570838803, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002292015492302456 } });
-const obj2 = arg1(dependencyMap[4]);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ subLabel: { maxWidth: "100%", marginTop: 2 } });
 const memoResult = importAllResult.memo((threadId) => {
   let end;
   let onPress;
   let start;
-  const arg1 = threadId.threadId;
+  threadId = threadId.threadId;
   ({ onPress, start, end } = threadId);
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(threadId));
+  let obj = threadId(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(threadId));
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { thread: stateFromStores, start, end, onPress };
-    tmp2 = <ThreadListTableRow {...obj} />;
+    tmp2 = <ThreadListTableRow thread={stateFromStores} start={start} end={end} onPress={onPress} />;
   }
   return tmp2;
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/threads/native/components/redesign/ThreadListTableRow.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/native/components/redesign/ThreadListTableRow.tsx");
 
 export default memoResult;

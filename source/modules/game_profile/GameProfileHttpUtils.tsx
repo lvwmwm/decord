@@ -1,35 +1,34 @@
-// Module ID: 8652
-// Function ID: 68482
+// Module ID: 8659
+// Function ID: 68522
 // Name: _getShopCollection
-// Dependencies: []
+// Dependencies: [5, 1921, 8596, 653, 8660, 686, 4369, 507, 566, 561, 664, 8654, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 8652 (_getShopCollection)
+// Module 8659 (_getShopCollection)
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_7 } from "set";
+import initialize from "initialize";
+
+const require = arg1;
 function _getShopCollection() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getShopCollection = obj;
   return obj(...arguments);
 }
 function _fetchSimilarGames() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSimilarGames = obj;
   return obj(...arguments);
 }
 function _getGameAnnouncements() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getGameAnnouncements = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const importDefaultResult = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-let closure_7 = arg1(dependencyMap[4]).SIMILAR_GAMES_BLOCKED_GAME_IDS;
-let obj = arg1(dependencyMap[8]);
-obj = {
+initialize = {
   getQueryId(arg0, arg1) {
     let combined = null;
     if (arg1) {
@@ -47,28 +46,28 @@ obj = {
     return tmp2;
   },
   load(arg0) {
-    return function fetchSimilarGames(arg0) {
-      return callback(...arguments);
-    }(arg0);
+    return (function fetchSimilarGames(arg0) {
+      return outer1_9(...arguments);
+    })(arg0);
   },
-  retryConfig: obj,
-  failureStaleAfter: importDefault(dependencyMap[10]).Seconds.MINUTE
+  retryConfig: initialize,
+  failureStaleAfter: require("set").Seconds.MINUTE
 };
-obj = {
+initialize = {
   backoff() {
-    let tmp = importDefault(dependencyMap[9]);
-    const result = 5 * importDefault(dependencyMap[10]).Millis.SECOND;
-    tmp = new tmp(result, 5 * importDefault(dependencyMap[10]).Millis.MINUTE);
+    let tmp = importDefault(561);
+    const result = 5 * importDefault(664).Millis.SECOND;
+    tmp = new tmp(result, 5 * importDefault(664).Millis.MINUTE);
     return tmp;
   }
 };
-const fetchStore = obj.createFetchStore(importDefaultResult, obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/game_profile/GameProfileHttpUtils.tsx");
+const fetchStore = initialize.createFetchStore(importDefaultResult, initialize);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_profile/GameProfileHttpUtils.tsx");
 
-export const getShopCollection = function getShopCollection(arg0) {
+export const getShopCollection = function getShopCollection(closure_0) {
   return _getShopCollection(...arguments);
 };
 export const useSimilarGameIds = fetchStore;
-export const getGameAnnouncements = function getGameAnnouncements(arg0, arg1) {
+export const getGameAnnouncements = function getGameAnnouncements(closure_0, arg1) {
   return _getGameAnnouncements(...arguments);
 };

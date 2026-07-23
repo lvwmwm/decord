@@ -1,52 +1,62 @@
-// Module ID: 12520
-// Function ID: 96042
+// Module ID: 12634
+// Function ID: 98198
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 5592, 653, 686, 12635, 12636, 566, 2]
 
-// Module 12520 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12634 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_9 from "_isNativeReflectConstruct";
+import { Consents } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +67,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,23 +102,15 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const Consents = arg1(dependencyMap[7]).Consents;
 let closure_11 = { detected: false, lastScannedAt: undefined };
 let closure_12 = { apps: {} };
-let tmp2 = (DeviceSettingsStore) => {
+let tmp2 = ((DeviceSettingsStore) => {
   class LocalAppDetectionStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, LocalAppDetectionStore);
+      tmp = outer1_4(this, apply);
       items = [, ];
-      items[0] = closure_1(closure_2[8]);
+      items[0] = outer1_1(outer1_2[8]);
       items[1] = {
         POST_CONNECTION_OPEN() {
               return tmp2Result.handlePostConnectionOpen();
@@ -117,36 +119,39 @@ let tmp2 = (DeviceSettingsStore) => {
               return tmp2Result.handleLocalAppDetectionComplete(arg0);
             }
       };
-      obj = closure_7(LocalAppDetectionStore);
-      tmp2 = closure_6;
-      if (closure_15()) {
+      obj = outer1_7(apply);
+      tmp2 = outer1_6;
+      if (outer1_15()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      LocalAppDetectionStore = tmp2Result;
+      apply = tmp2Result;
       return tmp2Result;
     }
   }
-  const arg1 = LocalAppDetectionStore;
   callback2(LocalAppDetectionStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
     value(arg0) {
-      const tmp = arg0;
+      let tmp = arg0;
       const self = this;
-      self.waitFor(closure_9);
+      if (null == arg0) {
+        tmp = outer1_12;
+      }
+      outer1_12 = tmp;
+      self.waitFor(outer1_9);
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "getUserAgnosticState",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[1] = obj;
@@ -155,7 +160,7 @@ let tmp2 = (DeviceSettingsStore) => {
     value(arg0) {
       let tmp = this.getUserAgnosticState().apps[arg0];
       if (null == tmp) {
-        tmp = closure_11;
+        tmp = outer1_11;
       }
       return tmp;
     }
@@ -165,7 +170,7 @@ let tmp2 = (DeviceSettingsStore) => {
     key: "isAppInstalled",
     value(arg0) {
       const self = this;
-      const tmp = !closure_9.hasConsented(constants.PERSONALIZATION);
+      const tmp = !outer1_9.hasConsented(outer1_10.PERSONALIZATION);
       let detected = !tmp;
       if (!tmp) {
         detected = self.getAppState(arg0).detected;
@@ -179,7 +184,7 @@ let tmp2 = (DeviceSettingsStore) => {
       let iter2;
       const self = this;
       const items = [];
-      const tmp = callback4(LocalAppDetectionStore(closure_2[9]).ALL_DETECTABLE_APP_NAMES);
+      const tmp = outer1_13(LocalAppDetectionStore(outer1_2[9]).ALL_DETECTABLE_APP_NAMES);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -198,8 +203,8 @@ let tmp2 = (DeviceSettingsStore) => {
         } while (!iter2.done);
       }
       if (items.length > 0) {
-        LocalAppDetectionStore(closure_2[10]).detectLocalApps(items);
-        const obj = LocalAppDetectionStore(closure_2[10]);
+        LocalAppDetectionStore(outer1_2[10]).detectLocalApps(items);
+        const obj = LocalAppDetectionStore(outer1_2[10]);
       }
     }
   };
@@ -214,32 +219,33 @@ let tmp2 = (DeviceSettingsStore) => {
         const _Date = Date;
         let obj = {};
         const timestamp = Date.now();
-        const merged = Object.assign(obj);
+        const merged = Object.assign(outer1_12);
         let num3 = 0;
         if (0 < entries.length) {
           do {
-            let tmp5 = closure_3;
-            let tmp6 = closure_3(entries[num3], 2);
+            let tmp5 = outer1_3;
+            let tmp6 = outer1_3(entries[num3], 2);
             obj = { detected: tmp6[1], lastScannedAt: timestamp };
             obj.apps[tmp6[0]] = obj;
             num3 = num3 + 1;
             length = entries.length;
           } while (num3 < length);
         }
+        outer1_12 = obj;
       }
     }
   };
   items[6] = {
     key: "DEV_resetState",
     value() {
-      let closure_12 = { apps: {} };
+      const outer1_12 = { apps: {} };
     }
   };
   return callback(LocalAppDetectionStore, items);
-}(importDefault(dependencyMap[11]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "AppDetectionStore";
 tmp2.persistKey = "AppDetectionStore";
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/local_app_detection/native/LocalAppDetectionStore.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/local_app_detection/native/LocalAppDetectionStore.tsx");
 
 export default tmp2;

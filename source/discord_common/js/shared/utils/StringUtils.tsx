@@ -1,15 +1,15 @@
 // Module ID: 1833
-// Function ID: 20036
+// Function ID: 20037
 // Name: cssValueToNumber
-// Dependencies: [4294967295, 0, 0]
+// Dependencies: [1834, 2, 1835]
 // Exports: getAcronym, truncateText, upperCaseFirstChar
 
 // Module 1833 (cssValueToNumber)
-let closure_2 = /[\u0300-\u036f]/g;
-let closure_3 = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/shared/utils/StringUtils.tsx");
+const re2 = /[\u0300-\u036f]/g;
+const re3 = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/StringUtils.tsx");
 
-export const cssValueToNumber = require("__exportStarResult1").cssValueToNumber;
+export const cssValueToNumber = require("set").cssValueToNumber;
 export const upperCaseFirstChar = function upperCaseFirstChar(str) {
   str = "";
   if (null != str) {
@@ -58,20 +58,20 @@ export const getAcronym = function getAcronym(str) {
   }
   return str;
 };
-export const stripDiacritics = null == String.prototype.normalize ? (arg0) => arg0 : (str) => {
+export const stripDiacritics = null == String.prototype.normalize ? ((arg0) => arg0) : ((str) => {
   const replaced = str.normalize("NFD").replace(closure_2, "");
   return replaced.normalize("NFC");
-};
-export const normalize = null == String.prototype.normalize ? (arg0) => arg0 : function fullNormalize(str) {
-  const callback = callback(dependencyMap[0]);
+});
+export const normalize = null == String.prototype.normalize ? ((arg0) => arg0) : (function fullNormalize(str) {
+  _require = _require(1834);
   const dependencyMap = "";
   const items = [...str.normalize("NFD")];
   const item = items.forEach((arg0) => {
     let tmp = arg0;
-    if (null != closure_0[arg0]) {
+    if (null != table[arg0]) {
       tmp = tmp3;
     }
     closure_1 = closure_1 + tmp;
   });
   return dependencyMap.normalize("NFD").toLocaleLowerCase();
-};
+});

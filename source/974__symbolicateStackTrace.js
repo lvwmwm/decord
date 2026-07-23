@@ -1,22 +1,25 @@
 // Module ID: 974
-// Function ID: 10482
+// Function ID: 10483
 // Name: _symbolicateStackTrace
-// Dependencies: []
+// Dependencies: [5, 975, 215]
 // Exports: default
 
 // Module 974 (_symbolicateStackTrace)
-async function _symbolicateStackTrace(stack, extraData, arg2) {
-  let obj = callback(closure_2[1]);
+import asyncGeneratorStep from "asyncGeneratorStep";
+
+const require = arg1;
+async function _symbolicateStackTrace(arg0, arg1, arg2) {
+  let obj = outer2_1(outer2_2[1]);
   if (defaultResult.bundleLoadedFromServer) {
-    let _fetch = _fetch.fetch;
+    let _fetch = outer2_0.fetch;
     if (null == _fetch) {
-      _fetch = callback(closure_2[2]).fetch;
+      _fetch = outer2_1(outer2_2[2]).fetch;
     }
     obj = { method: "POST" };
-    obj = { Content-Type: "application/json" };
+    obj = { "Content-Type": "application/json" };
     obj.headers = obj;
     const _JSON = JSON;
-    const obj1 = { stack, extraData };
+    const obj1 = { stack: arg0, extraData: arg1 };
     const text = `${tmp.url}symbolicate`;
     obj.body = JSON.stringify(obj1);
     return yield yield _fetch(`${tmp.url}symbolicate`, obj).json();
@@ -25,9 +28,8 @@ async function _symbolicateStackTrace(stack, extraData, arg2) {
     const error = new Error("Bundle was not loaded from Metro.");
     throw error;
   }
-  const defaultResult = obj.default();
+  defaultResult = obj.default();
 }
-let closure_3 = importDefault(dependencyMap[0]);
 
 export default function symbolicateStackTrace(arg0, arg1) {
   return _symbolicateStackTrace(...arguments);

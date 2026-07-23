@@ -1,46 +1,43 @@
-// Module ID: 15754
-// Function ID: 120462
+// Module ID: 15871
+// Function ID: 122635
 // Name: DisconnectCancelButton
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 31, 1347, 4149, 4342, 10015, 33, 4130, 689, 10014, 10532, 3991, 10525, 4323, 4309, 4944, 10654, 15872, 9134, 15862, 1212, 2]
 // Exports: default
 
-// Module 15754 (DisconnectCancelButton)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import { VoicePanelModes } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15871 (DisconnectCancelButton)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import withEqualityFn from "withEqualityFn";
+import { VoicePanelModes } from "VoicePanelModes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let require = arg1;
 let closure_10 = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
-__exportStarResult1 = {};
-__exportStarResult1 = { minWidth: require("__exportStarResult1").modules.mobile.VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH, backgroundColor: require("__exportStarResult1").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-__exportStarResult1.disconnectCancelBG = __exportStarResult1;
-__exportStarResult1.icon = { tintColor: require("__exportStarResult1").colors.WHITE };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { minWidth: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.disconnectCancelBG = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.icon = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_12 = { code: "function VoicePanelDisconnectCancelButtonTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get$id,_focused$get;if(mode.get()!==VoicePanelModes.PANEL){return null;}return(_focused$get$id=(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)!==null&&_focused$get$id!==void 0?_focused$get$id:null;}" };
 let closure_13 = { code: "function VoicePanelDisconnectCancelButtonTsx2(focusId,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId!==lastFocusId){runOnJS(handleFocusChange)(focusId);}}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx");
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx");
 
 export default function DisconnectCancelButton(props) {
-  let closure_7;
-  const tmp = __exportStarResult1();
-  const arg1 = tmp;
-  const context = React.useContext(importDefault(dependencyMap[9]));
-  const channelId = context.channelId;
-  const importDefault = channelId;
-  const focused = context.focused;
-  const dependencyMap = focused;
+  let PhoneHangUpIcon;
+  let tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  const context = first.useContext(channelId(focused[9]));
+  channelId = context.channelId;
+  focused = context.focused;
   const mode = context.mode;
-  let callback = mode;
-  const tmp3 = callback(React.useState(null), 2);
-  const first = tmp3[0];
-  const React = first;
+  const tmp3 = mode(first.useState(null), 2);
+  first = tmp3[0];
   let closure_5 = tmp3[1];
-  callback = React.useCallback((arg0) => {
+  const callback = first.useCallback((arg0) => {
     if (null != arg0) {
       const currentEmbeddedActivity = store.getCurrentEmbeddedActivity();
       let applicationId;
@@ -52,13 +49,13 @@ export default function DisconnectCancelButton(props) {
         obj = {};
         ({ applicationId: obj2.applicationId, compositeInstanceId: obj2.instanceId } = currentEmbeddedActivity);
         if (arg0 === obj.getEmbeddedActivityParticipantId(obj)) {
-          store(constants2.ACTIVITY);
+          store(outer1_10.ACTIVITY);
         }
       }
       if (null == callback.getActiveStreamForStreamKey(arg0)) {
-        let STREAM = constants2.USER;
+        let STREAM = outer1_10.USER;
       } else {
-        STREAM = constants2.STREAM;
+        STREAM = outer1_10.STREAM;
       }
       store(STREAM);
       const tmp12 = store;
@@ -66,12 +63,11 @@ export default function DisconnectCancelButton(props) {
       store(null);
     }
   }, []);
-  let closure_6 = callback;
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(focused[11]);
   class A {
     constructor() {
       tmp = null;
-      if (mode.get() === closure_8.PANEL) {
+      if (mode.get() === outer1_8.PANEL) {
         tmp2 = focused;
         value = focused.get();
         id = undefined;
@@ -97,19 +93,19 @@ export default function DisconnectCancelButton(props) {
       const obj = tmp(focused[11]);
     }
   };
-  obj = { runOnJS: arg1(dependencyMap[11]).runOnJS, handleFocusChange: callback };
+  obj = { runOnJS: require(focused[11]).runOnJS, handleFocusChange: callback };
   fn.__closure = obj;
   fn.__workletHash = 16719769067952;
   fn.__initData = closure_13;
   const animatedReaction = obj.useAnimatedReaction(A, fn);
   const items = [channelId, first, focused];
-  const callback1 = React.useCallback(() => {
+  const callback1 = first.useCallback(() => {
     const value = focused.get();
     if (null != value) {
       const id = value.id;
     }
-    if (first !== constants2.ACTIVITY) {
-      if (first === constants2.STREAM) {
+    if (first !== outer1_10.ACTIVITY) {
+      if (first === outer1_10.STREAM) {
         const participant = channelId(focused[13]).selectParticipant(channelId, null);
         if (null != id) {
           tmp(focused[14]).stopStream(id);
@@ -137,26 +133,25 @@ export default function DisconnectCancelButton(props) {
     }
   }, items);
   if (first === constants.ACTIVITY) {
-    let PhoneHangUpIcon = arg1(dependencyMap[16]).DoorExitIcon;
+    PhoneHangUpIcon = require(focused[16]).DoorExitIcon;
   } else if (first === constants.STREAM) {
-    PhoneHangUpIcon = arg1(dependencyMap[17]).ScreenXIcon;
+    PhoneHangUpIcon = require(focused[17]).ScreenXIcon;
   } else {
-    PhoneHangUpIcon = arg1(dependencyMap[18]).PhoneHangUpIcon;
+    PhoneHangUpIcon = require(focused[18]).PhoneHangUpIcon;
   }
-  closure_7 = PhoneHangUpIcon;
   const obj1 = { onPress: callback1, props: props.props, style: tmp.disconnectCancelBG };
   if (first === constants.ACTIVITY) {
-    const intl3 = arg1(dependencyMap[20]).intl;
-    let stringResult = intl3.string(arg1(dependencyMap[20]).t.R/FK4A);
+    const intl3 = require(focused[20]).intl;
+    let stringResult = intl3.string(require(focused[20]).t["R/FK4A"]);
   } else if (first === constants.STREAM) {
-    const intl2 = arg1(dependencyMap[20]).intl;
-    stringResult = intl2.string(arg1(dependencyMap[20]).t.q3O3J8);
+    const intl2 = require(focused[20]).intl;
+    stringResult = intl2.string(require(focused[20]).t.q3O3J8);
   } else {
-    const intl = arg1(dependencyMap[20]).intl;
-    stringResult = intl.string(arg1(dependencyMap[20]).t.6vrfgt);
+    const intl = require(focused[20]).intl;
+    stringResult = intl.string(require(focused[20]).t["6vrfgt"]);
   }
   obj1.accessibilityLabel = stringResult;
   const items1 = [PhoneHangUpIcon, tmp.icon];
-  obj1.children = React.useMemo(() => callback(PhoneHangUpIcon, { style: tmp.icon }), items1);
-  return jsx(importDefault(dependencyMap[19]), obj1);
+  obj1.children = first.useMemo(() => outer1_9(PhoneHangUpIcon, { style: tmp.icon }), items1);
+  return jsx(channelId(focused[19]), { onPress: callback1, props: props.props, style: tmp.disconnectCancelBG });
 };

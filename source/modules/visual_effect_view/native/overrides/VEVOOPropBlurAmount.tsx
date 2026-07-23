@@ -1,34 +1,36 @@
-// Module ID: 14597
-// Function ID: 109984
-// Dependencies: []
+// Module ID: 14712
+// Function ID: 112148
+// Dependencies: [57, 31, 4534, 33, 4130, 7495, 5505, 14713, 2]
 
-// Module 14597
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ getVisualEffectViewOverrides: closure_5, setVisualEffectViewOverides: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
-const obj2 = arg1(dependencyMap[4]);
+// Module 14712
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import useVisualEffectViewOverrides from "useVisualEffectViewOverrides";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ getVisualEffectViewOverrides: closure_5, setVisualEffectViewOverides: closure_6 } = useVisualEffectViewOverrides);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
 const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
-  const tmp2 = callback2(importAllResult.useState(false), 2);
+  const tmp2 = callback(importAllResult.useState(false), 2);
   const first = tmp2[0];
-  let callback = tmp2[1];
-  const tmp4 = callback2(importAllResult.useState(callback3().blurAmountOverride), 2);
+  const _require = tmp2[1];
+  const tmp4 = callback(importAllResult.useState(callback().blurAmountOverride), 2);
   const first1 = tmp4[0];
-  const importDefault = first1;
-  let closure_2 = tmp4[1];
-  const tmp = callback4();
+  const dependencyMap = tmp4[1];
+  const tmp = callback2();
   callback = importAllResult.useCallback((arg0) => {
     if (null != arg0) {
       callback2(arg0);
     }
     const obj = {};
-    const merged = Object.assign(callback3());
+    const merged = Object.assign(outer1_5());
     obj["blurAmountOverride"] = arg0;
-    callback4(obj);
+    outer1_6(obj);
   }, []);
-  const callback2 = callback;
   let obj = {};
   let toFixedResult;
   if (null != first1) {
@@ -51,13 +53,23 @@ const memoResult = importAllResult.memo(function VEVOOPropBlurAmount() {
       callback(tmp3);
     }
   };
-  obj.leading = jsx(callback(closure_2[6]).FormSwitch, obj);
+  obj.leading = jsx(_require(5505).FormSwitch, {
+    value: first,
+    onValueChange(arg0) {
+      callback(arg0);
+      let tmp3;
+      if (arg0) {
+        tmp3 = first1;
+      }
+      callback(tmp3);
+    }
+  });
   const ref = importAllResult.useRef(first1);
   const tmp7 = jsx;
-  obj.subLabel = jsx(importDefault(closure_2[7]), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
+  obj.subLabel = jsx(first1(14713), { disabled: !first, disabledOpacity: !first, initialValue: importAllResult.useRef(first1), onValueChange: callback });
   obj.disabled = !first;
-  return tmp7(callback(closure_2[5]).FormRow, obj);
+  return tmp7(_require(7495).FormRow, obj);
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurAmount.tsx");
+const result = require("useVisualEffectViewOverrides").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurAmount.tsx");
 
 export default memoResult;

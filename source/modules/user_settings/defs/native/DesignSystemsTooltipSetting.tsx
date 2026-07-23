@@ -1,25 +1,25 @@
-// Module ID: 14336
-// Function ID: 108243
+// Module ID: 14450
+// Function ID: 110396
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14451, 2]
 
-// Module 14336 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14450 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Tooltip";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_TOOLTIP,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_TOOLTIP,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14451) /* useCanRotate */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTooltipSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTooltipSetting.tsx");
 
 export default route;

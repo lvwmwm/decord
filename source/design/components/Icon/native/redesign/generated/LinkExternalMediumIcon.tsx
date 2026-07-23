@@ -1,24 +1,26 @@
-// Module ID: 12230
-// Function ID: 93864
+// Module ID: 12344
+// Function ID: 96015
 // Name: LinkExternalMediumIcon
-// Dependencies: []
+// Dependencies: [31, 33, 689, 3833, 12345, 2]
 // Exports: LinkExternalMediumIcon
 
-// Module 12230 (LinkExternalMediumIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LinkExternalMediumIcon.tsx");
+// Module 12344 (LinkExternalMediumIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/LinkExternalMediumIcon.tsx");
 
 export const LinkExternalMediumIcon = function LinkExternalMediumIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(12345) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(12345) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

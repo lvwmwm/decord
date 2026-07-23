@@ -1,10 +1,9 @@
-// Module ID: 4449
-// Function ID: 39084
+// Module ID: 4453
+// Function ID: 39116
 // Name: StripeErrorTypes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4449 (StripeErrorTypes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/billing/Constants.tsx");
+// Module 4453 (StripeErrorTypes)
+const result = require("set").fileFinishedImporting("modules/billing/Constants.tsx");
 
-export const StripeErrorTypes = [null, null, null, null, null, null, null, null];
+export const StripeErrorTypes = ["api_connection_error", "api_error", "authentication_error", "card_error", "idempotency_error", "invalid_request_error", "rate_limit_error", "validation_error"];

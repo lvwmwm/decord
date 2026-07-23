@@ -1,28 +1,26 @@
-// Module ID: 15194
-// Function ID: 114593
+// Module ID: 15310
+// Function ID: 116763
 // Name: useSortedMemberApplications
-// Dependencies: []
+// Dependencies: [31, 6692, 566, 3950, 2]
 // Exports: useSortedMemberApplications
 
-// Module 15194 (useSortedMemberApplications)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_member_verification/hooks/useSortedMemberApplications.tsx");
+// Module 15310 (useSortedMemberApplications)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/guild_member_verification/hooks/useSortedMemberApplications.tsx");
 
 export const useSortedMemberApplications = function useSortedMemberApplications(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const applicationStatus = guildId.applicationStatus;
-  const dependencyMap = applicationStatus;
   const sortOrder = guildId.sortOrder;
-  const React = sortOrder;
-  let obj = arg1(dependencyMap[2]);
-  const items = [closure_3];
+  let obj = guildId(applicationStatus[2]);
+  let items = [stateFromStores];
   const items1 = [applicationStatus, guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores.getRequests(guildId, applicationStatus), items1);
-  closure_3 = stateFromStores;
+  stateFromStores = obj.useStateFromStores(items, () => stateFromStores.getRequests(guildId, applicationStatus), items1);
   obj = {
-    guildJoinRequests: React.useMemo(() => {
+    guildJoinRequests: sortOrder.useMemo(() => {
       if (sortOrder === guildId(applicationStatus[3]).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
         const items = [];
         HermesBuiltin.arraySpread(stateFromStores, 0);
@@ -33,6 +31,6 @@ export const useSortedMemberApplications = function useSortedMemberApplications(
       return reversed;
     }, items2)
   };
-  const items2 = [sortOrder, stateFromStores];
+  items2 = [sortOrder, stateFromStores];
   return obj;
 };

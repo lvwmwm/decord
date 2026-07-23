@@ -1,9 +1,23 @@
-// Module ID: 5039
-// Function ID: 43549
+// Module ID: 5042
+// Function ID: 43567
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 1348, 1838, 1906, 3947, 653, 662, 4214, 22, 566, 686, 2]
 
-// Module 5039 (_isNativeReflectConstruct)
+// Module 5042 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import dispatcher from "dispatcher";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { ID_REGEX } from "ME";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+import importDefaultResult from "DEFAULT_FRECENCY";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,12 +32,12 @@ function handleChannelSelect(arg0) {
   let guildId;
   ({ guildId, channelId } = arg0);
   let flag = false;
-  if (channelId !== closure_15) {
+  if (channelId !== c15) {
     let tmp2 = null;
     if (null != channelId) {
       tmp2 = channelId;
     }
-    closure_15 = tmp2;
+    c15 = tmp2;
     let isMatch = null != channelId;
     if (isMatch) {
       isMatch = ID_REGEX.test(channelId);
@@ -41,12 +55,12 @@ function handleChannelSelect(arg0) {
     flag = flag2;
   }
   let tmp10 = flag;
-  if (guildId !== closure_16) {
+  if (guildId !== c16) {
     let tmp12 = null;
     if (null != guildId) {
       tmp12 = guildId;
     }
-    closure_16 = tmp12;
+    c16 = tmp12;
     let isMatch1 = null != guildId;
     if (isMatch1) {
       isMatch1 = ID_REGEX.test(guildId);
@@ -73,7 +87,7 @@ function initFrecency() {
   if (null == guildAndChannels) {
     return false;
   } else {
-    const obj = importDefault(dependencyMap[13]);
+    obj = importDefault(22);
     importDefaultResult.overwriteHistory(obj.mapValues(guildAndChannels, (recentUses) => {
       const obj = {};
       const merged = Object.assign(recentUses);
@@ -84,19 +98,6 @@ function initFrecency() {
     }), closure_17.pendingUsages);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-const ID_REGEX = arg1(dependencyMap[10]).ID_REGEX;
-const UserSettingsTypes = arg1(dependencyMap[11]).UserSettingsTypes;
-let importDefaultResult = importDefault(dependencyMap[12]);
 let obj = {
   computeBonus() {
     return 100;
@@ -124,7 +125,7 @@ let obj = {
     return num;
   },
   lookupKey(channelId) {
-    let guild = guild.getGuild(channelId);
+    guild = guild.getGuild(channelId);
     if (null == guild) {
       guild = authStore.getChannel(channelId);
     }
@@ -140,22 +141,22 @@ let obj = {
   maxSamples: 10
 };
 importDefaultResult = new importDefaultResult(obj);
-let closure_15 = null;
-let closure_16 = null;
+let c15 = null;
+let c16 = null;
 let closure_17 = { pendingUsages: [] };
-let tmp4 = (PersistedStore) => {
+let tmp4 = ((PersistedStore) => {
   class FrecencyStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, FrecencyStore);
-      obj = closure_5(FrecencyStore);
-      tmp2 = closure_4;
-      if (closure_18()) {
+      tmp = outer1_2(this, FrecencyStore);
+      obj = outer1_5(FrecencyStore);
+      tmp2 = outer1_4;
+      if (outer1_18()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -164,58 +165,58 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = FrecencyStore;
   callback2(FrecencyStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(pendingUsages) {
       const self = this;
-      this.waitFor(closure_8, closure_9, closure_10, closure_11, closure_7);
+      this.waitFor(outer1_8, outer1_9, outer1_10, outer1_11, outer1_7);
       if (null != pendingUsages) {
         pendingUsages = pendingUsages.pendingUsages;
         pendingUsages.pendingUsages = pendingUsages.filter((key) => {
           let isMatch = null != key;
           if (isMatch) {
-            isMatch = regex.test(key.key);
+            isMatch = outer2_12.test(key.key);
           }
           return isMatch;
         });
+        const outer1_17 = pendingUsages;
       }
-      const items = [closure_7];
-      self.syncWith(items, closure_19);
+      const items = [outer1_7];
+      self.syncWith(items, outer1_19);
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_17;
+      return outer1_17;
     }
   };
   items[1] = obj;
   obj = {
     key: "hasPendingUsage",
     value() {
-      return pendingUsages.pendingUsages.length > 0;
+      return outer1_17.pendingUsages.length > 0;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "frecencyWithoutFetchingLatest",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[4] = {
     key: "getFrequentlyWithoutFetchingLatest",
     value() {
-      return frecency.frequently;
+      return outer1_14.frequently;
     }
   };
   items[5] = {
     key: "getScoreWithoutFetchingLatest",
     value(arg0) {
-      const frecency = frecency.getFrecency(arg0);
+      const frecency = outer1_14.getFrecency(arg0);
       let num = 0;
       if (null != frecency) {
         num = frecency;
@@ -227,7 +228,7 @@ let tmp4 = (PersistedStore) => {
     key: "getScoreForDMWithoutFetchingLatest",
     value(arg0) {
       const self = this;
-      const dMFromUserId = dMFromUserId.getDMFromUserId(arg0);
+      const dMFromUserId = outer1_8.getDMFromUserId(arg0);
       let num = 0;
       if (null != dMFromUserId) {
         num = self.getScoreWithoutFetchingLatest(dMFromUserId);
@@ -250,11 +251,11 @@ let tmp4 = (PersistedStore) => {
   items[9] = {
     key: "getVersion",
     value() {
-      return frecency.version;
+      return outer1_14.version;
     }
   };
   return callback(FrecencyStore, items);
-}(importDefault(dependencyMap[14]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "FrecencyStore";
 tmp4.persistKey = "FrecencyStore";
 obj = {
@@ -269,8 +270,8 @@ obj = {
     return flag;
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[15]), obj);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("stores/FrecencyStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/FrecencyStore.tsx");
 
 export default tmp4;
 export const MAX_NUM_SELECTED_ITEMS = 100;

@@ -1,14 +1,26 @@
-// Module ID: 15377
-// Function ID: 117099
+// Module ID: 15494
+// Function ID: 119273
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 9102, 653, 15338, 33, 9113, 624, 5650, 9811, 9122, 1212, 11804, 675, 15495, 5519, 5093, 3982, 1557, 15543, 477, 15544, 15545, 15546, 15547, 15395, 2]
 
-// Module 15377 (ConnectedCreateThreadHeaderButton)
+// Module 15494 (ConnectedCreateThreadHeaderButton)
+import importAllResult from "result";
+import { View } from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ChannelDetailsNavigatorScreens as closure_6 } from "ChannelDetailsNavigatorScreens";
+import { AnalyticEvents } from "ME";
+import { SearchNavigatorScreens } from "SearchNavigatorScreens";
+import jsxProd from "jsxProd";
+import createNativeStackNavigator from "createNativeStackNavigator";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function ConnectedCreateThreadHeaderButton(channelId) {
-  const arg1 = channelId.channelId;
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId));
+  channelId = channelId.channelId;
+  let obj = channelId(624);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(channelId));
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { channel: stateFromStores };
@@ -18,87 +30,73 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 }
 function CreateThreadHeaderButton(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  let obj = arg1(dependencyMap[9]);
+  let obj = channel(5650);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp3 = null;
   if (canStartThread) {
     obj = {};
-    const intl = arg1(dependencyMap[12]).intl;
-    obj.accessibilityLabel = intl.string(arg1(dependencyMap[12]).t.rBIGBL);
+    const intl = channel(1212).intl;
+    obj.accessibilityLabel = intl.string(channel(1212).t.rBIGBL);
     obj.onPress = tmp2;
-    obj.source = importDefault(dependencyMap[13]);
-    tmp3 = callback(arg1(dependencyMap[11]).HeaderIconButton, obj);
+    obj.source = importDefault(11804);
+    tmp3 = callback(channel(9122).HeaderIconButton, obj);
   }
   return tmp3;
 }
 function getHeaderLeft(navigation) {
   navigation = navigation.navigation;
   if (navigation.initialRouteName === navigation.routeName) {
-    let renderModalCloseImage = arg1(dependencyMap[11]).getRenderModalCloseImage(navigation);
-    const obj2 = arg1(dependencyMap[11]);
+    let renderModalCloseImage = require(9122) /* GenericHeaderTitle */.getRenderModalCloseImage(navigation);
+    const obj2 = require(9122) /* GenericHeaderTitle */;
   } else {
-    renderModalCloseImage = arg1(dependencyMap[11]).getRenderModalBackImage(navigation);
-    const obj = arg1(dependencyMap[11]);
+    renderModalCloseImage = require(9122) /* GenericHeaderTitle */.getRenderModalBackImage(navigation);
+    const obj = require(9122) /* GenericHeaderTitle */;
   }
   return renderModalCloseImage;
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).ChannelDetailsNavigatorScreens;
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const SearchNavigatorScreens = arg1(dependencyMap[5]).SearchNavigatorScreens;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let closure_11 = Object.freeze({});
-const tmp2 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[7]).createNativeStackNavigator();
-const obj2 = arg1(dependencyMap[7]);
+createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo((route) => {
   let applicationId;
   let expandTopic;
   let search;
-  const params = route.route.params;
+  let params = route.route.params;
   const channelId = params.channelId;
-  const arg1 = channelId;
   const source = params.source;
-  const importDefault = source;
   let DETAILS = params.initialRouteName;
   ({ applicationId, search, expandTopic } = params);
   if (DETAILS === undefined) {
     DETAILS = constants.DETAILS;
   }
-  const dependencyMap = DETAILS;
-  let importAllResult;
-  let View;
+  let channelSettingsScreensStyles;
+  let guildId;
   const items = [channelId, DETAILS, source];
-  const effect = importAllResult.useEffect(() => {
-    const channel = channel.getChannel(channelId);
+  const effect = channelSettingsScreensStyles.useEffect(() => {
+    const channel = outer1_5.getChannel(channelId);
     if (null != channel) {
       const obj = { channel_id: channel.id, guild_id: channel.getGuildId(), channel_type: channel.type, initial_route_name: DETAILS, source };
-      source(DETAILS[14]).track(constants.CHANNEL_SIDEBAR_VIEWED, obj);
+      source(DETAILS[14]).track(outer1_7.CHANNEL_SIDEBAR_VIEWED, obj);
       const obj2 = source(DETAILS[14]);
     }
   }, items);
-  let obj = arg1(dependencyMap[15]);
-  const channelSettingsScreensStyles = obj.useChannelSettingsScreensStyles();
-  importAllResult = channelSettingsScreensStyles;
+  let obj = channelId(DETAILS[15]);
+  channelSettingsScreensStyles = obj.useChannelSettingsScreensStyles();
   const items1 = [channelId];
-  const memo = importAllResult.useMemo(() => {
+  const memo = channelSettingsScreensStyles.useMemo(() => {
     const initialParams = { channelId };
     return { initialParams };
   }, items1);
-  let obj1 = arg1(dependencyMap[16]);
+  let obj1 = channelId(DETAILS[16]);
   const accessibilityNativeStackOptions = obj1.useAccessibilityNativeStackOptions();
-  const channel = channel.getChannel(channelId);
-  let guildId;
+  channel = channel.getChannel(channelId);
+  guildId = undefined;
   if (null != channel) {
     guildId = channel.getGuildId();
   }
-  View = guildId;
   const items2 = [channelId, guildId, channelSettingsScreensStyles];
-  const memo1 = importAllResult.useMemo(() => {
+  const memo1 = channelSettingsScreensStyles.useMemo(() => {
     if (null != guildId) {
       let channelSettingsScreens = channelId(DETAILS[15]).getChannelSettingsScreens(channelId, guildId, channelSettingsScreensStyles);
       const obj2 = channelId(DETAILS[15]);
@@ -107,7 +105,7 @@ const memoResult = importAllResult.memo((route) => {
     }
     return channelSettingsScreens;
   }, items2);
-  let obj3 = arg1(dependencyMap[17]);
+  let obj3 = channelId(DETAILS[17]);
   obj3.useNavigatorBackPressHandler(() => {
     const rootNavigationRef = channelId(DETAILS[18]).getRootNavigationRef();
     const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
@@ -123,16 +121,16 @@ const memoResult = importAllResult.memo((route) => {
     }
     return tmp2;
   });
-  const rect = importDefault(dependencyMap[19])();
+  const rect = source(DETAILS[19])();
   obj = { style: items3 };
-  const items3 = [channelSettingsScreensStyles.container, { paddingLeft: rect.left, paddingRight: rect.right }];
+  items3 = [channelSettingsScreensStyles.container, { paddingLeft: rect.left, paddingRight: rect.right }];
   obj = { id: "channel-details-navigator" };
-  obj1 = { headerTitle: arg1(dependencyMap[11]).renderGenericTitle };
-  const merged = Object.assign(accessibilityNativeStackOptions);
+  obj1 = { headerTitle: channelId(DETAILS[11]).renderGenericTitle };
+  let merged = Object.assign(accessibilityNativeStackOptions);
   obj.screenOptions = obj1;
   obj.initialRouteName = DETAILS;
   const items4 = [
-    callback(closure_12.Screen, {
+    callback(createNativeStackNavigator.Screen, {
       initialParams: { channelId, search, expandTopic },
       name: constants.DETAILS,
       options: { headerShown: false },
@@ -149,17 +147,17 @@ const memoResult = importAllResult.memo((route) => {
   obj3 = {
     name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
     options(route) {
-      const channelId = route.route;
-      const obj = {
+      route = route.route;
+      let obj = {
         header(arg0) {
-          let obj = route(closure_2[11]);
+          let obj = channelId(DETAILS[11]);
           obj = {};
           const merged = Object.assign(arg0);
-          obj["shouldHandleSafeArea"] = route(closure_2[21]).isAndroid();
+          obj["shouldHandleSafeArea"] = channelId(DETAILS[21]).isAndroid();
           return obj.renderHeader(obj);
         },
         headerTitle() {
-          return callback2(callback(closure_2[22]), { channelId: route.params.channelId });
+          return outer2_9(source(DETAILS[22]), { channelId: route.params.channelId });
         },
         headerLeft: channelId(DETAILS[11]).getRenderBackImage(route.navigation)
       };
@@ -169,8 +167,8 @@ const memoResult = importAllResult.memo((route) => {
       return channelId(DETAILS[23]).default;
     }
   };
-  items4[1] = callback(closure_12.Screen, obj3);
-  items4[2] = callback(closure_12.Screen, {
+  items4[1] = callback(createNativeStackNavigator.Screen, obj3);
+  items4[2] = callback(createNativeStackNavigator.Screen, {
     name: constants.PINNED_MESSAGES,
     initialParams: { channelId },
     options(arg0) {
@@ -179,16 +177,16 @@ const memoResult = importAllResult.memo((route) => {
       let obj = {};
       ({ navigation, route } = arg0);
       const intl = channelId(DETAILS[12]).intl;
-      obj.title = intl.string(channelId(DETAILS[12]).t.mp1N/2);
+      obj.title = intl.string(channelId(DETAILS[12]).t["mp1N/2"]);
       obj = { navigation, initialRouteName: DETAILS, routeName: route.name };
-      obj.headerLeft = callback2(obj);
+      obj.headerLeft = outer1_15(obj);
       return obj;
     },
     getComponent() {
       return channelId(DETAILS[24]).default;
     }
   });
-  items4[3] = callback(closure_12.Screen, {
+  items4[3] = callback(createNativeStackNavigator.Screen, {
     initialParams: { channelId, applicationId },
     name: constants.MUTE,
     options(arg0) {
@@ -199,7 +197,7 @@ const memoResult = importAllResult.memo((route) => {
       const intl = channelId(DETAILS[12]).intl;
       obj.title = intl.string(channelId(DETAILS[12]).t.w4m945);
       obj = { navigation, initialRouteName: DETAILS, routeName: route.name };
-      obj.headerLeft = callback2(obj);
+      obj.headerLeft = outer1_15(obj);
       return obj;
     },
     getComponent() {
@@ -211,45 +209,44 @@ const memoResult = importAllResult.memo((route) => {
   obj6["name"] = constants.THREADS;
   obj6["options"] = function options(navigation) {
     const route = navigation.route;
-    const channelId = route;
     let obj = {};
     const intl = channelId(DETAILS[12]).intl;
     obj.title = intl.string(channelId(DETAILS[12]).t.B2panI);
     obj = { navigation: navigation.navigation, initialRouteName: DETAILS, routeName: route.name };
-    obj.headerLeft = callback2(obj);
+    obj.headerLeft = outer1_15(obj);
     obj.headerRight = function headerRight() {
-      return callback(closure_13, { channelId: route.params.channelId });
+      return outer2_9(outer2_13, { channelId: route.params.channelId });
     };
     return obj;
   };
   obj6["getComponent"] = function getComponent() {
     return channelId(DETAILS[26]).default;
   };
-  items4[4] = callback(closure_12.Screen, obj6);
+  items4[4] = callback(createNativeStackNavigator.Screen, obj6);
   const entries = Object.entries(memo1);
   items4[5] = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;
-    return callback(Screen.Screen, {
+    return outer1_9(outer1_12.Screen, {
       name: tmp,
       options(navigation) {
-        let obj = { title: closure_1.title, headerLeft: callback(obj) };
-        obj = { navigation: navigation.navigation, initialRouteName: closure_2, routeName: closure_0 };
+        obj = { title: closure_1.title, headerLeft: outer2_15(obj) };
+        obj = { navigation: navigation.navigation, initialRouteName: outer1_2, routeName: closure_0 };
         return obj;
       },
       children(route) {
         let params = route.route.params;
         if (null == params) {
-          params = closure_11;
+          params = outer2_11;
         }
         return closure_1.render(params, route.navigation);
       }
     }, tmp);
   });
   obj.children = items4;
-  obj.children = callback2(closure_12.Navigator, obj);
-  return callback(View, obj);
+  obj.children = callback2(createNativeStackNavigator.Navigator, obj);
+  return callback(guildId, obj);
 });
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsNavigator.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsNavigator.tsx");
 
 export default memoResult;

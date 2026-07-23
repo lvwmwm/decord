@@ -1,22 +1,23 @@
-// Module ID: 9044
-// Function ID: 71045
+// Module ID: 9051
+// Function ID: 71086
 // Name: _transferToXbox
-// Dependencies: []
+// Dependencies: [5, 31, 27, 653, 33, 9043, 9040, 9052, 4471, 9053, 1934, 9046, 4309, 2]
 // Exports: default
 
-// Module 9044 (_transferToXbox)
+// Module 9051 (_transferToXbox)
+import set from "set";
+import "result";
+import { Linking } from "get ActivityIndicator";
+import { PlatformTypes } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function _transferToXbox() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _transferToXbox = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const Linking = arg1(dependencyMap[2]).Linking;
-const PlatformTypes = arg1(dependencyMap[3]).PlatformTypes;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/game_console/native/transferToXbox.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/game_console/native/transferToXbox.tsx");
 
 export default function transferToXbox() {
   return _transferToXbox(...arguments);

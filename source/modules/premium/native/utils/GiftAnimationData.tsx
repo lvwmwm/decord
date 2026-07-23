@@ -1,14 +1,14 @@
-// Module ID: 8777
-// Function ID: 69357
+// Module ID: 8784
+// Function ID: 69398
 // Name: LottieType
-// Dependencies: []
+// Dependencies: [1851, 7758, 8785, 8786, 8787, 8788, 8789, 8790, 8791, 8792, 8793, 8794, 8795, 8796, 8797, 8798, 8799, 8800, 8801, 8802, 8803, 8804, 8805, 8806, 8807, 8808, 2]
 // Exports: getGiftAnimationData, getLottieType
 
-// Module 8777 (LottieType)
-const PremiumGiftStyles = require(dependencyMap[0]).PremiumGiftStyles;
+// Module 8784 (LottieType)
+import { PremiumGiftStyles } from "GuildFeatures";
+
 const obj = { JSON: 0, [0]: "JSON", LOTTIE: 1, [1]: "LOTTIE" };
-const _module = require(dependencyMap[26]);
-const result = _module.fileFinishedImporting("modules/premium/native/utils/GiftAnimationData.tsx");
+const result = require("items1").fileFinishedImporting("modules/premium/native/utils/GiftAnimationData.tsx");
 
 export const LottieType = obj;
 export const getLottieType = function getLottieType(giftStyle) {
@@ -21,68 +21,68 @@ export const getLottieType = function getLottieType(giftStyle) {
 };
 export const getGiftAnimationData = function getGiftAnimationData(giftStyle, ACTION) {
   if (PremiumGiftStyles.STANDARD_BOX === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[2]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[3]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8785) /* items1 */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8786) /* items1 */;
     } else {
-      return require(dependencyMap[4]);
+      return require(8787) /* items1 */;
     }
   } else if (PremiumGiftStyles.CAKE === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[5]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[6]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8788) /* items1 */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8789) /* items1 */;
     } else {
-      return require(dependencyMap[7]);
+      return require(8790) /* items1 */;
     }
   } else if (PremiumGiftStyles.CHEST === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[8]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[9]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8791) /* items1 */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8792) /* items1 */;
     } else {
-      return require(dependencyMap[10]);
+      return require(8793) /* items1 */;
     }
   } else if (PremiumGiftStyles.COFFEE === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[11]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[12]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8794) /* items1 */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8795) /* items1 */;
     } else {
-      return require(dependencyMap[13]);
+      return require(8796) /* items1 */;
     }
   } else if (PremiumGiftStyles.SEASONAL_STANDARD_BOX === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[14]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[15]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8797) /* items */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8798) /* items */;
     } else {
-      return require(dependencyMap[16]);
+      return require(8799) /* items1 */;
     }
   } else if (PremiumGiftStyles.SEASONAL_CAKE === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[17]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[18]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8800) /* items2 */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8801) /* items2 */;
     } else {
-      return require(dependencyMap[19]);
+      return require(8802) /* items */;
     }
   } else if (PremiumGiftStyles.SEASONAL_CHEST === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[20]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[21]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8803) /* items */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8804) /* items */;
     } else {
-      return require(dependencyMap[22]);
+      return require(8805) /* items */;
     }
   } else if (PremiumGiftStyles.SEASONAL_COFFEE === giftStyle) {
-    if (require(dependencyMap[1]).AnimationState.IDLE === ACTION) {
-      return require(dependencyMap[23]);
-    } else if (require(dependencyMap[1]).AnimationState.LOOP === ACTION) {
-      return require(dependencyMap[24]);
+    if (require(7758) /* _sendGiftMessage */.AnimationState.IDLE === ACTION) {
+      return require(8806) /* items */;
+    } else if (require(7758) /* _sendGiftMessage */.AnimationState.LOOP === ACTION) {
+      return require(8807) /* items */;
     } else {
-      return require(dependencyMap[25]);
+      return require(8808) /* items2 */;
     }
   } else {
     if (PremiumGiftStyles.SNOWGLOBE !== giftStyle) {

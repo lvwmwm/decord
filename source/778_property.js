@@ -1,16 +1,16 @@
 // Module ID: 778
-// Function ID: 8859
+// Function ID: 8860
 // Name: property
-// Dependencies: []
+// Dependencies: [699, 779, 702, 780]
 
 // Module 778 (property)
 
 export default function property(arg0) {
-  if (require(dependencyMap[0])(arg0)) {
-    let tmpResultResult = tmp(tmp2[1])(tmp(tmp2[2])(arg0));
-    const tmpResult = tmp(tmp2[1]);
+  if (require(699) /* isKey */(arg0)) {
+    let tmpResultResult = tmp(779)(tmp(702)(arg0));
+    const tmpResult = tmp(779);
   } else {
-    tmpResultResult = tmp(tmp2[3])(arg0);
+    tmpResultResult = tmp(780)(arg0);
   }
   return tmpResultResult;
 };

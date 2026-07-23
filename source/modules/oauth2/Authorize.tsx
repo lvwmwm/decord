@@ -1,37 +1,42 @@
-// Module ID: 8947
-// Function ID: 70540
+// Module ID: 8954
+// Function ID: 70581
 // Name: filterScopes
-// Dependencies: []
+// Dependencies: [1348, 3947, 653, 8955, 8310, 4988, 3763, 483, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 8947 (filterScopes)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ EMPTY_NUX_SERVER: closure_5, FAVORITES: closure_6, ME: closure_7 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/oauth2/Authorize.tsx");
+// Module 8954 (filterScopes)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ EMPTY_NUX_SERVER: closure_5, FAVORITES: closure_6, ME: closure_7 } = ME);
+const result = require("ME").fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
 export const filterScopes = function filterScopes(items) {
   const found = items.filter((arg0) => {
-    const RemovedScopes = callback(closure_2[3]).RemovedScopes;
+    const RemovedScopes = outer1_0(outer1_2[3]).RemovedScopes;
     return !RemovedScopes.includes(arg0);
   });
-  let hasItem = found.includes(arg1(dependencyMap[4]).OAuth2Scopes.BOT);
+  let hasItem = found.includes(require(8310) /* set */.OAuth2Scopes.BOT);
   if (hasItem) {
-    hasItem = !found.includes(arg1(dependencyMap[4]).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    hasItem = !found.includes(require(8310) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   if (hasItem) {
-    found.push(arg1(dependencyMap[4]).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    found.push(require(8310) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   return found;
 };
 export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(query) {
   let channel_id;
   let guild_id;
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(4988) /* encode */;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
-  const NONE = importAll(dependencyMap[6]).NONE;
-  importAll(dependencyMap[7]);
+  const NONE = importAll(3763).NONE;
+  importAll(483);
   while (true) {
     let tmp6 = parsed;
     ({ channel_id, guild_id } = parsed);
@@ -42,7 +47,7 @@ export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(quer
     } else {
       let tmp9 = channel;
       let tmp10 = channel_id;
-      let channel = channel.getChannel(channel_id);
+      channel = channel.getChannel(channel_id);
       let tmp12 = channel;
       if (null != channel) {
         guild_id2 = channel.guild_id;

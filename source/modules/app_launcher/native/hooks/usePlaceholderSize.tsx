@@ -1,15 +1,17 @@
-// Module ID: 11164
-// Function ID: 86838
+// Module ID: 11174
+// Function ID: 86888
 // Name: usePlaceholderWidth
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: usePlaceholderWidth
 
-// Module 11164 (usePlaceholderWidth)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/app_launcher/native/hooks/usePlaceholderSize.tsx");
+// Module 11174 (usePlaceholderWidth)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/usePlaceholderSize.tsx");
 
 export const usePlaceholderWidth = function usePlaceholderWidth(arg0, arg1) {
   const React = arg0;
+  let closure_1 = arg1;
   const items = [arg0, arg1];
-  return React.useMemo(() => Math.random() * (arg1 - arg0) + arg0, items);
+  return React.useMemo(() => Math.random() * (closure_1 - result) + result, items);
 };

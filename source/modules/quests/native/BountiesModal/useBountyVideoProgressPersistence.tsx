@@ -1,31 +1,32 @@
-// Module ID: 13815
-// Function ID: 104463
+// Module ID: 13929
+// Function ID: 106619
 // Name: useBountyVideoProgressPersistence
-// Dependencies: []
+// Dependencies: [57, 31, 6941, 4976, 10839, 13926, 10845, 2]
 // Exports: useBountyVideoProgressPersistence
 
-// Module 13815 (useBountyVideoProgressPersistence)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const QuestsExperimentLocations = arg1(dependencyMap[3]).QuestsExperimentLocations;
-let closure_6 = { -1341453009: "spring", 2120573107: 0.4, -926778785: 1 };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/native/BountiesModal/useBountyVideoProgressPersistence.tsx");
+// Module 13929 (useBountyVideoProgressPersistence)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { QuestsExperimentLocations } from "QuestsExperimentLocations";
+
+const require = arg1;
+let closure_6 = { timestampSec: 0, maxTimestampSec: 0, duration: 0 };
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/BountiesModal/useBountyVideoProgressPersistence.tsx");
 
 export const useBountyVideoProgressPersistence = function useBountyVideoProgressPersistence(bountyId) {
   bountyId = bountyId.bountyId;
-  const arg1 = bountyId;
-  const dependencyMap = bountyId.endMode;
+  const endMode = bountyId.endMode;
   let callback;
   let React;
-  let closure_4;
-  let constants;
+  let _createForOfIteratorHelperLoose;
+  let QuestsExperimentLocations;
   let closure_6;
-  let obj = arg1(dependencyMap[4]);
-  const bountiesExperience = obj.useBountiesExperience(constants.VIDEO_MODAL_MOBILE);
+  let obj = bountyId(endMode[4]);
+  const bountiesExperience = obj.useBountiesExperience(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   callback = tmp2;
   const first = callback(React.useState(() => {
-    if (tmp2) {
+    if (c2) {
       let bountyVideoProgress = ref2.getBountyVideoProgress(bountyId);
       if (null == bountyVideoProgress) {
         bountyVideoProgress = closure_6;
@@ -42,17 +43,17 @@ export const useBountyVideoProgressPersistence = function useBountyVideoProgress
     }
   }), 1)[0];
   React = React.useRef(0);
-  closure_4 = React.useRef(first.timestampSec);
-  constants = React.useRef(first.maxTimestampSec);
+  _createForOfIteratorHelperLoose = React.useRef(first.timestampSec);
+  QuestsExperimentLocations = React.useRef(first.maxTimestampSec);
   closure_6 = React.useRef(first.duration);
   obj = {
     initialProgress: first,
     handleProgress: React.useCallback((current, current2, current3) => {
-      closure_4.current = current3;
+      _createForOfIteratorHelperLoose.current = current3;
       closure_5.current = current;
       closure_6.current = current2;
-      let tmp = tmp2;
-      if (tmp2) {
+      let tmp = c2;
+      if (c2) {
         tmp = current3 >= ref.current;
       }
       if (tmp) {
@@ -63,15 +64,14 @@ export const useBountyVideoProgressPersistence = function useBountyVideoProgress
       }
     }, items),
     flushProgress: React.useCallback(() => {
-      if (tmp2) {
+      if (c2) {
         let obj = bountyId(endMode[6]);
         obj = { timestampSec: ref2.current, maxTimestampSec: ref3.current, duration: ref4.current };
         const result = obj.setBountyVideoProgress(bountyId, obj);
-        const tmp2 = endMode;
       }
     }, items1)
   };
-  const items = [bountiesExperience.ownedByVerticalScrollExperiment || bountiesExperience.stage1Enabled, bountyId];
-  const items1 = [bountiesExperience.ownedByVerticalScrollExperiment || bountiesExperience.stage1Enabled, bountyId];
+  items = [bountiesExperience.ownedByVerticalScrollExperiment || bountiesExperience.stage1Enabled, bountyId];
+  items1 = [bountiesExperience.ownedByVerticalScrollExperiment || bountiesExperience.stage1Enabled, bountyId];
   return obj;
 };

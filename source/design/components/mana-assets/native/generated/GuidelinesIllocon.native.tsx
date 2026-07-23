@@ -1,14 +1,13 @@
-// Module ID: 6239
-// Function ID: 50291
+// Module ID: 6244
+// Function ID: 50320
 // Name: GuidelinesIllocon
-// Dependencies: [33554456, 1946157056, 33, 5082]
+// Dependencies: [33, 5085, 6245, 2]
 // Exports: GuidelinesIllocon
 
-// Module 6239 (GuidelinesIllocon)
-import preload from "preload";
+// Module 6244 (GuidelinesIllocon)
+import { jsx } from "jsxProd";
 
-const jsx = require(dependencyMap[0]).jsx;
-const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/GuidelinesIllocon.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GuidelinesIllocon.native.tsx");
 
 export const GuidelinesIllocon = function GuidelinesIllocon(size) {
   let accessibilityLabel;
@@ -20,7 +19,7 @@ export const GuidelinesIllocon = function GuidelinesIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6245) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -28,5 +27,5 @@ export const GuidelinesIllocon = function GuidelinesIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

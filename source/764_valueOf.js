@@ -1,12 +1,12 @@
 // Module ID: 764
-// Function ID: 8828
+// Function ID: 8829
 // Name: valueOf
-// Dependencies: []
+// Dependencies: [579, 765, 729, 766, 767, 758]
 
 // Module 764 (valueOf)
 let prototype;
-if (require(dependencyMap[0])) {
-  prototype = require(dependencyMap[0]).prototype;
+if (require("module_579")) {
+  prototype = require("module_579").prototype;
 }
 let valueOf;
 if (prototype) {
@@ -35,7 +35,7 @@ export default function equalByTag(byteLength, byteLength2, arg2, arg3, arg4, ar
               if ("[object RegExp]" !== arg2) {
                 if ("[object String]" !== arg2) {
                   if ("[object Map]" === arg2) {
-                    let tmp = require(dependencyMap[3]);
+                    let tmp = require(766) /* mapToArray */;
                   } else if ("[object Set]" !== arg2) {
                     if ("[object Symbol]" === arg2) {
                       if (valueOf) {
@@ -45,7 +45,7 @@ export default function equalByTag(byteLength, byteLength2, arg2, arg3, arg4, ar
                     return false;
                   }
                   if (!tmp) {
-                    tmp = require(dependencyMap[4]);
+                    tmp = require(767) /* setToArray */;
                   }
                   if (byteLength.size != byteLength2.size) {
                     if (!tmp8) {
@@ -59,11 +59,11 @@ export default function equalByTag(byteLength, byteLength2, arg2, arg3, arg4, ar
                     const result = get.set(byteLength, byteLength2);
                     const tmpResult = tmp(byteLength);
                     const tmp12 = arg3 | 2;
-                    const tmp16 = require(dependencyMap[5]);
+                    const tmp16 = require(758) /* equalArrays */;
                     get.delete(byteLength);
-                    return require(dependencyMap[5])(tmpResult, tmp(byteLength2), arg3 | 2, arg4, arg5, get);
+                    return require(758) /* equalArrays */(tmpResult, tmp(byteLength2), arg3 | 2, arg4, arg5, get);
                   }
-                  const tmp8 = 1 & arg3;
+                  tmp8 = 1 & arg3;
                 }
               }
               return byteLength == "" + byteLength2;
@@ -71,15 +71,15 @@ export default function equalByTag(byteLength, byteLength2, arg2, arg3, arg4, ar
           }
         }
       }
-      return require(dependencyMap[2])(+byteLength, +byteLength2);
+      return require(729) /* eq */(+byteLength, +byteLength2);
     }
   }
   let tmp27 = buffer.byteLength != buffer2.byteLength;
   if (!tmp27) {
-    let tmp30 = require(dependencyMap[1]);
+    let tmp30 = require(765);
     const prototype = tmp30.prototype;
     tmp30 = new tmp30(buffer);
-    let tmp36 = require(dependencyMap[1]);
+    let tmp36 = require(765);
     const prototype2 = tmp36.prototype;
     tmp36 = new tmp36(buffer2);
     tmp27 = !arg5(tmp30, tmp36);

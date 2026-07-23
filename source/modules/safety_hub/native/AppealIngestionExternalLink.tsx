@@ -1,29 +1,35 @@
-// Module ID: 11036
-// Function ID: 85941
+// Module ID: 11046
+// Function ID: 85991
 // Name: AppealIngestionExternalLink
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4660, 3827, 4126, 1273, 7611, 2]
 // Exports: default
 
-// Module 11036 (AppealIngestionExternalLink)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { marginBottom: 8, borderRadius: importDefault(dependencyMap[4]).radii.xs };
-obj.childButton = obj;
-const obj1 = { format_type: "<string:3212574722>", description: "<string:4132503554>", name: "<string:306254317>", action: "<string:1912603178>", messageReference: "toString", medium: true, action: true, threadId: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.xs };
-obj.childContainer = obj1;
-obj.childButtonText = {};
-const tmp3 = arg1(dependencyMap[2]);
-obj.chevron = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-let closure_6 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionExternalLink.tsx");
+// Module 11046 (AppealIngestionExternalLink)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.childButton = _createForOfIteratorHelperLoose;
+let obj1 = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.childContainer = obj1;
+_createForOfIteratorHelperLoose.childButtonText = { flex: 1, lineHeight: 20 };
+_createForOfIteratorHelperLoose.chevron = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj2 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/AppealIngestionExternalLink.tsx");
 
 export default function AppealIngestionExternalLink(text) {
-  ({ url: closure_0, onPress: closure_1 } = text);
-  const tmp = callback3();
+  let importDefault;
+  let require;
+  ({ url: require, onPress: importDefault } = text);
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {
     style: tmp.childButton,
     accessibilityRole: "button",
@@ -31,15 +37,15 @@ export default function AppealIngestionExternalLink(text) {
       if (null != callback) {
         callback();
       }
-      callback(closure_2[6]).openURL(closure_0);
+      outer1_1(outer1_2[6]).openURL(closure_0);
     }
   };
   obj = { style: tmp.childContainer };
-  obj = { "Null": true, "Null": true, alignItems: true, style: tmp.childButtonText, children: text.text };
-  const items = [callback(arg1(dependencyMap[7]).Text, obj), ];
-  const obj1 = { source: arg1(dependencyMap[9]), color: tmp.chevron.color };
-  items[1] = callback(arg1(dependencyMap[8]).Icon, obj1);
+  obj = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text.text };
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  const obj1 = { source: require(7611) /* registerAsset */, color: tmp.chevron.color };
+  items[1] = callback(require(1273) /* Button */.Icon, obj1);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(arg1(dependencyMap[5]).PressableHighlight, obj);
+  return callback(require(4660) /* PressableBase */.PressableHighlight, obj);
 };

@@ -1,20 +1,24 @@
-// Module ID: 13387
-// Function ID: 101754
+// Module ID: 13501
+// Function ID: 103910
 // Name: NativeModules
-// Dependencies: []
+// Dependencies: [5, 31, 27, 6961, 6960, 33, 477, 13502, 13503, 1934, 566, 13497, 14709, 2]
 // Exports: default
 
-// Module 13387 (NativeModules)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const NativeModules = arg1(dependencyMap[2]).NativeModules;
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const jsx = arg1(dependencyMap[5]).jsx;
-const obj = { flexDirection: false, alignItems: false, gap: false, width: false };
-if (obj2.isAndroid()) {
-  let keyModifierControl = importDefault(dependencyMap[7]).getConstants().keyModifierControl;
-  const importDefaultResult = importDefault(dependencyMap[7]);
+// Module 13501 (NativeModules)
+import jsxProd from "jsxProd";
+import result from "result";
+import { NativeModules } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import set from "set";
+import set from "get ActivityIndicator";
+
+const require = arg1;
+let obj = { input: "o", modifierFlags: null, eventName: "keyCommandShowDevTools", discoverabilityTitle: "Open DevTools Panel" };
+if (set.isAndroid()) {
+  let keyModifierControl = require("enforcing").getConstants().keyModifierControl;
+  const importDefaultResult = require("enforcing");
 } else {
   keyModifierControl = NativeModules.KeyCommandsView.keyModifierControl;
 }
@@ -23,32 +27,30 @@ obj.onKeyCommand = function onKeyCommand() {
   // CreateGeneratorClosureLongIndex (0x67)
   return callback(tmp)();
 };
-const items = [obj];
-const obj2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/devtools/native/components/DevToolsLazy.tsx");
+let items = [obj];
+let result = set.fileFinishedImporting("modules/devtools/native/components/DevToolsLazy.tsx");
 
 export default function DevToolsLazy() {
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items, () => closure_5.isDeveloper);
-  const arg1 = stateFromStores;
-  const obj = arg1(dependencyMap[10]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_5.isDeveloper);
+  const obj = stateFromStores(566);
   const items1 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[10]).useStateFromStores(items1, () => showDevWidget.showDevWidget);
+  const stateFromStores1 = stateFromStores(566).useStateFromStores(items1, () => outer1_6.showDevWidget);
   const effect = React.useEffect(() => {
     if (obj.isIOS()) {
-      closure_5.addChangeListener(() => {
-        const NSUserDefaultsBridge = NSUserDefaultsBridge.NSUserDefaultsBridge;
+      outer1_5.addChangeListener(() => {
+        const NSUserDefaultsBridge = outer2_4.NSUserDefaultsBridge;
         if (null != NSUserDefaultsBridge) {
-          const result = NSUserDefaultsBridge.setIsDiscordDeveloper(closure_0);
+          const result = NSUserDefaultsBridge.setIsDiscordDeveloper(outer1_0);
         }
       });
     }
   });
-  const obj2 = arg1(dependencyMap[10]);
-  const keyCommands = arg1(dependencyMap[11]).useKeyCommands(stateFromStores ? items : []);
+  const obj2 = stateFromStores(566);
+  const keyCommands = stateFromStores(13497).useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(arg1(dependencyMap[12]).default, {});
+      return jsx(stateFromStores(14709).default, {});
     }
   }
   return null;

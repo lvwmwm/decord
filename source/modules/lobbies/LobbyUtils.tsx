@@ -1,14 +1,18 @@
-// Module ID: 10161
-// Function ID: 78579
+// Module ID: 10169
+// Function ID: 78619
 // Name: canUnlinkLobbyChannel
-// Dependencies: [555417600, 488570880, 250937344, 131072]
+// Dependencies: [3758, 653, 566, 2]
 // Exports: useCanUnlinkLobbyChannel
 
-// Module 10161 (canUnlinkLobbyChannel)
-function canUnlinkLobbyChannel(channel, arg1) {
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = closure_2;
+// Module 10169 (canUnlinkLobbyChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+function canUnlinkLobbyChannel(channel, closure_0) {
+  let obj = closure_0;
+  if (closure_0 === undefined) {
+    obj = _isNativeReflectConstruct;
   }
   let tmp = null != channel;
   if (tmp) {
@@ -26,13 +30,11 @@ function canUnlinkLobbyChannel(channel, arg1) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Permissions = arg1(dependencyMap[1]).Permissions;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
+const result = require("initialize").fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
 
 export { canUnlinkLobbyChannel };
 export const useCanUnlinkLobbyChannel = function useCanUnlinkLobbyChannel(channel) {
-  const arg1 = channel;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => callback(arg0, closure_2));
+  const _require = channel;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => outer1_4(closure_0, outer1_2));
 };

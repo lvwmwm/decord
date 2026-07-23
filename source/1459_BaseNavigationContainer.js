@@ -1,40 +1,42 @@
 // Module ID: 1459
-// Function ID: 16991
+// Function ID: 16992
 // Name: BaseNavigationContainer
-// Dependencies: []
+// Dependencies: [1460, 1461, 1469, 1474, 1485, 1488, 1475, 1489, 1490, 1492, 1500, 1479, 1484, 1502, 1483, 1503, 1504, 1507, 1509, 1508, 1510, 1527, 1528, 1529, 1531, 1530, 1493]
 
 // Module 1459 (BaseNavigationContainer)
-for (const key10016 in arg1(arg6[0])) {
+for (const key10016 in require("PrivateValueStore")) {
   let tmp2 = key10016;
-  arg5[key10016] = arg1(arg6[0])[key10016];
+  arg5[key10016] = require("PrivateValueStore")[key10016];
+  continue;
 }
-for (const key10021 in arg1(arg6[1])) {
+for (const key10021 in require("CommonActions")) {
   let tmp3 = key10021;
-  arg5[key10021] = arg1(arg6[1])[key10021];
+  arg5[key10021] = require("CommonActions")[key10021];
+  continue;
 }
 
-export const BaseNavigationContainer = importDefault(dependencyMap[2]);
-export const createNavigationContainerRef = importDefault(dependencyMap[3]);
-export const createNavigatorFactory = importDefault(dependencyMap[4]);
-export const CurrentRenderContext = importDefault(dependencyMap[5]);
-export const findFocusedRoute = importDefault(dependencyMap[6]);
-export const getActionFromState = importDefault(dependencyMap[7]);
-export const getFocusedRouteNameFromRoute = importDefault(dependencyMap[8]);
-export const getPathFromState = importDefault(dependencyMap[9]);
-export const getStateFromPath = importDefault(dependencyMap[10]);
-export const NavigationContainerRefContext = importDefault(dependencyMap[11]);
-export const NavigationContext = importDefault(dependencyMap[12]);
-export const NavigationHelpersContext = importDefault(dependencyMap[13]);
-export const NavigationRouteContext = importDefault(dependencyMap[14]);
-export const PreventRemoveContext = importDefault(dependencyMap[15]);
-export const PreventRemoveProvider = importDefault(dependencyMap[16]);
-export const useFocusEffect = importDefault(dependencyMap[17]);
-export const useIsFocused = importDefault(dependencyMap[18]);
-export const useNavigation = importDefault(dependencyMap[19]);
-export const useNavigationBuilder = importDefault(dependencyMap[20]);
-export const useNavigationContainerRef = importDefault(dependencyMap[21]);
-export const useNavigationState = importDefault(dependencyMap[22]);
-export const UNSTABLE_usePreventRemove = importDefault(dependencyMap[23]);
-export const usePreventRemoveContext = importDefault(dependencyMap[24]);
-export const useRoute = importDefault(dependencyMap[25]);
-export const validatePathConfig = importDefault(dependencyMap[26]);
+export const BaseNavigationContainer = require("getPartialState");
+export const createNavigationContainerRef = require("createNavigationContainerRef");
+export const createNavigatorFactory = require("createNavigatorFactory");
+export const CurrentRenderContext = require("result");
+export const findFocusedRoute = require("findFocusedRoute");
+export const getActionFromState = require("createNormalizedConfigItem");
+export const getFocusedRouteNameFromRoute = require("getFocusedRouteNameFromRoute");
+export const getPathFromState = require("getActiveRoute");
+export const getStateFromPath = require("joinPaths");
+export const NavigationContainerRefContext = require("result");
+export const NavigationContext = require("result");
+export const NavigationHelpersContext = require("result");
+export const NavigationRouteContext = require("result");
+export const PreventRemoveContext = require("result");
+export const PreventRemoveProvider = require("transformPreventedRoutes");
+export const useFocusEffect = require("useFocusEffect");
+export const useIsFocused = require("useIsFocused");
+export const useNavigation = require("useNavigation");
+export const useNavigationBuilder = require("isValidKey");
+export const useNavigationContainerRef = require("useNavigationContainerRef");
+export const useNavigationState = require("useNavigationState");
+export const UNSTABLE_usePreventRemove = require("usePreventRemove");
+export const usePreventRemoveContext = require("usePreventRemoveContext");
+export const useRoute = require("useRoute");
+export const validatePathConfig = require("formatToList");

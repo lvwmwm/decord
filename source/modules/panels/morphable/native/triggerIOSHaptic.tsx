@@ -1,17 +1,17 @@
-// Module ID: 15587
-// Function ID: 118929
+// Module ID: 15704
+// Function ID: 121102
 // Name: triggerIOSHaptic
-// Dependencies: []
+// Dependencies: [10016, 4099, 2]
 // Exports: default
 
-// Module 15587 (triggerIOSHaptic)
-const IS_IOS = require(dependencyMap[0]).IS_IOS;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/panels/morphable/native/triggerIOSHaptic.tsx");
+// Module 15704 (triggerIOSHaptic)
+import { IS_IOS } from "MIN_PAN_GESTURE_MOVE";
+
+let result = require("set").fileFinishedImporting("modules/panels/morphable/native/triggerIOSHaptic.tsx");
 
 export default function triggerIOSHaptic() {
   if (IS_IOS) {
-    const result = require(dependencyMap[1]).triggerHapticFeedback(require(dependencyMap[1]).HapticFeedbackTypes.IMPACT_MEDIUM);
-    const obj = require(dependencyMap[1]);
+    const result = require(4099) /* getAndroidLightImpactEffect */.triggerHapticFeedback(require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.IMPACT_MEDIUM);
+    const obj = require(4099) /* getAndroidLightImpactEffect */;
   }
 };

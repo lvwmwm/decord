@@ -1,20 +1,29 @@
-// Module ID: 14187
-// Function ID: 107401
+// Module ID: 14301
+// Function ID: 109557
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 3803, 2]
 
-// Module 14187 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14301 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.79qal8);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["79qal8"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.CHAT,
-  useValue: require(dependencyMap[3]).ConvertEmoticons.useSetting,
-  onValueChange: require(dependencyMap[3]).ConvertEmoticons.updateSetting
+  parent: require("MobileSetting").MobileSetting.CHAT,
+  useValue: require("explicitContentFromProto").ConvertEmoticons.useSetting,
+  onValueChange: require("explicitContentFromProto").ConvertEmoticons.updateSetting
 });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ChatEmojiEmoticonsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["79qal8"]);
+  },
+  parent: require("MobileSetting").MobileSetting.CHAT,
+  useValue: require("explicitContentFromProto").ConvertEmoticons.useSetting,
+  onValueChange: require("explicitContentFromProto").ConvertEmoticons.updateSetting
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ChatEmojiEmoticonsSetting.tsx");
 
 export default toggle;

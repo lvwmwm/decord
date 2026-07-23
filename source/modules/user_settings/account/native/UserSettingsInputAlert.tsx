@@ -1,9 +1,20 @@
-// Module ID: 13586
-// Function ID: 102977
+// Module ID: 13700
+// Function ID: 105133
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 507, 4541, 4126, 7512, 4561, 5587, 2]
 
-// Module 13586 (_isNativeReflectConstruct)
+// Module 13700 (_isNativeReflectConstruct)
+import closure_3 from "jsxProd";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import jsxProd from "jsxProd";
+import importAllResult from "result";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,34 +24,28 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[6]));
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let closure_10 = { input: "", error: undefined };
-const tmp4 = (PureComponent) => {
+const tmp4 = ((PureComponent) => {
   class UserSettingsInputAlert {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, UserSettingsInputAlert);
+      tmp = outer1_3(this, apply);
       items1 = [...items];
-      obj = closure_6(UserSettingsInputAlert);
-      tmp2 = closure_5;
-      if (closure_11()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_11()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      UserSettingsInputAlert = tmp2Result;
-      tmp2Result.state = closure_10;
+      apply = tmp2Result;
+      tmp2Result.state = outer1_10;
       tmp2Result.close = () => {
         const onClose = tmp2Result.props.onClose;
         if (null != onClose) {
@@ -48,6 +53,10 @@ const tmp4 = (PureComponent) => {
         }
       };
       tmp2Result.handleSubmit = () => {
+        let closure_0;
+        let closure_1;
+        let closure_2;
+        let closure_3;
         let isLoading;
         let onSubmit;
         ({ isLoading, onSubmit, onSuccess: closure_0, closeOnSuccess: closure_1, onError: closure_2, skipErrorMsgAbortCode: closure_3 } = tmp2Result.props);
@@ -57,34 +66,34 @@ const tmp4 = (PureComponent) => {
         if (!isLoading) {
           const onSubmitResult = onSubmit(tmp2Result.state.input);
           onSubmit(tmp2Result.state.input).then(() => {
-            if (null != lib) {
-              lib();
+            if (null != callback) {
+              callback();
             }
             if (closure_1) {
-              lib.close();
+              outer1_0.close();
             }
           }).catch((body) => {
-            if (null != callback) {
-              callback(body);
+            if (null != callback2) {
+              callback2(body);
             }
             if (body) {
               if (body.body) {
-                const V6OrEarlierAPIError = lib(callback[7]).V6OrEarlierAPIError;
+                const V6OrEarlierAPIError = UserSettingsInputAlert(outer3_2[7]).V6OrEarlierAPIError;
                 const prototype = V6OrEarlierAPIError.prototype;
                 const v6OrEarlierAPIError = new V6OrEarlierAPIError(body);
                 if (v6OrEarlierAPIError.code !== closure_3) {
                   const obj = { error: v6OrEarlierAPIError.message };
-                  lib.setState(obj);
+                  outer1_0.setState(obj);
                 }
               }
             }
           });
           const nextPromise = onSubmit(tmp2Result.state.input).then(() => {
-            if (null != lib) {
-              lib();
+            if (null != callback) {
+              callback();
             }
             if (closure_1) {
-              lib.close();
+              outer1_0.close();
             }
           });
         }
@@ -92,13 +101,12 @@ const tmp4 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = UserSettingsInputAlert;
   callback2(UserSettingsInputAlert, PureComponent);
   let obj = {
     key: "renderContent",
     value() {
-      const self = this;
-      const UserSettingsInputAlert = this;
+      let self = this;
+      self = this;
       const helpText = this.props.helpText;
       if (null != this.props.error) {
         if ("" !== self.props.error) {
@@ -108,7 +116,7 @@ const tmp4 = (PureComponent) => {
         let tmp7 = null != helpText;
         if (tmp7) {
           obj = { variant: "text-md/normal", children: helpText };
-          tmp7 = callback4(UserSettingsInputAlert(closure_2[9]).Text, obj);
+          tmp7 = outer1_8(UserSettingsInputAlert(outer1_2[9]).Text, obj);
         }
         const items = [tmp7, ];
         obj = { label: tmp3, placeholder: tmp, secureTextEntry: tmp2, returnKeyType: "done", autoFocus: true };
@@ -122,14 +130,14 @@ const tmp4 = (PureComponent) => {
         obj.onChange = function onChange(input) {
           return self.setState({ input });
         };
-        items[1] = callback4(UserSettingsInputAlert(closure_2[10]).TextInput, obj);
+        items[1] = outer1_8(UserSettingsInputAlert(outer1_2[10]).TextInput, obj);
         obj.children = items;
-        return closure_9(UserSettingsInputAlert(closure_2[8]).Stack, obj);
+        return outer1_9(UserSettingsInputAlert(outer1_2[8]).Stack, obj);
       }
       error = self.state.error;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "render",
     value() {
@@ -140,20 +148,19 @@ const tmp4 = (PureComponent) => {
       let useKeyboardAwareWrapper;
       ({ title, actionText, cancelText, confirmColor, useKeyboardAwareWrapper } = this.props);
       let obj = { title, confirmText: actionText, confirmColor, onConfirm: this.handleSubmit, cancelText, onCancel: this.close, children: this.renderContent() };
-      const tmp2 = callback4(callback(closure_2[11]), obj);
+      const tmp2 = outer1_8(outer1_1(outer1_2[11]), obj);
       let tmp3 = tmp2;
       if (useKeyboardAwareWrapper) {
         obj = { children: tmp2 };
-        tmp3 = callback4(callback(closure_2[12]), obj);
+        tmp3 = outer1_8(outer1_1(outer1_2[12]), obj);
       }
       return tmp3;
     }
   };
   items[1] = obj;
   return callback(UserSettingsInputAlert, items);
-}(importAllResult.PureComponent);
-tmp4.defaultProps = { paddingVertical: "<string:37639497>", flexGrow: "<string:37618238>", flexBasis: "<string:37618238>" };
-const tmp3 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/account/native/UserSettingsInputAlert.tsx");
+})(require("result").PureComponent);
+tmp4.defaultProps = { isLoading: false, useKeyboardAwareWrapper: false, secureTextEntry: true };
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/account/native/UserSettingsInputAlert.tsx");
 
 export default tmp4;

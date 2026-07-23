@@ -1,37 +1,38 @@
-// Module ID: 10487
-// Function ID: 81241
+// Module ID: 10497
+// Function ID: 81291
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162, 2]
 
-// Module 10487 (_isNativeReflectConstruct)
+// Module 10497 (_isNativeReflectConstruct)
+import _defineProperties from "_defineProperties";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _defineProperties;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
+const tmp2 = ((arg0) => {
   class RPCError {
     constructor(arg0, arg1) {
       self = this;
-      tmp = closure_1(this, RPCError);
+      tmp = outer1_1(this, RPCError);
       items = [];
       items[0] = arg1;
-      obj = closure_3(RPCError);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      obj = outer1_3(RPCError);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -46,10 +47,9 @@ const tmp2 = (arg0) => {
       return tmp2Result;
     }
   }
-  const callback = RPCError;
-  callback2(RPCError, arg0);
-  return callback(RPCError);
-}(importDefault(dependencyMap[5])(Error));
-const result = arg1(dependencyMap[6]).fileFinishedImporting("../discord_common/js/shared/lib/RPCError.tsx");
+  callback(RPCError, arg0);
+  return RPCError(RPCError);
+})(require("_wrapNativeSuper")(Error));
+let result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/shared/lib/RPCError.tsx");
 
 export const RPCError = tmp2;

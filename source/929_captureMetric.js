@@ -1,11 +1,13 @@
 // Module ID: 929
-// Function ID: 10105
+// Function ID: 10106
 // Name: captureMetric
-// Dependencies: []
+// Dependencies: [861]
 
 // Module 929 (captureMetric)
+const require = arg1;
+const dependencyMap = arg6;
 function captureMetric(distribution, name, value, unit) {
-  let obj = name(arg6[0]);
+  let obj = require(861) /* setMetricAttribute */;
   obj = { type: distribution, name, value };
   unit = undefined;
   if (null != unit) {

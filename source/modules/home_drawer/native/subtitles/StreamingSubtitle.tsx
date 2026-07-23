@@ -1,21 +1,23 @@
-// Module ID: 14736
-// Function ID: 111149
+// Module ID: 14852
+// Function ID: 113317
 // Name: StreamingSubtitle
-// Dependencies: []
+// Dependencies: [31, 33, 4126, 1212, 4319, 2]
 // Exports: default
 
-// Module 14736 (StreamingSubtitle)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/home_drawer/native/subtitles/StreamingSubtitle.tsx");
+// Module 14852 (StreamingSubtitle)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("Text").fileFinishedImporting("modules/home_drawer/native/subtitles/StreamingSubtitle.tsx");
 
 export default function StreamingSubtitle(arg0) {
   let guildId;
   let streamingUser;
   ({ guildId, streamingUser } = arg0);
-  let obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj = { username: importDefault(dependencyMap[4]).getName(guildId, null, streamingUser) };
-  obj.children = intl.format(arg1(dependencyMap[3]).t.k5IKep, obj);
-  return jsx(arg1(dependencyMap[2]).Text, obj);
+  let obj = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1 };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj = { username: importDefault(4319).getName(guildId, null, streamingUser) };
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.k5IKep, obj);
+  return jsx(require(4126) /* Text */.Text, { username: importDefault(4319).getName(guildId, null, streamingUser) });
 };

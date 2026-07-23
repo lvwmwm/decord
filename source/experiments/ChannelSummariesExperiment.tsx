@@ -1,10 +1,20 @@
-// Module ID: 9479
-// Function ID: 73899
+// Module ID: 9486
+// Function ID: 73940
 // Name: canSeeChannelSummaries
-// Dependencies: []
+// Dependencies: [1391, 1838, 653, 1355, 624, 2]
 // Exports: channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 9479 (canSeeChannelSummaries)
+// Module 9486 (canSeeChannelSummaries)
+import { isGuildNSFW } from "isGuildOwner";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import { ChannelFlags } from "set";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
 function canSeeChannelSummaries(channel, flag, flag2) {
   if (flag === undefined) {
     flag = false;
@@ -81,13 +91,8 @@ function canGuildUseConversationSummaries(guild, flag2) {
   }
   return tmp;
 }
-const isGuildNSFW = require(dependencyMap[0]).isGuildNSFW;
-let closure_3 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[2]);
-({ ME: closure_4, FAVORITES: closure_5, ChannelTypesSets: closure_6, GuildFeatures: closure_7, EMPTY_STRING_SNOWFLAKE_ID: closure_8 } = _module);
-const ChannelFlags = require(dependencyMap[3]).ChannelFlags;
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
+({ ME: closure_4, FAVORITES: closure_5, ChannelTypesSets: closure_6, GuildFeatures: closure_7, EMPTY_STRING_SNOWFLAKE_ID: closure_8 } = ME);
+const result = require("ME").fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
 
 export const channelEligibleForSummaries = function channelEligibleForSummaries(channel) {
   return canSeeChannelSummaries(channel, true, false);
@@ -101,17 +106,17 @@ export const useChannelSummariesExperiment = function useChannelSummariesExperim
   return canSeeChannelSummaries(channel, flag);
 };
 export const useGuildEligibleForSummaries = function useGuildEligibleForSummaries(arg0) {
-  const require = arg0;
-  const items = [closure_3];
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [arg0];
-  return require(dependencyMap[4]).useStateFromStores(items, () => {
+  return _require(624).useStateFromStores(items, () => {
     let id;
-    if (null != arg0) {
-      id = arg0.id;
+    if (null != id) {
+      id = id.id;
     }
     if (null == id) {
-      id = closure_8;
+      id = outer1_8;
     }
-    return closure_11(guild.getGuild(id), false);
+    return outer1_11(outer1_3.getGuild(id), false);
   }, items1);
 };

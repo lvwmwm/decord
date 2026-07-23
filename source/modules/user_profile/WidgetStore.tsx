@@ -1,52 +1,61 @@
-// Module ID: 6856
-// Function ID: 54238
+// Module ID: 6861
+// Function ID: 54270
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1849, 6856, 22, 566, 686, 2]
 
-// Module 6856 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6861 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,34 +101,26 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = null;
-let closure_11 = null;
-let closure_12 = false;
+let c10 = null;
+let c11 = null;
+let c12 = false;
 let closure_13 = { suggestedGamesIds: [], suggestedWishlistGamesIds: [] };
-let closure_14 = false;
-let closure_15 = false;
-let closure_16 = false;
-let tmp2 = (Store) => {
+let c14 = false;
+let c15 = false;
+let c16 = false;
+let tmp2 = ((Store) => {
   class WidgetStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, WidgetStore);
-      obj = closure_6(WidgetStore);
-      tmp2 = closure_5;
-      if (closure_19()) {
+      tmp = outer1_3(this, WidgetStore);
+      obj = outer1_6(WidgetStore);
+      tmp2 = outer1_5;
+      if (outer1_19()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -128,19 +129,18 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = WidgetStore;
   callback2(WidgetStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
     }
   };
-  const items = [obj, , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , ];
   obj = {
     key: "getPendingWidgets",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[1] = obj;
@@ -148,8 +148,8 @@ let tmp2 = (Store) => {
     key: "getSaveablePendingWidgets",
     value() {
       let found = null;
-      if (null != closure_10) {
-        found = closure_10.filter((isDiscardable) => !isDiscardable.isDiscardable());
+      if (null != outer1_10) {
+        found = outer1_10.filter((isDiscardable) => !isDiscardable.isDiscardable());
       }
       return found;
     }
@@ -158,12 +158,12 @@ let tmp2 = (Store) => {
   items[3] = {
     key: "hasPendingChanges",
     value() {
-      let tmp = null !== closure_10;
+      let tmp = null !== outer1_10;
       if (tmp) {
-        let tmp3 = null === closure_11;
+        let tmp3 = null === outer1_11;
         if (!tmp3) {
-          tmp3 = !WidgetStore(closure_1[8]).isEqual(closure_10, closure_11);
-          const obj = WidgetStore(closure_1[8]);
+          tmp3 = !WidgetStore(outer1_1[8]).isEqual(outer1_10, outer1_11);
+          const obj = WidgetStore(outer1_1[8]);
         }
         tmp = tmp3;
       }
@@ -177,9 +177,9 @@ let tmp2 = (Store) => {
       let iter4;
       let saveablePendingWidgets = this.getSaveablePendingWidgets();
       if (null != saveablePendingWidgets) {
-        if (null != closure_11) {
+        if (null != outer1_11) {
           const _Map = Map;
-          const map = new Map(closure_11.map((id) => {
+          const map = new Map(outer1_11.map((id) => {
             const items = [id.id, id];
             return items;
           }));
@@ -188,14 +188,14 @@ let tmp2 = (Store) => {
             const items = [id.id, id];
             return items;
           }));
-          const items = [];
+          let items = [];
           const items1 = [];
-          const tmp26 = callback3(map1);
+          const tmp26 = outer1_17(map1);
           let iter2 = tmp26();
           if (!iter2.done) {
             do {
-              let tmp = closure_2;
-              let tmp2 = closure_2(iter2.value, 2);
+              let tmp = outer1_2;
+              let tmp2 = outer1_2(iter2.value, 2);
               let obj = tmp2[1];
               let value = map.get(tmp2[0]);
               let tmp4 = null != value && obj.isEqual(value);
@@ -206,12 +206,12 @@ let tmp2 = (Store) => {
               iter2 = iter;
             } while (!iter.done);
           }
-          const tmp7 = callback3(map);
+          const tmp7 = outer1_17(map);
           let iter3 = tmp7();
           if (!iter3.done) {
             do {
-              let tmp8 = closure_2;
-              let tmp9 = closure_2(iter3.value, 2);
+              let tmp8 = outer1_2;
+              let tmp9 = outer1_2(iter3.value, 2);
               if (!map1.has(tmp9[0])) {
                 arr = items1.push(tmp9[1]);
               }
@@ -228,8 +228,8 @@ let tmp2 = (Store) => {
               if (null != tmp11) {
                 id = tmp11.id;
               }
-              let tmp13 = closure_11;
-              let tmp14 = closure_11[num];
+              let tmp13 = outer1_11;
+              let tmp14 = outer1_11[num];
               let id1;
               if (null != tmp14) {
                 id1 = tmp14.id;
@@ -296,42 +296,42 @@ let tmp2 = (Store) => {
   items[9] = {
     key: "isSubmitting",
     get() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[10] = {
     key: "suggestedFetchError",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[11] = {
     key: "suggestedFetchIsLoading",
     get() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[12] = {
     key: "suggestedFetchAttempted",
     get() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[13] = {
     key: "suggestedGameIds",
     get() {
-      return closure_13;
+      return outer1_13;
     }
   };
   return callback(WidgetStore, items);
-}(importDefault(dependencyMap[9]).Store);
-tmp2 = new tmp2(importDefault(dependencyMap[10]), {
+})(require("initialize").Store);
+tmp2 = new tmp2(require("dispatcher"), {
   WIDGET_PENDING_SET: function handleSetPendingWidgets(widgets) {
-    const widgets2 = widgets.widgets;
-    if (null === closure_11) {
-      const currentUser = currentUser.getCurrentUser();
+    widgets = widgets.widgets;
+    if (null === widgets) {
+      currentUser = currentUser.getCurrentUser();
       if (null != currentUser) {
-        const userProfile = userProfile.getUserProfile(currentUser.id);
+        userProfile = userProfile.getUserProfile(currentUser.id);
         widgets = undefined;
         if (null != userProfile) {
           widgets = userProfile.widgets;
@@ -339,49 +339,48 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
         if (null == widgets) {
           widgets = [];
         }
-        closure_11 = widgets;
       }
     }
   },
   WIDGET_PENDING_SAVE_START: function handleSavePendingWidgetsStart() {
-    let closure_12 = true;
+    let c12 = true;
   },
   WIDGET_PENDING_SAVE_SUCCESS: function handleSavePendingWidgetsSuccess() {
-    let closure_12 = false;
-    if (null !== closure_10) {
-      let closure_11 = null;
-      closure_10 = null;
+    let c12 = false;
+    if (null !== c10) {
+      let c11 = null;
+      c10 = null;
     }
   },
   WIDGET_PENDING_SAVE_FAILURE: function handleSavePendingWidgetsFailure() {
-    let closure_12 = false;
+    let c12 = false;
   },
   WIDGET_SUGGESTED_FETCH_SUCCESS: function handleSetSuggestedGameIds(arg0) {
     ({ suggestedGamesIds: closure_13.suggestedGamesIds, suggestedWishlistGamesIds: closure_13.suggestedWishlistGamesIds } = arg0);
-    let closure_15 = false;
-    let closure_14 = false;
+    let c15 = false;
+    let c14 = false;
   },
   WIDGET_SUGGESTED_FETCH_FAILURE: function handleSetSuggestedFetchFailure() {
-    let closure_14 = true;
-    let closure_15 = false;
+    let c14 = true;
+    let c15 = false;
   },
   WIDGET_SUGGESTED_FETCH_START: function handleSetSuggestedFetchStart() {
-    let closure_15 = true;
-    let closure_14 = false;
-    let closure_16 = true;
+    let c15 = true;
+    let c14 = false;
+    let c16 = true;
   },
   WIDGET_PENDING_CLEAR: function handleClearPendingWidgets() {
-    let closure_10 = null;
-    let closure_11 = null;
+    let c10 = null;
+    let c11 = null;
   },
   WIDGET_SUGGESTED_REMOVE_GAME: function handleRemoveApplicationIdFromSuggestedGames(applicationId) {
-    const importDefault = applicationId.applicationId;
+    applicationId = applicationId.applicationId;
     const suggestedGamesIds = closure_13.suggestedGamesIds;
     closure_13.suggestedGamesIds = suggestedGamesIds.filter((arg0) => arg0 !== applicationId);
     const prop = closure_13.suggestedWishlistGamesIds;
     closure_13.suggestedWishlistGamesIds = prop.filter((arg0) => arg0 !== applicationId);
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_profile/WidgetStore.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/user_profile/WidgetStore.tsx");
 
 export default tmp2;

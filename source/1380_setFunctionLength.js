@@ -1,15 +1,15 @@
 // Module ID: 1380
-// Function ID: 16528
+// Function ID: 16529
 // Name: setFunctionLength
-// Dependencies: []
+// Dependencies: [1381, 517, 518, 519, 1382]
 
 // Module 1380 (setFunctionLength)
-let closure_2 = require(dependencyMap[0])();
-let closure_3 = require(dependencyMap[1])("%Math.floor%");
+let closure_2 = require("hasPropertyDescriptors")();
+let closure_3 = require("getEvalledConstructor")("%Math.floor%");
 
 export default function setFunctionLength(arg0, arg1) {
   if ("function" !== typeof arg0) {
-    let tmp26 = require(dependencyMap[2]);
+    let tmp26 = require(518);
     const prototype2 = tmp26.prototype;
     tmp26 = new tmp26("`fn` is not a function");
     throw tmp26;
@@ -23,8 +23,8 @@ export default function setFunctionLength(arg0, arg1) {
             if ("length" in arg0) {
               flag = true;
               flag2 = true;
-              if (require(dependencyMap[3])) {
-                const tmp6 = require(dependencyMap[3])(arg0, "length");
+              if (require(519)) {
+                const tmp6 = require(519)(arg0, "length");
                 let tmp7 = tmp6;
                 if (tmp6) {
                   tmp7 = !tmp6.configurable;
@@ -52,7 +52,7 @@ export default function setFunctionLength(arg0, arg1) {
               flag = !tmp;
             }
             if (flag) {
-              const tmp12 = require(dependencyMap[4]);
+              const tmp12 = require(1382) /* defineDataProperty */;
               if (closure_2) {
                 tmp12(arg0, "length", arg1, true, true);
               } else {
@@ -64,7 +64,7 @@ export default function setFunctionLength(arg0, arg1) {
         }
       }
     }
-    let tmp19 = require(dependencyMap[2]);
+    let tmp19 = require(518);
     const prototype = tmp19.prototype;
     tmp19 = new tmp19("`length` must be a positive 32-bit integer");
     throw tmp19;

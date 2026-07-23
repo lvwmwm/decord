@@ -1,27 +1,31 @@
-// Module ID: 8500
-// Function ID: 67849
-// Dependencies: []
+// Module ID: 8506
+// Function ID: 67886
+// Dependencies: [57, 31, 27, 33, 3842, 8240, 8507, 4554, 2]
 
-// Module 8500
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-const memoResult = importAllResult.memo((style) => {
+// Module 8506
+import _slicedToArray from "_slicedToArray";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
+const memoResult = require("result").memo((style) => {
   let bannerHeight;
   let gradientHeight;
   let primaryColor;
   let secondaryColor;
   style = style.style;
   ({ gradientHeight, bannerHeight } = style);
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(3842) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, secondaryColor } = themeContext);
-  const gradientFallbackBackground = arg1(dependencyMap[5]).useUserProfileColors({ theme: themeContext.theme, primaryColor, secondaryColor }).gradientFallbackBackground;
-  const obj2 = arg1(dependencyMap[5]);
-  const obj3 = arg1(dependencyMap[6]);
-  const first = callback(arg1(dependencyMap[6]).useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
+  const gradientFallbackBackground = require(8240) /* useUserProfileColors */.useUserProfileColors({ theme: themeContext.theme, primaryColor, secondaryColor }).gradientFallbackBackground;
+  const obj2 = require(8240) /* useUserProfileColors */;
+  const obj3 = require(8507) /* useUserProfileGradientColors */;
+  const first = callback(require(8507) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
   if (null != primaryColor) {
     if (null != secondaryColor) {
       const _Math = Math;
@@ -30,18 +34,18 @@ const memoResult = importAllResult.memo((style) => {
       obj = {};
       const items = [first, first, tmp4];
       obj.colors = items;
-      const items1 = [0.229, bound, 1];
+      const items1 = [0, bound, 1];
       obj.locations = items1;
       const items2 = [closure_4.absoluteFill, style];
       obj.style = items2;
       obj.pointerEvents = "none";
-      return jsx(importDefault(dependencyMap[7]), obj);
+      return jsx(importDefault(4554), {});
     }
   }
   style = [closure_4.absoluteFill, { backgroundColor: gradientFallbackBackground }, ];
   style[2] = style;
   return <closure_5 style={style} pointerEvents="none" />;
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_profile/native/UserProfileFixedBackground.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileFixedBackground.tsx");
 
 export default memoResult;

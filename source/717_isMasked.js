@@ -1,10 +1,10 @@
 // Module ID: 717
-// Function ID: 8739
+// Function ID: 8740
 // Name: isMasked
-// Dependencies: []
+// Dependencies: [718]
 
 // Module 717 (isMasked)
-const match = /[^.]+$/.exec(require(dependencyMap[0]) && require(dependencyMap[0]).keys && require(dependencyMap[0]).keys.IE_PROTO || "");
+const match = /[^.]+$/.exec(require("module_718") && require("module_718").keys && require("module_718").keys.IE_PROTO || "");
 let str = "";
 if (match) {
   str = `Symbol(src)_1.${tmp2}`;

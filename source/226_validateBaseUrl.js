@@ -1,43 +1,44 @@
 // Module ID: 226
 // Function ID: 3119
 // Name: validateBaseUrl
-// Dependencies: []
+// Dependencies: [6, 7, 195, 227]
 
 // Module 226 (validateBaseUrl)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 function validateBaseUrl(arg0) {
   return /^(?:(?:(?:https?|ftp):)?\/\/)(?:(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z0-9\u00a1-\uffff][a-z0-9\u00a1-\uffff_-]{0,62})?[a-z0-9\u00a1-\uffff]\.)*(?:[a-z\u00a1-\uffff]{2,}\.?))(?::\d{2,5})?(?:[/?#]\S*)?$/.test(arg0);
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = null;
-if (importDefault(dependencyMap[2])) {
+if (require("BlobModule")) {
   if ("string" === typeof importDefaultResult.getConstants().BLOB_URI_SCHEME) {
-    const constants = importDefault(dependencyMap[2]).getConstants();
+    const constants = require("BlobModule").getConstants();
     closure_2 = `${tmp2.BLOB_URI_SCHEME}:`;
     if ("string" === typeof constants.BLOB_URI_HOST) {
-      const _HermesInternal = HermesInternal;
+      let _HermesInternal = HermesInternal;
       closure_2 = `${tmp2.BLOB_URI_SCHEME}:` + "//" + constants.BLOB_URI_HOST + "/";
     }
-    const importDefaultResult1 = importDefault(dependencyMap[2]);
+    const importDefaultResult1 = require("BlobModule");
   }
-  const importDefaultResult = importDefault(dependencyMap[2]);
+  importDefaultResult = require("BlobModule");
 }
 
-export const URLSearchParams = arg1(dependencyMap[3]).URLSearchParams;
-export const URL = () => {
+export const URLSearchParams = require("URLSearchParams").URLSearchParams;
+export const URL = (() => {
   class URL {
     constructor(arg0, arg1) {
       self = this;
       tmp = URL(this, URL);
       this._searchParamsInstance = null;
       if (arg1) {
-        tmp2 = closure_3;
-        if (!closure_3(arg0)) {
+        tmp2 = outer1_3;
+        if (!outer1_3(arg0)) {
           str = "string";
           if ("string" === typeof arg1) {
-            tmp3 = closure_3;
+            tmp3 = outer1_3;
             str = arg1;
-            if (!closure_3(arg1)) {
+            if (!outer1_3(arg1)) {
               tmp4 = globalThis;
               _TypeError = TypeError;
               _HermesInternal = HermesInternal;
@@ -110,7 +111,6 @@ export const URL = () => {
       return;
     }
   }
-  let closure_0 = URL;
   let obj = {
     key: "hash",
     get() {
@@ -282,13 +282,13 @@ export const URL = () => {
     {
       key: "createObjectURL",
       value: function createObjectURL(data) {
-        if (null === closure_2) {
+        if (null === outer1_2) {
           const _Error = Error;
           const error = new Error("Cannot create URL for blob!");
           throw error;
         } else {
           const _HermesInternal = HermesInternal;
-          return "" + closure_2 + data.data.blobId + "?offset=" + data.data.offset + "&size=" + data.size;
+          return "" + outer1_2 + data.data.blobId + "?offset=" + data.data.offset + "&size=" + data.size;
         }
       }
     },
@@ -300,4 +300,4 @@ export const URL = () => {
     }
   ];
   return callback(URL, items, items1);
-}();
+})();

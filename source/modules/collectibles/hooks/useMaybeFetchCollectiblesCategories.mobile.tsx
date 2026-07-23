@@ -1,12 +1,14 @@
-// Module ID: 7855
-// Function ID: 62617
+// Module ID: 7861
+// Function ID: 62654
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: []
+// Dependencies: [4129, 566, 7862, 2]
 // Exports: default
 
-// Module 7855 (useMaybeFetchCollectiblesCategories)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");
+// Module 7861 (useMaybeFetchCollectiblesCategories)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("useMaybeFetchCollectiblesCategoriesShared").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");
 
 export default function useMaybeFetchCollectiblesCategories(paymentGateway) {
   let includeUnpublished;
@@ -15,9 +17,9 @@ export default function useMaybeFetchCollectiblesCategories(paymentGateway) {
   if (null != paymentGateway) {
     paymentGateway = paymentGateway.paymentGateway;
   }
-  let obj = arg1(dependencyMap[1]);
-  const items = [closure_2];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ noCache: store.get("shop_disable_cache"), includeUnpublished: store.get("shop_include_unpublished") }));
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ noCache: outer1_2.get("shop_disable_cache"), includeUnpublished: outer1_2.get("shop_include_unpublished") }));
   ({ noCache, includeUnpublished } = stateFromStoresObject);
   obj = { noCache, includeUnpublished, paymentGateway };
   let countryCode;
@@ -34,5 +36,5 @@ export default function useMaybeFetchCollectiblesCategories(paymentGateway) {
   if (null != paymentGateway) {
     noOp = paymentGateway.noOp;
   }
-  return arg1(dependencyMap[2]).useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
+  return require(7862) /* useMaybeFetchCollectiblesCategoriesShared */.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
 };

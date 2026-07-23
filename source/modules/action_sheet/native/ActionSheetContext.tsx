@@ -1,11 +1,12 @@
-// Module ID: 5441
-// Function ID: 46546
+// Module ID: 5444
+// Function ID: 46565
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 5441 (context)
-const context = importAll(dependencyMap[0]).createContext(null);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/action_sheet/native/ActionSheetContext.tsx");
+// Module 5444 (context)
+import importAllResult from "result";
+
+const context = require("result").createContext(null);
+const result = require("set").fileFinishedImporting("modules/action_sheet/native/ActionSheetContext.tsx");
 
 export default context;

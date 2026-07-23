@@ -1,9 +1,9 @@
-// Module ID: 7780
-// Function ID: 62108
+// Module ID: 7786
+// Function ID: 62145
 // Name: nodeToText
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7780 (nodeToText)
+// Module 7786 (nodeToText)
 function nodeToText(content) {
   let str = "";
   if (null != content) {
@@ -26,8 +26,7 @@ function nodeToText(content) {
   }
   return str;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/redactRestrictedContent.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/redactRestrictedContent.tsx");
 function redactRestrictedContent(content) {
   if (null != content) {
     if ("string" !== typeof content) {

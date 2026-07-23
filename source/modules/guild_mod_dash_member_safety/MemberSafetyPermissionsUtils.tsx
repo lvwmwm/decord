@@ -1,10 +1,21 @@
-// Module ID: 5641
-// Function ID: 48239
+// Module ID: 5646
+// Function ID: 48266
 // Name: getContextForPermission
-// Dependencies: []
+// Dependencies: [57, 1391, 1838, 3758, 1849, 3762, 653, 483, 3763, 566, 2]
 // Exports: canBulkBanUser, canPruneGuildMembers, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanBulkBanUser
 
-// Module 5641 (getContextForPermission)
+// Module 5646 (getContextForPermission)
+import _slicedToArray from "_slicedToArray";
+import { isGuildOwner } from "isGuildOwner";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { MemberSafetyPagePermissions as closure_8 } from "MemberSafetyPagePermissions";
+import ME from "ME";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function getContextForPermission(guildId, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -19,7 +30,7 @@ function getContextForPermission(guildId, arg1) {
 function canAccessMemberSafetyPage(guildId) {
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [closure_5, closure_7];
+    const items = [_createForOfIteratorHelperLoose, closure_7];
     tmp = items;
   }
   getContextForPermission(guildId, tmp);
@@ -28,31 +39,24 @@ function canAccessMemberSafetyPage(guildId) {
 function hasBulkBanningPermissions(guildId) {
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [closure_5, closure_7];
+    const items = [_createForOfIteratorHelperLoose, closure_7];
     tmp = items;
   }
   getContextForPermission(guildId, tmp);
   return false;
 }
 function useCanAccessMemberSafetyPage(id) {
-  const arg1 = id;
-  const items = [closure_5, closure_7];
+  const _require = id;
+  let items = [_createForOfIteratorHelperLoose, closure_7];
   const items1 = [id];
-  return arg1(dependencyMap[9]).useStateFromStores(items, () => {
-    const items = [closure_5, closure_7];
-    callback(arg0, items);
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_5, outer1_7];
+    outer1_12(closure_0, items);
     return false;
   }, items1);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const isGuildOwner = arg1(dependencyMap[1]).isGuildOwner;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).MemberSafetyPagePermissions;
-({ GuildFeatures: closure_9, Permissions: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPermissionsUtils.tsx");
+({ GuildFeatures: closure_9, Permissions: closure_10 } = ME);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPermissionsUtils.tsx");
 
 export { getContextForPermission };
 export { canAccessMemberSafetyPage };
@@ -60,7 +64,7 @@ export { hasBulkBanningPermissions };
 export const canPruneGuildMembers = function canPruneGuildMembers(guild, currentUser, callback1) {
   let obj = callback1;
   if (callback1 === undefined) {
-    obj = closure_6;
+    obj = _isNativeReflectConstruct;
   }
   const features = guild.features;
   if (features.has(constants.PRUNE_REQUIRES_ADMIN)) {
@@ -70,52 +74,52 @@ export const canPruneGuildMembers = function canPruneGuildMembers(guild, current
     }
     let canResult1 = canResult;
   } else {
-    canResult1 = obj.can(importAll(dependencyMap[7]).combine(constants2.MANAGE_GUILD, constants2.KICK_MEMBERS), guild);
-    const obj2 = importAll(dependencyMap[7]);
+    canResult1 = obj.can(importAll(483).combine(constants2.MANAGE_GUILD, constants2.KICK_MEMBERS), guild);
+    const obj2 = importAll(483);
   }
   return canResult1;
 };
 export { useCanAccessMemberSafetyPage };
 export const useCanAccessBulkBanningFeature = function useCanAccessBulkBanningFeature(id) {
-  const arg1 = id;
+  const _require = id;
   let stateFromStores = useCanAccessMemberSafetyPage(id);
-  const items = [closure_5, closure_7];
+  let items = [_createForOfIteratorHelperLoose, closure_7];
   const items1 = [id];
   if (stateFromStores) {
     stateFromStores = obj.useStateFromStores(items, () => {
-      const items = [closure_5, closure_7];
-      callback(arg0, items);
+      const items = [outer1_5, outer1_7];
+      outer1_13(closure_0, items);
       return false;
     }, items1);
   }
   return stateFromStores;
 };
 export const useCanAccessInviteCodeFeature = function useCanAccessInviteCodeFeature(arg0) {
-  const arg1 = arg0;
-  const items = [closure_5, closure_6];
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [arg0];
-  return arg1(dependencyMap[9]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  return _require(566).useStateFromStores(items, () => {
+    const guild = outer1_5.getGuild(closure_0);
     let canResult = null != guild;
     if (canResult) {
-      canResult = closure_6.can(constants.MANAGE_GUILD, guild);
+      canResult = outer1_6.can(outer1_10.MANAGE_GUILD, guild);
     }
     return canResult;
   }, items1);
 };
 export const useCanBulkBanUser = function useCanBulkBanUser(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importAll = arg1;
+  const _require = arg0;
+  let closure_1 = arg1;
   const dependencyMap = arg2;
-  const items = [closure_6, closure_5];
+  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
   const items1 = [arg1, arg0, arg2];
-  return arg1(dependencyMap[9]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  return _require(566).useStateFromStores(items, () => {
+    const guild = outer1_5.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
-      let canManageUserResult = arg1;
-      if (arg1) {
-        canManageUserResult = closure_6.canManageUser(constants.BAN_MEMBERS, arg2, guild);
+      let canManageUserResult = closure_1;
+      if (closure_1) {
+        canManageUserResult = outer1_6.canManageUser(outer1_10.BAN_MEMBERS, closure_2, guild);
       }
       tmp2 = canManageUserResult;
     }
@@ -124,11 +128,11 @@ export const useCanBulkBanUser = function useCanBulkBanUser(arg0, arg1, arg2) {
 };
 export const canBulkBanUser = function canBulkBanUser(guildId) {
   let canManageUserResult = arg1;
-  const guild = guild.getGuild(guildId);
+  guild = guild.getGuild(guildId);
   let tmp3 = null != guild;
   if (tmp3) {
     if (canManageUserResult) {
-      canManageUserResult = closure_6.canManageUser(constants2.BAN_MEMBERS, arg2, guild);
+      canManageUserResult = _isNativeReflectConstruct.canManageUser(constants2.BAN_MEMBERS, arg2, guild);
     }
     tmp3 = canManageUserResult;
   }

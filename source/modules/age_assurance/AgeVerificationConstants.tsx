@@ -1,48 +1,49 @@
-// Module ID: 7531
-// Function ID: 60270
+// Module ID: 7537
+// Function ID: 60307
 // Name: set
-// Dependencies: []
+// Dependencies: [653, 7538, 1212, 7536, 1920, 2716, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 7531 (set)
-const HelpdeskArticles = require(dependencyMap[0]).HelpdeskArticles;
-const items = [require(dependencyMap[1]).AgeVerificationModalEntryPoint.NSFW_GUILD];
+// Module 7537 (set)
+import { HelpdeskArticles } from "ME";
+import set from "getSystemLocale";
+
+let items = [require("AgeVerificationModalEntryPoint").AgeVerificationModalEntryPoint.NSFW_GUILD];
+let set = new Set(items);
 let obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET" };
 obj = {};
-obj = { title: importDefault(dependencyMap[5]).2yLvkS, description: importDefault(dependencyMap[5]).eJmat5 };
+obj = { title: require("messagesProxy")["2yLvkS"], description: require("messagesProxy").eJmat5 };
 obj[obj.FACIAL_AGE_ESTIMATION] = obj;
-const set = new Set(items);
-obj[obj.ID_VERIFICATION] = { title: importDefault(dependencyMap[5]).dwkwo0, description: importDefault(dependencyMap[5]).ZdmRwW };
-const obj1 = { title: importDefault(dependencyMap[5]).dwkwo0, description: importDefault(dependencyMap[5]).ZdmRwW };
-obj[obj.GOOGLE_WALLET] = { title: importDefault(dependencyMap[5]).Y9sLpR, description: importDefault(dependencyMap[5]).dah4bF };
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/age_assurance/AgeVerificationConstants.tsx");
+obj[obj.ID_VERIFICATION] = { title: require("messagesProxy").dwkwo0, description: require("messagesProxy").ZdmRwW };
+const obj1 = { title: require("messagesProxy").dwkwo0, description: require("messagesProxy").ZdmRwW };
+obj[obj.GOOGLE_WALLET] = { title: require("messagesProxy").Y9sLpR, description: require("messagesProxy").dah4bF };
+let result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationConstants.tsx");
 
 export const FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS = set;
 export const getAgeVerificationGetStartedSteps = function getAgeVerificationGetStartedSteps(arg0) {
-  const require = arg0;
+  const _require = arg0;
   let obj = {};
-  const intl = require(dependencyMap[2]).intl;
-  obj.title = intl.string(require(dependencyMap[2]).t.HphYKp);
-  const intl2 = require(dependencyMap[2]).intl;
-  obj.description = intl2.string(require(dependencyMap[2]).t.GCZC+9);
+  const intl = _require(1212).intl;
+  obj.title = intl.string(_require(1212).t.HphYKp);
+  const intl2 = _require(1212).intl;
+  obj.description = intl2.string(_require(1212).t["GCZC+9"]);
   const items = [obj, , ];
   obj = {};
-  const intl3 = require(dependencyMap[2]).intl;
-  obj.title = intl3.string(require(dependencyMap[2]).t.nkO4L3);
-  const intl4 = require(dependencyMap[2]).intl;
-  obj.description = intl4.string(require(dependencyMap[2]).t.rHZFsH);
+  const intl3 = _require(1212).intl;
+  obj.title = intl3.string(_require(1212).t.nkO4L3);
+  const intl4 = _require(1212).intl;
+  obj.description = intl4.string(_require(1212).t.rHZFsH);
   items[1] = obj;
   obj = {};
-  const intl5 = require(dependencyMap[2]).intl;
-  obj.title = intl5.string(require(dependencyMap[2]).t.aVwLfn);
-  const intl6 = require(dependencyMap[2]).intl;
-  obj.description = intl6.format(require(dependencyMap[2]).t.n5vd1E, {
+  const intl5 = _require(1212).intl;
+  obj.title = intl5.string(_require(1212).t.aVwLfn);
+  const intl6 = _require(1212).intl;
+  obj.description = intl6.format(_require(1212).t.n5vd1E, {
     handleOnHelpUrlHook() {
-      const obj = callback(closure_2[3]);
-      obj.openUrl(callback(closure_2[4]).getArticleURL(constants.TIGGER_PAWTECT_SYSTEM_DMS));
-      const obj2 = callback(closure_2[4]);
-      const result = arg0(closure_2[1]).trackAgeVerificationModalClicked(arg0, arg0(closure_2[1]).AgeVerificationModalVersion.PRIMARY, arg0(closure_2[1]).AgeVerificationModalCta.SYSTEM_DMS_LEARN_MORE);
+      const obj = outer1_1(outer1_2[3]);
+      obj.openUrl(outer1_1(outer1_2[4]).getArticleURL(outer1_3.TIGGER_PAWTECT_SYSTEM_DMS));
+      const obj2 = outer1_1(outer1_2[4]);
+      const result = callback(outer1_2[1]).trackAgeVerificationModalClicked(callback, callback(outer1_2[1]).AgeVerificationModalVersion.PRIMARY, callback(outer1_2[1]).AgeVerificationModalCta.SYSTEM_DMS_LEARN_MORE);
     }
   });
   items[2] = obj;

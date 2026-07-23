@@ -1,12 +1,14 @@
-// Module ID: 4064
-// Function ID: 33862
+// Module ID: 4066
+// Function ID: 33871
 // Name: useTheme
-// Dependencies: []
+// Dependencies: [653, 3976, 2]
 // Exports: useThemeIndex
 
-// Module 4064 (useTheme)
+// Module 4066 (useTheme)
+import { ThemeTypes } from "ME";
+
 function useTheme() {
-  return require(dependencyMap[1]).useThemeContext().theme;
+  return require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme;
 }
 function getThemeIndex(arg0) {
   if (ThemeTypes.DARK === arg0) {
@@ -15,9 +17,7 @@ function getThemeIndex(arg0) {
     return 1;
   }
 }
-const ThemeTypes = require(dependencyMap[0]).ThemeTypes;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("hooks/useTheme.tsx");
+const result = require("set").fileFinishedImporting("hooks/useTheme.tsx");
 
 export default useTheme;
 export { useTheme };

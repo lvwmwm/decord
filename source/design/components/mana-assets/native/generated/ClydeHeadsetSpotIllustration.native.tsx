@@ -1,13 +1,13 @@
-// Module ID: 5949
-// Function ID: 49856
+// Module ID: 5954
+// Function ID: 49885
 // Name: ClydeHeadsetSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5955, 2]
 // Exports: ClydeHeadsetSpotIllustration
 
-// Module 5949 (ClydeHeadsetSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHeadsetSpotIllustration.native.tsx");
+// Module 5954 (ClydeHeadsetSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHeadsetSpotIllustration.native.tsx");
 
 export const ClydeHeadsetSpotIllustration = function ClydeHeadsetSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ClydeHeadsetSpotIllustration = function ClydeHeadsetSpotIllustratio
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5955) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ClydeHeadsetSpotIllustration = function ClydeHeadsetSpotIllustratio
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

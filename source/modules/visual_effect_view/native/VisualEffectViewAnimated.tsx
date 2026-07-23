@@ -1,11 +1,12 @@
-// Module ID: 4528
-// Function ID: 39778
+// Module ID: 4532
+// Function ID: 39810
 // Name: animatedComponent
-// Dependencies: []
+// Dependencies: [3991, 4533, 2]
 
-// Module 4528 (animatedComponent)
-const animatedComponent = importDefault(dependencyMap[0]).createAnimatedComponent(importDefault(dependencyMap[1]));
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewAnimated.tsx");
+// Module 4532 (animatedComponent)
+import animatedComponent from "getIOSBlurEffect";
+import importDefaultResult from "module_3991";
+
+const result = require("set").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewAnimated.tsx");
 
 export default animatedComponent;

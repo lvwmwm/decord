@@ -1,22 +1,26 @@
-// Module ID: 6734
-// Function ID: 52461
+// Module ID: 6739
+// Function ID: 52493
 // Name: isSpammer
-// Dependencies: []
+// Dependencies: [1849, 653, 6740, 2]
 // Exports: isSpam, isSpamSupported
 
-// Module 6734 (isSpammer)
+// Module 6739 (isSpammer)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function isSpammer(id) {
-  const user = user.getUser(id);
+  user = user.getUser(id);
   let hasFlagResult;
   if (null != user) {
     hasFlagResult = user.hasFlag(constants.SPAMMER);
   }
   return null != hasFlagResult && hasFlagResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ UserFlags: closure_3, ChannelTypes: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/isSpam.tsx");
+({ UserFlags: closure_3, ChannelTypes: closure_4 } = ME);
+const result = require("getEmbedFieldFromMessage").fileFinishedImporting("modules/messages/isSpam.tsx");
 
 export const isSpamSupported = function isSpamSupported(type) {
   let tmp = undefined !== type;
@@ -29,8 +33,8 @@ export { isSpammer };
 export const isSpam = function isSpam(author) {
   let tmp = isSpammer(author.author.id);
   if (tmp) {
-    tmp = !arg1(dependencyMap[2]).isAutomodMessageRecord(author);
-    const obj = arg1(dependencyMap[2]);
+    tmp = !require(6740) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(author);
+    const obj = require(6740) /* getEmbedFieldFromMessage */;
   }
   return tmp;
 };

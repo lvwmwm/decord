@@ -1,19 +1,19 @@
-// Module ID: 11596
-// Function ID: 90136
+// Module ID: 11606
+// Function ID: 90185
 // Name: useMultiPerkStatusValues
-// Dependencies: []
+// Dependencies: [4018, 11531, 1212, 2230, 2]
 // Exports: default
 
-// Module 11596 (useMultiPerkStatusValues)
-const PowerupActiveStatusType = require(dependencyMap[0]).PowerupActiveStatusType;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");
+// Module 11606 (useMultiPerkStatusValues)
+import { PowerupActiveStatusType } from "BoostedGuildTiers";
+
+const result = require("getSystemLocale").fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");
 
 export default function useMultiPerkStatusValues(powerups) {
   powerups = powerups.powerups;
-  let obj = require(dependencyMap[1]);
+  let obj = require(11531) /* usePowerupsActiveStatuses */;
   const powerupsActiveStatuses = obj.usePowerupsActiveStatuses(powerups.guildId, powerups);
-  const someResult = powerupsActiveStatuses.some((type) => type.type !== constants.INACTIVE);
+  const someResult = powerupsActiveStatuses.some((type) => type.type !== outer1_3.INACTIVE);
   if (powerups.length <= 0) {
     return null;
   } else {
@@ -39,13 +39,13 @@ export default function useMultiPerkStatusValues(powerups) {
       let tmp2 = obj;
     } else if (someResult) {
       obj = { type: "active" };
-      const intl = require(dependencyMap[2]).intl;
-      obj.statusText = intl.string(importDefault(dependencyMap[3]).FFLkmx);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj.statusText = intl.string(importDefault(2230).FFLkmx);
       tmp2 = obj;
     }
     const reduced1 = powerupsActiveStatuses.reduce((arg0, type) => {
       let sum = arg0;
-      if (type.type === constants.POWERUP_ACTIVATED) {
+      if (type.type === outer1_3.POWERUP_ACTIVATED) {
         sum = arg0 + type.powerup.cost;
       }
       return sum;
@@ -53,7 +53,7 @@ export default function useMultiPerkStatusValues(powerups) {
     const first = powerupsActiveStatuses[0];
     let cost;
     if (null != first) {
-      const powerup = first.powerup;
+      let powerup = first.powerup;
       if (null != powerup) {
         cost = powerup.cost;
       }

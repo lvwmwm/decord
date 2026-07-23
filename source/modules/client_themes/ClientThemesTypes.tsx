@@ -1,30 +1,30 @@
-// Module ID: 3942
-// Function ID: 32540
+// Module ID: 3944
+// Function ID: 32545
 // Name: ClientThemeType
-// Dependencies: []
+// Dependencies: [1281, 1184, 1282, 2, 3945]
 // Exports: getProtoThemeFromBaseTheme
 
-// Module 3942 (ClientThemeType)
-let closure_3 = require(dependencyMap[0]).PROTO_THEME_MAP_WEB_REFRESH;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/client_themes/ClientThemesTypes.tsx");
+// Module 3944 (ClientThemeType)
+import { PROTO_THEME_MAP_WEB_REFRESH as closure_3 } from "SystemThemeState";
 
-export const ClientThemeType = require(dependencyMap[4]).ClientThemeType;
+const result = require("_callSuper").fileFinishedImporting("modules/client_themes/ClientThemesTypes.tsx");
+
+export const ClientThemeType = require("module_3945").ClientThemeType;
 export const getProtoThemeFromBaseTheme = function getProtoThemeFromBaseTheme(arg0) {
-  const require = arg0;
+  const _require = arg0;
   const entries = Object.entries(closure_3);
   const found = entries.find((arg0) => {
     let tmp;
     [, tmp] = arg0;
-    return tmp === arg0;
+    return tmp === closure_0;
   });
   if (undefined === found) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
     const error = new Error("No ProtoTheme found for base theme: " + arg0);
-    importDefault(dependencyMap[1]).captureException(error);
-    let UNSET = require(dependencyMap[2]).Theme.UNSET;
-    const obj = importDefault(dependencyMap[1]);
+    importDefault(1184).captureException(error);
+    let UNSET = _require(1282).Theme.UNSET;
+    const obj = importDefault(1184);
   } else {
     const _parseInt = parseInt;
     UNSET = parseInt(found[0]);

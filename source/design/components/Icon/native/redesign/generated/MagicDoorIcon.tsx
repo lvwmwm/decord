@@ -1,25 +1,26 @@
-// Module ID: 13422
-// Function ID: 101930
+// Module ID: 13536
+// Function ID: 104086
 // Name: MagicDoorIcon
-// Dependencies: [0, 0, 0, 4294967295, 4294967295, 0]
+// Dependencies: [31, 33, 689, 3833, 13537, 2]
 // Exports: MagicDoorIcon
 
-// Module 13422 (MagicDoorIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 13536 (MagicDoorIcon)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/MagicDoorIcon.tsx");
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/MagicDoorIcon.tsx");
 
 export const MagicDoorIcon = function MagicDoorIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13537) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13537) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,31 +1,33 @@
-// Module ID: 14128
-// Function ID: 107250
+// Module ID: 14242
+// Function ID: 109406
 // Name: useShowLinkDecorationsSettingValue
-// Dependencies: []
+// Dependencies: [4122, 7662, 566, 13370, 10095, 1212, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 14128 (useShowLinkDecorationsSettingValue)
+// Module 14242 (useShowLinkDecorationsSettingValue)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useShowLinkDecorationsSettingValue() {
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => obj.alwaysShowLinkDecorations);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.alwaysShowLinkDecorations);
 }
 function onShowLinkDecorationsValueChange(alwaysShowLinkDecorations) {
-  const result = arg1(dependencyMap[3]).setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
+  const result = require(13370) /* setFontSize */.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.OLZFB8);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.OLZFB8);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useShowLinkDecorationsSettingValue,
   onValueChange: onShowLinkDecorationsValueChange
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/ShowLinkDecorationsSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/ShowLinkDecorationsSetting.tsx");
 
-export default toggle;
+export default createToggle;
 export { useShowLinkDecorationsSettingValue };
 export { onShowLinkDecorationsValueChange };

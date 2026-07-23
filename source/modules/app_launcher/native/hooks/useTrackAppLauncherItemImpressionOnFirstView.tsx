@@ -1,20 +1,21 @@
-// Module ID: 11210
-// Function ID: 87275
+// Module ID: 11220
+// Function ID: 87325
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: []
+// Dependencies: [31, 10884, 1457, 8559, 480, 2]
 // Exports: useTrackAppLauncherItemImpressionOnFirstView
 
-// Module 11210 (useTrackAppLauncherItemImpressionOnFirstView)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/app_launcher/native/hooks/useTrackAppLauncherItemImpressionOnFirstView.tsx");
+// Module 11220 (useTrackAppLauncherItemImpressionOnFirstView)
+import result from "result";
+
+const require = arg1;
+const result = require("Link").fileFinishedImporting("modules/app_launcher/native/hooks/useTrackAppLauncherItemImpressionOnFirstView.tsx");
 
 export const useTrackAppLauncherItemImpressionOnFirstView = function useTrackAppLauncherItemImpressionOnFirstView() {
-  let obj = arg1(closure_1[1]);
-  const entrypoint = obj.useAppLauncherContext().entrypoint;
-  const arg1 = entrypoint;
-  closure_1 = React.useRef(new Set());
+  let obj = entrypoint(10884);
+  entrypoint = obj.useAppLauncherContext().entrypoint;
+  const dependencyMap = React.useRef(new Set());
   const set = new Set();
-  const focusEffect = arg1(closure_1[2]).useFocusEffect(React.useCallback(() => {
+  const focusEffect = entrypoint(1457).useFocusEffect(React.useCallback(() => {
     const current = ref.current;
     current.clear();
   }, []));
@@ -40,6 +41,6 @@ export const useTrackAppLauncherItemImpressionOnFirstView = function useTrackApp
       }
     }, items)
   };
-  const items = [entrypoint];
+  items = [entrypoint];
   return obj;
 };

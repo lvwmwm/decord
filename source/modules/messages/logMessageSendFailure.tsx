@@ -1,10 +1,12 @@
-// Module ID: 7080
-// Function ID: 56716
+// Module ID: 7085
+// Function ID: 56750
 // Name: getAttachmentMimeTypes
-// Dependencies: []
+// Dependencies: [653, 4324, 2]
 // Exports: logMessageSendFailure
 
-// Module 7080 (getAttachmentMimeTypes)
+// Module 7085 (getAttachmentMimeTypes)
+import { AnalyticEvents } from "ME";
+
 function getAttachmentMimeTypes(fileItems) {
   return fileItems.map((mimeType) => {
     mimeType = mimeType.mimeType;
@@ -15,9 +17,7 @@ function getAttachmentMimeTypes(fileItems) {
     return str;
   });
 }
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/messages/logMessageSendFailure.tsx");
+const result = require("set").fileFinishedImporting("modules/messages/logMessageSendFailure.tsx");
 
 export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
   if (null != fileItems.fileItems) {
@@ -35,7 +35,7 @@ export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
   if (null != failureCode) {
     tmp3 = failureCode;
   }
-  let obj = require(dependencyMap[1]);
+  let obj = require(4324) /* _createForOfIteratorHelperLoose */;
   obj = { failure_code: tmp3, error_message: tmp2, attachment_mimetypes: items };
   obj.trackWithMetadata(AnalyticEvents.SEND_MESSAGE_FAILURE, obj);
 };

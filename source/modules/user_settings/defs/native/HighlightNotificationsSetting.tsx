@@ -1,37 +1,39 @@
-// Module ID: 14239
-// Function ID: 107616
+// Module ID: 14353
+// Function ID: 109772
 // Name: useHighlightNotifications
-// Dependencies: []
+// Dependencies: [1838, 7662, 653, 566, 10095, 1212, 14354, 2]
 // Exports: useHighlightNotifications
 
-// Module 14239 (useHighlightNotifications)
+// Module 14353 (useHighlightNotifications)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useHighlightNotifications() {
-  const items = [closure_2];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => guildCount.getGuildCount() > 0);
+  const items = [_createForOfIteratorHelperLoose];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getGuildCount() > 0);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.o8Bypv);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.o8Bypv);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.NOTIFICATIONS,
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useDescription() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.Vw/Xn8);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["Vw/Xn8"]);
   },
   usePredicate: useHighlightNotifications,
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[2]).UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
+createToggle = {
+  route: require("ME").UserSettingsSections.HIGHLIGHT_NOTIFICATIONS,
   getComponent() {
-    return arg1(dependencyMap[6]).default;
+    return require(14354) /* Row */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");
 
-export default route;
+export default createToggle;
 export { useHighlightNotifications };

@@ -1,53 +1,49 @@
-// Module ID: 15341
-// Function ID: 116802
+// Module ID: 15458
+// Function ID: 118976
 // Name: IncomingRequestRowActions
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 3991, 4131, 14912, 4541, 7771, 13826, 10332, 4543, 1212, 4126, 2]
 // Exports: IncomingRequestRowActions
 
-// Module 15341 (IncomingRequestRowActions)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { flexDirection: "row" } });
+// Module 15458 (IncomingRequestRowActions)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row" } });
 let closure_8 = { code: "function IncomingRequestRowActionsTsx1(){const{animate,pressed,withTiming}=this.__closure;return{position:'absolute',right:0,flexDirection:'row',opacity:!animate?!pressed.get()?1:0:withTiming(!pressed.get()?1:0,{duration:150}),pointerEvents:!pressed.get()?'auto':'none'};}" };
 let closure_9 = { code: "function IncomingRequestRowActionsTsx2(){const{buttonWidth,buttonOffsetX,pressed,animate,withTiming}=this.__closure;const width=buttonWidth.get();const offset=buttonOffsetX.get();const scaleX=!pressed.get()?0.5:1;const translateX=!pressed.get()?width-offset:0;return{transform:[{translateX:!animate?translateX:withTiming(translateX)},{scaleX:!animate?scaleX:withTiming(scaleX)}],opacity:!animate?!pressed.get()?0:1:withTiming(!pressed.get()?0:1),pointerEvents:!pressed.get()?'none':'auto'};}" };
 let closure_10 = { code: "function IncomingRequestRowActionsTsx3(){const{waveWidth,waveHeight}=this.__closure;return{transform:[{translateX:waveWidth.get()/2},{translateY:waveHeight.get()/2}]};}" };
 let closure_11 = { code: "function IncomingRequestRowActionsTsx4(){const{withDelay,withRepeat,withTiming,pressed,Easing,waveWidth,waveHeight}=this.__closure;return{transform:[{rotateZ:withDelay(450,withRepeat(withTiming(pressed.get()?'8deg':'-2deg',{duration:150,easing:Easing.inOut(Easing.quad)}),4,true))},{translateX:-waveWidth.get()/2},{translateY:-waveHeight.get()/2}]};}" };
 let closure_12 = { code: "function IncomingRequestRowActionsTsx5(){const{pressed}=this.__closure;return{pointerEvents:!pressed.get()?'none':'none'};}" };
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/IncomingRequestRowActions.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/IncomingRequestRowActions.tsx");
 
 export const IncomingRequestRowActions = function IncomingRequestRowActions(user) {
   let acceptRequestAccessibilityLabel;
   let ignoreRequestAccessibilityLabel;
   user = user.user;
-  const arg1 = user;
   const applicationId = user.applicationId;
-  const importDefault = applicationId;
   const pressed = user.pressed;
-  const dependencyMap = pressed;
   const onAcceptIncomingRequest = user.onAcceptIncomingRequest;
-  const React = onAcceptIncomingRequest;
   const onDeclineIncomingRequest = user.onDeclineIncomingRequest;
-  const View = onDeclineIncomingRequest;
   const animate = user.animate;
   ({ acceptRequestAccessibilityLabel, ignoreRequestAccessibilityLabel } = user);
-  let obj = arg1(dependencyMap[4]);
+  let obj = user(pressed[4]);
   const sharedValue = obj.useSharedValue(0);
-  let obj1 = arg1(dependencyMap[4]);
+  let obj1 = user(pressed[4]);
   const sharedValue1 = obj1.useSharedValue(-1);
-  let callback = sharedValue1;
-  let obj2 = arg1(dependencyMap[4]);
+  let obj2 = user(pressed[4]);
   const sharedValue2 = obj2.useSharedValue(-1);
-  let closure_8 = sharedValue2;
-  let obj3 = arg1(dependencyMap[4]);
+  let obj3 = user(pressed[4]);
   const sharedValue3 = obj3.useSharedValue(-1);
-  let closure_9 = sharedValue3;
-  let obj4 = arg1(dependencyMap[4]);
+  let obj4 = user(pressed[4]);
   class E {
     constructor() {
-      obj = {};
+      obj = { position: "absolute", right: 0, flexDirection: "row" };
       if (animate) {
         tmp2 = user;
         tmp3 = pressed;
@@ -78,12 +74,12 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
       return obj;
     }
   }
-  obj = { animate, pressed, withTiming: arg1(dependencyMap[5]).withTiming };
+  obj = { animate, pressed, withTiming: user(pressed[5]).withTiming };
   E.__closure = obj;
   E.__workletHash = 1291516991185;
-  E.__initData = closure_8;
+  E.__initData = sharedValue2;
   const animatedStyle = obj4.useAnimatedStyle(E);
-  let obj6 = arg1(dependencyMap[4]);
+  let obj6 = user(pressed[4]);
   const fn = function q() {
     let value = sharedValue1.get();
     value = sharedValue.get();
@@ -134,12 +130,12 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
     obj.pointerEvents = str;
     return obj;
   };
-  obj = { buttonWidth: sharedValue1, buttonOffsetX: sharedValue, pressed, animate, withTiming: arg1(dependencyMap[5]).withTiming };
+  obj = { buttonWidth: sharedValue1, buttonOffsetX: sharedValue, pressed, animate, withTiming: user(pressed[5]).withTiming };
   fn.__closure = obj;
   fn.__workletHash = 2207673076655;
-  fn.__initData = closure_9;
+  fn.__initData = sharedValue3;
   const animatedStyle1 = obj6.useAnimatedStyle(fn);
-  let obj8 = arg1(dependencyMap[4]);
+  let obj8 = user(pressed[4]);
   const fn2 = function x() {
     let obj = {};
     obj = { translateX: sharedValue2.get() / 2 };
@@ -153,7 +149,7 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
   fn2.__workletHash = 4308223742756;
   fn2.__initData = closure_10;
   const animatedStyle2 = obj8.useAnimatedStyle(fn2);
-  let obj9 = arg1(dependencyMap[4]);
+  let obj9 = user(pressed[4]);
   class A {
     constructor() {
       obj = {};
@@ -179,12 +175,12 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
       return obj;
     }
   }
-  obj1 = { withDelay: arg1(dependencyMap[4]).withDelay, withRepeat: arg1(dependencyMap[4]).withRepeat, withTiming: arg1(dependencyMap[5]).withTiming, pressed, Easing: arg1(dependencyMap[4]).Easing, waveWidth: sharedValue2, waveHeight: sharedValue3 };
+  obj1 = { withDelay: user(pressed[4]).withDelay, withRepeat: user(pressed[4]).withRepeat, withTiming: user(pressed[5]).withTiming, pressed, Easing: user(pressed[4]).Easing, waveWidth: sharedValue2, waveHeight: sharedValue3 };
   A.__closure = obj1;
   A.__workletHash = 6870822621980;
   A.__initData = closure_11;
   const animatedStyle3 = obj9.useAnimatedStyle(A);
-  const tmp = callback();
+  const tmp = sharedValue1();
   class X {
     constructor() {
       obj = {};
@@ -196,10 +192,10 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
   X.__closure = { pressed };
   X.__workletHash = 5804402563280;
   X.__initData = closure_12;
-  const animatedProps = arg1(dependencyMap[4]).useAnimatedProps(X);
-  const items = [applicationId, onAcceptIncomingRequest, pressed, user];
+  const animatedProps = user(pressed[4]).useAnimatedProps(X);
+  let items = [applicationId, onAcceptIncomingRequest, pressed, user];
   const items1 = [applicationId, onDeclineIncomingRequest, user];
-  callback = React.useCallback(() => {
+  const callback = onAcceptIncomingRequest.useCallback(() => {
     const result = pressed.set(true);
     let obj = user(pressed[6]);
     obj = { userId: user.id, applicationId };
@@ -207,14 +203,14 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
     onAcceptIncomingRequest(user.id, applicationId);
   }, items);
   const items2 = [user];
-  const callback1 = React.useCallback(() => {
+  const callback1 = onAcceptIncomingRequest.useCallback(() => {
     onDeclineIncomingRequest(user.id, applicationId);
     let obj = user(pressed[6]);
     obj = { userId: user.id, applicationId };
     const result = obj.dismissIncomingRequest(obj);
   }, items1);
   obj2 = { style: tmp.container };
-  const callback2 = React.useCallback(() => {
+  const callback2 = onAcceptIncomingRequest.useCallback(() => {
     user(pressed[6]).sendWave(user.id, true, "Incoming Friend Request");
   }, items2);
   obj3 = {
@@ -223,14 +219,14 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
     },
     style: animatedStyle
   };
-  obj4 = {};
-  const obj5 = { <string:1986169986>: "<string:141706475>", <string:2487833047>: "<string:570425344>", icon: importDefault(dependencyMap[9]), onPress: callback1, accessibilityLabel: ignoreRequestAccessibilityLabel, maxFontSizeMultiplier: 2 };
-  const items3 = [animate(arg1(dependencyMap[8]).IconButton, obj5), ];
-  obj6 = { <string:1986169986>: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", <string:2487833047>: null, icon: importDefault(dependencyMap[10]), onPress: callback, accessibilityLabel: acceptRequestAccessibilityLabel, maxFontSizeMultiplier: 2 };
-  items3[1] = animate(arg1(dependencyMap[8]).IconButton, obj6);
+  obj4 = { direction: "horizontal", spacing: 8 };
+  let obj5 = { size: "sm", variant: "tertiary", icon: applicationId(pressed[9]), onPress: callback1, accessibilityLabel: ignoreRequestAccessibilityLabel, maxFontSizeMultiplier: 2 };
+  const items3 = [animate(user(pressed[8]).IconButton, obj5), ];
+  obj6 = { size: "sm", variant: "active", icon: applicationId(pressed[10]), onPress: callback, accessibilityLabel: acceptRequestAccessibilityLabel, maxFontSizeMultiplier: 2 };
+  items3[1] = animate(user(pressed[8]).IconButton, obj6);
   obj4.children = items3;
-  obj3.children = sharedValue(arg1(dependencyMap[7]).Stack, obj4);
-  const items4 = [animate(importDefault(dependencyMap[4]).View, obj3), ];
+  obj3.children = sharedValue(user(pressed[7]).Stack, obj4);
+  const items4 = [animate(applicationId(pressed[4]).View, obj3), ];
   const obj7 = {
     style: animatedStyle1,
     onLayout(nativeEvent) {
@@ -238,10 +234,10 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
     }
   };
   const merged = Object.assign(animatedProps);
-  obj8 = {};
-  const intl = arg1(dependencyMap[12]).intl;
-  obj8.text = intl.string(arg1(dependencyMap[12]).t.n8nU4W);
-  obj9 = { isNewWebImplementationEnabled: "<string:2252538112>", WIDGET_ENABLED: "<string:2231370395>", EMOJI_PICKER_EMOJI_CLICKED: "<string:2617246363>" };
+  obj8 = { size: "sm", variant: "secondary" };
+  const intl = user(pressed[12]).intl;
+  obj8.text = intl.string(user(pressed[12]).t.n8nU4W);
+  obj9 = { style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   let tmp18 = null;
   if (animate) {
     tmp18 = animatedStyle2;
@@ -257,12 +253,12 @@ export const IncomingRequestRowActions = function IncomingRequestRowActions(user
     const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
     const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
   };
-  obj10.children = animate(arg1(dependencyMap[13]).Text, { "Bool(false)": "f508ffa8fec7b43f0c7e1765658cd955", "Bool(false)": "ic_message", "Bool(false)": "png" });
-  obj9.children = animate(importDefault(dependencyMap[4]).View, obj10);
-  obj8.icon = animate(importDefault(dependencyMap[4]).View, obj9);
+  obj10.children = animate(user(pressed[13]).Text, { maxFontSizeMultiplier: 2, variant: "text-sm/normal", children: "\u{1F44B}" });
+  obj9.children = animate(applicationId(pressed[4]).View, obj10);
+  obj8.icon = animate(applicationId(pressed[4]).View, obj9);
   obj8.onPress = callback2;
-  obj7["children"] = animate(arg1(dependencyMap[11]).Button, obj8);
-  items4[1] = animate(importDefault(dependencyMap[4]).View, obj7);
+  obj7["children"] = animate(user(pressed[11]).Button, obj8);
+  items4[1] = animate(applicationId(pressed[4]).View, obj7);
   obj2.children = items4;
-  return sharedValue(View, obj2);
+  return sharedValue(onDeclineIncomingRequest, obj2);
 };

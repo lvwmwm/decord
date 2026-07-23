@@ -1,53 +1,44 @@
 // Module ID: 1111
-// Function ID: 12663
+// Function ID: 12664
 // Name: init
-// Dependencies: []
+// Dependencies: [1112, 1113, 1114, 1117, 1119, 1120, 1121, 1122, 1123, 1127, 1000]
 
 // Module 1111 (init)
+import callResult from "keys";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let callResult = hasOwnProperty.call(require(dependencyMap[10]), "__proto__");
 if (callResult) {
-  const _Object = Object;
+  let _Object = Object;
   callResult = !hasOwnProperty2.call(exports, "__proto__");
 }
 if (callResult) {
   const _Object2 = Object;
-  const obj = { enumerable: true, value: require(dependencyMap[10]).__proto__ };
+  const obj = { enumerable: true, value: require("keys").__proto__ };
   Object.defineProperty(exports, "__proto__", obj);
 }
-const keys = Object.keys(require(dependencyMap[10]));
-const item = keys.forEach((arg0) => {
-  let callResult = "default" === arg0;
-  if (!callResult) {
-    const _Object = Object;
-    callResult = hasOwnProperty.call(exports, arg0);
-  }
-  if (!callResult) {
-    exports[arg0] = require(dependencyMap[10])[arg0];
-  }
-});
 
-export const init = require(dependencyMap[0]).init;
-export const captureReactException = require(dependencyMap[1]).captureReactException;
-export const reactErrorHandler = require(dependencyMap[1]).reactErrorHandler;
-export const Profiler = require(dependencyMap[2]).Profiler;
-export const useProfiler = require(dependencyMap[2]).useProfiler;
-export const withProfiler = require(dependencyMap[2]).withProfiler;
-export const ErrorBoundary = require(dependencyMap[3]).ErrorBoundary;
-export const withErrorBoundary = require(dependencyMap[3]).withErrorBoundary;
-export const createReduxEnhancer = require(dependencyMap[4]).createReduxEnhancer;
-export const reactRouterV3BrowserTracingIntegration = require(dependencyMap[5]).reactRouterV3BrowserTracingIntegration;
-export const tanstackRouterBrowserTracingIntegration = require(dependencyMap[6]).tanstackRouterBrowserTracingIntegration;
-export const reactRouterV4BrowserTracingIntegration = require(dependencyMap[7]).reactRouterV4BrowserTracingIntegration;
-export const reactRouterV5BrowserTracingIntegration = require(dependencyMap[7]).reactRouterV5BrowserTracingIntegration;
-export const withSentryRouting = require(dependencyMap[7]).withSentryRouting;
-export const reactRouterV6BrowserTracingIntegration = require(dependencyMap[8]).reactRouterV6BrowserTracingIntegration;
-export const withSentryReactRouterV6Routing = require(dependencyMap[8]).withSentryReactRouterV6Routing;
-export const wrapCreateBrowserRouterV6 = require(dependencyMap[8]).wrapCreateBrowserRouterV6;
-export const wrapCreateMemoryRouterV6 = require(dependencyMap[8]).wrapCreateMemoryRouterV6;
-export const wrapUseRoutesV6 = require(dependencyMap[8]).wrapUseRoutesV6;
-export const reactRouterV7BrowserTracingIntegration = require(dependencyMap[9]).reactRouterV7BrowserTracingIntegration;
-export const withSentryReactRouterV7Routing = require(dependencyMap[9]).withSentryReactRouterV7Routing;
-export const wrapCreateBrowserRouterV7 = require(dependencyMap[9]).wrapCreateBrowserRouterV7;
-export const wrapCreateMemoryRouterV7 = require(dependencyMap[9]).wrapCreateMemoryRouterV7;
-export const wrapUseRoutesV7 = require(dependencyMap[9]).wrapUseRoutesV7;
+export const init = require("init").init;
+export const captureReactException = require("isAtLeastReact17").captureReactException;
+export const reactErrorHandler = require("isAtLeastReact17").reactErrorHandler;
+export const Profiler = require("_isNativeReflectConstruct").Profiler;
+export const useProfiler = require("_isNativeReflectConstruct").useProfiler;
+export const withProfiler = require("_isNativeReflectConstruct").withProfiler;
+export const ErrorBoundary = require("_isNativeReflectConstruct").ErrorBoundary;
+export const withErrorBoundary = require("_isNativeReflectConstruct").withErrorBoundary;
+export const createReduxEnhancer = require("createReduxEnhancer").createReduxEnhancer;
+export const reactRouterV3BrowserTracingIntegration = require("normalizeTransactionName").reactRouterV3BrowserTracingIntegration;
+export const tanstackRouterBrowserTracingIntegration = require("routeMatchToParamSpanAttributes").tanstackRouterBrowserTracingIntegration;
+export const reactRouterV4BrowserTracingIntegration = require("instrumentReactRouter").reactRouterV4BrowserTracingIntegration;
+export const reactRouterV5BrowserTracingIntegration = require("instrumentReactRouter").reactRouterV5BrowserTracingIntegration;
+export const withSentryRouting = require("instrumentReactRouter").withSentryRouting;
+export const reactRouterV6BrowserTracingIntegration = require("reactRouterV6BrowserTracingIntegration").reactRouterV6BrowserTracingIntegration;
+export const withSentryReactRouterV6Routing = require("reactRouterV6BrowserTracingIntegration").withSentryReactRouterV6Routing;
+export const wrapCreateBrowserRouterV6 = require("reactRouterV6BrowserTracingIntegration").wrapCreateBrowserRouterV6;
+export const wrapCreateMemoryRouterV6 = require("reactRouterV6BrowserTracingIntegration").wrapCreateMemoryRouterV6;
+export const wrapUseRoutesV6 = require("reactRouterV6BrowserTracingIntegration").wrapUseRoutesV6;
+export const reactRouterV7BrowserTracingIntegration = require("reactRouterV7BrowserTracingIntegration").reactRouterV7BrowserTracingIntegration;
+export const withSentryReactRouterV7Routing = require("reactRouterV7BrowserTracingIntegration").withSentryReactRouterV7Routing;
+export const wrapCreateBrowserRouterV7 = require("reactRouterV7BrowserTracingIntegration").wrapCreateBrowserRouterV7;
+export const wrapCreateMemoryRouterV7 = require("reactRouterV7BrowserTracingIntegration").wrapCreateMemoryRouterV7;
+export const wrapUseRoutesV7 = require("reactRouterV7BrowserTracingIntegration").wrapUseRoutesV7;
+export * from "keys";

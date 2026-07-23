@@ -1,32 +1,34 @@
-// Module ID: 9499
-// Function ID: 74023
+// Module ID: 9506
+// Function ID: 74064
 // Name: getFeedbackModalSadDesaturatedSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 9507, 9508, 9509, 3976, 2]
 // Exports: FeedbackModalSadDesaturated
 
-// Module 9499 (getFeedbackModalSadDesaturatedSource)
+// Module 9506 (getFeedbackModalSadDesaturatedSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getFeedbackModalSadDesaturatedSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useFeedbackModalSadDesaturatedSource() {
-  return getFeedbackModalSadDesaturatedSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getFeedbackModalSadDesaturatedSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/FeedbackModalSadDesaturated.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/FeedbackModalSadDesaturated.tsx");
 
 export { getFeedbackModalSadDesaturatedSource };
 export { useFeedbackModalSadDesaturatedSource };
@@ -34,5 +36,5 @@ export const FeedbackModalSadDesaturated = function FeedbackModalSadDesaturated(
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useFeedbackModalSadDesaturatedSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

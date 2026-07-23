@@ -1,34 +1,33 @@
-// Module ID: 11660
-// Function ID: 90444
-// Dependencies: []
+// Module ID: 11670
+// Function ID: 90493
+// Dependencies: [31, 27, 9313, 33, 4130, 689, 1557, 5160, 1450, 11671, 11672, 11673, 3991, 2]
 
-// Module 11660
-const importAllResult = importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[2]).useChatInputContainerHeight;
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 11670
+import importAllResult from "result";
+import { useChatInputContainerHeight as closure_3 } from "getChatInputContainerHeight";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let obj = {};
 obj = {};
-const merged = Object.assign(arg1(dependencyMap[1]).StyleSheet.absoluteFillObject);
-obj["paddingBottom"] = importDefault(dependencyMap[5]).space.PX_24;
+const merged = Object.assign(require("get ActivityIndicator").StyleSheet.absoluteFillObject);
+obj["paddingBottom"] = require("_createForOfIteratorHelperLoose").space.PX_24;
 obj["flexDirection"] = "column-reverse";
 obj["overflow"] = "hidden";
 obj.placeholder = obj;
-let closure_5 = arg1(dependencyMap[4]).createStyles(obj);
-const obj2 = arg1(dependencyMap[4]);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
-  const tmp2 = callback(screenIndex.screenIndex);
+  let tmp2 = windowVerticalInset(screenIndex.screenIndex);
   const importDefault = tmp2;
-  const height = importDefault(dependencyMap[8])().height;
-  const dependencyMap = height;
-  const rect = importDefault(dependencyMap[6])();
-  const insets = importDefault(dependencyMap[7])({ "Bool(false)": 1766088043, "Bool(false)": 827788593 }).insets;
-  const obj = { containerBottomInset: insets.bottom - rect.bottom, windowVerticalInset: rect.top + insets.bottom };
+  height = importDefault(height[8])().height;
+  const rect = importDefault(height[6])();
+  const insets = importDefault(height[7])({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets;
+  let obj = { containerBottomInset: insets.bottom - rect.bottom, windowVerticalInset: rect.top + insets.bottom };
   const containerBottomInset = obj.containerBottomInset;
-  const windowVerticalInset = obj.windowVerticalInset;
-  const callback = windowVerticalInset;
-  const items = [tmp2, containerBottomInset];
-  const memo = importAllResult.useMemo(() => ({ marginBottom: tmp2 + containerBottomInset }), items);
-  const tmp4 = function useLinesForRowIndexCallback() {
+  windowVerticalInset = obj.windowVerticalInset;
+  let items = [tmp2, containerBottomInset];
+  const memo = containerBottomInset.useMemo(() => ({ marginBottom: closure_0 + containerBottomInset }), items);
+  let tmp4 = (function useLinesForRowIndexCallback() {
     let closure_0 = containerBottomInset.useRef([]);
     return containerBottomInset.useCallback((arg0) => {
       let tmp = ref.current[arg0];
@@ -41,36 +40,36 @@ const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
       }
       return tmp;
     }, []);
-  }();
+  })();
   const jsx = tmp4;
   const items1 = [height, windowVerticalInset, tmp2, tmp4];
-  const tmp = callback2();
-  const children = importAllResult.useMemo(() => {
+  let tmp = callback();
+  const children = containerBottomInset.useMemo(() => {
     let diff;
     const items = [];
     let num = 0;
     let num2 = 0;
     do {
-      let tmp = closure_4;
-      let tmp2 = closure_4(num2);
-      let tmp3 = closure_0;
-      let tmp4 = closure_1;
-      num = num + closure_0(closure_1[10])(tmp2);
-      let tmp5 = closure_4;
+      let tmp = tmp4;
+      let tmp2 = tmp4(num2);
+      let tmp3 = tmp2;
+      tmp4 = height;
+      num = num + tmp2(height[10])(tmp2);
+      let tmp5 = tmp4;
       let obj = { lines: tmp2 };
       let tmp6 = +num2;
       num2 = tmp6 + 1;
-      let arr = items.push(closure_4(closure_0(closure_1[11]), obj, tmp6));
-      let tmp8 = closure_1;
-      let tmp9 = closure_0;
-      let tmp10 = closure_3;
-      diff = closure_1 - closure_0 - closure_3;
+      let arr = items.push(tmp4(tmp2(height[11]), obj, tmp6));
+      let tmp8 = height;
+      let tmp9 = tmp2;
+      let tmp10 = windowVerticalInset;
+      diff = height - tmp2 - windowVerticalInset;
     } while (num < diff);
     return items;
   }, items1);
-  const style = [tmp.placeholder, memo, importDefault(dependencyMap[9])({ -1359411683: null, -106827182: null })];
-  return jsx(importDefault(dependencyMap[12]).View, { style, pointerEvents: "none", children });
+  const style = [tmp.placeholder, memo, importDefault(height[9])({ visible: true, animated: true })];
+  return jsx(importDefault(height[12]).View, { style, pointerEvents: "none", children });
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");
+const result = require("getChatInputContainerHeight").fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");
 
 export default memoResult;

@@ -1,30 +1,32 @@
-// Module ID: 13563
-// Function ID: 102856
+// Module ID: 13677
+// Function ID: 105012
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [5, 33, 1456, 12693, 4472, 3830, 1212, 4475, 2716, 4475, 2]
 // Exports: default
 
-// Module 13563 (SettingsAgeGroupResetAlert)
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13677 (SettingsAgeGroupResetAlert)
+import presentAddedFriendToast from "presentAddedFriendToast";
+import jsxProd from "jsxProd";
 
-({ jsx: closure_4, jsxs: closure_5 } = require("__exportStarResult1"));
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupResetAlert.tsx");
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("useNavigation").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupResetAlert.tsx");
 
 export default function SettingsAgeGroupResetAlert() {
   function _handleConfirm(arg0) {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    const _handleConfirm = obj;
+    const obj = outer1_3(tmp);
     return obj(...arguments);
   }
-  let obj = callback(dependencyMap[2]);
-  const callback = obj.useNavigation();
+  let obj = _require(1456);
+  _require = obj.useNavigation();
   obj = {};
-  const intl = callback(dependencyMap[6]).intl;
-  obj.title = intl.string(_handleConfirm(dependencyMap[8]).bD//cU);
-  const intl2 = callback(dependencyMap[6]).intl;
-  obj.content = intl2.string(_handleConfirm(dependencyMap[8]).FbTAmI);
+  const intl = _require(1212).intl;
+  obj.title = intl.string(_handleConfirm(2716)["bD//cU"]);
+  const intl2 = _require(1212).intl;
+  obj.content = intl2.string(_handleConfirm(2716).FbTAmI);
   obj = {};
   const obj1 = {
     variant: "destructive",
@@ -32,15 +34,15 @@ export default function SettingsAgeGroupResetAlert() {
       return _handleConfirm(...arguments);
     }
   };
-  const intl3 = callback(dependencyMap[6]).intl;
-  obj1.text = intl3.string(_handleConfirm(dependencyMap[8]).V822Mp);
-  const items = [callback2(callback(dependencyMap[7]).AlertActionButton, obj1, "confirm"), ];
+  const intl3 = _require(1212).intl;
+  obj1.text = intl3.string(_handleConfirm(2716).V822Mp);
+  const items = [callback(_require(4475).AlertActionButton, obj1, "confirm"), ];
   const obj2 = { variant: "secondary" };
-  const intl4 = callback(dependencyMap[6]).intl;
-  obj2.text = intl4.string(callback(dependencyMap[6]).t.ETE/oC);
-  items[1] = callback2(callback(dependencyMap[7]).AlertActionButton, obj2, "cancel");
+  const intl4 = _require(1212).intl;
+  obj2.text = intl4.string(_require(1212).t["ETE/oC"]);
+  items[1] = callback(_require(4475).AlertActionButton, obj2, "cancel");
   obj.children = items;
-  obj.actions = callback3(callback(dependencyMap[9]).AlertActions, obj);
-  return callback2(callback(dependencyMap[7]).AlertModal, obj);
+  obj.actions = callback2(_require(4475).AlertActions, obj);
+  return callback(_require(4475).AlertModal, obj);
 };
 export const SETTINGS_AGE_GROUP_RESET_ALERT_ID = "settings-age-group-reset";

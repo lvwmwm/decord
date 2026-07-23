@@ -1,86 +1,90 @@
-// Module ID: 11950
-// Function ID: 92386
+// Module ID: 11962
+// Function ID: 92439
 // Name: AnimatedContainer
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 33, 4130, 689, 4973, 1324, 3976, 5122, 624, 3991, 4131, 4542, 4126, 5085, 2]
 // Exports: default
 
-// Module 11950 (AnimatedContainer)
+// Module 11962 (AnimatedContainer)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import { createElement } from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function AnimatedContainer(scale) {
   let children;
   let shadow;
   scale = scale.scale;
-  const arg1 = scale;
   const translateX = scale.translateX;
-  const importDefault = translateX;
   const translateY = scale.translateY;
-  const dependencyMap = translateY;
   const animateOnMount = scale.animateOnMount;
-  let View;
-  let closure_5;
+  let sharedValue;
+  let sharedValue1;
   let sharedValue2;
   let sharedValue3;
   ({ shadow, children } = scale);
-  const tmp = callback3(importDefault(dependencyMap[7])("GroupAvatar"));
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_5];
+  const tmp = callback3(translateX(translateY[7])("GroupAvatar"));
+  let obj = scale(translateY[10]);
+  let items = [sharedValue1];
   const stateFromStores = obj.useStateFromStores(items, () => sharedValue1.useReducedMotion);
-  const React = stateFromStores;
   let num = 1;
   if (animateOnMount) {
     num = 0;
   }
-  const sharedValue = arg1(dependencyMap[11]).useSharedValue(num);
-  View = sharedValue;
-  const obj2 = arg1(dependencyMap[11]);
+  sharedValue = scale(translateY[11]).useSharedValue(num);
+  const obj2 = scale(translateY[11]);
   let num2 = 0;
   if (!animateOnMount) {
     num2 = translateY;
   }
-  const sharedValue1 = arg1(dependencyMap[11]).useSharedValue(num2);
-  closure_5 = sharedValue1;
-  const obj3 = arg1(dependencyMap[11]);
+  sharedValue1 = scale(translateY[11]).useSharedValue(num2);
+  const obj3 = scale(translateY[11]);
   let num3 = 0;
   if (!animateOnMount) {
     num3 = translateX;
   }
-  sharedValue2 = arg1(dependencyMap[11]).useSharedValue(num3);
-  const obj4 = arg1(dependencyMap[11]);
+  sharedValue2 = scale(translateY[11]).useSharedValue(num3);
+  let obj4 = scale(translateY[11]);
   let result = scale;
   if (animateOnMount) {
     result = scale / 2;
   }
-  sharedValue3 = arg1(dependencyMap[11]).useSharedValue(result);
+  sharedValue3 = scale(translateY[11]).useSharedValue(result);
   const items1 = [sharedValue, sharedValue3, sharedValue1, sharedValue2, scale, translateY, translateX];
-  const effect = React.useEffect(() => {
+  const effect = stateFromStores.useEffect(() => {
     const result = sharedValue.set(1);
     const result1 = sharedValue3.set(scale);
     const result2 = sharedValue1.set(translateY);
     const result3 = sharedValue2.set(translateX);
   }, items1);
-  const obj5 = arg1(dependencyMap[11]);
+  const obj5 = scale(translateY[11]);
   class T {
     constructor() {
       obj = {};
       obj2 = scale(translateY[12]);
-      obj.opacity = obj2.withTiming(closure_4.get());
+      obj.opacity = obj2.withTiming(c4.get());
       obj = {};
-      if (closure_3) {
-        tmp6 = closure_6;
-        value = closure_6.get();
+      if (result) {
+        tmp6 = c6;
+        value = c6.get();
       } else {
         tmp = scale;
         tmp2 = translateY;
         num = 13;
         obj4 = scale(translateY[13]);
-        tmp3 = closure_6;
-        tmp4 = closure_10;
-        value = obj4.withSpring(closure_6.get(), closure_10);
+        tmp3 = c6;
+        tmp4 = outer1_10;
+        value = obj4.withSpring(c6.get(), outer1_10);
       }
       obj.translateX = value;
       items = [, , ];
       items[0] = obj;
       obj1 = {};
-      if (closure_3) {
+      if (result) {
         tmp12 = useStateFromStores;
         value1 = useStateFromStores.get();
       } else {
@@ -89,23 +93,23 @@ function AnimatedContainer(scale) {
         num2 = 13;
         obj6 = scale(translateY[13]);
         tmp9 = useStateFromStores;
-        tmp10 = closure_10;
-        value1 = obj6.withSpring(useStateFromStores.get(), closure_10);
+        tmp10 = outer1_10;
+        value1 = obj6.withSpring(useStateFromStores.get(), outer1_10);
       }
       obj1.translateY = value1;
       items[1] = obj1;
       obj2 = {};
-      if (closure_3) {
-        tmp18 = closure_7;
-        value2 = closure_7.get();
+      if (result) {
+        tmp18 = c7;
+        value2 = c7.get();
       } else {
         tmp13 = scale;
         tmp14 = translateY;
         num3 = 13;
         obj8 = scale(translateY[13]);
-        tmp15 = closure_7;
-        tmp16 = closure_9;
-        value2 = obj8.withSpring(closure_7.get(), closure_9);
+        tmp15 = c7;
+        tmp16 = outer1_9;
+        value2 = obj8.withSpring(c7.get(), outer1_9);
       }
       obj2.scale = value2;
       items[2] = obj2;
@@ -113,11 +117,11 @@ function AnimatedContainer(scale) {
       return obj;
     }
   }
-  obj = { withTiming: arg1(dependencyMap[12]).withTiming, opacityAnimation: sharedValue, useReducedMotion: stateFromStores, translateXAnimation: sharedValue2, withSpring: arg1(dependencyMap[13]).withSpring, SPRING_OPTIONS_POSITION: closure_10, translateYAnimation: sharedValue1, scaleAnimation: sharedValue3, SPRING_OPTIONS_SCALE: closure_9 };
+  obj = { withTiming: scale(translateY[12]).withTiming, opacityAnimation: sharedValue, useReducedMotion: stateFromStores, translateXAnimation: sharedValue2, withSpring: scale(translateY[13]).withSpring, SPRING_OPTIONS_POSITION: closure_10, translateYAnimation: sharedValue1, scaleAnimation: sharedValue3, SPRING_OPTIONS_SCALE: closure_9 };
   T.__closure = obj;
   T.__workletHash = 8800301056148;
   T.__initData = closure_13;
-  const animatedStyle = arg1(dependencyMap[11]).useAnimatedStyle(T);
+  const animatedStyle = scale(translateY[11]).useAnimatedStyle(T);
   obj = {};
   const items2 = [tmp.avatarContainer, animatedStyle, ];
   shadow = undefined;
@@ -127,22 +131,20 @@ function AnimatedContainer(scale) {
   items2[2] = shadow;
   obj.style = items2;
   obj.children = children;
-  return sharedValue2(importDefault(dependencyMap[11]).View, obj);
+  return sharedValue2(translateX(translateY[11]).View, obj);
 }
 function GroupMemberCount(count) {
-  const tmp = callback3(importDefault(dependencyMap[7])("GroupAvatar"));
+  const tmp = callback3(importDefault(1324)("GroupAvatar"));
   let obj = { style: tmp.avatarWrapper };
-  obj = { style: tmp.overflowCount, children: callback2(arg1(dependencyMap[14]).Text, { variant: "text-sm/semibold", children: items }) };
-  const items = [null, count.count];
+  obj = { style: tmp.overflowCount, children: callback2(require(4126) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
+  items = ["+", count.count];
   obj.children = callback(View, obj);
   return callback(View, obj);
 }
 function GroupMemberAvatar(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const user = guildId.user;
-  const importDefault = user;
-  const tmp = callback3(importDefault(dependencyMap[7])("GroupAvatar"));
+  const tmp = callback3(user(1324)("GroupAvatar"));
   const items = [guildId, user];
   const memo = React.useMemo(() => {
     let avatarSource;
@@ -155,30 +157,25 @@ function GroupMemberAvatar(guildId) {
   if (null != memo) {
     let obj = { style: tmp.avatarWrapper };
     obj = { style: tmp.avatar, source: memo };
-    obj.children = callback(importDefault(dependencyMap[15]), obj);
+    obj.children = callback(user(5085), obj);
     tmp3 = callback(View, obj);
   }
   return tmp3;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-const createElement = arg1(dependencyMap[0]).createElement;
-let closure_9 = { "Null": 1, "Null": "last_impression_time" };
-let closure_10 = { "Null": 1, "Null": "last_impression_time" };
-const tmp2 = arg1(dependencyMap[3]);
-let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_9 = { damping: 30, stiffness: 400 };
+let closure_10 = { damping: 30, stiffness: 400 };
+let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = { groupContainer: { position: "relative" } };
-  obj = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
+  obj = { borderRadius: importDefault(689).radii.sm };
   let BLACK;
   if (!arg0) {
-    BLACK = importDefault(dependencyMap[5]).colors.BLACK;
+    BLACK = importDefault(689).colors.BLACK;
   }
   obj.shadowColor = BLACK;
   obj = undefined;
   if (!arg0) {
-    obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
+    obj = { width: 0, height: 0 };
   }
   obj.shadowOffset = obj;
   obj.shadowRadius = 5;
@@ -188,14 +185,14 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   const obj1 = {};
   let prop;
   if (!arg0) {
-    prop = importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT;
+    prop = importDefault(689).colors.CARD_BACKGROUND_DEFAULT;
   }
   obj1.backgroundColor = prop;
   obj.shadowContainerBackground = obj1;
   const obj2 = {};
   let WHITE;
   if (!arg0) {
-    WHITE = importDefault(dependencyMap[5]).colors.WHITE;
+    WHITE = importDefault(689).colors.WHITE;
   }
   obj2.backgroundColor = WHITE;
   obj2.opacity = 0.4;
@@ -203,113 +200,109 @@ let closure_11 = arg1(dependencyMap[4]).createStyles((arg0) => {
   const obj3 = {};
   let WHITE1;
   if (!arg0) {
-    WHITE1 = importDefault(dependencyMap[5]).colors.WHITE;
+    WHITE1 = importDefault(689).colors.WHITE;
   }
   obj3.backgroundColor = WHITE1;
   obj3.opacity = 0.15;
   obj.shadowContainerBackgroundDark = obj3;
-  const obj4 = { width: importDefault(dependencyMap[5]).modules.mobile.GROUP_AVATAR_SIZE, height: importDefault(dependencyMap[5]).modules.mobile.GROUP_AVATAR_SIZE, overflow: "hidden", borderRadius: importDefault(dependencyMap[5]).radii.sm };
+  const obj4 = { width: importDefault(689).modules.mobile.GROUP_AVATAR_SIZE, height: importDefault(689).modules.mobile.GROUP_AVATAR_SIZE, overflow: "hidden", borderRadius: importDefault(689).radii.sm };
   let prop1;
   if (!arg0) {
-    prop1 = importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT;
+    prop1 = importDefault(689).colors.CARD_BACKGROUND_DEFAULT;
   }
   obj4.backgroundColor = prop1;
   obj.gradientContainer = obj4;
-  const obj5 = { playerState: "center", onDataReceived: -24, baseURL: null, injectedJavaScript: 1, panGestureConfig: "Malaysia" };
+  const obj5 = { position: "absolute", left: 0, top: 0, right: 0, bottom: 0 };
   let prop2;
   if (!arg0) {
-    prop2 = importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE;
+    prop2 = importDefault(689).colors.BACKGROUND_MOD_SUBTLE;
   }
   obj5.backgroundColor = prop2;
   obj.gradientDimOverlay = obj5;
-  const obj6 = { width: importDefault(dependencyMap[5]).modules.mobile.GROUP_AVATAR_SIZE, height: importDefault(dependencyMap[5]).modules.mobile.GROUP_AVATAR_SIZE, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderWidth: 1 };
+  const obj6 = { width: importDefault(689).modules.mobile.GROUP_AVATAR_SIZE, height: importDefault(689).modules.mobile.GROUP_AVATAR_SIZE, borderRadius: importDefault(689).radii.sm, borderWidth: 1 };
   let BORDER_SUBTLE;
   if (!arg0) {
-    BORDER_SUBTLE = importDefault(dependencyMap[5]).colors.BORDER_SUBTLE;
+    BORDER_SUBTLE = importDefault(689).colors.BORDER_SUBTLE;
   }
   obj6.borderColor = BORDER_SUBTLE;
   obj6.position = "absolute";
   obj.gradientImageBorder = obj6;
-  obj.avatarContainer = {};
+  obj.avatarContainer = { position: "absolute", top: "50%", left: "50%", width: 38, height: 38, marginTop: -19, marginLeft: -19 };
   const obj7 = {};
   let BLACK1;
   if (!arg0) {
-    BLACK1 = importDefault(dependencyMap[5]).colors.BLACK;
+    BLACK1 = importDefault(689).colors.BLACK;
   }
   obj7.shadowColor = BLACK1;
   let DARK_03_LIGHT_02;
   if (!arg0) {
-    DARK_03_LIGHT_02 = arg1(dependencyMap[6]).DARK_03_LIGHT_02;
+    DARK_03_LIGHT_02 = require(4973) /* result */.DARK_03_LIGHT_02;
   }
   obj7.shadowOpacity = DARK_03_LIGHT_02;
   let obj8;
   if (!arg0) {
-    obj8 = { "Null": 2, "Null": "text-sm/semibold" };
+    obj8 = { width: 0, height: 3 };
   }
   obj7.shadowOffset = obj8;
   obj7.shadowRadius = 2;
   obj.shadow = obj7;
-  obj.avatar = { y: true, isArray: "/assets/design/components/Icon/native/redesign/generated/images", createStyles: 24, push: 24 };
-  const obj9 = {};
+  obj.avatar = { width: 32, height: 32, position: "absolute", borderRadius: 16 };
+  const obj9 = { position: "absolute", width: 38, height: 38, justifyContent: "center", alignItems: "center", borderRadius: 19 };
   let prop3;
   if (!arg0) {
-    prop3 = importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER;
+    prop3 = importDefault(689).colors.BACKGROUND_BASE_LOWER;
   }
   obj9.backgroundColor = prop3;
   obj.avatarWrapper = obj9;
-  const obj10 = {};
-  const colors = importDefault(dependencyMap[5]).colors;
+  const obj10 = { width: 38, height: 38, position: "absolute", borderRadius: 19, backgroundColor: null, display: "flex", alignItems: "center", justifyContent: "center" };
+  const colors = importDefault(689).colors;
   obj10.backgroundColor = arg0 ? colors.BACKGROUND_MOD_SUBTLE : colors.BACKGROUND_BASE_LOWER;
   obj.overflowCount = obj10;
   return obj;
 });
-const items = [{}, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }];
-const items1 = [items, , , ];
-const items2 = [{}, { "Bool(false)": 1900038762, "Bool(false)": 3, "Bool(false)": 46199617 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }];
+let items = [{ translateY: 0, translateX: 0, scale: 1 }, { translateY: 0, translateX: 0, scale: 0 }, { translateY: 0, translateX: 0, scale: 0 }, { translateY: 0, translateX: 0, scale: 0 }];
+let items1 = [items, , , ];
+let items2 = [{ translateY: -14, translateX: -14, scale: 0.75 }, { translateY: 12, translateX: 12, scale: 0.875 }, { translateY: 0, translateX: 0, scale: 0 }, { translateY: 0, translateX: 0, scale: 0 }];
 items1[1] = items2;
-const items3 = [{ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, { "Bool(false)": "ThreadMinusIcon", "Bool(false)": "png", "Bool(false)": true }, { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 }];
+const items3 = [{ translateY: -4, translateX: 16, scale: 0.75 }, { translateY: 14, translateX: -14, scale: 0.875 }, { translateY: -18, translateX: -12, scale: 0.625 }, { translateY: 0, translateX: 0, scale: 0 }];
 items1[2] = items3;
-const items4 = [{}, { "Bool(false)": "<string:1912602975>", "Bool(false)": "height", "Bool(false)": "height" }, {}, { "Bool(false)": "cursorHead", "Bool(false)": "fi", "Bool(false)": "paddingStart" }];
+const items4 = [{ translateY: -14, translateX: -14, scale: 0.875 }, { translateY: 14, translateX: 14, scale: 0.875 }, { translateY: -18, translateX: 18, scale: 0.625 }, { translateY: 18, translateX: -18, scale: 0.625 }];
 items1[3] = items4;
 let closure_13 = { code: "function GroupAvatarTsx1(){const{withTiming,opacityAnimation,useReducedMotion,translateXAnimation,withSpring,SPRING_OPTIONS_POSITION,translateYAnimation,scaleAnimation,SPRING_OPTIONS_SCALE}=this.__closure;return{opacity:withTiming(opacityAnimation.get()),transform:[{translateX:useReducedMotion?translateXAnimation.get():withSpring(translateXAnimation.get(),SPRING_OPTIONS_POSITION)},{translateY:useReducedMotion?translateYAnimation.get():withSpring(translateYAnimation.get(),SPRING_OPTIONS_POSITION)},{scale:useReducedMotion?scaleAnimation.get():withSpring(scaleAnimation.get(),SPRING_OPTIONS_SCALE)}]};}" };
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/GroupAvatar.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/GroupAvatar.tsx");
 
 export default function GroupAvatar(users) {
   let primaryColor;
   let theme;
   users = users.users;
-  const arg1 = users;
-  const importDefault = users.guildId;
-  let dependencyMap;
+  const guildId = users.guildId;
+  let ref;
   let React;
-  let View;
-  let closure_5;
+  let c4;
+  let num;
   let callback;
-  const tmp = callback3(importDefault(dependencyMap[7])("GroupAvatar"));
-  let obj = arg1(dependencyMap[8]);
+  const tmp = callback3(guildId(ref[7])("GroupAvatar"));
+  let obj = users(ref[8]);
   const themeContext = obj.useThemeContext();
   ({ primaryColor, theme } = themeContext);
-  let obj1 = arg1(dependencyMap[8]);
+  let obj1 = users(ref[8]);
   let shadowContainerBackground = obj1.isThemeLight(theme) ? tmp.shadowContainerBackgroundLight : tmp.shadowContainerBackgroundDark;
-  const ref = React.useRef(false);
-  dependencyMap = ref;
+  ref = React.useRef(false);
   const effect = React.useEffect(() => {
     ref.current = true;
   }, []);
   React = users.length > 4;
   const diff = users.length - 3;
-  View = diff;
-  let num = 2;
+  c4 = diff;
+  num = 2;
   if (diff >= 10) {
     num = 1;
   }
-  closure_5 = num;
-  callback = importDefault(dependencyMap[9])(ref);
+  callback = guildId(ref[9])(ref);
   obj = { style: tmp.groupContainer };
   obj = {};
   const items = [tmp.shadowContainer, ];
-  const mapped = items1[Math.max(Math, 0, Math.min(Math, closure_12.length - 1, users.length - 1))].map((arg0, arg1) => {
+  const mapped = items1[Math.max(Math, 0, Math.min(Math, items1.length - 1, users.length - 1))].map((arg0, arg1) => {
     if (null == users[arg1]) {
       return null;
     } else {
@@ -318,15 +311,15 @@ export default function GroupAvatar(users) {
       obj["key"] = tmp.id;
       obj["animateOnMount"] = callback;
       obj["shadow"] = users.length >= 2;
-      if (!closure_3) {
+      if (!result) {
         obj = { guildId, user: tmp };
-        let tmp14 = callback(closure_16, obj);
+        let tmp14 = callback(outer1_16, obj);
         tmp2(tmp3, obj, tmp14);
       }
-      obj = { count: diff };
-      tmp14 = callback(closure_15, obj);
-      const tmp2 = closure_8;
-      const tmp3 = closure_14;
+      obj = { count: c4 };
+      tmp14 = callback(outer1_15, obj);
+      tmp2 = outer1_8;
+      tmp3 = outer1_14;
     }
   });
   if (null == primaryColor) {
@@ -338,12 +331,12 @@ export default function GroupAvatar(users) {
   let tmp13 = null == primaryColor;
   if (tmp13) {
     const obj2 = { style: tmp.gradientDimOverlay };
-    tmp13 = callback(View, obj2);
+    tmp13 = callback(c4, obj2);
   }
   obj1.children = tmp13;
-  const items1 = [callback(View, obj1), callback(View, { style: tmp.gradientImageBorder })];
+  items1 = [callback(c4, obj1), callback(c4, { style: tmp.gradientImageBorder })];
   obj.children = items1;
-  const items2 = [closure_7(View, obj), mapped];
+  const items2 = [closure_7(c4, obj), mapped];
   obj.children = items2;
-  return closure_7(View, obj);
+  return closure_7(c4, obj);
 };

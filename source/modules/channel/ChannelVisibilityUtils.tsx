@@ -1,17 +1,18 @@
-// Module ID: 10215
-// Function ID: 78944
+// Module ID: 10227
+// Function ID: 79016
 // Name: isChannelCurrentlyVisible
-// Dependencies: []
+// Dependencies: [5659, 1906, 3947, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 10215 (isChannelCurrentlyVisible)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/channel/ChannelVisibilityUtils.tsx");
+// Module 10227 (isChannelCurrentlyVisible)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/ChannelVisibilityUtils.tsx");
 
 export const isChannelCurrentlyVisible = function isChannelCurrentlyVisible(id) {
-  const channelId = channelId.getChannelId(guildId.getGuildId());
+  channelId = channelId.getChannelId(guildId.getGuildId());
   let tmp2 = channelId === id;
   if (!tmp2) {
     tmp2 = currentSidebarChannelId.getCurrentSidebarChannelId(channelId) === id;

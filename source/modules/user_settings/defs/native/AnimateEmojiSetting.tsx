@@ -1,20 +1,29 @@
-// Module ID: 14136
-// Function ID: 107286
+// Module ID: 14250
+// Function ID: 109442
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 3803, 2]
 
-// Module 14136 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14250 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.iIaOlc);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.iIaOlc);
   },
-  parent: require(dependencyMap[0]).MobileSetting.ACCESSIBILITY,
-  useValue: require(dependencyMap[3]).AnimateEmoji.useSetting,
-  onValueChange: require(dependencyMap[3]).AnimateEmoji.updateSetting
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
+  useValue: require("explicitContentFromProto").AnimateEmoji.useSetting,
+  onValueChange: require("explicitContentFromProto").AnimateEmoji.updateSetting
 });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AnimateEmojiSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.iIaOlc);
+  },
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
+  useValue: require("explicitContentFromProto").AnimateEmoji.useSetting,
+  onValueChange: require("explicitContentFromProto").AnimateEmoji.updateSetting
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/AnimateEmojiSetting.tsx");
 
 export default toggle;

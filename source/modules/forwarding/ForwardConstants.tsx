@@ -1,10 +1,9 @@
-// Module ID: 9868
-// Function ID: 76428
+// Module ID: 9875
+// Function ID: 76469
 // Name: MAX_DESTINATION_COUNT
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 9868 (MAX_DESTINATION_COUNT)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/forwarding/ForwardConstants.tsx");
+// Module 9875 (MAX_DESTINATION_COUNT)
+const result = require("set").fileFinishedImporting("modules/forwarding/ForwardConstants.tsx");
 
 export const MAX_DESTINATION_COUNT = 5;

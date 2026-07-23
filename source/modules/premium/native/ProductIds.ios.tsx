@@ -1,10 +1,12 @@
-// Module ID: 6649
-// Function ID: 51077
+// Module ID: 6654
+// Function ID: 51106
 // Name: SubscriptionPlans
-// Dependencies: []
+// Dependencies: [1851, 6655, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 6649 (SubscriptionPlans)
+// Module 6654 (SubscriptionPlans)
+import GuildFeatures from "GuildFeatures";
+
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID;
@@ -16,14 +18,13 @@ let PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID;
 let PremiumTypes;
 let SubscriptionIntervalTypes;
 let SubscriptionPlans;
-const _module = require(dependencyMap[0]);
-({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = _module);
-let obj = { -1298326025: -1075773439, -291407389: -162463742, -889765512: -868150803, 1632240496: 1912603018, 102585671: 343, -1133158609: 112, 54397491: -1429061119, 1459896930: -1075576831, -576654631: -162463742, -1431393813: -1556016659, -1577797441: 822084072, 1952577354: 0, 1375270225: 1079205888, 2103510466: 7793, 1629071697: 205652224, -268676734: 671088944, -1135415199: 1358955053, -77191457: 1091694070, -1318851380: 125091, 1867404248: 50, -917855159: 1449132032, -170519856: 64, 1763430374: 1103101952, -124014122: 1547829568, 762780617: -369098172, -904660717: 1358955199, 1519127530: 1091694070, -19021228: 125091, -910145435: 20850, 1183891783: 5120, 140609760: -1170079488, 1989983058: 1660944812, -861865111: 1358954997, -321366357: 544402934, -732865438: 637534208, 1359503788: 1375731712 };
-({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID } = _module);
-obj.GENERIC_SUBSCRIPTION = require(dependencyMap[1]).AppleProductIds.GENERIC_SUBSCRIPTION;
-obj.GENERIC_CONSUMABLE = require(dependencyMap[1]).AppleProductIds.GENERIC_CONSUMABLE;
+({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = GuildFeatures);
+let obj = { PREMIUM_MONTH_TIER_1: "premium_month_tier_1.1", PREMIUM_YEAR_TIER_1: "premium_year_tier_1.1", PREMIUM_MONTH_TIER_2: "premium_month_tier_2.1", PREMIUM_YEAR_TIER_2: "premium_year_tier_2.1", PREMIUM_GIFT_MONTH_TIER_0: "premium_month_tier_0", PREMIUM_GIFT_YEAR_TIER_0: "premium_year_tier_0", PREMIUM_GIFT_MONTH_TIER_1: "premium_month_tier_1.2", PREMIUM_GIFT_YEAR_TIER_1: "premium_year_tier_1.2", PREMIUM_GIFT_MONTH_TIER_2: "premium_month_tier_2.2", PREMIUM_GIFT_YEAR_TIER_2: "premium_year_tier_2.2", PREMIUM_TIER_2_MONTHLY: "premium_tier_2_monthly", PREMIUM_TIER_2_YEARLY: "premium_tier_2_yearly", PREMIUM_TIER_1_MONTHLY: "premium_tier_1_monthly", PREMIUM_TIER_1_YEARLY: "premium_tier_1_yearly", PREMIUM_TIER_0_MONTHLY: "premium_tier_0_monthly", PREMIUM_TIER_0_YEARLY: "premium_tier_0_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY: "premium_tier_2_premium_guild_1_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY: "premium_tier_2_premium_guild_1_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_2_MONTHLY: "premium_tier_2_premium_guild_2_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_2_YEARLY: "premium_tier_2_premium_guild_2_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_3_MONTHLY: "premium_tier_2_premium_guild_3_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: "premium_tier_2_premium_guild_3_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_5_MONTHLY: "premium_tier_2_premium_guild_5_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_5_YEARLY: "premium_tier_2_premium_guild_5_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_10_MONTHLY: "premium_tier_2_premium_guild_10_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_10_YEARLY: "premium_tier_2_premium_guild_10_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_13_MONTHLY: "premium_tier_2_premium_guild_13_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_13_YEARLY: "premium_tier_2_premium_guild_13_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_28_MONTHLY: "premium_tier_2_premium_guild_28_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_28_YEARLY: "premium_tier_2_premium_guild_28_yearly", PREMIUM_TIER_1_PREMIUM_GUILD_1_MONTHLY: "premium_tier_1_premium_guild_1_monthly", PREMIUM_TIER_1_PREMIUM_GUILD_1_YEARLY: "premium_tier_1_premium_guild_1_yearly", PREMIUM_GUILD_1_MONTHLY: "premium_guild_1_monthly", PREMIUM_GUILD_2_MONTHLY: "premium_guild_2_monthly", STICKER_PACK_199: "sticker_pack_199", STICKER_PACK_299: "sticker_pack_299" };
+({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID } = GuildFeatures);
+obj.GENERIC_SUBSCRIPTION = require("AppleProductIds").AppleProductIds.GENERIC_SUBSCRIPTION;
+obj.GENERIC_CONSUMABLE = require("AppleProductIds").AppleProductIds.GENERIC_CONSUMABLE;
 const frozen = Object.freeze(obj);
-const items = [require(dependencyMap[1]).AppleProductIds.GENERIC_SUBSCRIPTION, require(dependencyMap[1]).AppleProductIds.GENERIC_CONSUMABLE];
+const items = [require("AppleProductIds").AppleProductIds.GENERIC_SUBSCRIPTION, require("AppleProductIds").AppleProductIds.GENERIC_CONSUMABLE];
 obj = { [SubscriptionPlans.PREMIUM_MONTH_TIER_0]: frozen.PREMIUM_TIER_0_MONTHLY, [SubscriptionPlans.PREMIUM_MONTH_TIER_1]: frozen.PREMIUM_TIER_1_MONTHLY, [SubscriptionPlans.PREMIUM_MONTH_TIER_2]: frozen.PREMIUM_TIER_2_MONTHLY, [SubscriptionPlans.PREMIUM_MONTH_GUILD]: frozen.PREMIUM_GUILD_1_MONTHLY, [SubscriptionPlans.PREMIUM_YEAR_TIER_0]: frozen.PREMIUM_TIER_0_YEARLY, [SubscriptionPlans.PREMIUM_YEAR_TIER_1]: frozen.PREMIUM_TIER_1_YEARLY, [SubscriptionPlans.PREMIUM_YEAR_TIER_2]: frozen.PREMIUM_TIER_2_YEARLY };
 obj = { productId: frozen.PREMIUM_MONTH_TIER_1, interval: SubscriptionIntervalTypes.MONTH, numPremiumGuild: 0, premiumTier: PremiumTypes.TIER_1, basePlanId: SubscriptionPlans.PREMIUM_MONTH_TIER_1, additionalPlans: [], isDeprecated: true };
 const items1 = [{ quantity: 1, planId: SubscriptionPlans.PREMIUM_MONTH_GUILD }];
@@ -45,8 +46,7 @@ const items16 = [{ quantity: 1, planId: SubscriptionPlans.PREMIUM_YEAR_GUILD }];
 const items17 = [{ quantity: 1, planId: SubscriptionPlans.PREMIUM_MONTH_GUILD }];
 const items18 = [{ quantity: 2, planId: SubscriptionPlans.PREMIUM_MONTH_GUILD }];
 const frozen1 = Object.freeze(obj);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/premium/native/ProductIds.ios.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/ProductIds.ios.tsx");
 
 export const ProductIds = frozen;
 export const GenericProductIds = items;

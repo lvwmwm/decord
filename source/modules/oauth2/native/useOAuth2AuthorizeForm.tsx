@@ -1,56 +1,55 @@
-// Module ID: 8945
-// Function ID: 70482
+// Module ID: 8952
+// Function ID: 70523
 // Name: useOAuth2AuthorizeForm
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 3772, 4122, 4153, 4812, 1849, 8953, 653, 33, 4130, 3763, 566, 4528, 3991, 4131, 5465, 8954, 8955, 483, 8956, 507, 491, 8957, 8959, 8961, 8180, 5472, 1184, 8962, 8963, 4324, 8964, 4540, 8965, 4543, 1212, 5586, 4814, 8967, 9008, 8310, 8960, 9013, 9017, 9016, 9018, 9019, 9020, 9022, 9031, 5151, 2]
 // Exports: default
 
-// Module 8945 (useOAuth2AuthorizeForm)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-({ EMOJI_POINTING_DOWN_CODE_POINT: closure_13, OAuth2Steps: closure_14 } = arg1(dependencyMap[9]));
-const tmp2 = arg1(dependencyMap[9]);
-({ AnalyticEvents: closure_15, Endpoints: closure_16 } = arg1(dependencyMap[10]));
-const tmp3 = arg1(dependencyMap[10]);
-({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = arg1(dependencyMap[11]));
-const tmp4 = arg1(dependencyMap[11]);
-let closure_20 = arg1(dependencyMap[12]).createStyles({ loading: {} });
+// Module 8952 (useOAuth2AuthorizeForm)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import convertOAuth2Authorization from "convertOAuth2Authorization";
+import { View } from "getLocationContextServer";
+import createText from "createText";
+import closure_9 from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import OAuth2Steps from "OAuth2Steps";
+import ME from "ME";
+import jsxProd from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+const require = arg1;
+({ EMOJI_POINTING_DOWN_CODE_POINT: closure_13, OAuth2Steps: closure_14 } = OAuth2Steps);
+({ AnalyticEvents: closure_15, Endpoints: closure_16 } = ME);
+({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = jsxProd);
+let closure_20 = _createForOfIteratorHelperLoose.createStyles({ loading: { flex: 1, alignSelf: "center", justifyContent: "center" } });
 let closure_21 = { code: "function useOAuth2AuthorizeFormTsx1(){const{shouldReduceMotion,withSequence,withTiming,Easing,withRepeat}=this.__closure;const TOTAL=500;if(shouldReduceMotion)return{};return{transform:[{translateY:withSequence(withTiming(-5,{duration:TOTAL/2,easing:Easing.inOut(Easing.quad)}),withRepeat(withTiming(5,{duration:TOTAL,easing:Easing.inOut(Easing.quad)}),-1,true))}]};}" };
-const obj = arg1(dependencyMap[12]);
-const result = arg1(dependencyMap[54]).fileFinishedImporting("modules/oauth2/native/useOAuth2AuthorizeForm.tsx");
+let result = require("result").fileFinishedImporting("modules/oauth2/native/useOAuth2AuthorizeForm.tsx");
 
 export default function useOAuth2AuthorizeForm(clientId) {
   let channelId;
   let guildId;
   let integrationType;
   clientId = clientId.clientId;
-  const arg1 = clientId;
   const responseType = clientId.responseType;
-  const importDefault = responseType;
   let redirectUri = clientId.redirectUri;
-  let importAll = redirectUri;
   const codeChallenge = clientId.codeChallenge;
-  const dependencyMap = codeChallenge;
   const codeChallengeMethod = clientId.codeChallengeMethod;
-  let callback = codeChallengeMethod;
   const state = clientId.state;
-  let callback2 = state;
+  let text1 = state;
   const nonce = clientId.nonce;
-  const React = nonce;
   const _prompt = clientId.prompt;
-  const View = _prompt;
-  const scopes = clientId.scopes;
-  let closure_8 = scopes;
+  let scopes = clientId.scopes;
   let permissions = clientId.permissions;
-  let closure_9 = permissions;
   ({ guildId, channelId, integrationType } = clientId);
-  let closure_10 = integrationType;
   let flag = clientId.disableGuildSelect;
   if (flag === undefined) {
     flag = false;
@@ -67,10 +66,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
   if (flag4 === undefined) {
     flag4 = true;
   }
-  callback = clientId.callback;
-  let closure_11 = callback;
+  let callback = clientId.callback;
   const callbackWithoutPost = clientId.callbackWithoutPost;
-  let closure_12 = callbackWithoutPost;
   const dismissOAuthModal = clientId.dismissOAuthModal;
   const disclosures = clientId.disclosures;
   const connectedAccountProvider = clientId.connectedAccountProvider;
@@ -78,28 +75,28 @@ export default function useOAuth2AuthorizeForm(clientId) {
   if (flag5 === undefined) {
     flag5 = false;
   }
-  let callback3;
+  callback = undefined;
   let first;
   let closure_19;
-  let callback4;
+  let first1;
   let closure_21;
   let first2;
   let closure_23;
   let closure_24;
   let guilds;
   let first3;
-  let tmp13;
+  let c27;
   let first4;
-  let tmp18;
+  let c29;
   let first5;
   let closure_31;
   let nsfwAllowed;
   let memo;
-  let tmp25;
+  let c34;
   let first6;
   let closure_36;
   let first7;
-  let tmp31;
+  let c38;
   let stateFromStores2;
   let isScreenReaderEnabled;
   let memo1;
@@ -112,37 +109,36 @@ export default function useOAuth2AuthorizeForm(clientId) {
   let closure_48;
   let closure_49;
   let first11;
-  let tmp69;
+  let c51;
   let first12;
-  let tmp72;
+  let c53;
   callback = undefined;
   let callback1;
   let closure_56;
   let ref;
-  callback2 = undefined;
+  let callback2;
   let memo5;
   let closure_60;
   let AUTHORIZE_SCOPES;
-  callback4 = undefined;
+  let callback4;
   let AUTHORIZE_BOT_PERMISSIONS;
   class Spinner {
     constructor() {
-      obj = { style: clientId.loading, children: clientId(clientId(codeChallenge[39]).ActivityIndicator, {}) };
-      return clientId(prompt, obj);
+      obj = { style: closure_17.loading, children: closure_17(clientId(codeChallenge[39]).ActivityIndicator, {}) };
+      return closure_17(prompt, obj);
     }
   }
-  callback3 = callback4();
-  let name = callback2(React.useState(null), 2);
+  callback = first1();
+  let name = text1(nonce.useState(null), 2);
   first = name[0];
   closure_19 = name[1];
-  const tmp3 = callback2(React.useState(null), 2);
-  const first1 = tmp3[0];
-  callback4 = first1;
+  const tmp3 = text1(nonce.useState(null), 2);
+  first1 = tmp3[0];
   closure_21 = tmp3[1];
-  const tmp5 = callback2(React.useState(null), 2);
+  const tmp5 = text1(nonce.useState(null), 2);
   first2 = tmp5[0];
   closure_23 = tmp5[1];
-  const tmp7 = callback2(React.useState(false), 2);
+  const tmp7 = text1(nonce.useState(false), 2);
   closure_24 = tmp7[1];
   guilds = undefined;
   if (null != first) {
@@ -152,42 +148,42 @@ export default function useOAuth2AuthorizeForm(clientId) {
   if (null != guildId) {
     tmp10 = guildId;
   }
-  const tmp11 = callback2(React.useState(tmp10), 2);
+  const tmp11 = text1(nonce.useState(tmp10), 2);
   first3 = tmp11[0];
-  tmp13 = tmp11[1];
+  c27 = tmp13;
   let tmp15 = null;
   if (null != channelId) {
     tmp15 = channelId;
   }
-  const tmp16 = callback2(React.useState(tmp15), 2);
+  const tmp16 = text1(nonce.useState(tmp15), 2);
   first4 = tmp16[0];
-  tmp18 = tmp16[1];
-  const tmp19 = callback2(React.useState(importAll(dependencyMap[13]).NONE), 2);
+  c29 = tmp18;
+  const tmp19 = text1(nonce.useState(redirectUri(codeChallenge[13]).NONE), 2);
   first5 = tmp19[0];
   closure_31 = tmp19[1];
-  let obj = arg1(dependencyMap[14]);
-  const items = [closure_12];
+  let obj = clientId(codeChallenge[14]);
+  let items = [callbackWithoutPost];
   const stateFromStores = obj.useStateFromStores(items, () => callbackWithoutPost.getCurrentUser());
   nsfwAllowed = undefined;
   if (null != stateFromStores) {
     nsfwAllowed = stateFromStores.nsfwAllowed;
   }
   const items1 = [guilds, first3];
-  memo = React.useMemo(() => {
+  memo = nonce.useMemo(() => {
     let found;
     if (null != guilds) {
-      found = guilds.find((id) => id.id === closure_26);
+      found = guilds.find((id) => id.id === outer1_26);
     }
     return found;
   }, items1);
-  let obj1 = arg1(dependencyMap[14]);
-  const items2 = [closure_11];
+  let obj1 = clientId(codeChallenge[14]);
+  const items2 = [callback];
   const items3 = [connectedAccountProvider];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => {
     let tmp = null;
     if (null != connectedAccountProvider) {
       const accounts = callback.getAccounts();
-      const found = accounts.find((type) => type.type === closure_15);
+      const found = accounts.find((type) => type.type === outer1_15);
       let tmp4 = null;
       if (null != found) {
         tmp4 = found;
@@ -196,23 +192,23 @@ export default function useOAuth2AuthorizeForm(clientId) {
     }
     return tmp;
   }, items3);
-  tmp25 = null == connectedAccountProvider || null != stateFromStores1;
-  const tmp27 = callback2(React.useState(null), 2);
+  c34 = tmp25;
+  const tmp27 = text1(nonce.useState(null), 2);
   first6 = tmp27[0];
   closure_36 = tmp27[1];
-  const tmp29 = callback2(React.useState(false), 2);
+  const tmp29 = text1(nonce.useState(false), 2);
   first7 = tmp29[0];
-  tmp31 = tmp29[1];
-  let obj2 = arg1(dependencyMap[14]);
-  const items4 = [closure_9];
+  c38 = tmp31;
+  let obj2 = clientId(codeChallenge[14]);
+  const items4 = [permissions];
   stateFromStores2 = obj2.useStateFromStores(items4, () => permissions.useReducedMotion);
-  let obj3 = arg1(dependencyMap[15]);
+  let obj3 = clientId(codeChallenge[15]);
   isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
   let num = 16;
-  let obj4 = arg1(dependencyMap[16]);
+  let obj4 = clientId(codeChallenge[16]);
   class X {
     constructor() {
-      if (closure_39) {
+      if (c39) {
         obj = {};
       } else {
         obj = {};
@@ -248,7 +244,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       return obj;
     }
   }
-  obj = { shouldReduceMotion: stateFromStores2, withSequence: arg1(dependencyMap[16]).withSequence, withTiming: arg1(dependencyMap[17]).withTiming, Easing: arg1(dependencyMap[16]).Easing, withRepeat: arg1(dependencyMap[16]).withRepeat };
+  obj = { shouldReduceMotion: stateFromStores2, withSequence: clientId(codeChallenge[16]).withSequence, withTiming: clientId(codeChallenge[17]).withTiming, Easing: clientId(codeChallenge[16]).Easing, withRepeat: clientId(codeChallenge[16]).withRepeat };
   X.__closure = obj;
   X.__workletHash = 1476082137097;
   X.__initData = closure_21;
@@ -258,7 +254,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
     length = scopes.length;
   }
   const items5 = [length, redirectUri, integrationType];
-  memo1 = React.useMemo(() => {
+  memo1 = nonce.useMemo(() => {
     let tmp = null == integrationType;
     if (tmp) {
       let length;
@@ -272,18 +268,18 @@ export default function useOAuth2AuthorizeForm(clientId) {
       tmp = 0 === num2;
     }
     if (tmp) {
-      tmp = null == text;
+      tmp = null == redirectUri;
     }
     return tmp;
   }, items5);
-  const tmp38 = callback2(React.useState(null), 2);
+  const tmp38 = text1(nonce.useState(null), 2);
   first8 = tmp38[0];
   closure_43 = tmp38[1];
   const items6 = [clientId, memo1];
-  const effect = React.useEffect(() => {
+  const effect = nonce.useEffect(() => {
     if (memo1) {
       const application = responseType(codeChallenge[18]).fetchApplication(clientId);
-      application.then((arg0) => callback(closure_10.createFromServer(arg0)));
+      application.then((arg0) => outer1_43(integrationType.createFromServer(arg0)));
       const obj = responseType(codeChallenge[18]);
     }
   }, items6);
@@ -292,14 +288,14 @@ export default function useOAuth2AuthorizeForm(clientId) {
     prop = first8.integrationTypesConfig;
   }
   const items7 = [prop, first6];
-  memo2 = React.useMemo(() => {
+  memo2 = nonce.useMemo(() => {
     let tmp = null;
     if (null != first6) {
       let oauth2InstallParams;
       if (null != first8) {
         const integrationTypesConfig = first8.integrationTypesConfig;
         if (null != integrationTypesConfig) {
-          if (null != integrationTypesConfig[closure_35]) {
+          if (null != integrationTypesConfig[first6]) {
             oauth2InstallParams = tmp6.oauth2InstallParams;
           }
         }
@@ -313,7 +309,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
     scopes1 = memo2.scopes;
   }
   const items8 = [scopes1, scopes, memo1];
-  const memo3 = React.useMemo(() => {
+  const memo3 = nonce.useMemo(() => {
     if (memo1) {
       let scopes;
       if (null != memo2) {
@@ -328,9 +324,9 @@ export default function useOAuth2AuthorizeForm(clientId) {
       items = [];
     }
     const filterScopesResult = obj.filterScopes(items);
-    const clientId = filterScopesResult;
+    clientId = filterScopesResult;
     const OrderedAccountScopes = clientId(codeChallenge[20]).OrderedAccountScopes;
-    obj = { requestedScopes: filterScopesResult, accountScopes: OrderedAccountScopes.filter((arg0) => filterScopesResult.includes(arg0)) };
+    obj = { requestedScopes: filterScopesResult, accountScopes: OrderedAccountScopes.filter((arg0) => closure_0.includes(arg0)) };
     return obj;
   }, items8);
   requestedScopes = memo3.requestedScopes;
@@ -340,7 +336,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
     permissions = memo2.permissions;
   }
   const items9 = [permissions, permissions, memo1];
-  memo4 = React.useMemo(() => {
+  memo4 = nonce.useMemo(() => {
     if (memo1) {
       let permissions;
       if (null != memo2) {
@@ -350,71 +346,69 @@ export default function useOAuth2AuthorizeForm(clientId) {
       if (null != permissions) {
         num2 = permissions;
       }
-      let NONE = text(codeChallenge[21]).deserialize(num2);
-      const obj = text(codeChallenge[21]);
+      let NONE = redirectUri(codeChallenge[21]).deserialize(num2);
+      const obj = redirectUri(codeChallenge[21]);
     } else {
       NONE = permissions;
     }
     if (null == NONE) {
-      NONE = text(codeChallenge[13]).NONE;
+      NONE = redirectUri(codeChallenge[13]).NONE;
     }
     return NONE;
   }, items9);
-  const tmp49 = callback2(React.useState(false), 2);
+  const tmp49 = text1(nonce.useState(false), 2);
   first9 = tmp49[0];
   closure_48 = tmp49[1];
   const items10 = [clientId];
-  const effect1 = React.useEffect(() => {
+  const effect1 = nonce.useEffect(() => {
     const obj = responseType(codeChallenge[22]);
     responseType(codeChallenge[22]).checkIfOAuthRequest(clientId).then(closure_48);
   }, items10);
-  const first10 = callback2(React.useState(null), 2)[0];
+  const first10 = text1(nonce.useState(null), 2)[0];
   let tmp55 = state;
   if (first9) {
-    let obj6 = arg1(dependencyMap[23]);
-    const text = `${obj7.getAPIBaseURL(false)}/v6${closure_16.OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK}`;
-    importAll = text;
+    let obj6 = clientId(codeChallenge[23]);
+    const text = `${obj7.getAPIBaseURL(false)}/v6${flag5.OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK}`;
+    redirectUri = text;
     if (tmp60) {
-      let obj7 = arg1(dependencyMap[24]);
+      obj7 = clientId(codeChallenge[24]);
       tmp54(obj7.v4());
     }
     let tmp64 = state;
     if (null != first10) {
-      let text1 = state;
+      text1 = state;
       if (null == state) {
         text1 = `SA${tmp53}`;
       }
-      callback2 = text1;
       tmp64 = text1;
     }
     tmp55 = tmp64;
     redirectUri = text;
-    const tmp60 = null == state && null == first10;
+    tmp60 = null == state && null == first10;
   }
-  closure_49 = React.useRef(false);
+  closure_49 = nonce.useRef(false);
   let items11 = disclosures;
   if (null == disclosures) {
     items11 = [];
   }
-  const tmp67 = callback2(React.useState(items11), 2);
+  const tmp67 = text1(nonce.useState(items11), 2);
   first11 = tmp67[0];
-  tmp69 = tmp67[1];
-  const tmp70 = callback2(React.useState(null != disclosures), 2);
+  c51 = tmp69;
+  const tmp70 = text1(nonce.useState(null != disclosures), 2);
   first12 = tmp70[0];
-  tmp72 = tmp70[1];
-  const items12 = [clientId, disclosures, tmp69, tmp72];
-  const effect2 = React.useEffect(() => {
+  c53 = tmp72;
+  const items12 = [clientId, disclosures, tmp67[1], tmp70[1]];
+  const effect2 = nonce.useEffect(() => {
     function _doGetDisclosures() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      const _doGetDisclosures = obj;
+      const obj = codeChallengeMethod(tmp);
       return obj(...arguments);
     }
     if (!ref.current) {
       if (null == disclosures) {
-        function doGetDisclosures() {
+        (function doGetDisclosures() {
           return _doGetDisclosures(...arguments);
-        }();
+        })();
       }
     }
   }, items12);
@@ -429,122 +423,125 @@ export default function useOAuth2AuthorizeForm(clientId) {
     }
     prop1 = prop2;
   }
-  let obj8 = arg1(dependencyMap[26]);
-  const result = obj8.isContentClassificationRestricted(prop1, nsfwAllowed);
+  let obj8 = clientId(codeChallenge[26]);
+  let result = obj8.isContentClassificationRestricted(prop1, nsfwAllowed);
   const items13 = [first6, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp55, nonce, memo4, first5, first3, first4, first11, dismissOAuthModal, callback, flag5, , , ];
   let application;
-  const tmp52 = callback2(React.useState(null), 2);
+  const tmp52 = text1(nonce.useState(null), 2);
   if (null != first) {
     application = first.application;
   }
   items13[18] = application;
   items13[19] = memo;
   items13[20] = connectedAccountProvider;
-  callback = React.useCallback(() => {
+  callback = nonce.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = codeChallengeMethod(tmp);
     return function(arg0) {
       return callback(...arguments);
     };
-  }(), items13);
+  })(), items13);
   const items14 = [callback];
-  callback1 = React.useCallback((arg0) => {
-    const clientId = arg0;
-    return new Promise((arg0) => callback({
-      isAuthorized: arg0,
-      overrideSuccessCallback(location) {
-        location(location);
-      }
-    }));
+  callback1 = nonce.useCallback((arg0) => {
+    let closure_0 = arg0;
+    return new Promise((arg0) => {
+      let closure_0 = arg0;
+      return outer1_54({
+        isAuthorized: closure_0,
+        overrideSuccessCallback(location) {
+          callback(location);
+        }
+      });
+    });
   }, items14);
   const items15 = [clientId, first9, responseType, callback, callback1, tmp55, dismissOAuthModal, requestedScopes];
-  closure_56 = React.useCallback((isAuthorized) => {
-    const clientId = isAuthorized;
+  closure_56 = nonce.useCallback((isAuthorized) => {
+    let closure_0 = isAuthorized;
     if (first9) {
       const result = responseType(codeChallenge[22]).showConnectionDisclaimer();
       const obj2 = responseType(codeChallenge[22]);
-      const nextPromise = result.then(() => callback(closure_3[22]).getAccountUrlAndAuthCode());
-      const nextPromise1 = result.then(() => callback(closure_3[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode());
+      const nextPromise1 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, arg0(closure_3[27]).startSamsungAuthorization(arg0, closure_45, closure_1, tmp, closure_5)];
+        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
         return Promise.all(items);
       });
-      const nextPromise2 = result.then(() => callback(closure_3[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise2 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, arg0(closure_3[27]).startSamsungAuthorization(arg0, closure_45, closure_1, tmp, closure_5)];
+        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
         [tmp, ] = arg0;
-        const items = [tmp, callback3(arg0)];
+        const items = [tmp, outer1_55(closure_0)];
         return Promise.all(items);
       });
-      const nextPromise3 = result.then(() => callback(closure_3[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise3 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, arg0(closure_3[27]).startSamsungAuthorization(arg0, closure_45, closure_1, tmp, closure_5)];
+        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
         [tmp, ] = arg0;
-        const items = [tmp, callback3(arg0)];
+        const items = [tmp, outer1_55(closure_0)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        return callback(closure_3[22]).finishSamsungAuthorization(tmp, tmp2, closure_5);
+        return responseType(codeChallenge[22]).finishSamsungAuthorization(tmp, tmp2, outer1_5);
       });
-      result.then(() => callback(closure_3[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, arg0(closure_3[27]).startSamsungAuthorization(arg0, closure_45, closure_1, tmp, closure_5)];
+        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
         [tmp, ] = arg0;
-        const items = [tmp, callback3(arg0)];
+        const items = [tmp, outer1_55(closure_0)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        return callback(closure_3[22]).finishSamsungAuthorization(tmp, tmp2, closure_5);
+        return responseType(codeChallenge[22]).finishSamsungAuthorization(tmp, tmp2, outer1_5);
       }).then(() => {
         let tmp;
-        if (null != callback2) {
-          tmp = callback2();
+        if (null != outer1_13) {
+          tmp = outer1_13();
         }
         return tmp;
       }).catch((arg0) => {
-        callback(closure_3[30]).captureException(arg0);
+        responseType(codeChallenge[30]).captureException(arg0);
       });
-      const nextPromise4 = result.then(() => callback(closure_3[22]).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise4 = result.then(() => responseType(codeChallenge[22]).getAccountUrlAndAuthCode()).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp2, arg0(closure_3[27]).startSamsungAuthorization(arg0, closure_45, closure_1, tmp, closure_5)];
+        const items = [tmp2, clientId(codeChallenge[27]).startSamsungAuthorization(closure_0, outer1_45, outer1_1, tmp, outer1_5)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
         [tmp, ] = arg0;
-        const items = [tmp, callback3(arg0)];
+        const items = [tmp, outer1_55(closure_0)];
         return Promise.all(items);
       }).then((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        return callback(closure_3[22]).finishSamsungAuthorization(tmp, tmp2, closure_5);
+        return responseType(codeChallenge[22]).finishSamsungAuthorization(tmp, tmp2, outer1_5);
       }).then(() => {
         let tmp;
-        if (null != callback2) {
-          tmp = callback2();
+        if (null != outer1_13) {
+          tmp = outer1_13();
         }
         return tmp;
       });
@@ -553,12 +550,12 @@ export default function useOAuth2AuthorizeForm(clientId) {
       callback(obj);
     }
   }, items15);
-  ref = React.useRef(false);
+  ref = nonce.useRef(false);
   // CreateGeneratorClosureLongIndex (0x67)
   const items16 = [clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp55, first6, connectedAccountProvider, _prompt, callback, first12, nsfwAllowed];
-  callback2 = React.useCallback(callback(ref), items16);
+  callback2 = nonce.useCallback(codeChallengeMethod(ref), items16);
   const items17 = [first8, memo1];
-  memo5 = React.useMemo(() => {
+  memo5 = nonce.useMemo(() => {
     if (null != first8) {
       if (memo1) {
         let prop = first8.integrationTypesConfig;
@@ -580,9 +577,9 @@ export default function useOAuth2AuthorizeForm(clientId) {
       return [];
     }
   }, items17);
-  closure_60 = React.useRef(null);
+  closure_60 = nonce.useRef(null);
   const items18 = [clientId, first6, memo4, requestedScopes, first1];
-  const effect3 = React.useEffect(() => {
+  const effect3 = nonce.useEffect(() => {
     if (first1 !== ref2.current) {
       ref2.current = first1;
       let obj = clientId(codeChallenge[33]);
@@ -590,8 +587,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
       obj.trackWithMetadata(connectedAccountProvider.OAUTH2_AUTHORIZE_STEP_VIEWED, obj);
     }
   }, items18);
-  const items19 = [memo5, first8, memo1, integrationType, first1, connectedAccountProvider, tmp25];
-  const effect4 = React.useEffect(() => {
+  const items19 = [memo5, first8, memo1, integrationType, first1, connectedAccountProvider, null == connectedAccountProvider || null != stateFromStores1];
+  const effect4 = nonce.useEffect(() => {
     let tmp = null != first1;
     if (!tmp) {
       let tmp2 = memo1;
@@ -602,7 +599,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
     }
     if (!tmp) {
       if (null != connectedAccountProvider) {
-        if (!tmp25) {
+        if (!c34) {
           callback2(disclosures.CONNECT_ACCOUNT);
         }
       }
@@ -620,8 +617,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }
     }
   }, items19);
-  const items20 = [first1, tmp25, integrationType];
-  const effect5 = React.useEffect(() => {
+  const items20 = [first1, null == connectedAccountProvider || null != stateFromStores1, integrationType];
+  const effect5 = nonce.useEffect(() => {
     if (tmp) {
       if (null != integrationType) {
         let USER_INSTALL = integrationType;
@@ -634,16 +631,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
     }
   }, items20);
   const items21 = [callback2, requestedScopes, memo4, first6, first, first2];
-  const effect6 = React.useEffect(() => {
+  const effect6 = nonce.useEffect(() => {
     if (null != first6) {
       if (null == first) {
         if (null == first2) {
           if (first6 === clientId(codeChallenge[28]).ApplicationIntegrationType.USER_INSTALL) {
-            tmp13(null);
-            tmp18(null);
+            _undefined(null);
+            _undefined2(null);
           }
           const found = requestedScopes.filter((arg0) => {
-            const ValidScopes = callback(closure_3[20]).ValidScopes;
+            const ValidScopes = clientId(codeChallenge[20]).ValidScopes;
             return !ValidScopes.includes(arg0);
           });
           if (0 === requestedScopes.length) {
@@ -659,24 +656,24 @@ export default function useOAuth2AuthorizeForm(clientId) {
             if (obj.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const error2 = new Error("Invalid permission(s) provided.");
-              const tmp18 = callback3(error2);
+              callback3(error2);
             } else {
               callback2();
             }
-            const obj = clientId(codeChallenge[34]);
+            obj = clientId(codeChallenge[34]);
           }
         }
       }
     }
   }, items21);
   const items22 = [isScreenReaderEnabled, first7];
-  callback3 = React.useCallback(() => {
+  const callback3 = nonce.useCallback(() => {
     let tmp = isScreenReaderEnabled;
     if (isScreenReaderEnabled) {
       tmp = !first7;
     }
     if (tmp) {
-      tmp31(true);
+      _undefined3(true);
     }
   }, items22);
   if (first1 === disclosures.AUTHORIZE_SCOPES) {
@@ -686,48 +683,48 @@ export default function useOAuth2AuthorizeForm(clientId) {
       let tmp89 = SELECT_INSTALL_TYPE;
     }
     const items23 = [tmp89, dismissOAuthModal, callback];
-    callback4 = React.useCallback(() => {
+    callback4 = nonce.useCallback(() => {
       if (null != AUTHORIZE_SCOPES) {
         callback2(AUTHORIZE_SCOPES);
       } else {
-        callback({ <string:102650295>: 1766088043, <string:3077027937>: 827788593 });
+        callback({ isAuthorized: false, canceled: true });
         if (null != dismissOAuthModal) {
           dismissOAuthModal();
         }
       }
       return true;
     }, items23);
-    importDefault(dependencyMap[35])(callback4, flag4);
-    const callback5 = React.useCallback((arg0) => {
+    responseType(codeChallenge[35])(callback4, flag4);
+    const callback5 = nonce.useCallback((arg0) => {
       callback5(arg0);
       callback(null);
       callback2(disclosures.AUTHORIZE_SCOPES);
     }, []);
-    const _Error = Error;
+    let _Error = Error;
     if (first2 instanceof Error) {
       obj = {};
-      name = callback3;
-      name = importDefault;
-      name = dependencyMap;
+      name = callback;
+      name = responseType;
+      name = codeChallenge;
       obj1 = { error: first2.message, hideFooter: true };
-      obj.body = callback3(importDefault(dependencyMap[36]), obj1);
+      obj.body = callback(responseType(codeChallenge[36]), obj1);
       obj.goBackOrCancel = callback4;
-      name = arg1;
+      name = clientId;
       obj2 = { size: "lg" };
-      const intl4 = arg1(dependencyMap[38]).intl;
-      obj2.text = intl4.string(arg1(dependencyMap[38]).t.cpT0Cq);
+      const intl4 = clientId(codeChallenge[38]).intl;
+      obj2.text = intl4.string(clientId(codeChallenge[38]).t.cpT0Cq);
       obj2.onPress = function onPress() {
         return callback4();
       };
-      obj.footer = callback3(arg1(dependencyMap[37]).Button, obj2);
+      obj.footer = callback(clientId(codeChallenge[37]).Button, obj2);
       obj.obscured = false;
       return obj;
     } else {
       let str4 = "";
       if (null != connectedAccountProvider) {
-        name = importDefault;
-        name = dependencyMap;
-        let obj9 = importDefault(dependencyMap[40]);
+        name = responseType;
+        name = codeChallenge;
+        let obj9 = responseType(codeChallenge[40]);
         name = obj9.get(connectedAccountProvider);
         name = undefined;
         if (null != name) {
@@ -740,18 +737,18 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }
       if (null === first1) {
         obj3 = {};
-        name = callback3;
-        obj3.body = callback3(Spinner, {});
+        name = callback;
+        obj3.body = callback(Spinner, {});
         obj3.obscured = false;
         return obj3;
       } else {
         name = disclosures;
         if (disclosures.CONNECT_ACCOUNT === first1) {
-          name = callback3;
-          name = importDefault;
-          name = dependencyMap;
+          name = callback;
+          name = responseType;
+          name = codeChallenge;
           obj4 = { clientId, platformType: connectedAccountProvider, platformName: str4 };
-          name = callback3(importDefault(dependencyMap[41]), obj4);
+          name = callback(responseType(codeChallenge[41]), obj4);
           let flag6 = true;
           let items29 = false;
           let flag7 = false;
@@ -761,16 +758,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
           if (disclosures.SELECT_INSTALL_TYPE === first1) {
             if (null == first8) {
               const obj5 = {};
-              name = callback3;
-              obj5.body = callback3(Spinner, {});
+              name = callback;
+              obj5.body = callback(Spinner, {});
               obj5.obscured = false;
               return obj5;
             } else {
-              name = callback3;
-              name = importDefault;
-              name = dependencyMap;
+              name = callback;
+              name = responseType;
+              name = codeChallenge;
               obj6 = { application: first8, onSelect: callback5 };
-              name = callback3(importDefault(dependencyMap[42]), obj6);
+              name = callback(responseType(codeChallenge[42]), obj6);
               flag6 = false;
               items29 = false;
               flag7 = false;
@@ -785,7 +782,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     if (null == first2) {
                       obj7 = {};
                     } else {
-                      const _Error2 = Error;
+                      let _Error2 = Error;
                       obj7 = first2;
                     }
                     if (null != guilds) {
@@ -794,32 +791,32 @@ export default function useOAuth2AuthorizeForm(clientId) {
                         return formatted.localeCompare(name2.name.toLowerCase());
                       });
                     }
-                    name = arg1;
-                    name = dependencyMap;
-                    name = first6 === arg1(dependencyMap[28]).ApplicationIntegrationType.GUILD_INSTALL;
+                    name = clientId;
+                    name = codeChallenge;
+                    name = first6 === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL;
                     if (name) {
-                      name = arg1;
-                      name = dependencyMap;
-                      name = requestedScopes.includes(arg1(dependencyMap[43]).OAuth2Scopes.WEBHOOK_INCOMING);
+                      name = clientId;
+                      name = codeChallenge;
+                      name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.WEBHOOK_INCOMING);
                     }
                     if (!name) {
-                      name = arg1;
-                      name = dependencyMap;
-                      name = first6 === arg1(dependencyMap[28]).ApplicationIntegrationType.GUILD_INSTALL;
+                      name = clientId;
+                      name = codeChallenge;
+                      name = first6 === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL;
                       if (name) {
-                        name = arg1;
-                        name = dependencyMap;
-                        name = requestedScopes.includes(arg1(dependencyMap[43]).OAuth2Scopes.BOT);
+                        name = clientId;
+                        name = codeChallenge;
+                        name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.BOT);
                         if (!name) {
-                          name = arg1;
-                          name = dependencyMap;
-                          name = requestedScopes.includes(arg1(dependencyMap[43]).OAuth2Scopes.APPLICATIONS_COMMANDS);
+                          name = clientId;
+                          name = codeChallenge;
+                          name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.APPLICATIONS_COMMANDS);
                         }
                       }
                     }
-                    name = arg1;
-                    name = dependencyMap;
-                    let obj13 = arg1(dependencyMap[44]);
+                    name = clientId;
+                    name = codeChallenge;
+                    let obj13 = clientId(codeChallenge[44]);
                     obj8 = {};
                     name = null;
                     name = obj13.getIsSocialLayerParentApplication(first.application);
@@ -828,21 +825,21 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     if (null != stateFromStores1) {
                       name = null;
                       if (tmp25) {
-                        name = callback3;
-                        name = arg1;
-                        name = dependencyMap;
+                        name = callback;
+                        name = clientId;
+                        name = codeChallenge;
                         obj9 = { platformType: stateFromStores1.type, platformName: str4, connectedAccount: stateFromStores1, applicationName: first.application.name };
-                        name = callback3(arg1(dependencyMap[41]).ConnectedAccountCard, obj9);
+                        name = callback(clientId(codeChallenge[41]).ConnectedAccountCard, obj9);
                       }
                     }
                     const items24 = [name, , , , ];
-                    name = importDefault;
-                    name = dependencyMap;
-                    name = callback3;
+                    name = responseType;
+                    name = codeChallenge;
+                    name = callback;
                     const obj10 = { application: first.application, accountScopes };
-                    items24[1] = callback3(importDefault(dependencyMap[45]), obj10);
+                    items24[1] = callback(responseType(codeChallenge[45]), obj10);
                     const obj11 = { application: first.application, accountScopes, requestedScopes, integrationType: first6, errors: obj7 };
-                    name = importDefault(dependencyMap[46]);
+                    name = responseType(codeChallenge[46]);
                     if (!flag2) {
                       flag2 = name;
                     }
@@ -851,20 +848,20 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     name = null;
                     if (name) {
                       const obj12 = {};
-                      name = arg1;
-                      name = dependencyMap;
+                      name = clientId;
+                      name = codeChallenge;
                       name = closure_19;
                       name = first;
-                      name = callback3;
-                      const items25 = [callback3(arg1(dependencyMap[47]).AuthorizeFormSeparator, {}), ];
-                      name = importDefault;
+                      name = callback;
+                      const items25 = [callback(clientId(codeChallenge[47]).AuthorizeFormSeparator, {}), ];
+                      name = responseType;
                       obj13 = {};
-                      name = importDefault(dependencyMap[48]);
-                      let items26 = obj7[closure_0(undefined, closure_3[43]).OAuth2Scopes.BOT];
+                      name = responseType(codeChallenge[48]);
+                      let items26 = obj7[clientId(undefined, codeChallenge[43]).OAuth2Scopes.BOT];
                       if (null == items26) {
-                        name = arg1;
-                        name = dependencyMap;
-                        items26 = obj7[closure_0(undefined, closure_3[43]).OAuth2Scopes.APPLICATIONS_COMMANDS];
+                        name = clientId;
+                        name = codeChallenge;
+                        items26 = obj7[clientId(undefined, codeChallenge[43]).OAuth2Scopes.APPLICATIONS_COMMANDS];
                       }
                       if (null == items26) {
                         items26 = [];
@@ -889,16 +886,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     name = null;
                     if (name) {
                       const obj14 = {};
-                      name = arg1;
-                      name = dependencyMap;
+                      name = clientId;
+                      name = codeChallenge;
                       name = closure_19;
                       name = first;
-                      name = callback3;
-                      const items27 = [callback3(arg1(dependencyMap[47]).AuthorizeFormSeparator, {}), ];
-                      name = importDefault;
+                      name = callback;
+                      const items27 = [callback(clientId(codeChallenge[47]).AuthorizeFormSeparator, {}), ];
+                      name = responseType;
                       const obj15 = {};
-                      name = importDefault(dependencyMap[49]);
-                      let items28 = obj7[closure_0(undefined, closure_3[43]).OAuth2Scopes.WEBHOOK_INCOMING];
+                      name = responseType(codeChallenge[49]);
+                      let items28 = obj7[clientId(undefined, codeChallenge[43]).OAuth2Scopes.WEBHOOK_INCOMING];
                       if (null == items28) {
                         items28 = [];
                       }
@@ -912,15 +909,15 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     }
                     items24[4] = name;
                     obj8.children = items24;
-                    name = arg1;
-                    name = dependencyMap;
+                    name = clientId;
+                    name = codeChallenge;
                     name = name(name, obj8);
-                    name = requestedScopes.includes(arg1(dependencyMap[43]).OAuth2Scopes.BOT);
+                    name = requestedScopes.includes(clientId(codeChallenge[43]).OAuth2Scopes.BOT);
                     if (name) {
-                      name = importAll;
-                      name = dependencyMap;
-                      let obj22 = importAll(dependencyMap[21]);
-                      name = !obj22.equals(memo4, importAll(dependencyMap[13]).NONE);
+                      name = redirectUri;
+                      name = codeChallenge;
+                      let obj22 = redirectUri(codeChallenge[21]);
+                      name = !obj22.equals(memo4, redirectUri(codeChallenge[13]).NONE);
                     }
                     name = undefined;
                     if (name) {
@@ -947,8 +944,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 }
               }
               const obj16 = {};
-              name = callback3;
-              obj16.body = callback3(Spinner, {});
+              name = callback;
+              obj16.body = callback(Spinner, {});
               obj16.obscured = false;
               return obj16;
             } else {
@@ -960,16 +957,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
               if (disclosures.AUTHORIZE_BOT_PERMISSIONS === first1) {
                 if (null == first) {
                   const obj17 = {};
-                  name = callback3;
-                  obj17.body = callback3(Spinner, {});
+                  name = callback;
+                  obj17.body = callback(Spinner, {});
                   obj17.obscured = false;
                   return obj17;
                 } else {
-                  name = callback3;
-                  name = importDefault;
-                  name = dependencyMap;
+                  name = callback;
+                  name = responseType;
+                  name = codeChallenge;
                   const obj18 = { application: first.application, permissions: memo4, deniedPermissions: first5, onPermissionsChange: tmp98, guild: memo };
-                  name = callback3(importDefault(dependencyMap[50]), obj18);
+                  name = callback(responseType(codeChallenge[50]), obj18);
                   flag6 = true;
                   items29 = false;
                   flag7 = true;
@@ -997,13 +994,13 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   }
                 }
               }
-              name = importDefault;
-              name = dependencyMap;
-              name = callback3;
+              name = responseType;
+              name = codeChallenge;
+              name = callback;
               const obj19 = { application: first.application, scopes: requestedScopes, disclosures: first11 };
               const redirect_uri = first.redirect_uri;
               name = null;
-              name = importDefault(dependencyMap[51]);
+              name = responseType(codeChallenge[51]);
               if (null != redirect_uri) {
                 name = redirect_uri;
               }
@@ -1024,11 +1021,11 @@ export default function useOAuth2AuthorizeForm(clientId) {
         }
         name = undefined;
         if (flag8) {
-          name = callback3;
-          name = importDefault;
-          name = dependencyMap;
+          name = callback;
+          name = responseType;
+          name = codeChallenge;
           const obj20 = { user: stateFromStores, application: first.application, accountScopes, bot: first.bot };
-          name = callback3(importDefault(dependencyMap[52]), obj20);
+          name = callback(responseType(codeChallenge[52]), obj20);
         }
         name = items29;
         if (items29) {
@@ -1038,7 +1035,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         obj22 = {};
         name = disclosures;
         name = null;
-        name = callback3;
+        name = callback;
         name = first;
         if (first1 !== disclosures.SELECT_INSTALL_TYPE) {
           name = disclosures;
@@ -1046,22 +1043,22 @@ export default function useOAuth2AuthorizeForm(clientId) {
           if (first1 !== disclosures.CONNECT_ACCOUNT) {
             const obj23 = { accessibilityElementsHidden: name };
             let str5 = "auto";
-            name = callback3;
-            name = View;
+            name = callback;
+            name = _prompt;
             if (name) {
               str5 = "no-hide-descendants";
             }
             obj23.importantForAccessibility = str5;
-            name = arg1;
-            name = dependencyMap;
-            name = callback3;
+            name = clientId;
+            name = codeChallenge;
+            name = callback;
             if (null != name) {
               const obj24 = { size: "lg" };
-              name = arg1;
-              name = dependencyMap;
-              const intl2 = arg1(dependencyMap[38]).intl;
+              name = clientId;
+              name = codeChallenge;
+              const intl2 = clientId(codeChallenge[38]).intl;
               const string = intl2.string;
-              let BwwiSM2 = arg1(dependencyMap[38]).t;
+              let BwwiSM2 = clientId(codeChallenge[38]).t;
               if (items29) {
                 if (first7) {
                   BwwiSM2 = BwwiSM2.BwwiSM;
@@ -1070,23 +1067,23 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   name = string(BwwiSM2.N22i9F);
                 }
               } else {
-                obj24.text = string(BwwiSM2.3PatSz);
+                obj24.text = string(BwwiSM2["3PatSz"]);
                 name = undefined;
                 if (!first7) {
                   if (items29) {
-                    name = callback3;
-                    name = importDefault;
-                    name = dependencyMap;
+                    name = callback;
+                    name = responseType;
+                    name = codeChallenge;
                     const obj25 = { style: animatedStyle };
                     const obj26 = {};
-                    name = closure_8;
-                    const convert2 = closure_8.convert;
+                    name = scopes;
+                    const convert2 = scopes.convert;
                     name = dismissOAuthModal;
-                    name = importDefault(dependencyMap[53]);
+                    name = responseType(codeChallenge[53]);
                     obj26.name = convert2.fromCodePoint(dismissOAuthModal);
-                    animatedStyle = callback3(name, obj26);
+                    animatedStyle = callback(name, obj26);
                     obj25.children = animatedStyle;
-                    name = callback3(importDefault(dependencyMap[num]).View, obj25);
+                    name = callback(responseType(codeChallenge[num]).View, obj25);
                   }
                 }
                 obj24.icon = name;
@@ -1099,11 +1096,11 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 }
                 obj24.disabled = items29;
                 const obj27 = { name: "enable" };
-                name = arg1;
-                name = dependencyMap;
-                const intl3 = arg1(dependencyMap[38]).intl;
+                name = clientId;
+                name = codeChallenge;
+                const intl3 = clientId(codeChallenge[38]).intl;
                 num = intl3.string;
-                obj27.label = num(arg1(dependencyMap[38]).t.eIL75W);
+                obj27.label = num(clientId(codeChallenge[38]).t.eIL75W);
                 items29 = [obj27];
                 obj24.accessibilityActions = items29;
                 obj24.onAccessibilityAction = callback3;
@@ -1111,11 +1108,11 @@ export default function useOAuth2AuthorizeForm(clientId) {
               }
             } else {
               obj28 = { size: "lg" };
-              name = arg1;
-              name = dependencyMap;
-              const intl5 = arg1(dependencyMap[38]).intl;
+              name = clientId;
+              name = codeChallenge;
+              const intl5 = clientId(codeChallenge[38]).intl;
               const string2 = intl5.string;
-              let BwwiSM = arg1(dependencyMap[38]).t;
+              let BwwiSM = clientId(codeChallenge[38]).t;
               if (items29) {
                 if (first7) {
                   BwwiSM = BwwiSM.BwwiSM;
@@ -1124,24 +1121,24 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   name = string2(BwwiSM.N22i9F);
                 }
               } else {
-                obj28.text = string2(BwwiSM.y+/PE9);
+                obj28.text = string2(BwwiSM["y+/PE9"]);
                 obj28.onPress = function onPress() {
                   callback6(true);
                 };
                 name = undefined;
                 if (!first7) {
-                  name = callback3;
-                  name = importDefault;
-                  name = dependencyMap;
+                  name = callback;
+                  name = responseType;
+                  name = codeChallenge;
                   const obj29 = { style: animatedStyle };
                   const obj30 = {};
-                  name = closure_8;
-                  const convert = closure_8.convert;
+                  name = scopes;
+                  const convert = scopes.convert;
                   name = dismissOAuthModal;
-                  name = importDefault(dependencyMap[53]);
+                  name = responseType(codeChallenge[53]);
                   obj30.name = convert.fromCodePoint(dismissOAuthModal);
-                  obj29.children = callback3(name, obj30);
-                  name = callback3(importDefault(dependencyMap[num]).View, obj29);
+                  obj29.children = callback(name, obj30);
+                  name = callback(responseType(codeChallenge[num]).View, obj29);
                 }
                 obj28.icon = name;
                 obj28.iconPosition = "end";
@@ -1152,16 +1149,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 obj28.disabled = name;
                 obj28.loading = tmp7[0];
                 const obj31 = { name: "enable" };
-                name = arg1;
-                name = dependencyMap;
-                const intl = arg1(dependencyMap[38]).intl;
-                obj31.label = intl.string(arg1(dependencyMap[38]).t.eIL75W);
+                name = clientId;
+                name = codeChallenge;
+                const intl = clientId(codeChallenge[38]).intl;
+                obj31.label = intl.string(clientId(codeChallenge[38]).t.eIL75W);
                 const items30 = [obj31];
                 obj28.accessibilityActions = items30;
                 obj28.onAccessibilityAction = callback3;
               }
             }
-            obj23.children = name(arg1(dependencyMap[37]).Button, obj28);
+            obj23.children = name(clientId(codeChallenge[37]).Button, obj28);
             name = name(name, obj23);
           }
         }

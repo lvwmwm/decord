@@ -1,56 +1,58 @@
-// Module ID: 9555
-// Function ID: 74467
+// Module ID: 9562
+// Function ID: 74508
 // Name: ForumGuidelinesActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 5685, 33, 4130, 689, 9137, 1557, 9563, 477, 9564, 4098, 5121, 4544, 1212, 3953, 4321, 7596, 5187, 5189, 4660, 4126, 9106, 7491, 4633, 4120, 9562, 1934, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 9555 (ForumGuidelinesActionSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = arg1(dependencyMap[3]).FORUM_GUIDELINES_ACTION_SHEET;
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { scrollContainer: { paddingHorizontal: 16 }, header: {}, headerTitle: { marginTop: 8 } };
-obj = { padding: 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.guidelinesContainer = obj;
-obj.footer = { paddingBottom: 16 };
-obj.buttonWrapper = { marginHorizontal: 16 };
-const tmp2 = arg1(dependencyMap[4]);
-obj.buttonPill = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-const obj2 = { accessibilityRole: false, accessibilityLabel: 600, hitSlop: 16, style: 20, onPress: "heading-md/bold", accessible: "display", accessibilityRole: false, lastValue: 700, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.floatingButtonContainer = obj2;
-obj.editButton = {};
-obj.editText = { marginRight: 4 };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.editIcon = { color: importDefault(dependencyMap[6]).colors.TEXT_BRAND };
-let closure_10 = obj.createStyles(obj);
-const obj3 = { color: importDefault(dependencyMap[6]).colors.TEXT_BRAND };
-const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/forums/native/ForumGuidelinesActionSheet.tsx");
+// Module 9562 (ForumGuidelinesActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "ForumGuidelinesActionSheet";
+import { FORUM_GUIDELINES_ACTION_SHEET as closure_6 } from "FORUM_GUIDELINES_ACTION_SHEET";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = { scrollContainer: { paddingHorizontal: 16 }, header: { alignItems: "center", paddingTop: 20, paddingBottom: 24 }, headerTitle: { marginTop: 8 } };
+_createForOfIteratorHelperLoose = { padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.guidelinesContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.footer = { paddingBottom: 16 };
+_createForOfIteratorHelperLoose.buttonWrapper = { marginHorizontal: 16 };
+_createForOfIteratorHelperLoose.buttonPill = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+let obj2 = { marginTop: 16, position: "absolute", left: 16, right: 16, shadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.25, shadowRadius: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.floatingButtonContainer = obj2;
+_createForOfIteratorHelperLoose.editButton = { display: "flex", flexDirection: "row", alignItems: "center", position: "absolute", top: 12, right: 0 };
+_createForOfIteratorHelperLoose.editText = { marginRight: 4 };
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.editIcon = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/forums/native/ForumGuidelinesActionSheet.tsx");
 
 export default function ForumGuidelinesActionSheet(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  const importDefault = channel.onPress;
-  let View;
-  let closure_6;
-  let callback2;
+  const onPress = channel.onPress;
+  let c5;
+  let pathname;
+  let callback;
   function handlePress() {
     if (null != onPress) {
       onPress();
     }
     onPress(bottom[12]).hideActionSheet(pathname);
   }
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[7]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = channel(bottom[7]);
   let canManageChannel = obj.useCanManageChannel(channel);
-  const bottom = importDefault(dependencyMap[8])().bottom;
-  const dependencyMap = bottom;
-  const tmp3 = callback(React.useState(), 2);
+  bottom = onPress(bottom[8])().bottom;
+  const tmp3 = first(React.useState(), 2);
   let num = 0;
-  const first = tmp3[0];
-  let callback = first;
-  const React = tmp3[1];
+  first = tmp3[0];
+  React = tmp3[1];
   const items = [bottom, first];
   const memo = React.useMemo(() => {
     let sum;
@@ -60,15 +62,15 @@ export default function ForumGuidelinesActionSheet(channel) {
         num2 = bottom;
       }
       sum = 72 + num2 + first + bottom;
-      const obj = channel(bottom[10]);
+      obj = channel(bottom[10]);
     }
     return sum;
   }, items);
   if (null != memo) {
     num = memo;
   }
-  let tmp7 = importDefault(dependencyMap[9])() < num;
-  View = tmp7;
+  let tmp7 = onPress(bottom[9])() < num;
+  c5 = tmp7;
   let tmp8;
   if (!tmp7) {
     tmp8 = memo;
@@ -87,25 +89,24 @@ export default function ForumGuidelinesActionSheet(channel) {
   if (!tmp7) {
     obj = { bottom: true, style: tmp.footer };
     obj = { grow: true };
-    const intl = arg1(dependencyMap[15]).intl;
-    obj.text = intl.string(arg1(dependencyMap[15]).t.NX+WJN);
+    const intl = channel(bottom[15]).intl;
+    obj.text = intl.string(channel(bottom[15]).t["NX+WJN"]);
     obj.onPress = handlePress;
     ({ buttonWrapper: obj3.style, buttonPill: obj3.pillStyle } = tmp);
-    obj.children = callback2(arg1(dependencyMap[14]).BaseTextButton, obj);
-    tmp11 = callback2(arg1(dependencyMap[13]).SafeAreaPaddingView, obj);
+    obj.children = callback(channel(bottom[14]).BaseTextButton, obj);
+    tmp11 = callback(channel(bottom[13]).SafeAreaPaddingView, obj);
   }
   const items3 = [bottom, tmp7];
   const memo1 = React.useMemo(() => {
     let num = 0;
-    if (tmp7) {
+    if (c5) {
       num = bottom + 40 + 32;
     }
     return num;
   }, items3);
-  let obj3 = arg1(dependencyMap[16]);
-  const pathname = obj3.useLocation().pathname;
-  closure_6 = pathname;
-  callback2 = React.useRef(true);
+  let obj3 = channel(bottom[16]);
+  pathname = obj3.useLocation().pathname;
+  callback = React.useRef(true);
   const items4 = [pathname, channel.id];
   const effect1 = React.useEffect(() => {
     const tryParseChannelPathResult = channel(bottom[17]).tryParseChannelPath(pathname);
@@ -126,48 +127,49 @@ export default function ForumGuidelinesActionSheet(channel) {
     const obj = onPress(bottom[12]);
     onPress(bottom[18]).open(channel.id);
   }, items5);
-  const obj2 = { scrollable: true, contentHeight: tmp8, footer: tmp11, onDismiss: channel.onClose };
+  let obj2 = { scrollable: true, contentHeight: tmp8, footer: tmp11, onDismiss: channel.onClose };
   obj3 = { style: tmp.scrollContainer, scrollIndicatorInsets: { bottom }, contentContainerStyle: { paddingBottom: memo1 }, onContentSizeChange: callback };
   const obj4 = { style: tmp.header };
   if (canManageChannel) {
     const obj5 = {};
-    const intl2 = arg1(dependencyMap[15]).intl;
-    obj5.accessibilityLabel = intl2.string(arg1(dependencyMap[15]).t.bt75uw);
+    const intl2 = channel(bottom[15]).intl;
+    obj5.accessibilityLabel = intl2.string(channel(bottom[15]).t.bt75uw);
     obj5.accessibilityRole = "button";
     obj5.style = tmp.editButton;
     obj5.onPress = callback1;
-    const obj6 = { style: tmp.editText };
-    const intl3 = arg1(dependencyMap[15]).intl;
-    obj6.children = intl3.string(arg1(dependencyMap[15]).t.bt75uw);
-    const items6 = [callback2(arg1(dependencyMap[22]).Text, obj6), ];
+    const obj6 = { style: tmp.editText, variant: "text-sm/medium", color: "text-brand" };
+    const intl3 = channel(bottom[15]).intl;
+    obj6.children = intl3.string(channel(bottom[15]).t.bt75uw);
+    const items6 = [callback(channel(bottom[22]).Text, obj6), ];
     const obj7 = { color: tmp.editIcon.color, size: "xs" };
-    items6[1] = callback2(arg1(dependencyMap[23]).PencilIcon, obj7);
+    items6[1] = callback(channel(bottom[23]).PencilIcon, obj7);
     obj5.children = items6;
-    canManageChannel = callback3(arg1(dependencyMap[21]).PressableOpacity, obj5);
+    canManageChannel = callback2(channel(bottom[21]).PressableOpacity, obj5);
   }
   const items7 = [canManageChannel, , ];
   const obj8 = {};
   const tmp19 = closure_9;
-  const tmp20 = callback2;
-  const tmp21 = View;
-  const tmp5 = importDefault(dependencyMap[9])();
-  obj8.IconComponent = arg1(dependencyMap[25]).BookCheckIcon;
-  items7[1] = callback2(importDefault(dependencyMap[24]), obj8);
-  const obj9 = { style: tmp.headerTitle };
-  const intl4 = arg1(dependencyMap[15]).intl;
-  obj9.children = intl4.string(arg1(dependencyMap[15]).t.4d4T4l);
-  items7[2] = callback2(arg1(dependencyMap[22]).Text, obj9);
+  const tmp20 = callback;
+  const tmp21 = c5;
+  const tmp5 = onPress(bottom[9])();
+  obj8.IconComponent = channel(bottom[25]).BookCheckIcon;
+  items7[1] = callback(onPress(bottom[24]), obj8);
+  const obj9 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  const intl4 = channel(bottom[15]).intl;
+  obj9.children = intl4.string(channel(bottom[15]).t["4d4T4l"]);
+  items7[2] = callback(channel(bottom[22]).Text, obj9);
   obj4.children = items7;
-  const items8 = [callback3(tmp21, obj4), ];
+  const items8 = [callback2(tmp21, obj4), ];
   const obj10 = { style: tmp.guidelinesContainer };
-  const obj11 = {};
-  const tmp26 = importDefault(dependencyMap[24]);
-  obj11.children = importDefault(dependencyMap[26]).parseForumPostGuidelines(channel.topic, true, { channelId: channel.id });
-  obj10.children = callback2(arg1(dependencyMap[22]).Text, obj11);
-  items8[1] = callback2(View, obj10);
+  const obj11 = { variant: "text-md/medium", color: "text-default" };
+  const tmp26 = onPress(bottom[24]);
+  const obj12 = { channelId: channel.id, allowHeading: true, allowList: true, allowLinks: true };
+  obj11.children = onPress(bottom[26]).parseForumPostGuidelines(channel.topic, true, obj12);
+  obj10.children = callback(channel(bottom[22]).Text, obj11);
+  items8[1] = callback(c5, obj10);
   obj3.children = items8;
-  obj2.children = callback3(arg1(dependencyMap[20]).BottomSheetScrollView, obj3);
-  const items9 = [tmp20(arg1(dependencyMap[19]).BottomSheet, obj2), ];
+  obj2.children = callback2(channel(bottom[20]).BottomSheetScrollView, obj3);
+  const items9 = [tmp20(channel(bottom[19]).BottomSheet, obj2), ];
   if (tmp7) {
     const obj13 = { grow: true };
     const items10 = [tmp.floatingButtonContainer, ];
@@ -175,18 +177,18 @@ export default function ForumGuidelinesActionSheet(channel) {
     items10[1] = obj14;
     obj13.style = items10;
     obj13.pillStyle = tmp.buttonPill;
-    const intl5 = arg1(dependencyMap[15]).intl;
-    obj13.text = intl5.string(arg1(dependencyMap[15]).t.NX+WJN);
+    const intl5 = channel(bottom[15]).intl;
+    obj13.text = intl5.string(channel(bottom[15]).t["NX+WJN"]);
     obj13.onPress = handlePress;
-    tmp7 = callback2(arg1(dependencyMap[14]).BaseTextButton, obj13);
+    tmp7 = callback(channel(bottom[14]).BaseTextButton, obj13);
   }
   items9[1] = tmp7;
   obj1.children = items9;
-  return callback3(tmp19, obj1);
+  return callback2(tmp19, obj1);
 };
 export const openForumGuidelinesActionSheet = function openForumGuidelinesActionSheet(arg0) {
-  let obj = importDefault(dependencyMap[12]);
+  let obj = importDefault(4098);
   obj = {};
   const merged = Object.assign(arg0);
-  obj.openLazy(arg1(dependencyMap[28])(dependencyMap[27], dependencyMap.paths), closure_6, obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(9562, dependencyMap.paths), closure_6, obj);
 };

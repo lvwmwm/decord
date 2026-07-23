@@ -1,67 +1,87 @@
-// Module ID: 8506
-// Function ID: 67873
+// Module ID: 8512
+// Function ID: 67910
 // Name: getStyleConfig
-// Dependencies: []
+// Dependencies: [31, 27, 8264, 5512, 653, 7632, 33, 4130, 689, 8513, 8514, 8523, 4660, 8525, 4126, 8527, 6971, 3982, 8561, 1212, 8575, 8265, 5796, 3831, 8254, 675, 6969, 4979, 477, 8576, 1450, 7845, 8577, 3969, 2]
 // Exports: default
 
-// Module 8506 (getStyleConfig)
+// Module 8512 (getStyleConfig)
+import getUserPrimaryGuild from "getUserPrimaryGuild";
+import get_ActivityIndicator from "QuestsVisibleMessagesChangedSource";
+import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY";
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
+import ME from "ME";
+import { GuildTagBadgeSize } from "items";
+import jsxProd from "conceal";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let UserProfileThemeTypes;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getStyleConfig(arg0) {
   let tmp;
   if (null != arg0) {
-    tmp = closure_18[arg0];
+    tmp = table[arg0];
   }
   if (null == tmp) {
-    tmp = closure_17;
+    tmp = obj2;
   }
   return tmp;
 }
 class DisplayName {
   constructor(arg0) {
-    ({ user: closure_0, guildId: closure_1, name } = global);
-    dependencyMap = name;
+    ({ user, guildId, name } = global);
     ({ onPress, showChevron } = global);
     ({ themeType, accessibilityHint } = global);
     if (showChevron === undefined) {
       showChevron = false;
     }
-    ({ pendingDisplayNameStyles: closure_3, displayNameAccessibilityRole: closure_4 } = global);
-    closure_5 = undefined;
-    getBadgeAssetFromCDN = undefined;
+    ({ pendingDisplayNameStyles, displayNameAccessibilityRole: closure_4 } = global);
+    c5 = undefined;
+    headingVariant = undefined;
     renderDisplayName = function renderDisplayName() {
-      const obj = { userId: lib.id, guildId: callback, userName: name, variant: headingVariant, effectDisplayType: lib(name[10]).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles: closure_3, defaultColor: "mobile-text-heading-primary", accessibilityRole: closure_4 };
-      return callback2(callback(name[9]), obj);
+      const obj = { userId: closure_0.id, guildId: closure_1, userName: name, variant: headingVariant, effectDisplayType: outer1_0(name[10]).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles: getUserPrimaryGuild, defaultColor: "mobile-text-heading-primary", accessibilityRole: closure_4 };
+      return outer1_13(outer1_1(name[9]), obj);
     };
     renderBotTag = function renderBotTag() {
-      if (lib.isSystemUser()) {
-        let obj = { style: tmp.botTag, type: callback(name[11]).Types.SYSTEM_DM, verified: lib.isVerifiedBot() };
-        let tmp2 = callback2(callback(name[11]), obj);
-        const tmp12 = callback(name[11]);
+      if (closure_0.isSystemUser()) {
+        let obj = { style: _undefined.botTag, type: outer1_1(name[11]).Types.SYSTEM_DM, verified: closure_0.isVerifiedBot() };
+        let tmp2 = outer1_13(outer1_1(name[11]), obj);
+        const tmp12 = outer1_1(name[11]);
       } else {
         tmp2 = null;
-        if (lib.bot) {
-          obj = { style: tmp.botTag, type: callback(name[11]).Types.BOT, verified: lib.isVerifiedBot() };
-          tmp2 = callback2(callback(name[11]), obj);
-          const tmp6 = callback(name[11]);
+        if (closure_0.bot) {
+          obj = { style: _undefined.botTag, type: outer1_1(name[11]).Types.BOT, verified: closure_0.isVerifiedBot() };
+          tmp2 = outer1_13(outer1_1(name[11]), obj);
+          const tmp6 = outer1_1(name[11]);
         }
       }
       return tmp2;
     };
-    tmp = closure_16();
-    closure_5 = tmp;
-    getBadgeAssetFromCDN = getStyleConfig(themeType).headingVariant;
+    tmp = c16();
+    c5 = tmp;
+    headingVariant = getStyleConfig(themeType).headingVariant;
     if (null == onPress) {
       tmp6 = jsxs;
-      tmp7 = closure_5;
+      tmp7 = c5;
       obj = {};
       items = [, ];
       items[0] = renderDisplayName();
       items[1] = renderBotTag();
       obj.children = items;
-      tmp8Result = jsxs(closure_5, obj);
+      tmp8Result = jsxs(c5, obj);
     } else {
-      tmp9 = arg1;
-      tmp10 = dependencyMap;
+      tmp9 = user;
+      tmp10 = name;
       num2 = 12;
       tmp8 = jsxs;
       obj = {};
@@ -76,14 +96,14 @@ class DisplayName {
       items1[1] = renderBotTag();
       if (showChevron) {
         tmp2 = jsx;
-        tmp3 = arg1;
-        tmp4 = dependencyMap;
+        tmp3 = user;
+        tmp4 = name;
         num = 13;
-        showChevron = jsx(arg1(dependencyMap[13]).ChevronSmallDownIcon, { "Bool(false)": "png", "Bool(false)": true });
+        showChevron = jsx(require("ChevronSmallDownIcon").ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
       }
       items1[2] = showChevron;
       obj.children = items1;
-      tmp8Result = tmp8(arg1(dependencyMap[12]).PressableOpacity, obj);
+      tmp8Result = tmp8(require("PressableBase").PressableOpacity, obj);
     }
     return tmp8Result;
   }
@@ -91,27 +111,23 @@ class DisplayName {
 class UserTagAndPronouns {
   constructor(arg0) {
     userTag = global.userTag;
-    arg1 = userTag;
     pronouns = global.pronouns;
-    importDefault = pronouns;
     onPressUserTag = global.onPressUserTag;
-    dependencyMap = onPressUserTag;
     userTagAccessibilityHint = global.userTagAccessibilityHint;
-    importAll = userTagAccessibilityHint;
     str = global.onPressPronouns;
-    Image = undefined;
+    textVariant = undefined;
     renderPronouns = function renderPronouns() {
-      return callback(userTag(onPressUserTag[14]).Text, { variant: textVariant, children: pronouns });
+      const obj = { variant: textVariant, color: "mobile-text-heading-primary", lineClamp: 1, children: pronouns };
+      return outer1_13(userTag(onPressUserTag[14]).Text, obj);
     };
     ({ themeType, pronounsAccessibilityHint } = global);
     tmp2 = null != pronouns;
-    tmp = closure_16();
+    tmp = c16();
     if (tmp2) {
       num = 0;
       tmp2 = pronouns.length > 0;
     }
     textVariant = getStyleConfig(themeType).textVariant;
-    Image = textVariant;
     items = [, , , ];
     items[0] = onPressUserTag;
     items[1] = textVariant;
@@ -121,18 +137,18 @@ class UserTagAndPronouns {
     tmp3 = jsxs;
     tmp4 = View;
     items1 = [, ];
-    items1[0] = importAll.useCallback(() => {
+    items1[0] = userTagAccessibilityHint.useCallback(() => {
       if (null == userTag) {
         return null;
       } else {
-        let obj = { 803799044: "isArray", 1269170180: "accessibilityRole", 711589892: "pos", variant: textVariant, children: userTag };
-        const tmp15 = callback(userTag(onPressUserTag[14]).Text, obj);
+        let obj = { variant: textVariant, color: "mobile-text-heading-primary", lineClamp: 2, children: userTag };
+        const tmp15 = outer1_13(userTag(onPressUserTag[14]).Text, obj);
         if (null != onPressUserTag) {
           obj = { onPress: onPressUserTag, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp15 };
-          let tmp3 = callback(userTag(onPressUserTag[12]).PressableOpacity, obj);
+          let tmp3 = outer1_13(userTag(onPressUserTag[12]).PressableOpacity, obj);
         } else {
           obj = { children: tmp15 };
-          tmp3 = callback(closure_5, obj);
+          tmp3 = outer1_13(outer1_5, obj);
         }
         return tmp3;
       }
@@ -144,21 +160,21 @@ class UserTagAndPronouns {
     } else {
       obj = {};
       tmp7 = jsx;
-      tmp8 = arg1;
-      tmp9 = dependencyMap;
+      tmp8 = userTag;
+      tmp9 = onPressUserTag;
       num2 = 14;
       tmp5 = jsxs;
       tmp6 = Fragment;
-      obj1 = {};
+      obj1 = { variant: null, color: "mobile-text-heading-primary", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
       obj1.variant = textVariant;
       tmp10 = DIVIDER_DOT;
       obj1.children = DIVIDER_DOT;
       items2 = [, ];
-      items2[0] = jsx(arg1(dependencyMap[14]).Text, obj1);
+      items2[0] = jsx(require("Text").Text, obj1);
       if (null != onPressUserTag) {
         tmp14 = jsx;
-        tmp15 = arg1;
-        tmp16 = dependencyMap;
+        tmp15 = userTag;
+        tmp16 = onPressUserTag;
         num3 = 12;
         obj2 = {};
         obj2.onPress = str;
@@ -168,7 +184,7 @@ class UserTagAndPronouns {
         obj2.accessibilityHint = pronounsAccessibilityHint;
         renderPronouns = renderPronouns();
         obj2.children = renderPronouns;
-        tmp13 = jsx(arg1(dependencyMap[12]).PressableOpacity, obj2);
+        tmp13 = jsx(require("PressableBase").PressableOpacity, obj2);
       } else {
         tmp11 = jsx;
         tmp12 = View;
@@ -188,27 +204,24 @@ function ProfileBadge(source) {
   let showToastOnPress;
   let themeType;
   source = source.source;
-  const arg1 = source;
   const id = source.id;
-  const importDefault = id;
   const label = source.label;
-  const dependencyMap = label;
   ({ badgeSize, themeType, showToastOnPress } = source);
   if (showToastOnPress === undefined) {
     showToastOnPress = true;
   }
   let React;
   let closure_4;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   if (null != badgeSize) {
     let obj = { width: badgeSize, height: badgeSize };
   }
   const ref = React.useRef(null);
-  let obj1 = arg1(dependencyMap[15]);
+  let obj1 = source(label[15]);
   React = obj1.useTieredTenureBadgeClickHandler(id, source.userId, themeType);
-  let obj2 = arg1(dependencyMap[16]);
+  let obj2 = source(label[16]);
   closure_4 = obj2.useAdUser("profile_badge");
-  let obj3 = arg1(dependencyMap[17]);
+  let obj3 = source(label[17]);
   const rootNavigationRef = obj3.getRootNavigationRef();
   let currentRoute;
   if (null != rootNavigationRef) {
@@ -223,11 +236,11 @@ function ProfileBadge(source) {
       prop = params.showOrbsBadgeCoachmark;
     }
   }
-  let obj5 = arg1(dependencyMap[18]);
+  let obj5 = source(label[18]);
   obj = { disabled: !(null != prop && prop) };
   const orbsBadgeCoachmark = obj5.useOrbsBadgeCoachmark(obj);
-  const intl = arg1(dependencyMap[19]).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[19]).t.A0LN9t, { badgeLabel: label });
+  const intl = source(label[19]).intl;
+  const formatToPlainStringResult = intl.formatToPlainString(source(label[19]).t.A0LN9t, { badgeLabel: label });
   let tmp9 = themeType === UserProfileThemeTypes.YOU_SCREEN;
   if (tmp9) {
     tmp9 = "string" === typeof id;
@@ -235,7 +248,7 @@ function ProfileBadge(source) {
   let tmp10 = null;
   if (tmp9) {
     obj = { targetRef: ref, badgeId: id };
-    tmp10 = callback(importDefault(dependencyMap[20]), obj);
+    tmp10 = callback(id(label[20]), obj);
   }
   let tmp14 = themeType === UserProfileThemeTypes.YOU_SCREEN;
   if (tmp14) {
@@ -250,9 +263,9 @@ function ProfileBadge(source) {
   let tmp15 = null;
   if (tmp14) {
     obj1 = { badgeRef: ref };
-    const merged = Object.assign(orbsBadgeCoachmark.props);
-    tmp15 = callback(importDefault(dependencyMap[18]), obj1);
-    const tmp19 = importDefault(dependencyMap[18]);
+    let merged = Object.assign(orbsBadgeCoachmark.props);
+    tmp15 = callback(id(label[18]), obj1);
+    const tmp19 = id(label[18]);
   }
   obj2 = {};
   if (showToastOnPress) {
@@ -261,7 +274,7 @@ function ProfileBadge(source) {
       accessibilityLabel: formatToPlainStringResult,
       onPress() {
           if (null == callback) {
-            if (id !== callback2(source(label[21]).BadgeId.GIFTING)) {
+            if (id !== outer1_7(source(label[21]).BadgeId.GIFTING)) {
               let obj = {};
               const _HermesInternal = HermesInternal;
               obj.key = "PROFILE_BADGE-" + label;
@@ -278,7 +291,7 @@ function ProfileBadge(source) {
                   if (obj5.isIOS()) {
                     advertisingId = closure_4.advertisingId;
                   }
-                  const obj5 = source(label[28]);
+                  obj5 = source(label[28]);
                 }
                 obj["apple_advertising_id"] = advertisingId;
                 let advertisingId1 = null;
@@ -287,17 +300,17 @@ function ProfileBadge(source) {
                   if (obj6.isAndroid()) {
                     advertisingId1 = closure_4.advertisingId;
                   }
-                  const obj6 = source(label[28]);
+                  obj6 = source(label[28]);
                 }
                 obj["android_advertising_id"] = advertisingId1;
                 obj["is_targeted"] = false;
-                obj7.track(constants.QUEST_CONTENT_VIEWED, obj);
+                obj7.track(outer1_11.QUEST_CONTENT_VIEWED, obj);
                 const obj9 = source(label[26]);
               }
               const obj3 = id(label[23]);
             } else {
               obj = source(label[22]);
-              const obj1 = { screen: constants2.PREMIUM_GIFTING, params: {} };
+              const obj1 = { screen: outer1_12.PREMIUM_GIFTING, params: {} };
               obj.openUserSettings(obj1);
             }
           } else {
@@ -311,7 +324,7 @@ function ProfileBadge(source) {
     obj4.style = items;
     obj4.source = source;
     obj3.children = callback(closure_4, obj4);
-    const items1 = [tmp24(arg1(dependencyMap[12]).PressableOpacity, obj3), tmp10, tmp15];
+    const items1 = [tmp24(source(label[12]).PressableOpacity, obj3), tmp10, tmp15];
     obj2.children = items1;
     let tmp26 = obj2;
   } else {
@@ -332,19 +345,14 @@ function ProfileBadge(source) {
 class ProfileBadgeRows {
   constructor(arg0) {
     userId = global.userId;
-    arg1 = userId;
-    ({ badges, isTryItOut, style: closure_1, themeType } = global);
-    dependencyMap = themeType;
+    ({ badges, isTryItOut, style, themeType } = global);
     showToastOnPress = global.showToastOnPress;
-    importAll = showToastOnPress;
-    DIVIDER_DOT = undefined;
-    tmp = closure_16();
+    width = undefined;
+    tmp = c16();
     Image = tmp;
     tmp2 = getStyleConfig(themeType);
     badgeSize = tmp2.badgeSize;
-    View = badgeSize;
     badgeRowHorizontalPadding = tmp2.badgeRowHorizontalPadding;
-    getBadgeAssetFromCDN = badgeRowHorizontalPadding;
     mapped = badges.map((id) => {
       let obj = { id: id.id, userId };
       obj = {};
@@ -358,7 +366,7 @@ class ProfileBadgeRows {
       obj.badgeSize = badgeSize;
       obj.themeType = themeType;
       obj.showToastOnPress = showToastOnPress;
-      return closure_13(closure_22, obj, id.id);
+      return outer1_13(outer1_22, obj, id.id);
     });
     getBadgeName = mapped;
     if (isTryItOut) {
@@ -369,16 +377,16 @@ class ProfileBadgeRows {
       tmp4 = jsx;
       tmp5 = ProfileBadge;
       obj = {};
-      tmp6 = importDefault;
-      tmp7 = dependencyMap;
+      tmp6 = style;
+      tmp7 = themeType;
       num = 29;
-      obj.source = importDefault(dependencyMap[29]);
+      obj.source = require("registerAsset");
       str = "premium";
       obj.id = "premium";
       obj.userId = userId;
-      tmp8 = arg1;
+      tmp8 = userId;
       num2 = 19;
-      intl = arg1(dependencyMap[19]).intl;
+      intl = require("getSystemLocale").intl;
       obj = {};
       tmp9 = globalThis;
       _Date = Date;
@@ -388,37 +396,35 @@ class ProfileBadgeRows {
       date = new Date();
       tmp13 = date;
       obj.date = date;
-      obj.label = intl.formatToPlainString(arg1(dependencyMap[19]).t.8zbGNR, obj);
+      obj.label = intl.formatToPlainString(require("getSystemLocale").t["8zbGNR"], obj);
       obj.badgeSize = badgeSize;
       obj.showToastOnPress = showToastOnPress;
       arr = mapped.push(jsx(ProfileBadge, obj));
     }
-    width = importDefault(dependencyMap[30])().width;
-    DIVIDER_DOT = width;
+    width = require("useWindowDimensions")().width;
     items = [, , , ];
     items[0] = mapped;
     items[1] = badgeRowHorizontalPadding;
     items[2] = badgeSize;
     items[3] = width;
-    memo = importAll.useMemo(() => {
-      const rounded = Math.floor((width - 2 * closure_9 - 2 * badgeRowHorizontalPadding + 4) / (badgeSize + 4));
-      const userId = rounded;
-      return Array.from({ length: Math.ceil(mapped.length / rounded) }, (arg0, arg1) => arr.slice(arg1 * rounded, (arg1 + 1) * rounded));
+    memo = showToastOnPress.useMemo(() => {
+      const rounded = Math.floor((width - 2 * outer1_9 - 2 * badgeRowHorizontalPadding + 4) / (badgeSize + 4));
+      return Array.from({ length: Math.ceil(mapped.length / rounded) }, (arg0, arg1) => outer1_7.slice(arg1 * rounded, (arg1 + 1) * rounded));
     }, items);
     obj1 = { style: items1, accessibilityRole: "list" };
     items1 = [];
     items1[0] = tmp.badges;
-    intl2 = arg1(dependencyMap[19]).intl;
-    obj1.accessibilityLabel = intl2.string(arg1(dependencyMap[19]).t.VWV0y5);
+    intl2 = require("getSystemLocale").intl;
+    obj1.accessibilityLabel = intl2.string(require("getSystemLocale").t.VWV0y5);
     obj1.children = memo.map((children) => {
       let obj = { style: items, children };
-      const items = [tmp.badgeRow, , ];
+      items = [tmp.badgeRow, , ];
       obj = { paddingHorizontal: badgeRowHorizontalPadding };
       items[1] = obj;
       items[2] = closure_1;
-      return callback(badgeSize, obj, arg1);
+      return outer1_13(badgeSize, obj, arg1);
     });
-    return jsx(View, obj1);
+    return jsx(badgeSize, obj1);
   }
 }
 function GuildTag(arg0) {
@@ -436,8 +442,8 @@ function GuildTag(arg0) {
   if (showToastOnPress === undefined) {
     showToastOnPress = false;
   }
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[31]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(7845) /* getUserPrimaryGuild */;
   let primaryGuild;
   if (null != user) {
     primaryGuild = user.primaryGuild;
@@ -446,7 +452,7 @@ function GuildTag(arg0) {
   ({ tag, guildId } = userPrimaryGuild);
   const tmp4 = getStyleConfig(themeType);
   ({ badgeSize, guildTagBadgeSize, guildTagHorizontalPadding } = tmp4);
-  let obj1 = arg1(dependencyMap[28]);
+  let obj1 = require(477) /* set */;
   let tmp6 = null;
   if (null != tag) {
     tmp6 = null;
@@ -462,38 +468,30 @@ function GuildTag(arg0) {
       obj1.textStyle = obj2;
       obj1.badgeSize = guildTagBadgeSize;
       obj1.textVariant = tmp4.guildTagTextVariant;
-      obj.children = callback(importDefault(dependencyMap[32]), obj1);
+      obj.children = callback(importDefault(8577), obj1);
       tmp6 = callback(closure_5, obj);
     }
   }
   return tmp6;
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ getBadgeAssetFromCDN: closure_6, getBadgeName: closure_7 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ DIVIDER_DOT: closure_8, PROFILE_SIDE_PADDING: closure_9, UserProfileThemeTypes } = arg1(dependencyMap[3]));
-const tmp4 = arg1(dependencyMap[3]);
-({ AnalyticEvents: closure_11, UserSettingsSections: closure_12 } = arg1(dependencyMap[4]));
-const GuildTagBadgeSize = arg1(dependencyMap[5]).GuildTagBadgeSize;
-const tmp5 = arg1(dependencyMap[4]);
-({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = { container: { flexDirection: "column" }, displayName: { -871710126: "safety_user_sentiment_notice_dismissed_at", -1878764875: "message", -1956545097: null }, details: { STORE_LISTING_BUY: -12, display: null, getVoiceStateChannelSummaryFromVoiceStates: 1 }, detailsText: { <string:4233188529>: "Portugu\u00EAs", <string:1549034242>: "Portuguese", <string:3972818103>: "pt-PT", <string:508671921>: "portuguese" }, botTag: { marginLeft: 4 } };
-obj = { "Bool(true)": "r", "Bool(true)": "TOO_MANY_CONNECTIONS", "Bool(true)": "PREMIUM_TIER_1_PREMIUM_GUILD_1_MONTHLY", "Bool(false)": "Array", borderRadius: importDefault(dependencyMap[8]).radii.sm };
-obj.guildTag = obj;
-obj.transparentBackground = { backgroundColor: "transparent" };
-obj.badge = { resizeMode: "contain" };
-obj.badges = {};
-const obj1 = { 0: -0.000000000000000000000000000000000000000000000000000000005416512498402376, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005311660849324045, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000067606868790614, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026618315203386, -9223372036854775808: 17311091029112627000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 145578.15350649727, borderRadius: importDefault(dependencyMap[8]).radii.sm };
-obj.badgeRow = obj1;
-let closure_16 = obj.createStyles(obj);
-let closure_17 = { guildTagBadgeSize: GuildTagBadgeSize.SIZE_16 };
-const obj2 = { emptyStateContentContainer: "Promise", GAME_SERVERS: "Array", td: "isArray", stackParser: "accessibilityRole", FRAG_LOAD_TIMEOUT: "useStateFromStores", stripSentryFramesAndReverse: "track", TD: "key", guildTagBadgeSize: GuildTagBadgeSize.SIZE_12 };
-let closure_18 = { [UserProfileThemeTypes.PREVIEW]: obj2 };
-const tmp6 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryInfo.tsx");
+({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ getBadgeAssetFromCDN: closure_6, getBadgeName: closure_7 } = USER_PROFILE_TOOLTIP_DELAY);
+({ DIVIDER_DOT: closure_8, PROFILE_SIDE_PADDING: closure_9, UserProfileThemeTypes } = ARBITRARY_LARGE_OFFSET);
+({ AnalyticEvents: closure_11, UserSettingsSections: closure_12 } = ME);
+({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flexDirection: "column" }, displayName: { flexDirection: "row", alignItems: "center", columnGap: 4 }, details: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, detailsText: { flexDirection: "row", flexWrap: "wrap", alignContent: "center", paddingVertical: 2 }, botTag: { marginLeft: 4 } };
+_createForOfIteratorHelperLoose = { alignSelf: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, columnGap: 4 };
+_createForOfIteratorHelperLoose.guildTag = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.transparentBackground = { backgroundColor: "transparent" };
+_createForOfIteratorHelperLoose.badge = { resizeMode: "contain" };
+_createForOfIteratorHelperLoose.badges = { alignSelf: "center", flexDirection: "column", justifyContent: "flex-start", rowGap: 8 };
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, paddingVertical: 2, justifyContent: "flex-start", flexDirection: "row", marginRight: "auto", columnGap: 4 };
+_createForOfIteratorHelperLoose.badgeRow = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { headingVariant: "heading-xl/bold", textVariant: "text-md/normal", badgeSize: 20, badgeRowHorizontalPadding: 7, guildTagBadgeSize: GuildTagBadgeSize.SIZE_16, guildTagTextVariant: "text-sm/medium", guildTagHorizontalPadding: 8 };
+let obj3 = { headingVariant: "heading-lg/bold", textVariant: "text-sm/normal", badgeSize: 16, badgeRowHorizontalPadding: 6, guildTagBadgeSize: GuildTagBadgeSize.SIZE_12, guildTagTextVariant: "text-xs/medium", guildTagHorizontalPadding: 6 };
+let closure_18 = { [UserProfileThemeTypes.PREVIEW]: obj3 };
+const result = require("USER_PROFILE_TOOLTIP_DELAY").fileFinishedImporting("modules/user_profile/native/UserProfilePrimaryInfo.tsx");
 
 export default function UserProfilePrimaryInfo(arg0) {
   let badgeContainerBackground;
@@ -516,13 +514,13 @@ export default function UserProfilePrimaryInfo(arg0) {
   let userTagAccessibilityHint;
   ({ user, displayName, themeType, showBadgeToastOnPress } = arg0);
   ({ guildId, pronouns, style, badges, badgeContainerBackground, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, pendingDisplayNameStyles } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { backgroundColor: badgeContainerBackground };
-  let obj1 = importDefault(dependencyMap[33]);
+  let obj1 = importDefault(3969);
   let name = obj1.useName(user);
-  let obj2 = importDefault(dependencyMap[33]);
+  let obj2 = importDefault(3969);
   obj = { style: items };
-  const items = [tmp.container, style];
+  items = [tmp.container, style];
   obj = { user, guildId };
   let tmp8 = name;
   const userTag = obj2.useUserTag(user);

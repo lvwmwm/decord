@@ -1,24 +1,32 @@
-// Module ID: 10893
-// Function ID: 84685
+// Module ID: 10903
+// Function ID: 84734
 // Name: apiRequest
-// Dependencies: []
+// Dependencies: [10902, 8311, 653, 4015, 507, 686, 664, 477, 8598, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getDevices, getProfile, pause, play, setActiveDevice
 
-// Module 10893 (apiRequest)
+// Module 10903 (apiRequest)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import spotifyUtmParams from "spotifyUtmParams";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function apiRequest(arg0, arg1, arg2, arg3) {
   let num = arg4;
-  arg1 = arg0;
-  const importDefault = arg1;
-  let dependencyMap = arg3;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let obj = arg3;
   if (arg4 === undefined) {
     num = 1;
   }
-  let closure_3 = num;
-  let obj = {};
+  obj = {};
   const merged = Object.assign(arg3);
   obj = { authorization: "Bearer " + arg2 };
   obj["headers"] = obj;
-  dependencyMap = obj;
   const promise = arg0(obj);
   return arg0(obj).then((status) => {
     let rejectResult = status;
@@ -34,23 +42,29 @@ function apiRequest(arg0, arg1, arg2, arg3) {
     if (401 === status.status) {
       if (num > 0) {
         if (202 === status.status) {
-          const obj = status(obj[3]);
+          obj = callback(obj[3]);
           let timeoutPromiseResult = obj.timeoutPromise(5000);
         } else {
           timeoutPromiseResult = Promise.resolve();
         }
-        const nextPromise = timeoutPromiseResult.then(() => callback2(closure_1));
-        timeoutPromiseResult.then(() => callback2(closure_1)).then((body) => callback(closure_0, closure_1, body.body.access_token, closure_2, closure_3 - 1)).then((arg0) => new Promise((arg0) => setImmediate(() => arg0(arg0))));
-        const nextPromise1 = timeoutPromiseResult.then(() => callback2(closure_1)).then((body) => callback(closure_0, closure_1, body.body.access_token, closure_2, closure_3 - 1));
+        const nextPromise = timeoutPromiseResult.then(() => outer2_11(outer1_1));
+        timeoutPromiseResult.then(() => outer2_11(outer1_1)).then((body) => outer2_10(outer1_0, outer1_1, body.body.access_token, outer1_2, outer1_3 - 1)).then((arg0) => {
+          let closure_0 = arg0;
+          return new Promise((arg0) => {
+            let closure_0 = arg0;
+            return setImmediate(() => callback(callback));
+          });
+        });
+        const nextPromise1 = timeoutPromiseResult.then(() => outer2_11(outer1_1)).then((body) => outer2_10(outer1_0, outer1_1, body.body.access_token, outer1_2, outer1_3 - 1));
       }
     }
     return Promise.reject(status);
   });
 }
 function getAccessToken(id) {
-  const arg1 = id;
-  const HTTP = arg1(dependencyMap[4]).HTTP;
-  const obj = { y: 1567300603, isArray: 221342020, accessible: 822948183, url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id) };
+  const _require = id;
+  const HTTP = _require(507).HTTP;
+  let obj = { url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id), oldFormErrors: true, rejectWithError: false };
   const value = HTTP.get(obj);
   return value.catch((body) => {
     body = body.body;
@@ -58,12 +72,12 @@ function getAccessToken(id) {
     if (null != body) {
       code = body.code;
     }
-    if (code === constants.CONNECTION_REVOKED) {
-      let obj = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE", accountId: body };
-      callback(closure_2[5]).dispatch(obj);
-      const obj2 = callback(closure_2[5]);
+    if (code === outer1_6.CONNECTION_REVOKED) {
+      let obj = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE", accountId: id };
+      outer1_1(outer1_2[5]).dispatch(obj);
+      const obj2 = outer1_1(outer1_2[5]);
     } else if (429 === body.status) {
-      const result = body.headers.retry-after * callback(closure_2[6]).Millis.SECOND;
+      const result = body.headers["retry-after"] * outer1_1(outer1_2[6]).Millis.SECOND;
       const _isNaN = isNaN;
       let num2 = 5000;
       if (!isNaN(result)) {
@@ -72,42 +86,38 @@ function getAccessToken(id) {
           num2 = result;
         }
       }
-      obj = body(closure_2[3]);
-      return obj.timeoutPromise(num2).then(() => callback(closure_0));
+      obj = id(outer1_2[3]);
+      return obj.timeoutPromise(num2).then(() => outer2_11(outer1_0));
     }
     return Promise.reject(body);
   }).then((accessToken) => {
-    let obj = callback(closure_2[5]);
-    obj = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN", accountId: accessToken, accessToken: accessToken.body.access_token };
+    let obj = outer1_1(outer1_2[5]);
+    obj = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN", accountId: closure_0, accessToken: accessToken.body.access_token };
     obj.dispatch(obj);
     return accessToken;
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ SPOTIFY_APP_PROTOCOL: closure_4, SpotifyEndpoints: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ AbortCodes: closure_6, Endpoints: closure_7, PlatformTypes: closure_8 } = arg1(dependencyMap[2]));
-const obj = { get: apiRequest.bind(null, arg1(dependencyMap[4]).HTTP.get), put: apiRequest.bind(null, arg1(dependencyMap[4]).HTTP.put) };
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/spotify/SpotifyActionCreators.tsx");
+({ SPOTIFY_APP_PROTOCOL: closure_4, SpotifyEndpoints: closure_5 } = spotifyUtmParams);
+({ AbortCodes: closure_6, Endpoints: closure_7, PlatformTypes: closure_8 } = ME);
+let obj = { get: apiRequest.bind(null, require("_isNativeReflectConstruct").HTTP.get), put: apiRequest.bind(null, require("_isNativeReflectConstruct").HTTP.put) };
+let result = require("ME").fileFinishedImporting("modules/spotify/SpotifyActionCreators.tsx");
 function subscribePlayerStateNotifications(accountId, accessToken, connectionId) {
   let num = arg3;
-  accessToken = accountId;
-  const importDefault = accessToken;
-  const dependencyMap = connectionId;
+  let closure_0 = accountId;
+  let closure_1 = accessToken;
+  let closure_2 = connectionId;
   if (arg3 === undefined) {
     num = 2;
   }
-  let closure_3 = num;
-  let obj = { url: closure_5.NOTIFICATIONS_PLAYER, query: obj };
+  obj = { url: closure_5.NOTIFICATIONS_PLAYER, query: obj };
   obj = { connection_id: connectionId };
   return obj.put(accountId, accessToken, obj).catch((arg0) => {
     if (num <= 0) {
       let rejectResult = Promise.reject(arg0);
     } else {
-      const obj = arg0(arg2[3]);
-      rejectResult = arg0(arg2[3]).timeoutPromise(5000).then(() => callback(closure_0, closure_1, closure_2, closure_3 - 1));
-      const timeoutPromiseResult = arg0(arg2[3]).timeoutPromise(5000);
+      const obj = accountId(table[3]);
+      rejectResult = accountId(table[3]).timeoutPromise(5000).then(() => outer2_12(outer1_0, outer1_1, outer1_2, outer1_3 - 1));
+      const timeoutPromiseResult = accountId(table[3]).timeoutPromise(5000);
     }
     return rejectResult;
   });
@@ -117,47 +127,47 @@ export const SpotifyAPI = obj;
 export { getAccessToken };
 export { subscribePlayerStateNotifications };
 export const getProfile = function getProfile(accountId, accessToken) {
-  accessToken = accountId;
-  const obj = { url: closure_5.PROFILE };
+  let closure_0 = accountId;
+  let obj = { url: closure_5.PROFILE };
   const value = obj.get(accountId, accessToken, obj);
   return value.then((body) => {
-    let obj = callback(closure_2[5]);
-    obj = { type: "SPOTIFY_PROFILE_UPDATE", accountId: body, isPremium: "premium" === body.body.product };
+    let obj = outer1_1(outer1_2[5]);
+    obj = { type: "SPOTIFY_PROFILE_UPDATE", accountId: closure_0, isPremium: "premium" === body.body.product };
     obj.dispatch(obj);
     return body;
   });
 };
 export const getDevices = function getDevices(accountId, accessToken) {
-  accessToken = accountId;
-  const obj = { url: closure_5.PLAYER_DEVICES };
+  let closure_0 = accountId;
+  let obj = { url: closure_5.PLAYER_DEVICES };
   const value = obj.get(accountId, accessToken, obj);
   return value.then((body) => {
     if (body.body) {
-      let obj = callback(closure_2[5]);
-      obj = { type: "SPOTIFY_SET_DEVICES", accountId: body, devices: body.body.devices };
+      let obj = outer1_1(outer1_2[5]);
+      obj = { type: "SPOTIFY_SET_DEVICES", accountId: closure_0, devices: body.body.devices };
       obj.dispatch(obj);
     }
     return body;
   });
 };
 export const play = function play(arg0, arg1, sync_id, TRACK) {
+  let c5;
   let contextUri;
   let obj = arg4;
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = sync_id;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = sync_id;
   if (arg4 === undefined) {
     obj = {};
   }
-  let closure_3;
+  let deviceId;
   let position;
-  let closure_5;
-  const PLAYER_OPENResult = closure_5.PLAYER_OPEN(TRACK, sync_id, false);
-  const deviceId = obj.deviceId;
-  closure_3 = deviceId;
+  c5 = undefined;
+  const PLAYER_OPENResult = c5.PLAYER_OPEN(TRACK, sync_id, false);
+  deviceId = obj.deviceId;
   position = obj.position;
-  ({ contextUri, repeat: closure_5 } = obj);
-  obj = { url: closure_5.PLAYER_PLAY, query: { device_id: deviceId } };
+  ({ contextUri, repeat: c5 } = obj);
+  obj = { url: c5.PLAYER_PLAY, query: { device_id: deviceId } };
   obj = {};
   let tmp3;
   if (null != contextUri) {
@@ -182,26 +192,26 @@ export const play = function play(arg0, arg1, sync_id, TRACK) {
   }
   obj.position_ms = num;
   obj.body = obj;
-  const putResult = obj.put(arg0, arg1, obj);
+  let putResult = obj.put(arg0, arg1, obj);
   return obj.put(arg0, arg1, obj).then((arg0) => {
     let putResult = arg0;
-    if (null != constants) {
-      let obj = { url: constants.PLAYER_REPEAT };
+    if (null != _undefined) {
+      let obj = { url: _undefined.PLAYER_REPEAT };
       obj = { device_id: deviceId };
       let str = "off";
-      if (constants) {
+      if (_undefined) {
         str = "context";
       }
       obj.state = str;
       obj.query = obj;
-      putResult = closure_9.put(arg0, arg1, obj);
-      const tmp3 = arg0;
-      const tmp4 = arg1;
+      putResult = outer1_9.put(closure_0, closure_1, obj);
+      const tmp3 = closure_0;
+      const tmp4 = closure_1;
     }
     return putResult;
   }).then((arg0) => {
-    let obj = arg1(arg2[5]);
-    obj = { type: "SPOTIFY_PLAYER_PLAY", id: arg2 };
+    let obj = callback(sync_id[5]);
+    obj = { type: "SPOTIFY_PLAYER_PLAY", id: sync_id };
     let num = 0;
     if (null != position) {
       num = position;
@@ -214,26 +224,26 @@ export const play = function play(arg0, arg1, sync_id, TRACK) {
 export const pause = function pause(arg0, arg1) {
   const obj = { url: closure_5.PLAYER_PAUSE };
   return obj.put(arg0, arg1, obj).then((arg0) => {
-    callback(closure_2[5]).dispatch({ type: "SPOTIFY_PLAYER_PAUSE" });
+    outer1_1(outer1_2[5]).dispatch({ type: "SPOTIFY_PLAYER_PAUSE" });
     return arg0;
   });
 };
 export const fetchIsSpotifyProtocolRegistered = function fetchIsSpotifyProtocolRegistered() {
   if (!protocolRegistered.isProtocolRegistered()) {
     if (obj.isDesktop()) {
-      const obj2 = importDefault(dependencyMap[8]);
-      importDefault(dependencyMap[8]).isProtocolRegistered(closure_4).then((isRegistered) => {
-        let obj = callback(closure_2[5]);
+      const obj2 = importDefault(8598);
+      importDefault(8598).isProtocolRegistered(closure_4).then((isRegistered) => {
+        let obj = outer1_1(outer1_2[5]);
         obj = { type: "SPOTIFY_SET_PROTOCOL_REGISTERED", isRegistered };
         obj.dispatch(obj);
       });
-      const isProtocolRegisteredResult = importDefault(dependencyMap[8]).isProtocolRegistered(closure_4);
+      const isProtocolRegisteredResult = importDefault(8598).isProtocolRegistered(closure_4);
     }
-    const obj = arg1(dependencyMap[7]);
+    obj = require(477) /* set */;
   }
 };
 export const setActiveDevice = function setActiveDevice(accountId, deviceId) {
-  let obj = importDefault(dependencyMap[5]);
+  let obj = importDefault(686);
   obj = { type: "SPOTIFY_SET_ACTIVE_DEVICE", accountId, deviceId };
   obj.dispatch(obj);
 };

@@ -1,21 +1,23 @@
-// Module ID: 9032
-// Function ID: 70968
+// Module ID: 9039
+// Function ID: 71009
 // Name: _beginConsoleTransfer
-// Dependencies: []
+// Dependencies: [5, 653, 9040, 9047, 4098, 9048, 1934, 480, 9051, 2]
 // Exports: beginConsoleTransfer
 
-// Module 9032 (_beginConsoleTransfer)
+// Module 9039 (_beginConsoleTransfer)
+import TransferFooter from "TransferFooter";
+import set from "logRemoteCommand";
+
+const require = arg1;
 function _beginConsoleTransfer() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _beginConsoleTransfer = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
 const items = [, ];
-({ PLAYSTATION: arr[0], PLAYSTATION_STAGING: arr[1] } = arg1(dependencyMap[1]).PlatformTypes);
-const set = new Set(items);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/game_console/native/beginConsoleTransfer.tsx");
+({ PLAYSTATION: arr[0], PLAYSTATION_STAGING: arr[1] } = require("ME").PlatformTypes);
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/game_console/native/beginConsoleTransfer.tsx");
 
 export const beginConsoleTransfer = function beginConsoleTransfer(channel, result) {
   return _beginConsoleTransfer(...arguments);

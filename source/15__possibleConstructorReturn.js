@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 251
 // Name: _possibleConstructorReturn
-// Dependencies: []
+// Dependencies: [10, 16]
 
 // Module 15 (_possibleConstructorReturn)
 
@@ -14,6 +14,6 @@ export default function _possibleConstructorReturn(arg0, defaultResult1) {
     const typeError = new TypeError("Derived constructors may only return object or undefined");
     throw typeError;
   } else {
-    return require(dependencyMap[1])(arg0);
+    return require(16) /* _assertThisInitialized */(arg0);
   }
 };

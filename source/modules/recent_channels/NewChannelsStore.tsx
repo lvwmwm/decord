@@ -1,9 +1,30 @@
-// Module ID: 6759
-// Function ID: 52944
+// Module ID: 6764
+// Function ID: 52976
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 1194, 1348, 1907, 1917, 1838, 4142, 4325, 653, 664, 5661, 686, 5069, 21, 566, 2]
 
-// Module 6759 (_isNativeReflectConstruct)
+// Module 6764 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import SidebarType from "SidebarType";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_12 } from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_createForOfIteratorHelperLoose";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import ME from "ME";
+import set from "_possibleConstructorReturn";
+
+let closure_17;
+let closure_18;
+let closure_19;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +34,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +87,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -109,10 +130,10 @@ function seedCommunityBaseline() {
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp3 = closure_27;
-      if (closure_27(value)) {
-        let tmp4 = closure_23;
-        let addResult = closure_23.add(value);
+      let tmp3 = guildHasCommunity;
+      if (guildHasCommunity(value)) {
+        let tmp4 = set1;
+        let addResult = set1.add(value);
       }
       iter2 = tmp2();
       iter = iter2;
@@ -121,10 +142,11 @@ function seedCommunityBaseline() {
   return false;
 }
 function maybeAckViewedChannel(guildId, channelId) {
+  let closure_0 = channelId;
   if (tmp) {
     let tmp3 = !optInEnabled.isOptInEnabled(guildId);
     if (!tmp3) {
-      const channel = channel.getChannel(channelId);
+      channel = channel.getChannel(channelId);
       tmp3 = null != channel && channel.isThread();
       const tmp5 = null != channel && channel.isThread();
     }
@@ -132,20 +154,20 @@ function maybeAckViewedChannel(guildId, channelId) {
       tmp3 = null != closure_15.ackMessageId(channelId);
     }
     if (!tmp3) {
-      importDefault(dependencyMap[16]).wait(() => {
-        let obj = arg1(closure_2[17]);
-        obj = { object: constants.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: constants2.ACK_AUTOMATIC };
-        return obj.ack(arg1, obj, true, true, callback(closure_2[18]).atPreviousMillisecond(arg1));
+      importDefault(686).wait(() => {
+        let obj = channelId(outer1_2[17]);
+        obj = { object: outer1_17.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: outer1_18.ACK_AUTOMATIC };
+        return obj.ack(channelId, obj, true, true, outer1_1(outer1_2[18]).atPreviousMillisecond(channelId));
       });
-      const obj3 = importDefault(dependencyMap[16]);
+      const obj3 = importDefault(686);
     }
   }
 }
 function initializeNewChannels(guildId) {
-  const arg1 = guildId;
-  if (null == closure_21[guildId]) {
+  let closure_0 = guildId;
+  if (null == dependencyMap[guildId]) {
     const mapped = channels.getChannels(guildId)[closure_12].map((channel) => channel.channel.id);
-    const member = member.getMember(guildId, id.getId());
+    member = member.getMember(guildId, id.getId());
     let joinedAt;
     if (null != member) {
       joinedAt = member.joinedAt;
@@ -153,33 +175,33 @@ function initializeNewChannels(guildId) {
     if (null != joinedAt) {
       const _Set2 = Set;
       const set = new Set();
-      closure_21[guildId] = set;
+      dependencyMap[guildId] = set;
       const _Date2 = Date;
       const date = new Date(joinedAt);
       const time = date.getTime();
       if (0 !== mapped.length) {
         const _Set = Set;
         const set1 = new Set(mapped.filter((arg0) => {
-          const extractTimestampResult = callback(closure_2[18]).extractTimestamp(arg0);
-          let tmp2 = null == trackedAckMessageId.getTrackedAckMessageId(arg0);
+          const extractTimestampResult = callback(outer1_2[18]).extractTimestamp(arg0);
+          let tmp2 = null == outer1_15.getTrackedAckMessageId(arg0);
           if (tmp2) {
             const _Date = Date;
             const timestamp = Date.now();
-            tmp2 = extractTimestampResult > timestamp - callback(closure_2[14]).Millis.WEEK;
+            tmp2 = extractTimestampResult > timestamp - callback(outer1_2[14]).Millis.WEEK;
           }
           if (tmp2) {
-            tmp2 = extractTimestampResult > guildRecentsDismissedAt.getGuildRecentsDismissedAt(arg0);
+            tmp2 = extractTimestampResult > outer1_8.getGuildRecentsDismissedAt(closure_0);
           }
           if (tmp2) {
             tmp2 = extractTimestampResult > callback;
           }
           if (tmp2) {
-            tmp2 = !channelOrParentOptedIn.isChannelOrParentOptedIn(arg0, arg0);
+            tmp2 = !outer1_16.isChannelOrParentOptedIn(closure_0, arg0);
           }
           return tmp2;
         }));
-        closure_21[guildId] = set1;
-        const _Date = Date;
+        dependencyMap[guildId] = set1;
+        let _Date = Date;
         closure_22[guildId] = Date.now();
       }
     }
@@ -187,44 +209,31 @@ function initializeNewChannels(guildId) {
   }
 }
 function pruneNewChannels() {
-  const keys = importDefault(dependencyMap[18]).keys(closure_21);
+  const keys = importDefault(21).keys(closure_21);
   const item = keys.forEach((arg0) => {
-    const items = [...closure_21[arg0]];
-    closure_21[arg0] = new Set(items.filter((arg0) => !channelOrParentOptedIn.isChannelOrParentOptedIn(arg0, arg0)));
+    let closure_0 = arg0;
+    const items = [...outer1_21[arg0]];
+    outer1_21[arg0] = new Set(items.filter((arg0) => !outer2_16.isChannelOrParentOptedIn(closure_0, arg0)));
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = arg1(dependencyMap[8]).GUILD_SELECTABLE_CHANNELS_KEY;
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-let closure_15 = importDefault(dependencyMap[11]);
-let closure_16 = importDefault(dependencyMap[12]);
-({ AnalyticsObjects: closure_17, AnalyticsObjectTypes: closure_18, GuildFeatures: closure_19 } = arg1(dependencyMap[13]));
-const set = new Set();
+({ AnalyticsObjects: closure_17, AnalyticsObjectTypes: closure_18, GuildFeatures: closure_19 } = ME);
+let set = new Set();
 let closure_21 = {};
 let closure_22 = {};
-const set1 = new Set();
-let tmp5 = (Store) => {
+let set1 = new Set();
+let tmp5 = ((Store) => {
   class NewChannelsStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, NewChannelsStore);
-      obj = closure_6(NewChannelsStore);
-      tmp2 = closure_5;
-      if (closure_24()) {
+      tmp = outer1_3(this, NewChannelsStore);
+      obj = outer1_6(NewChannelsStore);
+      tmp2 = outer1_5;
+      if (outer1_24()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -233,29 +242,28 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = NewChannelsStore;
   callback2(NewChannelsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9, closure_10, closure_11, closure_13, closure_14, closure_15, closure_16, closure_8);
-      const items = [closure_16];
-      this.syncWith(items, closure_30);
+      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_13, outer1_14, outer1_15, outer1_16, outer1_8);
+      const items = [outer1_16];
+      this.syncWith(items, outer1_30);
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "getNewChannelIds",
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        tmp = null == closure_21[arg0];
+        tmp = null == outer1_21[arg0];
       }
       if (tmp) {
-        callback4(arg0);
+        outer1_29(arg0);
       }
       if (null == arg0) {
-        const tmp6 = closure_20;
+        const tmp6 = outer1_20;
       }
       return tmp6;
     }
@@ -267,27 +275,27 @@ let tmp5 = (Store) => {
       if (null == guildId) {
         return false;
       } else {
-        const guild = guild.getGuild(guildId);
+        const guild = outer1_14.getGuild(guildId);
         let tmp2 = null == guild;
         if (!tmp2) {
           const features = guild.features;
-          tmp2 = !features.has(constants.COMMUNITY);
+          tmp2 = !features.has(outer1_19.COMMUNITY);
         }
         let tmp3 = !tmp2;
         if (!tmp2) {
           let tmp4 = null != guildId;
           if (tmp4) {
-            tmp4 = null == closure_21[guildId];
+            tmp4 = null == outer1_21[guildId];
           }
           if (tmp4) {
-            callback4(guildId);
+            outer1_29(guildId);
           }
           let hasItem;
-          if (null != closure_21[guildId]) {
+          if (null != outer1_21[guildId]) {
             hasItem = obj.has(arg1);
           }
           if (hasItem) {
-            hasItem = null == trackedAckMessageId.getTrackedAckMessageId(arg1);
+            hasItem = null == outer1_15.getTrackedAckMessageId(arg1);
           }
           tmp3 = hasItem;
         }
@@ -297,19 +305,18 @@ let tmp5 = (Store) => {
   };
   items[2] = obj;
   return callback(NewChannelsStore, items);
-}(importDefault(dependencyMap[19]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "NewChannelsStore";
-tmp5 = new tmp5(importDefault(dependencyMap[16]), {
+tmp5 = new tmp5(require("dispatcher"), {
   BULK_CLEAR_RECENTS: function handleBulkClearRecents(guildId) {
     guildId = guildId.guildId;
-    const arg1 = guildId;
     const channelIds = guildId.channelIds;
-    if (null == closure_21[guildId]) {
+    if (null == dependencyMap[guildId]) {
       return false;
     } else {
-      const item = channelIds.forEach((arg0) => closure_21[closure_0].delete(arg0));
-      if (0 === closure_21[guildId].size) {
-        delete r0[r1];
+      const item = channelIds.forEach((arg0) => outer1_21[guildId].delete(arg0));
+      if (0 === dependencyMap[guildId].size) {
+        delete tmp[tmp2];
       }
     }
   },
@@ -323,10 +330,10 @@ tmp5 = new tmp5(importDefault(dependencyMap[16]), {
     if (null == guildId) {
       return tmp;
     } else {
-      if (null != closure_21[guildId]) {
+      if (null != dependencyMap[guildId]) {
         const _Date = Date;
         const timestamp = Date.now();
-        if (closure_22[guildId] >= timestamp - importDefault(dependencyMap[14]).Millis.HOUR) {
+        if (table[guildId] >= timestamp - importDefault(664).Millis.HOUR) {
           let flag = false;
           if (null != channelId) {
             maybeAckViewedChannel(guildId, channelId);
@@ -342,7 +349,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[16]), {
     guildId = guildId.guildId;
     let tmp2 = null == guildId;
     if (!tmp2) {
-      tmp2 = tmp !== arg1(dependencyMap[15]).SidebarType.VIEW_CHANNEL;
+      tmp2 = tmp !== require(5661) /* SidebarType */.SidebarType.VIEW_CHANNEL;
     }
     if (!tmp2) {
       maybeAckViewedChannel(guildId, guildId.channelId);
@@ -367,31 +374,30 @@ tmp5 = new tmp5(importDefault(dependencyMap[16]), {
   },
   GUILD_UPDATE: function handleGuildUpdate(guild) {
     guild = guild.guild;
-    let arg1;
-    let importDefault;
+    let c0;
+    let set;
     const tmp = guildHasCommunity(guild.id);
     if (tmp) {
       if (!set1.has(guild.id)) {
         set1.add(guild.id);
-        arg1 = tmp6;
+        c0 = tmp6;
         guild = store.getGuild(guild.id);
         const _Set = Set;
-        const set = new Set();
-        importDefault = set;
+        set = new Set();
         if (tmp15) {
           const items = [, ];
           ({ rulesChannelId: arr[0], publicUpdatesChannelId: arr[1] } = guild);
           const item = items.forEach((arg0) => {
             let hasItem = null != arg0;
             if (hasItem) {
-              hasItem = tmp6.has(arg0);
+              hasItem = _undefined.has(arg0);
             }
             if (hasItem) {
               set.add(arg0);
             }
           });
         }
-        closure_21[guild.id] = set;
+        dependencyMap[guild.id] = set;
         const _Date = Date;
         closure_22[guild.id] = Date.now();
         return true;
@@ -403,147 +409,24 @@ tmp5 = new tmp5(importDefault(dependencyMap[16]), {
     return false;
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    delete r3[r2];
+    delete tmp2[tmp];
     set1.delete(guild.guild.id);
   },
   CHANNEL_CREATE: function handleChannelCreate(channel) {
     channel = channel.channel;
     if (!channel.isVocal()) {
-      let set = closure_21[channel.guild_id];
+      let set = dependencyMap[channel.guild_id];
       if (null == set) {
         const _Set = Set;
         set = new Set();
       }
-      closure_21[channel.guild_id] = set;
-      closure_21[channel.guild_id].add(channel.id);
-      const obj = closure_21[channel.guild_id];
-      const tmp = closure_21;
+      dependencyMap[channel.guild_id] = set;
+      dependencyMap[channel.guild_id].add(channel.id);
+      const obj = dependencyMap[channel.guild_id];
+      const tmp = dependencyMap;
     }
   }
 });
-const obj = {
-  BULK_CLEAR_RECENTS: function handleBulkClearRecents(guildId) {
-    guildId = guildId.guildId;
-    const arg1 = guildId;
-    const channelIds = guildId.channelIds;
-    if (null == closure_21[guildId]) {
-      return false;
-    } else {
-      const item = channelIds.forEach((arg0) => closure_21[closure_0].delete(arg0));
-      if (0 === closure_21[guildId].size) {
-        delete r0[r1];
-      }
-    }
-  },
-  CHANNEL_ACK() {
-    return true;
-  },
-  CHANNEL_SELECT: function handleChannelSelect(arg0) {
-    let channelId;
-    let guildId;
-    ({ guildId, channelId } = arg0);
-    if (null == guildId) {
-      return tmp;
-    } else {
-      if (null != closure_21[guildId]) {
-        const _Date = Date;
-        const timestamp = Date.now();
-        if (closure_22[guildId] >= timestamp - importDefault(dependencyMap[14]).Millis.HOUR) {
-          let flag = false;
-          if (null != channelId) {
-            maybeAckViewedChannel(guildId, channelId);
-            flag = false;
-          }
-        }
-      }
-      initializeNewChannels(guildId);
-      flag = true;
-    }
-  },
-  SIDEBAR_VIEW_CHANNEL: function handleSidebarViewChannel(guildId) {
-    guildId = guildId.guildId;
-    let tmp2 = null == guildId;
-    if (!tmp2) {
-      tmp2 = tmp !== arg1(dependencyMap[15]).SidebarType.VIEW_CHANNEL;
-    }
-    if (!tmp2) {
-      maybeAckViewedChannel(guildId, guildId.channelId);
-    }
-    return false;
-  },
-  SIDEBAR_VIEW_GUILD: function handleSidebarViewGuild(guildId) {
-    guildId = guildId.guildId;
-    if (null != guildId) {
-      maybeAckViewedChannel(guildId, tmp);
-    }
-    return false;
-  },
-  CONNECTION_OPEN: seedCommunityBaseline,
-  CACHE_LOADED: seedCommunityBaseline,
-  GUILD_CREATE: function handleGuildCreate(guild) {
-    guild = guild.guild;
-    if (guildHasCommunity(guild.id)) {
-      set1.add(guild.id);
-    }
-    return false;
-  },
-  GUILD_UPDATE: function handleGuildUpdate(guild) {
-    guild = guild.guild;
-    let arg1;
-    let importDefault;
-    const tmp = guildHasCommunity(guild.id);
-    if (tmp) {
-      if (!set1.has(guild.id)) {
-        set1.add(guild.id);
-        arg1 = tmp6;
-        guild = store.getGuild(guild.id);
-        const _Set = Set;
-        const set = new Set();
-        importDefault = set;
-        if (tmp15) {
-          const items = [, ];
-          ({ rulesChannelId: arr[0], publicUpdatesChannelId: arr[1] } = guild);
-          const item = items.forEach((arg0) => {
-            let hasItem = null != arg0;
-            if (hasItem) {
-              hasItem = tmp6.has(arg0);
-            }
-            if (hasItem) {
-              set.add(arg0);
-            }
-          });
-        }
-        closure_21[guild.id] = set;
-        const _Date = Date;
-        closure_22[guild.id] = Date.now();
-        return true;
-      }
-    }
-    if (!tmp) {
-      set1.delete(guild.id);
-    }
-    return false;
-  },
-  GUILD_DELETE: function handleGuildDelete(guild) {
-    delete r3[r2];
-    set1.delete(guild.guild.id);
-  },
-  CHANNEL_CREATE: function handleChannelCreate(channel) {
-    channel = channel.channel;
-    if (!channel.isVocal()) {
-      let set = closure_21[channel.guild_id];
-      if (null == set) {
-        const _Set = Set;
-        set = new Set();
-      }
-      closure_21[channel.guild_id] = set;
-      closure_21[channel.guild_id].add(channel.id);
-      const obj = closure_21[channel.guild_id];
-      const tmp = closure_21;
-    }
-  }
-};
-const tmp2 = arg1(dependencyMap[13]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/recent_channels/NewChannelsStore.tsx");
+let result = set.fileFinishedImporting("modules/recent_channels/NewChannelsStore.tsx");
 
 export default tmp5;

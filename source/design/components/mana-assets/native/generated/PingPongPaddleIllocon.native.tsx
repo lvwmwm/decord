@@ -1,13 +1,13 @@
-// Module ID: 6401
-// Function ID: 50534
+// Module ID: 6406
+// Function ID: 50563
 // Name: PingPongPaddleIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6407, 2]
 // Exports: PingPongPaddleIllocon
 
-// Module 6401 (PingPongPaddleIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PingPongPaddleIllocon.native.tsx");
+// Module 6406 (PingPongPaddleIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PingPongPaddleIllocon.native.tsx");
 
 export const PingPongPaddleIllocon = function PingPongPaddleIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const PingPongPaddleIllocon = function PingPongPaddleIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6407) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const PingPongPaddleIllocon = function PingPongPaddleIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

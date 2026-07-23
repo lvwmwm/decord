@@ -1,17 +1,19 @@
-// Module ID: 12128
-// Function ID: 93423
+// Module ID: 12242
+// Function ID: 95574
 // Name: useMediaModalFooterBackground
-// Dependencies: []
+// Dependencies: [57, 666, 3834, 689, 2]
 // Exports: default
 
-// Module 12128 (useMediaModalFooterBackground)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx");
+// Module 12242 (useMediaModalFooterBackground)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
+const result = require("map").fileFinishedImporting("modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx");
 
 export default function useMediaModalFooterBackground() {
-  let mediaModalFooterBackgroundColorRgba = arg1(dependencyMap[2]);
-  const tmp = importDefault(dependencyMap[1]);
-  const tmp2 = callback(importDefault(dependencyMap[1])(mediaModalFooterBackgroundColorRgba.useToken(importDefault(dependencyMap[3]).colors.THEME_LOCKED_BLUR_FALLBACK)).rgba(), 4);
+  let mediaModalFooterBackgroundColorRgba = require(3834) /* map */;
+  const tmp = importDefault(666);
+  const tmp2 = callback(importDefault(666)(mediaModalFooterBackgroundColorRgba.useToken(importDefault(689).colors.THEME_LOCKED_BLUR_FALLBACK)).rgba(), 4);
   mediaModalFooterBackgroundColorRgba = { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] };
   return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: undefined };
 };

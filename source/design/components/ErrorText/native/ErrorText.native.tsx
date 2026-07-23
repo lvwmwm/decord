@@ -1,20 +1,23 @@
-// Module ID: 7501
-// Function ID: 60147
+// Module ID: 7506
+// Function ID: 60181
 // Name: ErrorText
-// Dependencies: []
+// Dependencies: [31, 33, 3836, 3976, 4541, 7507, 4126, 2]
 // Exports: ErrorText
 
-// Module 7501 (ErrorText)
-let closure_2 = importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/ErrorText/native/ErrorText.native.tsx");
+// Module 7506 (ErrorText)
+import result from "result";
+import jsxProd from "jsxProd";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+const result = require("getNodeText").fileFinishedImporting("design/components/ErrorText/native/ErrorText.native.tsx");
 
 export const ErrorText = function ErrorText(children) {
   children = children.children;
-  let obj = arg1(dependencyMap[2]);
-  const nodeText = obj.getNodeText(children);
-  const arg1 = nodeText;
+  let obj = nodeText(3836);
+  nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
     let tmp = null != nodeText;
@@ -22,12 +25,14 @@ export const ErrorText = function ErrorText(children) {
       tmp = "" !== nodeText;
     }
     if (tmp) {
-      const AccessibilityAnnouncer = nodeText(closure_1[3]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = nodeText(outer1_1[3]).AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  obj = { "Null": null, "Null": "\u{1F44A}\u{1F3FC}", "Null": true, style: children.style };
-  const items1 = [callback(arg1(dependencyMap[5]).CircleErrorIcon, { "Bool(false)": true, "Bool(false)": true }), callback(arg1(dependencyMap[6]).Text, { children })];
+  obj = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style };
+  const items1 = [callback(nodeText(7507).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
+  obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
+  items1[1] = callback(nodeText(4126).Text, obj);
   obj.children = items1;
-  return callback2(arg1(dependencyMap[4]).Stack, obj);
+  return callback2(nodeText(4541).Stack, obj);
 };

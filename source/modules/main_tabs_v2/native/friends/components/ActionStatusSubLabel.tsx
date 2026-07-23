@@ -1,27 +1,31 @@
-// Module ID: 15054
-// Function ID: 113322
+// Module ID: 15169
+// Function ID: 115491
 // Name: announceActioned
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 3843, 3991, 4126, 4549, 4131, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 15054 (announceActioned)
+// Module 15169 (announceActioned)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function announceActioned(intl) {
-  const AccessibilityAnnouncer = arg1(dependencyMap[3]).AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(3843) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(intl);
 }
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).createStyles(() => ({ container: { overflow: "hidden" }, actionStatus: { position: "absolute" } }));
-const obj = arg1(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[4]).createAnimatedComponent(arg1(dependencyMap[5]).Text);
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(() => ({ container: { overflow: "hidden" }, actionStatus: { position: "absolute" } }));
+let closure_6 = require("module_3991").createAnimatedComponent(require("Text").Text);
 let closure_7 = { code: "function ActionStatusSubLabelTsx1(){const{hasSecondLine,actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const currentlyHasSecondLine=hasSecondLine&&!actioned.get();const lineHeightValue=lineHeight*fontScale;const currentLineHeightValue=currentlyHasSecondLine?lineHeightValue*2:lineHeightValue;return{height:!animate||!actioned.get()?currentLineHeightValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[currentlyHasSecondLine?lineHeightValue*2:lineHeightValue,lineHeightValue]))};}" };
 let closure_8 = { code: "function ActionStatusSubLabelTsx2(){const{actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const translateYValue=actioned.get()?lineHeight*fontScale:0;return{transform:[{translateY:!animate?translateYValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[0,translateYValue]))}]};}" };
 let closure_9 = { code: "function ActionStatusSubLabelTsx3(){const{actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const translateYValue=actioned.get()?0:-lineHeight*fontScale;return{transform:[{translateY:!animate?translateYValue:withTiming(interpolate(actioned.get()?1:0,[0,1],[translateYValue,0]))}],opacity:!animate?actioned.get()?1:0:withTiming(actioned.get()?1:0)};}" };
 let closure_10 = { code: "function ActionStatusSubLabelTsx4(){const{actioned}=this.__closure;return actioned.get();}" };
 let closure_11 = { code: "function ActionStatusSubLabelTsx5(actioned,actionedPrev){const{actionStatusAccessibilityLabel,runOnJS,announceActioned}=this.__closure;const isActioned=actioned&&actionedPrev===false;if(!isActioned||actionStatusAccessibilityLabel==null){return;}runOnJS(announceActioned)(actionStatusAccessibilityLabel);}" };
-const importDefaultResult = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ActionStatusSubLabel.tsx");
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ActionStatusSubLabel.tsx");
 
 export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
   let actionStatus;
@@ -34,33 +38,30 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
   if (num === undefined) {
     num = 16;
   }
-  const arg1 = num;
   let str = lineHeight.textVariant;
   if (str === undefined) {
     str = "text-xs/medium";
   }
   const actioned = lineHeight.actioned;
-  const importDefault = actioned;
   ({ secondaryLabel, actionStatusAccessibilityLabel } = lineHeight);
-  const dependencyMap = actionStatusAccessibilityLabel;
   ({ maxFontSizeMultiplier, animate } = lineHeight);
-  let tmp;
-  let callback;
-  tmp = null != secondaryLabel;
+  let c4;
+  let fontScale;
+  let tmp = null != secondaryLabel;
+  c4 = tmp;
   ({ label, actionStatus } = lineHeight);
-  let obj = arg1(dependencyMap[6]);
-  const fontScale = obj.useFontScale();
-  callback = fontScale;
-  const tmp3 = callback();
-  let obj1 = arg1(dependencyMap[4]);
+  let obj = num(actionStatusAccessibilityLabel[6]);
+  fontScale = obj.useFontScale();
+  const tmp3 = fontScale();
+  let obj1 = num(actionStatusAccessibilityLabel[4]);
   class L {
     constructor() {
-      tmp = closure_4;
-      if (closure_4) {
+      tmp = c4;
+      if (c4) {
         tmp2 = actioned;
         tmp = !actioned.get();
       }
-      result = closure_0 * closure_5;
+      result = c0 * c5;
       result1 = result;
       if (tmp) {
         num = 2;
@@ -72,12 +73,12 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
         tmp6 = actioned;
         withTimingResult = result1;
         if (actioned.get()) {
-          tmp7 = closure_0;
-          tmp8 = closure_2;
+          tmp7 = c0;
+          tmp8 = outer1_2;
           num2 = 7;
-          obj2 = closure_0(closure_2[7]);
+          obj2 = c0(outer1_2[7]);
           num3 = 4;
-          obj3 = closure_0(closure_2[4]);
+          obj3 = c0(outer1_2[4]);
           tmp9 = actioned;
           num4 = 0;
           if (actioned.get()) {
@@ -91,19 +92,19 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
           items = [, ];
           items[0] = result2;
           items[1] = result;
-          withTimingResult = obj2.withTiming(obj3.interpolate(num4, [77601039, 1612144654], items));
+          withTimingResult = obj2.withTiming(obj3.interpolate(num4, [0, 1], items));
         }
       }
       obj.height = withTimingResult;
       return obj;
     }
   }
-  obj = { hasSecondLine: tmp, actioned, lineHeight: num, fontScale, animate, withTiming: arg1(dependencyMap[7]).withTiming, interpolate: arg1(dependencyMap[4]).interpolate };
+  obj = { hasSecondLine: tmp, actioned, lineHeight: num, fontScale, animate, withTiming: num(actionStatusAccessibilityLabel[7]).withTiming, interpolate: num(actionStatusAccessibilityLabel[4]).interpolate };
   L.__closure = obj;
   L.__workletHash = 14210085997091;
   L.__initData = closure_7;
   const animatedStyle = obj1.useAnimatedStyle(L);
-  let obj3 = arg1(dependencyMap[4]);
+  let obj3 = num(actionStatusAccessibilityLabel[4]);
   const fn = function y() {
     let num = 0;
     if (actioned.get()) {
@@ -118,8 +119,8 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
       if (actioned.get()) {
         num4 = 1;
       }
-      const items = [0.229, num];
-      withTimingResult = obj3.withTiming(num(actionStatusAccessibilityLabel[4]).interpolate(num4, [77601039, 1612144654], items));
+      const items = [0, num];
+      withTimingResult = obj3.withTiming(num(actionStatusAccessibilityLabel[4]).interpolate(num4, [0, 1], items));
       const obj4 = num(actionStatusAccessibilityLabel[4]);
     }
     obj.translateY = withTimingResult;
@@ -127,30 +128,30 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
     obj.transform = items1;
     return obj;
   };
-  obj = { actioned, lineHeight: num, fontScale, animate, withTiming: arg1(dependencyMap[7]).withTiming, interpolate: arg1(dependencyMap[4]).interpolate };
+  obj = { actioned, lineHeight: num, fontScale, animate, withTiming: num(actionStatusAccessibilityLabel[7]).withTiming, interpolate: num(actionStatusAccessibilityLabel[4]).interpolate };
   fn.__closure = obj;
   fn.__workletHash = 1040596522101;
   fn.__initData = closure_8;
   const animatedStyle1 = obj3.useAnimatedStyle(fn);
-  let obj5 = arg1(dependencyMap[4]);
+  let obj5 = num(actionStatusAccessibilityLabel[4]);
   class V {
     constructor() {
       num = 0;
       if (!actioned.get()) {
-        tmp = closure_0;
-        tmp2 = closure_5;
-        num = -closure_0 * closure_5;
+        tmp = c0;
+        tmp2 = c5;
+        num = -c0 * c5;
       }
       obj = {};
       obj = {};
       withTimingResult = num;
       if (animate) {
-        tmp4 = closure_0;
-        tmp5 = closure_2;
+        tmp4 = c0;
+        tmp5 = outer1_2;
         num2 = 7;
-        obj3 = closure_0(closure_2[7]);
+        obj3 = c0(outer1_2[7]);
         num3 = 4;
-        obj4 = closure_0(closure_2[4]);
+        obj4 = c0(outer1_2[4]);
         tmp6 = actioned;
         num4 = 0;
         if (actioned.get()) {
@@ -159,17 +160,17 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
         items = [, ];
         items[0] = num;
         items[1] = 0;
-        withTimingResult = obj3.withTiming(obj4.interpolate(num4, [77601039, 1612144654], items));
+        withTimingResult = obj3.withTiming(obj4.interpolate(num4, [0, 1], items));
       }
       obj.translateY = withTimingResult;
       items1 = [];
       items1[0] = obj;
       obj.transform = items1;
       if (animate) {
-        tmp8 = closure_0;
-        tmp9 = closure_2;
+        tmp8 = c0;
+        tmp9 = outer1_2;
         num6 = 7;
-        obj5 = closure_0(closure_2[7]);
+        obj5 = c0(outer1_2[7]);
         tmp10 = actioned;
         num7 = 0;
         if (actioned.get()) {
@@ -187,7 +188,7 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
       return obj;
     }
   }
-  obj1 = { actioned, lineHeight: num, fontScale, animate, withTiming: arg1(dependencyMap[7]).withTiming, interpolate: arg1(dependencyMap[4]).interpolate };
+  obj1 = { actioned, lineHeight: num, fontScale, animate, withTiming: num(actionStatusAccessibilityLabel[7]).withTiming, interpolate: num(actionStatusAccessibilityLabel[4]).interpolate };
   V.__closure = obj1;
   V.__workletHash = 2183035188794;
   V.__initData = closure_9;
@@ -209,19 +210,19 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
       tmp = null != actionStatusAccessibilityLabel;
     }
     if (tmp) {
-      4(actionStatusAccessibilityLabel[4]).runOnJS(closure_12)(actionStatusAccessibilityLabel);
+      4(actionStatusAccessibilityLabel[4]).runOnJS(outer1_12)(actionStatusAccessibilityLabel);
       const obj = 4(actionStatusAccessibilityLabel[4]);
     }
   };
-  const obj8 = arg1(dependencyMap[4]);
-  fn2.__closure = { actionStatusAccessibilityLabel, runOnJS: arg1(dependencyMap[4]).runOnJS, announceActioned };
+  const obj8 = num(actionStatusAccessibilityLabel[4]);
+  fn2.__closure = { actionStatusAccessibilityLabel, runOnJS: num(actionStatusAccessibilityLabel[4]).runOnJS, announceActioned };
   fn2.__workletHash = 14141240445417;
   fn2.__initData = closure_11;
   const animatedReaction = obj8.useAnimatedReaction(Y, fn2);
   obj3 = { style: items };
-  const items = [tmp3.container, animatedStyle];
-  const obj4 = { variant: str, maxFontSizeMultiplier, color: "text-default", style: animatedStyle1, lineClamp: 1, children: label };
-  const items1 = [animate(closure_6, obj4), , ];
+  items = [tmp3.container, animatedStyle];
+  let obj4 = { variant: str, maxFontSizeMultiplier, color: "text-default", style: animatedStyle1, lineClamp: 1, children: label };
+  let items1 = [animate(closure_6, obj4), , ];
   if (tmp) {
     obj5 = { variant: str, maxFontSizeMultiplier, style: animatedStyle1, color: "text-default", lineClamp: 1, children: secondaryLabel };
     tmp = animate(closure_6, obj5);
@@ -234,5 +235,5 @@ export const ActionStatusSubLabel = function ActionStatusSubLabel(lineHeight) {
   obj6.children = actionStatus;
   items1[2] = animate(closure_6, obj6);
   obj3.children = items1;
-  return tmp(importDefault(dependencyMap[4]).View, obj3);
+  return c4(actioned(actionStatusAccessibilityLabel[4]).View, obj3);
 };

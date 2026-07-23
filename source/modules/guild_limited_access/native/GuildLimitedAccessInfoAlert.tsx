@@ -1,48 +1,52 @@
-// Module ID: 12727
-// Function ID: 97653
+// Module ID: 12841
+// Function ID: 99809
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: []
+// Dependencies: [31, 1838, 12842, 653, 33, 4130, 5052, 689, 1212, 4561, 1273, 4126, 2]
 // Exports: default
 
-// Module 12727 (GuildLimitedAccessInfoAlert)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).GUILD_LIMITED_ACCESS_HC_LINK;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = {};
-const tmp3 = arg1(dependencyMap[4]);
-const merged = Object.assign(importDefault(dependencyMap[6])(arg1(dependencyMap[3]).Fonts.PRIMARY_BOLD, importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-obj["textAlign"] = "center";
-obj["marginVertical"] = 12;
-obj.header = obj;
-obj.text = {};
-let closure_7 = obj.createStyles(obj);
-const importDefaultResult = importDefault(dependencyMap[6]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");
+// Module 12841 (GuildLimitedAccessInfoAlert)
+import "result";
+import closure_3 from "_createForOfIteratorHelperLoose";
+import { GUILD_LIMITED_ACCESS_HC_LINK as closure_4 } from "GUILD_LIMITED_ACCESS_HC_LINK";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_BOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+_createForOfIteratorHelperLoose["textAlign"] = "center";
+_createForOfIteratorHelperLoose["marginVertical"] = 12;
+_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.text = { textAlign: "center", marginVertical: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("GUILD_LIMITED_ACCESS_HC_LINK").fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");
 
 export default function GuildLimitedAccessInfoAlert(arg0) {
   let guildId;
   let onClose;
   ({ guildId, onClose } = arg0);
-  const tmp = callback3();
-  const intl = arg1(dependencyMap[8]).intl;
+  const tmp = _createForOfIteratorHelperLoose();
+  const intl = require(1212) /* getSystemLocale */.intl;
   let obj = { helpdeskArticle: closure_4 };
-  let formatResult = intl.format(arg1(dependencyMap[8]).t.ZqkXsC, obj);
-  const guild = guild.getGuild(guildId);
+  let formatResult = intl.format(require(1212) /* getSystemLocale */.t.ZqkXsC, obj);
+  guild = guild.getGuild(guildId);
   if (null != guild) {
-    const intl2 = arg1(dependencyMap[8]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { guildName: guild.name, helpdeskArticle: closure_4 };
-    formatResult = intl2.format(arg1(dependencyMap[8]).t.jn0Xyx, obj);
+    formatResult = intl2.format(require(1212) /* getSystemLocale */.t.jn0Xyx, obj);
   }
   obj = { onClose };
   const obj1 = { style: tmp.header };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj1.children = intl3.string(arg1(dependencyMap[8]).t.kJwpBW);
-  const items = [callback(arg1(dependencyMap[10]).LegacyText, obj1), ];
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.kJwpBW);
+  const items = [callback(require(1273) /* Button */.LegacyText, obj1), ];
   const obj2 = { style: tmp.text, variant: "text-md/medium", children: formatResult };
-  items[1] = callback(arg1(dependencyMap[11]).Text, obj2);
+  items[1] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items;
-  return callback2(importDefault(dependencyMap[9]), obj);
+  return callback2(importDefault(4561), obj);
 };

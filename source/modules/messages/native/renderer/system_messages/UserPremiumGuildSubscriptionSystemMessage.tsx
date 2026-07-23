@@ -1,30 +1,29 @@
-// Module ID: 7684
-// Function ID: 61357
+// Module ID: 7690
+// Function ID: 61394
 // Name: createUserPremiumGuildSubscriptionSystemMessage
-// Dependencies: []
+// Dependencies: [7691, 7649, 7651, 1212, 7652, 2]
 // Exports: createUserPremiumGuildSubscriptionSystemMessage
 
-// Module 7684 (createUserPremiumGuildSubscriptionSystemMessage)
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx");
+// Module 7690 (createUserPremiumGuildSubscriptionSystemMessage)
+const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx");
 
 export const createUserPremiumGuildSubscriptionSystemMessage = function createUserPremiumGuildSubscriptionSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  const tmp = importDefault(dependencyMap[0])(message);
-  let obj = require(dependencyMap[1]);
+  const tmp = importDefault(7691)(message);
+  let obj = require(7649) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp3 = importDefault(dependencyMap[2])({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  const tmp3 = importDefault(7651)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
   obj = {};
   if (tmp > 1) {
-    const intl2 = require(dependencyMap[3]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3, numSubscriptions: tmp };
-    let formatToPartsResult = intl2.formatToParts(require(dependencyMap[3]).t.rbj006, obj);
+    let formatToPartsResult = intl2.formatToParts(require(1212) /* getSystemLocale */.t.rbj006, obj);
   } else {
-    const intl = require(dependencyMap[3]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj1 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3 };
-    formatToPartsResult = intl.formatToParts(require(dependencyMap[3]).t.ihxM9x, obj1);
+    formatToPartsResult = intl.formatToParts(require(1212) /* getSystemLocale */.t.ihxM9x, obj1);
   }
   obj.content = formatToPartsResult;
-  const merged = Object.assign(importDefault(dependencyMap[4])(roleStyle));
+  const merged = Object.assign(importDefault(7652)(roleStyle));
   return obj;
 };

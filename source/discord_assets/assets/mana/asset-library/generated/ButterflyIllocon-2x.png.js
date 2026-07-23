@@ -1,11 +1,10 @@
-// Module ID: 5922
-// Function ID: 49816
+// Module ID: 5927
+// Function ID: 49845
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5922 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ButterflyIllocon-2x.png.js");
+// Module 5927 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ButterflyIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2ef831e04586fcfa6aabc0e3834696934843eb92fd9b61aa10758836fe3b74dd.png";
 export const metadata = { fileBytes: 701 };

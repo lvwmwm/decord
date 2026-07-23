@@ -1,19 +1,22 @@
-// Module ID: 15629
-// Function ID: 119320
+// Module ID: 15746
+// Function ID: 121493
 // Name: openExpressionPicker
-// Dependencies: []
+// Dependencies: [1314, 4338, 677, 3999, 682, 2]
 // Exports: setExpressionPickerView, setSearchQuery, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 15629 (openExpressionPicker)
+// Module 15746 (openExpressionPicker)
+import { ExpressionPickerViewType } from "ExpressionPickerViewType";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import createJSONStorage from "createJSONStorage";
+
 function openExpressionPicker(arg0, arg1, arg2) {
-  const require = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const ExpressionPickerViewType = arg2;
-  require(dependencyMap[4]).batchUpdates(() => store.setState({ activeView: arg0, activeViewType: arg1, activeChannelId: arg2, lastActiveView: store.getState().activeView }));
+  let closure_2 = arg2;
+  _require(682).batchUpdates(() => outer1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: outer1_4.getState().activeView }));
 }
 function closeExpressionPicker(arg0, arg1) {
   const state = withEqualityFnResult.getState();
-  const require = state;
   let tmp2 = undefined !== arg0 && arg0 !== state.activeViewType;
   if (!tmp2) {
     tmp2 = undefined !== arg1 && arg1 !== state.activeChannelId;
@@ -21,29 +24,25 @@ function closeExpressionPicker(arg0, arg1) {
   }
   if (!tmp2) {
     if (null !== state.activeView) {
-      require(dependencyMap[4]).batchUpdates(() => {
-        const obj = { numUses: "mn", REFERRAL_PROGRAM_NITRO_TAB_BADGE: "description", display: "Array", lastActiveView: state.activeView };
-        return state.setState(obj);
+      state(682).batchUpdates(() => {
+        const obj = { activeView: null, activeViewType: null, activeChannelId: null, lastActiveView: state.activeView };
+        return outer1_4.setState(obj);
       });
-      const obj = require(dependencyMap[4]);
+      let obj = state(682);
     }
   }
 }
-const ExpressionPickerViewType = require(dependencyMap[0]).ExpressionPickerViewType;
-let obj = { pickerId: importDefault(dependencyMap[1])("uid_") };
+let obj = { activeView: null, lastActiveView: null, activeViewType: null, activeChannelId: null, searchQuery: "", isSearchSuggestion: false, pickerId: require("uniqueId")("uid_"), isNitroLockedSectionVisible: false, areOnlyNitroLockedSectionsVisible: false };
 let closure_3 = Object.freeze(obj);
-const _module = require(dependencyMap[2]);
-const withEqualityFn = _module.createWithEqualityFn();
-const _module1 = require(dependencyMap[3]);
+useStoreWithEqualityFn = useStoreWithEqualityFn.createWithEqualityFn();
 obj = {
   name: "expression-picker-last-active-view",
   partialize(lastActiveView) {
     return { lastActiveView: lastActiveView.lastActiveView };
   }
 };
-const withEqualityFnResult = withEqualityFn(_module1.persist(() => closure_3, obj));
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/expression_picker/ExpressionPickerStore.tsx");
+const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist(() => closure_3, obj));
+const result = require("useStoreWithEqualityFn").fileFinishedImporting("modules/expression_picker/ExpressionPickerStore.tsx");
 
 export { openExpressionPicker };
 export { closeExpressionPicker };
@@ -77,16 +76,15 @@ export const toggleExpressionPicker = function toggleExpressionPicker(arg0, arg1
   openExpressionPicker(arg0, arg1, arg2);
 };
 export const setExpressionPickerView = function setExpressionPickerView(arg0) {
-  const require = arg0;
-  require(dependencyMap[4]).batchUpdates(() => store.setState({ activeView: arg0, lastActiveView: store.getState().activeView }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_4.setState({ activeView: closure_0, lastActiveView: outer1_4.getState().activeView }));
 };
 export const setSearchQuery = function setSearchQuery(arg0) {
   let flag = arg1;
-  const require = arg0;
+  const _require = arg0;
   if (arg1 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  require(dependencyMap[4]).batchUpdates(() => state.setState({ searchQuery: arg0, isSearchSuggestion: flag }));
+  _require(flag[4]).batchUpdates(() => outer1_4.setState({ searchQuery: closure_0, isSearchSuggestion: flag }));
 };
 export const useExpressionPickerStore = withEqualityFnResult;

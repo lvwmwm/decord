@@ -1,14 +1,15 @@
 // Module ID: 235
 // Function ID: 3241
-// Dependencies: []
+// Dependencies: [236, 69, 178, 237, 101, 238, 204, 239]
 
 // Module 235
-importDefault(dependencyMap[0])("Systrace", () => arg1(dependencyMap[1]));
+const require = arg1;
+require("MessageQueue")("Systrace", () => require(69) /* isEnabled */);
 if (true !== global.RN$Bridgeless) {
-  importDefault(dependencyMap[0])("JSTimers", () => arg1(dependencyMap[2]).default);
+  require("MessageQueue")("JSTimers", () => require(178) /* _allocateCallback */.default);
 }
-importDefault(dependencyMap[0])("RCTLog", () => arg1(dependencyMap[3]).default);
-importDefault(dependencyMap[0])("RCTDeviceEventEmitter", () => arg1(dependencyMap[4]).default);
-importDefault(dependencyMap[0])("RCTNativeAppEventEmitter", () => arg1(dependencyMap[5]).default);
-importDefault(dependencyMap[0])("GlobalPerformanceLogger", () => arg1(dependencyMap[6]).default);
-importDefault(dependencyMap[0])("HMRClient", () => arg1(dependencyMap[7]).default);
+require("MessageQueue")("RCTLog", () => require(237) /* invariant */.default);
+require("MessageQueue")("RCTDeviceEventEmitter", () => require(101) /* _isNativeReflectConstruct */.default);
+require("MessageQueue")("RCTNativeAppEventEmitter", () => require(238) /* _isNativeReflectConstruct */.default);
+require("MessageQueue")("GlobalPerformanceLogger", () => require(204) /* PerformanceLogger */.default);
+require("MessageQueue")("HMRClient", () => require(239).default);

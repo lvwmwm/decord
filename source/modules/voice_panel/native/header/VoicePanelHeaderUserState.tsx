@@ -1,52 +1,59 @@
-// Module ID: 15670
-// Function ID: 119708
+// Module ID: 15787
+// Function ID: 121881
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 4143, 33, 3991, 8372, 4130, 689, 15788, 15786, 8866, 5517, 10014, 566, 4131, 2]
 
-// Module 15670 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15787 (_createForOfIteratorHelperLoose)
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,34 +98,34 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
   if (null != participant) {
     type = participant.type;
   }
-  let obj = guildId(dependencyMap[8]);
+  let obj = require(15786) /* isStableStreamParticipant */;
   let id;
   if (obj.isStableParticipantWithUser(participant)) {
     id = participant.user.id;
   }
-  const tmp2Result = _createForOfIteratorHelperLoose(importDefault(dependencyMap[7])(type, id, guildId));
+  const tmp2Result = _createForOfIteratorHelperLoose(importDefault(15788)(type, id, guildId));
   let iter = tmp2Result();
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp7 = closure_0;
-      let tmp8 = closure_2;
-      if (value.type === closure_0(closure_2[7]).VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
-        let tmp9 = closure_5;
-        let tmp10 = closure_0;
-        let tmp11 = closure_2;
+      let tmp7 = require;
+      let tmp8 = dependencyMap;
+      if (value.type === require(15788) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
+        let tmp9 = jsx;
+        let tmp10 = require;
+        let tmp11 = dependencyMap;
         obj = { blurTheme: "dark", style: tmp.floatingIconWrapper };
-        let tmp12 = closure_5;
+        let tmp12 = jsx;
         obj = { style: tmp.floatingIcon, state: value.videoIconState };
-        obj.children = closure_5(closure_0(closure_2[9]).VideoIcon, obj);
-        let arr = items.push(closure_5(closure_0(closure_2[4]).BackgroundBlurView, obj, "video"));
+        obj.children = jsx(require(8866) /* VideoDisabledSvgIcon */.VideoIcon, { style: tmp.floatingIcon, state: value.videoIconState });
+        let arr = items.push(jsx(require(8372) /* TwinButtons */.BackgroundBlurView, { style: tmp.floatingIcon, state: value.videoIconState }, "video"));
       }
-      let tmp14 = closure_0;
-      let tmp15 = closure_2;
-      if (value.type === closure_0(closure_2[7]).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
-        let tmp26 = closure_0;
-        let tmp27 = closure_2;
-        let tmp25 = closure_5;
+      let tmp14 = require;
+      let tmp15 = dependencyMap;
+      if (value.type === require(15788) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+        let tmp26 = require;
+        let tmp27 = dependencyMap;
+        let tmp25 = jsx;
         let obj1 = { blurTheme: "dark" };
         let items1 = [tmp.floatingIconWrapper, ];
         let leftMargin;
@@ -127,12 +134,12 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
         }
         items1[1] = leftMargin;
         obj1.style = items1;
-        let tmp17 = closure_5;
-        let tmp18 = closure_0;
-        let tmp19 = closure_2;
+        let tmp17 = jsx;
+        let tmp18 = require;
+        let tmp19 = dependencyMap;
         let obj2 = { style: tmp.floatingIcon, state: value.muteDeafenIconState };
-        obj1.children = closure_5(closure_0(closure_2[9]).MuteDeafenIcon, obj2);
-        arr = items.push(tmp25(closure_0(closure_2[4]).BackgroundBlurView, obj1, "mute-deafen"));
+        obj1.children = jsx(require(8866) /* VideoDisabledSvgIcon */.MuteDeafenIcon, { style: tmp.floatingIcon, state: value.muteDeafenIconState });
+        arr = items.push(tmp25(require(8372) /* TwinButtons */.BackgroundBlurView, obj1, "mute-deafen"));
       }
       iter2 = tmp2Result();
       iter = iter2;
@@ -143,72 +150,65 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     const items2 = [tmp.iconContainer, userIcons];
     obj3.style = items2;
     obj3.children = items;
-    return jsx(importDefault(dependencyMap[10]), obj3);
+    return jsx(importDefault(5517), {});
   }
   const tmp2 = _createForOfIteratorHelperLoose;
-  const tmp3 = importDefault(dependencyMap[7]);
+  const tmp3 = importDefault(15788);
 }
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dependencyMap[4]).BackgroundBlurView);
+let closure_6 = require("module_3991").createAnimatedComponent(require("TwinButtons").BackgroundBlurView);
 let closure_7 = { duration: 100 };
-let obj2 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { 0: "absolute", 0: -1, 9223372036854775807: -1, 0: -1, 0: -1, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { position: "absolute", top: 0, left: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, padding: 6 };
 obj.container = obj;
 obj.iconContainer = { flexDirection: "row" };
-const importDefaultResult = importDefault(dependencyMap[3]);
-obj.floatingIconWrapper = { borderRadius: importDefault(dependencyMap[6]).radii.round };
-obj2 = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[6]).colors.WHITE };
-obj.floatingIcon = obj2;
+let obj1 = { width: 20, height: 20, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center" };
+obj.floatingIconWrapper = obj1;
+_createForOfIteratorHelperLoose = { width: 12, height: 12, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+obj.floatingIcon = _createForOfIteratorHelperLoose;
 obj.leftMargin = { marginLeft: 4 };
-let closure_8 = obj2.createStyles(obj);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_9 = { code: "function VoicePanelHeaderUserStateTsx1(){const{withTiming,isHeaderHidden,OPACITY_TIMING}=this.__closure;return{opacity:withTiming(isHeaderHidden.get()?1:0,OPACITY_TIMING)};}" };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.round };
 const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
-  const arg1 = isHeaderHidden;
-  const context = importAllResult.useContext(importDefault(dependencyMap[11]));
-  const channelId = context.channelId;
-  const importDefault = channelId;
+  const context = importAllResult.useContext(channelId(10014));
+  channelId = context.channelId;
   const guildId = context.guildId;
-  let obj = arg1(dependencyMap[12]);
-  const items = [closure_4];
+  let obj = isHeaderHidden(566);
+  const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const selectedParticipant = selectedParticipant.getSelectedParticipant(channelId);
+    const selectedParticipant = outer1_4.getSelectedParticipant(channelId);
     let id;
     if (null != selectedParticipant) {
       id = selectedParticipant.id;
     }
     return id;
   });
-  const tmp4 = useVoicePanelHeaderUserStateIcons(importDefault(dependencyMap[8])(stateFromStores, channelId, guildId), guildId);
-  arg1(dependencyMap[3]);
+  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(15786)(stateFromStores, channelId, guildId), guildId);
+  isHeaderHidden(3991);
   const fn = function s() {
     const obj = {};
     let num = 0;
     if (isHeaderHidden.get()) {
       num = 1;
     }
-    obj.opacity = isHeaderHidden(closure_2[13]).withTiming(num, closure_7);
+    obj.opacity = isHeaderHidden(outer1_2[13]).withTiming(num, outer1_7);
     return obj;
   };
-  obj = { withTiming: arg1(dependencyMap[13]).withTiming, isHeaderHidden, OPACITY_TIMING: closure_7 };
+  obj = { withTiming: isHeaderHidden(4131).withTiming, isHeaderHidden, OPACITY_TIMING: closure_7 };
   fn.__closure = obj;
   fn.__workletHash = 7032221979181;
   fn.__initData = closure_9;
   let tmp7 = null;
   if (null != tmp4) {
-    obj = { "Bool(false)": 3, "Bool(false)": 2, "Bool(false)": 0 };
+    obj = { blurTheme: "dark", style: null, pointerEvents: "none" };
     const items1 = [tmp2.container, tmp6];
     obj.style = items1;
     obj.children = tmp4;
-    tmp7 = <closure_6 {...obj} />;
+    tmp7 = <closure_6 blurTheme="dark" style={null} pointerEvents="none" />;
   }
   return tmp7;
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderUserState.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderUserState.tsx");
 
 export default memoResult;
 export { useVoicePanelHeaderUserStateIcons };

@@ -1,10 +1,10 @@
-// Module ID: 8216
-// Function ID: 64949
+// Module ID: 8222
+// Function ID: 64986
 // Name: getPositiveValue
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getAssetWHRatio
 
-// Module 8216 (getPositiveValue)
+// Module 8222 (getPositiveValue)
 function getPositiveValue(height, arg1) {
   let tmp = height;
   if (null == height) {
@@ -12,8 +12,7 @@ function getPositiveValue(height, arg1) {
   }
   return tmp;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/collectibles/profile_effects/native/getAssetWHRatio.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/native/getAssetWHRatio.tsx");
 
 export const DEFAULT_PROFILE_EFFECT_WH_RATIO = 0.5113636363636364;
 export const getAssetWHRatio = function getAssetWHRatio(width) {

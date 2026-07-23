@@ -1,43 +1,45 @@
-// Module ID: 13466
-// Function ID: 102238
+// Module ID: 13580
+// Function ID: 104394
 // Name: useUploadAvatar
-// Dependencies: [0, 131072, 0, 0, 0]
+// Dependencies: [5, 31, 1849, 653, 1851, 624, 7941, 4098, 4674, 3776, 7854, 7847, 7844, 7846, 2]
 // Exports: default
 
-// Module 13466 (useUploadAvatar)
-import closure_3 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import { PremiumUpsellTypes } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13580 (useUploadAvatar)
+import defaultAreStatesEqual from "defaultAreStatesEqual";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { PremiumUpsellTypes } from "GuildFeatures";
 
-arg1(dependencyMap[1]).useCallback;
-({ AnalyticsPages: closure_6, UPLOAD_MEDIUM_SIZE: closure_7, Base64GIFPrefix: closure_8, AnalyticsSections: closure_9, UpsellTypes: closure_10 } = require("__exportStarResult1"));
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_profile/hooks/native/useUploadAvatar.tsx");
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+require("result").useCallback;
+({ AnalyticsPages: closure_6, UPLOAD_MEDIUM_SIZE: closure_7, Base64GIFPrefix: closure_8, AnalyticsSections: closure_9, UpsellTypes: closure_10 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/native/useUploadAvatar.tsx");
 
 export default function useUploadAvatar(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   let flag = guildId.isTryItOut;
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   const analyticsLocations = guildId.analyticsLocations;
-  const dependencyMap = analyticsLocations;
-  let callback;
+  let stateFromStores;
   let useCallback;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  callback = stateFromStores;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = guildId(analyticsLocations[5]).useStateFromStores(items, () => outer1_5.getCurrentUser());
   const items1 = [analyticsLocations];
   const tmp3 = useCallback(() => {
     let obj = flag(analyticsLocations[6]);
-    obj = { initialUpsellKey: constants3.ANIMATED_AVATAR, analyticsLocation: obj, analyticsProperties: obj1, analyticsLocations };
-    obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_OVERVIEW };
+    obj = { initialUpsellKey: outer1_10.ANIMATED_AVATAR, analyticsLocation: obj, analyticsProperties: obj1, analyticsLocations };
+    obj = { page: outer1_6.USER_SETTINGS, section: outer1_9.SETTINGS_OVERVIEW };
     const result = obj.handleShowUpsellAlert(obj);
   }, items1);
   useCallback = tmp3;
   // CreateGeneratorClosureLongIndex (0x67)
   const items2 = [stateFromStores, guildId, flag, tmp3];
-  return useCallback(callback(tmp), items2);
+  return useCallback(stateFromStores(tmp), items2);
 };

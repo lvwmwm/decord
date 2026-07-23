@@ -1,42 +1,45 @@
-// Module ID: 9284
-// Function ID: 72552
+// Module ID: 9291
+// Function ID: 72593
 // Name: ConversationPreviewSkeleton
-// Dependencies: []
+// Dependencies: [31, 27, 6833, 33, 4130, 689, 3991, 4131, 2]
 // Exports: default
 
-// Module 9284 (ConversationPreviewSkeleton)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = arg1(dependencyMap[2]).MOBILE_PREVIEW_MESSAGE_COUNT;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_8, marginTop: importDefault(dependencyMap[5]).space.PX_4 };
-obj.row = obj;
-const tmp2 = arg1(dependencyMap[3]);
-obj.rowSpacing = { marginTop: importDefault(dependencyMap[5]).space.PX_26 };
-const obj1 = { marginTop: importDefault(dependencyMap[5]).space.PX_26 };
-obj.avatar = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-obj.lines = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
-const obj4 = { hideWhenScrolling: 141317.025, autoCapitalize: 0.00000000000000000000000000000000000000000000000000000000000004133483696512197, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-obj.lineName = obj4;
-const obj3 = { flex: 1, gap: importDefault(dependencyMap[5]).space.PX_4 };
-obj.lineText = { height: 10, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-let closure_8 = obj.createStyles(obj);
+// Module 9291 (ConversationPreviewSkeleton)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.row = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.rowSpacing = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_26 };
+const obj2 = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+_createForOfIteratorHelperLoose.avatar = obj2;
+const obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_26 };
+_createForOfIteratorHelperLoose.lines = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const obj4 = { height: 10, width: "35%", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+_createForOfIteratorHelperLoose.lineName = obj4;
+const obj3 = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.lineText = { height: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_9 = { code: "function ConversationPreviewSkeletonTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const obj5 = { height: 10, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/conversations/components/native/ConversationPreviewSkeleton.tsx");
+const obj5 = { height: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+let result = require("CONVERSATION_COLORS").fileFinishedImporting("modules/conversations/components/native/ConversationPreviewSkeleton.tsx");
 
 export default function ConversationPreviewSkeleton() {
-  const callback = callback3();
-  let obj = callback(dependencyMap[6]);
+  const _require = _createForOfIteratorHelperLoose();
+  let obj = _require(3991);
   const sharedValue = obj.useSharedValue(0.4);
-  const importDefault = sharedValue;
-  const items = [sharedValue];
+  let items = [sharedValue];
   const effect = React.useEffect(() => {
-    const obj = lib(closure_2[6]);
-    const result = sharedValue.set(obj.withRepeat(lib(closure_2[7]).withTiming(1, { duration: 700 }), -1, true));
+    const obj = lib(outer1_2[6]);
+    const result = sharedValue.set(obj.withRepeat(lib(outer1_2[7]).withTiming(1, { duration: 700 }), -1, true));
   }, items);
   const fn = function p() {
     return { opacity: sharedValue.get() };
@@ -44,8 +47,8 @@ export default function ConversationPreviewSkeleton() {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 11432452203963;
   fn.__initData = closure_9;
-  const animatedStyle = callback(dependencyMap[6]).useAnimatedStyle(fn);
-  obj = { style: animatedStyle, aria-hidden: true };
+  const animatedStyle = _require(3991).useAnimatedStyle(fn);
+  obj = { style: animatedStyle, "aria-hidden": true };
   obj = { length: closure_5 };
   obj.children = Array.from(obj, (arg0, arg1) => {
     let obj = {};
@@ -57,13 +60,13 @@ export default function ConversationPreviewSkeleton() {
     items[1] = rowSpacing;
     obj.style = items;
     obj = { style: lib.avatar };
-    const items1 = [callback(closure_4, obj), ];
+    const items1 = [outer1_6(outer1_4, obj), ];
     obj = { style: lib.lines };
-    const items2 = [callback(closure_4, { style: lib.lineName }), callback(closure_4, { style: lib.lineText })];
+    const items2 = [outer1_6(outer1_4, { style: lib.lineName }), outer1_6(outer1_4, { style: lib.lineText })];
     obj.children = items2;
-    items1[1] = callback2(closure_4, obj);
+    items1[1] = outer1_7(outer1_4, obj);
     obj.children = items1;
-    return callback2(closure_4, obj, arg1);
+    return outer1_7(outer1_4, obj, arg1);
   });
-  return callback2(importDefault(dependencyMap[6]).View, obj);
+  return callback(sharedValue(3991).View, obj);
 };

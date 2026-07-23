@@ -1,52 +1,63 @@
-// Module ID: 12527
-// Function ID: 96098
+// Module ID: 12641
+// Function ID: 98254
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1348, 4349, 3, 686, 12642, 4807, 566, 2]
 
-// Module 12527 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12641 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import importDefaultResult from "_possibleConstructorReturn";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,23 +103,14 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let importDefaultResult = importDefault(dependencyMap[8]);
 importDefaultResult = new importDefaultResult("MessagePreviewStore");
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class MessagePreviewStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, MessagePreviewStore);
+      tmp = outer1_4(this, apply);
       items = [, ];
-      items[0] = closure_1(closure_2[9]);
+      items[0] = outer1_1(outer1_2[9]);
       items[1] = {
         CONNECTION_OPEN(arg0) {
               return tmp2Result.handleConnectionOpen(arg0);
@@ -147,33 +149,32 @@ let tmp4 = (Store) => {
               return tmp2Result.handleThreadListSync(arg0);
             }
       };
-      obj = closure_7(MessagePreviewStore);
-      tmp2 = closure_6;
-      if (closure_14()) {
+      obj = outer1_7(apply);
+      tmp2 = outer1_6;
+      if (outer1_14()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      MessagePreviewStore = tmp2Result;
+      apply = tmp2Result;
       map = new Map();
       tmp2Result.guilds = map;
       tmp2Result.generation = 0;
       return tmp2Result;
     }
   }
-  const arg1 = MessagePreviewStore;
   callback2(MessagePreviewStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9, closure_10);
+      this.waitFor(outer1_9, outer1_10);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , ];
   obj = {
     key: "isLatest",
     value(arg0, arg1) {
@@ -227,7 +228,7 @@ let tmp4 = (Store) => {
       const guilds = this.guilds;
       if (!guilds.has(arg0)) {
         const guilds2 = self.guilds;
-        const PreviewData = MessagePreviewStore(closure_2[10]).PreviewData;
+        const PreviewData = MessagePreviewStore(outer1_2[10]).PreviewData;
         const prototype = PreviewData.prototype;
         const previewData = new PreviewData();
         const result = guilds2.set(arg0, previewData);
@@ -262,7 +263,7 @@ let tmp4 = (Store) => {
       let done;
       const self = this;
       this.generation = this.generation + 1;
-      const tmp = callback4(guilds.guilds);
+      const tmp = outer1_12(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -319,7 +320,7 @@ let tmp4 = (Store) => {
         messageIdResult = dataResult.messageId(guildId.channelId);
       }
       if (messageIdResult === guildId.id) {
-        const messages = messages.getMessages(guildId.channelId);
+        const messages = outer1_10.getMessages(guildId.channelId);
         let lastResult = null;
         if (!messages.hasMoreAfter) {
           lastResult = messages.last();
@@ -376,11 +377,11 @@ let tmp4 = (Store) => {
     key: "handleLoadMessagesSuccess",
     value(channelId) {
       const self = this;
-      const basicChannel = store.getBasicChannel(channelId.channelId);
+      const basicChannel = outer1_9.getBasicChannel(channelId.channelId);
       if (null == basicChannel) {
         return false;
       } else {
-        const result = MessagePreviewStore(closure_2[11]).requireSortedDescending(channelId.messages);
+        const result = MessagePreviewStore(outer1_2[11]).requireSortedDescending(channelId.messages);
         if (!channelId.isAfter) {
           if (!channelId.isBefore) {
             if (!channelId.hasMoreAfter) {
@@ -394,7 +395,7 @@ let tmp4 = (Store) => {
             }
           }
         }
-        const obj3 = MessagePreviewStore(closure_2[11]);
+        const obj3 = MessagePreviewStore(outer1_2[11]);
         const first1 = channelId.messages[0];
         let tmp6 = null;
         if (null != first1) {
@@ -409,10 +410,10 @@ let tmp4 = (Store) => {
     key: "handleLocalMessagesLoaded",
     value(channelId) {
       const self = this;
-      const basicChannel = store.getBasicChannel(channelId.channelId);
+      const basicChannel = outer1_9.getBasicChannel(channelId.channelId);
       if (null != basicChannel) {
-        const result = MessagePreviewStore(closure_2[11]).requireSortedDescending(channelId.messages);
-        const obj = MessagePreviewStore(closure_2[11]);
+        const result = MessagePreviewStore(outer1_2[11]).requireSortedDescending(channelId.messages);
+        const obj = MessagePreviewStore(outer1_2[11]);
         const first = channelId.messages[0];
         let tmp6 = null;
         if (null != first) {
@@ -428,9 +429,9 @@ let tmp4 = (Store) => {
     value(guildId) {
       let iter2;
       const self = this;
-      closure_11.verbose("adding remote previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
+      outer1_11.verbose("adding remote previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
       const dataResult = this.data(guildId.guildId);
-      const tmp2 = callback4(guildId.messages);
+      const tmp2 = outer1_12(guildId.messages);
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -450,14 +451,14 @@ let tmp4 = (Store) => {
       let iter2;
       let tmp5;
       let tmp6;
-      closure_11.verbose("adding local previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
+      outer1_11.verbose("adding local previews (guildId: " + guildId.guildId + ", messages: " + guildId.messages.length + ")");
       const dataResult = this.data(guildId.guildId);
-      const tmp2 = callback4(guildId.messages);
+      const tmp2 = outer1_12(guildId.messages);
       let iter = tmp2();
       if (!iter.done) {
         do {
-          let tmp3 = closure_3;
-          let tmp4 = closure_3(iter.value, 2);
+          let tmp3 = outer1_3;
+          let tmp4 = outer1_3(iter.value, 2);
           [tmp5, tmp6] = tmp4;
           if (!dataResult.has(tmp5)) {
             let putResult = dataResult.put(tmp5, tmp6, -Infinity);
@@ -477,8 +478,8 @@ let tmp4 = (Store) => {
     }
   };
   return callback(MessagePreviewStore, items);
-}(importDefault(dependencyMap[12]).Store);
+})(require("initialize").Store);
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/message_previews/MessagePreviewStore.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/message_previews/MessagePreviewStore.tsx");
 
 export default tmp4;

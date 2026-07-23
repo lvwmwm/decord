@@ -1,53 +1,57 @@
-// Module ID: 8271
-// Function ID: 65281
+// Module ID: 8277
+// Function ID: 65318
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 682, 3991, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8271 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8277 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,24 +88,24 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-function useListenerSubscription(activeIndex, closure_3) {
-  closure_3 = activeIndex;
-  const dependencyMap = closure_3;
-  const items = [activeIndex, closure_3];
+function useListenerSubscription(activeIndex, result) {
+  let closure_0 = activeIndex;
+  let closure_1 = result;
+  const items = [activeIndex, result];
   const layoutEffect = React.useLayoutEffect(() => {
-    let value = store.get(arg0);
+    let value = outer1_5.get(activeIndex);
     if (null == value) {
-      value = function createListenerState(sharedValue) {
+      value = (function createListenerState(closure_0) {
         const set = new Set();
-        const value = set;
-        const sum = sum + 1;
+        const sum = outer2_4 + 1;
+        outer2_4 = sum;
         return {
-          sharedValue,
+          sharedValue: closure_0,
           listeners: set,
           valueListener(arg0) {
-            arg0(closure_1[2]).batchUpdates(() => {
+            arg0(table[2]).batchUpdates(() => {
               let done;
-              const tmp = callback(arg0);
+              const tmp = outer4_8(closure_0);
               let iter = tmp();
               if (!iter.done) {
                 do {
@@ -116,64 +120,65 @@ function useListenerSubscription(activeIndex, closure_3) {
           },
           listenerId: sum
         };
-      }(arg0);
+      })(activeIndex);
     }
-    const arg0 = value;
-    const listeners = value.listeners;
-    listeners.add(arg1);
+    activeIndex = value;
+    let listeners = value.listeners;
+    listeners.add(dependencyMap);
     if (1 === value.listeners.size) {
-      const result = store.set(arg0, value);
-      let obj = arg0(arg1[3]);
-      const fn = function s(arg0, arg1, addListener) {
-        const value = arg1;
-        addListener.addListener(arg0, (arg0) => arg1(closure_1[3]).runOnJS(arg1)(arg0));
+      const result = outer1_5.set(activeIndex, value);
+      let obj = activeIndex(3991);
+      let fn = function s(arg0, arg1, addListener) {
+        let closure_0 = arg1;
+        addListener.addListener(arg0, (arg0) => callback(table[3]).runOnJS(callback)(arg0));
       };
-      obj = { runOnJS: arg0(arg1[3]).runOnJS };
+      obj = { runOnJS: activeIndex(3991).runOnJS };
       fn.__closure = obj;
       fn.__workletHash = 568027628003;
-      fn.__initData = closure_6;
-      obj.runOnUI(fn)(value.listenerId, value.valueListener, arg0);
+      fn.__initData = outer1_6;
+      obj.runOnUI(fn)(value.listenerId, value.valueListener, activeIndex);
     }
     return () => {
       const listeners = value.listeners;
-      listeners.delete(closure_1);
+      listeners.delete(outer1_1);
       if (0 === value.listeners.size) {
         const fn = function r(arg0, removeListener) {
           removeListener.removeListener(arg0);
         };
         fn.__closure = {};
         fn.__workletHash = 15997703035823;
-        fn.__initData = closure_7;
-        value(closure_1[3]).runOnUI(fn)(value.listenerId, value);
-        set.delete(value);
-        const obj = value(closure_1[3]);
+        fn.__initData = outer2_7;
+        value(table[3]).runOnUI(fn)(value.listenerId, value);
+        outer2_5.delete(value);
+        const obj = value(table[3]);
       }
     };
   }, items);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = 9999999;
+let c4 = 9999999;
 const map = new Map();
 let closure_6 = { code: "function useStateFromSharedValueTsx1(id,listener,sharedValue){const{runOnJS}=this.__closure;sharedValue.addListener(id,function(value){return runOnJS(listener)(value);});}" };
 let closure_7 = { code: "function useStateFromSharedValueTsx2(id,sharedValue){sharedValue.removeListener(id);}" };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/reanimated/native/useStateFromSharedValue.tsx");
+let result = require("batchUpdates").fileFinishedImporting("modules/reanimated/native/useStateFromSharedValue.tsx");
 
 export default function useStateFromSharedValue(activeIndex) {
-  const arg1 = activeIndex;
-  const tmp = callback(React.useState(() => arg0.get()), 2);
+  let closure_0 = activeIndex;
+  const tmp = callback(React.useState(() => activeIndex.get()), 2);
   useListenerSubscription(activeIndex, tmp[1]);
   return tmp[0];
 };
 export const useDerivedStateFromSharedValue = function useDerivedStateFromSharedValue(activeIndex, arg1) {
-  arg1 = activeIndex;
-  const dependencyMap = arg1;
-  const tmp = callback(React.useState(() => arg1(arg0.get(), undefined)), 2);
-  const callback = tmp[1];
-  const React = React.useRef(arg1);
+  let closure_0 = activeIndex;
+  let closure_1 = arg1;
+  const tmp = callback(React.useState(() => callback(activeIndex.get(), undefined)), 2);
+  callback = tmp[1];
+  React = React.useRef(arg1);
   const layoutEffect = React.useLayoutEffect(() => {
-    closure_3.current = arg1;
+    result.current = closure_1;
   });
-  useListenerSubscription(activeIndex, React.useCallback((arg0) => callback((arg0) => ref.current(arg0, arg0)), []));
+  useListenerSubscription(activeIndex, React.useCallback((arg0) => {
+    let closure_0 = arg0;
+    return callback2((arg0) => outer1_3.current(closure_0, arg0));
+  }, []));
   return tmp[0];
 };

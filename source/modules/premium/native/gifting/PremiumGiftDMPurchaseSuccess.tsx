@@ -1,55 +1,56 @@
-// Module ID: 9763
-// Function ID: 75941
+// Module ID: 9770
+// Function ID: 75982
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 8809, 1456, 8776, 9680, 4543, 1212, 2262, 8783, 4126, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 9763 (PremiumGiftDMSuccessBody)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[4]).space.PX_24, textAlign: "center" };
-obj.title = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj.description = { marginTop: importDefault(dependencyMap[4]).space.PX_8, textAlign: "center" };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_8, textAlign: "center" };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftDMPurchaseSuccess.tsx");
+// Module 9770 (PremiumGiftDMSuccessBody)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
+_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.description = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftDMPurchaseSuccess.tsx");
 
 export default function PremiumGiftDMSuccessBody() {
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(8809) /* importDefaultResult1 */;
   obj = {};
   obj = {};
-  obj.children = callback(importDefault(dependencyMap[12]), { giftStyle: obj.useNativeGiftContext().giftStyle });
+  obj.children = callback(importDefault(8783), { giftStyle: obj.useNativeGiftContext().giftStyle });
   const items = [callback(View, obj), , ];
   const obj1 = { style: tmp.title, variant: "heading-lg/bold" };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[10]).t.MqZXbv);
-  items[1] = callback(arg1(dependencyMap[13]).Text, obj1);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.MqZXbv);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   const obj2 = { style: tmp.description, variant: "text-md/medium" };
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj2.children = intl2.string(arg1(dependencyMap[10]).t.Y1keV0);
-  items[2] = callback(arg1(dependencyMap[13]).Text, obj2);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.Y1keV0);
+  items[2] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items;
   return callback2(closure_6, obj);
 };
 export const PremiumGiftDMSuccessActions = function PremiumGiftDMSuccessActions() {
-  let obj = arg1(dependencyMap[5]);
+  let obj = onClose(navigation[5]);
   const nativeGiftContext = obj.useNativeGiftContext();
-  const onClose = nativeGiftContext.onClose;
-  const arg1 = onClose;
+  onClose = nativeGiftContext.onClose;
   const prePurchaseGiftingBadgeProgress = nativeGiftContext.prePurchaseGiftingBadgeProgress;
-  const importDefault = prePurchaseGiftingBadgeProgress;
-  const navigation = arg1(dependencyMap[6]).useNavigation();
-  const dependencyMap = navigation;
-  const GiftingBadgeExperiment = arg1(dependencyMap[7]).GiftingBadgeExperiment;
+  navigation = onClose(navigation[6]).useNavigation();
+  const GiftingBadgeExperiment = onClose(navigation[7]).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: "PremiumGiftDMSuccessActions" }).enabled;
-  const React = enabled;
   const items = [enabled, prePurchaseGiftingBadgeProgress, navigation, onClose];
-  const callback = React.useCallback(() => {
+  const callback = enabled.useCallback(() => {
     if (enabled) {
       if (null != prePurchaseGiftingBadgeProgress) {
         const obj = { currentProgress: prePurchaseGiftingBadgeProgress };
@@ -59,9 +60,9 @@ export const PremiumGiftDMSuccessActions = function PremiumGiftDMSuccessActions(
     onClose();
   }, items);
   obj = {};
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.text = intl.string(importDefault(dependencyMap[11]).bGKjmg);
+  const intl = onClose(navigation[10]).intl;
+  obj.text = intl.string(prePurchaseGiftingBadgeProgress(navigation[11]).bGKjmg);
   obj.variant = "primary";
   obj.onPress = callback;
-  return callback(arg1(dependencyMap[9]).Button, obj);
+  return callback(onClose(navigation[9]).Button, obj);
 };

@@ -1,13 +1,15 @@
 // Module ID: 1302
-// Function ID: 15211
+// Function ID: 15212
 // Name: reflectionLongConvert
-// Dependencies: []
+// Dependencies: [1297]
 
 // Module 1302 (reflectionLongConvert)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.reflectionLongConvert = function reflectionLongConvert(ZERO, STRING) {
-  if (STRING(arg6[0]).LongType.BIGINT === STRING) {
+  if (require(1297) /* RepeatType */.LongType.BIGINT === STRING) {
     return ZERO.toBigInt();
-  } else if (STRING(arg6[0]).LongType.NUMBER === STRING) {
+  } else if (require(1297) /* RepeatType */.LongType.NUMBER === STRING) {
     return ZERO.toNumber();
   } else {
     return ZERO.toString();

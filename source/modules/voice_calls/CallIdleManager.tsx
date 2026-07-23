@@ -1,9 +1,21 @@
-// Module ID: 15881
-// Function ID: 121588
+// Module ID: 15998
+// Function ID: 123761
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 1347, 1348, 4146, 4203, 6691, 1212, 4944, 4015, 5078, 2]
 
-// Module 15881 (_isNativeReflectConstruct)
+// Module 15998 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,7 +30,7 @@ function isIdle() {
   if (null == currentClientVoiceChannelId) {
     return false;
   } else {
-    const channel = channel.getChannel(currentClientVoiceChannelId);
+    channel = channel.getChannel(currentClientVoiceChannelId);
     const tmp3 = null == channel || !channel.isPrivate();
     let tmp4 = !tmp3;
     if (!tmp3) {
@@ -40,72 +52,16 @@ function disconnect() {
   if (isIdle()) {
     const currentClientVoiceChannelId = store.getCurrentClientVoiceChannelId(null);
     if (null != currentClientVoiceChannelId) {
-      let obj = importDefault(dependencyMap[9]);
-      const intl = arg1(dependencyMap[10]).intl;
+      let obj = importDefault(6691);
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = { number: 3 };
-      obj.sendBotMessage(currentClientVoiceChannelId, intl.formatToPlainString(arg1(dependencyMap[10]).t.XYof5G, obj));
-      const voiceChannel = importDefault(dependencyMap[11]).selectVoiceChannel(null);
-      const obj3 = importDefault(dependencyMap[11]);
+      obj.sendBotMessage(currentClientVoiceChannelId, intl.formatToPlainString(require(1212) /* getSystemLocale */.t.XYof5G, obj));
+      const voiceChannel = importDefault(4944).selectVoiceChannel(null);
+      const obj3 = importDefault(4944);
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let tmp2 = (arg0) => {
-  class CallIdleManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, CallIdleManager);
-      items1 = [...items];
-      obj = closure_6(CallIdleManager);
-      tmp2 = closure_5;
-      if (closure_12()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      CallIdleManager = tmp2Result;
-      timeout = new CallIdleManager(closure_2[12]).Timeout();
-      tmp2Result.idleTimeout = timeout;
-      tmp2Result.handleConnectionClosed = () => {
-        const idleTimeout = tmp2Result.idleTimeout;
-        idleTimeout.stop();
-      };
-      tmp2Result.handleEmbeddedActivityDisconnect = () => {
-        if (callback()) {
-          const idleTimeout = tmp2Result.idleTimeout;
-          idleTimeout.start(180000, closure_14, true);
-        }
-      };
-      tmp2Result.handleVoiceStateUpdates = () => {
-        const idleTimeout = tmp2Result.idleTimeout;
-        if (callback()) {
-          idleTimeout.start(180000, closure_14, false);
-        } else {
-          idleTimeout.stop();
-        }
-      };
-      tmp2Result.actions = { VOICE_STATE_UPDATES: tmp2Result.handleVoiceStateUpdates, CONNECTION_CLOSED: tmp2Result.handleConnectionClosed, EMBEDDED_ACTIVITY_CLOSE: tmp2Result.handleEmbeddedActivityDisconnect };
-      return tmp2Result;
-    }
-  }
-  const arg1 = CallIdleManager;
-  callback2(CallIdleManager, arg0);
-  return callback(CallIdleManager);
-}(importDefault(dependencyMap[13]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/voice_calls/CallIdleManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_calls/CallIdleManager.tsx");
 
 export default tmp2;

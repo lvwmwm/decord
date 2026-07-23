@@ -1,19 +1,24 @@
-// Module ID: 9869
-// Function ID: 76429
+// Module ID: 9876
+// Function ID: 76470
 // Name: isStaffChannel
-// Dependencies: [86966272, 578355200, 647626752, 647757824, 577896448]
+// Dependencies: [1348, 1838, 1849, 653, 2]
 // Exports: default
 
-// Module 9869 (isStaffChannel)
+// Module 9876 (isStaffChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_2 from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+
 function isStaffChannel(channel) {
   if (channel.isPrivate()) {
     const recipients = channel.recipients;
     return recipients.every((arg0) => {
-      const user = user.getUser(arg0);
+      const user = outer1_2.getUser(arg0);
       return null != user && user.isStaff();
     });
   } else {
-    const guild = guild.getGuild(channel.guild_id);
+    guild = guild.getGuild(channel.guild_id);
     let hasItem = null != guild;
     if (hasItem) {
       const features = guild.features;
@@ -22,29 +27,25 @@ function isStaffChannel(channel) {
     return hasItem;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const GuildFeatures = arg1(dependencyMap[3]).GuildFeatures;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/forwarding/isStaffToNonStaffForward.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forwarding/isStaffToNonStaffForward.tsx");
 
 export default function isStaffToNonStaffForward(channel_id, arr) {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
     if (currentUser.isStaff()) {
-      const channel = channel.getChannel(channel_id.channel_id);
+      channel = channel.getChannel(channel_id.channel_id);
       let tmp4 = null != channel;
       if (tmp4) {
         const tmp6 = !isStaffChannel(channel);
         let someResult = !tmp6;
         if (!tmp6) {
           someResult = arr.some((channelId) => {
-            const channel = channel.getChannel(channelId);
+            const channel = outer1_0.getChannel(channelId);
             let tmp = null != channel;
             if (tmp) {
               let tmp2 = !channel.isPrivate();
               if (tmp2) {
-                tmp2 = !callback(channel);
+                tmp2 = !outer1_4(channel);
               }
               tmp = tmp2;
             }

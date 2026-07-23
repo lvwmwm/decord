@@ -1,9 +1,11 @@
-// Module ID: 11862
-// Function ID: 91867
+// Module ID: 11874
+// Function ID: 91920
 // Name: detectableCDNUrl
-// Dependencies: []
+// Dependencies: [653, 2]
 
-// Module 11862 (detectableCDNUrl)
+// Module 11874 (detectableCDNUrl)
+import { Endpoints } from "ME";
+
 function detectableCDNUrl(arg0, GAMES_DETECTABLE) {
   let combined = GAMES_DETECTABLE;
   if (null != CDN_HOST) {
@@ -12,10 +14,9 @@ function detectableCDNUrl(arg0, GAMES_DETECTABLE) {
   }
   return combined;
 }
-const Endpoints = require(dependencyMap[0]).Endpoints;
 const detectableCDNUrlResult = detectableCDNUrl("/detectables/games.json", Endpoints.GAMES_DETECTABLE);
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/game_detection/Constants.tsx");
+const detectableCDNUrlResult1 = detectableCDNUrl("/detectables/non-games.json", Endpoints.NON_GAMES_DETECTABLE);
+const result = require("set").fileFinishedImporting("modules/game_detection/Constants.tsx");
 
 export const DETECTABLE_GAMES_CDN_URL = detectableCDNUrlResult;
-export const DETECTABLE_NON_GAMES_CDN_URL = detectableCDNUrl("/detectables/non-games.json", Endpoints.NON_GAMES_DETECTABLE);
+export const DETECTABLE_NON_GAMES_CDN_URL = detectableCDNUrlResult1;

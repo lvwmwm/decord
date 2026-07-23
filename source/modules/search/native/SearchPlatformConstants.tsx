@@ -1,20 +1,20 @@
-// Module ID: 11389
-// Function ID: 88584
+// Module ID: 11399
+// Function ID: 88634
 // Name: SEARCH_TEXT_INPUT_DEBOUNCE_TIME
-// Dependencies: []
+// Dependencies: [3828, 11400, 11402, 7777, 7775, 11404, 2]
 
-// Module 11389 (SEARCH_TEXT_INPUT_DEBOUNCE_TIME)
-let obj = { REGEX: require(dependencyMap[0]).LINKING_WHITELIST.tiktok.regex, Icon: require(dependencyMap[1]).TiktokNeutralIcon };
+// Module 11399 (SEARCH_TEXT_INPUT_DEBOUNCE_TIME)
+let obj = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.tiktok.regex, Icon: require("TiktokNeutralIcon").TiktokNeutralIcon };
 const items = [obj, , , , ];
-obj = { REGEX: require(dependencyMap[0]).LINKING_WHITELIST.twitter.regex, Icon: require(dependencyMap[2]).TwitterNeutralIcon };
+obj = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.twitter.regex, Icon: require("TwitterNeutralIcon").TwitterNeutralIcon };
 items[1] = obj;
-obj = { REGEX: require(dependencyMap[0]).LINKING_WHITELIST.instagram.regex, Icon: require(dependencyMap[3]).InstagramNeutralIcon };
+obj = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.instagram.regex, Icon: require("InstagramNeutralIcon").InstagramNeutralIcon };
 items[2] = obj;
-items[3] = { REGEX: require(dependencyMap[0]).LINKING_WHITELIST.facebook.regex, Icon: require(dependencyMap[4]).FacebookNeutralIcon };
-const obj1 = { REGEX: require(dependencyMap[0]).LINKING_WHITELIST.facebook.regex, Icon: require(dependencyMap[4]).FacebookNeutralIcon };
-items[4] = { REGEX: require(dependencyMap[0]).LINKING_WHITELIST.youtube.regex, Icon: require(dependencyMap[5]).YoutubeNeutralIcon };
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/search/native/SearchPlatformConstants.tsx");
+items[3] = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.facebook.regex, Icon: require("FacebookNeutralIcon").FacebookNeutralIcon };
+const obj1 = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.facebook.regex, Icon: require("FacebookNeutralIcon").FacebookNeutralIcon };
+items[4] = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.youtube.regex, Icon: require("YoutubeNeutralIcon").YoutubeNeutralIcon };
+const obj2 = { REGEX: require("LINKING_WHITELIST").LINKING_WHITELIST.youtube.regex, Icon: require("YoutubeNeutralIcon").YoutubeNeutralIcon };
+const result = require("TwitterNeutralIcon").fileFinishedImporting("modules/search/native/SearchPlatformConstants.tsx");
 
 export const SEARCH_TEXT_INPUT_DEBOUNCE_TIME = 500;
 export const EMPTY_MEDIA_RESULTS = [];

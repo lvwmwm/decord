@@ -1,10 +1,19 @@
-// Module ID: 10581
-// Function ID: 82592
+// Module ID: 10591
+// Function ID: 82642
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4148, 686, 664, 22, 5744, 3976, 566, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 10581 (_isNativeReflectConstruct)
+// Module 10591 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { EMOJI_PICKER_EMOJI_TO_SHOW_COUNT as closure_9 } from "ParticipantTypes";
+import apply from "apply";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,37 +23,30 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).EMOJI_PICKER_EMOJI_TO_SHOW_COUNT;
 let closure_10 = [];
 let closure_11 = {};
 let closure_12 = [];
 let closure_13 = [];
-let closure_14 = 10 * importDefault(dependencyMap[7]).Millis.SECOND;
-let obj = arg1(dependencyMap[8]);
-let closure_15 = obj.debounce(() => {
-  const effectAnnouncement = arg1(dependencyMap[9]).getEffectAnnouncement(closure_12);
-  const AccessibilityAnnouncer = arg1(dependencyMap[10]).AccessibilityAnnouncer;
+let closure_14 = 10 * require("set").Millis.SECOND;
+let closure_15 = apply.debounce(() => {
+  const effectAnnouncement = require(5744) /* getUniqueListFromMetadata */.getEffectAnnouncement(closure_12);
+  const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(effectAnnouncement, "polite");
   closure_12 = [];
 }, 500);
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class VoiceChannelEffectsStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, VoiceChannelEffectsStore);
-      obj = closure_7(VoiceChannelEffectsStore);
-      tmp2 = closure_6;
-      if (closure_16()) {
+      tmp = outer1_4(this, VoiceChannelEffectsStore);
+      obj = outer1_7(VoiceChannelEffectsStore);
+      tmp2 = outer1_6;
+      if (outer1_16()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -53,23 +55,22 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = VoiceChannelEffectsStore;
   callback2(VoiceChannelEffectsStore, Store);
   let obj = {
     key: "recentlyUsedEmojis",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "isOnCooldown",
     get() {
-      let tmp = null != closure_3;
+      let tmp = null != outer1_3;
       if (tmp) {
         const _Date = Date;
         const date = new Date();
-        tmp = date < closure_3;
+        tmp = date < outer1_3;
       }
       return tmp;
     }
@@ -78,35 +79,34 @@ let tmp2 = (Store) => {
   obj = {
     key: "effectCooldownEndTime",
     get() {
-      return closure_3;
+      return outer1_3;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getEffectForUserId",
     value(arg0) {
-      return closure_11[arg0];
+      return outer1_11[arg0];
     }
   };
   return callback(VoiceChannelEffectsStore, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "VoiceChannelEffectsStore";
-obj = {
+apply = {
   VOICE_CHANNEL_EFFECT_CLEAR: function handleClearVoiceChannelEffect(arg0) {
-    if (null != closure_11[arg0.userId]) {
-      delete r0[r1];
+    if (null != table[arg0.userId]) {
+      delete tmp[tmp2];
     }
   },
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: function handleAddRecentlyUsedEmojis(emoji) {
     emoji = emoji.emoji;
     if (null != emoji) {
-      let arr = arr.unshift(emoji);
-      const uniqByResult = arg1(dependencyMap[8]).uniqBy(arr, "name");
-      arr = uniqByResult;
+      uniqByResult.unshift(emoji);
+      uniqByResult = require(22) /* apply */.uniqBy(uniqByResult, "name");
       if (uniqByResult.length > closure_9 + 1) {
-        arr = arr.pop();
+        uniqByResult.pop();
       }
-      const obj = arg1(dependencyMap[8]);
+      const obj = require(22) /* apply */;
     }
   },
   VOICE_CHANNEL_EFFECT_SEND: function handleReceivedVoiceChannelEffect(arg0) {
@@ -121,40 +121,38 @@ obj = {
       obj.animationType = animationType;
       closure_11[userId] = obj;
       const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(closure_12, 0);
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
       obj = { emojiName: emoji.name, userId };
       items[arraySpreadResult] = obj;
       const sum = arraySpreadResult + 1;
-      closure_12 = items;
       callback3();
     }
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: function handleVoiceChannelEffectSentLocal() {
     const date = new Date();
-    const items = [date, ...closure_13];
-    const substr = items.slice(0, 20);
-    let closure_13 = substr;
+    const items = [date, ...substr];
+    substr = items.slice(0, 20);
     if (substr.length >= 20) {
       const time = date.getTime();
-      const diff = time - closure_13[closure_13.length - 1].getTime();
+      const diff = time - substr[substr.length - 1].getTime();
       if (diff < closure_14) {
         const _Date = Date;
         const date1 = new Date(date.getTime() + closure_14 - diff);
       }
-      const obj2 = closure_13[closure_13.length - 1];
+      const obj2 = substr[substr.length - 1];
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: function handleTimestampUpdate(cooldownEndsAtMs) {
     const date = new Date(Date.now() + cooldownEndsAtMs.cooldownEndsAtMs);
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), apply);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsStore.tsx");
 
 export default tmp2;
 export const clearVoiceChannelEffectForUser = function clearVoiceChannelEffectForUser(userId) {
   if (null != userId) {
-    let obj = importDefault(dependencyMap[6]);
+    let obj = importDefault(686);
     obj = { type: "VOICE_CHANNEL_EFFECT_CLEAR", userId };
     obj.dispatch(obj);
   }

@@ -1,49 +1,47 @@
-// Module ID: 13550
-// Function ID: 102772
+// Module ID: 13664
+// Function ID: 104928
 // Name: useUsernameLiveCheck
-// Dependencies: []
+// Dependencies: [31, 13665, 624, 22, 13666, 13667, 2]
 // Exports: useUsernameLiveCheck
 
-// Module 13550 (useUsernameLiveCheck)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/unique_usernames/useUsernameLiveCheck.tsx");
+// Module 13664 (useUsernameLiveCheck)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("defaultAreStatesEqual").fileFinishedImporting("modules/unique_usernames/useUsernameLiveCheck.tsx");
 
 export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, flag2) {
   let flag3 = arg3;
-  flag = arg0;
+  const _require = arg0;
   if (flag === undefined) {
     flag = true;
   }
-  const importDefault = flag;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const dependencyMap = flag2;
   if (flag3 === undefined) {
     flag3 = false;
   }
-  const React = flag3;
-  let closure_4;
+  let stateFromStores;
   let stateFromStores1;
   let memo;
-  const items = [closure_4];
+  const items = [stateFromStores];
   const items1 = [arg0];
-  const stateFromStores = flag(dependencyMap[2]).useStateFromStores(items, () => stateFromStores.validate(arg0), items1);
-  closure_4 = stateFromStores;
-  const obj = flag(dependencyMap[2]);
-  const items2 = [closure_4];
-  stateFromStores1 = flag(dependencyMap[2]).useStateFromStores(items2, () => stateFromStores.isRateLimited());
+  stateFromStores = _require(flag2[2]).useStateFromStores(items, () => stateFromStores.validate(closure_0), items1);
+  let obj = _require(flag2[2]);
+  const items2 = [stateFromStores];
+  stateFromStores1 = _require(flag2[2]).useStateFromStores(items2, () => stateFromStores.isRateLimited());
   const items3 = [flag2, flag3];
-  memo = React.useMemo(() => arg0(flag2[3]).debounce((arg0) => {
+  memo = flag3.useMemo(() => callback(flag2[3]).debounce((arg0) => {
     let str = "modal";
-    if (closure_2) {
+    if (outer1_2) {
       str = "registration";
     }
-    return callback(closure_2[4]).attemptUsername(arg0, str, closure_2, closure_3);
+    return flag(flag2[4]).attemptUsername(arg0, str, outer1_2, outer1_3);
   }, 800), items3);
   const items4 = [flag, stateFromStores1, stateFromStores, arg0, memo];
-  const effect = React.useEffect(() => {
+  const effect = flag3.useEffect(() => {
     let tmp = flag;
     if (flag) {
       tmp = !stateFromStores1;
@@ -52,18 +50,18 @@ export const useUsernameLiveCheck = function useUsernameLiveCheck(arg0, flag, fl
       tmp = null == stateFromStores;
     }
     if (tmp) {
-      tmp = "" !== arg0;
+      tmp = "" !== closure_0;
     }
     if (tmp) {
-      memo(arg0);
+      memo(closure_0);
     }
   }, items4);
   const items5 = [stateFromStores];
-  return React.useMemo(() => {
+  return flag3.useMemo(() => {
     let result;
     if (null != stateFromStores) {
-      result = arg0(flag2[5]).formatUsernameLiveCheckValidation(stateFromStores);
-      const obj = arg0(flag2[5]);
+      result = callback(flag2[5]).formatUsernameLiveCheckValidation(stateFromStores);
+      const obj = callback(flag2[5]);
     }
     return result;
   }, items5);

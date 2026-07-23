@@ -1,11 +1,17 @@
-// Module ID: 6711
-// Function ID: 52175
+// Module ID: 6716
+// Function ID: 52207
 // Name: isReadableChannel
-// Dependencies: []
+// Dependencies: [1352, 1348, 3758, 653, 2]
 // Exports: isReadableChannelId
 
-// Module 6711 (isReadableChannel)
+// Module 6716 (isReadableChannel)
+import { isTextChannel } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+import ME from "ME";
+
 let BasicPermissions;
+let closure_3;
 function isReadableChannel(basicChannel) {
   let tmp = null != basicChannel;
   if (tmp) {
@@ -24,14 +30,9 @@ function isReadableChannel(basicChannel) {
   }
   return tmp;
 }
-const isTextChannel = require(dependencyMap[0]).isTextChannel;
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[3]);
-({ ChannelTypes: closure_3, BasicPermissions } = _module);
+({ ChannelTypes: closure_3, BasicPermissions } = ME);
 let closure_4 = BasicPermissions.VIEW_CHANNEL | BasicPermissions.READ_MESSAGE_HISTORY;
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/app_database/modules/messages/isReadableChannel.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_database/modules/messages/isReadableChannel.tsx");
 
 export { isReadableChannel };
 export const isReadableChannelId = function isReadableChannelId(channelId) {

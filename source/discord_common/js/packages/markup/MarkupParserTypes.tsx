@@ -1,7 +1,7 @@
-// Module ID: 7671
-// Function ID: 61312
-// Dependencies: []
+// Module ID: 7677
+// Function ID: 61349
+// Name: set
+// Dependencies: [2]
 
-// Module 7671
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/markup/MarkupParserTypes.tsx");
+// Module 7677 (set)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/markup/MarkupParserTypes.tsx");

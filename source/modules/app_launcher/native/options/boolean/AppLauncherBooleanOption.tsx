@@ -1,27 +1,31 @@
-// Module ID: 11290
-// Function ID: 87865
+// Module ID: 11300
+// Function ID: 87915
 // Name: AppLauncherBooleanOption
-// Dependencies: []
+// Dependencies: [57, 31, 33, 4130, 689, 7495, 2]
 // Exports: default
 
-// Module 11290 (AppLauncherBooleanOption)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Bool(true)": "Array", "Bool(true)": "MODAL_CAROUSEL_PREV", "Bool(true)": "isArray", "Bool(true)": "VOICE_CHANNEL_EFFECTS_COACH_MARK", "Bool(true)": "isArray", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
-obj.container = obj;
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
+// Module 11300 (AppLauncherBooleanOption)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
 
 export default function AppLauncherBooleanOption(arg0) {
+  let dependencyMap;
   let hasError;
   let option;
+  let require;
   let style;
-  ({ initialValue: closure_0, onPress: closure_1 } = arg0);
+  ({ initialValue: require, onPress: dependencyMap } = arg0);
   ({ style, option, hasError } = arg0);
-  const tmp2 = callback(React.useState(() => {
+  const tmp2 = first(React.useState(() => {
     let tmp = null != closure_0;
     if (tmp) {
       tmp = "text" === closure_0.type;
@@ -31,11 +35,10 @@ export default function AppLauncherBooleanOption(arg0) {
     }
     return tmp;
   }), 2);
-  const first = tmp2[0];
-  const callback = first;
-  const React = tmp2[1];
-  const obj = { 400888199: null, 2091392542: null };
-  const items = [callback2().container, style];
+  first = tmp2[0];
+  React = tmp2[1];
+  const obj = { start: true, end: true };
+  const items = [_createForOfIteratorHelperLoose().container, style];
   obj.style = items;
   obj.hasError = hasError;
   obj.label = option.displayName;
@@ -44,5 +47,5 @@ export default function AppLauncherBooleanOption(arg0) {
     callback2(!first);
     callback(!first);
   };
-  return jsx(arg1(dependencyMap[5]).FormCheckboxRow, obj);
+  return jsx(require(7495) /* Form */.FormCheckboxRow, { start: true, end: true });
 };

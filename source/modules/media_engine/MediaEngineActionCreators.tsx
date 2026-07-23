@@ -1,13 +1,14 @@
-// Module ID: 10375
-// Function ID: 80023
+// Module ID: 10385
+// Function ID: 80073
 // Name: setPushToTalkState
-// Dependencies: []
+// Dependencies: [4177, 4191, 686, 2]
 // Exports: setPushToTalkState
 
-// Module 10375 (setPushToTalkState)
-let closure_2 = importDefault(dependencyMap[0]);
-const MediaEngineContextTypes = arg1(dependencyMap[1]).MediaEngineContextTypes;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/media_engine/MediaEngineActionCreators.tsx");
+// Module 10385 (setPushToTalkState)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { MediaEngineContextTypes } from "DesktopSources";
+
+const result = require("dispatcher").fileFinishedImporting("modules/media_engine/MediaEngineActionCreators.tsx");
 
 export const setPushToTalkState = function setPushToTalkState(isActive, arg1) {
   let flag = arg1;
@@ -15,10 +16,9 @@ export const setPushToTalkState = function setPushToTalkState(isActive, arg1) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(flag[2]);
   obj = { type: "PUSH_TO_TALK_STATE_CHANGE", isActive, isPriority: flag };
   obj.dispatch(obj);
-  const mediaEngine = mediaEngine.getMediaEngine();
-  mediaEngine.eachConnection((setForceAudioInput) => setForceAudioInput.setForceAudioInput(setForceAudioInput, flag, false), MediaEngineContextTypes.DEFAULT);
+  mediaEngine = mediaEngine.getMediaEngine();
+  mediaEngine.eachConnection((setForceAudioInput) => setForceAudioInput.setForceAudioInput(closure_0, flag, false), MediaEngineContextTypes.DEFAULT);
 };

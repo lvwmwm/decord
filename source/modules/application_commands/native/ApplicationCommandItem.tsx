@@ -1,37 +1,42 @@
-// Module ID: 11433
-// Function ID: 88985
+// Module ID: 11443
+// Function ID: 89035
 // Name: ApplicationCommandItem
-// Dependencies: []
+// Dependencies: [31, 27, 1917, 9558, 33, 4130, 689, 4549, 566, 11337, 4660, 1212, 5085, 4126, 2]
 // Exports: default
 
-// Module 11433 (ApplicationCommandItem)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[3]).AUTOCOMPLETE_ROW_HEIGHT;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
+// Module 11443 (ApplicationCommandItem)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { position: null, left: null, right: null, top: null, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
+  obj = { flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
   obj.applicationCommandItem = obj;
-  obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
+  obj = { backgroundColor: importDefault(689).colors.INTERACTIVE_BACKGROUND_HOVER };
   obj.highlightedApplicationCommandItem = obj;
-  obj.applicationCommandIcon = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-  obj.applicationCommandDescriptionWrapper = { body: "onAnimationFinishCapture", flexDirection: "onAnimationFinish", accessible: "onAnimationFailureCapture" };
-  obj.applicationCommandSectionName = { 0: "Array", 9223372036854775807: "FullProfile" };
+  const obj1 = { width: 32, height: 32, borderRadius: importDefault(689).radii.lg, marginRight: 16 };
+  obj.applicationCommandIcon = obj1;
+  obj.applicationCommandDescriptionWrapper = { flexDirection: "column", flexShrink: 1, alignSelf: "flex-end" };
+  obj.applicationCommandSectionName = { paddingLeft: 16, marginLeft: "auto" };
   return obj;
 });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/application_commands/native/ApplicationCommandItem.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_commands/native/ApplicationCommandItem.tsx");
 
 export default function ApplicationCommandItem(highlighted) {
   let command;
+  let importDefault;
   let section;
   let showIcon;
   ({ command, section } = highlighted);
-  const arg1 = section;
-  ({ guildId: closure_1, showIcon } = highlighted);
+  ({ guildId: importDefault, showIcon } = highlighted);
   if (showIcon === undefined) {
     showIcon = true;
   }
@@ -39,23 +44,22 @@ export default function ApplicationCommandItem(highlighted) {
   if (flag === undefined) {
     flag = false;
   }
-  let dependencyMap;
-  let obj = arg1(dependencyMap[7]);
+  let stateFromStores;
+  let obj = section(stateFromStores[7]);
   const tmp = callback3(obj.useFontScale());
-  let obj1 = arg1(dependencyMap[8]);
-  const items = [closure_5];
-  const stateFromStores = obj1.useStateFromStores(items, () => {
+  let obj1 = section(stateFromStores[8]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj1.useStateFromStores(items, () => {
     if (null != closure_1) {
       let botId;
       if (null != section) {
         botId = section.botId;
       }
       if (null != botId) {
-        return member.getMember(closure_1, section.botId);
+        return outer1_5.getMember(closure_1, section.botId);
       }
     }
   });
-  dependencyMap = stateFromStores;
   const items1 = [section, stateFromStores];
   const memo = React.useMemo(() => section(stateFromStores[9]).getApplicationCommandsIconSource(section, stateFromStores), items1);
   let nick;
@@ -68,10 +72,10 @@ export default function ApplicationCommandItem(highlighted) {
     name = section.name;
   }
   obj = {};
-  const intl = arg1(dependencyMap[11]).intl;
+  const intl = section(stateFromStores[11]).intl;
   obj = { applicationName: name };
   ({ displayDescription: obj4.commandDescription, displayName: obj4.commandName } = command);
-  obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[11]).t.eo8b3e, obj);
+  obj.accessibilityLabel = intl.formatToPlainString(section(stateFromStores[11]).t.eo8b3e, obj);
   obj1 = {};
   const merged = Object.assign(tmp.applicationCommandItem);
   const merged1 = Object.assign(flag ? tmp.highlightedApplicationCommandItem : {});
@@ -83,16 +87,18 @@ export default function ApplicationCommandItem(highlighted) {
   }
   if (showIcon) {
     const obj2 = { style: tmp.applicationCommandIcon, source: memo };
-    showIcon = callback(importDefault(dependencyMap[12]), obj2);
+    showIcon = callback(importDefault(stateFromStores[12]), obj2);
   }
   const items2 = [showIcon, , ];
   const obj3 = { style: tmp.applicationCommandDescriptionWrapper };
-  const obj4 = { children: `/ ${command.displayName}` };
-  const items3 = [callback(arg1(dependencyMap[13]).Text, obj4), callback(arg1(dependencyMap[13]).Text, { children: command.displayDescription })];
+  const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
+  const items3 = [callback(section(stateFromStores[13]).Text, obj4), ];
+  const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default", children: command.displayDescription };
+  items3[1] = callback(section(stateFromStores[13]).Text, obj5);
   obj3.children = items3;
   items2[1] = callback2(View, obj3);
-  const obj6 = { "Null": false, "Null": false, alignItems: false, style: tmp.applicationCommandSectionName, children: name };
-  items2[2] = callback(arg1(dependencyMap[13]).Text, obj6);
+  const obj6 = { style: tmp.applicationCommandSectionName, variant: "eyebrow", color: "text-muted", children: name };
+  items2[2] = callback(section(stateFromStores[13]).Text, obj6);
   obj.children = items2;
-  return callback2(arg1(dependencyMap[10]).PressableOpacity, obj);
+  return callback2(section(stateFromStores[10]).PressableOpacity, obj);
 };

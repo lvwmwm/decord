@@ -1,31 +1,32 @@
-// Module ID: 12776
-// Function ID: 97914
+// Module ID: 12890
+// Function ID: 100070
 // Name: useUserCodeSubmit
-// Dependencies: []
+// Dependencies: [5, 57, 31, 12889, 1212, 8961, 2]
 // Exports: useUserCodeSubmit
 
-// Module 12776 (useUserCodeSubmit)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-const OAuthConstants = arg1(dependencyMap[3]).OAuthConstants;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activate_device/useUserCodeSubmit.tsx");
+// Module 12890 (useUserCodeSubmit)
+import getLocationContextServer from "getLocationContextServer";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { OAuthConstants } from "OAuthConstants";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/activate_device/useUserCodeSubmit.tsx");
 
 export const useUserCodeSubmit = function useUserCodeSubmit(first, onUserCodeAccepted, onClose) {
-  onUserCodeAccepted = first;
-  const dependencyMap = onUserCodeAccepted;
+  let closure_0 = first;
+  let closure_1 = onUserCodeAccepted;
   const callback = onClose;
   const submitting = callback2(React.useState(false), 2);
-  const callback2 = submitting[1];
+  callback2 = submitting[1];
   const error = callback2(React.useState(null), 2);
-  const React = error[1];
+  React = error[1];
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [first, onUserCodeAccepted, onClose];
   const manualSubmit = React.useCallback(callback(tmp), items);
-  const OAuthConstants = manualSubmit;
   const items1 = [first, manualSubmit];
   const effect = React.useEffect(() => {
-    if (arg0.length === manualSubmit.USER_CODE_LENGTH) {
+    if (length.length === manualSubmit.USER_CODE_LENGTH) {
       manualSubmit();
     } else {
       callback(null);

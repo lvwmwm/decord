@@ -1,14 +1,19 @@
-// Module ID: 10311
-// Function ID: 79619
+// Module ID: 10324
+// Function ID: 79693
 // Name: _uploadDebugLogFiles
-// Dependencies: []
+// Dependencies: [5, 1348, 653, 3, 27, 4029, 8857, 10325, 12, 10326, 10328, 1844, 3988, 10329, 10330, 10331, 507, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 10311 (_uploadDebugLogFiles)
+// Module 10324 (_uploadDebugLogFiles)
+import V6OrEarlierAPIError from "V6OrEarlierAPIError";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import importDefaultResult from "timestamp";
+
+const require = arg1;
 function _uploadDebugLogFiles() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _uploadDebugLogFiles = obj;
   return obj(...arguments);
 }
 function uploadAppLogFiles() {
@@ -17,17 +22,12 @@ function uploadAppLogFiles() {
 function _uploadAppLogFiles() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _uploadAppLogFiles = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-let closure_7 = 9437184;
-let importDefaultResult = importDefault(dependencyMap[3]);
+let c7 = 9437184;
 importDefaultResult = new importDefaultResult("DebugUploadManager");
-const CrashReportingManager = arg1(dependencyMap[4]).NativeModules.CrashReportingManager;
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/debug/DebugUploadManager.tsx");
+const CrashReportingManager = require("get ActivityIndicator").NativeModules.CrashReportingManager;
+const result = require("ME").fileFinishedImporting("modules/debug/DebugUploadManager.tsx");
 
 export const uploadDebugLogFiles = function uploadDebugLogFiles(RTC) {
   return _uploadDebugLogFiles(...arguments);

@@ -1,23 +1,24 @@
-// Module ID: 5445
-// Function ID: 46563
+// Module ID: 5448
+// Function ID: 46582
 // Name: NavScrim
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5160, 2]
 
-// Module 5445 (NavScrim)
-const tmp2 = arg1(dependencyMap[1]);
-const View = tmp2.View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 5448 (NavScrim)
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const View = get_ActivityIndicator.View;
 let obj = {};
 obj = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj["backgroundColor"] = importDefault(dependencyMap[4]).colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND;
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+obj["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.ANDROID_NAVIGATION_SCRIM_BACKGROUND;
 obj["top"] = undefined;
 obj.androidNavScrim = obj;
-let closure_4 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(() => {
-  const insets = importDefault(dependencyMap[5])({ includeCustomKeyboardHeight: false }).insets;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(() => {
+  const insets = importDefault(5160)({ includeCustomKeyboardHeight: false }).insets;
   let tmp2 = null;
   if (0 !== insets.bottom) {
     let obj = {};
@@ -26,10 +27,10 @@ const memoResult = importAllResult.memo(() => {
     items[1] = obj;
     obj.style = items;
     obj.pointerEvents = "none";
-    tmp2 = <View {...obj} />;
+    tmp2 = <View height={insets.bottom} />;
   }
   return tmp2;
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/components/Navigator/native/NavScrim.android.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Navigator/native/NavScrim.android.tsx");
 
 export const NavScrim = memoResult;

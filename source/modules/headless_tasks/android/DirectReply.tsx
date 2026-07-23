@@ -1,34 +1,34 @@
-// Module ID: 16512
-// Function ID: 127500
+// Module ID: 16629
+// Function ID: 129674
 // Name: promise
-// Dependencies: []
+// Dependencies: [5, 27, 4123, 3, 16623, 6691, 2]
 
-// Module 16512 (promise)
-let closure_2 = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-const MessageSendLocation = arg1(dependencyMap[2]).MessageSendLocation;
-let importDefaultResult = importDefault(dependencyMap[3]);
+// Module 16629 (promise)
+import trackInvite from "trackInvite";
+import { NativeModules } from "get ActivityIndicator";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+import importDefaultResult from "timestamp";
+
 importDefaultResult = new importDefaultResult("DirectReply");
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/headless_tasks/android/DirectReply.tsx");
+let result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/headless_tasks/android/DirectReply.tsx");
 
 export default (arg0) => {
-  const importDefault = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0) => {
-    closure_5.log("Executing DirectReply");
-    const PushNotificationAndroid = obj.PushNotificationAndroid;
-    const result = PushNotificationAndroid.markNotificationAsDirectReply(arg0.channelId);
-    const obj = arg0(closure_1[4]);
-    obj.awaitStorage(() => {
+    const lib = arg0;
+    outer1_5.log("Executing DirectReply");
+    const PushNotificationAndroid = outer1_3.PushNotificationAndroid;
+    const result = PushNotificationAndroid.markNotificationAsDirectReply(lib.channelId);
+    lib(outer1_1[4]).awaitStorage(() => {
       function _sendMessage() {
         // CreateGeneratorClosureLongIndex (0x67)
-        const obj = callback(tmp);
-        const _sendMessage = obj;
+        const obj = outer3_2(tmp);
         return obj(...arguments);
       }
-      closure_5.log("Storage loaded");
-      function sendMessage(_sendMessage) {
+      outer2_5.log("Storage loaded");
+      (function sendMessage(closure_0) {
         return _sendMessage(...arguments);
-      }(_sendMessage);
+      })(closure_0);
     });
   });
 };

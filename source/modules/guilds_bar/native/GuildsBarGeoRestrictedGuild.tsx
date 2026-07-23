@@ -1,32 +1,33 @@
-// Module ID: 14759
-// Function ID: 111268
+// Module ID: 14875
+// Function ID: 113436
 // Name: GUILD_ITEM_BADGE_SIZE
-// Dependencies: []
+// Dependencies: [31, 14813, 33, 4130, 689, 14827, 1324, 14823, 1392, 5515, 4470, 1212, 8438, 14876, 14844, 5085, 2]
 
-// Module 14759 (GUILD_ITEM_BADGE_SIZE)
-const importAllResult = importAll(dependencyMap[0]);
-const GUILD_ITEM_BADGE_SIZE = arg1(dependencyMap[1]).GUILD_ITEM_BADGE_SIZE;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj1 = arg1(dependencyMap[3]);
+// Module 14875 (GUILD_ITEM_BADGE_SIZE)
+import importAllResult from "result";
+import { GUILD_ITEM_BADGE_SIZE } from "GUILD_ITEM_SIZE";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let obj = {};
-obj = { width: importDefault(dependencyMap[4]).modules.mobile.GUILD_BAR_ITEM_SIZE, height: importDefault(dependencyMap[4]).modules.mobile.GUILD_BAR_ITEM_SIZE };
+obj = { width: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.guildIcon = obj;
-obj1 = { <string:1402249308>: "/assets/design/components/Icon/native/redesign/generated/images", <string:2858493750>: 24, <string:996584032>: 24, <string:3973631124>: null, <string:1314541923>: "d6a8eeb03988caf260d6fea57b710519", width: GUILD_ITEM_BADGE_SIZE, height: GUILD_ITEM_BADGE_SIZE };
-obj.geoRestrictedBadge = obj1;
-let closure_5 = obj1.createStyles(obj);
-const items = [importDefault(dependencyMap[5])({ position: "bottom-right" })];
+_createForOfIteratorHelperLoose = { borderColor: "transparent", width: GUILD_ITEM_BADGE_SIZE, height: GUILD_ITEM_BADGE_SIZE, bottom: 4, right: 12 };
+obj.geoRestrictedBadge = _createForOfIteratorHelperLoose;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+let items = [require("computeGuildsBarCutout")({ position: "bottom-right" })];
 const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
   restrictedGuild = restrictedGuild.restrictedGuild;
-  const arg1 = restrictedGuild;
   const tmp2 = callback();
-  let obj = arg1(dependencyMap[7]);
+  let obj = restrictedGuild(14823);
   let animatableSourceWithFallback = null;
-  const tmp = importDefault(dependencyMap[6])("GuildsBarGeoRestrictedGuild");
+  const tmp = importDefault(1324)("GuildsBarGeoRestrictedGuild");
   if (null != restrictedGuild.icon) {
-    let obj1 = importDefault(dependencyMap[8]);
+    let obj1 = importDefault(1392);
     animatableSourceWithFallback = obj1.getAnimatableSourceWithFallback(false, (canAnimate) => {
-      let obj = callback(closure_2[8]);
-      obj = { id: restrictedGuild.id, size: restrictedGuild(closure_2[9]).ImageSizes[closure_0(undefined, closure_2[9]).GuildIconSizes.LARGE], icon: restrictedGuild.icon, canAnimate };
+      let obj = outer1_1(outer1_2[8]);
+      obj = { id: restrictedGuild.id, size: restrictedGuild(outer1_2[9]).ImageSizes[restrictedGuild(undefined, outer1_2[9]).GuildIconSizes.LARGE], icon: restrictedGuild.icon, canAnimate };
       return obj.getGuildIconSource(obj);
     });
   }
@@ -34,39 +35,45 @@ const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(res
   ({ id: arr[0], name: arr[1] } = restrictedGuild);
   const memo = importAllResult.useMemo(() => ({
     onPress() {
-      let obj = callback(closure_2[10]);
+      let obj = outer2_1(outer2_2[10]);
       obj = {};
-      const intl = lib(closure_2[11]).intl;
-      obj.title = intl.string(lib(closure_2[11]).t.aCAiGl);
-      const intl2 = lib(closure_2[11]).intl;
-      obj = { serverName: lib.name };
-      obj.body = intl2.format(lib(closure_2[11]).t.4cJV9S, obj);
-      const intl3 = lib(closure_2[11]).intl;
-      obj.cancelText = intl3.string(lib(closure_2[11]).t.J2TBi3);
+      const intl = restrictedGuild(outer2_2[11]).intl;
+      obj.title = intl.string(restrictedGuild(outer2_2[11]).t.aCAiGl);
+      const intl2 = restrictedGuild(outer2_2[11]).intl;
+      obj = { serverName: outer1_0.name };
+      obj.body = intl2.format(restrictedGuild(outer2_2[11]).t["4cJV9S"], obj);
+      const intl3 = restrictedGuild(outer2_2[11]).intl;
+      obj.cancelText = intl3.string(restrictedGuild(outer2_2[11]).t.J2TBi3);
       obj.onCancel = function onCancel() {
-        callback(closure_2[12]).leaveGuild(id.id);
+        outer3_1(outer3_2[12]).leaveGuild(outer2_0.id);
       };
       obj.show(obj);
     }
   }), items);
-  obj = { circle: !tmp, styles: obj.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: undefined };
-  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null });
+  obj = { selected: false, unread: false, circle: !tmp };
+  obj.styles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
+  obj.label = restrictedGuild.name;
+  obj.isDragTarget = false;
+  obj.config = memo;
+  obj.cutouts = items;
+  obj.overState = undefined;
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp8 = jsx;
   obj = { style: tmp2.geoRestrictedBadge };
-  obj.externalChildren = jsx(importDefault(dependencyMap[13]), obj);
+  obj.externalChildren = jsx(importDefault(14876), { style: tmp2.geoRestrictedBadge });
   obj1 = { guildId: restrictedGuild.id };
-  obj.expandedChildren = jsx(importDefault(dependencyMap[14]), obj1);
+  obj.expandedChildren = jsx(importDefault(14844), { guildId: restrictedGuild.id });
   if (null != animatableSourceWithFallback) {
     const obj2 = { source: animatableSourceWithFallback, style: tmp2.guildIcon, fadeDuration: 0 };
-    let tmp15 = jsx(importDefault(dependencyMap[15]), obj2);
+    let tmp15 = jsx(importDefault(5085), { source: animatableSourceWithFallback, style: tmp2.guildIcon, fadeDuration: 0 });
   } else {
-    const obj3 = { 9223372036854775807: "HTTP", 9223372036854775807: "Date", 0: "HTTP", value: restrictedGuild.name, size: arg1(dependencyMap[9]).GuildIconSizes.LARGE };
-    tmp15 = jsx(importDefault(dependencyMap[9]), obj3);
-    const tmp13 = importDefault(dependencyMap[9]);
+    const obj3 = { value: restrictedGuild.name, selected: false, animate: false, size: restrictedGuild(5515).GuildIconSizes.LARGE };
+    tmp15 = jsx(importDefault(5515), { value: restrictedGuild.name, selected: false, animate: false, size: restrictedGuild(5515).GuildIconSizes.LARGE });
+    const tmp13 = importDefault(5515);
   }
   obj.children = tmp15;
-  return tmp8(importDefault(dependencyMap[7]), obj);
+  return tmp8(importDefault(14823), obj);
 });
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx");
 
 export default memoResult;

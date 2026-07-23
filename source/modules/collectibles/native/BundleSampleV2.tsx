@@ -1,11 +1,22 @@
-// Module ID: 8209
-// Function ID: 64903
+// Module ID: 8215
+// Function ID: 64940
 // Name: getSizedAssetUri
-// Dependencies: []
+// Dependencies: [31, 27, 8200, 33, 5085, 4130, 689, 44, 1876, 1873, 8216, 8226, 8228, 1273, 8233, 2]
 // Exports: default
 
-// Module 8209 (getSizedAssetUri)
+// Module 8215 (getSizedAssetUri)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let StyleSheet;
+let closure_3;
+let closure_4;
+let closure_6;
+let closure_7;
+const require = arg1;
 function getSizedAssetUri(bgStatic, targetSize) {
   if (null != targetSize) {
     if (bgStatic.startsWith("https://cdn.discordapp.com")) {
@@ -37,12 +48,12 @@ function BundleStaticPreviewContent(arg0) {
   let tmp = null;
   ({ disableBackground, mutedBackground } = arg0);
   if (null != bgStatic) {
-    let obj = { 0: "border", 0: "TOO_MANY_CONNECTIONS", 0: "getTemplateTierCreationAnalyticsContext", 9223372036854775807: null, 9223372036854775807: null };
+    let obj = { source: null, style: null, resizeMode: "cover", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     obj = { uri: getSizedAssetUri(bgStatic, targetSize) };
     obj.source = obj;
     obj.style = closure_8.bgImage;
-    tmp = callback(importDefault(dependencyMap[4]), obj);
-    const tmp5 = importDefault(dependencyMap[4]);
+    tmp = callback(importDefault(5085), obj);
+    const tmp5 = importDefault(5085);
   }
   obj = { style: closure_8.container };
   let tmp11Result = !disableBackground;
@@ -65,13 +76,13 @@ function BundleStaticPreviewContent(arg0) {
   let tmp18 = null != fgStatic;
   if (tmp18) {
     const obj3 = { style: closure_8.fgClip, pointerEvents: "none" };
-    const obj4 = { 0: "border", 0: "TOO_MANY_CONNECTIONS", 0: "getTemplateTierCreationAnalyticsContext", 9223372036854775807: null, 9223372036854775807: null };
+    const obj4 = { source: null, style: null, resizeMode: "cover", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     const obj5 = { uri: getSizedAssetUri(fgStatic, targetSize) };
     obj4.source = obj5;
     obj4.style = closure_8.fgImage;
-    obj3.children = callback(importDefault(dependencyMap[4]), obj4);
+    obj3.children = callback(importDefault(5085), obj4);
     tmp18 = callback(closure_4, obj3);
-    const tmp25 = importDefault(dependencyMap[4]);
+    const tmp25 = importDefault(5085);
   }
   items[1] = tmp18;
   obj.children = items;
@@ -89,10 +100,10 @@ function BundleSampleV2Composed(arg0) {
   const tmp = callback2(size);
   let nameplateData;
   if (null != nameplate) {
-    importDefault(dependencyMap[7])(nameplate.type === arg1(dependencyMap[8]).CollectiblesItemType.NAMEPLATE, "Item must be Nameplate");
-    let obj = arg1(dependencyMap[9]);
+    importDefault(44)(nameplate.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE, "Item must be Nameplate");
+    let obj = require(1873) /* getNameplateData */;
     nameplateData = obj.getNameplateData(nameplate);
-    const tmp5 = importDefault(dependencyMap[7]);
+    const tmp5 = importDefault(44);
   }
   let tmp9 = null != nameplateData ? tmp8.avatarDecorationSizeTriple : tmp8.avatarDecorationSize;
   obj = { style: tmp.bundle };
@@ -100,7 +111,7 @@ function BundleSampleV2Composed(arg0) {
   if (tmp12) {
     obj = { style: tmp.pfx };
     const obj1 = { item: pfx };
-    obj.children = callback(importDefault(dependencyMap[10]), obj1);
+    obj.children = callback(importDefault(8216), obj1);
     tmp12 = callback(closure_4, obj);
   }
   const items = [tmp12, , ];
@@ -114,13 +125,13 @@ function BundleSampleV2Composed(arg0) {
       const obj2 = { style: tmp.nameplate };
       let obj3 = { width: tmp8.nameplatePreviewWidth };
       if ("large" === size) {
-        let XSMALL_20 = arg1(dependencyMap[13]).AvatarSizes.NORMAL;
+        let XSMALL_20 = require(1273) /* Button */.AvatarSizes.NORMAL;
       } else {
-        XSMALL_20 = arg1(dependencyMap[13]).AvatarSizes.XSMALL_20;
+        XSMALL_20 = require(1273) /* Button */.AvatarSizes.XSMALL_20;
       }
       obj3.avatarSize = XSMALL_20;
       obj3.nameplate = nameplateData;
-      obj3 = callback(arg1(dependencyMap[12]).NameplateDummyUserPreview, obj3);
+      obj3 = callback(require(8228) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
       obj2.children = obj3;
       callback(closure_4, obj2);
       const tmp26 = callback;
@@ -134,7 +145,7 @@ function BundleSampleV2Composed(arg0) {
     const obj5 = { item: deco, size: tmp9 };
     tmp9 = null != nameplateData;
     obj5.threeTierBundle = tmp9;
-    obj4.children = callback(importDefault(dependencyMap[11]), obj5);
+    obj4.children = callback(importDefault(8226), obj5);
     callback(closure_4, obj4);
     const tmp19 = callback;
     const tmp20 = closure_4;
@@ -148,7 +159,7 @@ function BundleSampleV2StaticPreview(composedFallbackProps) {
   let targetSize;
   composedFallbackProps = composedFallbackProps.composedFallbackProps;
   ({ previewAssets, disableStaticBackground, mutedStaticBackground, targetSize, exposureLocation } = composedFallbackProps);
-  let obj = arg1(dependencyMap[14]);
+  let obj = require(8233) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment(exposureLocation).enabled) {
     obj = { previewAssets, disableBackground: disableStaticBackground, mutedBackground: mutedStaticBackground, targetSize };
     let tmpResult = tmp(BundleStaticPreviewContent, obj);
@@ -159,14 +170,11 @@ function BundleSampleV2StaticPreview(composedFallbackProps) {
   }
   return tmpResult;
 }
-importAll(dependencyMap[0]);
-({ PixelRatio: closure_3, StyleSheet, View: closure_4 } = arg1(dependencyMap[1]));
-const BUNDLE_PREVIEW_CONFIG = arg1(dependencyMap[2]).BUNDLE_PREVIEW_CONFIG;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
+({ PixelRatio: closure_3, StyleSheet, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 let obj = {};
 obj = {};
-const merged = Object.assign(StyleSheet.absoluteFillObject);
+let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj["overflow"] = "hidden";
 obj.container = obj;
 obj = {};
@@ -175,12 +183,12 @@ obj["overflow"] = "hidden";
 obj["justifyContent"] = "center";
 obj["alignItems"] = "center";
 obj.bgBleedClip = obj;
-const obj1 = {};
+let obj1 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj1["opacity"] = 0.8;
 obj.bgMutedWrap = obj1;
-obj.bgImage = {};
-const obj2 = {};
+obj.bgImage = { width: "100%", height: "100%" };
+let obj2 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 obj2["overflow"] = "hidden";
 obj2["justifyContent"] = "center";
@@ -189,26 +197,32 @@ obj.fgClip = obj2;
 const merged4 = Object.assign(StyleSheet.absoluteFillObject);
 obj.fgImage = {};
 const styles = StyleSheet.create(obj);
-const obj3 = {};
-const tmp4 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
+let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { width: tmp.bundleWidth, height: tmp.bundleHeight, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+  obj = { width: tmp.bundleWidth, height: tmp.bundleHeight, borderRadius: importDefault(689).radii.xs };
   obj.bundle = obj;
-  obj = { position: "absolute", top: tmp.pfxTop, left: tmp.pfxLeft, width: tmp.pfxWidth, height: tmp.pfxHeight, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, transform: items, zIndex: 0, overflow: "hidden", borderRadius: importDefault(dependencyMap[6]).radii.xs };
-  const items = [{ rotate: "-8deg" }];
+  obj = { position: "absolute", top: tmp.pfxTop, left: tmp.pfxLeft, width: tmp.pfxWidth, height: tmp.pfxHeight, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, transform: items, zIndex: 0, overflow: "hidden", borderRadius: importDefault(689).radii.xs };
+  items = [{ rotate: "-8deg" }];
   obj.pfx = obj;
+  const obj1 = { position: "absolute", top: null, right: null, transform: null, zIndex: 1, alignItems: "center", justifyContent: "center" };
+  ({ avatarTop: obj4.top, avatarRight: obj4.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
   const items1 = [{ rotate: "8deg" }];
-  obj.avatar = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarRight, transform: items1 };
+  obj1.transform = items1;
+  obj.avatar = obj1;
+  const obj2 = { position: "absolute", top: null, right: null, transform: null, zIndex: 1, alignItems: "center", justifyContent: "center" };
+  ({ avatarWithNameplateTop: obj5.top, avatarWithNameplateRight: obj5.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
   const items2 = [{ rotate: "8deg" }];
-  obj.avatarWithNameplate = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
-  const obj1 = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarRight, transform: items1 };
-  const obj2 = { top: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateTop, right: BUNDLE_PREVIEW_CONFIG[arg0].avatarWithNameplateRight, transform: items2, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
-  obj.nameplate = { bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj2.transform = items2;
+  obj2.shadowColor = importDefault(689).colors.BLACK;
+  obj2.shadowOffset = { width: 0, height: 4 };
+  obj2.shadowOpacity = 0.5;
+  obj2.shadowRadius = 4;
+  obj.avatarWithNameplate = obj2;
+  const obj3 = { position: "absolute", bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, marginHorizontal: 10, width: "90%", backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWER, zIndex: 2, borderRadius: importDefault(689).radii.sm, shadowColor: importDefault(689).colors.BLACK, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj.nameplate = obj3;
   return obj;
 });
-const obj7 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/collectibles/native/BundleSampleV2.tsx");
+const result = require("SAMPLE_PROFILE_ASPECT_RATIO").fileFinishedImporting("modules/collectibles/native/BundleSampleV2.tsx");
 
 export default function BundleSampleV2(size) {
   let deco;

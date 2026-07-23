@@ -1,32 +1,33 @@
-// Module ID: 12310
-// Function ID: 94324
+// Module ID: 12424
+// Function ID: 96475
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: []
+// Dependencies: [31, 653, 1851, 5464, 6686, 6685, 6661, 1212, 3776, 2]
 // Exports: default
 
-// Module 12310 (useOpenPremiumMarketingPayment)
+// Module 12424 (useOpenPremiumMarketingPayment)
+import result from "result";
+import ME from "ME";
+import GuildFeatures from "GuildFeatures";
+
 let AnalyticsObjectTypes;
 let AnalyticsPages;
 let AnalyticsSections;
-let closure_3 = importAll(dependencyMap[0]);
-({ AnalyticsPages, AnalyticsSections, AnalyticsObjectTypes } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ SubscriptionIntervalTypes: closure_4, PremiumTypes: closure_5 } = arg1(dependencyMap[2]));
+let closure_4;
+let closure_5;
+const require = arg1;
+({ AnalyticsPages, AnalyticsSections, AnalyticsObjectTypes } = ME);
+({ SubscriptionIntervalTypes: closure_4, PremiumTypes: closure_5 } = GuildFeatures);
 let closure_6 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/premium/native/useOpenPremiumMarketingPayment.tsx");
+const result = require("GuildFeatures").fileFinishedImporting("modules/user_settings/premium/native/useOpenPremiumMarketingPayment.tsx");
 
 export default function useOpenPremiumMarketingPayment(arg0) {
-  const analyticsLocations = importDefault(dependencyMap[3])(arg0).analyticsLocations;
-  const arg1 = analyticsLocations;
-  let obj = arg1(dependencyMap[4]);
-  const premiumTrialOffer = obj.usePremiumTrialOffer();
-  const importDefault = premiumTrialOffer;
-  const premiumTrialOfferPremiumType = arg1(dependencyMap[5]).usePremiumTrialOfferPremiumType();
-  const dependencyMap = premiumTrialOfferPremiumType;
+  const analyticsLocations = premiumTrialOffer(premiumTrialOfferPremiumType[3])(arg0).analyticsLocations;
+  let obj = analyticsLocations(premiumTrialOfferPremiumType[4]);
+  premiumTrialOffer = obj.usePremiumTrialOffer();
+  premiumTrialOfferPremiumType = analyticsLocations(premiumTrialOfferPremiumType[5]).usePremiumTrialOfferPremiumType();
   obj = {
     openPayment: React.useCallback(() => {
-      const obj = { analyticsLocation: closure_6, analyticsLocations };
+      const obj = { analyticsLocation: outer1_6, analyticsLocations };
       let fn;
       if (null == premiumTrialOfferPremiumType) {
         fn = (additionalPlans) => {
@@ -42,10 +43,10 @@ export default function useOpenPremiumMarketingPayment(arg0) {
             tmp = 0 === numPremiumGuild;
           }
           if (tmp) {
-            tmp = interval === constants.MONTH;
+            tmp = interval === outer2_4.MONTH;
           }
           if (tmp) {
-            tmp = premiumTier !== closure_5.TIER_1;
+            tmp = premiumTier !== outer2_5.TIER_1;
           }
           return tmp;
         };
@@ -53,7 +54,7 @@ export default function useOpenPremiumMarketingPayment(arg0) {
       obj.predicate = fn;
       let fn2;
       if (null == premiumTrialOfferPremiumType) {
-        fn2 = (premiumTier) => premiumTier.premiumTier === closure_5.TIER_2;
+        fn2 = (premiumTier) => premiumTier.premiumTier === outer2_5.TIER_2;
       }
       obj.initialSelectedCriteria = fn2;
       obj.premiumType = premiumTrialOfferPremiumType;
@@ -61,10 +62,10 @@ export default function useOpenPremiumMarketingPayment(arg0) {
       premiumTrialOffer(premiumTrialOfferPremiumType[6])(obj);
     }, items)
   };
-  const items = [analyticsLocations, premiumTrialOfferPremiumType];
+  items = [analyticsLocations, premiumTrialOfferPremiumType];
   let interval;
   if (null != premiumTrialOffer) {
-    const subscription_trial = premiumTrialOffer.subscription_trial;
+    let subscription_trial = premiumTrialOffer.subscription_trial;
     if (null != subscription_trial) {
       interval = subscription_trial.interval;
     }
@@ -72,7 +73,7 @@ export default function useOpenPremiumMarketingPayment(arg0) {
   const items1 = [interval, , ];
   let interval_count;
   if (null != premiumTrialOffer) {
-    const subscription_trial2 = premiumTrialOffer.subscription_trial;
+    let subscription_trial2 = premiumTrialOffer.subscription_trial;
     if (null != subscription_trial2) {
       interval_count = subscription_trial2.interval_count;
     }
@@ -82,7 +83,7 @@ export default function useOpenPremiumMarketingPayment(arg0) {
   obj.buttonText = React.useMemo(() => {
     if (null == premiumTrialOfferPremiumType) {
       const intl = analyticsLocations(premiumTrialOfferPremiumType[7]).intl;
-      let stringResult = intl.string(analyticsLocations(premiumTrialOfferPremiumType[7]).t.8x0jKT);
+      let stringResult = intl.string(analyticsLocations(premiumTrialOfferPremiumType[7]).t["8x0jKT"]);
     } else {
       let obj = analyticsLocations(premiumTrialOfferPremiumType[8]);
       obj = {};

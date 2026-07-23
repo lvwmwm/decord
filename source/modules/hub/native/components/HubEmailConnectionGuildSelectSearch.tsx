@@ -1,61 +1,73 @@
-// Module ID: 11766
-// Function ID: 91354
+// Module ID: 11776
+// Function ID: 91403
 // Name: EmptyState
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [5, 57, 31, 27, 11753, 33, 4130, 689, 11777, 4126, 1212, 1456, 5045, 1557, 11766, 4029, 5087, 5771, 1273, 11771, 2]
 // Exports: default
 
-// Module 11766 (EmptyState)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { HubEmailConnectionSteps } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 11776 (EmptyState)
+import closure_3 from "jsxProd";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function EmptyState() {
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.emptyWrapper };
-  obj = { style: tmp.emptyStateImage, source: importDefault(dependencyMap[8]) };
+  obj = { style: tmp.emptyStateImage, source: importDefault(11777) };
   const items = [callback2(closure_7, obj), ];
-  obj = { "Null": "auto", "Null": 1, alignItems: 16, style: tmp.emptyStateTitle };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.children = intl.string(arg1(dependencyMap[10]).t.6HXiuE);
-  items[1] = callback2(arg1(dependencyMap[9]).Text, obj);
+  obj = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["6HXiuE"]);
+  items[1] = callback2(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback3(closure_6, obj);
 }
-({ View: closure_6, Image: closure_7, FlatList: closure_8 } = __exportStarResult1);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW, borderRadius: false };
-__exportStarResult1.scrollContainer = __exportStarResult1;
-__exportStarResult1.fauxHeader = { paddingHorizontal: 0 };
-__exportStarResult1.emptyWrapper = {};
-__exportStarResult1.emptyStateImage = { marginBottom: 24 };
-__exportStarResult1.emptyStateTitle = { value: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000676009517133676, on: 131072.0007038191 };
-__exportStarResult1.error = { color: require("__exportStarResult1").unsafe_rawColors.RED_400 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelectSearch.tsx");
+({ View: closure_6, Image: closure_7, FlatList: closure_8 } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.scrollContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.fauxHeader = { paddingHorizontal: 0 };
+_createForOfIteratorHelperLoose.emptyWrapper = { flex: 1, alignItems: "center", justifyContent: "center", marginTop: 64, paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose.emptyStateImage = { marginBottom: 24 };
+_createForOfIteratorHelperLoose.emptyStateTitle = { marginBottom: 4, textAlign: "center" };
+let obj1 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginBottom: 8 };
+_createForOfIteratorHelperLoose.error = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("result").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelectSearch.tsx");
 
 export default function HubEmailConnectionGuildSelectSearch(arg0) {
+  let result;
+  let closure_6;
+  let closure_7;
   let guildsInfo;
+  let importDefault;
   let obj2;
-  ({ guildsInfo, email: closure_0, onClose: closure_1 } = arg0);
+  let require;
+  ({ guildsInfo, email: require, onClose: importDefault } = arg0);
   let anyErrorMessage;
-  const tmp = __exportStarResult1();
+  let tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(1456) /* useNavigation */;
   let closure_3 = obj.useNavigation();
   const tmp2 = callback(React.useState(""), 2);
-  const callback = tmp2[0];
-  [obj2, closure_5] = callback(React.useState(null), 2);
+  callback = tmp2[0];
+  [obj2, result] = callback(React.useState(null), 2);
   const tmp3 = callback(React.useState(null), 2);
   [closure_6, closure_7] = callback(React.useState(false), 2);
   const found = guildsInfo.filter((name) => {
-    const tmp = callback2(tmp[12]);
-    const formatted = closure_4.toLowerCase();
+    tmp = outer1_1(tmp[12]);
+    const formatted = _slicedToArray.toLowerCase();
     return tmp(formatted, name.name.toLowerCase());
   });
   anyErrorMessage = undefined;
@@ -64,16 +76,16 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
   }
   obj = {};
   obj = { style: tmp.fauxHeader };
-  const obj1 = {};
+  obj1 = {};
   const tmp4 = callback(React.useState(false), 2);
-  const intl = arg1(dependencyMap[10]).intl;
-  obj1.placeholder = intl.string(arg1(dependencyMap[10]).t.nL2wKD);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.placeholder = intl.string(require(1212) /* getSystemLocale */.t.nL2wKD);
   obj1.onChange = tmp2[1];
   obj1.onClose = function onClose() {
 
   };
-  obj.children = callback2(importDefault(dependencyMap[17]), obj1);
-  const items = [callback2(arg1(dependencyMap[16]).FauxHeader, obj), ];
+  obj.children = callback2(importDefault(5771), obj1);
+  const items = [callback2(require(5087) /* HeaderBackImage */.FauxHeader, obj), ];
   obj2 = {
     keyboardShouldPersistTaps: "always",
     data: found,
@@ -83,7 +95,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
         tmp = null;
         if ("" !== anyErrorMessage) {
           const obj = { style: tmp.error, children: anyErrorMessage };
-          tmp = callback3(callback(tmp[18]).LegacyText, obj);
+          tmp = outer1_10(outer1_0(tmp[18]).LegacyText, obj);
         }
       }
       return tmp;
@@ -96,21 +108,21 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
       obj.signup = arr(tmp);
       obj.guildInfo = item;
       obj.loading = closure_6;
-      return callback3(id(tmp[19]).HubEmailConnectionGuildSelectRow, obj);
+      return outer1_10(outer1_0(tmp[19]).HubEmailConnectionGuildSelectRow, obj);
     },
     keyExtractor(id) {
       return id.id;
     },
     ListEmptyComponent() {
-      return callback3(closure_14, {});
+      return outer1_10(outer1_14, {});
     },
     ItemSeparatorComponent() {
-      return callback3(closure_6, { style: { height: 8 } });
+      return outer1_10(outer1_6, { style: { height: 8 } });
     },
     style: tmp.scrollContainer,
     contentContainerStyle: obj3
   };
-  const tmp7 = importDefault(dependencyMap[17]);
+  const tmp7 = importDefault(5771);
   items[1] = callback2(anyErrorMessage, obj2);
   obj.children = items;
   return callback3(closure_12, obj);

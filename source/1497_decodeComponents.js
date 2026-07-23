@@ -1,5 +1,5 @@
 // Module ID: 1497
-// Function ID: 17273
+// Function ID: 17274
 // Name: decodeComponents
 // Dependencies: []
 
@@ -24,5 +24,5 @@ export default (arg0) => {
     const _decodeURIComponent = decodeURIComponent;
     return decodeURIComponent(replaced);
   }
-  const str = arg0;
+  str = arg0;
 };

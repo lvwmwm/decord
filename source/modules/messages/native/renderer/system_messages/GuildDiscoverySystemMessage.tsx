@@ -1,38 +1,37 @@
-// Module ID: 7689
-// Function ID: 61367
+// Module ID: 7695
+// Function ID: 61404
 // Name: createGuildDiscoveryDisqualifiedSystemMessage
-// Dependencies: []
+// Dependencies: [1212, 7652, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 7689 (createGuildDiscoveryDisqualifiedSystemMessage)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");
+// Module 7695 (createGuildDiscoveryDisqualifiedSystemMessage)
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");
 
 export const createGuildDiscoveryDisqualifiedSystemMessage = function createGuildDiscoveryDisqualifiedSystemMessage(message) {
   const obj = {};
-  const intl = require(dependencyMap[0]).intl;
-  obj.content = intl.string(require(dependencyMap[0]).t.NxS3hY);
-  const merged = Object.assign(importDefault(dependencyMap[1])(message));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t.NxS3hY);
+  const merged = Object.assign(importDefault(7652)(message));
   return obj;
 };
 export const createGuildDiscoveryRequalifiedSystemMessage = function createGuildDiscoveryRequalifiedSystemMessage(message) {
   const obj = {};
-  const intl = require(dependencyMap[0]).intl;
-  obj.content = intl.string(require(dependencyMap[0]).t.tu6tOR);
-  const merged = Object.assign(importDefault(dependencyMap[1])(message));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t.tu6tOR);
+  const merged = Object.assign(importDefault(7652)(message));
   return obj;
 };
 export const createGuildDiscoveryGracePeriodInitialWarningSystemMessage = function createGuildDiscoveryGracePeriodInitialWarningSystemMessage(message) {
   const obj = {};
-  const intl = require(dependencyMap[0]).intl;
-  obj.content = intl.string(require(dependencyMap[0]).t.BoiiWz);
-  const merged = Object.assign(importDefault(dependencyMap[1])(message));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t.BoiiWz);
+  const merged = Object.assign(importDefault(7652)(message));
   return obj;
 };
 export const createGuildDiscoveryGracePeriodFinalWarningSystemMessage = function createGuildDiscoveryGracePeriodFinalWarningSystemMessage(message) {
   const obj = {};
-  const intl = require(dependencyMap[0]).intl;
-  obj.content = intl.string(require(dependencyMap[0]).t.ED4mGc);
-  const merged = Object.assign(importDefault(dependencyMap[1])(message));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t.ED4mGc);
+  const merged = Object.assign(importDefault(7652)(message));
   return obj;
 };

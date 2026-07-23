@@ -1,19 +1,22 @@
-// Module ID: 14787
-// Function ID: 111450
-// Dependencies: []
+// Module ID: 14903
+// Function ID: 113618
+// Dependencies: [31, 4122, 1194, 4217, 11108, 1849, 10260, 33, 4130, 689, 1273, 566, 9096, 2]
 
-// Module 14787
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const MUTED_OPACITY_CONTENT = arg1(dependencyMap[6]).MUTED_OPACITY_CONTENT;
-const jsx = arg1(dependencyMap[7]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_10 = arg1(dependencyMap[8]).createStyles((arg0) => {
+// Module 14903
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { borderRadius: importDefault(dependencyMap[9]).radii.round, marginRight: importDefault(dependencyMap[9]).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END, width: importDefault(dependencyMap[9]).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, height: importDefault(dependencyMap[9]).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE };
+  obj = { borderRadius: importDefault(689).radii.round, marginRight: importDefault(689).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END, width: importDefault(689).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, height: importDefault(689).modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE };
   let num = 1;
   if (arg0) {
     num = MUTED_OPACITY_CONTENT;
@@ -22,18 +25,17 @@ let closure_10 = arg1(dependencyMap[8]).createStyles((arg0) => {
   obj.avatar = obj;
   return obj;
 });
-const obj2 = arg1(dependencyMap[8]);
-const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(channel) {
+const memoResult = require("result").memo(function MessagesItemChannelAvatar(channel) {
   let blocked;
   let channelSelected;
+  let importDefault;
   let isStreaming;
   let muted;
   let status;
   channel = channel.channel;
-  const arg1 = channel;
-  ({ hasUnreadMessages: closure_1, muted, status } = channel);
-  let id2;
-  let closure_3;
+  ({ hasUnreadMessages: importDefault, muted, status } = channel);
+  let dependencyMap;
+  let stateFromStores;
   ({ channelSelected, isStreaming, blocked } = channel);
   if (!muted) {
     muted = channel.ignored;
@@ -45,12 +47,12 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
     muted = !channelSelected;
   }
   const tmpResult = closure_10(muted);
-  const REFRESH_MEDIUM_32 = arg1(id2[10]).AvatarSizes.REFRESH_MEDIUM_32;
-  id2 = id.getId();
-  let obj = arg1(id2[11]);
+  const REFRESH_MEDIUM_32 = channel(1273).AvatarSizes.REFRESH_MEDIUM_32;
+  dependencyMap = id.getId();
+  let obj = channel(566);
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const typingUsers = typingUsers.getTypingUsers(channel.id);
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const typingUsers = outer1_6.getTypingUsers(channel.id);
     for (const key10007 in typingUsers) {
       let tmp2 = key10007;
       let tmp3 = closure_2;
@@ -63,9 +65,8 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
     }
     return false;
   });
-  closure_3 = stateFromStores;
-  const items1 = [closure_3];
-  const stateFromStores1 = arg1(id2[11]).useStateFromStores(items1, () => {
+  const items1 = [stateFromStores];
+  const stateFromStores1 = channel(566).useStateFromStores(items1, () => {
     let tmp = !stateFromStores.useReducedMotion;
     if (tmp) {
       let tmp2 = stateFromStores;
@@ -76,39 +77,39 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
     }
     return tmp;
   });
-  const obj2 = arg1(id2[11]);
-  const tmp = closure_10;
+  const obj2 = channel(566);
+  let tmp = closure_10;
   const items2 = [closure_7];
-  const stateFromStores2 = arg1(id2[11]).useStateFromStores(items2, () => {
+  const stateFromStores2 = channel(566).useStateFromStores(items2, () => {
     let recipientId;
     if (true === channel.isDM()) {
       recipientId = channel.getRecipientId();
     }
-    return user.getUser(recipientId);
+    return outer1_7.getUser(recipientId);
   });
-  const obj3 = arg1(id2[11]);
+  const obj3 = channel(566);
   const items3 = [closure_5];
-  const stateFromStores3 = arg1(id2[11]).useStateFromStores(items3, () => {
+  const stateFromStores3 = channel(566).useStateFromStores(items3, () => {
     const tmp = !channel.isDM();
     let isMobileOnlineResult = !tmp;
     if (!tmp) {
-      isMobileOnlineResult = closure_5.isMobileOnline(channel.getRecipientId());
+      isMobileOnlineResult = outer1_5.isMobileOnline(channel.getRecipientId());
     }
     return isMobileOnlineResult;
   });
-  const obj5 = arg1(id2[11]);
+  const obj5 = channel(566);
   const items4 = [closure_5];
-  const stateFromStores4 = arg1(id2[11]).useStateFromStores(items4, () => {
+  const stateFromStores4 = channel(566).useStateFromStores(items4, () => {
     const tmp = !channel.isDM();
     let isVROnlineResult = !tmp;
     if (!tmp) {
-      isVROnlineResult = closure_5.isVROnline(channel.getRecipientId());
+      isVROnlineResult = outer1_5.isVROnline(channel.getRecipientId());
     }
     return isVROnlineResult;
   });
   if (channel.isGroupDM()) {
     obj = { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar };
-    let tmp9Result = jsx(importDefault(id2[12]), obj);
+    let tmp9Result = jsx(importDefault(9096), { status, size: REFRESH_MEDIUM_32, channel, animate: stateFromStores1, style: tmpResult.avatar });
   } else {
     tmp9Result = null;
     if (null != stateFromStores2) {
@@ -124,12 +125,12 @@ const memoResult = importAllResult.memo(function MessagesItemChannelAvatar(chann
       obj.animate = stateFromStores1;
       obj.typing = stateFromStores;
       obj.autoStatusCutout = true;
-      tmp9Result = jsx(arg1(id2[10]).Avatar, obj);
+      tmp9Result = jsx(channel(1273).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: undefined, isMobileOnline: stateFromStores3, isVROnline: stateFromStores4 });
       const tmp9 = jsx;
     }
   }
   return tmp9Result;
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelAvatar.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelAvatar.tsx");
 
 export default memoResult;

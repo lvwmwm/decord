@@ -1,9 +1,26 @@
-// Module ID: 10057
-// Function ID: 77674
+// Module ID: 10065
+// Function ID: 77714
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 7090, 6902, 1348, 3758, 3767, 653, 6979, 8483, 1327, 566, 686, 2]
 
-// Module 10057 (_isNativeReflectConstruct)
+// Module 10065 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import dispatcher from "dispatcher";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { InviteTargetTypes } from "InviteSendStates";
+import set from "_possibleConstructorReturn";
+
+let closure_12;
+let closure_13;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +30,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +83,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -106,11 +123,11 @@ function _computeRows(query) {
   if (!tmp3) {
     tmp3 = tmp2;
   }
-  let id = null;
+  id = null;
   if (!tmp3) {
     id = id.id;
   }
-  const mostRecentDMedUser = arg1(dependencyMap[12]).getMostRecentDMedUser(set, id);
+  const mostRecentDMedUser = set1(8483).getMostRecentDMedUser(set, id);
   let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
   if (!isBlockedOrIgnoredResult) {
     isBlockedOrIgnoredResult = closure_11.isBlockedOrIgnored(mostRecentDMedUser.id);
@@ -128,21 +145,20 @@ function _computeRows(query) {
       done = iter2.done;
     } while (!done);
   }
-  const set1 = new Set();
-  const arg1 = set1;
+  set1 = new Set();
   if (closure_20 === InviteTargetTypes.EMBEDDED_APPLICATION) {
-    const channelHistory = channelHistory.getChannelHistory();
-    const mapped = channelHistory.map((channelId) => channel.getChannel(channelId));
-    const found = mapped.filter(arg1(dependencyMap[13]).isNotNullish);
-    const found1 = found.filter((type) => type.type === constants.GUILD_TEXT);
-    const found2 = found1.filter((channel) => closure_10.can(constants2.SEND_MESSAGES, channel));
+    channelHistory = channelHistory.getChannelHistory();
+    const mapped = channelHistory.map((channelId) => outer1_9.getChannel(channelId));
+    const found = mapped.filter(set1(1327).isNotNullish);
+    const found1 = found.filter((type) => type.type === outer1_12.GUILD_TEXT);
+    const found2 = found1.filter((channel) => outer1_10.can(outer1_13.SEND_MESSAGES, channel));
     const substr = found2.slice(0, 3);
     const item = substr.forEach((id) => set1.add(id.id));
   }
-  const obj2 = arg1(dependencyMap[12]);
-  const tmp2 = type === constants.GUILD_VOICE;
+  const obj2 = set1(8483);
+  tmp2 = type === constants.GUILD_VOICE;
   const obj = { query, omitUserIds: set, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: id, suggestedChannelIds: set1, inviteTargetType: closure_20 };
-  return arg1(dependencyMap[12]).generateRowsForQuery(obj);
+  return set1(8483).generateRowsForQuery(obj);
 }
 function _updateInviteSuggestions(rows) {
   let closure_22 = rows;
@@ -151,35 +167,24 @@ function _updateInviteSuggestions(rows) {
     const result = map.set(arg0, { index });
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-({ ChannelTypes: closure_12, Permissions: closure_13 } = arg1(dependencyMap[10]));
-const InviteTargetTypes = arg1(dependencyMap[11]).InviteTargetTypes;
-const set = new Set();
+({ ChannelTypes: closure_12, Permissions: closure_13 } = ME);
+let set = new Set();
 let closure_22 = [];
-const map = new Map();
-let closure_24 = { -1830209273: -24, 2140842688: null, 562090611: 1, 948336869: "Malaysia" };
-let tmp5 = (Store) => {
+let map = new Map();
+let closure_24 = { numFriends: 0, numDms: 0, numGroupDms: 0, numChannels: 0 };
+let tmp5 = ((Store) => {
   class InviteSuggestionsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, InviteSuggestionsStore);
-      obj = closure_5(InviteSuggestionsStore);
-      tmp2 = closure_4;
-      if (closure_25()) {
+      tmp = outer1_2(this, InviteSuggestionsStore);
+      obj = outer1_5(InviteSuggestionsStore);
+      tmp2 = outer1_4;
+      if (outer1_25()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -188,50 +193,49 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = InviteSuggestionsStore;
   callback2(InviteSuggestionsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9, closure_10, closure_7, closure_11, closure_8);
+      this.waitFor(outer1_9, outer1_10, outer1_7, outer1_11, outer1_8);
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "getInviteSuggestionRows",
     value() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[1] = obj;
   obj = {
     key: "getTotalSuggestionsCount",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getInitialCounts",
     value() {
-      return closure_24;
+      return outer1_24;
     }
   };
   items[4] = {
     key: "getSelectedInviteMetadata",
     value(isSuggested) {
-      const value = closure_23.get(isSuggested);
-      const userAffinities = userAffinities.getUserAffinities();
+      const value = outer1_23.get(isSuggested);
+      const userAffinities = outer1_8.getUserAffinities();
       if (null != value) {
-        const obj = { rowNum: value.index, isAffinitySuggestion: isSuggested.isSuggested, numTotal: length.length, numAffinityConnections: arr.length, isFiltered: closure_16 };
+        const obj = { rowNum: value.index, isAffinitySuggestion: isSuggested.isSuggested, numTotal: outer1_22.length, numAffinityConnections: arr.length, isFiltered: outer1_16 };
         return obj;
       }
     }
   };
   return callback(InviteSuggestionsStore, items);
-}(importDefault(dependencyMap[14]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "InviteSuggestionsStore";
-tmp5 = new tmp5(importDefault(dependencyMap[15]), {
+tmp5 = new tmp5(require("dispatcher"), {
   LOAD_INVITE_SUGGESTIONS: function refreshInviteSuggestions(guild) {
     let channel;
     let inviteTargetType;
@@ -243,12 +247,12 @@ tmp5 = new tmp5(importDefault(dependencyMap[15]), {
     }
     const applicationId = guild.applicationId;
     const blockedOrIgnoredIDs = closure_11.getBlockedOrIgnoredIDs();
-    let obj = arg1(dependencyMap[12]);
+    let obj = require(8483) /* _createForOfIteratorHelperLoose */;
     obj = { channel, applicationId, inviteTargetType };
     const usersAlreadyJoined = obj.getUsersAlreadyJoined(obj);
     const items = [...usersAlreadyJoined];
     const set = new Set(items);
-    let closure_16 = false;
+    let c16 = false;
     const tmp5 = _computeRows("");
     _updateInviteSuggestions(tmp5.rows);
     const counts = tmp5.counts;
@@ -270,46 +274,6 @@ tmp5 = new tmp5(importDefault(dependencyMap[15]), {
     _updateInviteSuggestions(rows);
   }
 });
-const obj = {
-  LOAD_INVITE_SUGGESTIONS: function refreshInviteSuggestions(guild) {
-    let channel;
-    let inviteTargetType;
-    let omitUserIds;
-    ({ omitUserIds, channel, inviteTargetType } = guild);
-    guild = null;
-    if (null != channel) {
-      guild = guild.guild;
-    }
-    const applicationId = guild.applicationId;
-    const blockedOrIgnoredIDs = closure_11.getBlockedOrIgnoredIDs();
-    let obj = arg1(dependencyMap[12]);
-    obj = { channel, applicationId, inviteTargetType };
-    const usersAlreadyJoined = obj.getUsersAlreadyJoined(obj);
-    const items = [...usersAlreadyJoined];
-    const set = new Set(items);
-    let closure_16 = false;
-    const tmp5 = _computeRows("");
-    _updateInviteSuggestions(tmp5.rows);
-    const counts = tmp5.counts;
-  },
-  INVITE_SUGGESTIONS_SEARCH: function handleSearch(query) {
-    query = query.query;
-    let closure_16 = "" !== query;
-    const rows = _computeRows(query).rows;
-    const sorted = rows.sort((score, score2) => {
-      let num = 0;
-      if (null != score.score) {
-        num = 0;
-        if (null != score2.score) {
-          num = score.score - score2.score;
-        }
-      }
-      return num;
-    });
-    _updateInviteSuggestions(rows);
-  }
-};
-const tmp2 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("stores/InviteSuggestionsStore.tsx");
+let result = set.fileFinishedImporting("stores/InviteSuggestionsStore.tsx");
 
 export default tmp5;

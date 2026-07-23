@@ -1,26 +1,29 @@
-// Module ID: 9414
-// Function ID: 73287
-// Dependencies: []
+// Module ID: 9421
+// Function ID: 73328
+// Dependencies: [31, 27, 653, 33, 4130, 689, 477, 8511, 2]
 
-// Module 9414
+// Module 9421
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let StyleSheet;
-const importAllResult = importAll(dependencyMap[0]);
-({ StyleSheet, View: closure_3 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj1 = arg1(dependencyMap[4]);
+let closure_3;
+const require = arg1;
+({ StyleSheet, View: closure_3 } = get_ActivityIndicator);
 let obj = {};
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj["borderTopWidth"] = StyleSheet.hairlineWidth;
-obj["borderTopColor"] = importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST;
+obj["borderTopColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST;
 obj.backdrop = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.PROFILE_GRADIENT_NOTE_BACKGROUND, height: arg1(dependencyMap[2]).EXPRESSION_FOOTER_HEIGHT, bottom: undefined };
-obj.backdropAndroid = obj1;
-let closure_5 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[1]);
-const memoResult = importAllResult.memo(function EmojiPickerCategoriesBackdrop() {
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.PROFILE_GRADIENT_NOTE_BACKGROUND, height: require("ME").EXPRESSION_FOOTER_HEIGHT, bottom: undefined };
+obj.backdropAndroid = _createForOfIteratorHelperLoose;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function EmojiPickerCategoriesBackdrop() {
   const tmp = callback();
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(477) /* set */;
   if (obj.isAndroid()) {
     obj = {};
     const items = [, ];
@@ -30,11 +33,11 @@ const memoResult = importAllResult.memo(function EmojiPickerCategoriesBackdrop()
   } else {
     obj = { style: tmp.backdrop };
     const obj1 = { style: tmp.backdrop };
-    obj.children = tmp2(importDefault(dependencyMap[7]), obj1);
+    obj.children = tmp2(importDefault(8511), obj1);
     tmp2Result = tmp2(tmp3, obj);
   }
   return tmp2Result;
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/expression_picker/native/categories/ExpressionPickerCategoriesBackdrop.tsx");
+const result = require("ME").fileFinishedImporting("modules/expression_picker/native/categories/ExpressionPickerCategoriesBackdrop.tsx");
 
 export default memoResult;

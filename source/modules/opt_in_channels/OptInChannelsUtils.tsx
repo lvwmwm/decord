@@ -1,55 +1,61 @@
-// Module ID: 9972
-// Function ID: 77075
+// Module ID: 9980
+// Function ID: 77115
 // Name: setIndex
-// Dependencies: []
+// Dependencies: [31, 1348, 5070, 4142, 3767, 1849, 653, 1355, 6766, 4326, 5607, 5045, 4320, 5071, 6760, 9981, 5069, 1198, 3946, 1334, 566, 1212, 3712, 21, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 9972 (setIndex)
+// Module 9980 (setIndex)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+import set from "set";
+import { ChannelListGuildActionRow } from "ChannelListGuildActionRow";
+import { ReadStateTypes } from "ReadStateTypes";
+import set from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_9;
+const require = arg1;
 function setIndex(arg0, index) {
   arg0.index = index;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ Routes: closure_9, ChannelTypes: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ ChannelFlags: closure_11, StaticChannelRoute: closure_12 } = arg1(dependencyMap[7]));
-const ChannelListGuildActionRow = arg1(dependencyMap[8]).ChannelListGuildActionRow;
-const ReadStateTypes = arg1(dependencyMap[9]).ReadStateTypes;
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/opt_in_channels/OptInChannelsUtils.tsx");
+({ Routes: closure_9, ChannelTypes: closure_10 } = ME);
+({ ChannelFlags: closure_11, StaticChannelRoute: closure_12 } = set);
+let result = set.fileFinishedImporting("modules/opt_in_channels/OptInChannelsUtils.tsx");
 
 export const useFilterCategoriesByQuery = function useFilterCategoriesByQuery(guildId, stateFromStores1, stateFromStores2, str) {
-  const importDefault = stateFromStores2;
-  const formatted = str.toLowerCase();
-  const dependencyMap = formatted;
-  const canSeeOnboardingHome = stateFromStores1(dependencyMap[10]).useCanSeeOnboardingHome(guildId);
-  const React = canSeeOnboardingHome;
+  const _require = stateFromStores1;
+  let closure_1 = stateFromStores2;
+  let formatted = str.toLowerCase();
+  const canSeeOnboardingHome = _require(formatted[10]).useCanSeeOnboardingHome(guildId);
   const items = [canSeeOnboardingHome];
-  const callback = React.useCallback((channel) => {
+  const callback = canSeeOnboardingHome.useCallback((channel) => {
     let tmp = !canSeeOnboardingHome;
     if (!tmp) {
       channel = channel.channel;
-      tmp = !channel.hasFlag(constants2.IS_GUILD_RESOURCE_CHANNEL);
+      tmp = !channel.hasFlag(outer1_11.IS_GUILD_RESOURCE_CHANNEL);
     }
     if (tmp) {
-      let tmp4 = channel.channel.type !== constants.GUILD_DIRECTORY;
+      let tmp4 = channel.channel.type !== outer1_10.GUILD_DIRECTORY;
       if (tmp4) {
         let tmp5 = 0 === arg1.length;
         if (!tmp5) {
-          const tmp8 = arg2(formatted[11]);
-          const obj = arg1(formatted[12]);
-          let hasItem = tmp8(arg1, arg1(formatted[12]).computeChannelName(channel.channel, closure_8, closure_7).toLowerCase());
+          const tmp8 = stateFromStores2(formatted[11]);
+          const obj = stateFromStores1(formatted[12]);
+          let hasItem = tmp8(arg1, stateFromStores1(formatted[12]).computeChannelName(channel.channel, outer1_8, outer1_7).toLowerCase());
           if (!hasItem) {
-            const formatted = channel.channel.topic.toLowerCase();
+            formatted = channel.channel.topic.toLowerCase();
             hasItem = formatted.includes(arg1);
             const str2 = channel.channel.topic;
           }
           tmp5 = hasItem;
-          const str = arg1(formatted[12]).computeChannelName(channel.channel, closure_8, closure_7);
+          const str = stateFromStores1(formatted[12]).computeChannelName(channel.channel, outer1_8, outer1_7);
         }
         tmp4 = tmp5;
       }
@@ -57,38 +63,36 @@ export const useFilterCategoriesByQuery = function useFilterCategoriesByQuery(gu
     }
     return tmp;
   }, items);
-  let closure_4 = callback;
   const items1 = [stateFromStores1, stateFromStores2, callback, formatted];
-  return React.useMemo(() => {
+  return canSeeOnboardingHome.useMemo(() => {
     const obj = { null: [], _categories: [] };
-    const arg1 = obj;
-    const item = arg2[closure_10.GUILD_CATEGORY].forEach((channel) => {
+    const item = stateFromStores2[outer1_10.GUILD_CATEGORY].forEach((channel) => {
       channel = channel.channel;
       if ("null" === channel.id) {
         const _null = obj.null;
-        obj.null = _null.filter((arg0) => callback(arg0, closure_2));
+        obj.null = _null.filter((arg0) => outer2_4(arg0, outer2_2));
       }
-      obj[channel.id] = obj[channel.id].filter((arg0) => callback(arg0, closure_2));
+      obj[channel.id] = obj[channel.id].filter((arg0) => outer2_4(arg0, outer2_2));
     });
-    const _categories = arg1._categories;
+    const _categories = obj._categories;
     obj._categories = _categories.filter((channel) => {
       let tmp = "null" === channel.channel.id;
       if (!tmp) {
-        tmp = 0 === length.length;
+        tmp = 0 === outer1_2.length;
       }
       if (!tmp) {
         tmp = obj[channel.channel.id].length > 0;
       }
       return tmp;
     });
-    const item1 = arg2(formatted[13])(obj._categories, obj).forEach(closure_15);
+    const item1 = stateFromStores2(formatted[13])(obj._categories, obj).forEach(outer1_15);
     return obj;
   }, items1);
 };
 export const getFirstRouteFor = function getFirstRouteFor(getSections) {
   let channel;
   const sections = getSections.getSections(false);
-  if (sections[closure_0(undefined, closure_2[14]).SECTION_INDEX_GUILD_ACTIONS] > 0) {
+  if (sections[require(undefined, 6760) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS] > 0) {
     const guildActionSection = getSections.getGuildActionSection();
     const row = guildActionSection.getRow(0);
     if (ChannelListGuildActionRow.GUILD_HOME === row) {
@@ -99,7 +103,7 @@ export const getFirstRouteFor = function getFirstRouteFor(getSections) {
       return constants.MEMBER_SAFETY;
     }
   }
-  let SECTION_INDEX_UNCATEGORIZED_CHANNELS = arg1(dependencyMap[14]).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+  let SECTION_INDEX_UNCATEGORIZED_CHANNELS = require(6760) /* _superPropGet */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
   if (SECTION_INDEX_UNCATEGORIZED_CHANNELS < getSections.voiceChannelsSectionNumber) {
     while (true) {
       if (sections[SECTION_INDEX_UNCATEGORIZED_CHANNELS] > 0) {
@@ -120,30 +124,30 @@ export const getFirstRouteFor = function getFirstRouteFor(getSections) {
   }
   return null;
 };
-export const clearRecentChannels = function clearRecentChannels(closure_0, closure_1) {
+export const clearRecentChannels = function clearRecentChannels(outer1_0, outer1_1) {
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = null;
   }
-  closure_1(dependencyMap[15]).bulkClearRecents(closure_0, closure_1);
-  const obj = closure_1(dependencyMap[15]);
-  closure_1(dependencyMap[16]).bulkAck(closure_1.map((channelId) => ({ channelId, readStateType: constants.CHANNEL, messageId: closure_6.lastMessageId(channelId) })));
+  require(9981) /* _bulkClearRecents */.bulkClearRecents(outer1_0, outer1_1);
+  const obj = require(9981) /* _bulkClearRecents */;
+  require(5069) /* _createForOfIteratorHelperLoose */.bulkAck(outer1_1.map((channelId) => ({ channelId, readStateType: outer1_14.CHANNEL, messageId: outer1_6.lastMessageId(channelId) })));
   if (null != tmp) {
-    closure_1(dependencyMap[17]).transitionTo(closure_9.CHANNEL(closure_0, tmp));
-    const obj3 = closure_1(dependencyMap[17]);
+    require(1198) /* shouldNavigate */.transitionTo(closure_9.CHANNEL(outer1_0, tmp));
+    const obj3 = require(1198) /* shouldNavigate */;
   }
 };
 export const useChannelBrowserSections = function useChannelBrowserSections(guildId, filterCategoriesByQuery, arg2) {
-  filterCategoriesByQuery = guildId;
-  const importDefault = filterCategoriesByQuery;
+  const _require = guildId;
+  let closure_1 = filterCategoriesByQuery;
   const dependencyMap = arg2;
-  let obj = filterCategoriesByQuery(dependencyMap[18]);
-  let result = obj.useIsDismissibleContentDismissed_UNSAFE(filterCategoriesByQuery(dependencyMap[19]).DismissibleContent.CHANNEL_BROWSER_NUX);
-  const items = [closure_4];
+  let obj = _require(3946);
+  let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1334).DismissibleContent.CHANNEL_BROWSER_NUX);
+  const items = [_isNativeReflectConstruct];
   const items1 = [guildId];
-  let closure_3 = filterCategoriesByQuery(dependencyMap[20]).useStateFromStoresObject(items, () => {
+  let result = _require(566).useStateFromStoresObject(items, () => {
     const obj = {};
-    const mutableGuildChannelsForGuild = mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(arg0);
+    const mutableGuildChannelsForGuild = outer1_4.getMutableGuildChannelsForGuild(closure_0);
     for (const key10010 in mutableGuildChannelsForGuild) {
       let tmp3 = key10010;
       let parent_id = mutableGuildChannelsForGuild[key10010].parent_id;
@@ -156,7 +160,7 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
           num = tmp2;
         }
         obj[parent_id] = num + 1;
-        // continue
+        continue;
       }
       continue;
     }
@@ -172,8 +176,8 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
     }
     obj.rowCount = num;
     let num3 = 0;
-    if (0 !== arg1[channel.channel.id].length) {
-      num3 = arg2;
+    if (0 !== table[channel.channel.id].length) {
+      num3 = closure_2;
     }
     obj.rowHeight = num3;
     return obj;
@@ -188,9 +192,9 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
   return mapped;
 };
 export const useChannelBrowserChannelCount = function useChannelBrowserChannelCount(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[20]).useStateFromStores(items, () => categories.getCategories(arg0));
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getCategories(closure_0));
   let sum = stateFromStores._categories[stateFromStores._categories.length - 1];
   if (null == sum) {
     return 0;
@@ -216,14 +220,14 @@ export const useChannelBrowserChannelCount = function useChannelBrowserChannelCo
 };
 export const getActiveAgoTimestamp = function getActiveAgoTimestamp(id) {
   let tmp = id;
-  const intl = arg1(dependencyMap[21]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const obj = {};
-  const tmp2 = importDefault(dependencyMap[22]);
+  const tmp2 = importDefault(3712);
   const lastMessageIdResult = closure_6.lastMessageId(id);
   if (null != lastMessageIdResult) {
     tmp = lastMessageIdResult;
   }
-  const obj2 = importDefault(dependencyMap[23]);
-  obj.timeAgo = tmp2(importDefault(dependencyMap[23]).extractTimestamp(tmp)).fromNow();
-  return intl.formatToPlainString(arg1(dependencyMap[21]).t.8N0BHR, obj);
+  const obj2 = importDefault(21);
+  obj.timeAgo = tmp2(importDefault(21).extractTimestamp(tmp)).fromNow();
+  return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["8N0BHR"], obj);
 };

@@ -6,16 +6,16 @@
 // Module 129 (setPlatformObject)
 let closure_0 = Symbol("isPlatformObject");
 let closure_1 = Symbol("clonePlatformObject");
-arg5.setPlatformObject = function setPlatformObject(arg0, clone) {
+arg5.setPlatformObject = function setPlatformObject(arg0, setPlatformObject) {
   if ("function" === typeof arg0) {
     arg0.prototype[closure_0] = true;
-    if (clone) {
-      arg0.prototype[closure_1] = clone.clone;
+    if (setPlatformObject) {
+      arg0.prototype[closure_1] = setPlatformObject.clone;
     }
   } else {
     arg0[closure_0] = true;
-    if (clone) {
-      arg0[closure_1] = clone.clone;
+    if (setPlatformObject) {
+      arg0[closure_1] = setPlatformObject.clone;
     }
   }
 };

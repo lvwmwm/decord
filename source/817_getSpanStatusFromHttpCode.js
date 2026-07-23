@@ -1,5 +1,5 @@
 // Module ID: 817
-// Function ID: 9134
+// Function ID: 9135
 // Name: getSpanStatusFromHttpCode
 // Dependencies: []
 
@@ -14,34 +14,34 @@ function getSpanStatusFromHttpCode(arg0) {
   if (arg0 >= 400) {
     if (arg0 < 500) {
       if (401 === arg0) {
-        return { -1179595444: 17891332, 1376044464: 3185 };
+        return { code: 2, message: "unauthenticated" };
       } else if (403 === arg0) {
-        return { -1179595444: null, 1376044464: null };
+        return { code: 2, message: "permission_denied" };
       } else if (404 === arg0) {
-        return {};
+        return { code: 2, message: "not_found" };
       } else if (409 === arg0) {
-        return {};
+        return { code: 2, message: "already_exists" };
       } else if (413 === arg0) {
-        return { -1179595444: true, 1376044464: true };
+        return { code: 2, message: "failed_precondition" };
       } else if (429 === arg0) {
-        return {};
+        return { code: 2, message: "resource_exhausted" };
       } else {
-        return 499 === arg0 ? { -1179595444: 1111556098, 1376044464: 16778310 } : { -1179595444: null, 1376044464: null };
+        return 499 === arg0 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
       }
     }
   }
   if (arg0 >= 500) {
     if (arg0 < 600) {
       if (501 === arg0) {
-        return {};
+        return { code: 2, message: "unimplemented" };
       } else if (503 === arg0) {
-        return { -1179595444: 557057.077966721, 1376044464: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004280798090950941 };
+        return { code: 2, message: "unavailable" };
       } else {
-        return 504 === arg0 ? { -1179595444: null, 1376044464: null } : { -1179595444: true, 1376044464: true };
+        return 504 === arg0 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
       }
     }
   }
-  return { -1179595444: true, 1376044464: true };
+  return { code: 2, message: "internal_error" };
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.SPAN_STATUS_ERROR = 2;

@@ -1,9 +1,11 @@
 // Module ID: 1007
-// Function ID: 10996
+// Function ID: 10997
 // Name: exceptionFromError
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 1007 (exceptionFromError)
+const require = arg1;
+const dependencyMap = arg6;
 function exceptionFromError(arg0, name) {
   const arr = parseStackFrames(arg0, name);
   let obj = { type: extractType(name), value: extractMessage(name) };
@@ -21,7 +23,7 @@ function exceptionFromError(arg0, name) {
   return obj;
 }
 function eventFromPlainObject(arg0, error, arg2, isUnhandledRejection) {
-  let obj = error(arg6[0]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   const client = obj.getClient();
   let normalizeDepth;
   if (null != client) {
@@ -48,7 +50,7 @@ function eventFromPlainObject(arg0, error, arg2, isUnhandledRejection) {
     }
   }
   obj = {};
-  let obj3 = error(arg6[0]);
+  let obj3 = require(794) /* registerSpanErrorInstrumentation */;
   obj.__serialized__ = obj3.normalizeToSize(error, normalizeDepth);
   obj = {};
   const obj1 = {};
@@ -160,24 +162,24 @@ function extractMessage(message) {
     str = "No error message";
     if (error) {
       if (!error.error) {
-        let result = arg1(arg6[0])._INTERNAL_enhanceErrorWithSentryInfo(message);
-        const obj = arg1(arg6[0]);
+        let result = require(794) /* registerSpanErrorInstrumentation */._INTERNAL_enhanceErrorWithSentryInfo(message);
+        const obj = require(794) /* registerSpanErrorInstrumentation */;
       }
       error = error.error;
-      result = arg1(arg6[0])._INTERNAL_enhanceErrorWithSentryInfo(error);
-      const obj2 = arg1(arg6[0]);
+      result = require(794) /* registerSpanErrorInstrumentation */._INTERNAL_enhanceErrorWithSentryInfo(error);
+      const obj2 = require(794) /* registerSpanErrorInstrumentation */;
     }
   }
   return str;
 }
 function eventFromUnknownInput(arg0, error, arg2, arg3, isUnhandledRejection) {
-  let obj = error(arg6[0]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   if (obj.isErrorEvent(error)) {
     if (error.error) {
       return eventFromError(arg0, error.error);
     }
   }
-  let obj1 = error(arg6[0]);
+  let obj1 = require(794) /* registerSpanErrorInstrumentation */;
   if (!obj1.isDOMError(error)) {
     if (!obj3.isDOMException(error)) {
       if (obj4.isError(error)) {
@@ -187,24 +189,24 @@ function eventFromUnknownInput(arg0, error, arg2, arg3, isUnhandledRejection) {
           if (!obj6.isEvent(error)) {
             tmp14 = eventFromString(arg0, error, arg2, arg3);
             const _HermesInternal = HermesInternal;
-            const result = error(arg6[0]).addExceptionTypeValue(tmp14, "" + error, undefined);
-            const obj7 = error(arg6[0]);
+            const result = require(794) /* registerSpanErrorInstrumentation */.addExceptionTypeValue(tmp14, "" + error, undefined);
+            const obj7 = require(794) /* registerSpanErrorInstrumentation */;
             obj = { synthetic: true };
-            const result1 = error(arg6[0]).addExceptionMechanism(tmp14, obj);
-            const obj8 = error(arg6[0]);
+            const result1 = require(794) /* registerSpanErrorInstrumentation */.addExceptionMechanism(tmp14, obj);
+            const obj8 = require(794) /* registerSpanErrorInstrumentation */;
           }
-          const obj6 = error(arg6[0]);
+          obj6 = require(794) /* registerSpanErrorInstrumentation */;
         }
         const tmp25 = eventFromPlainObject(arg0, error, arg2, isUnhandledRejection);
-        const obj5 = error(arg6[0]);
+        obj5 = require(794) /* registerSpanErrorInstrumentation */;
         obj = { synthetic: true };
-        const result2 = error(arg6[0]).addExceptionMechanism(tmp25, obj);
+        const result2 = require(794) /* registerSpanErrorInstrumentation */.addExceptionMechanism(tmp25, obj);
         tmp14 = tmp25;
-        const obj10 = error(arg6[0]);
+        const obj10 = require(794) /* registerSpanErrorInstrumentation */;
       }
       return tmp14;
     }
-    const obj3 = error(arg6[0]);
+    obj3 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if ("stack" in error) {
     let tmp39 = eventFromError(arg0, error);
@@ -216,7 +218,7 @@ function eventFromUnknownInput(arg0, error, arg2, arg3, isUnhandledRejection) {
         str2 = "DOMError";
       }
       name = str2;
-      const obj12 = error(arg6[0]);
+      obj12 = require(794) /* registerSpanErrorInstrumentation */;
     }
     let combined = name;
     if (error.message) {
@@ -224,14 +226,14 @@ function eventFromUnknownInput(arg0, error, arg2, arg3, isUnhandledRejection) {
       combined = "" + name + ": " + error.message;
     }
     tmp39 = eventFromString(arg0, combined, arg2, arg3);
-    const result3 = error(arg6[0]).addExceptionTypeValue(tmp39, combined);
-    const obj13 = error(arg6[0]);
+    const result3 = require(794) /* registerSpanErrorInstrumentation */.addExceptionTypeValue(tmp39, combined);
+    const obj13 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if ("code" in error) {
     const _Object = Object;
     obj1 = {};
     const _HermesInternal3 = HermesInternal;
-    obj1.DOMException.code = "" + error.code;
+    obj1["DOMException.code"] = "" + error.code;
     tmp39.tags = Object.assign({}, tmp39.tags, obj1);
   }
   return tmp39;
@@ -251,8 +253,8 @@ function eventFromString(arg0, combined, arg2, arg3) {
         obj.exception = obj;
       }
       const obj2 = { synthetic: true };
-      const result = combined(arg6[0]).addExceptionMechanism(obj, obj2);
-      const obj5 = combined(arg6[0]);
+      const result = require(794) /* registerSpanErrorInstrumentation */.addExceptionMechanism(obj, obj2);
+      const obj5 = require(794) /* registerSpanErrorInstrumentation */;
     }
   }
   if (obj7.isParameterizedString(combined)) {
@@ -263,15 +265,15 @@ function eventFromString(arg0, combined, arg2, arg3) {
     obj.message = combined;
     return obj;
   }
-  const obj7 = combined(arg6[0]);
+  obj7 = require(794) /* registerSpanErrorInstrumentation */;
 }
 function getNonErrorObjectExceptionValue(message, isUnhandledRejection) {
   let str = "exception";
-  const result = isUnhandledRejection(arg6[0]).extractExceptionKeysForMessage(message);
+  const result = require(794) /* registerSpanErrorInstrumentation */.extractExceptionKeysForMessage(message);
   if (isUnhandledRejection.isUnhandledRejection) {
     str = "promise rejection";
   }
-  const obj = isUnhandledRejection(arg6[0]);
+  const obj = require(794) /* registerSpanErrorInstrumentation */;
   if (obj2.isErrorEvent(message)) {
     const _HermesInternal3 = HermesInternal;
     let combined = "Event `ErrorEvent` captured as " + str + " with message `" + message.message + "`";
@@ -287,33 +289,33 @@ function getNonErrorObjectExceptionValue(message, isUnhandledRejection) {
       const combined1 = "Event `" + name + "` (type=" + message.type + ") captured as " + str;
       while (true) {
         let tmp11 = __exception;
-        // continue
+        continue;
       }
     } else {
       const _HermesInternal = HermesInternal;
       combined = "Object captured as " + str + " with keys: " + result;
     }
-    const obj3 = isUnhandledRejection(arg6[0]);
+    obj3 = require(794) /* registerSpanErrorInstrumentation */;
   }
   return combined;
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let closure_2 = /Minified React error #\d+;/i;
+const re2 = /Minified React error #\d+;/i;
 arg5.eventFromException = function eventFromException(arg0, arg1, syntheticException) {
   syntheticException = undefined;
   if (null != syntheticException) {
     syntheticException = syntheticException.syntheticException;
   }
   const tmpResult = eventFromUnknownInput(arg0, arg1, syntheticException, arg3);
-  const result = arg1(arg6[0]).addExceptionMechanism(tmpResult);
+  const result = require(794) /* registerSpanErrorInstrumentation */.addExceptionMechanism(tmpResult);
   tmpResult.level = "error";
   if (tmp5) {
     tmpResult.event_id = syntheticException.event_id;
   }
-  const obj = arg1(arg6[0]);
+  const obj = require(794) /* registerSpanErrorInstrumentation */;
   const tmp = eventFromUnknownInput;
-  const tmp5 = null != syntheticException && syntheticException.event_id;
-  return arg1(arg6[0]).resolvedSyncPromise(tmpResult);
+  tmp5 = null != syntheticException && syntheticException.event_id;
+  return require(794) /* registerSpanErrorInstrumentation */.resolvedSyncPromise(tmpResult);
 };
 arg5.eventFromMessage = function eventFromMessage(arg0, arg1) {
   let str = "info";
@@ -340,7 +342,7 @@ arg5.eventFromMessage = function eventFromMessage(arg0, arg1) {
   if (tmp6) {
     tmp3Result.event_id = tmp.event_id;
   }
-  return arg1(arg6[0]).resolvedSyncPromise(tmp3Result);
+  return require(794) /* registerSpanErrorInstrumentation */.resolvedSyncPromise(tmp3Result);
 };
 arg5.eventFromUnknownInput = eventFromUnknownInput;
 arg5.exceptionFromError = exceptionFromError;

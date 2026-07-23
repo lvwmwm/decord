@@ -1,15 +1,16 @@
-// Module ID: 15540
-// Function ID: 118616
+// Module ID: 15657
+// Function ID: 120789
 // Name: isGuildSelectable
-// Dependencies: []
+// Dependencies: [1353, 4149, 6879, 4325, 2]
 // Exports: default
 
-// Module 15540 (isGuildSelectable)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
+// Module 15657 (isGuildSelectable)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
 
 export default function isGuildSelectable(id) {
   const stageInstancesByGuild = id;
@@ -21,8 +22,8 @@ export default function isGuildSelectable(id) {
       const _Object = Object;
       let someResult = Object.keys(stageInstancesByGuild.getStageInstancesByGuild(id)).length > 0;
       if (!someResult) {
-        const allApplicationStreams = allApplicationStreams.getAllApplicationStreams();
-        someResult = allApplicationStreams.some((guildId) => guildId.guildId === guildId);
+        allApplicationStreams = allApplicationStreams.getAllApplicationStreams();
+        someResult = allApplicationStreams.some((guildId) => guildId.guildId === _isNativeReflectConstruct);
       }
       tmp4 = someResult;
     }

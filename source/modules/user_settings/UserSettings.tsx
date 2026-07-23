@@ -1,11 +1,146 @@
-// Module ID: 3801
-// Function ID: 31118
+// Module ID: 3803
+// Function ID: 31123
 // Name: explicitContentFromProto
-// Dependencies: []
+// Dependencies: [3804, 662, 3805, 653, 3806, 3807, 1313, 1282, 620, 3808, 22, 566, 3809, 3816, 1320, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
-// Module 3801 (explicitContentFromProto)
+// Module 3803 (explicitContentFromProto)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import MAX_FAVORITES from "MAX_FAVORITES";
+import items from "items";
+import ME from "ME";
+import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
+import set from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import makeUpdateSettingFunction from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "makeUpdateSettingFunction";
+import set from "items";
+
 let StatusTypes;
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function explicitContentFromProto(arg0) {
   let explicitContentFriendDm;
   let explicitContentGuilds;
@@ -17,15 +152,15 @@ function explicitContentFromProto(arg0) {
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = obj);
   obj = {};
   if (null == explicitContentGuilds) {
-    explicitContentGuilds = arg1(dependencyMap[7]).ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    explicitContentGuilds = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   }
   obj.explicitContentGuilds = explicitContentGuilds;
   if (null == explicitContentFriendDm) {
-    explicitContentFriendDm = arg1(dependencyMap[7]).ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    explicitContentFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   }
   obj.explicitContentFriendDm = explicitContentFriendDm;
   if (null == explicitContentNonFriendDm) {
-    explicitContentNonFriendDm = arg1(dependencyMap[7]).ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    explicitContentNonFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   }
   obj.explicitContentNonFriendDm = explicitContentNonFriendDm;
   return obj;
@@ -64,15 +199,15 @@ function goreContentFromProto(arg0) {
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = obj);
   obj = {};
   if (null == goreContentGuilds) {
-    goreContentGuilds = arg1(dependencyMap[7]).ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    goreContentGuilds = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   }
   obj.goreContentGuilds = goreContentGuilds;
   if (null == goreContentFriendDm) {
-    goreContentFriendDm = arg1(dependencyMap[7]).ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    goreContentFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   }
   obj.goreContentFriendDm = goreContentFriendDm;
   if (null == goreContentNonFriendDm) {
-    goreContentNonFriendDm = arg1(dependencyMap[7]).ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
+    goreContentNonFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   }
   obj.goreContentNonFriendDm = goreContentNonFriendDm;
   return obj;
@@ -100,71 +235,60 @@ function goreContentToProto(arg0) {
   obj.goreContentNonFriendDm = tmp3;
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const UserSettingsDelay = tmp2.UserSettingsDelay;
-({ DmSpamFilterTypes: closure_3, ExplicitContentFilterTypes: closure_4 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ AllFriendSourceFlags: closure_5, SpoilerRenderSetting: closure_6, StatusTypes } = arg1(dependencyMap[3]));
-const StickerAnimationSettings = arg1(dependencyMap[4]).StickerAnimationSettings;
-let obj = arg1(dependencyMap[5]);
-const tmp4 = arg1(dependencyMap[3]);
-const defineProtoSettingResult = obj.defineProtoSetting("textAndImages", "useLegacyChatInput", (value) => {
+const UserSettingsDelay = MAX_FAVORITES.UserSettingsDelay;
+({ DmSpamFilterTypes: closure_3, ExplicitContentFilterTypes: closure_4 } = items);
+({ AllFriendSourceFlags: closure_5, SpoilerRenderSetting: closure_6, StatusTypes } = ME);
+const defineProtoSettingResult = set.defineProtoSetting("textAndImages", "useLegacyChatInput", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj2 = arg1(dependencyMap[5]);
-const defineProtoSettingResult1 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "useRichChatInput", (value) => {
+const defineProtoSettingResult1 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "useRichChatInput", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj3 = arg1(dependencyMap[5]);
-const defineProtoSettingResult2 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "includeStickersInAutocomplete", (value) => {
+const defineProtoSettingResult2 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "includeStickersInAutocomplete", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj4 = arg1(dependencyMap[5]);
-const defineProtoSettingResult3 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "includeSoundmojiInAutocomplete", (value) => {
+const defineProtoSettingResult3 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "includeSoundmojiInAutocomplete", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj5 = arg1(dependencyMap[5]);
-const defineProtoSettingResult4 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "includeGameMentionsInAutocomplete", (value) => {
+const defineProtoSettingResult4 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "includeGameMentionsInAutocomplete", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj6 = arg1(dependencyMap[5]);
-const defineProtoSettingResult5 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "renderSpoilers", (value) => {
+const defineProtoSettingResult5 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "renderSpoilers", (value) => {
   let ON_CLICK;
   if (null != value) {
     ON_CLICK = value.value;
@@ -174,341 +298,308 @@ const defineProtoSettingResult5 = arg1(dependencyMap[5]).defineProtoSetting("tex
   }
   return ON_CLICK;
 }, (value) => {
-  const StringValue = arg1(dependencyMap[6]).StringValue;
+  const StringValue = require(1313) /* _callSuper */.StringValue;
   return StringValue.create({ value });
 });
-const obj7 = arg1(dependencyMap[5]);
-const defineProtoSettingResult6 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "useThreadSidebar", (value) => {
+const defineProtoSettingResult6 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "useThreadSidebar", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj8 = arg1(dependencyMap[5]);
-const defineProtoSettingResult7 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "showInAppNotifications", (value) => {
+const defineProtoSettingResult7 = makeUpdateSettingFunction.defineProtoSetting("notifications", "showInAppNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj9 = arg1(dependencyMap[5]);
-const defineProtoSettingResult8 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "reactionNotifications", (arg0) => {
+const defineProtoSettingResult8 = makeUpdateSettingFunction.defineProtoSetting("notifications", "reactionNotifications", (arg0) => {
   let NOTIFICATIONS_ENABLED = arg0;
   if (null == arg0) {
-    NOTIFICATIONS_ENABLED = arg1(dependencyMap[7]).ReactionNotificationType.NOTIFICATIONS_ENABLED;
+    NOTIFICATIONS_ENABLED = require(1282) /* _callSuper */.ReactionNotificationType.NOTIFICATIONS_ENABLED;
   }
   return NOTIFICATIONS_ENABLED;
 }, (arg0) => arg0);
-const obj10 = arg1(dependencyMap[5]);
-const defineProtoSettingResult9 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "customStatusPushNotifications", (arg0) => {
+const defineProtoSettingResult9 = makeUpdateSettingFunction.defineProtoSetting("notifications", "customStatusPushNotifications", (arg0) => {
   let STATUS_PUSH_UNSET = arg0;
   if (null == arg0) {
-    STATUS_PUSH_UNSET = arg1(dependencyMap[7]).CustomStatusPushNotificationType.STATUS_PUSH_UNSET;
+    STATUS_PUSH_UNSET = require(1282) /* _callSuper */.CustomStatusPushNotificationType.STATUS_PUSH_UNSET;
   }
   return STATUS_PUSH_UNSET;
 }, (arg0) => arg0);
-const obj11 = arg1(dependencyMap[5]);
-const defineProtoSettingResult10 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableSummaryReminderNotifications", (value) => {
+const defineProtoSettingResult10 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableSummaryReminderNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj12 = arg1(dependencyMap[5]);
-const defineProtoSettingResult11 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableScreenDowntimeScheduleNotifications", (value) => {
+const defineProtoSettingResult11 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableScreenDowntimeScheduleNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj13 = arg1(dependencyMap[5]);
-const defineProtoSettingResult12 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableVoiceActivityNotifications", (value) => {
+const defineProtoSettingResult12 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableVoiceActivityNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj14 = arg1(dependencyMap[5]);
-const defineProtoSettingResult13 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableFriendOnlineNotifications", (value) => {
+const defineProtoSettingResult13 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableFriendOnlineNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj15 = arg1(dependencyMap[5]);
-const defineProtoSettingResult14 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableFriendAnniversaryNotifications", (value) => {
+const defineProtoSettingResult14 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableFriendAnniversaryNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj16 = arg1(dependencyMap[5]);
-const defineProtoSettingResult15 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableServerTrendingNotifications", (value) => {
+const defineProtoSettingResult15 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableServerTrendingNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj17 = arg1(dependencyMap[5]);
-const defineProtoSettingResult16 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableProfileUpdatesNotifications", (value) => {
+const defineProtoSettingResult16 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableProfileUpdatesNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj18 = arg1(dependencyMap[5]);
-const defineProtoSettingResult17 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableFriendGamingActivityNotifications", (value) => {
+const defineProtoSettingResult17 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableFriendGamingActivityNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj19 = arg1(dependencyMap[5]);
-const defineProtoSettingResult18 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "enableUpcomingServerEventNotifications", (value) => {
+const defineProtoSettingResult18 = makeUpdateSettingFunction.defineProtoSetting("notifications", "enableUpcomingServerEventNotifications", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
-  return BoolValue.create({ value });
-});
-const obj20 = arg1(dependencyMap[5]);
-const defineProtoSettingResult19 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "quietMode", (value) => {
-  value = undefined;
-  if (null != value) {
-    value = value.value;
-  }
-  return null != value && value;
-}, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
 let closure_9 = [];
-const obj21 = arg1(dependencyMap[5]);
-const defineProtoSettingResult20 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "focusModeExpiresAtMs", (arg0) => {
+const defineProtoSettingResult19 = makeUpdateSettingFunction.defineProtoSetting("notifications", "quietMode", (value) => {
+  value = undefined;
+  if (null != value) {
+    value = value.value;
+  }
+  return null != value && value;
+}, (value) => {
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  return BoolValue.create({ value });
+});
+const defineProtoSettingResult20 = makeUpdateSettingFunction.defineProtoSetting("notifications", "focusModeExpiresAtMs", (arg0) => {
   let str = "0";
   if (null != arg0) {
     str = arg0;
   }
   return str;
 }, (arg0) => arg0);
-const obj22 = arg1(dependencyMap[5]);
-const defineProtoSettingResult21 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "emojiPickerCollapsedSections", (arg0) => {
+const defineProtoSettingResult21 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "emojiPickerCollapsedSections", (arg0) => {
   let tmp = arg0;
   if (null == arg0) {
     tmp = closure_9;
   }
   return tmp;
 }, (arg0) => arg0);
-const obj23 = arg1(dependencyMap[5]);
-const defineProtoSettingResult22 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "stickerPickerCollapsedSections", (arg0) => {
+const defineProtoSettingResult22 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "stickerPickerCollapsedSections", (arg0) => {
   let tmp = arg0;
   if (null == arg0) {
     tmp = closure_9;
   }
   return tmp;
 }, (arg0) => arg0);
-const obj24 = arg1(dependencyMap[5]);
-const defineProtoSettingResult23 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "soundboardPickerCollapsedSections", (arg0) => {
+const defineProtoSettingResult23 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "soundboardPickerCollapsedSections", (arg0) => {
   let tmp = arg0;
   if (null == arg0) {
     tmp = closure_9;
   }
   return tmp;
 }, (arg0) => arg0);
-const obj25 = arg1(dependencyMap[5]);
-const defineProtoSettingResult24 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "viewImageDescriptions", (value) => {
+const defineProtoSettingResult24 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "viewImageDescriptions", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj26 = arg1(dependencyMap[5]);
-const defineProtoSettingResult25 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "showCommandSuggestions", (value) => {
+const defineProtoSettingResult25 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "showCommandSuggestions", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj27 = arg1(dependencyMap[5]);
-const defineProtoSettingResult26 = arg1(dependencyMap[5]).defineProtoSetting("voiceAndVideo", "alwaysPreviewVideo", (value) => {
+const defineProtoSettingResult26 = makeUpdateSettingFunction.defineProtoSetting("voiceAndVideo", "alwaysPreviewVideo", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj28 = arg1(dependencyMap[5]);
-const defineProtoSettingResult27 = arg1(dependencyMap[5]).defineProtoSetting("voiceAndVideo", "disableStreamPreviews", (value) => {
+const defineProtoSettingResult27 = makeUpdateSettingFunction.defineProtoSetting("voiceAndVideo", "disableStreamPreviews", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj29 = arg1(dependencyMap[5]);
-const defineProtoSettingResult28 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "notifyFriendsOnGoLive", (value) => {
+const defineProtoSettingResult28 = makeUpdateSettingFunction.defineProtoSetting("notifications", "notifyFriendsOnGoLive", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj30 = arg1(dependencyMap[5]);
-const defineProtoSettingResult29 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "notifyFriendsOnComeOnline", (value) => {
+const defineProtoSettingResult29 = makeUpdateSettingFunction.defineProtoSetting("notifications", "notifyFriendsOnComeOnline", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj31 = arg1(dependencyMap[5]);
-const defineProtoSettingResult30 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "notifyFriendsOnProfileUpdate", (value) => {
+const defineProtoSettingResult30 = makeUpdateSettingFunction.defineProtoSetting("notifications", "notifyFriendsOnProfileUpdate", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj32 = arg1(dependencyMap[5]);
-const defineProtoSettingResult31 = arg1(dependencyMap[5]).defineProtoSetting("notifications", "notificationCenterAckedBeforeId", (arg0) => {
+const defineProtoSettingResult31 = makeUpdateSettingFunction.defineProtoSetting("notifications", "notificationCenterAckedBeforeId", (arg0) => {
   let str = "0";
   if (null != arg0) {
     str = arg0;
   }
   return str;
 }, (arg0) => arg0);
-const obj33 = arg1(dependencyMap[5]);
-const defineProtoSettingResult32 = arg1(dependencyMap[5]).defineProtoSetting("gameLibrary", "installShortcutDesktop", (value) => {
+const defineProtoSettingResult32 = makeUpdateSettingFunction.defineProtoSetting("gameLibrary", "installShortcutDesktop", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj34 = arg1(dependencyMap[5]);
-const defineProtoSettingResult33 = arg1(dependencyMap[5]).defineProtoSetting("gameLibrary", "installShortcutStartMenu", (value) => {
+const defineProtoSettingResult33 = makeUpdateSettingFunction.defineProtoSetting("gameLibrary", "installShortcutStartMenu", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
-  return BoolValue.create({ value });
-});
-const obj35 = arg1(dependencyMap[5]);
-const defineProtoSettingResult34 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "allowActivityPartyPrivacyFriends", (value) => {
-  value = undefined;
-  if (null != value) {
-    value = value.value;
-  }
-  return null == value || value;
-}, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
 let closure_10 = [];
-const obj36 = arg1(dependencyMap[5]);
-const defineProtoSettingResult35 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "allowActivityPartyPrivacyVoiceChannel", (value) => {
+const defineProtoSettingResult34 = makeUpdateSettingFunction.defineProtoSetting("privacy", "allowActivityPartyPrivacyFriends", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj37 = arg1(dependencyMap[5]);
-const defineProtoSettingResult36 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "messageRequestRestrictedGuildIds", (arg0) => {
+const defineProtoSettingResult35 = makeUpdateSettingFunction.defineProtoSetting("privacy", "allowActivityPartyPrivacyVoiceChannel", (value) => {
+  value = undefined;
+  if (null != value) {
+    value = value.value;
+  }
+  return null == value || value;
+}, (value) => {
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  return BoolValue.create({ value });
+});
+const defineProtoSettingResult36 = makeUpdateSettingFunction.defineProtoSetting("privacy", "messageRequestRestrictedGuildIds", (arg0) => {
   let tmp = arg0;
   if (null == arg0) {
     tmp = closure_10;
   }
   return tmp;
 }, (arg0) => arg0);
-const obj38 = arg1(dependencyMap[5]);
-const defineProtoSettingResult37 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "defaultMessageRequestRestricted", (value) => {
+const defineProtoSettingResult37 = makeUpdateSettingFunction.defineProtoSetting("privacy", "defaultMessageRequestRestricted", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj39 = arg1(dependencyMap[5]);
-const defineProtoSettingResult38 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "nonSpamRetrainingOptIn", (value) => {
+const defineProtoSettingResult38 = makeUpdateSettingFunction.defineProtoSetting("privacy", "nonSpamRetrainingOptIn", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
@@ -517,46 +608,41 @@ const defineProtoSettingResult38 = arg1(dependencyMap[5]).defineProtoSetting("pr
 }, (value) => {
   let obj;
   if (null != value) {
-    const BoolValue = arg1(dependencyMap[6]).BoolValue;
+    const BoolValue = require(1313) /* _callSuper */.BoolValue;
     obj = { value };
     obj = BoolValue.create(obj);
   }
   return obj;
 });
-const obj40 = arg1(dependencyMap[5]);
-const defineProtoSettingResult39 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "contactSyncEnabled", (value) => {
+const defineProtoSettingResult39 = makeUpdateSettingFunction.defineProtoSetting("privacy", "contactSyncEnabled", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj41 = arg1(dependencyMap[5]);
-const defineProtoSettingResult40 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "defaultGuildsRestricted", (arg0) => null != arg0 && arg0, (arg0) => arg0);
-const obj42 = arg1(dependencyMap[5]);
-const defineProtoSettingResult41 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "defaultGuildsRestrictedV2", (value) => {
+const defineProtoSettingResult40 = makeUpdateSettingFunction.defineProtoSetting("privacy", "defaultGuildsRestricted", (arg0) => null != arg0 && arg0, (arg0) => arg0);
+const defineProtoSettingResult41 = makeUpdateSettingFunction.defineProtoSetting("privacy", "defaultGuildsRestrictedV2", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj43 = arg1(dependencyMap[5]);
-const defineProtoSettingResult42 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "restrictedGuildIds", (arg0) => {
+const defineProtoSettingResult42 = makeUpdateSettingFunction.defineProtoSetting("privacy", "restrictedGuildIds", (arg0) => {
   let items = arg0;
   if (null == arg0) {
     items = [];
   }
   return items;
 }, (arg0) => arg0);
-const obj44 = arg1(dependencyMap[5]);
-const defineProtoSettingResult43 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "friendDiscoveryFlags", (value) => {
+const defineProtoSettingResult43 = makeUpdateSettingFunction.defineProtoSetting("privacy", "friendDiscoveryFlags", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
@@ -567,11 +653,10 @@ const defineProtoSettingResult43 = arg1(dependencyMap[5]).defineProtoSetting("pr
   }
   return num;
 }, (value) => {
-  const UInt32Value = arg1(dependencyMap[6]).UInt32Value;
+  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
   return UInt32Value.create({ value });
 });
-const obj45 = arg1(dependencyMap[5]);
-const defineProtoSettingResult44 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "friendSourceFlags", (value) => {
+const defineProtoSettingResult44 = makeUpdateSettingFunction.defineProtoSetting("privacy", "friendSourceFlags", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
@@ -581,46 +666,41 @@ const defineProtoSettingResult44 = arg1(dependencyMap[5]).defineProtoSetting("pr
   }
   return value;
 }, (value) => {
-  const UInt32Value = arg1(dependencyMap[6]).UInt32Value;
+  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
   return UInt32Value.create({ value });
 });
-const obj46 = arg1(dependencyMap[5]);
-const defineProtoSettingResult45 = arg1(dependencyMap[5]).defineProtoSetting("debug", "rtcPanelShowVoiceStates", (value) => {
+const defineProtoSettingResult45 = makeUpdateSettingFunction.defineProtoSetting("debug", "rtcPanelShowVoiceStates", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj47 = arg1(dependencyMap[5]);
-const defineProtoSettingResult46 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "convertEmoticons", (value) => {
+const defineProtoSettingResult46 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "convertEmoticons", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj48 = arg1(dependencyMap[5]);
-const defineProtoSettingResult47 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "messageDisplayCompact", (value) => {
+const defineProtoSettingResult47 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "messageDisplayCompact", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj49 = arg1(dependencyMap[5]);
-const defineProtoSettingResult48 = arg1(dependencyMap[5]).defineProtoSetting("voiceAndVideo", "soundboardSettings", (arg0) => arg0, (arg0) => arg0);
-const obj50 = arg1(dependencyMap[5]);
-const defineProtoSettingResult49 = arg1(dependencyMap[5]).defineProtoSetting("voiceAndVideo", "soundmojiVolume", (value) => {
+const defineProtoSettingResult48 = makeUpdateSettingFunction.defineProtoSetting("voiceAndVideo", "soundboardSettings", (arg0) => arg0, (arg0) => arg0);
+const defineProtoSettingResult49 = makeUpdateSettingFunction.defineProtoSetting("voiceAndVideo", "soundmojiVolume", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
@@ -631,55 +711,50 @@ const defineProtoSettingResult49 = arg1(dependencyMap[5]).defineProtoSetting("vo
   }
   return num;
 }, (value) => {
-  const FloatValue = arg1(dependencyMap[6]).FloatValue;
+  const FloatValue = require(1313) /* _callSuper */.FloatValue;
   return FloatValue.create({ value });
 });
-const obj51 = arg1(dependencyMap[5]);
-const defineProtoSettingResult50 = arg1(dependencyMap[5]).defineProtoSetting("voiceAndVideo", "streamNotificationsEnabled", (value) => {
+const defineProtoSettingResult50 = makeUpdateSettingFunction.defineProtoSetting("voiceAndVideo", "streamNotificationsEnabled", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj52 = arg1(dependencyMap[5]);
-const defineProtoSettingResult51 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "dropsOptedOut", (value) => {
+const defineProtoSettingResult51 = makeUpdateSettingFunction.defineProtoSetting("privacy", "dropsOptedOut", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj53 = arg1(dependencyMap[5]);
-const defineProtoSettingResult52 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "quests3PDataOptedOut", (value) => {
+const defineProtoSettingResult52 = makeUpdateSettingFunction.defineProtoSetting("privacy", "quests3PDataOptedOut", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj54 = arg1(dependencyMap[5]);
-const defineProtoSettingResult53 = arg1(dependencyMap[5]).defineProtoSetting("voiceAndVideo", "nativePhoneIntegrationEnabled", (value) => {
+const defineProtoSettingResult53 = makeUpdateSettingFunction.defineProtoSetting("voiceAndVideo", "nativePhoneIntegrationEnabled", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj55 = arg1(dependencyMap[5]);
-const defineProtoSettingResult54 = arg1(dependencyMap[5]).defineProtoSetting("voiceAndVideo", "afkTimeout", (value) => {
+const defineProtoSettingResult54 = makeUpdateSettingFunction.defineProtoSetting("voiceAndVideo", "afkTimeout", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
@@ -690,66 +765,60 @@ const defineProtoSettingResult54 = arg1(dependencyMap[5]).defineProtoSetting("vo
   }
   return num;
 }, (value) => {
-  const UInt32Value = arg1(dependencyMap[6]).UInt32Value;
+  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
   return UInt32Value.create({ value });
 });
-const obj56 = arg1(dependencyMap[5]);
-const defineProtoSettingResult55 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "viewNsfwGuilds", (value) => {
+const defineProtoSettingResult55 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "viewNsfwGuilds", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj57 = arg1(dependencyMap[5]);
-const defineProtoSettingResult56 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "viewNsfwCommands", (value) => {
+const defineProtoSettingResult56 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "viewNsfwCommands", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj58 = arg1(dependencyMap[5]);
-const defineProtoSettingResult57 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "detectPlatformAccounts", (value) => {
+const defineProtoSettingResult57 = makeUpdateSettingFunction.defineProtoSetting("privacy", "detectPlatformAccounts", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj59 = arg1(dependencyMap[5]);
-const defineProtoSettingResult58 = arg1(dependencyMap[5]).defineProtoSetting("gameLibrary", "disableGamesTab", (value) => {
+const defineProtoSettingResult58 = makeUpdateSettingFunction.defineProtoSetting("gameLibrary", "disableGamesTab", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj60 = arg1(dependencyMap[5]);
-const defineProtoSettingResult59 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "enableTtsCommand", (value) => {
+const defineProtoSettingResult59 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "enableTtsCommand", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj61 = arg1(dependencyMap[5]);
-const defineProtoSettingResult60 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "explicitContentFilter", (value) => {
+const defineProtoSettingResult60 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "explicitContentFilter", (value) => {
   let NON_FRIENDS;
   if (null != value) {
     NON_FRIENDS = value.value;
@@ -759,11 +828,10 @@ const defineProtoSettingResult60 = arg1(dependencyMap[5]).defineProtoSetting("te
   }
   return NON_FRIENDS;
 }, (value) => {
-  const UInt32Value = arg1(dependencyMap[6]).UInt32Value;
+  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
   return UInt32Value.create({ value });
 });
-const obj62 = arg1(dependencyMap[5]);
-const defineProtoSettingResult61 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "dmSpamFilter", (value) => {
+const defineProtoSettingResult61 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "dmSpamFilter", (value) => {
   let NON_FRIENDS;
   if (null != value) {
     NON_FRIENDS = value.value;
@@ -773,50 +841,45 @@ const defineProtoSettingResult61 = arg1(dependencyMap[5]).defineProtoSetting("te
   }
   return NON_FRIENDS;
 }, (value) => {
-  const UInt32Value = arg1(dependencyMap[6]).UInt32Value;
+  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
   return UInt32Value.create({ value });
 });
-const obj63 = arg1(dependencyMap[5]);
-const defineProtoSettingResult62 = arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "dmSpamFilterV2", (arg0) => {
+const defineProtoSettingResult62 = makeUpdateSettingFunction.defineProtoSetting("textAndImages", "dmSpamFilterV2", (arg0) => {
   let DEFAULT_UNSET = arg0;
   if (null == arg0) {
-    DEFAULT_UNSET = arg1(dependencyMap[7]).DmSpamFilterV2.DEFAULT_UNSET;
+    DEFAULT_UNSET = require(1282) /* _callSuper */.DmSpamFilterV2.DEFAULT_UNSET;
   }
   return DEFAULT_UNSET;
 }, (arg0) => arg0);
-const obj64 = arg1(dependencyMap[5]);
-const defineProtoSettingResult63 = arg1(dependencyMap[5]).defineProtoSetting("status", "showCurrentGame", (value) => {
+const defineProtoSettingResult63 = makeUpdateSettingFunction.defineProtoSetting("status", "showCurrentGame", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj65 = arg1(dependencyMap[5]);
-const defineProtoSettingResult64 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "recentGamesEnabled", (value) => {
+const defineProtoSettingResult64 = makeUpdateSettingFunction.defineProtoSetting("privacy", "recentGamesEnabled", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-const obj66 = arg1(dependencyMap[5]);
-const set = new Set(Object.values(StatusTypes));
-const defineProtoSettingResult65 = arg1(dependencyMap[5]).defineProtoSetting("privacy", "profileVisibility", (arg0) => {
+set = new Set(Object.values(StatusTypes));
+const defineProtoSettingResult65 = makeUpdateSettingFunction.defineProtoSetting("privacy", "profileVisibility", (arg0) => {
   let FRIENDS_AND_ALL_GUILDS = arg0;
   if (null == arg0) {
-    FRIENDS_AND_ALL_GUILDS = arg1(dependencyMap[7]).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+    FRIENDS_AND_ALL_GUILDS = require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
   }
   return FRIENDS_AND_ALL_GUILDS;
 }, (arg0) => arg0);
-const obj67 = arg1(dependencyMap[5]);
-const defineProtoSettingResult66 = arg1(dependencyMap[5]).defineProtoSetting("status", "status", (value) => {
+const defineProtoSettingResult66 = makeUpdateSettingFunction.defineProtoSetting("status", "status", (value) => {
   if (null != value) {
     if (set.has(value.value)) {
       let UNKNOWN = value.value;
@@ -825,83 +888,60 @@ const defineProtoSettingResult66 = arg1(dependencyMap[5]).defineProtoSetting("st
   }
   UNKNOWN = StatusTypes.UNKNOWN;
 }, (value) => {
-  const StringValue = arg1(dependencyMap[6]).StringValue;
+  const StringValue = require(1313) /* _callSuper */.StringValue;
   return StringValue.create({ value });
 });
-const obj68 = arg1(dependencyMap[5]);
-const defineProtoSettingResult67 = arg1(dependencyMap[5]).defineProtoSetting("status", "statusExpiresAtMs", (arg0) => {
+const defineProtoSettingResult67 = makeUpdateSettingFunction.defineProtoSetting("status", "statusExpiresAtMs", (arg0) => {
   let str = "0";
   if (null != arg0) {
     str = arg0;
   }
   return str;
 }, (arg0) => arg0);
-const obj69 = arg1(dependencyMap[5]);
-const defineProtoSettingResult68 = arg1(dependencyMap[5]).defineProtoSetting("status", "statusCreatedAtMs", (arg0) => arg0, (arg0) => arg0);
-const obj70 = arg1(dependencyMap[5]);
-const defineProtoSettingResult69 = arg1(dependencyMap[5]).defineProtoSetting("status", "customStatus", (arg0) => arg0, (arg0) => arg0);
-const obj71 = arg1(dependencyMap[5]);
-const defineProtoSettingResult70 = arg1(dependencyMap[5]).defineProtoSetting("clips", "allowVoiceRecording", (value) => {
+const defineProtoSettingResult68 = makeUpdateSettingFunction.defineProtoSetting("status", "statusCreatedAtMs", (arg0) => arg0, (arg0) => arg0);
+const defineProtoSettingResult69 = makeUpdateSettingFunction.defineProtoSetting("status", "customStatus", (arg0) => arg0, (arg0) => arg0);
+const result = makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "inlineAttachmentMedia", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
-  return BoolValue.create({ value });
-});
-const obj72 = arg1(dependencyMap[5]);
-const result = obj72.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "inlineAttachmentMedia", (value) => {
-  value = undefined;
-  if (null != value) {
-    value = value.value;
-  }
-  return null == value || value;
-}, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 }), "text", "inlineAttachmentMedia");
-const obj73 = arg1(dependencyMap[5]);
-const obj74 = arg1(dependencyMap[5]);
-const result1 = obj74.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "inlineEmbedMedia", (value) => {
+const result1 = makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "inlineEmbedMedia", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 }), "text", "inlineEmbedMedia");
-const obj75 = arg1(dependencyMap[5]);
-const obj76 = arg1(dependencyMap[5]);
-const result2 = obj76.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "renderEmbeds", (value) => {
+const result2 = makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "renderEmbeds", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 }), "text", "renderEmbeds");
-const obj77 = arg1(dependencyMap[5]);
-const obj78 = arg1(dependencyMap[5]);
-const result3 = obj78.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "renderReactions", (value) => {
+const result3 = makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "renderReactions", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 }), "text", "renderReactions");
-const obj79 = arg1(dependencyMap[5]);
-const obj80 = arg1(dependencyMap[5]);
-obj = { comparator: importDefault(dependencyMap[8]) };
-const result4 = obj80.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "defaultReactionEmoji", (disableDoubleTap) => {
+set = { comparator: require("shallowEqual") };
+const result4 = makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "defaultReactionEmoji", (disableDoubleTap) => {
   let animated;
   let emojiId;
   let emojiName;
@@ -941,23 +981,31 @@ const result4 = obj80.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).def
   let emojiName;
   const obj = {};
   ({ emojiId, emojiName, animated, disableDoubleTap } = arg0);
-  const UInt64Value = arg1(dependencyMap[6]).UInt64Value;
+  const UInt64Value = require(1313) /* _callSuper */.UInt64Value;
   obj.emojiId = UInt64Value.create({ value: emojiId });
-  const StringValue = arg1(dependencyMap[6]).StringValue;
+  const StringValue = require(1313) /* _callSuper */.StringValue;
   obj.emojiName = StringValue.create({ value: emojiName });
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   obj.animated = BoolValue.create({ value: animated });
-  const BoolValue2 = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue2 = require(1313) /* _callSuper */.BoolValue;
   obj.disableDoubleTap = BoolValue2.create({ value: disableDoubleTap });
   return obj;
-}, obj), "text", "defaultReactionEmoji");
-const obj81 = arg1(dependencyMap[5]);
-const items = [tmp2.ListDensityMode.AUTO, , ];
-const obj83 = arg1(dependencyMap[5]);
-items[1] = arg1(dependencyMap[9]).ChannelListLayoutTypes.COZY;
-items[2] = arg1(dependencyMap[9]).ChannelListLayoutTypes.COMPACT;
+}, set), "text", "defaultReactionEmoji");
+items = [MAX_FAVORITES.ListDensityMode.AUTO, , ];
+const defineProtoSettingResult70 = makeUpdateSettingFunction.defineProtoSetting("clips", "allowVoiceRecording", (value) => {
+  value = undefined;
+  if (null != value) {
+    value = value.value;
+  }
+  return null == value || value;
+}, (value) => {
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  return BoolValue.create({ value });
+});
+items[1] = require("ChannelListLayoutTypes").ChannelListLayoutTypes.COZY;
+items[2] = require("ChannelListLayoutTypes").ChannelListLayoutTypes.COMPACT;
 const set1 = new Set(items);
-const defineProtoSettingResult71 = arg1(dependencyMap[5]).defineProtoSetting("localization", "timezoneOffset", (value) => {
+const defineProtoSettingResult71 = makeUpdateSettingFunction.defineProtoSetting("localization", "timezoneOffset", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
@@ -968,7 +1016,7 @@ const defineProtoSettingResult71 = arg1(dependencyMap[5]).defineProtoSetting("lo
   }
   return tmp2;
 }, (arg0) => {
-  const Int32Value = arg1(dependencyMap[6]).Int32Value;
+  const Int32Value = require(1313) /* _callSuper */.Int32Value;
   const obj = {};
   let num = 0;
   if (null != arg0) {
@@ -977,42 +1025,121 @@ const defineProtoSettingResult71 = arg1(dependencyMap[5]).defineProtoSetting("lo
   obj.value = num;
   return Int32Value.create(obj);
 });
-const obj84 = arg1(dependencyMap[5]);
-const items1 = [arg1(dependencyMap[9]).MessagePreviewTypes.ALL, arg1(dependencyMap[9]).MessagePreviewTypes.UNREADS, arg1(dependencyMap[9]).MessagePreviewTypes.NONE];
+const items1 = [require("ChannelListLayoutTypes").MessagePreviewTypes.ALL, require("ChannelListLayoutTypes").MessagePreviewTypes.UNREADS, require("ChannelListLayoutTypes").MessagePreviewTypes.NONE];
 const set2 = new Set(items1);
-const defineProtoSettingResult72 = arg1(dependencyMap[5]).defineProtoSetting("appearance", "channelListLayout", (value) => {
+const defineProtoSettingResult72 = makeUpdateSettingFunction.defineProtoSetting("appearance", "channelListLayout", (value) => {
   if (null != value) {
     if (set1.has(value.value)) {
       let COZY = value.value;
     }
     return COZY;
   }
-  COZY = arg1(dependencyMap[9]).ChannelListLayoutTypes.COZY;
+  COZY = require(3808) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY;
 }, (value) => {
-  const StringValue = arg1(dependencyMap[6]).StringValue;
+  const StringValue = require(1313) /* _callSuper */.StringValue;
   return StringValue.create({ value });
 });
-const obj85 = arg1(dependencyMap[5]);
-const defineProtoSettingResult73 = arg1(dependencyMap[5]).defineProtoSetting("appearance", "messagePreviews", (value) => {
+const result5 = makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("appearance", "developerMode", (arg0) => null != arg0 && arg0, (arg0) => arg0), "appearance", "developerMode");
+const defineProtoSettingResult73 = makeUpdateSettingFunction.defineProtoSetting("appearance", "messagePreviews", (value) => {
   if (null != value) {
     if (set2.has(value.value)) {
       let ALL = value.value;
     }
     return ALL;
   }
-  ALL = arg1(dependencyMap[9]).MessagePreviewTypes.ALL;
+  ALL = require(3808) /* ChannelListLayoutTypes */.MessagePreviewTypes.ALL;
 }, (value) => {
-  const StringValue = arg1(dependencyMap[6]).StringValue;
+  const StringValue = require(1313) /* _callSuper */.StringValue;
   return StringValue.create({ value });
 });
-const obj86 = arg1(dependencyMap[5]);
-const result5 = obj86.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("appearance", "developerMode", (arg0) => null != arg0 && arg0, (arg0) => arg0), "appearance", "developerMode");
-const obj87 = arg1(dependencyMap[5]);
-const obj88 = arg1(dependencyMap[5]);
-const defineProtoSettingResult74 = arg1(dependencyMap[5]).defineProtoSetting("appearance", "darkSidebar", (arg0) => null != arg0 && arg0, (arg0) => arg0);
-obj = { comparator: arg1(dependencyMap[10]).isEqual };
-const obj89 = arg1(dependencyMap[5]);
-const defineProtoSettingResult75 = arg1(dependencyMap[5]).defineProtoSetting("appearance", "clientThemeSettings", (backgroundGradientPresetId) => {
+set = { comparator: require("apply").isEqual };
+const defineProtoSettingResult74 = makeUpdateSettingFunction.defineProtoSetting("appearance", "darkSidebar", (arg0) => null != arg0 && arg0, (arg0) => arg0);
+const result6 = makeUpdateSettingFunction.wrapSettingWithOverride(makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "gifAutoPlay", (value) => {
+  value = undefined;
+  if (null != value) {
+    value = value.value;
+  }
+  return null == value || value;
+}, (value) => {
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  return BoolValue.create({ value });
+}), "text", "gifAutoPlay"), "gifAutoPlay", () => {
+  const iter = store.getOverride("gifAutoPlay");
+  let value;
+  if (null != iter) {
+    value = iter.value;
+  }
+  return value;
+}, () => {
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const iter = outer1_2.getOverride("gifAutoPlay");
+    let value;
+    if (null != iter) {
+      value = iter.value;
+    }
+    return value;
+  });
+});
+const result7 = makeUpdateSettingFunction.wrapSettingWithOverride(makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "animateEmoji", (value) => {
+  value = undefined;
+  if (null != value) {
+    value = value.value;
+  }
+  return null == value || value;
+}, (value) => {
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
+  return BoolValue.create({ value });
+}), "text", "animateEmoji"), "animateEmoji", () => {
+  const iter = store.getOverride("animateEmoji");
+  let value;
+  if (null != iter) {
+    value = iter.value;
+  }
+  return value;
+}, () => {
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const iter = outer1_2.getOverride("animateEmoji");
+    let value;
+    if (null != iter) {
+      value = iter.value;
+    }
+    return value;
+  });
+});
+let closure_14 = [];
+const result8 = makeUpdateSettingFunction.wrapSettingWithOverride(makeUpdateSettingFunction.wrapSettingWithSelectiveSyncing(makeUpdateSettingFunction.defineProtoSetting("textAndImages", "animateStickers", (value) => {
+  let ALWAYS_ANIMATE;
+  if (null != value) {
+    ALWAYS_ANIMATE = value.value;
+  }
+  if (null == ALWAYS_ANIMATE) {
+    ALWAYS_ANIMATE = StickerAnimationSettings.ALWAYS_ANIMATE;
+  }
+  return ALWAYS_ANIMATE;
+}, (value) => {
+  const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
+  return UInt32Value.create({ value });
+}), "text", "animateStickers"), "animateStickers", () => {
+  const iter = store.getOverride("animateStickers");
+  let value;
+  if (null != iter) {
+    value = iter.value;
+  }
+  return value;
+}, () => {
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const iter = outer1_2.getOverride("animateStickers");
+    let value;
+    if (null != iter) {
+      value = iter.value;
+    }
+    return value;
+  });
+});
+const defineProtoSettingResult75 = makeUpdateSettingFunction.defineProtoSetting("appearance", "clientThemeSettings", (backgroundGradientPresetId) => {
   let obj = {};
   let value;
   if (null != backgroundGradientPresetId) {
@@ -1036,7 +1163,7 @@ const defineProtoSettingResult75 = arg1(dependencyMap[5]).defineProtoSetting("ap
   let obj = {};
   obj = undefined;
   if (null != backgroundGradientPresetId.backgroundGradientPresetId) {
-    const UInt32Value = arg1(dependencyMap[6]).UInt32Value;
+    const UInt32Value = require(1313) /* _callSuper */.UInt32Value;
     obj = { value: backgroundGradientPresetId.backgroundGradientPresetId };
     obj = UInt32Value.create(obj);
   }
@@ -1048,288 +1175,170 @@ const defineProtoSettingResult75 = arg1(dependencyMap[5]).defineProtoSetting("ap
   }
   obj.customUserThemeSettings = tmp4;
   return obj;
-}, obj);
-const obj91 = arg1(dependencyMap[5]);
-const obj92 = arg1(dependencyMap[5]);
-const result6 = obj91.wrapSettingWithOverride(obj92.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "gifAutoPlay", (value) => {
-  value = undefined;
-  if (null != value) {
-    value = value.value;
-  }
-  return null == value || value;
-}, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
-  return BoolValue.create({ value });
-}), "text", "gifAutoPlay"), "gifAutoPlay", () => {
-  const iter = store.getOverride("gifAutoPlay");
-  let value;
-  if (null != iter) {
-    value = iter.value;
-  }
-  return value;
-}, () => {
-  const items = [closure_2];
-  return arg1(dependencyMap[11]).useStateFromStores(items, () => {
-    const iter = override.getOverride("gifAutoPlay");
-    let value;
-    if (null != iter) {
-      value = iter.value;
-    }
-    return value;
-  });
-});
-const obj93 = arg1(dependencyMap[5]);
-const obj94 = arg1(dependencyMap[5]);
-const obj95 = arg1(dependencyMap[5]);
-const result7 = obj94.wrapSettingWithOverride(obj95.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "animateEmoji", (value) => {
-  value = undefined;
-  if (null != value) {
-    value = value.value;
-  }
-  return null == value || value;
-}, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
-  return BoolValue.create({ value });
-}), "text", "animateEmoji"), "animateEmoji", () => {
-  const iter = store.getOverride("animateEmoji");
-  let value;
-  if (null != iter) {
-    value = iter.value;
-  }
-  return value;
-}, () => {
-  const items = [closure_2];
-  return arg1(dependencyMap[11]).useStateFromStores(items, () => {
-    const iter = override.getOverride("animateEmoji");
-    let value;
-    if (null != iter) {
-      value = iter.value;
-    }
-    return value;
-  });
-});
-const obj96 = arg1(dependencyMap[5]);
-const obj97 = arg1(dependencyMap[5]);
-const obj98 = arg1(dependencyMap[5]);
-let closure_14 = [];
-const result8 = obj97.wrapSettingWithOverride(obj98.wrapSettingWithSelectiveSyncing(arg1(dependencyMap[5]).defineProtoSetting("textAndImages", "animateStickers", (value) => {
-  let ALWAYS_ANIMATE;
-  if (null != value) {
-    ALWAYS_ANIMATE = value.value;
-  }
-  if (null == ALWAYS_ANIMATE) {
-    ALWAYS_ANIMATE = StickerAnimationSettings.ALWAYS_ANIMATE;
-  }
-  return ALWAYS_ANIMATE;
-}, (value) => {
-  const UInt32Value = arg1(dependencyMap[6]).UInt32Value;
-  return UInt32Value.create({ value });
-}), "text", "animateStickers"), "animateStickers", () => {
-  const iter = store.getOverride("animateStickers");
-  let value;
-  if (null != iter) {
-    value = iter.value;
-  }
-  return value;
-}, () => {
-  const items = [closure_2];
-  return arg1(dependencyMap[11]).useStateFromStores(items, () => {
-    const iter = override.getOverride("animateStickers");
-    let value;
-    if (null != iter) {
-      value = iter.value;
-    }
-    return value;
-  });
-});
-obj = arg1(dependencyMap[5]);
-const obj99 = arg1(dependencyMap[5]);
-obj = arg1(dependencyMap[5]);
-obj = { delay: UserSettingsDelay.FREQUENT_USER_ACTION };
+}, set);
+set = { delay: UserSettingsDelay.FREQUENT_USER_ACTION };
 let closure_15 = [];
-const defineProtoSettingResult76 = obj.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
+const defineProtoSettingResult76 = set.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
   let tmp = arg0;
   if (null == arg0) {
     tmp = closure_14;
   }
   return tmp;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-const defineProtoSettingResult77 = obj.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
+const defineProtoSettingResult77 = set.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
   let tmp = arg0;
   if (null == arg0) {
     tmp = closure_14;
   }
   return tmp;
-}, (arg0) => arg0, obj);
-obj = arg1(dependencyMap[5]);
-obj = {};
-obj = arg1(dependencyMap[5]);
-obj.baseSetting = obj.defineProtoSetting("privacy", "defaultGuildsActivityRestricted", (arg0) => arg0, (arg0) => {
+}, (arg0) => arg0, set);
+set = {};
+set.baseSetting = set.defineProtoSetting("privacy", "defaultGuildsActivityRestricted", (arg0) => arg0, (arg0) => {
   let OFF = arg0;
   if (null == arg0) {
-    OFF = arg1(dependencyMap[7]).GuildActivityStatusRestrictionDefault.OFF;
+    OFF = require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefault.OFF;
   }
   return OFF;
 });
-obj.isEligible = function isEligible() {
-  return arg1(dependencyMap[12]).isSettingTeenByDefault(arg1(dependencyMap[13]).SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+set.isEligible = function isEligible() {
+  return require(3809) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3816) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
-obj.useIsEligible = function useIsEligible() {
-  return arg1(dependencyMap[12]).useIsSettingTeenByDefault(arg1(dependencyMap[13]).SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+set.useIsEligible = function useIsEligible() {
+  return require(3809) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3816) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
-obj.ineligibleDefault = arg1(dependencyMap[7]).GuildActivityStatusRestrictionDefault.OFF;
-obj.eligibleDefault = function eligibleDefault() {
-  return arg1(dependencyMap[7]).GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS;
+set.ineligibleDefault = require("_callSuper").GuildActivityStatusRestrictionDefault.OFF;
+set.eligibleDefault = function eligibleDefault() {
+  return require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS;
 };
-const result9 = obj.wrapSettingWithExperimentDefaults(obj);
-obj = arg1(dependencyMap[5]);
-obj = {};
-obj = arg1(dependencyMap[5]);
-obj.baseSetting = obj.defineProtoSetting("privacy", "defaultGuildsActivityRestrictedV2", (arg0) => {
+makeUpdateSettingFunction = set.wrapSettingWithExperimentDefaults(set);
+set = {};
+set.baseSetting = set.defineProtoSetting("privacy", "defaultGuildsActivityRestrictedV2", (arg0) => {
   let tmp = null;
-  if (arg0 !== arg1(dependencyMap[7]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_UNSET) {
+  if (arg0 !== require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_UNSET) {
     tmp = arg0;
   }
   return tmp;
 }, (arg0) => {
   let ACTIVITY_STATUS_OFF = arg0;
   if (null == arg0) {
-    ACTIVITY_STATUS_OFF = arg1(dependencyMap[7]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
+    ACTIVITY_STATUS_OFF = require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
   }
   return ACTIVITY_STATUS_OFF;
 });
-obj.isEligible = function isEligible() {
-  return arg1(dependencyMap[12]).isSettingTeenByDefault(arg1(dependencyMap[13]).SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+set.isEligible = function isEligible() {
+  return require(3809) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3816) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
-obj.useIsEligible = function useIsEligible() {
-  return arg1(dependencyMap[12]).useIsSettingTeenByDefault(arg1(dependencyMap[13]).SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+set.useIsEligible = function useIsEligible() {
+  return require(3809) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3816) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
-obj.ineligibleDefault = arg1(dependencyMap[7]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
-obj.eligibleDefault = function eligibleDefault() {
-  return arg1(dependencyMap[7]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS;
+set.ineligibleDefault = require("_callSuper").GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
+set.eligibleDefault = function eligibleDefault() {
+  return require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS;
 };
-const result10 = obj.wrapSettingWithExperimentDefaults(obj);
-obj = arg1(dependencyMap[5]);
-const defineProtoSettingResult78 = obj.defineProtoSetting("privacy", "activityJoiningRestrictedGuildIds", (arg0) => {
+makeUpdateSettingFunction = set.wrapSettingWithExperimentDefaults(set);
+const defineProtoSettingResult78 = set.defineProtoSetting("privacy", "activityJoiningRestrictedGuildIds", (arg0) => {
   let tmp = arg0;
   if (null == arg0) {
     tmp = closure_15;
   }
   return tmp;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-const defineProtoSettingResult79 = obj.defineProtoSetting("privacy", "familyCenterEnabledV2", (value) => {
+const defineProtoSettingResult79 = set.defineProtoSetting("privacy", "familyCenterEnabledV2", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-obj = arg1(dependencyMap[5]);
-let definePropertyResult = obj.defineProtoSetting("privacy", "allowGameFriendDmsInDiscord", (value) => {
+let definePropertyResult = set.defineProtoSetting("privacy", "allowGameFriendDmsInDiscord", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null == value || value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("privacy", "slayerSdkReceiveDmsInGame", (arg0) => {
+definePropertyResult = set.defineProtoSetting("privacy", "slayerSdkReceiveDmsInGame", (arg0) => {
   let SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET = arg0;
   if (null == arg0) {
-    SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET = arg1(dependencyMap[7]).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET;
+    SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET = require(1282) /* _callSuper */.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET;
   }
   return SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("ads", "alwaysDeliver", (arg0) => null != arg0 && arg0, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("textAndImages", "explicitContentSettings", explicitContentFromProto, explicitContentToProto);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("textAndImages", "goreContentSettings", goreContentFromProto, goreContentToProto);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("appearance", "searchResultExactCountEnabled", (value) => {
+definePropertyResult = set.defineProtoSetting("ads", "alwaysDeliver", (arg0) => null != arg0 && arg0, (arg0) => arg0);
+definePropertyResult = set.defineProtoSetting("textAndImages", "explicitContentSettings", explicitContentFromProto, explicitContentToProto);
+definePropertyResult = set.defineProtoSetting("textAndImages", "goreContentSettings", goreContentFromProto, goreContentToProto);
+definePropertyResult = set.defineProtoSetting("appearance", "searchResultExactCountEnabled", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("appearance", "happeningNowCardsDisabled", (value) => {
+definePropertyResult = set.defineProtoSetting("appearance", "happeningNowCardsDisabled", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("appearance", "timestampHourCycle", (arg0) => {
+definePropertyResult = set.defineProtoSetting("appearance", "timestampHourCycle", (arg0) => {
   let AUTO = arg0;
   if (null == arg0) {
-    AUTO = arg1(dependencyMap[7]).TimestampHourCycle.AUTO;
+    AUTO = require(1282) /* _callSuper */.TimestampHourCycle.AUTO;
   }
   return AUTO;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("appearance", "defaultGuildThemePreference", arg1(dependencyMap[14]).resolveDefaultGuildThemePreference, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("appearance", "launchPadMode", (arg0) => {
+definePropertyResult = set.defineProtoSetting("appearance", "defaultGuildThemePreference", require("resolveDefaultGuildThemePreference").resolveDefaultGuildThemePreference, (arg0) => arg0);
+definePropertyResult = set.defineProtoSetting("appearance", "launchPadMode", (arg0) => {
   let LAUNCH_PAD_DISABLED = arg0;
   if (null == arg0) {
-    LAUNCH_PAD_DISABLED = arg1(dependencyMap[7]).LaunchPadMode.LAUNCH_PAD_DISABLED;
+    LAUNCH_PAD_DISABLED = require(1282) /* _callSuper */.LaunchPadMode.LAUNCH_PAD_DISABLED;
   }
   return LAUNCH_PAD_DISABLED;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("appearance", "swipeRightToLeftMode", (arg0) => {
+definePropertyResult = set.defineProtoSetting("appearance", "swipeRightToLeftMode", (arg0) => {
   let SWIPE_RIGHT_TO_LEFT_UNSET = arg0;
   if (null == arg0) {
-    SWIPE_RIGHT_TO_LEFT_UNSET = arg1(dependencyMap[7]).SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET;
+    SWIPE_RIGHT_TO_LEFT_UNSET = require(1282) /* _callSuper */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_UNSET;
   }
   return SWIPE_RIGHT_TO_LEFT_UNSET;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("userContent", "lastReceivedChangelogId", (arg0) => {
+definePropertyResult = set.defineProtoSetting("userContent", "lastReceivedChangelogId", (arg0) => {
   let str = "0";
   if (null != arg0) {
     str = arg0;
   }
   return str;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("safetySettings", "ignoreProfileSpeedbumpDisabled", (arg0) => null != arg0 && arg0, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("appearance", "uiDensity", (arg0) => {
+definePropertyResult = set.defineProtoSetting("safetySettings", "ignoreProfileSpeedbumpDisabled", (arg0) => null != arg0 && arg0, (arg0) => arg0);
+definePropertyResult = set.defineProtoSetting("appearance", "uiDensity", (arg0) => {
   let DEFAULT = arg0;
-  if (arg0 === arg1(dependencyMap[7]).UIDensity.UNSET_UI_DENSITY) {
-    DEFAULT = arg1(dependencyMap[7]).UIDensity.DEFAULT;
+  if (arg0 === require(1282) /* _callSuper */.UIDensity.UNSET_UI_DENSITY) {
+    DEFAULT = require(1282) /* _callSuper */.UIDensity.DEFAULT;
   } else if (null == DEFAULT) {
-    DEFAULT = arg1(dependencyMap[7]).UIDensity.DEFAULT;
+    DEFAULT = require(1282) /* _callSuper */.UIDensity.DEFAULT;
   }
   return DEFAULT;
 }, (arg0) => arg0);
-obj = arg1(dependencyMap[5]);
-obj = { delay: UserSettingsDelay.AUTOMATED };
-definePropertyResult = obj.defineProtoSetting("inAppFeedbackSettings", "inAppFeedbackStates", (arg0) => {
+set = { delay: UserSettingsDelay.AUTOMATED };
+definePropertyResult = set.defineProtoSetting("inAppFeedbackSettings", "inAppFeedbackStates", (arg0) => {
   let obj = arg0;
   if (null == arg0) {
     obj = {};
   }
-  return arg1(dependencyMap[10]).mapValues(obj, (arg0) => callback(closure_1[10]).mapValues(arg0, (value) => {
+  return require(22) /* apply */.mapValues(obj, (arg0) => outer1_0(outer1_1[10]).mapValues(arg0, (value) => {
     value = undefined;
     if (null != value) {
       value = value.value;
@@ -1341,8 +1350,8 @@ definePropertyResult = obj.defineProtoSetting("inAppFeedbackSettings", "inAppFee
     }
     return NumberResult;
   }));
-}, (arg0) => arg1(dependencyMap[10]).mapValues(arg0, (arg0) => callback(closure_1[10]).mapValues(arg0, (arg0) => {
-  const UInt64Value = callback(closure_1[6]).UInt64Value;
+}, (arg0) => require(22) /* apply */.mapValues(arg0, (arg0) => outer1_0(outer1_1[10]).mapValues(arg0, (arg0) => {
+  const UInt64Value = outer2_0(outer2_1[6]).UInt64Value;
   const obj = {};
   let StringResult;
   if (null != arg0) {
@@ -1351,31 +1360,28 @@ definePropertyResult = obj.defineProtoSetting("inAppFeedbackSettings", "inAppFee
   }
   obj.value = StringResult;
   return UInt64Value.create(obj);
-})), obj);
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("textAndImages", "isCrossDmSearchEnabled", (value) => {
+})), set);
+definePropertyResult = set.defineProtoSetting("textAndImages", "isCrossDmSearchEnabled", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-obj = arg1(dependencyMap[5]);
-definePropertyResult = obj.defineProtoSetting("privacy", "hideFriendRequestNotes", (value) => {
+definePropertyResult = set.defineProtoSetting("privacy", "hideFriendRequestNotes", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
-obj = arg1(dependencyMap[15]);
-definePropertyResult = obj.fileFinishedImporting("modules/user_settings/UserSettings.tsx");
+definePropertyResult = set.fileFinishedImporting("modules/user_settings/UserSettings.tsx");
 
 export const UseLegacyChatInput = defineProtoSettingResult;
 export const UseRichChatInput = defineProtoSettingResult1;
@@ -1468,17 +1474,17 @@ export const AnimateStickers = result8;
 export const ActivityRestrictedGuilds = defineProtoSettingResult76;
 export const ActivityRestrictedGuildsFrequent = defineProtoSettingResult77;
 export const ActivityJoiningRestrictedGuilds = defineProtoSettingResult78;
-export const DefaultGuildsActivityRestricted = result9;
-export const DefaultGuildsActivityRestrictedV2 = result10;
+export const DefaultGuildsActivityRestricted = makeUpdateSettingFunction;
+export const DefaultGuildsActivityRestrictedV2 = makeUpdateSettingFunction;
 export const FamilyCenterEnabled = defineProtoSettingResult79;
-export const LegacyUsernameDisabled = obj.defineProtoSetting("privacy", "hideLegacyUsername", (value) => {
+export const LegacyUsernameDisabled = set.defineProtoSetting("privacy", "hideLegacyUsername", (value) => {
   value = undefined;
   if (null != value) {
     value = value.value;
   }
   return null != value && value;
 }, (value) => {
-  const BoolValue = arg1(dependencyMap[6]).BoolValue;
+  const BoolValue = require(1313) /* _callSuper */.BoolValue;
   return BoolValue.create({ value });
 });
 export const AllowGameFriendDmsInDiscord = definePropertyResult;

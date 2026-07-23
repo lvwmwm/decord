@@ -1,13 +1,13 @@
-// Module ID: 5030
-// Function ID: 43315
+// Module ID: 5033
+// Function ID: 43333
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 5030 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "cleanupUnusedMLModelFiles", DateToSystemTimezoneSetter: "autoJoin", defaultConfig: { position: false, paddingHorizontal: null, display: false, justifyContent: false }, variations: { [1]: {} } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/emojis/EmojiSearchRankingTweaksExperiment.tsx");
+// Module 5033 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2025-10-emoji-search-ranking-tweaks", kind: "user", defaultConfig: { boostFavorites: false, boostCapitalizedWords: false, boostAtEnd: false, boostsIgnoreDisambiguators: false }, variations: { [1]: { boostFavorites: true, boostCapitalizedWords: true, boostAtEnd: true, boostsIgnoreDisambiguators: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/emojis/EmojiSearchRankingTweaksExperiment.tsx");
 
 export default apexExperiment;

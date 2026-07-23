@@ -1,39 +1,39 @@
-// Module ID: 14023
-// Function ID: 106646
+// Module ID: 14137
+// Function ID: 108802
 // Name: pressable
-// Dependencies: [0, 4294967295, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [4177, 7662, 4191, 566, 1212, 10095, 10713, 2]
 
-// Module 14023 (pressable)
-import closure_2 from "__exportStarResult1";
-import { InputModes } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14137 (pressable)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { InputModes } from "DesktopSources";
+import createToggle from "createToggle";
 
-__exportStarResult1 = {
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.pS+K2L);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["pS+K2L"]);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   useTrailing: function useInputModeSettingTrailing() {
-    const items = [closure_2];
-    if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = arg1(dependencyMap[4]).intl;
-      let stringResult = intl2.string(arg1(dependencyMap[4]).t.Q8gkVL);
+    const items = [_isNativeReflectConstruct];
+    if (obj.useStateFromStores(items, () => outer1_2.getMode()) === InputModes.PUSH_TO_TALK) {
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.Q8gkVL);
     } else {
-      const intl = arg1(dependencyMap[4]).intl;
-      stringResult = intl.string(arg1(dependencyMap[4]).t.cHCEOJ);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl.string(require(1212) /* getSystemLocale */.t.cHCEOJ);
     }
     return stringResult;
   },
-  onPress: require("__exportStarResult1").handleInputModePress,
+  onPress: require("handleInputModePress").handleInputModePress,
   useSearchTerms() {
-    const intl = arg1(dependencyMap[4]).intl;
-    const items = [intl.string(arg1(dependencyMap[4]).t.nuFtHH)];
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 };
-__exportStarResult1 = __exportStarResult1.createPressable(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
+createToggle = createToggle.createPressable(createToggle);
+const result = require("DesktopSources").fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
 
-export default __exportStarResult1;
+export default createToggle;

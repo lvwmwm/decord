@@ -1,13 +1,13 @@
-// Module ID: 5977
-// Function ID: 49898
+// Module ID: 5982
+// Function ID: 49927
 // Name: DeprecatedPaintPaletteSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5983, 2]
 // Exports: DeprecatedPaintPaletteSpotIllustration
 
-// Module 5977 (DeprecatedPaintPaletteSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DeprecatedPaintPaletteSpotIllustration.native.tsx");
+// Module 5982 (DeprecatedPaintPaletteSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DeprecatedPaintPaletteSpotIllustration.native.tsx");
 
 export const DeprecatedPaintPaletteSpotIllustration = function DeprecatedPaintPaletteSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const DeprecatedPaintPaletteSpotIllustration = function DeprecatedPaintPa
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5983) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const DeprecatedPaintPaletteSpotIllustration = function DeprecatedPaintPa
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

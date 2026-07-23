@@ -1,34 +1,47 @@
-// Module ID: 12756
-// Function ID: 97828
+// Module ID: 12870
+// Function ID: 99984
 // Name: RemoteAuthBody
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1557, 12871, 12869, 5162, 507, 22, 12872, 4126, 1212, 1273, 4965, 4543, 4337, 12873, 12874, 5586, 2]
 // Exports: default
 
-// Module 12756 (RemoteAuthBody)
+// Module 12870 (RemoteAuthBody)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { Endpoints } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
 function RemoteAuthBody(remoteAuthFingerprint) {
+  let dependencyMap;
   let tmp4;
-  function transitionStep(arg0) {
-    callback(arg0);
-    const result = remoteAuthFingerprint(closure_2[10]).DeprecatedLayoutAnimation();
+  function transitionStep(result, arg1) {
+    callback(result);
+    const result = remoteAuthFingerprint(outer1_2[10]).DeprecatedLayoutAnimation();
   }
-  const callback = transitionStep;
   remoteAuthFingerprint = remoteAuthFingerprint.remoteAuthFingerprint;
-  const arg1 = remoteAuthFingerprint;
-  const tmp = callback(React.useState(constants.LOADING), 2);
+  const tmp = transitionStep(React.useState(constants.LOADING), 2);
   const first = tmp[0];
   let closure_1 = tmp[1];
-  [tmp4, closure_2] = callback(React.useState(null), 2);
+  [tmp4, dependencyMap] = transitionStep(React.useState(null), 2);
   const items = [remoteAuthFingerprint];
   const effect = React.useEffect(() => {
-    const HTTP = remoteAuthFingerprint(closure_2[11]).HTTP;
-    let obj = { url: constants.REMOTE_AUTH_INITIALIZE, body: obj, oldFormErrors: true, rejectWithError: true };
+    const HTTP = remoteAuthFingerprint(outer1_2[11]).HTTP;
+    obj = { url: outer1_8.REMOTE_AUTH_INITIALIZE, body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { fingerprint: remoteAuthFingerprint };
     const postResult = HTTP.post(obj);
     HTTP.post(obj).then((body) => {
-      callback(body.body.handshake_token);
-      callback2(constants.LOADED);
+      outer1_2(body.body.handshake_token);
+      outer1_3(outer2_13.LOADED);
     }).catch(() => {
-      callback2(constants.NOT_FOUND);
+      outer1_3(outer2_13.NOT_FOUND);
     });
   }, items);
   if (constants.LOADING === first) {
@@ -37,7 +50,7 @@ function RemoteAuthBody(remoteAuthFingerprint) {
     if (null == tmp4) {
       let tmp14 = callback2(RemoteAuthNotFound, {});
     } else {
-      const obj = { handshakeToken: tmp4, setAuthStep: transitionStep };
+      let obj = { handshakeToken: tmp4, setAuthStep: transitionStep };
       tmp14 = callback2(RemoteAuthLogin, obj);
     }
     return tmp14;
@@ -47,147 +60,143 @@ function RemoteAuthBody(remoteAuthFingerprint) {
     const NOT_FOUND = constants.NOT_FOUND;
     return callback2(RemoteAuthNotFound, {});
   }
-  const tmp3 = callback(React.useState(null), 2);
+  const tmp3 = transitionStep(React.useState(null), 2);
 }
 function RemoteAuthLogin(arg0) {
-  ({ handshakeToken: closure_0, setAuthStep: closure_1 } = arg0);
-  const tmp = callback4();
+  let importDefault;
+  let require;
+  ({ handshakeToken: require, setAuthStep: importDefault } = arg0);
+  const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(React.useState(false), 2);
-  let closure_2 = tmp2[1];
+  const dependencyMap = tmp2[1];
   const tmp3 = callback(React.useState(false), 2);
-  const callback = tmp3[1];
+  callback = tmp3[1];
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
-      callback(true);
+      outer1_2(true);
     }, 1000);
     return () => clearTimeout(closure_0);
   }, []);
-  let obj = importDefault(closure_2[12]);
+  let obj = importDefault(22);
   let tmp6 = !tmp2[0];
   if (tmp6) {
     tmp6 = !tmp3[0];
   }
   obj = {};
-  obj = { source: importDefault(closure_2[13]), style: tmp.mainImage };
+  obj = { source: importDefault(12872), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   const obj1 = { variant: "heading-md/extrabold" };
-  const intl = arg1(closure_2[15]).intl;
-  obj1.children = intl.string(arg1(closure_2[15]).t.jD2pqF);
-  items[1] = callback2(arg1(closure_2[14]).Heading, obj1);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.jD2pqF);
+  items[1] = callback2(require(4126) /* Text */.Heading, obj1);
   const obj2 = { style: tmp.warningCaption };
-  const intl2 = arg1(closure_2[15]).intl;
-  obj2.children = intl2.string(arg1(closure_2[15]).t.hcd/kh);
-  items[2] = callback2(arg1(closure_2[16]).LegacyText, obj2);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["hcd/kh"]);
+  items[2] = callback2(require(1273) /* Button */.LegacyText, obj2);
   const obj3 = { style: tmp.buttonGroup };
   const obj4 = {};
-  const intl3 = arg1(closure_2[15]).intl;
-  obj4.text = intl3.string(arg1(closure_2[15]).t.N3qV8e);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj4.text = intl3.string(require(1212) /* getSystemLocale */.t.N3qV8e);
   obj4.onPress = obj.throttle(() => {
-    callback3(true);
-    const HTTP = callback(closure_2[11]).HTTP;
-    let obj = { url: constants.REMOTE_AUTH_FINISH, body: obj, oldFormErrors: true, rejectWithError: true };
-    obj = { handshake_token: callback };
+    callback(true);
+    const HTTP = outer1_0(507).HTTP;
+    obj = { url: outer1_8.REMOTE_AUTH_FINISH, body: obj, oldFormErrors: true, rejectWithError: true };
+    obj = { handshake_token: closure_0 };
     const postResult = HTTP.post(obj);
     HTTP.post(obj).then(() => {
-      callback(constants.SUCCEEDED);
+      outer1_1(outer2_13.SUCCEEDED);
     }).catch(() => {
-      callback(constants.NOT_FOUND);
+      outer1_1(outer2_13.NOT_FOUND);
     });
-  }, 1000, { flex: "<string:1040334421>", marginRight: "<string:1040334338>" });
+  }, 1000, { leading: true, trailing: false });
   obj4.disabled = tmp6;
-  const items1 = [callback2(arg1(closure_2[18]).Button, obj4, "" + tmp6), ];
+  const items1 = [callback2(require(4543) /* Button */.Button, obj4, "" + tmp6), ];
   const obj5 = { variant: "secondary" };
-  const intl4 = arg1(closure_2[15]).intl;
-  obj5.text = intl4.string(arg1(closure_2[15]).t.ETE/oC);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj5.text = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
   obj5.onPress = function onPress() {
-    const HTTP = callback(closure_2[11]).HTTP;
-    let obj = { url: constants.REMOTE_AUTH_CANCEL, body: obj, oldFormErrors: true, rejectWithError: true };
-    obj = { handshake_token: callback };
+    const HTTP = outer1_0(507).HTTP;
+    obj = { url: outer1_8.REMOTE_AUTH_CANCEL, body: obj, oldFormErrors: true, rejectWithError: true };
+    obj = { handshake_token: closure_0 };
     HTTP.post(obj);
-    let arr = callback2(closure_2[19]);
+    let arr = outer1_1(4337);
     arr = arr.pop();
   };
-  items1[1] = callback2(arg1(closure_2[18]).Button, obj5);
+  items1[1] = callback2(require(4543) /* Button */.Button, obj5);
   obj3.children = items1;
-  items[3] = callback3(arg1(closure_2[17]).ButtonGroup, obj3);
+  items[3] = callback3(require(4965) /* ButtonGroup */.ButtonGroup, obj3);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthLoginSucceeded() {
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(dependencyMap[20]), style: tmp.mainImage };
+  obj = { source: importDefault(12873), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.children = intl.string(arg1(dependencyMap[15]).t.HbwTOZ);
-  items[1] = callback2(arg1(dependencyMap[14]).Heading, obj);
-  const obj1 = { style: tmp.caption };
-  const intl2 = arg1(dependencyMap[15]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[15]).t.wKknJ0);
-  items[2] = callback2(arg1(dependencyMap[14]).Text, obj1);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.HbwTOZ);
+  items[1] = callback2(require(4126) /* Text */.Heading, obj);
+  const obj1 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.wKknJ0);
+  items[2] = callback2(require(4126) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonGroup };
   const obj3 = {};
-  const intl3 = arg1(dependencyMap[15]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[15]).t.pYWLA0);
-  obj3.onPress = importDefault(dependencyMap[19]).pop;
-  obj2.children = callback2(arg1(dependencyMap[18]).Button, obj3);
-  items[3] = callback2(arg1(dependencyMap[17]).ButtonGroup, obj2);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.pYWLA0);
+  obj3.onPress = importDefault(4337).pop;
+  obj2.children = callback2(require(4543) /* Button */.Button, obj3);
+  items[3] = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj2);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthNotFound() {
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(dependencyMap[21]), style: tmp.mainImage };
+  obj = { source: importDefault(12874), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.children = intl.string(arg1(dependencyMap[15]).t.NShI3Q);
-  items[1] = callback2(arg1(dependencyMap[14]).Heading, obj);
-  const obj1 = { style: tmp.caption };
-  const intl2 = arg1(dependencyMap[15]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[15]).t.Ygezov);
-  items[2] = callback2(arg1(dependencyMap[14]).Text, obj1);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.NShI3Q);
+  items[1] = callback2(require(4126) /* Text */.Heading, obj);
+  const obj1 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.Ygezov);
+  items[2] = callback2(require(4126) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonGroup };
   const obj3 = {};
-  const intl3 = arg1(dependencyMap[15]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[15]).t.ETE/oC);
-  obj3.onPress = importDefault(dependencyMap[19]).pop;
-  obj2.children = callback2(arg1(dependencyMap[18]).Button, obj3);
-  items[3] = callback2(arg1(dependencyMap[17]).ButtonGroup, obj2);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
+  obj3.onPress = importDefault(4337).pop;
+  obj2.children = callback2(require(4543) /* Button */.Button, obj3);
+  items[3] = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj2);
   obj.children = items;
   return callback3(closure_11, obj);
 }
 function RemoteAuthLoading() {
-  return callback2(closure_7, { style: callback4().loadingContainer, children: callback2(arg1(dependencyMap[22]).ActivityIndicator, {}) });
+  return callback2(closure_7, { style: _createForOfIteratorHelperLoose().loadingContainer, children: callback2(require(5586) /* ActivityIndicator */.ActivityIndicator, {}) });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ ImageBackground: closure_5, Image: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { background: {}, container: {}, imageStyle: { resizeMode: "cover" }, logo: {}, mainImage: { y: null, channelId: null } };
-obj = { color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
-obj.warningCaption = obj;
-obj.caption = {};
-const obj1 = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002287005850569862, 9223372036854775807: 2861513930481506000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009449515866, -9223372036854775808: 12503054512010140000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025743215571849807, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010811503112299408, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240315437913, -9223372036854775808: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035691002144957, 9223372036854775807: 994646489287394700000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000115511028237, -9223372036854775808: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040238947977153844, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { hideWhenScrolling: "y", autoCapitalize: "isArray" } };
-obj.mainCard = obj1;
-obj.buttonGroup = { paddingVertical: 0 };
-obj.loadingContainer = {};
-let closure_12 = obj.createStyles(obj);
+({ ImageBackground: closure_5, Image: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { background: { width: "100%", height: "100%" }, container: { flex: 1, alignItems: "stretch", alignContent: "center" }, imageStyle: { resizeMode: "cover" }, logo: { position: "absolute", top: 16, alignSelf: "center", width: 32, height: 32 }, mainImage: { marginTop: 16, marginBottom: 32 } };
+_createForOfIteratorHelperLoose = { fontSize: 16, lineHeight: 20, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, textAlign: "center", marginTop: 8, marginBottom: 32 };
+_createForOfIteratorHelperLoose.warningCaption = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.caption = { lineHeight: 20, textAlign: "center", marginTop: 8, marginBottom: 32 };
+let obj1 = { display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, marginTop: "auto", marginBottom: "auto", marginLeft: 16, marginRight: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: 16, shadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, shadowOpacity: 0.16, shadowRadius: 2, shadowOffset: { height: 2, width: 0 } };
+_createForOfIteratorHelperLoose.mainCard = obj1;
+_createForOfIteratorHelperLoose.buttonGroup = { paddingVertical: 0 };
+_createForOfIteratorHelperLoose.loadingContainer = { height: 300, justifyContent: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_13 = { LOADING: 0, [0]: "LOADING", NOT_FOUND: 1, [1]: "NOT_FOUND", LOADED: 2, [2]: "LOADED", SUCCEEDED: 3, [3]: "SUCCEEDED" };
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/remote_auth/components/native/RemoteAuthModal.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/remote_auth/components/native/RemoteAuthModal.tsx");
 
 export default function RemoteAuth(arg0) {
-  const tmp = callback4();
-  let obj = { source: importDefault(dependencyMap[8]) };
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = { source: importDefault(12871) };
   ({ imageStyle: obj.imageStyle, background: obj.style } = tmp);
-  obj = { style: items, source: importDefault(dependencyMap[9]) };
-  const items = [tmp.logo, { marginTop: importDefault(dependencyMap[7])().top }];
+  obj = { style: items, source: importDefault(12869) };
+  items = [tmp.logo, { marginTop: importDefault(1557)().top }];
   const items1 = [callback2(closure_6, obj), ];
   obj = { style: tmp.container };
   const obj1 = { style: tmp.mainCard };

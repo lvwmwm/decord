@@ -1,53 +1,58 @@
-// Module ID: 13306
-// Function ID: 101071
+// Module ID: 13420
+// Function ID: 103227
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 653, 686, 10817, 5638, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13306 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13420 (_createForOfIteratorHelperLoose)
+import set from "set";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -99,19 +104,19 @@ function transformSubscriptionListingToStoreListing(id) {
 }
 function dispatchCompat(arr) {
   let done;
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "SKUS_FETCH_SUCCESS", skus: arr.map(transformSubscriptionListingToSku) };
   obj.dispatch(obj);
   obj = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings: arr.map(transformSubscriptionListingToStoreListing) };
-  importDefault(dependencyMap[2]).dispatch(obj);
+  importDefault(686).dispatch(obj);
   const tmp3 = _createForOfIteratorHelperLoose(arr);
   let iter = tmp3();
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp4 = closure_0;
-      let tmp5 = closure_2;
-      let obj5 = closure_0(closure_2[2]);
+      let tmp4 = importDefault;
+      let tmp5 = dependencyMap;
+      let obj5 = importDefault(686);
       let obj1 = { type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS", skuId: value.id, subscriptionPlans: value.subscription_plans };
       let dispatchResult2 = obj5.dispatch(obj1);
       let iter2 = tmp3();
@@ -123,13 +128,11 @@ function dispatchCompat(arr) {
 function _fetchAllSubscriptionListingsDataForApplication() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchAllSubscriptionListingsDataForApplication = obj;
   return obj(...arguments);
 }
 function _fetchEntitlementsForGuild() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchEntitlementsForGuild = obj;
   return obj(...arguments);
 }
 function fetchSubscriptionListingForPlan() {
@@ -138,13 +141,10 @@ function fetchSubscriptionListingForPlan() {
 function _fetchSubscriptionListingForPlan() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSubscriptionListingForPlan = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ SKUProductLines: closure_4, SKUTypes: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsActionCreators.tsx");
+({ SKUProductLines: closure_4, SKUTypes: closure_5 } = ME);
+const result = require("dispatcher").fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsActionCreators.tsx");
 
 export const fetchAllSubscriptionListingsDataForApplication = function fetchAllSubscriptionListingsDataForApplication(arg0, id) {
   return _fetchAllSubscriptionListingsDataForApplication(...arguments);
@@ -153,7 +153,7 @@ export const fetchEntitlementsForGuild = function fetchEntitlementsForGuild() {
   return _fetchEntitlementsForGuild(...arguments);
 };
 export const dismissApplicationSubscriptionExpirationNotice = function dismissApplicationSubscriptionExpirationNotice(guildId) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED", guildId };
   obj.dispatch(obj);
 };

@@ -1,49 +1,64 @@
-// Module ID: 6644
-// Function ID: 51034
+// Module ID: 6649
+// Function ID: 51063
 // Name: getScreens
-// Dependencies: []
+// Dependencies: [31, 653, 33, 1212, 5087, 6650, 12427, 12430, 12472, 12485, 5464, 5519, 2]
 // Exports: default
 
-// Module 6644 (getScreens)
+// Module 6649 (getScreens)
+import "result";
+import { UserSettingsSections } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getScreens(arg0) {
+  let UserSettingsSections;
+  let closure_10;
+  let closure_11;
+  let closure_6;
+  let closure_7;
+  let closure_8;
+  let closure_9;
+  let dependencyMap;
+  let getScreens;
   let isBoostPurchaseFlow;
+  let jsx;
   let onClose;
   let predicate;
+  let require;
   let showCurrentPlan;
-  ({ analyticsLocation: closure_0, onClose } = arg0);
-  const importDefault = onClose;
-  ({ onBack: closure_2, giftRecipientId: closure_3, planId: closure_4, applicationId: closure_5, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11 } = arg0);
+  ({ analyticsLocation: require, onClose } = arg0);
+  ({ onBack: dependencyMap, giftRecipientId: UserSettingsSections, planId: jsx, applicationId: getScreens, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11 } = arg0);
   let obj = {};
   obj = {};
   ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.title = intl.string(arg1(dependencyMap[3]).t.lpNrPu);
-  let obj2 = arg1(dependencyMap[4]);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.lpNrPu);
+  let obj2 = require(5087) /* HeaderBackImage */;
   obj.headerLeft = obj2.getHeaderCloseButton(onClose);
   obj.render = function render() {
-    return callback2(onClose(closure_2[5]), { applicationId: closure_5, onClose, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11, isFullScreenPresentation: true });
+    return outer1_4(onClose(outer1_2[5]), { applicationId: closure_5, onClose, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11, isFullScreenPresentation: true });
   };
   obj[UserSettingsSections.PREMIUM] = obj;
   obj = {};
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.title = intl2.string(arg1(dependencyMap[3]).t.8jmdON);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl2.string(require(1212) /* getSystemLocale */.t["8jmdON"]);
   obj.render = function render() {
-    return callback2(onClose(closure_2[6]), {});
+    return outer1_4(onClose(outer1_2[6]), {});
   };
   obj[UserSettingsSections.PREMIUM_MANAGE_PLAN] = obj;
   const obj1 = {};
-  const intl3 = arg1(dependencyMap[3]).intl;
-  obj1.title = intl3.string(arg1(dependencyMap[3]).t.+CbP2v);
-  obj1.headerLeft = arg1(dependencyMap[4]).getHeaderCloseButton(onClose);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj1.title = intl3.string(require(1212) /* getSystemLocale */.t["+CbP2v"]);
+  obj1.headerLeft = require(5087) /* HeaderBackImage */.getHeaderCloseButton(onClose);
   obj1.render = function render() {
-    return callback2(onClose(closure_2[7]), {});
+    return outer1_4(onClose(outer1_2[7]), {});
   };
   obj[UserSettingsSections.GUILD_BOOSTING] = obj1;
   obj2 = {};
-  const intl4 = arg1(dependencyMap[3]).intl;
-  obj2.title = intl4.string(arg1(dependencyMap[3]).t.u95Dt4);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj2.title = intl4.string(require(1212) /* getSystemLocale */.t.u95Dt4);
   obj2.headerLeft = function headerLeft(canGoBack) {
-    const obj = callback(closure_2[4]);
+    const obj = outer1_0(outer1_2[4]);
     if (canGoBack.canGoBack) {
       let tmp2 = obj.getHeaderBackButton(closure_2)(canGoBack);
     } else {
@@ -57,24 +72,21 @@ function getScreens(arg0) {
     let predicate;
     let showCurrentPlan;
     ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
-    return callback2(onClose(closure_2[8]), { analyticsLocation: closure_0, predicate, showCurrentPlan, isBoostPurchaseFlow, planId: callback2, applicationId: closure_5, guildId: closure_8 });
+    return outer1_4(onClose(outer1_2[8]), { analyticsLocation: closure_0, predicate, showCurrentPlan, isBoostPurchaseFlow, planId: closure_4, applicationId: closure_5, guildId: closure_8 });
   };
   obj[UserSettingsSections.PREMIUM_PLAN_SELECT] = obj2;
   const obj3 = {};
-  const intl5 = arg1(dependencyMap[3]).intl;
-  obj3.title = intl5.string(arg1(dependencyMap[3]).t.Oba8Sh);
-  const obj6 = arg1(dependencyMap[4]);
-  obj3.headerLeft = arg1(dependencyMap[4]).getHeaderCloseButton(onClose);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj3.title = intl5.string(require(1212) /* getSystemLocale */.t.Oba8Sh);
+  const obj6 = require(5087) /* HeaderBackImage */;
+  obj3.headerLeft = require(5087) /* HeaderBackImage */.getHeaderCloseButton(onClose);
   obj3.render = function render() {
-    return callback2(onClose(closure_2[9]), { recipientUserId: closure_3, analyticsLocation: closure_0 });
+    return outer1_4(onClose(outer1_2[9]), { recipientUserId: closure_3, analyticsLocation: closure_0 });
   };
   obj[UserSettingsSections.PREMIUM_GIFTING] = obj3;
   return obj;
 }
-importAll(dependencyMap[0]);
-const UserSettingsSections = arg1(dependencyMap[1]).UserSettingsSections;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("components_native/premium/PremiumModal.tsx");
+const result = require("jsxProd").fileFinishedImporting("components_native/premium/PremiumModal.tsx");
 
 export default function PremiumModal(initialRoute) {
   let activitySessionId;
@@ -98,9 +110,9 @@ export default function PremiumModal(initialRoute) {
   if (null == PREMIUM) {
     PREMIUM = UserSettingsSections.PREMIUM;
   }
-  let obj = { value: importDefault(dependencyMap[10])(analyticsLocations).analyticsLocations };
+  let obj = { value: importDefault(5464)(analyticsLocations).analyticsLocations };
   obj = { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM };
-  obj.children = jsx(arg1(dependencyMap[11]).Navigator, obj);
-  return jsx(arg1(dependencyMap[10]).AnalyticsLocationProvider, obj);
+  obj.children = jsx(require(5519) /* NavigationStack */.Navigator, { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM });
+  return jsx(require(5464) /* mergeLocations */.AnalyticsLocationProvider, { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM });
 };
 export const PREMIUM_KEY = "PREMIUM_KEY";

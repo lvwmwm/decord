@@ -1,24 +1,26 @@
-// Module ID: 8235
-// Function ID: 65027
+// Module ID: 8241
+// Function ID: 65064
 // Name: useMaybeFetchProfileFrame
-// Dependencies: []
+// Dependencies: [31, 8242, 8252, 8253, 6773, 2]
 // Exports: default
 
-// Module 8235 (useMaybeFetchProfileFrame)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
+// Module 8241 (useMaybeFetchProfileFrame)
+import result from "result";
+
+const require = arg1;
+let result = require("apexExperiment").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
 
 export default function useMaybeFetchProfileFrame(arg0, location) {
-  location = arg0;
-  let tmp = importDefault(dependencyMap[1])();
-  const isProfileFramesEnabled = location(dependencyMap[2]).useIsProfileFramesEnabled(location);
-  const tmp3 = importDefault(dependencyMap[3])(arg0);
-  const importDefault = tmp4;
+  const _require = arg0;
+  let tmp = importDefault(8242)();
+  const isProfileFramesEnabled = _require(8252).useIsProfileFramesEnabled(location);
+  const tmp3 = importDefault(8253)(arg0);
+  importDefault = tmp4;
   const items = [null == tmp && isProfileFramesEnabled && null != arg0 && null == tmp3, arg0];
   const effect = React.useEffect(() => {
-    if (tmp4) {
-      const result = arg0(closure_2[4]).maybeFetchCollectiblesProduct(arg0);
-      const obj = arg0(closure_2[4]);
+    if (closure_1) {
+      const result = callback(outer1_2[4]).maybeFetchCollectiblesProduct(callback);
+      const obj = callback(outer1_2[4]);
     }
   }, items);
   if (null == tmp) {

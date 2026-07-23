@@ -1,73 +1,91 @@
-// Module ID: 12547
-// Function ID: 96414
+// Module ID: 12661
+// Function ID: 98570
 // Name: getUserCalloutRowText
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 1849, 12662, 653, 33, 4130, 689, 4126, 4319, 1212, 566, 1327, 1273, 10970, 9096, 4091, 4086, 675, 5500, 10413, 5503, 5165, 4543, 4098, 12663, 4140, 2]
 // Exports: default
 
-// Module 12547 (getUserCalloutRowText)
+// Module 12661 (getUserCalloutRowText)
+import result from "result";
+import get_ActivityIndicator from "module_4140";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import GdmWarningMedium from "GdmWarningMedium";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_4;
+let closure_5;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getUserCalloutRowText(arg0) {
   let calledOutUserIds;
+  let importDefault;
+  let require;
   let totalUsers;
-  ({ calledOutUserIds, totalUsers, guildId: closure_0, channelId: closure_1 } = arg0);
+  ({ calledOutUserIds, totalUsers, guildId: require, channelId: importDefault } = arg0);
   function renderUsername(arg0) {
-    const obj = { variant: "text-md/semibold", children: callback2(closure_2[10]).getName(callback, callback2, arg0) };
-    return callback3(callback(closure_2[9]).Text, obj);
+    const obj = { variant: "text-md/semibold", children: outer1_1(4319).getName(closure_0, closure_1, arg0) };
+    return outer1_11(outer1_0(4126).Text, obj);
   }
   const items = [...calledOutUserIds];
-  let closure_2 = items.map((arg0) => user.getUser(arg0));
+  const dependencyMap = items.map((arg0) => outer1_7.getUser(arg0));
   if (totalUsers >= 4) {
-    const intl4 = arg1(closure_2[11]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     let obj = {
       usernameHook1() {
-          return renderUsername(closure_2[0]);
+          return renderUsername(31);
         },
       usernameHook2() {
-          return renderUsername(closure_2[1]);
+          return renderUsername(27);
         },
       numberOfOtherUsers: totalUsers - calledOutUserIds.length
     };
-    let formatResult = intl4.format(arg1(closure_2[11]).t.qfo6KR, obj);
+    let formatResult = intl4.format(require(1212) /* getSystemLocale */.t.qfo6KR, obj);
   } else if (3 === totalUsers) {
-    const intl3 = arg1(closure_2[11]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     obj = {
       usernameHook1() {
-          return renderUsername(closure_2[0]);
+          return renderUsername(31);
         },
       usernameHook2() {
-          return renderUsername(closure_2[1]);
+          return renderUsername(27);
         }
     };
-    formatResult = intl3.format(arg1(closure_2[11]).t.67ZE+9, obj);
+    formatResult = intl3.format(require(1212) /* getSystemLocale */.t["67ZE+9"], obj);
   } else if (2 === totalUsers) {
-    const intl2 = arg1(closure_2[11]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj1 = {
       usernameHook1() {
-          return renderUsername(closure_2[0]);
+          return renderUsername(31);
         },
       usernameHook2() {
-          return renderUsername(closure_2[1]);
+          return renderUsername(27);
         }
     };
-    formatResult = intl2.format(arg1(closure_2[11]).t.veV4IN, obj1);
+    formatResult = intl2.format(require(1212) /* getSystemLocale */.t.veV4IN, obj1);
   } else {
-    const intl = arg1(closure_2[11]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = {
       usernameHook() {
-          return renderUsername(closure_2[0]);
+          return renderUsername(31);
         }
     };
-    formatResult = intl.format(arg1(closure_2[11]).t.4WHCtq, obj);
+    formatResult = intl.format(require(1212) /* getSystemLocale */.t["4WHCtq"], obj);
   }
   return formatResult;
 }
 function UserCalloutAvatars(userIds) {
   userIds = userIds.userIds;
-  const arg1 = userIds;
-  let obj = arg1(dependencyMap[12]);
+  let obj = userIds(566);
   const items = [user];
   const items1 = [userIds];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => userIds.map((arg0) => user.getUser(arg0)), items1);
-  const found = stateFromStoresArray.filter(arg1(dependencyMap[13]).isNotNullish);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => userIds.map((arg0) => outer2_7.getUser(arg0)), items1);
+  const found = stateFromStoresArray.filter(userIds(1327).isNotNullish);
   if (1 === userIds.length) {
     let num3 = 0;
     if (null != user.getUser(userIds[0])) {
@@ -75,15 +93,15 @@ function UserCalloutAvatars(userIds) {
       num3 = found[num3];
       obj.user = num3;
       obj.guildId = userIds.guildId;
-      obj.size = arg1(dependencyMap[14]).AvatarSizes.REFRESH_MEDIUM_32;
-      obj.aria-hidden = true;
-      let tmp10 = callback(arg1(dependencyMap[14]).Avatar, obj);
+      obj.size = userIds(1273).AvatarSizes.REFRESH_MEDIUM_32;
+      obj["aria-hidden"] = true;
+      let tmp10 = callback(userIds(1273).Avatar, obj);
     } else {
-      tmp10 = callback(arg1(dependencyMap[15]).UserIcon, {});
+      tmp10 = callback(userIds(10970).UserIcon, {});
     }
   } else {
-    obj = { users: found, size: arg1(dependencyMap[14]).AvatarSizes.REFRESH_MEDIUM_32 };
-    return callback(arg1(dependencyMap[16]).FacepileGroupDMAvatar, obj);
+    obj = { users: found, size: userIds(1273).AvatarSizes.REFRESH_MEDIUM_32 };
+    return callback(userIds(9096).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {
@@ -93,10 +111,10 @@ function BlockedUserInGDMDescription(arg0) {
   if (numOfBlockedUsers > 0) {
     if (tmp2) {
       let obj = {};
-      const intl5 = arg1(dependencyMap[11]).intl;
-      const items = [intl5.string(arg1(dependencyMap[11]).t.xbRNI3), "\n", ];
-      const intl6 = arg1(dependencyMap[11]).intl;
-      items[2] = intl6.string(arg1(dependencyMap[11]).t.Bp2/ni);
+      const intl5 = require(1212) /* getSystemLocale */.intl;
+      const items = [intl5.string(require(1212) /* getSystemLocale */.t.xbRNI3), "\n", ];
+      const intl6 = require(1212) /* getSystemLocale */.intl;
+      items[2] = intl6.string(require(1212) /* getSystemLocale */.t["Bp2/ni"]);
       obj.children = items;
       let tmp3 = callback2(closure_12, obj);
     }
@@ -104,78 +122,67 @@ function BlockedUserInGDMDescription(arg0) {
   }
   if (numOfBlockedUsers > 0) {
     obj = {};
-    const intl3 = arg1(dependencyMap[11]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj1 = { n: numOfBlockedUsers };
-    const items1 = [intl3.format(arg1(dependencyMap[11]).t.iKtixW, obj1), "\n", ];
-    const intl4 = arg1(dependencyMap[11]).intl;
-    items1[2] = intl4.string(arg1(dependencyMap[11]).t.SN1hrl);
+    const items1 = [intl3.format(require(1212) /* getSystemLocale */.t.iKtixW, obj1), "\n", ];
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    items1[2] = intl4.string(require(1212) /* getSystemLocale */.t.SN1hrl);
     obj.children = items1;
     tmp3 = callback2(closure_12, obj);
   } else {
     tmp3 = null;
     if (tmp2) {
       obj = {};
-      const intl = arg1(dependencyMap[11]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const obj2 = { n: numOfIgnoredUsers };
-      const items2 = [intl.format(arg1(dependencyMap[11]).t.6IRwua, obj2), "\n", ];
-      const intl2 = arg1(dependencyMap[11]).intl;
-      items2[2] = intl2.string(arg1(dependencyMap[11]).t.6AKLRt);
+      const items2 = [intl.format(require(1212) /* getSystemLocale */.t["6IRwua"], obj2), "\n", ];
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      items2[2] = intl2.string(require(1212) /* getSystemLocale */.t["6AKLRt"]);
       obj.children = items2;
       tmp3 = callback2(closure_12, obj);
     }
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[1]);
-({ BlockWarningEngagements: closure_8, GdmWarningMedium: closure_9 } = arg1(dependencyMap[4]));
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const tmp3 = arg1(dependencyMap[4]);
-({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { paddingTop: importDefault(dependencyMap[8]).space.PX_12, gap: importDefault(dependencyMap[8]).space.PX_8, textAlign: "center" };
-obj.container = obj;
-obj.headerImage = {};
-obj.title = { "Bool(false)": null, "Bool(false)": null };
-obj.description = { "Bool(false)": null, "Bool(false)": null };
-const tmp4 = arg1(dependencyMap[6]);
-obj.tableGroup = { paddingVertical: importDefault(dependencyMap[8]).space.PX_24 };
-obj.buttons = { gap: 8 };
-obj.icon = {};
-let closure_14 = obj.createStyles(obj);
-const obj1 = { paddingVertical: importDefault(dependencyMap[8]).space.PX_24 };
-const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
+({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ BlockWarningEngagements: closure_8, GdmWarningMedium: closure_9 } = GdmWarningMedium);
+({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerImage = { alignSelf: "center", width: 73, height: 86 };
+_createForOfIteratorHelperLoose.title = { textAlign: "center", alignSelf: "center" };
+_createForOfIteratorHelperLoose.description = { textAlign: "center", alignSelf: "center" };
+_createForOfIteratorHelperLoose.tableGroup = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.buttons = { gap: 8 };
+_createForOfIteratorHelperLoose.icon = { display: "flex", justifyContent: "center", alignItems: "center", minWidth: 32 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
 
 export default function BlockedUserInGdmActionSheet(channelId) {
   let blockedUserIds;
   let channelId2;
   let ignoredUserIds;
   channelId = channelId.channelId;
-  const arg1 = channelId;
   blockedUserIds = channelId.blockedUserIds;
-  const importDefault = blockedUserIds;
   ignoredUserIds = channelId.ignoredUserIds;
-  const dependencyMap = ignoredUserIds;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const React = tmp;
   const items = [channelId, blockedUserIds, ignoredUserIds];
   const effect = React.useEffect(() => {
     let obj = blockedUserIds(ignoredUserIds[19]);
-    obj = { channel_id: channelId, warning_medium: constants2.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-    obj.track(constants3.GDM_BLOCKED_USER_WARNING_VIEWED, obj);
+    obj = { channel_id: channelId, warning_medium: outer1_9.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+    obj.track(outer1_10.GDM_BLOCKED_USER_WARNING_VIEWED, obj);
   }, items);
   ({ channelId: channelId2, blockedUserIds, ignoredUserIds } = { channelId, blockedUserIds, ignoredUserIds });
-  const channel = channel.getChannel(channelId2);
-  let obj = { icon: callback(arg1(dependencyMap[17]).CircleCheckIcon, {}) };
-  const intl = arg1(dependencyMap[11]).intl;
-  obj.label = intl.string(arg1(dependencyMap[11]).t.RIMw54);
+  channel = channel.getChannel(channelId2);
+  let obj = { icon: callback(channelId(ignoredUserIds[17]).CircleCheckIcon, {}) };
+  const intl = channelId(ignoredUserIds[11]).intl;
+  obj.label = intl.string(channelId(ignoredUserIds[11]).t.RIMw54);
   const items1 = [obj, ];
-  obj = { icon: callback(arg1(dependencyMap[18]).CircleInformationIcon, {}) };
-  const intl2 = arg1(dependencyMap[11]).intl;
-  obj.label = intl2.string(arg1(dependencyMap[11]).t.bejNWN);
+  obj = { icon: callback(channelId(ignoredUserIds[18]).CircleInformationIcon, {}) };
+  const intl2 = channelId(ignoredUserIds[11]).intl;
+  obj.label = intl2.string(channelId(ignoredUserIds[11]).t.bejNWN);
   items1[1] = obj;
   if (blockedUserIds.length > 0) {
     if (tmp5) {
@@ -190,7 +197,7 @@ export default function BlockedUserInGdmActionSheet(channelId) {
       }
       obj1.guildId = guild_id;
       obj.icon = callback(UserCalloutAvatars, obj1);
-      const obj2 = { calledOutUserIds: substr, totalUsers: items2.length, channelId: channelId2 };
+      let obj2 = { calledOutUserIds: substr, totalUsers: items2.length, channelId: channelId2 };
       let guild_id1;
       if (null != channel) {
         guild_id1 = channel.guild_id;
@@ -202,19 +209,19 @@ export default function BlockedUserInGdmActionSheet(channelId) {
       const tmp27 = UserCalloutAvatars;
       const tmp30 = getUserCalloutRowText;
     }
-    const obj3 = { startExpanded: true };
+    let obj3 = { startExpanded: true };
     const obj4 = { style: tmp.container };
-    const obj5 = { source: importDefault(dependencyMap[21]), style: tmp.headerImage };
+    const obj5 = { source: blockedUserIds(ignoredUserIds[21]), style: tmp.headerImage };
     const items3 = [callback(closure_4, obj5), , , ];
     const obj6 = {};
-    const obj7 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: tmp.title };
-    const intl3 = arg1(dependencyMap[11]).intl;
-    obj7.children = intl3.string(arg1(dependencyMap[11]).t.mwJJ+f);
-    const items4 = [callback(arg1(dependencyMap[9]).Text, obj7), ];
-    const obj8 = { style: tmp.description };
+    const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title };
+    const intl3 = channelId(ignoredUserIds[11]).intl;
+    obj7.children = intl3.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]);
+    const items4 = [callback(channelId(ignoredUserIds[9]).Text, obj7), ];
+    const obj8 = { variant: "text-md/medium", color: "text-default", style: tmp.description };
     const obj9 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
     obj8.children = callback(BlockedUserInGDMDescription, obj9);
-    items4[1] = callback(arg1(dependencyMap[9]).Text, obj8);
+    items4[1] = callback(channelId(ignoredUserIds[9]).Text, obj8);
     obj6.children = items4;
     items3[1] = callback2(closure_5, obj6);
     const obj10 = { style: tmp.tableGroup };
@@ -226,12 +233,12 @@ export default function BlockedUserInGdmActionSheet(channelId) {
           ({ icon, label } = arg0);
           let obj = {};
           obj = { style: tmp.icon, children: icon };
-          obj.icon = callback(closure_5, obj);
+          obj.icon = outer1_11(outer1_5, obj);
           obj.label = label;
-          return callback(channelId(ignoredUserIds[23]).TableRow, obj, arg1);
+          return outer1_11(channelId(ignoredUserIds[23]).TableRow, obj, arg1);
         })
     };
-    obj10.children = callback(arg1(dependencyMap[22]).TableRowGroup, obj11);
+    obj10.children = callback(channelId(ignoredUserIds[22]).TableRowGroup, obj11);
     items3[2] = callback(closure_5, obj10);
     const obj12 = { style: tmp.buttons };
     const obj13 = {
@@ -243,33 +250,33 @@ export default function BlockedUserInGdmActionSheet(channelId) {
           const obj2 = channelId(ignoredUserIds[26]);
           blockedUserIds(ignoredUserIds[27]).closePrivateChannel(channelId, true, true);
           const obj3 = blockedUserIds(ignoredUserIds[27]);
-          obj = { action: constants.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants2.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-          blockedUserIds(ignoredUserIds[19]).track(constants3.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
+          obj = { action: outer1_8.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: outer1_9.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+          blockedUserIds(ignoredUserIds[19]).track(outer1_10.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
         }
     };
-    const intl4 = arg1(dependencyMap[11]).intl;
-    obj13.text = intl4.string(arg1(dependencyMap[11]).t.I4q1kA);
-    const items5 = [callback(arg1(dependencyMap[24]).Button, obj13), ];
+    const intl4 = channelId(ignoredUserIds[11]).intl;
+    obj13.text = intl4.string(channelId(ignoredUserIds[11]).t.I4q1kA);
+    const items5 = [callback(channelId(ignoredUserIds[24]).Button, obj13), ];
     const obj14 = {
-      <string:1986169986>: null,
-      <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7",
+      size: "lg",
+      variant: "secondary",
       onPress() {
           let obj = blockedUserIds(ignoredUserIds[25]);
           obj.hideActionSheet();
           const result = channelId(ignoredUserIds[26]).dismissGdmBlockedUserWarning(channelId);
           const obj2 = channelId(ignoredUserIds[26]);
-          obj = { action: constants.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants2.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-          blockedUserIds(ignoredUserIds[19]).track(constants3.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
+          obj = { action: outer1_8.CLICK_TO_STAY, channel_id: channelId, warning_medium: outer1_9.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+          blockedUserIds(ignoredUserIds[19]).track(outer1_10.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
         }
     };
-    const intl5 = arg1(dependencyMap[11]).intl;
-    obj14.text = intl5.string(arg1(dependencyMap[11]).t.DRJhmT);
-    items5[1] = callback(arg1(dependencyMap[24]).Button, obj14);
+    const intl5 = channelId(ignoredUserIds[11]).intl;
+    obj14.text = intl5.string(channelId(ignoredUserIds[11]).t.DRJhmT);
+    items5[1] = callback(channelId(ignoredUserIds[24]).Button, obj14);
     obj12.children = items5;
     items3[3] = callback2(closure_5, obj12);
     obj4.children = items3;
     obj3.children = callback2(closure_5, obj4);
-    return callback(arg1(dependencyMap[20]).ActionSheet, obj3);
+    return callback(channelId(ignoredUserIds[20]).ActionSheet, obj3);
   }
   const items6 = [];
   if (blockedUserIds.length > 0) {

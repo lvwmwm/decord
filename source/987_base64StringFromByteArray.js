@@ -1,8 +1,8 @@
 // Module ID: 987
-// Function ID: 10635
+// Function ID: 10636
 // Name: base64StringFromByteArray
-// Dependencies: []
+// Dependencies: [988]
 
 // Module 987 (base64StringFromByteArray)
 
-export const base64StringFromByteArray = require(dependencyMap[0]).base64StringFromByteArray;
+export const base64StringFromByteArray = require("encodeChunk").base64StringFromByteArray;

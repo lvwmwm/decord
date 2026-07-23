@@ -1,12 +1,25 @@
 // Module ID: 1352
-// Function ID: 16112
+// Function ID: 16113
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [15, 17, 18, 7, 6, 1353, 653, 1355, 483, 22, 1356, 1357, 1358, 1359, 1360, 1361, 1362, 21, 2]
 // Exports: createChannelRecordFromInvite, createChannelRecordFromServer, getBasicAccessPermissions, isGuildChannelType, isGuildReadableType, isGuildSelectableChannelType, isGuildTextChannelType, isGuildVocalChannelOrVocalThreadType, isReadableType, isTextChannel
 
 // Module 1352 (_callSuper)
+import exact from "exact";
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import closure_6 from "set";
+import importDefaultResult from "set";
+import closure_8 from "ME";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ChannelFlags } from "set";
+import set from "_inherits";
+
 let ChannelTypes;
 let Permissions;
+let closure_10;
+let closure_13;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback(arg1);
@@ -18,7 +31,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_4(arg0, constructResult);
+  return exact(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -52,13 +65,12 @@ function isVocalThreadType(type) {
   return set14.has(type);
 }
 function convertPermissionOverwrites(arr) {
-  const obj = {};
-  const arg1 = obj;
+  let obj = {};
   if (null != arr) {
     const item = arr.forEach((id) => {
-      const obj = { id: id.id, type: id.type, allow: callback(closure_3[8]).deserialize(id.allow) };
-      const obj2 = callback(closure_3[8]);
-      obj.deny = callback(closure_3[8]).deserialize(id.deny);
+      const obj = { id: id.id, type: id.type, allow: outer1_2(outer1_3[8]).deserialize(id.allow) };
+      const obj2 = outer1_2(outer1_3[8]);
+      obj.deny = outer1_2(outer1_3[8]).deserialize(id.deny);
       obj[id.id] = obj;
     });
   }
@@ -68,11 +80,11 @@ function convertNicks(arg0) {
   if (null == arg0) {
     let reduced = {};
   } else {
-    reduced = importDefault(dependencyMap[9]).reduce(arg0, (arg0, id) => {
+    reduced = importDefault(22).reduce(arg0, (arg0, id) => {
       arg0[id.id] = id.nick;
       return arg0;
     }, {});
-    const arr = importDefault(dependencyMap[9]);
+    const arr = importDefault(22);
   }
   return reduced;
 }
@@ -113,35 +125,35 @@ function getAccessPermissions(type) {
 function transformNonUnderscoreProperties(topic) {
   if ("topic" in topic) {
     topic.topic_ = topic.topic;
-    delete r0.topic;
+    delete tmp.topic;
   }
   if ("position" in topic) {
     topic.position_ = topic.position;
-    delete r0.position;
+    delete tmp.position;
   }
   if ("permissionOverwrites" in topic) {
     topic.permissionOverwrites_ = topic.permissionOverwrites;
-    delete r0.permissionOverwrites;
+    delete tmp.permissionOverwrites;
   }
   if ("bitrate" in topic) {
     topic.bitrate_ = topic.bitrate;
-    delete r0.bitrate;
+    delete tmp.bitrate;
   }
   if ("userLimit" in topic) {
     topic.userLimit_ = topic.userLimit;
-    delete r0.userLimit;
+    delete tmp.userLimit;
   }
   if ("nsfw" in topic) {
     topic.nsfw_ = topic.nsfw;
-    delete r0.nsfw;
+    delete tmp.nsfw;
   }
   if ("rateLimitPerUser" in topic) {
     topic.rateLimitPerUser_ = topic.rateLimitPerUser;
-    delete r0.rateLimitPerUser;
+    delete tmp.rateLimitPerUser;
   }
   if ("flags" in topic) {
     topic.flags_ = topic.flags;
-    delete r0.flags;
+    delete tmp.flags;
   }
   return topic;
 }
@@ -152,38 +164,30 @@ function castChannelRecord(type) {
   }
   let tmp3 = closure_35[GUILD_TEXT];
   if (null == tmp3) {
-    tmp3 = tmp34;
+    tmp3 = closure_31;
   }
-  return arg1(dependencyMap[15]).dangerouslyCast(type, tmp3);
+  return require(1361) /* exact */.dangerouslyCast(type, tmp3);
 }
-function createChannelRecord(type) {
-  let GUILD_TEXT = type.type;
+function createChannelRecord(_callSuper) {
+  let GUILD_TEXT = _callSuper.type;
   if (null == GUILD_TEXT) {
     GUILD_TEXT = ChannelTypes.GUILD_TEXT;
   }
   let tmp3 = closure_35[GUILD_TEXT];
   if (null == tmp3) {
-    tmp3 = tmp34;
+    tmp3 = closure_31;
   }
-  transformNonUnderscoreProperties(type);
-  tmp3 = new tmp3(type);
+  transformNonUnderscoreProperties(_callSuper);
+  tmp3 = new tmp3(_callSuper);
   return tmp3;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const tmp3 = arg1(dependencyMap[6]);
-({ BITRATE_DEFAULT: closure_10, ChannelTypes } = tmp3);
-const BasicPermissions = tmp3.BasicPermissions;
-({ ChannelTypesSets: closure_13, Permissions } = tmp3);
-const ChannelFlags = arg1(dependencyMap[7]).ChannelFlags;
-const items = [, , , , , , , , , ];
+({ BITRATE_DEFAULT: closure_10, ChannelTypes } = ME);
+const BasicPermissions = ME.BasicPermissions;
+({ ChannelTypesSets: closure_13, Permissions } = ME);
+let items = [, , , , , , , , , ];
 ({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], ANNOUNCEMENT_THREAD: arr[2], PUBLIC_THREAD: arr[3], PRIVATE_THREAD: arr[4], GUILD_DIRECTORY: arr[5], GUILD_FORUM: arr[6], GUILD_MEDIA: arr[7], DM: arr[8], GROUP_DM: arr[9] } = ChannelTypes);
-const set = new Set(items);
-const items1 = [, , , , , , , , , , , , , , ];
+let set = new Set(items);
+let items1 = [, , , , , , , , , , , , , , ];
 ({ DM: arr2[0], GROUP_DM: arr2[1], GUILD_TEXT: arr2[2], GUILD_VOICE: arr2[3], GUILD_STAGE_VOICE: arr2[4], GUILD_CATEGORY: arr2[5], GUILD_ANNOUNCEMENT: arr2[6], GUILD_STORE: arr2[7], ANNOUNCEMENT_THREAD: arr2[8], PUBLIC_THREAD: arr2[9], PRIVATE_THREAD: arr2[10], GUILD_DIRECTORY: arr2[11], GUILD_FORUM: arr2[12], GUILD_MEDIA: arr2[13], MEDIA_THREAD: arr2[14] } = ChannelTypes);
 const items2 = [, , , , ];
 ({ GUILD_TEXT: arr3[0], GUILD_ANNOUNCEMENT: arr3[1], ANNOUNCEMENT_THREAD: arr3[2], PUBLIC_THREAD: arr3[3], PRIVATE_THREAD: arr3[4] } = ChannelTypes);
@@ -262,12 +266,12 @@ const items27 = [, , , ];
 ({ GUILD_TEXT: arr28[0], GUILD_ANNOUNCEMENT: arr28[1], GUILD_FORUM: arr28[2], GUILD_VOICE: arr28[3] } = ChannelTypes);
 const set26 = new Set(items26);
 const set27 = new Set(items27);
-let closure_28 = importAll(dependencyMap[8]).combine(Permissions.CONNECT, Permissions.VIEW_CHANNEL);
+let closure_28 = require("fromHexReverseArray").combine(Permissions.CONNECT, Permissions.VIEW_CHANNEL);
 let closure_29 = BasicPermissions.CONNECT | BasicPermissions.VIEW_CHANNEL;
 class ChannelRecordProperties {
   constructor(arg0) {
     self = this;
-    tmp = closure_8(this, ChannelRecordProperties);
+    tmp = c8(this, ChannelRecordProperties);
     ({ id: this.id, type } = global);
     if (null == type) {
       tmp2 = ChannelTypes;
@@ -291,21 +295,20 @@ class ChannelRecordProperties {
 }
 const importDefaultResultResult = importDefaultResult(ChannelRecordProperties);
 let closure_30 = Object.freeze({});
-const tmp33 = (importDefaultResultResult) => {
+const tmp33 = ((importDefaultResultResult) => {
   class ChannelRecordBase {
     constructor() {
-      tmp = closure_8(this, ChannelRecordBase);
-      return closure_36(this, ChannelRecordBase, arguments);
+      tmp = outer1_8(this, ChannelRecordBase);
+      return outer1_36(this, ChannelRecordBase, arguments);
     }
   }
-  const arg1 = ChannelRecordBase;
   callback2(ChannelRecordBase, importDefaultResultResult);
   let obj = {
     key: "permissionOverwrites",
     get() {
       let permissionOverwrites_ = this.permissionOverwrites_;
       if (null == permissionOverwrites_) {
-        permissionOverwrites_ = closure_30;
+        permissionOverwrites_ = outer1_30;
       }
       return permissionOverwrites_;
     }
@@ -340,7 +343,7 @@ const tmp33 = (importDefaultResultResult) => {
     get() {
       let bitrate_ = this.bitrate_;
       if (null == bitrate_) {
-        bitrate_ = closure_10;
+        bitrate_ = outer1_10;
       }
       return bitrate_;
     }
@@ -396,7 +399,7 @@ const tmp33 = (importDefaultResultResult) => {
     key: "set",
     value(arg0, arg1) {
       const obj = { [arg0]: arg1 };
-      callback9(obj);
+      outer1_49(obj);
       return this.merge(obj);
     }
   };
@@ -404,7 +407,7 @@ const tmp33 = (importDefaultResultResult) => {
     key: "merge",
     value(arg0) {
       const self = this;
-      callback9(arg0);
+      outer1_49(arg0);
       let toJSResult = null;
       let tmp4 = null;
       const keys = Object.keys();
@@ -421,7 +424,7 @@ const tmp33 = (importDefaultResultResult) => {
               toJSResult = self.toJS();
             }
             toJSResult[tmp7] = arg0[tmp7];
-            // continue
+            continue;
           }
           continue;
         }
@@ -439,8 +442,8 @@ const tmp33 = (importDefaultResultResult) => {
     key: "computeLurkerPermissionsAllowList",
     value() {
       if (this.isGuildStageVoice()) {
-        if (_public.isPublic(this.id)) {
-          return ChannelRecordBase(closure_3[10]).LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST;
+        if (outer1_9.isPublic(this.id)) {
+          return ChannelRecordBase(outer1_3[10]).LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST;
         }
       }
     }
@@ -460,25 +463,25 @@ const tmp33 = (importDefaultResultResult) => {
   items[14] = {
     key: "isPrivate",
     value() {
-      return callback4(this.type);
+      return outer1_39(this.type);
     }
   };
   items[15] = {
     key: "isGroupDM",
     value() {
-      return this.type === constants.GROUP_DM;
+      return this.type === outer1_11.GROUP_DM;
     }
   };
   items[16] = {
     key: "isMultiUserDM",
     value() {
-      return callback5(this.type);
+      return outer1_40(this.type);
     }
   };
   items[17] = {
     key: "isDM",
     value() {
-      return this.type === constants.DM;
+      return this.type === outer1_11.DM;
     }
   };
   items[18] = {
@@ -520,14 +523,14 @@ const tmp33 = (importDefaultResultResult) => {
   items[21] = {
     key: "isScheduledForDeletion",
     value() {
-      return this.hasFlag(constants3.IS_SCHEDULED_FOR_DELETION);
+      return this.hasFlag(outer1_15.IS_SCHEDULED_FOR_DELETION);
     }
   };
   items[22] = {
     key: "isArchivedLockedThread",
     value() {
       const self = this;
-      let hasItem = set.has(this.type);
+      let hasItem = outer1_25.has(this.type);
       if (hasItem) {
         const threadMetadata = self.threadMetadata;
         let archived;
@@ -551,12 +554,12 @@ const tmp33 = (importDefaultResultResult) => {
     key: "isForumPost",
     value() {
       const self = this;
-      let hasItem = this.type === constants.PUBLIC_THREAD;
+      let hasItem = this.type === outer1_11.PUBLIC_THREAD;
       if (hasItem) {
         hasItem = null != self.parentChannelThreadType;
       }
       if (hasItem) {
-        const GUILD_THREADS_ONLY = constants2.GUILD_THREADS_ONLY;
+        const GUILD_THREADS_ONLY = outer1_13.GUILD_THREADS_ONLY;
         hasItem = GUILD_THREADS_ONLY.has(self.parentChannelThreadType);
       }
       return hasItem;
@@ -565,16 +568,16 @@ const tmp33 = (importDefaultResultResult) => {
   items[24] = {
     key: "isMediaThread",
     value() {
-      return this.type === constants.MEDIA_THREAD;
+      return this.type === outer1_11.MEDIA_THREAD;
     }
   };
   items[25] = {
     key: "isRingable",
     value() {
-      const CALLABLE = constants2.CALLABLE;
+      const CALLABLE = outer1_13.CALLABLE;
       let hasItem = CALLABLE.has(this.type);
       if (!hasItem) {
-        hasItem = this.type === constants.GUILD_VOICE;
+        hasItem = this.type === outer1_11.GUILD_VOICE;
       }
       return hasItem;
     }
@@ -582,19 +585,19 @@ const tmp33 = (importDefaultResultResult) => {
   items[26] = {
     key: "isCategory",
     value() {
-      return this.type === constants.GUILD_CATEGORY;
+      return this.type === outer1_11.GUILD_CATEGORY;
     }
   };
   items[27] = {
     key: "isVocal",
     value() {
-      return callback6(this.type);
+      return outer1_41(this.type);
     }
   };
   items[28] = {
     key: "isGuildVocal",
     value() {
-      return callback3(this.type);
+      return outer1_38(this.type);
     }
   };
   items[29] = {
@@ -607,7 +610,7 @@ const tmp33 = (importDefaultResultResult) => {
   items[30] = {
     key: "isGuildVoice",
     value() {
-      return this.type === constants.GUILD_VOICE;
+      return this.type === outer1_11.GUILD_VOICE;
     }
   };
   items[31] = {
@@ -620,7 +623,7 @@ const tmp33 = (importDefaultResultResult) => {
   items[32] = {
     key: "isGuildStageVoice",
     value() {
-      return this.type === constants.GUILD_STAGE_VOICE;
+      return this.type === outer1_11.GUILD_STAGE_VOICE;
     }
   };
   items[33] = {
@@ -632,21 +635,21 @@ const tmp33 = (importDefaultResultResult) => {
   items[34] = {
     key: "isThread",
     value() {
-      return callback7(this.type);
+      return outer1_42(this.type);
     }
   };
   items[35] = {
     key: "isAnnouncementThread",
     value() {
-      return this.type === constants.ANNOUNCEMENT_THREAD;
+      return this.type === outer1_11.ANNOUNCEMENT_THREAD;
     }
   };
   items[36] = {
     key: "isVocalThread",
     value() {
-      let tmp = this.type === constants.PUBLIC_THREAD;
+      let tmp = this.type === outer1_11.PUBLIC_THREAD;
       if (!tmp) {
-        tmp = this.type === constants.PRIVATE_THREAD;
+        tmp = this.type === outer1_11.PRIVATE_THREAD;
       }
       return tmp;
     }
@@ -669,7 +672,7 @@ const tmp33 = (importDefaultResultResult) => {
   items[38] = {
     key: "isDirectory",
     value() {
-      return this.type === constants.GUILD_DIRECTORY;
+      return this.type === outer1_11.GUILD_DIRECTORY;
     }
   };
   items[39] = {
@@ -682,21 +685,21 @@ const tmp33 = (importDefaultResultResult) => {
   items[40] = {
     key: "isForumChannel",
     value() {
-      return this.type === constants.GUILD_FORUM;
+      return this.type === outer1_11.GUILD_FORUM;
     }
   };
   items[41] = {
     key: "isMediaChannel",
     value() {
-      return this.type === constants.GUILD_MEDIA;
+      return this.type === outer1_11.GUILD_MEDIA;
     }
   };
   items[42] = {
     key: "isMediaPost",
     value() {
-      let tmp = this.type === constants.PUBLIC_THREAD;
+      let tmp = this.type === outer1_11.PUBLIC_THREAD;
       if (tmp) {
-        tmp = this.parentChannelThreadType === constants.GUILD_MEDIA;
+        tmp = this.parentChannelThreadType === outer1_11.GUILD_MEDIA;
       }
       return tmp;
     }
@@ -704,7 +707,7 @@ const tmp33 = (importDefaultResultResult) => {
   items[43] = {
     key: "isRoleSubscriptionTemplatePreviewChannel",
     value() {
-      return this.hasFlag(constants3.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
+      return this.hasFlag(outer1_15.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
     }
   };
   items[44] = {
@@ -716,7 +719,7 @@ const tmp33 = (importDefaultResultResult) => {
   items[45] = {
     key: "isObfuscated",
     value() {
-      return this.hasFlag(constants3.OBFUSCATED);
+      return this.hasFlag(outer1_15.OBFUSCATED);
     }
   };
   items[46] = {
@@ -735,11 +738,11 @@ const tmp33 = (importDefaultResultResult) => {
     key: "getDefaultSortOrder",
     value() {
       if (this.isGameInvitesChannel()) {
-        let LATEST_ACTIVITY = ChannelRecordBase(closure_3[11]).ThreadSortOrder.CREATION_DATE;
+        let LATEST_ACTIVITY = ChannelRecordBase(outer1_3[11]).ThreadSortOrder.CREATION_DATE;
       } else {
         LATEST_ACTIVITY = this.defaultSortOrder;
         if (null == LATEST_ACTIVITY) {
-          LATEST_ACTIVITY = ChannelRecordBase(closure_3[11]).ThreadSortOrder.LATEST_ACTIVITY;
+          LATEST_ACTIVITY = ChannelRecordBase(outer1_3[11]).ThreadSortOrder.LATEST_ACTIVITY;
         }
       }
       return LATEST_ACTIVITY;
@@ -752,15 +755,15 @@ const tmp33 = (importDefaultResultResult) => {
       if (!this.isMediaChannel()) {
         if (!self.isGameInvitesChannel()) {
           if (null != self.defaultForumLayout) {
-            if (self.defaultForumLayout !== ChannelRecordBase(closure_3[12]).ForumLayout.DEFAULT) {
+            if (self.defaultForumLayout !== ChannelRecordBase(outer1_3[12]).ForumLayout.DEFAULT) {
               let GRID = self.defaultForumLayout;
             }
           }
-          GRID = ChannelRecordBase(closure_3[12]).ForumLayout.LIST;
+          GRID = ChannelRecordBase(outer1_3[12]).ForumLayout.LIST;
         }
         return GRID;
       }
-      GRID = ChannelRecordBase(closure_3[12]).ForumLayout.GRID;
+      GRID = ChannelRecordBase(outer1_3[12]).ForumLayout.GRID;
     }
   };
   items[50] = {
@@ -768,7 +771,7 @@ const tmp33 = (importDefaultResultResult) => {
     value() {
       let MATCH_SOME = this.defaultTagSetting;
       if (null == MATCH_SOME) {
-        MATCH_SOME = ChannelRecordBase(closure_3[13]).ThreadSearchTagSetting.MATCH_SOME;
+        MATCH_SOME = ChannelRecordBase(outer1_3[13]).ThreadSearchTagSetting.MATCH_SOME;
       }
       return MATCH_SOME;
     }
@@ -776,31 +779,31 @@ const tmp33 = (importDefaultResultResult) => {
   items[51] = {
     key: "isModeratorReportChannel",
     value() {
-      return this.hasFlag(constants3.IS_MODERATOR_REPORT_CHANNEL);
+      return this.hasFlag(outer1_15.IS_MODERATOR_REPORT_CHANNEL);
     }
   };
   items[52] = {
     key: "isSpoilerChannel",
     value() {
-      return this.hasFlag(constants3.IS_SPOILER_CHANNEL);
+      return this.hasFlag(outer1_15.IS_SPOILER_CHANNEL);
     }
   };
   items[53] = {
     key: "isGameInvitesChannel",
     value() {
-      return this.hasFlag(constants3.IS_GAME_INVITES_CHANNEL);
+      return this.hasFlag(outer1_15.IS_GAME_INVITES_CHANNEL);
     }
   };
   items[54] = {
     key: "accessPermissions",
     get() {
-      return callback8(this.type);
+      return outer1_48(this.type);
     }
   };
   items[55] = {
     key: "hasFlag",
     value(arg0) {
-      return ChannelRecordBase(closure_3[14]).hasFlag(this.flags, arg0);
+      return ChannelRecordBase(outer1_3[14]).hasFlag(this.flags, arg0);
     }
   };
   items[56] = {
@@ -818,21 +821,20 @@ const tmp33 = (importDefaultResultResult) => {
     }
   };
   return importDefaultResult(ChannelRecordBase, items);
-}(importDefaultResultResult);
-const tmp34 = (arg0) => {
+})(importDefaultResultResult);
+const tmp34 = ((arg0) => {
   class UnknownChannelRecord {
     constructor(arg0) {
-      tmp = closure_8(this, UnknownChannelRecord);
+      tmp = outer1_8(this, UnknownChannelRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_36(this, UnknownChannelRecord, items);
+      tmp2 = outer1_36(this, UnknownChannelRecord, items);
       ({ application_id: tmp2.application_id, appliedTags: tmp2.appliedTags, availableTags: tmp2.availableTags, bitrate_: tmp2.bitrate_, defaultAutoArchiveDuration: tmp2.defaultAutoArchiveDuration, defaultForumLayout: tmp2.defaultForumLayout, defaultReactionEmoji: tmp2.defaultReactionEmoji, defaultSortOrder: tmp2.defaultSortOrder, defaultTagSetting: tmp2.defaultTagSetting, defaultThreadRateLimitPerUser: tmp2.defaultThreadRateLimitPerUser, flags_: tmp2.flags_, icon: tmp2.icon, iconEmoji: tmp2.iconEmoji, isMessageRequest: tmp2.isMessageRequest, isMessageRequestTimestamp: tmp2.isMessageRequestTimestamp, isSpam: tmp2.isSpam, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, member: tmp2.member, memberCount: tmp2.memberCount, memberIdsPreview: tmp2.memberIdsPreview, memberListId: tmp2.memberListId, messageCount: tmp2.messageCount, nicks: tmp2.nicks, nsfw_: tmp2.nsfw_, originChannelId: tmp2.originChannelId, ownerId: tmp2.ownerId, parent_id: tmp2.parent_id, parentChannelThreadType: tmp2.parentChannelThreadType, permissionOverwrites_: tmp2.permissionOverwrites_, position_: tmp2.position_, rateLimitPerUser_: tmp2.rateLimitPerUser_, rawRecipients: tmp2.rawRecipients, recipients: tmp2.recipients, recipientFlags: tmp2.recipientFlags, rtcRegion: tmp2.rtcRegion, safetyWarnings: tmp2.safetyWarnings, blockedUserWarningDismissed: tmp2.blockedUserWarningDismissed, template: tmp2.template, themeColor: tmp2.themeColor, threadMetadata: tmp2.threadMetadata, topic_: tmp2.topic_, userLimit_: tmp2.userLimit_, version: tmp2.version, videoQualityMode: tmp2.videoQualityMode, linkedLobby: tmp2.linkedLobby, hdStreamingUntil: tmp2.hdStreamingUntil, hdStreamingBuyerId: tmp2.hdStreamingBuyerId, voiceHangout: tmp2.voiceHangout, lastNonMessageActivityTimestamp: tmp2.lastNonMessageActivityTimestamp } = arg0);
       return tmp2;
     }
   }
-  const arg1 = UnknownChannelRecord;
   callback2(UnknownChannelRecord, arg0);
-  const items = [
+  let items = [
     {
       key: "fromServer",
       value(application_id) {
@@ -841,7 +843,7 @@ const tmp34 = (arg0) => {
         let obj = { application_id: application_id.application_id, appliedTags: application_id.applied_tags };
         let tmp;
         if (null != application_id.available_tags) {
-          tmp = callback5(application_id.available_tags);
+          tmp = outer1_46(application_id.available_tags);
         }
         obj.availableTags = tmp;
         ({ bitrate: obj.bitrate_, default_auto_archive_duration: obj.defaultAutoArchiveDuration, default_forum_layout: obj.defaultForumLayout } = application_id);
@@ -867,7 +869,7 @@ const tmp34 = (arg0) => {
         }
         obj.guild_id = tmp5;
         obj.icon = application_id.icon;
-        obj.iconEmoji = callback6(application_id.icon_emoji);
+        obj.iconEmoji = outer1_47(application_id.icon_emoji);
         ({ id: obj.id, is_message_request: obj.isMessageRequest, is_message_request_timestamp: obj.isMessageRequestTimestamp, is_spam: obj.isSpam, last_message_id: obj.lastMessageId, last_pin_timestamp: obj.lastPinTimestamp } = application_id);
         let tmp6;
         if (null != application_id.member) {
@@ -881,10 +883,10 @@ const tmp34 = (arg0) => {
           str = name;
         }
         obj.name = str;
-        obj.nicks = callback4(application_id.nicks);
+        obj.nicks = outer1_45(application_id.nicks);
         ({ nsfw: obj.nsfw_, origin_channel_id: obj.originChannelId, owner_id: obj.ownerId, parent_id: obj.parent_id } = application_id);
         obj.parentChannelThreadType = undefined;
-        obj.permissionOverwrites_ = callback3(application_id.permission_overwrites);
+        obj.permissionOverwrites_ = outer1_44(application_id.permission_overwrites);
         ({ position: obj.position_, rate_limit_per_user: obj.rateLimitPerUser_ } = application_id);
         obj.rawRecipients = null != application_id.recipients ? application_id.recipients : [];
         if (null != application_id.recipients) {
@@ -907,23 +909,24 @@ const tmp34 = (arg0) => {
         if (null != application_id.type) {
           let UNKNOWN = application_id.type;
         } else {
-          UNKNOWN = constants.UNKNOWN;
+          UNKNOWN = outer1_11.UNKNOWN;
         }
         obj.type = UNKNOWN;
         ({ user_limit: obj.userLimit_, version: obj.version, video_quality_mode: obj.videoQualityMode, linked_lobby: obj.linkedLobby, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, voice_hangout: obj.voiceHangout, last_non_message_activity_timestamp: obj.lastNonMessageActivityTimestamp } = application_id);
-        return UnknownChannelRecord(closure_3[15]).dangerouslyCast(obj, UnknownChannelRecord);
+        return UnknownChannelRecord(outer1_3[15]).dangerouslyCast(obj, UnknownChannelRecord);
       }
     }
   ];
   return importDefaultResult(UnknownChannelRecord, null, items);
-}(tmp33);
-const tmp35 = (arg0) => {
+})(tmp33);
+let closure_31 = tmp34;
+const tmp35 = ((arg0) => {
   class GuildVocalChannelRecord {
     constructor(arg0) {
-      tmp = closure_8(this, GuildVocalChannelRecord);
+      tmp = outer1_8(this, GuildVocalChannelRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_36(this, GuildVocalChannelRecord, items);
+      tmp2 = outer1_36(this, GuildVocalChannelRecord, items);
       ({ application_id: tmp2.application_id, bitrate_: tmp2.bitrate_, flags_: tmp2.flags_, iconEmoji: tmp2.iconEmoji, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, memberListId: tmp2.memberListId, nsfw_: tmp2.nsfw_, originChannelId: tmp2.originChannelId, parent_id: tmp2.parent_id, permissionOverwrites_ } = arg0);
       if (null == permissionOverwrites_) {
         permissionOverwrites_ = {};
@@ -933,9 +936,8 @@ const tmp35 = (arg0) => {
       return tmp2;
     }
   }
-  const arg1 = GuildVocalChannelRecord;
   callback2(GuildVocalChannelRecord, arg0);
-  const items = [
+  let items = [
     {
       key: "fromServer",
       value(application_id) {
@@ -951,7 +953,7 @@ const tmp35 = (arg0) => {
           tmp2 = guild_id;
         }
         obj.guild_id = tmp2;
-        obj.iconEmoji = callback4(application_id.icon_emoji);
+        obj.iconEmoji = outer1_47(application_id.icon_emoji);
         ({ id: obj.id, last_message_id: obj.lastMessageId, last_pin_timestamp: obj.lastPinTimestamp, member_list_id: obj.memberListId, name } = application_id);
         let str = "";
         if (null != name) {
@@ -961,7 +963,7 @@ const tmp35 = (arg0) => {
         const nsfw = application_id.nsfw;
         obj.nsfw_ = null != nsfw && nsfw;
         ({ origin_channel_id: obj.originChannelId, parent_id: obj.parent_id } = application_id);
-        obj.permissionOverwrites_ = callback3(application_id.permission_overwrites);
+        obj.permissionOverwrites_ = outer1_44(application_id.permission_overwrites);
         ({ position: obj.position_, rate_limit_per_user } = application_id);
         let num = 0;
         if (null != rate_limit_per_user) {
@@ -972,23 +974,23 @@ const tmp35 = (arg0) => {
         if (null != application_id.type) {
           let GUILD_VOICE = application_id.type;
         } else {
-          GUILD_VOICE = constants.GUILD_VOICE;
+          GUILD_VOICE = outer1_11.GUILD_VOICE;
         }
         obj.type = GUILD_VOICE;
         ({ user_limit: obj.userLimit_, version: obj.version, video_quality_mode: obj.videoQualityMode, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, voice_hangout: obj.voiceHangout } = application_id);
-        return closure_50(obj);
+        return outer1_50(obj);
       }
     }
   ];
   return importDefaultResult(GuildVocalChannelRecord, null, items);
-}(tmp33);
-const tmp36 = (arg0) => {
+})(tmp33);
+const tmp36 = ((arg0) => {
   class GuildTextualChannelRecord {
     constructor(arg0) {
-      tmp = closure_8(this, GuildTextualChannelRecord);
+      tmp = outer1_8(this, GuildTextualChannelRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_36(this, GuildTextualChannelRecord, items);
+      tmp2 = outer1_36(this, GuildTextualChannelRecord, items);
       ({ application_id: tmp2.application_id, defaultAutoArchiveDuration: tmp2.defaultAutoArchiveDuration, defaultThreadRateLimitPerUser: tmp2.defaultThreadRateLimitPerUser, flags_: tmp2.flags_, iconEmoji: tmp2.iconEmoji, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, memberListId: tmp2.memberListId, nsfw_: tmp2.nsfw_, parent_id: tmp2.parent_id, permissionOverwrites_ } = arg0);
       if (null == permissionOverwrites_) {
         permissionOverwrites_ = {};
@@ -998,9 +1000,8 @@ const tmp36 = (arg0) => {
       return tmp2;
     }
   }
-  const arg1 = GuildTextualChannelRecord;
   callback2(GuildTextualChannelRecord, arg0);
-  const items = [
+  let items = [
     {
       key: "fromServer",
       value(application_id) {
@@ -1016,7 +1017,7 @@ const tmp36 = (arg0) => {
           tmp2 = guild_id;
         }
         obj.guild_id = tmp2;
-        obj.iconEmoji = callback4(application_id.icon_emoji);
+        obj.iconEmoji = outer1_47(application_id.icon_emoji);
         ({ id: obj.id, last_message_id: obj.lastMessageId, last_pin_timestamp: obj.lastPinTimestamp, member_list_id: obj.memberListId, name } = application_id);
         let str = "";
         if (null != name) {
@@ -1026,7 +1027,7 @@ const tmp36 = (arg0) => {
         const nsfw = application_id.nsfw;
         obj.nsfw_ = null != nsfw && nsfw;
         obj.parent_id = application_id.parent_id;
-        obj.permissionOverwrites_ = callback3(application_id.permission_overwrites);
+        obj.permissionOverwrites_ = outer1_44(application_id.permission_overwrites);
         ({ position: obj.position_, rate_limit_per_user } = application_id);
         let num = 0;
         if (null != rate_limit_per_user) {
@@ -1037,100 +1038,93 @@ const tmp36 = (arg0) => {
         if (null != application_id.type) {
           let GUILD_TEXT = application_id.type;
         } else {
-          GUILD_TEXT = constants.GUILD_TEXT;
+          GUILD_TEXT = outer1_11.GUILD_TEXT;
         }
         obj.type = GUILD_TEXT;
         ({ linked_lobby: obj.linkedLobby, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, version: obj.version } = application_id);
-        return closure_50(obj);
+        return outer1_50(obj);
       }
     }
   ];
   return importDefaultResult(GuildTextualChannelRecord, null, items);
-}(tmp33);
-const tmp37 = (arg0) => {
+})(tmp33);
+const tmp37 = ((arg0) => {
   class GuildAnnouncementChannelRecord {
     constructor() {
-      tmp = closure_8(this, GuildAnnouncementChannelRecord);
-      return closure_36(this, GuildAnnouncementChannelRecord, arguments);
+      tmp = outer1_8(this, GuildAnnouncementChannelRecord);
+      return outer1_36(this, GuildAnnouncementChannelRecord, arguments);
     }
   }
-  const arg1 = GuildAnnouncementChannelRecord;
   callback2(GuildAnnouncementChannelRecord, arg0);
   return importDefaultResult(GuildAnnouncementChannelRecord);
-}(tmp36);
-const tmp38 = (arg0) => {
+})(tmp36);
+const tmp38 = ((arg0) => {
   class GuildCategoryChannelRecord {
     constructor() {
-      tmp = closure_8(this, GuildCategoryChannelRecord);
-      return closure_36(this, GuildCategoryChannelRecord, arguments);
+      tmp = outer1_8(this, GuildCategoryChannelRecord);
+      return outer1_36(this, GuildCategoryChannelRecord, arguments);
     }
   }
-  const arg1 = GuildCategoryChannelRecord;
   callback2(GuildCategoryChannelRecord, arg0);
   return importDefaultResult(GuildCategoryChannelRecord);
-}(tmp36);
-const tmp39 = (arg0) => {
+})(tmp36);
+const tmp39 = ((arg0) => {
   class GuildDirectoryChannelRecord {
     constructor() {
-      tmp = closure_8(this, GuildDirectoryChannelRecord);
-      return closure_36(this, GuildDirectoryChannelRecord, arguments);
+      tmp = outer1_8(this, GuildDirectoryChannelRecord);
+      return outer1_36(this, GuildDirectoryChannelRecord, arguments);
     }
   }
-  const arg1 = GuildDirectoryChannelRecord;
   callback2(GuildDirectoryChannelRecord, arg0);
   return importDefaultResult(GuildDirectoryChannelRecord);
-}(tmp36);
-const tmp40 = (arg0) => {
+})(tmp36);
+const tmp40 = ((arg0) => {
   class GuildStageVoiceChannelRecord {
     constructor() {
-      tmp = closure_8(this, GuildStageVoiceChannelRecord);
-      return closure_36(this, GuildStageVoiceChannelRecord, arguments);
+      tmp = outer1_8(this, GuildStageVoiceChannelRecord);
+      return outer1_36(this, GuildStageVoiceChannelRecord, arguments);
     }
   }
-  const arg1 = GuildStageVoiceChannelRecord;
   callback2(GuildStageVoiceChannelRecord, arg0);
   return importDefaultResult(GuildStageVoiceChannelRecord);
-}(tmp35);
-const tmp41 = (arg0) => {
+})(tmp35);
+const tmp41 = ((arg0) => {
   class GuildStoreChannelRecord {
     constructor() {
-      tmp = closure_8(this, GuildStoreChannelRecord);
-      return closure_36(this, GuildStoreChannelRecord, arguments);
+      tmp = outer1_8(this, GuildStoreChannelRecord);
+      return outer1_36(this, GuildStoreChannelRecord, arguments);
     }
   }
-  const arg1 = GuildStoreChannelRecord;
   callback2(GuildStoreChannelRecord, arg0);
   return importDefaultResult(GuildStoreChannelRecord);
-}(tmp36);
-const tmp42 = (arg0) => {
+})(tmp36);
+const tmp42 = ((arg0) => {
   class GuildTextChannelRecord {
     constructor() {
-      tmp = closure_8(this, GuildTextChannelRecord);
-      return closure_36(this, GuildTextChannelRecord, arguments);
+      tmp = outer1_8(this, GuildTextChannelRecord);
+      return outer1_36(this, GuildTextChannelRecord, arguments);
     }
   }
-  const arg1 = GuildTextChannelRecord;
   callback2(GuildTextChannelRecord, arg0);
   return importDefaultResult(GuildTextChannelRecord);
-}(tmp36);
-const tmp43 = (arg0) => {
+})(tmp36);
+const tmp43 = ((arg0) => {
   class GuildVoiceChannelRecord {
     constructor() {
-      tmp = closure_8(this, GuildVoiceChannelRecord);
-      return closure_36(this, GuildVoiceChannelRecord, arguments);
+      tmp = outer1_8(this, GuildVoiceChannelRecord);
+      return outer1_36(this, GuildVoiceChannelRecord, arguments);
     }
   }
-  const arg1 = GuildVoiceChannelRecord;
   callback2(GuildVoiceChannelRecord, arg0);
   return importDefaultResult(GuildVoiceChannelRecord);
-}(tmp35);
-const tmp44 = (arg0) => {
+})(tmp35);
+const tmp44 = ((arg0) => {
   class ForumChannelRecord {
     constructor(arg0) {
-      tmp = closure_8(this, ForumChannelRecord);
+      tmp = outer1_8(this, ForumChannelRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_36(this, ForumChannelRecord, items);
+      tmp2 = outer1_36(this, ForumChannelRecord, items);
       availableTags = arg0.availableTags;
       if (null == availableTags) {
         availableTags = [];
@@ -1145,9 +1139,8 @@ const tmp44 = (arg0) => {
       return tmp2;
     }
   }
-  const arg1 = ForumChannelRecord;
   callback2(ForumChannelRecord, arg0);
-  const items = [
+  let items = [
     {
       key: "fromServer",
       value(available_tags) {
@@ -1156,7 +1149,7 @@ const tmp44 = (arg0) => {
         let guild_id = arg1;
         let obj = {};
         if (null != available_tags.available_tags) {
-          let items = callback4(available_tags.available_tags);
+          let items = outer1_46(available_tags.available_tags);
         } else {
           items = [];
         }
@@ -1183,7 +1176,7 @@ const tmp44 = (arg0) => {
           tmp4 = guild_id;
         }
         obj.guild_id = tmp4;
-        obj.iconEmoji = callback5(available_tags.icon_emoji);
+        obj.iconEmoji = outer1_47(available_tags.icon_emoji);
         ({ id: obj.id, last_message_id: obj.lastMessageId, last_pin_timestamp: obj.lastPinTimestamp, member_list_id: obj.memberListId, name } = available_tags);
         let str = "";
         if (null != name) {
@@ -1193,7 +1186,7 @@ const tmp44 = (arg0) => {
         const nsfw = available_tags.nsfw;
         obj.nsfw_ = null != nsfw && nsfw;
         obj.parent_id = available_tags.parent_id;
-        obj.permissionOverwrites_ = callback3(available_tags.permission_overwrites);
+        obj.permissionOverwrites_ = outer1_44(available_tags.permission_overwrites);
         ({ position: obj.position_, rate_limit_per_user } = available_tags);
         let num2 = 0;
         if (null != rate_limit_per_user) {
@@ -1204,17 +1197,17 @@ const tmp44 = (arg0) => {
         if (null != available_tags.type) {
           let GUILD_TEXT = available_tags.type;
         } else {
-          GUILD_TEXT = constants.GUILD_TEXT;
+          GUILD_TEXT = outer1_11.GUILD_TEXT;
         }
         obj.type = GUILD_TEXT;
         obj.version = available_tags.version;
-        return ForumChannelRecord(closure_3[15]).dangerouslyCast(obj, ForumChannelRecord);
+        return ForumChannelRecord(outer1_3[15]).dangerouslyCast(obj, ForumChannelRecord);
       }
     }
   ];
   return importDefaultResult(ForumChannelRecord, null, items);
-}(tmp33);
-let tmp45 = () => {
+})(tmp33);
+let tmp45 = (() => {
   class IdAsNumberCache {
     constructor() {
       num = arg0;
@@ -1222,14 +1215,13 @@ let tmp45 = () => {
       if (arg0 === undefined) {
         num = 100;
       }
-      tmp = closure_8(self, IdAsNumberCache);
-      tmp2 = closure_1(closure_3[16]);
+      tmp = outer1_8(self, IdAsNumberCache);
+      tmp2 = outer1_1(outer1_3[16]);
       tmp2 = new tmp2(num);
       self.cache = tmp2;
       return;
     }
   }
-  const arg1 = IdAsNumberCache;
   const items = [
     {
       key: "getOrCompute",
@@ -1249,16 +1241,18 @@ let tmp45 = () => {
     }
   ];
   return importDefaultResult(IdAsNumberCache, items);
-}();
+})();
 tmp45 = new tmp45();
+let closure_32 = tmp45;
 tmp45 = new tmp45();
-const tmp48 = (arg0) => {
+let closure_33 = tmp45;
+const tmp48 = ((arg0) => {
   class PrivateChannelRecord {
     constructor(arg0) {
-      tmp = closure_8(this, PrivateChannelRecord);
+      tmp = outer1_8(this, PrivateChannelRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_36(this, PrivateChannelRecord, items);
+      tmp2 = outer1_36(this, PrivateChannelRecord, items);
       ({ application_id: tmp2.application_id, flags_: tmp2.flags_, icon: tmp2.icon, isMessageRequest: tmp2.isMessageRequest, isMessageRequestTimestamp: tmp2.isMessageRequestTimestamp, isSpam: tmp2.isSpam, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, nicks: tmp2.nicks, ownerId: tmp2.ownerId } = arg0);
       tmp2.rawRecipients = PrivateChannelRecord.sortRecipients(arg0.rawRecipients, tmp2.id);
       recipients = arg0.recipients;
@@ -1266,7 +1260,7 @@ const tmp48 = (arg0) => {
         recipients = [];
       }
       items1 = [...recipients];
-      tmp2.recipients = items1.sort(closure_1(closure_3[17]).compare);
+      tmp2.recipients = items1.sort(outer1_1(outer1_3[17]).compare);
       ({ recipientFlags: tmp2.recipientFlags, safetyWarnings } = arg0);
       if (null == safetyWarnings) {
         safetyWarnings = [];
@@ -1276,13 +1270,12 @@ const tmp48 = (arg0) => {
       return tmp2;
     }
   }
-  const arg1 = PrivateChannelRecord;
   callback2(PrivateChannelRecord, arg0);
   let obj = {
     key: "isSystemDM",
     value() {
       const first = this.rawRecipients[0];
-      let tmp2 = this.type === constants.DM;
+      let tmp2 = this.type === outer1_11.DM;
       if (tmp2) {
         tmp2 = null != first;
       }
@@ -1292,7 +1285,7 @@ const tmp48 = (arg0) => {
       return tmp2;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getRecipientId",
     value() {
@@ -1305,7 +1298,7 @@ const tmp48 = (arg0) => {
     value(arg0, arg1, arg2) {
       const self = this;
       if (arg0 !== arg2) {
-        let obj = callback(closure_3[9]);
+        let obj = outer1_1(outer1_3[9]);
         let recipients = self.recipients;
         if (null == recipients) {
           recipients = [];
@@ -1314,7 +1307,7 @@ const tmp48 = (arg0) => {
         const arraySpreadResult = HermesBuiltin.arraySpread(recipients, 0);
         items[arraySpreadResult] = arg0;
         const sum = arraySpreadResult + 1;
-        const result = self.set("recipients", obj.uniq(items).sort(callback(closure_3[17]).compare));
+        const result = self.set("recipients", obj.uniq(items).sort(outer1_1(outer1_3[17]).compare));
         let result1 = result;
         if (null != arg1) {
           obj = {};
@@ -1332,22 +1325,22 @@ const tmp48 = (arg0) => {
   items[3] = {
     key: "removeRecipient",
     value(selected) {
-      return this.set("recipients", callback(closure_3[9]).without(this.recipients, selected));
+      return this.set("recipients", outer1_1(outer1_3[9]).without(this.recipients, selected));
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "sortRecipients",
       value(arg0, arg1) {
         let items = arg0;
-        const orCompute2 = orCompute.getOrCompute(arg1);
+        let orCompute = outer1_32.getOrCompute(arg1);
         if (null == arg0) {
           items = [];
         }
         const items1 = [...items];
         return items1.sort((id, id2) => {
-          const orCompute = store.getOrCompute(id.id);
-          return (orCompute ^ closure_0) - (store.getOrCompute(id2.id) ^ closure_0);
+          const orCompute = outer2_33.getOrCompute(id.id);
+          return (orCompute ^ closure_0) - (outer2_33.getOrCompute(id2.id) ^ closure_0);
         });
       }
     },
@@ -1363,7 +1356,7 @@ const tmp48 = (arg0) => {
           str = name;
         }
         obj.name = str;
-        obj.nicks = callback4(application_id.nicks);
+        obj.nicks = outer1_45(application_id.nicks);
         obj.ownerId = application_id.owner_id;
         obj.rawRecipients = sortRecipientsResult;
         obj.recipients = sortRecipientsResult.map((id) => id.id);
@@ -1371,44 +1364,42 @@ const tmp48 = (arg0) => {
         if (null != application_id.type) {
           let DM = application_id.type;
         } else {
-          DM = constants.DM;
+          DM = outer1_11.DM;
         }
         obj.type = DM;
-        return PrivateChannelRecord(closure_3[15]).dangerouslyCast(obj, PrivateChannelRecord);
+        return PrivateChannelRecord(outer1_3[15]).dangerouslyCast(obj, PrivateChannelRecord);
       }
     }
   ];
   return importDefaultResult(PrivateChannelRecord, items, items1);
-}(tmp33);
-const tmp49 = (arg0) => {
+})(tmp33);
+const tmp49 = ((arg0) => {
   class DMChannelRecord {
     constructor() {
-      tmp = closure_8(this, DMChannelRecord);
-      return closure_36(this, DMChannelRecord, arguments);
+      tmp = outer1_8(this, DMChannelRecord);
+      return outer1_36(this, DMChannelRecord, arguments);
     }
   }
-  const arg1 = DMChannelRecord;
   callback2(DMChannelRecord, arg0);
   return importDefaultResult(DMChannelRecord);
-}(tmp48);
-const tmp50 = (arg0) => {
+})(tmp48);
+const tmp50 = ((arg0) => {
   class GroupDMChannelRecord {
     constructor() {
-      tmp = closure_8(this, GroupDMChannelRecord);
-      return closure_36(this, GroupDMChannelRecord, arguments);
+      tmp = outer1_8(this, GroupDMChannelRecord);
+      return outer1_36(this, GroupDMChannelRecord, arguments);
     }
   }
-  const arg1 = GroupDMChannelRecord;
   callback2(GroupDMChannelRecord, arg0);
   return importDefaultResult(GroupDMChannelRecord);
-}(tmp48);
-const tmp51 = (arg0) => {
+})(tmp48);
+const tmp51 = ((arg0) => {
   class ThreadChannelRecord {
     constructor(arg0) {
-      tmp = closure_8(this, ThreadChannelRecord);
+      tmp = outer1_8(this, ThreadChannelRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_36(this, ThreadChannelRecord, items);
+      tmp2 = outer1_36(this, ThreadChannelRecord, items);
       appliedTags = arg0.appliedTags;
       if (null == appliedTags) {
         appliedTags = [];
@@ -1418,9 +1409,8 @@ const tmp51 = (arg0) => {
       return tmp2;
     }
   }
-  const arg1 = ThreadChannelRecord;
   callback2(ThreadChannelRecord, arg0);
-  const items = [
+  let items = [
     {
       key: "fromServer",
       value(applied_tags) {
@@ -1469,20 +1459,19 @@ const tmp51 = (arg0) => {
         if (null != applied_tags.type) {
           let PUBLIC_THREAD = applied_tags.type;
         } else {
-          PUBLIC_THREAD = constants.PUBLIC_THREAD;
+          PUBLIC_THREAD = outer1_11.PUBLIC_THREAD;
         }
         obj.type = PUBLIC_THREAD;
         ({ user_limit: obj.userLimit_, video_quality_mode: obj.videoQualityMode, last_non_message_activity_timestamp: obj.lastNonMessageActivityTimestamp } = applied_tags);
-        return ThreadChannelRecord(closure_3[15]).dangerouslyCast(obj, ThreadChannelRecord);
+        return ThreadChannelRecord(outer1_3[15]).dangerouslyCast(obj, ThreadChannelRecord);
       }
     }
   ];
   return importDefaultResult(ThreadChannelRecord, null, items);
-}(tmp33);
+})(tmp33);
 let closure_34 = { [ChannelTypes.DM]: tmp48.fromServer, [ChannelTypes.GROUP_DM]: tmp48.fromServer, [ChannelTypes.GUILD_TEXT]: tmp36.fromServer, [ChannelTypes.GUILD_VOICE]: tmp35.fromServer, [ChannelTypes.GUILD_STAGE_VOICE]: tmp35.fromServer, [ChannelTypes.GUILD_CATEGORY]: tmp36.fromServer, [ChannelTypes.GUILD_ANNOUNCEMENT]: tmp36.fromServer, [ChannelTypes.GUILD_STORE]: tmp36.fromServer, [ChannelTypes.ANNOUNCEMENT_THREAD]: tmp51.fromServer, [ChannelTypes.PUBLIC_THREAD]: tmp51.fromServer, [ChannelTypes.PRIVATE_THREAD]: tmp51.fromServer, [ChannelTypes.MEDIA_THREAD]: tmp51.fromServer, [ChannelTypes.GUILD_DIRECTORY]: tmp36.fromServer, [ChannelTypes.GUILD_FORUM]: tmp44.fromServer, [ChannelTypes.GUILD_MEDIA]: tmp44.fromServer };
 let closure_35 = { [ChannelTypes.DM]: tmp49, [ChannelTypes.GROUP_DM]: tmp50, [ChannelTypes.GUILD_TEXT]: tmp42, [ChannelTypes.GUILD_VOICE]: tmp43, [ChannelTypes.GUILD_STAGE_VOICE]: tmp40, [ChannelTypes.GUILD_CATEGORY]: tmp38, [ChannelTypes.GUILD_ANNOUNCEMENT]: tmp37, [ChannelTypes.GUILD_STORE]: tmp41, [ChannelTypes.ANNOUNCEMENT_THREAD]: tmp51, [ChannelTypes.PUBLIC_THREAD]: tmp51, [ChannelTypes.PRIVATE_THREAD]: tmp51, [ChannelTypes.MEDIA_THREAD]: tmp51, [ChannelTypes.GUILD_DIRECTORY]: tmp39, [ChannelTypes.GUILD_FORUM]: tmp44, [ChannelTypes.GUILD_MEDIA]: tmp44 };
-const importAllResult = importAll(dependencyMap[8]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("records/ChannelRecord.tsx");
+let result = set.fileFinishedImporting("records/ChannelRecord.tsx");
 
 export const isGuildSelectableChannelType = function isGuildSelectableChannelType(arg0) {
   return set.has(arg0);
@@ -1573,8 +1562,8 @@ export const createChannelRecordFromServer = function createChannelRecordFromSer
   }
   return fromServer(type, arg1);
 };
-export const createChannelRecordFromInvite = function createChannelRecordFromInvite(type) {
-  return createChannelRecord(type);
+export const createChannelRecordFromInvite = function createChannelRecordFromInvite(_callSuper) {
+  return createChannelRecord(_callSuper);
 };
 export { castChannelRecord };
 export { createChannelRecord };

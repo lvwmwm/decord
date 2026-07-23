@@ -1,32 +1,32 @@
-// Module ID: 13558
-// Function ID: 102834
+// Module ID: 13672
+// Function ID: 104990
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 1212, 2716, 4347, 13673, 2]
 
-// Module 13558 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 13672 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.piqs0o);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.piqs0o);
   },
-  parent: require(dependencyMap[0]).MobileSetting.ACCOUNT,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
   useTrailing() {
-    const intl = require(dependencyMap[3]).intl;
-    const intl2 = require(dependencyMap[3]).intl;
-    return "" + intl.string(require(dependencyMap[3]).t.XxRj7f) + " \u2022 " + intl2.string(importDefault(dependencyMap[4]).FTawSP);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return "" + intl.string(require(1212) /* getSystemLocale */.t.XxRj7f) + " \u2022 " + intl2.string(importDefault(2716).FTawSP);
   },
-  usePredicate: require(dependencyMap[5]).useShowAssignedAgeGroupSettings,
+  usePredicate: require("isReactiveCheckEnabled").useShowAssignedAgeGroupSettings,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.AGE_GROUP,
+  route: require("ME").UserSettingsSections.AGE_GROUP,
   getComponent() {
-    return require(dependencyMap[6]).default;
+    return require(13673) /* SettingsAgeGroupHeader */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAssignedAdultSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAssignedAdultSetting.tsx");
 
 export default route;

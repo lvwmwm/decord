@@ -1,18 +1,19 @@
-// Module ID: 10042
-// Function ID: 77631
+// Module ID: 10050
+// Function ID: 77671
 // Name: _createGuildFromTemplate
-// Dependencies: []
+// Dependencies: [5, 653, 4942, 480, 4029, 2]
 
-// Module 10042 (_createGuildFromTemplate)
+// Module 10050 (_createGuildFromTemplate)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _createGuildFromTemplate() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createGuildFromTemplate = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/create_guild/CreateGuildActionCreators.tsx");
+const result = require("makeRequest").fileFinishedImporting("modules/create_guild/CreateGuildActionCreators.tsx");
 
 export default {
   createGuildFromTemplate(arg0, arg1, template, arg3, arg4) {

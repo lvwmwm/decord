@@ -1,12 +1,13 @@
 // Module ID: 1516
-// Function ID: 17415
+// Function ID: 17416
 // Name: shouldPreventRemove
-// Dependencies: []
+// Dependencies: [77, 31, 1478, 1483]
 // Exports: default
 
 // Module 1516 (shouldPreventRemove)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
+import _defineProperty from "_defineProperty";
+import result from "result";
+
 let closure_4 = Symbol("VISITED_ROUTE_KEYS");
 function shouldPreventRemove(emitter, beforeRemoveListeners, routes, routes2, target) {
   let closure_0 = routes2.map((key) => key.key);
@@ -55,32 +56,27 @@ function shouldPreventRemove(emitter, beforeRemoveListeners, routes, routes2, ta
         }
       }
     }
-    // continue
+    continue;
   }
   return false;
 }
 
 export default function useOnPreventRemove(getState) {
   getState = getState.getState;
-  const importDefault = getState;
   const emitter = getState.emitter;
-  const dependencyMap = emitter;
   const beforeRemoveListeners = getState.beforeRemoveListeners;
-  let closure_2 = beforeRemoveListeners;
-  const addKeyedListener = React.useContext(importDefault(dependencyMap[2])).addKeyedListener;
-  const React = addKeyedListener;
-  const context = React.useContext(importDefault(dependencyMap[3]));
+  addKeyedListener = addKeyedListener.useContext(getState(emitter[2])).addKeyedListener;
+  const context = addKeyedListener.useContext(getState(emitter[3]));
   let key;
   if (null != context) {
     key = context.key;
   }
-  let closure_4 = key;
   const items = [addKeyedListener, beforeRemoveListeners, emitter, getState, key];
-  const effect = React.useEffect(() => {
+  const effect = addKeyedListener.useEffect(() => {
     if (key) {
       let tmp3;
       if (null != addKeyedListener) {
-        tmp3 = addKeyedListener("beforeRemove", key, (arg0) => callback2(closure_1, closure_2, callback().routes, [], arg0));
+        tmp3 = addKeyedListener("beforeRemove", key, (arg0) => outer2_5(outer1_1, outer1_2, outer1_0().routes, [], arg0));
       }
       return tmp3;
     }

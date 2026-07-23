@@ -1,17 +1,17 @@
 // Module ID: 1509
-// Function ID: 17350
+// Function ID: 17351
 // Name: useIsFocused
-// Dependencies: []
+// Dependencies: [57, 31, 1508]
 // Exports: default
 
 // Module 1509 (useIsFocused)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const useState = arg1(dependencyMap[1]).useState;
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { useState } from "result";
+
 
 export default function useIsFocused() {
-  const obj = importDefault(dependencyMap[2])();
-  const importDefault = obj;
+  obj = obj(1508)();
   const tmp = callback(useState(obj.isFocused), 2);
   const dependencyMap = tmp2;
   const isFocusedResult = obj.isFocused();
@@ -20,7 +20,7 @@ export default function useIsFocused() {
   }
   const items = [obj];
   const effect = React.useEffect(() => {
-    const obj = obj.addListener("focus", () => callback2(true));
+    obj = obj.addListener("focus", () => callback2(true));
     let closure_1 = obj.addListener("blur", () => callback2(false));
     return () => {
       callback();

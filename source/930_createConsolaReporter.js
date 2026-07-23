@@ -1,16 +1,17 @@
 // Module ID: 930
-// Function ID: 10110
+// Function ID: 10111
 // Name: createConsolaReporter
-// Dependencies: []
+// Dependencies: [29, 825, 928, 856]
 // Exports: createConsolaReporter
 
 // Module 930 (createConsolaReporter)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = [];
+import _objectWithoutProperties from "_objectWithoutProperties";
+
+let closure_3 = ["type", "level", "message", "args", "tag", "date"];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012489354888544838, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004691381353949552, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020855172404663808, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184966451889048, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026910514029344, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012852133662692065];
-let closure_5 = {};
-let closure_6 = {};
+let closure_4 = ["trace", "debug", "info", "warn", "error", "fatal"];
+let closure_5 = { silent: "trace", fatal: "fatal", error: "error", warn: "warn", log: "info", info: "info", success: "info", fail: "error", ready: "info", start: "info", box: "info", debug: "debug", trace: "trace", verbose: "debug", critical: "fatal", notice: "info" };
+let closure_6 = { 0: "fatal", 1: "warn", 2: "info", 3: "info", 4: "debug", 5: "trace" };
 
 export const createConsolaReporter = function createConsolaReporter() {
   if (arguments.length > 0) {
@@ -24,9 +25,8 @@ export const createConsolaReporter = function createConsolaReporter() {
     }
     const prototype = _Set.prototype;
     _Set = new _Set(levels);
-    const require = _Set;
-    const dependencyMap = first.client;
-    const obj = {
+    let client = first.client;
+    let obj = {
       log(arg0) {
           let args;
           let date;
@@ -35,9 +35,9 @@ export const createConsolaReporter = function createConsolaReporter() {
           let tag;
           let type;
           ({ type, level, message, args, tag, date } = arg0);
-          const tmp = callback(arg0, closure_3);
+          const tmp = outer1_2(arg0, outer1_3);
           if (!client) {
-            const client = _Set(client[1]).getClient();
+            client = _Set(client[1]).getClient();
             const obj2 = _Set(client[1]);
           }
           if (client) {
@@ -49,7 +49,7 @@ export const createConsolaReporter = function createConsolaReporter() {
                   str = "info";
                   if ("number" === typeof level) {
                     str = "info";
-                    if (closure_6[level]) {
+                    if (outer1_6[level]) {
                       str = tmp6;
                     }
                   }
@@ -80,20 +80,20 @@ export const createConsolaReporter = function createConsolaReporter() {
                 items.push(_Set(client[2]).formatConsoleArgs(args, num3, num4));
                 const obj3 = _Set(client[2]);
               }
-              tmp.sentry.origin = "auto.log.consola";
+              tmp["sentry.origin"] = "auto.log.consola";
               const joined = items.join(" ");
               if (tag) {
-                tmp.consola.tag = tag;
+                tmp["consola.tag"] = tag;
               }
               if (type) {
-                tmp.consola.type = type;
+                tmp["consola.type"] = type;
               }
               let tmp16 = null != level;
               if (tmp16) {
                 tmp16 = "number" === typeof level;
               }
               if (tmp16) {
-                tmp.consola.level = level;
+                tmp["consola.level"] = level;
               }
               const obj = { level: str, message: joined, attributes: tmp };
               _Set(client[3])._INTERNAL_captureLog(obj);

@@ -1,61 +1,71 @@
-// Module ID: 4171
-// Function ID: 35390
+// Module ID: 4175
+// Function ID: 35422
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4169, 1921, 4162, 566, 686, 2]
 
-// Module 4171 (_isNativeReflectConstruct)
+// Module 4175 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _isNativeReflectConstruct = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _isNativeReflectConstruct = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,7 +103,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function addSku(sku) {
-  let closure_0 = sku;
+  let _isNativeReflectConstruct = sku;
   let value = map1.get(sku.id);
   const fromServer = closure_5.createFromServer(sku);
   if (null != value) {
@@ -115,22 +125,22 @@ function addSku(sku) {
     if (tmp7) {
       fromServer.eligibleOffers = value.eligibleOffers;
     }
-    const tmp3 = null == fromServer.price && null != value.price;
-    const tmp6 = null == fromServer.orbsReward && null != value.orbsReward;
-    const tmp7 = 0 === fromServer.eligibleOffers.length && value.eligibleOffers.length > 0;
+    tmp3 = null == fromServer.price && null != value.price;
+    tmp6 = null == fromServer.orbsReward && null != value.orbsReward;
+    tmp7 = 0 === fromServer.eligibleOffers.length && value.eligibleOffers.length > 0;
   }
-  const result = map1.set(sku.id, fromServer);
+  let result = map1.set(sku.id, fromServer);
   set.delete(sku.id);
   set1.delete(sku.id);
   const bundled_sku_ids = sku.bundled_sku_ids;
   if (null != bundled_sku_ids) {
     const item = bundled_sku_ids.forEach((arg0) => {
-      const result = closure_9.set(arg0, arg0.id);
+      const result = outer1_9.set(arg0, sku.id);
     });
   }
   if (!map2.has(sku.application_id)) {
     const _Set = Set;
-    const set = new Set();
+    set = new Set();
     const result1 = map2.set(sku.application_id, set);
   }
   value = map2.get(sku.application_id);
@@ -144,13 +154,13 @@ function handleStoreListing(storeListing) {
   if (null != storeListing.child_skus) {
     const child_skus = storeListing.child_skus;
     const item = child_skus.forEach((arg0) => {
-      callback(arg0);
+      outer1_18(arg0);
     });
   }
   if (null != storeListing.alternative_skus) {
     const alternative_skus = storeListing.alternative_skus;
     const item1 = alternative_skus.forEach((arg0) => {
-      callback(arg0);
+      outer1_18(arg0);
     });
   }
 }
@@ -162,8 +172,8 @@ function handleEntitlementsFetch(entitlements) {
     do {
       let value = iter.value;
       if (null != value.sku) {
-        let tmp2 = closure_18;
-        let tmp3 = closure_18(value.sku);
+        let tmp2 = addSku;
+        let tmp3 = addSku(value.sku);
       }
       iter2 = tmp();
       iter = iter2;
@@ -182,37 +192,29 @@ function handleUserSettingsStoreUpdate() {
   if (locale === closure_6.locale) {
     return false;
   } else {
-    const locale = closure_6.locale;
+    locale = closure_6.locale;
     handleClearData();
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-let closure_7 = importDefault(dependencyMap[7]);
-const map = new Map();
-const set = new Set();
-const set1 = new Set();
-const map1 = new Map();
-const map2 = new Map();
-const map3 = new Map();
-let tmp8 = (Store) => {
+let map = new Map();
+let set = new Set();
+let set1 = new Set();
+let map1 = new Map();
+let map2 = new Map();
+let map3 = new Map();
+let tmp8 = ((Store) => {
   class SKUStore {
     constructor() {
       self = this;
       tmp = SKUStore(this, SKUStore);
-      obj = closure_3(SKUStore);
-      tmp2 = closure_2;
-      if (closure_15()) {
+      obj = outer1_3(SKUStore);
+      tmp2 = outer1_2;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -221,34 +223,33 @@ let tmp8 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = SKUStore;
   callback2(SKUStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(locale, closure_7);
-      const items = [locale];
-      this.syncWith(items, closure_22);
-      const locale = locale.locale;
+      this.waitFor(outer1_6, outer1_7);
+      const items = [outer1_6];
+      this.syncWith(items, outer1_22);
+      const outer1_8 = outer1_6.locale;
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "get",
     value(arg0) {
-      return closure_12.get(arg0);
+      return outer1_12.get(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getForApplication",
     value(arg0) {
-      const value = closure_13.get(arg0);
+      const value = outer1_13.get(arg0);
       if (null == value) {
         let items = [];
       } else {
         const _Array = Array;
-        items = Array.from(value).map((arg0) => closure_12.get(arg0));
+        items = Array.from(value).map((arg0) => outer2_12.get(arg0));
         const arr = Array.from(value);
       }
       return items;
@@ -258,27 +259,27 @@ let tmp8 = (Store) => {
   items[3] = {
     key: "isFetching",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_10.has(arg0);
     }
   };
   items[4] = {
     key: "getFetchingSkuIds",
     value() {
-      const items = [...closure_10.keys()];
+      const items = [...outer1_10.keys()];
       return items;
     }
   };
   items[5] = {
     key: "getSKUs",
     value() {
-      return Object.fromEntries(closure_12);
+      return Object.fromEntries(outer1_12);
     }
   };
   items[6] = {
     key: "getParentSKU",
     value(arg0) {
       const self = this;
-      const value = closure_9.get(arg0);
+      const value = outer1_9.get(arg0);
       if (null != value) {
         return self.get(value);
       }
@@ -287,13 +288,13 @@ let tmp8 = (Store) => {
   items[7] = {
     key: "didFetchingSkuFail",
     value(arg0) {
-      return set2.has(arg0);
+      return outer1_11.has(arg0);
     }
   };
   return callback(SKUStore, items);
-}(importAll(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp8.displayName = "SKUStore";
-tmp8 = new tmp8(importDefault(dependencyMap[9]), {
+tmp8 = new tmp8(require("dispatcher"), {
   STORE_LISTINGS_FETCH_START: function handleStoreListingsFetchStart(skuId) {
     set.add(skuId.skuId);
   },
@@ -308,8 +309,8 @@ tmp8 = new tmp8(importDefault(dependencyMap[9]), {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_20;
-        let tmp3 = closure_20(iter.value);
+        let tmp2 = handleStoreListing;
+        let tmp3 = handleStoreListing(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -347,8 +348,8 @@ tmp8 = new tmp8(importDefault(dependencyMap[9]), {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_19;
-        let tmp3 = closure_19(iter.value);
+        let tmp2 = skuFetchSuccess;
+        let tmp3 = skuFetchSuccess(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -365,6 +366,6 @@ tmp8 = new tmp8(importDefault(dependencyMap[9]), {
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: handleEntitlementsFetch,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: handleEntitlementsFetch
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("stores/game_store/SKUStore.tsx");
+let result = set.fileFinishedImporting("stores/game_store/SKUStore.tsx");
 
 export default tmp8;

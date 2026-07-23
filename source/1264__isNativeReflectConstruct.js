@@ -1,10 +1,16 @@
 // Module ID: 1264
-// Function ID: 14272
+// Function ID: 14273
 // Name: _isNativeReflectConstruct
-// Dependencies: [2080374834, 1744830514, 2097152029, 2969567282, 2986344498, 3170893874]
+// Dependencies: [6, 7, 15, 17, 18, 1254]
 // Exports: formatToPlainString
 
 // Module 1264 (_isNativeReflectConstruct)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,28 +24,23 @@ function formatToPlainString(FNtLb3, maxSettingsForPreset) {
   const self = this;
   let first = FNtLb3;
   if ("string" !== typeof FNtLb3) {
-    first = self.bindFormatValues(tmp2, FNtLb3, maxSettingsForPreset)[0];
+    first = self.bindFormatValues(closure_5, FNtLb3, maxSettingsForPreset)[0];
   }
   return first;
 }
-let closure_0 = require(dependencyMap[0]);
-let closure_1 = require(dependencyMap[1]);
-let closure_2 = require(dependencyMap[2]);
-let closure_3 = require(dependencyMap[3]);
-let closure_4 = require(dependencyMap[4]);
-const tmp2 = (FormatBuilder) => {
+const tmp2 = ((FormatBuilder) => {
   class StringBuilder {
     constructor() {
       self = this;
       tmp = StringBuilder(this, StringBuilder);
-      obj = closure_3(StringBuilder);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(StringBuilder);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -50,18 +51,18 @@ const tmp2 = (FormatBuilder) => {
       return tmp2Result;
     }
   }
-  let closure_0 = StringBuilder;
-  callback2(StringBuilder, FormatBuilder);
+  _inherits(StringBuilder, FormatBuilder);
   let obj = {
     key: "pushRichTextTag",
     value: function pushRichTextTag(arg0, items) {
       const self = this;
       for (const item10004 of arg1) {
         self.result = self.result + item10004;
+        continue;
       }
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "pushLiteralText",
     value: function pushLiteralText(arg0) {
@@ -90,8 +91,9 @@ const tmp2 = (FormatBuilder) => {
       return items;
     }
   };
-  return callback(StringBuilder, items);
-}(require(dependencyMap[5]).FormatBuilder);
+  return _defineProperties(StringBuilder, items);
+})(require("_isNativeReflectConstruct").FormatBuilder);
+let closure_5 = tmp2;
 
 export { formatToPlainString };
 export const StringBuilder = tmp2;

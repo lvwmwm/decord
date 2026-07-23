@@ -1,25 +1,26 @@
-// Module ID: 4711
-// Function ID: 40998
+// Module ID: 4714
+// Function ID: 41016
 // Name: DiscordImageFactory
-// Dependencies: []
+// Dependencies: [6, 7, 4715, 4742, 2]
 
-// Module 4711 (DiscordImageFactory)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 4714 (DiscordImageFactory)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class DiscordImageFactory {
     constructor() {
-      tmp = closure_2(this, DiscordImageFactory);
+      tmp = outer1_2(this, DiscordImageFactory);
       return;
     }
   }
-  const arg1 = DiscordImageFactory;
   const items = [
     {
       key: "create",
       value(byteLength) {
         const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
-        let obj = DiscordImageFactory(closure_1[2]);
+        let obj = DiscordImageFactory(outer1_1[2]);
         const detectFileResult = obj.detectFile(uint8Array);
         let mimeType;
         if (null != detectFileResult) {
@@ -27,7 +28,7 @@ const tmp2 = () => {
         }
         obj = null;
         if ("image/png" === mimeType) {
-          const DiscordImagePng = DiscordImageFactory(closure_1[3]).DiscordImagePng;
+          const DiscordImagePng = DiscordImageFactory(outer1_1[3]).DiscordImagePng;
           obj = DiscordImagePng.create(byteLength);
         }
         return obj;
@@ -35,7 +36,7 @@ const tmp2 = () => {
     }
   ];
   return callback(DiscordImageFactory, null, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
+})();
+const result = require("detectFile").fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
 
 export const DiscordImageFactory = tmp2;

@@ -1,18 +1,20 @@
 // Module ID: 1121
-// Function ID: 12737
+// Function ID: 12738
 // Name: routeMatchToParamSpanAttributes
-// Dependencies: []
+// Dependencies: [57, 77, 1000, 794]
 // Exports: tanstackRouterBrowserTracingIntegration
 
 // Module 1121 (routeMatchToParamSpanAttributes)
+import _slicedToArray from "_slicedToArray";
+import _defineProperty from "_defineProperty";
+
 function routeMatchToParamSpanAttributes(params) {
   const obj = {};
   if (params) {
-    const require = obj;
     const _Object = Object;
     const entries = Object.entries(params.params);
     const item = entries.forEach((arg0) => {
-      const tmp = callback(arg0, 2);
+      const tmp = outer1_2(arg0, 2);
       const first = tmp[0];
       obj["url.path.params." + first] = tmp[1];
       obj["url.path.parameter." + first] = tmp[1];
@@ -23,8 +25,6 @@ function routeMatchToParamSpanAttributes(params) {
     return obj;
   }
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBrowserTracingIntegration(arg0) {
@@ -32,9 +32,9 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
     if (undefined !== arguments[1]) {
       let obj = arguments[1];
     }
-    const require = arg0;
+    const _require = arg0;
     const _Object = Object;
-    const result = require(dependencyMap[2]).browserTracingIntegration(Object.assign({}, obj, { "Bool(false)": true, "Bool(false)": true }));
+    let result = _require(1000).browserTracingIntegration(Object.assign({}, obj, { instrumentNavigation: false, instrumentPageLoad: false }));
     const dependencyMap = result;
     const instrumentPageLoad = obj.instrumentPageLoad;
     let closure_2 = undefined === instrumentPageLoad || instrumentPageLoad;
@@ -42,15 +42,16 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
     let closure_3 = undefined === instrumentNavigation || instrumentNavigation;
     const _Object2 = Object;
     obj = {
-      afterAllSetup(emit) {
+      afterAllSetup(closure_0) {
           let matchRoutes;
           let options;
-          result.afterAllSetup(emit);
-          const _location = emit(result[2]).WINDOW.location;
+          let lib = closure_0;
+          closure_1.afterAllSetup(closure_0);
+          const _location = lib(result[2]).WINDOW.location;
           if (closure_2) {
             if (_location) {
-              ({ options, matchRoutes } = emit);
-              const matchRoutesResult = matchRoutes(_location.pathname, options.parseSearch(_location.search), { "Bool(false)": true, "Bool(false)": true });
+              ({ options, matchRoutes } = lib);
+              let matchRoutesResult = matchRoutes(_location.pathname, options.parseSearch(_location.search), { preload: false, throwOnError: false });
               let routeId;
               if (null != matchRoutesResult[matchRoutesResult.length - 1]) {
                 routeId = tmp4.routeId;
@@ -59,25 +60,25 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
               if ("__root__" !== routeId) {
                 tmp7 = tmp4;
               }
-              let obj = emit(result[2]);
+              let obj = lib(result[2]);
               obj = { name: tmp7 ? tmp7.routeId : _location.pathname };
               const tmp11 = callback;
-              const tmp14 = callback({}, emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload");
+              const tmp14 = callback({}, lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload");
               let str4 = "url";
               if (tmp7) {
                 str4 = "route";
               }
-              const tmp15 = callback(callback({}, emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload"), emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.pageload.react.tanstack_router");
-              obj.attributes = Object.assign(tmp11(callback(callback({}, emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload"), emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.pageload.react.tanstack_router"), emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, str4), callback2(tmp7));
-              const result = obj.startBrowserTracingPageLoadSpan(emit, obj);
-              const tmp11Result = tmp11(callback(callback({}, emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload"), emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.pageload.react.tanstack_router"), emit(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, str4);
+              const tmp15 = callback(callback({}, lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.pageload.react.tanstack_router");
+              obj.attributes = Object.assign(tmp11(callback(callback({}, lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.pageload.react.tanstack_router"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, str4), outer1_4(tmp7));
+              result = obj.startBrowserTracingPageLoadSpan(closure_0, obj);
+              const tmp11Result = tmp11(callback(callback({}, lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "pageload"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.pageload.react.tanstack_router"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, str4);
             }
           }
           if (callback) {
-            const subscription = emit.subscribe("onBeforeNavigate", (fromLocation) => {
+            const subscription = lib.subscribe("onBeforeNavigate", (fromLocation) => {
               if (fromLocation.fromLocation) {
                 if (fromLocation.toLocation.state !== fromLocation.fromLocation.state) {
-                  const matchRoutesResult = emit.matchRoutes(fromLocation.toLocation.pathname, fromLocation.toLocation.search, { "Bool(false)": true, "Bool(false)": true });
+                  let matchRoutesResult = lib.matchRoutes(fromLocation.toLocation.pathname, fromLocation.toLocation.search, { preload: false, throwOnError: false });
                   let routeId;
                   if (null != matchRoutesResult[matchRoutesResult.length - 1]) {
                     routeId = tmp13.routeId;
@@ -86,21 +87,21 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
                   if ("__root__" !== routeId) {
                     tmp2 = tmp13;
                   }
-                  let obj = emit(closure_1[2]);
-                  obj = { name: tmp2 ? tmp2.routeId : emit(closure_1[2]).WINDOW.location.pathname };
-                  const tmp5 = emit;
-                  const tmp6 = callback;
-                  const tmp9 = callback({}, emit(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation");
+                  let obj = lib(result[2]);
+                  obj = { name: tmp2 ? tmp2.routeId : lib(result[2]).WINDOW.location.pathname };
+                  const tmp5 = lib;
+                  let tmp6 = callback;
+                  const tmp9 = callback({}, lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation");
                   let str4 = "url";
                   if (tmp2) {
                     str4 = "route";
                   }
-                  obj.attributes = tmp6(callback(callback({}, emit(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation"), emit(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.navigation.react.tanstack_router"), emit(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, str4);
-                  const emit = obj.startBrowserTracingNavigationSpan(tmp5, obj);
-                  closure_1 = emit.subscribe("onResolved", (toLocation) => {
+                  obj.attributes = tmp6(callback(callback({}, lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.navigation.react.tanstack_router"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, str4);
+                  lib = obj.startBrowserTracingNavigationSpan(tmp5, obj);
+                  let closure_1 = lib.subscribe("onResolved", (toLocation) => {
                     callback();
                     if (store) {
-                      const matchRoutesResult = store.matchRoutes(toLocation.toLocation.pathname, toLocation.toLocation.search, { "Bool(false)": true, "Bool(false)": true });
+                      const matchRoutesResult = store.matchRoutes(toLocation.toLocation.pathname, toLocation.toLocation.search, { preload: false, throwOnError: false });
                       let routeId;
                       if (null != matchRoutesResult[matchRoutesResult.length - 1]) {
                         routeId = tmp3.routeId;
@@ -111,12 +112,12 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
                       }
                       if (tmp6) {
                         store.updateName(tmp6.routeId);
-                        const attr = store.setAttribute(store(callback[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "route");
-                        store.setAttributes(callback2(tmp6));
+                        const attr = store.setAttribute(store(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "route");
+                        store.setAttributes(outer3_4(tmp6));
                       }
                     }
                   });
-                  const tmp10 = callback(callback({}, emit(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation"), emit(closure_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.navigation.react.tanstack_router");
+                  const tmp10 = callback(callback({}, lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation"), lib(result[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.navigation.react.tanstack_router");
                 }
               }
             });

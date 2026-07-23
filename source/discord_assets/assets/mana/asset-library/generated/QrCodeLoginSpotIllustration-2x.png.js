@@ -1,11 +1,10 @@
-// Module ID: 6430
-// Function ID: 50578
+// Module ID: 6435
+// Function ID: 50607
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6430 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/QrCodeLoginSpotIllustration-2x.png.js");
+// Module 6435 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/QrCodeLoginSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3d63fa03e0ee03454a118207a740abe0565c9ab263b12bfeeba4ebde1df5417a.png";
 export const metadata = { fileBytes: 65532 };

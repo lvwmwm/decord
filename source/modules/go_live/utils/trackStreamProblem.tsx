@@ -1,14 +1,13 @@
-// Module ID: 15776
-// Function ID: 120615
+// Module ID: 15893
+// Function ID: 122788
 // Name: trackStreamProblem
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: default
 
-// Module 15776 (trackStreamProblem)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 15893 (trackStreamProblem)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/go_live/utils/trackStreamProblem.tsx");
+const result = require("set").fileFinishedImporting("modules/go_live/utils/trackStreamProblem.tsx");
 
 export default function trackStreamProblem(arg0) {
   let _location;
@@ -26,7 +25,7 @@ export default function trackStreamProblem(arg0) {
     rating = null;
   }
   ({ category, variant } = arg0);
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { reason: problem, category, reason_variant: variant, streamer_user_id: stream.ownerId, stream_channel_id: stream.channelId, guild_id: stream.guildId };
   let id = null;
   if (null != streamApplication) {

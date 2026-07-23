@@ -1,20 +1,20 @@
-// Module ID: 5478
-// Function ID: 46770
+// Module ID: 5481
+// Function ID: 46793
 // Name: getDefaultProviderDescription
-// Dependencies: []
+// Dependencies: [653, 1212, 2]
 // Exports: default
 
-// Module 5478 (getDefaultProviderDescription)
-const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/guild_onboarding/getDefaultProviderDescription.tsx");
+// Module 5481 (getDefaultProviderDescription)
+import { PlatformTypes } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/guild_onboarding/getDefaultProviderDescription.tsx");
 
 export default function getDefaultProviderDescription(arg0) {
   if (PlatformTypes.TWITCH === arg0) {
-    const intl2 = require(dependencyMap[1]).intl;
-    return intl2.string(require(dependencyMap[1]).t.D/wRWb);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["D/wRWb"]);
   } else if (PlatformTypes.YOUTUBE === arg0) {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.TC0upt);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.TC0upt);
   }
 };

@@ -1,13 +1,14 @@
 // Module ID: 983
-// Function ID: 10630
+// Function ID: 10631
 // Name: utf8ToBytes
-// Dependencies: []
+// Dependencies: [984, 985, 987]
 
 // Module 983 (utf8ToBytes)
-for (const key10015 in arg1(arg6[0])) {
+for (const key10015 in require("module_984")) {
   let tmp2 = key10015;
-  arg5[key10015] = arg1(arg6[0])[key10015];
+  arg5[key10015] = require("module_984")[key10015];
+  continue;
 }
 
-export const utf8ToBytes = require(dependencyMap[1]).utf8ToBytes;
-export const base64StringFromByteArray = require(dependencyMap[2]).base64StringFromByteArray;
+export const utf8ToBytes = require("utf8ToBytes").utf8ToBytes;
+export const base64StringFromByteArray = require("base64StringFromByteArray").base64StringFromByteArray;

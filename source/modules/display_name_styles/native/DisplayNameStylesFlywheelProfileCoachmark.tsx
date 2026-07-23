@@ -1,57 +1,59 @@
-// Module ID: 15372
-// Function ID: 117064
+// Module ID: 15489
+// Function ID: 119238
 // Name: CoachmarkImage
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 1345, 33, 4130, 689, 566, 3776, 1212, 2556, 8563, 5807, 1273, 2]
 // Exports: default
 
-// Module 15372 (CoachmarkImage)
+// Module 15489 (CoachmarkImage)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function CoachmarkImage() {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.coachmarkImageContainer };
-  const items = [callback(arg1(dependencyMap[12]).DisplayNameLockeAbstractUI, {}), ];
+  const items = [callback(require(5807) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
   obj = { style: tmp.betaTag };
-  items[1] = callback(arg1(dependencyMap[13]).BetaTag, obj);
+  items[1] = callback(require(1273) /* Button */.BetaTag, obj);
   obj.children = items;
   return callback2(View, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { <string:3596066964>: null, <string:3638417373>: null, gap: importDefault(dependencyMap[6]).space.PX_12 };
-obj.coachmarkImageContainer = obj;
-obj.betaTag = { marginLeft: 0 };
-let closure_9 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelProfileCoachmark.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.coachmarkImageContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.betaTag = { marginLeft: 0 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelProfileCoachmark.tsx");
 
 export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   visible = visible.visible;
-  const arg1 = visible;
   const markAsDismissed = visible.markAsDismissed;
-  const importDefault = markAsDismissed;
   let dependencyMap;
   let React;
-  let View;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = arg1(dependencyMap[7]);
-  const result = importDefault(dependencyMap[8]).canUsePremiumProfileCustomization(stateFromStores);
-  const intl = arg1(dependencyMap[9]).intl;
+  let callback;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = visible(566).useStateFromStores(items, () => outer1_5.getCurrentUser());
+  const obj = visible(566);
+  const result = markAsDismissed(3776).canUsePremiumProfileCustomization(stateFromStores);
+  const intl = visible(1212).intl;
   const string = intl.string;
-  const tmp3 = importDefault(dependencyMap[10]);
+  const tmp3 = markAsDismissed(2556);
   if (result) {
     let stringResult = string(tmp3.h6sykk);
   } else {
     stringResult = string(tmp3.M5amXH);
   }
   dependencyMap = stringResult;
-  const intl2 = arg1(dependencyMap[9]).intl;
+  const intl2 = visible(1212).intl;
   const string2 = intl2.string;
-  const tmp5 = importDefault(dependencyMap[10]);
+  const tmp5 = markAsDismissed(2556);
   if (result) {
     let string2Result = string2(tmp5.TyUdka);
   } else {
@@ -59,22 +61,21 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   }
   React = string2Result;
   const items1 = [markAsDismissed];
-  const callback = React.useCallback(() => {
-    markAsDismissed(constants.USER_DISMISS);
+  callback = React.useCallback(() => {
+    markAsDismissed(outer1_6.USER_DISMISS);
   }, items1);
-  View = callback;
   const items2 = [stringResult, string2Result, visible, callback];
   const memo = React.useMemo(() => ({
-    title: stringResult,
-    description: string2Result,
+    title: c2,
+    description: c3,
     visible,
     position: "bottom",
     onDismiss: callback,
     renderImgComponent() {
-      return callback(closure_10, {});
+      return outer2_7(outer2_10, {});
     }
   }), items2);
-  const obj2 = importDefault(dependencyMap[8]);
-  const coachmark = arg1(dependencyMap[11]).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(3776);
+  const coachmark = visible(8563).useCoachmark(visible.targetRef, memo);
   return null;
 };

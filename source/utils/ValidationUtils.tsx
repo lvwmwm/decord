@@ -1,17 +1,17 @@
-// Module ID: 8336
-// Function ID: 66063
-// Dependencies: []
+// Module ID: 8342
+// Function ID: 66100
+// Name: set
+// Dependencies: [2]
 
-// Module 8336
-let closure_0 = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i;
-let closure_1 = /^((https:\/\/)?(discord\.gg\/)|(discord\.com\/)(invite\/)?)?[A-Za-z0-9]{8,8}$/;
-let closure_2 = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-let closure_3 = /^(.*)#[0-9]{1,5}$/;
-let closure_4 = /^(https:\/\/)?(discord\.com\/discovery\/game\/)([0-9-]+)\/?/;
-let closure_5 = ["accessibilityValue", "maxFontSizeMultiplier", "1. Have rebuilt your app (with for instance 'npx expo run:ios')", "2. Are not using Expo Go (Expo Go is unsupported). See README for more info: ", "https://github.com/henninghall/react-native-date-picker", "1. Installed pods (by for instance running 'cd ios && pod install')", "2. Rebuilt the app (by for instance 'npx react-native run-ios')", "1. Have rebuilt your app (with for instance 'npx expo run:android')", "2. Are not using Expo Go (Expo Go is unsupported). See README for more info: ", "https://github.com/henninghall/react-native-date-picker"];
-let closure_6 = [339804162, 1627390536, 1981367039, 1341980674, -10420222];
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/ValidationUtils.tsx");
+// Module 8342 (set)
+const re0 = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i;
+const re1 = /^((https:\/\/)?(discord\.gg\/)|(discord\.com\/)(invite\/)?)?[A-Za-z0-9]{8,8}$/;
+const re2 = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+const re3 = /^(.*)#[0-9]{1,5}$/;
+const re4 = /^(https:\/\/)?(discord\.com\/discovery\/game\/)([0-9-]+)\/?/;
+let closure_5 = ["@", "#", ":", "```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage"];
+let closure_6 = ["discordtag", "everyone", "here", "discord nitro", "discord"];
+const result = require("set").fileFinishedImporting("utils/ValidationUtils.tsx");
 
 export default {
   isEmail(first) {

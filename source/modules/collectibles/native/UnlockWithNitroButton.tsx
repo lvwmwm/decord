@@ -1,44 +1,47 @@
-// Module ID: 11833
-// Function ID: 91732
+// Module ID: 11843
+// Function ID: 91781
 // Name: UnlockWithNitroButton
-// Dependencies: []
+// Dependencies: [31, 5621, 6790, 655, 33, 566, 5624, 8765, 1212, 4544, 4126, 7871, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 11833 (UnlockWithNitroButton)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const ShopCtaEnum = arg1(dependencyMap[3]).ShopCtaEnum;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
+// Module 11843 (UnlockWithNitroButton)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { ShopCtaEnum } from "items";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
 
 export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink) {
+  let require;
   let text;
   let flag = shouldShrink.shouldShrink;
   if (flag === undefined) {
     flag = false;
   }
-  ({ onTrackPress: closure_0, text } = shouldShrink);
+  ({ onTrackPress: require, text } = shouldShrink);
   let importDefault;
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_4, closure_3];
+  let obj = require(566) /* initialize */;
+  const items = [closure_4, _isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let isPurchasingProductResult = null != isClaiming.isClaiming;
+    let isPurchasingProductResult = null != outer1_4.isClaiming;
     if (!isPurchasingProductResult) {
-      isPurchasingProductResult = purchasingProduct.isPurchasingProduct(callback(closure_2[6]).ProductIds.GENERIC_CONSUMABLE);
+      isPurchasingProductResult = outer1_3.isPurchasingProduct(outer1_0(outer1_2[6]).ProductIds.GENERIC_CONSUMABLE);
     }
     return isPurchasingProductResult;
   });
-  importDefault = importDefault(dependencyMap[7])();
+  importDefault = importDefault(8765)();
   if (null == text) {
-    const intl = arg1(dependencyMap[8]).intl;
-    text = intl.string(arg1(dependencyMap[8]).t.sEAnVH);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    text = intl.string(require(1212) /* getSystemLocale */.t.sEAnVH);
   }
   obj = {};
   let tmp5;
   if (flag) {
-    obj = { children: text };
-    tmp5 = jsx(arg1(dependencyMap[10]).Text, obj);
+    obj = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text };
+    tmp5 = jsx(require(4126) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: text });
   }
   obj.textElement = tmp5;
   let tmp9;
@@ -54,13 +57,13 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   }
   obj.size = str;
   obj.grow = true;
-  obj.icon = jsx(arg1(dependencyMap[11]).NitroWheelIcon, { "Bool(false)": true, "Bool(false)": "/assets/images/native" });
+  obj.icon = jsx(require(7871) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
   obj.onPress = function onPress() {
     if (null != callback) {
-      callback(constants.UNLOCK_WITH_NITRO);
+      callback(outer1_5.UNLOCK_WITH_NITRO);
     }
     callback2();
   };
   obj.disabled = stateFromStores;
-  return jsx(arg1(dependencyMap[9]).BaseTextButton, obj);
+  return jsx(require(4544) /* CollapsingText */.BaseTextButton, {});
 };

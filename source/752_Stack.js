@@ -1,22 +1,22 @@
 // Module ID: 752
-// Function ID: 8803
+// Function ID: 8804
 // Name: Stack
-// Dependencies: []
+// Dependencies: [725, 753, 754, 755, 756, 757]
 
 // Module 752 (Stack)
 class Stack {
   constructor(arg0) {
-    tmp = require(dependencyMap[0]);
+    tmp = require("ListCache");
     tmp = new tmp(global);
     this.__data__ = tmp;
     this.size = tmp.size;
     return;
   }
 }
-Stack.prototype.clear = require(dependencyMap[1]);
-Stack.prototype.delete = require(dependencyMap[2]);
-Stack.prototype.get = require(dependencyMap[3]);
-Stack.prototype.has = require(dependencyMap[4]);
-Stack.prototype.set = require(dependencyMap[5]);
+Stack.prototype.clear = require("stackClear");
+Stack.prototype.delete = require("stackDelete");
+Stack.prototype.get = require("stackGet");
+Stack.prototype.has = require("stackHas");
+Stack.prototype.set = require("stackSet");
 
 export default Stack;

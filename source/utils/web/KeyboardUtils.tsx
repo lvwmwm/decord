@@ -1,54 +1,65 @@
-// Module ID: 12711
-// Function ID: 97502
+// Module ID: 12825
+// Function ID: 99658
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 6736, 477, 22, 12826, 12827, 12828, 1327, 2]
 // Exports: areKeyCombosEqual, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toString
 
-// Module 12711 (_createForOfIteratorHelperLoose)
+// Module 12825 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import items from "items";
+import set from "set";
+import importDefaultResult from "apply";
+import importDefaultResult1 from "apply";
+import importDefaultResult2 from "apply";
+import set from "set";
+import set from "set";
+
 let LinuxKeyToCode;
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let global = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_5;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -59,16 +70,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      global = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -98,16 +109,16 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
       return key;
     }
   }
-  const BACKTICK_CODES = key(dependencyMap[5]).BACKTICK_CODES;
+  const BACKTICK_CODES = require(12827) /* _isNativeReflectConstruct */.BACKTICK_CODES;
   if (BACKTICK_CODES.has(keyCode)) {
-    let obj = key(dependencyMap[5]);
+    let obj = require(12827) /* _isNativeReflectConstruct */;
     const layoutMap = obj.getLayoutMap();
     const value = layoutMap.get("Backquote");
     if (key === value) {
       return maybePlusConversion(key);
     } else {
       obj = { key: value, code: "Backquote", keyCode };
-      const exactKeyboardEventMatchFromAny = key(dependencyMap[5]).getExactKeyboardEventMatchFromAny(obj);
+      const exactKeyboardEventMatchFromAny = require(12827) /* _isNativeReflectConstruct */.getExactKeyboardEventMatchFromAny(obj);
       if ("\\" === key) {
         if ("`" === value) {
           return key;
@@ -123,7 +134,7 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
         key = exactKeyboardEventMatchFromAny.key;
       }
       maybePlusConversion(key);
-      const obj3 = key(dependencyMap[5]);
+      const obj3 = require(12827) /* _isNativeReflectConstruct */;
       const tmp9 = maybePlusConversion;
     }
   } else {
@@ -137,10 +148,10 @@ function getEnv() {
     if (obj2.isMac()) {
       MACOS = KeyboardEnvs.MACOS;
     } else {
-      MACOS = arg1(dependencyMap[2]).isWindows() ? tmp5.WINDOWS : tmp5.BROWSER;
-      const obj3 = arg1(dependencyMap[2]);
+      MACOS = require(477) /* set */.isWindows() ? tmp5.WINDOWS : tmp5.BROWSER;
+      const obj3 = require(477) /* set */;
     }
-    const obj2 = arg1(dependencyMap[2]);
+    obj2 = require(477) /* set */;
   }
   return MACOS;
 }
@@ -152,23 +163,23 @@ function codeToKey(arg0) {
   if (KeyboardEnvs.LINUX === tmp6) {
     let tmp11 = invertResult["" + tmp4];
   } else if (KeyboardEnvs.MACOS === tmp6) {
-    tmp11 = closure_12["" + tmp5];
+    tmp11 = table["" + tmp5];
   } else {
     if (KeyboardEnvs.WINDOWS === tmp6) {
       tmp11 = invertResult1["" + tmp5];
     } else if (KeyboardEnvs.BROWSER === tmp6) {
-      const tmp15 = importDefault(dependencyMap[4])(tmp5);
+      const tmp15 = importDefault(12826)(tmp5);
       let tmp17 = null;
       if (null != tmp15) {
         tmp11 = getKeyConversionForBrowser(tmp15);
       }
     } else {
-      tmp11 = invertResult2["" + tmp5];
+      tmp11 = set["" + tmp5];
     }
     if (null != tmp17) {
       return getCodeToKeyLanguageCorrection(tmp2, tmp17, tmp3);
     } else {
-      const keyboardEventShapeFromKeycode = arg1(dependencyMap[5]).getKeyboardEventShapeFromKeycode(tmp2);
+      const keyboardEventShapeFromKeycode = require(12827) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKeycode(tmp2);
       let tmp29 = null;
       if (null != keyboardEventShapeFromKeycode) {
         tmp29 = getCodeToKeyLanguageCorrection(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp3);
@@ -234,10 +245,10 @@ function keyToCode(key) {
             tmp17 = tmp === KeyboardEnvs.BROWSER;
           }
           if (tmp17 === true) {
-            parsed = importDefault(dependencyMap[4])(getKeyConversionForBrowser(key));
-            const tmp30 = importDefault(dependencyMap[4]);
+            parsed = importDefault(12826)(getKeyConversionForBrowser(key));
+            const tmp30 = importDefault(12826);
           } else if (tmp8 === true) {
-            parsed = obj[key];
+            parsed = set[key];
           } else if (KEYBOARD_KEY === constants.MOUSE_BUTTON === true) {
             const _parseInt2 = parseInt;
             parsed = parseInt(key.replace("MOUSE", ""), 10);
@@ -261,8 +272,7 @@ function keyToCode(key) {
   if (null != tmp6) {
     return tmp6;
   } else {
-    const obj = arg1(dependencyMap[5]);
-    const keyboardEventShapeFromKey = obj.getKeyboardEventShapeFromKey(key);
+    const keyboardEventShapeFromKey = require(12827) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKey(key);
     let keyCode = null;
     if (null != keyboardEventShapeFromKey) {
       keyCode = keyboardEventShapeFromKey.keyCode;
@@ -300,50 +310,42 @@ function toPrettyKey(str) {
 function toMetaKeyIndexKey(arg0) {
   return arg0 + "Key";
 }
-let closure_4 = importDefault(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-({ KeyboardDeviceTypes: closure_5, LinuxKeyToCode } = tmp2);
-const MacosKeyToCode = tmp2.MacosKeyToCode;
-const WindowsKeyToCode = tmp2.WindowsKeyToCode;
-const KeyboardEnvs = tmp2.KeyboardEnvs;
-let obj = arg1(dependencyMap[2]);
-obj = LinuxKeyToCode;
-if (!obj.isLinux()) {
+({ KeyboardDeviceTypes: closure_5, LinuxKeyToCode } = items);
+const MacosKeyToCode = items.MacosKeyToCode;
+const WindowsKeyToCode = items.WindowsKeyToCode;
+const KeyboardEnvs = items.KeyboardEnvs;
+set = LinuxKeyToCode;
+if (!set.isLinux()) {
   let tmp3 = MacosKeyToCode;
   if (!obj3.isMac()) {
-    obj = WindowsKeyToCode;
+    set = WindowsKeyToCode;
     if (!obj4.isWindows()) {
-      obj = {};
+      set = {};
     }
-    tmp3 = obj;
-    const obj4 = arg1(dependencyMap[2]);
+    tmp3 = set;
+    obj4 = require("set");
   }
-  obj = tmp3;
-  const obj3 = arg1(dependencyMap[2]);
+  set = tmp3;
+  obj3 = require("set");
 }
-const invertResult = importDefault(dependencyMap[3]).invert(LinuxKeyToCode);
+const invertResult = require("apply").invert(LinuxKeyToCode);
 invertResult[223] = "`";
 const frozen = Object.freeze(invertResult);
-const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_12 = Object.freeze(importDefault(dependencyMap[3]).invert(MacosKeyToCode));
-const importDefaultResult1 = importDefault(dependencyMap[3]);
-const invertResult1 = importDefault(dependencyMap[3]).invert(WindowsKeyToCode);
+let closure_12 = Object.freeze(require("apply").invert(MacosKeyToCode));
+const invertResult1 = require("apply").invert(WindowsKeyToCode);
 invertResult1[223] = "`";
 const frozen1 = Object.freeze(invertResult1);
-const importDefaultResult2 = importDefault(dependencyMap[3]);
-if (null == obj) {
-  obj = {};
+if (null == set) {
+  set = {};
 }
-const invertResult2 = importDefault(dependencyMap[3]).invert(obj);
-const importDefaultResult3 = importDefault(dependencyMap[3]);
-if (!obj10.isMac()) {
-  invertResult2[223] = "`";
+set = require("apply").invert(set);
+if (!set.isMac()) {
+  set[223] = "`";
 }
-const frozen2 = Object.freeze(invertResult2);
-const items = [[true, true], ["channelId", "channelId"], [-92565272158904660000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002005878589786805], ["<string:1900014796>", "Array"], [], [], [true, true], [false, false], [], [null, null], [null, null], [false, false], [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000346282551539407, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017179403304727124], [], [true, true], [true, true], [null, null], [null, null], [-92559631349653870000000000000000000000000000000000000000000000, -92559631349654160000000000000000000000000000000000000000000000], ["<string:3435973951>", "<string:3972844748>"], ["<string:858993471>", "<string:858993459>"], [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020645714, -92559631435427180000000000000000000000000000000000000000000000], [], ["<string:2638495724>", "<string:1224737052>"]];
-let closure_16 = /shift|meta|ctrl|alt$/;
-const obj10 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("utils/web/KeyboardUtils.tsx");
+set = Object.freeze(set);
+items = [["META", "\u2318"], ["CMD", "\u2318"], ["RIGHT META", "RIGHT \u2318"], ["RIGHT CMD", "RIGHT \u2318"], ["SHIFT", "\u21E7"], ["RIGHT SHIFT", "RIGHT \u21E7"], ["ALT", "\u2325"], ["RIGHT ALT", "RIGHT \u2325"], ["CTRL", "\u2303"], ["RIGHT CTRL", "RIGHT \u2303"], ["ENTER", "\u21B5"], ["BACKSPACE", "\u232B"], ["DEL", "\u2326"], ["ESC", "\u238B"], ["PAGEUP", "\u21DE"], ["PAGEDOWN", "\u21DF"], ["UP", "\u2191"], ["DOWN", "\u2193"], ["LEFT", "\u2190"], ["RIGHT", "\u2192"], ["HOME", "\u2196"], ["END", "\u2198"], ["TAB", "\u21E5"], ["SPACE", "\u2423"]];
+const re16 = /shift|meta|ctrl|alt$/;
+const result = set.fileFinishedImporting("utils/web/KeyboardUtils.tsx");
 
 export const getRawCodeFromKey = function getRawCodeFromKey(arg0) {
   let tmp = arg1;
@@ -351,9 +353,9 @@ export const getRawCodeFromKey = function getRawCodeFromKey(arg0) {
     tmp = getEnv();
   }
   if (tmp === KeyboardEnvs.BROWSER) {
-    let tmp4 = importDefault(dependencyMap[4])(arg0);
+    let tmp4 = importDefault(12826)(arg0);
   } else {
-    tmp4 = obj[arg0];
+    tmp4 = set[arg0];
   }
   return tmp4;
 };
@@ -363,12 +365,12 @@ export { codeToKey };
 export { keyToCode };
 export { getKeyConversionForBrowser };
 export const toBrowserEvents = function toBrowserEvents(arr) {
-  let closure_0 = { 1663514193: "isArrayBuffer", 1403038523: "AuditLogFilterTypes", 1889701708: "_", 1414722501: "roc", 1655571202: "_", -1571643141: "TOO_MANY_CONNECTIONS", 1660142960: "prepareCurvedTransition" };
+  let closure_0 = { keyCode: 0, key: "", code: "", metaKey: false, shiftKey: false, altKey: false, ctrlKey: false };
   if (null == arr) {
     let items = [];
   } else {
     items = arr.reduce((arr) => {
-      const tmp = callback(arg1);
+      const tmp = outer1_22(arg1);
       let closure_0 = tmp;
       let obj = {};
       const merged = Object.assign(closure_0);
@@ -379,7 +381,7 @@ export const toBrowserEvents = function toBrowserEvents(arr) {
         arr.push(obj);
         return arr;
       } else {
-        if (regex.test(tmp)) {
+        if (outer1_16.test(tmp)) {
           let tmp3 = "meta" === tmp;
           if (!tmp3) {
             tmp3 = "shift" === tmp;
@@ -391,14 +393,14 @@ export const toBrowserEvents = function toBrowserEvents(arr) {
             tmp3 = "ctrl" === tmp;
           }
           if (tmp3) {
-            closure_0[callback3(tmp)] = true;
+            closure_0[outer1_26(tmp)] = true;
             return arr.map((arg0) => {
-              arg0[callback(tmp)] = true;
+              arg0[outer2_26(closure_0)] = true;
               return arg0;
             });
           }
         }
-        const tmp6 = callback2(tmp, constants.BROWSER);
+        const tmp6 = outer1_23(tmp, outer1_9.BROWSER);
         if (null != tmp6) {
           obj.keyCode = tmp6;
         }
@@ -419,30 +421,29 @@ export const toCombo = function toCombo(shortcut) {
   if (KEYBOARD_KEY === undefined) {
     KEYBOARD_KEY = constants.KEYBOARD_KEY;
   }
-  const arg1 = KEYBOARD_KEY;
   const str = shortcut.replace(/numpad plus/i, "");
   const str2 = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus");
-  const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, arg1(dependencyMap[6]).modKey).split("+");
+  const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(12828).modKey).split("+");
   const mapped = parts.map((str) => str.trim().replace("plus", "+"));
   return mapped.reduce((arr, str) => {
     let tmp5;
-    const tmp = callback2(closure_15);
+    const tmp = outer1_17(outer1_15);
     const iter = tmp();
     let iter2 = iter;
     let formatted = str;
     if (!iter.done) {
-      [str, tmp5] = callback(iter2.value, 2);
+      [str, tmp5] = outer1_4(iter2.value, 2);
       while (tmp5 !== str.toUpperCase()) {
         let iter3 = tmp();
         iter2 = iter3;
         formatted = str;
       }
       formatted = str.toLowerCase();
-      const tmp4 = callback(iter2.value, 2);
+      const tmp4 = outer1_4(iter2.value, 2);
     }
-    const tmp6 = callback3(formatted, tmp, KEYBOARD_KEY);
+    const tmp6 = outer1_23(formatted, closure_0, KEYBOARD_KEY);
     if (null != tmp6) {
-      const items = [KEYBOARD_KEY, tmp6, tmp];
+      const items = [KEYBOARD_KEY, tmp6, closure_0];
       arr.push(items);
     }
     return arr;
@@ -459,14 +460,14 @@ export const toString = function toString(arr) {
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
     if ("number" !== typeof tmp3) {
-      tmp3 = callback();
+      tmp3 = outer1_21();
     }
-    if (constants.KEYBOARD_KEY !== tmp) {
-      if (constants.KEYBOARD_MODIFIER_KEY !== tmp) {
-        if (constants.MOUSE_BUTTON === tmp) {
+    if (outer1_5.KEYBOARD_KEY !== tmp) {
+      if (outer1_5.KEYBOARD_MODIFIER_KEY !== tmp) {
+        if (outer1_5.MOUSE_BUTTON === tmp) {
           const _HermesInternal3 = HermesInternal;
           return "mouse" + tmp2;
-        } else if (constants.GAMEPAD_BUTTON === tmp) {
+        } else if (outer1_5.GAMEPAD_BUTTON === tmp) {
           const _HermesInternal2 = HermesInternal;
           return "gamepad" + tmp2;
         } else {
@@ -481,14 +482,14 @@ export const toString = function toString(arr) {
     } else {
       items1 = [tmp, tmp2];
     }
-    let combined = closure_22(items1);
+    let combined = outer1_22(items1);
     if (null == combined) {
       const _HermesInternal4 = HermesInternal;
       combined = "UNK" + tmp2;
     }
     return combined;
   });
-  const found = mapped.filter(arg1(dependencyMap[7]).isNotNullish);
+  const found = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
   if (flag) {
     const appVersion = global.navigator.appVersion;
     let mapped1 = found;
@@ -504,17 +505,16 @@ export const toString = function toString(arr) {
 };
 export const areKeyCombosEqual = function areKeyCombosEqual(arr) {
   let flag = arg2;
-  const global = arg1;
+  let closure_0 = arg1;
   if (arg2 === undefined) {
     flag = false;
   }
-  const arg1 = flag;
   return arr.length === arg1.length && arr.every((arg0, arg1) => {
     let tmp;
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    const tmp4 = callback(arg1[arg1], 3);
+    const tmp4 = outer1_4(table[arg1], 3);
     let tmp5 = tmp === tmp4[0];
     if (tmp5) {
       tmp5 = tmp2 === tmp4[1];

@@ -1,25 +1,39 @@
-// Module ID: 15114
-// Function ID: 114003
+// Module ID: 15229
+// Function ID: 116172
 // Name: Screenshot
-// Dependencies: []
+// Dependencies: [57, 5, 31, 27, 1348, 4468, 4467, 653, 8818, 4123, 33, 4130, 689, 8364, 1212, 15230, 3831, 1450, 3977, 8829, 15231, 4662, 3941, 3842, 5160, 9894, 9903, 4543, 4337, 7089, 1327, 6924, 7938, 491, 4665, 6691, 7939, 1557, 477, 5094, 9122, 5087, 9883, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15114 (Screenshot)
+// Module 15229 (Screenshot)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import { View } from "Button";
+import closure_7 from "_isNativeReflectConstruct";
+import { DraftType } from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { AbortCodes } from "ME";
+import { UserRowModes } from "UserRowModes";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+import jsxProd from "v1";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_13;
+let closure_14;
+const require = arg1;
 function Screenshot(setUri) {
   setUri = setUri.setUri;
-  const arg1 = setUri;
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   const ref = React.useRef(null);
-  const importDefault = ref;
   const items = [setUri];
   const effect = React.useEffect(() => {
     const timerId = setTimeout(() => {
-      const current = ref.current;
+      const current = outer1_1.current;
       let nextPromise;
       if (null != current) {
         if (null != current.capture) {
           nextPromise = current.capture().then((arg0) => {
-            callback(arg0);
+            outer2_0(arg0);
           });
           const captureResult = current.capture();
         }
@@ -27,27 +41,27 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = arg1(dependencyMap[19]);
-  obj = { style: { flexWrap: "<string:3981508608>", overflow: "<string:1789149843>", paddingTop: "<string:690225153>" } };
+  let obj = setUri(8829);
+  obj = { style: { position: "absolute", top: -1000, overflow: "hidden" } };
   obj = { style: items1 };
-  const items1 = [tmp.preview, { width: importDefault(dependencyMap[17])().width }];
+  items1 = [tmp.preview, { width: ref(1450)().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
-  const obj1 = { ref, options: {} };
+  const obj1 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 } };
   const obj2 = { style: tmp.base };
-  const tmp4 = importDefault(dependencyMap[18])();
-  const obj3 = {};
+  const tmp4 = ref(3977)();
+  const obj3 = { absolute: true, wide: true, tall: true, mix: true };
   const obj4 = {};
-  const tmp6 = importDefault(dependencyMap[20]);
-  obj4.dark = arg1(dependencyMap[22]).OverlayOpacity.LEVEL_7;
-  obj4.light = arg1(dependencyMap[22]).OverlayOpacity.LEVEL_8;
+  const tmp6 = ref(15231);
+  obj4.dark = setUri(3941).OverlayOpacity.LEVEL_7;
+  obj4.light = setUri(3941).OverlayOpacity.LEVEL_8;
   obj3.mixAmount = obj4;
-  const items2 = [callback2(importDefault(dependencyMap[21]), obj3), ];
+  const items2 = [callback2(ref(4662), obj3), ];
   const obj5 = { gradient: tmp4 };
   const obj6 = { style: items3 };
-  const items3 = [tmp.contentContainer, clientThemesOverride];
+  items3 = [tmp.contentContainer, clientThemesOverride];
   obj6.children = setUri.render();
   obj5.children = callback2(View, obj6);
-  items2[1] = callback2(arg1(dependencyMap[23]).ThemeContextProvider, obj5);
+  items2[1] = callback2(setUri(3842).ThemeContextProvider, obj5);
   obj2.children = items2;
   obj1.children = callback3(View, obj2);
   obj.children = callback2(tmp6, obj1);
@@ -64,43 +78,40 @@ function GravityShareFooter(arg0) {
   let onSend;
   let textInputRef;
   ({ count, isSending, onSend } = arg0);
-  const arg1 = onSend;
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  const tmp2 = callback(React.useState(""), 2);
+  const tmp2 = insets(React.useState(""), 2);
   const first = tmp2[0];
-  const dependencyMap = first;
-  const insets = importDefault(dependencyMap[24])({ includeKeyboardHeight: true }).insets;
-  let callback = insets;
-  let obj = arg1(dependencyMap[25]);
+  insets = importDefault(first[24])({ includeKeyboardHeight: true }).insets;
+  let obj = onSend(first[25]);
   const shareChatInputActions = obj.useShareChatInputActions(tmp4);
-  const items = [first, onSend];
+  let items = [first, onSend];
   ({ textInputRef, handleSelectionChange, handleMessageFocus, handleMessageBlur, handlePressEmoji } = shareChatInputActions);
-  callback = React.useCallback(() => {
+  const callback = React.useCallback(() => {
     onSend(first);
   }, items);
   if (count <= 1) {
-    const intl2 = arg1(dependencyMap[14]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[14]).t.TXNS7S);
+    const intl2 = onSend(first[14]).intl;
+    let stringResult = intl2.string(onSend(first[14]).t.TXNS7S);
   } else {
-    const intl = arg1(dependencyMap[14]).intl;
+    const intl = onSend(first[14]).intl;
     obj = { count };
-    stringResult = intl.formatToPlainString(arg1(dependencyMap[14]).t.jWtYUm, obj);
+    stringResult = intl.formatToPlainString(onSend(first[14]).t.jWtYUm, obj);
   }
   const items1 = [tmp.footer, insets.bottom];
   let tmp15Result = null;
   if (0 !== count) {
     obj = { style: tmp12 };
     const obj1 = { inputRef: textInputRef, text: first, onChange: tmp4, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend: callback, disabled: isSending };
-    const items2 = [callback2(importDefault(dependencyMap[26]), obj1), ];
-    const obj2 = { text: stringResult, disabled: tmp13 };
+    const items2 = [callback2(importDefault(first[26]), obj1), ];
+    const obj2 = { variant: "primary", size: "md", text: stringResult, disabled: tmp13 };
     let tmp22;
     if (!isSending) {
       tmp22 = callback;
     }
     obj2.onPress = tmp22;
     obj2.loading = isSending;
-    items2[1] = callback2(arg1(dependencyMap[27]).Button, obj2);
+    items2[1] = callback2(onSend(first[27]).Button, obj2);
     obj.children = items2;
     tmp15Result = closure_14(View, obj);
     const tmp15 = closure_14;
@@ -112,35 +123,31 @@ function GravityShareFooter(arg0) {
 class ICYMIShareModal {
   constructor(arg0) {
     title = global.title;
-    arg1 = title;
-    ({ linkText: closure_1, render } = global);
-    dependencyMap = render;
-    ({ forwardToChannel: closure_3, onShare: closure_4 } = global);
+    ({ linkText, render } = global);
+    ({ forwardToChannel, onShare } = global);
     _handleSendForwards = undefined;
-    closure_6 = undefined;
-    closure_7 = undefined;
+    c6 = undefined;
+    useState = undefined;
     _handleSendForwards = function _handleSendForwards() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback2(tmp);
-      const _handleSendForwards = obj;
+      const obj = outer1_4(tmp);
       return obj(...arguments);
     };
     tmp = forwardToChannel(_handleSendForwards.useState([]), 2);
     first = tmp[0];
     _handleSendForwards = first;
     tmp2 = forwardToChannel(_handleSendForwards.useState(false), 2);
-    closure_6 = tmp2[1];
+    c6 = tmp2[1];
     tmp3 = forwardToChannel(_handleSendForwards.useState(null), 2);
-    closure_7 = tmp3[0];
+    useState = tmp3[0];
     callback = _handleSendForwards.useCallback(() => {
-      let arr = callback(render[28]);
+      let arr = outer1_1(render[28]);
       arr = arr.pop();
     }, []);
-    tmp5 = closure_15();
-    tmp6 = importDefault(dependencyMap[37])();
+    tmp5 = c15();
+    tmp6 = require("useSafeAreaInsets")();
     DraftType = tmp6;
-    height = importDefault(dependencyMap[17])().height;
-    closure_9 = height;
+    height = require("useWindowDimensions")().height;
     items = [, ];
     items[0] = tmp6.bottom;
     items[1] = height;
@@ -157,26 +164,26 @@ class ICYMIShareModal {
     };
     obj = { style: tmp5.headerContainer };
     tmp7 = jsxs;
-    tmp8 = closure_6;
+    tmp8 = c6;
     tmp9 = jsx;
-    tmp10 = closure_6;
+    tmp10 = c6;
     tmp11 = jsx;
     obj1 = {
       title,
       headerTitle() {
-            return callback3(title(render[40]).GenericHeaderTitle, { title });
+            return outer1_13(title(render[40]).GenericHeaderTitle, { title });
           },
       headerTitleAlign: "center"
     };
-    obj4 = arg1(dependencyMap[38]);
+    obj4 = require("set");
     num = undefined;
     if (obj4.isIOS()) {
       num = 0;
     }
     obj1.headerStatusBarHeight = num;
-    obj5 = arg1(dependencyMap[41]);
+    obj5 = require("HeaderBackImage");
     obj1.headerLeft = obj5.getHeaderCloseButton(callback);
-    obj.children = tmp11(arg1(dependencyMap[39]).Header, obj1);
+    obj.children = tmp11(require("Background").Header, obj1);
     items1 = [, , , ];
     items1[0] = tmp9(tmp10, obj);
     tmp12 = null != render;
@@ -190,9 +197,9 @@ class ICYMIShareModal {
     }
     items1[1] = tmp12;
     obj3 = { rowMode: UserRowModes.TOGGLE, onSelectedDestinationChange: tmp[1], originDestination: global.originDestinationId };
-    tmp15 = importDefault(dependencyMap[42]);
-    sum = tmp6.bottom + importDefault(dependencyMap[12]).space.PX_8;
-    obj3.insetEnd = sum + importDefault(dependencyMap[12]).space.PX_96;
+    tmp15 = require("SearchableDestinationList");
+    sum = tmp6.bottom + require("_createForOfIteratorHelperLoose").space.PX_8;
+    obj3.insetEnd = sum + require("_createForOfIteratorHelperLoose").space.PX_96;
     obj3.disableGradient = true;
     obj3.disableStickySections = true;
     items1[2] = jsx(tmp15, obj3);
@@ -208,41 +215,29 @@ class ICYMIShareModal {
     return tmp7(tmp8, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-const DraftType = arg1(dependencyMap[5]).DraftType;
-let closure_9 = importDefault(dependencyMap[6]);
-const AbortCodes = arg1(dependencyMap[7]).AbortCodes;
-const UserRowModes = arg1(dependencyMap[8]).UserRowModes;
-const MessageSendLocation = arg1(dependencyMap[9]).MessageSendLocation;
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[10]));
-let obj = arg1(dependencyMap[11]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingTop: importDefault(dependencyMap[12]).space.PX_8 };
-obj.headerContainer = obj;
-const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[12]).radii.md, borderColor: importDefault(dependencyMap[12]).colors.BORDER_STRONG };
-obj.preview = obj1;
-obj.base = { position: "relative" };
-const tmp2 = arg1(dependencyMap[10]);
-obj.contentContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
-const obj2 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
-obj.footer = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingVertical: importDefault(dependencyMap[12]).space.PX_12, gap: importDefault(dependencyMap[12]).space.PX_12, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
-let closure_15 = obj.createStyles(obj);
-const obj3 = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, paddingVertical: importDefault(dependencyMap[12]).space.PX_12, gap: importDefault(dependencyMap[12]).space.PX_12, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[43]).fileFinishedImporting("modules/icymi/native/ICYMIShareModal.tsx");
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.headerContainer = _createForOfIteratorHelperLoose;
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
+_createForOfIteratorHelperLoose.preview = obj1;
+_createForOfIteratorHelperLoose.base = { position: "relative" };
+_createForOfIteratorHelperLoose.contentContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+let obj3 = { display: "flex", flexDirection: "row", alignItems: "flex-end", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.footer = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+let result = require("result").fileFinishedImporting("modules/icymi/native/ICYMIShareModal.tsx");
 
 export default ICYMIShareModal;
 export const GuildEventShareModal = function GuildEventShareModal(event) {
   event = event.event;
-  let obj = arg1(dependencyMap[13]);
+  let obj = require(8364) /* SHARE_EVENT_DETAILS_LINK */;
   obj = { guildId: event.guild_id, guildEventId: event.id };
   obj = {};
   const result = obj.SHARE_EVENT_DETAILS_LINK(obj);
-  const intl = arg1(dependencyMap[14]).intl;
-  obj.title = intl.string(arg1(dependencyMap[14]).t.7TVSLK);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["7TVSLK"]);
   let tmp4;
   if (null != event.channel_id) {
     const obj1 = { type: "channel", id: event.channel_id };
@@ -253,17 +248,17 @@ export const GuildEventShareModal = function GuildEventShareModal(event) {
   return closure_13(ICYMIShareModal, obj);
 };
 export const GameShareModal = function GameShareModal(content) {
-  const arg1 = content.content;
+  content = content.content;
   const obj = {};
-  const intl = arg1(dependencyMap[14]).intl;
-  obj.title = intl.string(arg1(dependencyMap[14]).t.59CWHK);
+  const intl = content(1212).intl;
+  obj.title = intl.string(content(1212).t["59CWHK"]);
   obj.linkText = "";
-  obj.forwardToChannel = () => {
+  obj.forwardToChannel = (() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_4(tmp);
     return function() {
       return callback(...arguments);
     };
-  }();
+  })();
   return callback2(ICYMIShareModal, obj);
 };

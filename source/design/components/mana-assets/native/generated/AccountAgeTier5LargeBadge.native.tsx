@@ -1,13 +1,13 @@
-// Module ID: 5823
-// Function ID: 49667
+// Module ID: 5828
+// Function ID: 49696
 // Name: AccountAgeTier5LargeBadge
-// Dependencies: []
+// Dependencies: [33, 5085, 5829, 2]
 // Exports: AccountAgeTier5LargeBadge
 
-// Module 5823 (AccountAgeTier5LargeBadge)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AccountAgeTier5LargeBadge.native.tsx");
+// Module 5828 (AccountAgeTier5LargeBadge)
+import { jsx } from "jsxProd";
+
+const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/AccountAgeTier5LargeBadge.native.tsx");
 
 export const AccountAgeTier5LargeBadge = function AccountAgeTier5LargeBadge(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const AccountAgeTier5LargeBadge = function AccountAgeTier5LargeBadge(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5829) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const AccountAgeTier5LargeBadge = function AccountAgeTier5LargeBadge(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

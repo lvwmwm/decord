@@ -1,12 +1,15 @@
-// Module ID: 3794
-// Function ID: 29596
+// Module ID: 3796
+// Function ID: 29601
 // Name: _importWithRetry
-// Dependencies: []
+// Dependencies: [5, 2]
 // Exports: importWithRetry, setAwaitOnline
 
-// Module 3794 (_importWithRetry)
+// Module 3796 (_importWithRetry)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
+const require = arg1;
 async function _importWithRetry(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let createPromise;
     let name;
     let webpackId;
@@ -14,23 +17,22 @@ async function _importWithRetry(arg0, arg1) {
     yield undefined;
     performance.mark("importWithRetry:start", { detail: { webpackId, name } });
     return yield createPromise();
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-let closure_1 = importDefault(dependencyMap[0]);
 function pausedPromise(arg0) {
-  const arg1 = arg0;
-  return new Promise((arg0) => setTimeout(arg0, arg0));
+  let closure_0 = arg0;
+  return new Promise((arg0) => setTimeout(arg0, closure_0));
 }
 function awaitOnline() {
   return Promise.resolve();
 }
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/packages/code-splitting/importWithRetry.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/code-splitting/importWithRetry.tsx");
 
 export { awaitOnline };
 export function setAwaitOnline(arg0) {
-  const awaitOnline = arg0;
+  let closure_3 = arg0;
 }
 export { pausedPromise };
 export const importWithRetry = function importWithRetry(arg0) {

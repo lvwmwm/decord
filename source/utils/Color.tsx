@@ -1,16 +1,20 @@
-// Module ID: 3973
-// Function ID: 32961
+// Module ID: 3975
+// Function ID: 32966
 // Name: hslToRgb
-// Dependencies: []
+// Dependencies: [57, 6, 7, 2]
 
-// Module 3973 (hslToRgb)
+// Module 3975 (hslToRgb)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 function hslToRgb(alpha) {
   const hue = alpha.hue;
   const result = alpha.lightness / 255;
   const result1 = alpha.saturation / 255;
   const result2 = (1 - Math.abs(2 * result - 1)) * result1;
   const result3 = result2 * (1 - Math.abs(hue / 60 % 2 - 1));
-  let closure_0 = result - result2 / 2;
+  let _slicedToArray = result - result2 / 2;
   if (hue < 60) {
     const items = [result2, result3, 0];
     let items5 = items;
@@ -18,10 +22,10 @@ function hslToRgb(alpha) {
     const items1 = [result3, result2, 0];
     items5 = items1;
   } else if (hue < 180) {
-    const items2 = [0.229, result2, result3];
+    const items2 = [0, result2, result3];
     items5 = items2;
   } else if (hue < 240) {
-    const items3 = [0.229, result3, result2];
+    const items3 = [0, result3, result2];
     items5 = items3;
   } else if (hue < 300) {
     const items4 = [result3, 0, result2];
@@ -29,18 +33,15 @@ function hslToRgb(alpha) {
   } else {
     items5 = [result2, 0, result3];
   }
-  const mapped = items5.map((arg0) => Math.round(255 * (arg0 + closure_0)));
+  const mapped = items5.map((arg0) => Math.round(255 * (arg0 + _slicedToArray)));
   return { red: mapped[0], green: mapped[1], blue: mapped[2], alpha: alpha.alpha };
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = /^#[0-9a-f]{3,8}$/i;
-let closure_4 = /^((?:rgb|hsl)a?)\s*\(([^)]*)\)/i;
-const tmp2 = () => {
+const re3 = /^#[0-9a-f]{3,8}$/i;
+const re4 = /^((?:rgb|hsl)a?)\s*\(([^)]*)\)/i;
+let tmp2 = (() => {
   class Color {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = closure_1(this, Color);
+      tmp = outer1_1(this, Color);
       this.red = arg0;
       this.green = arg1;
       this.blue = arg2;
@@ -48,7 +49,6 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = Color;
   let obj = {
     key: "toHexString",
     value() {
@@ -75,7 +75,7 @@ const tmp2 = () => {
       return sum + text3;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "toHSL",
     value() {
@@ -147,9 +147,9 @@ const tmp2 = () => {
       key: "parseString",
       value(str) {
         const self = this;
-        if (null != str.match(closure_4)) {
+        if (null != str.match(outer1_4)) {
           let parseColorFnStringResult = self.parseColorFnString(str);
-        } else if (null != str.match(closure_3)) {
+        } else if (null != str.match(outer1_3)) {
           parseColorFnStringResult = self.parseHexString(str);
         }
         return parseColorFnStringResult;
@@ -171,8 +171,8 @@ const tmp2 = () => {
     {
       key: "parseHexString",
       value(str) {
-        if (null != str.match(closure_3)) {
-          const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000288156418522828, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026899267453462];
+        if (null != str.match(outer1_3)) {
+          const items = [6, 8];
           if (!items.includes(str.length)) {
             const replaced = str.replace("#", "");
             let str3 = replaced;
@@ -213,13 +213,13 @@ const tmp2 = () => {
         let tmp4;
         let tmp5;
         let tmp6;
-        let match = str.match(closure_4);
+        let match = str.match(outer1_4);
         if (null == match) {
           match = [];
         }
         const tmp = Color(match, 3);
-        const Color = str;
-        if (null != tmp[1]) {
+        str = tmp[1];
+        if (null != str) {
           if (null != str2) {
             const parts = str2.split(/\s*[,/\s]\s*/);
             const mapped = parts.map((str) => str.replace(",", "").trim());
@@ -246,9 +246,9 @@ const tmp2 = () => {
                       const _parseFloat2 = parseFloat;
                       parsed = 57.3 * parseFloat(arg0);
                     }
-                    const obj3 = /rad$/;
+                    obj3 = /rad$/;
                   }
-                  const obj2 = /turn$/;
+                  obj2 = /turn$/;
                 }
                 return parsed;
               }
@@ -256,12 +256,12 @@ const tmp2 = () => {
             if ("hsl" === str.substr(0, 3)) {
               const obj = {};
               [obj.hue, obj.saturation, obj.lightness, obj.alpha] = mapped1;
-              const tmp16 = callback2(obj);
-              const prototype2 = Color.prototype;
-              const tmp20 = new Color(tmp16.red, tmp16.green, tmp16.blue, tmp16.alpha);
+              const tmp16 = outer1_5(obj);
+              const prototype2 = str.prototype;
+              const tmp20 = new str(tmp16.red, tmp16.green, tmp16.blue, tmp16.alpha);
               return tmp20;
             } else {
-              let tmp3 = Color;
+              let tmp3 = str;
               [tmp4, tmp5, tmp6] = mapped1;
               let num2 = 1;
               if ("number" === typeof mapped1[3]) {
@@ -277,8 +277,8 @@ const tmp2 = () => {
     }
   ];
   return callback(Color, items, items1);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("utils/Color.tsx");
+})();
+let result = require("_defineProperties").fileFinishedImporting("utils/Color.tsx");
 
 export default tmp2;
 export { hslToRgb };

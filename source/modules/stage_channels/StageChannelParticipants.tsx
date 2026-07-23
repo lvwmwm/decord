@@ -1,19 +1,23 @@
-// Module ID: 4954
-// Function ID: 42553
+// Module ID: 4957
+// Function ID: 42571
 // Name: sortKey
-// Dependencies: [0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 4149, 1348, 4958, 1917, 3767, 1849, 4146, 4203, 4954, 1353, 4960, 4314, 3754, 4319, 4961, 4194, 2]
 
-// Module 4954 (sortKey)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import closure_11 from "__exportStarResult1";
-import { getComparator } from "__exportStarResult1";
-import closure_13 from "__exportStarResult1";
+// Module 4957 (sortKey)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { getComparator } from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function sortKey(speaker) {
   let connectedOn;
   let role;
@@ -48,7 +52,7 @@ function sortKey(speaker) {
     num = position;
   }
   const combined = "" + num;
-  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + importDefault(dependencyMap[12])(userNick, user);
+  return "" + str2 + str3 + str4 + str + combined.padStart(3, "0") + connectedOn + importDefault(4960)(userNick, user);
 }
 function requestToSpeakSortKey(user) {
   user = user.user;
@@ -63,9 +67,9 @@ function requestToSpeakSortKey(user) {
   return id;
 }
 function isRequestedToSpeakAll(rtsState) {
-  let tmp = rtsState === arg1(dependencyMap[13]).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+  let tmp = rtsState === require(4314) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK;
   if (!tmp) {
-    tmp = rtsState === arg1(dependencyMap[13]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+    tmp = rtsState === require(4314) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   }
   return tmp;
 }
@@ -82,7 +86,7 @@ function getParticipantIndex(arg0) {
   if (isRequestedToSpeakAll(rtsState)) {
     items.push(obj.ALL_REQUESTED_TO_SPEAK);
   }
-  if (rtsState === arg1(dependencyMap[13]).RequestToSpeakStates.REQUESTED_TO_SPEAK) {
+  if (rtsState === require(4314) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK) {
     items.push(obj.REQUESTED_TO_SPEAK_ONLY);
   }
   if (speaker) {
@@ -105,22 +109,19 @@ function getParticipantIndex(arg0) {
   }
   return items;
 }
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_14 = importDefault(dependencyMap[11]);
 let obj = { SPEAKER: "SPEAKER", AUDIENCE: "AUDIENCE", NO_ROLE: "NO_ROLE", ALL_REQUESTED_TO_SPEAK: "ALL_REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_ONLY: "REQUESTED_TO_SPEAK_ONLY", BLOCKED: "BLOCKED", IGNORED: "IGNORED", FRIEND: "FRIEND", SELECTED: "SELECTED", MEDIA: "MEDIA" };
 obj = { VOICE: "VOICE", STREAM: "STREAM" };
-const tmp2 = () => {
+let tmp2 = (() => {
   class StageChannelParticipants {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, StageChannelParticipants);
+      tmp = outer1_3(this, StageChannelParticipants);
       this.participants = {};
-      secondaryIndexMap = new StageChannelParticipants(closure_2[14]).SecondaryIndexMap(closure_20, closure_17);
+      secondaryIndexMap = new StageChannelParticipants(outer1_2[14]).SecondaryIndexMap(outer1_20, outer1_17);
       this._participantsIndex = secondaryIndexMap;
-      secondaryIndexMap1 = new StageChannelParticipants(closure_2[14]).SecondaryIndexMap(() => [], closure_18);
+      secondaryIndexMap1 = new StageChannelParticipants(outer1_2[14]).SecondaryIndexMap(() => [], outer1_18);
       this._requestToSpeakIndex = secondaryIndexMap1;
       this.channelId = arg0;
-      channel = closure_6.getChannel(arg0);
+      channel = outer1_6.getChannel(arg0);
       guildId = undefined;
       if (null != channel) {
         guildId = channel.getGuildId();
@@ -129,24 +130,23 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = StageChannelParticipants;
   let obj = {
     key: "_getParticipantsForUser",
     value(id) {
       const self = this;
       const items = [];
-      const voiceStateForChannel = store2.getVoiceStateForChannel(this.channelId, id);
+      const voiceStateForChannel = outer1_11.getVoiceStateForChannel(this.channelId, id);
       if (null == voiceStateForChannel) {
         return items;
       } else {
-        const user = user.getUser(id);
+        const user = outer1_10.getUser(id);
         if (null == user) {
           let isPublicResult = null != self.guildId;
           if (isPublicResult) {
-            isPublicResult = _public.isPublic(self.channelId);
+            isPublicResult = outer1_14.isPublic(self.channelId);
           }
           if (isPublicResult) {
-            const member = closure_7.requestMember(self.guildId, id);
+            const member = outer1_7.requestMember(self.guildId, id);
           }
           return items;
         } else {
@@ -156,24 +156,24 @@ const tmp2 = () => {
           }
           let member1 = null;
           if (null != self.guildId) {
-            member1 = member.getMember(self.guildId, id);
+            member1 = outer1_8.getMember(self.guildId, id);
           }
           let nick;
           if (null != member1) {
             nick = member1.nick;
           }
           if (null == nick) {
-            let obj = callback(closure_2[15]);
+            let obj = outer1_1(outer1_2[15]);
             nick = obj.getName(self.guildId, self.channelId, user);
           }
-          obj = { user, userNick: callback(closure_2[15]).getName(self.guildId, self.channelId, user), nick, comparator: callback3(voiceStateForChannel, nick), voiceState: voiceStateForChannel };
-          const obj3 = callback(closure_2[15]);
-          obj.role = StageChannelParticipants(closure_2[16]).getHighestHoistedRole(self.guildId, id);
-          obj.speaker = speaker.isSpeaker(id, self.channelId);
+          obj = { user, userNick: outer1_1(outer1_2[15]).getName(self.guildId, self.channelId, user), nick, comparator: outer1_12(voiceStateForChannel, nick), voiceState: voiceStateForChannel };
+          const obj3 = outer1_1(outer1_2[15]);
+          obj.role = StageChannelParticipants(outer1_2[16]).getHighestHoistedRole(self.guildId, id);
+          obj.speaker = outer1_13.isSpeaker(id, self.channelId);
           obj.member = member1;
-          obj.blocked = closure_9.isBlocked(user.id);
-          obj.ignored = closure_9.isIgnored(user.id);
-          obj.isFriend = closure_9.isFriend(user.id);
+          obj.blocked = outer1_9.isBlocked(user.id);
+          obj.ignored = outer1_9.isIgnored(user.id);
+          obj.isFriend = outer1_9.isFriend(user.id);
           let connectedOn;
           if (null != first) {
             connectedOn = first.connectedOn;
@@ -185,25 +185,25 @@ const tmp2 = () => {
           obj.connectedOn = connectedOn;
           obj = {};
           const merged = Object.assign(obj);
-          obj["type"] = constants.VOICE;
+          obj["type"] = outer1_16.VOICE;
           obj["id"] = user.id;
-          const obj4 = StageChannelParticipants(closure_2[16]);
-          obj["rtsState"] = StageChannelParticipants(closure_2[13]).getAudienceRequestToSpeakState(voiceStateForChannel);
+          const obj4 = StageChannelParticipants(outer1_2[16]);
+          obj["rtsState"] = StageChannelParticipants(outer1_2[13]).getAudienceRequestToSpeakState(voiceStateForChannel);
           items.push(obj);
-          let streamForUser = authStore.getStreamForUser(id, self.guildId);
+          let streamForUser = outer1_5.getStreamForUser(id, self.guildId);
           if (null == streamForUser) {
-            streamForUser = authStore.getActiveStreamForUser(id, self.guildId);
+            streamForUser = outer1_5.getActiveStreamForUser(id, self.guildId);
           }
           if (null != streamForUser) {
             if (streamForUser.channelId === self.channelId) {
               const obj1 = {};
-              const obj7 = StageChannelParticipants(closure_2[17]);
+              const obj7 = StageChannelParticipants(outer1_2[17]);
               const merged1 = Object.assign(obj);
-              obj1["id"] = StageChannelParticipants(closure_2[17]).encodeStreamKey(streamForUser);
-              obj1["type"] = constants.STREAM;
-              obj1["rtsState"] = StageChannelParticipants(closure_2[13]).RequestToSpeakStates.NONE;
+              obj1["id"] = StageChannelParticipants(outer1_2[17]).encodeStreamKey(streamForUser);
+              obj1["type"] = outer1_16.STREAM;
+              obj1["rtsState"] = StageChannelParticipants(outer1_2[13]).RequestToSpeakStates.NONE;
               items.push(obj1);
-              const encodeStreamKeyResult = StageChannelParticipants(closure_2[17]).encodeStreamKey(streamForUser);
+              const encodeStreamKeyResult = StageChannelParticipants(outer1_2[17]).encodeStreamKey(streamForUser);
             }
           }
           return items;
@@ -211,13 +211,13 @@ const tmp2 = () => {
       }
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "updateParticipant",
     value(arg0) {
-      const StageChannelParticipants = this;
-      const arr = this.participants[arg0];
-      const result = this._getParticipantsForUser(arg0, arr);
+      const self = this;
+      let closure_1 = arg0;
+      let result = this._getParticipantsForUser(arg0, arr);
       let flag = null != arr;
       if (!flag) {
         flag = 0 !== result.length;
@@ -234,14 +234,14 @@ const tmp2 = () => {
         const item1 = result.forEach((id) => {
           const _participantsIndex = self._participantsIndex;
           const result = _participantsIndex.set(id.id, id);
-          if (id.id === id) {
-            if (callback(id.rtsState)) {
+          if (id.id === closure_1) {
+            if (outer2_19(id.rtsState)) {
               const _requestToSpeakIndex2 = self._requestToSpeakIndex;
-              const result1 = _requestToSpeakIndex2.set(id, id);
+              const result1 = _requestToSpeakIndex2.set(closure_1, id);
             }
           }
           const _requestToSpeakIndex = self._requestToSpeakIndex;
-          _requestToSpeakIndex.delete(id);
+          _requestToSpeakIndex.delete(closure_1);
         });
         this.participants[arg0] = result;
         flag = true;
@@ -253,14 +253,14 @@ const tmp2 = () => {
   obj = {
     key: "rebuild",
     value() {
-      const self = this;
-      const StageChannelParticipants = this;
-      const channel = store.getChannel(this.channelId);
+      let self = this;
+      self = this;
+      const channel = outer1_6.getChannel(this.channelId);
       if (null != channel) {
         if (channel.isGuildStageVoice()) {
           const _Set = Set;
           const _Object = Object;
-          const set = new Set(Object.keys(store2.getVoiceStatesForChannel(channel.id)));
+          const set = new Set(Object.keys(outer1_11.getVoiceStatesForChannel(channel.id)));
           const _participantsIndex = self._participantsIndex;
           _participantsIndex.clear();
           const _requestToSpeakIndex = self._requestToSpeakIndex;
@@ -320,8 +320,8 @@ const tmp2 = () => {
     }
   };
   return callback(StageChannelParticipants, items);
-}();
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/stage_channels/StageChannelParticipants.tsx");
+})();
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelParticipants.tsx");
 
 export default tmp2;
 export const StageChannelParticipantNamedIndex = obj;

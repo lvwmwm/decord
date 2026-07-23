@@ -1,91 +1,91 @@
-// Module ID: 13526
-// Function ID: 102612
+// Module ID: 13640
+// Function ID: 104768
 // Name: EditCredentialModal
-// Dependencies: [31, 27, 12557, 33, 4126, 689, 5489, 3828, 5162, 5151, 1212, 3832, 566, 13533, 4537, 4124]
+// Dependencies: [57, 31, 33, 4130, 689, 1456, 5087, 7495, 1212, 1273, 4543, 5594, 3831, 9670, 4091, 2]
 // Exports: default
 
-// Module 13526 (EditCredentialModal)
-import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_33 from "module_33";
-import Text from "Text";
+// Module 13640 (EditCredentialModal)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ jsx: closure_5, jsxs: closure_6 } = _isNativeReflectConstruct);
-module_33 = {};
-module_33 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-module_33.inputField = module_33;
-module_33.form = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-module_33 = module_33.createStyles(module_33);
-const result = Text.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnEditStep.tsx");
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.inputField = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.form = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let result = require("jsxProd").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnEditStep.tsx");
 
 export default function EditCredentialModal(credential) {
   credential = credential.credential;
-  const arg1 = credential;
-  const tmp = module_33();
-  let obj = arg1(closure_2[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = credential(1456);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  const tmp3 = callback(React.useState(false), 2);
+  const tmp3 = first1(React.useState(false), 2);
   const first = tmp3[0];
-  closure_2 = tmp3[1];
-  const tmp5 = callback(React.useState(""), 2);
-  const first1 = tmp5[0];
-  const callback = first1;
-  const tmp7 = callback(React.useState(null), 2);
-  const React = tmp7[1];
+  const dependencyMap = tmp3[1];
+  const tmp5 = first1(React.useState(""), 2);
+  first1 = tmp5[0];
+  const tmp7 = first1(React.useState(null), 2);
+  React = tmp7[1];
   const items = [navigation];
   const layoutEffect = React.useLayoutEffect(() => {
     const obj = {
-      headerLeft: credential(closure_2[6]).getHeaderBackButton(() => {
-
+      headerLeft: credential(5087).getHeaderBackButton(() => {
+        outer1_1.pop();
       })
     };
     navigation.setOptions(obj);
   }, items);
   obj = { style: tmp.form };
   obj = { showTopContainer: false, value: first1, onChange: tmp5[1], style: tmp.inputField, error: tmp7[0] };
-  const intl = arg1(closure_2[8]).intl;
-  obj.title = intl.string(arg1(closure_2[8]).t.Jzd+z/);
+  let intl = credential(1212).intl;
+  obj.title = intl.string(credential(1212).t["Jzd+z/"]);
   obj.placeholder = credential.name;
   obj.disabled = first;
-  obj.clearButtonVisibility = arg1(closure_2[9]).ClearButtonVisibility.WITH_CONTENT;
+  obj.clearButtonVisibility = credential(1273).ClearButtonVisibility.WITH_CONTENT;
   obj.autoFocus = true;
   obj.showBorder = true;
   obj.required = true;
   obj.large = true;
-  const items1 = [callback2(arg1(closure_2[7]).FormInput, obj), callback2(arg1(closure_2[7]).FormDivider, {}), ];
+  const items1 = [callback(credential(7495).FormInput, obj), callback(credential(7495).FormDivider, {}), ];
   const obj1 = {
     onPress() {
-      callback(true);
-      callback2(null);
-      const result = credential(callback[11]).editWebAuthnCredential(credential.id, first1);
-      const obj = credential(callback[11]);
+      dependencyMap(true);
+      callback(null);
+      const result = credential(5594).editWebAuthnCredential(credential.id, first1);
+      let obj = credential(5594);
       const nextPromise = result.then(() => {
-        let obj = lib(closure_2[12]);
+        let obj = navigation(3831);
         obj = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY" };
-        const intl = callback(closure_2[8]).intl;
-        obj.content = intl.string(callback(closure_2[8]).t.IV13mH);
-        obj.icon = lib(closure_2[13]);
-        obj.IconComponent = callback(closure_2[14]).CircleCheckIcon;
+        const intl = credential(1212).intl;
+        obj.content = intl.string(credential(1212).t.IV13mH);
+        obj.icon = navigation(9670);
+        obj.IconComponent = credential(4091).CircleCheckIcon;
         obj.iconColor = "status-positive";
         obj.open(obj);
-        lib.popToTop();
+        outer1_1.popToTop();
       });
       result.then(() => {
-        let obj = lib(closure_2[12]);
+        let obj = navigation(3831);
         obj = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY" };
-        const intl = callback(closure_2[8]).intl;
-        obj.content = intl.string(callback(closure_2[8]).t.IV13mH);
-        obj.icon = lib(closure_2[13]);
-        obj.IconComponent = callback(closure_2[14]).CircleCheckIcon;
+        const intl = credential(1212).intl;
+        obj.content = intl.string(credential(1212).t.IV13mH);
+        obj.icon = navigation(9670);
+        obj.IconComponent = credential(4091).CircleCheckIcon;
         obj.iconColor = "status-positive";
         obj.open(obj);
-        lib.popToTop();
+        outer1_1.popToTop();
       }).catch((body) => {
-        callback3(body.body.message);
+        outer1_4(body.body.message);
       }).finally(() => {
-        callback2(false);
+        outer1_2(false);
       });
     }
   };
@@ -96,10 +96,10 @@ export default function EditCredentialModal(credential) {
   obj1.disabled = tmp11;
   obj1.loading = first;
   obj1.size = "lg";
-  const intl2 = arg1(closure_2[8]).intl;
-  obj1.text = intl2.string(arg1(closure_2[8]).t.7asiR3);
+  const intl2 = credential(1212).intl;
+  obj1.text = intl2.string(credential(1212).t["7asiR3"]);
   obj1.grow = true;
-  items1[2] = callback2(arg1(closure_2[10]).Button, obj1);
+  items1[2] = callback(credential(4543).Button, obj1);
   obj.children = items1;
-  return closure_6(arg1(closure_2[7]).Form, obj);
+  return closure_6(credential(7495).Form, obj);
 };

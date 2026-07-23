@@ -1,11 +1,11 @@
 // Module ID: 1746
-// Function ID: 19540
+// Function ID: 19541
 // Name: useWorkletCallback
-// Dependencies: []
+// Dependencies: [31]
 // Exports: useWorkletCallback
 
 // Module 1746 (useWorkletCallback)
-require(dependencyMap[0]).useCallback;
+require("result").useCallback;
 
 export const useWorkletCallback = function useWorkletCallback(fn, items) {
   if (null == items) {

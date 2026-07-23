@@ -1,75 +1,72 @@
-// Module ID: 15260
-// Function ID: 115169
-// Dependencies: []
+// Module ID: 15377
+// Function ID: 117343
+// Dependencies: [5, 31, 11410, 10077, 9103, 9133, 33, 10078, 566, 15340, 15337, 4140, 10076, 15378, 15333, 15344, 2]
 
-// Module 15260
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ SearchListItemTypes: closure_7, USER_ESTIMATED_ITEM_SIZE: closure_8 } = arg1(dependencyMap[4]));
-let closure_9 = arg1(dependencyMap[5]).SearchResultContentEntityTypes;
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp2 = arg1(dependencyMap[4]);
+// Module 15377
+import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations";
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchResultContentEntityTypes as closure_9 } from "SearchEntrypointAnalyticsLocations";
+import { jsx } from "jsxProd";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ SearchListItemTypes: closure_7, USER_ESTIMATED_ITEM_SIZE: closure_8 } = SearchAutocompleteSelectAnalyticsActions);
 const memoResult = importAllResult.memo(function PeopleScreen(searchContext) {
   searchContext = searchContext.searchContext;
-  const arg1 = searchContext;
-  let obj = arg1(dependencyMap[7]);
+  let obj = searchContext(stateFromStores[7]);
   const importDefault = obj.getSearchContextId(searchContext);
-  let obj1 = arg1(dependencyMap[8]);
-  const items = [closure_5];
-  const stateFromStores = obj1.useStateFromStores(items, () => onPressGroupDMItem.getResults(closure_1));
-  const dependencyMap = stateFromStores;
-  const items1 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items1, () => onPressDMItem.isInitialSearchQuery(searchContext));
-  let closure_3 = stateFromStores1;
-  const obj3 = arg1(dependencyMap[8]);
+  let obj1 = searchContext(stateFromStores[8]);
+  let items = [onPressGroupDMItem];
+  stateFromStores = obj1.useStateFromStores(items, () => onPressGroupDMItem.getResults(closure_1));
+  const items1 = [onPressDMItem];
+  const stateFromStores1 = searchContext(stateFromStores[8]).useStateFromStores(items1, () => onPressDMItem.isInitialSearchQuery(searchContext));
+  const obj3 = searchContext(stateFromStores[8]);
   obj = { placeholderHeight: callback1, numColumns: 1 };
-  const fullscreenPlaceholderCount = arg1(dependencyMap[9]).useFullscreenPlaceholderCount(obj);
-  const obj4 = arg1(dependencyMap[9]);
-  const onPressGroupDMItem = arg1(dependencyMap[10]).useOnPressGroupDMItem({ searchContext });
-  closure_5 = onPressGroupDMItem;
-  const obj6 = arg1(dependencyMap[10]);
-  const onPressDMItem = arg1(dependencyMap[10]).useOnPressDMItem({ searchContext });
-  closure_6 = onPressDMItem;
+  const fullscreenPlaceholderCount = searchContext(stateFromStores[9]).useFullscreenPlaceholderCount(obj);
+  const obj4 = searchContext(stateFromStores[9]);
+  onPressGroupDMItem = searchContext(stateFromStores[10]).useOnPressGroupDMItem({ searchContext });
+  const obj6 = searchContext(stateFromStores[10]);
+  onPressDMItem = searchContext(stateFromStores[10]).useOnPressDMItem({ searchContext });
   const items2 = [onPressDMItem, searchContext];
-  const callback = importAllResult.useCallback(() => {
+  const callback = fullscreenPlaceholderCount.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = stateFromStores1(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items2);
+  })(), items2);
   const items3 = [onPressGroupDMItem, searchContext];
-  const callback1 = importAllResult.useCallback((channelId, index) => {
+  callback1 = fullscreenPlaceholderCount.useCallback((channelId, index) => {
     let obj = callback(stateFromStores[12]);
-    obj = { searchContext, channelId, index, entityType: constants.CHANNEL };
+    obj = { searchContext, channelId, index, entityType: outer1_9.CHANNEL };
     const result = obj.trackSearchResultClicked(obj);
     onPressGroupDMItem(channelId);
   }, items3);
   const items4 = [callback, callback1, stateFromStores1, fullscreenPlaceholderCount, stateFromStores];
-  const memo = importAllResult.useMemo(() => {
-    const items = [];
-    const searchContext = items;
-    const item = stateFromStores.forEach((title) => {
+  const memo = fullscreenPlaceholderCount.useMemo(() => {
+    let items = [];
+    let item = stateFromStores.forEach((title) => {
       title = title.title;
-      let items = title;
-      items = title.items;
+      const items = title.items;
       if (null != title) {
         if (items.length > 0) {
-          let obj = { type: constants.SECTION };
+          let obj = { type: callback.SECTION };
           obj = { title };
           obj.props = obj;
-          items.push(obj);
+          title.push(obj);
         }
       }
       const item = items.forEach((type) => {
         let firstMatch;
         let user;
-        const title = arg1;
+        let closure_0 = arg1;
         if ("user" in type) {
           ({ user, firstMatch } = type);
-          let obj = { type: constants.DM, section: title };
+          let obj = { type: callback.DM, section: closure_0 };
           obj = { type: type.type, user };
           let tmp8;
           if (user.username !== firstMatch) {
@@ -77,16 +74,16 @@ const memoResult = importAllResult.memo(function PeopleScreen(searchContext) {
           }
           obj.nickname = tmp8;
           obj.onPress = function onPress(arg0) {
-            return callback(arg0, arg1);
+            return outer3_7(arg0, closure_0);
           };
           obj.props = obj;
           title.push(obj);
         } else {
-          obj = { type: constants.GROUP_DM, section: title };
+          obj = { type: callback.GROUP_DM, section: closure_0 };
           const obj1 = {
             channel: type,
             onPress(arg0) {
-                return callback2(arg0, arg1);
+                return outer3_8(arg0, closure_0);
               }
           };
           obj.props = obj1;
@@ -100,30 +97,30 @@ const memoResult = importAllResult.memo(function PeopleScreen(searchContext) {
         if (0 < fullscreenPlaceholderCount) {
           do {
             let obj = {};
-            let tmp4 = closure_7;
-            obj.type = closure_7.MESSAGE_PLACEHOLDER;
+            let tmp4 = callback;
+            obj.type = callback.MESSAGE_PLACEHOLDER;
             let _HermesInternal = HermesInternal;
             obj.key = "message-placeholder-" + num2;
             let arr = items.push(obj);
             num2 = num2 + 1;
-            let tmp6 = closure_4;
-          } while (num2 < closure_4);
+            let tmp6 = fullscreenPlaceholderCount;
+          } while (num2 < fullscreenPlaceholderCount);
         }
       }
     }
     return items;
   }, items4);
-  const obj7 = arg1(dependencyMap[10]);
-  const messageTabCountsErrorText = arg1(dependencyMap[13]).useMessageTabCountsErrorText({ searchContext });
+  const obj7 = searchContext(stateFromStores[10]);
+  const messageTabCountsErrorText = searchContext(stateFromStores[13]).useMessageTabCountsErrorText({ searchContext });
   if (null != messageTabCountsErrorText) {
     obj = { text: messageTabCountsErrorText };
-    let tmp13 = jsx(importDefault(dependencyMap[14]), obj);
+    let tmp13 = jsx(importDefault(stateFromStores[14]), { text: messageTabCountsErrorText });
   } else {
     obj1 = { data: memo };
-    tmp13 = jsx(importDefault(dependencyMap[15]), obj1);
+    tmp13 = jsx(importDefault(stateFromStores[15]), { data: memo });
   }
   return tmp13;
 });
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/search/native/components/tabs/pages/PeopleScreen.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/tabs/pages/PeopleScreen.tsx");
 
 export default memoResult;

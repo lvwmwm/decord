@@ -1,29 +1,31 @@
-// Module ID: 12246
-// Function ID: 93927
+// Module ID: 12360
+// Function ID: 96078
 // Name: launchChrome
-// Dependencies: [5, 664]
+// Dependencies: [4450, 2]
 
-// Module 12246 (launchChrome)
-import { os } from "asyncGeneratorStep";
+// Module 12360 (launchChrome)
+import { os } from "capitalize";
 
 function launchChrome(href) {
+  let closure_0 = arg1;
   function handleBlur() {
-    let closure_1 = true;
+    let c1 = true;
   }
-  let closure_1 = false;
+  let c1 = false;
   const listener = window.addEventListener("blur", handleBlur);
   location.href = href;
   const timerId = setTimeout(() => {
     const removed = window.removeEventListener("blur", handleBlur);
-    arg1(closure_1);
+    callback(c1);
   }, 1000);
 }
 function launchFirefox(str) {
+  let closure_0 = arg1;
   if (str.startsWith("discord:")) {
     const _document = document;
     if (null == body) {
       const _process3 = process;
-      return process.nextTick(() => arg1(false));
+      return process.nextTick(() => callback(false));
     } else {
       const _document2 = document;
       const element = <iframe />;
@@ -32,7 +34,7 @@ function launchFirefox(str) {
         element.contentWindow.location.href = str;
       }
       const _process2 = process;
-      process.nextTick(() => arg1(true));
+      process.nextTick(() => callback(true));
       const _window = window;
       const timerId = window.setTimeout(() => {
         let parentElement;
@@ -48,44 +50,45 @@ function launchFirefox(str) {
         }
       }, 1000);
     }
-    const obj = body;
+    obj = body;
   } else {
     const _location = location;
     location.href = str;
     const _process = process;
-    return process.nextTick(() => arg1(true));
+    return process.nextTick(() => callback(true));
   }
 }
 function launchSteam(arg0, arg1) {
   arg1(false);
 }
 function launchMobile(href) {
+  let closure_0 = arg1;
   location.href = href;
-  process.nextTick(() => arg1(true));
+  process.nextTick(() => callback(true));
 }
-const obj = {};
+let obj = {};
 let family;
 if (null != os) {
   family = os.family;
 }
 if ("Android" !== family) {
-  const os2 = require("asyncGeneratorStep").os;
+  const os2 = require("capitalize").os;
   let family1;
   if (null != os2) {
     family1 = os2.family;
   }
   if ("iOS" !== family1) {
-    if ("Gecko" === require("asyncGeneratorStep").layout) {
+    if ("Gecko" === require("capitalize").layout) {
       launchChrome = launchFirefox;
-    } else if (null != require("asyncGeneratorStep").ua) {
-      const ua = require("asyncGeneratorStep").ua;
+    } else if (null != require("capitalize").ua) {
+      const ua = require("capitalize").ua;
       if (-1 !== ua.indexOf("Valve Steam GameOverlay")) {
         launchChrome = launchSteam;
       }
     }
   }
   obj.launch = launchChrome;
-  const result = require("module_664").fileFinishedImporting("utils/web/ProtocolUtils.tsx");
+  const result = require("set").fileFinishedImporting("utils/web/ProtocolUtils.tsx");
   exports.default = obj;
 }
 launchChrome = launchMobile;

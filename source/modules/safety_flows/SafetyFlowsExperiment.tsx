@@ -1,13 +1,14 @@
-// Module ID: 16078
-// Function ID: 123520
+// Module ID: 16195
+// Function ID: 125693
 // Name: isEligibleForSafetyFlowsExperiment
-// Dependencies: []
+// Dependencies: [1325, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 16078 (isEligibleForSafetyFlowsExperiment)
-const obj = { y: true, DateToSystemTimezoneSetter: true, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/safety_flows/SafetyFlowsExperiment.tsx");
+// Module 16195 (isEligibleForSafetyFlowsExperiment)
+const obj = { name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const tmp2 = require("getUnitId")(obj);
+let closure_0 = tmp2;
+const result = require("set").fileFinishedImporting("modules/safety_flows/SafetyFlowsExperiment.tsx");
 
 export default tmp2;
 export const isEligibleForSafetyFlowsExperiment = function isEligibleForSafetyFlowsExperiment(location) {

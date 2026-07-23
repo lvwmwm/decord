@@ -1,25 +1,23 @@
-// Module ID: 9656
-// Function ID: 75230
-// Dependencies: []
+// Module ID: 9663
+// Function ID: 75271
+// Dependencies: [653, 621, 675, 682, 9664, 477, 2]
 
-// Module 9656
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[1]);
-let closure_4 = _module.create(() => ({}));
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/device/native/DeviceMedia.tsx");
+// Module 9663
+import { AnalyticEvents } from "ME";
+import keys from "keys";
+
+let closure_4 = keys.create(() => ({ assets: null, page: 0, hasReachedEnd: false, lastAssetIndex: 0 }));
+const result = require("expandLocation").fileFinishedImporting("modules/device/native/DeviceMedia.tsx");
 
 export default {
   getNextAssetPage(arg0) {
     let batchSize;
     let extensions;
-    let closure_2;
+    let dependencyMap;
     ({ batchSize, extensions } = arg0);
-    const state = state.getState();
+    state = state.getState();
     const assets = state.assets;
-    const require = assets;
     const lastAssetIndex = state.lastAssetIndex;
-    const importDefault = lastAssetIndex;
     if (null != assets) {
       if (!state.hasReachedEnd) {
         if (null != assets.edges[assets.edges.length - 1]) {
@@ -28,9 +26,9 @@ export default {
             const image = node.image;
           }
         }
-        let obj = require(closure_2[5]);
+        let obj = assets(477);
         if (!obj.isIOS()) {
-          closure_2 = tmp2 + 1;
+          dependencyMap = tmp2 + 1;
           obj = {
             batchSize,
             endCursor: tmp3,
@@ -38,7 +36,8 @@ export default {
             lastNodeImageUri: image.uri,
             extensions,
             onFetched(edges) {
-                    function applyStateUpdate(edges) {
+                    (function applyStateUpdate(edges) {
+                      let closure_0 = edges;
                       let length;
                       if (null != edges) {
                         edges = edges.edges;
@@ -50,8 +49,8 @@ export default {
                       if (null != length) {
                         num = length;
                       }
-                      const callback = callback + num;
-                      if (null != edges) {
+                      let closure_1 = outer1_1 + num;
+                      if (null != outer1_0) {
                         let tmp3 = null == edges;
                         if (!tmp3) {
                           edges = edges.edges;
@@ -60,54 +59,55 @@ export default {
                         if (!tmp3) {
                           const unshift = arr2.unshift;
                           const items = [];
-                          HermesBuiltin.arraySpread(edges.edges, 0);
+                          HermesBuiltin.arraySpread(outer1_0.edges, 0);
                           HermesBuiltin.apply(items, arr2);
                         }
                       }
-                      let obj = edges(tmp12[3]);
+                      let obj = assets(682);
                       obj.batchUpdates(() => {
-                        const obj = { assets: arg0, page: tmp12, lastAssetIndex: closure_1 };
+                        const obj = { assets: edges, page: outer2_2, lastAssetIndex: closure_1 };
                         let end_cursor;
-                        if (null != arg0) {
-                          const page_info = arg0.page_info;
+                        if (null != edges) {
+                          const page_info = edges.page_info;
                           if (null != page_info) {
                             end_cursor = page_info.end_cursor;
                           }
                         }
                         obj.endCursor = end_cursor;
-                        store.setState(obj);
+                        outer3_4.setState(obj);
                       });
                       let tmp12 = null == edges || 0 === edges.edges.length;
                       if (!tmp12) {
-                        const page_info = edges.page_info;
+                        let page_info = edges.page_info;
                         let has_next_page;
                         if (null != page_info) {
                           has_next_page = page_info.has_next_page;
                         }
                         tmp12 = false === has_next_page;
                       }
+                      const dependencyMap = tmp12;
                       if (tmp12) {
-                        edges(tmp12[3]).batchUpdates(() => store.setState({ hasReachedEnd: tmp12 }));
-                        const obj2 = edges(tmp12[3]);
+                        assets(682).batchUpdates(() => outer3_4.setState({ hasReachedEnd: closure_2 }));
+                        const obj2 = assets(682);
                       }
-                      obj = { page: tmp12, has_reached_end: tmp12 };
-                      callback(tmp12[2]).track(constants.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
-                    }(edges);
+                      obj = { page: outer1_2, has_reached_end: tmp12 };
+                      lastAssetIndex(675).track(outer2_3.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
+                    })(edges);
                   }
           };
-          importDefault(closure_2[4])(obj);
+          lastAssetIndex(9664)(obj);
         }
       }
     }
   },
   refreshAssets(batchSize) {
     batchSize = batchSize.batchSize;
-    const require = batchSize;
-    importDefault(dependencyMap[4])({
+    importDefault(9664)({
       batchSize,
       extensions: batchSize.extensions,
       onFetched(edges) {
-        function applyStateUpdate(edges) {
+        (function applyStateUpdate(edges) {
+          let closure_0 = edges;
           let length;
           if (null != edges) {
             edges = edges.edges;
@@ -144,7 +144,7 @@ export default {
             num = length;
           }
           if (num > 0) {
-            let obj = callback(closure_2[2]);
+            let obj = outer2_1(outer2_2[2]);
             obj = { num_broken_assets: num };
             let length1;
             if (null != edges) {
@@ -155,29 +155,29 @@ export default {
             }
             obj.num_assets = length1;
             obj.location = "DeviceMedia.applyStateUpdate";
-            obj.track(constants.MEDIA_PICKER_ASSETS_DEBUG, obj);
+            obj.track(outer2_3.MEDIA_PICKER_ASSETS_DEBUG, obj);
           }
-          edges(closure_2[3]).batchUpdates(() => {
-            const obj = { assets: arg0, page: 0, lastAssetIndex: arg0 };
+          batchSize(outer2_2[3]).batchUpdates(() => {
+            const obj = { assets: edges, page: 0, lastAssetIndex: outer2_0 };
             let end_cursor;
-            if (null != arg0) {
-              const page_info = arg0.page_info;
+            if (null != edges) {
+              const page_info = edges.page_info;
               if (null != page_info) {
                 end_cursor = page_info.end_cursor;
               }
             }
             obj.endCursor = end_cursor;
             let has_next_page;
-            if (null != arg0) {
-              const page_info2 = arg0.page_info;
+            if (null != edges) {
+              const page_info2 = edges.page_info;
               if (null != page_info2) {
                 has_next_page = page_info2.has_next_page;
               }
             }
             obj.hasReachedEnd = !(null == has_next_page || has_next_page);
-            state.setState(obj);
+            outer3_4.setState(obj);
           });
-        }(edges);
+        })(edges);
       }
     });
   },

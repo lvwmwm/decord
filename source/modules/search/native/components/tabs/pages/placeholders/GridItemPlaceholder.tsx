@@ -1,17 +1,18 @@
-// Module ID: 15226
-// Function ID: 114963
-// Dependencies: []
+// Module ID: 15342
+// Function ID: 117133
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 
-// Module 15226
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 15342
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
 obj.imageContainer = obj;
-let closure_2 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo((arg0) => {
+let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo((arg0) => {
   let height;
   let style;
   let width;
@@ -19,8 +20,8 @@ const memoResult = importAllResult.memo((arg0) => {
   const obj = {};
   const items = [{ width, height }, callback().imageContainer, style];
   obj.style = items;
-  return <View {...obj} />;
+  return <View />;
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/GridItemPlaceholder.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/GridItemPlaceholder.tsx");
 
 export default memoResult;

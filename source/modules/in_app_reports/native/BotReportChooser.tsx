@@ -1,79 +1,92 @@
-// Module ID: 11884
-// Function ID: 92005
+// Module ID: 11896
+// Function ID: 92058
 // Name: ReportAppProfile
-// Dependencies: []
+// Dependencies: [31, 4167, 33, 5500, 4126, 1212, 5502, 4098, 7600, 566, 5465, 2]
 // Exports: default
 
-// Module 11884 (ReportAppProfile)
+// Module 11896 (ReportAppProfile)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function ReportAppProfile(arg0) {
-  ({ user: closure_0, contextualGuildId: closure_1, onSubmit: closure_2, appContext: closure_3 } = arg0);
+  let _isNativeReflectConstruct;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ user: require, contextualGuildId: importDefault, onSubmit: dependencyMap, appContext: _isNativeReflectConstruct } = arg0);
   let obj = {};
   obj = { variant: "heading-md/semibold" };
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.children = intl.string(arg1(dependencyMap[5]).t.eyEkG1);
-  obj.label = callback(arg1(dependencyMap[4]).Text, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.eyEkG1);
+  obj.label = callback(require(4126) /* Text */.Text, obj);
   obj = { variant: "text-xs/medium" };
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[5]).t.ptItsj);
-  obj.subLabel = callback(arg1(dependencyMap[4]).Text, obj);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.ptItsj);
+  obj.subLabel = callback(require(4126) /* Text */.Text, obj);
   obj.onPress = function onPress() {
-    callback2(closure_2[7]).hideActionSheet(closure_6);
-    const obj = callback2(closure_2[7]);
-    const result = callback(closure_2[8]).showReportModalForUser(callback, callback2, closure_2, closure_3);
+    outer1_1(outer1_2[7]).hideActionSheet(outer1_6);
+    const obj = outer1_1(outer1_2[7]);
+    const result = outer1_0(outer1_2[8]).showReportModalForUser(closure_0, closure_1, closure_2, _isNativeReflectConstruct);
   };
   obj.arrow = true;
-  return callback(arg1(dependencyMap[6]).ActionSheetRow, obj);
+  return callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 function ReportAppBehavior(arg0) {
-  ({ user: closure_0, entrypoint: closure_1, contextualGuildId: closure_2, contextualChannelId: closure_3, onSubmit: closure_4, appContext: closure_5 } = arg0);
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => appIdForBotUserId.getAppIdForBotUserId(lib.id));
-  let obj1 = arg1(dependencyMap[10]);
+  let _isNativeReflectConstruct;
+  let closure_4;
+  let closure_5;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ user: require, entrypoint: importDefault, contextualGuildId: dependencyMap, contextualChannelId: _isNativeReflectConstruct, onSubmit: closure_4, appContext: closure_5 } = arg0);
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getAppIdForBotUserId(id.id));
+  let obj1 = require(5465) /* fetchApplication */;
   const data = obj1.useApplication(stateFromStores).data;
-  let closure_6 = data;
   obj = {};
   obj = { variant: "heading-md/semibold" };
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.children = intl.string(arg1(dependencyMap[5]).t.atP0yX);
-  obj.label = callback(arg1(dependencyMap[4]).Text, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.atP0yX);
+  obj.label = callback(require(4126) /* Text */.Text, obj);
   obj1 = { variant: "text-xs/medium" };
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[5]).t.UGg603);
-  obj.subLabel = callback(arg1(dependencyMap[4]).Text, obj1);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.UGg603);
+  obj.subLabel = callback(require(4126) /* Text */.Text, obj1);
   obj.onPress = function onPress() {
     if (null != data) {
-      let obj = callback(closure_2[7]);
+      let obj = outer1_1(outer1_2[7]);
       obj.hideActionSheet(data);
-      obj = { application: data, entrypoint: callback, contextualGuildId: closure_2, contextualChannelId: closure_3, onSubmit: closure_4, appContext: closure_5 };
-      const result = lib(closure_2[8]).showReportModalForApp(obj);
-      const obj2 = lib(closure_2[8]);
+      obj = { application: data, entrypoint: closure_1, contextualGuildId: closure_2, contextualChannelId: _isNativeReflectConstruct, onSubmit: closure_4, appContext: closure_5 };
+      const result = outer1_0(outer1_2[8]).showReportModalForApp(obj);
+      const obj2 = outer1_0(outer1_2[8]);
     }
   };
   obj.arrow = true;
   obj.disabled = null == data;
-  return callback(arg1(dependencyMap[6]).ActionSheetRow, obj);
+  return callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let closure_6 = "BotReportChooser";
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/in_app_reports/native/BotReportChooser.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const BotReportChooser = "BotReportChooser";
+let result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/BotReportChooser.tsx");
 
 export default function BotReportChooser(arg0) {
   let obj = {};
   obj = { style: { textAlign: "center" }, variant: "redesign/heading-18/bold" };
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.children = intl.string(arg1(dependencyMap[5]).t.Bd10bR);
-  obj.header = callback(arg1(dependencyMap[4]).Text, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.Bd10bR);
+  obj.header = callback(require(4126) /* Text */.Text, obj);
   obj = { hasIcons: false };
   const merged = Object.assign(arg0);
   const items = [callback(ReportAppProfile, {}), ];
   const merged1 = Object.assign(arg0);
   items[1] = callback(ReportAppBehavior, {});
   obj.children = items;
-  obj.children = callback2(arg1(dependencyMap[6]).ActionSheetRow.Group, obj);
-  return callback(arg1(dependencyMap[3]).ActionSheet, obj);
+  obj.children = callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback(require(5500) /* ActionSheet */.ActionSheet, obj);
 };
 export const BOT_REPORT_CHOOSER_KEY = "BotReportChooser";

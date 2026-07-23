@@ -1,60 +1,60 @@
-// Module ID: 11011
-// Function ID: 85677
+// Module ID: 11021
+// Function ID: 85727
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 6836, 653, 33, 4130, 689, 11022, 4347, 6835, 1212, 5796, 4098, 3827, 1920, 7536, 7538, 9868, 1934, 5187, 5807, 4126, 4543, 5459, 2]
 // Exports: default
 
-// Module 11011 (ExplicitMediaLearnMoreActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = arg1(dependencyMap[2]).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
-({ HelpdeskArticles: closure_6, UserSettingsSections: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { paddingVertical: importDefault(dependencyMap[6]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_24, justifyContent: "center" };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[4]);
-obj.art = { alignSelf: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
-const obj1 = { alignSelf: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
-obj.infoHeader = { marginBottom: importDefault(dependencyMap[6]).space.PX_8, alignItems: "center" };
-const obj2 = { marginBottom: importDefault(dependencyMap[6]).space.PX_8, alignItems: "center" };
-obj.info = { marginBottom: importDefault(dependencyMap[6]).space.PX_24, alignItems: "center" };
-obj.infoDesc = { textAlign: "center" };
-const obj3 = { marginBottom: importDefault(dependencyMap[6]).space.PX_24, alignItems: "center" };
-obj.buttonsContainer = { gap: importDefault(dependencyMap[6]).space.PX_8 };
-const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_8 };
-obj.linkSubtext = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
-let closure_10 = obj.createStyles(obj);
-const obj5 = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaLearnMoreActionSheet.tsx");
+// Module 11021 (ExplicitMediaLearnMoreActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ HelpdeskArticles: closure_6, UserSettingsSections: closure_7 } = ME);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, justifyContent: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.art = { alignSelf: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj1 = { alignSelf: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.infoHeader = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center" };
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center" };
+_createForOfIteratorHelperLoose.info = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center" };
+_createForOfIteratorHelperLoose.infoDesc = { textAlign: "center" };
+let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center" };
+_createForOfIteratorHelperLoose.buttonsContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj4 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.linkSubtext = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj5 = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let result = require("USER_SETTING_ACTION_SHEET_KEY").fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaLearnMoreActionSheet.tsx");
 
 export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const messageId = channelId.messageId;
-  const importDefault = messageId;
   const attachmentId = channelId.attachmentId;
-  const dependencyMap = attachmentId;
   const embedId = channelId.embedId;
-  const React = embedId;
   let callback;
-  const tmp = callback2();
-  const tmp3 = importDefault(dependencyMap[7])();
-  let obj = arg1(dependencyMap[8]);
+  let tmp = _createForOfIteratorHelperLoose();
+  const tmp3 = messageId(attachmentId[7])();
+  let obj = channelId(attachmentId[8]);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  const View = isVerifiedTeen;
-  let obj1 = arg1(dependencyMap[9]);
+  let obj1 = channelId(attachmentId[9]);
   const shouldAgeVerifyForExplicitMedia = obj1.useShouldAgeVerifyForExplicitMedia();
-  let closure_5 = shouldAgeVerifyForExplicitMedia;
-  const intl = arg1(dependencyMap[10]).intl;
-  const intl2 = arg1(dependencyMap[10]).intl;
+  let intl = channelId(attachmentId[10]).intl;
+  let intl2 = channelId(attachmentId[10]).intl;
   const items = [isVerifiedTeen, shouldAgeVerifyForExplicitMedia];
-  const stringResult = intl.string(arg1(dependencyMap[10]).t.9KiIz6);
-  const tmp2 = dependencyMap;
-  const tmp4 = arg1;
-  const memo = React.useMemo(() => {
+  const stringResult = intl.string(channelId(attachmentId[10]).t["9KiIz6"]);
+  const tmp2 = attachmentId;
+  const tmp4 = channelId;
+  const memo = embedId.useMemo(() => {
     let tmp = isVerifiedTeen;
     if (isVerifiedTeen) {
       tmp = shouldAgeVerifyForExplicitMedia;
@@ -62,40 +62,40 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     return tmp;
   }, items);
   const items1 = [channelId, messageId];
-  callback = React.useCallback((action) => {
+  callback = embedId.useCallback((action) => {
     let obj = channelId(attachmentId[9]);
     obj = { action, channelId, messageId };
     const result = obj.trackMediaRedactionAction(obj);
   }, items1);
   const items2 = [channelId, messageId];
-  const effect = React.useEffect(() => {
+  const effect = embedId.useEffect(() => {
     let obj = channelId(attachmentId[9]);
     obj = { action: channelId(attachmentId[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_VIEWED, channelId, messageId };
     const result = obj.trackMediaRedactionAction(obj);
   }, items2);
   const items3 = [memo, shouldAgeVerifyForExplicitMedia, callback, channelId, messageId, attachmentId, embedId];
-  const callback1 = React.useCallback(() => {
+  const callback1 = embedId.useCallback(() => {
     if (memo) {
       const intl2 = channelId(attachmentId[10]).intl;
       let obj = {
         handleOnHelpUrlHook() {
-            const obj = callback2(closure_2[15]);
-            obj.openUrl(callback2(closure_2[14]).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
-            callback3(callback(closure_2[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE);
+            const obj = messageId(attachmentId[15]);
+            obj.openUrl(messageId(attachmentId[14]).getArticleURL(memo.TIGGER_PAWTECT_LEARN_MORE));
+            outer1_7(channelId(attachmentId[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE);
           }
       };
-      let formatResult = intl2.format(channelId(attachmentId[10]).t.TGqx+i, obj);
+      let formatResult = intl2.format(channelId(attachmentId[10]).t["TGqx+i"], obj);
     } else {
       formatResult = null;
       if (!shouldAgeVerifyForExplicitMedia) {
         const intl = channelId(attachmentId[10]).intl;
         obj = {
           handleFalsePositiveHook() {
-                let obj = callback2(paths[12]);
+                let obj = messageId(attachmentId[12]);
                 obj.hideActionSheet();
-                callback3(callback(paths[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE);
-                obj = { channelId: callback, messageId: callback2, attachmentId: paths, embedId: closure_3 };
-                callback2(paths[12]).openLazy(callback(paths[18])(paths[17], paths.paths), closure_5, obj);
+                outer1_7(channelId(attachmentId[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE);
+                obj = { channelId: outer1_0, messageId: outer1_1, attachmentId: outer1_2, embedId: outer1_3 };
+                messageId(attachmentId[12]).openLazy(channelId(attachmentId[18])(attachmentId[17], attachmentId.paths), shouldAgeVerifyForExplicitMedia, obj);
               }
         };
         formatResult = intl.format(channelId(attachmentId[10]).t.Ge0HUi, obj);
@@ -105,31 +105,31 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   }, items3);
   obj = { startExpanded: true };
   obj = { style: tmp.container };
-  obj1 = { style: tmp.art, children: callback(arg1(dependencyMap[20]).ShieldSpotIllustration, {}) };
-  const items4 = [callback(View, obj1), , ];
+  obj1 = { style: tmp.art, children: callback(channelId(attachmentId[20]).ShieldSpotIllustration, { height: 120, width: 120 }) };
+  const items4 = [callback(isVerifiedTeen, obj1), , ];
   const obj2 = { style: tmp.info };
-  const obj3 = { style: tmp.infoHeader };
-  const intl3 = arg1(dependencyMap[10]).intl;
-  obj3.children = intl3.string(arg1(dependencyMap[10]).t.sGW77l);
-  const items5 = [callback(arg1(dependencyMap[21]).Text, obj3), ];
-  const obj4 = { style: tmp.infoDesc };
+  const obj3 = { style: tmp.infoHeader, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
+  const intl3 = channelId(attachmentId[10]).intl;
+  obj3.children = intl3.string(channelId(attachmentId[10]).t.sGW77l);
+  const items5 = [callback(channelId(attachmentId[21]).Text, obj3), ];
+  const obj4 = { style: tmp.infoDesc, variant: "text-md/medium", color: "text-default" };
   if (memo) {
     let stringResult3 = stringResult1;
   } else {
-    const intl4 = arg1(dependencyMap[10]).intl;
-    const intl5 = arg1(dependencyMap[10]).intl;
-    stringResult3 = intl5.string(arg1(dependencyMap[10]).t.E/oQYL);
+    const intl4 = channelId(attachmentId[10]).intl;
+    const intl5 = channelId(attachmentId[10]).intl;
+    stringResult3 = intl5.string(channelId(attachmentId[10]).t["E/oQYL"]);
     if (tmp3) {
       stringResult3 = stringResult2;
     }
-    const stringResult2 = intl4.string(arg1(dependencyMap[10]).t.RUw0ZC);
+    stringResult2 = intl4.string(channelId(attachmentId[10]).t.RUw0ZC);
   }
   obj4.children = stringResult3;
-  items5[1] = callback(arg1(dependencyMap[21]).Text, obj4);
+  items5[1] = callback(channelId(attachmentId[21]).Text, obj4);
   obj2.children = items5;
-  items4[1] = closure_9(View, obj2);
+  items4[1] = closure_9(isVerifiedTeen, obj2);
   const obj5 = { style: tmp.buttonsContainer };
-  const obj6 = {};
+  const obj6 = { variant: "primary", size: "md" };
   if (memo) {
     obj6.text = stringResult;
     obj6.onPress = function handleAgeVerifyButtonPress() {
@@ -141,11 +141,11 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     };
     let tmp22 = obj6;
   } else {
-    const intl6 = arg1(dependencyMap[10]).intl;
+    const intl6 = channelId(attachmentId[10]).intl;
     const string = intl6.string;
-    const t = arg1(dependencyMap[10]).t;
+    const t = channelId(attachmentId[10]).t;
     if (tmp3) {
-      obj6.text = string(t.9D+zGX);
+      obj6.text = string(t["9D+zGX"]);
       obj6.onPress = function handleNavigateToSettingsButtonPress() {
         callback(channelId(attachmentId[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS);
         let obj = channelId(attachmentId[11]);
@@ -164,19 +164,19 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     }
   }
   const items6 = [callback(tmp4(tmp2[22]).Button, tmp22), , ];
-  const obj7 = {};
-  const intl7 = arg1(dependencyMap[10]).intl;
-  obj7.text = intl7.string(arg1(dependencyMap[10]).t.bmbHPA);
+  const obj7 = { variant: "secondary", size: "md" };
+  const intl7 = channelId(attachmentId[10]).intl;
+  obj7.text = intl7.string(channelId(attachmentId[10]).t.bmbHPA);
   obj7.onPress = function onPress() {
     callback(channelId(attachmentId[9]).TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS);
     messageId(attachmentId[12]).hideActionSheet();
   };
-  items6[1] = callback(arg1(dependencyMap[22]).Button, obj7);
-  const obj8 = { style: tmp.linkSubtext, children: callback1() };
-  items6[2] = callback(arg1(dependencyMap[23]).TextWithIOSLinkWorkaround, obj8);
+  items6[1] = callback(channelId(attachmentId[22]).Button, obj7);
+  const obj8 = { style: tmp.linkSubtext, variant: "text-sm/medium", color: "text-muted", children: callback1() };
+  items6[2] = callback(channelId(attachmentId[23]).TextWithIOSLinkWorkaround, obj8);
   obj5.children = items6;
-  items4[2] = closure_9(View, obj5);
+  items4[2] = closure_9(isVerifiedTeen, obj5);
   obj.children = items4;
-  obj.children = closure_9(View, obj);
-  return callback(arg1(dependencyMap[19]).BottomSheet, obj);
+  obj.children = closure_9(isVerifiedTeen, obj);
+  return callback(channelId(attachmentId[19]).BottomSheet, obj);
 };

@@ -1,25 +1,25 @@
-// Module ID: 14334
-// Function ID: 108223
+// Module ID: 14448
+// Function ID: 110376
 // Name: route
-// Dependencies: [2097152021, 1509949461, 1493172253, 4261412893, 1174405139]
+// Dependencies: [7662, 653, 10095, 14449, 2]
 
-// Module 14334 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14448 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Text Input";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_TEXT_INPUT,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_TEXT_INPUT,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14449) /* Sample */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTextInputSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTextInputSetting.tsx");
 
 export default route;

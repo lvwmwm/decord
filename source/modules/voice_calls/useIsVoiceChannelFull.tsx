@@ -1,29 +1,31 @@
-// Module ID: 10669
-// Function ID: 83189
+// Module ID: 10679
+// Function ID: 83239
 // Name: useIsVoiceChannelFull
-// Dependencies: []
+// Dependencies: [1838, 3758, 4146, 482, 566, 4312, 2]
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 10669 (useIsVoiceChannelFull)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const Permissions = arg1(dependencyMap[3]).Permissions;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
+// Module 10679 (useIsVoiceChannelFull)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/useIsVoiceChannelFull.tsx");
 
 export default function useIsVoiceChannelFull(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4, closure_2];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => arg0(closure_1[5]).isChannelFull(arg0, closure_4, closure_2));
+  const _require = arg0;
+  const items = [closure_4, _createForOfIteratorHelperLoose];
+  return _require(566).useStateFromStores(items, () => callback(outer1_1[5]).isChannelFull(callback, outer1_4, outer1_2));
 };
 export const useIsVoiceChannelLocked = function useIsVoiceChannelLocked(channel) {
-  const arg1 = channel;
-  const items = [closure_3];
+  const _require = channel;
+  const items = [_isNativeReflectConstruct];
   const items1 = [channel];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    let tmp = null == arg0;
+  return _require(566).useStateFromStores(items, () => {
+    let tmp = null == closure_0;
     if (!tmp) {
-      tmp = !closure_3.can(constants.CONNECT, arg0);
+      tmp = !outer1_3.can(outer1_5.CONNECT, closure_0);
     }
     return tmp;
   }, items1);

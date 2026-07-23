@@ -1,24 +1,25 @@
-// Module ID: 9167
-// Function ID: 71826
+// Module ID: 9174
+// Function ID: 71867
 // Name: FormSeparator
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 9167 (FormSeparator)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { 9223372036854775807: "y", -9223372036854775808: "isArray", 9223372036854775807: "tts", borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj.separator = obj;
-let closure_2 = obj.createStyles(obj);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormSeparator.tsx");
+// Module 9174 (FormSeparator)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 };
+_createForOfIteratorHelperLoose.separator = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormSeparator.tsx");
 
 export default function FormSeparator(style) {
   const obj = {};
   const merged = Object.assign(style);
-  const items = [callback().separator, style.style];
+  const items = [_createForOfIteratorHelperLoose().separator, style.style];
   obj["style"] = items;
-  return <View {...obj} />;
+  return <View />;
 };

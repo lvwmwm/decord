@@ -1,9 +1,17 @@
-// Module ID: 3783
-// Function ID: 29493
+// Module ID: 3785
+// Function ID: 29498
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1858, 3786, 2]
 
-// Module 3783 (_callSuper)
+// Module 3785 (_callSuper)
+import coalesceInvoiceItems from "coalesceInvoiceItems";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import tmp2 from "Record";
+
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -15,7 +23,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_4(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -26,110 +34,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
-  class BaseInvoiceRecord {
-    constructor(arg0) {
-      tmp = closure_2(this, BaseInvoiceRecord);
-      tmp2 = closure_7(this, BaseInvoiceRecord);
-      ({ total: tmp2.total, subtotal: tmp2.subtotal, tax: tmp2.tax, currency: tmp2.currency, invoiceItems } = arg0);
-      if (null == invoiceItems) {
-        invoiceItems = [];
-      }
-      tmp2.invoiceItems = invoiceItems;
-      return tmp2;
-    }
-  }
-  const arg1 = BaseInvoiceRecord;
-  callback3(BaseInvoiceRecord, arg0);
-  let obj = {
-    key: "getInvoicePreviewLineItemForSku",
-    value(arg0) {
-      const BaseInvoiceRecord = arg0;
-      const invoiceItems = this.invoiceItems;
-      const found = invoiceItems.find((skuId) => skuId.skuId === skuId);
-      let tmp2 = null;
-      if (null != found) {
-        tmp2 = found;
-      }
-      return tmp2;
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getInvoicePreviewLineItemUnitPriceForSku",
-    value(arg0) {
-      const invoicePreviewLineItemForSku = this.getInvoicePreviewLineItemForSku(arg0);
-      let amount = null;
-      if (null != invoicePreviewLineItemForSku) {
-        amount = null;
-        if (null != invoicePreviewLineItemForSku.unitPrice) {
-          amount = invoicePreviewLineItemForSku.unitPrice.amount;
-        }
-      }
-      return amount;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "createFromServer",
-    value(total) {
-      const invoice_items = total.invoice_items;
-      const obj = { total: total.total, subtotal: total.subtotal, tax: total.tax, currency: total.currency, invoiceItems: invoice_items.map((skuId) => ({ skuId: skuId.sku_id, quantity: skuId.quantity, description: skuId.description })) };
-      return new BaseInvoiceRecord({ total: total.total, subtotal: total.subtotal, tax: total.tax, currency: total.currency, invoiceItems: invoice_items.map((skuId) => ({ skuId: skuId.sku_id, quantity: skuId.quantity, description: skuId.description })) });
-    }
-  };
-  const items1 = [
-    obj,
-    {
-      key: "createInvoiceFromOrder",
-      value(billing_facet) {
-        const BaseInvoiceRecord = billing_facet;
-        billing_facet = billing_facet.billing_facet;
-        let invoice_preview = null;
-        if (null != billing_facet) {
-          invoice_preview = billing_facet.invoice_preview;
-        }
-        if (null == invoice_preview) {
-          return null;
-        } else {
-          const line_items = invoice_preview.line_items;
-          const mapped = line_items.map((unit_price) => {
-            const order_line_items = unit_price.order_line_items;
-            const found = order_line_items.find((id) => id.id === id.ref_order_line_item_id);
-            let tmp2 = null;
-            if (null != found) {
-              let obj = { skuId: found.sku_id };
-              obj = { amount: unit_price.unit_price, currency: invoice_preview.currency };
-              obj.unitPrice = obj;
-              obj.quantity = unit_price.quantity;
-              tmp2 = obj;
-            }
-            return tmp2;
-          });
-          const obj = {};
-          ({ total: obj.total, subtotal: obj.subtotal, tax: obj.tax, currency: obj.currency } = invoice_preview);
-          obj.invoiceItems = mapped.filter((arg0) => null != arg0);
-          const prototype = BaseInvoiceRecord.prototype;
-          const tmp6 = new BaseInvoiceRecord(obj);
-          return tmp6;
-        }
-      }
-    }
-  ];
-  return callback(BaseInvoiceRecord, items, items1);
-}(importDefault(dependencyMap[5]));
-const tmp3 = (arg0) => {
+const tmp3 = ((arg0) => {
   class InvoiceRecord {
     constructor(arg0) {
-      tmp = closure_2(this, InvoiceRecord);
+      tmp = outer1_2(this, InvoiceRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_7(this, InvoiceRecord, items);
+      tmp2 = outer1_7(this, InvoiceRecord, items);
       ({ id: tmp2.id, invoiceItems } = arg0);
       if (null == invoiceItems) {
         invoiceItems = [];
@@ -139,14 +50,13 @@ const tmp3 = (arg0) => {
       return tmp2;
     }
   }
-  const arg1 = InvoiceRecord;
   callback3(InvoiceRecord, arg0);
   let obj = {
     key: "findInvoiceItemByPlanId",
     value(arg0) {
-      const InvoiceRecord = arg0;
+      let closure_0 = arg0;
       const invoiceItems = this.invoiceItems;
-      const found = invoiceItems.find((subscriptionPlanId) => subscriptionPlanId.subscriptionPlanId === subscriptionPlanId);
+      const found = invoiceItems.find((subscriptionPlanId) => subscriptionPlanId.subscriptionPlanId === closure_0);
       let tmp2 = null;
       if (null != found) {
         tmp2 = found;
@@ -154,7 +64,7 @@ const tmp3 = (arg0) => {
       return tmp2;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getDiscountIdIfExists",
     value() {
@@ -179,7 +89,7 @@ const tmp3 = (arg0) => {
       const invoice_items = id.invoice_items;
       let mapped;
       if (null != invoice_items) {
-        mapped = invoice_items.map(InvoiceRecord(closure_1[6]).createInvoiceItemFromServer);
+        mapped = invoice_items.map(InvoiceRecord(outer1_1[6]).createInvoiceItemFromServer);
       }
       obj.invoiceItems = mapped;
       ({ total: obj.total, subtotal: obj.subtotal, currency: obj.currency, tax: obj.tax, tax_inclusive: obj.taxInclusive } = id);
@@ -201,7 +111,7 @@ const tmp3 = (arg0) => {
         invoice_items = invoice_items.invoice_items;
         let mapped;
         if (null != invoice_items) {
-          mapped = invoice_items.map(InvoiceRecord(closure_1[6]).createInvoiceItemFromServer);
+          mapped = invoice_items.map(InvoiceRecord(outer1_1[6]).createInvoiceItemFromServer);
         }
         obj.invoiceItems = mapped;
         ({ amount: obj.total, subtotal: obj.subtotal, currency: obj.currency, tax: obj.tax, tax_inclusive: obj.taxInclusive } = invoice_items);
@@ -215,8 +125,8 @@ const tmp3 = (arg0) => {
     }
   ];
   return callback(InvoiceRecord, items, items1);
-}(tmp2);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("records/InvoiceRecord.tsx");
+})(tmp2);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("records/InvoiceRecord.tsx");
 
 export default tmp3;
 export const BaseInvoiceRecord = tmp2;

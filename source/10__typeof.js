@@ -6,13 +6,12 @@
 // Module 10 (_typeof)
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     if ("symbol" === typeof Symbol.iterator) {
       let fn = (arg0) => typeof arg0;
     }
-    const _typeof = fn;
     tmp.exports = fn;
-    return _typeof(arg0);
+    return fn(arg0);
   }
   fn = (arg0) => {
     if (arg0) {

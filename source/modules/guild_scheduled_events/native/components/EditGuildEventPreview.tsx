@@ -1,50 +1,59 @@
-// Module ID: 8442
-// Function ID: 67371
+// Module ID: 8448
+// Function ID: 67408
 // Name: PreviewBody
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 653, 33, 4130, 689, 477, 566, 4320, 8349, 8449, 4126, 1212, 8450, 1273, 8451, 8345, 5121, 8361, 4543, 8346, 4471, 8452, 1934, 2]
 // Exports: default
 
-// Module 8442 (PreviewBody)
+// Module 8448 (PreviewBody)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "_isNativeReflectConstruct";
+
+let closure_6;
+let closure_7;
+let require = arg1;
 function PreviewBody(event) {
   event = event.event;
-  let dependencyMap;
+  let locationFromEvent;
   let eventLocationIconSource;
-  const tmp = callback3();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   const channel_id = event.channel_id;
-  const importDefault = channel_id;
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_5];
+  let obj = require(locationFromEvent[8]);
+  let items = [_isNativeReflectConstruct];
   const items1 = [channel_id];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channel_id), items1);
-  const tmp3 = importDefault(dependencyMap[9])(stateFromStores);
-  let obj1 = arg1(dependencyMap[10]);
-  let locationFromEvent = obj1.getLocationFromEvent(event);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(channel_id), items1);
+  const tmp3 = channel_id(locationFromEvent[9])(stateFromStores);
+  let obj1 = require(locationFromEvent[10]);
+  locationFromEvent = obj1.getLocationFromEvent(event);
   if (null != tmp3) {
     locationFromEvent = tmp3;
   }
-  dependencyMap = locationFromEvent;
-  let obj2 = arg1(dependencyMap[11]);
+  let obj2 = require(locationFromEvent[11]);
   eventLocationIconSource = obj2.getEventLocationIconSource(event, stateFromStores, true);
   obj = { style: tmp.header };
-  obj = { style: tmp.headerTitle };
-  const intl = arg1(dependencyMap[13]).intl;
-  obj.children = intl.string(arg1(dependencyMap[13]).t.yBsFE3);
-  const items2 = [callback(arg1(dependencyMap[12]).Text, obj), ];
+  obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
+  const intl = require(locationFromEvent[13]).intl;
+  obj.children = intl.string(require(locationFromEvent[13]).t.yBsFE3);
+  const items2 = [callback(require(locationFromEvent[12]).Text, obj), ];
   obj1 = { style: tmp.headerSubtitle };
   let formatToPlainStringResult;
   if (null != stateFromStores) {
-    const intl2 = arg1(dependencyMap[13]).intl;
+    const intl2 = require(locationFromEvent[13]).intl;
     obj2 = {};
     const obj3 = { channel: stateFromStores };
-    obj2.channelName = importDefault(dependencyMap[14])(obj3);
-    formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[13]).t.sxcQPE, obj2);
+    obj2.channelName = channel_id(locationFromEvent[14])(obj3);
+    formatToPlainStringResult = intl2.formatToPlainString(require(locationFromEvent[13]).t.sxcQPE, obj2);
   }
   obj1.accessibilityLabel = formatToPlainStringResult;
   obj1.variant = "text-sm/medium";
   obj1.color = "text-default";
   if (null != stateFromStores) {
-    const intl4 = arg1(dependencyMap[13]).intl;
+    const intl4 = require(locationFromEvent[13]).intl;
     const obj4 = {
       channelName: locationFromEvent,
       channelHook() {
@@ -53,109 +62,102 @@ function PreviewBody(event) {
           let tmp4 = null != React;
           if (tmp4) {
             obj = { source: React, size: tmp(locationFromEvent[15]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelIcon };
-            tmp4 = callback(tmp(locationFromEvent[15]).Icon, obj);
+            tmp4 = outer1_6(tmp(locationFromEvent[15]).Icon, obj);
           }
           obj.children = tmp4;
-          const items = [callback(closure_4, obj), ];
-          const obj1 = { y: "Text", getRow: "forEach", "Null": "url", "Null": "Array" };
+          const items = [outer1_6(outer1_4, obj), ];
+          const obj1 = { accessibilityElementsHidden: true, importantForAccessibility: "no", variant: "text-sm/medium", color: "text-default" };
           let result = null;
           if (null != locationFromEvent) {
             result = tmp(locationFromEvent[16]).guildEventDetailsParser(locationFromEvent, true);
             const obj5 = tmp(locationFromEvent[16]);
           }
           obj1.children = result;
-          items[1] = callback(closure_7(locationFromEvent[12]).Text, obj1);
+          items[1] = outer1_6(outer1_7(locationFromEvent[12]).Text, obj1);
           obj.children = items;
           let str = "preview-body";
           if (null != locationFromEvent) {
             str = locationFromEvent;
           }
-          return closure_7(React.Fragment, obj, str);
+          return outer1_7(React.Fragment, obj, str);
         }
     };
-    let formatResult = intl4.format(arg1(dependencyMap[13]).t.f55NX0, obj4);
+    let formatResult = intl4.format(require(locationFromEvent[13]).t.f55NX0, obj4);
   } else {
-    const intl3 = arg1(dependencyMap[13]).intl;
-    formatResult = intl3.string(arg1(dependencyMap[13]).t.KDPFi9);
+    const intl3 = require(locationFromEvent[13]).intl;
+    formatResult = intl3.string(require(locationFromEvent[13]).t.KDPFi9);
   }
   obj1.children = formatResult;
-  items2[1] = callback(arg1(dependencyMap[12]).Text, obj1);
+  items2[1] = callback(require(locationFromEvent[12]).Text, obj1);
   obj.children = items2;
   return closure_7(View, obj);
 }
 let num = 0;
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-obj.centered = {};
-obj.centerContainer = { "Bool(false)": "age", "Bool(false)": "targetFrames" };
-obj.flex = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028495694759803383, "Null": 0.000000008032402190877417 };
-obj.header = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 };
-obj.headerTitle = {};
-obj.headerSubtitle = { textAlign: "center" };
-const tmp2 = arg1(dependencyMap[4]);
-obj.eventContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { hideWhenScrolling: "\u{1F9D1}\u200D\u{1F3A8}", autoCapitalize: true }, overflow: "visible" };
-obj.channelContainer = {};
-const obj2 = { userName: "COMMENT_NODE", effectDisplayType: "COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM", pendingDisplayNameStyles: "<string:410059264>", tintColor: importDefault(dependencyMap[6]).colors.TEXT_SUBTLE };
-const obj3 = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { hideWhenScrolling: "\u{1F9D1}\u200D\u{1F3A8}", autoCapitalize: true }, overflow: "visible" };
-if (obj7.isAndroid()) {
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, padding: 16, paddingBottom: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", overflow: "visible" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.centered = { flexDirection: "column", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.centerContainer = { flexGrow: 0, width: "100%" };
+_createForOfIteratorHelperLoose.flex = { flex: 1, overflow: "visible" };
+_createForOfIteratorHelperLoose.header = { alignItems: "center", paddingBottom: 24 };
+_createForOfIteratorHelperLoose.headerTitle = { marginTop: 16, marginBottom: 8 };
+_createForOfIteratorHelperLoose.headerSubtitle = { textAlign: "center" };
+let obj1 = { padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginBottom: 24, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, shadowOpacity: 0.2, elevation: 2, shadowRadius: 16, shadowOffset: { height: 8, width: 0 }, overflow: "visible" };
+_createForOfIteratorHelperLoose.eventContainer = obj1;
+_createForOfIteratorHelperLoose.channelContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center", height: 14 };
+let obj2 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginRight: 4, height: 14 };
+let obj3 = {};
+if (set.isAndroid()) {
   num = 2;
 }
 obj3.translateY = num;
-const items = [obj3];
+let items = [obj3];
 obj2.transform = items;
-obj.channelIcon = obj2;
-obj.buttonContainer = { canAnimate: null, style: null, url: 24, isStageCall: "center" };
-const obj7 = arg1(dependencyMap[7]);
-obj.error = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
-let closure_8 = obj.createStyles(obj);
-const obj4 = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventPreview.tsx");
+_createForOfIteratorHelperLoose.channelIcon = obj2;
+_createForOfIteratorHelperLoose.buttonContainer = { position: "absolute", bottom: 16, left: 0, right: 0 };
+let obj4 = { paddingBottom: 8, fontSize: 14, fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+_createForOfIteratorHelperLoose.error = obj4;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = set.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventPreview.tsx");
 
 export default function EditGuildEventPreview(guild) {
+  let View;
   let error;
   let guildEvent;
+  let importDefault;
   let loading;
   guild = guild.guild;
-  const arg1 = guild;
-  ({ initialGuildEvent: closure_1, guildEvent } = guild);
-  const dependencyMap = guildEvent;
+  ({ initialGuildEvent: importDefault, guildEvent } = guild);
   const isEdit = guild.isEdit;
-  const React = isEdit;
-  ({ loading, error, onSave: closure_4 } = guild);
-  const tmp = callback3();
-  const intl = arg1(dependencyMap[13]).intl;
+  ({ loading, error, onSave: View } = guild);
+  const tmp = _createForOfIteratorHelperLoose();
+  const intl = guild(guildEvent[13]).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[13]).t;
+  const t = guild(guildEvent[13]).t;
   if (isEdit) {
     let stringResult = string(t.e5VEcE);
   } else {
-    stringResult = string(t.60lJ0C);
+    stringResult = string(t["60lJ0C"]);
   }
   const items = [guildEvent, guild.id];
-  const memo = React.useMemo(() => guild(guildEvent[17]).convertToFakeGuildEvent(guildEvent, guild.id), items);
+  const memo = isEdit.useMemo(() => guild(guildEvent[17]).convertToFakeGuildEvent(guildEvent, guild.id), items);
   let obj = { bottom: true, style: tmp.container };
   obj = { style: items1 };
-  const items1 = [, ];
+  items1 = [, ];
   ({ flex: arr2[0], centered: arr2[1] } = tmp);
   obj = { style: tmp.centerContainer };
   const obj1 = { style: tmp.eventContainer };
-  const items2 = [callback(arg1(dependencyMap[19]).GuildEventCardImageHeader, { event: memo }), callback(arg1(dependencyMap[19]).GuildEventCardHeader, { event: memo, isPreview: true }), callback(arg1(dependencyMap[19]).GuildEventCardMetaInfo, { event: memo }), callback(arg1(dependencyMap[19]).GuildEventSimpleLocation, { event: memo })];
+  const items2 = [callback(guild(guildEvent[19]).GuildEventCardImageHeader, { event: memo }), callback(guild(guildEvent[19]).GuildEventCardHeader, { event: memo, isPreview: true }), callback(guild(guildEvent[19]).GuildEventCardMetaInfo, { event: memo }), callback(guild(guildEvent[19]).GuildEventSimpleLocation, { event: memo })];
   obj1.children = items2;
   const items3 = [callback2(View, obj1), callback(PreviewBody, { event: memo })];
   obj.children = items3;
   const items4 = [callback2(View, obj), ];
-  const obj2 = { style: tmp.buttonContainer };
+  let obj2 = { style: tmp.buttonContainer };
   let tmp9 = null;
   if (null != error) {
     const obj3 = { style: tmp.error, children: error.getAnyErrorMessage() };
-    tmp9 = callback(arg1(dependencyMap[15]).LegacyText, obj3);
+    tmp9 = callback(guild(guildEvent[15]).LegacyText, obj3);
   }
   const items5 = [tmp9, ];
   const obj4 = {
@@ -165,34 +167,34 @@ export default function EditGuildEventPreview(guild) {
       if (null != guildEvent.recurrenceRule) {
         if (isEdit) {
           let obj = guild(guildEvent[21]);
-          if (obj.hasScheduleChanges(callback, guildEvent)) {
+          if (obj.hasScheduleChanges(closure_1, guildEvent)) {
             obj = {
               importer() {
-                      return callback(paths[24])(paths[23], paths.paths).then((arg0) => {
+                      return guild(guildEvent[24])(guildEvent[23], guildEvent.paths).then((arg0) => {
                         let closure_0 = arg0.default;
                         return (arg0) => {
                           const obj = {};
                           const merged = Object.assign(arg0);
-                          obj["onConfirm"] = closure_4;
-                          return callback(closure_0, obj);
+                          obj["onConfirm"] = outer3_4;
+                          return outer4_6(closure_0, obj);
                         };
                       });
                     }
             };
-            callback(guildEvent[22]).openLazy(obj);
-            const obj2 = callback(guildEvent[22]);
+            outer1_1(guildEvent[22]).openLazy(obj);
+            const obj2 = outer1_1(guildEvent[22]);
           }
         }
       }
-      callback2();
+      callback();
     },
     disabled: loading,
     loading
   };
-  items5[1] = callback(arg1(dependencyMap[20]).Button, obj4);
+  items5[1] = callback(guild(guildEvent[20]).Button, obj4);
   obj2.children = items5;
   items4[1] = callback2(View, obj2);
   obj.children = items4;
   obj.children = callback2(View, obj);
-  return callback(arg1(dependencyMap[18]).SafeAreaPaddingView, obj);
+  return callback(guild(guildEvent[18]).SafeAreaPaddingView, obj);
 };

@@ -1,9 +1,27 @@
-// Module ID: 10069
-// Function ID: 77752
+// Module ID: 10077
+// Function ID: 77792
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 7, 6, 1348, 3767, 1849, 9103, 9133, 653, 4320, 1212, 10078, 10090, 1916, 566, 686, 2]
 
-// Module 10069 (_isNativeReflectConstruct)
+// Module 10077 (_isNativeReflectConstruct)
+import closure_3 from "areArraysShallowlyEqual";
+import dispatcher from "dispatcher";
+import set from "set";
+import importDefaultResult from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
+import ME from "ME";
+import areArraysShallowlyEqual from "areArraysShallowlyEqual";
+
+let closure_11;
+let closure_12;
+let closure_14;
+let closure_15;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,29 +32,19 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getState(searchContext) {
-  let value = map.get(arg1(dependencyMap[13]).getSearchContextId(searchContext));
+  let value = map.get(require(10078) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext));
   if (null == value) {
     value = callback3(searchContext);
   }
   return value;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-({ EMPTY_SEARCH_QUERY_STRING: closure_11, SearchQueryTagTypes: closure_12 } = arg1(dependencyMap[8]));
-const SearchFilterAddLocations = arg1(dependencyMap[9]).SearchFilterAddLocations;
-const tmp3 = arg1(dependencyMap[8]);
-({ SearchTokenTypes: closure_14, SearchTypes: closure_15 } = arg1(dependencyMap[10]));
+({ EMPTY_SEARCH_QUERY_STRING: closure_11, SearchQueryTagTypes: closure_12 } = SearchAutocompleteSelectAnalyticsActions);
+({ SearchTokenTypes: closure_14, SearchTypes: closure_15 } = ME);
 class SearchQueryStateManager {
   constructor(arg0) {
     self = this;
-    arg1 = this;
-    tmp = closure_7(this, SearchQueryStateManager);
+    self = this;
+    tmp = c7(this, SearchQueryStateManager);
     this.isExplicitSearchSubmitted = false;
     this.getQueryString = () => {
       let flag = arg0;
@@ -151,9 +159,9 @@ class SearchQueryStateManager {
       }
     };
     this.reset = () => {
-      self.textInputValue = closure_11;
+      self.textInputValue = outer1_11;
       self.textInputChangedFromInput = false;
-      self.searchResultsQuery = closure_11;
+      self.searchResultsQuery = outer1_11;
       self.draftTextInputValue = null;
       self.isExplicitSearchSubmitted = false;
       const tagsManager = self.tagsManager;
@@ -169,10 +177,10 @@ class SearchQueryStateManager {
         items = [];
       }
       self.initialTagsSnapshot = items;
-      tmp8 = importDefault;
-      tmp9 = dependencyMap;
+      tmp8 = closure_1;
+      tmp9 = closure_2;
       num2 = 14;
-      tmp10 = importDefault(dependencyMap[14]);
+      tmp10 = require("isPrefix");
       prototype = tmp10.prototype;
       tmp11 = new.target;
       tmp12 = new.target;
@@ -185,7 +193,7 @@ class SearchQueryStateManager {
       self.draftTextInputValue = null;
       return;
     }
-    channel = closure_8.getChannel(global.channelId);
+    channel = c8.getChannel(global.channelId);
     if (null != channel) {
       if (channel.isObfuscated()) {
         items = [];
@@ -193,13 +201,13 @@ class SearchQueryStateManager {
     }
     channelName = undefined;
     if (null != channel) {
-      tmp4 = arg1;
-      tmp5 = dependencyMap;
+      tmp4 = self;
+      tmp5 = closure_2;
       num = 11;
-      obj2 = arg1(dependencyMap[11]);
-      tmp6 = closure_10;
-      tmp7 = closure_9;
-      channelName = obj2.computeChannelName(channel, closure_10, closure_9);
+      obj2 = require("computeDefaultGroupDmNameFromUserIds");
+      tmp6 = c10;
+      tmp7 = c9;
+      channelName = obj2.computeChannelName(channel, c10, c9);
     }
     if (null == channelName) {
       items1 = [];
@@ -209,13 +217,13 @@ class SearchQueryStateManager {
       obj.type = SearchQueryTagTypes.COMPLETE;
       tmp18 = SearchTokenTypes;
       obj.searchTokenType = SearchTokenTypes.FILTER_IN;
-      tmp19 = arg1;
-      tmp20 = dependencyMap;
+      tmp19 = self;
+      tmp20 = closure_2;
       num3 = 12;
-      intl = arg1(dependencyMap[12]).intl;
+      intl = require("getSystemLocale").intl;
       num4 = 13;
-      stringResult = intl.string(arg1(dependencyMap[12]).t.WNpFHa);
-      obj4 = arg1(dependencyMap[13]);
+      stringResult = intl.string(require("getSystemLocale").t.WNpFHa);
+      obj4 = require("_createForOfIteratorHelperLoose");
       tmp22 = globalThis;
       _HermesInternal = HermesInternal;
       str = "";
@@ -233,21 +241,20 @@ class SearchQueryStateManager {
 }
 const importDefaultResultResult = importDefaultResult(SearchQueryStateManager);
 const map = new Map();
-let obj = arg1(dependencyMap[15]);
-let closure_18 = obj.cachedFunction((arg0) => new importDefaultResultResult(arg0));
-let tmp7 = (Store) => {
+let closure_18 = areArraysShallowlyEqual.cachedFunction((arg0) => new closure_16(arg0));
+let tmp7 = ((Store) => {
   class NativeSearchQueryStore {
     constructor() {
       self = this;
-      tmp = closure_7(this, NativeSearchQueryStore);
-      obj = closure_4(NativeSearchQueryStore);
-      tmp2 = closure_3;
-      if (closure_19()) {
+      tmp = outer1_7(this, NativeSearchQueryStore);
+      obj = outer1_4(NativeSearchQueryStore);
+      tmp2 = outer1_3;
+      if (outer1_19()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -256,19 +263,18 @@ let tmp7 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = NativeSearchQueryStore;
   callback(NativeSearchQueryStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_10, closure_9);
+      this.waitFor(outer1_8, outer1_10, outer1_9);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "getManager",
     value(arg0) {
-      return callback4(arg0);
+      return outer1_20(arg0);
     }
   };
   items[1] = obj;
@@ -279,95 +285,95 @@ let tmp7 = (Store) => {
       if (arg1 === undefined) {
         flag = false;
       }
-      return callback4(arg0).getQueryString(flag);
+      return outer1_20(arg0).getQueryString(flag);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isQueryStringEmpty",
     value(arg0) {
-      return callback4(arg0).isQueryStringEmpty();
+      return outer1_20(arg0).isQueryStringEmpty();
     }
   };
   items[4] = {
     key: "getTextInputValue",
     value(arg0) {
-      return callback4(arg0).getTextInputValue();
+      return outer1_20(arg0).getTextInputValue();
     }
   };
   items[5] = {
     key: "isInitialSearchQuery",
     value(arg0) {
-      return callback4(arg0).isInitialSearchQuery();
+      return outer1_20(arg0).isInitialSearchQuery();
     }
   };
   items[6] = {
     key: "getSearchResultsQuery",
     value(arg0) {
-      return callback4(arg0).getSearchResultsQuery();
+      return outer1_20(arg0).getSearchResultsQuery();
     }
   };
   items[7] = {
     key: "isTextInputValueEmpty",
     value(arg0) {
-      return callback4(arg0).isTextInputValueEmpty();
+      return outer1_20(arg0).isTextInputValueEmpty();
     }
   };
   items[8] = {
     key: "getTextValueChangedFromInput",
     value(arg0) {
-      return callback4(arg0).getTextValueChangedFromInput();
+      return outer1_20(arg0).getTextValueChangedFromInput();
     }
   };
   items[9] = {
     key: "hasUserAddedTags",
     value(arg0) {
-      return callback4(arg0).hasUserAddedTags();
+      return outer1_20(arg0).hasUserAddedTags();
     }
   };
   items[10] = {
     key: "getTags",
     value(arg0) {
-      return callback4(arg0).getTags();
+      return outer1_20(arg0).getTags();
     }
   };
   items[11] = {
     key: "getPrefixTag",
     value(arg0) {
-      return callback4(arg0).getPrefixTag();
+      return outer1_20(arg0).getPrefixTag();
     }
   };
   items[12] = {
     key: "isAutocompleteVisible",
     value(arg0) {
-      return callback4(arg0).isAutocompleteVisible();
+      return outer1_20(arg0).isAutocompleteVisible();
     }
   };
   items[13] = {
     key: "getChannelIds",
     value(arg0) {
-      return callback4(arg0).getChannelIds();
+      return outer1_20(arg0).getChannelIds();
     }
   };
   items[14] = {
     key: "getUserIds",
     value(arg0, arg1) {
-      return callback4(arg0).getUserIds(arg1);
+      return outer1_20(arg0).getUserIds(arg1);
     }
   };
   items[15] = {
     key: "isTagsEmpty",
     value(arg0) {
-      return callback4(arg0).isTagsEmpty();
+      return outer1_20(arg0).isTagsEmpty();
     }
   };
   return importDefaultResult(NativeSearchQueryStore, items);
-}(importDefault(dependencyMap[16]).Store);
+})(require("initialize").Store);
 tmp7.displayName = "NativeSearchQueryStore";
-obj = {
+areArraysShallowlyEqual = {
   SEARCH_QUERY_NATIVE_UPDATE: function handleSearchQueryNativeUpdate(searchContext) {
     searchContext = searchContext.searchContext;
-    const searchContextId = arg1(dependencyMap[13]).getSearchContextId(searchContext);
+    const searchContextId = require(10078) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
     let value = map.get(searchContextId);
     if (null == value) {
       const prototype = importDefaultResultResult.prototype;
@@ -381,9 +387,8 @@ obj = {
     map.delete(id.id);
   }
 };
-tmp7 = new tmp7(importDefault(dependencyMap[17]), obj);
-const tmp4 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/search/native/stores/SearchQueryStore.tsx");
+tmp7 = new tmp7(require("dispatcher"), areArraysShallowlyEqual);
+let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchQueryStore.tsx");
 
 export default tmp7;
 export const SearchQueryStateManager = importDefaultResultResult;

@@ -1,53 +1,55 @@
-// Module ID: 15286
-// Function ID: 115391
+// Module ID: 15403
+// Function ID: 117565
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [22, 15404, 15406, 2]
 // Exports: createASTHighlighter
 
-// Module 15286 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15403 (_createForOfIteratorHelperLoose)
+import set from "MAX_MESSAGE_SEARCH_RESULTS_OFFSET";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -97,13 +99,13 @@ function isBlank(arg0) {
   return 0 === arg0.length;
 }
 function analyze(str) {
-  const tmp = importDefault(dependencyMap[0]);
-  const mapped = importDefault(dependencyMap[0])(str.split(/\W+/)).map(stripPossessive);
-  const tmpResult = importDefault(dependencyMap[0])(str.split(/\W+/));
+  const tmp = importDefault(22);
+  const mapped = importDefault(22)(str.split(/\W+/)).map(stripPossessive);
+  const tmpResult = importDefault(22)(str.split(/\W+/));
   const mapped1 = mapped.reject(isBlank).map(lowercase);
   const rejectResult = mapped.reject(isBlank);
   const rejectResult1 = mapped1.reject(isStopWord);
-  return mapped1.reject(isStopWord).map(require(dependencyMap[1]).snowballStem).value();
+  return mapped1.reject(isStopWord).map(require(15404) /* snowballStem */.snowballStem).value();
 }
 function shouldHighlight(arg0, set) {
   let flag = arg2;
@@ -116,7 +118,7 @@ function shouldHighlight(arg0, set) {
   } else if (isStopWord(tmp)) {
     return false;
   } else {
-    const snowballStemResult = require(dependencyMap[1]).snowballStem(tmp);
+    const snowballStemResult = require(15404) /* snowballStem */.snowballStem(tmp);
     if (flag) {
       const tmp6 = _createForOfIteratorHelperLoose(set.values());
       let iter = tmp6();
@@ -131,32 +133,31 @@ function shouldHighlight(arg0, set) {
     } else {
       return set.has(snowballStemResult);
     }
-    const obj = require(dependencyMap[1]);
+    const obj = require(15404) /* snowballStem */;
   }
 }
 function highlightAST(content, arg1, arg2) {
-  const require = arg1;
-  const importDefault = arg2;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
   if (Array.isArray(content)) {
     const item = content.forEach((arg0) => {
-      callback2(arg0, arg1, arg2);
+      outer1_12(arg0, closure_0, closure_1);
       return arg0;
     });
   } else if ("list" === content.type) {
     const items = content.items;
     const item1 = items.forEach((arg0) => {
-      callback2(arg0, arg1, arg2);
+      outer1_12(arg0, closure_0, closure_1);
       return arg0;
     });
   } else {
     if ("string" === typeof content.content) {
       if ("codeBlock" !== content.type) {
         const items1 = [];
-        const dependencyMap = items1;
         const parts = content.content.split(/(\W+)/g);
         const item2 = parts.forEach((content) => {
           let arr = closure_3;
-          if (callback(content, arg1, arg2)) {
+          if (outer1_11(content, closure_0, closure_1)) {
             if (arr.length > 0) {
               let obj = { type: "text", content: closure_3 };
               arr = items1.push(obj);
@@ -169,8 +170,8 @@ function highlightAST(content, arg1, arg2) {
           }
         });
         if (items1.length > 0) {
-          if (length.length > 0) {
-            let obj = { type: "text", content: length };
+          if (set.length > 0) {
+            let obj = { type: "text", content: set };
             items1.push(obj);
           }
           if ("text" === content.type) {
@@ -190,9 +191,8 @@ function highlightAST(content, arg1, arg2) {
   }
   return content;
 }
-const set = new Set([]);
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("lib/search/EnglishAnalyzer.tsx");
+let set = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+const result = set.fileFinishedImporting("lib/search/EnglishAnalyzer.tsx");
 
 export { analyze };
 export { shouldHighlight };
@@ -202,21 +202,20 @@ export const createASTHighlighter = function createASTHighlighter(arg0) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const require = flag;
-  let importDefault;
-  let dependencyMap;
-  let tmp = arg0.length >= require(dependencyMap[2]).SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH;
+  let c1;
+  let set;
+  let tmp = arg0.length >= flag(set[2]).SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH;
   if (tmp) {
-    tmp = arg0.length <= require(dependencyMap[2]).SEARCH_PARTIAL_NAME_MATCH_MAX_QUERY_LENGTH;
+    tmp = arg0.length <= flag(set[2]).SEARCH_PARTIAL_NAME_MATCH_MAX_QUERY_LENGTH;
   }
-  importDefault = tmp;
-  dependencyMap = new Set(analyze(arg0));
+  c1 = tmp;
+  set = new Set(analyze(arg0));
   return (arg0) => {
-    let tmp3 = tmp;
-    if (closure_12) {
+    let tmp3 = c1;
+    if (c1) {
       tmp3 = flag;
     }
-    closure_12(arg0, set, tmp3);
+    outer1_12(arg0, set, tmp3);
     return arg0;
   };
 };

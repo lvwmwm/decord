@@ -1,9 +1,20 @@
-// Module ID: 6956
-// Function ID: 55595
+// Module ID: 6961
+// Function ID: 55629
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1838, 1849, 4045, 1856, 1855, 566, 686, 2]
 
-// Module 6956 (_isNativeReflectConstruct)
+// Module 6961 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ExperimentBuckets from "ExperimentBuckets";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import { ExperimentBuckets } from "ExperimentBuckets";
+import { Environments } from "Environments";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,36 +25,28 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function init() {
-  let closure_10 = arg1(dependencyMap[9]).isStaffEnv(currentUser.getCurrentUser());
+  let closure_10 = require(1855) /* getEnv */.isStaffEnv(currentUser.getCurrentUser());
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-const ExperimentBuckets = arg1(dependencyMap[7]).ExperimentBuckets;
-const Environments = arg1(dependencyMap[8]).Environments;
 let tmp2 = "production" === Environments.DEVELOPMENT;
 if (!tmp2) {
   const _window = window;
   tmp2 = window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING;
 }
-let tmp3 = (Store) => {
+let closure_10 = tmp2;
+let tmp3 = ((Store) => {
   class DeveloperExperimentStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, DeveloperExperimentStore);
+      tmp = outer1_2(this, DeveloperExperimentStore);
       items1 = [...items];
-      obj = closure_5(DeveloperExperimentStore);
-      tmp2 = closure_4;
-      if (closure_11()) {
+      obj = outer1_5(DeveloperExperimentStore);
+      tmp2 = outer1_4;
+      if (outer1_11()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -52,35 +55,34 @@ let tmp3 = (Store) => {
       return tmp2Result;
     }
   }
-  const arg1 = DeveloperExperimentStore;
   callback2(DeveloperExperimentStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const DeveloperExperimentStore = this;
-      this.waitFor(closure_8, closure_7);
+      const self = this;
+      this.waitFor(outer1_8, outer1_7);
       Object.defineProperties(this, {
         isDeveloper: {
           configurable: false,
           get() {
-            return closure_10;
+            return outer2_10;
           },
           set() {
 
           }
         }
       });
-      callback4();
+      outer1_12();
       const timerId = setTimeout(() => Object.freeze(self));
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getExperimentDescriptor",
     value() {
       let tmp = null;
-      if (closure_10) {
-        const obj = { "Null": true, "Null": true, "Null": true, "Null": true, bucket: TREATMENT_1.TREATMENT_1 };
+      if (outer1_10) {
+        const obj = { type: "developer", name: "discord_dev_testing", revision: 1, override: true, bucket: outer1_9.TREATMENT_1 };
         tmp = obj;
       }
       return tmp;
@@ -88,9 +90,9 @@ let tmp3 = (Store) => {
   };
   items[1] = obj;
   return callback(DeveloperExperimentStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "DeveloperExperimentStore";
-tmp3 = new tmp3(importDefault(dependencyMap[11]), { CONNECTION_OPEN: init, OVERLAY_INITIALIZE: init, CURRENT_USER_UPDATE: init });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("stores/DeveloperExperimentStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), { CONNECTION_OPEN: init, OVERLAY_INITIALIZE: init, CURRENT_USER_UPDATE: init });
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/DeveloperExperimentStore.tsx");
 
 export default tmp3;

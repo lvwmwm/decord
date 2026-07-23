@@ -1,40 +1,42 @@
-// Module ID: 12183
-// Function ID: 93659
+// Module ID: 12297
+// Function ID: 95810
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: []
+// Dependencies: [57, 27, 1391, 1348, 1838, 3758, 3767, 1849, 653, 6979, 7633, 1392, 477, 1212, 4593, 4320, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12183 (createVoiceChannelLinkEmbed)
-let closure_3 = importDefault(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const getGuildAcronym = arg1(dependencyMap[2]).getGuildAcronym;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const Permissions = arg1(dependencyMap[8]).Permissions;
-const InviteTypes = arg1(dependencyMap[9]).InviteTypes;
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
+// Module 12297 (createVoiceChannelLinkEmbed)
+import _slicedToArray from "_slicedToArray";
+import { Image } from "get ActivityIndicator";
+import { getGuildAcronym } from "isGuildOwner";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+import { InviteTypes } from "InviteSendStates";
 
-export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(code, arg1) {
+const require = arg1;
+const result = require("isGuildOwner").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
+
+export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(code, closure_2) {
   let baseColors;
   let colors;
   const tmp = callback(code.split("/"), 2);
-  const channel = channel.getChannel(tmp[1]);
-  const guild = guild.getGuild(tmp[0]);
+  channel = channel.getChannel(tmp[1]);
+  guild = guild.getGuild(tmp[0]);
   if (null != channel) {
     if (channel.isGuildVocal()) {
       if (null != guild) {
         if (closure_8.can(Permissions.VIEW_CHANNEL, channel)) {
           if (closure_8.can(Permissions.CONNECT, channel)) {
-            ({ colors, baseColors } = importDefault(dependencyMap[10])(arg1));
+            ({ colors, baseColors } = importDefault(7633)(closure_2));
             let icon;
             if (null != guild) {
               icon = guild.icon;
             }
             if (null != icon) {
-              let obj1 = importDefault(dependencyMap[11]);
+              let obj1 = importDefault(1392);
               let obj = {};
               let id;
               if (null != guild) {
@@ -54,34 +56,34 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             }
             obj = {};
             const merged = Object.assign(baseColors);
-            const tmp8 = importDefault(dependencyMap[10])(arg1);
+            const tmp8 = importDefault(7633)(closure_2);
             let str;
             if (obj5.isAndroid()) {
               str = "";
             }
             obj["headerText"] = str;
             obj["headerColor"] = colors.headerColor;
-            const obj5 = arg1(dependencyMap[12]);
-            const intl = arg1(dependencyMap[13]).intl;
+            obj5 = require(477) /* set */;
+            const intl = require(1212) /* getSystemLocale */.intl;
             const string = intl.string;
-            const t = arg1(dependencyMap[13]).t;
+            const t = require(1212) /* getSystemLocale */.t;
             if (isGuildStageVoiceResult) {
-              let stringResult = string(t.7vb2cc);
+              let stringResult = string(t["7vb2cc"]);
             } else {
               stringResult = string(t.gpqgah);
             }
             obj["acceptLabelText"] = stringResult;
             obj["onlineText"] = undefined;
             obj["memberText"] = undefined;
-            const isGuildStageVoiceResult = channel.isGuildStageVoice();
-            const assetSource = Image.resolveAssetSource(arg1(dependencyMap[14]).getChannelIcon(channel));
+            isGuildStageVoiceResult = channel.isGuildStageVoice();
+            const assetSource = Image.resolveAssetSource(require(4593) /* getThreadChannelIcon */.getChannelIcon(channel));
             let uri;
             if (null != assetSource) {
               uri = assetSource.uri;
             }
             obj["channelIcon"] = uri;
-            const obj6 = arg1(dependencyMap[14]);
-            obj["titleText"] = arg1(dependencyMap[15]).computeChannelName(channel, closure_10, closure_9);
+            const obj6 = require(4593) /* getThreadChannelIcon */;
+            obj["titleText"] = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_10, closure_9);
             obj["titleColor"] = colors.titleColor;
             let tmp35;
             if (null != guildIconURL) {
@@ -95,9 +97,9 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj["acceptLabelColor"] = colors.acceptLabelGreenColor;
             obj["embedCanBeTapped"] = true;
             obj["canBeAccepted"] = true;
-            const intl2 = arg1(dependencyMap[13]).intl;
+            const intl2 = require(1212) /* getSystemLocale */.intl;
             obj1 = { guildName: guild.name };
-            obj["channelName"] = intl2.formatToPlainString(arg1(dependencyMap[13]).t.2wimj5, obj1);
+            obj["channelName"] = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["2wimj5"], obj1);
             obj["subtitle"] = "";
             obj["type"] = InviteTypes.GUILD;
             obj["inviteSplash"] = undefined;

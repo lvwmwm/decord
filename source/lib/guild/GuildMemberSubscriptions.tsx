@@ -1,26 +1,27 @@
-// Module ID: 5658
-// Function ID: 48611
+// Module ID: 5663
+// Function ID: 48638
 // Name: GuildMemberSubscriptions
-// Dependencies: []
+// Dependencies: [6, 7, 664, 4015, 21, 3, 22, 2]
 
-// Module 5658 (GuildMemberSubscriptions)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const MINUTE = importDefault(dependencyMap[2]).Millis.MINUTE;
-const tmp2 = () => {
+// Module 5663 (GuildMemberSubscriptions)
+import apply from "apply";
+import set from "set";
+
+const require = arg1;
+const MINUTE = require("set").Millis.MINUTE;
+let tmp2 = (() => {
   class GuildMemberSubscriptions {
     constructor(arg0) {
-      GuildMemberSubscriptions = this;
-      tmp = closure_3(this, GuildMemberSubscriptions);
+      self = this;
+      tmp = outer1_3(this, self);
       this._subscriptions = {};
       this._unsubscriptions = {};
-      delayedCall = new GuildMemberSubscriptions(closure_2[3]).DelayedCall(closure_5, () => self.flushUnsubscriptions());
+      delayedCall = new GuildMemberSubscriptions(outer1_2[3]).DelayedCall(outer1_5, () => self.flushUnsubscriptions());
       this._unsubscribe = delayedCall;
       this._onChange = arg0;
       return;
     }
   }
-  const arg1 = GuildMemberSubscriptions;
   let obj = {
     key: "reset",
     value() {
@@ -38,15 +39,15 @@ const tmp2 = () => {
       if (null == obj) {
         obj = {};
       }
-      return callback(closure_2[4]).keys(obj);
+      return outer1_1(outer1_2[4]).keys(obj);
     }
   };
   items[1] = obj;
   obj = {
     key: "clear",
     value(arg0) {
-      delete r2[r1];
-      delete r0[r1];
+      delete tmp3[tmp2];
+      delete tmp[tmp2];
     }
   };
   items[2] = obj;
@@ -111,18 +112,16 @@ const tmp2 = () => {
   items[7] = {
     key: "checkForLeaks",
     value(arg0, arg1) {
-      const tmp = this._subscriptions[arg0];
       let tmp2;
-      if (null != tmp) {
+      if (null != this._subscriptions[arg0]) {
         tmp2 = tmp[arg1];
       }
       let num = 0;
       if (null != tmp2) {
         num = tmp2;
       }
-      const tmp3 = this._unsubscriptions[arg0];
       let tmp4;
-      if (null != tmp3) {
+      if (null != this._unsubscriptions[arg0]) {
         tmp4 = tmp3[arg1];
       }
       let num2 = 0;
@@ -131,7 +130,7 @@ const tmp2 = () => {
       }
       const diff = num - num2;
       if (diff > 5) {
-        let tmp8 = callback(closure_2[5]);
+        let tmp8 = outer1_1(outer1_2[5]);
         const prototype = tmp8.prototype;
         tmp8 = new tmp8("GuildMemberSubscriptions");
         const _HermesInternal = HermesInternal;
@@ -142,35 +141,35 @@ const tmp2 = () => {
   items[8] = {
     key: "flushUnsubscriptions",
     value() {
-      const self = this;
-      const GuildMemberSubscriptions = this;
+      let self = this;
+      self = this;
       if (!obj.isEmpty(this._unsubscriptions)) {
-        const item = callback(closure_2[6]).forEach(self._unsubscriptions, (arg0, _pending) => {
-          const self = tmp;
-          const item = callback(closure_2[6]).forEach(arg0, (arg0, arg1) => {
+        let item = outer1_1(outer1_2[6]).forEach(self._unsubscriptions, (arg0, _pending) => {
+          const self = tmp3;
+          const item = outer2_1(outer2_2[6]).forEach(arg0, (arg0, arg1) => {
             let num = 0;
-            if (null != tmp[arg1]) {
-              num = tmp2;
+            if (null != tmp3[arg1]) {
+              num = tmp4;
             }
-            tmp[arg1] = num - arg0;
-            if (tmp[arg1] <= 0) {
-              delete r0[r1];
+            tmp3[arg1] = num - arg0;
+            if (tmp3[arg1] <= 0) {
+              delete tmp[tmp2];
             }
           });
-          const arr = callback(closure_2[6]);
+          const arr = outer2_1(outer2_2[6]);
           if (obj.isEmpty(self._subscriptions[_pending])) {
             const _subscriptions = self._subscriptions;
-            delete r2[r4];
+            delete tmp[tmp2];
           }
           self._onChange(_pending, self.get(_pending));
         });
         self._unsubscriptions = {};
-        const arr = callback(closure_2[6]);
+        let arr = outer1_1(outer1_2[6]);
       }
     }
   };
   return callback(GuildMemberSubscriptions, items);
-}();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("lib/guild/GuildMemberSubscriptions.tsx");
+})();
+const result = require("set").fileFinishedImporting("lib/guild/GuildMemberSubscriptions.tsx");
 
 export default tmp2;

@@ -1,38 +1,39 @@
-// Module ID: 5087
-// Function ID: 44299
+// Module ID: 5090
+// Function ID: 44318
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 5087 (_isNativeReflectConstruct)
+// Module 5090 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let obj = {};
+let obj = { enable_recently_active: "Enable recently active channels", theme_setting_in_account_sheet: "Show theme settings in the Account action sheet", nav_experiment_server_drawer_enabled: "[NavI] Enable expandable server drawer", show_icymi_debug_scores: "Show ICYMI debug scores", channel_list_scrim: "Dim the channel list when chat appears", mana_radio_large_variant: "Larger Radio", mana_checkbox_large_variant: "Larger Checkbox", mana_switch_large_variant: "Larger Switch", show_header_debug_info: "Show header component debug overlays" };
 let closure_6 = {};
-let tmp2 = (DeviceSettingsStore) => {
+let tmp2 = ((DeviceSettingsStore) => {
   class DesignTogglesStore {
     constructor() {
       self = this;
       tmp = DesignTogglesStore(this, DesignTogglesStore);
-      obj = closure_3(DesignTogglesStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(DesignTogglesStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,19 +42,18 @@ let tmp2 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = DesignTogglesStore;
   callback2(DesignTogglesStore, DeviceSettingsStore);
   let obj = {
     key: "getUserAgnosticState",
     value() {
-      return { toggleStates: closure_6 };
+      return { toggleStates: outer1_6 };
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "initialize",
     value(toggleStates) {
-      for (const key10006 in closure_5) {
+      for (const key10006 in outer1_5) {
         let tmp6 = key10006;
         let tmp2;
         if (null != arg0) {
@@ -68,8 +68,9 @@ let tmp2 = (DeviceSettingsStore) => {
         if (tmp4) {
           tmp4 = tmp2;
         }
-        let tmp5 = closure_6;
-        closure_6[key10006] = tmp4;
+        let tmp5 = outer1_6;
+        outer1_6[key10006] = tmp4;
+        continue;
       }
     }
   };
@@ -77,38 +78,38 @@ let tmp2 = (DeviceSettingsStore) => {
   obj = {
     key: "get",
     value(arg0) {
-      return null != closure_6[arg0] && closure_6[arg0];
+      return null != outer1_6[arg0] && outer1_6[arg0];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "set",
     value(arg0, arg1) {
-      closure_6[arg0] = arg1;
+      outer1_6[arg0] = arg1;
       return arg1;
     }
   };
   items[4] = {
     key: "all",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[5] = {
     key: "allWithDescriptions",
     value() {
-      const entries = Object.entries(closure_6);
+      const entries = Object.entries(outer1_6);
       return entries.map((arg0) => {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp, tmp2, closure_5[tmp]];
+        const items = [tmp, tmp2, outer2_5[tmp]];
         return items;
       });
     }
   };
   return callback(DesignTogglesStore, items);
-}(importDefault(dependencyMap[5]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "DevToolsDesignTogglesStore";
 tmp2.persistKey = "DevToolsDesignTogglesStore";
 obj = {
@@ -116,8 +117,8 @@ obj = {
     closure_6[toggle.toggle] = toggle.value;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/devtools/design_toggles/DesignTogglesStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/devtools/design_toggles/DesignTogglesStore.tsx");
 
 export default tmp2;
 export const toggles = obj;

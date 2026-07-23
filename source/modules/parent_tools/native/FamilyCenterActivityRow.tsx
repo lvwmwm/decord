@@ -1,55 +1,60 @@
-// Module ID: 13689
-// Function ID: 103608
+// Module ID: 13803
+// Function ID: 105764
 // Name: memoResult1
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 6769, 6770, 653, 33, 4130, 689, 1273, 44, 624, 21, 4126, 3969, 6828, 5515, 9171, 1212, 2198, 13804, 13807, 13808, 2]
 // Exports: default
 
-// Module 13689 (memoResult1)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const ACTION_TO_TEXT = arg1(dependencyMap[4]).ACTION_TO_TEXT;
-const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[6]));
-let obj1 = arg1(dependencyMap[7]);
+// Module 13803 (memoResult1)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { ACTION_TO_TEXT } from "items";
+import { GuildFeatures } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let obj = {};
-obj = { "Bool(false)": "center", "Bool(false)": null, "Bool(false)": "hidden", "Bool(false)": true, "Bool(false)": "/assets/images/native/icons", borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+obj = { display: "flex", flexDirection: "row", borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
 obj.container = obj;
-obj1 = { borderRadius: arg1(dependencyMap[9]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[9]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.avatar = obj1;
-obj.avatarContainer = { cameraOpportunityDuration: 15.1, FITNESS: null };
-obj.textContainer = {};
-obj.text = { display: null, flexDirection: null, alignItems: null };
-let closure_10 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+obj.avatar = _createForOfIteratorHelperLoose;
+obj.avatarContainer = { marginRight: 12, alignItems: "flex-start" };
+obj.textContainer = { display: "flex", flexDirection: "column", flexShrink: 1 };
+obj.text = { display: "flex", flexDirection: "row", flexShrink: 1 };
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((action) => {
   action = action.action;
-  const arg1 = action;
   const tmp = callback3();
   const value = ACTION_TO_TEXT.get(action.display_type);
-  importDefault(dependencyMap[10])(value, "No text for action type");
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(action.entity_id));
+  importDefault(44)(value, "No text for action type");
+  let obj = action(624);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getUser(action.entity_id));
   if (null == stateFromStores) {
     return null;
   } else {
-    let obj1 = importDefault(dependencyMap[12]);
+    let obj1 = importDefault(21);
     const extractTimestampResult = obj1.extractTimestamp(action.event_id);
     obj = { style: tmp.container };
     obj = { style: tmp.avatarContainer };
     obj1 = { avatarStyle: tmp.avatar, user: stateFromStores, guildId: undefined, disablePlaceholder: true, avatarDecoration: stateFromStores.avatarDecoration };
-    obj.children = callback(arg1(dependencyMap[9]).Avatar, obj1);
+    obj.children = callback(action(1273).Avatar, obj1);
     const items1 = [callback(View, obj), ];
     const obj2 = { style: tmp.textContainer };
-    const obj3 = { 2080943186: "isArray", -1626713361: "isArray", -1017926443: "isArray", -708255902: "useStateFromStores", 1451975084: "", style: tmp.text, children: importDefault(dependencyMap[14]).getName(stateFromStores) };
-    const items2 = [callback(arg1(dependencyMap[13]).Text, obj3), ];
-    const obj4 = {};
-    const obj8 = importDefault(dependencyMap[14]);
+    const obj3 = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: importDefault(3969).getName(stateFromStores) };
+    const items2 = [callback(action(4126).Text, obj3), ];
+    const obj4 = { variant: "text-xs/medium", color: "channels-default" };
+    const obj8 = importDefault(3969);
     const _Date = Date;
     const date = new Date(extractTimestampResult);
-    obj4.children = arg1(dependencyMap[15]).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
-    items2[1] = callback(arg1(dependencyMap[13]).Text, obj4);
+    obj4.children = action(6828).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
+    items2[1] = callback(action(4126).Text, obj4);
     obj2.children = items2;
     items1[1] = callback2(View, obj2);
     obj.children = items1;
@@ -57,29 +62,27 @@ const memoResult = importAllResult.memo((action) => {
   }
 });
 memoResult.displayName = "FamilyCenterActivityRowUser";
-let obj5 = arg1(dependencyMap[7]);
-const obj2 = {};
-const obj3 = { width: "Array", height: "isArray", accessible: "construct", disabled: "valueOf", it: "Array", includes: "isArray", borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+let obj2 = {};
+let obj3 = { display: "flex", alignItems: "center", flexDirection: "row", borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
 obj2.container = obj3;
-const tmp2 = arg1(dependencyMap[6]);
-obj2.avatar = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGHEST };
-obj5 = { color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
-obj2.avatarText = obj5;
-obj2.text = {};
-obj2.headerContainer = {};
+let obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, height: 40, width: 40, margin: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, marginRight: 12 };
+obj2.avatar = obj4;
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
+obj2.avatarText = _createForOfIteratorHelperLoose;
+obj2.text = { display: "flex", flexDirection: "column", flexShrink: 1 };
+obj2.headerContainer = { display: "flex", flexDirection: "row" };
 obj2.badge = { marginRight: 4 };
 obj2.header = { paddingRight: 16 };
-obj2.headerAndIconContainer = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
-let closure_12 = obj5.createStyles(obj2);
+obj2.headerAndIconContainer = { display: "flex", flexDirection: "row", alignItems: "center" };
+let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj2);
 const memoResult1 = importAllResult.memo((action) => {
   action = action.action;
-  const arg1 = action;
   const tmp = callback4();
-  let obj = arg1(dependencyMap[11]);
+  let obj = action(624);
   const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(action.entity_id));
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(action.entity_id));
   const value = ACTION_TO_TEXT.get(action.display_type);
-  importDefault(dependencyMap[10])(value, "No text for action type");
+  importDefault(44)(value, "No text for action type");
   if (undefined === stateFromStores) {
     return null;
   } else {
@@ -93,31 +96,31 @@ const memoResult1 = importAllResult.memo((action) => {
     obj = {};
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp);
     obj.guild = stateFromStores;
-    obj.size = arg1(dependencyMap[16]).GuildIconSizes.NORMAL;
+    obj.size = action(5515).GuildIconSizes.NORMAL;
     obj.animate = true;
-    const items1 = [callback(importDefault(dependencyMap[16]), obj), ];
+    const items1 = [callback(importDefault(5515), obj), ];
     const obj1 = { style: tmp.text };
     const obj2 = { style: tmp.headerContainer };
     const obj3 = { style: tmp.headerAndIconContainer };
     let tmp14 = null;
     if (hasItem) {
-      const obj4 = { style: tmp.badge, guild: stateFromStores, size: importDefault(dependencyMap[17]).Sizes.SMALL, disableColor: true };
-      tmp14 = callback(importDefault(dependencyMap[17]), obj4);
-      const tmp18 = importDefault(dependencyMap[17]);
+      const obj4 = { style: tmp.badge, guild: stateFromStores, size: importDefault(9171).Sizes.SMALL, disableColor: true };
+      tmp14 = callback(importDefault(9171), obj4);
+      const tmp18 = importDefault(9171);
     }
     const items2 = [tmp14, ];
-    const obj5 = { 2080943186: "isArray", -1626713361: "isArray", -1017926443: "isArray", -708255902: "useStateFromStores", 1451975084: "", style: tmp.header, children: stateFromStores.name };
-    items2[1] = callback(arg1(dependencyMap[13]).Text, obj5);
+    const obj5 = { style: tmp.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: stateFromStores.name };
+    items2[1] = callback(action(4126).Text, obj5);
     obj3.children = items2;
     obj2.children = closure_9(View, obj3);
     const items3 = [callback(View, obj2), ];
     let tmp22 = null;
     if (undefined !== stateFromStores.approximateMemberCount) {
-      const obj6 = {};
-      const intl = arg1(dependencyMap[18]).intl;
+      const obj6 = { variant: "text-xs/medium", color: "channels-default" };
+      const intl = action(1212).intl;
       const obj7 = { members: stateFromStores.approximateMemberCount };
-      obj6.children = intl.format(importDefault(dependencyMap[19]).5JmNgg, obj7);
-      tmp22 = callback(arg1(dependencyMap[13]).Text, obj6);
+      obj6.children = intl.format(importDefault(2198)["5JmNgg"], obj7);
+      tmp22 = callback(action(4126).Text, obj6);
     }
     items3[1] = tmp22;
     obj1.children = items3;
@@ -127,8 +130,7 @@ const memoResult1 = importAllResult.memo((action) => {
   }
 });
 memoResult1.displayName = "FamilyCenterActivityRowGuild";
-const obj4 = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGHEST };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityRow.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityRow.tsx");
 
 export default function FamilyCenterActivityRow(action) {
   let claimed;
@@ -139,13 +141,13 @@ export default function FamilyCenterActivityRow(action) {
   let skuId;
   let subscriptionPlanId;
   action = action.action;
-  let obj = arg1(dependencyMap[15]);
+  let obj = require(6828) /* getActivityTypeTextConfigs */;
   if (!obj.isUserAction(action)) {
-    let obj1 = arg1(dependencyMap[15]);
+    let obj1 = require(6828) /* getActivityTypeTextConfigs */;
     if (!obj1.isGuildAction(action)) {
-      let obj2 = arg1(dependencyMap[15]);
+      let obj2 = require(6828) /* getActivityTypeTextConfigs */;
       if (!obj2.isPurchase(action)) {
-        let obj3 = arg1(dependencyMap[15]);
+        let obj3 = require(6828) /* getActivityTypeTextConfigs */;
         if (!obj3.isGift(action)) {
           return null;
         }
@@ -158,7 +160,7 @@ export default function FamilyCenterActivityRow(action) {
     if (null != purchaseInfo) {
       obj = {};
       ({ sku_id: obj11.skuId, subscription_plan_id: obj11.subscriptionPlanId, total: obj11.total, currency: obj11.currency } = purchaseInfo);
-      tmp23 = callback(importDefault(dependencyMap[20]), obj);
+      tmp23 = callback(importDefault(13804), obj);
     }
     return tmp23;
   } else {
@@ -167,16 +169,16 @@ export default function FamilyCenterActivityRow(action) {
       if (null == giftInfo) {
         return null;
       } else {
-        const giftRowDisplayInfo = arg1(dependencyMap[21]).getGiftRowDisplayInfo(giftInfo);
+        const giftRowDisplayInfo = require(13807) /* formatGiftDate */.getGiftRowDisplayInfo(giftInfo);
         ({ skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt } = giftRowDisplayInfo);
         obj = { skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt };
-        return callback(importDefault(dependencyMap[22]), obj);
+        return callback(importDefault(13808), obj);
       }
     } else {
       obj1 = {};
       if (obj8.isUserAction(action)) {
         obj2 = { action };
-        let tmp14Result = tmp14(memoResult, obj2);
+        let tmp14Result = tmp14(closure_11, obj2);
       } else {
         obj3 = { action };
         tmp14Result = tmp14(memoResult1, obj3);
@@ -184,7 +186,7 @@ export default function FamilyCenterActivityRow(action) {
       obj1.children = tmp14Result;
       return callback(View, obj1);
     }
-    const obj6 = arg1(dependencyMap[15]);
+    obj6 = require(6828) /* getActivityTypeTextConfigs */;
   }
-  const obj5 = arg1(dependencyMap[15]);
+  obj5 = require(6828) /* getActivityTypeTextConfigs */;
 };

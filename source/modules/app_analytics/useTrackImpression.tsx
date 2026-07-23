@@ -1,10 +1,23 @@
-// Module ID: 8553
-// Function ID: 67998
+// Module ID: 8559
+// Function ID: 68035
 // Name: trackImpression
-// Dependencies: []
+// Dependencies: [31, 1348, 1906, 3947, 676, 480, 675, 686, 4324, 636, 4338, 4559, 2]
 // Exports: default
 
-// Module 8553 (trackImpression)
+// Module 8559 (trackImpression)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import withEqualityFn from "withEqualityFn";
+import isThrottled from "isThrottled";
+
+let closure_10;
+let closure_11;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function trackImpression(type, arg1, arg2) {
   let name;
   let properties;
@@ -17,7 +30,7 @@ function trackImpression(type, arg1, arg2) {
     flag2 = false;
   }
   ({ name, type, properties } = type);
-  if (type.type === arg1(dependencyMap[5]).ImpressionTypes.MODAL) {
+  if (type.type === require(480) /* isThrottled */.ImpressionTypes.MODAL) {
     if (null == type.name) {
       let obj = callback4();
     }
@@ -40,68 +53,60 @@ function trackImpression(type, arg1, arg2) {
     channel_id = channelId.getChannelId(guild_id);
   }
   obj = { impression_type: type, location: callback3() };
-  const obj2 = arg1(dependencyMap[6]);
-  const merged = Object.assign(arg1(dependencyMap[8]).collectGuildAnalyticsMetadata(guild_id));
-  const obj4 = arg1(dependencyMap[8]);
-  const merged1 = Object.assign(arg1(dependencyMap[8]).collectChannelAnalyticsMetadata(channel.getChannel(channel_id)));
+  const obj2 = require(675) /* expandLocation */;
+  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id));
+  const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
+  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel.getChannel(channel_id)));
   const merged2 = Object.assign(properties);
   const result = obj2.expandEventProperties(obj);
   if (flag) {
     callback2(null, null);
   } else {
     if (tmp13) {
-      arg1(dependencyMap[6]).debugLogEvent(name, result);
-      callback5(name, result);
-      const obj6 = arg1(dependencyMap[6]);
+      require(675) /* expandLocation */.debugLogEvent(name, result);
+      isThrottled(name, result);
+      const obj6 = require(675) /* expandLocation */;
     }
     callback2(name, result);
-    const tmp13 = null != name && null != type;
+    tmp13 = null != name && null != type;
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ setCurrentImpression: closure_7, cleanupImpression: closure_8, setDebugTrackedData: closure_9, getLocation: closure_10, getImpressionStack: closure_11 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { analyticEventConfigs: arg1(dependencyMap[6]).AnalyticEventConfigs, dispatcher: importDefault(dependencyMap[7]), TRACK_ACTION_NAME: "TRACK" };
-let closure_12 = obj.trackMaker(obj);
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/app_analytics/useTrackImpression.tsx");
+({ setCurrentImpression: closure_7, cleanupImpression: closure_8, setDebugTrackedData: closure_9, getLocation: closure_10, getImpressionStack: closure_11 } = withEqualityFn);
+isThrottled = { analyticEventConfigs: require("expandLocation").AnalyticEventConfigs, dispatcher: require("dispatcher"), TRACK_ACTION_NAME: "TRACK" };
+isThrottled = isThrottled.trackMaker(isThrottled);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_analytics/useTrackImpression.tsx");
 
 export default function useTrackImpression(arg0) {
   let obj = arg1;
-  const arg1 = arg0;
+  let closure_0 = arg0;
   if (arg1 === undefined) {
-    obj = { 0: true, 9223372036854775807: true };
+    obj = { disableTrack: false, trackOnInitialLoad: false };
   }
-  const importDefault = obj;
   const dependencyMap = arg2;
   let React;
-  let closure_4;
+  let _isNativeReflectConstruct;
   function trackImpressionEffect() {
-    const tmp = !obj(arg2[9])(ref.current, arg0);
+    const tmp = !obj(636)(ref.current, obj);
     if (tmp) {
-      ref.current = arg0;
+      ref.current = obj;
     }
-    const tmp4 = !obj(arg2[9])(ref2.current, arg2);
+    const tmp4 = !obj(636)(ref2.current, dependencyMap);
     if (tmp4) {
-      ref2.current = arg2;
+      ref2.current = dependencyMap;
     }
-    const obj = {};
-    const merged = Object.assign(arg0);
-    obj["sequenceId"] = obj(arg2[10])("impression_");
-    const arg0 = obj;
-    callback(obj, obj.disableTrack);
+    obj = {};
+    const merged = Object.assign(obj);
+    obj["sequenceId"] = obj(4338)("impression_");
+    outer1_13(obj, obj.disableTrack);
     return () => {
       if (null != obj) {
-        callback(obj);
+        outer2_8(obj);
       }
     };
   }
   React = React.useRef(undefined);
-  closure_4 = React.useRef(undefined);
-  importDefault(dependencyMap[11])(() => {
+  _isNativeReflectConstruct = React.useRef(undefined);
+  obj(4559)(() => {
     if (obj.trackOnInitialLoad) {
       return trackImpressionEffect();
     }

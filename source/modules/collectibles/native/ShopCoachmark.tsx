@@ -1,48 +1,42 @@
-// Module ID: 15360
-// Function ID: 116979
+// Module ID: 15477
+// Function ID: 119153
 // Name: CoachmarkImg
-// Dependencies: []
+// Dependencies: [31, 1345, 33, 4130, 1273, 15473, 689, 1212, 8563, 2]
 // Exports: default
 
-// Module 15360 (CoachmarkImg)
+// Module 15477 (CoachmarkImg)
+import result from "result";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function CoachmarkImg(arg0) {
   let decorationAsset;
   let source;
   ({ source, decorationAsset } = arg0);
-  const obj = { style: callback().image, source, avatarDecoration: { asset: decorationAsset }, size: arg1(dependencyMap[4]).AvatarSizes.XXLARGE };
-  return jsx(arg1(dependencyMap[4]).Avatar, obj);
+  const obj = { style: callback().image, source, avatarDecoration: { asset: decorationAsset }, size: require(1273) /* Button */.AvatarSizes.XXLARGE };
+  return jsx(require(1273) /* Button */.Avatar, { style: callback().image, source, avatarDecoration: { asset: decorationAsset }, size: require(1273) /* Button */.AvatarSizes.XXLARGE });
 }
-let closure_3 = importAll(dependencyMap[0]);
-const ContentDismissActionType = arg1(dependencyMap[1]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[3]).createStyles({ image: { marginTop: 12 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/native/ShopCoachmark.tsx");
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ image: { marginTop: 12 } });
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/ShopCoachmark.tsx");
 
 export default function ShopCoachmark(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const arg1 = markAsDismissed;
   const visible = markAsDismissed.visible;
-  const importDefault = visible;
   const title = markAsDismissed.title;
-  const dependencyMap = title;
   const description = markAsDismissed.description;
-  const React = description;
   const avatarSrc = markAsDismissed.avatarSrc;
-  const ContentDismissActionType = avatarSrc;
   const decorationAsset = markAsDismissed.decorationAsset;
-  const jsx = decorationAsset;
   const navigateToShop = markAsDismissed.navigateToShop;
-  let closure_6 = navigateToShop;
   const renderImgComponent = markAsDismissed.renderImgComponent;
-  const CoachmarkImg = renderImgComponent;
   const items = [avatarSrc, decorationAsset, description, renderImgComponent, markAsDismissed, title, visible, navigateToShop];
-  const memo = React.useMemo(() => {
+  const memo = description.useMemo(() => {
     const obj = {
       title,
       description,
       onDismiss() {
-        callback(constants.USER_DISMISS);
+        outer1_0(avatarSrc.USER_DISMISS);
       },
       visible
     };
@@ -51,19 +45,19 @@ export default function ShopCoachmark(markAsDismissed) {
       str = "top";
     }
     obj.position = str;
-    const obj2 = markAsDismissed(title[5]);
+    obj2 = markAsDismissed(title[5]);
     let PX_12;
     if (obj3.isYouNavFloating()) {
       PX_12 = visible(title[6]).space.PX_12;
     }
     obj.offsetY = PX_12;
-    obj.renderImgComponent = null != renderImgComponent ? renderImgComponent : () => callback2(closure_7, { source: closure_4, decorationAsset: callback2 });
+    obj.renderImgComponent = null != renderImgComponent ? renderImgComponent : (() => decorationAsset(renderImgComponent, { source: outer1_4, decorationAsset: outer1_5 }));
     const intl = markAsDismissed(title[7]).intl;
     obj.buttonLabel = intl.string(markAsDismissed(title[7]).t.fYfGgK);
     obj.buttonVariant = "primary";
     obj.onButtonPress = navigateToShop;
     return obj;
   }, items);
-  const coachmark = arg1(dependencyMap[8]).useCoachmark(markAsDismissed.buttonRef, memo);
+  const coachmark = markAsDismissed(title[8]).useCoachmark(markAsDismissed.buttonRef, memo);
   return null;
 };

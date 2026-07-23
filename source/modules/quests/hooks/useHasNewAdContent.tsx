@@ -1,58 +1,59 @@
-// Module ID: 15362
-// Function ID: 116996
+// Module ID: 15479
+// Function ID: 119170
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 13984, 6942, 4976, 664, 10466, 566, 6940, 6970, 5802, 1334, 2]
 // Exports: default
 
-// Module 15362 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { QuestsExperimentLocations } from "__exportStarResult1";
+// Module 15479 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -63,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -89,21 +90,20 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const DAY = require("__exportStarResult1").Millis.DAY;
-const result = require("__exportStarResult1").fileFinishedImporting("modules/quests/hooks/useHasNewAdContent.tsx");
+const DAY = require("set").Millis.DAY;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/hooks/useHasNewAdContent.tsx");
 
 export default function useHasNewAdContent() {
-  const MobileQuestHomeRedDotNotificationExperiment = arg1(dependencyMap[5]).MobileQuestHomeRedDotNotificationExperiment;
+  const MobileQuestHomeRedDotNotificationExperiment = enabled(stateFromStoresArray[5]).MobileQuestHomeRedDotNotificationExperiment;
   let obj = { location: QuestsExperimentLocations.YOU_TAB_PROFILE_HEADER };
-  const enabled = MobileQuestHomeRedDotNotificationExperiment.useConfig(obj).enabled;
-  const arg1 = enabled;
+  enabled = MobileQuestHomeRedDotNotificationExperiment.useConfig(obj).enabled;
   const items = [closure_4];
   const items1 = [enabled];
-  const stateFromStoresArray = arg1(dependencyMap[6]).useStateFromStoresArray(items, () => {
+  stateFromStoresArray = enabled(stateFromStoresArray[6]).useStateFromStoresArray(items, () => {
     if (enabled) {
       const _Array = Array;
-      const quests = quests.quests;
-      const found = Array.from(quests.values()).filter((value) => !callback(closure_1[7]).isQuestExpired(value));
+      const quests = outer1_4.quests;
+      const found = Array.from(quests.values()).filter((value) => !enabled(stateFromStoresArray[7]).isQuestExpired(value));
       let mapped = found.map((id) => id.id);
       const arr = Array.from(quests.values());
     } else {
@@ -111,12 +111,11 @@ export default function useHasNewAdContent() {
     }
     return mapped;
   }, items1);
-  const dependencyMap = stateFromStoresArray;
-  const obj2 = arg1(dependencyMap[6]);
-  const items2 = [closure_3];
+  const obj2 = enabled(stateFromStoresArray[6]);
+  const items2 = [_isNativeReflectConstruct];
   const items3 = [stateFromStoresArray];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items2, () => {
-    const tmp = callback(stateFromStoresArray);
+  const stateFromStores = enabled(stateFromStoresArray[6]).useStateFromStores(items2, () => {
+    const tmp = outer1_7(stateFromStoresArray);
     let iter = tmp();
     if (!iter.done) {
       while (tmp4(enabled(stateFromStoresArray[8]).AdCreativeType.QUEST, tmp2)) {
@@ -127,16 +126,16 @@ export default function useHasNewAdContent() {
     }
     return false;
   }, items3);
-  const obj3 = arg1(dependencyMap[6]);
+  const obj3 = enabled(stateFromStoresArray[6]);
   let prop = null;
   if (stateFromStores) {
     prop = null;
     if (enabled) {
-      prop = arg1(dependencyMap[10]).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
+      prop = enabled(stateFromStoresArray[10]).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
     }
   }
   obj = { cooldownDurationMs: DAY };
-  const tmp6 = callback(arg1(dependencyMap[9]).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  const tmp6 = callback(enabled(stateFromStoresArray[9]).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   obj = { showBadge: null != tmp6[0], dismissBadge: tmp6[1] };
   return obj;
 };

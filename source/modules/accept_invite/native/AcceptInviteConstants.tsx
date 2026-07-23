@@ -1,10 +1,9 @@
-// Module ID: 6907
-// Function ID: 55035
+// Module ID: 6912
+// Function ID: 55069
 // Name: ACCEPT_INVITE_MODAL_KEY
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6907 (ACCEPT_INVITE_MODAL_KEY)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/accept_invite/native/AcceptInviteConstants.tsx");
+// Module 6912 (ACCEPT_INVITE_MODAL_KEY)
+const result = require("set").fileFinishedImporting("modules/accept_invite/native/AcceptInviteConstants.tsx");
 
 export const ACCEPT_INVITE_MODAL_KEY = "accept-invite";

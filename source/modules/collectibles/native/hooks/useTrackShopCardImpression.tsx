@@ -1,17 +1,21 @@
-// Module ID: 8658
-// Function ID: 68534
+// Module ID: 8665
+// Function ID: 68574
 // Name: trackOnConsecutiveVisibility
-// Dependencies: []
+// Dependencies: [31, 653, 8666, 5464, 1450, 8667, 3776, 6786, 675, 8559, 480, 6785, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 8658 (trackOnConsecutiveVisibility)
+// Module 8665 (trackOnConsecutiveVisibility)
+import result from "result";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function trackOnConsecutiveVisibility(current, current2, current3) {
   if (current) {
     if (tmp) {
       arg3();
       current3.current = true;
     }
-    const tmp = current2.current && !current3.current;
+    tmp = current2.current && !current3.current;
   } else {
     current3.current = false;
   }
@@ -29,38 +33,32 @@ function isVisibleAtThreshold(arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
   }
   return tmp6;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/collectibles/native/hooks/useTrackShopCardImpression.tsx");
+let result = require("useCollectiblesAnalyticsContext").fileFinishedImporting("modules/collectibles/native/hooks/useTrackShopCardImpression.tsx");
 
 export const useTrackShopCardImpression = function useTrackShopCardImpression(product, selectedProduct, flag2) {
-  selectedProduct = product;
+  const _require = product;
   const importDefault = selectedProduct;
   const dependencyMap = flag2;
-  const collectiblesAnalyticsContext = selectedProduct(dependencyMap[2]).useCollectiblesAnalyticsContext();
-  const React = collectiblesAnalyticsContext;
-  const analyticsLocations = importDefault(dependencyMap[3])().analyticsLocations;
-  const AnalyticEvents = analyticsLocations;
-  const size = importDefault(dependencyMap[4])();
+  const collectiblesAnalyticsContext = _require(8666).useCollectiblesAnalyticsContext();
+  const analyticsLocations = importDefault(5464)().analyticsLocations;
+  const size = importDefault(1450)();
   const width = size.width;
-  const trackOnConsecutiveVisibility = width;
   const height = size.height;
-  const isVisibleAtThreshold = height;
-  const obj = selectedProduct(dependencyMap[2]);
-  const currentUser = selectedProduct(dependencyMap[5]).useCurrentUser();
-  const obj2 = selectedProduct(dependencyMap[5]);
-  const canUseCollectiblesResult = importDefault(dependencyMap[6]).canUseCollectibles(currentUser);
-  const obj3 = importDefault(dependencyMap[6]);
-  const shopDiscountSource = selectedProduct(dependencyMap[7]).getShopDiscountSource(currentUser);
-  const ref = React.useRef(null);
-  let closure_10 = React.useRef(null);
-  let closure_11 = React.useRef({ windowWidth: width, windowHeight: height });
-  let closure_12 = React.useRef(false);
-  let closure_13 = React.useRef(false);
-  let closure_14 = React.useRef(false);
-  let closure_15 = React.useRef(false);
+  let obj = _require(8666);
+  const currentUser = _require(8667).useCurrentUser();
+  let obj2 = _require(8667);
+  const canUseCollectiblesResult = importDefault(3776).canUseCollectibles(currentUser);
+  const obj3 = importDefault(3776);
+  const shopDiscountSource = _require(6786).getShopDiscountSource(currentUser);
+  const ref = collectiblesAnalyticsContext.useRef(null);
+  let closure_10 = collectiblesAnalyticsContext.useRef(null);
+  let closure_11 = collectiblesAnalyticsContext.useRef({ windowWidth: width, windowHeight: height });
+  let closure_12 = collectiblesAnalyticsContext.useRef(false);
+  let closure_13 = collectiblesAnalyticsContext.useRef(false);
+  let closure_14 = collectiblesAnalyticsContext.useRef(false);
+  let closure_15 = collectiblesAnalyticsContext.useRef(false);
   const items = [width, height];
-  const effect = React.useEffect(() => {
+  const effect = collectiblesAnalyticsContext.useEffect(() => {
     closure_11.current = { windowWidth: width, windowHeight: height };
   }, items);
   const items1 = [canUseCollectiblesResult, , , , , , ];
@@ -90,16 +88,16 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   }
   items1[5] = categoryPosition;
   items1[6] = product;
-  const callback = React.useCallback(() => {
+  const callback = collectiblesAnalyticsContext.useCallback(() => {
     let priceForCollectiblesProduct = null;
-    if (null != arg0) {
-      let obj = arg0(arg2[7]);
-      priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(arg0, canUseCollectiblesResult, true);
+    if (null != product) {
+      let obj = product(6786);
+      priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(product, closure_7, true);
     }
     let strikeThroughPriceAmountForCollectiblesProduct;
-    if (null != arg0) {
-      strikeThroughPriceAmountForCollectiblesProduct = arg0(arg2[7]).getStrikeThroughPriceAmountForCollectiblesProduct(arg0, canUseCollectiblesResult, true);
-      const obj2 = arg0(arg2[7]);
+    if (null != product) {
+      strikeThroughPriceAmountForCollectiblesProduct = product(6786).getStrikeThroughPriceAmountForCollectiblesProduct(product, closure_7, true);
+      const obj2 = product(6786);
     }
     obj = {};
     let sessionId;
@@ -107,7 +105,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
       sessionId = collectiblesAnalyticsContext.sessionId;
     }
     obj.collectibles_shop_session_id = sessionId;
-    obj.sku_id = arg0.skuId;
+    obj.sku_id = product.skuId;
     let amount;
     if (null != priceForCollectiblesProduct) {
       amount = priceForCollectiblesProduct.amount;
@@ -141,7 +139,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
     }
     obj.category_position = categoryPosition;
     obj.type = "product";
-    arg1(arg2[8]).track(analyticsLocations.COLLECTIBLES_TILE_IMPRESSION, obj);
+    selectedProduct(675).track(analyticsLocations.COLLECTIBLES_TILE_IMPRESSION, obj);
   }, items1);
   const items2 = [product, selectedProduct, , , , , ];
   let cardId;
@@ -161,10 +159,10 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items2[4] = tilePosition1;
   items2[5] = analyticsLocations;
   items2[6] = shopDiscountSource;
-  const callback1 = React.useCallback(() => {
-    let obj = arg0(arg2[9]);
-    obj = { name: arg0(arg2[10]).ImpressionNames.SHOP_CARD, type: arg0(arg2[10]).ImpressionTypes.VIEW };
-    obj = { sku_id: arg1.skuId };
+  const callback1 = collectiblesAnalyticsContext.useCallback(() => {
+    let obj = product(8559);
+    obj = { name: product(480).ImpressionNames.SHOP_CARD, type: product(480).ImpressionTypes.VIEW };
+    obj = { sku_id: selectedProduct.skuId };
     let cardId;
     if (null != collectiblesAnalyticsContext) {
       cardId = collectiblesAnalyticsContext.cardId;
@@ -180,40 +178,40 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
       tilePosition = collectiblesAnalyticsContext.tilePosition;
     }
     obj.position_in_section = tilePosition;
-    obj.product_sku_ids = arg0(arg2[11]).getProductSkuIds(arg0);
+    obj.product_sku_ids = product(6785).getProductSkuIds(product);
     obj.location_stack = analyticsLocations;
-    const obj4 = arg0(arg2[11]);
-    obj.discount_source = arg0(arg2[7]).getAnalyticsShopDiscountSource(shopDiscountSource);
+    const obj4 = product(6785);
+    obj.discount_source = product(6786).getAnalyticsShopDiscountSource(shopDiscountSource);
     obj.properties = obj;
     obj.trackImpression(obj, false, true);
   }, items2);
   const items3 = [flag2, callback, callback1];
-  const effect1 = React.useEffect(() => {
-    if (arg2) {
+  const effect1 = collectiblesAnalyticsContext.useEffect(() => {
+    if (closure_2) {
       const _setInterval = setInterval;
       closure_10.current = setInterval(() => {
-        if (null != ref.current) {
-          const current = ref.current;
+        if (null != outer1_9.current) {
+          const current = outer1_9.current;
           current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
             let windowHeight;
             let windowWidth;
-            ({ windowWidth, windowHeight } = ref.current);
-            const tmp = callback2(arg4, arg5, arg2, arg3, windowWidth, windowHeight, 0);
-            callback(tmp, closure_12, closure_13, closure_16);
-            callback(callback2(arg4, arg5, arg2, arg3, windowWidth, windowHeight, 0.5), closure_14, closure_15, closure_17);
+            ({ windowWidth, windowHeight } = outer2_11.current);
+            const tmp = height(arg4, arg5, arg2, arg3, windowWidth, windowHeight, 0);
+            width(tmp, outer2_12, outer2_13, outer2_16);
+            width(height(arg4, arg5, arg2, arg3, windowWidth, windowHeight, 0.5), outer2_14, outer2_15, outer2_17);
           });
         }
       }, 1000);
       return () => {
-        if (null !== ref2.current) {
+        if (null !== outer1_10.current) {
           const _clearInterval = clearInterval;
-          clearInterval(ref2.current);
-          ref2.current = null;
+          clearInterval(outer1_10.current);
+          outer1_10.current = null;
         }
-        closure_12.current = false;
-        closure_13.current = false;
-        closure_14.current = false;
-        closure_15.current = false;
+        outer1_12.current = false;
+        outer1_13.current = false;
+        outer1_14.current = false;
+        outer1_15.current = false;
       };
     }
   }, items3);

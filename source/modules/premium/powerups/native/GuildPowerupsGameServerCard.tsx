@@ -1,33 +1,34 @@
-// Module ID: 11597
-// Function ID: 90143
+// Module ID: 11607
+// Function ID: 90192
 // Name: GuildPowerupsGameServerCard
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 4038, 33, 4130, 689, 566, 11608, 11609, 11600, 11604, 3842, 2]
 // Exports: default
 
-// Module 11597 (GuildPowerupsGameServerCard)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { flex: 1, paddingVertical: importDefault(dependencyMap[6]).space.PX_8 };
-obj.riveContainer = obj;
-let closure_7 = obj.createStyles(obj);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
+// Module 11607 (GuildPowerupsGameServerCard)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.riveContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
 
 export default function GuildPowerupsGameServerCard(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  let obj = arg1(dependencyMap[7]);
+  let obj = guildId(566);
   const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => stateForGuild.getStateForGuild(guildId));
-  const tmp = callback();
-  const tmp4 = importDefault(dependencyMap[9])(guildId);
-  let obj1 = arg1(dependencyMap[7]);
-  const items1 = [closure_4];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getStateForGuild(guildId));
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp4 = importDefault(11609)(guildId);
+  let obj1 = guildId(566);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_4.useReducedMotion);
   let tmp7 = null;
   if (null != stateFromStores) {
     tmp7 = null;
@@ -39,13 +40,13 @@ export default function GuildPowerupsGameServerCard(guildId) {
       obj1 = { stateMachine: "SM_Auto" };
       const obj2 = { reducedMotion: stateFromStores1 };
       obj1.dataBinding = obj2;
-      obj.children = jsx(arg1(dependencyMap[12]).GameServerHostingRive, obj1);
-      obj.riveComponent = <View {...obj} />;
+      obj.children = jsx(guildId(3842).GameServerHostingRive, { stateMachine: "SM_Auto" });
+      obj.riveComponent = <View style={tmp.riveContainer} />;
       obj.badge = "beta";
       obj.status = tmp3;
       obj.onPress = tmp6;
-      tmp7 = jsx(importDefault(dependencyMap[11]), obj);
-      const tmp11 = importDefault(dependencyMap[11]);
+      tmp7 = jsx(importDefault(11604), { style: tmp.riveContainer });
+      const tmp11 = importDefault(11604);
     }
   }
   return tmp7;

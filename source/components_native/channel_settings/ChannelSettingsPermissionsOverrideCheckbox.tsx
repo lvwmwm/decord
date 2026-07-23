@@ -1,58 +1,63 @@
-// Module ID: 15402
-// Function ID: 117508
+// Module ID: 15519
+// Function ID: 119682
 // Name: getAccessibilityLabel
-// Dependencies: []
+// Dependencies: [31, 27, 33, 689, 4130, 3763, 1212, 10424, 8694, 15520, 3848, 2]
 
-// Module 15402 (getAccessibilityLabel)
+// Module 15519 (getAccessibilityLabel)
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function getAccessibilityLabel(arg0) {
-  if (arg1(dependencyMap[5]).DENY === arg0) {
-    const intl3 = arg1(dependencyMap[6]).intl;
-    return intl3.string(arg1(dependencyMap[6]).t.6639O5);
-  } else if (arg1(dependencyMap[5]).ALLOW === arg0) {
-    const intl2 = arg1(dependencyMap[6]).intl;
-    return intl2.string(arg1(dependencyMap[6]).t.RzDfSk);
-  } else if (arg1(dependencyMap[5]).PASSTHROUGH === arg0) {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.ujC3ZS);
+  if (require(3763) /* calculateElevatedPermissions */.DENY === arg0) {
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t["6639O5"]);
+  } else if (require(3763) /* calculateElevatedPermissions */.ALLOW === arg0) {
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.RzDfSk);
+  } else if (require(3763) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.ujC3ZS);
   }
 }
 function getIcon(arg0, arg1, icon) {
-  if (arg1(dependencyMap[5]).DENY === arg0) {
+  if (require(3763) /* calculateElevatedPermissions */.DENY === arg0) {
     let obj = { size: "sm", style: icon.icon };
-    const colors3 = importDefault(dependencyMap[3]).colors;
+    const colors3 = importDefault(689).colors;
     obj.color = arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL;
-    return jsx(arg1(dependencyMap[7]).DenyIcon, obj);
-  } else if (arg1(dependencyMap[5]).ALLOW === arg0) {
+    return jsx(require(10424) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
+  } else if (require(3763) /* calculateElevatedPermissions */.ALLOW === arg0) {
     obj = { size: "sm", style: icon.icon };
-    const colors2 = importDefault(dependencyMap[3]).colors;
+    const colors2 = importDefault(689).colors;
     obj.color = arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE;
-    return jsx(arg1(dependencyMap[8]).CheckmarkLargeBoldIcon, obj);
-  } else if (arg1(dependencyMap[5]).PASSTHROUGH === arg0) {
+    return jsx(require(8694) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon });
+  } else if (require(3763) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     obj = { size: "sm", style: icon.icon };
-    const colors = importDefault(dependencyMap[3]).colors;
+    const colors = importDefault(689).colors;
     obj.color = arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT;
-    return jsx(arg1(dependencyMap[9]).SlashIcon, obj);
+    return jsx(require(15520) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
   } else {
     return null;
   }
 }
 function getPressableStyleOverrides(arg0, arg1, denySelected) {
-  if (arg1(dependencyMap[5]).DENY === arg0) {
+  if (require(3763) /* calculateElevatedPermissions */.DENY === arg0) {
     return arg1 ? denySelected.denySelected : denySelected.denyActive;
-  } else if (arg1(dependencyMap[5]).ALLOW === arg0) {
+  } else if (require(3763) /* calculateElevatedPermissions */.ALLOW === arg0) {
     return arg1 ? denySelected.allowSelected : denySelected.allowActive;
-  } else if (arg1(dependencyMap[5]).PASSTHROUGH === arg0) {
+  } else if (require(3763) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     return arg1 ? denySelected.passthroughSelected : denySelected.passthroughActive;
   }
 }
 function OverrideOption(onPress) {
   const type = onPress.type;
-  const arg1 = type;
   const selected = onPress.selected;
-  const importDefault = selected;
   const styles = onPress.styles;
-  const dependencyMap = styles;
-  let obj = arg1(dependencyMap[10]);
+  let obj = type(styles[10]);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   obj = {
     accessibilityRole: radioA11yNative.accessibilityRole,
@@ -65,53 +70,59 @@ function OverrideOption(onPress) {
         }
         return iconWrapper;
       }
-      const items = [callback(type, selected, styles), styles.iconWrapper];
+      const items = [outer1_10(type, selected, styles), styles.iconWrapper];
       iconWrapper = items;
     },
     onPress: onPress.onPress,
     children: getIcon(type, selected, styles)
   };
-  return <closure_3 {...obj} />;
+  return <closure_3 accessibilityRole={radioA11yNative.accessibilityRole} accessibilityLabel={getAccessibilityLabel(type)} accessibilityState={radioA11yNative.accessibilityState} style={function style(pressed) {
+    if (!selected) {
+      if (!pressed.pressed) {
+        let iconWrapper = styles.iconWrapper;
+      }
+      return iconWrapper;
+    }
+    const items = [outer1_10(type, selected, styles), styles.iconWrapper];
+    iconWrapper = items;
+  }} onPress={arg0.onPress}>{getIcon(type, selected, styles)}</closure_3>;
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Pressable: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const PX_4 = importDefault(dependencyMap[3]).space.PX_4;
-const md = importDefault(dependencyMap[3]).radii.md;
-let obj1 = arg1(dependencyMap[4]);
+({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
+const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
+const md = require("_createForOfIteratorHelperLoose").radii.md;
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: importDefault(dependencyMap[3]).space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: require("_createForOfIteratorHelperLoose").space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
 obj.ternaryCheckBox = obj;
-obj1 = { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" };
-obj.iconWrapper = obj1;
-const tmp2 = arg1(dependencyMap[1]);
-obj.icon = { marginHorizontal: importDefault(dependencyMap[3]).space.PX_8 };
-const obj2 = { marginHorizontal: importDefault(dependencyMap[3]).space.PX_8 };
-obj.denyActive = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_FEEDBACK_CRITICAL };
-const obj3 = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_FEEDBACK_CRITICAL };
-obj.denySelected = { backgroundColor: importDefault(dependencyMap[3]).colors.ICON_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[3]).radii.sm - 2 };
-const obj4 = { backgroundColor: importDefault(dependencyMap[3]).colors.ICON_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[3]).radii.sm - 2 };
-obj.allowActive = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_FEEDBACK_POSITIVE };
-const obj5 = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_FEEDBACK_POSITIVE };
-obj.allowSelected = { backgroundColor: importDefault(dependencyMap[3]).colors.ICON_FEEDBACK_POSITIVE };
-const obj6 = { backgroundColor: importDefault(dependencyMap[3]).colors.ICON_FEEDBACK_POSITIVE };
-obj.passthroughSelected = { backgroundColor: importDefault(dependencyMap[3]).colors.INTERACTIVE_BACKGROUND_SELECTED };
-const obj7 = { backgroundColor: importDefault(dependencyMap[3]).colors.INTERACTIVE_BACKGROUND_SELECTED };
-obj.passthroughActive = { backgroundColor: importDefault(dependencyMap[3]).colors.INTERACTIVE_BACKGROUND_HOVER };
+_createForOfIteratorHelperLoose = { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" };
+obj.iconWrapper = _createForOfIteratorHelperLoose;
+obj.icon = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const obj2 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.denyActive = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_CRITICAL };
+const obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_CRITICAL };
+obj.denySelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_CRITICAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm - 2 };
+const obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_CRITICAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm - 2 };
+obj.allowActive = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_POSITIVE };
+const obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_POSITIVE };
+obj.allowSelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_POSITIVE };
+const obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_POSITIVE };
+obj.passthroughSelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_SELECTED };
+const obj7 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_SELECTED };
+obj.passthroughActive = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.disabled = { opacity: 0.3 };
-let closure_6 = obj1.createStyles(obj);
-const items = [arg1(dependencyMap[5]).DENY, arg1(dependencyMap[5]).PASSTHROUGH, arg1(dependencyMap[5]).ALLOW];
-const obj8 = { backgroundColor: importDefault(dependencyMap[3]).colors.INTERACTIVE_BACKGROUND_HOVER };
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+let items = [require("calculateElevatedPermissions").DENY, require("calculateElevatedPermissions").PASSTHROUGH, require("calculateElevatedPermissions").ALLOW];
+const obj8 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
 const memoResult = importAllResult.memo(function ChannelSettingsPermissionsOverrideCheckbox(onValueChange) {
   let disabled;
-  ({ value: closure_0, disabled } = onValueChange);
+  let require;
+  ({ value: require, disabled } = onValueChange);
   if (disabled === undefined) {
     disabled = false;
   }
-  const importDefault = onValueChange.onValueChange;
-  let dependencyMap;
-  const tmp = callback();
-  dependencyMap = tmp;
+  onValueChange = onValueChange.onValueChange;
+  let c2;
+  let tmp = callback();
+  c2 = tmp;
   const obj = {};
   const items = [tmp.ternaryCheckBox, ];
   let disabled2 = disabled;
@@ -126,22 +137,25 @@ const memoResult = importAllResult.memo(function ChannelSettingsPermissionsOverr
   }
   obj.pointerEvents = str;
   obj.accessibilityRole = "radiogroup";
-  obj.children = items.map((type) => callback(closure_11, {
-    type,
-    selected: type === type,
-    styles: tmp,
-    onPress() {
-      let tmp = null != callback;
-      if (tmp) {
-        tmp = arg0 !== arg0;
+  obj.children = items.map((type) => {
+    let closure_0 = type;
+    return outer1_5(outer1_11, {
+      type,
+      selected: closure_0 === type,
+      styles: c2,
+      onPress() {
+        let tmp = null != outer1_1;
+        if (tmp) {
+          tmp = closure_0 !== closure_0;
+        }
+        if (tmp) {
+          outer1_1(closure_0);
+        }
       }
-      if (tmp) {
-        callback(arg0);
-      }
-    }
-  }, "checkbox-" + arg1));
-  return <closure_4 {...obj} />;
+    }, "checkbox-" + arg1);
+  });
+  return <closure_4 />;
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrideCheckbox.tsx");
+const result = require("jsxProd").fileFinishedImporting("components_native/channel_settings/ChannelSettingsPermissionsOverrideCheckbox.tsx");
 
 export default memoResult;

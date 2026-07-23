@@ -1,46 +1,50 @@
-// Module ID: 10204
-// Function ID: 78764
+// Module ID: 10216
+// Function ID: 78836
 // Name: NotificationsContainer
-// Dependencies: []
+// Dependencies: [31, 27, 3759, 1348, 1906, 653, 1345, 33, 4130, 3984, 10217, 566, 10367, 8284, 3946, 1334, 10368, 10369, 10384, 2]
 // Exports: ChannelContainer
 
-// Module 10204 (NotificationsContainer)
+// Module 10216 (NotificationsContainer)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function NotificationsContainer() {
   let tmp2 = null;
-  if (importDefault(dependencyMap[9])().isChatBesideChannelList) {
-    const obj = { style: tmp.container, children: callback(importDefault(dependencyMap[10]), {}) };
+  if (importDefault(3984)().isChatBesideChannelList) {
+    const obj = { style: tmp.container, children: callback(importDefault(10217), {}) };
     tmp2 = callback(View, obj);
   }
   return tmp2;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
-const ContentDismissActionType = arg1(dependencyMap[6]).ContentDismissActionType;
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-let closure_12 = arg1(dependencyMap[8]).createStyles({ container: { 0: 1137, 9223372036854775807: -1655942912, -9223372036854775808: 115, -9223372036854775808: 0, 0: 0 } });
-const obj = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("components_native/ChannelContainer.tsx");
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles({ container: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8 } });
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/ChannelContainer.tsx");
 
 export const ChannelContainer = function ChannelContainer(children) {
   let channelId;
   let isStageChannel;
+  let require;
   let voiceChannelId;
-  ({ guildId: closure_0, channelId } = children);
-  const importDefault = channelId;
+  ({ guildId: require, channelId } = children);
   let dependencyMap;
   let React;
-  let View;
-  let obj = arg1(dependencyMap[11]);
+  let c4;
+  let obj = require(566) /* initialize */;
   const items = [closure_7, closure_6];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const voiceChannelId = voiceChannelId.getVoiceChannelId();
-    const obj = { channel: store.getChannel(channelId), voiceChannelId };
-    const channel = store.getChannel(voiceChannelId);
+    const voiceChannelId = outer1_7.getVoiceChannelId();
+    const obj = { channel: outer1_6.getChannel(channelId), voiceChannelId };
+    const channel = outer1_6.getChannel(voiceChannelId);
     let isGuildStageVoiceResult;
     if (null != channel) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -48,16 +52,16 @@ export const ChannelContainer = function ChannelContainer(children) {
     obj.isStageChannel = Boolean(isGuildStageVoiceResult);
     return obj;
   });
-  const channel = stateFromStoresObject.channel;
+  let channel = stateFromStoresObject.channel;
   ({ voiceChannelId, isStageChannel } = stateFromStoresObject);
-  let tmp2 = !isStageChannel || importDefault(dependencyMap[12])(voiceChannelId);
-  let obj1 = arg1(dependencyMap[11]);
-  const items1 = [closure_5];
+  let tmp2 = !isStageChannel || channelId(10367)(voiceChannelId);
+  let obj1 = require(566) /* initialize */;
+  const items1 = [_isNativeReflectConstruct];
   let isPrivateResult = null != channel;
   const stateFromStores = obj1.useStateFromStores(items1, () => {
     let isLurkingResult = null != closure_0;
     if (isLurkingResult) {
-      isLurkingResult = lurking.isLurking(closure_0);
+      isLurkingResult = outer1_5.isLurking(closure_0);
     }
     return isLurkingResult;
   });
@@ -65,33 +69,33 @@ export const ChannelContainer = function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp5 = importDefault(dependencyMap[13])(isPrivateResult);
+  const tmp5 = channelId(8284)(isPrivateResult);
   React = tmp5;
-  const tmp6 = importDefault(dependencyMap[13])(channelId);
-  View = tmp6;
+  const tmp6 = channelId(8284)(channelId);
+  c4 = tmp6;
   const items2 = [channelId, tmp6, isPrivateResult, tmp5];
   const effect = React.useEffect(() => {
-    let tmp = tmp5;
-    if (tmp5) {
-      tmp = !isPrivateResult;
+    let tmp = c3;
+    if (c3) {
+      tmp = !_undefined;
     }
     if (!tmp) {
-      let tmp3 = tmp5;
-      if (tmp5) {
-        tmp3 = isPrivateResult;
+      let tmp3 = c3;
+      if (c3) {
+        tmp3 = _undefined;
       }
       if (tmp3) {
-        tmp3 = channelId !== tmp6;
+        tmp3 = channelId !== c4;
       }
       tmp = tmp3;
     }
     if (tmp) {
-      let obj = callback(isPrivateResult[14]);
-      obj = { dismissAction: constants.AUTO };
-      const result = obj.UNSAFE_markDismissibleContentAsDismissed(callback(isPrivateResult[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
+      let obj = outer1_0(_undefined[14]);
+      obj = { dismissAction: outer1_9.AUTO };
+      const result = obj.UNSAFE_markDismissibleContentAsDismissed(outer1_0(_undefined[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
     }
   }, items2);
-  let obj2 = arg1(dependencyMap[16]);
+  let obj2 = require(10368) /* styles */;
   const channelStyles = obj2.useChannelStyles();
   obj = { style: channelStyles.scene };
   obj = { style: channelStyles.flex };
@@ -104,17 +108,17 @@ export const ChannelContainer = function ChannelContainer(children) {
     tmp13 = null;
     if (stateFromStores) {
       obj1 = { channel };
-      tmp13 = callback(importDefault(dependencyMap[17]), obj1);
+      tmp13 = callback(channelId(10369), obj1);
     }
   }
   const items3 = [tmp13, children.children, ];
   if (tmp2) {
     obj2 = { style: channelStyles.callPTTButton };
-    tmp2 = callback(importDefault(dependencyMap[18]), obj2);
+    tmp2 = callback(channelId(10384), obj2);
   }
   items3[2] = tmp2;
   obj.children = items3;
-  const items4 = [closure_11(View, obj), callback(NotificationsContainer, {})];
+  const items4 = [closure_11(c4, obj), callback(NotificationsContainer, {})];
   obj.children = items4;
-  return closure_11(View, obj);
+  return closure_11(c4, obj);
 };

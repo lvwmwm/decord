@@ -1,15 +1,14 @@
 // Module ID: 1328
-// Function ID: 15568
+// Function ID: 15569
 // Name: getToken
-// Dependencies: []
+// Dependencies: [684, 1329, 2]
 // Exports: getArtForPath, isAuthenticated
 
 // Module 1328 (getToken)
 function getToken() {
-  return importAll(dependencyMap[0]).getToken();
+  return importAll(684).getToken();
 }
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("utils/AuthenticationUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/AuthenticationUtils.tsx");
 
 export { getToken };
 export const isAuthenticated = function isAuthenticated() {
@@ -20,9 +19,9 @@ export const getArtForPath = function getArtForPath(arg0) {
   if (null != arg0) {
     tmp = null;
     if (obj.test(arg0)) {
-      tmp = require(dependencyMap[1]);
+      tmp = require(1329) /* registerAsset */;
     }
-    const obj = /^\/developers/;
+    obj = /^\/developers/;
   }
   return tmp;
 };

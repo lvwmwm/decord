@@ -1,8 +1,10 @@
 // Module ID: 401
 // Function ID: 5789
-// Dependencies: []
+// Dependencies: [31, 380, 112]
 
 // Module 401
-importAll(dependencyMap[0]);
+import "result";
+import unstable_createAnimatedComponentWithAllowlist from "unstable_createAnimatedComponentWithAllowlist";
 
-export default importDefault(dependencyMap[1])(importDefault(dependencyMap[2]));
+
+export default unstable_createAnimatedComponentWithAllowlist(require("View"));

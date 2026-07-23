@@ -1,9 +1,11 @@
 // Module ID: 1090
-// Function ID: 12503
+// Function ID: 12504
 // Name: processEvent
-// Dependencies: []
+// Dependencies: [978]
 
 // Module 1090 (processEvent)
+const require = arg1;
+const dependencyMap = arg6;
 function processEvent(exception, originalException) {
   originalException = undefined;
   if (null != originalException) {
@@ -15,17 +17,17 @@ function processEvent(exception, originalException) {
       originalException1 = originalException.originalException;
     }
   }
-  let obj = { turbo_module: originalException(arg6[0]).isTurboModuleEnabled() };
-  const obj2 = originalException(arg6[0]);
-  obj.fabric = originalException(arg6[0]).isFabricEnabled();
-  const obj3 = originalException(arg6[0]);
-  obj.react_native_version = originalException(arg6[0]).getReactNativeVersion();
-  const obj4 = originalException(arg6[0]);
-  obj.expo = originalException(arg6[0]).isExpo();
-  const obj5 = originalException(arg6[0]);
+  let obj = { turbo_module: require(978) /* isHermesEnabled */.isTurboModuleEnabled() };
+  const obj2 = require(978) /* isHermesEnabled */;
+  obj.fabric = require(978) /* isHermesEnabled */.isFabricEnabled();
+  const obj3 = require(978) /* isHermesEnabled */;
+  obj.react_native_version = require(978) /* isHermesEnabled */.getReactNativeVersion();
+  const obj4 = require(978) /* isHermesEnabled */;
+  obj.expo = require(978) /* isHermesEnabled */.isExpo();
+  const obj5 = require(978) /* isHermesEnabled */;
   if (obj6.isHermesEnabled()) {
     obj.js_engine = "hermes";
-    const hermesVersion = originalException(arg6[0]).getHermesVersion();
+    const hermesVersion = require(978) /* isHermesEnabled */.getHermesVersion();
     if (hermesVersion) {
       obj.hermes_version = hermesVersion;
     }
@@ -76,17 +78,18 @@ function processEvent(exception, originalException) {
             nextResult.return();
             iter.return();
             flag = true;
-            // break label0
+            break label0;
           }
           obj.hermes_debug_info = !flag;
           let tmp19 = __exception;
           nextResult.return();
           throw tmp19;
         }
+        continue;
       }
-      // continue
+      continue;
     }
-    const obj7 = originalException(arg6[0]);
+    const obj7 = require(978) /* isHermesEnabled */;
   } else {
     let jsEngine;
     if (null != tmp2) {
@@ -107,12 +110,12 @@ function processEvent(exception, originalException) {
     if (componentStack) {
       obj.component_stack = tmp2.componentStack;
     }
-    const expoGoVersion = originalException(arg6[0]).getExpoGoVersion();
+    const expoGoVersion = require(978) /* isHermesEnabled */.getExpoGoVersion();
     if (expoGoVersion) {
       obj.expo_go_version = expoGoVersion;
     }
-    const obj10 = originalException(arg6[0]);
-    const expoSdkVersion = originalException(arg6[0]).getExpoSdkVersion();
+    const obj10 = require(978) /* isHermesEnabled */;
+    const expoSdkVersion = require(978) /* isHermesEnabled */.getExpoSdkVersion();
     if (expoSdkVersion) {
       obj.expo_sdk_version = expoSdkVersion;
     }

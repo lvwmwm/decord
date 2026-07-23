@@ -1,16 +1,17 @@
 // Module ID: 1
 // Function ID: 102
-// Dependencies: []
+// Dependencies: [2, 3, 14, 2]
 
 // Module 1
-const _module = require(dependencyMap[0]);
-_module.clear();
-new require(dependencyMap[1]).default("app").log("Initializing app");
-const loadIndex = require(dependencyMap[2]).default.loadIndex;
+import set from "_createForOfIteratorHelperLoose";
+import set from "_createForOfIteratorHelperLoose";
+
+set = set.clear();
+new require("set").default("app").log("Initializing app");
+const loadIndex = require("_createForOfIteratorHelperLoose").default.loadIndex;
 loadIndex.recordStart();
-const loadImports = require(dependencyMap[2]).default.loadImports;
+const loadImports = require("_createForOfIteratorHelperLoose").default.loadImports;
 loadImports.recordStart();
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/debug/logAppStart.tsx");
+const result = set.fileFinishedImporting("modules/debug/logAppStart.tsx");
 
 export default null;

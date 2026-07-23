@@ -1,19 +1,20 @@
 // Module ID: 1658
-// Function ID: 18411
+// Function ID: 18412
 // Name: VELOCITY_EPS
-// Dependencies: []
+// Dependencies: [1585]
 
 // Module 1658 (VELOCITY_EPS)
-const _module = require(dependencyMap[0]);
+import isJest from "isJest";
+
 let num = 1;
-if (_module.isWeb()) {
+if (isJest.isWeb()) {
   num = 0.05;
 }
 let closure_0 = { code: "function isValidRubberBandConfig_Pnpm_utilsTs1(config){return!!config.rubberBandEffect&&Array.isArray(config.clamp)&&config.clamp.length===2;}" };
 
 export const VELOCITY_EPS = num;
 export const SLOPE_FACTOR = 0.1;
-export const isValidRubberBandConfig = () => {
+export const isValidRubberBandConfig = (() => {
   function isValidRubberBandConfig(rubberBandEffect) {
     let isArray = !tmp;
     if (!!rubberBandEffect.rubberBandEffect) {
@@ -29,4 +30,4 @@ export const isValidRubberBandConfig = () => {
   isValidRubberBandConfig.__workletHash = 5674674993606;
   isValidRubberBandConfig.__initData = closure_0;
   return isValidRubberBandConfig;
-}();
+})();

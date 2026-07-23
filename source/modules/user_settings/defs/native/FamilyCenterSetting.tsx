@@ -1,23 +1,25 @@
-// Module ID: 13653
-// Function ID: 103433
+// Module ID: 13767
+// Function ID: 105589
 // Name: route
-// Dependencies: []
+// Dependencies: [31, 653, 33, 13768, 13769, 7576, 689, 1212, 2198, 10095, 4646, 13772, 2]
 
-// Module 13653 (route)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[9]);
-obj = {
+// Module 13767 (route)
+import "result";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(importDefault(dependencyMap[8]).RZqaJn);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2198).RZqaJn);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[10]).GroupIcon,
+  IconComponent: require("GroupIcon").GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
-    let obj = arg1(dependencyMap[3]);
+    let obj = require(13768) /* useIsParentalConsentBannerActive */;
     const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-    const parentalConsentWarning = arg1(dependencyMap[4]).useParentalConsentWarning();
+    const parentalConsentWarning = require(13769) /* useParentalConsentWarning */.useParentalConsentWarning();
     let daysRemaining;
     if (null != parentalConsentWarning) {
       daysRemaining = parentalConsentWarning.daysRemaining;
@@ -32,24 +34,24 @@ obj = {
       if (null != tmp4) {
         tmp5 = null;
         if (tmp4 >= 0) {
-          obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, color: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_WARNING };
-          const intl = arg1(dependencyMap[7]).intl;
-          obj.accessibilityLabel = intl.string(importDefault(dependencyMap[8]).wucWfE);
-          tmp5 = jsx(arg1(dependencyMap[5]).WarningIcon, obj);
+          obj = { size: "sm", color: importDefault(689).colors.ICON_FEEDBACK_WARNING, accessible: true };
+          const intl = require(1212) /* getSystemLocale */.intl;
+          obj.accessibilityLabel = intl.string(importDefault(2198).wucWfE);
+          tmp5 = jsx(require(7576) /* WarningIcon */.WarningIcon, { size: "sm", color: importDefault(689).colors.ICON_FEEDBACK_WARNING, accessible: true });
         }
       }
     }
     return tmp5;
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[1]).UserSettingsSections.FAMILY_CENTER,
+createToggle = {
+  route: require("ME").UserSettingsSections.FAMILY_CENTER,
   getComponent() {
-    return arg1(dependencyMap[11]).default;
+    return require(13772) /* FamilyCenterLoading */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSetting.tsx");
 
-export default route;
+export default createToggle;

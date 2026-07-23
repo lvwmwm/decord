@@ -1,18 +1,21 @@
-// Module ID: 7859
-// Function ID: 62639
+// Module ID: 7865
+// Function ID: 62676
 // Name: useCollectibleListLayout
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: default
 
-// Module 7859 (useCollectibleListLayout)
-let closure_0 = importDefault(dependencyMap[0]);
-({ useCallback: closure_1, useState: closure_2 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/collectibles/native/useCollectibleListLayout.tsx");
+// Module 7865 (useCollectibleListLayout)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+let closure_1;
+let closure_2;
+({ useCallback: closure_1, useState: closure_2 } = result);
+result = require("set").fileFinishedImporting("modules/collectibles/native/useCollectibleListLayout.tsx");
 
 export default function useCollectibleListLayout() {
   const tmp = callback(callback3(0), 2);
-  const callback = tmp[1];
+  callback = tmp[1];
   return {
     size: tmp[0],
     onLayout: callback2((nativeEvent) => {

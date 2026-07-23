@@ -1,8 +1,8 @@
 // Module ID: 436
 // Function ID: 5998
 // Name: Appearance
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 436 (Appearance)
 
-export default importAll(dependencyMap[0]).get("Appearance");
+export default require("requireModule").get("Appearance");

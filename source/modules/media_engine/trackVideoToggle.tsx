@@ -1,23 +1,23 @@
-// Module ID: 12643
-// Function ID: 97291
+// Module ID: 12757
+// Function ID: 99447
 // Name: trackVideoToggle
-// Dependencies: []
+// Dependencies: [653, 12751, 675, 2]
 // Exports: default, setVideoToggleAnalyticsParams
 
-// Module 12643 (trackVideoToggle)
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/media_engine/trackVideoToggle.tsx");
+// Module 12757 (trackVideoToggle)
+import { AnalyticEvents } from "ME";
+
+const result = require("expandLocation").fileFinishedImporting("modules/media_engine/trackVideoToggle.tsx");
 
 export default function trackVideoToggle(toggled_user_id, video_toggle_reason, is_video_shown) {
   let allowedPoorFpsRatio;
   let backoffTimeSec;
   let fpsThreshold;
   let windowLength;
-  const defaultConfig = require(dependencyMap[1]).VideoHealthManager.defaultConfig;
+  const defaultConfig = require(12751) /* VideoHealthManager */.VideoHealthManager.defaultConfig;
   const featureEnabled = defaultConfig.featureEnabled;
   ({ windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec } = defaultConfig);
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(675);
   obj = { video_toggle_reason, toggled_user_id };
   let tmp;
   if (null != callback) {
@@ -53,5 +53,6 @@ export default function trackVideoToggle(toggled_user_id, video_toggle_reason, i
   obj.track(AnalyticEvents.VIDEO_TOGGLED, obj);
 };
 export function setVideoToggleAnalyticsParams(getRTCConnectionId, getMediaSessionId) {
-
+  let closure_3 = getRTCConnectionId;
+  let closure_4 = getMediaSessionId;
 }

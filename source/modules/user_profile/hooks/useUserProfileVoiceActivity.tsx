@@ -1,16 +1,20 @@
-// Module ID: 11953
-// Function ID: 92414
+// Module ID: 11965
+// Function ID: 92467
 // Name: isUserProfileVoiceActivityForChannel
-// Dependencies: []
+// Dependencies: [4217, 4146, 6982, 9066, 566, 2]
 // Exports: default
 
-// Module 11953 (isUserProfileVoiceActivityForChannel)
+// Module 11965 (isUserProfileVoiceActivityForChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function isUserProfileVoiceActivityForChannel(voiceStateForSession) {
   let activity;
   let voiceChannelId;
   voiceStateForSession = voiceStateForSession.voiceStateForSession;
   ({ activity, voiceChannelId } = voiceStateForSession);
-  let tmp = importDefault(dependencyMap[2])(activity);
+  let tmp = importDefault(6982)(activity);
   if (tmp) {
     let channelId;
     if (null != voiceStateForSession) {
@@ -20,27 +24,23 @@ function isUserProfileVoiceActivityForChannel(voiceStateForSession) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/hooks/useUserProfileVoiceActivity.tsx");
+const result = require("isEmbeddedActivity").fileFinishedImporting("modules/user_profile/hooks/useUserProfileVoiceActivity.tsx");
 
 export default function useUserProfileVoiceActivity(guildId) {
   const userId = guildId.userId;
-  const arg1 = userId;
-  let importDefault;
-  const tmp = importDefault(dependencyMap[3])({ userId, guildId: guildId.guildId });
-  const voiceChannel = tmp.voiceChannel;
   let id;
+  const tmp = id(9066)({ userId, guildId: guildId.guildId });
+  const voiceChannel = tmp.voiceChannel;
+  id = undefined;
   if (null != voiceChannel) {
     id = voiceChannel.id;
   }
-  importDefault = id;
   const obj = { voiceState: tmp.voiceState, voiceChannel };
-  const items = [closure_3, closure_4];
-  obj.voiceActivity = arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  const items = [_isNativeReflectConstruct, closure_4];
+  obj.voiceActivity = userId(566).useStateFromStores(items, () => {
     if (null != userId) {
       if (null != id) {
-        const findActivityResult = closure_3.findActivity(userId, (activity) => callback({ activity, voiceChannelId: closure_1, voiceStateForSession: voiceStateForSession.getVoiceStateForSession(closure_0, activity.session_id) }));
+        const findActivityResult = outer1_3.findActivity(userId, (activity) => outer2_5({ activity, voiceChannelId: outer1_1, voiceStateForSession: outer2_4.getVoiceStateForSession(outer1_0, activity.session_id) }));
         let tmp5;
         if (null != findActivityResult) {
           tmp5 = findActivityResult;

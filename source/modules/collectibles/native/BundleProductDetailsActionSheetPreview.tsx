@@ -1,38 +1,51 @@
-// Module ID: 8740
-// Function ID: 69132
+// Module ID: 8747
+// Function ID: 69173
 // Name: BundleThumbnail
-// Dependencies: []
+// Dependencies: [57, 31, 27, 655, 33, 4130, 689, 8748, 5217, 6786, 8749, 4126, 1212, 2]
 // Exports: default
 
-// Module 8740 (BundleThumbnail)
+// Module 8747 (BundleThumbnail)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { ShopCtaEnum } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_12;
+let closure_13;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function BundleThumbnail(index) {
   let isSelected;
   let item;
   let label;
   let setSelected;
   index = index.index;
-  const arg1 = index;
   ({ isSelected, setSelected } = index);
-  const importDefault = setSelected;
   const trackedSkuId = index.trackedSkuId;
-  const dependencyMap = trackedSkuId;
   const onTrackPress = index.onTrackPress;
-  let closure_3 = onTrackPress;
   const items = [setSelected, index, onTrackPress, trackedSkuId];
   ({ item, label } = index);
-  const tmp2 = callback7();
+  const tmp2 = _createForOfIteratorHelperLoose();
   let obj = {
     role: "radio",
-    aria-checked: isSelected,
-    onPress: callback2(() => {
+    "aria-checked": isSelected,
+    onPress: callback(() => {
       if (null != onTrackPress) {
-        onTrackPress(constants.BUNDLE_VIEW_PRODUCT, trackedSkuId);
+        onTrackPress(outer1_11.BUNDLE_VIEW_PRODUCT, trackedSkuId);
       }
       setSelected(index);
     }, items),
-    aria-label: label
+    "aria-label": label
   };
-  obj = { style: tmp2.bundleThumbnail, children: callback5(importDefault(dependencyMap[7]), { item, size: 56 }) };
+  obj = { style: tmp2.bundleThumbnail, children: callback5(setSelected(trackedSkuId[7]), { item, size: 56 }) };
   const items1 = [callback5(closure_10, obj), ];
   if (isSelected) {
     obj = { style: tmp2.selectedRing, pointerEvents: "none" };
@@ -42,30 +55,24 @@ function BundleThumbnail(index) {
   obj.children = items1;
   return closure_13(closure_8, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ useCallback: closure_4, useLayoutEffect: closure_5, useMemo: closure_6, useState: closure_7 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ Pressable: closure_8, ScrollView: closure_9, View: closure_10 } = arg1(dependencyMap[2]));
-const ShopCtaEnum = arg1(dependencyMap[3]).ShopCtaEnum;
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { paddingTop: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_16 };
-obj.previewContainer = obj;
-const obj1 = { borderColor: null, justifyContent: null, alignItems: "E, M/d", overflow: "LLL", style: "E, MMM d", borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-obj.bundleThumbnail = obj1;
-const obj2 = { <string:1628095168>: null, <string:575755880>: "heading-lg/bold", <string:1727932770>: "mobile-text-heading-primary", <string:3078161238>: "header", "Null": "flex", "Null": "center", "Null": "row", borderRadius: importDefault(dependencyMap[6]).radii.sm + 2, borderColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG };
-obj.selectedRing = obj2;
-const tmp4 = arg1(dependencyMap[4]);
-obj.bundleThumbnailRow = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_12, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: 2 };
-const obj3 = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_12, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: 2 };
-obj.bundleContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_16 };
-const obj4 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_16 };
-obj.bundleInfoContainer = { gap: importDefault(dependencyMap[6]).space.PX_8 };
-let closure_14 = obj.createStyles(obj);
-const obj5 = { gap: importDefault(dependencyMap[6]).space.PX_8 };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/collectibles/native/BundleProductDetailsActionSheetPreview.tsx");
+({ useCallback: closure_4, useLayoutEffect: closure_5, useMemo: closure_6, useState: closure_7 } = result);
+({ Pressable: closure_8, ScrollView: closure_9, View: closure_10 } = get_ActivityIndicator);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.previewContainer = _createForOfIteratorHelperLoose;
+let obj1 = { width: 56, height: 56, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, overflow: "hidden" };
+_createForOfIteratorHelperLoose.bundleThumbnail = obj1;
+let obj2 = { position: "absolute", top: -2, left: -2, right: -2, bottom: -2, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm + 2, borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
+_createForOfIteratorHelperLoose.selectedRing = obj2;
+_createForOfIteratorHelperLoose.bundleThumbnailRow = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: 2 };
+const obj3 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: 2 };
+_createForOfIteratorHelperLoose.bundleContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj4 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.bundleInfoContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj5 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/BundleProductDetailsActionSheetPreview.tsx");
 
 export default function BundleProductDetailsActionSheetPreview(onActiveItemChange) {
   let bundledProducts;
@@ -77,31 +84,30 @@ export default function BundleProductDetailsActionSheetPreview(onActiveItemChang
   let tmp6;
   let width;
   ({ product, onTrackPress } = onActiveItemChange);
-  const arg1 = onTrackPress;
   onActiveItemChange = onActiveItemChange.onActiveItemChange;
-  const importDefault = onActiveItemChange;
-  let tmp10;
+  let callback2;
   ({ width, handlePreviewPress } = onActiveItemChange);
-  const tmp = callback7();
-  const tmp2 = callback(callback4(0), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = bundledProducts(callback4(0), 2);
   let num = tmp2[0];
   const dependencyMap = tmp3;
-  [tmp5, tmp6] = callback(callback4(product.skuId), 2);
+  [tmp5, tmp6] = bundledProducts(callback4(product.skuId), 2);
   ({ items, bundledProducts } = product);
-  const callback = bundledProducts;
-  let closure_4 = num;
-  const tmp4 = callback(callback4(product.skuId), 2);
+  let c4 = num;
+  const tmp4 = bundledProducts(callback4(product.skuId), 2);
   if (product.skuId !== tmp5) {
     tmp6(product.skuId);
     tmp3(0);
-    closure_4 = 0;
+    c4 = 0;
     num = 0;
   }
-  tmp10 = items[num];
-  items = [tmp10, onActiveItemChange];
-  tmp10(() => {
+  callback2 = tmp10;
+  items = [, ];
+  items[0] = items[num];
+  items[1] = onActiveItemChange;
+  callback2(() => {
     if (null != onActiveItemChange) {
-      onActiveItemChange(tmp10);
+      onActiveItemChange(c5);
     }
   }, items);
   let tmp12;
@@ -115,19 +121,19 @@ export default function BundleProductDetailsActionSheetPreview(onActiveItemChang
   if (null == name) {
     name = tmp10.skuId;
   }
-  let obj = arg1(dependencyMap[9]);
+  let obj = onTrackPress(6786);
   const collectibleTypeLabel = obj.getCollectibleTypeLabel(tmp10.type);
   obj = { skuId: tmp10.skuId, type: tmp10.type, items: items1 };
-  const items1 = [tmp10];
+  items1 = [items[num]];
   obj = { style: tmp.previewContainer };
-  const items2 = [callback5(arg1(dependencyMap[10]).IndividualProductPreview, { product: obj, width, handlePreviewPress, onTrackPress }), ];
+  const items2 = [callback5(onTrackPress(8749).IndividualProductPreview, { product: obj, width, handlePreviewPress, onTrackPress }), ];
   const obj1 = { style: tmp.bundleContainer };
   const obj2 = { style: tmp.bundleInfoContainer };
-  const items3 = [callback5(arg1(dependencyMap[11]).Text, { variant: "heading-xl/bold", children: product.name }), ];
-  const obj4 = {};
-  const intl = arg1(dependencyMap[12]).intl;
-  obj4.children = intl.formatToPlainString(arg1(dependencyMap[12]).t./0Yndu, { num: items.length });
-  items3[1] = callback5(arg1(dependencyMap[11]).Text, obj4);
+  const items3 = [callback5(onTrackPress(4126).Text, { variant: "heading-xl/bold", children: product.name }), ];
+  const obj4 = { variant: "text-sm/medium", color: "text-default" };
+  const intl = onTrackPress(1212).intl;
+  obj4.children = intl.formatToPlainString(onTrackPress(1212).t["/0Yndu"], { num: items.length });
+  items3[1] = callback5(onTrackPress(4126).Text, obj4);
   obj2.children = items3;
   const items4 = [callback6(closure_10, obj2), ];
   const obj6 = { style: tmp.bundleInfoContainer };
@@ -137,11 +143,11 @@ export default function BundleProductDetailsActionSheetPreview(onActiveItemChang
       return Gesture.Native().disallowInterruption(true);
     }, [])
   };
-  const obj8 = { contentContainerStyle: tmp.bundleThumbnailRow };
-  const intl2 = arg1(dependencyMap[12]).intl;
-  obj8.aria-label = intl2.string(arg1(dependencyMap[12]).t.cTbdgu);
+  const obj8 = { horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp.bundleThumbnailRow, role: "radiogroup" };
+  const intl2 = onTrackPress(1212).intl;
+  obj8["aria-label"] = intl2.string(onTrackPress(1212).t.cTbdgu);
   obj8.children = items.map((item, index) => {
-    const obj = { item, index, isSelected: index === closure_4, setSelected: tmp3 };
+    const obj = { item, index, isSelected: index === c4, setSelected: closure_2 };
     let name;
     if (null != bundledProducts) {
       if (null != bundledProducts[index]) {
@@ -163,22 +169,22 @@ export default function BundleProductDetailsActionSheetPreview(onActiveItemChang
     }
     obj.trackedSkuId = skuId;
     obj.onTrackPress = onTrackPress;
-    return closure_12(closure_15, obj, item.skuId);
+    return outer1_12(outer1_15, obj, item.skuId);
   });
   obj7.children = callback5(closure_9, obj8);
-  const items5 = [callback5(arg1(dependencyMap[8]).GestureDetector, obj7), ];
-  const obj9 = {};
+  const items5 = [callback5(onTrackPress(5217).GestureDetector, obj7), ];
+  const obj9 = { variant: "text-sm/medium", color: "text-default" };
   const items6 = [name, ];
   let tmp22 = null != collectibleTypeLabel;
   if (tmp22) {
-    const obj10 = { cachedAt: "y", edpbxy: "isArray" };
+    const obj10 = { variant: "text-sm/medium", color: "text-muted" };
     const _HermesInternal = HermesInternal;
     obj10.children = " - " + collectibleTypeLabel;
-    tmp22 = callback5(arg1(dependencyMap[11]).Text, obj10);
+    tmp22 = callback5(onTrackPress(4126).Text, obj10);
   }
   items6[1] = tmp22;
   obj9.children = items6;
-  items5[1] = callback6(arg1(dependencyMap[11]).Text, obj9);
+  items5[1] = callback6(onTrackPress(4126).Text, obj9);
   obj6.children = items5;
   items4[1] = callback6(closure_10, obj6);
   obj1.children = items4;

@@ -1,104 +1,108 @@
-// Module ID: 8999
-// Function ID: 70851
+// Module ID: 9006
+// Function ID: 70892
 // Name: FederatedSocialModal
-// Dependencies: []
+// Dependencies: [5, 57, 31, 653, 33, 4130, 4814, 1212, 4938, 3827, 9007, 5121, 4126, 9000, 1273, 4543, 5087, 5519, 2]
 // Exports: default
 
-// Module 8999 (FederatedSocialModal)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const WebBrowserType = arg1(dependencyMap[3]).WebBrowserType;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { "Null": 16, "Null": 20, "Null": null } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
+// Module 9006 (FederatedSocialModal)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { WebBrowserType } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 } });
+const result = require("result").fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
 
 export default function FederatedSocialModal(platformType) {
-  const arg1 = platformType;
-  let screens = importDefault(dependencyMap[6]);
-  const value = screens.get(platformType.platformType);
+  const _require = platformType;
+  let screens = importDefault(4814);
+  let value = screens.get(platformType.platformType);
   let name;
   if (null != value) {
     name = value.name;
   }
   if (null == name) {
-    const intl = arg1(dependencyMap[7]).intl;
-    name = intl.string(arg1(dependencyMap[7]).t.bU/GZm);
+    let intl = _require(1212).intl;
+    name = intl.string(_require(1212).t["bU/GZm"]);
   }
   screens = {};
-  const obj = {};
-  const intl2 = arg1(dependencyMap[7]).intl;
-  const obj1 = { serviceName: name };
-  obj.headerTitle = intl2.formatToPlainString(arg1(dependencyMap[7]).t.ImMhq+, obj1);
-  obj.headerLeft = arg1(dependencyMap[16]).getHeaderBackButton(platformType.onClose);
+  let obj = {};
+  let intl2 = _require(1212).intl;
+  let obj1 = { serviceName: name };
+  obj.headerTitle = intl2.formatToPlainString(_require(1212).t["ImMhq+"], obj1);
+  obj.headerLeft = _require(5087).getHeaderBackButton(platformType.onClose);
   obj.render = function render() {
-    return function FederatedSocialModalScreen(onClose) {
+    return (function FederatedSocialModalScreen(closure_0) {
+      let closure_1;
       let platformType;
-      ({ location: closure_0, successRedirect: closure_1, platformType } = onClose);
-      onClose = onClose.onClose;
+      ({ location: closure_0, successRedirect: closure_1, platformType } = closure_0);
+      const onClose = closure_0.onClose;
       let first;
-      let React;
+      let result;
       let closure_6;
       function tryHandle() {
         return _tryHandle(...arguments);
       }
-      function _tryHandle(Button, arg1) {
+      function _tryHandle() {
         // CreateGeneratorClosureLongIndex (0x67)
-        const obj = onClose(tmp);
-        const _tryHandle = obj;
+        const obj = outer3_3(tmp);
         return obj(...arguments);
       }
-      const tmp = callback4();
-      const tmp2 = first(React.useState(""), 2);
+      const tmp = outer2_9();
+      const tmp2 = outer2_4(outer2_5.useState(""), 2);
       first = tmp2[0];
-      const tmp4 = first(React.useState(null), 2);
-      React = tmp4[1];
-      const tmp5 = first(React.useState(false), 2);
+      const tmp4 = outer2_4(outer2_5.useState(null), 2);
+      result = tmp4[1];
+      const tmp5 = outer2_4(outer2_5.useState(false), 2);
       closure_6 = tmp5[1];
-      let obj = callback2(platformType[6]);
+      let obj = outer2_1(outer2_2[6]);
       const value = obj.get(platformType);
       let name;
       if (null != value) {
         name = value.name;
       }
       if (null == name) {
-        const intl = callback(platformType[7]).intl;
-        name = intl.string(callback(platformType[7]).t.bU/GZm);
+        const intl = callback(outer2_2[7]).intl;
+        name = intl.string(callback(outer2_2[7]).t["bU/GZm"]);
       }
-      let obj1 = callback(platformType[10]);
+      let obj1 = callback(outer2_2[10]);
       const exampleHandle = obj1.getExampleHandle(platformType);
-      let obj2 = callback(platformType[10]);
+      let obj2 = callback(outer2_2[10]);
       obj = { bottom: true, style: tmp.container };
-      obj = { cachedAt: 1, edpbxy: 1, style: tmp.description };
-      const intl2 = callback(platformType[7]).intl;
+      obj = { variant: "text-md/normal", color: "text-default", style: tmp.description };
+      const intl2 = callback(outer2_2[7]).intl;
       obj1 = { serviceName: name };
-      obj.children = intl2.formatToPlainString(callback(platformType[7]).t.7TByKh, obj1);
-      const items = [_tryHandle(callback(platformType[12]).Text, obj), , ];
+      obj.children = intl2.formatToPlainString(callback(outer2_2[7]).t["7TByKh"], obj1);
+      const items = [outer2_7(callback(outer2_2[12]).Text, obj), , ];
       obj2 = { autoFocus: true, style: tmp.input };
       const validateHandleResult = obj2.validateHandle(first, platformType);
-      const intl3 = callback(platformType[7]).intl;
-      obj2.label = intl3.string(callback(platformType[7]).t.tZ9QFR);
+      const intl3 = callback(outer2_2[7]).intl;
+      obj2.label = intl3.string(callback(outer2_2[7]).t.tZ9QFR);
       obj2.placeholder = exampleHandle;
       obj2.error = tmp4[0];
       obj2.returnKeyType = "done";
       obj2.onChangeText = tmp2[1];
       obj2.onSubmitEditing = tryHandle;
-      obj2.clearButtonVisibility = callback(platformType[14]).ClearButtonVisibility.WITH_CONTENT;
+      obj2.clearButtonVisibility = callback(outer2_2[14]).ClearButtonVisibility.WITH_CONTENT;
       obj2.autoCapitalize = "none";
       obj2.autoComplete = "off";
       obj2.autoCorrect = false;
-      items[1] = _tryHandle(callback2(platformType[13]), obj2);
+      items[1] = outer2_7(outer2_1(outer2_2[13]), obj2);
       const obj3 = { loading: tmp5[0], disabled: !validateHandleResult };
-      const intl4 = callback(platformType[7]).intl;
-      obj3.text = intl4.string(callback(platformType[7]).t.PDTjLN);
+      const intl4 = callback(outer2_2[7]).intl;
+      obj3.text = intl4.string(callback(outer2_2[7]).t.PDTjLN);
       obj3.onPress = tryHandle;
-      items[2] = _tryHandle(callback(platformType[15]).Button, obj3);
+      items[2] = outer2_7(callback(outer2_2[15]).Button, obj3);
       obj.children = items;
-      return callback3(callback(platformType[11]).SafeAreaPaddingView, obj);
-    }(arg0);
+      return outer2_8(callback(outer2_2[11]).SafeAreaPaddingView, obj);
+    })(closure_0);
   };
   screens.root = obj;
-  return callback(arg1(dependencyMap[17]).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(5519).Navigator, { initialRouteName: "root", screens });
 };

@@ -1,21 +1,22 @@
 // Module ID: 189
 // Function ID: 2653
-// Dependencies: []
+// Dependencies: [190, 126, 191]
 
 // Module 189
-const _module = require(dependencyMap[0]);
+import isNativeFunction from "isNativeFunction";
+
 while (true) {
-  if (_module.hasNativeConstructor(async () => obj ? obj.resume() : undefined, "GeneratorFunction")) {
+  if (isNativeFunction.hasNativeConstructor(async () => obj ? obj.resume() : undefined, "GeneratorFunction")) {
     break;
   } else {
     let tmp = dependencyMap;
     let num = 1;
-    let _module1 = require(dependencyMap[1]);
+    let _module1 = require("polyfillObjectProperty");
     let str = "regeneratorRuntime";
     let polyfillGlobalResult = _module1.polyfillGlobal("regeneratorRuntime", () => {
-      delete r1.regeneratorRuntime;
-      return require(dependencyMap[2]);
+      delete tmp.regeneratorRuntime;
+      return require(191) /* define */;
     });
-    // break
+    break;
   }
 }

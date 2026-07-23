@@ -1,9 +1,33 @@
-// Module ID: 10549
-// Function ID: 82427
+// Module ID: 10559
+// Function ID: 82477
 // Name: areParticipantsEqual
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1347, 4143, 1194, 4177, 1906, 4952, 10539, 10210, 4148, 33, 4130, 1273, 689, 10215, 22, 10531, 10560, 566, 4323, 10561, 10564, 10574, 10020, 10590, 10597, 10527, 10615, 3834, 7812, 8479, 10546, 10542, 10545, 1450, 477, 8303, 2]
 
-// Module 10549 (areParticipantsEqual)
+// Module 10559 (areParticipantsEqual)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "hasFetchedColors";
+import get_ActivityIndicator from "ActivityTileInner";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import resetFocusTimer from "resetFocusTimer";
+import { ParticipantTypes } from "ParticipantTypes";
+import jsxProd from "useIsViewingActivity";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import Button from "Button";
+
+let closure_13;
+let closure_14;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_4;
+let closure_5;
+const require = arg1;
 function areParticipantsEqual(arg0, arg1) {
   let tmp;
   let tmp2;
@@ -11,50 +35,33 @@ function areParticipantsEqual(arg0, arg1) {
   [, , tmp2] = arg1;
   return tmp === tmp2;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ TouchableOpacity: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-const tmp2 = arg1(dependencyMap[2]);
-({ togglePipFocus: closure_13, useIsVoiceChatFocused: closure_14 } = arg1(dependencyMap[10]));
-const ParticipantTypes = arg1(dependencyMap[11]).ParticipantTypes;
-const tmp3 = arg1(dependencyMap[10]);
-({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = arg1(dependencyMap[12]));
-let obj1 = arg1(dependencyMap[13]);
+({ TouchableOpacity: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ togglePipFocus: closure_13, useIsVoiceChatFocused: closure_14 } = resetFocusTimer);
+({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
 let obj = {};
-let obj3 = arg1(dependencyMap[14]);
-obj.elevationShadow = obj3.generateBoxShadowStyle(arg1(dependencyMap[14]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
-obj = { backgroundColor: importDefault(dependencyMap[15]).colors.BLACK, borderRadius: importDefault(dependencyMap[15]).radii.sm, overflow: "hidden" };
+obj.elevationShadow = Button.generateBoxShadowStyle(require("Button").EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
 obj.background = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[15]).colors.BLACK, borderRadius: importDefault(dependencyMap[15]).radii.lg };
-obj.backgroundPipFab = obj1;
-const tmp4 = arg1(dependencyMap[12]);
-obj.pip = { borderRadius: importDefault(dependencyMap[15]).radii.sm, overflow: "hidden" };
-obj3 = { borderRadius: importDefault(dependencyMap[15]).radii.lg, overflow: "hidden" };
-obj.pipFab = obj3;
-obj.avatarContainer = {};
-obj.activityPipContainer = { backgroundColor: false, borderRadius: false };
-obj.thermalAlertIconContainer = {};
-const obj4 = { "Null": "<string:1912602975>", "Null": "height", color: importDefault(dependencyMap[15]).colors.WHITE };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+obj.backgroundPipFab = _createForOfIteratorHelperLoose;
+obj.pip = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
+Button = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
+obj.pipFab = Button;
+obj.avatarContainer = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" };
+obj.activityPipContainer = { flex: 1, width: "100%" };
+obj.thermalAlertIconContainer = { width: 22, height: 22, backgroundColor: "rgba(78, 80, 88, 0.48)", borderRadius: 11, justifyContent: "center", alignItems: "center", position: "absolute", top: 6, left: 6 };
+let obj4 = { width: 14, height: 14, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
 obj.thermalAlertIcon = obj4;
-let closure_19 = obj1.createStyles(obj);
+let closure_19 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_20 = importAllResult.memo((channel) => {
   channel = channel.channel;
-  const arg1 = channel;
   const pipParticipant = channel.pipParticipant;
-  const importDefault = pipParticipant;
   const selfParticipant = channel.selfParticipant;
-  let dependencyMap;
-  let closure_3;
+  let openVoice;
+  let _slicedToArray;
   let closure_4;
   function onScreenshareTap() {
-    const voiceChannelId = voiceChannelId.getVoiceChannelId();
+    const voiceChannelId = outer1_10.getVoiceChannelId();
     if (null != voiceChannelId) {
       let id;
       if (null != pipParticipant) {
@@ -65,35 +72,34 @@ let closure_20 = importAllResult.memo((channel) => {
         tmp7 = id;
       }
       const participant = pipParticipant(openVoice[21]).selectParticipant(voiceChannelId, tmp7);
-      if (closure_3) {
+      if (_slicedToArray) {
         openVoice();
       }
       const obj = pipParticipant(openVoice[21]);
     }
   }
   function onPipTap() {
-    if (closure_3) {
+    if (_slicedToArray) {
       openVoice();
     }
     if (closure_4) {
       const participant = pipParticipant(openVoice[21]).selectParticipant(channel.id, null);
       const obj = pipParticipant(openVoice[21]);
     } else {
-      callback();
+      outer1_13();
     }
   }
-  let obj = arg1(dependencyMap[16]);
+  let obj = channel(openVoice[16]);
   const voiceChatNavigationContext = obj.useVoiceChatNavigationContext();
-  let openVoice;
+  openVoice = undefined;
   if (null != voiceChatNavigationContext) {
     openVoice = voiceChatNavigationContext.openVoice;
   }
   if (null == openVoice) {
-    openVoice = importDefault(dependencyMap[17]).noop;
+    openVoice = pipParticipant(openVoice[17]).noop;
   }
-  dependencyMap = openVoice;
-  closure_3 = callback2();
-  closure_4 = importDefault(dependencyMap[18])(channel.id);
+  _slicedToArray = callback2();
+  closure_4 = pipParticipant(openVoice[18])(channel.id);
   let type;
   if (null != pipParticipant) {
     type = pipParticipant.type;
@@ -104,17 +110,17 @@ let closure_20 = importAllResult.memo((channel) => {
     if (null != pipParticipant) {
       applicationId = pipParticipant.applicationId;
     }
-    tmp9Result = importDefault(dependencyMap[19])(applicationId);
-    const tmp9 = importDefault(dependencyMap[19]);
+    tmp9Result = pipParticipant(openVoice[19])(applicationId);
+    const tmp9 = pipParticipant(openVoice[19]);
   }
-  let obj1 = arg1(dependencyMap[20]);
+  let obj1 = channel(openVoice[20]);
   const items = [closure_9];
   const items1 = [pipParticipant];
   let type1;
   const stateFromStores = obj1.useStateFromStores(items, () => {
     let isLocalVideoDisabledResult = null != pipParticipant;
     if (isLocalVideoDisabledResult) {
-      isLocalVideoDisabledResult = localVideoDisabled.isLocalVideoDisabled(pipParticipant.id);
+      isLocalVideoDisabledResult = outer1_9.isLocalVideoDisabled(pipParticipant.id);
     }
     return isLocalVideoDisabledResult;
   }, items1);
@@ -125,12 +131,12 @@ let closure_20 = importAllResult.memo((channel) => {
     if (ParticipantTypes.STREAM !== type1) {
       if (ParticipantTypes.USER === type1) {
         let tmp17 = null;
-        if (importDefault(dependencyMap[25])(pipParticipant)) {
+        if (pipParticipant(openVoice[25])(pipParticipant)) {
           tmp17 = null;
           if (!stateFromStores) {
-            obj = { participant: pipParticipant, avatarSize: arg1(dependencyMap[14]).AvatarSizes.PROFILE, resizeMode: arg1(dependencyMap[24]).ResizeMode.COVER, onSingleTap: onPipTap, onDoubleTap: onPipTap };
-            tmp17 = callback3(importDefault(dependencyMap[26]), obj);
-            const tmp21 = importDefault(dependencyMap[26]);
+            obj = { participant: pipParticipant, avatarSize: channel(openVoice[14]).AvatarSizes.PROFILE, resizeMode: channel(openVoice[24]).ResizeMode.COVER, onSingleTap: onPipTap, onDoubleTap: onPipTap };
+            tmp17 = callback3(pipParticipant(openVoice[26]), obj);
+            const tmp21 = pipParticipant(openVoice[26]);
           }
         }
         let tmp14 = tmp17;
@@ -141,16 +147,16 @@ let closure_20 = importAllResult.memo((channel) => {
             participant: pipParticipant,
             channel,
             onSingleTap() {
-                      const currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
+                      const currentEmbeddedActivity = outer1_6.getCurrentEmbeddedActivity();
                       if (null != currentEmbeddedActivity) {
                         pipParticipant(openVoice[28])(channel.guild_id, currentEmbeddedActivity.location);
                       }
-                      if (closure_3) {
+                      if (_slicedToArray) {
                         openVoice();
                       }
                     }
           };
-          tmp14 = callback3(importDefault(dependencyMap[27]), obj);
+          tmp14 = callback3(pipParticipant(openVoice[27]), obj);
         }
       }
       obj1 = {};
@@ -160,18 +166,18 @@ let closure_20 = importAllResult.memo((channel) => {
         if (!tmp9Result) {
           const obj2 = {
             participant: selfParticipant,
-            avatarSize: arg1(dependencyMap[14]).AvatarSizes.PROFILE,
-            resizeMode: arg1(dependencyMap[24]).ResizeMode.COVER,
+            avatarSize: channel(openVoice[14]).AvatarSizes.PROFILE,
+            resizeMode: channel(openVoice[24]).ResizeMode.COVER,
             onSingleTap() {
-                      if (closure_3) {
+                      if (_slicedToArray) {
                         openVoice();
                       } else {
-                        callback();
+                        outer1_13();
                       }
                     }
           };
-          tmp34 = callback3(importDefault(dependencyMap[26]), obj2);
-          const tmp38 = importDefault(dependencyMap[26]);
+          tmp34 = callback3(pipParticipant(openVoice[26]), obj2);
+          const tmp38 = pipParticipant(openVoice[26]);
         }
       }
       const items2 = [tmp34, tmp14];
@@ -181,11 +187,11 @@ let closure_20 = importAllResult.memo((channel) => {
   }
   if (pipParticipant.user.id === id.getId()) {
     const obj3 = { onSingleTap: onScreenshareTap, onDoubleTap: onScreenshareTap };
-    callback3(importDefault(dependencyMap[22]), obj3);
+    callback3(pipParticipant(openVoice[22]), obj3);
   } else {
-    const obj4 = { <string:140633209>: null, <string:1406208081>: null, resizeMode: arg1(dependencyMap[24]).ResizeMode.CONTAIN, participant: pipParticipant, onSingleTap: onPipTap, onDoubleTap: onPipTap };
-    callback3(importDefault(dependencyMap[23]), obj4);
-    const tmp26 = importDefault(dependencyMap[23]);
+    const obj4 = { removeEmptyStateButton: true, removeEmptyStateImage: true, resizeMode: channel(openVoice[24]).ResizeMode.CONTAIN, participant: pipParticipant, onSingleTap: onPipTap, onDoubleTap: onPipTap };
+    callback3(pipParticipant(openVoice[23]), obj4);
+    const tmp26 = pipParticipant(openVoice[23]);
   }
 });
 let closure_21 = importAllResult.memo((channel) => {
@@ -193,49 +199,49 @@ let closure_21 = importAllResult.memo((channel) => {
   let tmp4;
   channel = channel.channel;
   const tmp = callback4();
-  let obj = arg1(dependencyMap[20]);
-  const items = [closure_12];
+  let obj = require(566) /* initialize */;
+  let items = [closure_12];
   obj = { channelId: channel.id, selfParticipant: channel.selfParticipant };
   [tmp3, tmp4] = callback(obj.useStateFromStoresArray(items, () => {
-    const items = [closure_12.consumedRequestToRespondToSeriousThermalState(), closure_12.isReactingToThermalState()];
+    const items = [outer1_12.consumedRequestToRespondToSeriousThermalState(), outer1_12.isReactingToThermalState()];
     return items;
   }), 2);
-  const tmp5 = function useActivityPipParticipant(channelId) {
+  const tmp5 = (function useActivityPipParticipant(channelId) {
     channelId = channelId.channelId;
     const selfParticipant = channelId.selfParticipant;
-    const items = [closure_12];
-    const stateFromStores = channelId(leadingEdgeDebounce[20]).useStateFromStores(items, () => reactingToThermalState.isReactingToThermalState());
-    const obj = channelId(leadingEdgeDebounce[20]);
-    const items1 = [closure_7];
+    let items = [outer1_12];
+    const stateFromStores = outer1_0(outer1_2[20]).useStateFromStores(items, () => outer2_12.isReactingToThermalState());
+    const obj = outer1_0(outer1_2[20]);
+    const items1 = [outer1_7];
     const items2 = [channelId];
-    const tmp2 = callback(channelId(leadingEdgeDebounce[20]).useStateFromStores(items1, () => {
-      const items = [store.getParticipants(channelId), store.getVideoParticipants(channelId), store.getParticipantsVersion(channelId)];
+    const tmp2 = outer1_3(outer1_0(outer1_2[20]).useStateFromStores(items1, () => {
+      const items = [outer2_7.getParticipants(channelId), outer2_7.getVideoParticipants(channelId), outer2_7.getParticipantsVersion(channelId)];
       return items;
-    }, items2, closure_22), 2);
+    }, items2, outer1_22), 2);
     const first = tmp2[0];
-    const obj2 = channelId(leadingEdgeDebounce[20]);
-    const items3 = [closure_11];
+    const obj2 = outer1_0(outer1_2[20]);
+    const items3 = [outer1_11];
     const items4 = [selfParticipant];
-    const stateFromStores1 = channelId(leadingEdgeDebounce[20]).useStateFromStores(items3, () => {
+    const stateFromStores1 = outer1_0(outer1_2[20]).useStateFromStores(items3, () => {
       let found = null;
       if (null != selfParticipant) {
-        const speakers = speakers.getSpeakers();
+        const speakers = outer2_11.getSpeakers();
         found = speakers.find((arg0) => {
-          let isSpeakingResult = arg0 !== user.user.id;
+          let isSpeakingResult = arg0 !== outer1_1.user.id;
           if (isSpeakingResult) {
-            isSpeakingResult = speaking.isSpeaking(arg0);
+            isSpeakingResult = outer3_11.isSpeaking(arg0);
           }
           return isSpeakingResult;
         });
       }
       return found;
     }, items4);
-    const obj3 = channelId(leadingEdgeDebounce[20]);
-    const leadingEdgeDebounce = channelId(leadingEdgeDebounce[29]).useLeadingEdgeDebounce(stateFromStores1, 1000);
+    const obj3 = outer1_0(outer1_2[20]);
+    const leadingEdgeDebounce = outer1_0(outer1_2[29]).useLeadingEdgeDebounce(stateFromStores1, 1000);
     if (null != leadingEdgeDebounce) {
-      const found = first.find((id) => id.id === leadingEdgeDebounce);
+      let found = first.find((id) => id.id === leadingEdgeDebounce);
       if (null != found) {
-        if (found.type === constants.USER) {
+        if (found.type === outer1_15.USER) {
           return found;
         }
       }
@@ -263,10 +269,10 @@ let closure_21 = importAllResult.memo((channel) => {
       }
       return selfParticipant;
     }
-    const obj4 = channelId(leadingEdgeDebounce[29]);
-  }(obj);
-  let obj2 = arg1(dependencyMap[30]);
-  const token = obj2.useToken(importDefault(dependencyMap[15]).unsafe_rawColors.PRIMARY_800);
+    const obj4 = outer1_0(outer1_2[29]);
+  })(obj);
+  let obj2 = require(3834) /* map */;
+  const token = obj2.useToken(importDefault(689).unsafe_rawColors.PRIMARY_800);
   if (null != tmp5) {
     const user = tmp5.user;
     const avatarURL = user.getAvatarURL(channel.guild_id, 80);
@@ -284,34 +290,34 @@ let closure_21 = importAllResult.memo((channel) => {
       tmp10 = selfVideo;
     }
     obj = {};
-    const items1 = [tmp.avatarContainer, ];
+    let items1 = [tmp.avatarContainer, ];
     const obj1 = { backgroundColor: tmp8 };
     items1[1] = obj1;
     obj.style = items1;
     if (tmp10) {
       if (!tmp4) {
-        obj2 = { participant: tmp5, avatarSize: arg1(dependencyMap[14]).AvatarSizes.PROFILE, resizeMode: arg1(dependencyMap[24]).ResizeMode.COVER };
-        let tmp18 = callback3(importDefault(dependencyMap[26]), obj2);
-        const tmp16 = importDefault(dependencyMap[26]);
+        obj2 = { participant: tmp5, avatarSize: require(1273) /* Button */.AvatarSizes.PROFILE, resizeMode: require(10574) /* resetIOSScrollZoom */.ResizeMode.COVER };
+        let tmp18 = callback3(importDefault(10590), obj2);
+        const tmp16 = importDefault(10590);
       }
-      const items2 = [tmp18, ];
+      let items2 = [tmp18, ];
       let tmp22 = null;
       if (tmp3) {
-        const obj3 = { style: tmp.thermalAlertIconContainer };
-        const obj4 = { style: tmp.thermalAlertIcon, source: importDefault(dependencyMap[32]), color: tmp.thermalAlertIcon.color };
-        obj3.children = callback3(arg1(dependencyMap[14]).Icon, obj4);
+        let obj3 = { style: tmp.thermalAlertIconContainer };
+        let obj4 = { style: tmp.thermalAlertIcon, source: importDefault(8479), color: tmp.thermalAlertIcon.color };
+        obj3.children = callback3(require(1273) /* Button */.Icon, obj4);
         tmp22 = callback3(closure_5, obj3);
       }
       items2[1] = tmp22;
       obj.children = items2;
       return tmp11(tmp12, obj);
     }
-    const obj5 = { size: arg1(dependencyMap[14]).AvatarSizes.LARGE_48, channel, guildId: channel.guild_id };
+    const obj5 = { size: require(1273) /* Button */.AvatarSizes.LARGE_48, channel, guildId: channel.guild_id };
     ({ user: obj7.user, speaking: obj7.speaking } = tmp5);
-    tmp18 = callback3(arg1(dependencyMap[14]).Avatar, obj5);
+    tmp18 = callback3(require(1273) /* Button */.Avatar, obj5);
   }
 });
-const obj2 = { borderRadius: importDefault(dependencyMap[15]).radii.sm, overflow: "hidden" };
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
 const memoResult = importAllResult.memo((arg0) => {
   let channel;
   let height;
@@ -320,19 +326,19 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = arg1(dependencyMap[33]);
+  let obj = require(10546) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = arg1(dependencyMap[34]);
+  let obj2 = require(10542) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp4 = importDefault(dependencyMap[35])(obj);
+  const tmp4 = importDefault(10545)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background };
   obj2 = { activeOpacity: 0.7 };
   const obj3 = {};
   const items = [isViewingActivity ? tmp.pipFab : tmp.pip, , , ];
-  ({ width, height } = importDefault(dependencyMap[36])());
-  let obj7 = arg1(dependencyMap[37]);
+  ({ width, height } = importDefault(1450)());
+  let obj7 = require(477) /* set */;
   let elevationShadow;
   if (obj7.isAndroid()) {
     elevationShadow = tmp.elevationShadow;
@@ -362,7 +368,7 @@ const memoResult = importAllResult.memo((arg0) => {
   obj1.children = closure_16(closure_4, obj2);
   return closure_16(closure_5, obj1);
 });
-const result = arg1(dependencyMap[39]).fileFinishedImporting("modules/video_calls/native/components/PictureInPictureVideo.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/video_calls/native/components/PictureInPictureVideo.tsx");
 
 export default memoResult;
 export { areParticipantsEqual };

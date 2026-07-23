@@ -1,13 +1,13 @@
-// Module ID: 6265
-// Function ID: 50330
+// Module ID: 6270
+// Function ID: 50359
 // Name: InkQuill3dIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6271, 2]
 // Exports: InkQuill3dIllustration
 
-// Module 6265 (InkQuill3dIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/InkQuill3dIllustration.native.tsx");
+// Module 6270 (InkQuill3dIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/InkQuill3dIllustration.native.tsx");
 
 export const InkQuill3dIllustration = function InkQuill3dIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const InkQuill3dIllustration = function InkQuill3dIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6271) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const InkQuill3dIllustration = function InkQuill3dIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

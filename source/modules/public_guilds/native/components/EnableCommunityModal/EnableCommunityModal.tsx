@@ -1,43 +1,44 @@
-// Module ID: 16240
-// Function ID: 125510
+// Module ID: 16357
+// Function ID: 127684
 // Name: onModalClose
-// Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 16356, 5093, 5087, 1212, 5788, 7607, 16358, 16359, 16371, 16372, 5519, 2]
 // Exports: default
 
-// Module 16240 (onModalClose)
-import __exportStarResult1 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 16357 (onModalClose)
+import result from "result";
+import { jsx } from "jsxProd";
 
+const require = arg1;
 function onModalClose() {
-  importDefault(dependencyMap[2]).close();
+  importDefault(16356).close();
 }
 function HeaderBackButton(arg0) {
-  arg1(dependencyMap[3]).useNavigatorBackPressHandler(() => {
-    callback();
+  require(5093) /* useNavigatorBackPressHandler */.useNavigatorBackPressHandler(() => {
+    outer1_5();
     return true;
   });
-  const obj = arg1(dependencyMap[3]);
-  const intl = arg1(dependencyMap[5]).intl;
-  return arg1(dependencyMap[4]).getHeaderTextButton(intl.string(arg1(dependencyMap[5]).t.13/7kX), onModalClose)(arg0);
+  const obj = require(5093) /* useNavigatorBackPressHandler */;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return require(5087) /* HeaderBackImage */.getHeaderTextButton(intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]), onModalClose)(arg0);
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunityModal.tsx");
+const result = require("module_16356").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunityModal.tsx");
 
 export default function EnableCommunityModal() {
-  const memo = React.useMemo(() => function getScreens() {
+  const memo = React.useMemo(() => (function getScreens() {
     function headerRight() {
-      const obj = { source: callback2(closure_2[7]), onPress: closure_5 };
-      const intl = callback(closure_2[5]).intl;
-      obj.accessibilityLabel = intl.string(callback(closure_2[5]).t.cpT0Cq);
-      return callback3(callback(closure_2[6]).HeaderActionButton, obj);
+      const obj = { source: outer3_1(outer3_2[7]), onPress: outer3_5 };
+      const intl = outer3_0(outer3_2[5]).intl;
+      obj.accessibilityLabel = intl.string(outer3_0(outer3_2[5]).t.cpT0Cq);
+      return outer3_4(outer3_0(outer3_2[6]).HeaderActionButton, obj);
     }
     let obj = {
       headerRight,
-      headerLeft: closure_6,
+      headerLeft: outer2_6,
       headerTitle() {
         return null;
       },
       render() {
-        return callback3(callback2(closure_2[9]), {});
+        return outer3_4(outer3_1(outer3_2[9]), {});
       }
     };
     obj = {
@@ -46,7 +47,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(closure_2[10]), {});
+        return outer3_4(outer3_1(outer3_2[10]), {});
       }
     };
     obj = {
@@ -55,13 +56,13 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(closure_2[11]), {});
+        return outer3_4(outer3_1(outer3_2[11]), {});
       }
     };
-    return { [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_1]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_2]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_3]: obj };
-  }(), []);
-  const obj = { screens: memo, initialRouteName: arg1(dependencyMap[8]).EnableCommunityModalSteps.STEP_1 };
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[5]).t.13/7kX);
-  return jsx(arg1(dependencyMap[12]).Navigator, obj);
+    return { [outer2_0(outer2_2[8]).EnableCommunityModalSteps.STEP_1]: obj, [outer2_0(outer2_2[8]).EnableCommunityModalSteps.STEP_2]: obj, [outer2_0(outer2_2[8]).EnableCommunityModalSteps.STEP_3]: obj };
+  })(), []);
+  let obj = { screens: memo, initialRouteName: require(16358) /* EnableCommunityModalSteps */.EnableCommunityModalSteps.STEP_1 };
+  let intl = require(1212) /* getSystemLocale */.intl;
+  obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
+  return jsx(require(5519) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: require(16358) /* EnableCommunityModalSteps */.EnableCommunityModalSteps.STEP_1 });
 };

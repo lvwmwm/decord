@@ -1,12 +1,12 @@
 // Module ID: 3545
-// Function ID: 27560
+// Function ID: 27525
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3517, 3518, 3515]
 
 // Module 3545 (_typeof)
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     if ("symbol" === typeof Symbol.iterator) {
       function _typeof(arg0) {
         return typeof arg0;
@@ -42,16 +42,16 @@ function _defineProperties(arg0, arg1) {
   }
 }
 function _setPrototypeOf(arg0, arg1) {
-  const tmp = Object.setPrototypeOf || function _setPrototypeOf(arg0, arg1) {
+  const tmp = Object.setPrototypeOf || (function _setPrototypeOf(arg0, arg1) {
     arg0.__proto__ = arg1;
     return arg0;
-  };
+  });
   const _setPrototypeOf = tmp;
   return tmp(arg0, arg1);
 }
 function _createSuper(arg0) {
-  const require = arg0;
-  let closure_1 = function _isNativeReflectConstruct() {
+  let closure_0 = arg0;
+  let closure_1 = (function _isNativeReflectConstruct() {
     if ("undefined" !== typeof Reflect) {
       const _Reflect3 = Reflect;
       if (Reflect.construct) {
@@ -75,22 +75,22 @@ function _createSuper(arg0) {
       }
     }
     return false;
-  }();
+  })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = callback3(arg0);
+    const obj = outer1_7(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, callback3(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      callback2(self);
+      outer1_6(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== callback(constructResult)) {
+      if ("object" !== outer1_2(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -108,7 +108,7 @@ function _assertThisInitialized(arg0) {
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     let _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { value, enumerable: true, configurable: true, writable: true };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const FractionOfSecondParser = (Parser) => {
-  class FractionOfSecondParser {
+export const MinuteParser = ((Parser) => {
+  class MinuteParser {
     constructor() {
-      if (this instanceof FractionOfSecondParser) {
+      if (this instanceof MinuteParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,21 +148,21 @@ export const FractionOfSecondParser = (Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = closure_8;
-        tmp12 = closure_6;
+        tmp11 = outer1_8;
+        tmp12 = outer1_6;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = closure_6(applyResult);
+        tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 30;
-        tmp17 = closure_8(applyResult, "priority", 30);
-        tmp18 = closure_6(applyResult);
+        num2 = 60;
+        tmp17 = outer1_8(applyResult, "priority", 60);
+        tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -176,11 +176,10 @@ export const FractionOfSecondParser = (Parser) => {
       }
     }
   }
-  const dependencyMap = FractionOfSecondParser;
   if ("function" !== typeof Parser) {
-    class FractionOfSecondParser {
+    class MinuteParser {
       constructor() {
-        if (this instanceof FractionOfSecondParser) {
+        if (this instanceof MinuteParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -192,21 +191,21 @@ export const FractionOfSecondParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 30;
-          tmp17 = closure_8(applyResult, "priority", 30);
-          tmp18 = closure_6(applyResult);
+          num2 = 60;
+          tmp17 = outer1_8(applyResult, "priority", 60);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,12 +224,12 @@ export const FractionOfSecondParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { "": null, children: null, "": null, value: FractionOfSecondParser };
-  FractionOfSecondParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: MinuteParser, writable: true, configurable: true };
+  MinuteParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class FractionOfSecondParser {
+    class MinuteParser {
       constructor() {
-        if (this instanceof FractionOfSecondParser) {
+        if (this instanceof MinuteParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -242,21 +241,21 @@ export const FractionOfSecondParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 30;
-          tmp17 = closure_8(applyResult, "priority", 30);
-          tmp18 = closure_6(applyResult);
+          num2 = 60;
+          tmp17 = outer1_8(applyResult, "priority", 60);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -270,27 +269,41 @@ export const FractionOfSecondParser = (Parser) => {
         }
       }
     }
-    _setPrototypeOf(FractionOfSecondParser, Parser);
+    _setPrototypeOf(MinuteParser, Parser);
   }
-  let closure_0 = _createSuper(FractionOfSecondParser);
+  let closure_0 = _createSuper(MinuteParser);
   obj = {
     key: "parse",
-    value: function parse(arg0, arg1) {
-      const callback = arg1;
-      return callback(FractionOfSecondParser[0]).mapValue(callback(FractionOfSecondParser[0]).parseNDigits(arg1.length, arg0), function valueCallback(arg0) {
-        return Math.floor(arg0 * Math.pow(10, 3 - arg1.length));
-      });
+    value: function parse(arg0, arg1, ordinalNumber) {
+      if ("m" === arg1) {
+        return callback(MinuteParser[0]).parseNumericPattern(callback(MinuteParser[1]).numericPatterns.minute, arg0);
+      } else if ("mo" === arg1) {
+        const obj = { unit: "minute" };
+        return ordinalNumber.ordinalNumber(arg0, obj);
+      } else {
+        return callback(MinuteParser[0]).parseNDigits(arg1.length, arg0);
+      }
     }
   };
-  const items = [obj, ];
+  let items = [obj, , ];
   obj = {
-    key: "set",
-    value: function set(setUTCMilliseconds) {
-      setUTCMilliseconds.setUTCMilliseconds(arg2);
-      return setUTCMilliseconds;
+    key: "validate",
+    value: function validate(arg0, arg1) {
+      let tmp = arg1 >= 0;
+      if (tmp) {
+        tmp = arg1 <= 59;
+      }
+      return tmp;
     }
   };
   items[1] = obj;
-  _defineProperties(FractionOfSecondParser.prototype, items);
-  return FractionOfSecondParser;
-}(require(dependencyMap[1]).Parser);
+  items[2] = {
+    key: "set",
+    value: function set(setUTCMinutes) {
+      setUTCMinutes.setUTCMinutes(arg2, 0, 0);
+      return setUTCMinutes;
+    }
+  };
+  _defineProperties(MinuteParser.prototype, items);
+  return MinuteParser;
+})(require("_defineProperties").Parser);

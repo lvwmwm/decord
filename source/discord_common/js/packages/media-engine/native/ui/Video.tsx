@@ -1,18 +1,17 @@
-// Module ID: 4226
-// Function ID: 37058
+// Module ID: 4230
+// Function ID: 37090
 // Name: Video
-// Dependencies: []
+// Dependencies: [4231, 2]
 
-// Module 4226 (Video)
+// Module 4230 (Video)
 class Video {
   constructor(arg0) {
-    return importDefault(dependencyMap[0])(global, Video.onContainerResized);
+    return require("_createForOfIteratorHelperLoose")(global, Video.onContainerResized);
   }
 }
 Video.onContainerResized = () => {
 
 };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Video.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Video.tsx");
 
 export default Video;

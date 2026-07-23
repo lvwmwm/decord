@@ -1,10 +1,19 @@
-// Module ID: 4170
-// Function ID: 35380
+// Module ID: 4174
+// Function ID: 35412
 // Name: convertToTransitionState
-// Dependencies: []
+// Dependencies: [57, 1849, 4175, 653, 3803, 2]
 // Exports: calculateProgressPercentage, convertComboId, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4170 (convertToTransitionState)
+// Module 4174 (convertToTransitionState)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function convertToTransitionState(type) {
   let tmp = null;
   if (null != type) {
@@ -18,12 +27,8 @@ function convertToTransitionState(type) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ LibraryApplicationFlags: closure_5, LocalDispatchApplicationStates: closure_6, StatusTypes: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("utils/LibraryApplicationUtils.tsx");
+({ LibraryApplicationFlags: closure_5, LocalDispatchApplicationStates: closure_6, StatusTypes: closure_7 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/LibraryApplicationUtils.tsx");
 
 export const getComboId = function getComboId(arg0, arg1) {
   return "" + arg0 + ":" + arg1;
@@ -33,9 +38,9 @@ export const convertComboId = function convertComboId(str) {
   return { applicationId: tmp[0], branchId: tmp[1] };
 };
 export const shouldShareApplicationActivity = function shouldShareApplicationActivity(applicationId, closure_12) {
-  const ShowCurrentGame = closure_12(dependencyMap[4]).ShowCurrentGame;
+  const ShowCurrentGame = require(3803) /* explicitContentFromProto */.ShowCurrentGame;
   if (ShowCurrentGame.getSetting()) {
-    const StatusSetting = closure_12(dependencyMap[4]).StatusSetting;
+    const StatusSetting = require(3803) /* explicitContentFromProto */.StatusSetting;
     if (StatusSetting.getSetting() !== constants3.INVISIBLE) {
       const activeLibraryApplication = closure_12.getActiveLibraryApplication(applicationId);
       let tmp6 = null == activeLibraryApplication;
@@ -71,11 +76,11 @@ export const shouldShowGameInLibrary = function shouldShowGameInLibrary(arg0, ha
 export { convertToTransitionState };
 export const getCombinedProgress = function getCombinedProgress(arr) {
   return arr.reduce((total, type) => {
-    const tmp = callback(type);
+    const tmp = outer1_8(type);
     let tmp2 = total;
     if (null != tmp) {
       tmp2 = total;
-      if (type.type !== constants.UP_TO_DATE) {
+      if (type.type !== outer1_6.UP_TO_DATE) {
         const obj = {};
         const _Number = Number;
         obj.total = total.total + Number(tmp.total);
@@ -85,7 +90,7 @@ export const getCombinedProgress = function getCombinedProgress(arr) {
       }
     }
     return tmp2;
-  }, { "Null": "%FunctionPrototype%", "Null": "paddingStart" });
+  }, { total: 0, progress: 0 });
 };
 export const isUserEntitledToLibraryApplication = function isUserEntitledToLibraryApplication(libraryApplication) {
   const tmp = !libraryApplication.isDiscordApplication();

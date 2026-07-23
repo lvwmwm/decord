@@ -1,17 +1,19 @@
-// Module ID: 12637
-// Function ID: 97246
+// Module ID: 12751
+// Function ID: 99402
 // Name: VideoHealthManager
-// Dependencies: []
+// Dependencies: [6, 7, 653, 3, 12752, 4206, 664, 4368, 2]
 
-// Module 12637 (VideoHealthManager)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const VideoToggleState = arg1(dependencyMap[2]).VideoToggleState;
-const tmp2 = () => {
+// Module 12751 (VideoHealthManager)
+import set from "set";
+import isTablet from "isTablet";
+import { VideoToggleState } from "ME";
+
+const require = arg1;
+let tmp2 = (() => {
   class VideoHealthManager {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = closure_3(this, VideoHealthManager);
-      tmp2 = closure_1(closure_2[3]);
+      tmp = outer1_3(this, VideoHealthManager);
+      tmp2 = outer1_1(outer1_2[3]);
       tmp2 = new tmp2("VideoHealthManager");
       this.logger = tmp2;
       this.disabled = false;
@@ -35,7 +37,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = VideoHealthManager;
   let obj = {
     key: "calculateFps",
     value(arg0, arg1, arg2) {
@@ -66,8 +67,8 @@ const tmp2 = () => {
   obj = {
     key: "updateFps",
     value(arg0, arg1, arg2) {
-      const self = this;
-      const VideoHealthManager = this;
+      let self = this;
+      self = this;
       if (!this.disabled) {
         const streamDisabledUsers = self.streamDisabledUsers;
         if (!streamDisabledUsers.has(arg0)) {
@@ -88,21 +89,21 @@ const tmp2 = () => {
                   logger.info("" + arg0 + ": detected poor network quality, turning off video");
                   const streamDisabledUsers2 = self.streamDisabledUsers;
                   streamDisabledUsers2.add(arg0);
-                  self.currentVideoAutoToggleState[arg0] = constants.DISABLED;
-                  callback(closure_2[4])(arg0, constants.DISABLED);
+                  self.currentVideoAutoToggleState[arg0] = outer1_5.DISABLED;
+                  outer1_1(outer1_2[4])(arg0, outer1_5.DISABLED);
                   const result = self.startReenableBackoffTimer(arg0);
-                } else if (self.currentVideoAutoToggleState[arg0] === constants.AUTO_PROBING) {
-                  self.currentVideoAutoToggleState[arg0] = constants.AUTO_ENABLED;
+                } else if (self.currentVideoAutoToggleState[arg0] === outer1_5.AUTO_PROBING) {
+                  self.currentVideoAutoToggleState[arg0] = outer1_5.AUTO_ENABLED;
                   const logger2 = self.logger;
                   const _HermesInternal2 = HermesInternal;
                   logger2.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user " + arg0);
-                  callback(closure_2[4])(arg0, constants.AUTO_ENABLED);
+                  outer1_1(outer1_2[4])(arg0, outer1_5.AUTO_ENABLED);
                 }
                 if (self.probingUserId === arg0) {
                   self.probingUserId = undefined;
                   self.tryReenableQueue();
                 }
-                const arr3 = self.perUserFpsWindow[arg0];
+                arr3 = self.perUserFpsWindow[arg0];
               }
             }
           }
@@ -116,8 +117,9 @@ const tmp2 = () => {
     value(arg0) {
       let expBackoffFactor;
       let lastBackoffTime;
-      const self = this;
-      const VideoHealthManager = this;
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
       if (!this.disabled) {
         const logger = self.logger;
         const _HermesInternal = HermesInternal;
@@ -127,25 +129,25 @@ const tmp2 = () => {
         if (null !== lastBackoffTime) {
           num2 = 1;
           if (expBackoffFactor <= 16) {
-            let obj = VideoHealthManager(closure_2[5]);
+            let obj = VideoHealthManager(outer1_2[5]);
             num2 = 1;
             if (self.elapsedSeconds(obj.now(), lastBackoffTime) <= 600) {
               num2 = expBackoffFactor * 2;
             }
           }
         }
-        obj = { lastBackoffTime: VideoHealthManager(closure_2[5]).now(), expBackoffFactor: num2 };
+        obj = { lastBackoffTime: VideoHealthManager(outer1_2[5]).now(), expBackoffFactor: num2 };
         self.retryBackoffCache[arg0] = obj;
         const result = num2 * self.backoffTimeSec;
-        const result1 = result * arg0(closure_2[6]).Millis.SECOND;
+        const result1 = result * outer1_1(outer1_2[6]).Millis.SECOND;
         const logger2 = self.logger;
         const _HermesInternal2 = HermesInternal;
         logger2.info("starting backoff timer with time = " + result1 + " milliseconds");
         const _setTimeout = setTimeout;
         self.timeoutIdCache[arg0] = setTimeout(() => {
-          self.queueReenable(arg0);
+          self.queueReenable(closure_1);
         }, result1);
-        const obj3 = VideoHealthManager(closure_2[5]);
+        const obj3 = VideoHealthManager(outer1_2[5]);
       }
     }
   };
@@ -187,13 +189,13 @@ const tmp2 = () => {
       if (flag) {
         const logger = self.logger;
         const _HermesInternal = HermesInternal;
-        logger.info("reenableVideo called for user " + probingUserId + " - time = " + VideoHealthManager(closure_2[5]).now());
+        logger.info("reenableVideo called for user " + probingUserId + " - time = " + VideoHealthManager(outer1_2[5]).now());
         const result = self.stateCleanupBeforeEnable(probingUserId);
-        self.currentVideoAutoToggleState[probingUserId] = constants.AUTO_PROBING;
+        self.currentVideoAutoToggleState[probingUserId] = outer1_5.AUTO_PROBING;
         self.probingUserId = probingUserId;
-        callback(closure_2[4])(probingUserId, constants.AUTO_PROBING);
+        outer1_1(outer1_2[4])(probingUserId, outer1_5.AUTO_PROBING);
         flag = true;
-        const obj = VideoHealthManager(closure_2[5]);
+        const obj = VideoHealthManager(outer1_2[5]);
       }
       return flag;
     }
@@ -230,8 +232,8 @@ const tmp2 = () => {
       if (!(arg0 in this.perUserFpsWindow)) {
         self.perUserFpsWindow[arg0] = [];
         self.prevFramesCodec[arg0] = -1;
-        self.currentVideoAutoToggleState[arg0] = constants.NONE;
-        self.retryBackoffCache[arg0] = {};
+        self.currentVideoAutoToggleState[arg0] = outer1_5.NONE;
+        self.retryBackoffCache[arg0] = { lastBackoffTime: null, expBackoffFactor: 1 };
       }
     }
   };
@@ -241,10 +243,10 @@ const tmp2 = () => {
       const self = this;
       const logger = this.logger;
       logger.info("VideoHealthManager::deleteUser " + arg0);
-      delete r3[r2];
-      delete r3[r2];
-      delete r3[r2];
-      delete r3[r2];
+      delete tmp3[tmp2];
+      delete tmp3[tmp2];
+      delete tmp3[tmp2];
+      delete tmp3[tmp2];
       const streamDisabledUsers = this.streamDisabledUsers;
       streamDisabledUsers.delete(arg0);
       if (arg0 === this.probingUserId) {
@@ -252,7 +254,7 @@ const tmp2 = () => {
         self.tryReenableQueue();
       }
       clearTimeout(self.timeoutIdCache[arg0]);
-      delete r1[r2];
+      delete tmp[tmp2];
     }
   };
   items[11] = {
@@ -263,13 +265,14 @@ const tmp2 = () => {
       for (const key10004 in this.perUserFpsWindow) {
         let tmp = key10004;
         let deleteUserResult = self.deleteUser(key10004);
+        continue;
       }
     }
   };
   return callback(VideoHealthManager, items);
-}();
-tmp2.defaultConfig = { featureEnabled: arg1(dependencyMap[7]).isMobile };
-const obj = { featureEnabled: arg1(dependencyMap[7]).isMobile };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("lib/VideoHealthManager.tsx");
+})();
+let obj = { featureEnabled: require("isTablet").isMobile, windowLength: 5, allowedPoorFpsRatio: 1, fpsThreshold: 5, backoffTimeSec: 15 };
+tmp2.defaultConfig = obj;
+let result = require("ME").fileFinishedImporting("lib/VideoHealthManager.tsx");
 
 export const VideoHealthManager = tmp2;

@@ -1,24 +1,25 @@
-// Module ID: 10648
-// Function ID: 83141
+// Module ID: 10658
+// Function ID: 83191
 // Name: useRequestToSpeakPermission
-// Dependencies: []
+// Dependencies: [57, 31, 1348, 653, 566, 3763, 7482, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 10648 (useRequestToSpeakPermission)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Permissions = arg1(dependencyMap[3]).Permissions;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/stage_channels/useRequestToSpeakPermission.tsx");
+// Module 10658 (useRequestToSpeakPermission)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/useRequestToSpeakPermission.tsx");
 
 export const useRequestToSpeakPermission = function useRequestToSpeakPermission(id) {
-  const arg1 = id;
-  const items = [closure_5];
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => channel.getChannel(arg0), items1);
-  const importAll = stateFromStores;
-  const obj = arg1(dependencyMap[4]);
-  const canEveryoneRoleResult = importAll(dependencyMap[5]).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getChannel(closure_0), items1);
+  let obj = _require(566);
+  const canEveryoneRoleResult = stateFromStores(3763).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
   const tmp3 = callback(React.useState(canEveryoneRoleResult), 2);
   const first = tmp3[0];
   const dependencyMap = tmp5;
@@ -30,8 +31,8 @@ export const useRequestToSpeakPermission = function useRequestToSpeakPermission(
     (arg0) => {
       if (null != stateFromStores) {
         tmp5(arg0);
-        const result = arg0(tmp5[6]).setEveryoneRolePermissionAllowed(stateFromStores, constants.REQUEST_TO_SPEAK, arg0);
-        const obj = arg0(tmp5[6]);
+        const result = id(tmp5[6]).setEveryoneRolePermissionAllowed(stateFromStores, outer1_6.REQUEST_TO_SPEAK, arg0);
+        const obj = id(tmp5[6]);
       }
     }
   ];

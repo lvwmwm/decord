@@ -1,10 +1,10 @@
-// Module ID: 4802
-// Function ID: 41852
+// Module ID: 4805
+// Function ID: 41870
 // Name: insertionIndex
-// Dependencies: []
+// Dependencies: [2]
 // Exports: insert
 
-// Module 4802 (insertionIndex)
+// Module 4805 (insertionIndex)
 function insertionIndex(arr, arg1, arg2) {
   let tmp2;
   let length = arr.length;
@@ -24,8 +24,7 @@ function insertionIndex(arr, arg1, arg2) {
   }
   return num2;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/SortedArrayUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/SortedArrayUtils.tsx");
 
 export { insertionIndex };
 export const insert = function insert(arr) {

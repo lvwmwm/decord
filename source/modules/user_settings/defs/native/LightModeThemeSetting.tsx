@@ -1,38 +1,40 @@
-// Module ID: 14078
-// Function ID: 106906
+// Module ID: 14192
+// Function ID: 109062
 // Name: route
-// Dependencies: []
+// Dependencies: [1278, 1281, 7662, 653, 1324, 566, 10095, 1212, 14193, 14194, 2]
 
-// Module 14078 (route)
-let closure_3 = importDefault(dependencyMap[0]);
-const SystemTheme = arg1(dependencyMap[1]).SystemTheme;
-let obj = arg1(dependencyMap[6]);
-obj = {
+// Module 14192 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SystemTheme } from "SystemThemeState";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.NoFvjZ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.NoFvjZ);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.APPEARANCE,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate: function useSyncedModePickerVisible() {
-    let stateFromStores = importDefault(dependencyMap[4])("LightModeThemeSetting");
-    const items = [closure_3];
+    let stateFromStores = importDefault(1324)("LightModeThemeSetting");
+    const items = [_isNativeReflectConstruct];
     if (stateFromStores) {
-      stateFromStores = obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+      stateFromStores = obj.useStateFromStores(items, () => outer1_3.isSameAsDeviceThemeEnabled());
     }
     return stateFromStores;
   },
   useTrailing() {
-    return arg1(dependencyMap[8]).useSyncedModeThemeName(SystemTheme.LIGHT);
+    return require(14193) /* useSyncedModeThemeName */.useSyncedModeThemeName(SystemTheme.LIGHT);
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[3]).UserSettingsSections.APPEARANCE_LIGHT_MODE_THEME_PICKER,
+createToggle = {
+  route: require("ME").UserSettingsSections.APPEARANCE_LIGHT_MODE_THEME_PICKER,
   getComponent() {
-    return arg1(dependencyMap[9]).default;
+    return require(14194) /* SettingsAppearanceLightModeThemePickerScreen */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/defs/native/LightModeThemeSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/LightModeThemeSetting.tsx");
 
-export default route;
+export default createToggle;

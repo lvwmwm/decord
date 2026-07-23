@@ -1,14 +1,14 @@
-// Module ID: 6975
-// Function ID: 55750
+// Module ID: 6980
+// Function ID: 55784
 // Name: getEstablishedDate
-// Dependencies: []
+// Dependencies: [1352, 653, 1387, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 6975 (getEstablishedDate)
-let closure_2 = require(dependencyMap[0]).createChannelRecordFromInvite;
-const GuildFeatures = require(dependencyMap[1]).GuildFeatures;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/guild_profile/GuildProfileUtils.tsx");
+// Module 6980 (getEstablishedDate)
+import { createChannelRecordFromInvite as closure_2 } from "_callSuper";
+import { GuildFeatures } from "ME";
+
+const result = require("fromGuildPropertiesWithAdditionalFields").fileFinishedImporting("modules/guild_profile/GuildProfileUtils.tsx");
 
 export const getEstablishedDate = function getEstablishedDate(arg0, locale) {
   if (null != arg0) {
@@ -21,7 +21,7 @@ export const getEstablishedDate = function getEstablishedDate(arg0, locale) {
         const _isNaN = isNaN;
         toLocaleDateStringResult = null;
         if (!isNaN(date.getTime())) {
-          toLocaleDateStringResult = date.toLocaleDateString(locale, {});
+          toLocaleDateStringResult = date.toLocaleDateString(locale, { year: "numeric", month: "short" });
         }
       }
       return toLocaleDateStringResult;
@@ -33,7 +33,7 @@ export const guildInviteCanEmbedProfile = function guildInviteCanEmbedProfile(gu
   if (null == guild.guild) {
     return false;
   } else {
-    const features = require(dependencyMap[2]).fromInviteGuild(guild.guild).features;
+    const features = require(1387) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(guild.guild).features;
     if (features.has(GuildFeatures.HUB)) {
       return false;
     } else {
@@ -47,6 +47,6 @@ export const guildInviteCanEmbedProfile = function guildInviteCanEmbedProfile(gu
       }
       return null == tmp2 || !tmp2.isGuildVoiceOrThread();
     }
-    const obj = require(dependencyMap[2]);
+    const obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
   }
 };

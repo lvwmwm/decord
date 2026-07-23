@@ -1,35 +1,36 @@
-// Module ID: 9636
-// Function ID: 75067
+// Module ID: 9643
+// Function ID: 75108
 // Name: DismissibleActionSheet
-// Dependencies: []
+// Dependencies: [31, 4559, 4098, 2]
 // Exports: DismissibleActionSheet
 
-// Module 9636 (DismissibleActionSheet)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
+// Module 9643 (DismissibleActionSheet)
+import result from "result";
+
+const result = require("showActionSheet").fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
 
 export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
   const importDefault = arg0;
-  importDefault(dependencyMap[1])((self) => {
-    let obj = self(closure_1[2]);
+  importDefault(4559)(() => {
+    let obj = lib(outer1_1[2]);
     obj = {};
-    const merged = Object.assign(self);
+    const merged = Object.assign(lib);
     obj["markAsDismissed"] = function markAsDismissed(arg0) {
-      lib(closure_1[2]).hideActionSheet(lib.actionSheetKey);
-      lib.markAsDismissed(arg0);
+      callback(outer2_1[2]).hideActionSheet(outer1_0.actionSheetKey);
+      outer1_0.markAsDismissed(arg0);
     };
-    obj.openLazy(self.importer(), self.actionSheetKey, obj);
+    obj.openLazy(lib.importer(), lib.actionSheetKey, obj);
   });
   const items = [, ];
   ({ actionSheetKey: arr[0], hideSheetOnUnmount: arr[1] } = arg0);
   const effect = React.useEffect(() => () => {
-    let hideSheetOnUnmount = null != lib.hideSheetOnUnmount;
+    let hideSheetOnUnmount = null != outer1_0.hideSheetOnUnmount;
     if (hideSheetOnUnmount) {
-      hideSheetOnUnmount = lib.hideSheetOnUnmount;
+      hideSheetOnUnmount = outer1_0.hideSheetOnUnmount;
     }
     if (hideSheetOnUnmount) {
-      lib(closure_1[2]).hideActionSheet(lib.actionSheetKey);
-      const obj = lib(closure_1[2]);
+      callback(outer2_1[2]).hideActionSheet(outer1_0.actionSheetKey);
+      const obj = callback(outer2_1[2]);
     }
   }, items);
   return null;

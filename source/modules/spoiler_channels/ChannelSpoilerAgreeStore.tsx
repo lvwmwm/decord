@@ -1,38 +1,39 @@
-// Module ID: 5719
-// Function ID: 49173
+// Module ID: 5724
+// Function ID: 49200
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 566, 686, 2]
 
-// Module 5719 (_isNativeReflectConstruct)
+// Module 5724 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
 let closure_6 = { users: {} };
-let tmp2 = (DeviceSettingsStore) => {
+let tmp2 = ((DeviceSettingsStore) => {
   class ChannelSpoilerAgreeStore {
     constructor() {
       self = this;
       tmp = ChannelSpoilerAgreeStore(this, ChannelSpoilerAgreeStore);
-      obj = closure_3(ChannelSpoilerAgreeStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(ChannelSpoilerAgreeStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,17 +42,16 @@ let tmp2 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ChannelSpoilerAgreeStore;
   callback2(ChannelSpoilerAgreeStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
     value(users) {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
       if (null != users) {
         if (null != users.users) {
           const obj = { users: users.users };
         }
-        let closure_6 = { users: {} };
+        const outer1_6 = { users: {} };
       }
     }
   };
@@ -62,11 +62,11 @@ let tmp2 = (DeviceSettingsStore) => {
       if (null == arg0) {
         return false;
       } else {
-        const id = id.getId();
+        const id = outer1_5.getId();
         let tmp3 = null != id;
         if (tmp3) {
           let flag;
-          if (null != users.users[id]) {
+          if (null != outer1_6.users[id]) {
             flag = tmp5.channels[arg0];
           }
           if (!flag) {
@@ -82,21 +82,21 @@ let tmp2 = (DeviceSettingsStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getUserAgnosticState",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   return callback(ChannelSpoilerAgreeStore, items);
-}(importDefault(dependencyMap[6]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "ChannelSpoilerAgreeStore";
 tmp2.persistKey = "ChannelSpoilerAgreeStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CHANNEL_SPOILER_AGREE: function handleChannelSpoilerAgree(channelId) {
     const id = store.getId();
     if (null == id) {
@@ -111,17 +111,17 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
   },
   CHANNEL_SPOILER_AGREE_CLEAR: function handleChannelSpoilerAgreeClear(arg0) {
     const id = store.getId();
-    let tmp2 = null != id;
-    if (tmp2) {
+    let tmp4 = null != id;
+    if (tmp4) {
       if (null != closure_6.users[id]) {
         const channels = closure_6.users[id].channels;
-        delete r2[r3];
+        delete tmp[tmp2];
       }
-      tmp2 = tmp4;
+      tmp4 = tmp6;
     }
-    return tmp2;
+    return tmp4;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/spoiler_channels/ChannelSpoilerAgreeStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/spoiler_channels/ChannelSpoilerAgreeStore.tsx");
 
 export default tmp2;

@@ -1,17 +1,18 @@
 // Module ID: 1005
-// Function ID: 10980
+// Function ID: 10981
 // Name: feedbackSyncIntegration
-// Dependencies: []
+// Dependencies: [1002]
 
 // Module 1005 (feedbackSyncIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
+import mergeOptions from "mergeOptions";
 
-export const feedbackSyncIntegration = _module.buildFeedbackIntegration({
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const feedbackSyncIntegration = mergeOptions.buildFeedbackIntegration({
   getModalIntegration() {
-    return require(dependencyMap[0]).feedbackModalIntegration;
+    return require(1002) /* mergeOptions */.feedbackModalIntegration;
   },
   getScreenshotIntegration() {
-    return require(dependencyMap[0]).feedbackScreenshotIntegration;
+    return require(1002) /* mergeOptions */.feedbackScreenshotIntegration;
   }
 });

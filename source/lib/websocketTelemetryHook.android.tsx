@@ -1,15 +1,14 @@
-// Module ID: 16470
-// Function ID: 127242
+// Module ID: 16587
+// Function ID: 129416
 // Name: installWebsocketTelemetryHook
-// Dependencies: []
+// Dependencies: [2]
 // Exports: installWebsocketTelemetryHook
 
-// Module 16470 (installWebsocketTelemetryHook)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");
+// Module 16587 (installWebsocketTelemetryHook)
+const result = require("set").fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");
 
 export const installWebsocketTelemetryHook = function installWebsocketTelemetryHook(arg0) {
-  const global = arg0;
+  let closure_0 = arg0;
   function handleMessage(arg0, arg1) {
     let hostname;
     let pathname;
@@ -71,7 +70,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
         } else {
           let tmp34 = arg1;
           flag = null == arg1;
-          // break
+          break;
         }
         if (!flag) {
           flag = "string" === typeof arg1;
@@ -81,8 +80,8 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
           let str7 = "binary";
           obj.type = "binary";
         }
-        let tmp36 = arg0;
-        let tmp37 = arg0(obj);
+        let tmp36 = callback;
+        let tmp37 = callback(obj);
       }
     }
     while (true) {
@@ -97,15 +96,15 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
         break;
       } else {
         tmp11 = first;
-        // break
+        break;
       }
       combined = tmp11;
     }
   }
   if ("undefined" !== typeof globalThis) {
     let _globalThis = globalThis;
-  } else if (undefined !== global) {
-    _globalThis = global;
+  } else if (undefined !== closure_0) {
+    _globalThis = closure_0;
   } else {
     const _window = window;
     _globalThis = null;
@@ -134,17 +133,18 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
               str = url;
             }
           }
-          tmp3 = function attachListener(addEventListener, arg1) {
+          tmp3 = (function attachListener(addEventListener, arg1) {
+            let closure_0 = arg1;
             if ("function" === typeof addEventListener.addEventListener) {
               const listener = addEventListener.addEventListener("message", (data) => {
                 data = undefined;
                 if (null != data) {
                   data = data.data;
                 }
-                closure_2(arg1, data);
+                outer2_2(closure_0, data);
               });
             }
-          }(tmp, str);
+          })(tmp, str);
           return tmp;
         }
       }

@@ -1,82 +1,87 @@
-// Module ID: 9024
-// Function ID: 70952
+// Module ID: 9031
+// Function ID: 70993
 // Name: Header
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1392, 1273, 4126, 8523, 1360, 1212, 2]
 // Exports: default
 
-// Module 9024 (Header)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const UserFlags = arg1(dependencyMap[2]).UserFlags;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.header = obj;
-obj.applicationNameWrapper = { flexDirection: "row" };
-obj.headerIcons = { "Bool(false)": "flac", "Bool(false)": "audio/x-flac", "Bool(false)": "Free Lossless Audio Codec file", "Bool(false)": "m4a" };
-obj.ellipseGroup = { <string:1366227281>: "02b1067b85b45dd047c8c944ed8c1d6e", <string:3882034350>: "devices_not_found", <string:3176296185>: "png" };
-const tmp3 = arg1(dependencyMap[3]);
-obj.ellipse = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.botTag = {};
-let closure_7 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/oauth2/native/Header.tsx");
+// Module 9031 (Header)
+import "result";
+import { View } from "get ActivityIndicator";
+import { UserFlags } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingBottom: 16, marginHorizontal: 16, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, flexDirection: "column", justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.applicationNameWrapper = { flexDirection: "row" };
+_createForOfIteratorHelperLoose.headerIcons = { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 24 };
+_createForOfIteratorHelperLoose.ellipseGroup = { flexDirection: "row", justifyContent: "space-between", marginHorizontal: 24 };
+let obj1 = { width: 4, height: 4, marginHorizontal: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, opacity: 0.1, borderRadius: 2 };
+_createForOfIteratorHelperLoose.ellipse = obj1;
+_createForOfIteratorHelperLoose.botTag = { marginTop: 4, marginLeft: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/oauth2/native/Header.tsx");
 
 export default function Header(accountScopes) {
   let application;
   let bot;
   let user;
   ({ user, application, bot } = accountScopes);
-  const tmp = callback3();
-  let obj = importDefault(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = importDefault(1392);
   obj = { id: application.id, icon: application.icon };
   let userAvatarSource;
   const applicationIconSource = obj.getApplicationIconSource(obj);
   if (null != user) {
-    let obj2 = importDefault(dependencyMap[6]);
+    let obj2 = importDefault(1392);
     userAvatarSource = obj2.getUserAvatarSource(user);
   }
   obj = { style: tmp.header };
   const obj1 = { style: tmp.headerIcons };
-  obj2 = { source: applicationIconSource, size: arg1(dependencyMap[7]).AvatarSizes.XLARGE };
-  const items = [callback(arg1(dependencyMap[7]).Avatar, obj2), , ];
+  obj2 = { source: applicationIconSource, size: require(1273) /* Button */.AvatarSizes.XLARGE };
+  const items = [callback(require(1273) /* Button */.Avatar, obj2), , ];
   const obj3 = { style: tmp.ellipseGroup };
   const items1 = [callback(View, { style: tmp.ellipse }), callback(View, { style: tmp.ellipse }), callback(View, { style: tmp.ellipse })];
   obj3.children = items1;
   items[1] = callback2(View, obj3);
-  const obj7 = { source: userAvatarSource, size: arg1(dependencyMap[7]).AvatarSizes.XLARGE };
-  items[2] = callback(arg1(dependencyMap[7]).Avatar, obj7);
+  const obj7 = { source: userAvatarSource, size: require(1273) /* Button */.AvatarSizes.XLARGE };
+  items[2] = callback(require(1273) /* Button */.Avatar, obj7);
   obj1.children = items;
   const items2 = [callback2(View, obj1), , ];
   const obj8 = { style: tmp.applicationNameWrapper };
-  const items3 = [callback(arg1(dependencyMap[8]).Text, { children: application.name }), ];
+  const obj9 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: application.name };
+  const items3 = [callback(require(4126) /* Text */.Text, obj9), ];
   let tmp9Result = null;
   if (null != bot) {
     const obj10 = { style: tmp.botTag };
     let hasFlagResult = null != bot.public_flags;
     if (hasFlagResult) {
-      hasFlagResult = arg1(dependencyMap[10]).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
-      const obj15 = arg1(dependencyMap[10]);
+      hasFlagResult = require(1360) /* hasFlag */.hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
+      const obj15 = require(1360) /* hasFlag */;
     }
     obj10.verified = hasFlagResult;
-    tmp9Result = callback(importDefault(dependencyMap[9]), obj10);
-    const tmp12 = importDefault(dependencyMap[9]);
+    tmp9Result = callback(importDefault(8523), obj10);
+    const tmp12 = importDefault(8523);
     const tmp9 = callback;
   }
   items3[1] = tmp9Result;
   obj8.children = items3;
   items2[1] = callback2(View, obj8);
-  const obj11 = {};
+  const obj11 = { variant: "heading-md/normal", color: "text-default" };
   if (accountScopes.accountScopes.length > 0) {
-    const intl2 = arg1(dependencyMap[11]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[11]).t.jFbDnJ);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.jFbDnJ);
   } else {
-    const intl = arg1(dependencyMap[11]).intl;
-    stringResult = intl.string(arg1(dependencyMap[11]).t.X+Fdpo);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t["X+Fdpo"]);
   }
   obj11.children = stringResult;
-  items2[2] = callback(arg1(dependencyMap[8]).Text, obj11);
+  items2[2] = callback(require(4126) /* Text */.Text, obj11);
   obj.children = items2;
   return callback2(View, obj);
 };

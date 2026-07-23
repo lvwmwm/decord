@@ -1,18 +1,18 @@
-// Module ID: 6656
-// Function ID: 51207
+// Module ID: 6661
+// Function ID: 51236
 // Name: openPremiumPlanSelectionActionSheet
-// Dependencies: []
+// Dependencies: [1851, 4098, 6662, 1934, 2]
 // Exports: default
 
-// Module 6656 (openPremiumPlanSelectionActionSheet)
-let closure_3 = require(dependencyMap[0]).PREMIUM_PLAN_SELECTION_ACTION_SHEET_KEY;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/premium/native/openPremiumPlanSelectionActionSheet.tsx");
+// Module 6661 (openPremiumPlanSelectionActionSheet)
+import { PREMIUM_PLAN_SELECTION_ACTION_SHEET_KEY as closure_3 } from "GuildFeatures";
+
+const result = require("hasRelevantTrialOfferForOrder").fileFinishedImporting("modules/premium/native/openPremiumPlanSelectionActionSheet.tsx");
 
 export default function openPremiumPlanSelectionActionSheet(arg0, arg1) {
   if (null == arg1) {
-    importDefault(dependencyMap[1]).hideActionSheet();
-    const obj = importDefault(dependencyMap[1]);
+    importDefault(4098).hideActionSheet();
+    const obj = importDefault(4098);
   }
-  importDefault(dependencyMap[1]).openLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), closure_3, arg0, arg1);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(6662, dependencyMap.paths), closure_3, arg0, arg1);
 };

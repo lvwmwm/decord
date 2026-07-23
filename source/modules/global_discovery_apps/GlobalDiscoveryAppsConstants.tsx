@@ -1,11 +1,10 @@
 // Module ID: 661
 // Function ID: 8028
 // Name: GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 661 (GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/global_discovery_apps/GlobalDiscoveryAppsConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/global_discovery_apps/GlobalDiscoveryAppsConstants.tsx");
 
 export const GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID = 0;
 export const EMPTY_QUERY = "";

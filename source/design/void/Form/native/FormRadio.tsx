@@ -1,24 +1,25 @@
-// Module ID: 5177
-// Function ID: 44993
+// Module ID: 5180
+// Function ID: 45012
 // Name: FormRadio
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 5181, 5182, 2]
 // Exports: default
 
-// Module 5177 (FormRadio)
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = arg1(dependencyMap[3]).createStyles({ radio: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/void/Form/native/FormRadio.tsx");
+// Module 5180 (FormRadio)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ radio: { width: 22, height: 22 } });
+const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormRadio.tsx");
 
 export default function FormRadio(selected) {
   const obj = { style: callback().radio };
   if (selected.selected) {
-    let tmp5 = tmp4[4];
+    let tmp5 = 5181;
   } else {
-    tmp5 = tmp4[5];
+    tmp5 = 5182;
   }
   obj.source = importDefault(tmp5);
-  return <Image {...obj} />;
+  return <Image style={callback().radio} />;
 };

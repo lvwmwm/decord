@@ -1,11 +1,12 @@
 // Module ID: 1579
-// Function ID: 17654
+// Function ID: 17655
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42]
 
 // Module 1579 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "KeyboardToolbarGroupView", validAttributes: {} };
-const _module = require(dependencyMap[0]);
+import get from "get";
 
-export default _module.get("KeyboardToolbarGroupView", () => obj);
+const obj = { uiViewClassName: "KeyboardToolbarGroupView", validAttributes: {} };
+
+export default get.get("KeyboardToolbarGroupView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

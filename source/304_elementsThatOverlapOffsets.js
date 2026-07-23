@@ -1,10 +1,12 @@
 // Module ID: 304
 // Function ID: 4602
 // Name: elementsThatOverlapOffsets
-// Dependencies: []
+// Dependencies: [57, 79]
 // Exports: computeWindowedRenderLimits, keyExtractor
 
 // Module 304 (elementsThatOverlapOffsets)
+import _slicedToArray from "_slicedToArray";
+
 function elementsThatOverlapOffsets(items, getItemCount, getCellMetricsApprox, arg3) {
   let num = 1;
   if (arguments.length > 3) {
@@ -54,7 +56,6 @@ function newRangeCount(last, last2) {
   const sum1 = 1 + Math.min(last2.last, last.last);
   return sum - Math.max(0, sum1 - Math.max(last2.first, last.first));
 }
-let closure_2 = importDefault(dependencyMap[0]);
 
 export { elementsThatOverlapOffsets };
 export { newRangeCount };
@@ -66,7 +67,7 @@ export const computeWindowedRenderLimits = function computeWindowedRenderLimits(
   let zoomScale;
   const itemCount = getItemCount.getItemCount(getItemCount.data);
   if (0 === itemCount) {
-    return { resizeMode: "5rad", resizeMultiplier: 0 };
+    return { first: 0, last: -1 };
   } else {
     ({ velocity, visibleLength, zoomScale } = _scrollMetrics);
     let num = 1;
@@ -112,7 +113,7 @@ export const computeWindowedRenderLimits = function computeWindowedRenderLimits(
       obj = {};
       if (null == bound3) {
         const _Math4 = Math;
-        const bound3 = Math.max(0, num4);
+        bound3 = Math.max(0, num4);
       }
       obj.first = bound3;
       if (null == bound4) {
@@ -129,7 +130,7 @@ export const computeWindowedRenderLimits = function computeWindowedRenderLimits(
           let tmp22 = tmp19 >= result2;
           let tmp23 = importAll;
           let tmp24 = dependencyMap;
-          let obj1 = importAll(dependencyMap[1]);
+          let obj1 = importAll(79);
           let tmp25 = tmp17 <= first.first;
           if (obj1.fixVirtualizeListCollapseWindowSize()) {
             let tmp27 = tmp18 >= first.last;

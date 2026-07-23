@@ -1,10 +1,16 @@
-// Module ID: 5486
-// Function ID: 46828
+// Module ID: 5489
+// Function ID: 46851
 // Name: getRoleIconSource
-// Dependencies: []
+// Dependencies: [653, 477, 3771, 1426, 1392, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 5486 (getRoleIconSource)
+// Module 5489 (getRoleIconSource)
+import ME from "ME";
+import set from "set";
+import set from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
 function getRoleIconSource(role, arg1) {
   let icon;
   let id;
@@ -14,21 +20,21 @@ function getRoleIconSource(role, arg1) {
       return icon;
     } else {
       let str2 = "png";
-      if (require(dependencyMap[4]).SUPPORTS_WEBP) {
+      if (require(1392) /* getAvatarURL */.SUPPORTS_WEBP) {
         str2 = "webp";
       }
       let str4 = "quality=lossless";
       let str5 = "";
       if (null != arg1) {
-        require(dependencyMap[3]);
+        require(1426) /* isAttachmentLadderEnabled */;
         let str7 = "";
-        const text = `size=${tmp6(arg1 * require(dependencyMap[3]).getDevicePixelRatio())}`;
-        if (!closure_7) {
+        const text = `size=${tmp6(arg1 * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio())}`;
+        if (!set) {
           str7 = "&quality=lossless";
         }
         str4 = str7;
         str5 = text;
-        const obj = require(dependencyMap[3]);
+        const obj = require(1426) /* isAttachmentLadderEnabled */;
       }
       const _window = window;
       if (null != window.GLOBAL_ENV.CDN_HOST) {
@@ -42,14 +48,11 @@ function getRoleIconSource(role, arg1) {
     }
   }
 }
-const _module = require(dependencyMap[0]);
-({ Endpoints: closure_3, GuildFeatures: closure_4 } = _module);
+({ Endpoints: closure_3, GuildFeatures: closure_4 } = ME);
 let closure_5 = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/role-icons";
 let closure_6 = "" + location.protocol + window.GLOBAL_ENV.API_ENDPOINT;
-const _module1 = require(dependencyMap[1]);
-let closure_7 = _module1.isAndroid();
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/guild_boosting/RoleIconUtils.tsx");
+set = set.isAndroid();
+const result = set.fileFinishedImporting("modules/guild_boosting/RoleIconUtils.tsx");
 
 export const getRoleIconData = function getRoleIconData(role, arg1) {
   if (null == role) {
@@ -57,9 +60,9 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   } else {
     let byName;
     if (null != role.unicodeEmoji) {
-      let obj = importDefault(dependencyMap[2]);
-      byName = obj.getByName(importDefault(dependencyMap[2]).convertSurrogateToName(role.unicodeEmoji, false));
-      const obj2 = importDefault(dependencyMap[2]);
+      let obj = importDefault(3771);
+      byName = obj.getByName(importDefault(3771).convertSurrogateToName(role.unicodeEmoji, false));
+      const obj2 = importDefault(3771);
     }
     obj = { customIconSrc: getRoleIconSource(role, arg1) };
     let tmp6;
@@ -71,8 +74,8 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   }
 };
 export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(str) {
-  const obj = require(dependencyMap[3]);
-  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * require(dependencyMap[3]).getDevicePixelRatio()));
+  const obj = require(1426) /* isAttachmentLadderEnabled */;
+  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio()));
 };
 export const isRoleIconAssetUrl = function isRoleIconAssetUrl(str) {
   let startsWithResult = str.startsWith(closure_5);

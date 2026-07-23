@@ -1,9 +1,11 @@
 // Module ID: 831
-// Function ID: 9261
+// Function ID: 9262
 // Name: hasSpansEnabled
-// Dependencies: []
+// Dependencies: [825]
 
 // Module 831 (hasSpansEnabled)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.hasSpansEnabled = function hasSpansEnabled(options) {
   let tmp = options;
@@ -14,12 +16,12 @@ arg5.hasSpansEnabled = function hasSpansEnabled(options) {
   }
   if (!tmp) {
     options = undefined;
-    const client = arg1(arg6[0]).getClient();
+    const client = require(825) /* getCurrentScope */.getClient();
     if (null != client) {
       options = client.getOptions();
     }
     tmp = options;
-    const obj = arg1(arg6[0]);
+    const obj = require(825) /* getCurrentScope */;
   }
   let tmp6 = !tmp;
   if (!tmp6) {

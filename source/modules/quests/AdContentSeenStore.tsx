@@ -1,9 +1,18 @@
-// Module ID: 13870
-// Function ID: 104895
+// Module ID: 13984
+// Function ID: 107051
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 6942, 6970, 6940, 566, 686, 2]
 
-// Module 13870 (_isNativeReflectConstruct)
+// Module 13984 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import AdCreativeType from "AdCreativeType";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_8 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -109,7 +118,7 @@ function syncWithQuestStore() {
   let tmp4;
   let tmp5;
   const quests = store.quests;
-  const obj = getOrCreateSet(arg1(dependencyMap[7]).AdCreativeType.QUEST);
+  const obj = getOrCreateSet(require(6970) /* AdCreativeType */.AdCreativeType.QUEST);
   const tmp = _createForOfIteratorHelperLoose(quests);
   const iter = tmp();
   let iter2 = iter;
@@ -117,14 +126,14 @@ function syncWithQuestStore() {
   let flag2 = false;
   if (!iter.done) {
     do {
-      let tmp2 = closure_7;
-      let tmp3 = closure_7(iter2.value, 2);
+      let tmp2 = callback3;
+      let tmp3 = callback3(iter2.value, 2);
       [tmp4, tmp5] = tmp3;
       let hasItem = obj.has(tmp4);
       if (!hasItem) {
-        let tmp7 = closure_0;
-        let tmp8 = closure_1;
-        let obj2 = closure_0(closure_1[8]);
+        let tmp7 = require;
+        let tmp8 = dependencyMap;
+        let obj2 = require(6940) /* _createForOfIteratorHelperLoose */;
         hasItem = obj2.isQuestExpired(tmp5);
       }
       if (!hasItem) {
@@ -160,9 +169,9 @@ function syncWithQuestStore() {
           value = quests.get(value);
           let isQuestExpiredResult = null == value;
           if (!isQuestExpiredResult) {
-            let tmp18 = closure_0;
-            let tmp19 = closure_1;
-            let obj3 = closure_0(closure_1[8]);
+            let tmp18 = require;
+            let tmp19 = dependencyMap;
+            let obj3 = require(6940) /* _createForOfIteratorHelperLoose */;
             isQuestExpiredResult = obj3.isQuestExpired(value);
           }
           if (isQuestExpiredResult) {
@@ -176,7 +185,7 @@ function syncWithQuestStore() {
       }
     }
   }
-  const obj4 = getOrCreateSet(arg1(dependencyMap[7]).AdCreativeType.QUEST_HOME_HERO);
+  const obj4 = getOrCreateSet(require(6970) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
   let tmp21 = tmp13;
   if (null != store.getLastFetchedQuestHomeHero()) {
     tmp21 = tmp13;
@@ -203,27 +212,20 @@ function syncWithQuestStore() {
   }
   return tmp21;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
 const map = new Map();
-let tmp3 = (PersistedStore) => {
+let tmp3 = ((PersistedStore) => {
   class AdContentSeenStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, AdContentSeenStore);
-      obj = closure_5(AdContentSeenStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, AdContentSeenStore);
+      obj = outer1_5(AdContentSeenStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -232,25 +234,24 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = AdContentSeenStore;
   callback2(AdContentSeenStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(seenContentIds) {
       let length;
       const self = this;
-      this.waitFor(closure_8);
-      const map = new Map();
+      this.waitFor(outer1_8);
+      const outer1_9 = new Map();
       if (null != seenContentIds) {
         const _Object = Object;
         const entries = Object.entries(seenContentIds.seenContentIds);
         let num = 0;
         if (0 < entries.length) {
           do {
-            let tmp3 = closure_7;
-            let tmp4 = closure_7(entries[num], 2);
+            let tmp3 = outer1_7;
+            let tmp4 = outer1_7(entries[num], 2);
             let tmp5 = tmp4[1];
-            let tmp6 = closure_9;
+            let tmp6 = outer1_9;
             let _Number = Number;
             let _Set = Set;
             let tmp8 = new.target;
@@ -259,28 +260,28 @@ let tmp3 = (PersistedStore) => {
             let NumberResult = Number(tmp4[0]);
             let set = new Set(tmp5);
             let tmp12 = set;
-            let result = closure_9.set(NumberResult, set);
+            let result = outer1_9.set(NumberResult, set);
             num = num + 1;
             length = entries.length;
           } while (num < length);
         }
       }
-      const items = [closure_8];
-      self.syncWith(items, closure_14);
+      const items = [outer1_8];
+      self.syncWith(items, outer1_14);
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "getState",
     value() {
       let done;
       const seenContentIds = {};
-      const tmp = callback4(closure_9);
+      const tmp = outer1_11(outer1_9);
       let iter = tmp();
       if (!iter.done) {
         do {
-          let tmp2 = closure_7;
-          let tmp3 = closure_7(iter.value, 2);
+          let tmp2 = outer1_7;
+          let tmp3 = outer1_7(iter.value, 2);
           let _Array = Array;
           seenContentIds[tmp3[0]] = Array.from(tmp3[1]);
           let iter2 = tmp();
@@ -295,7 +296,7 @@ let tmp3 = (PersistedStore) => {
   obj = {
     key: "hasSeen",
     value(arg0, arg1) {
-      const value = closure_9.get(arg0);
+      const value = outer1_9.get(arg0);
       let hasItem;
       if (null != value) {
         hasItem = value.has(arg1);
@@ -305,10 +306,10 @@ let tmp3 = (PersistedStore) => {
   };
   items[2] = obj;
   return callback(AdContentSeenStore, items);
-}(importDefault(dependencyMap[9]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "AdContentSeenStore";
 tmp3.persistKey = "AdContentSeenStore";
-tmp3 = new tmp3(importDefault(dependencyMap[10]), {
+tmp3 = new tmp3(require("dispatcher"), {
   AD_CONTENT_MARK_SEEN: function handleMarkSeen(adCreativeType) {
     let iter3;
     const obj = getOrCreateSet(adCreativeType.adCreativeType);
@@ -358,6 +359,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
     }
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/quests/AdContentSeenStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/AdContentSeenStore.tsx");
 
 export default tmp3;

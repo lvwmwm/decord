@@ -1,27 +1,27 @@
-// Module ID: 8950
-// Function ID: 70562
+// Module ID: 8957
+// Function ID: 70603
 // Name: _getDisclosures
-// Dependencies: []
+// Dependencies: [5, 653, 507, 8958, 1212, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 8950 (_getDisclosures)
+// Module 8957 (_getDisclosures)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _getDisclosures() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getDisclosures = obj;
   return obj(...arguments);
 }
 function _ackDisclosures() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _ackDisclosures = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/applications/disclosures.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/applications/disclosures.tsx");
 
-export const ApplicationDisclosure = arg1(dependencyMap[3]).ApplicationDisclosureType;
+export const ApplicationDisclosure = require("_callSuper").ApplicationDisclosureType;
 export const getDisclosures = function getDisclosures(client_id) {
   return _getDisclosures(...arguments);
 };
@@ -29,12 +29,12 @@ export const ackDisclosures = function ackDisclosures(arg0, arg1) {
   return _ackDisclosures(...arguments);
 };
 export const getTextForDisclosure = function getTextForDisclosure(disclosure) {
-  if (arg1(dependencyMap[3]).ApplicationDisclosureType.IP_LOCATION === disclosure) {
-    const intl2 = arg1(dependencyMap[4]).intl;
-    return intl2.string(arg1(dependencyMap[4]).t.6wPmjo);
-  } else if (arg1(dependencyMap[3]).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t./uOMKZ);
+  if (require(8958) /* _callSuper */.ApplicationDisclosureType.IP_LOCATION === disclosure) {
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["6wPmjo"]);
+  } else if (require(8958) /* _callSuper */.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["/uOMKZ"]);
   } else {
     return null;
   }

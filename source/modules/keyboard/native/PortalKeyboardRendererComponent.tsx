@@ -1,11 +1,13 @@
-// Module ID: 15328
-// Function ID: 116602
-// Dependencies: []
+// Module ID: 15445
+// Function ID: 118776
+// Dependencies: [31, 1348, 33, 5606, 1555, 11154, 8182, 15446, 15452, 2]
 
-// Module 15328
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 15445
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent(item) {
   let chatInputRef;
   let cleanUp;
@@ -13,11 +15,9 @@ const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent
   let type;
   item = item.item;
   const channelId = item.channelId;
-  const arg1 = channelId;
   ({ chatInputRef, type } = item);
   ({ state, cleanUp } = item);
-  const channel = channel.getChannel(channelId);
-  const importDefault = channel;
+  channel = channel.getChannel(channelId);
   const items = [channel, channelId];
   const memo = importAllResult.useMemo(() => {
     if (channelId !== channelId(memo[3]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
@@ -27,7 +27,6 @@ const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent
     }
     return FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
   }, items);
-  const dependencyMap = memo;
   const items1 = [memo];
   const memo1 = importAllResult.useMemo(() => {
     let tmp;
@@ -39,15 +38,15 @@ const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent
   }, items1);
   if (null != memo) {
     if (undefined !== memo1) {
-      if (arg1(dependencyMap[4]).KeyboardTypes.APP_LAUNCHER === type) {
-        let obj = { context: memo1, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: arg1(dependencyMap[6]).AppLauncherEntrypoint.TEXT };
-        return jsx(importDefault(dependencyMap[5]), obj);
-      } else if (arg1(dependencyMap[4]).KeyboardTypes.MEDIA === type) {
+      if (channelId(memo[4]).KeyboardTypes.APP_LAUNCHER === type) {
+        let obj = { context: memo1, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: channelId(memo[6]).AppLauncherEntrypoint.TEXT };
+        return jsx(channel(memo[5]), { context: memo1, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: channelId(memo[6]).AppLauncherEntrypoint.TEXT });
+      } else if (channelId(memo[4]).KeyboardTypes.MEDIA === type) {
         obj = { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state };
-        return jsx(importDefault(dependencyMap[7]), obj);
-      } else if (arg1(dependencyMap[4]).KeyboardTypes.EXPRESSION === type) {
+        return jsx(channel(memo[7]), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+      } else if (channelId(memo[4]).KeyboardTypes.EXPRESSION === type) {
         obj = { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state };
-        return jsx(importDefault(dependencyMap[8]), obj);
+        return jsx(channel(memo[8]), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else {
         return null;
       }
@@ -55,6 +54,6 @@ const memoResult = importAllResult.memo(function PortalKeyboardRendererComponent
   }
   return null;
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/keyboard/native/PortalKeyboardRendererComponent.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/keyboard/native/PortalKeyboardRendererComponent.tsx");
 
 export default memoResult;

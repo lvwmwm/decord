@@ -1,48 +1,52 @@
-// Module ID: 15601
-// Function ID: 119055
+// Module ID: 15718
+// Function ID: 121228
 // Name: BaseLeaveActivityButton
-// Dependencies: []
+// Dependencies: [31, 10226, 33, 4543, 10655, 1212, 10525, 2]
 
-// Module 15601 (BaseLeaveActivityButton)
+// Module 15718 (BaseLeaveActivityButton)
+import { ActivityPanelModes } from "ActivityPanelModes";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
 class BaseLeaveActivityButton {
   constructor(arg0) {
     obj = { onPress: global.onPress };
-    obj.icon = importDefault(dependencyMap[4]);
-    intl = arg1(dependencyMap[5]).intl;
-    obj.text = intl.string(arg1(dependencyMap[5]).t.Hi1/aQ);
-    intl2 = arg1(dependencyMap[5]).intl;
-    obj.accessibilityLabel = intl2.string(arg1(dependencyMap[5]).t.k0Aph0);
+    obj.icon = require("registerAsset");
+    intl = require("getSystemLocale").intl;
+    obj.text = intl.string(require("getSystemLocale").t["Hi1/aQ"]);
+    intl2 = require("getSystemLocale").intl;
+    obj.accessibilityLabel = intl2.string(require("getSystemLocale").t.k0Aph0);
     obj.variant = "destructive";
     obj.size = "sm";
     obj.maxFontSizeMultiplier = 1;
-    return jsx(arg1(dependencyMap[3]).Button, obj);
+    return jsx(require("Button").Button, obj);
   }
 }
-const ActivityPanelModes = arg1(dependencyMap[1]).ActivityPanelModes;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function LeaveActivityButton(arg0) {
-  ({ selfEmbeddedActivity: closure_0, setMode: closure_1 } = arg0);
+const memoResult = require("result").memo(function LeaveActivityButton(arg0) {
+  let importDefault;
+  let require;
+  ({ selfEmbeddedActivity: require, setMode: importDefault } = arg0);
   return <BaseLeaveActivityButton onPress={function onPress() {
-    callback(constants.DISCONNECTED);
+    callback(outer1_3.DISCONNECTED);
     const timerId = setTimeout(() => {
-      let obj = callback(closure_2[6]);
+      let obj = outer2_1(outer2_2[6]);
       obj = {};
       let _location;
-      if (null != closure_0) {
-        _location = closure_0.location;
+      if (null != outer1_0) {
+        _location = outer1_0.location;
       }
       obj.location = _location;
       let applicationId;
-      if (null != closure_0) {
-        applicationId = closure_0.applicationId;
+      if (null != outer1_0) {
+        applicationId = outer1_0.applicationId;
       }
       obj.applicationId = applicationId;
       obj.leaveActivity(obj);
     }, 400);
   }} />;
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
 
 export default memoResult;
 export { BaseLeaveActivityButton };

@@ -1,17 +1,18 @@
 // Module ID: 1525
-// Function ID: 17483
+// Function ID: 17484
 // Name: useCurrentRender
-// Dependencies: []
+// Dependencies: [31, 1488]
 // Exports: default
 
 // Module 1525 (useCurrentRender)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useCurrentRender(arg0) {
   let navigation;
   let state;
   ({ state, navigation } = arg0);
-  const context = React.useContext(importDefault(dependencyMap[1]));
+  const context = React.useContext(importDefault(1488));
   let isFocusedResult = context;
   if (context) {
     isFocusedResult = navigation.isFocused();

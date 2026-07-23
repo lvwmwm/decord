@@ -1,9 +1,22 @@
-// Module ID: 7621
-// Function ID: 61042
+// Module ID: 7627
+// Function ID: 61079
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4349, 653, 7076, 7109, 4351, 6740, 21, 566, 686, 2]
 
-// Module 7621 (_isNativeReflectConstruct)
+// Module 7627 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "ME";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
+let closure_12;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,25 +27,25 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function removeFailedMessage(id) {
-  if (null != closure_13[id]) {
-    delete r0[r2];
+  if (null != table[id]) {
+    delete tmp[tmp2];
   }
   closure_14 = closure_14 + 1;
 }
 function handleMessageSendFailedAutomod(messageData) {
   messageData = messageData.messageData;
-  let obj = arg1(dependencyMap[8]);
+  let obj = require(7076) /* _isNativeReflectConstruct */;
   const failedMessageId = obj.getFailedMessageId(messageData);
-  obj = { id: failedMessageId, isBlockedEdit: arg1(dependencyMap[8]).isMessageDataEdit(messageData), messageData };
-  const obj3 = arg1(dependencyMap[8]);
-  obj.errorMessage = arg1(dependencyMap[9]).getAutomodErrorMessage(messageData, messageData.errorResponseBody);
+  obj = { id: failedMessageId, isBlockedEdit: require(7076) /* _isNativeReflectConstruct */.isMessageDataEdit(messageData), messageData };
+  const obj3 = require(7076) /* _isNativeReflectConstruct */;
+  obj.errorMessage = require(7109) /* _callSuper */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
   closure_13[failedMessageId] = obj;
   closure_14 = closure_14 + 1;
   return true;
 }
 function handleLoadMessages(messages) {
   messages = messages.messages;
-  const channel = channel.getChannel(messages.channelId);
+  channel = channel.getChannel(messages.channelId);
   let guildId;
   if (null != channel) {
     guildId = channel.getGuildId();
@@ -42,60 +55,53 @@ function handleLoadMessages(messages) {
   } else {
     const reduced = messages.reduce((arg0, type) => {
       let tmp = arg0;
-      if (type.type === constants.AUTO_MODERATION_ACTION) {
+      if (type.type === outer1_12.AUTO_MODERATION_ACTION) {
         const embeds = type.embeds;
         let someResult;
         if (null != embeds) {
-          someResult = embeds.some((type) => type.type === constants.AUTO_MODERATION_NOTIFICATION);
+          someResult = embeds.some((type) => type.type === outer2_11.AUTO_MODERATION_NOTIFICATION);
         }
         tmp = arg0;
         if (someResult) {
           if (null == arg0) {
             const id = type.id;
           } else {
-            const obj = callback(closure_2[12]);
+            const obj = outer1_1(outer1_2[12]);
           }
           tmp = id;
         }
       }
       return tmp;
-    }, closure_16[guildId]);
+    }, dependencyMap[guildId]);
     let flag = null != reduced;
     if (flag) {
-      flag = closure_16[guildId] !== reduced;
+      flag = dependencyMap[guildId] !== reduced;
     }
     if (flag) {
-      closure_16[guildId] = reduced;
+      dependencyMap[guildId] = reduced;
       flag = true;
     }
     return flag;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ AbortCodes: closure_10, MessageEmbedTypes: closure_11, MessageTypes: closure_12 } = arg1(dependencyMap[7]));
+({ AbortCodes: closure_10, MessageEmbedTypes: closure_11, MessageTypes: closure_12 } = ME);
 let closure_13 = {};
-let closure_14 = 0;
+let c14 = 0;
 let closure_15 = {};
 let closure_16 = {};
-let tmp3 = (PersistedStore) => {
+let tmp3 = ((PersistedStore) => {
   class GuildAutomodMessageStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, GuildAutomodMessageStore);
-      obj = closure_6(GuildAutomodMessageStore);
-      tmp2 = closure_5;
-      if (closure_17()) {
+      tmp = outer1_3(this, GuildAutomodMessageStore);
+      obj = outer1_6(GuildAutomodMessageStore);
+      tmp2 = outer1_5;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -104,14 +110,15 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildAutomodMessageStore;
   callback2(GuildAutomodMessageStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
-      this.waitFor(closure_8, closure_9);
+      let outer1_13;
+      let outer1_15;
+      this.waitFor(outer1_8, outer1_9);
       if (null != arg0) {
-        ({ automodFailedMessages: closure_13, mentionRaidDetectionByGuild: closure_15 } = arg0);
+        ({ automodFailedMessages: outer1_13, mentionRaidDetectionByGuild: outer1_15 } = arg0);
       }
     }
   };
@@ -119,7 +126,7 @@ let tmp3 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return { automodFailedMessages: closure_13, mentionRaidDetectionByGuild: closure_15, lastIncidentAlertMessage: closure_16 };
+      return { automodFailedMessages: outer1_13, mentionRaidDetectionByGuild: outer1_15, lastIncidentAlertMessage: outer1_16 };
     }
   };
   items[1] = obj;
@@ -129,7 +136,7 @@ let tmp3 = (PersistedStore) => {
       let tmp = null;
       if (null != arg0) {
         let tmp4 = null;
-        if (null != closure_13[arg0]) {
+        if (null != outer1_13[arg0]) {
           tmp4 = tmp3;
         }
         tmp = tmp4;
@@ -141,14 +148,14 @@ let tmp3 = (PersistedStore) => {
   items[3] = {
     key: "getMessagesVersion",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[4] = {
     key: "getMentionRaidDetected",
     value(arg0) {
       let tmp2 = null;
-      if (null != closure_15[arg0]) {
+      if (null != outer1_15[arg0]) {
         tmp2 = tmp;
       }
       return tmp2;
@@ -158,17 +165,17 @@ let tmp3 = (PersistedStore) => {
     key: "getLastIncidentAlertMessage",
     value(arg0) {
       let tmp2 = null;
-      if (null != closure_16[arg0]) {
+      if (null != outer1_16[arg0]) {
         tmp2 = tmp;
       }
       return tmp2;
     }
   };
   return callback(GuildAutomodMessageStore, items);
-}(importDefault(dependencyMap[13]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "GuildAutomodMessageStore";
 tmp3.persistKey = "GuildAutomodMessages";
-tmp3 = new tmp3(importDefault(dependencyMap[14]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let flag = 0 !== Object.keys(closure_13).length;
     if (flag) {
@@ -189,19 +196,19 @@ tmp3 = new tmp3(importDefault(dependencyMap[14]), {
     } else if (message.type !== constants2.AUTO_MODERATION_ACTION) {
       return false;
     } else {
-      const messageRecord = arg1(dependencyMap[10]).createMessageRecord(message);
-      const obj2 = arg1(dependencyMap[10]);
-      const tmp10 = !arg1(dependencyMap[11]).isAutomodMessageRecord(messageRecord);
+      const messageRecord = require(4351) /* createMinimalMessageRecord */.createMessageRecord(message);
+      const obj2 = require(4351) /* createMinimalMessageRecord */;
+      const tmp10 = !require(6740) /* getEmbedFieldFromMessage */.isAutomodMessageRecord(messageRecord);
       let tmp5 = !tmp10;
       if (!tmp10) {
-        const tmp3 = !arg1(dependencyMap[11]).isAutomodNotification(messageRecord);
+        const tmp3 = !require(6740) /* getEmbedFieldFromMessage */.isAutomodNotification(messageRecord);
         let flag = !tmp3;
         if (!tmp3) {
           closure_16[guildId] = messageRecord.id;
           flag = true;
         }
         tmp5 = flag;
-        const obj = arg1(dependencyMap[11]);
+        const obj = require(6740) /* getEmbedFieldFromMessage */;
       }
       return tmp5;
     }
@@ -237,84 +244,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[14]), {
     return true;
   },
   AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: function handleMentionRaidNoticeDismiss(arg0) {
-    delete r0[r1];
+    delete tmp[tmp2];
     return true;
   }
 });
-const obj = {
-  CONNECTION_OPEN: function handleConnectionOpen() {
-    let flag = 0 !== Object.keys(closure_13).length;
-    if (flag) {
-      closure_13 = {};
-      closure_14 = closure_14 + 1;
-      flag = true;
-    }
-    return flag;
-  },
-  LOAD_MESSAGES_SUCCESS: handleLoadMessages,
-  LOCAL_MESSAGES_LOADED: handleLoadMessages,
-  MESSAGE_CREATE: function handleIncidentAlertMessageCreate(arg0) {
-    let guildId;
-    let message;
-    ({ guildId, message } = arg0);
-    if (null == guildId) {
-      return false;
-    } else if (message.type !== constants2.AUTO_MODERATION_ACTION) {
-      return false;
-    } else {
-      const messageRecord = arg1(dependencyMap[10]).createMessageRecord(message);
-      const obj2 = arg1(dependencyMap[10]);
-      const tmp10 = !arg1(dependencyMap[11]).isAutomodMessageRecord(messageRecord);
-      let tmp5 = !tmp10;
-      if (!tmp10) {
-        const tmp3 = !arg1(dependencyMap[11]).isAutomodNotification(messageRecord);
-        let flag = !tmp3;
-        if (!tmp3) {
-          closure_16[guildId] = messageRecord.id;
-          flag = true;
-        }
-        tmp5 = flag;
-        const obj = arg1(dependencyMap[11]);
-      }
-      return tmp5;
-    }
-  },
-  MESSAGE_SEND_FAILED_AUTOMOD: handleMessageSendFailedAutomod,
-  MESSAGE_EDIT_FAILED_AUTOMOD: handleMessageSendFailedAutomod,
-  REMOVE_AUTOMOD_MESSAGE_NOTICE: function handleMessageNoticeRemove(messageId) {
-    removeFailedMessage(messageId.messageId);
-    return true;
-  },
-  MESSAGE_END_EDIT: function handleMessageEndEdit(response) {
-    response = response.response;
-    let body;
-    if (null != response) {
-      body = response.body;
-    }
-    if (null == body) {
-      return false;
-    } else if (response.body.code === constants.AUTOMOD_MESSAGE_BLOCKED) {
-      return false;
-    } else {
-      const id = response.body.id;
-      if (null == id) {
-        return false;
-      } else {
-        removeFailedMessage(id);
-      }
-    }
-  },
-  AUTO_MODERATION_MENTION_RAID_DETECTION: function handleMentionRaidDetection(decisionId) {
-    const guildId = decisionId.guildId;
-    closure_15[guildId] = { guildId, decisionId: decisionId.decisionId, suspiciousMentionActivityUntil: decisionId.suspiciousMentionActivityUntil };
-    return true;
-  },
-  AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: function handleMentionRaidNoticeDismiss(arg0) {
-    delete r0[r1];
-    return true;
-  }
-};
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStore.tsx");
 
 export default tmp3;

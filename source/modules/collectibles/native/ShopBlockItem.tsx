@@ -1,37 +1,36 @@
-// Module ID: 14367
-// Function ID: 108473
+// Module ID: 14481
+// Function ID: 110626
 // Name: block
-// Dependencies: []
+// Dependencies: [31, 27, 6774, 33, 4130, 689, 566, 6806, 8666, 14482, 14491, 14492, 14494, 14501, 14502, 2]
 // Exports: default
 
-// Module 14367 (block)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
-obj.shopBlockSpacing = obj;
-let closure_7 = obj.createStyles(obj);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/collectibles/native/ShopBlockItem.tsx");
+// Module 14481 (block)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.shopBlockSpacing = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/ShopBlockItem.tsx");
 
 export default function _default(block) {
   let framesBannerBlock;
   let preferVCPrice;
   let screen;
   block = block.block;
-  const arg1 = block;
   ({ screen, preferVCPrice, framesBannerBlock } = block);
-  const tmp = callback();
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => closure_5.categories);
-  const importDefault = stateFromStores;
-  let obj1 = arg1(dependencyMap[6]);
-  const items1 = [closure_5];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => closure_5.products);
-  const dependencyMap = stateFromStores1;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = block(stateFromStores1[6]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.categories);
+  let obj1 = block(stateFromStores1[6]);
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.products);
   const items2 = [block, stateFromStores.size, stateFromStores1.size];
   const memo = React.useMemo(() => {
     if (block.type === block(stateFromStores1[7]).ShopBlockType.HERO) {
@@ -47,56 +46,56 @@ export default function _default(block) {
     return combined;
   }, items2);
   const type = block.type;
-  if (arg1(dependencyMap[7]).ShopBlockType.HERO === type) {
+  if (block(stateFromStores1[7]).ShopBlockType.HERO === type) {
     obj = {};
     obj = { pageSection: "top 4" };
     obj.newValue = obj;
     if (null != framesBannerBlock) {
       obj1 = { heroBlock: block, bannerBlock: framesBannerBlock, preferVCPrice, screen };
-      let tmp36 = jsx(importDefault(dependencyMap[9]), obj1, memo);
+      let tmp36 = jsx(stateFromStores(stateFromStores1[9]), { heroBlock: block, bannerBlock: framesBannerBlock, preferVCPrice, screen }, memo);
     } else {
       const obj2 = { heroBlock: block, preferVCPrice, screen };
-      tmp36 = jsx(importDefault(dependencyMap[10]), obj2, memo);
+      tmp36 = jsx(stateFromStores(stateFromStores1[10]), { heroBlock: block, preferVCPrice, screen }, memo);
     }
     obj.children = tmp36;
-    return jsx(arg1(dependencyMap[8]).CollectiblesAnalyticsProvider, obj);
-  } else if (arg1(dependencyMap[7]).ShopBlockType.FEATURED === type) {
+    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, { pageSection: "top 4" });
+  } else if (block(stateFromStores1[7]).ShopBlockType.FEATURED === type) {
     const obj3 = {};
     const obj4 = { pageSection: "featured_block" };
     obj3.newValue = obj4;
     const obj5 = { style: tmp.shopBlockSpacing };
     const obj6 = { featuredBlock: block };
-    obj5.children = jsx(importDefault(dependencyMap[11]), obj6);
-    obj3.children = <View key={memo} {...obj5} />;
-    return jsx(arg1(dependencyMap[8]).CollectiblesAnalyticsProvider, obj3);
-  } else if (arg1(dependencyMap[7]).ShopBlockType.FEED === type) {
+    obj5.children = jsx(stateFromStores(stateFromStores1[11]), { featuredBlock: block });
+    obj3.children = <View key={memo} style={tmp.shopBlockSpacing} />;
+    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
+  } else if (block(stateFromStores1[7]).ShopBlockType.FEED === type) {
     const obj7 = {};
     const obj8 = { pageSection: "popular picks" };
     obj7.newValue = obj8;
     const obj9 = { style: tmp.shopBlockSpacing };
     const obj10 = { feedBlock: block, screen, preferVCPrice, disableBundleStaticBackground: true };
-    obj9.children = jsx(importDefault(dependencyMap[12]), obj10, memo);
-    obj7.children = <View {...obj9} />;
-    return jsx(arg1(dependencyMap[8]).CollectiblesAnalyticsProvider, obj7);
-  } else if (arg1(dependencyMap[7]).ShopBlockType.FRAMES_PRODUCT_SHELF === type) {
+    obj9.children = jsx(stateFromStores(stateFromStores1[12]), { feedBlock: block, screen, preferVCPrice, disableBundleStaticBackground: true }, memo);
+    obj7.children = <View style={tmp.shopBlockSpacing} />;
+    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
+  } else if (block(stateFromStores1[7]).ShopBlockType.FRAMES_PRODUCT_SHELF === type) {
     const obj11 = {};
     const obj12 = { pageSection: "frames_product_shelf" };
     obj11.newValue = obj12;
     const obj13 = { block, preferVCPrice };
-    obj11.children = jsx(importDefault(dependencyMap[13]), obj13, memo);
-    return jsx(arg1(dependencyMap[8]).CollectiblesAnalyticsProvider, obj11);
-  } else if (arg1(dependencyMap[7]).ShopBlockType.SHELF === type) {
+    obj11.children = jsx(stateFromStores(stateFromStores1[13]), { block, preferVCPrice }, memo);
+    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
+  } else if (block(stateFromStores1[7]).ShopBlockType.SHELF === type) {
     const obj14 = {};
     const obj15 = { pageSection: block.name };
     obj14.newValue = obj15;
     const obj16 = { style: tmp.shopBlockSpacing };
     const obj17 = { block, preferVCPrice };
-    obj16.children = jsx(importDefault(dependencyMap[14]), obj17, memo);
-    obj14.children = <View {...obj16} />;
-    return jsx(arg1(dependencyMap[8]).CollectiblesAnalyticsProvider, obj14);
+    obj16.children = jsx(stateFromStores(stateFromStores1[14]), { block, preferVCPrice }, memo);
+    obj14.children = <View style={tmp.shopBlockSpacing} />;
+    return jsx(block(stateFromStores1[8]).CollectiblesAnalyticsProvider, {});
   } else {
-    if (arg1(dependencyMap[7]).ShopBlockType.WIDE_BANNER !== type) {
-      const FRAMES_BANNER = arg1(dependencyMap[7]).ShopBlockType.FRAMES_BANNER;
+    if (block(stateFromStores1[7]).ShopBlockType.WIDE_BANNER !== type) {
+      const FRAMES_BANNER = block(stateFromStores1[7]).ShopBlockType.FRAMES_BANNER;
     }
     return null;
   }

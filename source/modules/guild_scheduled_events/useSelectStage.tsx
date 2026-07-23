@@ -1,29 +1,29 @@
-// Module ID: 12087
-// Function ID: 93225
+// Module ID: 12201
+// Function ID: 95376
 // Name: useSelectStage
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1348, 1906, 566, 7477, 2]
 // Exports: default
 
-// Module 12087 (useSelectStage)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");
+// Module 12201 (useSelectStage)
+import initialize from "initialize";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");
 
 export default function useSelectStage() {
   const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => voiceChannelId.getVoiceChannelId(), []);
-  const arg1 = stateFromStores;
+  stateFromStores = stateFromStores(first[5]).useStateFromStores(items, () => outer1_6.getVoiceChannelId(), []);
   const tmp2 = callback(React.useState(stateFromStores), 2);
-  const first = tmp2[0];
-  const dependencyMap = first;
-  let closure_2 = tmp2[1];
+  first = tmp2[0];
+  let initialize = tmp2[1];
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
-      callback(closure_0);
+      outer1_2(closure_0);
     }, 500);
     return () => {
       clearTimeout(closure_0);
@@ -32,13 +32,13 @@ export default function useSelectStage() {
   const items2 = [first];
   const items3 = [
     first,
-    React.useCallback(() => {
+    React.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
       let closure_0 = callback(tmp);
       return function() {
         return callback(...arguments);
       };
-    }(), items2)
+    })(), items2)
   ];
   return items3;
 };

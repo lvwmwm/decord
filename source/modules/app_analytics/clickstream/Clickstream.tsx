@@ -1,53 +1,58 @@
-// Module ID: 6695
-// Function ID: 51855
+// Module ID: 6700
+// Function ID: 51887
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 1194, 4202, 21, 6701, 675, 6702, 2]
 // Exports: trackClickstream
 
-// Module 6695 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6700 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -89,14 +94,14 @@ function isClickstreamEnabled(flag) {
     flag = true;
   }
   if (flag) {
-    const extractTimestampResult = importDefault(dependencyMap[3]).extractTimestamp(id.getId());
-    if (extractTimestampResult !== closure_7) {
+    const extractTimestampResult = importDefault(21).extractTimestamp(id.getId());
+    if (extractTimestampResult !== c7) {
       drainClickstream(false);
-      closure_7 = extractTimestampResult;
+      c7 = extractTimestampResult;
     }
-    const obj = importDefault(dependencyMap[3]);
-    let closure_8 = arg1(dependencyMap[4]).clickstreamExperimentEnabled();
-    const obj2 = arg1(dependencyMap[4]);
+    const obj = importDefault(21);
+    let closure_8 = require(6701) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
+    const obj2 = require(6701) /* clickstreamExperimentEnabled */;
   }
   return closure_8;
 }
@@ -110,14 +115,14 @@ function drainClickstream(flag) {
     let iter = tmp5();
     if (!iter.done) {
       do {
-        let tmp6 = closure_3;
-        let tmp7 = closure_3(iter.value, 2);
+        let tmp6 = callback;
+        let tmp7 = callback(iter.value, 2);
         let first = tmp7[0];
-        let tmp9 = closure_1;
-        let tmp10 = closure_2;
-        let obj = closure_1(closure_2[5]);
-        let tmp11 = closure_0;
-        let obj2 = closure_0(closure_2[6]);
+        let tmp9 = importDefault;
+        let tmp10 = dependencyMap;
+        let obj = importDefault(675);
+        let tmp11 = require;
+        let obj2 = require(6702) /* getClickstreamDrainEvent */;
         let trackResult = obj.track(first, obj2.getClickstreamDrainEvent(first, tmp7[1]));
         let iter2 = tmp5();
         iter = iter2;
@@ -129,13 +134,10 @@ function drainClickstream(flag) {
     map.clear();
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
 const map = new Map();
-let closure_7 = -1;
-let closure_8 = false;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
+let c7 = -1;
+let c8 = false;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
 
 export const trackClickstream = function trackClickstream(GUILD_VIEWED_CLICKSTREAM, arg1) {
   if (isClickstreamEnabled()) {

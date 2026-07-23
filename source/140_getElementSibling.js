@@ -1,15 +1,17 @@
 // Module ID: 140
 // Function ID: 2293
 // Name: getElementSibling
-// Dependencies: []
+// Dependencies: [134, 139]
 
 // Module 140 (getElementSibling)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.getElementSibling = function getElementSibling(parentNode, next) {
   parentNode = parentNode.parentNode;
   if (null == parentNode) {
     return null;
   } else {
-    const childNodes = next(arg6[0]).getChildNodes(parentNode);
+    const childNodes = require(134) /* getChildNodes */.getChildNodes(parentNode);
     const index = childNodes.indexOf(parentNode);
     let num = -1;
     if (-1 === index) {
@@ -20,7 +22,7 @@ arg5.getElementSibling = function getElementSibling(parentNode, next) {
       }
       const sum = index + num;
       if (null == closure_2) {
-        closure_2 = next(arg6[1]).default;
+        closure_2 = require(139) /* _isNativeReflectConstruct */.default;
       }
       let tmp5 = sum;
       if (null != childNodes[sum]) {
@@ -45,6 +47,6 @@ arg5.getElementSibling = function getElementSibling(parentNode, next) {
       }
       return tmp11;
     }
-    const obj = next(arg6[0]);
+    const obj = require(134) /* getChildNodes */;
   }
 };

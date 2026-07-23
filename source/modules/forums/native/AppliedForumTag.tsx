@@ -1,23 +1,33 @@
-// Module ID: 9637
-// Function ID: 75073
+// Module ID: 9644
+// Function ID: 75114
 // Name: AppliedForumTag
-// Dependencies: []
+// Dependencies: [31, 27, 4991, 1852, 33, 4130, 689, 566, 9645, 1212, 5151, 1392, 4126, 2]
 // Exports: AppliedForumTagPill
 
-// Module 9637 (AppliedForumTag)
+// Module 9644 (AppliedForumTag)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EMOJI_URL_BASE_SIZE } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 class AppliedForumTag {
   constructor(arg0) {
-    ({ tag, containerStyle: closure_0 } = global);
-    closure_6 = undefined;
-    importDefault = closure_8();
-    ({ name: closure_2, emojiId: closure_3, emojiName: closure_4 } = tag);
-    obj = arg1(dependencyMap[7]);
+    ({ tag, containerStyle } = global);
+    c6 = undefined;
+    closure_1 = c8();
+    ({ name, emojiId, emojiName } = tag);
+    obj = require("initialize");
     items = [];
-    items[0] = closure_4;
-    f75075 = obj.useStateFromStores(items, () => {
+    items[0] = emojiName;
+    f75116 = obj.useStateFromStores(items, () => {
       let usableCustomEmojiById = null;
       if (null != closure_3) {
-        usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(closure_3);
+        usableCustomEmojiById = outer1_4.getUsableCustomEmojiById(closure_3);
       }
       return usableCustomEmojiById;
     });
@@ -25,7 +35,7 @@ class AppliedForumTag {
     if (global.hasUnreads) {
       str = "text-default";
     }
-    closure_6 = str;
+    c6 = str;
     obj = {
       tagId: tag.id,
       children(ref) {
@@ -33,13 +43,13 @@ class AppliedForumTag {
             obj.ref = 0;
             const merged = Object.assign(ref, obj);
             obj = { style: items, accessible: true };
-            const items = [lib.container, callback];
-            const intl = callback(closure_2[9]).intl;
+            items = [lib.container, closure_0];
+            const intl = outer1_0(outer1_2[9]).intl;
             obj = { tagName: closure_2 };
-            obj.accessibilityLabel = intl.formatToPlainString(callback(closure_2[9]).t.tXXD6v, obj);
+            obj.accessibilityLabel = intl.formatToPlainString(outer1_0(outer1_2[9]).t.tXXD6v, obj);
             obj.ref = ref.ref;
             const merged1 = Object.assign(merged);
-            let tmp8Result = null != closure_4;
+            let tmp8Result = null != _isNativeReflectConstruct;
             if (!tmp8Result) {
               tmp8Result = null != closure_3;
             }
@@ -48,7 +58,7 @@ class AppliedForumTag {
               ({ textEmoji: obj3.textEmojiStyle, emoji: obj3.fastImageStyle } = lib);
               let emojiURL;
               if (null != closure_5) {
-                let obj3 = lib(closure_2[11]);
+                let obj3 = lib(outer1_2[11]);
                 const obj2 = {};
                 ({ id: obj5.id, animated: obj5.animated } = closure_5);
                 obj2.size = closure_5;
@@ -56,41 +66,35 @@ class AppliedForumTag {
               }
               obj1.src = emojiURL;
               let str = "";
-              if (null != closure_4) {
-                str = closure_4;
+              if (null != _isNativeReflectConstruct) {
+                str = _isNativeReflectConstruct;
               }
               obj1.name = str;
-              tmp8Result = str(lib(closure_2[10]), obj1);
-              const tmp11 = lib(closure_2[10]);
+              tmp8Result = str(lib(outer1_2[10]), obj1);
+              const tmp11 = lib(outer1_2[10]);
               const tmp8 = str;
             }
             const items1 = [tmp8Result, ];
-            obj3 = { style: lib.tagName, color: str, children: closure_2 };
-            items1[1] = str(callback(closure_2[12]).Text, obj3);
+            obj3 = { lineClamp: 1, style: lib.tagName, variant: "text-xs/semibold", color: str, children: closure_2 };
+            items1[1] = str(outer1_0(outer1_2[12]).Text, obj3);
             obj["children"] = items1;
-            return closure_7(closure_3, obj);
+            return outer1_7(outer1_3, obj);
           }
     };
-    return closure_6(importDefault(dependencyMap[8]), obj);
+    return c6(require("ForumTagContextMenu"), obj);
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[3]).EMOJI_URL_BASE_SIZE;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { width: 1091694070, height: 141842, borderRadius: 6258, borderWidth: 6144, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, justifyContent: 1375732013, alignItems: -302633734, i: -866758143, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
-obj.pill = obj;
-obj.disableEndMargin = { marginRight: 0 };
-obj.emoji = { "Null": "constructor", "Null": "dispatchFrameUrl", "Null": "<string:2639024384>", "Null": "ACTIVITY_UPSELL_MODAL" };
-obj.textEmoji = {};
-obj.tagName = { flexShrink: 1 };
-obj.container = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/forums/native/AppliedForumTag.tsx");
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: 24, paddingHorizontal: 8, borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginRight: 4, flexShrink: 1 };
+_createForOfIteratorHelperLoose.pill = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.disableEndMargin = { marginRight: 0 };
+_createForOfIteratorHelperLoose.emoji = { height: 12, width: 12, marginRight: 4, flexShrink: 0 };
+_createForOfIteratorHelperLoose.textEmoji = { fontSize: 10, marginRight: 4 };
+_createForOfIteratorHelperLoose.tagName = { flexShrink: 1 };
+_createForOfIteratorHelperLoose.container = { display: "flex", flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/native/AppliedForumTag.tsx");
 
 export const AppliedForumTagPill = function AppliedForumTagPill(arg0) {
   let containerStyle;
@@ -98,7 +102,7 @@ export const AppliedForumTagPill = function AppliedForumTagPill(arg0) {
   let hasUnreads;
   let tag;
   ({ tag, hasUnreads, containerStyle, disableEndMargin } = arg0);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   containerStyle = [tmp.pill, , ];
   containerStyle[1] = containerStyle;
   containerStyle[2] = disableEndMargin ? tmp.disableEndMargin : {};

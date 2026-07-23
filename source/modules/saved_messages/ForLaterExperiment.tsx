@@ -1,13 +1,13 @@
-// Module ID: 9528
-// Function ID: 74235
+// Module ID: 9535
+// Function ID: 74276
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 9528 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "Array", DateToSystemTimezoneSetter: "isArray", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true }, [2]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/saved_messages/ForLaterExperiment.tsx");
+// Module 9535 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-03-message-bookmarks", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true }, [2]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/saved_messages/ForLaterExperiment.tsx");
 
 export default apexExperiment;

@@ -1,10 +1,9 @@
-// Module ID: 4022
-// Function ID: 33498
+// Module ID: 4024
+// Function ID: 33507
 // Name: PremiumGuildOverrides
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4022 (PremiumGuildOverrides)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/PremiumGuildOverrides.tsx");
+// Module 4024 (PremiumGuildOverrides)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/PremiumGuildOverrides.tsx");
 
 export const PremiumGuildOverrides = { MAX_STICKER_SLOTS: 120, [120]: "MAX_STICKER_SLOTS" };

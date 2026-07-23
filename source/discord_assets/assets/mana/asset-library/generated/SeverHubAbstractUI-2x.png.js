@@ -1,11 +1,10 @@
-// Module ID: 6496
-// Function ID: 50677
+// Module ID: 6501
+// Function ID: 50706
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6496 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SeverHubAbstractUI-2x.png.js");
+// Module 6501 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SeverHubAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/b262491f37f63706429b70ebdd3eb0c0824bdc43da4b352fe2a4aabcb7bd01c1.png";
 export const metadata = { fileBytes: 75367 };

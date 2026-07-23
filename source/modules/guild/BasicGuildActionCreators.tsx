@@ -1,22 +1,24 @@
-// Module ID: 16402
-// Function ID: 126698
+// Module ID: 16519
+// Function ID: 128872
 // Name: _fetchBasicGuild
-// Dependencies: []
+// Dependencies: [5, 1838, 7644, 653, 686, 507, 2]
 // Exports: fetchBasicGuild
 
-// Module 16402 (_fetchBasicGuild)
+// Module 16519 (_fetchBasicGuild)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import set from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _fetchBasicGuild() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchBasicGuild = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const set = new Set();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild/BasicGuildActionCreators.tsx");
+let set = new Set();
+const result = set.fileFinishedImporting("modules/guild/BasicGuildActionCreators.tsx");
 
 export const fetchBasicGuild = function fetchBasicGuild(guild_id) {
   return _fetchBasicGuild(...arguments);

@@ -1,40 +1,41 @@
-// Module ID: 5589
-// Function ID: 47475
+// Module ID: 5592
+// Function ID: 47498
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 5589 (_isNativeReflectConstruct)
+// Module 5592 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = false;
-let closure_6 = false;
+let c5 = false;
+let c6 = false;
 let closure_7 = {};
-let closure_8 = null;
-let tmp2 = (Store) => {
+let c8 = null;
+let tmp2 = ((Store) => {
   class ConsentStore {
     constructor() {
       self = this;
       tmp = ConsentStore(this, ConsentStore);
-      obj = closure_3(ConsentStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(ConsentStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -43,14 +44,13 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ConsentStore;
   callback2(ConsentStore, Store);
   let obj = {
     key: "hasConsented",
     value(arg0) {
-      let consented = null != closure_7[arg0];
+      let consented = null != outer1_7[arg0];
       if (consented) {
-        consented = closure_7[arg0].consented;
+        consented = outer1_7[arg0].consented;
       }
       return consented;
     }
@@ -59,60 +59,59 @@ let tmp2 = (Store) => {
   obj = {
     key: "consents",
     get() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[1] = obj;
   obj = {
     key: "fetchedConsents",
     get() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "receivedConsentsInConnectionOpen",
     get() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[4] = {
     key: "getAuthenticationConsentRequired",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   return callback(ConsentStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ConsentStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(consents) {
     consents = consents.consents;
     if (null != consents) {
       const obj = {};
-      const merged = Object.assign(closure_7);
+      const merged = Object.assign(obj);
       const merged1 = Object.assign(consents);
-      closure_7 = obj;
-      let closure_6 = true;
+      let c6 = true;
     }
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(consents) {
+    const obj = {};
     const merged = Object.assign(consents.consents);
-    let closure_7 = {};
-    let closure_5 = true;
+    let c5 = true;
   },
   UPDATE_CONSENTS: function handleUpdateConsents(consents) {
+    const obj = {};
     const merged = Object.assign(consents.consents);
-    let closure_7 = {};
-    let closure_5 = true;
+    let c5 = true;
   },
   SET_CONSENT_REQUIRED: function handleConsentRequired(consentRequired) {
     consentRequired = consentRequired.consentRequired;
   },
   LOGOUT: function handleLogout() {
-    let closure_8 = null;
+    let c8 = null;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("stores/ConsentStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ConsentStore.tsx");
 
 export default tmp2;

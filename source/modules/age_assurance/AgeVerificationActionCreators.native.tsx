@@ -1,11 +1,27 @@
-// Module ID: 7530
-// Function ID: 60251
+// Module ID: 7536
+// Function ID: 60288
 // Name: openIncodeAgeVerificationModal
-// Dependencies: []
+// Dependencies: [5, 1849, 7537, 7539, 4344, 7483, 33, 4675, 4337, 7540, 1934, 7488, 1553, 4472, 7555, 7556, 7557, 4347, 3809, 686, 7558, 7559, 3827, 2]
 
-// Module 7530 (openIncodeAgeVerificationModal)
+// Module 7536 (openIncodeAgeVerificationModal)
+import SafetyToastType from "SafetyToastType";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
+import { AGE_VERIFICATION_INCODE_PATH as closure_9 } from "postToNativeWebView";
+import { NativePermissionTypes } from "NativePermissionStatus";
+import { SafetyToastType } from "SafetyToastType";
+import { jsx } from "jsxProd";
+import set from "set";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function openIncodeAgeVerificationModal(arg0) {
-  ({ onClose: closure_0, onComplete: closure_1 } = arg0);
+  let importDefault;
+  let require;
+  ({ onClose: require, onComplete: importDefault } = arg0);
   let WEBAPP_ENDPOINT;
   if (null != GLOBAL_ENV) {
     WEBAPP_ENDPOINT = GLOBAL_ENV.WEBAPP_ENDPOINT;
@@ -21,7 +37,7 @@ function openIncodeAgeVerificationModal(arg0) {
       const hostname = uRL.hostname;
       if ("localhost" !== hostname) {
         if ("127.0.0.1" !== hostname) {
-          const obj = /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/;
+          let obj = /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/;
         }
         const _HermesInternal = HermesInternal;
         combined = "" + str3 + WEBAPP_ENDPOINT + closure_9;
@@ -29,111 +45,100 @@ function openIncodeAgeVerificationModal(arg0) {
       str3 = "http:";
     }
   }
-  const dependencyMap = combined;
   let flag = null != combined;
   if (flag) {
     callback(async () => {
-      yield callback(closure_2[7]).requestPermission(closure_10.CAMERA, { showAuthorizationError: true });
-      const obj = callback(closure_2[7]);
-      yield callback(closure_2[8]).pushLazy(closure_3(async () => {
+      yield outer2_1(combined[7]).requestPermission(outer2_10.CAMERA, { showAuthorizationError: true });
+      const obj = outer2_1(combined[7]);
+      yield outer2_1(combined[8]).pushLazy(outer2_3(async () => {
         let closure_0;
-        closure_0 = yield closure_0(closure_2[10])(closure_2[9], closure_2.paths).default;
-        return () => callback(closure_0, { webviewUrl: closure_2, onClose: closure_0, onComplete: closure_1 });
-      }), {}, closure_5);
+        closure_0 = yield outer4_0(combined[10])(combined[9], combined.paths).default;
+        return () => outer5_12(closure_0, { webviewUrl: outer4_2, onClose: outer4_0, onComplete: outer4_1 });
+      }), {}, outer2_5);
     })();
     flag = true;
   }
   return flag;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ AGE_VERIFICATION_MODAL_KEY: closure_5, AGE_VERIFICATION_GET_STARTED_MODAL_KEY: closure_6, AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY: closure_7, VerificationVendorName: closure_8 } = arg1(dependencyMap[2]));
-let closure_9 = arg1(dependencyMap[3]).AGE_VERIFICATION_INCODE_PATH;
-const NativePermissionTypes = arg1(dependencyMap[4]).NativePermissionTypes;
-const SafetyToastType = arg1(dependencyMap[5]).SafetyToastType;
-const jsx = arg1(dependencyMap[6]).jsx;
-const obj = {
+({ AGE_VERIFICATION_MODAL_KEY: closure_5, AGE_VERIFICATION_GET_STARTED_MODAL_KEY: closure_6, AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY: closure_7, VerificationVendorName: closure_8 } = set);
+const result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationActionCreators.native.tsx");
+
+export default {
   showAgeVerification(onClose) {
     let shouldShowExpressiveModal;
     let webviewUrl;
     let fn = onClose.onClose;
     if (fn === undefined) {
-      fn = function t() {
+      fn = function t(arg0) {
 
       };
     }
-    const arg1 = fn;
     ({ shouldShowExpressiveModal, webviewUrl } = onClose);
-    const importDefault = webviewUrl;
-    let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+    let obj = { onClose: 0, shouldShowExpressiveModal: 0, webviewUrl: 0, verificationVendorName: 0, incodeParameters: 0 };
     Object.setPrototypeOf(null);
-    const merged = Object.assign(onClose, obj);
-    const dependencyMap = merged;
+    let merged = Object.assign(onClose, obj);
     if (obj2.isMetaQuest()) {
-      arg1(dependencyMap[13]).openAlert(closure_7, jsx(importDefault(dependencyMap[14]), {}), fn);
+      fn(merged[13]).openAlert(closure_7, jsx(webviewUrl(merged[14]), {}), fn);
       let flag = true;
-      const obj6 = arg1(dependencyMap[13]);
+      const obj6 = fn(merged[13]);
     } else {
       if (onClose.verificationVendorName === constants.INCODE) {
         if (obj3.isAgeVerificationIncodeEnabled(merged.entryPoint)) {
           obj = { onClose: fn, onComplete: merged.onComplete };
           flag = openIncodeAgeVerificationModal(obj);
         }
-        const obj3 = arg1(dependencyMap[15]);
+        obj3 = fn(merged[15]);
       }
       flag = null != webviewUrl;
       if (flag) {
-        importDefault(dependencyMap[8]).pushLazy(callback(async () => {
+        webviewUrl(merged[8]).pushLazy(callback(async () => {
           let closure_0;
-          closure_0 = yield closure_0(closure_2[10])(closure_2[16], closure_2.paths).default;
+          closure_0 = yield fn(merged[10])(merged[16], merged.paths).default;
           return () => {
-            const merged = Object.assign(closure_2);
-            return callback(closure_0, { webviewUrl: closure_1, onClose: closure_0 });
+            const merged = Object.assign(outer2_2);
+            return outer3_12(closure_0, { webviewUrl: outer2_1, onClose: outer2_0 });
           };
         }), {}, closure_5);
         flag = true;
-        const obj4 = importDefault(dependencyMap[8]);
+        const obj4 = webviewUrl(merged[8]);
       }
     }
     return flag;
   },
   showAgeVerificationGetStartedModal(entryPoint) {
     entryPoint = entryPoint.entryPoint;
-    const arg1 = entryPoint;
     const onClose = entryPoint.onClose;
-    const importDefault = onClose;
     let dependencyMap;
-    let callback;
+    let prop;
     let currentUser;
     function handleClose() {
-      let obj = onClose(isAgeVerifiedResult[19]);
+      let obj = onClose(_undefined[19]);
       obj = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: prop };
       obj.dispatch(obj);
       if (null != onClose) {
         onClose();
       }
     }
-    let obj = arg1(dependencyMap[12]);
+    let obj = entryPoint(1553);
     if (obj.isMetaQuest()) {
-      let tmpResult = tmp(tmp2[13]);
-      tmpResult.openAlert(closure_7, jsx(importDefault(tmp2[14]), {}), onClose);
+      let tmpResult = tmp(4472);
+      tmpResult.openAlert(closure_7, jsx(onClose(7555), {}), onClose);
     } else {
-      tmpResult = tmp(tmp2[17]);
+      tmpResult = tmp(4347);
       let isAgeVerifiedResult = tmpResult.isAgeVerified();
       if (isAgeVerifiedResult) {
-        isAgeVerifiedResult = arg1(dependencyMap[18]).hasAgeGatedFeatures();
-        const obj3 = arg1(dependencyMap[18]);
+        isAgeVerifiedResult = entryPoint(3809).hasAgeGatedFeatures();
+        const obj3 = entryPoint(3809);
       }
       dependencyMap = isAgeVerifiedResult;
       if (obj4.isAgeVerificationIncodeEnabled(entryPoint)) {
         currentUser = currentUser.getCurrentUser();
-        let prop;
+        prop = undefined;
         if (null != currentUser) {
           prop = currentUser.ageVerificationStatus;
         }
-        callback = prop;
         obj = { type: "INITIATE_AGE_VERIFICATION" };
-        importDefault(dependencyMap[19]).dispatch(obj);
+        onClose(686).dispatch(obj);
         obj = {
           onClose: handleClose,
           onComplete() {
@@ -144,23 +149,19 @@ const obj = {
           handleClose();
         }
       } else {
-        currentUser = arg1(dependencyMap[20]).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
-        const obj5 = arg1(dependencyMap[20]);
-        importDefault(dependencyMap[8]).pushLazy(callback(async () => {
+        currentUser = entryPoint(7558).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
+        const obj5 = entryPoint(7558);
+        onClose(4337).pushLazy(prop(async () => {
           let closure_0;
-          closure_0 = yield closure_0(closure_2[10])(closure_2[21], closure_2.paths).default;
-          return () => callback(closure_0, { entryPoint: closure_0, isRetry: closure_2, useEmbeddedMethods: closure_4 });
+          closure_0 = yield entryPoint(c2[10])(c2[21], c2.paths).default;
+          return () => outer3_12(closure_0, { entryPoint: outer2_0, isRetry: outer2_2, useEmbeddedMethods: outer2_4 });
         }), {}, closure_6);
-        const obj6 = importDefault(dependencyMap[8]);
+        const obj6 = onClose(4337);
       }
-      const obj4 = arg1(dependencyMap[15]);
+      obj4 = entryPoint(7556);
     }
   },
   openUrl(arg0) {
-    importDefault(dependencyMap[22]).openURL(arg0);
+    importDefault(3827).openURL(arg0);
   }
 };
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/age_assurance/AgeVerificationActionCreators.native.tsx");
-
-export default obj;

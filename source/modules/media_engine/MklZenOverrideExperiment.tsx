@@ -1,15 +1,15 @@
-// Module ID: 12719
-// Function ID: 97628
+// Module ID: 12833
+// Function ID: 99784
 // Name: getMklZenOverrideExperimentConfig
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getMklZenOverrideExperimentConfig
 
-// Module 12719 (getMklZenOverrideExperimentConfig)
-const _module = require(dependencyMap[0]);
-const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/MklZenOverrideExperiment.tsx");
+// Module 12833 (getMklZenOverrideExperimentConfig)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-07-mkl-zen-cpu-dispatch-override", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/MklZenOverrideExperiment.tsx");
 
 export const getMklZenOverrideExperimentConfig = function getMklZenOverrideExperimentConfig(handleConnectionOpen) {
   return config.getConfig({ location: handleConnectionOpen });

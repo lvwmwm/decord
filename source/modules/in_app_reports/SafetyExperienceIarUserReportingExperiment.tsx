@@ -1,18 +1,18 @@
-// Module ID: 11883
-// Function ID: 92002
+// Module ID: 11895
+// Function ID: 92055
 // Name: items
-// Dependencies: []
+// Dependencies: [4042, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 11883 (items)
-const _module = require(dependencyMap[0]);
-let obj = { shapes: true, flex: true, sk: true, defaultConfig: { enabled: false } };
-obj = { displayNameStylesEnabled: 203706476729884200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, submitButtonEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015890667570573938, config: { enabled: true } };
+// Module 11895 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "user", id: "2023-09_iar_user_reporting", label: "Safety Experience IAR User Reporting", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Enabled", config: { enabled: true } };
 const items = [obj];
 obj.treatments = items;
-const experiment = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/in_app_reports/SafetyExperienceIarUserReportingExperiment.tsx");
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/in_app_reports/SafetyExperienceIarUserReportingExperiment.tsx");
 
 export default experiment;
 export const useIsIarUserReportingEnabled = function useIsIarUserReportingEnabled(location) {

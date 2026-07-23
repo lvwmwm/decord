@@ -1,27 +1,28 @@
-// Module ID: 12490
-// Function ID: 95411
+// Module ID: 12604
+// Function ID: 97567
 // Name: rateLimit
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 12490 (rateLimit)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("lib/rateLimit.tsx");
+// Module 12604 (rateLimit)
+const result = require("set").fileFinishedImporting("lib/rateLimit.tsx");
 
 export default function rateLimit(arg0, arg1, arg2) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
   let closure_4 = [];
   function wrapper(arg0) {
     const items = [...arguments];
-    arg0 = items;
     const timestamp = Date.now();
     if (null != timeout) {
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
-      let timeout = null;
+      timeout = null;
     }
     if (arr.length > 0) {
       if (arr[0] <= timestamp) {
-        let arr = arr.shift();
+        arr = arr.shift();
         while (arr.length > 0) {
           let tmp7 = arr;
           if (arr[0] > timestamp) {
@@ -30,14 +31,14 @@ export default function rateLimit(arg0, arg1, arg2) {
         }
       }
     }
-    if (arr.length < arg0) {
-      arr = arr.push(timestamp + arg1);
+    if (arr.length < items) {
+      arr = arr.push(timestamp + closure_1);
       const items1 = [];
       HermesBuiltin.arraySpread(items, 0);
       HermesBuiltin.apply(items1, undefined);
     } else {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(() => callback(...closure_0), arr[0] - timestamp);
+      timeout = setTimeout(() => outer1_5(...items), arr[0] - timestamp);
     }
   }
   return wrapper;

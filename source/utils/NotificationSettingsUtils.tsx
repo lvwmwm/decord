@@ -1,20 +1,33 @@
-// Module ID: 5070
-// Function ID: 44072
+// Module ID: 5073
+// Function ID: 44091
 // Name: differ
-// Dependencies: []
+// Dependencies: [5074, 1348, 4349, 4325, 653, 3770, 4326, 662, 1360, 4324, 675, 2]
 // Exports: getManyCurrentChannelSettings, getManyCurrentGuildSettings, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 5070 (differ)
+// Module 5073 (differ)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { NotificationSettingsUpdateType as closure_9 } from "AccountNotificationFlags";
+import { UnreadSetting } from "ReadStateTypes";
+import MAX_FAVORITES from "MAX_FAVORITES";
+
 let UserNotificationSettings;
+let closure_11;
+let closure_12;
+let closure_7;
+const require = arg1;
 function differ(computeResult, computeResult1, RETURN_PREVIOUS_WHEN_CHANGED) {
-  computeResult1 = computeResult;
-  const importDefault = computeResult1;
-  let closure_2 = "RETURN_PREVIOUS_WHEN_CHANGED";
+  let closure_0 = computeResult;
+  let closure_1 = computeResult1;
+  RETURN_PREVIOUS_WHEN_CHANGED = "RETURN_PREVIOUS_WHEN_CHANGED";
   return (arg0) => {
-    if ("RETURN_PREVIOUS_WHEN_CHANGED" === closure_2) {
+    if ("RETURN_PREVIOUS_WHEN_CHANGED" === RETURN_PREVIOUS_WHEN_CHANGED) {
       let tmp3;
-      if (arg0[arg0] !== arg1[arg0]) {
-        tmp3 = arg0[arg0];
+      if (dependencyMap[arg0] !== table[arg0]) {
+        tmp3 = dependencyMap[arg0];
       }
       return tmp3;
     }
@@ -46,7 +59,7 @@ function getCurrentGuildSettings(guildId) {
   }
   obj.guild_muted_until = time;
   obj.guild_receive_mobile_push = store2.isMobilePushEnabled(guildId);
-  obj.guild_message_notification_settings = frozen[closure_6.getMessageNotifications(closure_6, guildId)];
+  obj.guild_message_notification_settings = frozen[store2.getMessageNotifications(store2, guildId)];
   obj.guild_notify_highlights = store2.getNotifyHighlights(guildId);
   obj.guild_flags = store2.getGuildFlags(guildId);
   return obj;
@@ -64,19 +77,12 @@ function getCurrentChannelSettings(guildId, channelId) {
     }
   }
   obj.channel_muted_until = time;
-  obj.channel_message_notification_settings = frozen[closure_6.getChannelMessageNotifications(closure_6, guildId, channelId)];
+  obj.channel_message_notification_settings = frozen[store2.getChannelMessageNotifications(store2, guildId, channelId)];
   obj.channel_flags = store2.getChannelIdFlags(guildId, channelId);
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ AnalyticEvents: closure_7, UserNotificationSettings } = arg1(dependencyMap[4]));
-let closure_9 = arg1(dependencyMap[5]).NotificationSettingsUpdateType;
-const UnreadSetting = arg1(dependencyMap[6]).UnreadSetting;
-const tmp2 = arg1(dependencyMap[4]);
-({ ChannelNotificationSettingsFlags: closure_11, GuildNotificationSettingsFlags: closure_12 } = arg1(dependencyMap[7]));
+({ AnalyticEvents: closure_7, UserNotificationSettings } = ME);
+({ ChannelNotificationSettingsFlags: closure_11, GuildNotificationSettingsFlags: closure_12 } = MAX_FAVORITES);
 let obj = { ForumThreadsCreatedOn: "enabled forum thread created notifs", ForumThreadsCreatedOff: "disabled forum thread created notifs", SuppressEveryoneOn: "enabled suppress everyone", SuppressEveryoneOff: "disabled suppress everyone", SuppressRolesOn: "enabled suppress roles", SuppressRolesOff: "disabled suppress roles", HighlightsOn: "enabled highlights", HighlightsOff: "disabled highlights", MobilePushOn: "enabled mobile push notifications", MobilePushOff: "disabled mobile push notifications", UnreadsAll: "unreads set to all messages", UnreadsMentions: "unreads set to mentions", UnreadsDefault: "unreads set to the default", NotificationsAll: "notifications set to all messages", NotificationsMentions: "notifications set to mentions", NotificationsNothing: "notifications set to nothing", NotificationsDefault: "notifications set to the default", PresetAll: "notification preset set to all messages", PresetMentions: "notification preset set to mentions", PresetNothing: "notification preset set to nothing", PresetDefault: "notification preset set to the default", OptedIn: "opted in to entity", OptedOut: "opted out from entity", Favorited: "favorited", UnFavorited: "unfavorited", Muted: "muted", Unmuted: "unmuted", MutedScheduledEvents: "muted scheduled events", UnmutedScheduledEvents: "unmuted scheduled events", OverrideCreated: "channel override created", OverrideDeleted: "channel override deleted", AnnouncementAutoEnable: "announcement channels auto set to all messages" };
 obj = {
   forumThreadsCreated(arg0) {
@@ -116,12 +122,12 @@ obj = {
     }
     return UnreadsDefault;
   },
-  notifications(message_notifications) {
-    if (message_notifications === UserNotificationSettings.ALL_MESSAGES) {
+  notifications(closure_0) {
+    if (closure_0 === UserNotificationSettings.ALL_MESSAGES) {
       let NotificationsDefault = obj.NotificationsAll;
-    } else if (message_notifications === UserNotificationSettings.ONLY_MENTIONS) {
+    } else if (closure_0 === UserNotificationSettings.ONLY_MENTIONS) {
       NotificationsDefault = obj.NotificationsMentions;
-    } else if (message_notifications === UserNotificationSettings.NO_MESSAGES) {
+    } else if (closure_0 === UserNotificationSettings.NO_MESSAGES) {
       NotificationsDefault = obj.NotificationsNothing;
     } else {
       NotificationsDefault = obj.NotificationsDefault;
@@ -130,8 +136,7 @@ obj = {
   }
 };
 const frozen = Object.freeze({ [UserNotificationSettings.ALL_MESSAGES]: "All", [UserNotificationSettings.ONLY_MENTIONS]: "Mentions", [UserNotificationSettings.NO_MESSAGES]: "Nothing", [UserNotificationSettings.NULL]: null });
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("utils/NotificationSettingsUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/NotificationSettingsUtils.tsx");
 
 export const NotificationLabels = obj;
 export const NotificationLabel = obj;
@@ -149,7 +154,7 @@ export const trackGuildNotificationSettingsUpdate = function trackGuildNotificat
         let guild_muted_until = date.getTime();
       }
       if (null != obj.message_notifications) {
-        let guild_message_notification_settings = closure_14[obj.message_notifications];
+        let guild_message_notification_settings = outer1_14[obj.message_notifications];
       } else {
         guild_message_notification_settings = currentGuildSettings.guild_message_notification_settings;
       }
@@ -201,12 +206,12 @@ export const trackGuildNotificationSettingsUpdate = function trackGuildNotificat
   if (null != tmp3Result) {
     num = tmp3Result;
   }
-  const guild_flags = computeResult1.guild_flags;
+  let guild_flags = computeResult1.guild_flags;
   let num2 = 0;
   if (null != guild_flags) {
     num2 = guild_flags;
   }
-  let obj = muteSettings(dependencyMap[8]);
+  let obj = require(1360) /* hasFlag */;
   const computeResult = compute(currentGuildSettings);
   const tmp5 = num2 ^ num;
   const removeFlagsResult = obj.removeFlags(num2 ^ num, constants4.OPT_IN_CHANNELS_OFF, constants4.OPT_IN_CHANNELS_ON);
@@ -226,7 +231,7 @@ export const trackGuildNotificationSettingsUpdate = function trackGuildNotificat
   obj["guild_scheduled_events_muted_old"] = tmp3("guild_scheduled_events_muted");
   obj["guild_message_notification_settings_old"] = tmp3("guild_message_notification_settings");
   obj["is_opt_in_only_change"] = 0 === removeFlagsResult;
-  importDefault(dependencyMap[9]).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
+  importDefault(4324).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
 };
 export { muteConfigToTimestamp };
 export const trackChannelNotificationSettingsUpdate = function trackChannelNotificationSettingsUpdate(updateType) {
@@ -239,7 +244,6 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
     CHANNEL = constants2.CHANNEL;
   }
   const guildId = updateType.guildId;
-  const arg1 = guildId;
   const channelId = updateType.channelId;
   function compute(currentChannelSettings, change) {
     let obj = change;
@@ -255,7 +259,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
       muted = channel_is_muted;
     }
     if (null != obj.message_notifications) {
-      let channel_message_notification_settings = closure_14[obj.message_notifications];
+      let channel_message_notification_settings = outer1_14[obj.message_notifications];
     } else if (null != currentChannelSettings) {
       channel_message_notification_settings = currentChannelSettings.channel_message_notification_settings;
     }
@@ -276,27 +280,27 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
     }
     obj.channel_flags = flags;
     obj.channel_message_notification_settings = channel_message_notification_settings;
-    obj.channel_muted_until = callback(obj.mute_config);
+    obj.channel_muted_until = outer1_16(obj.mute_config);
     return obj;
   }
   ({ applicationId, change, label, location: _location } = updateType);
   const computeResult1 = compute(getCurrentChannelSettings(guildId, channelId), change);
-  const tmp4 = differ(compute(updateType.previous), computeResult1, "RETURN_PREVIOUS_WHEN_CHANGED");
-  const channel = channel.getChannel(channelId);
+  let tmp4 = differ(compute(updateType.previous), computeResult1, "RETURN_PREVIOUS_WHEN_CHANGED");
+  channel = channel.getChannel(channelId);
   const tmp4Result = tmp4("channel_flags");
   let num = 0;
   if (null != tmp4Result) {
     num = tmp4Result;
   }
-  const channel_flags = computeResult1.channel_flags;
+  let channel_flags = computeResult1.channel_flags;
   let num2 = 0;
   if (null != channel_flags) {
     num2 = channel_flags;
   }
-  let obj = arg1(dependencyMap[8]);
+  let obj = guildId(1360);
   const computeResult = compute(updateType.previous);
   const tmp7 = num2 ^ num;
-  const lastMessage = lastMessage.getLastMessage(channelId);
+  lastMessage = lastMessage.getLastMessage(channelId);
   let type;
   if (null != lastMessage) {
     type = lastMessage.type;
@@ -327,25 +331,23 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   obj["is_opt_in_only_change"] = 0 === removeFlagsResult;
   obj["last_message_type"] = tmp11;
   obj["application_id"] = applicationId;
-  importDefault(dependencyMap[9]).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
+  importDefault(4324).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
 };
 export { getCurrentGuildSettings };
 export const getManyCurrentGuildSettings = function getManyCurrentGuildSettings(arr) {
   const map = new Map();
-  const arg1 = map;
-  const item = arr.forEach((arg0) => map.set(arg0, callback(arg0)));
+  const item = arr.forEach((arg0) => map.set(arg0, outer1_17(arg0)));
   return map;
 };
 export { getCurrentChannelSettings };
 export const getManyCurrentChannelSettings = function getManyCurrentChannelSettings(guildId, keys) {
-  keys = guildId;
+  let closure_0 = guildId;
   const map = new Map();
-  const importDefault = map;
-  const item = keys.forEach((arg0) => map.set(arg0, callback(arg0, arg0)));
+  const item = keys.forEach((arg0) => map.set(arg0, outer1_18(closure_0, arg0)));
   return map;
 };
 export const trackAccountNotificationSettingUpdated = function trackAccountNotificationSettingUpdated(quietMode, quietMode2) {
-  let obj = importDefault(dependencyMap[10]);
+  let obj = importDefault(675);
   obj = { update_type: constants2.ACCOUNT, quiet_mode_enabled: quietMode.quietMode, quiet_mode_enabled_old: quietMode2.quietMode };
   obj.track(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

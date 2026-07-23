@@ -1,9 +1,16 @@
 // Module ID: 1666
-// Function ID: 18472
+// Function ID: 18473
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1654, 1653]
 
 // Module 1666 (_isNativeReflectConstruct)
+import BaseAnimationBuilder from "BaseAnimationBuilder";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 
-export const ComplexAnimationBuilder = (BaseAnimationBuilder) => {
+export const ComplexAnimationBuilder = ((BaseAnimationBuilder) => {
   class ComplexAnimationBuilder {
     constructor() {
       self = this;
-      tmp = closure_2(this, ComplexAnimationBuilder);
-      obj = closure_5(ComplexAnimationBuilder);
-      tmp2 = closure_4;
-      if (closure_7()) {
+      tmp = outer1_2(this, ComplexAnimationBuilder);
+      obj = outer1_5(ComplexAnimationBuilder);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +42,6 @@ export const ComplexAnimationBuilder = (BaseAnimationBuilder) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ComplexAnimationBuilder;
   callback2(ComplexAnimationBuilder, BaseAnimationBuilder);
   let obj = {
     key: "easing",
@@ -49,7 +50,7 @@ export const ComplexAnimationBuilder = (BaseAnimationBuilder) => {
       return this;
     }
   };
-  const items = [obj, , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , ];
   obj = {
     key: "rotate",
     value: function rotate(rotateV) {
@@ -62,7 +63,7 @@ export const ComplexAnimationBuilder = (BaseAnimationBuilder) => {
     key: "springify",
     value: function springify(durationV) {
       this.durationV = durationV;
-      this.type = ComplexAnimationBuilder(closure_1[5]).withSpring;
+      this.type = ComplexAnimationBuilder(outer1_1[5]).withSpring;
       return this;
     }
   };
@@ -146,12 +147,11 @@ export const ComplexAnimationBuilder = (BaseAnimationBuilder) => {
       if (this.type) {
         let withTiming = self.type;
       } else {
-        withTiming = ComplexAnimationBuilder(maybeSetConfigValue[5]).withTiming;
+        withTiming = ComplexAnimationBuilder(outer1_1[5]).withTiming;
       }
       const obj = {};
-      const ComplexAnimationBuilder = obj;
       ({ dampingV, dampingRatioV, massV, stiffnessV, overshootClampingV, restDisplacementThresholdV, restSpeedThresholdV } = self);
-      if (withTiming === ComplexAnimationBuilder(maybeSetConfigValue[5]).withTiming) {
+      if (withTiming === ComplexAnimationBuilder(outer1_1[5]).withTiming) {
         maybeSetConfigValue(easingV, "easing");
       }
       const items = [{ variableName: "damping", value: dampingV }, { variableName: "dampingRatio", value: dampingRatioV }, { variableName: "mass", value: massV }, { variableName: "stiffness", value: stiffnessV }, { variableName: "overshootClamping", value: overshootClampingV }, { variableName: "restDisplacementThreshold", value: restDisplacementThresholdV }, { variableName: "restSpeedThreshold", value: restSpeedThresholdV }, { variableName: "duration", value: durationV }, { variableName: "rotate", value: rotateV }];
@@ -162,7 +162,7 @@ export const ComplexAnimationBuilder = (BaseAnimationBuilder) => {
       return items1;
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "easing",
       value: function easing(arg0) {
@@ -242,4 +242,4 @@ export const ComplexAnimationBuilder = (BaseAnimationBuilder) => {
     }
   ];
   return callback(ComplexAnimationBuilder, items, items1);
-}(arg1(dependencyMap[6]).BaseAnimationBuilder);
+})(require("BaseAnimationBuilder").BaseAnimationBuilder);

@@ -1,15 +1,14 @@
-// Module ID: 11929
-// Function ID: 92277
+// Module ID: 11941
+// Function ID: 92330
 // Name: isOnMetaHorizon
-// Dependencies: [1392, 3801, 2]
+// Dependencies: [4155, 653, 2]
 // Exports: default
 
-// Module 11929 (isOnMetaHorizon)
-import { META_PRESENCE_APPLICATION_ID as closure_0 } from "getAvatarURL";
-import { ActivityGamePlatforms } from "explicitContentFromProto";
-import result2 from "result2";
+// Module 11941 (isOnMetaHorizon)
+import { META_PRESENCE_APPLICATION_ID as closure_0 } from "items3";
+import { ActivityGamePlatforms } from "ME";
 
-const result = result2.fileFinishedImporting("modules/activities/utils/isOnMetaHorizon.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/isOnMetaHorizon.tsx");
 
 export default function isOnMetaHorizon(application_id) {
   application_id = undefined;

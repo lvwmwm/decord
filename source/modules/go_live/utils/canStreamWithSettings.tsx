@@ -1,53 +1,57 @@
-// Module ID: 10683
-// Function ID: 83282
+// Module ID: 10693
+// Function ID: 83331
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4185, 10694, 10695, 2]
 // Exports: default
 
-// Module 10683 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10693 (_createForOfIteratorHelperLoose)
+import makeButton from "makeButton";
+
+let closure_3;
+let closure_4;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,14 +88,12 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const _module = require(dependencyMap[0]);
-({ ApplicationStreamSettingRequirements: closure_3, ApplicationStreamPresets: closure_4 } = _module);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/go_live/utils/canStreamWithSettings.tsx");
+({ ApplicationStreamSettingRequirements: closure_3, ApplicationStreamPresets: closure_4 } = makeButton);
+const result = require("canUseStreamSetting").fileFinishedImporting("modules/go_live/utils/canStreamWithSettings.tsx");
 
 export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5) {
   if (arg0 === constants.PRESET_AUTO) {
-    let obj = require(dependencyMap[1]);
+    let obj = require(10694) /* getGoLiveAutoQualityExperimentConfig */;
     obj = { location: "canStreamWithSettings" };
     return obj.getGoLiveAutoQualityExperimentConfig(obj).allowAutoQuality;
   } else {
@@ -109,7 +111,7 @@ export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5
               let tmp4 = arg3;
               let tmp5 = arg4;
               let tmp6 = arg5;
-              if (importDefault(dependencyMap[2])(value, arg3, arg4, arg5)) {
+              if (importDefault(10695)(value, arg3, arg4, arg5)) {
                 break;
               }
             }

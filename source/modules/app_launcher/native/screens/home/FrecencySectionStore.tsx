@@ -1,38 +1,39 @@
-// Module ID: 11163
-// Function ID: 86828
+// Module ID: 11173
+// Function ID: 86878
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 11163 (_isNativeReflectConstruct)
+// Module 11173 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let obj = { APPS: "apps", COMMANDS: "commands" };
 let closure_6 = { selection: null };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class FrecencySectionStore {
     constructor() {
       self = this;
       tmp = FrecencySectionStore(this, FrecencySectionStore);
-      obj = closure_3(FrecencySectionStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(FrecencySectionStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,48 +42,48 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = FrecencySectionStore;
   callback2(FrecencySectionStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
-
+      if (null != arg0) {
+        const outer1_6 = arg0;
+      }
     }
   };
   const items = [obj, , ];
   obj = {
     key: "getState",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[1] = obj;
   obj = {
     key: "getSelection",
     value() {
-      if (null != closure_6.selection) {
-        let COMMANDS = closure_6.selection;
+      if (null != outer1_6.selection) {
+        let COMMANDS = outer1_6.selection;
       } else {
-        COMMANDS = constants.COMMANDS;
+        COMMANDS = outer1_5.COMMANDS;
       }
       return COMMANDS;
     }
   };
   items[2] = obj;
   return callback(FrecencySectionStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "FrecencySectionStore";
 tmp2.persistKey = "FrecencySectionStore";
 obj = {
   FRECENCY_SECTION_SET_SELECTION: function handleSetSelection(selection) {
     const obj = {};
-    const merged = Object.assign(closure_6);
+    const merged = Object.assign(obj);
     obj["selection"] = selection.selection;
-    closure_6 = obj;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStore.tsx");
 
 export default tmp2;
 export const FrecencySectionSelection = obj;

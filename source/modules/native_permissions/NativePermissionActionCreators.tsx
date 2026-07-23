@@ -1,31 +1,31 @@
-// Module ID: 4678
-// Function ID: 40768
+// Module ID: 4681
+// Function ID: 40786
 // Name: NativePermissionActionCreators
-// Dependencies: []
+// Dependencies: [6, 7, 686, 2]
 
-// Module 4678 (NativePermissionActionCreators)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 4681 (NativePermissionActionCreators)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const tmp2 = (() => {
   class NativePermissionActionCreators {
     constructor() {
-      tmp = closure_2(this, NativePermissionActionCreators);
+      tmp = outer1_2(this, NativePermissionActionCreators);
       return;
     }
   }
-  const importDefault = NativePermissionActionCreators;
   const items = [
     {
       key: "setPermission",
       value(permissionType, state) {
-        let obj = NativePermissionActionCreators(closure_1[2]);
+        let obj = NativePermissionActionCreators(outer1_1[2]);
         obj = { type: "SET_NATIVE_PERMISSION", permissionType, state };
         obj.dispatch(obj);
       }
     }
   ];
   return callback(NativePermissionActionCreators, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/native_permissions/NativePermissionActionCreators.tsx");
+})();
+const result = require("dispatcher").fileFinishedImporting("modules/native_permissions/NativePermissionActionCreators.tsx");
 
 export default tmp2;

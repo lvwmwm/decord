@@ -1,25 +1,27 @@
-// Module ID: 10934
-// Function ID: 85048
+// Module ID: 10944
+// Function ID: 85097
 // Name: showModal
-// Dependencies: []
+// Dependencies: [5718, 4337, 10945, 1934, 686, 2]
 
-// Module 10934 (showModal)
-const obj = {};
-const merged = Object.assign(importDefault(dependencyMap[0]));
+// Module 10944 (showModal)
+import merged from "map";
+
+const require = arg1;
+let obj = {};
 obj["showModal"] = function showModal(code) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(4337);
   obj = { code };
-  obj.pushLazy(arg1(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), obj, "GUILD_TEMPLATE_MODAL_KEY");
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(10945, dependencyMap.paths), obj, "GUILD_TEMPLATE_MODAL_KEY");
   obj = { type: "GUILD_TEMPLATE_MODAL_SHOW", code };
-  importDefault(dependencyMap[4]).dispatch(obj);
-  const obj3 = importDefault(dependencyMap[4]);
-  const guildTemplate = importDefault(dependencyMap[0]).resolveGuildTemplate(code);
+  importDefault(686).dispatch(obj);
+  const obj3 = importDefault(686);
+  const guildTemplate = importDefault(5718).resolveGuildTemplate(code);
 };
 obj["hideModal"] = function hideModal() {
-  importDefault(dependencyMap[1]).popWithKey("GUILD_TEMPLATE_MODAL_KEY");
-  const obj = importDefault(dependencyMap[1]);
-  importDefault(dependencyMap[4]).dispatch({ type: "GUILD_TEMPLATE_MODAL_HIDE" });
+  importDefault(4337).popWithKey("GUILD_TEMPLATE_MODAL_KEY");
+  const obj = importDefault(4337);
+  importDefault(686).dispatch({ type: "GUILD_TEMPLATE_MODAL_HIDE" });
 };
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_templates/native/GuildTemplateActionCreators.tsx");
+const result = require("ConnectedAcceptGuildTemplate").fileFinishedImporting("modules/guild_templates/native/GuildTemplateActionCreators.tsx");
 
 export default obj;

@@ -1,69 +1,62 @@
-// Module ID: 12306
-// Function ID: 94264
+// Module ID: 12420
+// Function ID: 96415
 // Name: _fetchPremiumGroupMembership
-// Dependencies: []
+// Dependencies: [5, 1857, 12421, 653, 686, 507, 44, 2]
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 12306 (_fetchPremiumGroupMembership)
+// Module 12420 (_fetchPremiumGroupMembership)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _fetchPremiumGroupMembership() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchPremiumGroupMembership = obj;
   return obj(...arguments);
 }
 function _fetchEligibleUsers() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchEligibleUsers = obj;
   return obj(...arguments);
 }
 function _inviteUsersToSubscriptionGroup() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _inviteUsersToSubscriptionGroup = obj;
   return obj(...arguments);
 }
 function _removeUserFromSubscriptionGroup() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _removeUserFromSubscriptionGroup = obj;
   return obj(...arguments);
 }
 function _fetchSubscriptionGroupMembers() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSubscriptionGroupMembers = obj;
   return obj(...arguments);
 }
 function _acceptSubscriptionGroupInvite() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _acceptSubscriptionGroupInvite = obj;
   return obj(...arguments);
 }
 function _removeSubscriptionGroupInvite() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _removeSubscriptionGroupInvite = obj;
   return obj(...arguments);
 }
 function _fetchPremiumGroupInvites() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchPremiumGroupInvites = obj;
   return obj(...arguments);
 }
 function _fetchPremiumGroupInvite() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchPremiumGroupInvite = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/premium_group/PremiumGroupActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/premium_group/PremiumGroupActionCreators.tsx");
 
 export const fetchPremiumGroupMembership = function fetchPremiumGroupMembership() {
   return _fetchPremiumGroupMembership(...arguments);

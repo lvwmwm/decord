@@ -1,37 +1,37 @@
-// Module ID: 11963
-// Function ID: 92478
+// Module ID: 11975
+// Function ID: 92531
 // Name: _fetchNote
-// Dependencies: []
+// Dependencies: [5, 31, 11976, 653, 566, 686, 507, 2]
 // Exports: default
 
-// Module 11963 (_fetchNote)
+// Module 11975 (_fetchNote)
+import dispatcher from "dispatcher";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _fetchNote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchNote = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_profile/hooks/useNote.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/useNote.tsx");
 
 export default function useNote(arg0) {
-  const arg1 = arg0;
-  const items = [closure_5];
-  let stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => note.getNote(arg0));
-  const importDefault = stateFromStores;
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getNote(closure_0));
   const items1 = [stateFromStores, arg0];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
-      function fetchNote(arg0) {
-        return callback(...arguments);
-      }(arg0);
+      (function fetchNote(closure_0) {
+        return outer2_7(...arguments);
+      })(closure_0);
     }
   }, items1);
   if (null == stateFromStores) {
-    stateFromStores = {};
+    stateFromStores = { loading: true, note: null };
   }
   return stateFromStores;
 };

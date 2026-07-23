@@ -1,53 +1,63 @@
-// Module ID: 13302
-// Function ID: 101024
+// Module ID: 13416
+// Function ID: 103180
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 3767, 1849, 4033, 653, 13403, 8310, 483, 10496, 10501, 2]
 
-// Module 13302 (_createForOfIteratorHelperLoose)
+// Module 13416 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+import createRPCCommand from "createRPCCommand";
+
 let RPCCommands;
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,55 +94,51 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-({ ApplicationFlags: closure_7, RelationshipTypes: closure_8, RPCCommands, RPCErrors: closure_9 } = arg1(dependencyMap[4]));
+({ ApplicationFlags: closure_7, RelationshipTypes: closure_8, RPCCommands, RPCErrors: closure_9 } = ME);
 let obj = {};
-const tmp2 = arg1(dependencyMap[4]);
 obj = {};
 obj = {};
-const items = [arg1(dependencyMap[6]).OAuth2Scopes.RELATIONSHIPS_READ];
-obj[arg1(dependencyMap[3]).RPC_SCOPE_CONFIG.ANY] = items;
+let items = [require("set").OAuth2Scopes.RELATIONSHIPS_READ];
+obj[require("RPC_SCOPE_CONFIG").RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj;
 obj.handler = function handler(socket) {
   let iter3;
-  let obj = importAll(dependencyMap[7]);
+  let obj = importAll(483);
   const flags = socket.socket.application.flags;
   let num = 0;
   if (null != flags) {
     num = flags;
   }
-  const obj2 = importAll(dependencyMap[7]);
-  const deserializeResult = importAll(dependencyMap[7]).deserialize(num);
+  const obj2 = importAll(483);
+  const deserializeResult = importAll(483).deserialize(num);
   if (obj.has(deserializeResult, obj3.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
-    let tmp20 = importDefault(dependencyMap[8]);
-    obj = { errorCode: constants2.INVALID_PERMISSIONS };
+    let tmp20 = importDefault(10496);
+    obj = { errorCode: constants3.INVALID_PERMISSIONS };
     const prototype = tmp20.prototype;
     tmp20 = new tmp20(obj, "Missing Permissions");
     throw tmp20;
   } else {
     const items = [];
-    const mutableRelationships = mutableRelationships.getMutableRelationships();
+    mutableRelationships = mutableRelationships.getMutableRelationships();
     const tmp4 = _createForOfIteratorHelperLoose(mutableRelationships.entries());
     const iter = tmp4();
     let iter2 = iter;
     if (!iter.done) {
       do {
-        let tmp5 = closure_4;
-        let tmp6 = closure_4(iter2.value, 2);
+        let tmp5 = callback;
+        let tmp6 = callback(iter2.value, 2);
         let tmp8 = tmp6[1];
-        let tmp9 = closure_8;
-        if (tmp8 !== closure_8.NONE) {
-          let tmp10 = closure_6;
-          let user = closure_6.getUser(tmp7);
+        let tmp9 = constants2;
+        if (tmp8 !== constants2.NONE) {
+          let tmp10 = user;
+          user = user.getUser(tmp7);
           let tmp12 = user;
           if (null != user) {
-            let tmp13 = closure_0;
-            let tmp14 = closure_3;
-            let obj5 = closure_0(closure_3[9]);
+            let tmp13 = require;
+            let tmp14 = dependencyMap;
+            let obj5 = require(10501) /* recurseReplaceContentTree */;
             let result = obj5.transformBaseRelationship(tmp8, user);
-            let obj6 = closure_0(closure_3[9]);
+            let obj6 = require(10501) /* recurseReplaceContentTree */;
             let arr = items.push(obj6.transformApplicationRelationship(result, socket.socket.application.id));
             let tmp17 = user;
           }
@@ -144,10 +150,9 @@ obj.handler = function handler(socket) {
     obj = { relationships: items };
     return obj;
   }
-  const obj3 = importAll(dependencyMap[7]);
+  obj3 = importAll(483);
 };
-obj[RPCCommands.GET_RELATIONSHIPS] = arg1(dependencyMap[5]).createRPCCommand(RPCCommands.GET_RELATIONSHIPS, obj);
-const obj2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/rpc/server/commands/relationships.tsx");
+obj[RPCCommands.GET_RELATIONSHIPS] = createRPCCommand.createRPCCommand(RPCCommands.GET_RELATIONSHIPS, obj);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/server/commands/relationships.tsx");
 
 export default obj;

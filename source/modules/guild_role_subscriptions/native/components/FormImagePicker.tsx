@@ -1,35 +1,42 @@
-// Module ID: 16308
-// Function ID: 125830
+// Module ID: 16425
+// Function ID: 128004
 // Name: pickImage
-// Dependencies: []
+// Dependencies: [5, 31, 27, 33, 4130, 689, 4674, 1426, 8474, 1212, 5085, 16426, 9106, 4126, 4543, 2]
 // Exports: default
 
-// Module 16308 (pickImage)
+// Module 16425 (pickImage)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function pickImage() {
   return _pickImage(...arguments);
 }
 function _pickImage() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _pickImage = obj;
   return obj(...arguments);
 }
 class ImagePickerIcon {
   constructor(arg0) {
     ({ style, image } = global);
-    arg1 = image;
-    ({ imageUploadSize: closure_1, setImage: closure_2, previewResizeMode, standalone, size } = global);
+    ({ imageUploadSize, setImage, previewResizeMode, standalone, size } = global);
     flag = global.disabled;
     if (flag === undefined) {
       flag = false;
     }
-    tmp = closure_8();
-    tmp3 = global.previewShape === closure_9.CIRCLE ? tmp.imageCircle : tmp.imageSquircle;
+    tmp = c8();
+    tmp3 = global.previewShape === c9.CIRCLE ? tmp.imageCircle : tmp.imageSquircle;
     items = [, ];
     items[0] = image;
     items[1] = size;
     tmp2 = "center" === previewResizeMode ? tmp.imageCentered : tmp.image;
-    memo = importAll.useMemo(() => {
+    memo = result.useMemo(() => {
       let uri;
       if (null != image) {
         uri = image.uri;
@@ -38,11 +45,11 @@ class ImagePickerIcon {
         uri = image.uri;
         if (!uri.startsWith("data:")) {
           if (null != size) {
-            const obj = image(closure_2[7]);
+            const obj = image(outer1_2[7]);
             const _HermesInternal = HermesInternal;
-            let uri2 = image.uri + "?size=" + obj.getBestMediaProxySize(size * image(closure_2[7]).getDevicePixelRatio());
+            let uri2 = image.uri + "?size=" + obj.getBestMediaProxySize(size * image(outer1_2[7]).getDevicePixelRatio());
             image.uri = uri2;
-            const obj2 = image(closure_2[7]);
+            const obj2 = image(outer1_2[7]);
           }
           return uri2;
         }
@@ -51,14 +58,14 @@ class ImagePickerIcon {
     }, items);
     tmp5 = jsxs;
     obj = { accessibilityRole: "button" };
-    tmp6 = importDefault(dependencyMap[8]);
-    intl = arg1(dependencyMap[9]).intl;
-    obj.accessibilityLabel = intl.string(arg1(dependencyMap[9]).t.HNo5cG);
+    tmp6 = require("_isNativeReflectConstruct");
+    intl = require("getSystemLocale").intl;
+    obj.accessibilityLabel = intl.string(require("getSystemLocale").t.HNo5cG);
     obj = {};
     obj.disabled = flag;
     obj.accessibilityState = obj;
     obj.onPress = function onPress() {
-      return callback(closure_1, closure_2);
+      return outer1_10(closure_1, closure_2);
     };
     items1 = [, , , , ];
     items1[0] = tmp.image;
@@ -73,8 +80,8 @@ class ImagePickerIcon {
     obj.style = items1;
     obj.disabled = flag;
     if (null != image) {
-      tmp12 = importDefault;
-      tmp13 = dependencyMap;
+      tmp12 = imageUploadSize;
+      tmp13 = setImage;
       num2 = 10;
       tmp11 = jsx;
       obj1 = {};
@@ -84,7 +91,7 @@ class ImagePickerIcon {
       items2[2] = tmp3;
       obj1.style = items2;
       str = "cover";
-      tmp14 = importDefault(dependencyMap[10]);
+      tmp14 = require("preload");
       if (null != previewResizeMode) {
         str = previewResizeMode;
       }
@@ -95,10 +102,10 @@ class ImagePickerIcon {
       tmp11Result = tmp11(tmp14, obj1);
     } else {
       tmp7 = jsx;
-      tmp8 = arg1;
-      tmp9 = dependencyMap;
+      tmp8 = image;
+      tmp9 = setImage;
       num = 11;
-      tmp11Result = jsx(arg1(dependencyMap[11]).ImagePlusIcon, {});
+      tmp11Result = jsx(require("ImagePlusIcon").ImagePlusIcon, {});
     }
     items3 = [, ];
     items3[0] = tmp11Result;
@@ -115,10 +122,10 @@ class ImagePickerIcon {
       items4[1] = standalone;
       obj3.style = items4;
       tmp18 = jsx;
-      tmp19 = arg1;
-      tmp20 = dependencyMap;
+      tmp19 = image;
+      tmp20 = setImage;
       num3 = 12;
-      obj3.children = jsx(arg1(dependencyMap[12]).PencilIcon, { GuildBadgeSnail: "Array", EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED: "isArray" });
+      obj3.children = jsx(require("PencilIcon").PencilIcon, { color: "#292b30", size: "sm" });
       tmp16Result = tmp16(tmp17, obj3);
     }
     items3[1] = tmp16Result;
@@ -126,57 +133,51 @@ class ImagePickerIcon {
     return tmp5(tmp6, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { imageSelectionRow: {}, buttonColumn: {}, imageDescription: { accessibilityRole: null, rejectWithError: null }, image: { -659428249: 0, -1420374941: null, -319042460: 586 }, imageCentered: { -659428249: false, -1420374941: false, -319042460: false }, imageCircle: { borderRadius: 42 } };
-obj = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.imageSquircle = obj;
-const tmp2 = arg1(dependencyMap[3]);
-obj.imageContainerEmpty = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { "Bool(true)": "<string:1388517415>", "Bool(true)": "<string:659301671>", "Bool(true)": "<string:4233314577>", "Bool(true)": "<string:3211265>", "Bool(true)": "isArray", "Bool(true)": "<string:1900045744>", "Bool(true)": "accessibilityLabel", "Bool(true)": "<string:325730817>", "Bool(true)": "<string:250609666>", "Bool(true)": "<string:4132503553>", backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.editImageIcon = obj2;
-obj.standaloneIcon = { useIsNewGamesCoachmarkEnabled: "bannerOriginalMd5", QUESTS_GET_DECISIONS: "splashOriginalMd5" };
-obj.disabled = { opacity: 0.3 };
-let closure_8 = obj.createStyles(obj);
-const obj3 = { CIRCLE: 0, [0]: "CIRCLE", SQUIRCLE: 1, [1]: "SQUIRCLE" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormImagePicker.tsx");
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { imageSelectionRow: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: 16 }, buttonColumn: { flex: 1, flexDirection: "column", marginEnd: 16 }, imageDescription: { flexWrap: "wrap", marginBottom: 16 }, image: { alignSelf: "center", width: 84, height: 84 }, imageCentered: { alignSelf: "center", width: 20, height: 20 }, imageCircle: { borderRadius: 42 } };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.imageSquircle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.imageContainerEmpty = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+let obj2 = { alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, top: 0, height: 24, justifyContent: "center", right: 0, padding: 4, position: "absolute", width: 24 };
+_createForOfIteratorHelperLoose.editImageIcon = obj2;
+_createForOfIteratorHelperLoose.standaloneIcon = { top: -4, right: -4 };
+_createForOfIteratorHelperLoose.disabled = { opacity: 0.3 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { CIRCLE: 0, [0]: "CIRCLE", SQUIRCLE: 1, [1]: "SQUIRCLE" };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormImagePicker.tsx");
 
-export default function FormImagePicker(children) {
+export default function FormImagePicker(imageUploadSize) {
   let image;
   let setImage;
-  const imageUploadSize = children.imageUploadSize;
-  const arg1 = imageUploadSize;
-  ({ image, setImage } = children);
-  const importDefault = setImage;
-  const disabled = children.disabled;
-  let obj = {};
+  imageUploadSize = imageUploadSize.imageUploadSize;
+  ({ image, setImage } = imageUploadSize);
+  const disabled = imageUploadSize.disabled;
+  let obj = { description: 0, imageUploadSize: 0, image: 0, setImage: 0, disabled: 0 };
   Object.setPrototypeOf(null);
-  const merged = Object.assign(children, obj);
-  const tmp3 = callback4();
+  const merged = Object.assign(imageUploadSize, obj);
+  const tmp3 = _createForOfIteratorHelperLoose();
   if (null == image) {
-    const intl2 = arg1(dependencyMap[9]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[9]).t.bGPfSp);
+    const intl2 = imageUploadSize(1212).intl;
+    let stringResult = intl2.string(imageUploadSize(1212).t.bGPfSp);
   } else {
-    const intl = arg1(dependencyMap[9]).intl;
-    stringResult = intl.string(arg1(dependencyMap[9]).t.0KOido);
+    const intl = imageUploadSize(1212).intl;
+    stringResult = intl.string(imageUploadSize(1212).t["0KOido"]);
   }
   obj = { style: tmp3.imageSelectionRow };
   obj = { style: tmp3.buttonColumn };
-  const items = [callback2(arg1(dependencyMap[13]).Text, { style: tmp3.imageDescription, children: children.description }), ];
+  const obj1 = { style: tmp3.imageDescription, variant: "text-sm/medium", color: "text-default", children: imageUploadSize.description };
+  const items = [callback2(imageUploadSize(4126).Text, obj1), ];
   const obj2 = {
     text: stringResult,
     variant: "secondary",
     onPress() {
-      return callback(imageUploadSize, setImage);
+      return outer1_10(imageUploadSize, setImage);
     },
     size: "md",
     disabled
   };
-  items[1] = callback2(arg1(dependencyMap[14]).Button, obj2);
+  items[1] = callback2(imageUploadSize(4543).Button, obj2);
   obj.children = items;
   const items1 = [callback3(View, obj), ];
   const obj3 = {};

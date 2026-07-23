@@ -1,13 +1,13 @@
-// Module ID: 10322
-// Function ID: 79707
+// Module ID: 10335
+// Function ID: 79781
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 10322 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { hasBugReporterAccess: false }, variations: { [1]: { hasBugReporterAccess: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/bug_reporter/BugReporterExperiment.tsx");
+// Module 10335 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-01-bug-reporter", kind: "user", defaultConfig: { hasBugReporterAccess: false }, variations: { [1]: { hasBugReporterAccess: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/bug_reporter/BugReporterExperiment.tsx");
 
 export default apexExperiment;

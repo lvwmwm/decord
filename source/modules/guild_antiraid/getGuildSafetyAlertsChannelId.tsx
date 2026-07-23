@@ -1,12 +1,11 @@
-// Module ID: 10231
-// Function ID: 79060
+// Module ID: 10243
+// Function ID: 79132
 // Name: getGuildSafetyAlertsChannelId
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 10231 (getGuildSafetyAlertsChannelId)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_antiraid/getGuildSafetyAlertsChannelId.tsx");
+// Module 10243 (getGuildSafetyAlertsChannelId)
+const result = require("set").fileFinishedImporting("modules/guild_antiraid/getGuildSafetyAlertsChannelId.tsx");
 
 export default function getGuildSafetyAlertsChannelId(safetyAlertsChannelId) {
   let publicUpdatesChannelId = safetyAlertsChannelId.safetyAlertsChannelId;

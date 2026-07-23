@@ -1,53 +1,68 @@
-// Module ID: 5061
-// Function ID: 43871
+// Module ID: 5064
+// Function ID: 43889
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1348, 1907, 1917, 1910, 3758, 1906, 4325, 1909, 653, 1355, 675, 4324, 1915, 686, 1198, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5061 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5064 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { isStaticChannelRoute } from "set";
+
+let closure_11;
+let closure_12;
+let closure_13;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,84 +100,73 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function updateImpersonating(guildId, type) {
-  const data = data.getData(guildId);
+  data = data.getData(guildId);
   if (tmp2) {
-    let obj = importDefault(dependencyMap[10]);
+    let obj = importDefault(675);
     obj = {};
     const _Object = Object;
     obj.num_roles = Object.keys(data.roles).length;
-    const merged = Object.assign(type(dependencyMap[11]).collectGuildAnalyticsMetadata(guildId));
-    obj["is_viewing_as_member"] = data.type === type(dependencyMap[12]).ImpersonateType.NEW_MEMBER;
+    const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+    obj["is_viewing_as_member"] = data.type === require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
     obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-    const obj3 = type(dependencyMap[11]);
+    const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
     obj = { type: "IMPERSONATE_UPDATE", guildId };
     const obj1 = {};
     const merged1 = Object.assign(data);
     const merged2 = Object.assign(type);
     obj.data = obj1;
-    importDefault(dependencyMap[13]).dispatch(obj);
+    importDefault(686).dispatch(obj);
     puntFromSelectedChannelIfInaccessible(guildId);
-    const obj4 = importDefault(dependencyMap[13]);
+    const obj4 = importDefault(686);
   }
 }
 function puntFromSelectedChannelIfInaccessible(guildId) {
-  const channelId = channelId.getChannelId(guildId);
+  channelId = channelId.getChannelId(guildId);
   if (null == channelId) {
     if (!closure_7.can(constants.VIEW_CHANNEL, tmp2)) {
-      const defaultChannel = defaultChannel.getDefaultChannel(guildId);
+      defaultChannel = defaultChannel.getDefaultChannel(guildId);
       if (null != defaultChannel) {
-        arg1(dependencyMap[14]).transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
-        const obj = arg1(dependencyMap[14]);
+        require(1198) /* shouldNavigate */.transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
+        const obj = require(1198) /* shouldNavigate */;
       }
     }
   }
 }
 function updateImpersonatedChannels(guildId, items1, items2) {
   const set = new Set(optedInChannels.getOptedInChannels(guildId));
-  items1 = set;
   const item = items1.forEach((arg0) => set.add(arg0));
   const item1 = items2.forEach((arg0) => set.delete(arg0));
-  updateImpersonating(guildId, { type: items1(dependencyMap[12]).ImpersonateType.NEW_MEMBER, optInChannels: set });
+  updateImpersonating(guildId, { type: set(1915).ImpersonateType.NEW_MEMBER, optInChannels: set });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-({ Permissions: closure_11, Routes: closure_12, AnalyticEvents: closure_13 } = arg1(dependencyMap[8]));
-const isStaticChannelRoute = arg1(dependencyMap[9]).isStaticChannelRoute;
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/impersonate/ImpersonateActionCreators.tsx");
+({ Permissions: closure_11, Routes: closure_12, AnalyticEvents: closure_13 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/impersonate/ImpersonateActionCreators.tsx");
 
 export const startImpersonating = function startImpersonating(guildId, data) {
-  let obj = importDefault(dependencyMap[10]);
+  let obj = importDefault(675);
   obj = { num_roles: Object.keys(data.roles).length };
-  const merged = Object.assign(data(dependencyMap[11]).collectGuildAnalyticsMetadata(guildId));
-  obj["is_viewing_as_member"] = data.type === data(dependencyMap[12]).ImpersonateType.NEW_MEMBER;
+  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guildId));
+  obj["is_viewing_as_member"] = data.type === require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
   obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-  const obj3 = data(dependencyMap[11]);
+  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
   obj = { type: "IMPERSONATE_UPDATE", guildId, data };
-  importDefault(dependencyMap[13]).dispatch(obj);
+  importDefault(686).dispatch(obj);
   puntFromSelectedChannelIfInaccessible(guildId);
 };
 export { updateImpersonating };
 export const stopImpersonating = function stopImpersonating(guildId) {
-  let obj = importDefault(dependencyMap[13]);
+  let obj = importDefault(686);
   obj = { type: "IMPERSONATE_STOP", guildId };
   obj.dispatch(obj);
 };
 export { updateImpersonatedChannels };
 export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId, arg1) {
   let done;
-  function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, arg1) {
-    const items = [...closure_4.getSelectableChannelIds(guildId), ...closure_4.getVocalChannelIds(guildId)];
+  (function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, arg1) {
+    let closure_0 = guildId;
+    let items = [...outer1_4.getSelectableChannelIds(guildId), ...outer1_4.getVocalChannelIds(guildId)];
     let closure_2 = Array.from(arg1);
-    const result = closure_4.addConditionalChangeListener(() => {
-      const selfMember = selfMember.getSelfMember(arg0);
-      const arg0 = selfMember;
+    const result = outer1_4.addConditionalChangeListener(() => {
+      selfMember = outer2_5.getSelfMember(selfMember);
       if (null == selfMember) {
         return false;
       } else if (closure_2.some((arg0) => {
@@ -172,16 +176,16 @@ export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId,
         return true;
       } else {
         const items = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(store.getSelectableChannelIds(arg0), 0);
-        arraySpreadResult = HermesBuiltin.arraySpread(store.getVocalChannelIds(arg0), arraySpreadResult);
-        const found = items.filter((arg0) => !closure_1.includes(arg0));
+        let arraySpreadResult = HermesBuiltin.arraySpread(outer2_4.getSelectableChannelIds(selfMember), 0);
+        arraySpreadResult = HermesBuiltin.arraySpread(outer2_4.getVocalChannelIds(selfMember), arraySpreadResult);
+        const found = items.filter((arg0) => !outer1_1.includes(arg0));
         if (found.length > 0) {
-          callback(arg0, found, []);
+          outer2_19(selfMember, found, []);
         }
         return false;
       }
     });
-  }(guildId, arg1);
+  })(guildId, arg1);
   let obj = {};
   const tmp2 = _createForOfIteratorHelperLoose(manyRoles.getManyRoles(guildId, arg1));
   let iter = tmp2();
@@ -194,10 +198,10 @@ export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId,
       done = iter2.done;
     } while (!done);
   }
-  obj = { type: arg1(dependencyMap[12]).ImpersonateType.NEW_MEMBER, roles: obj };
+  obj = { type: require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
   updateImpersonating(guildId, obj);
 };
 export const updateImpersonatedData = function updateImpersonatedData(id, arg1) {
   const merged = Object.assign(arg1);
-  updateImpersonating(id, { type: arg1(dependencyMap[12]).ImpersonateType.NEW_MEMBER });
+  updateImpersonating(id, { type: require(1915) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
 };

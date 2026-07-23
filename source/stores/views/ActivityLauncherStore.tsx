@@ -1,9 +1,21 @@
-// Module ID: 10433
-// Function ID: 80467
+// Module ID: 10443
+// Function ID: 80517
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 10444, 4810, 653, 4015, 686, 566, 2]
 
-// Module 10433 (_isNativeReflectConstruct)
+// Module 10443 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,51 +25,51 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function startActivityLaunchTimeout(applicationId, JOIN, closure_14) {
-  JOIN = applicationId;
-  const importDefault = JOIN;
-  if (null != closure_13[applicationId]) {
-    closure_13[applicationId].stop();
-    const obj = closure_13[applicationId];
+function startActivityLaunchTimeout(applicationId, JOIN, c14) {
+  const _require = applicationId;
+  let closure_1 = JOIN;
+  if (null != dependencyMap2[applicationId]) {
+    dependencyMap2[applicationId].stop();
+    let obj = dependencyMap2[applicationId];
   }
-  const timeout = new JOIN(dependencyMap[8]).Timeout();
-  timeout.start(closure_14, () => {
-    let obj = arg1(closure_2[9]);
-    obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId: arg0, activityType: arg1 };
+  const timeout = new _require(4015).Timeout();
+  timeout.start(c14, () => {
+    let obj = JOIN(outer1_2[9]);
+    obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId: closure_0, activityType: JOIN };
     return obj.dispatch(obj);
   });
-  closure_13[applicationId] = timeout;
+  dependencyMap2[applicationId] = timeout;
 }
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
   ({ applicationId, remotePartyId } = type);
   if (COMPLETE === constants.COMPLETE) {
-    if (null != closure_12[applicationId]) {
-      delete r0[r4];
+    if (null != dependencyMap[applicationId]) {
+      delete tmp[tmp4];
     }
-    if (null != closure_13[applicationId]) {
-      closure_13[applicationId].stop();
-      delete r1[r2];
-      const obj3 = closure_13[applicationId];
+    if (null != dependencyMap2[applicationId]) {
+      dependencyMap2[applicationId].stop();
+      delete tmp2[tmp3];
+      const obj3 = dependencyMap2[applicationId];
     }
   } else {
-    let obj = closure_12[applicationId];
+    let obj = dependencyMap[applicationId];
     if (null == obj) {
       obj = {};
     }
     obj = { state: COMPLETE, remotePartyId };
     obj[JOIN] = obj;
-    closure_12[applicationId] = obj;
+    dependencyMap[applicationId] = obj;
     if (COMPLETE === constants.FAILED) {
-      startActivityLaunchTimeout(applicationId, JOIN, closure_14);
+      startActivityLaunchTimeout(applicationId, JOIN, c14);
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
       if (null == remotePartyId) {
-        num = closure_14;
+        num = c14;
       }
       startActivityLaunchTimeout(applicationId, JOIN, num);
-      const tmp6 = startActivityLaunchTimeout;
+      const tmp10 = startActivityLaunchTimeout;
     }
   }
 }
@@ -79,20 +91,20 @@ function handleActivityUpdate() {
     [tmp, tmp2] = arg0;
     const obj = { applicationId: tmp };
     let remotePartyId;
-    if (null != tmp2[closure_11.JOIN]) {
+    if (null != tmp2[outer1_11.JOIN]) {
       remotePartyId = tmp3.remotePartyId;
     }
     obj.remotePartyId = remotePartyId;
     return obj;
   });
   const found = mapped.filter((remotePartyId) => null != remotePartyId.remotePartyId);
-  let closure_0 = false;
+  let c0 = false;
   const item = found.forEach((arg0) => {
     let applicationId;
     let remotePartyId;
     ({ applicationId, remotePartyId } = arg0);
-    const applicationActivity = applicationActivity.getApplicationActivity(applicationId);
-    const applicationActivity1 = applicationActivity2.getApplicationActivity(applicationId);
+    const applicationActivity = outer1_8.getApplicationActivity(applicationId);
+    const applicationActivity1 = outer1_9.getApplicationActivity(applicationId);
     let id;
     if (null != applicationActivity) {
       const party = applicationActivity.party;
@@ -113,36 +125,29 @@ function handleActivityUpdate() {
     }
     if (!tmp4) {
       const obj = { applicationId, remotePartyId };
-      callback(constants.COMPLETE, constants2.JOIN, obj);
-      let closure_0 = true;
+      outer1_17(outer1_10.COMPLETE, outer1_11.JOIN, obj);
+      let c0 = true;
     }
   });
-  return closure_0;
+  return c0;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ ActivityActionStates: closure_10, ActivityActionTypes: closure_11 } = arg1(dependencyMap[7]));
+({ ActivityActionStates: closure_10, ActivityActionTypes: closure_11 } = ME);
 let closure_12 = {};
 let closure_13 = {};
-let closure_14 = 120000;
-let tmp3 = (Store) => {
+let c14 = 120000;
+let tmp3 = ((Store) => {
   class ActivityLauncherStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ActivityLauncherStore);
-      obj = closure_6(ActivityLauncherStore);
-      tmp2 = closure_5;
-      if (closure_15()) {
+      tmp = outer1_3(this, ActivityLauncherStore);
+      obj = outer1_6(ActivityLauncherStore);
+      tmp2 = outer1_5;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -151,21 +156,20 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ActivityLauncherStore;
   callback2(ActivityLauncherStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const items = [closure_8, closure_9];
-      this.syncWith(items, closure_18);
+      const items = [outer1_8, outer1_9];
+      this.syncWith(items, outer1_18);
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "getState",
     value(arg0, arg1) {
       let state;
-      if (null != closure_12[arg0]) {
+      if (null != outer1_12[arg0]) {
         if (null != tmp[arg1]) {
           state = tmp4.state;
         }
@@ -177,17 +181,17 @@ let tmp3 = (Store) => {
   obj = {
     key: "getStates",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[2] = obj;
   return callback(ActivityLauncherStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ActivityLauncherStore";
-tmp3 = new tmp3(importDefault(dependencyMap[9]), {
+tmp3 = new tmp3(require("dispatcher"), {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(activityLauncherStates) {
+    const obj = {};
     const merged = Object.assign(activityLauncherStates.activityLauncherStates);
-    let closure_12 = {};
   },
   ACTIVITY_JOIN_LOADING(type) {
     return handleActivityStateChanged(constants.LOADING, constants2.JOIN, type);
@@ -198,35 +202,13 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
   ACTIVITY_JOIN: handleActivityComplete,
   EMBEDDED_ACTIVITY_CLOSE: handleActivityComplete,
   ACTIVITY_LAUNCH_FAIL: function handleActivityLaunchFail(arg0) {
-    if (null == closure_12[arg0.applicationId]) {
+    if (null == dependencyMap[arg0.applicationId]) {
       return false;
     } else {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   }
 });
-const obj = {
-  OVERLAY_INITIALIZE: function handleOverlayInitialize(activityLauncherStates) {
-    const merged = Object.assign(activityLauncherStates.activityLauncherStates);
-    let closure_12 = {};
-  },
-  ACTIVITY_JOIN_LOADING(type) {
-    return handleActivityStateChanged(constants.LOADING, constants2.JOIN, type);
-  },
-  ACTIVITY_JOIN_FAILED(type) {
-    return handleActivityStateChanged(constants.FAILED, constants2.JOIN, type);
-  },
-  ACTIVITY_JOIN: handleActivityComplete,
-  EMBEDDED_ACTIVITY_CLOSE: handleActivityComplete,
-  ACTIVITY_LAUNCH_FAIL: function handleActivityLaunchFail(arg0) {
-    if (null == closure_12[arg0.applicationId]) {
-      return false;
-    } else {
-      delete r0[r1];
-    }
-  }
-};
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("stores/views/ActivityLauncherStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/views/ActivityLauncherStore.tsx");
 
 export default tmp3;

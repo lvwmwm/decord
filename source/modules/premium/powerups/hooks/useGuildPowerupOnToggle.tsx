@@ -1,36 +1,39 @@
-// Module ID: 11559
-// Function ID: 89948
+// Module ID: 11569
+// Function ID: 89997
 // Name: useGuildPowerupOnToggle
-// Dependencies: []
+// Dependencies: [57, 31, 11520, 2]
 // Exports: default
 
-// Module 11559 (useGuildPowerupOnToggle)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupOnToggle.tsx");
+// Module 11569 (useGuildPowerupOnToggle)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("guildPowerupsAckNotification").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupOnToggle.tsx");
 
 export default function useGuildPowerupOnToggle(arg0, arg1) {
+  let _slicedToArray;
   let tmp2;
-  arg1 = arg0;
-  const dependencyMap = arg1;
-  [tmp2, closure_2] = callback(React.useState(false), 2);
-  const tmp3 = callback(React.useState(undefined), 2);
-  const React = tmp3[1];
-  const tmp = callback(React.useState(false), 2);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  [tmp2, _slicedToArray] = callback(React.useState(false), 2);
+  let tmp3 = callback(React.useState(undefined), 2);
+  React = tmp3[1];
+  let tmp = callback(React.useState(false), 2);
   const items = [arg0, arg1];
   return {
     isLoading: tmp2,
     error: tmp3[0],
     onToggle: React.useCallback((arg0) => {
-      if (null == arg1) {
+      if (null == skuId) {
         return Promise.resolve();
       } else {
-        const tmp11 = arg0(arg1[2]);
-        callback(true);
-        callback2(undefined);
+        const tmp11 = callback(skuId[2]);
+        callback2(true);
+        callback3(undefined);
         const tmp = arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild;
-        const tmpResult = arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild(arg0, arg1.skuId);
-        return arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild(arg0, arg1.skuId).catch((body) => {
+        const tmpResult = arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild(callback, skuId.skuId);
+        return arg0 ? tmp11.enablePowerupForGuild : tmp11.disablePowerupForGuild(callback, skuId.skuId).catch((body) => {
           body = body.body;
           let message;
           if (null != body) {
@@ -40,10 +43,10 @@ export default function useGuildPowerupOnToggle(arg0, arg1) {
           if (null != message) {
             tmp3 = message;
           }
-          closure_3(tmp3);
+          outer1_3(tmp3);
           throw body;
         }).finally(() => {
-          callback(false);
+          outer1_2(false);
         });
       }
     }, items)

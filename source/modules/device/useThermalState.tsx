@@ -1,10 +1,10 @@
-// Module ID: 10516
-// Function ID: 82119
+// Module ID: 10526
+// Function ID: 82169
 // Name: _getThermalState
-// Dependencies: []
+// Dependencies: [477, 10511, 2]
 // Exports: default, getThermalState
 
-// Module 10516 (_getThermalState)
+// Module 10526 (_getThermalState)
 function _getThermalState(rawThermalState) {
   if (null == rawThermalState) {
     return obj.UNHANDLED;
@@ -12,7 +12,7 @@ function _getThermalState(rawThermalState) {
     if (obj2.isIOS()) {
       return rawThermalState;
     } else {
-      const obj = require(dependencyMap[0]);
+      obj = require(477) /* set */;
       if (obj.isAndroid()) {
         if (obj.NONE === rawThermalState) {
           return obj.NOMINAL;
@@ -39,19 +39,18 @@ function _getThermalState(rawThermalState) {
         return obj.UNHANDLED;
       }
     }
-    const obj2 = require(dependencyMap[0]);
+    obj2 = require(477) /* set */;
   }
 }
 let obj = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };
 obj = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/device/useThermalState.tsx");
+const result = require("set").fileFinishedImporting("modules/device/useThermalState.tsx");
 
 export default function useThermalState() {
-  return _getThermalState(importDefault(dependencyMap[1]).useRawThermalState());
+  return _getThermalState(importDefault(10511).useRawThermalState());
 };
 export const ThermalStates = obj;
 export const AndroidThermalStates = obj;
 export const getThermalState = function getThermalState() {
-  return _getThermalState(importDefault(dependencyMap[1]).getRawThermalState());
+  return _getThermalState(importDefault(10511).getRawThermalState());
 };

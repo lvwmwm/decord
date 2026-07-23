@@ -1,31 +1,31 @@
-// Module ID: 9881
-// Function ID: 76531
+// Module ID: 9888
+// Function ID: 76572
 // Name: useAutocompleter
-// Dependencies: []
+// Dependencies: [57, 31, 5450, 7094, 2]
 // Exports: default
 
-// Module 9881 (useAutocompleter)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/share/useAutocompleter.tsx");
+// Module 9888 (useAutocompleter)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("useInitialValue").fileFinishedImporting("modules/share/useAutocompleter.tsx");
 
 export default function useAutocompleter(searchOptions) {
   searchOptions = searchOptions.searchOptions;
-  const importDefault = searchOptions;
-  const tmp = callback(React.useState({ results: [], query: "" }), 2);
-  let closure_1 = tmp[1];
-  const tmp2 = importDefault(closure_1[2])(() => {
-    let tmp = searchOptions(closure_1[3]);
+  let tmp = callback(React.useState({ results: [], query: "" }), 2);
+  const dependencyMap = tmp[1];
+  const tmp2 = searchOptions(5450)(() => {
+    let tmp = searchOptions(table[3]);
     tmp = new tmp((results, query) => {
-      callback({ results, query });
+      outer1_1({ results, query });
     });
     tmp.setLimit(20);
     tmp.search("");
     return tmp;
   });
-  const callback = tmp2;
+  callback = tmp2;
   const items = [tmp2];
-  const effect = React.useEffect(() => () => closure_2.destroy(), items);
+  const effect = React.useEffect(() => () => outer1_2.destroy(), items);
   const items1 = [tmp2, searchOptions];
   const effect1 = React.useEffect(() => {
     let tmp = null != searchOptions;
@@ -45,9 +45,10 @@ export default function useAutocompleter(searchOptions) {
       ({ query, resultTypes } = arg0);
       let tmp = null != tmp2.resultTypes;
       if (tmp) {
-        tmp = function isArrayEqualSet(resultTypes, resultTypes2) {
-          return resultTypes.length === resultTypes2.size && resultTypes.every((arg0) => arg1.has(arg0));
-        }(resultTypes, tmp2.resultTypes);
+        tmp = (function isArrayEqualSet(resultTypes, resultTypes2) {
+          let closure_0 = resultTypes2;
+          return resultTypes.length === resultTypes2.size && resultTypes.every((arg0) => set.has(arg0));
+        })(resultTypes, tmp2.resultTypes);
       }
       if (!tmp) {
         tmp2.setResultTypes(resultTypes);

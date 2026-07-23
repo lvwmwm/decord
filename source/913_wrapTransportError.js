@@ -1,103 +1,113 @@
 // Module ID: 913
-// Function ID: 10004
+// Function ID: 10005
 // Name: wrapTransportError
-// Dependencies: []
+// Dependencies: [5, 77, 799, 912, 914, 915, 825, 917, 842, 916, 921, 923]
 // Exports: wrapTransportError, wrapTransportOnClose, wrapTransportOnMessage, wrapTransportSend
 
 // Module 913 (wrapTransportError)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
+import asyncGeneratorStep from "weakMap";
+import _defineProperty from "_defineProperty";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const wrapTransportError = function wrapTransportError(onerror) {
   if (onerror.onerror) {
-    require(dependencyMap[2]).fill(onerror, "onerror", (arg0) => function(error) {
-      error(closure_1[11]).captureError(error, "transport");
-      error.call(this, error);
+    require(799) /* addNonEnumerableProperty */.fill(onerror, "onerror", (arg0) => {
+      let closure_0 = arg0;
+      return function(error) {
+        outer2_0(outer2_1[11]).captureError(error, "transport");
+        callback.call(this, error);
+      };
     });
-    const obj = require(dependencyMap[2]);
+    const obj = require(799) /* addNonEnumerableProperty */;
   }
 };
 export const wrapTransportOnClose = function wrapTransportOnClose(onclose) {
   if (onclose.onclose) {
-    require(dependencyMap[2]).fill(onclose, "onclose", (arg0) => function() {
-      const result = arg0(closure_1[10]).cleanupPendingSpansForTransport(this);
-      const obj = arg0(closure_1[10]);
-      const result1 = arg0(closure_1[5]).cleanupSessionDataForTransport(this);
-      const length = arguments.length;
-      const array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      const call = arg0.call;
-      const items = [this];
-      return call.apply(arg0, items.concat(array));
+    require(799) /* addNonEnumerableProperty */.fill(onclose, "onclose", (arg0) => {
+      let closure_0 = arg0;
+      return function() {
+        const result = outer2_0(outer2_1[10]).cleanupPendingSpansForTransport(this);
+        const obj = outer2_0(outer2_1[10]);
+        const result1 = outer2_0(outer2_1[5]).cleanupSessionDataForTransport(this);
+        const length = arguments.length;
+        const array = new Array(length);
+        for (let num = 0; num < length; num = num + 1) {
+          array[num] = arguments[num];
+        }
+        const call = closure_0.call;
+        const items = [this];
+        return call.apply(closure_0, items.concat(array));
+      };
     });
-    const obj = require(dependencyMap[2]);
+    let obj = require(799) /* addNonEnumerableProperty */;
   }
 };
 export const wrapTransportOnMessage = function wrapTransportOnMessage(onmessage, closure_0) {
-  const require = closure_0;
+  const _require = closure_0;
   if (onmessage.onmessage) {
-    require(dependencyMap[2]).fill(onmessage, "onmessage", (arg0) => {
-      const arg1 = arg0;
+    _require(799).fill(onmessage, "onmessage", (arg0) => {
+      let closure_0 = arg0;
       return function(first, extra) {
         let self = this;
+        const callback = first;
+        let closure_1 = extra;
         self = this;
         if (obj.isJsonRpcRequest(first)) {
-          const tmp16 = "initialize" === tmp.method;
-          if (tmp16) {
-            const result = first(extra[4]).extractSessionDataFromInitializeRequest(first);
-            const obj4 = first(extra[4]);
-            const result1 = first(extra[5]).storeSessionDataForTransport(self, result);
-            const obj5 = first(extra[5]);
+          let closure_4 = tmp16;
+          if ("initialize" === tmp.method) {
+            const result = callback(outer2_1[4]).extractSessionDataFromInitializeRequest(first);
+            let closure_3 = result;
+            let obj4 = callback(outer2_1[4]);
+            const result1 = callback(outer2_1[5]).storeSessionDataForTransport(self, result);
+            let obj5 = callback(outer2_1[5]);
           }
-          const isolationScope = first(extra[6]).getIsolationScope();
-          const obj6 = first(extra[6]);
+          const isolationScope = callback(outer2_1[6]).getIsolationScope();
+          const obj6 = callback(outer2_1[6]);
           const cloneResult = isolationScope.clone();
-          first(extra[6]).withIsolationScope(cloneResult, (self) => {
-            const mcpServerSpanConfig = self(arg1[7]).buildMcpServerSpanConfig(self, self, arg1, self);
-            const obj = self(arg1[7]);
-            const startInactiveSpanResult = self(arg1[8]).startInactiveSpan(mcpServerSpanConfig);
-            let tmp2 = tmp16;
-            if (tmp16) {
-              tmp2 = result;
+          callback(outer2_1[6]).withIsolationScope(cloneResult, () => {
+            const mcpServerSpanConfig = lib(outer3_1[7]).buildMcpServerSpanConfig(lib, self, closure_1, lib);
+            const obj = lib(outer3_1[7]);
+            const startInactiveSpanResult = lib(outer3_1[8]).startInactiveSpan(mcpServerSpanConfig);
+            let tmp2 = closure_4;
+            if (closure_4) {
+              tmp2 = closure_3;
             }
             if (tmp2) {
-              let protocolVersion = result.protocolVersion;
-              const clientAttributesFromInfo = self(arg1[4]).buildClientAttributesFromInfo(result.clientInfo);
+              let protocolVersion = closure_3.protocolVersion;
+              const clientAttributesFromInfo = lib(outer3_1[4]).buildClientAttributesFromInfo(closure_3.clientInfo);
               if (protocolVersion) {
-                protocolVersion = result({}, self(arg1[9]).MCP_PROTOCOL_VERSION_ATTRIBUTE, result.protocolVersion);
+                protocolVersion = outer3_3({}, lib(outer3_1[9]).MCP_PROTOCOL_VERSION_ATTRIBUTE, closure_3.protocolVersion);
               }
               startInactiveSpanResult.setAttributes(Object.assign({}, clientAttributesFromInfo, protocolVersion));
-              const obj4 = self(arg1[4]);
+              const obj4 = lib(outer3_1[4]);
             }
-            const obj2 = self(arg1[8]);
-            self(arg1[10]).storeSpanForRequest(self, self.id, startInactiveSpanResult, self.method);
-            const obj5 = self(arg1[10]);
-            return self(arg1[8]).withActiveSpan(startInactiveSpanResult, () => callback.call(closure_2, callback, closure_1));
+            const obj2 = lib(outer3_1[8]);
+            lib(outer3_1[10]).storeSpanForRequest(self, lib.id, startInactiveSpanResult, lib.method);
+            const obj5 = lib(outer3_1[10]);
+            return lib(outer3_1[8]).withActiveSpan(startInactiveSpanResult, () => callback.call(outer1_2, outer1_0, outer1_1));
           });
-          const obj8 = first(extra[6]);
+          const obj8 = callback(outer2_1[6]);
         } else {
           if (obj2.isJsonRpcNotification(tmp)) {
-            const obj3 = first(extra[7]);
-            let mcpNotificationSpan = obj3.createMcpNotificationSpan(tmp, self, extra, first, () => arg0.call(self, arg0, arg1));
+            const obj3 = callback(outer2_1[7]);
+            let mcpNotificationSpan = obj3.createMcpNotificationSpan(tmp, self, extra, callback, () => lib.call(self, lib, closure_1));
           } else {
-            mcpNotificationSpan = first.call(self, tmp, extra);
+            mcpNotificationSpan = callback.call(self, tmp, extra);
           }
           return mcpNotificationSpan;
         }
       };
     });
-    const obj = require(dependencyMap[2]);
+    let obj = _require(799);
   }
 };
 export const wrapTransportSend = function wrapTransportSend(send, closure_0) {
-  const require = closure_0;
+  const _require = closure_0;
   if (send.send) {
-    require(dependencyMap[2]).fill(send, "send", (arg0) => {
-      const arg1 = arg0;
-      return callback(async function() {
+    _require(799).fill(send, "send", (arg0) => {
+      let closure_0 = arg0;
+      return outer1_2(async function() {
         const self = this;
         if (obj) {
           return obj.resume();
@@ -112,10 +122,10 @@ export const wrapTransportSend = function wrapTransportSend(send, closure_0) {
           const first = array[0];
           if (obj2.isJsonRpcNotification(first)) {
             let tmp11Result = tmp11(tmp12[7]);
-            return tmp11Result.createMcpOutgoingNotificationSpan(tmp8, self, self, () => {
-              const call = self.call;
+            return tmp11Result.createMcpOutgoingNotificationSpan(tmp8, self, callback, () => {
+              const call = outer2_0.call;
               const items = [self];
-              return call.apply(self, items.concat(array));
+              return call.apply(outer2_0, items.concat(array));
             });
           } else {
             tmp11Result = tmp11(tmp12[3]);
@@ -133,8 +143,8 @@ export const wrapTransportSend = function wrapTransportSend(send, closure_0) {
                               error = new Error(tmp17.message);
                               const _HermesInternal = HermesInternal;
                               error.name = "JsonRpcError_" + tmp17.code;
-                              self(array[11]).captureError(error, "protocol");
-                              const obj4 = self(array[11]);
+                              callback(outer3_1[11]).captureError(error, "protocol");
+                              const obj4 = callback(outer3_1[11]);
                             }
                           }
                         }
@@ -142,25 +152,25 @@ export const wrapTransportSend = function wrapTransportSend(send, closure_0) {
                     }
                   }
                   while (true) {
-                    let tmp31 = self;
-                    let tmp32 = array;
-                    let obj5 = self(array[3]);
+                    let tmp31 = callback;
+                    let tmp32 = outer3_1;
+                    let obj5 = callback(outer3_1[3]);
                     let tmp33 = first;
                     if (!obj5.isValidContentItem(tmp8.result)) {
                       break;
                     } else {
                       let tmp34 = first;
                       if (tmp8.result.protocolVersion) {
-                        let tmp36 = self;
-                        let tmp37 = array;
+                        let tmp36 = callback;
+                        let tmp37 = outer3_1;
                         let num8 = 4;
-                        let obj6 = self(array[4]);
+                        let obj6 = callback(outer3_1[4]);
                         let tmp38 = first;
                         let num9 = 5;
                         let result = obj6.extractSessionDataFromInitializeResponse(tmp8.result);
-                        let obj7 = self(array[5]);
+                        let obj7 = callback(outer3_1[5]);
                         let result1 = obj7.updateSessionDataForTransport(self, result);
-                        // break
+                        break;
                       } else {
                         let tmp35 = first;
                         if (!tmp8.result.serverInfo) {
@@ -169,31 +179,31 @@ export const wrapTransportSend = function wrapTransportSend(send, closure_0) {
                       }
                       break;
                     }
-                    let tmp42 = self;
-                    let tmp43 = array;
+                    let tmp42 = callback;
+                    let tmp43 = outer3_1;
                     let num10 = 10;
-                    let obj8 = self(array[10]);
+                    let obj8 = callback(outer3_1[10]);
                     let tmp44 = first;
-                    let tmp45 = self;
+                    let tmp45 = callback;
                     let tmp46 = obj8;
                     let tmp47 = self;
-                    let result2 = obj8.completeSpanWithResults(self, tmp8.id, tmp8.result, self);
+                    let result2 = obj8.completeSpanWithResults(self, tmp8.id, tmp8.result, callback);
                     while (true) {
                       let tmp41 = __exception;
-                      // continue
+                      continue;
                     }
                   }
                 }
               }
             }
-            const call = self.call;
-            const items = [self];
-            return call.apply(self, items.concat(array));
+            let call = outer1_0.call;
+            let items = [self];
+            return call.apply(outer1_0, items.concat(array));
           }
-          const obj2 = self(array[3]);
+          obj2 = callback(outer3_1[3]);
         }
       });
     });
-    const obj = require(dependencyMap[2]);
+    const obj = _require(799);
   }
 };

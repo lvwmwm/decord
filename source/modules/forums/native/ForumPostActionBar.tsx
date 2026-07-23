@@ -1,70 +1,70 @@
-// Module ID: 10419
-// Function ID: 80290
+// Module ID: 10429
+// Function ID: 80340
 // Name: ForumPostActionBar
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 31, 27, 3759, 3760, 1348, 653, 33, 4130, 689, 566, 5681, 1450, 9312, 8829, 10430, 4660, 1212, 4082, 4126, 10204, 4074, 2]
 // Exports: default
 
-// Module 10419 (ForumPostActionBar)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import { AnalyticsSections } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 10429 (ForumPostActionBar)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { AnalyticsSections } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ jsx: closure_10, jsxs: closure_11 } = __exportStarResult1);
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWER };
-obj.actionBarContainer = obj;
-obj.actionRow = {};
-obj.reactionRow = {};
-obj.actionButton = { borderRadius: require("__exportStarResult1").radii.xs, backgroundColor: require("__exportStarResult1").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: require("__exportStarResult1").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
-obj.actionButtonsContainer = { justifyContent: "flex-end" };
-obj.lastActionButton = { marginRight: 0 };
-obj.buttonText = { marginLeft: 8 };
-let closure_12 = obj.createStyles(obj);
-const result = __exportStarResult1.fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
+let closure_10;
+let closure_11;
+const require = arg1;
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { overflow: "hidden", paddingHorizontal: 12, paddingVertical: 8, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, marginBottom: -1 };
+_createForOfIteratorHelperLoose.actionBarContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.actionRow = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 };
+_createForOfIteratorHelperLoose.reactionRow = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 };
+let obj1 = { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 8, height: 28, marginRight: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderWidth: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.actionButton = obj1;
+_createForOfIteratorHelperLoose.actionButtonsContainer = { justifyContent: "flex-end" };
+_createForOfIteratorHelperLoose.lastActionButton = { marginRight: 0 };
+_createForOfIteratorHelperLoose.buttonText = { marginLeft: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
 
 export default function ForumPostActionBar(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  let importDefault;
+  let stateFromStores1;
   let items9 = function handleFollow() {
-    const result = channel(closure_2[13]).handleToggleFollowForumPost(channel, stateFromStores1);
+    const result = channel(9312).handleToggleFollowForumPost(channel, stateFromStores1);
   };
-  const tmp = callback3();
-  let obj = arg1(guildId[10]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = channel(566);
   const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channel.parent_id));
-  let obj1 = arg1(guildId[11]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getChannel(channel.parent_id));
+  let obj1 = channel(5681);
   const firstMessage = obj1.useFirstForumPostMessage(channel).firstMessage;
-  let obj2 = arg1(guildId[10]);
+  let obj2 = channel(566);
   const items1 = [closure_7];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => closure_7.hasJoined(channel.id));
-  importDefault = stateFromStores1;
-  const guildId = channel.getGuildId();
-  let obj3 = arg1(guildId[10]);
-  const items2 = [closure_6];
+  stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_7.hasJoined(channel.id));
+  const dependencyMap = channel.getGuildId();
+  let obj3 = channel(566);
+  const items2 = [_isNativeReflectConstruct];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     let isLurkingResult = null != closure_2;
     if (isLurkingResult) {
-      isLurkingResult = lurking.isLurking(closure_2);
+      isLurkingResult = outer1_6.isLurking(closure_2);
     }
     return isLurkingResult;
   });
-  const width = importDefault(guildId[12])().width;
-  let callback = width;
-  const tmp5 = callback(React.useState(0), 2);
-  const React = tmp5[1];
+  const width = stateFromStores1(1450)().width;
+  const tmp5 = width(React.useState(0), 2);
+  React = tmp5[1];
   const items3 = [width];
-  callback = React.useCallback((nativeEvent) => {
+  const callback = React.useCallback((nativeEvent) => {
     callback(width - nativeEvent.nativeEvent.layout.width - 40);
   }, items3);
-  let obj4 = arg1(guildId[14]);
+  let obj4 = channel(8829);
   obj = {};
   const items4 = [tmp.actionBarContainer, obj4.useGradientTop()];
   obj.style = items4;
@@ -72,32 +72,32 @@ export default function ForumPostActionBar(channel) {
   if (tmp9) {
     obj = { style: tmp.reactionRow };
     obj1 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp5[0] };
-    obj.children = callback2(arg1(guildId[15]).ForumPostActionBarReactions, obj1);
-    tmp9 = callback2(View, obj);
+    obj.children = callback(channel(10430).ForumPostActionBarReactions, obj1);
+    tmp9 = callback(View, obj);
   }
   const items5 = [tmp9, ];
   obj2 = { style: items6, onLayout: callback };
-  const items6 = [, ];
+  items6 = [, ];
   ({ actionRow: arr8[0], actionButtonsContainer: arr8[1] } = tmp);
   if (!!stateFromStores2) {
     const items7 = [tmp16, ];
     obj3 = { accessible: true };
-    const intl4 = arg1(guildId[17]).intl;
-    obj3.accessibilityLabel = intl4.string(arg1(guildId[17]).t.WqhZss);
+    const intl4 = channel(1212).intl;
+    obj3.accessibilityLabel = intl4.string(channel(1212).t.WqhZss);
     const items8 = [, ];
     ({ actionButton: arr12[0], lastActionButton: arr12[1] } = tmp);
     obj3.style = items8;
     obj3.onPress = function onPress() {
       const guildId = channel.getGuildId();
       if (null != guildId) {
-        let obj = channel(closure_2[13]);
-        obj = { section: constants.CHANNEL_HEADER };
+        let obj = channel(9312);
+        obj = { section: outer1_9.CHANNEL_HEADER };
         const result = obj.handleCopyLinkForumPost(guildId, channel.id, obj);
       }
     };
     obj4 = { size: "xs" };
-    obj3.children = callback2(arg1(guildId[21]).LinkIcon, obj4);
-    items7[1] = callback2(arg1(guildId[16]).PressableOpacity, obj3);
+    obj3.children = callback(channel(4074).LinkIcon, obj4);
+    items7[1] = callback(channel(4660).PressableOpacity, obj3);
     obj2.children = items7;
     items5[1] = tmp14(tmp15, obj2);
     obj.children = items5;
@@ -105,40 +105,40 @@ export default function ForumPostActionBar(channel) {
   } else {
     const obj5 = { accessible: true };
     let num3 = 17;
-    let intl = arg1(guildId[17]).intl;
+    let intl = channel(1212).intl;
     let Text = intl.string;
-    let t = arg1(guildId[17]).t;
+    let t = channel(1212).t;
     if (stateFromStores1) {
       obj5.accessibilityLabel = Text(t.G3ooHD);
       obj5.style = tmp.actionButton;
       obj5.onPress = items9;
-      intl = callback2;
-      items9 = [callback2(tmp20(tmp21[18]).CheckmarkLargeIcon, {}), ];
-      Text = tmp20(tmp21[19]).Text;
-      const obj6 = {};
+      intl = callback;
+      items9 = [callback(tmp20(4082).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
+      Text = tmp20(4126).Text;
+      const obj6 = { style: null, variant: "text-sm/semibold", color: "text-brand" };
       const items10 = [tmp.buttonText];
       obj6.style = items10;
       const intl3 = tmp20(tmp21[num3]).intl;
-      num3 = intl3.string(tmp20(tmp21[num3]).t.OtF+lC);
+      num3 = intl3.string(tmp20(tmp21[num3]).t["OtF+lC"]);
       obj6.children = num3;
-      t = callback2(Text, obj6);
+      t = callback(Text, obj6);
       items9[1] = t;
       obj5.children = items9;
       let tmp23 = obj5;
     } else {
-      obj5.accessibilityLabel = Text(t.DjZ+6E);
+      obj5.accessibilityLabel = Text(t["DjZ+6E"]);
       obj5.style = tmp.actionButton;
       obj5.onPress = items9;
       const obj7 = { size: "xs" };
-      const items11 = [callback2(tmp20(tmp21[20]).BellIcon, obj7), ];
-      const obj8 = { "Null": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011542551594659, "Null": 1758014435012901800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: -1096315541048896000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.buttonText };
+      const items11 = [callback(tmp20(10204).BellIcon, obj7), ];
+      const obj8 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default" };
       const intl2 = tmp20(tmp21[num3]).intl;
-      obj8.children = intl2.string(tmp20(tmp21[num3]).t.0rQinA);
-      items11[1] = callback2(tmp20(tmp21[19]).Text, obj8);
+      obj8.children = intl2.string(tmp20(tmp21[num3]).t["0rQinA"]);
+      items11[1] = callback(tmp20(4126).Text, obj8);
       obj5.children = items11;
       tmp23 = obj5;
     }
-    closure_11(arg1(guildId[16]).PressableOpacity, tmp23);
+    closure_11(channel(4660).PressableOpacity, tmp23);
     const tmp17 = closure_11;
   }
 };

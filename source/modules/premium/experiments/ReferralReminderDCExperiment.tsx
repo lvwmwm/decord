@@ -1,15 +1,15 @@
-// Module ID: 7737
-// Function ID: 61495
+// Module ID: 7743
+// Function ID: 61532
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 7737 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: true, DateToSystemTimezoneSetter: true, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/experiments/ReferralReminderDCExperiment.tsx");
+// Module 7743 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-02-referral-reminder-dc", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/experiments/ReferralReminderDCExperiment.tsx");
 
 export const ReferralReminderDCExperiment = apexExperiment;
 export const useIsReferralReminderDCExperimentEnabled = function useIsReferralReminderDCExperimentEnabled(location) {

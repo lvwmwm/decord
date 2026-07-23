@@ -1,11 +1,12 @@
 // Module ID: 1729
-// Function ID: 19393
+// Function ID: 19394
 // Name: useEvent
-// Dependencies: []
+// Dependencies: [31, 1687]
 // Exports: useEvent
 
 // Module 1729 (useEvent)
-const useRef = require(dependencyMap[0]).useRef;
+import { useRef } from "result";
+
 
 export const useEvent = function useEvent(pnpm_ReanimatedNativeStackScreenTsx1, closure_4, doDependenciesDiffer) {
   if (arguments.length > 1) {
@@ -14,7 +15,7 @@ export const useEvent = function useEvent(pnpm_ReanimatedNativeStackScreenTsx1, 
     }
     const tmp4 = useRef(null);
     if (null === tmp4.current) {
-      const WorkletEventHandler = require(dependencyMap[1]).WorkletEventHandler;
+      const WorkletEventHandler = require(1687) /* WorkletEventHandlerNative */.WorkletEventHandler;
       const prototype = WorkletEventHandler.prototype;
       let workletEventHandler = new WorkletEventHandler(pnpm_ReanimatedNativeStackScreenTsx1, items);
       let obj = { workletEventHandler };

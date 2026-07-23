@@ -1,26 +1,27 @@
 // Module ID: 168
 // Function ID: 2499
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 99, 100, 155]
 
 // Module 168 (_isNativeReflectConstruct)
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import _classPrivateFieldKey from "_classPrivateFieldKey";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+import closure_6 from "_classPrivateFieldBase";
+import importDefaultResult from "_classPrivateFieldKey";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _classPrivateFieldBase = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _classPrivateFieldBase;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-const importDefaultResult = importDefault(dependencyMap[7]);
 let closure_7 = importDefaultResult("fetchStart");
 let closure_8 = importDefaultResult("requestStart");
 let closure_9 = importDefaultResult("connectStart");
@@ -29,7 +30,7 @@ let closure_11 = importDefaultResult("responseStart");
 let closure_12 = importDefaultResult("responseEnd");
 let closure_13 = importDefaultResult("responseStatus");
 
-export const PerformanceResourceTiming = (PerformanceEntry) => {
+export const PerformanceResourceTiming = ((PerformanceEntry) => {
   class PerformanceResourceTiming {
     constructor(arg0) {
       self = this;
@@ -37,95 +38,96 @@ export const PerformanceResourceTiming = (PerformanceEntry) => {
       obj = { name: PerformanceEntry.name, entryType: "resource", startTime: PerformanceEntry.startTime, duration: PerformanceEntry.duration };
       items = [];
       items[0] = obj;
-      obj2 = closure_3(PerformanceResourceTiming);
-      tmp2 = closure_2;
-      if (closure_14()) {
+      obj2 = outer1_3(PerformanceResourceTiming);
+      tmp2 = outer1_2;
+      if (outer1_14()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj2, items, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj2, items, outer1_3(self).constructor);
       } else {
         constructResult = obj2.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      definePropertyResult = Object.defineProperty(tmp2Result, closure_7, { writable: true, value: undefined });
-      definePropertyResult1 = Object.defineProperty(tmp2Result, closure_8, { writable: true, value: undefined });
-      definePropertyResult2 = Object.defineProperty(tmp2Result, closure_9, { writable: true, value: undefined });
-      definePropertyResult3 = Object.defineProperty(tmp2Result, closure_10, { writable: true, value: undefined });
-      definePropertyResult4 = Object.defineProperty(tmp2Result, closure_11, { writable: true, value: undefined });
-      definePropertyResult5 = Object.defineProperty(tmp2Result, closure_12, { writable: true, value: undefined });
-      definePropertyResult6 = Object.defineProperty(tmp2Result, closure_13, { writable: true, value: undefined });
-      ({ fetchStart: closure_6(undefined, tmp6, closure_7)[closure_7], requestStart: closure_6(undefined, tmp6, closure_8)[closure_8], connectStart: closure_6(undefined, tmp6, closure_9)[closure_9], connectEnd: closure_6(undefined, tmp6, closure_10)[closure_10], responseStart: closure_6(undefined, tmp6, closure_11)[closure_11], responseEnd: closure_6(undefined, tmp6, closure_12)[closure_12], responseStatus: closure_6(undefined, tmp6, closure_13)[closure_13] } = PerformanceEntry);
+      definePropertyResult = Object.defineProperty(tmp2Result, outer1_7, { writable: true, value: undefined });
+      definePropertyResult1 = Object.defineProperty(tmp2Result, outer1_8, { writable: true, value: undefined });
+      definePropertyResult2 = Object.defineProperty(tmp2Result, outer1_9, { writable: true, value: undefined });
+      definePropertyResult3 = Object.defineProperty(tmp2Result, outer1_10, { writable: true, value: undefined });
+      definePropertyResult4 = Object.defineProperty(tmp2Result, outer1_11, { writable: true, value: undefined });
+      definePropertyResult5 = Object.defineProperty(tmp2Result, outer1_12, { writable: true, value: undefined });
+      definePropertyResult6 = Object.defineProperty(tmp2Result, outer1_13, { writable: true, value: undefined });
+      ({ fetchStart: outer1_6(undefined, tmp6, outer1_7)[outer1_7], requestStart: outer1_6(undefined, tmp6, outer1_8)[outer1_8], connectStart: outer1_6(undefined, tmp6, outer1_9)[outer1_9], connectEnd: outer1_6(undefined, tmp6, outer1_10)[outer1_10], responseStart: outer1_6(undefined, tmp6, outer1_11)[outer1_11], responseEnd: outer1_6(undefined, tmp6, outer1_12)[outer1_12], responseStatus: outer1_6(undefined, tmp6, outer1_13)[outer1_13] } = PerformanceEntry);
       return tmp2Result;
     }
   }
-  let closure_0 = PerformanceResourceTiming;
   callback2(PerformanceResourceTiming, PerformanceEntry);
   let obj = {
     key: "fetchStart",
     get() {
-      return callback2(this, closure_7)[closure_7];
+      return outer1_6(this, outer1_7)[outer1_7];
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "requestStart",
     get() {
-      return callback2(this, closure_8)[closure_8];
+      return outer1_6(this, outer1_8)[outer1_8];
     }
   };
   items[1] = obj;
   obj = {
     key: "connectStart",
     get() {
-      return callback2(this, closure_9)[closure_9];
+      return outer1_6(this, outer1_9)[outer1_9];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "connectEnd",
     get() {
-      return callback2(this, closure_10)[closure_10];
+      return outer1_6(this, outer1_10)[outer1_10];
     }
   };
   items[4] = {
     key: "responseStart",
     get() {
-      return callback2(this, closure_11)[closure_11];
+      return outer1_6(this, outer1_11)[outer1_11];
     }
   };
   items[5] = {
     key: "responseEnd",
     get() {
-      return callback2(this, closure_12)[closure_12];
+      return outer1_6(this, outer1_12)[outer1_12];
     }
   };
   items[6] = {
     key: "responseStatus",
     get() {
-      return callback2(this, closure_13)[closure_13];
+      return outer1_6(this, outer1_13)[outer1_13];
     }
   };
   items[7] = {
     key: "toJSON",
     value: function toJSON() {
-      const obj = { fetchStart: callback2(this, closure_7)[closure_7], requestStart: callback2(this, closure_8)[closure_8], connectStart: callback2(this, closure_9)[closure_9], connectEnd: callback2(this, closure_10)[closure_10], responseStart: callback2(this, closure_11)[closure_11], responseEnd: callback2(this, closure_12)[closure_12], responseStatus: callback2(this, closure_13)[closure_13] };
-      return Object.assign({}, function _superPropGet(PerformanceResourceTiming, toJSON, arg2, arg3) {
+      const obj = { fetchStart: outer1_6(this, outer1_7)[outer1_7], requestStart: outer1_6(this, outer1_8)[outer1_8], connectStart: outer1_6(this, outer1_9)[outer1_9], connectEnd: outer1_6(this, outer1_10)[outer1_10], responseStart: outer1_6(this, outer1_11)[outer1_11], responseEnd: outer1_6(this, outer1_12)[outer1_12], responseStatus: outer1_6(this, outer1_13)[outer1_13] };
+      return Object.assign({}, (function _superPropGet(PerformanceResourceTiming, toJSON, arg2, arg3) {
+        let _classPrivateFieldBase = arg2;
         let prototype = PerformanceResourceTiming;
         if (1) {
           prototype = PerformanceResourceTiming.prototype;
         }
-        const tmpResult = closure_4(closure_3(prototype), "toJSON", arg2);
+        const tmpResult = outer2_4(outer2_3(prototype), "toJSON", arg2);
+        let _classPrivateFieldKey = tmpResult;
         let fn = tmpResult;
         if (2) {
           fn = tmpResult;
           if ("function" === typeof tmpResult) {
-            fn = (arg0) => tmpResult.apply(arg2, arg0);
+            fn = (arg0) => tmpResult.apply(_classPrivateFieldBase, arg0);
           }
         }
         return fn;
-      }(PerformanceResourceTiming, "toJSON", this, 3)([]), obj);
+      })(PerformanceResourceTiming, "toJSON", this, 3)([]), obj);
     }
   };
   return callback(PerformanceResourceTiming, items);
-}(arg1(dependencyMap[8]).PerformanceEntry);
+})(require("PerformanceEntry").PerformanceEntry);

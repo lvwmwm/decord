@@ -1,10 +1,12 @@
 // Module ID: 847
-// Function ID: 9455
+// Function ID: 9456
 // Name: mergeScopeData
-// Dependencies: []
+// Dependencies: [65, 823, 825, 796, 833]
 // Exports: applyScopeDataToEvent, getCombinedScopeData
 
 // Module 847 (mergeScopeData)
+import _toConsumableArray from "_toConsumableArray";
+
 function mergeScopeData(sdkProcessingMetadata, extra) {
   let attachments;
   let attributes;
@@ -25,7 +27,7 @@ function mergeScopeData(sdkProcessingMetadata, extra) {
   mergeAndOverwriteScopeData(sdkProcessingMetadata, "attributes", attributes);
   mergeAndOverwriteScopeData(sdkProcessingMetadata, "user", user);
   mergeAndOverwriteScopeData(sdkProcessingMetadata, "contexts", contexts);
-  sdkProcessingMetadata.sdkProcessingMetadata = require(dependencyMap[1]).merge(sdkProcessingMetadata.sdkProcessingMetadata, sdkProcessingMetadata, 2);
+  sdkProcessingMetadata.sdkProcessingMetadata = require(823) /* merge */.merge(sdkProcessingMetadata.sdkProcessingMetadata, sdkProcessingMetadata, 2);
   if (level) {
     sdkProcessingMetadata.level = level;
   }
@@ -37,30 +39,29 @@ function mergeScopeData(sdkProcessingMetadata, extra) {
   }
   if (breadcrumbs.length) {
     const items = [];
-    sdkProcessingMetadata.breadcrumbs = items.concat(callback(sdkProcessingMetadata.breadcrumbs), callback(breadcrumbs));
-    const tmp7 = callback(sdkProcessingMetadata.breadcrumbs);
+    sdkProcessingMetadata.breadcrumbs = items.concat(_toConsumableArray(sdkProcessingMetadata.breadcrumbs), _toConsumableArray(breadcrumbs));
+    const tmp7 = _toConsumableArray(sdkProcessingMetadata.breadcrumbs);
   }
   if (fingerprint.length) {
     const items1 = [];
-    sdkProcessingMetadata.fingerprint = items1.concat(callback(sdkProcessingMetadata.fingerprint), callback(fingerprint));
-    const tmp10 = callback(sdkProcessingMetadata.fingerprint);
+    sdkProcessingMetadata.fingerprint = items1.concat(_toConsumableArray(sdkProcessingMetadata.fingerprint), _toConsumableArray(fingerprint));
+    const tmp10 = _toConsumableArray(sdkProcessingMetadata.fingerprint);
   }
   if (eventProcessors.length) {
     const items2 = [];
-    sdkProcessingMetadata.eventProcessors = items2.concat(callback(sdkProcessingMetadata.eventProcessors), callback(eventProcessors));
-    const tmp13 = callback(sdkProcessingMetadata.eventProcessors);
+    sdkProcessingMetadata.eventProcessors = items2.concat(_toConsumableArray(sdkProcessingMetadata.eventProcessors), _toConsumableArray(eventProcessors));
+    const tmp13 = _toConsumableArray(sdkProcessingMetadata.eventProcessors);
   }
   if (attachments.length) {
     const items3 = [];
-    sdkProcessingMetadata.attachments = items3.concat(callback(sdkProcessingMetadata.attachments), callback(attachments));
-    const tmp16 = callback(sdkProcessingMetadata.attachments);
+    sdkProcessingMetadata.attachments = items3.concat(_toConsumableArray(sdkProcessingMetadata.attachments), _toConsumableArray(attachments));
+    const tmp16 = _toConsumableArray(sdkProcessingMetadata.attachments);
   }
   sdkProcessingMetadata.propagationContext = Object.assign({}, sdkProcessingMetadata.propagationContext, propagationContext);
 }
 function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  arg0[arg1] = require(dependencyMap[1]).merge(arg0[arg1], arg2, 1);
+  arg0[arg1] = require(823) /* merge */.merge(arg0[arg1], arg2, 1);
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
@@ -94,37 +95,37 @@ export const applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
   if (level) {
     extra.level = level;
   }
-  let tmp = transactionName;
+  let tmp2 = transactionName;
   if (transactionName) {
-    tmp = "transaction" !== extra.type;
+    tmp2 = "transaction" !== extra.type;
   }
-  if (tmp) {
+  if (tmp2) {
     extra.transaction = transactionName;
   }
   if (span) {
     const _Object5 = Object;
-    let obj = { trace: require(dependencyMap[3]).spanToTraceContext(span) };
+    let obj = { trace: require(796) /* convertSpanLinksForEnvelope */.spanToTraceContext(span) };
     extra.contexts = Object.assign(obj, extra.contexts);
     const _Object6 = Object;
     obj = {};
-    const obj2 = require(dependencyMap[3]);
-    obj.dynamicSamplingContext = require(dependencyMap[4]).getDynamicSamplingContextFromSpan(span);
+    const obj2 = require(796) /* convertSpanLinksForEnvelope */;
+    obj.dynamicSamplingContext = require(833) /* getDynamicSamplingContextFromClient */.getDynamicSamplingContextFromSpan(span);
     extra.sdkProcessingMetadata = Object.assign(obj, extra.sdkProcessingMetadata);
-    const obj4 = require(dependencyMap[4]);
-    const rootSpan = require(dependencyMap[3]).getRootSpan(span);
-    const obj5 = require(dependencyMap[3]);
-    const description = require(dependencyMap[3]).spanToJSON(rootSpan).description;
-    let tmp5 = description;
+    const obj4 = require(833) /* getDynamicSamplingContextFromClient */;
+    const rootSpan = require(796) /* convertSpanLinksForEnvelope */.getRootSpan(span);
+    const obj5 = require(796) /* convertSpanLinksForEnvelope */;
+    const description = require(796) /* convertSpanLinksForEnvelope */.spanToJSON(rootSpan).description;
+    let tmp6 = description;
     if (description) {
-      tmp5 = !extra.transaction;
+      tmp6 = !extra.transaction;
     }
-    if (tmp5) {
-      tmp5 = "transaction" === extra.type;
+    if (tmp6) {
+      tmp6 = "transaction" === extra.type;
     }
-    if (tmp5) {
+    if (tmp6) {
       extra.transaction = description;
     }
-    const obj6 = require(dependencyMap[3]);
+    const obj6 = require(796) /* convertSpanLinksForEnvelope */;
   }
   if (extra.fingerprint) {
     const _Array = Array;
@@ -141,25 +142,25 @@ export const applyScopeDataToEvent = function applyScopeDataToEvent(extra) {
       extra.fingerprint = fingerprint3.concat(fingerprint);
     }
     if (!extra.fingerprint.length) {
-      delete r2.fingerprint;
+      delete tmp.fingerprint;
     }
     const items1 = [];
     breadcrumbs = extra.breadcrumbs;
     if (!breadcrumbs) {
       breadcrumbs = [];
     }
-    const combined = items1.concat(callback(breadcrumbs), callback(breadcrumbs));
-    let tmp10;
+    const combined = items1.concat(_toConsumableArray(breadcrumbs), _toConsumableArray(breadcrumbs));
+    let tmp11;
     if (combined.length) {
-      tmp10 = combined;
+      tmp11 = combined;
     }
-    extra.breadcrumbs = tmp10;
+    extra.breadcrumbs = tmp11;
     const _Object7 = Object;
     extra.sdkProcessingMetadata = Object.assign({}, extra.sdkProcessingMetadata, sdkProcessingMetadata);
   }
 };
 export const getCombinedScopeData = function getCombinedScopeData(isolationScope, currentScope) {
-  const globalScope = require(dependencyMap[2]).getGlobalScope();
+  const globalScope = require(825) /* getCurrentScope */.getGlobalScope();
   const scopeData = globalScope.getScopeData();
   if (isolationScope) {
     mergeScopeData(scopeData, isolationScope.getScopeData());

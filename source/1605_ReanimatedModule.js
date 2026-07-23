@@ -1,9 +1,10 @@
 // Module ID: 1605
-// Function ID: 17833
+// Function ID: 17834
 // Name: ReanimatedModule
-// Dependencies: []
+// Dependencies: [27]
 
 // Module 1605 (ReanimatedModule)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 
 export default TurboModuleRegistry.get("ReanimatedModule");

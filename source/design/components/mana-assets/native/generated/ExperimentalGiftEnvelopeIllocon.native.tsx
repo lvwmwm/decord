@@ -1,13 +1,13 @@
-// Module ID: 6041
-// Function ID: 49994
+// Module ID: 6046
+// Function ID: 50023
 // Name: ExperimentalGiftEnvelopeIllocon
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6047, 2]
 // Exports: ExperimentalGiftEnvelopeIllocon
 
-// Module 6041 (ExperimentalGiftEnvelopeIllocon)
-import { jsx } from "__exportStarResult1";
+// Module 6046 (ExperimentalGiftEnvelopeIllocon)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");
 
 export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelopeIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelope
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6047) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelope
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

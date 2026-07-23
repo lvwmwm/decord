@@ -1,27 +1,28 @@
 // Module ID: 97
 // Function ID: 1558
 // Name: Dimensions
-// Dependencies: []
+// Dependencies: [6, 7, 98, 44, 101, 104]
 
 // Module 97 (Dimensions)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let importDefaultResult = importDefault(dependencyMap[2]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import importDefaultResult from "EventEmitter";
+import importDefaultResult1 from "_isNativeReflectConstruct";
+
 importDefaultResult = new importDefaultResult();
-let closure_6 = false;
-const obj = () => {
+let c6 = false;
+let obj = (() => {
   class Dimensions {
     constructor() {
-      tmp = closure_3(this, Dimensions);
+      tmp = outer1_3(this, Dimensions);
       return;
     }
   }
-  const importDefault = Dimensions;
   let obj = {
     key: "get",
     value: function get(arg0) {
-      Dimensions(closure_1[3])(closure_2[arg0], `No dimension set for key ${arg0}`);
-      return closure_2[arg0];
+      Dimensions(outer1_1[3])(outer1_2[arg0], `No dimension set for key ${arg0}`);
+      return outer1_2[arg0];
     }
   };
   const items = [obj, , ];
@@ -46,10 +47,11 @@ const obj = () => {
         screen = _window;
       }
       obj = { window: _window, screen };
-      if (closure_6) {
-        closure_5.emit("change", obj);
+      const outer1_2 = obj;
+      if (outer1_6) {
+        outer1_5.emit("change", outer1_2);
       } else {
-        closure_6 = true;
+        outer1_6 = true;
       }
     }
   };
@@ -57,17 +59,16 @@ const obj = () => {
   obj = {
     key: "addEventListener",
     value: function addEventListener(arg0, arg1) {
-      Dimensions(closure_1[3])("change" === arg0, "Trying to subscribe to unknown event: \"%s\"", arg0);
-      return closure_5.addListener(arg0, arg1);
+      Dimensions(outer1_1[3])("change" === arg0, "Trying to subscribe to unknown event: \"%s\"", arg0);
+      return outer1_5.addListener(arg0, arg1);
     }
   };
   items[2] = obj;
   return callback(Dimensions, null, items);
-}();
-importDefault(dependencyMap[4]).addListener("didUpdateDimensions", (arg0) => {
+})();
+require("_isNativeReflectConstruct").addListener("didUpdateDimensions", (arg0) => {
   const result = obj.set(arg0);
 });
-const importDefaultResult1 = importDefault(dependencyMap[4]);
-const result = obj.set(importDefault(dependencyMap[5]).getConstants().Dimensions);
+let result = obj.set(require("getConstants").getConstants().Dimensions);
 
 export default obj;

@@ -1,52 +1,53 @@
 // Module ID: 1030
-// Function ID: 11100
+// Function ID: 11101
 // Name: items
-// Dependencies: []
+// Dependencies: [1015, 1014, 1020, 1023, 1019, 1018]
 
 // Module 1030 (items)
+const require = arg1;
+let dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["Array", "_isInitialized"];
-function whenReady(backgroundifyResult, arg1) {
-  arg1 = backgroundifyResult;
-  const _document = arg1(arg6[0]).WINDOW.document;
+let items = [800, 1800];
+function whenReady(id, arg1) {
+  const _require = id;
+  const _document = _require(1015).WINDOW.document;
   if (null != _document) {
     if (_document.prerendering) {
-      arg1(arg6[1]).whenActivated(() => {
-        callback(arg0);
+      _require(1014).whenActivated(() => {
+        outer1_3(closure_0);
       });
-      const obj = arg1(arg6[1]);
+      const obj = _require(1014);
     }
   }
-  const _document2 = arg1(arg6[0]).WINDOW.document;
+  const _document2 = _require(1015).WINDOW.document;
   let readyState;
   if (null != _document2) {
     readyState = _document2.readyState;
   }
   if ("complete" !== readyState) {
     const listener = globalThis.addEventListener("load", () => {
-      callback(arg0);
+      outer1_3(closure_0);
     }, true);
   } else {
     const _setTimeout = setTimeout;
-    const timerId = setTimeout(backgroundifyResult);
+    const timerId = setTimeout(id);
   }
 }
 arg5.TTFBThresholds = items;
 arg5.onTTFB = function onTTFB(closure_0) {
   if (arguments.length > 1) {
-    const metric = arg1(closure_1[2]).initMetric("TTFB");
-    const arg1 = metric;
-    const obj2 = arg1(closure_1[3]);
-    closure_1 = obj2.bindReporter(closure_0, metric, items, {}.reportAllChanges);
+    metric = metric(1020).initMetric("TTFB");
+    let obj2 = metric(1023);
+    const dependencyMap = obj2.bindReporter(closure_0, metric, items, {}.reportAllChanges);
     whenReady(() => {
-      const navigationEntry = metric(callback[4]).getNavigationEntry();
+      const navigationEntry = metric(1019).getNavigationEntry();
       if (navigationEntry) {
         const _Math = Math;
-        metric.value = Math.max(navigationEntry.responseStart - metric(callback[5]).getActivationStart(), 0);
+        metric.value = Math.max(navigationEntry.responseStart - metric(1018).getActivationStart(), 0);
         const items = [navigationEntry];
         metric.entries = items;
-        callback(true);
-        const obj2 = metric(callback[5]);
+        dependencyMap(true);
+        const obj2 = metric(1018);
       }
     });
   }

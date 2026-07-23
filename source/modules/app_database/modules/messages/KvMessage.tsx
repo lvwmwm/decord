@@ -1,52 +1,59 @@
-// Module ID: 6714
-// Function ID: 52189
+// Module ID: 6719
+// Function ID: 52221
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 6, 7, 1917, 1849, 653, 2]
 
-// Module 6714 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6719 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import set from "set";
+import _defineProperties from "_defineProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let _slicedToArray = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _slicedToArray = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (set >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        set = tmp3 + 1;
+        obj.value = length[+set];
       }
       return obj;
     };
@@ -83,20 +90,13 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[5]).EMPTY_STRING_SNOWFLAKE_ID;
-const tmp2 = () => {
+let tmp2 = (() => {
   class KvMessage {
     constructor() {
-      tmp = closure_1(this, KvMessage);
+      tmp = outer1_1(this, KvMessage);
       return;
     }
   }
-  let closure_0 = KvMessage;
   let obj = {
     key: "fromMessage",
     value(arg0, channelId, id, connectionId) {
@@ -104,7 +104,7 @@ const tmp2 = () => {
       return { id: id.id, channelId, message: id, members: tmp[0], users: tmp[1], connectionId };
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "deriveMemberUsers",
     value(arg0, author) {
@@ -132,21 +132,21 @@ const tmp2 = () => {
       HermesBuiltin.arraySpread(mapped, 2);
       const items1 = [];
       const items2 = [];
-      const tmp5 = callback2(new Set(items));
+      const tmp5 = outer1_6(new Set(items));
       const iter = tmp5();
       let iter2 = iter;
       if (!iter.done) {
         do {
           let value = iter2.value;
           if (null != value) {
-            let tmp6 = closure_4;
-            let user = closure_4.getUser(value);
+            let tmp6 = outer1_4;
+            let user = outer1_4.getUser(value);
             let tmp9 = arg0;
-            let tmp8 = closure_3;
+            let tmp8 = outer1_3;
             if (null == arg0) {
-              tmp9 = closure_5;
+              tmp9 = outer1_5;
             }
-            let trueMember = closure_3.getTrueMember(tmp9, value);
+            let trueMember = outer1_3.getTrueMember(tmp9, value);
             if (null != user) {
               let arr = items2.push(user);
             }
@@ -168,7 +168,7 @@ const tmp2 = () => {
   };
   items[1] = obj;
   return callback(KvMessage, null, items);
-}();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/app_database/modules/messages/KvMessage.tsx");
+})();
+const result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/messages/KvMessage.tsx");
 
 export const KvMessage = tmp2;

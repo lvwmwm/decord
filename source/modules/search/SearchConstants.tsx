@@ -1,14 +1,17 @@
-// Module ID: 9096
-// Function ID: 71321
+// Module ID: 9103
+// Function ID: 71362
 // Name: SearchAutocompleteSelectAnalyticsActions
-// Dependencies: []
+// Dependencies: [653, 3808, 2]
 
-// Module 9096 (SearchAutocompleteSelectAnalyticsActions)
-const SearchTypes = require(dependencyMap[0]).SearchTypes;
+// Module 9103 (SearchAutocompleteSelectAnalyticsActions)
+import { SearchTypes } from "ME";
+import set from "set";
+
 let obj = { Messages: 0, [0]: "Messages", Media: 1, [1]: "Media", Link: 2, [2]: "Link", File: 3, [3]: "File", Pins: 4, [4]: "Pins" };
 obj = { RECENT: "recent", MEMBERS: "members", PEOPLE: "people", MEDIA: "media", PINS: "pins", MESSAGES: "messages", LINKS: "links", FILES: "files", GUILD_CHANNELS: "guild_channels", THREADS: "threads" };
 const items = [, , , , ];
 ({ MESSAGES: arr[0], MEDIA: arr[1], PINS: arr[2], LINKS: arr[3], FILES: arr[4] } = obj);
+let set = new Set(items);
 const items1 = [, , ];
 ({ MEDIA: arr2[0], LINKS: arr2[1], FILES: arr2[2] } = obj);
 const items2 = [, , , ];
@@ -34,8 +37,7 @@ const items11 = [, , , , ];
 ({ MEMBERS: arr12[0], MEDIA: arr12[1], PINS: arr12[2], LINKS: arr12[3], FILES: arr12[4] } = obj);
 const items12 = [, , , , , ];
 ({ MEMBERS: arr13[0], MESSAGES: arr13[1], MEDIA: arr13[2], PINS: arr13[3], LINKS: arr13[4], FILES: arr13[5] } = obj);
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/search/SearchConstants.tsx");
+const result = set.fileFinishedImporting("modules/search/SearchConstants.tsx");
 
 export const SearchAutocompleteSelectAnalyticsActions = { KEY_PRESS: "key_press", CLICK: "click" };
 export const WEB_SEARCH_HISTORY_STORAGE_KEY = "SearchStore";
@@ -43,14 +45,14 @@ export const NATIVE_SEARCH_HISTORY_STORAGE_KEY = "SearchHistoryStore";
 export const WEB_SEARCH_HISTORY_STORE_DISPLAY_NAME = "SearchHistoryStore_Web";
 export const NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME = "SearchHistoryStore";
 export const SearchFilter = obj;
-export const SEARCH_QUERY_DEFAULT_FILTERS = {};
-export const SEARCH_QUERY_BY_SEARCH_FILTER = { [obj.Media]: { has: [] }, [obj.File]: { has: ["<string:71075138>"] }, [obj.Messages]: {}, [obj.Link]: { has: ["initialWaitTime"] }, [obj.Pins]: { pinned: true } };
+export const SEARCH_QUERY_DEFAULT_FILTERS = { sort_by: "timestamp", sort_order: "desc" };
+export const SEARCH_QUERY_BY_SEARCH_FILTER = { [obj.Media]: { has: ["image", "video"] }, [obj.File]: { has: ["file"] }, [obj.Messages]: {}, [obj.Link]: { has: ["link"] }, [obj.Pins]: { pinned: true } };
 export const SEARCH_PINNED_MESSAGES_LINE_CLAMP = 10;
 export const SEARCH_MESSAGES_DEFAULT_LINE_CLAMP = 4;
 export const SearchTabs = obj;
 export const SEARCH_TABS_TO_SEARCH_QUERY_LIMITS = { [obj.MEDIA]: 15, [obj.MESSAGES]: 15, [obj.PINS]: 15, [obj.LINKS]: 10, [obj.FILES]: 10 };
 export const MESSAGE_SEARCH_RESULT_TABS = items;
-export const MESSAGE_SEARCH_RESULT_TABS_SET = new Set(items);
+export const MESSAGE_SEARCH_RESULT_TABS_SET = set;
 export const CHANNEL_SEARCH_INITIAL_MESSAGE_TABS = items1;
 export const SEARCH_INITIAL_MESSAGE_TABS = items2;
 export const SEARCH_FILTERS_BY_TAB = obj;
@@ -73,7 +75,7 @@ export const MESSAGE_ESTIMATED_ITEM_SIZE = 110;
 export const CARD_ESTIMATED_ITEM_SIZE = 150;
 export const RECENTS_ESTIMATED_ITEM_SIZE = 64;
 export const MESSAGE_PLACEHOLDER_ITEM_SIZE = 64;
-export const CHANNEL_LIST_SEARCH_LAYOUT = require(dependencyMap[1]).ChannelListLayoutTypes.COZY;
+export const CHANNEL_LIST_SEARCH_LAYOUT = require("ChannelListLayoutTypes").ChannelListLayoutTypes.COZY;
 export const EMPTY_VOICE_STATES = [];
 export const EMPTY_SEARCH_TAB_COUNTS = {};
 export const FADE_LAYOUT_ANIMATION_DURATION = 350;

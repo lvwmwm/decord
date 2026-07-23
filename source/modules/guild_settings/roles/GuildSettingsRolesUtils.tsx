@@ -1,53 +1,60 @@
-// Module ID: 16192
-// Function ID: 125038
+// Module ID: 16309
+// Function ID: 127211
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 1917, 1849, 16300, 653, 566, 3969, 5150, 5047, 675, 5045, 1327, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 16192 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16309 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { GuildSettingsRoleEditSections as closure_6 } from "MAX_SUBCATEGORIES";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,56 +92,54 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function useGuildMembers(id, callback) {
-  callback = id;
-  const importDefault = callback;
-  const items = [closure_4];
+  const _require = id;
+  let closure_1 = callback;
+  let items = [_isNativeReflectConstruct];
   const items1 = [id, callback];
-  const stateFromStoresArray = callback(dependencyMap[5]).useStateFromStoresArray(items, () => {
-    const members = members.getMembers(arg0);
+  stateFromStoresArray = _require(stateFromStoresArray[5]).useStateFromStoresArray(items, () => {
+    const members = outer1_4.getMembers(closure_0);
     let found = members;
-    if (null != arg1) {
-      found = members.filter(arg1);
+    if (null != closure_1) {
+      found = members.filter(closure_1);
     }
     return found;
   }, items1);
-  const dependencyMap = stateFromStoresArray;
-  const obj = callback(dependencyMap[5]);
+  let obj = _require(stateFromStoresArray[5]);
   const items2 = [closure_5];
   const items3 = [stateFromStoresArray];
-  const stateFromStoresObject = callback(dependencyMap[5]).useStateFromStoresObject(items2, () => stateFromStoresArray.reduce((arg0, userId) => {
-    const user = user.getUser(userId.userId);
+  const stateFromStoresObject = _require(stateFromStoresArray[5]).useStateFromStoresObject(items2, () => stateFromStoresArray.reduce((arg0, userId) => {
+    const user = outer2_5.getUser(userId.userId);
     if (null != user) {
       arg0[userId.userId] = user;
     }
     return arg0;
   }, {}), items3);
-  const React = stateFromStoresObject;
   const items4 = [stateFromStoresArray, stateFromStoresObject, id];
-  return React.useMemo(() => {
+  return stateFromStoresObject.useMemo(() => {
     let iter3;
     const items = [];
-    const tmp = callback(stateFromStoresArray);
+    const tmp = outer1_8(stateFromStoresArray);
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp2 = closure_3;
-        let obj = closure_3[value.userId];
+        let tmp2 = stateFromStoresObject;
+        let obj = stateFromStoresObject[value.userId];
         if (null != obj) {
           obj = {};
           let nick = value.nick;
           let name = nick;
           if (null == nick) {
-            let tmp3 = closure_1;
-            let tmp4 = closure_2;
-            let obj2 = closure_1(closure_2[6]);
+            let tmp3 = callback;
+            let tmp4 = stateFromStoresArray;
+            let obj2 = callback(stateFromStoresArray[6]);
             name = obj2.getName(obj);
           }
           obj.name = name;
-          let tmp6 = closure_1;
-          let tmp7 = closure_2;
-          let obj3 = closure_1(closure_2[6]);
+          let tmp6 = callback;
+          let tmp7 = stateFromStoresArray;
+          let obj3 = callback(stateFromStoresArray[6]);
           obj.userTag = obj3.getUserTag(obj);
           obj.id = value.userId;
           let tmp8 = closure_0;
@@ -154,52 +159,47 @@ function useGuildMembers(id, callback) {
     return items;
   }, items4);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).GuildSettingsRoleEditSections;
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesUtils.tsx");
 
 export const ADD_MEMBER_QUERY_LIMIT = 50;
 export const MAX_PREFETCH_MEMBER_COUNT = 1000;
 export { useGuildMembers };
 export const useGuildRoleMembers = function useGuildRoleMembers(id, id2, onMembersLoadFail) {
-  id2 = id;
-  const importDefault = id2;
-  const dependencyMap = onMembersLoadFail;
-  const React = React.useRef(onMembersLoadFail);
+  let closure_0 = id;
+  let closure_1 = id2;
+  let closure_2 = onMembersLoadFail;
+  React = React.useRef(onMembersLoadFail);
   const effect = React.useEffect(() => {
-    closure_3.current = arg2;
+    result.current = closure_2;
   });
   const items = [id, id2];
   const effect1 = React.useEffect(() => {
-    const membersForRole = arg0(arg2[7]).requestMembersForRole(arg0, arg1);
+    const membersForRole = id(onMembersLoadFail[7]).requestMembersForRole(id, closure_1);
     membersForRole.catch(ref.current);
   }, items);
   const items1 = [id2];
   return useGuildMembers(id, React.useCallback((roles) => {
     roles = roles.roles;
-    return roles.includes(arg1);
+    return roles.includes(closure_1);
   }, items1));
 };
 export const useQueryGuildMembers = function useQueryGuildMembers(id, formatted) {
-  formatted = id;
-  const importDefault = formatted;
+  let closure_0 = id;
+  let closure_1 = formatted;
   let closure_2 = React.useRef(false);
   const items = [id, formatted];
   const effect = React.useEffect(() => {
-    let obj = arg1(ref[8]);
-    const members = obj.requestMembers(arg0, arg1, 200);
-    let current = "" === arg1;
+    let obj = callback(ref[8]);
+    const members = obj.requestMembers(closure_0, callback, 200);
+    let current = "" === callback;
     if (!current) {
       current = ref.current;
     }
     if (!current) {
       obj = { search_type: "Role Members" };
-      arg1(ref[9]).track(constants.SEARCH_STARTED, obj);
+      callback(ref[9]).track(outer1_7.SEARCH_STARTED, obj);
       ref.current = true;
-      const obj2 = arg1(ref[9]);
+      const obj2 = callback(ref[9]);
     }
   }, items);
 };
@@ -207,14 +207,14 @@ export const filterFullMembersByQuery = function filterFullMembersByQuery(str, i
   const formatted = str.trim().toLowerCase();
   let tmp8Result = id.id === formatted;
   if (!tmp8Result) {
-    tmp8Result = importDefault(dependencyMap[10])(formatted, id.name.toLowerCase());
+    tmp8Result = importDefault(5045)(formatted, id.name.toLowerCase());
     const str2 = id.name;
-    const tmp5 = importDefault(dependencyMap[10]);
+    const tmp5 = importDefault(5045);
   }
   if (!tmp8Result) {
-    tmp8Result = importDefault(dependencyMap[10])(formatted, id.userTag.toLowerCase());
+    tmp8Result = importDefault(5045)(formatted, id.userTag.toLowerCase());
     const str3 = id.userTag;
-    const tmp8 = importDefault(dependencyMap[10]);
+    const tmp8 = importDefault(5045);
   }
   return tmp8Result;
 };
@@ -228,7 +228,7 @@ export const getSectionAnalyticsName = function getSectionAnalyticsName(arg0) {
   } else if (constants.VERIFICATIONS === arg0) {
     return "Connections";
   } else {
-    arg1(dependencyMap[11]).assertNever(arg0);
+    require(1327) /* isDiscordFrontendDevelopment */.assertNever(arg0);
   }
 };
 export const filterRole = function filterRole(name, str) {

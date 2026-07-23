@@ -1,27 +1,35 @@
-// Module ID: 10300
-// Function ID: 79519
+// Module ID: 10313
+// Function ID: 79592
 // Name: LocationText
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 3767, 1849, 33, 4130, 689, 4126, 4320, 669, 4629, 4631, 4593, 566, 4660, 1212, 5119, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10300 (LocationText)
+// Module 10313 (LocationText)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function LocationText(channel) {
   let _location;
   let author;
   channel = channel.channel;
-  const arg1 = channel;
   const parentChannel = channel.parentChannel;
-  const dependencyMap = parentChannel;
   const color = channel.color;
-  let View;
+  let str;
   ({ author, location: _location } = channel);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const React = tmp;
-  let str = "text-muted";
+  str = "text-muted";
   if (null != color) {
     str = color;
   }
-  View = str;
   const items = [channel, parentChannel, tmp.icon, str];
   let obj = { style: tmp.secondaryTextContainer };
   let tmp5 = null != author;
@@ -31,7 +39,7 @@ function LocationText(channel) {
       let element = null;
       if (null != undefined) {
         let obj = { color: str, style: tmp.icon };
-        element = tmp.createElement(undefined, obj);
+        element = tmp.createElement(undefined, { color: str, style: tmp.icon });
       }
       return element;
     } else {
@@ -46,36 +54,29 @@ function LocationText(channel) {
     }
   }, items);
   if (tmp5) {
-    obj = { color: str, style: tmp.separator };
-    tmp5 = callback(arg1(dependencyMap[8]).Text, obj);
+    obj = { variant: "text-md/bold", color: str, maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
+    tmp5 = callback(channel(parentChannel[8]).Text, obj);
   }
   const items1 = [tmp5, memo, ];
-  obj = { 803799044: 19066945, 1269170180: 32989440, 711589892: 2674, color: str, style: tmp.secondaryText, children: _location };
-  items1[2] = callback(arg1(dependencyMap[8]).Text, obj);
+  obj = { variant: "text-md/semibold", color: str, lineClamp: 1, style: tmp.secondaryText, children: _location };
+  items1[2] = callback(channel(parentChannel[8]).Text, obj);
   obj.children = items1;
-  return closure_8(View, obj);
+  return closure_8(str, obj);
 }
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_9 = Object.freeze({ radius: 12 });
-let closure_10 = Object.freeze({});
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_8 };
-obj.container = obj;
-obj.headerContent = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true };
-obj.primaryText = { "Bool(false)": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
-obj.secondaryTextContainer = {};
-obj.separator = { marginHorizontal: 2 };
-obj.icon = { "Null": null, "Null": null };
-obj.secondaryText = { flex: 1 };
-let closure_11 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/in_app_notifications/native/MessageNotificationHeader.tsx");
+let closure_10 = Object.freeze({ top: 8, right: 8, bottom: 8, left: 8 });
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerContent = { flex: 1, flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.primaryText = { flexShrink: 1, marginRight: 2 };
+_createForOfIteratorHelperLoose.secondaryTextContainer = { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" };
+_createForOfIteratorHelperLoose.separator = { marginHorizontal: 2 };
+_createForOfIteratorHelperLoose.icon = { width: 16, height: 16 };
+_createForOfIteratorHelperLoose.secondaryText = { flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_notifications/native/MessageNotificationHeader.tsx");
 
 export default function MessageNotificationHeader(arg0) {
   let author;
@@ -89,12 +90,11 @@ export default function MessageNotificationHeader(arg0) {
   let parentChannel;
   let parentChannel2;
   ({ channel, parentChannel, author, expanded, onDismiss } = arg0);
-  const arg1 = onDismiss;
   ({ guild, locationTextColor } = arg0);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[14]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = onDismiss(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.roleStyle);
   if (null != author) {
     const colorString = author.colorString;
   }
@@ -107,22 +107,22 @@ export default function MessageNotificationHeader(arg0) {
     const tmp4 = obj;
   }
   ({ channel: channel2, parentChannel: parentChannel2, guild: guild2 } = { channel, parentChannel, guild });
-  let obj2 = arg1(dependencyMap[9]);
+  let obj2 = onDismiss(4320);
   const channelName = obj2.computeChannelName(channel2, closure_6, closure_5);
   const type = channel2.type;
   let tmp6 = channelName;
-  if (arg1(dependencyMap[10]).ChannelTypes.GROUP_DM !== type) {
-    if (arg1(dependencyMap[10]).ChannelTypes.GUILD_FORUM !== type) {
-      if (arg1(dependencyMap[10]).ChannelTypes.GUILD_TEXT !== type) {
-        if (arg1(dependencyMap[10]).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
-          if (arg1(dependencyMap[10]).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
-            if (arg1(dependencyMap[10]).ChannelTypes.PUBLIC_THREAD !== type) {
+  if (onDismiss(669).ChannelTypes.GROUP_DM !== type) {
+    if (onDismiss(669).ChannelTypes.GUILD_FORUM !== type) {
+      if (onDismiss(669).ChannelTypes.GUILD_TEXT !== type) {
+        if (onDismiss(669).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
+          if (onDismiss(669).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
+            if (onDismiss(669).ChannelTypes.PUBLIC_THREAD !== type) {
               tmp6 = null;
             }
           }
           let channelName1 = null;
           if (null != parentChannel2) {
-            let obj3 = arg1(dependencyMap[9]);
+            let obj3 = onDismiss(4320);
             channelName1 = obj3.computeChannelName(parentChannel2, closure_6, closure_5);
           }
           if (null != channelName1) {
@@ -150,11 +150,11 @@ export default function MessageNotificationHeader(arg0) {
   const obj1 = { style: tmp.headerContent };
   let tmp25 = null != author;
   if (tmp25) {
-    obj2 = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>" };
+    obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1 };
     const items1 = [tmp.primaryText, tmp4];
     obj2.style = items1;
     obj2.children = author.nick;
-    tmp25 = callback(arg1(dependencyMap[8]).Text, obj2);
+    tmp25 = callback(onDismiss(4126).Text, obj2);
   }
   const items2 = [tmp25, ];
   let tmp29 = null != tmp6;
@@ -170,16 +170,16 @@ export default function MessageNotificationHeader(arg0) {
   }
   if (expanded) {
     const obj4 = { accessibilityRole: "button" };
-    const intl = arg1(dependencyMap[16]).intl;
-    obj4.accessibilityLabel = intl.string(arg1(dependencyMap[16]).t.LnEgqX);
+    const intl = onDismiss(1212).intl;
+    obj4.accessibilityLabel = intl.string(onDismiss(1212).t.LnEgqX);
     obj4.hitSlop = closure_10;
     obj4.androidRippleConfig = closure_9;
     obj4.onPress = function onPress() {
       return onDismiss("close_from_expanded");
     };
-    const obj5 = { color: "icon-subtle", style: {} };
-    obj4.children = callback(arg1(dependencyMap[17]).XSmallIcon, obj5);
-    expanded = callback(arg1(dependencyMap[15]).PressableOpacity, obj4);
+    const obj5 = { color: "icon-subtle", style: { height: 20, width: 20 } };
+    obj4.children = callback(onDismiss(5119).XSmallIcon, obj5);
+    expanded = callback(onDismiss(4660).PressableOpacity, obj4);
   }
   items3[1] = expanded;
   obj.children = items3;
@@ -190,20 +190,20 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   let text;
   secondaryText = secondaryText.secondaryText;
   ({ text, labelStyle } = secondaryText);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  obj = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>" };
+  obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1 };
   const items = [tmp.primaryText, labelStyle];
   obj.style = items;
   obj.children = text;
-  const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];
+  const items1 = [callback(require(4126) /* Text */.Text, obj), ];
   let tmp4 = null != secondaryText;
   if (tmp4) {
     obj = { style: tmp.secondaryTextContainer };
-    const obj1 = { 9223372036854775807: null, 9223372036854775807: 10, -9223372036854775808: -2, 9223372036854775807: true, -3686377997734313984: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.separator };
-    const items2 = [callback(arg1(dependencyMap[8]).Text, obj1), ];
-    const obj2 = { style: tmp.secondaryText, children: secondaryText };
-    items2[1] = callback(arg1(dependencyMap[8]).Text, obj2);
+    const obj1 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
+    const items2 = [callback(require(4126) /* Text */.Text, obj1), ];
+    const obj2 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
+    items2[1] = callback(require(4126) /* Text */.Text, obj2);
     obj.children = items2;
     tmp4 = callback2(View, obj);
   }

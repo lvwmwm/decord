@@ -1,13 +1,13 @@
-// Module ID: 10766
-// Function ID: 83682
+// Module ID: 10776
+// Function ID: 83731
 // Name: getParticipantTitle
-// Dependencies: []
+// Dependencies: [4148, 10777, 4319, 1212, 2]
 // Exports: default
 
-// Module 10766 (getParticipantTitle)
-const ParticipantTypes = require(dependencyMap[0]).ParticipantTypes;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");
+// Module 10776 (getParticipantTitle)
+import { ParticipantTypes } from "ParticipantTypes";
+
+let result = require("getNickname").fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");
 
 export default function getParticipantTitle(guild_id, type, name) {
   if (type.type === ParticipantTypes.ACTIVITY) {
@@ -26,14 +26,14 @@ export default function getParticipantTitle(guild_id, type, name) {
     if (null != user) {
       id = user.id;
     }
-    const result = require(dependencyMap[1]).isGuestOrLurkerInGuild(guild_id.guild_id, id);
-    const obj2 = require(dependencyMap[1]);
+    const result = require(10777) /* _isGuestOrLurkerInGuild */.isGuestOrLurkerInGuild(guild_id.guild_id, id);
+    const obj2 = require(10777) /* _isGuestOrLurkerInGuild */;
     let str = "";
-    const name1 = importDefault(dependencyMap[2]).getName(guild_id.getGuildId(), guild_id.id, type.user);
+    const name1 = importDefault(4319).getName(guild_id.getGuildId(), guild_id.id, type.user);
     if (result) {
-      const intl = require(dependencyMap[3]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const _HermesInternal = HermesInternal;
-      str = " " + intl.string(require(dependencyMap[3]).t.pFO/Ph);
+      str = " " + intl.string(require(1212) /* getSystemLocale */.t["pFO/Ph"]);
     }
     return name1 + str;
   }

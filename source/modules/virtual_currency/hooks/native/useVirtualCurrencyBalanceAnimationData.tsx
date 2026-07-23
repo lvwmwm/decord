@@ -1,42 +1,42 @@
-// Module ID: 9781
-// Function ID: 76035
+// Module ID: 9788
+// Function ID: 76076
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: []
+// Dependencies: [57, 31, 4122, 566, 8284, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 9781 (useVirtualCurrencyBalanceAnimationData)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyBalanceAnimationData.tsx");
+// Module 9788 (useVirtualCurrencyBalanceAnimationData)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyBalanceAnimationData.tsx");
 
 export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrencyBalanceAnimationData(initialRenderedBalance) {
+  let closure_7;
   let tmp6;
   initialRenderedBalance = initialRenderedBalance.initialRenderedBalance;
-  const arg1 = initialRenderedBalance;
   const balance = initialRenderedBalance.balance;
-  const importDefault = balance;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => ref.useReducedMotion);
-  const dependencyMap = stateFromStores;
-  const tmp2 = callback(React.useState(null), 2);
-  const currentAnimationType = tmp2[0];
-  const callback = currentAnimationType;
-  const React = tmp2[1];
-  closure_5 = React.useRef(null);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = initialRenderedBalance(stateFromStores[3]).useStateFromStores(items, () => ref.useReducedMotion);
+  const tmp2 = currentAnimationType(React.useState(null), 2);
+  currentAnimationType = tmp2[0];
+  React = tmp2[1];
+  _isNativeReflectConstruct = React.useRef(null);
   const lottieRef = React.useRef(null);
-  const obj = arg1(dependencyMap[3]);
-  [tmp6, closure_7] = callback(React.useState(null != initialRenderedBalance), 2);
-  const tmp7 = callback(React.useState(null == initialRenderedBalance), 2);
+  const obj = initialRenderedBalance(stateFromStores[3]);
+  [tmp6, closure_7] = currentAnimationType(React.useState(null != initialRenderedBalance), 2);
+  const tmp7 = currentAnimationType(React.useState(null == initialRenderedBalance), 2);
   const first1 = tmp7[0];
   let closure_9 = tmp7[1];
-  const tmp9 = importDefault(dependencyMap[4])(balance);
+  const tmp9 = balance(stateFromStores[4])(balance);
+  let closure_10 = tmp9;
   const onValueChange = React.useCallback(() => {
 
   }, []);
   const items1 = [currentAnimationType];
   const onValueReached = React.useCallback(() => {
-    closure_5.current = null;
+    _isNativeReflectConstruct.current = null;
     callback(null);
   }, []);
   const callback2 = React.useCallback((arg0) => {
@@ -63,12 +63,12 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
       if (null !== balance) {
         if (!first1) {
           const _setTimeout = setTimeout;
-          const timeout = setTimeout(() => {
-            if (!closure_2) {
-              callback3(closure_1 - closure_0);
+          timeout = setTimeout(() => {
+            if (!outer1_2) {
+              outer1_11(outer1_1 - closure_0);
             }
-            callback(false);
-            callback2(true);
+            outer1_7(false);
+            outer1_9(true);
           }, 1250);
           return () => clearTimeout(closure_0);
         }
@@ -79,10 +79,10 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
   const effect1 = React.useEffect(() => {
     let tmp = null !== balance;
     if (tmp) {
-      tmp = null !== tmp9;
+      tmp = null !== closure_10;
     }
     if (tmp) {
-      tmp = balance !== tmp9;
+      tmp = balance !== closure_10;
     }
     if (tmp) {
       tmp = first1;
@@ -91,7 +91,7 @@ export const useVirtualCurrencyBalanceAnimationData = function useVirtualCurrenc
       tmp = !stateFromStores;
     }
     if (tmp) {
-      const tmp9 = callback2(balance - tmp9);
+      callback2(balance - closure_10);
     }
   }, items3);
   return { onValueChange, onValueReached, showInitialRenderedBalance, currentAnimationType, lottieRef };

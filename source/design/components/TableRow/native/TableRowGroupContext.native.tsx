@@ -1,11 +1,10 @@
-// Module ID: 5163
-// Function ID: 44953
+// Module ID: 5166
+// Function ID: 44972
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 5163 (context)
-const context = require(dependencyMap[0]).createContext(false);
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("design/components/TableRow/native/TableRowGroupContext.native.tsx");
+// Module 5166 (context)
+const context = require("result").createContext(false);
+const result = require("set").fileFinishedImporting("design/components/TableRow/native/TableRowGroupContext.native.tsx");
 
 export const TableRowGroupContext = context;

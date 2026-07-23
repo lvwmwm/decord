@@ -1,10 +1,21 @@
-// Module ID: 14920
-// Function ID: 112365
+// Module ID: 15036
+// Function ID: 114533
 // Name: HubItem
-// Dependencies: []
+// Dependencies: [31, 27, 1907, 1906, 653, 10260, 33, 4130, 689, 11424, 1273, 566, 15037, 15038, 13524, 1212, 4138, 11788, 10038, 4068, 8481, 2]
 // Exports: default
 
-// Module 14920 (HubItem)
+// Module 15036 (HubItem)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { InstantInviteSources } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function HubItem(arg0) {
   let IconComponent;
   let active;
@@ -13,57 +24,48 @@ function HubItem(arg0) {
   let unreadCount;
   ({ label, unreadCount } = arg0);
   ({ IconComponent, handleItemClick, active } = arg0);
-  const ChannelModes = arg1(dependencyMap[9]).ChannelModes;
+  const ChannelModes = require(11424) /* BaseChannelSubtitle */.ChannelModes;
   const tmp2 = active ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
-  let obj = { style: callback2().container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: tmp2 };
-  const tmp = callback2();
+  let obj = { style: _createForOfIteratorHelperLoose().container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: tmp2 };
+  const tmp = _createForOfIteratorHelperLoose();
   const tmp3 = callback;
-  obj.name = callback(arg1(dependencyMap[9]).BaseChannelName, { name: label, mode: tmp2 });
-  obj.icon = callback(arg1(dependencyMap[9]).BaseChannelIcon, { mode: tmp2, IconComponent });
+  obj.name = callback(require(11424) /* BaseChannelSubtitle */.BaseChannelName, { name: label, mode: tmp2 });
+  obj.icon = callback(require(11424) /* BaseChannelSubtitle */.BaseChannelIcon, { mode: tmp2, IconComponent });
   let tmp5 = null;
   if (null != unreadCount) {
     obj = { value: unreadCount };
-    tmp5 = callback(arg1(dependencyMap[10]).Badge, obj);
+    tmp5 = callback(require(1273) /* Button */.Badge, obj);
   }
   obj.channelInfo = tmp5;
-  return tmp3(importDefault(dependencyMap[9]), obj);
+  return tmp3(importDefault(11424), obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const InstantInviteSources = arg1(dependencyMap[4]).InstantInviteSources;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { marginVertical: arg1(dependencyMap[5]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[8]).radii.md };
-obj.container = obj;
-obj.row = { flex: 1 };
-let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/hub/native/components/HubSidebar.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.row = { flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/hub/native/components/HubSidebar.tsx");
 
 export default function HubSidebar(guild) {
   guild = guild.guild;
-  const arg1 = guild;
-  let obj = arg1(closure_2[11]);
-  const items = [closure_4];
+  let obj = guild(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [guild.id];
-  const stateFromStores = obj.useStateFromStores(items, () => store.getDefaultChannel(guild.id), items1);
-  const importDefault = stateFromStores;
-  let obj1 = arg1(closure_2[11]);
-  const items2 = [closure_4];
-  closure_2 = obj1.useStateFromStoresObject(items2, () => store.getChannels(guild.id));
-  let obj2 = arg1(closure_2[11]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getDefaultChannel(guild.id), items1);
+  let obj1 = guild(566);
+  const items2 = [_isNativeReflectConstruct];
+  const dependencyMap = obj1.useStateFromStoresObject(items2, () => outer1_4.getChannels(guild.id));
+  let obj2 = guild(566);
   const items3 = [closure_5];
   const stateFromStores1 = obj2.useStateFromStores(items3, () => {
     let tmp = null != stateFromStores;
     if (tmp) {
-      tmp = channelId.getChannelId() === stateFromStores.id;
+      tmp = outer1_5.getChannelId() === stateFromStores.id;
     }
     return tmp;
   });
-  arg1(closure_2[12]);
+  guild(15037);
   let tmp7Result = null;
   if (null != stateFromStores) {
     obj = {};
@@ -73,29 +75,29 @@ export default function HubSidebar(guild) {
     }
     obj.style = row;
     obj = { guild };
-    const items4 = [callback(importDefault(closure_2[13]), obj), , , ];
-    obj1 = { active: stateFromStores1, IconComponent: arg1(closure_2[14]).CompassIcon };
-    const intl = arg1(closure_2[15]).intl;
-    obj1.label = intl.string(arg1(closure_2[15]).t.K50GHd);
+    const items4 = [callback(stateFromStores(15038), obj), , , ];
+    obj1 = { active: stateFromStores1, IconComponent: guild(13524).CompassIcon };
+    const intl = guild(1212).intl;
+    obj1.label = intl.string(guild(1212).t.K50GHd);
     obj1.handleItemClick = function handleItemClick() {
-      guild(closure_2[16]).transitionToChannel(stateFromStores.id);
+      guild(4138).transitionToChannel(stateFromStores.id);
     };
     obj1.unreadCount = tmp5;
     items4[1] = callback(HubItem, obj1);
-    obj2 = { IconComponent: arg1(closure_2[17]).PlusMediumIcon };
-    const intl2 = arg1(closure_2[15]).intl;
-    obj2.label = intl2.string(arg1(closure_2[15]).t.emRpdS);
+    obj2 = { IconComponent: guild(11788).PlusMediumIcon };
+    const intl2 = guild(1212).intl;
+    obj2.label = intl2.string(guild(1212).t.emRpdS);
     obj2.handleItemClick = function handleItemClick() {
-      let obj = stateFromStores(closure_2[18]);
+      let obj = stateFromStores(10038);
       obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: stateFromStores.id };
       return obj.open(obj);
     };
     items4[2] = callback(HubItem, obj2);
-    const obj3 = { IconComponent: arg1(closure_2[19]).UserPlusIcon };
-    const intl3 = arg1(closure_2[15]).intl;
-    obj3.label = intl3.string(arg1(closure_2[15]).t.MJQOuJ);
+    const obj3 = { IconComponent: guild(4068).UserPlusIcon };
+    const intl3 = guild(1212).intl;
+    obj3.label = intl3.string(guild(1212).t.MJQOuJ);
     obj3.handleItemClick = function handleItemClick() {
-      const result = guild(closure_2[20]).handleOpenInviteActionsheet(guild, stateFromStores.id, closure_2, constants.GUILD_HEADER);
+      const result = guild(8481).handleOpenInviteActionsheet(guild, stateFromStores.id, dependencyMap, outer1_6.GUILD_HEADER);
     };
     items4[3] = callback(HubItem, obj3);
     obj.children = items4;

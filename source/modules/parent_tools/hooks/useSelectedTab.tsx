@@ -1,26 +1,29 @@
-// Module ID: 13660
-// Function ID: 103473
+// Module ID: 13774
+// Function ID: 105629
 // Name: useSelectedMyFamilyTab
-// Dependencies: []
+// Dependencies: [6769, 6770, 653, 624, 6771, 675, 2]
 // Exports: default
 
-// Module 13660 (useSelectedMyFamilyTab)
+// Module 13774 (useSelectedMyFamilyTab)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import items from "items";
+import { AnalyticEvents } from "ME";
+
 let FamilyCenterSubPages;
-let closure_3 = importDefault(dependencyMap[0]);
-({ FamilyCenterAction: closure_4, FamilyCenterSubPages } = arg1(dependencyMap[1]));
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/parent_tools/hooks/useSelectedTab.tsx");
+let closure_4;
+const require = arg1;
+({ FamilyCenterAction: closure_4, FamilyCenterSubPages } = items);
+const result = require("ME").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTab.tsx");
 
 export default function useSelectedMyFamilyTab() {
-  const obj = {};
-  const items = [closure_3];
-  obj.selectedTab = arg1(dependencyMap[3]).useStateFromStores(items, () => selectedTab.getSelectedTab());
+  let obj = {};
+  const items = [_isNativeReflectConstruct];
+  obj.selectedTab = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getSelectedTab());
   obj.handleTabChange = function handleTabChange(tab) {
-    let obj = callback(closure_2[4]);
+    let obj = outer1_1(outer1_2[4]);
     tab = obj.selectTab(tab);
-    obj = { action: TabChange.TabChange, tab };
-    callback(closure_2[5]).track(constants.FAMILY_CENTER_ACTION, obj);
+    obj = { action: outer1_4.TabChange, tab };
+    outer1_1(outer1_2[5]).track(outer1_5.FAMILY_CENTER_ACTION, obj);
   };
   return obj;
 };

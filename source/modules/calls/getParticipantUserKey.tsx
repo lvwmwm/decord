@@ -1,12 +1,11 @@
-// Module ID: 4957
-// Function ID: 42629
+// Module ID: 4960
+// Function ID: 42647
 // Name: getParticipantUserKey
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 4957 (getParticipantUserKey)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/calls/getParticipantUserKey.tsx");
+// Module 4960 (getParticipantUserKey)
+const result = require("set").fileFinishedImporting("modules/calls/getParticipantUserKey.tsx");
 
 export default function getParticipantUserKey(str, id) {
   const formatted = str.toLowerCase();

@@ -1,14 +1,13 @@
-// Module ID: 10819
-// Function ID: 84020
+// Module ID: 10829
+// Function ID: 84069
 // Name: trackApplicationOpen
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: default
 
-// Module 10819 (trackApplicationOpen)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 10829 (trackApplicationOpen)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/activities/utils/trackApplicationOpen.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/trackApplicationOpen.tsx");
 
 export default function trackApplicationOpen(partyId) {
   let analyticsLocations;
@@ -26,7 +25,7 @@ export default function trackApplicationOpen(partyId) {
   let userId;
   partyId = partyId.partyId;
   ({ type, source, userId, guildId, channelId, channelType, applicationId, messageId, locationObject, analyticsLocations, referrerId, inviterUserId, remoteJoinPlatform } = partyId);
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { type, source, guild_id: guildId, channel_id: channelId, channel_type: channelType, application_id: applicationId };
   let tmp;
   if (null != partyId) {

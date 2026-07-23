@@ -1,7 +1,7 @@
 // Module ID: 514
 // Function ID: 6589
 // Name: pushToArray
-// Dependencies: []
+// Dependencies: [513, 511, 515]
 
 // Module 514 (pushToArray)
 let obj = {
@@ -25,10 +25,21 @@ function pushToArray(arg0, arg1) {
   push.apply(arg0, tmp2);
 }
 obj = {
-  encoder: require(dependencyMap[0]).encode,
+  addQueryPrefix: false,
+  allowDots: false,
+  allowEmptyArrays: false,
+  arrayFormat: "indices",
+  charset: "utf-8",
+  charsetSentinel: false,
+  commaRoundTrip: false,
+  delimiter: "&",
+  encode: true,
+  encodeDotInKeys: false,
+  encoder: require("items").encode,
+  encodeValuesOnly: false,
   filter: undefined,
-  format: require(dependencyMap[1]).default,
-  formatter: require(dependencyMap[1]).formatters[require(undefined, dependencyMap[1]).default],
+  format: require("module_511").default,
+  formatter: require("module_511").formatters[require("module_511").default],
   indices: false,
   serializeDate(arg0) {
     return toISOString.call(arg0);
@@ -38,7 +49,7 @@ obj = {
 };
 let closure_9 = {};
 function stringify(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, get) {
-  const require = arg12;
+  const _require = arg12;
   let value = get.get(closure_9);
   let num = 0;
   let flag = false;
@@ -84,14 +95,14 @@ function stringify(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, a
       }
       str2 = arg0;
       if (tmp7) {
-        str2 = require(dependencyMap[0]).maybeMap(arg0, (arg0) => {
+        str2 = _require(513).maybeMap(arg0, (arg0) => {
           let tmp = arg0;
           if (arg0 instanceof Date) {
-            tmp = arg12(arg0);
+            tmp = callback(arg0);
           }
           return tmp;
         });
-        const obj2 = require(dependencyMap[0]);
+        const obj2 = _require(513);
       }
     }
   }
@@ -135,10 +146,10 @@ function stringify(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, a
             }
             let maybeMapResult = str2;
             if (tmp19) {
-              maybeMapResult = require(dependencyMap[0]).maybeMap(str2, arg8);
-              const obj5 = require(dependencyMap[0]);
+              maybeMapResult = _require(513).maybeMap(str2, arg8);
+              const obj5 = _require(513);
             }
-            const obj = {};
+            obj = {};
             let tmp22;
             if (maybeMapResult.length > 0) {
               tmp22 = maybeMapResult.join(",") || null;
@@ -203,9 +214,9 @@ function stringify(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, a
                             sum = text + text1;
                           }
                           let result = get.set(arg0, num2);
-                          let tmp36 = require;
+                          let tmp36 = _require;
                           let tmp37 = dependencyMap;
-                          let obj7 = require(dependencyMap[2])();
+                          let obj7 = _require(515)();
                           let tmp38 = closure_9;
                           let result1 = obj7.set(closure_9, get);
                           if (tmp87) {
@@ -267,7 +278,7 @@ function stringify(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, a
         }
       }
     }
-    const obj3 = require(dependencyMap[0]);
+    obj3 = _require(513);
   }
   if (arg8) {
     let tmp67 = arg1;
@@ -327,9 +338,9 @@ export default (arg0, allowEmptyArrays) => {
         }
       }
     }
-    let format = require(dependencyMap[1]).default;
+    let format = require(511).default;
     if (undefined !== allowEmptyArrays.format) {
-      if (hasOwnProperty.call(require(dependencyMap[1]).formatters, allowEmptyArrays.format)) {
+      if (hasOwnProperty.call(require(511).formatters, allowEmptyArrays.format)) {
         format = allowEmptyArrays.format;
       } else {
         const _TypeError = TypeError;
@@ -371,7 +382,7 @@ export default (arg0, allowEmptyArrays) => {
     } else {
       allowDots = allowEmptyArrays.allowDots;
     }
-    const obj = {};
+    obj = {};
     if ("boolean" === typeof allowEmptyArrays.addQueryPrefix) {
       let addQueryPrefix = allowEmptyArrays.addQueryPrefix;
     } else {
@@ -426,7 +437,7 @@ export default (arg0, allowEmptyArrays) => {
     obj.encodeValuesOnly = encodeValuesOnly;
     obj.filter = filter;
     obj.format = format;
-    obj.formatter = require(dependencyMap[1]).formatters[format];
+    obj.formatter = require(511).formatters[format];
     if ("function" === typeof allowEmptyArrays.serializeDate) {
       let serializeDate = allowEmptyArrays.serializeDate;
     } else {
@@ -470,7 +481,7 @@ export default (arg0, allowEmptyArrays) => {
         if (arr.sort) {
           const sorted = filter.sort(arr.sort);
         }
-        const tmp42 = require(dependencyMap[2])();
+        const tmp42 = require(515) /* getSideChannel */();
         for (let num4 = 0; num4 < filter.length; num4 = num4 + 1) {
           let tmp43 = filter[num4];
           let tmp44 = found[tmp43];

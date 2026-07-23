@@ -1,13 +1,12 @@
-// Module ID: 4187
-// Function ID: 36029
+// Module ID: 4191
+// Function ID: 36061
 // Name: DesktopSources
-// Dependencies: []
+// Dependencies: [2, 4192]
 
-// Module 4187 (DesktopSources)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
+// Module 4191 (DesktopSources)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
 
-export const DesktopSources = require(dependencyMap[1]).DesktopSources;
+export const DesktopSources = require("_isNativeReflectConstruct").DesktopSources;
 export const MediaEngineContextTypes = { DEFAULT: "default", STREAM: "stream" };
 export const DeviceTypes = { AUDIO_INPUT: "audioinput", AUDIO_OUTPUT: "audiooutput", VIDEO_INPUT: "videoinput" };
 export const InputModes = { PUSH_TO_TALK: "PUSH_TO_TALK", VOICE_ACTIVITY: "VOICE_ACTIVITY" };
@@ -52,10 +51,10 @@ export const DESKTOP_LOW_QUALITY_STREAM_MAX_BITRATE = 1500000;
 export const DESKTOP_LOW_QUALITY_STREAM_MIN_BITRATE = 500000;
 export const DESKTOP_BITRATE = 3500000;
 export const DESKTOP_BITRATE_ENHANCED = 9000000;
-export const MEDIA_SINK_WANTS_PROPERTIES = ["<string:751619276>", "<string:3436003419>", "<string:751619276>", "<string:1685143643>", "<string:822083584>", "isArray"];
-export const defaultVideoQualityOptions = { videoBudget: { "Null": "row", "Null": "hidden", "Null": "center" }, videoCapture: { "Null": "row", "Null": "hidden", "Null": "center" }, videoBitrate: {}, desktopBitrate: {}, videoBitrateFloor: 150000 };
+export const MEDIA_SINK_WANTS_PROPERTIES = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"];
+export const defaultVideoQualityOptions = { videoBudget: { width: 1280, height: 720, framerate: 30 }, videoCapture: { width: 1280, height: 720, framerate: 30 }, videoBitrate: { min: 150000, max: 2500000 }, desktopBitrate: { min: 500000, max: 3500000, target: 600000 }, videoBitrateFloor: 150000 };
 export const BIT_FLOOR_PER_PIXEL = 0.02;
-export const VideoHealthManagerConfig = { y: "w", isArray: "Array", accessible: "isArray", hd: "Array", style: "construct" };
+export const VideoHealthManagerConfig = { featureEnabled: true, windowLength: 5, allowedPoorFpsRatio: 1, fpsThreshold: 5, backoffTimeSec: 15 };
 export const VIEWERSIDE_CLIP_KFI_MS = 60000;
 export const DARWIN_H265_VERSION = ">=22.0.0";
 export const QUEUE_METRICS_INTERVAL_MS = 900000;

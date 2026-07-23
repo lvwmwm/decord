@@ -1,10 +1,12 @@
-// Module ID: 7848
-// Function ID: 62580
+// Module ID: 7854
+// Function ID: 62617
 // Name: getImageFormat
-// Dependencies: []
+// Dependencies: [653, 1392, 1426, 1440, 1212, 7855, 1327, 2]
 // Exports: createPendingImage, generateAvatarDescription, generateRecentAvatarFileDetails, getPendingAvatarSrc
 
-// Module 7848 (getImageFormat)
+// Module 7854 (getImageFormat)
+import { Endpoints } from "ME";
+
 function getImageFormat(canAnimate) {
   let flag = canAnimate.canAnimate;
   if (flag === undefined) {
@@ -19,7 +21,7 @@ function getImageFormat(canAnimate) {
       let str5 = "gif";
       if (flag2) {
         str5 = "gif";
-        if (require(dependencyMap[1]).SUPPORTS_WEBP) {
+        if (require(1392) /* getAvatarURL */.SUPPORTS_WEBP) {
           str5 = "webp";
         }
       }
@@ -32,7 +34,7 @@ function getImageFormat(canAnimate) {
     let str3 = "png";
     if (flag2) {
       str3 = "png";
-      if (require(dependencyMap[1]).SUPPORTS_WEBP) {
+      if (require(1392) /* getAvatarURL */.SUPPORTS_WEBP) {
         str3 = "webp";
       }
     }
@@ -63,19 +65,19 @@ function getArchivedAvatarURL(allowWebp) {
   let obj = { storageHash, canAnimate, allowWebp: flag };
   const tmp2 = getImageFormat(obj);
   obj = {};
-  const obj3 = require(dependencyMap[2]);
-  obj.size = obj3.getBestMediaProxySize(allowWebp.size * require(dependencyMap[2]).getDevicePixelRatio());
+  const obj3 = require(1426) /* isAttachmentLadderEnabled */;
+  obj.size = obj3.getBestMediaProxySize(allowWebp.size * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
   let isAnimatedIconHashResult = "webp" === tmp2 && canAnimate;
   if (isAnimatedIconHashResult) {
-    isAnimatedIconHashResult = require(dependencyMap[1]).isAnimatedIconHash(storageHash);
-    const obj5 = require(dependencyMap[1]);
+    isAnimatedIconHashResult = require(1392) /* getAvatarURL */.isAnimatedIconHash(storageHash);
+    const obj5 = require(1392) /* getAvatarURL */;
   }
   if (isAnimatedIconHashResult) {
     obj.animated = true;
   }
-  const obj4 = require(dependencyMap[2]);
+  const obj4 = require(1426) /* isAttachmentLadderEnabled */;
   const ARCHIVED_AVATARResult = Endpoints.ARCHIVED_AVATAR(userId, avatarId, storageHash, tmp2);
-  return "" + combined + ARCHIVED_AVATARResult + "?" + importDefault(dependencyMap[3]).stringify(obj);
+  return "" + combined + ARCHIVED_AVATARResult + "?" + importDefault(1440).stringify(obj);
 }
 function getFileTypeFromExtension(arg0) {
   if ("gif" === arg0) {
@@ -87,12 +89,10 @@ function getFileTypeFromExtension(arg0) {
   } else if ("webp" === arg0) {
     return "image/webp";
   } else {
-    require(dependencyMap[6]).assertNever(arg0);
+    require(1327) /* isDiscordFrontendDevelopment */.assertNever(arg0);
   }
 }
-const Endpoints = require(dependencyMap[0]).Endpoints;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/recent_avatars/RecentAvatarUtils.tsx");
+const result = require("isAttachmentLadderEnabled").fileFinishedImporting("modules/recent_avatars/RecentAvatarUtils.tsx");
 
 export { getImageFormat };
 export { getArchivedAvatarURL };
@@ -105,32 +105,32 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
   }
   ({ filename, assetOrigin } = obj);
   if (undefined === assetOrigin) {
-    assetOrigin = require(dependencyMap[5]).AssetOriginTypes.NEW_ASSET;
+    assetOrigin = require(7855) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
   }
-  if (assetOrigin !== require(dependencyMap[5]).AssetOriginTypes.ARCHIVED_ASSET) {
+  if (assetOrigin !== require(7855) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
     if (null == filename) {
-      const intl = require(dependencyMap[4]).intl;
-      filename = intl.string(require(dependencyMap[4]).t.lqaIxI);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      filename = intl.string(require(1212) /* getSystemLocale */.t.lqaIxI);
     }
     const _Date = Date;
     const date = new Date();
-    const intl2 = require(dependencyMap[4]).intl;
-    if (assetOrigin === require(dependencyMap[5]).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
-      let DYil93 = require(dependencyMap[4]).t.eC2sZi;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    if (assetOrigin === require(7855) /* AssetOriginTypes */.AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
+      let DYil93 = require(1212) /* getSystemLocale */.t.eC2sZi;
     } else {
-      DYil93 = require(dependencyMap[4]).t.DYil93;
+      DYil93 = require(1212) /* getSystemLocale */.t.DYil93;
     }
-    obj = { name: filename, dateTime: date.toLocaleString(require(dependencyMap[4]).intl.currentLocale, {}) };
+    obj = { name: filename, dateTime: date.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, { year: "numeric", day: "numeric", month: "long", hour: "numeric", minute: "numeric" }) };
     return intl2.formatToPlainString(DYil93, obj);
   }
 };
 export const generateRecentAvatarFileDetails = function generateRecentAvatarFileDetails(storageHash) {
-  let obj = { storageHash, canAnimate: true, allowWebp: require(dependencyMap[1]).SUPPORTS_WEBP };
+  let obj = { storageHash, canAnimate: true, allowWebp: require(1392) /* getAvatarURL */.SUPPORTS_WEBP };
   const tmp = getImageFormat(obj);
   obj = {};
   if (null == arg1) {
-    const intl = require(dependencyMap[4]).intl;
-    let stringResult = intl.string(require(dependencyMap[4]).t.lqaIxI);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl.string(require(1212) /* getSystemLocale */.t.lqaIxI);
   } else {
     stringResult = arg1.split(",")[0];
   }
@@ -145,20 +145,20 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
   let originalMd5;
   let NEW_ASSET = assetOrigin.assetOrigin;
   if (NEW_ASSET === undefined) {
-    NEW_ASSET = require(dependencyMap[5]).AssetOriginTypes.NEW_ASSET;
+    NEW_ASSET = require(7855) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
   }
   ({ imageUri, description, originalAsset, originalMd5 } = assetOrigin);
-  if (require(dependencyMap[5]).AssetOriginTypes.NEW_ASSET === NEW_ASSET) {
+  if (require(7855) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET === NEW_ASSET) {
     let obj = { assetOrigin: NEW_ASSET, imageUri, description, originalMd5 };
     return obj;
-  } else if (require(dependencyMap[5]).AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
+  } else if (require(7855) /* AssetOriginTypes */.AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
     obj = { assetOrigin: NEW_ASSET, imageUri, description, originalAsset, originalMd5 };
     return obj;
-  } else if (require(dependencyMap[5]).AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
+  } else if (require(7855) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
     const obj1 = { assetOrigin: NEW_ASSET, imageUri, originalAsset };
     return obj1;
   } else {
-    obj = require(dependencyMap[6]);
+    obj = require(1327) /* isDiscordFrontendDevelopment */;
     obj.assertNever(NEW_ASSET);
   }
 };
@@ -178,7 +178,7 @@ export const getPendingAvatarSrc = function getPendingAvatarSrc(canAnimate) {
   if (null != image) {
     tmp = image;
     if ("string" !== typeof image) {
-      if (image.assetOrigin === require(dependencyMap[5]).AssetOriginTypes.ARCHIVED_ASSET) {
+      if (image.assetOrigin === require(7855) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
         const obj = { userId };
         userId = image.originalAsset.id;
         obj.avatarId = userId;

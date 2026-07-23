@@ -1,43 +1,43 @@
-// Module ID: 13462
-// Function ID: 102208
+// Module ID: 13576
+// Function ID: 104364
 // Name: useUserProfileEditForm
-// Dependencies: []
+// Dependencies: [29, 5, 31, 7841, 6856, 653, 566, 686, 9230, 9780, 9231, 9232, 13577, 7847, 4029, 3803, 12921, 2]
 // Exports: default
 
-// Module 13462 (useUserProfileEditForm)
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const FormStates = arg1(dependencyMap[5]).FormStates;
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/profiles/native/useUserProfileEditForm.tsx");
+// Module 13576 (useUserProfileEditForm)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import ME from "ME";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { FormStates } from "ME";
+
+const require = arg1;
+let closure_3 = ["bannerOriginalMd5"];
+const result = require("result").fileFinishedImporting("modules/user_settings/profiles/native/useUserProfileEditForm.tsx");
 
 export default function useUserProfileEditForm() {
   let errors;
   let tryItOutChanges;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_7];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ pendingChanges: store.getPendingChanges(), tryItOutChanges: store.getTryItOutChanges(), errors: store.getErrors() }));
-  const pendingChanges = stateFromStoresObject.pendingChanges;
-  const arg1 = pendingChanges;
+  let obj = pendingChanges(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ pendingChanges: outer1_7.getPendingChanges(), tryItOutChanges: outer1_7.getTryItOutChanges(), errors: outer1_7.getErrors() }));
+  pendingChanges = stateFromStoresObject.pendingChanges;
   ({ tryItOutChanges, errors } = stateFromStoresObject);
-  const items1 = [closure_8, closure_7];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items1, () => {
-    let isSubmitting = store.getFormState() === constants.SUBMITTING;
+  const items1 = [closure_8, _isNativeReflectConstruct];
+  const stateFromStores = pendingChanges(566).useStateFromStores(items1, () => {
+    let isSubmitting = outer1_7.getFormState() === outer1_9.SUBMITTING;
     if (!isSubmitting) {
-      isSubmitting = isSubmitting.isSubmitting;
+      isSubmitting = outer1_8.isSubmitting;
     }
     return isSubmitting;
   });
-  const importDefault = stateFromStores;
   // CreateGeneratorClosureLongIndex (0x67)
   const items2 = [stateFromStores, pendingChanges];
   // CreateGeneratorClosureLongIndex (0x67)
-  const callback = React.useCallback(callback(React.useEffect(() => () => callback2(closure_2[7]).wait(callback(closure_2[8]).resetAllPending), [])), items2);
+  callback = React.useCallback(callback(React.useEffect(() => () => stateFromStores(outer2_2[7]).wait(pendingChanges(outer2_2[8]).resetAllPending), [])), items2);
   const items3 = [stateFromStores, pendingChanges.pendingAvatarDecoration];
-  obj = { hasAvatarDecorationEdits: undefined !== pendingChanges.pendingAvatarDecoration, errors, isSubmitting: stateFromStores, handleSubmit: callback, handleSubmitAvatarDecoration: React.useCallback(callback(tmp), items3), resetPending: arg1(dependencyMap[8]).resetAllPending };
+  obj = { hasAvatarDecorationEdits: undefined !== pendingChanges.pendingAvatarDecoration, errors, isSubmitting: stateFromStores, handleSubmit: callback, handleSubmitAvatarDecoration: React.useCallback(callback(tmp), items3), resetPending: pendingChanges(9230).resetAllPending };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);
   return obj;

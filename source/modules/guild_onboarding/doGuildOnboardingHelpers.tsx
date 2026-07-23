@@ -1,19 +1,22 @@
-// Module ID: 5059
-// Function ID: 43840
+// Module ID: 5062
+// Function ID: 43858
 // Name: waitForOnboardingCompletion
-// Dependencies: []
+// Dependencies: [1917, 3746, 1360, 5063, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 5059 (waitForOnboardingCompletion)
-let closure_3 = importDefault(dependencyMap[0]);
-const GuildMemberFlags = arg1(dependencyMap[1]).GuildMemberFlags;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_onboarding/doGuildOnboardingHelpers.tsx");
+// Module 5062 (waitForOnboardingCompletion)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GuildMemberFlags } from "GuildMemberFlags";
+
+const require = arg1;
+let result = require("hasFlag").fileFinishedImporting("modules/guild_onboarding/doGuildOnboardingHelpers.tsx");
 
 export const waitForOnboardingCompletion = function waitForOnboardingCompletion(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0) => {
-    const result = closure_3.addConditionalChangeListener(() => {
-      const selfMember = selfMember.getSelfMember(arg0);
+    let closure_0 = arg0;
+    const result = outer1_3.addConditionalChangeListener(() => {
+      const selfMember = outer2_3.getSelfMember(callback);
       let flags;
       if (null != selfMember) {
         flags = selfMember.flags;
@@ -22,12 +25,12 @@ export const waitForOnboardingCompletion = function waitForOnboardingCompletion(
       if (null != flags) {
         num = flags;
       }
-      let flag = !arg0(closure_2[2]).hasFlag(num, constants.COMPLETED_ONBOARDING);
+      let flag = !callback(outer2_2[2]).hasFlag(num, outer2_4.COMPLETED_ONBOARDING);
       if (!flag) {
-        callback(closure_2[3]).finishOnboarding(arg0);
-        arg0();
+        outer2_1(outer2_2[3]).finishOnboarding(callback);
+        callback();
         flag = false;
-        const obj2 = callback(closure_2[3]);
+        const obj2 = outer2_1(outer2_2[3]);
       }
       return flag;
     });

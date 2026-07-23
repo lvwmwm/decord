@@ -1,30 +1,29 @@
-// Module ID: 11832
-// Function ID: 91730
+// Module ID: 11842
+// Function ID: 91779
 // Name: useCanGiftProduct
-// Dependencies: []
+// Dependencies: [8667, 8669, 6786, 6785, 1876, 3776, 3789, 2]
 // Exports: useCanGiftProduct
 
-// Module 11832 (useCanGiftProduct)
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
+// Module 11842 (useCanGiftProduct)
+let result = require("getPriceForCollectiblesProduct").fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
 
 export const useCanGiftProduct = function useCanGiftProduct(product) {
-  const currentUser = require(dependencyMap[0]).useCurrentUser();
-  const obj = require(dependencyMap[0]);
-  const isProfileFrameGiftingEnabled = require(dependencyMap[1]).useIsProfileFrameGiftingEnabled("useCanGiftProduct");
-  const obj2 = require(dependencyMap[1]);
-  let result = require(dependencyMap[2]).isPremiumCollectiblesProduct(product);
-  const obj3 = require(dependencyMap[2]);
-  const result1 = require(dependencyMap[2]).isFreeCollectiblesProduct(product);
-  const obj4 = require(dependencyMap[2]);
-  const result2 = require(dependencyMap[3]).isOrbsExclusiveProduct(product);
-  const obj5 = require(dependencyMap[3]);
-  const tmp6 = product.type === require(dependencyMap[4]).CollectiblesItemType.PROFILE_FRAME && !isProfileFrameGiftingEnabled;
-  const obj6 = importDefault(dependencyMap[5]);
-  const canUseShopDiscountsResult = importDefault(dependencyMap[5]).canUseShopDiscounts(currentUser);
-  const defaultPriceSetAssignmentPurchaseType = require(dependencyMap[2]).getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult);
-  const obj7 = require(dependencyMap[2]);
-  const result3 = require(dependencyMap[2]).extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
+  const currentUser = require(8667) /* useCurrentUser */.useCurrentUser();
+  const obj = require(8667) /* useCurrentUser */;
+  const isProfileFrameGiftingEnabled = require(8669) /* apexExperiment */.useIsProfileFrameGiftingEnabled("useCanGiftProduct");
+  const obj2 = require(8669) /* apexExperiment */;
+  let result = require(6786) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesProduct(product);
+  const obj3 = require(6786) /* getPriceForCollectiblesProduct */;
+  const result1 = require(6786) /* getPriceForCollectiblesProduct */.isFreeCollectiblesProduct(product);
+  const obj4 = require(6786) /* getPriceForCollectiblesProduct */;
+  const result2 = require(6785) /* getProductOrbPrice */.isOrbsExclusiveProduct(product);
+  const obj5 = require(6785) /* getProductOrbPrice */;
+  const tmp6 = product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME && !isProfileFrameGiftingEnabled;
+  const obj6 = importDefault(3776);
+  const canUseShopDiscountsResult = importDefault(3776).canUseShopDiscounts(currentUser);
+  const defaultPriceSetAssignmentPurchaseType = require(6786) /* getPriceForCollectiblesProduct */.getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult);
+  const obj7 = require(6786) /* getPriceForCollectiblesProduct */;
+  const result3 = require(6786) /* getPriceForCollectiblesProduct */.extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
   if (!result) {
     result = result1;
   }
@@ -35,19 +34,19 @@ export const useCanGiftProduct = function useCanGiftProduct(product) {
     result = tmp6;
   }
   if (!result) {
-    result = product.type === require(dependencyMap[4]).CollectiblesItemType.EXTERNAL_SKU;
+    result = product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
     let currency;
     if (null != result3) {
       currency = result3.currency;
     }
-    result = require(dependencyMap[2]).shouldHideGiftingForCurrency(currency);
-    const obj9 = require(dependencyMap[2]);
+    result = require(6786) /* getPriceForCollectiblesProduct */.shouldHideGiftingForCurrency(currency);
+    const obj9 = require(6786) /* getPriceForCollectiblesProduct */;
   }
   if (!result) {
-    result = !require(dependencyMap[6]).isCollectibleGiftingSupported();
-    const obj10 = require(dependencyMap[6]);
+    result = !require(3789) /* isPremiumGiftingSupported */.isCollectibleGiftingSupported();
+    const obj10 = require(3789) /* isPremiumGiftingSupported */;
   }
   return !result;
 };

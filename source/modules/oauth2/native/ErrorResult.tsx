@@ -1,53 +1,59 @@
-// Module ID: 8958
-// Function ID: 70696
+// Module ID: 8965
+// Function ID: 70737
 // Name: error
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5121, 8966, 4126, 1212, 4543, 4337, 2]
 // Exports: default
 
-// Module 8958 (error)
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
-obj.container = obj;
-obj.inner = { position: "text-xs/medium", location: "text-muted", index: null, sa: 1.75 };
-obj.text = { MINIMAL: true, currentScreenId: null };
-const tmp4 = arg1(dependencyMap[2]);
-obj.image = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
-let closure_7 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/oauth2/native/ErrorResult.tsx");
+// Module 8965 (error)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, gap: 16, paddingHorizontal: 16, justifyContent: "center", flexDirection: "column" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.inner = { flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.text = { marginTop: 24, textAlign: "center" };
+_createForOfIteratorHelperLoose.image = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_WARNING };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_WARNING };
+const result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/ErrorResult.tsx");
 
 export default function ErrorResult(error) {
   error = error.error;
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { bottom: true, style: tmp.container };
   obj = { style: tmp.inner };
-  obj = { source: importDefault(dependencyMap[6]), style: tmp.image };
+  obj = { source: importDefault(8966), style: tmp.image };
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.text, variant: "text-md/medium" };
   if (null == error) {
-    const intl = arg1(dependencyMap[8]).intl;
-    error = intl.string(arg1(dependencyMap[8]).t.mqn873);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    error = intl.string(require(1212) /* getSystemLocale */.t.mqn873);
   }
   obj1.children = error;
-  items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   const items1 = [closure_6(closure_4, obj), ];
   let tmp7 = null;
   if (!error.hideFooter) {
     const obj2 = { size: "lg" };
-    const intl2 = arg1(dependencyMap[8]).intl;
-    obj2.text = intl2.string(arg1(dependencyMap[8]).t.cpT0Cq);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj2.text = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
     obj2.onPress = function onPress() {
-      return callback(closure_2[10]).pop();
+      return outer1_1(outer1_2[10]).pop();
     };
-    tmp7 = callback(arg1(dependencyMap[9]).Button, obj2);
+    tmp7 = callback(require(4543) /* Button */.Button, obj2);
   }
   items1[1] = tmp7;
   obj.children = items1;
-  return closure_6(arg1(dependencyMap[5]).SafeAreaPaddingView, obj);
+  return closure_6(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

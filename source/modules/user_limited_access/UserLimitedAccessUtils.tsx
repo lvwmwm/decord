@@ -1,13 +1,13 @@
-// Module ID: 8919
-// Function ID: 70386
+// Module ID: 8926
+// Function ID: 70427
 // Name: isLimitedAccessErrorCode
-// Dependencies: []
+// Dependencies: [653, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 8919 (isLimitedAccessErrorCode)
-const AbortCodes = require(dependencyMap[0]).AbortCodes;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/user_limited_access/UserLimitedAccessUtils.tsx");
+// Module 8926 (isLimitedAccessErrorCode)
+import { AbortCodes } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/user_limited_access/UserLimitedAccessUtils.tsx");
 
 export const isLimitedAccessErrorCode = function isLimitedAccessErrorCode(arg0, arg1) {
   let tmp = arg0 >= 400;

@@ -1,24 +1,25 @@
-// Module ID: 15576
-// Function ID: 118842
+// Module ID: 15693
+// Function ID: 121015
 // Name: useScreenNameSharedValue
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [31, 3982, 3991, 2]
 // Exports: default
 
-// Module 15576 (useScreenNameSharedValue)
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15693 (useScreenNameSharedValue)
+import result from "result";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
+const require = arg1;
+let result = require("module_3991").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
 
 export default function useScreenNameSharedValue() {
-  const rootNavigationRef = arg1(dependencyMap[1]).getRootNavigationRef();
-  const obj = arg1(dependencyMap[1]);
+  let rootNavigationRef = sharedValue(3982).getRootNavigationRef();
+  let obj = sharedValue(3982);
   let isReadyResult;
   if (null != rootNavigationRef) {
     isReadyResult = rootNavigationRef.isReady();
   }
   let str = "unknown";
   if (true === isReadyResult) {
-    const currentRoute = rootNavigationRef.getCurrentRoute();
+    let currentRoute = rootNavigationRef.getCurrentRoute();
     let name;
     if (null != currentRoute) {
       name = currentRoute.name;
@@ -28,8 +29,7 @@ export default function useScreenNameSharedValue() {
       str = name;
     }
   }
-  const sharedValue = arg1(dependencyMap[2]).useSharedValue(str);
-  const arg1 = sharedValue;
+  sharedValue = sharedValue(3991).useSharedValue(str);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     function handleStateChange() {
@@ -48,15 +48,14 @@ export default function useScreenNameSharedValue() {
         }
       }
     }
-    const rootNavigationRef = sharedValue(handleStateChange[1]).getRootNavigationRef();
-    const sharedValue = rootNavigationRef;
+    const rootNavigationRef = sharedValue(outer1_1[1]).getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef.addListener("state", handleStateChange);
       return () => {
         rootNavigationRef.removeListener("state", handleStateChange);
       };
     }
-    const obj = sharedValue(handleStateChange[1]);
+    const obj = sharedValue(outer1_1[1]);
   }, items);
   return sharedValue;
 };

@@ -1,14 +1,15 @@
-// Module ID: 6824
-// Function ID: 53807
+// Module ID: 6829
+// Function ID: 53839
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getIsFamilyCenterV3Enabled, useIsFamilyCenterV3Enabled
 
-// Module 6824 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/parent_tools/FamilyCenterV3Experiment.tsx");
+// Module 6829 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-01-family-center-v3", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterV3Experiment.tsx");
 
 export default apexExperiment;
 export const getIsFamilyCenterV3Enabled = function getIsFamilyCenterV3Enabled(location) {

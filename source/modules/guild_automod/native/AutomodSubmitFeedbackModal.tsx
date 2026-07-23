@@ -1,170 +1,178 @@
-// Module ID: 11001
-// Function ID: 85585
+// Module ID: 11011
+// Function ID: 85635
 // Name: Navbar
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5121, 5788, 1212, 7607, 6750, 1557, 4126, 7495, 1273, 4543, 4324, 11012, 6749, 3830, 5519, 2]
 // Exports: default
 
-// Module 11001 (Navbar)
+// Module 11011 (Navbar)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function Navbar(onClose) {
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { top: true, style: tmp.header };
   obj = { style: tmp.closeButtonContainer };
   obj = {};
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[9]).t.cpT0Cq);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.onPress = onClose.onClose;
-  obj.source = importDefault(dependencyMap[10]);
-  obj.children = callback2(arg1(dependencyMap[8]).HeaderActionButton, obj);
+  obj.source = importDefault(7607);
+  obj.children = callback2(require(5788) /* HeaderActionButton */.HeaderActionButton, obj);
   obj.children = callback2(View, obj);
-  return callback2(arg1(dependencyMap[7]).SafeAreaPaddingView, obj);
+  return callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function SubmitFeedbackScreen(onSubmit) {
-  ({ feedback: closure_0, onChange: closure_1 } = onSubmit);
+  let importDefault;
+  let require;
+  ({ feedback: require, onChange: importDefault } = onSubmit);
   let dependencyMap;
   function label(children) {
-    const obj = { "Null": "isArray", "Null": "isArray", alignItems: "isArray", style: tmp.formRow, children };
-    return callback2(callback(tmp[13]).Text, obj);
+    const obj = { style: _undefined.formRow, variant: "text-md/semibold", color: "interactive-text-active", children };
+    return outer1_7(outer1_0(_undefined[13]).Text, obj);
   }
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   dependencyMap = tmp;
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(6750) /* Feedback */;
   const feedbackOptions = obj.generateFeedbackOptions();
-  let closure_3 = feedbackOptions;
   obj = { style: tmp.container };
-  obj = { style: tmp.headerTitle };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.children = intl.string(arg1(dependencyMap[9]).t.7bdzNo);
-  const items = [callback2(arg1(dependencyMap[13]).Text, obj), , , ];
-  const obj1 = { style: tmp.headerSubtitle };
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[9]).t.Lbpk6m);
-  items[1] = callback2(arg1(dependencyMap[13]).Text, obj1);
+  obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["7bdzNo"]);
+  let items = [callback2(require(4126) /* Text */.Text, obj), , , ];
+  const obj1 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.Lbpk6m);
+  items[1] = callback2(require(4126) /* Text */.Text, obj1);
   items[2] = callback2(View, {
     style: tmp.formBody,
     children: feedbackOptions.map((value) => {
       value = value.value;
+      let closure_0 = value;
       let obj = {};
       obj = {
         onPress() {
-          return callback(value);
+          return outer1_1(closure_0);
         }
       };
-      obj = { active: value === value, style: tmp.radioIndicator };
-      obj.trailing = callback2(value(closure_8[15]).RadioIndicator, obj);
+      obj = { active: closure_0 === value, style: _undefined.radioIndicator };
+      obj.trailing = outer1_7(outer1_0(_undefined[15]).RadioIndicator, obj);
       obj.label = label(value.name);
-      const items = [callback2(value(closure_8[14]).FormRow, obj), ];
+      const items = [outer1_7(outer1_0(_undefined[14]).FormRow, obj), ];
       let tmp2 = arg1 < feedbackOptions.length - 1;
       if (tmp2) {
-        tmp2 = callback2(value(tmp[14]).FormDivider, {});
+        tmp2 = outer1_7(outer1_0(_undefined[14]).FormDivider, {});
       }
       items[1] = tmp2;
       obj.children = items;
-      return closure_8(label.Fragment, obj, value);
+      return outer1_8(label.Fragment, obj, value);
     })
   });
   const obj3 = { style: items1 };
-  const items1 = [tmp.submitButtonContainer, ];
+  items1 = [tmp.submitButtonContainer, ];
   const obj2 = {
     style: tmp.formBody,
     children: feedbackOptions.map((value) => {
       value = value.value;
+      let closure_0 = value;
       let obj = {};
       obj = {
         onPress() {
-          return callback(value);
+          return outer1_1(closure_0);
         }
       };
-      obj = { active: value === value, style: tmp.radioIndicator };
-      obj.trailing = callback2(value(closure_8[15]).RadioIndicator, obj);
+      obj = { active: closure_0 === value, style: _undefined.radioIndicator };
+      obj.trailing = outer1_7(outer1_0(_undefined[15]).RadioIndicator, obj);
       obj.label = label(value.name);
-      const items = [callback2(value(closure_8[14]).FormRow, obj), ];
+      const items = [outer1_7(outer1_0(_undefined[14]).FormRow, obj), ];
       let tmp2 = arg1 < feedbackOptions.length - 1;
       if (tmp2) {
-        tmp2 = callback2(value(tmp[14]).FormDivider, {});
+        tmp2 = outer1_7(outer1_0(_undefined[14]).FormDivider, {});
       }
       items[1] = tmp2;
       obj.children = items;
-      return closure_8(label.Fragment, obj, value);
+      return outer1_8(label.Fragment, obj, value);
     })
   };
-  items1[1] = { paddingBottom: importDefault(dependencyMap[12])().bottom + 16 };
+  items1[1] = { paddingBottom: importDefault(1557)().bottom + 16 };
   const obj5 = { size: "md" };
-  const intl3 = arg1(dependencyMap[9]).intl;
-  obj5.text = intl3.string(arg1(dependencyMap[9]).t.Z6DZZ6);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj5.text = intl3.string(require(1212) /* getSystemLocale */.t.Z6DZZ6);
   obj5.onPress = onSubmit.onSubmit;
-  obj3.children = callback2(arg1(dependencyMap[16]).Button, obj5);
+  obj3.children = callback2(require(4543) /* Button */.Button, obj5);
   items[3] = callback2(View, obj3);
   obj.children = items;
   return callback3(View, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { "Null": "absolute", "Null": 2, "Null": 10, "Null": -12, "Null": 3, "Null": 31, "Null": 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.header = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.headerTitle = { textAlign: "center" };
-obj.headerSubtitle = {};
-obj.closeButtonContainer = { marginVertical: 14 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.formBody = { marginTop: 24, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.formRow = { paddingVertical: 2 };
-obj.radioIndicator = { marginRight: 0 };
-const obj2 = { marginTop: 24, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.submitButtonContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-let closure_9 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/guild_automod/native/AutomodSubmitFeedbackModal.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, paddingHorizontal: 16, paddingVertical: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", paddingTop: 8 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { flexDirection: "row", justifyContent: "flex-end", paddingVertical: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.header = obj1;
+_createForOfIteratorHelperLoose.headerTitle = { textAlign: "center" };
+_createForOfIteratorHelperLoose.headerSubtitle = { textAlign: "center", marginTop: 8 };
+_createForOfIteratorHelperLoose.closeButtonContainer = { marginVertical: 14 };
+_createForOfIteratorHelperLoose.formBody = { marginTop: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.formRow = { paddingVertical: 2 };
+_createForOfIteratorHelperLoose.radioIndicator = { marginRight: 0 };
+let obj3 = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.submitButtonContainer = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginTop: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_automod/native/AutomodSubmitFeedbackModal.tsx");
 
 export default function AutomodSubmitFeedbackModal(onCloseModal) {
   onCloseModal = onCloseModal.onCloseModal;
-  const arg1 = onCloseModal;
   const automodDecision = onCloseModal.automodDecision;
-  const importDefault = automodDecision;
-  const tmp = callback(React.useState(arg1(dependencyMap[11]).Feedback.BUG), 2);
-  const first = tmp[0];
-  const dependencyMap = first;
-  const callback = tmp[1];
+  const tmp = callback(React.useState(onCloseModal(first[11]).Feedback.BUG), 2);
+  first = tmp[0];
+  callback = tmp[1];
   const items = [first, onCloseModal, automodDecision];
-  const screens = React.useMemo(() => function getScreens(arg0) {
-    ({ onCloseModal: closure_0, feedback: closure_1, onChange: closure_2, onSubmit: closure_3 } = arg0);
+  const screens = React.useMemo(() => (function getScreens(arg0) {
+    let closure_0;
+    let closure_1;
+    let closure_2;
+    let _slicedToArray;
+    ({ onCloseModal: closure_0, feedback: closure_1, onChange: closure_2, onSubmit: _slicedToArray } = arg0);
     const obj = {
-      "Bool(false)": "<string:498401282>",
-      "Bool(false)": "<string:4132503554>",
+      ignoreKeyboard: true,
+      title: "",
       customNavbar() {
-        return callback(closure_10, { onClose: closure_0 });
+        return outer3_7(outer3_10, { onClose: closure_0 });
       },
       headerLeft() {
         return null;
       },
       render() {
-        return callback(closure_11, { feedback: closure_1, onChange: closure_2, onSubmit: closure_3 });
+        return outer3_7(outer3_11, { feedback: closure_1, onChange: closure_2, onSubmit: _slicedToArray });
       }
     };
     return { ["SUBMIT_FEEDBACK"]: obj };
-  }({
+  })({
     onCloseModal,
     feedback: first,
     onChange(arg0) {
-      callback2(arg0);
+      outer1_3(arg0);
     },
     onSubmit() {
       let channel;
       let messageId;
-      let obj = callback(closure_2[17]);
-      obj = { feedback_type: closure_2, message_id: closure_1.messageId, content: closure_1.messageContent, decision_id: closure_1.decisionId };
-      obj.trackWithMetadata(constants.GUILD_AUTOMOD_FEEDBACK, obj);
-      ({ messageId, channel } = closure_1);
-      callback(closure_2[18]).executeAlertAction(messageId, channel, callback(closure_2[19]).AutomodAlertActionType.SUBMIT_FEEDBACK);
-      const obj3 = callback(closure_2[18]);
-      callback(closure_2[20]).presentFeedbackSent();
-      callback();
+      let obj = onCloseModal(first[17]);
+      obj = { feedback_type: outer1_2, message_id: outer1_1.messageId, content: outer1_1.messageContent, decision_id: outer1_1.decisionId };
+      obj.trackWithMetadata(outer2_6.GUILD_AUTOMOD_FEEDBACK, obj);
+      ({ messageId, channel } = outer1_1);
+      onCloseModal(first[18]).executeAlertAction(messageId, channel, onCloseModal(first[19]).AutomodAlertActionType.SUBMIT_FEEDBACK);
+      const obj3 = onCloseModal(first[18]);
+      onCloseModal(first[20]).presentFeedbackSent();
+      outer1_0();
     }
   }), items);
-  return callback2(arg1(dependencyMap[21]).Navigator, { screens, initialRouteName: "SUBMIT_FEEDBACK", headerStatusBarHeight: importDefault(dependencyMap[12])().top });
+  return callback2(onCloseModal(first[21]).Navigator, { screens, initialRouteName: "SUBMIT_FEEDBACK", headerStatusBarHeight: automodDecision(first[12])().top });
 };

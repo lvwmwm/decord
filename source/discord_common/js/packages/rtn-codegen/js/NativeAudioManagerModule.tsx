@@ -1,20 +1,20 @@
-// Module ID: 8834
-// Function ID: 69684
+// Module ID: 8841
+// Function ID: 69725
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 8834 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
-const obj = { SPEAKERPHONE: "SPEAKERPHONE", WIRED_HEADSET: "WIRED_HEADSET", EARPIECE: "EARPIECE", BLUETOOTH_HEADSET: "BLUETOOTH_HEADSET", INVALID: "INVALID" };
+// Module 8841 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
+let obj = { SPEAKERPHONE: "SPEAKERPHONE", WIRED_HEADSET: "WIRED_HEADSET", EARPIECE: "EARPIECE", BLUETOOTH_HEADSET: "BLUETOOTH_HEADSET", INVALID: "INVALID" };
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAudioManagerModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAudioManagerModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAudioManagerModule.tsx");
 
 export default enforcing;
 export const AudioDeviceType = obj;
 export const getInvalidAndroidDevice = function getInvalidAndroidDevice() {
-  const obj = { 1547331092: null, 1001084052: null, -74171549: null, 1677985361: null };
+  const obj = { deviceType: 0, simpleDeviceType: null, deviceId: -1, deviceName: "Invalid" };
   obj.simpleDeviceType = obj.INVALID;
   return obj;
 };

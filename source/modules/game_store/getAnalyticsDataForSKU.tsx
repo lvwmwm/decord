@@ -1,13 +1,14 @@
-// Module ID: 4458
-// Function ID: 39344
+// Module ID: 4462
+// Function ID: 39376
 // Name: getAnalyticsDataForSKU
-// Dependencies: []
+// Dependencies: [4167, 653, 2]
 // Exports: default
 
-// Module 4458 (getAnalyticsDataForSKU)
-let closure_0 = importDefault(dependencyMap[0]);
-const SKUFeatureTypes = arg1(dependencyMap[1]).SKUFeatureTypes;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/game_store/getAnalyticsDataForSKU.tsx");
+// Module 4462 (getAnalyticsDataForSKU)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SKUFeatureTypes } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/game_store/getAnalyticsDataForSKU.tsx");
 
 export default function getAnalyticsDataForSKU(applicationId) {
   let flag = arg1;
@@ -18,7 +19,7 @@ export default function getAnalyticsDataForSKU(applicationId) {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const application = application.getApplication(applicationId.applicationId);
+  application = application.getApplication(applicationId.applicationId);
   const price = applicationId.getPrice();
   const price1 = applicationId.getPrice(null, false);
   let obj = { sku_id: applicationId.id, sku_type: applicationId.type, application_id: applicationId.applicationId };

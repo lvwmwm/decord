@@ -1,18 +1,20 @@
-// Module ID: 16303
-// Function ID: 125787
+// Module ID: 16420
+// Function ID: 127961
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 33, 5634, 2]
 // Exports: CreatorMonetizationSettingsDisabledContextProvider, useCreatorMonetizationSettingsDisabled
 
-// Module 16303 (context)
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const context = importAllResult.createContext(undefined);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/creator_monetization/CreatorMonetizationSettingsDisabledContext.tsx");
+// Module 16420 (context)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let context = importAllResult.createContext(undefined);
+const result = require("useCreatorMonetizationRestrictions").fileFinishedImporting("modules/creator_monetization/CreatorMonetizationSettingsDisabledContext.tsx");
 
 export default context;
 export const useCreatorMonetizationSettingsDisabled = function useCreatorMonetizationSettingsDisabled() {
-  const context = importAllResult.useContext(context);
+  context = importAllResult.useContext(context);
   if (null == context) {
     const _Error = Error;
     const error = new Error("useCreatorMonetizationSettingsDisabled must be used within a CreatorMonetizationSettingsDisabledContext");
@@ -25,7 +27,7 @@ export const CreatorMonetizationSettingsDisabledContextProvider = function Creat
   let children;
   let guildId;
   ({ guildId, children } = arg0);
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(5634) /* useCreatorMonetizationRestrictions */;
   obj = { value: obj.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).shouldRestrictUpdatingCreatorMonetizationSettings, children };
-  return <context.Provider {...obj} />;
+  return <context.Provider value={obj.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).shouldRestrictUpdatingCreatorMonetizationSettings}>{children}</context.Provider>;
 };

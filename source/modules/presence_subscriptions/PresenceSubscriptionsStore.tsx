@@ -1,9 +1,18 @@
-// Module ID: 10444
-// Function ID: 80608
+// Module ID: 10454
+// Function ID: 80658
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 4217, 4155, 10455, 4015, 566, 686, 2]
 
-// Module 10444 (_isNativeReflectConstruct)
+// Module 10454 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import items3 from "items3";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_8 from "_isNativeReflectConstruct";
+import { INVITE_EXPIRATION_MS } from "items3";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,53 +37,45 @@ function handleConnectionOpenOrResumed() {
   let closure_10 = {};
   let closure_11 = {};
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-const INVITE_EXPIRATION_MS = arg1(dependencyMap[7]).INVITE_EXPIRATION_MS;
 let closure_10 = {};
 let closure_11 = {};
-const delayedCall = new arg1(dependencyMap[9]).DelayedCall(3000, function flush() {
+const delayedCall = new require("_createForOfIteratorHelperLoose").DelayedCall(3000, function flush() {
   let length;
   const items = [];
   const entries = Object.entries(closure_11);
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp = closure_7;
-      let tmp2 = closure_7(entries[num], 2);
-      let tmp3 = tmp2[1];
-      let arr = items.push(tmp3);
-      let tmp5 = closure_10;
-      closure_10[tmp2[0]] = tmp3;
-      let tmp6 = closure_11;
-      delete r2[r9];
+      let tmp3 = callback3;
+      let tmp4 = callback3(entries[num], 2);
+      let tmp5 = tmp4[1];
+      let arr = items.push(tmp5);
+      let tmp7 = closure_10;
+      closure_10[tmp4[0]] = tmp5;
+      let tmp8 = closure_11;
+      delete tmp[tmp2];
       num = num + 1;
       length = entries.length;
     } while (num < length);
   }
   if (0 !== items.length) {
-    importDefault(dependencyMap[8]).subscribeActivities(items);
-    const obj = importDefault(dependencyMap[8]);
+    importDefault(10455).subscribeActivities(items);
+    const obj = importDefault(10455);
   }
 });
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class PresenceSubscriptionsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, PresenceSubscriptionsStore);
-      obj = closure_5(PresenceSubscriptionsStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, PresenceSubscriptionsStore);
+      obj = outer1_5(PresenceSubscriptionsStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -83,26 +84,25 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = PresenceSubscriptionsStore;
   callback2(PresenceSubscriptionsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
     }
   };
   const items = [obj, ];
   obj = {
     key: "isSubscribed",
     value(arg0) {
-      return callback4(arg0);
+      return outer1_15(arg0);
     }
   };
   items[1] = obj;
   return callback(PresenceSubscriptionsStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "PresenceSubscriptionsStore";
-tmp3 = new tmp3(importDefault(dependencyMap[11]), {
+tmp3 = new tmp3(require("dispatcher"), {
   PRESENCE_SUBSCRIPTIONS_ADD: function handleSubscriptionAdd(subscription) {
     let applicationId;
     let channelId;
@@ -118,12 +118,12 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
     let flag2 = false;
     if (0 < entries.length) {
       do {
-        let tmp2 = closure_7;
-        let tmp3 = closure_7(entries[num], 2);
-        let first = tmp3[0];
-        if (tmp3[1].expiresAt < timestamp) {
-          let tmp5 = closure_10;
-          delete r4[r14];
+        let tmp4 = callback3;
+        let tmp5 = callback3(entries[num], 2);
+        let first = tmp5[0];
+        if (tmp5[1].expiresAt < timestamp) {
+          let tmp7 = closure_10;
+          delete tmp[tmp2];
           flag = true;
         }
         num = num + 1;
@@ -133,30 +133,30 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
     const entries1 = Object.entries(closure_11);
     let flag3 = flag2;
     let num2 = 0;
-    let tmp6 = flag2;
+    let tmp8 = flag2;
     if (0 < entries1.length) {
       do {
-        let tmp7 = closure_7;
-        let tmp8 = closure_7(entries1[num2], 2);
-        let first1 = tmp8[0];
-        if (tmp8[1].expiresAt < timestamp) {
-          let tmp10 = closure_11;
-          delete r4[r14];
+        let tmp9 = callback3;
+        let tmp10 = callback3(entries1[num2], 2);
+        let first1 = tmp10[0];
+        if (tmp10[1].expiresAt < timestamp) {
+          let tmp12 = closure_11;
+          delete tmp[tmp2];
           flag3 = true;
         }
         num2 = num2 + 1;
-        tmp6 = flag3;
+        tmp8 = flag3;
       } while (num2 < entries1.length);
     }
     ({ applicationId, partyId } = subscription);
     ({ userId, messageId, channelId, inviteTime } = subscription);
     if (_isSubscribed(subscription)) {
-      return tmp6;
+      return tmp8;
     } else {
       const _Date = Date;
       const sum = inviteTime + INVITE_EXPIRATION_MS;
       if (sum < Date.now()) {
-        return tmp6;
+        return tmp8;
       } else {
         const _Date2 = Date;
         const obj = { userId, applicationId, partyId, messageId, channelId, expiresAt: INVITE_EXPIRATION_MS + Date.now() };
@@ -173,6 +173,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
     let closure_11 = {};
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/presence_subscriptions/PresenceSubscriptionsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/presence_subscriptions/PresenceSubscriptionsStore.tsx");
 
 export default tmp3;

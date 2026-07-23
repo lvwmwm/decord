@@ -1,20 +1,26 @@
-// Module ID: 9608
-// Function ID: 74860
+// Module ID: 9615
+// Function ID: 74901
 // Name: getStickerAssetUrl
-// Dependencies: []
+// Dependencies: [31, 27, 1278, 33, 4799, 4466, 1212, 7686, 9616, 5085, 3976, 5152, 5153, 2]
 // Exports: default
 
-// Module 9608 (getStickerAssetUrl)
+// Module 9615 (getStickerAssetUrl)
+import "result";
+import { PixelRatio } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getStickerAssetUrl(sticker, closure_7, animated) {
-  if (sticker.format_type === closure_7(dependencyMap[4]).StickerFormat.LOTTIE) {
-    let stickerAssetUrl = closure_7(dependencyMap[5]).getStickerAssetUrl(sticker);
-    const obj5 = closure_7(dependencyMap[5]);
-  } else if (sticker.format_type === closure_7(dependencyMap[4]).StickerFormat.APNG) {
+  if (sticker.format_type === require(4799) /* StickerFormat */.StickerFormat.LOTTIE) {
+    let stickerAssetUrl = require(4466) /* getStickerPackPreviewSticker */.getStickerAssetUrl(sticker);
+    const obj5 = require(4466) /* getStickerPackPreviewSticker */;
+  } else if (sticker.format_type === require(4799) /* StickerFormat */.StickerFormat.APNG) {
     let obj = { isPreview: !animated, size: closure_7 };
-    stickerAssetUrl = closure_7(dependencyMap[5]).getStickerAssetUrl(sticker, obj);
-    const obj3 = closure_7(dependencyMap[5]);
+    stickerAssetUrl = require(4466) /* getStickerPackPreviewSticker */.getStickerAssetUrl(sticker, obj);
+    const obj3 = require(4466) /* getStickerPackPreviewSticker */;
   } else {
-    obj = closure_7(dependencyMap[5]);
+    obj = require(4466) /* getStickerPackPreviewSticker */;
     obj = { isPreview: !animated, size: PixelRatio.getPixelSizeForLayoutSize(closure_7) };
     stickerAssetUrl = obj.getStickerAssetUrl(sticker, obj);
   }
@@ -24,11 +30,7 @@ function getStickerAssetUrl(sticker, closure_7, animated) {
   }
   return str;
 }
-importAll(dependencyMap[0]);
-const PixelRatio = arg1(dependencyMap[1]).PixelRatio;
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/stickers/native/Sticker.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stickers/native/Sticker.tsx");
 
 export default function Sticker(opaque) {
   let animated;
@@ -47,10 +49,10 @@ export default function Sticker(opaque) {
     num = 1;
   }
   const tmp = getStickerAssetUrl(sticker, size, animated);
-  const intl = arg1(dependencyMap[6]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   let obj = { stickerName: sticker.name };
-  const formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[6]).t.rk6pOw, obj);
-  if (sticker.format_type === arg1(dependencyMap[4]).StickerFormat.LOTTIE) {
+  const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.rk6pOw, obj);
+  if (sticker.format_type === require(4799) /* StickerFormat */.StickerFormat.LOTTIE) {
     obj = { url: tmp };
     const id = sticker.id;
     let str4 = "";
@@ -61,36 +63,36 @@ export default function Sticker(opaque) {
     obj.width = size;
     obj.height = size;
     obj.opacity = num;
-    const NativeLottieRenderMode = arg1(dependencyMap[7]).NativeLottieRenderMode;
+    const NativeLottieRenderMode = require(7686) /* NativeLottieView */.NativeLottieRenderMode;
     obj.renderMode = animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
     obj.accessibilityLabel = formatToPlainStringResult;
-    return jsx(importDefault(dependencyMap[7]), obj);
+    return jsx(importDefault(7686), { url: tmp });
   } else {
-    if (sticker.format_type === arg1(dependencyMap[4]).StickerFormat.APNG) {
+    if (sticker.format_type === require(4799) /* StickerFormat */.StickerFormat.APNG) {
       if ("type" in sticker) {
-        let obj1 = arg1(dependencyMap[5]);
+        let obj1 = require(4466) /* getStickerPackPreviewSticker */;
       }
       obj = {};
       obj1 = { height: size, width: size, opacity: num };
       obj.style = obj1;
       obj.url = tmp;
-      let obj4 = arg1(dependencyMap[5]);
+      let obj4 = require(4466) /* getStickerPackPreviewSticker */;
       const _HermesInternal = HermesInternal;
       obj.name = "" + sticker.id + "." + obj4.getStickerExtensionFromFormatType(sticker.format_type);
       obj.accessibilityLabel = formatToPlainStringResult;
       const obj2 = {};
       const merged = Object.assign(obj);
-      return jsx(importDefault(dependencyMap[8]), obj2);
+      return jsx(importDefault(9616), {});
     }
     const obj3 = { resizeMode: "contain" };
     obj4 = { height: size, width: size, opacity: num };
     obj3.style = obj4;
     const tmp14 = jsx;
-    const tmp17 = importDefault(dependencyMap[9]);
+    const tmp17 = importDefault(5085);
     if (obj9.isThemeDark(theme.theme)) {
-      let tmp20Result = tmp20(tmp21[11]);
+      let tmp20Result = tmp20(5152);
     } else {
-      tmp20Result = tmp20(tmp21[12]);
+      tmp20Result = tmp20(5153);
     }
     obj3.placeholder = tmp20Result;
     const obj5 = { uri: tmp };

@@ -1,42 +1,39 @@
-// Module ID: 13905
-// Function ID: 105163
+// Module ID: 14019
+// Function ID: 107319
 // Name: useDismissSheetOrCollapseDock
-// Dependencies: []
+// Dependencies: [5, 31, 4976, 13998, 14016, 4098, 10468, 14020, 9449, 9450, 9451, 6970, 6969, 4979, 6959, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 13905 (useDismissSheetOrCollapseDock)
+// Module 14019 (useDismissSheetOrCollapseDock)
+import showActionSheet from "showActionSheet";
+import result from "result";
+import { QuestDockMode } from "QuestsExperimentLocations";
+
+const require = arg1;
 function useDismissSheetOrCollapseDock() {
-  const setRestingQuestDockMode = React.useContext(arg1(dependencyMap[3]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const arg1 = setRestingQuestDockMode;
-  const isInQuestBottomSheet = React.useContext(arg1(dependencyMap[4]).QuestBottomSheetContext).isInQuestBottomSheet;
-  const importDefault = isInQuestBottomSheet;
+  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(13998).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = React.useContext(setRestingQuestDockMode(14016).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return React.useCallback(() => {
     if (isInQuestBottomSheet) {
-      isInQuestBottomSheet(closure_2[5]).hideActionSheet("QuestBottomSheet");
-      const obj = isInQuestBottomSheet(closure_2[5]);
+      isInQuestBottomSheet(outer1_2[5]).hideActionSheet("QuestBottomSheet");
+      const obj = isInQuestBottomSheet(outer1_2[5]);
     } else {
-      setRestingQuestDockMode(constants.COLLAPSED);
+      setRestingQuestDockMode(outer1_5.COLLAPSED);
     }
   }, items);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetHooks.tsx");
+let result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetHooks.tsx");
 
 export const useWatchTaskPressHandler = function useWatchTaskPressHandler(questId) {
   questId = questId.questId;
-  const arg1 = questId;
   const sourceQuestContent = questId.sourceQuestContent;
-  const importDefault = sourceQuestContent;
-  const tmp = useDismissSheetOrCollapseDock();
+  let tmp = useDismissSheetOrCollapseDock();
   const dependencyMap = tmp;
-  const questImpression = arg1(dependencyMap[6]).useQuestImpression();
-  let closure_3 = questImpression;
+  const questImpression = questId(10468).useQuestImpression();
   const items = [questId, tmp, questImpression, sourceQuestContent];
   return React.useCallback(() => {
-    const tmp = tmp();
+    tmp = tmp();
     let obj = { questId };
     let questContentPosition;
     if (null != questImpression) {
@@ -80,16 +77,12 @@ export const useWatchTaskPressHandler = function useWatchTaskPressHandler(questI
 };
 export const useMobileActivityPressHandler = function useMobileActivityPressHandler(questId) {
   questId = questId.questId;
-  const arg1 = questId;
   const sourceQuestContent = questId.sourceQuestContent;
-  const importDefault = sourceQuestContent;
   const launchMobileActivity = questId.launchMobileActivity;
-  const dependencyMap = launchMobileActivity;
   const tmp2 = useDismissSheetOrCollapseDock();
   const callback = tmp2;
-  const questImpression = arg1(dependencyMap[6]).useQuestImpression();
-  const React = questImpression;
+  const questImpression = questId(launchMobileActivity[6]).useQuestImpression();
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [questId, tmp2, launchMobileActivity, questImpression, sourceQuestContent];
-  return React.useCallback(callback(tmp), items);
+  return questImpression.useCallback(callback(tmp), items);
 };

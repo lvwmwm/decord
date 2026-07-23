@@ -1,9 +1,11 @@
 // Module ID: 1067
-// Function ID: 12257
+// Function ID: 12258
 // Name: baggageHeaderHasSentryValues
-// Dependencies: []
+// Dependencies: [1004]
 
 // Module 1067 (baggageHeaderHasSentryValues)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.baggageHeaderHasSentryValues = function baggageHeaderHasSentryValues(baggage) {
   const parts = baggage.split(",");
@@ -17,7 +19,7 @@ arg5.createHeadersSafely = function createHeadersSafely(request_headers) {
   return headers;
 };
 arg5.getFullURL = function getFullURL(url) {
-  const uRL = new URL(url, arg1(arg6[0]).WINDOW.location.origin);
+  const uRL = new URL(url, require(1004) /* ignoreNextOnError */.WINDOW.location.origin);
   return uRL.href;
 };
 arg5.isPerformanceResourceTiming = function isPerformanceResourceTiming(entryType) {

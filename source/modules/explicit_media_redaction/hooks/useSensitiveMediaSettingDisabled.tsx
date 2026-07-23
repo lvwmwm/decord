@@ -1,13 +1,12 @@
-// Module ID: 13612
-// Function ID: 103120
+// Module ID: 13726
+// Function ID: 105276
 // Name: useSensitiveMediaSettingDisabled
-// Dependencies: []
+// Dependencies: [13727, 2]
 // Exports: useSensitiveMediaSettingDisabled
 
-// Module 13612 (useSensitiveMediaSettingDisabled)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/explicit_media_redaction/hooks/useSensitiveMediaSettingDisabled.tsx");
+// Module 13726 (useSensitiveMediaSettingDisabled)
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/hooks/useSensitiveMediaSettingDisabled.tsx");
 
 export const useSensitiveMediaSettingDisabled = function useSensitiveMediaSettingDisabled() {
-  return require(dependencyMap[0]).useIsParentallyControlled();
+  return require(13727) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
 };

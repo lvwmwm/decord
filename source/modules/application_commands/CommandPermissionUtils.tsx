@@ -1,53 +1,58 @@
-// Module ID: 8170
-// Function ID: 64514
+// Module ID: 8176
+// Function ID: 64551
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1352, 1838, 4566, 653, 8177, 7925, 6755, 1881, 483, 8180, 44, 6753, 6754, 2]
 // Exports: hasAccess
 
-// Module 8170 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8176 (_createForOfIteratorHelperLoose)
+import { ChannelRecordBase } from "_callSuper";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { BuiltInSectionId } from "TRUE_OPTION_NAME";
+import { Permissions } from "ME";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -102,14 +107,16 @@ function computeAllowedForChannel(permissions, context, guild_id) {
       }
       id2 = id;
     }
-    const obj = require(dependencyMap[12]);
-    if (null != permissions[obj.toPermissionKey(obj, id2, closure_0(undefined, closure_3[6]).ApplicationCommandPermissionType.CHANNEL)]) {
+    const obj = require(6754) /* toPermissionKey */;
+    const tmp3 = permissions[obj.toPermissionKey(obj, id2, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
+    if (null != tmp3) {
       return tmp3.permission;
     } else {
-      const obj2 = require(dependencyMap[12]);
-      const obj3 = require(dependencyMap[11]);
+      const obj2 = require(6754) /* toPermissionKey */;
+      const obj3 = require(6753) /* _createForOfIteratorHelperLoose */;
+      const tmp8 = permissions[obj2.toPermissionKey(obj2, require(6753) /* _createForOfIteratorHelperLoose */.allChannelsSentinel(guild_id), require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL)];
       let permission = null;
-      if (null != permissions[obj2.toPermissionKey(obj2, require(dependencyMap[11]).allChannelsSentinel(guild_id), closure_0(undefined, closure_3[6]).ApplicationCommandPermissionType.CHANNEL)]) {
+      if (null != tmp8) {
         permission = tmp8.permission;
       }
       return permission;
@@ -121,8 +128,9 @@ function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImperso
     return null;
   } else {
     if (!isImpersonating) {
-      const obj = require(dependencyMap[12]);
-      if (null != permissions[obj.toPermissionKey(obj, userId, closure_0(undefined, closure_3[6]).ApplicationCommandPermissionType.USER)]) {
+      const obj = require(6754) /* toPermissionKey */;
+      const tmp4 = permissions[obj.toPermissionKey(obj, userId, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
+      if (null != tmp4) {
         return tmp4.permission;
       }
     }
@@ -135,8 +143,8 @@ function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImperso
       while (true) {
         let tmp8 = require;
         let tmp9 = dependencyMap;
-        let obj2 = require(dependencyMap[12]);
-        let tmp10 = permissions[obj2.toPermissionKey(obj2, iter2.value, closure_0(undefined, closure_3[6]).ApplicationCommandPermissionType.ROLE)];
+        let obj2 = require(6754) /* toPermissionKey */;
+        let tmp10 = permissions[obj2.toPermissionKey(obj2, iter2.value, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
         if (null != tmp10) {
           flag3 = true;
           if (tmp10.permission) {
@@ -154,8 +162,8 @@ function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImperso
     } else {
       let tmp11 = null;
       if (null != guild_id) {
-        const obj3 = require(dependencyMap[12]);
-        tmp11 = permissions[obj3.toPermissionKey(obj3, guild_id, closure_0(undefined, closure_3[6]).ApplicationCommandPermissionType.ROLE)];
+        const obj3 = require(6754) /* toPermissionKey */;
+        tmp11 = permissions[obj3.toPermissionKey(obj3, guild_id, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
       }
       let permission = null;
       if (null != tmp11) {
@@ -165,13 +173,8 @@ function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImperso
     }
   }
 }
-const ChannelRecordBase = require(dependencyMap[0]).ChannelRecordBase;
-let closure_5 = importDefault(dependencyMap[1]);
-const BuiltInSectionId = require(dependencyMap[2]).BuiltInSectionId;
-const Permissions = require(dependencyMap[3]).Permissions;
-const obj = { ALLOWED: 0, [0]: "ALLOWED", NSFW_NOT_ALLOWED: 1, [1]: "NSFW_NOT_ALLOWED", WRONG_COMMAND_TYPE: 2, [2]: "WRONG_COMMAND_TYPE", PREDICATE_FAILED: 3, [3]: "PREDICATE_FAILED", CONTEXT_NOT_ALLOWED: 4, [4]: "CONTEXT_NOT_ALLOWED", MISSING_BASE_PERMISSIONS: 5, [5]: "MISSING_BASE_PERMISSIONS", CHANNEL_DENIED: 6, [6]: "CHANNEL_DENIED", USER_DENIED: 7, [7]: "USER_DENIED" };
-const _module = require(dependencyMap[13]);
-const result = _module.fileFinishedImporting("modules/application_commands/CommandPermissionUtils.tsx");
+let obj = { ALLOWED: 0, [0]: "ALLOWED", NSFW_NOT_ALLOWED: 1, [1]: "NSFW_NOT_ALLOWED", WRONG_COMMAND_TYPE: 2, [2]: "WRONG_COMMAND_TYPE", PREDICATE_FAILED: 3, [3]: "PREDICATE_FAILED", CONTEXT_NOT_ALLOWED: 4, [4]: "CONTEXT_NOT_ALLOWED", MISSING_BASE_PERMISSIONS: 5, [5]: "MISSING_BASE_PERMISSIONS", CHANNEL_DENIED: 6, [6]: "CHANNEL_DENIED", USER_DENIED: 7, [7]: "USER_DENIED" };
+const result = require("TRUE_OPTION_NAME").fileFinishedImporting("modules/application_commands/CommandPermissionUtils.tsx");
 
 export const HasAccessResult = obj;
 export const hasAccess = function hasAccess(type, arg1, applicationAllowedForChannel) {
@@ -199,7 +202,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
       }
     }
     if (null != context) {
-      let obj = require(dependencyMap[5]);
+      obj = require(7925) /* computeAllowNsfw */;
       const commandContextType = obj.computeCommandContextType(context, commandBotId);
     }
     if (null != type.contexts) {
@@ -209,13 +212,13 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           return obj.CONTEXT_NOT_ALLOWED;
         }
       }
-    } else if (type.inputType === require(dependencyMap[6]).ApplicationCommandInputType.BOT) {
+    } else if (type.inputType === require(6755) /* ApplicationCommandSectionType */.ApplicationCommandInputType.BOT) {
       if (false === type.dmPermission) {
-        if (commandContextType === require(dependencyMap[7]).InteractionContextType.BOT_DM) {
+        if (commandContextType === require(1881) /* PermissionOverwriteType */.InteractionContextType.BOT_DM) {
           return obj.CONTEXT_NOT_ALLOWED;
         }
       }
-      if (commandContextType === require(dependencyMap[7]).InteractionContextType.PRIVATE_CHANNEL) {
+      if (commandContextType === require(1881) /* PermissionOverwriteType */.InteractionContextType.PRIVATE_CHANNEL) {
         return obj.CONTEXT_NOT_ALLOWED;
       }
     }
@@ -232,8 +235,8 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
     } else {
       let contextGuildId;
       if (null != context) {
-        contextGuildId = require(dependencyMap[5]).getContextGuildId(context);
-        const obj3 = require(dependencyMap[5]);
+        contextGuildId = require(7925) /* computeAllowNsfw */.getContextGuildId(context);
+        const obj3 = require(7925) /* computeAllowNsfw */;
       }
       if (null == contextGuildId) {
         return obj.ALLOWED;
@@ -244,7 +247,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           if (isUserInstalled) {
             const integration_types = type.integration_types;
             if (null != integration_types) {
-              if (integration_types.includes(require(dependencyMap[9]).ApplicationIntegrationType.USER_INSTALL)) {
+              if (integration_types.includes(require(8180) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL)) {
                 return obj.ALLOWED;
               }
             }
@@ -258,7 +261,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
             }
           }
           if (context instanceof ChannelRecordBase) {
-            importDefault(dependencyMap[10])(undefined !== applicationAllowedForChannel, "missing applicationAllowedForChannel");
+            importDefault(44)(undefined !== applicationAllowedForChannel, "missing applicationAllowedForChannel");
             const tmp33 = computeAllowedForChannel(type.permissions, context, contextGuildId);
             if (isExplicitDeny(tmp33)) {
               return obj.CHANNEL_DENIED;
@@ -275,14 +278,14 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
             if (!isExplicitDeny(tmp43)) {
               if (!isExplicitDeny(applicationAllowedForUser)) {
                 if (null != type.defaultMemberPermissions) {
-                  if (!obj4.equals(type.defaultMemberPermissions, require(dependencyMap[11]).DISABLED_BY_DEFAULT_PERMISSION_FLAG)) {
+                  if (!obj4.equals(type.defaultMemberPermissions, require(6753) /* _createForOfIteratorHelperLoose */.DISABLED_BY_DEFAULT_PERMISSION_FLAG)) {
                     if (obj5.has(computedPermissions, type.defaultMemberPermissions)) {
                       let USER_DENIED2 = obj.ALLOWED;
                     }
-                    const obj5 = importAll(dependencyMap[8]);
+                    obj5 = importAll(483);
                   }
                   USER_DENIED2 = obj.USER_DENIED;
-                  const obj4 = importAll(dependencyMap[8]);
+                  obj4 = importAll(483);
                 } else {
                   USER_DENIED = obj.ALLOWED;
                 }
@@ -292,7 +295,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           }
           return USER_DENIED;
         }
-        const obj6 = importAll(dependencyMap[8]);
+        obj6 = importAll(483);
       }
     }
   } else {

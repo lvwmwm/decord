@@ -1,36 +1,34 @@
-// Module ID: 8140
-// Function ID: 64393
+// Module ID: 8146
+// Function ID: 64430
 // Name: useExplicitMediaActions
-// Dependencies: []
+// Dependencies: [5, 57, 31, 4029, 2]
 // Exports: useExplicitMediaActions
 
-// Module 8140 (useExplicitMediaActions)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaActions.tsx");
+// Module 8146 (useExplicitMediaActions)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaActions.tsx");
 
 export const useExplicitMediaActions = function useExplicitMediaActions(onError) {
   onError = onError.onError;
-  const arg1 = onError;
   const onSuccess = onError.onSuccess;
-  const dependencyMap = onSuccess;
   const report = onError.report;
-  const callback = report;
-  const tmp = callback2(React.useState(false), 2);
-  const first = tmp[0];
-  const callback2 = tmp[1];
-  const React = first;
+  const tmp = callback(first.useState(false), 2);
+  first = tmp[0];
+  callback = tmp[1];
   const items = [first, onError, onSuccess, report];
   return {
-    reportFalsePositive: React.useCallback(callback(async () => {
-      if (!closure_4) {
-        callback2(true);
-        yield closure_2();
-        if (null != callback) {
-          callback();
+    reportFalsePositive: first.useCallback(report(async () => {
+      if (!outer1_4) {
+        outer1_3(true);
+        yield outer1_2();
+        if (null != outer1_1) {
+          outer1_1();
         }
-        callback2(false);
+        outer1_3(false);
       }
     }), items),
     isReportFalsePositiveLoading: first

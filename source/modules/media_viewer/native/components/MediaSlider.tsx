@@ -1,75 +1,81 @@
-// Module ID: 8279
-// Function ID: 65370
+// Module ID: 8285
+// Function ID: 65407
 // Name: num2
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 477, 5450, 22, 666, 4704, 4660, 1212, 8286, 8288, 4126, 7523, 8290, 689, 2]
 // Exports: default
 
-// Module 8279 (num2)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: {}, icon: { marginRight: 16 } };
+// Module 8285 (num2)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "set";
+import set from "get ActivityIndicator";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1, marginHorizontal: 12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, icon: { marginRight: 16 } };
 let num = 16;
-obj = {};
-const tmp2 = arg1(dependencyMap[3]);
+_createForOfIteratorHelperLoose = {};
 let num2;
-if (obj4.isAndroid()) {
+if (set.isAndroid()) {
   num2 = 12;
 }
-obj.lineHeight = num2;
-obj.centerText = obj;
-const obj1 = {};
-const obj4 = arg1(dependencyMap[5]);
-if (obj6.isAndroid()) {
+_createForOfIteratorHelperLoose.lineHeight = num2;
+_createForOfIteratorHelperLoose.centerText = _createForOfIteratorHelperLoose;
+let obj1 = { position: "relative", flex: 1, marginHorizontal: null, justifyContent: "center" };
+if (set.isAndroid()) {
   num = 0;
 }
 obj1.marginHorizontal = num;
-obj.sliderContainer = obj1;
-obj.progressSliderContainer = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
-obj.timelineBackgroundSlider = {};
-obj.downloadProgressSlider = {};
-obj.playbackSlider = { useFramePreviewOverrideStore: 0.0000000000000000000000000000000000000000000000000007099545342893625, explicitContentGuilds: 557057.077966721, handleUserUpdate: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004280798090950941 };
-let closure_8 = obj.createStyles(obj);
-const obj6 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/media_viewer/native/components/MediaSlider.tsx");
+_createForOfIteratorHelperLoose.sliderContainer = obj1;
+_createForOfIteratorHelperLoose.progressSliderContainer = { position: "relative", flex: 1, marginHorizontal: 0, justifyContent: "center" };
+_createForOfIteratorHelperLoose.timelineBackgroundSlider = { position: "absolute", width: "100%", backgroundColor: "transparent", zIndex: 0 };
+_createForOfIteratorHelperLoose.downloadProgressSlider = { position: "absolute", width: "100%", backgroundColor: "transparent", zIndex: 1 };
+_createForOfIteratorHelperLoose.playbackSlider = { position: "absolute", width: "100%", zIndex: 2 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("modules/media_viewer/native/components/MediaSlider.tsx");
 
 export default function MediaSlider(controls) {
+  let _slicedToArray;
+  let closure_7;
+  let dependencyMap;
   let tmp6;
   controls = controls.controls;
-  const arg1 = controls;
   const paused = controls.paused;
-  const importDefault = paused;
-  ({ setPaused: closure_2, onPlayPress: closure_3 } = controls);
-  const tmp = callback4();
-  const React = React.useRef(false);
+  ({ setPaused: dependencyMap, onPlayPress: _slicedToArray } = controls);
+  const tmp = ref();
+  React = React.useRef(false);
   const tmp2 = callback(React.useState(0), 2);
   const first = tmp2[0];
   let closure_5 = tmp2[1];
   const tmp4 = callback(React.useState(0), 2);
   const callback2 = tmp4[1];
   [tmp6, closure_7] = callback(React.useState("transparent"), 2);
-  const ref = React.useRef(0);
-  const callback4 = ref;
+  ref = React.useRef(0);
   const tmp8 = callback(React.useState(0), 2);
   let closure_9 = tmp8[1];
-  const tmp9 = importDefault(dependencyMap[6])(() => paused(closure_2[7]).throttle((arg0) => {
-    callback(arg0);
+  const tmp9 = paused(5450)(() => paused(outer1_2[7]).throttle((arg0) => {
+    outer1_5(arg0);
   }, 100));
-  let closure_11 = importDefault(dependencyMap[6])(() => paused(closure_2[7]).throttle((arg0) => {
-    callback2(arg0);
+  let closure_10 = tmp9;
+  let closure_11 = paused(5450)(() => paused(outer1_2[7]).throttle((arg0) => {
+    outer1_6(arg0);
     let str = "transparent";
     if (1 === arg0) {
-      const obj = callback(closure_2[8])("#FFFFFF");
-      str = callback(closure_2[8])("#FFFFFF").alpha(0.2).hex();
-      const alphaResult = callback(closure_2[8])("#FFFFFF").alpha(0.2);
+      const obj = paused(outer2_2[8])("#FFFFFF");
+      str = paused(outer2_2[8])("#FFFFFF").alpha(0.2).hex();
+      const alphaResult = paused(outer2_2[8])("#FFFFFF").alpha(0.2);
     }
-    closure_7(str);
+    outer1_7(str);
   }, 100));
   const items = [tmp9];
   const effect = React.useEffect(() => () => {
-    closure_10.cancel();
+    outer1_10.cancel();
   }, items);
   const subscribe = controls.useSubscribe((arg0, current) => {
     tmp9(arg0);
@@ -81,10 +87,10 @@ export default function MediaSlider(controls) {
   });
   const items1 = [controls, paused];
   const items2 = [controls];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     if (!paused) {
       controls.pause(true);
-      closure_4.current = true;
+      result.current = true;
     }
   }, items1);
   const callback1 = React.useCallback((arg0) => {
@@ -94,14 +100,14 @@ export default function MediaSlider(controls) {
       ref.current = false;
     }
   }, items2);
-  let obj = arg1(dependencyMap[9]);
+  let obj = controls(4704);
   obj = { style: items3 };
-  const items3 = [tmp.container, controls.style];
+  items3 = [tmp.container, controls.style];
   const timeFormat = obj.getTimeFormat(first);
   obj = { style: tmp.icon, accessibilityRole: "button" };
-  const intl = arg1(dependencyMap[11]).intl;
+  const intl = controls(1212).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[11]).t;
+  const t = controls(1212).t;
   if (paused) {
     let stringResult = string(t.RscU7I);
   } else {
@@ -114,68 +120,75 @@ export default function MediaSlider(controls) {
     }
     controls.pause(!paused);
   };
-  obj.hitSlop = {};
+  obj.hitSlop = { top: 8, right: 8, bottom: 8, left: 8 };
   if (paused) {
-    let PauseIcon = tmp20(tmp21[12]).PlayIcon;
+    let PauseIcon = tmp20(8286).PlayIcon;
   } else {
-    PauseIcon = tmp20(tmp21[13]).PauseIcon;
+    PauseIcon = tmp20(8288).PauseIcon;
   }
-  obj.children = callback2(PauseIcon, { "Bool(false)": "event", "Bool(false)": "events" });
-  const items4 = [callback2(arg1(dependencyMap[10]).PressableOpacity, obj), , , ];
+  obj.children = callback2(PauseIcon, { size: "md", color: "white" });
+  const items4 = [callback2(controls(4660).PressableOpacity, obj), , , ];
+  const obj1 = { style: null, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium" };
   const items5 = [tmp.centerText, { width: tmp8[0] }];
-  items4[1] = callback2(arg1(dependencyMap[14]).Text, { style: items5, children: timeFormat });
-  const obj1 = { style: tmp.sliderContainer };
-  const obj2 = { pointerEvents: "none", style: tmp.progressSliderContainer };
-  const obj3 = { style: tmp.timelineBackgroundSlider };
+  obj1.style = items5;
+  obj1.children = timeFormat;
+  items4[1] = callback2(controls(4126).Text, obj1);
+  const obj2 = { style: tmp.sliderContainer };
+  const obj3 = { pointerEvents: "none", style: tmp.progressSliderContainer };
+  const obj4 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1 };
   const tmp15 = callback3;
   const tmp16 = closure_5;
   const tmp17 = callback2;
   const tmp19 = callback2;
   const tmp5 = callback(React.useState("transparent"), 2);
-  let obj6 = importDefault(dependencyMap[8])("#FFFFFF");
-  const tmp22 = importDefault(dependencyMap[15]);
-  obj3.thumbTintColor = obj6.alpha(0).hex();
-  const alphaResult = obj6.alpha(0);
-  const obj9 = importDefault(dependencyMap[8])("#FFFFFF");
-  obj3.minimumTrackTintColor = importDefault(dependencyMap[8])("#FFFFFF").alpha(0.1).hex();
-  const alphaResult1 = importDefault(dependencyMap[8])("#FFFFFF").alpha(0.1);
-  const obj11 = importDefault(dependencyMap[8])("#FFFFFF");
-  obj3.maximumTrackTintColor = importDefault(dependencyMap[8])("#FFFFFF").alpha(0.1).hex();
-  const items6 = [callback2(tmp22, obj3), ];
-  const obj4 = { style: tmp.downloadProgressSlider, value: tmp4[0], minimumValue: 0, maximumValue: 1 };
-  const alphaResult2 = importDefault(dependencyMap[8])("#FFFFFF").alpha(0.1);
-  const tmp23 = importDefault(dependencyMap[15]);
-  const obj14 = importDefault(dependencyMap[8])("#FFFFFF");
-  obj4.thumbTintColor = importDefault(dependencyMap[8])("#FFFFFF").alpha(0).hex();
-  const alphaResult3 = importDefault(dependencyMap[8])("#FFFFFF").alpha(0);
-  const obj16 = importDefault(dependencyMap[8])("#FFFFFF");
-  obj4.minimumTrackTintColor = importDefault(dependencyMap[8])("#FFFFFF").alpha(0.2).hex();
-  obj4.maximumTrackTintColor = tmp6;
-  items6[1] = callback2(tmp23, obj4);
-  obj2.children = items6;
-  const items7 = [callback3(closure_5, obj2), ];
-  const obj5 = { style: tmp.playbackSlider, value: first };
-  const alphaResult4 = importDefault(dependencyMap[8])("#FFFFFF").alpha(0.2);
-  obj5.thumbImage = importDefault(dependencyMap[16]);
-  obj5.minimumValue = 0;
-  obj5.maximumValue = ref.current;
-  obj5.minimumTrackTintColor = importDefault(dependencyMap[17]).unsafe_rawColors.WHITE;
-  obj5.maximumTrackTintColor = "transparent";
-  obj5.onValueChange = tmp9;
-  obj5.onSlidingStart = callback;
-  obj5.onSlidingComplete = callback1;
-  items7[1] = callback2(importDefault(dependencyMap[15]), obj5);
-  obj1.children = items7;
-  items4[2] = callback3(closure_5, obj1);
-  obj6 = {
+  let obj7 = paused(666)("#FFFFFF");
+  const tmp22 = paused(7523);
+  obj4.thumbTintColor = obj7.alpha(0).hex();
+  let alphaResult = obj7.alpha(0);
+  const obj10 = paused(666)("#FFFFFF");
+  obj4.minimumTrackTintColor = paused(666)("#FFFFFF").alpha(0.1).hex();
+  const alphaResult1 = paused(666)("#FFFFFF").alpha(0.1);
+  const obj12 = paused(666)("#FFFFFF");
+  obj4.maximumTrackTintColor = paused(666)("#FFFFFF").alpha(0.1).hex();
+  const items6 = [callback2(tmp22, obj4), ];
+  const obj5 = { style: tmp.downloadProgressSlider, value: tmp4[0], minimumValue: 0, maximumValue: 1 };
+  const alphaResult2 = paused(666)("#FFFFFF").alpha(0.1);
+  const tmp23 = paused(7523);
+  const obj15 = paused(666)("#FFFFFF");
+  obj5.thumbTintColor = paused(666)("#FFFFFF").alpha(0).hex();
+  const alphaResult3 = paused(666)("#FFFFFF").alpha(0);
+  const obj17 = paused(666)("#FFFFFF");
+  obj5.minimumTrackTintColor = paused(666)("#FFFFFF").alpha(0.2).hex();
+  obj5.maximumTrackTintColor = tmp6;
+  items6[1] = callback2(tmp23, obj5);
+  obj3.children = items6;
+  const items7 = [callback3(closure_5, obj3), ];
+  const obj6 = { style: tmp.playbackSlider, value: first };
+  const alphaResult4 = paused(666)("#FFFFFF").alpha(0.2);
+  obj6.thumbImage = paused(8290);
+  obj6.minimumValue = 0;
+  obj6.maximumValue = ref.current;
+  obj6.minimumTrackTintColor = paused(689).unsafe_rawColors.WHITE;
+  obj6.maximumTrackTintColor = "transparent";
+  obj6.onValueChange = tmp9;
+  obj6.onSlidingStart = callback;
+  obj6.onSlidingComplete = callback1;
+  items7[1] = callback2(paused(7523), obj6);
+  obj2.children = items7;
+  items4[2] = callback3(closure_5, obj2);
+  obj7 = {
     style: tmp.centerText,
+    variant: "text-xs/medium",
+    color: "text-overlay-light",
+    tabularNumbers: true,
+    lineClamp: 1,
     onLayout(nativeEvent) {
       callback3(nativeEvent.nativeEvent.layout.width);
     }
   };
-  const tmp24 = importDefault(dependencyMap[15]);
-  obj6.children = arg1(dependencyMap[9]).getTimeFormat(ref.current);
-  items4[3] = callback2(arg1(dependencyMap[14]).Text, obj6);
+  const tmp24 = paused(7523);
+  obj7.children = controls(4704).getTimeFormat(ref.current);
+  items4[3] = callback2(controls(4126).Text, obj7);
   obj.children = items4;
   return tmp15(tmp16, obj);
 };

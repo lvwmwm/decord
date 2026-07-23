@@ -1,18 +1,18 @@
-// Module ID: 14454
-// Function ID: 108929
+// Module ID: 14568
+// Function ID: 111082
 // Name: useIsInActivityPrivacyCopyExperiment
-// Dependencies: []
+// Dependencies: [1428, 12113, 2]
 // Exports: getIsInActivityPrivacyUpsellExperiment, useIsInActivityPrivacyCopyExperiment
 
-// Module 14454 (useIsInActivityPrivacyCopyExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "Array", DateToSystemTimezoneSetter: "maxMediaHeight", defaultConfig: { "Bool(false)": true, "Bool(false)": true }, variations: { [0]: { "Bool(false)": true, "Bool(false)": true }, [1]: { "Bool(false)": "<string:1040334421>", "Bool(false)": "<string:1040334338>" }, [2]: { "Bool(false)": null, "Bool(false)": null } } };
-let closure_2 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/activity_privacy/ActivityPrivacyMatchingExperiment.tsx");
+// Module 14568 (useIsInActivityPrivacyCopyExperiment)
+import ApexExperiment from "ApexExperiment";
+
+let obj = { name: "2026-02-activity-privacy-matching", kind: "user", defaultConfig: { copyChanges: false, upsell: false }, variations: { [0]: { copyChanges: false, upsell: false }, [1]: { copyChanges: true, upsell: false }, [2]: { copyChanges: true, upsell: true } } };
+let closure_2 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/activity_privacy/ActivityPrivacyMatchingExperiment.tsx");
 
 export const useIsInActivityPrivacyCopyExperiment = function useIsInActivityPrivacyCopyExperiment(ActivityPrivacyDefaultSharingSetting) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(12113) /* apexExperiment */;
   let copyChanges = obj.useIsInPrivateProfilesExperiment(ActivityPrivacyDefaultSharingSetting);
   obj = { location: ActivityPrivacyDefaultSharingSetting };
   if (!copyChanges) {
@@ -21,7 +21,7 @@ export const useIsInActivityPrivacyCopyExperiment = function useIsInActivityPriv
   return copyChanges;
 };
 export const getIsInActivityPrivacyUpsellExperiment = function getIsInActivityPrivacyUpsellExperiment(ActivityPrivacyDefaultSharingSetting) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(12113) /* apexExperiment */;
   let upsell = obj.getIsInPrivateProfilesExperiment(ActivityPrivacyDefaultSharingSetting);
   if (!upsell) {
     obj = { location: ActivityPrivacyDefaultSharingSetting };

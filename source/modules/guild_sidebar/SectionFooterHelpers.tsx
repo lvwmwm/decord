@@ -1,12 +1,19 @@
-// Module ID: 14947
-// Function ID: 112528
+// Module ID: 15063
+// Function ID: 114696
 // Name: isSectionFooterWithDivider
-// Dependencies: []
+// Dependencies: [5076, 3758, 6766, 653, 1386, 6760, 2]
 // Exports: getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 14947 (isSectionFooterWithDivider)
+// Module 15063 (isSectionFooterWithDivider)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { ChannelListGuildActionRow } from "ChannelListGuildActionRow";
+import { Permissions } from "ME";
+import { FAVORITES_RAW_GUILD_ID } from "date";
+
+const require = arg1;
 function isSectionFooterWithDivider(getGuildActionSection, optInChannelsEnabled, section) {
-  if (section === optInChannelsEnabled(dependencyMap[5]).SECTION_INDEX_GUILD_ACTIONS) {
+  if (section === require(6760) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS) {
     const guildActionSection = getGuildActionSection.getGuildActionSection();
     const rows = guildActionSection.getRows();
     let isEmptyResult = 1 === rows.length;
@@ -23,17 +30,17 @@ function isSectionFooterWithDivider(getGuildActionSection, optInChannelsEnabled,
   }
   let tmp4 = !tmp;
   if (tmp4) {
-    const tmp7 = section === optInChannelsEnabled(dependencyMap[5]).SECTION_INDEX_GUILD_ACTIONS;
+    const tmp7 = section === require(6760) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS;
     if (tmp7) {
       tmp4 = tmp7;
     } else if (getGuildActionSection.id === FAVORITES_RAW_GUILD_ID) {
       let tmp11 = section !== getGuildActionSection.getSections(false).length - 1;
     } else {
-      tmp11 = section === optInChannelsEnabled(dependencyMap[5]).SECTION_INDEX_FAVORITES;
+      tmp11 = section === require(6760) /* _superPropGet */.SECTION_INDEX_FAVORITES;
       if (!tmp11) {
         let tmp14 = !tmp13;
         if (!!optInChannelsEnabled) {
-          let tmp17 = section !== optInChannelsEnabled(dependencyMap[5]).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+          let tmp17 = section !== require(6760) /* _superPropGet */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
           if (tmp17) {
             let flag2 = section === getGuildActionSection.recentsSectionNumber;
             if (!flag2) {
@@ -51,12 +58,12 @@ function isSectionFooterWithDivider(getGuildActionSection, optInChannelsEnabled,
   return tmp4;
 }
 function isSectionFooterVoiceSummaryEligible(recentsSectionNumber, section) {
-  let tmp = section === section(dependencyMap[5]).SECTION_INDEX_GUILD_ACTIONS;
+  let tmp = section === require(6760) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS;
   if (!tmp) {
-    tmp = section === section(dependencyMap[5]).SECTION_INDEX_FAVORITES;
+    tmp = section === require(6760) /* _superPropGet */.SECTION_INDEX_FAVORITES;
   }
   if (!tmp) {
-    tmp = section === section(dependencyMap[5]).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+    tmp = section === require(6760) /* _superPropGet */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
   }
   if (!tmp) {
     tmp = section === recentsSectionNumber.recentsSectionNumber;
@@ -68,18 +75,21 @@ function isSectionFooterVoiceSummaryEligible(recentsSectionNumber, section) {
 }
 function getSectionFooterActiveVoiceChannels(arg0) {
   let category;
-  ({ category, voiceStates: closure_0, selectedChannelId: closure_1, selectedVoiceChannelId: closure_2 } = arg0);
+  let _isNativeReflectConstruct;
+  let dependencyMap;
+  let require;
+  ({ category, voiceStates: require, selectedChannelId: dependencyMap, selectedVoiceChannelId: _isNativeReflectConstruct } = arg0);
   if (true !== collapsed.isCollapsed(category.record.id)) {
     let items = [];
   } else {
     const channelRecords = category.getChannelRecords();
     items = channelRecords.filter((id) => {
-      if (closure_3.can(constants.VIEW_CHANNEL, id)) {
-        let items = closure_0[id.id];
+      if (outer1_3.can(outer1_5.VIEW_CHANNEL, id)) {
+        let items = table[id.id];
         if (null == items) {
           items = [];
         }
-        let tmp4 = id.id !== closure_2;
+        let tmp4 = id.id !== _isNativeReflectConstruct;
         if (tmp4) {
           tmp4 = id.id !== closure_1;
         }
@@ -94,12 +104,7 @@ function getSectionFooterActiveVoiceChannels(arg0) {
   }
   return items;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const ChannelListGuildActionRow = arg1(dependencyMap[2]).ChannelListGuildActionRow;
-const Permissions = arg1(dependencyMap[3]).Permissions;
-const FAVORITES_RAW_GUILD_ID = arg1(dependencyMap[4]).FAVORITES_RAW_GUILD_ID;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_sidebar/SectionFooterHelpers.tsx");
+const result = require("ChannelListGuildActionRow").fileFinishedImporting("modules/guild_sidebar/SectionFooterHelpers.tsx");
 
 export const getSectionFooterConfig = function getSectionFooterConfig(guildChannels, optInChannelsEnabled, section) {
   return { hasDivider: isSectionFooterWithDivider(guildChannels, optInChannelsEnabled, section), canHaveVoiceSummary: isSectionFooterVoiceSummaryEligible(guildChannels, section) };

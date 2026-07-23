@@ -1,24 +1,28 @@
-// Module ID: 13936
-// Function ID: 105912
+// Module ID: 14050
+// Function ID: 108068
 // Name: VideoQuestModalHeader
-// Dependencies: []
+// Dependencies: [31, 27, 6944, 33, 4130, 689, 14022, 10464, 6965, 3743, 10474, 4126, 1212, 14045, 2]
 // Exports: default
 
-// Module 13936 (VideoQuestModalHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const useVideoQuestUIStore = arg1(dependencyMap[2]).useVideoQuestUIStore;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { videoContentHeaderWrapper: {} };
-obj = { flexDirection: "onAnimationFinishCapture", alignItems: "onAnimationFinish", gap: importDefault(dependencyMap[5]).space.PX_4 };
-obj.videoContentHeading = obj;
-obj.subheader = { opacity: 0.6 };
-const tmp3 = arg1(dependencyMap[3]);
-obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
-let closure_7 = obj.createStyles(obj);
-const obj1 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalHeader.tsx");
+// Module 14050 (VideoQuestModalHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import { useVideoQuestUIStore } from "_toPropertyKey";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { videoContentHeaderWrapper: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" } };
+_createForOfIteratorHelperLoose = { flexDirection: "column", flexShrink: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.videoContentHeading = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.subheader = { opacity: 0.6 };
+let obj1 = { margin: -15, padding: 15, textShadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 15 };
+_createForOfIteratorHelperLoose.textShadow = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_toPropertyKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalHeader.tsx");
 
 export default function VideoQuestModalHeader(showCurrentVideoTime) {
   let closeButtonIconColor;
@@ -32,46 +36,44 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   }
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
-  const tmp2 = callback2();
-  let obj = arg1(dependencyMap[6]);
-  const quest = obj.useVideoQuestModalContext().quest;
-  const arg1 = quest;
-  let obj1 = arg1(dependencyMap[7]);
+  const tmp2 = _createForOfIteratorHelperLoose();
+  let obj = quest(14022);
+  quest = obj.useVideoQuestModalContext().quest;
+  let obj1 = quest(10464);
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
-  const importDefault = questTaskDetails;
   const tmp4 = useVideoQuestUIStore((arg0) => {
-    let tmp = arg0.videoProgress[closure_0.id];
+    let tmp = arg0.videoProgress[quest.id];
     if (null == tmp) {
       const obj = { timestampSec: questTaskDetails.progressSeconds, duration: questTaskDetails.targetSeconds, maxTimestampSec: questTaskDetails.progressSeconds };
       tmp = obj;
     }
-    const result = quest(closure_2[8]).parseMinutesAndSecondsFromSeconds(tmp.duration - tmp.timestampSec);
-    const obj2 = quest(closure_2[8]);
-    return quest(closure_2[8]).formatWatchTaskTime(result.minutes, result.seconds);
-  }, arg1(dependencyMap[9]).shallow);
+    const result = quest(outer1_2[8]).parseMinutesAndSecondsFromSeconds(tmp.duration - tmp.timestampSec);
+    const obj2 = quest(outer1_2[8]);
+    return quest(outer1_2[8]).formatWatchTaskTime(result.minutes, result.seconds);
+  }, quest(3743).shallow);
   const userStatus = quest.userStatus;
   let completedAt;
   if (null != userStatus) {
     completedAt = userStatus.completedAt;
   }
   if (null == completedAt) {
-    let obj2 = arg1(dependencyMap[10]);
+    let obj2 = quest(10474);
     const videoQuestProgressRemainingAccessibilityLabel = obj2.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp6);
   }
   obj = { style: items };
-  const items = [tmp2.videoContentHeaderWrapper, style];
+  items = [tmp2.videoContentHeaderWrapper, style];
   obj = { style: tmp2.videoContentHeading };
-  obj1 = {};
+  obj1 = { variant: "heading-md/semibold", color: "text-overlay-light" };
   let textShadow2 = textShadow;
   if (textShadow) {
     textShadow2 = tmp2.textShadow;
   }
   obj1.style = textShadow2;
-  const intl = arg1(dependencyMap[12]).intl;
+  const intl = quest(1212).intl;
   obj2 = { questName: quest.config.messages.questName };
-  obj1.children = intl.formatToPlainString(arg1(dependencyMap[12]).t.EQa7os, obj2);
-  const items1 = [callback(arg1(dependencyMap[11]).Text, obj1), ];
-  const obj3 = { accessibilityLabel: videoQuestProgressRemainingAccessibilityLabel };
+  obj1.children = intl.formatToPlainString(quest(1212).t.EQa7os, obj2);
+  const items1 = [callback(quest(4126).Text, obj1), ];
+  const obj3 = { variant: "heading-sm/semibold", color: "text-overlay-light", accessibilityLabel: videoQuestProgressRemainingAccessibilityLabel };
   const items2 = [tmp2.subheader, ];
   if (textShadow) {
     textShadow = tmp2.textShadow;
@@ -86,9 +88,9 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     }
   }
   obj3.children = gamePublisher;
-  items1[1] = callback(arg1(dependencyMap[11]).Text, obj3);
+  items1[1] = callback(quest(4126).Text, obj3);
   obj.children = items1;
-  const items3 = [closure_6(View, obj), callback(importDefault(dependencyMap[13]), { iconColor: closeButtonIconColor, onClose })];
+  const items3 = [closure_6(View, obj), callback(questTaskDetails(14045), { iconColor: closeButtonIconColor, onClose })];
   obj.children = items3;
   return closure_6(View, obj);
 };

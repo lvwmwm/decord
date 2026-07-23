@@ -1,16 +1,15 @@
-// Module ID: 11307
-// Function ID: 87982
+// Module ID: 11317
+// Function ID: 88032
 // Name: openCreatePollModal
-// Dependencies: []
+// Dependencies: [4337, 11318, 1934, 2]
 // Exports: closeCreatePollModal, openCreatePollModal
 
-// Module 11307 (openCreatePollModal)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/polls/native/PollCreationModalActionCreators.tsx");
+// Module 11317 (openCreatePollModal)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/polls/native/PollCreationModalActionCreators.tsx");
 
-export const openCreatePollModal = function openCreatePollModal(closure_2) {
-  importDefault(dependencyMap[0]).pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), closure_2, "create-poll-modal");
+export const openCreatePollModal = function openCreatePollModal(merged) {
+  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11318, dependencyMap.paths), merged, "create-poll-modal");
 };
 export const closeCreatePollModal = function closeCreatePollModal() {
-  importDefault(dependencyMap[0]).popWithKey("create-poll-modal");
+  importDefault(4337).popWithKey("create-poll-modal");
 };

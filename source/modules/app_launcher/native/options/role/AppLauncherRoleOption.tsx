@@ -1,44 +1,45 @@
-// Module ID: 11296
-// Function ID: 87905
+// Module ID: 11306
+// Function ID: 87955
 // Name: AppLauncherRoleOption
-// Dependencies: []
+// Dependencies: [57, 31, 1910, 33, 624, 11299, 4098, 11304, 1934, 11304, 2]
 // Exports: default
 
-// Module 11296 (AppLauncherRoleOption)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/app_launcher/native/options/role/AppLauncherRoleOption.tsx");
+// Module 11306 (AppLauncherRoleOption)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/options/role/AppLauncherRoleOption.tsx");
 
 export default function AppLauncherRoleOption(option) {
   let autoFocus;
   let channel;
+  let _slicedToArray;
   let hasError;
+  let importDefault;
   let onRolePress;
   let style;
   option = option.option;
-  const arg1 = option;
-  ({ initialValue: closure_1, onRolePress } = option);
-  const dependencyMap = onRolePress;
-  ({ onActionSheetDismiss: closure_3, channel } = option);
-  const React = channel;
+  ({ initialValue: importDefault, onRolePress } = option);
+  ({ onActionSheetDismiss: _slicedToArray, channel } = option);
   const onPress = option.onPress;
-  const jsx = channel.guild_id;
+  const guild_id = channel.guild_id;
   ({ style, autoFocus, hasError } = option);
-  const tmp = callback(React.useState(() => {
+  let tmp = callback(channel.useState(() => {
     let roleId = null;
-    if (null != lib) {
+    if (null != closure_1) {
       roleId = null;
-      if ("roleMention" === lib.type) {
-        roleId = lib.roleId;
+      if ("roleMention" === closure_1.type) {
+        roleId = closure_1.roleId;
       }
     }
     return roleId;
   }), 2);
   const first = tmp[0];
   let closure_8 = tmp[1];
-  let obj = arg1(dependencyMap[4]);
+  let obj = option(onRolePress[4]);
   const items = [onPress];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (null != first) {
@@ -50,7 +51,7 @@ export default function AppLauncherRoleOption(option) {
     }
   });
   const items1 = [onRolePress, option.name, stateFromStores, first];
-  const effect = React.useEffect(() => {
+  const effect = channel.useEffect(() => {
     let tmp = null != first;
     if (tmp) {
       tmp = null == stateFromStores;
@@ -70,20 +71,20 @@ export default function AppLauncherRoleOption(option) {
     if (null != onPress) {
       onPress();
     }
-    let obj = lib(onRolePress[6]);
+    let obj = outer1_1(onRolePress[6]);
     obj = {
       option,
       channel,
       onRolePress(role) {
         role = role.role;
-        callback2(role.id);
-        callback({ role });
+        outer1_8(role.id);
+        outer1_2({ role });
       },
-      onActionSheetDismiss: closure_3
+      onActionSheetDismiss: _slicedToArray
     };
     obj.openLazy(option(onRolePress[8])(onRolePress[7], onRolePress.paths), option(onRolePress[9]).APP_LAUNCHER_ROLE_LIST_ACTION_SHEET_KEY, obj);
   };
-  obj.leading = jsx(arg1(dependencyMap[9]).RoleIcon, { role: stateFromStores });
+  obj.leading = guild_id(option(onRolePress[9]).RoleIcon, { role: stateFromStores });
   obj.autoFocus = autoFocus;
-  return jsx(importDefault(dependencyMap[5]), obj);
+  return guild_id(importDefault(onRolePress[5]), obj);
 };

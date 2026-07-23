@@ -1,10 +1,10 @@
-// Module ID: 9544
-// Function ID: 74413
+// Module ID: 9551
+// Function ID: 74454
 // Name: formSubmitError
-// Dependencies: []
+// Dependencies: [1212, 7109, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 9544 (formSubmitError)
+// Module 9551 (formSubmitError)
 function formSubmitError(type) {
   const obj = { type };
   let tmp = null;
@@ -17,21 +17,20 @@ function formSubmitError(type) {
 function makeEmptyContentError(arg0) {
   return formSubmitError(obj.EmptyContent, arg0);
 }
-const obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/forums/FormError.tsx");
+let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };
+const result = require("set").fileFinishedImporting("modules/forums/FormError.tsx");
 
 export const FormSubmitErrorType = obj;
 export const makeEmptyTitleError = function makeEmptyTitleError() {
-  const intl = require(dependencyMap[0]).intl;
-  return makeEmptyContentError(intl.string(require(dependencyMap[0]).t.71wuR0));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return makeEmptyContentError(intl.string(require(1212) /* getSystemLocale */.t["71wuR0"]));
 };
 export const makeEmptyMessageError = function makeEmptyMessageError() {
-  const intl = require(dependencyMap[0]).intl;
-  return makeEmptyContentError(intl.string(require(dependencyMap[0]).t.w/BT3G));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return makeEmptyContentError(intl.string(require(1212) /* getSystemLocale */.t["w/BT3G"]));
 };
 export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
-  const obj = require(dependencyMap[1]);
+  const obj = require(7109) /* _callSuper */;
   id = undefined;
   if (null != id) {
     id = id.id;
@@ -39,12 +38,12 @@ export const makeAutomodViolationError = function makeAutomodViolationError(erro
   return formSubmitError(obj.AutomodViolation, obj.getAutomodErrorMessageFromErrorResponse(errorResponseBody, id));
 };
 export const makeApiNameValidationError = function makeApiNameValidationError() {
-  const intl = require(dependencyMap[0]).intl;
-  return formSubmitError(obj.ApiValidation, intl.string(require(dependencyMap[0]).t.71wuR0));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return formSubmitError(obj.ApiValidation, intl.string(require(1212) /* getSystemLocale */.t["71wuR0"]));
 };
 export const makeEmptyTagsError = function makeEmptyTagsError() {
-  const intl = require(dependencyMap[0]).intl;
-  return formSubmitError(obj.EmptyTags, intl.string(require(dependencyMap[0]).t.xPfNQi));
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return formSubmitError(obj.EmptyTags, intl.string(require(1212) /* getSystemLocale */.t.xPfNQi));
 };
 export const renderError = function renderError(type, content) {
   let tmp = null;

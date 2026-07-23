@@ -1,15 +1,18 @@
 // Module ID: 869
-// Function ID: 9678
+// Function ID: 9679
 // Name: parseStackFrames
-// Dependencies: []
+// Dependencies: [57, 77, 804, 799, 841, 807]
 // Exports: eventFromMessage, eventFromUnknownInput
 
 // Module 869 (parseStackFrames)
+import _slicedToArray from "_slicedToArray";
+import _defineProperty from "_defineProperty";
+
 function parseStackFrames(arg0, stack) {
   return arg0(stack.stack || "", 1);
 }
 function _enhanceErrorWithSentryInfo(__sentry_fetch_url_host__) {
-  let isErrorResult = require(dependencyMap[2]).isError(__sentry_fetch_url_host__);
+  let isErrorResult = require(804) /* isBuiltin */.isError(__sentry_fetch_url_host__);
   if (isErrorResult) {
     isErrorResult = "__sentry_fetch_url_host__" in __sentry_fetch_url_host__;
   }
@@ -52,8 +55,8 @@ function getMessageForObject(name) {
       return name.message;
     }
   }
-  const result = require(dependencyMap[3]).extractExceptionKeysForMessage(name);
-  const obj = require(dependencyMap[3]);
+  const result = require(799) /* addNonEnumerableProperty */.extractExceptionKeysForMessage(name);
+  const obj = require(799) /* addNonEnumerableProperty */;
   if (obj2.isErrorEvent(name)) {
     const _HermesInternal3 = HermesInternal;
     return "Event `ErrorEvent` captured as exception with message `" + name.message + "`";
@@ -77,7 +80,7 @@ function getMessageForObject(name) {
           let _HermesInternal = HermesInternal;
           let str5 = "'";
           str4 = "'" + name + "'";
-          // break
+          break;
         }
       }
       let tmp7 = globalThis;
@@ -99,7 +102,7 @@ function getException(getOptions, arg1, arg2, syntheticException) {
       if (null != getOptions) {
         normalizeDepth = getOptions.getOptions().normalizeDepth;
       }
-      const tmp16 = callback2({}, "__serialized__", require(dependencyMap[4]).normalizeToSize(arg2, normalizeDepth));
+      const tmp16 = _defineProperty({}, "__serialized__", require(841) /* normalize */.normalizeToSize(arg2, normalizeDepth));
       let tmp19;
       const keys = Object.keys();
       if (keys !== undefined) {
@@ -137,7 +140,7 @@ function getException(getOptions, arg1, arg2, syntheticException) {
         const items2 = [syntheticException, tmp16];
         return items2;
       }
-      const obj3 = require(dependencyMap[4]);
+      const obj3 = require(841) /* normalize */;
     } else {
       let syntheticException1;
       if (null != syntheticException) {
@@ -152,12 +155,10 @@ function getException(getOptions, arg1, arg2, syntheticException) {
       const items3 = [syntheticException1, undefined];
       return items3;
     }
-    const obj2 = require(dependencyMap[2]);
+    obj2 = require(804) /* isBuiltin */;
   }
-  const obj = require(dependencyMap[2]);
+  obj = require(804) /* isBuiltin */;
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { _enhanceErrorWithSentryInfo };
@@ -197,8 +198,8 @@ export const eventFromMessage = function eventFromMessage(arg0, value) {
           obj.values = items;
           obj.exception = obj;
           const obj2 = { synthetic: true };
-          const result = require(dependencyMap[5]).addExceptionMechanism(obj, obj2);
-          const obj5 = require(dependencyMap[5]);
+          const result = require(807) /* getFirstException */.addExceptionMechanism(obj, obj2);
+          const obj5 = require(807) /* getFirstException */;
         }
       }
     }
@@ -211,7 +212,7 @@ export const eventFromMessage = function eventFromMessage(arg0, value) {
     obj.message = value;
     return obj;
   }
-  const obj7 = require(dependencyMap[2]);
+  obj7 = require(804) /* isBuiltin */;
 };
 export const eventFromUnknownInput = function eventFromUnknownInput(arg0, arg1, arg2, data) {
   data = undefined;
@@ -222,9 +223,9 @@ export const eventFromUnknownInput = function eventFromUnknownInput(arg0, arg1, 
     data = data.data.mechanism;
   }
   if (!data) {
-    data = { priority: "IE", "Bool(false)": "MSIE" };
+    data = { handled: true, type: "generic" };
   }
-  const tmp = callback(getException(arg0, data, arg2, data), 2);
+  const tmp = _slicedToArray(getException(arg0, data, arg2, data), 2);
   let obj = {};
   obj = {};
   const items = [exceptionFromError(arg1, tmp[0])];
@@ -233,9 +234,9 @@ export const eventFromUnknownInput = function eventFromUnknownInput(arg0, arg1, 
   if (tmp[1]) {
     obj.extra = tmp2;
   }
-  const result = require(dependencyMap[5]).addExceptionTypeValue(obj, undefined, undefined);
-  const obj4 = require(dependencyMap[5]);
-  const result1 = require(dependencyMap[5]).addExceptionMechanism(obj, data);
+  const result = require(807) /* getFirstException */.addExceptionTypeValue(obj, undefined, undefined);
+  const obj4 = require(807) /* getFirstException */;
+  const result1 = require(807) /* getFirstException */.addExceptionMechanism(obj, data);
   const obj1 = {};
   let event_id;
   if (null != data) {

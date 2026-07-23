@@ -1,28 +1,27 @@
-// Module ID: 9930
-// Function ID: 76856
+// Module ID: 9938
+// Function ID: 76896
 // Name: useVoteReactors
-// Dependencies: []
+// Dependencies: [7004, 653, 566, 7006, 636, 2]
 // Exports: default
 
-// Module 9930 (useVoteReactors)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).DEFAULT_NUM_REACTION_USERS;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/polls/useVoteReactors.tsx");
+// Module 9938 (useVoteReactors)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DEFAULT_NUM_REACTION_USERS as closure_4 } from "ME";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/polls/useVoteReactors.tsx");
 
 export default function useVoteReactors(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const messageId = channelId.messageId;
-  const importDefault = messageId;
   const reaction = channelId.reaction;
-  const dependencyMap = reaction;
   let vote;
-  let obj = arg1(dependencyMap[2]);
-  const items = [closure_3];
+  let obj = channelId(reaction[2]);
+  let items = [_isNativeReflectConstruct];
   const items1 = [channelId, messageId, reaction.emoji];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let items;
-    const reactions = reactions.getReactions(channelId, messageId, reaction.emoji, closure_4, channelId(reaction[3]).ReactionTypes.VOTE);
+    const reactions = outer1_3.getReactions(channelId, messageId, reaction.emoji, outer1_4, channelId(reaction[3]).ReactionTypes.VOTE);
     if (null != reactions) {
       items = reactions.values();
     }
@@ -30,7 +29,7 @@ export default function useVoteReactors(channelId) {
       items = [];
     }
     return Array.from(items);
-  }, items1, importDefault(dependencyMap[4]));
+  }, items1, messageId(reaction[4]));
   obj = { reactors: stateFromStores };
   const count_details = reaction.count_details;
   if (null != count_details) {

@@ -1,9 +1,17 @@
-// Module ID: 10700
-// Function ID: 83323
+// Module ID: 10710
+// Function ID: 83372
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 675, 477, 1553, 566, 686, 2]
 
-// Module 10700 (_isNativeReflectConstruct)
+// Module 10710 (_isNativeReflectConstruct)
+import expandLocation from "expandLocation";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,33 +22,27 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function isMobileOverlaySupported() {
-  let isAndroidResult = arg1(dependencyMap[7]).isAndroid();
+  let isAndroidResult = require(477) /* set */.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = !arg1(dependencyMap[8]).isMetaQuest();
-    const obj2 = arg1(dependencyMap[8]);
+    isAndroidResult = !require(1553) /* isMetaQuest */.isMetaQuest();
+    const obj2 = require(1553) /* isMetaQuest */;
   }
   return isAndroidResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-let closure_9 = false;
-let tmp2 = (DeviceSettingsStore) => {
+let c9 = false;
+let tmp2 = ((DeviceSettingsStore) => {
   class MobileVoiceOverlayStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, MobileVoiceOverlayStore);
-      obj = closure_6(MobileVoiceOverlayStore);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      tmp = outer1_3(this, MobileVoiceOverlayStore);
+      obj = outer1_6(MobileVoiceOverlayStore);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -49,12 +51,11 @@ let tmp2 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MobileVoiceOverlayStore;
   callback2(MobileVoiceOverlayStore, DeviceSettingsStore);
   let obj = {
     key: "getUserAgnosticState",
     value() {
-      return { enabled: closure_9 };
+      return { enabled: outer1_9 };
     }
   };
   const items = [obj, , ];
@@ -65,30 +66,30 @@ let tmp2 = (DeviceSettingsStore) => {
       if (null != enabled) {
         enabled = enabled.enabled;
       }
-      let closure_9 = null != enabled && enabled;
+      const outer1_9 = null != enabled && enabled;
     }
   };
   items[1] = obj;
   obj = {
     key: "getEnabled",
     value() {
-      return callback4() && closure_9;
+      return outer1_11() && outer1_9;
     }
   };
   items[2] = obj;
   return callback(MobileVoiceOverlayStore, items);
-}(importDefault(dependencyMap[9]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "MobileVoiceOverlayStore";
 tmp2.persistKey = "MobileVoiceOverlayStore";
-tmp2 = new tmp2(importDefault(dependencyMap[10]), {
+tmp2 = new tmp2(require("dispatcher"), {
   MOBILE_VOICE_OVERLAY_STATE_CHANGED: function handleMobileVoiceOverlayStateChanged(enabled) {
-    let obj = importDefault(dependencyMap[6]);
+    let obj = importDefault(675);
     obj = { enabled: enabled.enabled };
     obj.track(AnalyticEvents.MOBILE_OVERLAY_TOGGLED, obj);
     enabled = enabled.enabled;
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("stores/native/MobileVoiceOverlayStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/native/MobileVoiceOverlayStore.tsx");
 
 export default tmp2;
 export { isMobileOverlaySupported };

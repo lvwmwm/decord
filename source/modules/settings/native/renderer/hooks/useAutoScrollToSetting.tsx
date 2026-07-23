@@ -1,46 +1,45 @@
-// Module ID: 14464
-// Function ID: 108981
+// Module ID: 14578
+// Function ID: 111134
 // Name: useAutoScrollToSearchResultSetting
-// Dependencies: []
+// Dependencies: [31, 13552, 10096, 13557, 13555, 1456, 2]
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 14464 (useAutoScrollToSearchResultSetting)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const NodeType = arg1(dependencyMap[2]).NodeType;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/settings/native/renderer/hooks/useAutoScrollToSetting.tsx");
+// Module 14578 (useAutoScrollToSearchResultSetting)
+import result from "result";
+import zustandStore from "zustandStore";
+import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+
+const require = arg1;
+const result = require("GUILD_SELECT_ALL_SERVERS_OPTION_ID").fileFinishedImporting("modules/settings/native/renderer/hooks/useAutoScrollToSetting.tsx");
 
 export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearchResultSetting(ref, memo, scrollTarget) {
-  memo = ref;
+  const _require = ref;
   const dependencyMap = memo;
-  let current = closure_3.useField("selected");
-  const navigation = memo(dependencyMap[5]).useNavigation();
-  const React = navigation;
-  ref = React.useRef(scrollTarget);
-  closure_3 = ref;
+  let current = ref.useField("selected");
+  const navigation = _require(1456).useNavigation();
+  ref = navigation.useRef(scrollTarget);
   if (null == current) {
     current = ref.current;
   }
-  const NodeType = current;
   let flag = false;
   if (null != current) {
     flag = false;
-    if (memo(dependencyMap[3]).SETTING_RENDERER_CONFIG[current].type !== NodeType.ROUTE) {
-      const initialScrollIndex = memo(dependencyMap[4]).getInitialScrollIndex(current, memo);
+    if (_require(13557).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
+      let initialScrollIndex = _require(13555).getInitialScrollIndex(current, memo);
       let tmp9 = 0 !== initialScrollIndex;
       if (tmp9) {
         tmp9 = 1 !== initialScrollIndex;
       }
       flag = tmp9;
-      const obj2 = memo(dependencyMap[4]);
+      let obj2 = _require(13555);
     }
   }
   const items = [memo, flag, ref, navigation, current];
-  const effect = React.useEffect(() => {
+  const effect = navigation.useEffect(() => {
     let closure_0 = navigation.addListener("transitionEnd", () => {
-      if (closure_5) {
-        let obj = ref(closure_1[4]);
-        const initialScrollIndex = obj.getInitialScrollIndex(closure_4, closure_1);
+      if (outer1_5) {
+        let obj = ref(table[4]);
+        const initialScrollIndex = obj.getInitialScrollIndex(outer1_4, outer1_1);
         if (null != initialScrollIndex) {
           let tmp8 = null == ref;
           if (!tmp8) {
@@ -49,17 +48,17 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
             const obj2 = current;
           }
           if (!tmp8) {
-            obj = { "Null": null, "Null": "e42f1b42dc7bf4b285d5f4924a46e5c4", "Null": "TicketIcon", index: initialScrollIndex };
+            obj = { index: initialScrollIndex, animated: false, viewOffset: 300 };
             obj2.scrollToIndex(obj);
           }
         }
       }
-      closure_3.current = undefined;
+      outer1_3.current = undefined;
     });
     return () => {
       ref();
-      state.setState({ selected: null });
-      state.current = undefined;
+      ref.setState({ selected: null });
+      outer1_3.current = undefined;
     };
   }, items);
 };

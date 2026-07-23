@@ -1,17 +1,17 @@
-// Module ID: 6697
-// Function ID: 51864
+// Module ID: 6702
+// Function ID: 51896
 // Name: getClickstreamDrainEvent
-// Dependencies: []
+// Dependencies: [653, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 6697 (getClickstreamDrainEvent)
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamEvents.tsx");
+// Module 6702 (getClickstreamDrainEvent)
+import { AnalyticEvents } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamEvents.tsx");
 
 export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first, arr) {
-  const AnalyticEvents = new Date();
-  if (AnalyticEvents.GUILD_VIEWED_CLICKSTREAM === first) {
+  const date = new Date();
+  if (date.GUILD_VIEWED_CLICKSTREAM === first) {
     let obj = {
       time_minus: arr.map((timestamp) => {
           timestamp = timestamp.timestamp;
@@ -22,7 +22,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first,
       guild_ids: arr.map((guild_id) => guild_id.guild_id)
     };
     return obj;
-  } else if (AnalyticEvents.FRIENDS_LIST_VIEWED_CLICKSTREAM === first) {
+  } else if (date.FRIENDS_LIST_VIEWED_CLICKSTREAM === first) {
     obj = {
       time_minus: arr.map((timestamp) => {
           timestamp = timestamp.timestamp;
@@ -36,7 +36,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first,
       now_playing_num_cards: arr.map((now_playing_num_cards) => now_playing_num_cards.now_playing_num_cards)
     };
     return obj;
-  } else if (AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM === first) {
+  } else if (date.CHANNEL_OPENED_CLICKSTREAM === first) {
     const obj1 = {
       time_minus: arr.map((timestamp) => {
           timestamp = timestamp.timestamp;
@@ -48,7 +48,7 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first,
       channel_types: arr.map((channel_type) => channel_type.channel_type)
     };
     return obj1;
-  } else if (AnalyticEvents.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM === first) {
+  } else if (date.CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM === first) {
     obj = {
       time_minus: arr.map((timestamp) => {
           timestamp = timestamp.timestamp;
@@ -67,5 +67,4 @@ export const getClickstreamDrainEvent = function getClickstreamDrainEvent(first,
     const error = new Error("getClickstreamDrainEvent: Unknown event: " + first);
     throw error;
   }
-  const date = new Date();
 };

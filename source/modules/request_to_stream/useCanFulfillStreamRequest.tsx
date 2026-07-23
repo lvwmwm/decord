@@ -1,10 +1,23 @@
-// Module ID: 10908
-// Function ID: 84771
+// Module ID: 10918
+// Function ID: 84820
 // Name: canFulfillStreamRequest
-// Dependencies: []
+// Dependencies: [4150, 4149, 1194, 1348, 1838, 3758, 4217, 4202, 653, 10685, 477, 566, 2]
 // Exports: default
 
-// Module 10908 (canFulfillStreamRequest)
+// Module 10918 (canFulfillStreamRequest)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function canFulfillStreamRequest(channel_id, arg1) {
   let flag = arg1;
   let obj = arg2;
@@ -14,7 +27,6 @@ function canFulfillStreamRequest(channel_id, arg1) {
   if (arg1 === undefined) {
     flag = false;
   }
-  arg1 = flag;
   if (obj === undefined) {
     obj = closure_3;
   }
@@ -27,7 +39,7 @@ function canFulfillStreamRequest(channel_id, arg1) {
   if (obj4 === undefined) {
     obj4 = closure_9;
   }
-  let dependencyMap;
+  let id;
   let DESKTOP;
   const channel = obj2.getChannel(channel_id.channel_id);
   if (null == channel) {
@@ -37,15 +49,14 @@ function canFulfillStreamRequest(channel_id, arg1) {
     const channelId = obj4.getChannelId();
     const tmp18 = null != obj.getCurrentUserActiveStream();
     const application = channel_id.application;
-    let id;
-    const videoPermission = arg1(dependencyMap[9]).getVideoPermission(channel);
+    id = undefined;
+    const videoPermission = flag(id[9]).getVideoPermission(channel);
     if (null != application) {
       id = application.id;
     }
-    dependencyMap = id;
     DESKTOP = constants.DESKTOP;
-    const obj6 = arg1(dependencyMap[9]);
-    DESKTOP = arg1(dependencyMap[10]).isAndroid() ? tmp6.ANDROID : tmp6.IOS;
+    const obj6 = flag(id[9]);
+    DESKTOP = flag(id[10]).isAndroid() ? tmp6.ANDROID : tmp6.IOS;
     if (null == id) {
       const items1 = [false, obj.NOT_RUNNING_GAME];
       return items1;
@@ -74,31 +85,21 @@ function canFulfillStreamRequest(channel_id, arg1) {
       }
       return items4;
     }
-    const obj5 = arg1(dependencyMap[10]);
+    const obj5 = flag(id[10]);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-({ ActivityGamePlatforms: closure_10, ActivityTypes: closure_11 } = arg1(dependencyMap[8]));
-const obj = { NOT_IN_VOICE_CHANNEL: "NOT_IN_VOICE_CHANNEL", NOT_RUNNING_GAME: "NOT_RUNNING_GAME", ALREADY_STREAMING: "ALREADY_STREAMING", NO_PERMISSION: "NO_PERMISSION", PENDING_REQUEST: "PENDING_REQUEST", EXPIRED: "EXPIRED" };
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/request_to_stream/useCanFulfillStreamRequest.tsx");
+({ ActivityGamePlatforms: closure_10, ActivityTypes: closure_11 } = ME);
+let obj = { NOT_IN_VOICE_CHANNEL: "NOT_IN_VOICE_CHANNEL", NOT_RUNNING_GAME: "NOT_RUNNING_GAME", ALREADY_STREAMING: "ALREADY_STREAMING", NO_PERMISSION: "NO_PERMISSION", PENDING_REQUEST: "PENDING_REQUEST", EXPIRED: "EXPIRED" };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/request_to_stream/useCanFulfillStreamRequest.tsx");
 
 export default function useCanFulfillStreamRequest(arg0) {
   let flag = arg1;
-  const arg1 = arg0;
+  const _require = arg0;
   if (arg1 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  const items = [closure_3, closure_5, closure_8, closure_2, closure_9, closure_6, closure_7];
-  return arg1(dependencyMap[11]).useStateFromStores(items, () => callback(arg0, flag, closure_3, closure_5, closure_8, closure_2, closure_9, closure_6, closure_7));
+  const items = [closure_3, closure_5, closure_8, _isNativeReflectConstruct, closure_9, _createForOfIteratorHelperLoose, closure_7];
+  return _require(flag[11]).useStateFromStores(items, () => outer1_13(closure_0, flag, outer1_3, outer1_5, outer1_8, outer1_2, outer1_9, outer1_6, outer1_7));
 };
 export const StreamRequestUnfulfillableReason = obj;
 export { canFulfillStreamRequest };

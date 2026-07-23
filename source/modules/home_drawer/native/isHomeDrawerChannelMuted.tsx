@@ -1,29 +1,31 @@
-// Module ID: 14732
-// Function ID: 111109
+// Module ID: 14847
+// Function ID: 113273
 // Name: useIsHomeDrawerChannelMuted
-// Dependencies: []
+// Dependencies: [3760, 1352, 4325, 566, 2]
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 14732 (useIsHomeDrawerChannelMuted)
-let closure_2 = importDefault(dependencyMap[0]);
-const isThread = arg1(dependencyMap[1]).isThread;
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelMuted.tsx");
+// Module 14847 (useIsHomeDrawerChannelMuted)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { isThread } from "_callSuper";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelMuted.tsx");
 
 export const useIsHomeDrawerChannelMuted = function useIsHomeDrawerChannelMuted() {
-  const items = [closure_2, closure_4];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => (type) => {
-    const tmp = callback(type.type);
+  const items = [_isNativeReflectConstruct, closure_4];
+  return require(566) /* initialize */.useStateFromStores(items, () => (type) => {
+    const tmp = outer2_3(type.type);
     if (tmp) {
-      if (muted.isMuted(type.id)) {
+      if (outer2_2.isMuted(type.id)) {
         return true;
       }
     }
     const tmp3 = tmp ? type.parent_id : type.id;
     let result = null != tmp3;
     if (result) {
-      result = guildOrCategoryOrChannelMuted.isGuildOrCategoryOrChannelMuted(type.guild_id, tmp3);
+      result = outer2_4.isGuildOrCategoryOrChannelMuted(type.guild_id, tmp3);
     }
     return result;
-  }, [], arg1(dependencyMap[3]).statesWillNeverBeEqual);
+  }, [], require(566) /* initialize */.statesWillNeverBeEqual);
 };

@@ -1,35 +1,37 @@
-// Module ID: 14411
-// Function ID: 108704
+// Module ID: 14525
+// Function ID: 110857
 // Name: route
-// Dependencies: []
+// Dependencies: [31, 653, 13758, 13761, 10095, 1212, 8931, 14526, 2]
 
-// Module 14411 (route)
-let closure_2 = importAll(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14525 (route)
+import result from "result";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.OAuOHD);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.OAuOHD);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[6]).ShieldLockIcon,
-  screen: obj,
+  IconComponent: require("ShieldLockIcon").ShieldLockIcon,
+  screen: createToggle,
   usePreNavigationAction() {
     return React.useCallback(() => {
-      const consents = callback(closure_1[2]).fetchConsents();
-      const obj = callback(closure_1[2]);
-      const harvestStatus = callback(closure_1[3]).fetchHarvestStatus();
+      const consents = outer1_0(outer1_1[2]).fetchConsents();
+      const obj = outer1_0(outer1_1[2]);
+      const harvestStatus = outer1_0(outer1_1[3]).fetchHarvestStatus();
       return true;
     }, []);
   }
 };
-obj = {
-  route: arg1(dependencyMap[1]).UserSettingsSections.DATA_AND_PRIVACY,
+createToggle = {
+  route: require("ME").UserSettingsSections.DATA_AND_PRIVACY,
   getComponent() {
-    return arg1(dependencyMap[7]).default;
+    return require(14526) /* getTermsOfServicePrivacyPolicySettings */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/defs/native/DataAndPrivacySetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("handleRequestSuccess").fileFinishedImporting("modules/user_settings/defs/native/DataAndPrivacySetting.tsx");
 
-export default route;
+export default createToggle;

@@ -1,9 +1,15 @@
 // Module ID: 588
 // Function ID: 6980
 // Name: parseValue
-// Dependencies: []
+// Dependencies: [5, 6, 7, 27, 589, 20, 590, 2]
 
 // Module 588 (parseValue)
+import AppStartPerformance from "AppStartPerformance";
+import forEach from "forEach";
+import set from "set";
+import get_ActivityIndicator from "get ActivityIndicator";
+import enforcing from "enforcing";
+
 function parseValue(arg0) {
   let parsed = arg0;
   if (null != arg0) {
@@ -11,16 +17,12 @@ function parseValue(arg0) {
     parsed = JSON.parse(parsed);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[4]);
-const DCDStrongboxManager = arg1(dependencyMap[3]).NativeModules.DCDStrongboxManager;
-let tmp3 = () => {
+const DCDStrongboxManager = get_ActivityIndicator.NativeModules.DCDStrongboxManager;
+let tmp3 = (() => {
   class ProxyAsyncStorage {
     constructor() {
-      f7001 = this;
-      tmp = closure_3(this, ProxyAsyncStorage);
+      self = this;
+      tmp = outer1_3(this, ProxyAsyncStorage);
       promise = new Promise((parseResolve) => {
         self.parseResolve = parseResolve;
       });
@@ -32,13 +34,12 @@ let tmp3 = () => {
       return;
     }
   }
-  const callback = ProxyAsyncStorage;
   let obj = {
     key: "refresh",
     value() {
       let items = arg0;
-      const self = this;
-      let closure_0 = this;
+      let self = this;
+      self = this;
       if (arg0 === undefined) {
         items = [];
       }
@@ -47,12 +48,12 @@ let tmp3 = () => {
         new Set();
       }
       self.secureKeys = new Set();
-      const items1 = [store.refresh(items), ];
+      const items1 = [outer1_5.refresh(items), ];
       let refreshResult;
-      if (null != store2) {
+      if (null != outer1_6) {
         const items2 = [];
         HermesBuiltin.arraySpread(self.secureKeys, 0);
-        refreshResult = store2.refresh(items2);
+        refreshResult = outer1_6.refresh(items2);
       }
       items1[1] = refreshResult;
       const set1 = new Set();
@@ -60,7 +61,7 @@ let tmp3 = () => {
         let tmp2;
         let tmp3;
         [tmp2, tmp3] = arg0;
-        self(closure_1[5]).mark("\u{1F4BE}", "Storage.refresh() Promise Resolved");
+        _self(20).mark("\u{1F4BE}", "Storage.refresh() Promise Resolved");
         let num = 0;
         let num2 = 0;
         const keys = Object.keys();
@@ -74,48 +75,49 @@ let tmp3 = () => {
             if (length <= 10000) {
               continue;
             } else {
-              let tmp7 = self;
-              let tmp8 = closure_1;
-              let obj2 = self(closure_1[5]);
+              let tmp7 = _self;
+              let tmp8 = dependencyMap;
+              let obj2 = _self(20);
               let addDetailResult = obj2.addDetail(tmp6, length);
               num = sum;
-              // continue
+              continue;
             }
             continue;
           }
         }
-        const obj = self(closure_1[5]);
-        self(closure_1[5]).addDetail("TotalStorageSize", num2);
+        const obj = _self(20);
+        _self(20).addDetail("TotalStorageSize", num2);
         self.hasLoaded = true;
         const items = [tmp2, tmp3];
         return items;
       });
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "parse",
     value(arg0) {
       let tmp;
       let tmp2;
-      const self = this;
-      const callback = this;
+      let self = this;
+      self = this;
       [tmp, tmp2] = arg0;
-      callback(closure_1[6])(tmp2, (rawData) => {
+      callback(590)(tmp2, (rawData) => {
         self.storage[arg1] = { parsed: false, rawData };
       });
-      callback(closure_1[6])(tmp, (rawData) => {
+      callback(590)(tmp, (rawData) => {
         self.storage[arg1] = { parsed: false, rawData };
         const secureKeys = self.secureKeys;
         if (secureKeys.has(arg1)) {
-          function migrateToStrongbox(arg0, rawData) {
-            const result = item.setItem(arg0, rawData);
+          (function migrateToStrongbox(arg0, rawData) {
+            let closure_0 = arg0;
+            const result = outer3_6.setItem(arg0, rawData);
             result.then((arg0) => {
               if (arg0) {
-                closure_5.removeItem(arg0);
+                outer4_5.removeItem(closure_0);
               }
             });
-          }(arg1, rawData);
+          })(arg1, rawData);
         }
       });
       self.parseResolve();
@@ -131,7 +133,7 @@ let tmp3 = () => {
       if (storage.hasOwnProperty(arg0)) {
         let iter = tmp2;
         if (!self.storage[arg0].parsed) {
-          const obj = { parsed: true, value: callback4(tmp2.rawData) };
+          const obj = { parsed: true, value: outer1_7(tmp2.rawData) };
           self.storage[arg0] = obj;
           iter = obj;
         }
@@ -143,71 +145,73 @@ let tmp3 = () => {
   };
   items[2] = obj;
   const obj1 = { key: "getAfterRefresh" };
-  let closure_1 = callback(async function(arg0) {
+  let closure_1 = ProxyAsyncStorage(async function(arg0) {
     const self = this;
-    return yield self.parsePromise.then(() => self.get(arg0));
+    let closure_1 = arg0;
+    return yield self.parsePromise.then(() => self.get(closure_1));
   });
-  obj1.value = function getAfterRefresh(arg0) {
-    return callback2(...arguments);
+  obj1.value = function getAfterRefresh(outer2_13) {
+    return dependencyMap(...arguments);
   };
   items[3] = obj1;
   items[4] = {
     key: "asyncGet",
     value(arg0, arg1, arg2) {
-      let closure_0 = this;
+      const self = this;
       let closure_1 = arg0;
-      const ProxyAsyncStorage = arg1;
+      let AppStartPerformance = arg1;
+      let forEach = arg2;
       function handleCallback(arg0, arg1) {
         if (null != arg1) {
           const _Date = Date;
           const timestamp = Date.now();
-          const tmp6 = callback(arg1);
+          const tmp6 = outer2_7(arg1);
           const obj = { parsed: true, value: tmp6 };
           self.storage[arg0] = obj;
           const _Date2 = Date;
-          if (null != arg2) {
-            self(arg0[5]).mark("\u{1F4BE}", arg2, tmp9);
-            const obj2 = self(arg0[5]);
+          if (null != forEach) {
+            _self(table[5]).mark("\u{1F4BE}", forEach, tmp9);
+            const obj2 = _self(table[5]);
           }
-          arg1(tmp6);
+          callback(tmp6);
         } else {
-          arg1(null);
+          callback(null);
         }
       }
       const secureKeys = this.secureKeys;
       if (secureKeys.has(arg0)) {
-        let value = store2.getItem(arg0);
+        let value = outer1_6.getItem(arg0);
         value.then((arg0) => {
-          handleCallback(arg0, arg0);
+          handleCallback(closure_1, arg0);
         });
       } else {
-        value = store.getItem(arg0);
+        value = outer1_5.getItem(arg0);
         value.then((arg0) => {
-          handleCallback(arg0, arg0);
+          handleCallback(closure_1, arg0);
         });
       }
     }
   };
   const obj3 = { key: "asyncGetRaw" };
-  let closure_0 = callback(async function(arg0, arg1) {
+  let closure_0 = ProxyAsyncStorage(async function(arg0, arg1) {
     if (null != arg1) {
-      callback(closure_1[5]).mark("\u{1F4BE}", `Get: ${arg1}`);
-      const obj = callback(closure_1[5]);
+      callback(20).mark("\u{1F4BE}", `Get: ${arg1}`);
+      const obj = callback(20);
     }
     const secureKeys = this.secureKeys;
     if (secureKeys.has(arg0)) {
-      let value = item2.getItem(arg0);
+      let value = outer2_6.getItem(arg0);
     } else {
-      value = item.getItem(arg0);
+      value = outer2_5.getItem(arg0);
     }
     const tmp7 = yield value;
     let tmp8 = null;
     if (null != tmp7) {
       tmp8 = tmp7;
       if (null != arg1) {
-        callback(closure_1[5]).mark("\u{1F4BE}", `Got: ${arg1}`);
+        callback(20).mark("\u{1F4BE}", `Got: ${arg1}`);
         tmp8 = tmp7;
-        const obj2 = callback(closure_1[5]);
+        const obj2 = callback(20);
       }
     }
     return tmp8;
@@ -221,9 +225,8 @@ let tmp3 = () => {
     value(arg0) {
       const storage = this.storage;
       if (storage.hasOwnProperty(arg0)) {
-        const tmp = this.storage[arg0];
         let tmp2 = null;
-        if (!tmp.parsed) {
+        if (!this.storage[arg0].parsed) {
           const rawData = tmp.rawData;
           let tmp3 = null;
           if (null != rawData) {
@@ -261,9 +264,9 @@ let tmp3 = () => {
         self.storage[arg0] = obj;
         const secureKeys = self.secureKeys;
         if (secureKeys.has(arg0)) {
-          const result = store2.setItem(arg0, rawData);
+          const result = outer1_6.setItem(arg0, rawData);
         } else {
-          const result1 = store.setItem(arg0, rawData);
+          const result1 = outer1_5.setItem(arg0, rawData);
         }
       }
     }
@@ -271,12 +274,12 @@ let tmp3 = () => {
   items[9] = {
     key: "remove",
     value(arg0) {
-      delete r1[r2];
+      delete tmp[tmp2];
       const secureKeys = this.secureKeys;
       if (secureKeys.has(arg0)) {
-        store2.removeItem(arg0);
+        outer1_6.removeItem(arg0);
       } else {
-        store.removeItem(arg0);
+        outer1_5.removeItem(arg0);
       }
     }
   };
@@ -284,18 +287,17 @@ let tmp3 = () => {
     key: "clear",
     value() {
       this.storage = {};
-      store.clear();
-      if (null != store2) {
+      outer1_5.clear();
+      if (null != outer1_6) {
         const items = [];
         HermesBuiltin.arraySpread(this.secureKeys, 0);
-        store2.clear(items);
+        outer1_6.clear(items);
       }
     }
   };
-  return callback2(ProxyAsyncStorage, items);
-}();
+  return callback(ProxyAsyncStorage, items);
+})();
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/storage/native/Storage.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/storage/native/Storage.tsx");
 
 export const impl = tmp3;

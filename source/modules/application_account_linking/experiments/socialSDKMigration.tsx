@@ -1,26 +1,28 @@
-// Module ID: 4153
-// Function ID: 35107
+// Module ID: 4157
+// Function ID: 35139
 // Name: useIsRiotSocialSDKMigrationEnabled
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getIsRiotSocialSDKMigrationEnabled, useIsRiotSocialSDKMigrationEnabled
 
-// Module 4153 (useIsRiotSocialSDKMigrationEnabled)
+// Module 4157 (useIsRiotSocialSDKMigrationEnabled)
+import ApexExperiment from "ApexExperiment";
+import ApexExperiment from "ApexExperiment";
+import ApexExperiment from "ApexExperiment";
+import ApexExperiment from "ApexExperiment";
+
 let obj = { [0]: { enabled: false }, [1]: { enabled: true } };
 obj = { enabled: false };
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: obj, variations: obj });
-const _module1 = require(dependencyMap[0]);
-obj = { y: false, DateToSystemTimezoneSetter: 320 };
+obj = { name: "2026-04-riot-social-sdk-migration", kind: "user" };
 obj.defaultConfig = obj;
 obj.variations = obj;
-let closure_1 = _module1.createApexExperiment(obj);
-const _module2 = require(dependencyMap[0]);
-let closure_2 = _module2.createApexExperiment({ defaultConfig: obj, variations: obj });
-const _module3 = require(dependencyMap[0]);
-const obj1 = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: obj, variations: obj };
-const apexExperiment = _module3.createApexExperiment(obj1);
-const _module4 = require(dependencyMap[1]);
-const result = _module4.fileFinishedImporting("modules/application_account_linking/experiments/socialSDKMigration.tsx");
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj1 = { name: "2026-05-riot-social-sdk-migration-us--canada", kind: "user", defaultConfig: obj, variations: obj };
+let closure_1 = ApexExperiment.createApexExperiment(obj1);
+const obj2 = { name: "2026-05-riot-social-sdk-migration-all-regions", kind: "user", defaultConfig: obj, variations: obj };
+let closure_2 = ApexExperiment.createApexExperiment(obj2);
+const obj3 = { name: "2026-06-battlenet-social-sdk-migration", kind: "user", defaultConfig: obj, variations: obj };
+const apexExperiment = ApexExperiment.createApexExperiment(obj3);
+const result = require("set").fileFinishedImporting("modules/application_account_linking/experiments/socialSDKMigration.tsx");
 
 export const useIsRiotSocialSDKMigrationEnabled = function useIsRiotSocialSDKMigrationEnabled(location) {
   const config = closure_0.useConfig(location);

@@ -1,28 +1,27 @@
-// Module ID: 11247
-// Function ID: 87539
+// Module ID: 11257
+// Function ID: 87589
 // Name: useSortedSectionCommands
-// Dependencies: []
+// Dependencies: [57, 31, 11258, 11191, 664, 2]
 // Exports: default
 
-// Module 11247 (useSortedSectionCommands)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const CommandListSortOrder = arg1(dependencyMap[2]).CommandListSortOrder;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/app_launcher/hooks/useSortedSectionCommands.tsx");
+// Module 11257 (useSortedSectionCommands)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { CommandListSortOrder } from "CommandListSortOrder";
+
+const result = require("CommandListSortOrder").fileFinishedImporting("modules/app_launcher/hooks/useSortedSectionCommands.tsx");
 
 export default function useSortedSectionCommands(sectionId) {
   let canSort;
   let popularSortedCommands;
   sectionId = sectionId.sectionId;
-  const importDefault = sectionId;
   const commandsByActiveSection = sectionId.commandsByActiveSection;
-  const importAll = commandsByActiveSection;
-  const tmp = callback(React.useState(CommandListSortOrder.ALPHABETICAL), 2);
+  let tmp = canSort(React.useState(CommandListSortOrder.ALPHABETICAL), 2);
   const first = tmp[0];
   const dependencyMap = tmp3;
-  const items = [commandsByActiveSection, sectionId];
+  let items = [commandsByActiveSection, sectionId];
   const memo = React.useMemo(() => {
-    const found = commandsByActiveSection.find((section) => section.section.id === closure_0);
+    const found = commandsByActiveSection.find((section) => section.section.id === outer1_0);
     let data;
     if (null != found) {
       data = found.data;
@@ -32,22 +31,21 @@ export default function useSortedSectionCommands(sectionId) {
     }
     return data;
   }, items);
-  ({ popularSortedCommands, canSort } = function usePopularSortedCommands(alphabeticalSortedCommands) {
+  ({ popularSortedCommands, canSort } = (function usePopularSortedCommands(alphabeticalSortedCommands) {
     alphabeticalSortedCommands = alphabeticalSortedCommands.alphabeticalSortedCommands;
-    const sectionId = alphabeticalSortedCommands;
     const items = [alphabeticalSortedCommands];
-    return React.useMemo(() => {
+    return outer1_4.useMemo(() => {
       if (alphabeticalSortedCommands.length <= 1) {
         let obj = { popularSortedCommands: alphabeticalSortedCommands, canSort: false };
         return obj;
       } else {
-        const alphabeticalSortedCommands = false;
+        alphabeticalSortedCommands = false;
         const mapped = alphabeticalSortedCommands.map((command, alphabeticalSortIndex) => {
-          let tmp = closure_0;
-          if (!closure_0) {
+          let tmp = c0;
+          if (!c0) {
             tmp = null != command.global_popularity_rank;
           }
-          closure_0 = tmp;
+          c0 = tmp;
           return { command, alphabeticalSortIndex };
         });
         obj = {};
@@ -80,8 +78,7 @@ export default function useSortedSectionCommands(sectionId) {
         return tmp4;
       }
     }, items);
-  }({ alphabeticalSortedCommands: memo }));
-  const callback = canSort;
+  })({ alphabeticalSortedCommands: memo }));
   const items1 = [sectionId];
   const effect = React.useEffect(() => {
     let obj = commandsByActiveSection(tmp3[3]);
@@ -91,13 +88,13 @@ export default function useSortedSectionCommands(sectionId) {
   const items2 = [canSort];
   const layoutEffect = React.useLayoutEffect(() => {
     if (canSort) {
-      const tmp3 = tmp3(constants.POPULAR);
+      tmp3 = tmp3(outer1_5.POPULAR);
     }
   }, items2);
   if (CommandListSortOrder.POPULAR !== first) {
     const ALPHABETICAL = CommandListSortOrder.ALPHABETICAL;
     popularSortedCommands = memo;
   }
-  const obj = { sortOrder: first, setSortOrder: tmp[1], commands: popularSortedCommands, canSort };
+  let obj = { sortOrder: first, setSortOrder: tmp[1], commands: popularSortedCommands, canSort };
   return obj;
 };

@@ -1,50 +1,53 @@
-// Module ID: 9798
-// Function ID: 76093
+// Module ID: 9805
+// Function ID: 76134
 // Name: NameplatePreview
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 1917, 33, 4130, 689, 1873, 9088, 7840, 566, 3969, 4361, 1273, 8229, 8513, 8514, 4126, 2]
 // Exports: NameplatePreview
 
-// Module 9798 (NameplatePreview)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
+// Module 9805 (NameplatePreview)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { <string:2599080275>: false, <string:3505642171>: null, <string:3757145625>: "\u{1F43F}\uFE0F", <string:1221882832>: 7, <string:1319336657>: 370 };
+  obj = { borderRadius: null, padding: null, flexDirection: "row", alignItems: "center", width: "100%" };
   let num = 0;
   if (arg0) {
-    num = importDefault(dependencyMap[6]).radii.sm;
+    num = importDefault(689).radii.sm;
   }
   obj.borderRadius = num;
-  obj.padding = importDefault(dependencyMap[6]).space.PX_8;
-  obj.backgroundColor = importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST;
+  obj.padding = importDefault(689).space.PX_8;
+  obj.backgroundColor = importDefault(689).colors.BACKGROUND_BASE_LOWEST;
   obj.container = obj;
   obj = {};
   let num3 = 0;
   if (arg0) {
-    num3 = importDefault(dependencyMap[6]).radii.sm;
+    num3 = importDefault(689).radii.sm;
   }
   obj.borderRadius = num3;
   obj.nameplate = obj;
-  obj.avatar = { borderRadius: importDefault(dependencyMap[6]).radii.round, marginRight: importDefault(dependencyMap[6]).space.PX_8 };
-  const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.round, marginRight: importDefault(dependencyMap[6]).space.PX_8 };
-  obj.content = { flex: 1, paddingRight: importDefault(dependencyMap[6]).space.PX_40 };
+  obj.avatar = { borderRadius: importDefault(689).radii.round, marginRight: importDefault(689).space.PX_8 };
+  const obj1 = { borderRadius: importDefault(689).radii.round, marginRight: importDefault(689).space.PX_8 };
+  obj.content = { flex: 1, paddingRight: importDefault(689).space.PX_40 };
   return obj;
 });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/collectibles/nameplates/native/NameplatePreview.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/nameplates/native/NameplatePreview.tsx");
 
-export const NameplatePreview = function NameplatePreview(aria-hidden) {
+export const NameplatePreview = function NameplatePreview(aria_hidden) {
   let nameplate;
   let nameplateData;
   let pendingDisplayNameStyles;
   let pendingGlobalName;
   let user;
   ({ nameplate, nameplateData, user } = aria_hidden);
-  const arg1 = user;
   let flag = aria_hidden.hasRoundedCorners;
   if (flag === undefined) {
     flag = true;
@@ -54,37 +57,35 @@ export const NameplatePreview = function NameplatePreview(aria-hidden) {
     flag2 = false;
   }
   const guildId = aria_hidden.guildId;
-  const importDefault = guildId;
   ({ pendingDisplayNameStyles, pendingGlobalName } = aria_hidden);
   let dependencyMap;
-  let React;
-  let View;
+  let stateFromStores;
+  let c4;
   const tmp = callback2(flag);
   dependencyMap = tmp;
   if (null != nameplate) {
-    let obj = arg1(dependencyMap[7]);
+    let obj = user(1873);
     nameplateData = obj.getNameplateData(nameplate);
   }
-  let obj1 = arg1(dependencyMap[8]);
+  let obj1 = user(9088);
   const avatarDecoration = obj1.useAvatarDecoration(user, guildId);
-  const pendingAvatarDecoration = importDefault(dependencyMap[9])({ guildId }).pendingAvatarDecoration;
-  let obj2 = arg1(dependencyMap[10]);
-  const items = [closure_5];
-  const stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  React = stateFromStores;
-  let obj3 = arg1(dependencyMap[10]);
+  const pendingAvatarDecoration = guildId(7840)({ guildId }).pendingAvatarDecoration;
+  let obj2 = user(566);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj2.useStateFromStores(items, () => outer1_5.useReducedMotion);
+  let obj3 = user(566);
   const items1 = [closure_6];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let member = null;
     if (null != guildId) {
       member = null;
       if (null != user) {
-        member = member.getMember(guildId, user.id);
+        member = outer1_6.getMember(guildId, user.id);
       }
     }
     return member;
   });
-  let obj4 = importDefault(dependencyMap[11]);
+  let obj4 = guildId(3969);
   const name = obj4.useName(user);
   if (null == pendingGlobalName) {
     let tmp8 = name;
@@ -108,35 +109,35 @@ export const NameplatePreview = function NameplatePreview(aria-hidden) {
   if (undefined !== pendingAvatarDecoration) {
     tmp11 = pendingAvatarDecoration;
   }
-  View = tmp11;
+  c4 = tmp11;
   obj = { userId: user.id, guildId, pendingDisplayNameStyles };
-  const tmp12 = importDefault(dependencyMap[12])(obj);
+  const tmp12 = guildId(4361)(obj);
   const items2 = [tmp.avatar, user, guildId, tmp11, stateFromStores];
-  obj = { style: tmp.container, aria-hidden: aria_hidden.aria-hidden };
-  const memo = React.useMemo(() => {
-    const obj = { style: tmp.avatar, user, guildId, size: user(tmp[13]).AvatarSizes.NORMAL, avatarDecoration: tmp11, animate: !stateFromStores, autoStatusCutout: true, aria-hidden: true };
-    return callback(user(tmp[13]).Avatar, obj);
+  obj = { style: tmp.container, "aria-hidden": aria_hidden["aria-hidden"] };
+  const memo = stateFromStores.useMemo(() => {
+    const obj = { style: _undefined.avatar, user, guildId, size: user(_undefined[13]).AvatarSizes.NORMAL, avatarDecoration: c4, animate: !stateFromStores, autoStatusCutout: true, "aria-hidden": true };
+    return outer1_7(user(_undefined[13]).Avatar, obj);
   }, items2);
   obj1 = { nameplate: nameplateData, style: tmp.nameplate, fullOpacity: true, animate: flag2 };
-  const items3 = [callback(importDefault(dependencyMap[14]), obj1), , ];
+  const items3 = [callback(guildId(8229), obj1), , ];
   obj2 = { style: tmp.avatar, children: memo };
-  items3[1] = callback(View, obj2);
+  items3[1] = callback(c4, obj2);
   obj3 = { style: tmp.content };
   let tmp16 = null != tmp12;
   if (tmp16) {
-    obj4 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: arg1(dependencyMap[16]).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
-    tmp16 = callback(importDefault(dependencyMap[15]), obj4);
-    const tmp20 = importDefault(dependencyMap[15]);
+    obj4 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(8514).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+    tmp16 = callback(guildId(8513), obj4);
+    const tmp20 = guildId(8513);
   }
   const items4 = [tmp16, ];
   let tmp22 = null == tmp12;
   if (tmp22) {
-    const obj5 = { children: pendingGlobalName };
-    tmp22 = callback(arg1(dependencyMap[17]).Text, obj5);
+    const obj5 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
+    tmp22 = callback(user(4126).Text, obj5);
   }
   items4[1] = tmp22;
   obj3.children = items4;
-  items3[2] = closure_8(View, obj3);
+  items3[2] = closure_8(c4, obj3);
   obj.children = items3;
-  return closure_8(View, obj);
+  return closure_8(c4, obj);
 };

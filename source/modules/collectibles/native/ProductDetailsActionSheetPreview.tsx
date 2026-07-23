@@ -1,10 +1,24 @@
-// Module ID: 8739
-// Function ID: 69120
+// Module ID: 8746
+// Function ID: 69161
 // Name: BundleProductPreview
-// Dependencies: []
+// Dependencies: [57, 31, 27, 655, 33, 4130, 689, 1876, 8233, 8747, 8207, 1212, 8749, 8360, 8758, 8760, 2]
 // Exports: default
 
-// Module 8739 (BundleProductPreview)
+// Module 8746 (BundleProductPreview)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { ShopCtaEnum } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let require = arg1;
 function BundleProductPreview(onActiveItemTypeChange) {
   let handlePreviewPress;
   let onActiveItemChange;
@@ -12,44 +26,41 @@ function BundleProductPreview(onActiveItemTypeChange) {
   let product;
   let width;
   ({ product, width, handlePreviewPress, onTrackPress, onActiveItemChange } = onActiveItemTypeChange);
-  let obj = arg1(dependencyMap[8]);
+  let obj = require(8233) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment("ProductDetailsActionSheetPreview").enabled) {
     obj = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange };
-    let tmp2Result = tmp2(importDefault(dependencyMap[9]), obj);
+    let tmp2Result = tmp2(importDefault(8747), obj);
   } else {
     obj = { style: tmp.previewDivider };
     const obj1 = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange, onActiveItemTypeChange: onActiveItemTypeChange.onActiveItemTypeChange };
-    obj.children = callback5(BundlePreview, obj1);
+    obj.children = callback4(BundlePreview, obj1);
     tmp2Result = tmp2(View, obj);
   }
   return tmp2Result;
 }
 function BundlePreview(product) {
   product = product.product;
-  const arg1 = product;
+  const require = product;
   const width = product.width;
-  const importDefault = width;
   const handlePreviewPress = product.handlePreviewPress;
-  const dependencyMap = handlePreviewPress;
   const onTrackPress = product.onTrackPress;
-  const callback2 = onTrackPress;
   const onActiveItemChange = product.onActiveItemChange;
   const onActiveItemTypeChange = product.onActiveItemTypeChange;
-  let obj = arg1(dependencyMap[10]);
+  let obj = require(handlePreviewPress[10]);
   const shopProductItems = obj.useShopProductItems(product);
-  const tmp2 = callback2(first(0), 2);
-  const first = tmp2[0];
+  const tmp2 = onTrackPress(first(0), 2);
+  first = tmp2[0];
   let closure_8 = tmp2[1];
-  const items = [product, width, handlePreviewPress, shopProductItems, onTrackPress, first];
+  let items = [product, width, handlePreviewPress, shopProductItems, onTrackPress, first];
   const tmp4 = shopProductItems(() => {
     let tmp = null;
     if (null != shopProductItems.firstProfileEffect) {
       let obj = {};
       const intl = product(handlePreviewPress[11]).intl;
-      obj.label = intl.string(product(handlePreviewPress[11]).t.s+YSgo);
+      obj.label = intl.string(product(handlePreviewPress[11]).t["s+YSgo"]);
       obj.id = "profile";
       obj = { profileEffect: shopProductItems.firstProfileEffect, profileEffectRestartKey: first, width, handlePreviewPress, onTrackPress };
-      obj.page = callback2(product(handlePreviewPress[12]).ProfileEffectPreview, obj);
+      obj.page = dependencyMap(product(handlePreviewPress[12]).ProfileEffectPreview, obj);
       tmp = obj;
     }
     const items = [tmp, , ];
@@ -59,8 +70,8 @@ function BundlePreview(product) {
       const intl2 = product(handlePreviewPress[11]).intl;
       obj.label = intl2.string(product(handlePreviewPress[11]).t.aVCcr8);
       obj.id = "decoration";
-      const obj1 = { product, handlePreviewPress, onTrackPress };
-      obj.page = callback2(product(handlePreviewPress[12]).AvatarDecorationPreview, obj1);
+      const obj1 = { product: closure_0, handlePreviewPress, onTrackPress };
+      obj.page = dependencyMap(product(handlePreviewPress[12]).AvatarDecorationPreview, obj1);
       tmp10 = obj;
     }
     items[1] = tmp10;
@@ -70,8 +81,8 @@ function BundlePreview(product) {
       const intl3 = product(handlePreviewPress[11]).intl;
       obj2.label = intl3.string(product(handlePreviewPress[11]).t.HNnSVZ);
       obj2.id = "nameplate";
-      const obj3 = { product };
-      obj2.page = callback2(product(handlePreviewPress[12]).NameplatePreview, obj3);
+      const obj3 = { product: closure_0 };
+      obj2.page = dependencyMap(product(handlePreviewPress[12]).NameplatePreview, obj3);
       tmp17 = obj2;
     }
     items[2] = tmp17;
@@ -79,7 +90,7 @@ function BundlePreview(product) {
   }, items);
   const ShopCtaEnum = tmp4;
   const items1 = [shopProductItems];
-  const callback5 = shopProductItems(() => ({ profile: shopProductItems.firstProfileEffect, decoration: shopProductItems.firstAvatarDecoration, nameplate: shopProductItems.firstNameplate }), items1);
+  const callback4 = shopProductItems(() => ({ profile: shopProductItems.firstProfileEffect, decoration: shopProductItems.firstAvatarDecoration, nameplate: shopProductItems.firstNameplate }), items1);
   const items2 = [shopProductItems, onActiveItemChange];
   onActiveItemTypeChange(() => {
     let firstNameplate = shopProductItems.firstProfileEffect;
@@ -95,7 +106,7 @@ function BundlePreview(product) {
       }
     }
   }, items2);
-  let obj1 = arg1(dependencyMap[13]);
+  let obj1 = require(handlePreviewPress[13]);
   obj = {
     items: tmp4,
     pageWidth: width,
@@ -106,12 +117,12 @@ function BundlePreview(product) {
         id = tmp.id;
       }
       if (null != id) {
-        if (null != closure_13[id]) {
+        if (null != outer1_13[id]) {
           if (null != onActiveItemTypeChange) {
             onActiveItemTypeChange(tmp4);
           }
         }
-        if (null != closure_10[id]) {
+        if (null != dependencyMap[id]) {
           if (null != onActiveItemChange) {
             onActiveItemChange(tmp9);
           }
@@ -143,26 +154,20 @@ function BundlePreview(product) {
   };
   const segmentedControlState = obj1.useSegmentedControlState(obj);
   obj = {};
-  const items3 = [callback5(arg1(dependencyMap[14]).SegmentedControlPages, { state: segmentedControlState }), ];
-  obj1 = { style: { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingTop: importDefault(dependencyMap[6]).space.PX_12 }, children: callback5(arg1(dependencyMap[15]).SegmentedControl, { state: segmentedControlState, variant: "default" }) };
-  items3[1] = callback5(closure_8, obj1);
+  const items3 = [callback4(require(handlePreviewPress[14]).SegmentedControlPages, { state: segmentedControlState }), ];
+  obj1 = { style: { paddingHorizontal: width(handlePreviewPress[6]).space.PX_16, paddingTop: width(handlePreviewPress[6]).space.PX_12 }, children: callback4(require(handlePreviewPress[15]).SegmentedControl, { state: segmentedControlState, variant: "default" }) };
+  items3[1] = callback4(closure_8, obj1);
   obj.children = items3;
-  return callback6(closure_8, obj);
+  return callback5(closure_8, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ useCallback: closure_4, useEffect: closure_5, useMemo: closure_6, useState: closure_7 } = arg1(dependencyMap[1]));
-const View = arg1(dependencyMap[2]).View;
-const ShopCtaEnum = arg1(dependencyMap[3]).ShopCtaEnum;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { previewContainer: { flex: 1 } };
-obj = { borderBottomColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: importDefault(dependencyMap[6]).space.PX_16, flex: 1 };
-obj.previewDivider = obj;
-let closure_12 = obj.createStyles(obj);
-const obj1 = { profile: arg1(dependencyMap[7]).CollectiblesItemType.PROFILE_EFFECT, decoration: arg1(dependencyMap[7]).CollectiblesItemType.AVATAR_DECORATION, nameplate: arg1(dependencyMap[7]).CollectiblesItemType.NAMEPLATE };
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPreview.tsx");
+({ useCallback: closure_4, useEffect: closure_5, useMemo: closure_6, useState: closure_7 } = result);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { previewContainer: { flex: 1 } };
+_createForOfIteratorHelperLoose = { borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1 };
+_createForOfIteratorHelperLoose.previewDivider = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { profile: require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT, decoration: require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION, nameplate: require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE };
+result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetPreview.tsx");
 
 export default function ProductDetailsActionSheetPreview(arg0) {
   let handlePreviewPress;
@@ -172,25 +177,25 @@ export default function ProductDetailsActionSheetPreview(arg0) {
   let product;
   ({ product, handlePreviewPress, onTrackPress } = arg0);
   ({ onBundleActiveItemTypeChange, onBundleActiveItemChange } = arg0);
-  const tmp = callback7();
-  const tmp2 = callback2(callback4(0), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = callback(callback3(0), 2);
   const first = tmp2[0];
-  const callback = tmp2[1];
+  const _require = tmp2[1];
   let obj = {
     style: tmp.previewContainer,
-    onLayout: callback3((nativeEvent) => {
+    onLayout: callback2((nativeEvent) => {
       callback(nativeEvent.nativeEvent.layout.width);
     }, [])
   };
-  if (product.type === callback(dependencyMap[7]).CollectiblesItemType.BUNDLE) {
+  if (product.type === _require(1876).CollectiblesItemType.BUNDLE) {
     obj = { product, width: first, handlePreviewPress, onTrackPress, onActiveItemChange: onBundleActiveItemChange, onActiveItemTypeChange: onBundleActiveItemTypeChange };
-    let tmp12 = callback5(BundleProductPreview, obj);
+    let tmp12 = callback4(BundleProductPreview, obj);
   } else {
     obj = { style: tmp.previewDivider };
     const obj1 = { product, width: first, handlePreviewPress, onTrackPress };
-    obj.children = callback5(callback(dependencyMap[12]).IndividualProductPreview, obj1);
-    tmp12 = callback5(View, obj);
+    obj.children = callback4(_require(8749).IndividualProductPreview, obj1);
+    tmp12 = callback4(View, obj);
   }
   obj.children = tmp12;
-  return callback5(View, obj);
+  return callback4(View, obj);
 };

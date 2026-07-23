@@ -1,16 +1,16 @@
-// Module ID: 7583
-// Function ID: 60727
-// Dependencies: []
+// Module ID: 7589
+// Function ID: 60764
+// Dependencies: [3994, 3992, 3991, 5517, 2]
 
-// Module 7583
-const _module = require(dependencyMap[0]);
-if (_module.isFabric()) {
-  let importDefaultResult = importDefault(dependencyMap[1]);
+// Module 7589
+import isFabric from "isFabric";
+
+if (isFabric.isFabric()) {
+  let importDefaultResult = require("View");
 } else {
-  importDefaultResult = importDefault(dependencyMap[2]).createAnimatedComponent(importDefault(dependencyMap[3]));
-  const importDefaultResult1 = importDefault(dependencyMap[2]);
+  importDefaultResult = require("module_3991").createAnimatedComponent(require("set"));
+  const importDefaultResult1 = require("module_3991");
 }
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");
+const result = require("module_3991").fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");
 
 export default importDefaultResult;

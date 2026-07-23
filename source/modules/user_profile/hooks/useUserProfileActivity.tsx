@@ -1,28 +1,26 @@
-// Module ID: 11951
-// Function ID: 92398
+// Module ID: 11963
+// Function ID: 92451
 // Name: useUserProfileActivity
-// Dependencies: []
+// Dependencies: [31, 8690, 4217, 9065, 566, 11964, 7815, 8312, 8308, 2]
 // Exports: default
 
-// Module 11951 (useUserProfileActivity)
-const useMemo = require(dependencyMap[0]).useMemo;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
+// Module 11963 (useUserProfileActivity)
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
 let closure_6 = [];
 let closure_7 = [];
-const _module = require(dependencyMap[9]);
-const result = _module.fileFinishedImporting("modules/user_profile/hooks/useUserProfileActivity.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/useUserProfileActivity.tsx");
 
 export default function useUserProfileActivity(arg0) {
-  const require = arg0;
-  let obj = require(dependencyMap[4]);
+  const _require = arg0;
+  let obj = _require(stateFromStores1[4]);
   const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => activities.getActivities(arg0));
-  const importDefault = stateFromStores;
-  const tmp = importDefault(dependencyMap[3])(arg0);
-  const items1 = [closure_4];
-  const stateFromStores1 = require(dependencyMap[4]).useStateFromStores(items1, () => userOutbox.getUserOutbox(arg0));
-  const dependencyMap = stateFromStores1;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getActivities(closure_0));
+  let tmp = stateFromStores(stateFromStores1[3])(arg0);
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores1 = _require(stateFromStores1[4]).useStateFromStores(items1, () => outer1_4.getUserOutbox(closure_0));
   const items2 = [stateFromStores, ];
   let entries;
   if (null != stateFromStores1) {
@@ -31,15 +29,14 @@ export default function useUserProfileActivity(arg0) {
   items2[1] = entries;
   const tmp4Result = useMemo(() => {
     let found;
-    let obj = arg0(stateFromStores1[5]);
+    let obj = callback(stateFromStores1[5]);
     let userProfileLiveActivities = obj.getUserProfileLiveActivities(stateFromStores);
-    const arg0 = userProfileLiveActivities;
     if (null != stateFromStores1) {
       const entries = stateFromStores1.entries;
       found = entries.filter((entry) => {
         let tmp = entry;
         const userProfileLiveActivities = entry;
-        const tmp2 = !userProfileLiveActivities(closure_2[6]).isEntryLive(entry);
+        const tmp2 = !userProfileLiveActivities(stateFromStores1[6]).isEntryLive(entry);
         if (!tmp2) {
           return tmp2;
         } else {
@@ -49,8 +46,8 @@ export default function useUserProfileActivity(arg0) {
               tmp = !userProfileLiveActivities.some((party) => {
                 let result = null != party;
                 if (result) {
-                  result = party(closure_2[8]).isMatchingListeningActivity(party, party);
-                  const obj = party(closure_2[8]);
+                  result = entry(stateFromStores1[8]).isMatchingListeningActivity(entry, party);
+                  const obj = entry(stateFromStores1[8]);
                 }
                 return result;
               });
@@ -61,28 +58,28 @@ export default function useUserProfileActivity(arg0) {
               result = !userProfileLiveActivities.some((details) => {
                 let result = null != details;
                 if (result) {
-                  result = details(closure_2[8]).isMatchingWatchActivity(details, details);
-                  const obj = details(closure_2[8]);
+                  result = entry(stateFromStores1[8]).isMatchingWatchActivity(entry, details);
+                  const obj = entry(stateFromStores1[8]);
                 }
                 return result;
               });
             } else {
-              result = userProfileLiveActivities(closure_2[7]).isRecentActivityEntry(tmp);
-              const obj4 = userProfileLiveActivities(closure_2[7]);
+              result = userProfileLiveActivities(stateFromStores1[7]).isRecentActivityEntry(tmp);
+              const obj4 = userProfileLiveActivities(stateFromStores1[7]);
             }
-            const obj3 = userProfileLiveActivities(closure_2[7]);
+            obj3 = userProfileLiveActivities(stateFromStores1[7]);
           }
-          const obj2 = userProfileLiveActivities(closure_2[7]);
+          obj2 = userProfileLiveActivities(stateFromStores1[7]);
         }
       });
     }
     obj = {};
     if (0 === userProfileLiveActivities.length) {
-      userProfileLiveActivities = closure_6;
+      userProfileLiveActivities = outer1_6;
     }
     obj.live = userProfileLiveActivities;
     if (null == found) {
-      found = closure_7;
+      found = outer1_7;
     }
     obj.recent = found;
     return obj;

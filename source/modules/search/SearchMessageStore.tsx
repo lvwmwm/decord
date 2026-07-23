@@ -1,9 +1,18 @@
-// Module ID: 5655
-// Function ID: 48519
+// Module ID: 5660
+// Function ID: 48546
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 1194, 3767, 4029, 4351, 3769, 566, 686, 2]
 
-// Module 5655 (_isNativeReflectConstruct)
+// Module 5660 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import V6OrEarlierAPIError from "V6OrEarlierAPIError";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -39,38 +48,33 @@ function withSearchState(arg0, arg1) {
   return arg1(getSearchStateOrDefault(arg0));
 }
 function handleReaction(optimistic) {
+  let _possibleConstructorReturn;
+  let dependencyMap;
   let messageId;
   let userId;
-  const arg1 = optimistic;
-  ({ type: closure_1, emoji: closure_2 } = optimistic);
+  const _require = optimistic;
+  ({ type: dependencyMap, emoji: _possibleConstructorReturn } = optimistic);
   ({ messageId, userId } = optimistic);
   if (obj.shouldApplyReaction(optimistic)) {
-    let closure_3 = store.getId() === userId;
+    let _getPrototypeOf = store.getId() === userId;
     return updateMessage(messageId, (addReaction) => {
-      const reactionType = addReaction.reactionType;
+      const reactionType = optimistic.reactionType;
       if ("MESSAGE_REACTION_ADD" === closure_1) {
-        let addReactionResult = addReaction.addReaction(closure_2, closure_3, addReaction.colors, reactionType);
+        let addReactionResult = addReaction.addReaction(_possibleConstructorReturn, _getPrototypeOf, optimistic.colors, reactionType);
       } else {
-        addReactionResult = addReaction.removeReaction(closure_2, closure_3, reactionType);
+        addReactionResult = addReaction.removeReaction(_possibleConstructorReturn, _getPrototypeOf, reactionType);
       }
       return addReactionResult;
     });
   } else {
     return false;
   }
-  const obj = arg1(dependencyMap[9]);
+  obj = _require(3769);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = () => {
+let closure_9 = (() => {
   class SearchState {
     constructor() {
-      tmp = closure_5(this, SearchState);
+      tmp = outer1_5(this, SearchState);
       this.isIndexing = false;
       this.isHistoricalIndexing = false;
       this.isFetching = false;
@@ -86,7 +90,6 @@ let closure_9 = () => {
       return;
     }
   }
-  const arg1 = SearchState;
   let obj = {
     key: "handleSearchStart",
     value() {
@@ -96,7 +99,7 @@ let closure_9 = () => {
       this.error = null;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "handleSearchIndexing",
     value() {
@@ -115,7 +118,7 @@ let closure_9 = () => {
       this.isIndexing = false;
       this.isInitialFetchComplete = true;
       this.isHistoricalIndexing = false;
-      const aPIError = new SearchState(closure_1[7]).APIError(arg0);
+      const aPIError = new SearchState(outer1_1[7]).APIError(arg0);
       this.error = aPIError;
       this.analyticsId = null;
       this.documentsIndexed = 0;
@@ -125,8 +128,8 @@ let closure_9 = () => {
   items[3] = {
     key: "handleSearchSuccess",
     value(analyticsId, arr) {
-      const self = this;
-      const SearchState = this;
+      let self = this;
+      self = this;
       let items;
       let items1;
       this.analyticsId = analyticsId.analyticsId;
@@ -146,7 +149,7 @@ let closure_9 = () => {
         const messageIds = self.messageIds;
         let hasItem = messageIds.has(id.id);
         if (!hasItem) {
-          hasItem = blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(id);
+          hasItem = outer2_8.isBlockedOrIgnoredForMessage(id);
         }
         if (!hasItem) {
           const messageIds2 = self.messageIds;
@@ -161,23 +164,23 @@ let closure_9 = () => {
     }
   };
   return callback2(SearchState, items);
-}();
-const map = new Map();
-const map1 = new Map();
-const map2 = new Map();
-let tmp5 = (Store) => {
+})();
+let map = new Map();
+let map1 = new Map();
+let map2 = new Map();
+let tmp5 = ((Store) => {
   class SearchMessageStore {
     constructor() {
       self = this;
-      tmp = closure_5(this, SearchMessageStore);
-      obj = closure_3(SearchMessageStore);
-      tmp2 = closure_2;
-      if (closure_13()) {
+      tmp = outer1_5(this, SearchMessageStore);
+      obj = outer1_3(SearchMessageStore);
+      tmp2 = outer1_2;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -186,149 +189,148 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SearchMessageStore;
   callback(SearchMessageStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8);
+      this.waitFor(outer1_7, outer1_8);
     }
   };
   const items = [obj, , , , , , , , , , , , ];
   obj = {
     key: "getMessage",
     value(arg0) {
-      return closure_11.get(arg0);
+      return outer1_11.get(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getTotalCount",
     value(arg0) {
-      return callback4(arg0, (totalResults) => totalResults.totalResults);
+      return outer1_17(arg0, (totalResults) => totalResults.totalResults);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getIsInitialFetchComplete",
     value(arg0) {
-      return callback4(arg0, (isInitialFetchComplete) => isInitialFetchComplete.isInitialFetchComplete);
+      return outer1_17(arg0, (isInitialFetchComplete) => isInitialFetchComplete.isInitialFetchComplete);
     }
   };
   items[4] = {
     key: "getIsIndexing",
     value(arg0) {
-      return callback4(arg0, (isIndexing) => isIndexing.isIndexing);
+      return outer1_17(arg0, (isIndexing) => isIndexing.isIndexing);
     }
   };
   items[5] = {
     key: "getIsHistoricalIndexing",
     value(arg0) {
-      return callback4(arg0, (isHistoricalIndexing) => isHistoricalIndexing.isHistoricalIndexing);
+      return outer1_17(arg0, (isHistoricalIndexing) => isHistoricalIndexing.isHistoricalIndexing);
     }
   };
   items[6] = {
     key: "getDocumentsIndexed",
     value(arg0) {
-      return callback4(arg0, (documentsIndexed) => documentsIndexed.documentsIndexed);
+      return outer1_17(arg0, (documentsIndexed) => documentsIndexed.documentsIndexed);
     }
   };
   items[7] = {
     key: "getIsFetching",
     value(arg0) {
-      return callback4(arg0, (isFetching) => isFetching.isFetching);
+      return outer1_17(arg0, (isFetching) => isFetching.isFetching);
     }
   };
   items[8] = {
     key: "getError",
     value(arg0) {
-      return callback4(arg0, (error) => error.error);
+      return outer1_17(arg0, (error) => error.error);
     }
   };
   items[9] = {
     key: "getMessages",
     value(arg0) {
-      return callback4(arg0, (messages) => messages.messages);
+      return outer1_17(arg0, (messages) => messages.messages);
     }
   };
   items[10] = {
     key: "getCursor",
     value(arg0) {
-      return callback4(arg0, (cursor) => cursor.cursor);
+      return outer1_17(arg0, (cursor) => cursor.cursor);
     }
   };
   items[11] = {
     key: "getAnalyticsId",
     value(arg0) {
-      return callback4(arg0, (analyticsId) => analyticsId.analyticsId);
+      return outer1_17(arg0, (analyticsId) => analyticsId.analyticsId);
     }
   };
   items[12] = {
     key: "hasSearchState",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_10.has(arg0);
     }
   };
   return callback2(SearchMessageStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "SearchMessageStore";
-tmp5 = new tmp5(importDefault(dependencyMap[11]), {
+tmp5 = new tmp5(require("dispatcher"), {
   SEARCH_MESSAGES_START: function handleSearchMessagesStart(ids) {
     ids = ids.ids;
     const item = ids.forEach((arg0) => {
-      callback(arg0).handleSearchStart();
+      outer1_15(arg0).handleSearchStart();
     });
   },
   SEARCH_MESSAGES_SUCCESS: function handleSearchMessagesSuccess(data) {
     data = data.data;
-    const item = data.forEach((id) => {
+    let item = data.forEach((id) => {
       const messages = id.messages;
-      const obj = callback(id.id);
-      const item = callback(id.id).handleSearchSuccess(id, messages.map((arg0) => {
+      const obj = outer1_15(id.id);
+      const item = outer1_15(id.id).handleSearchSuccess(id, messages.map((arg0) => {
         let tmp;
         [tmp] = arg0;
-        return callback(closure_1[8]).createMessageRecord(tmp);
+        return outer2_0(outer2_1[8]).createMessageRecord(tmp);
       })).forEach((id) => {
-        const result = closure_11.set(id.id, id);
-        const value = store.get(id.id);
+        const result = outer2_11.set(id.id, id);
+        const value = outer2_12.get(id.id);
         let num = 0;
         if (null != value) {
           num = value;
         }
-        const result1 = store.set(id.id, num + 1);
+        const result1 = outer2_12.set(id.id, num + 1);
       });
     });
   },
   SEARCH_MESSAGES_INDEXING: function handleSearchMessagesIndexing(ids) {
     ids = ids.ids;
     const item = ids.forEach((arg0) => {
-      callback(arg0).handleSearchIndexing();
+      outer1_15(arg0).handleSearchIndexing();
     });
   },
   SEARCH_MESSAGES_FAILURE: function handleSearchMessagesFailure(ids) {
-    const arg1 = ids;
+    let closure_0 = ids;
     ids = ids.ids;
     const item = ids.forEach((arg0) => {
-      callback(arg0).handleSearchFailure(arg0.error);
+      outer1_15(arg0).handleSearchFailure(ids.error);
     });
   },
   SEARCH_MESSAGES_CLEAR: function handleSearchMessagesClear(id) {
-    const value = map.get(id.id);
+    let value = map.get(id.id);
     if (null == value) {
       return false;
     } else {
       const messageIds = value.messageIds;
       const item = messageIds.forEach((arg0) => {
-        const value = store.get(arg0);
+        const value = outer1_12.get(arg0);
         let num = 0;
         if (null != value) {
           num = value;
         }
         if (num <= 1) {
-          set.delete(arg0);
-          store.delete(arg0);
+          outer1_11.delete(arg0);
+          outer1_12.delete(arg0);
         } else {
-          const result = store.set(arg0, num - 1);
+          const result = outer1_12.set(arg0, num - 1);
         }
       });
       map.delete(id.id);
@@ -348,13 +350,13 @@ tmp5 = new tmp5(importDefault(dependencyMap[11]), {
       if (null == value) {
         return false;
       } else {
-        const result = map1.set(id, arg1(dependencyMap[8]).updateMessageRecord(value, message.message));
+        const result = map1.set(id, require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value, message.message));
       }
     }
   },
   MESSAGE_REACTION_ADD: handleReaction,
   MESSAGE_REACTION_ADD_MANY: function handleReactionBatch(reactions) {
-    const arg1 = reactions.reactions;
+    reactions = reactions.reactions;
     const id = store.getId();
     return updateMessage(reactions.messageId, (addReactionBatch) => addReactionBatch.addReactionBatch(reactions, closure_1));
   },
@@ -363,7 +365,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[11]), {
     return updateMessage(messageId.messageId, (set) => set.set("reactions", []));
   },
   MESSAGE_REACTION_REMOVE_EMOJI: function handleRemoveEmojiReactions(emoji) {
-    const arg1 = emoji.emoji;
+    emoji = emoji.emoji;
     return updateMessage(emoji.messageId, (removeReactionsForEmoji) => removeReactionsForEmoji.removeReactionsForEmoji(emoji));
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
@@ -372,6 +374,6 @@ tmp5 = new tmp5(importDefault(dependencyMap[11]), {
     const map2 = new Map();
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/search/SearchMessageStore.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/search/SearchMessageStore.tsx");
 
 export default tmp5;

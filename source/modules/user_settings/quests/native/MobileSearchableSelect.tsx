@@ -1,81 +1,92 @@
-// Module ID: 13960
-// Function ID: 106089
+// Module ID: 14074
+// Function ID: 108245
 // Name: MobileSearchableSelect
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 1212, 5773, 5786, 4126, 2]
 
-// Module 13960 (MobileSearchableSelect)
+// Module 14074 (MobileSearchableSelect)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 class MobileSearchableSelect {
   constructor(arg0) {
     options = global.options;
-    arg1 = options;
     value = global.value;
-    dependencyMap = value;
+    closure_1 = value;
     onChange = global.onChange;
     placeholder = global.placeholder;
     if (placeholder === undefined) {
-      tmp = arg1;
-      tmp2 = dependencyMap;
+      tmp = options;
+      tmp2 = closure_1;
       num = 6;
-      intl = arg1(dependencyMap[6]).intl;
-      placeholder = intl.string(arg1(dependencyMap[6]).t.XqMe3N);
+      intl = require("getSystemLocale").intl;
+      placeholder = intl.string(require("getSystemLocale").t.XqMe3N);
     }
     flag = global.allowCustomValue;
     if (flag === undefined) {
       flag = false;
     }
-    closure_3 = flag;
+    c3 = flag;
     flag2 = global.isDisabled;
     if (flag2 === undefined) {
       flag2 = false;
     }
-    closure_4 = flag2;
-    closure_5 = undefined;
-    closure_6 = undefined;
-    closure_7 = undefined;
-    jsxs = undefined;
-    closure_9 = undefined;
+    c4 = flag2;
+    c5 = undefined;
+    c6 = undefined;
+    c7 = undefined;
+    useState = undefined;
+    useState = undefined;
     intl = undefined;
-    closure_11 = undefined;
-    f106097 = undefined;
-    tmp3 = closure_9();
-    closure_5 = tmp3;
+    c11 = undefined;
+    f108253 = undefined;
+    tmp3 = useState();
+    c5 = tmp3;
     str = "";
-    tmp4 = closure_3;
+    tmp4 = c3;
     if (null != value) {
       str = value;
     }
-    tmp5 = onChange(closure_3.useState(str), 2);
+    tmp5 = onChange(c3.useState(str), 2);
     first = tmp5[0];
-    closure_6 = first;
-    closure_7 = tmp5[1];
-    tmp6 = onChange(closure_3.useState(false), 2);
-    [tmp7, closure_8] = tmp6;
-    tmp8 = onChange(closure_3.useState(false), 2);
+    c6 = first;
+    c7 = tmp5[1];
+    tmp6 = onChange(c3.useState(false), 2);
+    [tmp7, useState] = tmp6;
+    tmp8 = onChange(c3.useState(false), 2);
     first1 = tmp8[0];
-    closure_9 = first1;
+    useState = first1;
     intl = tmp8[1];
     items = [, , ];
     items[0] = value;
     items[1] = first;
     items[2] = first1;
-    effect = closure_3.useEffect(() => {
-      let tmp = null == value;
+    effect = c3.useEffect(() => {
+      let tmp = null == closure_1;
       if (!tmp) {
-        tmp = value === first;
+        tmp = closure_1 === first;
       }
       if (!tmp) {
         tmp = first1;
       }
       if (!tmp) {
-        callback(value);
+        callback(closure_1);
       }
     }, items);
     items1 = [, , ];
     items1[0] = options;
     items1[1] = first;
     items1[2] = flag;
-    memo = closure_3.useMemo(() => {
-      const arr = function defaultFilter(options, first) {
+    memo = c3.useMemo(() => {
+      const arr = (function defaultFilter(options, first) {
         if ("" === first.trim()) {
           return options;
         } else {
@@ -91,7 +102,7 @@ class MobileSearchableSelect {
             return hasItem;
           });
         }
-      }(options, first);
+      })(options, first);
       let tmp = arr;
       if (flag) {
         tmp = arr;
@@ -106,53 +117,53 @@ class MobileSearchableSelect {
       }
       return tmp;
     }, items1);
-    closure_11 = memo;
+    c11 = memo;
     items2 = [];
     items2[0] = options.length;
     items3 = [, ];
     items3[0] = first;
     items3[1] = onChange;
-    callback = closure_3.useCallback((arg0) => {
+    callback = c3.useCallback((arg0) => {
       callback2(true);
       callback(arg0);
       let tmp4 = arg0.length > 0;
       if (!tmp4) {
         tmp4 = options.length > 0;
       }
-      closure_8(tmp4);
+      c8(tmp4);
     }, items2);
     items4 = [];
     items4[0] = onChange;
-    callback1 = closure_3.useCallback(() => {
+    callback1 = c3.useCallback(() => {
       if ("" !== first.trim()) {
         onChange(first);
         callback2(false);
-        _undefined(false);
+        _undefined2(false);
       }
     }, items3);
-    f106097 = closure_3.useCallback((arg0) => {
+    f108253 = c3.useCallback((arg0) => {
       callback(arg0);
       onChange(arg0);
       callback2(false);
-      _undefined(false);
+      _undefined2(false);
     }, items4);
     items5 = [, ];
     items5[0] = first.length;
     items5[1] = options.length;
-    callback2 = closure_3.useCallback(() => {
+    callback2 = c3.useCallback(() => {
       let tmp2 = first.length > 0;
       if (!tmp2) {
         tmp2 = options.length > 0;
       }
-      closure_8(tmp2);
+      c8(tmp2);
     }, items5);
-    obj = { style: { maxWidth: "displayName", accessible: "useStateFromStores", importantForAccessibility: "alignItems" } };
-    callback3 = closure_3.useCallback(() => {
-      _undefined(false);
+    obj = { style: { position: "relative", zIndex: 100, overflow: "visible" } };
+    callback3 = c3.useCallback(() => {
+      _undefined2(false);
       callback2(false);
     }, []);
-    tmp15 = jsxs;
-    tmp16 = closure_4;
+    tmp15 = useState;
+    tmp16 = c4;
     obj = {};
     obj.placeholder = placeholder;
     obj.value = first;
@@ -160,7 +171,7 @@ class MobileSearchableSelect {
     obj.onSubmitEditing = callback1;
     obj.onFocus = callback2;
     obj.onBlur = callback3;
-    obj.leadingIcon = arg1(dependencyMap[8]).MagnifyingGlassIcon;
+    obj.leadingIcon = require("MagnifyingGlassIcon").MagnifyingGlassIcon;
     obj.isClearable = true;
     obj.returnKeyType = "search";
     obj.accessibilityRole = "search";
@@ -168,61 +179,56 @@ class MobileSearchableSelect {
     obj.autoCapitalize = "none";
     obj.isDisabled = flag2;
     items6 = [, ];
-    items6[0] = closure_7(arg1(dependencyMap[7]).TextField, obj);
+    items6[0] = c7(require("TextField").TextField, obj);
     if (tmp7) {
       tmp7 = memo.length > 0;
     }
     if (tmp7) {
-      tmp17 = closure_7;
-      tmp18 = closure_4;
+      tmp17 = c7;
+      tmp18 = c4;
       obj1 = {};
       obj1.style = tmp3.dropdownContainer;
-      tmp19 = closure_7;
-      tmp20 = closure_5;
-      obj2 = {};
-      obj2.children = memo.map((children) => {
-        const options = children;
+      tmp19 = c7;
+      tmp20 = c5;
+      obj2 = { nestedScrollEnabled: true, showsVerticalScrollIndicator: false, keyboardShouldPersistTaps: "handled" };
+      obj2.children = memo.map((label) => {
+        let closure_0 = label;
         let obj = {};
-        const items = [tmp3.dropdownItem, ];
+        const items = [_undefined.dropdownItem, ];
         let dropdownItemLast = arg1 === memo.length - 1;
         if (dropdownItemLast) {
-          dropdownItemLast = tmp3.dropdownItemLast;
+          dropdownItemLast = _undefined.dropdownItemLast;
         }
         items[1] = dropdownItemLast;
         obj.style = items;
         obj.activeOpacity = 0.7;
         obj.onPress = function onPress() {
-          callback(arg0.value);
+          outer1_12(label.value);
         };
         obj.disabled = flag2;
-        obj = { style: tmp3.dropdownItemText, children: children.label };
+        obj = { variant: "text-sm/medium", color: "text-default", style: _undefined.dropdownItemText, children: label.label };
         obj.children = callback(options(value[9]).Text, obj);
-        return callback(first, obj, "option-" + children.value + "-" + arg1);
+        return callback(first, obj, "option-" + label.value + "-" + arg1);
       });
-      obj1.children = closure_7(closure_5, obj2);
-      tmp7 = closure_7(closure_4, obj1);
+      obj1.children = c7(c5, obj2);
+      tmp7 = c7(c4, obj1);
     }
     items6[1] = tmp7;
     obj.children = items6;
     return tmp15(tmp16, obj);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ View: closure_4, ScrollView: closure_5, TouchableOpacity: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[5]).radii.md, marginTop: importDefault(dependencyMap[5]).space.PX_4, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, left: 0, right: 0, zIndex: 999999, elevation: 30, shadowColor: "#000", shadowOffset: {}, shadowOpacity: 0.4, shadowRadius: 8, maxHeight: 250 };
-obj.dropdownContainer = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.dropdownItem = { padding: importDefault(dependencyMap[5]).space.PX_12, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
-obj.dropdownItemLast = { borderBottomWidth: 0 };
-obj.dropdownItemText = { fontSize: 14 };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { padding: importDefault(dependencyMap[5]).space.PX_12, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/quests/native/MobileSearchableSelect.tsx");
+({ View: closure_4, ScrollView: closure_5, TouchableOpacity: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, left: 0, right: 0, zIndex: 999999, elevation: 30, shadowColor: "#000", shadowOffset: { width: 0, height: 6 }, shadowOpacity: 0.4, shadowRadius: 8, maxHeight: 250 };
+_createForOfIteratorHelperLoose.dropdownContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.dropdownItem = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
+_createForOfIteratorHelperLoose.dropdownItemLast = { borderBottomWidth: 0 };
+_createForOfIteratorHelperLoose.dropdownItemText = { fontSize: 14 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/quests/native/MobileSearchableSelect.tsx");
 
 export default MobileSearchableSelect;
 export { MobileSearchableSelect };

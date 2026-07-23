@@ -1,9 +1,14 @@
-// Module ID: 7885
-// Function ID: 62773
+// Module ID: 7891
+// Function ID: 62810
 // Name: _getStringFieldDefault
-// Dependencies: []
+// Dependencies: [6, 7, 1851, 6858, 3776, 1392, 7846, 2]
 
-// Module 7885 (_getStringFieldDefault)
+// Module 7891 (_getStringFieldDefault)
+import getProfilePreviewValue from "getProfilePreviewValue";
+import set from "set";
+import { PremiumTypes } from "GuildFeatures";
+
+const require = arg1;
 function _getStringFieldDefault(arg0, arg1) {
   let tmp = arg1;
   if (null == arg1) {
@@ -11,14 +16,11 @@ function _getStringFieldDefault(arg0, arg1) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
-const tmp2 = () => {
+let tmp2 = (() => {
   class DisplayProfile {
     constructor(arg0, arg1) {
       self = this;
-      tmp = closure_3(this, DisplayProfile);
+      tmp = outer1_3(this, DisplayProfile);
       this.userId = arg0.userId;
       guildId = undefined;
       if (null != arg1) {
@@ -34,13 +36,13 @@ const tmp2 = () => {
       }
       self.banner = banner;
       bio = undefined;
-      tmp4 = closure_6;
+      tmp4 = outer1_6;
       if (null != arg1) {
         bio = arg1.bio;
       }
       self.bio = tmp4(arg0.bio, bio);
       pronouns = undefined;
-      tmp6 = closure_6;
+      tmp6 = outer1_6;
       if (null != arg1) {
         pronouns = arg1.pronouns;
       }
@@ -84,14 +86,13 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = DisplayProfile;
   let obj = {
     key: "premiumSince",
     get() {
       return this._userProfile.premiumSince;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "premiumGuildSince",
     get() {
@@ -124,7 +125,7 @@ const tmp2 = () => {
       const widgets = this._userProfile.widgets;
       let found;
       if (null != widgets) {
-        found = widgets.filter(DisplayProfile(closure_2[3]).isGameWidget);
+        found = widgets.filter(DisplayProfile(outer1_2[3]).isGameWidget);
       }
       return found;
     }
@@ -146,7 +147,7 @@ const tmp2 = () => {
   items[7] = {
     key: "canUsePremiumProfileCustomization",
     get() {
-      return callback(closure_2[4]).isPremiumAtLeast(this.premiumType, TIER_2.TIER_2);
+      return outer1_1(outer1_2[4]).isPremiumAtLeast(this.premiumType, outer1_5.TIER_2);
     }
   };
   items[8] = {
@@ -274,12 +275,12 @@ const tmp2 = () => {
           ({ userId: obj4.id, guildId: obj4.guildId, banner: obj4.banner } = self);
           obj.canAnimate = canAnimate;
           obj.size = size;
-          let guildMemberBannerURL = DisplayProfile(closure_2[5]).getGuildMemberBannerURL(obj);
-          const obj3 = DisplayProfile(closure_2[5]);
+          let guildMemberBannerURL = DisplayProfile(outer1_2[5]).getGuildMemberBannerURL(obj);
+          const obj3 = DisplayProfile(outer1_2[5]);
         }
         return guildMemberBannerURL;
       }
-      obj = DisplayProfile(closure_2[5]);
+      obj = DisplayProfile(outer1_2[5]);
       obj = { id: self.userId, banner: self.banner, canAnimate, size };
       guildMemberBannerURL = obj.getUserBannerURL(obj);
     }
@@ -297,7 +298,7 @@ const tmp2 = () => {
       } else if (null === arg0) {
         let userBannerURL = null;
         if (self.isUsingGuildMemberBanner()) {
-          let obj = DisplayProfile(closure_2[5]);
+          let obj = DisplayProfile(outer1_2[5]);
           obj = { id: self.userId };
           self = self._userProfile.banner;
           obj.banner = self;
@@ -316,7 +317,7 @@ const tmp2 = () => {
     key: "getPreviewBio",
     value(pendingValue) {
       let bio;
-      let obj = DisplayProfile(closure_2[6]);
+      let obj = DisplayProfile(outer1_2[6]);
       obj = { pendingValue, userValue: this._userProfile.bio };
       const _guildMemberProfile = this._guildMemberProfile;
       if (null != _guildMemberProfile) {
@@ -331,7 +332,7 @@ const tmp2 = () => {
     key: "getPreviewPronouns",
     value(pendingValue) {
       let pronouns;
-      let obj = DisplayProfile(closure_2[6]);
+      let obj = DisplayProfile(outer1_2[6]);
       obj = { pendingValue, userValue: this._userProfile.pronouns };
       const _guildMemberProfile = this._guildMemberProfile;
       if (null != _guildMemberProfile) {
@@ -395,7 +396,7 @@ const tmp2 = () => {
     }
   };
   return callback(DisplayProfile, items);
-}();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_profile/DisplayProfile.tsx");
+})();
+const result = require("GuildFeatures").fileFinishedImporting("modules/user_profile/DisplayProfile.tsx");
 
 export default tmp2;

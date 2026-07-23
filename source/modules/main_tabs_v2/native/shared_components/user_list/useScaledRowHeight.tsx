@@ -1,22 +1,21 @@
-// Module ID: 8825
-// Function ID: 69577
+// Module ID: 8832
+// Function ID: 69618
 // Name: useScaledRowHeightData
-// Dependencies: []
+// Dependencies: [4549, 3834, 689, 2]
 // Exports: default
 
-// Module 8825 (useScaledRowHeightData)
+// Module 8832 (useScaledRowHeightData)
 function useScaledRowHeightData() {
-  let obj = require(dependencyMap[0]);
+  let obj = require(4549) /* getFontScale */;
   const fontScale = obj.useFontScale();
-  const token = require(dependencyMap[1]).useToken(importDefault(dependencyMap[2]).modules.mobile.TABLE_ROW_HEIGHT);
-  const obj2 = require(dependencyMap[1]);
-  const token1 = require(dependencyMap[1]).useToken(importDefault(dependencyMap[2]).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
+  const token = require(3834) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_HEIGHT);
+  const obj2 = require(3834) /* map */;
+  const token1 = require(3834) /* map */.useToken(importDefault(689).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);
   const result = fontScale * token1;
   obj = { rowHeight: token + Math.max(result - token1, 0), rowContentHeight: result };
   return obj;
 }
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");
 
 export default function useScaledRowHeight() {
   return useScaledRowHeightData().rowHeight;

@@ -1,11 +1,18 @@
 // Module ID: 1392
-// Function ID: 16593
+// Function ID: 16594
 // Name: getAvatarURL
-// Dependencies: []
+// Dependencies: [653, 1393, 1395, 477, 1426, 1440, 1826, 1827, 24, 1828, 1830, 1831, 21, 1445, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberBannerURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedImageURL, isVideoURL
 
 // Module 1392 (getAvatarURL)
-function getAvatarURL(guildId, closure_10, animate) {
+import ME from "ME";
+import { AVATAR_DECORATION_SIZE } from "DECORATION_TO_AVATAR_RATIO";
+import set from "set";
+import set from "ensureAvatarSource";
+
+let closure_3;
+let closure_4;
+function getAvatarURL(guildId, canRing, animate) {
   let format;
   let hash;
   let id;
@@ -27,7 +34,7 @@ function getAvatarURL(guildId, closure_10, animate) {
   }
   let canWebP = guildId.canWebP;
   if (canWebP === undefined) {
-    canWebP = canUseWebpResult;
+    canWebP = closure_11;
   }
   if (null != id) {
     if (null != hash) {
@@ -73,9 +80,9 @@ function getAvatarURL(guildId, closure_10, animate) {
       } else {
         let obj = {};
         if (null != size) {
-          obj = require(dependencyMap[4]);
-          obj.size = obj.getBestMediaProxySize(size * require(dependencyMap[4]).getDevicePixelRatio());
-          const obj2 = require(dependencyMap[4]);
+          obj = require(1426) /* isAttachmentLadderEnabled */;
+          obj.size = obj.getBestMediaProxySize(size * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
+          const obj2 = require(1426) /* isAttachmentLadderEnabled */;
         }
         if (null != keepAspectRatio) {
           obj.keep_aspect_ratio = keepAspectRatio;
@@ -91,7 +98,7 @@ function getAvatarURL(guildId, closure_10, animate) {
           obj.animated = true;
         }
         const _HermesInternal2 = HermesInternal;
-        return combined + "?" + importDefault(dependencyMap[5]).stringify(obj);
+        return combined + "?" + importDefault(1440).stringify(obj);
       }
     }
   }
@@ -107,17 +114,17 @@ function getEmojiURL(size) {
   let str = "png";
   if (forcePNG) {
     let str5 = "";
-    if (canUseWebpResult) {
+    if (closure_11) {
       str5 = "";
       if (animated) {
         str5 = "&animated=true";
       }
     }
-    let obj = require(dependencyMap[4]);
+    let obj = require(1426) /* isAttachmentLadderEnabled */;
     const _HermesInternal = HermesInternal;
-    const combined = "size=" + obj.getBestMediaProxySize(size.size * require(dependencyMap[4]).getDevicePixelRatio(), closure_12);
+    const combined = "size=" + obj.getBestMediaProxySize(size.size * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio(), set);
     obj = { location: "getEmojiURL" };
-    const enabled = require(dependencyMap[6]).getForceSdrEmojisStickersConfig(obj).enabled;
+    const enabled = require(1826) /* getForceSdrEmojisStickersConfig */.getForceSdrEmojisStickersConfig(obj).enabled;
     while (true) {
       let tmp13 = enabled;
       let str8 = "";
@@ -125,7 +132,7 @@ function getEmojiURL(size) {
         break;
       } else {
         str8 = "&force_sdr=true";
-        // break
+        break;
       }
       let _window = window;
       let tmp15 = null;
@@ -163,8 +170,8 @@ function getEmojiURL(size) {
         return combined1;
       }
     }
-    const obj2 = require(dependencyMap[4]);
-    const tmp5 = str5;
+    const obj2 = require(1426) /* isAttachmentLadderEnabled */;
+    tmp5 = str5;
   } else if (animated) {
     let str3 = "gif";
     if (tmp) {
@@ -186,7 +193,7 @@ function getDefaultAvatarURL(id, discriminator, isProvisional, size) {
     if (!flag) {
       if (null != size) {
         if (size <= num) {
-          arr = tmp4;
+          arr = closure_8;
         }
       }
     }
@@ -197,14 +204,14 @@ function getDefaultAvatarURL(id, discriminator, isProvisional, size) {
       return arr[0];
     }
   }
-  const parseIntegerResult = require(dependencyMap[7]).parseInteger(discriminator, 0);
+  const parseIntegerResult = require(1827) /* shortenAndLocalizeNumber */.parseInteger(discriminator, 0);
   if (parseIntegerResult > 0) {
     let first = arr[parseIntegerResult % 5];
   } else if (null != id) {
-    const obj2 = importDefault(dependencyMap[8])(id);
-    const modResult = importDefault(dependencyMap[8])(id).shiftRight(22).mod(arr.length);
+    const obj2 = importDefault(24)(id);
+    const modResult = importDefault(24)(id).shiftRight(22).mod(arr.length);
     first = arr[modResult.toJSNumber(modResult)];
-    const shiftRightResult = importDefault(dependencyMap[8])(id).shiftRight(22);
+    const shiftRightResult = importDefault(24)(id).shiftRight(22);
   } else {
     first = arr[0];
   }
@@ -228,10 +235,10 @@ function getUserAvatarURLWithoutFallback(bot, flag, size, format, SUPPORTS_WEBP)
     tmp2 = null;
   }
   if (tmp3 === undefined) {
-    tmp3 = canUseWebpResult;
+    tmp3 = closure_11;
   }
   if (bot) {
-    const tmp6 = require(dependencyMap[2]).default.BOT_AVATARS[avatar];
+    const tmp6 = require(1395) /* ensureAvatarSource */.default.BOT_AVATARS[avatar];
     if (tmp6) {
       return tmp6;
     } else if (null == avatar) {
@@ -257,7 +264,7 @@ function getUserAvatarURL(user, flag, size, format, SUPPORTS_WEBP) {
     tmp2 = null;
   }
   if (tmp3 === undefined) {
-    tmp3 = canUseWebpResult;
+    tmp3 = closure_11;
   }
   let tmp4 = getUserAvatarURLWithoutFallback(user, flag, tmp, tmp2, tmp3);
   if (null == tmp4) {
@@ -280,7 +287,7 @@ function getGuildMemberAvatarURLSimple(size) {
   }
   let canWebP = size.canWebP;
   if (canWebP === undefined) {
-    canWebP = canUseWebpResult;
+    canWebP = closure_11;
   }
   let str = "jpg";
   if (canAnimate) {
@@ -309,8 +316,8 @@ function getGuildMemberAvatarURLSimple(size) {
     tmp11 = str;
   }
   const obj = {};
-  const obj2 = require(dependencyMap[4]);
-  obj.size = obj2.getBestMediaProxySize(size * require(dependencyMap[4]).getDevicePixelRatio());
+  const obj2 = require(1426) /* isAttachmentLadderEnabled */;
+  obj.size = obj2.getBestMediaProxySize(size * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
   let tmp19 = "webp" === tmp11 && canAnimate;
   if (tmp19) {
     tmp19 = isAnimatedIconHash(avatar);
@@ -318,8 +325,8 @@ function getGuildMemberAvatarURLSimple(size) {
   if (tmp19) {
     obj.animated = true;
   }
-  const obj3 = require(dependencyMap[4]);
-  return combined + "?" + importDefault(dependencyMap[5]).stringify(obj);
+  const obj3 = require(1426) /* isAttachmentLadderEnabled */;
+  return combined + "?" + importDefault(1440).stringify(obj);
 }
 function getGuildMemberAvatarURL(closure_1, flag) {
   let guildId;
@@ -359,7 +366,7 @@ function getUserBannerURL(arg0) {
     if (canAnimate) {
       str2 = "png";
       if (isAnimatedIconHash(banner)) {
-        str2 = getAnimatedFormat(canUseWebpResult);
+        str2 = getAnimatedFormat(closure_11);
       }
     }
     if (null != CDN_HOST) {
@@ -372,8 +379,8 @@ function getUserBannerURL(arg0) {
       combined = sum + closure_3.USER_BANNER(id, banner, str2);
     }
     const obj = {};
-    const obj2 = require(dependencyMap[4]);
-    obj.size = obj2.getBestMediaProxySize(tmp * require(dependencyMap[4]).getDevicePixelRatio());
+    const obj2 = require(1426) /* isAttachmentLadderEnabled */;
+    obj.size = obj2.getBestMediaProxySize(tmp * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
     let tmp15 = "webp" === str2 && canAnimate;
     if (tmp15) {
       tmp15 = isAnimatedIconHash(banner);
@@ -381,9 +388,9 @@ function getUserBannerURL(arg0) {
     if (tmp15) {
       obj.animated = true;
     }
-    const obj3 = require(dependencyMap[4]);
+    const obj3 = require(1426) /* isAttachmentLadderEnabled */;
     const _HermesInternal2 = HermesInternal;
-    return combined + "?" + importDefault(dependencyMap[5]).stringify(obj);
+    return combined + "?" + importDefault(1440).stringify(obj);
   }
 }
 function getAvatarDecorationURL(canAnimate) {
@@ -403,7 +410,7 @@ function getAvatarDecorationURL(canAnimate) {
   }
   if (null != avatarDecoration) {
     if (!obj4.isAvatarDecorationExpired(avatarDecoration)) {
-      ({ CollectiblesItemAssetFormat, getCollectiblesItemAssetUrl } = require(dependencyMap[10]));
+      ({ CollectiblesItemAssetFormat, getCollectiblesItemAssetUrl } = require(1830) /* parseSkuIdFromServerData */);
       const obj = { skuId: avatarDecoration.skuId, assetFormat: tmp ? CollectiblesItemAssetFormat.ANIMATED : CollectiblesItemAssetFormat.STATIC };
       const collectiblesItemAssetUrl = getCollectiblesItemAssetUrl(obj);
       if (null != collectiblesItemAssetUrl) {
@@ -427,19 +434,19 @@ function getAvatarDecorationURL(canAnimate) {
             str2 = new URL("" + location.protocol + API_ENDPOINT + result);
           }
           const searchParams = str2.searchParams;
-          const obj2 = require(dependencyMap[4]);
-          const tmp28 = CDN_HOST;
+          const obj2 = require(1426) /* isAttachmentLadderEnabled */;
+          tmp28 = CDN_HOST;
           const _HermesInternal3 = HermesInternal;
-          const result1 = searchParams.set("size", "" + obj2.getBestMediaProxySize(size * require(dependencyMap[4]).getDevicePixelRatio(), closure_12));
+          const result1 = searchParams.set("size", "" + obj2.getBestMediaProxySize(size * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio(), set));
           const searchParams2 = str2.searchParams;
           const _HermesInternal4 = HermesInternal;
           const result2 = searchParams2.set("passthrough", "" + flag);
           return str2.toString();
         }
       }
-      const tmp4 = require(dependencyMap[10]);
+      const tmp4 = require(1830) /* parseSkuIdFromServerData */;
     }
-    const obj4 = require(dependencyMap[9]);
+    obj4 = require(1828) /* parseAvatarDecorationData */;
   }
   return null;
 }
@@ -456,7 +463,7 @@ function getGuildMemberBannerURL(arg0) {
       if (canAnimate) {
         str2 = "png";
         if (isAnimatedIconHash(banner)) {
-          str2 = getAnimatedFormat(canUseWebpResult);
+          str2 = getAnimatedFormat(closure_11);
         }
       }
       const GUILD_MEMBER_BANNERResult = closure_3.GUILD_MEMBER_BANNER(guildId, id, banner, str2);
@@ -469,8 +476,8 @@ function getGuildMemberBannerURL(arg0) {
         combined = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + GUILD_MEMBER_BANNERResult;
       }
       const obj = {};
-      const obj2 = require(dependencyMap[4]);
-      obj.size = obj2.getBestMediaProxySize(tmp * require(dependencyMap[4]).getDevicePixelRatio());
+      const obj2 = require(1426) /* isAttachmentLadderEnabled */;
+      obj.size = obj2.getBestMediaProxySize(tmp * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
       let tmp17 = "webp" === str2 && canAnimate;
       if (tmp17) {
         tmp17 = isAnimatedIconHash(banner);
@@ -478,9 +485,9 @@ function getGuildMemberBannerURL(arg0) {
       if (tmp17) {
         obj.animated = true;
       }
-      const obj3 = require(dependencyMap[4]);
+      const obj3 = require(1426) /* isAttachmentLadderEnabled */;
       const _HermesInternal2 = HermesInternal;
-      return combined + "?" + importDefault(dependencyMap[5]).stringify(obj);
+      return combined + "?" + importDefault(1440).stringify(obj);
     }
   }
 }
@@ -494,11 +501,11 @@ function getGuildSplashURL(arg0) {
   } else {
     if (null == size) {
       const _window = window;
-      size = window.screen.width * require(dependencyMap[4]).getDevicePixelRatio();
-      const obj = require(dependencyMap[4]);
+      size = window.screen.width * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio();
+      const obj = require(1426) /* isAttachmentLadderEnabled */;
     }
     const _window2 = window;
-    const bestMediaProxySize = require(dependencyMap[4]).getBestMediaProxySize(size);
+    const bestMediaProxySize = require(1426) /* isAttachmentLadderEnabled */.getBestMediaProxySize(size);
     if (null != CDN_HOST) {
       const _HermesInternal = HermesInternal;
       let combined = "https://" + CDN_HOST + "/splashes/" + id + "/" + splash + ".jpg";
@@ -522,17 +529,17 @@ function getGuildBannerURL(fromInviteGuildResult, flag) {
   if (null == banner) {
     return null;
   } else {
-    const obj3 = require(dependencyMap[4]);
+    const obj3 = require(1426) /* isAttachmentLadderEnabled */;
     let str = "jpg";
-    const bestMediaProxySize = obj3.getBestMediaProxySize(360 * require(dependencyMap[4]).getDevicePixelRatio());
-    if (canUseWebpResult) {
+    const bestMediaProxySize = obj3.getBestMediaProxySize(360 * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
+    if (closure_11) {
       str = "webp";
     }
     let tmp = str;
     if (flag) {
       tmp = str;
       if (isAnimatedIconHash(banner)) {
-        tmp = getAnimatedFormat(canUseWebpResult);
+        tmp = getAnimatedFormat(closure_11);
       }
     }
     const _window = window;
@@ -556,9 +563,9 @@ function getGuildBannerURL(fromInviteGuildResult, flag) {
     if (tmp13) {
       obj.animated = true;
     }
-    const obj4 = require(dependencyMap[4]);
+    const obj4 = require(1426) /* isAttachmentLadderEnabled */;
     const _HermesInternal2 = HermesInternal;
-    return combined + "?" + importDefault(dependencyMap[5]).stringify(obj);
+    return combined + "?" + importDefault(1440).stringify(obj);
   }
 }
 function getGuildHomeHeaderURL(arg0) {
@@ -568,9 +575,9 @@ function getGuildHomeHeaderURL(arg0) {
   if (null == homeHeader) {
     return null;
   } else {
-    const obj = require(dependencyMap[4]);
+    const obj = require(1426) /* isAttachmentLadderEnabled */;
     const _window2 = window;
-    const bestMediaProxySize = obj.getBestMediaProxySize(1096 * require(dependencyMap[4]).getDevicePixelRatio());
+    const bestMediaProxySize = obj.getBestMediaProxySize(1096 * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
     if (null != CDN_HOST) {
       const _HermesInternal = HermesInternal;
       let combined = "https://" + CDN_HOST + "/home-headers/" + id + "/" + homeHeader + ".png";
@@ -612,11 +619,11 @@ function getGuildDiscoverySplashURL(arg0) {
   } else {
     if (null == size) {
       const _window = window;
-      size = window.screen.width * require(dependencyMap[4]).getDevicePixelRatio();
-      const obj = require(dependencyMap[4]);
+      size = window.screen.width * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio();
+      const obj = require(1426) /* isAttachmentLadderEnabled */;
     }
     const _window2 = window;
-    const bestMediaProxySize = require(dependencyMap[4]).getBestMediaProxySize(size);
+    const bestMediaProxySize = require(1426) /* isAttachmentLadderEnabled */.getBestMediaProxySize(size);
     if (null != CDN_HOST) {
       const _HermesInternal = HermesInternal;
       let combined = "https://" + CDN_HOST + "/discovery-splashes/" + id + "/" + splash + ".jpg";
@@ -643,7 +650,7 @@ function getGuildIconURL(canAnimate) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const obj = { endpoint: closure_3.GUILD_ICON, path: "icons", id, hash: icon, size, canAnimate: flag, lossless: flag2, canWebP: canUseWebpResult };
+  const obj = { endpoint: closure_3.GUILD_ICON, path: "icons", id, hash: icon, size, canAnimate: flag, lossless: flag2, canWebP: closure_11 };
   return getAvatarURL(obj);
 }
 function getGuildTemplateIconURL(size) {
@@ -718,7 +725,7 @@ function getApplicationIconURL(guildMember) {
     }
     let tmp8;
     if (fallbackAvatar) {
-      tmp8 = importDefault(dependencyMap[11]);
+      tmp8 = importDefault(1831);
     }
     return tmp8;
   }
@@ -740,18 +747,15 @@ function getGameAssetURL(size) {
 }
 function getVideoFilterAssetURL(size) {
   const userId = size.userId;
-  const require = userId;
   const assetId = size.assetId;
-  const importDefault = assetId;
   const assetHash = size.assetHash;
-  const dependencyMap = assetHash;
   let flag = size.canAnimate;
   if (flag === undefined) {
     flag = true;
   }
   const obj = {
     endpoint(id, hash, format) {
-      return closure_3.VIDEO_FILTER_ASSET_STORAGE(userId, assetId, assetHash, format);
+      return outer1_3.VIDEO_FILTER_ASSET_STORAGE(userId, assetId, assetHash, format);
     },
     path: "video-filter-assets/" + userId,
     id: assetId,
@@ -772,15 +776,15 @@ function getChannelIconURL(arg0) {
     let obj = { id: applicationId, icon, size };
     let DEFAULT_CHANNEL_ICON = getApplicationIconURL(obj);
     if (null == DEFAULT_CHANNEL_ICON) {
-      DEFAULT_CHANNEL_ICON = require(dependencyMap[2]).default.DEFAULT_CHANNEL_ICON;
+      DEFAULT_CHANNEL_ICON = require(1395) /* ensureAvatarSource */.default.DEFAULT_CHANNEL_ICON;
     }
     let tmp5 = DEFAULT_CHANNEL_ICON;
   } else {
     obj = { endpoint: closure_3.CHANNEL_ICON, path: "channel-icons", id, hash: icon, canAnimate: false, size, canWebP: false };
     tmp5 = getAvatarURL(obj);
     if (null == tmp5) {
-      obj = importDefault(dependencyMap[12]);
-      tmp5 = require(dependencyMap[2]).default.DEFAULT_GROUP_DM_AVATARS[obj.extractTimestamp(id) % closure_0(undefined, closure_2[2]).default.DEFAULT_GROUP_DM_AVATARS.length];
+      obj = importDefault(21);
+      tmp5 = require(1395) /* ensureAvatarSource */.default.DEFAULT_GROUP_DM_AVATARS[obj.extractTimestamp(id) % require(undefined, 1395) /* ensureAvatarSource */.default.DEFAULT_GROUP_DM_AVATARS.length];
       const extractTimestampResult = obj.extractTimestamp(id);
     }
   }
@@ -808,8 +812,8 @@ function isVideoAssetHash(asset) {
   return startsWithResult;
 }
 function _getAssetHash(bannerURL) {
-  const obj = require(dependencyMap[13]);
-  const parts = require(dependencyMap[13]).parse(bannerURL).pathname.split("/");
+  const obj = require(1445) /* Url */;
+  const parts = require(1445) /* Url */.parse(bannerURL).pathname.split("/");
   return parts.pop();
 }
 function makeSource(automodAvatarURL) {
@@ -832,34 +836,32 @@ function isDataUri(icon) {
   }
   return isMatch;
 }
-function getAnimatedFormat(canUseWebpResult) {
+function getAnimatedFormat(closure_11) {
   let str = "gif";
-  if (canUseWebpResult) {
+  if (closure_11) {
     str = "webp";
   }
   return str;
 }
-const _module = require(dependencyMap[0]);
-({ Endpoints: closure_3, AVATAR_SIZE: closure_4 } = _module);
-const AVATAR_DECORATION_SIZE = require(dependencyMap[1]).AVATAR_DECORATION_SIZE;
-const tmp3 = /^data:/;
-const DEFAULT_AVATARS = require(dependencyMap[2]).default.DEFAULT_AVATARS;
-const DEFAULT_AVATARS_SMALL = require(dependencyMap[2]).default.DEFAULT_AVATARS_SMALL;
+({ Endpoints: closure_3, AVATAR_SIZE: closure_4 } = ME);
+let tmp3 = /^data:/;
+let closure_6 = tmp3;
+const DEFAULT_AVATARS = require("ensureAvatarSource").default.DEFAULT_AVATARS;
+const DEFAULT_AVATARS_SMALL = require("ensureAvatarSource").default.DEFAULT_AVATARS_SMALL;
 let tmp4 = DEFAULT_AVATARS;
 if (null != DEFAULT_AVATARS_SMALL) {
   tmp4 = DEFAULT_AVATARS_SMALL;
 }
-const DEFAULT_AVATARS_SMALL_MAX_SIZE = require(dependencyMap[2]).default.DEFAULT_AVATARS_SMALL_MAX_SIZE;
+let closure_8 = tmp4;
+const DEFAULT_AVATARS_SMALL_MAX_SIZE = require("ensureAvatarSource").default.DEFAULT_AVATARS_SMALL_MAX_SIZE;
 let num = 0;
 if (null != DEFAULT_AVATARS_SMALL_MAX_SIZE) {
   num = DEFAULT_AVATARS_SMALL_MAX_SIZE;
 }
-const DEFAULT_PROVISIONAL_AVATARS = require(dependencyMap[2]).default.DEFAULT_PROVISIONAL_AVATARS;
-const canUseWebpResult = require(dependencyMap[2]).default.canUseWebp();
-const _module1 = require(dependencyMap[3]);
-let closure_12 = _module1.isAndroid();
-const _module2 = require(dependencyMap[14]);
-const result = _module2.fileFinishedImporting("utils/AvatarUtils.tsx");
+const DEFAULT_PROVISIONAL_AVATARS = require("ensureAvatarSource").default.DEFAULT_PROVISIONAL_AVATARS;
+const canUseWebpResult = require("ensureAvatarSource").default.canUseWebp();
+set = set.isAndroid();
+let result = set.fileFinishedImporting("utils/AvatarUtils.tsx");
 
 export default {
   getUserAvatarURL,
@@ -922,7 +924,7 @@ export default {
   makeSource,
   getAnimatableSourceWithFallback(flag, arg1) {
     const tmp = arg1(flag);
-    let obj = require(dependencyMap[3]);
+    let obj = require(477) /* set */;
     if (obj.isAndroid()) {
       if (flag) {
         if ("number" !== typeof tmp) {
@@ -949,7 +951,7 @@ export { DEFAULT_AVATARS };
 export const DEFAULT_AVATARS_SMALL = tmp4;
 export const DEFAULT_AVATARS_SMALL_MAX_SIZE = num;
 export { DEFAULT_PROVISIONAL_AVATARS };
-export const DEFAULT_GROUP_DM_AVATARS = require(dependencyMap[2]).default.DEFAULT_GROUP_DM_AVATARS;
+export const DEFAULT_GROUP_DM_AVATARS = require("ensureAvatarSource").default.DEFAULT_GROUP_DM_AVATARS;
 export const SUPPORTS_WEBP = canUseWebpResult;
 export const LEGACY_DEFAULT_AVATAR_COUNT = 5;
 export const DEFAULT_AVATAR_COUNT = 6;

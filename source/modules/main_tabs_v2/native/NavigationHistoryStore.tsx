@@ -1,53 +1,60 @@
-// Module ID: 5717
-// Function ID: 49144
+// Module ID: 5722
+// Function ID: 49171
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 3982, 3981, 3984, 2]
 // Exports: getIdFromHistoryItem, getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 5717 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5722 (_createForOfIteratorHelperLoose)
+import dispatcher from "dispatcher";
+import getRootNavigationRef from "getRootNavigationRef";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,11 +101,11 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function cleanDuplicatesAndAppend(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   if (map.has(arg0)) {
-    let arr = arr.filter((arg0) => arg0 !== arg0);
+    arr = arr.filter((arg0) => arg0 !== closure_0);
   }
-  if (null != arr[closure_8.length - 1]) {
+  if (null != arr[arr.length - 1]) {
     const _Date = Date;
     const result = map.set(tmp, Date.now());
     const tmp4 = globalThis;
@@ -110,27 +117,22 @@ function cleanDuplicatesAndAppend(arg0) {
   }
   tmp4.emitChange();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 const regExp = new RegExp("^(?:" + "channel-" + "|" + "guild-" + ")");
 let closure_8 = [];
 const map = new Map();
-let tmp4 = (PersistedStore) => {
+let tmp4 = ((PersistedStore) => {
   class NavigationHistoryStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, NavigationHistoryStore);
-      obj = closure_5(NavigationHistoryStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, NavigationHistoryStore);
+      obj = outer1_5(NavigationHistoryStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -139,13 +141,12 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = NavigationHistoryStore;
   callback2(NavigationHistoryStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(history) {
       let done;
-      closure_9.clear();
+      outer1_9.clear();
       history = undefined;
       if (null != history) {
         history = history.history;
@@ -153,25 +154,25 @@ let tmp4 = (PersistedStore) => {
       if (null == history) {
         history = [];
       }
-      const tmp2Result = closure_11(history);
+      const tmp2Result = outer1_11(history);
       let iter = tmp2Result();
       if (!iter.done) {
         do {
-          let tmp4 = closure_9;
-          let result = closure_9.set(iter.value, undefined);
+          let tmp4 = outer1_9;
+          let result = outer1_9.set(iter.value, undefined);
           let iter2 = tmp2Result();
           iter = iter2;
           done = iter2.done;
         } while (!done);
       }
-      let closure_8 = Array.from(closure_9.keys());
+      const outer1_8 = Array.from(outer1_9.keys());
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getState",
     value() {
-      return { history: closure_8 };
+      return { history: outer1_8 };
     }
   };
   items[1] = obj;
@@ -182,27 +183,28 @@ let tmp4 = (PersistedStore) => {
       if (arg0 === undefined) {
         num = 1;
       }
-      return closure_8[closure_8.length - num];
+      return outer1_8[outer1_8.length - num];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getLastFocusedTimestampForHistoryItem",
     value(arg0) {
-      return closure_9.get(arg0);
+      return outer1_9.get(arg0);
     }
   };
   return callback(NavigationHistoryStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "NavigationHistoryStore";
 tmp4.persistKey = "NavigationHistoryStore";
-tmp4 = new tmp4(importDefault(dependencyMap[6]), {
+tmp4 = new tmp4(require("dispatcher"), {
   LOGOUT() {
     let closure_8 = [];
     map.clear();
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/main_tabs_v2/native/NavigationHistoryStore.tsx");
+let closure_10 = tmp4;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/main_tabs_v2/native/NavigationHistoryStore.tsx");
 
 export default tmp4;
 export const CHANNEL_PREFIX = "channel-";
@@ -211,14 +213,14 @@ export const getIdFromHistoryItem = function getIdFromHistoryItem(str) {
   return str.replace(regExp, "");
 };
 export const handleHistoryStoreNavigationChange = function handleHistoryStoreNavigationChange() {
-  const rootNavigationRef = arg1(dependencyMap[7]).getRootNavigationRef();
+  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     const currentRoute = rootNavigationRef.getCurrentRoute();
     if (null != currentRoute) {
       if (null != currentRoute.params) {
-        const coerceChannelRouteResult = arg1(dependencyMap[8]).coerceChannelRoute(currentRoute);
+        const coerceChannelRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
         if (null == coerceChannelRouteResult) {
-          const coerceGuildsRouteResult = arg1(dependencyMap[8]).coerceGuildsRoute(currentRoute);
+          const coerceGuildsRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
           if (null != coerceGuildsRouteResult) {
             if (obj5.getChatLayout().isChatLockedOpen) {
               const params = coerceGuildsRouteResult.params;
@@ -240,14 +242,14 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
               const _HermesInternal2 = HermesInternal;
               cleanDuplicatesAndAppend("" + "guild-" + guildId);
             }
-            const obj5 = arg1(dependencyMap[9]);
+            obj5 = require(3984) /* useChatLayout */;
           }
-          const obj3 = arg1(dependencyMap[8]);
+          const obj3 = require(3981) /* _createForOfIteratorHelperLoose */;
         } else {
           const _HermesInternal = HermesInternal;
           cleanDuplicatesAndAppend("" + "channel-" + coerceChannelRouteResult.params.channelId);
         }
-        const obj4 = arg1(dependencyMap[8]);
+        const obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
       }
     }
   }

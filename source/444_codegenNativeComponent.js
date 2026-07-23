@@ -1,9 +1,12 @@
 // Module ID: 444
 // Function ID: 6016
 // Name: codegenNativeComponent
-// Dependencies: []
+// Dependencies: [46, 445]
 
 // Module 444 (codegenNativeComponent)
+const global = arg0;
+const module = arg2;
+const dependencyMap = arg6;
 arg5.default = function codegenNativeComponent(arg0, paperComponentName) {
   paperComponentName = arg0;
   if (paperComponentName) {
@@ -22,7 +25,7 @@ arg5.default = function codegenNativeComponent(arg0, paperComponentName) {
           if (obj.hasViewManagerConfig(paperComponentName.paperComponentNameDeprecated)) {
             paperComponentNameDeprecated = paperComponentName.paperComponentNameDeprecated;
           }
-          const obj = arg2(arg6[0]);
+          obj = module(46);
         }
         let _Error = Error;
         const paperComponentNameDeprecated2 = paperComponentName.paperComponentNameDeprecated;
@@ -35,8 +38,8 @@ arg5.default = function codegenNativeComponent(arg0, paperComponentName) {
         _Error = new _Error("Failed to find native component for either " + arg0 + " or " + str);
         throw _Error;
       }
-      const obj2 = arg2(arg6[0]);
+      obj2 = module(46);
     }
   }
-  return arg2(arg6[1])(paperComponentNameDeprecated);
+  return module(445)(paperComponentNameDeprecated);
 };

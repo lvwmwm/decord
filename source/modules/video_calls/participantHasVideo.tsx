@@ -1,10 +1,18 @@
-// Module ID: 10012
-// Function ID: 77408
+// Module ID: 10020
+// Function ID: 77448
 // Name: participantHasVideo
-// Dependencies: []
+// Dependencies: [1194, 4177, 4148, 566, 2]
 // Exports: useCanRenderParticipantVideo
 
-// Module 10012 (participantHasVideo)
+// Module 10020 (participantHasVideo)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import ParticipantTypes from "ParticipantTypes";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function participantHasVideo(type) {
   let tmp = type;
   if (type.type === constants.ACTIVITY) {
@@ -21,9 +29,9 @@ function participantHasVideo(type) {
     tmp6 = null != selfVideo && selfVideo;
   }
 }
-function canRenderParticipantVideo(value, closure_4) {
-  let obj = closure_4;
-  if (closure_4 === undefined) {
+function canRenderParticipantVideo(value, outer1_4) {
+  let obj = outer1_4;
+  if (outer1_4 === undefined) {
     obj = closure_3;
   }
   let tmp = null != value;
@@ -45,16 +53,13 @@ function canRenderParticipantVideo(value, closure_4) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ ParticipantTypes: closure_4, isStreamParticipant: closure_5, isUserParticipant: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
+({ ParticipantTypes: closure_4, isStreamParticipant: closure_5, isUserParticipant: closure_6 } = ParticipantTypes);
+const result = require("ParticipantTypes").fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
 
 export default participantHasVideo;
 export { canRenderParticipantVideo };
 export const useCanRenderParticipantVideo = function useCanRenderParticipantVideo(stateFromStores) {
-  const arg1 = stateFromStores;
+  const _require = stateFromStores;
   const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => callback(arg0, closure_3));
+  return _require(566).useStateFromStores(items, () => outer1_8(closure_0, outer1_3));
 };

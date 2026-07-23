@@ -1,13 +1,14 @@
-// Module ID: 11548
-// Function ID: 89913
+// Module ID: 11558
+// Function ID: 89962
 // Name: entitlementExpirationDateToString
-// Dependencies: []
+// Dependencies: [1921, 2]
 // Exports: default
 
-// Module 11548 (entitlementExpirationDateToString)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/premium/powerups/utils/entitlementExpirationDateToString.tsx");
+// Module 11558 (entitlementExpirationDateToString)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/entitlementExpirationDateToString.tsx");
 
 export default function entitlementExpirationDateToString(arg0) {
-  return new Date(arg0).toLocaleDateString(locale.locale, { borderRadius: true, np: true });
+  return new Date(arg0).toLocaleDateString(locale.locale, { month: "2-digit", day: "2-digit" });
 };

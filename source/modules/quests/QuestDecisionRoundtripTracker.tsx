@@ -1,19 +1,26 @@
-// Module ID: 9446
-// Function ID: 73616
+// Module ID: 9453
+// Function ID: 73657
 // Name: trackRoundtrip
-// Dependencies: []
+// Dependencies: [6, 7, 4222, 6942, 653, 6695, 675, 6919, 6698, 6957, 2]
 
-// Module 9446 (trackRoundtrip)
+// Module 9453 (trackRoundtrip)
+import expandLocation from "expandLocation";
+import getDeviceMetadata from "getDeviceMetadata";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function trackRoundtrip(apiResponseTimestamp) {
   if (Math.random() <= 0.1) {
     let diff = null;
     if (null != apiResponseTimestamp.apiResponseTimestamp) {
       diff = apiResponseTimestamp.apiResponseTimestamp - apiResponseTimestamp.initialSendTimestamp;
     }
-    let obj = arg1(dependencyMap[5]);
+    let obj = require(6695) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(dependencyMap[7])());
+    const merged = Object.assign(importDefault(6919)());
     obj["endpoint"] = apiResponseTimestamp.endpoint;
     obj["was_successful"] = apiResponseTimestamp.wasSuccessful;
     obj["api_latency_ms"] = diff;
@@ -51,58 +58,53 @@ function trackRoundtrip(apiResponseTimestamp) {
     }
     obj["previous_fetched_at"] = tmp18;
     obj["transition_case"] = arg1;
-    const obj2 = importDefault(dependencyMap[6]);
-    obj["is_foregrounded"] = arg1(dependencyMap[8]).isForegrounded();
+    const obj2 = importDefault(675);
+    obj["is_foregrounded"] = require(6698) /* isForegrounded */.isForegrounded();
     obj2.track(AnalyticEvents.QUEST_DECISION_ROUNDTRIP, obj);
-    const obj5 = arg1(dependencyMap[8]);
+    const obj5 = require(6698) /* isForegrounded */;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-let tmp2 = () => {
+let tmp2 = (() => {
   class QuestDecisionRoundtripTracker {
     constructor() {
-      tmp = closure_3(this, QuestDecisionRoundtripTracker);
+      tmp = outer1_3(this, QuestDecisionRoundtripTracker);
       map = new Map();
       this.pendingRequests = map;
       return;
     }
   }
-  const arg1 = QuestDecisionRoundtripTracker;
   let obj = {
     key: "recordQuestRequestAttempt",
     value(endpoint, callerSource) {
       let tmp = arg2;
-      const QuestDecisionRoundtripTracker = this;
+      const self = this;
+      let closure_1 = endpoint;
       if (arg2 === undefined) {
         tmp = null;
       }
-      let obj = endpoint(closure_2[9]);
+      let obj = outer1_1(outer1_2[9]);
       let tmp2 = null;
       if (obj.getConfig({ location: "recordQuestRequestAttempt" }).enableNewRequestBehavior) {
         tmp2 = null;
         if (null != tmp) {
-          const questAdDecisionByPlacement = obj.questAdDecisionByPlacement;
-          const value = questAdDecisionByPlacement.get(tmp);
+          const questAdDecisionByPlacement = outer1_6.questAdDecisionByPlacement;
+          let value = questAdDecisionByPlacement.get(tmp);
           tmp2 = null;
           if (null != value) {
             tmp2 = value;
           }
         }
       }
-      obj = { initialSendTimestamp: Date.now(), endpoint, callerSource, previousAdDecision: tmp2, placement: tmp };
-      const pendingRequests = this.pendingRequests;
+      obj = { initialSendTimestamp: Date.now(), endpoint, apiResponseTimestamp: null, wasSuccessful: false, callerSource, adRequestId: null, previousAdDecision: tmp2, placement: tmp };
+      let pendingRequests = this.pendingRequests;
       const result = pendingRequests.set(endpoint, obj);
       const timerId = setTimeout(() => {
         const pendingRequests = self.pendingRequests;
-        const value = pendingRequests.get(arg0);
+        const value = pendingRequests.get(closure_1);
         if (null != value) {
-          callback(value, "timeout", null);
+          outer2_8(value, "timeout", null);
           const pendingRequests2 = self.pendingRequests;
-          pendingRequests2.delete(arg0);
+          pendingRequests2.delete(closure_1);
         }
       }, 30000);
     }
@@ -142,7 +144,7 @@ let tmp2 = () => {
             obj.adDecisionData = tmp6;
             tmp5 = obj;
           }
-          str = function computeTransitionCase(previousAdDecision, questId2) {
+          str = (function computeTransitionCase(previousAdDecision, questId2) {
             function getState(questId) {
               let str = "null";
               if (null != questId) {
@@ -175,7 +177,7 @@ let tmp2 = () => {
               return combined;
             }
             combined = "" + state + "_to_" + state1;
-          }(value.previousAdDecision, tmp5);
+          })(value.previousAdDecision, tmp5);
           tmp7 = currentFetchedAt;
         }
         const obj1 = {};
@@ -184,17 +186,17 @@ let tmp2 = () => {
         obj1["apiResponseTimestamp"] = Date.now();
         obj1["wasSuccessful"] = adRequestId.wasSuccessful;
         obj1["adRequestId"] = adRequestId;
-        callback3(obj1, str, tmp7);
+        outer1_8(obj1, str, tmp7);
         const pendingRequests2 = self.pendingRequests;
         pendingRequests2.delete(arg0);
-        const obj4 = callback(closure_2[9]);
+        obj4 = outer1_1(outer1_2[9]);
       }
     }
   };
   items[1] = obj;
   return callback(QuestDecisionRoundtripTracker, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/quests/QuestDecisionRoundtripTracker.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/QuestDecisionRoundtripTracker.tsx");
 
 export default tmp2;

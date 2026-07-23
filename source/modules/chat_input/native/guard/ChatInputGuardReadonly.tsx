@@ -1,185 +1,191 @@
-// Module ID: 11490
-// Function ID: 89437
+// Module ID: 11500
+// Function ID: 89487
 // Name: sortChannelsByLastMessageId
-// Dependencies: []
+// Dependencies: [31, 1352, 1348, 1907, 3758, 4142, 3767, 1849, 11105, 653, 33, 11387, 566, 1327, 1212, 4320, 4324, 1198, 21, 11481, 2]
 
-// Module 11490 (sortChannelsByLastMessageId)
+// Module 11500 (sortChannelsByLastMessageId)
+import { isTextChannel } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_6 } from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { TextAreaCta } from "TextAreaCta";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+let closure_12;
+let closure_13;
+const require = arg1;
 function sortChannelsByLastMessageId(id, id2) {
-  const obj = importDefault(dependencyMap[18]);
+  const obj = importDefault(21);
   return obj.compare(closure_8.lastMessageId(id2.id), closure_8.lastMessageId(id.id));
 }
-const isTextChannel = arg1(dependencyMap[1]).isTextChannel;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[3]).GUILD_SELECTABLE_CHANNELS_KEY;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const TextAreaCta = arg1(dependencyMap[8]).TextAreaCta;
-const importAllResult = importAll(dependencyMap[0]);
-({ AnalyticEvents: closure_12, Permissions: closure_13 } = arg1(dependencyMap[9]));
-const jsx = arg1(dependencyMap[10]).jsx;
-const tmp2 = arg1(dependencyMap[9]);
-const memoResult = importAllResult.memo(function ChatInputGuardReadonly(guildId) {
+({ AnalyticEvents: closure_12, Permissions: closure_13 } = ME);
+const memoResult = require("result").memo(function ChatInputGuardReadonly(guildId) {
   let handlePress;
   let text;
-  ({ text, handlePress } = function useNotice(guildId, channel) {
-    let obj = guildId(stateFromStores[11]);
+  ({ text, handlePress } = (function useNotice(guildId, channel) {
+    let closure_0 = guildId;
+    let obj = outer1_0(outer1_2[11]);
     const channelAction = obj.useMemberActionsForChannel(guildId, channel).channelAction;
-    let obj1 = guildId(stateFromStores[11]);
+    let obj1 = outer1_0(outer1_2[11]);
     let channelId;
     if (null != channelAction) {
       channelId = channelAction.channelId;
     }
     let closure_1 = obj1.useNextMemberAction(guildId, channelId);
-    let obj2 = guildId(stateFromStores[12]);
-    const items = [stateFromStoresArray1];
+    let obj2 = outer1_0(outer1_2[12]);
+    const items = [outer1_4];
     const stateFromStores = obj2.useStateFromStores(items, () => {
       let channelId;
-      if (null != lib) {
-        channelId = lib.channelId;
+      if (null != channelId) {
+        channelId = channelId.channelId;
       }
-      return stateFromStoresArray1.getChannel(channelId);
+      return outer2_4.getChannel(channelId);
     });
-    let obj3 = guildId(stateFromStores[12]);
-    const items1 = [closure_5];
+    let obj3 = outer1_0(outer1_2[12]);
+    const items1 = [outer1_5];
     const stateFromStoresArray = obj3.useStateFromStoresArray(items1, () => {
-      const mapped = channels.getChannels(arg0)[closure_6].map((channel) => channel.channel);
-      return mapped.sort(closure_15);
+      const mapped = outer2_5.getChannels(closure_0)[outer2_6].map((channel) => channel.channel);
+      return mapped.sort(outer2_15);
     });
-    const items2 = [closure_7];
+    const items2 = [outer1_7];
     const items3 = [stateFromStoresArray];
-    const stateFromStoresArray1 = guildId(stateFromStores[12]).useStateFromStoresArray(items2, () => {
-      const found = stateFromStoresArray.filter(arg0(stateFromStores[13]).isNotNullish);
-      const found1 = found.filter((type) => callback(type.type));
-      return found1.filter((channel) => closure_7.can(constants.SEND_MESSAGES, channel));
+    const stateFromStoresArray1 = outer1_0(outer1_2[12]).useStateFromStoresArray(items2, () => {
+      const found = stateFromStoresArray.filter(outer2_0(outer2_2[13]).isNotNullish);
+      const found1 = found.filter((type) => outer3_3(type.type));
+      return found1.filter((channel) => outer3_7.can(outer3_13.SEND_MESSAGES, channel));
     }, items3);
     if (null != stateFromStores) {
       obj = {};
-      const intl2 = guildId(stateFromStores[14]).intl;
-      obj = { channelName: guildId(stateFromStores[15]).computeChannelName(stateFromStores, closure_10, closure_9) };
-      obj.text = intl2.formatToPlainString(guildId(stateFromStores[14]).t.q1krfU, obj);
+      const intl2 = outer1_0(outer1_2[14]).intl;
+      obj = { channelName: outer1_0(outer1_2[15]).computeChannelName(stateFromStores, outer1_10, outer1_9) };
+      obj.text = intl2.formatToPlainString(outer1_0(outer1_2[14]).t.q1krfU, obj);
       obj.handlePress = function handlePress() {
-        let obj = lib(stateFromStores[16]);
-        obj = { cta_type: constants.CHANNEL_LINK };
-        obj.trackWithMetadata(constants2.TEXT_AREA_CTA_CLICKED, obj);
-        arg0(stateFromStores[17]).transitionToGuild(arg0, stateFromStores.id);
+        let obj = outer2_1(outer2_2[16]);
+        obj = { cta_type: outer2_11.CHANNEL_LINK };
+        obj.trackWithMetadata(outer2_12.TEXT_AREA_CTA_CLICKED, obj);
+        outer2_0(outer2_2[17]).transitionToGuild(closure_0, stateFromStores.id);
       };
       obj2 = obj;
-      const obj11 = guildId(stateFromStores[15]);
+      const obj11 = outer1_0(outer1_2[15]);
     } else if (0 === stateFromStoresArray1.length) {
       obj1 = {};
-      const intl = guildId(stateFromStores[14]).intl;
-      obj1.text = intl.string(guildId(stateFromStores[14]).t.gHD/nZ);
+      const intl = outer1_0(outer1_2[14]).intl;
+      obj1.text = intl.string(outer1_0(outer1_2[14]).t["gHD/nZ"]);
       obj1.handlePress = function handlePress() {
-        let obj = lib(stateFromStores[16]);
-        obj = { cta_type: constants.CHANNEL_LIST };
-        obj.trackWithMetadata(constants2.TEXT_AREA_CTA_CLICKED, obj);
-        arg0(stateFromStores[17]).transitionToGuild(arg0, undefined);
+        let obj = outer2_1(outer2_2[16]);
+        obj = { cta_type: outer2_11.CHANNEL_LIST };
+        obj.trackWithMetadata(outer2_12.TEXT_AREA_CTA_CLICKED, obj);
+        outer2_0(outer2_2[17]).transitionToGuild(closure_0, undefined);
       };
       obj2 = obj1;
     } else {
       obj2 = {};
-      const intl3 = guildId(stateFromStores[14]).intl;
+      const intl3 = outer1_0(outer1_2[14]).intl;
       obj3 = {};
       let str = "";
       if (null != stateFromStoresArray1[0]) {
-        str = guildId(stateFromStores[15]).computeChannelName(stateFromStoresArray1[0], closure_10, closure_9);
-        const obj6 = guildId(stateFromStores[15]);
+        str = outer1_0(outer1_2[15]).computeChannelName(stateFromStoresArray1[0], outer1_10, outer1_9);
+        const obj6 = outer1_0(outer1_2[15]);
       }
       obj3.channelName = str;
-      obj2.text = intl3.formatToPlainString(guildId(stateFromStores[14]).t.q1krfU, obj3);
+      obj2.text = intl3.formatToPlainString(outer1_0(outer1_2[14]).t.q1krfU, obj3);
       obj2.handlePress = function handlePress() {
-        let obj = lib(stateFromStores[16]);
-        obj = { cta_type: constants.CHANNEL_LINK };
-        obj.trackWithMetadata(constants2.TEXT_AREA_CTA_CLICKED, obj);
-        arg0(stateFromStores[17]).transitionToGuild(arg0, stateFromStoresArray1[0].id);
+        let obj = outer2_1(outer2_2[16]);
+        obj = { cta_type: outer2_11.CHANNEL_LINK };
+        obj.trackWithMetadata(outer2_12.TEXT_AREA_CTA_CLICKED, obj);
+        outer2_0(outer2_2[17]).transitionToGuild(closure_0, stateFromStoresArray1[0].id);
       };
     }
     return obj2;
-  }(guildId.guildId, guildId.channel));
-  const obj = { type: "simple-action", actionOnPress: handlePress };
-  const tmp = function useNotice(guildId, channel) {
-    let obj = guildId(stateFromStores[11]);
+  })(guildId.guildId, guildId.channel));
+  let obj = { type: "simple-action", actionOnPress: handlePress };
+  const tmp = (function useNotice(guildId, channel) {
+    let closure_0 = guildId;
+    let obj = outer1_0(outer1_2[11]);
     const channelAction = obj.useMemberActionsForChannel(guildId, channel).channelAction;
-    let obj1 = guildId(stateFromStores[11]);
+    let obj1 = outer1_0(outer1_2[11]);
     let channelId;
     if (null != channelAction) {
       channelId = channelAction.channelId;
     }
     let closure_1 = obj1.useNextMemberAction(guildId, channelId);
-    let obj2 = guildId(stateFromStores[12]);
-    const items = [stateFromStoresArray1];
+    let obj2 = outer1_0(outer1_2[12]);
+    const items = [outer1_4];
     const stateFromStores = obj2.useStateFromStores(items, () => {
       let channelId;
-      if (null != lib) {
-        channelId = lib.channelId;
+      if (null != channelId) {
+        channelId = channelId.channelId;
       }
-      return stateFromStoresArray1.getChannel(channelId);
+      return outer2_4.getChannel(channelId);
     });
-    let obj3 = guildId(stateFromStores[12]);
-    const items1 = [closure_5];
+    let obj3 = outer1_0(outer1_2[12]);
+    const items1 = [outer1_5];
     const stateFromStoresArray = obj3.useStateFromStoresArray(items1, () => {
-      const mapped = channels.getChannels(arg0)[closure_6].map((channel) => channel.channel);
-      return mapped.sort(closure_15);
+      const mapped = outer2_5.getChannels(closure_0)[outer2_6].map((channel) => channel.channel);
+      return mapped.sort(outer2_15);
     });
-    const items2 = [closure_7];
+    const items2 = [outer1_7];
     const items3 = [stateFromStoresArray];
-    const stateFromStoresArray1 = guildId(stateFromStores[12]).useStateFromStoresArray(items2, () => {
-      const found = stateFromStoresArray.filter(arg0(stateFromStores[13]).isNotNullish);
-      const found1 = found.filter((type) => callback(type.type));
-      return found1.filter((channel) => closure_7.can(constants.SEND_MESSAGES, channel));
+    const stateFromStoresArray1 = outer1_0(outer1_2[12]).useStateFromStoresArray(items2, () => {
+      const found = stateFromStoresArray.filter(outer2_0(outer2_2[13]).isNotNullish);
+      const found1 = found.filter((type) => outer3_3(type.type));
+      return found1.filter((channel) => outer3_7.can(outer3_13.SEND_MESSAGES, channel));
     }, items3);
     if (null != stateFromStores) {
       obj = {};
-      const intl2 = guildId(stateFromStores[14]).intl;
-      obj = { channelName: guildId(stateFromStores[15]).computeChannelName(stateFromStores, closure_10, closure_9) };
-      obj.text = intl2.formatToPlainString(guildId(stateFromStores[14]).t.q1krfU, obj);
+      const intl2 = outer1_0(outer1_2[14]).intl;
+      obj = { channelName: outer1_0(outer1_2[15]).computeChannelName(stateFromStores, outer1_10, outer1_9) };
+      obj.text = intl2.formatToPlainString(outer1_0(outer1_2[14]).t.q1krfU, obj);
       obj.handlePress = function handlePress() {
-        let obj = lib(stateFromStores[16]);
-        obj = { cta_type: constants.CHANNEL_LINK };
-        obj.trackWithMetadata(constants2.TEXT_AREA_CTA_CLICKED, obj);
-        arg0(stateFromStores[17]).transitionToGuild(arg0, stateFromStores.id);
+        let obj = outer2_1(outer2_2[16]);
+        obj = { cta_type: outer2_11.CHANNEL_LINK };
+        obj.trackWithMetadata(outer2_12.TEXT_AREA_CTA_CLICKED, obj);
+        outer2_0(outer2_2[17]).transitionToGuild(closure_0, stateFromStores.id);
       };
       obj2 = obj;
-      const obj11 = guildId(stateFromStores[15]);
+      const obj11 = outer1_0(outer1_2[15]);
     } else if (0 === stateFromStoresArray1.length) {
       obj1 = {};
-      const intl = guildId(stateFromStores[14]).intl;
-      obj1.text = intl.string(guildId(stateFromStores[14]).t.gHD/nZ);
+      const intl = outer1_0(outer1_2[14]).intl;
+      obj1.text = intl.string(outer1_0(outer1_2[14]).t["gHD/nZ"]);
       obj1.handlePress = function handlePress() {
-        let obj = lib(stateFromStores[16]);
-        obj = { cta_type: constants.CHANNEL_LIST };
-        obj.trackWithMetadata(constants2.TEXT_AREA_CTA_CLICKED, obj);
-        arg0(stateFromStores[17]).transitionToGuild(arg0, undefined);
+        let obj = outer2_1(outer2_2[16]);
+        obj = { cta_type: outer2_11.CHANNEL_LIST };
+        obj.trackWithMetadata(outer2_12.TEXT_AREA_CTA_CLICKED, obj);
+        outer2_0(outer2_2[17]).transitionToGuild(closure_0, undefined);
       };
       obj2 = obj1;
     } else {
       obj2 = {};
-      const intl3 = guildId(stateFromStores[14]).intl;
+      const intl3 = outer1_0(outer1_2[14]).intl;
       obj3 = {};
       let str = "";
       if (null != stateFromStoresArray1[0]) {
-        str = guildId(stateFromStores[15]).computeChannelName(stateFromStoresArray1[0], closure_10, closure_9);
-        const obj6 = guildId(stateFromStores[15]);
+        str = outer1_0(outer1_2[15]).computeChannelName(stateFromStoresArray1[0], outer1_10, outer1_9);
+        const obj6 = outer1_0(outer1_2[15]);
       }
       obj3.channelName = str;
-      obj2.text = intl3.formatToPlainString(guildId(stateFromStores[14]).t.q1krfU, obj3);
+      obj2.text = intl3.formatToPlainString(outer1_0(outer1_2[14]).t.q1krfU, obj3);
       obj2.handlePress = function handlePress() {
-        let obj = lib(stateFromStores[16]);
-        obj = { cta_type: constants.CHANNEL_LINK };
-        obj.trackWithMetadata(constants2.TEXT_AREA_CTA_CLICKED, obj);
-        arg0(stateFromStores[17]).transitionToGuild(arg0, stateFromStoresArray1[0].id);
+        let obj = outer2_1(outer2_2[16]);
+        obj = { cta_type: outer2_11.CHANNEL_LINK };
+        obj.trackWithMetadata(outer2_12.TEXT_AREA_CTA_CLICKED, obj);
+        outer2_0(outer2_2[17]).transitionToGuild(closure_0, stateFromStoresArray1[0].id);
       };
     }
     return obj2;
-  }(guildId.guildId, guildId.channel);
-  const intl = arg1(dependencyMap[14]).intl;
-  obj.actionLabel = intl.string(arg1(dependencyMap[14]).t.9cs5LM);
+  })(guildId.guildId, guildId.channel);
+  let intl = require(1212) /* getSystemLocale */.intl;
+  obj.actionLabel = intl.string(require(1212) /* getSystemLocale */.t["9cs5LM"]);
   obj.message = text;
-  return jsx(importDefault(dependencyMap[19]), obj);
+  return jsx(importDefault(11481), { type: "simple-action", actionOnPress: handlePress });
 });
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReadonly.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReadonly.tsx");
 
 export default memoResult;

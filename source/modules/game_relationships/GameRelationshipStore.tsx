@@ -1,61 +1,69 @@
-// Module ID: 6896
-// Function ID: 54925
+// Module ID: 6901
+// Function ID: 54959
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 3767, 653, 3754, 566, 686, 2]
 
-// Module 6896 (_isNativeReflectConstruct)
+// Module 6901 (_isNativeReflectConstruct)
+import ME from "ME";
+import sortedInsert from "sortedInsert";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return ME;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let ME = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      ME = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (sortedInsert >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        sortedInsert = tmp3 + 1;
+        obj.value = length[+sortedInsert];
       }
       return obj;
     };
@@ -93,29 +101,29 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function recountRelationshipTypes() {
-  let closure_0 = 0;
-  let closure_1 = 0;
-  let closure_2 = 0;
+  let c0 = 0;
+  let c1 = 0;
+  let c2 = 0;
   const values = secondaryIndexMap.values();
   const item = values.forEach((arg0) => {
     let id;
     let type;
     ({ type, id } = arg0);
-    if (type === constants.FRIEND) {
-      closure_2 = closure_2 + 1;
-    } else if (type === constants.PENDING_OUTGOING) {
-      closure_1 = closure_1 + 1;
-    } else if (type === constants.PENDING_INCOMING) {
-      if (!closure_5.isSpam(id)) {
-        if (!closure_5.isIgnored(id)) {
-          closure_0 = closure_0 + 1;
+    if (type === outer1_6.FRIEND) {
+      _possibleConstructorReturn = _possibleConstructorReturn + 1;
+    } else if (type === outer1_6.PENDING_OUTGOING) {
+      sortedInsert = sortedInsert + 1;
+    } else if (type === outer1_6.PENDING_INCOMING) {
+      if (!outer1_5.isSpam(id)) {
+        if (!outer1_5.isIgnored(id)) {
+          ME = ME + 1;
         }
       }
     }
   });
-  let closure_12 = closure_0;
-  let closure_13 = closure_1;
-  let closure_14 = closure_2;
+  let closure_12 = c0;
+  let closure_13 = c1;
+  let closure_14 = c2;
 }
 function upsert(id) {
   const result = secondaryIndexMap.set(GAME_RELATIONSHIP_KEY(id.id, id.applicationId), id);
@@ -123,13 +131,6 @@ function upsert(id) {
 function remove(id, applicationId) {
   secondaryIndexMap.delete(GAME_RELATIONSHIP_KEY(id, applicationId));
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-const RelationshipTypes = arg1(dependencyMap[6]).RelationshipTypes;
 function GAME_RELATIONSHIP_KEY(id, applicationId) {
   return "" + applicationId + "-" + id;
 }
@@ -142,29 +143,29 @@ function GameRelationshipIndexes_BY_USER_ID(id) {
 function GameRelationshipIndexes_BY_RELATIONSHIP_TYPE(type) {
   return "relationship-type-" + type;
 }
-const secondaryIndexMap = new arg1(dependencyMap[7]).SecondaryIndexMap(function gameRelationshipsIndex(applicationId) {
+const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(function gameRelationshipsIndex(applicationId) {
   const items = [];
   items.push(GameRelationshipIndexes_BY_APPLICATION_ID(applicationId.applicationId));
   items.push(GameRelationshipIndexes_BY_USER_ID(applicationId.id));
   items.push(GameRelationshipIndexes_BY_RELATIONSHIP_TYPE(applicationId.type));
   return items;
 }, (since) => "" + since.since);
-let closure_12 = 0;
-let closure_13 = 0;
-let closure_14 = 0;
-let tmp3 = (Store) => {
+let c12 = 0;
+let c13 = 0;
+let c14 = 0;
+let tmp3 = ((Store) => {
   class GameRelationshipStore {
     constructor() {
       self = this;
       tmp = GameRelationshipStore(this, GameRelationshipStore);
-      obj = closure_3(GameRelationshipStore);
-      tmp2 = closure_2;
-      if (closure_15()) {
+      obj = outer1_3(GameRelationshipStore);
+      tmp2 = outer1_2;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -173,95 +174,94 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GameRelationshipStore;
   callback2(GameRelationshipStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, , , , , , , , , , , ];
   obj = {
     key: "getPendingIncomingCount",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[1] = obj;
   obj = {
     key: "getPendingOutgoingCount",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getGameFriendCount",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[4] = {
     key: "getGameFriendsForApplication",
     value(arg0) {
-      const values = closure_11.values(callback2(arg0), true);
-      return values.filter((type) => type.type === constants.FRIEND);
+      const values = outer1_11.values(outer1_8(arg0), true);
+      return values.filter((type) => type.type === outer2_6.FRIEND);
     }
   };
   items[5] = {
     key: "getGameRelationshipsForUser",
     value(arg0) {
-      return closure_11.values(callback3(arg0), true);
+      return outer1_11.values(outer1_9(arg0), true);
     }
   };
   items[6] = {
     key: "getGameRelationshipsForUserByType",
     value(arg0, arg1) {
-      const GameRelationshipStore = arg1;
+      let ME = arg1;
       const gameRelationshipsForUser = this.getGameRelationshipsForUser(arg0);
-      return gameRelationshipsForUser.filter((type) => type.type === arg1);
+      return gameRelationshipsForUser.filter((type) => type.type === ME);
     }
   };
   items[7] = {
     key: "getGameFriendsForUser",
     value(arg0) {
-      return this.getGameRelationshipsForUserByType(arg0, constants.FRIEND);
+      return this.getGameRelationshipsForUserByType(arg0, outer1_6.FRIEND);
     }
   };
   items[8] = {
     key: "getGameRelationshipCount",
     value() {
-      return closure_11.size();
+      return outer1_11.size();
     }
   };
   items[9] = {
     key: "getGameRelationships",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[10] = {
     key: "getGameRelationshipsByType",
     value(arg0) {
-      return closure_11.values(callback4(arg0), true);
+      return outer1_11.values(outer1_10(arg0), true);
     }
   };
   items[11] = {
     key: "getGameRelationshipsVersion",
     value() {
-      return closure_11.version;
+      return outer1_11.version;
     }
   };
   return callback(GameRelationshipStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "GameRelationshipStore";
-tmp3 = new tmp3(importDefault(dependencyMap[9]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(gameRelationships) {
     secondaryIndexMap.clear();
     gameRelationships = gameRelationships.gameRelationships;
     const item = gameRelationships.forEach((id) => {
-      callback({ id: id.id, applicationId: id.application_id, type: id.type, since: id.since, dmAccessType: id.dm_access_type });
+      outer1_19({ id: id.id, applicationId: id.application_id, type: id.type, since: id.since, dmAccessType: id.dm_access_type });
     });
     recountRelationshipTypes();
   },
@@ -283,25 +283,25 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
       if (!iter5.done) {
         do {
           let value = iter4.value;
-          let tmp = closure_16;
-          let tmp2 = closure_11;
-          let tmp3 = closure_8;
-          let tmp4 = closure_16(closure_11.values(closure_8(value)));
+          let tmp = _createForOfIteratorHelperLoose;
+          let tmp2 = secondaryIndexMap;
+          let tmp3 = GameRelationshipIndexes_BY_APPLICATION_ID;
+          let tmp4 = _createForOfIteratorHelperLoose(secondaryIndexMap.values(GameRelationshipIndexes_BY_APPLICATION_ID(value)));
           let iter = tmp4();
           if (!iter.done) {
             do {
               value = iter.value;
-              let tmp5 = closure_6;
-              let tmp6 = value.type !== closure_6.PENDING_INCOMING;
+              let tmp5 = RelationshipTypes;
+              let tmp6 = value.type !== RelationshipTypes.PENDING_INCOMING;
               if (tmp6) {
-                let tmp7 = closure_6;
-                tmp6 = value.type !== closure_6.PENDING_OUTGOING;
+                let tmp7 = RelationshipTypes;
+                tmp6 = value.type !== RelationshipTypes.PENDING_OUTGOING;
               }
               if (!tmp6) {
-                let tmp8 = closure_20;
-                let tmp9 = closure_20(value.id, value);
+                let tmp8 = remove;
+                let tmp9 = remove(value.id, value);
               }
-              let iter2 = tmp4();
+              iter2 = tmp4();
               iter = iter2;
               let tmp10 = value;
             } while (!iter2.done);
@@ -314,6 +314,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
     }
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/game_relationships/GameRelationshipStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/game_relationships/GameRelationshipStore.tsx");
 
 export default tmp3;

@@ -1,27 +1,31 @@
-// Module ID: 8560
-// Function ID: 68042
+// Module ID: 8567
+// Function ID: 68082
 // Name: useTooltipPosition
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: default
 
-// Module 8560 (useTooltipPosition)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("design/components/Tooltip/native/useTooltipPosition.native.tsx");
+// Module 8567 (useTooltipPosition)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("design/components/Tooltip/native/useTooltipPosition.native.tsx");
 
 export default function useTooltipPosition(arg0, arg1, arg2, arg3) {
   let num = arg4;
   const React = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  let closure_3 = arg3;
   if (arg4 === undefined) {
     num = 0;
   }
   const items = [arg3, arg0, arg2, arg1, num];
-  return React.useMemo((self, self2, self3) => {
-    if (null != self) {
-      if (null != self2) {
-        const width = self.width;
-        const width2 = self2.width;
-        const diff = self3.y - self2.y;
-        const diff1 = self3.x - self2.x + self3.width / 2 - width / 2;
+  return React.useMemo(() => {
+    if (null != styles) {
+      if (null != styles2) {
+        const width = styles.width;
+        const width2 = styles2.width;
+        const diff = styles3.y - styles2.y;
+        const diff1 = styles3.x - styles2.x + styles3.width / 2 - width / 2;
         if (diff1 < 12) {
           let num = 12 - diff1;
         } else {
@@ -31,16 +35,16 @@ export default function useTooltipPosition(arg0, arg1, arg2, arg3) {
           }
         }
         const obj = { tooltipX: diff1 + num };
-        if ("top" === arg3) {
-          let diff2 = diff - self.height - num;
+        if ("top" === closure_3) {
+          let diff2 = diff - styles.height - num;
         } else {
-          diff2 = diff + self3.height + num;
+          diff2 = diff + styles3.height + num;
         }
         obj.tooltipY = diff2;
         obj.adjustmentX = num;
         return obj;
       }
     }
-    return { <string:67523032>: "spring", <string:1364605794>: 0.4, <string:996246534>: 1 };
+    return { tooltipX: 0, tooltipY: 0, adjustmentX: 0 };
   }, items);
 };

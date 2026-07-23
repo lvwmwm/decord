@@ -1,16 +1,22 @@
-// Module ID: 8920
-// Function ID: 70388
+// Module ID: 8927
+// Function ID: 70429
 // Name: validateDiscordTag
-// Dependencies: []
+// Dependencies: [57, 653, 1212, 44, 675, 8342, 2]
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 8920 (validateDiscordTag)
+// Module 8927 (validateDiscordTag)
+import _slicedToArray from "_slicedToArray";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function validateDiscordTag(arr) {
   let stringResult = null;
   if (!regex3.test(arr)) {
     if (!arr.includes("#")) {
       const tmp4 = callback(arr.split("#"), 2);
-      let obj = importDefault(dependencyMap[4]);
+      let obj = importDefault(675);
       obj = { reason: "Invalid Username", query: arr };
       let str3 = "";
       if (null != tmp4[1]) {
@@ -18,14 +24,14 @@ function validateDiscordTag(arr) {
       }
       obj.discrim_len = str3.length;
       obj.username_len = tmp4[0].length;
-      obj.is_email_like = importDefault(dependencyMap[5]).isEmail(arr);
-      const obj3 = importDefault(dependencyMap[5]);
-      obj.is_invite_like = importDefault(dependencyMap[5]).isInvite(arr);
+      obj.is_email_like = importDefault(8342).isEmail(arr);
+      const obj3 = importDefault(8342);
+      obj.is_invite_like = importDefault(8342).isInvite(arr);
       obj.is_num_only = regex.test(arr);
       obj.track(constants2.FRIEND_REQUEST_FAILED, obj);
-      const intl = arg1(dependencyMap[2]).intl;
-      stringResult = intl.string(arg1(dependencyMap[2]).t.paDJBM);
-      const obj4 = importDefault(dependencyMap[5]);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl.string(require(1212) /* getSystemLocale */.t.paDJBM);
+      const obj4 = importDefault(8342);
     } else {
       stringResult = null;
     }
@@ -34,24 +40,24 @@ function validateDiscordTag(arr) {
 }
 function humanizeAbortCode(arg0, substr) {
   if (constants.RELATIONSHIP_INCOMING_DISABLED === arg0) {
-    const intl7 = substr(dependencyMap[2]).intl;
+    const intl7 = require(1212) /* getSystemLocale */.intl;
     const obj = { discordTag: substr };
-    return intl7.format(substr(dependencyMap[2]).t.Oxe6Ur, obj);
+    return intl7.format(require(1212) /* getSystemLocale */.t.Oxe6Ur, obj);
   } else if (constants.TOO_MANY_FRIENDS === arg0) {
-    const intl6 = substr(dependencyMap[2]).intl;
-    return intl6.string(substr(dependencyMap[2]).t.tnBalD);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    return intl6.string(require(1212) /* getSystemLocale */.t.tnBalD);
   } else if (constants.RELATIONSHIP_ALREADY_FRIENDS === arg0) {
-    const intl5 = substr(dependencyMap[2]).intl;
-    return intl5.string(substr(dependencyMap[2]).t.VNLneq);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(require(1212) /* getSystemLocale */.t.VNLneq);
   } else {
     if (constants.USER_QUARANTINED !== arg0) {
       if (constants.USER_FRIEND_REQUEST_LIMITED_ACCESS !== arg0) {
         if (constants.TOO_MANY_BLOCKED_USERS === arg0) {
-          const intl3 = substr(dependencyMap[2]).intl;
-          return intl3.string(substr(dependencyMap[2]).t.sIGo1i);
+          const intl3 = require(1212) /* getSystemLocale */.intl;
+          return intl3.string(require(1212) /* getSystemLocale */.t.sIGo1i);
         } else if (constants.TOO_MANY_PENDING_OUTGOING === arg0) {
-          const intl2 = substr(dependencyMap[2]).intl;
-          return intl2.string(substr(dependencyMap[2]).t.k1K15p);
+          const intl2 = require(1212) /* getSystemLocale */.intl;
+          return intl2.string(require(1212) /* getSystemLocale */.t.k1K15p);
         } else {
           if (constants.RELATIONSHIP_INCOMING_BLOCKED !== arg0) {
             if (constants.RELATIONSHIP_INVALID_SELF !== arg0) {
@@ -60,22 +66,20 @@ function humanizeAbortCode(arg0, substr) {
               }
             }
           }
-          const intl = substr(dependencyMap[2]).intl;
-          return intl.string(substr(dependencyMap[2]).t.paDJBM);
+          const intl = require(1212) /* getSystemLocale */.intl;
+          return intl.string(require(1212) /* getSystemLocale */.t.paDJBM);
         }
       }
     }
-    const intl4 = substr(dependencyMap[2]).intl;
-    return intl4.string(substr(dependencyMap[2]).t.EouHwv);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t.EouHwv);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ AbortCodes: closure_4, AnalyticEvents: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = /^\d+$/;
-let closure_7 = /^(.+?@.+?\..+?|.+?#\d{4})$/;
-let closure_8 = /^[a-zA-Z0-9_\\.]+$/;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("utils/FriendsUtils.tsx");
+({ AbortCodes: closure_4, AnalyticEvents: closure_5 } = ME);
+const re6 = /^\d+$/;
+const re7 = /^(.+?@.+?\..+?|.+?#\d{4})$/;
+const re8 = /^[a-zA-Z0-9_\\.]+$/;
+const result = require("getSystemLocale").fileFinishedImporting("utils/FriendsUtils.tsx");
 
 export { validateDiscordTag };
 export const isValidDiscordTag = function isValidDiscordTag(arr) {
@@ -85,10 +89,10 @@ export { humanizeAbortCode };
 export const humanizeAbortCodeForA11y = function humanizeAbortCodeForA11y(arg0, substr) {
   let formatToPlainStringResult = humanizeAbortCode(arg0, substr);
   if (arg0 === constants.RELATIONSHIP_INCOMING_DISABLED) {
-    const intl = substr(dependencyMap[2]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj = { discordTag: substr };
-    formatToPlainStringResult = intl.formatToPlainString(substr(dependencyMap[2]).t.ihb+UW, obj);
+    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["ihb+UW"], obj);
   }
-  importDefault(dependencyMap[3])("string" === typeof formatToPlainStringResult, "abortCode should be a string for a11y");
+  importDefault(44)("string" === typeof formatToPlainStringResult, "abortCode should be a string for a11y");
   return formatToPlainStringResult;
 };

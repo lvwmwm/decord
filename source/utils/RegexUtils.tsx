@@ -1,10 +1,10 @@
-// Module ID: 4116
-// Function ID: 34085
-// Dependencies: []
+// Module ID: 4118
+// Function ID: 34094
+// Name: set
+// Dependencies: [2]
 
-// Module 4116
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/RegexUtils.tsx");
+// Module 4118 (set)
+const result = require("set").fileFinishedImporting("utils/RegexUtils.tsx");
 
 export default {
   escape(str) {

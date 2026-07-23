@@ -1,55 +1,59 @@
-// Module ID: 5121
-// Function ID: 44413
+// Module ID: 5124
+// Function ID: 44432
 // Name: TermsFieldListItem
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 4120, 1212, 5125, 2]
 // Exports: default
 
-// Module 5121 (TermsFieldListItem)
+// Module 5124 (TermsFieldListItem)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function TermsFieldListItem(arg0) {
   let rowNumber;
   let rule;
   let rulesChannelId;
   ({ rowNumber, rule, rulesChannelId } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.termsRow };
-  obj = { style: tmp.termsRowNumber, children: "" + rowNumber + "." };
-  const items = [callback(arg1(dependencyMap[5]).Text, obj), ];
-  obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: importDefault(dependencyMap[6]).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
-  items[1] = callback(arg1(dependencyMap[5]).Text, obj);
+  obj = { style: tmp.termsRowNumber, variant: "text-sm/medium", color: "text-muted", children: "" + rowNumber + "." };
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: importDefault(4120).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { <string:43614282>: "readFileAsBase64", <string:68309867>: "sync", <string:47908976>: "SET_GUILD_MEMBER", backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT };
-obj.termsContainer = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj.firstItem = { borderTopLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[4]).radii.sm };
-const obj1 = { borderTopLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.lastItem = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.sm, marginBottom: 12 };
-obj.termsRow = { flexDirection: "row" };
-obj.termsRowContent = {};
-obj.termsRowNumber = {};
-obj.title = { marginBottom: 16 };
-let closure_8 = obj.createStyles(obj);
-const obj2 = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.sm, marginBottom: 12 };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsFieldList.tsx");
+({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 16, flexDirection: "column", justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.termsContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.firstItem = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+const obj1 = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.lastItem = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginBottom: 12 };
+_createForOfIteratorHelperLoose.termsRow = { flexDirection: "row" };
+_createForOfIteratorHelperLoose.termsRowContent = { flex: 1, lineHeight: 20 };
+_createForOfIteratorHelperLoose.termsRowNumber = { paddingRight: 8, width: 20, height: 20 };
+_createForOfIteratorHelperLoose.title = { marginBottom: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj2 = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginBottom: 12 };
+const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsFieldList.tsx");
 
 export default function TermsFieldList(rules) {
   rules = rules.rules;
-  const arg1 = rules;
-  const importDefault = rules.rulesChannelId;
-  const tmp = callback3();
+  const rulesChannelId = rules.rulesChannelId;
+  const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
   let obj = {};
-  obj = { style: tmp.title };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.children = intl.string(arg1(dependencyMap[7]).t.prJqwT);
-  const items = [
-    callback(arg1(dependencyMap[5]).Text, obj),
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
+  const intl = rules(1212).intl;
+  obj.children = intl.string(rules(1212).t.prJqwT);
+  let items = [
+    callback(rules(4126).Text, obj),
     rules.map((rule) => {
       let obj = {};
       obj = {};
@@ -66,15 +70,15 @@ export default function TermsFieldList(rules) {
       items[2] = lastItem;
       obj.style = items;
       obj = { rule, rowNumber: arg1 + 1, rulesChannelId };
-      obj.children = callback(closure_9, obj);
-      const items1 = [callback(closure_4, obj), ];
+      obj.children = outer1_5(outer1_9, obj);
+      const items1 = [outer1_5(outer1_4, obj), ];
       let tmp8 = null;
       if (arg1 !== rules.length - 1) {
-        tmp8 = callback(rules(tmp[8]).TableRowDivider, {});
+        tmp8 = outer1_5(rules(tmp[8]).TableRowDivider, {});
       }
       items1[1] = tmp8;
       obj.children = items1;
-      return closure_6(React.Fragment, obj, "term-" + rule + "-" + arg1);
+      return outer1_6(outer1_3.Fragment, obj, "term-" + rule + "-" + arg1);
     })
   ];
   obj.children = items;

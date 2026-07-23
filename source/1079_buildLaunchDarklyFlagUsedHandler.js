@@ -1,29 +1,30 @@
 // Module ID: 1079
-// Function ID: 12426
+// Function ID: 12427
 // Name: buildLaunchDarklyFlagUsedHandler
-// Dependencies: []
+// Dependencies: [794]
 // Exports: buildLaunchDarklyFlagUsedHandler
 
 // Module 1079 (buildLaunchDarklyFlagUsedHandler)
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
 
 export const buildLaunchDarklyFlagUsedHandler = function buildLaunchDarklyFlagUsedHandler() {
-  const obj = {
-    traceFetch: true,
-    traceXHR: true,
-    enableHTTPTimings: true,
+  let obj = {
+    name: "sentry-flag-auditor",
+    type: "flag-used",
+    synchronous: true,
     method(first) {
-      const result = callback(closure_1[0])._INTERNAL_insertFlagToScope(first, arg1.value);
-      const obj = callback(closure_1[0]);
-      const result1 = callback(closure_1[0])._INTERNAL_addFeatureFlagToActiveSpan(first, arg1.value);
+      const result = outer1_0(outer1_1[0])._INTERNAL_insertFlagToScope(first, arg1.value);
+      const obj = outer1_0(outer1_1[0]);
+      const result1 = outer1_0(outer1_1[0])._INTERNAL_addFeatureFlagToActiveSpan(first, arg1.value);
     }
   };
   return obj;
 };
-export const launchDarklyIntegration = _module.defineIntegration(() => ({
+export const launchDarklyIntegration = registerSpanErrorInstrumentation.defineIntegration(() => ({
   name: "LaunchDarkly",
   processEvent(contexts) {
-    return callback(closure_1[0])._INTERNAL_copyFlagsFromScopeToEvent(contexts);
+    return outer1_0(outer1_1[0])._INTERNAL_copyFlagsFromScopeToEvent(contexts);
   }
 }));

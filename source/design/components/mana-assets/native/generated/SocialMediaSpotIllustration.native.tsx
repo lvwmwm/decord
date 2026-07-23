@@ -1,13 +1,13 @@
-// Module ID: 6517
-// Function ID: 50708
+// Module ID: 6522
+// Function ID: 50737
 // Name: SocialMediaSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6523, 2]
 // Exports: SocialMediaSpotIllustration
 
-// Module 6517 (SocialMediaSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SocialMediaSpotIllustration.native.tsx");
+// Module 6522 (SocialMediaSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SocialMediaSpotIllustration.native.tsx");
 
 export const SocialMediaSpotIllustration = function SocialMediaSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const SocialMediaSpotIllustration = function SocialMediaSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6523) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const SocialMediaSpotIllustration = function SocialMediaSpotIllustration(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,42 +1,43 @@
-// Module ID: 9478
-// Function ID: 73897
+// Module ID: 9485
+// Function ID: 73938
 // Name: result
-// Dependencies: [4294967295, 0, 0]
+// Dependencies: [664, 1212, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 9478 (result)
-const obj = { DUPLICATED: "DUPLICATED", TOO_GENERIC: "TOO_GENERIC", TOO_MANY: "TOO_MANY", INACCURATE: "INACCURATE", NOT_USEFUL: "NOT_USEFUL", OTHER: "OTHER" };
-const result = 5 * importDefault(dependencyMap[0]).Millis.SECOND;
-const result1 = require("__exportStarResult1").fileFinishedImporting("modules/summaries/SummaryConstants.tsx");
+// Module 9485 (result)
+const require = arg1;
+let obj = { DUPLICATED: "DUPLICATED", TOO_GENERIC: "TOO_GENERIC", TOO_MANY: "TOO_MANY", INACCURATE: "INACCURATE", NOT_USEFUL: "NOT_USEFUL", OTHER: "OTHER" };
+const result = 5 * require("set").Millis.SECOND;
+const result1 = require("set").fileFinishedImporting("modules/summaries/SummaryConstants.tsx");
 
 export const SUMMARY_POLL_INTERVAL = result;
 export const SummariesSidebarToggledSource = { TOOLBAR_BUTTON: "toolbar button", PILL: "pill" };
 export const SummariesTopicClickedSource = { SIDEBAR: "sidebar", PILL_DROPDOWN: "pill dropdown", PILL_NEXT_ARROW: "pill next arrow", PILL_PREVIOUS_ARROW: "pill previous arrow" };
 export const SummaryFeedbackReasons = obj;
 export const getSummaryFeedbackReasons = function getSummaryFeedbackReasons() {
-  let obj = { value: obj.DUPLICATED };
-  const intl = arg1(dependencyMap[1]).intl;
-  obj.label = intl.string(arg1(dependencyMap[1]).t.wwXl5h);
+  obj = { value: obj.DUPLICATED };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t.wwXl5h);
   const items = [obj, , , , , ];
   obj = { value: obj.TOO_GENERIC };
-  const intl2 = arg1(dependencyMap[1]).intl;
-  obj.label = intl2.string(arg1(dependencyMap[1]).t.t+6knu);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl2.string(require(1212) /* getSystemLocale */.t["t+6knu"]);
   items[1] = obj;
   obj = { value: obj.TOO_MANY };
-  const intl3 = arg1(dependencyMap[1]).intl;
-  obj.label = intl3.string(arg1(dependencyMap[1]).t.xnKDnv);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl3.string(require(1212) /* getSystemLocale */.t.xnKDnv);
   items[2] = obj;
   const obj1 = { value: obj.INACCURATE };
-  const intl4 = arg1(dependencyMap[1]).intl;
-  obj1.label = intl4.string(arg1(dependencyMap[1]).t.JW5VFj);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.label = intl4.string(require(1212) /* getSystemLocale */.t.JW5VFj);
   items[3] = obj1;
   const obj2 = { value: obj.NOT_USEFUL };
-  const intl5 = arg1(dependencyMap[1]).intl;
-  obj2.label = intl5.string(arg1(dependencyMap[1]).t.ZtCNiY);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj2.label = intl5.string(require(1212) /* getSystemLocale */.t.ZtCNiY);
   items[4] = obj2;
   const obj3 = { value: obj.OTHER };
-  const intl6 = arg1(dependencyMap[1]).intl;
-  obj3.label = intl6.string(arg1(dependencyMap[1]).t.BufsKk);
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj3.label = intl6.string(require(1212) /* getSystemLocale */.t.BufsKk);
   items[5] = obj3;
   return items;
 };

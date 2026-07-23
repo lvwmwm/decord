@@ -1,13 +1,13 @@
-// Module ID: 6463
-// Function ID: 50627
+// Module ID: 6468
+// Function ID: 50656
 // Name: ServerBannerTheCrewExample
-// Dependencies: []
+// Dependencies: [33, 5085, 6469, 2]
 // Exports: ServerBannerTheCrewExample
 
-// Module 6463 (ServerBannerTheCrewExample)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerTheCrewExample.native.tsx");
+// Module 6468 (ServerBannerTheCrewExample)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerTheCrewExample.native.tsx");
 
 export const ServerBannerTheCrewExample = function ServerBannerTheCrewExample(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ServerBannerTheCrewExample = function ServerBannerTheCrewExample(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6469) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ServerBannerTheCrewExample = function ServerBannerTheCrewExample(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

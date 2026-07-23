@@ -1,10 +1,21 @@
-// Module ID: 7652
-// Function ID: 61218
+// Module ID: 7658
+// Function ID: 61255
 // Name: canReactToMessageInternal
-// Dependencies: []
+// Dependencies: [1917, 4946, 3758, 1849, 653, 1360, 3747, 566, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 7652 (canReactToMessageInternal)
+// Module 7658 (canReactToMessageInternal)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function canReactToMessageInternal(state, getGuildId, items) {
   let obj;
   let obj2;
@@ -41,33 +52,28 @@ function canReactToMessageInternal(state, getGuildId, items) {
     canResult = state.type !== constants3.THREAD_STARTER_MESSAGE;
   }
   if (canResult) {
-    canResult = !getGuildId(dependencyMap[5]).hasFlag(state.flags, constants4.EPHEMERAL);
-    const obj5 = getGuildId(dependencyMap[5]);
+    canResult = !require(1360) /* hasFlag */.hasFlag(state.flags, constants4.EPHEMERAL);
+    const obj5 = require(1360) /* hasFlag */;
   }
   if (canResult) {
-    canResult = !getGuildId(dependencyMap[6]).isMemberCommunicationDisabled(member);
-    const obj6 = getGuildId(dependencyMap[6]);
+    canResult = !require(3747) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
+    const obj6 = require(3747) /* isCommunicationDisabled */;
   }
   return canResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-({ Permissions: closure_6, MessageStates: closure_7, MessageTypes: closure_8, MessageFlags: closure_9 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/reactions/canReactToMessage.tsx");
+({ Permissions: closure_6, MessageStates: closure_7, MessageTypes: closure_8, MessageFlags: closure_9 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/reactions/canReactToMessage.tsx");
 
 export const canReactToMessage = function canReactToMessage(message, channel) {
-  const items = [closure_5, closure_2, closure_3, closure_4];
+  const items = [closure_5, _isNativeReflectConstruct, closure_3, closure_4];
   return canReactToMessageInternal(message, channel, items);
 };
 export const useCanReactToMessage = function useCanReactToMessage(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_5, closure_2, closure_3, closure_4];
-  return arg1(dependencyMap[7]).useStateFromStores(items, () => {
-    const items = [closure_5, closure_2, closure_3, closure_4];
-    return callback(arg0, arg1, items);
+  let items = [closure_5, _isNativeReflectConstruct, closure_3, closure_4];
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_5, outer1_2, outer1_3, outer1_4];
+    return outer1_10(closure_0, closure_1, items);
   });
 };

@@ -1,22 +1,24 @@
-// Module ID: 12447
-// Function ID: 94973
+// Module ID: 12561
+// Function ID: 97129
 // Name: collectCallFeedback
-// Dependencies: []
+// Dependencies: [8849, 1348, 4177, 4202, 1906, 1849, 8837, 4324, 8853, 8850, 686, 2]
 // Exports: default
 
-// Module 12447 (collectCallFeedback)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/voice_calls/collectCallFeedback.tsx");
+// Module 12561 (collectCallFeedback)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/collectCallFeedback.tsx");
 
 export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
-  const voiceChannelId = voiceChannelId.getVoiceChannelId();
-  const channel = channel.getChannel(voiceChannelId);
+  voiceChannelId = voiceChannelId.getVoiceChannelId();
+  channel = channel.getChannel(voiceChannelId);
   if (null == arg1) {
     if (null != voiceChannelId) {
       if (null != channel) {
@@ -31,7 +33,7 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
         obj.rtc_connection_id = store2.getRTCConnectionId();
         obj.duration = store2.getDuration();
         obj.media_session_id = store2.getMediaSessionId();
-        let obj3 = arg1(dependencyMap[7]);
+        let obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
         const guildId = store2.getGuildId();
         const merged = Object.assign(obj3.getVoiceStateMetadata(guildId, store2.getChannelId(), videoEnabled));
         let duration_muted_ms;
@@ -48,28 +50,29 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
         if (obj.hasUsedBackgroundInCall) {
           obj = {};
           const merged1 = Object.assign(obj);
-          const lastUsedVideoBackgroundOption = arg1(dependencyMap[8]).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
+          const lastUsedVideoBackgroundOption = require(8853) /* getOptionFromSettingsFiltered */.getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
           const obj1 = {};
           const videoDevices = store.getVideoDevices();
+          const tmp29 = videoDevices[store.getVideoDeviceId(store)];
           let name;
-          if (null != videoDevices[closure_5.getVideoDeviceId(closure_5)]) {
+          if (null != tmp29) {
             name = tmp29.name;
           }
           obj1.video_device_name = name;
           obj1.video_hardware_scaling_enabled = store.getHardwareEncoding();
-          const obj8 = arg1(dependencyMap[8]);
-          obj1.video_effect_type = arg1(dependencyMap[9]).getEffectAnalyticsType(lastUsedVideoBackgroundOption);
-          const obj10 = arg1(dependencyMap[9]);
-          obj1.video_effect_detail = arg1(dependencyMap[9]).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
+          const obj8 = require(8853) /* getOptionFromSettingsFiltered */;
+          obj1.video_effect_type = require(8850) /* isCustomBackgroundOption */.getEffectAnalyticsType(lastUsedVideoBackgroundOption);
+          const obj10 = require(8850) /* isCustomBackgroundOption */;
+          obj1.video_effect_detail = require(8850) /* isCustomBackgroundOption */.getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
           const merged2 = Object.assign(obj1);
-          const obj11 = arg1(dependencyMap[9]);
+          const obj11 = require(8850) /* isCustomBackgroundOption */;
           const obj2 = { type: "VIDEO_BACKGROUND_SHOW_FEEDBACK", analyticsData: obj };
-          importDefault(dependencyMap[10]).dispatch(obj2);
-          const obj12 = importDefault(dependencyMap[10]);
+          importDefault(686).dispatch(obj2);
+          const obj12 = importDefault(686);
         } else {
           obj3 = { type: "VOICE_CHANNEL_SHOW_FEEDBACK", analyticsData: obj };
-          importDefault(dependencyMap[10]).dispatch(obj3);
-          const obj5 = importDefault(dependencyMap[10]);
+          importDefault(686).dispatch(obj3);
+          const obj5 = importDefault(686);
         }
       }
     }

@@ -1,72 +1,75 @@
 // Module ID: 894
-// Function ID: 9845
+// Function ID: 9846
 // Name: captureConsoleIntegration
-// Dependencies: []
+// Dependencies: [801, 798, 895, 825, 863, 896, 807, 809, 845]
 
 // Module 894 (captureConsoleIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[4]);
+import setupIntegration from "setupIntegration";
 
-export const captureConsoleIntegration = _module.defineIntegration(function _captureConsoleIntegration() {
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const captureConsoleIntegration = setupIntegration.defineIntegration(function _captureConsoleIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       let first = arguments[0];
     }
     let CONSOLE_LEVELS = first.levels;
     if (!CONSOLE_LEVELS) {
-      CONSOLE_LEVELS = require(closure_1[0]).CONSOLE_LEVELS;
+      CONSOLE_LEVELS = CONSOLE_LEVELS(801).CONSOLE_LEVELS;
     }
-    const require = CONSOLE_LEVELS;
     const handled = first.handled;
-    closure_1 = null == handled || handled;
-    const obj = {
+    let dependencyMap = null == handled || handled;
+    let obj = {
       name: "CaptureConsole",
       setup(arg0) {
-          const CONSOLE_LEVELS = arg0;
-          if ("console" in CONSOLE_LEVELS(closure_1[1]).GLOBAL_OBJ) {
-            const result = CONSOLE_LEVELS(closure_1[2]).addConsoleInstrumentationHandler((level) => {
+          let closure_0 = arg0;
+          if ("console" in CONSOLE_LEVELS(798).GLOBAL_OBJ) {
+            let result = CONSOLE_LEVELS(895).addConsoleInstrumentationHandler((level) => {
               level = level.level;
-              let hasItem = level(closure_1[3]).getClient() === level;
+              let hasItem = CONSOLE_LEVELS(table[3]).getClient() === closure_0;
               if (hasItem) {
-                hasItem = level.includes(level);
+                hasItem = closure_0.includes(level);
               }
               if (hasItem) {
-                function consoleHandler(args, level, closure_1) {
-                  let obj = args(level[5]);
+                (function consoleHandler(args, level, outer1_1) {
+                  let closure_0 = args;
+                  const dependencyMap = level;
+                  let closure_2 = outer1_1;
+                  let obj = CONSOLE_LEVELS(896);
                   let closure_3 = obj.severityLevelFromString(level);
                   const error = new Error();
-                  obj = { level: args(level[5]).severityLevelFromString(level), extra: { arguments: args } };
-                  const obj3 = args(level[5]);
-                  args(level[3]).withScope((addEventProcessor) => {
+                  obj = { level: CONSOLE_LEVELS(896).severityLevelFromString(level), extra: { arguments: args } };
+                  const obj3 = CONSOLE_LEVELS(896);
+                  CONSOLE_LEVELS(825).withScope((addEventProcessor) => {
                     addEventProcessor.addEventProcessor(() => { ... });
-                    if ("assert" !== arg1) {
-                      const found = addEventProcessor.find(() => { ... });
+                    if ("assert" !== level) {
+                      const found = args.find(() => { ... });
                       if (found) {
                         let tmp16Result = tmp16(tmp17[8]);
                         tmp16Result.captureException(found, obj);
                       } else {
                         tmp16Result = tmp16(tmp17[7]);
-                        let obj = {};
+                        obj = {};
                         obj.captureContext = obj;
                         obj.syntheticException = error;
-                        addEventProcessor.captureMessage(tmp16Result.safeJoin(addEventProcessor, " "), closure_3, obj);
+                        addEventProcessor.captureMessage(tmp16Result.safeJoin(args, " "), closure_3, obj);
                       }
-                    } else if (!addEventProcessor[0]) {
-                      obj = addEventProcessor(arg1[7]);
+                    } else if (!args[0]) {
+                      obj = CONSOLE_LEVELS(level[7]);
                       const _HermesInternal = HermesInternal;
-                      const combined = "Assertion failed: " + obj.safeJoin(addEventProcessor.slice(1), " ") || "console.assert";
-                      addEventProcessor.setExtra("arguments", addEventProcessor.slice(1));
+                      const combined = "Assertion failed: " + obj.safeJoin(args.slice(1), " ") || "console.assert";
+                      addEventProcessor.setExtra("arguments", args.slice(1));
                       obj = {};
                       obj.captureContext = obj;
                       obj.syntheticException = error;
                       addEventProcessor.captureMessage(combined, closure_3, obj);
-                      const tmp5 = obj.safeJoin(addEventProcessor.slice(1), " ") || "console.assert";
+                      const tmp5 = obj.safeJoin(args.slice(1), " ") || "console.assert";
                     }
                   });
-                }(level.args, level, closure_1);
+                })(level.args, level, outer1_1);
               }
             });
-            const obj = CONSOLE_LEVELS(closure_1[2]);
+            let obj = CONSOLE_LEVELS(895);
           }
         }
     };

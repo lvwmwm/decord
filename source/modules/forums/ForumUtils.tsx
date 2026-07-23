@@ -1,16 +1,17 @@
-// Module ID: 5679
-// Function ID: 48886
+// Module ID: 5684
+// Function ID: 48913
 // Name: getForumPostReadStates
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [1348, 1838, 4142, 5685, 1355, 1212, 1357, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 5679 (getForumPostReadStates)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { ForumTimestampFormats } from "__exportStarResult1";
-import { ChannelFlags } from "__exportStarResult1";
+// Module 5684 (getForumPostReadStates)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
+import { ChannelFlags } from "set";
 
+const require = arg1;
 function getForumPostReadStates(channel, guild, items) {
   let obj;
   let tmp = items;
@@ -29,12 +30,12 @@ function getForumPostReadStates(channel, guild, items) {
   return obj;
 }
 function getCreationDefaultFormatter() {
-  const obj = { minutes: arg1(dependencyMap[5]).t.nFt9ck, hours: arg1(dependencyMap[5]).t.jzCewe, days: arg1(dependencyMap[5]).t.U4I0sw };
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.month = intl.string(arg1(dependencyMap[5]).t.nBNJ/L);
+  const obj = { minutes: require(1212) /* getSystemLocale */.t.nFt9ck, hours: require(1212) /* getSystemLocale */.t.jzCewe, days: require(1212) /* getSystemLocale */.t.U4I0sw };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.month = intl.string(require(1212) /* getSystemLocale */.t["nBNJ/L"]);
   return obj;
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/forums/ForumUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/ForumUtils.tsx");
 
 export { getForumPostReadStates };
 export const getForumPostReadStatesById = function getForumPostReadStatesById(channelId) {
@@ -43,7 +44,7 @@ export const getForumPostReadStatesById = function getForumPostReadStatesById(ch
   let tmp5;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [__exportStarResult1, closure_3, closure_4];
+    const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose, closure_4];
     tmp = items;
   }
   [obj, obj2, tmp5] = tmp;
@@ -60,9 +61,9 @@ export const getForumPostReadStatesById = function getForumPostReadStatesById(ch
     return tmp8;
   }
 };
-export const getForumTimestampFormatter = function getForumTimestampFormatter(arg0, DURATION_AGO) {
+export const getForumTimestampFormatter = function getForumTimestampFormatter(closure_1, DURATION_AGO) {
   if (DURATION_AGO === ForumTimestampFormats.POSTED_DURATION_AGO) {
-    if (arg0 === DURATION_AGO(dependencyMap[6]).ThreadSortOrder.CREATION_DATE) {
+    if (closure_1 === require(1357) /* set */.ThreadSortOrder.CREATION_DATE) {
       return getCreationDefaultFormatter;
     }
   }
@@ -81,7 +82,7 @@ export const canDisplayPostUnreadMessageCount = function canDisplayPostUnreadMes
   return hasTrackedUnreadResult;
 };
 export const isForumPostPinned = function isForumPostPinned(id) {
-  const channel = channel.getChannel(id);
+  channel = channel.getChannel(id);
   let hasFlagResult;
   if (null != channel) {
     hasFlagResult = channel.hasFlag(ChannelFlags.PINNED);

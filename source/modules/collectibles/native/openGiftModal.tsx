@@ -1,12 +1,11 @@
-// Module ID: 8767
-// Function ID: 69305
+// Module ID: 8774
+// Function ID: 69346
 // Name: ShopGiftModalKey
-// Dependencies: []
+// Dependencies: [4337, 8775, 1934, 2]
 // Exports: closeShopGiftModal, openShopGiftModal
 
-// Module 8767 (ShopGiftModalKey)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/collectibles/native/openGiftModal.tsx");
+// Module 8774 (ShopGiftModalKey)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/collectibles/native/openGiftModal.tsx");
 
 export const ShopGiftModalKey = "Shop Gift Modal";
 export const openShopGiftModal = function openShopGiftModal(arg0) {
@@ -17,10 +16,10 @@ export const openShopGiftModal = function openShopGiftModal(arg0) {
   let onGiftModalDismiss;
   let skuId;
   ({ navigationParams, skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin } = arg0);
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(4337);
   obj = { skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin };
-  obj.pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), obj, "Shop Gift Modal", navigationParams);
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(8775, dependencyMap.paths), obj, "Shop Gift Modal", navigationParams);
 };
 export const closeShopGiftModal = function closeShopGiftModal() {
-  importDefault(dependencyMap[0]).popWithKey("Shop Gift Modal");
+  importDefault(4337).popWithKey("Shop Gift Modal");
 };

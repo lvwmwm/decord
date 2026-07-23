@@ -1,50 +1,51 @@
-// Module ID: 9321
-// Function ID: 72821
+// Module ID: 9328
+// Function ID: 72862
 // Name: EmojiPickerActionSheet
-// Dependencies: [1849, 4988, 4991, 9326, 2, 653, 3963, 686, 507, 2, 4988, 1852, 624, 2, 31, 4992, 2, 57, 31, 4988, 682, 1331, 2, 31, 1345, 33, 4126, 689, 4124, 1212, 3944, 1334, 3801, 7650, 3829, 9332, 2, 31]
+// Dependencies: [57, 31, 27, 1849, 9329, 653, 1852, 33, 4130, 689, 7006, 3991, 9330, 5160, 1557, 477, 5464, 5484, 9337, 4098, 9326, 9338, 4126, 1212, 5772, 9340, 3776, 9316, 1934, 4099, 4100, 9342, 5187, 4001, 9343, 9384, 9406, 2]
 // Exports: default
 
-// Module 9321 (EmojiPickerActionSheet)
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import { View } from "_isNativeReflectConstruct";
-import fetchTopEmojis from "fetchTopEmojis";
-import { EmojiPickerSource } from "result2";
-import { EXPRESSION_FOOTER_HEIGHT } from "ME";
-import { EmojiIntention } from "isPseudoGuildId";
-import dispatcher from "dispatcher";
+// Module 9328 (EmojiPickerActionSheet)
+import _slicedToArray from "_slicedToArray";
+import PortalKeyboardFooterIOS from "PortalKeyboardFooterIOS";
+import { View } from "items";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_31 from "module_31";
+import { EmojiPickerSource } from "IMAGE_SIZE";
+import { EXPRESSION_FOOTER_HEIGHT } from "ME";
+import { EmojiIntention } from "set";
+import jsxProd from "Portal";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ jsx: closure_10, jsxs: closure_11 } = dispatcher);
-_isNativeReflectConstruct = { header: { flexDirection: "column" } };
-_isNativeReflectConstruct = { marginBottom: -require("result2").space.PX_16 };
-_isNativeReflectConstruct.searchContainer = _isNativeReflectConstruct;
-_isNativeReflectConstruct.content = { paddingHorizontal: require("result2").space.PX_8, backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-const obj1 = { paddingHorizontal: require("result2").space.PX_8, backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-_isNativeReflectConstruct.background = { backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-const obj3 = { <string:3814666730>: 8, <string:1280564396>: 18, marginBottom: require("result2").space.PX_16 };
-_isNativeReflectConstruct.headerText = obj3;
-const obj2 = { backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-_isNativeReflectConstruct.headerSpacer = { marginTop: require("result2").space.PX_8 };
-const obj4 = { marginTop: require("result2").space.PX_8 };
-_isNativeReflectConstruct.burstReaction = { borderColor: require("result2").colors.BACKGROUND_BRAND };
-_isNativeReflectConstruct = _isNativeReflectConstruct.createStyles(_isNativeReflectConstruct);
-const result = module_31.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerActionSheet.tsx");
+let closure_10;
+let closure_11;
+const require = arg1;
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { header: { flexDirection: "column" } };
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", marginBottom: -require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.searchContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.content = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.background = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+let obj3 = { flexDirection: "column", alignItems: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.headerText = obj3;
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.headerSpacer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.burstReaction = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj5 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerActionSheet.tsx");
 
 export default function EmojiPickerActionSheet(onClose) {
   let analyticsObject;
+  let c5;
   let channel;
   let guildId;
   let messageId;
   let onPressEmoji;
   let tmp3;
   onClose = onClose.onClose;
-  const arg1 = onClose;
   ({ channel, guildId, onPressEmoji } = onClose);
-  const importDefault = onPressEmoji;
   const pickerIntention = onClose.pickerIntention;
-  const dependencyMap = pickerIntention;
   let flag = onClose.autoFocus;
   if (flag === undefined) {
     flag = true;
@@ -54,50 +55,47 @@ export default function EmojiPickerActionSheet(onClose) {
     flag2 = true;
   }
   const source = onClose.source;
-  let callback = source;
   let React;
-  let closure_5;
-  let fetchTopEmojis;
-  let EmojiPickerSource;
-  let EXPRESSION_FOOTER_HEIGHT;
+  c5 = undefined;
+  let c6;
+  let bottom2;
+  let handleTextChange;
   let closure_9;
-  let callback2;
+  let callback;
   let memo1;
   ({ analyticsObject, messageId } = onClose);
-  const tmp = _isNativeReflectConstruct();
+  let tmp = _createForOfIteratorHelperLoose();
   React = tmp;
-  [tmp3, closure_5] = callback(React.useState(arg1(dependencyMap[10]).ReactionTypes.NORMAL), 2);
-  const tmp4 = tmp3 === arg1(dependencyMap[10]).ReactionTypes.BURST;
-  fetchTopEmojis = tmp4;
+  [tmp3, c5] = source(React.useState(onClose(pickerIntention[10]).ReactionTypes.NORMAL), 2);
+  const tmp4 = tmp3 === onClose(pickerIntention[10]).ReactionTypes.BURST;
+  c6 = tmp4;
   const ref = React.useRef(null);
-  let obj = arg1(dependencyMap[11]);
+  let obj = onClose(pickerIntention[11]);
   const sharedValue = obj.useSharedValue(0);
-  let obj1 = arg1(dependencyMap[12]);
+  let obj1 = onClose(pickerIntention[12]);
   const emojiCategories = obj1.useEmojiCategories(pickerIntention, channel, guildId);
-  let bottom = importDefault(dependencyMap[13])().insets.bottom;
-  const bottom2 = importDefault(dependencyMap[14])().bottom;
-  EmojiPickerSource = bottom2;
-  let obj2 = arg1(dependencyMap[15]);
+  let bottom = onPressEmoji(pickerIntention[13])().insets.bottom;
+  bottom2 = onPressEmoji(pickerIntention[14])().bottom;
+  let obj2 = onClose(pickerIntention[15]);
   if (obj2.isAndroid()) {
     bottom = bottom2;
   }
-  const sum = bottom + EXPRESSION_FOOTER_HEIGHT;
-  const sum1 = sum + importDefault(dependencyMap[9]).space.PX_16;
-  const tmp2 = callback(React.useState(arg1(dependencyMap[10]).ReactionTypes.NORMAL), 2);
-  const tmp11 = importDefault(dependencyMap[18])(channel, sharedValue, pickerIntention);
-  const handleTextChange = tmp11.handleTextChange;
-  EXPRESSION_FOOTER_HEIGHT = handleTextChange;
-  const items = [onClose];
-  const items1 = [onPressEmoji, tmp4, pickerIntention, source];
+  const sum = bottom + handleTextChange;
+  const sum1 = sum + onPressEmoji(pickerIntention[9]).space.PX_16;
+  const tmp2 = source(React.useState(onClose(pickerIntention[10]).ReactionTypes.NORMAL), 2);
+  const tmp11 = onPressEmoji(pickerIntention[18])(channel, sharedValue, pickerIntention);
+  handleTextChange = tmp11.handleTextChange;
+  let items = [onClose];
+  let items1 = [onPressEmoji, tmp4, pickerIntention, source];
   callback = React.useCallback(() => {
     if (null != onClose) {
       onClose();
     }
   }, items);
-  const items2 = [tmp4, bottom2];
+  let items2 = [tmp4, bottom2];
   const callback1 = React.useCallback((emoji) => {
     if (null != onPressEmoji) {
-      onPressEmoji(emoji, tmp4);
+      onPressEmoji(emoji, c6);
     }
     onPressEmoji(pickerIntention[19]).hideActionSheet(onClose(pickerIntention[20]).EMOJI_PICKER_ACTION_SHEET_KEY);
     let tmp5 = pickerIntention !== closure_9.REACTION;
@@ -105,7 +103,7 @@ export default function EmojiPickerActionSheet(onClose) {
       tmp5 = source === bottom2.NOTIFICATION;
     }
     if (!tmp5) {
-      tmp5 = tmp4;
+      tmp5 = c6;
     }
     if (!tmp5) {
       const result = onClose(pickerIntention[21]).maybeShowDoubleTapReminderToast(emoji);
@@ -115,22 +113,22 @@ export default function EmojiPickerActionSheet(onClose) {
   const memo = React.useMemo(() => {
     const obj = {};
     let num = 0;
-    if (tmp4) {
+    if (c6) {
       num = 2;
     }
     obj.marginLeft = num;
     let num2 = 0;
-    if (tmp4) {
+    if (c6) {
       num2 = 2;
     }
     obj.marginRight = num2;
     let num3 = 2;
     let num4 = 2;
-    if (tmp4) {
+    if (c6) {
       num4 = 0;
     }
     obj.paddingLeft = num4;
-    if (tmp4) {
+    if (c6) {
       num3 = 0;
     }
     obj.paddingRight = num3;
@@ -138,8 +136,8 @@ export default function EmojiPickerActionSheet(onClose) {
     return obj;
   }, items2);
   closure_9 = React.useRef(null);
-  callback2 = React.useRef(flag);
-  callback2 = React.useCallback(() => {
+  callback = React.useRef(flag);
+  const callback2 = React.useCallback(() => {
     if (ref.current) {
       const current = closure_9.current;
       if (null != current) {
@@ -158,33 +156,33 @@ export default function EmojiPickerActionSheet(onClose) {
   memo1 = React.useMemo(() => {
     let tmp = null;
     if (pickerIntention === closure_9.DEFAULT_REACT_EMOJI) {
-      let obj = { style: tmp.headerText };
-      obj = { cachedAt: true, edpbxy: true };
+      let obj = { style: _undefined.headerText };
+      obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
       const intl = onClose(pickerIntention[23]).intl;
       obj.children = intl.string(onClose(pickerIntention[23]).t.wHTk2C);
       const items = [ref(onClose(pickerIntention[22]).Text, obj), ];
-      obj = { cachedAt: "y", edpbxy: "isArray" };
+      obj = { variant: "text-sm/medium", color: "text-muted" };
       const intl2 = onClose(pickerIntention[23]).intl;
       obj.children = intl2.string(onClose(pickerIntention[23]).t.VrWSNn);
       items[1] = ref(onClose(pickerIntention[22]).Text, obj);
       obj.children = items;
-      tmp = memo1(closure_5, obj);
+      tmp = memo1(c5, obj);
     }
     return tmp;
   }, items3);
   const items4 = [tmp, handleTextChange, tmp4, pickerIntention, memo1, source];
   const memo2 = React.useMemo(() => {
-    let obj = { style: tmp.header };
+    let obj = { style: _undefined.header };
     const items = [memo1, ];
     obj = {};
-    const items1 = [memo1.searchContainer, ];
+    const items1 = [_undefined.searchContainer, ];
     let headerSpacer = null;
     if (null === memo1) {
-      headerSpacer = tmp.headerSpacer;
+      headerSpacer = _undefined.headerSpacer;
     }
     items1[1] = headerSpacer;
     obj.style = items1;
-    obj = { 0: 40, 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", ref: closure_9, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, tmp4) };
+    obj = { ref: closure_9, size: "md", isRound: true, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, c6) };
     const items2 = [ref(onClose(pickerIntention[24]).SearchField, obj), ];
     let tmp5 = pickerIntention === closure_9.REACTION;
     if (tmp5) {
@@ -194,49 +192,49 @@ export default function EmojiPickerActionSheet(onClose) {
       const obj1 = {
         onPress() {
             if (obj.isPremium(currentUser.getCurrentUser())) {
-              const result = callback(paths[29]).triggerHapticFeedback(callback2(paths[30]).IMPACT_LIGHT);
-              const ReactionTypes = callback(paths[10]).ReactionTypes;
-              closure_5(currentUser ? ReactionTypes.NORMAL : ReactionTypes.BURST);
+              const result = onClose(pickerIntention[29]).triggerHapticFeedback(onPressEmoji(pickerIntention[30]).IMPACT_LIGHT);
+              const ReactionTypes = onClose(pickerIntention[10]).ReactionTypes;
+              outer1_5(outer1_6 ? ReactionTypes.NORMAL : ReactionTypes.BURST);
             } else {
-              return callback2(paths[19]).openLazy(callback(paths[28])(paths[27], paths.paths), "SuperReactionUpsellActionSheet");
+              return onPressEmoji(pickerIntention[19]).openLazy(onClose(pickerIntention[28])(pickerIntention[27], pickerIntention.paths), "SuperReactionUpsellActionSheet");
             }
-            const obj = callback(paths[26]);
+            obj = onClose(pickerIntention[26]);
           },
-        isActive: tmp4
+        isActive: c6
       };
       tmp5 = ref(onPressEmoji(pickerIntention[25]), obj1);
     }
     items2[1] = tmp5;
     obj.children = items2;
-    items[1] = memo1(closure_5, obj);
+    items[1] = memo1(c5, obj);
     obj.children = items;
-    return memo1(closure_5, obj);
+    return memo1(c5, obj);
   }, items4);
   if (tmp4) {
-    const items5 = [tmp.burstReaction.borderColor, importDefault(dependencyMap[9]).unsafe_rawColors.TRANSPARENT];
+    const items5 = [tmp.burstReaction.borderColor, onPressEmoji(pickerIntention[9]).unsafe_rawColors.TRANSPARENT];
     let items6 = items5;
   } else {
-    items6 = [importDefault(dependencyMap[9]).unsafe_rawColors.TRANSPARENT, importDefault(dependencyMap[9]).unsafe_rawColors.TRANSPARENT];
+    items6 = [onPressEmoji(pickerIntention[9]).unsafe_rawColors.TRANSPARENT, onPressEmoji(pickerIntention[9]).unsafe_rawColors.TRANSPARENT];
   }
-  let obj3 = arg1(dependencyMap[11]);
+  let obj3 = onClose(pickerIntention[11]);
   const sharedValue1 = obj3.useSharedValue(-1);
   const ref1 = React.useRef(null);
-  obj = { value: importDefault(dependencyMap[16])(importDefault(dependencyMap[17]).EMOJI_PICKER).analyticsLocations };
-  const tmp10 = importDefault(dependencyMap[16]);
+  obj = { value: onPressEmoji(pickerIntention[16])(onPressEmoji(pickerIntention[17]).EMOJI_PICKER).analyticsLocations };
+  const tmp10 = onPressEmoji(pickerIntention[16]);
   const tmp25 = memo1;
-  let isIOSResult = arg1(dependencyMap[15]).isIOS();
+  let isIOSResult = onClose(pickerIntention[15]).isIOS();
   if (isIOSResult) {
-    obj = { type: "<string:4143972934>", text: "<string:1358955199>", description: "<string:1091694070>", animatedSheetIndex: sharedValue1 };
-    isIOSResult = callback2(importDefault(dependencyMap[31]), obj);
+    obj = { portalHostName: "EmojiPickerActionSheet", animatedSheetIndex: sharedValue1, followSystemKeyboard: true };
+    isIOSResult = callback(onPressEmoji(pickerIntention[31]), obj);
   }
   const items7 = [isIOSResult, ];
   obj1 = { backgroundStyles: tmp.background, ref: ref1, scrollable: true, header: memo2 };
-  const obj6 = arg1(dependencyMap[15]);
+  const obj6 = onClose(pickerIntention[15]);
   const tmp30 = memo1;
   let tmp31;
   if (obj9.isAndroid()) {
     obj2 = { name: "EmojiPickerActionSheet" };
-    tmp31 = callback2(arg1(dependencyMap[33]).PortalHost, obj2);
+    tmp31 = callback(onClose(pickerIntention[33]).PortalHost, obj2);
   }
   obj1.footer = tmp31;
   obj1.startExpanded = flag2;
@@ -247,8 +245,8 @@ export default function EmojiPickerActionSheet(onClose) {
   const items8 = [tmp.content, { marginBottom: sum }];
   obj1.contentStyles = items8;
   obj3 = { bottomSheetIndex: sharedValue1, onPressEmoji: callback1 };
-  const obj9 = arg1(dependencyMap[15]);
-  obj3.onLongPressEmoji = arg1(dependencyMap[35]).openEmojiActionSheet;
+  obj9 = onClose(pickerIntention[15]);
+  obj3.onLongPressEmoji = onClose(pickerIntention[35]).openEmojiActionSheet;
   obj3.emojiPickerListRef = ref;
   obj3.categories = emojiCategories;
   obj3.categoryIndexActive = sharedValue;
@@ -260,9 +258,9 @@ export default function EmojiPickerActionSheet(onClose) {
   obj3.insetBottom = sum1;
   obj3.analyticsObject = analyticsObject;
   obj3.messageId = messageId;
-  const items9 = [callback2(importDefault(dependencyMap[34]), obj3), callback2(importDefault(dependencyMap[36]), { bottomSheetRef: ref1, bottomSheetIndex: sharedValue1, style: memo, categories: emojiCategories, categoryIndexActive: sharedValue, emojiPickerListRef: ref, portalHostName: "EmojiPickerActionSheet", isSearching: null != tmp11.searchResults, onClearSearch: callback3 })];
+  const items9 = [callback(onPressEmoji(pickerIntention[34]), obj3), callback(onPressEmoji(pickerIntention[36]), { bottomSheetRef: ref1, bottomSheetIndex: sharedValue1, style: memo, categories: emojiCategories, categoryIndexActive: sharedValue, emojiPickerListRef: ref, portalHostName: "EmojiPickerActionSheet", isSearching: null != tmp11.searchResults, onClearSearch: callback3 })];
   obj1.children = items9;
-  items7[1] = tmp30(arg1(dependencyMap[32]).BottomSheet, obj1);
+  items7[1] = tmp30(onClose(pickerIntention[32]).BottomSheet, obj1);
   obj.children = items7;
-  return tmp25(arg1(dependencyMap[16]).AnalyticsLocationProvider, obj);
+  return tmp25(onClose(pickerIntention[16]).AnalyticsLocationProvider, obj);
 };

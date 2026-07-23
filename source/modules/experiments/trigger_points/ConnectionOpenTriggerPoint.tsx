@@ -1,12 +1,11 @@
-// Module ID: 12503
-// Function ID: 95820
+// Module ID: 12617
+// Function ID: 97976
 // Name: commonTriggerPointConfiguration
-// Dependencies: []
+// Dependencies: [4045, 12618, 7158, 2]
 
-// Module 12503 (commonTriggerPointConfiguration)
-const items = [require(dependencyMap[1]).HotwheelsActivityFeedNvidiaExperiment];
-const commonTriggerPointConfiguration = new require(dependencyMap[2]).CommonTriggerPointConfiguration(items, require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, { location: "app open" });
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/experiments/trigger_points/ConnectionOpenTriggerPoint.tsx");
+// Module 12617 (commonTriggerPointConfiguration)
+const items = [require("apexExperiment").HotwheelsActivityFeedNvidiaExperiment];
+const commonTriggerPointConfiguration = new require("CommonTriggerPointConfiguration").CommonTriggerPointConfiguration(items, require("ExperimentBuckets").CommonTriggerPoints.CONNECTION_OPEN, { location: "app open" });
+const result = require("CommonTriggerPointConfiguration").fileFinishedImporting("modules/experiments/trigger_points/ConnectionOpenTriggerPoint.tsx");
 
 export const ConnectionOpenTriggerPoint = commonTriggerPointConfiguration;

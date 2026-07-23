@@ -1,10 +1,10 @@
-// Module ID: 12999
-// Function ID: 98903
-// Dependencies: []
+// Module ID: 13113
+// Function ID: 101059
+// Name: set
+// Dependencies: [2]
 
-// Module 12999
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/tracking/TrackingConsentUtils.tsx");
+// Module 13113 (set)
+const result = require("set").fileFinishedImporting("modules/tracking/TrackingConsentUtils.tsx");
 
 export default {
   canUseInstallationId() {

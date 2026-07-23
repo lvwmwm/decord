@@ -1,40 +1,40 @@
-// Module ID: 9175
-// Function ID: 71871
+// Module ID: 9182
+// Function ID: 71912
 // Name: closeModal
-// Dependencies: []
+// Dependencies: [57, 31, 1849, 9183, 653, 33, 9181, 480, 5087, 9184, 9187, 9188, 9190, 9193, 9228, 9233, 9235, 566, 5450, 5519, 1212, 2]
 // Exports: default
 
-// Module 9175 (closeModal)
+// Module 9182 (closeModal)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { resetChangeEmailStore } from "setChangeEmailError";
+import { VerificationModalScenes } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function closeModal() {
   resetChangeEmailStore();
-  importDefault(dependencyMap[6]).close();
+  importDefault(9181).close();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const resetChangeEmailStore = arg1(dependencyMap[3]).resetChangeEmailStore;
-const VerificationModalScenes = arg1(dependencyMap[4]).VerificationModalScenes;
-const jsx = arg1(dependencyMap[5]).jsx;
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
 
 export default function EmailVerificationModal(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  const arg1 = isChangeEmail;
   let importDefault;
-  let dependencyMap;
+  let first;
   let callback;
-  let obj = arg1(dependencyMap[17]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj = isChangeEmail(first[17]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
   let verified;
   if (null != stateFromStores) {
     verified = stateFromStores.verified;
   }
-  const tmp2Result = importDefault(dependencyMap[18])(null != verified && verified);
+  const tmp2Result = importDefault(first[18])(null != verified && verified);
   importDefault = tmp2Result;
   const tmp6 = callback(React.useState(), 2);
-  const first = tmp6[0];
-  dependencyMap = first;
+  first = tmp6[0];
   callback = tmp6[1];
   const items1 = [first, isChangeEmail, tmp2Result];
   if (!isChangeEmail) {
@@ -44,9 +44,9 @@ export default function EmailVerificationModal(isChangeEmail) {
     }
     if (null != email) {
       obj = { screens: tmp8, initialRouteName: VerificationModalScenes.RESEND_EMAIL };
-      const intl = arg1(dependencyMap[20]).intl;
-      obj.headerBackTitle = intl.string(arg1(dependencyMap[20]).t.13/7kX);
-      return jsx(arg1(dependencyMap[19]).Navigator, obj);
+      const intl = isChangeEmail(first[20]).intl;
+      obj.headerBackTitle = intl.string(isChangeEmail(first[20]).t["13/7kX"]);
+      return jsx(isChangeEmail(first[19]).Navigator, { screens: tmp8, initialRouteName: VerificationModalScenes.RESEND_EMAIL });
     }
   }
   if (null == stateFromStores) {

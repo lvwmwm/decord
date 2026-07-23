@@ -1,56 +1,56 @@
-// Module ID: 7875
-// Function ID: 62709
+// Module ID: 7881
+// Function ID: 62746
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: []
+// Dependencies: [57, 31, 653, 1828, 4015, 2]
 // Exports: default
 
-// Module 7875 (useAvatarDecorationIfNotExpired)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const MAX_TIMEOUT_MS = arg1(dependencyMap[2]).MAX_TIMEOUT_MS;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationIfNotExpired.tsx");
+// Module 7881 (useAvatarDecorationIfNotExpired)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { MAX_TIMEOUT_MS } from "ME";
+
+const require = arg1;
+let result = require("ME").fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationIfNotExpired.tsx");
 
 export default function useAvatarDecorationIfNotExpired(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   let tmp;
   const tmp2 = callback(React.useState(false), 2);
   const first = tmp2[0];
-  const dependencyMap = first;
-  const callback = tmp2[1];
-  const React = React.useRef(null);
+  callback = tmp2[1];
+  React = React.useRef(null);
   const items = [arg0];
   const effect = React.useEffect(() => {
-    function maybeScheduleExpirationCheck(arg0) {
+    function maybeScheduleExpirationCheck() {
       if (null != maybeScheduleExpirationCheck) {
         if ("expiresAt" in maybeScheduleExpirationCheck) {
           if (null != maybeScheduleExpirationCheck.expiresAt) {
-            const result = maybeScheduleExpirationCheck(closure_1[3]).isAvatarDecorationExpired(maybeScheduleExpirationCheck);
-            callback(result);
+            const result = maybeScheduleExpirationCheck(first[3]).isAvatarDecorationExpired(maybeScheduleExpirationCheck);
+            outer1_2(result);
             const _Date = Date;
             const result1 = 1000 * maybeScheduleExpirationCheck.expiresAt;
             const diff = result1 - Date.now();
             if (!result) {
               if (diff > 0) {
-                const Timeout = maybeScheduleExpirationCheck(closure_1[4]).Timeout;
+                const Timeout = maybeScheduleExpirationCheck(first[4]).Timeout;
                 const prototype = Timeout.prototype;
                 const timeout = new Timeout();
                 const _Math = Math;
-                timeout.start(Math.min(closure_4, diff), () => {
-                  callback();
+                timeout.start(Math.min(outer2_4, diff), () => {
+                  outer1_0();
                 });
-                closure_3.current = timeout;
+                outer1_3.current = timeout;
               }
             }
-            const obj = maybeScheduleExpirationCheck(closure_1[3]);
+            const obj = maybeScheduleExpirationCheck(first[3]);
           }
         }
       }
-      callback(false);
+      outer1_2(false);
     }
-    const arg0 = maybeScheduleExpirationCheck;
-    const result = maybeScheduleExpirationCheck();
+    let result = maybeScheduleExpirationCheck();
     return () => {
-      const current = ref.current;
+      const current = outer1_3.current;
       let stopResult;
       if (null != current) {
         stopResult = current.stop();

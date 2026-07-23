@@ -1,13 +1,13 @@
-// Module ID: 6019
-// Function ID: 49961
+// Module ID: 6024
+// Function ID: 49990
 // Name: DisplayNameStylesV2AbstractUI
-// Dependencies: []
+// Dependencies: [33, 5085, 6025, 2]
 // Exports: DisplayNameStylesV2AbstractUI
 
-// Module 6019 (DisplayNameStylesV2AbstractUI)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesV2AbstractUI.native.tsx");
+// Module 6024 (DisplayNameStylesV2AbstractUI)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesV2AbstractUI.native.tsx");
 
 export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2AbstractUI(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2Abstrac
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6025) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const DisplayNameStylesV2AbstractUI = function DisplayNameStylesV2Abstrac
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

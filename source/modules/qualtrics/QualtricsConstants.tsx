@@ -1,11 +1,10 @@
-// Module ID: 9274
-// Function ID: 72497
+// Module ID: 9281
+// Function ID: 72538
 // Name: QuestionTypeEnum
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 9274 (QuestionTypeEnum)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/qualtrics/QualtricsConstants.tsx");
+// Module 9281 (QuestionTypeEnum)
+const result = require("set").fileFinishedImporting("modules/qualtrics/QualtricsConstants.tsx");
 
 export const QuestionTypeEnum = { MULTIPLE_CHOICE: "MC", TEXT_ENTRY: "TE", DESCRIPTIVE_BLOCK: "DB" };
 export const QuestionSelectorEnum = { SINGLE_ANSWER: "SAVR", MULTIPLE_ANSWER: "MAVR", DROPDOWN: "DL", SINGLE_LINE: "SL", MULTI_LINE: "ML", ESSAY: "ESTB", FORM: "FORM", PASSWORD: "PW", LIKERT: "Likert", BIPOLAR: "Bipolar", PROFILE: "Profile", MAXDIFF: "MaxDiff", DRAG_AND_DROP: "DND", RANK: "Rank", TEXT_BLOCK: "TB" };

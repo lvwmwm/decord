@@ -1,22 +1,30 @@
-// Module ID: 10325
-// Function ID: 79722
+// Module ID: 10338
+// Function ID: 79800
 // Name: BurstReactionButton
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 10339, 4660, 1212, 4126, 7006, 9315, 10350, 3803, 9431, 665, 1392, 3769, 5151, 10352, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10325 (BurstReactionButton)
+// Module 10338 (BurstReactionButton)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 class BurstReactionButton {
   constructor(arg0) {
     ({ colors, emoji, onPress, onLongPress, containerStyle, count, emojiSize, selected, animate, animateCount, accessible } = global);
-    obj = arg1(dependencyMap[13]);
+    obj = require("useEmojiColorPalette");
     emojiColorPalette = obj.useEmojiColorPalette(colors);
     obj = {};
     str = "";
     if (null != emojiColorPalette) {
-      tmp2 = arg1;
-      tmp3 = dependencyMap;
+      tmp2 = closure_0;
+      tmp3 = closure_2;
       num = 14;
-      obj3 = arg1(dependencyMap[14]);
+      obj3 = require("pad2");
       backgroundColor = undefined;
       if (null != emojiColorPalette) {
         backgroundColor = emojiColorPalette.backgroundColor;
@@ -65,13 +73,13 @@ class ReactionButton {
     if (disabled === undefined) {
       disabled = false;
     }
-    tmp = closure_7();
+    tmp = c7();
     emojiURL = undefined;
     if (null != emoji.id) {
-      tmp3 = importDefault;
-      tmp4 = dependencyMap;
+      tmp3 = closure_1;
+      tmp4 = closure_2;
       num = 15;
-      obj = importDefault(dependencyMap[15]);
+      obj = require("getAvatarURL");
       obj = {};
       obj.id = emoji.id;
       if (animate) {
@@ -91,7 +99,7 @@ class ReactionButton {
     items[0] = tmp.container;
     items[1] = containerStyle;
     items[2] = selected;
-    obj4 = arg1(dependencyMap[16]);
+    obj4 = require("getReactionEmojiName");
     obj1.accessibilityLabel = obj4.getAccessibleEmojiDisplayName(selected, count, emoji, false);
     obj1.onPress = onPress;
     obj1.onLongPress = onLongPress;
@@ -100,7 +108,7 @@ class ReactionButton {
     obj2.src = emojiURL;
     obj2.name = emoji.name;
     items1 = [, ];
-    items1[0] = jsx(importDefault(dependencyMap[17]), obj2);
+    items1[0] = jsx(require("Emoji"), obj2);
     tmp7 = null != count;
     if (tmp7) {
       num2 = 0;
@@ -112,36 +120,32 @@ class ReactionButton {
       obj3 = {};
       obj3.style = tmp.countContainer;
       tmp10 = jsx;
-      tmp11 = importDefault;
-      tmp12 = dependencyMap;
+      tmp11 = closure_1;
+      tmp12 = closure_2;
       num3 = 18;
       obj4 = {};
       obj4.textStyle = textStyle;
       obj4.count = count;
       obj4.animate = animateCount;
-      obj3.children = jsx(importDefault(dependencyMap[18]), obj4);
+      obj3.children = jsx(require("getStartPosition"), obj4);
       tmp7 = jsx(View, obj3);
     }
     items1[1] = tmp7;
     obj1.children = items1;
-    return tmp6(arg1(dependencyMap[6]).PressableOpacity, obj1);
+    return tmp6(require("PressableBase").PressableOpacity, obj1);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsxs: closure_5, jsx: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_DEFAULT };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj.selected = { borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_REACTED_DEFAULT };
-obj.textEmoji = { fontSize: 12 };
-obj.imageEmoji = { hideWhenScrolling: null, autoCapitalize: null };
-obj.countContainer = { paddingStart: 4 };
-let closure_7 = obj.createStyles(obj);
-const obj1 = { borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_REACTED_DEFAULT };
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/forums/native/posts/reactions/ForumPostReactionButton.tsx");
+({ jsxs: closure_5, jsx: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BORDER_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.selected = { borderColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BACKGROUND_REACTED_DEFAULT };
+_createForOfIteratorHelperLoose.textEmoji = { fontSize: 12 };
+_createForOfIteratorHelperLoose.imageEmoji = { height: 16, width: 16 };
+_createForOfIteratorHelperLoose.countContainer = { paddingStart: 4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REACTION_BACKGROUND_REACTED_DEFAULT };
+const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/reactions/ForumPostReactionButton.tsx");
 
 export const DEFAULT_EMOJI_SIZE = 14;
 export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
@@ -149,15 +153,17 @@ export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
   let count;
   let threadId;
   ({ count, threadId, containerStyle } = arg0);
-  const obj = { accessible: true };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[7]).t.N8hbZB);
-  const items = [callback3().container, containerStyle];
+  let obj = { accessible: true };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.N8hbZB);
+  const items = [_createForOfIteratorHelperLoose().container, containerStyle];
   obj.style = items;
-  obj.onPress = importDefault(dependencyMap[5])({ threadId }).onTapReactionCount;
-  const items1 = [null, count];
-  obj.children = callback(arg1(dependencyMap[8]).Text, { children: items1 });
-  return callback2(arg1(dependencyMap[6]).PressableOpacity, obj);
+  obj.onPress = importDefault(10339)({ threadId }).onTapReactionCount;
+  obj = { variant: "heading-sm/medium", color: "interactive-text-default" };
+  const items1 = ["+", count];
+  obj.children = items1;
+  obj.children = callback(require(4126) /* Text */.Text, obj);
+  return callback2(require(4660) /* PressableBase */.PressableOpacity, obj);
 };
 export const AddReactionButton = function AddReactionButton(reactionType) {
   let containerStyle;
@@ -165,16 +171,16 @@ export const AddReactionButton = function AddReactionButton(reactionType) {
   let NORMAL = reactionType.reactionType;
   ({ threadId, containerStyle } = reactionType);
   if (NORMAL === undefined) {
-    NORMAL = arg1(dependencyMap[9]).ReactionTypes.NORMAL;
+    NORMAL = require(7006) /* ReactionTypes */.ReactionTypes.NORMAL;
   }
   let obj = { threadId, reactionType: NORMAL };
   obj = { style: items, accessible: true };
-  const items = [callback3().container, containerStyle];
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[7]).t.lfIHs4);
-  obj.onPress = importDefault(dependencyMap[5])(obj).onTapAddReaction;
-  obj.children = callback2(arg1(dependencyMap[10]).ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
-  return callback2(arg1(dependencyMap[6]).PressableOpacity, obj);
+  items = [_createForOfIteratorHelperLoose().container, containerStyle];
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lfIHs4);
+  obj.onPress = importDefault(10339)(obj).onTapAddReaction;
+  obj.children = callback2(require(9315) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
+  return callback2(require(4660) /* PressableBase */.PressableOpacity, obj);
 };
 export const ForumPostReactionButton = function ForumPostReactionButton(emojiSize) {
   let animateCount;
@@ -185,35 +191,30 @@ export const ForumPostReactionButton = function ForumPostReactionButton(emojiSiz
   let textStyle;
   let thread;
   ({ thread, reaction } = emojiSize);
-  const arg1 = reaction;
   ({ animateCount, containerStyle, textStyle, locationAnalyticsObject } = emojiSize);
-  const importDefault = locationAnalyticsObject;
   let num = emojiSize.emojiSize;
   if (num === undefined) {
     num = 14;
   }
-  let dependencyMap;
-  let React;
-  let View;
+  let disableReactionCreates;
+  let disableReactionUpdates;
+  let onTapReaction;
   let onLongTapReaction;
-  const tmp = importDefault(dependencyMap[11])(thread);
-  const disableReactionCreates = tmp.disableReactionCreates;
-  dependencyMap = disableReactionCreates;
-  const disableReactionUpdates = tmp.disableReactionUpdates;
-  React = disableReactionUpdates;
+  const tmp = locationAnalyticsObject(disableReactionCreates[11])(thread);
+  disableReactionCreates = tmp.disableReactionCreates;
+  disableReactionUpdates = tmp.disableReactionUpdates;
   let obj = { threadId: thread.id };
-  const tmp2 = importDefault(dependencyMap[5])(obj);
-  const onTapReaction = tmp2.onTapReaction;
-  View = onTapReaction;
+  const tmp2 = locationAnalyticsObject(disableReactionCreates[5])(obj);
+  onTapReaction = tmp2.onTapReaction;
   onLongTapReaction = tmp2.onLongTapReaction;
-  const AnimateEmoji = arg1(dependencyMap[12]).AnimateEmoji;
+  const AnimateEmoji = reaction(disableReactionCreates[12]).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   const items = [disableReactionCreates, disableReactionUpdates, locationAnalyticsObject, onTapReaction, reaction];
-  const callback = React.useCallback(() => {
+  const callback = disableReactionUpdates.useCallback(() => {
     onTapReaction({ reaction, disableReactionCreates, disableReactionUpdates, locationAnalyticsObject });
   }, items);
   const items1 = [onLongTapReaction, reaction];
-  const callback1 = React.useCallback(() => {
+  const callback1 = disableReactionUpdates.useCallback(() => {
     onLongTapReaction(reaction);
   }, items1);
   if (reaction.burst_count > 0) {

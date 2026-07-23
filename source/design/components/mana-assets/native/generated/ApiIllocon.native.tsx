@@ -1,13 +1,13 @@
-// Module ID: 5853
-// Function ID: 49712
+// Module ID: 5858
+// Function ID: 49741
 // Name: ApiIllocon
-// Dependencies: [131072, 561250304, 3657433088, 4261412883]
+// Dependencies: [33, 5085, 5859, 2]
 // Exports: ApiIllocon
 
-// Module 5853 (ApiIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ApiIllocon.native.tsx");
+// Module 5858 (ApiIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ApiIllocon.native.tsx");
 
 export const ApiIllocon = function ApiIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const ApiIllocon = function ApiIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5859) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const ApiIllocon = function ApiIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

@@ -1,9 +1,18 @@
-// Module ID: 6756
-// Function ID: 52905
+// Module ID: 6761
+// Function ID: 52937
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4808, 669, 566, 686, 2]
 
-// Module 6756 (_isNativeReflectConstruct)
+// Module 6761 (_isNativeReflectConstruct)
+import closure_2 from "set";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -98,27 +107,21 @@ function handleConnectionReset() {
 function handleGuildReset(guild) {
   set.delete(guild.guild.id);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const set = new Set();
+let set = new Set();
 let closure_9 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class ChannelStatusStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ChannelStatusStore);
-      obj = closure_5(ChannelStatusStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, ChannelStatusStore);
+      obj = outer1_5(ChannelStatusStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -127,12 +130,11 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ChannelStatusStore;
   callback2(ChannelStatusStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , ];
@@ -141,9 +143,9 @@ let tmp3 = (Store) => {
     value(guild_id) {
       if (null != guild_id) {
         if (null != guild_id.guild_id) {
-          if (guild_id.type === ChannelStatusStore(closure_1[6]).ChannelTypes.GUILD_VOICE) {
+          if (guild_id.type === ChannelStatusStore(outer1_1[6]).ChannelTypes.GUILD_VOICE) {
             let tmp5;
-            if (null != closure_9[guild_id.guild_id]) {
+            if (null != outer1_9[guild_id.guild_id]) {
               tmp5 = tmp4[guild_id.id];
             }
             return tmp5;
@@ -156,35 +158,35 @@ let tmp3 = (Store) => {
   obj = {
     key: "hasRequestedStatuses",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_8.has(arg0);
     }
   };
   items[2] = obj;
   return callback(ChannelStatusStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ChannelStatusStore";
-tmp3 = new tmp3(importDefault(dependencyMap[8]), {
+tmp3 = new tmp3(require("dispatcher"), {
   GUILD_CREATE: handleGuildReset,
   GUILD_DELETE: handleGuildReset,
   CONNECTION_RESUMED: handleConnectionReset,
   CONNECTION_OPEN: handleConnectionReset,
   VOICE_CHANNEL_STATUS_UPDATE: function handleVoiceChannelStatusUpdate(guildId) {
-    if (null == closure_9[guildId.guildId]) {
-      closure_9[guildId.guildId] = {};
+    if (null == dependencyMap[guildId.guildId]) {
+      dependencyMap[guildId.guildId] = {};
     }
-    closure_9[guildId.guildId][guildId.id] = guildId.status;
+    dependencyMap[guildId.guildId][guildId.id] = guildId.status;
   },
   CHANNEL_INFO: function handleChannelInfo(guildId) {
     let done;
     guildId = guildId.guildId;
-    closure_9[guildId] = {};
+    dependencyMap[guildId] = {};
     const tmp = _createForOfIteratorHelperLoose(guildId.channels);
     let iter = tmp();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_9;
-        closure_9[guildId][value.id] = value.status;
+        let tmp2 = dependencyMap;
+        dependencyMap[guildId][value.id] = value.status;
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -195,6 +197,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
     set.add(guildId.guildId);
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/channel/ChannelStatusStore.tsx");
+let result = set.fileFinishedImporting("modules/channel/ChannelStatusStore.tsx");
 
 export default tmp3;

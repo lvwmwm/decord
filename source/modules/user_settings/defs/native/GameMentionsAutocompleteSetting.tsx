@@ -1,23 +1,35 @@
-// Module ID: 14098
-// Function ID: 107040
+// Module ID: 14212
+// Function ID: 109196
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 5729, 3803, 2]
 
-// Module 14098 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14212 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.c0oFDw);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.c0oFDw);
   },
-  parent: require(dependencyMap[0]).MobileSetting.APPEARANCE,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    return require(dependencyMap[3]).useIsGameMentionsEnabled("GameMentionsInAutocomplete");
+    return require(5729) /* apexExperiment */.useIsGameMentionsEnabled("GameMentionsInAutocomplete");
   },
-  useValue: require(dependencyMap[4]).IncludeGameMentionsInAutocomplete.useSetting,
-  onValueChange: require(dependencyMap[4]).IncludeGameMentionsInAutocomplete.updateSetting
+  useValue: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.useSetting,
+  onValueChange: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.updateSetting
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/GameMentionsAutocompleteSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.c0oFDw);
+  },
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  usePredicate() {
+    return require(5729) /* apexExperiment */.useIsGameMentionsEnabled("GameMentionsInAutocomplete");
+  },
+  useValue: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.useSetting,
+  onValueChange: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.updateSetting
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/GameMentionsAutocompleteSetting.tsx");
 
 export default toggle;

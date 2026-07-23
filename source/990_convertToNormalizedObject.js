@@ -1,14 +1,16 @@
 // Module ID: 990
-// Function ID: 10641
+// Function ID: 10642
 // Name: convertToNormalizedObject
-// Dependencies: []
+// Dependencies: [77, 794]
 // Exports: convertToNormalizedObject
 
 // Module 990 (convertToNormalizedObject)
-let closure_2 = importDefault(dependencyMap[0]);
+import _defineProperty from "_defineProperty";
+
+const require = arg1;
 
 export const convertToNormalizedObject = function convertToNormalizedObject(data) {
-  const normalizeResult = arg1(dependencyMap[1]).normalize(data);
+  const normalizeResult = require(794) /* registerSpanErrorInstrumentation */.normalize(data);
   if (null !== normalizeResult) {
     if ("object" === typeof normalizeResult) {
       const _Array = Array;

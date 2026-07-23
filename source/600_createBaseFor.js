@@ -6,6 +6,7 @@
 // Module 600 (createBaseFor)
 
 export default function createBaseFor(arg0) {
+  let closure_0 = arg0;
   return (arg0, arg1, arg2) => {
     const ObjectResult = Object(arg0);
     const arr = arg2(arg0);
@@ -13,10 +14,10 @@ export default function createBaseFor(arg0) {
     let num = -1;
     if (+arr.length) {
       while (true) {
-        let tmp4 = arg0;
+        let tmp4 = closure_0;
         let sum = num;
         let tmp6 = diff;
-        if (!arg0) {
+        if (!closure_0) {
           sum = num + 1;
           tmp6 = sum;
         }

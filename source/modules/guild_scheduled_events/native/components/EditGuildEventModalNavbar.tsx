@@ -1,51 +1,55 @@
-// Module ID: 8362
-// Function ID: 66670
+// Module ID: 8368
+// Function ID: 66707
 // Name: EditGuildEventModalNavbar
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 8345, 1327, 5121, 4126, 1212, 5788, 7607, 2]
 // Exports: default
 
-// Module 8362 (EditGuildEventModalNavbar)
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ header: { <string:3023162607>: "Array", <string:2937120107>: "isArray", <string:2781144925>: "accessibilityRole", <string:775504923>: "guildId", <string:3867842057>: "content" }, headerTitle: {}, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModalNavbar.tsx");
+// Module 8368 (EditGuildEventModalNavbar)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 4, paddingVertical: 8 }, headerTitle: { lineHeight: 28, textTransform: "uppercase" }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModalNavbar.tsx");
 
 export default function EditGuildEventModalNavbar(screen) {
   let tmp8;
   let tmp9;
   screen = screen.screen;
   const tmp = callback4();
-  if (arg1(dependencyMap[5]).EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
-    let items = [0.000000000000000000000000000000000000000000000000000020886642920001103, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001086461845159];
-  } else if (arg1(dependencyMap[5]).EditGuildEventScreens.DETAILS === screen) {
-    items = ["<string:24264687>", "isArray"];
-  } else if (arg1(dependencyMap[5]).EditGuildEventScreens.PREVIEW === screen) {
-    items = ["hu\u0161", "k\u0161\u00E1"];
+  if (require(8345) /* recurrenceRuleToServer */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
+    let items = [1, 3];
+  } else if (require(8345) /* recurrenceRuleToServer */.EditGuildEventScreens.DETAILS === screen) {
+    items = [2, 3];
+  } else if (require(8345) /* recurrenceRuleToServer */.EditGuildEventScreens.PREVIEW === screen) {
+    items = [3, 3];
   } else {
-    let obj = arg1(dependencyMap[6]);
+    let obj = require(1327) /* isDiscordFrontendDevelopment */;
     obj.assertNever(screen);
   }
   [tmp8, tmp9] = callback(items, 2);
   obj = { top: true, style: tmp.header };
   obj = { style: tmp.buttonContainer };
   const items1 = [callback2(View, obj), , ];
-  const obj1 = { "Null": true, "Null": true, alignItems: true, style: tmp.headerTitle };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj1.children = intl.format(arg1(dependencyMap[9]).t.42HaFY, { step: tmp8, total: tmp9 });
-  items1[1] = callback2(arg1(dependencyMap[8]).Text, obj1);
+  const obj1 = { style: tmp.headerTitle, variant: "text-xs/bold", color: "text-default" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.format(require(1212) /* getSystemLocale */.t["42HaFY"], { step: tmp8, total: tmp9 });
+  items1[1] = callback2(require(4126) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonContainer };
   const obj3 = {};
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj3.accessibilityLabel = intl2.string(arg1(dependencyMap[9]).t.cpT0Cq);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj3.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj3.onPress = screen.onClose;
-  obj3.source = importDefault(dependencyMap[11]);
+  obj3.source = importDefault(7607);
   obj3.style = tmp.rightButton;
-  obj2.children = callback2(arg1(dependencyMap[10]).HeaderActionButton, obj3);
+  obj2.children = callback2(require(5788) /* HeaderActionButton */.HeaderActionButton, obj3);
   items1[2] = callback2(View, obj2);
   obj.children = items1;
-  return callback3(arg1(dependencyMap[7]).SafeAreaPaddingView, obj);
+  return callback3(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

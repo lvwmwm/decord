@@ -1,26 +1,26 @@
 // Module ID: 454
 // Function ID: 6055
 // Name: clearInteractionHandle
-// Dependencies: []
+// Dependencies: [455, 359]
 
 // Module 454 (clearInteractionHandle)
 function clearInteractionHandle(handle) {
   if (handle.handle) {
-    const result = require(dependencyMap[1]).default.clearInteractionHandle(handle.handle);
+    const result = require(359) /* _scheduleUpdate */.default.clearInteractionHandle(handle.handle);
     handle.handle = null;
-    const _default = require(dependencyMap[1]).default;
+    const _default = require(359) /* _scheduleUpdate */.default;
   }
   if (arg1) {
     arg1(arg2, arg3);
   }
 }
-let closure_2 = require(dependencyMap[0]).default.currentCentroidXOfTouchesChangedAfter;
-let closure_3 = require(dependencyMap[0]).default.currentCentroidYOfTouchesChangedAfter;
-let closure_4 = require(dependencyMap[0]).default.previousCentroidXOfTouchesChangedAfter;
-let closure_5 = require(dependencyMap[0]).default.previousCentroidYOfTouchesChangedAfter;
-const currentCentroidX = require(dependencyMap[0]).default.currentCentroidX;
-const currentCentroidY = require(dependencyMap[0]).default.currentCentroidY;
-const obj = {
+let closure_2 = require("module_455").default.currentCentroidXOfTouchesChangedAfter;
+let closure_3 = require("module_455").default.currentCentroidYOfTouchesChangedAfter;
+let closure_4 = require("module_455").default.previousCentroidXOfTouchesChangedAfter;
+let closure_5 = require("module_455").default.previousCentroidYOfTouchesChangedAfter;
+const currentCentroidX = require("module_455").default.currentCentroidX;
+const currentCentroidY = require("module_455").default.currentCentroidY;
+let obj = {
   _initializeGestureState(arg0) {
     arg0.moveX = 0;
     arg0.moveY = 0;
@@ -50,10 +50,9 @@ const obj = {
     _accountsForMovesUpTo._accountsForMovesUpTo = touchHistory.mostRecentTimeStamp;
   },
   create(arg0) {
-    const require = arg0;
+    let closure_0 = arg0;
     let closure_1 = { handle: null };
-    let obj = { stateID: Math.random() };
-    let closure_2 = obj;
+    let obj = { stateID: Math.random(), moveX: 0, moveY: 0, x0: 0, y0: 0, dx: 0, dy: 0, vx: 0, vy: 0, numberActiveTouches: 0, _accountsForMovesUpTo: 0 };
     obj = {
       panHandlers: obj,
       getInteractionHandle() {
@@ -62,27 +61,27 @@ const obj = {
     };
     obj = {
       onStartShouldSetResponder(arg0) {
-        let result = null != arg0.onStartShouldSetPanResponder;
+        let result = null != lib.onStartShouldSetPanResponder;
         if (result) {
-          result = arg0.onStartShouldSetPanResponder(arg0, obj);
+          result = lib.onStartShouldSetPanResponder(arg0, obj);
         }
         return result;
       },
       onMoveShouldSetResponder(arg0) {
-        let result = null != arg0.onMoveShouldSetPanResponder;
+        let result = null != lib.onMoveShouldSetPanResponder;
         if (result) {
-          result = arg0.onMoveShouldSetPanResponder(arg0, obj);
+          result = lib.onMoveShouldSetPanResponder(arg0, obj);
         }
         return result;
       },
       onStartShouldSetResponderCapture(nativeEvent) {
         if (1 === nativeEvent.nativeEvent.touches.length) {
-          const result = closure_8._initializeGestureState(obj);
+          const result = outer1_8._initializeGestureState(obj);
         }
         obj.numberActiveTouches = nativeEvent.touchHistory.numberActiveTouches;
-        let result1 = null != nativeEvent.onStartShouldSetPanResponderCapture;
+        let result1 = null != lib.onStartShouldSetPanResponderCapture;
         if (result1) {
-          result1 = nativeEvent.onStartShouldSetPanResponderCapture(nativeEvent, obj);
+          result1 = lib.onStartShouldSetPanResponderCapture(nativeEvent, obj);
         }
         return result1;
       },
@@ -90,10 +89,10 @@ const obj = {
         touchHistory = touchHistory.touchHistory;
         let tmp = obj._accountsForMovesUpTo !== touchHistory.mostRecentTimeStamp;
         if (tmp) {
-          const result = closure_8._updateGestureStateOnMove(obj, touchHistory);
+          const result = outer1_8._updateGestureStateOnMove(obj, touchHistory);
           let result1 = !tmp6;
-          if (!!touchHistory.onMoveShouldSetPanResponderCapture) {
-            result1 = touchHistory.onMoveShouldSetPanResponderCapture(touchHistory, obj);
+          if (!!lib.onMoveShouldSetPanResponderCapture) {
+            result1 = lib.onMoveShouldSetPanResponderCapture(touchHistory, obj);
           }
           tmp = result1;
         }
@@ -101,56 +100,56 @@ const obj = {
       },
       onResponderGrant(touchHistory) {
         if (!closure_1.handle) {
-          closure_1.handle = touchHistory(closure_1[1]).default.createInteractionHandle();
-          const _default = touchHistory(closure_1[1]).default;
+          closure_1.handle = lib(closure_1[1]).default.createInteractionHandle();
+          const _default = lib(closure_1[1]).default;
         }
-        obj.x0 = callback(touchHistory.touchHistory);
-        obj.y0 = callback2(touchHistory.touchHistory);
+        obj.x0 = outer1_6(touchHistory.touchHistory);
+        obj.y0 = outer1_7(touchHistory.touchHistory);
         obj.dx = 0;
         obj.dy = 0;
-        if (touchHistory.onPanResponderGrant) {
-          touchHistory.onPanResponderGrant(touchHistory, obj);
+        if (lib.onPanResponderGrant) {
+          lib.onPanResponderGrant(touchHistory, obj);
         }
-        let result = null == touchHistory.onShouldBlockNativeResponder;
+        let result = null == lib.onShouldBlockNativeResponder;
         if (!result) {
-          result = touchHistory.onShouldBlockNativeResponder(touchHistory, obj);
+          result = lib.onShouldBlockNativeResponder(touchHistory, obj);
         }
         return result;
       },
       onResponderReject(arg0) {
-        callback3(closure_1, arg0.onPanResponderReject, arg0, obj);
+        outer1_9(closure_1, lib.onPanResponderReject, arg0, obj);
       },
       onResponderRelease(arg0) {
-        callback3(closure_1, arg0.onPanResponderRelease, arg0, obj);
-        const result = closure_8._initializeGestureState(obj);
+        outer1_9(closure_1, lib.onPanResponderRelease, arg0, obj);
+        const result = outer1_8._initializeGestureState(obj);
       },
       onResponderStart(touchHistory) {
         obj.numberActiveTouches = touchHistory.touchHistory.numberActiveTouches;
-        if (touchHistory.onPanResponderStart) {
-          touchHistory.onPanResponderStart(touchHistory, obj);
+        if (lib.onPanResponderStart) {
+          lib.onPanResponderStart(touchHistory, obj);
         }
       },
       onResponderMove(touchHistory) {
         touchHistory = touchHistory.touchHistory;
         if (obj._accountsForMovesUpTo !== touchHistory.mostRecentTimeStamp) {
-          const result = closure_8._updateGestureStateOnMove(obj, touchHistory);
-          if (touchHistory.onPanResponderMove) {
-            touchHistory.onPanResponderMove(touchHistory, obj);
+          const result = outer1_8._updateGestureStateOnMove(obj, touchHistory);
+          if (lib.onPanResponderMove) {
+            lib.onPanResponderMove(touchHistory, obj);
           }
         }
       },
       onResponderEnd(touchHistory) {
         obj.numberActiveTouches = touchHistory.touchHistory.numberActiveTouches;
-        callback3(closure_1, touchHistory.onPanResponderEnd, touchHistory, obj);
+        outer1_9(closure_1, lib.onPanResponderEnd, touchHistory, obj);
       },
       onResponderTerminate(arg0) {
-        callback3(closure_1, arg0.onPanResponderTerminate, arg0, obj);
-        const result = closure_8._initializeGestureState(obj);
+        outer1_9(closure_1, lib.onPanResponderTerminate, arg0, obj);
+        const result = outer1_8._initializeGestureState(obj);
       },
       onResponderTerminationRequest(arg0) {
-        let result = null == arg0.onPanResponderTerminationRequest;
+        let result = null == lib.onPanResponderTerminationRequest;
         if (!result) {
-          result = arg0.onPanResponderTerminationRequest(arg0, obj);
+          result = lib.onPanResponderTerminationRequest(arg0, obj);
         }
         return result;
       }

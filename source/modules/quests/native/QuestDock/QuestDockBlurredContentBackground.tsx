@@ -1,11 +1,12 @@
-// Module ID: 13942
-// Function ID: 105949
-// Dependencies: []
+// Module ID: 14056
+// Function ID: 108105
+// Dependencies: [31, 27, 33, 4532, 2]
 
-// Module 13942
-const importAllResult = importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 14056
+import importAllResult from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
 const memoResult = importAllResult.memo(function QuestDockBlurredContentBackground(blurTheme) {
   let animatedLayout;
   let animatedStyle;
@@ -15,26 +16,28 @@ const memoResult = importAllResult.memo(function QuestDockBlurredContentBackgrou
   if (undefined !== blurTheme) {
     str = blurTheme;
   }
-  const importDefault = str;
   const items = [str];
   const items1 = [str];
-  const android_fallbackColor = importAllResult.useMemo(() => {
+  const memo = importAllResult.useMemo(() => {
     let str = "rgba(255, 255, 255, 0.1)";
     if ("dark" === str) {
       str = "rgba(38, 39, 50, 0.65)";
     }
     return str;
   }, items);
-  const blurTintRgba = importAllResult.useMemo(() => {
+  const memo1 = importAllResult.useMemo(() => {
     let str = "rgba(255, 255, 255, 0.1)";
     if ("dark" === str) {
       str = "rgba(38, 39, 50, 0.1)";
     }
     return str;
   }, items1);
-  const style = [StyleSheet.absoluteFillObject, animatedStyle];
-  return jsx(importDefault(dependencyMap[3]), { blurTintRgba, android_fallbackColor, style, layout });
+  const obj = { nativeID: "quest-dock-blurred-background", blurTintRgba: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo };
+  const items2 = [StyleSheet.absoluteFillObject, animatedStyle];
+  obj.style = items2;
+  obj.layout = animatedLayout;
+  return jsx(str(4532), { nativeID: "quest-dock-blurred-background", blurTintRgba: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo });
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBlurredContentBackground.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBlurredContentBackground.tsx");
 
 export default memoResult;

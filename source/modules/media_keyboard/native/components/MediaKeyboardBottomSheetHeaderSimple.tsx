@@ -1,22 +1,23 @@
-// Module ID: 9652
-// Function ID: 75194
-// Dependencies: []
+// Module ID: 9659
+// Function ID: 75235
+// Dependencies: [31, 27, 1552, 33, 4130, 689, 9660, 2]
 
-// Module 9652
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 9659
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let obj = {};
-obj = { height: arg1(dependencyMap[2]).HEADER_HANDLE_HEIGHT, paddingBottom: importDefault(dependencyMap[5]).space.PX_4 };
+obj = { height: require("DRAG_HANDLE").HEADER_HANDLE_HEIGHT, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
 obj.headerHandleOnlyWrap = obj;
-let closure_4 = arg1(dependencyMap[4]).createStyles(obj);
-const obj2 = arg1(dependencyMap[4]);
-const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetHeaderSimple(arg0) {
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function MediaKeyboardBottomSheetHeaderSimple(arg0) {
   let animatedIndex;
   let onPress;
   ({ animatedIndex, onPress } = arg0);
-  return <View style={callback().headerHandleOnlyWrap}>{jsx(importDefault(dependencyMap[6]), { animatedIndex, onPress })}</View>;
+  return <View style={callback().headerHandleOnlyWrap}>{jsx(importDefault(9660), { animatedIndex, onPress })}</View>;
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeaderSimple.tsx");
+const result = require("DRAG_HANDLE").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeaderSimple.tsx");
 
 export default memoResult;

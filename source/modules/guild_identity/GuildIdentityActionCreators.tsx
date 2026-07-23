@@ -1,42 +1,43 @@
-// Module ID: 9778
-// Function ID: 76021
+// Module ID: 9785
+// Function ID: 76062
 // Name: _saveGuildIdentityChanges
-// Dependencies: []
+// Dependencies: [5, 653, 686, 507, 7852, 7849, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 9778 (_saveGuildIdentityChanges)
+// Module 9785 (_saveGuildIdentityChanges)
+import SafetyScannedUploadSurface from "SafetyScannedUploadSurface";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _saveGuildIdentityChanges() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _saveGuildIdentityChanges = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_identity/GuildIdentityActionCreators.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/guild_identity/GuildIdentityActionCreators.tsx");
 
 export const saveGuildIdentityChanges = function saveGuildIdentityChanges(id, guildMemberChangesForUpdateRequest) {
   return _saveGuildIdentityChanges(...arguments);
 };
 export const setCurrentGuild = function setCurrentGuild(id) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "USER_PROFILE_SETTINGS_SET_GUILD", guildId: id };
   obj.dispatch(obj);
 };
 export const initGuildIdentitySettings = function initGuildIdentitySettings(id) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "USER_PROFILE_SETTINGS_INIT", guildId: id };
   obj.dispatch(obj);
 };
 export const resetPendingMemberChanges = function resetPendingMemberChanges() {
-  importDefault(dependencyMap[2]).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES" });
+  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES" });
 };
 export const resetPendingProfileChanges = function resetPendingProfileChanges() {
-  importDefault(dependencyMap[2]).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES" });
+  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES" });
 };
 export const resetAllPending = function resetAllPending() {
-  importDefault(dependencyMap[2]).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
+  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
 };
 export const clearErrors = function clearErrors() {
-  importDefault(dependencyMap[2]).dispatch({ type: "USER_PROFILE_SETTINGS_CLEAR_ERRORS" });
+  importDefault(686).dispatch({ type: "USER_PROFILE_SETTINGS_CLEAR_ERRORS" });
 };

@@ -1,40 +1,41 @@
-// Module ID: 13920
-// Function ID: 105346
+// Module ID: 14034
+// Function ID: 107502
 // Name: logger
-// Dependencies: []
+// Dependencies: [6, 7, 4, 14035, 14036, 14037, 2]
 
-// Module 13920 (logger)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const logger = new arg1(dependencyMap[2]).Logger("SimpleMuxWrapper");
-const tmp3 = () => {
+// Module 14034 (logger)
+import set from "set";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const logger = new require("MuxIntegration").Logger("SimpleMuxWrapper");
+const tmp3 = (() => {
   class SimpleMuxWrapper {
     constructor(arg0) {
-      tmp = closure_3(this, SimpleMuxWrapper);
+      tmp = outer1_3(this, SimpleMuxWrapper);
       this.isMonitoring = false;
       this.config = arg0;
       this.videoElement = arg0.videoElement;
-      SessionManager = SimpleMuxWrapper(closure_2[3]).SessionManager;
+      SessionManager = SimpleMuxWrapper(outer1_2[3]).SessionManager;
       this.sessionId = SessionManager.generateSessionId();
       this.hlsInstance = arg0.hlsInstance;
       return;
     }
   }
-  const arg1 = SimpleMuxWrapper;
   let obj = {
     key: "initialize",
     value() {
       const self = this;
-      const obj = { CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: null, STEP_3_CLICKED_EXTERNAL: null, onTapGameMention: null };
+      const obj = { debug: null, disableCookies: true, respectDoNotTrack: true };
       const debug = this.config.debug;
       obj.debug = null != debug && debug;
-      const MuxIntegration = SimpleMuxWrapper(closure_2[4]).MuxIntegration;
+      const MuxIntegration = SimpleMuxWrapper(outer1_2[4]).MuxIntegration;
       obj.data = MuxIntegration.mapDiscordToMuxMetadata(self.config, self.sessionId);
       if (null != self.hlsInstance) {
         tmp.hlsjs = self.hlsInstance;
         tmp.Hls = self.hlsInstance.constructor;
       }
-      callback(closure_2[5]).monitor(self.videoElement, obj);
+      outer1_1(outer1_2[5]).monitor(self.videoElement, obj);
       self.isMonitoring = true;
     }
   };
@@ -44,9 +45,9 @@ const tmp3 = () => {
     value() {
       const self = this;
       if (this.isMonitoring) {
-        if ("function" === typeof callback(closure_2[5]).destroyMonitor) {
-          callback(closure_2[5]).destroyMonitor(self.videoElement);
-          const obj = callback(closure_2[5]);
+        if ("function" === typeof outer1_1(outer1_2[5]).destroyMonitor) {
+          outer1_1(outer1_2[5]).destroyMonitor(self.videoElement);
+          const obj = outer1_1(outer1_2[5]);
         }
         self.isMonitoring = false;
       }
@@ -58,9 +59,9 @@ const tmp3 = () => {
     value() {
       const self = this;
       if (this.isMonitoring) {
-        if ("function" === typeof callback(closure_2[5]).destroyMonitor) {
-          callback(closure_2[5]).destroyMonitor(self.videoElement);
-          const obj = callback(closure_2[5]);
+        if ("function" === typeof outer1_1(outer1_2[5]).destroyMonitor) {
+          outer1_1(outer1_2[5]).destroyMonitor(self.videoElement);
+          const obj = outer1_1(outer1_2[5]);
         }
         self.isMonitoring = false;
       }
@@ -74,7 +75,7 @@ const tmp3 = () => {
     }
   };
   return callback(SimpleMuxWrapper, items);
-}();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/video-qoe/SimpleMuxWrapper.tsx");
+})();
+const result = require("log").fileFinishedImporting("modules/video-qoe/SimpleMuxWrapper.tsx");
 
 export const SimpleMuxWrapper = tmp3;

@@ -1,23 +1,25 @@
-// Module ID: 9144
-// Function ID: 71693
+// Module ID: 9151
+// Function ID: 71734
 // Name: usePreviewDisabledGuild
-// Dependencies: []
+// Dependencies: [31, 1838, 5082, 566, 5128, 1387, 2]
 // Exports: default
 
-// Module 9144 (usePreviewDisabledGuild)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_member_verification/hooks/usePreviewDisabledGuild.tsx");
+// Module 9151 (usePreviewDisabledGuild)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/hooks/usePreviewDisabledGuild.tsx");
 
 export default function usePreviewDisabledGuild(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4];
-  let stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => guild.getGuild(arg0));
-  const obj = arg1(dependencyMap[3]);
-  const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => {
-    const value = closure_5.get(arg0);
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
+  let stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.getGuild(closure_0));
+  let obj = _require(566);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => {
+    const value = outer1_5.get(closure_0);
     let guild;
     if (null != value) {
       guild = value.guild;
@@ -26,16 +28,16 @@ export default function usePreviewDisabledGuild(arg0) {
   });
   const items2 = [arg0];
   const effect = React.useEffect(() => {
-    if (null != arg0) {
-      const verificationForm = callback(closure_2[4]).fetchVerificationForm(arg0);
-      const obj = callback(closure_2[4]);
+    if (null != closure_0) {
+      const verificationForm = outer1_1(outer1_2[4]).fetchVerificationForm(closure_0);
+      const obj = outer1_1(outer1_2[4]);
     }
   }, items2);
   if (null == stateFromStores) {
     let result = null;
     if (null != stateFromStores1) {
-      result = arg1(dependencyMap[5]).fromVerificationGateGuild(stateFromStores1);
-      const obj3 = arg1(dependencyMap[5]);
+      result = _require(1387).fromVerificationGateGuild(stateFromStores1);
+      const obj3 = _require(1387);
     }
     stateFromStores = result;
   }

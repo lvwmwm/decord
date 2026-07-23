@@ -1,61 +1,62 @@
-// Module ID: 12894
-// Function ID: 98443
+// Module ID: 13008
+// Function ID: 100599
 // Name: Collapsible
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 4542, 2]
 // Exports: default
 
-// Module 12894 (Collapsible)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = { 1000575061: true, 527995234: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
-let obj = arg1(dependencyMap[4]);
-obj = { collapsible: {} };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.collapsibleContent = obj;
-let closure_9 = obj.createStyles(obj);
+// Module 13008 (Collapsible)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = { stiffness: 150, overshootClamping: true };
+_createForOfIteratorHelperLoose = { collapsible: { position: "relative", overflow: "hidden" } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.collapsibleContent = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = { code: "function CollapsibleTsx1(){const{withSpring,totalHeight,EXPAND_SPRING}=this.__closure;return{height:withSpring(totalHeight,EXPAND_SPRING)};}" };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/void/Collapsible/native/Collapsible.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("design/void/Collapsible/native/Collapsible.tsx");
 
 export default function Collapsible(isExpanded) {
   let children;
   let collapsibleContent;
   let style;
   isExpanded = isExpanded.isExpanded;
-  let dependencyMap;
+  let first1;
   let callback;
-  let React;
+  let first2;
   let closure_5;
-  let sum;
+  let callback2;
   ({ children, collapsibleContent, style } = isExpanded);
-  const tmp = callback2();
-  const tmp2 = callback(React.useState(false), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = callback(first2.useState(false), 2);
   const first = tmp2[0];
-  const arg1 = first;
   const importDefault = tmp4;
   let tmp5 = first;
   if (null != isExpanded) {
     tmp5 = isExpanded;
   }
-  const tmp6 = callback(React.useState(0), 2);
-  const first1 = tmp6[0];
-  dependencyMap = first1;
+  const tmp6 = callback(first2.useState(0), 2);
+  first1 = tmp6[0];
   callback = tmp6[1];
-  const tmp8 = callback(React.useState(0), 2);
-  const first2 = tmp8[0];
-  React = first2;
+  const tmp8 = callback(first2.useState(0), 2);
+  first2 = tmp8[0];
   closure_5 = tmp8[1];
   const items = [first1];
   const items1 = [first2];
-  callback = React.useCallback((nativeEvent) => {
+  callback = first2.useCallback((nativeEvent) => {
     if (0 === first1) {
       callback(nativeEvent.nativeEvent.layout.height);
     }
   }, items);
   let num = 0;
-  const callback1 = React.useCallback((nativeEvent) => {
+  const callback1 = first2.useCallback((nativeEvent) => {
     if (0 === first2) {
       callback2(nativeEvent.nativeEvent.layout.height);
     }
@@ -63,24 +64,25 @@ export default function Collapsible(isExpanded) {
   if (tmp5) {
     num = first2;
   }
-  sum = first1 + num;
-  let obj = arg1(dependencyMap[6]);
+  const sum = first1 + num;
+  callback2 = sum;
+  let obj = first(first1[6]);
   class S {
     constructor() {
       obj = {};
-      obj2 = closure_0(closure_2[7]);
-      obj.height = obj2.withSpring(closure_6, closure_8);
+      obj2 = outer1_0(c2[7]);
+      obj.height = obj2.withSpring(c6, outer1_8);
       return obj;
     }
   }
-  obj = { withSpring: arg1(dependencyMap[7]).withSpring, totalHeight: sum, EXPAND_SPRING: closure_8 };
+  obj = { withSpring: first(first1[7]).withSpring, totalHeight: sum, EXPAND_SPRING: closure_8 };
   S.__closure = obj;
   S.__workletHash = 1072657539267;
   S.__initData = closure_10;
   const items2 = [first, tmp2[1]];
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style };
-  const callback2 = React.useCallback(() => {
+  callback2 = first2.useCallback(() => {
     tmp4(!first);
   }, items2);
   const obj1 = {};
@@ -91,8 +93,8 @@ export default function Collapsible(isExpanded) {
   }
   items3[1] = tmp18;
   obj1.style = items3;
-  const items4 = [sum(closure_5, { onLayout: callback, children: children({ onPress: callback2 }) }), sum(closure_5, { style: tmp.collapsibleContent, onLayout: callback1, children: collapsibleContent })];
+  const items4 = [callback2(closure_5, { onLayout: callback, children: children({ onPress: callback2 }) }), callback2(closure_5, { style: tmp.collapsibleContent, onLayout: callback1, children: collapsibleContent })];
   obj1.children = items4;
-  obj.children = closure_7(importDefault(dependencyMap[6]).View, obj1);
-  return sum(closure_5, obj);
+  obj.children = closure_7(importDefault(first1[6]).View, obj1);
+  return callback2(closure_5, obj);
 };

@@ -1,53 +1,55 @@
-// Module ID: 16466
-// Function ID: 127224
+// Module ID: 16583
+// Function ID: 129398
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: initialize
 
-// Module 16466 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16583 (_createForOfIteratorHelperLoose)
+import set from "set";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -122,13 +124,13 @@ function populateMap(actions) {
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp14 = closure_2;
-      if (!(value in closure_2)) {
-        let tmp15 = closure_2;
-        closure_2[value] = [];
+      let tmp14 = dependencyMap;
+      if (!(value in dependencyMap)) {
+        let tmp15 = dependencyMap;
+        dependencyMap[value] = [];
       }
-      let tmp16 = closure_2;
-      let arr4 = closure_2[value];
+      let tmp16 = dependencyMap;
+      let arr4 = dependencyMap[value];
       let arr = arr4.push(actions);
       iter2 = tmp13();
       iter = iter2;
@@ -136,26 +138,26 @@ function populateMap(actions) {
   }
 }
 function handleAction(type) {
-  let tmp = "CONNECTION_OPEN" !== type.type;
-  if (tmp) {
-    tmp = "OVERLAY_INITIALIZE" !== type.type;
+  let tmp3 = "CONNECTION_OPEN" !== type.type;
+  if (tmp3) {
+    tmp3 = "OVERLAY_INITIALIZE" !== type.type;
   }
-  if (!tmp) {
-    let closure_3 = true;
+  if (!tmp3) {
+    let c3 = true;
   }
-  if (type.type in closure_2) {
+  if (type.type in dependencyMap) {
     const items = [];
-    const tmp4 = _createForOfIteratorHelperLoose(closure_2[type.type]);
-    let iter = tmp4();
+    const tmp6 = _createForOfIteratorHelperLoose(dependencyMap[type.type]);
+    let iter = tmp6();
     if (!iter.done) {
       while (true) {
         let value = iter.value;
-        let tmp5 = closure_3;
-        if (!closure_3) {
+        let tmp7 = c3;
+        if (!c3) {
           if (value.neverLoadBeforeConnectionOpen) {
             let arr = items.push(value);
           }
-          let iter2 = tmp4();
+          let iter2 = tmp6();
           iter = iter2;
           if (iter2.done) {
             break;
@@ -166,28 +168,28 @@ function handleAction(type) {
       }
     }
     if (items.length > 0) {
-      closure_2[type.type] = items;
+      dependencyMap[type.type] = items;
     } else {
       type = type.type;
-      delete r4[r3];
+      delete tmp2[tmp];
     }
   }
   return false;
 }
-new Set([452933887, 486480895, 520035839]);
+let set = new Set(["CHANNEL_SELECT", "CHANNEL_PRELOAD", "MESSAGE_CREATE"]);
 let closure_2 = {};
-let closure_3 = false;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/app_startup/ManagerRegistryShared.tsx");
+let c3 = false;
+const result = set.fileFinishedImporting("modules/app_startup/ManagerRegistryShared.tsx");
 
 export const initialize = function initialize(obj) {
   for (const key10004 in arg0) {
     let tmp2 = key10004;
     let tmp3 = arg0[key10004];
-    let tmp4 = closure_6;
-    let tmp5 = closure_6(undefined, tmp3);
-    let tmp6 = closure_7;
-    let tmp7 = closure_7(tmp3);
+    let tmp4 = validateInDevMode;
+    let tmp5 = validateInDevMode(undefined, tmp3);
+    let tmp6 = populateMap;
+    let tmp7 = populateMap(tmp3);
+    continue;
   }
-  importDefault(dependencyMap[0]).addInterceptor(handleAction);
+  importDefault(686).addInterceptor(handleAction);
 };

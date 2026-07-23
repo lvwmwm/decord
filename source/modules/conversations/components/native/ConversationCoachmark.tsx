@@ -1,45 +1,46 @@
-// Module ID: 10091
-// Function ID: 78159
+// Module ID: 10099
+// Function ID: 78199
 // Name: NewBadge
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1345, 33, 1334, 4130, 689, 4126, 1212, 5802, 8563, 2]
 // Exports: ConversationCoachmark
 
-// Module 10091 (NewBadge)
+// Module 10099 (NewBadge)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function NewBadge() {
-  let obj = { style: callback2().badge };
-  obj = { cachedAt: "<string:191316381>", edpbxy: "<string:3094478849>" };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.children = intl.string(arg1(dependencyMap[9]).t.c2GSIl);
-  obj.children = jsx(arg1(dependencyMap[8]).Text, obj);
-  return <View {...obj} />;
+  let obj = { style: _createForOfIteratorHelperLoose().badge };
+  obj = { variant: "text-sm/bold", color: "text-default" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.c2GSIl);
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-sm/bold", color: "text-default" });
+  return <View variant="text-sm/bold" color="text-default" />;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[4]).jsx;
-const TOPICAL_NAVIGATION_HEADER_COACHMARK = arg1(dependencyMap[5]).DismissibleContent.TOPICAL_NAVIGATION_HEADER_COACHMARK;
-const items = [TOPICAL_NAVIGATION_HEADER_COACHMARK];
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND, paddingVertical: 2, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.round };
-obj.badge = obj;
-obj.coachmarkWrapper = { marginRight: importDefault(dependencyMap[7]).space.PX_12 };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { marginRight: importDefault(dependencyMap[7]).space.PX_12 };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/conversations/components/native/ConversationCoachmark.tsx");
+const TOPICAL_NAVIGATION_HEADER_COACHMARK = require("DismissibleContent").DismissibleContent.TOPICAL_NAVIGATION_HEADER_COACHMARK;
+let items = [TOPICAL_NAVIGATION_HEADER_COACHMARK];
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, paddingVertical: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+_createForOfIteratorHelperLoose.badge = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.coachmarkWrapper = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/conversations/components/native/ConversationCoachmark.tsx");
 
 export const ConversationCoachmark = function ConversationCoachmark(arg0) {
   let children;
   let isLast;
   ({ children, isLast } = arg0);
   const ref = React.useRef(null);
-  let obj = arg1(dependencyMap[10]);
+  let obj = first(5802);
   const tmp3 = callback(obj.useSelectedDismissibleContent(items), 2);
-  const first = tmp3[0];
-  const arg1 = first;
+  first = tmp3[0];
   const dependencyMap = tmp5;
-  const items = [tmp3[1], first];
+  items = [tmp3[1], first];
   const memo = React.useMemo(() => {
     const obj = {};
     const intl = first(tmp5[9]).intl;
@@ -47,28 +48,28 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     const intl2 = first(tmp5[9]).intl;
     obj.description = intl2.string(first(tmp5[9]).t.QeJIbA);
     obj.position = "bottom";
-    obj.visible = first === closure_7;
+    obj.visible = first === outer1_7;
     obj.onDismiss = function onDismiss() {
-      callback(constants.USER_DISMISS);
+      outer1_1(outer2_5.USER_DISMISS);
     };
     obj.renderImgComponent = function renderImgComponent() {
-      return callback2(closure_10, {});
+      return outer2_6(outer2_10, {});
     };
     return obj;
   }, items);
-  const tmp = callback2();
-  const coachmark = arg1(dependencyMap[11]).useCoachmark(ref, memo);
+  const tmp = _createForOfIteratorHelperLoose();
+  const coachmark = first(8563).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   obj = {};
   let coachmarkWrapper;
-  const callback = React.useCallback(() => {
-    tmp5(constants.USER_DISMISS);
+  callback = React.useCallback(() => {
+    tmp5(outer1_5.USER_DISMISS);
   }, items1);
   if (!isLast) {
     coachmarkWrapper = tmp.coachmarkWrapper;
   }
   obj.style = coachmarkWrapper;
   obj = { ref, children: children(callback) };
-  obj.children = <View {...obj} />;
-  return <View {...obj} />;
+  obj.children = <View ref={ref}>{children(callback)}</View>;
+  return <View ref={ref}>{children(callback)}</View>;
 };

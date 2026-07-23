@@ -1,13 +1,13 @@
-// Module ID: 6409
-// Function ID: 50546
+// Module ID: 6414
+// Function ID: 50575
 // Name: PotionSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6415, 2]
 // Exports: PotionSpotIllustration
 
-// Module 6409 (PotionSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PotionSpotIllustration.native.tsx");
+// Module 6414 (PotionSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PotionSpotIllustration.native.tsx");
 
 export const PotionSpotIllustration = function PotionSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const PotionSpotIllustration = function PotionSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6415) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const PotionSpotIllustration = function PotionSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

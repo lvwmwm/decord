@@ -1,20 +1,20 @@
-// Module ID: 3803
-// Function ID: 31376
+// Module ID: 3805
+// Function ID: 31381
 // Name: items
-// Dependencies: []
+// Dependencies: [1282, 2]
 
-// Module 3803 (items)
+// Module 3805 (items)
 const obj = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };
-const items = [obj.DISABLED, require(dependencyMap[0]).DmSpamFilterV2.DISABLED];
+const items = [obj.DISABLED, require("_callSuper").DmSpamFilterV2.DISABLED];
 const items1 = [items, , ];
-const items2 = [obj.NON_FRIENDS, require(dependencyMap[0]).DmSpamFilterV2.NON_FRIENDS];
+const items2 = [obj.NON_FRIENDS, require("_callSuper").DmSpamFilterV2.NON_FRIENDS];
 items1[1] = items2;
-const items3 = [obj.FRIENDS_AND_NON_FRIENDS, require(dependencyMap[0]).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS];
+const items3 = [obj.FRIENDS_AND_NON_FRIENDS, require("_callSuper").DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS];
 items1[2] = items3;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/user_settings/privacy_and_safety/DMSafetyConstants.tsx");
+const map = new Map(items1);
+const result = require("set").fileFinishedImporting("modules/user_settings/privacy_and_safety/DMSafetyConstants.tsx");
 
 export const DMSafetyCoachmarkActions = { VIEW: 0, [0]: "VIEW", DISMISS: 1, [1]: "DISMISS", CHANGE_SETTING: 2, [2]: "CHANGE_SETTING" };
 export const DmSpamFilterTypes = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };
 export const ExplicitContentFilterTypes = obj;
-export const ExplicitContentFilterToDmSpamFilterV2 = new Map(items1);
+export const ExplicitContentFilterToDmSpamFilterV2 = map;

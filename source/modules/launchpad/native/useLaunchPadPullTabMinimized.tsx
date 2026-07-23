@@ -1,60 +1,59 @@
-// Module ID: 15532
-// Function ID: 118505
+// Module ID: 15649
+// Function ID: 120678
 // Name: nativeEventEmitter
-// Dependencies: []
+// Dependencies: [31, 27, 3991, 10633, 2]
 // Exports: default
 
-// Module 15532 (nativeEventEmitter)
-let closure_2 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const NativeEventEmitter = tmp2.NativeEventEmitter;
-const DCDScrollTracker = tmp2.NativeModules.DCDScrollTracker;
+// Module 15649 (nativeEventEmitter)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+
+const require = arg1;
+const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;
+const DCDScrollTracker = get_ActivityIndicator.NativeModules.DCDScrollTracker;
 let nativeEventEmitter;
 if (DCDScrollTracker) {
   const prototype = NativeEventEmitter.prototype;
   nativeEventEmitter = new NativeEventEmitter(DCDScrollTracker);
 }
 let closure_4 = { code: "function useLaunchPadPullTabMinimizedTsx1(){const{launchPadPullTabState,isVoicePanelOpen,launchPadSharedState,isMinimizedDuringScroll}=this.__closure;const isMinimized=(launchPadPullTabState.get().minimized||isVoicePanelOpen)&&launchPadSharedState.get()<=0;return isMinimized||isMinimizedDuringScroll.get();}" };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
+let result = require("module_3991").fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
 
 export default function useLaunchPadPullTabMinimized(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;
-  const arg1 = launchPadSharedState;
   const launchPadPullTabState = launchPadSharedState.launchPadPullTabState;
-  const dependencyMap = launchPadPullTabState;
-  const isVoicePanelFullscreen = arg1(dependencyMap[3]).useIsVoicePanelFullscreen();
-  let closure_2 = isVoicePanelFullscreen;
-  const tmp2 = function useIsMinimizedDuringScroll() {
+  const isVoicePanelFullscreen = launchPadSharedState(launchPadPullTabState[3]).useIsVoicePanelFullscreen();
+  const tmp2 = (function useIsMinimizedDuringScroll() {
     const sharedValue = launchPadSharedState(launchPadPullTabState[2]).useSharedValue(false);
-    const launchPadSharedState = sharedValue;
     const items = [sharedValue];
     const effect = isVoicePanelFullscreen.useEffect(() => {
-      let closure_0 = -1;
+      let c0 = -1;
       let addListenerResult;
       if (null != closure_3) {
         addListenerResult = closure_3.addListener("isScrollingOrDragging", (isScrollingOrDragging) => {
-          clearTimeout(v1);
+          clearTimeout(timeout);
           if (isScrollingOrDragging.isScrollingOrDragging) {
-            const result = v1.set(true);
+            let result = v1.set(true);
           } else {
             const _setTimeout = setTimeout;
-            const v1 = setTimeout(() => {
-              const result = closure_0.set(false);
+            timeout = setTimeout(() => {
+              const result = c0.set(false);
             }, 1000);
           }
         });
       }
+      let closure_1 = addListenerResult;
       return () => {
-        clearTimeout(closure_0);
+        clearTimeout(c0);
         if (null != addListenerResult) {
           addListenerResult.remove();
         }
       };
     }, items);
     return sharedValue;
-  }();
+  })();
   const nativeEventEmitter = tmp2;
-  const obj = arg1(dependencyMap[3]);
+  const obj = launchPadSharedState(launchPadPullTabState[3]);
   const fn = function u() {
     let value = launchPadPullTabState.get().minimized || isVoicePanelFullscreen;
     if (value) {
@@ -68,5 +67,5 @@ export default function useLaunchPadPullTabMinimized(launchPadSharedState) {
   fn.__closure = { launchPadPullTabState, isVoicePanelOpen: isVoicePanelFullscreen, launchPadSharedState, isMinimizedDuringScroll: tmp2 };
   fn.__workletHash = 14263056934448;
   fn.__initData = closure_4;
-  return arg1(dependencyMap[2]).useDerivedValue(fn);
+  return launchPadSharedState(launchPadPullTabState[2]).useDerivedValue(fn);
 };

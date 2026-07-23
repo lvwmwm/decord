@@ -1,17 +1,24 @@
-// Module ID: 4273
-// Function ID: 37394
+// Module ID: 4277
+// Function ID: 37426
 // Name: WantsVideoQuality
-// Dependencies: []
+// Dependencies: [7, 6, 4191, 4278, 2]
 
-// Module 4273 (WantsVideoQuality)
+// Module 4277 (WantsVideoQuality)
+import importDefaultResult from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
+import DesktopSources from "DesktopSources";
+
 let VideoQualityMode;
-const importDefaultResult = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ defaultVideoQualityOptions: closure_4, MediaEngineContextTypes: closure_5, VideoQualityMode, VIDEO_QUALITY_FRAMERATE: closure_6, BIT_FLOOR_PER_PIXEL: closure_7 } = arg1(dependencyMap[2]));
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ defaultVideoQualityOptions: closure_4, MediaEngineContextTypes: closure_5, VideoQualityMode, VIDEO_QUALITY_FRAMERATE: closure_6, BIT_FLOOR_PER_PIXEL: closure_7 } = DesktopSources);
 class WantsVideoQuality {
   constructor(arg0) {
     self = this;
-    tmp = closure_3(this, WantsVideoQuality);
+    tmp = c3(this, WantsVideoQuality);
     if (null == global.capture) {
       if (null == global.encode) {
         tmp10 = globalThis;
@@ -27,38 +34,37 @@ class WantsVideoQuality {
     }
     tmp2 = undefined;
     if (null != global.capture) {
-      tmp3 = f37396;
-      prototype = f37396.prototype;
+      tmp3 = f37428;
+      prototype = f37428.prototype;
       tmp4 = new.target;
       tmp5 = new.target;
-      tmp2 = new f37396(global.capture);
+      tmp2 = new f37428(global.capture);
     }
     self.capture = tmp2;
     tmp6 = undefined;
     if (null != global.encode) {
-      tmp7 = f37396;
-      prototype2 = f37396.prototype;
+      tmp7 = f37428;
+      prototype2 = f37428.prototype;
       tmp8 = new.target;
       tmp9 = new.target;
-      tmp6 = new f37396(global.encode);
+      tmp6 = new f37428(global.encode);
     }
     self.encode = tmp6;
     ({ bitrateMin: self.bitrateMin, bitrateMax: self.bitrateMax, bitrateTarget: self.bitrateTarget, localWant: self.localWant } = global);
     return;
   }
 }
-const frozen = Object.freeze({ [VideoQualityMode.AUTO]: {}, [VideoQualityMode.FULL]: { encode: { "Null": -1454790327, "Null": 486609040 } } });
+const frozen = Object.freeze({ [VideoQualityMode.AUTO]: {}, [VideoQualityMode.FULL]: { encode: { width: 1280, height: 720 } } });
 const importDefaultResultResult = importDefaultResult(WantsVideoQuality);
-const tmp6 = () => {
+let tmp6 = (() => {
   class VideoQuality {
     constructor(arg0) {
-      tmp = closure_3(this, VideoQuality);
+      tmp = outer1_3(this, VideoQuality);
       ({ width: this.width, height: this.height, framerate: this.framerate } = arg0);
       this.pixelCount = arg0.width * arg0.height;
       return;
     }
   }
-  const arg1 = VideoQuality;
   let obj = {
     key: "equals",
     value(width, width2) {
@@ -133,30 +139,29 @@ const tmp6 = () => {
   };
   items[1] = obj;
   return importDefaultResult(VideoQuality, null, items);
-}();
-const tmp3 = arg1(dependencyMap[2]);
-const tmp7 = () => {
+})();
+let closure_9 = tmp6;
+const tmp7 = (() => {
   class VideoQualityManager {
     constructor(arg0, arg1) {
       tmp = arg2;
       self = this;
       if (arg2 === undefined) {
-        tmp = closure_4;
+        tmp = outer1_4;
       }
-      tmp2 = closure_3(self, VideoQualityManager);
+      tmp2 = outer1_3(self, VideoQualityManager);
       self.contextType = arg0;
       self.connection = arg1;
       self.options = tmp;
       self.isMuted = false;
-      self.isStreamContext = self.contextType === closure_5.STREAM;
-      mediaSinkWantsLadder = new VideoQualityManager(closure_1[3]).MediaSinkWantsLadder(tmp);
+      self.isStreamContext = self.contextType === outer1_5.STREAM;
+      mediaSinkWantsLadder = new VideoQualityManager(outer1_1[3]).MediaSinkWantsLadder(tmp);
       self.ladder = mediaSinkWantsLadder;
       self.goliveMaxQuality = self.getDefaultGoliveQuality();
       self.lastGoLivePixelCount = {};
       return;
     }
   }
-  const arg1 = VideoQualityManager;
   let obj = {
     key: "getQuality",
     value(arg0) {
@@ -192,8 +197,8 @@ const tmp7 = () => {
       }
       let tmp11 = goliveQuality;
       if (null != self.qualityOverwrite) {
-        tmp11 = closure_8;
-        const obj = { encode: closure_9.extend(goliveQuality.encode, self.qualityOverwrite.encode), capture: closure_9.extend(goliveQuality.capture, self.qualityOverwrite.capture) };
+        tmp11 = outer1_8;
+        const obj = { encode: outer1_9.extend(goliveQuality.encode, self.qualityOverwrite.encode), capture: outer1_9.extend(goliveQuality.capture, self.qualityOverwrite.capture) };
         let bitrateMin = self.qualityOverwrite.bitrateMin;
         if (null == bitrateMin) {
           bitrateMin = goliveQuality.bitrateMin;
@@ -256,8 +261,8 @@ const tmp7 = () => {
     key: "setGoliveQuality",
     value(capture) {
       const self = this;
-      let tmp = closure_8;
-      const obj = { capture: closure_9.extend(this.goliveMaxQuality.capture, capture.capture), encode: closure_9.extend(this.goliveMaxQuality.encode, capture.encode) };
+      let tmp = outer1_8;
+      const obj = { capture: outer1_9.extend(this.goliveMaxQuality.capture, capture.capture), encode: outer1_9.extend(this.goliveMaxQuality.encode, capture.encode) };
       let bitrateMin = capture.bitrateMin;
       if (null == bitrateMin) {
         bitrateMin = self.goliveMaxQuality.bitrateMin;
@@ -295,7 +300,7 @@ const tmp7 = () => {
       obj.bitrateMin = Math.max(result, self.options.videoBitrateFloor);
       obj.bitrateMax = Math.max(result1, self.options.videoBitrateFloor);
       obj.localWant = localWant;
-      return new closure_8(obj);
+      return new outer1_8(obj);
     }
   };
   items[5] = {
@@ -321,13 +326,13 @@ const tmp7 = () => {
         if (arg1 < self.goliveMaxQuality.encode.pixelCount) {
           if (arg1 > 0) {
             const _Math7 = Math;
-            const bound = Math.min(closure_7 * self.goliveMaxQuality.encode.pixelCount * self.goliveMaxQuality.encode.framerate, self.goliveMaxQuality.bitrateMax);
+            const bound = Math.min(outer1_7 * self.goliveMaxQuality.encode.pixelCount * self.goliveMaxQuality.encode.framerate, self.goliveMaxQuality.bitrateMax);
             let scaleLinearlyResult2;
             const scaleLinearlyResult = self.scaleLinearly(arg1, self.goliveMaxQuality.encode.pixelCount, self.goliveMaxQuality.bitrateMin);
             if (null != self.goliveMaxQuality.bitrateTarget) {
               scaleLinearlyResult2 = self.scaleLinearly(arg1, self.goliveMaxQuality.encode.pixelCount, self.goliveMaxQuality.bitrateTarget);
             }
-            let tmp3 = closure_8;
+            let tmp3 = outer1_8;
             const obj = { encode: self.goliveMaxQuality.encode, capture: self.goliveMaxQuality.capture };
             const _Math = Math;
             const _Math2 = Math;
@@ -355,15 +360,15 @@ const tmp7 = () => {
   items[7] = {
     key: "getDefaultGoliveQuality",
     value() {
-      let obj = { capture: obj, encode: obj, bitrateMin: this.options.desktopBitrate.min, bitrateMax: this.options.desktopBitrate.max, bitrateTarget: this.options.desktopBitrate.target };
-      obj = { "Null": -1454790327, "Null": 486609040, framerate: closure_6 };
-      obj = { usesHeaderFlexboxImplementation: -1454790327, usesNewAndroidHeaderHeightImplementation: 486609040, flex: 1647385089, flexDirection: -1271310320, framerate: closure_6 };
-      return new closure_8(obj);
+      obj = { capture: obj, encode: obj, bitrateMin: this.options.desktopBitrate.min, bitrateMax: this.options.desktopBitrate.max, bitrateTarget: this.options.desktopBitrate.target };
+      obj = { width: 1280, height: 720, framerate: outer1_6 };
+      obj = { width: 1280, height: 720, framerate: outer1_6, pixelCount: 921600 };
+      return new outer1_8(obj);
     }
   };
   return importDefaultResult(VideoQualityManager, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("../discord_common/js/packages/media-engine/VideoQualityManager.tsx");
+})();
+let result = require("DesktopSources").fileFinishedImporting("../discord_common/js/packages/media-engine/VideoQualityManager.tsx");
 
 export const VIDEO_QUALITY_MODES_TO_OVERWRITES = frozen;
 export const WantsVideoQuality = importDefaultResultResult;

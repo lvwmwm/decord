@@ -1,26 +1,26 @@
-// Module ID: 15748
-// Function ID: 120445
+// Module ID: 15865
+// Function ID: 122618
 // Name: VoicePanelLockedIcon
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 4130, 689, 5517, 1273, 15866, 2]
 // Exports: default
 
-// Module 15748 (VoicePanelLockedIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15865 (VoicePanelLockedIcon)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-__exportStarResult1 = {};
-__exportStarResult1 = { "Bool(false)": 2, "Bool(false)": "notify_friends_on_go_live", "Bool(false)": "message", "Bool(false)": "4.8.0", "Bool(false)": null, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.round };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.icon = {};
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", alignSelf: "center", width: 64, height: 64, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.icon = {};
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
 
 export default function VoicePanelLockedIcon() {
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  obj = { style: tmp.icon, source: importDefault(dependencyMap[6]), size: arg1(dependencyMap[5]).IconSizes.LARGE };
-  obj.children = jsx(arg1(dependencyMap[5]).Icon, obj);
-  return jsx(importDefault(dependencyMap[4]), obj);
+  obj = { style: tmp.icon, source: importDefault(15866), size: require(1273) /* Button */.IconSizes.LARGE };
+  obj.children = jsx(require(1273) /* Button */.Icon, { style: tmp.icon, source: importDefault(15866), size: require(1273) /* Button */.IconSizes.LARGE });
+  return jsx(importDefault(5517), { style: tmp.icon, source: importDefault(15866), size: require(1273) /* Button */.IconSizes.LARGE });
 };

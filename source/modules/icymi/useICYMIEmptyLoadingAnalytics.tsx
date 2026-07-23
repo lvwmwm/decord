@@ -1,29 +1,31 @@
-// Module ID: 15100
-// Function ID: 113813
+// Module ID: 15215
+// Function ID: 115982
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: []
+// Dependencies: [31, 8330, 2]
 // Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 15100 (useICYMIEmptyLoadingAnalytics)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/icymi/useICYMIEmptyLoadingAnalytics.tsx");
+// Module 15215 (useICYMIEmptyLoadingAnalytics)
+import result from "result";
+
+const require = arg1;
+let result = require("set").fileFinishedImporting("modules/icymi/useICYMIEmptyLoadingAnalytics.tsx");
 
 export const useICYMIEmptyLoadingAnalytics = function useICYMIEmptyLoadingAnalytics(loading, isFocused) {
-  isFocused = loading;
-  const dependencyMap = isFocused;
-  const React = React.useRef(null);
+  let closure_0 = loading;
+  let closure_1 = isFocused;
+  React = React.useRef(null);
   const items = [loading, isFocused];
   const effect = React.useEffect(() => {
-    if (arg1) {
-      if (arg0) {
+    if (isFocused) {
+      if (loading) {
         const _Date = Date;
         tmp2.current = Date.now();
-        const ICYMIAnalytics = arg0(arg1[1]).ICYMIAnalytics;
+        const ICYMIAnalytics = loading(isFocused[1]).ICYMIAnalytics;
         const result = ICYMIAnalytics.trackFeedEmptyLoadingSeen();
       } else if (null != tmp2.current) {
         const _Date2 = Date;
         const diff = Date.now() - ref.current;
-        const ICYMIAnalytics2 = arg0(arg1[1]).ICYMIAnalytics;
+        const ICYMIAnalytics2 = loading(isFocused[1]).ICYMIAnalytics;
         const obj = { dwellTimeMs: diff };
         const result1 = ICYMIAnalytics2.trackFeedEmptyLoadingComplete(obj);
         ref.current = null;
@@ -32,11 +34,11 @@ export const useICYMIEmptyLoadingAnalytics = function useICYMIEmptyLoadingAnalyt
   }, items);
   const items1 = [isFocused];
   const effect1 = React.useEffect(() => {
-    if (!arg1) {
+    if (!isFocused) {
       if (null != ref.current) {
         const _Date = Date;
         const diff = Date.now() - ref.current;
-        const ICYMIAnalytics = arg0(arg1[1]).ICYMIAnalytics;
+        const ICYMIAnalytics = loading(isFocused[1]).ICYMIAnalytics;
         const obj = { dwellTimeMs: diff };
         const result = ICYMIAnalytics.trackFeedEmptyLoadingAbandoned(obj);
         ref.current = null;

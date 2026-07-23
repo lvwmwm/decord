@@ -1,24 +1,26 @@
-// Module ID: 3919
-// Function ID: 32380
+// Module ID: 3921
+// Function ID: 32385
 // Name: CheckpointIntroRive
-// Dependencies: []
+// Dependencies: [29, 31, 33, 3859, 3922, 3910, 2]
 
-// Module 3919 (CheckpointIntroRive)
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Checkpoint Intro Desktop: { <string:80597504>: 8.62, <string:80624128>: "BG_GRADIENT_SUNRISE_2", <string:80553984>: 48.07, <string:80639488>: "BG_GRADIENT_SUNRISE_3" }, Globe: {}, Globe Single Line: {}, Start Button: { <string:80597504>: 8.62, <string:80624128>: "BG_GRADIENT_SUNRISE_2", <string:80553984>: 48.07, <string:80639488>: "BG_GRADIENT_SUNRISE_3" } };
-let closure_8 = { Checkpoint Intro Desktop: [], Globe: [], Globe Single Line: [], Start Button: [] };
+// Module 3921 (CheckpointIntroRive)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
+let closure_7 = { "Checkpoint Intro Desktop": { reducedMotion: "boolean", Subtitle: "string", "StartButton Pressed": "boolean", StartButton: "string" }, Globe: {}, "Globe Single Line": {}, "Start Button": { reducedMotion: "boolean", Subtitle: "string", "StartButton Pressed": "boolean", StartButton: "string" } };
+let closure_8 = { "Checkpoint Intro Desktop": ["default", "reducedMotion"], Globe: [], "Globe Single Line": [], "Start Button": ["default", "reducedMotion"] };
 let closure_9 = {
-  Checkpoint Intro Desktop: function CheckpointIntroDesktopBindings(reducedMotionEnabled) {
+  "Checkpoint Intro Desktop": function CheckpointIntroDesktopBindings(reducedMotionEnabled) {
     let dataBinding;
     let instance;
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = arg1(dependencyMap[3]).useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = arg1(dependencyMap[3]);
+    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3859) /* useObservedValue */;
     let Subtitle;
     if (null != dataBinding) {
       Subtitle = dataBinding.Subtitle;
@@ -27,18 +29,18 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Subtitle1 = onDataBindingChange.Subtitle;
     }
-    const stringBinding = arg1(dependencyMap[3]).useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
-    const obj2 = arg1(dependencyMap[3]);
+    const stringBinding = require(3859) /* useObservedValue */.useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
+    const obj2 = require(3859) /* useObservedValue */;
     let prop;
     if (null != dataBinding) {
-      prop = dataBinding.StartButton Pressed;
+      prop = dataBinding["StartButton Pressed"];
     }
     let prop1;
     if (null != onDataBindingChange) {
-      prop1 = onDataBindingChange.StartButton Pressed;
+      prop1 = onDataBindingChange["StartButton Pressed"];
     }
-    const booleanBinding1 = arg1(dependencyMap[3]).useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
-    const obj3 = arg1(dependencyMap[3]);
+    const booleanBinding1 = require(3859) /* useObservedValue */.useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
+    const obj3 = require(3859) /* useObservedValue */;
     let StartButton;
     if (null != dataBinding) {
       StartButton = dataBinding.StartButton;
@@ -47,17 +49,17 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       StartButton1 = onDataBindingChange.StartButton;
     }
-    const stringBinding1 = arg1(dependencyMap[3]).useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
+    const stringBinding1 = require(3859) /* useObservedValue */.useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
     return null;
   },
-  Start Button: function StartButtonBindings(reducedMotionEnabled) {
+  "Start Button": function StartButtonBindings(reducedMotionEnabled) {
     let dataBinding;
     let instance;
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = arg1(dependencyMap[3]).useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = arg1(dependencyMap[3]);
+    const booleanBinding = require(3859) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3859) /* useObservedValue */;
     let Subtitle;
     if (null != dataBinding) {
       Subtitle = dataBinding.Subtitle;
@@ -66,18 +68,18 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       Subtitle1 = onDataBindingChange.Subtitle;
     }
-    const stringBinding = arg1(dependencyMap[3]).useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
-    const obj2 = arg1(dependencyMap[3]);
+    const stringBinding = require(3859) /* useObservedValue */.useStringBinding("Subtitle", instance, Subtitle, Subtitle1, playIfNeeded);
+    const obj2 = require(3859) /* useObservedValue */;
     let prop;
     if (null != dataBinding) {
-      prop = dataBinding.StartButton Pressed;
+      prop = dataBinding["StartButton Pressed"];
     }
     let prop1;
     if (null != onDataBindingChange) {
-      prop1 = onDataBindingChange.StartButton Pressed;
+      prop1 = onDataBindingChange["StartButton Pressed"];
     }
-    const booleanBinding1 = arg1(dependencyMap[3]).useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
-    const obj3 = arg1(dependencyMap[3]);
+    const booleanBinding1 = require(3859) /* useObservedValue */.useBooleanBinding("StartButton Pressed", instance, prop, prop1, playIfNeeded);
+    const obj3 = require(3859) /* useObservedValue */;
     let StartButton;
     if (null != dataBinding) {
       StartButton = dataBinding.StartButton;
@@ -86,7 +88,7 @@ let closure_9 = {
     if (null != onDataBindingChange) {
       StartButton1 = onDataBindingChange.StartButton;
     }
-    const stringBinding1 = arg1(dependencyMap[3]).useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
+    const stringBinding1 = require(3859) /* useObservedValue */.useStringBinding("StartButton", instance, StartButton, StartButton1, playIfNeeded);
     return null;
   }
 };
@@ -98,39 +100,36 @@ let closure_10 = importAllResult.forwardRef(function CheckpointIntroRiveInner(de
   if (undefined !== artboard) {
     str = artboard;
   }
-  ref = str;
   defaultViewModelInstance = defaultViewModelInstance.defaultViewModelInstance;
   let str2 = "default";
   if (undefined !== defaultViewModelInstance) {
     str2 = defaultViewModelInstance;
   }
   const dataBinding = defaultViewModelInstance.dataBinding;
-  const importDefault = dataBinding;
   const onDataBindingChange = defaultViewModelInstance.onDataBindingChange;
-  const dependencyMap = onDataBindingChange;
   const items = [str, dataBinding, onDataBindingChange];
   const callback = importAllResult.useCallback((arg0) => {
     let tmp2 = null;
-    if (null != closure_9[closure_0]) {
+    if (null != outer1_9[str]) {
       const obj = {};
       const merged = Object.assign(arg0);
       obj["dataBinding"] = dataBinding;
       obj["onDataBindingChange"] = onDataBindingChange;
-      tmp2 = callback(tmp, obj);
+      tmp2 = outer1_6(tmp, obj);
     }
     return tmp2;
   }, items);
-  const obj = { ref, src: importDefault(dependencyMap[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback };
-  const merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(ref(dependencyMap[3]).BaseRive, obj);
+  let obj = { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback };
+  let merged = Object.assign(callback(defaultViewModelInstance, closure_3));
+  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
 });
 const forwardRefResult = importAllResult.forwardRef(function CheckpointIntroRiveWithBoundary(fallback, ref) {
   let obj = { fallback: fallback.fallback };
   obj = { ref };
   const merged = Object.assign(fallback);
-  obj.children = <closure_10 {...obj} />;
-  return jsx(ref(dependencyMap[5]).RiveErrorBoundary, obj);
+  obj.children = <closure_10 ref={arg1} />;
+  return jsx(require(3910) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointIntroRive.tsx");
+const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointIntroRive.tsx");
 
 export const CheckpointIntroRive = forwardRefResult;

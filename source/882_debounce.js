@@ -1,34 +1,37 @@
 // Module ID: 882
-// Function ID: 9763
+// Function ID: 9764
 // Name: debounce
 // Dependencies: []
 
 // Module 882 (debounce)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.debounce = function debounce(arg0, arg1, maxWait) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   function invokeFunc() {
     cancelTimers();
-    const tmp2 = arg0();
+    const tmp2 = callback();
+    let closure_2 = tmp2;
     return tmp2;
   }
   function cancelTimers() {
-    if (undefined !== closure_3) {
+    if (undefined !== c3) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_3);
+      clearTimeout(c3);
     }
-    if (undefined !== closure_4) {
+    if (undefined !== c4) {
       const _clearTimeout2 = clearTimeout;
-      clearTimeout(closure_4);
+      clearTimeout(c4);
     }
-    closure_4 = undefined;
-    closure_3 = undefined;
+    c4 = undefined;
+    c3 = undefined;
   }
   function debounced() {
     if (closure_3) {
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_3);
     }
-    closure_3 = setTimeoutImpl(invokeFunc, arg1);
+    closure_3 = setTimeoutImpl(invokeFunc, closure_1);
     let tmp4 = num;
     if (num) {
       tmp4 = undefined === closure_4;

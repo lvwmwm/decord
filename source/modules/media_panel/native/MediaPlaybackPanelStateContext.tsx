@@ -1,41 +1,42 @@
-// Module ID: 15781
-// Function ID: 120641
+// Module ID: 15898
+// Function ID: 122814
 // Name: setMode
-// Dependencies: []
+// Dependencies: [31, 13459, 10016, 7590, 2]
 
-// Module 15781 (setMode)
+// Module 15898 (setMode)
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import importAllResult from "result";
+
 const obj = {};
-const importAllResult = importAll(dependencyMap[0]);
-obj.mode = arg1(dependencyMap[3]).createFakeSharedValue(arg1(dependencyMap[1]).MediaPlaybackPanelModes.PIP);
+obj.mode = createFakeSharedValue.createFakeSharedValue(require("MediaPlaybackPanelModes").MediaPlaybackPanelModes.PIP);
 obj.setMode = function setMode() {
   const error = new Error("MediaPlaybackPanelModes.Provider.setMode: not called within a context provider");
   throw error;
 };
-const obj3 = arg1(dependencyMap[3]);
-obj.morphablePanelMode = arg1(dependencyMap[3]).createFakeSharedValue(arg1(dependencyMap[2]).MorphablePanelModes.PIP);
-const obj4 = arg1(dependencyMap[3]);
-obj.wrapperDimensions = arg1(dependencyMap[3]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
-const obj5 = arg1(dependencyMap[3]);
-obj.useReducedMotion = arg1(dependencyMap[3]).createFakeSharedValue(false);
-const obj6 = arg1(dependencyMap[3]);
-obj.pipState = arg1(dependencyMap[3]).createFakeSharedValue({ 0: "pow", 0: "decorationCutout" });
-const obj7 = arg1(dependencyMap[3]);
-obj.pipAvoidanceSpecs = arg1(dependencyMap[3]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
+obj.morphablePanelMode = createFakeSharedValue.createFakeSharedValue(require("MIN_PAN_GESTURE_MOVE").MorphablePanelModes.PIP);
+obj.wrapperDimensions = createFakeSharedValue.createFakeSharedValue({ width: 0, height: 0 });
+obj.useReducedMotion = createFakeSharedValue.createFakeSharedValue(false);
+obj.pipState = createFakeSharedValue.createFakeSharedValue({ x: -1, y: -1 });
+obj.pipAvoidanceSpecs = createFakeSharedValue.createFakeSharedValue({ top: 0, bottom: 0 });
 obj.dismissToPipGestureRef = { current: undefined };
 obj.dismissPanel = function dismissPanel() {
   const error = new Error("VoicePanelContextType.Provider.dismissDrawer: not called within a context provider");
   throw error;
 };
-const obj8 = arg1(dependencyMap[3]);
-obj.scrollPosition = require("module_0");
-const obj9 = arg1(dependencyMap[3]);
-obj.canShowPIP = arg1(dependencyMap[3]).createFakeSharedValue(true);
-const obj10 = arg1(dependencyMap[3]);
-obj.lockScrolling = arg1(dependencyMap[3]).createFakeSharedValue(false);
-const obj11 = arg1(dependencyMap[3]);
-obj.wrapperOffset = arg1(dependencyMap[3]).createFakeSharedValue({});
-const context = importAllResult.createContext(obj);
-const obj12 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelStateContext.tsx");
+obj.scrollPosition = require("result");
+obj.canShowPIP = createFakeSharedValue.createFakeSharedValue(true);
+obj.lockScrolling = createFakeSharedValue.createFakeSharedValue(false);
+obj.wrapperOffset = createFakeSharedValue.createFakeSharedValue({ x: 0, y: 0, gestureActive: false });
+const context = require("result").createContext(obj);
+const result = require("MIN_PAN_GESTURE_MOVE").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelStateContext.tsx");
 
 export default context;

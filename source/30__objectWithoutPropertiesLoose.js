@@ -20,7 +20,7 @@ export default function _objectWithoutPropertiesLoose(obj, arr) {
           continue;
         } else {
           obj[key10007] = arg0[key10007];
-          // continue
+          continue;
         }
         continue;
       }

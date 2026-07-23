@@ -1,15 +1,14 @@
-// Module ID: 13749
-// Function ID: 103972
+// Module ID: 13863
+// Function ID: 106128
 // Name: trackEmptyStateCardClicked
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: trackEmptyStateCardClicked
 
-// Module 13749 (trackEmptyStateCardClicked)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 13863 (trackEmptyStateCardClicked)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/user_settings/connections/native/ConnectionsTracking.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsTracking.tsx");
 
 export const trackEmptyStateCardClicked = function trackEmptyStateCardClicked(platform_type) {
-  importDefault(dependencyMap[1]).track(AnalyticEvents.CONNECTIONS_EMPTY_STATE_CARD_CLICKED, { platform_type: platform_type.platformType });
+  importDefault(675).track(AnalyticEvents.CONNECTIONS_EMPTY_STATE_CARD_CLICKED, { platform_type: platform_type.platformType });
 };

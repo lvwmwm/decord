@@ -1,16 +1,16 @@
-// Module ID: 14401
-// Function ID: 108639
+// Module ID: 14515
+// Function ID: 110792
 // Name: useSecureFramesVerifiedUserIds
-// Dependencies: [7656, 14408, 13613]
+// Dependencies: [8881, 566, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 14401 (useSecureFramesVerifiedUserIds)
-import MobileSetting from "MobileSetting";
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings";
+// Module 14515 (useSecureFramesVerifiedUserIds)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
-const result = useParentalControlledExplicitContentSettings.fileFinishedImporting("modules/rtc/hooks/useSecureFramesVerifiedUsers.tsx");
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesVerifiedUsers.tsx");
 
 export const useSecureFramesVerifiedUserIds = function useSecureFramesVerifiedUserIds() {
-  const items = [MobileSetting];
-  return arg1(dependencyMap[1]).useStateFromStoresArray(items, () => userIds.getUserIds());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => outer1_2.getUserIds());
 };

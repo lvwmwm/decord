@@ -1,26 +1,29 @@
-// Module ID: 15935
-// Function ID: 122170
+// Module ID: 16052
+// Function ID: 124343
 // Name: _guildRoomConnect
-// Dependencies: []
+// Dependencies: [5, 1194, 16049, 653, 507, 12686, 686, 16053, 9276, 9283, 12687, 2]
 // Exports: createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, placePendingGuildRoomNote, selectGuildRoomLocalPosition, startPendingGuildRoomNote
 
-// Module 15935 (_guildRoomConnect)
+// Module 16052 (_guildRoomConnect)
+import mapGuildRoomBaseObjectFields from "mapGuildRoomBaseObjectFields";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _guildRoomConnect() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _guildRoomConnect = obj;
   return obj(...arguments);
 }
 function _guildRoomDisconnect() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _guildRoomDisconnect = obj;
   return obj(...arguments);
 }
 function _guildRoomUpdate() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _guildRoomUpdate = obj;
   return obj(...arguments);
 }
 function guildRoomObjectCreate() {
@@ -29,13 +32,11 @@ function guildRoomObjectCreate() {
 function _guildRoomObjectCreate() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _guildRoomObjectCreate = obj;
   return obj(...arguments);
 }
 function _guildRoomObjectUpdate() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _guildRoomObjectUpdate = obj;
   return obj(...arguments);
 }
 function guildRoomObjectDelete() {
@@ -44,38 +45,30 @@ function guildRoomObjectDelete() {
 function _guildRoomObjectDelete() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _guildRoomObjectDelete = obj;
   return obj(...arguments);
 }
 function deletePendingGuildRoomNote(roomId) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "GUILD_ROOM_PENDING_NOTE_DELETE", roomId };
   obj.dispatch(obj);
 }
 function _createGuildRoomNote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createGuildRoomNote = obj;
   return obj(...arguments);
 }
 function _deleteGuildRoomNote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteGuildRoomNote = obj;
   return obj(...arguments);
 }
 function _fetchGuildRoom() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchGuildRoom = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-let closure_7 = { 0: "%FunctionPrototype%", 0: "paddingStart" };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_rooms/GuildRoomActionCreators.shared.tsx");
+let closure_7 = { x: 0, y: 0 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_rooms/GuildRoomActionCreators.shared.tsx");
 
 export const guildRoomConnect = function guildRoomConnect() {
   return _guildRoomConnect(...arguments);
@@ -87,12 +80,12 @@ export const guildRoomUpdate = function guildRoomUpdate() {
   return _guildRoomUpdate(...arguments);
 };
 export const selectGuildRoomLocalPosition = function selectGuildRoomLocalPosition(position) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "GUILD_ROOM_LOCAL_POSITION_REQUESTED", position };
   obj.dispatch(obj);
 };
 export const guildRoomToggleLayout = function guildRoomToggleLayout(channelId, clearLayout) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "GUILD_ROOM_TOGGLE_LAYOUT", roomId: channelId, clearLayout };
   obj.dispatch(obj);
 };
@@ -102,12 +95,12 @@ export const guildRoomObjectUpdate = function guildRoomObjectUpdate() {
 };
 export { guildRoomObjectDelete };
 export const startPendingGuildRoomNote = function startPendingGuildRoomNote(roomId) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "GUILD_ROOM_PENDING_NOTE_START", roomId };
   obj.dispatch(obj);
 };
 export const placePendingGuildRoomNote = function placePendingGuildRoomNote(roomId, position) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "GUILD_ROOM_PENDING_NOTE_PLACE", roomId, position };
   obj.dispatch(obj);
 };

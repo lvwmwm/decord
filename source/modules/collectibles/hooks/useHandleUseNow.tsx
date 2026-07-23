@@ -1,53 +1,58 @@
-// Module ID: 9772
-// Function ID: 75994
+// Module ID: 9779
+// Function ID: 76035
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1876, 1212, 8207, 9780, 7847, 9230, 2]
 // Exports: useHandleUseNow
 
-// Module 9772 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 9779 (_createForOfIteratorHelperLoose)
+import ItemsSortingHat from "ItemsSortingHat";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,46 +89,38 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
+const result = require("result").fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
 
 export const useHandleUseNow = function useHandleUseNow(product) {
   product = product.product;
-  const arg1 = product;
+  const require = product;
   const onSuccess = product.onSuccess;
-  const dependencyMap = onSuccess;
   const onError = product.onError;
-  const callback = onError;
-  let obj = React;
-  const tmp2 = callback2(React.useState(false), 2);
-  const callback2 = tmp2[1];
-  const shopProductItems = arg1(dependencyMap[5]).useShopProductItems(product);
-  const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
-  const React = firstAvatarDecoration;
+  let obj = firstAvatarDecoration;
+  const tmp2 = callback(firstAvatarDecoration.useState(false), 2);
+  callback = tmp2[1];
+  const shopProductItems = require(onSuccess[5]).useShopProductItems(product);
+  firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstProfileEffect = shopProductItems.firstProfileEffect;
-  const _createForOfIteratorHelperLoose = firstProfileEffect;
   const firstNameplate = shopProductItems.firstNameplate;
-  const _arrayLikeToArray = firstNameplate;
   const firstProfileFrame = shopProductItems.firstProfileFrame;
   const type = product.type;
-  if (arg1(dependencyMap[3]).CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl5 = arg1(dependencyMap[4]).intl;
-    let stringResult = intl5.string(arg1(dependencyMap[4]).t.zOA4ax);
-  } else if (arg1(dependencyMap[3]).CollectiblesItemType.NAMEPLATE === type) {
-    const intl4 = arg1(dependencyMap[4]).intl;
-    stringResult = intl4.string(arg1(dependencyMap[4]).t.gOzMvx);
-  } else if (arg1(dependencyMap[3]).CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl3 = arg1(dependencyMap[4]).intl;
-    stringResult = intl3.string(arg1(dependencyMap[4]).t.lOF4zR);
-  } else if (arg1(dependencyMap[3]).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl2 = arg1(dependencyMap[4]).intl;
-    stringResult = intl2.string(arg1(dependencyMap[4]).t.SWm2ai);
+  if (require(onSuccess[3]).CollectiblesItemType.AVATAR_DECORATION === type) {
+    const intl5 = require(onSuccess[4]).intl;
+    let stringResult = intl5.string(require(onSuccess[4]).t.zOA4ax);
+  } else if (require(onSuccess[3]).CollectiblesItemType.NAMEPLATE === type) {
+    const intl4 = require(onSuccess[4]).intl;
+    stringResult = intl4.string(require(onSuccess[4]).t.gOzMvx);
+  } else if (require(onSuccess[3]).CollectiblesItemType.PROFILE_FRAME === type) {
+    const intl3 = require(onSuccess[4]).intl;
+    stringResult = intl3.string(require(onSuccess[4]).t.lOF4zR);
+  } else if (require(onSuccess[3]).CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl2 = require(onSuccess[4]).intl;
+    stringResult = intl2.string(require(onSuccess[4]).t.SWm2ai);
   } else {
-    const BUNDLE = arg1(dependencyMap[3]).CollectiblesItemType.BUNDLE;
-    const intl = arg1(dependencyMap[4]).intl;
-    stringResult = intl.string(arg1(dependencyMap[4]).t.tf1ZZ4);
+    const BUNDLE = require(onSuccess[3]).CollectiblesItemType.BUNDLE;
+    const intl = require(onSuccess[4]).intl;
+    stringResult = intl.string(require(onSuccess[4]).t.tf1ZZ4);
   }
   const items = [product];
   const memo = obj.useMemo(() => {
@@ -150,8 +147,8 @@ export const useHandleUseNow = function useHandleUseNow(product) {
     }
     return flag;
   }, items);
-  obj = { handleUseNow: obj.useCallback(callback(tmp), items1), isApplying: tmp2[0], canUseNow: memo };
+  obj = { handleUseNow: obj.useCallback(onError(tmp), items1), isApplying: tmp2[0], canUseNow: memo };
   // CreateGeneratorClosureLongIndex (0x67)
-  const items1 = [memo, firstAvatarDecoration, firstProfileEffect, firstNameplate, firstProfileFrame, onSuccess, stringResult, onError];
+  items1 = [memo, firstAvatarDecoration, firstProfileEffect, firstNameplate, firstProfileFrame, onSuccess, stringResult, onError];
   return obj;
 };

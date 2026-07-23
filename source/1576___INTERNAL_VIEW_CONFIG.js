@@ -1,11 +1,12 @@
 // Module ID: 1576
-// Function ID: 17648
+// Function ID: 17649
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42]
 
 // Module 1576 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "OverKeyboardView", validAttributes: { visible: true } };
-const _module = require(dependencyMap[0]);
+import get from "get";
 
-export default _module.get("OverKeyboardView", () => obj);
+const obj = { uiViewClassName: "OverKeyboardView", validAttributes: { visible: true } };
+
+export default get.get("OverKeyboardView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

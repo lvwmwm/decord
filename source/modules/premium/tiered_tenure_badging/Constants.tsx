@@ -1,10 +1,9 @@
-// Module ID: 8522
-// Function ID: 67934
+// Module ID: 8528
+// Function ID: 67971
 // Name: DEFAULT_PREMIUM_BADGE_ID
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8522 (DEFAULT_PREMIUM_BADGE_ID)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/premium/tiered_tenure_badging/Constants.tsx");
+// Module 8528 (DEFAULT_PREMIUM_BADGE_ID)
+const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/Constants.tsx");
 
 export const DEFAULT_PREMIUM_BADGE_ID = "premium";

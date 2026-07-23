@@ -1,10 +1,9 @@
 // Module ID: 783
-// Function ID: 8870
+// Function ID: 8871
 // Name: Radius
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 783 (Radius)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/tokens/radii/generated/generated-definitions.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/tokens/radii/generated/generated-definitions.tsx");
 
-export const Radius = { PX_10: null, PX_12: null, PX_16: null, PX_20: null, PX_24: null, PX_26: null, PX_30: null, PX_32: null };
+export const Radius = { none: 0, xs: 4, sm: 8, md: 12, lg: 16, xl: 24, xxl: 32, round: 2147483647 };

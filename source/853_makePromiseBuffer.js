@@ -1,9 +1,11 @@
 // Module ID: 853
-// Function ID: 9579
+// Function ID: 9580
 // Name: makePromiseBuffer
-// Dependencies: []
+// Dependencies: [849]
 
 // Module 853 (makePromiseBuffer)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 const forResult = Symbol.for("SentryBufferFullError");
 arg5.SENTRY_BUFFER_FULL_ERROR = forResult;
@@ -18,34 +20,34 @@ arg5.makePromiseBuffer = function makePromiseBuffer() {
       num = arguments[0];
     }
   }
-  const arg1 = num;
-  const arg6 = new Set();
+  const set = new Set();
   const obj = {};
   Object.defineProperty(obj, "$", { get: () => Array.from(set), set: undefined });
   obj.add = function add(arg0) {
-    if (set.size < num) {
-      const promise = arg0();
-      let num = promise;
+    if (set.size < promise) {
+      promise = arg0();
       set.add(promise);
       promise.then(() => {
-        callback(promise);
+        outer1_2(promise);
       }, () => {
-        callback(promise);
+        outer1_2(promise);
       });
       return promise;
     } else {
-      num = 0;
-      return num(set[0]).rejectedSyncPromise(remove);
+      return 0(set[0]).rejectedSyncPromise(remove);
     }
   };
   obj.drain = function drain(arg0) {
-    let num = arg0;
+    let closure_0 = arg0;
     if (set.size) {
       const _Array = Array;
       const nextPromise = Promise.allSettled(Array.from(set)).then(() => true);
       if (arg0) {
         const items = [nextPromise, ];
-        const promise = new Promise((arg0) => setTimeout(() => arg0(false), arg0));
+        const promise = new Promise((arg0) => {
+          let closure_0 = arg0;
+          return setTimeout(() => callback(false), closure_0);
+        });
         items[1] = promise;
         return Promise.race(items);
       } else {
@@ -53,8 +55,7 @@ arg5.makePromiseBuffer = function makePromiseBuffer() {
       }
       const allSettledResult = Promise.allSettled(Array.from(set));
     } else {
-      num = 0;
-      return num(set[0]).resolvedSyncPromise(true);
+      return 0(set[0]).resolvedSyncPromise(true);
     }
   };
   return obj;

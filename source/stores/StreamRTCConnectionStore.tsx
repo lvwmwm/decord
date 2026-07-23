@@ -1,9 +1,24 @@
-// Module ID: 4212
-// Function ID: 36631
+// Module ID: 4216
+// Function ID: 36663
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4150, 1194, 4177, 4217, 4202, 653, 4195, 44, 4219, 22, 4194, 6981, 686, 4227, 477, 12730, 566, 2]
 
-// Module 4212 (_isNativeReflectConstruct)
+// Module 4216 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import isStreamKey from "isStreamKey";
+import dispatcher from "dispatcher";
+import getMediaEngineImpl from "getMediaEngineImpl";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { StreamTypes } from "StreamIssueReportReasons";
+import importDefaultResult1 from "dispatcher";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,14 +29,14 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function destroyStreamRTCConnections() {
-  const item = importDefault(dependencyMap[14]).forEach(closure_23, (isOwner) => {
+  const item = importDefault(22).forEach(closure_23, (isOwner) => {
     let str = "receiver-disconnect";
     if (isOwner.isOwner) {
       str = "sender-disconnect";
     }
     isOwner.destroy(str);
-    delete r2[r1];
-    delete r0[r1];
+    delete tmp3[tmp2];
+    delete tmp[tmp2];
   });
 }
 function handleRtcAction() {
@@ -31,7 +46,7 @@ function parseSourceType(str) {
   if (null == str) {
     return "unknown";
   } else {
-    if (!arg1(dependencyMap[19]).isPlatformEmbedded) {
+    if (!require(477) /* set */.isPlatformEmbedded) {
       let name;
       if (null != globalThis.platform) {
         name = globalThis.platform.name;
@@ -68,40 +83,28 @@ function parseSourceType(str) {
     }
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const importDefaultResult = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-const tmp2 = arg1(dependencyMap[10]);
-const RTCConnectionQuality = tmp2.RTCConnectionQuality;
-const StreamTypes = arg1(dependencyMap[11]).StreamTypes;
+const RTCConnectionQuality = ME.RTCConnectionQuality;
 let closure_16 = {};
 let closure_17 = {};
 let closure_18 = {};
 let closure_19 = {};
 let closure_20 = {};
 let closure_21 = {};
-const PORTRAIT = tmp2.StreamLayouts.PORTRAIT;
+const PORTRAIT = ME.StreamLayouts.PORTRAIT;
 let closure_23 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class StreamRTCConnectionStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, StreamRTCConnectionStore);
-      obj = closure_7(StreamRTCConnectionStore);
-      tmp2 = closure_6;
-      if (closure_24()) {
+      tmp = outer1_4(this, StreamRTCConnectionStore);
+      obj = outer1_7(StreamRTCConnectionStore);
+      tmp2 = outer1_6;
+      if (outer1_24()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -110,48 +113,47 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = StreamRTCConnectionStore;
   callback2(StreamRTCConnectionStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10, closure_11, closure_13, closure_9);
+      this.waitFor(outer1_10, outer1_11, outer1_13, outer1_9);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "getRTCConnections",
     value() {
-      return closure_23;
+      return outer1_23;
     }
   };
   items[1] = obj;
   obj = {
     key: "getAllActiveStreamKeys",
     value() {
-      return Object.keys(closure_23);
+      return Object.keys(outer1_23);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getRTCConnection",
     value(arg0) {
-      return closure_23[arg0];
+      return outer1_23[arg0];
     }
   };
   items[4] = {
     key: "getQuality",
     value(arg0) {
-      if (callback(closure_2[20])(closure_11)) {
+      if (outer1_1(outer1_2[20])(outer1_11)) {
         if (null != arg0) {
           let quality;
-          if (null != closure_23[arg0]) {
+          if (null != outer1_23[arg0]) {
             quality = tmp3.quality;
           }
         }
         return quality;
       }
-      quality = constants.UNKNOWN;
+      quality = outer1_14.UNKNOWN;
     }
   };
   items[5] = {
@@ -161,7 +163,7 @@ let tmp3 = (Store) => {
         return null;
       } else {
         let tmp2;
-        if (null != closure_23[arg0]) {
+        if (null != outer1_23[arg0]) {
           let mediaSessionId = null;
           if (null != obj) {
             mediaSessionId = obj.getMediaSessionId();
@@ -179,7 +181,7 @@ let tmp3 = (Store) => {
         return null;
       } else {
         let tmp2;
-        if (null != closure_23[arg0]) {
+        if (null != outer1_23[arg0]) {
           let rTCConnectionId = null;
           if (null != obj) {
             rTCConnectionId = obj.getRTCConnectionId();
@@ -197,7 +199,7 @@ let tmp3 = (Store) => {
         return null;
       } else {
         let videoStats = null;
-        if (null != closure_23[arg0]) {
+        if (null != outer1_23[arg0]) {
           videoStats = obj.getVideoStats();
         }
         return videoStats;
@@ -211,7 +213,7 @@ let tmp3 = (Store) => {
         return "";
       } else {
         let str2 = "";
-        if (null != closure_23[arg0]) {
+        if (null != outer1_23[arg0]) {
           str2 = "";
           if (null != tmp2.hostname) {
             str2 = tmp2.hostname;
@@ -228,7 +230,7 @@ let tmp3 = (Store) => {
         return null;
       } else {
         let region = null;
-        if (null != closure_23[arg0]) {
+        if (null != outer1_23[arg0]) {
           region = obj.getRegion();
         }
         return region;
@@ -242,7 +244,7 @@ let tmp3 = (Store) => {
         return null;
       } else {
         let maxViewers = null;
-        if (null != closure_23[arg0]) {
+        if (null != outer1_23[arg0]) {
           maxViewers = obj.getMaxViewers();
         }
         return maxViewers;
@@ -252,20 +254,20 @@ let tmp3 = (Store) => {
   items[11] = {
     key: "getStreamSourceId",
     value(arg0) {
-      return closure_19[arg0];
+      return outer1_19[arg0];
     }
   };
   items[12] = {
     key: "getLastNonZeroRemoteVideoSinkWantsTime",
     value(arg0) {
-      return closure_21[arg0];
+      return outer1_21[arg0];
     }
   };
   items[13] = {
     key: "getUserIds",
     value(arg0) {
       let userIds;
-      if (null != closure_23[arg0]) {
+      if (null != outer1_23[arg0]) {
         userIds = obj.getUserIds();
       }
       return userIds;
@@ -275,7 +277,7 @@ let tmp3 = (Store) => {
     key: "isUserConnected",
     value(arg0, arg1) {
       let isUserConnected;
-      if (null != closure_23[arg0]) {
+      if (null != outer1_23[arg0]) {
         isUserConnected = obj.getIsUserConnected(arg1);
       }
       return isUserConnected;
@@ -285,7 +287,7 @@ let tmp3 = (Store) => {
     key: "getSecureFramesState",
     value(arg0) {
       let secureFramesState;
-      if (null != closure_23[arg0]) {
+      if (null != outer1_23[arg0]) {
         secureFramesState = obj.getSecureFramesState();
       }
       return secureFramesState;
@@ -295,7 +297,7 @@ let tmp3 = (Store) => {
     key: "getSecureFramesRosterMapEntry",
     value(arg0, arg1) {
       let secureFramesRosterMap;
-      if (null != closure_23[arg0]) {
+      if (null != outer1_23[arg0]) {
         secureFramesRosterMap = obj.getSecureFramesRosterMap();
       }
       let value;
@@ -306,7 +308,7 @@ let tmp3 = (Store) => {
     }
   };
   return callback(StreamRTCConnectionStore, items);
-}(importDefault(dependencyMap[21]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "StreamRTCConnectionStore";
 if (importDefaultResult.isSupported()) {
   let obj = {
@@ -315,15 +317,15 @@ if (importDefaultResult.isSupported()) {
         destroyStreamRTCConnections();
       },
     CONNECTION_CLOSED: function handleConnectionClosed() {
-        let closure_3 = null;
+        let c3 = null;
         destroyStreamRTCConnections();
       },
     RTC_CONNECTION_STATE: handleRtcAction,
     RTC_CONNECTION_PING: handleRtcAction,
     RTC_CONNECTION_LOSS_RATE: handleRtcAction,
     RTC_CONNECTION_UPDATE_ID: function handleRtcConnectionUpdateId(arg0) {
-        const arg1 = arg0;
-        return importDefault(dependencyMap[14]).some(closure_23, (arg0) => arg0 === arg0.connection);
+        let closure_0 = arg0;
+        return importDefault(22).some(closure_23, (arg0) => arg0 === connection.connection);
       },
     RTC_CONNECTION_SECURE_FRAMES_UPDATE: handleRtcAction,
     RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: function handleRtcConnectionRemoteVideoSinkWants(guildId) {
@@ -333,7 +335,7 @@ if (importDefaultResult.isSupported()) {
         let wants;
         guildId = guildId.guildId;
         ({ context, wants, userId, channelId } = guildId);
-        let obj = arg1(dependencyMap[15]);
+        let obj = require(4194) /* isStreamKey */;
         obj = {};
         if (null == guildId) {
           let GUILD = StreamTypes.CALL;
@@ -345,9 +347,9 @@ if (importDefaultResult.isSupported()) {
         obj.channelId = channelId;
         obj.ownerId = userId;
         const encodeStreamKeyResult = obj.encodeStreamKey(obj);
-        let tmp4 = context === arg1(dependencyMap[18]).MediaEngineContextTypes.STREAM;
+        let tmp4 = context === require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM;
         if (tmp4) {
-          tmp4 = null != closure_23[encodeStreamKeyResult];
+          tmp4 = null != dependencyMap4[encodeStreamKeyResult];
         }
         if (tmp4) {
           const _Object = Object;
@@ -376,19 +378,19 @@ if (importDefaultResult.isSupported()) {
         let channelId;
         let goLiveModalDurationMs;
         let guildId;
+        let importDefault;
         let pid;
         let sourceId;
         let sourcePid;
         let streamType;
         appContext = appContext.appContext;
-        const arg1 = appContext;
-        ({ pid, nativePickerStyleUsed: closure_1, goLiveModalDurationMs } = appContext);
+        ({ pid, nativePickerStyleUsed: importDefault, goLiveModalDurationMs } = appContext);
         ({ streamType, guildId, channelId, sourceId, sourcePid, analyticsLocations } = appContext);
-        let obj = arg1(dependencyMap[15]);
+        let obj = appContext(4194);
         obj = { streamType, guildId, channelId, ownerId: id.getId() };
         const encodeStreamKeyResult = obj.encodeStreamKey(obj);
         closure_16[encodeStreamKeyResult] = { appContext, analyticsLocations };
-        const item = importDefault(dependencyMap[14]).forEach(closure_23, (analyticsContext) => {
+        const item = importDefault(22).forEach(dependencyMap4, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;
           analyticsContext.setActionContext(appContext);
           const result = analyticsContext.setNativePickerStyleUsed(closure_1);
@@ -402,32 +404,31 @@ if (importDefaultResult.isSupported()) {
         closure_19[encodeStreamKeyResult] = sourceId;
         closure_18[encodeStreamKeyResult] = pid;
         if (null != pid) {
-          const gameForPID = gameForPID.getGameForPID(pid);
+          gameForPID = gameForPID.getGameForPID(pid);
           if (null != gameForPID) {
             obj = {};
             ({ name: obj3.name, id: obj3.id, exeName: obj3.exe, distributor: obj3.distributor, sku: obj3.sku, gameMetadata: obj3.gameMetadata } = gameForPID);
-            closure_17[encodeStreamKeyResult] = obj;
+            dependencyMap2[encodeStreamKeyResult] = obj;
           }
-          if (null != closure_23[encodeStreamKeyResult]) {
-            const analyticsContext = tmp9.analyticsContext;
-            const result = analyticsContext.updateStreamApplication(closure_17[encodeStreamKeyResult]);
+          if (null != dependencyMap4[encodeStreamKeyResult]) {
+            let analyticsContext = tmp11.analyticsContext;
+            let result = analyticsContext.updateStreamApplication(dependencyMap2[encodeStreamKeyResult]);
           }
-        } else if (null != closure_23[encodeStreamKeyResult]) {
-          const analyticsContext2 = tmp4.analyticsContext;
+        } else if (null != dependencyMap4[encodeStreamKeyResult]) {
+          const analyticsContext2 = tmp6.analyticsContext;
           const result1 = analyticsContext2.updateStreamApplication(null);
         }
         if (null != goLiveModalDurationMs) {
           closure_20[encodeStreamKeyResult] = goLiveModalDurationMs;
         } else {
-          delete r4[r2];
+          delete tmp2[tmp];
         }
       },
     STREAM_STOP: function handleStreamStop(appContext) {
         appContext = appContext.appContext;
-        const arg1 = appContext;
         const streamKey = appContext.streamKey;
         closure_16[streamKey] = { appContext, analyticsLocations: undefined };
-        const item = importDefault(dependencyMap[14]).forEach(closure_23, (analyticsContext) => {
+        const item = importDefault(22).forEach(closure_23, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;
           analyticsContext.setActionContext(appContext);
           if (analyticsContext.isOwner) {
@@ -436,7 +437,7 @@ if (importDefaultResult.isSupported()) {
         });
         closure_19[streamKey] = null;
         closure_18[streamKey] = null;
-        delete r1[r2];
+        delete tmp[tmp2];
       },
     STREAM_CREATE: function handleStreamCreate(arg0) {
         let region;
@@ -445,30 +446,30 @@ if (importDefaultResult.isSupported()) {
         let streamKey;
         let viewerIds;
         ({ streamKey, rtcServerId, viewerIds } = arg0);
-        let obj = closure_23[streamKey];
+        let obj = dependencyMap4[streamKey];
         ({ rtcChannelId, region } = arg0);
-        let obj1 = arg1(dependencyMap[15]);
-        let tmp2 = null == obj;
-        if (tmp2) {
-          tmp2 = null != rtcServerId;
+        let obj1 = require(4194) /* isStreamKey */;
+        let tmp4 = null == obj;
+        if (tmp4) {
+          tmp4 = null != rtcServerId;
         }
-        if (tmp2) {
-          if (null == closure_18[streamKey]) {
-            closure_17[streamKey] = null;
+        if (tmp4) {
+          if (null == table[streamKey]) {
+            dependencyMap2[streamKey] = null;
           }
-          let tmp6 = null == closure_17[streamKey];
-          if (tmp6) {
-            tmp6 = null == closure_19[streamKey];
+          let tmp8 = null == dependencyMap2[streamKey];
+          if (tmp8) {
+            tmp8 = null == dependencyMap3[streamKey];
           }
-          if (tmp6) {
-            closure_17[streamKey] = arg1(dependencyMap[16]).getStreamerApplication(decodeStreamKeyResult, closure_12);
-            const obj3 = arg1(dependencyMap[16]);
+          if (tmp8) {
+            dependencyMap2[streamKey] = require(6981) /* _findPlayingActivity */.getStreamerApplication(decodeStreamKeyResult, closure_12);
+            const obj3 = require(6981) /* _findPlayingActivity */;
           }
-          const StreamRTCAnalyticsContext = arg1(dependencyMap[13]).StreamRTCAnalyticsContext;
-          obj = { streamRegion: region, streamApplication: closure_17[streamKey], streamSourceType: parseSourceType(closure_19[streamKey]) };
+          const StreamRTCAnalyticsContext = require(4219) /* _isNativeReflectConstruct */.StreamRTCAnalyticsContext;
+          obj = { streamRegion: region, streamApplication: dependencyMap2[streamKey], streamSourceType: parseSourceType(dependencyMap3[streamKey]) };
           let appContext;
-          if (null != closure_16[streamKey]) {
-            appContext = tmp18.appContext;
+          if (null != dependencyMap[streamKey]) {
+            appContext = tmp20.appContext;
           }
           obj.actionContext = appContext;
           let num3 = 0;
@@ -476,29 +477,29 @@ if (importDefaultResult.isSupported()) {
             num3 = viewerIds.length;
           }
           obj.numViewers = num3;
-          obj.goLiveModalDurationMs = closure_20[streamKey];
+          obj.goLiveModalDurationMs = table2[streamKey];
           let analyticsLocations;
-          if (null != closure_16[streamKey]) {
-            analyticsLocations = tmp22.analyticsLocations;
+          if (null != dependencyMap[streamKey]) {
+            analyticsLocations = tmp24.analyticsLocations;
           }
           obj.analyticsLocations = analyticsLocations;
           const prototype = StreamRTCAnalyticsContext.prototype;
           const streamRTCAnalyticsContext = new StreamRTCAnalyticsContext(obj);
-          importDefault(dependencyMap[12])(null != closure_3, "Creating RTCConnection without session.");
-          let tmp33 = importDefault(dependencyMap[13]);
+          importDefault(44)(null != closure_3, "Creating RTCConnection without session.");
+          let tmp35 = importDefault(4219);
           obj = { sessionId: closure_3, streamKey, serverId: rtcServerId, channelId: rtcChannelId, initialLayout: PORTRAIT, analyticsContext: streamRTCAnalyticsContext, parentMediaSessionId: mediaSessionId.getMediaSessionId() };
-          const prototype2 = tmp33.prototype;
-          tmp33 = new tmp33(obj);
-          closure_23[streamKey] = tmp33;
-          obj = tmp33;
+          const prototype2 = tmp35.prototype;
+          tmp35 = new tmp35(obj);
+          dependencyMap4[streamKey] = tmp35;
+          obj = tmp35;
         }
-        delete r2[r3];
-        const decodeStreamKeyResult = obj1.decodeStreamKey(streamKey);
+        delete tmp[tmp2];
+        decodeStreamKeyResult = obj1.decodeStreamKey(streamKey);
         obj1 = { type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET", mediaEngineConnectionId: obj.getMediaEngineConnectionId() };
-        importDefault(dependencyMap[17]).dispatch(obj1);
+        importDefault(686).dispatch(obj1);
       },
     STREAM_SERVER_UPDATE: function handleStreamServerUpdate(endpoint) {
-        if (null == closure_23[endpoint.streamKey]) {
+        if (null == dependencyMap4[endpoint.streamKey]) {
           return false;
         } else {
           obj.connect(endpoint.endpoint, endpoint.token);
@@ -506,7 +507,7 @@ if (importDefaultResult.isSupported()) {
       },
     STREAM_UPDATE: function handleStreamUpdate(viewerIds) {
         viewerIds = viewerIds.viewerIds;
-        if (null == closure_23[viewerIds.streamKey]) {
+        if (null == dependencyMap4[viewerIds.streamKey]) {
           return false;
         } else {
           if (null != viewerIds) {
@@ -517,27 +518,28 @@ if (importDefaultResult.isSupported()) {
         }
       },
     STREAM_DELETE: function handleStreamDelete(arg0) {
-        let obj = closure_23[arg0.streamKey];
+        let obj = dependencyMap4[arg0.streamKey];
         if (null == obj) {
           return false;
         } else {
           obj = { type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET" };
           obj.mediaEngineConnectionId = obj.getMediaEngineConnectionId();
-          importDefault(dependencyMap[17]).dispatch(obj);
+          importDefault(686).dispatch(obj);
           obj.destroy("stream-end");
-          delete r1[r2];
+          delete tmp[tmp2];
         }
       },
     STREAM_LAYOUT_UPDATE: function handleLayoutUpdate(layout) {
         layout = layout.layout;
-        const arg1 = layout;
-        const PORTRAIT = layout;
         const values = Object.values(closure_23);
         const item = values.forEach((layoutChange) => layoutChange.layoutChange(layout));
       },
     VIDEO_SIZE_UPDATE: function handleVideoSizeUpdate(arg0) {
-        ({ streamId: closure_0, dimensions: closure_1, zoom: closure_2 } = arg0);
-        const item = importDefault(dependencyMap[14]).forEach(closure_23, (setVideoSize) => {
+        let dependencyMap;
+        let importDefault;
+        let require;
+        ({ streamId: require, dimensions: importDefault, zoom: dependencyMap } = arg0);
+        const item = importDefault(22).forEach(closure_23, (setVideoSize) => {
           if (null != setVideoSize) {
             setVideoSize.setVideoSize(closure_0, closure_1, closure_2);
           }
@@ -547,8 +549,7 @@ if (importDefaultResult.isSupported()) {
 } else {
   obj = {};
 }
-tmp3 = new tmp3(importDefault(dependencyMap[17]), obj);
-const importDefaultResult1 = importDefault(dependencyMap[17]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("stores/StreamRTCConnectionStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/StreamRTCConnectionStore.tsx");
 
 export default tmp3;

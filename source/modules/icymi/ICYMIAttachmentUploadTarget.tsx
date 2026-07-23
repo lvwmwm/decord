@@ -1,52 +1,56 @@
-// Module ID: 4706
-// Function ID: 40949
+// Module ID: 4709
+// Function ID: 40967
 // Name: ICYMIAttachmentUploadTarget
-// Dependencies: []
+// Dependencies: [6, 7, 653, 4666, 2]
 
-// Module 4706 (ICYMIAttachmentUploadTarget)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ Endpoints: closure_4, MAX_ATTACHMENT_SIZE: closure_5, MAX_UPLOAD_COUNT: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const tmp3 = () => {
+// Module 4709 (ICYMIAttachmentUploadTarget)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Endpoints: closure_4, MAX_ATTACHMENT_SIZE: closure_5, MAX_UPLOAD_COUNT: closure_6 } = ME);
+const tmp3 = (() => {
   class ICYMIAttachmentUploadTarget {
     constructor() {
-      tmp = closure_2(this, ICYMIAttachmentUploadTarget);
+      tmp = outer1_2(this, ICYMIAttachmentUploadTarget);
       return;
     }
   }
-  const arg1 = ICYMIAttachmentUploadTarget;
   let obj = {
     key: "getCreateAttachmentURL",
     value() {
-      return closure_4.GRAVITY_ATTACHMENTS;
+      return outer1_4.GRAVITY_ATTACHMENTS;
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getDeleteUploadURL",
     value(arg0) {
-      return closure_4.MESSAGE_DELETE_UPLOAD(arg0);
+      return outer1_4.MESSAGE_DELETE_UPLOAD(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getMaxFileSize",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getMaxAttachmentsCount",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[4] = {
     key: "getMaxTotalAttachmentSize",
     value() {
-      return ICYMIAttachmentUploadTarget(closure_1[3]).MAX_TOTAL_ATTACHMENT_SIZE;
+      return ICYMIAttachmentUploadTarget(outer1_1[3]).MAX_TOTAL_ATTACHMENT_SIZE;
     }
   };
   items[5] = {
@@ -56,7 +60,7 @@ const tmp3 = () => {
     }
   };
   return callback(ICYMIAttachmentUploadTarget, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/icymi/ICYMIAttachmentUploadTarget.tsx");
+})();
+const result = require("ME").fileFinishedImporting("modules/icymi/ICYMIAttachmentUploadTarget.tsx");
 
 export default tmp3;

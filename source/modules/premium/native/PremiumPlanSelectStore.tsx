@@ -1,22 +1,22 @@
-// Module ID: 12359
-// Function ID: 94570
+// Module ID: 12473
+// Function ID: 96726
 // Name: usePremiumPlanSelectStore
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 // Exports: setIsPurchasing
 
-// Module 12359 (usePremiumPlanSelectStore)
-const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({ "Bool(false)": "L", "Bool(false)": "L" }));
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/premium/native/PremiumPlanSelectStore.tsx");
+// Module 12473 (usePremiumPlanSelectStore)
+import keys from "keys";
+
+const obj = keys.create(() => ({ isPurchasing: false, purchasingProductId: null }));
+const result = require("set").fileFinishedImporting("modules/premium/native/PremiumPlanSelectStore.tsx");
 
 export const usePremiumPlanSelectStore = obj;
 export const setIsPurchasing = function setIsPurchasing(arg0) {
   let tmp = arg1;
-  const require = arg0;
+  const _require = arg0;
   if (arg1 === undefined) {
     tmp = null;
   }
   const dependencyMap = tmp;
-  require(dependencyMap[1]).batchUpdates(() => state.setState({ isPurchasing: arg0, purchasingProductId: tmp }));
+  _require(682).batchUpdates(() => outer1_2.setState({ isPurchasing: closure_0, purchasingProductId: closure_1 }));
 };

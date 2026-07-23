@@ -1,21 +1,22 @@
-// Module ID: 4293
-// Function ID: 37511
+// Module ID: 4297
+// Function ID: 37543
 // Name: TypedEventEmitter
-// Dependencies: []
+// Dependencies: [6, 7, 631, 2]
 
-// Module 4293 (TypedEventEmitter)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 4297 (TypedEventEmitter)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class TypedEventEmitter {
     constructor() {
-      tmp = closure_2(this, TypedEventEmitter);
-      eventEmitter = new TypedEventEmitter(closure_1[2]).EventEmitter();
+      tmp = outer1_2(this, TypedEventEmitter);
+      eventEmitter = new TypedEventEmitter(outer1_1[2]).EventEmitter();
       this.emitter = eventEmitter;
       return;
     }
   }
-  const arg1 = TypedEventEmitter;
   let obj = {
     key: "on",
     value(arg0, arg1) {
@@ -23,7 +24,7 @@ const tmp2 = () => {
       emitter.on(arg0, arg1);
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "off",
     value(arg0, arg1) {
@@ -77,7 +78,7 @@ const tmp2 = () => {
     }
   };
   return callback(TypedEventEmitter, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");
+})();
+const result = require("EventEmitter").fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");
 
 export default tmp2;

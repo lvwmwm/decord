@@ -1,17 +1,17 @@
-// Module ID: 16047
-// Function ID: 123197
+// Module ID: 16164
+// Function ID: 125370
 // Name: setSection
-// Dependencies: []
+// Dependencies: [653, 686, 1198, 15440, 2]
 
-// Module 16047 (setSection)
+// Module 16164 (setSection)
+import { Routes } from "ME";
+
 function setSection(section) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(686);
   obj = { type: "FRIENDS_SET_SECTION", section };
   obj.dispatch(obj);
 }
-const Routes = require(dependencyMap[0]).Routes;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("actions/FriendsActionCreators.tsx");
+const result = require("shouldNavigate").fileFinishedImporting("actions/FriendsActionCreators.tsx");
 
 export default {
   transitionToSection(PENDING, arg1) {
@@ -24,18 +24,18 @@ export default {
       flag = false;
     }
     if (obj2.getHistory().location.pathname !== Routes.FRIENDS) {
-      require(dependencyMap[2]).transitionTo(Routes.FRIENDS);
-      const obj3 = require(dependencyMap[2]);
+      require(1198) /* shouldNavigate */.transitionTo(Routes.FRIENDS);
+      const obj3 = require(1198) /* shouldNavigate */;
     }
     setSection(PENDING);
     if (flag) {
       obj = { tab_opened: PENDING };
-      importDefault(dependencyMap[3])(obj);
+      importDefault(15440)(obj);
     }
   },
   setSection,
   setInitialSection(section) {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(686);
     obj = { type: "FRIENDS_SET_INITIAL_SECTION", section };
     obj.dispatch(obj);
   }

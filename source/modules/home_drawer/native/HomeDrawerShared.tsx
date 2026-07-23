@@ -1,17 +1,20 @@
-// Module ID: 14720
-// Function ID: 111038
+// Module ID: 14835
+// Function ID: 113202
 // Name: HomeDrawerSharedItem
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 14720 (HomeDrawerSharedItem)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsxs: closure_1, jsx: closure_2 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_3 = arg1(dependencyMap[3]).createStyles({ container: {}, titleContainer: { top: true, left: 0, position: 0.5, width: 3 }, rightContainer: { overflow: "hidden" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerShared.tsx");
+// Module 14835 (HomeDrawerSharedItem)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_1;
+let closure_2;
+({ jsxs: closure_1, jsx: closure_2 } = jsxProd);
+let closure_3 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 }, titleContainer: { flex: 1, flexDirection: "column", justifyContent: "center", gap: 2 }, rightContainer: { overflow: "hidden" } });
+const result = require("jsxProd").fileFinishedImporting("modules/home_drawer/native/HomeDrawerShared.tsx");
 
 export const HomeDrawerSharedItem = function HomeDrawerSharedItem(right) {
   let subtitle;
@@ -21,7 +24,7 @@ export const HomeDrawerSharedItem = function HomeDrawerSharedItem(right) {
   const tmp = callback3();
   let obj = { style: tmp.container };
   obj = { style: tmp.titleContainer, children: items };
-  const items = [title, subtitle];
+  items = [title, subtitle];
   const items1 = [callback(View, obj), ];
   let tmp4 = null;
   if (null != right) {

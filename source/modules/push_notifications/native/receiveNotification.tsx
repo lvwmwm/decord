@@ -1,21 +1,38 @@
-// Module ID: 16473
-// Function ID: 127254
+// Module ID: 16590
+// Function ID: 129428
 // Name: onStageConnectionError
-// Dependencies: []
+// Dependencies: [5, 7461, 6758, 1194, 1348, 1849, 5593, 653, 4195, 1354, 11453, 3, 3831, 1212, 9314, 3982, 1207, 7477, 4138, 5737, 8353, 3981, 15143, 6883, 8492, 5484, 4140, 8922, 675, 4324, 477, 10815, 21, 15141, 6707, 20, 6708, 4808, 12644, 11456, 566, 10804, 9878, 4111, 668, 9501, 8321, 7087, 686, 4337, 1198, 4336, 12857, 2]
 // Exports: default
 
-// Module 16473 (onStageConnectionError)
+// Module 16590 (onStageConnectionError)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { NotificationTypes } from "str2";
+import ME from "ME";
+import { StreamTypes } from "StreamIssueReportReasons";
+import { GuildScheduledEventEntityTypes as closure_16 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import { MultiAccountSwitchLocation as closure_17 } from "MAX_ACCOUNTS";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+const require = arg1;
 function onStageConnectionError() {
-  let obj = importDefault(dependencyMap[12]);
+  let obj = importDefault(3831);
   obj = { key: "STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC" };
-  const intl = arg1(dependencyMap[13]).intl;
-  obj.content = intl.string(arg1(dependencyMap[13]).t.ah3RLk);
-  obj.icon = importDefault(dependencyMap[14]);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t.ah3RLk);
+  obj.icon = importDefault(9314);
   obj.open(obj);
 }
 function waitForConnection() {
   return new Promise((arg0) => {
-    callback(arg0);
+    outer1_5(arg0);
   });
 }
 function waitForDataOrConnection() {
@@ -24,7 +41,6 @@ function waitForDataOrConnection() {
 function _waitForDataOrConnection() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _waitForDataOrConnection = obj;
   return obj(...arguments);
 }
 function waitForNavigationReady() {
@@ -33,7 +49,6 @@ function waitForNavigationReady() {
 function _waitForNavigationReady() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _waitForNavigationReady = obj;
   return obj(...arguments);
 }
 function _connectToStage() {
@@ -42,54 +57,46 @@ function _connectToStage() {
 function _connectToStage2() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _connectToStage2 = obj;
   return obj(...arguments);
 }
 function _handleStageNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleStageNotification = obj;
   return obj(...arguments);
 }
 function _handleGuildEventNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleGuildEventNotification = obj;
   return obj(...arguments);
 }
 function _handleRelationshipAddNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleRelationshipAddNotification = obj;
   return obj(...arguments);
 }
 function _handleCallRingNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleCallRingNotification = obj;
   return obj(...arguments);
 }
 function _handleCallConnectNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleCallConnectNotification = obj;
   return obj(...arguments);
 }
 function _handleFriendSuggestionCreateNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleFriendSuggestionCreateNotification = obj;
   return obj(...arguments);
 }
 function _maybeAckNotificationCenter() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _maybeAckNotificationCenter = obj;
   return obj(...arguments);
 }
 function receiveNotification_(type) {
-  const arg1 = type;
-  let obj = arg1(dependencyMap[41]);
+  const _require = type;
+  let obj = _require(10804);
   const result = obj.initializeRouteManagerIfNeeded();
   let importDefault = false;
   if ("MESSAGE_CREATE" === type.type) {
@@ -98,10 +105,10 @@ function receiveNotification_(type) {
     obj = {};
     ({ guild_id: obj10.guildId, channel_id: obj10.channelId, message_id: obj10.messageId } = type);
     obj.isPreload = true;
-    const messages = importDefault(dependencyMap[42]).fetchMessages(obj);
+    const messages = importDefault(9878).fetchMessages(obj);
     importDefault = true;
     let flag = true;
-    const obj9 = importDefault(dependencyMap[42]);
+    const obj9 = importDefault(9878);
   } else {
     flag = false;
     if ("GENERIC_PUSH_NOTIFICATION_SENT" === type.type) {
@@ -109,8 +116,8 @@ function receiveNotification_(type) {
       if (null != type.deeplink) {
         flag = false;
         if ("" !== type.deeplink) {
-          const payload = importDefault(dependencyMap[43])(type.deeplink).payload;
-          if (payload.type === arg1(dependencyMap[44]).LinkingTypes.MESSAGE) {
+          const payload = importDefault(4111)(type.deeplink).payload;
+          if (payload.type === _require(668).LinkingTypes.MESSAGE) {
             let tracking_type;
             if (null != type) {
               tracking_type = type.tracking_type;
@@ -119,29 +126,29 @@ function receiveNotification_(type) {
               tracking_type = type.type;
             }
             if (tmp13) {
-              arg1(dependencyMap[45]).receivedNotification(payload.messageId, payload.channelId, tracking_type);
-              const obj6 = arg1(dependencyMap[45]);
+              _require(9501).receivedNotification(payload.messageId, payload.channelId, tracking_type);
+              const obj6 = _require(9501);
             }
             obj = {};
             ({ guildId: obj8.guildId, channelId: obj8.channelId, messageId: obj8.messageId } = payload);
             obj.isPreload = true;
-            const messages1 = importDefault(dependencyMap[42]).fetchMessages(obj);
+            const messages1 = importDefault(9878).fetchMessages(obj);
             importDefault = true;
             flag = true;
-            const obj7 = importDefault(dependencyMap[42]);
-            const tmp13 = null != tracking_type && null != payload.messageId && null != payload.channelId;
+            let obj7 = importDefault(9878);
+            tmp13 = null != tracking_type && null != payload.messageId && null != payload.channelId;
           } else {
-            if (payload.type === arg1(dependencyMap[44]).LinkingTypes.ICYMI) {
+            if (payload.type === _require(668).LinkingTypes.ICYMI) {
               if (null != type.channel_id) {
                 if (null != type.message_id) {
-                  const forNotification = importDefault(dependencyMap[46]).fetchForNotification(type.channel_id, type.message_id);
+                  const forNotification = importDefault(8321).fetchForNotification(type.channel_id, type.message_id);
                   flag = false;
-                  const obj5 = importDefault(dependencyMap[46]);
+                  let obj5 = importDefault(8321);
                 }
               }
             }
             flag = false;
-            if (payload.type === arg1(dependencyMap[44]).LinkingTypes.ICYMI) {
+            if (payload.type === _require(668).LinkingTypes.ICYMI) {
               flag = false;
               if (null != type.user_id) {
                 flag = false;
@@ -153,16 +160,16 @@ function receiveNotification_(type) {
                       status_emoji_id = type.status_emoji_id;
                     }
                   }
-                  const obj1 = { id: type.notification_center_id, type: arg1(dependencyMap[47]).ICYMIItemTypes.CUSTOM_STATUS, score: 1000 };
-                  const obj2 = {};
+                  let obj1 = { id: type.notification_center_id, type: _require(7087).ICYMIItemTypes.CUSTOM_STATUS, score: 1000 };
+                  let obj2 = {};
                   ({ user_id: obj3.user_id, status_text: obj3.text } = type);
                   obj2.emoji_id = status_emoji_id;
                   obj2.emoji_name = type.status_emoji_name;
                   obj2.emoji_animated = type.status_emoji_animated;
                   obj1.data = obj2;
-                  const forStatusNotification = importDefault(dependencyMap[46]).fetchForStatusNotification(obj1);
+                  const forStatusNotification = importDefault(8321).fetchForStatusNotification(obj1);
                   flag = false;
-                  const obj4 = importDefault(dependencyMap[46]);
+                  const obj4 = importDefault(8321);
                 }
               }
             }
@@ -195,186 +202,174 @@ function receiveNotification_(type) {
       }
     }
   }
-  function dispatch(self) {
-    let obj = _true(closure_3[48]);
+  (function dispatch() {
+    let obj = _true(outer1_3[48]);
     obj.dispatch({ type: "PUSH_NOTIFICATION_CLICK" });
-    let obj1 = _true(closure_3[28]);
-    obj = { notif_type: "tracking_type" in self ? tmp2.tracking_type : tmp2.type };
+    let obj1 = _true(outer1_3[28]);
+    obj = { notif_type: "tracking_type" in type ? tmp2.tracking_type : tmp2.type };
     let user_id = null;
-    if ("user_id" in self) {
-      user_id = self.user_id;
+    if ("user_id" in type) {
+      user_id = type.user_id;
     }
     obj.notif_user_id = user_id;
     let message_id = null;
-    if ("message_id" in self) {
-      message_id = self.message_id;
+    if ("message_id" in type) {
+      message_id = type.message_id;
     }
     obj.message_id = message_id;
     let message_type_ = null;
-    if ("message_type_" in self) {
-      message_type_ = self.message_type_;
+    if ("message_type_" in type) {
+      message_type_ = type.message_type_;
     }
     obj.message_type = message_type_;
-    let tmp9 = "message" in self;
+    let tmp9 = "message" in type;
     if (tmp9) {
-      tmp9 = null != self.message;
+      tmp9 = null != type.message;
     }
     obj.has_message = tmp9;
     let guild_id = null;
-    if ("guild_id" in self) {
-      guild_id = self.guild_id;
+    if ("guild_id" in type) {
+      guild_id = type.guild_id;
     }
     obj.guild_id = guild_id;
     let channel_id = null;
-    if ("channel_id" in self) {
-      channel_id = self.channel_id;
+    if ("channel_id" in type) {
+      channel_id = type.channel_id;
     }
     obj.channel_id = channel_id;
     let channel_type = null;
-    if ("channel_type" in self) {
-      channel_type = self.channel_type;
+    if ("channel_type" in type) {
+      channel_type = type.channel_type;
     }
     obj.channel_type = channel_type;
     let NumberResult = null;
-    if ("rel_type" in self) {
+    if ("rel_type" in type) {
       const _Number = Number;
-      NumberResult = Number(self.rel_type);
+      NumberResult = Number(type.rel_type);
     }
     obj.rel_type = NumberResult;
     let notification_id = null;
-    if ("notification_id" in self) {
-      notification_id = self.notification_id;
+    if ("notification_id" in type) {
+      notification_id = type.notification_id;
     }
     obj.notification_id = notification_id;
-    let tmp22 = "image_url" in self;
+    let tmp22 = "image_url" in type;
     if (tmp22) {
-      tmp22 = null != self.image_url;
+      tmp22 = null != type.image_url;
     }
     obj.has_image_thumbnail = tmp22;
     let join_id = null;
-    if ("join_id" in self) {
-      join_id = self.join_id;
+    if ("join_id" in type) {
+      join_id = type.join_id;
     }
     obj.join_id = join_id;
     let notif_instance_id = null;
-    if ("notif_instance_id" in self) {
-      notif_instance_id = self.notif_instance_id;
+    if ("notif_instance_id" in type) {
+      notif_instance_id = type.notif_instance_id;
     }
     obj.notif_instance_id = notif_instance_id;
     let notif_type_id = null;
-    if ("notif_type_id" in self) {
-      notif_type_id = self.notif_type_id;
+    if ("notif_type_id" in type) {
+      notif_type_id = type.notif_type_id;
     }
     obj.notif_type_id = notif_type_id;
     let mention_type = null;
-    if ("mention_type" in self) {
-      mention_type = self.mention_type;
+    if ("mention_type" in type) {
+      mention_type = type.mention_type;
     }
     obj.mention_type = mention_type;
-    obj1.track(constants.NOTIFICATION_CLICKED, obj);
-    function maybeAckNotificationCenter(arg0) {
-      return callback7(...arguments);
-    }(self);
-    const type = self.type;
+    obj1.track(outer1_11.NOTIFICATION_CLICKED, obj);
+    (function maybeAckNotificationCenter(closure_0) {
+      return outer2_33(...arguments);
+    })(type);
+    type = type.type;
     if ("MESSAGE_CREATE" === type) {
-      if (null != self.message) {
-        obj = { channelId: self.message.channel_id, message: self.message };
-        _true(closure_3[48]).dispatch(obj);
-        const obj5 = _true(closure_3[48]);
+      if (null != type.message) {
+        obj = { type: "MESSAGE_CREATE", channelId: type.message.channel_id, message: type.message, optimistic: true, isPushNotification: true };
+        _true(outer1_3[48]).dispatch(obj);
+        const obj5 = _true(outer1_3[48]);
       }
-      _true(closure_3[49]).popAll();
-      const obj7 = _true(closure_3[49]);
-      obj1 = { borderRadius: null, height: null, skipMessageFetch: _true };
-      self(closure_3[50]).transitionTo(closure_14.CHANNEL(self.guild_id, self.channel_id, self.message_id), obj1);
-      const obj8 = self(closure_3[50]);
+      _true(outer1_3[49]).popAll();
+      const obj7 = _true(outer1_3[49]);
+      obj1 = { navigationReplace: true, openChannel: true, skipMessageFetch: _true };
+      type(outer1_3[50]).transitionTo(outer1_14.CHANNEL(type.guild_id, type.channel_id, type.message_id), obj1);
+      const obj8 = type(outer1_3[50]);
     } else if ("FORUM_THREAD_CREATED" === type) {
-      callback().then(() => {
-        lib(closure_3[50]).transitionTo(closure_14.CHANNEL(lib.guild_id, lib.channel_id), { borderRadius: null, height: null });
+      outer1_20().then(() => {
+        callback(outer2_3[50]).transitionTo(outer2_14.CHANNEL(outer1_0.guild_id, outer1_0.channel_id), { navigationReplace: true, openChannel: true });
       });
-      const promise = callback();
+      const promise = outer1_20();
     } else if ("RELATIONSHIP_ADD" === type) {
-      !function handleRelationshipAddNotification(arg0) {
-        return callback3(...arguments);
-      }(self);
+      !(function handleRelationshipAddNotification(closure_0) {
+        return outer2_29(...arguments);
+      })(type);
     } else if ("CALL_RING" === type) {
-      !function handleCallRingNotification(arg0) {
-        return callback4(...arguments);
-      }(self);
+      !(function handleCallRingNotification(closure_0) {
+        return outer2_30(...arguments);
+      })(type);
     } else if ("CALL_CONNECT" === type) {
-      !function handleCallConnectNotification(arg0) {
-        return callback5(...arguments);
-      }(self);
+      !(function handleCallConnectNotification(closure_0) {
+        return outer2_31(...arguments);
+      })(type);
     } else if ("FRIEND_SUGGESTION_CREATE" === type) {
-      !function handleFriendSuggestionCreateNotification(arg0) {
-        return callback6(...arguments);
-      }(self);
+      !(function handleFriendSuggestionCreateNotification(closure_0) {
+        return outer2_32(...arguments);
+      })(type);
     } else if ("GUILD_STREAM_START" === type) {
-      const obj2 = { streamType: constants2.GUILD };
-      ({ user_id: obj4.ownerId, guild_id: obj4.guildId, channel_id: obj4.channelId } = self);
-      _true(closure_3[51])(obj2);
+      const obj2 = { streamType: outer1_15.GUILD };
+      ({ user_id: obj4.ownerId, guild_id: obj4.guildId, channel_id: obj4.channelId } = type);
+      _true(outer1_3[51])(obj2);
     } else if ("GUILD_SCHEDULED_EVENT_UPDATE" === type) {
-      !function handleGuildEventNotification(arg0) {
-        return callback2(...arguments);
-      }(self);
+      !(function handleGuildEventNotification(closure_0) {
+        return outer2_28(...arguments);
+      })(type);
     } else if ("STAGE_INSTANCE_CREATE" === type) {
-      !function handleStageNotification(arg0) {
-        return callback(...arguments);
-      }(self);
+      !(function handleStageNotification(closure_0) {
+        return outer2_27(...arguments);
+      })(type);
     } else if ("GENERIC_PUSH_NOTIFICATION_SENT" === type) {
-      if (null != self.deeplink) {
-        if ("" !== self.deeplink) {
-          const obj3 = { payload: _true(closure_3[43])(self.deeplink).payload, waitForConnection: false, skipMessageFetch: _true };
-          _true(closure_3[52])(obj3);
+      if (null != type.deeplink) {
+        if ("" !== type.deeplink) {
+          const obj3 = { payload: _true(outer1_3[43])(type.deeplink).payload, waitForConnection: false, skipMessageFetch: _true };
+          _true(outer1_3[52])(obj3);
         }
       }
     }
-  }();
+  })();
   return flag;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-arg1(dependencyMap[1]).addPostConnectionCallback;
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const NotificationTypes = arg1(dependencyMap[6]).NotificationTypes;
-({ AnalyticEvents: closure_11, ComponentActions: closure_12, RelationshipTypes: closure_13, Routes: closure_14 } = arg1(dependencyMap[7]));
-const StreamTypes = arg1(dependencyMap[8]).StreamTypes;
-let closure_16 = arg1(dependencyMap[9]).GuildScheduledEventEntityTypes;
-let closure_17 = arg1(dependencyMap[10]).MultiAccountSwitchLocation;
-let importDefaultResult = importDefault(dependencyMap[11]);
+require("shouldWaitForBlockingModals").addPostConnectionCallback;
+({ AnalyticEvents: closure_11, ComponentActions: closure_12, RelationshipTypes: closure_13, Routes: closure_14 } = ME);
 importDefaultResult = new importDefaultResult("receiveNotification");
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[53]).fileFinishedImporting("modules/push_notifications/native/receiveNotification.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/push_notifications/native/receiveNotification.tsx");
 
 export default function receiveNotification(getData) {
   if (null == getData.getData) {
     return false;
   } else {
-    arg1(dependencyMap[34]).trackAppOpened("notification");
-    const data = getData.getData();
-    const arg1 = data;
-    const obj2 = arg1(dependencyMap[34]);
+    data(6707).trackAppOpened("notification");
+    data = getData.getData();
+    const obj2 = data(6707);
     const _HermesInternal = HermesInternal;
-    importDefault(dependencyMap[35]).mark("\u2757", "Receive notification " + data.type);
+    importDefault(20).mark("\u2757", "Receive notification " + data.type);
     if (null != data.receiving_user_id) {
       if (null != store.getId()) {
         if (data.receiving_user_id !== store.getId()) {
-          arg1(dependencyMap[36]);
-          arg1(dependencyMap[37]);
-          arg1(dependencyMap[38]);
+          data(6708);
+          data(4808);
+          data(12644);
           let then = closure_17;
-          const obj = arg1(dependencyMap[39]);
-          then = arg1(dependencyMap[39]).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
+          const obj = data(11456);
+          then = data(11456).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
           then(() => {
-            const Emitter = callback(closure_3[40]).Emitter;
-            Emitter.batched(() => callback(closure_0));
+            const Emitter = outer1_1(outer1_3[40]).Emitter;
+            Emitter.batched(() => outer2_34(outer1_0));
           });
-          const switchAccountResult = arg1(dependencyMap[39]).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
+          const switchAccountResult = data(11456).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
         }
       }
     }
-    const Emitter = importDefault(dependencyMap[40]).Emitter;
-    return Emitter.batched(() => callback2(data));
+    let Emitter = importDefault(566).Emitter;
+    return Emitter.batched(() => outer1_34(data));
   }
 };

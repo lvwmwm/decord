@@ -1,5 +1,5 @@
 // Module ID: 1465
-// Function ID: 17009
+// Function ID: 17010
 // Name: nanoid
 // Dependencies: []
 
@@ -28,6 +28,7 @@ arg5.nanoid = function nanoid() {
   return str2;
 };
 arg5.customAlphabet = function customAlphabet(arg0) {
+  let closure_0 = arg0;
   let num = 21;
   if (arguments.length > 1) {
     num = 21;
@@ -46,7 +47,7 @@ arg5.customAlphabet = function customAlphabet(arg0) {
       let str2 = "";
       if (first | 0) {
         do {
-          let tmp5 = closure_0;
+          let tmp5 = length;
           let _Math = Math;
           str = `${closure_0[Math.random(Math) * closure_0.length | 0]}`;
           tmp6 = +diff;

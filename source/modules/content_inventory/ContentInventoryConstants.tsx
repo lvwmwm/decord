@@ -1,11 +1,10 @@
-// Module ID: 8323
-// Function ID: 65962
+// Module ID: 8329
+// Function ID: 65999
 // Name: ContentInventoryFeedKey
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8323 (ContentInventoryFeedKey)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/content_inventory/ContentInventoryConstants.tsx");
+// Module 8329 (ContentInventoryFeedKey)
+const result = require("set").fileFinishedImporting("modules/content_inventory/ContentInventoryConstants.tsx");
 
 export const ContentInventoryFeedKey = { GLOBAL_FEED: "global feed", GAME_PROFILE_FEED: "game profile feed" };
 export const ContentInventorySurfaceTypes = { GUILD_MEMBER_LIST: 1, [1]: "GUILD_MEMBER_LIST" };

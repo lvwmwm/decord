@@ -1,12 +1,13 @@
-// Module ID: 5907
-// Function ID: 49793
+// Module ID: 5912
+// Function ID: 49822
 // Name: BountiesPosterSpotIllustration
-// Dependencies: [4294967295, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 5913, 2]
 // Exports: BountiesPosterSpotIllustration
 
-// Module 5907 (BountiesPosterSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterSpotIllustration.native.tsx");
+// Module 5912 (BountiesPosterSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterSpotIllustration.native.tsx");
 
 export const BountiesPosterSpotIllustration = function BountiesPosterSpotIllustration(width) {
   let accessibilityLabel;
@@ -26,7 +27,7 @@ export const BountiesPosterSpotIllustration = function BountiesPosterSpotIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5913) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -34,5 +35,5 @@ export const BountiesPosterSpotIllustration = function BountiesPosterSpotIllustr
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

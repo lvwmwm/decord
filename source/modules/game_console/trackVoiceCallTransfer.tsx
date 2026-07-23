@@ -1,22 +1,23 @@
-// Module ID: 9039
-// Function ID: 71019
+// Module ID: 9046
+// Function ID: 71060
 // Name: trackVoiceCallTransfer
-// Dependencies: []
+// Dependencies: [1348, 4202, 4145, 653, 675, 2]
 // Exports: default
 
-// Module 9039 (trackVoiceCallTransfer)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");
+// Module 9046 (trackVoiceCallTransfer)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");
 
 export default function trackVoiceCallTransfer(channel_id, target_platform) {
-  let obj = importDefault(dependencyMap[4]);
+  let obj = importDefault(675);
   obj = {};
   let str = "discord_client";
   if (null != arg2) {
-    const sessionById = sessionById.getSessionById(arg2);
+    sessionById = sessionById.getSessionById(arg2);
     let os;
     if (null != sessionById) {
       os = sessionById.clientInfo.os;
@@ -24,7 +25,7 @@ export default function trackVoiceCallTransfer(channel_id, target_platform) {
     str = os;
   }
   obj.source_platform = str;
-  const channel = channel.getChannel(channel_id);
+  channel = channel.getChannel(channel_id);
   let guild_id;
   if (null != channel) {
     guild_id = channel.guild_id;

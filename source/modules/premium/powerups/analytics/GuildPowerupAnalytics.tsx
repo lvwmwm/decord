@@ -1,24 +1,24 @@
-// Module ID: 11566
-// Function ID: 89988
+// Module ID: 11576
+// Function ID: 90037
 // Name: ModalType
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [31, 653, 675, 2]
 // Exports: useLogPowerupModalOpened
 
-// Module 11566 (ModalType)
-import __exportStarResult1 from "__exportStarResult1";
-import { AnalyticEvents } from "__exportStarResult1";
+// Module 11576 (ModalType)
+import result from "result";
+import { AnalyticEvents } from "ME";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/premium/powerups/analytics/GuildPowerupAnalytics.tsx");
+const result = require("expandLocation").fileFinishedImporting("modules/premium/powerups/analytics/GuildPowerupAnalytics.tsx");
 
 export const ModalType = { DETAIL: "Boost Perk Shop Details", DEACTIVATE: "Boost Perk Shop Disable" };
 export const useLogPowerupModalOpened = function useLogPowerupModalOpened(guildId, powerup, DEACTIVATE) {
-  const importDefault = guildId;
-  const dependencyMap = powerup;
+  let closure_0 = guildId;
+  let closure_1 = powerup;
   const React = DEACTIVATE;
   const items = [DEACTIVATE, guildId, powerup.skuId];
   const effect = React.useEffect(() => {
-    let obj = arg0(arg1[2]);
-    obj = { type: arg2, sku_id: arg1.skuId, guild_id: arg0 };
-    obj.track(constants.OPEN_MODAL, obj);
+    let obj = guildId(powerup[2]);
+    obj = { type: result, sku_id: powerup.skuId, guild_id: guildId };
+    obj.track(outer1_3.OPEN_MODAL, obj);
   }, items);
 };

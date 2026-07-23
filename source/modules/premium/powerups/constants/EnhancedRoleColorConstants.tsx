@@ -1,13 +1,12 @@
-// Module ID: 16190
-// Function ID: 125025
+// Module ID: 16307
+// Function ID: 127198
 // Name: HOLOGRAPHIC_ROLE_COLORS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 16190 (HOLOGRAPHIC_ROLE_COLORS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/premium/powerups/constants/EnhancedRoleColorConstants.tsx");
-const items = [{ colors: [2348888514080357000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003118752441801781], name: "fire" }, { colors: [true, true], name: "golddust" }, { colors: [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006632362239907202, -45952215861021235000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000], name: "emerald" }, { colors: [false, false], name: "diamond" }, { colors: ["body", "flex"], name: "blurple" }, { colors: [-462216410425211100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1136476779960242200000000000000000000000000000000000000000000000000000000000000000000], name: "cupid" }, { colors: [1654717284, 105996984], name: "rosegold" }, { colors: [null, null], name: "desert" }, { colors: ["<string:3504029026>", "<string:150931390>"], name: "moss" }, { colors: [218041343, 654249471], name: "platinum" }, { colors: [false, false], name: "plum" }, { colors: [771690495, 939464959], name: "rose" }];
+// Module 16307 (HOLOGRAPHIC_ROLE_COLORS)
+const result = require("set").fileFinishedImporting("modules/premium/powerups/constants/EnhancedRoleColorConstants.tsx");
+const items = [{ colors: [11156283, 16730184], name: "fire" }, { colors: [13927485, 16768656], name: "golddust" }, { colors: [3577974, 7471006], name: "emerald" }, { colors: [5025232, 11729407], name: "diamond" }, { colors: [10382335, 10469887], name: "blurple" }, { colors: [16735702, 16751807], name: "cupid" }, { colors: [9467253, 16764614], name: "rosegold" }, { colors: [10192486, 16769460], name: "desert" }, { colors: [7640178, 11788729], name: "moss" }, { colors: [8886702, 15857663], name: "platinum" }, { colors: [8547266, 12036081], name: "plum" }, { colors: [9854847, 16755420], name: "rose" }];
 
-export const HOLOGRAPHIC_ROLE_COLORS = { marginRight: null, borderLeftColor: 4, borderLeftWidth: 0 };
-export const DEFAULT_GRADIENT_ROLE_COLORS = { marginRight: true, borderLeftColor: true, borderLeftWidth: true };
+export const HOLOGRAPHIC_ROLE_COLORS = { primary_color: 11127295, secondary_color: 16759788, tertiary_color: 16761760 };
+export const DEFAULT_GRADIENT_ROLE_COLORS = { primary_color: 10382335, secondary_color: 10469887, tertiary_color: null };
 export const GRADIENT_PRESETS = items;

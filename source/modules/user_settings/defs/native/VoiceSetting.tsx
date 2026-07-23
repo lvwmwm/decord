@@ -1,45 +1,47 @@
-// Module ID: 14021
-// Function ID: 106634
+// Module ID: 14135
+// Function ID: 108790
 // Name: route
-// Dependencies: []
+// Dependencies: [4177, 653, 566, 1212, 10095, 10735, 14136, 2]
 
-// Module 14021 (route)
-let closure_2 = importDefault(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const InputModes = tmp2.InputModes;
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14135 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import createToggle from "createToggle";
+
+const require = arg1;
+const InputModes = ME.InputModes;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.K3lovD);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.K3lovD);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[5]).MicrophoneIcon,
+  IconComponent: require("MicrophoneIcon").MicrophoneIcon,
   useTrailing: function useVoiceSettingTrailing() {
-    const items = [closure_2];
-    if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = arg1(dependencyMap[3]).intl;
-      let stringResult = intl2.string(arg1(dependencyMap[3]).t.Q8gkVL);
+    const items = [_isNativeReflectConstruct];
+    if (obj.useStateFromStores(items, () => outer1_2.getMode()) === InputModes.PUSH_TO_TALK) {
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.Q8gkVL);
     } else {
-      const intl = arg1(dependencyMap[3]).intl;
-      stringResult = intl.string(arg1(dependencyMap[3]).t.cHCEOJ);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl.string(require(1212) /* getSystemLocale */.t.cHCEOJ);
     }
     return stringResult;
   },
-  screen: obj,
+  screen: createToggle,
   useSearchTerms() {
-    const intl = arg1(dependencyMap[3]).intl;
-    const items = [intl.string(arg1(dependencyMap[3]).t.nuFtHH)];
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 };
-obj = {
-  route: tmp2.UserSettingsSections.VOICE,
+createToggle = {
+  route: ME.UserSettingsSections.VOICE,
   getComponent() {
-    return arg1(dependencyMap[6]).default;
+    return require(14136) /* KrispLogo */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/VoiceSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/VoiceSetting.tsx");
 
-export default route;
+export default createToggle;

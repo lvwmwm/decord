@@ -1,10 +1,16 @@
-// Module ID: 4460
-// Function ID: 39348
+// Module ID: 4464
+// Function ID: 39380
 // Name: validateSize
-// Dependencies: []
+// Dependencies: [653, 4465, 21, 1360, 22, 3712, 665, 4353, 2]
 // Exports: canEmbedLinks, getEffectiveVideoProvider, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4460 (validateSize)
+// Module 4464 (validateSize)
+import ME from "ME";
+import { EMBED_TYPES_WITH_PARSEABLE_FIELDS as closure_6 } from "MessageEmbedTypes";
+
+let closure_3;
+let closure_4;
+let closure_5;
 function validateSize(video) {
   return video.width > 0 && video.height > 0;
 }
@@ -17,7 +23,7 @@ function sanitizeMedia(thumbnail) {
   if (null != flags) {
     num = flags;
   }
-  obj.srcIsAnimated = require(dependencyMap[3]).hasFlag(num, constants.IS_ANIMATED);
+  obj.srcIsAnimated = require(1360) /* hasFlag */.hasFlag(num, constants.IS_ANIMATED);
   let num2 = 0;
   if (null != flags) {
     num2 = flags;
@@ -31,37 +37,33 @@ function sanitizeMedia(thumbnail) {
   return obj;
 }
 function appendQueryParams(proxy_url, arg1) {
-  const require = arg1;
+  let closure_0 = arg1;
   const str = new URL(proxy_url);
-  const importDefault = str;
   const keys = Object.keys(arg1);
   const item = keys.forEach((arg0) => {
     const searchParams = str.searchParams;
-    const result = searchParams.set(arg0, arg1[arg0]);
+    const result = searchParams.set(arg0, table[arg0]);
   });
   return str.toString();
 }
-const _module = require(dependencyMap[0]);
-({ MessageEmbedMediaFlags: closure_3, MessageEmbedTypes: closure_4, Permissions: closure_5 } = _module);
-let closure_6 = require(dependencyMap[1]).EMBED_TYPES_WITH_PARSEABLE_FIELDS;
-let closure_7 = /sketchfab/i;
-let closure_8 = /^https:\/\/sketchfab\.com/i;
-let closure_9 = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i;
-let closure_10 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/;
-let closure_11 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/;
+({ MessageEmbedMediaFlags: closure_3, MessageEmbedTypes: closure_4, Permissions: closure_5 } = ME);
+const re7 = /sketchfab/i;
+const re8 = /^https:\/\/sketchfab\.com/i;
+const re9 = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i;
+const re10 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/;
+const re11 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/;
 const regExp = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop");
-let closure_13 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/game-shop\/([0-9]+)\/([0-9]+)/;
-let closure_14 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/([0-9]+)\/([0-9]+)/;
-let closure_15 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/shop\?(?=.*tab=game-shops)(?=.*applicationId=[0-9]+)(?=.*skuId=[0-9]+)/;
-let closure_16 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/games\/[0-9]+(?:\/[A-Za-z0-9-]*)?\/?$/;
-const _module1 = require(dependencyMap[8]);
-const result = _module1.fileFinishedImporting("utils/EmbedUtils.tsx");
+const re13 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/game-shop\/([0-9]+)\/([0-9]+)/;
+const re14 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/([0-9]+)\/([0-9]+)/;
+const re15 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/shop\?(?=.*tab=game-shops)(?=.*applicationId=[0-9]+)(?=.*skuId=[0-9]+)/;
+const re16 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/games\/[0-9]+(?:\/[A-Za-z0-9-]*)?\/?$/;
+let result = require("DISCORD_EPOCH").fileFinishedImporting("utils/EmbedUtils.tsx");
 
 export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   let provider;
   let video;
   let obj = {};
-  let obj1 = importDefault(dependencyMap[4]);
+  let obj1 = importDefault(22);
   obj.id = obj1.uniqueId("embed_");
   ({ url: obj.url, type: obj.type, title: obj.rawTitle, description: obj.rawDescription, reference_id: obj.referenceId, flags: obj.flags, content_scan_version: obj.contentScanVersion } = footer);
   if (null != footer.footer) {
@@ -79,12 +81,12 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   if (null != footer.timestamp) {
     const _Date = Date;
     const date = new Date(footer.timestamp);
-    obj.timestamp = importDefault(dependencyMap[5])(date);
-    const tmp5 = importDefault(dependencyMap[5]);
+    obj.timestamp = importDefault(3712)(date);
+    const tmp5 = importDefault(3712);
   }
   if (null != footer.color) {
-    obj.color = require(dependencyMap[6]).int2hsl(footer.color, false);
-    const obj6 = require(dependencyMap[6]);
+    obj.color = require(665) /* pad2 */.int2hsl(footer.color, false);
+    const obj6 = require(665) /* pad2 */;
   }
   if (null != footer.thumbnail) {
     if (validateSize(footer.thumbnail)) {
@@ -131,8 +133,8 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
           }
           let tmp29 = null != id;
           if (tmp29) {
-            tmp29 = importDefault(dependencyMap[2]).extractTimestamp(id) < 1492472454139;
-            const obj10 = importDefault(dependencyMap[2]);
+            tmp29 = importDefault(21).extractTimestamp(id) < 1492472454139;
+            const obj10 = importDefault(21);
           }
           let tmp32 = isMatch;
           if (tmp29) {
@@ -166,20 +168,19 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = require(dependencyMap[7]).transformComponents(footer.components);
+    const transformComponentsResult = require(4353) /* _createForOfIteratorHelperLoose */.transformComponents(footer.components);
     let tmp38;
     if (transformComponentsResult.length > 0) {
       tmp38 = transformComponentsResult;
     }
     obj.components = tmp38;
-    const obj11 = require(dependencyMap[7]);
+    const obj11 = require(4353) /* _createForOfIteratorHelperLoose */;
   }
   return obj;
 };
 export const mergeEmbedsOnURL = function mergeEmbedsOnURL(mapped) {
-  const require = new Map();
+  const map = new Map();
   const items = [];
-  const importDefault = items;
   const item = mapped.forEach((url) => {
     if (null != url.url) {
       const value = map.get(url.url);
@@ -303,7 +304,7 @@ export const getMaxEmbedMediaSize = function getMaxEmbedMediaSize(provider, maxM
   if (null != provider) {
     name = provider.name;
   }
-  tmp2 = "TikTok" === name ? { padding: true, onPress: true } : { padding: false, onPress: false };
+  tmp2 = "TikTok" === name ? { maxMediaWidth: 400, maxMediaHeight: 450 } : { maxMediaWidth: 400, maxMediaHeight: 300 };
 };
 export const canEmbedLinks = function canEmbedLinks(closure_1, closure_9) {
   if (closure_1.isPrivate()) {

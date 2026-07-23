@@ -1,15 +1,21 @@
-// Module ID: 8257
-// Function ID: 65132
+// Module ID: 8263
+// Function ID: 65169
 // Name: OpenableUserProfileAvatar
-// Dependencies: []
+// Dependencies: [31, 27, 8264, 5512, 33, 8238, 7880, 8266, 8273, 1212, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8257 (OpenableUserProfileAvatar)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const TrackUserProfileActions = arg1(dependencyMap[2]).TrackUserProfileActions;
-const AVATAR_SIZE_VARIANT = arg1(dependencyMap[3]).AVATAR_SIZE_VARIANT;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
+// Module 8263 (OpenableUserProfileAvatar)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY";
+import { AVATAR_SIZE_VARIANT } from "ARBITRARY_LARGE_OFFSET";
+import jsxProd from "jsxProd";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   let size = backgroundColor.size;
   if (size === undefined) {
@@ -19,23 +25,22 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   obj.backgroundColor = 0;
   obj.size = 0;
   const merged = Object.assign(backgroundColor, obj);
-  const tmp3 = importDefault(dependencyMap[5])();
+  const tmp3 = importDefault(8238)();
   obj = {};
   const items = [, , ];
   ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp3);
   items[2] = { backgroundColor: backgroundColor.backgroundColor };
   const items1 = [callback(View, { style: items }), ];
   obj = { ref, style: items2 };
-  const items2 = [, ];
+  items2 = [, ];
   ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp3);
   obj.size = size;
   const merged1 = Object.assign(merged);
-  items1[1] = callback(importDefault(dependencyMap[6]), obj);
+  items1[1] = callback(importDefault(7880), obj);
   obj.children = items1;
   return callback2(closure_8, obj);
 });
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_profile/native/UserProfileAvatar.tsx");
+const result = require("USER_PROFILE_TOOLTIP_DELAY").fileFinishedImporting("modules/user_profile/native/UserProfileAvatar.tsx");
 
 export default forwardRefResult;
 export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(animate) {
@@ -43,24 +48,19 @@ export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(anim
   if (flag === undefined) {
     flag = true;
   }
-  const arg1 = flag;
   const user = animate.user;
-  const importDefault = user;
   const guildId = animate.guildId;
-  const dependencyMap = guildId;
-  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
+  let obj = { animate: 0, user: 0, guildId: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(animate, obj);
-  let importAllResult;
-  let View;
-  const ref = importAllResult.useRef(null);
-  importAllResult = ref;
-  const trackUserProfileAction = arg1(dependencyMap[7]).useUserProfileAnalyticsContext().trackUserProfileAction;
-  View = trackUserProfileAction;
+  let ref;
+  let trackUserProfileAction;
+  ref = ref.useRef(null);
+  trackUserProfileAction = flag(guildId[7]).useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [flag, guildId, trackUserProfileAction, user];
   obj = { ref };
-  const callback = importAllResult.useCallback(() => {
-    let obj = { action: constants.VIEW_AVATAR };
+  const callback = ref.useCallback(() => {
+    let obj = { action: outer1_5.VIEW_AVATAR };
     trackUserProfileAction(obj);
     obj = { user, guildId, animate: flag, originViewOrOriginLayout: ref.current, description: user.username };
     user(guildId[8])(obj);
@@ -70,7 +70,7 @@ export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(anim
   obj["user"] = user;
   obj["guildId"] = guildId;
   obj["onPress"] = callback;
-  const intl = arg1(dependencyMap[9]).intl;
-  obj["accessibilityLabel"] = intl.string(arg1(dependencyMap[9]).t.xB7MI3);
-  return callback(forwardRefResult, obj);
+  const intl = flag(guildId[9]).intl;
+  obj["accessibilityLabel"] = intl.string(flag(guildId[9]).t.xB7MI3);
+  return callback(closure_10, obj);
 };

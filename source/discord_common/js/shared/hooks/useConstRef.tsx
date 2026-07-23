@@ -1,12 +1,13 @@
-// Module ID: 6933
-// Function ID: 55293
+// Module ID: 6938
+// Function ID: 55327
 // Name: useConstRef
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: default
 
-// Module 6933 (useConstRef)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/hooks/useConstRef.tsx");
+// Module 6938 (useConstRef)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useConstRef.tsx");
 
 export default function useConstRef(current) {
   const ref = React.useRef(current);

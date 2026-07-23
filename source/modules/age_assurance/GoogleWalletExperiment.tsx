@@ -1,14 +1,15 @@
-// Module ID: 7565
-// Function ID: 60557
+// Module ID: 7571
+// Function ID: 60594
 // Name: useIsGoogleWalletEnabled
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isGoogleWalletEnabled, useIsGoogleWalletEnabled
 
-// Module 7565 (useIsGoogleWalletEnabled)
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/age_assurance/GoogleWalletExperiment.tsx");
+// Module 7571 (useIsGoogleWalletEnabled)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-03-age-verification-google-wallet", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/age_assurance/GoogleWalletExperiment.tsx");
 
 export const useIsGoogleWalletEnabled = function useIsGoogleWalletEnabled(location) {
   return closure_0.useConfig({ location }).enabled;

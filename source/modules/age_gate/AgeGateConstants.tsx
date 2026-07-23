@@ -1,15 +1,17 @@
 // Module ID: 1197
-// Function ID: 13754
+// Function ID: 13755
 // Name: result
-// Dependencies: []
+// Dependencies: [664, 2]
 
 // Module 1197 (result)
+import set from "set";
+
 const obj = { AUTH: "Register Age Gate", NEW_USER_FLOW: "NUF", CLAIM_ACCOUNT: "Claim Age Gate", NSFW_CHANNEL: "NSFW Channel", NSFW_SERVER: "NSFW Server", NSFW_SERVER_INVITE: "NSFW Server Invite", NSFW_SERVER_INVITE_EMBED: "NSFW Server Invite Embed", NSFW_VOICE_CHANNEL: "NSFW Voice Channel", LARGE_GUILD: "Large Guild", ACCESS_LARGE_GUILD_UNDERAGE: "Access Large Guild Access Underage", JOIN_LARGE_GUILD_UNDERAGE: "Join Large Guild Underage", FAMILY_CENTER: "Family Center", REGISTER: "Register", DEEP_LINK_PROMPT: "Deep Link Prompt", UNSPECIFIED: "Unspecified" };
 const items = [, , ];
 ({ NSFW_CHANNEL: arr[0], NSFW_VOICE_CHANNEL: arr[1], NSFW_SERVER: arr[2] } = obj);
-const result = 2 * importDefault(dependencyMap[0]).Millis.HOUR;
-const set = new Set(items);
-const result1 = arg1(dependencyMap[1]).fileFinishedImporting("modules/age_gate/AgeGateConstants.tsx");
+const result = 2 * require("set").Millis.HOUR;
+let set = new Set(items);
+const result1 = set.fileFinishedImporting("modules/age_gate/AgeGateConstants.tsx");
 
 export const AGE_GATE_REGISTER_TIMEOUT_MS = result;
 export const NEW_USER_AGE_GATE_MODAL_KEY = "new-user-age-gate-modal";

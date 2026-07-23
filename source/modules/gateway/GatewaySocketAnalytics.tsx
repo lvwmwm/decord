@@ -1,49 +1,55 @@
-// Module ID: 12463
-// Function ID: 95199
+// Module ID: 12577
+// Function ID: 97355
 // Name: prettyPrintTrace_
-// Dependencies: []
+// Dependencies: [29, 1849, 653, 20, 14, 675, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 12463 (prettyPrintTrace_)
-function prettyPrintTrace_(arg0, arg1) {
+// Module 12577 (prettyPrintTrace_)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_7;
+let closure_8;
+function prettyPrintTrace_(calls, arg1) {
   let length;
-  if (null == arg0) {
+  if (null == calls) {
     return "";
   } else {
     let num = 0;
     let str3 = "";
     let str4 = "";
-    if (0 < arg0.length) {
+    if (0 < calls.length) {
       do {
         let sum = num + 1;
         let _HermesInternal = HermesInternal;
         let str = "\n";
         let tmp2 = arg1;
         let str2 = ": ";
-        let tmp4 = closure_9;
-        let text = `${"\n" + arg1 + arg0[num] + ": " + arg0[tmp].micros / 1000}`;
-        str3 = `${"\n" + arg1 + arg0[num] + ": " + arg0[tmp].micros / 1000}${closure_9(arg0[tmp].calls, arg1 + "|  ")}`;
+        let tmp4 = prettyPrintTrace_;
+        let text = `${"\n" + arg1 + calls[num] + ": " + calls[tmp].micros / 1000}`;
+        str3 = `${"\n" + arg1 + calls[num] + ": " + calls[tmp].micros / 1000}${prettyPrintTrace_(calls[tmp].calls, arg1 + "|  ")}`;
         num = num + 2;
         str4 = str3;
-        length = arg0.length;
+        length = calls.length;
       } while (num < length);
     }
     return str4;
   }
 }
-function eachTraceCall(arg0, arg1) {
+function eachTraceCall(calls, arg1) {
   let length;
-  if (null != arg0) {
-    if (arg0.length > 0) {
+  if (null != calls) {
+    if (calls.length > 0) {
       let num4 = 0;
-      if (0 < arg0.length) {
+      if (0 < calls.length) {
         do {
-          let tmp = arg0[num4 + 1];
-          let tmp2 = arg1(arg0[num4], tmp.micros);
-          let tmp3 = closure_10;
-          let tmp4 = closure_10(tmp.calls, arg1);
+          let tmp = calls[num4 + 1];
+          let tmp2 = arg1(calls[num4], tmp.micros);
+          let tmp3 = eachTraceCall;
+          let tmp4 = eachTraceCall(tmp.calls, arg1);
           num4 = num4 + 2;
-          length = arg0.length;
+          length = calls.length;
         } while (num4 < length);
       }
     }
@@ -51,9 +57,9 @@ function eachTraceCall(arg0, arg1) {
 }
 function getReadyPayloadSizeAnalytics(guilds) {
   guilds = guilds.guilds;
-  let closure_0 = 0;
-  let closure_1 = 0;
-  const item = guilds.forEach((unavailable) => {
+  let c0 = 0;
+  let c1 = 0;
+  let item = guilds.forEach((unavailable) => {
     if (!unavailable.unavailable) {
       if ("partial" === unavailable.data_mode) {
         let channels = unavailable.partial_updates.channels;
@@ -62,31 +68,28 @@ function getReadyPayloadSizeAnalytics(guilds) {
       }
       if (tmp2) {
         const item = channels.forEach((type) => {
-          closure_1 = closure_1 + 1;
-          if (type.type === constants.GUILD_CATEGORY) {
-            closure_0 = closure_0 + 1;
+          outer1_1 = outer1_1 + 1;
+          if (type.type === outer2_8.GUILD_CATEGORY) {
+            outer1_0 = outer1_0 + 1;
           }
         });
       }
-      const tmp2 = null != channels && null != channels.forEach;
+      tmp2 = null != channels && null != channels.forEach;
     }
   });
-  return { num_guilds: guilds.length, num_guild_channels: closure_1, num_guild_category_channels: closure_0 };
+  return { num_guilds: guilds.length, num_guild_channels: c1, num_guild_category_channels: c0 };
 }
-let closure_2 = [];
-let closure_3 = [];
-let closure_4 = [];
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-({ AnalyticEvents: closure_7, ChannelTypes: closure_8 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/gateway/GatewaySocketAnalytics.tsx");
+let closure_2 = ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"];
+let closure_3 = ["features"];
+let closure_4 = ["threads", "guild_scheduled_events"];
+({ AnalyticEvents: closure_7, ChannelTypes: closure_8 } = ME);
+let result = require("ME").fileFinishedImporting("modules/gateway/GatewaySocketAnalytics.tsx");
 
 export function reportDevtoolsEvent() {
 
 }
 export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, data, nowResult, compressionAnalytics, readyPayloadByteSizeAnalytics) {
-  const tmp = function getReadyPayloadTraceAnalytics(_trace) {
+  const tmp = (function getReadyPayloadTraceAnalytics(_trace) {
     const obj = {};
     const parsed = JSON.parse(_trace._trace);
     let tmp4 = tmp3;
@@ -107,13 +110,13 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
       if ("object" === typeof tmp2[1]) {
         num2 = 0;
         if ("micros" in tmp2[1]) {
-          const _Math = Math;
+          let _Math = Math;
           num2 = Math.floor(tmp2[1].micros / 1000);
         }
       }
       obj.identify_total_server_duration_ms = num2;
     }
-    callback(parsed, (arg0, arg1) => {
+    outer1_10(parsed, (arg0, arg1) => {
       if ("start_session" === arg0) {
         const _Math2 = Math;
         obj.identify_api_duration_ms = Math.floor(arg1 / 1000);
@@ -122,10 +125,10 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
         obj.identify_guilds_duration_ms = Math.floor(arg1 / 1000);
       }
     });
-  }(data);
+  })(data);
   if (null != compressionAnalytics) {
-    let obj = importDefault(dependencyMap[3]);
-    const _Math = Math;
+    let obj = importDefault(20);
+    let _Math = Math;
     obj.addDetail("payload_size(kb)", Math.round(compressionAnalytics.uncompressed_byte_size / 1024));
   }
   const identify_total_server_duration_ms = tmp.identify_total_server_duration_ms;
@@ -133,7 +136,7 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
   if (null != identify_total_server_duration_ms) {
     num3 = identify_total_server_duration_ms;
   }
-  importDefault(dependencyMap[3]).addDetail("server_time(ms)", num3);
+  importDefault(20).addDetail("server_time(ms)", num3);
   obj = {};
   const merged = Object.assign(compressionAnalytics);
   const merged1 = Object.assign(tmp);
@@ -151,12 +154,12 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
   obj["had_cache_at_startup"] = null != hadCacheAtStartup && hadCacheAtStartup;
   const usedCacheAtStartup = socket.analytics.usedCacheAtStartup;
   obj["used_cache_at_startup"] = null != usedCacheAtStartup && usedCacheAtStartup;
-  const obj2 = importDefault(dependencyMap[3]);
+  const obj2 = importDefault(20);
   const tmp11 = null != hadCacheAtStartup && hadCacheAtStartup;
   const tmp12 = null != usedCacheAtStartup && usedCacheAtStartup;
-  const result = importDefault(dependencyMap[4]).attachReadyPayloadProperties(obj);
-  const obj4 = importDefault(dependencyMap[4]);
-  importDefault(dependencyMap[5]).track(constants.READY_PAYLOAD_RECEIVED, obj, { logEventProperties: true });
+  const result = importDefault(14).attachReadyPayloadProperties(obj);
+  const obj4 = importDefault(14);
+  importDefault(675).track(constants.READY_PAYLOAD_RECEIVED, obj, { logEventProperties: true });
 };
 export const getConnectionPath = function getConnectionPath(_trace) {
   _trace = _trace._trace;
@@ -182,7 +185,7 @@ export const getConnectionPath = function getConnectionPath(_trace) {
         let _trace2 = _trace._trace;
         let str3 = " -> ";
         str2 = _trace2.join(" -> ");
-        // break
+        break;
       }
       return str2;
     }
@@ -206,21 +209,14 @@ export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSize
     ({ guilds, merged_presences, merged_members, user_settings, user_settings_proto, experiments, guild_experiments } = data);
     const timestamp = Date.now();
     ({ read_state, private_channels, user_guild_settings, relationships, users } = data);
-    let obj = callback(data, closure_2);
+    let obj = items5(data, items2);
     const items = [];
-    const importDefault = items;
     const items1 = [];
-    const dependencyMap = items1;
-    const items2 = [];
-    closure_2 = items2;
+    items2 = [];
     const items3 = [];
-    let closure_3 = items3;
     const items4 = [];
-    let closure_4 = items4;
-    const items5 = [];
-    const callback = items5;
+    items5 = [];
     const items6 = [];
-    let closure_6 = items6;
     const items7 = [];
     const item = guilds.forEach((unavailable) => {
       let guild_scheduled_events;
@@ -340,13 +336,17 @@ export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSize
     return obj;
   }
 };
-export const logGatewayConnected = function logGatewayConnected(failedConnectAttempts, altGateway, gateway_url) {
-  let obj = importDefault(dependencyMap[5]);
-  obj = { num_failed_connect_attempts: failedConnectAttempts.failedConnectAttempts, gateway_url, assigned_to_alt_gateway: altGateway.isAssignedToAltGateway(), did_fall_back_from_alt_gateway: altGateway.getDidFallBack(), is_reconnect: failedConnectAttempts.hasConnectedOnce, is_fast_connect: failedConnectAttempts.isFastConnect };
+export const logGatewayConnected = function logGatewayConnected(gatewayUrl) {
+  let altGateway;
+  let now;
+  let socket;
+  ({ socket, altGateway, now } = gatewayUrl);
+  let obj = importDefault(675);
+  obj = { num_failed_connect_attempts: socket.failedConnectAttempts, gateway_url: gatewayUrl.gatewayUrl, assigned_to_alt_gateway: altGateway.isAssignedToAltGateway(), did_fall_back_from_alt_gateway: altGateway.getDidFallBack(), is_reconnect: socket.hasConnectedOnce, is_fast_connect: socket.isFastConnect, duration_ms_since_first_connect_attempt: now - socket.firstConnectAttemptStartTime, duration_ms_since_connect_attempt_start: now - socket.connectionStartTime };
   obj.track(constants.GATEWAY_CONNECTED, obj, { logEventProperties: true });
 };
 export const createResumeAnalytics = function createResumeAnalytics(arg0) {
-  const obj = { "Null": "Reflect", "Null": "lc", flex: "constructor", justifyContent: "id", marginHorizontal: "fill", width: "track" };
+  const obj = { connectTime: null, numEvents: 0, largestWaitTime: 0, dispatchTime: 0, totalWaitTime: 0, initialWaitTime: 0 };
   let num = 0;
   if (null != arg0) {
     num = arg0;
@@ -357,7 +357,7 @@ export const createResumeAnalytics = function createResumeAnalytics(arg0) {
   return obj;
 };
 export const logResumeAnalytics = function logResumeAnalytics(resumeAnalytics) {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let tmp = null == currentUser || !currentUser.isStaff();
   if (tmp) {
     const _Math = Math;
@@ -378,7 +378,7 @@ export const logResumeAnalytics = function logResumeAnalytics(resumeAnalytics) {
     const _Math6 = Math;
     obj.total_dispatch_time_ms = Math.floor(resumeAnalytics.dispatchTime);
     obj = { logEventProperties: true };
-    importDefault(dependencyMap[5]).track(constants.CONNECTION_RESUMED, obj, obj);
-    const obj2 = importDefault(dependencyMap[5]);
+    importDefault(675).track(constants.CONNECTION_RESUMED, obj, obj);
+    const obj2 = importDefault(675);
   }
 };

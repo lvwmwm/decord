@@ -1,9 +1,17 @@
-// Module ID: 12889
-// Function ID: 98415
+// Module ID: 13003
+// Function ID: 100571
 // Name: GradientBorder
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4329, 689, 4554, 2]
 
-// Module 12889 (GradientBorder)
+// Module 13003 (GradientBorder)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import ME from "ME";
+import { jsx } from "jsxProd";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 class GradientBorder {
   constructor(arg0) {
     ({ children, borderWidth } = global);
@@ -13,30 +21,30 @@ class GradientBorder {
     }
     borderRadius = global.borderRadius;
     if (borderRadius === undefined) {
-      tmp = importDefault;
-      tmp2 = dependencyMap;
+      tmp = closure_1;
+      tmp2 = closure_2;
       num = 5;
       num2 = 1;
-      borderRadius = importDefault(dependencyMap[5]).radii.sm + 1;
+      borderRadius = require("_createForOfIteratorHelperLoose").radii.sm + 1;
     }
-    obj = { position: false, top: false, left: false, right: false, bottom: false };
+    obj = { children: 0, direction: 0, style: 0, borderWidth: 0, borderRadius: 0 };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
-    tmp5 = function getStartEnd(direction) {
-      const match = callback(closure_2[4]).match(direction);
-      const str = callback(closure_2[4]);
-      const withResult = match.with(constants.HORIZONTAL, () => closure_5);
-      const withResult1 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6);
-      const withResult2 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { 0: "%FunctionPrototype%", 0: "paddingStart" }, END: { 0: "<string:2491613185>", 0: "<string:2941583362>" } }));
-      return match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { 0: "%FunctionPrototype%", 0: "paddingStart" }, END: { 0: "<string:2491613185>", 0: "<string:2941583362>" } })).with(constants.ANTI_DIAGONAL, () => ({ START: {}, END: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 } })).exhaustive();
-    }(direction);
+    tmp5 = (function getStartEnd(direction) {
+      const match = outer1_0(outer1_2[4]).match(direction);
+      const str = outer1_0(outer1_2[4]);
+      const withResult = match.with(outer1_8.HORIZONTAL, () => outer2_5);
+      const withResult1 = match.with(outer1_8.HORIZONTAL, () => outer2_5).with(outer1_8.VERTICAL, () => outer2_6);
+      const withResult2 = match.with(outer1_8.HORIZONTAL, () => outer2_5).with(outer1_8.VERTICAL, () => outer2_6).with(outer1_8.DIAGONAL, () => ({ START: { x: 0, y: 0 }, END: { x: 1, y: 1 } }));
+      return match.with(outer1_8.HORIZONTAL, () => outer2_5).with(outer1_8.VERTICAL, () => outer2_6).with(outer1_8.DIAGONAL, () => ({ START: { x: 0, y: 0 }, END: { x: 1, y: 1 } })).with(outer1_8.ANTI_DIAGONAL, () => ({ START: { x: 0, y: 1 }, END: { x: 1, y: 0 } })).exhaustive();
+    })(direction);
     tmp8 = null;
     if (null != children) {
-      tmp9 = importAll;
+      tmp9 = result;
       tmp8 = null;
-      if (importAll.isValidElement(children)) {
-        tmp11 = importDefault;
-        tmp12 = dependencyMap;
+      if (result.isValidElement(children)) {
+        tmp11 = closure_1;
+        tmp12 = closure_2;
         num3 = 6;
         tmp10 = jsx;
         obj = {};
@@ -51,19 +59,19 @@ class GradientBorder {
         obj.style = items;
         tmp14 = obj;
         tmp15 = merged;
-        tmp13 = importDefault(dependencyMap[6]);
+        tmp13 = require("LinearGradient");
         merged1 = Object.assign(merged);
         cloneElementResult = null;
         if (null != children) {
-          tmp18 = importAll;
+          tmp18 = result;
           cloneElementResult = null;
-          if (importAll.isValidElement(children)) {
+          if (result.isValidElement(children)) {
             tmp19 = View;
             if (children.type === View) {
-              tmp20 = importAll;
-              Children = importAll.Children;
+              tmp20 = result;
+              Children = result.Children;
               onlyResult = Children.only(children);
-              tmp22 = importAll;
+              tmp22 = result;
               obj2 = {};
               tmp23 = obj2;
               merged2 = Object.assign(onlyResult.props);
@@ -77,7 +85,7 @@ class GradientBorder {
               obj3["overflow"] = "hidden";
               str4 = "style";
               obj2["style"] = obj3;
-              cloneElementResult = importAll.cloneElement(onlyResult, obj2);
+              cloneElementResult = result.cloneElement(onlyResult, obj2);
             }
           }
           tmp27 = jsx;
@@ -98,13 +106,9 @@ class GradientBorder {
     return tmp8;
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ HorizontalGradient: closure_5, VerticalGradient: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const obj = { HORIZONTAL: "horizontal", VERTICAL: "vertical", DIAGONAL: "diagonal", ANTI_DIAGONAL: "anti-diagonal" };
+({ HorizontalGradient: closure_5, VerticalGradient: closure_6 } = ME);
+let obj = { HORIZONTAL: "horizontal", VERTICAL: "vertical", DIAGONAL: "diagonal", ANTI_DIAGONAL: "anti-diagonal" };
 GradientBorder.Direction = obj;
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/void/GradientBorder/native/GradientBorder.tsx");
+const result = require("ME").fileFinishedImporting("design/void/GradientBorder/native/GradientBorder.tsx");
 
 export default GradientBorder;

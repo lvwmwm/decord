@@ -1,13 +1,13 @@
-// Module ID: 6581
-// Function ID: 50804
+// Module ID: 6586
+// Function ID: 50833
 // Name: SwordIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6587, 2]
 // Exports: SwordIllocon
 
-// Module 6581 (SwordIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SwordIllocon.native.tsx");
+// Module 6586 (SwordIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SwordIllocon.native.tsx");
 
 export const SwordIllocon = function SwordIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const SwordIllocon = function SwordIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6587) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const SwordIllocon = function SwordIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

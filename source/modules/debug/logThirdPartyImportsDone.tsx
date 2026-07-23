@@ -1,11 +1,11 @@
-// Module ID: 15857
-// Function ID: 121200
-// Name: __exportStarResult1
-// Dependencies: [0, 0]
+// Module ID: 15974
+// Function ID: 123373
+// Name: timestamp
+// Dependencies: [3, 2]
 
-// Module 15857 (__exportStarResult1)
-import importDefaultResult from "__exportStarResult1";
+// Module 15974 (timestamp)
+import importDefaultResult from "timestamp";
 
 importDefaultResult = new importDefaultResult("app");
 importDefaultResult.log("Finished loading third party imports");
-const result = require("__exportStarResult1").fileFinishedImporting("modules/debug/logThirdPartyImportsDone.tsx");
+const result = require("set").fileFinishedImporting("modules/debug/logThirdPartyImportsDone.tsx");

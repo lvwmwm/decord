@@ -1,19 +1,19 @@
-// Module ID: 11983
-// Function ID: 92638
+// Module ID: 11995
+// Function ID: 92692
 // Name: calculateTotalGaps
-// Dependencies: []
+// Dependencies: [5512, 1450, 2]
 // Exports: default
 
-// Module 11983 (calculateTotalGaps)
+// Module 11995 (calculateTotalGaps)
+import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
+
 function calculateTotalGaps(arg0, arg1) {
   return arg1 * (arg0 - 1);
 }
 function calculateCardWidth(arg0, arg1, arg2) {
   return (arg1 - calculateTotalGaps(arg0, arg2)) / arg0;
 }
-const PROFILE_SIDE_PADDING = require(dependencyMap[0]).PROFILE_SIDE_PADDING;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/user_profile/hooks/native/useCardGridLayout.tsx");
+let result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useCardGridLayout.tsx");
 
 export default function useCardGridLayout() {
   let containerWidth;
@@ -39,7 +39,7 @@ export default function useCardGridLayout() {
   if (sidePadding === undefined) {
     sidePadding = PROFILE_SIDE_PADDING;
   }
-  let width = importDefault(dependencyMap[1])().width;
+  let width = importDefault(1450)().width;
   if (null != containerWidth) {
     width = containerWidth;
   }

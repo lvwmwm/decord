@@ -1,13 +1,32 @@
-// Module ID: 8836
-// Function ID: 69690
+// Module ID: 8843
+// Function ID: 69731
 // Name: getInputDeviceName
-// Dependencies: []
+// Dependencies: [5, 4201, 1348, 4177, 4202, 1906, 1849, 653, 8844, 4191, 3, 675, 574, 686, 8845, 8847, 8848, 8856, 2]
 
-// Module 8836 (getInputDeviceName)
+// Module 8843 (getInputDeviceName)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { SoundOutputChannel } from "SoundOutputChannel";
+import { MediaEngineContextTypes } from "DesktopSources";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_11;
+let closure_15;
+let closure_16;
+let closure_17;
+const require = arg1;
 function getInputDeviceName() {
   const inputDevices = store3.getInputDevices();
+  const tmp2 = inputDevices[store3.getInputDeviceId(store3)];
   let str = "";
-  if (null != inputDevices[closure_6.getInputDeviceId(closure_6)]) {
+  if (null != tmp2) {
     str = tmp2.name;
   }
   return str;
@@ -48,25 +67,15 @@ function trackDeviceChanged(inputDevices, inputDeviceId, found, Video, arg4) {
     obj.voice_channel_type = type;
     obj.audio_subsystem = audioSubsystem;
     obj.audio_layer = audioLayer;
-    importDefault(dependencyMap[11]).track(constants2.MEDIA_DEVICE_CHANGED, obj);
-    const obj4 = importDefault(dependencyMap[11]);
+    importDefault(675).track(constants2.MEDIA_DEVICE_CHANGED, obj);
+    const obj4 = importDefault(675);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ InputModes: closure_10, AnalyticEvents: closure_11 } = arg1(dependencyMap[7]));
-const SoundOutputChannel = arg1(dependencyMap[8]).SoundOutputChannel;
-const MediaEngineContextTypes = arg1(dependencyMap[9]).MediaEngineContextTypes;
-let importDefaultResult = importDefault(dependencyMap[10]);
+({ InputModes: closure_10, AnalyticEvents: closure_11 } = ME);
 importDefaultResult = new importDefaultResult("AudioActionCreators");
 importDefaultResult.enableNativeLogger(true);
-let closure_14 = importDefault(dependencyMap[12])((target_user_id, context, volume) => {
-  let obj = importDefault(dependencyMap[11]);
+let closure_14 = require("debounce")((target_user_id, context, volume) => {
+  let obj = importDefault(675);
   obj = { target_user_id, context, volume, media_session_id: store4.getMediaSessionId(), rtc_connection_id: store4.getRTCConnectionId() };
   obj.track(constants2.USER_VOLUME_SETTING_UPDATED, obj);
 }, 300);
@@ -124,12 +133,12 @@ obj = {
       }
       if (store3.isEnabled()) {
         obj = { type: "AUDIO_TOGGLE_SELF_MUTE", context: DEFAULT, syncRemote: flag, playSoundEffect: flag3 };
-        resolved = importDefault(dependencyMap[13]).dispatch(obj);
-        const obj4 = importDefault(dependencyMap[13]);
+        resolved = importDefault(686).dispatch(obj);
+        const obj4 = importDefault(686);
       } else {
         resolved = self.enable(true);
       }
-      const tmp7 = null != currentUser && currentUser.isStaff();
+      tmp7 = null != currentUser && currentUser.isStaff();
     }
     return resolved;
   },
@@ -146,10 +155,10 @@ obj = {
       if (tmp4) {
         importDefaultResult.info("Setting self mute", pendingMutePreference);
       }
-      const tmp4 = null != currentUser && currentUser.isStaff();
+      tmp4 = null != currentUser && currentUser.isStaff();
       const obj = { type: "AUDIO_SET_SELF_MUTE", context: DEFAULT, mute: pendingMutePreference, playSoundEffect: flag };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj2 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj2 = importDefault(686);
     }
   },
   setTemporarySelfMute(mute) {
@@ -158,10 +167,10 @@ obj = {
       if (tmp3) {
         importDefaultResult.info("Setting temporary self mute", mute);
       }
-      const tmp3 = null != currentUser && currentUser.isStaff();
+      tmp3 = null != currentUser && currentUser.isStaff();
       const obj = { type: "AUDIO_SET_TEMPORARY_SELF_MUTE", mute };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj2 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj2 = importDefault(686);
     }
   },
   toggleSelfDeaf(arg0) {
@@ -186,18 +195,18 @@ obj = {
       obj.location = obj.location;
       callback5(obj);
       obj = { type: "AUDIO_TOGGLE_SELF_DEAF", context: DEFAULT, syncRemote: flag };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj3 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj3 = importDefault(686);
     }
   },
-  toggleLocalMute(id, arg1) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
+  toggleLocalMute(closure_0, closure_1) {
+    let DEFAULT = closure_1;
+    if (closure_1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
-      obj = { type: "AUDIO_TOGGLE_LOCAL_MUTE", context: DEFAULT, userId: id };
+      let obj = importDefault(686);
+      obj = { type: "AUDIO_TOGGLE_LOCAL_MUTE", context: DEFAULT, userId: closure_0 };
       obj.dispatch(obj);
     }
   },
@@ -206,7 +215,7 @@ obj = {
     if (arg1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = importDefault(dependencyMap[13]);
+    let obj = importDefault(686);
     obj = { type: "AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE", context: DEFAULT, userId: id };
     obj.dispatch(obj);
   },
@@ -223,36 +232,36 @@ obj = {
       flag2 = false;
     }
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_LOCAL_VIDEO_DISABLED", context: DEFAULT, userId: id, videoToggleState: MANUAL_ENABLED, persist: flag, isAutomatic: flag2 };
       obj.dispatch(obj);
     }
   },
-  setLocalVolume(ownerId, volume, STREAM) {
+  setLocalVolume(closure_0, volume, STREAM) {
     let DEFAULT = STREAM;
     if (STREAM === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = volume(dependencyMap[14]);
+    let obj = require(8845) /* snapVolumeToDefault */;
     const snapVolumeToDefaultResult = obj.snapVolumeToDefault(volume, DEFAULT);
-    obj = { type: "AUDIO_SET_LOCAL_VOLUME", context: DEFAULT, userId: ownerId, volume: snapVolumeToDefaultResult };
-    importDefault(dependencyMap[13]).dispatch(obj);
-    callback2(ownerId, DEFAULT, snapVolumeToDefaultResult);
+    obj = { type: "AUDIO_SET_LOCAL_VOLUME", context: DEFAULT, userId: closure_0, volume: snapVolumeToDefaultResult };
+    importDefault(686).dispatch(obj);
+    callback2(closure_0, DEFAULT, snapVolumeToDefaultResult);
   },
   setAudioMixerSettings(audioMixerSettings) {
     let DEFAULT = arg1;
     if (arg1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = importDefault(dependencyMap[13]);
+    let obj = importDefault(686);
     obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: DEFAULT, settings: audioMixerSettings };
     obj.dispatch(obj);
   },
   setSpatialAudio(arg0, arg1) {
     if (!callback3()) {
       const audioMixerSettings = store3.getAudioMixerSettings();
-      importDefault(dependencyMap[15])("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
-      let obj = importDefault(dependencyMap[13]);
+      importDefault(8847)("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: MediaEngineContextTypes.DEFAULT };
       obj = {};
       const merged = Object.assign(audioMixerSettings);
@@ -266,7 +275,7 @@ obj = {
     if (arg3 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = importDefault(dependencyMap[13]);
+    let obj = importDefault(686);
     obj = { type: "AUDIO_SET_LOCAL_PAN", context: DEFAULT, userId: result2, left, right };
     obj.dispatch(obj);
   },
@@ -286,7 +295,7 @@ obj = {
     if (!callback3()) {
       mode = store3.getMode();
       const modeOptions = store3.getModeOptions(DEFAULT);
-      let obj2 = importDefault(dependencyMap[13]);
+      let obj2 = importDefault(686);
       obj = { type: "AUDIO_SET_MODE", context: DEFAULT, mode };
       const obj1 = {};
       const merged = Object.assign(modeOptions);
@@ -313,8 +322,8 @@ obj = {
         obj2.input_device_name = tmp34;
         obj2.audio_subsystem = audioSubsystem;
         obj2.audio_layer = audioLayer;
-        importDefault(dependencyMap[11]).track(constants2.VOICE_ACTIVATION_MODE_CHANGED, obj2);
-        const obj10 = importDefault(dependencyMap[11]);
+        importDefault(675).track(constants2.VOICE_ACTIVATION_MODE_CHANGED, obj2);
+        const obj10 = importDefault(675);
       } else if (mode === constants.VOICE_ACTIVITY) {
         if (modeOptions !== obj) {
           const mediaEngine2 = store3.getMediaEngine();
@@ -340,15 +349,15 @@ obj = {
           obj3.new_threshold = obj.threshold;
           obj3.old_auto_threshold = modeOptions.autoThreshold;
           obj3.new_auto_threshold = obj.autoThreshold;
-          importDefault(dependencyMap[11]).track(constants2.VOICE_ACTIVITY_THRESHOLD_CHANGED, obj3);
-          const obj6 = importDefault(dependencyMap[11]);
+          importDefault(675).track(constants2.VOICE_ACTIVITY_THRESHOLD_CHANGED, obj3);
+          const obj6 = importDefault(675);
         }
       }
     }
   },
   setBypassSystemInputProcessing(bypassEnabled, location) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_BYPASS_SYSTEM_INPUT_PROCESSING", bypassEnabled, location };
       obj.dispatch(obj);
     }
@@ -360,13 +369,13 @@ obj = {
     }
     if (!callback3()) {
       obj = { type: "AUDIO_SET_INPUT_VOLUME", volume: inputVolume };
-      importDefault(dependencyMap[13]).dispatch(obj);
+      importDefault(686).dispatch(obj);
       const voiceChannelId = store5.getVoiceChannelId();
       let channel = null;
       if (null != voiceChannelId) {
         channel = store2.getChannel(voiceChannelId);
       }
-      const obj2 = importDefault(dependencyMap[13]);
+      const obj2 = importDefault(686);
       obj = { volume: inputVolume };
       obj.location_stack = obj.analyticsLocations;
       let type;
@@ -374,8 +383,8 @@ obj = {
         type = channel.type;
       }
       obj.voice_channel_type = type;
-      importDefault(dependencyMap[11]).track(constants2.MEDIA_INPUT_VOLUME_CHANGED, obj);
-      const obj4 = importDefault(dependencyMap[11]);
+      importDefault(675).track(constants2.MEDIA_INPUT_VOLUME_CHANGED, obj);
+      const obj4 = importDefault(675);
     }
   },
   setOutputVolume(closure_45) {
@@ -385,13 +394,13 @@ obj = {
     }
     if (!callback3()) {
       obj = { type: "AUDIO_SET_OUTPUT_VOLUME", volume: closure_45 };
-      importDefault(dependencyMap[13]).dispatch(obj);
+      importDefault(686).dispatch(obj);
       const voiceChannelId = store5.getVoiceChannelId();
       let channel = null;
       if (null != voiceChannelId) {
         channel = store2.getChannel(voiceChannelId);
       }
-      const obj2 = importDefault(dependencyMap[13]);
+      const obj2 = importDefault(686);
       obj = { volume: closure_45 };
       obj.location_stack = obj.analyticsLocations;
       let type;
@@ -399,8 +408,8 @@ obj = {
         type = channel.type;
       }
       obj.voice_channel_type = type;
-      importDefault(dependencyMap[11]).track(constants2.MEDIA_OUTPUT_VOLUME_CHANGED, obj);
-      const obj4 = importDefault(dependencyMap[11]);
+      importDefault(675).track(constants2.MEDIA_OUTPUT_VOLUME_CHANGED, obj);
+      const obj4 = importDefault(675);
     }
   },
   setInputDevice(id) {
@@ -418,8 +427,8 @@ obj = {
         trackDeviceChanged(store3.getInputDevices(), inputDeviceId, id, "Audio Input", obj);
       }
       obj = { type: "AUDIO_SET_INPUT_DEVICE", id, oldId: inputDeviceId };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj3 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj3 = importDefault(686);
     }
   },
   setOutputDevice(id) {
@@ -437,8 +446,8 @@ obj = {
         trackDeviceChanged(store3.getOutputDevices(), outputDeviceId, id, "Audio Output", obj);
       }
       obj = { type: "AUDIO_SET_OUTPUT_DEVICE", id, oldId: outputDeviceId };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj3 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj3 = importDefault(686);
     }
   },
   setVideoDevice(found) {
@@ -456,8 +465,8 @@ obj = {
         trackDeviceChanged(store3.getVideoDevices(), videoDeviceId, found, "Video", obj);
       }
       obj = { type: "MEDIA_ENGINE_SET_VIDEO_DEVICE", id: found, oldId: videoDeviceId };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj3 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj3 = importDefault(686);
     }
   },
   setActiveInputProfile(inputProfile) {
@@ -472,16 +481,16 @@ obj = {
       if (null != activeInputProfile) {
         tmp7 = activeInputProfile;
       }
-      importDefault(dependencyMap[15])("active_input_profile", inputProfile, tmp7, analyticsLocations);
-      const tmp3 = importDefault(dependencyMap[15]);
+      importDefault(8847)("active_input_profile", inputProfile, tmp7, analyticsLocations);
+      const tmp3 = importDefault(8847);
       obj = { type: "AUDIO_SET_ACTIVE_INPUT_PROFILE", inputProfile };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj2 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj2 = importDefault(686);
     }
   },
   setEchoCancellation(echoCancellation, location) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_ECHO_CANCELLATION", enabled: echoCancellation, location };
       obj.dispatch(obj);
     }
@@ -493,11 +502,11 @@ obj = {
     }
     const analyticsLocations = obj.analyticsLocations;
     if (!callback3()) {
-      importDefault(dependencyMap[15])("stream_attenuation_enabled", sidechainCompression, store3.getSidechainCompression(), analyticsLocations);
-      const tmp3 = importDefault(dependencyMap[15]);
+      importDefault(8847)("stream_attenuation_enabled", sidechainCompression, store3.getSidechainCompression(), analyticsLocations);
+      const tmp3 = importDefault(8847);
       obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION", enabled: sidechainCompression };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj2 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj2 = importDefault(686);
     }
   },
   setSidechainCompressionStrength(sidechainCompressionStrength) {
@@ -507,40 +516,40 @@ obj = {
     }
     const analyticsLocations = obj.analyticsLocations;
     if (!callback3()) {
-      importDefault(dependencyMap[15])("stream_attenuation_strength", sidechainCompressionStrength, store3.getSidechainCompressionStrength(), analyticsLocations);
-      const tmp3 = importDefault(dependencyMap[15]);
+      importDefault(8847)("stream_attenuation_strength", sidechainCompressionStrength, store3.getSidechainCompressionStrength(), analyticsLocations);
+      const tmp3 = importDefault(8847);
       obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH", strength: sidechainCompressionStrength };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj2 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj2 = importDefault(686);
     }
   },
   setLoopback(loopbackReason, enabled) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_LOOPBACK", loopbackReason, enabled };
       obj.dispatch(obj);
     }
   },
   setNoiseSuppression(noiseSuppression, location) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled: noiseSuppression, location };
       obj.dispatch(obj);
     }
   },
   setNoiseCancellation(enabled, location) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_NOISE_CANCELLATION", enabled, location };
       obj.dispatch(obj);
       obj = { type: "AUDIO_SET_NOISE_SUPPRESSION", enabled: !enabled, location };
-      importDefault(dependencyMap[13]).dispatch(obj);
-      const obj3 = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch(obj);
+      const obj3 = importDefault(686);
     }
   },
   setAutomaticGainControl(enabled, location) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_AUTOMATIC_GAIN_CONTROL", enabled, location };
       obj.dispatch(obj);
     }
@@ -552,131 +561,131 @@ obj = {
       attenuateWhileSpeakingOthers = store3.getAttenuateWhileSpeakingOthers();
       if (attenuation !== attenuation) {
         attenuateWhileSpeakingSelf = dependencyMap;
-        importDefault(dependencyMap[15])("global_attenuation_strength", attenuation, attenuation);
-        let obj = importDefault(dependencyMap[13]);
+        importDefault(8847)("global_attenuation_strength", attenuation, attenuation);
+        let obj = importDefault(686);
         obj = { type: "AUDIO_SET_ATTENUATION", attenuation, attenuateWhileSpeakingSelf, attenuateWhileSpeakingOthers };
         obj.dispatch(obj);
       } else if (attenuateWhileSpeakingSelf === attenuateWhileSpeakingSelf) {
         if (attenuateWhileSpeakingOthers !== attenuateWhileSpeakingOthers) {
-          importDefault(dependencyMap[15])("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
+          importDefault(8847)("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
         }
       }
-      importDefault(dependencyMap[15])("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
+      importDefault(8847)("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
     }
   },
   setQoS(enabled) {
     if (!callback3()) {
-      importDefault(dependencyMap[15])("quality_of_service_packets_enabled", enabled, store3.getQoS());
-      let obj = importDefault(dependencyMap[13]);
+      importDefault(8847)("quality_of_service_packets_enabled", enabled, store3.getQoS());
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_QOS", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(dependencyMap[15]);
+      const tmp3 = importDefault(8847);
     }
   },
   reset() {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_RESET" };
       obj.dispatch(obj);
     }
   },
   setSilenceWarning(enabled) {
     if (!callback3()) {
-      importDefault(dependencyMap[15])("silence_warning_enabled", enabled, store3.getEnableSilenceWarning());
-      let obj = importDefault(dependencyMap[13]);
+      importDefault(8847)("silence_warning_enabled", enabled, store3.getEnableSilenceWarning());
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_DISPLAY_SILENCE_WARNING", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(dependencyMap[15]);
+      const tmp3 = importDefault(8847);
     }
   },
   setDebugLogging(enabled) {
-    const arg1 = enabled;
+    let closure_0 = enabled;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   setVideoHook(enabled) {
     if (!callback3()) {
-      importDefault(dependencyMap[15])("video_hook_enabled", enabled, store3.getVideoHook());
-      let obj = importDefault(dependencyMap[13]);
+      importDefault(8847)("video_hook_enabled", enabled, store3.getVideoHook());
+      let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_VIDEO_HOOK", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(dependencyMap[15]);
+      const tmp3 = importDefault(8847);
     }
   },
   setExperimentalSoundshare(enabled) {
     if (!callback3()) {
-      importDefault(dependencyMap[15])("experimental_soundshare_enabled", enabled, store3.getExperimentalSoundshare());
-      let obj = importDefault(dependencyMap[13]);
+      importDefault(8847)("experimental_soundshare_enabled", enabled, store3.getExperimentalSoundshare());
+      let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(dependencyMap[15]);
+      const tmp3 = importDefault(8847);
     }
   },
   setUseSystemScreensharePicker(enabled) {
     if (!callback3()) {
-      importDefault(dependencyMap[15])("system_screenshare_picker_enabled", enabled, store3.getUseSystemScreensharePicker());
-      let obj = importDefault(dependencyMap[13]);
+      importDefault(8847)("system_screenshare_picker_enabled", enabled, store3.getUseSystemScreensharePicker());
+      let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(dependencyMap[15]);
+      const tmp3 = importDefault(8847);
     }
   },
   setAudioSubsystem(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   setVideoEnabled(enabled) {
-    let obj = arg1(dependencyMap[16]);
+    let obj = require(8848) /* _getFilterBlob */;
     const result = obj.applyInitialVideoBackgroundOption();
     obj = { type: "MEDIA_ENGINE_SET_VIDEO_ENABLED", enabled };
-    importDefault(dependencyMap[13]).dispatch(obj);
+    importDefault(686).dispatch(obj);
   },
-  setGoLiveSource(qualityOptions, STREAM) {
-    qualityOptions = undefined;
-    if (null != qualityOptions) {
-      qualityOptions = qualityOptions.qualityOptions;
+  setGoLiveSource(closure_1, STREAM) {
+    let qualityOptions;
+    if (null != closure_1) {
+      qualityOptions = closure_1.qualityOptions;
     }
     if (null != qualityOptions) {
-      let obj = STREAM(dependencyMap[17]);
-      const preset = qualityOptions.qualityOptions.preset;
-      const resolution = qualityOptions.qualityOptions.resolution;
-      const frameRate = qualityOptions.qualityOptions.frameRate;
-      const desktopSettings = qualityOptions.desktopSettings;
+      let obj = require(8856) /* isPremiumRequirement */;
+      const preset = closure_1.qualityOptions.preset;
+      const resolution = closure_1.qualityOptions.resolution;
+      const frameRate = closure_1.qualityOptions.frameRate;
+      const desktopSettings = closure_1.desktopSettings;
       let sound;
       if (null != desktopSettings) {
         sound = desktopSettings.sound;
       }
       const result = obj.trackStreamSettingsUpdate(preset, resolution, frameRate, sound);
     }
-    obj = { type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", settings: qualityOptions };
-    importDefault(dependencyMap[13]).dispatch(obj);
+    obj = { type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", settings: closure_1 };
+    importDefault(686).dispatch(obj);
   },
   setAecDump(aecDumpEnabled) {
     if (!callback3()) {
-      importDefault(dependencyMap[15])("diagnostic_audio_recording_enabled", aecDumpEnabled, store3.getAecDump());
-      let obj = importDefault(dependencyMap[13]);
+      importDefault(8847)("diagnostic_audio_recording_enabled", aecDumpEnabled, store3.getAecDump());
+      let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_AEC_DUMP", enabled: aecDumpEnabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(dependencyMap[15]);
+      const tmp3 = importDefault(8847);
     }
   },
   interact() {
     if (!callback3()) {
-      importDefault(dependencyMap[13]).dispatch({ 9223372036854775807: "png", 0: true });
-      const obj = importDefault(dependencyMap[13]);
+      importDefault(686).dispatch({ type: "MEDIA_ENGINE_INTERACTION_REQUIRED", required: false });
+      const obj = importDefault(686);
     }
   },
   setEnableHardwareMuteNotice(enabled) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE", enabled };
       obj.dispatch(obj);
     }
   },
   setKrispSuppressionLevel(level) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_KRISP_SUPPRESSION_LEVEL", level };
       obj.dispatch(obj);
     }
@@ -684,7 +693,7 @@ obj = {
   setKrispModelOverride(model) {
     const self = this;
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "AUDIO_SET_KRISP_MODEL_OVERRIDE", model };
       obj.dispatch(obj);
       if (store3.getNoiseCancellation()) {
@@ -698,18 +707,17 @@ obj = {
   },
   setOpenH264Enabled(enabled) {
     if (!callback3()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_OPENH264_ENABLED", enabled };
       obj.dispatch(obj);
     }
   },
   resetMediaEngineSettings(overrides) {
-    let obj = importDefault(dependencyMap[13]);
+    let obj = importDefault(686);
     obj = { type: "MEDIA_ENGINE_RESET_SETTINGS", overrides };
     return obj.dispatch(obj);
   }
 };
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("actions/AudioActionCreators.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/AudioActionCreators.tsx");
 
 export default obj;

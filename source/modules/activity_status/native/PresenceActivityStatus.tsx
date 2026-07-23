@@ -1,15 +1,20 @@
-// Module ID: 9067
-// Function ID: 71155
+// Module ID: 9074
+// Function ID: 71196
 // Name: PresenceActivityStatus
-// Dependencies: []
+// Dependencies: [31, 653, 33, 6982, 8940, 9075, 9076, 9070, 9078, 9069, 9072, 2]
 // Exports: default
 
-// Module 9067 (PresenceActivityStatus)
-importAll(dependencyMap[0]);
-const ActivityTypes = arg1(dependencyMap[1]).ActivityTypes;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/activity_status/native/PresenceActivityStatus.tsx");
+// Module 9074 (PresenceActivityStatus)
+import "result";
+import { ActivityTypes } from "ME";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("modules/activity_status/native/PresenceActivityStatus.tsx");
 
 export default function PresenceActivityStatus(hideText) {
   let activity;
@@ -31,22 +36,22 @@ export default function PresenceActivityStatus(hideText) {
       return null;
     }
   }
-  if (importDefault(dependencyMap[3])(activity)) {
-    let AppsIcon = arg1(dependencyMap[5]).AppsIcon;
+  if (importDefault(6982)(activity)) {
+    let AppsIcon = require(9075) /* AppsIcon */.AppsIcon;
   } else if (activity.type === ActivityTypes.PLAYING) {
-    AppsIcon = arg1(dependencyMap[4]).GameControllerIcon;
+    AppsIcon = require(8940) /* GameControllerIcon */.GameControllerIcon;
   } else if (activity.type === ActivityTypes.LISTENING) {
-    AppsIcon = arg1(dependencyMap[6]).MusicIcon;
+    AppsIcon = require(9076) /* MusicIcon */.MusicIcon;
   } else {
     if (activity.type !== ActivityTypes.WATCHING) {
       if (activity.type !== ActivityTypes.STREAMING) {
         AppsIcon = null;
         if (activity.type === ActivityTypes.COMPETING) {
-          AppsIcon = arg1(dependencyMap[4]).GameControllerIcon;
+          AppsIcon = require(8940) /* GameControllerIcon */.GameControllerIcon;
         }
       }
     }
-    AppsIcon = arg1(dependencyMap[7]).TvIcon;
+    AppsIcon = require(9070) /* TvIcon */.TvIcon;
   }
   let obj = {};
   let tmp18 = !hideIcon;
@@ -55,13 +60,13 @@ export default function PresenceActivityStatus(hideText) {
   }
   if (tmp18) {
     obj = { icon: AppsIcon, style: iconStyle };
-    tmp18 = callback(importDefault(dependencyMap[9]), obj);
+    tmp18 = callback(importDefault(9069), obj);
   }
   const items = [tmp18, ];
   let tmp23 = !flag;
   if (tmp23) {
-    obj = { style: textStyle, maxFontSizeMultiplier, children: importDefault(dependencyMap[8])(activity, true).text };
-    tmp23 = callback(importDefault(dependencyMap[10]), obj);
+    obj = { style: textStyle, maxFontSizeMultiplier, children: importDefault(9078)(activity, true).text };
+    tmp23 = callback(importDefault(9072), obj);
   }
   items[1] = tmp23;
   obj.children = items;

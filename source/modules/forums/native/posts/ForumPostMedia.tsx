@@ -1,11 +1,26 @@
-// Module ID: 11123
-// Function ID: 86588
+// Module ID: 11133
+// Function ID: 86638
 // Name: ForumPostMediaAndroid
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1278, 1277, 33, 4130, 689, 5085, 4533, 11134, 6835, 11135, 477, 5674, 4660, 7536, 7538, 11136, 3976, 3803, 10339, 1449, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail
 
-// Module 11123 (ForumPostMediaAndroid)
+// Module 11133 (ForumPostMediaAndroid)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let PixelRatio;
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function ForumPostMediaAndroid(blurTheme) {
   const shouldSpoiler = blurTheme.shouldSpoiler;
   const obj = { style: blurTheme.androidStyle, source: blurTheme.source };
@@ -25,38 +40,38 @@ function ForumPostMediaIOS(arg0) {
   let source;
   const obj = {};
   ({ shouldSpoiler, blurTheme, source, iosStyle } = arg0);
-  const items = [callback2(importDefault(dependencyMap[8]), { style: iosStyle, source, resizeMode: "cover" }), callback2(ForumPostMediaSpoiler, { shouldSpoiler, blurTheme })];
+  const items = [callback2(importDefault(5085), { style: iosStyle, source, resizeMode: "cover" }), callback2(ForumPostMediaSpoiler, { shouldSpoiler, blurTheme })];
   obj.children = items;
   return callback3(closure_11, obj);
 }
 class ForumPostMediaSpoiler {
   constructor(arg0) {
     ({ shouldSpoiler, blurTheme } = global);
-    tmp = closure_15();
+    tmp = c15();
     tmp2 = null;
     if (shouldSpoiler) {
       tmp3 = jsxs;
       tmp4 = Fragment;
       obj = {};
       tmp5 = jsx;
-      tmp6 = importDefault;
-      tmp7 = dependencyMap;
+      tmp6 = closure_1;
+      tmp7 = closure_2;
       num = 9;
       obj = {};
       obj.blurTheme = blurTheme;
       tmp8 = StyleSheet;
       obj.style = StyleSheet.absoluteFill;
       items = [, ];
-      items[0] = jsx(importDefault(dependencyMap[9]), obj);
+      items[0] = jsx(require("getIOSBlurEffect"), obj);
       tmp9 = jsx;
       tmp10 = View;
       obj1 = {};
       obj1.style = tmp.spoilerIconContainer;
       tmp11 = jsx;
       num2 = 10;
-      obj2 = { overflow: "add", display: "Array", alignItems: "isArray" };
+      obj2 = { style: null, height: 30, width: 30 };
       obj2.style = tmp.spoilerIcon;
-      obj1.children = jsx(importDefault(dependencyMap[10]), obj2);
+      obj1.children = jsx(require("Spoiler"), obj2);
       items[1] = jsx(View, obj1);
       obj.children = items;
       tmp2 = jsxs(Fragment, obj);
@@ -65,19 +80,18 @@ class ForumPostMediaSpoiler {
   }
 }
 function ForumPostMedia(obscureReason) {
-  const arg1 = obscureReason;
-  const tmp = callback4();
+  const _require = obscureReason;
+  const tmp = _createForOfIteratorHelperLoose();
   const ref = React.useRef(null);
-  const importDefault = ref;
-  let obj = arg1(dependencyMap[11]);
+  let obj = _require(6835);
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     obj = {};
     const merged = Object.assign(obscureReason);
-    let tmp6Result = callback2(importDefault(dependencyMap[12]), obj);
-    const tmp19 = importDefault(dependencyMap[12]);
+    let tmp6Result = callback2(ref(11135), obj);
+    const tmp19 = ref(11135);
   } else {
-    let obj1 = arg1(dependencyMap[13]);
+    let obj1 = _require(477);
     if (obj1.isAndroid()) {
       obj = {};
       const merged1 = Object.assign(obscureReason);
@@ -89,7 +103,7 @@ function ForumPostMedia(obscureReason) {
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = arg1(dependencyMap[14]).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = _require(5674).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj2 = {};
@@ -100,13 +114,13 @@ function ForumPostMedia(obscureReason) {
           androidRippleConfig: ANDROID_FOREGROUND_RIPPLE,
           activeOpacity: 0,
           onPress() {
-                  let obj = ref(closure_2[16]);
-                  obj = { entryPoint: arg0(closure_2[17]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
+                  let obj = ref(outer1_2[16]);
+                  obj = { entryPoint: obscureReason(outer1_2[17]).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
                   const result = obj.showAgeVerificationGetStartedModal(obj);
                 },
           children: tmp6Result
         };
-        obj2.children = callback2(arg1(dependencyMap[15]).PressableOpacity, obj3);
+        obj2.children = callback2(_require(4660).PressableOpacity, obj3);
         let tmp27 = callback2(closure_5, obj2);
       }
       return tmp27;
@@ -122,14 +136,14 @@ function ForumPostMedia(obscureReason) {
       activeOpacity: 0.8,
       onPress() {
           let onPressResult;
-          if (null != arg0.onPress) {
-            onPressResult = arg0.onPress(ref);
+          if (null != obscureReason.onPress) {
+            onPressResult = obscureReason.onPress(ref);
           }
           return onPressResult;
         },
       children: tmp6Result
     };
-    obj4.children = callback2(arg1(dependencyMap[15]).PressableOpacity, obj5);
+    obj4.children = callback2(_require(4660).PressableOpacity, obj5);
     tmp27 = callback2(closure_5, obj4);
   } else {
     const obj6 = {};
@@ -144,7 +158,7 @@ function useSharedMediaProps(arg0) {
   let channel;
   let media;
   ({ channel, media } = arg0);
-  let obj = arg1(dependencyMap[18]);
+  let obj = require(11136) /* getForumPostShouldObscure */;
   const tmp = callback(obj.useShouldObscure({ media, channel }), 2);
   obj = { shouldObscure: tmp[0], obscureReason: tmp[1] };
   let str = "light";
@@ -152,7 +166,7 @@ function useSharedMediaProps(arg0) {
     str = "dark";
   }
   obj.blurTheme = str;
-  const GifAutoPlay = arg1(dependencyMap[20]).GifAutoPlay;
+  const GifAutoPlay = require(3803) /* explicitContentFromProto */.GifAutoPlay;
   let tmp2 = "png";
   if (GifAutoPlay.useSetting()) {
     tmp2 = null;
@@ -160,27 +174,20 @@ function useSharedMediaProps(arg0) {
   obj.format = tmp2;
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, StyleSheet: closure_6, ImageBackground: closure_7, PixelRatio } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-const ANDROID_FOREGROUND_RIPPLE = arg1(dependencyMap[4]).ANDROID_FOREGROUND_RIPPLE;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[5]));
+({ View: closure_5, StyleSheet: closure_6, ImageBackground: closure_7, PixelRatio } = get_ActivityIndicator);
+({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
 let closure_13 = Math.min(PixelRatio.get(), 4);
 let closure_14 = Math.min(PixelRatio.get(), 4);
-let obj = arg1(dependencyMap[6]);
-obj = { mediaContainer: {} };
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.thumbnailBorder = obj;
-obj.thumbnail = {};
-obj.spoilerIconContainer = {};
-const tmp3 = arg1(dependencyMap[5]);
-obj.spoilerIcon = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_300, alignSelf: "center" };
-obj.gridMediaContainer = { "Bool(true)": false, "Bool(true)": 0 };
-let closure_15 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_300, alignSelf: "center" };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/forums/native/posts/ForumPostMedia.tsx");
+_createForOfIteratorHelperLoose = { mediaContainer: { position: "relative", overflow: "hidden" } };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.thumbnailBorder = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.thumbnail = { height: 80, width: 80 };
+_createForOfIteratorHelperLoose.spoilerIconContainer = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center" };
+_createForOfIteratorHelperLoose.spoilerIcon = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_300, alignSelf: "center" };
+_createForOfIteratorHelperLoose.gridMediaContainer = { borderRadius: 2, overflow: "hidden" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_300, alignSelf: "center" };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/forums/native/posts/ForumPostMedia.tsx");
 
 export { ForumPostMediaSpoiler };
 export { useSharedMediaProps };
@@ -194,31 +201,26 @@ export const ForumPostMediaThumbnail = function ForumPostMediaThumbnail(firstMes
   let obscureReason;
   let shouldObscure;
   ({ channel, isLocalDeviceMedia } = firstMessageId);
-  const arg1 = isLocalDeviceMedia;
   firstMessageId = firstMessageId.firstMessageId;
-  const importDefault = firstMessageId;
   const media = firstMessageId.media;
-  const dependencyMap = media;
   let isEmbed = firstMessageId.isEmbed;
   ({ embedLeftBorderColor, containerStyle } = firstMessageId);
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { threadId: channel.id };
-  const onTapMedia = importDefault(dependencyMap[21])(obj).onTapMedia;
-  let closure_3 = onTapMedia;
-  const items = [firstMessageId, media, onTapMedia];
-  const callback = React.useCallback((containerRef) => {
+  const onTapMedia = firstMessageId(media[21])(obj).onTapMedia;
+  let items = [firstMessageId, media, onTapMedia];
+  const callback = format.useCallback((containerRef) => {
     const items = [media];
     onTapMedia({ messageId: firstMessageId, mediaItems: items, containerRef });
   }, items);
   const tmp3 = useSharedMediaProps({ channel, media });
   ({ shouldObscure, format } = tmp3);
-  const React = format;
   const items1 = [format, isLocalDeviceMedia, , , , ];
   ({ height: arr2[2], src: arr2[3], width: arr2[4], srcIsAnimated: arr2[5] } = media);
   ({ obscureReason, blurTheme } = tmp3);
   obj = { iosStyle: tmp.thumbnail, androidStyle: tmp.thumbnail };
   const items2 = [tmp.thumbnailBorder, , ];
-  const memo = React.useMemo(() => {
+  const memo = format.useMemo(() => {
     let obj = {};
     if (isLocalDeviceMedia) {
       obj.uri = media.src;
@@ -227,9 +229,9 @@ export const ForumPostMediaThumbnail = function ForumPostMediaThumbnail(firstMes
       obj = {};
       ({ src: obj3.src, width: obj3.sourceWidth, height: obj3.sourceHeight } = media);
       const _Math = Math;
-      obj.targetWidth = Math.ceil(80 * closure_13);
+      obj.targetWidth = Math.ceil(80 * outer1_13);
       const _Math2 = Math;
-      obj.targetHeight = Math.ceil(80 * closure_13);
+      obj.targetHeight = Math.ceil(80 * outer1_13);
       obj.format = format;
       obj.animated = media.srcIsAnimated;
       obj.uri = isLocalDeviceMedia(media[22]).getSrcWithWidthAndHeight(obj);
@@ -261,29 +263,24 @@ export const ForumPostGridMedia = function ForumPostGridMedia(targetWidth) {
   let obscureReason;
   let shouldObscure;
   ({ channel, media } = targetWidth);
-  const arg1 = media;
   targetWidth = targetWidth.targetWidth;
-  const importDefault = targetWidth;
   const targetHeight = targetWidth.targetHeight;
-  const dependencyMap = targetHeight;
   const tmp2 = useSharedMediaProps({ channel, media });
   ({ shouldObscure, format } = tmp2);
-  let closure_3 = format;
   ({ obscureReason, blurTheme } = tmp2);
   const isMediaPostResult = channel.isMediaPost();
-  const React = isMediaPostResult;
   const items = [, , , , , , ];
   ({ src: arr[0], width: arr[1], height: arr[2] } = media);
   items[3] = targetWidth;
   items[4] = targetHeight;
   items[5] = format;
   items[6] = isMediaPostResult;
-  const obj = { containerStyle: callback4().gridMediaContainer, iosStyle: { height: targetHeight, width: targetWidth }, androidStyle: { height: targetHeight, width: targetWidth } };
+  let obj = { containerStyle: _createForOfIteratorHelperLoose().gridMediaContainer, iosStyle: { height: targetHeight, width: targetWidth }, androidStyle: { height: targetHeight, width: targetWidth } };
   let tmp7 = null != shouldObscure;
-  const memo = React.useMemo(() => {
-    if (isMediaPostResult) {
+  const memo = isMediaPostResult.useMemo(() => {
+    if (result) {
       const _Math3 = Math;
-      const bound = Math.min(1, targetWidth * closure_14 / media.width, targetHeight * closure_14 / media.height);
+      const bound = Math.min(1, targetWidth * outer1_14 / media.width, targetHeight * outer1_14 / media.height);
       let obj = {};
       obj = {};
       ({ src: obj6.src, width: obj6.sourceWidth, height: obj6.sourceHeight } = media);
@@ -300,9 +297,9 @@ export const ForumPostGridMedia = function ForumPostGridMedia(targetWidth) {
       obj1 = {};
       ({ src: obj3.src, width: obj3.sourceWidth, height: obj3.sourceHeight } = media);
       const _Math = Math;
-      obj1.targetWidth = Math.ceil(targetWidth * closure_14);
+      obj1.targetWidth = Math.ceil(targetWidth * outer1_14);
       const _Math2 = Math;
-      obj1.targetHeight = Math.ceil(targetHeight * closure_14);
+      obj1.targetHeight = Math.ceil(targetHeight * outer1_14);
       obj1.format = format;
       obj.uri = obj1.getSrcWithWidthAndHeight(obj1);
       return obj;

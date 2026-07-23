@@ -1,9 +1,16 @@
 // Module ID: 379
 // Function ID: 5653
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 372]
 
 // Module 379 (_isNativeReflectConstruct)
+import Animation from "Animation";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,43 +21,37 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const global = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_5(closure_4(prototype), arg1, arg2);
-  let closure_1 = tmpResult;
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
+  let Animation = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-let closure_1 = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
-let closure_3 = importDefault(dependencyMap[2]);
-let closure_4 = importDefault(dependencyMap[3]);
-let closure_5 = importDefault(dependencyMap[4]);
-let closure_6 = importDefault(dependencyMap[5]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class DecayAnimation {
     constructor(arg0) {
       self = this;
-      tmp = closure_1(this, DecayAnimation);
+      tmp = outer1_1(this, DecayAnimation);
       items = [];
       items[0] = arg0;
-      obj = closure_4(DecayAnimation);
-      tmp2 = closure_3;
-      if (closure_7()) {
+      obj = outer1_4(DecayAnimation);
+      tmp2 = outer1_3;
+      if (outer1_7()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_4;
-        constructResult = Reflect.construct(obj, items, closure_4(self).constructor);
+        tmp5 = outer1_4;
+        constructResult = Reflect.construct(obj, items, outer1_4(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -65,7 +66,6 @@ export default (arg0) => {
       return tmp2Result;
     }
   }
-  const global = DecayAnimation;
   callback2(DecayAnimation, arg0);
   let obj = {
     key: "__getNativeAnimationConfig",
@@ -73,18 +73,18 @@ export default (arg0) => {
       return { type: "decay", deceleration: this._deceleration, velocity: this._velocity, iterations: this.__iterations, platformConfig: this._platformConfig, debugID: this.__getDebugID() };
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "start",
-    value: function start(_lastValue, _onUpdate) {
-      const DecayAnimation = this;
-      const items = [_lastValue, _onUpdate, arg2, arg3, arg4];
-      callback4(DecayAnimation, "start", this, 3)(items);
+    value: function start(_lastValue, _onUpdate, arg2, arg3, closure_0) {
+      const self = this;
+      const items = [_lastValue, _onUpdate, arg2, arg3, closure_0];
+      outer1_8(self, "start", this, 3)(items);
       this._lastValue = _lastValue;
       this._fromValue = _lastValue;
       this._onUpdate = _onUpdate;
       this._startTime = Date.now();
-      if (!this.__startAnimationIfNative(arg4)) {
+      if (!this.__startAnimationIfNative(closure_0)) {
         const _requestAnimationFrame = requestAnimationFrame;
         this._animationFrame = requestAnimationFrame(() => self.onUpdate());
       }
@@ -116,7 +116,7 @@ export default (arg0) => {
     key: "stop",
     value: function stop() {
       const self = this;
-      callback4(DecayAnimation, "stop", this, 3)([]);
+      outer1_8(DecayAnimation, "stop", this, 3)([]);
       if (null != this._animationFrame) {
         DecayAnimation.cancelAnimationFrame(self._animationFrame);
       }
@@ -124,4 +124,4 @@ export default (arg0) => {
     }
   };
   return callback(DecayAnimation, items);
-}(importDefault(dependencyMap[6]));
+})(require("Animation"));

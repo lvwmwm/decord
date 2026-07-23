@@ -1,21 +1,22 @@
 // Module ID: 891
-// Function ID: 9831
+// Function ID: 9832
 // Name: requestDataIntegration
-// Dependencies: []
+// Dependencies: [863, 892, 893]
 
 // Module 891 (requestDataIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = {};
-const _module = require(dependencyMap[0]);
+import setupIntegration from "setupIntegration";
 
-export const requestDataIntegration = _module.defineIntegration(function _requestDataIntegration() {
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let closure_2 = { cookies: true, data: true, headers: true, query_string: true, url: true };
+
+export const requestDataIntegration = setupIntegration.defineIntegration(function _requestDataIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       const first = arguments[0];
     }
-    const _Object = Object;
+    let _Object = Object;
     let closure_0 = Object.assign({}, closure_2, {}.include);
-    const obj = {
+    let obj = {
       name: "RequestData",
       processEvent(sdkProcessingMetadata, arg1, getOptions) {
           let prop = sdkProcessingMetadata.sdkProcessingMetadata;
@@ -29,22 +30,22 @@ export const requestDataIntegration = _module.defineIntegration(function _reques
             sendDefaultPii = getOptions.getOptions().sendDefaultPii;
           }
           obj.ip = sendDefaultPii;
-          const merged = Object.assign({}, ip, obj);
+          let merged = Object.assign({}, ip, obj);
           if (normalizedRequest) {
             obj = { ipAddress: prop.ipAddress };
-            function addNormalizedRequestDataToEvent(request, normalizedRequest, ipAddress, merged) {
-              request.request = Object.assign({}, request.request, function extractNormalizedRequestData(headers, headers2) {
+            (function addNormalizedRequestDataToEvent(request, normalizedRequest, ipAddress, merged) {
+              request.request = Object.assign({}, request.request, (function extractNormalizedRequestData(headers, headers2) {
                 const obj = {};
                 const merged = Object.assign({}, headers.headers);
                 if (headers2.headers) {
                   obj.headers = merged;
                   if (!headers2.cookies) {
-                    delete r5.cookie;
+                    delete tmp.cookie;
                   }
                   if (!headers2.ip) {
-                    const ipHeaderNames = merged(closure_1[1]).ipHeaderNames;
+                    const ipHeaderNames = callback(outer3_1[1]).ipHeaderNames;
                     const item = ipHeaderNames.forEach((arg0) => {
-                      delete r1[r0];
+                      delete tmp2[tmp];
                     });
                   }
                 }
@@ -58,8 +59,8 @@ export const requestDataIntegration = _module.defineIntegration(function _reques
                     let parseCookieResult;
                     if (null != merged) {
                       if (merged.cookie) {
-                        parseCookieResult = merged(closure_1[2]).parseCookie(merged.cookie);
-                        const obj3 = merged(closure_1[2]);
+                        parseCookieResult = callback(outer3_1[2]).parseCookie(merged.cookie);
+                        const obj3 = callback(outer3_1[2]);
                       }
                     }
                     cookies = parseCookieResult;
@@ -76,11 +77,11 @@ export const requestDataIntegration = _module.defineIntegration(function _reques
                   obj.data = headers.data;
                 }
                 return obj;
-              }(normalizedRequest, merged));
+              })(normalizedRequest, merged));
               if (merged.ip) {
                 ipAddress = normalizedRequest.headers;
                 if (ipAddress) {
-                  let obj = callback(closure_1[1]);
+                  let obj = callback(outer2_1[1]);
                   ipAddress = obj.getClientIPAddress(normalizedRequest.headers);
                 }
                 if (!ipAddress) {
@@ -92,7 +93,7 @@ export const requestDataIntegration = _module.defineIntegration(function _reques
                   request.user = Object.assign({}, request.user, obj);
                 }
               }
-            }(sdkProcessingMetadata, normalizedRequest, obj, merged);
+            })(sdkProcessingMetadata, normalizedRequest, obj, merged);
           }
           return sdkProcessingMetadata;
         }

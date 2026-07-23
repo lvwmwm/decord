@@ -1,10 +1,9 @@
-// Module ID: 11673
-// Function ID: 90575
+// Module ID: 11683
+// Function ID: 90624
 // Name: GuildPrompts
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11673 (GuildPrompts)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild/Constants.tsx");
+// Module 11683 (GuildPrompts)
+const result = require("set").fileFinishedImporting("modules/guild/Constants.tsx");
 
 export const GuildPrompts = { REAL_NAME_PROMPT: "REAL_NAME_PROMPT" };

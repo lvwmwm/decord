@@ -1,6 +1,6 @@
 // Module ID: 26
 // Function ID: 1109
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 26
 if (null == window.GLOBAL_ENV) {
@@ -147,5 +147,4 @@ global.window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST = "discordsays.com";
 global.window.GLOBAL_ENV.PUBLIC_PATH = "/assets/";
 global.window.GLOBAL_ENV.DEV_SESSION_KEY = process.env.DEV_SESSION_KEY;
 global.window.GLOBAL_ENV.MUX_ENV_KEY = "1qd16mdmdjasipqg3irobln4u";
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/checkEnv.tsx");
+const result = require("set").fileFinishedImporting("utils/checkEnv.tsx");

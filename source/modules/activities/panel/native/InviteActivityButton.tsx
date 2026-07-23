@@ -1,42 +1,49 @@
-// Module ID: 15591
-// Function ID: 118961
-// Dependencies: []
+// Module ID: 15708
+// Function ID: 121134
+// Dependencies: [31, 10444, 4810, 33, 4098, 15709, 1934, 566, 10913, 4543, 10196, 1212, 2]
 
-// Module 15591
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function InviteActivityButton(applicationId) {
+// Module 15708
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const memoResult = require("result").memo(function InviteActivityButton(applicationId) {
   applicationId = applicationId.applicationId;
-  const arg1 = applicationId;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_3, closure_4];
+  let obj = applicationId(566);
+  const items = [_isNativeReflectConstruct, closure_4];
   const items1 = [applicationId];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(closure_2[8])(closure_3, closure_4, applicationId), items1);
-  const importDefault = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(outer1_2[8])(outer1_3, outer1_4, applicationId), items1);
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = {
       onPress() {
-          let obj = stateFromStores(paths[4]);
+          let obj = stateFromStores(outer1_2[4]);
           obj = { activity: stateFromStores };
-          obj.openLazy(applicationId(paths[6])(paths[5], paths.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
+          obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
         },
-      icon: importDefault(dependencyMap[10])
+      icon: stateFromStores(10196)
     };
-    const intl = arg1(dependencyMap[11]).intl;
-    obj.text = intl.string(arg1(dependencyMap[11]).t.OzOM/q);
-    const intl2 = arg1(dependencyMap[11]).intl;
-    obj.accessibilityLabel = intl2.string(arg1(dependencyMap[11]).t.OzOM/q);
+    const intl = applicationId(1212).intl;
+    obj.text = intl.string(applicationId(1212).t["OzOM/q"]);
+    const intl2 = applicationId(1212).intl;
+    obj.accessibilityLabel = intl2.string(applicationId(1212).t["OzOM/q"]);
     obj.variant = "secondary-overlay";
     obj.size = "sm";
     obj.shrink = true;
     obj.maxFontSizeMultiplier = 1;
-    tmp2 = jsx(arg1(dependencyMap[9]).Button, obj);
+    tmp2 = jsx(applicationId(4543).Button, {
+      onPress() {
+          let obj = stateFromStores(outer1_2[4]);
+          obj = { activity: stateFromStores };
+          obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
+        },
+      icon: stateFromStores(10196)
+    });
   }
   return tmp2;
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/activities/panel/native/InviteActivityButton.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/panel/native/InviteActivityButton.tsx");
 
 export default memoResult;

@@ -1,14 +1,15 @@
-// Module ID: 11381
-// Function ID: 88511
+// Module ID: 11391
+// Function ID: 88561
 // Name: renderChannelBadge
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 1273, 11390, 4126, 1212, 1827, 2]
 // Exports: renderChannelBadge
 
-// Module 11381 (renderChannelBadge)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 11391 (renderChannelBadge)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelBadge.tsx");
+const require = arg1;
+const result = require("Button").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelBadge.tsx");
 
 export const renderChannelBadge = function renderChannelBadge(newChannel) {
   let eventsMentionCount;
@@ -26,27 +27,27 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
   if (null != num) {
     if (num > 0) {
       let obj = { value: num, isMentionLowImportance: tmp };
-      let tmp2 = jsx(arg1(dependencyMap[2]).Badge, obj);
+      let tmp2 = jsx(require(1273) /* Button */.Badge, { value: num, isMentionLowImportance: tmp });
     }
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(arg1(dependencyMap[3]).NewBadge, {});
+    tmp2 = jsx(require(11390) /* renderChannelBadge */.NewBadge, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
-        obj = { cachedAt: null, edpbxy: null };
-        const intl = arg1(dependencyMap[5]).intl;
-        const obj1 = { count: arg1(dependencyMap[6]).humanizeValue(newPostCount, newChannel.locale) };
-        obj.children = intl.format(arg1(dependencyMap[5]).t.GkAbqY, obj1);
-        tmp2 = jsx(arg1(dependencyMap[4]).Text, obj);
-        const obj5 = arg1(dependencyMap[6]);
+        obj = { variant: "text-xs/bold", color: "text-brand" };
+        const intl = require(1212) /* getSystemLocale */.intl;
+        const obj1 = { count: require(1827) /* shortenAndLocalizeNumber */.humanizeValue(newPostCount, newChannel.locale) };
+        obj.children = intl.format(require(1212) /* getSystemLocale */.t.GkAbqY, obj1);
+        tmp2 = jsx(require(4126) /* Text */.Text, { variant: "text-xs/bold", color: "text-brand" });
+        const obj5 = require(1827) /* shortenAndLocalizeNumber */;
       }
     }
     if (null != postsWithUnreadsCount) {
       if (postsWithUnreadsCount > 0) {
-        const obj2 = { children: postsWithUnreadsCount };
-        tmp2 = jsx(arg1(dependencyMap[4]).Text, obj2);
+        const obj2 = { variant: "text-xs/bold", color: "text-muted", children: postsWithUnreadsCount };
+        tmp2 = jsx(require(4126) /* Text */.Text, { variant: "text-xs/bold", color: "text-muted", children: postsWithUnreadsCount });
       }
     }
     tmp2 = null;
@@ -54,7 +55,7 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
       tmp2 = null;
       if (eventsMentionCount > 0) {
         obj = { value: eventsMentionCount, eventsMentionBadge: true };
-        tmp2 = jsx(arg1(dependencyMap[2]).Badge, obj);
+        tmp2 = jsx(require(1273) /* Button */.Badge, { value: eventsMentionCount, eventsMentionBadge: true });
       }
     }
   }

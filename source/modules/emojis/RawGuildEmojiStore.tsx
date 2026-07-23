@@ -1,9 +1,19 @@
-// Module ID: 4990
-// Function ID: 43153
+// Module ID: 4993
+// Function ID: 43171
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 3774, 1841, 2]
 
-// Module 4990 (_isNativeReflectConstruct)
+// Module 4993 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import TypeTag from "TypeTag";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { TypeTag } from "TypeTag";
+import { LibdiscoreBatchStoreRefactorExperiment } from "_callSuper";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +23,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -101,8 +111,8 @@ function fromServer(arg0, arg1) {
     do {
       let value = iter.value;
       obj = {};
-      let tmp2 = closure_8;
-      obj[closure_8] = "RawGuildEmoji";
+      let tmp2 = TypeTag;
+      obj[TypeTag] = "RawGuildEmoji";
       obj["guildId"] = arg0;
       obj["id"] = value.id;
       obj["animated"] = value.animated;
@@ -112,9 +122,9 @@ function fromServer(arg0, arg1) {
       obj["roles"] = value.roles;
       obj["managed"] = value.managed;
       obj["version"] = value.version;
-      let tmp3 = closure_0;
-      let tmp4 = closure_1;
-      obj["type"] = closure_0(closure_1[8]).EmojiTypes.GUILD;
+      let tmp3 = require;
+      let tmp4 = dependencyMap;
+      obj["type"] = require(3774) /* EmojiTypes */.EmojiTypes.GUILD;
       obj[value.id] = obj;
       let iter2 = tmp();
       iter = iter2;
@@ -135,26 +145,26 @@ function syncEmojis(arg0, op, setPartition) {
     } else if (op.writes.length > 0) {
       const obj = {};
       const merged = Object.assign(nullablePartition);
-      const tmp5 = _createForOfIteratorHelperLoose(op.deletes);
-      let iter = tmp5();
+      const tmp7 = _createForOfIteratorHelperLoose(op.deletes);
+      let iter = tmp7();
       if (!iter.done) {
         do {
           let value = iter.value;
-          delete r4[r1];
-          let iter2 = tmp5();
+          delete tmp2[tmp];
+          let iter2 = tmp7();
           iter = iter2;
           done = iter2.done;
         } while (!done);
       }
-      const tmp7 = _createForOfIteratorHelperLoose(op.writes);
-      let iter3 = tmp7();
+      const tmp9 = _createForOfIteratorHelperLoose(op.writes);
+      let iter3 = tmp9();
       if (!iter3.done) {
         do {
           let _Object = Object;
-          let tmp9 = closure_12;
+          let tmp11 = fromServer;
           let items = [iter3.value];
-          let merged1 = Object.assign(obj, closure_12(arg0, items));
-          let iter4 = tmp7();
+          let merged1 = Object.assign(obj, fromServer(arg0, items));
+          let iter4 = tmp9();
           iter3 = iter4;
           done2 = iter4.done;
         } while (!done2);
@@ -163,27 +173,20 @@ function syncEmojis(arg0, op, setPartition) {
     }
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const TypeTag = arg1(dependencyMap[6]).TypeTag;
-let tmp2 = (LibdiscoreStore) => {
+let tmp2 = ((LibdiscoreStore) => {
   class RawGuildEmojiStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, RawGuildEmojiStore);
+      tmp = outer1_3(this, RawGuildEmojiStore);
       items1 = [...items];
-      obj = closure_6(RawGuildEmojiStore);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      obj = outer1_6(RawGuildEmojiStore);
+      tmp2 = outer1_5;
+      if (outer1_9()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -192,15 +195,14 @@ let tmp2 = (LibdiscoreStore) => {
       return tmp2Result;
     }
   }
-  const arg1 = RawGuildEmojiStore;
-  callback2(RawGuildEmojiStore, LibdiscoreStore);
+  callback3(RawGuildEmojiStore, LibdiscoreStore);
   let obj = {
     key: "stateWrapper",
     value() {
       return this.database;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getGuildEmojis",
     value(arg0) {
@@ -209,10 +211,9 @@ let tmp2 = (LibdiscoreStore) => {
     }
   };
   items[1] = obj;
-  return callback(RawGuildEmojiStore, items);
-}(arg1(dependencyMap[7]).LibdiscoreStore);
+  return callback2(RawGuildEmojiStore, items);
+})(require("_isNativeReflectConstruct").LibdiscoreStore);
 tmp2.displayName = "RawGuildEmojiStore";
-const LibdiscoreBatchStoreRefactorExperiment = arg1(dependencyMap[9]).LibdiscoreBatchStoreRefactorExperiment;
 tmp2 = new tmp2({
   LOGOUT(arg0, clear) {
     return clear.clear();
@@ -256,8 +257,8 @@ tmp2 = new tmp2({
     if (!iter5.done) {
       do {
         value = iter5.value;
-        let tmp6 = closure_13;
-        let tmp7 = closure_13(value.id, value.emojis, getPartitionKeys);
+        let tmp6 = syncEmojis;
+        let tmp7 = syncEmojis(value.id, value.emojis, getPartitionKeys);
         let iter6 = tmp5();
         iter5 = iter6;
         done2 = iter6.done;
@@ -265,13 +266,14 @@ tmp2 = new tmp2({
     }
   },
   OVERLAY_INITIALIZE(emojis, clear) {
+    let closure_0 = clear;
     clear.clear();
     const entries = Object.entries(emojis.emojis);
     const item = entries.forEach((arg0) => {
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      arg1.setPartition(tmp, callback(tmp, tmp2));
+      partition.setPartition(tmp, outer1_12(tmp, tmp2));
     });
   },
   CACHED_EMOJIS_LOADED(emojis, setPartition) {
@@ -280,11 +282,11 @@ tmp2 = new tmp2({
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_2;
-        let tmp3 = closure_2(iter.value, 2);
+        let tmp2 = callback;
+        let tmp3 = callback(iter.value, 2);
         let first = tmp3[0];
-        let tmp5 = closure_12;
-        let setPartitionResult = setPartition.setPartition(first, closure_12(first, tmp3[1]));
+        let tmp5 = fromServer;
+        let setPartitionResult = setPartition.setPartition(first, fromServer(first, tmp3[1]));
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -304,6 +306,6 @@ tmp2 = new tmp2({
     removePartition.removePartition(guild.guild.id);
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/emojis/RawGuildEmojiStore.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/emojis/RawGuildEmojiStore.tsx");
 
 export default tmp2;

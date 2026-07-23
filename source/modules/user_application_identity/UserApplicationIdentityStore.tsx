@@ -1,15 +1,21 @@
-// Module ID: 12005
-// Function ID: 92771
+// Module ID: 12095
+// Function ID: 94728
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 12005 (_isNativeReflectConstruct)
+// Module 12095 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -22,27 +28,22 @@ function updateUserIdentities(userId, identities) {
   const result = map.set(userId, obj);
   const result1 = map1.set(userId, obj.FETCHED);
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
-const map = new Map();
+let map = new Map();
 const map1 = new Map();
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class UserApplicationIdentityStore {
     constructor() {
       self = this;
       tmp = UserApplicationIdentityStore(this, UserApplicationIdentityStore);
-      obj = closure_3(UserApplicationIdentityStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(UserApplicationIdentityStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,12 +52,11 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = UserApplicationIdentityStore;
   callback2(UserApplicationIdentityStore, Store);
   let obj = {
     key: "getUserIdentities",
     value(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_6.get(arg0);
       let identities;
       if (null != value) {
         identities = value.identities;
@@ -72,7 +72,7 @@ let tmp4 = (Store) => {
   obj = {
     key: "getUserIdentityByApplication",
     value(arg0, arg1) {
-      let value = store.get(arg0);
+      let value = outer1_6.get(arg0);
       value = undefined;
       if (null != value) {
         const byApplication = value.byApplication;
@@ -89,9 +89,9 @@ let tmp4 = (Store) => {
   obj = {
     key: "getFetchState",
     value(arg0) {
-      let NOT_FETCHED = closure_7.get(arg0);
+      let NOT_FETCHED = outer1_7.get(arg0);
       if (null == NOT_FETCHED) {
-        NOT_FETCHED = constants.NOT_FETCHED;
+        NOT_FETCHED = outer1_5.NOT_FETCHED;
       }
       return NOT_FETCHED;
     }
@@ -99,12 +99,12 @@ let tmp4 = (Store) => {
   items[2] = obj;
   items[3] = {
     key: "isFetchingUser",
-    value(guildId) {
-      return this.getFetchState(guildId) === constants.FETCHING;
+    value(arg0) {
+      return this.getFetchState(arg0) === outer1_5.FETCHING;
     }
   };
   return callback(UserApplicationIdentityStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 obj = {
   USER_APPLICATION_IDENTITY_FETCH_USER_START: function handleFetchUserStart(userId) {
     const result = map1.set(userId.userId, obj.FETCHING);
@@ -117,18 +117,18 @@ obj = {
     const result = map1.set(userId.userId, obj.FETCHED);
   },
   USER_APPLICATION_IDENTITY_REMOVE: function handleRemoveIdentity(user_id) {
-    let closure_0 = user_id;
+    let dispatcher = user_id;
     const value = map.get(user_id.user_id);
     if (null == value) {
       return false;
     } else {
       const identities = value.identities;
-      updateUserIdentities(user_id.user_id, identities.filter((application_id) => application_id.application_id !== application_id.application_id));
+      updateUserIdentities(user_id.user_id, identities.filter((application_id) => application_id.application_id !== user_id.application_id));
     }
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityStore.tsx");
 
 export default tmp4;
 export const FetchState = obj;

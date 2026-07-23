@@ -1,27 +1,29 @@
-// Module ID: 11807
-// Function ID: 91628
+// Module ID: 11817
+// Function ID: 91677
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: []
+// Dependencies: [1849, 566, 8719, 9740, 2]
 // Exports: default
 
-// Module 11807 (useMobileCollectiblesPurchaseSKU)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");
+// Module 11817 (useMobileCollectiblesPurchaseSKU)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");
 
 export default function useMobileCollectiblesPurchaseSKU(product) {
   product = product.product;
   let obj = Object.create(null);
   obj.product = 0;
   const merged = Object.assign(product, obj);
-  obj = arg1(dependencyMap[1]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const collectibleGoogleSkuId = arg1(dependencyMap[2]).getCollectibleGoogleSkuId(product, stateFromStores);
+  obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getCurrentUser());
+  const collectibleGoogleSkuId = require(8719) /* _createForOfIteratorHelperLoose */.getCollectibleGoogleSkuId(product, stateFromStores);
   obj = {};
-  const obj2 = arg1(dependencyMap[2]);
+  const obj2 = require(8719) /* _createForOfIteratorHelperLoose */;
   const merged1 = Object.assign(merged);
   obj["skuId"] = product.skuId;
   obj["platformSkuId"] = collectibleGoogleSkuId;
   obj["isFreeForStaffSelfPurchase"] = true;
-  return importDefault(dependencyMap[3])(obj);
+  return importDefault(9740)(obj);
 };

@@ -1,13 +1,13 @@
-// Module ID: 5995
-// Function ID: 49925
+// Module ID: 6000
+// Function ID: 49954
 // Name: DiamondIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6001, 2]
 // Exports: DiamondIllocon
 
-// Module 5995 (DiamondIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DiamondIllocon.native.tsx");
+// Module 6000 (DiamondIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DiamondIllocon.native.tsx");
 
 export const DiamondIllocon = function DiamondIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const DiamondIllocon = function DiamondIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6001) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const DiamondIllocon = function DiamondIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

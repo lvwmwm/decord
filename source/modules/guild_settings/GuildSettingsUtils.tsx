@@ -1,53 +1,58 @@
-// Module ID: 16210
-// Function ID: 125226
+// Module ID: 16327
+// Function ID: 127399
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1911, 653, 483, 15514, 2]
 // Exports: getPowerfulPermissionTitles, isRolePowerful
 
-// Module 16210 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16327 (_createForOfIteratorHelperLoose)
+import { hasPermission } from "GuildRoleRecordTypeTag";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,26 +89,23 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const hasPermission = require(dependencyMap[0]).hasPermission;
-const _module = require(dependencyMap[1]);
-({ ElevatedPermissions: closure_4, ElevatedPermissionsList: closure_5 } = _module);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/guild_settings/GuildSettingsUtils.tsx");
+({ ElevatedPermissions: closure_4, ElevatedPermissionsList: closure_5 } = ME);
+const result = require("fromHexReverseArray").fileFinishedImporting("modules/guild_settings/GuildSettingsUtils.tsx");
 
 export const isRolePowerful = function isRolePowerful(role) {
-  return importAll(dependencyMap[2]).hasAny(role.permissions, closure_4);
+  return importAll(483).hasAny(role.permissions, closure_4);
 };
 export const getPowerfulPermissionTitles = function getPowerfulPermissionTitles(id) {
   let iter2;
   const items = [];
-  const guildPermissionSpecMap = importDefault(dependencyMap[3]).getGuildPermissionSpecMap(id);
+  const guildPermissionSpecMap = importDefault(15514).getGuildPermissionSpecMap(id);
   const tmp2 = _createForOfIteratorHelperLoose(closure_5);
   let iter = tmp2();
   if (!iter.done) {
     do {
       let str = iter.value;
-      let tmp3 = closure_3;
-      if (closure_3(arg1, str)) {
+      let tmp3 = hasPermission;
+      if (hasPermission(arg1, str)) {
         let arr = items.push(guildPermissionSpecMap[str.toString(str)].title);
       }
       iter2 = tmp2();

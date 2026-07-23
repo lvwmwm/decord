@@ -1,52 +1,60 @@
-// Module ID: 6718
-// Function ID: 52240
+// Module ID: 6723
+// Function ID: 52272
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 4325, 3, 1882, 22, 2]
 
-// Module 6718 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6723 (_createForOfIteratorHelperLoose)
+import closure_2 from "_isNativeReflectConstruct";
+import apply from "apply";
+import set from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+let closure_5;
+let closure_6;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,17 +91,13 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ convertChannelOverridesToMap: closure_5, getGuildDefaults: closure_6 } = arg1(dependencyMap[3]));
-let importDefaultResult = importDefault(dependencyMap[4]);
+({ convertChannelOverridesToMap: closure_5, getGuildDefaults: closure_6 } = _isNativeReflectConstruct);
 importDefaultResult = new importDefaultResult("ReadStates");
-let tmp5 = () => {
+let tmp5 = (() => {
   class UserGuildSettings {
     constructor() {
-      f52248 = this;
-      tmp = closure_3(this, UserGuildSettings);
+      self = this;
+      tmp = outer1_3(this, UserGuildSettings);
       this.actions = {
         CONNECTION_OPEN(arg0, arg1) {
               return self.handleConnectionOpen(arg0, arg1);
@@ -105,13 +109,12 @@ let tmp5 = () => {
       return;
     }
   }
-  const dependencyMap = UserGuildSettings;
   let obj = { key: "getAll" };
   let closure_0 = callback(async (arg0) => {
     const nowResult = performance.now();
-    const obj = callback(closure_1[5]);
-    const arr = yield callback(closure_1[5]).userGuildSettings(arg0).getMany();
-    closure_7.log("asynchronously loaded in " + performance.now() - nowResult + "ms (userGuildSettings: " + arr.length + ")");
+    const obj = callback(UserGuildSettings[5]);
+    const arr = yield callback(UserGuildSettings[5]).userGuildSettings(arg0).getMany();
+    outer2_7.log("asynchronously loaded in " + performance.now() - nowResult + "ms (userGuildSettings: " + arr.length + ")");
     return arr;
   });
   obj.value = function getAll() {
@@ -162,20 +165,20 @@ let tmp5 = () => {
       let iter2;
       let obj = callback(UserGuildSettings[5]);
       const result = obj.userGuildSettingsTransaction(arg2);
-      const tmp = callback3(arg0);
+      const tmp = outer1_8(arg0);
       let iter = tmp();
       if (!iter.done) {
         do {
           let value = iter.value;
           obj = {};
-          let tmp2 = closure_6;
+          let tmp2 = outer1_6;
           let tmp3 = obj;
-          let merged = Object.assign(closure_6(value.guild_id));
+          let merged = Object.assign(outer1_6(value.guild_id));
           let tmp5 = obj;
           let tmp6 = value;
           let merged1 = Object.assign(value);
-          let tmp8 = closure_5;
-          obj["channel_overrides"] = closure_5(value.channel_overrides);
+          let tmp8 = outer1_5;
+          obj["channel_overrides"] = outer1_5(value.channel_overrides);
           let guild_id = value.guild_id;
           let str = "dm-sentinel";
           if (null != guild_id) {
@@ -192,9 +195,8 @@ let tmp5 = () => {
     }
   };
   return callback2(UserGuildSettings, items);
-}();
+})();
 tmp5 = new tmp5();
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_database/modules/UserGuildSettings.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/UserGuildSettings.tsx");
 
 export default tmp5;

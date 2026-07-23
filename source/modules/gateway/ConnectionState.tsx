@@ -1,10 +1,9 @@
-// Module ID: 12464
-// Function ID: 95215
+// Module ID: 12578
+// Function ID: 97371
 // Name: CLOSED
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 12464 (CLOSED)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/gateway/ConnectionState.tsx");
+// Module 12578 (CLOSED)
+const result = require("set").fileFinishedImporting("modules/gateway/ConnectionState.tsx");
 
 export default { CLOSED: "CLOSED", WILL_RECONNECT: "WILL_RECONNECT", CONNECTING: "CONNECTING", IDENTIFYING: "IDENTIFYING", RESUMING: "RESUMING", SESSION_ESTABLISHED: "SESSION_ESTABLISHED" };

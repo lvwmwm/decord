@@ -1,32 +1,35 @@
-// Module ID: 8807
-// Function ID: 69438
+// Module ID: 8814
+// Function ID: 69479
 // Name: LockedRecipientField
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 4126, 3969, 2]
 // Exports: default
 
-// Module 8807 (LockedRecipientField)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 8814 (LockedRecipientField)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ jsx: closure_4, jsxs: closure_5 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginLeft: require("__exportStarResult1").space.PX_16 };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.avatar = { marginEnd: require("__exportStarResult1").space.PX_8 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", marginLeft: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.avatar = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("jsxProd").fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
 
 export default function LockedRecipientField(user) {
   user = user.user;
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  obj = { style: tmp.avatar, user, guildId: undefined, size: arg1(dependencyMap[5]).AvatarSizes.NORMAL };
-  const items = [callback(arg1(dependencyMap[5]).Avatar, obj), ];
-  obj = { variant: "text-md/semibold", children: importDefault(dependencyMap[7]).getName(user) };
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj);
+  obj = { style: tmp.avatar, user, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.NORMAL };
+  const items = [callback(require(1273) /* Button */.Avatar, obj), ];
+  obj = { variant: "text-md/semibold", children: importDefault(3969).getName(user) };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 };

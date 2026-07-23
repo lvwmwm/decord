@@ -1,26 +1,30 @@
-// Module ID: 11448
-// Function ID: 89155
+// Module ID: 11458
+// Function ID: 89205
 // Name: useUserCountryCode
-// Dependencies: []
+// Dependencies: [31, 3810, 3813, 566, 10138, 7616, 2]
 // Exports: useIsTeenInStrictCountry
 
-// Module 11448 (useUserCountryCode)
+// Module 11458 (useUserCountryCode)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
+
+const require = arg1;
 function useUserCountryCode() {
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
-  const arg1 = stateFromStores;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_3.getUserCountryCode());
   const items1 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
-      const userCountryCode = stateFromStores(closure_1[4]).fetchUserCountryCode();
-      const obj = stateFromStores(closure_1[4]);
+      const userCountryCode = stateFromStores(outer1_1[4]).fetchUserCountryCode();
+      const obj = stateFromStores(outer1_1[4]);
     }
   }, items1);
   return stateFromStores;
 }
 function useIsTeenInCountrySet(set) {
   const tmp = useUserCountryCode();
-  let userIsTeen = arg1(dependencyMap[5]).useUserIsTeen();
+  let userIsTeen = require(7616) /* useUserIsTeen */.useUserIsTeen();
   if (userIsTeen) {
     userIsTeen = null != tmp;
   }
@@ -29,11 +33,10 @@ function useIsTeenInCountrySet(set) {
   }
   return userIsTeen;
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const items = [...arg1(dependencyMap[2]).CountryCodesSets.EU_COUNTRIES];
-const set = new Set(items);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
+let items = ["GB", "AU"];
+HermesBuiltin.arraySpread(require("set").CountryCodesSets.EU_COUNTRIES, 2);
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
 
 export { useUserCountryCode };
 export { useIsTeenInCountrySet };

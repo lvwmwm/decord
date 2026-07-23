@@ -1,19 +1,20 @@
-// Module ID: 13856
-// Function ID: 104793
+// Module ID: 13970
+// Function ID: 106949
 // Name: _search
-// Dependencies: []
+// Dependencies: [5, 653, 507, 562, 5734, 2]
 // Exports: search
 
-// Module 13856 (_search)
+// Module 13970 (_search)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _search() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _search = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/api/Shopfront.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/api/Shopfront.tsx");
 
 export const search = function search() {
   return _search(...arguments);

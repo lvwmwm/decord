@@ -1,39 +1,38 @@
-// Module ID: 14524
-// Function ID: 109368
+// Module ID: 14638
+// Function ID: 111528
 // Name: MFAModal
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [5, 31, 27, 33, 9203, 4337, 1212, 14639, 5788, 7607, 5087, 14640, 14641, 14646, 14649, 14650, 14651, 5519, 4471, 2]
 // Exports: openMFAModal
 
-// Module 14524 (MFAModal)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14638 (MFAModal)
+import module_4337 from "module_4337";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
 
 let LogBox;
+let closure_5;
+const require = arg1;
 class MFAModal {
   constructor(arg0) {
     mfaChallenge = global.mfaChallenge;
-    arg1 = mfaChallenge;
     finish = global.finish;
-    importDefault = finish;
     cancel = global.cancel;
-    dependencyMap = cancel;
     handleOnClose = global.handleOnClose;
     flag = global.ignoreKeyboard;
     if (flag === undefined) {
       flag = false;
     }
-    closure_4 = flag;
-    obj = { nm: false, error: false, accessibilityRole: false, nm: false, error: false };
+    c4 = flag;
+    obj = { mfaChallenge: 0, finish: 0, cancel: 0, handleOnClose: 0, ignoreKeyboard: 0 };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
-    closure_5 = undefined;
-    f109372 = undefined;
-    closure_7 = undefined;
+    c5 = undefined;
+    f111532 = undefined;
+    c7 = undefined;
     items = [];
     items[0] = mfaChallenge;
-    memo = closure_4.useMemo(() => {
+    memo = c4.useMemo(() => {
       if (mfaChallenge(cancel[4]).hasWebAuthn) {
         let obj = tmp;
       } else {
@@ -44,22 +43,22 @@ class MFAModal {
       }
       return obj;
     }, items);
-    closure_5 = memo;
+    c5 = memo;
     items1 = [, ];
     items1[0] = finish;
     items1[1] = memo.ticket;
-    callback = closure_4.useCallback(() => {
+    callback = c4.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
       let closure_0 = handleOnClose(tmp);
       return function() {
         return callback(...arguments);
       };
-    }(), items1);
-    f109372 = callback;
+    })(), items1);
+    f111532 = callback;
     items2 = [, ];
     items2[0] = cancel;
     items2[1] = handleOnClose;
-    callback1 = closure_4.useCallback(() => {
+    callback1 = c4.useCallback(() => {
       if (null == handleOnClose) {
         finish(cancel[5]).popWithKey(callback1);
         if (null != cancel) {
@@ -73,7 +72,7 @@ class MFAModal {
         handleOnClose();
       }
     }, items2);
-    closure_7 = callback1;
+    c7 = callback1;
     items3 = [, ];
     items3[0] = memo;
     items3[1] = callback;
@@ -81,8 +80,8 @@ class MFAModal {
     items4[0] = callback1;
     items4[1] = memo.methods;
     items4[2] = flag;
-    memo1 = closure_4.useMemo(() => {
-      let obj = { name: mfaChallenge(cancel[7]).MfaScreens.SELECT, params: obj };
+    memo1 = c4.useMemo(() => {
+      obj = { name: mfaChallenge(cancel[7]).MfaScreens.SELECT, params: obj };
       obj = { mfaChallenge: memo, finish: callback };
       const first = memo.methods[0];
       let type;
@@ -100,25 +99,25 @@ class MFAModal {
       }
       return items1;
     }, items3);
-    memo2 = closure_4.useMemo(() => {
+    memo2 = c4.useMemo(() => {
       function headerRight() {
         const obj = {};
-        const intl = callback(closure_2[6]).intl;
-        obj.accessibilityLabel = intl.string(callback(closure_2[6]).t.cpT0Cq);
-        obj.onPress = closure_7;
-        obj.source = callback2(closure_2[9]);
-        return callback3(callback(closure_2[8]).HeaderActionButton, obj);
+        const intl = mfaChallenge(cancel[6]).intl;
+        obj.accessibilityLabel = intl.string(mfaChallenge(cancel[6]).t.cpT0Cq);
+        obj.onPress = outer1_7;
+        obj.source = finish(cancel[9]);
+        return callback(mfaChallenge(cancel[8]).HeaderActionButton, obj);
       }
-      let obj = { ignoreKeyboard: flag };
+      let obj = { fullscreen: true, ignoreKeyboard: flag, headerTitle: "" };
       obj = {};
       obj = {};
-      const merged = Object.assign(obj);
+      let merged = Object.assign(obj);
       let obj3 = mfaChallenge(cancel[10]);
       obj["headerLeft"] = obj3.getHeaderBackButton();
       obj["headerRight"] = headerRight;
       obj["render"] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(closure_2[11]), {});
+        return callback(finish(cancel[11]), {});
       };
       obj[mfaChallenge(cancel[7]).MfaScreens.SELECT] = obj;
       const obj1 = {};
@@ -148,7 +147,7 @@ class MFAModal {
       obj1["headerRight"] = tmp13;
       obj1["render"] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(closure_2[12]), {});
+        return callback(finish(cancel[12]), {});
       };
       obj[mfaChallenge(cancel[7]).MfaScreens.WEBAUTHN] = obj1;
       const obj2 = {};
@@ -178,7 +177,7 @@ class MFAModal {
       obj2["headerRight"] = tmp25;
       obj2["render"] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(closure_2[13]), {});
+        return callback(finish(cancel[13]), {});
       };
       obj[mfaChallenge(cancel[7]).MfaScreens.TOTP] = obj2;
       obj3 = {};
@@ -208,7 +207,7 @@ class MFAModal {
       obj3["headerRight"] = tmp37;
       obj3["render"] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(closure_2[14]), {});
+        return callback(finish(cancel[14]), {});
       };
       obj[mfaChallenge(cancel[7]).MfaScreens.BACKUP] = obj3;
       const obj4 = {};
@@ -238,7 +237,7 @@ class MFAModal {
       obj4["headerRight"] = tmp49;
       obj4["render"] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(closure_2[15]), {});
+        return callback(finish(cancel[15]), {});
       };
       obj[mfaChallenge(cancel[7]).MfaScreens.SMS] = obj4;
       obj5 = {};
@@ -268,24 +267,24 @@ class MFAModal {
       obj5["headerRight"] = tmp61;
       obj5["render"] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(closure_2[16]), {});
+        return callback(finish(cancel[16]), {});
       };
       obj[mfaChallenge(cancel[7]).MfaScreens.PASSWORD] = obj5;
       return obj;
     }, items4);
-    obj = { screens: memo2, initialRouteStack: memo1, onWillFocus: closure_5.dismiss };
+    obj = { screens: memo2, initialRouteStack: memo1, onWillFocus: c5.dismiss };
     merged1 = Object.assign(merged);
-    return f109372(arg1(dependencyMap[17]).Navigator, obj);
+    return f111532(require("NavigationStack").Navigator, obj);
   }
 }
-({ Keyboard: closure_5, LogBox } = require("__exportStarResult1"));
-LogBox.ignoreLogs(["no"]);
-let closure_7 = "MFA_MODAL_KEY";
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/mfa/native/MFAModal.tsx");
+({ Keyboard: closure_5, LogBox } = get_ActivityIndicator);
+LogBox.ignoreLogs(["Non-serializable values were found in the navigation state"]);
+const MFA_MODAL_KEY = "MFA_MODAL_KEY";
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/mfa/native/MFAModal.tsx");
 
 export { MFAModal };
 export const openMFAModal = function openMFAModal(mfaChallenge, finish, cancel) {
-  let arr = importDefault(dependencyMap[5]);
-  arr = arr.push(MFAModal, { mfaChallenge, finish, cancel }, closure_7);
-  importDefault(dependencyMap[18]).close();
+  let arr = importDefault(4337);
+  arr = arr.push(MFAModal, { mfaChallenge, finish, cancel }, MFA_MODAL_KEY);
+  importDefault(4471).close();
 };

@@ -1,26 +1,25 @@
-// Module ID: 11419
-// Function ID: 88816
+// Module ID: 11429
+// Function ID: 88866
 // Name: sumResults
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: getBarText
 
-// Module 11419 (sumResults)
+// Module 11429 (sumResults)
 function sumResults(arr) {
   return arr.reduce((arg0, arg1) => arg0 + arg1, 0);
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/dice_roll/DiceRollUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/dice_roll/DiceRollUtils.tsx");
 
 export const getBarText = function getBarText(arg0, results) {
   if (arg0) {
-    const intl2 = require(dependencyMap[0]).intl;
-    let str = intl2.string(require(dependencyMap[0]).t.x/FIRX);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let str = intl2.string(require(1212) /* getSystemLocale */.t["x/FIRX"]);
   } else {
     str = "";
     if (null != results) {
-      const intl = require(dependencyMap[0]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const obj = { total: sumResults(results) };
-      str = intl.formatToPlainString(require(dependencyMap[0]).t.xU4pF1, obj);
+      str = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.xU4pF1, obj);
     }
   }
   return str;

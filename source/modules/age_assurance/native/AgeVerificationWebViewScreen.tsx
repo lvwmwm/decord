@@ -1,46 +1,49 @@
-// Module ID: 7540
-// Function ID: 60362
+// Module ID: 7546
+// Function ID: 60399
 // Name: AgeVerificationWebViewScreen
-// Dependencies: []
+// Dependencies: [57, 31, 27, 7537, 7539, 33, 3, 4130, 689, 3981, 4347, 7542, 3827, 7547, 5586, 2]
 // Exports: default
 
-// Module 7540 (AgeVerificationWebViewScreen)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = arg1(dependencyMap[3]).AGE_VERIFICATION_MODAL_KEY;
-({ AgeVerificationIncodeResultStatus: closure_7, buildIncodeFallbackSessionInjection: closure_8, parseIncodeWebViewMessage: closure_9 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-let importDefaultResult = importDefault(dependencyMap[6]);
-importDefaultResult = new importDefaultResult("AgeVerificationWebViewScreen");
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
-obj.container = obj;
-const obj1 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
-obj.loadingOverlay = obj1;
-const tmp3 = arg1(dependencyMap[5]);
-obj.webView = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
-let closure_13 = obj.createStyles(obj);
-const obj2 = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationWebViewScreen.tsx");
+// Module 7546 (AgeVerificationWebViewScreen)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { AGE_VERIFICATION_MODAL_KEY as closure_6 } from "set";
+import postToNativeWebView from "postToNativeWebView";
+import jsxProd from "jsxProd";
+import importDefaultResult from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-export default function AgeVerificationWebViewScreen(injectedJavaScriptBeforeContentLoaded) {
-  const webviewUrl = injectedJavaScriptBeforeContentLoaded.webviewUrl;
-  const arg1 = webviewUrl;
-  const onComplete = injectedJavaScriptBeforeContentLoaded.onComplete;
-  const importDefault = onComplete;
-  const onClose = injectedJavaScriptBeforeContentLoaded.onClose;
-  const dependencyMap = onClose;
+let closure_10;
+let closure_11;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ AgeVerificationIncodeResultStatus: closure_7, buildIncodeFallbackSessionInjection: closure_8, parseIncodeWebViewMessage: closure_9 } = postToNativeWebView);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+importDefaultResult = new importDefaultResult("AgeVerificationWebViewScreen");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.loadingOverlay = obj1;
+_createForOfIteratorHelperLoose.webView = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/age_assurance/native/AgeVerificationWebViewScreen.tsx");
+
+export default function AgeVerificationWebViewScreen(webviewUrl) {
+  webviewUrl = webviewUrl.webviewUrl;
+  const onComplete = webviewUrl.onComplete;
+  const onClose = webviewUrl.onClose;
   const ref = React.useRef(null);
-  let callback = ref;
-  const React = React.useRef(false);
+  React = React.useRef(false);
   let closure_5 = React.useRef(false);
-  const tmp2 = callback(React.useState(true), 2);
+  const tmp2 = ref(React.useState(true), 2);
   let first = tmp2[0];
   let closure_6 = tmp2[1];
-  callback = React.useCallback(() => {
+  const callback = React.useCallback(() => {
     if (!ref2.current) {
       ref2.current = true;
       callback(false);
@@ -49,11 +52,11 @@ export default function AgeVerificationWebViewScreen(injectedJavaScriptBeforeCon
   const items = [callback];
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
-      if (!ref.current) {
+      if (!outer1_5.current) {
         const obj = { timeoutMs: 15000 };
-        closure_12.warn("WebView initial load timed out", obj);
+        outer2_12.warn("WebView initial load timed out", obj);
       }
-      callback();
+      outer1_7();
     }, 15000);
     return () => clearTimeout(closure_0);
   }, items);
@@ -76,7 +79,7 @@ export default function AgeVerificationWebViewScreen(injectedJavaScriptBeforeCon
       callback1();
     }
   }, items2);
-  let obj = arg1(dependencyMap[10]);
+  let obj = webviewUrl(onClose[10]);
   const watchAgeVerificationStatusChange = obj.useWatchAgeVerificationStatusChange(callback2);
   const callback3 = React.useCallback((arg0) => {
     const current = ref.current;
@@ -93,16 +96,16 @@ export default function AgeVerificationWebViewScreen(injectedJavaScriptBeforeCon
         const result = webviewUrl(onClose[11]).registerIncodeInterview(tmp.interviewId);
         const obj3 = webviewUrl(onClose[11]);
         result.then(() => {
-          let isAgeVerifiedResult = !ref.current;
+          let isAgeVerifiedResult = !outer1_4.current;
           if (isAgeVerifiedResult) {
-            isAgeVerifiedResult = callback(closure_2[10]).isAgeVerified();
-            const obj = callback(closure_2[10]);
+            isAgeVerifiedResult = webviewUrl(onClose[10]).isAgeVerified();
+            const obj = webviewUrl(onClose[10]);
           }
           if (isAgeVerifiedResult) {
-            callback2();
+            outer1_8();
           }
         }).catch((error) => {
-          closure_12.warn("Failed to register Incode interview from WebView", { error });
+          outer2_12.warn("Failed to register Incode interview from WebView", { error });
         });
       } else if ("fallback_request" === tmp2.kind) {
         let obj = webviewUrl(onClose[11]);
@@ -118,13 +121,13 @@ export default function AgeVerificationWebViewScreen(injectedJavaScriptBeforeCon
             if (null != incode_parameters.interview_id) {
               const obj = {};
               ({ session_token: obj.sessionToken, interview_id: obj.interviewId } = incode_parameters);
-              callback3(obj);
+              outer1_9(obj);
             }
           }
-          callback3({ error: true });
+          outer1_9({ error: true });
         }).catch((error) => {
-          closure_12.warn("Failed to bootstrap Incode fallback session from WebView", { error });
-          callback3({ error: true });
+          outer2_12.warn("Failed to bootstrap Incode fallback session from WebView", { error });
+          outer1_9({ error: true });
         });
       } else if (tmp2.status === callback.COMPLETED) {
         callback1();
@@ -161,32 +164,34 @@ export default function AgeVerificationWebViewScreen(injectedJavaScriptBeforeCon
         let obj = onComplete(onClose[12]);
         let openURLResult = obj.openURL(isTopFrame.url);
         flag2 = false;
-        // break
+        break;
       }
       return flag2;
     }
   }, items5);
-  const tmp13 = callback2();
+  const tmp13 = _createForOfIteratorHelperLoose();
   obj = { style: tmp13.container };
   obj = {
     ref,
+    allowsInlineMediaPlayback: true,
+    mediaCapturePermissionGrantType: "grant",
+    javaScriptEnabled: true,
     source: { uri: webviewUrl },
     onShouldStartLoadWithRequest: callback5,
     onMessage: callback4,
     onError(code) {
-      closure_12.warn("WebView load error", { code: code.nativeEvent.code });
+      outer1_12.warn("WebView load error", { code: code.nativeEvent.code });
       callback();
     },
     onLoadEnd() {
       callback();
     },
-    injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded,
-    style: tmp13.webView,
-    containerStyle: tmp13.webView
+    injectedJavaScriptBeforeContentLoaded: webviewUrl.injectedJavaScriptBeforeContentLoaded
   };
-  const items6 = [memo(importDefault(dependencyMap[13]), obj), ];
+  ({ webView: obj3.style, webView: obj3.containerStyle } = tmp13);
+  const items6 = [memo(onComplete(onClose[13]), obj), ];
   if (first) {
-    const obj1 = { style: tmp13.loadingOverlay, children: memo(arg1(dependencyMap[14]).ActivityIndicator, {}) };
+    const obj1 = { style: tmp13.loadingOverlay, children: memo(webviewUrl(onClose[14]).ActivityIndicator, {}) };
     first = memo(closure_5, obj1);
   }
   items6[1] = first;

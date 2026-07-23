@@ -1,10 +1,22 @@
-// Module ID: 7916
-// Function ID: 63091
+// Module ID: 7922
+// Function ID: 63128
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 4566, 4156, 662, 4214, 22, 566, 686, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 7916 (_isNativeReflectConstruct)
+// Module 7922 (_isNativeReflectConstruct)
+import closure_2 from "TRUE_OPTION_NAME";
+import ApplicationTypes from "ApplicationTypes";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+import importDefaultResult from "DEFAULT_FRECENCY";
+
+let closure_8;
+let closure_9;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,49 +26,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -120,7 +132,7 @@ function handleUserSettingsProtoStoreChange() {
   if (null == applicationCommands) {
     applicationCommands = {};
   }
-  importDefaultResult.overwriteHistory(importDefault(dependencyMap[10]).mapValues(applicationCommands, (recentUses) => {
+  importDefaultResult.overwriteHistory(importDefault(22).mapValues(applicationCommands, (recentUses) => {
     const obj = {};
     const merged = Object.assign(recentUses);
     recentUses = recentUses.recentUses;
@@ -129,16 +141,8 @@ function handleUserSettingsProtoStoreChange() {
     return obj;
   }), closure_11.pendingUsages);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-({ DISCOVERY_COMMAND_FRECENCY_GATEWAY_LIMIT: closure_8, SUB_COMMAND_KEY_SEPARATOR: closure_9 } = arg1(dependencyMap[6]));
-const UserSettingsTypes = arg1(dependencyMap[8]).UserSettingsTypes;
+({ DISCOVERY_COMMAND_FRECENCY_GATEWAY_LIMIT: closure_8, SUB_COMMAND_KEY_SEPARATOR: closure_9 } = TRUE_OPTION_NAME);
 let closure_11 = { pendingUsages: [] };
-let importDefaultResult = importDefault(dependencyMap[9]);
 let obj = {
   computeBonus() {
     return 1;
@@ -149,22 +153,22 @@ let obj = {
   afterCompute() {
 
   },
-  numFrequentlyItems: arg1(dependencyMap[7]).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: require("ApplicationTypes").FREQUENCY_ITEM_LIMIT
 };
 importDefaultResult = new importDefaultResult(obj);
-let tmp5 = (PersistedStore) => {
+let tmp5 = ((PersistedStore) => {
   class ApplicationCommandFrecencyStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ApplicationCommandFrecencyStore);
-      obj = closure_5(ApplicationCommandFrecencyStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, ApplicationCommandFrecencyStore);
+      obj = outer1_5(ApplicationCommandFrecencyStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -173,41 +177,43 @@ let tmp5 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = ApplicationCommandFrecencyStore;
   callback2(ApplicationCommandFrecencyStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       const self = this;
-      const items = [closure_7];
-      self.syncWith(items, closure_17);
+      if (null != arg0) {
+        const outer1_11 = arg0;
+      }
+      const items = [outer1_7];
+      self.syncWith(items, outer1_17);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[1] = obj;
   obj = {
     key: "hasPendingUsage",
     value() {
-      return pendingUsages.pendingUsages.length > 0;
+      return outer1_11.pendingUsages.length > 0;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getCommandFrecencyWithoutLoadingLatest",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[4] = {
     key: "getScoreWithoutLoadingLatest",
     value(arg0, arg1) {
-      const score = score.getScore(callback4(arg0, arg1));
+      const score = outer1_12.getScore(outer1_16(arg0, arg1));
       let num = 0;
       if (null != score) {
         num = score;
@@ -218,11 +224,11 @@ let tmp5 = (PersistedStore) => {
   items[5] = {
     key: "getTopCommandsWithoutLoadingLatest",
     value() {
-      return score.frequently;
+      return outer1_12.frequently;
     }
   };
   return callback(ApplicationCommandFrecencyStore, items);
-}(importDefault(dependencyMap[11]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp5.displayName = "ApplicationCommandFrecencyStore";
 tmp5.persistKey = "ApplicationCommandFrecencyV2";
 obj = {
@@ -242,9 +248,8 @@ obj = {
     return false;
   }
 };
-tmp5 = new tmp5(importDefault(dependencyMap[12]), obj);
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/application_commands/ApplicationCommandFrecencyStore.tsx");
+tmp5 = new tmp5(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/application_commands/ApplicationCommandFrecencyStore.tsx");
 
 export default tmp5;
 export const getTopRealCommands = function getTopRealCommands(arg0) {
@@ -276,17 +281,17 @@ export const getTopRealCommands = function getTopRealCommands(arg0) {
   return items;
 };
 export const getFilteredTopCommands = function getFilteredTopCommands(arr) {
-  const importDefault = arg1;
+  let closure_0 = arg1;
   const found = arr.filter((arr) => {
     let tmp = !arr.includes(":");
     if (!tmp) {
       let guild;
-      if (null != arg1) {
-        guild = arg1.guild;
+      if (null != closure_0) {
+        guild = closure_0.guild;
       }
       let tmp6 = null != guild;
       if (tmp6) {
-        tmp6 = arg1.guild.id === arr.split(":")[1];
+        tmp6 = closure_0.guild.id === arr.split(":")[1];
       }
       tmp = tmp6;
     }

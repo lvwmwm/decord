@@ -1,53 +1,57 @@
-// Module ID: 15578
-// Function ID: 118849
+// Module ID: 15695
+// Function ID: 121022
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 3991, 4476, 2]
 // Exports: default, useLockedWebView
 
-// Module 15578 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15695 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,9 +88,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
+let result = require("module_3991").fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
 
 export default function useActivityWebViewLockManager() {
   return React.useState(() => {
@@ -107,24 +109,23 @@ export default function useActivityWebViewLockManager() {
       if (null == closure_0) {
         const resolved = Promise.resolve();
         closure_0 = resolved.then(() => {
-          let callback;
           let iter2;
           let tmp4;
           let tmp5;
-          const tmp = callback(closure_2);
+          const tmp = outer3_4(outer1_2);
           let iter = tmp();
           if (!iter.done) {
             do {
-              let tmp2 = closure_2;
-              let tmp3 = closure_2(iter.value, 2);
+              let tmp2 = outer3_2;
+              let tmp3 = outer3_2(iter.value, 2);
               [tmp4, tmp5] = tmp3;
-              callback = tmp5.callback;
-              let tmp6 = closure_3;
-              let tmp7 = closure_3(tmp4);
+              let callback = tmp5.callback;
+              let tmp6 = outer1_3;
+              let tmp7 = outer1_3(tmp4);
               if (tmp7 !== tmp5.canRender) {
-                let tmp8 = closure_2;
+                let tmp8 = outer1_2;
                 let obj = { canRender: tmp7, callback };
-                let result = closure_2.set(tmp4, obj);
+                let result = outer1_2.set(tmp4, obj);
                 let callbackResult = callback(tmp7);
               }
               iter2 = tmp();
@@ -138,22 +139,22 @@ export default function useActivityWebViewLockManager() {
     const set = new Set();
     const map = new Map();
     return () => {
-      const id = getCanRender.useId();
-      const tmp2 = map(getCanRender.useState(() => callback(id)), 2);
+      const id = outer2_3.useId();
+      const tmp2 = outer2_2(outer2_3.useState(() => outer1_3(id)), 2);
       const items = [id];
-      const insertionEffect = getCanRender.useInsertionEffect(() => {
+      const insertionEffect = outer2_3.useInsertionEffect(() => {
         tmp3.add(id);
-        const result = closure_2.set(id, { callback: tmp3, canRender: callback(id) });
+        const result = outer1_2.set(id, { callback: tmp3, canRender: outer1_3(id) });
         return () => {
-          set.delete(closure_0);
-          set2.delete(closure_0);
+          set.delete(outer1_0);
+          outer2_2.delete(outer1_0);
         };
       }, items);
       const items1 = [id, tmp2[1]];
-      const layoutEffect = getCanRender.useLayoutEffect(() => {
-        callback2();
+      const layoutEffect = outer2_3.useLayoutEffect(() => {
+        outer1_4();
         return () => {
-          callback();
+          outer2_4();
         };
       }, items1);
       return tmp2[0];
@@ -162,11 +163,8 @@ export default function useActivityWebViewLockManager() {
 };
 export const useLockedWebView = function useLockedWebView(transitionState) {
   transitionState = transitionState.transitionState;
-  const arg1 = transitionState;
-  const shown = arg1(dependencyMap[2]).useSharedValue(false);
-  const dependencyMap = shown;
+  shown = transitionState(shown[2]).useSharedValue(false);
   const renderWebView = React.useContext(transitionState.context).useActivityWebViewLock();
-  let closure_2 = renderWebView;
   const items = [shown, transitionState, renderWebView];
   const effect = React.useEffect(() => {
     if (transitionState !== transitionState(shown[3]).TransitionStates.YEETED) {

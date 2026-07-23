@@ -1,5 +1,5 @@
 // Module ID: 1300
-// Function ID: 15196
+// Function ID: 15197
 // Name: isOneofGroup
 // Dependencies: []
 
@@ -38,7 +38,7 @@ arg5.getOneofValue = function getOneofValue(arg0, arg1) {
 arg5.setOneofValue = function setOneofValue(oneofKind, oneofKind2) {
   if (undefined !== oneofKind.oneofKind) {
     oneofKind = oneofKind.oneofKind;
-    delete r3[r4];
+    delete tmp[tmp2];
   }
   oneofKind.oneofKind = oneofKind2;
   if (undefined !== arg2) {
@@ -48,17 +48,17 @@ arg5.setOneofValue = function setOneofValue(oneofKind, oneofKind2) {
 arg5.setUnknownOneofValue = function setUnknownOneofValue(oneofKind, oneofKind2) {
   if (undefined !== oneofKind.oneofKind) {
     oneofKind = oneofKind.oneofKind;
-    delete r3[r4];
+    delete tmp[tmp2];
   }
   oneofKind.oneofKind = oneofKind2;
-  if (tmp) {
+  if (tmp3) {
     oneofKind[oneofKind2] = arg2;
   }
 };
 arg5.clearOneofValue = function clearOneofValue(oneofKind) {
   if (undefined !== oneofKind.oneofKind) {
     oneofKind = oneofKind.oneofKind;
-    delete r1[r2];
+    delete tmp[tmp2];
   }
   oneofKind.oneofKind = undefined;
 };

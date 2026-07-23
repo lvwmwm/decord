@@ -1,83 +1,88 @@
-// Module ID: 8398
-// Function ID: 66851
+// Module ID: 8404
+// Function ID: 66888
 // Name: EditGuildEventChannelSelection
-// Dependencies: []
+// Dependencies: [31, 27, 3758, 3767, 1849, 6758, 653, 33, 4130, 689, 5780, 8400, 8384, 4320, 566, 4593, 8386, 8387, 1212, 4126, 4660, 1820, 8405, 8365, 4098, 8382, 1934, 1273, 8383, 2]
 // Exports: default
 
-// Module 8398 (EditGuildEventChannelSelection)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ ChannelTypes: closure_9, Permissions: closure_10 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = { container: { flexDirection: "column" } };
-obj = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-obj.channelSelectorButton = obj;
-obj.channelIcon = { marginRight: 8 };
-obj.channelTypeText = { "Null": "<string:2126337>", "Null": "<string:2097152>" };
-obj.channelNameText = { flex: 1 };
-let closure_13 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventChannelSelection.tsx");
+// Module 8404 (EditGuildEventChannelSelection)
+import "result";
+import { View } from "Button";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_9;
+const require = arg1;
+({ ChannelTypes: closure_9, Permissions: closure_10 } = ME);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flexDirection: "column" } };
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+_createForOfIteratorHelperLoose.channelSelectorButton = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.channelIcon = { marginRight: 8 };
+_createForOfIteratorHelperLoose.channelTypeText = { flex: 1, marginBottom: 8 };
+_createForOfIteratorHelperLoose.channelNameText = { flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventChannelSelection.tsx");
 
 export default function EditGuildEventChannelSelection(guild) {
+  let View;
   let channel;
   let channelType;
+  let dependencyMap;
   guild = guild.guild;
-  const arg1 = guild;
   ({ channelType, channel } = guild);
-  const importDefault = channel;
   const guildEventId = guild.guildEventId;
-  const importAll = guildEventId;
-  ({ recurrenceId: closure_3, onChangeChannel: closure_4 } = guild);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[10]);
+  ({ recurrenceId: dependencyMap, onChangeChannel: View } = guild);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = guild(5780);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
-  let closure_5 = tmp3;
-  let obj1 = arg1(dependencyMap[11]);
+  let _isNativeReflectConstruct = tmp3;
+  let obj1 = guild(8400);
   let closure_6 = obj1.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = arg1(dependencyMap[12]);
+  let obj2 = guild(8384);
   let closure_7 = obj2.useChannelsUserCanStartStageIn(guild);
-  const tmp4 = importDefault(dependencyMap[13])(channel);
-  let obj3 = arg1(dependencyMap[14]);
-  const items = [closure_5];
-  let closure_8 = obj3.useStateFromStores(items, () => tmp3.can(constants.MANAGE_CHANNELS, guild));
-  let obj4 = arg1(dependencyMap[14]);
+  const tmp4 = channel(4320)(channel);
+  let obj3 = guild(566);
+  const items = [_isNativeReflectConstruct];
+  let closure_8 = obj3.useStateFromStores(items, () => tmp3.can(outer1_10.MANAGE_CHANNELS, guild));
+  let obj4 = guild(566);
   const items1 = [closure_8];
   const items2 = [guildEventId];
   const constants = obj4.useStateFromStores(items1, () => guildScheduledEvent.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    let obj5 = arg1(dependencyMap[15]);
+    let obj5 = guild(4593);
     let channelIcon = obj5.getChannelIcon(channel);
   } else {
-    channelIcon = importDefault(dependencyMap[16]);
+    channelIcon = channel(8386);
   }
   if (null != channel) {
-    let obj6 = arg1(dependencyMap[15]);
+    let obj6 = guild(4593);
     let LocationIcon = obj6.getChannelIconComponent(channel);
   } else {
-    LocationIcon = arg1(dependencyMap[17]).LocationIcon;
+    LocationIcon = guild(8387).LocationIcon;
   }
-  const intl = arg1(dependencyMap[18]).intl;
-  const string = intl.string;
-  const t = arg1(dependencyMap[18]).t;
+  let intl = guild(1212).intl;
+  let string = intl.string;
+  let t = guild(1212).t;
   if (channelType === constants.GUILD_STAGE_VOICE) {
     let stringResult = string(t.S7GjDz);
   } else {
-    stringResult = string(t.7RYWCP);
+    stringResult = string(t["7RYWCP"]);
   }
   obj = { style: items3 };
-  const items3 = [tmp.container, guild.style];
-  obj = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp.channelTypeText, children: stringResult };
-  const items4 = [callback(arg1(dependencyMap[19]).Text, obj), ];
+  items3 = [tmp.container, guild.style];
+  obj = { style: tmp.channelTypeText, variant: "text-sm/semibold", color: "text-subtle", children: stringResult };
+  const items4 = [callback(guild(4126).Text, obj), ];
   obj1 = { accessibilityLabel: stringResult };
-  const intl2 = arg1(dependencyMap[18]).intl;
-  obj1.accessibilityHint = intl2.string(arg1(dependencyMap[18]).t.AaXbMD);
+  const intl2 = guild(1212).intl;
+  obj1.accessibilityHint = intl2.string(guild(1212).t.AaXbMD);
   obj2 = {};
   let tmp17;
   if (null != tmp4) {
@@ -91,11 +96,11 @@ export default function EditGuildEventChannelSelection(guild) {
   items5[2] = tmp.channelSelectorButton;
   obj1.style = items5;
   obj1.onPress = function onPress() {
-    let obj = guildEventId(paths[21]);
-    const result = obj.dismissGlobalKeyboard();
+    let obj = guildEventId(outer1_3[21]);
+    let result = obj.dismissGlobalKeyboard();
     let tmp3 = null;
     const mapped = closure_6.map((id) => {
-      const obj = { value: id.id, label: callback(closure_3[13]).computeChannelName(id, closure_7, closure_6, true) };
+      const obj = { value: id.id, label: guild(outer2_3[13]).computeChannelName(id, closure_7, closure_6, true) };
       return obj;
     });
     if (0 === length.length) {
@@ -104,39 +109,40 @@ export default function EditGuildEventChannelSelection(guild) {
         obj = {
           guildId: guild.id,
           onCreate(channel) {
-                let obj = callback(closure_3[23]);
+                let obj = guild(outer2_3[23]);
                 obj = { channel };
                 let tmp2;
-                if (null != closure_9) {
-                  tmp2 = closure_9;
+                if (null != outer1_9) {
+                  tmp2 = outer1_9;
                 }
                 obj.guildEvent = tmp2;
-                obj.recurrenceId = closure_3;
-                const result = obj.openCreateOrEditGuildEventModal(callback, obj);
+                obj.recurrenceId = outer1_3;
+                const result = obj.openCreateOrEditGuildEventModal(outer1_0, obj);
               }
         };
-        tmp3 = callback(channel(paths[22]), obj);
+        tmp3 = outer1_11(channel(outer1_3[22]), obj);
       }
     }
     obj = {};
-    const obj3 = channel(paths[24]);
-    const intl = guild(paths[18]).intl;
+    const obj3 = channel(outer1_3[24]);
+    const intl = guild(outer1_3[18]).intl;
     const string = intl.string;
-    const t = guild(paths[18]).t;
-    if (tmp3) {
+    const t = guild(outer1_3[18]).t;
+    if (_isNativeReflectConstruct) {
       let stringResult = string(t.S7GjDz);
     } else {
-      stringResult = string(t.7RYWCP);
+      stringResult = string(t["7RYWCP"]);
     }
     obj.title = stringResult;
     obj.items = mapped;
     obj.body = tmp3;
     obj.onItemSelect = function onItemSelect(arg0) {
-      const found = closure_6.find((id) => id.id === id);
+      let closure_0 = arg0;
+      const found = outer1_6.find((id) => id.id === closure_0);
       if (null != found) {
-        callback3(found);
+        outer1_4(found);
       }
-      callback2(closure_3[24]).hideActionSheet();
+      channel(outer2_3[24]).hideActionSheet();
     };
     let id;
     if (null != channel) {
@@ -148,22 +154,22 @@ export default function EditGuildEventChannelSelection(guild) {
     }
     obj.selectedItem = tmp13;
     obj.hasIcons = false;
-    obj3.openLazy(guild(paths[26])(paths[25], paths.paths), "SelectUpdatesChannel", obj);
+    obj3.openLazy(guild(outer1_3[26])(outer1_3[25], outer1_3.paths), "SelectUpdatesChannel", obj);
   };
   if (null != LocationIcon) {
     obj3 = { style: tmp.channelIcon };
     let tmp21 = callback(LocationIcon, obj3);
   } else {
     obj4 = { source: channelIcon, style: tmp.channelIcon };
-    tmp21 = callback(arg1(dependencyMap[27]).Icon, obj4);
+    tmp21 = callback(guild(1273).Icon, obj4);
   }
   const items6 = [tmp21, , ];
-  obj5 = { "Null": 0.236, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184698513646185, alignItems: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000007170012376140887, style: tmp.channelNameText, children: tmp4 };
-  items6[1] = callback(arg1(dependencyMap[19]).Text, obj5);
-  obj6 = { source: importDefault(dependencyMap[28]) };
-  items6[2] = callback(arg1(dependencyMap[27]).Icon, obj6);
+  obj5 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp4 };
+  items6[1] = callback(guild(4126).Text, obj5);
+  obj6 = { source: channel(8383) };
+  items6[2] = callback(guild(1273).Icon, obj6);
   obj1.children = items6;
-  items4[1] = closure_12(arg1(dependencyMap[20]).PressableOpacity, obj1);
+  items4[1] = closure_12(guild(4660).PressableOpacity, obj1);
   obj.children = items4;
   return closure_12(View, obj);
 };

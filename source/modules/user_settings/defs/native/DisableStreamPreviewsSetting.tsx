@@ -1,28 +1,45 @@
-// Module ID: 14410
-// Function ID: 108700
+// Module ID: 14524
+// Function ID: 110853
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 3803, 10095, 1212, 2]
 
-// Module 14410 (toggle)
-const _module = require(dependencyMap[2]);
-const toggle = _module.createToggle({
+// Module 14524 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.1CzWUK);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["1CzWUK"]);
   },
   useDescription() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.jTNPHM);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.jTNPHM);
   },
-  parent: require(dependencyMap[0]).MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(dependencyMap[1]).DisableStreamPreviews;
+    const DisableStreamPreviews = require(3803) /* explicitContentFromProto */.DisableStreamPreviews;
     const setting = DisableStreamPreviews.useSetting();
     return null != setting && setting;
   },
-  onValueChange: require(dependencyMap[1]).DisableStreamPreviews.updateSetting
+  onValueChange: require("explicitContentFromProto").DisableStreamPreviews.updateSetting
 });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["1CzWUK"]);
+  },
+  useDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.jTNPHM);
+  },
+  parent: require("MobileSetting").MobileSetting.VOICE,
+  useValue() {
+    const DisableStreamPreviews = require(3803) /* explicitContentFromProto */.DisableStreamPreviews;
+    const setting = DisableStreamPreviews.useSetting();
+    return null != setting && setting;
+  },
+  onValueChange: require("explicitContentFromProto").DisableStreamPreviews.updateSetting
+};
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DisableStreamPreviewsSetting.tsx");
 
 export default toggle;

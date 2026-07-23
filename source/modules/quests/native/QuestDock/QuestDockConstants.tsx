@@ -1,22 +1,21 @@
-// Module ID: 13880
-// Function ID: 105016
+// Module ID: 13994
+// Function ID: 107172
 // Name: QUEST_DOCK_COLLAPSED_HEIGHT
-// Dependencies: []
+// Dependencies: [689, 2]
 
-// Module 13880 (QUEST_DOCK_COLLAPSED_HEIGHT)
-let obj = {};
+// Module 13994 (QUEST_DOCK_COLLAPSED_HEIGHT)
+let obj = { mass: 0.5, damping: 80, stiffness: 320 };
 obj = {};
 const merged = Object.assign(obj);
 obj["overshootClamping"] = true;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockConstants.tsx");
 
 export const QUEST_DOCK_COLLAPSED_HEIGHT = 56;
 export const QUEST_DOCK_CLOSED_HEIGHT = 22;
 export const QUEST_DOCK_EXPANDED_HEIGHT = 400;
-export const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = importDefault(dependencyMap[0]).space.PX_16;
-export const QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL = importDefault(dependencyMap[0]).space.PX_12;
-export const QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP = importDefault(dependencyMap[0]).space.PX_8;
+export const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = require("_createForOfIteratorHelperLoose").space.PX_16;
+export const QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL = require("_createForOfIteratorHelperLoose").space.PX_12;
+export const QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP = require("_createForOfIteratorHelperLoose").space.PX_8;
 export const QUEST_DOCK_COLLAPSED_MAX_WIDTH = 600;
 export const QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED = 8;
 export const QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED = 8;
@@ -41,4 +40,4 @@ export const QUEST_DOCK_EXTERNAL_OFFSET_CLOSED = 22;
 export const QUEST_DOCK_EXPANDED_CONTENT_PADDING_VERTICAL = 16;
 export const QUEST_DOCK_MODE_CHANGE_PHYSICS = obj;
 export const QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED = obj;
-export const QUEST_DOCK_CONTENT_BORDER_RADII = importDefault(dependencyMap[0]).radii.lg;
+export const QUEST_DOCK_CONTENT_BORDER_RADII = require("_createForOfIteratorHelperLoose").radii.lg;

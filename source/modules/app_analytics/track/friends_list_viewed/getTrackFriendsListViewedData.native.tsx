@@ -1,30 +1,32 @@
-// Module ID: 15321
-// Function ID: 116518
+// Module ID: 15438
+// Function ID: 118692
 // Name: getTrackFriendsListViewedData
-// Dependencies: []
+// Dependencies: [11708, 6905, 6901, 4812, 3767, 653, 3803, 1360, 15439, 11709, 2]
 // Exports: default
 
-// Module 15321 (getTrackFriendsListViewedData)
-const useContactSyncStore = require(dependencyMap[0]).useContactSyncStore;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const _module = require(dependencyMap[5]);
-({ PlatformTypes: closure_8, FriendDiscoveryFlags: closure_9 } = _module);
-const _module1 = require(dependencyMap[10]);
-const result = _module1.fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/getTrackFriendsListViewedData.native.tsx");
+// Module 15438 (getTrackFriendsListViewedData)
+import { useContactSyncStore } from "setStoredContacts";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_8;
+let closure_9;
+({ PlatformTypes: closure_8, FriendDiscoveryFlags: closure_9 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/getTrackFriendsListViewedData.native.tsx");
 
 export default function getTrackFriendsListViewedData() {
-  const localAccount = localAccount.getLocalAccount(constants.CONTACTS);
-  const FriendDiscoverySettings = require(dependencyMap[6]).FriendDiscoverySettings;
+  localAccount = localAccount.getLocalAccount(constants.CONTACTS);
+  const FriendDiscoverySettings = require(3803) /* explicitContentFromProto */.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.getSetting();
-  let obj = require(dependencyMap[7]);
+  let obj = require(1360) /* hasFlag */;
   const hasFlagResult = obj.hasFlag(setting, constants2.FIND_BY_PHONE);
-  const obj2 = require(dependencyMap[7]);
-  const suggestionCount = suggestionCount.getSuggestionCount();
+  const obj2 = require(1360) /* hasFlag */;
+  suggestionCount = suggestionCount.getSuggestionCount();
   obj = { num_friends: store2.getFriendCount() };
-  const merged = Object.assign(importDefault(dependencyMap[8])());
+  const merged = Object.assign(importDefault(15439)());
   obj["num_outgoing_requests"] = store2.getOutgoingCount();
   obj["num_incoming_requests"] = store2.getPendingCount();
   obj["num_game_friends"] = store.getGameFriendCount();
@@ -32,8 +34,8 @@ export default function getTrackFriendsListViewedData() {
   obj["num_game_incoming_requests"] = store.getPendingIncomingCount();
   obj["num_suggestions"] = suggestionCount;
   obj["was_dismissed"] = useContactSyncStore.getState().upsellCTADismissed;
-  const hasFlagResult1 = require(dependencyMap[7]).hasFlag(setting, constants2.FIND_BY_EMAIL);
-  obj["contact_sync_is_enabled"] = require(dependencyMap[9]).isContactSyncEnabled(localAccount);
+  const hasFlagResult1 = require(1360) /* hasFlag */.hasFlag(setting, constants2.FIND_BY_EMAIL);
+  obj["contact_sync_is_enabled"] = require(11709) /* isContactSyncAvailable */.isContactSyncEnabled(localAccount);
   obj["is_discoverable_email"] = hasFlagResult1;
   obj["is_discoverable_phone"] = hasFlagResult;
   return obj;

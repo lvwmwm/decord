@@ -1,20 +1,24 @@
-// Module ID: 11614
-// Function ID: 90207
+// Module ID: 11624
+// Function ID: 90256
 // Name: GuildProgressCircle
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 11625, 11507, 2]
 // Exports: default
 
-// Module 11614 (GuildProgressCircle)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { wrapper: { position: "relative" }, circle: { position: "absolute" } };
-obj = { color: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
-obj.progressCircle = obj;
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_progress/native/components/GuildProgressCircle.tsx");
+// Module 11624 (GuildProgressCircle)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { wrapper: { position: "relative" }, circle: { position: "absolute" } };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.progressCircle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressCircle.tsx");
 
 export default function GuildProgressCircle(size) {
   let percent;
@@ -24,24 +28,24 @@ export default function GuildProgressCircle(size) {
   if (num === undefined) {
     num = 32;
   }
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { width: num, height: num, borderRadius: num / 2 };
   obj = { style: items };
-  const items = [tmp.wrapper, style, obj];
+  items = [tmp.wrapper, style, obj];
   obj = { style: items1 };
-  const items1 = [tmp.circle, obj];
+  items1 = [tmp.circle, obj];
   obj.size = num;
   obj.strokeWidth = 4;
   obj.percent = 100;
-  obj.color = arg1(dependencyMap[6]).PROGRESS_BACKGROUND_COLOR;
-  const items2 = [callback(importDefault(dependencyMap[5]), obj), ];
+  obj.color = require(11507) /* useIOSCompletionStates */.PROGRESS_BACKGROUND_COLOR;
+  const items2 = [callback(importDefault(11625), obj), ];
   const obj1 = { style: items3 };
-  const items3 = [tmp.circle, obj];
+  items3 = [tmp.circle, obj];
   obj1.size = num;
   obj1.strokeWidth = 4;
   obj1.color = tmp.progressCircle.color;
   obj1.percent = percent;
-  items2[1] = callback(importDefault(dependencyMap[5]), obj1);
+  items2[1] = callback(importDefault(11625), obj1);
   obj.children = items2;
   return callback2(View, obj);
 };

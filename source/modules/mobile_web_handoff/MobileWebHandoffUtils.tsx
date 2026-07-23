@@ -1,13 +1,17 @@
-// Module ID: 5690
-// Function ID: 49010
+// Module ID: 5695
+// Function ID: 49037
 // Name: _createHandoffToken
-// Dependencies: []
+// Dependencies: [5, 653, 491, 507, 2]
 
-// Module 5690 (_createHandoffToken)
-async function _createHandoffToken(key, arg1) {
-  const HTTP = callback(closure_1[3]).HTTP;
-  let obj = { otherKey: null, showTopContainer: null, targetFrames: null, æ: null, VOICE_CHANNEL_USER_LIMIT_ICON: null, url: constants.HANDOFF };
-  obj = { key };
+// Module 5695 (_createHandoffToken)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { Endpoints } from "ME";
+
+const require = arg1;
+async function _createHandoffToken(arg0, arg1) {
+  const HTTP = outer2_0(outer2_1[3]).HTTP;
+  let obj = { url: outer2_3.HANDOFF, body: null, oldFormErrors: true, retries: 1, rejectWithError: false };
+  obj = { key: arg0 };
   obj.body = obj;
   const handoff_token = yield HTTP.post(obj).body.handoff_token;
   if (null != handoff_token) {
@@ -18,15 +22,13 @@ async function _createHandoffToken(key, arg1) {
     throw error;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/mobile_web_handoff/MobileWebHandoffUtils.tsx");
+const result = require("v1").fileFinishedImporting("modules/mobile_web_handoff/MobileWebHandoffUtils.tsx");
 
 export default {
   generateNonce() {
-    return arg1(dependencyMap[2]).v4();
+    return require(491) /* v1 */.v4();
   },
-  createHandoffToken(arg0) {
+  createHandoffToken(closure_0) {
     return _createHandoffToken(...arguments);
   }
 };

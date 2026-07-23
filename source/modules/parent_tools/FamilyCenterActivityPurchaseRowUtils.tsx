@@ -1,36 +1,38 @@
-// Module ID: 13691
-// Function ID: 103616
+// Module ID: 13805
+// Function ID: 105772
 // Name: getCollectibleTypeName
-// Dependencies: []
+// Dependencies: [6779, 6780, 1851, 1876, 1212, 2198, 1392, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 13691 (getCollectibleTypeName)
+// Module 13805 (getCollectibleTypeName)
+import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
+import { isProfileEffectRecord } from "_isNativeReflectConstruct";
+import GuildFeatures from "GuildFeatures";
+
+let closure_5;
+let closure_6;
 function getCollectibleTypeName(type) {
-  if (require(dependencyMap[3]).CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl5 = require(dependencyMap[4]).intl;
-    return intl5.string(importDefault(dependencyMap[5]).obi47v);
-  } else if (require(dependencyMap[3]).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl4 = require(dependencyMap[4]).intl;
-    return intl4.string(importDefault(dependencyMap[5]).RX8BMR);
-  } else if (require(dependencyMap[3]).CollectiblesItemType.NAMEPLATE === type) {
-    const intl3 = require(dependencyMap[4]).intl;
-    return intl3.string(importDefault(dependencyMap[5]).nNGEHk);
-  } else if (require(dependencyMap[3]).CollectiblesItemType.BUNDLE === type) {
-    const intl2 = require(dependencyMap[4]).intl;
-    return intl2.string(importDefault(dependencyMap[5]).VS1fKo);
-  } else if (require(dependencyMap[3]).CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = require(dependencyMap[4]).intl;
-    return intl.string(importDefault(dependencyMap[5]).JiIY1l);
+  if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(importDefault(2198).obi47v);
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(importDefault(2198).RX8BMR);
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(importDefault(2198).nNGEHk);
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE === type) {
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(importDefault(2198).VS1fKo);
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2198).JiIY1l);
   } else {
     return "";
   }
 }
-const isAvatarDecorationRecord = require(dependencyMap[0]).isAvatarDecorationRecord;
-const isProfileEffectRecord = require(dependencyMap[1]).isProfileEffectRecord;
-const _module = require(dependencyMap[2]);
-({ PremiumSubscriptionSKUs: closure_5, SubscriptionPlanInfo: closure_6 } = _module);
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityPurchaseRowUtils.tsx");
+({ PremiumSubscriptionSKUs: closure_5, SubscriptionPlanInfo: closure_6 } = GuildFeatures);
+const result = require("GuildFeatures").fileFinishedImporting("modules/parent_tools/FamilyCenterActivityPurchaseRowUtils.tsx");
 
 export const PREVIEW_SIZE = 40;
 export const NAMEPLATE_ASPECT_RATIO = 5.333333333333333;
@@ -42,8 +44,8 @@ export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreview
     const first = product.items[0];
     let avatarDecorationURL = null;
     if (isAvatarDecorationRecord(first)) {
-      let obj = require(dependencyMap[6]);
-      obj = { "Null": false, "Null": false, "Null": false };
+      let obj = require(1392) /* getAvatarURL */;
+      obj = { avatarDecoration: null, size: 40, canAnimate: true };
       obj = { asset: first.asset };
       obj.avatarDecoration = obj;
       avatarDecorationURL = obj.getAvatarDecorationURL(obj);
@@ -68,7 +70,7 @@ export const isGuildBoostSubscription = function isGuildBoostSubscription(subscr
     return false;
   } else {
     let skuId;
-    if (null != closure_6[subscriptionPlanId]) {
+    if (null != dependencyMap[subscriptionPlanId]) {
       skuId = tmp2.skuId;
     }
     return skuId === constants.GUILD;
@@ -81,7 +83,7 @@ export const getPurchaseDisplayInfo = function getPurchaseDisplayInfo(name, subs
   } else if (tmp) {
     if (null != subscriptionPlanId) {
       name = undefined;
-      if (null != closure_6[subscriptionPlanId]) {
+      if (null != dependencyMap[subscriptionPlanId]) {
         name = tmp4.name;
       }
     }

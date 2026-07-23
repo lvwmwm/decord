@@ -1,53 +1,58 @@
-// Module ID: 13383
-// Function ID: 101722
+// Module ID: 13497
+// Function ID: 103878
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 33, 4130, 13498, 2]
 // Exports: default, useKeyCommands
 
-// Module 13383 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13497 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,85 +89,68 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ viewDefaults: { flex: 1 } });
-const context = importAllResult.createContext({
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ viewDefaults: { flex: 1 } });
+let context = importAllResult.createContext({
   keyCommands: [],
-  addKeyCommand() {
+  addKeyCommand(value) {
 
   },
   removeKeyCommand() {
 
   }
 });
-const obj = {
-  keyCommands: [],
-  addKeyCommand() {
-
-  },
-  removeKeyCommand() {
-
-  }
-};
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/keyboard/native/KeyCommandsView.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/keyboard/native/KeyCommandsView.tsx");
 
 export default function KeyCommandsView(style) {
   let obj = Object.create(null);
   obj.style = 0;
   const merged = Object.assign(style, obj);
-  const tmp4 = callback(importAllResult.useState([]), 2);
+  const tmp4 = callback(callback1.useState([]), 2);
   const first = tmp4[0];
-  const importDefault = first;
-  let closure_1 = tmp4[1];
-  const callback = importAllResult.useCallback((arg0) => {
-    const first = arg0;
+  const dependencyMap = tmp4[1];
+  callback = callback1.useCallback((arg0) => {
+    let closure_0 = arg0;
     callback((arg0) => {
-      const items = [...arg0, arg0];
+      const items = [...arg0, closure_0];
       return items;
     });
   }, []);
-  const callback1 = importAllResult.useCallback((arg0) => {
-    const first = arg0;
-    callback((arr) => arr.filter((eventName) => eventName.eventName !== closure_0));
+  callback1 = callback1.useCallback((arg0) => {
+    let closure_0 = arg0;
+    callback((arr) => arr.filter((eventName) => eventName.eventName !== outer1_0));
   }, []);
-  const items = [first, callback, callback1];
-  obj = { value: importAllResult.useMemo(() => ({ keyCommands: first, addKeyCommand: callback, removeKeyCommand: callback1 }), items) };
+  let items = [first, callback, callback1];
+  obj = { value: callback1.useMemo(() => ({ keyCommands: first, addKeyCommand: callback, removeKeyCommand: callback1 }), items) };
   obj = {};
-  const tmp3 = callback2();
+  const tmp3 = callback();
   const merged1 = Object.assign(merged);
   const items1 = [tmp3.viewDefaults, style.style];
   obj["style"] = items1;
   obj["keyCommands"] = first;
   obj["onKeyCommand"] = function onKeyCommand(nativeEvent) {
     nativeEvent = nativeEvent.nativeEvent;
-    const first = nativeEvent;
-    const found = first.find((eventName) => eventName.eventName === nativeEvent.eventName);
+    const found = nativeEvent.find((eventName) => eventName.eventName === nativeEvent.eventName);
     if (null != found) {
       found.onKeyCommand(nativeEvent);
     }
   };
-  obj.children = jsx(importDefault(closure_1[4]), obj);
-  return <redux.Provider {...obj} />;
+  obj.children = jsx(first(13498), {});
+  return <redux.Provider />;
 };
 export const useKeyCommands = function useKeyCommands(memo) {
-  const importDefault = memo;
+  let closure_0 = memo;
   const context = importAllResult.useContext(closure_6);
   const addKeyCommand = context.addKeyCommand;
-  const dependencyMap = addKeyCommand;
   const removeKeyCommand = context.removeKeyCommand;
-  let closure_2 = removeKeyCommand;
   const items = [addKeyCommand, removeKeyCommand, memo];
   const effect = importAllResult.useEffect(() => {
     let done;
-    const tmp = callback(arg0);
+    let tmp = outer1_7(closure_0);
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_1;
-        let tmp3 = closure_1(iter.value);
+        let tmp2 = addKeyCommand;
+        let tmp3 = addKeyCommand(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -170,12 +158,12 @@ export const useKeyCommands = function useKeyCommands(memo) {
     }
     return () => {
       let done;
-      const tmp = callback(closure_0);
+      const tmp = outer2_7(outer1_0);
       let iter = tmp();
       if (!iter.done) {
         do {
-          let tmp2 = closure_2;
-          let tmp3 = closure_2(iter.value.eventName);
+          let tmp2 = outer1_2;
+          let tmp3 = outer1_2(iter.value.eventName);
           let iter2 = tmp();
           iter = iter2;
           done = iter2.done;

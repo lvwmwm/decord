@@ -1,17 +1,17 @@
-// Module ID: 14522
-// Function ID: 109358
+// Module ID: 14636
+// Function ID: 111518
 // Name: openMFAModal
-// Dependencies: []
+// Dependencies: [14637, 14638, 14647, 2]
 // Exports: openMFAModal
 
-// Module 14522 (openMFAModal)
-const SELECT_NAMES = require(dependencyMap[0]).SELECT_NAMES;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/mfa/MFAActionCreators.tsx");
+// Module 14636 (openMFAModal)
+import { SELECT_NAMES } from "get webauthn";
+
+const result = require("finishMFACheck").fileFinishedImporting("modules/mfa/MFAActionCreators.tsx");
 
 export const openMFAModal = function openMFAModal(methods) {
-  const require = arg1;
+  const _require = arg1;
   methods = methods.methods;
-  methods.methods = methods.filter((type) => Object.hasOwn(closure_2, type.type));
-  require(dependencyMap[1]).openMFAModal(methods, (arg0) => arg1(closure_1[2]).trySubmit(arg0, arg1), arg2);
+  methods.methods = methods.filter((type) => Object.hasOwn(outer1_2, type.type));
+  _require(14638).openMFAModal(methods, (arg0) => callback(outer1_1[2]).trySubmit(arg0, callback), arg2);
 };

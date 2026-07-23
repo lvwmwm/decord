@@ -1,10 +1,16 @@
-// Module ID: 4313
-// Function ID: 37793
+// Module ID: 4317
+// Function ID: 37825
 // Name: urlMatchesFileExtension
-// Dependencies: []
+// Dependencies: [57, 477, 4318, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl
 
-// Module 4313 (urlMatchesFileExtension)
+// Module 4317 (urlMatchesFileExtension)
+import _slicedToArray from "_slicedToArray";
+import set from "set";
+import set from "set";
+import set from "isIOSWithWebM";
+
+const require = arg1;
 function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {
   if (null == sourceURI) {
     return false;
@@ -22,7 +28,7 @@ function contentTypeMatches(contentType, image) {
   }
 }
 function isWebPlayerVideoUrl(mediaUrl) {
-  let isIOSWithWebMResult = arg1(dependencyMap[2]).isIOSWithWebM();
+  let isIOSWithWebMResult = require(4318) /* isIOSWithWebM */.isIOSWithWebM();
   if (isIOSWithWebMResult) {
     isIOSWithWebMResult = urlMatchesFileExtension(mediaUrl, closure_6);
   }
@@ -31,35 +37,34 @@ function isWebPlayerVideoUrl(mediaUrl) {
 function isWebPlayerVideoFile(filename) {
   let isIOSWithWebMResult = null != filename;
   if (isIOSWithWebMResult) {
-    isIOSWithWebMResult = arg1(dependencyMap[2]).isIOSWithWebM();
-    const obj = arg1(dependencyMap[2]);
+    isIOSWithWebMResult = require(4318) /* isIOSWithWebM */.isIOSWithWebM();
+    const obj = require(4318) /* isIOSWithWebM */;
   }
   if (isIOSWithWebMResult) {
     isIOSWithWebMResult = regex2.test(filename);
   }
   return isIOSWithWebMResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i;
-let closure_4 = /\.(webp|gif|avif)$/i;
-if (obj.isIOS()) {
+const re3 = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i;
+const re4 = /\.(webp|gif|avif)$/i;
+if (set.isIOS()) {
   let tmp2 = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
 } else {
-  tmp2 = arg1(dependencyMap[1]).isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
-  const obj2 = arg1(dependencyMap[1]);
+  tmp2 = require("set").isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
+  const obj2 = require("set");
 }
-let closure_6 = /\.(webm)$/i;
-let closure_7 = /\.(riv)$/i;
-const obj = arg1(dependencyMap[1]);
-if (obj3.isIOS()) {
+let closure_5 = tmp2;
+const re6 = /\.(webm)$/i;
+const re7 = /\.(riv)$/i;
+if (set.isIOS()) {
   let tmp4 = /\.(mp4|mov|qt)$/i;
 } else {
-  arg1(dependencyMap[1]).isAndroid();
+  require("set").isAndroid();
   tmp4 = /\.(mp4|webm|mov|qt)$/i;
-  const obj4 = arg1(dependencyMap[1]);
+  const obj4 = require("set");
 }
-const obj3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/MediaFormatTesters.tsx");
+let closure_8 = tmp4;
+const result = set.fileFinishedImporting("modules/messages/MediaFormatTesters.tsx");
 
 export { urlMatchesFileExtension };
 export const isImageUrl = function isImageUrl(url) {
@@ -87,7 +92,7 @@ export const isAudioFile = function isAudioFile(filename) {
 };
 export { isWebPlayerVideoUrl };
 export const isVideoUrl = function isVideoUrl(url) {
-  let tmp = urlMatchesFileExtension(url, tmp4);
+  let tmp = urlMatchesFileExtension(url, closure_8);
   if (!tmp) {
     tmp = isWebPlayerVideoUrl(url);
   }

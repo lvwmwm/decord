@@ -1,17 +1,16 @@
-// Module ID: 12546
-// Function ID: 96412
+// Module ID: 12660
+// Function ID: 98568
 // Name: showGdmBlockedUserModal
-// Dependencies: []
+// Dependencies: [4098, 12661, 1934, 2]
 // Exports: showGdmBlockedUserModal
 
-// Module 12546 (showGdmBlockedUserModal)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/shared_space_warnings/show_gdm_modal/showGdmBlockedUserModal.native.tsx");
+// Module 12660 (showGdmBlockedUserModal)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/shared_space_warnings/show_gdm_modal/showGdmBlockedUserModal.native.tsx");
 
 export const showGdmBlockedUserModal = function showGdmBlockedUserModal(arg0) {
   let blockedUserIds;
   let channelId;
   let ignoredUserIds;
   ({ channelId, blockedUserIds, ignoredUserIds } = arg0);
-  importDefault(dependencyMap[0]).openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "gdm_blocked_user_action_sheet", { channelId, blockedUserIds, ignoredUserIds });
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(12661, dependencyMap.paths), "gdm_blocked_user_action_sheet", { channelId, blockedUserIds, ignoredUserIds });
 };

@@ -1,13 +1,13 @@
-// Module ID: 6309
-// Function ID: 50396
+// Module ID: 6314
+// Function ID: 50425
 // Name: NitroCoinSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6315, 2]
 // Exports: NitroCoinSpotIllustration
 
-// Module 6309 (NitroCoinSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinSpotIllustration.native.tsx");
+// Module 6314 (NitroCoinSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinSpotIllustration.native.tsx");
 
 export const NitroCoinSpotIllustration = function NitroCoinSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const NitroCoinSpotIllustration = function NitroCoinSpotIllustration(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6315) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const NitroCoinSpotIllustration = function NitroCoinSpotIllustration(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,18 +1,17 @@
-// Module ID: 10590
-// Function ID: 82641
+// Module ID: 10600
+// Function ID: 82691
 // Name: getIsTabletActivitySurface
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [4110, 1553, 686, 2]
 // Exports: setOrientationLockState
 
-// Module 10590 (getIsTabletActivitySurface)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 10600 (getIsTabletActivitySurface)
+import getSystemVersion from "getSystemVersion";
+import isMetaQuest from "isMetaQuest";
 
 function getIsTabletActivitySurface() {
-  let tmp = __exportStarResult1;
-  if (!__exportStarResult1) {
-    tmp = __exportStarResult1;
+  let tmp = getSystemVersion;
+  if (!getSystemVersion) {
+    tmp = isMetaQuest;
   }
   return tmp;
 }
@@ -31,9 +30,9 @@ function getDefaultOrientationLockState(application) {
     return default_orientation_lock_state;
   }
 }
-__exportStarResult1 = __exportStarResult1.isIpadOS();
-__exportStarResult1 = __exportStarResult1.isMetaQuest();
-const result = __exportStarResult1.fileFinishedImporting("modules/activities/native/getDefaultOrientationLockState.tsx");
+getSystemVersion = getSystemVersion.isIpadOS();
+isMetaQuest = isMetaQuest.isMetaQuest();
+const result = require("dispatcher").fileFinishedImporting("modules/activities/native/getDefaultOrientationLockState.tsx");
 
 export { getIsTabletActivitySurface };
 export const setOrientationLockState = function setOrientationLockState(id) {
@@ -42,7 +41,7 @@ export const setOrientationLockState = function setOrientationLockState(id) {
     tmp = getDefaultOrientationLockState(id);
   }
   if (null != tmp) {
-    let obj = importDefault(dependencyMap[2]);
+    let obj = importDefault(686);
     obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: id.id, lockState: tmp };
     obj.dispatch(obj);
   }

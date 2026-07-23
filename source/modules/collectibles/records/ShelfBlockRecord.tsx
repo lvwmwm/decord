@@ -1,17 +1,19 @@
-// Module ID: 6812
-// Function ID: 53727
+// Module ID: 6817
+// Function ID: 53759
 // Name: ShelfBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6806, 2]
 
-// Module 6812 (ShelfBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6817 (ShelfBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+let tmp2 = (() => {
   class ShelfBlockRecord {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, ShelfBlockRecord);
-      this.type = ShelfBlockRecord(closure_1[2]).ShopBlockType.SHELF;
+      tmp = outer1_2(this, ShelfBlockRecord);
+      this.type = ShelfBlockRecord(outer1_1[2]).ShopBlockType.SHELF;
       ({ name: this.name, ranked_sku_ids: this.rankedSkuIds, category_sku_id } = arg0);
       tmp2 = null;
       if (null != category_sku_id) {
@@ -46,7 +48,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = ShelfBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -56,7 +57,7 @@ const tmp2 = () => {
     }
   ];
   return callback(ShelfBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/ShelfBlockRecord.tsx");
+})();
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/ShelfBlockRecord.tsx");
 
 export const ShelfBlockRecord = tmp2;

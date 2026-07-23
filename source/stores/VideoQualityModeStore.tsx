@@ -1,37 +1,38 @@
-// Module ID: 12644
-// Function ID: 97294
+// Module ID: 12758
+// Function ID: 99450
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 566, 686, 2]
 
-// Module 12644 (_isNativeReflectConstruct)
+// Module 12758 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const AUTO = arg1(dependencyMap[5]).VideoQualityMode.AUTO;
-let tmp2 = (Store) => {
+const AUTO = require("ME").VideoQualityMode.AUTO;
+let tmp2 = ((Store) => {
   class VideoQualityModeStore {
     constructor() {
       self = this;
       tmp = VideoQualityModeStore(this, VideoQualityModeStore);
-      obj = closure_3(VideoQualityModeStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(VideoQualityModeStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,24 +41,23 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = VideoQualityModeStore;
   callback2(VideoQualityModeStore, Store);
   const items = [
     {
       key: "mode",
       get() {
-        return closure_5;
+        return outer1_5;
       }
     }
   ];
   return callback(VideoQualityModeStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "VideoQualityModeStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   SET_CHANNEL_VIDEO_QUALITY_MODE: function handleSetChannelVideoQualityMode(mode) {
-    const AUTO = mode.mode;
+    mode = mode.mode;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/VideoQualityModeStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/VideoQualityModeStore.tsx");
 
 export default tmp2;

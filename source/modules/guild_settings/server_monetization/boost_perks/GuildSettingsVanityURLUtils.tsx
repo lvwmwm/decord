@@ -1,37 +1,39 @@
-// Module ID: 16096
-// Function ID: 123743
+// Module ID: 16213
+// Function ID: 125916
 // Name: getErrorMessageFromErrorCode
-// Dependencies: []
+// Dependencies: [653, 1212, 2]
 // Exports: canSeeVanityUrlSettings, getErrorMessageFromErrorCode
 
-// Module 16096 (getErrorMessageFromErrorCode)
-const _module = require(dependencyMap[0]);
-({ AbortCodes: closure_2, GuildFeatures: closure_3 } = _module);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLUtils.tsx");
+// Module 16213 (getErrorMessageFromErrorCode)
+import ME from "ME";
+
+let closure_2;
+let closure_3;
+({ AbortCodes: closure_2, GuildFeatures: closure_3 } = ME);
+const result = require("set").fileFinishedImporting("modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLUtils.tsx");
 
 export const getErrorMessageFromErrorCode = function getErrorMessageFromErrorCode(code) {
   if (constants.UNKNOWN_CHANNEL === code) {
-    const intl7 = require(dependencyMap[1]).intl;
-    return intl7.string(require(dependencyMap[1]).t.ETCmRa);
+    const intl7 = require(1212) /* getSystemLocale */.intl;
+    return intl7.string(require(1212) /* getSystemLocale */.t.ETCmRa);
   } else if (constants.INVALID_PERMISSIONS === code) {
-    const intl6 = require(dependencyMap[1]).intl;
-    return intl6.string(require(dependencyMap[1]).t.lXtut1);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    return intl6.string(require(1212) /* getSystemLocale */.t.lXtut1);
   } else if (constants.INVALID_ACCESS === code) {
-    const intl5 = require(dependencyMap[1]).intl;
-    return intl5.string(require(dependencyMap[1]).t.TAXOKw);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(require(1212) /* getSystemLocale */.t.TAXOKw);
   } else if (constants.VANITY_URL_REQUIRED_FOR_PUBLISHED_GUILDS === code) {
-    const intl4 = require(dependencyMap[1]).intl;
-    return intl4.string(require(dependencyMap[1]).t.ZpuxVs);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t.ZpuxVs);
   } else if (constants.VANITY_URL_EMPLOYEE_ONLY_GUILD_DISABLED === code) {
-    const intl3 = require(dependencyMap[1]).intl;
-    return intl3.string(require(dependencyMap[1]).t.tSBmIv);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.tSBmIv);
   } else if (constants.VANITY_URL_REQUIREMENTS_NOT_MET === code) {
-    const intl2 = require(dependencyMap[1]).intl;
-    return intl2.string(require(dependencyMap[1]).t.w+yGQT);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["w+yGQT"]);
   } else {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.ckQidX);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.ckQidX);
   }
 };
 export const canSeeVanityUrlSettings = function canSeeVanityUrlSettings(guild) {

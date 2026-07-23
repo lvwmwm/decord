@@ -1,10 +1,17 @@
 // Module ID: 1117
-// Function ID: 12699
+// Function ID: 12700
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 1000, 1113, 1118, 794, 1116]
 // Exports: withErrorBoundary
 
 // Module 1117 (_isNativeReflectConstruct)
+import _classCallCheck from "keys";
+import _defineProperties from "isAtLeastReact17";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import result from "result";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,37 +21,31 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-let closure_6 = require(dependencyMap[4]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[5]);
-let closure_8 = { position: "mn", top: "description", left: "Array" };
-const tmp3 = (Component) => {
+let closure_8 = { componentStack: null, error: null, eventId: null };
+const tmp3 = ((Component) => {
   class ErrorBoundary {
     constructor(arg0) {
       self = this;
-      ErrorBoundary = Component;
-      tmp = closure_2(this, ErrorBoundary);
+      closure_0 = Component;
+      tmp = outer1_2(this, closure_0);
       items = [];
       items[0] = Component;
-      obj = closure_5(ErrorBoundary);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      obj = outer1_5(closure_0);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
       apply = tmp2Result;
-      tmp2Result.state = closure_8;
+      tmp2Result.state = outer1_8;
       tmp2Result._openFallbackReportDialog = true;
-      obj2 = ErrorBoundary(apply[6]);
+      obj2 = ErrorBoundary(outer1_1[6]);
       client = obj2.getClient();
       showDialog = client;
       if (client) {
@@ -63,54 +64,58 @@ const tmp3 = (Component) => {
             _lastEventId = type.event_id === tmp2Result._lastEventId;
           }
           if (_lastEventId) {
-            let obj = type(tmp2Result[6]);
+            let obj = ErrorBoundary(outer2_1[6]);
             const _Object = Object;
             obj = { eventId: tmp2Result._lastEventId };
-            obj.showReportDialog(Object.assign({}, type.dialogOptions, obj));
+            obj.showReportDialog(Object.assign({}, showDialog.dialogOptions, obj));
           }
         });
       }
       return tmp2Result;
     }
   }
-  const require = ErrorBoundary;
-  callback2(ErrorBoundary, Component);
+  _inherits(ErrorBoundary, Component);
   let obj = {
     key: "componentDidCatch",
     value: function componentDidCatch(arg0, componentStack) {
-      const ErrorBoundary = arg0;
+      let closure_4;
+      let closure_5;
+      let closure_6;
+      let closure_7;
+      let closure_0 = arg0;
+      let closure_1 = componentStack;
       const self = this;
       componentStack = componentStack.componentStack;
       ({ beforeCapture: closure_4, onError: closure_5, showDialog: closure_6, dialogOptions: closure_7 } = this.props);
-      ErrorBoundary(componentStack[6]).withScope((arg0) => {
+      ErrorBoundary(outer1_1[6]).withScope((arg0) => {
         if (callback) {
-          callback(arg0, arg0, componentStack);
+          callback(arg0, closure_0, componentStack);
         }
         if (null != self.props.handled) {
           let handled = self.props.handled;
         } else {
           handled = self.props.fallback;
         }
-        let obj = arg0(arg1[7]);
+        let obj = ErrorBoundary(outer2_1[7]);
         obj = { handled, type: "auto.function.react.error_boundary" };
-        const result = obj.captureReactException(arg0, arg1, { mechanism: obj });
+        const result = obj.captureReactException(closure_0, closure_1, { mechanism: obj });
         if (callback2) {
-          callback2(arg0, componentStack, result);
+          callback2(closure_0, componentStack, result);
         }
         if (closure_6) {
           self._lastEventId = result;
           if (self._openFallbackReportDialog) {
             const _Object = Object;
             obj = { eventId: result };
-            arg0(arg1[6]).showReportDialog(Object.assign({}, closure_7, obj));
-            const obj3 = arg0(arg1[6]);
+            ErrorBoundary(outer2_1[6]).showReportDialog(Object.assign({}, closure_7, obj));
+            const obj3 = ErrorBoundary(outer2_1[6]);
           }
         }
-        self.setState({ error: arg0, componentStack, eventId: result });
+        self.setState({ error: closure_0, componentStack, eventId: result });
       });
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "componentDidMount",
     value: function componentDidMount() {
@@ -127,7 +132,7 @@ const tmp3 = (Component) => {
       const self = this;
       const onUnmount = this.props.onUnmount;
       if (onUnmount) {
-        if (self.state === closure_8) {
+        if (self.state === outer1_8) {
           onUnmount(null, null, null);
         } else {
           onUnmount(tmp, tmp2, tmp3);
@@ -148,7 +153,7 @@ const tmp3 = (Component) => {
       if (onReset) {
         onReset(tmp, tmp2, tmp3);
       }
-      self.setState(closure_8);
+      self.setState(outer1_8);
     }
   };
   items[4] = {
@@ -156,7 +161,7 @@ const tmp3 = (Component) => {
     value: function render() {
       let children;
       let fallback;
-      const ErrorBoundary = this;
+      const self = this;
       ({ fallback, children } = this.props);
       const state = this.state;
       if (null === state.componentStack) {
@@ -174,15 +179,15 @@ const tmp3 = (Component) => {
             return self.resetErrorBoundary();
           };
           obj.eventId = state.eventId;
-          element = <fallback {......obj} />;
+          element = <fallback />;
         }
-        if (!React.isValidElement(element)) {
+        if (!outer1_7.isValidElement(element)) {
           if (fallback) {
-            fallback = ErrorBoundary(closure_1[8]).DEBUG_BUILD;
+            fallback = ErrorBoundary(outer1_1[8]).DEBUG_BUILD;
           }
           element = null;
           if (fallback) {
-            const debug = ErrorBoundary(closure_1[9]).debug;
+            const debug = ErrorBoundary(outer1_1[9]).debug;
             debug.warn("fallback did not produce a valid ReactElement");
             element = null;
           }
@@ -191,19 +196,20 @@ const tmp3 = (Component) => {
       }
     }
   };
-  return callback(ErrorBoundary, items);
-}(_module.Component);
+  return _defineProperties(ErrorBoundary, items);
+})(result.Component);
+let closure_9 = tmp3;
 
 export const ErrorBoundary = tmp3;
 export const UNKNOWN_COMPONENT = "unknown";
 export const withErrorBoundary = function withErrorBoundary(displayName) {
-  const require = displayName;
+  const _require = displayName;
   const dependencyMap = arg1;
-  const memoResult = _module.memo((arg0) => {
-    const merged = Object.assign({}, arg1);
-    return <closure_9 {......merged}><arg0 {......Object.assign({}, arg0)} /></closure_9>;
+  const memoResult = React.memo((arg0) => {
+    const merged = Object.assign({}, closure_1);
+    return <outer1_9 {......merged}><closure_0 {......Object.assign({}, arg0)} /></outer1_9>;
   });
   memoResult.displayName = "errorBoundary(" + displayName.displayName || displayName.name || "unknown" + ")";
-  require(dependencyMap[10]).hoistNonReactStatics(memoResult, displayName);
+  _require(1116).hoistNonReactStatics(memoResult, displayName);
   return memoResult;
 };

@@ -1,32 +1,34 @@
-// Module ID: 12349
-// Function ID: 94467
+// Module ID: 12463
+// Function ID: 96618
 // Name: getGuildSubscriptionNoGuildsSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 12464, 12465, 12466, 3976, 2]
 // Exports: GuildSubscriptionNoGuilds
 
-// Module 12349 (getGuildSubscriptionNoGuildsSource)
+// Module 12463 (getGuildSubscriptionNoGuildsSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getGuildSubscriptionNoGuildsSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useGuildSubscriptionNoGuildsSource() {
-  return getGuildSubscriptionNoGuildsSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getGuildSubscriptionNoGuildsSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionNoGuilds.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionNoGuilds.tsx");
 
 export { getGuildSubscriptionNoGuildsSource };
 export { useGuildSubscriptionNoGuildsSource };
@@ -34,5 +36,5 @@ export const GuildSubscriptionNoGuilds = function GuildSubscriptionNoGuilds(arg0
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useGuildSubscriptionNoGuildsSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

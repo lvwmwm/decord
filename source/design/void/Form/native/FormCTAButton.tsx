@@ -1,11 +1,27 @@
-// Module ID: 7496
-// Function ID: 60127
+// Module ID: 7501
+// Function ID: 60161
 // Name: getCTAButtonColor
-// Dependencies: []
+// Dependencies: [31, 27, 1277, 653, 33, 4130, 5052, 689, 1273, 5164, 7498, 2]
 
-// Module 7496 (getCTAButtonColor)
+// Module 7501 (getCTAButtonColor)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import semanticColor from "semanticColor";
+import { Fonts } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
+import importDefaultResult2 from "createTextStyle";
+
 let Platform;
 let StyleSheet;
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function getCTAButtonColor(BRAND, textBrand) {
   if (obj3.BRAND === BRAND) {
     return textBrand.textBrand;
@@ -19,8 +35,8 @@ class FormCTAButton {
   constructor(arg0) {
     BRAND = global.color;
     if (undefined === BRAND) {
-      tmp = closure_10;
-      BRAND = closure_10.BRAND;
+      tmp = c10;
+      BRAND = c10.BRAND;
     }
     fontSize = global.fontSize;
     num = 16;
@@ -34,7 +50,7 @@ class FormCTAButton {
     loading = global.loading;
     tmp3 = undefined !== loading && loading;
     ({ testID, onPress } = global);
-    tmp4 = closure_9();
+    tmp4 = c9();
     tmp5 = jsx;
     obj = {};
     items = [, , , ];
@@ -49,7 +65,7 @@ class FormCTAButton {
     items[3] = alignLeft2;
     obj.style = items;
     obj.children = global.label;
-    tmp5Result = tmp5(arg1(dependencyMap[8]).LegacyText, obj);
+    tmp5Result = tmp5(require("Button").LegacyText, obj);
     if (tmp3) {
       tmp7 = jsx;
       tmp8 = ActivityIndicator;
@@ -60,10 +76,10 @@ class FormCTAButton {
     obj2 = {};
     tmp9 = jsx;
     tmp10 = View;
-    if (importAll.useContext(arg1(dependencyMap[9]).RedesignCompatContext)) {
+    if (result.useContext(require("context").RedesignCompatContext)) {
       obj2.style = tmp4.rowButton;
-      tmp18 = arg1;
-      tmp19 = dependencyMap;
+      tmp18 = closure_0;
+      tmp19 = closure_1;
       num2 = 10;
       tmp17 = jsx;
       obj3 = {};
@@ -76,7 +92,7 @@ class FormCTAButton {
       }
       obj3.disabled = tmp2;
       obj3.testID = testID;
-      obj2.children = tmp17(arg1(dependencyMap[10]).RowButton, obj3);
+      obj2.children = tmp17(require("RowButtonWrapper").RowButton, obj3);
       tmp16 = obj2;
     } else {
       items1 = [, , ];
@@ -111,33 +127,24 @@ class FormCTAButton {
     return tmp9(tmp10, tmp16);
   }
 }
-let closure_2 = importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_3, Pressable: closure_4, Platform, StyleSheet, View: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ ANDROID_FOREGROUND_RIPPLE: closure_6, getThemedRippleConfig: closure_7 } = arg1(dependencyMap[2]));
-const Fonts = arg1(dependencyMap[3]).Fonts;
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[5]);
-obj = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { flex: "custom_search_url", alignItems: "message" }, text: {} };
-obj = {};
-const tmp3 = arg1(dependencyMap[2]);
-const merged = Object.assign(importDefault(dependencyMap[6])(Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[7]).colors.CONTROL_BRAND_FOREGROUND, 16));
-obj.textBrand = obj;
-const importDefaultResult = importDefault(dependencyMap[6]);
-const obj1 = {};
-const merged1 = Object.assign(importDefault(dependencyMap[6])(Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[7]).colors.TEXT_FEEDBACK_CRITICAL, 16));
-obj.textDanger = obj1;
-const importDefaultResult1 = importDefault(dependencyMap[6]);
-const obj2 = {};
-const merged2 = Object.assign(importDefault(dependencyMap[6])(Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[7]).colors.STATUS_WARNING, 16));
-obj.textWarning = obj2;
-obj.alignLeft = { textAlign: "left" };
-obj.disabled = { opacity: 0.5 };
-let closure_9 = obj.createStyles(obj);
-const obj3 = { BRAND: "brand", DANGER: "danger", WARNING: "warning" };
+({ ActivityIndicator: closure_3, Pressable: closure_4, Platform, StyleSheet, View: closure_5 } = get_ActivityIndicator);
+({ ANDROID_FOREGROUND_RIPPLE: closure_6, getThemedRippleConfig: closure_7 } = semanticColor);
+_createForOfIteratorHelperLoose = { rowButton: { paddingHorizontal: 16 }, sectionBody: {}, button: { minHeight: 44, justifyContent: "center" }, text: { lineHeight: 44, paddingHorizontal: 17, textAlign: "left" } };
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.CONTROL_BRAND_FOREGROUND, 16));
+_createForOfIteratorHelperLoose.textBrand = _createForOfIteratorHelperLoose;
+let obj1 = {};
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL, 16));
+_createForOfIteratorHelperLoose.textDanger = obj1;
+let obj2 = {};
+const merged2 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, 16));
+_createForOfIteratorHelperLoose.textWarning = obj2;
+_createForOfIteratorHelperLoose.alignLeft = { textAlign: "left" };
+_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { BRAND: "brand", DANGER: "danger", WARNING: "warning" };
 FormCTAButton.Colors = obj3;
-const importDefaultResult2 = importDefault(dependencyMap[6]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("design/void/Form/native/FormCTAButton.tsx");
+const result = require("semanticColor").fileFinishedImporting("design/void/Form/native/FormCTAButton.tsx");
 
 export default FormCTAButton;
 export const FormCTAButtonColors = obj3;

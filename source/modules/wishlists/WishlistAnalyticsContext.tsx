@@ -1,17 +1,18 @@
-// Module ID: 12018
-// Function ID: 92875
+// Module ID: 12132
+// Function ID: 95026
 // Name: useWishlistAnalyticsContext
-// Dependencies: []
+// Dependencies: [31, 33, 2]
 // Exports: WishlistAnalyticsProvider
 
-// Module 12018 (useWishlistAnalyticsContext)
+// Module 12132 (useWishlistAnalyticsContext)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
 function useWishlistAnalyticsContext() {
   return importAllResult.useContext(context);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
 const context = importAllResult.createContext(null);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/wishlists/WishlistAnalyticsContext.tsx");
+const result = require("set").fileFinishedImporting("modules/wishlists/WishlistAnalyticsContext.tsx");
 
 export const WishlistAnalyticsContext = context;
 export { useWishlistAnalyticsContext };

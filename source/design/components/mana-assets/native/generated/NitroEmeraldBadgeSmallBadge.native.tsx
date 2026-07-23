@@ -1,13 +1,13 @@
-// Module ID: 6319
-// Function ID: 50411
+// Module ID: 6324
+// Function ID: 50440
 // Name: NitroEmeraldBadgeSmallBadge
-// Dependencies: []
+// Dependencies: [33, 5085, 6325, 2]
 // Exports: NitroEmeraldBadgeSmallBadge
 
-// Module 6319 (NitroEmeraldBadgeSmallBadge)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroEmeraldBadgeSmallBadge.native.tsx");
+// Module 6324 (NitroEmeraldBadgeSmallBadge)
+import { jsx } from "jsxProd";
+
+const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroEmeraldBadgeSmallBadge.native.tsx");
 
 export const NitroEmeraldBadgeSmallBadge = function NitroEmeraldBadgeSmallBadge(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const NitroEmeraldBadgeSmallBadge = function NitroEmeraldBadgeSmallBadge(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6325) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const NitroEmeraldBadgeSmallBadge = function NitroEmeraldBadgeSmallBadge(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

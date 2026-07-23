@@ -1,13 +1,12 @@
 // Module ID: 1274
-// Function ID: 14388
+// Function ID: 14389
 // Name: STATUS_PADDING
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1274 (STATUS_PADDING)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/void/Status/native/StatusConstants.tsx");
+const result = require("set").fileFinishedImporting("design/void/Status/native/StatusConstants.tsx");
 
 export const STATUS_PADDING = 3;
-export const StatusSizes = { "Bool(false)": 0, "Bool(false)": -0.313, "Bool(false)": 3, "Bool(false)": 4.5, "Bool(false)": 7, "Bool(false)": "notifications" };
+export const StatusSizes = { XSMALL: 6, SMALL: 8, REFRESH_MEDIUM_10: 10, MEDIUM: 12, LARGE: 16, XLARGE: 24 };
 export const VR_STATUS_WIDTH_RATIO = 1.5;
 export const VR_STATUS_SCALE = 1;

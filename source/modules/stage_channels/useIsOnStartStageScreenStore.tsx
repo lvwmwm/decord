@@ -1,45 +1,46 @@
-// Module ID: 7474
-// Function ID: 60005
+// Module ID: 7479
+// Function ID: 60039
 // Name: setIsOnStartStageScreen
-// Dependencies: []
+// Dependencies: [31, 3758, 1906, 621, 682, 566, 1356, 7480, 2]
 // Exports: useUpdateIsOnStartStageScreenEffect
 
-// Module 7474 (setIsOnStartStageScreen)
-function setIsOnStartStageScreen(arg0) {
-  const arg1 = arg0;
-  arg1(dependencyMap[4]).batchUpdates(() => state.setState({ isOnStartStageScreen: arg0 }));
-}
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let obj = arg1(dependencyMap[3]);
-obj = obj.create(() => ({ isOnStartStageScreen: true }));
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
+// Module 7479 (setIsOnStartStageScreen)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import keys from "keys";
 
-export default obj;
+const require = arg1;
+function setIsOnStartStageScreen(arg0) {
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_6.setState({ isOnStartStageScreen: closure_0 }));
+}
+keys = keys.create(() => ({ isOnStartStageScreen: true }));
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
+
+export default keys;
 export { setIsOnStartStageScreen };
 export const useUpdateIsOnStartStageScreenEffect = function useUpdateIsOnStartStageScreenEffect(id) {
-  const arg1 = id;
+  const _require = id;
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => voiceChannelId.getVoiceChannelId() === arg0.id);
-  const importDefault = stateFromStores;
-  const obj = arg1(dependencyMap[5]);
-  const items1 = [closure_4];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getVoiceChannelId() === id.id);
+  const obj = _require(566);
+  const items1 = [_isNativeReflectConstruct];
   const items2 = [id];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => closure_4.can(arg0(tmp3[6]).MODERATE_STAGE_CHANNEL_PERMISSIONS, arg0), items2);
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_4.can(id(tmp3[6]).MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
   let tmp3 = stateFromStores1;
   if (stateFromStores1) {
-    tmp3 = !importDefault(dependencyMap[7])(id.id);
+    tmp3 = !stateFromStores(7480)(id.id);
   }
   const dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];
   const effect = React.useEffect(() => {
     if (stateFromStores) {
-      if (!tmp3) {
-        callback(false);
+      if (!closure_2) {
+        outer1_7(false);
       }
     } else {
-      const tmp3 = callback(tmp3);
+      outer1_7(closure_2);
     }
   }, items3);
 };

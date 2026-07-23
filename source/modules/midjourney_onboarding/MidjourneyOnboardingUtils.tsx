@@ -1,10 +1,17 @@
-// Module ID: 12752
-// Function ID: 97804
+// Module ID: 12866
+// Function ID: 99960
 // Name: isMidjourneyOnboardingFlow
-// Dependencies: []
+// Dependencies: [1838, 3947, 12867, 566, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, useIsMidjourneyOnboardingFlow
 
-// Module 12752 (isMidjourneyOnboardingFlow)
+// Module 12866 (isMidjourneyOnboardingFlow)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import MIDJOURNEY_GUILD_ID from "MIDJOURNEY_GUILD_ID";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function isMidjourneyOnboardingFlow() {
   let obj = arg0;
   if (arg0 === undefined) {
@@ -12,7 +19,7 @@ function isMidjourneyOnboardingFlow() {
   }
   let guildStore = obj.guildStore;
   if (null == guildStore) {
-    guildStore = closure_2;
+    guildStore = _createForOfIteratorHelperLoose;
   }
   const guild = guildStore.getGuild(closure_5);
   let joinedAt;
@@ -28,16 +35,13 @@ function isMidjourneyOnboardingFlow() {
   }
   return 1 === guildStore.getGuildCount() && tmp3;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ MIDJOURNEY_BOT_ID: closure_4, MIDJOURNEY_GUILD_ID: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingUtils.tsx");
+({ MIDJOURNEY_BOT_ID: closure_4, MIDJOURNEY_GUILD_ID: closure_5 } = MIDJOURNEY_GUILD_ID);
+const result = require("MIDJOURNEY_GUILD_ID").fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingUtils.tsx");
 
 export { isMidjourneyOnboardingFlow };
 export const useIsMidjourneyOnboardingFlow = function useIsMidjourneyOnboardingFlow() {
-  const items = [closure_2];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => callback({ guildStore: closure_2 }), []);
+  const items = [_createForOfIteratorHelperLoose];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_6({ guildStore: outer1_2 }), []);
 };
 export const isEligibleForMidjourneyRedirect = function isEligibleForMidjourneyRedirect(channel) {
   let isDMResult = channel.isDM();
@@ -53,25 +57,27 @@ export const isEligibleForMidjourneyRedirect = function isEligibleForMidjourneyR
   return isDMResult;
 };
 export const hasRedirectedToGuild = function hasRedirectedToGuild(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     function handleSelectedGuildUpdate() {
-      if (handleSelectedGuildUpdate.getGuildId() === arg0) {
+      if (outer2_3.getGuildId() === callback) {
         cleanup();
-        arg0();
+        callback();
       }
     }
     function cleanup() {
-      handleSelectedGuildUpdate.removeChangeListener(handleSelectedGuildUpdate);
-      clearTimeout(closure_2);
+      outer2_3.removeChangeListener(handleSelectedGuildUpdate);
+      clearTimeout(_createForOfIteratorHelperLoose);
     }
-    if (handleSelectedGuildUpdate.getGuildId() !== arg0) {
+    if (outer1_3.getGuildId() !== closure_0) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
         cleanup();
-        arg1();
+        callback2();
       }, 3000);
-      handleSelectedGuildUpdate.addChangeListener(handleSelectedGuildUpdate);
+      outer1_3.addChangeListener(handleSelectedGuildUpdate);
     } else {
       arg0();
     }

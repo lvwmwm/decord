@@ -1,61 +1,69 @@
-// Module ID: 4968
-// Function ID: 42736
+// Module ID: 4971
+// Function ID: 42754
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 566, 686, 2]
 
-// Module 4968 (_isNativeReflectConstruct)
+// Module 4971 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let initialize = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      initialize = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (dispatcher >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        dispatcher = tmp3 + 1;
+        obj.value = length[+dispatcher];
       }
       return obj;
     };
@@ -92,26 +100,20 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-const set = new Set();
-let tmp3 = (PersistedStore) => {
+let set = new Set();
+let tmp3 = ((PersistedStore) => {
   class ExpandedGuildFolderStore {
     constructor() {
       self = this;
       tmp = ExpandedGuildFolderStore(this, ExpandedGuildFolderStore);
-      obj = closure_3(ExpandedGuildFolderStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(ExpandedGuildFolderStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -120,7 +122,6 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ExpandedGuildFolderStore;
   callback2(ExpandedGuildFolderStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -129,39 +130,40 @@ let tmp3 = (PersistedStore) => {
       if (null != expandedFolders) {
         const _Set = Set;
         const set = new Set(expandedFolders.expandedFolders);
+        const outer1_6 = set;
       }
-      self.waitFor(closure_5);
+      self.waitFor(outer1_5);
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getState",
     value: function getState() {
-      return { expandedFolders: Array.from(closure_6) };
+      return { expandedFolders: Array.from(outer1_6) };
     }
   };
   items[1] = obj;
   obj = {
     key: "getExpandedFolders",
     value: function getExpandedFolders() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isFolderExpanded",
     value: function isFolderExpanded(folderId) {
-      return set.has(folderId);
+      return outer1_6.has(folderId);
     }
   };
   return callback(ExpandedGuildFolderStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "ExpandedGuildFolderStore";
 tmp3.persistKey = "ExpandedGuildFolderStore";
-tmp3 = new tmp3(importDefault(dependencyMap[7]), {
+tmp3 = new tmp3(require("dispatcher"), {
   TOGGLE_GUILD_FOLDER_EXPAND: function toggleFolderExpand(folderId) {
     folderId = folderId.folderId;
-    const set = new Set(set);
+    set = new Set(set);
     if (set.has(folderId)) {
       obj2.delete(folderId);
     } else {
@@ -170,7 +172,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[7]), {
   },
   SET_GUILD_FOLDER_EXPANDED: function setFolderExpanded(folderId) {
     folderId = folderId.folderId;
-    const set = new Set(set);
+    set = new Set(set);
     if (folderId.expanded) {
       obj.add(folderId);
     } else if (obj.has(folderId)) {
@@ -179,19 +181,19 @@ tmp3 = new tmp3(importDefault(dependencyMap[7]), {
   },
   USER_SETTINGS_PROTO_UPDATE: function handleSettingsUpdate() {
     let done;
-    const guildFolders = guildFolders.getGuildFolders();
-    let closure_0 = guildFolders;
+    guildFolders = guildFolders.getGuildFolders();
     if (null == guildFolders) {
       return false;
     } else {
-      let closure_1 = false;
+      let c1 = false;
       function _loop(value) {
         const guildFolders = value;
-        if (!guildFolders.some((folderId) => folderId.folderId === folderId)) {
+        if (!guildFolders.some((folderId) => folderId.folderId === initialize)) {
           const _Set = Set;
-          const set = new Set(set);
+          const set = new Set(outer1_6);
+          outer1_6 = set;
           set.delete(value);
-          let closure_1 = true;
+          let c1 = true;
         }
       }
       const tmp4 = _createForOfIteratorHelperLoose(set);
@@ -204,7 +206,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[7]), {
           done = iter2.done;
         } while (!done);
       }
-      return closure_1;
+      return c1;
     }
   },
   GUILD_FOLDER_COLLAPSE: function handleCollapseAll() {
@@ -212,10 +214,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[7]), {
       return false;
     } else {
       const _Set = Set;
-      const set = new Set();
+      set = new Set();
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/ExpandedGuildFolderStore.tsx");
+let result = set.fileFinishedImporting("stores/ExpandedGuildFolderStore.tsx");
 
 export default tmp3;

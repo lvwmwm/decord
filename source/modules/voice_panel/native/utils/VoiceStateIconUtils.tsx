@@ -1,33 +1,37 @@
-// Module ID: 8860
-// Function ID: 69911
+// Module ID: 8867
+// Function ID: 69952
 // Name: isStableVoiceStateEqual
-// Dependencies: []
+// Dependencies: [4177, 4146, 620, 566, 2]
 // Exports: useMuteDeafenIconState, useVideoIconState
 
-// Module 8860 (isStableVoiceStateEqual)
+// Module 8867 (isStableVoiceStateEqual)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function isStableVoiceStateEqual(arg0, arg1) {
   let tmp = arg0 === arg1;
   if (!tmp) {
     let tmp3 = null != arg0 && null != arg1;
     if (tmp3) {
-      tmp3 = importDefault(dependencyMap[2])(arg0, arg1);
+      tmp3 = importDefault(620)(arg0, arg1);
     }
     tmp = tmp3;
   }
   return tmp;
 }
 function useStableVoiceParticipant(id, guildId) {
-  guildId = id;
-  const importDefault = guildId;
-  const items = [closure_3, closure_4];
+  const _require = id;
+  let closure_1 = guildId;
+  const items = [_isNativeReflectConstruct, closure_4];
   const items1 = [id, guildId];
-  return guildId(dependencyMap[3]).useStateFromStores(items, () => {
-    if (null != arg0) {
-      const voiceState = voiceState.getVoiceState(arg1, arg0);
+  return _require(566).useStateFromStores(items, () => {
+    if (null != closure_0) {
+      const voiceState = outer1_4.getVoiceState(closure_1, closure_0);
       if (null != voiceState) {
         const obj = {};
         ({ deaf: obj.deaf, selfDeaf: obj.selfDeaf, mute: obj.mute } = voiceState);
-        obj.isLocalMute = localMute.isLocalMute(voiceState.userId);
+        obj.isLocalMute = outer1_3.isLocalMute(voiceState.userId);
         obj.selfMute = voiceState.selfMute;
         return obj;
       }
@@ -35,21 +39,21 @@ function useStableVoiceParticipant(id, guildId) {
   }, items1, isStableVoiceStateEqual);
 }
 function useStableVideoState(id, guildId) {
-  guildId = id;
-  const importDefault = guildId;
-  const items = [closure_3, closure_4];
+  const _require = id;
+  let closure_1 = guildId;
+  const items = [_isNativeReflectConstruct, closure_4];
   const items1 = [guildId, id];
-  return guildId(dependencyMap[3]).useStateFromStoresObject(items, () => {
-    if (null != arg0) {
-      const voiceState = voiceState.getVoiceState(arg1, arg0);
+  return _require(566).useStateFromStoresObject(items, () => {
+    if (null != closure_0) {
+      const voiceState = outer1_4.getVoiceState(closure_1, closure_0);
     }
-    if (null != arg0) {
+    if (null != closure_0) {
       if (null != voiceState) {
         const obj = { selfVideo: voiceState.selfVideo };
         let tmp6 = null;
-        if (closure_3.isLocalVideoDisabled(voiceState.userId)) {
+        if (outer1_3.isLocalVideoDisabled(voiceState.userId)) {
           let str = "manual";
-          if (closure_3.isLocalVideoAutoDisabled(voiceState.userId)) {
+          if (outer1_3.isLocalVideoAutoDisabled(voiceState.userId)) {
             str = "auto";
           }
           tmp6 = str;
@@ -58,14 +62,12 @@ function useStableVideoState(id, guildId) {
         return obj;
       }
     }
-    return { 9223372036854775807: "L", 9223372036854775807: "L" };
+    return { selfVideo: false, localVideoDisabledState: null };
   }, items1);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
 let obj = { DEAFENED_SERVER: 0, [0]: "DEAFENED_SERVER", DEAFENED: 1, [1]: "DEAFENED", MUTED_SERVER: 2, [2]: "MUTED_SERVER", MUTED_LOCAL: 3, [3]: "MUTED_LOCAL", MUTED: 4, [4]: "MUTED" };
 obj = { VIDEO_DISABLED_LOCAL_AUTO: 0, [0]: "VIDEO_DISABLED_LOCAL_AUTO", VIDEO_DISABLED_LOCAL: 1, [1]: "VIDEO_DISABLED_LOCAL", VIDEO_ACTIVE: 2, [2]: "VIDEO_ACTIVE" };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/voice_panel/native/utils/VoiceStateIconUtils.tsx");
+const result = require("shallowEqual").fileFinishedImporting("modules/voice_panel/native/utils/VoiceStateIconUtils.tsx");
 
 export const MuteDeafenIconState = obj;
 export const VideoIconState = obj;

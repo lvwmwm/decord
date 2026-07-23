@@ -1,19 +1,28 @@
-// Module ID: 15003
-// Function ID: 112982
+// Module ID: 15119
+// Function ID: 115150
 // Name: YouBarButtonIcon
-// Dependencies: []
+// Dependencies: [31, 27, 13997, 33, 4130, 689, 7873, 9128, 7771, 2]
 
-// Module 15003 (YouBarButtonIcon)
+// Module 15119 (YouBarButtonIcon)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function YouBarButtonIcon(hasBadge) {
   let badgeStyle;
   let icon;
   hasBadge = hasBadge.hasBadge;
-  const arg1 = hasBadge;
-  let obj = { "Bool(false)": "true", "Bool(false)": "bal", "Bool(false)": "20", size: closure_6 };
+  let obj = { size: closure_6, badgeRadius: 4, borderWidth: 2 };
   ({ icon, badgeStyle } = hasBadge);
-  const tmp = function useIconBadgeCutout(size) {
+  const tmp = (function useIconBadgeCutout(size) {
     size = size.size;
-    const hasBadge = size;
     let num = size.xOffset;
     if (num === undefined) {
       num = 0;
@@ -26,34 +35,34 @@ function YouBarButtonIcon(hasBadge) {
     const badgeWidth = size.badgeWidth;
     const borderWidth = size.borderWidth;
     const items = [badgeRadius, borderWidth, size, num, num2, badgeWidth];
-    return badgeRadius.useMemo(() => {
+    return outer1_3.useMemo(() => {
       const sum = badgeRadius + borderWidth;
       const result = 2 * sum;
       let sum1 = result;
       if (null != badgeWidth) {
         sum1 = badgeWidth + 2 * borderWidth;
       }
-      const obj = { shape: size(num2[6]).CutoutShape.RoundedRect, x: size - (result - borderWidth) + num, y: size - (result - borderWidth) + num2, width: sum1, height: result, cornerRadius: Math.min(sum, size / 2, sum1 / 2) };
+      const obj = { shape: hasBadge(outer2_2[6]).CutoutShape.RoundedRect, x: size - (result - borderWidth) + num, y: size - (result - borderWidth) + num2, width: sum1, height: result, cornerRadius: Math.min(sum, size / 2, sum1 / 2) };
       return obj;
     }, items);
-  }(obj);
+  })(obj);
   const importDefault = tmp;
   obj = { size: closure_6, badgeSize: 8 };
-  const items = [tmp, hasBadge];
+  let items = [tmp, hasBadge];
   obj = { style: obj1 };
   const memo = importAllResult.useMemo(() => {
     if (hasBadge) {
-      const items = [tmp];
+      const items = [closure_1];
       let items1 = items;
     } else {
       items1 = [];
     }
     return items1;
   }, items);
-  const items1 = [callback(importDefault(dependencyMap[6]), { cutouts: memo, children: icon }), ];
+  let items1 = [callback(importDefault(7873), { cutouts: memo, children: icon }), ];
   if (hasBadge) {
     const obj2 = { style: tmp2, size: 8, badgeStyle };
-    hasBadge = callback(importDefault(dependencyMap[7]), obj2);
+    hasBadge = callback(importDefault(9128), obj2);
   }
   items1[1] = hasBadge;
   obj.children = items1;
@@ -61,21 +70,16 @@ function YouBarButtonIcon(hasBadge) {
 }
 class YouBarButtonContainer {
   constructor(arg0) {
-    obj = { style: closure_9().buttonContainer, children: global.children };
+    obj = { style: c9().buttonContainer, children: global.children };
     return jsx(View, obj);
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ YOU_BAR_BUTTON_HIT_SLOP: closure_5, YOU_BAR_BUTTON_ICON_SIZE: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
+({ YOU_BAR_BUTTON_HIT_SLOP: closure_5, YOU_BAR_BUTTON_ICON_SIZE: closure_6 } = CONNECTION_BANNER_HEIGHT);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS };
+obj = { position: "relative", borderRadius: require("_createForOfIteratorHelperLoose").modules.button.BORDER_RADIUS, overflow: "hidden" };
 obj.buttonContainer = obj;
-let closure_9 = arg1(dependencyMap[4]).createStyles(obj);
-const obj2 = arg1(dependencyMap[4]);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function YouBarButton(arg0) {
   let accessibilityLabel;
   let badgeStyle;
@@ -97,10 +101,10 @@ const memoResult = importAllResult.memo(function YouBarButton(arg0) {
   obj.onPress = onPress;
   obj.onLongPress = onLongPress;
   obj.hitSlop = closure_5;
-  obj.children = callback(arg1(dependencyMap[8]).IconButton, obj);
+  obj.children = callback(require(7771) /* IconButton */.IconButton, obj);
   return callback(YouBarButtonContainer, obj);
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarButton.tsx");
+let result = require("CONNECTION_BANNER_HEIGHT").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarButton.tsx");
 
 export default memoResult;
 export { YouBarButtonContainer };

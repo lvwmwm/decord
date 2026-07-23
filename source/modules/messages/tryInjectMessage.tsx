@@ -1,22 +1,27 @@
-// Module ID: 11086
-// Function ID: 86225
+// Module ID: 11096
+// Function ID: 86275
 // Name: createInjectedInGameNuxMessage
-// Dependencies: []
+// Dependencies: [1194, 653, 6995, 4351, 1360, 11097, 11098, 2]
 // Exports: tryCreateInjectedMessage
 
-// Module 11086 (createInjectedInGameNuxMessage)
+// Module 11096 (createInjectedInGameNuxMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function createInjectedInGameNuxMessage(author, id) {
   const obj = { channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT };
-  const tmp = importDefault(dependencyMap[2])({ channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT });
-  const messageRecord = id(dependencyMap[3]).createMessageRecord(tmp);
+  const tmp = importDefault(6995)({ channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT });
+  const messageRecord = require(4351) /* createMinimalMessageRecord */.createMessageRecord(tmp);
   ({ applicationId: tmp2.applicationId, timestamp: tmp2.timestamp } = author);
   return messageRecord;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ MessageFlags: closure_4, MessageStates: closure_5, MessageTypes: closure_6 } = arg1(dependencyMap[1]));
+({ MessageFlags: closure_4, MessageStates: closure_5, MessageTypes: closure_6 } = ME);
 const map = new Map();
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/messages/tryInjectMessage.tsx");
+let result = require("userRecordToServer").fileFinishedImporting("modules/messages/tryInjectMessage.tsx");
 
 export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, closure_0) {
   if (map.get(closure_0.id) === id.id) {
@@ -24,7 +29,7 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
   } else {
     tmp4 = null;
     if (null != id.applicationId) {
-      let obj = closure_0(dependencyMap[4]);
+      let obj = require(1360) /* hasFlag */;
       tmp4 = null;
       if (obj.hasFlag(id.flags, constants.SENT_BY_SOCIAL_LAYER_INTEGRATION)) {
         tmp4 = null;
@@ -39,7 +44,7 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                 num2 = recipientFlags;
               }
               tmp4 = null;
-              if (!obj2.hasFlag(num2, closure_0(dependencyMap[5]).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
+              if (!obj2.hasFlag(num2, require(11097) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX)) {
                 tmp4 = null;
                 if (!map.has(closure_0.id)) {
                   const result = map.set(closure_0.id, id.id);
@@ -49,14 +54,14 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                   if (null != recipientFlags2) {
                     num4 = recipientFlags2;
                   }
-                  const obj3 = closure_0(dependencyMap[4]);
-                  const setFlagResult = closure_0(dependencyMap[4]).setFlag(num4, closure_0(dependencyMap[5]).ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-                  const result1 = importDefault(dependencyMap[6]).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
+                  const obj3 = require(1360) /* hasFlag */;
+                  const setFlagResult = require(1360) /* hasFlag */.setFlag(num4, require(11097) /* ChannelRecipientPrivateUserDataFlags */.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
+                  const result1 = importDefault(11098).updatePrivateChannelRecipientFlags(closure_0.id, setFlagResult);
                   tmp4 = tmp12;
-                  const obj4 = importDefault(dependencyMap[6]);
+                  const obj4 = importDefault(11098);
                 }
               }
-              const obj2 = closure_0(dependencyMap[4]);
+              obj2 = require(1360) /* hasFlag */;
             }
           }
         }

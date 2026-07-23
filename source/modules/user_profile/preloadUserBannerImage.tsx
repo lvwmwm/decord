@@ -1,12 +1,11 @@
-// Module ID: 7884
-// Function ID: 62771
+// Module ID: 7890
+// Function ID: 62808
 // Name: preloadUserBannerImage
-// Dependencies: []
+// Dependencies: [1392, 3803, 2]
 // Exports: default
 
-// Module 7884 (preloadUserBannerImage)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");
+// Module 7890 (preloadUserBannerImage)
+const result = require("set").fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");
 
 export default function preloadUserBannerImage(user, guildId) {
   if ("undefined" !== typeof globalThis.Image) {
@@ -28,9 +27,9 @@ export default function preloadUserBannerImage(user, guildId) {
         }
         let guildMemberBannerURL;
         if (tmp3) {
-          let obj = require(dependencyMap[0]);
+          let obj = require(1392) /* getAvatarURL */;
           obj = { id, guildId, banner: user.guild_member_profile.banner };
-          const GifAutoPlay = require(dependencyMap[1]).GifAutoPlay;
+          const GifAutoPlay = require(3803) /* explicitContentFromProto */.GifAutoPlay;
           obj.canAnimate = GifAutoPlay.getSetting();
           obj.size = 600;
           guildMemberBannerURL = obj.getGuildMemberBannerURL(obj);
@@ -44,11 +43,11 @@ export default function preloadUserBannerImage(user, guildId) {
         }
         if (null != banner1) {
           obj = { id, banner: user.user_profile.banner };
-          const GifAutoPlay2 = require(dependencyMap[1]).GifAutoPlay;
+          const GifAutoPlay2 = require(3803) /* explicitContentFromProto */.GifAutoPlay;
           obj.canAnimate = GifAutoPlay2.getSetting();
           obj.size = 600;
-          guildMemberBannerURL = require(dependencyMap[0]).getUserBannerURL(obj);
-          const obj3 = require(dependencyMap[0]);
+          guildMemberBannerURL = require(1392) /* getAvatarURL */.getUserBannerURL(obj);
+          const obj3 = require(1392) /* getAvatarURL */;
         }
         if (null != guildMemberBannerURL) {
           const prototype = globalThis.Image.prototype;

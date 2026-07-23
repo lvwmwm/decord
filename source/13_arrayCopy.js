@@ -273,7 +273,8 @@ function getCapacity(arg0) {
     }
   }
   const diff = (Math.min(Math.max(16, length), 1073741824) >>> 0) - 1;
-  return 1 + (diff | diff >> 1 | (diff | diff >> 1) >> 2 | (diff | diff >> 1 | (diff | diff >> 1) >> 2) >> 4 | (diff | diff >> 1 | (diff | diff >> 1) >> 2 | (diff | diff >> 1 | (diff | diff >> 1) >> 2) >> 4) >> 8 | (diff | diff >> 1 | (diff | diff >> 1) >> 2 | (diff | diff >> 1 | (diff | diff >> 1) >> 2) >> 4 | (diff | diff >> 1 | (diff | diff >> 1) >> 2 | (diff | diff >> 1 | (diff | diff >> 1) >> 2) >> 4) >> 8) >> 16);
+  const tmp5 = diff | diff >> 1 | (diff | diff >> 1) >> 2 | (diff | diff >> 1 | (diff | diff >> 1) >> 2) >> 4;
+  return 1 + (tmp5 | tmp5 >> 8 | (tmp5 | tmp5 >> 8) >> 16);
 }
 Deque.prototype.valueOf = Deque.prototype.toString;
 Deque.prototype.removeFront = Deque.prototype.shift;

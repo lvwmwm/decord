@@ -1,40 +1,44 @@
-// Module ID: 15710
-// Function ID: 120072
+// Module ID: 15827
+// Function ID: 122245
 // Name: ActivitiesDebugOverlay
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 3974, 689, 10526, 1557, 4126, 2]
 // Exports: default
 
-// Module 15710 (ActivitiesDebugOverlay)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsxs: closure_4, jsx: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = {};
-const tmp3 = arg1(dependencyMap[2]);
-obj.backgroundColor = arg1(dependencyMap[4]).hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.BLACK, 0.7);
-obj.container = obj;
-obj.row = { flexDirection: "row" };
-let closure_6 = obj.createStyles(obj);
-const obj4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/activities/native/ActivitiesDebugOverlay.tsx");
+// Module 15827 (ActivitiesDebugOverlay)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsxs: closure_4, jsx: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "absolute", top: 0, left: 0, backgroundColor: null, paddingRight: 16, paddingBottom: 16 };
+_createForOfIteratorHelperLoose.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.7);
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.row = { flexDirection: "row" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/activities/native/ActivitiesDebugOverlay.tsx");
 
 export default function ActivitiesDebugOverlay() {
-  const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[6])();
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = importDefault(10526)();
   let str = "";
   let str2 = "text-overlay-light";
-  if (arg1(dependencyMap[6]).ThermalStates.UNHANDLED !== tmp2) {
+  if (require(10526) /* _getThermalState */.ThermalStates.UNHANDLED !== tmp2) {
     str = "nominal";
     str2 = "text-feedback-positive";
-    if (arg1(dependencyMap[6]).ThermalStates.NOMINAL !== tmp2) {
+    if (require(10526) /* _getThermalState */.ThermalStates.NOMINAL !== tmp2) {
       str = "fair";
       str2 = "text-feedback-warning";
-      if (arg1(dependencyMap[6]).ThermalStates.FAIR !== tmp2) {
+      if (require(10526) /* _getThermalState */.ThermalStates.FAIR !== tmp2) {
         str = "serious";
         str2 = "text-feedback-critical";
-        if (arg1(dependencyMap[6]).ThermalStates.SERIOUS !== tmp2) {
-          if (arg1(dependencyMap[6]).ThermalStates.CRITICAL === tmp2) {
+        if (require(10526) /* _getThermalState */.ThermalStates.SERIOUS !== tmp2) {
+          if (require(10526) /* _getThermalState */.ThermalStates.CRITICAL === tmp2) {
             str = "critical";
             str2 = "text-feedback-critical";
           }
@@ -42,16 +46,16 @@ export default function ActivitiesDebugOverlay() {
       }
     }
   }
-  const rect = importDefault(dependencyMap[7])();
+  const rect = importDefault(1557)();
   let obj = { style: items, pointerEvents: "none" };
-  const items = [tmp.container, ];
+  items = [tmp.container, ];
   obj = { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 };
   items[1] = obj;
   obj = { style: tmp.row };
-  const obj1 = { cachedAt: "position", edpbxy: "scalar", children: [false, false] };
-  const items1 = [callback(arg1(dependencyMap[8]).Text, obj1), ];
+  const obj1 = { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] };
+  const items1 = [callback(require(4126) /* Text */.Text, obj1), ];
   const obj2 = { variant: "text-md/normal", color: str2, children: str };
-  items1[1] = callback2(arg1(dependencyMap[8]).Text, obj2);
+  items1[1] = callback2(require(4126) /* Text */.Text, obj2);
   obj.children = items1;
   obj.children = callback(View, obj);
   return callback2(View, obj);

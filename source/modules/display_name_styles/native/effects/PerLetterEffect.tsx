@@ -1,41 +1,46 @@
-// Module ID: 8514
-// Function ID: 67914
+// Module ID: 8520
+// Function ID: 67951
 // Name: PerLetterEffect
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8521, 8522, 4126, 2]
 // Exports: default
 
-// Module 8514 (PerLetterEffect)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Text: closure_5 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { overflow: "hidden" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/display_name_styles/native/effects/PerLetterEffect.tsx");
+// Module 8520 (PerLetterEffect)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ View: closure_4, Text: closure_5 } = get_ActivityIndicator);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { overflow: "hidden" } });
+const result = require("jsxProd").fileFinishedImporting("modules/display_name_styles/native/effects/PerLetterEffect.tsx");
 
 export default function PerLetterEffect(name) {
   let colors;
   let textProps;
   name = name.name;
-  const arg1 = name;
   ({ textProps, colors } = name);
-  const importDefault = colors;
   const items = [name, colors];
   let obj = { style: callback().container };
   const memo = React.useMemo(() => {
-    const name = colors(closure_2[4])();
-    const colors = 0;
-    const obj = name(closure_2[5]);
-    return name(closure_2[5]).splitGraphemes(name).map((str) => {
+    let closure_0 = colors(outer1_2[4])();
+    let c1 = 0;
+    let obj = name(outer1_2[5]);
+    return name(outer1_2[5]).splitGraphemes(closure_0).map((str) => {
       regex.lastIndex = 0;
       const tmp = regex.test(str) || 0 === str.trim().length;
       let tmp2;
-      if (null != length) {
-        if (length.length > 0) {
+      if (null != c1) {
+        if (c1.length > 0) {
           if (!tmp) {
-            tmp2 = length[closure_1 % closure_1.length];
+            tmp2 = c1[closure_1 % c1.length];
           }
         }
+      }
+      if (!tmp) {
+        closure_1 = closure_1 + 1;
       }
       let obj = {};
       let tmp9;
@@ -45,7 +50,7 @@ export default function PerLetterEffect(name) {
       }
       obj.style = tmp9;
       obj.children = str;
-      return closure_6(closure_5, obj, arg1);
+      return outer2_6(outer2_5, obj, arg1);
     });
   }, items);
   obj = {};
@@ -60,6 +65,6 @@ export default function PerLetterEffect(name) {
   const items1 = [name.textStyle, { lineHeight: undefined }];
   obj["style"] = items1;
   obj["children"] = memo;
-  obj.children = jsx(arg1(dependencyMap[6]).Text, obj);
-  return <closure_4 {...obj} />;
+  obj.children = jsx(name(4126).Text, {});
+  return <closure_4 />;
 };

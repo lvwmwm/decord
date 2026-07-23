@@ -1,22 +1,21 @@
-// Module ID: 9552
-// Function ID: 74456
+// Module ID: 9559
+// Function ID: 74497
 // Name: useBackspaceHandler
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: useBackspaceHandler
 
-// Module 9552 (useBackspaceHandler)
-let closure_0 = importAll(dependencyMap[0]);
-let closure_1 = /((\ud83c[\udde6-\uddff]){2}|([#*0-9]\u20e3)|(\u00a9|\u00ae|[\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])((\ud83c[\udffb-\udfff])?(\ud83e[\uddb0-\uddb3])?(\ufe0f?\u200d([\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])\ufe0f?)?)*)/g;
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/forums/native/composer/hooks/useBackspaceHandler.tsx");
+// Module 9559 (useBackspaceHandler)
+import result from "result";
+
+const re1 = /((\ud83c[\udde6-\uddff]){2}|([#*0-9]\u20e3)|(\u00a9|\u00ae|[\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])((\ud83c[\udffb-\udfff])?(\ud83e[\uddb0-\uddb3])?(\ufe0f?\u200d([\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])\ufe0f?)?)*)/g;
+const result = require("set").fileFinishedImporting("modules/forums/native/composer/hooks/useBackspaceHandler.tsx");
 
 export const useBackspaceHandler = function useBackspaceHandler(selection) {
   selection = selection.selection;
-  const React = selection;
   const draftContent = selection.draftContent;
-  let closure_1 = draftContent;
   const handleTextChange = selection.handleTextChange;
   const items = [selection, draftContent, handleTextChange];
-  return React.useCallback(() => {
+  return selection.useCallback(() => {
     let end;
     let num2;
     let start;

@@ -1,31 +1,31 @@
-// Module ID: 8400
-// Function ID: 66866
+// Module ID: 8406
+// Function ID: 66903
 // Name: useStageChannelUpsellCardStore
-// Dependencies: []
+// Dependencies: [1354, 677, 587, 682, 3743, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 8400 (useStageChannelUpsellCardStore)
-let closure_2 = require(dependencyMap[0]).GUILD_EVENT_STAGE_UPSELL_CARD_KEY;
-const _module = require(dependencyMap[1]);
-let closure_3 = _module.createWithEqualityFn((arg0) => {
-  const require = arg0;
+// Module 8406 (useStageChannelUpsellCardStore)
+import { GUILD_EVENT_STAGE_UPSELL_CARD_KEY as closure_2 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+
+let closure_3 = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
+  const _require = arg0;
   const obj = {};
-  const Storage = require(dependencyMap[2]).Storage;
+  let Storage = _require(587).Storage;
   obj.hasSeenUpsellCard = true === Storage.get(closure_2);
   obj.markAsSeen = function markAsSeen(id) {
-    const Storage = id(closure_1[2]).Storage;
-    const result = Storage.set(closure_2, true);
-    id(closure_1[3]).batchUpdates(() => callback({ hasSeenUpsellCard: true }));
+    const Storage = callback(outer1_1[2]).Storage;
+    const result = Storage.set(outer1_2, true);
+    callback(outer1_1[3]).batchUpdates(() => outer1_0({ hasSeenUpsellCard: true }));
   };
   return obj;
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx");
+let result = require("Storage").fileFinishedImporting("modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx");
 
 export const useStageChannelUpsellCardStore = function useStageChannelUpsellCardStore() {
   return callback((arg0) => {
     const items = [, ];
     ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
     return items;
-  }, require(dependencyMap[4]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };

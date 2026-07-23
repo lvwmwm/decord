@@ -1,10 +1,15 @@
-// Module ID: 4317
-// Function ID: 37827
+// Module ID: 4321
+// Function ID: 37859
 // Name: canViewChannel
-// Dependencies: []
+// Dependencies: [1348, 1838, 3758, 653, 1355, 4118, 2]
 // Exports: isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
-// Module 4317 (canViewChannel)
+// Module 4321 (canViewChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
 function canViewChannel(isPrivate) {
   const tmp = !isPrivate.isPrivate();
   let canResult = !tmp;
@@ -13,13 +18,9 @@ function canViewChannel(isPrivate) {
   }
   return canResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[3]);
-const ME = tmp2.ME;
-const Permissions = tmp2.Permissions;
-const mapped = Array.from(arg1(dependencyMap[4]).StaticChannelRoutes).map((arg0) => importDefault(dependencyMap[5]).escape(arg0));
+ME = ME.ME;
+const Permissions = ME.Permissions;
+const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4118).escape(arg0));
 const joined = mapped.join("|");
 const regExp = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)?(\\d+|" + joined + ")?");
 const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + ")(?:/)(\\d+)");
@@ -29,8 +30,8 @@ const regExp4 = new RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?");
 const regExp5 = new RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?");
 const regExp6 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|" + ME + ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?");
 const regExp7 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
-const arr = Array.from(arg1(dependencyMap[4]).StaticChannelRoutes);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/links/LinkUtils.tsx");
+const arr = Array.from(require("set").StaticChannelRoutes);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/links/LinkUtils.tsx");
 
 export const CHANNEL_OR_MESSAGES_URL_RE = regExp6;
 export const MEDIA_POST_URL_RE = regExp7;
@@ -98,7 +99,7 @@ export const isAccessibleChannelPath = function isAccessibleChannelPath(arg0) {
   if (null == channelId) {
     return true;
   } else {
-    const channel = channel.getChannel(channelId);
+    channel = channel.getChannel(channelId);
     let tmp4 = null != channel;
     if (tmp4) {
       tmp4 = canViewChannel(channel);

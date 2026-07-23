@@ -1,53 +1,59 @@
-// Module ID: 11147
-// Function ID: 86686
+// Module ID: 11157
+// Function ID: 86736
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 7921, 1348, 1345, 3946, 1334, 566, 11158, 11163, 5802, 2]
 // Exports: default
 
-// Module 11147 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11157 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { DismissibleContentGroupName as closure_6 } from "ContentDismissActionType";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,46 +90,41 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).DismissibleContentGroupName;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useAppLauncherOnboardingContent.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useAppLauncherOnboardingContent.tsx");
 
 export default function useAppLauncherOnboardingContent(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  const items = [];
+  let items = [];
   let obj = {};
   const items1 = [closure_5];
-  obj.channel = arg1(dependencyMap[6]).useStateFromStores(items1, () => channel.getChannel(channelId));
-  const tmp = importDefault(dependencyMap[8])({ channelId });
+  obj.channel = channelId(566).useStateFromStores(items1, () => outer1_5.getChannel(channelId));
+  const tmp = importDefault(11163)({ channelId });
   if (tmp.canShowBotsBanner) {
-    items.push(arg1(dependencyMap[5]).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+    items.push(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }
   if (tmp.canShowAppsOrActivitiesBanner) {
     const push = items.push;
-    const DismissibleContent = arg1(dependencyMap[5]).DismissibleContent;
-    if (function useHasUsedActivities(channel) {
+    const DismissibleContent = channelId(1334).DismissibleContent;
+    if ((function useHasUsedActivities(channel) {
       channel = channel.channel;
-      let obj = channelId(closure_2[4]);
-      let result = obj.useIsDismissibleContentDismissed_UNSAFE(channelId(closure_2[5]).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
-      const result1 = channelId(closure_2[4]).useIsDismissibleContentDismissed_UNSAFE(channelId(closure_2[5]).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-      const obj2 = channelId(closure_2[4]);
-      const items = [closure_4];
-      const stateFromStores = channelId(closure_2[6]).useStateFromStores(items, () => applicationFrecencyWithoutLoadingLatest.getApplicationFrecencyWithoutLoadingLatest());
+      let obj = channelId(outer1_2[4]);
+      let result = obj.useIsDismissibleContentDismissed_UNSAFE(channelId(outer1_2[5]).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+      const result1 = channelId(outer1_2[4]).useIsDismissibleContentDismissed_UNSAFE(channelId(outer1_2[5]).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+      const obj2 = channelId(outer1_2[4]);
+      const items = [outer1_4];
+      const stateFromStores = channelId(outer1_2[6]).useStateFromStores(items, () => outer2_4.getApplicationFrecencyWithoutLoadingLatest());
       let guild_id;
       if (null != channel) {
         guild_id = channel.guild_id;
       }
-      const obj3 = channelId(closure_2[6]);
-      const tmp4 = closure_7;
+      const obj3 = channelId(outer1_2[6]);
+      const tmp4 = outer1_7;
       obj = { guildId: guild_id };
       if (result) {
         result = result1;
       }
       obj.fetchesShelf = !result;
-      const tmp4Result = tmp4(channelId(closure_2[7]).useActivityApplications(obj));
+      const tmp4Result = tmp4(channelId(outer1_2[7]).useActivityApplications(obj));
       const iter = tmp4Result();
       let iter2 = iter;
       let flag = false;
@@ -140,14 +141,14 @@ export default function useAppLauncherOnboardingContent(channelId) {
       }
       obj = { hasUsedActivities: flag };
       return obj;
-    }(obj).hasUsedActivities) {
+    })(obj).hasUsedActivities) {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
     } else {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
     }
   }
-  const obj2 = arg1(dependencyMap[6]);
-  const tmp9 = callback(arg1(dependencyMap[9]).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  let obj2 = channelId(566);
+  const tmp9 = callback(channelId(5802).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   obj = { visibleContent: tmp9[0], markAsDismissed: tmp9[1] };
   return obj;
 };

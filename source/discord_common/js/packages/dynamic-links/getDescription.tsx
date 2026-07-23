@@ -1,11 +1,11 @@
-// Module ID: 12245
-// Function ID: 93925
-// Dependencies: []
+// Module ID: 12359
+// Function ID: 96076
+// Name: set
+// Dependencies: [2]
 // Exports: default
 
-// Module 12245
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/dynamic-links/getDescription.tsx");
+// Module 12359 (set)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/dynamic-links/getDescription.tsx");
 
 export default function _default() {
   return "";

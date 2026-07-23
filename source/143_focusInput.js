@@ -1,9 +1,11 @@
 // Module ID: 143
 // Function ID: 2331
 // Name: focusInput
-// Dependencies: []
+// Dependencies: [117, 144]
 
 // Module 143 (focusInput)
+const require = arg1;
+const dependencyMap = arg6;
 function focusInput(current) {
   let tmp = closure_2 !== current;
   if (tmp) {
@@ -14,24 +16,24 @@ function focusInput(current) {
   }
 }
 function blurInput(current) {
-  let tmp = closure_2 === current;
+  let tmp = c2 === current;
   if (tmp) {
     tmp = null != current;
   }
   if (tmp) {
-    closure_2 = null;
+    c2 = null;
   }
 }
-let closure_2 = null;
+let c2 = null;
 const set = new Set();
 arg5.default = {
   currentlyFocusedInput() {
-    return closure_2;
+    return c2;
   },
   focusInput,
   blurInput,
   currentlyFocusedField() {
-    return arg1(arg6[0]).findNodeHandle(closure_2);
+    return require(117) /* renderElement */.findNodeHandle(c2);
   },
   focusField(arg0) {
 
@@ -42,7 +44,7 @@ arg5.default = {
   focusTextInput(currentProps) {
     if ("number" !== typeof currentProps) {
       if (null != currentProps) {
-        if (closure_2 !== currentProps) {
+        if (c2 !== currentProps) {
           currentProps = currentProps.currentProps;
           let editable;
           if (null != currentProps) {
@@ -50,7 +52,7 @@ arg5.default = {
           }
           if (false !== editable) {
             focusInput(currentProps);
-            const Commands = arg1(arg6[1]).Commands;
+            const Commands = require(144) /* Commands */.Commands;
             Commands.focus(currentProps);
           }
         }
@@ -60,14 +62,14 @@ arg5.default = {
   blurTextInput(result) {
     let tmp = "number" !== typeof result;
     if (tmp) {
-      tmp = closure_2 === result;
+      tmp = c2 === result;
     }
     if (tmp) {
       tmp = null != result;
     }
     if (tmp) {
       blurInput(result);
-      const Commands = arg1(arg6[1]).Commands;
+      const Commands = require(144) /* Commands */.Commands;
       Commands.blur(result);
     }
   },

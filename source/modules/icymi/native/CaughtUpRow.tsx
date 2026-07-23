@@ -1,50 +1,52 @@
-// Module ID: 15127
-// Function ID: 114128
+// Module ID: 15242
+// Function ID: 116297
 // Name: ExploreServersRow
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 33, 3991, 4126, 15179, 689, 8321, 15196, 15192, 3982, 4131, 3834, 11934, 1212, 4543, 15218, 4554, 668, 666, 2]
 // Exports: default
 
-// Module 15127 (ExploreServersRow)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]).createAnimatedComponent(arg1(dependencyMap[6]).Text);
-const importDefaultResult = importDefault(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[7]).createICYMIStyles((margin) => {
+// Module 15242 (ExploreServersRow)
+import module_3991 from "module_3991";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import createICYMIStyles from "createICYMIStyles";
+import importDefaultResult from "module_3991";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = require("module_3991").createAnimatedComponent(require("Text").Text);
+let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
   let obj = {};
-  obj = { marginVertical: importDefault(dependencyMap[8]).space.PX_32 };
+  obj = { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: importDefault(689).space.PX_32 };
   obj.container = obj;
-  obj = { marginHorizontal: margin.margin, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
+  obj = { marginHorizontal: margin.margin, marginBottom: importDefault(689).space.PX_24 };
   obj.textContainer = obj;
-  obj.recommendedGuildsContainer = { flex: 1, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-  const obj1 = { flex: 1, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-  obj.iconWrapper = { marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-  obj.icon = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
-  const obj2 = { marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-  obj.headerText = { marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
-  obj.subtitleText = { lottieComponent: null, GiftBackgroundSelect: null };
-  const obj4 = { backgroundColor: false, borderRadius: false, gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: margin.margin };
+  obj.recommendedGuildsContainer = { flex: 1, marginBottom: importDefault(689).space.PX_24 };
+  const obj2 = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: importDefault(689).space.PX_24 };
+  obj.iconWrapper = obj2;
+  obj.icon = { height: 40, width: 40 };
+  const obj3 = { alignSelf: "center", marginBottom: importDefault(689).space.PX_8, textAlign: "center" };
+  obj.headerText = obj3;
+  obj.subtitleText = { alignSelf: "center", textAlign: "center" };
+  const obj4 = { flex: 1, width: "100%", gap: importDefault(689).space.PX_12, paddingHorizontal: margin.margin };
   obj.buttonContainer = obj4;
-  obj.gradient = { <string:1373155683>: true, <string:1397987961>: true, <string:31251800>: true, <string:1559979170>: true, <string:1549292374>: true };
+  obj.gradient = { position: "absolute", top: 0, left: 0, right: 0, height: 150 };
   return obj;
 });
 let closure_11 = { code: "function CaughtUpRowTsx1(){const{visibleSharedValue,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withTiming(0,{duration:250,easing:Easing.bezier(0.5,1.8,0.5,1)}):-80}],opacity:visibleSharedValue.get()?withTiming(1,{duration:100,easing:Easing.out(Easing.bezierFn(0.33,1,0.68,1))}):0};}" };
 let closure_12 = { code: "function CaughtUpRowTsx2(){const{visibleSharedValue,withDelay,withSequence,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(80,withSequence(withTiming(8,{duration:100,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};}" };
 let closure_13 = { code: "function CaughtUpRowTsx3(){const{visibleSharedValue,withDelay,withSequence,withTiming,Easing}=this.__closure;return{transform:[{translateY:visibleSharedValue.get()?withDelay(115,withSequence(withTiming(8,{duration:150,easing:Easing.inOut(Easing.ease)}),withTiming(0,{duration:300,easing:Easing.out(Easing.ease)}))):0}]};}" };
-const obj2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/icymi/native/CaughtUpRow.tsx");
+let result = require("result").fileFinishedImporting("modules/icymi/native/CaughtUpRow.tsx");
 
 export default function ExploreServersRow(visible) {
   visible = visible.visible;
-  const arg1 = visible;
-  const tmp = callback5();
-  let obj = arg1(dependencyMap[5]);
+  let tmp = callback5();
+  let obj = visible(3991);
   const sharedValue = obj.useSharedValue(false);
-  const importDefault = sharedValue;
-  const items = [visible, sharedValue];
+  let items = [visible, sharedValue];
   const effect = React.useEffect(() => {
     let tmp = visible;
     if (visible) {
@@ -53,18 +55,18 @@ export default function ExploreServersRow(visible) {
     if (tmp) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const result = closure_1.set(true);
+        const result = outer1_1.set(true);
       }, 500);
     }
   }, items);
   const tmp4 = callback2(React.useState(false), 2);
   const dependencyMap = tmp5;
   // CreateGeneratorClosureLongIndex (0x67)
-  const callback = React.useCallback(callback(tmp5), []);
+  callback = React.useCallback(callback(tmp5), []);
   const callback1 = React.useCallback(() => {
     let obj = sharedValue(tmp5[9]);
     obj.itemInteracted("caught_up", "caught_up", "press_home");
-    obj = { <string:766477909>: 1091698687, <string:535451883>: 94602, actionParameters: {} };
+    obj = { itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } };
     sharedValue(tmp5[9]).feedItemActioned(obj);
     const obj2 = sharedValue(tmp5[9]);
     const rootNavigationRef = visible(tmp5[12]).getRootNavigationRef();
@@ -73,7 +75,7 @@ export default function ExploreServersRow(visible) {
       rootNavigationRef.navigate("tabs", obj);
     }
   }, []);
-  let obj1 = arg1(dependencyMap[5]);
+  let obj1 = visible(3991);
   class E {
     constructor() {
       obj = {};
@@ -81,14 +83,14 @@ export default function ExploreServersRow(visible) {
       num = -80;
       if (closure_1.get()) {
         tmp = visible;
-        tmp2 = closure_2;
+        tmp2 = c2;
         num2 = 13;
-        obj3 = visible(closure_2[13]);
+        obj3 = visible(c2[13]);
         obj1 = {};
         num3 = 250;
         obj1.duration = 250;
         num4 = 5;
-        Easing = visible(closure_2[5]).Easing;
+        Easing = visible(c2[5]).Easing;
         num5 = 0.5;
         num6 = 1.8;
         num7 = 1;
@@ -106,15 +108,15 @@ export default function ExploreServersRow(visible) {
       num11 = 0;
       if (closure_1.get()) {
         tmp4 = visible;
-        tmp5 = closure_2;
+        tmp5 = c2;
         num12 = 13;
-        obj5 = visible(closure_2[13]);
+        obj5 = visible(c2[13]);
         obj2 = {};
         num13 = 100;
         obj2.duration = 100;
         num14 = 5;
-        Easing2 = visible(closure_2[5]).Easing;
-        Easing3 = visible(closure_2[5]).Easing;
+        Easing2 = visible(c2[5]).Easing;
+        Easing3 = visible(c2[5]).Easing;
         num15 = 0.33;
         num16 = 1;
         num17 = 0.68;
@@ -128,12 +130,12 @@ export default function ExploreServersRow(visible) {
       return obj;
     }
   }
-  obj = { visibleSharedValue: sharedValue, withTiming: arg1(dependencyMap[13]).withTiming, Easing: arg1(dependencyMap[5]).Easing };
+  obj = { visibleSharedValue: sharedValue, withTiming: visible(4131).withTiming, Easing: visible(3991).Easing };
   E.__closure = obj;
   E.__workletHash = 6575188656069;
   E.__initData = closure_11;
   const animatedStyle = obj1.useAnimatedStyle(E);
-  let obj3 = arg1(dependencyMap[5]);
+  let obj3 = visible(3991);
   const fn = function b() {
     let obj = {};
     obj = {};
@@ -157,12 +159,12 @@ export default function ExploreServersRow(visible) {
     obj.transform = items;
     return obj;
   };
-  obj = { visibleSharedValue: sharedValue, withDelay: arg1(dependencyMap[5]).withDelay, withSequence: arg1(dependencyMap[5]).withSequence, withTiming: arg1(dependencyMap[13]).withTiming, Easing: arg1(dependencyMap[5]).Easing };
+  obj = { visibleSharedValue: sharedValue, withDelay: visible(3991).withDelay, withSequence: visible(3991).withSequence, withTiming: visible(4131).withTiming, Easing: visible(3991).Easing };
   fn.__closure = obj;
   fn.__workletHash = 469742746264;
   fn.__initData = closure_12;
   const animatedStyle1 = obj3.useAnimatedStyle(fn);
-  let obj5 = arg1(dependencyMap[5]);
+  let obj5 = visible(3991);
   const fn2 = function x() {
     let obj = {};
     obj = {};
@@ -186,57 +188,58 @@ export default function ExploreServersRow(visible) {
     obj.transform = items;
     return obj;
   };
-  obj1 = { visibleSharedValue: sharedValue, withDelay: arg1(dependencyMap[5]).withDelay, withSequence: arg1(dependencyMap[5]).withSequence, withTiming: arg1(dependencyMap[13]).withTiming, Easing: arg1(dependencyMap[5]).Easing };
+  obj1 = { visibleSharedValue: sharedValue, withDelay: visible(3991).withDelay, withSequence: visible(3991).withSequence, withTiming: visible(4131).withTiming, Easing: visible(3991).Easing };
   fn2.__closure = obj1;
   fn2.__workletHash = 14933607481025;
   fn2.__initData = closure_13;
   const animatedStyle2 = obj5.useAnimatedStyle(fn2);
-  let obj7 = arg1(dependencyMap[14]);
-  const token = obj7.useToken(importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND);
-  const obj2 = {};
+  let obj7 = visible(3834);
+  const token = obj7.useToken(sharedValue(689).colors.BACKGROUND_BRAND);
+  let obj2 = {};
   obj3 = { style: tmp.container };
-  const obj4 = { style: tmp.textContainer };
+  let obj4 = { style: tmp.textContainer };
   obj5 = { style: items1 };
-  const items1 = [tmp.iconWrapper, animatedStyle];
-  const obj6 = { "Bool(false)": "<string:3310541739>", "Bool(false)": "<string:1900342017>", "Bool(false)": "<string:4294967292>", style: tmp.icon };
-  obj5.children = callback3(arg1(dependencyMap[15]).FlashIcon, obj6);
-  const items2 = [callback3(importDefault(dependencyMap[5]).View, obj5), , ];
-  obj7 = { style: items3 };
+  items1 = [tmp.iconWrapper, animatedStyle];
+  const obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
+  obj5.children = callback3(visible(11934).FlashIcon, obj6);
+  const items2 = [callback3(sharedValue(3991).View, obj5), , ];
+  obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
   const items3 = [tmp.headerText, animatedStyle1];
-  const intl = arg1(dependencyMap[16]).intl;
-  obj7.children = intl.string(arg1(dependencyMap[16]).t.xjxffq);
+  obj7.style = items3;
+  const intl = visible(1212).intl;
+  obj7.children = intl.string(visible(1212).t.xjxffq);
   items2[1] = callback3(closure_9, obj7);
-  const obj8 = { cachedAt: 1, edpbxy: 1 };
+  const obj8 = { variant: "text-md/normal", color: "text-default" };
   const items4 = [tmp.subtitleText, animatedStyle2];
   obj8.style = items4;
-  const intl2 = arg1(dependencyMap[16]).intl;
-  obj8.children = intl2.string(arg1(dependencyMap[16]).t.sAApb0);
+  const intl2 = visible(1212).intl;
+  obj8.children = intl2.string(visible(1212).t.sAApb0);
   items2[2] = callback3(closure_9, obj8);
   obj4.children = items2;
   const items5 = [callback4(View, obj4), ];
   const obj9 = { style: tmp.buttonContainer };
-  const obj10 = {};
-  const intl3 = arg1(dependencyMap[16]).intl;
-  obj10.text = intl3.string(arg1(dependencyMap[16]).t.lNJYV8);
+  const obj10 = { size: "md", text: null, grow: true, variant: "primary" };
+  const intl3 = visible(1212).intl;
+  obj10.text = intl3.string(visible(1212).t.lNJYV8);
   obj10.onPress = callback;
   obj10.loading = tmp4[0];
-  const items6 = [callback3(arg1(dependencyMap[17]).Button, obj10), ];
-  const obj11 = {};
-  const intl4 = arg1(dependencyMap[16]).intl;
-  obj11.text = intl4.string(arg1(dependencyMap[16]).t.AGrUbj);
+  const items6 = [callback3(visible(4543).Button, obj10), ];
+  const obj11 = { size: "md", text: null, grow: true, variant: "secondary" };
+  const intl4 = visible(1212).intl;
+  obj11.text = intl4.string(visible(1212).t.AGrUbj);
   obj11.onPress = callback1;
-  items6[1] = callback3(arg1(dependencyMap[17]).Button, obj11);
+  items6[1] = callback3(visible(4543).Button, obj11);
   obj9.children = items6;
   items5[1] = callback4(View, obj9);
   obj3.children = items5;
-  const items7 = [callback4(View, obj3), callback3(arg1(dependencyMap[18]).Separator, {}), ];
-  const obj12 = { style: tmp.gradient, start: arg1(dependencyMap[20]).VerticalGradient.START, end: arg1(dependencyMap[20]).VerticalGradient.END };
-  const tmp12 = importDefault(dependencyMap[19]);
-  const obj20 = importDefault(dependencyMap[21])(token);
-  const items8 = [importDefault(dependencyMap[21])(token).alpha(0.2).hex(), ];
-  const alphaResult = importDefault(dependencyMap[21])(token).alpha(0.2);
-  const obj22 = importDefault(dependencyMap[21])(token);
-  items8[1] = importDefault(dependencyMap[21])(token).alpha(0).hex();
+  const items7 = [callback4(View, obj3), callback3(visible(15218).Separator, {}), ];
+  const obj12 = { style: tmp.gradient, start: visible(668).VerticalGradient.START, end: visible(668).VerticalGradient.END };
+  const tmp12 = sharedValue(4554);
+  const obj20 = sharedValue(666)(token);
+  const items8 = [sharedValue(666)(token).alpha(0.2).hex(), ];
+  const alphaResult = sharedValue(666)(token).alpha(0.2);
+  const obj22 = sharedValue(666)(token);
+  items8[1] = sharedValue(666)(token).alpha(0).hex();
   obj12.colors = items8;
   obj12.pointerEvents = "none";
   items7[2] = callback3(tmp12, obj12);

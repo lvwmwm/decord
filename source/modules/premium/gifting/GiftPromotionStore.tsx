@@ -1,37 +1,38 @@
-// Module ID: 6654
-// Function ID: 51180
+// Module ID: 6659
+// Function ID: 51209
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 6654 (_isNativeReflectConstruct)
+// Module 6659 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = { giftOptionsReceiptMap: {} };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class GiftPromotionStore {
     constructor() {
       self = this;
       tmp = GiftPromotionStore(this, GiftPromotionStore);
-      obj = closure_3(GiftPromotionStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(GiftPromotionStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +41,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GiftPromotionStore;
   callback2(GiftPromotionStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -48,7 +48,7 @@ let tmp2 = (PersistedStore) => {
       if (null != giftOptionsReceiptMap) {
         const obj = {};
         const merged = Object.assign(giftOptionsReceiptMap.giftOptionsReceiptMap);
-        closure_5.giftOptionsReceiptMap = obj;
+        outer1_5.giftOptionsReceiptMap = obj;
       }
     }
   };
@@ -56,22 +56,22 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[1] = obj;
   obj = {
     key: "getGiftOptionsForKey",
     value(arg0) {
-      return obj.giftOptionsReceiptMap[arg0];
+      return outer1_5.giftOptionsReceiptMap[arg0];
     }
   };
   items[2] = obj;
   return callback(GiftPromotionStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "GiftPromotionStore";
 tmp2.persistKey = "GiftPromotionStore";
-const items = [
+let items = [
   (giftOptionsReceiptMap) => {
     let tmp = giftOptionsReceiptMap;
     if (null != giftOptionsReceiptMap) {
@@ -88,7 +88,7 @@ const items = [
   }
 ];
 tmp2.migrations = items;
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOGOUT: function handleLogout() {
     let closure_5 = { giftOptionsReceiptMap: {} };
   },
@@ -96,9 +96,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     obj.giftOptionsReceiptMap[key.key] = key.giftOptions;
   },
   GIFT_PROMOTION_GIFT_OPTIONS_CLEAR_CACHE_ACTION: function handleClearCachedGiftOptions(arg0) {
-    delete r0[r1];
+    delete tmp[tmp2];
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/gifting/GiftPromotionStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/gifting/GiftPromotionStore.tsx");
 
 export default tmp2;

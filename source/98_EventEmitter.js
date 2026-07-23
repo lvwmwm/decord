@@ -1,24 +1,24 @@
 // Module ID: 98
 // Function ID: 1565
 // Name: EventEmitter
-// Dependencies: []
+// Dependencies: [6, 7, 99, 100]
 
 // Module 98 (EventEmitter)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3])("registry");
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
 
-export default () => {
+let closure_3 = require("_classPrivateFieldKey")("registry");
+
+export default (() => {
   class EventEmitter {
     constructor() {
       tmp = EventEmitter(this, EventEmitter);
-      definePropertyResult = Object.defineProperty(this, closure_3, { writable: true, value: undefined });
-      closure_2(this, closure_3)[closure_3] = {};
+      definePropertyResult = Object.defineProperty(this, outer1_3, { writable: true, value: undefined });
+      outer1_2(this, outer1_3)[outer1_3] = {};
       return;
     }
   }
-  let closure_0 = EventEmitter;
   let obj = {
     key: "addListener",
     value: function addListener(arg0, listener, context) {
@@ -28,7 +28,7 @@ export default () => {
         throw typeError;
       } else {
         const self = this;
-        const tmp3 = callback(this, closure_3)[closure_3];
+        const tmp3 = outer1_2(this, outer1_3)[outer1_3];
         let obj = tmp3[arg0];
         if (null == obj) {
           const _Set = Set;
@@ -36,7 +36,6 @@ export default () => {
           tmp3[arg0] = set;
           obj = set;
         }
-        const EventEmitter = obj;
         obj = {
           context,
           listener,
@@ -53,7 +52,7 @@ export default () => {
   obj = {
     key: "emit",
     value: function emit(arg0) {
-      const tmp = callback(this, closure_3)[closure_3][arg0];
+      const tmp = outer1_2(this, outer1_3)[outer1_3][arg0];
       if (null != tmp) {
         const length = arguments.length;
         let _Array2 = Array;
@@ -73,6 +72,7 @@ export default () => {
           let listener = item10028.listener;
           let tmp10 = _Array2;
           let applyResult = listener.apply(item10028.context, tmp6);
+          continue;
         }
       }
     }
@@ -83,10 +83,10 @@ export default () => {
     value: function removeAllListeners(arg0) {
       const self = this;
       if (null == arg0) {
-        callback(self, closure_3)[closure_3] = {};
+        outer1_2(self, outer1_3)[outer1_3] = {};
       } else {
-        callback(self, closure_3)[closure_3];
-        delete r0[r1];
+        outer1_2(self, outer1_3)[outer1_3];
+        delete tmp[tmp2];
       }
     }
   };
@@ -94,7 +94,7 @@ export default () => {
   items[3] = {
     key: "listenerCount",
     value: function listenerCount(arg0) {
-      const tmp = callback(this, closure_3)[closure_3][arg0];
+      const tmp = outer1_2(this, outer1_3)[outer1_3][arg0];
       let num = 0;
       if (null != tmp) {
         num = tmp.size;
@@ -103,4 +103,4 @@ export default () => {
     }
   };
   return callback(EventEmitter, items);
-}();
+})();

@@ -1,9 +1,20 @@
-// Module ID: 7624
-// Function ID: 61099
+// Module ID: 7630
+// Function ID: 61136
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1908, 1194, 1348, 7631, 21, 566, 686, 2]
 
-// Module 7624 (_isNativeReflectConstruct)
+// Module 7630 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,28 +24,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const set = new Set();
-let tmp3 = (Store) => {
+let set = new Set();
+let tmp3 = ((Store) => {
   class MediaPostSharePromptStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, MediaPostSharePromptStore);
-      obj = closure_6(MediaPostSharePromptStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, MediaPostSharePromptStore);
+      obj = outer1_6(MediaPostSharePromptStore);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -43,26 +46,25 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MediaPostSharePromptStore;
   callback2(MediaPostSharePromptStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9, closure_10, closure_8);
+      this.waitFor(outer1_9, outer1_10, outer1_8);
     }
   };
   const items = [obj, ];
   obj = {
     key: "shouldDisplayPrompt",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_11.has(arg0);
     }
   };
   items[1] = obj;
   return callback(MediaPostSharePromptStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "MediaPostSharePromptStore";
-tmp3 = new tmp3(importDefault(dependencyMap[11]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     const set = new Set();
   },
@@ -71,23 +73,23 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
       const message = isPushNotification.message;
       const author = message.author;
       let id1;
-      const id = id.getId();
+      id = id.getId();
       if (null != author) {
         id1 = author.id;
       }
       if (id === id1) {
         if (obj2.isFirstMessageIdInMediaPost(message.id, message.channel_id)) {
-          const channel = channel.getChannel(message.channel_id);
+          channel = channel.getChannel(message.channel_id);
           if (null != channel) {
             if (null != channel.parent_id) {
               if (channelGated.isChannelGated(channel.guild_id, channel.parent_id)) {
-                set.add(importDefault(dependencyMap[9]).castMessageIdAsChannelId(isPushNotification.message.id));
-                const obj = importDefault(dependencyMap[9]);
+                set.add(importDefault(21).castMessageIdAsChannelId(isPushNotification.message.id));
+                const obj = importDefault(21);
               }
             }
           }
         }
-        const obj2 = arg1(dependencyMap[8]);
+        obj2 = require(7631) /* isFirstMessageInMediaPost */;
       }
     }
   },
@@ -98,6 +100,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
     set.clear();
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/media_channel/MediaPostSharePromptStore.tsx");
+let result = set.fileFinishedImporting("modules/media_channel/MediaPostSharePromptStore.tsx");
 
 export default tmp3;

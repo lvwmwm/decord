@@ -1,14 +1,17 @@
-// Module ID: 8368
-// Function ID: 66699
+// Module ID: 8374
+// Function ID: 66736
 // Name: TwinButtons
-// Dependencies: [45154304, 102039552, 339738624, 339673088, 360316928, 339869696, 492437504, 492371968]
+// Dependencies: [31, 27, 33, 4130, 689, 4549, 4543, 2]
 // Exports: TwinButtons
 
-// Module 8368 (TwinButtons)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[3]).createStyles((arg0) => {
+// Module 8374 (TwinButtons)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
   obj = {};
   let str = "row";
@@ -16,33 +19,42 @@ let closure_6 = arg1(dependencyMap[3]).createStyles((arg0) => {
     str = "column";
   }
   obj.flexDirection = str;
-  const space = importDefault(dependencyMap[4]).space;
+  const space = importDefault(689).space;
   obj.gap = arg0 ? space.PX_8 : space.PX_12;
   obj.container = obj;
   obj.button = { flex: 1 };
   return obj;
 });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
 
 export const TwinButtons = function TwinButtons(children) {
-  let obj = arg1(dependencyMap[5]);
-  const tmp = callback(obj.useFontScale() > 1.2);
-  const arg1 = tmp;
+  let obj = require(4549) /* getFontScale */;
+  let tmp = callback(obj.useFontScale() > 1.2);
+  require = tmp;
   obj = {
     style: tmp.container,
     children: Children.map(children.children, (type) => {
       let tmp = null;
-      if (validElement.isValidElement(type)) {
+      if (outer1_3.isValidElement(type)) {
         tmp = null;
-        if (type.type === tmp(closure_2[6]).Button) {
+        if (type.type === tmp(outer1_2[6]).Button) {
           const obj = { style: tmp.button, children: type };
-          tmp = callback(closure_4, obj);
+          tmp = outer1_5(outer1_4, obj);
         }
       }
       return tmp;
     })
   };
-  const Children = React.Children;
-  return <View {...obj} />;
+  Children = React.Children;
+  return <View style={tmp.container}>{Children.map(arg0.children, (type) => {
+    let tmp = null;
+    if (outer1_3.isValidElement(type)) {
+      tmp = null;
+      if (type.type === tmp(outer1_2[6]).Button) {
+        const obj = { style: tmp.button, children: type };
+        tmp = outer1_5(outer1_4, obj);
+      }
+    }
+    return tmp;
+  })}</View>;
 };

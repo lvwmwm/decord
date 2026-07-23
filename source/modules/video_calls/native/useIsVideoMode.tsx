@@ -1,28 +1,31 @@
-// Module ID: 9049
-// Function ID: 71063
+// Module ID: 9056
+// Function ID: 71104
 // Name: isVideoMode
-// Dependencies: [0, 4294967295, 0, 0, 4294967295, 0, 0]
+// Dependencies: [4149, 1348, 4177, 1906, 4146, 566, 2]
 // Exports: default
 
-// Module 9049 (isVideoMode)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+// Module 9056 (isVideoMode)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
 
-function isVideoMode(closure_9, closure_11, closure_8, closure_12, closure_10) {
-  let obj = closure_9;
-  let obj2 = closure_11;
-  let obj3 = closure_8;
-  let obj4 = closure_12;
-  let obj5 = closure_10;
-  if (closure_9 === undefined) {
+const require = arg1;
+function isVideoMode(outer1_9, outer1_11, outer1_8, outer1_12, outer1_10) {
+  let obj = outer1_9;
+  let obj2 = outer1_11;
+  let obj3 = outer1_8;
+  let obj4 = outer1_12;
+  let obj5 = outer1_10;
+  if (outer1_9 === undefined) {
     obj = closure_3;
   }
   if (obj2 === undefined) {
     obj2 = closure_5;
   }
   if (obj3 === undefined) {
-    obj3 = __exportStarResult1;
+    obj3 = _isNativeReflectConstruct;
   }
   if (obj4 === undefined) {
     obj4 = closure_6;
@@ -38,12 +41,10 @@ function isVideoMode(closure_9, closure_11, closure_8, closure_12, closure_10) {
   }
   return tmp2;
 }
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[4]);
-const result = require("__exportStarResult1").fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");
 
 export default function useIsVideoMode() {
-  const items = [closure_3, closure_5, closure_4, closure_6, __exportStarResult1];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => callback(closure_3, closure_5, __exportStarResult1, closure_6, closure_4));
+  const items = [closure_3, closure_5, closure_4, closure_6, _isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_7(outer1_3, outer1_5, outer1_2, outer1_6, outer1_4));
 };
 export { isVideoMode };

@@ -1,20 +1,22 @@
-// Module ID: 14727
-// Function ID: 111068
+// Module ID: 14842
+// Function ID: 113232
 // Name: HomeDrawerFavoritesRowExpandedChildren
-// Dependencies: []
+// Dependencies: [31, 33, 14835, 4126, 1212, 2]
 // Exports: HomeDrawerFavoritesRowExpandedChildren
 
-// Module 14727 (HomeDrawerFavoritesRowExpandedChildren)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerFavoritesRow.tsx");
+// Module 14842 (HomeDrawerFavoritesRowExpandedChildren)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("HomeDrawerSharedItem").fileFinishedImporting("modules/home_drawer/native/HomeDrawerFavoritesRow.tsx");
 
 export const HomeDrawerFavoritesRowExpandedChildren = function HomeDrawerFavoritesRowExpandedChildren() {
   let obj = {};
-  obj = { 803799044: true, 1269170180: true, 711589892: true };
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.children = intl.string(arg1(dependencyMap[4]).t.wMWyci);
-  obj.title = jsx(arg1(dependencyMap[3]).Text, obj);
+  obj = { variant: "text-md/medium", color: "text-default", lineClamp: 1 };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.wMWyci);
+  obj.title = jsx(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1 });
   obj.subtitle = null;
-  return jsx(arg1(dependencyMap[2]).HomeDrawerSharedItem, obj);
+  return jsx(require(14835) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", lineClamp: 1 });
 };

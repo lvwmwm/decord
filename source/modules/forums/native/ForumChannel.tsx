@@ -1,89 +1,112 @@
-// Module ID: 11785
-// Function ID: 91447
+// Module ID: 11795
+// Function ID: 91496
 // Name: forumKeyExtractor
-// Dependencies: []
+// Dependencies: [31, 27, 3759, 5040, 1348, 4468, 4946, 11125, 653, 1277, 482, 33, 4130, 689, 5052, 477, 8829, 4126, 1212, 9137, 5681, 566, 11796, 14, 4098, 11798, 1934, 1324, 4543, 11274, 4660, 8525, 11799, 8729, 9141, 11800, 4320, 11151, 11124, 11801, 7879, 7009, 4662, 3831, 7415, 5650, 5464, 5484, 4619, 10436, 9139, 7019, 9545, 9564, 4099, 4100, 9562, 9145, 5160, 10434, 8379, 11804, 11386, 2]
 // Exports: default
 
-// Module 11785 (forumKeyExtractor)
+// Module 11795 (forumKeyExtractor)
+import ChevronSmallDownIcon from "ChevronSmallDownIcon";
+import { View } from "useIsMobileVisualRefreshExperimentEnabled";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { useForumChannelStore } from "set";
+import ME from "ME";
+import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
+import { Fonts } from "sum";
+import jsxProd from "TagIcon";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
+import set from "set";
+import set from "_isNativeReflectConstruct";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_15;
+let closure_16;
+let closure_17;
+const require = arg1;
 function forumKeyExtractor(arg0, arg1) {
   let combined = arg0;
-  if (arg0 === closure_22) {
+  if (arg0 === loading_section) {
     const _HermesInternal = HermesInternal;
-    combined = "" + closure_22 + "-" + arg1;
+    combined = "" + loading_section + "-" + arg1;
   }
   return combined;
 }
 function ArchivedSection() {
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[16]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(8829) /* useGradientBottom */;
   obj = {};
   const items = [tmp.section, obj.useClientThemesOverride()];
   obj.style = items;
-  obj = { "Null": "Array", "Null": "isArray", alignItems: "constructor", style: tmp.divider };
-  const intl = arg1(dependencyMap[18]).intl;
-  obj.children = intl.string(arg1(dependencyMap[18]).t.3+LO1w);
-  obj.children = callback(arg1(dependencyMap[17]).Text, obj);
+  obj = { style: tmp.divider, variant: "text-xs/bold", color: "text-muted" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["3+LO1w"]);
+  obj.children = callback(require(4126) /* Text */.Text, obj);
   return callback(View, obj);
 }
 function SearchSection(numPosts) {
   numPosts = numPosts.numPosts;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.section };
-  obj = { "Null": "Array", "Null": "isArray", alignItems: "constructor", style: tmp.divider };
+  obj = { style: tmp.divider, variant: "text-xs/bold", color: "text-muted" };
   if (0 === numPosts) {
-    const intl2 = arg1(dependencyMap[18]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[18]).t.DbgHxi);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.DbgHxi);
   } else {
-    const intl = arg1(dependencyMap[18]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { numPosts, query: numPosts.searchQuery };
-    stringResult = intl.formatToPlainString(arg1(dependencyMap[18]).t.tBz/8b, obj);
+    stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["tBz/8b"], obj);
   }
   obj.children = stringResult;
-  obj.children = closure_15(arg1(dependencyMap[17]).Text, obj);
+  obj.children = closure_15(require(4126) /* Text */.Text, obj);
   return closure_15(View, obj);
 }
 function ArchivedMissingReadHistoryPermission(channelName) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.missingPermissionContainer };
-  obj = { style: tmp.missingPermissionText };
-  const intl = arg1(dependencyMap[18]).intl;
-  obj.children = intl.format(arg1(dependencyMap[18]).t.TycmzM, { channelName: channelName.channelName });
-  obj.children = callback(arg1(dependencyMap[17]).Text, obj);
+  obj = { style: tmp.missingPermissionText, variant: "text-xs/normal", color: "text-muted" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.TycmzM, { channelName: channelName.channelName });
+  obj.children = callback(require(4126) /* Text */.Text, obj);
   return callback(View, obj);
 }
 function SearchMissingReadHistoryPermission(channelName) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.section };
-  obj = { style: tmp.missingPermissionText };
-  const intl = arg1(dependencyMap[18]).intl;
-  obj.children = intl.format(arg1(dependencyMap[18]).t.OWZJdS, { channelName: channelName.channelName });
-  obj.children = callback(arg1(dependencyMap[17]).Text, obj);
+  obj = { style: tmp.missingPermissionText, variant: "text-xs/normal", color: "text-muted" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.OWZJdS, { channelName: channelName.channelName });
+  obj.children = callback(require(4126) /* Text */.Text, obj);
   return callback(View, obj);
 }
 function SortAndViewOptions(channel) {
   channel = channel.channel;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const id = channel.id;
-  const arg1 = id;
   const items = [id];
   let ArrowsUpDownIcon = React.useCallback(() => {
-    const combined = "ForumDisplaySettingsActionSheet-" + id;
-    const id = combined;
-    let obj = callback(paths[24]);
+    combined = "ForumDisplaySettingsActionSheet-" + combined;
+    let obj = outer1_1(outer1_2[24]);
     obj = {
-      channelId: id,
+      channelId: combined,
       onClose() {
-        callback(closure_2[24]).hideActionSheet(combined);
+        outer2_1(outer2_2[24]).hideActionSheet(combined);
       }
     };
-    obj.openLazy(id(paths[26])(paths[25], paths.paths), combined, obj);
+    obj.openLazy(id(outer1_2[26])(outer1_2[25], outer1_2.paths), combined, obj);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
-  if (importDefault(dependencyMap[27])("SortAndViewOptions")) {
+  if (importDefault(1324)("SortAndViewOptions")) {
     let obj = { variant: "secondary" };
-    const intl3 = arg1(dependencyMap[18]).intl;
+    const intl3 = id(1212).intl;
     const string3 = intl3.string;
-    let str4 = arg1(dependencyMap[18]).t;
+    let str4 = id(1212).t;
     if (isMediaChannelResult) {
       let string3Result = string3(str4.JxU0wr);
     } else {
@@ -92,19 +115,19 @@ function SortAndViewOptions(channel) {
     obj.text = string3Result;
     obj.onPress = ArrowsUpDownIcon;
     obj.size = "sm";
-    ArrowsUpDownIcon = arg1(dependencyMap[29]).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = id(11274).ArrowsUpDownIcon;
     obj = {};
     str4 = "xxs";
     obj.size = "xxs";
     obj.icon = callback(ArrowsUpDownIcon, obj);
-    tmp3(tmp4(tmp5[28]).Button, obj);
+    tmp3(tmp4(4543).Button, obj);
   } else {
     obj = { accessibilityRole: "button" };
-    const intl = arg1(dependencyMap[18]).intl;
+    const intl = id(1212).intl;
     const string = intl.string;
-    const t = arg1(dependencyMap[18]).t;
+    const t = id(1212).t;
     if (isMediaChannelResult) {
-      let stringResult = string(t.kQN/bi);
+      let stringResult = string(t["kQN/bi"]);
     } else {
       stringResult = string(t.Iqetyr);
     }
@@ -115,68 +138,67 @@ function SortAndViewOptions(channel) {
     obj.onPress = ArrowsUpDownIcon;
     const obj1 = { style: tmp.optionsPill };
     const obj2 = { size: "xs", style: tmp.sortOptionsIcon };
-    const items1 = [callback(arg1(dependencyMap[29]).ArrowsUpDownIcon, obj2), , ];
-    const obj3 = { style: tmp.sortOptionsText };
-    const intl2 = arg1(dependencyMap[18]).intl;
+    const items1 = [callback(id(11274).ArrowsUpDownIcon, obj2), , ];
+    const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", style: tmp.sortOptionsText };
+    const intl2 = id(1212).intl;
     const string2 = intl2.string;
-    const t2 = arg1(dependencyMap[18]).t;
+    const t2 = id(1212).t;
     if (isMediaChannelResult) {
       let string2Result = string2(t2.JxU0wr);
     } else {
       string2Result = string2(t2.xyYt8A);
     }
     obj3.children = string2Result;
-    items1[1] = callback(arg1(dependencyMap[17]).Text, obj3);
+    items1[1] = callback(id(4126).Text, obj3);
     const obj4 = { size: "xs" };
-    items1[2] = callback(arg1(dependencyMap[31]).ChevronSmallDownIcon, obj4);
+    items1[2] = callback(id(8525).ChevronSmallDownIcon, obj4);
     obj1.children = items1;
     obj.children = closure_16(View, obj1);
-    return tmp3(tmp4(tmp5[30]).PressableOpacity, obj);
+    return tmp3(tmp4(4660).PressableOpacity, obj);
   }
 }
 function TagFilter(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   function handlePress() {
-    let obj = callback(paths[24]);
+    let obj = outer1_1(outer1_2[24]);
     obj = { channel };
-    obj.openLazy(channel(paths[26])(paths[32], paths.paths), "ForumTagFilterActionSheet", obj);
+    obj.openLazy(channel(outer1_2[26])(outer1_2[32], outer1_2.paths), "ForumTagFilterActionSheet", obj);
   }
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const tagFilter = useForumChannelStore(channel.id).tagFilter;
-  if (importDefault(dependencyMap[27])("TagFilter")) {
+  if (importDefault(1324)("TagFilter")) {
     let obj = { variant: "secondary" };
-    const intl3 = tmp3(tmp4[18]).intl;
-    obj.text = intl3.string(tmp3(tmp4[18]).t.112vVE);
+    const intl3 = tmp3(1212).intl;
+    obj.text = intl3.string(tmp3(1212).t["112vVE"]);
     obj.onPress = handlePress;
     obj.size = "sm";
     obj = { size: "xxs" };
-    obj.icon = callback(tmp3(tmp4[33]).TagIcon, obj);
-    let tmp2Result = tmp2(tmp3(tmp4[28]).Button, obj);
+    obj.icon = callback(tmp3(8729).TagIcon, obj);
+    let tmp2Result = tmp2(tmp3(4543).Button, obj);
   } else {
-    obj = {};
-    const intl = tmp3(tmp4[18]).intl;
-    obj.accessibilityLabel = intl.string(tmp3(tmp4[18]).t.TdqRTh);
+    obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.8 };
+    const intl = tmp3(1212).intl;
+    obj.accessibilityLabel = intl.string(tmp3(1212).t.TdqRTh);
     obj.style = tmp.optionsContainer;
     obj.onPress = handlePress;
     const obj1 = { style: tmp.optionsPill };
     let tmp7 = tagFilter.size > 0;
     if (tmp7) {
       const obj2 = { style: tmp.countContainer };
-      const obj3 = { cachedAt: "absolute", edpbxy: -3, style: tmp.countText, children: tagFilter.size };
-      obj2.children = callback(arg1(dependencyMap[17]).Text, obj3);
+      const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.countText, children: tagFilter.size };
+      obj2.children = callback(channel(4126).Text, obj3);
       tmp7 = callback(View, obj2);
     }
     const items = [tmp7, , ];
-    const obj4 = { style: tmp.sortOptionsText };
-    const intl2 = arg1(dependencyMap[18]).intl;
-    obj4.children = intl2.string(arg1(dependencyMap[18]).t.112vVE);
-    items[1] = callback(arg1(dependencyMap[17]).Text, obj4);
+    const obj4 = { variant: "text-sm/medium", color: "interactive-text-default", style: tmp.sortOptionsText };
+    const intl2 = channel(1212).intl;
+    obj4.children = intl2.string(channel(1212).t["112vVE"]);
+    items[1] = callback(channel(4126).Text, obj4);
     const obj5 = { size: "xs" };
-    items[2] = callback(arg1(dependencyMap[31]).ChevronSmallDownIcon, obj5);
+    items[2] = callback(channel(8525).ChevronSmallDownIcon, obj5);
     obj1.children = items;
     obj.children = closure_16(View, obj1);
-    tmp2Result = tmp2(tmp3(tmp4[30]).PressableOpacity, obj);
+    tmp2Result = tmp2(tmp3(4660).PressableOpacity, obj);
     const tmp5 = closure_16;
     const tmp6 = View;
   }
@@ -191,16 +213,16 @@ function getForumItemType(arg0) {
 }
 function onForumViewableItemsChanged(changed) {
   changed = changed.changed;
-  const item = changed.forEach((item) => {
+  let item = changed.forEach((item) => {
     item = item.item;
-    if (!set.has(item)) {
-      const channel = channel.getChannel(item);
+    if (!outer1_23.has(item)) {
+      const channel = outer1_7.getChannel(item);
       let parent_id;
       if (null != channel) {
         parent_id = channel.parent_id;
       }
       if (null != parent_id) {
-        const obj = callback(closure_2[34]);
+        const obj = outer1_0(outer1_2[34]);
         if (item.isViewable) {
           const _Date2 = Date;
           const result = obj.markForumPostItemAsSeen(parent_id, item, Date.now());
@@ -216,63 +238,58 @@ function ForumChannelContent(channel) {
   let sortOrder;
   let tagFilter;
   channel = channel.channel;
-  const arg1 = channel;
   const searchQuery = channel.searchQuery;
-  const importDefault = searchQuery;
-  const ref = React.useRef(null);
-  const dependencyMap = ref;
-  const tmp3 = useForumChannelStore(channel.id);
+  const ref = activeThreadIds.useRef(null);
+  const tmp3 = searchResults(channel.id);
   ({ sortOrder, tagFilter } = tmp3);
-  let obj = importDefault(dependencyMap[35]);
+  let obj = searchQuery(ref[35]);
   obj = { guildId: channel.guild_id, channelId: channel.id };
   const forumChannelSeenManager = obj.useForumChannelSeenManager(obj);
-  const items = [channel.id];
-  const effect = React.useEffect(() => {
+  let items = [channel.id];
+  let effect = activeThreadIds.useEffect(() => {
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
+      current.scrollToOffset({ offset: 0, animated: false });
     }
   }, items);
-  const tmp6 = function useForumData(channel, sortOrder, tagFilter, tagSetting) {
+  const tmp6 = (function useForumData(channel, sortOrder, tagFilter, tagSetting) {
     let canLoadMore;
     let isSearchLoading;
     let loadMore;
     let loading;
     let searchResults;
+    let closure_0 = channel;
     let obj = channel(ref[19]);
     obj = { channel, sortOrder, tagFilter, tagSetting, shouldAutomaticallyAck: true };
     const forumActiveThreadIds = obj.useForumActiveThreadIds(obj);
-    const searchQuery = forumActiveThreadIds;
     const substr = forumActiveThreadIds.slice(0, channel(ref[20]).BATCH_SIZE);
     const joined = substr.join();
     const items = [channel, joined];
     const effect = activeThreadIds.useEffect(() => {
       if ("" !== joined) {
-        arg0(joined[20]).preloadForumThreads(arg0);
-        const obj = arg0(joined[20]);
+        channel(ref[20]).preloadForumThreads(closure_0);
+        const obj = channel(ref[20]);
       }
     }, items);
     const items1 = [loadMore, canLoadMore];
-    const stateFromStores = channel(joined[21]).useStateFromStores(items1, () => {
-      const hasLoadedResult = closure_6.hasLoaded(arg0.guild_id);
-      return !closure_6.hasLoaded(arg0.guild_id) && !lurking.isLurking(arg0.guild_id);
+    const stateFromStores = channel(ref[21]).useStateFromStores(items1, () => {
+      const hasLoadedResult = loadMore.hasLoaded(channel.guild_id);
+      return !loadMore.hasLoaded(channel.guild_id) && !canLoadMore.isLurking(channel.guild_id);
     });
-    const activeThreadIds = stateFromStores;
-    const obj4 = channel(joined[21]);
+    const obj4 = channel(ref[21]);
     obj = { channelId: channel.id };
-    const forumSearchState = channel(joined[19]).useForumSearchState(obj);
+    const forumSearchState = channel(ref[19]).useForumSearchState(obj);
     ({ searchResults, isSearchLoading } = forumSearchState);
-    const obj5 = channel(joined[19]);
-    const automaticForumSearch = channel(joined[19]).useAutomaticForumSearch(channel, tagFilter, tagSetting);
-    const obj7 = channel(joined[19]);
-    const canViewArchivedPosts = channel(joined[19]).useCanViewArchivedPosts(channel);
-    const obj8 = channel(joined[19]);
-    const archivedThreads = channel(joined[22]).useArchivedThreads(channel, sortOrder, tagFilter, tagSetting);
+    const obj5 = channel(ref[19]);
+    const automaticForumSearch = channel(ref[19]).useAutomaticForumSearch(channel, tagFilter, tagSetting);
+    const obj7 = channel(ref[19]);
+    const canViewArchivedPosts = channel(ref[19]).useCanViewArchivedPosts(channel);
+    const obj8 = channel(ref[19]);
+    const archivedThreads = channel(ref[22]).useArchivedThreads(channel, sortOrder, tagFilter, tagSetting);
     const threadIds = archivedThreads.threadIds;
-    const archivedThreadIds = threadIds;
     ({ loading, canLoadMore, loadMore } = archivedThreads);
-    const obj9 = channel(joined[22]);
-    const loadForumUnreadCounts = channel(joined[19]).useLoadForumUnreadCounts(channel, sortOrder, tagFilter, tagSetting);
+    const obj9 = channel(ref[22]);
+    const loadForumUnreadCounts = channel(ref[19]).useLoadForumUnreadCounts(channel, sortOrder, tagFilter, tagSetting);
     let tmp9 = null == searchResults && canViewArchivedPosts;
     if (tmp9) {
       let tmp10 = stateFromStores;
@@ -292,36 +309,30 @@ function ForumChannelContent(channel) {
     }
     const items2 = [forumActiveThreadIds.length, threadIds.length, stateFromStores];
     const effect1 = activeThreadIds.useEffect(() => {
-      forumActiveThreadIds(joined[23]).recordRender(forumActiveThreadIds.length + threadIds.length, !stateFromStores);
+      searchQuery(ref[23]).recordRender(forumActiveThreadIds.length + threadIds.length, !stateFromStores);
     }, items2);
     const obj1 = { activeThreadIds: forumActiveThreadIds, archivedThreadIds: threadIds, canLoadMore, loadMore, activeThreadsLoading: stateFromStores, archivedThreadsLoading: loading, isSearchLoading, isEmpty: tmp9, searchResults };
     return obj1;
-  }(channel, sortOrder, tagFilter, tmp3.tagSetting);
-  const activeThreadIds = tmp6.activeThreadIds;
-  const React = activeThreadIds;
+  })(channel, sortOrder, tagFilter, tmp3.tagSetting);
+  activeThreadIds = tmp6.activeThreadIds;
   const archivedThreadIds = tmp6.archivedThreadIds;
-  const View = archivedThreadIds;
   const canLoadMore = tmp6.canLoadMore;
-  let closure_5 = canLoadMore;
   const loadMore = tmp6.loadMore;
-  let closure_6 = loadMore;
   const archivedThreadsLoading = tmp6.archivedThreadsLoading;
-  let closure_7 = archivedThreadsLoading;
   const activeThreadsLoading = tmp6.activeThreadsLoading;
-  let closure_8 = activeThreadsLoading;
   const isSearchLoading = tmp6.isSearchLoading;
-  let closure_9 = isSearchLoading;
-  const useForumChannelStore = searchResults;
-  const tmp7 = importDefault(dependencyMap[36])(channel);
-  let obj2 = arg1(dependencyMap[19]);
-  const canViewArchivedPosts = obj2.useCanViewArchivedPosts(channel);
-  let obj3 = arg1(dependencyMap[19]);
+  searchResults = tmp6.searchResults;
+  const tmp7 = searchQuery(ref[36])(channel);
+  let closure_11 = tmp7;
+  let obj2 = channel(ref[19]);
+  let canViewArchivedPosts = obj2.useCanViewArchivedPosts(channel);
+  let obj3 = channel(ref[19]);
   const canSearchForumPosts = obj3.useCanSearchForumPosts(channel);
-  let obj4 = arg1(dependencyMap[16]);
-  const items1 = [archivedThreadsLoading, canLoadMore, canViewArchivedPosts, loadMore, tmp6.searchResults];
+  let obj4 = channel(ref[16]);
+  let items1 = [archivedThreadsLoading, canLoadMore, canViewArchivedPosts, loadMore, searchResults];
   const clientThemesOverride = obj4.useClientThemesOverride();
-  const items2 = [false, archivedThreadsLoading, canLoadMore, canViewArchivedPosts, loadMore, tmp6.searchResults];
-  const callback = React.useCallback(() => {
+  let items2 = [976, archivedThreadsLoading, canLoadMore, canViewArchivedPosts, loadMore, searchResults];
+  const callback = activeThreadIds.useCallback(() => {
     let tmp = null == searchResults && canViewArchivedPosts;
     if (tmp) {
       tmp = !archivedThreadsLoading;
@@ -333,8 +344,8 @@ function ForumChannelContent(channel) {
       loadMore();
     }
   }, items1);
-  const items3 = [tmp6.searchResults, canViewArchivedPosts, canSearchForumPosts, activeThreadIds, activeThreadsLoading, archivedThreadIds, archivedThreadsLoading, isSearchLoading];
-  const callback1 = React.useCallback((nativeEvent) => {
+  let items3 = [searchResults, canViewArchivedPosts, canSearchForumPosts, activeThreadIds, activeThreadsLoading, archivedThreadIds, archivedThreadsLoading, isSearchLoading];
+  const callback1 = activeThreadIds.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     let tmp = null == searchResults;
     if (tmp) {
@@ -354,17 +365,17 @@ function ForumChannelContent(channel) {
     }
   }, items2);
   let length;
-  const memo = React.useMemo(() => {
+  const memo = activeThreadIds.useMemo(() => {
     const items = [];
     if (null != searchResults) {
-      items.push(closure_19);
+      items.push(outer1_19);
       const push3 = items.push;
       if (canSearchForumPosts) {
         const items1 = [];
         HermesBuiltin.arraySpread(searchResults, 0);
         HermesBuiltin.apply(items1, items);
       } else {
-        push3(closure_20);
+        push3(outer1_20);
       }
     } else if (!activeThreadsLoading) {
       const push = items.push;
@@ -377,15 +388,15 @@ function ForumChannelContent(channel) {
           tmp14 = archivedThreadIds.length > 0;
         }
         if (tmp14) {
-          items.push(closure_18);
+          items.push(outer1_18);
           const push2 = items.push;
           const items3 = [];
           HermesBuiltin.arraySpread(archivedThreadIds, 0);
           HermesBuiltin.apply(items3, items);
         }
       } else {
-        items.push(closure_18);
-        items.push(closure_21);
+        items.push(outer1_18);
+        items.push(outer1_21);
       }
     }
     let num5 = 0;
@@ -397,13 +408,13 @@ function ForumChannelContent(channel) {
       return items;
     }
     do {
-      let tmp39 = closure_22;
-      let arr3 = items.push(closure_22);
+      let tmp39 = outer1_22;
+      let arr3 = items.push(outer1_22);
       num5 = num5 + 1;
       let num6 = 20;
     } while (num5 < 20);
   }, items3);
-  if (null != tmp6.searchResults) {
+  if (null != searchResults) {
     length = searchResults.length;
   }
   const items4 = [length, searchQuery, tmp7];
@@ -415,19 +426,19 @@ function ForumChannelContent(channel) {
     }
     obj.channelName = str;
     obj.tagFilter = tagFilter;
-    return tmp16(importDefault(dependencyMap[39]), obj);
+    return tmp16(searchQuery(ref[39]), obj);
   } else {
-    const obj1 = {};
+    let obj1 = {};
     const items5 = [tmp.list, clientThemesOverride];
     obj1.style = items5;
     obj2 = { ref };
     obj3 = {};
     let num2 = 0;
     if (0 !== activeThreadIds.length) {
-      num2 = importDefault(dependencyMap[13]).space.PX_8;
+      num2 = searchQuery(ref[13]).space.PX_8;
     }
     obj3.paddingTop = num2;
-    obj3.paddingBottom = channel.insets.bottom + importDefault(dependencyMap[13]).space.PX_16;
+    obj3.paddingBottom = channel.insets.bottom + searchQuery(ref[13]).space.PX_16;
     obj2.contentContainerStyle = obj3;
     obj2.getItemType = getForumItemType;
     obj2.keyExtractor = forumKeyExtractor;
@@ -442,130 +453,108 @@ function ForumChannelContent(channel) {
     obj2.onEndReached = callback;
     obj2.onViewableItemsChanged = onForumViewableItemsChanged;
     obj2.viewabilityConfig = closure_25;
-    obj1.children = callback(arg1(dependencyMap[40]).FlashList, obj2);
+    obj1.children = callback(channel(ref[40]).FlashList, obj2);
     obj4 = {};
-    const items6 = [callback(importDefault(dependencyMap[42]), { 9223372036854775807: null, 0: null }), tmp16(View, obj1)];
+    const items6 = [callback(searchQuery(ref[42]), { absolute: true, mix: true }), tmp16(archivedThreadIds, obj1)];
     obj4.children = items6;
     return callback2(closure_17, obj4);
   }
-  const tmp = callback3();
+  tmp = _createForOfIteratorHelperLoose();
 }
 function onCreatePostWithoutPermission() {
-  let obj = importDefault(dependencyMap[43]);
+  let obj = importDefault(3831);
   obj = { key: "FORUM_NO_POST_PERMISSION_HELP" };
-  const intl = arg1(dependencyMap[18]).intl;
-  obj.content = intl.string(arg1(dependencyMap[18]).t.iyzwnD);
-  obj.icon = importDefault(dependencyMap[44]);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t.iyzwnD);
+  obj.icon = importDefault(7415);
   obj.open(obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const useForumChannelStore = arg1(dependencyMap[7]).useForumChannelStore;
-({ AnalyticsObjects: closure_11, AnalyticsPages: closure_12, AnalyticsSections: closure_13 } = arg1(dependencyMap[8]));
-const ANDROID_FOREGROUND_RIPPLE = arg1(dependencyMap[9]).ANDROID_FOREGROUND_RIPPLE;
-const Fonts = arg1(dependencyMap[10]).Fonts;
-const tmp2 = arg1(dependencyMap[8]);
-({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = arg1(dependencyMap[11]));
-let closure_18 = "archived_section";
-let closure_19 = "search_section";
-let closure_20 = "missing_permission_search";
-let closure_21 = "missing_permission_archived_threads";
-let closure_22 = "loading_section";
-const items = ["archived_section", "search_section", "missing_permission_search", "missing_permission_archived_threads", "loading_section"];
-const set = new Set(items);
-let obj = arg1(dependencyMap[12]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
-obj.background = obj;
-obj.headerRow = {};
-const tmp3 = arg1(dependencyMap[11]);
-obj.headerDivider = { backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.container = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-obj.noHeight = { height: 0 };
-obj.list = { flexDirection: null, alignItems: null, gap: true, overflow: true, x: 0 };
-obj.section = { <string:3596066964>: true, <string:3638417373>: true };
-const obj1 = { backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-const obj2 = {};
-const merged = Object.assign(importDefault(dependencyMap[14])(Fonts.PRIMARY_BOLD, importDefault(dependencyMap[13]).colors.TEXT_MUTED, 12, { "Null": null, "Null": null }));
-obj.divider = obj2;
-const obj3 = { "Bool(true)": "string", "Bool(true)": "string", "Bool(true)": "color", "Bool(true)": "alignItems", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
-obj.missingPermissionContainer = obj3;
-const importDefaultResult = importDefault(dependencyMap[14]);
-const obj4 = {};
-const merged1 = Object.assign(importDefault(dependencyMap[14])(Fonts.PRIMARY_NORMAL, importDefault(dependencyMap[13]).colors.TEXT_MUTED, 12));
-obj.missingPermissionText = obj4;
-const importDefaultResult1 = importDefault(dependencyMap[14]);
-obj.optionsContainer = { overflow: "hidden", borderRadius: importDefault(dependencyMap[13]).radii.xl };
-const obj5 = { overflow: "hidden", borderRadius: importDefault(dependencyMap[13]).radii.xl };
-obj.optionsPill = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST };
-const obj6 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST };
-obj.sortOptionsIcon = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 4 };
-obj.sortOptionsText = { marginHorizontal: 4 };
-const obj8 = { <string:3217081256>: "/assets/modules/nuf/native/images", <string:3742876909>: 221, <string:2433045373>: 195, <string:758617586>: null, <string:1107847270>: "3a31ec2d5aeb0eedce9411671227bdc1", <string:1369504516>: "discoverability-header", <string:3429014137>: "png", <string:1314541923>: true, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BRAND };
-obj.countContainer = obj8;
-const obj9 = {};
-const obj7 = { color: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 4 };
+({ AnalyticsObjects: closure_11, AnalyticsPages: closure_12, AnalyticsSections: closure_13 } = ME);
+({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
+const archived_section = "archived_section";
+const search_section = "search_section";
+const missing_permission_search = "missing_permission_search";
+const missing_permission_archived_threads = "missing_permission_archived_threads";
+const loading_section = "loading_section";
+let items = ["archived_section", "search_section", "missing_permission_search", "missing_permission_archived_threads", "loading_section"];
+let set = new Set(items);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.background = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerRow = { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 12, paddingVertical: 8 };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, width: "100%", height: 1 };
+_createForOfIteratorHelperLoose.headerDivider = obj1;
+_createForOfIteratorHelperLoose.container = { flex: 1, alignSelf: "stretch", alignItems: "center", position: "relative" };
+_createForOfIteratorHelperLoose.noHeight = { height: 0 };
+_createForOfIteratorHelperLoose.list = { flex: 1, paddingTop: 8, paddingHorizontal: 12, alignSelf: "stretch", marginBottom: 0 };
+_createForOfIteratorHelperLoose.section = { alignItems: "flex-start", justifyContent: "flex-end" };
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_BOLD, require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, 12, { marginBottom: 12, uppercase: true }));
+_createForOfIteratorHelperLoose.divider = { marginTop: 12, paddingStart: 4 };
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, alignItems: "center", justifyContent: "center", height: 48, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.missingPermissionContainer = obj3;
+let obj2 = { marginTop: 12, paddingStart: 4 };
+let obj4 = {};
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_NORMAL, require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, 12));
+_createForOfIteratorHelperLoose.missingPermissionText = obj4;
+_createForOfIteratorHelperLoose.optionsContainer = { overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.xl };
+let obj6 = { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 8, height: 32, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.optionsPill = obj6;
+let obj5 = { overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.xl };
+_createForOfIteratorHelperLoose.sortOptionsIcon = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 4 };
+_createForOfIteratorHelperLoose.sortOptionsText = { marginHorizontal: 4 };
+let obj8 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: 20, marginRight: 4, minWidth: 20, height: 20, display: "flex", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.countContainer = obj8;
+let obj9 = {};
 let num;
-if (obj13.isAndroid()) {
+if (set.isAndroid()) {
   num = 14;
 }
 obj9.lineHeight = num;
-obj.countText = obj9;
-let closure_24 = obj.createStyles(obj);
-let closure_25 = {};
-const obj13 = arg1(dependencyMap[15]);
-const result = arg1(dependencyMap[63]).fileFinishedImporting("modules/forums/native/ForumChannel.tsx");
+_createForOfIteratorHelperLoose.countText = obj9;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_25 = { waitForInteraction: false, viewAreaCoveragePercentThreshold: 50, minimumViewTime: 100 };
+let result = set.fileFinishedImporting("modules/forums/native/ForumChannel.tsx");
 
 export default function ForumChannel(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   let importDefault;
-  let dependencyMap;
-  let React;
-  let View;
-  let closure_5;
-  let closure_6;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[21]);
+  let analyticsLocations;
+  let searchQuery;
+  let showMemberVerificationGate;
+  let stateFromStores1;
+  let callback;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = channel(analyticsLocations[21]);
   const items = [closure_9];
-  const stateFromStores = obj.useStateFromStores(items, () => closure_9.canChatInGuild(channel.guild_id));
-  let obj1 = arg1(dependencyMap[45]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.canChatInGuild(channel.guild_id));
+  let obj1 = channel(analyticsLocations[45]);
   let tmp4 = null != channel.topic;
   const canStartThread = obj1.useCanStartThread(channel);
   if (tmp4) {
     tmp4 = 0 !== channel.topic.length;
   }
   importDefault = tmp4;
-  const analyticsLocations = importDefault(dependencyMap[46])(importDefault(dependencyMap[47]).FORUM_CHANNEL).analyticsLocations;
-  dependencyMap = analyticsLocations;
-  let obj2 = arg1(dependencyMap[19]);
+  analyticsLocations = importDefault(analyticsLocations[46])(importDefault(analyticsLocations[47]).FORUM_CHANNEL).analyticsLocations;
+  let obj2 = channel(analyticsLocations[19]);
   obj = { channelId: channel.id };
-  const searchQuery = obj2.useForumSearchState(obj).searchQuery;
-  React = searchQuery;
-  let obj4 = arg1(dependencyMap[48]);
-  const showMemberVerificationGate = obj4.useShowMemberVerificationGate(channel.guild_id);
-  View = showMemberVerificationGate;
-  let obj5 = arg1(dependencyMap[21]);
+  searchQuery = obj2.useForumSearchState(obj).searchQuery;
+  let obj4 = channel(analyticsLocations[48]);
+  showMemberVerificationGate = obj4.useShowMemberVerificationGate(channel.guild_id);
+  let obj5 = channel(analyticsLocations[21]);
   const items1 = [closure_8];
   const items2 = [channel.id];
-  const stateFromStores1 = obj5.useStateFromStores(items1, () => threadSettings.getThreadSettings(channel.id), items2);
-  closure_5 = stateFromStores1;
+  stateFromStores1 = obj5.useStateFromStores(items1, () => outer1_8.getThreadSettings(channel.id), items2);
   const items3 = [channel.id];
-  const tmp5 = importDefault(dependencyMap[46]);
-  const effect = React.useEffect(() => () => {
-    if (null != user.id) {
-      callback(closure_2[50]).clearForumSearch(user.id);
-      const obj = callback(closure_2[50]);
+  const tmp5 = importDefault(analyticsLocations[46]);
+  const effect = searchQuery.useEffect(() => () => {
+    if (null != outer1_0.id) {
+      callback(analyticsLocations[50]).clearForumSearch(outer1_0.id);
+      const obj = callback(analyticsLocations[50]);
     }
   }, items3);
   const items4 = [channel, analyticsLocations, searchQuery, stateFromStores1];
-  const callback = React.useCallback((analyticsLocationObject) => {
-    let obj = tmp4(analyticsLocations[51]);
+  callback = searchQuery.useCallback((analyticsLocationObject) => {
+    let obj = _undefined(analyticsLocations[51]);
     obj.changeThreadSettings(channel.id, { isPrivate: false });
     let name;
     if (null != stateFromStores1) {
@@ -593,39 +582,38 @@ export default function ForumChannel(channel) {
         }
       }
       obj.name = trimmed1;
-      tmp4(analyticsLocations[51]).changeThreadSettings(channel.id, obj);
-      const obj2 = tmp4(analyticsLocations[51]);
+      _undefined(analyticsLocations[51]).changeThreadSettings(channel.id, obj);
+      const obj2 = _undefined(analyticsLocations[51]);
     }
     obj = { guildId: channel.guild_id, parentChannelId: channel.id, analyticsLocationObject, analyticsLocations };
     const result = channel(analyticsLocations[52]).openCreateForumPostModal(obj);
   }, items4);
-  closure_6 = callback;
   const items5 = [channel, showMemberVerificationGate, tmp4, callback];
   let tmp12 = !stateFromStores;
-  const callback1 = React.useCallback(() => {
+  const callback1 = searchQuery.useCallback(() => {
     function startCreateForumPostFlow() {
-      if (callback) {
-        let obj = callback(closure_2[53]);
-        if (!obj.hasSeen(lib.id)) {
+      if (outer1_1) {
+        let obj = callback(analyticsLocations[53]);
+        if (!obj.hasSeen(outer1_0.id)) {
           obj = {
-            channel: lib,
+            channel: outer1_0,
             onPress() {
-                  return callback({ page: constants2.GUILD_CHANNEL, section: constants3.FORUM_CHANNEL_GUIDELINES, object: constants.BUTTON_CTA });
+                  return outer2_6({ page: outer3_12.GUILD_CHANNEL, section: outer3_13.FORUM_CHANNEL_GUIDELINES, object: outer3_11.BUTTON_CTA });
                 }
           };
-          const result = lib(closure_2[56]).openForumGuidelinesActionSheet(obj);
-          const obj2 = lib(closure_2[56]);
+          const result = channel(analyticsLocations[56]).openForumGuidelinesActionSheet(obj);
+          const obj2 = channel(analyticsLocations[56]);
         }
       }
-      const result1 = lib(closure_2[54]).triggerHapticFeedback(callback(closure_2[55]).IMPACT_LIGHT);
-      obj = { page: constants2.GUILD_CHANNEL, section: constants3.FORUM_CHANNEL_FOOTER, object: constants.BUTTON_CTA };
-      callback2(obj);
+      const result1 = channel(analyticsLocations[54]).triggerHapticFeedback(callback(analyticsLocations[55]).IMPACT_LIGHT);
+      obj = { page: outer2_12.GUILD_CHANNEL, section: outer2_13.FORUM_CHANNEL_FOOTER, object: outer2_11.BUTTON_CTA };
+      outer1_6(obj);
     }
     let obj = channel(analyticsLocations[41]);
     obj = { guildId: channel.guild_id, channelId: channel.id };
-    const result = obj.trackForumCreateNewPostClick(obj);
+    let result = obj.trackForumCreateNewPostClick(obj);
     if (showMemberVerificationGate) {
-      const result1 = channel(analyticsLocations[57]).openMemberVerificationModal(channel.guild_id, startCreateForumPostFlow);
+      let result1 = channel(analyticsLocations[57]).openMemberVerificationModal(channel.guild_id, startCreateForumPostFlow);
       const obj3 = channel(analyticsLocations[57]);
     } else {
       const result2 = startCreateForumPostFlow();
@@ -635,8 +623,8 @@ export default function ForumChannel(channel) {
     tmp12 = !canStartThread && !showMemberVerificationGate;
     const tmp13 = !canStartThread && !showMemberVerificationGate;
   }
-  const insets = importDefault(dependencyMap[58])({ includeKeyboardHeight: true }).insets;
-  let obj6 = arg1(dependencyMap[16]);
+  const insets = importDefault(analyticsLocations[58])({ includeKeyboardHeight: true }).insets;
+  let obj6 = channel(analyticsLocations[16]);
   obj = { style: tmp.background };
   let tmp17 = null;
   const clientThemesOverride = obj6.useClientThemesOverride(tmp.noHeight);
@@ -645,10 +633,10 @@ export default function ForumChannel(channel) {
     obj2 = { variant: "secondary" };
     obj1.ctaProps = obj2;
     obj1.topBorder = true;
-    tmp17 = callback(arg1(dependencyMap[59]).OptInChannelBanner, obj1);
+    tmp17 = callback(channel(analyticsLocations[59]).OptInChannelBanner, obj1);
   }
   const items6 = [tmp17, , , , , ];
-  const obj3 = { style: tmp.headerRow };
+  let obj3 = { style: tmp.headerRow };
   const items7 = [callback(SortAndViewOptions, { channel }), ];
   let tmp23 = channel.availableTags.length > 0;
   if (tmp23) {
@@ -657,32 +645,32 @@ export default function ForumChannel(channel) {
   }
   items7[1] = tmp23;
   obj3.children = items7;
-  items6[1] = closure_16(View, obj3);
+  items6[1] = closure_16(showMemberVerificationGate, obj3);
   const items8 = [tmp.headerDivider, clientThemesOverride];
-  items6[2] = callback(View, { style: items8 });
+  items6[2] = callback(showMemberVerificationGate, { style: items8 });
   obj5 = { style: tmp.container, children: callback(ForumChannelContent, { channel, insets, searchQuery }) };
-  items6[3] = callback(View, obj5);
+  items6[3] = callback(showMemberVerificationGate, obj5);
   obj6 = {};
-  const intl = arg1(dependencyMap[18]).intl;
-  obj6.accessibilityLabel = intl.string(arg1(dependencyMap[18]).t.TyAuoT);
-  obj6.icon = importDefault(dependencyMap[61]);
+  const intl = channel(analyticsLocations[18]).intl;
+  obj6.accessibilityLabel = intl.string(channel(analyticsLocations[18]).t.TyAuoT);
+  obj6.icon = importDefault(analyticsLocations[61]);
   obj6.disabled = tmp12;
-  obj6.positionBottom = insets.bottom + importDefault(dependencyMap[13]).space.PX_16;
+  obj6.positionBottom = insets.bottom + importDefault(analyticsLocations[13]).space.PX_16;
   obj6.onPress = callback1;
   obj6.onPressDisabled = onCreatePostWithoutPermission;
   let stringResult;
   if (tmp12) {
-    const intl2 = arg1(dependencyMap[18]).intl;
-    stringResult = intl2.string(arg1(dependencyMap[18]).t.iyzwnD);
+    const intl2 = channel(analyticsLocations[18]).intl;
+    stringResult = intl2.string(channel(analyticsLocations[18]).t.iyzwnD);
   }
   obj6.accessibilityHint = stringResult;
-  items6[4] = callback(arg1(dependencyMap[60]).FloatingActionButton, obj6);
+  items6[4] = callback(channel(analyticsLocations[60]).FloatingActionButton, obj6);
   let tmp30 = null;
   if (null != channel.guild_id) {
     const obj7 = { channel };
-    tmp30 = callback(arg1(dependencyMap[62]).MemberActionChatInputBannerGuarded, obj7);
+    tmp30 = callback(channel(analyticsLocations[62]).MemberActionChatInputBannerGuarded, obj7);
   }
   items6[5] = tmp30;
   obj.children = items6;
-  return closure_16(View, obj);
+  return closure_16(showMemberVerificationGate, obj);
 };

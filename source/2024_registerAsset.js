@@ -1,0 +1,11 @@
+// Module ID: 2024
+// Function ID: 22167
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 2024 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", scales: [1], hash: "25c61843d5c1cdf4411f41449a6b6903", name: "pl.messages.25c61843d5c1cdf4411f41449a6b6903.compiled.messages", type: "jsona" };
+
+export default registerAsset.registerAsset(obj);

@@ -1,93 +1,96 @@
-// Module ID: 10170
-// Function ID: 78600
+// Module ID: 10178
+// Function ID: 78640
 // Name: InstantInviteDetails
-// Dependencies: []
+// Dependencies: [31, 27, 1352, 3767, 1849, 33, 4130, 689, 4593, 4638, 4541, 4126, 4320, 4094, 1212, 10166, 2]
 // Exports: default
 
-// Module 10170 (InstantInviteDetails)
+// Module 10178 (InstantInviteDetails)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { createChannelRecordFromInvite as closure_5 } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 class InstantInviteDetails {
   constructor(arg0) {
     ({ channel, expiresAt } = global);
-    tmp = closure_10();
-    obj = arg1(dependencyMap[8]);
+    tmp = c10();
+    obj = require("getThreadChannelIcon");
     TextIcon = obj.getSimpleChannelIconComponent(channel);
     if (null == TextIcon) {
-      tmp2 = arg1;
-      tmp3 = dependencyMap;
+      tmp2 = closure_0;
+      tmp3 = closure_2;
       num = 9;
-      TextIcon = arg1(dependencyMap[9]).TextIcon;
+      TextIcon = require("TextIcon").TextIcon;
     }
     tmp4 = jsxs;
     obj = {};
-    obj1 = { "Bool(false)": "absolute", "Bool(false)": 8 };
+    obj1 = { direction: "horizontal", align: "center" };
     items = [, ];
-    items[0] = jsx(TextIcon, {});
-    obj2 = { -9223372036854775808: "<string:1359050337>", 0: "<string:3158443763>", 9223372036854775807: "<string:989856819>", 9223372036854775807: "<string:1627390474>" };
+    items[0] = jsx(TextIcon, { color: "icon-subtle", size: "xs" });
+    obj2 = { variant: "text-md/semibold", color: "text-subtle", style: null, lineClamp: 1 };
     obj2.style = tmp.channel;
-    obj5 = arg1(dependencyMap[12]);
-    obj2.children = obj5.computeChannelName(channel, closure_7, closure_6, false);
-    items[1] = jsx(arg1(dependencyMap[11]).Text, obj2);
+    obj5 = require("computeDefaultGroupDmNameFromUserIds");
+    obj2.children = obj5.computeChannelName(channel, c7, c6, false);
+    items[1] = jsx(require("Text").Text, obj2);
     obj1.children = items;
     items1 = [, ];
-    items1[0] = jsxs(arg1(dependencyMap[10]).Stack, obj1);
+    items1[0] = jsxs(require("Stack").Stack, obj1);
     tmp5 = null != expiresAt;
     if (tmp5) {
       tmp6 = jsxs;
-      tmp7 = arg1;
-      tmp8 = dependencyMap;
-      obj3 = { "Bool(false)": "absolute", "Bool(false)": 8 };
+      tmp7 = closure_0;
+      tmp8 = closure_2;
+      obj3 = { direction: "horizontal", align: "center" };
       tmp9 = jsx;
       num2 = 13;
       items2 = [, , ];
-      items2[0] = jsx(arg1(dependencyMap[13]).ClockIcon, { "Bool(false)": 1, "Bool(false)": -76 });
+      items2[0] = jsx(require("ClockIcon").ClockIcon, { size: "xs", color: "icon-subtle" });
       tmp10 = jsx;
-      obj4 = { cachedAt: "<string:1359050337>", edpbxy: "<string:3158443763>" };
+      obj4 = { variant: "text-md/semibold", color: "text-subtle" };
       num3 = 14;
-      intl = arg1(dependencyMap[14]).intl;
-      obj4.children = intl.string(arg1(dependencyMap[14]).t.aTABYx);
-      items2[1] = jsx(arg1(dependencyMap[11]).Text, obj4);
+      intl = require("getSystemLocale").intl;
+      obj4.children = intl.string(require("getSystemLocale").t.aTABYx);
+      items2[1] = jsx(require("Text").Text, obj4);
       tmp11 = jsx;
-      tmp12 = importDefault;
+      tmp12 = closure_1;
       num4 = 15;
       obj5 = {};
       obj5.style = tmp.time;
       obj5.deadline = expiresAt;
-      items2[2] = jsx(importDefault(dependencyMap[15]), obj5);
+      items2[2] = jsx(require("_isNativeReflectConstruct"), obj5);
       obj3.children = items2;
-      tmp5 = jsxs(arg1(dependencyMap[10]).Stack, obj3);
+      tmp5 = jsxs(require("Stack").Stack, obj3);
     }
     items1[1] = tmp5;
     obj.children = items1;
-    return tmp4(arg1(dependencyMap[10]).Stack, obj);
+    return tmp4(require("Stack").Stack, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = arg1(dependencyMap[2]).createChannelRecordFromInvite;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = { flex: { flex: 1 }, channel: { flex: 0 } };
-obj = { color: importDefault(dependencyMap[7]).colors.TEXT_FEEDBACK_POSITIVE };
-obj.time = obj;
-let closure_10 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCode.tsx");
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = { flex: { flex: 1 }, channel: { flex: 0 } };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_POSITIVE };
+_createForOfIteratorHelperLoose.time = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_callSuper").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteCode.tsx");
 
 export default function InstantInviteCode(invite) {
   invite = invite.invite;
-  const arg1 = invite;
   const items = [invite.channel];
-  let obj = { style: callback3().flex };
-  const memo = React.useMemo(() => callback(invite.channel), items);
+  let obj = { style: _createForOfIteratorHelperLoose().flex };
+  const memo = React.useMemo(() => outer1_5(invite.channel), items);
   obj = {};
-  obj = { "Bool(false)": null, "Bool(false)": null, children: invite.code };
-  const items1 = [callback(arg1(dependencyMap[11]).Text, obj), ];
-  const tmp = callback3();
+  obj = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
+  const items1 = [callback(invite(4126).Text, obj), ];
+  const tmp = _createForOfIteratorHelperLoose();
   items1[1] = callback(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj.children = items1;
-  obj.children = callback2(arg1(dependencyMap[10]).Stack, obj);
+  obj.children = callback2(invite(4541).Stack, obj);
   return callback(View, obj);
 };
 export { InstantInviteDetails };

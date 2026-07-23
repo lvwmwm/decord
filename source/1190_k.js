@@ -1,5 +1,5 @@
 // Module ID: 1190
-// Function ID: 13640
+// Function ID: 13641
 // Name: k
 // Dependencies: []
 
@@ -8,7 +8,7 @@ self = this;
 if ("undefined" !== typeof window) {
   self = window;
 }
-(self) => {
+((self) => {
   class m {
     constructor() {
       return;
@@ -244,7 +244,7 @@ if ("undefined" !== typeof window) {
           num2 = tmp18 + 1;
           uint16Array[tmp18] = (31 & tmp7) << 6 | 63 & subarrayResult[tmp17];
           arr = subarrayResult;
-          // continue
+          continue;
         } else {
           if (224 === (240 & tmp7)) {
             let tmp14 = +sum;
@@ -254,7 +254,7 @@ if ("undefined" !== typeof window) {
             num2 = tmp16 + 1;
             uint16Array[tmp16] = (31 & tmp7) << 12 | (63 & subarrayResult[tmp14]) << 6 | 63 & subarrayResult[tmp15];
             arr = subarrayResult;
-            // continue
+            continue;
           } else {
             arr = subarrayResult;
             num = sum;
@@ -280,7 +280,7 @@ if ("undefined" !== typeof window) {
               num2 = tmp13 + 1;
               uint16Array[tmp13] = tmp12;
               arr = subarrayResult;
-              // continue
+              continue;
             }
             continue;
           }
@@ -293,7 +293,7 @@ if ("undefined" !== typeof window) {
         uint16Array[tmp8] = tmp7;
         arr = subarrayResult;
         num = sum;
-        // continue
+        continue;
       }
       continue;
     }
@@ -484,7 +484,7 @@ if ("undefined" !== typeof window) {
       }
     }
   }
-  let closure_0 = [];
+  let closure_0 = ["utf-8", "utf8", "unicode-1-1-utf-8"];
   Object.defineProperty(m.prototype, "encoding", { value: "utf-8" });
   Object.defineProperty(fn.prototype, "encoding", { value: "utf-8" });
   Object.defineProperty(fn.prototype, "fatal", { value: false });
@@ -1098,4 +1098,4 @@ if ("undefined" !== typeof window) {
       return xMLHttpRequest.responseText;
     };
   }
-}(self);
+})(self);

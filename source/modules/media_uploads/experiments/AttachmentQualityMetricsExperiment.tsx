@@ -1,13 +1,13 @@
-// Module ID: 4698
-// Function ID: 40917
+// Module ID: 4701
+// Function ID: 40935
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 4698 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: true, DateToSystemTimezoneSetter: true, defaultConfig: {}, variations: { [0]: {}, [1]: {} } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_uploads/experiments/AttachmentQualityMetricsExperiment.tsx");
+// Module 4701 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-attachment-quality-metrics", kind: "user", defaultConfig: { enableQualityMetrics: false, enableOriginDetection: false }, variations: { [0]: { enableQualityMetrics: false, enableOriginDetection: false }, [1]: { enableQualityMetrics: true, enableOriginDetection: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_uploads/experiments/AttachmentQualityMetricsExperiment.tsx");
 
 export const AttachmentQualityMetricsExperiment = apexExperiment;

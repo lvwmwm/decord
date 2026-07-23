@@ -1,43 +1,41 @@
-// Module ID: 7608
-// Function ID: 60998
+// Module ID: 7614
+// Function ID: 61035
 // Name: items
-// Dependencies: [7616, 482, 22, 3974, 689]
+// Dependencies: [5676, 1282, 1212, 7601, 2]
 
-// Module 7608 (items)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-
-const obj = {
+// Module 7614 (items)
+let obj = {
   getTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.Gtck/t);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["Gtck/t"]);
   },
   getDisabledTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.E6UmXa);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.E6UmXa);
   },
   getDescription() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.jcRSp6);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.jcRSp6);
   }
 };
-const items = [require("AccessibilityAnnouncer").ReportSubType.SUB_CSAM, require("AccessibilityAnnouncer").ReportSubType.SUB_LOLI, require("AccessibilityAnnouncer").ReportSubType.SUB_NCP, require("AccessibilityAnnouncer").ReportSubType.SUB_SEXUALLY_DEGRADING_CONTENT, require("AccessibilityAnnouncer").ReportSubType.SUB_UNSOLICITED_PORN];
+const items = [require("ReportNames").ReportSubType.SUB_CSAM, require("ReportNames").ReportSubType.SUB_LOLI, require("ReportNames").ReportSubType.SUB_NCP, require("ReportNames").ReportSubType.SUB_SEXUALLY_DEGRADING_CONTENT, require("ReportNames").ReportSubType.SUB_UNSOLICITED_PORN];
 obj.eligibleReportSubtypes = items;
 obj.onApply = function onApply() {
   let explicitContentFriendDm;
   let explicitContentGuilds;
   let explicitContentNonFriendDm;
-  let obj = require(dependencyMap[0]);
-  const explicitContentSettingOrDefault = require(dependencyMap[0]).getExplicitContentSettingOrDefault();
+  let obj = require(5676) /* resolveExplicitContentSettingWithDefaults */;
+  const explicitContentSettingOrDefault = require(5676) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
   obj = {};
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
-  if (explicitContentGuilds === require(dependencyMap[1]).ExplicitContentRedaction.SHOW) {
-    obj.explicitContentGuilds = require(dependencyMap[1]).ExplicitContentRedaction.BLUR;
+  if (explicitContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
+    obj.explicitContentGuilds = require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR;
   }
-  if (explicitContentFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW) {
-    obj.explicitContentFriendDm = require(dependencyMap[1]).ExplicitContentRedaction.BLUR;
+  if (explicitContentFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
+    obj.explicitContentFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR;
   }
-  if (explicitContentNonFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW) {
-    obj.explicitContentNonFriendDm = require(dependencyMap[1]).ExplicitContentRedaction.BLUR;
+  if (explicitContentNonFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
+    obj.explicitContentNonFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR;
   }
   return obj.updateExplicitContentSetting(obj);
 };
@@ -45,17 +43,17 @@ obj.predicate = function predicate() {
   let explicitContentFriendDm;
   let explicitContentGuilds;
   let explicitContentNonFriendDm;
-  const explicitContentSettingOrDefault = require(dependencyMap[0]).getExplicitContentSettingOrDefault();
+  const explicitContentSettingOrDefault = require(5676) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
-  let tmp2 = explicitContentGuilds === require(dependencyMap[1]).ExplicitContentRedaction.SHOW;
+  let tmp2 = explicitContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   if (!tmp2) {
-    tmp2 = explicitContentFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW;
+    tmp2 = explicitContentFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   }
   if (!tmp2) {
-    tmp2 = explicitContentNonFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW;
+    tmp2 = explicitContentNonFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   }
   return tmp2;
 };
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersSexualMedia.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersSexualMedia.tsx");
 
 export default obj;

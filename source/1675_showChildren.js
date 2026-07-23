@@ -1,9 +1,11 @@
 // Module ID: 1675
-// Function ID: 18567
+// Function ID: 18568
 // Name: showChildren
-// Dependencies: []
+// Dependencies: [1641, 1607]
 
 // Module 1675 (showChildren)
+const require = arg1;
+const dependencyMap = arg6;
 function showChildren(children, get) {
   for (let num = 0; num < children.children.length; num = num + 1) {
     let tmp = children.children[num];
@@ -16,8 +18,8 @@ function showChildren(children, get) {
   }
 }
 arg5.prepareCurvedTransition = function prepareCurvedTransition(_componentDOMRef, animationName, easingY, dummyTransitionKeyframeName) {
-  const dummyAnimationConfig = function prepareDummy(cloneNode, duration, easingY, animationName) {
-    const dummyAnimationConfig = { animationName, animationType: callback(closure_1[1]).LayoutAnimationType.LAYOUT, duration: duration.duration, delay: duration.delay, easing: callback(closure_1[0]).getEasingByName(easingY.easingY), callback: null, reversed: false };
+  let dummyAnimationConfig = (function prepareDummy(cloneNode, duration, easingY, animationName) {
+    const dummyAnimationConfig = { animationName, animationType: outer1_0(outer1_1[1]).LayoutAnimationType.LAYOUT, duration: duration.duration, delay: duration.delay, easing: outer1_0(outer1_1[0]).getEasingByName(easingY.easingY), callback: null, reversed: false };
     const dummy = cloneNode.cloneNode(true);
     dummy.isDummy = true;
     dummy.style.animationName = "";
@@ -28,33 +30,35 @@ arg5.prepareCurvedTransition = function prepareCurvedTransition(_componentDOMRef
     dummy.style.width = "100%";
     dummy.style.height = "100%";
     return { dummy, dummyAnimationConfig };
-  }(_componentDOMRef, animationName, easingY, dummyTransitionKeyframeName);
-  const dummy = dummyAnimationConfig.dummy;
-  function prepareParent(style, dummy, animationName, easingX) {
-    animationName.easing = style(dummy[0]).getEasingByName(easingX.easingX);
+  })(_componentDOMRef, animationName, easingY, dummyTransitionKeyframeName);
+  let dummy = dummyAnimationConfig.dummy;
+  (function prepareParent(style, dummy, animationName, easingX) {
+    let closure_0 = style;
+    let closure_1 = dummy;
+    animationName.easing = outer1_0(outer1_1[0]).getEasingByName(easingX.easingX);
     const map = new Map();
-    map(style, map, false);
+    outer1_2(style, map, false);
     const backgroundColor = style.style.backgroundColor;
     style.style.backgroundColor = "transparent";
-    function onFinalize(self) {
-      if (self.contains(arg1)) {
-        self.removeChild(arg1);
+    function onFinalize() {
+      if (style.contains(closure_1)) {
+        style.removeChild(closure_1);
       }
-      map(self, map, true);
-      self.style.backgroundColor = backgroundColor;
+      outer2_2(style, map, true);
+      style.style.backgroundColor = backgroundColor;
     }
     function animationCancelCallback() {
       onFinalize();
-      const removed = arg0.removeEventListener("animationcancel", animationCancelCallback);
+      const removed = style.removeEventListener("animationcancel", animationCancelCallback);
     }
     function animationEndCallback() {
       onFinalize();
-      const removed = arg0.removeEventListener("animationend", animationEndCallback);
+      const removed = style.removeEventListener("animationend", animationEndCallback);
     }
     const listener = style.addEventListener("animationend", animationEndCallback);
     const listener1 = style.addEventListener("animationcancel", animationCancelCallback);
     style.appendChild(dummy);
-  }(_componentDOMRef, dummy, animationName, easingY);
+  })(_componentDOMRef, dummy, animationName, easingY);
   return { dummy, dummyAnimationConfig: dummyAnimationConfig.dummyAnimationConfig };
 };
 arg5.CurvedTransition = function CurvedTransition(name, name2, translateX) {

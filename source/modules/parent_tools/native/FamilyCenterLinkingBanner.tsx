@@ -1,37 +1,50 @@
-// Module ID: 13702
-// Function ID: 103691
+// Module ID: 13816
+// Function ID: 105847
 // Name: FamilyCenterLinkingBannerParentContent
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 7124, 11064, 1212, 2198, 13817, 4126, 5459, 13779, 2]
 // Exports: default
 
-// Module 13702 (FamilyCenterLinkingBannerParentContent)
+// Module 13816 (FamilyCenterLinkingBannerParentContent)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function FamilyCenterLinkingBannerParentContent() {
-  let obj = { style: callback4().container };
+  let obj = { style: callback3().container };
   obj = { index: 1 };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.header = intl.string(importDefault(dependencyMap[8]).7xxAni);
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.description = intl2.string(importDefault(dependencyMap[8]).1M9So2);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.header = intl.string(importDefault(2198)["7xxAni"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl2.string(importDefault(2198)["1M9So2"]);
   const items = [callback(FamilyCenterLinkingInstructionsRow, obj), , , ];
   obj = { index: 2 };
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj.header = intl3.string(importDefault(dependencyMap[8]).AXgx+a);
-  const intl4 = arg1(dependencyMap[7]).intl;
-  obj.description = intl4.string(importDefault(dependencyMap[8]).GzMFnb);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.header = intl3.string(importDefault(2198)["AXgx+a"]);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl4.string(importDefault(2198).GzMFnb);
   items[1] = callback(FamilyCenterLinkingInstructionsRow, obj);
   const obj1 = { index: 3 };
-  const intl5 = arg1(dependencyMap[7]).intl;
-  obj1.header = intl5.string(importDefault(dependencyMap[8]).MZn1tG);
-  const intl6 = arg1(dependencyMap[7]).intl;
-  obj1.description = intl6.string(importDefault(dependencyMap[8]).8rLBxD);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj1.header = intl5.string(importDefault(2198).MZn1tG);
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj1.description = intl6.string(importDefault(2198)["8rLBxD"]);
   obj1.isLast = true;
   items[2] = callback(FamilyCenterLinkingInstructionsRow, obj1);
-  items[3] = callback(arg1(dependencyMap[12]).FamilyCenterParentQRCodeButton, {});
+  items[3] = callback(require(13779) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
   obj.children = items;
   return callback2(closure_3, obj);
 }
 function FamilyCenterLinkingBannerTeenContent() {
-  return callback(closure_3, { style: callback5().container, children: callback(arg1(dependencyMap[12]).FamilyCenterTeenQRCodeButton, {}) });
+  return callback(closure_3, { style: _createForOfIteratorHelperLoose().container, children: callback(require(13779) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
 }
 function FamilyCenterLinkingInstructionsRow(arg0) {
   let description;
@@ -39,10 +52,10 @@ function FamilyCenterLinkingInstructionsRow(arg0) {
   let index;
   let isLast;
   ({ header, description, index, isLast } = arg0);
-  const tmp = callback6();
+  const tmp = callback4();
   let obj = { style: tmp.row };
-  obj = { style: tmp.circle, children: callback(arg1(dependencyMap[10]).Text, obj) };
-  obj = { cachedAt: -2873302907402948600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000518728505105, children: index };
+  obj = { style: tmp.circle, children: callback(require(4126) /* Text */.Text, obj) };
+  obj = { variant: "heading-md/semibold", color: "text-brand", children: index };
   const items = [callback(closure_3, obj), ];
   const obj1 = {};
   const items1 = [tmp.rowContent, ];
@@ -52,70 +65,63 @@ function FamilyCenterLinkingInstructionsRow(arg0) {
   }
   items1[1] = gap;
   obj1.style = items1;
-  const items2 = [callback(arg1(dependencyMap[10]).Text, { variant: "heading-sm/bold", children: header }), ];
-  const obj2 = { cachedAt: "y", edpbxy: "isArray", children: description };
-  items2[1] = callback(arg1(dependencyMap[10]).Text, obj2);
+  const items2 = [callback(require(4126) /* Text */.Text, { variant: "heading-sm/bold", children: header }), ];
+  const obj2 = { variant: "text-sm/medium", color: "text-muted", children: description };
+  items2[1] = callback(require(4126) /* Text */.Text, obj2);
   obj1.children = items2;
   items[1] = closure_6(closure_3, obj1);
   obj.children = items;
   return closure_6(closure_3, obj);
 }
-importAll(dependencyMap[0]);
-({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, marginTop: importDefault(dependencyMap[4]).space.PX_16, paddingTop: 0, paddingBottom: importDefault(dependencyMap[4]).space.PX_16, alignItems: "center", borderRadius: importDefault(dependencyMap[4]).radii.md, elevation: 2, overflow: "hidden" };
-obj.container = obj;
-const tmp4 = arg1(dependencyMap[2]);
-obj.content = { padding: importDefault(dependencyMap[4]).space.PX_16 };
-const obj2 = { "Null": 30, "Null": null, marginBottom: importDefault(dependencyMap[4]).space.PX_12 };
-obj.art = obj2;
-const obj1 = { padding: importDefault(dependencyMap[4]).space.PX_16 };
-obj.header = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
-let closure_7 = obj.createStyles(obj);
-let obj6 = arg1(dependencyMap[3]);
+({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: 0, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.md, elevation: 2, overflow: "hidden" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.content = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj2 = { width: "100%", height: 175, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.art = obj2;
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const obj4 = {};
-const obj3 = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
-obj4.container = { marginTop: importDefault(dependencyMap[4]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, width: "100%" };
-let closure_8 = obj6.createStyles(obj4);
-let obj9 = arg1(dependencyMap[3]);
-obj6 = {};
-const obj5 = { marginTop: importDefault(dependencyMap[4]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, width: "100%" };
-obj6.container = { width: "100%", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-let closure_9 = obj9.createStyles(obj6);
-const obj7 = { width: "100%", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-const obj8 = { row: {}, gap: { marginBottom: 12 } };
-obj9 = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL };
-obj8.circle = obj9;
-obj8.rowContent = { NBSP: null, isEndStream: 0 };
-let closure_10 = arg1(dependencyMap[3]).createStyles(obj8);
-const obj13 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkingBanner.tsx");
+let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj4.container = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, width: "100%" };
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj4);
+_createForOfIteratorHelperLoose = {};
+const obj5 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, width: "100%" };
+_createForOfIteratorHelperLoose.container = { width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj8 = { row: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, gap: { marginBottom: 12 } };
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", overflow: "hidden", width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL };
+obj8.circle = _createForOfIteratorHelperLoose;
+obj8.rowContent = { marginLeft: 12, flex: 1 };
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj8);
+const obj7 = { width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkingBanner.tsx");
 
 export default function FamilyCenterLinkingBanner() {
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
-  const intl = arg1(dependencyMap[7]).intl;
-  const tmp2 = importDefault(dependencyMap[5])();
-  const intl2 = arg1(dependencyMap[7]).intl;
-  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(dependencyMap[8]).zUCWEL), intl2.string(importDefault(dependencyMap[8]).B0NPbp));
-  let obj1 = arg1(dependencyMap[6]);
-  const intl3 = arg1(dependencyMap[7]).intl;
-  const stringResult = intl.string(importDefault(dependencyMap[8]).zUCWEL);
-  const intl4 = arg1(dependencyMap[7]).intl;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(11064) /* useAgeSpecificText */;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const tmp2 = importDefault(7124)();
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2198).zUCWEL), intl2.string(importDefault(2198).B0NPbp));
+  let obj1 = require(11064) /* useAgeSpecificText */;
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  const stringResult = intl.string(importDefault(2198).zUCWEL);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
   obj = { style: tmp.container };
   obj = {};
-  const ageSpecificText1 = obj1.useAgeSpecificText(intl3.format(importDefault(dependencyMap[8]).yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(importDefault(dependencyMap[8]).JsAEDi));
-  obj.source = importDefault(dependencyMap[9]);
+  const ageSpecificText1 = obj1.useAgeSpecificText(intl3.format(importDefault(2198).yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(importDefault(2198).JsAEDi));
+  obj.source = importDefault(13817);
   obj.style = tmp.art;
   obj.resizeMethod = "resize";
   const items = [callback(closure_4, obj), , ];
   obj1 = { style: tmp.content };
-  const items1 = [callback(arg1(dependencyMap[10]).Text, { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText }), ];
-  const obj3 = { cachedAt: "y", edpbxy: "isArray", children: ageSpecificText1 };
-  items1[1] = callback(arg1(dependencyMap[11]).TextWithIOSLinkWorkaround, obj3);
+  const items1 = [callback(require(4126) /* Text */.Text, { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText }), ];
+  const obj3 = { variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
+  items1[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj3);
   obj1.children = items1;
   items[1] = callback2(closure_3, obj1);
   items[2] = callback(tmp2 ? FamilyCenterLinkingBannerParentContent : FamilyCenterLinkingBannerTeenContent, {});

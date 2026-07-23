@@ -1,19 +1,19 @@
 // Module ID: 1820
-// Function ID: 19995
+// Function ID: 19996
 // Name: dismissGlobalKeyboard
-// Dependencies: []
+// Dependencies: [27, 477, 1821, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
 // Module 1820 (dismissGlobalKeyboard)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");
+import { NativeModules } from "get ActivityIndicator";
+
+let result = require("enforcing").fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");
 
 export const dismissGlobalKeyboard = function dismissGlobalKeyboard() {
   if (obj.isAndroid()) {
-    if (null != importDefault(dependencyMap[2])) {
-      const result = importDefault(dependencyMap[2]).dismissGlobalKeyboard();
-      const obj2 = importDefault(dependencyMap[2]);
+    if (null != importDefault(1821)) {
+      const result = importDefault(1821).dismissGlobalKeyboard();
+      const obj2 = importDefault(1821);
     }
   } else {
     const KeyboardManager = NativeModules.KeyboardManager;
@@ -22,17 +22,17 @@ export const dismissGlobalKeyboard = function dismissGlobalKeyboard() {
 };
 export const clearCurrentFocusAndDismissKeyboard = function clearCurrentFocusAndDismissKeyboard() {
   if (obj.isAndroid()) {
-    if (null != importDefault(dependencyMap[2])) {
-      const result = importDefault(dependencyMap[2]).clearCurrentFocusAndDismissKeyboard();
-      const obj2 = importDefault(dependencyMap[2]);
+    if (null != importDefault(1821)) {
+      const result = importDefault(1821).clearCurrentFocusAndDismissKeyboard();
+      const obj2 = importDefault(1821);
     }
   }
 };
 export const onKeyboardChanged = function onKeyboardChanged(open) {
   if (obj.isAndroid()) {
-    if (null != importDefault(dependencyMap[2])) {
-      importDefault(dependencyMap[2]).onKeyboardChanged(open);
-      const obj2 = importDefault(dependencyMap[2]);
+    if (null != importDefault(1821)) {
+      importDefault(1821).onKeyboardChanged(open);
+      const obj2 = importDefault(1821);
     }
   } else if (null != NativeModules.KeyboardManager.onKeyboardChanged) {
     const KeyboardManager = NativeModules.KeyboardManager;

@@ -1,26 +1,27 @@
-// Module ID: 9860
-// Function ID: 76347
+// Module ID: 9867
+// Function ID: 76388
 // Name: _markUnread
-// Dependencies: []
+// Dependencies: [5, 3760, 1348, 4349, 4142, 1849, 653, 3, 21, 7007, 507, 2]
 // Exports: default
 
-// Module 9860 (_markUnread)
+// Module 9867 (_markUnread)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { shouldBadgeMessage } from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _markUnread() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _markUnread = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const shouldBadgeMessage = arg1(dependencyMap[4]).shouldBadgeMessage;
-let closure_8 = importDefault(dependencyMap[5]);
-const Endpoints = arg1(dependencyMap[6]).Endpoints;
-let importDefaultResult = importDefault(dependencyMap[7]);
 importDefaultResult = new importDefaultResult("markUnread");
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/messages/markUnread.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/markUnread.tsx");
 
 export default function markUnread() {
   return _markUnread(...arguments);

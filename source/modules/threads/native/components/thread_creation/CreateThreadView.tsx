@@ -1,40 +1,54 @@
-// Module ID: 15196
-// Function ID: 114603
+// Module ID: 15312
+// Function ID: 116773
 // Name: CreateThreadViewInner
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 4468, 6928, 653, 33, 4130, 689, 7935, 7019, 5464, 5484, 1557, 5160, 4662, 4631, 15313, 5504, 1212, 15315, 11373, 11101, 11674, 10398, 1457, 675, 4324, 1198, 9550, 15314, 3989, 2]
 
-// Module 15196 (CreateThreadViewInner)
+// Module 15312 (CreateThreadViewInner)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "formSubmitError";
+import get_ActivityIndicator from "expandLocation";
+import { DraftType } from "_isNativeReflectConstruct";
+import { SlowmodeType } from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_6;
+let closure_7;
+const require = arg1;
 function CreateThreadViewInner(screenIndex) {
-  const threadSettingsDraft = screenIndex.threadSettingsDraft;
-  const arg1 = threadSettingsDraft;
-  const parentChannel = screenIndex.parentChannel;
-  const importDefault = parentChannel;
+  let threadSettingsDraft = screenIndex.threadSettingsDraft;
+  let parentChannel = screenIndex.parentChannel;
   const tmp = callback4();
-  let obj = arg1(dependencyMap[10]);
+  let obj = threadSettingsDraft(7935);
   const privateThreadMode = obj.usePrivateThreadMode(parentChannel);
-  const items = [parentChannel.id];
+  let items = [parentChannel.id];
   const effect = importAllResult.useEffect(() => () => {
-    lib(closure_2[11]).clearDraft(lib.id, closure_8.ThreadSettings);
-    const obj = lib(closure_2[11]);
-    lib(closure_2[11]).clearDraft(lib.id, closure_8.FirstThreadMessage);
+    parentChannel(outer2_2[11]).clearDraft(outer1_1.id, outer2_8.ThreadSettings);
+    const obj = parentChannel(outer2_2[11]);
+    parentChannel(outer2_2[11]).clearDraft(outer1_1.id, outer2_8.FirstThreadMessage);
   }, items);
   const tmp4 = callback(importAllResult.useState(null), 2);
   obj = { parentChannel, threadSettingsDraft, privateThreadMode, setNameError: tmp4[1] };
-  const tmp5 = function useSubmitForm(parentChannel) {
+  const tmp5 = (function useSubmitForm(parentChannel) {
     parentChannel = parentChannel.parentChannel;
-    let threadSettingsDraft = parentChannel;
-    threadSettingsDraft = parentChannel.threadSettingsDraft;
-    parentChannel = threadSettingsDraft;
+    const threadSettingsDraft = parentChannel.threadSettingsDraft;
     const setNameError = parentChannel.setNameError;
-    let tmp4Result;
-    let obj = threadSettingsDraft(setNameError[26]);
+    let c6;
+    let obj = threadSettingsDraft(outer1_2[26]);
     const navigation = obj.useNavigation();
-    let closure_4 = tmp2.useRef(false);
-    const tmp2 = null == threadSettingsDraft.parentMessageId;
-    const items = [tmp2, navigation, , , ];
+    let _slicedToArray = outer1_5.useRef(false);
+    let closure_5 = tmp2;
+    const items = [null == threadSettingsDraft.parentMessageId, navigation, , , ];
     ({ location: arr[2], parentMessageId: arr[3] } = threadSettingsDraft);
     items[4] = parentChannel;
-    const callback = tmp2.useCallback((guild_id) => {
+    const callback = outer1_5.useCallback((guild_id) => {
       if ("Message Shortcut" === threadSettingsDraft.location) {
         let obj = { channel_id: parentChannel.id };
         guild_id = undefined;
@@ -44,27 +58,27 @@ function CreateThreadViewInner(screenIndex) {
         obj.guild_id = guild_id;
         obj.original_message_id = threadSettingsDraft.parentMessageId;
         obj.action = "thread";
-        obj = parentChannel(setNameError[28]);
+        obj = threadSettingsDraft(outer2_2[28]);
         let guild_id1;
         if (null != parentChannel) {
           guild_id1 = parentChannel.guild_id;
         }
         const merged = Object.assign(obj.collectGuildAnalyticsMetadata(guild_id1));
-        let obj1 = parentChannel(setNameError[28]);
+        let obj1 = threadSettingsDraft(outer2_2[28]);
         const merged1 = Object.assign(obj1.collectChannelAnalyticsMetadata(parentChannel));
-        threadSettingsDraft(setNameError[27]).track(constants.MESSAGE_SHORTCUT_ACTION_SENT, obj);
-        const obj6 = threadSettingsDraft(setNameError[27]);
+        parentChannel(outer2_2[27]).track(outer2_11.MESSAGE_SHORTCUT_ACTION_SENT, obj);
+        const obj6 = parentChannel(outer2_2[27]);
       }
       if (null != navigation) {
-        obj = { "Bool(true)": "cf5de2318a88a970dc053388278c5a16", "Bool(true)": "lt.messages.cf5de2318a88a970dc053388278c5a16.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "lg" };
+        obj = { name: "channel", key: "new-thread", params: null, merge: true };
         obj1 = {};
         ({ guild_id: obj5.guildId, id: obj5.channelId } = guild_id);
         obj1.showCreateThread = false;
         obj.params = obj1;
         navigation.navigate(obj);
-      } else if (tmp2) {
-        parentChannel(setNameError[29]).transitionToGuild(guild_id.guild_id, guild_id.id);
-        const obj3 = parentChannel(setNameError[29]);
+      } else if (closure_5) {
+        threadSettingsDraft(outer2_2[29]).transitionToGuild(guild_id.guild_id, guild_id.id);
+        const obj3 = threadSettingsDraft(outer2_2[29]);
       }
     }, items);
     obj = { parentChannel, parentMessageId: threadSettingsDraft.parentMessageId, threadSettings: threadSettingsDraft, privateThreadMode: parentChannel.privateThreadMode };
@@ -76,29 +90,30 @@ function CreateThreadViewInner(screenIndex) {
     obj.location = str;
     obj.onThreadCreated = callback;
     obj.useDefaultThreadName = true;
-    tmp4Result = parentChannel(setNameError[30])(obj);
+    const tmp4Result = parentChannel(outer1_2[30])(obj);
+    c6 = tmp4Result;
     const items1 = [setNameError, , , , ];
     ({ parentMessageId: arr2[1], name: arr2[2] } = threadSettingsDraft);
     items1[3] = tmp4Result;
     items1[4] = parentChannel;
-    return tmp2.useCallback(() => {
+    return outer1_5.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = navigation(tmp);
+      let closure_0 = outer2_3(tmp);
       return function() {
         return callback(...arguments);
       };
-    }(), items1);
-  }(obj);
-  const tmp6 = importDefault(dependencyMap[12]);
-  const tmp7 = importDefault(dependencyMap[14])();
+    })(), items1);
+  })(obj);
+  const tmp6 = parentChannel(5464);
+  const tmp7 = parentChannel(1557)();
   const ref = importAllResult.useRef(null);
   const ref1 = importAllResult.useRef(null);
-  obj = { value: tmp6(importDefault(dependencyMap[13]).CREATE_THREAD).analyticsLocations };
-  const items1 = [callback2(importDefault(dependencyMap[16]), { absolute: true }), ];
-  const obj1 = { style: items2 };
-  const items2 = [tmp.container, { marginBottom: importDefault(dependencyMap[15])({ "Bool(false)": 1766088043, "Bool(false)": 827788593 }).insets.bottom - tmp7.bottom }];
+  obj = { value: tmp6(parentChannel(5484).CREATE_THREAD).analyticsLocations };
+  let items1 = [callback2(parentChannel(4662), { absolute: true }), ];
+  let obj1 = { style: items2 };
+  items2 = [tmp.container, { marginBottom: parentChannel(5160)({ isKeyboardAwareOnAndroid: false, includeKeyboardHeight: true }).insets.bottom - tmp7.bottom }];
   const items3 = [callback2(closure_6, { style: tmp.expander }), , , , ];
-  const obj3 = { style: tmp.containerContent };
+  let obj3 = { style: tmp.containerContent };
   const obj4 = { style: tmp.options };
   const obj5 = { style: tmp.optionsInner };
   const isForumLikeChannelResult = parentChannel.isForumLikeChannel();
@@ -107,31 +122,31 @@ function CreateThreadViewInner(screenIndex) {
   const tmp12 = callback3;
   const tmp13 = callback3;
   const tmp14 = closure_6;
-  const items4 = [callback2(closure_6, { style: tmp.threadIconContainer, children: callback2(arg1(dependencyMap[17]).ThreadIcon, { size: "lg" }) }), callback2(importDefault(dependencyMap[18]), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp4[0], optional: tmp11 }), ];
+  const items4 = [callback2(closure_6, { style: tmp.threadIconContainer, children: callback2(threadSettingsDraft(4631).ThreadIcon, { size: "lg" }) }), callback2(parentChannel(15313), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp4[0], optional: tmp11 }), ];
   let tmp21 = null;
   if (!isForumLikeChannelResult) {
     tmp21 = null;
     if (null == threadSettingsDraft.parentMessageId) {
       tmp21 = null;
-      if (privateThreadMode !== arg1(dependencyMap[10]).PrivateThreadMode.Disabled) {
+      if (privateThreadMode !== threadSettingsDraft(7935).PrivateThreadMode.Disabled) {
         const obj7 = { style: tmp.optionPrivateThread };
-        const obj8 = { 400888199: null, 2091392542: null, disabled: privateThreadMode !== arg1(dependencyMap[10]).PrivateThreadMode.Enabled };
-        const intl = arg1(dependencyMap[20]).intl;
-        obj8.label = intl.string(arg1(dependencyMap[20]).t.F1zyvU);
-        const intl2 = arg1(dependencyMap[20]).intl;
-        obj8.subLabel = intl2.string(arg1(dependencyMap[20]).t.Wy5RIQ);
-        obj8.value = arg1(dependencyMap[10]).getIsPrivate(threadSettingsDraft, privateThreadMode);
+        const obj8 = { start: true, end: true, disabled: privateThreadMode !== threadSettingsDraft(7935).PrivateThreadMode.Enabled };
+        const intl = threadSettingsDraft(1212).intl;
+        obj8.label = intl.string(threadSettingsDraft(1212).t.F1zyvU);
+        const intl2 = threadSettingsDraft(1212).intl;
+        obj8.subLabel = intl2.string(threadSettingsDraft(1212).t.Wy5RIQ);
+        obj8.value = threadSettingsDraft(7935).getIsPrivate(threadSettingsDraft, privateThreadMode);
         obj8.onValueChange = function onValueChange(isPrivate) {
           const parentChannelId = threadSettingsDraft.parentChannelId;
           if (null != parentChannelId) {
-            let obj = parentChannel(closure_2[11]);
+            let obj = parentChannel(outer1_2[11]);
             obj = { isPrivate };
             obj.changeThreadSettings(parentChannelId, obj);
           }
         };
-        obj7.children = callback2(arg1(dependencyMap[19]).TableSwitchRow, obj8);
+        obj7.children = callback2(threadSettingsDraft(5504).TableSwitchRow, obj8);
         tmp21 = callback2(closure_6, obj7);
-        const obj19 = arg1(dependencyMap[10]);
+        const obj19 = threadSettingsDraft(7935);
       }
     }
   }
@@ -144,7 +159,7 @@ function CreateThreadViewInner(screenIndex) {
     const obj10 = { style: tmp.border };
     const items6 = [callback2(closure_6, obj10), ];
     const obj11 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items6[1] = callback2(arg1(dependencyMap[21]).ThreadCreationStarterMessage, obj11);
+    items6[1] = callback2(threadSettingsDraft(15315).ThreadCreationStarterMessage, obj11);
     obj9.children = items6;
     tmp24 = callback3(closure_6, obj9);
   }
@@ -156,52 +171,43 @@ function CreateThreadViewInner(screenIndex) {
   if (parentChannel.rateLimitPerUser > 0) {
     const obj12 = { style: tmp.typingWrapper };
     const obj13 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
-    obj12.children = callback2(importDefault(dependencyMap[22]), obj13);
+    obj12.children = callback2(parentChannel(11373), obj13);
     tmp32 = callback2(closure_6, obj12);
   }
   items3[2] = tmp32;
-  items3[3] = callback2(importDefault(dependencyMap[23]), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp5 });
-  items3[4] = callback2(importDefault(dependencyMap[24]), { channelId: parentChannel.id });
+  items3[3] = callback2(parentChannel(11101), { ref, channel: parentChannel, onJumpToPresent: closure_12, screenIndex: screenIndex.screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: tmp5 });
+  items3[4] = callback2(parentChannel(11674), { channelId: parentChannel.id });
   obj1.children = items3;
   items1[1] = tmp13(tmp14, obj1);
   obj.children = items1;
-  return tmp12(arg1(dependencyMap[12]).AnalyticsLocationProvider, obj);
+  return tmp12(threadSettingsDraft(5464).AnalyticsLocationProvider, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[3]);
-({ View: closure_6, ScrollView: closure_7 } = tmp2);
-const DraftType = arg1(dependencyMap[4]).DraftType;
-const SlowmodeType = arg1(dependencyMap[5]).SlowmodeType;
-({ AbortCodes: closure_10, AnalyticEvents: closure_11, NOOP: closure_12 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
-let obj1 = arg1(dependencyMap[8]);
+({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
+({ AbortCodes: closure_10, AnalyticEvents: closure_11, NOOP: closure_12 } = ME);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.container = obj;
 obj.containerContent = { flexGrow: 0 };
 obj.expander = { flex: 1 };
-obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
-obj.border = obj1;
+_createForOfIteratorHelperLoose = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, alignSelf: "stretch", marginBottom: 16 };
+obj.border = _createForOfIteratorHelperLoose;
 obj.options = { marginHorizontal: 12 };
-const tmp4 = arg1(dependencyMap[7]);
-obj.optionsInner = { paddingBottom: importDefault(dependencyMap[9]).space.PX_16 };
-const obj2 = { paddingBottom: importDefault(dependencyMap[9]).space.PX_16 };
-obj.optionPrivateThread = { paddingTop: importDefault(dependencyMap[9]).space.PX_8 };
-const obj3 = { paddingTop: importDefault(dependencyMap[9]).space.PX_8 };
-obj.threadIconContainer = { width: importDefault(dependencyMap[9]).space.PX_64, height: importDefault(dependencyMap[9]).space.PX_64, marginTop: importDefault(dependencyMap[9]).space.PX_16, marginBottom: importDefault(dependencyMap[9]).space.PX_16, borderRadius: importDefault(dependencyMap[9]).radii.xxl, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
-const obj4 = { width: importDefault(dependencyMap[9]).space.PX_64, height: importDefault(dependencyMap[9]).space.PX_64, marginTop: importDefault(dependencyMap[9]).space.PX_16, marginBottom: importDefault(dependencyMap[9]).space.PX_16, borderRadius: importDefault(dependencyMap[9]).radii.xxl, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
-obj.typingWrapper = { borderBottomWidth: tmp2.StyleSheet.hairlineWidth, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16, paddingVertical: importDefault(dependencyMap[9]).space.PX_4, justifyContent: "flex-end", flexDirection: "row", borderColor: importDefault(dependencyMap[9]).colors.CHAT_BORDER };
+obj.optionsInner = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj2 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj.optionPrivateThread = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj3 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.threadIconContainer = { width: require("_createForOfIteratorHelperLoose").space.PX_64, height: require("_createForOfIteratorHelperLoose").space.PX_64, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
+let obj4 = { width: require("_createForOfIteratorHelperLoose").space.PX_64, height: require("_createForOfIteratorHelperLoose").space.PX_64, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
+obj.typingWrapper = { borderBottomWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, justifyContent: "flex-end", flexDirection: "row", borderColor: require("_createForOfIteratorHelperLoose").colors.CHAT_BORDER };
 obj.parentMessageContainer = { marginBottom: 16 };
-let closure_15 = obj1.createStyles(obj);
-const obj5 = { borderBottomWidth: tmp2.StyleSheet.hairlineWidth, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16, paddingVertical: importDefault(dependencyMap[9]).space.PX_4, justifyContent: "flex-end", flexDirection: "row", borderColor: importDefault(dependencyMap[9]).colors.CHAT_BORDER };
+let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj5 = { borderBottomWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, justifyContent: "flex-end", flexDirection: "row", borderColor: require("_createForOfIteratorHelperLoose").colors.CHAT_BORDER };
 const memoResult = importAllResult.memo((arg0) => {
   let channelId;
   let screenIndex;
   ({ channelId, screenIndex } = arg0);
-  const tmp = importDefault(dependencyMap[25])(channelId);
+  const tmp = importDefault(10398)(channelId);
   let tmp2 = null;
   if (null != tmp) {
     const obj = { parentChannel: tmp.parentChannel, screenIndex, threadSettingsDraft: tmp.threadSettingsDraft };
@@ -209,6 +215,6 @@ const memoResult = importAllResult.memo((arg0) => {
   }
   return tmp2;
 });
-const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/threads/native/components/thread_creation/CreateThreadView.tsx");
+const result = require("result").fileFinishedImporting("modules/threads/native/components/thread_creation/CreateThreadView.tsx");
 
 export const CreateThreadView = memoResult;

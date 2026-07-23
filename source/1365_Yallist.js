@@ -1,5 +1,5 @@
 // Module ID: 1365
-// Function ID: 16362
+// Function ID: 16363
 // Name: Yallist
 // Dependencies: []
 
@@ -7,15 +7,15 @@
 class Yallist {
   constructor(arg0) {
     self = this;
-    Yallist = this;
-    if (!(this instanceof Yallist)) {
-      tmp = Yallist;
-      prototype = Yallist.prototype;
+    self = this;
+    if (!(this instanceof self)) {
+      tmp = self;
+      prototype = self.prototype;
       tmp2 = new.target;
       tmp3 = new.target;
-      tmp4 = new Yallist();
+      tmp4 = new self();
       tmp5 = tmp4;
-      Yallist = tmp4;
+      self = tmp4;
       self = tmp4;
     }
     self.tail = null;
@@ -25,7 +25,7 @@ class Yallist {
       str = "function";
       if ("function" === typeof global.forEach) {
         item = global.forEach((arg0) => {
-          tmp4.push(arg0);
+          self.push(arg0);
         });
       }
       return self;

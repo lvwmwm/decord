@@ -1,16 +1,17 @@
-// Module ID: 16071
-// Function ID: 123428
+// Module ID: 16188
+// Function ID: 125601
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 1, 0, 0]
+// Dependencies: [6, 7, 15, 17, 18, 3803, 5078, 2]
 
-// Module 16071 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import tmp2 from "__exportStarResult1";
+// Module 16188 (_isNativeReflectConstruct)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import tmp2 from "AutomaticLifecycleManager";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,9 +21,9 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_7 = false;
+let c7 = false;
 tmp2 = new tmp2();
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/UserSettingsManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/UserSettingsManager.tsx");
 
 export default tmp2;
 export const UserSettingsManager = tmp2;

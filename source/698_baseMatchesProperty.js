@@ -1,28 +1,28 @@
 // Module ID: 698
-// Function ID: 8697
+// Function ID: 8698
 // Name: baseMatchesProperty
-// Dependencies: []
+// Dependencies: [699, 700, 701, 702, 703, 742, 745]
 
 // Module 698 (baseMatchesProperty)
 
 export default function baseMatchesProperty(arg0, arg1) {
-  const require = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  if (require(dependencyMap[0])(arg0)) {
-    if (require(dependencyMap[1])(arg1)) {
-      let fn = require(dependencyMap[2])(require(dependencyMap[3])(arg0), arg1);
-      const tmp5 = require(dependencyMap[2]);
+  if (_require(699)(arg0)) {
+    if (_require(700)(arg1)) {
+      let fn = _require(701)(_require(702)(arg0), arg1);
+      const tmp5 = _require(701);
     }
     return fn;
   }
   fn = (arg0) => {
-    const tmp = arg0(arg1[4])(arg0, arg0);
+    const tmp = callback(703)(arg0, callback);
     if (undefined === tmp) {
-      if (tmp === arg1) {
-        let tmp3 = arg0(arg1[5])(arg0, arg0);
+      if (tmp === dependencyMap) {
+        let tmp3 = callback(742)(arg0, callback);
       }
       return tmp3;
     }
-    tmp3 = arg0(arg1[6])(arg1, tmp, 3);
+    tmp3 = callback(745)(dependencyMap, tmp, 3);
   };
 };

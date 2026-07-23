@@ -1,8 +1,8 @@
 // Module ID: 180
 // Function ID: 2619
 // Name: Timing
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 180 (Timing)
 
-export default importAll(dependencyMap[0]).get("Timing");
+export default require("requireModule").get("Timing");

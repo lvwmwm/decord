@@ -1,34 +1,36 @@
-// Module ID: 12229
-// Function ID: 93857
+// Module ID: 12343
+// Function ID: 96008
 // Name: ExternalLinkItem
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 4126, 1212, 7498, 5170, 12344, 3827, 2]
 // Exports: default
 
-// Module 12229 (ExternalLinkItem)
+// Module 12343 (ExternalLinkItem)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
 function ExternalLinkItem(data) {
   data = data.data;
-  const require = data.url;
+  const url = data.url;
   let tmp3 = null;
   if (data.is_localized) {
     let obj = { label: tmp, subLabel: tmp2 };
-    obj = { IconComponent: require(dependencyMap[7]).LinkExternalMediumIcon };
-    obj.trailing = callback(require(dependencyMap[6]).TableRowIcon, obj);
+    obj = { IconComponent: url(12344).LinkExternalMediumIcon };
+    obj.trailing = callback(url(5170).TableRowIcon, obj);
     obj.onPress = function onPress() {
-      callback(closure_2[8]).openURL(url);
+      outer1_1(outer1_2[8]).openURL(url);
     };
     obj.arrow = false;
     obj.accessibilityRole = "link";
-    tmp3 = callback(require(dependencyMap[5]).RowButton, obj);
+    tmp3 = callback(url(7498).RowButton, obj);
   }
   return tmp3;
 }
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = _module);
-const _module1 = require(dependencyMap[2]);
-let closure_6 = _module1.createStyles({ linksContainer: { "Bool(false)": "LIGHT", "Bool(false)": "DARK", "Bool(false)": "backgroundColor" }, headerText: { marginBottom: 8 } });
-const _module2 = require(dependencyMap[9]);
-const result = _module2.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ linksContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerText: { marginBottom: 8 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
 
 export default function ExternalLinksElement(elements) {
   elements = elements.elements;
@@ -39,13 +41,13 @@ export default function ExternalLinksElement(elements) {
         let obj = { style: tmp.linksContainer };
         let tmp5 = !elements.some((data) => data.data.is_header_hidden);
         if (tmp5) {
-          obj = { "Null": 180, "Null": 180, "Null": null, "Null": "7d7d766e7ebb30cec66584e69b89634d", style: tmp.headerText };
-          const intl = require(dependencyMap[4]).intl;
-          obj.children = intl.string(require(dependencyMap[4]).t.hvVgAZ).toUpperCase();
-          tmp5 = callback(require(dependencyMap[3]).Text, obj);
-          const str = intl.string(require(dependencyMap[4]).t.hvVgAZ);
+          obj = { style: tmp.headerText, variant: "heading-deprecated-12/extrabold", color: "text-default", accessibilityRole: "header" };
+          const intl = require(1212) /* getSystemLocale */.intl;
+          obj.children = intl.string(require(1212) /* getSystemLocale */.t.hvVgAZ).toUpperCase();
+          tmp5 = callback(require(4126) /* Text */.Text, obj);
+          const str = intl.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
         }
-        const items = [tmp5, elements.map((data) => callback(closure_7, { data: data.data }, "external-link-" + arg1))];
+        const items = [tmp5, elements.map((data) => outer1_4(outer1_7, { data: data.data }, "external-link-" + arg1))];
         obj.children = items;
         return closure_5(View, obj);
       }

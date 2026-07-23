@@ -1,37 +1,38 @@
 // Module ID: 260
 // Function ID: 3334
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162]
 
 // Module 260 (_isNativeReflectConstruct)
+import _defineProperties from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _defineProperties;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class HeadlessJsTaskError {
     constructor() {
       self = this;
-      tmp = closure_1(this, HeadlessJsTaskError);
-      obj = closure_3(HeadlessJsTaskError);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      tmp = outer1_1(this, HeadlessJsTaskError);
+      obj = outer1_3(HeadlessJsTaskError);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +41,6 @@ export default (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const callback = HeadlessJsTaskError;
-  callback2(HeadlessJsTaskError, arg0);
-  return callback(HeadlessJsTaskError);
-}(importDefault(dependencyMap[5])(Error));
+  callback(HeadlessJsTaskError, arg0);
+  return HeadlessJsTaskError(HeadlessJsTaskError);
+})(require("_wrapNativeSuper")(Error));

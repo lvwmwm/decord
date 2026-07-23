@@ -1,42 +1,44 @@
-// Module ID: 4536
-// Function ID: 39802
+// Module ID: 4540
+// Function ID: 39834
 // Name: useBackPressHandler
-// Dependencies: []
+// Dependencies: [31, 27, 477, 2]
 // Exports: default
 
-// Module 4536 (useBackPressHandler)
-let closure_2 = importAll(dependencyMap[0]);
-({ BackHandler: closure_3, NativeModules: closure_4 } = arg1(dependencyMap[1]));
-const obj = {
-  minimize() {
-    const MinimizeApp = MinimizeApp.MinimizeApp;
-    MinimizeApp.minimizeApp();
-    return true;
-  }
-};
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/routing/native/useBackPressHandler.tsx");
+// Module 4540 (useBackPressHandler)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ BackHandler: closure_3, NativeModules: closure_4 } = get_ActivityIndicator);
+const result = require("set").fileFinishedImporting("modules/routing/native/useBackPressHandler.tsx");
 
 export default function useBackPressHandler(arg0) {
   let flag = arg1;
-  const arg1 = arg0;
+  let closure_0 = arg0;
   if (arg1 === undefined) {
     flag = true;
   }
-  const dependencyMap = flag;
   let React;
   React = React.useRef(arg0);
   const layoutEffect = React.useLayoutEffect(() => {
-    closure_2.current = arg0;
+    result.current = closure_0;
   });
   const items = [flag];
   const effect = React.useEffect(() => {
     if (!obj.isIOS()) {
       if (flag) {
-        const callback = closure_3.addEventListener("hardwareBackPress", () => ref.current());
+        const callback = outer1_3.addEventListener("hardwareBackPress", () => outer1_2.current());
         return () => closure_0.remove();
       }
     }
   }, items);
 };
-export const BackPressHandler = obj;
+export const BackPressHandler = {
+  minimize() {
+    MinimizeApp = MinimizeApp.MinimizeApp;
+    MinimizeApp.minimizeApp();
+    return true;
+  }
+};

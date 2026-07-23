@@ -1,9 +1,19 @@
-// Module ID: 9131
-// Function ID: 71556
+// Module ID: 9138
+// Function ID: 71597
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5040, 1348, 4142, 44, 566, 686, 2]
 
-// Module 9131 (_isNativeReflectConstruct)
+// Module 9138 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,29 +23,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
 let closure_10 = {};
-const set = new Set();
-let tmp3 = (Store) => {
+let set = new Set();
+let tmp3 = ((Store) => {
   class ForumPostUnreadCountStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ForumPostUnreadCountStore);
-      obj = closure_5(ForumPostUnreadCountStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, ForumPostUnreadCountStore);
+      obj = outer1_5(ForumPostUnreadCountStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -44,30 +46,29 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = ForumPostUnreadCountStore;
   callback2(ForumPostUnreadCountStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8, closure_9);
+      this.waitFor(outer1_7, outer1_8, outer1_9);
     }
   };
   const items = [obj, , ];
   obj = {
     key: "getCount",
     value(arg0) {
-      return closure_10[arg0];
+      return outer1_10[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getThreadIdsMissingCounts",
     value(FRECENCY_AND_FAVORITES_SETTINGS, arr) {
-      ForumPostUnreadCountStore(closure_1[8])(closure_7.hasLoaded(FRECENCY_AND_FAVORITES_SETTINGS), "must wait for THREAD_LIST_SYNC before calling this");
+      ForumPostUnreadCountStore(outer1_1[8])(outer1_7.hasLoaded(FRECENCY_AND_FAVORITES_SETTINGS), "must wait for THREAD_LIST_SYNC before calling this");
       return arr.filter((arg0) => {
         let tmp2 = !tmp;
-        if (!(arg0 in closure_10)) {
-          tmp2 = !set.has(arg0);
+        if (!(arg0 in outer2_10)) {
+          tmp2 = !outer2_11.has(arg0);
         }
         return tmp2;
       });
@@ -75,9 +76,9 @@ let tmp3 = (Store) => {
   };
   items[2] = obj;
   return callback(ForumPostUnreadCountStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ForumPostUnreadCountStore";
-tmp3 = new tmp3(importDefault(dependencyMap[10]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let closure_10 = {};
     const set = new Set();
@@ -99,8 +100,8 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
     channelId = channelId.channelId;
     let tmp = !channelId.optimistic && !channelId.isPushNotification;
     if (tmp) {
-      if (channelId in closure_10) {
-        closure_10[channelId] = +closure_10[channelId] + 1;
+      if (channelId in table) {
+        table[channelId] = +table[channelId] + 1;
       }
       tmp = tmp3;
     }
@@ -110,7 +111,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
     threads = threads.threads;
     const item = threads.forEach((count) => {
       if (null != count.count) {
-        closure_10[count.threadId] = count.count;
+        outer1_10[count.threadId] = count.count;
       }
     });
   },
@@ -129,9 +130,9 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
   },
   REQUEST_FORUM_UNREADS: function handleRequestForumUnreads(threads) {
     threads = threads.threads;
-    const item = threads.forEach((threadId) => set.add(threadId.threadId));
+    const item = threads.forEach((threadId) => outer1_11.add(threadId.threadId));
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/ForumPostUnreadCountStore.tsx");
+let result = set.fileFinishedImporting("modules/forums/ForumPostUnreadCountStore.tsx");
 
 export default tmp3;

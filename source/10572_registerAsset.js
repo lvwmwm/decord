@@ -1,0 +1,11 @@
+// Module ID: 10572
+// Function ID: 82548
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 10572 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/application_streaming", width: 274.5, height: 110, scales: [2, 3], hash: "1116b1666a9928acf5e5ec15dec8e3d4", name: "img_stream_failed_dark", type: "png" };
+
+export default registerAsset.registerAsset(obj);

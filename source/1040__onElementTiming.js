@@ -1,29 +1,29 @@
 // Module ID: 1040
-// Function ID: 11187
+// Function ID: 11188
 // Name: _onElementTiming
-// Dependencies: []
+// Dependencies: [77, 57, 1035, 794, 1010]
 // Exports: startTrackingElementTiming
 
 // Module 1040 (_onElementTiming)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
+import _defineProperty from "_defineProperty";
+import _slicedToArray from "_slicedToArray";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 function _onElementTiming(arg0) {
   const entries = arg0.entries;
-  const activeSpan = require(dependencyMap[3]).getActiveSpan();
+  const activeSpan = transactionName(794).getActiveSpan();
   let rootSpan;
   if (activeSpan) {
-    rootSpan = require(dependencyMap[3]).getRootSpan(activeSpan);
-    const obj2 = require(dependencyMap[3]);
+    rootSpan = transactionName(794).getRootSpan(activeSpan);
+    const obj2 = transactionName(794);
   }
-  const obj3 = require(dependencyMap[3]);
+  const obj3 = transactionName(794);
   if (rootSpan) {
-    let transactionName = obj3.spanToJSON(rootSpan).description;
+    transactionName = obj3.spanToJSON(rootSpan).description;
   } else {
     const currentScope = obj3.getCurrentScope();
     transactionName = currentScope.getScopeData().transactionName;
   }
-  const require = transactionName;
   const item = entries.forEach((identifier) => {
     let loadTime;
     let name;
@@ -42,9 +42,8 @@ function _onElementTiming(arg0) {
         items2 = [tmp(tmp2[3]).timestampInSeconds(), "entry-emission"];
         const tmpResult1 = tmp(tmp2[3]);
       }
-      const tmp4 = callback2(items2, 2);
+      const tmp4 = outer1_3(items2, 2);
       const first = tmp4[0];
-      const transactionName = first;
       let num7 = 0;
       if ("image-paint" === name) {
         let num8 = 0;
@@ -55,14 +54,14 @@ function _onElementTiming(arg0) {
         if (null != loadTime) {
           num9 = loadTime;
         }
-        num7 = transactionName(num7[2]).msToSec(Math.max(0, num8 - num9));
-        const obj4 = transactionName(num7[2]);
+        num7 = transactionName(outer1_1[2]).msToSec(Math.max(0, num8 - num9));
+        const obj4 = transactionName(outer1_1[2]);
       }
       let obj = {};
-      const tmp13 = callback(obj, transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming");
+      const tmp13 = outer1_2(obj, transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming");
       const element = identifier.element;
       let str11;
-      const tmp14 = callback(callback(obj, transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming"), transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "ui.elementtiming");
+      const tmp14 = outer1_2(outer1_2(obj, transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming"), transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "ui.elementtiming");
       if (null != element) {
         if (null != element.tagName) {
           str11 = str12.toLowerCase();
@@ -72,7 +71,7 @@ function _onElementTiming(arg0) {
         str11 = "unknown";
       }
       let combined;
-      let tmp10Result = tmp10(callback(callback(callback(callback(callback(callback(obj, transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming"), transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "ui.elementtiming"), transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component"), "sentry.span_start_time_source", tmp4[1]), "sentry.transaction_name", transactionName), "element.id", identifier.id), "element.type", str11);
+      let tmp10Result = tmp10(outer1_2(outer1_2(outer1_2(outer1_2(outer1_2(outer1_2(obj, transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming"), transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "ui.elementtiming"), transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component"), "sentry.span_start_time_source", tmp4[1]), "sentry.transaction_name", first), "element.id", identifier.id), "element.type", str11);
       if (identifier.naturalWidth) {
         if (identifier.naturalHeight) {
           const _HermesInternal = HermesInternal;
@@ -80,19 +79,19 @@ function _onElementTiming(arg0) {
         }
       }
       tmp10Result = tmp10(tmp10(tmp10(tmp10Result, "element.size", combined), "element.render_time", renderTime), "element.load_time", loadTime);
-      const tmp16 = callback(callback(callback(callback(callback(callback(obj, transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming"), transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "ui.elementtiming"), transactionName(num7[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component"), "sentry.span_start_time_source", tmp4[1]), "sentry.transaction_name", transactionName), "element.id", identifier.id);
+      const tmp16 = outer1_2(outer1_2(outer1_2(outer1_2(outer1_2(outer1_2(obj, transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.browser.elementtiming"), transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "ui.elementtiming"), transactionName(outer1_1[3]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component"), "sentry.span_start_time_source", tmp4[1]), "sentry.transaction_name", first), "element.id", identifier.id);
       const tmp23 = identifier.url || undefined;
-      const tmp22Result = callback(callback(callback(obj, "element.url", identifier.url || undefined), "element.identifier", identifier.identifier), "element.paint_type", name);
+      const tmp22Result = outer1_2(outer1_2(outer1_2(obj, "element.url", identifier.url || undefined), "element.identifier", identifier.identifier), "element.paint_type", name);
       obj = {};
       const _HermesInternal2 = HermesInternal;
       obj.name = "element[" + identifier.identifier + "]";
       obj.attributes = tmp22Result;
       obj.startTime = first;
       obj.onlyIfParent = true;
-      transactionName(num7[3]).startSpan(obj, (end) => {
+      transactionName(outer1_1[3]).startSpan(obj, (end) => {
         end.end(first + num7);
       });
-      const obj6 = transactionName(num7[3]);
+      const obj6 = transactionName(outer1_1[3]);
     }
   });
 }
@@ -101,8 +100,8 @@ export { _onElementTiming };
 export const startTrackingElementTiming = function startTrackingElementTiming() {
   if (obj.getBrowserPerformanceAPI()) {
     if (obj2.browserPerformanceTimeOrigin()) {
-      let fn = require(dependencyMap[4]).addPerformanceInstrumentationHandler("element", _onElementTiming);
-      const obj3 = require(dependencyMap[4]);
+      let fn = require(1010) /* triggerHandlers */.addPerformanceInstrumentationHandler("element", _onElementTiming);
+      const obj3 = require(1010) /* triggerHandlers */;
     }
     return fn;
   }

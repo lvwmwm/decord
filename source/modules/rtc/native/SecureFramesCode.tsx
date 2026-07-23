@@ -1,17 +1,26 @@
-// Module ID: 8904
-// Function ID: 70282
+// Module ID: 8911
+// Function ID: 70323
 // Name: SecureFramesCodeGrid
-// Dependencies: []
+// Dependencies: [31, 27, 482, 33, 4130, 689, 4126, 2]
 // Exports: default
 
-// Module 8904 (SecureFramesCodeGrid)
+// Module 8911 (SecureFramesCodeGrid)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function SecureFramesCodeGrid(chunks) {
   chunks = chunks.chunks;
-  const arg1 = chunks;
   const columns = chunks.columns;
-  const dependencyMap = columns;
-  const React = callback3();
-  const items = [chunks, columns];
+  const React = _createForOfIteratorHelperLoose();
+  let items = [chunks, columns];
   const memo = React.useMemo(() => {
     const items = [];
     const rounded = Math.ceil(chunks.length / columns);
@@ -21,7 +30,7 @@ function SecureFramesCodeGrid(chunks) {
       for (let num2 = 0; num2 < columns; num2 = num2 + 1) {
         let tmp3 = columns;
         let tmp4 = chunks;
-        let arr = items1.push(chunks[num * closure_1 + num2]);
+        let arr = items1.push(chunks[num * columns + num2]);
       }
       arr = items.push(items1);
     }
@@ -31,41 +40,36 @@ function SecureFramesCodeGrid(chunks) {
     children: memo.map((arr) => {
       let obj = {};
       obj = {
-        style: closure_2.row,
+        style: result.row,
         children: arr.map((children) => {
-          const obj = { "Null": null, "Null": 1, alignItems: 1, style: codeText.codeText, children };
-          return callback2(callback(closure_1[6]).Text, obj, "" + children + "-" + arg1);
+          const obj = { style: outer1_2.codeText, variant: "text-md/normal", color: "text-default", children };
+          return outer2_5(chunks(columns[6]).Text, obj, "" + children + "-" + arg1);
         })
       };
-      const items = [callback(closure_4, obj), ];
+      const items = [outer1_5(outer1_4, obj), ];
       let tmp3 = arg1 < memo.length - 1;
       if (tmp3) {
-        obj = { style: closure_2.divider };
-        tmp3 = callback(closure_4, obj);
+        obj = { style: result.divider };
+        tmp3 = outer1_5(outer1_4, obj);
       }
       items[1] = tmp3;
       obj.children = items;
-      return closure_6(closure_4, obj, "" + arr.join(" ") + "-" + arg1);
+      return outer1_6(outer1_4, obj, "" + arr.join(" ") + "-" + arg1);
     })
   });
 }
-let closure_2 = importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { codeText: obj, row: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
-obj = { fontFamily: arg1(dependencyMap[2]).Fonts.CODE_NORMAL };
-const tmp3 = arg1(dependencyMap[3]);
-obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj1 = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.codeHeader = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg };
-const obj3 = { "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.lg, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.code = obj3;
-obj.loading = { minHeight: 126 };
-let closure_8 = obj.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/rtc/native/SecureFramesCode.tsx");
+({ ActivityIndicator: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { codeText: _createForOfIteratorHelperLoose, row: { flexDirection: "row", justifyContent: "space-around", paddingVertical: 8 } };
+_createForOfIteratorHelperLoose = { fontFamily: require("sum").Fonts.CODE_NORMAL, divider: { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE } };
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.lg, paddingVertical: 10, paddingHorizontal: 16, justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
+_createForOfIteratorHelperLoose.codeHeader = obj2;
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, paddingVertical: 8, paddingHorizontal: 16, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.code = obj3;
+_createForOfIteratorHelperLoose.loading = { minHeight: 126 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+const result = require("sum").fileFinishedImporting("modules/rtc/native/SecureFramesCode.tsx");
 
 export default function SecureFramesCode(chunks) {
   let columns;
@@ -73,22 +77,23 @@ export default function SecureFramesCode(chunks) {
   let trailing;
   chunks = chunks.chunks;
   ({ title, trailing, columns } = chunks);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   obj = { style: tmp.codeHeader };
-  const items = [callback(arg1(dependencyMap[6]).Text, { children: title }), trailing];
+  obj = { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: title };
+  const items = [callback(require(4126) /* Text */.Text, obj), trailing];
   obj.children = items;
   const items1 = [callback2(closure_4, obj), ];
-  obj = { style: tmp.code };
+  const obj1 = { style: tmp.code };
   if (null != chunks) {
-    const obj1 = { chunks, columns };
-    let tmp8 = callback(SecureFramesCodeGrid, obj1);
+    const obj2 = { chunks, columns };
+    let tmp8 = callback(SecureFramesCodeGrid, obj2);
   } else {
-    const obj2 = { style: tmp.loading };
-    tmp8 = callback(closure_3, obj2);
+    const obj3 = { style: tmp.loading };
+    tmp8 = callback(closure_3, obj3);
   }
-  obj.children = tmp8;
-  items1[1] = callback(closure_4, obj);
+  obj1.children = tmp8;
+  items1[1] = callback(closure_4, obj1);
   obj.children = items1;
   return callback2(closure_7, obj);
 };

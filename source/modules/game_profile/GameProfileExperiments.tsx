@@ -1,12 +1,13 @@
-// Module ID: 6972
-// Function ID: 55738
+// Module ID: 6977
+// Function ID: 55772
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 6972 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { MARKDOWN_SPOILER_REGEXP: true, USD: true }, variations: { [1]: { MARKDOWN_SPOILER_REGEXP: null, USD: null }, [2]: { MARKDOWN_SPOILER_REGEXP: "<string:1040334421>", USD: "<string:1040334338>" } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/game_profile/GameProfileExperiments.tsx");
+// Module 6977 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-06-game-profile-share-link", defaultConfig: { enabled: false, showSmallEmbed: false }, variations: { [1]: { enabled: true, showSmallEmbed: true }, [2]: { enabled: true, showSmallEmbed: false } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/game_profile/GameProfileExperiments.tsx");
 
 export const GameProfileShareLinkExperiment = apexExperiment;

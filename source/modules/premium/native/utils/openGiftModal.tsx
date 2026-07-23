@@ -1,17 +1,16 @@
-// Module ID: 9672
-// Function ID: 75294
+// Module ID: 9679
+// Function ID: 75335
 // Name: openGiftModal
-// Dependencies: []
+// Dependencies: [4337, 9680, 1934, 2]
 // Exports: openGiftModal
 
-// Module 9672 (openGiftModal)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/premium/native/utils/openGiftModal.tsx");
+// Module 9679 (openGiftModal)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/premium/native/utils/openGiftModal.tsx");
 
 export const openGiftModal = function openGiftModal(navigationParams) {
   let obj = Object.create(null);
   obj.navigationParams = 0;
   const merged = Object.assign(navigationParams, obj);
-  obj = importDefault(dependencyMap[0]);
-  obj.pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), merged, "gift_modal_key", navigationParams.navigationParams);
+  obj = importDefault(4337);
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(9680, dependencyMap.paths), merged, "gift_modal_key", navigationParams.navigationParams);
 };

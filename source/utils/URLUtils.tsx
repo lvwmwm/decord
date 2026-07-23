@@ -1,9 +1,12 @@
 // Module ID: 1443
-// Function ID: 16796
+// Function ID: 16797
 // Name: isOriginalContentTypeDifferent
-// Dependencies: []
+// Dependencies: [653, 1444, 1445, 1443, 1327, 22, 2]
 
 // Module 1443 (isOriginalContentTypeDifferent)
+import { Routes } from "ME";
+import set from "Url";
+
 function isOriginalContentTypeDifferent(arg0, arg1) {
   return null != arg0 && null != arg1 && arg0 !== arg1;
 }
@@ -31,14 +34,14 @@ function isDiscordProtocol(protocol) {
   }
   return tmp;
 }
-function isDiscordDirectAssetUrl(closure_0) {
-  if (null == closure_0) {
+function isDiscordDirectAssetUrl(outer1_0) {
+  if (null == outer1_0) {
     return false;
   } else {
-    const toURLSafeResult = importDefault(dependencyMap[3]).toURLSafe(closure_0);
+    const toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
     let tmp9 = null != toURLSafeResult;
     if (tmp9) {
-      let tmp3 = !require(dependencyMap[4]).isDiscordBackendDevelopment();
+      let tmp3 = !require(1327) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
       if (!tmp3) {
         let tmp4 = "localhost" !== toURLSafeResult.hostname;
         if (tmp4) {
@@ -56,20 +59,20 @@ function isDiscordDirectAssetUrl(closure_0) {
         tmp5 = isMatch;
       }
       tmp9 = tmp5;
-      const obj = require(dependencyMap[4]);
+      const obj = require(1327) /* isDiscordFrontendDevelopment */;
     }
     return tmp9;
   }
 }
-function isDiscordProxiedAssetUrl(closure_0, arg1, arg2) {
+function isDiscordProxiedAssetUrl(outer1_0, arg1, arg2) {
   if (isOriginalContentTypeDifferent(arg1, arg2)) {
-    if (null == closure_0) {
+    if (null == outer1_0) {
       return false;
     } else {
-      const url = importDefault(dependencyMap[3]).toURLSafe(closure_0);
+      const url = importDefault(1443).toURLSafe(outer1_0);
       let tmp8 = null != url;
       if (tmp8) {
-        let tmp4 = !require(dependencyMap[4]).isDiscordBackendDevelopment();
+        let tmp4 = !require(1327) /* isDiscordFrontendDevelopment */.isDiscordBackendDevelopment();
         if (!tmp4) {
           let tmp5 = "localhost" !== url.hostname;
           if (tmp5) {
@@ -85,7 +88,7 @@ function isDiscordProxiedAssetUrl(closure_0, arg1, arg2) {
           isMatch = regex3.test(url.hostname);
         }
         tmp8 = isMatch;
-        const obj = require(dependencyMap[4]);
+        const obj = require(1327) /* isDiscordFrontendDevelopment */;
       }
       return tmp8;
     }
@@ -93,11 +96,11 @@ function isDiscordProxiedAssetUrl(closure_0, arg1, arg2) {
     return false;
   }
 }
-function isAllowedGifProviderUrl(closure_0) {
-  if (null == closure_0) {
+function isAllowedGifProviderUrl(outer1_0) {
+  if (null == outer1_0) {
     return false;
   } else {
-    const toURLSafeResult = importDefault(dependencyMap[3]).toURLSafe(closure_0);
+    const toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
     let hasItem = null != toURLSafeResult;
     if (hasItem) {
       hasItem = set.has(toURLSafeResult.hostname);
@@ -110,7 +113,7 @@ function isDiscordUrl(ctaLink, flag) {
     flag = false;
   }
   if (null != ctaLink) {
-    const toURLSafeResult = importDefault(dependencyMap[3]).toURLSafe(ctaLink);
+    const toURLSafeResult = importDefault(1443).toURLSafe(ctaLink);
     let hostname;
     if (null != toURLSafeResult) {
       hostname = toURLSafeResult.hostname;
@@ -120,36 +123,34 @@ function isDiscordUrl(ctaLink, flag) {
         return true;
       }
     }
-    const obj = importDefault(dependencyMap[3]);
+    const obj = importDefault(1443);
   }
   return false;
 }
 function isDiscordUri(ctaLink) {
   let tmp = null != ctaLink;
   if (tmp) {
-    tmp = isDiscordProtocol(importAll(dependencyMap[2]).parse(ctaLink).protocol);
-    const obj = importAll(dependencyMap[2]);
+    tmp = isDiscordProtocol(importAll(1445).parse(ctaLink).protocol);
+    const obj = importAll(1445);
   }
   return tmp;
 }
-const Routes = require(dependencyMap[0]).Routes;
-let closure_5 = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i;
-let closure_6 = /^.*\.discordapp\.net$/;
-let closure_7 = /^.*\.media\.discordapp\.net$/;
-const set = new Set([true, true, true, true, true, true]);
-const regExp = new RegExp("(?:(?:(?:[a-z]+:)?//)|www\\.)(?:[^\\s:@]+(?::[^\\s@]*)?@)?(?:localhost|" + importDefault(dependencyMap[1]).v4().source + "|(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+(?:(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#][^\\s\"]*)?", "ig");
+const re5 = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i;
+const re6 = /^.*\.discordapp\.net$/;
+const re7 = /^.*\.media\.discordapp\.net$/;
+let set = new Set(["media.tenor.com", "media.tenor.co", "c.tenor.com", "static.klipy.com", "media.giphy.com", "i.giphy.com"]);
+const regExp = new RegExp("(?:(?:(?:[a-z]+:)?//)|www\\.)(?:[^\\s:@]+(?::[^\\s@]*)?@)?(?:localhost|" + require("b").v4().source + "|(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+(?:(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#][^\\s\"]*)?", "ig");
 const items = [window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST];
 const set1 = new Set(items);
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("utils/URLUtils.tsx");
+let result = set.fileFinishedImporting("utils/URLUtils.tsx");
 
 export default {
   URL_REGEX: regExp,
   makeUrl(BILLING_LOGIN_HANDOFF, arg1) {
     let result = arg1;
     if (null == arg1) {
-      result = require(dependencyMap[4]).isDiscordFrontendDevelopment();
-      const obj = require(dependencyMap[4]);
+      result = require(1327) /* isDiscordFrontendDevelopment */.isDiscordFrontendDevelopment();
+      const obj = require(1327) /* isDiscordFrontendDevelopment */;
     }
     if (result) {
       const _window = window;
@@ -180,22 +181,22 @@ export default {
     let tmp = null != src;
     if (tmp) {
       const _window = window;
-      tmp = importAll(dependencyMap[2]).parse(src).hostname === window.GLOBAL_ENV.CDN_HOST;
-      const obj = importAll(dependencyMap[2]);
+      tmp = importAll(1445).parse(src).hostname === window.GLOBAL_ENV.CDN_HOST;
+      const obj = importAll(1445);
     }
     return tmp;
   },
   isDiscordDirectAssetUrl,
   isDiscordProxiedAssetUrl,
   isAllowedGifProviderUrl,
-  isDiscordAssetUrl(closure_0) {
-    const tmp = !isDiscordDirectAssetUrl(closure_0);
+  isDiscordAssetUrl(outer1_0) {
+    const tmp = !isDiscordDirectAssetUrl(outer1_0);
     let tmp2 = !tmp;
     if (tmp) {
-      const tmp6 = !isDiscordProxiedAssetUrl(closure_0, arg1, arg2);
+      const tmp6 = !isDiscordProxiedAssetUrl(outer1_0, arg1, arg2);
       let tmp7 = !tmp6;
       if (tmp6) {
-        tmp7 = isAllowedGifProviderUrl(closure_0);
+        tmp7 = isAllowedGifProviderUrl(outer1_0);
       }
       tmp2 = tmp7;
     }
@@ -217,23 +218,23 @@ export default {
     return startsWithResult;
   },
   format(arg0) {
-    return importAll(dependencyMap[2]).format(arg0);
+    return importAll(1445).format(arg0);
   },
   formatPathWithQuery(pathname) {
-    let obj = importAll(dependencyMap[2]);
-    obj = { pathname, query: importDefault(dependencyMap[5]).pickBy(arg1) };
+    let obj = importAll(1445);
+    obj = { pathname, query: importDefault(22).pickBy(arg1) };
     return obj.format(obj);
   },
   formatSearch(arg0) {
-    let obj = importAll(dependencyMap[2]);
-    obj = { query: importDefault(dependencyMap[5]).pickBy(arg0) };
+    let obj = importAll(1445);
+    obj = { query: importDefault(22).pickBy(arg0) };
     return obj.format(obj);
   },
   safeParseWithQuery(aPIEndpoint) {
-    return importAll(dependencyMap[2]).parse(aPIEndpoint, true);
+    return importAll(1445).parse(aPIEndpoint, true);
   },
-  toURLSafe(closure_0, arg1) {
-    const uRL = new URL(closure_0, arg1);
+  toURLSafe(outer1_0, arg1) {
+    const uRL = new URL(outer1_0, arg1);
     return uRL;
   },
   safeDecodeURIComponent(hash) {

@@ -1,10 +1,25 @@
 // Module ID: 1917
-// Function ID: 21602
+// Function ID: 21603
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1918, 1909, 1194, 1348, 1910, 1838, 3746, 3, 3747, 1912, 1360, 21, 1828, 1829, 1860, 1327, 1880, 22, 3748, 566, 686, 2]
 // Exports: getUserCommunicationDisabledVersion
 
 // Module 1917 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import hasFlag from "hasFlag";
+import parseAvatarDecorationData from "parseAvatarDecorationData";
+import parseSkuIdFromServerData from "parseSkuIdFromServerData";
+import { clearCommunicationDisabledNotice as closure_8 } from "DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_13 from "_createForOfIteratorHelperLoose";
+import { GuildMemberFlags } from "GuildMemberFlags";
+import importDefaultResult from "_getPrototypeOf";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,49 +29,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +82,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,58 +108,58 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-function trackCommunicationDisabled(guildId, communicationDisabledUntil) {
-  if (null != communicationDisabledUntil.communicationDisabledUntil) {
-    if (obj2.isMemberCommunicationDisabled(communicationDisabledUntil)) {
-      const tmp2 = getCommunicationDisabledUserKey(guildId, communicationDisabledUntil.userId);
-      let result = closure_20[tmp2] !== communicationDisabledUntil.communicationDisabledUntil;
+function trackCommunicationDisabled(guildId, tmp4Result) {
+  if (null != tmp4Result.communicationDisabledUntil) {
+    if (obj2.isMemberCommunicationDisabled(tmp4Result)) {
+      const tmp2 = getCommunicationDisabledUserKey(guildId, tmp4Result.userId);
+      let result = dependencyMap2[tmp2] !== tmp4Result.communicationDisabledUntil;
       if (result) {
-        result = communicationDisabledUntil(dependencyMap[13]).isMemberCommunicationDisabled(communicationDisabledUntil);
-        const obj = communicationDisabledUntil(dependencyMap[13]);
+        result = require(3747) /* isCommunicationDisabled */.isMemberCommunicationDisabled(tmp4Result);
+        const obj = require(3747) /* isCommunicationDisabled */;
       }
       if (result) {
-        closure_20[tmp2] = communicationDisabledUntil.communicationDisabledUntil;
+        dependencyMap2[tmp2] = tmp4Result.communicationDisabledUntil;
         incrementCommunicationDisabledVersion(tmp2);
       }
     }
-    const obj2 = communicationDisabledUntil(dependencyMap[13]);
+    obj2 = require(3747) /* isCommunicationDisabled */;
   }
-  removeCommunicationDisabled(guildId, communicationDisabledUntil.userId);
+  removeCommunicationDisabled(guildId, tmp4Result.userId);
 }
 function removeCommunicationDisabled(id, userId) {
   if (null != userId) {
     const tmp7 = getCommunicationDisabledUserKey(id, userId);
-    if (null != closure_20[tmp7]) {
+    if (null != dependencyMap2[tmp7]) {
       incrementCommunicationDisabledVersion(tmp7);
     }
     _removeCommunicationDisabledFromMap(getCommunicationDisabledUserKey(id, userId));
   } else {
     for (const key10006 in closure_20) {
       let tmp14 = key10006;
-      let tmp15 = closure_37;
-      if (closure_37(key10006) !== arg0) {
+      let tmp15 = getGuildIdFromCommunicationDisabledUserKey;
+      if (getGuildIdFromCommunicationDisabledUserKey(key10006) !== arg0) {
         continue;
       } else {
-        let tmp2 = closure_33;
-        let tmp3 = closure_33(key10006);
-        let tmp4 = closure_34;
-        let tmp5 = closure_34(key10006);
-        // continue
+        let tmp2 = incrementCommunicationDisabledVersion;
+        let tmp3 = incrementCommunicationDisabledVersion(key10006);
+        let tmp4 = _removeCommunicationDisabledFromMap;
+        let tmp5 = _removeCommunicationDisabledFromMap(key10006);
+        continue;
       }
       continue;
     }
   }
 }
-function incrementCommunicationDisabledVersion(arg0) {
-  const sum = closure_22 + 1;
-  closure_22 = sum;
-  closure_24[arg0] = sum;
+function incrementCommunicationDisabledVersion(key10006) {
+  const sum = c22 + 1;
+  c22 = sum;
+  closure_24[key10006] = sum;
 }
 function _removeCommunicationDisabledFromMap(communicationDisabledUserKey) {
-  if (tmp === store2.getId()) {
+  if (tmp3 === store2.getId()) {
     callback3(getGuildIdFromCommunicationDisabledUserKey(communicationDisabledUserKey));
   }
-  delete r1[r2];
+  delete tmp[tmp2];
 }
 function getCommunicationDisabledUserKey(guildId, userId) {
   const items = [];
@@ -153,15 +168,15 @@ function getCommunicationDisabledUserKey(guildId, userId) {
   return items.join("-");
 }
 function getUserIdFromCommunicationDisabledUserKey(communicationDisabledUserKey) {
-  return communicationDisabledUserKey.split("-")[closure_27.USER];
+  return communicationDisabledUserKey.split("-")[constants.USER];
 }
-function getGuildIdFromCommunicationDisabledUserKey(communicationDisabledUserKey) {
-  return communicationDisabledUserKey.split("-")[closure_27.GUILD];
+function getGuildIdFromCommunicationDisabledUserKey(key10006) {
+  return key10006.split("-")[constants.GUILD];
 }
 function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let iter;
   if (0 === roles.length) {
-    let obj = { useState: "o", hasDiversityParent: "o", colorRoleId: undefined, hoistRoleId: undefined, iconRoleId: undefined, highestRoleId: undefined };
+    let obj = { colorString: null, colorStrings: null, colorRoleId: undefined, hoistRoleId: undefined, iconRoleId: undefined, highestRoleId: undefined };
     return obj;
   } else {
     const tmp40 = _createForOfIteratorHelperLoose(roles);
@@ -181,9 +196,9 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
         if (null != tmp) {
           let doesRoleSortHigherResult = null == tmp26;
           if (!doesRoleSortHigherResult) {
-            let tmp6 = closure_0;
-            let tmp7 = closure_2;
-            obj = closure_0(closure_2[14]);
+            let tmp6 = require;
+            let tmp7 = dependencyMap;
+            obj = require(1912) /* _createForOfIteratorHelperLoose */;
             doesRoleSortHigherResult = obj.doesRoleSortHigher(tmp, tmp26);
           }
           let tmp9 = tmp26;
@@ -194,9 +209,9 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
           if (tmp10) {
             let doesRoleSortHigherResult1 = null == tmp23;
             if (!doesRoleSortHigherResult1) {
-              let tmp12 = closure_0;
-              let tmp13 = closure_2;
-              let obj2 = closure_0(closure_2[14]);
+              let tmp12 = require;
+              let tmp13 = dependencyMap;
+              let obj2 = require(1912) /* _createForOfIteratorHelperLoose */;
               doesRoleSortHigherResult1 = obj2.doesRoleSortHigher(tmp, tmp23);
             }
             tmp10 = doesRoleSortHigherResult1;
@@ -209,9 +224,9 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
           if (hoist) {
             let doesRoleSortHigherResult2 = null == tmp24;
             if (!doesRoleSortHigherResult2) {
-              let tmp16 = closure_0;
-              let tmp17 = closure_2;
-              let obj3 = closure_0(closure_2[14]);
+              let tmp16 = require;
+              let tmp17 = dependencyMap;
+              let obj3 = require(1912) /* _createForOfIteratorHelperLoose */;
               doesRoleSortHigherResult2 = obj3.doesRoleSortHigher(tmp, tmp24);
             }
             hoist = doesRoleSortHigherResult2;
@@ -224,9 +239,9 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
           if (tmp19) {
             let doesRoleSortHigherResult3 = null == tmp25;
             if (!doesRoleSortHigherResult3) {
-              let tmp21 = closure_0;
-              let tmp22 = closure_2;
-              let obj4 = closure_0(closure_2[14]);
+              let tmp21 = require;
+              let tmp22 = dependencyMap;
+              let obj4 = require(1912) /* _createForOfIteratorHelperLoose */;
               doesRoleSortHigherResult3 = obj4.doesRoleSortHigher(tmp, tmp25);
             }
             tmp19 = doesRoleSortHigherResult3;
@@ -243,10 +258,10 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
           }
         }
         iter = tmp40();
-        let tmp23 = tmp2;
-        let tmp24 = tmp3;
-        let tmp25 = tmp4;
-        let tmp26 = tmp5;
+        tmp23 = tmp2;
+        tmp24 = tmp3;
+        tmp25 = tmp4;
+        tmp26 = tmp5;
         iter2 = iter;
         tmp27 = tmp2;
         tmp28 = tmp3;
@@ -314,8 +329,8 @@ function createMember(guildRoles) {
   let userId;
   ({ userId, guildId, roles } = guildRoles);
   ({ nick, avatar, avatarDecoration, premiumSince, isPending, joinedAt, communicationDisabledUntil, unusualDMActivityUntil, fullProfileLoadedTimestamp, flags, collectibles, displayNameStyles } = guildRoles);
-  const tmp = computeDerivedMemberState(guildRoles.guildRoles, roles);
-  let obj = { userId, nick, guildId, avatar, avatarDecoration, roles, colorString: tmp.colorString, colorStrings: tmp.colorStrings, colorRoleId: tmp.colorRoleId, iconRoleId: tmp.iconRoleId, hoistRoleId: tmp.hoistRoleId, highestRoleId: tmp.highestRoleId, premiumSince, isPending, joinedAt, communicationDisabledUntil, unusualDMActivityUntil, fullProfileLoadedTimestamp, flags, collectibles, displayNameStyles };
+  const tmp3 = computeDerivedMemberState(guildRoles.guildRoles, roles);
+  let obj = { userId, nick, guildId, avatar, avatarDecoration, roles, colorString: tmp3.colorString, colorStrings: tmp3.colorStrings, colorRoleId: tmp3.colorRoleId, iconRoleId: tmp3.iconRoleId, hoistRoleId: tmp3.hoistRoleId, highestRoleId: tmp3.highestRoleId, premiumSince, isPending, joinedAt, communicationDisabledUntil, unusualDMActivityUntil, fullProfileLoadedTimestamp, flags, collectibles, displayNameStyles };
   const flags2 = obj.flags;
   let num = 0;
   if (null != flags2) {
@@ -327,17 +342,17 @@ function createMember(guildRoles) {
     if (null != flags3) {
       num2 = flags3;
     }
-    obj.flags = arg1(dependencyMap[15]).addFlag(num2, GuildMemberFlags.BYPASSES_VERIFICATION);
-    const obj3 = arg1(dependencyMap[15]);
+    obj.flags = require(1360) /* hasFlag */.addFlag(num2, GuildMemberFlags.BYPASSES_VERIFICATION);
+    const obj3 = require(1360) /* hasFlag */;
   }
-  if (null == closure_16[guildId]) {
+  if (null == dependencyMap[guildId]) {
     return obj;
   } else {
     if (userId === store2.getId()) {
       if (!store.isViewingRoles(guildId)) {
         if (!store.isFullServerPreview(guildId)) {
-          if (null != closure_18[guildId]) {
-            delete r1[r3];
+          if (null != table[guildId]) {
+            delete tmp[tmp2];
           }
         }
       }
@@ -346,18 +361,18 @@ function createMember(guildRoles) {
       const merged = Object.assign(obj);
       const merged1 = Object.assign(store.getMemberOptions(guildId));
       if (null != viewingRoles) {
-        let keys = importDefault(dependencyMap[16]).keys(viewingRoles);
-        const obj5 = importDefault(dependencyMap[16]);
+        let keys = importDefault(21).keys(viewingRoles);
+        const obj5 = importDefault(21);
       } else {
         keys = [];
       }
       obj["roles"] = keys;
-      closure_18[guildId] = obj;
-      const tmp10 = closure_18;
+      table[guildId] = obj;
+      const tmp12 = table;
     }
     return obj;
   }
-  const obj2 = arg1(dependencyMap[15]);
+  obj2 = require(1360) /* hasFlag */;
 }
 function handleCachedGuilds(guilds) {
   let iter3;
@@ -369,9 +384,9 @@ function handleCachedGuilds(guilds) {
       let value = iter2.value;
       let tmp3 = tmp2;
       if (null != value.member) {
-        let tmp11 = closure_19;
-        let tmp12 = closure_19;
-        if (null == closure_19[value.id]) {
+        let tmp11 = table2;
+        let tmp12 = table2;
+        if (null == table2[value.id]) {
           let member = value.member;
         } else {
           member = {};
@@ -380,11 +395,11 @@ function handleCachedGuilds(guilds) {
           member["roles"] = value.member.roles;
         }
         tmp12[value.id] = member;
-        let tmp6 = closure_16;
+        let tmp6 = dependencyMap;
         tmp3 = tmp2;
-        if (null != closure_16[value.id]) {
-          let tmp7 = closure_16;
-          let tmp8 = closure_16[value.id];
+        if (null != dependencyMap[value.id]) {
+          let tmp7 = dependencyMap;
+          let tmp8 = dependencyMap[value.id];
           tmp3 = tmp8;
           if (null != tmp8[value.member.userId]) {
             let obj = {};
@@ -397,7 +412,7 @@ function handleCachedGuilds(guilds) {
         }
       }
       iter3 = tmp();
-      let tmp2 = tmp3;
+      tmp2 = tmp3;
       iter2 = iter3;
     } while (!iter3.done);
   }
@@ -406,7 +421,7 @@ function handleGuildMemberUpdate(arg0) {
   let guildId;
   let user;
   ({ guildId, user } = arg0);
-  if (null == closure_16[guildId]) {
+  if (null == dependencyMap[guildId]) {
     return false;
   } else {
     const guild = store5.getGuild(guildId);
@@ -415,7 +430,7 @@ function handleGuildMemberUpdate(arg0) {
       importDefaultResult.warn("Guild " + guildId + " not found during GUILD_MEMBER_UPDATE.");
       return false;
     } else {
-      const obj = { userId: user.id, nick: tmp, guildId, avatar: tmp2, avatarDecoration: arg1(dependencyMap[17]).parseAvatarDecorationData(tmp3), guildRoles: store4.getUnsafeMutableRoles(guild.id), roles: tmp4, premiumSince: tmp5, isPending: tmp6, joinedAt: tmp7, communicationDisabledUntil: tmp8, unusualDMActivityUntil: tmp9 };
+      const obj = { userId: user.id, nick: tmp, guildId, avatar: tmp2, avatarDecoration: require(1828) /* parseAvatarDecorationData */.parseAvatarDecorationData(tmp3), guildRoles: store4.getUnsafeMutableRoles(guild.id), roles: tmp4, premiumSince: tmp5, isPending: tmp6, joinedAt: tmp7, communicationDisabledUntil: tmp8, unusualDMActivityUntil: tmp9 };
       let prop;
       if (null != tmp13[user.id]) {
         prop = tmp26.fullProfileLoadedTimestamp;
@@ -429,21 +444,20 @@ function handleGuildMemberUpdate(arg0) {
     }
   }
 }
-function batchUpdateGuildMembers(guildId, mapped) {
-  mapped = guildId;
+function batchUpdateGuildMembers(guildId, members) {
+  let closure_0 = guildId;
   const importDefault = tmp;
-  if (null == closure_16[guildId]) {
+  if (null == dependencyMap[guildId]) {
     return false;
   } else {
     const guild = store5.getGuild(guildId);
-    const dependencyMap = guild;
     if (null == guild) {
       const _HermesInternal = HermesInternal;
       importDefaultResult.warn("Guild " + guildId + " not found during batchUpdateGuildMembers.");
       let flag = false;
     } else {
-      const item = mapped.forEach((user) => {
-        const obj = { userId: user.user.id, nick: user.nick, guildId: user, avatar: user.avatar, avatarDecoration: callback2(user), guildRoles: unsafeMutableRoles.getUnsafeMutableRoles(guild.id), roles: user.roles, premiumSince: user.premium_since, isPending: user.pending, joinedAt: user.joined_at, communicationDisabledUntil: user.communication_disabled_until, flags: user.flags };
+      const item = members.forEach((user) => {
+        const obj = { userId: user.user.id, nick: user.nick, guildId, avatar: user.avatar, avatarDecoration: outer1_42(user), guildRoles: outer1_12.getUnsafeMutableRoles(guild.id), roles: user.roles, premiumSince: user.premium_since, isPending: user.pending, joinedAt: user.joined_at, communicationDisabledUntil: user.communication_disabled_until, flags: user.flags };
         let prop;
         if (null != tmp[user.user.id]) {
           prop = tmp2.fullProfileLoadedTimestamp;
@@ -458,12 +472,12 @@ function batchUpdateGuildMembers(guildId, mapped) {
           unusual_dm_activity_until = prop1;
         }
         obj.unusualDMActivityUntil = unusual_dm_activity_until;
-        obj.collectibles = user(guild[18]).parseServerUserCollectibles(user.collectibles);
-        const obj2 = user(guild[18]);
-        const tmp3 = closure_39;
-        obj.displayNameStyles = user(guild[19]).parseServerDisplayNameStyles(user.display_name_styles);
+        obj.collectibles = guildId(guild[18]).parseServerUserCollectibles(user.collectibles);
+        const obj2 = guildId(guild[18]);
+        const tmp3 = outer1_39;
+        obj.displayNameStyles = guildId(guild[19]).parseServerDisplayNameStyles(user.display_name_styles);
         tmp[user.user.id] = tmp3(obj);
-        callback(user, tmp[user.user.id]);
+        outer1_31(guildId, tmp[user.user.id]);
       });
       closure_23 = closure_23 + 1;
       flag = true;
@@ -472,12 +486,12 @@ function batchUpdateGuildMembers(guildId, mapped) {
   }
 }
 function getAvatarDecorationFromServerMember(guildMember) {
-  return arg1(dependencyMap[17]).parseAvatarDecorationData(guildMember.avatar_decoration_data);
+  return require(1828) /* parseAvatarDecorationData */.parseAvatarDecorationData(guildMember.avatar_decoration_data);
 }
 function _removeMemberFromGuild(guildId, id) {
-  if (null != closure_16[guildId]) {
-    if (null != tmp[id]) {
-      delete r0[r3];
+  if (null != dependencyMap[guildId]) {
+    if (null != tmp3[id]) {
+      delete tmp[tmp2];
       removeCommunicationDisabled(guildId, id);
       closure_23 = closure_23 + 1;
     }
@@ -486,7 +500,7 @@ function _removeMemberFromGuild(guildId, id) {
 }
 function buildMembersFromActivityParticipants(embeddedActivityLocationGuildId, participants) {
   const obj = { id: embeddedActivityLocationGuildId };
-  const found = participants.filter(importDefault(dependencyMap[21]));
+  const found = participants.filter(importDefault(1880));
   obj.members = found.map((member) => member.member);
   return buildMembers(obj);
 }
@@ -494,8 +508,8 @@ function buildMembers(guild) {
   let iter;
   let unusual_dm_activity_until;
   const id = guild.id;
-  if (!(id in closure_16)) {
-    closure_16[guild.id] = {};
+  if (!(id in dependencyMap)) {
+    dependencyMap[guild.id] = {};
   }
   guild = store5.getGuild(id);
   if (null == guild) {
@@ -509,11 +523,11 @@ function buildMembers(guild) {
         let id2 = value.user.id;
         let tmp3 = tmp15[id2];
         let obj = { userId: id2, nick: value.nick, guildId: guild.id, avatar: value.avatar };
-        let tmp5 = closure_42;
-        let tmp4 = closure_39;
-        obj.avatarDecoration = closure_42(value);
-        let tmp6 = closure_12;
-        obj.guildRoles = closure_12.getUnsafeMutableRoles(guild.id);
+        let tmp5 = getAvatarDecorationFromServerMember;
+        let tmp4 = createMember;
+        obj.avatarDecoration = getAvatarDecorationFromServerMember(value);
+        let tmp6 = store4;
+        obj.guildRoles = store4.getUnsafeMutableRoles(guild.id);
         ({ roles: obj.roles, premium_since: obj.premiumSince, pending: obj.isPending, joined_at: obj.joinedAt, communication_disabled_until: obj.communicationDisabledUntil } = value);
         let prop;
         if (null != tmp3) {
@@ -529,16 +543,16 @@ function buildMembers(guild) {
           unusual_dm_activity_until = prop1;
         }
         obj.unusualDMActivityUntil = unusual_dm_activity_until;
-        let tmp9 = closure_0;
-        let tmp10 = closure_2;
-        let obj2 = closure_0(closure_2[18]);
+        let tmp9 = require;
+        let tmp10 = dependencyMap;
+        let obj2 = require(1829) /* parseSkuIdFromServerData */;
         obj.collectibles = obj2.parseServerUserCollectibles(value.collectibles);
-        let obj3 = closure_0(closure_2[19]);
+        let obj3 = require(1860) /* wrapHue */;
         obj.displayNameStyles = obj3.parseServerDisplayNameStyles(value.display_name_styles);
         let tmp4Result = tmp4(obj);
         tmp15[id2] = tmp4Result;
-        let tmp12 = closure_31;
-        let tmp13 = closure_31(id, tmp4Result);
+        let tmp12 = trackCommunicationDisabled;
+        let tmp13 = trackCommunicationDisabled(id, tmp4Result);
         iter = tmp17();
         iter2 = iter;
       } while (!iter.done);
@@ -547,8 +561,8 @@ function buildMembers(guild) {
   }
 }
 function handleGuildRoleUpdateOrDelete(guildId) {
-  const arg1 = guildId;
-  if (null == closure_16[guildId.guildId]) {
+  let closure_0 = guildId;
+  if (null == dependencyMap[guildId.guildId]) {
     return false;
   } else {
     const guild = store5.getGuild(guildId.guildId);
@@ -558,7 +572,7 @@ function handleGuildRoleUpdateOrDelete(guildId) {
       return false;
     } else {
       const id = store2.getId();
-      const tmp18 = _createForOfIteratorHelperLoose(importDefault(dependencyMap[16]).keys(tmp));
+      const tmp18 = _createForOfIteratorHelperLoose(importDefault(21).keys(tmp));
       let iter2 = tmp18();
       if (!iter2.done) {
         while (true) {
@@ -574,7 +588,7 @@ function handleGuildRoleUpdateOrDelete(guildId) {
           if (value === id) {
             if ("GUILD_ROLE_DELETE" === guildId.type) {
               let roles = tmp2.roles;
-              roles = roles.filter((arg0) => arg0 !== arg0.roleId);
+              roles = roles.filter((arg0) => arg0 !== guildId.roleId);
               let obj = { userId: value, nick: tmp2.nick, guildId: guildId.guildId };
               ({ avatar: obj.avatar, avatarDecoration: obj.avatarDecoration } = tmp2);
               let tmp4 = store4;
@@ -601,7 +615,7 @@ function handleGuildRoleUpdateOrDelete(guildId) {
 }
 function handleImpersonateUpdate(guildId) {
   guildId = guildId.guildId;
-  if (null == closure_16[guildId]) {
+  if (null == dependencyMap[guildId]) {
     return false;
   } else {
     const guild = store5.getGuild(guildId);
@@ -620,14 +634,14 @@ function handleImpersonateUpdate(guildId) {
   }
 }
 function processResolvedMembers(resolved, id) {
-  id = resolved;
+  let closure_0 = resolved;
   let members;
   if (null != resolved) {
     members = resolved.members;
   }
   let tmp2 = null != members && null != id;
   if (tmp2) {
-    const obj = { id };
+    let obj = { id };
     const _Object = Object;
     const entries = Object.entries(resolved.members);
     const mapped = entries.map((arg0) => {
@@ -635,8 +649,8 @@ function processResolvedMembers(resolved, id) {
       let tmp2;
       [tmp, tmp2] = arg0;
       let tmp3;
-      if (null != arg0) {
-        const users = arg0.users;
+      if (null != users) {
+        users = users.users;
         if (null != users) {
           tmp3 = users[tmp];
         }
@@ -654,8 +668,8 @@ function processResolvedMembers(resolved, id) {
   return tmp2;
 }
 function processMessageResolvedMembers(message, guildId) {
-  guildId = message;
-  let closure_1 = false;
+  let closure_0 = message;
+  let c1 = false;
   const message_snapshots = message.message_snapshots;
   if (null != message_snapshots) {
     const item = message_snapshots.forEach((message) => {
@@ -669,12 +683,12 @@ function processMessageResolvedMembers(message, guildId) {
       if (null != message_reference) {
         guild_id = message_reference.guild_id;
       }
-      if (closure_46(resolved, guild_id)) {
-        let closure_1 = true;
+      if (outer1_46(resolved, guild_id)) {
+        let c1 = true;
       }
     });
   }
-  return processResolvedMembers(message.resolved, guildId) || closure_1;
+  return processResolvedMembers(message.resolved, guildId) || c1;
 }
 function handleIncomingMessage(message) {
   return processMessageResolvedMembers(message.message, message.guildId);
@@ -690,62 +704,48 @@ function mergeMessageResolvedMembers(channel_id) {
 function handleLoadMessages(messages) {
   messages = messages.messages;
   const item = messages.forEach((arg0) => {
-    callback(arg0);
+    outer1_48(arg0);
   });
 }
 function handleLoadSearchResults(data) {
   data = data.data;
   const items = [];
-  const arg1 = items;
-  const item = data.forEach((messages) => {
+  let item = data.forEach((messages) => {
     messages = messages.messages;
-    const item = messages.forEach((arr) => {
+    let item = messages.forEach((arr) => {
       const item = arr.forEach((arg0) => {
-
+        outer2_0.push(arg0);
       });
     });
   });
   handleLoadMessages({ messages: items });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).clearCommunicationDisabledNotice;
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const GuildMemberFlags = arg1(dependencyMap[11]).GuildMemberFlags;
-let importDefaultResult = importDefault(dependencyMap[12]);
 importDefaultResult = new importDefaultResult("GuildMemberStore");
 let closure_16 = {};
 let closure_17 = {};
 let closure_18 = {};
 let closure_19 = {};
 let closure_20 = {};
-let closure_21 = false;
-let closure_22 = 0;
-let closure_23 = 0;
+let c21 = false;
+let c22 = 0;
+let c23 = 0;
 let closure_24 = {};
 let closure_25 = {};
 let closure_26 = { added: [], removed: [] };
 let closure_27 = { GUILD: 0, [0]: "GUILD", USER: 1, [1]: "USER" };
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class GuildMemberStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, GuildMemberStore);
-      obj = closure_6(GuildMemberStore);
-      tmp2 = closure_5;
-      if (closure_28()) {
+      tmp = outer1_3(this, GuildMemberStore);
+      obj = outer1_6(GuildMemberStore);
+      tmp2 = outer1_5;
+      if (outer1_28()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -754,33 +754,32 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildMemberStore;
   callback2(GuildMemberStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10, closure_11, closure_12, closure_13, closure_9);
+      this.waitFor(outer1_10, outer1_11, outer1_12, outer1_13, outer1_9);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getMutableAllGuildsAndMembers",
     value() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[1] = obj;
   obj = {
     key: "memberOf",
     value(arg0) {
-      const GuildMemberStore = arg0;
-      const obj = callback(closure_2[22])(closure_16);
-      const found = callback(closure_2[22])(closure_16).toPairs().filter((arg0) => {
+      let closure_0 = arg0;
+      const obj = outer1_1(outer1_2[22])(outer1_16);
+      const found = outer1_1(outer1_2[22])(outer1_16).toPairs().filter((arg0) => {
         let tmp;
         [, tmp] = arg0;
         return null != tmp[closure_0];
       });
-      const toPairsResult = callback(closure_2[22])(closure_16).toPairs();
+      const toPairsResult = outer1_1(outer1_2[22])(outer1_16).toPairs();
       return found.map((arg0) => {
         let tmp;
         [tmp] = arg0;
@@ -793,10 +792,10 @@ let tmp4 = (Store) => {
     key: "getNicknameGuildsMapping",
     value(arg0) {
       const obj = {};
-      for (const key10006 in closure_16) {
+      for (const key10006 in outer1_16) {
         let tmp3 = key10006;
-        let tmp4 = closure_16;
-        let tmp5 = closure_16[key10006][arg0];
+        let tmp4 = outer1_16;
+        let tmp5 = outer1_16[key10006][arg0];
         let nick;
         if (null != tmp5) {
           nick = tmp5.nick;
@@ -810,7 +809,7 @@ let tmp4 = (Store) => {
           }
           let arr = obj[nick];
           arr = arr.push(key10006);
-          // continue
+          continue;
         }
         continue;
       }
@@ -828,7 +827,7 @@ let tmp4 = (Store) => {
     value(arg0, arg1) {
       if (null != arg0) {
         if (null != arg1) {
-          return null != closure_16[arg0] && null != closure_16[arg0][arg1];
+          return null != outer1_16[arg0] && null != outer1_16[arg0][arg1];
         }
       }
       return false;
@@ -859,14 +858,14 @@ let tmp4 = (Store) => {
       if (null == arg0) {
         return false;
       } else {
-        const id = store.getId();
-        if (null != closure_16[arg0]) {
+        const id = outer1_10.getId();
+        if (null != outer1_16[arg0]) {
           if (null != tmp4[id]) {
             const flags = tmp4[id].flags;
             let hasFlagResult = null != flags;
             if (hasFlagResult) {
-              hasFlagResult = GuildMemberStore(closure_2[15]).hasFlag(flags, constants.IS_GUEST);
-              const obj = GuildMemberStore(closure_2[15]);
+              hasFlagResult = GuildMemberStore(outer1_2[15]).hasFlag(flags, outer1_14.IS_GUEST);
+              const obj = GuildMemberStore(outer1_2[15]);
             }
             return hasFlagResult;
           }
@@ -881,11 +880,11 @@ let tmp4 = (Store) => {
       if (null == arg0) {
         return [];
       } else {
-        if (null == closure_16[arg0]) {
+        if (null == outer1_16[arg0]) {
           let items = [];
         } else {
-          items = callback(closure_2[16]).keys(tmp2);
-          const obj = callback(closure_2[16]);
+          items = outer1_1(outer1_2[16]).keys(tmp2);
+          const obj = outer1_1(outer1_2[16]);
         }
         return items;
       }
@@ -897,7 +896,7 @@ let tmp4 = (Store) => {
       if (null == arg0) {
         return [];
       } else {
-        if (null == closure_16[arg0]) {
+        if (null == outer1_16[arg0]) {
           let items = [];
         } else {
           const _Object = Object;
@@ -911,7 +910,7 @@ let tmp4 = (Store) => {
     key: "getTrueMember",
     value(arg0, arg1) {
       let tmp2 = null;
-      if (null != closure_16[arg0]) {
+      if (null != outer1_16[arg0]) {
         tmp2 = tmp[arg1];
       }
       return tmp2;
@@ -924,10 +923,10 @@ let tmp4 = (Store) => {
       let tmp2 = trueMember;
       if (null != trueMember) {
         tmp2 = trueMember;
-        if (arg1 === store.getId()) {
-          if (closure_9.isViewingRoles(arg0)) {
+        if (arg1 === outer1_10.getId()) {
+          if (outer1_9.isViewingRoles(arg0)) {
             tmp2 = trueMember;
-            if (null != closure_18[arg0]) {
+            if (null != outer1_18[arg0]) {
               tmp2 = tmp7;
             }
           } else {
@@ -941,14 +940,14 @@ let tmp4 = (Store) => {
   items[12] = {
     key: "getSelfMember",
     value(guildId) {
-      return this.getMember(guildId, store.getId());
+      return this.getMember(guildId, outer1_10.getId());
     }
   };
   items[13] = {
     key: "getSelfMemberJoinedAt",
     value(arg0) {
       const self = this;
-      if (null != closure_17[arg0]) {
+      if (null != outer1_17[arg0]) {
         return tmp;
       } else {
         const selfMember = self.getSelfMember(arg0);
@@ -956,7 +955,7 @@ let tmp4 = (Store) => {
           if (null != selfMember.joinedAt) {
             const _Date = Date;
             const date = new Date(selfMember.joinedAt);
-            closure_17[arg0] = date;
+            outer1_17[arg0] = date;
             return date;
           }
         }
@@ -968,7 +967,7 @@ let tmp4 = (Store) => {
     key: "getCachedSelfMember",
     value(arg0) {
       let tmp2 = null;
-      if (null != closure_19[arg0]) {
+      if (null != outer1_19[arg0]) {
         tmp2 = tmp;
       }
       return tmp2;
@@ -994,21 +993,21 @@ let tmp4 = (Store) => {
   items[16] = {
     key: "getCommunicationDisabledUserMap",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[17] = {
     key: "getCommunicationDisabledVersion",
     value() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[18] = {
     key: "getPendingRoleUpdates",
     value(arg0) {
-      let tmp = closure_25[arg0];
+      let tmp = outer1_25[arg0];
       if (null == tmp) {
-        tmp = closure_26;
+        tmp = outer1_26;
       }
       return tmp;
     }
@@ -1025,10 +1024,10 @@ let tmp4 = (Store) => {
         roles = [];
       }
       let differenceResult = roles;
-      if (null != closure_25[guildId]) {
-        const obj = callback(closure_2[22]);
-        differenceResult = obj.difference(callback(closure_2[22]).union(roles, tmp2.added), tmp2.removed);
-        const obj2 = callback(closure_2[22]);
+      if (null != outer1_25[guildId]) {
+        const obj = outer1_1(outer1_2[22]);
+        differenceResult = obj.difference(outer1_1(outer1_2[22]).union(roles, tmp2.added), tmp2.removed);
+        const obj2 = outer1_1(outer1_2[22]);
       }
       return differenceResult;
     }
@@ -1036,50 +1035,50 @@ let tmp4 = (Store) => {
   items[20] = {
     key: "getMemberVersion",
     value() {
-      return closure_23;
+      return outer1_23;
     }
   };
   return callback(GuildMemberStore, items);
-}(importDefault(dependencyMap[24]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "GuildMemberStore";
-tmp4 = new tmp4(importDefault(dependencyMap[25]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
-    if (closure_21) {
-      closure_21 = false;
+    if (c21) {
+      c21 = false;
     } else {
       let closure_16 = {};
       let closure_17 = {};
     }
     let closure_20 = {};
-    function mergeGuildMembers(guilds) {
+    (function mergeGuildMembers(guilds) {
       guilds = guilds.guilds;
       const item = guilds.forEach((arg0) => {
-        callback(arg0);
+        outer2_45(arg0);
       });
-    }(guilds);
+    })(guilds);
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function handleConnectionOpenSupplemental(guilds) {
     guilds = guilds.guilds;
-    const item = guilds.forEach((id) => {
+    let item = guilds.forEach((id) => {
       id = id.id;
-      callback({ id, members: id.members });
+      outer1_45({ id, members: id.members });
       const activity_instances = id.activity_instances;
       if (null != activity_instances) {
         const item = activity_instances.forEach((participants) => {
-          callback(id, participants.participants);
+          outer2_44(id, participants.participants);
         });
       }
     });
   },
   OVERLAY_INITIALIZE: function handleInitialize(guildMembers) {
+    const obj = {};
     const merged = Object.assign(guildMembers.guildMembers);
-    let closure_16 = {};
     let closure_17 = {};
   },
   CACHE_LOADED: function handleCacheLoaded(guildMembers) {
-    let closure_21 = true;
+    let c21 = true;
+    const obj = {};
     const merged = Object.assign(guildMembers.guildMembers);
-    let closure_16 = {};
     let closure_17 = {};
     let closure_19 = {};
     handleCachedGuilds(guildMembers.guilds);
@@ -1091,8 +1090,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     return buildMembers(guild.guild);
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    delete r3[r2];
-    delete r3[r2];
+    delete tmp2[tmp];
+    delete tmp2[tmp];
     removeCommunicationDisabled(guild.guild.id);
   },
   GUILD_MEMBER_ADD: handleGuildMemberUpdate,
@@ -1106,7 +1105,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     ({ guildId, roles, addedRoleIds, removedRoleIds, flags } = arg0);
     const id = store2.getId();
     let tmp3 = null;
-    if (null != closure_16[guildId]) {
+    if (null != dependencyMap[guildId]) {
       tmp3 = tmp2[id];
     }
     if (null == tmp3) {
@@ -1116,34 +1115,34 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
       if (null == guild) {
         return false;
       } else {
-        let obj = closure_25[guildId];
+        let obj = table4[guildId];
         if (null == obj) {
           obj = {};
         }
         obj = {};
-        const obj3 = importDefault(dependencyMap[22]);
-        const tmp4 = closure_25;
+        const obj3 = importDefault(22);
+        const tmp4 = table4;
         let added = obj.added;
         if (null == added) {
           added = [];
         }
         let items = removedRoleIds;
-        const obj4 = importDefault(dependencyMap[22]);
+        const obj4 = importDefault(22);
         if (null == removedRoleIds) {
           items = [];
         }
-        obj.added = obj3.difference(importDefault(dependencyMap[22]).union(added, addedRoleIds), items);
-        const unionResult = importDefault(dependencyMap[22]).union(added, addedRoleIds);
-        const obj5 = importDefault(dependencyMap[22]);
+        obj.added = obj3.difference(importDefault(22).union(added, addedRoleIds), items);
+        const unionResult = importDefault(22).union(added, addedRoleIds);
+        const obj5 = importDefault(22);
         let removed = obj.removed;
         if (null == removed) {
           removed = [];
         }
-        const obj6 = importDefault(dependencyMap[22]);
+        const obj6 = importDefault(22);
         if (null == addedRoleIds) {
           addedRoleIds = [];
         }
-        obj.removed = obj5.difference(importDefault(dependencyMap[22]).union(removed, removedRoleIds), addedRoleIds);
+        obj.removed = obj5.difference(importDefault(22).union(removed, removedRoleIds), addedRoleIds);
         tmp4[guildId] = obj;
         obj = { userId: id, guildId };
         ({ nick: obj7.nick, avatar: obj7.avatar, avatarDecoration: obj7.avatarDecoration } = tmp3);
@@ -1172,8 +1171,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp2 = closure_41;
-        let tmp3 = closure_41(value.guildId, value.members) || flag;
+        let tmp2 = batchUpdateGuildMembers;
+        let tmp3 = batchUpdateGuildMembers(value.guildId, value.members) || flag;
         iter3 = tmp();
         flag = tmp3;
         iter2 = iter3;
@@ -1191,14 +1190,14 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
   THREAD_MEMBER_LIST_UPDATE: function handleThreadMemberListUpdate(members) {
     members = members.members;
     const mapped = members.map((member) => member.member);
-    return batchUpdateGuildMembers(members.guildId, mapped.filter(arg1(dependencyMap[20]).isNotNullish));
+    return batchUpdateGuildMembers(members.guildId, mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish));
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(addedMembers) {
     addedMembers = addedMembers.addedMembers;
     let tmp2 = null != addedMembers;
     if (tmp2) {
       const mapped = addedMembers.map((member) => member.member);
-      tmp2 = batchUpdateGuildMembers(tmp, mapped.filter(arg1(dependencyMap[20]).isNotNullish));
+      tmp2 = batchUpdateGuildMembers(tmp, mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish));
     }
     return tmp2;
   },
@@ -1247,8 +1246,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     let roleId;
     let userId;
     ({ guildId, userId, roleId } = arg0);
-    const arg1 = roleId;
-    if (null == closure_16[guildId]) {
+    if (null == dependencyMap[guildId]) {
       return false;
     } else {
       const guild = store5.getGuild(guildId);
@@ -1280,7 +1278,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     let roleId;
     let userId;
     ({ guildId, userId, roleId } = arg0);
-    if (null == closure_16[guildId]) {
+    if (null == dependencyMap[guildId]) {
       return false;
     } else {
       const guild = store5.getGuild(guildId);
@@ -1314,7 +1312,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     let guildId;
     let guildMember;
     ({ guildMember, guildId } = arg0);
-    if (null == closure_16[guildId]) {
+    if (null == dependencyMap[guildId]) {
       return false;
     } else {
       const guild = store5.getGuild(guildId);
@@ -1327,9 +1325,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
         ({ roles: obj.roles, premium_since: obj.premiumSince, pending: obj.isPending, joined_at: obj.joinedAt, communication_disabled_until: obj.communicationDisabledUntil, unusual_dm_activity_until: obj.unusualDMActivityUntil, flags: obj.flags } = guildMember);
         const _Date = Date;
         obj.fullProfileLoadedTimestamp = Date.now();
-        obj.collectibles = arg1(dependencyMap[18]).parseServerUserCollectibles(guildMember.collectibles);
-        const obj2 = arg1(dependencyMap[18]);
-        obj.displayNameStyles = arg1(dependencyMap[19]).parseServerDisplayNameStyles(guildMember.display_name_styles);
+        obj.collectibles = require(1829) /* parseSkuIdFromServerData */.parseServerUserCollectibles(guildMember.collectibles);
+        const obj2 = require(1829) /* parseSkuIdFromServerData */;
+        obj.displayNameStyles = require(1860) /* wrapHue */.parseServerDisplayNameStyles(guildMember.display_name_styles);
         tmp[guildMember.user.id] = createMember(obj);
         trackCommunicationDisabled(guildId, tmp[guildMember.user.id]);
       }
@@ -1348,25 +1346,25 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     if (null == guildId.guildId) {
       return false;
     } else {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   },
   LOCAL_MESSAGES_LOADED: function handleLocalMessagesLoaded(guildId) {
     let iter2;
     if (null != guildId.guildId) {
       if (null != store5.getGuild(guildId.guildId)) {
-        let closure_21 = true;
-        let obj = closure_16[guildId.guildId];
+        let c21 = true;
+        let obj = dependencyMap[guildId.guildId];
         if (null == obj) {
           obj = {};
         }
-        closure_16[guildId.guildId] = obj;
-        closure_21 = true;
-        obj = closure_16[guildId.guildId];
+        dependencyMap[guildId.guildId] = obj;
+        c21 = true;
+        obj = dependencyMap[guildId.guildId];
         if (null == obj) {
           obj = {};
         }
-        closure_16[guildId.guildId] = obj;
+        dependencyMap[guildId.guildId] = obj;
         const tmp4 = _createForOfIteratorHelperLoose(guildId.members);
         let iter = tmp4();
         let flag = false;
@@ -1374,10 +1372,10 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
         if (!iter.done) {
           do {
             let value = iter.value;
-            let tmp5 = closure_16;
-            if (null == closure_16[guildId.guildId][value.userId]) {
-              let tmp6 = closure_16;
-              closure_16[guildId.guildId][value.userId] = value;
+            let tmp5 = dependencyMap;
+            if (null == dependencyMap[guildId.guildId][value.userId]) {
+              let tmp6 = dependencyMap;
+              dependencyMap[guildId.guildId][value.userId] = value;
               flag = true;
             }
             iter2 = tmp4();
@@ -1398,7 +1396,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
   LOAD_PINNED_MESSAGES_SUCCESS: function handleLoadPinnedMessages(pins) {
     pins = pins.pins;
     const item = pins.forEach((message) => {
-      callback(message.message);
+      outer1_48(message.message);
     });
   },
   SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
@@ -1409,7 +1407,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = arg1(dependencyMap[23]).getEmbeddedActivityLocationGuildId(instance.location);
+    const embeddedActivityLocationGuildId = require(3748) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
     let tmp2 = null != embeddedActivityLocationGuildId;
     if (tmp2) {
       tmp2 = buildMembersFromActivityParticipants(embeddedActivityLocationGuildId, instance.participants);
@@ -1425,14 +1423,14 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     return processResolvedMembers(channelId.resolved, guild_id);
   }
 });
-const result = arg1(dependencyMap[26]).fileFinishedImporting("stores/GuildMemberStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildMemberStore.tsx");
 
 export default tmp4;
 export const getUserCommunicationDisabledVersion = function getUserCommunicationDisabledVersion(guildId, userId) {
   const tmp = getCommunicationDisabledUserKey(guildId, userId);
   let num = -1;
-  if (tmp in closure_24) {
-    num = closure_24[tmp];
+  if (tmp in table3) {
+    num = table3[tmp];
   }
   return num;
 };

@@ -1,53 +1,58 @@
-// Module ID: 15647
-// Function ID: 119460
+// Module ID: 15764
+// Function ID: 121633
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 6, 7, 31, 2]
 // Exports: useSetHasActiveVideoOutputSink
 
-// Module 15647 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15764 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import result from "result";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let _slicedToArray = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _slicedToArray = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (_classCallCheck >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        _classCallCheck = tmp3 + 1;
+        obj.value = length[+_classCallCheck];
       }
       return obj;
     };
@@ -84,20 +89,16 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importAll(dependencyMap[3]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class VoicePanelStreamOutputSinkStack {
     constructor(arg0) {
       flag = arg1;
       self = this;
-      VoicePanelStreamOutputSinkStack = this;
+      self = this;
       if (arg1 === undefined) {
         flag = false;
       }
-      tmp = closure_1(self, VoicePanelStreamOutputSinkStack);
+      tmp = outer1_1(self, self);
       self.mediaEngine = arg0;
       map = new Map();
       self.activeSinks = map;
@@ -110,25 +111,24 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = VoicePanelStreamOutputSinkStack;
   let obj = {
     key: "cleanUp",
     value() {
       clearInterval(this.timer);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "logSinks",
     value() {
       let done;
       const items = [];
-      const tmp = callback2(this.activeSinks);
+      const tmp = outer1_4(this.activeSinks);
       let iter = tmp();
       if (!iter.done) {
         do {
-          let tmp2 = closure_0;
-          let tmp3 = closure_0(iter.value, 2);
+          let tmp2 = VoicePanelStreamOutputSinkStack;
+          let tmp3 = VoicePanelStreamOutputSinkStack(iter.value, 2);
           let first = tmp3[0];
           let _Array = Array;
           let arr = Array.from(tmp3[1]);
@@ -184,12 +184,12 @@ const tmp2 = () => {
       let obj;
       let tmp4;
       const self = this;
-      const tmp = callback2(this.activeSinks);
+      const tmp = outer1_4(this.activeSinks);
       let iter = tmp();
       if (!iter.done) {
         do {
-          let tmp2 = closure_0;
-          let tmp3 = closure_0(iter.value, 2);
+          let tmp2 = VoicePanelStreamOutputSinkStack;
+          let tmp3 = VoicePanelStreamOutputSinkStack(iter.value, 2);
           [tmp4, obj] = tmp3;
           if (obj.has(arg0)) {
             let deleteResult = obj.delete(arg0);
@@ -208,9 +208,11 @@ const tmp2 = () => {
   items[4] = {
     key: "setActive",
     value(arg0, arg1, arg2) {
-      const VoicePanelStreamOutputSinkStack = arg0;
+      let _slicedToArray = arg0;
+      let _classCallCheck = arg1;
+      let _defineProperties = arg2;
       const mediaEngine = this.mediaEngine;
-      mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(setHasActiveVideoOutputSink, arg1, arg2));
+      mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(_slicedToArray, _classCallCheck, _defineProperties));
     }
   };
   items[5] = {
@@ -220,19 +222,18 @@ const tmp2 = () => {
     }
   };
   return callback(VoicePanelStreamOutputSinkStack, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/voice_panel/native/controller/VoicePanelStreamOutputSinkStack.tsx");
+})();
+let result = require("_defineProperties").fileFinishedImporting("modules/voice_panel/native/controller/VoicePanelStreamOutputSinkStack.tsx");
 
 export default tmp2;
 export const useSetHasActiveVideoOutputSink = function useSetHasActiveVideoOutputSink(arg0) {
-  let closure_0 = arg0;
+  let _slicedToArray = arg0;
   const id = React.useId();
-  let closure_1 = id;
   const items = [id, arg0];
   const callback = React.useCallback((arg0, arg1) => {
-    const result = arg0.setHasActiveVideoOutputSink(id, arg0, arg1);
+    const result = hasActiveVideoOutputSink.setHasActiveVideoOutputSink(id, arg0, arg1);
   }, items);
   const items1 = [id, callback, arg0];
-  const effect = React.useEffect(() => () => closure_0.clearLock(closure_1), items1);
+  const effect = React.useEffect(() => () => outer1_0.clearLock(outer1_1), items1);
   return callback;
 };

@@ -1,14 +1,14 @@
 // Module ID: 173
 // Function ID: 2540
 // Name: valuePromise
-// Dependencies: []
+// Dependencies: [172]
 
 // Module 173 (valuePromise)
-import module_0 from "module_0";
+import noop from "noop";
 
 function valuePromise(_z) {
-  let tmp = require(dependencyMap[0]);
-  tmp = new tmp(require(dependencyMap[0])._D);
+  let tmp = require(172) /* noop */;
+  tmp = new tmp(require(172) /* noop */._D);
   tmp._y = 1;
   tmp._z = _z;
   return tmp;
@@ -22,14 +22,14 @@ function onSettledReject(reason) {
 function mapAllSettled(promise) {
   if (promise) {
     if ("object" === typeof promise) {
-      if (promise instanceof require(dependencyMap[0])) {
-        if (promise.then === require(dependencyMap[0]).prototype.then) {
+      if (promise instanceof require(172) /* noop */) {
+        if (promise.then === require(172) /* noop */.prototype.then) {
           return promise.then(onSettledFulfill, onSettledReject);
         }
       }
       const then = promise.then;
       if ("function" === typeof then) {
-        let tmp8 = require(dependencyMap[0]);
+        let tmp8 = require(172) /* noop */;
         const prototype = tmp8.prototype;
         tmp8 = new tmp8(then.bind(promise));
         return tmp8.then(onSettledFulfill, onSettledReject);
@@ -56,8 +56,8 @@ let closure_3 = valuePromise(false);
 let closure_4 = valuePromise(null);
 let closure_5 = valuePromise(undefined);
 let closure_7 = valuePromise("");
-require(dependencyMap[0]).resolve = (iter) => {
-  if (iter instanceof require(dependencyMap[0])) {
+require("noop").resolve = (iter) => {
+  if (iter instanceof require(172) /* noop */) {
     return promise;
   } else if (null === promise) {
     return closure_4;
@@ -68,19 +68,19 @@ require(dependencyMap[0]).resolve = (iter) => {
   } else if (false === promise) {
     return closure_3;
   } else if (0 === promise) {
-    return module_0;
+    return noop;
   } else if ("" === promise) {
     return closure_7;
   } else {
     if ("object" === typeof promise) {
       const then = promise.then;
       if ("function" === typeof then) {
-        let tmp8 = require(dependencyMap[0]);
+        let tmp8 = require(172) /* noop */;
         const prototype = tmp8.prototype;
         tmp8 = new tmp8(obj.bind(iter));
         return tmp8;
       }
-      const obj = then;
+      obj = then;
     }
     return valuePromise(promise);
   }
@@ -100,16 +100,18 @@ function iterableToArray(arg0) {
   }
   return callResult;
 }
-require(dependencyMap[0]).all = (arg0) => {
-  const callback = iterableToArray(arg0);
-  let tmp = callback(dependencyMap[0]);
+require("noop").all = (arg0) => {
+  const _require = iterableToArray(arg0);
+  let tmp = _require(172);
   tmp = new tmp((arg0, arg1) => {
     let closure_0 = arg0;
+    let closure_1 = arg1;
     function res(arg0, _y) {
+      const callback = arg0;
       if (_y) {
         if ("object" === typeof _y) {
-          if (_y instanceof arg0(_y[0])) {
-            if (_y.then === arg0(_y[0]).prototype.then) {
+          if (_y instanceof callback(outer2_1[0])) {
+            if (_y.then === callback(outer2_1[0]).prototype.then) {
               let tmp18 = _y;
               let promise2 = _y;
               if (3 === _y._y) {
@@ -124,30 +126,30 @@ require(dependencyMap[0]).all = (arg0) => {
                 const tmp23 = res(arg0, promise2._z);
               } else {
                 if (2 === promise2._y) {
-                  _y(promise2._z);
+                  callback2(promise2._z);
                 }
                 promise2.then((arg0) => {
-                  callback(arg0, arg0);
-                }, _y);
+                  outer1_3(closure_0, arg0);
+                }, callback2);
               }
               return tmp23;
             }
           }
           const then = _y.then;
           if ("function" === typeof then) {
-            let tmp12 = arg0(_y[0]);
+            let tmp12 = callback(outer2_1[0]);
             const prototype = tmp12.prototype;
             tmp12 = new tmp12(then.bind(_y));
             tmp12.then((arg0) => {
-              callback(arg0, arg0);
-            }, _y);
+              outer1_3(closure_0, arg0);
+            }, callback2);
           }
         }
       }
-      arg0[arg0] = _y;
-      const diff = diff - 1;
+      callback[arg0] = _y;
+      diff = diff - 1;
       if (0 == diff) {
-        arg0(arg0);
+        callback(callback);
       }
     }
     if (0 === closure_0.length) {
@@ -167,60 +169,64 @@ require(dependencyMap[0]).all = (arg0) => {
   });
   return tmp;
 };
-require(dependencyMap[0]).allSettled = (arg0) => {
-  const obj = require(dependencyMap[0]);
+require("noop").allSettled = (arg0) => {
+  const obj = require(172) /* noop */;
   return obj.all(iterableToArray(arg0).map(mapAllSettled));
 };
-require(dependencyMap[0]).reject = (arg0) => {
-  const require = arg0;
-  let tmp = require(dependencyMap[0]);
+require("noop").reject = (arg0) => {
+  const _require = arg0;
+  let tmp = _require(172);
   tmp = new tmp((arg0, arg1) => {
-    arg1(arg0);
+    arg1(closure_0);
   });
   return tmp;
 };
-require(dependencyMap[0]).race = (arg0) => {
-  const require = arg0;
-  let tmp = require(dependencyMap[0]);
+require("noop").race = (arg0) => {
+  const _require = arg0;
+  let tmp = _require(172);
   tmp = new tmp((arg0, arg1) => {
-    const item = callback(arg0).forEach((arg0) => {
-      const obj = arg0(arg1[0]);
-      arg0(arg1[0]).resolve(arg0).then(arg0, arg1);
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    const item = outer1_8(closure_0).forEach((arg0) => {
+      const obj = callback(outer2_1[0]);
+      callback(outer2_1[0]).resolve(arg0).then(callback, closure_1);
     });
   });
   return tmp;
 };
-require(dependencyMap[0]).prototype.catch = function(arg0) {
+require("noop").prototype.catch = function(arg0) {
   return this.then(null, arg0);
 };
-require(dependencyMap[0]).any = function promiseAny(arg0) {
-  const require = arg0;
-  let tmp = require(dependencyMap[0]);
+require("noop").any = function promiseAny(arg0) {
+  const _require = arg0;
+  let tmp = _require(172);
   tmp = new tmp((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     function resolveOnce(arg0) {
-      if (!closure_3) {
-        closure_3 = true;
-        arg0(arg0);
+      if (!c3) {
+        c3 = true;
+        callback(arg0);
       }
     }
     function rejectionCheck(arg0) {
       if (items.length === arr.length) {
-        arg1(callback(items));
+        callback2(outer2_13(items));
       }
     }
-    const arr = callback(arg0);
-    let closure_3 = false;
+    const arr = outer1_8(closure_0);
+    let c3 = false;
     const items = [];
     if (0 === arr.length) {
-      arg1(callback2(items));
+      arg1(outer1_13(items));
     } else {
       const item = arr.forEach((arg0) => {
-        const obj = arg0(arg1[0]);
-        arg0(arg1[0]).resolve(arg0).then(resolveOnce, rejectionCheck);
+        const obj = callback(outer2_1[0]);
+        callback(outer2_1[0]).resolve(arg0).then(resolveOnce, rejectionCheck);
       });
     }
   });
   return tmp;
 };
 
-export default require(dependencyMap[0]);
+export { default } from "noop";

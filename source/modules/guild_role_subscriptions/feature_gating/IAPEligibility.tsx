@@ -1,10 +1,14 @@
-// Module ID: 5028
-// Function ID: 43304
+// Module ID: 5031
+// Function ID: 43322
 // Name: compareVersions
-// Dependencies: []
+// Dependencies: [31, 1838, 653, 477, 5032, 624, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5028 (compareVersions)
+// Module 5031 (compareVersions)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function compareVersions(systemVersion, arg1) {
   const parts = systemVersion.split(".");
   const mapped = parts.map(Number);
@@ -37,18 +41,15 @@ function compareVersions(systemVersion, arg1) {
   }
   return 0;
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const items = [arg1(dependencyMap[2]).GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx");
+let items = [require("ME").GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
+const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx");
 
 export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guildId) {
   if (obj.isIOS()) {
-    const systemVersion = arg1(dependencyMap[4]).getSystemVersion();
+    const systemVersion = guild(5032).getSystemVersion();
     if (null != systemVersion) {
       if (-1 !== compareVersions(systemVersion, "13.2")) {
-        const guild = guild.getGuild(guildId);
-        const arg1 = guild;
+        guild = guild.getGuild(guildId);
         let everyResult = null != guild;
         if (everyResult) {
           everyResult = items.every((arg0) => {
@@ -63,27 +64,26 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
   } else {
     return false;
   }
-  const obj = arg1(dependencyMap[3]);
+  obj = guild(477);
 };
 export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIAP(guildId) {
-  const arg1 = guildId;
+  const _require = guildId;
   const memo = React.useMemo(() => {
-    const systemVersion = arg0(closure_1[4]).getSystemVersion();
+    const systemVersion = guildId(outer1_1[4]).getSystemVersion();
     let tmp2 = null != systemVersion;
     if (tmp2) {
-      tmp2 = callback(systemVersion, "13.2") >= 0;
+      tmp2 = outer1_5(systemVersion, "13.2") >= 0;
     }
     return tmp2;
   }, []);
-  let memo1 = React.useMemo(() => arg0(closure_1[3]).isIOS(), []);
-  const items = [closure_3];
+  let memo1 = React.useMemo(() => guildId(outer1_1[3]).isIOS(), []);
+  const items = [_createForOfIteratorHelperLoose];
   if (memo1) {
     memo1 = obj.useStateFromStores(items, () => {
-      const guild = guild.getGuild(arg0);
-      const arg0 = guild;
+      guild = outer1_3.getGuild(guild);
       let everyResult = null != guild;
       if (everyResult) {
-        everyResult = closure_4.every((arg0) => {
+        everyResult = outer1_4.every((arg0) => {
           const features = guild.features;
           return features.has(arg0);
         });

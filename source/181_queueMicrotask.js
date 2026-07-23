@@ -16,13 +16,13 @@ arg5.default = function queueMicrotask(flush) {
   } else {
     let promise = resolved;
     if (!resolved) {
-      const resolved = Promise.resolve();
+      resolved = Promise.resolve();
       promise = resolved;
     }
     promise.then(flush).catch((arg0) => {
-      const resolved = arg0;
+      let closure_0 = arg0;
       return setTimeout(() => {
-        throw arg0;
+        throw closure_0;
       }, 0);
     });
   }

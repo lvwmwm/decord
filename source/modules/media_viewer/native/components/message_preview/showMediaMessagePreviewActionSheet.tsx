@@ -1,24 +1,26 @@
-// Module ID: 12130
-// Function ID: 93447
+// Module ID: 12244
+// Function ID: 95598
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: []
+// Dependencies: [1348, 1849, 4098, 12245, 1934, 2]
 // Exports: default
 
-// Module 12130 (showMediaMessagePreviewActionSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/media_viewer/native/components/message_preview/showMediaMessagePreviewActionSheet.tsx");
+// Module 12244 (showMediaMessagePreviewActionSheet)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("showActionSheet").fileFinishedImporting("modules/media_viewer/native/components/message_preview/showMediaMessagePreviewActionSheet.tsx");
 
 export default function showMediaMessagePreviewActionSheet(message) {
   message = message.message;
-  const channel = channel.getChannel(message.channelId);
+  channel = channel.getChannel(message.channelId);
   if (null != channel) {
     if (null != message) {
-      const user = user.getUser(message.author.id);
+      user = user.getUser(message.author.id);
       if (null != user) {
-        let obj = importDefault(dependencyMap[2]);
+        let obj = importDefault(4098);
         obj = { channel, message, user, closeMediaModal: message.closeMediaModal };
-        obj.openLazy(arg1(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
+        obj.openLazy(require(1934) /* maybeLoadBundle */(12245, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
       }
     }
   }

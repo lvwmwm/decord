@@ -1,49 +1,50 @@
-// Module ID: 12462
-// Function ID: 95182
+// Module ID: 12576
+// Function ID: 97338
 // Name: WorkSchedulerTelemetry
-// Dependencies: []
+// Dependencies: [57, 6, 7, 22, 2]
 
-// Module 12462 (WorkSchedulerTelemetry)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
+// Module 12576 (WorkSchedulerTelemetry)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 let obj = { LONGER_DISPATCH: "longer_dispatch", EXCEEDED_MAX_CONSECUTIVE_FLUSHES: "exceeded_max_consecutive_flushes", FIRED_DUE_TO_MAX_TIMEOUT: "fired_due_to_max_timeout", SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED: "skip_idle_callback_due_to_backgrounded" };
 obj = { TIME_TO_FIRE_IDLE_CALLBACK: "time_to_fire_idle_callback", TIME_TO_QUEUE_EMPTY: "time_to_flush_all_work", TIME_OVER_DEADLINE: "time_over_deadline", DEADLINE_INITIAL_TIME_REMAINING: "initial_time_of_deadline" };
 obj = { COUNT_DISPATCHES_LEFT_AFTER_YIELD: "count_dispatches_left_after_yield", COUNT_FLUSH_BEFORE_QUEUE_EMPTY: "count_flush_before_queue_empty", COUNT_INITIAL_DISPATCHS_LENGTH: "count_initial_dispatches_length" };
 let closure_5 = Object.freeze({ [obj.TIME_TO_FIRE_IDLE_CALLBACK]: null, [obj.TIME_TO_QUEUE_EMPTY]: null, [obj.TIME_OVER_DEADLINE]: null, [obj.DEADLINE_INITIAL_TIME_REMAINING]: null });
-let closure_6 = Object.freeze({ [obj.TIME_TO_FIRE_IDLE_CALLBACK]: ["placeholder", "aria-label"], [obj.TIME_TO_QUEUE_EMPTY]: ["placeholder", "aria-label"], [obj.TIME_OVER_DEADLINE]: ["placeholder", "aria-label"], [obj.DEADLINE_INITIAL_TIME_REMAINING]: ["placeholder", "aria-label"] });
-let closure_7 = Object.freeze({ [obj.COUNT_FLUSH_BEFORE_QUEUE_EMPTY]: ["placeholder", "aria-label"], [obj.COUNT_DISPATCHES_LEFT_AFTER_YIELD]: ["placeholder", "aria-label"], [obj.COUNT_INITIAL_DISPATCHS_LENGTH]: ["placeholder", "aria-label"] });
+let closure_6 = Object.freeze({ [obj.TIME_TO_FIRE_IDLE_CALLBACK]: [0, 0], [obj.TIME_TO_QUEUE_EMPTY]: [0, 0], [obj.TIME_OVER_DEADLINE]: [0, 0], [obj.DEADLINE_INITIAL_TIME_REMAINING]: [0, 0] });
+let closure_7 = Object.freeze({ [obj.COUNT_FLUSH_BEFORE_QUEUE_EMPTY]: [0, 0], [obj.COUNT_DISPATCHES_LEFT_AFTER_YIELD]: [0, 0], [obj.COUNT_INITIAL_DISPATCHS_LENGTH]: [0, 0] });
 let closure_8 = Object.freeze({ [obj.LONGER_DISPATCH]: 0, [obj.EXCEEDED_MAX_CONSECUTIVE_FLUSHES]: 0, [obj.FIRED_DUE_TO_MAX_TIMEOUT]: 0, [obj.SKIP_IDLE_CALLBACK_DUE_TO_BACKGROUNDED]: 0 });
-const tmp2 = () => {
+let tmp2 = (() => {
   class WorkSchedulerTelemetry {
     constructor() {
-      tmp = closure_3(this, WorkSchedulerTelemetry);
-      obj = WorkSchedulerTelemetry(closure_1[3]);
-      this._timeTracking = obj.cloneDeep(closure_5);
-      obj2 = WorkSchedulerTelemetry(closure_1[3]);
-      this._timingStats = obj2.cloneDeep(closure_6);
-      obj3 = WorkSchedulerTelemetry(closure_1[3]);
-      this._measurements = obj3.cloneDeep(closure_7);
-      obj4 = WorkSchedulerTelemetry(closure_1[3]);
-      this._eventCounts = obj4.cloneDeep(closure_8);
+      tmp = outer1_3(this, WorkSchedulerTelemetry);
+      obj = WorkSchedulerTelemetry(outer1_1[3]);
+      this._timeTracking = obj.cloneDeep(outer1_5);
+      obj2 = WorkSchedulerTelemetry(outer1_1[3]);
+      this._timingStats = obj2.cloneDeep(outer1_6);
+      obj3 = WorkSchedulerTelemetry(outer1_1[3]);
+      this._measurements = obj3.cloneDeep(outer1_7);
+      obj4 = WorkSchedulerTelemetry(outer1_1[3]);
+      this._eventCounts = obj4.cloneDeep(outer1_8);
       this._enabled = false;
       return;
     }
   }
-  const arg1 = WorkSchedulerTelemetry;
   let obj = {
     key: "reset",
     value() {
-      this._timeTracking = WorkSchedulerTelemetry(closure_1[3]).cloneDeep(closure_5);
-      const obj = WorkSchedulerTelemetry(closure_1[3]);
-      this._timingStats = WorkSchedulerTelemetry(closure_1[3]).cloneDeep(closure_6);
-      const obj2 = WorkSchedulerTelemetry(closure_1[3]);
-      this._measurements = WorkSchedulerTelemetry(closure_1[3]).cloneDeep(closure_7);
-      const obj3 = WorkSchedulerTelemetry(closure_1[3]);
-      this._eventCounts = WorkSchedulerTelemetry(closure_1[3]).cloneDeep(closure_8);
+      this._timeTracking = WorkSchedulerTelemetry(outer1_1[3]).cloneDeep(outer1_5);
+      const obj = WorkSchedulerTelemetry(outer1_1[3]);
+      this._timingStats = WorkSchedulerTelemetry(outer1_1[3]).cloneDeep(outer1_6);
+      const obj2 = WorkSchedulerTelemetry(outer1_1[3]);
+      this._measurements = WorkSchedulerTelemetry(outer1_1[3]).cloneDeep(outer1_7);
+      const obj3 = WorkSchedulerTelemetry(outer1_1[3]);
+      this._eventCounts = WorkSchedulerTelemetry(outer1_1[3]).cloneDeep(outer1_8);
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "clearTime",
     value(arg0) {
@@ -54,7 +55,7 @@ const tmp2 = () => {
   obj = {
     key: "_storeTimeValue",
     value(arg0, arg1) {
-      const tmp = callback(this._timingStats[arg0], 2);
+      const tmp = outer1_2(this._timingStats[arg0], 2);
       const items = [(tmp[0] * tmp[1] + arg1) / (tmp[1] + 1), tmp[1] + 1];
       this._timingStats[arg0] = items;
     }
@@ -96,7 +97,7 @@ const tmp2 = () => {
     value(arg0, arg1) {
       const self = this;
       if (this._enabled) {
-        const tmp2 = callback(self._measurements[arg0], 2);
+        const tmp2 = outer1_2(self._measurements[arg0], 2);
         const items = [(tmp2[0] * tmp2[1] + arg1) / (tmp2[1] + 1), tmp2[1] + 1];
         self._measurements[arg0] = items;
       }
@@ -157,8 +158,8 @@ const tmp2 = () => {
     }
   };
   return callback(WorkSchedulerTelemetry, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/gateway/WorkSchedulerTelemetry.tsx");
+})();
+const result = require("_defineProperties").fileFinishedImporting("modules/gateway/WorkSchedulerTelemetry.tsx");
 
 export const WorkSchedulerTelemetryEvent = obj;
 export const WorkSchedulerTelemetryTiming = obj;

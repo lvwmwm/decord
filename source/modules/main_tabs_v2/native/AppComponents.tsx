@@ -1,41 +1,42 @@
-// Module ID: 15564
-// Function ID: 118743
+// Module ID: 15681
+// Function ID: 120916
 // Name: jsx
-// Dependencies: []
+// Dependencies: [33, 15444, 477, 3981, 15249, 15592, 4000, 15608, 10217, 13079, 4475, 3844, 15682, 15688, 15721, 15733, 15896, 2]
 
-// Module 15564 (jsx)
+// Module 15681 (jsx)
+import jsxProd from "jsxProd";
+import set from "set";
+import importDefaultResult from "jsx";
+import set from "set";
+import jsxsResult from "jsx";
+import jsxResult1 from "requestFreezeLock";
+import importDefaultResult1 from "jsx";
+import set from "set";
+
 let jsx;
 let jsxs;
-const _module = require(dependencyMap[0]);
-({ jsx, jsxs } = _module);
-let closure_2 = jsx(require(dependencyMap[1]).PortalKeyboardRenderer, {});
-const _module1 = require(dependencyMap[2]);
-let obj = { lockKeys: ["bfk"] };
-const tmp3 = _module1.isIOS() ? () => {
+({ jsx, jsxs } = jsxProd);
+let closure_2 = jsx(require("transitionGroupGetItemKey").PortalKeyboardRenderer, {});
+let obj = { lockKeys: ["external-pip"] };
+const tmp3 = set.isIOS() ? (() => {
   let tmp = null;
   if (!obj.useIsModalOpen()) {
     tmp = closure_2;
   }
   return tmp;
-} : () => closure_2;
-const items = [jsx(require(dependencyMap[5]).PictureInPictureGlobalContainer, {}), jsx(require(dependencyMap[5]).BurstReactionAnimationContainer, {}), jsx(require(dependencyMap[5]).MenuContainer, {}), jsx(require(dependencyMap[6]).PortalKeyboardHost, {}), <tmp3 />, jsx(require(dependencyMap[5]).ActionSheetContainer, { appEntryKey: "main" }), jsx(require(dependencyMap[5]).Alerts, {}), jsx(require(dependencyMap[5]).SoundPlayer, {}), jsx(importDefault(dependencyMap[7]), {}), jsx(importDefault(dependencyMap[8]), {}), jsx(require(dependencyMap[9]).ContextMenuContainer, {}), jsx(require(dependencyMap[10]).AlertModalContainer, {}), jsx(require(dependencyMap[5]).ToastContainer, {})];
+}) : (() => closure_2);
+const items = [jsx(require("BurstReactionAnimationContainer").PictureInPictureGlobalContainer, {}), jsx(require("BurstReactionAnimationContainer").BurstReactionAnimationContainer, {}), jsx(require("BurstReactionAnimationContainer").MenuContainer, {}), jsx(require("PortalKeyboardState").PortalKeyboardHost, {}), <tmp3 />, jsx(require("BurstReactionAnimationContainer").ActionSheetContainer, { appEntryKey: "main" }), jsx(require("BurstReactionAnimationContainer").Alerts, {}), jsx(require("BurstReactionAnimationContainer").SoundPlayer, {}), jsx(require("getActionSheetType"), {}), jsx(require("Notifications"), {}), jsx(require("getItemKey").ContextMenuContainer, {}), jsx(require("getAlertModalItemKey").AlertModalContainer, {}), jsx(require("BurstReactionAnimationContainer").ToastContainer, {})];
 obj.children = items;
-const importDefaultResult = importDefault(dependencyMap[4]);
-const _module2 = require(dependencyMap[2]);
 let jsxResult = null;
-if (_module2.isAndroid()) {
-  jsxResult = jsx(require(dependencyMap[11]).AccessibilityAnnouncerLiveRegion, {});
+if (set.isAndroid()) {
+  jsxResult = jsx(require("updateAccessibilityAnnouncerLiveRegionMessage").AccessibilityAnnouncerLiveRegion, {});
 }
-const jsxsResult = jsxs(importDefault(dependencyMap[4]), obj);
-obj = { lockKeys: ["bfk"] };
-const jsxResult1 = jsx(importDefault(dependencyMap[12]), {});
-const items1 = [jsx(importDefault(dependencyMap[13]), {}), jsx(importDefault(dependencyMap[14]), {}), jsx(importDefault(dependencyMap[15]), {}), jsx(importDefault(dependencyMap[16]), {})];
+obj = { lockKeys: ["external-pip"] };
+const items1 = [jsx(require("module_15688"), {}), jsx(require("module_15721"), {}), jsx(require("VoicePanel"), {}), jsx(require("module_15896"), {})];
 obj.children = items1;
-const importDefaultResult1 = importDefault(dependencyMap[4]);
-const _module3 = require(dependencyMap[17]);
-const result = _module3.fileFinishedImporting("modules/main_tabs_v2/native/AppComponents.tsx");
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/AppComponents.tsx");
 
 export const APP_EXTRA_COMPONENTS = jsxsResult;
 export const APP_EXTRA_COMPONENTS_NEVER_FREEZE = jsxResult;
 export const APP_EXTRA_COMPONENTS_EXTERNAL_PIP = jsxResult1;
-export const APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO = jsxs(importDefault(dependencyMap[4]), obj);
+export const APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO = jsxs(require("jsx"), { lockKeys: ["external-pip"] });
