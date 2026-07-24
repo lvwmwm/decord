@@ -1,10 +1,10 @@
-// Module ID: 15242
-// Function ID: 116297
+// Module ID: 15289
+// Function ID: 116619
 // Name: ExploreServersRow
-// Dependencies: [5, 57, 31, 27, 33, 3991, 4126, 15179, 689, 8321, 15196, 15192, 3982, 4131, 3834, 11934, 1212, 4543, 15218, 4554, 668, 666, 2]
+// Dependencies: [5, 57, 31, 27, 33, 3991, 4126, 15226, 689, 8365, 15243, 15239, 3982, 4131, 3834, 11960, 1212, 4543, 15265, 4554, 668, 666, 2]
 // Exports: default
 
-// Module 15242 (ExploreServersRow)
+// Module 15289 (ExploreServersRow)
 import module_3991 from "module_3991";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -201,7 +201,7 @@ export default function ExploreServersRow(visible) {
   obj5 = { style: items1 };
   items1 = [tmp.iconWrapper, animatedStyle];
   const obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
-  obj5.children = callback3(visible(11934).FlashIcon, obj6);
+  obj5.children = callback3(visible(11960).FlashIcon, obj6);
   const items2 = [callback3(sharedValue(3991).View, obj5), , ];
   obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
   const items3 = [tmp.headerText, animatedStyle1];
@@ -232,7 +232,7 @@ export default function ExploreServersRow(visible) {
   obj9.children = items6;
   items5[1] = callback4(View, obj9);
   obj3.children = items5;
-  const items7 = [callback4(View, obj3), callback3(visible(15218).Separator, {}), ];
+  const items7 = [callback4(View, obj3), callback3(visible(15265).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: visible(668).VerticalGradient.START, end: visible(668).VerticalGradient.END };
   const tmp12 = sharedValue(4554);
   const obj20 = sharedValue(666)(token);

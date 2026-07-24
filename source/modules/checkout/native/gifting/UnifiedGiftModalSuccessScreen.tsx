@@ -1,10 +1,10 @@
-// Module ID: 11818
-// Function ID: 91680
+// Module ID: 11845
+// Function ID: 91918
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [31, 27, 653, 33, 4130, 689, 11819, 8776, 4337, 11830, 1934, 5796, 4561, 4126, 1212, 4544, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 11846, 8815, 4337, 11857, 1934, 5796, 4561, 4126, 1212, 4544, 2]
 // Exports: default
 
-// Module 11818 (UnifiedGiftModalSuccessScreen)
+// Module 11845 (UnifiedGiftModalSuccessScreen)
 import result from "result";
 import { Image } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";

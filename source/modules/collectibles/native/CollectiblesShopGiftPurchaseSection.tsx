@@ -1,14 +1,14 @@
-// Module ID: 11816
-// Function ID: 91660
+// Module ID: 11843
+// Function ID: 91898
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 57, 31, 27, 8268, 6663, 653, 1851, 482, 33, 4130, 689, 5160, 8776, 566, 8265, 5464, 9749, 11817, 686, 4337, 4471, 11818, 1934, 477, 675, 9693, 5459, 1212, 4543, 7194, 8740, 3789, 8745, 8774, 8769, 7195, 2]
+// Dependencies: [5, 57, 31, 27, 8312, 6663, 653, 1851, 482, 33, 4130, 689, 5160, 8815, 566, 8309, 5462, 9783, 11844, 686, 4337, 4471, 11845, 1934, 477, 675, 9727, 4126, 1212, 4543, 7194, 8779, 3789, 8784, 8813, 8808, 7195, 2]
 // Exports: default
 
-// Module 11816 (CollectiblesShopGiftPurchaseSection)
+// Module 11843 (CollectiblesShopGiftPurchaseSection)
 import context from "context";
 import _slicedToArray from "_slicedToArray";
 import apexExperiment from "apexExperiment";
-import { View } from "findLinks";
+import { View } from "Text";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { useNativeCheckoutStore } from "context";
 import ME from "ME";
@@ -144,7 +144,7 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
   obj3.paidServiceTermURL = constants.PAID_TERMS;
   obj3.virtualGoodsURL = constants.PAID_TERMS_VIRTUAL_GOODS;
   obj2.children = intl.format(require(baseAnalyticsFields[28]).t.rsEdd2, obj3);
-  items1[1] = callback2(require(baseAnalyticsFields[27]).TextWithIOSLinkWorkaround, obj2);
+  items1[1] = callback2(require(baseAnalyticsFields[27]).Text, obj2);
   const obj4 = { disabled: disabled.isPurchaseDisabled, loading: first === constants2.PURCHASING, variant: "active" };
   const intl3 = require(baseAnalyticsFields[28]).intl;
   obj4.text = intl3.string(require(baseAnalyticsFields[28]).t.ouo4FK);
@@ -178,7 +178,7 @@ export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
   ({ product, onGiftModalDismiss } = arg0);
   ({ isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin } = arg0);
   const GiftACOMOrderExperiment = onGiftModalDismiss(7194).GiftACOMOrderExperiment;
-  let obj = onGiftModalDismiss(8740);
+  let obj = onGiftModalDismiss(8779);
   const androidShopOrdersEnabled = obj.useAndroidShopOrdersEnabled({ location: "WrappedCollectiblesShopGiftPurchaseSection" });
   const tmp3 = onGiftModalDismiss(477).isIOS() ? PaymentGateways.APPLE_ADVANCED_COMMERCE : PaymentGateways.GOOGLE;
   let tmp4 = tmp3 === PaymentGateways.APPLE_ADVANCED_COMMERCE && GiftACOMOrderExperiment.useConfig({ location: "WrappedCollectiblesShopGiftPurchaseSection" }).enabled;
@@ -207,10 +207,10 @@ export default function WrappedCollectiblesShopGiftPurchaseSection(arg0) {
   obj.skuIds = items1;
   obj.isGift = true;
   obj.activeSubscription = null;
-  obj.initialExternalGatewayFacet = importDefault(8745)(product);
+  obj.initialExternalGatewayFacet = importDefault(8784)(product);
   obj.onOrderRetryCancellation = callback;
-  const tmp9 = importDefault(8745)(product);
+  const tmp9 = importDefault(8784)(product);
   obj.children = callback2(CollectiblesShopGiftPurchaseSection, { product, isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin });
   obj.children = callback2(importDefault(7195), obj, product.skuId);
-  return callback2(onGiftModalDismiss(8769).NativePaymentContextProvider, obj);
+  return callback2(onGiftModalDismiss(8808).NativePaymentContextProvider, obj);
 };

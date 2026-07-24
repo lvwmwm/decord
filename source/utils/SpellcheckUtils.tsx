@@ -1,5 +1,5 @@
 // Module ID: 5137
-// Function ID: 44523
+// Function ID: 44528
 // Name: isElectronBuiltInSpellcheckerSupported
 // Dependencies: [5, 3741, 477, 5138, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords

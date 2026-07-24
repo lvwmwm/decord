@@ -1,5 +1,5 @@
 // Module ID: 4056
-// Function ID: 33819
+// Function ID: 33820
 // Name: useGuildPowerupBoostLevelProgress
 // Dependencies: [1838, 653, 4037, 566, 2]
 // Exports: default, getGuildPowerupBoostLevelProgress

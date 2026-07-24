@@ -1,9 +1,9 @@
-// Module ID: 6814
-// Function ID: 53747
+// Module ID: 6813
+// Function ID: 53758
 // Name: HeroBlockRecord
-// Dependencies: [6, 7, 6806, 6786, 2]
+// Dependencies: [6, 7, 6805, 6786, 2]
 
-// Module 6814 (HeroBlockRecord)
+// Module 6813 (HeroBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

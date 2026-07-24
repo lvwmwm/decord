@@ -1,10 +1,10 @@
-// Module ID: 14965
-// Function ID: 114059
+// Module ID: 15012
+// Function ID: 114380
 // Name: renderCategoryItem
-// Dependencies: [31, 27, 6763, 5076, 4325, 10260, 33, 4130, 477, 4126, 4660, 689, 8525, 9979, 9099, 1324, 566, 4320, 5072, 1212, 5498, 9980, 5776, 2]
+// Dependencies: [31, 27, 6763, 5076, 4325, 10289, 33, 4130, 477, 4126, 4660, 689, 8570, 10011, 9137, 1324, 566, 4320, 5072, 1212, 5496, 10012, 5776, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory
 
-// Module 14965 (renderCategoryItem)
+// Module 15012 (renderCategoryItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -113,7 +113,7 @@ function renderCollapsibleCategoryItem(collapsed) {
   const colors = importDefault(689).colors;
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["icon"] = callback(require(8525) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? _createForOfIteratorHelperLoose : obj1 });
+  obj["icon"] = callback(require(8570) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? _createForOfIteratorHelperLoose : obj1 });
   obj = { expanded: !collapsed };
   obj["accessibilityState"] = obj;
   obj["isRefreshEnabled"] = collapsed.isRefreshEnabled;

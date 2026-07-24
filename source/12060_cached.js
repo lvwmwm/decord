@@ -1,7 +1,7 @@
 // Module ID: 12060
-// Function ID: 93847
+// Function ID: 93795
 // Name: cached
-// Dependencies: [12013]
+// Dependencies: [12039]
 
 // Module 12060 (cached)
 const self = this;
@@ -63,8 +63,8 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "karakter", verb: "olmal\u0131" }, file: { unit: "bayt", verb: "olmal\u0131" }, array: { unit: "\u00F6\u011Fe", verb: "olmal\u0131" }, set: { unit: "\u00F6\u011Fe", verb: "olmal\u0131" } };
-      let closure_1 = { regex: "girdi", email: "e-posta adresi", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO tarih ve saat", date: "ISO tarih", time: "ISO saat", duration: "ISO s\u00FCre", ipv4: "IPv4 adresi", ipv6: "IPv6 adresi", cidrv4: "IPv4 aral\u0131\u011F\u0131", cidrv6: "IPv6 aral\u0131\u011F\u0131", base64: "base64 ile \u015Fifrelenmi\u015F metin", base64url: "base64url ile \u015Fifrelenmi\u015F metin", json_string: "JSON dizesi", e164: "E.164 say\u0131s\u0131", jwt: "JWT", template_literal: "\u015Eablon dizesi" };
+      let closure_0 = { string: { unit: "caract\u00E8res", verb: "avoir" }, file: { unit: "octets", verb: "avoir" }, array: { unit: "\u00E9l\u00E9ments", verb: "avoir" }, set: { unit: "\u00E9l\u00E9ments", verb: "avoir" } };
+      let closure_1 = { regex: "entr\u00E9e", email: "adresse courriel", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "date-heure ISO", date: "date ISO", time: "heure ISO", duration: "dur\u00E9e ISO", ipv4: "adresse IPv4", ipv6: "adresse IPv6", cidrv4: "plage IPv4", cidrv6: "plage IPv6", base64: "cha\u00EEne encod\u00E9e en base64", base64url: "cha\u00EEne encod\u00E9e en base64url", json_string: "cha\u00EEne JSON", e164: "num\u00E9ro E.164", jwt: "JWT", template_literal: "entr\u00E9e" };
       let closure_2 = { nan: "NaN" };
       return (code) => {
         let minimum;
@@ -76,119 +76,117 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp51 = parsedTypeResult;
+          let tmp50 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp51 = tmp50;
+            tmp50 = tmp49;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Ge\u00E7ersiz de\u011Fer: beklenen instanceof " + code.expected + ", al\u0131nan " + tmp51;
+            let combined = "Entr\u00E9e invalide : attendu instanceof " + code.expected + ", re\u00E7u " + tmp50;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Ge\u00E7ersiz de\u011Fer: beklenen " + expected + ", al\u0131nan " + tmp51;
+            combined = "Entr\u00E9e invalide : attendu " + expected + ", re\u00E7u " + tmp50;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Ge\u00E7ersiz de\u011Fer: beklenen " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Entr\u00E9e invalide : attendu " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Ge\u00E7ersiz se\u00E7enek: a\u015Fa\u011F\u0131dakilerden biri olmal\u0131: " + closure_2.joinValues(code.values, "|");
+            combined1 = "Option invalide : attendu l'une des valeurs suivantes " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str33 = "<";
+          let str31 = "<";
           if (code.inclusive) {
-            str33 = "<=";
+            str31 = "\u2264";
           }
-          const tmp26 = getSizing(code.origin);
+          const tmp28 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str34 = "de\u011Fer";
-          if (tmp26) {
-            if (tmp28) {
-              str34 = origin2;
-            }
-            let str = code.maximum.toString();
-            const unit = tmp26.unit;
-            let str39 = "\u00F6\u011Fe";
-            if (null != unit) {
-              str39 = unit;
+          let str32 = "la valeur";
+          if (tmp28) {
+            if (tmp30) {
+              str32 = origin2;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "\u00C7ok b\u00FCy\u00FCk: beklenen " + str34 + " " + str33 + str + " " + str39;
-            const str38 = code.maximum;
+            let combined2 = "Trop grand : attendu que " + str32 + " ait " + str31 + code.maximum.toString() + " " + tmp28.unit;
+            const str36 = code.maximum;
           } else {
-            let tmp29 = str34;
-            if (tmp28) {
-              tmp29 = origin2;
+            let tmp31 = str32;
+            if (tmp30) {
+              tmp31 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "\u00C7ok b\u00FCy\u00FCk: beklenen " + tmp29 + " " + str33 + code.maximum.toString();
-            const str35 = code.maximum;
+            combined2 = "Trop grand : attendu que " + tmp31 + " soit " + str31 + code.maximum.toString();
+            const str33 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str26 = ">";
+          let str25 = ">";
           if (code.inclusive) {
-            str26 = ">=";
+            str25 = "\u2265";
           }
-          const tmp15 = getSizing(code.origin);
+          const tmp17 = getSizing(code.origin);
           ({ origin, minimum } = code);
-          const str1 = minimum.toString();
-          if (tmp15) {
+          let str = minimum.toString();
+          if (tmp17) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "\u00C7ok k\u00FC\u00E7\u00FCk: beklenen " + origin + " " + str26 + str1 + " " + tmp15.unit;
+            let combined3 = "Trop petit : attendu que " + origin + " ait " + str25 + str + " " + tmp17.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "\u00C7ok k\u00FC\u00E7\u00FCk: beklenen " + origin + " " + str26 + str1;
+            combined3 = "Trop petit : attendu que " + origin + " soit " + str25 + str;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Ge\u00E7ersiz metin: \"" + code.prefix + "\" ile ba\u015Flamal\u0131";
+            let combined4 = "Cha\u00EEne invalide : doit commencer par \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Ge\u00E7ersiz metin: \"" + code.suffix + "\" ile bitmeli";
+            combined4 = "Cha\u00EEne invalide : doit se terminer par \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Ge\u00E7ersiz metin: \"" + code.includes + "\" i\u00E7ermeli";
+            combined4 = "Cha\u00EEne invalide : doit inclure \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Ge\u00E7ersiz metin: " + code.pattern + " desenine uymal\u0131";
+            combined4 = "Cha\u00EEne invalide : doit correspondre au motif " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Ge\u00E7ersiz " + format;
+            combined4 = "" + format + " invalide";
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Ge\u00E7ersiz say\u0131: " + code.divisor + " ile tam b\u00F6l\u00FCnebilmeli";
+          return "Nombre invalide : doit \u00EAtre un multiple de " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str9 = "";
+          let str7 = "";
+          let str8 = "";
           if (code.keys.length > 1) {
-            str9 = "lar";
+            str8 = "s";
+          }
+          if (code.keys.length > 1) {
+            str7 = "s";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Tan\u0131nmayan anahtar" + str9 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "Cl\u00E9" + str8 + " non reconnue" + str7 + " : " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "" + code.origin + " i\u00E7inde ge\u00E7ersiz anahtar";
+            return "Cl\u00E9 invalide dans " + code.origin;
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "" + code.origin + " i\u00E7inde ge\u00E7ersiz de\u011Fer";
+                return "Valeur invalide dans " + code.origin;
               }
             }
-            return "Ge\u00E7ersiz de\u011Fer";
+            return "Entr\u00E9e invalide";
           }
         }
       };

@@ -1,5 +1,5 @@
 // Module ID: 1597
-// Function ID: 17812
+// Function ID: 17813
 // Name: mockedRequestAnimationFrame
 // Dependencies: []
 

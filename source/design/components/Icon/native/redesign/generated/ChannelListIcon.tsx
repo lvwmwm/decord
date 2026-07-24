@@ -1,10 +1,10 @@
-// Module ID: 16211
-// Function ID: 125913
+// Module ID: 16258
+// Function ID: 126237
 // Name: ChannelListIcon
-// Dependencies: [31, 33, 689, 3833, 16212, 2]
+// Dependencies: [31, 33, 689, 3833, 16259, 2]
 // Exports: ChannelListIcon
 
-// Module 16211 (ChannelListIcon)
+// Module 16258 (ChannelListIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ChannelListIcon = function ChannelListIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(16212) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(16259) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(16212) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(16259) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

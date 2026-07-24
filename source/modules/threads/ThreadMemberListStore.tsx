@@ -1,9 +1,9 @@
-// Module ID: 7096
-// Function ID: 56920
+// Module ID: 7095
+// Function ID: 56933
 // Name: _isNativeReflectConstruct
 // Dependencies: [15, 17, 18, 57, 6, 7, 1348, 1917, 5657, 4217, 4810, 1849, 653, 22, 21, 3763, 3969, 1327, 566, 686, 2]
 
-// Module 7096 (_isNativeReflectConstruct)
+// Module 7095 (_isNativeReflectConstruct)
 import calculateElevatedPermissions from "calculateElevatedPermissions";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import initialize from "initialize";

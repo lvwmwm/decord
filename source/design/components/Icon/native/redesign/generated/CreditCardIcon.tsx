@@ -1,10 +1,10 @@
-// Module ID: 11067
-// Function ID: 86140
+// Module ID: 11094
+// Function ID: 86329
 // Name: CreditCardIcon
-// Dependencies: [31, 33, 689, 3833, 11068, 2]
+// Dependencies: [31, 33, 689, 3833, 11095, 2]
 // Exports: CreditCardIcon
 
-// Module 11067 (CreditCardIcon)
+// Module 11094 (CreditCardIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const CreditCardIcon = function CreditCardIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11068) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11095) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11068) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11095) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

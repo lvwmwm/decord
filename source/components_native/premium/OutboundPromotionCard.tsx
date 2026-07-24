@@ -1,10 +1,10 @@
-// Module ID: 12487
-// Function ID: 96775
+// Module ID: 12540
+// Function ID: 97099
 // Name: TermsAndConditionsActionSheet
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 4973, 5187, 5186, 1212, 4126, 4120, 4066, 7452, 12488, 4471, 12489, 1934, 7450, 4543, 5459, 4098, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 4973, 5187, 5186, 1212, 4126, 4120, 4066, 7428, 12541, 4471, 12542, 1934, 7426, 4543, 4098, 2]
 // Exports: default
 
-// Module 12487 (TermsAndConditionsActionSheet)
+// Module 12540 (TermsAndConditionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -132,13 +132,13 @@ export default function OutboundPromotionCard(outboundPromotion) {
   const intl3 = outboundPromotion(first[10]).intl;
   obj13.children = intl3.format(outboundPromotion(first[10]).t.sCm3Zb, {
     onClick() {
-      let obj = code(first[22]);
+      let obj = code(first[21]);
       obj.hideActionSheet();
       obj = { termsAndConditions: outboundPromotion.outboundTermsAndConditions };
-      code(first[22]).openLazy(() => Promise.resolve(outer2_10), "OutboundPromotionTermsAndConditions-" + outboundPromotion.id, obj);
+      code(first[21]).openLazy(() => Promise.resolve(outer2_10), "OutboundPromotionTermsAndConditions-" + outboundPromotion.id, obj);
     }
   });
-  obj12.children = callback2(outboundPromotion(first[21]).TextWithIOSLinkWorkaround, obj13);
+  obj12.children = callback2(outboundPromotion(first[11]).Text, obj13);
   items3[1] = callback2(closure_5, obj12);
   obj1.children = items3;
   return callback3(closure_5, obj1);

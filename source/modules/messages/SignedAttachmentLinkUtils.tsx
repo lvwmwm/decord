@@ -1,10 +1,10 @@
-// Module ID: 9581
-// Function ID: 74646
+// Module ID: 9617
+// Function ID: 74857
 // Name: isAttachmentUrl
 // Dependencies: [5, 653, 664, 4161, 1443, 507, 2]
 // Exports: isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9581 (isAttachmentUrl)
+// Module 9617 (isAttachmentUrl)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
 import set from "set";

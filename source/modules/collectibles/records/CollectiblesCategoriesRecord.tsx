@@ -1,14 +1,13 @@
 // Module ID: 6792
-// Function ID: 53650
+// Function ID: 53667
 // Name: CollectiblesCategoriesRecord
-// Dependencies: [6, 7, 6793, 6775, 6796, 2]
+// Dependencies: [6, 7, 6793, 6775, 2]
 
 // Module 6792 (CollectiblesCategoriesRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import StorefrontCollectionRecord from "StorefrontCollectionRecord";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { CollectiblesUserDiscountRecord as closure_4 } from "CollectiblesUserDiscountRecord";
 
 const tmp2 = (() => {
   class CollectiblesCategoriesRecord {
@@ -18,12 +17,6 @@ const tmp2 = (() => {
       this.categories = categories.map((arg0) => outer2_3.fromServer(arg0));
       collections = arg0.collections;
       this.collections = collections.map((arg0) => outer2_2.fromServer(arg0));
-      user_discounts = arg0.user_discounts;
-      mapped = undefined;
-      if (null != user_discounts) {
-        mapped = user_discounts.map((arg0) => outer2_4.fromServer(arg0));
-      }
-      this.userDiscounts = mapped;
       return;
     }
   }

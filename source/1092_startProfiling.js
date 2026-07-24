@@ -1,5 +1,5 @@
 // Module ID: 1092
-// Function ID: 12522
+// Function ID: 12523
 // Name: startProfiling
 // Dependencies: [65, 27, 978, 794, 1093, 1094, 1098, 1099, 977, 1100]
 // Exports: hermesProfilingIntegration

@@ -1,10 +1,10 @@
-// Module ID: 8848
-// Function ID: 69795
+// Module ID: 8887
+// Function ID: 70010
 // Name: _getFilterBlob
-// Dependencies: [5, 1849, 8849, 7851, 653, 44, 8851, 4227, 8854, 1392, 8850, 8853, 8855, 2]
+// Dependencies: [5, 1849, 8888, 7940, 653, 44, 8890, 4227, 8893, 1392, 8889, 8892, 8894, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 8848 (_getFilterBlob)
+// Module 8887 (_getFilterBlob)
 import invariant from "invariant";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ function _getFilterBlob() {
   return obj(...arguments);
 }
 function applyBackgroundMediaFilterSettings(arg0, target, graph, image, blob) {
-  let obj = require(8851) /* _fetchVideoFilterAssets */;
+  let obj = require(8890) /* _fetchVideoFilterAssets */;
   obj = { graph, target, image, blob };
   const result = obj.applyMediaFilterSettings({ [arg0]: obj });
 }
@@ -55,9 +55,9 @@ export const applyBackgroundOptionPreview = function applyBackgroundOptionPrevie
 export const applyInitialVideoBackgroundOption = function applyInitialVideoBackgroundOption() {
   currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    let obj = require(8853) /* getOptionFromSettingsFiltered */;
+    let obj = require(8892) /* getOptionFromSettingsFiltered */;
     const lastUsedVideoBackgroundOption = obj.getLastUsedVideoBackgroundOption(currentUser);
-    let tmp6 = importDefault(8855)();
+    let tmp6 = importDefault(8894)();
     if (tmp6) {
       tmp6 = !hasBeenApplied.hasBeenApplied;
     }

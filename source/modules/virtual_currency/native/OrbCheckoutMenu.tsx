@@ -1,10 +1,10 @@
-// Module ID: 14669
-// Function ID: 111818
+// Module ID: 14716
+// Function ID: 112139
 // Name: OrbCheckoutMenu
-// Dependencies: [57, 31, 33, 4130, 4337, 11831, 1934, 3831, 5167, 4126, 7512, 4543, 2]
+// Dependencies: [57, 31, 33, 4130, 4337, 11858, 1934, 3831, 5167, 4126, 7574, 4543, 2]
 // Exports: default
 
-// Module 14669 (OrbCheckoutMenu)
+// Module 14716 (OrbCheckoutMenu)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ export default function OrbCheckoutMenu() {
     },
     isClearable: true
   };
-  items1[1] = callback2(first(7512).TextInput, obj);
+  items1[1] = callback2(first(7574).TextInput, obj);
   const obj1 = { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" };
   items1[2] = callback2(first(4126).Text, obj1);
   const obj2 = { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == first };

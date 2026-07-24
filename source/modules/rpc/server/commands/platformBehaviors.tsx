@@ -1,9 +1,9 @@
-// Module ID: 13431
-// Function ID: 103317
+// Module ID: 13484
+// Function ID: 103644
 // Name: sum
 // Dependencies: [482, 2]
 
-// Module 13431 (sum)
+// Module 13484 (sum)
 const result = require("set").fileFinishedImporting("modules/rpc/server/commands/platformBehaviors.tsx");
 
 export default {

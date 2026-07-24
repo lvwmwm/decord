@@ -1,5 +1,5 @@
 // Module ID: 1289
-// Function ID: 15063
+// Function ID: 15064
 // Name: binaryReadOptions
 // Dependencies: [57, 164, 65, 6, 7, 1290, 1288, 1291]
 // Exports: binaryReadOptions

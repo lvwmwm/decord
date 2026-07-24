@@ -1,10 +1,10 @@
-// Module ID: 10449
-// Function ID: 80632
+// Module ID: 10478
+// Function ID: 80824
 // Name: _computeActivityPartyPrivacyFlags
-// Dependencies: [653, 3803, 587, 1360, 6982, 2]
+// Dependencies: [653, 3803, 587, 1360, 6981, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10449 (_computeActivityPartyPrivacyFlags)
+// Module 10478 (_computeActivityPartyPrivacyFlags)
 import ME from "ME";
 
 let closure_3;
@@ -91,7 +91,7 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   }
   let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
   if (hasFlagResult) {
-    hasFlagResult = importDefault(6982)(remoteApplicationActivity);
+    hasFlagResult = importDefault(6981)(remoteApplicationActivity);
   }
   return hasFlagResult;
 };

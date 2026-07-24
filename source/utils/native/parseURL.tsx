@@ -1,7 +1,7 @@
 // Module ID: 4111
-// Function ID: 34016
+// Function ID: 34017
 // Name: parseQuery
-// Dependencies: [57, 653, 655, 4112, 4113, 1440, 3829, 1445, 4114, 4119, 12214, 4366, 12855, 1443, 4321, 8954, 6644, 1553, 477, 8906, 675, 490, 12856, 2]
+// Dependencies: [57, 653, 655, 4112, 4113, 1440, 3829, 1445, 4114, 4119, 12241, 4366, 12907, 1443, 4321, 8993, 6644, 1553, 477, 8945, 675, 490, 12908, 2]
 // Exports: default
 
 // Module 4111 (parseQuery)
@@ -204,7 +204,7 @@ export default function parseURL(target) {
                                             sanitizeUrlResult = isValidUUID;
                                             sanitizeUrlResult = dependencyMap;
                                             if (isValidUUID(4119).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                              obj2 = isValidUUID(12214);
+                                              obj2 = isValidUUID(12241);
                                               const tmp12 = callback(findCodedLinkResult.code.split("-"), 2)[1];
                                               if (obj2.isVirtualCurrencyEnabled().enabled) {
                                                 if (tmp11 === constants2.ORBS) {
@@ -267,7 +267,7 @@ export default function parseURL(target) {
     } else {
       sanitizeUrlResult = isValidUUID;
       sanitizeUrlResult = dependencyMap;
-      obj = isValidUUID(12855);
+      obj = isValidUUID(12907);
       const result = obj.findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
@@ -447,7 +447,7 @@ export default function parseURL(target) {
                   }
                 }
                 if (null != pathname.match(closure_16)) {
-                  obj12 = isValidUUID(8954);
+                  obj12 = isValidUUID(8993);
                   let tmp33 = str13;
                   if (null != query) {
                     tmp33 = query;
@@ -667,7 +667,7 @@ export default function parseURL(target) {
                         if (null != userId) {
                           tmp37 = null;
                           if (null != fingerprint2) {
-                            obj18 = isValidUUID(8906);
+                            obj18 = isValidUUID(8945);
                             const obj59 = { location: "parseUrl" };
                             tmp37 = null;
                             if (obj18.getSecureFramesDeeplinkExperiment(obj59).enabled) {
@@ -832,9 +832,9 @@ export default function parseURL(target) {
                             sanitizeUrlResult = importDefault;
                             sanitizeUrlResult = dependencyMap;
                             sanitizeUrlResult = closure_5;
-                            obj78.settingsSection = importDefault(12856)(closure_5, 655);
+                            obj78.settingsSection = importDefault(12908)(closure_5, 655);
                             sanitizeUrlResult = closure_6;
-                            obj78.settingsSubsection = importDefault(12856)(closure_6, 4112);
+                            obj78.settingsSubsection = importDefault(12908)(closure_6, 4112);
                             obj77.payload = obj78;
                             return obj77;
                           } else {
@@ -855,9 +855,9 @@ export default function parseURL(target) {
                               sanitizeUrlResult = importDefault;
                               sanitizeUrlResult = dependencyMap;
                               sanitizeUrlResult = closure_5;
-                              obj80.settingsSection = importDefault(12856)(closure_5, 653);
+                              obj80.settingsSection = importDefault(12908)(closure_5, 653);
                               sanitizeUrlResult = closure_6;
-                              obj80.settingsSubsection = importDefault(12856)(closure_6, 655);
+                              obj80.settingsSubsection = importDefault(12908)(closure_6, 655);
                               obj80.feature = sanitizeUrlResult(sanitizeUrlResult).feature;
                               obj79.payload = obj80;
                               return obj79;

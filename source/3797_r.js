@@ -1,5 +1,5 @@
 // Module ID: 3797
-// Function ID: 29610
+// Function ID: 29611
 // Name: r
 // Dependencies: []
 
@@ -6656,10 +6656,10 @@ let fn = () => {
             assetsUrl = configuration.gatewayConfiguration.assetsUrl;
             isDebug = configuration.isDebug;
           } else {
-            tmp2 = f30189;
+            tmp2 = f30190;
             tmp4 = globalThis;
             _Boolean = Boolean;
-            obj = f30189.create(global.authorization);
+            obj = f30190.create(global.authorization);
             assetsUrl = obj;
             isDebug = Boolean(global.isDebug);
           }
@@ -6866,7 +6866,7 @@ let fn = () => {
               });
               _setTimeout = setTimeout;
               tmp22 = INTEGRATION_TIMEOUT_MS;
-              f30189 = setTimeout(() => {
+              f30190 = setTimeout(() => {
                 outer1_19.sendEvent(self._clientPromise, "custom.hosted-fields.load.timed-out");
                 self._emit("timeout");
               }, INTEGRATION_TIMEOUT_MS);
@@ -9473,7 +9473,7 @@ let fn = () => {
         _initialize() {
           self = this;
           _client = this._client;
-          f30428 = setTimeout(() => {
+          f30429 = setTimeout(() => {
             outer1_4.sendEvent(_client, "local-payment.load.timed-out");
           }, INTEGRATION_TIMEOUT_MS);
           promise = new Promise((arg0) => {
@@ -11164,7 +11164,7 @@ let fn = () => {
           tmp = new closure_4();
           assign = tmp;
           configuration = global.getConfiguration();
-          f30532 = setTimeout(() => {
+          f30533 = setTimeout(() => {
             getConfiguration.sendEvent(getConfiguration, "paypal-checkout.frame-service.timed-out");
             tmp.reject(new outer1_5(outer1_7.PAYPAL_START_VAULT_INITIATED_CHECKOUT_SETUP_FAILED));
           }, INTEGRATION_TIMEOUT_MS);
@@ -11994,7 +11994,7 @@ let fn = () => {
         _initialize() {
           self = this;
           _client = this._client;
-          f30588 = setTimeout(() => {
+          f30589 = setTimeout(() => {
             outer1_8.sendEvent(_client, "paypal.load.timed-out");
           }, INTEGRATION_TIMEOUT_MS);
           promise = new Promise((arg0) => {
@@ -13905,16 +13905,80 @@ let fn = () => {
                 if ("NOACTION" !== ActionCode) {
                   if ("FAILURE" !== ActionCode) {
                     if ("ERROR" === ActionCode) {
-                      outer1_5.sendEvent(self._createPromise, "three-d-secure.verification-flow.canceled");
-                      const prototype = outer1_3.prototype;
-                      const tmp4 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_CANCELED);
-                      let obj = {};
-                      obj = {};
-                      ({ ErrorNumber: obj2.code, ErrorDescription: obj2.description } = ActionCode);
-                      obj.originalError = obj;
-                      tmp4.details = obj;
-                      self._verifyCardPromisePlus.reject(tmp4);
-                      const _verifyCardPromisePlus = self._verifyCardPromisePlus;
+                      outer1_5.sendEvent(self._createPromise, `three-d-secure.verification-flow.cardinal-sdk-error.${ActionCode.ErrorNumber}`);
+                      switch (ActionCode.ErrorNumber) {
+                        case 10001:
+                          let prototype5 = outer1_3.prototype;
+                          let tmp31 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_SETUP_TIMEDOUT);
+                          let tmp11 = tmp31;
+                          let obj = {};
+                          obj = { code: ActionCode.ErrorNumber, description: ActionCode.ErrorDescription };
+                          obj.originalError = obj;
+                          tmp11.details = obj;
+                          let _verifyCardPromisePlus = self._verifyCardPromisePlus;
+                          _verifyCardPromisePlus.reject(tmp11);
+                        break;
+                        case 10002:
+                          prototype5 = outer1_3.prototype;
+                          tmp31 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_SETUP_TIMEDOUT);
+                          tmp11 = tmp31;
+                          obj = {};
+                          obj = { code: ActionCode.ErrorNumber, description: ActionCode.ErrorDescription };
+                          obj.originalError = obj;
+                          tmp11.details = obj;
+                          _verifyCardPromisePlus = self._verifyCardPromisePlus;
+                          _verifyCardPromisePlus.reject(tmp11);
+                        break;
+                        case 10003:
+                          let prototype4 = outer1_3.prototype;
+                          let tmp26 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_RESPONSE_TIMEDOUT);
+                          tmp11 = tmp26;
+                        break;
+                        case 10004:
+                          let prototype6 = outer1_3.prototype;
+                          let tmp36 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_ERROR);
+                          tmp11 = tmp36;
+                        break;
+                        case 10005:
+                          let prototype3 = outer1_3.prototype;
+                          let tmp21 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_BAD_CONFIG);
+                          tmp11 = tmp21;
+                        break;
+                        case 10006:
+                          prototype3 = outer1_3.prototype;
+                          tmp21 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_BAD_CONFIG);
+                          tmp11 = tmp21;
+                        break;
+                        case 10007:
+                          prototype4 = outer1_3.prototype;
+                          tmp26 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_RESPONSE_TIMEDOUT);
+                          tmp11 = tmp26;
+                        break;
+                        case 10008:
+                          let prototype2 = outer1_3.prototype;
+                          let tmp16 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_BAD_JWT);
+                          tmp11 = tmp16;
+                        break;
+                        case 10009:
+                          prototype4 = outer1_3.prototype;
+                          tmp26 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_RESPONSE_TIMEDOUT);
+                          tmp11 = tmp26;
+                        break;
+                        case 10010:
+                          prototype2 = outer1_3.prototype;
+                          tmp16 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_BAD_JWT);
+                          tmp11 = tmp16;
+                        break;
+                        case 10011:
+                          outer1_5.sendEvent(self._createPromise, "three-d-secure.verification-flow.canceled");
+                          const prototype = outer1_3.prototype;
+                          tmp11 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_CANCELED);
+                        break;
+                        default:
+                          prototype6 = outer1_3.prototype;
+                          tmp36 = new outer1_3(outer1_7.THREEDS_CARDINAL_SDK_ERROR);
+                          tmp11 = tmp36;
+                      }
                     }
                   }
                 }

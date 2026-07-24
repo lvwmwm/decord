@@ -1,10 +1,10 @@
-// Module ID: 14179
-// Function ID: 108992
+// Module ID: 14229
+// Function ID: 109315
 // Name: ChannelRowItem
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 9096, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 9134, 4126, 2]
 // Exports: default
 
-// Module 14179 (ChannelRowItem)
+// Module 14229 (ChannelRowItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import { StatusTypes } from "ME";
@@ -77,7 +77,7 @@ export default function ChannelRowItem(isUnread) {
     const items2 = [avatar1, avatar2];
     obj3.sources = items2;
     obj3.size = require(1273) /* Button */.AvatarSizes.LARGE_48;
-    let tmp12 = callback(require(9096) /* FacepileGroupDMAvatar */.FacepileGroupDMAvatar, obj3);
+    let tmp12 = callback(require(9134) /* FacepileGroupDMAvatar */.FacepileGroupDMAvatar, obj3);
   } else {
     const obj4 = { status, source: avatar1 };
     obj4.cutout = obj4;

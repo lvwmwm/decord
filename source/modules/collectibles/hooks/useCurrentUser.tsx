@@ -1,10 +1,10 @@
-// Module ID: 8667
-// Function ID: 68589
+// Module ID: 8708
+// Function ID: 68809
 // Name: useCurrentUser
 // Dependencies: [1849, 566, 44, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8667 (useCurrentUser)
+// Module 8708 (useCurrentUser)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 15267
-// Function ID: 116485
+// Module ID: 15314
+// Function ID: 116807
 // Name: getCoverImageURI
 // Dependencies: [3752, 4369, 2]
 // Exports: getCoverImageURI
 
-// Module 15267 (getCoverImageURI)
+// Module 15314 (getCoverImageURI)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

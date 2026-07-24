@@ -1,10 +1,10 @@
-// Module ID: 16361
-// Function ID: 127713
+// Module ID: 16408
+// Function ID: 128037
 // Name: EnableCommunityModalIcons
-// Dependencies: [57, 6, 7, 31, 482, 3976, 16362, 16363, 16364, 16368, 16369, 7607, 4066, 2]
+// Dependencies: [57, 6, 7, 31, 482, 3976, 16409, 16410, 16411, 16415, 16416, 7696, 4066, 2]
 // Exports: default
 
-// Module 16361 (EnableCommunityModalIcons)
+// Module 16408 (EnableCommunityModalIcons)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import closure_5 from "registerAsset";

@@ -1,10 +1,10 @@
-// Module ID: 13861
-// Function ID: 106105
+// Module ID: 13912
+// Function ID: 106429
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [31, 27, 5066, 1194, 4812, 1921, 653, 33, 4130, 689, 4066, 566, 12119, 5472, 4938, 4098, 13860, 1934, 8970, 13862, 7495, 13865, 4541, 13866, 2]
+// Dependencies: [31, 27, 5066, 1194, 4812, 1921, 653, 33, 4130, 689, 4066, 566, 12145, 5470, 4938, 4098, 13911, 1934, 9009, 13913, 7636, 13916, 4541, 13917, 2]
 // Exports: UserSettingsConnections
 
-// Module 13861 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 13912 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import result from "result";
 import { ActivityIndicator } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   const authorizedAppsFetchState = stateFromStoresObject1.authorizedAppsFetchState;
   const authorizedApps = stateFromStoresObject1.authorizedApps;
   const obj3 = selectedPlatformType(566);
-  const tmp4Result = importDefault(12119)(id.getId(), { includeHidden: true });
+  const tmp4Result = importDefault(12145)(id.getId(), { includeHidden: true });
   const prop = tmp4Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
   const effect = authorizedAppsFetchState.useEffect(() => {
@@ -73,7 +73,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp4Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp13 = callback(importDefault(13862), {});
+          let tmp13 = callback(importDefault(13913), {});
         }
       }
       obj = { style: tmp.form };
@@ -88,7 +88,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
       obj = { spacing: 16, children: accounts.map((account) => outer1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id)) };
       items5[1] = callback(selectedPlatformType(4541).Stack, obj);
       obj.children = items5;
-      tmp13 = callback2(selectedPlatformType(7495).Form, obj);
+      tmp13 = callback2(selectedPlatformType(7636).Form, obj);
     }
     return tmp13;
   }

@@ -1,10 +1,10 @@
-// Module ID: 8960
-// Function ID: 70640
+// Module ID: 8999
+// Function ID: 70855
 // Name: getIsSocialLayerParentApplication
 // Dependencies: [31, 653, 7371, 2]
 // Exports: default
 
-// Module 8960 (getIsSocialLayerParentApplication)
+// Module 8999 (getIsSocialLayerParentApplication)
 import result from "result";
 import { ApplicationFlags } from "ME";
 

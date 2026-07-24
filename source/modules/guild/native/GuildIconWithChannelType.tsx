@@ -1,10 +1,10 @@
-// Module ID: 9908
-// Function ID: 76654
+// Module ID: 9940
+// Function ID: 76848
 // Name: GuildIconWithChannelTypeSizes
-// Dependencies: [31, 27, 33, 5515, 4130, 689, 4593, 9909, 7873, 1273, 2]
+// Dependencies: [31, 27, 33, 5513, 4130, 689, 4593, 9941, 7961, 1273, 2]
 // Exports: GuildIconWithChannelType
 
-// Module 9908 (GuildIconWithChannelTypeSizes)
+// Module 9940 (GuildIconWithChannelTypeSizes)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   ({ guildIconSize, typeIconSize } = obj[size]);
   const typeIconPadding = tmp5.typeIconPadding;
   const gap = tmp5.gap;
-  const tmp6 = typeIconSize(5515).ImageSizes[guildIconSize];
+  const tmp6 = typeIconSize(5513).ImageSizes[guildIconSize];
   const dependencyMap = tmp6;
   const sum = typeIconSize + 2 * typeIconPadding;
   const sum1 = 0.5 + gap / tmp6;
@@ -52,16 +52,16 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   const memo2 = sum.useMemo(() => ({ width: typeIconSize, height: typeIconSize }), items2);
   let obj1 = typeIconSize(4593);
   const channelIcon = obj1.getChannelIcon(channel);
-  obj = { "aria-label": tmp, shape: typeIconSize(7873).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1 };
+  obj = { "aria-label": tmp, shape: typeIconSize(7961).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1 };
   obj = {};
   const tmp4 = callback3();
   const merged1 = Object.assign(merged);
   obj["size"] = guildIconSize;
-  const items3 = [callback(typeIconPadding(5515), obj), ];
+  const items3 = [callback(typeIconPadding(5513), obj), ];
   obj1 = { style: items4, children: callback(typeIconSize(1273).Icon, { style: items5, source: channelIcon }) };
   items4 = [tmp4.typeIconWrapper, memo1];
   items5 = [memo2];
   items3[1] = callback(View, obj1);
   obj.children = items3;
-  return callback2(typeIconSize(9909).Pile, obj);
+  return callback2(typeIconSize(9941).Pile, obj);
 };

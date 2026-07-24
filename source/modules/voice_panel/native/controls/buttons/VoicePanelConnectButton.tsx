@@ -1,10 +1,10 @@
-// Module ID: 15863
-// Function ID: 122611
+// Module ID: 15910
+// Function ID: 122933
 // Name: ConnectButton
-// Dependencies: [31, 1348, 33, 4130, 689, 10014, 15808, 566, 4345, 5723, 4944, 4472, 15864, 15867, 15868, 12354, 15862, 1212, 4126, 2]
+// Dependencies: [31, 1348, 33, 4130, 689, 10046, 15855, 566, 4345, 5723, 4944, 4472, 15911, 15914, 15915, 12381, 15909, 1212, 4126, 2]
 // Exports: default
 
-// Module 15863 (ConnectButton)
+// Module 15910 (ConnectButton)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 6939
-// Function ID: 55329
+// Module ID: 6938
+// Function ID: 55338
 // Name: __handleIntersections
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 6939 (__handleIntersections)
+// Module 6938 (__handleIntersections)
 function __handleIntersections(arr) {
   let closure_0 = arg1;
   const item = arr.forEach((target) => {

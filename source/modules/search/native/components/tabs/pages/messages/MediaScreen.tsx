@@ -1,8 +1,8 @@
-// Module ID: 15384
-// Function ID: 117425
-// Dependencies: [31, 5660, 10077, 9103, 11399, 653, 33, 15380, 15339, 15385, 15386, 11398, 3981, 10078, 8275, 15337, 13724, 7536, 7538, 15387, 15391, 15343, 2]
+// Module ID: 15431
+// Function ID: 117747
+// Dependencies: [31, 5660, 10109, 9141, 11427, 653, 33, 15427, 15386, 15432, 15433, 11426, 3981, 10110, 8319, 15384, 13775, 7581, 7583, 15434, 15438, 15390, 2]
 
-// Module 15384
+// Module 15431
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -25,14 +25,14 @@ const memoResult = importAllResult.memo(function MediaScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const tab = searchContext.tab;
   ({ isFocused, width } = searchContext);
-  let obj = searchContext(15380);
+  let obj = searchContext(15427);
   const contentContainerStyles = obj.useContentContainerStyles();
-  let tmp2 = tab(15339)(width);
+  let tmp2 = tab(15386)(width);
   const dependencyMap = tmp2;
-  const searchMessages = searchContext(15385).useSearchMessages(searchContext, tab);
-  let obj2 = searchContext(15385);
+  const searchMessages = searchContext(15432).useSearchMessages(searchContext, tab);
+  let obj2 = searchContext(15432);
   obj = { searchContext, tab, placeholderHeight: tmp2, numColumns: callback1 };
-  const searchMessagesLoadingState = searchContext(15386).useSearchMessagesLoadingState(obj);
+  const searchMessagesLoadingState = searchContext(15433).useSearchMessagesLoadingState(obj);
   const placeholderCount = searchMessagesLoadingState.placeholderCount;
   let items = [searchMessages, searchContext];
   ({ isFirstPageLoading, isNextPageLoading } = searchMessagesLoadingState);
@@ -51,9 +51,9 @@ const memoResult = importAllResult.memo(function MediaScreen(searchContext) {
       let obj = searchContext(3981);
       if (obj.isModalOpen(outer2_11)) {
         const searchResultsQuery = memo.getSearchResultsQuery(outer1_0);
-        const messages = placeholderCount.getMessages(searchContext(10078).getSearchTabFetchId(outer1_0, outer1_1, searchResultsQuery));
+        const messages = placeholderCount.getMessages(searchContext(10110).getSearchTabFetchId(outer1_0, outer1_1, searchResultsQuery));
         if (null != messages) {
-          const media = searchContext(11398).getMedia(outer1_0, messages);
+          const media = searchContext(11426).getMedia(outer1_0, messages);
           const items = [];
           const item = media.forEach((type) => {
             let tmp = type.type !== outer3_9.ATTACHMENT;
@@ -67,17 +67,17 @@ const memoResult = importAllResult.memo(function MediaScreen(searchContext) {
               items.push(type.sources);
             }
           });
-          const obj3 = searchContext(11398);
+          const obj3 = searchContext(11426);
           obj = { sources: items };
-          const result = searchContext(8275).setMediaViewerSources(obj);
-          const obj4 = searchContext(8275);
+          const result = searchContext(8319).setMediaViewerSources(obj);
+          const obj4 = searchContext(8319);
         }
-        const obj2 = searchContext(10078);
+        const obj2 = searchContext(10110);
       }
     });
   }, items1);
-  let obj3 = searchContext(15386);
-  const onPressMediaItem = searchContext(15337).useOnPressMediaItem({ searchContext, allMediaResults: memo, onEndReached: callback, onEndReachedThreshold: 500 });
+  let obj3 = searchContext(15433);
+  const onPressMediaItem = searchContext(15384).useOnPressMediaItem({ searchContext, allMediaResults: memo, onEndReached: callback, onEndReachedThreshold: 500 });
   const items2 = [onPressMediaItem, searchContext, searchMessages];
   callback1 = searchMessages.useCallback((media, index) => {
     media = media.media;
@@ -149,12 +149,12 @@ const memoResult = importAllResult.memo(function MediaScreen(searchContext) {
     return items;
   }, items3);
   obj = { data: memo1, searchContext, tab, isFocused, contentContainerStyle: contentContainerStyles.mediaContentContainer };
-  let obj5 = searchContext(15337);
-  obj.ItemSeparatorComponent = searchContext(15343).MediaVerticalSeparator;
+  let obj5 = searchContext(15384);
+  obj.ItemSeparatorComponent = searchContext(15390).MediaVerticalSeparator;
   obj.numColumns = callback1;
   obj.isFirstPageLoading = isFirstPageLoading;
   obj.isNextPageLoading = isNextPageLoading;
-  return jsx(tab(15387), { data: memo1, searchContext, tab, isFocused, contentContainerStyle: contentContainerStyles.mediaContentContainer });
+  return jsx(tab(15434), { data: memo1, searchContext, tab, isFocused, contentContainerStyle: contentContainerStyles.mediaContentContainer });
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/MediaScreen.tsx");
 

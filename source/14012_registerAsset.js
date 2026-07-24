@@ -1,0 +1,11 @@
+// Module ID: 14012
+// Function ID: 107138
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 14012 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 375, height: 229, scales: [1, 2, 3], hash: "33688e5a17ba6d5d12db0d817e82285c", name: "empty_quest_home", type: "png" };
+
+export default registerAsset.registerAsset(obj);

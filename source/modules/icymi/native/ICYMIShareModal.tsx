@@ -1,10 +1,10 @@
-// Module ID: 15229
-// Function ID: 116172
+// Module ID: 15276
+// Function ID: 116494
 // Name: Screenshot
-// Dependencies: [57, 5, 31, 27, 1348, 4468, 4467, 653, 8818, 4123, 33, 4130, 689, 8364, 1212, 15230, 3831, 1450, 3977, 8829, 15231, 4662, 3941, 3842, 5160, 9894, 9903, 4543, 4337, 7089, 1327, 6924, 7938, 491, 4665, 6691, 7939, 1557, 477, 5094, 9122, 5087, 9883, 2]
+// Dependencies: [57, 5, 31, 27, 1348, 4468, 4467, 653, 8857, 4123, 33, 4130, 689, 8408, 1212, 15277, 3831, 1450, 3977, 8868, 15278, 4662, 3941, 3842, 5160, 9926, 9935, 4543, 4337, 7088, 1327, 6923, 8025, 491, 4665, 6691, 8026, 1557, 477, 5094, 9158, 5087, 9915, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15229 (Screenshot)
+// Module 15276 (Screenshot)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -41,7 +41,7 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(8829);
+  let obj = setUri(8868);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" } };
   obj = { style: items1 };
   items1 = [tmp.preview, { width: ref(1450)().width }];
@@ -51,7 +51,7 @@ function Screenshot(setUri) {
   const tmp4 = ref(3977)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true };
   const obj4 = {};
-  const tmp6 = ref(15231);
+  const tmp6 = ref(15278);
   obj4.dark = setUri(3941).OverlayOpacity.LEVEL_7;
   obj4.light = setUri(3941).OverlayOpacity.LEVEL_8;
   obj3.mixAmount = obj4;
@@ -232,7 +232,7 @@ let result = require("result").fileFinishedImporting("modules/icymi/native/ICYMI
 export default ICYMIShareModal;
 export const GuildEventShareModal = function GuildEventShareModal(event) {
   event = event.event;
-  let obj = require(8364) /* SHARE_EVENT_DETAILS_LINK */;
+  let obj = require(8408) /* SHARE_EVENT_DETAILS_LINK */;
   obj = { guildId: event.guild_id, guildEventId: event.id };
   obj = {};
   const result = obj.SHARE_EVENT_DETAILS_LINK(obj);

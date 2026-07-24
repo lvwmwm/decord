@@ -1,10 +1,10 @@
-// Module ID: 8452
-// Function ID: 67427
+// Module ID: 8496
+// Function ID: 67655
 // Name: EditGuildScheduledEventResetWarningAlert
 // Dependencies: [31, 33, 4561, 1212, 2]
 // Exports: default
 
-// Module 8452 (EditGuildScheduledEventResetWarningAlert)
+// Module 8496 (EditGuildScheduledEventResetWarningAlert)
 import "result";
 import { jsx } from "jsxProd";
 

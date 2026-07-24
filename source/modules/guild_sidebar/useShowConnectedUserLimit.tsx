@@ -1,10 +1,10 @@
-// Module ID: 11393
-// Function ID: 88570
+// Module ID: 11421
+// Function ID: 88809
 // Name: formatNumber
-// Dependencies: [653, 8842, 2]
+// Dependencies: [653, 8881, 2]
 // Exports: default, useConnectedUserLimitFormatted
 
-// Module 11393 (formatNumber)
+// Module 11421 (formatNumber)
 import { MAX_STAGE_VOICE_USER_LIMIT as closure_2 } from "ME";
 
 function formatNumber(toFixed) {
@@ -35,7 +35,7 @@ function useConnectedUserLimit(arg0) {
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(8842)(channel).limit;
+  const limit = importDefault(8881)(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;

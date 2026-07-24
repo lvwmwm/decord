@@ -1,5 +1,5 @@
 // Module ID: 5664
-// Function ID: 48653
+// Function ID: 48663
 // Name: serializeChannelRanges
 // Dependencies: [6, 7, 1362, 22, 2]
 

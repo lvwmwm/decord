@@ -1,10 +1,10 @@
-// Module ID: 10921
-// Function ID: 84853
+// Module ID: 10948
+// Function ID: 85042
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [31, 27, 1849, 33, 4130, 689, 10919, 4098, 10464, 9463, 6947, 1212, 566, 5187, 4541, 10922, 4126, 2]
+// Dependencies: [31, 27, 1849, 33, 4130, 689, 10946, 4098, 10493, 9499, 6946, 1212, 566, 5187, 4541, 10949, 4126, 2]
 // Exports: default
 
-// Module 10921 (QuestRewardDetailsBottomSheet)
+// Module 10948 (QuestRewardDetailsBottomSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,13 +38,13 @@ function QuestRewardDetailsBottomSheet(quest) {
   let obj = quest(566);
   const items2 = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items2, () => outer1_5.getCurrentUser());
-  let obj1 = quest(9463);
+  let obj1 = quest(9499);
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { startExpanded: true };
   obj = { direction: "vertical", spacing: memo(689).space.PX_16, style: tmp.wrapper };
   obj1 = { align: "center", direction: "horizontal", spacing: memo(689).space.PX_16 };
   const obj2 = { quest, height: 56, width: 56, withAnimation: true };
-  const items3 = [callback(memo(10922), obj2), ];
+  const items3 = [callback(memo(10949), obj2), ];
   const obj3 = { direction: "vertical", spacing: memo(689).space.PX_4, style: tmp.rewardDetailsCopy };
   const obj4 = { variant: "eyebrow", color: "text-subtle" };
   let intl = quest(1212).intl;
@@ -87,7 +87,7 @@ export default function QuestRewardDetailsBottomSheetConnected(questId) {
     const obj = outer1_0(outer1_2[6]);
     outer1_1(outer1_2[7]).hideActionSheet();
   }, []);
-  let obj = require(10464) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10493) /* _createForOfIteratorHelperLoose */;
   const nonNullableQuest = obj.useNonNullableQuest(questId.questId, callback);
   let tmp3 = null;
   if (null != nonNullableQuest) {

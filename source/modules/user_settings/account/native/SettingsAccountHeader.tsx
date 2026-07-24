@@ -1,9 +1,9 @@
-// Module ID: 13649
-// Function ID: 104835
+// Module ID: 13700
+// Function ID: 105159
 // Name: RestrictedAccountRedirect
-// Dependencies: [31, 27, 3767, 1849, 653, 7483, 33, 4130, 689, 13650, 1212, 5796, 566, 9234, 9181, 5165, 4543, 2]
+// Dependencies: [31, 27, 3767, 1849, 653, 7563, 33, 4130, 689, 13701, 1212, 5796, 566, 9270, 9217, 5165, 4543, 2]
 
-// Module 13649 (RestrictedAccountRedirect)
+// Module 13700 (RestrictedAccountRedirect)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,7 +26,7 @@ function RestrictedAccountRedirect() {
     },
     noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   };
-  return callback(importDefault(13650), obj);
+  return callback(importDefault(13701), obj);
 }
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(() => {
   let obj = require(566) /* initialize */;
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let obj1 = require(9234) /* handleOpenEmailVerification */;
+  let obj1 = require(9270) /* handleOpenEmailVerification */;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
   const items1 = [_isNativeReflectConstruct];

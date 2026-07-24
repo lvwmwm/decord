@@ -1,10 +1,10 @@
-// Module ID: 8222
-// Function ID: 64986
+// Module ID: 8266
+// Function ID: 65214
 // Name: getPositiveValue
 // Dependencies: [2]
 // Exports: getAssetWHRatio
 
-// Module 8222 (getPositiveValue)
+// Module 8266 (getPositiveValue)
 function getPositiveValue(height, arg1) {
   let tmp = height;
   if (null == height) {

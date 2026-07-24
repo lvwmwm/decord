@@ -1,5 +1,5 @@
 // Module ID: 7214
-// Function ID: 58097
+// Function ID: 58126
 // Name: NativeModules
 // Dependencies: [5, 27, 7206, 7207]
 // Exports: acknowledgePurchaseAndroid, getInstallSourceAndroid, isFeatureSupported

@@ -1,10 +1,10 @@
-// Module ID: 12158
-// Function ID: 95192
+// Module ID: 12185
+// Function ID: 95432
 // Name: rows
-// Dependencies: [57, 31, 1917, 1838, 10065, 6979, 653, 482, 566, 675, 10064, 2]
+// Dependencies: [57, 31, 1917, 1838, 10097, 6978, 653, 482, 566, 675, 10096, 2]
 // Exports: default
 
-// Module 12158 (rows)
+// Module 12185 (rows)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,7 +46,7 @@ export default function _default(arg0, arg1, arg2, arg3) {
     } else {
       items = isFetchingRows.getMemberIds(lib.guild_id);
     }
-    let obj = lib(10064);
+    let obj = lib(10096);
     obj = { omitUserIds: new Set(items), guild: guild.getGuild(lib.guild_id), channel: lib, inviteTargetType: dependencyMap };
     const inviteSuggestions = obj.loadInviteSuggestions(obj);
     const set = new Set(items);

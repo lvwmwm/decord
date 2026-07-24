@@ -1,5 +1,5 @@
 // Module ID: 1077
-// Function ID: 12389
+// Function ID: 12390
 // Name: enrichWithThreadInformation
 // Dependencies: [77, 794, 1004, 1048]
 // Exports: addProfileToGlobalCache, addProfilesToEnvelope, attachProfiledThreadToEvent, createProfileChunkPayload, createProfilingEvent, findProfiledTransactionsFromEnvelope, getActiveProfilesCount, hasLegacyProfiling, isAutomatedPageLoadSpan, shouldProfileSession, shouldProfileSpanLegacy, startJSSelfProfile, takeProfileFromGlobalCache, validateProfileChunk

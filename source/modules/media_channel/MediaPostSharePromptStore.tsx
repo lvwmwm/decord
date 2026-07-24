@@ -1,9 +1,9 @@
-// Module ID: 7630
-// Function ID: 61136
+// Module ID: 7719
+// Function ID: 61422
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1908, 1194, 1348, 7631, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1908, 1194, 1348, 7720, 21, 566, 686, 2]
 
-// Module 7630 (_isNativeReflectConstruct)
+// Module 7719 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -89,7 +89,7 @@ tmp3 = new tmp3(require("dispatcher"), {
             }
           }
         }
-        obj2 = require(7631) /* isFirstMessageInMediaPost */;
+        obj2 = require(7720) /* isFirstMessageInMediaPost */;
       }
     }
   },

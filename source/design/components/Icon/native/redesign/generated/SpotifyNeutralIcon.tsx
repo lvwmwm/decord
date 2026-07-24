@@ -1,10 +1,10 @@
-// Module ID: 14943
-// Function ID: 113920
+// Module ID: 14990
+// Function ID: 114241
 // Name: SpotifyNeutralIcon
-// Dependencies: [31, 33, 689, 3833, 14944, 2]
+// Dependencies: [31, 33, 689, 3833, 14991, 2]
 // Exports: SpotifyNeutralIcon
 
-// Module 14943 (SpotifyNeutralIcon)
+// Module 14990 (SpotifyNeutralIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const SpotifyNeutralIcon = function SpotifyNeutralIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14944) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14991) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14944) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14991) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

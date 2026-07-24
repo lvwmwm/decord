@@ -1,10 +1,10 @@
-// Module ID: 8817
-// Function ID: 69489
+// Module ID: 8856
+// Function ID: 69704
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [31, 27, 8818, 33, 4130, 689, 1456, 8819, 8779, 2]
+// Dependencies: [31, 27, 8857, 33, 4130, 689, 1456, 8858, 8818, 2]
 // Exports: default
 
-// Module 8817 (UnifiedGiftModalRecipientSelectScreen)
+// Module 8856 (UnifiedGiftModalRecipientSelectScreen)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserRowModes } from "UserRowModes";
@@ -22,7 +22,7 @@ export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) 
   setRecipientUser = setRecipientUser.setRecipientUser;
   let obj = setRecipientUser(1456);
   const importDefault = obj.useNavigation();
-  obj = { style: _createForOfIteratorHelperLoose().container, children: jsx(importDefault(8819), obj) };
+  obj = { style: _createForOfIteratorHelperLoose().container, children: jsx(importDefault(8858), obj) };
   obj = {
     onSelectUser(user) {
       setRecipientUser(user);

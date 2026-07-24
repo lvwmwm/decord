@@ -1,9 +1,9 @@
-// Module ID: 13494
-// Function ID: 103852
+// Module ID: 13547
+// Function ID: 104179
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 57, 31, 27, 10440, 33, 4130, 566, 10939, 4543, 1212, 1184, 686, 1273, 12159, 4126, 3842, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 57, 31, 27, 10469, 33, 4130, 566, 10966, 4543, 1212, 1184, 686, 1273, 12186, 4126, 3842, 2]
 
-// Module 13494 (_isNativeReflectConstruct)
+// Module 13547 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import getSystemLocale from "getSystemLocale";

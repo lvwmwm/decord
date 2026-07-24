@@ -1,10 +1,10 @@
-// Module ID: 8664
-// Function ID: 68570
+// Module ID: 8705
+// Function ID: 68790
 // Name: useDefaultVariantIndex
 // Dependencies: [6790, 566, 6785, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 8664 (useDefaultVariantIndex)
+// Module 8705 (useDefaultVariantIndex)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

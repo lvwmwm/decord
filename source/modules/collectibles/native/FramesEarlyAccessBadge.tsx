@@ -1,10 +1,10 @@
-// Module ID: 8743
-// Function ID: 69137
+// Module ID: 8782
+// Function ID: 69352
 // Name: BadgeWithTooltip
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4066, 1212, 8564, 3976, 7871, 4126, 8703, 5449, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4066, 1212, 8609, 3976, 7486, 4126, 8744, 5449, 2]
 // Exports: default
 
-// Module 8743 (BadgeWithTooltip)
+// Module 8782 (BadgeWithTooltip)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -42,7 +42,7 @@ function BadgeWithTooltip(tooltipPosition) {
   }, []);
   const items = [tooltipPosition, stringResult, first, callback];
   const memo = callback.useMemo(() => ({ position: tooltipPosition, label: _slicedToArray, visible: first, onPress: callback }), items);
-  let obj = tooltipPosition(8564);
+  let obj = tooltipPosition(8609);
   const tooltip = obj.useTooltip(ref, memo);
   const items1 = [first];
   const effect = callback.useEffect(() => {
@@ -68,7 +68,7 @@ function BadgeWithTooltip(tooltipPosition) {
   obj = { ref, onPress: callback1, hitSlop: closure_9, accessibilityRole: "button", accessibilityLabel: stringResult1, accessibilityHint: stringResult, style: items2 };
   items2 = [tmp2.pillBase, isThemeDarkResult ? tmp2.pillDark : tmp2.pillLight];
   obj = { size: "xs", color: str };
-  const items3 = [callback(tooltipPosition(7871).NitroWheelIcon, obj), ];
+  const items3 = [callback(tooltipPosition(7486).NitroWheelIcon, obj), ];
   obj1 = { variant: "text-sm/bold", color: str, style: tmp2.text, children: stringResult1 };
   items3[1] = callback(tooltipPosition(4126).Text, obj1);
   obj.children = items3;
@@ -87,7 +87,7 @@ function StaticBadge() {
   obj = { accessibilityLabel: stringResult, style: items };
   items = [tmp2.pillBase, isThemeDarkResult ? tmp2.pillDark : tmp2.pillLight];
   obj = { size: "xs", color: str };
-  const items1 = [callback(require(7871) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+  const items1 = [callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
   const obj1 = { variant: "text-sm/bold", color: str, style: tmp2.text, children: stringResult };
   items1[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items1;
@@ -109,7 +109,7 @@ export default function _default(tooltipPosition) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = require(8703) /* isUserPaidTier2 */;
+  let obj = require(8744) /* isUserPaidTier2 */;
   if (!obj.useIsProfileFramesEarlyAccessPhase(tooltipPosition.location)) {
     return null;
   } else if (flag2) {

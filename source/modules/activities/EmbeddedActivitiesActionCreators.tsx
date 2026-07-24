@@ -1,10 +1,10 @@
-// Module ID: 10486
-// Function ID: 81163
+// Module ID: 10515
+// Function ID: 81355
 // Name: _runPrimaryAppCommandOrJoinEmbeddedActivity
-// Dependencies: [5, 7920, 4167, 4143, 4310, 4153, 1194, 1348, 1838, 3758, 1849, 4146, 1347, 4155, 10226, 653, 4156, 1345, 6979, 10482, 6996, 10487, 10513, 10514, 10819, 686, 10829, 10516, 4030, 4356, 7371, 7918, 10830, 1881, 10831, 10818, 8184, 675, 10816, 10836, 10521, 4470, 1212, 10438, 10825, 480, 4942, 3748, 10532, 4323, 507, 1327, 7460, 6691, 4140, 6924, 1336, 1334, 2]
+// Dependencies: [5, 8007, 4167, 4143, 4310, 4153, 1194, 1348, 1838, 3758, 1849, 4146, 1347, 4155, 10256, 653, 4156, 1345, 6978, 10511, 6995, 10516, 10542, 10543, 10848, 686, 10858, 10545, 4030, 4356, 7371, 8005, 10859, 1881, 10860, 10847, 8228, 675, 10845, 10865, 10550, 4470, 1212, 10467, 10854, 480, 4942, 3748, 10561, 4323, 507, 1327, 7540, 6691, 4140, 6923, 1336, 1334, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, fetchDeveloperApplications, fetchShelf, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 10486 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
+// Module 10515 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
 import _callSuper from "_callSuper";
 import { getOrFetchApplicationCommandIndexForTarget as closure_4 } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -87,7 +87,7 @@ function stopEmbeddedActivity(showFeedback) {
             const participant = importDefault(4323).selectParticipant(embeddedActivityLocationChannelId, null);
             const obj6 = importDefault(4323);
           }
-          obj4 = applicationId(10532);
+          obj4 = applicationId(10561);
         }
       }
     }

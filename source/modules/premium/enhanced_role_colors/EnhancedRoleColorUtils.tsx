@@ -1,5 +1,5 @@
 // Module ID: 1913
-// Function ID: 21580
+// Function ID: 21581
 // Name: extractColorStringsFromServerColors
 // Dependencies: [653, 665, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc

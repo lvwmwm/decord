@@ -1,10 +1,10 @@
-// Module ID: 12200
-// Function ID: 95368
+// Module ID: 12227
+// Function ID: 95608
 // Name: useThrottledActionHandler
 // Dependencies: [31, 33, 4543, 2]
 // Exports: default
 
-// Module 12200 (useThrottledActionHandler)
+// Module 12227 (useThrottledActionHandler)
 import result from "result";
 import { jsx } from "jsxProd";
 

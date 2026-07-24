@@ -1,17 +1,17 @@
-// Module ID: 8430
-// Function ID: 67171
+// Module ID: 8474
+// Function ID: 67399
 // Name: getNoResultsAltSource
-// Dependencies: [31, 27, 33, 7403, 8431, 8432, 8433, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 8475, 8476, 8477, 3976, 2]
 // Exports: NoResultsAlt
 
-// Module 8430 (getNoResultsAltSource)
+// Module 8474 (getNoResultsAltSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getNoResultsAltSource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

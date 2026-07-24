@@ -1,5 +1,5 @@
 // Module ID: 973
-// Function ID: 10477
+// Function ID: 10478
 // Name: reactNativeVersion
 // Dependencies: [27, 184, 974, 975, 170, 126]
 

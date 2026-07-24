@@ -1,10 +1,10 @@
-// Module ID: 14237
-// Function ID: 109379
+// Module ID: 14287
+// Function ID: 109702
 // Name: EyeDropperIcon
-// Dependencies: [31, 33, 689, 3833, 14238, 2]
+// Dependencies: [31, 33, 689, 3833, 14288, 2]
 // Exports: EyeDropperIcon
 
-// Module 14237 (EyeDropperIcon)
+// Module 14287 (EyeDropperIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const EyeDropperIcon = function EyeDropperIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14238) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14288) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14238) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14288) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

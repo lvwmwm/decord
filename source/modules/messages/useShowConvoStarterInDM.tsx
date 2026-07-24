@@ -1,10 +1,10 @@
-// Module ID: 11371
-// Function ID: 88406
+// Module ID: 11400
+// Function ID: 88646
 // Name: MAX_MESSAGES_ALLOWED_FOR_GREETING
-// Dependencies: [31, 5604, 4349, 3767, 1849, 653, 1355, 10403, 566, 2]
+// Dependencies: [31, 5602, 4349, 3767, 1849, 653, 1355, 10432, 566, 2]
 // Exports: useShowConvoStarterInDM
 
-// Module 11371 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
+// Module 11400 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
 import { useRef } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -33,9 +33,9 @@ export const useShowConvoStarterInDM = function useShowConvoStarterInDM(channel)
   if (tmp) {
     recipientId = channel.getRecipientId();
   }
-  const strangerDangerWarning = _require(10403).useStrangerDangerWarning(channel.id);
+  const strangerDangerWarning = _require(10432).useStrangerDangerWarning(channel.id);
   const hasFlagResult = channel.hasFlag(ChannelFlags.HAS_ONLY_SYSTEM_MESSAGES);
-  const obj = _require(10403);
+  const obj = _require(10432);
   const items = [recipientId, _isNativeReflectConstruct, strangerDangerWarning, hasFlagResult];
   const items1 = [strangerDangerWarning, tmp, channel.id, recipientId, hasFlagResult];
   return _require(566).useStateFromStores(items, () => {

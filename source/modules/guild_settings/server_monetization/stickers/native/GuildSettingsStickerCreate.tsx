@@ -1,8 +1,8 @@
-// Module ID: 16269
-// Function ID: 126647
-// Dependencies: [5, 57, 31, 27, 4991, 5035, 653, 1852, 3806, 33, 4130, 689, 5160, 9830, 5450, 3771, 4674, 16270, 9601, 4466, 4126, 1212, 4025, 1920, 4543, 4541, 4660, 9615, 16271, 9326, 5151, 1392, 8007, 7512, 7504, 2]
+// Module ID: 16316
+// Function ID: 126971
+// Dependencies: [5, 57, 31, 27, 4991, 5035, 653, 1852, 3806, 33, 4130, 689, 5160, 9862, 5450, 3771, 4674, 16317, 9637, 4466, 4126, 1212, 4025, 1920, 4543, 4541, 4660, 9651, 16318, 9362, 5151, 1392, 7437, 7574, 7645, 2]
 
-// Module 16269
+// Module 16316
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getAvatarURL";
@@ -166,7 +166,7 @@ export default importAllResult.forwardRef((stickerId) => {
   const callback = tmp12[1];
   const insets = importDefault(5160)({ includeKeyboardHeight: true }).insets;
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2 } }, { ref: ref2, offset: { type: "toBottom" } }];
-  const onFocus = importDefault(9830)({ insets, inputs: items, scrollViewRef: ref }).onFocus;
+  const onFocus = importDefault(9862)({ insets, inputs: items, scrollViewRef: ref }).onFocus;
   stickerById = undefined;
   const tmp11 = ref1(ref2.useState(undefined), 2);
   if (null != stickerId) {
@@ -287,8 +287,8 @@ export default importAllResult.forwardRef((stickerId) => {
   obj10.accessibilityLabel = intl6.string(stickerId(1212).t.O1REe1);
   if (null != tmp14Result) {
     const obj11 = { sticker: tmp14Result, size: importDefault(689).space.PX_96, animated: true };
-    let tmp37 = callback(importDefault(9615), obj11);
-    const tmp43 = importDefault(9615);
+    let tmp37 = callback(importDefault(9651), obj11);
+    const tmp43 = importDefault(9651);
   } else if (null != first) {
     const obj12 = {};
     const obj13 = { uri: first };
@@ -298,7 +298,7 @@ export default importAllResult.forwardRef((stickerId) => {
     tmp37 = callback(closure_6, obj12);
   } else {
     const obj14 = { size: "lg" };
-    tmp37 = callback(stickerId(16271).StickerPlusIcon, obj14);
+    tmp37 = callback(stickerId(16318).StickerPlusIcon, obj14);
   }
   obj10.children = tmp37;
   items4[1] = callback(stickerId(4660).PressableHighlight, obj10);
@@ -329,7 +329,7 @@ export default importAllResult.forwardRef((stickerId) => {
     const tmp49 = callback;
     const tmp52 = importDefault(5151);
   } else {
-    tmp49Result = callback(stickerId(8007).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp49Result = callback(stickerId(7437).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   const items5 = [tmp49Result, ];
   const obj19 = { variant: "text-md/semibold", color: "input-placeholder-text-default" };
@@ -366,7 +366,7 @@ export default importAllResult.forwardRef((stickerId) => {
   obj20.isClearable = true;
   obj20.returnKeyType = "next";
   obj20.submitBehavior = "submit";
-  items4[4] = callback(stickerId(7512).TextInput, obj20);
+  items4[4] = callback(stickerId(7574).TextInput, obj20);
   const obj21 = { ref: ref2, maxLength: 100 };
   const intl11 = stickerId(1212).intl;
   obj21.label = intl11.string(stickerId(1212).t.uGccej);
@@ -374,7 +374,7 @@ export default importAllResult.forwardRef((stickerId) => {
   obj21.placeholder = intl12.string(stickerId(1212).t.zwR0fa);
   obj21.onChange = tmp8;
   obj21.onFocus = onFocus;
-  items4[5] = callback(stickerId(7504).TextArea, obj21);
+  items4[5] = callback(stickerId(7645).TextArea, obj21);
   obj22 = {
     onPress: function handleSave() {
       return _handleSave(...arguments);

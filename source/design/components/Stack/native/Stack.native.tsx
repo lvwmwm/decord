@@ -1,5 +1,5 @@
 // Module ID: 4541
-// Function ID: 39841
+// Function ID: 39842
 // Name: Stack
 // Dependencies: [31, 27, 33, 4130, 2]
 // Exports: Stack

@@ -1,10 +1,10 @@
-// Module ID: 10821
-// Function ID: 84028
+// Module ID: 10850
+// Function ID: 84220
 // Name: ConfirmActivityGateContent
-// Dependencies: [31, 27, 33, 4130, 689, 10822, 4126, 1212, 4470, 1273, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 10851, 4126, 1212, 4470, 1273, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 10821 (ConfirmActivityGateContent)
+// Module 10850 (ConfirmActivityGateContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ const require = arg1;
 function ConfirmActivityGateContent(children) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.alertContainer };
-  const items = [callback(importDefault(10822), {}), ];
+  const items = [callback(importDefault(10851), {}), ];
   obj = { style: tmp.alertBodyText, variant: "text-md/normal", children: children.description };
   items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;

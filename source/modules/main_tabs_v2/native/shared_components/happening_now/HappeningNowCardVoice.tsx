@@ -1,9 +1,9 @@
-// Module ID: 14949
-// Function ID: 113950
+// Module ID: 14996
+// Function ID: 114271
 // Name: useVoiceChannelUsers
-// Dependencies: [31, 27, 6902, 1849, 4146, 14183, 653, 33, 4130, 675, 10815, 1934, 14932, 14184, 4658, 11962, 14942, 7749, 566, 22, 1327, 4319, 1212, 2]
+// Dependencies: [31, 27, 6901, 1849, 4146, 14233, 653, 33, 4130, 675, 10844, 1934, 14979, 14234, 4658, 11988, 14989, 7842, 566, 22, 1327, 4319, 1212, 2]
 
-// Module 14949 (useVoiceChannelUsers)
+// Module 14996 (useVoiceChannelUsers)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,8 +19,8 @@ let closure_11;
 const require = arg1;
 function useVoiceChannelUsers(voiceState) {
   const _require = voiceState;
-  const voiceUserAffinitySortType = _require(7749).useVoiceUserAffinitySortType("useVoiceChannelUsers");
-  const obj = _require(7749);
+  const voiceUserAffinitySortType = _require(7842).useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  const obj = _require(7842);
   let items = [closure_7, closure_6, _isNativeReflectConstruct];
   const items1 = [voiceUserAffinitySortType, voiceState.channelId];
   return _require(566).useStateFromStoresArray(items, () => {

@@ -1,7 +1,7 @@
 // Module ID: 1185
-// Function ID: 13506
+// Function ID: 13507
 // Name: _maybeBackfillMissingBreadcrumbsFromTelemetryRing
-// Dependencies: [5, 27, 653, 482, 787, 3, 1186, 1198, 675, 13124, 6837, 6842, 13125, 1184, 1554, 6838, 477, 4110, 1553, 6917, 650, 3994, 2]
+// Dependencies: [5, 27, 653, 482, 787, 3, 1186, 1198, 675, 13177, 6836, 6841, 13178, 1184, 1554, 6837, 477, 4110, 1553, 6916, 650, 3994, 2]
 // Exports: initSentry
 
 // Module 1185 (_maybeBackfillMissingBreadcrumbsFromTelemetryRing)
@@ -344,10 +344,10 @@ function trackCrash(event, extra, arg2) {
     track(tmp17.APP_CRASHED, obj);
   }
   markCrashHandled(event.event_id);
-  const AppCrashedReasons = require(13124) /* set */.AppCrashedReasons;
+  const AppCrashedReasons = require(13177) /* set */.AppCrashedReasons;
   const tmp16 = importDefault(675);
   const tmp27 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  obj1 = { name: require(6842) /* set */.MetricEvents.APP_CRASHED };
+  obj1 = { name: require(6841) /* set */.MetricEvents.APP_CRASHED };
   const items = ["reason:" + tmp27, ];
   let str7 = "unknown";
   if (null != level) {
@@ -355,7 +355,7 @@ function trackCrash(event, extra, arg2) {
   }
   items[1] = "level:" + str7;
   obj1.tags = items;
-  importDefault(6837).increment(obj1, true);
+  importDefault(6836).increment(obj1, true);
 }
 function sample(arg0) {
   return Math.random() <= arg0;
@@ -456,13 +456,13 @@ export const initSentry = function initSentry() {
           obj.tunnel = `/error-reporting-proxy/${str2}`;
           obj.autoInitializeNativeSdk = false;
           obj.beforeSend = outer1_17;
-          obj.dist = "6057";
+          obj.dist = "6065";
           obj.dsn = SentryStaffDsn;
           obj.environment = ReleaseChannel;
           obj.tracesSampleRate = 0;
           obj.sampleRate = 1;
           obj.ignoreErrors = outer1_11;
-          obj.release = "discord_android@340.4.0-2+340204";
+          obj.release = "discord_android@340.5.0-2+340205";
           const items = [outer1_7];
           obj.tracePropagationTargets = items;
           const items1 = [outer1_8, , ];
@@ -493,7 +493,7 @@ export const initSentry = function initSentry() {
           };
           obj4.init(obj);
           const obj8 = outer1_0(outer1_3[4]);
-          outer1_0(outer1_3[4]).setTag("buildNumber", "6057");
+          outer1_0(outer1_3[4]).setTag("buildNumber", "6065");
           const obj10 = outer1_0(outer1_3[4]);
           outer1_0(outer1_3[4]).setTag("appVersion", constants.Version);
           const obj11 = outer1_0(outer1_3[4]);

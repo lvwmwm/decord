@@ -1,10 +1,10 @@
-// Module ID: 10188
-// Function ID: 78674
+// Module ID: 10218
+// Function ID: 78865
 // Name: _addChannelToFavorites
-// Dependencies: [5, 1351, 3831, 1212, 9395, 10189, 1934, 2944, 9397, 2]
+// Dependencies: [5, 1351, 3831, 1212, 9431, 10219, 1934, 2944, 9433, 2]
 // Exports: default
 
-// Module 10188 (_addChannelToFavorites)
+// Module 10218 (_addChannelToFavorites)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -31,7 +31,7 @@ export default function buildFavoritesSectionButtons(channelId) {
         let obj = {};
         const intl2 = channelId(1212).intl;
         obj.label = intl2.string(importDefault(2944).TN4nAX);
-        obj.IconComponent = channelId(9395).StarIcon;
+        obj.IconComponent = channelId(9431).StarIcon;
         obj.isDestructive = true;
         obj.onPress = function onPress() {
           return (function removeChannelFromFavorites(channelId) {
@@ -45,7 +45,7 @@ export default function buildFavoritesSectionButtons(channelId) {
           obj = {};
           const intl = channelId(1212).intl;
           obj.label = intl.string(importDefault(2944).G9fGlP);
-          obj.IconComponent = channelId(9397).StarOutlineIcon;
+          obj.IconComponent = channelId(9433).StarOutlineIcon;
           obj.onPress = function onPress() {
             return (function addChannelToFavorites(channelId) {
               return outer2_5(...arguments);

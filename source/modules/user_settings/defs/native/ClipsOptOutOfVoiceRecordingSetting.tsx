@@ -1,9 +1,9 @@
-// Module ID: 13878
-// Function ID: 106210
+// Module ID: 13929
+// Function ID: 106534
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 7662, 3803, 686, 10095, 1212, 2]
+// Dependencies: [5, 7751, 3803, 686, 10127, 1212, 2]
 
-// Module 13878 (_updateClipsAllowVoiceRecording)
+// Module 13929 (_updateClipsAllowVoiceRecording)
 import getSystemLocale from "getSystemLocale";
 import createToggle from "createToggle";
 

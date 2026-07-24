@@ -1,10 +1,10 @@
-// Module ID: 5615
-// Function ID: 47824
+// Module ID: 5613
+// Function ID: 47821
 // Name: transformStorefrontSKUPricesServer
-// Dependencies: [31, 1921, 1849, 5616, 653, 1851, 22, 5617, 478, 1360, 566, 5611, 5618, 3776, 5625, 2]
+// Dependencies: [31, 1921, 1849, 5614, 653, 1851, 22, 5615, 478, 1360, 566, 5609, 5616, 3776, 5623, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformStorefrontPricesServer, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 5615 (transformStorefrontSKUPricesServer)
+// Module 5613 (transformStorefrontSKUPricesServer)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -32,13 +32,13 @@ function transformStorefrontRewardsResultMapServer(reward_result_id_map) {
 }
 function transformPriceSetAssignmentToStorefrontPurchaseType(arg0) {
   if (null == arg0) {
-    return require(5617) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.SELF_PURCHASE;
+    return require(5615) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.SELF_PURCHASE;
   } else if (constants.DEFAULT === arg0) {
-    return require(5617) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.SELF_PURCHASE;
+    return require(5615) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.SELF_PURCHASE;
   } else if (constants.GIFT === arg0) {
-    return require(5617) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.GIFT;
+    return require(5615) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.GIFT;
   } else {
-    return require(5617) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.SELF_PURCHASE;
+    return require(5615) /* StorefrontPromotionRewardType */.StorefrontPurchaseType.SELF_PURCHASE;
   }
 }
 function useResolvedUserPrice(sku) {
@@ -237,26 +237,26 @@ function formatSKUPrice(arg0, arg1) {
   const obj = {};
   let formatPriceResult = null;
   if (null != normalPrice) {
-    formatPriceResult = require(5618) /* formatSingleCurrencyPrice */.formatPrice(normalPrice.amount, normalPrice.currency);
-    const obj2 = require(5618) /* formatSingleCurrencyPrice */;
+    formatPriceResult = require(5616) /* formatSingleCurrencyPrice */.formatPrice(normalPrice.amount, normalPrice.currency);
+    const obj2 = require(5616) /* formatSingleCurrencyPrice */;
   }
   obj.normalPrice = formatPriceResult;
   let formatPriceResult1 = null;
   if (null != discountedPrice) {
-    formatPriceResult1 = require(5618) /* formatSingleCurrencyPrice */.formatPrice(discountedPrice.amount, discountedPrice.currency);
-    const obj3 = require(5618) /* formatSingleCurrencyPrice */;
+    formatPriceResult1 = require(5616) /* formatSingleCurrencyPrice */.formatPrice(discountedPrice.amount, discountedPrice.currency);
+    const obj3 = require(5616) /* formatSingleCurrencyPrice */;
   }
   obj.discountedPrice = formatPriceResult1;
   let formatPercentResult = null;
   if (null != discountPercent) {
-    formatPercentResult = require(5618) /* formatSingleCurrencyPrice */.formatPercent(arg1, -discountPercent / 100);
-    const obj4 = require(5618) /* formatSingleCurrencyPrice */;
+    formatPercentResult = require(5616) /* formatSingleCurrencyPrice */.formatPercent(arg1, -discountPercent / 100);
+    const obj4 = require(5616) /* formatSingleCurrencyPrice */;
   }
   obj.discountPercent = formatPercentResult;
   let formatPriceResult2 = null;
   if (null != userPrice) {
-    formatPriceResult2 = require(5618) /* formatSingleCurrencyPrice */.formatPrice(userPrice.amount, userPrice.currency);
-    const obj5 = require(5618) /* formatSingleCurrencyPrice */;
+    formatPriceResult2 = require(5616) /* formatSingleCurrencyPrice */.formatPrice(userPrice.amount, userPrice.currency);
+    const obj5 = require(5616) /* formatSingleCurrencyPrice */;
   }
   obj.userPrice = formatPriceResult2;
   return obj;

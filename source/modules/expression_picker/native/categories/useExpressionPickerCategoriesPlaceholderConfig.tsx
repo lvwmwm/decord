@@ -1,10 +1,10 @@
-// Module ID: 9419
-// Function ID: 73323
+// Module ID: 9455
+// Function ID: 73532
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [31, 653, 4130, 689, 8828, 2]
+// Dependencies: [31, 653, 4130, 689, 8867, 2]
 // Exports: default
 
-// Module 9419 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 9455 (useExpressionPickerCategoriesPlaceholderConfig)
 import result from "result";
 import { CATEGORY_ICON_SIZE } from "ME";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

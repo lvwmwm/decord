@@ -1,10 +1,10 @@
-// Module ID: 15203
-// Function ID: 115733
+// Module ID: 15250
+// Function ID: 116055
 // Name: WordTopic
-// Dependencies: [5, 57, 31, 27, 15197, 15204, 33, 8940, 9070, 4645, 15205, 9076, 4633, 13547, 11069, 9029, 15206, 9411, 15208, 9413, 9834, 4130, 689, 3848, 4543, 1557, 1456, 15210, 1934, 8321, 3831, 1212, 566, 8330, 4126, 2]
+// Dependencies: [5, 57, 31, 27, 15244, 15251, 33, 8979, 9109, 4645, 15252, 9114, 4633, 7503, 11096, 9068, 15253, 9447, 15255, 9449, 9866, 4130, 689, 3848, 4543, 1557, 1456, 15257, 1934, 8365, 3831, 1212, 566, 8374, 4126, 2]
 // Exports: default
 
-// Module 15203 (WordTopic)
+// Module 15250 (WordTopic)
 import GuildPrimaryCategory from "GuildPrimaryCategory";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -26,33 +26,33 @@ function WordTopic(categoryid) {
   categoryid = categoryid.categoryid;
   ({ selected, handlePress: importDefault } = categoryid);
   if (GuildPrimaryCategory.GAMING === categoryid) {
-    let tmp = callback2(categoryid(8940).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    let tmp = callback2(categoryid(8979).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.ENTERTAINMENT === categoryid) {
-    tmp = callback2(categoryid(9070).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(9109).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.GENERAL_CHATTING === categoryid) {
     tmp = callback2(categoryid(4645).ForumIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.SCIENCE_AND_TECH === categoryid) {
-    tmp = callback2(categoryid(15205).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(15252).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.MUSIC === categoryid) {
-    tmp = callback2(categoryid(9076).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(9114).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.EDUCATION === categoryid) {
     tmp = callback2(categoryid(4633).BookCheckIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.CREATIVE_ARTS === categoryid) {
-    tmp = callback2(categoryid(13547).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(7503).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.FINANCE === categoryid) {
-    tmp = callback2(categoryid(11069).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(11096).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.BOTS === categoryid) {
-    tmp = callback2(categoryid(9029).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(9068).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.SPORTS === categoryid) {
-    tmp = callback2(categoryid(15206).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(15253).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.TRAVEL_AND_FOOD === categoryid) {
-    tmp = callback2(categoryid(9411).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(9447).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.FASHION_AND_BEAUTY === categoryid) {
-    tmp = callback2(categoryid(15208).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(15255).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (GuildPrimaryCategory.FITNESS_AND_HEALTH === categoryid) {
-    tmp = callback2(categoryid(9413).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(9449).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (16 === categoryid) {
-    tmp = callback2(categoryid(9834).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp = callback2(categoryid(9866).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   }
   let obj = categoryid(3848);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });

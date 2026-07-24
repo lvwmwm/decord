@@ -1,9 +1,9 @@
-// Module ID: 8297
-// Function ID: 65504
+// Module ID: 8341
+// Function ID: 65732
 // Name: lerpVarWidthThumbnailScrollBounds
 // Dependencies: [2]
 
-// Module 8297 (lerpVarWidthThumbnailScrollBounds)
+// Module 8341 (lerpVarWidthThumbnailScrollBounds)
 let closure_0 = { code: "function lerpVarWidthThumbnailScrollBounds_portraitThumbnailHelpersTsx1(positions,position){if(positions.length===0)return 0;if(position<0){return 0;}if(position>=positions.length){position=positions.length;}const index=Math.floor(position);const fraction=position-index;if(index>=positions.length){return positions[positions.length-1].scrollStart;}const startPos=positions[index].scrollStart;const endPos=index<positions.length-1?positions[index+1].scrollStart:startPos;return startPos+fraction*(endPos-startPos);}" };
 const tmp2 = (() => {
   export function lerpVarWidthThumbnailScrollBounds(closure_1, arg1) {

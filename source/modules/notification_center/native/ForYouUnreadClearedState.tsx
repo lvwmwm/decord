@@ -1,10 +1,10 @@
-// Module ID: 15173
-// Function ID: 115519
+// Module ID: 15220
+// Function ID: 115841
 // Name: ForYouUnreadClearedState
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 9670, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 9704, 4126, 1212, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 15173 (ForYouUnreadClearedState)
+// Module 15220 (ForYouUnreadClearedState)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export const ForYouUnreadClearedState = function ForYouUnreadClearedState() {
   let obj = { style: tmp.container };
   obj = { style: tmp.imageContainer };
   const items = [callback(View, obj), , ];
-  obj = { source: importDefault(9670), style: tmp.icon, color: tmp.icon.color };
+  obj = { source: importDefault(9704), style: tmp.icon, color: tmp.icon.color };
   items[1] = callback(require(1273) /* Button */.Icon, obj);
   const obj1 = {};
   const obj2 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp.headerText };

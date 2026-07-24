@@ -1,5 +1,5 @@
 // Module ID: 1051
-// Function ID: 11256
+// Function ID: 11257
 // Name: getDefaultIntegrations
 // Dependencies: [794, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1049, 1008, 1006]
 

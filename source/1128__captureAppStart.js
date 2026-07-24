@@ -1,5 +1,5 @@
 // Module ID: 1128
-// Function ID: 12856
+// Function ID: 12857
 // Name: _captureAppStart
 // Dependencies: [65, 794, 977, 1129, 1098, 1131, 1132, 1133, 1134, 1135, 1136]
 // Exports: _clearRootComponentCreationTimestampMs, _setRootComponentCreationTimestampMs, appStartIntegration, captureAppStart

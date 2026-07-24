@@ -1,5 +1,5 @@
 // Module ID: 5691
-// Function ID: 48990
+// Function ID: 49000
 // Name: performRoleSubscriptionUpsellRedirect
 // Dependencies: [5, 653, 1355, 5692, 1934, 3, 2]
 

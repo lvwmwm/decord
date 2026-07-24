@@ -1,5 +1,5 @@
 // Module ID: 6604
-// Function ID: 50860
+// Function ID: 50871
 // Name: TypingIndicatorAbstractUI
 // Dependencies: [33, 5085, 6605, 2]
 // Exports: TypingIndicatorAbstractUI

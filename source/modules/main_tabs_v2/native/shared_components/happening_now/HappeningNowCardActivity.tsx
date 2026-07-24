@@ -1,9 +1,9 @@
-// Module ID: 14936
-// Function ID: 113877
+// Module ID: 14983
+// Function ID: 114198
 // Name: IconOrPreview
-// Dependencies: [31, 27, 1353, 1849, 14183, 653, 482, 33, 14937, 14938, 4130, 689, 5464, 566, 5470, 675, 10815, 1934, 8492, 14932, 4319, 14939, 14184, 14933, 1273, 14942, 9081, 14943, 9076, 11922, 8623, 4654, 8940, 1212, 3974, 10786, 5085, 14934, 14945, 10789, 7820, 14947, 7884, 2]
+// Dependencies: [31, 27, 1353, 1849, 14233, 653, 482, 33, 14984, 14985, 4130, 689, 5462, 566, 5468, 675, 10844, 1934, 8537, 14979, 4319, 14986, 14234, 14980, 1273, 14989, 9119, 14990, 9114, 11949, 8665, 4654, 8979, 1212, 3974, 10815, 5085, 14981, 14992, 10818, 7909, 14994, 7971, 2]
 
-// Module 14936 (IconOrPreview)
+// Module 14983 (IconOrPreview)
 import importAllResult from "StageIcon";
 import get_ActivityIndicator from "SpotifyNeutralIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -157,10 +157,10 @@ function IconOrPreview(arg0) {
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj.ctaText = intl5.string(require(1212) /* getSystemLocale */.t["7Xq/nV"]);
     obj.disabled = true;
-    obj.children = callback(importDefault(10786), obj);
+    obj.children = callback(importDefault(10815), obj);
     return callback(closure_4, obj);
   } else {
-    if (importDefault(9081)(activity)) {
+    if (importDefault(9119)(activity)) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       let stringResult = intl4.string(require(1212) /* getSystemLocale */.t.rmnkz4);
     } else {
@@ -171,7 +171,7 @@ function IconOrPreview(arg0) {
       if (type === constants.LISTENING) {
         const intl3 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl3.string(require(1212) /* getSystemLocale */.t.kUEnxN);
-      } else if (importDefault(11922)(activity)) {
+      } else if (importDefault(11949)(activity)) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
         stringResult = intl2.string(require(1212) /* getSystemLocale */.t.T0uYK9);
       } else {
@@ -197,7 +197,7 @@ function StageStreamAvatars(stage) {
   let audienceCount;
   let audienceFriends;
   stage = stage.stage;
-  let obj = require(14934) /* useLiveStageData */;
+  let obj = require(14981) /* useLiveStageData */;
   const liveStageData = obj.useLiveStageData(stage);
   obj = { style: callback3().avatarStackContainer };
   ({ audienceCount, audienceFriends } = liveStageData);
@@ -209,7 +209,7 @@ function StageStreamAvatars(stage) {
   obj.userCount = audienceCount + 1;
   obj.isStage = true;
   obj.avatarSize = require(1273) /* Button */.AvatarSizes.SIZE_16;
-  obj.children = callback(require(14945) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
+  obj.children = callback(require(14992) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
   return callback(closure_4, obj);
 }
 ({ PixelRatio, View: closure_4 } = get_ActivityIndicator);

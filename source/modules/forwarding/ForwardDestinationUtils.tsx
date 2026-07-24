@@ -1,10 +1,10 @@
-// Module ID: 7088
-// Function ID: 56762
+// Module ID: 7087
+// Function ID: 56771
 // Name: messageHasCheckpoint
-// Dependencies: [31, 5035, 1352, 1348, 3758, 3767, 1849, 653, 7089, 1327, 566, 669, 4466, 1881, 4345, 1212, 4464, 3969, 4320, 2]
+// Dependencies: [31, 5035, 1352, 1348, 3758, 3767, 1849, 653, 7088, 1327, 566, 669, 4466, 1881, 4345, 1212, 4464, 3969, 4320, 2]
 // Exports: getDestinationIsUnavailable, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 7088 (messageHasCheckpoint)
+// Module 7087 (messageHasCheckpoint)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -46,7 +46,7 @@ function isRatelimitedInChannel(channel, outer2_6) {
 const result = require("_callSuper").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(7089).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(7088).getChannelIdFromDestinationId);
   found = mapped.find(found(1327).isNotNullish);
   const items = [closure_8];
   const items1 = [found];

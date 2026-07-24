@@ -1,10 +1,10 @@
-// Module ID: 15585
-// Function ID: 120149
+// Module ID: 15632
+// Function ID: 120471
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [57, 31, 27, 33, 4130, 15583, 689, 4660, 4126, 1212, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 15630, 689, 4660, 4126, 1212, 2]
 // Exports: default
 
-// Module 15585 (RestrictedBlockedMessageGroup)
+// Module 15632 (RestrictedBlockedMessageGroup)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

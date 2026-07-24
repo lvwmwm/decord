@@ -1,10 +1,10 @@
-// Module ID: 15340
-// Function ID: 117121
+// Module ID: 15387
+// Function ID: 117443
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4122, 9103, 1450, 566, 3991, 4131, 1273, 2]
+// Dependencies: [4122, 9141, 1450, 566, 3991, 4131, 1273, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15340 (useFullscreenPlaceholderCount)
+// Module 15387 (useFullscreenPlaceholderCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 

@@ -1,5 +1,5 @@
 // Module ID: 1156
-// Function ID: 13144
+// Function ID: 13145
 // Name: init
 // Dependencies: [31, 1157, 978, 977, 982, 1158, 794, 1159, 791, 1160, 1161, 1111, 1162, 1152, 1163, 1170, 1171]
 // Exports: close, crashedLastRun, flush, init, nativeCrash, withScope, wrap

@@ -1,9 +1,9 @@
-// Module ID: 14091
-// Function ID: 108382
+// Module ID: 14141
+// Function ID: 108705
 // Name: getDragHandleOffsetLeft
-// Dependencies: [31, 27, 4976, 13994, 33, 4130, 14076, 13995, 13996, 3991, 1324, 4542, 7589, 13993, 5446, 1212, 2]
+// Dependencies: [31, 27, 4976, 14044, 33, 4130, 14126, 14045, 14046, 3991, 1324, 4542, 7678, 14043, 5446, 1212, 2]
 
-// Module 14091 (getDragHandleOffsetLeft)
+// Module 14141 (getDragHandleOffsetLeft)
 import importAllResult from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import { QuestDockMode } from "QuestsExperimentLocations";
@@ -50,16 +50,16 @@ let closure_14 = { code: "function QuestDockDragHandleTsx4(){const{withSpring,is
 let closure_15 = { code: "function QuestDockDragHandleTsx5(){const{withSpring,isEnrolled,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS}=this.__closure;return{opacity:withSpring(!isEnrolled&&activeQuestDockMode.get()!==QuestDockMode.CLOSED&&activeQuestDockMode.get()!==QuestDockMode.SOFT_DISMISSED?0.5:0,QUEST_DOCK_MODE_CHANGE_PHYSICS)};}" };
 const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded) {
   const tmp = callback2();
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(13995).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(14045).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
-  const userStatus = youBarHorizontalMargin.useContext(windowDimensions(14076)).quest.userStatus;
+  const userStatus = youBarHorizontalMargin.useContext(windowDimensions(14126)).quest.userStatus;
   let enrolledAt;
   if (null != userStatus) {
     enrolledAt = userStatus.enrolledAt;
   }
   const dependencyMap = tmp4;
-  let obj = activeQuestDockMode(13996);
+  let obj = activeQuestDockMode(14046);
   youBarHorizontalMargin = obj.useYouBarHorizontalMargin();
   let obj1 = activeQuestDockMode(3991);
   class D {
@@ -153,12 +153,12 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
   items = [tmp.dragHandleWrapper, animatedStyle];
   const obj2 = { withSpring: activeQuestDockMode(4542).withSpring, isEnrolled: null != enrolledAt, activeQuestDockMode, QuestDockMode: enabled, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 };
   obj4 = { style: animatedStyle1 };
-  const tmp11 = windowDimensions(7589);
+  const tmp11 = windowDimensions(7678);
   const tmp12 = closure_8;
-  obj4.layout = activeQuestDockMode(13993).dimensionsLayoutTransition;
+  obj4.layout = activeQuestDockMode(14043).dimensionsLayoutTransition;
   const obj5 = { style: items1 };
   items1 = [tmp.dragHandleOverlay, animatedStyle3];
-  const tmp13 = windowDimensions(7589);
+  const tmp13 = windowDimensions(7678);
   obj6 = { variant: "overlay" };
   const intl = activeQuestDockMode(1212).intl;
   const string = intl.string;
@@ -170,13 +170,13 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
   }
   obj6.accessibilityLabel = stringResult;
   obj5.children = callback(activeQuestDockMode(5446).ActionSheetHeaderBar, obj6);
-  const items2 = [callback(windowDimensions(7589), obj5), ];
+  const items2 = [callback(windowDimensions(7678), obj5), ];
   const obj7 = { style: null, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const items3 = [tmp.dragHandleOverlay, animatedStyle2];
   obj7.style = items3;
-  const tmp14 = windowDimensions(7589);
+  const tmp14 = windowDimensions(7678);
   obj7.children = callback(activeQuestDockMode(5446).ActionSheetHeaderBar, { variant: "default" });
-  items2[1] = callback(windowDimensions(7589), obj7);
+  items2[1] = callback(windowDimensions(7678), obj7);
   obj4.children = items2;
   obj3.children = tmp12(tmp13, obj4);
   return callback(tmp11, obj3);

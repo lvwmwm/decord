@@ -1,10 +1,10 @@
-// Module ID: 15568
-// Function ID: 120058
+// Module ID: 15615
+// Function ID: 120380
 // Name: useMessageRequestsCount
-// Dependencies: [5604, 566, 2]
+// Dependencies: [5602, 566, 2]
 // Exports: useMessageRequestsCount
 
-// Module 15568 (useMessageRequestsCount)
+// Module 15615 (useMessageRequestsCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

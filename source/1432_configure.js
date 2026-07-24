@@ -1,5 +1,5 @@
 // Module ID: 1432
-// Function ID: 16728
+// Function ID: 16729
 // Name: configure
 // Dependencies: [57, 31, 27, 1433, 1434, 1439]
 // Exports: fetch, refresh, useNetInfo, useNetInfoInstance

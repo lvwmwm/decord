@@ -1,5 +1,5 @@
 // Module ID: 3892
-// Function ID: 32218
+// Function ID: 32219
 // Name: useRive
 // Dependencies: [57, 31, 3881]
 // Exports: useRive

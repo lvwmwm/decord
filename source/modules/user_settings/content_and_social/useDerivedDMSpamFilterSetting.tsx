@@ -1,10 +1,10 @@
-// Module ID: 13742
-// Function ID: 105394
+// Module ID: 13793
+// Function ID: 105718
 // Name: useDerivedDmSpamFilterSettingValue
 // Dependencies: [1849, 3805, 3803, 566, 3809, 3816, 1282, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 13742 (useDerivedDmSpamFilterSettingValue)
+// Module 13793 (useDerivedDmSpamFilterSettingValue)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items";
 

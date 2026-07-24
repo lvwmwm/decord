@@ -1,10 +1,10 @@
-// Module ID: 11159
-// Function ID: 86748
+// Module ID: 11189
+// Function ID: 87017
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 7370, 566, 11160, 11161, 11162, 2]
+// Dependencies: [31, 7370, 566, 11190, 11191, 11192, 2]
 // Exports: default
 
-// Module 11159 (_createForOfIteratorHelperLoose)
+// Module 11189 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -101,11 +101,11 @@ export default function useActivityShelfItems(enableFilter) {
   let items = [_isNativeReflectConstruct];
   filter = flag(566).useStateFromStoresObject(items, () => ({ filter: outer1_4.getFilter() })).filter;
   const obj = flag(566);
-  const activityShelfData = flag(11160).useActivityShelfData(enableFilter.guildId);
-  let tmp2 = filter(11161)(activityShelfData);
+  const activityShelfData = flag(11190).useActivityShelfData(enableFilter.guildId);
+  let tmp2 = filter(11191)(activityShelfData);
   dependencyMap = tmp2;
-  const obj2 = flag(11160);
-  developerActivityShelfItems = flag(11162).useDeveloperActivityShelfItems();
+  const obj2 = flag(11190);
+  developerActivityShelfItems = flag(11192).useDeveloperActivityShelfItems();
   const items1 = [developerActivityShelfItems, flag, filter, tmp2];
   return developerActivityShelfItems.useMemo(() => {
     let iter2;

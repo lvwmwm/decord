@@ -1,10 +1,10 @@
-// Module ID: 9576
-// Function ID: 74605
+// Module ID: 9612
+// Function ID: 74816
 // Name: trackSearchStart
-// Dependencies: [1921, 9575, 653, 662, 4324, 9577, 9580, 507, 686, 22, 491, 1443, 9581, 1331, 1317, 4470, 1212, 675, 2]
+// Dependencies: [1921, 9611, 653, 662, 4324, 9613, 9616, 507, 686, 22, 491, 1443, 9617, 1331, 1317, 4470, 1212, 675, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, initializeSearch, removeFavoriteGIF, search, trackSelectGIF
 
-// Module 9576 (trackSearchStart)
+// Module 9612 (trackSearchStart)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -29,7 +29,7 @@ function trackSearchStart(arg0) {
   obj.num_modifiers = Object.keys(obj).length;
   obj.modifiers = obj;
   const obj3 = importDefault(4324);
-  obj.gif_provider = require(9577) /* getGifProviderConfig */.getProviderForAPIRequest();
+  obj.gif_provider = require(9613) /* getGifProviderConfig */.getProviderForAPIRequest();
   obj3.trackWithMetadata(constants.SEARCH_STARTED, obj);
 }
 function trackSearchResultViewed(arg0, type) {
@@ -42,7 +42,7 @@ function trackSearchResultViewed(arg0, type) {
   obj.startTime = 0;
   const merged = Object.assign(obj, obj);
   obj = { offset: 0, limit: null, totalResults: arg0.length };
-  let obj2 = require(9580) /* isKlipyProvider */;
+  let obj2 = require(9616) /* isKlipyProvider */;
   const obj1 = {};
   const analyticsID = store.getAnalyticsID();
   const merged1 = Object.assign(obj);
@@ -60,7 +60,7 @@ function trackSearchResultViewed(arg0, type) {
   const merged3 = Object.assign(result);
   const merged4 = Object.assign(obj2);
   const obj6 = importDefault(4324);
-  obj3["gif_provider"] = require(9577) /* getGifProviderConfig */.getProviderForAPIRequest();
+  obj3["gif_provider"] = require(9613) /* getGifProviderConfig */.getProviderForAPIRequest();
   obj6.trackWithMetadata(constants.SEARCH_RESULT_VIEWED, obj3);
 }
 function doSearchRequest(q, arg1, limit) {
@@ -71,7 +71,7 @@ function doSearchRequest(q, arg1, limit) {
   trackSearchStart(arg1);
   const HTTP = _require(507).HTTP;
   let obj = { url: constants2.GIFS_SEARCH };
-  obj = { q, media_format: store.getSelectedFormat(), provider: _require(9577).getProviderForAPIRequest(), locale: _isNativeReflectConstruct.locale, limit };
+  obj = { q, media_format: store.getSelectedFormat(), provider: _require(9613).getProviderForAPIRequest(), locale: _isNativeReflectConstruct.locale, limit };
   obj.query = obj;
   obj.oldFormErrors = true;
   obj.rejectWithError = true;
@@ -97,12 +97,12 @@ function gifUrlKey(uri) {
   let tmp3 = uri;
   if (null != toURLSafeResult) {
     if (obj2.isAttachmentUrl(toURLSafeResult)) {
-      str = require(9581) /* isAttachmentUrl */.removeSignedUrlParameters(toURLSafeResult);
+      str = require(9617) /* isAttachmentUrl */.removeSignedUrlParameters(toURLSafeResult);
       str = str.toString();
-      const obj3 = require(9581) /* isAttachmentUrl */;
+      const obj3 = require(9617) /* isAttachmentUrl */;
     }
     tmp3 = str;
-    obj2 = require(9581) /* isAttachmentUrl */;
+    obj2 = require(9617) /* isAttachmentUrl */;
   }
   return tmp3;
 }
@@ -110,13 +110,13 @@ function isProxiedAttachment(src) {
   const toURLSafeResult = importDefault(1443).toURLSafe(src.src);
   let tmp2 = null != toURLSafeResult;
   if (tmp2) {
-    let result = require(9581) /* isAttachmentUrl */.isExternalProxiedAttachmentUrl(toURLSafeResult);
+    let result = require(9617) /* isAttachmentUrl */.isExternalProxiedAttachmentUrl(toURLSafeResult);
     if (!result) {
-      result = require(9581) /* isAttachmentUrl */.isAttachmentUrl(toURLSafeResult);
-      const obj3 = require(9581) /* isAttachmentUrl */;
+      result = require(9617) /* isAttachmentUrl */.isAttachmentUrl(toURLSafeResult);
+      const obj3 = require(9617) /* isAttachmentUrl */;
     }
     tmp2 = result;
-    const obj2 = require(9581) /* isAttachmentUrl */;
+    const obj2 = require(9617) /* isAttachmentUrl */;
   }
   return tmp2;
 }
@@ -159,7 +159,7 @@ export const fetchSuggestions = function fetchSuggestions(resultQuery) {
   if (tmp) {
     const HTTP = _require(507).HTTP;
     let obj = { url: constants2.GIFS_SUGGEST };
-    obj = { q: resultQuery, provider: _require(9577).getProviderForAPIRequest(), limit: 5, locale: _isNativeReflectConstruct.locale };
+    obj = { q: resultQuery, provider: _require(9613).getProviderForAPIRequest(), limit: 5, locale: _isNativeReflectConstruct.locale };
     obj.query = obj;
     obj.oldFormErrors = true;
     obj.rejectWithError = true;
@@ -169,7 +169,7 @@ export const fetchSuggestions = function fetchSuggestions(resultQuery) {
       obj = { type: "GIF_PICKER_SUGGESTIONS_SUCCESS", query: closure_0, items: body.body };
       obj.dispatch(obj);
     });
-    const obj3 = _require(9577);
+    const obj3 = _require(9613);
   }
 };
 export { resetSearch };
@@ -184,7 +184,7 @@ export const trackSelectGIF = function trackSelectGIF(arg0) {
   let type;
   ({ query, gifId } = arg0);
   ({ type, index, offset, limit, results, totalResults } = arg0);
-  let obj = require(9580) /* isKlipyProvider */;
+  let obj = require(9616) /* isKlipyProvider */;
   const result = obj.calculateAnalyticsMetadata(store.getAnalyticsID(), type, { offset, limit, results, totalResults });
   let obj1 = importDefault(4324);
   obj = {};
@@ -194,7 +194,7 @@ export const trackSelectGIF = function trackSelectGIF(arg0) {
   obj["query"] = query;
   obj1.trackWithMetadata(constants.SEARCH_RESULT_SELECTED, obj);
   if (null != gifId) {
-    const providerForAPIRequest = require(9577) /* getGifProviderConfig */.getProviderForAPIRequest();
+    const providerForAPIRequest = require(9613) /* getGifProviderConfig */.getProviderForAPIRequest();
     const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     obj = { url: constants2.GIFS_SELECT };
     obj1 = { id: gifId, q: query, provider: providerForAPIRequest };
@@ -202,7 +202,7 @@ export const trackSelectGIF = function trackSelectGIF(arg0) {
     obj.oldFormErrors = true;
     obj.rejectWithError = true;
     HTTP.post(obj);
-    const obj4 = require(9577) /* getGifProviderConfig */;
+    const obj4 = require(9613) /* getGifProviderConfig */;
   }
 };
 export const initializeSearch = function initializeSearch() {
@@ -221,7 +221,7 @@ export const initializeSearch = function initializeSearch() {
 export const fetchTrending = function fetchTrending() {
   const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   let obj = { url: constants2.GIFS_TRENDING };
-  obj = { provider: require(9577) /* getGifProviderConfig */.getProviderForAPIRequest(), locale: _isNativeReflectConstruct.locale, media_format: store.getSelectedFormat() };
+  obj = { provider: require(9613) /* getGifProviderConfig */.getProviderForAPIRequest(), locale: _isNativeReflectConstruct.locale, media_format: store.getSelectedFormat() };
   obj.query = obj;
   obj.oldFormErrors = true;
   obj.rejectWithError = true;
@@ -241,7 +241,7 @@ export const fetchTrendingGIFs = function fetchTrendingGIFs(closure_10) {
   trackSearchStart(constants4.TRENDING_GIFS);
   const HTTP = _require(507).HTTP;
   let obj = { url: constants2.GIFS_TRENDING_GIFS };
-  obj = { media_format: store.getSelectedFormat(), provider: _require(9577).getProviderForAPIRequest(), locale: _isNativeReflectConstruct.locale, limit: closure_10 };
+  obj = { media_format: store.getSelectedFormat(), provider: _require(9613).getProviderForAPIRequest(), locale: _isNativeReflectConstruct.locale, limit: closure_10 };
   obj.query = obj;
   obj.oldFormErrors = true;
   obj.rejectWithError = true;
@@ -360,7 +360,7 @@ export const removeFavoriteGIF = function removeFavoriteGIF(uri) {
 export const fetchTrendingSearchTerms = function fetchTrendingSearchTerms() {
   const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   let obj = { url: constants2.GIFS_TRENDING_SEARCH };
-  obj = { provider: require(9577) /* getGifProviderConfig */.getProviderForAPIRequest(), limit: 5, locale: _isNativeReflectConstruct.locale };
+  obj = { provider: require(9613) /* getGifProviderConfig */.getProviderForAPIRequest(), limit: 5, locale: _isNativeReflectConstruct.locale };
   obj.query = obj;
   obj.oldFormErrors = true;
   obj.rejectWithError = true;

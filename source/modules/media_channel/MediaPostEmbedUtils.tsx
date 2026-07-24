@@ -1,5 +1,5 @@
 // Module ID: 4315
-// Function ID: 37816
+// Function ID: 37817
 // Name: getMediaPostEmbedChannelPath
 // Dependencies: [1838, 3767, 1849, 653, 4316, 1212, 4319, 1392, 1360, 4320, 4114, 4321, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedCommonData

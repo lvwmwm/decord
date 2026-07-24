@@ -1,17 +1,14 @@
 // Module ID: 8111
-// Function ID: 64251
+// Function ID: 64230
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8112, 8033, 8042]
+// Dependencies: [6, 7, 15, 17, 18, 31, 8079]
 
 // Module 8111 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import pickNotNil from "pickNotNil";
+import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import "result";
-import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
 
 const require = arg1;
 function _isNativeReflectConstruct() {
@@ -23,7 +20,40 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Rect";
-tmp3.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
+const tmp2 = ((Component) => {
+  class FeDistantLight {
+    constructor() {
+      self = this;
+      tmp = outer1_2(this, FeDistantLight);
+      obj = outer1_5(FeDistantLight);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
+        tmp6 = globalThis;
+        _Reflect = Reflect;
+        tmp7 = outer1_5;
+        tmp8 = arguments;
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
+      } else {
+        tmp3 = arguments;
+        tmp4 = arguments;
+        constructResult = obj(...arguments);
+      }
+      return tmp2(self, constructResult);
+    }
+  }
+  callback2(FeDistantLight, Component);
+  const items = [
+    {
+      key: "render",
+      value: function render() {
+        const result = FeDistantLight(outer1_1[6]).warnUnimplementedFilter();
+        return null;
+      }
+    }
+  ];
+  return callback(FeDistantLight, items);
+})(require("result").Component);
+tmp2.displayName = "FeDistantLight";
+tmp2.defaultProps = {};
 
-export default tmp3;
+export default tmp2;

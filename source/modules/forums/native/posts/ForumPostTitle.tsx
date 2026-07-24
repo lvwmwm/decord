@@ -1,16 +1,26 @@
-// Module ID: 11140
-// Function ID: 86674
+// Module ID: 11170
+// Function ID: 86943
 // Name: ForumPostTitle
-// Dependencies: [31, 33, 4130, 4126, 2]
+// Dependencies: [31, 33, 4130, 478, 4126, 2]
 // Exports: default
 
-// Module 11140 (ForumPostTitle)
+// Module 11170 (ForumPostTitle)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import isWindows from "isWindows";
 
 const require = arg1;
-let closure_3 = _createForOfIteratorHelperLoose.createStyles({ title: { marginBottom: 6 } });
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginBottom: 6 };
+let tmp3 = null;
+if (isWindows.isIOS()) {
+  const obj1 = { lineHeight: 22 };
+  tmp3 = obj1;
+}
+const merged = Object.assign(tmp3);
+_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forums/native/posts/ForumPostTitle.tsx");
 
 export default function ForumPostTitle(arg0) {
@@ -24,6 +34,6 @@ export default function ForumPostTitle(arg0) {
   if (hasUnreads) {
     str = "mobile-text-heading-primary";
   }
-  const obj = { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: callback().title, onTextLayout, children: title };
-  return jsx(require(4126) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: callback().title, onTextLayout, children: title });
+  const obj = { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: _createForOfIteratorHelperLoose().title, onTextLayout, children: title };
+  return jsx(require(4126) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: _createForOfIteratorHelperLoose().title, onTextLayout, children: title });
 };

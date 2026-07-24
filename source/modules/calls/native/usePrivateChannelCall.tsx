@@ -1,10 +1,10 @@
-// Module ID: 12154
-// Function ID: 95174
+// Module ID: 12181
+// Function ID: 95414
 // Name: usePrivateChannelCall
-// Dependencies: [5, 31, 1348, 566, 1212, 8835, 4140, 2]
+// Dependencies: [5, 31, 1348, 566, 1212, 8874, 4140, 2]
 // Exports: default
 
-// Module 12154 (usePrivateChannelCall)
+// Module 12181 (usePrivateChannelCall)
 import getPrivateChannelCall from "getPrivateChannelCall";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
     if (null != channel) {
       if (channel.isPrivate()) {
         let obj = {};
-        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = callback2(8835)(channel, callback2));
+        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = callback2(8874)(channel, callback2));
         return obj;
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 14681
-// Function ID: 111923
+// Module ID: 14728
+// Function ID: 112244
 // Name: showAgeVerificationTestModal
-// Dependencies: [5, 31, 27, 33, 4130, 689, 7542, 7536, 3831, 7538, 1557, 5503, 5165, 9210, 5171, 2]
+// Dependencies: [5, 31, 27, 33, 4130, 689, 7587, 7581, 3831, 7583, 1557, 5501, 5165, 9246, 5171, 2]
 // Exports: default
 
-// Module 14681 (showAgeVerificationTestModal)
+// Module 14728 (showAgeVerificationTestModal)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -39,7 +39,7 @@ export default function DevToolsAgeVerificationScreen() {
   items[1] = obj;
   obj.contentContainerStyle = items;
   obj = { title: "Quick Actions", hasIcons: true };
-  const obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: callback2(require(9210) /* KeyIcon */.KeyIcon, {}), trailing: callback2(require(5171) /* TableRowArrow */.TableRowArrow, {}) };
+  const obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: callback2(require(9246) /* KeyIcon */.KeyIcon, {}), trailing: callback2(require(5171) /* TableRowArrow */.TableRowArrow, {}) };
   const items1 = [callback2(require(5165) /* TableRowInner */.TableRow, obj1), ];
   const obj2 = {
     label: "Launch Age Verification Modal",
@@ -48,11 +48,11 @@ export default function DevToolsAgeVerificationScreen() {
       obj = { entryPoint: outer1_0(outer1_2[9]).AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS };
       return obj.showAgeVerificationGetStartedModal(obj);
     },
-    icon: callback2(require(9210) /* KeyIcon */.KeyIcon, {}),
+    icon: callback2(require(9246) /* KeyIcon */.KeyIcon, {}),
     trailing: callback2(require(5171) /* TableRowArrow */.TableRowArrow, {})
   };
   items1[1] = callback2(require(5165) /* TableRowInner */.TableRow, obj2);
   obj.children = items1;
-  obj.children = callback3(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj.children = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
   return callback2(ScrollView, obj);
 };

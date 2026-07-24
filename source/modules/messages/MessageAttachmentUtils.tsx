@@ -1,10 +1,10 @@
-// Module ID: 11136
-// Function ID: 86657
+// Module ID: 11166
+// Function ID: 86926
 // Name: getForumPostShouldObscure
-// Dependencies: [3758, 653, 5670, 5675, 5674, 1360, 8328, 624, 3803, 10848, 1212, 2]
+// Dependencies: [3758, 653, 5670, 5675, 5674, 1360, 8372, 624, 3803, 10875, 1212, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure
 
-// Module 11136 (getForumPostShouldObscure)
+// Module 11166 (getForumPostShouldObscure)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -17,15 +17,15 @@ function getForumPostShouldObscure(media, arg1, enabledHarmTypesBitmaskForChanne
     return items;
   } else {
     const type = media.type;
-    if (require(8328) /* isValidImageAttachment */.ForumPostMediaTypes.EMBED === type) {
+    if (require(8372) /* isValidImageAttachment */.ForumPostMediaTypes.EMBED === type) {
       let obj = { type: require(5675) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Embed, media };
       let tmp3 = obj;
-    } else if (require(8328) /* isValidImageAttachment */.ForumPostMediaTypes.ATTACHMENT === type) {
+    } else if (require(8372) /* isValidImageAttachment */.ForumPostMediaTypes.ATTACHMENT === type) {
       obj = { type: require(5675) /* ContentHarmTypeChannel */.ObscuredMediaTypes.Attachment, media };
       tmp3 = obj;
     } else {
       tmp3 = null;
-      if (require(8328) /* isValidImageAttachment */.ForumPostMediaTypes.COMPONENT === type) {
+      if (require(8372) /* isValidImageAttachment */.ForumPostMediaTypes.COMPONENT === type) {
         obj = { type: require(5675) /* ContentHarmTypeChannel */.ObscuredMediaTypes.GenericMedia, media: media.srcUnfurledMediaItem };
         tmp3 = obj;
       }
@@ -157,7 +157,7 @@ export const useShouldObscure = function useShouldObscure(channel) {
   const setting = RenderSpoilers.useSetting();
   const obj = channel(624);
   const enabledHarmTypesBitmaskForChannelType = channel(5670).getEnabledHarmTypesBitmaskForChannelType(channel(5675).ContentHarmTypeChannel.GUILD);
-  return getForumPostShouldObscure(channel.media, !importDefault(10848)(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
+  return getForumPostShouldObscure(channel.media, !importDefault(10875)(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
 };
 export const getObscuredAlt = function getObscuredAlt(obscureReason) {
   if (require(5674) /* ObscureReason */.ObscureReason.EXPLICIT_CONTENT !== obscureReason) {

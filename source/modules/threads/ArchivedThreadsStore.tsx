@@ -1,9 +1,9 @@
-// Module ID: 7008
-// Function ID: 56125
+// Module ID: 7007
+// Function ID: 56134
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1352, 1348, 4142, 3760, 1357, 7009, 22, 1359, 21, 5684, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1352, 1348, 4142, 3760, 1357, 7008, 22, 1359, 21, 5684, 566, 686, 2]
 
-// Module 7008 (_isNativeReflectConstruct)
+// Module 7007 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getForumPostReadStates from "getForumPostReadStates";
@@ -465,7 +465,7 @@ tmp3 = new tmp3(require("dispatcher"), {
       value.threads = threads.concat(found.map((id) => id.id));
       const channel = store.getChannel(value.channelId);
       if (tmp4) {
-        let obj = require(7009) /* trackForumChannelSeenBatch */;
+        let obj = require(7008) /* trackForumChannelSeenBatch */;
         obj = {};
         ({ guild_id: obj2.guildId, id: obj2.channelId } = channel);
         obj.numArchivedThreads = value.threads.length;

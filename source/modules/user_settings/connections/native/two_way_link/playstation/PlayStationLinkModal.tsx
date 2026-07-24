@@ -1,10 +1,10 @@
-// Module ID: 8972
-// Function ID: 70760
+// Module ID: 9011
+// Function ID: 70975
 // Name: CloseButton
-// Dependencies: [31, 8973, 33, 5788, 7607, 8971, 1212, 8974, 8944, 8976, 8978, 8981, 8983, 8943, 8987, 5519, 2]
+// Dependencies: [31, 9012, 33, 5788, 7696, 9010, 1212, 9013, 8983, 9015, 9017, 9020, 9022, 8982, 9026, 5517, 2]
 // Exports: default
 
-// Module 8972 (CloseButton)
+// Module 9011 (CloseButton)
 import result from "result";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import { jsx } from "jsxProd";
 const require = arg1;
 function CloseButton() {
   const obj = {
-    source: importDefault(7607),
+    source: importDefault(7696),
     onPress() {
       return outer1_1(outer1_2[5]).hideModal();
     }
@@ -20,7 +20,7 @@ function CloseButton() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   return jsx(require(5788) /* HeaderActionButton */.HeaderActionButton, {
-    source: importDefault(7607),
+    source: importDefault(7696),
     onPress() {
       return outer1_1(outer1_2[5]).hideModal();
     }
@@ -30,7 +30,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/c
 
 export default function PlayStationLinkModal(platformType) {
   platformType = platformType.platformType;
-  let obj = platformType(8943);
+  let obj = platformType(8982);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [platformType, twoWayLinkStyles];
   const memo = React.useMemo(() => (function getScreens(platformType, twoWayLinkStyles) {
@@ -99,9 +99,9 @@ export default function PlayStationLinkModal(platformType) {
       }
     };
   })(platformType, twoWayLinkStyles), items);
-  const accountLinkStepTracking = platformType(8987).useAccountLinkStepTracking(platformType, platformType.locationStack);
+  const accountLinkStepTracking = platformType(9026).useAccountLinkStepTracking(platformType, platformType.locationStack);
   obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING };
   const intl = platformType(1212).intl;
   obj.headerBackTitle = intl.string(platformType(1212).t["13/7kX"]);
-  return jsx(platformType(5519).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING });
+  return jsx(platformType(5517).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING });
 };

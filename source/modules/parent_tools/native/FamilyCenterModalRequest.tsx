@@ -1,10 +1,10 @@
-// Module ID: 11059
-// Function ID: 86041
+// Module ID: 11086
+// Function ID: 86230
 // Name: FamilyCenterModalRequestConfirm
-// Dependencies: [5, 31, 27, 1849, 6770, 33, 4130, 689, 1456, 624, 6771, 11060, 6828, 11061, 7572, 7573, 1273, 1392, 1212, 2198, 4126, 11062, 11063, 11071, 4965, 4543, 4337, 5807, 7124, 44, 9985, 7607, 5586, 8284, 1881, 7536, 7538, 4347, 5087, 11072, 11073, 2]
+// Dependencies: [5, 31, 27, 1849, 6770, 33, 4130, 689, 1456, 624, 6771, 11087, 6827, 11088, 7613, 7614, 1273, 1392, 1212, 2198, 4126, 11089, 11090, 11098, 4965, 4543, 4337, 5807, 7123, 44, 10017, 7696, 5584, 8328, 1881, 7581, 7583, 4347, 5087, 11099, 11100, 2]
 // Exports: default
 
-// Module 11059 (FamilyCenterModalRequestConfirm)
+// Module 11086 (FamilyCenterModalRequestConfirm)
 import closure_3 from "jsxProd";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "AccountAgeTier10LargeBadge";
@@ -441,9 +441,9 @@ function FamilyCenterPrereqLoading(arg0) {
     };
   }, []);
   obj = {};
-  obj = { style: callback5().container, children: callback(require(5586) /* ActivityIndicator */.ActivityIndicator, {}) };
+  obj = { style: callback5().container, children: callback(require(5584) /* ActivityIndicator */.ActivityIndicator, {}) };
   obj.children = callback(closure_6, obj);
-  return callback(require(7572) /* ModalScreen */.ModalScreen, obj);
+  return callback(require(7613) /* ModalScreen */.ModalScreen, obj);
 }
 function FamilyCenterPrereqScreen(primaryButton) {
   let description;
@@ -460,9 +460,9 @@ function FamilyCenterPrereqScreen(primaryButton) {
   obj.children = items;
   const items1 = [callback2(closure_6, obj), ];
   const obj2 = { children: callback(require(4543) /* Button */.Button, { text: primaryButton.text, onPress: primaryButton.onPress }) };
-  items1[1] = callback(require(11071) /* ModalFooter */.ModalFooter, obj2);
+  items1[1] = callback(require(11098) /* ModalFooter */.ModalFooter, obj2);
   obj.children = items1;
-  return callback2(require(7572) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(7613) /* ModalScreen */.ModalScreen, obj);
 }
 function useNavigateToVerifyingOnPending() {
   navigation = navigation(1456).useNavigation();
@@ -476,7 +476,7 @@ function useNavigateToVerifyingOnPending() {
     }
     return prop;
   });
-  const tmp3 = stateFromStores(8284)(stateFromStores);
+  const tmp3 = stateFromStores(8328)(stateFromStores);
   const dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];
   const effect = React.useEffect(() => {
@@ -551,9 +551,9 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   items2[1] = callback(require(4543) /* Button */.Button, obj7);
   obj5.children = items2;
   obj4.children = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj5);
-  items1[1] = callback(require(11071) /* ModalFooter */.ModalFooter, obj4);
+  items1[1] = callback(require(11098) /* ModalFooter */.ModalFooter, obj4);
   obj.children = items1;
-  return callback2(require(7572) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(7613) /* ModalScreen */.ModalScreen, obj);
 }
 function FamilyCenterVerifyingScreen() {
   let obj = navigation(stateFromStores[8]);
@@ -691,7 +691,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/par
 export default function FamilyCenterRequestModal(userId) {
   userId = userId.userId;
   const linkCode = userId.linkCode;
-  const FamilyCenterConnectionPrereqExperiment = userId(11072).FamilyCenterConnectionPrereqExperiment;
+  const FamilyCenterConnectionPrereqExperiment = userId(11099).FamilyCenterConnectionPrereqExperiment;
   const items = [linkCode, userId];
   const memo = React.useMemo(() => (function getScreens(userId, linkCode) {
     let closure_0 = userId;
@@ -780,7 +780,7 @@ export default function FamilyCenterRequestModal(userId) {
     obj[userId(outer2_2[11]).FamilyCenterModalRequestSections.TEEN_SCAN] = obj7;
     return obj;
   })(userId, linkCode), items);
-  const FamilyCenterModalRequestSections = userId(11060).FamilyCenterModalRequestSections;
+  const FamilyCenterModalRequestSections = userId(11087).FamilyCenterModalRequestSections;
   if (FamilyCenterConnectionPrereqExperiment.useConfig({ location: "FamilyCenterRequestModal" }).enabled) {
     let PREREQ_LOADING = FamilyCenterModalRequestSections.PREREQ_LOADING;
   } else {
@@ -789,7 +789,7 @@ export default function FamilyCenterRequestModal(userId) {
   let obj = { initialRouteName: PREREQ_LOADING, screens: memo };
   const intl = userId(1212).intl;
   obj.headerBackTitle = intl.string(userId(1212).t["13/7kX"]);
-  return callback(userId(11073).Modal, obj);
+  return callback(userId(11100).Modal, obj);
 };
 export { FamilyCenterModalRequestConfirm };
 export { FamilyCenterModalRequestSuccess };

@@ -1,10 +1,10 @@
-// Module ID: 16225
-// Function ID: 126045
+// Module ID: 16272
+// Function ID: 126369
 // Name: ConnectedGuildSettingsModalAuditLog
-// Dependencies: [57, 31, 27, 1348, 1838, 1906, 1849, 16226, 653, 33, 4130, 689, 1456, 566, 16228, 1212, 5497, 16235, 16245, 5788, 16236, 5586, 5165, 4126, 5171, 1273, 16246, 5448, 2]
+// Dependencies: [57, 31, 27, 1348, 1838, 1906, 1849, 16273, 653, 33, 4130, 689, 1456, 566, 16275, 1212, 5495, 16282, 16292, 5788, 16283, 5584, 5165, 4126, 5171, 1273, 16293, 5448, 2]
 // Exports: default
 
-// Module 16225 (ConnectedGuildSettingsModalAuditLog)
+// Module 16272 (ConnectedGuildSettingsModalAuditLog)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "NavScrim";

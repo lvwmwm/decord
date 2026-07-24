@@ -1,10 +1,10 @@
-// Module ID: 8742
-// Function ID: 69133
+// Module ID: 8781
+// Function ID: 69348
 // Name: usePreviewCollectibleProduct
-// Dependencies: [57, 31, 6779, 1874, 6780, 6781, 8207, 1876, 7844, 2]
+// Dependencies: [57, 31, 6779, 1874, 6780, 6781, 8251, 1876, 7933, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 8742 (usePreviewCollectibleProduct)
+// Module 8781 (usePreviewCollectibleProduct)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   const dependencyMap = arg1;
   let _slicedToArray = arg2;
-  const shopProductItems = _require(8207).useShopProductItems(product);
+  const shopProductItems = _require(8251).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;
@@ -54,24 +54,24 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
           obj.nameplate = callback;
         }
       }
-      product(7844).setPendingChanges(obj);
-      const obj10 = product(7844);
+      product(7933).setPendingChanges(obj);
+      const obj10 = product(7933);
     } else {
       const first = callback(product.items, 1)[0];
       if (firstAvatarDecoration(first)) {
         obj = { avatarDecoration: first };
-        product(7844).setPendingChanges(obj);
-        const obj7 = product(7844);
+        product(7933).setPendingChanges(obj);
+        const obj7 = product(7933);
       } else if (firstProfileFrame(first)) {
         const obj1 = { profileEffect: first };
-        product(7844).setPendingChanges(obj1);
-        const obj5 = product(7844);
+        product(7933).setPendingChanges(obj1);
+        const obj5 = product(7933);
       } else if (firstNameplate(first)) {
-        let obj2 = product(7844);
+        let obj2 = product(7933);
         obj2 = { nameplate: first };
         obj2.setPendingChanges(obj2);
       } else if (outer1_7(first)) {
-        obj = product(7844);
+        obj = product(7933);
         const obj3 = { profileFrame: first };
         obj.setPendingChanges(obj3);
       }

@@ -1,9 +1,9 @@
-// Module ID: 7621
-// Function ID: 61064
+// Module ID: 7710
+// Function ID: 61350
 // Name: RowManager
-// Dependencies: [6, 7, 1278, 7622, 7623, 22, 7624, 7626, 12324, 12325, 1327, 2]
+// Dependencies: [6, 7, 1278, 7711, 7712, 22, 7713, 7715, 12351, 12352, 1327, 2]
 
-// Module 7621 (RowManager)
+// Module 7710 (RowManager)
 import generateBlockedGroupRowData from "generateBlockedGroupRowData";
 import generateMessageRowData from "generateMessageRowData";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

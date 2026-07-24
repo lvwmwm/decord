@@ -1,10 +1,10 @@
-// Module ID: 10012
-// Function ID: 77370
+// Module ID: 10044
+// Function ID: 77564
 // Name: ChannelSpoiler
-// Dependencies: [57, 31, 27, 4143, 1348, 1838, 10013, 33, 4130, 689, 566, 4320, 10014, 4323, 5048, 3982, 4593, 4126, 1212, 4541, 4120, 4660, 10011, 7538, 2]
+// Dependencies: [57, 31, 27, 4143, 1348, 1838, 10045, 33, 4130, 689, 566, 4320, 10046, 4323, 5048, 3982, 4593, 4126, 1212, 4541, 4120, 4660, 10043, 7583, 2]
 // Exports: default
 
-// Module 10012 (ChannelSpoiler)
+// Module 10044 (ChannelSpoiler)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -42,7 +42,7 @@ export default function ChannelSpoiler(channelId) {
     isVocalResult = stateFromStores1.isVocal();
   }
   const dependencyMap = isVocalResult;
-  setControlsMode = React.useContext(importDefault(10014)).setControlsMode;
+  setControlsMode = React.useContext(importDefault(10046)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -133,7 +133,7 @@ export default function ChannelSpoiler(channelId) {
   const obj12 = {};
   const tmp28 = callback;
   tmp4 = importDefault(4320)(stateFromStores1);
-  obj12.modalType = _require(7538).NsfwSpaceWarningModalType.SPOILER_CHANNEL;
+  obj12.modalType = _require(7583).NsfwSpaceWarningModalType.SPOILER_CHANNEL;
   obj12.onAgree = function onAgree() {
     callback(isVocalResult[14]).spoilerAgree(channelId.channelId);
   };
@@ -152,5 +152,5 @@ export default function ChannelSpoiler(channelId) {
   }
   obj12.guildId = id;
   obj12.channelId = channelId.channelId;
-  return tmp28(importDefault(10011), obj12);
+  return tmp28(importDefault(10043), obj12);
 };

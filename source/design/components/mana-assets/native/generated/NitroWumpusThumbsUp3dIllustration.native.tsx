@@ -1,5 +1,5 @@
 // Module ID: 6388
-// Function ID: 50536
+// Function ID: 50547
 // Name: NitroWumpusThumbsUp3dIllustration
 // Dependencies: [33, 5085, 6389, 2]
 // Exports: NitroWumpusThumbsUp3dIllustration

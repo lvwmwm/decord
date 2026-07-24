@@ -1,10 +1,10 @@
-// Module ID: 10657
-// Function ID: 83181
+// Module ID: 10686
+// Function ID: 83373
 // Name: RequestToSpeakRow
-// Dependencies: [57, 31, 27, 1194, 1348, 4947, 33, 4130, 689, 10658, 5504, 1212, 566, 4314, 10659, 10661, 5165, 4955, 7536, 7538, 4098, 7482, 1273, 10663, 3834, 5464, 5484, 4963, 4957, 5187, 5189, 4541, 5503, 4126, 10664, 2]
+// Dependencies: [57, 31, 27, 1194, 1348, 4947, 33, 4130, 689, 10687, 5502, 1212, 566, 4314, 10688, 10690, 5165, 4955, 7581, 7583, 4098, 7562, 1273, 10692, 3834, 5462, 5482, 4963, 4957, 5187, 5189, 4541, 5501, 4126, 10693, 2]
 // Exports: default
 
-// Module 10657 (RequestToSpeakRow)
+// Module 10686 (RequestToSpeakRow)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import { View } from "useStageParticipants";
@@ -18,7 +18,7 @@ let closure_10;
 let closure_9;
 const require = arg1;
 function RequestToSpeakRow(channel) {
-  let obj = _require(10658);
+  let obj = _require(10687);
   const tmp = callback(obj.useRequestToSpeakPermission(channel.channel.id), 2);
   const first = tmp[0];
   _require = tmp[1];
@@ -38,7 +38,7 @@ function RequestToSpeakRow(channel) {
   obj.onValueChange = function onValueChange(arg0) {
     return callback(arg0);
   };
-  return closure_9(_require(5504).TableSwitchRow, obj);
+  return closure_9(_require(5502).TableSwitchRow, obj);
 }
 function ManageSelfSpeakerRow(channel) {
   channel = channel.channel;
@@ -62,9 +62,9 @@ function ManageSelfSpeakerRow(channel) {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp5) {
-    let MicrophoneArrowRightIcon = tmp7(10659).GroupArrowDownIcon;
+    let MicrophoneArrowRightIcon = tmp7(10688).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp7(10661).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp7(10690).MicrophoneArrowRightIcon;
   }
   obj = {
     onPress() {
@@ -84,7 +84,7 @@ function ManageSelfSpeakerRow(channel) {
     icon: callback2(MicrophoneArrowRightIcon, {}),
     label: stringResult
   };
-  obj = { source: importDefault(10663) };
+  obj = { source: importDefault(10692) };
   obj.trailing = callback2(channel(1273).Icon, obj);
   return callback2(channel(5165).TableRow, obj);
 }
@@ -101,8 +101,8 @@ export default function RequestToSpeakActionSheet(channelId) {
   const token = obj.useToken(first(689).modules.mobile.TABLE_ROW_PADDING);
   const items = [];
   const tmp2 = _createForOfIteratorHelperLoose();
-  const tmp3 = first(5464);
-  items[HermesBuiltin.arraySpread(channelId.analyticsLocations, 0)] = first(5484).REQUEST_TO_SPEAK;
+  const tmp3 = first(5462);
+  items[HermesBuiltin.arraySpread(channelId.analyticsLocations, 0)] = first(5482).REQUEST_TO_SPEAK;
   let obj1 = channelId(566);
   const items1 = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items1, () => outer1_7.getChannel(channelId));
@@ -151,7 +151,7 @@ export default function RequestToSpeakActionSheet(channelId) {
     const obj6 = { channel: stateFromStores };
     items2[1] = callback2(ManageSelfSpeakerRow, obj6);
     obj4.children = items2;
-    const items3 = [callback3(channelId(5503).TableRowGroup, obj4), ];
+    const items3 = [callback3(channelId(5501).TableRowGroup, obj4), ];
     const obj7 = {};
     const obj8 = { paddingHorizontal: token };
     obj7.style = obj8;
@@ -168,13 +168,13 @@ export default function RequestToSpeakActionSheet(channelId) {
     const obj11 = { channel: stateFromStores };
     const _Math = Math;
     obj11.height = Math.max(first1 - first - 8, 0);
-    items4[1] = callback2(first(10664), obj11);
+    items4[1] = callback2(first(10693), obj11);
     obj2.children = items4;
     obj1.children = callback3(channelId(4541).Stack, obj2);
     obj.children = callback2(channelId(5189).BottomSheetScrollView, obj1);
     obj.children = callback2(channelId(5187).BottomSheet, obj);
-    tmp11 = callback2(channelId(5464).AnalyticsLocationProvider, obj);
-    const tmp28 = first(10664);
+    tmp11 = callback2(channelId(5462).AnalyticsLocationProvider, obj);
+    const tmp28 = first(10693);
   }
   return tmp11;
 };

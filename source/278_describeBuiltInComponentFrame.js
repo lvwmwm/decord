@@ -233,80 +233,8 @@ function describeNativeComponentFrame(displayName) {
   }
   return "";
 }
-function describeFiber(tag) {
-  switch (tag.tag) {
-    case 0:
-      let tmp5 = describeNativeComponentFrame(tag.type, false);
-      return tmp5;
-    case 1:
-      return describeNativeComponentFrame(tag.type, true);
-    case 2:
-      return "";
-    case 3:
-      return "";
-    case 4:
-      return "";
-    case 5:
-      let tmp10 = describeBuiltInComponentFrame(tag.type);
-      return tmp10;
-    case 6:
-      return "";
-    case 7:
-      return "";
-    case 8:
-      return "";
-    case 9:
-      return "";
-    case 10:
-      return "";
-    case 11:
-      return describeNativeComponentFrame(tag.type.render, false);
-    case 12:
-      return "";
-    case 13:
-      return describeBuiltInComponentFrame("Suspense");
-    case 14:
-      return "";
-    case 15:
-      tmp5 = describeNativeComponentFrame(tag.type, false);
-      return tmp5;
-    case 16:
-      return describeBuiltInComponentFrame("Lazy");
-    case 17:
-      return "";
-    case 18:
-      return "";
-    case 19:
-      return describeBuiltInComponentFrame("SuspenseList");
-    case 20:
-      return "";
-    case 21:
-      return "";
-    case 22:
-      return "";
-    case 23:
-      return "";
-    case 24:
-      return "";
-    case 25:
-      return "";
-    case 26:
-      tmp10 = describeBuiltInComponentFrame(tag.type);
-      return tmp10;
-    case 27:
-      tmp10 = describeBuiltInComponentFrame(tag.type);
-      return tmp10;
-    case 28:
-      return "";
-    case 29:
-      return "";
-    case 30:
-      return "";
-    case 31:
-      return describeBuiltInComponentFrame("Activity");
-    default:
-      return "";
-  }
+function describeFiber(arg0) {
+  return describeBuiltInComponentFrame("Activity");
 }
 function getStackByFiberInDevAndProd(arg0) {
   let _return = arg0;

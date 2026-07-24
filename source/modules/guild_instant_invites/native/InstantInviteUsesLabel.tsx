@@ -1,10 +1,10 @@
-// Module ID: 10185
-// Function ID: 78670
+// Module ID: 10215
+// Function ID: 78861
 // Name: InstantInviteUsesLabel
 // Dependencies: [31, 33, 4126, 2]
 // Exports: default
 
-// Module 10185 (InstantInviteUsesLabel)
+// Module 10215 (InstantInviteUsesLabel)
 import "result";
 import { jsxs } from "jsxProd";
 

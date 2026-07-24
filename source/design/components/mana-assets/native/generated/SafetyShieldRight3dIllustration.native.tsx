@@ -1,5 +1,5 @@
 // Module ID: 6460
-// Function ID: 50644
+// Function ID: 50655
 // Name: SafetyShieldRight3dIllustration
 // Dependencies: [33, 5085, 6461, 2]
 // Exports: SafetyShieldRight3dIllustration

@@ -1,10 +1,10 @@
-// Module ID: 12145
-// Function ID: 95116
+// Module ID: 12172
+// Function ID: 95356
 // Name: UserProfileMutuals
-// Dependencies: [31, 27, 8264, 5512, 33, 4130, 8266, 11636, 11914, 4098, 11643, 1934, 8492, 5737, 4660, 11950, 1273, 4126, 11644, 11651, 5515, 11638, 2]
+// Dependencies: [31, 27, 8308, 5510, 33, 4130, 8310, 11663, 11941, 4098, 11670, 1934, 8537, 5737, 4660, 11976, 1273, 4126, 11671, 11678, 5513, 11665, 2]
 // Exports: default
 
-// Module 12145 (UserProfileMutuals)
+// Module 12172 (UserProfileMutuals)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -40,7 +40,7 @@ export default function UserProfileMutuals(user) {
         const obj = {};
         const merged = Object.assign(outer1_3);
         obj["userId"] = arg0;
-        guildId(8492)(obj);
+        guildId(8537)(obj);
       },
       onPressMutualGuild(arg0) {
         outer1_4({ action: "PRESS_MUTUAL_GUILD" });
@@ -55,13 +55,13 @@ export default function UserProfileMutuals(user) {
   }
   let tmp = callback();
   const dependencyMap = tmp;
-  let obj = user(8266);
+  let obj = user(8310);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c3, trackUserProfileAction: c4 } = userProfileAnalyticsContext);
-  const tmp3 = guildId(11636)(user);
+  const tmp3 = guildId(11663)(user);
   const mutualFriends = tmp3.mutualFriends;
   const mutualGuilds = tmp3.mutualGuilds;
-  if (guildId(11914)(user)) {
+  if (guildId(11941)(user)) {
     let tmp4 = null != mutualFriends;
     if (tmp4) {
       tmp4 = mutualFriends.length > 0;
@@ -137,8 +137,8 @@ export default function UserProfileMutuals(user) {
             totalCount: mapped.length,
             names: mapped.map((name) => name.name),
             children: mapped.map((guild) => {
-                  const obj = { guild, size: user(5515).GuildIconSizes.XXSMALL };
-                  return mutualGuilds(guildId(5515), obj, guild.id);
+                  const obj = { guild, size: user(5513).GuildIconSizes.XXSMALL };
+                  return mutualGuilds(guildId(5513), obj, guild.id);
                 })
           };
           tmp8 = mutualGuilds(user(tmp[19]).GuildIconPile, obj);

@@ -1,10 +1,10 @@
-// Module ID: 10641
-// Function ID: 83040
+// Module ID: 10670
+// Function ID: 83232
 // Name: FocusedControlsExpanded
-// Dependencies: [57, 31, 27, 10210, 10211, 653, 33, 477, 4130, 689, 5052, 1273, 1557, 3991, 10642, 668, 1212, 5446, 3946, 1334, 4131, 5217, 9585, 1450, 10550, 1207, 3842, 4533, 3976, 10384, 2]
+// Dependencies: [57, 31, 27, 10240, 10241, 653, 33, 477, 4130, 689, 5052, 1273, 1557, 3991, 10671, 668, 1212, 5446, 3946, 1334, 4131, 5217, 9621, 1450, 10579, 1207, 3842, 4533, 3976, 10413, 2]
 // Exports: default
 
-// Module 10641 (FocusedControlsExpanded)
+// Module 10670 (FocusedControlsExpanded)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "getIOSBlurEffect";
@@ -64,7 +64,7 @@ function FocusedControlsExpanded(children) {
 function FocusedControlsBottomDrawerTooltip(positionY) {
   positionY = positionY.positionY;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = positionY(10642);
+  let obj = positionY(10671);
   const canShowTooltip = obj.useCanShowTooltip(positionY(668).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   positionY(3991);
   const fn = function o() {
@@ -571,9 +571,9 @@ export default function FocusedControlsBottomControls(omitPTT) {
   const items = [header, actionBar, ];
   let tmp7 = null;
   if (!flag) {
-    obj = { look: _require(10384).CallPTTButtonLooks.BLUR, style: tmp.ptbButton, sendCallback: closure_8, stopCallback: closure_9 };
-    tmp7 = callback2(importDefault(10384), obj);
-    const tmp11 = importDefault(10384);
+    obj = { look: _require(10413).CallPTTButtonLooks.BLUR, style: tmp.ptbButton, sendCallback: closure_8, stopCallback: closure_9 };
+    tmp7 = callback2(importDefault(10413), obj);
+    const tmp11 = importDefault(10413);
   }
   items[2] = tmp7;
   obj.children = items;

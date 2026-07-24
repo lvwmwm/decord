@@ -1,10 +1,10 @@
-// Module ID: 7919
-// Function ID: 62989
+// Module ID: 8006
+// Function ID: 63300
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 5, 7920, 4153, 8181, 653, 4566, 4123, 1212, 7371, 8183, 477, 1881, 6755, 8184, 6924, 6691, 4470, 1392, 8182, 8190, 6753, 8191, 2]
+// Dependencies: [29, 5, 8007, 4153, 8225, 653, 4566, 4123, 1212, 7371, 8227, 477, 1881, 6755, 8228, 6923, 6691, 4470, 1392, 8226, 8234, 6753, 8235, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication
 
-// Module 7919 (_createForOfIteratorHelperLoose)
+// Module 8006 (_createForOfIteratorHelperLoose)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -110,8 +110,8 @@ function getShelfBadgeTypeIfActive(application) {
   let tmp2;
   if (null != tmp) {
     const obj = require(477) /* set */;
-    tmp2 = tmp.client_platform_config[importDefault(8183)(undefined, obj.getOS(obj))];
-    const tmp5 = importDefault(8183);
+    tmp2 = tmp.client_platform_config[importDefault(8227)(undefined, obj.getOS(obj))];
+    const tmp5 = importDefault(8227);
   }
   const timestamp = Date.now();
   let label_until;
@@ -286,7 +286,7 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   return null != tmp && tmp.displays_advertisements;
 };
 export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === require(8182) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+  return entrypoint === require(8226) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -352,6 +352,6 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
     result = require(6753) /* _createForOfIteratorHelperLoose */.hasCommandIndexForApp(id.id, guildState);
     const obj = require(6753) /* _createForOfIteratorHelperLoose */;
   }
-  const obj2 = require(8191) /* canInstallApplication */;
-  return require(8191) /* canInstallApplication */.isAppUserInstallable(id) || result;
+  const obj2 = require(8235) /* canInstallApplication */;
+  return require(8235) /* canInstallApplication */.isAppUserInstallable(id) || result;
 };

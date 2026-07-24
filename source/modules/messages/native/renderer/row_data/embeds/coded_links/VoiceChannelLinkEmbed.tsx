@@ -1,10 +1,10 @@
-// Module ID: 12297
-// Function ID: 95810
+// Module ID: 12324
+// Function ID: 96050
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [57, 27, 1391, 1348, 1838, 3758, 3767, 1849, 653, 6979, 7633, 1392, 477, 1212, 4593, 4320, 2]
+// Dependencies: [57, 27, 1391, 1348, 1838, 3758, 3767, 1849, 653, 6978, 7722, 1392, 477, 1212, 4593, 4320, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12297 (createVoiceChannelLinkEmbed)
+// Module 12324 (createVoiceChannelLinkEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import { getGuildAcronym } from "isGuildOwner";
@@ -30,7 +30,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
       if (null != guild) {
         if (closure_8.can(Permissions.VIEW_CHANNEL, channel)) {
           if (closure_8.can(Permissions.CONNECT, channel)) {
-            ({ colors, baseColors } = importDefault(7633)(closure_2));
+            ({ colors, baseColors } = importDefault(7722)(closure_2));
             let icon;
             if (null != guild) {
               icon = guild.icon;
@@ -56,7 +56,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             }
             obj = {};
             const merged = Object.assign(baseColors);
-            const tmp8 = importDefault(7633)(closure_2);
+            const tmp8 = importDefault(7722)(closure_2);
             let str;
             if (obj5.isAndroid()) {
               str = "";

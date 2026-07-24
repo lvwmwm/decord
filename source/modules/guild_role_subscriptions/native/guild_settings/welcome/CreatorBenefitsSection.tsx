@@ -1,10 +1,10 @@
-// Module ID: 16393
-// Function ID: 127863
+// Module ID: 16440
+// Function ID: 128187
 // Name: getGreenTextStyle
-// Dependencies: [31, 27, 14094, 33, 4130, 689, 3976, 4066, 4126, 1212, 5085, 16394, 16395, 16396, 16397, 16398, 16399, 16400, 16401, 2]
+// Dependencies: [31, 27, 14144, 33, 4130, 689, 3976, 4066, 4126, 1212, 5085, 16441, 16442, 16443, 16444, 16445, 16446, 16447, 16448, 2]
 // Exports: default
 
-// Module 16393 (getGreenTextStyle)
+// Module 16440 (getGreenTextStyle)
 import "result";
 import { View } from "get ActivityIndicator";
 import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -48,7 +48,7 @@ function EarningPreview() {
   const tmp5 = obj1.isThemeDark(tmp) && tmp2.earningMetricsShadowContainerDarkMode;
   const tmp6 = callback2;
   const tmp7 = View;
-  obj3.source = importDefault(16394);
+  obj3.source = importDefault(16441);
   items3[1] = callback(importDefault(5085), obj3);
   obj.children = items3;
   obj.children = tmp6(tmp7, obj);
@@ -73,16 +73,16 @@ function ConsistentEarningBenefit() {
   const tmp7 = callback;
   const tmp8 = BenefitAvatar;
   if (obj5.isThemeDark(tmp)) {
-    let tmp9Result = tmp9(16395);
+    let tmp9Result = tmp9(16442);
   } else {
-    tmp9Result = tmp9(16396);
+    tmp9Result = tmp9(16443);
   }
   obj1.avatarSource = tmp9Result;
   const items2 = [tmp7(tmp8, obj1), , ];
   obj5 = require(3976) /* AccessibilityAnnouncer */;
-  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16397) });
-  const obj2 = { avatarSource: importDefault(16397) };
-  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16398) });
+  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16444) });
+  const obj2 = { avatarSource: importDefault(16444) };
+  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16445) });
   obj.children = items2;
   items[2] = tmp5(tmp6, obj);
   obj.children = items;
@@ -95,11 +95,11 @@ function FollowerAwardBenefit() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.qsKRUQ);
   const items = [callback(require(4126) /* Text */.Text, obj), , ];
-  obj = { style: tmp.socialIllo, source: importDefault(16399) };
+  obj = { style: tmp.socialIllo, source: importDefault(16446) };
   items[1] = callback(importDefault(5085), obj);
   const obj1 = { style: tmp.lanyardIllo };
   const tmp2 = importDefault(5085);
-  obj1.source = importDefault(16400);
+  obj1.source = importDefault(16447);
   items[2] = callback(importDefault(5085), obj1);
   obj.children = items;
   return callback2(View, obj);
@@ -120,7 +120,7 @@ function RevenueShareBenefit() {
   items2[1] = callback(require(4126) /* Text */.Text, obj);
   const obj1 = { style: tmp2.revenueShareIllo };
   const tmp = importDefault(4066)();
-  obj1.source = importDefault(16401);
+  obj1.source = importDefault(16448);
   items2[2] = callback(importDefault(5085), obj1);
   obj.children = items2;
   return callback2(View, obj);

@@ -1,5 +1,5 @@
 // Module ID: 6414
-// Function ID: 50575
+// Function ID: 50586
 // Name: PotionSpotIllustration
 // Dependencies: [33, 5085, 6415, 2]
 // Exports: PotionSpotIllustration

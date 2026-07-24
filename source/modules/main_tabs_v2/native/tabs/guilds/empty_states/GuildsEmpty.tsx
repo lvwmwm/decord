@@ -1,9 +1,9 @@
-// Module ID: 15091
-// Function ID: 114869
+// Module ID: 15138
+// Function ID: 115190
 // Name: handleJoinGuild
-// Dependencies: [57, 31, 27, 1194, 1838, 3947, 653, 33, 4130, 689, 4126, 11737, 15092, 1212, 4541, 4543, 1457, 624, 8559, 480, 3983, 4663, 13999, 2]
+// Dependencies: [57, 31, 27, 1194, 1838, 3947, 653, 33, 4130, 689, 4126, 11764, 15139, 1212, 4541, 4543, 1457, 624, 8604, 480, 3983, 4663, 14049, 2]
 
-// Module 15091 (handleJoinGuild)
+// Module 15138 (handleJoinGuild)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -24,10 +24,10 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function handleJoinGuild() {
-  const result = importDefault(11737).openGuildJoinServerScreen();
+  const result = importDefault(11764).openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  importDefault(11737).openCreateGuildModal();
+  importDefault(11764).openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -128,7 +128,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }
   importDefault = tmp4;
   obj = { type: navigation(480).ImpressionTypes.VIEW, name: navigation(480).ImpressionNames.GUILDS_EMPTY_NUX };
-  importDefault(8559)(obj);
+  importDefault(8604)(obj);
   const items1 = [tmp4, navigation];
   const effect = importAllResult.useEffect(() => {
     if (null != c1) {
@@ -163,7 +163,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }, items1);
   let obj3 = navigation(4663);
   const isScreenLandscape = obj3.useIsScreenLandscape();
-  navigation(13999);
+  navigation(14049);
   let tmp12Result = null;
   if (stateFromStores) {
     obj = {};

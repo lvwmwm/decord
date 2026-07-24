@@ -1,5 +1,5 @@
 // Module ID: 3761
-// Function ID: 28810
+// Function ID: 28811
 // Name: MuteTimers
 // Dependencies: [6, 7, 2]
 // Exports: computeIsMuted, isTemporarilyMuted

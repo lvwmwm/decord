@@ -1,5 +1,5 @@
 // Module ID: 3982
-// Function ID: 33071
+// Function ID: 33072
 // Name: getRootNavigationRef
 // Dependencies: [1457, 2]
 // Exports: getRootNavigationRef

@@ -1,10 +1,10 @@
-// Module ID: 9741
-// Function ID: 75785
+// Module ID: 9775
+// Function ID: 75997
 // Name: ExclusiveBadge
-// Dependencies: [31, 27, 33, 4130, 689, 477, 9742, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 477, 9776, 4126, 1212, 2]
 // Exports: ExclusiveBadge
 
-// Module 9741 (ExclusiveBadge)
+// Module 9775 (ExclusiveBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,7 +31,7 @@ export const ExclusiveBadge = function ExclusiveBadge() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.exclusiveBadge };
   obj = { size: "xs", color: importDefault(689).colors.WHITE };
-  const items = [callback(require(9742) /* ClydeIcon */.ClydeIcon, obj), ];
+  const items = [callback(require(9776) /* ClydeIcon */.ClydeIcon, obj), ];
   obj = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.exclusiveBadgeText };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.RiDMFz);

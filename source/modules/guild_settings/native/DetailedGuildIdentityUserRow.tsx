@@ -1,9 +1,9 @@
-// Module ID: 10179
-// Function ID: 78644
+// Module ID: 10209
+// Function ID: 78835
 // Name: memoResult1
-// Dependencies: [31, 27, 1849, 33, 4130, 689, 4319, 3969, 9429, 1273, 566, 7495, 5165, 2]
+// Dependencies: [31, 27, 1849, 33, 4130, 689, 4319, 3969, 9465, 1273, 566, 7636, 5165, 2]
 
-// Module 10179 (memoResult1)
+// Module 10209 (memoResult1)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo((height) => {
   const hasAvatarForGuildResult = user.hasAvatarForGuild(guildId);
   obj = { style: { height: height.contentHeight } };
   obj = { user, nick: nickname };
-  const items = [callback(importDefault(9429), obj), ];
+  const items = [callback(importDefault(9465), obj), ];
   if (hasAvatarForGuildResult) {
     obj1 = { style: tmp.mainIdentity };
     let tmp11 = null;
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo((height) => {
     }
     const items1 = [tmp11, ];
     const obj3 = { user, usernameStyle: tmp.mainTag, hideBotTag: true };
-    items1[1] = callback(importDefault(9429), obj3);
+    items1[1] = callback(importDefault(9465), obj3);
     obj1.children = items1;
     let tmp9Result = closure_6(View, obj1);
     const tmp10 = View;
@@ -86,7 +86,7 @@ const memoResult1 = importAllResult.memo(function DetailedGuildIdentityUserRow(a
   } else {
     let FormRow = require;
     if (deprecatedFormRow) {
-      FormRow = FormRow(7495).FormRow;
+      FormRow = FormRow(7636).FormRow;
       obj = { accessibilityLabel, disabled };
       if (tmp == leading) {
         accessibilityLabel = callback;

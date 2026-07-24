@@ -1,5 +1,5 @@
 // Module ID: 5253
-// Function ID: 45296
+// Function ID: 45301
 // Name: GestureDetector
 // Dependencies: [31, 27, 33, 5232, 5254, 5258, 5263, 5259, 5264, 5265, 5243, 5261, 5260, 5266, 5267]
 // Exports: GestureDetector

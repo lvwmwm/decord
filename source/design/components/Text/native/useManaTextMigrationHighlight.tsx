@@ -1,5 +1,5 @@
 // Module ID: 4128
-// Function ID: 34329
+// Function ID: 34330
 // Name: useManaTextMigrationHighlight
 // Dependencies: [27, 4129, 1278, 4130, 689, 566, 3976, 2]
 // Exports: useManaTextMigrationHighlight, withManaTextMigrationHighlight

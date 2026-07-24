@@ -1,10 +1,10 @@
-// Module ID: 15459
-// Function ID: 118989
+// Module ID: 15506
+// Function ID: 119311
 // Name: ContactSuggestionRow
-// Dependencies: [31, 4122, 653, 33, 3969, 3991, 1212, 624, 14912, 14911, 8834, 15169, 15170, 675, 2]
+// Dependencies: [31, 4122, 653, 33, 3969, 3991, 1212, 624, 14959, 14958, 8873, 15216, 15217, 675, 2]
 // Exports: ContactSuggestionRow
 
-// Module 15459 (ContactSuggestionRow)
+// Module 15506 (ContactSuggestionRow)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

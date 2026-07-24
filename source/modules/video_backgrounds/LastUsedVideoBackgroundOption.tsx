@@ -1,24 +1,24 @@
-// Module ID: 8853
-// Function ID: 69878
+// Module ID: 8892
+// Function ID: 70093
 // Name: getOptionFromSettingsFiltered
-// Dependencies: [31, 1316, 1849, 8850, 3776, 566, 2]
+// Dependencies: [31, 1316, 1849, 8889, 3776, 566, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 8853 (getOptionFromSettingsFiltered)
+// Module 8892 (getOptionFromSettingsFiltered)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 
 const require = arg1;
 function getOptionFromSettingsFiltered(prop, id) {
-  const videoBackgroundOptionFromProto = require(8850) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, id.id);
-  const obj = require(8850) /* isCustomBackgroundOption */;
+  const videoBackgroundOptionFromProto = require(8889) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, id.id);
+  const obj = require(8889) /* isCustomBackgroundOption */;
   if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
     if ("number" !== typeof videoBackgroundOptionFromProto) {
       let tmp7 = videoBackgroundOptionFromProto;
     } else {
       tmp7 = null;
-      const obj4 = require(8850) /* isCustomBackgroundOption */;
+      const obj4 = require(8889) /* isCustomBackgroundOption */;
     }
     let tmp4 = tmp7;
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 8605
-// Function ID: 68320
+// Module ID: 8647
+// Function ID: 68542
 // Name: buildSteamStoreUrl
-// Dependencies: [4151, 653, 566, 8606, 8604, 1832, 2]
+// Dependencies: [4151, 653, 566, 8648, 8646, 1832, 2]
 // Exports: useSteamWebsiteUrl
 
-// Module 8605 (buildSteamStoreUrl)
+// Module 8647 (buildSteamStoreUrl)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Distributors } from "ME";
 

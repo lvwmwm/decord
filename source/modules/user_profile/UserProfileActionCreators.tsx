@@ -1,10 +1,10 @@
-// Module ID: 7847
-// Function ID: 62578
+// Module ID: 7936
+// Function ID: 62897
 // Name: trackTryOutFeature
-// Dependencies: [5, 1849, 653, 1851, 1207, 3976, 1212, 675, 7848, 6924, 686, 7849, 507, 7852, 4029, 2]
+// Dependencies: [5, 1849, 653, 1851, 1207, 3976, 1212, 675, 7937, 6923, 686, 7938, 507, 7941, 4029, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 7847 (trackTryOutFeature)
+// Module 7936 (trackTryOutFeature)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 15465
-// Function ID: 119021
+// Module ID: 15512
+// Function ID: 119343
 // Name: compareUserItems
-// Dependencies: [57, 31, 27, 6882, 3767, 1849, 8818, 653, 9061, 33, 4130, 689, 15466, 1934, 4472, 624, 6883, 3803, 15141, 6884, 21, 5464, 5484, 675, 11986, 5470, 15467, 636, 8492, 1212, 1456, 5503, 5165, 4126, 8360, 4662, 8760, 4660, 9892, 5807, 8825, 2]
+// Dependencies: [57, 31, 27, 6881, 3767, 1849, 8857, 653, 9100, 33, 4130, 689, 15513, 1934, 4472, 624, 6882, 3803, 15188, 6883, 21, 5462, 5482, 675, 12012, 5468, 15514, 636, 8537, 1212, 1456, 5501, 5165, 4126, 8404, 4662, 8799, 4660, 9924, 5807, 8864, 2]
 // Exports: default
 
-// Module 15465 (compareUserItems)
+// Module 15512 (compareUserItems)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "isUndefinedOrNull";
@@ -52,15 +52,15 @@ export default function FriendRequestsScreen() {
   let incomingSection;
   let outgoingSection;
   let tmp = callback();
-  const analyticsLocations = first(5464)(first(5484).FRIEND_REQUESTS).analyticsLocations;
+  const analyticsLocations = first(5462)(first(5482).FRIEND_REQUESTS).analyticsLocations;
   (function useNotificationCenterAckFriendRequests() {
     const items = [pendingOutgoingIds];
     const stateFromStoresArray = analyticsLocations(tmp7[15]).useStateFromStoresArray(items, () => {
       const localItems = pendingOutgoingIds.localItems;
       return localItems.filter((type) => {
-        let tmp = type.type === analyticsLocations(6883).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
+        let tmp = type.type === analyticsLocations(6882).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
         if (!tmp) {
-          tmp = type.type === analyticsLocations(6883).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
+          tmp = type.type === analyticsLocations(6882).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
         }
         return tmp;
       });
@@ -73,10 +73,10 @@ export default function FriendRequestsScreen() {
         const mapped = stateFromStoresArray.map((local_id) => local_id.local_id);
         const _Boolean = Boolean;
         const found = mapped.filter(Boolean);
-        const result = analyticsLocations(15141).markNotificationCenterLocalItemsAcked(found);
-        const obj = analyticsLocations(15141);
-        const result1 = analyticsLocations(15141).bulkMarkNotificationCenterItemsAcked(stateFromStoresArray.filter((addResult) => !analyticsLocations(table[19]).isRemoteAcked(addResult, outer1_1)));
-        const obj2 = analyticsLocations(15141);
+        const result = analyticsLocations(15188).markNotificationCenterLocalItemsAcked(found);
+        const obj = analyticsLocations(15188);
+        const result1 = analyticsLocations(15188).bulkMarkNotificationCenterItemsAcked(stateFromStoresArray.filter((addResult) => !analyticsLocations(table[19]).isRemoteAcked(addResult, outer1_1)));
+        const obj2 = analyticsLocations(15188);
       }
     }, items1);
   })();
@@ -93,9 +93,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp5[0];
   const dependencyMap = tmp7;
-  let obj1 = analyticsLocations(11986);
+  let obj1 = analyticsLocations(12012);
   gameRelationshipsByType = obj1.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj2 = analyticsLocations(11986);
+  let obj2 = analyticsLocations(12012);
   gameRelationshipsByType1 = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -108,7 +108,7 @@ export default function FriendRequestsScreen() {
     });
     return Array.from(set);
   }, items1);
-  first(5470)(memo);
+  first(5468)(memo);
   const items2 = [first, tmp5[1]];
   const memo1 = gameRelationshipsByType1.useMemo(() => analyticsLocations(tmp7[26]).getPendingRelationshipIds(first, tmp7), items2);
   const pendingIncomingIds = memo1.pendingIncomingIds;
@@ -228,7 +228,7 @@ export default function FriendRequestsScreen() {
             }
             items[1] = tmp7;
             obj.children = items;
-            return first1(analyticsLocations(5503).TableRowGroup, obj);
+            return first1(analyticsLocations(5501).TableRowGroup, obj);
           },
         key: "spamRequests",
         itemType: "spamRequests"
@@ -254,7 +254,7 @@ export default function FriendRequestsScreen() {
   if (tmp24) {
     tmp24 = incoming.length >= incomingData;
   }
-  let obj5 = analyticsLocations(8360);
+  let obj5 = analyticsLocations(8404);
   obj = {
     pageWidth: 0,
     defaultIndex: first1,
@@ -283,7 +283,7 @@ export default function FriendRequestsScreen() {
   obj2 = { value: analyticsLocations };
   const items9 = [outgoingData(first(4662), { absolute: true }), ];
   obj3 = { style: tmp.container };
-  obj4 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8760).SegmentedControl, { state: segmentedControlState }) };
+  obj4 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8799).SegmentedControl, { state: segmentedControlState }) };
   const items10 = [outgoingData(pendingIncomingIds, obj4), , ];
   if (tmp24) {
     obj5 = { style: tmp.clearAllContainer };
@@ -318,11 +318,11 @@ export default function FriendRequestsScreen() {
     obj9.title = stringResult;
     obj9.illustration = analyticsLocations(5807).WumpusCouchSpotIllustration;
     obj9.disableBackgroundOverlay = true;
-    obj9 = tmp34(first(9892), obj9);
+    obj9 = tmp34(first(9924), obj9);
     obj8.children = obj9;
     tmp34(pendingIncomingIds, obj8);
     const tmp38 = pendingIncomingIds;
-    const tmp41 = first(9892);
+    const tmp41 = first(9924);
   } else {
     const obj10 = {};
     if (first1 === closure_16.Incoming) {
@@ -331,10 +331,10 @@ export default function FriendRequestsScreen() {
     obj10.sections = outgoingSection;
     obj10.getItemProps = callback2;
     obj10.getSectionProps = callback1;
-    items10[2] = tmp34(analyticsLocations(8825).UsersFastList, obj10);
+    items10[2] = tmp34(analyticsLocations(8864).UsersFastList, obj10);
     obj3.children = items10;
     items9[1] = tmp28(pendingIncomingIds, obj3);
     obj2.children = items9;
-    return tmp28(analyticsLocations(5464).AnalyticsLocationProvider, obj2);
+    return tmp28(analyticsLocations(5462).AnalyticsLocationProvider, obj2);
   }
 };

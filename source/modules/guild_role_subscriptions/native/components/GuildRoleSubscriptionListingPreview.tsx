@@ -1,10 +1,10 @@
-// Module ID: 16460
-// Function ID: 128266
+// Module ID: 16507
+// Function ID: 128590
 // Name: PriceTier
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 5618, 1212, 14120, 14116, 5085, 16461, 16455, 16434, 14127, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 5616, 1212, 14170, 14166, 5085, 16508, 16502, 16481, 14177, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 16460 (PriceTier)
+// Module 16507 (PriceTier)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -26,12 +26,12 @@ function PriceTier(arg0) {
   const tmp3 = _createForOfIteratorHelperLoose();
   obj = { style: tmp3.priceGroup };
   obj = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  let obj2 = require(5618) /* formatSingleCurrencyPrice */;
+  let obj2 = require(5616) /* formatSingleCurrencyPrice */;
   obj.children = obj2.formatPrice(price, currency);
   const items = [callback2(require(4126) /* Text */.Text, obj), ];
   const obj1 = { style: tmp3.priceInterval, variant: "eyebrow", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj2 = { period: require(14120) /* getBenefitKey */.formatPlanInterval(merged) };
+  obj2 = { period: require(14170) /* getBenefitKey */.formatPlanInterval(merged) };
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.isLGyX, obj2);
   items[1] = callback2(require(4126) /* Text */.Text, obj1);
   obj.children = items;
@@ -40,11 +40,11 @@ function PriceTier(arg0) {
 function Header(onPress) {
   const listingId = onPress.listingId;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14116);
-  let obj1 = importAll(14116);
-  let obj2 = importAll(14116);
+  let obj = importAll(14166);
+  let obj1 = importAll(14166);
+  let obj2 = importAll(14166);
   const first = callback(obj2.useImage(listingId), 1)[0];
-  let obj3 = importAll(14116);
+  let obj3 = importAll(14166);
   obj = { style: tmp.header };
   obj = { variant: "heading-md/semibold", color: "interactive-text-active", children: callback(obj1.useName(listingId), 1)[0] };
   const items = [callback2(require(4126) /* Text */.Text, obj), , , , ];
@@ -60,7 +60,7 @@ function Header(onPress) {
   obj3 = {};
   const merged = Object.assign(callback(obj.useSubscriptionPlan(listingId), 1)[0]);
   items[2] = callback2(PriceTier, obj3);
-  items[3] = callback2(require(16461) /* GuildPremiumRoleSubscribeButton */.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
+  items[3] = callback2(require(16508) /* GuildPremiumRoleSubscribeButton */.GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
   items[4] = callback2(require(4126) /* Text */.Text, { variant: "text-sm/medium", children: callback(obj3.useDescription(listingId), 1)[0] });
   obj.children = items;
   return closure_7(View, obj);
@@ -205,11 +205,11 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   let listingId;
   const tmp = _createForOfIteratorHelperLoose();
   ({ guildId, listingId } = arg0);
-  let obj = importAll(14116);
+  let obj = importAll(14166);
   const first = callback(obj.useChannelBenefits(listingId), 1)[0];
-  let obj1 = importAll(14116);
+  let obj1 = importAll(14166);
   const first1 = callback(obj1.useIntangibleBenefits(listingId), 1)[0];
-  let obj2 = importAll(14116);
+  let obj2 = importAll(14166);
   obj = { style: tmp.container };
   obj = {};
   const role = obj2.useRole(listingId, guildId);
@@ -218,7 +218,7 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   obj1 = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.label = intl.string(require(1212) /* getSystemLocale */.t.FJZmYx);
-  obj1.children = callback2(require(14127) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { role });
+  obj1.children = callback2(require(14177) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { role });
   items[1] = callback2(LabeledSection, obj1);
   let tmp6 = first.length > 0;
   if (tmp6) {

@@ -1,10 +1,10 @@
-// Module ID: 14472
-// Function ID: 110552
+// Module ID: 14522
+// Function ID: 110875
 // Name: useShopOrientationLock
-// Dependencies: [31, 1553, 8303, 2]
+// Dependencies: [31, 1553, 8347, 2]
 // Exports: useShopOrientationLock
 
-// Module 14472 (useShopOrientationLock)
+// Module 14522 (useShopOrientationLock)
 import result from "result";
 
 const require = arg1;

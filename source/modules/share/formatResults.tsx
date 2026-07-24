@@ -1,10 +1,10 @@
-// Module ID: 7089
-// Function ID: 56783
+// Module ID: 7088
+// Function ID: 56792
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 7090, 1348, 3758, 1849, 7107, 653, 4140, 7094, 7105, 1212, 1327, 22, 2]
+// Dependencies: [5, 7089, 1348, 3758, 1849, 7106, 653, 4140, 7093, 7104, 1212, 1327, 22, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getOrResolveChannelIdFromDestinationId
 
-// Module 7089 (_createForOfIteratorHelperLoose)
+// Module 7088 (_createForOfIteratorHelperLoose)
 import ALLOWED_TYPES from "ALLOWED_TYPES";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -121,23 +121,23 @@ function createAutocompleterResultForDestination(targetDestination) {
     user = user.getUser(targetDestination.id);
     let tmp5 = null;
     if (null != user) {
-      const obj = { type: require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER, record: user, score: 0 };
+      const obj = { type: require(7093) /* sortByMatchScore */.AutocompleterResultTypes.USER, record: user, score: 0 };
       tmp5 = obj;
     }
     return tmp5;
   } else {
-    return importDefault(7105)(targetDestination.id);
+    return importDefault(7104)(targetDestination.id);
   }
 }
 function canShareToChannel(type) {
   let tmp = arg1;
-  if (type.type === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
+  if (type.type === require(7093) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
     if (!tmp) {
       tmp = null != authStore.getDMChannelFromUserId(type.record.id);
     }
     let tmp10 = tmp;
   } else {
-    tmp10 = type.type === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM;
+    tmp10 = type.type === require(7093) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM;
     if (!tmp10) {
       let tmp3 = type.record.type !== constants2.GUILD_FORUM;
       if (tmp3) {
@@ -185,7 +185,7 @@ function mergeAndDedupeResultsWithHeaders(tmp4Result, items1) {
         let tmp10 = dependencyMap;
         tmp7 = value;
         tmp8 = tmp6;
-        if (value.type !== require(7094) /* sortByMatchScore */.AutocompleterResultTypes.HEADER) {
+        if (value.type !== require(7093) /* sortByMatchScore */.AutocompleterResultTypes.HEADER) {
           let id = value.record.id;
           tmp7 = tmp5;
           tmp8 = id;
@@ -213,12 +213,12 @@ function getLastChannelResult(selectedChannelId) {
   if (null == selectedChannelId) {
     return null;
   } else {
-    const tmp11 = importDefault(7105)(selectedChannelId);
+    const tmp11 = importDefault(7104)(selectedChannelId);
     let tmp8 = null;
     if (null != tmp11) {
       let tmp2 = null;
       if (isAllowedType(tmp11)) {
-        let canResult = tmp11.type === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER;
+        let canResult = tmp11.type === require(7093) /* sortByMatchScore */.AutocompleterResultTypes.USER;
         if (!canResult) {
           canResult = closure_6.can(constants.VIEW_CHANNEL, tmp11.record);
         }
@@ -353,7 +353,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(freque
     items1 = [];
   }
   const intl = queryMode(1212).intl;
-  const headerResult = queryMode(7094).createHeaderResult(intl.string(queryMode(1212).t.qm9dSj));
+  const headerResult = queryMode(7093).createHeaderResult(intl.string(queryMode(1212).t.qm9dSj));
   if (hasNonEmptyQuery) {
     const items2 = [headerResult];
     HermesBuiltin.arraySpread(mergeAndDedupeResultsWithHeaders(results.filter(isAllowedType), items1), 1);
@@ -368,11 +368,11 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(freque
       let items4 = items3;
     } else {
       const intl2 = queryMode(1212).intl;
-      items4 = [queryMode(7094).createHeaderResult(intl2.string(queryMode(1212).t["80lOZ1"])), getLastChannelResult(selectedChannelId), headerResult];
+      items4 = [queryMode(7093).createHeaderResult(intl2.string(queryMode(1212).t["80lOZ1"])), getLastChannelResult(selectedChannelId), headerResult];
       HermesBuiltin.arraySpread(found1, 3);
-      const obj2 = queryMode(7094);
+      const obj2 = queryMode(7093);
     }
     return mergeAndDedupeResultsWithHeaders(items4, items1);
   }
-  const obj = queryMode(7094);
+  const obj = queryMode(7093);
 };

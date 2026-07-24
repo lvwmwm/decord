@@ -1,10 +1,10 @@
-// Module ID: 8967
-// Function ID: 70741
+// Module ID: 9006
+// Function ID: 70956
 // Name: ConnectAccountStep
-// Dependencies: [31, 27, 4167, 1194, 1849, 33, 4130, 689, 4066, 566, 4814, 1392, 3976, 5465, 1273, 8968, 4126, 1212, 4543, 8970, 4086, 4082, 2]
+// Dependencies: [31, 27, 4167, 1194, 1849, 33, 4130, 689, 4066, 566, 4814, 1392, 3976, 5463, 1273, 9007, 4126, 1212, 4543, 9009, 4086, 4082, 2]
 // Exports: ConnectedAccountCard, default
 
-// Module 8967 (ConnectAccountStep)
+// Module 9006 (ConnectAccountStep)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -85,7 +85,7 @@ export default function ConnectAccountStep(clientId) {
     let obj3 = { source: applicationIconSource, size: clientId(1273).AvatarSizes.XLARGE };
     const items4 = [callback(clientId(1273).Avatar, obj3), , ];
     let obj4 = { color: platformType(689).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-    items4[1] = callback(clientId(8968).MoreHorizontalIcon, obj4);
+    items4[1] = callback(clientId(9007).MoreHorizontalIcon, obj4);
     obj5 = { source: userAvatarSource, size: clientId(1273).AvatarSizes.XLARGE };
     items4[2] = callback(clientId(1273).Avatar, obj5);
     obj2.children = items4;

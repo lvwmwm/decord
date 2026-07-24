@@ -1,10 +1,10 @@
-// Module ID: 7005
-// Function ID: 56030
+// Module ID: 7004
+// Function ID: 56039
 // Name: checkReactionResponse
-// Dependencies: [5, 1194, 1348, 4349, 653, 664, 4470, 1212, 1207, 686, 7006, 507, 7007, 675, 4324, 3976, 7025, 3775, 2]
+// Dependencies: [5, 1194, 1348, 4349, 653, 664, 4470, 1212, 1207, 686, 7005, 507, 7006, 675, 4324, 3976, 7024, 3775, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7005 (checkReactionResponse)
+// Module 7004 (checkReactionResponse)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -83,12 +83,12 @@ function optimisticDispatch(type, channelId, messageId, emoji, userId) {
   obj.colors = colors;
   if (null != userId) {
     if (userId.burst) {
-      let NORMAL = require(7006) /* ReactionTypes */.ReactionTypes.BURST;
+      let NORMAL = require(7005) /* ReactionTypes */.ReactionTypes.BURST;
     }
     obj.reactionType = NORMAL;
     obj.dispatch(obj);
   }
-  NORMAL = require(7006) /* ReactionTypes */.ReactionTypes.NORMAL;
+  NORMAL = require(7005) /* ReactionTypes */.ReactionTypes.NORMAL;
 }
 function makeURL(type) {
   let channelId;
@@ -102,7 +102,7 @@ function makeURL(type) {
   }
   let NORMAL = type.type;
   if (NORMAL === undefined) {
-    NORMAL = require(7006) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = require(7005) /* ReactionTypes */.ReactionTypes.NORMAL;
   }
   if (null != emoji.id) {
     const _HermesInternal = HermesInternal;

@@ -1,10 +1,10 @@
-// Module ID: 8907
-// Function ID: 70294
+// Module ID: 8946
+// Function ID: 70509
 // Name: getGuildId
-// Dependencies: [1348, 653, 4324, 8267, 675, 2]
+// Dependencies: [1348, 653, 4324, 8311, 675, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 8907 (getGuildId)
+// Module 8946 (getGuildId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 
@@ -29,7 +29,7 @@ export const trackE2EEUserVerificationViewed = function trackE2EEUserVerificatio
   const channelId = userId.channelId;
   let obj = importDefault(4324);
   obj = { channel_id: channelId, guild_id: getGuildId(channelId) };
-  const merged = Object.assign(require(8267) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
+  const merged = Object.assign(require(8311) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_VIEWED, obj);
 };
 export const trackE2EEUserVerified = function trackE2EEUserVerified(channelId) {
@@ -39,7 +39,7 @@ export const trackE2EEUserVerified = function trackE2EEUserVerified(channelId) {
   ({ userId, analyticsLocation } = channelId);
   let obj = importDefault(4324);
   obj = { channel_id: channelId, guild_id: getGuildId(channelId), location: analyticsLocation };
-  const merged = Object.assign(require(8267) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
+  const merged = Object.assign(require(8311) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFIED, obj);
 };
 export const trackE2EEUserVerificationFailed = function trackE2EEUserVerificationFailed(channelId) {
@@ -50,21 +50,21 @@ export const trackE2EEUserVerificationFailed = function trackE2EEUserVerificatio
   ({ userId, keyVersion, reason } = channelId);
   let obj = importDefault(4324);
   obj = { channel_id: channelId, guild_id: getGuildId(channelId), failure_reason: reason, key_version: "" + keyVersion };
-  const merged = Object.assign(require(8267) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
+  const merged = Object.assign(require(8311) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_FAILED, obj);
 };
 export const trackE2EEUserVerificationShareClicked = function trackE2EEUserVerificationShareClicked(userId) {
   const channelId = userId.channelId;
   let obj = importDefault(4324);
   obj = { channel_id: channelId, guild_id: getGuildId(channelId) };
-  const merged = Object.assign(require(8267) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
+  const merged = Object.assign(require(8311) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_SHARE_CLICKED, obj);
 };
 export const trackE2EEUserVerificationCopied = function trackE2EEUserVerificationCopied(userId) {
   const channelId = userId.channelId;
   let obj = importDefault(4324);
   obj = { channel_id: channelId, guild_id: getGuildId(channelId) };
-  const merged = Object.assign(require(8267) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
+  const merged = Object.assign(require(8311) /* getProfileProperties */.getTrackUserRelationshipProperties({ userId: userId.userId }));
   obj.trackWithMetadata(AnalyticEvents.E2EE_USER_VERIFICATION_CODE_COPIED, obj);
 };
 export const trackE2EECallVerificationShareClicked = function trackE2EECallVerificationShareClicked(channelId) {

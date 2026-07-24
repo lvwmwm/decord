@@ -1,5 +1,5 @@
 // Module ID: 1651
-// Function ID: 18348
+// Function ID: 18349
 // Name: getEasingFromConfig
 // Dependencies: [1641, 1634, 1586, 1623, 1607, 1638, 1652, 1668, 1592, 1669, 1670, 1675]
 

@@ -1,9 +1,9 @@
-// Module ID: 12485
-// Function ID: 96757
+// Module ID: 12538
+// Function ID: 97081
 // Name: GiftingSectionTitle
-// Dependencies: [57, 31, 27, 8268, 6637, 653, 1851, 33, 4130, 689, 1324, 5503, 4126, 6652, 1456, 1557, 566, 22, 4366, 6656, 12393, 8776, 8265, 7429, 686, 6638, 6658, 8271, 7375, 5793, 7999, 12486, 1212, 12487, 12493, 12497, 5459, 12500, 12502, 7187, 9234, 2294, 12503, 5586, 2]
+// Dependencies: [57, 31, 27, 8312, 6637, 653, 1851, 33, 4130, 689, 1324, 5501, 4126, 6652, 1456, 1557, 566, 22, 4366, 6656, 12451, 8815, 8309, 12404, 686, 6638, 6658, 8315, 7375, 5793, 8059, 12539, 1212, 12540, 12546, 12550, 12553, 12555, 7187, 9270, 2294, 12556, 5584, 2]
 
-// Module 12485 (GiftingSectionTitle)
+// Module 12538 (GiftingSectionTitle)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "urlUserId";
@@ -29,7 +29,7 @@ function GiftingSectionTitle(title) {
   title = title.title;
   if (importDefault(1324)("UserSettingsPremiumGifting")) {
     let obj = { title };
-    let tmp2Result = tmp2(tmp3(5503).TableRowGroupTitle, obj);
+    let tmp2Result = tmp2(tmp3(5501).TableRowGroupTitle, obj);
   } else {
     obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: title };
     tmp2Result = tmp2(tmp3(4126).Text, obj);
@@ -103,17 +103,17 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
   importAllResult = importAllResult.useMemo(() => _undefined2(arr[17]).groupBy(stateFromStoresArray, (skuId) => callback(table[18]).makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle)), items1);
   let obj3 = _require(6656);
   const isPaymentsBlocked = obj3.useIsPaymentsBlocked();
-  let obj4 = _require(12393);
+  let obj4 = _require(12451);
   const outboundPromotions = obj4.useOutboundPromotions();
   ({ activeOutboundPromotions: c5, claimedEndedOutboundPromotions: c6, claimedOutboundPromotionCodeMap: c7 } = outboundPromotions);
-  const GiftingBadgeExperiment = _require(8776).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = _require(8815).GiftingBadgeExperiment;
   enabled = GiftingBadgeExperiment.useConfig({ location: "gift_inventory" }).enabled;
   let obj5 = _require(566);
   let items2 = [enabled];
   const stateFromStores = obj5.useStateFromStores(items2, () => enabled.getBadgeById(_undefined(arr[22]).BadgeId.GIFTING));
   const tmp9 = stateFromStoresArray(importAllResult.useState(false), 2);
   closure_9 = tmp9[1];
-  let obj6 = _require(7429);
+  let obj6 = _require(12404);
   const subscriptionPlansLoaded = obj6.useSubscriptionPlansLoaded();
   const effect = importAllResult.useEffect(() => {
     _undefined2(arr[24]).wait(() => {
@@ -143,7 +143,7 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
     let tmp13Result = callback(c6, obj);
   } else {
     obj3 = { style: tmp2.giftingSettingsContainer };
-    let items4 = [callback(importDefault(9234), {}), ];
+    let items4 = [callback(importDefault(9270), {}), ];
     obj4 = { ref, style: tmp2.scrollView, contentContainerStyle: obj };
     if (enabled) {
       enabled = null != stateFromStores;
@@ -164,7 +164,7 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
       obj6.children = callback(GiftingSectionTitle, obj7);
       let items6 = [callback(c6, obj6), ];
       let obj8 = { analyticsLocation };
-      items6[1] = callback(importDefault(12503), obj8);
+      items6[1] = callback(importDefault(12556), obj8);
       obj5.children = items6;
       enabled = callback2(closure_16, obj5);
       let tmp20 = callback2;
@@ -229,9 +229,9 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                 outer1_14(_undefined4, obj5),
                 _undefined4.map((code) => {
                     const outboundPromotion = code.promotion;
-                    return outer2_14(callback2(12487), { outboundPromotion, code: code.code }, outboundPromotion.id);
+                    return outer2_14(callback2(12540), { outboundPromotion, code: code.code }, outboundPromotion.id);
                   }),
-                _undefined3.map((id) => outer2_14(callback2(12487), { outboundPromotion: id, code: outer1_7[id.id] }, id.id))
+                _undefined3.map((id) => outer2_14(callback2(12540), { outboundPromotion: id, code: outer1_7[id.id] }, id.id))
               ];
               obj4.children = items4;
               tmp44Result = outer1_15(outer1_16, obj4);
@@ -265,7 +265,7 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                     let obj = callback(4366);
                     ({ skuId, subscriptionPlanId, giftStyle } = obj.parseComboId(arg0));
                     obj = { skuId, subscriptionPlanId, entitlements: outer1_4[arg0], giftStyle, isRefreshEnabled: outer1_1 };
-                    return outer2_14(callback2(12493), obj, arg0);
+                    return outer2_14(callback2(12546), obj, arg0);
                   })
               ];
               obj7.children = items7;
@@ -309,23 +309,23 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                     }
           };
           obj13.children = intl3.format(_require(1212).t.thORji, obj14);
-          const items10 = [callback(_require(5459).TextWithIOSLinkWorkaround, obj13), ];
+          const items10 = [callback(_require(4126).Text, obj13), ];
           const obj15 = { style: tmp2.buttonWrapper };
           const obj16 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_13.PREMIUM_YEAR_TIER_2, analyticsLocation };
-          const items11 = [callback(importDefault(12500), obj16), ];
+          const items11 = [callback(importDefault(12553), obj16), ];
           const obj17 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_13.PREMIUM_MONTH_TIER_2, analyticsLocation };
-          items11[1] = callback(importDefault(12500), obj17);
+          items11[1] = callback(importDefault(12553), obj17);
           obj15.children = items11;
           items10[1] = callback2(c6, obj15);
           obj12.children = items10;
-          items9[1] = callback2(importDefault(12497), obj12);
+          items9[1] = callback2(importDefault(12550), obj12);
           const obj18 = { style: tmp2.warningMargins };
-          items9[2] = callback(importDefault(12502), obj18);
+          items9[2] = callback(importDefault(12555), obj18);
           const obj19 = {};
           const obj20 = { premiumType: closure_12.TIER_0, style: tmp2.tierCard };
           const tmp38 = callback2;
           const tmp39 = c6;
-          let tmp47 = importDefault(12497);
+          let tmp47 = importDefault(12550);
           const obj21 = { style: tmp2.cardText, variant: "text-sm/medium", color: "text-default" };
           let intl4 = _require(1212).intl;
           const obj22 = {
@@ -339,23 +339,23 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
                     }
           };
           obj21.children = intl4.format(_require(1212).t.NmpnsP, obj22);
-          const items12 = [callback(_require(5459).TextWithIOSLinkWorkaround, obj21), ];
+          const items12 = [callback(_require(4126).Text, obj21), ];
           const obj23 = { style: tmp2.buttonWrapper };
           const obj24 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_13.PREMIUM_YEAR_TIER_0, analyticsLocation };
-          const items13 = [callback(importDefault(12500), obj24), ];
+          const items13 = [callback(importDefault(12553), obj24), ];
           const obj25 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_13.PREMIUM_MONTH_TIER_0, analyticsLocation };
-          items13[1] = callback(importDefault(12500), obj25);
+          items13[1] = callback(importDefault(12553), obj25);
           obj23.children = items13;
           items12[1] = callback2(c6, obj23);
           obj20.children = items12;
-          const items14 = [callback2(importDefault(12497), obj20), ];
+          const items14 = [callback2(importDefault(12550), obj20), ];
           const obj26 = { style: tmp2.warningMargins };
-          items14[1] = callback(importDefault(12502), obj26);
+          items14[1] = callback(importDefault(12555), obj26);
           obj19.children = items14;
           items9[3] = callback2(closure_16, obj19);
           obj10.children = items9;
           tmp38Result = tmp38(tmp39, obj10);
-          const tmp56 = importDefault(12497);
+          const tmp56 = importDefault(12550);
         }
         items7[2] = tmp38Result;
         obj4.children = items7;
@@ -365,7 +365,7 @@ const forwardRefResult = importAllResult.forwardRef(function UserSettingsPremium
       }
     }
     const obj27 = { style: tmp2.loading };
-    tmp36 = callback(_require(5586).ActivityIndicator, obj27);
+    tmp36 = callback(_require(5584).ActivityIndicator, obj27);
     tmp14 = c6;
     tmp18 = c7;
   }

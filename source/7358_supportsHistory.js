@@ -1,5 +1,5 @@
 // Module ID: 7358
-// Function ID: 59320
+// Function ID: 59349
 // Name: supportsHistory
 // Dependencies: [7237]
 

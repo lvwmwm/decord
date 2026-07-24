@@ -1,8 +1,8 @@
-// Module ID: 14902
-// Function ID: 113616
-// Dependencies: [31, 27, 10260, 4326, 33, 4130, 10261, 4549, 9128, 2]
+// Module ID: 14949
+// Function ID: 113937
+// Dependencies: [31, 27, 10289, 4326, 33, 4130, 10290, 4549, 9164, 2]
 
-// Module 14902
+// Module 14949
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -25,7 +25,7 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     flag = false;
   }
   const tmp = callback();
-  let obj = require(10261) /* getLayoutStyles */;
+  let obj = require(10290) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout, launchpad);
   require(4549) /* getFontScale */;
   let tmp6Result = null;
@@ -39,16 +39,16 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     items[1] = unreadBadgePanel;
     const unreadBadge = layoutStyles.unreadBadge;
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = require(10261) /* getLayoutStyles */.makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = require(10290) /* getLayoutStyles */.makeSizeStyle(layoutStyles.unreadBadge.size);
     obj.style = items;
     obj = { classic: flag };
-    const obj3 = require(10261) /* getLayoutStyles */;
+    const obj3 = require(10290) /* getLayoutStyles */;
     const tmp11 = jsx;
     const tmp6 = jsx;
     const tmp7 = View;
     const _Math = Math;
     let num2 = 1;
-    obj.size = require(9128) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
+    obj.size = require(9164) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
     const obj1 = {};
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       num2 = MUTED_OPACITY_CONTENT;
@@ -56,9 +56,9 @@ const memoResult = require("result").memo(function ChannelUnreadBadge(panelVaria
     obj1.opacity = num2;
     const items1 = [obj1];
     obj.badgeStyle = items1;
-    obj.children = tmp11(importDefault(9128), obj);
+    obj.children = tmp11(importDefault(9164), obj);
     tmp6Result = tmp6(tmp7, obj);
-    const tmp13 = importDefault(9128);
+    const tmp13 = importDefault(9164);
   }
   return tmp6Result;
 });

@@ -1,5 +1,5 @@
 // Module ID: 3899
-// Function ID: 32252
+// Function ID: 32253
 // Name: getColorProperty
 // Dependencies: [57, 31, 3881, 3894, 3889]
 // Exports: useRiveColor

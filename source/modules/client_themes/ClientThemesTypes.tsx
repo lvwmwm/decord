@@ -1,5 +1,5 @@
 // Module ID: 3944
-// Function ID: 32545
+// Function ID: 32546
 // Name: ClientThemeType
 // Dependencies: [1281, 1184, 1282, 2, 3945]
 // Exports: getProtoThemeFromBaseTheme

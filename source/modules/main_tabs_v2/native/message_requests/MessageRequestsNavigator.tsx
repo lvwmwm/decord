@@ -1,10 +1,10 @@
-// Module ID: 15557
-// Function ID: 119991
+// Module ID: 15604
+// Function ID: 120313
 // Name: MessageRequestsNavigator
-// Dependencies: [31, 27, 33, 9113, 4130, 689, 5519, 6707, 1557, 9122, 1212, 10161, 15558, 15577, 15578, 2]
+// Dependencies: [31, 27, 33, 9149, 4130, 689, 5517, 6707, 1557, 9158, 1212, 10191, 15605, 15624, 15625, 2]
 // Exports: default
 
-// Module 15557 (MessageRequestsNavigator)
+// Module 15604 (MessageRequestsNavigator)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function MessageRequestsNavigator() {
   let Screen;
   const tmp = createNativeStackNavigator();
   const require = tmp;
-  let obj = require(5519) /* NavigationStack */;
+  let obj = require(5517) /* NavigationStack */;
   const importDefault = obj.useAccessibilityNativeStackOptions();
   const layoutEffect = React.useLayoutEffect(() => tmp(outer1_2[7]).trackAppUIViewed(), []);
   const rect = importDefault(1557)();
@@ -60,7 +60,7 @@ export default function MessageRequestsNavigator() {
   ({ Navigator, Screen } = createNativeStackNavigator);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj2.title = intl.string(require(1212) /* getSystemLocale */.t.e7GWjQ);
-  let merged = Object.assign(importDefault(10161)());
+  let merged = Object.assign(importDefault(10191)());
   obj1.options = obj2;
   obj1.getComponent = function getComponent() {
     return tmp(outer1_2[12]).default;
@@ -70,7 +70,7 @@ export default function MessageRequestsNavigator() {
   const obj4 = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.title = intl2.string(require(1212) /* getSystemLocale */.t.ulKXHp);
-  let merged1 = Object.assign(importDefault(10161)());
+  let merged1 = Object.assign(importDefault(10191)());
   obj3.options = obj4;
   obj3.getComponent = function getComponent() {
     return tmp(outer1_2[13]).default;
@@ -80,7 +80,7 @@ export default function MessageRequestsNavigator() {
   const obj6 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.title = intl3.string(require(1212) /* getSystemLocale */.t.iilwGH);
-  const merged2 = Object.assign(importDefault(10161)());
+  const merged2 = Object.assign(importDefault(10191)());
   obj5.options = obj6;
   obj5.getComponent = function getComponent() {
     return tmp(outer1_2[14]).default;

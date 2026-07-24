@@ -1,5 +1,5 @@
 // Module ID: 1584
-// Function ID: 17678
+// Function ID: 17679
 // Name: overrideLogFunctionImplementation
 // Dependencies: [57, 1585, 1586, 1589, 1593, 1597]
 // Exports: initializeUIRuntime

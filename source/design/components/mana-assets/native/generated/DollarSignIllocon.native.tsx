@@ -1,5 +1,5 @@
 // Module ID: 6028
-// Function ID: 49996
+// Function ID: 50007
 // Name: DollarSignIllocon
 // Dependencies: [33, 5085, 6029, 2]
 // Exports: DollarSignIllocon

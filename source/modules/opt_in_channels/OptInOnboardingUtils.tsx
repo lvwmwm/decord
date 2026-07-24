@@ -1,10 +1,10 @@
-// Module ID: 9976
-// Function ID: 77073
+// Module ID: 10008
+// Function ID: 77267
 // Name: hasNotSetUpChannelOptIn
 // Dependencies: [1316, 1907, 1917, 4325, 3746, 6767, 1360, 5072, 5063, 1282, 2]
 // Exports: hasClearedGuildOnboardingNotice, toggleShowAllChannels
 
-// Module 9976 (hasNotSetUpChannelOptIn)
+// Module 10008 (hasNotSetUpChannelOptIn)
 import closure_3 from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";

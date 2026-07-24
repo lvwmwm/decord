@@ -1,9 +1,9 @@
-// Module ID: 14891
-// Function ID: 113532
+// Module ID: 14938
+// Function ID: 113853
 // Name: PreviewItem
-// Dependencies: [31, 4970, 14812, 33, 4130, 3987, 3991, 4542, 7589, 4476, 14822, 14843, 3743, 2]
+// Dependencies: [31, 4970, 14859, 33, 4130, 3987, 3991, 4542, 7678, 4476, 14869, 14890, 3743, 2]
 
-// Module 14891 (PreviewItem)
+// Module 14938 (PreviewItem)
 import importAllResult from "result";
 import { GuildsNodeType } from "_isNativeReflectConstruct";
 import withEqualityFn from "withEqualityFn";

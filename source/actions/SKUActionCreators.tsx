@@ -1,7 +1,7 @@
 // Module ID: 7367
-// Function ID: 59347
+// Function ID: 59376
 // Name: _fetchSKU
-// Dependencies: [5, 7368, 4175, 653, 686, 4369, 507, 3799, 7369, 6824, 4029, 3798, 3791, 4451, 4460, 1327, 2]
+// Dependencies: [5, 7368, 4175, 653, 686, 4369, 507, 3799, 7369, 6823, 4029, 3798, 3791, 4451, 4460, 1327, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
 // Module 7367 (_fetchSKU)
@@ -241,7 +241,6 @@ async function _purchaseSKU(arg0, arg1, arg2, arg3) {
   }
   obj1.libraryApplications = found;
   obj1.entitlements = tmp29.body.entitlements;
-  obj1.appliedUserDiscounts = tmp29.body.applied_user_discounts;
   obj1.giftCode = tmp29.body.gift_code;
   outer2_1(outer2_2[4]).dispatch(obj1);
   obj2 = {};

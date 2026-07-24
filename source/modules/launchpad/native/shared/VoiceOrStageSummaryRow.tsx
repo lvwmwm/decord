@@ -1,8 +1,8 @@
-// Module ID: 15675
-// Function ID: 120883
-// Dependencies: [31, 27, 33, 4130, 689, 15659, 4126, 1273, 15352, 2]
+// Module ID: 15722
+// Function ID: 121205
+// Dependencies: [31, 27, 33, 4130, 689, 15706, 4126, 1273, 15399, 2]
 
-// Module 15675
+// Module 15722
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -36,7 +36,7 @@ const memoResult = require("result").memo(function VoiceOrStageSummaryRow(arg0) 
   let dependencyMap;
   let closure_3;
   let callback;
-  const tmp = importDefault(15659)();
+  const tmp = importDefault(15706)();
   dependencyMap = tmp;
   const size = tmp.voiceOrStageSummaryRow.size;
   closure_3 = Math.max(users.length - max, 0);
@@ -105,7 +105,7 @@ const memoResult = require("result").memo(function VoiceOrStageSummaryRow(arg0) 
     const items3 = [, ];
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp2);
     obj2.style = items3;
-    let obj3 = { size: max(1273).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: importDefault(15352) };
+    let obj3 = { size: max(1273).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: importDefault(15399) };
     const items4 = [callback(max(1273).Icon, obj3), ];
     let obj4 = { variant: "text-sm/bold" };
     const obj5 = { marginLeft: 4 };

@@ -1,5 +1,5 @@
 // Module ID: 5950
-// Function ID: 49879
+// Function ID: 49890
 // Name: ClydeAnnouncementSpotIllustration
 // Dependencies: [33, 5085, 5951, 2]
 // Exports: ClydeAnnouncementSpotIllustration

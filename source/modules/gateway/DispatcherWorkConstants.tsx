@@ -1,9 +1,9 @@
-// Module ID: 12573
-// Function ID: 97304
+// Module ID: 12624
+// Function ID: 97625
 // Name: WorkIdleDeadline
 // Dependencies: [6, 7, 2]
 
-// Module 12573 (WorkIdleDeadline)
+// Module 12624 (WorkIdleDeadline)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

@@ -1,10 +1,10 @@
-// Module ID: 11157
-// Function ID: 86736
+// Module ID: 11187
+// Function ID: 87005
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 7921, 1348, 1345, 3946, 1334, 566, 11158, 11163, 5802, 2]
+// Dependencies: [57, 8008, 1348, 1345, 3946, 1334, 566, 11188, 11193, 5802, 2]
 // Exports: default
 
-// Module 11157 (_createForOfIteratorHelperLoose)
+// Module 11187 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -98,7 +98,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
   let obj = {};
   const items1 = [closure_5];
   obj.channel = channelId(566).useStateFromStores(items1, () => outer1_5.getChannel(channelId));
-  const tmp = importDefault(11163)({ channelId });
+  const tmp = importDefault(11193)({ channelId });
   if (tmp.canShowBotsBanner) {
     items.push(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }

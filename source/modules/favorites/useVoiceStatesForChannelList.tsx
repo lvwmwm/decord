@@ -1,10 +1,10 @@
-// Module ID: 14982
-// Function ID: 114169
+// Module ID: 15029
+// Function ID: 114490
 // Name: useVoiceStatesForChannelList
 // Dependencies: [1348, 4203, 1351, 653, 566, 2]
 // Exports: default
 
-// Module 14982 (useVoiceStatesForChannelList)
+// Module 15029 (useVoiceStatesForChannelList)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

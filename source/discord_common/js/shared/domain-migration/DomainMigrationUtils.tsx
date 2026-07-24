@@ -1,5 +1,5 @@
 // Module ID: 5143
-// Function ID: 44854
+// Function ID: 44859
 // Name: DomainMigrationEventType
 // Dependencies: [2]
 // Exports: extractMessage, sendPostMessage

@@ -1,9 +1,9 @@
-// Module ID: 11516
-// Function ID: 89728
+// Module ID: 11546
+// Function ID: 89973
 // Name: createMockGame
-// Dependencies: [4020, 11517, 2]
+// Dependencies: [4020, 11547, 2]
 
-// Module 11516 (createMockGame)
+// Module 11546 (createMockGame)
 function createMockGame(_1, name) {
   const obj = { id: _1, name, provider: require(4020) /* GameServerProviderType */.GameServerProviderType.SHOCKBYTE, plans: items1 };
   const items = [...items1.map((cost) => cost.cost)];

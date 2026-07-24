@@ -1,10 +1,10 @@
-// Module ID: 12329
-// Function ID: 95945
+// Module ID: 12356
+// Function ID: 96185
 // Name: GuildPreview
-// Dependencies: [31, 27, 33, 4130, 689, 3974, 4126, 1212, 5515, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 3974, 4126, 1212, 5513, 2]
 // Exports: default
 
-// Module 12329 (GuildPreview)
+// Module 12356 (GuildPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,9 +38,9 @@ export default function GuildPreview(guild) {
   items1 = [tmp.guildContainer, { borderColor: hexWithOpacityResult }];
   const obj2 = {};
   const str = intl.string(require(1212) /* getSystemLocale */.t["0ox7Hq"]);
-  obj2.size = require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE;
+  obj2.size = require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE;
   obj2.guild = guild;
-  const items2 = [callback(importDefault(5515), obj2), ];
+  const items2 = [callback(importDefault(5513), obj2), ];
   const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name };
   items2[1] = callback(require(4126) /* Text */.Text, obj3);
   obj1.children = items2;

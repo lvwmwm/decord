@@ -1,5 +1,5 @@
 // Module ID: 1852
-// Function ID: 20435
+// Function ID: 20436
 // Name: set
 // Dependencies: [2]
 // Exports: isExternalEmojiAllowedForIntention

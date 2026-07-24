@@ -1,10 +1,10 @@
-// Module ID: 12661
-// Function ID: 98570
+// Module ID: 12712
+// Function ID: 98891
 // Name: getUserCalloutRowText
-// Dependencies: [31, 27, 1348, 1849, 12662, 653, 33, 4130, 689, 4126, 4319, 1212, 566, 1327, 1273, 10970, 9096, 4091, 4086, 675, 5500, 10413, 5503, 5165, 4543, 4098, 12663, 4140, 2]
+// Dependencies: [31, 27, 1348, 1849, 12713, 653, 33, 4130, 689, 4126, 4319, 1212, 566, 1327, 1273, 10997, 9134, 4091, 4086, 675, 5498, 10442, 5501, 5165, 4543, 4098, 12714, 4140, 2]
 // Exports: default
 
-// Module 12661 (getUserCalloutRowText)
+// Module 12712 (getUserCalloutRowText)
 import result from "result";
 import get_ActivityIndicator from "module_4140";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -97,11 +97,11 @@ function UserCalloutAvatars(userIds) {
       obj["aria-hidden"] = true;
       let tmp10 = callback(userIds(1273).Avatar, obj);
     } else {
-      tmp10 = callback(userIds(10970).UserIcon, {});
+      tmp10 = callback(userIds(10997).UserIcon, {});
     }
   } else {
     obj = { users: found, size: userIds(1273).AvatarSizes.REFRESH_MEDIUM_32 };
-    return callback(userIds(9096).FacepileGroupDMAvatar, obj);
+    return callback(userIds(9134).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {

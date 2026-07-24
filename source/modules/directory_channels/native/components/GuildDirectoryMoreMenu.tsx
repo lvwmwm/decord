@@ -1,10 +1,10 @@
-// Module ID: 10043
-// Function ID: 77594
+// Module ID: 10075
+// Function ID: 77788
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [31, 33, 10037, 10044, 4471, 1212, 10046, 1273, 7600, 9106, 4089, 9417, 9302, 7771, 8968, 689, 2]
+// Dependencies: [31, 33, 10069, 10076, 4471, 1212, 10078, 1273, 7689, 9142, 4089, 9453, 9338, 7533, 9007, 689, 2]
 // Exports: default
 
-// Module 10043 (GuildDirectoryMoreMenu)
+// Module 10075 (GuildDirectoryMoreMenu)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -15,14 +15,14 @@ export default function GuildDirectoryMoreMenu(entry) {
   let canRemove;
   let isEntryAdmin;
   entry = entry.entry;
-  const tmp = importDefault(10037)(entry);
+  const tmp = importDefault(10069)(entry);
   const items = [];
   ({ isEntryAdmin, canRemove } = tmp);
   if (tmp.canEdit) {
     let obj = {};
     let intl = entry(1212).intl;
     obj.label = intl.string(entry(1212).t.XnuOvN);
-    obj.IconComponent = entry(9106).PencilIcon;
+    obj.IconComponent = entry(9142).PencilIcon;
     obj.action = function handleEdit() {
       let obj = outer1_1(outer1_3[3]);
       obj = { entry };
@@ -63,7 +63,7 @@ export default function GuildDirectoryMoreMenu(entry) {
     obj = {};
     let intl3 = entry(1212).intl;
     obj.label = intl3.string(entry(1212).t.Aen9eh);
-    obj.IconComponent = entry(9417).FlagIcon;
+    obj.IconComponent = entry(9453).FlagIcon;
     obj.variant = "destructive";
     obj.action = function handleReport() {
       const result = entry(outer1_3[8]).showReportModalForGuildDirectoryEntry(entry);
@@ -89,7 +89,7 @@ export default function GuildDirectoryMoreMenu(entry) {
           return outer1_4(entry(outer1_3[13]).IconButton, obj);
         }
     };
-    tmp11 = jsx(entry(9302).ContextMenu, {
+    tmp11 = jsx(entry(9338).ContextMenu, {
       items,
       children(ref) {
           let obj = Object.create(null);

@@ -1,5 +1,5 @@
 // Module ID: 1929
-// Function ID: 21792
+// Function ID: 21793
 // Name: buildLocalizeFn
 // Dependencies: []
 // Exports: default

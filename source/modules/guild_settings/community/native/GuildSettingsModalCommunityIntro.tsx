@@ -1,10 +1,10 @@
-// Module ID: 16351
-// Function ID: 127655
+// Module ID: 16398
+// Function ID: 127979
 // Name: FeatureCard
-// Dependencies: [31, 27, 1838, 3758, 8439, 653, 33, 4130, 689, 9597, 1212, 4126, 15147, 4086, 1456, 566, 686, 8438, 16352, 5459, 1920, 4543, 16356, 3830, 5448, 2]
+// Dependencies: [31, 27, 1838, 3758, 8483, 653, 33, 4130, 689, 9633, 1212, 4126, 15194, 4086, 1456, 566, 686, 8482, 16399, 1920, 4543, 16403, 3830, 5448, 2]
 // Exports: default
 
-// Module 16351 (FeatureCard)
+// Module 16398 (FeatureCard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_7 from "_createForOfIteratorHelperLoose";
@@ -108,24 +108,24 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   obj3 = { style: tmp.body, variant: "text-md/medium", color: "text-default" };
   const intl2 = require(navigation[10]).intl;
   obj4 = {};
-  let obj11 = onClose(navigation[20]);
+  let obj11 = onClose(navigation[19]);
   obj4.helpdeskArticle = obj11.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES);
   obj3.children = intl2.format(require(navigation[10]).t["52EgsM"], obj4);
-  items5[2] = callback(require(navigation[19]).TextWithIOSLinkWorkaround, obj3);
+  items5[2] = callback(require(navigation[11]).Text, obj3);
   const obj5 = {};
   const intl3 = require(navigation[10]).intl;
   obj5.text = intl3.string(require(navigation[10]).t.LhlgY9);
   obj5.onPress = function onPress() {
     if (stateFromStores1) {
-      onClose(navigation[22]).open();
-      const obj2 = onClose(navigation[22]);
+      onClose(navigation[21]).open();
+      const obj2 = onClose(navigation[21]);
     } else {
-      outer1_0(navigation[23]).communityAdminOnly();
-      const obj = outer1_0(navigation[23]);
+      outer1_0(navigation[22]).communityAdminOnly();
+      const obj = outer1_0(navigation[22]);
     }
   };
   obj5.disabled = !stateFromStores1;
-  items5[3] = callback(require(navigation[21]).Button, obj5);
+  items5[3] = callback(require(navigation[20]).Button, obj5);
   const obj6 = { style: tmp.details, variant: "text-sm/medium", color: "text-default" };
   const intl4 = require(navigation[10]).intl;
   obj6.children = intl4.string(require(navigation[10]).t.HgTI2N);
@@ -184,7 +184,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   });
   items5[5] = callback(stateFromStores1, obj7);
   obj.children = items5;
-  const items7 = [callback2(closure_6, obj), callback(require(navigation[24]).NavScrim, {})];
+  const items7 = [callback2(closure_6, obj), callback(require(navigation[23]).NavScrim, {})];
   obj.children = items7;
   return callback2(closure_16, obj);
 };

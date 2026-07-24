@@ -1,10 +1,10 @@
-// Module ID: 16478
-// Function ID: 128389
+// Module ID: 16525
+// Function ID: 128713
 // Name: ContentHeader
-// Dependencies: [31, 27, 653, 33, 4130, 689, 4126, 4098, 16479, 1934, 16483, 1273, 16482, 1212, 5452, 1456, 14116, 16484, 675, 4324, 14122, 16480, 9405, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 4126, 4098, 16526, 1934, 16530, 1273, 16529, 1212, 5452, 1456, 14166, 16531, 675, 4324, 14172, 16527, 9441, 2]
 // Exports: default
 
-// Module 16478 (ContentHeader)
+// Module 16525 (ContentHeader)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -51,7 +51,7 @@ function ChannelBenefitShowCase(channel) {
   let name;
   let type;
   ({ description, type, name } = channel.channel);
-  let obj = require(16482) /* getPrivateChannelIconComponent */;
+  let obj = require(16529) /* getPrivateChannelIconComponent */;
   obj = { style: { flexDirection: "row", alignItems: "center" } };
   const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(require(1273) /* Button */.Spacer, { size: 4 }), ];
   obj = { variant: "text-md/semibold", color: "text-default", children: name };

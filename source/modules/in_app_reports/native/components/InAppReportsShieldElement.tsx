@@ -1,10 +1,10 @@
-// Module ID: 7617
-// Function ID: 61050
+// Module ID: 7706
+// Function ID: 61336
 // Name: ShieldElement
 // Dependencies: [31, 27, 33, 4130, 5807, 2]
 // Exports: default
 
-// Module 7617 (ShieldElement)
+// Module 7706 (ShieldElement)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

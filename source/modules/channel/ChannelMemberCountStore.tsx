@@ -1,9 +1,9 @@
-// Module ID: 10125
-// Function ID: 78357
+// Module ID: 10157
+// Function ID: 78551
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4808, 1348, 21, 566, 686, 2]
 
-// Module 10125 (_isNativeReflectConstruct)
+// Module 10157 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 16271
-// Function ID: 126666
+// Module ID: 16318
+// Function ID: 126990
 // Name: StickerPlusIcon
-// Dependencies: [31, 33, 689, 3833, 16272, 2]
+// Dependencies: [31, 33, 689, 3833, 16319, 2]
 // Exports: StickerPlusIcon
 
-// Module 16271 (StickerPlusIcon)
+// Module 16318 (StickerPlusIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const StickerPlusIcon = function StickerPlusIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(16272) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(16319) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(16272) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(16319) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

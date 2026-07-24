@@ -1,5 +1,5 @@
 // Module ID: 1559
-// Function ID: 17607
+// Function ID: 17608
 // Name: EMPTY_SAFE_AREA_INSETS
 // Dependencies: [1560, 2]
 

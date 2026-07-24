@@ -1,10 +1,10 @@
-// Module ID: 8236
-// Function ID: 65039
+// Module ID: 8280
+// Function ID: 65267
 // Name: useProfileTheme
-// Dependencies: [57, 4122, 8237, 653, 4066, 566, 688, 7812, 665, 7893, 3976, 2]
+// Dependencies: [57, 4122, 8281, 653, 4066, 566, 688, 7903, 665, 7980, 3976, 2]
 // Exports: default
 
-// Module 8236 (useProfileTheme)
+// Module 8280 (useProfileTheme)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { useEffectiveThemeOverride } from "useProfileThemeOverrideStore";
@@ -40,7 +40,7 @@ export default function useProfileTheme(arg0) {
   }
   const result = require(688) /* unsafe_getRawColor */.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
   const obj2 = require(688) /* unsafe_getRawColor */;
-  callback(require(7812) /* hasFetchedColors */.useAvatarColors(pendingAvatarSrc, result, false), 2);
+  callback(require(7903) /* hasFetchedColors */.useAvatarColors(pendingAvatarSrc, result, false), 2);
   if (null != tmp2) {
     return tmp2;
   } else {
@@ -74,13 +74,13 @@ export default function useProfileTheme(arg0) {
     if (!stateFromStores) {
       tmp17 = tmp;
       if (!forceUserTheme) {
-        const profileTheme = require(7893) /* getProfileTheme */.getProfileTheme(first);
+        const profileTheme = require(7980) /* getProfileTheme */.getProfileTheme(first);
         let tmp21 = tmp;
         if (null != profileTheme) {
           tmp21 = profileTheme;
         }
         tmp17 = tmp21;
-        const obj7 = require(7893) /* getProfileTheme */;
+        const obj7 = require(7980) /* getProfileTheme */;
       }
     }
     if (tmp17 !== ThemeTypes.DARK) {
@@ -100,5 +100,5 @@ export default function useProfileTheme(arg0) {
     obj = { theme: DARKER, primaryColor: first, secondaryColor: hex2intResult };
     return obj;
   }
-  const obj3 = require(7812) /* hasFetchedColors */;
+  const obj3 = require(7903) /* hasFetchedColors */;
 };

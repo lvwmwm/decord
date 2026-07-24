@@ -1,10 +1,10 @@
-// Module ID: 9109
-// Function ID: 71373
+// Module ID: 9145
+// Function ID: 71582
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [31, 27, 653, 9110, 9111, 2]
+// Dependencies: [31, 27, 653, 9146, 9147, 2]
 // Exports: default
 
-// Module 9109 (useNavigatorConfirmChangesOnBack)
+// Module 9145 (useNavigatorConfirmChangesOnBack)
 import result from "result";
 import { Keyboard } from "get ActivityIndicator";
 import { NOOP } from "ME";
@@ -14,7 +14,7 @@ const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/
 export default function useNavigatorConfirmChangesOnBack() {
   const ref = React.useRef(null);
   const dependencyMap = React.useRef(false);
-  obj = { onGoBack: ref(9110)(obj).onGoBack, ref };
+  obj = { onGoBack: ref(9146)(obj).onGoBack, ref };
   obj = {
     onBeforeGoBack(preventable) {
       if (preventable.preventable) {

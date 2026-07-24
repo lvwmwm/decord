@@ -1,5 +1,5 @@
 // Module ID: 5150
-// Function ID: 44912
+// Function ID: 44917
 // Name: _fetchMemberCountsFromBackend
 // Dependencies: [5, 5149, 653, 686, 507, 1362, 5048, 2]
 // Exports: fetchMemberCounts, requestMembersForRole

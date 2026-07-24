@@ -1,10 +1,10 @@
-// Module ID: 8405
-// Function ID: 66897
+// Module ID: 8449
+// Function ID: 67125
 // Name: StageChannelUpsell
-// Dependencies: [57, 31, 27, 1352, 8406, 8354, 653, 33, 4130, 689, 4660, 1273, 7607, 8407, 4126, 1212, 4543, 4337, 8408, 1934, 4098, 2]
+// Dependencies: [57, 31, 27, 1352, 8450, 8398, 653, 33, 4130, 689, 4660, 1273, 7696, 8451, 4126, 1212, 4543, 4337, 8452, 1934, 4098, 2]
 // Exports: default
 
-// Module 8405 (StageChannelUpsell)
+// Module 8449 (StageChannelUpsell)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -44,10 +44,10 @@ export default function StageChannelUpsell(arg0) {
   if (!tmp2[0]) {
     let obj = { style: tmp.container };
     obj = { onPress: tmp3, accessibilityRole: "button", style: tmp.closeContainer };
-    obj = { source: importDefault(7607) };
+    obj = { source: importDefault(7696) };
     obj.children = callback3(require(1273) /* Button */.Icon, obj);
     const items = [callback3(require(4660) /* PressableBase */.PressableOpacity, obj), , , , , ];
-    const obj1 = { source: importDefault(8407), style: tmp.image };
+    const obj1 = { source: importDefault(8451), style: tmp.image };
     items[1] = callback3(closure_4, obj1);
     let obj2 = { style: tmp.header, variant: "text-md/bold", color: "mobile-text-heading-primary" };
     const intl = require(1212) /* getSystemLocale */.intl;

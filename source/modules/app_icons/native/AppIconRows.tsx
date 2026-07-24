@@ -1,10 +1,10 @@
-// Module ID: 14360
-// Function ID: 109808
+// Module ID: 14410
+// Function ID: 110131
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 7962, 5503, 1212, 14361, 12380, 566, 1872, 2]
+// Dependencies: [57, 31, 27, 1849, 33, 4130, 7445, 5501, 1212, 14411, 7443, 566, 1872, 2]
 // Exports: default
 
-// Module 14360 (BackwardsCompatibleAppIconRows)
+// Module 14410 (BackwardsCompatibleAppIconRows)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -27,7 +27,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
     let dependencyMap;
     function onLongPress(result, arg1) {
       let tmp = null;
-      if (result === merged(7962).FreemiumAppIconIds.DEFAULT) {
+      if (result === merged(7445).FreemiumAppIconIds.DEFAULT) {
         tmp = dependencyMap(true);
       }
       return tmp;
@@ -48,9 +48,9 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj["icon"] = id;
       obj["showEasterEgg"] = callback;
       obj["onLongPress"] = onLongPress;
-      return outer1_7(callback(14361), obj);
+      return outer1_7(callback(14411), obj);
     });
-    obj.children = callback(merged(5503).TableRowGroup, obj);
+    obj.children = callback(merged(5501).TableRowGroup, obj);
     return callback(View, obj);
   }
 }
@@ -62,7 +62,7 @@ export default function AppIconRows(onSelect) {
   let currentAppIcon;
   let limitedTimeAppIcons;
   onSelect = onSelect.onSelect;
-  let obj = require(12380) /* fetchCurrentAppIcon */;
+  let obj = require(7443) /* fetchCurrentAppIcon */;
   const appIcons = obj.useAppIcons();
   ({ limitedTimeAppIcons, currentAppIcon } = appIcons);
   let obj1 = require(566) /* initialize */;

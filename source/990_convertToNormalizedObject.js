@@ -1,5 +1,5 @@
 // Module ID: 990
-// Function ID: 10642
+// Function ID: 10643
 // Name: convertToNormalizedObject
 // Dependencies: [77, 794]
 // Exports: convertToNormalizedObject

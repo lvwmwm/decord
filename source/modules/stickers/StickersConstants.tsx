@@ -1,5 +1,5 @@
 // Module ID: 3806
-// Function ID: 31382
+// Function ID: 31383
 // Name: STICKER_PICKER_TAB_PANEL_ID
 // Dependencies: [2]
 

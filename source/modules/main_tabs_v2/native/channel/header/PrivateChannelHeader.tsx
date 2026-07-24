@@ -1,9 +1,9 @@
-// Module ID: 10116
-// Function ID: 78281
+// Module ID: 10148
+// Function ID: 78475
 // Name: GroupDmMemberCount
-// Dependencies: [31, 1348, 4217, 3767, 1849, 653, 33, 1273, 4130, 689, 566, 10111, 4320, 1212, 9063, 10117, 3969, 10119, 2]
+// Dependencies: [31, 1348, 4217, 3767, 1849, 653, 33, 1273, 4130, 689, 566, 10143, 4320, 1212, 9102, 10149, 3969, 10151, 2]
 
-// Module 10116 (GroupDmMemberCount)
+// Module 10148 (GroupDmMemberCount)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -50,7 +50,7 @@ function GroupDmMemberCount(channel) {
     }, 0);
   });
   const obj = channel(566);
-  return channel(10119).renderMemberCountText(stateFromStores, channel.recipients.length);
+  return channel(10151).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 ({ ChannelTypes: closure_8, StatusTypes: closure_9 } = ME);
 ({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);

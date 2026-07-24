@@ -1,5 +1,5 @@
 // Module ID: 4547
-// Function ID: 39872
+// Function ID: 39873
 // Name: getButtonPadding
 // Dependencies: [4545, 2]
 // Exports: getButtonDefaultTextVariant, getButtonPadding

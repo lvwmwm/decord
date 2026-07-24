@@ -1,10 +1,10 @@
-// Module ID: 8332
-// Function ID: 66049
+// Module ID: 8376
+// Function ID: 66277
 // Name: showShareActionSheet
-// Dependencies: [27, 478, 8333, 8334, 1184, 2]
+// Dependencies: [27, 478, 8377, 8378, 1184, 2]
 // Exports: showShareActionSheet
 
-// Module 8332 (showShareActionSheet)
+// Module 8376 (showShareActionSheet)
 import { NativeEventEmitter } from "get ActivityIndicator";
 import isWindows from "isWindows";
 
@@ -15,7 +15,7 @@ if (isWindows.isAndroid()) {
     let _location;
     let app;
     ({ app, location: _location } = arg0);
-    const result = require(8334) /* resolveShareFileExtension */.trackAppClickInNativeShareSheet(app, _location);
+    const result = require(8378) /* resolveShareFileExtension */.trackAppClickInNativeShareSheet(app, _location);
   });
 }
 let result = require("enforcing").fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
@@ -26,8 +26,8 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
   const _require = source;
   const importDefault = SECURE_FRAMES_STREAM_BOTTOM_SHEET;
   if (null != source.source) {
-    let mediaShareParams = _require(8334).getMediaShareParams(source.source);
-    const obj2 = _require(8334);
+    let mediaShareParams = _require(8378).getMediaShareParams(source.source);
+    const obj2 = _require(8378);
   } else {
     mediaShareParams = { mediaFallbackUrl: undefined, mediaStagingOptions: undefined };
   }
@@ -57,9 +57,9 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
   if (null != mediaStagingOptions) {
     tmp7 = mediaStagingOptions;
   }
-  const obj3 = importDefault(8333);
-  const shareResult = importDefault(8333).share(tmp3, tmp4, tmp5, tmp6, tmp7);
-  importDefault(8333).share(tmp3, tmp4, tmp5, tmp6, tmp7).then((method) => {
+  const obj3 = importDefault(8377);
+  const shareResult = importDefault(8377).share(tmp3, tmp4, tmp5, tmp6, tmp7);
+  importDefault(8377).share(tmp3, tmp4, tmp5, tmp6, tmp7).then((method) => {
     if (null != method) {
       method = method.method;
       if (null != source.iOSOnlyShareCallback) {

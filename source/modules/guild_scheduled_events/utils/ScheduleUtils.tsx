@@ -1,10 +1,10 @@
-// Module ID: 8346
-// Function ID: 66188
+// Module ID: 8390
+// Function ID: 66416
 // Name: getNextBucketedTime
-// Dependencies: [1849, 8347, 1354, 8348, 1212, 3712, 3800, 21, 664, 22, 2]
+// Dependencies: [1849, 8391, 1354, 8392, 1212, 3712, 3800, 21, 664, 22, 2]
 // Exports: areSchedulesIdentical, generateNextRecurrences, getBaseScheduleForRecurrence, getEventTimeData, getInitialEventEndDate, getInitialEventStartDate, getNextRecurrenceIdInEvent, getRecurrenceOptions, getRecurrenceStatus, getScheduleForRecurrenceWithException, getScheduleFromEventData, hasScheduleChanges, hasValidSchedule, isValidRecurrence, recurrenceOptionToRecurrenceRule, recurrenceRuleToOption
 
-// Module 8346 (getNextBucketedTime)
+// Module 8390 (getNextBucketedTime)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { RecurrenceOptions } from "RecurrenceOptions";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -44,7 +44,7 @@ function formatDatePrefersRelativeTime(toDate, toDate2) {
   dateFormatResult = formatDatePreferShorter(toDate, toDate2);
 }
 function convertJSDayToRRuleDay(uTCDay) {
-  const weekday = new require(8348) /* w */.Weekday(items6[uTCDay]);
+  const weekday = new require(8392) /* w */.Weekday(items6[uTCDay]);
   return weekday;
 }
 function _getSchedule(scheduledStartTime, scheduledEndTime) {
@@ -122,7 +122,7 @@ function getRRule(closure_2) {
   }
   obj.byyearday = tmp15;
   obj.count = closure_2.count;
-  const rRule = new require(8348) /* w */.RRule(obj);
+  const rRule = new require(8392) /* w */.RRule(obj);
   return rRule;
 }
 function getNextRecurrenceInEvent(recurrence_rule) {
@@ -403,10 +403,10 @@ export const isValidRecurrence = function isValidRecurrence(start) {
           const uTCSeconds = date.getUTCSeconds();
           if (uTCSeconds === date1.getUTCSeconds()) {
             const frequency = start.frequency;
-            if (require(8348) /* w */.RRule.WEEKLY === frequency) {
+            if (require(8392) /* w */.RRule.WEEKLY === frequency) {
               const uTCDay = date.getUTCDay();
               return uTCDay === date1.getUTCDay();
-            } else if (require(8348) /* w */.RRule.YEARLY === frequency) {
+            } else if (require(8392) /* w */.RRule.YEARLY === frequency) {
               const uTCDate = date.getUTCDate();
               return uTCDate === date1.getUTCDate();
             } else {
@@ -443,40 +443,40 @@ export const recurrenceOptionToRecurrenceRule = function recurrenceOptionToRecur
   let rRule6 = null;
   if (RecurrenceOptions.NONE !== closure_7) {
     if (RecurrenceOptions.WEEKLY === closure_7) {
-      const RRule6 = require(8348) /* w */.RRule;
-      let obj = { dtstart: toDateResult2, freq: require(8348) /* w */.RRule.WEEKLY };
+      const RRule6 = require(8392) /* w */.RRule;
+      let obj = { dtstart: toDateResult2, freq: require(8392) /* w */.RRule.WEEKLY };
       const prototype6 = RRule6.prototype;
       rRule6 = new RRule6(obj);
     } else if (RecurrenceOptions.BIWEEKLY === closure_7) {
-      const RRule5 = require(8348) /* w */.RRule;
-      obj = { dtstart: toDateResult2, freq: require(8348) /* w */.RRule.WEEKLY, interval: 2 };
+      const RRule5 = require(8392) /* w */.RRule;
+      obj = { dtstart: toDateResult2, freq: require(8392) /* w */.RRule.WEEKLY, interval: 2 };
       const prototype5 = RRule5.prototype;
       rRule6 = new RRule5(obj);
     } else if (RecurrenceOptions.MONTHLY === closure_7) {
-      const RRule4 = require(8348) /* w */.RRule;
-      obj1 = { dtstart: toDateResult2, freq: require(8348) /* w */.RRule.MONTHLY };
+      const RRule4 = require(8392) /* w */.RRule;
+      obj1 = { dtstart: toDateResult2, freq: require(8392) /* w */.RRule.MONTHLY };
       const items = [obj1.nth(rounded)];
       obj1.byweekday = items;
       const prototype4 = RRule4.prototype;
       rRule6 = new RRule4(obj1);
     } else if (RecurrenceOptions.YEARLY === closure_7) {
-      const RRule3 = require(8348) /* w */.RRule;
-      const obj2 = { dtstart: toDateResult2, freq: require(8348) /* w */.RRule.YEARLY };
+      const RRule3 = require(8392) /* w */.RRule;
+      const obj2 = { dtstart: toDateResult2, freq: require(8392) /* w */.RRule.YEARLY };
       const prototype3 = RRule3.prototype;
       rRule6 = new RRule3(obj2);
     } else if (RecurrenceOptions.DAILY === closure_7) {
-      const RRule2 = require(8348) /* w */.RRule;
-      const obj3 = { dtstart: toDateResult2, freq: require(8348) /* w */.RRule.DAILY };
+      const RRule2 = require(8392) /* w */.RRule;
+      const obj3 = { dtstart: toDateResult2, freq: require(8392) /* w */.RRule.DAILY };
       const prototype2 = RRule2.prototype;
       rRule6 = new RRule2(obj3);
     } else if (RecurrenceOptions.WEEKDAY_ONLY === closure_7) {
-      const RRule = require(8348) /* w */.RRule;
-      const obj4 = { dtstart: toDateResult2, freq: require(8348) /* w */.RRule.DAILY, byweekday: tmp };
+      const RRule = require(8392) /* w */.RRule;
+      const obj4 = { dtstart: toDateResult2, freq: require(8392) /* w */.RRule.DAILY, byweekday: tmp };
       const prototype = RRule.prototype;
       rRule6 = new RRule(obj4);
     } else if (RecurrenceOptions.WEEKEND_ONLY === closure_7) {
-      const RRule7 = require(8348) /* w */.RRule;
-      const obj5 = { dtstart: toDateResult2, freq: require(8348) /* w */.RRule.DAILY, byweekday: tmp2 };
+      const RRule7 = require(8392) /* w */.RRule;
+      const obj5 = { dtstart: toDateResult2, freq: require(8392) /* w */.RRule.DAILY, byweekday: tmp2 };
       const prototype7 = RRule7.prototype;
       rRule6 = new RRule7(obj5);
     }
@@ -515,7 +515,7 @@ export const recurrenceRuleToOption = function recurrenceRuleToOption(startDate,
   } else {
     const tmp15 = getRRule(recurrenceRule);
     const freq = tmp15.options.freq;
-    if (require(8348) /* w */.RRule.WEEKLY === freq) {
+    if (require(8392) /* w */.RRule.WEEKLY === freq) {
       if (tmp15.options.interval >= 1) {
         if (tmp15.options.interval <= 2) {
           if (1 === tmp15.options.interval) {
@@ -527,11 +527,11 @@ export const recurrenceRuleToOption = function recurrenceRuleToOption(startDate,
         return NONE;
       }
       NONE = RecurrenceOptions.NONE;
-    } else if (require(8348) /* w */.RRule.YEARLY === freq) {
+    } else if (require(8392) /* w */.RRule.YEARLY === freq) {
       return RecurrenceOptions.YEARLY;
-    } else if (require(8348) /* w */.RRule.MONTHLY === freq) {
+    } else if (require(8392) /* w */.RRule.MONTHLY === freq) {
       return RecurrenceOptions.MONTHLY;
-    } else if (require(8348) /* w */.RRule.DAILY === freq) {
+    } else if (require(8392) /* w */.RRule.DAILY === freq) {
       if (null != tmp15.options.byweekday) {
         if (0 !== tmp15.options.byweekday.length) {
           if (obj2.isEqual(tmp15.options.byweekday, getValidWeekdays(startDate))) {

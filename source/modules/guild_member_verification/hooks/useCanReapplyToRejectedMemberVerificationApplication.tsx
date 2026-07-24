@@ -1,10 +1,10 @@
-// Module ID: 9163
-// Function ID: 71835
+// Module ID: 9199
+// Function ID: 72044
 // Name: useCanReapplyToRejectedMemberVerificationApplication
 // Dependencies: [5, 57, 31, 4115, 3948, 653, 566, 5128, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 9163 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 9199 (useCanReapplyToRejectedMemberVerificationApplication)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

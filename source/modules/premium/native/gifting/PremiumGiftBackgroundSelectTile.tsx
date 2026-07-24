@@ -1,10 +1,10 @@
-// Module ID: 11819
-// Function ID: 91684
+// Module ID: 11846
+// Function ID: 91922
 // Name: GiftBackgroundSelectTile
-// Dependencies: [31, 27, 1851, 11820, 33, 11821, 11822, 11823, 11824, 11825, 11826, 11827, 11828, 11829, 4130, 689, 1212, 2262, 5085, 2]
+// Dependencies: [31, 27, 1851, 11847, 33, 11848, 11849, 11850, 11851, 11852, 11853, 11854, 11855, 11856, 4130, 689, 1212, 2262, 5085, 2]
 // Exports: default
 
-// Module 11819 (GiftBackgroundSelectTile)
+// Module 11846 (GiftBackgroundSelectTile)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PremiumGiftStyles } from "GuildFeatures";

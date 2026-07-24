@@ -1,10 +1,10 @@
-// Module ID: 8775
-// Function ID: 69349
+// Module ID: 8814
+// Function ID: 69564
 // Name: CollectiblesShopGiftModal
-// Dependencies: [31, 6774, 653, 33, 8776, 8271, 8265, 566, 5464, 5484, 1832, 6773, 3789, 8777, 1212, 8778, 11813, 11816, 2]
+// Dependencies: [31, 6774, 653, 33, 8815, 8315, 8309, 566, 5462, 5482, 1832, 6773, 3789, 8816, 1212, 8817, 11840, 11843, 2]
 // Exports: default
 
-// Module 8775 (CollectiblesShopGiftModal)
+// Module 8814 (CollectiblesShopGiftModal)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME";

@@ -1,7 +1,7 @@
 // Module ID: 4149
-// Function ID: 34947
+// Function ID: 34948
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4144, 4150, 1194, 1348, 1838, 4177, 3758, 4202, 1906, 4146, 653, 4195, 664, 4194, 12838, 12839, 12840, 1934, 6967, 12730, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4144, 4150, 1194, 1348, 1838, 4177, 3758, 4202, 1906, 4146, 653, 4195, 664, 4194, 12890, 12891, 12892, 1934, 6966, 12781, 566, 686, 2]
 
 // Module 4149 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -189,7 +189,7 @@ function isWatchableStream(streamType) {
     const basicChannel = store4.getBasicChannel(streamType.channelId);
     let first = null != basicChannel;
     if (first) {
-      const obj = require(6967) /* _createForOfIteratorHelperLoose */;
+      const obj = require(6966) /* _createForOfIteratorHelperLoose */;
       first = obj.canWatchStream(basicChannel, closure_21, _createForOfIteratorHelperLoose, closure_18, closure_12)[0];
     }
     return first;
@@ -689,7 +689,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         pid = gameForPID1.pid;
       }
       if (tmp) {
-        const tmp11 = importDefault(12839)(content);
+        const tmp11 = importDefault(12891)(content);
         let obj = { pid };
         let id;
         if (null != gameForPID1) {
@@ -926,11 +926,11 @@ tmp4 = new tmp4(require("dispatcher"), {
       } else if (reason === constants3.SAFETY_GUILD_RATE_LIMITED) {
         let obj = guildId(4194);
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        guildId(1934)(12840, dependencyMap.paths).then((arg0) => {
+        guildId(1934)(12892, dependencyMap.paths).then((arg0) => {
           arg0.default(guildId);
         });
         FAILED = constants.ENDED;
-        const promise = guildId(1934)(12840, dependencyMap.paths);
+        const promise = guildId(1934)(12892, dependencyMap.paths);
       } else {
         let tmp10 = value.state === constants.FAILED;
         if (tmp10) {

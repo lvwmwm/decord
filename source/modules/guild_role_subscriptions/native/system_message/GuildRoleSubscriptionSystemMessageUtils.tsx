@@ -1,10 +1,10 @@
-// Module ID: 10973
-// Function ID: 85319
+// Module ID: 11000
+// Function ID: 85508
 // Name: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
-// Dependencies: [653, 6691, 7679, 4324, 2]
+// Dependencies: [653, 6691, 7768, 4324, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 10973 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
+// Module 11000 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
 import { AnalyticEvents } from "ME";
 
 const result = require("identityHook").fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
@@ -14,8 +14,8 @@ export const handleRoleSubscriptionPurchaseSystemMessageCtaClicked = function ha
   obj = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
   obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(6691).getSendMessageOptionsForReply(obj));
   const obj2 = importDefault(6691);
-  const roleSubscriptionPurchaseSystemMessageEventProperties = require(7679) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
-  const obj4 = require(7679) /* identityHook */;
+  const roleSubscriptionPurchaseSystemMessageEventProperties = require(7768) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
+  const obj4 = require(7768) /* identityHook */;
   obj = {};
   const merged = Object.assign(roleSubscriptionPurchaseSystemMessageEventProperties);
   obj["sticker_id"] = stickerId;

@@ -1,10 +1,10 @@
-// Module ID: 15758
-// Function ID: 121600
+// Module ID: 15805
+// Function ID: 121922
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [29, 31, 27, 1849, 4578, 653, 33, 4130, 689, 477, 566, 5464, 5733, 5739, 4585, 4548, 5500, 5151, 11079, 4126, 4543, 9395, 9397, 1212, 7594, 3991, 2]
+// Dependencies: [29, 31, 27, 1849, 4578, 653, 33, 4130, 689, 477, 566, 5462, 5733, 5739, 4585, 4548, 5498, 5151, 11106, 4126, 4543, 9431, 9433, 1212, 7683, 3991, 2]
 // Exports: default
 
-// Module 15758 (SoundboardSoundPreviewActionSheet)
+// Module 15805 (SoundboardSoundPreviewActionSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -63,7 +63,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
     }
     return id;
   });
-  const analyticsLocations = sound(5464)().analyticsLocations;
+  const analyticsLocations = sound(5462)().analyticsLocations;
   let obj1 = channelId(566);
   const items1 = [closure_9];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
@@ -114,7 +114,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const tmp6 = borderPlaying(buttonPressAnimationProps, analyticsLocations);
   const tmp8 = closure_12;
   const tmp9 = closure_6;
-  obj1.src = sound(11079)(sound, 64);
+  obj1.src = sound(11106)(sound, 64);
   const emojiName = sound.emojiName;
   let str = "";
   if (null != emojiName) {
@@ -127,9 +127,9 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const obj3 = { style: tmp.buttonContainer };
   const obj4 = { variant: "primary" };
   if (isFavorite) {
-    let StarOutlineIcon = tmp14(9395).StarIcon;
+    let StarOutlineIcon = tmp14(9431).StarIcon;
   } else {
-    StarOutlineIcon = tmp14(9397).StarOutlineIcon;
+    StarOutlineIcon = tmp14(9433).StarOutlineIcon;
   }
   obj4.icon = callback(StarOutlineIcon, { style: tmp.star });
   const intl = channelId(1212).intl;
@@ -154,7 +154,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const tmp17 = closure_12;
   const tmp18 = closure_6;
   const tmp19 = callback;
-  obj7["icon"] = callback(closure_7, { style: tmp.star, source: sound(7594) });
+  obj7["icon"] = callback(closure_7, { style: tmp.star, source: sound(7683) });
   const intl2 = channelId(1212).intl;
   obj7["text"] = intl2.string(channelId(1212).t.Kd4uxG);
   obj7["onPress"] = callback1;
@@ -174,5 +174,5 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   items6[2] = tmp12(tmp13, obj3);
   obj.children = items6;
   obj.children = tmp8(tmp9, obj);
-  return callback(channelId(5500).ActionSheet, obj);
+  return callback(channelId(5498).ActionSheet, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 9603
-// Function ID: 74847
+// Module ID: 9639
+// Function ID: 75058
 // Name: useStickerPickerStore
 // Dependencies: [621, 682, 2]
 
-// Module 9603 (useStickerPickerStore)
+// Module 9639 (useStickerPickerStore)
 import keys from "keys";
 
 let obj = keys.create((arg0) => {

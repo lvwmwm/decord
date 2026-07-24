@@ -1,18 +1,17 @@
 // Module ID: 8117
-// Function ID: 64287
+// Function ID: 64264
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8026, 8033, 8034, 8040, 8118, 8042]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8118, 8101, 8102]
 
 // Module 8117 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
-import appendTransformProps from "appendTransformProps";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
 import "result";
 import { jsx } from "jsxProd";
 import tmp3 from "_isNativeReflectConstruct";
-import extractSingleFontFamily from "extractSingleFontFamily";
 
 const require = arg1;
 function _isNativeReflectConstruct() {
@@ -24,7 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "TSpan";
-extractSingleFontFamily.setTSpan(tmp3);
+tmp3.displayName = "FeFlood";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { floodColor: "black", floodOpacity: 1 });
 
 export default tmp3;

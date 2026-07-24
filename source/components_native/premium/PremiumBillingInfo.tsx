@@ -1,10 +1,10 @@
-// Module ID: 7416
-// Function ID: 59609
+// Module ID: 7418
+// Function ID: 59644
 // Name: GoogleManagementLink
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 3789, 5459, 1212, 3776, 7412, 5464, 5484, 6642, 4126, 7417, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 3789, 4126, 1212, 3776, 7414, 5462, 5482, 6642, 7419, 2]
 // Exports: default
 
-// Module 7416 (GoogleManagementLink)
+// Module 7418 (GoogleManagementLink)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -41,7 +41,7 @@ class GoogleManagementLink {
         str = "SUBSCRIPTION_MANAGEMENT";
         obj1.onClick = obj4.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
         obj.children = intl.format(require("getSystemLocale").t["9NPc+O"], obj1);
-        tmp = jsx(require("findLinks").TextWithIOSLinkWorkaround, obj);
+        tmp = jsx(require("Text").Text, obj);
       }
     }
     return tmp;
@@ -60,10 +60,10 @@ const result = require("get ActivityIndicator").fileFinishedImporting("component
 export default function PremiumBillingInfo(subscription) {
   subscription = subscription.subscription;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7412) /* createSubscriptionInvoicePreview */;
-  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5464)(), analyticsLocation: importDefault(5484).PREMIUM_BILLING_INFO };
+  let obj = require(7414) /* createSubscriptionInvoicePreview */;
+  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5462)(), analyticsLocation: importDefault(5482).PREMIUM_BILLING_INFO };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
-  require(7412) /* createSubscriptionInvoicePreview */;
+  require(7414) /* createSubscriptionInvoicePreview */;
   if (null == first) {
     return null;
   } else {
@@ -80,7 +80,7 @@ export default function PremiumBillingInfo(subscription) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.KXQjfc);
     const items1 = [callback2(require(4126) /* Text */.Text, obj4), , ];
-    const obj5 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: require(7417) /* getBillingInformationStringNative */.getBillingInformationStringNative(subscription, first, tmp4) };
+    const obj5 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: require(7419) /* getBillingInformationStringNative */.getBillingInformationStringNative(subscription, first, tmp4) };
     items1[1] = callback2(require(4126) /* Text */.Text, obj5);
     const obj6 = { style: tmp.billingManageGoogle, subscription };
     items1[2] = callback2(GoogleManagementLink, obj6);

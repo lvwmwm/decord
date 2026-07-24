@@ -1,5 +1,5 @@
 // Module ID: 4988
-// Function ID: 42982
+// Function ID: 42986
 // Name: encode
 // Dependencies: [4989, 4990, 1497]
 

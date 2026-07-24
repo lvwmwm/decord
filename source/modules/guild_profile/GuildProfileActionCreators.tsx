@@ -1,10 +1,10 @@
-// Module ID: 8419
-// Function ID: 67066
+// Module ID: 8463
+// Function ID: 67294
 // Name: _fetchGuildTopGames
-// Dependencies: [5, 3948, 1917, 8417, 653, 686, 507, 5129, 4029, 675, 2]
+// Dependencies: [5, 3948, 1917, 8461, 653, 686, 507, 5129, 4029, 675, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 8419 (_fetchGuildTopGames)
+// Module 8463 (_fetchGuildTopGames)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

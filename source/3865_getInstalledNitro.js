@@ -1,5 +1,5 @@
 // Module ID: 3865
-// Function ID: 32121
+// Function ID: 32122
 // Name: getInstalledNitro
 // Dependencies: [27, 3866, 3867]
 // Exports: isRuntimeAlive

@@ -1,5 +1,5 @@
 // Module ID: 3504
-// Function ID: 26938
+// Function ID: 26939
 // Name: isBefore
 // Dependencies: [3209, 3210]
 // Exports: default

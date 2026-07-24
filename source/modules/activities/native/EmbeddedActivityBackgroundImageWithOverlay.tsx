@@ -1,10 +1,10 @@
-// Module ID: 10613
-// Function ID: 82790
+// Module ID: 10642
+// Function ID: 82982
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [57, 31, 27, 33, 4130, 689, 10614, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 10643, 2]
 // Exports: default
 
-// Module 10613 (EmbeddedActivityBackgroundImageWithOverlay)
+// Module 10642 (EmbeddedActivityBackgroundImageWithOverlay)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -47,7 +47,7 @@ export default function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
   obj.applicationId = str;
   obj.names = closure_9;
   obj.size = 1024;
-  const url = importDefault(10614)(obj).url;
+  const url = importDefault(10643)(obj).url;
   let tmp10Result = null;
   if (!tmp2[0]) {
     tmp10Result = null;

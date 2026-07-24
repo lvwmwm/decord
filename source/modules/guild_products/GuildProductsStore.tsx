@@ -1,9 +1,9 @@
-// Module ID: 12632
-// Function ID: 98158
+// Module ID: 12683
+// Function ID: 98479
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 664, 21, 3754, 566, 686, 2]
 
-// Module 12632 (_isNativeReflectConstruct)
+// Module 12683 (_isNativeReflectConstruct)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import sortedInsert from "sortedInsert";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

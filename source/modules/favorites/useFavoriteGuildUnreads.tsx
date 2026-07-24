@@ -1,10 +1,10 @@
-// Module ID: 14841
-// Function ID: 113228
+// Module ID: 14888
+// Function ID: 113549
 // Name: useFavoriteGuildUnreads
-// Dependencies: [5039, 3760, 1348, 6879, 3758, 4142, 4325, 566, 21, 2]
+// Dependencies: [5039, 3760, 1348, 6878, 3758, 4142, 4325, 566, 21, 2]
 // Exports: default
 
-// Module 14841 (useFavoriteGuildUnreads)
+// Module 14888 (useFavoriteGuildUnreads)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

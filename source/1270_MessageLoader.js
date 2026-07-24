@@ -1,5 +1,5 @@
 // Module ID: 1270
-// Function ID: 14335
+// Function ID: 14336
 // Name: MessageLoader
 // Dependencies: [57, 6, 7, 1269]
 // Exports: createLoader, loadAllMessagesInLocale, waitForAllDefaultIntlMessagesLoaded

@@ -1,10 +1,10 @@
-// Module ID: 15489
-// Function ID: 119238
+// Module ID: 15536
+// Function ID: 119560
 // Name: CoachmarkImage
-// Dependencies: [31, 27, 1849, 1345, 33, 4130, 689, 566, 3776, 1212, 2556, 8563, 5807, 1273, 2]
+// Dependencies: [31, 27, 1849, 1345, 33, 4130, 689, 566, 3776, 1212, 2556, 8608, 5807, 1273, 2]
 // Exports: default
 
-// Module 15489 (CoachmarkImage)
+// Module 15536 (CoachmarkImage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -76,6 +76,6 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
     }
   }), items2);
   const obj2 = markAsDismissed(3776);
-  const coachmark = visible(8563).useCoachmark(visible.targetRef, memo);
+  const coachmark = visible(8608).useCoachmark(visible.targetRef, memo);
   return null;
 };

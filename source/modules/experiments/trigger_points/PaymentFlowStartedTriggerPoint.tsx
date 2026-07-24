@@ -1,5 +1,5 @@
 // Module ID: 7157
-// Function ID: 57755
+// Function ID: 57784
 // Name: commonTriggerPointConfiguration
 // Dependencies: [4045, 653, 7158, 675, 2]
 // Exports: trackPaymentFlowStartedAnalyticsAndCTP

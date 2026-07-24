@@ -1,10 +1,10 @@
-// Module ID: 7659
-// Function ID: 61260
+// Module ID: 7748
+// Function ID: 61546
 // Name: DoubleTapErrorToastIcon
-// Dependencies: [31, 27, 1852, 33, 4130, 689, 7660, 3831, 4126, 1212, 2]
+// Dependencies: [31, 27, 1852, 33, 4130, 689, 7749, 3831, 4126, 1212, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7659 (DoubleTapErrorToastIcon)
+// Module 7748 (DoubleTapErrorToastIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import { EmojiDisabledReasons } from "set";
@@ -15,7 +15,7 @@ const require = arg1;
 function DoubleTapErrorToastIcon() {
   let obj = { style: _createForOfIteratorHelperLoose().icon, "aria-hidden": true };
   obj = { color: importDefault(689).colors.WHITE, size: "xs" };
-  obj.children = jsx(require(7660) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
+  obj.children = jsx(require(7749) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
   return <View color={importDefault(689).colors.WHITE} size="xs" />;
 }
 _createForOfIteratorHelperLoose = {};

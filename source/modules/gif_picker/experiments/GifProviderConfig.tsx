@@ -1,15 +1,15 @@
-// Module ID: 9577
-// Function ID: 74633
+// Module ID: 9613
+// Function ID: 74844
 // Name: getGifProviderConfig
-// Dependencies: [3, 9578, 9579, 2]
+// Dependencies: [3, 9614, 9615, 2]
 // Exports: getExperimentContext, getProviderForAPIRequest
 
-// Module 9577 (getGifProviderConfig)
+// Module 9613 (getGifProviderConfig)
 import importDefaultResult from "set";
 
 const require = arg1;
 function getGifProviderConfig() {
-  const GifProvidersExperiment = require(9578) /* apexExperiment */.GifProvidersExperiment;
+  const GifProvidersExperiment = require(9614) /* apexExperiment */.GifProvidersExperiment;
   const config = GifProvidersExperiment.getConfig({ location: "gif_picker" });
   return { enabled: config.enableMetrics, userProvider: config.provider, sendProviderToAPI: true, fallbackProvider: config.fallbackProvider };
 }
@@ -19,7 +19,7 @@ const result = require("items").fileFinishedImporting("modules/gif_picker/experi
 
 export { getGifProviderConfig };
 export const getProviderForAPIRequest = function getProviderForAPIRequest() {
-  const GifProvidersExperiment = require(9578) /* apexExperiment */.GifProvidersExperiment;
+  const GifProvidersExperiment = require(9614) /* apexExperiment */.GifProvidersExperiment;
   return GifProvidersExperiment.getConfig({ location: "gif_picker" }).provider;
 };
 export const getExperimentContext = function getExperimentContext() {

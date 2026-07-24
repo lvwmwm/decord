@@ -1,10 +1,10 @@
-// Module ID: 9348
-// Function ID: 73033
+// Module ID: 9384
+// Function ID: 73242
 // Name: isNSFWInvite
-// Dependencies: [1838, 3758, 1849, 653, 477, 4337, 9349, 1934, 7926, 2]
+// Dependencies: [1838, 3758, 1849, 653, 477, 4337, 9385, 1934, 8013, 2]
 // Exports: handleNSFWGuildInvite, shouldNSFWGateGuild
 
-// Module 9348 (isNSFWInvite)
+// Module 9384 (isNSFWInvite)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -56,9 +56,9 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
         }
       }
       obj.guildId = id1;
-      obj2.pushLazy(require(1934) /* maybeLoadBundle */(9349, dependencyMap.paths), obj);
+      obj2.pushLazy(require(1934) /* maybeLoadBundle */(9385, dependencyMap.paths), obj);
       flag2 = true;
-      const tmp10 = require(1934) /* maybeLoadBundle */(9349, dependencyMap.paths);
+      const tmp10 = require(1934) /* maybeLoadBundle */(9385, dependencyMap.paths);
     }
     return flag2;
   } else {
@@ -84,8 +84,8 @@ export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
         let tmp15 = guild.nsfwLevel === GuildNSFWContentLevel.AGE_RESTRICTED;
         let nsfwAllowed = currentUser.nsfwAllowed;
         if (nsfwAllowed) {
-          nsfwAllowed = require(7926) /* resolveNsfwTogglesWithDefaults */.getViewNsfwGuildsOrDefault();
-          const obj2 = require(7926) /* resolveNsfwTogglesWithDefaults */;
+          nsfwAllowed = require(8013) /* resolveNsfwTogglesWithDefaults */.getViewNsfwGuildsOrDefault();
+          const obj2 = require(8013) /* resolveNsfwTogglesWithDefaults */;
         }
         let tmp20 = !canResult;
         if (tmp20) {

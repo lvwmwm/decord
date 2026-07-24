@@ -1,10 +1,10 @@
-// Module ID: 13004
-// Function ID: 100578
+// Module ID: 13056
+// Function ID: 100901
 // Name: getIcon
-// Dependencies: [31, 27, 33, 4130, 689, 665, 7507, 4086, 5776, 4091, 5459, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 665, 7577, 4086, 5776, 4091, 4126, 2]
 // Exports: default
 
-// Module 13004 (getIcon)
+// Module 13056 (getIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ const require = arg1;
 function getIcon(arg0) {
   if (pad2.WARNING === arg0) {
     let obj = { color: importDefault(689).unsafe_rawColors.YELLOW_300 };
-    return callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, obj);
+    return callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj);
   } else if (pad2.INFO === arg0) {
     obj = { color: importDefault(689).unsafe_rawColors.BLUE_345 };
     return callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj);
@@ -98,7 +98,7 @@ export default function HelpMessage(textColor) {
   obj = { style: tmp3.row };
   const items1 = [getIcon(messageType), ];
   const obj1 = { style: tmp3.content, color: str, variant: textVariant, children: textColor.children };
-  items1[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj1);
+  items1[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items1;
   const items2 = [callback2(View, obj), textColor.button];
   obj.children = items2;

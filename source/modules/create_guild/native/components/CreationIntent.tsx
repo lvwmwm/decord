@@ -1,10 +1,10 @@
-// Module ID: 11741
-// Function ID: 91171
+// Module ID: 11768
+// Function ID: 91409
 // Name: CreationIntent
-// Dependencies: [31, 27, 9227, 653, 33, 4130, 5084, 689, 1456, 4528, 4539, 11712, 675, 5121, 4126, 1212, 5503, 10054, 5807, 5459, 2]
+// Dependencies: [31, 27, 9263, 653, 33, 4130, 5084, 689, 1456, 4528, 4539, 11739, 675, 5121, 4126, 1212, 5501, 10086, 5807, 2]
 // Exports: default
 
-// Module 11741 (CreationIntent)
+// Module 11768 (CreationIntent)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -128,7 +128,7 @@ export default function CreationIntent(arg0) {
   const items3 = [callback2(ref, obj1), , ];
   let obj4 = { style: tmp.sections };
   const obj5 = { hasIcons: true };
-  const tmp13 = trigger(10054);
+  const tmp13 = trigger(10086);
   let obj6 = {};
   const tmp15 = require(5807) /* AccountAgeTier10LargeBadge */;
   if (closure_14) {
@@ -140,7 +140,7 @@ export default function CreationIntent(arg0) {
     };
     const items4 = [tmp10(tmp13, obj6), ];
     const obj7 = {};
-    let tmp11Result = tmp11(10054);
+    let tmp11Result = tmp11(10086);
     obj7.Icon = tmp14(5807).WorldIllocon;
     const intl6 = tmp14(1212).intl;
     obj7.message = intl6.string(tmp14(1212).t.h9Q1lG);
@@ -159,7 +159,7 @@ export default function CreationIntent(arg0) {
     };
     const items5 = [tmp10(tmp13, obj6), ];
     let obj8 = {};
-    tmp11Result = tmp11(10054);
+    tmp11Result = tmp11(10086);
     obj8.Icon = tmp14(5807).ChairIllocon;
     const intl4 = tmp14(1212).intl;
     obj8.message = intl4.string(tmp14(1212).t.uE7zcu);
@@ -170,7 +170,7 @@ export default function CreationIntent(arg0) {
     obj5.children = items5;
     tmp17 = obj5;
   }
-  obj4.children = callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, tmp17);
+  obj4.children = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, tmp17);
   items3[1] = callback(ref, obj4);
   const obj9 = { style: tmp.skipDescription, variant: "text-sm/medium", color: "text-default" };
   const intl7 = require(1212) /* getSystemLocale */.intl;
@@ -179,7 +179,7 @@ export default function CreationIntent(arg0) {
       onPress(null);
     }
   });
-  items3[2] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj9);
+  items3[2] = callback(require(4126) /* Text */.Text, obj9);
   obj.children = items3;
   obj.children = callback2(onPress, obj);
   return callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

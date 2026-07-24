@@ -1,10 +1,10 @@
-// Module ID: 15260
-// Function ID: 116446
+// Module ID: 15307
+// Function ID: 116768
 // Name: serverNameHook
-// Dependencies: [31, 4808, 3951, 1838, 33, 4126, 15261, 1212, 8002, 14102, 15262, 624, 5632, 5031, 4471, 1198, 2]
+// Dependencies: [31, 4808, 3951, 1838, 33, 4126, 15308, 1212, 7433, 14152, 15309, 624, 5632, 5031, 4471, 1198, 2]
 // Exports: default
 
-// Module 15260 (serverNameHook)
+// Module 15307 (serverNameHook)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -32,14 +32,14 @@ function PurchasePage(arg0) {
   let gatedChannelId;
   let guildId;
   ({ guildId, gatedChannelId } = arg0);
-  let obj = importDefault(8002);
+  let obj = importDefault(7433);
   const storeFront = obj.useNativeIAPPayments().storeFront;
   let country;
   if (null != storeFront) {
     country = storeFront.country;
   }
-  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15262), { guildId, gatedChannelId }) };
-  return jsx(require(14102) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15262), { guildId, gatedChannelId }) });
+  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15309), { guildId, gatedChannelId }) };
+  return jsx(require(14152) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15309), { guildId, gatedChannelId }) });
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
 

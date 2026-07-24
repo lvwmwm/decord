@@ -1,9 +1,9 @@
-// Module ID: 8376
-// Function ID: 66742
+// Module ID: 8420
+// Function ID: 66970
 // Name: InputButton
 // Dependencies: [29, 31, 27, 33, 4130, 689, 4547, 5780, 4544, 2]
 
-// Module 8376 (InputButton)
+// Module 8420 (InputButton)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,5 +1,5 @@
 // Module ID: 1449
-// Function ID: 16927
+// Function ID: 16928
 // Name: clampDimension
 // Dependencies: [57, 27, 653, 1427, 1450, 1440, 1824, 22, 1395, 1392, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile

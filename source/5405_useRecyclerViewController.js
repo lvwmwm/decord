@@ -1,5 +1,5 @@
 // Module ID: 5405
-// Function ID: 46318
+// Function ID: 46323
 // Name: useRecyclerViewController
 // Dependencies: [5406, 5359, 31, 27, 5407, 5408, 5374, 5409, 5403]
 // Exports: useRecyclerViewController

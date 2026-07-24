@@ -1,10 +1,10 @@
-// Module ID: 11920
-// Function ID: 92250
+// Module ID: 11947
+// Function ID: 92488
 // Name: useEntryActivityAndApplication
-// Dependencies: [57, 1347, 11921, 566, 5470, 2]
+// Dependencies: [57, 1347, 11948, 566, 5468, 2]
 // Exports: default
 
-// Module 11920 (useEntryActivityAndApplication)
+// Module 11947 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,10 +27,10 @@ export default function useEntryActivityAndApplication(extra) {
     application_id1 = extra.extra.application_id;
   }
   items1[1] = application_id1;
-  const tmp5 = callback(first(5470)(items1), 2);
+  const tmp5 = callback(first(5468)(items1), 2);
   first = tmp5[0];
   obj = { activity: stateFromStores };
-  const tmp2 = first(5470);
+  const tmp2 = first(5468);
   const items2 = [_createForOfIteratorHelperLoose];
   obj.embeddedActivity = _require(566).useStateFromStores(items2, () => {
     let id;

@@ -1,6 +1,0 @@
-// Module ID: 13213
-// Function ID: 101623
-// Dependencies: []
-
-// Module 13213
-arg5.calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

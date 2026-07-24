@@ -1,10 +1,10 @@
-// Module ID: 11913
-// Function ID: 92178
+// Module ID: 11940
+// Function ID: 92416
 // Name: UserProfileMutualGuilds
-// Dependencies: [31, 27, 8264, 33, 4130, 8266, 11636, 11914, 4098, 11635, 1934, 5737, 4660, 11651, 5515, 4126, 11638, 2]
+// Dependencies: [31, 27, 8308, 33, 4130, 8310, 11663, 11941, 4098, 11662, 1934, 5737, 4660, 11678, 5513, 4126, 11665, 2]
 // Exports: default
 
-// Module 11913 (UserProfileMutualGuilds)
+// Module 11940 (UserProfileMutualGuilds)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -21,10 +21,10 @@ const result = require("USER_PROFILE_TOOLTIP_DELAY").fileFinishedImporting("modu
 export default function UserProfileMutualGuilds(user) {
   user = user.user;
   const tmp = callback3();
-  let obj = user(8266);
+  let obj = user(8310);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  const mutualGuilds = trackUserProfileAction(11636)(user).mutualGuilds;
-  if (trackUserProfileAction(11914)(user)) {
+  const mutualGuilds = trackUserProfileAction(11663)(user).mutualGuilds;
+  if (trackUserProfileAction(11941)(user)) {
     if (null != mutualGuilds) {
       if (0 !== mutualGuilds.length) {
         const substr = mutualGuilds.slice(0, 3);
@@ -53,7 +53,7 @@ export default function UserProfileMutualGuilds(user) {
                 }
         };
         const obj1 = {
-          size: user(5515).GuildIconSizes.XXSMALL,
+          size: user(5513).GuildIconSizes.XXSMALL,
           totalCount: mapped.length,
           names: mapped.map((name) => name.name),
           children: mapped.map((guild) => {
@@ -61,8 +61,8 @@ export default function UserProfileMutualGuilds(user) {
                   return outer1_5(trackUserProfileAction(outer1_2[14]), obj, guild.id);
                 })
         };
-        const items = [callback(user(11651).GuildIconPile, obj1), ];
-        let obj2 = { variant: "text-sm/medium", color: "text-default", children: trackUserProfileAction(11638)(mutualGuilds.length) };
+        const items = [callback(user(11678).GuildIconPile, obj1), ];
+        let obj2 = { variant: "text-sm/medium", color: "text-default", children: trackUserProfileAction(11665)(mutualGuilds.length) };
         items[1] = callback(user(4126).Text, obj2);
         obj.children = items;
         obj.children = callback2(user(4660).PressableOpacity, obj);

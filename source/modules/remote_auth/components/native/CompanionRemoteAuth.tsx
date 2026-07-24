@@ -1,10 +1,10 @@
-// Module ID: 14772
-// Function ID: 112671
+// Module ID: 14819
+// Function ID: 112992
 // Name: renderSteps
-// Dependencies: [31, 27, 653, 33, 4130, 14773, 5586, 4126, 1212, 4543, 1273, 3969, 1456, 4364, 675, 14774, 14778, 9219, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 14820, 5584, 4126, 1212, 4543, 1273, 3969, 1456, 4364, 675, 14821, 14825, 9255, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 14772 (renderSteps)
+// Module 14819 (renderSteps)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -19,9 +19,9 @@ let closure_9;
 const require = arg1;
 function renderSteps(state, avatar, callback1, context) {
   const step = state.step;
-  if (require(14773) /* RemoteAuthStep */.RemoteAuthStep.INITIALIZING !== step) {
-    if (require(14773) /* RemoteAuthStep */.RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (require(14773) /* RemoteAuthStep */.RemoteAuthStep.PENDING_TICKET === step) {
+  if (require(14820) /* RemoteAuthStep */.RemoteAuthStep.INITIALIZING !== step) {
+    if (require(14820) /* RemoteAuthStep */.RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (require(14820) /* RemoteAuthStep */.RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         let obj = {};
         obj = { style: avatar.avatar, user, size: require(1273) /* Button */.AvatarSizes.LARGE, guildId: context };
@@ -47,12 +47,12 @@ function renderSteps(state, avatar, callback1, context) {
         obj.children = items;
         return callback2(closure_8, obj);
       } else {
-        return callback(require(5586) /* ActivityIndicator */.ActivityIndicator, {});
+        return callback(require(5584) /* ActivityIndicator */.ActivityIndicator, {});
       }
     }
   }
   obj5 = {};
-  const items1 = [callback(require(5586) /* ActivityIndicator */.ActivityIndicator, {}), , ];
+  const items1 = [callback(require(5584) /* ActivityIndicator */.ActivityIndicator, {}), , ];
   const obj6 = { style: avatar.statusText, variant: "text-md/medium", color: "text-muted" };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl4.string(require(1212) /* getSystemLocale */.t["7LkwqE"]);
@@ -87,13 +87,13 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     obj.login_instance_id = tmp;
     obj.track(outer1_5.LOGIN_SUCCESSFUL, obj);
   }, []);
-  const state = navigation(14774).useAuthWebsocket(callback, true).state;
+  const state = navigation(14821).useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(14773).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(14820).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -109,10 +109,10 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     }
   }, items1);
   obj = {};
-  const obj2 = navigation(14774);
+  const obj2 = navigation(14821);
   const intl = navigation(1212).intl;
   obj.headerText = intl.string(navigation(1212).t["7fNJgA"]);
   obj = { style: tmp.statusContainer, children: renderSteps(state, tmp, callback1, context) };
   obj.children = callback(View, obj);
-  return callback(fingerprint(9219), obj);
+  return callback(fingerprint(9255), obj);
 };

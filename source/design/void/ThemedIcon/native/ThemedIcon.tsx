@@ -1,10 +1,10 @@
-// Module ID: 13010
-// Function ID: 100612
+// Module ID: 13062
+// Function ID: 100935
 // Name: ThemedIcon
 // Dependencies: [31, 33, 3834, 4545, 2]
 // Exports: default
 
-// Module 13010 (ThemedIcon)
+// Module 13062 (ThemedIcon)
 import "result";
 import { jsx } from "jsxProd";
 

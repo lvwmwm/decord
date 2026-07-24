@@ -1,10 +1,10 @@
-// Module ID: 6983
-// Function ID: 55797
+// Module ID: 6982
+// Function ID: 55806
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4220, 4149, 4216, 4183, 4187, 4669, 4194, 6984, 2]
+// Dependencies: [4220, 4149, 4216, 4183, 4187, 4669, 4194, 6983, 2]
 // Exports: getClipSignalTypes, getPostSaveClipAnalytics, getPreSaveClipAnalytics
 
-// Module 6983 (_createForOfIteratorHelperLoose)
+// Module 6982 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -217,7 +217,7 @@ export const getPostSaveClipAnalytics = function getPostSaveClipAnalytics(arg0, 
     let tmp22 = key10013;
     let tmp23 = require;
     let tmp24 = dependencyMap;
-    let obj3 = require(6984) /* _isNativeReflectConstruct */;
+    let obj3 = require(6983) /* _isNativeReflectConstruct */;
     let parseEncoderResult = obj3.parseEncoder(key10013);
     let value = map.get(parseEncoderResult);
     let num = 0;
@@ -229,102 +229,102 @@ export const getPostSaveClipAnalytics = function getPostSaveClipAnalytics(arg0, 
   }
   const obj = {};
   const merged = Object.assign(arg0);
-  value = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.NVIDIA_CUDA);
+  value = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.NVIDIA_CUDA);
   let num2 = 0;
   if (null != value) {
     num2 = value;
   }
   obj["frames_encoded_nvidia_cuda"] = num2;
-  const value1 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.NVIDIA_DIRECT_3D);
+  const value1 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.NVIDIA_DIRECT_3D);
   let num3 = 0;
   if (null != value1) {
     num3 = value1;
   }
   obj["frames_encoded_nvidia_direct3d"] = num3;
-  const value2 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.OPENH264);
+  const value2 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.OPENH264);
   let num4 = 0;
   if (null != value2) {
     num4 = value2;
   }
   obj["frames_encoded_openh264"] = num4;
-  const value3 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.VIDEOTOOLBOX);
+  const value3 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.VIDEOTOOLBOX);
   let num5 = 0;
   if (null != value3) {
     num5 = value3;
   }
   obj["frames_encoded_videotoolbox"] = num5;
-  const value4 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.AMD_DIRECT_3D);
+  const value4 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.AMD_DIRECT_3D);
   let num6 = 0;
   if (null != value4) {
     num6 = value4;
   }
   obj["frames_encoded_amd_direct3d"] = num6;
-  const value5 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.AMD_VAAPI);
+  const value5 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.AMD_VAAPI);
   let num7 = 0;
   if (null != value5) {
     num7 = value5;
   }
   obj["frames_encoded_amd_vaapi"] = num7;
-  const value6 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.INTEL);
+  const value6 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.INTEL);
   let num8 = 0;
   if (null != value6) {
     num8 = value6;
   }
   obj["frames_encoded_intel"] = num8;
-  const value7 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.INTEL_DIRECT_3D);
+  const value7 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.INTEL_DIRECT_3D);
   let num9 = 0;
   if (null != value7) {
     num9 = value7;
   }
   obj["frames_encoded_intel_direct3d"] = num9;
-  const value8 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_INTEL);
+  const value8 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_INTEL);
   let num10 = 0;
   if (null != value8) {
     num10 = value8;
   }
   obj["frames_encoded_wmf_direct3d_intel"] = num10;
-  const value9 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_NVIDIA);
+  const value9 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_NVIDIA);
   let num11 = 0;
   if (null != value9) {
     num11 = value9;
   }
   obj["frames_encoded_wmf_direct3d_nvidia"] = num11;
-  const value10 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_AMD);
+  const value10 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_AMD);
   let num12 = 0;
   if (null != value10) {
     num12 = value10;
   }
   obj["frames_encoded_wmf_direct3d_amd"] = num12;
-  const value11 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D);
+  const value11 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D);
   let num13 = 0;
   if (null != value11) {
     num13 = value11;
   }
-  const value12 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_INTEL);
+  const value12 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_INTEL);
   let num14 = 0;
   if (null != value12) {
     num14 = value12;
   }
   const sum = num13 + num14;
-  const value13 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_NVIDIA);
+  const value13 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_NVIDIA);
   let num15 = 0;
   if (null != value13) {
     num15 = value13;
   }
   const sum1 = sum + num15;
-  const value14 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_AMD);
+  const value14 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.WMF_DIRECT_3D_AMD);
   let num16 = 0;
   if (null != value14) {
     num16 = value14;
   }
   obj["frames_encoded_wmf_direct3d"] = sum1 + num16;
-  const value15 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.UNCATEGORIZED);
+  const value15 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.UNCATEGORIZED);
   let num17 = 0;
   if (null != value15) {
     num17 = value15;
   }
   obj["frames_encoded_uncategorized"] = num17;
-  const value16 = map.get(require(6984) /* _isNativeReflectConstruct */.Encoders.UNKNOWN);
+  const value16 = map.get(require(6983) /* _isNativeReflectConstruct */.Encoders.UNKNOWN);
   let num18 = 0;
   if (null != value16) {
     num18 = value16;

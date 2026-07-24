@@ -1,8 +1,8 @@
-// Module ID: 14876
-// Function ID: 113442
-// Dependencies: [31, 27, 33, 4130, 689, 4973, 5085, 11369, 2]
+// Module ID: 14923
+// Function ID: 113763
+// Dependencies: [31, 27, 33, 4130, 689, 4973, 5085, 11398, 2]
 
-// Module 14876
+// Module 14923
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,9 +18,9 @@ const memoResult = require("result").memo(function GuildsBarGeoRestrictedBadge(s
   const tmp = callback();
   let obj = { style: items, pointerEvents: "none" };
   items = [tmp.badgeImageContainer, style.style];
-  obj = { source: importDefault(11369), style: tmp.badgeImage };
-  obj.children = jsx(importDefault(5085), { source: importDefault(11369), style: tmp.badgeImage });
-  return <View source={importDefault(11369)} style={tmp.badgeImage} />;
+  obj = { source: importDefault(11398), style: tmp.badgeImage };
+  obj.children = jsx(importDefault(5085), { source: importDefault(11398), style: tmp.badgeImage });
+  return <View source={importDefault(11398)} style={tmp.badgeImage} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedBadge.tsx");
 

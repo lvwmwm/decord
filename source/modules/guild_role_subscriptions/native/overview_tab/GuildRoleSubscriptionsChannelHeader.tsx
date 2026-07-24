@@ -1,8 +1,8 @@
-// Module ID: 10112
-// Function ID: 78275
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 10113, 4126, 1212, 2]
+// Module ID: 10144
+// Function ID: 78469
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 10145, 4126, 1212, 2]
 
-// Module 10112
+// Module 10144
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,7 +18,7 @@ obj.header = obj;
 let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo(function GuildRoleSubscriptionsChannelHeader() {
   let obj = { style: callback3().header };
-  obj = { source: importDefault(10113), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
+  obj = { source: importDefault(10145), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;

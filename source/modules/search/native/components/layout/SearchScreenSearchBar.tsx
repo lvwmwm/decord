@@ -1,8 +1,8 @@
-// Module ID: 15320
-// Function ID: 116875
-// Dependencies: [31, 27, 33, 4130, 15321, 15323, 15330, 2]
+// Module ID: 15367
+// Function ID: 117197
+// Dependencies: [31, 27, 33, 4130, 15368, 15370, 15377, 2]
 
-// Module 15320
+// Module 15367
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   const items1 = [backButton, , ];
   obj = { style: tmp.headerSearch };
   obj = { ref, searchContext, setSuggestionsDismissed };
-  const items2 = [callback(importDefault(15321), obj), ];
+  const items2 = [callback(importDefault(15368), obj), ];
   const obj1 = { style: tmp.suggestionsAnchor };
   const obj2 = { searchContext, onLayoutMeasure: onSuggestionsLayoutMesure, dismissed: suggestionsDismissed };
   const items3 = [tmp.suggestions, ];
@@ -42,15 +42,15 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   }
   items3[1] = suggestionsWithBackButton;
   obj2.containerStyle = items3;
-  obj1.children = callback(importDefault(15323), obj2);
+  obj1.children = callback(importDefault(15370), obj2);
   items2[1] = callback(View, obj1);
   obj.children = items2;
   items1[1] = closure_4(View, obj);
   const tmp2 = closure_4;
   const tmp3 = View;
   const tmp4 = closure_4;
-  const tmp7 = importDefault(15323);
-  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(importDefault(15330), { searchContext }) });
+  const tmp7 = importDefault(15370);
+  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(importDefault(15377), { searchContext }) });
   obj.children = items1;
   return tmp2(tmp3, obj);
 }));

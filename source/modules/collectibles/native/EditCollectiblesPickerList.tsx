@@ -1,10 +1,10 @@
-// Module ID: 7878
-// Function ID: 62723
+// Module ID: 7966
+// Function ID: 63040
 // Name: EditCollectiblesPickerList
-// Dependencies: [57, 31, 27, 33, 4130, 7865, 4126, 22, 7879, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 7954, 4126, 22, 7527, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 7878 (EditCollectiblesPickerList)
+// Module 7966 (EditCollectiblesPickerList)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

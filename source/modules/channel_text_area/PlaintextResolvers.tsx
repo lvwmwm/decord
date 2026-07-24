@@ -1,10 +1,10 @@
-// Module ID: 8188
-// Function ID: 64657
+// Module ID: 8232
+// Function ID: 64885
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 4991, 5039, 1348, 1907, 1917, 1910, 1838, 3758, 3767, 1849, 653, 1852, 6927, 4320, 21, 4974, 3771, 3775, 2]
+// Dependencies: [57, 4991, 5039, 1348, 1907, 1917, 1910, 1838, 3758, 3767, 1849, 653, 1852, 6926, 4320, 21, 4974, 3771, 3775, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 8188 (_createForOfIteratorHelperLoose)
+// Module 8232 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -386,8 +386,8 @@ export const resolveApplicationCommandOption = function resolveApplicationComman
   const tmp = resolvePlaintextInlineVoid(text, source, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(6927) /* toRichValue */.voidToOptionValue(tmp);
-    const obj = require(6927) /* toRichValue */;
+    voidToOptionValueResult = require(6926) /* toRichValue */.voidToOptionValue(tmp);
+    const obj = require(6926) /* toRichValue */;
   }
   return voidToOptionValueResult;
 };

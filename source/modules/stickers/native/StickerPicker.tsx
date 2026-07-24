@@ -1,8 +1,8 @@
-// Module ID: 9599
-// Function ID: 74738
-// Dependencies: [57, 31, 27, 1849, 5035, 3806, 653, 33, 4130, 689, 675, 9600, 9602, 566, 5464, 5484, 9572, 682, 9606, 5732, 4466, 9607, 7941, 5491, 9619, 5772, 1212, 9629, 9630, 9635, 2]
+// Module ID: 9635
+// Function ID: 74949
+// Dependencies: [57, 31, 27, 1849, 5035, 3806, 653, 33, 4130, 689, 675, 9636, 9638, 566, 5462, 5482, 9608, 682, 9642, 5732, 4466, 9643, 8028, 5489, 9655, 5772, 1212, 9665, 9666, 9671, 2]
 
-// Module 9599
+// Module 9635
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "EmptyStateSticker";
@@ -44,20 +44,20 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
   const onPressSticker = channel.onPressSticker;
   ({ bottomSheetRef, bottomSheetIndex, paddingTop, stickerFormats, inPortalKeyboard } = channel);
   let tmp = callback2();
-  let obj = channel(9600);
+  let obj = channel(9636);
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  let obj1 = channel(9602);
+  let obj1 = channel(9638);
   const stickerCategories = obj1.useStickerCategories(channel);
   let obj2 = channel(566);
   const items = [closure_8];
   const stateFromStores = obj2.useStateFromStores(items, () => outer1_8.hasLoadedStickerPacks);
   const tmp4 = analyticsLocations(importAllResult.useState(0), 2);
   const dependencyMap = tmp5;
-  analyticsLocations = onPressSticker(5464)(onPressSticker(5484).STICKER_PICKER).analyticsLocations;
+  analyticsLocations = onPressSticker(5462)(onPressSticker(5482).STICKER_PICKER).analyticsLocations;
   let tmp7 = null;
   const tmp8 = analyticsLocations(importAllResult.useState(null), 2);
-  const tmp6 = onPressSticker(5464);
-  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = onPressSticker(9572)({ hasCategories: true }));
+  const tmp6 = onPressSticker(5462);
+  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = onPressSticker(9608)({ hasCategories: true }));
   const items1 = [, ];
   ({ id: arr3[0], guild_id: arr3[1] } = channel);
   const callback = importAllResult.useCallback((arg0) => {
@@ -128,7 +128,7 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
     obj = { type: outer1_13.STICKER_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
     obj.track(outer1_9.CHAT_INPUT_COMPONENT_VIEWED, obj);
   }, items3);
-  let obj3 = onPressSticker(5491);
+  let obj3 = onPressSticker(5489);
   const items4 = [channel];
   const callback3 = importAllResult.useCallback((renderableSticker) => {
     let obj = channel(tmp5[24]);
@@ -152,7 +152,7 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
   if (stateFromStores) {
     if (0 === stickerCategories.length) {
       obj3 = { style: tmp.emptyState };
-      tmp = callback(onPressSticker(9629), {});
+      tmp = callback(onPressSticker(9665), {});
       obj3.children = tmp;
       let tmp20Result = callback(closure_5, obj3);
     } else {
@@ -168,18 +168,18 @@ const memoResult = importAllResult.memo(function StickerPicker(channel) {
       obj4.stickerFormats = stickerFormats;
       obj4.searchResults = tmp8[0];
       obj4.inPortalKeyboard = inPortalKeyboard;
-      tmp20Result = callback(onPressSticker(9630), obj4);
+      tmp20Result = callback(onPressSticker(9666), obj4);
       const tmp20 = callback;
-      const tmp23 = onPressSticker(9630);
+      const tmp23 = onPressSticker(9666);
     }
   } else {
     const obj5 = { animating: true, size: "large", style: tmp.loadingIndicator };
     items5[1] = callback(closure_6, obj5);
     const obj6 = { categories: stickerCategories, categoryIndex: tmp4[0], style: safeAreaStyle };
-    items5[2] = callback(onPressSticker(9635), obj6);
+    items5[2] = callback(onPressSticker(9671), obj6);
     obj.children = items5;
     obj.children = closure_15(closure_5, obj);
-    return callback(channel(5464).AnalyticsLocationProvider, obj);
+    return callback(channel(5462).AnalyticsLocationProvider, obj);
   }
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/stickers/native/StickerPicker.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9923
-// Function ID: 76758
+// Module ID: 9955
+// Function ID: 76952
 // Name: MessageReminderDurationActionSheet
-// Dependencies: [57, 31, 9532, 33, 4130, 689, 566, 664, 9920, 5186, 1212, 4660, 5091, 9924, 5165, 4098, 4337, 9925, 1934, 5187, 5503, 4082, 2]
+// Dependencies: [57, 31, 9568, 33, 4130, 689, 566, 664, 9952, 5186, 1212, 4660, 5091, 9956, 5165, 4098, 4337, 9957, 1934, 5187, 5501, 4082, 2]
 // Exports: default
 
-// Module 9923 (MessageReminderDurationActionSheet)
+// Module 9955 (MessageReminderDurationActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ export default function MessageReminderDurationActionSheet(createReminder) {
       clearInterval(closure_0);
     };
   }, []);
-  let obj1 = createReminder(9920);
+  let obj1 = createReminder(9952);
   obj = {};
   let dueAt;
   if (null != stateFromStores) {
@@ -51,7 +51,7 @@ export default function MessageReminderDurationActionSheet(createReminder) {
   }
   obj.dueAt = dueAt;
   obj.now = tmp5;
-  obj.type = createReminder(9920).DueInStringTypes.SHORT;
+  obj.type = createReminder(9952).DueInStringTypes.SHORT;
   dueInText = obj1.useDueInString(obj).dueInText;
   const items1 = [onBack, dueInText];
   const items2 = [createReminder];
@@ -107,7 +107,7 @@ export default function MessageReminderDurationActionSheet(createReminder) {
     return mapped;
   }, items2);
   obj = { header: memo, bodyStyles: tmp.body, startExpanded: true };
-  const items3 = [dueInText(createReminder(5503).TableRowGroup, { hasIcons: false, children: memo1 }), ];
+  const items3 = [dueInText(createReminder(5501).TableRowGroup, { hasIcons: false, children: memo1 }), ];
   let tmp11 = null != removeReminder;
   if (tmp11) {
     obj1 = { icon: dueInText(createReminder(4082).CheckmarkLargeIcon, {}) };

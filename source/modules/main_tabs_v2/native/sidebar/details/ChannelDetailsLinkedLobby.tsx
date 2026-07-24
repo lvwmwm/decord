@@ -1,10 +1,10 @@
-// Module ID: 15423
-// Function ID: 118570
+// Module ID: 15470
+// Function ID: 118892
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [31, 27, 653, 33, 4130, 689, 5470, 5459, 1212, 1920, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5468, 4126, 1212, 1920, 2]
 // Exports: default
 
-// Module 15423 (ChannelDetailsLinkedLobby)
+// Module 15470 (ChannelDetailsLinkedLobby)
 import "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -25,7 +25,7 @@ const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/
 export default function ChannelDetailsLinkedLobby(channel) {
   channel = channel.channel;
   let divider = _createForOfIteratorHelperLoose();
-  let obj = require(5470) /* useGetOrFetchApplications */;
+  let obj = require(5468) /* useGetOrFetchApplications */;
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (null != linkedLobby) {
@@ -39,7 +39,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     const items = [divider.container, channel.containerStyle];
     obj.style = items;
     let tmp5 = callback;
-    let TextWithIOSLinkWorkaround = require(5459) /* findLinks */.TextWithIOSLinkWorkaround;
+    let Text = require(4126) /* Text */.Text;
     obj = { variant: "text-sm/normal", color: "text-default" };
     let obj1 = {};
     if (null != getOrFetchApplication) {
@@ -63,15 +63,15 @@ export default function ChannelDetailsLinkedLobby(channel) {
     const tmp4 = View;
     const tmp8 = closure_5;
     obj = [, ];
-    obj[0] = tmp5(TextWithIOSLinkWorkaround, obj);
+    obj[0] = tmp5(Text, obj);
     tmp5 = callback;
-    TextWithIOSLinkWorkaround = View;
+    Text = View;
     const obj4 = {};
     divider = divider.divider;
     obj4.style = divider;
     obj[1] = callback(View, obj4);
     obj.children = obj;
     closure_6(tmp4, obj);
-    const tmp5Result = tmp5(TextWithIOSLinkWorkaround, obj);
+    const tmp5Result = tmp5(Text, obj);
   }
 };

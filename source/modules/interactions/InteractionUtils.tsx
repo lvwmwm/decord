@@ -1,10 +1,10 @@
-// Module ID: 7798
-// Function ID: 62250
+// Module ID: 7889
+// Function ID: 62571
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 1194, 7629, 653, 21, 7007, 7799, 1881, 507, 6691, 7800, 686, 4357, 2, 4355]
+// Dependencies: [5, 1194, 7718, 653, 21, 7006, 7890, 1881, 507, 6691, 7891, 686, 4357, 2, 4355]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionStatusViewState
 
-// Module 7798 (_createForOfIteratorHelperLoose)
+// Module 7889 (_createForOfIteratorHelperLoose)
 import patchThread from "patchThread";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -212,15 +212,15 @@ function mapMessageComponentLocalStateForAPI(type) {
 function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
   if (!ok.ok) {
     if (ok.hasErr) {
-      require(7799) /* _fetchMessageInteractionData */.setFailed(nonce);
-      const obj10 = require(7799) /* _fetchMessageInteractionData */;
+      require(7890) /* _fetchMessageInteractionData */.setFailed(nonce);
+      const obj10 = require(7890) /* _fetchMessageInteractionData */;
     } else {
       if (ok.status >= 400) {
         if (ok.status < 500) {
           if (ok.body) {
             if (ok.body.code === constants.INVALID_FORM_BODY) {
               if (ok.body.errors) {
-                const firstSkemaError = require(7800) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
+                const firstSkemaError = require(7891) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
                 let tmp25 = null == firstSkemaError;
                 if (!tmp25) {
                   let tmp26 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code;
@@ -239,12 +239,12 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
                   importDefault(686).dispatch(obj);
                   const obj7 = importDefault(686);
                 }
-                const obj6 = require(7800) /* getFirstSkemaFieldError */;
+                const obj6 = require(7891) /* getFirstSkemaFieldError */;
                 let message;
                 if (null != firstSkemaError) {
                   message = firstSkemaError.message;
                 }
-                require(7799) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
+                require(7890) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
               }
             }
             if (ok.body.code === constants.UNKNOWN_INTEGRATION) {
@@ -256,10 +256,10 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
               obj.guildId = tmp16;
               importDefault(686).dispatch(obj);
               const obj3 = importDefault(686);
-              require(7799) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
-              const obj5 = require(7799) /* _fetchMessageInteractionData */;
+              require(7890) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
+              const obj5 = require(7890) /* _fetchMessageInteractionData */;
             } else {
-              const obj2 = require(7799) /* _fetchMessageInteractionData */;
+              const obj2 = require(7890) /* _fetchMessageInteractionData */;
               obj2.setFailed(nonce, ok.body.code, ok.body.message, ok.status);
             }
             return tmp13;
@@ -267,7 +267,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
         }
       }
       let code;
-      obj = require(7799) /* _fetchMessageInteractionData */;
+      obj = require(7890) /* _fetchMessageInteractionData */;
       const body = ok.body;
       if (null != body) {
         code = body.code;

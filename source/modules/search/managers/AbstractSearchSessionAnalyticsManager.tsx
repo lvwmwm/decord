@@ -1,9 +1,9 @@
-// Module ID: 10092
-// Function ID: 78161
+// Module ID: 10124
+// Function ID: 78355
 // Name: createDefaultSessionState
-// Dependencies: [6, 7, 491, 10078, 2]
+// Dependencies: [6, 7, 491, 10110, 2]
 
-// Module 10092 (createDefaultSessionState)
+// Module 10124 (createDefaultSessionState)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

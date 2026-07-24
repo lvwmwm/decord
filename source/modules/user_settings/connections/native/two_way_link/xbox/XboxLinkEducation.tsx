@@ -1,10 +1,10 @@
-// Module ID: 9037
-// Function ID: 71004
+// Module ID: 9076
+// Function ID: 71219
 // Name: XboxLinkEducation
-// Dependencies: [31, 27, 653, 33, 4130, 8943, 1920, 8982, 4126, 1212, 5459, 5121, 4543, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 8982, 1920, 9021, 4126, 1212, 5121, 4543, 2]
 // Exports: default
 
-// Module 9037 (XboxLinkEducation)
+// Module 9076 (XboxLinkEducation)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -22,7 +22,7 @@ let closure_9 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 1
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 
 export default function XboxLinkEducation(onClose) {
-  let obj = require(8943) /* styles */;
+  let obj = require(8982) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   let obj1 = importDefault(1920);
   const articleURL = obj1.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
@@ -37,7 +37,7 @@ export default function XboxLinkEducation(onClose) {
   const obj3 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl2.format(require(1212) /* getSystemLocale */.t.yhozpz, { helpdeskArticleUrl: articleURL });
-  items[2] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj3);
+  items[2] = callback(require(4126) /* Text */.Text, obj3);
   obj.children = items;
   const items1 = [callback2(closure_5, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer };

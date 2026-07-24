@@ -1,8 +1,8 @@
-// Module ID: 15112
-// Function ID: 115098
-// Dependencies: [31, 13997, 33, 3834, 689, 14078, 3991, 4542, 8229, 2]
+// Module ID: 15159
+// Function ID: 115419
+// Dependencies: [31, 14047, 33, 3834, 689, 14128, 3991, 4542, 8273, 2]
 
-// Module 15112
+// Module 15159
 import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -17,7 +17,7 @@ const memoResult = require("result").memo(function YouBarNameplate(isQuestRender
   ({ nameplate, barWidth } = isQuestRendered);
   let obj = isQuestRendered(3834);
   token = obj.useToken(token(689).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp2 = token(14078)(token);
+  const tmp2 = token(14128)(token);
   const dependencyMap = tmp2;
   let obj1 = isQuestRendered(3991);
   const fn = function l() {
@@ -48,7 +48,7 @@ const memoResult = require("result").memo(function YouBarNameplate(isQuestRender
   obj.style = items;
   obj.pointerEvents = "none";
   const obj2 = { nameplate, isFocused: true, animate: false };
-  obj.children = jsx(token(8229), { nameplate, isFocused: true, animate: false });
+  obj.children = jsx(token(8273), { nameplate, isFocused: true, animate: false });
   return jsx(token(3991).View, {});
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNameplate.tsx");

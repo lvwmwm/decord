@@ -1,10 +1,10 @@
-// Module ID: 14914
-// Function ID: 113681
+// Module ID: 14961
+// Function ID: 114002
 // Name: useSuggestedFriends
-// Dependencies: [57, 31, 6905, 11728, 624, 22, 3969, 2]
+// Dependencies: [57, 31, 6904, 11755, 624, 22, 3969, 2]
 // Exports: default
 
-// Module 14914 (useSuggestedFriends)
+// Module 14961 (useSuggestedFriends)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

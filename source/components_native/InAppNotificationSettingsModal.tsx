@@ -1,9 +1,9 @@
-// Module ID: 10279
-// Function ID: 79375
+// Module ID: 10308
+// Function ID: 79566
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 3767, 4325, 1849, 653, 33, 5079, 5073, 5796, 4320, 7495, 1212, 10280, 566, 5087, 5519, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 3767, 4325, 1849, 653, 33, 5079, 5073, 5796, 4320, 7636, 1212, 10309, 566, 5087, 5517, 2]
 
-// Module 10279 (_isNativeReflectConstruct)
+// Module 10308 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import openUserSettings from "openUserSettings";
@@ -204,7 +204,7 @@ const memoResult = importAllResult.memo((channelId) => {
   const onClose = channelId.onClose;
   const items = [channelId, onClose];
   const screens = importAllResult.useMemo(() => outer1_21(channelId, onClose), items);
-  return callback3(channelId(5519).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return callback3(channelId(5517).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });
 let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

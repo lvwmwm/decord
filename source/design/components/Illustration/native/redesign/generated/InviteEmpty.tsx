@@ -1,17 +1,17 @@
-// Module ID: 16342
-// Function ID: 127594
+// Module ID: 16389
+// Function ID: 127918
 // Name: getInviteEmptySource
-// Dependencies: [31, 27, 33, 7403, 10187, 16343, 10186, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 10217, 16390, 10216, 3976, 2]
 // Exports: InviteEmpty
 
-// Module 16342 (getInviteEmptySource)
+// Module 16389 (getInviteEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getInviteEmptySource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

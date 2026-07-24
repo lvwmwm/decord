@@ -1,5 +1,5 @@
 // Module ID: 3931
-// Function ID: 32433
+// Function ID: 32434
 // Name: NitroQuestOrbsMultiplierRive
 // Dependencies: [29, 31, 33, 3859, 3932, 3910, 2]
 

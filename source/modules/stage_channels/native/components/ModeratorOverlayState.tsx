@@ -1,10 +1,10 @@
-// Module ID: 10623
-// Function ID: 82867
+// Module ID: 10652
+// Function ID: 83059
 // Name: useModeratorOverlayChannelState
 // Dependencies: [677, 682, 3743, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 10623 (useModeratorOverlayChannelState)
+// Module 10652 (useModeratorOverlayChannelState)
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
 let closure_2 = useStoreWithEqualityFn.createWithEqualityFn((arg0, arg1) => {

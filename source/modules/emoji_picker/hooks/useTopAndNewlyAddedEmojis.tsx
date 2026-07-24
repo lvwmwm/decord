@@ -1,10 +1,10 @@
-// Module ID: 9334
-// Function ID: 72954
+// Module ID: 9370
+// Function ID: 73163
 // Name: getTopAndNewlyAddedEmojis
 // Dependencies: [4991, 1852, 624, 2]
 // Exports: default
 
-// Module 9334 (getTopAndNewlyAddedEmojis)
+// Module 9370 (getTopAndNewlyAddedEmojis)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EmojiIntention } from "set";
 

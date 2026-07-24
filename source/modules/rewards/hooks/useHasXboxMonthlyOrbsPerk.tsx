@@ -1,10 +1,10 @@
-// Module ID: 12655
-// Function ID: 98494
+// Module ID: 12706
+// Function ID: 98815
 // Name: hasCrepeMonthlyOrbsPerk
 // Dependencies: [1849, 1851, 3776, 1865, 1867, 566, 2]
 // Exports: useHasXboxMonthlyOrbsPerk
 
-// Module 12655 (hasCrepeMonthlyOrbsPerk)
+// Module 12706 (hasCrepeMonthlyOrbsPerk)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PremiumTypes } from "GuildFeatures";
 

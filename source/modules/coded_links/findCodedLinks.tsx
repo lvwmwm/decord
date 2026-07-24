@@ -1,7 +1,7 @@
 // Module ID: 4114
-// Function ID: 34025
+// Function ID: 34026
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4115, 653, 655, 4118, 1445, 4119, 4120, 7676, 4563, 4046, 7781, 4116, 6978, 8954, 8310, 6932, 4988, 2]
+// Dependencies: [4115, 653, 655, 4118, 1445, 4119, 4120, 7765, 4563, 4046, 7872, 4116, 6977, 8993, 8354, 6931, 4988, 2]
 // Exports: findCodedLink, isSuspiciousCodedLink, remainingPathFromDiscordHostMatch
 
 // Module 4114 (_createForOfIteratorHelperLoose)
@@ -181,7 +181,7 @@ function findCodedLinks(sanitizeUrlResult) {
     let combined = items;
     const _default = combined(4120).default;
     const parseToASTResult = combined(4120).default.parseToAST(str, true, obj);
-    combined(7676).walkAst(parseToASTResult, (type) => {
+    combined(7765).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK;
       if (tmp) {
         tmp = "string" === typeof type.target;
@@ -201,7 +201,7 @@ function findCodedLinks(sanitizeUrlResult) {
       match = [];
     }
     combined = items.concat(match);
-    const obj2 = combined(7676);
+    const obj2 = combined(7765);
     return (function coerceLinksToCodedLinks(combined) {
       let done;
       if (null != combined) {

@@ -1,10 +1,10 @@
-// Module ID: 12243
-// Function ID: 95576
+// Module ID: 12270
+// Function ID: 95816
 // Name: rowModifierShared
-// Dependencies: [57, 31, 27, 5656, 5660, 1348, 4349, 8331, 653, 33, 7621, 7808, 4130, 8296, 9293, 689, 566, 10350, 1212, 21, 12244, 9528, 9312, 7005, 9525, 5217, 10023, 9483, 4138, 2]
+// Dependencies: [57, 31, 27, 5656, 5660, 1348, 4349, 8375, 653, 33, 7710, 7899, 4130, 8340, 9329, 689, 566, 10379, 1212, 21, 12271, 9564, 9348, 7004, 9561, 5217, 10055, 9519, 4138, 2]
 // Exports: default
 
-// Module 12243 (rowModifierShared)
+// Module 12270 (rowModifierShared)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "handleMessagesTapURLLink";
@@ -28,7 +28,7 @@ let closure_6;
 const require = arg1;
 function rowModifierShared(arg0, arg1) {
   arg0.canAddNewReactions = !arg1;
-  arg0.contextType = require(7808) /* MediaGalleryItemType */.MessageContextType.MEDIA_VIEWER;
+  arg0.contextType = require(7899) /* MediaGalleryItemType */.MessageContextType.MEDIA_VIEWER;
 }
 function MeasureMessage(message) {
   message = message.message;

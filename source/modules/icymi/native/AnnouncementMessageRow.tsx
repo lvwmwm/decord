@@ -1,10 +1,10 @@
-// Module ID: 15216
-// Function ID: 115986
+// Module ID: 15263
+// Function ID: 116308
 // Name: AnnouncementMessageRowWrapper
-// Dependencies: [31, 27, 1348, 1838, 3767, 4325, 1849, 15217, 33, 15179, 689, 566, 5048, 8321, 9099, 9529, 15218, 8320, 15220, 1212, 21, 4660, 8450, 15222, 15226, 2]
+// Dependencies: [31, 27, 1348, 1838, 3767, 4325, 1849, 15264, 33, 15226, 689, 566, 5048, 8365, 9137, 9565, 15265, 8364, 15267, 1212, 21, 4660, 8494, 15269, 15273, 2]
 // Exports: default
 
-// Module 15216 (AnnouncementMessageRowWrapper)
+// Module 15263 (AnnouncementMessageRowWrapper)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

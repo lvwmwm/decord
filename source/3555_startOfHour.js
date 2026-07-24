@@ -1,5 +1,5 @@
 // Module ID: 3555
-// Function ID: 27670
+// Function ID: 27671
 // Name: startOfHour
 // Dependencies: [3209, 3210]
 // Exports: default

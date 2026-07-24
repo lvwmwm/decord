@@ -1,5 +1,5 @@
 // Module ID: 7296
-// Function ID: 58872
+// Function ID: 58901
 // Name: parseStackFrames
 // Dependencies: [57, 77, 7242, 7243, 7281, 7247]
 // Exports: eventFromMessage, eventFromUnknownInput

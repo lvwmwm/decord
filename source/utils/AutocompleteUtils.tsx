@@ -1,7 +1,7 @@
 // Module ID: 4974
-// Function ID: 42862
+// Function ID: 42866
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 4975, 4991, 4578, 5034, 5035, 5039, 3760, 1352, 1911, 1857, 1348, 5042, 1907, 1917, 1910, 1838, 4349, 3758, 4217, 3767, 1906, 3947, 1849, 4175, 653, 5043, 1355, 3, 5044, 1387, 4118, 5045, 1832, 3969, 5046, 4799, 22, 1916, 1327, 5047, 3763, 4320, 1212, 21, 5725, 5728, 5607, 5730, 5731, 1331, 5732, 5733, 4583, 5738, 2]
+// Dependencies: [57, 6, 7, 4975, 4991, 4578, 5034, 5035, 5039, 3760, 1352, 1911, 1857, 1348, 5042, 1907, 1917, 1910, 1838, 4349, 3758, 4217, 3767, 1906, 3947, 1849, 4175, 653, 5043, 1355, 3, 5044, 1387, 4118, 5045, 1832, 3969, 5046, 4799, 22, 1916, 1327, 5047, 3763, 4320, 1212, 21, 5725, 5728, 5605, 5730, 5731, 1331, 5732, 5733, 4583, 5738, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
 // Module 4974 (_createForOfIteratorHelperLoose)
@@ -2469,14 +2469,14 @@ areArraysShallowlyEqual = {
     const regExp1 = new RegExp(obj2.escape(toLocaleLowerCaseResult), "i");
     obj.containQuery = regExp1;
     obj.queryLower = toLocaleLowerCaseResult;
-    let canSeeOnboardingHomeResult = require(5607) /* canSeeOnboardingHomeInPreview */.canSeeOnboardingHome(guild.id);
+    let canSeeOnboardingHomeResult = require(5605) /* canSeeOnboardingHomeInPreview */.canSeeOnboardingHome(guild.id);
     if (canSeeOnboardingHomeResult) {
       const features = guild.features;
       canSeeOnboardingHomeResult = !features.has(constants3.HUB);
     }
     const features2 = guild.features;
     const hasItem = features2.has(constants3.COMMUNITY);
-    const obj4 = require(5607) /* canSeeOnboardingHomeInPreview */;
+    const obj4 = require(5605) /* canSeeOnboardingHomeInPreview */;
     let result = require(5730) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
     if (result) {
       const features3 = guild.features;
@@ -2823,10 +2823,10 @@ areArraysShallowlyEqual = {
     let arr = Array.from(sounds.values());
     return _require(5738).searchSounds(arg0, reduced, currentUser, channel);
   },
-  matchSentinel(arg0, arg1, outer1_11) {
+  matchSentinel(arg0, arg1, outer1_12) {
     let tmp = !tmp8.test(arg1);
     if (tmp) {
-      tmp = arg0 === outer1_11;
+      tmp = arg0 === outer1_12;
     }
     return tmp;
   },

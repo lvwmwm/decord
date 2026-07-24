@@ -1,5 +1,5 @@
 // Module ID: 3840
-// Function ID: 32014
+// Function ID: 32015
 // Name: isThemeLight
 // Dependencies: [482, 2]
 // Exports: isThemeDark, isThemeLight

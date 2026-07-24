@@ -1,9 +1,9 @@
-// Module ID: 15713
-// Function ID: 121166
+// Module ID: 15760
+// Function ID: 121488
 // Name: QuestActivityButtonInner
-// Dependencies: [31, 27, 4122, 6942, 15714, 4976, 33, 3991, 8018, 4130, 689, 10464, 566, 4337, 15715, 1934, 4098, 15716, 4131, 5453, 14028, 15717, 13898, 1212, 10476, 2]
+// Dependencies: [31, 27, 4122, 6941, 15761, 4976, 33, 3991, 8063, 4130, 689, 10493, 566, 4337, 15762, 1934, 4098, 15763, 4131, 5453, 14078, 15764, 13949, 1212, 10505, 2]
 
-// Module 15713 (QuestActivityButtonInner)
+// Module 15760 (QuestActivityButtonInner)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ function QuestActivityButtonInner(quest) {
   let sharedValue1;
   let ref;
   let c8;
-  let obj = quest(10464);
+  let obj = quest(10493);
   let obj1 = quest(566);
   let items = [sharedValue];
   const stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
@@ -167,29 +167,29 @@ function QuestActivityButtonInner(quest) {
   ({ container: arr6[0], completionGlow: arr6[1] } = tmp13);
   items5[2] = animatedStyle;
   obj = { style: memo, pointerEvents: "none" };
-  obj1 = { ref, source: quest(14028), autoPlay: false, loop: false };
+  obj1 = { ref, source: quest(14078), autoPlay: false, loop: false };
   obj.children = callback(stateFromStores(5453), obj1);
   const items6 = [callback(c4, obj), , , ];
   obj2 = { style: tmp13.buttonWrapper };
   obj3 = {};
   const tmp19 = stateFromStores(5453);
-  obj3.icon = stateFromStores(13898);
+  obj3.icon = stateFromStores(13949);
   obj3.onPress = callback;
   const intl = quest(1212).intl;
   obj3.accessibilityLabel = intl.string(quest(1212).t.JALI2K);
-  obj2.children = callback(stateFromStores(15717), obj3);
+  obj2.children = callback(stateFromStores(15764), obj3);
   items6[1] = callback(c4, obj2);
   obj4 = { pointerEvents: "none", style: tmp13.canvas };
   obj5 = { height: c11, width: c11 };
   const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: stateFromStores(689).unsafe_rawColors.OPACITY_32, strokeWidth: 3.4, strokeDasharray: result };
-  obj5.children = callback(quest(8018).Circle, obj6);
-  obj4.children = callback(quest(8018).Svg, obj5);
+  obj5.children = callback(quest(8063).Circle, obj6);
+  obj4.children = callback(quest(8063).Svg, obj5);
   items6[2] = callback(c4, obj4);
   const obj7 = { pointerEvents: "none", style: tmp13.canvas };
   const obj8 = { height: c11, width: c11 };
   const obj9 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp13.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps };
   obj8.children = callback(closure_12, obj9);
-  obj7.children = callback(quest(8018).Svg, obj8);
+  obj7.children = callback(quest(8063).Svg, obj8);
   items6[3] = callback(c4, obj7);
   obj.children = items6;
   return callback2(stateFromStores(3991).View, obj);

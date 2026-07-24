@@ -1,10 +1,10 @@
-// Module ID: 6967
-// Function ID: 55716
+// Module ID: 6966
+// Function ID: 55725
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [4144, 1352, 1907, 1838, 3758, 4146, 653, 4949, 1212, 4312, 4345, 566, 2]
 // Exports: getStreamCTAAriaLabel, getStreamCTAString, getStreamEligibleChannels, useCanWatchStream
 
-// Module 6967 (_createForOfIteratorHelperLoose)
+// Module 6966 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelRecordBase } from "_callSuper";
 import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 11887
-// Function ID: 91984
+// Module ID: 11914
+// Function ID: 92222
 // Name: getStyleConfig
-// Dependencies: [31, 27, 1921, 1917, 1838, 5512, 653, 1455, 33, 4130, 3834, 689, 4126, 1212, 11888, 566, 4939, 21, 9742, 5515, 11889, 1273, 8336, 5464, 8266, 11890, 8492, 4098, 3982, 1198, 5584, 3989, 1555, 11891, 4543, 5511, 2]
+// Dependencies: [31, 27, 1921, 1917, 1838, 5510, 653, 1455, 33, 4130, 3834, 689, 4126, 1212, 11915, 566, 4939, 21, 9776, 5513, 11916, 1273, 8380, 5462, 8310, 11917, 8537, 4098, 3982, 1198, 5582, 3989, 1555, 11918, 4543, 5509, 2]
 // Exports: default
 
-// Module 11887 (getStyleConfig)
+// Module 11914 (getStyleConfig)
 import getHighestActiveScreenIndex from "getHighestActiveScreenIndex";
 import { View } from "showActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ import closure_7 from "_createForOfIteratorHelperLoose";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import { Routes } from "ME";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
-import jsxProd from "module_11891";
+import jsxProd from "module_11918";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_11;
@@ -79,7 +79,7 @@ function Bio(arg0) {
       obj.children = intl.string(require(1212) /* getSystemLocale */.t.ZzAR2Y);
       const items = [callback(Heading, obj), ];
       obj = { bio: previewBio, userId, textVariant: getStyleConfig(themeType).textVariant, lineClamp };
-      items[1] = callback(importDefault(11888), obj);
+      items[1] = callback(importDefault(11915), obj);
       obj.children = items;
       tmp2 = callback2(View, obj);
     }
@@ -132,7 +132,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj1 = { style: items4 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  obj2 = { themeType, icon: callback(userId(9742).ClydeIcon, { size: "xs" }) };
+  obj2 = { themeType, icon: callback(userId(9776).ClydeIcon, { size: "xs" }) };
   const intl2 = userId(1212).intl;
   obj2.accessibilityLabel = intl2.formatToPlainString(userId(1212).t["9t7w53"], { date: createdAtDate });
   obj2.children = createdAtDate;
@@ -143,8 +143,8 @@ function MemberJoinDates(userId) {
     obj4 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DIVIDER_DOT };
     const items6 = [callback(userId(4126).Text, obj4), ];
     obj5 = { themeType };
-    const obj6 = { guild: stateFromStores1, size: userId(5515).GuildIconSizes.XXSMALL };
-    obj5.icon = callback(importDefault(5515), obj6);
+    const obj6 = { guild: stateFromStores1, size: userId(5513).GuildIconSizes.XXSMALL };
+    obj5.icon = callback(importDefault(5513), obj6);
     const intl3 = userId(1212).intl;
     const obj7 = { guildName: stateFromStores1.name, date: createdAtDate1 };
     obj5.accessibilityLabel = intl3.formatToPlainString(userId(1212).t.FdLNDK, obj7);
@@ -152,7 +152,7 @@ function MemberJoinDates(userId) {
     items6[1] = callback(TextWithIcon, obj5);
     obj3.children = items6;
     tmp13 = callback2(closure_13, obj3);
-    const tmp24 = importDefault(5515);
+    const tmp24 = importDefault(5513);
   }
   items5[1] = tmp13;
   obj1.children = items5;
@@ -162,7 +162,7 @@ function MemberJoinDates(userId) {
 }
 function FriendsSinceDate(themeType) {
   themeType = themeType.themeType;
-  let obj = require(11889) /* useFriendsSinceDate */;
+  let obj = require(11916) /* useFriendsSinceDate */;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp2 = null;
   if (null != friendsSinceDate) {
@@ -338,5 +338,5 @@ export default function UserProfileAboutMeCard(arg0) {
   }
   items1[4] = tmp13;
   obj.children = items1;
-  return tmp3(importDefault(5511), obj);
+  return tmp3(importDefault(5509), obj);
 };

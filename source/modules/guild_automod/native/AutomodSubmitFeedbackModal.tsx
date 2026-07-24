@@ -1,10 +1,10 @@
-// Module ID: 11011
-// Function ID: 85635
+// Module ID: 11038
+// Function ID: 85824
 // Name: Navbar
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5121, 5788, 1212, 7607, 6750, 1557, 4126, 7495, 1273, 4543, 4324, 11012, 6749, 3830, 5519, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5121, 5788, 1212, 7696, 6750, 1557, 4126, 7636, 1273, 4543, 4324, 11039, 6749, 3830, 5517, 2]
 // Exports: default
 
-// Module 11011 (Navbar)
+// Module 11038 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -23,7 +23,7 @@ function Navbar(onClose) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.onPress = onClose.onClose;
-  obj.source = importDefault(7607);
+  obj.source = importDefault(7696);
   obj.children = callback2(require(5788) /* HeaderActionButton */.HeaderActionButton, obj);
   obj.children = callback2(View, obj);
   return callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

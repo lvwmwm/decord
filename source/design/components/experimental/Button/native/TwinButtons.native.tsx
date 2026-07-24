@@ -1,10 +1,10 @@
-// Module ID: 8374
-// Function ID: 66736
+// Module ID: 8418
+// Function ID: 66964
 // Name: TwinButtons
 // Dependencies: [31, 27, 33, 4130, 689, 4549, 4543, 2]
 // Exports: TwinButtons
 
-// Module 8374 (TwinButtons)
+// Module 8418 (TwinButtons)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

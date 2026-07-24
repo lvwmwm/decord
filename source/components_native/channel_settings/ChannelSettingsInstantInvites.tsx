@@ -1,10 +1,10 @@
-// Module ID: 15505
-// Function ID: 119448
+// Module ID: 15552
+// Function ID: 119770
 // Name: ConnectedChannelSettingsInstantInvites
-// Dependencies: [57, 31, 27, 7597, 1348, 653, 33, 4130, 689, 1557, 566, 7596, 10168, 1273, 10186, 10187, 1212, 5585, 15506, 9244, 2]
+// Dependencies: [57, 31, 27, 7686, 1348, 653, 33, 4130, 689, 1557, 566, 7685, 10198, 1273, 10216, 10217, 1212, 5583, 15553, 9280, 2]
 // Exports: default
 
-// Module 15505 (ConnectedChannelSettingsInstantInvites)
+// Module 15552 (ConnectedChannelSettingsInstantInvites)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -102,7 +102,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }, items7);
   if (!loading) {
     if (0 === memo1.length) {
-      obj = { lightSource: importDefault(10186), darkSource: importDefault(10187) };
+      obj = { lightSource: importDefault(10216), darkSource: importDefault(10217) };
       const intl = items8(1212).intl;
       obj.title = intl.string(items8(1212).t["+nLJkZ"]);
       const intl2 = items8(1212).intl;
@@ -114,20 +114,20 @@ export default function ConnectedChannelSettingsInstantInvites() {
     if (null != first) {
       obj = { style: items8.content };
       obj1 = { sections: items6, estimatedListSize: "windowSize", itemSize: first, renderItem: callback1, insetStart: items8.gap.height, insetEnd: importDefault(1557)().bottom };
-      obj.children = callback(importDefault(9244), obj1);
+      obj.children = callback(importDefault(9280), obj1);
       let tmp15Result = callback(stateFromStoresArray, obj);
     }
   }
   obj2 = { style: items8.content };
   items8 = [, ];
-  items8[0] = callback(items8(5585).SceneLoadingIndicator, {});
+  items8[0] = callback(items8(5583).SceneLoadingIndicator, {});
   let tmp17 = null;
   if (memo1.length > 0) {
     const obj3 = {};
     memo1 = memo1[0];
     obj3.item = memo1;
     obj3.onMeasured = callback;
-    tmp17 = callback(importDefault(15506), obj3);
+    tmp17 = callback(importDefault(15553), obj3);
   }
   items8[1] = tmp17;
   obj2.children = items8;

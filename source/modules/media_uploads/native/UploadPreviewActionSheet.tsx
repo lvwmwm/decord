@@ -1,12 +1,12 @@
-// Module ID: 9651
-// Function ID: 75147
+// Module ID: 9685
+// Function ID: 75359
 // Name: UploadPreviewActionSheet
-// Dependencies: [57, 31, 27, 4468, 5188, 33, 4130, 689, 44, 4665, 1450, 1557, 4559, 4098, 4686, 9652, 3831, 7507, 4674, 9824, 9825, 5187, 5189, 4541, 4126, 477, 8302, 8262, 5503, 5165, 9826, 9828, 1212, 9094, 9832, 7938, 4644, 9834, 4543, 4089, 2]
+// Dependencies: [57, 31, 27, 4468, 5188, 33, 4130, 689, 44, 4665, 1450, 1557, 4559, 4098, 4686, 9686, 3831, 7577, 4674, 9856, 9857, 5187, 5189, 4541, 4126, 477, 8346, 8306, 5501, 5165, 9858, 9860, 1212, 9132, 9864, 8025, 4644, 9866, 4543, 4089, 2]
 // Exports: default
 
-// Module 9651 (UploadPreviewActionSheet)
+// Module 9685 (UploadPreviewActionSheet)
 import _slicedToArray from "_slicedToArray";
-import module_9828 from "module_9828";
+import module_9860 from "module_9860";
 import get_ActivityIndicator from "Caption";
 import { DraftType } from "_isNativeReflectConstruct";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -29,7 +29,7 @@ _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/media_uploads/native/UploadPreviewActionSheet.tsx");
 
 export default function UploadPreviewActionSheet(onAdd) {
-  let module_9828;
+  let module_9860;
   let disableAddDescription;
   let isImage;
   let isThumbnail;
@@ -37,7 +37,7 @@ export default function UploadPreviewActionSheet(onAdd) {
   const onEdit = onAdd.onEdit;
   const onRemove = onAdd.onRemove;
   const channelId = onAdd.channelId;
-  ({ onClose: module_9828, disableAddDescription } = onAdd);
+  ({ onClose: module_9860, disableAddDescription } = onAdd);
   if (disableAddDescription === undefined) {
     disableAddDescription = false;
   }

@@ -1,10 +1,10 @@
-// Module ID: 11589
-// Function ID: 90070
+// Module ID: 11616
+// Function ID: 90308
 // Name: useGuildPowerupTier3OverrideConfig
 // Dependencies: [1838, 653, 566, 1212, 2230, 2]
 // Exports: default
 
-// Module 11589 (useGuildPowerupTier3OverrideConfig)
+// Module 11616 (useGuildPowerupTier3OverrideConfig)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 

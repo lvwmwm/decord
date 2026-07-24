@@ -1,10 +1,10 @@
-// Module ID: 12364
-// Function ID: 96104
+// Module ID: 12427
+// Function ID: 96465
 // Name: computeDaysUntilNextBadgeDate
-// Dependencies: [31, 3712, 12365, 8557, 2]
+// Dependencies: [31, 3712, 12428, 8602, 2]
 // Exports: useTimeUntilNextBadge
 
-// Module 12364 (computeDaysUntilNextBadgeDate)
+// Module 12427 (computeDaysUntilNextBadgeDate)
 import { useMemo } from "result";
 
 function computeDaysUntilNextBadgeDate(arg0, arg1) {
@@ -18,9 +18,9 @@ const result = require("useNextTenureBadge").fileFinishedImporting("modules/prem
 
 export { computeDaysUntilNextBadgeDate };
 export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
-  nextTenureBadge = nextTenureBadge(12365).useNextTenureBadge();
-  let obj = nextTenureBadge(12365);
-  const premiumSince = nextTenureBadge(8557).usePremiumSince();
+  nextTenureBadge = nextTenureBadge(12428).useNextTenureBadge();
+  let obj = nextTenureBadge(12428);
+  const premiumSince = nextTenureBadge(8602).usePremiumSince();
   const items = [nextTenureBadge, premiumSince];
   return useMemo(() => {
     if (null != nextTenureBadge) {

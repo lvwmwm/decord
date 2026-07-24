@@ -1,10 +1,10 @@
-// Module ID: 8935
-// Function ID: 70453
+// Module ID: 8974
+// Function ID: 70668
 // Name: onConnectToConsole
-// Dependencies: [31, 653, 3946, 1334, 8936, 8971, 9039, 2]
+// Dependencies: [31, 653, 3946, 1334, 8975, 9010, 9078, 2]
 // Exports: useOnConnectToConsole
 
-// Module 8935 (onConnectToConsole)
+// Module 8974 (onConnectToConsole)
 import result from "result";
 import ME from "ME";
 
@@ -15,16 +15,16 @@ function onConnectToConsole(channel, closure_0) {
   const result = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.DONUT_MOBILE_NUX);
   if (closure_0.twoWayLink) {
     if (!closure_0.revoked) {
-      require(9039) /* _beginConsoleTransfer */.beginConsoleTransfer(channel, closure_0.type);
+      require(9078) /* _beginConsoleTransfer */.beginConsoleTransfer(channel, closure_0.type);
     }
   }
   const type = closure_0.type;
   if (constants2.XBOX === type) {
     const items = [constants.CHANNEL_CALL];
-    return importDefault(8936).showModal(items);
+    return importDefault(8975).showModal(items);
   } else {
     const items1 = [constants.CHANNEL_CALL];
-    return importDefault(8971).showModal(items1, closure_0.type);
+    return importDefault(9010).showModal(items1, closure_0.type);
   }
   const obj = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
 }

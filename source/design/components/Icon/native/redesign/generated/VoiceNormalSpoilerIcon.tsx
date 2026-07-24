@@ -1,5 +1,5 @@
 // Module ID: 4657
-// Function ID: 40360
+// Function ID: 40364
 // Name: VoiceNormalSpoilerIcon
 // Dependencies: [31, 33, 689, 3833, 4606, 2]
 // Exports: VoiceNormalSpoilerIcon

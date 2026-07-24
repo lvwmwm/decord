@@ -1,9 +1,9 @@
 // Module ID: 13280
-// Function ID: 101754
-// Dependencies: []
+// Function ID: 101976
+// Dependencies: [13281, 13349]
 
 // Module 13280
+import module_13281 from "module_13281";
 
-export default Math.trunc || (function trunc(arg0) {
-  return +arg0 > 0 ? floor : ceil(+arg0);
-});
+
+export default require("check").Object.assign;

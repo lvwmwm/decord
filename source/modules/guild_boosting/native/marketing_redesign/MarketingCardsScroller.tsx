@@ -1,9 +1,9 @@
-// Module ID: 11597
-// Function ID: 90130
+// Module ID: 11624
+// Function ID: 90368
 // Name: getClampedIndex
-// Dependencies: [57, 31, 27, 4122, 33, 4130, 3974, 689, 566, 1212, 478, 4660, 9589, 11413, 2]
+// Dependencies: [57, 31, 27, 4122, 33, 4130, 3974, 689, 566, 1212, 478, 4660, 9625, 11441, 2]
 
-// Module 11597 (getClampedIndex)
+// Module 11624 (getClampedIndex)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

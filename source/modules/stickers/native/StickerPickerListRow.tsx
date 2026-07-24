@@ -1,10 +1,10 @@
-// Module ID: 9614
-// Function ID: 74887
+// Module ID: 9650
+// Function ID: 75098
 // Name: STICKER_SIZE
-// Dependencies: [57, 31, 27, 1849, 3806, 9568, 1314, 33, 4130, 477, 3803, 4099, 4100, 4466, 5732, 4799, 9615, 9618, 1184, 4660, 2]
+// Dependencies: [57, 31, 27, 1849, 3806, 9604, 1314, 33, 4130, 477, 3803, 4099, 4100, 4466, 5732, 4799, 9651, 9654, 1184, 4660, 2]
 // Exports: default
 
-// Module 9614 (STICKER_SIZE)
+// Module 9650 (STICKER_SIZE)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -92,7 +92,7 @@ export default function StickerPickerListRow(stickers) {
         ({ id: obj4.stickerId, name: obj4.stickerName, format_type: obj4.stickerType } = tmp8);
         let tmp17 = stickers;
         let tmp18 = dependencyMap;
-        let obj5 = stickers(9615);
+        let obj5 = stickers(9651);
         let tmp19 = closure_7;
         obj.stickerUrl = obj5.getStickerAssetUrl(tmp8, closure_7, first);
         obj.stickerAnimated = first;
@@ -125,7 +125,7 @@ export default function StickerPickerListRow(stickers) {
         handleOnLongPressSticker(found);
       }
     };
-    return jsx(importDefault(9618), { style: tmp3.row });
+    return jsx(importDefault(9654), { style: tmp3.row });
   } else {
     let num2 = 0;
     jsx = 0;

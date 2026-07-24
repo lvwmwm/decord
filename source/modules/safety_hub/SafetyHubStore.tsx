@@ -1,9 +1,9 @@
-// Module ID: 11026
-// Function ID: 85776
+// Module ID: 11053
+// Function ID: 85965
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 7544, 7545, 11027, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 7589, 7590, 11054, 566, 686, 2]
 
-// Module 11026 (_isNativeReflectConstruct)
+// Module 11053 (_isNativeReflectConstruct)
 import ContentIdType from "ContentIdType";
 import createAggregator from "createAggregator";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -227,7 +227,7 @@ obj = {
     let isDsaEligible;
     let username;
     ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility } = arg0);
-    let closure_11 = importDefault(11027)(classifications, "id");
+    let closure_11 = importDefault(11054)(classifications, "id");
     let c14 = false;
     let c15 = true;
     let c16 = null;
@@ -238,7 +238,7 @@ obj = {
     error = error.error;
   },
   SAFETY_HUB_FETCH_CLASSIFICATION_START: function handleFetchClassificationStart(classificationId) {
-    closure_12[classificationId.classificationId] = require(7545) /* ContentIdType */.ClassificationRequestState.PENDING;
+    closure_12[classificationId.classificationId] = require(7590) /* ContentIdType */.ClassificationRequestState.PENDING;
     let c14 = true;
   },
   SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: function handleFetchClassificationSuccess(classification) {
@@ -249,7 +249,7 @@ obj = {
     classification = classification.classification;
     closure_11[classification.id] = classification;
     ({ accountStanding, isDsaEligible, username, isAppealEligible } = classification);
-    closure_12[classification.id] = require(7545) /* ContentIdType */.ClassificationRequestState.SUCCESS;
+    closure_12[classification.id] = require(7590) /* ContentIdType */.ClassificationRequestState.SUCCESS;
     let c14 = false;
     let c16 = null;
     let c15 = true;
@@ -257,7 +257,7 @@ obj = {
   SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: function handleFetchClassificationFailure(error) {
     let c14 = false;
     error = error.error;
-    closure_12[error.classificationId] = require(7545) /* ContentIdType */.ClassificationRequestState.FAILED;
+    closure_12[error.classificationId] = require(7590) /* ContentIdType */.ClassificationRequestState.FAILED;
     let c15 = false;
   },
   SAFETY_HUB_APPEAL_OPEN: function handleAppealOpen(classificationId) {
@@ -286,7 +286,7 @@ obj = {
   SAFETY_HUB_REQUEST_REVIEW_SUCCESS: function handleSafetyHubRequestReviewSuccess(arg0) {
     let c21 = false;
     let c22 = null;
-    dependencyMap[arg0.classificationId].appeal_status = { status: require(7545) /* ContentIdType */.AppealStatusType.REVIEW_PENDING };
+    dependencyMap[arg0.classificationId].appeal_status = { status: require(7590) /* ContentIdType */.AppealStatusType.REVIEW_PENDING };
   },
   SAFETY_HUB_REQUEST_REVIEW_FAILURE: function handleSafetyHubRequestReviewFailure(error) {
     let c21 = false;
@@ -330,7 +330,7 @@ obj = {
           let obj = {};
           let tmp4 = require;
           let tmp5 = dependencyMap;
-          obj.status = require(7545) /* ContentIdType */.AppealStatusType.REVIEW_PENDING;
+          obj.status = require(7590) /* ContentIdType */.AppealStatusType.REVIEW_PENDING;
           dependencyMap[key10008].appeal_status = obj;
           continue;
         }
@@ -374,7 +374,7 @@ obj = {
   LOGOUT: function reset() {
     let c14 = false;
     let closure_11 = {};
-    const obj = { state: require(7545) /* ContentIdType */.AccountStandingState.ALL_GOOD };
+    const obj = { state: require(7590) /* ContentIdType */.AccountStandingState.ALL_GOOD };
     let c17 = null;
     const DIDNT_VIOLATE_POLICY = AppealIngestionSignal.DIDNT_VIOLATE_POLICY;
     let c24 = "";

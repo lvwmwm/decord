@@ -1,9 +1,9 @@
-// Module ID: 14391
-// Function ID: 110029
+// Module ID: 14441
+// Function ID: 110352
 // Name: ViewDebugLogsActionSheetRow
-// Dependencies: [31, 27, 33, 4098, 5502, 4337, 9112, 5500, 5186, 1212, 14392, 14394, 4094, 14397, 477, 10205, 14398, 10095, 12852, 3803, 2]
+// Dependencies: [31, 27, 33, 4098, 5500, 4337, 9148, 5498, 5186, 1212, 14442, 14444, 4094, 14447, 477, 10235, 14448, 10127, 12904, 3803, 2]
 
-// Module 14391 (ViewDebugLogsActionSheetRow)
+// Module 14441 (ViewDebugLogsActionSheetRow)
 import { Suspense } from "result";
 import { Keyboard } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ function ViewDebugLogsActionSheetRow(icon) {
   let importDefault;
   const title = icon.title;
   ({ screenKey: importDefault, render: dependencyMap } = icon);
-  return callback(title(5502).ActionSheetRow, {
+  return callback(title(5500).ActionSheetRow, {
     icon: icon.icon,
     label: title,
     onPress() {
@@ -38,7 +38,7 @@ function ViewDebugLogsActionSheet() {
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.BUOCPi);
   obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true };
-  const obj1 = { icon: callback(require(14392) /* WrenchIcon */.WrenchIcon, {}) };
+  const obj1 = { icon: callback(require(14442) /* WrenchIcon */.WrenchIcon, {}) };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.title = intl2.string(require(1212) /* getSystemLocale */.t.XpPGhL);
   obj1.screenKey = "debugLogs";
@@ -56,7 +56,7 @@ function ViewDebugLogsActionSheet() {
   items[1] = callback(ViewDebugLogsActionSheetRow, obj2);
   let tmp3 = null;
   if (obj6.isAndroid()) {
-    const obj3 = { icon: callback(require(10205) /* ChannelNotificationIcon */.ChannelNotificationIcon, {}) };
+    const obj3 = { icon: callback(require(10235) /* ChannelNotificationIcon */.ChannelNotificationIcon, {}) };
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj3.title = intl4.string(require(1212) /* getSystemLocale */.t.Ljj0ps);
     obj3.screenKey = "pushNotificationLogs";
@@ -67,8 +67,8 @@ function ViewDebugLogsActionSheet() {
   }
   items[2] = tmp3;
   obj.children = items;
-  obj.children = closure_6(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5500) /* ActionSheet */.ActionSheet, obj);
+  obj.children = closure_6(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback(require(5498) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 ViewDebugLogsActionSheet = "ViewDebugLogsActionSheet";

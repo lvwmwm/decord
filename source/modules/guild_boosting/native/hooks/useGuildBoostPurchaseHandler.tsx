@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 90010
+// Module ID: 11598
+// Function ID: 90248
 // Name: useGuildBoostPurchaseHandler
 // Dependencies: [5, 31, 653, 3, 6644, 7156, 6643, 675, 4471, 1212, 4966, 2]
 // Exports: default
 
-// Module 11571 (useGuildBoostPurchaseHandler)
+// Module 11598 (useGuildBoostPurchaseHandler)
 import getBaseAnalyticsFields from "getBaseAnalyticsFields";
 import result from "result";
 import { AnalyticEvents } from "ME";

@@ -1,9 +1,9 @@
-// Module ID: 9296
-// Function ID: 72617
+// Module ID: 9332
+// Function ID: 72826
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 9296 (__INTERNAL_VIEW_CONFIG)
+// Module 9332 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DCDAutoModerationSystemMessageView", validAttributes: { row: true } };

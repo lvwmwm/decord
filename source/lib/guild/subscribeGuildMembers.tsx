@@ -1,5 +1,5 @@
 // Module ID: 5687
-// Function ID: 48941
+// Function ID: 48951
 // Name: _isNativeReflectConstruct
 // Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 22, 5688, 620, 1184, 2]
 // Exports: default, useSubscribeGuildMembers

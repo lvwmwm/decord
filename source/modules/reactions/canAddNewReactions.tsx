@@ -1,9 +1,9 @@
-// Module ID: 9966
-// Function ID: 76980
+// Module ID: 9998
+// Function ID: 77174
 // Dependencies: [4946, 3758, 653, 2]
 // Exports: default
 
-// Module 9966
+// Module 9998
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import { Permissions } from "ME";

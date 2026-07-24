@@ -1,10 +1,10 @@
-// Module ID: 9487
-// Function ID: 73947
+// Module ID: 9523
+// Function ID: 74156
 // Name: SummarySources
 // Dependencies: [2]
 // Exports: createSummaryFromServer
 
-// Module 9487 (SummarySources)
+// Module 9523 (SummarySources)
 const result = require("set").fileFinishedImporting("modules/summaries/Summary.tsx");
 
 export const SummarySources = { SOURCE_0: 0, [0]: "SOURCE_0", SOURCE_1: 1, [1]: "SOURCE_1" };

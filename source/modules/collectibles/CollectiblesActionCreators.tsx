@@ -1,7 +1,7 @@
 // Module ID: 6773
-// Function ID: 53224
+// Function ID: 53246
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4129, 1921, 6774, 6789, 6790, 6791, 6792, 6797, 6776, 6803, 6804, 655, 653, 6820, 6821, 3982, 686, 6822, 6823, 6825, 507, 4029, 5734, 6824, 6786, 6826, 6827, 2]
+// Dependencies: [5, 4129, 1921, 6774, 6789, 6790, 6791, 6792, 6796, 6776, 6802, 6803, 655, 653, 6819, 6820, 3982, 686, 6821, 6822, 6824, 507, 4029, 5734, 6823, 6786, 6825, 6826, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
 // Module 6773 (_createForOfIteratorHelperLoose)
@@ -150,7 +150,7 @@ function dispatchOpenCollectiblesShop(screen) {
 function closeCollectiblesShop() {
   importDefault(686).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(686);
-  require(6822) /* pushLayer */.popLayer();
+  require(6821) /* pushLayer */.popLayer();
 }
 function areOptionalBooleansEqual(arg0, arg1) {
   return Boolean(arg0) === Boolean(arg1);

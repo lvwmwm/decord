@@ -1,9 +1,9 @@
-// Module ID: 11361
-// Function ID: 88303
+// Module ID: 11390
+// Function ID: 88543
 // Name: VoiceMessageRecordingCancelledToastIcon
-// Dependencies: [5, 57, 31, 27, 3823, 6922, 1348, 11103, 11104, 653, 4123, 4344, 33, 4130, 689, 7660, 3981, 4341, 11362, 3991, 1324, 8829, 10849, 1450, 11018, 4664, 4665, 6691, 7939, 9544, 1207, 3831, 1212, 10229, 3982, 4675, 3830, 8429, 5217, 11364, 11345, 10735, 2]
+// Dependencies: [5, 57, 31, 27, 3823, 6921, 1348, 11130, 11131, 653, 4123, 4344, 33, 4130, 689, 7749, 3981, 4341, 11391, 3991, 1324, 8868, 10876, 1450, 11045, 4664, 4665, 6691, 8026, 9580, 1207, 3831, 1212, 10259, 3982, 4675, 3830, 8473, 5217, 11393, 11374, 10764, 2]
 
-// Module 11361 (VoiceMessageRecordingCancelledToastIcon)
+// Module 11390 (VoiceMessageRecordingCancelledToastIcon)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "dispatcher";
@@ -38,13 +38,13 @@ const require = arg1;
 function VoiceMessageRecordingCancelledToastIcon() {
   let obj = { style: callback().icon, "aria-hidden": true };
   obj = { color: importDefault(689).colors.WHITE, size: "xs" };
-  obj.children = jsx(require(7660) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
+  obj.children = jsx(require(7749) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
   return <closure_6 color={importDefault(689).colors.WHITE} size="xs" />;
 }
 function triggerHapticGuarded() {
   if (state.getState().showRecordingOverlay) {
-    require(11362) /* generateBase64EncodedWaveform */.triggerHaptic();
-    const obj = require(11362) /* generateBase64EncodedWaveform */;
+    require(11391) /* generateBase64EncodedWaveform */.triggerHaptic();
+    const obj = require(11391) /* generateBase64EncodedWaveform */;
   }
 }
 ({ View: closure_6, AppState: closure_7 } = get_ActivityIndicator);
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo((disabled) => {
   disabled = disabled.disabled;
   const channelId = disabled.channelId;
   let obj = disabled(1324);
-  let obj1 = disabled(8829);
+  let obj1 = disabled(8868);
   const clientThemesOverride = obj1.useClientThemesOverride(_createForOfIteratorHelperLoose().themedChatInput);
   const tmp3 = state((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);
   const dependencyMap = tmp3;
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo((disabled) => {
   const currentState = importAllResult.useRef(true);
   let _isNativeReflectConstruct = importAllResult.useRef(currentState.currentState);
   let closure_9 = importAllResult.useRef(null);
-  const tmp9 = channelId(10849)();
+  const tmp9 = channelId(10876)();
   let items = [channelId, tmp5[2]];
   const callback = importAllResult.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
@@ -129,7 +129,7 @@ const memoResult = importAllResult.memo((disabled) => {
         tmp = tmp2;
       }
       if (!tmp) {
-        tmp = outer1_9.current !== disabled(11018).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND;
+        tmp = outer1_9.current !== disabled(11045).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND;
       }
       if (!tmp) {
         let obj = channelId(3831);
@@ -270,12 +270,12 @@ const memoResult = importAllResult.memo((disabled) => {
   }, items7);
   // CreateGeneratorClosureLongIndex (0x67)
   const obj4 = disabled(3981);
-  const tmp22 = channelId(8429);
+  const tmp22 = channelId(8473);
   let intl = disabled(1212).intl;
-  const tmp23 = sharedValue(8429);
+  const tmp23 = sharedValue(8473);
   const sum = 0.5 * tmp9 + (channelId(1450)().width - tmp9);
   const items8 = [disabled, tmp5[1], tmp3, callback1, sum, callback2, callback3];
-  ({ accessibilityActions, onAccessibilityAction } = tmp22(sharedValue(8429), intl.string(disabled(1212).t.lwy6aX)));
+  ({ accessibilityActions, onAccessibilityAction } = tmp22(sharedValue(8473), intl.string(disabled(1212).t.lwy6aX)));
   const memo = importAllResult.useMemo(() => {
     const Gesture = disabled(tmp3[38]).Gesture;
     const PanResult = Gesture.Pan();
@@ -329,11 +329,11 @@ const memoResult = importAllResult.memo((disabled) => {
     return onUpdateResult.onFinalize(fn3);
   }, items8);
   obj = { gesture: memo };
-  obj1 = { ref: channelId(11364)().tooltipTargetRef };
-  const tmp22Result = tmp22(sharedValue(8429), intl.string(disabled(1212).t.lwy6aX));
+  obj1 = { ref: channelId(11393)().tooltipTargetRef };
+  const tmp22Result = tmp22(sharedValue(8473), intl.string(disabled(1212).t.lwy6aX));
   const tmp27 = jsx;
   const tmp28 = jsx;
-  obj1.IconComponent = disabled(10735).MicrophoneIcon;
+  obj1.IconComponent = disabled(10764).MicrophoneIcon;
   obj1.active = false;
   const intl2 = disabled(1212).intl;
   obj1.accessibilityLabel = intl2.string(disabled(1212).t.lwy6aX);
@@ -345,7 +345,7 @@ const memoResult = importAllResult.memo((disabled) => {
     tmp30 = clientThemesOverride;
   }
   obj1.style = tmp30;
-  obj.children = tmp28(channelId(11345), obj1);
+  obj.children = tmp28(channelId(11374), obj1);
   return tmp27(disabled(5217).GestureDetector, obj);
 });
 let result = require("result").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageButton.tsx");

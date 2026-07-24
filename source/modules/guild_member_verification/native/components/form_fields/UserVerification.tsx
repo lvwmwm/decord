@@ -1,10 +1,10 @@
-// Module ID: 9179
-// Function ID: 71899
+// Module ID: 9215
+// Function ID: 72108
 // Name: UserVerification
-// Dependencies: [31, 33, 4130, 3950, 9180, 4126, 1212, 2]
+// Dependencies: [31, 33, 4130, 3950, 9216, 4126, 1212, 2]
 // Exports: default
 
-// Module 9179 (UserVerification)
+// Module 9215 (UserVerification)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,12 +29,12 @@ export default function UserVerification(arg0) {
     let tmp7 = platform === require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE;
     if (tmp7) {
       obj = { passesVerification: verification[require(undefined, 3950) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE], platform: require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE };
-      tmp7 = callback(importDefault(9180), obj);
-      const tmp5 = importDefault(9180);
+      tmp7 = callback(importDefault(9216), obj);
+      const tmp5 = importDefault(9216);
     }
     const items = [tmp7, , ];
     obj = { passesVerification: verification[require(undefined, 3950) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL], platform: require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL };
-    items[1] = callback(importDefault(9180), obj);
+    items[1] = callback(importDefault(9216), obj);
     const obj1 = { style: tmp.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default" };
     if (platform === require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = require(1212) /* getSystemLocale */.intl;

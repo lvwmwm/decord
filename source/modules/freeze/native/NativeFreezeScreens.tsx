@@ -1,10 +1,10 @@
-// Module ID: 14892
-// Function ID: 113547
+// Module ID: 14939
+// Function ID: 113868
 // Name: NativeFreezeScreens
 // Dependencies: [57, 31, 27, 33, 44, 4478, 4130, 2]
 // Exports: NativeFreezeScreens
 
-// Module 14892 (NativeFreezeScreens)
+// Module 14939 (NativeFreezeScreens)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";

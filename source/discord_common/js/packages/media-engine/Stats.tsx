@@ -1,5 +1,5 @@
 // Module ID: 4236
-// Function ID: 37139
+// Function ID: 37140
 // Name: STATS_INTERVAL
 // Dependencies: [2]
 

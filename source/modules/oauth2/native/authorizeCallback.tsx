@@ -1,10 +1,10 @@
-// Module ID: 10833
-// Function ID: 84099
+// Module ID: 10862
+// Function ID: 84291
 // Name: authorizeCallback
-// Dependencies: [10621, 4337, 8965, 1934, 1443, 10834, 4096, 668, 3827, 2]
+// Dependencies: [10650, 4337, 9004, 1934, 1443, 10863, 4096, 668, 3827, 2]
 // Exports: default
 
-// Module 10833 (authorizeCallback)
+// Module 10862 (authorizeCallback)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
 let closure_3;
@@ -33,7 +33,7 @@ export default function authorizeCallback(arg0) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
             let obj = { application: tmp, guild: tmp2 };
-            importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(10834, dependencyMap.paths), obj, closure_3);
+            importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(10863, dependencyMap.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               obj = {};
@@ -57,8 +57,8 @@ export default function authorizeCallback(arg0) {
                 str = str1;
               }
               obj.error = str;
-              obj7.pushLazy(require(1934) /* maybeLoadBundle */(8965, dependencyMap.paths), obj, closure_4);
-              const tmp25 = require(1934) /* maybeLoadBundle */(8965, dependencyMap.paths);
+              obj7.pushLazy(require(1934) /* maybeLoadBundle */(9004, dependencyMap.paths), obj, closure_4);
+              const tmp25 = require(1934) /* maybeLoadBundle */(9004, dependencyMap.paths);
             }
           }
         }
@@ -79,6 +79,6 @@ export default function authorizeCallback(arg0) {
     const obj6 = importDefault(3827);
   } else if (!canceled) {
     obj = importDefault(4337);
-    obj.pushLazy(require(1934) /* maybeLoadBundle */(8965, dependencyMap.paths), undefined, closure_4);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(9004, dependencyMap.paths), undefined, closure_4);
   }
 };

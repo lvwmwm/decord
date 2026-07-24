@@ -1,8 +1,8 @@
-// Module ID: 14672
-// Function ID: 111830
-// Dependencies: [31, 33, 9113, 5519, 9122, 10161, 14673, 2]
+// Module ID: 14719
+// Function ID: 112151
+// Dependencies: [31, 33, 9149, 5517, 9158, 10191, 14720, 2]
 
-// Module 14672
+// Module 14719
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "result";
@@ -12,7 +12,7 @@ createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigat
 const memoResult = require("result").memo(function DevToolsGuildPowerupsModal() {
   let Navigator;
   let Screen;
-  let obj = _require(5519);
+  let obj = _require(5517);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {
@@ -38,15 +38,15 @@ const memoResult = require("result").memo(function DevToolsGuildPowerupsModal() 
     options() {
       return { title: "Guild Powerups" };
     },
-    component: importDefault(14673)
+    component: importDefault(14720)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
   obj.children = <Screen name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(14673)} />;
+  }} component={importDefault(14720)} />;
   return <Navigator name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(14673)} />;
+  }} component={importDefault(14720)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsModal.tsx");
 

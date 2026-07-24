@@ -1,10 +1,10 @@
-// Module ID: 11299
-// Function ID: 87911
+// Module ID: 11328
+// Function ID: 88151
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [31, 33, 4130, 689, 11292, 7495, 4126, 1273, 5173, 2]
+// Dependencies: [31, 33, 4130, 689, 11321, 7636, 4126, 1273, 5173, 2]
 // Exports: default
 
-// Module 11299 (AppLauncherSelectOptionFormRow)
+// Module 11328 (AppLauncherSelectOptionFormRow)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   ({ style, option, autoFocus } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  let obj1 = require(11292) /* useAnimationDelayedAutoFocus */;
+  let obj1 = require(11321) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
   obj = { start: true, end: true };
   const items = [_createForOfIteratorHelperLoose().formRow, style];
@@ -65,5 +65,5 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   obj1 = { source: unselectedSubLabel(5173), size: require(1273) /* Button */.IconSizes.SMALL_20 };
   obj.trailing = jsx(require(1273) /* Button */.Icon, { source: unselectedSubLabel(5173), size: require(1273) /* Button */.IconSizes.SMALL_20 });
   const merged1 = Object.assign(merged);
-  return jsx(require(7495) /* Form */.FormRow, {});
+  return jsx(require(7636) /* Form */.FormRow, {});
 };

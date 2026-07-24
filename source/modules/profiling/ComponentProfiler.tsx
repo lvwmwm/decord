@@ -1,10 +1,10 @@
-// Module ID: 10330
-// Function ID: 79731
+// Module ID: 10359
+// Function ID: 79922
 // Name: formatString
 // Dependencies: [6, 7, 31, 33, 2]
 // Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 10330 (formatString)
+// Module 10359 (formatString)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import result from "result";

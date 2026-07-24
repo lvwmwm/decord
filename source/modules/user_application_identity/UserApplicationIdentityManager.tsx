@@ -1,9 +1,9 @@
-// Module ID: 16578
-// Function ID: 129311
+// Module ID: 16625
+// Function ID: 129635
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 12096, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 12122, 5078, 2]
 
-// Module 16578 (_isNativeReflectConstruct)
+// Module 16625 (_isNativeReflectConstruct)
 import set from "set";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -22,7 +22,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleUserApplicationIdentityGatewayEvent(user_id) {
-  const useUserApplicationIdentities = require(12096) /* fetchStore */.useUserApplicationIdentities;
+  const useUserApplicationIdentities = require(12122) /* fetchStore */.useUserApplicationIdentities;
   useUserApplicationIdentities.refetch(user_id.user_id);
 }
 tmp2 = new tmp2();

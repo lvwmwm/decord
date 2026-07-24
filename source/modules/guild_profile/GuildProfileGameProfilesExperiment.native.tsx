@@ -1,10 +1,10 @@
-// Module ID: 11881
-// Function ID: 91952
+// Module ID: 11908
+// Function ID: 92190
 // Name: useGuildProfileGameProfilesExperiment
 // Dependencies: [1428, 2]
 // Exports: useGuildProfileGameProfilesExperiment
 
-// Module 11881 (useGuildProfileGameProfilesExperiment)
+// Module 11908 (useGuildProfileGameProfilesExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-server-tag-game-profiles-mobile", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

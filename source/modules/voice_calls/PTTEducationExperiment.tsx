@@ -1,9 +1,9 @@
-// Module ID: 12764
-// Function ID: 99466
+// Module ID: 12815
+// Function ID: 99787
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12764 (apexExperiment)
+// Module 12815 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { showPTTJoinTooltip: false, showPTTIconIndicator: false, showPTTNoKeybindWarning: false, showPTTSpeakingIndicator: false };

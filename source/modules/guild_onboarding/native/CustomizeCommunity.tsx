@@ -1,10 +1,10 @@
-// Module ID: 9971
-// Function ID: 77008
+// Module ID: 10003
+// Function ID: 77202
 // Name: EmptyCustomizeCommunity
-// Dependencies: [31, 27, 4991, 1838, 4142, 3947, 5058, 5059, 653, 1852, 4326, 33, 4130, 689, 5052, 3840, 4066, 566, 9972, 9973, 1273, 1212, 4126, 5065, 5146, 5462, 5484, 1557, 9974, 5057, 5069, 5063, 5151, 1392, 1327, 3834, 3991, 4131, 9975, 4098, 5156, 1934, 4660, 5452, 5147, 2]
+// Dependencies: [31, 27, 4991, 1838, 4142, 3947, 5058, 5059, 653, 1852, 4326, 33, 4130, 689, 5052, 3840, 4066, 566, 10004, 10005, 1273, 1212, 4126, 5065, 5146, 5460, 5482, 1557, 10006, 5057, 5069, 5063, 5151, 1392, 1327, 3834, 3991, 4131, 10007, 4098, 5156, 1934, 4660, 5452, 5147, 2]
 // Exports: default
 
-// Module 9971 (EmptyCustomizeCommunity)
+// Module 10003 (EmptyCustomizeCommunity)
 import _updateOnboardingResponses from "_updateOnboardingResponses";
 import get_ActivityIndicator from "useSafeAreaInsets";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,9 +38,9 @@ function EmptyCustomizeCommunity(setTab) {
   obj = { style: tmp.emptyContainer };
   obj = { style: tmp.emptyContainerImage };
   if (isThemeDarkResult) {
-    let tmp9 = 9972;
+    let tmp9 = 10004;
   } else {
-    tmp9 = 9973;
+    tmp9 = 10005;
   }
   obj.source = importDefault(tmp9);
   const items1 = [callback(closure_5, obj), , ];
@@ -492,7 +492,7 @@ export default function CustomizeCommunity(guildId) {
     }
     return prop;
   });
-  let tmp4 = stateFromStores(9974)(guildId);
+  let tmp4 = stateFromStores(10006)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp4);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp4);

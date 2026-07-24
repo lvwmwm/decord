@@ -1,10 +1,10 @@
-// Module ID: 8240
-// Function ID: 65061
+// Module ID: 8284
+// Function ID: 65289
 // Name: useUserProfileColors
-// Dependencies: [4122, 482, 4066, 5486, 566, 1324, 3834, 689, 7893, 665, 2]
+// Dependencies: [4122, 482, 4066, 5484, 566, 1324, 3834, 689, 7980, 665, 2]
 // Exports: useUserProfileColors
 
-// Module 8240 (useUserProfileColors)
+// Module 8284 (useUserProfileColors)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ThemeTypes } from "sum";
 
@@ -19,7 +19,7 @@ export const useUserProfileColors = function useUserProfileColors(arg0) {
   let theme;
   ({ theme, primaryColor, secondaryColor } = arg0);
   const tmp = importDefault(4066)();
-  let obj = require(5486) /* useProfileThemeValues */;
+  let obj = require(5484) /* useProfileThemeValues */;
   const profileThemeValues = obj.useProfileThemeValues(theme);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.syncProfileThemeWithUserTheme);
@@ -55,18 +55,18 @@ export const useUserProfileColors = function useUserProfileColors(arg0) {
         if (stateFromStores) {
           tmp5 = overlaySyncedWithUserTheme;
         }
-        const result = require(7893) /* getProfileTheme */.calculateOverlayedColor(primaryColor, tmp5);
+        const result = require(7980) /* getProfileTheme */.calculateOverlayedColor(primaryColor, tmp5);
         obj = {};
         const merged = Object.assign(obj);
         obj["containerBackground"] = OPACITY_WHITE_24;
-        const obj17 = require(7893) /* getProfileTheme */;
+        const obj17 = require(7980) /* getProfileTheme */;
         const obj12 = require(665) /* pad2 */;
-        obj["gradientSecondaryBackground"] = obj12.int2hex(require(7893) /* getProfileTheme */.calculateOverlayedColor(secondaryColor, overlay));
-        const obj13 = require(7893) /* getProfileTheme */;
+        obj["gradientSecondaryBackground"] = obj12.int2hex(require(7980) /* getProfileTheme */.calculateOverlayedColor(secondaryColor, overlay));
+        const obj13 = require(7980) /* getProfileTheme */;
         obj["avatarBackground"] = require(665) /* pad2 */.int2hex(result);
         const obj14 = require(665) /* pad2 */;
         const obj15 = require(665) /* pad2 */;
-        obj["statusBackground"] = obj15.int2hex(require(7893) /* getProfileTheme */.calculateOverlayedColor(result, sectionBox));
+        obj["statusBackground"] = obj15.int2hex(require(7980) /* getProfileTheme */.calculateOverlayedColor(result, sectionBox));
         return obj;
       }
     }

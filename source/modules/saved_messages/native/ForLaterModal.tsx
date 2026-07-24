@@ -1,10 +1,10 @@
-// Module ID: 9915
-// Function ID: 76694
+// Module ID: 9947
+// Function ID: 76888
 // Name: ForLaterModal
-// Dependencies: [31, 27, 33, 4130, 689, 1212, 9533, 5094, 9122, 477, 5087, 4337, 9916, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 9569, 5094, 9158, 477, 5087, 4337, 9948, 2]
 // Exports: default
 
-// Module 9915 (ForLaterModal)
+// Module 9947 (ForLaterModal)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export default function ForLaterModal(type) {
   let _require;
   const tmp = _createForOfIteratorHelperLoose();
   const intl = _require(1212).intl;
-  if (type === _require(9533).SavedMessageSortTypes.REMINDER) {
+  if (type === _require(9569).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   const stringResult = intl.string(_2pAkDA);
@@ -54,7 +54,7 @@ export default function ForLaterModal(type) {
   const obj1 = { type };
   const obj5 = _require(5087);
   obj1.onClose = importDefault(4337).pop;
-  items[1] = callback(importDefault(9916), obj1, type);
+  items[1] = callback(importDefault(9948), obj1, type);
   obj.children = items;
   return tmp7(View, obj);
 };

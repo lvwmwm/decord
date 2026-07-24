@@ -1,10 +1,10 @@
-// Module ID: 8416
-// Function ID: 67033
+// Module ID: 8460
+// Function ID: 67261
 // Name: CreateChannelTypeDescription
-// Dependencies: [31, 27, 8417, 653, 33, 8418, 5132, 4126, 1212, 2]
+// Dependencies: [31, 27, 8461, 653, 33, 8462, 5132, 4126, 1212, 2]
 // Exports: default
 
-// Module 8416 (CreateChannelTypeDescription)
+// Module 8460 (CreateChannelTypeDescription)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ export default function CreateChannelTypeDescription(guildId) {
   let fetchGuildProfile;
   let guildProfile;
   guildId = guildId.guildId;
-  let obj = fetchGuildProfile(8418);
+  let obj = fetchGuildProfile(8462);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
   let hasItem = null != guildProfile;

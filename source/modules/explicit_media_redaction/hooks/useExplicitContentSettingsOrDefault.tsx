@@ -1,10 +1,10 @@
-// Module ID: 13723
-// Function ID: 105260
+// Module ID: 13774
+// Function ID: 105584
 // Name: useExplicitContentSettingOrDefault
 // Dependencies: [1316, 624, 5676, 5678, 2]
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 13723 (useExplicitContentSettingOrDefault)
+// Module 13774 (useExplicitContentSettingOrDefault)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

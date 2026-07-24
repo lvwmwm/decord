@@ -1,9 +1,9 @@
-// Module ID: 8439
-// Function ID: 67274
+// Module ID: 8483
+// Function ID: 67502
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1388, 8417, 1352, 1391, 7464, 1857, 1838, 1849, 653, 8440, 7722, 21, 8441, 507, 686, 8443, 1387, 8444, 3712, 8445, 22, 587, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1388, 8461, 1352, 1391, 7544, 1857, 1838, 1849, 653, 8484, 7811, 21, 8485, 507, 686, 8487, 1387, 8488, 3712, 8489, 22, 587, 566, 2]
 
-// Module 8439 (_isNativeReflectConstruct)
+// Module 8483 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_5 from "PUBLIC_SUCCESS_MODAL_SEEN_KEY";
@@ -79,7 +79,7 @@ function handleFormInit(location) {
     let closure_48 = {};
     location = location.location;
     if (section === constants.TAG) {
-      obj = require(8441) /* canUseMobileServerTagSettings */;
+      obj = require(8485) /* canUseMobileServerTagSettings */;
       if (!obj.canUseMobileServerTagSettings(guildId)) {
         let obj2;
       }
@@ -156,8 +156,8 @@ function handleIntegrationsUpdate(type) {
       tmp4 = type.guildId === user.id;
     }
     if (tmp4) {
-      const guildIntegrationsApplications = require(8445) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
-      const obj = require(8445) /* _fetchGuildIntegrationsApplications */;
+      const guildIntegrationsApplications = require(8489) /* _fetchGuildIntegrationsApplications */.fetchGuildIntegrationsApplications(user.id);
+      const obj = require(8489) /* _fetchGuildIntegrationsApplications */;
     }
     tmp = tmp4;
   }
@@ -513,8 +513,8 @@ obj = {
   GUILD_SETTINGS_SUBMIT_FAILURE: function handleFormSubmitFailure(errors) {
     const OPEN = FormStates.OPEN;
     if (null == defaultGuildSettingsSection) {
-      defaultGuildSettingsSection = require(8444) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
-      const obj = require(8444) /* getDefaultGuildSettingsSection */;
+      defaultGuildSettingsSection = require(8488) /* getDefaultGuildSettingsSection */.getDefaultGuildSettingsSection();
+      const obj = require(8488) /* getDefaultGuildSettingsSection */;
     }
     let c26 = null;
     errors = errors.errors;
@@ -536,7 +536,7 @@ obj = {
               if (closure_25 === constants.MEMBERS) {
                 let c32 = getGuildEveryoneRoleId(user);
               } else if (closure_25 === constants.VANITY_URL) {
-                let obj = require(8443) /* fetchVanityUrl */;
+                let obj = require(8487) /* fetchVanityUrl */;
                 const vanityUrl = obj.fetchVanityUrl(user.id);
               } else if (closure_25 === constants.SAFETY) {
                 obj = { type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION" };
@@ -786,9 +786,9 @@ obj = {
     }
     let tmp2 = profile.id === id;
     if (tmp2) {
-      const tmp7 = !require(8441) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
+      const tmp7 = !require(8485) /* canUseMobileServerTagSettings */.isServerTagDraftDirty(profile, profile);
       tmp2 = tmp7;
-      const obj = require(8441) /* canUseMobileServerTagSettings */;
+      const obj = require(8485) /* canUseMobileServerTagSettings */;
     }
     return tmp2;
   },

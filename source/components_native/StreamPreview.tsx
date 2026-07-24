@@ -1,10 +1,10 @@
-// Module ID: 10786
-// Function ID: 83780
+// Module ID: 10815
+// Function ID: 83972
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 33, 4130, 689, 3976, 10787, 10788, 3842, 1212, 4660, 10789, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 33, 4130, 689, 3976, 10816, 10817, 3842, 1212, 4660, 10818, 566, 2]
 // Exports: default
 
-// Module 10786 (_callSuper)
+// Module 10815 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
@@ -192,7 +192,7 @@ export default function ConnectedStreamPreview(stream) {
   let ownerId;
   let previewUrl;
   ({ guildId, channelId, ownerId } = stream.stream);
-  ({ previewUrl, isLoading } = importDefault(10789)(guildId, channelId, ownerId));
+  ({ previewUrl, isLoading } = importDefault(10818)(guildId, channelId, ownerId));
   let obj = require(566) /* initialize */;
   const items = [closure_10];
   obj = {};

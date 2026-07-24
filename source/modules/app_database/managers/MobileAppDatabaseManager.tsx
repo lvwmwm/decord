@@ -1,14 +1,14 @@
-// Module ID: 6887
-// Function ID: 54633
+// Module ID: 6886
+// Function ID: 54641
 // Name: appDatabaseManager
-// Dependencies: [6888, 6890, 6891, 4997, 6893, 6894, 6895, 5038, 6896, 6897, 6709, 6898, 6899, 6722, 6721, 6723, 6900, 2]
+// Dependencies: [6887, 6889, 6890, 4997, 6892, 6893, 6894, 5038, 6895, 6896, 6709, 6897, 6898, 6722, 6721, 6723, 6899, 2]
 
-// Module 6887 (appDatabaseManager)
+// Module 6886 (appDatabaseManager)
 let obj = {
   name: "Channels",
   actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_RECIPIENT_ADD", "CHANNEL_RECIPIENT_REMOVE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "CONNECTION_OPEN_SUPPLEMENTAL", "GUILD_CREATE", "GUILD_DELETE"],
   require() {
-    return require(6890) /* _createForOfIteratorHelperLoose */.default;
+    return require(6889) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 const items = [obj, , , , , , , , , , , , , , , ];
@@ -16,7 +16,7 @@ obj = {
   name: "GuildBasicChannels",
   actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE", "POST_CONNECTION_OPEN", "WRITE_CACHES"],
   require() {
-    return require(6891) /* _createForOfIteratorHelperLoose */.default;
+    return require(6890) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[1] = obj;
@@ -32,21 +32,21 @@ items[3] = {
   name: "Guilds",
   actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_CREATE", "GUILD_ROLE_DELETE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE"],
   require() {
-    return require(6893) /* _createForOfIteratorHelperLoose */.default;
+    return require(6892) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[4] = {
   name: "GuildsRequiringDeletedIdsSync",
   actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "DELETED_ENTITY_IDS"],
   require() {
-    return require(6894) /* GuildsRequiringDeletedIdsSync */.default;
+    return require(6893) /* GuildsRequiringDeletedIdsSync */.default;
   }
 };
 items[5] = {
   name: "GuildsRequiringChannelSync",
   actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "CHANNEL_SYNC", "UNMARK_RESYNC_GUILDS"],
   require() {
-    return require(6895) /* _createForOfIteratorHelperLoose */.default;
+    return require(6894) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[6] = {
@@ -60,14 +60,14 @@ items[7] = {
   name: "GuildVersions",
   actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_EMOJIS_UPDATE", "GUILD_ROLE_CREATE", "GUILD_ROLE_DELETE", "GUILD_ROLE_UPDATE", "GUILD_STICKERS_UPDATE", "GUILD_UPDATE"],
   require() {
-    return require(6896) /* _createForOfIteratorHelperLoose */.default;
+    return require(6895) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[8] = {
   name: "KvCacheVersion",
   actions: ["CONNECTION_OPEN", "WRITE_CACHES", "BACKGROUND_SYNC"],
   require() {
-    return require(6897) /* KvCacheVersion */.default;
+    return require(6896) /* KvCacheVersion */.default;
   }
 };
 items[9] = {
@@ -81,14 +81,14 @@ items[10] = {
   name: "LowDiskTrim",
   actions: ["POST_CONNECTION_OPEN"],
   require() {
-    return require(6898) /* LowDiskTrim */.default;
+    return require(6897) /* LowDiskTrim */.default;
   }
 };
 items[11] = {
   name: "NonGuildVersions",
   actions: ["CONNECTION_OPEN", "BACKGROUND_SYNC"],
   require() {
-    return require(6899) /* NonGuildVersions */.default;
+    return require(6898) /* NonGuildVersions */.default;
   }
 };
 items[12] = {
@@ -116,7 +116,7 @@ items[15] = {
   name: "UserSearchItems",
   actions: ["POST_CONNECTION_OPEN", "WRITE_CACHES"],
   require() {
-    return require(6900) /* _createForOfIteratorHelperLoose */.default;
+    return require(6899) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 const appDatabaseManager = new require("_createForOfIteratorHelperLoose").AppDatabaseManager("MobileAppDatabaseManager", [], items);

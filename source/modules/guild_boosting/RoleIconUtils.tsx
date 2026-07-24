@@ -1,10 +1,10 @@
-// Module ID: 5489
-// Function ID: 46851
+// Module ID: 5487
+// Function ID: 46848
 // Name: getRoleIconSource
 // Dependencies: [653, 477, 3771, 1426, 1392, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 5489 (getRoleIconSource)
+// Module 5487 (getRoleIconSource)
 import ME from "ME";
 import set from "set";
 import set from "_createForOfIteratorHelperLoose";

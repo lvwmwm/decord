@@ -1,9 +1,9 @@
-// Module ID: 12759
-// Function ID: 99458
+// Module ID: 12810
+// Function ID: 99779
 // Name: DEFAULT_ROOM_SIZE
 // Dependencies: [2]
 
-// Module 12759 (DEFAULT_ROOM_SIZE)
+// Module 12810 (DEFAULT_ROOM_SIZE)
 const result = require("set").fileFinishedImporting("modules/spatial_audio/SpatialAudioConstants.tsx");
 
 export const DEFAULT_ROOM_SIZE = 25;

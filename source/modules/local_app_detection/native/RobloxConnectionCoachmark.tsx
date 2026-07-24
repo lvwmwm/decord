@@ -1,10 +1,10 @@
-// Module ID: 15612
-// Function ID: 120408
+// Module ID: 15659
+// Function ID: 120730
 // Name: RobloxIcon
-// Dependencies: [57, 31, 27, 4812, 1849, 12634, 653, 1345, 33, 4130, 689, 3842, 1557, 4098, 5187, 5186, 5501, 4541, 4126, 1212, 4543, 10157, 8970, 5796, 3840, 4814, 1392, 1273, 8018, 566, 12635, 4938, 3946, 1334, 2]
+// Dependencies: [57, 31, 27, 4812, 1849, 12685, 653, 1345, 33, 4130, 689, 3842, 1557, 4098, 5187, 5186, 5499, 4541, 4126, 1212, 4543, 10189, 9009, 5796, 3840, 4814, 1392, 1273, 8063, 566, 12686, 4938, 3946, 1334, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 15612 (RobloxIcon)
+// Module 15659 (RobloxIcon)
 import _slicedToArray from "_slicedToArray";
 import callback from "callback";
 import { View } from "Button";
@@ -111,7 +111,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   let obj = markAsDismissed(3842);
   const theme = obj.useThemeContext().theme;
   obj = { startExpanded: true, contentStyles: tmp.content };
-  obj = { title: null, leading: callback(markAsDismissed(5501).ActionSheetCloseButton, { onPress: handleCancel }) };
+  obj = { title: null, leading: callback(markAsDismissed(5499).ActionSheetCloseButton, { onPress: handleCancel }) };
   obj.header = callback(markAsDismissed(5186).BottomSheetTitleHeader, obj);
   obj.onDismiss = function onDismiss() {
     return markAsDismissed(outer1_12.DISMISS);
@@ -137,7 +137,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   const intl3 = markAsDismissed(1212).intl;
   obj7.text = intl3.string(markAsDismissed(1212).t.ItuabN);
   const obj8 = { size: "sm", color: importDefault(689).colors.WHITE };
-  obj7.icon = callback(markAsDismissed(10157).WindowLaunchIcon, obj8);
+  obj7.icon = callback(markAsDismissed(10189).WindowLaunchIcon, obj8);
   obj7.iconPosition = "end";
   obj7.size = "lg";
   obj7.onPress = function onPress() {
@@ -166,7 +166,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
 export { UnionIcon };
 export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobloxConnectionCoachmark() {
   const items = [closure_8];
-  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_8.isAppInstalled(stateFromStores(12635).DetectableAppNames.ROBLOX));
+  stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_8.isAppInstalled(stateFromStores(12686).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(React.useState(false), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];

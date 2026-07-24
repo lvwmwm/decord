@@ -1,9 +1,9 @@
-// Module ID: 5621
-// Function ID: 47951
+// Module ID: 5619
+// Function ID: 47948
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5622, 482, 5618, 3791, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5620, 482, 5616, 3791, 566, 686, 2]
 
-// Module 5621 (_isNativeReflectConstruct)
+// Module 5619 (_isNativeReflectConstruct)
 import sum from "sum";
 import formatSingleCurrencyPrice from "formatSingleCurrencyPrice";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -29,8 +29,8 @@ function updateProduct(currencyCode) {
   if ("BG" === c19) {
     if (formatted === CurrencyCodes.EUR) {
       let obj = { convertToMajorUnits: false };
-      let formatDualPriceForBGResult = require(5618) /* formatSingleCurrencyPrice */.formatDualPriceForBG(result, obj);
-      const obj2 = require(5618) /* formatSingleCurrencyPrice */;
+      let formatDualPriceForBGResult = require(5616) /* formatSingleCurrencyPrice */.formatDualPriceForBG(result, obj);
+      const obj2 = require(5616) /* formatSingleCurrencyPrice */;
     }
     obj = {};
     const merged = Object.assign(currencyCode);
@@ -39,7 +39,7 @@ function updateProduct(currencyCode) {
     obj["priceString"] = formatDualPriceForBGResult;
     return obj;
   }
-  obj = require(5618) /* formatSingleCurrencyPrice */;
+  obj = require(5616) /* formatSingleCurrencyPrice */;
   formatDualPriceForBGResult = obj.formatSingleCurrencyPrice(result, formatted, { convertToMajorUnits: false });
 }
 function skusLoaded(arg0) {

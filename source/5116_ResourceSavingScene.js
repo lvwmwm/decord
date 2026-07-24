@@ -1,5 +1,5 @@
 // Module ID: 5116
-// Function ID: 44389
+// Function ID: 44394
 // Name: ResourceSavingScene
 // Dependencies: [29, 31, 27, 33]
 // Exports: default

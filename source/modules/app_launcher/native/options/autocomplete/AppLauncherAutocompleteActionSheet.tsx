@@ -1,10 +1,10 @@
-// Module ID: 11294
-// Function ID: 87870
+// Module ID: 11323
+// Function ID: 88110
 // Name: Item
-// Dependencies: [57, 31, 27, 7021, 1838, 653, 4566, 33, 22, 8184, 4130, 689, 624, 4098, 11289, 11290, 1212, 44, 5165, 4329, 4126, 1273, 11291, 2]
+// Dependencies: [57, 31, 27, 7020, 1838, 653, 4566, 33, 22, 8228, 4130, 689, 624, 4098, 11318, 11319, 1212, 44, 5165, 4329, 4126, 1273, 11320, 2]
 // Exports: default
 
-// Module 11294 (Item)
+// Module 11323 (Item)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -134,7 +134,7 @@ function Item(arg0) {
   }).exhaustive();
 }
 function AutocompleteFailedEmptyState() {
-  const obj = { style: callback2().emptyState, lightSource: importDefault(11291), darkSource: importDefault(11291) };
+  const obj = { style: callback2().emptyState, lightSource: importDefault(11320), darkSource: importDefault(11320) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.rTAbPn);
   return callback(require(1273) /* Button */.EmptyState, obj);

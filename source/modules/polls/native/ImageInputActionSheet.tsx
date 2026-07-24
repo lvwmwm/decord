@@ -1,10 +1,10 @@
-// Module ID: 11333
-// Function ID: 88163
+// Module ID: 11362
+// Function ID: 88403
 // Name: ImageInputAnswerActionSheet
-// Dependencies: [31, 27, 7071, 33, 4130, 689, 11332, 3989, 4098, 5500, 4126, 1273, 5502, 1212, 11334, 2]
+// Dependencies: [31, 27, 7070, 33, 4130, 689, 11361, 3989, 4098, 5498, 4126, 1273, 5500, 1212, 11363, 2]
 // Exports: default
 
-// Module 11333 (ImageInputAnswerActionSheet)
+// Module 11362 (ImageInputAnswerActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY as closure_5 } from "POLL_ATTACHMENT_FOLDER";

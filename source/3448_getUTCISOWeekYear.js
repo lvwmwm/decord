@@ -1,5 +1,5 @@
 // Module ID: 3448
-// Function ID: 26768
+// Function ID: 26769
 // Name: getUTCISOWeekYear
 // Dependencies: [3209, 3210, 3446]
 // Exports: default

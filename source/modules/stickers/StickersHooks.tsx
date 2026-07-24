@@ -1,10 +1,10 @@
-// Module ID: 9600
-// Function ID: 74747
+// Module ID: 9636
+// Function ID: 74958
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 1838, 3947, 4970, 1849, 5034, 5035, 653, 566, 9601, 3803, 4466, 8402, 4799, 4022, 1212, 3763, 9584, 5732, 2]
+// Dependencies: [5, 57, 31, 1838, 3947, 4970, 1849, 5034, 5035, 653, 566, 9637, 3803, 4466, 8446, 4799, 4022, 1212, 3763, 9620, 5732, 2]
 // Exports: useFetchStickerPack, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 9600 (_createForOfIteratorHelperLoose)
+// Module 9636 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -103,7 +103,7 @@ function useFetchStickerPacks() {
 }
 function useFavoriteStickerIds() {
   let stickerIds;
-  const favoriteStickers = require(9584) /* useFrecencySettings */.useFrecencySettings().favoriteStickers;
+  const favoriteStickers = require(9620) /* useFrecencySettings */.useFrecencySettings().favoriteStickers;
   if (null != favoriteStickers) {
     stickerIds = favoriteStickers.stickerIds;
   }
@@ -135,7 +135,7 @@ function useFavoriteStickers() {
   }, items1);
 }
 function useLatestFrecentStickerIds() {
-  const frecencySettings = require(9584) /* useFrecencySettings */.useFrecencySettings();
+  const frecencySettings = require(9620) /* useFrecencySettings */.useFrecencySettings();
   let keys = closure_13;
   let stickers;
   if (null != frecencySettings) {

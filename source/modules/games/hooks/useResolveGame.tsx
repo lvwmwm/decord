@@ -1,10 +1,10 @@
-// Module ID: 8593
-// Function ID: 68210
+// Module ID: 8635
+// Function ID: 68432
 // Name: useResolveGame
-// Dependencies: [31, 5470, 6865, 2]
+// Dependencies: [31, 5468, 6864, 2]
 // Exports: default
 
-// Module 8593 (useResolveGame)
+// Module 8635 (useResolveGame)
 import result from "result";
 
 const require = arg1;

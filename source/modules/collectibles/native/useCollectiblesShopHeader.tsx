@@ -1,10 +1,10 @@
-// Module ID: 14503
-// Function ID: 110731
+// Module ID: 14553
+// Function ID: 111054
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [31, 27, 1849, 655, 653, 4976, 8264, 33, 4130, 689, 11261, 4126, 1212, 566, 8723, 6773, 5484, 5154, 4098, 9798, 1934, 675, 10919, 4979, 4337, 8492, 9786, 7771, 8674, 9302, 14504, 1456, 2]
+// Dependencies: [31, 27, 1849, 655, 653, 4976, 8308, 33, 4130, 689, 11290, 4126, 1212, 566, 8764, 6773, 5482, 5154, 4098, 9830, 1934, 675, 10946, 4979, 4337, 8537, 9818, 7533, 8715, 9338, 14554, 1456, 2]
 // Exports: default
 
-// Module 14503 (CollectiblesShopHeaderTitle)
+// Module 14553 (CollectiblesShopHeaderTitle)
 import useNavigation from "useNavigation";
 import { View } from "IconButton";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ const require = arg1;
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.headerTitleContainer };
-  const items = [callback(require(11261) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(11290) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = require(1212) /* getSystemLocale */.intl;

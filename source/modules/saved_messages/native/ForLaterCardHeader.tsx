@@ -1,10 +1,10 @@
-// Module ID: 9929
-// Function ID: 76795
+// Module ID: 9961
+// Function ID: 76989
 // Name: HeaderIcon
-// Dependencies: [27, 1838, 33, 4130, 689, 5514, 566, 5515, 9096, 1273, 4629, 4320, 4593, 1212, 4126, 2]
+// Dependencies: [27, 1838, 33, 4130, 689, 5512, 566, 5513, 9134, 1273, 4629, 4320, 4593, 1212, 4126, 2]
 // Exports: ForLaterCardHeader
 
-// Module 9929 (HeaderIcon)
+// Module 9961 (HeaderIcon)
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import jsxProd from "jsxProd";
@@ -18,15 +18,15 @@ function HeaderIcon(channel) {
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
   if (null != stateFromStores) {
-    obj = { guild: stateFromStores, size: channel(5515).GuildIconSizes.XSMALL };
-    let tmp8 = callback(importDefault(5515), obj);
-    const tmp17 = importDefault(5515);
+    obj = { guild: stateFromStores, size: channel(5513).GuildIconSizes.XSMALL };
+    let tmp8 = callback(importDefault(5513), obj);
+    const tmp17 = importDefault(5513);
   } else {
     if (null != channel) {
       if (channel.isGroupDM()) {
         obj = { channel, size: channel(1273).AvatarSizes.XSMALL };
-        tmp8 = callback(importDefault(9096), obj);
-        const tmp12 = importDefault(9096);
+        tmp8 = callback(importDefault(9134), obj);
+        const tmp12 = importDefault(9134);
       }
     }
     const obj1 = { style: tmp.dmIcon };
@@ -86,7 +86,7 @@ export const ForLaterCardHeader = function ForLaterCardHeader(channel) {
   let tmp4 = null;
   if (!channel.isPrivate()) {
     obj = { size: "xxs" };
-    tmp4 = callback(require(5514) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj);
+    tmp4 = callback(require(5512) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj);
   }
   items[1] = tmp4;
   items[2] = callback(ChannelName, { channel });

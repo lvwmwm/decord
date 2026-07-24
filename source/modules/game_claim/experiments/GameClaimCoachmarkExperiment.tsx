@@ -1,10 +1,10 @@
-// Module ID: 15086
-// Function ID: 114790
+// Module ID: 15133
+// Function ID: 115111
 // Name: items
 // Dependencies: [4042, 2]
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 15086 (items)
+// Module 15133 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-02_game_claim_coachmark", label: "Game Claim Coachmark", defaultConfig: { enabled: false } };

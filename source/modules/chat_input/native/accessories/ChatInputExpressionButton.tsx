@@ -1,8 +1,8 @@
-// Module ID: 11297
-// Function ID: 87899
-// Dependencies: [31, 33, 4130, 689, 1324, 3834, 4660, 1212, 1273, 9856, 8008, 2]
+// Module ID: 11326
+// Function ID: 88139
+// Dependencies: [31, 33, 4130, 689, 1324, 3834, 4660, 1212, 1273, 9888, 7438, 2]
 
-// Module 11297
+// Module 11326
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -81,9 +81,9 @@ const memoResult = importAllResult.memo((active) => {
   const items2 = [expressionButtonIconPosition, tmp8.expressionButtonIconTint];
   obj1.style = items2;
   if (showKeyboardIcon) {
-    let tmp17 = 9856;
+    let tmp17 = 9888;
   } else {
-    tmp17 = 8008;
+    tmp17 = 7438;
   }
   obj1.source = importDefault(tmp17);
   obj.children = jsx(onPress(1273).Icon, { size: token3 });

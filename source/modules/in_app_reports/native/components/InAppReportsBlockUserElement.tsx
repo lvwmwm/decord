@@ -1,10 +1,10 @@
-// Module ID: 12337
-// Function ID: 95973
+// Module ID: 12364
+// Function ID: 96213
 // Name: BlockUserElement
-// Dependencies: [31, 1348, 3767, 653, 33, 566, 4319, 4324, 8923, 7488, 12335, 1212, 10424, 2]
+// Dependencies: [31, 1348, 3767, 653, 33, 566, 4319, 4324, 8962, 7568, 12362, 1212, 10453, 2]
 // Exports: default
 
-// Module 12337 (BlockUserElement)
+// Module 12364 (BlockUserElement)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

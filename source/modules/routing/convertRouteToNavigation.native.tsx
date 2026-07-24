@@ -1,10 +1,10 @@
-// Module ID: 10813
-// Function ID: 83959
+// Module ID: 10842
+// Function ID: 84151
 // Name: convertRouteToNavigation
 // Dependencies: [653, 3984, 3981, 3982, 3952, 3965, 2]
 // Exports: convertRouteToNavigation
 
-// Module 10813 (convertRouteToNavigation)
+// Module 10842 (convertRouteToNavigation)
 import { Routes } from "ME";
 
 let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/routing/convertRouteToNavigation.native.tsx");

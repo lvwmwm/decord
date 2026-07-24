@@ -1,10 +1,10 @@
-// Module ID: 10868
-// Function ID: 84567
+// Module ID: 10895
+// Function ID: 84756
 // Name: useMemberListAction
-// Dependencies: [57, 31, 27, 1348, 3758, 3767, 1849, 8826, 653, 33, 4130, 1324, 624, 8413, 8832, 3981, 10869, 10870, 1212, 10196, 10195, 3946, 1334, 10872, 10877, 5791, 10878, 1820, 8481, 7498, 5165, 2]
+// Dependencies: [57, 31, 27, 1348, 3758, 3767, 1849, 8865, 653, 33, 4130, 1324, 624, 8457, 8871, 3981, 10896, 10897, 1212, 10226, 10225, 3946, 1334, 10899, 10904, 5791, 10905, 1820, 8526, 7639, 5165, 2]
 // Exports: default
 
-// Module 10868 (useMemberListAction)
+// Module 10895 (useMemberListAction)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "dismissGlobalKeyboard";
@@ -66,8 +66,8 @@ export default function useMemberListAction(channel) {
   });
   let canResult = c7.can(first.MANAGE_ROLES, channel);
   if (canResult) {
-    canResult = channel(8413).isPrivateGuildChannel(channel);
-    let obj2 = channel(8413);
+    canResult = channel(8457).isPrivateGuildChannel(channel);
+    let obj2 = channel(8457);
   }
   React = canResult;
   let tmp7 = null != channel && !flag;
@@ -99,7 +99,7 @@ export default function useMemberListAction(channel) {
   if (null != channel) {
     id = channel.id;
   }
-  const tmp20 = importDefault(8832)();
+  const tmp20 = importDefault(8871)();
   c9 = tmp20;
   const tmp21 = stateFromStores(React.useState(undefined), 2);
   first = tmp21[0];
@@ -157,7 +157,7 @@ export default function useMemberListAction(channel) {
                   outer1_13();
                 } else {
                   obj = { onClick: outer1_13 };
-                  sum(10872)(obj);
+                  sum(10899)(obj);
                 }
               }
             };
@@ -170,8 +170,8 @@ export default function useMemberListAction(channel) {
             obj.handlePress = function handlePress() {
               const channel = store.getChannel(outer1_8);
               if (null != channel) {
-                const result = channel(10878).openChannelMembersActionSheet(channel.id, channel.guild_id);
-                const obj = channel(10878);
+                const result = channel(10905).openChannelMembersActionSheet(channel.id, channel.guild_id);
+                const obj = channel(10905);
               }
             };
             tmp7 = obj;
@@ -186,8 +186,8 @@ export default function useMemberListAction(channel) {
                 let obj = channel(1820);
                 const result = obj.dismissGlobalKeyboard();
                 obj = { source: callback.CHAT_SIDEBAR };
-                const result1 = channel(8481).showInstantInviteActionSheet(channel, obj);
-                const obj2 = channel(8481);
+                const result1 = channel(8526).showInstantInviteActionSheet(channel, obj);
+                const obj2 = channel(8526);
               }
             };
             tmp7 = obj;

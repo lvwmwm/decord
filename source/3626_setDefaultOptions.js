@@ -1,5 +1,5 @@
 // Module ID: 3626
-// Function ID: 27879
+// Function ID: 27880
 // Name: setDefaultOptions
 // Dependencies: [3210, 3214]
 // Exports: default

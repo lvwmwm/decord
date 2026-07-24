@@ -1,10 +1,10 @@
-// Module ID: 10020
-// Function ID: 77448
+// Module ID: 10052
+// Function ID: 77642
 // Name: participantHasVideo
 // Dependencies: [1194, 4177, 4148, 566, 2]
 // Exports: useCanRenderParticipantVideo
 
-// Module 10020 (participantHasVideo)
+// Module 10052 (participantHasVideo)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import ParticipantTypes from "ParticipantTypes";

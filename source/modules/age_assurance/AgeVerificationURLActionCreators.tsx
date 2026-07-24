@@ -1,10 +1,10 @@
-// Module ID: 7542
-// Function ID: 60344
+// Module ID: 7587
+// Function ID: 60452
 // Name: requestAgeVerification
-// Dependencies: [5, 1194, 7537, 653, 7543, 507, 686, 2]
+// Dependencies: [5, 1194, 7582, 653, 7588, 507, 686, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7542 (requestAgeVerification)
+// Module 7587 (requestAgeVerification)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { VerificationVendorName } from "set";

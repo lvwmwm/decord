@@ -1,9 +1,9 @@
-// Module ID: 6843
-// Function ID: 54038
+// Module ID: 6842
+// Function ID: 54047
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 6830, 1194, 5659, 1348, 4349, 1906, 3947, 6844, 653, 662, 6835, 5670, 5673, 5675, 686, 6845, 6837, 6842, 6846, 6847, 21, 4351, 4291, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 6829, 1194, 5659, 1348, 4349, 1906, 3947, 6843, 653, 662, 6834, 5670, 5673, 5675, 686, 6844, 6836, 6841, 6845, 6846, 21, 4351, 4291, 5078, 2]
 
-// Module 6843 (_isNativeReflectConstruct)
+// Module 6842 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import timeoutAttachmentsAndEmbedsForMessage from "timeoutAttachmentsAndEmbedsForMessage";
@@ -91,7 +91,7 @@ function maybeCancelTimeout(message, UPDATE) {
 }
 function sendForScanning(found1, arg1) {
   if (0 !== found1.length) {
-    const obj = require(6845) /* reportFalsePositive */;
+    const obj = require(6844) /* reportFalsePositive */;
     if (arg1) {
       const result = obj.sendMultiChannelMessagesForScanning(found1);
     } else {
@@ -444,7 +444,7 @@ function handleMessageUpdate(message) {
       if (obj7.getChannelIdAndAuthorIdFromMessage(message).authorId !== store.getId()) {
         if (null == message.embeds) {
           if (null == message.attachments) {
-            let obj = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
+            let obj = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
             if (!obj.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
@@ -465,7 +465,7 @@ function handleMessageUpdate(message) {
             if (!obj2.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
-            obj2 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
+            obj2 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
           }
         }
         if (!obj3.hasUnscannedMedia(message)) {
@@ -488,7 +488,7 @@ function handleMessageUpdate(message) {
             const obj5 = require(4351) /* createMinimalMessageRecord */;
           }
           if (!hasUnscannedMediaResult) {
-            maybeCancelTimeout(message, require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.TimeoutCancelSource.UPDATE);
+            maybeCancelTimeout(message, require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.TimeoutCancelSource.UPDATE);
           }
         }
         const channelId = store4.getChannelId();

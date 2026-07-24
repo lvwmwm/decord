@@ -1,10 +1,10 @@
-// Module ID: 9968
-// Function ID: 76988
+// Module ID: 10000
+// Function ID: 77182
 // Name: maybeStartLurking
-// Dependencies: [5, 1352, 1391, 1348, 1917, 1910, 1838, 3758, 653, 1355, 5059, 5055, 5736, 8341, 9969, 4337, 9970, 1934, 5628, 4098, 9983, 9991, 1327, 4321, 4341, 4944, 2]
+// Dependencies: [5, 1352, 1391, 1348, 1917, 1910, 1838, 3758, 653, 1355, 5059, 5055, 5736, 8385, 10001, 4337, 10002, 1934, 5626, 4098, 10015, 10023, 1327, 4321, 4341, 4944, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 9968 (maybeStartLurking)
+// Module 10000 (maybeStartLurking)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { isGuildVocalChannelType } from "_callSuper";
 import { isGuildLurker } from "isGuildOwner";

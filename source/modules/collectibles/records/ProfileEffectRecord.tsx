@@ -1,5 +1,5 @@
 // Module ID: 6780
-// Function ID: 53394
+// Function ID: 53416
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 102, 18, 1875, 1876, 2]
 // Exports: isProfileEffectRecord

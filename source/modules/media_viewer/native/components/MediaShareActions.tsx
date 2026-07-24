@@ -1,10 +1,10 @@
-// Module ID: 8305
-// Function ID: 65623
+// Module ID: 8349
+// Function ID: 65851
 // Name: useMediaShareActions
-// Dependencies: [31, 8306, 1348, 4349, 8331, 653, 6836, 33, 624, 6835, 7807, 4098, 8276, 4317, 8332, 8278, 8336, 3827, 9872, 4138, 3984, 9868, 1934, 9534, 4080, 1212, 9880, 12227, 10157, 9926, 4639, 5500, 5502, 2]
+// Dependencies: [31, 8350, 1348, 4349, 8375, 653, 6835, 33, 624, 6834, 7898, 4098, 8320, 4317, 8376, 8322, 8380, 3827, 9904, 4138, 3984, 9900, 1934, 9570, 4080, 1212, 9912, 12254, 10189, 9958, 4639, 5498, 5500, 2]
 // Exports: default
 
-// Module 8305 (useMediaShareActions)
+// Module 8349 (useMediaShareActions)
 import ActionSheet from "ActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -237,7 +237,7 @@ export default function MediaShareActionSheet(source) {
     ({ action: obj.onPress, label: obj.label } = IconComponent);
     return outer1_12(outer1_0(outer1_2[32]).ActionSheetRow, obj, arg1);
   });
-  obj.children = jsx(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: true });
-  return jsx(require(5500) /* ActionSheet */.ActionSheet, { hasIcons: true });
+  obj.children = jsx(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: true });
+  return jsx(require(5498) /* ActionSheet */.ActionSheet, { hasIcons: true });
 };
 export { useMediaShareActions };

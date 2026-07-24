@@ -1,10 +1,10 @@
-// Module ID: 11044
-// Function ID: 85987
+// Module ID: 11071
+// Function ID: 86176
 // Name: AppealIngestionActivitySummary
-// Dependencies: [31, 27, 33, 4130, 11034, 2]
+// Dependencies: [31, 27, 33, 4130, 11061, 2]
 // Exports: default
 
-// Module 11044 (AppealIngestionActivitySummary)
+// Module 11071 (AppealIngestionActivitySummary)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -14,5 +14,5 @@ let closure_4 = _createForOfIteratorHelperLoose.createStyles({ activity: { margi
 const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/AppealIngestionActivitySummary.tsx");
 
 export default function AppealIngestionActivitySummary(flaggedContent) {
-  return <View style={callback().activity}>{jsx(importDefault(11034), { flaggedContent: arg0.flaggedContent })}</View>;
+  return <View style={callback().activity}>{jsx(importDefault(11061), { flaggedContent: arg0.flaggedContent })}</View>;
 };

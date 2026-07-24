@@ -1,10 +1,10 @@
-// Module ID: 11596
-// Function ID: 90123
+// Module ID: 11623
+// Function ID: 90361
 // Name: PX_16
-// Dependencies: [31, 27, 33, 689, 478, 4130, 11585, 1212, 2230, 11597, 11598, 2]
+// Dependencies: [31, 27, 33, 689, 478, 4130, 11612, 1212, 2230, 11624, 11625, 2]
 // Exports: default
 
-// Module 11596 (PX_16)
+// Module 11623 (PX_16)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -51,7 +51,7 @@ export default function GuildPowerupsLevelsSection(arg0) {
   obj.title = intl.string(listings(2230)["TXY/b0"]);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl2.string(listings(2230).aJv4PB);
-  const items1 = [callback(listings(11585), obj), ];
+  const items1 = [callback(listings(11612), obj), ];
   obj = {
     cardMarginRight: PX_16,
     cardWidth: 250,
@@ -65,7 +65,7 @@ export default function GuildPowerupsLevelsSection(arg0) {
       return outer1_5(closure_4, obj, powerup.skuId);
     })
   };
-  items1[1] = callback(require(11597) /* getClampedIndex */.MarketingCardsScroller, obj);
+  items1[1] = callback(require(11624) /* getClampedIndex */.MarketingCardsScroller, obj);
   obj.children = items1;
   return callback2(closure_6, obj);
 };

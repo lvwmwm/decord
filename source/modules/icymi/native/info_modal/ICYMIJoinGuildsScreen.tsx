@@ -1,14 +1,14 @@
-// Module ID: 15211
-// Function ID: 115915
+// Module ID: 15258
+// Function ID: 116237
 // Name: SelectedServerIcon
-// Dependencies: [5, 57, 31, 27, 4122, 1838, 15210, 653, 33, 15179, 689, 5515, 9009, 3991, 4131, 9244, 566, 1392, 7873, 5085, 4660, 4126, 4543, 4091, 1212, 1557, 8330, 8321, 3831, 4337, 15194, 7879, 2]
+// Dependencies: [5, 57, 31, 27, 4122, 1838, 15257, 653, 33, 15226, 689, 5513, 9048, 3991, 4131, 9280, 566, 1392, 7961, 5085, 4660, 4126, 4543, 4091, 1212, 1557, 8374, 8365, 3831, 4337, 15241, 7527, 2]
 // Exports: default
 
-// Module 15211 (SelectedServerIcon)
+// Module 15258 (SelectedServerIcon)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import defaultMVCPConfig from "defaultMVCPConfig";
-import get_ActivityIndicator from "module_8321";
+import get_ActivityIndicator from "module_8365";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_9 from "_createForOfIteratorHelperLoose";
 import closure_10 from "_isNativeReflectConstruct";
@@ -35,14 +35,14 @@ function SelectedServerIcon(guild) {
   items[2] = null == guild && guild.index >= 3 && tmp.noServerExtraContainer;
   obj.style = items;
   if (null != guild) {
-    obj = { style: tmp.guildIconBorder, guild, size: require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE };
-    let tmp5 = callback2(importDefault(5515), obj);
-    const tmp13 = importDefault(5515);
+    obj = { style: tmp.guildIconBorder, guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE };
+    let tmp5 = callback2(importDefault(5513), obj);
+    const tmp13 = importDefault(5513);
   } else {
     tmp5 = null;
     if (tmp2) {
       obj = { size: "md", color: importDefault(689).colors.ICON_MUTED };
-      tmp5 = callback2(require(9009) /* ServerIcon */.ServerIcon, obj);
+      tmp5 = callback2(require(9048) /* ServerIcon */.ServerIcon, obj);
     }
   }
   obj.children = tmp5;
@@ -125,7 +125,7 @@ function SelectedServersRow(selectedGuilds) {
   obj1.horizontal = true;
   obj1.listId = "selected-servers-list";
   obj1.showsHorizontalScrollIndicator = false;
-  obj.children = tmp9(first(9244), obj1);
+  obj.children = tmp9(first(9280), obj1);
   return tmp8(first(3991).View, obj);
 }
 function CutoutGuildBanner(guild) {
@@ -149,7 +149,7 @@ function CutoutGuildBanner(guild) {
   }
   obj = { style: tmp.bannerImage };
   obj = {};
-  obj1 = { shape: guild(7873).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  obj1 = { shape: guild(7961).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   const items1 = [obj1];
   obj.cutouts = items1;
   if (null != guild.banner) {
@@ -163,17 +163,17 @@ function CutoutGuildBanner(guild) {
     tmp14 = callback2(closure_6, obj3);
   }
   obj.children = tmp14;
-  const items3 = [callback2(importDefault(7873), obj), ];
+  const items3 = [callback2(importDefault(7961), obj), ];
   const obj4 = { style: items4, guild };
   items4 = [, ];
   ({ guildIcon: arr5[0], guildIconBorder: arr5[1] } = tmp);
   const tmp10 = callback2;
-  const tmp11 = importDefault(7873);
+  const tmp11 = importDefault(7961);
   const tmp8 = closure_13;
   const tmp9 = closure_6;
-  obj4.size = guild(5515).GuildIconSizes.LARGE;
+  obj4.size = guild(5513).GuildIconSizes.LARGE;
   obj4.animate = !stateFromStores;
-  items3[1] = callback2(importDefault(5515), obj4);
+  items3[1] = callback2(importDefault(5513), obj4);
   obj.children = items3;
   return tmp8(tmp9, obj);
 }

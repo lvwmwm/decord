@@ -1,10 +1,10 @@
-// Module ID: 9199
-// Function ID: 72044
+// Module ID: 9235
+// Function ID: 72253
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
 // Dependencies: [31, 33, 4475, 1212, 4475, 2]
 // Exports: default
 
-// Module 9199 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 9235 (OneTimeLoginForgotPasswordConfirmAlertModal)
 import "result";
 import { jsx } from "jsxProd";
 

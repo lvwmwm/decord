@@ -1,10 +1,10 @@
-// Module ID: 13436
-// Function ID: 103343
+// Module ID: 13489
+// Function ID: 103670
 // Name: toggleVoiceChannelChat
 // Dependencies: [1348, 4202, 4143, 4323, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 13436 (toggleVoiceChannelChat)
+// Module 13489 (toggleVoiceChannelChat)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

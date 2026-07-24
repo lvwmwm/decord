@@ -1,5 +1,5 @@
 // Module ID: 4157
-// Function ID: 35139
+// Function ID: 35140
 // Name: useIsRiotSocialSDKMigrationEnabled
 // Dependencies: [1428, 2]
 // Exports: getIsRiotSocialSDKMigrationEnabled, useIsRiotSocialSDKMigrationEnabled

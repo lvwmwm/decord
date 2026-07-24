@@ -1,10 +1,10 @@
-// Module ID: 7605
-// Function ID: 60951
+// Module ID: 7694
+// Function ID: 61237
 // Name: getScreens
-// Dependencies: [5, 57, 31, 7606, 33, 5788, 7607, 1212, 7608, 4559, 6828, 7604, 7602, 5519, 2]
+// Dependencies: [5, 57, 31, 7695, 33, 5788, 7696, 1212, 7697, 4559, 6827, 7693, 7691, 5517, 2]
 // Exports: default
 
-// Module 7605 (getScreens)
+// Module 7694 (getScreens)
 import HeaderActionButton from "HeaderActionButton";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -172,7 +172,7 @@ export default function InAppReportModal(arg0) {
       let obj = { screens, initialRouteStack: initialStack };
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-      tmp8 = jsx(require(5519) /* NavigationStack */.Navigator, { screens, initialRouteStack: initialStack });
+      tmp8 = jsx(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteStack: initialStack });
     }
   }
   return tmp8;

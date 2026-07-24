@@ -1,9 +1,9 @@
-// Module ID: 15308
-// Function ID: 116751
+// Module ID: 15355
+// Function ID: 117073
 // Name: ApplicationStatusIcon
-// Dependencies: [31, 27, 33, 4130, 689, 3950, 4091, 5776, 15309, 4126, 1212, 15305, 3800, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 3950, 4091, 5776, 15356, 4126, 1212, 15352, 3800, 2]
 
-// Module 15308 (ApplicationStatusIcon)
+// Module 15355 (ApplicationStatusIcon)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,7 +43,7 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ guildId, userId, selectedJoinRequestId } = arg0);
   let tmp = callback3();
   const require = tmp;
-  let obj = require(15309) /* useOtherGuildJoinRequestsForUser */;
+  let obj = require(15356) /* useOtherGuildJoinRequestsForUser */;
   const otherGuildJoinRequestsForUser = obj.useOtherGuildJoinRequestsForUser({ guildId, userId, selectedJoinRequestId });
   let tmp2 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {

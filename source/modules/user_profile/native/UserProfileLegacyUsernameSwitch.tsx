@@ -1,10 +1,10 @@
-// Module ID: 13609
-// Function ID: 104560
+// Module ID: 13660
+// Function ID: 104884
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [31, 33, 3803, 13589, 1212, 9230, 7844, 2]
+// Dependencies: [31, 33, 3803, 13640, 1212, 9266, 7933, 2]
 // Exports: default
 
-// Module 13609 (UserProfileLegacyUsernameSwitch)
+// Module 13660 (UserProfileLegacyUsernameSwitch)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -34,5 +34,5 @@ export default function UserProfileLegacyUsernameSwitch(username) {
       obj.setPendingChanges(obj);
     }
   };
-  return jsx(setting(13589).UserProfileEditFormSwitch, { value: !tmp2 });
+  return jsx(setting(13640).UserProfileEditFormSwitch, { value: !tmp2 });
 };

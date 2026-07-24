@@ -1,10 +1,10 @@
-// Module ID: 13940
-// Function ID: 106714
+// Module ID: 13991
+// Function ID: 107038
 // Name: BountiesScrollEndCard
-// Dependencies: [31, 27, 33, 4130, 689, 10840, 13938, 1212, 13909, 4134, 3991, 4131, 4554, 13941, 13943, 4126, 9949, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 10869, 13989, 1212, 13960, 4134, 3991, 4131, 4554, 13992, 13994, 4126, 9981, 2]
 // Exports: default
 
-// Module 13940 (BountiesScrollEndCard)
+// Module 13991 (BountiesScrollEndCard)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -58,13 +58,13 @@ export default function BountiesScrollEndCard(isScrollingInBoundsSharedValue) {
   isScrollingInBoundsSharedValue = isScrollingInBoundsSharedValue.isScrollingInBoundsSharedValue;
   const sourceQuestContent = isScrollingInBoundsSharedValue.sourceQuestContent;
   let endedCtaButtonsContainer = callback3();
-  let obj = isActive(10840);
+  let obj = isActive(10869);
   const isBountiesVerticalScrollExperimentEnabled = obj.useIsBountiesVerticalScrollExperimentEnabled("BountiesScrollEndCard");
-  let obj1 = isActive(13938);
+  let obj1 = isActive(13989);
   const bountyCtaInfo = obj1.getBountyCtaInfo(bounty);
   const intl = isActive(1212).intl;
   const stringResult = intl.string(isActive(1212).t["9UtZAY"]);
-  let obj2 = isActive(13909);
+  let obj2 = isActive(13960);
   obj = { visible, entranceTiming: isActive(4134).timingStandard, exitTiming: isActive(4134).timingStandard };
   const visibilityTransition = obj2.useVisibilityTransition(obj);
   const shouldRender = visibilityTransition.shouldRender;
@@ -108,7 +108,7 @@ export default function BountiesScrollEndCard(isScrollingInBoundsSharedValue) {
       obj4.style = items2;
       obj4.pointerEvents = str;
       obj5 = { bounty, sourceQuestContent, disabled: !isActive };
-      const items3 = [callback(isScrollingInBoundsSharedValue(13941), obj5), ];
+      const items3 = [callback(isScrollingInBoundsSharedValue(13992), obj5), ];
       animatedStyle = closure_5;
       const obj6 = {};
       endedCtaButtonsContainer = endedCtaButtonsContainer.endedCtaButtonsContainer;
@@ -125,7 +125,7 @@ export default function BountiesScrollEndCard(isScrollingInBoundsSharedValue) {
       };
       isActive = !isActive;
       obj7.disabled = isActive;
-      str = callback(isScrollingInBoundsSharedValue(13943), obj7);
+      str = callback(isScrollingInBoundsSharedValue(13994), obj7);
       obj6.children = str;
       items3[1] = callback(closure_5, obj6);
       obj4.children = items3;
@@ -152,7 +152,7 @@ export default function BountiesScrollEndCard(isScrollingInBoundsSharedValue) {
       obj10.children = items5;
       const items6 = [callback2(closure_5, obj10), ];
       const obj13 = { accessible: false, color: isScrollingInBoundsSharedValue(689).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, style: endedCtaButtonsContainer.replayIcon };
-      items6[1] = callback(isActive(9949).RetryIcon, obj13);
+      items6[1] = callback(isActive(9981).RetryIcon, obj13);
       obj9.children = items6;
       obj8.children = callback2(isScrollingInBoundsSharedValue(dependencyMap[obj4]).View, obj9);
       tmp11Result = callback(closure_3, obj8);

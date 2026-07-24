@@ -1,10 +1,10 @@
-// Module ID: 9346
-// Function ID: 73013
+// Module ID: 9382
+// Function ID: 73222
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [31, 4991, 1348, 1906, 653, 1852, 1314, 9334, 9335, 4324, 3775, 2]
+// Dependencies: [31, 4991, 1348, 1906, 653, 1852, 1314, 9370, 9371, 4324, 3775, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 9346 (trackOnEmojiPickerOpened)
+// Module 9382 (trackOnEmojiPickerOpened)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -60,7 +60,7 @@ function trackOnEmojiPickerOpened(arg0) {
   }
   const disambiguatedEmojiContext = store.getDisambiguatedEmojiContext(guildId1);
   const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
-  let obj2 = require(9334) /* getTopAndNewlyAddedEmojis */;
+  let obj2 = require(9370) /* getTopAndNewlyAddedEmojis */;
   let obj = {};
   let guildId2;
   if (null != channel) {
@@ -70,9 +70,9 @@ function trackOnEmojiPickerOpened(arg0) {
   obj.pickerIntention = intention;
   const topAndNewlyAddedEmojis = obj2.getTopAndNewlyAddedEmojis(obj);
   ({ topEmojis, newlyAddedEmojis } = topAndNewlyAddedEmojis);
-  const emojiHotrail = require(9335) /* getEmojiHotrail */.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
+  const emojiHotrail = require(9371) /* getEmojiHotrail */.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
   ({ visibleTopEmojis, visibleNewlyAddedEmojis } = emojiHotrail);
-  const obj5 = require(9335) /* getEmojiHotrail */;
+  const obj5 = require(9371) /* getEmojiHotrail */;
   if (intention === EmojiIntention.REACTION) {
     let EXPRESSION_PICKER_OPENED = AnalyticEvents.REACTION_PICKER_OPENED;
   } else {

@@ -1,9 +1,9 @@
-// Module ID: 10248
-// Function ID: 79158
+// Module ID: 10278
+// Function ID: 79349
 // Name: Soundpacks
 // Dependencies: [2]
 
-// Module 10248 (Soundpacks)
+// Module 10278 (Soundpacks)
 const result = require("set").fileFinishedImporting("modules/soundpacks/Constants.tsx");
 
 export const Soundpacks = { CLASSIC: "classic", RETRO: "retro", BUBBLE: "bop", DUCKY: "ducky", LOFI: "lofi", ASMR: "asmr", DISCODO: "discodo", HALLOWEEN: "halloween", WINTER_HOLIDAY: "winter_holiday" };

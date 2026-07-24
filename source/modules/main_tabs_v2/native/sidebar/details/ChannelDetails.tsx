@@ -1,11 +1,11 @@
-// Module ID: 15317
-// Function ID: 116840
+// Module ID: 15364
+// Function ID: 117162
 // Name: PX_8
-// Dependencies: [31, 27, 10077, 1348, 9132, 9102, 33, 689, 4130, 566, 10075, 15318, 5464, 5484, 15316, 4528, 8133, 1557, 477, 4110, 6707, 11406, 11398, 3991, 4131, 4134, 4542, 10085, 3989, 5217, 15319, 15331, 15420, 15422, 15423, 15424, 4489, 2]
+// Dependencies: [31, 27, 10109, 1348, 9168, 9140, 33, 689, 4130, 566, 10107, 15365, 5462, 5482, 15363, 4528, 7423, 1557, 477, 4110, 6707, 11434, 11426, 3991, 4131, 4134, 4542, 10117, 3989, 5217, 15366, 15378, 15467, 15469, 15470, 15471, 4489, 2]
 
-// Module 15317 (PX_8)
+// Module 15364 (PX_8)
 import importAllResult from "SearchFreezeContainer";
-import get_ActivityIndicator from "module_10085";
+import get_ActivityIndicator from "module_10117";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import createChannelState from "createChannelState";

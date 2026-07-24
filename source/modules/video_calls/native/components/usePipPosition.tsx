@@ -1,10 +1,10 @@
-// Module ID: 10540
-// Function ID: 82346
+// Module ID: 10569
+// Function ID: 82538
 // Name: usePipPosition
-// Dependencies: [57, 31, 587, 10541, 2]
+// Dependencies: [57, 31, 587, 10570, 2]
 // Exports: default
 
-// Module 10540 (usePipPosition)
+// Module 10569 (usePipPosition)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

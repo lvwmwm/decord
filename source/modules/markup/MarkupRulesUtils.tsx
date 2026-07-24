@@ -1,10 +1,10 @@
-// Module ID: 9969
-// Function ID: 76997
+// Module ID: 10001
+// Function ID: 77191
 // Name: smartOutput
 // Dependencies: [2]
 // Exports: isStaticRouteIconType, smartOutput
 
-// Module 9969 (smartOutput)
+// Module 10001 (smartOutput)
 const result = require("set").fileFinishedImporting("modules/markup/MarkupRulesUtils.tsx");
 
 export const smartOutput = function smartOutput(node, output, state) {

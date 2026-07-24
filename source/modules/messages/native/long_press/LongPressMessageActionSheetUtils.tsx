@@ -1,10 +1,10 @@
-// Module ID: 9542
-// Function ID: 74300
+// Module ID: 9578
+// Function ID: 74509
 // Name: getContextBarCancelReason
-// Dependencies: [31, 6922, 3768, 6923, 7080, 1849, 9543, 653, 1355, 6836, 33, 3969, 21, 9544, 9545, 5484, 675, 6691, 4470, 1212, 9859, 9863, 9864, 3843, 7076, 9866, 7007, 3981, 1198, 4353, 5492, 3830, 4312, 4140, 9867, 4317, 1443, 9581, 8276, 8336, 8339, 5670, 4098, 9868, 1934, 5667, 7600, 2298, 5655, 4138, 8492, 4324, 9315, 9871, 1207, 9872, 1881, 9911, 9923, 9935, 9942, 2]
+// Dependencies: [31, 6921, 3768, 6922, 7079, 1849, 9579, 653, 1355, 6835, 33, 3969, 21, 9580, 9581, 5482, 675, 6691, 4470, 1212, 9891, 9895, 9896, 3843, 7075, 9898, 7006, 3981, 1198, 4353, 5490, 3830, 4312, 4140, 9899, 4317, 1443, 9617, 8320, 8380, 8383, 5670, 4098, 9900, 1934, 5667, 7689, 2298, 5655, 4138, 8537, 4324, 9351, 9903, 1207, 9904, 1881, 9943, 9955, 9967, 9974, 2]
 // Exports: longPressMessageOptionHandler
 
-// Module 9542 (getContextBarCancelReason)
+// Module 9578 (getContextBarCancelReason)
 import "presentAddedFriendToast";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { isMessageComponentsV2 } from "_callSuper";
@@ -53,18 +53,18 @@ function handleEdit(id, isForumPost, current, source) {
     let obj = importDefault(21);
     if (isForumPost.id === obj.castMessageIdAsChannelId(id.id)) {
       if (null != isForumPost.parent_id) {
-        require(9544) /* createPendingReply */.deletePendingReply(isForumPost.id);
-        const obj9 = require(9544) /* createPendingReply */;
+        require(9580) /* createPendingReply */.deletePendingReply(isForumPost.id);
+        const obj9 = require(9580) /* createPendingReply */;
         obj = {};
         ({ guild_id: obj11.guildId, parent_id: obj11.parentChannelId, id: obj11.threadId } = isForumPost);
         obj.messageId = id.id;
         obj.isEdit = true;
-        const items = [importDefault(5484).FORUM_CHANNEL, importDefault(5484).GUILD_CHANNEL];
+        const items = [importDefault(5482).FORUM_CHANNEL, importDefault(5482).GUILD_CHANNEL];
         obj.analyticsLocations = items;
         obj = { page: constants3.GUILD_CHANNEL, section: constants4.FORUM_POST_HEADER, object: constants2.CONTEXT_MENU };
         obj.analyticsLocationObject = obj;
-        const result = require(9545) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
-        const obj10 = require(9545) /* openCreateForumPostModal */;
+        const result = require(9581) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
+        const obj10 = require(9581) /* openCreateForumPostModal */;
       }
     }
   }
@@ -108,7 +108,7 @@ function handleEdit(id, isForumPost, current, source) {
     importDefault(675).track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj2);
     const obj13 = importDefault(675);
   }
-  obj1 = require(9544) /* createPendingReply */;
+  obj1 = require(9580) /* createPendingReply */;
   obj1.deletePendingReply(isForumPost.id);
   obj2 = importDefault(6691);
   const result1 = obj2.startEditMessageRecord(isForumPost.id, id, source);
@@ -138,7 +138,7 @@ function handleCreateThread(guild_id, id, SUMMARY_ACTION_SHEET) {
   if (null != id) {
     id = id.id;
   }
-  const result = importDefault(7007).openThreadCreationForMobile(guild_id, id, str);
+  const result = importDefault(7006).openThreadCreationForMobile(guild_id, id, str);
   let result1 = null == id;
   if (!result1) {
     const obj2 = require(3981) /* _createForOfIteratorHelperLoose */;
@@ -175,8 +175,8 @@ function getChannelAnalyticsMetadata(id) {
 function handleCopyLink(channelPermalink) {
   let flag = null != channelPermalink;
   if (flag) {
-    require(5492) /* _copy */.copy(channelPermalink);
-    const obj = require(5492) /* _copy */;
+    require(5490) /* _copy */.copy(channelPermalink);
+    const obj = require(5490) /* _copy */;
     require(3830) /* presentAddedFriendToast */.presentLinkCopied();
     flag = true;
     const obj2 = require(3830) /* presentAddedFriendToast */;
@@ -184,8 +184,8 @@ function handleCopyLink(channelPermalink) {
   return flag;
 }
 function handleCopyId(id2) {
-  require(5492) /* _copy */.copy(id2);
-  const obj = require(5492) /* _copy */;
+  require(5490) /* _copy */.copy(id2);
+  const obj = require(5490) /* _copy */;
   const result = require(3830) /* presentAddedFriendToast */.presentMessageIdCopied();
 }
 function handleSuppressEmbeds(id, chatInputRef, id2) {

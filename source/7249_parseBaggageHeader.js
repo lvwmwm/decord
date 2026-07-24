@@ -1,5 +1,5 @@
 // Module ID: 7249
-// Function ID: 58381
+// Function ID: 58410
 // Name: parseBaggageHeader
 // Dependencies: [57, 7243, 7235, 7236]
 // Exports: baggageHeaderToDynamicSamplingContext, dynamicSamplingContextToSentryBaggageHeader

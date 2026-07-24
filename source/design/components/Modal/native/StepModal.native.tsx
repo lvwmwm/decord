@@ -1,10 +1,10 @@
-// Module ID: 13086
-// Function ID: 100836
+// Module ID: 13138
+// Function ID: 101159
 // Name: StepModal
-// Dependencies: [57, 31, 27, 33, 4130, 5084, 1557, 11073, 13087, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 5084, 1557, 11100, 13139, 2]
 // Exports: StepModal
 
-// Module 13086 (StepModal)
+// Module 13138 (StepModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -53,7 +53,7 @@ export const StepModal = function StepModal(steps) {
   obj["onWillFocus"] = callback;
   obj["headerStyle"] = { height: steps(5084).NAV_BAR_HEIGHT + tmp4.top };
   obj["hideTitle"] = true;
-  const items1 = [callback2(steps(11073).Modal, obj), ];
+  const items1 = [callback2(steps(11100).Modal, obj), ];
   const obj2 = { style: items2, pointerEvents: "box-none" };
   items2 = [tmp3.stepContainer, { marginTop: tmp4.top }];
   const obj3 = { currentStep: tmp5[0] };
@@ -66,7 +66,7 @@ export const StepModal = function StepModal(steps) {
     num = length;
   }
   obj3.totalSteps = num;
-  obj2.children = callback2(steps(13087).ModalStepIndicator, obj3);
+  obj2.children = callback2(steps(13139).ModalStepIndicator, obj3);
   items1[1] = callback2(View, obj2);
   obj.children = items1;
   return closure_7(View, obj);

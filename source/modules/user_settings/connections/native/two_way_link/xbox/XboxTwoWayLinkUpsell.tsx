@@ -1,10 +1,10 @@
-// Module ID: 13868
-// Function ID: 106187
+// Module ID: 13919
+// Function ID: 106511
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [31, 653, 33, 4130, 1920, 13869, 1212, 5085, 13870, 1334, 8936, 2]
+// Dependencies: [31, 653, 33, 4130, 1920, 13920, 1212, 5085, 13921, 1334, 8975, 2]
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 13868 (XboxTwoWayLinkUpsell)
+// Module 13919 (XboxTwoWayLinkUpsell)
 import "result";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
   obj.body = intl2.format(require(1212) /* getSystemLocale */.t.OnERSS, { help_article: articleURL });
   obj = { style: callback().upsellImage };
   const tmp = callback();
-  obj.source = importDefault(13870);
+  obj.source = importDefault(13921);
   obj.resizeMode = "contain";
   obj.img = jsx(importDefault(5085), { style: callback().upsellImage });
   obj.newIndicatorDismissibleContent = require(1334) /* DismissibleContent */.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
@@ -35,5 +35,5 @@ export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
     const items = [outer1_4.RELINK_UPSELL];
     return outer1_1(outer1_2[10]).showModal(items);
   };
-  return jsx(require(13869) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage });
+  return jsx(require(13920) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage });
 };

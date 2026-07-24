@@ -1,9 +1,9 @@
-// Module ID: 14132
-// Function ID: 108761
+// Module ID: 14182
+// Function ID: 109084
 // Name: pressable
-// Dependencies: [1849, 33, 6658, 4471, 1212, 14133, 1934, 566, 477, 10095, 7871, 2]
+// Dependencies: [1849, 33, 6658, 4471, 1212, 14183, 1934, 566, 477, 10127, 7486, 2]
 
-// Module 14132 (pressable)
+// Module 14182 (pressable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";

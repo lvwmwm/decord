@@ -1,9 +1,9 @@
-// Module ID: 16046
-// Function ID: 124265
+// Module ID: 16093
+// Function ID: 124587
 // Name: _isNativeReflectConstruct
 // Dependencies: [7, 6, 15, 17, 18, 1917, 1838, 3947, 653, 3746, 5053, 1360, 5078, 2]
 
-// Module 16046 (_isNativeReflectConstruct)
+// Module 16093 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

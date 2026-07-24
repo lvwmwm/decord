@@ -1,10 +1,10 @@
-// Module ID: 9748
-// Function ID: 75809
+// Module ID: 9782
+// Function ID: 76021
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [57, 31, 27, 6663, 1849, 653, 1851, 33, 4130, 689, 5160, 5470, 566, 5450, 491, 4559, 675, 9749, 9739, 477, 686, 9734, 1212, 9744, 5459, 4543, 2]
+// Dependencies: [57, 31, 27, 6663, 1849, 653, 1851, 33, 4130, 689, 5160, 5468, 566, 5450, 491, 4559, 675, 9783, 9773, 477, 686, 9768, 1212, 9778, 4126, 4543, 2]
 // Exports: default
 
-// Module 9748 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 9782 (SocialLayerStorefrontGiftPurchaseSection)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -178,7 +178,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
   const mobileFinePrintMessageForApplication = skuId(giftOptions[23]).getMobileFinePrintMessageForApplication(tmp22, stringResult, { shouldAppendDisclaimer: true });
   obj1.children = mobileFinePrintMessageForApplication.map((children) => {
     const obj = { variant: "text-xs/normal", color: "text-muted", children };
-    return callback(skuId(giftOptions[24]).TextWithIOSLinkWorkaround, obj, arg1);
+    return callback(skuId(giftOptions[24]).Text, obj, arg1);
   });
   const items4 = [tmp21(closure_5, obj1), ];
   obj2 = {

@@ -1,9 +1,9 @@
-// Module ID: 8316
-// Function ID: 65814
+// Module ID: 8360
+// Function ID: 66042
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 8317, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 8361, 566, 686, 2]
 
-// Module 8316 (_isNativeReflectConstruct)
+// Module 8360 (_isNativeReflectConstruct)
 import fetchGuildAffinities from "fetchGuildAffinities";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -92,8 +92,8 @@ tmp3.persistKey = "GuildAffinitiesStore";
 tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     if (Date.now() - lastFetched.lastFetched > 86400000) {
-      const guildAffinities = require(8317) /* fetchGuildAffinities */.fetchGuildAffinities();
-      const obj = require(8317) /* fetchGuildAffinities */;
+      const guildAffinities = require(8361) /* fetchGuildAffinities */.fetchGuildAffinities();
+      const obj = require(8361) /* fetchGuildAffinities */;
     }
     return false;
   },

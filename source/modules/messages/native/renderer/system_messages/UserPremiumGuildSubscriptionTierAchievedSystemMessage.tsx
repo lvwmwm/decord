@@ -1,10 +1,10 @@
-// Module ID: 7692
-// Function ID: 61398
+// Module ID: 7781
+// Function ID: 61684
 // Name: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [1348, 1838, 7690, 7691, 7649, 7651, 1212, 4022, 7652, 2]
+// Dependencies: [1348, 1838, 7779, 7780, 7738, 7740, 1212, 4022, 7741, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 7692 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
+// Module 7781 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -15,16 +15,16 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
   message = message.message;
   channel = channel.getChannel(message.getChannelId());
   if (null == channel) {
-    return require(7690) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
+    return require(7779) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
   } else {
     guild = guild.getGuild(channel.getGuildId());
     if (null == guild) {
-      return require(7690) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
+      return require(7779) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
     } else {
-      const tmp18 = importDefault(7691)(message);
-      const messageAuthorWithProcessedColor = require(7649) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
+      const tmp18 = importDefault(7780)(message);
+      const messageAuthorWithProcessedColor = require(7738) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
       let obj = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-      const tmp21 = importDefault(7651)(obj);
+      const tmp21 = importDefault(7740)(obj);
       obj = {};
       if (tmp18 > 1) {
         const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -39,7 +39,7 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
         formatToPartsResult = intl.formatToParts(require(1212) /* getSystemLocale */.t.oAYAP7, obj2);
       }
       obj.content = formatToPartsResult;
-      const merged = Object.assign(importDefault(7652)(message));
+      const merged = Object.assign(importDefault(7741)(message));
       return obj;
     }
   }

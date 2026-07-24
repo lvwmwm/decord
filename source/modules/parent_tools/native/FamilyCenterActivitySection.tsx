@@ -1,10 +1,10 @@
-// Module ID: 13802
-// Function ID: 105758
+// Module ID: 13853
+// Function ID: 106082
 // Name: FamilyCenterActivitySectionHeader
-// Dependencies: [57, 31, 27, 6770, 33, 4130, 689, 7124, 6828, 13797, 4126, 11061, 1212, 2198, 13803, 4660, 2]
+// Dependencies: [57, 31, 27, 6770, 33, 4130, 689, 7123, 6827, 13848, 4126, 11088, 1212, 2198, 13854, 4660, 2]
 // Exports: default
 
-// Module 13802 (FamilyCenterActivitySectionHeader)
+// Module 13853 (FamilyCenterActivitySectionHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,13 +23,13 @@ const require = arg1;
 function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(7124)();
-  let obj = require(6828) /* getActivityTypeTextConfigs */;
+  const tmp2 = importDefault(7123)();
+  let obj = require(6827) /* getActivityTypeTextConfigs */;
   const activityTypeTextConfigs = obj.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
-  const actionsForDisplayType = require(13797) /* useActionTotalsForDisplayType */.useActionsForDisplayType(displayType);
-  const obj4 = require(13797) /* useActionTotalsForDisplayType */;
-  let length = require(13797) /* useActionTotalsForDisplayType */.useFormattedTotalForDisplayType(displayType);
+  const actionsForDisplayType = require(13848) /* useActionTotalsForDisplayType */.useActionsForDisplayType(displayType);
+  const obj4 = require(13848) /* useActionTotalsForDisplayType */;
+  let length = require(13848) /* useActionTotalsForDisplayType */.useFormattedTotalForDisplayType(displayType);
   if (displayType === constants.PURCHASES) {
     let sectionHeaderResult;
     if (null != value) {
@@ -84,11 +84,11 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/p
 export default function FamilyCenterActivitySection(displayType) {
   displayType = displayType.displayType;
   let loadMoreButton = callback3();
-  let obj = displayType(13797);
+  let obj = displayType(13848);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  let obj1 = displayType(13797);
+  let obj1 = displayType(13848);
   const actionTotalsForDisplayType = obj1.useActionTotalsForDisplayType(displayType);
-  let obj2 = displayType(11061);
+  let obj2 = displayType(11088);
   const familyCenterActions = obj2.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const tmp3 = callback(React.useState(closure_7), 2);
@@ -105,7 +105,7 @@ export default function FamilyCenterActivitySection(displayType) {
     const formatToPlainStringResult = intl.formatToPlainString(loadMore(2198)["7dMmJY"], obj);
     obj = { style: loadMoreButton.container };
     obj1 = { displayType };
-    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => outer1_9(loadMore(13803), { action }, action.event_id)), ];
+    const items1 = [callback2(FamilyCenterActivitySectionHeader, obj1), substr.map((action) => outer1_9(loadMore(13854), { action }, action.event_id)), ];
     if (substr.length >= actionTotalsForDisplayType) {
       items1[2] = null;
       obj.children = items1;

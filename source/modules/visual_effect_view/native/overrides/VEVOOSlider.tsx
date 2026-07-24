@@ -1,8 +1,8 @@
-// Module ID: 14713
-// Function ID: 112152
-// Dependencies: [31, 33, 4130, 477, 689, 7523, 2]
+// Module ID: 14760
+// Function ID: 112473
+// Dependencies: [31, 33, 4130, 477, 689, 7658, 2]
 
-// Module 14713
+// Module 14760
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import set from "set";
@@ -53,7 +53,7 @@ export default require("result").memo(function VEVOOSlider(disabledOpacity) {
   obj.minimumTrackTintColor = importDefault(689).unsafe_rawColors.BRAND_500;
   obj.maximumTrackTintColor = importDefault(689).unsafe_rawColors.PRIMARY_400;
   obj.onValueChange = onValueChange;
-  const tmp3 = importDefault(7523);
+  const tmp3 = importDefault(7658);
   let fn;
   if (obj3.isAndroid()) {
     fn = () => true;

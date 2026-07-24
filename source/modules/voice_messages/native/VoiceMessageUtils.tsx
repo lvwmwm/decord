@@ -1,10 +1,10 @@
-// Module ID: 11362
-// Function ID: 88344
+// Module ID: 11391
+// Function ID: 88584
 // Name: generateBase64EncodedWaveform
-// Dependencies: [5, 4177, 11103, 11104, 653, 3, 11363, 206, 22, 4227, 675, 4099, 477, 2]
+// Dependencies: [5, 4177, 11130, 11131, 653, 3, 11392, 206, 22, 4227, 675, 4099, 477, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, startAudioRecording, triggerHaptic
 
-// Module 11362 (generateBase64EncodedWaveform)
+// Module 11391 (generateBase64EncodedWaveform)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
@@ -30,7 +30,7 @@ const require = arg1;
 function generateBase64EncodedWaveform(waveform) {
   let arr = waveform;
   if (waveform.length > closure_16) {
-    arr = importDefault(11363)(waveform, tmp);
+    arr = importDefault(11392)(waveform, tmp);
   }
   const mapped = arr.map((arg0) => Math.min(arg0, outer1_13));
   const uint8Array = new Uint8Array(mapped);

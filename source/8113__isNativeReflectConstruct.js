@@ -1,69 +1,29 @@
 // Module ID: 8113
-// Function ID: 64261
+// Function ID: 64244
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8114, 8101, 8102]
 
 // Module 8113 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+import jsxProd from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
+import "result";
+import { jsx } from "jsxProd";
+import tmp3 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
-  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return _classCallCheck;
+    return closure_0;
   }
   const result = _isNativeReflectConstruct();
 }
-const tmp2 = ((Component) => {
-  class Stop {
-    constructor() {
-      self = this;
-      tmp = Stop(this, apply);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      items = [];
-      combined = items.concat(array);
-      obj = outer1_3(apply);
-      tmp3 = outer1_2;
-      if (outer1_5()) {
-        if (!combined) {
-          combined = [];
-        }
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, combined, outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, combined);
-      }
-      tmp3Result = tmp3(self, constructResult);
-      apply = tmp3Result;
-      tmp3Result.setNativeProps = () => {
-        const parent = tmp3Result.props.parent;
-        if (parent) {
-          parent.forceUpdate();
-        }
-      };
-      return tmp3Result;
-    }
-  }
-  callback2(Stop, Component);
-  let items = [
-    {
-      key: "render",
-      value: function render() {
-        return null;
-      }
-    }
-  ];
-  return callback(Stop, items);
-})(require("result").Component);
-tmp2.displayName = "Stop";
+tmp3.displayName = "FeGaussianBlur";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { stdDeviation: 0, edgeMode: "none" });
 
-export default tmp2;
+export default tmp3;

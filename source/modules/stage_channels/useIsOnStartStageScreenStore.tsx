@@ -1,10 +1,10 @@
-// Module ID: 7479
-// Function ID: 60039
+// Module ID: 7559
+// Function ID: 60285
 // Name: setIsOnStartStageScreen
-// Dependencies: [31, 3758, 1906, 621, 682, 566, 1356, 7480, 2]
+// Dependencies: [31, 3758, 1906, 621, 682, 566, 1356, 7560, 2]
 // Exports: useUpdateIsOnStartStageScreenEffect
 
-// Module 7479 (setIsOnStartStageScreen)
+// Module 7559 (setIsOnStartStageScreen)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ export const useUpdateIsOnStartStageScreenEffect = function useUpdateIsOnStartSt
   const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_4.can(id(tmp3[6]).MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
   let tmp3 = stateFromStores1;
   if (stateFromStores1) {
-    tmp3 = !stateFromStores(7480)(id.id);
+    tmp3 = !stateFromStores(7560)(id.id);
   }
   const dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];

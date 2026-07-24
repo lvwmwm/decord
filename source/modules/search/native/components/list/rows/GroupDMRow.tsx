@@ -1,10 +1,10 @@
-// Module ID: 15347
-// Function ID: 117162
+// Module ID: 15394
+// Function ID: 117484
 // Name: GroupDMRow
-// Dependencies: [31, 33, 4320, 9096, 1273, 9097, 4126, 15346, 2]
+// Dependencies: [31, 33, 4320, 9134, 1273, 9135, 4126, 15393, 2]
 // Exports: default
 
-// Module 15347 (GroupDMRow)
+// Module 15394 (GroupDMRow)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -24,9 +24,9 @@ export default function GroupDMRow(channel) {
     onPress(channel.id);
   }, items);
   let obj = { size: channel(1273).AvatarSizes.LARGE_48, channel };
-  const tmp3 = onPress(9096);
-  const tmp4 = jsx(onPress(9096), { size: channel(1273).AvatarSizes.LARGE_48, channel });
-  const recipientsLabel = channel(9097).useRecipientsLabel(channel);
+  const tmp3 = onPress(9134);
+  const tmp4 = jsx(onPress(9134), { size: channel(1273).AvatarSizes.LARGE_48, channel });
+  const recipientsLabel = channel(9135).useRecipientsLabel(channel);
   let tmp6;
   if (null != recipientsLabel) {
     obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
@@ -49,5 +49,5 @@ export default function GroupDMRow(channel) {
   obj.trailing = trailing;
   obj.accessibilityActions = accessibilityActions;
   obj.onAccessibilityAction = onAccessibilityAction;
-  return jsx(channel(15346).SearchListRow, {});
+  return jsx(channel(15393).SearchListRow, {});
 };

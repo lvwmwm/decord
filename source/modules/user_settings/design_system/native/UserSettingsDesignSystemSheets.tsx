@@ -1,10 +1,10 @@
-// Module ID: 14463
-// Function ID: 110496
+// Module ID: 14513
+// Function ID: 110819
 // Name: DemoActionSheet
-// Dependencies: [57, 31, 27, 653, 33, 4130, 5500, 5186, 8390, 5501, 4541, 7512, 5502, 4098, 1324, 4543, 1212, 11548, 5919, 12699, 5167, 4126, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 5498, 5186, 8434, 5499, 4541, 7574, 5500, 4098, 1324, 4543, 1212, 7515, 5919, 12750, 5167, 4126, 2]
 // Exports: default
 
-// Module 14463 (DemoActionSheet)
+// Module 14513 (DemoActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -41,19 +41,19 @@ function DemoActionSheet() {
   let tmp16 = first1;
   if (first1) {
     obj = { onPress: NOOP, label: tmp11 };
-    tmp16 = callback2(require(8390) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, obj);
+    tmp16 = callback2(require(8434) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, obj);
   }
   obj.leading = tmp16;
   let tmp21 = first;
   if (first) {
     const obj1 = { onPress: NOOP };
-    tmp21 = callback2(require(5501) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj1);
+    tmp21 = callback2(require(5499) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj1);
   }
   obj.trailing = tmp21;
   obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   const obj2 = { spacing: 24 };
   const obj3 = {};
-  const items = [callback2(require(7512) /* TextInput */.TextInput, { value: first2, onChange: tmp5[1], label: "Title" }), ];
+  const items = [callback2(require(7574) /* TextInput */.TextInput, { value: first2, onChange: tmp5[1], label: "Title" }), ];
   const obj4 = {
     value: tmp8,
     onChange: tmp9,
@@ -64,14 +64,14 @@ function DemoActionSheet() {
       return tmp9("");
     }
   };
-  items[1] = callback2(require(7512) /* TextInput */.TextInput, obj4);
+  items[1] = callback2(require(7574) /* TextInput */.TextInput, obj4);
   obj3.children = items;
   const items1 = [callback3(require(4541) /* Stack */.Stack, obj3), , ];
   const obj5 = { hasIcons: false };
-  const items2 = [callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first1, onValueChange: tmp3[1], label: "Show Leading" }), callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first, onValueChange: tmp[1], label: "Show Trailing" })];
+  const items2 = [callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first1, onValueChange: tmp3[1], label: "Show Leading" }), callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first, onValueChange: tmp[1], label: "Show Trailing" })];
   obj5.children = items2;
-  items1[1] = callback3(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj5);
-  items1[2] = callback2(require(7512) /* TextInput */.TextInput, {
+  items1[1] = callback3(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj5);
+  items1[2] = callback2(require(7574) /* TextInput */.TextInput, {
     value: tmp11,
     onChange: tmp12,
     label: "Leading",
@@ -83,7 +83,7 @@ function DemoActionSheet() {
   });
   obj2.children = items1;
   obj.children = callback3(require(4541) /* Stack */.Stack, obj2);
-  return callback2(require(5500) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5498) /* ActionSheet */.ActionSheet, obj);
 }
 function showDemoPromoSheet() {
   importDefault(4098).openLazy(() => Promise.resolve(outer1_12), "promo-sheet-demo");
@@ -107,9 +107,9 @@ function DemoPromoSheet() {
     obj.actions = tmp2;
     let obj2 = obj;
   } else {
-    obj2 = { illustration: callback2(importDefault(12699), {}), title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp2 };
+    obj2 = { illustration: callback2(importDefault(12750), {}), title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp2 };
   }
-  return callback2(require(11548) /* PromoSheet */.PromoSheet, obj2);
+  return callback2(require(7515) /* PromoSheet */.PromoSheet, obj2);
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, alignItems: "center" } });

@@ -1,10 +1,10 @@
-// Module ID: 7728
-// Function ID: 61480
+// Module ID: 7817
+// Function ID: 61766
 // Name: castHook
-// Dependencies: [1852, 7649, 7651, 1212, 1392, 3771, 7729, 7652, 2]
+// Dependencies: [1852, 7738, 7740, 1212, 1392, 3771, 7818, 7741, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 7728 (castHook)
+// Module 7817 (castHook)
 import { EMOJI_URL_BASE_SIZE } from "set";
 
 function castHook(arg0) {
@@ -14,17 +14,17 @@ function castHook(arg0) {
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export const createPollResultSystemMessage = function createPollResultSystemMessage(message) {
-  const tmp = importDefault(7729)(message.message.embeds[0]);
+  const tmp = importDefault(7818)(message.message.embeds[0]);
   if (null == tmp) {
     return null;
   } else if (null == message.message.messageReference) {
     return null;
   } else {
     message = message.message;
-    const messageAuthorWithProcessedColor = require(7649) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
+    const messageAuthorWithProcessedColor = require(7738) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
     let obj = { username: messageAuthorWithProcessedColor.nick };
     obj = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-    obj.usernameOnClick = importDefault(7651)(obj);
+    obj.usernameOnClick = importDefault(7740)(obj);
     obj.title = tmp.questionText;
     let obj1 = { action: "bindJumpToMessage", targetChannelId: message.messageReference.channel_id, targetMessageId: message.messageReference.message_id, medium: true };
     obj.titleOnClick = obj1;
@@ -84,7 +84,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       }
     }
     const obj10 = {};
-    const merged3 = Object.assign(importDefault(7652)(message));
+    const merged3 = Object.assign(importDefault(7741)(message));
     obj10["content"] = formatToPartsResult;
     return obj10;
   }

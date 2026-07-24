@@ -1,5 +1,5 @@
 // Module ID: 5414
-// Function ID: 46421
+// Function ID: 46426
 // Name: isComponentClass
 // Dependencies: [31]
 // Exports: getValidComponent, isComponentClass

@@ -1,9 +1,9 @@
-// Module ID: 8182
-// Function ID: 64585
+// Module ID: 8226
+// Function ID: 64813
 // Name: AppLauncherEntrypoint
 // Dependencies: [2]
 
-// Module 8182 (AppLauncherEntrypoint)
+// Module 8226 (AppLauncherEntrypoint)
 const result = require("set").fileFinishedImporting("modules/app_launcher/AppLauncherTypes.tsx");
 
 export const AppLauncherEntrypoint = { NONE: "NONE", TEXT: "TEXT", VOICE: "VOICE" };

@@ -1,10 +1,10 @@
-// Module ID: 15457
-// Function ID: 118963
+// Module ID: 15504
+// Function ID: 119285
 // Name: IncomingRequestRow
-// Dependencies: [31, 4122, 4167, 8818, 653, 33, 3991, 624, 1212, 3969, 14912, 11661, 8834, 15169, 15458, 2]
+// Dependencies: [31, 4122, 4167, 8857, 653, 33, 3991, 624, 1212, 3969, 14959, 11688, 8873, 15216, 15505, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 15457 (IncomingRequestRow)
+// Module 15504 (IncomingRequestRow)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

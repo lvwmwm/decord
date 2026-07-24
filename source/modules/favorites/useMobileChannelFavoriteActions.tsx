@@ -1,10 +1,10 @@
-// Module ID: 10348
-// Function ID: 79865
+// Module ID: 10377
+// Function ID: 80057
 // Name: useMobileChannelFavoriteActions
-// Dependencies: [1194, 1917, 1351, 10190, 5077, 566, 2]
+// Dependencies: [1194, 1917, 1351, 10220, 5077, 566, 2]
 // Exports: default
 
-// Module 10348 (useMobileChannelFavoriteActions)
+// Module 10377 (useMobileChannelFavoriteActions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -16,7 +16,7 @@ export default function useMobileChannelFavoriteActions(id, FavoritesGuildChanne
   let hasAccess;
   let hasHigherPrivileges;
   const _require = id;
-  let obj = _require(10190);
+  let obj = _require(10220);
   const favoritesAccess = obj.useFavoritesAccess(FavoritesGuildChannelList);
   ({ hasAccess, hasHigherPrivileges } = favoritesAccess);
   let result = _require(5077).canFavoriteChannelType(id, hasHigherPrivileges);
@@ -24,8 +24,8 @@ export default function useMobileChannelFavoriteActions(id, FavoritesGuildChanne
   const items = [closure_4];
   const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.isFavorite(id.id));
   const obj3 = _require(566);
-  const isFavoritesGuildSelected = _require(10190).useIsFavoritesGuildSelected();
-  const obj4 = _require(10190);
+  const isFavoritesGuildSelected = _require(10220).useIsFavoritesGuildSelected();
+  const obj4 = _require(10220);
   const items1 = [closure_3, _isNativeReflectConstruct];
   obj = { hasFavoritesAccess: hasAccess };
   if (result) {

@@ -1,10 +1,10 @@
-// Module ID: 6996
-// Function ID: 55943
+// Module ID: 6995
+// Function ID: 55952
 // Name: snowflakeSequence
 // Dependencies: [21, 2]
 // Exports: createNonce
 
-// Module 6996 (snowflakeSequence)
+// Module 6995 (snowflakeSequence)
 let c2 = 0;
 const snowflakeSequence = new require("DISCORD_EPOCH").SnowflakeSequence();
 const result = require("set").fileFinishedImporting("modules/messages/createNonce.tsx");

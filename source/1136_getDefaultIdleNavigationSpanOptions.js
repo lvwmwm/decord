@@ -1,5 +1,5 @@
 // Module ID: 1136
-// Function ID: 12920
+// Function ID: 12921
 // Name: getDefaultIdleNavigationSpanOptions
 // Dependencies: [27, 794, 1098, 1137, 1134]
 // Exports: addDefaultOpForSpanFrom, addThreadInfoToSpan, setMainThreadInfo, startIdleNavigationSpan

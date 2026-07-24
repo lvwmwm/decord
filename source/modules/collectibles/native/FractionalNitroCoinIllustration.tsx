@@ -1,10 +1,10 @@
-// Module ID: 8717
-// Function ID: 68981
+// Module ID: 8758
+// Function ID: 69199
 // Name: FRACTIONAL_NITRO_COIN_SIZE
 // Dependencies: [31, 655, 33, 5807, 2]
 // Exports: FractionalNitroCoinIllustration
 
-// Module 8717 (FRACTIONAL_NITRO_COIN_SIZE)
+// Module 8758 (FRACTIONAL_NITRO_COIN_SIZE)
 import "result";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 7608
-// Function ID: 60972
+// Module ID: 7697
+// Function ID: 61258
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4129, 1348, 3758, 7609, 7606, 653, 482, 33, 4130, 689, 5450, 4562, 4126, 3974, 4086, 566, 4660, 7610, 1456, 4528, 4539, 7603, 7601, 4324, 3843, 7612, 7616, 7123, 5121, 7617, 7618, 7619, 7620, 12326, 12327, 12328, 12329, 12330, 12331, 12332, 12333, 12334, 12336, 12337, 12338, 12339, 12340, 12341, 12342, 12343, 12346, 2]
+// Dependencies: [57, 31, 27, 4129, 1348, 3758, 7698, 7695, 653, 482, 33, 4130, 689, 5450, 4562, 4126, 3974, 4086, 566, 4660, 7699, 1456, 4528, 4539, 7692, 7690, 4324, 3843, 7701, 7705, 7122, 5121, 7706, 7707, 7708, 7709, 12353, 12354, 12355, 12356, 12357, 12358, 12359, 12360, 12361, 12363, 12364, 12365, 12366, 12367, 12368, 12369, 12370, 12373, 2]
 // Exports: default
 
-// Module 7608 (_createForOfIteratorHelperLoose)
+// Module 7697 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
@@ -191,7 +191,7 @@ function ChildItem(child) {
   }
   items1[1] = stateFromStores;
   obj2.children = items1;
-  const items2 = [closure_17(closure_6, obj2), callback2(importDefault(7610), {})];
+  const items2 = [closure_17(closure_6, obj2), callback2(importDefault(7699), {})];
   obj1.children = items2;
   obj.children = closure_17(closure_6, obj1);
   return callback2(child(4660).PressableHighlight, obj);

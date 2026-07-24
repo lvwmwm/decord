@@ -1,5 +1,5 @@
 // Module ID: 661
-// Function ID: 8028
+// Function ID: 8029
 // Name: GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
 // Dependencies: [2]
 

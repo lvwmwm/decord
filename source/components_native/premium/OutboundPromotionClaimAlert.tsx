@@ -1,10 +1,10 @@
-// Module ID: 12489
-// Function ID: 96789
+// Module ID: 12542
+// Function ID: 97113
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [57, 31, 27, 33, 4130, 689, 12490, 5464, 5484, 7452, 12491, 4126, 1212, 4543, 5492, 12492, 4561, 3827, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 12543, 5462, 5482, 7428, 12544, 4126, 1212, 4543, 5490, 12545, 4561, 3827, 2]
 // Exports: default
 
-// Module 12489 (OutboundPromotionClaimAlert)
+// Module 12542 (OutboundPromotionClaimAlert)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

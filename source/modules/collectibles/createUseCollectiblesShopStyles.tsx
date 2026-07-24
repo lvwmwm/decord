@@ -1,10 +1,10 @@
-// Module ID: 9775
-// Function ID: 76016
+// Module ID: 9807
+// Function ID: 76210
 // Name: getMidpointColor
-// Dependencies: [57, 4122, 7893, 6784, 624, 2]
+// Dependencies: [57, 4122, 7980, 6784, 624, 2]
 // Exports: default
 
-// Module 9775 (getMidpointColor)
+// Module 9807 (getMidpointColor)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -19,8 +19,8 @@ function getMidpointColor(toRgb, toRgb2) {
   ({ r: arr[0], g: arr[1], b: arr[2] } = toRgbResult);
   const items1 = [, , ];
   ({ r: arr2[0], g: arr2[1], b: arr2[2] } = toRgbResult1);
-  const obj = require(7893) /* getProfileTheme */;
-  [tmp4, tmp5, tmp6] = callback(require(7893) /* getProfileTheme */.getValueInColorGradientByPercentage(items, items1, 50), 3);
+  const obj = require(7980) /* getProfileTheme */;
+  [tmp4, tmp5, tmp6] = callback(require(7980) /* getProfileTheme */.getValueInColorGradientByPercentage(items, items1, 50), 3);
   return importDefault(6784)({ r, g, b });
 }
 function getBackgroundColors(dark) {

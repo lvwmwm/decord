@@ -1,10 +1,10 @@
-// Module ID: 8920
-// Function ID: 70365
+// Module ID: 8959
+// Function ID: 70580
 // Name: useCanRingToGuildVoiceChannel
-// Dependencies: [1194, 4809, 1348, 1917, 4946, 3758, 4217, 3767, 4146, 653, 566, 8921, 4949, 4574, 2]
+// Dependencies: [1194, 4809, 1348, 1917, 4946, 3758, 4217, 3767, 4146, 653, 566, 8960, 4949, 4574, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 8920 (useCanRingToGuildVoiceChannel)
+// Module 8959 (useCanRingToGuildVoiceChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -65,7 +65,7 @@ function useCanRingToGuildVoiceChannel(user, DisconnectedUserRow, stateFromStore
   }
   obj.guildId = guild_id;
   obj.location = str;
-  let enabled = importDefault(8921).useExperiment(obj).enabled;
+  let enabled = importDefault(8960).useExperiment(obj).enabled;
   if (null != stateFromStores) {
     const type = stateFromStores.type;
   }
@@ -158,7 +158,7 @@ export const canRingUsersInChannel = function canRingUsersInChannel(channel) {
     }
     return tmp12;
   } else if (tmp === tmp2) {
-    let obj = importDefault(8921);
+    let obj = importDefault(8960);
     obj = { guildId: channel.guild_id, location: "ring" };
     let enabled = obj.getCurrentConfig(obj).enabled;
     voiceState = voiceState.getVoiceState(channel.guild_id, id.getId());

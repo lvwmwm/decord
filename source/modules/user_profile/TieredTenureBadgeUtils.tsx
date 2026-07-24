@@ -1,10 +1,10 @@
-// Module ID: 6877
-// Function ID: 54382
+// Module ID: 6876
+// Function ID: 54390
 // Name: getTieredTenureBadgeData
 // Dependencies: [1851, 3712, 2]
 // Exports: getEarnedOnDate, getTieredTenureBadge
 
-// Module 6877 (getTieredTenureBadgeData)
+// Module 6876 (getTieredTenureBadgeData)
 import { TENURE_BADGES } from "GuildFeatures";
 
 function getTieredTenureBadgeData(tieredTenureBadge) {

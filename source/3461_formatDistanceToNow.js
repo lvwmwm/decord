@@ -1,5 +1,5 @@
 // Module ID: 3461
-// Function ID: 26811
+// Function ID: 26812
 // Name: formatDistanceToNow
 // Dependencies: [3457, 3210]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 13795
-// Function ID: 105721
+// Module ID: 13846
+// Function ID: 106045
 // Name: FamilyCenterUsernameHeader
 // Dependencies: [31, 27, 33, 4130, 3969, 4126, 2]
 // Exports: default
 
-// Module 13795 (FamilyCenterUsernameHeader)
+// Module 13846 (FamilyCenterUsernameHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

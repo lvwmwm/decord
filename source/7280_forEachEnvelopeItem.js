@@ -1,5 +1,5 @@
 // Module ID: 7280
-// Function ID: 58657
+// Function ID: 58686
 // Name: forEachEnvelopeItem
 // Dependencies: [65, 57, 7237, 7281, 7242, 7283]
 // Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope

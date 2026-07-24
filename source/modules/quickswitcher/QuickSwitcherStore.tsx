@@ -1,9 +1,9 @@
-// Module ID: 7090
-// Function ID: 56809
+// Module ID: 7089
+// Function ID: 56818
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 7091, 5039, 1278, 1194, 1348, 4468, 1907, 1917, 1838, 3758, 4142, 1906, 3947, 4325, 653, 7093, 7094, 22, 7105, 4974, 1212, 7106, 1327, 587, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 7090, 5039, 1278, 1194, 1348, 4468, 1907, 1917, 1838, 3758, 4142, 1906, 3947, 4325, 653, 7092, 7093, 22, 7104, 4974, 1212, 7105, 1327, 587, 566, 686, 2]
 
-// Module 7090 (_isNativeReflectConstruct)
+// Module 7089 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -119,18 +119,18 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getGeneralQueryResultTypes() {
-  const GameProfileInQuickswitcherExperiment = require(7093) /* GameProfileInQuickswitcherExperiment */.GameProfileInQuickswitcherExperiment;
-  const items = [require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER, require(7094) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM, require(7094) /* sortByMatchScore */.AutocompleterResultTypes.TEXT_CHANNEL, require(7094) /* sortByMatchScore */.AutocompleterResultTypes.GUILD, require(7094) /* sortByMatchScore */.AutocompleterResultTypes.APPLICATION, , ];
+  const GameProfileInQuickswitcherExperiment = require(7092) /* GameProfileInQuickswitcherExperiment */.GameProfileInQuickswitcherExperiment;
+  const items = [require(7093) /* sortByMatchScore */.AutocompleterResultTypes.USER, require(7093) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM, require(7093) /* sortByMatchScore */.AutocompleterResultTypes.TEXT_CHANNEL, require(7093) /* sortByMatchScore */.AutocompleterResultTypes.GUILD, require(7093) /* sortByMatchScore */.AutocompleterResultTypes.APPLICATION, , ];
   if (GameProfileInQuickswitcherExperiment.getConfig({ location: "QuickSwitcherStore.handleQuickSwitcherShow" }).enabled) {
-    const items1 = [require(7094) /* sortByMatchScore */.AutocompleterResultTypes.GAME_PROFILE];
+    const items1 = [require(7093) /* sortByMatchScore */.AutocompleterResultTypes.GAME_PROFILE];
     let items2 = items1;
   } else {
     items2 = [];
   }
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, 5);
-  items[arraySpreadResult] = require(7094) /* sortByMatchScore */.AutocompleterResultTypes.LINK;
+  items[arraySpreadResult] = require(7093) /* sortByMatchScore */.AutocompleterResultTypes.LINK;
   const sum = arraySpreadResult + 1;
-  items[sum] = require(7094) /* sortByMatchScore */.AutocompleterResultTypes.IN_APP_NAVIGATION;
+  items[sum] = require(7093) /* sortByMatchScore */.AutocompleterResultTypes.IN_APP_NAVIGATION;
   return items;
 }
 function handleConnectionOpen() {
@@ -143,7 +143,7 @@ function handleConnectionOpen() {
   let closure_34 = [];
 }
 function generateResultFromId(arg0) {
-  const tmp = importDefault(7105)(arg0);
+  const tmp = importDefault(7104)(arg0);
   let tmp2 = null;
   if (null != tmp) {
     if (null == c30) {
@@ -393,7 +393,7 @@ function generateInitialResults() {
   }
 }
 function updateResults(arr, arg1) {
-  if (require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER === c30) {
+  if (require(7093) /* sortByMatchScore */.AutocompleterResultTypes.USER === c30) {
     let name = store2.getGuild(store3.getGuildId());
     if (null != name) {
       const intl7 = require(1212) /* getSystemLocale */.intl;
@@ -405,37 +405,37 @@ function updateResults(arr, arg1) {
       const intl6 = require(1212) /* getSystemLocale */.intl;
       formatToPlainStringResult = intl6.string(require(1212) /* getSystemLocale */.t.XFYW1o);
     }
-    arr.unshift(require(7094) /* sortByMatchScore */.createHeaderResult(formatToPlainStringResult));
+    arr.unshift(require(7093) /* sortByMatchScore */.createHeaderResult(formatToPlainStringResult));
     let table = arr;
-    const obj6 = require(7094) /* sortByMatchScore */;
+    const obj6 = require(7093) /* sortByMatchScore */;
   } else {
-    if (require(7094) /* sortByMatchScore */.AutocompleterResultTypes.TEXT_CHANNEL === tmp) {
+    if (require(7093) /* sortByMatchScore */.AutocompleterResultTypes.TEXT_CHANNEL === tmp) {
       const intl5 = require(1212) /* getSystemLocale */.intl;
-      arr.unshift(require(7094) /* sortByMatchScore */.createHeaderResult(intl5.string(require(1212) /* getSystemLocale */.t.W26k4V)));
+      arr.unshift(require(7093) /* sortByMatchScore */.createHeaderResult(intl5.string(require(1212) /* getSystemLocale */.t.W26k4V)));
       table = arr;
-      const obj5 = require(7094) /* sortByMatchScore */;
-    } else if (require(7094) /* sortByMatchScore */.AutocompleterResultTypes.VOICE_CHANNEL === tmp) {
+      const obj5 = require(7093) /* sortByMatchScore */;
+    } else if (require(7093) /* sortByMatchScore */.AutocompleterResultTypes.VOICE_CHANNEL === tmp) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
-      arr.unshift(require(7094) /* sortByMatchScore */.createHeaderResult(intl4.string(require(1212) /* getSystemLocale */.t.zUoI5C)));
+      arr.unshift(require(7093) /* sortByMatchScore */.createHeaderResult(intl4.string(require(1212) /* getSystemLocale */.t.zUoI5C)));
       table = arr;
-      const obj4 = require(7094) /* sortByMatchScore */;
-    } else if (require(7094) /* sortByMatchScore */.AutocompleterResultTypes.GUILD === tmp) {
+      const obj4 = require(7093) /* sortByMatchScore */;
+    } else if (require(7093) /* sortByMatchScore */.AutocompleterResultTypes.GUILD === tmp) {
       const intl3 = require(1212) /* getSystemLocale */.intl;
-      arr.unshift(require(7094) /* sortByMatchScore */.createHeaderResult(intl3.string(require(1212) /* getSystemLocale */.t.olADPs)));
+      arr.unshift(require(7093) /* sortByMatchScore */.createHeaderResult(intl3.string(require(1212) /* getSystemLocale */.t.olADPs)));
       table = arr;
-      const obj3 = require(7094) /* sortByMatchScore */;
-    } else if (require(7094) /* sortByMatchScore */.AutocompleterResultTypes.APPLICATION === tmp) {
+      const obj3 = require(7093) /* sortByMatchScore */;
+    } else if (require(7093) /* sortByMatchScore */.AutocompleterResultTypes.APPLICATION === tmp) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
-      arr.unshift(require(7094) /* sortByMatchScore */.createHeaderResult(intl2.string(require(1212) /* getSystemLocale */.t.VwK1ld)));
+      arr.unshift(require(7093) /* sortByMatchScore */.createHeaderResult(intl2.string(require(1212) /* getSystemLocale */.t.VwK1ld)));
       table = arr;
-      const obj2 = require(7094) /* sortByMatchScore */;
-    } else if (require(7094) /* sortByMatchScore */.AutocompleterResultTypes.GAME_PROFILE === tmp) {
-      obj = require(7094) /* sortByMatchScore */;
+      const obj2 = require(7093) /* sortByMatchScore */;
+    } else if (require(7093) /* sortByMatchScore */.AutocompleterResultTypes.GAME_PROFILE === tmp) {
+      obj = require(7093) /* sortByMatchScore */;
       const intl = require(1212) /* getSystemLocale */.intl;
       arr.unshift(obj.createHeaderResult(intl.string(require(1212) /* getSystemLocale */.t.gEp2SG)));
       table = arr;
     } else {
-      const GameProfileInQuickswitcherExperiment = require(7093) /* GameProfileInQuickswitcherExperiment */.GameProfileInQuickswitcherExperiment;
+      const GameProfileInQuickswitcherExperiment = require(7092) /* GameProfileInQuickswitcherExperiment */.GameProfileInQuickswitcherExperiment;
       obj = { location: "QuickSwitcherStore.updateResults" };
       if (GameProfileInQuickswitcherExperiment.getConfig(obj).enabled) {
         const found = arr.filter((type) => type.type === outer1_0(outer1_2[21]).AutocompleterResultTypes.GAME_PROFILE);
@@ -451,16 +451,16 @@ function updateResults(arr, arg1) {
       closure_32 = arg1;
       const _Math = Math;
       closure_33 = Math.max(arg1.length, closure_33);
-      let closure_27 = require(7094) /* sortByMatchScore */.findNextSelectedResult(require(7094) /* sortByMatchScore */.FindResultDirections.DOWN, -1, table);
-      const obj9 = require(7094) /* sortByMatchScore */;
+      let closure_27 = require(7093) /* sortByMatchScore */.findNextSelectedResult(require(7093) /* sortByMatchScore */.FindResultDirections.DOWN, -1, table);
+      const obj9 = require(7093) /* sortByMatchScore */;
     } else {
       let tmp36 = null != tmp62;
       if (tmp36) {
-        tmp36 = tmp62.type === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.HEADER;
+        tmp36 = tmp62.type === require(7093) /* sortByMatchScore */.AutocompleterResultTypes.HEADER;
       }
       if (tmp36) {
-        closure_27 = require(7094) /* sortByMatchScore */.findNextSelectedResult(require(7094) /* sortByMatchScore */.FindResultDirections.DOWN, closure_27, table);
-        const obj8 = require(7094) /* sortByMatchScore */;
+        closure_27 = require(7093) /* sortByMatchScore */.findNextSelectedResult(require(7093) /* sortByMatchScore */.FindResultDirections.DOWN, closure_27, table);
+        const obj8 = require(7093) /* sortByMatchScore */;
       }
     }
     tmp3.emitChange();
@@ -486,7 +486,7 @@ function handleQuickSwitcherShow(arg0) {
   if (null != store4) {
     let tmp6 = store4;
   } else {
-    tmp6 = importDefault(7094);
+    tmp6 = importDefault(7093);
     const tmp9 = getGeneralQueryResultTypes();
     let num2 = 5;
     if (null != queryMode) {
@@ -731,7 +731,7 @@ tmp3 = new tmp3(require("dispatcher"), {
         }
         store4.setLimit(num);
         const guildId = store3.getGuildId();
-        if (queryMode === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
+        if (queryMode === require(7093) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
           if (null != tmp9) {
             let obj = {};
             obj = { guild: tmp9, friends: true };
@@ -739,7 +739,7 @@ tmp3 = new tmp3(require("dispatcher"), {
             store4.setOptions(obj, true);
           }
         }
-        if (queryMode === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.VOICE_CHANNEL) {
+        if (queryMode === require(7093) /* sortByMatchScore */.AutocompleterResultTypes.VOICE_CHANNEL) {
           const obj1 = { voiceChannelGuildFilter: null };
           store4.setOptions(obj1, true);
         } else {
@@ -747,7 +747,7 @@ tmp3 = new tmp3(require("dispatcher"), {
           store4.setOptions(obj, true);
         }
       }
-      if (queryMode === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
+      if (queryMode === require(7093) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
         const guildId1 = store3.getGuildId();
         let tmp26 = null;
         if (null != guildId1) {

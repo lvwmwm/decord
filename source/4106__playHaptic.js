@@ -1,5 +1,5 @@
 // Module ID: 4106
-// Function ID: 33983
+// Function ID: 33984
 // Name: _playHaptic
 // Dependencies: [5, 27, 4102]
 // Exports: playHaptic

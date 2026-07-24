@@ -1,10 +1,10 @@
-// Module ID: 13761
-// Function ID: 105539
+// Module ID: 13812
+// Function ID: 105863
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [27, 1849, 7662, 653, 33, 677, 9230, 682, 566, 3743, 13762, 1212, 3712, 10095, 13764, 2]
+// Dependencies: [27, 1849, 7751, 653, 33, 677, 9266, 682, 566, 3743, 13813, 1212, 3712, 10127, 13815, 2]
 // Exports: fetchHarvestStatus
 
-// Module 13761 (useIsHarvestRequestDisabled)
+// Module 13812 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -20,8 +20,8 @@ function useIsHarvestRequestDisabled() {
   let tmp4 = null == stateFromStores;
   if (!tmp4) {
     if (!harvestDisabledResult) {
-      harvestDisabledResult = require(13762) /* harvestDisabled */.harvestDisabled(tmp2, stateFromStores);
-      const obj2 = require(13762) /* harvestDisabled */;
+      harvestDisabledResult = require(13813) /* harvestDisabled */.harvestDisabled(tmp2, stateFromStores);
+      const obj2 = require(13813) /* harvestDisabled */;
     }
     tmp4 = harvestDisabledResult;
   }
@@ -84,7 +84,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(13764).default;
+    return require(13815).default;
   }
 };
 const route = createToggle.createRoute(obj);
@@ -92,7 +92,7 @@ const result = require("MobileSetting").fileFinishedImporting("modules/user_sett
 
 export default route;
 export const fetchHarvestStatus = function fetchHarvestStatus() {
-  const harvestStatus = require(9230) /* saveProfileAndAccountRequest */.getHarvestStatus();
+  const harvestStatus = require(9266) /* saveProfileAndAccountRequest */.getHarvestStatus();
   harvestStatus.then((arg0) => {
     let closure_0 = arg0;
     outer1_0(outer1_2[7]).batchUpdates(() => {

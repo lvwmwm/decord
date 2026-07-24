@@ -1,5 +1,5 @@
 // Module ID: 1865
-// Function ID: 20536
+// Function ID: 20537
 // Name: parseServerPerkConfigKind
 // Dependencies: [57, 1866, 483, 1867, 2]
 // Exports: getPerkConfig, parseServerPerks

@@ -1,10 +1,10 @@
-// Module ID: 8746
-// Function ID: 69161
+// Module ID: 8785
+// Function ID: 69376
 // Name: BundleProductPreview
-// Dependencies: [57, 31, 27, 655, 33, 4130, 689, 1876, 8233, 8747, 8207, 1212, 8749, 8360, 8758, 8760, 2]
+// Dependencies: [57, 31, 27, 655, 33, 4130, 689, 1876, 8277, 8786, 8251, 1212, 8788, 8404, 8797, 8799, 2]
 // Exports: default
 
-// Module 8746 (BundleProductPreview)
+// Module 8785 (BundleProductPreview)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -26,10 +26,10 @@ function BundleProductPreview(onActiveItemTypeChange) {
   let product;
   let width;
   ({ product, width, handlePreviewPress, onTrackPress, onActiveItemChange } = onActiveItemTypeChange);
-  let obj = require(8233) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8277) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment("ProductDetailsActionSheetPreview").enabled) {
     obj = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange };
-    let tmp2Result = tmp2(importDefault(8747), obj);
+    let tmp2Result = tmp2(importDefault(8786), obj);
   } else {
     obj = { style: tmp.previewDivider };
     const obj1 = { product, width, handlePreviewPress, onTrackPress, onActiveItemChange, onActiveItemTypeChange: onActiveItemTypeChange.onActiveItemTypeChange };
@@ -193,7 +193,7 @@ export default function ProductDetailsActionSheetPreview(arg0) {
   } else {
     obj = { style: tmp.previewDivider };
     const obj1 = { product, width: first, handlePreviewPress, onTrackPress };
-    obj.children = callback4(_require(8749).IndividualProductPreview, obj1);
+    obj.children = callback4(_require(8788).IndividualProductPreview, obj1);
     tmp12 = callback4(View, obj);
   }
   obj.children = tmp12;

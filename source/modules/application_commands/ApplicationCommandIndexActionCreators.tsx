@@ -1,10 +1,10 @@
-// Module ID: 7924
-// Function ID: 63159
+// Module ID: 8011
+// Function ID: 63470
 // Name: _fetchApplicationCommandIndex
 // Dependencies: [5, 653, 686, 507, 664, 675, 1327, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 7924 (_fetchApplicationCommandIndex)
+// Module 8011 (_fetchApplicationCommandIndex)
 import expandLocation from "expandLocation";
 import ME from "ME";
 

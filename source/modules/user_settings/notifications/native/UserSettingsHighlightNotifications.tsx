@@ -1,10 +1,10 @@
-// Module ID: 14354
-// Function ID: 109778
+// Module ID: 14404
+// Function ID: 110101
 // Name: Row
-// Dependencies: [31, 1838, 4970, 4325, 653, 33, 5079, 5073, 566, 5515, 5504, 7495, 2]
+// Dependencies: [31, 1838, 4970, 4325, 653, 33, 5079, 5073, 566, 5513, 5502, 7636, 2]
 // Exports: default
 
-// Module 14354 (Row)
+// Module 14404 (Row)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -44,12 +44,12 @@ function Row(guildId) {
     }
     obj = { guild };
     obj = { label: guild.name };
-    obj.icon = jsx(importDefault(5515), { label: guild.name });
+    obj.icon = jsx(importDefault(5513), { label: guild.name });
     obj.value = !muted;
     obj.onValueChange = callback;
     obj.start = isStart;
     obj.end = isEnd;
-    return jsx(guildId(5504).TableSwitchRow, { label: guild.name });
+    return jsx(guildId(5502).TableSwitchRow, { label: guild.name });
   }
 }
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsHighlightNotifications.tsx");
@@ -62,7 +62,7 @@ export default function UserSettingsHighlightNotifications() {
   let tmp2 = null;
   if (0 !== stateFromStoresArray.length) {
     obj = { children: tmp };
-    tmp2 = jsx(stateFromStoresArray(7495).Form, { children: tmp });
+    tmp2 = jsx(stateFromStoresArray(7636).Form, { children: tmp });
   }
   return tmp2;
 };

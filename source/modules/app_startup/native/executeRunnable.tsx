@@ -1,10 +1,10 @@
-// Module ID: 15902
-// Function ID: 122871
+// Module ID: 15949
+// Function ID: 123193
 // Name: executeRunnable
-// Dependencies: [5, 15903, 3, 12599, 652, 25, 14, 20, 566, 2]
+// Dependencies: [5, 15950, 3, 12650, 652, 25, 14, 20, 566, 2]
 // Exports: default
 
-// Module 15902 (executeRunnable)
+// Module 15949 (executeRunnable)
 import prepareIdentify from "prepareIdentify";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -20,8 +20,8 @@ export default function executeRunnable(arg0, arg1) {
   let tmp2 = importDefault(3);
   tmp2 = new tmp2(arg0);
   tmp2.log("Loading the " + arg0 + " Discord runnable");
-  importAll(12599).setIsPaused(false);
-  const obj2 = importAll(12599);
+  importAll(12650).setIsPaused(false);
+  const obj2 = importAll(12650);
   // CreateGeneratorClosureLongIndex (0x67)
   const combined = "executeRunnable:" + arg0;
   return importAll(652).withRequest(combined, callback(tmp));

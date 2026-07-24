@@ -1,9 +1,9 @@
-// Module ID: 10451
-// Function ID: 80638
+// Module ID: 10480
+// Function ID: 80830
 // Name: LAUNCH_PAD_SPRING_CONFIG
 // Dependencies: [27, 477, 4110, 2]
 
-// Module 10451 (LAUNCH_PAD_SPRING_CONFIG)
+// Module 10480 (LAUNCH_PAD_SPRING_CONFIG)
 import { Dimensions } from "get ActivityIndicator";
 import set from "set";
 import set from "getSystemVersion";

@@ -1,10 +1,10 @@
-// Module ID: 8707
-// Function ID: 68932
+// Module ID: 8748
+// Function ID: 69150
 // Name: LimitedTimeBadge
 // Dependencies: [31, 27, 1921, 1278, 33, 4130, 689, 1212, 566, 3976, 6678, 4126, 2]
 // Exports: default
 
-// Module 8707 (LimitedTimeBadge)
+// Module 8748 (LimitedTimeBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

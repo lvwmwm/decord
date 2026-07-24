@@ -1,5 +1,5 @@
 // Module ID: 6753
-// Function ID: 52556
+// Function ID: 52578
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1352, 4468, 4566, 653, 482, 6754, 1881, 6755, 483, 22, 44, 24, 4324, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected

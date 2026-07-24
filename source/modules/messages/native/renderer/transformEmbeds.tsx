@@ -1,10 +1,10 @@
-// Module ID: 7787
-// Function ID: 62148
+// Module ID: 7878
+// Function ID: 62469
 // Name: getURL
-// Dependencies: [27, 653, 7788, 7789, 4464, 7790, 7791, 477, 7635, 4317, 7765, 3800, 5670, 5675, 4347, 1212, 2]
+// Dependencies: [27, 653, 7879, 7880, 4464, 7881, 7882, 477, 7724, 4317, 7858, 3800, 5670, 5675, 4347, 1212, 2]
 // Exports: default
 
-// Module 7787 (getURL)
+// Module 7878 (getURL)
 import { processColor } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 

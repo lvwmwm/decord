@@ -1,10 +1,10 @@
-// Module ID: 11603
-// Function ID: 90177
+// Module ID: 11630
+// Function ID: 90415
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [31, 33, 11553, 11531, 11528, 11552, 11600, 11604, 2]
+// Dependencies: [31, 33, 11582, 11561, 11558, 11581, 11627, 11631, 2]
 // Exports: default
 
-// Module 11603 (GuildPowerupsSinglePerkCard)
+// Module 11630 (GuildPowerupsSinglePerkCard)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -15,14 +15,14 @@ export default function GuildPowerupsSinglePerkCard(badge) {
   let guildId;
   let powerup;
   ({ guildId, powerup } = badge);
-  const tmp = importDefault(11553)(powerup, true);
-  const tmp2 = importDefault(11531)(guildId, powerup);
-  let obj = require(11552) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, importDefault(11528)(guildId, powerup, "GuildPowerupsSinglePerkCard"));
-  const tmp3 = importDefault(11528)(guildId, powerup, "GuildPowerupsSinglePerkCard");
+  const tmp = importDefault(11582)(powerup, true);
+  const tmp2 = importDefault(11561)(guildId, powerup);
+  let obj = require(11581) /* useCalculatePowerupCardStatus */;
+  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, importDefault(11558)(guildId, powerup, "GuildPowerupsSinglePerkCard"));
+  const tmp3 = importDefault(11558)(guildId, powerup, "GuildPowerupsSinglePerkCard");
   obj = { title: powerup.title, description: powerup.description, cost: powerup.cost };
   let str = "";
-  const tmp5 = importDefault(11600)(guildId, powerup);
+  const tmp5 = importDefault(11627)(guildId, powerup);
   const tmp6 = jsx;
   if (null != tmp) {
     str = tmp;
@@ -31,5 +31,5 @@ export default function GuildPowerupsSinglePerkCard(badge) {
   obj.status = calculatePowerupCardStatus;
   obj.onPress = tmp5;
   obj.badge = badge.badge;
-  return tmp6(importDefault(11604), obj);
+  return tmp6(importDefault(11631), obj);
 };

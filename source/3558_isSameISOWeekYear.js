@@ -1,5 +1,5 @@
 // Module ID: 3558
-// Function ID: 27679
+// Function ID: 27680
 // Name: isSameISOWeekYear
 // Dependencies: [3370, 3210]
 // Exports: default

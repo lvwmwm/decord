@@ -1,10 +1,10 @@
-// Module ID: 9688
-// Function ID: 75406
+// Module ID: 9722
+// Function ID: 75618
 // Name: useThemeAndReducedMotionAwareAssetUrl
 // Dependencies: [4122, 4066, 566, 3840, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 9688 (useThemeAndReducedMotionAwareAssetUrl)
+// Module 9722 (useThemeAndReducedMotionAwareAssetUrl)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

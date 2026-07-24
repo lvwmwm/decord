@@ -1,5 +1,5 @@
 // Module ID: 1008
-// Function ID: 11010
+// Function ID: 11011
 // Name: makeFetchTransport
 // Dependencies: [5, 1009, 794]
 // Exports: makeFetchTransport

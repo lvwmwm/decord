@@ -1,11 +1,11 @@
-// Module ID: 16015
-// Function ID: 123929
+// Module ID: 16062
+// Function ID: 124251
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 16016, 5078, 507, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 16063, 5078, 507, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 16015 (_isNativeReflectConstruct)
-import module_16016 from "module_16016";
+// Module 16062 (_isNativeReflectConstruct)
+import module_16063 from "module_16063";
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";

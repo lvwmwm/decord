@@ -1,10 +1,10 @@
-// Module ID: 9236
-// Function ID: 72217
+// Module ID: 9272
+// Function ID: 72426
 // Name: PhoneVerificationModal
-// Dependencies: [5, 31, 653, 9237, 33, 5087, 9238, 9239, 4337, 480, 9262, 9233, 5519, 1212, 2]
+// Dependencies: [5, 31, 653, 9273, 33, 5087, 9274, 9275, 4337, 480, 9298, 9269, 5517, 1212, 2]
 // Exports: default
 
-// Module 9236 (PhoneVerificationModal)
+// Module 9272 (PhoneVerificationModal)
 import HeaderBackImage from "HeaderBackImage";
 import "result";
 import { VerificationModalScenes } from "ME";
@@ -105,5 +105,5 @@ export default function PhoneVerificationModal(onClose) {
   obj.initialRouteName = VerificationModalScenes.ADD_PHONE;
   const intl = _require(1212).intl;
   obj.headerBackTitle = intl.string(_require(1212).t["13/7kX"]);
-  return jsx(_require(5519).Navigator, { headerTitle: _require(5087).getHeaderNoTitle() });
+  return jsx(_require(5517).Navigator, { headerTitle: _require(5087).getHeaderNoTitle() });
 };

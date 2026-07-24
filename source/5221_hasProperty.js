@@ -1,5 +1,5 @@
 // Module ID: 5221
-// Function ID: 45181
+// Function ID: 45186
 // Name: hasProperty
 // Dependencies: [65, 31]
 // Exports: isFabric, isReact19, isRemoteDebuggingEnabled, isTestEnv, tagMessage, toArray, withPrevAndCurrent

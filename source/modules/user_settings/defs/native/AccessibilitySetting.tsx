@@ -1,9 +1,9 @@
-// Module ID: 14214
-// Function ID: 109206
+// Module ID: 14264
+// Function ID: 109529
 // Name: items
-// Dependencies: [57, 31, 653, 1345, 33, 1334, 5802, 1273, 1212, 10095, 14215, 14217, 2]
+// Dependencies: [57, 31, 653, 1345, 33, 1334, 5802, 1273, 1212, 10127, 14265, 14267, 2]
 
-// Module 14214 (items)
+// Module 14264 (items)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -62,7 +62,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCESSIBILITY,
   getComponent() {
-    return require(14217) /* getAccessibilitySettingScreen */.default;
+    return require(14267) /* getAccessibilitySettingScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,9 +1,9 @@
-// Module ID: 15984
-// Function ID: 123592
+// Module ID: 16031
+// Function ID: 123914
 // Name: subtractYearsFromToday
-// Dependencies: [31, 27, 33, 3712, 4098, 8389, 1934, 9000, 1273, 2]
+// Dependencies: [31, 27, 33, 3712, 4098, 8433, 1934, 9039, 1273, 2]
 
-// Module 15984 (subtractYearsFromToday)
+// Module 16031 (subtractYearsFromToday)
 import importAllResult from "result";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

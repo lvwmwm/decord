@@ -1,5 +1,5 @@
 // Module ID: 4565
-// Function ID: 39996
+// Function ID: 39997
 // Name: parseLink
 // Dependencies: [57, 830, 1348, 4162, 1910, 1838, 1849, 653, 4566, 4567, 4568, 1212, 4571, 1913, 4319, 3969, 4160, 1392, 3829, 4572, 4573, 4576, 3771, 4577, 4587, 4588, 4589, 4590, 4591, 4564, 4592, 22, 2]
 
@@ -13,7 +13,7 @@ import closure_8 from "_createForOfIteratorHelperLoose";
 import closure_9 from "_isNativeReflectConstruct";
 import ME from "ME";
 import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME";
-import { GAME_MENTION_RAW_RE } from "MENTION_SENTINEL";
+import { GAME_MENTION_RAW_RE } from "regExp";
 import importDefaultResult from "t";
 import importDefaultResult1 from "t";
 import importDefaultResult2 from "t";
@@ -276,6 +276,15 @@ function _startOfWord(arr, index) {
     tmp = tmp2;
   }
   return tmp;
+}
+function _endOfWord(arr, index, length) {
+  const sum = index + length;
+  let tmp2 = sum === arr.length;
+  if (!tmp2) {
+    tmp2 = "" === arr.charAt(sum).trim();
+    const str = arr.charAt(sum);
+  }
+  return tmp2;
 }
 ({ ID_REGEX: closure_10, MARKDOWN_SPOILER_REGEXP: closure_11, MARKDOWN_STATIC_ROUTE_NAME_REGEXP: closure_12 } = ME);
 const re15 = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/;
@@ -1025,24 +1034,40 @@ const items2 = [
             if (-1 === index) {
               return null;
             } else {
-              let tmp4 = index;
+              const tmp13 = _startOfWord(arr, index);
+              let tmp2 = !tmp13;
+              if (tmp13) {
+                tmp2 = !_endOfWord(arr, index, parseDepth.highlightWord.length);
+              }
               let tmp3 = index;
-              if (!_startOfWord(arr, index)) {
-                const index1 = arr.indexOf(parseDepth.highlightWord, tmp4 + 1);
-                tmp3 = index1;
-                while (!_startOfWord(arr, index1)) {
+              let tmp4 = index;
+              if (tmp2) {
+                while (true) {
+                  let index1 = arr.indexOf(parseDepth.highlightWord, tmp3 + 1);
+                  let tmp6 = _startOfWord;
+                  let tmp7 = _startOfWord(arr, index1);
+                  let tmp8 = !tmp7;
+                  if (tmp7) {
+                    let tmp9 = _endOfWord;
+                    tmp8 = !_endOfWord(arr, index1, parseDepth.highlightWord.length);
+                  }
                   tmp4 = index1;
-                  tmp3 = index1;
-                  if (-1 === index1) {
+                  if (!tmp8) {
                     break;
+                  } else {
+                    tmp3 = index1;
+                    tmp4 = index1;
+                    if (-1 === index1) {
+                      break;
+                    }
                   }
                 }
               }
-              if (-1 === tmp3) {
+              if (-1 === tmp4) {
                 return null;
               } else {
-                const substr = arr.substring(0, tmp3);
-                const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp3 + parseDepth.highlightWord.length)];
+                const substr = arr.substring(0, tmp4);
+                const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp4 + parseDepth.highlightWord.length)];
                 return items;
               }
             }
@@ -1083,24 +1108,40 @@ const obj22 = {
         if (-1 === index) {
           return null;
         } else {
-          let tmp4 = index;
+          const tmp13 = _startOfWord(arr, index);
+          let tmp2 = !tmp13;
+          if (tmp13) {
+            tmp2 = !_endOfWord(arr, index, parseDepth.highlightWord.length);
+          }
           let tmp3 = index;
-          if (!_startOfWord(arr, index)) {
-            const index1 = arr.indexOf(parseDepth.highlightWord, tmp4 + 1);
-            tmp3 = index1;
-            while (!_startOfWord(arr, index1)) {
+          let tmp4 = index;
+          if (tmp2) {
+            while (true) {
+              let index1 = arr.indexOf(parseDepth.highlightWord, tmp3 + 1);
+              let tmp6 = _startOfWord;
+              let tmp7 = _startOfWord(arr, index1);
+              let tmp8 = !tmp7;
+              if (tmp7) {
+                let tmp9 = _endOfWord;
+                tmp8 = !_endOfWord(arr, index1, parseDepth.highlightWord.length);
+              }
               tmp4 = index1;
-              tmp3 = index1;
-              if (-1 === index1) {
+              if (!tmp8) {
                 break;
+              } else {
+                tmp3 = index1;
+                tmp4 = index1;
+                if (-1 === index1) {
+                  break;
+                }
               }
             }
           }
-          if (-1 === tmp3) {
+          if (-1 === tmp4) {
             return null;
           } else {
-            const substr = arr.substring(0, tmp3);
-            const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp3 + parseDepth.highlightWord.length)];
+            const substr = arr.substring(0, tmp4);
+            const items = [arr, parseDepth.highlightWord, substr, arr.substring(tmp4 + parseDepth.highlightWord.length)];
             return items;
           }
         }

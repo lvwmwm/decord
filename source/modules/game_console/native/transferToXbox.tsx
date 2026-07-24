@@ -1,10 +1,10 @@
-// Module ID: 9051
-// Function ID: 71086
+// Module ID: 9090
+// Function ID: 71301
 // Name: _transferToXbox
-// Dependencies: [5, 31, 27, 653, 33, 9043, 9040, 9052, 4471, 9053, 1934, 9046, 4309, 2]
+// Dependencies: [5, 31, 27, 653, 33, 9082, 9079, 9091, 4471, 9092, 1934, 9085, 4309, 2]
 // Exports: default
 
-// Module 9051 (_transferToXbox)
+// Module 9090 (_transferToXbox)
 import set from "set";
 import "result";
 import { Linking } from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 12509
-// Function ID: 96905
+// Module ID: 12562
+// Function ID: 97229
 // Name: PerkText
-// Dependencies: [31, 27, 4017, 33, 4130, 689, 666, 4126, 12510, 11520, 11545, 1212, 2230, 12511, 2]
+// Dependencies: [31, 27, 4017, 33, 4130, 689, 666, 4126, 12563, 11550, 11575, 1212, 2230, 12564, 2]
 // Exports: default
 
-// Module 12509 (PerkText)
+// Module 12562 (PerkText)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function GuildPowerupsMarketingHeader(guild) {
   guild = guild.guild;
   const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(12510)(guild.id);
+  const arr = importDefault(12563)(guild.id);
   const items = [guild.id];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guild.id)) {
@@ -41,7 +41,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj = guild(outer1_2[9]);
     }
   }, items);
-  if (importDefault(11545)(guild.id)) {
+  if (importDefault(11575)(guild.id)) {
     let length;
     if (null != arr) {
       length = arr.length;
@@ -59,7 +59,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str3 = "";
         if (0 !== arr.length) {
-          let first = importDefault(12511)(arr);
+          let first = importDefault(12564)(arr);
           if (1 === first.length) {
             const obj1 = {};
             first = first[0];

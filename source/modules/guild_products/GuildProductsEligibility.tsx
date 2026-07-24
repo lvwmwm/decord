@@ -1,5 +1,5 @@
 // Module ID: 5639
-// Function ID: 48227
+// Function ID: 48237
 // Name: useGuildEligibleForGuildProducts
 // Dependencies: [1838, 653, 566, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts

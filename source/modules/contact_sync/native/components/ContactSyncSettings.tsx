@@ -1,10 +1,10 @@
-// Module ID: 13747
-// Function ID: 105423
+// Module ID: 13798
+// Function ID: 105747
 // Name: syncContacts
-// Dependencies: [5, 31, 1849, 11708, 653, 33, 11709, 3831, 1212, 9176, 11713, 675, 11705, 566, 3803, 1360, 7495, 4337, 13748, 1934, 2]
+// Dependencies: [5, 31, 1849, 11735, 653, 33, 11736, 3831, 1212, 9212, 11740, 675, 11732, 566, 3803, 1360, 7636, 4337, 13799, 1934, 2]
 // Exports: default
 
-// Module 13747 (syncContacts)
+// Module 13798 (syncContacts)
 import closure_3 from "jsxProd";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,8 +45,8 @@ function handleSyncContacts(localAccount, phone, arg2) {
     obj.location = obj;
     obj.track(constants.OPEN_MODAL, obj);
     const obj1 = { page: "User Settings" };
-    require(11705) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, obj1);
-    const obj4 = require(11705) /* handleNameInputScreenOrSuggestions */;
+    require(11732) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, obj1);
+    const obj4 = require(11732) /* handleNameInputScreenOrSuggestions */;
   } else {
     updateFriendSync(localAccount, phone, arg2);
   }
@@ -57,7 +57,7 @@ function handleSyncContacts(localAccount, phone, arg2) {
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncSettings.tsx");
 
 export default function ContactSyncSettings() {
-  let obj = contactSyncAccount(11709);
+  let obj = contactSyncAccount(11736);
   contactSyncAccount = obj.useContactSyncAccount();
   let obj1 = contactSyncAccount(566);
   const items = [_isNativeReflectConstruct];
@@ -70,7 +70,7 @@ export default function ContactSyncSettings() {
   if (null != stateFromStores) {
     isStaffResult = stateFromStores.isStaff();
   }
-  let obj3 = contactSyncAccount(11709);
+  let obj3 = contactSyncAccount(11736);
   const FriendDiscoverySettings = contactSyncAccount(3803).FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
   let obj4 = contactSyncAccount(1360);
@@ -85,8 +85,8 @@ export default function ContactSyncSettings() {
   let tmp10 = null;
   if (isStaffResult) {
     obj1 = {};
-    const obj2 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: contactSyncAccount(11709).adminDeleteContactSync };
-    const items1 = [callback2(contactSyncAccount(7495).FormSwitchRow, obj2), callback2(contactSyncAccount(7495).FormDivider, {})];
+    const obj2 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: contactSyncAccount(11736).adminDeleteContactSync };
+    const items1 = [callback2(contactSyncAccount(7636).FormSwitchRow, obj2), callback2(contactSyncAccount(7636).FormDivider, {})];
     obj1.children = items1;
     tmp10 = callback3(closure_11, obj1);
   }
@@ -98,37 +98,37 @@ export default function ContactSyncSettings() {
   obj3.onValueChange = function onValueChange(arg0) {
     outer1_17(contactSyncAccount, phone, arg0);
   };
-  items2[1] = callback2(contactSyncAccount(7495).FormSwitchRow, obj3);
+  items2[1] = callback2(contactSyncAccount(7636).FormSwitchRow, obj3);
   let tmp16 = null;
   if (null != contactSyncAccount) {
     obj4 = {};
-    const items3 = [callback2(contactSyncAccount(7495).FormDivider, {}), ];
+    const items3 = [callback2(contactSyncAccount(7636).FormDivider, {}), ];
     obj5 = {};
     const intl3 = contactSyncAccount(1212).intl;
     obj5.label = intl3.string(contactSyncAccount(1212).t.nAsWKy);
     const obj6 = { label: contactSyncAccount.name };
-    obj5.trailing = callback2(contactSyncAccount(7495).FormRow.Arrow, obj6);
+    obj5.trailing = callback2(contactSyncAccount(7636).FormRow.Arrow, obj6);
     obj5.onPress = function onPress() {
       phone(hasFlagResult[11]).track(outer1_7.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
       const obj = phone(hasFlagResult[11]);
       phone(hasFlagResult[17]).pushLazy(contactSyncAccount(hasFlagResult[19])(hasFlagResult[18], hasFlagResult.paths), "Contact Sync Name Update Modal");
     };
-    items3[1] = callback2(contactSyncAccount(7495).FormRow, obj5);
+    items3[1] = callback2(contactSyncAccount(7636).FormRow, obj5);
     obj4.children = items3;
     tmp16 = callback3(closure_11, obj4);
   }
   items2[2] = tmp16;
   obj.children = items2;
-  const items4 = [callback3(contactSyncAccount(7495).FormSection, obj), , , ];
+  const items4 = [callback3(contactSyncAccount(7636).FormSection, obj), , , ];
   const obj7 = {};
   const intl4 = contactSyncAccount(1212).intl;
-  const obj8 = { onClick: contactSyncAccount(11709).handleOpenLearnMoreLink };
+  const obj8 = { onClick: contactSyncAccount(11736).handleOpenLearnMoreLink };
   obj7.children = intl4.format(contactSyncAccount(1212).t.BoR0dO, obj8);
-  items4[1] = callback2(contactSyncAccount(7495).FormHint, obj7);
+  items4[1] = callback2(contactSyncAccount(7636).FormHint, obj7);
   const obj9 = {};
   const intl5 = contactSyncAccount(1212).intl;
   obj9.children = intl5.string(contactSyncAccount(1212).t.cW1nr9);
-  items4[2] = callback2(contactSyncAccount(7495).FormHint, obj9);
+  items4[2] = callback2(contactSyncAccount(7636).FormHint, obj9);
   const obj10 = {};
   const intl6 = contactSyncAccount(1212).intl;
   obj10.title = intl6.string(contactSyncAccount(1212).t["0t2wRW"]);
@@ -143,7 +143,7 @@ export default function ContactSyncSettings() {
     obj = { phone, email: hasFlagResult1 };
     const result = obj.updateDiscoverability(obj);
   };
-  const items5 = [callback2(contactSyncAccount(7495).FormSwitchRow, obj11), callback2(contactSyncAccount(7495).FormDivider, {}), ];
+  const items5 = [callback2(contactSyncAccount(7636).FormSwitchRow, obj11), callback2(contactSyncAccount(7636).FormDivider, {}), ];
   const obj12 = {};
   const intl9 = contactSyncAccount(1212).intl;
   obj12.label = intl9.string(contactSyncAccount(1212).t.dI4d4S);
@@ -155,9 +155,9 @@ export default function ContactSyncSettings() {
     obj = { phone: closure_2, email };
     const result = obj.updateDiscoverability(obj);
   };
-  items5[2] = callback2(contactSyncAccount(7495).FormSwitchRow, obj12);
+  items5[2] = callback2(contactSyncAccount(7636).FormSwitchRow, obj12);
   obj10.children = items5;
-  items4[3] = callback3(contactSyncAccount(7495).FormSection, obj10);
+  items4[3] = callback3(contactSyncAccount(7636).FormSection, obj10);
   obj.children = items4;
   return callback3(closure_11, obj);
 };

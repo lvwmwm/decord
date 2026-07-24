@@ -1,7 +1,7 @@
 // Module ID: 8093
-// Function ID: 64166
+// Function ID: 64123
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8094, 8095, 8042]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8094, 8078, 8087]
 
 // Module 8093 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
@@ -13,6 +13,7 @@ import "result";
 import { jsx } from "jsxProd";
 import tmp3 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +23,6 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "LinearGradient";
-tmp3.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
+tmp3.displayName = "ClipPath";
 
 export default tmp3;

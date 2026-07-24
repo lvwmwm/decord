@@ -1,10 +1,10 @@
-// Module ID: 11781
-// Function ID: 91433
+// Module ID: 11808
+// Function ID: 91671
 // Name: setNewUser
 // Dependencies: [686, 2]
 // Exports: setNewUser, setNewUserFlowCompleted
 
-// Module 11781 (setNewUser)
+// Module 11808 (setNewUser)
 const result = require("set").fileFinishedImporting("modules/nuf/NUFActionCreators.tsx");
 
 export const setNewUser = function setNewUser(ORGANIC_REGISTERED) {

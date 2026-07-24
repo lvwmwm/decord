@@ -1,10 +1,10 @@
-// Module ID: 11762
-// Function ID: 91320
+// Module ID: 11789
+// Function ID: 91558
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [31, 27, 11753, 653, 33, 4130, 5052, 689, 1456, 11761, 1273, 1212, 5158, 11763, 675, 11764, 2]
+// Dependencies: [31, 27, 11780, 653, 33, 4130, 5052, 689, 1456, 11788, 1273, 1212, 5158, 11790, 675, 11791, 2]
 // Exports: default
 
-// Module 11762 (HubEmailConnectionStudentPrompt)
+// Module 11789 (HubEmailConnectionStudentPrompt)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
@@ -45,7 +45,7 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   obj1.children = intl.string(onClose(1212).t["+/Pv0h"]);
   const items = [callback(onClose(1273).LegacyText, obj1), , ];
   const obj2 = { DEPRECATED_style: tmp.row };
-  const obj3 = { source: invite(11763) };
+  const obj3 = { source: invite(11790) };
   obj2.leading = callback(closure_4, obj3);
   obj2.trailing = invite(5158).Arrow;
   const intl2 = onClose(1212).intl;
@@ -62,7 +62,7 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   const obj4 = { DEPRECATED_style: tmp.row };
   const obj5 = {};
   const tmp2 = invite(5158);
-  obj5.source = invite(11764);
+  obj5.source = invite(11791);
   obj4.leading = callback(closure_4, obj5);
   obj4.trailing = invite(5158).Arrow;
   const intl4 = onClose(1212).intl;
@@ -71,5 +71,5 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   items[2] = callback(invite(5158), obj4);
   obj.children = items;
   obj.children = callback2(closure_3, obj);
-  return callback(onClose(11761).HubEmailConnectionScreen, obj);
+  return callback(onClose(11788).HubEmailConnectionScreen, obj);
 };

@@ -1,5 +1,5 @@
 // Module ID: 5308
-// Function ID: 45814
+// Function ID: 45819
 // Name: useBoundingClientRect
 // Dependencies: [31, 5212]
 // Exports: useBoundingClientRect

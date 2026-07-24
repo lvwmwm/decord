@@ -1,10 +1,10 @@
-// Module ID: 7845
-// Function ID: 62540
+// Module ID: 7934
+// Function ID: 62859
 // Name: getUserPrimaryGuild
-// Dependencies: [1917, 1838, 1849, 7632, 653, 566, 3764, 2]
+// Dependencies: [1917, 1838, 1849, 7721, 653, 566, 3764, 2]
 // Exports: getGuildTagBadgeUrl, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 7845 (getUserPrimaryGuild)
+// Module 7934 (getUserPrimaryGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";

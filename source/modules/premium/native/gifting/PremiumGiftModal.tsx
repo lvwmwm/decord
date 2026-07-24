@@ -1,10 +1,10 @@
-// Module ID: 9680
-// Function ID: 75337
+// Module ID: 9714
+// Function ID: 75549
 // Name: PremiumGiftModal
-// Dependencies: [57, 31, 1849, 33, 7156, 4130, 689, 566, 8676, 1212, 5087, 9681, 9760, 9762, 9767, 2294, 9806, 9679, 5484, 5464, 5450, 491, 4337, 3789, 8777, 8809, 9810, 5519, 2]
+// Dependencies: [57, 31, 1849, 33, 7156, 4130, 689, 566, 8717, 1212, 5087, 9715, 9792, 9794, 9799, 2294, 9838, 9713, 5482, 5462, 5450, 491, 4337, 3789, 8816, 8848, 9842, 5517, 2]
 // Exports: default
 
-// Module 9680 (PremiumGiftModal)
+// Module 9714 (PremiumGiftModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

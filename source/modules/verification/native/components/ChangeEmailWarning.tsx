@@ -1,10 +1,10 @@
-// Module ID: 9187
-// Function ID: 71952
+// Module ID: 9223
+// Function ID: 72161
 // Name: ChangeEmailWarning
-// Dependencies: [31, 27, 1849, 9185, 653, 33, 4130, 689, 1456, 566, 675, 668, 5807, 4126, 1212, 5459, 4543, 9181, 2]
+// Dependencies: [31, 27, 1849, 9221, 653, 33, 4130, 689, 1456, 566, 675, 668, 5807, 4126, 1212, 4543, 9217, 2]
 // Exports: default
 
-// Module 9187 (ChangeEmailWarning)
+// Module 9223 (ChangeEmailWarning)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -57,7 +57,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
     const intl3 = changeEmailReason(1212).intl;
     items3[2] = intl3.string(changeEmailReason(1212).t["3LW10C"]);
     obj2.children = items3;
-    items2[2] = callback2(changeEmailReason(5459).TextWithIOSLinkWorkaround, obj2);
+    items2[2] = callback2(changeEmailReason(4126).Text, obj2);
     const obj4 = { style: tmp.buttonContainer };
     const obj5 = { size: "md", variant: "tertiary", text: null, onPress: null, shrink: true };
     const intl4 = changeEmailReason(1212).intl;
@@ -68,7 +68,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
     const intl5 = changeEmailReason(1212).intl;
     obj6.text = intl5.string(changeEmailReason(1212).t["ETE/oC"]);
     obj6.onPress = function onPress() {
-      return navigation(outer1_2[17]).close();
+      return navigation(outer1_2[16]).close();
     };
     items4[1] = callback(changeEmailReason(4543).Button, obj6);
     obj4.children = items4;

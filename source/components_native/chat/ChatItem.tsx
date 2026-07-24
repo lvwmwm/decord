@@ -1,10 +1,10 @@
-// Module ID: 9293
-// Function ID: 72604
+// Module ID: 9329
+// Function ID: 72813
 // Name: DCDChatItem
-// Dependencies: [57, 31, 27, 4122, 653, 7622, 33, 3994, 9294, 9295, 9296, 663, 5651, 4130, 689, 477, 7808, 3834, 666, 4554, 2]
+// Dependencies: [57, 31, 27, 4122, 653, 7711, 33, 3994, 9330, 9331, 9332, 663, 5651, 4130, 689, 477, 7899, 3834, 666, 4554, 2]
 // Exports: default
 
-// Module 9293 (DCDChatItem)
+// Module 9329 (DCDChatItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -77,7 +77,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("component
 
 export default function _default(rowGenerator) {
   let backgroundColor;
-  let c5;
+  let c6;
   let maxHeight;
   let modifyRow;
   let pointerEvents;
@@ -95,22 +95,23 @@ export default function _default(rowGenerator) {
   if (backgroundColor === undefined) {
     backgroundColor = message(modifyRow[14]).colors.BACKGROUND_BASE_LOWER;
   }
-  c5 = undefined;
-  let first;
-  let closure_7;
+  const gradientColors = rowGenerator.gradientColors;
   let roleStyle;
+  let first;
+  let closure_8;
+  roleStyle = undefined;
   let rawRow;
   let token;
-  [tmp4, c5] = onLayout(messageSizeCacheRef.useState(0), 2);
+  [tmp4, c6] = onLayout(messageSizeCacheRef.useState(0), 2);
   const tmp5 = onLayout(messageSizeCacheRef.useState(undefined), 2);
   first = tmp5[0];
-  closure_7 = tmp5[1];
-  roleStyle = first.roleStyle;
+  closure_8 = tmp5[1];
+  roleStyle = roleStyle.roleStyle;
   let items = [first, roleStyle, message, modifyRow, rowGenerator];
   const memo = messageSizeCacheRef.useMemo(() => {
     let obj = { constrainedWidth: first };
     rowGenerator.setOptions(obj);
-    obj = { roleStyle, rowType: roleStyle.MESSAGE, changeType: rawRow.NOOP, message, isFirst: true, canShowImages: true, canAddNewReactions: false };
+    obj = { roleStyle, rowType: lib.MESSAGE, changeType: roleStyle.NOOP, message, isFirst: true, canShowImages: true, canAddNewReactions: false };
     const generateResult = rowGenerator.generate(obj);
     if (null != modifyRow) {
       modifyRow(generateResult);
@@ -143,7 +144,7 @@ export default function _default(rowGenerator) {
   const items2 = [onLayout];
   const items3 = [messageSizeCacheRef, message.id];
   const callback = messageSizeCacheRef.useCallback((nativeEvent) => {
-    callback(nativeEvent.nativeEvent.layout.width);
+    lib(nativeEvent.nativeEvent.layout.width);
     if (null != onLayout) {
       onLayout(nativeEvent);
     }
@@ -173,21 +174,26 @@ export default function _default(rowGenerator) {
   if (tmp12) {
     tmp13 = maxHeight;
   }
-  obj = { style: tmp9.offset, onLayout: callback1, children: token(DCDChatItem, obj) };
+  obj = { style: tmp9.offset, onLayout: callback1, children: rawRow(DCDChatItem, obj) };
   obj = { message, row: memo.row, style: tmp9.itemRow };
-  const tmp14 = c5;
+  const tmp14 = gradientColors;
   const tmp3 = onLayout(messageSizeCacheRef.useState(0), 2);
   let obj2 = rowGenerator(modifyRow[17]);
   token = obj2.useToken(backgroundColor);
-  const items4 = [token];
+  const items4 = [gradientColors, token];
   obj = { style: items5, onLayout: callback, pointerEvents };
   items5 = [tmp9.container, rowGenerator.style, ];
   let obj1 = { height: tmp13 };
   items5[2] = obj1;
   let tmp19 = null != first;
   const memo2 = messageSizeCacheRef.useMemo(() => {
-    const obj = message(modifyRow[18])(token);
-    const items = [message(modifyRow[18])(token).alpha(0).hex(), token];
+    if (null != gradientColors) {
+      let items = gradientColors;
+    } else {
+      const obj = message(modifyRow[18])(token);
+      items = [message(modifyRow[18])(token).alpha(0).hex(), token];
+      const alphaResult = message(modifyRow[18])(token).alpha(0);
+    }
     return items;
   }, items4);
   if (tmp19) {
@@ -198,11 +204,11 @@ export default function _default(rowGenerator) {
     obj2 = { colors: memo2 };
     const items7 = [tmp9.gradient, rowGenerator.gradientStyles];
     obj2.style = items7;
-    tmp12 = token(message(modifyRow[19]), obj2);
+    tmp12 = rawRow(message(modifyRow[19]), obj2);
   }
   items6[1] = tmp12;
   obj.children = items6;
-  return closure_11(tmp14, obj);
+  return token(tmp14, obj);
 };
 export const DCDMessageView = _default;
 export const DCDSystemMessageView = _default2;

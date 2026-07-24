@@ -1,5 +1,5 @@
 // Module ID: 6778
-// Function ID: 53378
+// Function ID: 53400
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [6779, 1874, 6780, 6781, 6782, 653, 1876, 2]
 // Exports: createCollectiblesItemsFromServerResponse

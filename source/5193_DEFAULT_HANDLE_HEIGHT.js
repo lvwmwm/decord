@@ -1,5 +1,5 @@
 // Module ID: 5193
-// Function ID: 45111
+// Function ID: 45116
 // Name: DEFAULT_HANDLE_HEIGHT
 // Dependencies: [5190]
 

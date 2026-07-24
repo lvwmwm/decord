@@ -1,9 +1,9 @@
-// Module ID: 10986
-// Function ID: 85504
+// Module ID: 11013
+// Function ID: 85693
 // Name: items
-// Dependencies: [5, 57, 31, 27, 1919, 653, 33, 1212, 4130, 689, 5160, 9830, 4559, 675, 10987, 3831, 4319, 10332, 5459, 7519, 7518, 7504, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 1919, 653, 33, 1212, 4130, 689, 5160, 9862, 4559, 675, 11014, 3831, 4319, 10361, 4126, 7654, 7653, 7645, 4543, 2]
 
-// Module 10986 (items)
+// Module 11013 (items)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -98,7 +98,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   const ref1 = importAllResult.useRef(null);
   const insets = importDefault(5160)({ includeKeyboardHeight: true }).insets;
   const items = [{ ref: ref1, offset: { type: "toBottom" } }];
-  importDefault(9830)({ insets, inputs: items, scrollViewRef: ref });
+  importDefault(9862)({ insets, inputs: items, scrollViewRef: ref });
   importDefault(4559)(() => {
     let obj = outer1_1(outer1_2[13]);
     obj = { type: outer1_9, guild_id: closure_1, other_user_id: id.id };
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   obj1.variant = "heading-md/semibold";
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.Ns83GT, { helpdeskArticle: closure_8 });
-  const items1 = [callback2(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj1), , , ];
+  const items1 = [callback2(require(4126) /* Text */.Text, obj1), , , ];
   const obj4 = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.title = intl2.string(require(1212) /* getSystemLocale */.t["9XsExm"]);
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
     const obj = { value, label: getLabel.getLabel() };
     return outer1_11(outer1_0(outer1_2[20]).TableRadioRow, obj, value);
   });
-  items1[1] = callback2(require(7519) /* context */.TableRadioGroup, obj4);
+  items1[1] = callback2(require(7654) /* context */.TableRadioGroup, obj4);
   const obj5 = { ref: ref1, containerStyle: tmp.reasonTextArea };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj5.placeholder = intl3.string(require(1212) /* getSystemLocale */.t.GakiH1);
@@ -137,7 +137,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
   obj5.onChange = function onChange(current) {
     closure_5.current = current;
   };
-  items1[2] = callback2(require(7504) /* TextArea */.TextArea, obj5);
+  items1[2] = callback2(require(7645) /* TextArea */.TextArea, obj5);
   const obj6 = { style: tmp.buttonContainer };
   const obj7 = { variant: "primary" };
   const intl5 = require(1212) /* getSystemLocale */.intl;

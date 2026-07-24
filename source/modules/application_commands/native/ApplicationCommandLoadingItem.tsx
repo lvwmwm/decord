@@ -1,10 +1,10 @@
-// Module ID: 11442
-// Function ID: 89032
+// Module ID: 11471
+// Function ID: 89251
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [31, 27, 9558, 33, 4130, 689, 4549, 2]
+// Dependencies: [31, 27, 9594, 33, 4130, 689, 4549, 2]
 // Exports: default
 
-// Module 11442 (ApplicationCommandLoadingItem)
+// Module 11471 (ApplicationCommandLoadingItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";

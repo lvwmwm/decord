@@ -1,10 +1,10 @@
-// Module ID: 14471
-// Function ID: 110550
+// Module ID: 14521
+// Function ID: 110873
 // Name: CollectiblesShopScreen
-// Dependencies: [31, 655, 33, 6653, 14472, 5799, 14473, 5484, 2]
+// Dependencies: [31, 655, 33, 6653, 14522, 5799, 14523, 5482, 2]
 // Exports: default
 
-// Module 14471 (CollectiblesShopScreen)
+// Module 14521 (CollectiblesShopScreen)
 import "result";
 import { CollectiblesMobileShopScreen as closure_3 } from "items";
 import { jsx } from "jsxProd";
@@ -15,8 +15,8 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/s
 export default function CollectiblesShopScreen() {
   let obj = require(6653) /* useSettingNavigationRoute */;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
-  const shopOrientationLock = require(14472) /* useShopOrientationLock */.useShopOrientationLock();
-  const obj2 = require(14472) /* useShopOrientationLock */;
+  const shopOrientationLock = require(14522) /* useShopOrientationLock */.useShopOrientationLock();
+  const obj2 = require(14522) /* useShopOrientationLock */;
   const giftCardMobileConsumptionHalfsheet = require(5799) /* useGiftCardMobileConsumptionHalfsheet */.useGiftCardMobileConsumptionHalfsheet();
   const params = settingNavigationRoute.params;
   let screen;
@@ -33,7 +33,7 @@ export default function CollectiblesShopScreen() {
     analyticsSource = params2.analyticsSource;
   }
   if (null == analyticsSource) {
-    analyticsSource = importDefault(5484).COLLECTIBLES_SHOP;
+    analyticsSource = importDefault(5482).COLLECTIBLES_SHOP;
   }
   obj.analyticsSource = analyticsSource;
   obj.screen = screen;
@@ -43,5 +43,5 @@ export default function CollectiblesShopScreen() {
     onNavigateAway = params3.onNavigateAway;
   }
   obj.onNavigateAway = onNavigateAway;
-  return jsx(require(14473) /* _createForOfIteratorHelperLoose */.CollectiblesShopV2, {});
+  return jsx(require(14523) /* _createForOfIteratorHelperLoose */.CollectiblesShopV2, {});
 };

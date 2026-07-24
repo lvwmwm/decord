@@ -1,10 +1,10 @@
-// Module ID: 15398
-// Function ID: 117524
+// Module ID: 15445
+// Function ID: 117846
 // Name: MessageContent
-// Dependencies: [31, 27, 4122, 1917, 1849, 5683, 653, 482, 33, 4130, 689, 566, 7023, 4571, 5048, 4126, 1212, 3969, 5687, 4360, 21, 1273, 7779, 7650, 3994, 2]
+// Dependencies: [31, 27, 4122, 1917, 1849, 5683, 653, 482, 33, 4130, 689, 566, 7022, 4571, 5048, 4126, 1212, 3969, 5687, 4360, 21, 1273, 7870, 7739, 3994, 2]
 // Exports: ThreadSubtext
 
-// Module 15398 (MessageContent)
+// Module 15445 (MessageContent)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,9 +45,9 @@ function MessageContent(arg0) {
   let tmp4 = importDefault(4360)(message);
   const extractTimestampResult = importDefault(21).extractTimestamp(message.id);
   const obj4 = importDefault(21);
-  const timestampString = message(7023).getTimestampString(extractTimestampResult);
-  const obj5 = message(7023);
-  const timestampAccessibilityLabel = message(7023).getTimestampAccessibilityLabel(extractTimestampResult);
+  const timestampString = message(7022).getTimestampString(extractTimestampResult);
+  const obj5 = message(7022);
+  const timestampAccessibilityLabel = message(7022).getTimestampAccessibilityLabel(extractTimestampResult);
   _isNativeReflectConstruct = importDefault(4571)(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel };
   obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default" };
@@ -136,7 +136,7 @@ function Username(usernameColor) {
     }
     return username;
   }, items);
-  let obj = usernameColor(7650);
+  let obj = usernameColor(7739);
   const processColorStringsArray = obj.useProcessColorStringsArray(roleColors);
   let tmp3 = !shouldShowRoleDot;
   if (tmp3) {
@@ -273,7 +273,7 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
   const items = [closure_8];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getMostRecentMessage(id), items1);
-  const lastMessageTimestamp = id(7023).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(7022).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -282,9 +282,9 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
       }
     }
   }
-  const obj2 = id(7023);
-  const timestampString = id(7023).getTimestampString(lastMessageTimestamp);
-  const obj4 = id(7023);
-  obj = { thread, timestamp: timestampString, accessibilityLabel: id(7023).getTimestampAccessibilityLabel(lastMessageTimestamp) };
+  const obj2 = id(7022);
+  const timestampString = id(7022).getTimestampString(lastMessageTimestamp);
+  const obj4 = id(7022);
+  obj = { thread, timestamp: timestampString, accessibilityLabel: id(7022).getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return callback(closure_14, obj);
 };

@@ -1,5 +1,5 @@
 // Module ID: 5134
-// Function ID: 44496
+// Function ID: 44501
 // Name: getWindowDispatchForElement
 // Dependencies: [57, 31, 653, 33, 1207, 5135, 1835, 5136, 2]
 // Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch

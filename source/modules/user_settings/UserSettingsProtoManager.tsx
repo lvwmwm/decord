@@ -1,9 +1,9 @@
-// Module ID: 13386
-// Function ID: 102859
+// Module ID: 13439
+// Function ID: 103186
 // Name: handleConnectionOpen
-// Dependencies: [1316, 662, 1319, 13387, 13388, 686, 22, 1331, 2]
+// Dependencies: [1316, 662, 1319, 13440, 13441, 686, 22, 1331, 2]
 
-// Module 13386 (handleConnectionOpen)
+// Module 13439 (handleConnectionOpen)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserSettingsTypes } from "MAX_FAVORITES";
 
@@ -54,9 +54,9 @@ let result = require("MAX_FAVORITES").fileFinishedImporting("modules/user_settin
 
 export default {
   init() {
-    importDefault(1319)[UserSettingsTypes.PRELOADED_USER_SETTINGS] = importDefault(13387);
+    importDefault(1319)[UserSettingsTypes.PRELOADED_USER_SETTINGS] = importDefault(13440);
     const tmp = importDefault(1319);
-    importDefault(1319)[UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS] = importDefault(13388);
+    importDefault(1319)[UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS] = importDefault(13441);
     const tmp2 = importDefault(1319);
     const subscription = importDefault(686).subscribe("CONNECTION_OPEN", handleConnectionOpen);
     const obj = importDefault(686);

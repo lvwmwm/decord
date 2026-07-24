@@ -1,10 +1,10 @@
-// Module ID: 7129
-// Function ID: 57288
+// Module ID: 7128
+// Function ID: 57301
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [31, 3782, 7130, 1851, 566, 6686, 7126, 6656, 6679, 2]
+// Dependencies: [31, 3782, 7129, 1851, 566, 6686, 7125, 6656, 6679, 2]
 // Exports: useIsEligibleForBogoOffer
 
-// Module 7129 (useIsEligibleForBogoOffer)
+// Module 7128 (useIsEligibleForBogoOffer)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -22,8 +22,8 @@ export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
   const obj2 = forceUpdate(566);
   const premiumTrialOffer = forceUpdate(6686).usePremiumTrialOffer();
   const obj4 = forceUpdate(6686);
-  const premiumDiscountOffer = forceUpdate(7126).usePremiumDiscountOffer();
-  const obj5 = forceUpdate(7126);
+  const premiumDiscountOffer = forceUpdate(7125).usePremiumDiscountOffer();
+  const obj5 = forceUpdate(7125);
   const isPaymentsBlocked = forceUpdate(6656).useIsPaymentsBlocked();
   const obj6 = forceUpdate(6656);
   forceUpdate = forceUpdate(6679).useForceUpdate();

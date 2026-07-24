@@ -1,5 +1,5 @@
 // Module ID: 4358
-// Function ID: 38663
+// Function ID: 38664
 // Name: toContentScanMetadata
 // Dependencies: [653, 1360, 1881, 4317, 1443, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toUnfurledMediaItem

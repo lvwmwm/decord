@@ -1,10 +1,10 @@
-// Module ID: 13585
-// Function ID: 104417
+// Module ID: 13636
+// Function ID: 104741
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [57, 31, 27, 653, 1345, 33, 4130, 689, 1456, 8515, 5802, 1334, 7846, 4361, 8518, 1862, 675, 1212, 13586, 1273, 7867, 8513, 13587, 13589, 2556, 2]
+// Dependencies: [57, 31, 27, 653, 1345, 33, 4130, 689, 1456, 8560, 5802, 1334, 7935, 4361, 8563, 1862, 675, 1212, 13637, 1273, 7956, 8558, 13638, 13640, 2556, 2]
 // Exports: default
 
-// Module 13585 (UserProfileDisplayNameStylesEditButton)
+// Module 13636 (UserProfileDisplayNameStylesEditButton)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

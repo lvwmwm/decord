@@ -1,5 +1,5 @@
 // Module ID: 4544
-// Function ID: 39848
+// Function ID: 39849
 // Name: CollapsingText
 // Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 4545, 4542, 4546, 4547, 4548, 1324, 4126, 3849, 4099, 4550, 3836, 4552, 2]
 

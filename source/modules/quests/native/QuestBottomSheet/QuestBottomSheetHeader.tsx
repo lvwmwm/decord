@@ -1,10 +1,10 @@
-// Module ID: 14017
-// Function ID: 107288
+// Module ID: 14067
+// Function ID: 107611
 // Name: QuestBottomSheetHeader
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 10464, 6965, 13990, 566, 9463, 6963, 1212, 14016, 4979, 13991, 4528, 4539, 4126, 4660, 8968, 2]
+// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 10493, 6964, 14040, 566, 9499, 6962, 1212, 14066, 4979, 14041, 4528, 4539, 4126, 4660, 9007, 2]
 // Exports: default
 
-// Module 14017 (QuestBottomSheetHeader)
+// Module 14067 (QuestBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -37,7 +37,7 @@ export default function QuestBottomSheetHeader(step) {
   let isScreenReaderEnabled;
   let ref;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = isScreenReaderEnabled(13991);
+  let obj = isScreenReaderEnabled(14041);
   const tmp3 = (function useHeaderCopy(quest) {
     quest = quest.quest;
     const step = quest.step;
@@ -180,7 +180,7 @@ export default function QuestBottomSheetHeader(step) {
     obj1.onPress = actionSheetPressHandler;
     obj1.style = tmp.actionSheetButton;
     let obj2 = { color: ref(689).colors.INTERACTIVE_TEXT_DEFAULT };
-    obj1.children = callback(isScreenReaderEnabled(8968).MoreHorizontalIcon, obj2);
+    obj1.children = callback(isScreenReaderEnabled(9007).MoreHorizontalIcon, obj2);
     withActionSheet = callback(isScreenReaderEnabled(4660).PressableOpacity, obj1);
   }
   items3[1] = withActionSheet;

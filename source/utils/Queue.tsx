@@ -1,9 +1,9 @@
-// Module ID: 7078
-// Function ID: 56608
+// Module ID: 7077
+// Function ID: 56617
 // Name: Queue
 // Dependencies: [6, 7, 3, 13, 2]
 
-// Module 7078 (Queue)
+// Module 7077 (Queue)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import importDefaultResult from "arrayCopy";

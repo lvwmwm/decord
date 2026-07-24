@@ -1,10 +1,10 @@
-// Module ID: 13694
-// Function ID: 105097
+// Module ID: 13745
+// Function ID: 105421
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 57, 31, 27, 33, 4130, 689, 5594, 1212, 13684, 9201, 13685, 13695, 4126, 1273, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 33, 4130, 689, 5592, 1212, 13735, 9237, 13736, 13746, 4126, 1273, 4543, 2]
 // Exports: default
 
-// Module 13694 (TwoFASetupSuccess)
+// Module 13745 (TwoFASetupSuccess)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -62,7 +62,7 @@ export default function TwoFASetupSuccess() {
   obj = { style: tmp.flex };
   const items = [callback2(closure_6, obj), , , , , , , ];
   const tmp4 = callback(React.useState(""), 2);
-  items[1] = callback2(closure_7, { source: _require(13695), style: tmp.image });
+  items[1] = callback2(closure_7, { source: _require(13746), style: tmp.image });
   const obj2 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary" };
   const intl = _require(1212).intl;
   obj2.children = intl.string(_require(1212).t.Awk3Gw);
@@ -103,5 +103,5 @@ export default function TwoFASetupSuccess() {
   items[7] = callback2(closure_6, { style: tmp.flex });
   obj.children = items;
   obj.children = closure_9(closure_6, obj);
-  return callback2(_require(13685).TwoFASetupModalScreen, obj);
+  return callback2(_require(13736).TwoFASetupModalScreen, obj);
 };

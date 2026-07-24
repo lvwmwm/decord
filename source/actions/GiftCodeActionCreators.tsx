@@ -1,10 +1,10 @@
-// Module ID: 8195
-// Function ID: 64789
+// Module ID: 8239
+// Function ID: 65017
 // Name: resolveGiftCode
-// Dependencies: [5, 4167, 6774, 6782, 653, 1851, 686, 4366, 5465, 6773, 4029, 507, 8196, 8197, 2]
+// Dependencies: [5, 4167, 6774, 6782, 653, 1851, 686, 4366, 5463, 6773, 4029, 507, 8240, 8241, 2]
 // Exports: resolveGiftCode
 
-// Module 8195 (resolveGiftCode)
+// Module 8239 (resolveGiftCode)
 import GuildFeatures from "GuildFeatures";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -156,7 +156,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    importDefault(8196).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    importDefault(8240).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

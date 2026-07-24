@@ -1,5 +1,5 @@
 // Module ID: 4573
-// Function ID: 40092
+// Function ID: 40096
 // Name: getGuildIdFromChannelId
 // Dependencies: [1908, 1348, 1838, 3758, 3767, 1849, 653, 1832, 1392, 1212, 4574, 4312, 4320, 4575, 4321, 4572, 3829, 2]
 

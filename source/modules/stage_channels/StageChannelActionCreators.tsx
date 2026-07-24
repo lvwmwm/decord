@@ -1,10 +1,10 @@
-// Module ID: 7482
-// Function ID: 60059
+// Module ID: 7562
+// Function ID: 60305
 // Name: audienceAckRequestToSpeak
-// Dependencies: [5, 1906, 4146, 653, 7483, 44, 4324, 7484, 507, 7488, 4314, 4955, 5048, 1881, 3763, 483, 4140, 7477, 7490, 2]
+// Dependencies: [5, 1906, 4146, 653, 7563, 44, 4324, 7564, 507, 7568, 4314, 4955, 5048, 1881, 3763, 483, 4140, 7557, 7570, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, startStage, toggleRequestToSpeak
 
-// Module 7482 (audienceAckRequestToSpeak)
+// Module 7562 (audienceAckRequestToSpeak)
 import invariant from "invariant";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -37,9 +37,9 @@ function audienceAckRequestToSpeak(channel, c1) {
   if (!tmp8) {
     let obj2 = require(4324) /* _createForOfIteratorHelperLoose */;
     obj = {};
-    const merged = Object.assign(require(7484) /* fillChunk */.getStageChannelMetadata(channel));
+    const merged = Object.assign(require(7564) /* fillChunk */.getStageChannelMetadata(channel));
     obj2.trackWithMetadata(constants.PROMOTED_TO_SPEAKER, obj);
-    const obj5 = require(7484) /* fillChunk */;
+    const obj5 = require(7564) /* fillChunk */;
   }
   const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   obj = { url: closure_9.UPDATE_VOICE_STATE(guildId) };
@@ -99,9 +99,9 @@ export const toggleRequestToSpeak = function toggleRequestToSpeak(closure_0, arg
   if (arg1) {
     let obj = require(4324) /* _createForOfIteratorHelperLoose */;
     obj = {};
-    const merged = Object.assign(require(7484) /* fillChunk */.getStageChannelMetadata(closure_0));
+    const merged = Object.assign(require(7564) /* fillChunk */.getStageChannelMetadata(closure_0));
     obj.trackWithMetadata(constants.REQUEST_TO_SPEAK_INITIATED, obj);
-    const obj3 = require(7484) /* fillChunk */;
+    const obj3 = require(7564) /* fillChunk */;
   }
   const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   obj = { url: closure_9.UPDATE_VOICE_STATE(guildId) };

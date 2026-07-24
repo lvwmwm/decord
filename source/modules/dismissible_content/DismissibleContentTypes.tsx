@@ -1,5 +1,5 @@
 // Module ID: 1335
-// Function ID: 15653
+// Function ID: 15654
 // Name: isTimeRecurringDismissibleContent
 // Dependencies: [1334, 2]
 // Exports: isGuildDismissibleContent, isSingleUseDismissibleContent

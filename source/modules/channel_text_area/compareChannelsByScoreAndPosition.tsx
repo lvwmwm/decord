@@ -1,5 +1,5 @@
 // Module ID: 5731
-// Function ID: 49246
+// Function ID: 49257
 // Name: getGuildChannelPosition
 // Dependencies: [1348, 653, 2]
 // Exports: default

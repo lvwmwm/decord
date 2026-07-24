@@ -1,5 +1,5 @@
 // Module ID: 4791
-// Function ID: 41664
+// Function ID: 41668
 // Name: getImageWidth
 // Dependencies: [4762]
 

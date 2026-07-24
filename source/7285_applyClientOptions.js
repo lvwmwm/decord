@@ -1,5 +1,5 @@
 // Module ID: 7285
-// Function ID: 58727
+// Function ID: 58756
 // Name: applyClientOptions
 // Dependencies: [57, 65, 7247, 7250, 7263, 7286, 7287, 7273, 7245, 7288, 7281, 7257]
 // Exports: parseEventHintOrCaptureContext, prepareEvent

@@ -1,10 +1,10 @@
-// Module ID: 12129
-// Function ID: 95010
+// Module ID: 12156
+// Function ID: 95250
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [57, 31, 6856, 1345, 664, 1428, 566, 5802, 1334, 2]
+// Dependencies: [57, 31, 6855, 1345, 664, 1428, 566, 5802, 1334, 2]
 // Exports: default
 
-// Module 12129 (useWishlistSuggestionsDismissibleContent)
+// Module 12156 (useWishlistSuggestionsDismissibleContent)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

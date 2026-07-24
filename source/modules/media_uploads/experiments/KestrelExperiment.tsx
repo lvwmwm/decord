@@ -1,5 +1,5 @@
 // Module ID: 4711
-// Function ID: 40985
+// Function ID: 40989
 // Name: getKestrelConfig
 // Dependencies: [1428, 2]
 // Exports: getEffectiveKestrelLimit, getKestrelConfig, getKestrelVariantName

@@ -1,10 +1,10 @@
-// Module ID: 11293
-// Function ID: 87865
+// Module ID: 11322
+// Function ID: 88105
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [57, 31, 653, 33, 4130, 689, 1820, 4098, 11294, 1934, 11292, 4660, 4126, 2]
+// Dependencies: [57, 31, 653, 33, 4130, 689, 1820, 4098, 11323, 1934, 11321, 4660, 4126, 2]
 // Exports: default
 
-// Module 11293 (AppLauncherAutocompleteOption)
+// Module 11322 (AppLauncherAutocompleteOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -71,7 +71,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
   first = tmp[0];
   closure_9 = tmp[1];
   const tmp3 = _createForOfIteratorHelperLoose();
-  let obj = require(11292) /* useAnimationDelayedAutoFocus */;
+  let obj = require(11321) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
   obj = { onPress };
   const items = [tmp3.container, , ];

@@ -1,10 +1,10 @@
-// Module ID: 14356
-// Function ID: 109793
+// Module ID: 14406
+// Function ID: 110116
 // Name: DismissibleNewTag
-// Dependencies: [31, 6671, 33, 4130, 689, 9642, 477, 1273, 4554, 668, 2]
+// Dependencies: [31, 6671, 33, 4130, 689, 9678, 477, 1273, 4554, 668, 2]
 // Exports: default
 
-// Module 14356 (DismissibleNewTag)
+// Module 14406 (DismissibleNewTag)
 import "result";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export default function DismissibleNewTag(dismissibleContent) {
   ({ containerStyle: importDefault, noGradient: dependencyMap, newPremiumStyle: Gradients, colors: jsx, variantOverride: _createForOfIteratorHelperLoose } = dismissibleContent);
   let closure_6 = _createForOfIteratorHelperLoose();
   let items = [dismissibleContent];
-  return jsx(importDefault(9642), {
+  return jsx(importDefault(9678), {
     contentTypes: items,
     children(visibleContent) {
       if (visibleContent.visibleContent !== dismissibleContent) {

@@ -1,10 +1,10 @@
-// Module ID: 8831
-// Function ID: 69611
+// Module ID: 8870
+// Function ID: 69826
 // Name: useActiveThemeType
 // Dependencies: [1280, 3942, 1322, 1281, 566, 3980, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8831 (useActiveThemeType)
+// Module 8870 (useActiveThemeType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

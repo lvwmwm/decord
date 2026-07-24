@@ -1,10 +1,10 @@
-// Module ID: 10491
-// Function ID: 81258
+// Module ID: 10520
+// Function ID: 81450
 // Name: getPostMessageJavaScript
 // Dependencies: [2]
 // Exports: default
 
-// Module 10491 (getPostMessageJavaScript)
+// Module 10520 (getPostMessageJavaScript)
 const result = require("set").fileFinishedImporting("modules/activities/native/getPostMessageJavaScript.tsx");
 
 export default function getPostMessageJavaScript(arg0) {

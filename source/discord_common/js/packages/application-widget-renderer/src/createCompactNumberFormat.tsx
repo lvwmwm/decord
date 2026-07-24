@@ -1,10 +1,10 @@
-// Module ID: 12001
-// Function ID: 92711
+// Module ID: 12027
+// Function ID: 92947
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 12001 (_createForOfIteratorHelperLoose)
+// Module 12027 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;

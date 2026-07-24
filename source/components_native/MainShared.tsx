@@ -1,10 +1,10 @@
-// Module ID: 15592
-// Function ID: 120206
+// Module ID: 15639
+// Function ID: 120528
 // Name: BurstReactionAnimationContainer
-// Dependencies: [31, 27, 1348, 4202, 33, 566, 10543, 3981, 10633, 15593, 477, 13502, 1212, 15595, 13497, 13367, 2, 15596, 15597, 15598, 15599, 15607, 15608, 15635]
+// Dependencies: [31, 27, 1348, 4202, 33, 566, 10572, 3981, 10662, 15640, 477, 13555, 1212, 15642, 13550, 13420, 2, 15643, 15644, 15645, 15646, 15654, 15655, 15682]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 15592 (BurstReactionAnimationContainer)
+// Module 15639 (BurstReactionAnimationContainer)
 import result from "result";
 import { NativeModules } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,10 +25,10 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct, closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(outer1_6.getChannelId()));
-  const hasPipParticipant = require(10543) /* usePipVideoOrStream */.useHasPipParticipant({ isActivityViewFocused: false });
-  const obj2 = require(10543) /* usePipVideoOrStream */;
+  const hasPipParticipant = require(10572) /* usePipVideoOrStream */.useHasPipParticipant({ isActivityViewFocused: false });
+  const obj2 = require(10572) /* usePipVideoOrStream */;
   const isModalOpen = require(3981) /* _createForOfIteratorHelperLoose */.useIsModalOpen();
-  require(10633) /* isVoicePanelEnabled */;
+  require(10662) /* isVoicePanelEnabled */;
   let tmp6 = null;
   if (null != stateFromStores) {
     tmp6 = null;
@@ -38,7 +38,7 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
         tmp6 = null;
         if (!tmp5) {
           obj = { channel: stateFromStores };
-          tmp6 = jsx(importDefault(15593), { channel: stateFromStores });
+          tmp6 = jsx(importDefault(15640), { channel: stateFromStores });
         }
       }
     }
@@ -63,7 +63,7 @@ export const useAppKeyCommands = function useAppKeyCommands() {
     const items = [obj];
     return items;
   }, []);
-  const keyCommands = require(13497) /* _createForOfIteratorHelperLoose */.useKeyCommands(memo);
+  const keyCommands = require(13550) /* _createForOfIteratorHelperLoose */.useKeyCommands(memo);
 };
 export const useScreenReaderEnabled = function useScreenReaderEnabled() {
   const effect = React.useEffect(() => {

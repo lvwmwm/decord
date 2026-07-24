@@ -1,10 +1,10 @@
-// Module ID: 9895
-// Function ID: 76606
+// Module ID: 9927
+// Function ID: 76800
 // Name: ShareFooterLayout
 // Dependencies: [31, 27, 33, 4130, 689, 5160, 3991, 4542, 4546, 4126, 2]
 // Exports: default
 
-// Module 9895 (ShareFooterLayout)
+// Module 9927 (ShareFooterLayout)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

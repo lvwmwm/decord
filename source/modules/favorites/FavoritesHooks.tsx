@@ -1,10 +1,10 @@
-// Module ID: 10190
-// Function ID: 78725
+// Module ID: 10220
+// Function ID: 78916
 // Name: computeFavoritesAccess
-// Dependencies: [3947, 1849, 1351, 10191, 1386, 1851, 10192, 10193, 566, 1872, 21, 1282, 5077, 2]
+// Dependencies: [3947, 1849, 1351, 10221, 1386, 1851, 10222, 10223, 566, 1872, 21, 1282, 5077, 2]
 // Exports: getFavoritesAccess, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavoritesAwareChannel, useFavoritesCategories
 
-// Module 10190 (computeFavoritesAccess)
+// Module 10220 (computeFavoritesAccess)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -34,14 +34,14 @@ function computeFavoritesAccess(hasHigherPrivileges) {
   } else {
     num = 0;
     if (isFreemium) {
-      num = require(10192) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(10222) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 }
 function useFavoritesAccess(FavoritesGuildChannelList) {
   let enabled;
   let hasHigherPrivileges;
-  let obj = require(10193) /* apexExperiment */;
+  let obj = require(10223) /* apexExperiment */;
   obj = { location: FavoritesGuildChannelList };
   const favoritesGuildConfig = obj.useFavoritesGuildConfig(obj);
   const isFreemium = favoritesGuildConfig.isFreemium;
@@ -118,7 +118,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
-  let obj = require(10193) /* apexExperiment */;
+  let obj = require(10223) /* apexExperiment */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   const isFreemium = favoritesGuildConfig.isFreemium;
   obj = { isExperimentEnabled: favoritesGuildConfig.enabled, hasHigherPrivileges: favoritesGuildConfig.hasHigherPrivileges };

@@ -1,10 +1,10 @@
-// Module ID: 8199
-// Function ID: 64825
+// Module ID: 8243
+// Function ID: 65053
 // Name: getGiftCodeHeaderText
-// Dependencies: [31, 27, 8193, 1849, 4175, 653, 8200, 33, 4366, 5611, 1212, 4329, 1876, 4130, 689, 1456, 566, 3969, 8201, 8202, 5470, 8206, 6786, 8207, 5467, 8208, 5464, 5484, 675, 7459, 5733, 5121, 4126, 8209, 8210, 8211, 5474, 8215, 1273, 8234, 8750, 9805, 12257, 4543, 8198, 4337, 8648, 8197, 2]
+// Dependencies: [31, 27, 8237, 1849, 4175, 653, 8244, 33, 4366, 5609, 1212, 4329, 1876, 4130, 689, 1456, 566, 3969, 8245, 8246, 5468, 8250, 6786, 8251, 5465, 8252, 5462, 5482, 675, 7539, 5733, 5121, 4126, 8253, 8254, 8255, 5472, 8259, 1273, 8278, 8789, 9837, 12284, 4543, 8242, 4337, 8689, 8241, 2]
 // Exports: default
 
-// Module 8199 (getGiftCodeHeaderText)
+// Module 8243 (getGiftCodeHeaderText)
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "QUICK_SWITCHER";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -42,7 +42,7 @@ function getGiftCodeHeaderText(isSubscription) {
     }
     return subscriptionGiftStartHeaderText;
   }
-  let obj = sender(5611);
+  let obj = sender(5609);
   if (obj.isGameItemSKU(sku)) {
     let intl = tmp2(1212).intl;
     subscriptionGiftStartHeaderText = intl.string(tmp2(1212).t["Bn1J+a"]);

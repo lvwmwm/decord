@@ -1,10 +1,10 @@
-// Module ID: 11981
-// Function ID: 92563
+// Module ID: 12007
+// Function ID: 92799
 // Name: UserProfileEditNote
-// Dependencies: [57, 31, 27, 653, 33, 4130, 1456, 11975, 5087, 9111, 3989, 9122, 1212, 11982, 4126, 7504, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 1456, 12001, 5087, 9147, 3989, 9158, 1212, 12008, 4126, 7645, 2]
 // Exports: default
 
-// Module 11981 (UserProfileEditNote)
+// Module 12007 (UserProfileEditNote)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";

@@ -1,8 +1,8 @@
-// Module ID: 9587
-// Function ID: 74689
-// Dependencies: [31, 27, 653, 33, 4130, 689, 5781, 9577, 9588, 5772, 4660, 1212, 9589, 4126, 2]
+// Module ID: 9623
+// Function ID: 74900
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5781, 9613, 9624, 5772, 4660, 1212, 9625, 4126, 2]
 
-// Module 9587
+// Module 9623
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -27,9 +27,9 @@ const memoResult = require("result").memo(function GIFPickerHeader(arg0) {
   ({ categoryType, onQueryClear } = arg0);
   ({ onQueryChange, searchInputRef } = arg0);
   const tmp = callback2();
-  let obj = require(9577) /* getGifProviderConfig */;
+  let obj = require(9613) /* getGifProviderConfig */;
   const providerForAPIRequest = obj.getProviderForAPIRequest();
-  require(9588) /* getSearchPlaceholder */;
+  require(9624) /* getSearchPlaceholder */;
   obj = { style: tmp.container };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     obj = { size: "md", onChange: onQueryChange, placeholder: tmp4, onClear: onQueryClear, ref: searchInputRef, isRound: true };
@@ -42,7 +42,7 @@ const memoResult = require("result").memo(function GIFPickerHeader(arg0) {
     obj2.destination = intl5.string(require(1212) /* getSystemLocale */.t.ffgJrs);
     obj1.accessibilityLabel = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.UTypEu, obj2);
     const obj3 = { color: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const items = [callback(require(9589) /* ChevronLargeLeftIcon */.ChevronLargeLeftIcon, obj3), ];
+    const items = [callback(require(9625) /* ChevronLargeLeftIcon */.ChevronLargeLeftIcon, obj3), ];
     const obj4 = { variant: "text-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2 };
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
       const intl3 = require(1212) /* getSystemLocale */.intl;

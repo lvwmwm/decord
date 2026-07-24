@@ -1,10 +1,10 @@
-// Module ID: 8919
-// Function ID: 70359
+// Module ID: 8958
+// Function ID: 70574
 // Name: isEmpty
 // Dependencies: [1194, 4202, 4216, 566, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 8919 (isEmpty)
+// Module 8958 (isEmpty)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

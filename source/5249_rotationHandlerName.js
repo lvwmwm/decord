@@ -1,5 +1,5 @@
 // Module ID: 5249
-// Function ID: 45288
+// Function ID: 45293
 // Name: rotationHandlerName
 // Dependencies: [5236, 5234]
 

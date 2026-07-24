@@ -1,9 +1,9 @@
-// Module ID: 13330
-// Function ID: 102315
+// Module ID: 13383
+// Function ID: 102642
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1881, 44, 7799, 664, 6691, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1881, 44, 7890, 664, 6691, 566, 686, 2]
 
-// Module 13330 (_isNativeReflectConstruct)
+// Module 13383 (_isNativeReflectConstruct)
 import invariant from "invariant";
 import _fetchMessageInteractionData from "_fetchMessageInteractionData";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

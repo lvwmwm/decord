@@ -1,10 +1,10 @@
-// Module ID: 9340
-// Function ID: 72985
+// Module ID: 9376
+// Function ID: 73194
 // Name: BurstReactionToggle
-// Dependencies: [31, 27, 4122, 1345, 33, 3991, 566, 3834, 689, 4131, 4542, 4130, 9341, 1212, 8009, 2]
+// Dependencies: [31, 27, 4122, 1345, 33, 3991, 566, 3834, 689, 4131, 4542, 4130, 9377, 1212, 7483, 2]
 // Exports: default
 
-// Module 9340 (BurstReactionToggle)
+// Module 9376 (BurstReactionToggle)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,7 +31,7 @@ export default function BurstReactionToggle(arg0) {
   let importDefault;
   let colors = importDefault(689).colors;
   const ref = React.useRef(null);
-  importDefault = importDefault(9341)(ref);
+  importDefault = importDefault(9377)(ref);
   let obj = {
     onPress() {
       callback2(outer1_6.AUTO);
@@ -104,7 +104,7 @@ export default function BurstReactionToggle(arg0) {
       return { containerStyle };
     })(isActive).containerStyle
   ];
-  obj.children = jsx(require(8009) /* SuperReactionIcon */.SuperReactionIcon, { color: isActive ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT });
+  obj.children = jsx(require(7483) /* SuperReactionIcon */.SuperReactionIcon, { color: isActive ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT });
   obj.children = jsx(importDefault(3991).View, { style: items, ref });
   return <Pressable style={items} ref={ref} />;
 };

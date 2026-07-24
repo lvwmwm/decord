@@ -1,5 +1,5 @@
 // Module ID: 1002
-// Function ID: 10735
+// Function ID: 10736
 // Name: mergeOptions
 // Dependencies: [65, 29, 5, 77, 57, 794]
 // Exports: buildFeedbackIntegration, feedbackModalIntegration, feedbackScreenshotIntegration, getFeedback

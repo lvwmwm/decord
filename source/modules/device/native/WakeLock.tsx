@@ -1,10 +1,10 @@
-// Module ID: 10603
-// Function ID: 82712
+// Module ID: 10632
+// Function ID: 82904
 // Name: useWakeLock
-// Dependencies: [31, 27, 477, 10604, 2]
+// Dependencies: [31, 27, 477, 10633, 2]
 // Exports: default
 
-// Module 10603 (useWakeLock)
+// Module 10632 (useWakeLock)
 import result from "result";
 import { NativeModules } from "get ActivityIndicator";
 

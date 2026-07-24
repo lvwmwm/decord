@@ -1,10 +1,10 @@
-// Module ID: 15185
-// Function ID: 115620
+// Module ID: 15232
+// Function ID: 115942
 // Name: ItemDetailsActionSheet
-// Dependencies: [31, 27, 1348, 1838, 8306, 33, 4130, 689, 566, 4320, 5089, 5515, 1273, 8320, 5500, 10349, 15186, 5503, 5165, 2]
+// Dependencies: [31, 27, 1348, 1838, 8350, 33, 4130, 689, 566, 4320, 5089, 5513, 1273, 8364, 5498, 10378, 15233, 5501, 5165, 2]
 // Exports: default
 
-// Module 15185 (ItemDetailsActionSheet)
+// Module 15232 (ItemDetailsActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,9 +46,9 @@ export default function ItemDetailsActionSheet(arg0) {
   });
   const tmp3 = importDefault(4320)(stateFromStores, true);
   if (null != stateFromStores1) {
-    obj = { guild: stateFromStores1, size: require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE };
-    let tmp6 = callback(importDefault(5515), obj);
-    const tmp13 = importDefault(5515);
+    obj = { guild: stateFromStores1, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE };
+    let tmp6 = callback(importDefault(5513), obj);
+    const tmp13 = importDefault(5513);
   } else if (null != stateFromStores) {
     obj = { size: require(1273) /* Button */.AvatarSizes.LARGE, channel: stateFromStores };
     tmp6 = callback(require(1273) /* Button */.Avatar, obj);
@@ -59,7 +59,7 @@ export default function ItemDetailsActionSheet(arg0) {
     result = null != stateFromStores1;
   }
   if (result) {
-    let obj5 = require(8320) /* generateHydrationId */;
+    let obj5 = require(8364) /* generateHydrationId */;
     result = obj5.isChannelCustomScoreEligible(stateFromStores);
   }
   obj1 = { showGradient: true, startExpanded: true };
@@ -73,11 +73,11 @@ export default function ItemDetailsActionSheet(arg0) {
     str = name;
   }
   obj2.subtitle = str;
-  obj1.header = callback(require(10349) /* ActionSheetIconHeader */.ActionSheetIconHeader, obj2);
+  obj1.header = callback(require(10378) /* ActionSheetIconHeader */.ActionSheetIconHeader, obj2);
   let tmp22 = result;
   if (result) {
     const obj3 = { channel: stateFromStores, guild: stateFromStores1 };
-    tmp22 = callback(require(15186) /* customScoreToIndex */.ChannelScoreSettings, obj3);
+    tmp22 = callback(require(15233) /* customScoreToIndex */.ChannelScoreSettings, obj3);
   }
   const items3 = [tmp22, , ];
   let tmp27Result = null != stateFromStores2 && null != stateFromStores1;
@@ -89,7 +89,7 @@ export default function ItemDetailsActionSheet(arg0) {
     }
     const items4 = [result, ];
     const obj6 = { guild: stateFromStores1 };
-    items4[1] = callback(require(15186) /* customScoreToIndex */.GuildScoreSettings, obj6);
+    items4[1] = callback(require(15233) /* customScoreToIndex */.GuildScoreSettings, obj6);
     obj4.children = items4;
     tmp27Result = closure_9(closure_8, obj4);
     const tmp27 = closure_9;
@@ -105,10 +105,10 @@ export default function ItemDetailsActionSheet(arg0) {
       const _JSON = JSON;
       obj8.subLabel = JSON.stringify(stateFromStores2.score_components);
       obj7.children = callback(require(5165) /* TableRowInner */.TableRow, obj8);
-      tmp34 = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj7);
+      tmp34 = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj7);
     }
   }
   items3[2] = tmp34;
   obj1.children = items3;
-  return closure_9(require(5500) /* ActionSheet */.ActionSheet, obj1);
+  return closure_9(require(5498) /* ActionSheet */.ActionSheet, obj1);
 };

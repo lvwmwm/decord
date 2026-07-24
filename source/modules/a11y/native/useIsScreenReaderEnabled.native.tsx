@@ -1,5 +1,5 @@
 // Module ID: 4528
-// Function ID: 39789
+// Function ID: 39790
 // Name: SCREEN_READER_ENABLED_GETTER
 // Dependencies: [27, 587, 621, 682, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled

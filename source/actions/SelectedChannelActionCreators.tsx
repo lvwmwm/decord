@@ -1,6 +1,6 @@
 // Module ID: 4944
-// Function ID: 42391
-// Dependencies: [4144, 1348, 4177, 653, 686, 1198, 4945, 9040, 2]
+// Function ID: 42395
+// Dependencies: [4144, 1348, 4177, 653, 686, 1198, 4945, 9079, 2]
 
 // Module 4944
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -70,8 +70,8 @@ export default {
     const self = this;
     remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != remoteSessionId) {
-      importAll(9040).remoteDisconnect(remoteSessionId);
-      const obj = importAll(9040);
+      importAll(9079).remoteDisconnect(remoteSessionId);
+      const obj = importAll(9079);
     }
     const voiceChannel = self.selectVoiceChannel(null);
   }

@@ -1,5 +1,5 @@
 // Module ID: 1213
-// Function ID: 13913
+// Function ID: 13914
 // Name: getLanguages
 // Dependencies: [31, 1214, 1250, 1272, 2]
 // Exports: getAvailableLocales, getNormalizedLocale, useSyncMessages

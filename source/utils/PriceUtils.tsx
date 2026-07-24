@@ -1,10 +1,10 @@
-// Module ID: 5618
-// Function ID: 47878
+// Module ID: 5616
+// Function ID: 47875
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1921, 3778, 1851, 482, 477, 5619, 5621, 5623, 1212, 3776, 2]
+// Dependencies: [1921, 3778, 1851, 482, 477, 5617, 5619, 5621, 1212, 3776, 2]
 // Exports: formatPercent, formatSubscriptionPlanRate, shortenAndFormatPrice
 
-// Module 5618 (formatSingleCurrencyPrice)
+// Module 5616 (formatSingleCurrencyPrice)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -46,7 +46,7 @@ function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   if (tmp11) {
     obj.minimumFractionDigits = 0;
   }
-  return require(5619) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
+  return require(5617) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
 }
 function formatDualPriceForBG(result, localeOverride) {
   return "" + formatSingleCurrencyPrice(result, CurrencyCodes.EUR, localeOverride) + " (" + formatSingleCurrencyPrice(1.95583 * result, CurrencyCodes.BGN, localeOverride) + ")";
@@ -57,16 +57,16 @@ function formatPrice(amount, currency, localeOverride, localeOverride) {
   if (timestamp < date.getTime()) {
     const platformName = require(477) /* set */.getPlatformName();
     if ("android" === platformName) {
-      let ipCountryCode = require(5621) /* _isNativeReflectConstruct */.default.getUserCountry();
-      const _default2 = require(5621) /* _isNativeReflectConstruct */.default;
+      let ipCountryCode = require(5619) /* _isNativeReflectConstruct */.default.getUserCountry();
+      const _default2 = require(5619) /* _isNativeReflectConstruct */.default;
     } else if ("ios" === platformName) {
-      const storeFront = require(5623) /* _isNativeReflectConstruct */.default.getStoreFront();
+      const storeFront = require(5621) /* _isNativeReflectConstruct */.default.getStoreFront();
       let country;
       if (null != storeFront) {
         country = storeFront.country;
       }
       ipCountryCode = country;
-      const _default = require(5623) /* _isNativeReflectConstruct */.default;
+      const _default = require(5621) /* _isNativeReflectConstruct */.default;
     } else {
       ipCountryCode = ipCountryCode.ipCountryCode;
     }

@@ -1,10 +1,10 @@
-// Module ID: 9360
-// Function ID: 73068
+// Module ID: 9396
+// Function ID: 73277
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [31, 27, 6671, 33, 4130, 689, 9361, 4554, 668, 4652, 2]
+// Dependencies: [31, 27, 6671, 33, 4130, 689, 9397, 4554, 668, 4652, 2]
 // Exports: default
 
-// Module 9360 (PremiumUpsellSectionDivider)
+// Module 9396 (PremiumUpsellSectionDivider)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -62,7 +62,7 @@ export default function PremiumUpsellSectionDivider(arg0) {
   ({ useTier0UpsellContent, position } = arg0);
   let lock = callback2(position);
   let obj = { style: lock.container };
-  obj = { style: lock.gradient, children: callback(require(9361) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
+  obj = { style: lock.gradient, children: callback(require(9397) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
   const items = [callback(closure_4, obj), , ];
   obj = { style: lock.divider, start: require(668) /* keys */.HorizontalGradient.START, end: require(668) /* keys */.HorizontalGradient.END };
   if (true === useTier0UpsellContent) {

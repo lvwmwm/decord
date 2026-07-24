@@ -1,9 +1,9 @@
-// Module ID: 8826
-// Function ID: 69596
+// Module ID: 8865
+// Function ID: 69811
 // Name: PX_24
 // Dependencies: [689, 2]
 
-// Module 8826 (PX_24)
+// Module 8865 (PX_24)
 const PX_24 = require("_createForOfIteratorHelperLoose").space.PX_24;
 const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
 const sum = 18 + PX_24 + PX_8;

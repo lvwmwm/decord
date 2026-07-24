@@ -1,11 +1,11 @@
 // Module ID: 7509
-// Function ID: 60187
+// Function ID: 59931
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 7509 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "db11ea9da81d79144310eac53428fbe9", name: "CircleErrorIcon-primary", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8f1bbba7f556b427515687c5a1498793", name: "TrophyIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 7737
-// Function ID: 61510
+// Module ID: 7826
+// Function ID: 61796
 // Name: getPriceString
-// Dependencies: [3781, 3776, 5618, 2]
+// Dependencies: [3781, 3776, 5616, 2]
 // Exports: getPriceString
 
-// Module 7737 (getPriceString)
+// Module 7826 (getPriceString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -25,14 +25,14 @@ export const getPriceString = function getPriceString(premiumSubscription, arg1)
         } else {
           const price = require(3776) /* _createForOfIteratorHelperLoose */.getPrice(planIdFromItems);
           const obj2 = require(3776) /* _createForOfIteratorHelperLoose */;
-          const formatPriceResult = require(5618) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
+          const formatPriceResult = require(5616) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return require(5618) /* formatSingleCurrencyPrice */.formatRate(formatPriceResult, interval, intervalCount);
+            return require(5616) /* formatSingleCurrencyPrice */.formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }
-          const obj3 = require(5618) /* formatSingleCurrencyPrice */;
+          const obj3 = require(5616) /* formatSingleCurrencyPrice */;
         }
       }
     }

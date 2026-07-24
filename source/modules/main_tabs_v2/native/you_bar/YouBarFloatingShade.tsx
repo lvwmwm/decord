@@ -1,8 +1,8 @@
-// Module ID: 15122
-// Function ID: 115171
-// Dependencies: [31, 27, 3942, 13997, 14813, 33, 4130, 566, 3834, 689, 13999, 1450, 3984, 14807, 3991, 3941, 665, 4554, 2]
+// Module ID: 15169
+// Function ID: 115493
+// Dependencies: [31, 27, 3942, 14047, 14860, 33, 4130, 566, 3834, 689, 14049, 1450, 3984, 14854, 3991, 3941, 665, 4554, 2]
 
-// Module 15122
+// Module 15169
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { YOU_BAR_GRADIENT_EXTRA_HEIGHT as closure_5 } from "CONNECTION_BANNER_HEIGHT";
@@ -20,7 +20,7 @@ let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { pos
 let closure_11 = { code: "function YouBarFloatingShadeTsx1(){const{gradientHeight,drawerWidth}=this.__closure;return{height:gradientHeight,opacity:1,width:drawerWidth};}" };
 const memoResult = require("result").memo(function YouBarFloatingShade() {
   const tmp = callback3();
-  let obj = require(13999) /* useYouBarTotalHeight */;
+  let obj = require(14049) /* useYouBarTotalHeight */;
   const youBarTotalHeight = obj.useYouBarTotalHeight();
   const sum = youBarTotalHeight + closure_5;
   require = sum;

@@ -1,10 +1,10 @@
-// Module ID: 8475
-// Function ID: 67615
+// Module ID: 8519
+// Function ID: 67843
 // Name: useCanSendStageStartNotification
 // Dependencies: [4051, 3758, 482, 566, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 8475 (useCanSendStageStartNotification)
+// Module 8519 (useCanSendStageStartNotification)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { Permissions } from "sum";

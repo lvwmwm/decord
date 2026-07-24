@@ -1,10 +1,10 @@
-// Module ID: 10032
-// Function ID: 77484
+// Module ID: 10064
+// Function ID: 77678
 // Name: DefaultState
-// Dependencies: [57, 31, 27, 1838, 10033, 653, 33, 4130, 689, 10036, 4126, 1212, 1273, 566, 10037, 10038, 1557, 10072, 10073, 5087, 5771, 10046, 10030, 675, 2]
+// Dependencies: [57, 31, 27, 1838, 10065, 653, 33, 4130, 689, 10068, 4126, 1212, 1273, 566, 10069, 10070, 1557, 10104, 10105, 5087, 5771, 10078, 10062, 675, 2]
 // Exports: default
 
-// Module 10032 (DefaultState)
+// Module 10064 (DefaultState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -25,7 +25,7 @@ function DefaultState() {
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
   let obj = { style: tmp.emptyWrapper };
-  obj = { style: tmp.emptyStateImage, source: importDefault(10036) };
+  obj = { style: tmp.emptyStateImage, source: importDefault(10068) };
   const items = [callback(closure_7, obj), ];
   obj = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -44,7 +44,7 @@ function EmptyState(channel) {
   let obj = channel(566);
   const items = [closure_9];
   const importDefault = obj.useStateFromStores(items, () => outer1_9.getGuild(channel.getGuildId()));
-  let obj1 = channel(10037);
+  let obj1 = channel(10069);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1212).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -60,7 +60,7 @@ function EmptyState(channel) {
     formatResult = intl.string(tmp3(1212).t.vYyEnv);
   }
   obj = { style: tmp.emptyWrapper };
-  obj1 = { style: tmp.emptyStateImage, source: importDefault(10036) };
+  obj1 = { style: tmp.emptyStateImage, source: importDefault(10068) };
   const items1 = [callback(closure_7, obj1), , ];
   const obj2 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
   const intl2 = channel(1212).intl;

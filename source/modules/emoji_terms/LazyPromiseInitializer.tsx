@@ -1,5 +1,5 @@
 // Module ID: 5000
-// Function ID: 43256
+// Function ID: 43260
 // Name: LazyPromiseInitializer
 // Dependencies: [6, 7, 2]
 

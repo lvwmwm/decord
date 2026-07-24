@@ -1,5 +1,5 @@
 // Module ID: 1047
-// Function ID: 11242
+// Function ID: 11243
 // Name: registerSpanErrorInstrumentation
 // Dependencies: [794, 1048]
 

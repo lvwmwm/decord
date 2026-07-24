@@ -1,5 +1,5 @@
 // Module ID: 1476
-// Function ID: 17145
+// Function ID: 17146
 // Name: useEventEmitter
 // Dependencies: [65, 31]
 // Exports: default

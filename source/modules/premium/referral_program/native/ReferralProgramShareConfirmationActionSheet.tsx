@@ -1,10 +1,10 @@
-// Module ID: 12373
-// Function ID: 96185
+// Module ID: 12436
+// Function ID: 96546
 // Name: SharedUser
-// Dependencies: [27, 653, 33, 4130, 689, 3969, 6690, 1273, 4126, 1212, 4543, 4629, 4098, 4140, 1920, 5187, 5186, 4541, 5807, 5459, 2]
+// Dependencies: [27, 653, 33, 4130, 689, 3969, 6690, 1273, 4126, 1212, 4543, 4629, 4098, 4140, 1920, 5187, 5186, 4541, 5807, 2]
 // Exports: default
 
-// Module 12373 (SharedUser)
+// Module 12436 (SharedUser)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -104,7 +104,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
   items[1] = callback(require(4126) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: intl3.format(require(1212) /* getSystemLocale */.t.AwGSWl, obj) };
-  items[2] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj3);
+  items[2] = callback(require(4126) /* Text */.Text, obj3);
   const obj4 = { style: tmp.recipientContainer };
   arr = Array.from(trialCreationResult.selectedUsers);
   obj4.children = arr.map((id) => outer1_5(outer1_9, { user: id, trialCreationResult: trialCreationResult.get(id.id) }, id.id));

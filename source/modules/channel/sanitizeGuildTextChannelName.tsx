@@ -1,5 +1,5 @@
 // Module ID: 4322
-// Function ID: 37866
+// Function ID: 37867
 // Name: sanitizeGuildTextChannelName
 // Dependencies: [2]
 // Exports: default

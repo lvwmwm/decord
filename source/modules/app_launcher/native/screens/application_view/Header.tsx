@@ -1,10 +1,10 @@
-// Module ID: 11250
-// Function ID: 87563
+// Module ID: 11279
+// Function ID: 87803
 // Name: xl
-// Dependencies: [31, 27, 1849, 8181, 1455, 653, 33, 689, 4130, 3991, 566, 11171, 3834, 7812, 11176, 7919, 7371, 11251, 4126, 1273, 7771, 4075, 675, 5492, 11252, 3830, 1212, 11253, 2]
+// Dependencies: [31, 27, 1849, 8225, 1455, 653, 33, 689, 4130, 3991, 566, 11201, 3834, 7903, 11206, 8006, 7371, 11280, 4126, 1273, 7533, 4075, 675, 5490, 11281, 3830, 1212, 11282, 2]
 // Exports: default
 
-// Module 11250 (xl)
+// Module 11279 (xl)
 import "result";
 import { View } from "AppDetailsOverflowMenu";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -56,7 +56,7 @@ export default function Header(application) {
   const tmp = _createForOfIteratorHelperLoose();
   let appLauncherIconSource = null;
   if (null != application) {
-    let obj1 = application(11171);
+    let obj1 = application(11201);
     appLauncherIconSource = obj1.getAppLauncherIconSource(application);
   }
   let obj2 = application(3834);
@@ -74,15 +74,15 @@ export default function Header(application) {
   if (null != token) {
     str2 = token;
   }
-  const tmp6Result = importDefault(7812)(tmp7, str2);
+  const tmp6Result = importDefault(7903)(tmp7, str2);
   if (null != appLauncherIconSource) {
     obj = { iconSource: appLauncherIconSource, iconBorderRadius: xl, iconSize: 72 };
-    let tmp12 = callback(importDefault(11176), obj);
+    let tmp12 = callback(importDefault(11206), obj);
   } else {
     obj = { style: tmp.loadingIcon };
     tmp12 = callback(currentUser2, obj);
   }
-  const tmp6 = importDefault(7812);
+  const tmp6 = importDefault(7903);
   const tmp18 = (function useCollapsedHeaderAnimation(scrollOffsetY) {
     scrollOffsetY = scrollOffsetY.scrollOffsetY;
     let obj = {};
@@ -142,7 +142,7 @@ export default function Header(application) {
     return obj;
   })({ scrollOffsetY });
   if (null != application) {
-    let obj5 = application(7919);
+    let obj5 = application(8006);
     str = obj5.getSectionName(application);
   }
   let hasApplicationFlagResult = null != application;
@@ -183,7 +183,7 @@ export default function Header(application) {
       return obj;
     })({ scrollOffsetY }).style
   ];
-  const items6 = [callback(importDefault(3991).View, { style: items5, pointerEvents: "none" }), callback(importDefault(11251), { onPress: onPressBack }), , ];
+  const items6 = [callback(importDefault(3991).View, { style: items5, pointerEvents: "none" }), callback(importDefault(11280), { onPress: onPressBack }), , ];
   obj5 = { style: tmp18.nameStyle, pointerEvents: "none" };
   obj6 = { variant: "heading-lg/bold", color: "text-overlay-light", children: str };
   obj5.children = callback(application(4126).Heading, obj6);
@@ -229,13 +229,13 @@ export default function Header(application) {
       const intl = application(1212).intl;
       obj8.accessibilityLabel = intl.string(application(1212).t.XWDihq);
       obj8.maxFontSizeMultiplier = 1.5;
-      const items7 = [callback(application(7771).IconButton, obj8), ];
+      const items7 = [callback(application(7533).IconButton, obj8), ];
       const obj9 = { application, onAddAppMenuClick };
-      items7[1] = callback(importDefault(11253), obj9);
+      items7[1] = callback(importDefault(11282), obj9);
       obj7.children = items7;
       tmp27 = callback2(currentUser2, obj7);
     }
-    obj14 = application(7919);
+    obj14 = application(8006);
   }
   items3[2] = tmp27;
   obj1.children = items3;

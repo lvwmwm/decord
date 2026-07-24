@@ -1,5 +1,5 @@
 // Module ID: 1623
-// Function ID: 18078
+// Function ID: 18079
 // Name: isReducedMotionEnabledInSystem
 // Dependencies: [1585, 1619]
 // Exports: isReducedMotionEnabledInSystem

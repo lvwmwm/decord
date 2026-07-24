@@ -1,20 +1,20 @@
-// Module ID: 15775
-// Function ID: 121741
+// Module ID: 15822
+// Function ID: 122063
 // Name: NOOP
-// Dependencies: [57, 31, 27, 4143, 8293, 4342, 10015, 10013, 4148, 10016, 33, 3, 4542, 4130, 689, 3991, 1553, 10014, 1557, 5217, 9423, 10019, 15776, 4099, 15769, 3834, 10021, 10631, 15774, 15762, 9891, 10233, 6838, 7589, 5464, 5484, 682, 15777, 5449, 15778, 15779, 10484, 15780, 15782, 15813, 15840, 15842, 15847, 2]
+// Dependencies: [57, 31, 27, 4143, 8337, 4342, 10047, 10045, 4148, 10048, 33, 3, 4542, 4130, 689, 3991, 1553, 10046, 1557, 5217, 9459, 10051, 15823, 4099, 15816, 3834, 10053, 10660, 15821, 15809, 9923, 10263, 6837, 7678, 5462, 5482, 682, 15824, 5449, 15825, 15826, 10513, 15827, 15829, 15860, 15887, 15889, 15894, 2]
 
-// Module 15775 (NOOP)
+// Module 15822 (NOOP)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "NativeModules";
 import get_ActivityIndicator from "useGlobalStatusIndicatorState";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_8293 from "module_8293";
+import module_8337 from "module_8337";
 import withEqualityFn from "withEqualityFn";
 import VoicePanelModes from "VoicePanelModes";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 import { isActivityParticipant } from "ParticipantTypes";
 import { POP_RESISTANCE } from "MIN_PAN_GESTURE_MOVE";
-import jsxProd from "module_7589";
+import jsxProd from "module_7678";
 import importDefaultResult from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import isMetaQuest from "isMetaQuest";
@@ -549,10 +549,10 @@ function AnimatedWrapper(children) {
     return outer1_4.useMemo(() => ({ wrapperRootStyles: tmp.wrapper, wrapperTransformStyles: animatedStyle, wrapperSurfaceStyles: animatedStyle1 }), items);
   })(children.wrapperOffset);
   obj = { style: wrapperTransformStyles, pointerEvents: "box-none" };
-  const tmp2 = importDefault(7589);
+  const tmp2 = importDefault(7678);
   obj = { style: wrapperSurfaceStyles, layout: closure_25, children: children.children };
-  obj.children = callback2(importDefault(7589), obj);
-  obj.children = callback2(importDefault(7589), obj);
+  obj.children = callback2(importDefault(7678), obj);
+  obj.children = callback2(importDefault(7678), obj);
   return callback2(tmp2, obj);
 }
 const StyleSheet = get_ActivityIndicator.StyleSheet;
@@ -745,7 +745,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
   let viewableChunks;
   let wrapperOffset;
   let tmp = callback4();
-  let context = importAllResult.useContext(importDefault(10014));
+  let context = importAllResult.useContext(importDefault(10046));
   let channelId = context.channelId;
   ({ scrollPosition, dragScrolling, dismissPanel } = context);
   const tmp4 = callback(importAllResult.useState(false), 2);
@@ -1017,7 +1017,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
       const withRefResult = Gesture3.Pan().enabled(first).manualActivation(true).maxPointers(1).hitSlop({ left: -1 * tmp2.left, right: -1 * tmp2.right }).withRef(dismissToPIPGestureRef);
       const fn2 = function u(arg0) {
         if (!outer1_29.get().cancel) {
-          callback(10019)(outer1_19, { x: 0, y: 0 });
+          callback(10051)(outer1_19, { x: 0, y: 0 });
           const obj = {};
           ({ absoluteX: obj.absoluteXStart, absoluteY: obj.absoluteYStart } = arg0);
           obj.active = false;
@@ -1082,11 +1082,11 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
                 flag = false;
                 if (tmp14) {
                   let obj = channelId(3991);
-                  obj.runOnJS(callback(15776))();
+                  obj.runOnJS(callback(15823))();
                   flag = true;
                 }
               }
-              const tmp30 = callback(10019);
+              const tmp30 = callback(10051);
               if (flag) {
                 obj = { gestureActive: true };
                 tmp30(outer1_19, obj);
@@ -1132,7 +1132,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
               let diff = result;
               if (!outer1_29.get().requiresPop) {
                 obj = { y: diff, x: 0 };
-                callback(10019)(outer1_19, obj);
+                callback(10051)(outer1_19, obj);
               } else {
                 const _Math = Math;
                 const bound = Math.max(result, 0);
@@ -1158,8 +1158,8 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
             }
           } else {
             obj = { x: -1 * (outer1_29.get().absoluteXStart - absoluteY.absoluteX), y: -1 * (outer1_29.get().absoluteYStart - absoluteY.absoluteY) };
-            callback(10019)(outer1_19, obj);
-            const tmp5 = callback(10019);
+            callback(10051)(outer1_19, obj);
+            const tmp5 = callback(10051);
           }
         }
       };
@@ -1170,8 +1170,8 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
       let obj5 = { gestureState: sharedValue4, mode, VoicePanelModes: outer2_15, connected, lockScrolling: sharedValue1, scrollPosition, POP_RESISTANCE: outer2_20, PIP_POP_HEIGHT: 180, runOnJS: channelId(setPanelFullscreen[15]).runOnJS, triggerHapticFeedback: channelId(setPanelFullscreen[23]).triggerHapticFeedback, HapticFeedbackTypes: channelId(setPanelFullscreen[23]).HapticFeedbackTypes, updateSharedValueIfChanged: dragScrolling(setPanelFullscreen[21]), wrapperOffset };
       const fn5 = function s() {
         const result = outer1_22.set(false);
-        callback(10019)(outer1_29, { cancel: false, active: false });
-        callback(10019)(outer1_19, { gestureActive: false });
+        callback(10051)(outer1_29, { cancel: false, active: false });
+        callback(10051)(outer1_19, { gestureActive: false });
       };
       const onChangeResult = onTouchesMoveResult.onChange(fn4);
       fn5.__closure = { lockScrolling: sharedValue1, updateSharedValueIfChanged: dragScrolling(setPanelFullscreen[21]), gestureState: sharedValue4, wrapperOffset };
@@ -1189,38 +1189,38 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
           ({ velocityX, absoluteX, absoluteY } = velocityY);
           if (outer1_13.get() === outer3_15.PIP) {
             let obj = { velocityX, velocityY, absoluteX, absoluteY, windowDimensions: outer1_17.get(), safeArea: outer1_14.get() };
-            const result = channelId(15769).calculatePIPPositionFromVelocity(obj);
+            const result = channelId(15816).calculatePIPPositionFromVelocity(obj);
             ({ pipX, pipY } = result);
             obj = { pipX, pipY };
-            callback(10019)(outer1_18, obj);
+            callback(10051)(outer1_18, obj);
             let obj1 = { gestureActive: false };
-            callback(10019)(outer1_19, obj1);
-            const obj4 = channelId(15769);
+            callback(10051)(outer1_19, obj1);
+            const obj4 = channelId(15816);
           } else if (outer1_13.get() === outer3_15.PANEL) {
             if (velocityY > 0) {
               if (outer1_6.get()) {
                 if (outer1_29.get().requiresPop) {
-                  callback(10019)(outer1_19, { gestureActive: false, x: 0, y: 0 });
+                  callback(10051)(outer1_19, { gestureActive: false, x: 0, y: 0 });
                   const result1 = outer1_22.set(false);
                 } else {
                   channelId(3991).runOnJS(outer1_15)(outer3_15.PIP);
-                  callback(10019)(outer1_19, { gestureActive: false, x: 0, y: 0 });
+                  callback(10051)(outer1_19, { gestureActive: false, x: 0, y: 0 });
                   const obj3 = channelId(3991);
                 }
               } else {
                 const diff = outer1_18.get().drawerHeight - outer1_18.get().drawerY;
                 if (outer1_19.get().y > 0.2 * diff) {
                   obj = { gestureActive: false };
-                  callback(10019)(outer1_19, obj);
+                  callback(10051)(outer1_19, obj);
                   obj1 = channelId(3991);
                   obj1.runOnJS(outer1_8)();
                 } else {
-                  callback(10019)(outer1_19, { gestureActive: false, x: 0, y: 0 });
+                  callback(10051)(outer1_19, { gestureActive: false, x: 0, y: 0 });
                   const result2 = outer1_22.set(false);
                 }
               }
             } else {
-              callback(10019)(outer1_19, { gestureActive: false, x: 0, y: 0 });
+              callback(10051)(outer1_19, { gestureActive: false, x: 0, y: 0 });
               const result3 = outer1_22.set(false);
             }
           }
@@ -1232,7 +1232,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
       fn6.__initData = outer2_41;
       const obj7 = { gestureState: sharedValue4, mode, VoicePanelModes: outer2_15, calculatePIPPositionFromVelocity: channelId(setPanelFullscreen[24]).calculatePIPPositionFromVelocity, windowDimensions, safeArea, updateSharedValueIfChanged: dragScrolling(setPanelFullscreen[21]), wrapperDimensions, wrapperOffset, connected, runOnJS: channelId(setPanelFullscreen[15]).runOnJS, setMode, lockScrolling: sharedValue1, MIN_DISMISS_MOVE_PERCENTAGE: 0.2, dismissPanel };
       const fn7 = function t() {
-        callback(10019)(outer1_29, { cancel: false, active: false });
+        callback(10051)(outer1_29, { cancel: false, active: false });
       };
       const onEndResult = onTouchesCancelledResult.onEnd(fn6);
       fn7.__closure = { updateSharedValueIfChanged: dragScrolling(setPanelFullscreen[21]), gestureState: sharedValue4 };
@@ -1463,7 +1463,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
   })(obj);
   ({ gestureState, wrapperOffset } = tmp7);
   ({ gesture, handleScroll, onContentSizeChange, scrollViewProps, scrollerRef, scrollNativeGesture, viewableChunks, opacity } = tmp7);
-  let tmp8 = importDefault(15777)();
+  let tmp8 = importDefault(15824)();
   callback = tmp8;
   const items3 = [tmp8];
   const effect = importAllResult.useEffect(() => {
@@ -1472,9 +1472,9 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
   const effect1 = importAllResult.useEffect(() => callback(true), []);
   let tmp11 = null;
   if (tmp4[0]) {
-    obj = { value: tmp2(importDefault(5484).VOICE_PANEL).analyticsLocations };
+    obj = { value: tmp2(importDefault(5482).VOICE_PANEL).analyticsLocations };
     obj = {};
-    const items4 = [callback2(importDefault(15778), {}), , ];
+    const items4 = [callback2(importDefault(15825), {}), , ];
     let obj1 = { opacity, onPress: dismissPanel };
     items4[1] = callback2(closure_69, obj1);
     let obj2 = { style: tmp.accessibilityView };
@@ -1482,36 +1482,36 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
     obj2.nativeID = "voice-panel-ui-" + channelId;
     obj2.accessibilityViewIsModal = true;
     obj2.layout = closure_25;
-    obj2.onAccessibilityEscape = importDefault(10484);
-    const items5 = [callback2(importDefault(15780), {}), , , ];
+    obj2.onAccessibilityEscape = importDefault(10513);
+    const items5 = [callback2(importDefault(15827), {}), , , ];
     let obj3 = { wrapperOffset };
     let obj4 = { zIndex: 2 };
     let obj5 = { wrapperOffset, gestureState, layout: closure_25 };
-    obj4.children = callback2(importDefault(15782), obj5);
+    obj4.children = callback2(importDefault(15829), obj5);
     const items6 = [callback2(channelId(5449).LayerScope, obj4), ];
     let obj6 = { gesture };
     let obj7 = { style: StyleSheet.absoluteFill, layout: closure_25, collapsable: false };
-    let tmp20 = importDefault(15779);
+    let tmp20 = importDefault(15826);
     const obj8 = { gesture: scrollNativeGesture };
     const obj9 = { layout: closure_28, ref: scrollerRef, onScroll: handleScroll, onMomentumScrollEnd: NOOP, animatedProps: scrollViewProps, style: tmp.scrollView, onContentSizeChange, contentContainerStyle: tmp.scrollViewContent, scrollEventThrottle: 8.333333333333334 };
     let obj10 = { viewableChunks };
-    const items7 = [callback2(importDefault(15813), obj10), callback2(importDefault(15840), {})];
+    const items7 = [callback2(importDefault(15860), obj10), callback2(importDefault(15887), {})];
     obj9.children = items7;
     obj8.children = callback3(closure_33, obj9);
     obj7.children = callback2(channelId(5217).GestureDetector, obj8);
-    obj6.children = callback2(importDefault(7589), obj7);
+    obj6.children = callback2(importDefault(7678), obj7);
     items6[1] = callback2(channelId(5217).GestureDetector, obj6);
     obj3.children = items6;
     items5[1] = callback3(AnimatedWrapper, obj3);
-    items5[2] = callback2(importDefault(15842), {});
+    items5[2] = callback2(importDefault(15889), {});
     const obj11 = { gestureState };
-    items5[3] = callback2(importDefault(15847), obj11);
+    items5[3] = callback2(importDefault(15894), obj11);
     obj2.children = items5;
     items4[2] = callback3(tmp20, obj2);
     obj.children = items4;
     obj.children = callback3(channelId(5449).LayerScope, obj);
-    tmp11 = callback2(channelId(5464).AnalyticsLocationProvider, obj);
-    let tmp30 = importDefault(7589);
+    tmp11 = callback2(channelId(5462).AnalyticsLocationProvider, obj);
+    let tmp30 = importDefault(7678);
   }
   return tmp11;
 });

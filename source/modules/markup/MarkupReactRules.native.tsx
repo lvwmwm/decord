@@ -1,7 +1,7 @@
 // Module ID: 4121
-// Function ID: 34145
+// Function ID: 34146
 // Name: MarkupText
-// Dependencies: [31, 27, 4122, 1348, 1917, 1910, 1838, 653, 1355, 482, 33, 4125, 4126, 4130, 689, 4138, 4321, 3982, 4337, 8492, 4470, 1212, 5492, 3830, 5515, 1273, 1443, 8336, 3827, 9488, 9525, 9969, 566, 3974, 7650, 4098, 10866, 1934, 21, 3803, 5085, 9986, 12849, 10881, 4563, 10267, 12850, 12852, 4074, 4565, 477, 4593, 12854, 10269, 2]
+// Dependencies: [31, 27, 4122, 1348, 1917, 1910, 1838, 653, 1355, 482, 33, 4125, 4126, 4130, 689, 4138, 4321, 3982, 4337, 8537, 4470, 1212, 5490, 3830, 5513, 1273, 1443, 8380, 3827, 9524, 9561, 10001, 566, 3974, 7739, 4098, 10893, 1934, 21, 3803, 5085, 10018, 12901, 10908, 4563, 10296, 12902, 12904, 4074, 4565, 477, 4593, 12906, 10298, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 4121 (MarkupText)
@@ -131,7 +131,7 @@ function MarkupLink(arg0) {
   obj = {};
   const merged = Object.assign(state);
   obj["inLink"] = true;
-  obj.children = node(9969).smartOutput(node, output, obj);
+  obj.children = node(10001).smartOutput(node, output, obj);
   return tmp2(node(4126).Text, obj, state.key);
 }
 function MarkupMention(styles) {
@@ -300,7 +300,7 @@ function MarkupBlockQuote(state) {
     textColor = state.textColor;
   }
   obj.color = textColor;
-  obj.children = require(9969) /* smartOutput */.smartOutput(node, output, state);
+  obj.children = require(10001) /* smartOutput */.smartOutput(node, output, state);
   return closure_16(MarkupText, obj, state.key);
 }
 function MarkupInlineCode(arg0) {
@@ -347,7 +347,7 @@ function MarkupInlineCode(arg0) {
   const tmp4 = styles.inlineCode || callback2().inlineCode;
   const tmp6 = closure_16;
   const tmp7 = MarkupText;
-  obj.children = node(9969).smartOutput(node, output, state);
+  obj.children = node(10001).smartOutput(node, output, state);
   return tmp6(tmp7, obj, state.key);
 }
 function MarkupCodeBlock(state) {
@@ -367,7 +367,7 @@ function MarkupCodeBlock(state) {
     textColor = state.textColor;
   }
   obj.color = textColor;
-  const items = [require(9969) /* smartOutput */.smartOutput(node, output, state), "\n"];
+  const items = [require(10001) /* smartOutput */.smartOutput(node, output, state), "\n"];
   obj.children = items;
   return closure_17(MarkupText, obj, state.key);
 }
@@ -441,7 +441,7 @@ function MarkupChannelMention(state) {
   const items = [outputResult, , ];
   if (null == node.inContent) {
     items[1] = null;
-    let obj3 = state(9969);
+    let obj3 = state(10001);
     items[2] = obj3.smartOutput(node, output, state);
     obj.children = items;
     const tmp2Result = closure_17(state(4126).Text, obj, state.key);
@@ -519,7 +519,7 @@ function MarkupChannelMention(state) {
       obj3 = fontScale < 2 ? { width: 12, height: 12 } : { width: 16, height: 16 };
     }
     obj2.style = obj3;
-    obj2.source = node(9986);
+    obj2.source = node(10018);
     obj2.size = state(1273).Icon.Sizes.CUSTOM;
     closure_16(state(1273).ThemedIcon, obj2);
     const tmp4 = closure_16;
@@ -545,9 +545,9 @@ function MarkupAttachmentLink(state) {
   }
   obj.variant = str2;
   obj.style = tmp.channelMentionText;
-  obj = { themedColor: node(689).colors.MENTION_FOREGROUND, source: node(12849), size: getIconSize() };
+  obj = { themedColor: node(689).colors.MENTION_FOREGROUND, source: node(12901), size: getIconSize() };
   const items = [callback(state(1273).ThemedIcon, obj), ];
-  let obj2 = state(9969);
+  let obj2 = state(10001);
   items[1] = obj2.smartOutput(node, output, state);
   obj.children = items;
   const tmp2Result = closure_17(state(4126).Text, obj, state.key);
@@ -602,7 +602,7 @@ function MarkupCommandMention(state) {
     mention = tmp.mention;
   }
   obj.style = mention;
-  return tmp2(importDefault(10881), obj, state.key);
+  return tmp2(importDefault(10908), obj, state.key);
 }
 ({ PixelRatio: closure_4, Pressable: closure_5, View: closure_6, Text: closure_7 } = get_ActivityIndicator);
 ({ EMOJI_CHAT_SIZE, GuildFeatures: closure_13 } = ME);
@@ -1234,8 +1234,8 @@ export const plainMentionRenderer = function plainMentionRenderer(content, outpu
   if ("string" === typeof content.content) {
     content = content.content;
   } else {
-    content = require(9969) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(9969) /* smartOutput */;
+    content = require(10001) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(10001) /* smartOutput */;
   }
   return content;
 };

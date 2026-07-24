@@ -1,13 +1,20 @@
-// Module ID: 16054
-// Function ID: 124411
-// Name: items
-// Dependencies: [16055, 16056, 16057, 2]
+// Module ID: 16101
+// Function ID: 124734
+// Name: getName
+// Dependencies: [16102, 16103, 1212, 2132, 16104, 2]
 // Exports: getSeatName
 
-// Module 16054 (items)
+// Module 16101 (getName)
 const require = arg1;
 let obj = {};
-obj = { background: require("metadata"), aspectRatio: 1.375514403292181 };
+obj = {
+  background: require("metadata"),
+  aspectRatio: 1.375514403292181,
+  getName() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2132)["4KcB5R"]);
+  }
+};
 obj = { name: "PC_SEAT_1", position: require("GUILD_ROOM_BACKGROUND_POSITIONS").GUILD_ROOM_BACKGROUND_POSITIONS[require("GuildRoomBackgrounds").GuildRoomBackgrounds.DEFAULT][0] };
 const items = [obj, , , , , , , , , , , , , , , , , , , , ];
 const obj1 = { name: "PC_SEAT_2", position: require("GUILD_ROOM_BACKGROUND_POSITIONS").GUILD_ROOM_BACKGROUND_POSITIONS[require("GuildRoomBackgrounds").GuildRoomBackgrounds.DEFAULT][1] };
@@ -54,15 +61,15 @@ obj.seats = items;
 const items1 = [{ x: 45.57, y: 50.62 }];
 obj.plants = items1;
 obj[require("GuildRoomBackgrounds").GuildRoomBackgrounds.DEFAULT] = obj;
-const result = require("GUILD_ROOM_BACKGROUND_POSITIONS").fileFinishedImporting("modules/guild_rooms/GuildRoomConstants.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/guild_rooms/GuildRoomConstants.tsx");
 
 export const GUILD_ROOM_SPATIAL_AUDIO_MODE = "guild-room";
 export const DEFAULT_BACKGROUND_POSITION = { imageOffsetX: 0, imageOffsetY: 0, imageWidth: 0, imageHeight: 0 };
 export const getSeatName = function getSeatName(arg0, arg1) {
   const _require = arg0;
-  const dependencyMap = arg1;
+  let closure_1 = arg1;
   let name;
-  const seats = obj[_require(undefined, 16055).GuildRoomBackgrounds.DEFAULT].seats;
+  const seats = obj[_require(undefined, 16102).GuildRoomBackgrounds.DEFAULT].seats;
   const found = seats.find((position) => {
     let tmp = position.position.x === closure_0;
     if (tmp) {

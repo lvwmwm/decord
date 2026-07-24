@@ -1,10 +1,10 @@
-// Module ID: 13118
-// Function ID: 101085
+// Module ID: 13171
+// Function ID: 101412
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isZoomedExperimentEnabled
 
-// Module 13118 (apexExperiment)
+// Module 13171 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2025-12-zoomed-analytics", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

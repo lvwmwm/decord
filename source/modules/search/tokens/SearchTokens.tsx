@@ -1,10 +1,10 @@
-// Module ID: 10079
-// Function ID: 77892
+// Module ID: 10111
+// Function ID: 78086
 // Name: getMonths
-// Dependencies: [57, 1348, 1907, 3767, 1906, 3970, 1849, 10080, 10081, 653, 3712, 22, 1212, 4320, 3969, 10078, 10082, 5045, 4974, 7094, 10083, 10084, 2]
+// Dependencies: [57, 1348, 1907, 3767, 1906, 3970, 1849, 10112, 10113, 653, 3712, 22, 1212, 4320, 3969, 10110, 10114, 5045, 4974, 7093, 10115, 10116, 2]
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs
 
-// Module 10079 (getMonths)
+// Module 10111 (getMonths)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -254,7 +254,7 @@ function isValidChannelAutocomplete(token, items) {
         })(token, replaced);
       }
     }
-    obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+    obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
   }
   return flag;
 }
@@ -317,10 +317,10 @@ function getLocalizedAnswer(str, authorTypeMap) {
   return combined;
 }
 function isValidHasAutocomplete(token) {
-  return require(10082) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
+  return require(10114) /* ANSWER_IN_REGEX */.validateForMapWithNegation("has", getHasMap(), token);
 }
 function isValidAuthorTypeAutocomplete(token) {
-  return require(10082) /* ANSWER_IN_REGEX */.validateForMapWithNegation("author_type", getAuthorTypeMap(), token);
+  return require(10114) /* ANSWER_IN_REGEX */.validateForMapWithNegation("author_type", getAuthorTypeMap(), token);
 }
 function isValidPinnedAutocomplete(token) {
   const match = token.getMatch(1);
@@ -988,7 +988,7 @@ export const isValidFilterAnswerForSubmit = function isValidFilterAnswerForSubmi
   if (null == table[searchTokenType]) {
     return true;
   } else {
-    const Token = require(10084) /* getMatch */.Token;
+    const Token = require(10116) /* getMatch */.Token;
     const _HermesInternal = HermesInternal;
     const items = ["filter:" + trimmed, trimmed];
     const prototype = Token.prototype;

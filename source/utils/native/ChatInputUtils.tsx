@@ -1,5 +1,5 @@
 // Module ID: 3989
-// Function ID: 33096
+// Function ID: 33097
 // Name: getHighestActiveScreenIndex
 // Dependencies: [3990, 1820, 3996, 1555, 1454, 3997, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef

@@ -1,10 +1,10 @@
-// Module ID: 14942
-// Function ID: 113916
+// Module ID: 14989
+// Function ID: 114237
 // Name: HappeningNowVoiceCardSubtitle
-// Dependencies: [31, 27, 1348, 653, 33, 4130, 566, 4320, 14184, 8450, 1212, 7882, 9081, 2]
+// Dependencies: [31, 27, 1348, 653, 33, 4130, 566, 4320, 14234, 8494, 1212, 7969, 9119, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 14942 (HappeningNowVoiceCardSubtitle)
+// Module 14989 (HappeningNowVoiceCardSubtitle)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -27,11 +27,11 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
   let tmp6;
   if (null != stateFromStores) {
     const obj1 = { channel: stateFromStores };
-    tmp6 = importDefault(8450)(obj1);
+    tmp6 = importDefault(8494)(obj1);
   }
   obj.accessibilityLabel = tmp6;
   obj.children = importDefault(4320)(stateFromStores);
-  obj.children = jsx(voiceState(14184).HappeningNowCardSubtitle, { lineClamp: 1 });
+  obj.children = jsx(voiceState(14234).HappeningNowCardSubtitle, { lineClamp: 1 });
   return <View lineClamp={1} />;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
@@ -46,7 +46,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
       let tmp3 = trimmed;
     }
     const obj = { lineClamp: 1, children: tmp3 };
-    return jsx(require(14184) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp3 });
+    return jsx(require(14234) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp3 });
   }
   if (null != activity.stream) {
     if (null != activity) {
@@ -63,8 +63,8 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
     }
     tmp3 = null;
     if (null != name) {
-      if (!importDefault(7882)(activity)) {
-        if (importDefault(9081)(activity)) {
+      if (!importDefault(7969)(activity)) {
+        if (importDefault(9119)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;

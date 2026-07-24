@@ -1,10 +1,10 @@
-// Module ID: 16407
-// Function ID: 127911
+// Module ID: 16454
+// Function ID: 128235
 // Name: useCreatorMonetizationEligibility
-// Dependencies: [5, 57, 31, 16377, 16380, 4030, 2]
+// Dependencies: [5, 57, 31, 16424, 16427, 4030, 2]
 // Exports: default
 
-// Module 16407 (useCreatorMonetizationEligibility)
+// Module 16454 (useCreatorMonetizationEligibility)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

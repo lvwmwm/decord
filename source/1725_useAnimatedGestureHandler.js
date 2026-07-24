@@ -1,5 +1,5 @@
 // Module ID: 1725
-// Function ID: 19372
+// Function ID: 19373
 // Name: useAnimatedGestureHandler
 // Dependencies: [1726, 1730, 1731, 1735, 1736, 1737, 1738, 1732, 1739, 1740, 1729, 1741, 1727, 1744, 1745, 1734, 1746]
 

@@ -1,10 +1,10 @@
-// Module ID: 13844
-// Function ID: 106014
+// Module ID: 13895
+// Function ID: 106338
 // Name: WarningLabel
-// Dependencies: [31, 27, 1347, 5066, 1348, 3767, 4325, 1921, 653, 9102, 10420, 33, 4130, 689, 4086, 5459, 1456, 1457, 1212, 5472, 10525, 8960, 566, 11632, 1392, 4472, 11631, 4098, 10421, 1934, 480, 8923, 7488, 7375, 5793, 8336, 3982, 5079, 5073, 21, 11176, 4126, 9012, 5503, 5504, 5165, 2]
+// Dependencies: [31, 27, 1347, 5066, 1348, 3767, 4325, 1921, 653, 9140, 10449, 33, 4130, 689, 4086, 4126, 1456, 1457, 1212, 5470, 10554, 8999, 566, 11659, 1392, 4472, 11658, 4098, 10450, 1934, 480, 8962, 7568, 7375, 5793, 8380, 3982, 5079, 5073, 21, 11206, 9051, 5501, 5502, 5165, 2]
 // Exports: default
 
-// Module 13844 (WarningLabel)
+// Module 13895 (WarningLabel)
 import showAlert from "showAlert";
 import get_ActivityIndicator from "showActionSheet";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -33,7 +33,7 @@ function WarningLabel(text) {
   obj = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.warningIcon };
   const items = [callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
   obj = { color: "text-default", variant: "text-sm/medium", children: text.text };
-  items[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 }
@@ -60,7 +60,7 @@ function ParentApp(application) {
 }
 function handleDeleteApp(outer1_1) {
   const application = outer1_1.application;
-  let obj = importDefault(5472);
+  let obj = importDefault(5470);
   obj.delete(outer1_1.id);
   selfEmbeddedActivities = selfEmbeddedActivities.getSelfEmbeddedActivities();
   const value = selfEmbeddedActivities.get(application.id);
@@ -71,7 +71,7 @@ function handleDeleteApp(outer1_1) {
   }
   obj.location = _location;
   obj.applicationId = application.id;
-  importDefault(10525).leaveActivity(obj);
+  importDefault(10554).leaveActivity(obj);
 }
 ({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ UserSettingsSections: closure_12, AnalyticsSections: closure_13, AnalyticsPages: closure_14 } = ME);
@@ -187,15 +187,15 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   obj3 = { variant: "text-sm/normal", color: "text-muted" };
   let intl = oauth2Token(stateFromStores[18]).intl;
   obj3.children = intl.format(oauth2Token(stateFromStores[18]).t.yOApCK, { date: toLocaleDateStringResult });
-  items9[1] = callback(oauth2Token(stateFromStores[41]).Text, obj3);
+  items9[1] = callback(oauth2Token(stateFromStores[15]).Text, obj3);
   let tmp18 = null;
   if (undefined !== description) {
     tmp18 = null;
     if ("" !== description) {
       obj4 = { style: tmp.appAboutDescription, variant: "text-sm/normal", color: "text-default" };
-      let obj16 = oauth2Token(stateFromStores[42]);
+      let obj16 = oauth2Token(stateFromStores[41]);
       obj4.children = obj16.parseBioReactWithCachedAST(description);
-      tmp18 = callback(oauth2Token(stateFromStores[41]).Text, obj4);
+      tmp18 = callback(oauth2Token(stateFromStores[15]).Text, obj4);
     }
   }
   items9[2] = tmp18;
@@ -238,8 +238,8 @@ export default function UserSettingsAuthedApp(oauth2Token) {
         }
       }
     };
-    obj6.children = callback(oauth2Token(stateFromStores[44]).TableSwitchRow, obj7);
-    obj5.children = callback(oauth2Token(stateFromStores[43]).TableRowGroup, obj6);
+    obj6.children = callback(oauth2Token(stateFromStores[43]).TableSwitchRow, obj7);
+    obj5.children = callback(oauth2Token(stateFromStores[42]).TableRowGroup, obj6);
     tmp23Result = callback(closure_5, obj5);
     const tmp23 = callback;
     const tmp24 = closure_5;
@@ -266,7 +266,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
     navigation.navigate(outer1_12.AUTHORIZED_APP_PERMISSIONS, obj1);
   };
   obj11.arrow = true;
-  const items11 = [callback(oauth2Token(stateFromStores[45]).TableRow, obj11), , ];
+  const items11 = [callback(oauth2Token(stateFromStores[44]).TableRow, obj11), , ];
   let tmp39 = null != application.terms_of_service_url;
   if (tmp39) {
     const obj12 = {};
@@ -280,7 +280,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
       }
     };
     obj12.arrow = true;
-    tmp39 = callback(oauth2Token(stateFromStores[45]).TableRow, obj12);
+    tmp39 = callback(oauth2Token(stateFromStores[44]).TableRow, obj12);
   }
   items11[1] = tmp39;
   let tmp43 = null != application.privacy_policy_url;
@@ -296,11 +296,11 @@ export default function UserSettingsAuthedApp(oauth2Token) {
       }
     };
     obj13.arrow = true;
-    tmp43 = callback(oauth2Token(stateFromStores[45]).TableRow, obj13);
+    tmp43 = callback(oauth2Token(stateFromStores[44]).TableRow, obj13);
   }
   items11[2] = tmp43;
   obj10.children = items11;
-  obj9.children = closure_18(oauth2Token(stateFromStores[43]).TableRowGroup, obj10);
+  obj9.children = closure_18(oauth2Token(stateFromStores[42]).TableRowGroup, obj10);
   items10[2] = callback(closure_5, obj9);
   const obj14 = { style: tmp.section };
   const obj15 = {};
@@ -313,8 +313,8 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   obj16.variant = "danger";
   obj16.onPress = callback;
   obj16.arrow = true;
-  obj15.children = callback(oauth2Token(stateFromStores[45]).TableRow, obj16);
-  obj14.children = callback(oauth2Token(stateFromStores[43]).TableRowGroup, obj15);
+  obj15.children = callback(oauth2Token(stateFromStores[44]).TableRow, obj16);
+  obj14.children = callback(oauth2Token(stateFromStores[42]).TableRowGroup, obj15);
   items10[3] = callback(closure_5, obj14);
   items10[4] = (() => {
     let id;
@@ -347,8 +347,8 @@ export default function UserSettingsAuthedApp(oauth2Token) {
         };
         obj.arrow = true;
       }
-      obj.children = outer1_17(oauth2Token(stateFromStores[45]).TableRow, obj);
-      return outer1_17(oauth2Token(stateFromStores[43]).TableRowGroup, obj);
+      obj.children = outer1_17(oauth2Token(stateFromStores[44]).TableRow, obj);
+      return outer1_17(oauth2Token(stateFromStores[42]).TableRowGroup, obj);
     }
   })();
   if (shouldWarnAuthorizedAppTwoWay) {

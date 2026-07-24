@@ -1,10 +1,10 @@
-// Module ID: 14746
-// Function ID: 112495
+// Module ID: 14793
+// Function ID: 112816
 // Name: isFirstStep
-// Dependencies: [31, 1194, 5592, 14731, 14730, 566, 5590, 2]
+// Dependencies: [31, 1194, 5590, 14778, 14777, 566, 5588, 2]
 // Exports: default
 
-// Module 14746 (isFirstStep)
+// Module 14793 (isFirstStep)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -12,7 +12,7 @@ import { resetRegistration } from "useRegistrationUIStore";
 
 const require = arg1;
 function isFirstStep(arg0) {
-  return arg0 === require(14730) /* getRegistrationSteps */.getRegistrationSteps()[1];
+  return arg0 === require(14777) /* getRegistrationSteps */.getRegistrationSteps()[1];
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/native/useInitialRegistrationStep.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 10039
-// Function ID: 77540
+// Module ID: 10071
+// Function ID: 77734
 // Name: GuildDirectoryAddModal
-// Dependencies: [31, 10040, 33, 4130, 5084, 480, 5087, 10038, 10041, 10049, 10053, 10063, 5121, 5450, 5519, 1212, 2]
+// Dependencies: [31, 10072, 33, 4130, 5084, 480, 5087, 10070, 10073, 10081, 10085, 10095, 5121, 5450, 5517, 1212, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 10039 (GuildDirectoryAddModal)
+// Module 10071 (GuildDirectoryAddModal)
 import "result";
 import { GuildDirectoryCreate } from "GuildDirectoryCreate";
 import { jsx } from "jsxProd";
@@ -92,7 +92,7 @@ export default function GuildDirectoryAddModal(arg0) {
   let obj = { screens, initialRouteStack: initialStack };
   const intl = _require(1212).intl;
   obj.headerBackTitle = intl.string(_require(1212).t["13/7kX"]);
-  return jsx(_require(5519).Navigator, { screens, initialRouteStack: initialStack });
+  return jsx(_require(5517).Navigator, { screens, initialRouteStack: initialStack });
 };
 export const GuildDirectoryAddModalScreen = function GuildDirectoryAddModalScreen(children) {
   const tmp = _createForOfIteratorHelperLoose();

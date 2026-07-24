@@ -1,9 +1,9 @@
-// Module ID: 9620
-// Function ID: 74912
+// Module ID: 9656
+// Function ID: 75123
 // Name: StandardStickerDetail
-// Dependencies: [5, 57, 31, 27, 1838, 1849, 5035, 9568, 653, 5188, 33, 4130, 477, 689, 9600, 9395, 9397, 4098, 4126, 1212, 9601, 3831, 566, 1450, 675, 9614, 4543, 9619, 9602, 9607, 3776, 5491, 3803, 4466, 9621, 1934, 4324, 5048, 9622, 5796, 9615, 8968, 8560, 9623, 7495, 9401, 5459, 5187, 2]
+// Dependencies: [5, 57, 31, 27, 1838, 1849, 5035, 9604, 653, 5188, 33, 4130, 477, 689, 9636, 9431, 9433, 4098, 4126, 1212, 9637, 3831, 566, 1450, 675, 9650, 4543, 9655, 9638, 9643, 3776, 5489, 3803, 4466, 9657, 1934, 4324, 5048, 9658, 5796, 9651, 9007, 8605, 9659, 7636, 9437, 5187, 2]
 
-// Module 9620 (StandardStickerDetail)
+// Module 9656 (StandardStickerDetail)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "items";
@@ -48,7 +48,7 @@ function StandardStickerDetail(chatInputRef) {
   const items1 = [closure_11];
   let closure_6 = channel(566).useStateFromStores(items1, () => outer1_11.isPremiumPack(pack_id));
   let obj2 = channel(566);
-  const fetchStickerPack = channel(9600).useFetchStickerPack(pack_id);
+  const fetchStickerPack = channel(9636).useFetchStickerPack(pack_id);
   const diff = chatInputRef(1450)().width - 2 * closure_12;
   let closure_8 = Math.floor(Math.min(ACTION_SHEET_MAX_WIDTH, diff - closure_13) / (closure_14 + closure_13));
   const items2 = [channel.guild_id];
@@ -111,18 +111,18 @@ function StandardStickerDetail(chatInputRef) {
         const intl2 = channel(description[19]).intl;
         obj6.text = intl2.string(channel(description[19]).t.GPy3Ar);
         obj6.onPress = function onPress() {
-          let obj = channel(9619);
+          let obj = channel(9655);
           const result = obj.hideStickerDetailActionSheet();
           if (null != closure_0) {
             if (outer1_6) {
               if (null != outer1_1) {
-                const result1 = channel(9602).openStickerPickerToPackId(outer1_1, outer1_3);
-                const obj3 = channel(9602);
+                const result1 = channel(9638).openStickerPickerToPackId(outer1_1, outer1_3);
+                const obj3 = channel(9638);
               }
             }
           }
-          obj = { analyticsLocation: outer1_9, analyticsPopoutType: channel(9607).AnalyticsPopoutType.STICKER_PACK_UPSELL, stickerPack: closure_0 };
-          chatInputRef(9607)(obj);
+          obj = { analyticsLocation: outer1_9, analyticsPopoutType: channel(9643).AnalyticsPopoutType.STICKER_PACK_UPSELL, stickerPack: closure_0 };
+          chatInputRef(9643)(obj);
         };
         tmp10 = outer1_21(channel(description[26]).Button, obj6);
       }
@@ -195,7 +195,7 @@ function UnavailableStickerDetail(arg0) {
     stringResult = intl.format(tmp11(tmp12[19]).t.hGWuxU, obj3);
   }
   obj2.children = stringResult;
-  items3[1] = callback2(channel(stickerAssetUrl[46]).TextWithIOSLinkWorkaround, obj2);
+  items3[1] = callback2(channel(stickerAssetUrl[18]).Text, obj2);
   obj.children = items3;
   items2[1] = closure_23(closure_6, obj);
   if (tidaWebformEnabled) {
@@ -279,10 +279,10 @@ function GuildStickerDetail(sticker) {
   const currentUser = authStore.getCurrentUser();
   obj1 = channel(3776);
   let result = obj1.canUseCustomStickersEverywhere(currentUser);
-  tidaWebformEnabled = channel(5491).useExperiment({ location: "StickerDetailActionSheet" }, { autoTrackExposure: false }).tidaWebformEnabled;
+  tidaWebformEnabled = channel(5489).useExperiment({ location: "StickerDetailActionSheet" }, { autoTrackExposure: false }).tidaWebformEnabled;
   const DeveloperMode = sticker(3803).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj3 = channel(5491);
+  let obj3 = channel(5489);
   ({ isFavorite: c9, handleFavorite: c10 } = (function useStickerFavorite(id) {
     let closure_0 = id;
     const tmp = outer1_24();
@@ -706,7 +706,7 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
   let channel;
   let renderableSticker;
   ({ renderableSticker, channel } = chatInputRef);
-  let obj = require(9600) /* _createForOfIteratorHelperLoose */;
+  let obj = require(9636) /* _createForOfIteratorHelperLoose */;
   const tmp2 = callback(obj.useStickerForRenderableSticker(renderableSticker, true), 2);
   const first = tmp2[0];
   let tmp4 = callback2(closure_7, { size: "large" });

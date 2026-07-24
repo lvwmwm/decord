@@ -1,10 +1,10 @@
-// Module ID: 9297
-// Function ID: 72619
+// Module ID: 9333
+// Function ID: 72828
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [31, 27, 33, 4130, 689, 1212, 9298, 9273, 9275, 3830, 9300, 9302, 7771, 8968, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 9334, 9309, 9311, 3830, 9336, 9338, 7533, 9007, 2]
 // Exports: default
 
-// Module 9297 (ConversationNavigatorMoreMenu)
+// Module 9333 (ConversationNavigatorMoreMenu)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

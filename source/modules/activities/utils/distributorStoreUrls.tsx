@@ -1,10 +1,10 @@
-// Module ID: 8599
-// Function ID: 68293
+// Module ID: 8641
+// Function ID: 68515
 // Name: XBOX_DISCORD_OCID
 // Dependencies: [2]
 // Exports: buildXboxGamePassStoreDeepLinkUrl, buildXboxGamePassStoreUrl
 
-// Module 8599 (XBOX_DISCORD_OCID)
+// Module 8641 (XBOX_DISCORD_OCID)
 const result = require("set").fileFinishedImporting("modules/activities/utils/distributorStoreUrls.tsx");
 
 export const XBOX_DISCORD_OCID = "discord7937464";

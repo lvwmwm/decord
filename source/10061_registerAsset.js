@@ -1,11 +1,11 @@
 // Module ID: 10061
-// Function ID: 77701
+// Function ID: 77669
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 10061 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 48, height: 48, scales: [2, 3], hash: "cae160e8dcd3fb84e6eda225bda4b4a6", name: "img_clubs", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/channel/header/images", width: 24, height: 24, scales: [2, 3, 4], hash: "259a63e8af8c5f3885215d3c5505af89", name: "icon-search", type: "png" };
 
 export default registerAsset.registerAsset(obj);

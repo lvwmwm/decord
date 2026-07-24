@@ -1,5 +1,5 @@
 // Module ID: 7198
-// Function ID: 57950
+// Function ID: 57979
 // Name: useCreateSubscriptionParams
 // Dependencies: [31, 7199, 491, 2]
 // Exports: default

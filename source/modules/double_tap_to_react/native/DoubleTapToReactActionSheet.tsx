@@ -1,10 +1,10 @@
-// Module ID: 11426
-// Function ID: 88826
+// Module ID: 11454
+// Function ID: 89065
 // Name: EmojiConfetti
-// Dependencies: [5, 57, 31, 27, 4122, 4991, 653, 1852, 33, 4130, 477, 689, 3991, 4131, 4559, 566, 4542, 3803, 3771, 7656, 1392, 5151, 675, 5484, 9339, 4098, 5500, 4126, 1212, 11390, 11427, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 4122, 4991, 653, 1852, 33, 4130, 477, 689, 3991, 4131, 4559, 566, 4542, 3803, 3771, 7745, 1392, 5151, 675, 5482, 9375, 4098, 5498, 4126, 1212, 11418, 11455, 4543, 2]
 // Exports: default
 
-// Module 11426 (EmojiConfetti)
+// Module 11454 (EmojiConfetti)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";

@@ -1,10 +1,10 @@
-// Module ID: 12293
-// Function ID: 95799
+// Module ID: 12320
+// Function ID: 96039
 // Name: createGuildTemplateEmbed
-// Dependencies: [27, 6693, 5720, 6979, 7633, 1212, 7625, 689, 3976, 10953, 10954, 12294, 2]
+// Dependencies: [27, 6693, 5720, 6978, 7722, 1212, 7714, 689, 3976, 10980, 10981, 12321, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 12293 (createGuildTemplateEmbed)
+// Module 12320 (createGuildTemplateEmbed)
 import { Image } from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
@@ -15,7 +15,7 @@ const result = require("GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD").fileF
 export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, closure_2) {
   let baseColors;
   let colors;
-  ({ colors, baseColors } = importDefault(7633)(closure_2));
+  ({ colors, baseColors } = importDefault(7722)(closure_2));
   guildTemplate = guildTemplate.getGuildTemplate(code);
   if (null == guildTemplate) {
     return null;
@@ -32,15 +32,15 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     const merged1 = Object.assign(baseColors);
     const intl = require(1212) /* getSystemLocale */.intl;
     obj["headerText"] = intl.string(require(1212) /* getSystemLocale */.t.C7ZRNw).toUpperCase();
-    let obj1 = require(7625) /* processColorOrThrow */;
+    let obj1 = require(7714) /* processColorOrThrow */;
     obj["titleColor"] = obj1.processColorOrThrow(importDefault(689).unsafe_rawColors.RED_400);
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj["titleText"] = intl2.string(require(1212) /* getSystemLocale */.t.A6MwXE);
     const str = intl.string(require(1212) /* getSystemLocale */.t.C7ZRNw);
     if (obj3.isThemeDark(closure_2)) {
-      let tmp10Result = tmp10(10953);
+      let tmp10Result = tmp10(10980);
     } else {
-      tmp10Result = tmp10(10954);
+      tmp10Result = tmp10(10981);
     }
     obj["thumbnailUrl"] = Image.resolveAssetSource(tmp10Result).uri;
     obj["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
@@ -60,7 +60,7 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj1["titleColor"] = colors.titleColor;
     obj1["subtitle"] = formatToPlainStringResult;
     obj1["subtitleColor"] = colors.subtitleColor;
-    obj1["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12294)).uri;
+    obj1["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12321)).uri;
     obj1["acceptLabelColor"] = colors.acceptLabelGreenColor;
     obj1["acceptLabelBackgroundColor"] = colors.acceptLabelGreenBackgroundColor;
     const intl6 = require(1212) /* getSystemLocale */.intl;
@@ -69,5 +69,5 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj1["type"] = InviteTypes.GUILD;
     return obj1;
   }
-  const tmp = importDefault(7633)(closure_2);
+  const tmp = importDefault(7722)(closure_2);
 };

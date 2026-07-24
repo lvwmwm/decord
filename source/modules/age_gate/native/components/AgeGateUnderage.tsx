@@ -1,10 +1,10 @@
-// Module ID: 14771
-// Function ID: 112665
+// Module ID: 14818
+// Function ID: 112986
 // Name: AgeGateUnderage
-// Dependencies: [31, 27, 653, 33, 4130, 689, 9197, 1456, 5087, 5093, 1212, 9222, 9225, 5807, 9221, 5459, 1920, 4126, 4543, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 9233, 1456, 5087, 5093, 1212, 9258, 9261, 5807, 9257, 4126, 1920, 4543, 2]
 // Exports: default
 
-// Module 14771 (AgeGateUnderage)
+// Module 14818 (AgeGateUnderage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -104,7 +104,7 @@ export default function AgeGateUnderage(onClose) {
     stringResult1 = intl2.format(tmp14(tmp15[10]).t.b0QzXe, obj2);
   }
   obj1.children = stringResult1;
-  items1[4] = callback(onClose(flag2[15]).TextWithIOSLinkWorkaround, obj1);
+  items1[4] = callback(onClose(flag2[15]).Text, obj1);
   let tmp22 = null;
   if (existingUser) {
     const obj3 = {};
@@ -112,13 +112,13 @@ export default function AgeGateUnderage(onClose) {
     const intl4 = onClose(flag2[10]).intl;
     const obj5 = { days: 30 };
     obj4.children = intl4.format(onClose(flag2[10]).t["3axQdB"], obj5);
-    const items2 = [callback(onClose(flag2[17]).Text, obj4), ];
+    const items2 = [callback(onClose(flag2[15]).Text, obj4), ];
     obj6 = { style: tmp2.buttonWrapper };
     const obj7 = { onPress: onClose };
     const intl5 = onClose(flag2[10]).intl;
     obj7.text = intl5.string(onClose(flag2[10]).t.JhDw5o);
     obj7.grow = true;
-    obj6.children = callback(onClose(flag2[18]).Button, obj7);
+    obj6.children = callback(onClose(flag2[17]).Button, obj7);
     items2[1] = callback(View, obj6);
     obj3.children = items2;
     tmp22 = callback2(closure_7, obj3);

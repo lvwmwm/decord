@@ -1,9 +1,9 @@
-// Module ID: 10255
-// Function ID: 79267
+// Module ID: 10286
+// Function ID: 79461
 // Name: PreviewIcon
-// Dependencies: [31, 27, 3767, 33, 4644, 10159, 9076, 9657, 4074, 10256, 9085, 9134, 4549, 10258, 1324, 10234, 10261, 9889, 4126, 4066, 4130, 689, 3834, 3803, 7621, 9293, 7808, 7625, 566, 2]
+// Dependencies: [31, 27, 3767, 33, 4644, 7496, 9114, 9691, 4074, 7488, 9123, 9170, 4549, 10287, 1324, 10264, 10290, 9921, 4126, 4066, 4130, 689, 3834, 3803, 7710, 9329, 7899, 7714, 566, 2]
 
-// Module 10255 (PreviewIcon)
+// Module 10286 (PreviewIcon)
 import importAllResult from "result";
 import { View } from "processColorOrThrow";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,15 +24,15 @@ function PreviewIcon(icon) {
   } else if ("video" === icon) {
     const obj1 = {};
     const merged2 = Object.assign(merged);
-    return callback(require(10159) /* VideoIcon */.VideoIcon, obj1);
+    return callback(require(7496) /* VideoIcon */.VideoIcon, obj1);
   } else if ("audio" === icon) {
     const obj2 = {};
     const merged3 = Object.assign(merged);
-    return callback(require(9076) /* MusicIcon */.MusicIcon, obj2);
+    return callback(require(9114) /* MusicIcon */.MusicIcon, obj2);
   } else if ("attachment" === icon) {
     const obj3 = {};
     const merged4 = Object.assign(merged);
-    return callback(require(9657) /* AttachmentIcon */.AttachmentIcon, obj3);
+    return callback(require(9691) /* AttachmentIcon */.AttachmentIcon, obj3);
   } else if ("link" === icon) {
     const obj4 = {};
     const merged5 = Object.assign(merged);
@@ -40,15 +40,15 @@ function PreviewIcon(icon) {
   } else if ("sticker" === icon) {
     const obj5 = {};
     const merged6 = Object.assign(merged);
-    return callback(require(10256) /* StickerIcon */.StickerIcon, obj5);
+    return callback(require(7488) /* StickerIcon */.StickerIcon, obj5);
   } else if ("call-active" === icon) {
     const obj6 = {};
     const merged7 = Object.assign(merged);
-    return callback(require(9085) /* PhoneCallIcon */.PhoneCallIcon, obj6);
+    return callback(require(9123) /* PhoneCallIcon */.PhoneCallIcon, obj6);
   } else if ("call-ended" === icon) {
     obj = {};
     const merged8 = Object.assign(merged);
-    return callback(require(9134) /* PhoneHangUpIcon */.PhoneHangUpIcon, obj);
+    return callback(require(9170) /* PhoneHangUpIcon */.PhoneHangUpIcon, obj);
   }
 }
 class ChannelRowPreview {
@@ -82,7 +82,7 @@ class ChannelRowPreview {
         if ("markup" === type) {
           obj = {};
           tmp7 = jsx;
-          tmp8 = f79273;
+          tmp8 = f79467;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -160,7 +160,7 @@ class ChannelRowPreview {
 class NativeChannelRowPreview {
   constructor(arg0) {
     ({ lineClamp, gifAutoPlay } = global);
-    ({ message, messageSizeCacheRef, maxHeight, backgroundColor } = global);
+    ({ message, messageSizeCacheRef, maxHeight } = global);
     if (gifAutoPlay === undefined) {
       gifAutoPlay = false;
     }
@@ -170,7 +170,7 @@ class NativeChannelRowPreview {
     c4 = undefined;
     c5 = undefined;
     InlineEmbedMedia = undefined;
-    ({ gradientStyles, textColor } = global);
+    ({ textColor, gradientStyles, gradientColors } = global);
     tmp = require("useTheme")();
     obj = require("_createForOfIteratorHelperLoose");
     obj = { seeMoreLabelColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
@@ -235,8 +235,8 @@ class NativeChannelRowPreview {
     obj1.rowGenerator = memo;
     obj1.messageSizeCacheRef = messageSizeCacheRef;
     obj1.maxHeight = maxHeight;
-    obj1.backgroundColor = backgroundColor;
     obj1.gradientStyles = gradientStyles;
+    obj1.gradientColors = gradientColors;
     return InlineEmbedMedia(require("DCDChatItem"), obj1);
   }
 }
@@ -251,7 +251,7 @@ let closure_8 = importAllResult.memo((arg0) => {
   ({ markup, channelId, guildId, muted, layout, color } = arg0);
   const fontScale = require(4549) /* getFontScale */.useFontScale();
   const obj = require(4549) /* getFontScale */;
-  return require(10258) /* getRules */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
+  return require(10287) /* getRules */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
 });
 const memoResult = importAllResult.memo((message) => {
   const _require = message;

@@ -1,10 +1,10 @@
-// Module ID: 14900
-// Function ID: 113611
+// Module ID: 14947
+// Function ID: 113932
 // Name: useCallA11yState
 // Dependencies: [1194, 4809, 566, 2]
 // Exports: default
 
-// Module 14900 (useCallA11yState)
+// Module 14947 (useCallA11yState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

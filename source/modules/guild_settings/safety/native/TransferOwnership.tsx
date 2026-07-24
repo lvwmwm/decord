@@ -1,10 +1,10 @@
-// Module ID: 10992
-// Function ID: 85551
+// Module ID: 11019
+// Function ID: 85740
 // Name: TransferOwnership
-// Dependencies: [5, 57, 31, 27, 1849, 10991, 653, 33, 4130, 689, 3834, 1456, 566, 44, 8438, 10989, 3830, 4319, 5515, 4126, 10993, 1273, 1212, 3969, 5503, 9094, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 11018, 653, 33, 4130, 689, 3834, 1456, 566, 44, 8482, 11016, 3830, 4319, 5513, 4126, 11020, 1273, 1212, 3969, 5501, 9132, 4543, 2]
 // Exports: default
 
-// Module 10992 (TransferOwnership)
+// Module 11019 (TransferOwnership)
 import closure_3 from "TransferOwnershipModalScenes";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -107,7 +107,7 @@ export default function TransferOwnership(guild) {
   obj1 = { paddingTop: toUser(689).space.PX_16, paddingHorizontal: token };
   obj.style = obj1;
   obj2 = { style: tmp2.header };
-  obj3 = { source: toUser(10993), style: tmp2.arrow };
+  obj3 = { source: toUser(11020), style: tmp2.arrow };
   const items1 = [callback2(_handleTransfer, obj3), , , ];
   const obj4 = { style: tmp2.avatarsWrapper };
   const obj5 = { user: stateFromStores, guildId: guild.id, size: guild(1273).AvatarSizes.XXLARGE };
@@ -206,8 +206,8 @@ export default function TransferOwnership(guild) {
     obj12.onPress = function handleConfirmToggle(arg0) {
       callback(arg0);
     };
-    obj11.children = callback2(guild(9094).TableCheckboxRow, obj12);
-    items3[1] = callback2(guild(5503).TableRowGroup, obj11);
+    obj11.children = callback2(guild(9132).TableCheckboxRow, obj12);
+    items3[1] = callback2(guild(5501).TableRowGroup, obj11);
     const obj14 = {
       onPress: function handleTransfer() {
           return _handleTransfer(...arguments);

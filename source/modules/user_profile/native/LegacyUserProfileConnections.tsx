@@ -1,10 +1,10 @@
-// Module ID: 10000
-// Function ID: 77311
+// Module ID: 10032
+// Function ID: 77505
 // Name: useAppplicationRoleConnectionItems
-// Dependencies: [31, 27, 1921, 1857, 3970, 6856, 653, 1277, 4940, 33, 4130, 689, 4939, 10001, 4814, 1392, 3976, 1273, 10004, 10005, 3834, 10006, 10007, 4099, 5492, 3830, 1212, 8336, 4324, 3827, 4660, 4126, 3842, 566, 6735, 10008, 2]
+// Dependencies: [31, 27, 1921, 1857, 3970, 6855, 653, 1277, 4940, 33, 4130, 689, 4939, 10033, 4814, 1392, 3976, 1273, 10036, 10037, 3834, 10038, 10039, 4099, 5490, 3830, 1212, 8380, 4324, 3827, 4660, 4126, 3842, 566, 6735, 10040, 2]
 // Exports: default
 
-// Module 10000 (useAppplicationRoleConnectionItems)
+// Module 10032 (useAppplicationRoleConnectionItems)
 import importAllResult from "Text";
 import get_ActivityIndicator from "isLinkTrusted";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -596,8 +596,8 @@ export default function LegacyUserProfileConnections(user) {
         obj.title = intl.string(user(1212).t.PHjkRE);
         obj.showContainer = true;
         obj.children = arr6;
-        tmp10 = callback(stateFromStores(10008), obj);
-        const tmp14 = stateFromStores(10008);
+        tmp10 = callback(stateFromStores(10040), obj);
+        const tmp14 = stateFromStores(10040);
       }
       const items4 = [tmp10, ];
       obj1 = {};
@@ -605,10 +605,10 @@ export default function LegacyUserProfileConnections(user) {
       obj1.title = intl2.string(user(1212).t["3fe7U5"]);
       obj1.showContainer = true;
       obj1.children = tmp8;
-      items4[1] = callback(stateFromStores(10008), obj1);
+      items4[1] = callback(stateFromStores(10040), obj1);
       obj.children = items4;
       tmp21Result = closure_15(closure_16, obj);
-      const tmp19 = stateFromStores(10008);
+      const tmp19 = stateFromStores(10040);
       const tmp21 = closure_15;
       const tmp22 = closure_16;
     }

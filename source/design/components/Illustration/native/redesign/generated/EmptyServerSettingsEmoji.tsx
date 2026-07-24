@@ -1,17 +1,17 @@
-// Module ID: 16259
-// Function ID: 126610
+// Module ID: 16306
+// Function ID: 126934
 // Name: getEmptyServerSettingsEmojiSource
-// Dependencies: [31, 27, 33, 7403, 16260, 16261, 16262, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 16307, 16308, 16309, 3976, 2]
 // Exports: EmptyServerSettingsEmoji
 
-// Module 16259 (getEmptyServerSettingsEmojiSource)
+// Module 16306 (getEmptyServerSettingsEmojiSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getEmptyServerSettingsEmojiSource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

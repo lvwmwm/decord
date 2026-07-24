@@ -1,10 +1,10 @@
-// Module ID: 8184
-// Function ID: 64588
+// Module ID: 8228
+// Function ID: 64816
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4991, 1921, 1838, 4467, 1849, 7022, 653, 4123, 6755, 686, 7007, 6753, 1881, 8185, 8187, 44, 8188, 4324, 7020, 7938, 3771, 1327, 6996, 7799, 7076, 7798, 8189, 7889, 6995, 6691, 4670, 1212, 4666, 7083, 2]
+// Dependencies: [5, 4991, 1921, 1838, 4467, 1849, 7021, 653, 4123, 6755, 686, 7006, 6753, 1881, 8229, 8231, 44, 8232, 4324, 7019, 8025, 3771, 1327, 6995, 7890, 7075, 7889, 8233, 7976, 6994, 6691, 4670, 1212, 4666, 7082, 2]
 // Exports: default, retryCommandMessage
 
-// Module 8184 (_createForOfIteratorHelperLoose)
+// Module 8228 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -1422,8 +1422,8 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj = { applicationId, channelId: id, guildId: id, data: tmp };
     let nonce = interactionLifecycleOptions.nonce;
     if (null == nonce) {
-      nonce = onMessageSuccess(6996).createNonce();
-      const obj2 = onMessageSuccess(6996);
+      nonce = onMessageSuccess(6995).createNonce();
+      const obj2 = onMessageSuccess(6995);
     }
     obj.nonce = nonce;
     obj.attachments = attachments;
@@ -1435,7 +1435,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     ({ messageId: obj4.messageId, onCreate: obj4.onCreate, onSuccess: obj4.onSuccess, onFailure: obj4.onFailure } = interactionLifecycleOptions);
     obj = { interactionType: onMessageSuccess(1881).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     obj.data = obj;
-    importAll(7799).addQueued(obj.nonce, obj);
+    importAll(7890).addQueued(obj.nonce, obj);
     if (null != attachments) {
       if (attachments.length > 0) {
         (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
@@ -1451,14 +1451,14 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
       }
     }
     queueCommand(obj, onMessageSuccess);
-    const obj3 = importAll(7799);
+    const obj3 = importAll(7890);
   }
 }
 function queueCommand(message, onMessageSuccess) {
   const _require = message;
   const importDefault = onMessageSuccess;
-  let obj = importDefault(7076);
-  obj = { type: _require(7076).MessageDataType.COMMAND, message };
+  let obj = importDefault(7075);
+  obj = { type: _require(7075).MessageDataType.COMMAND, message };
   obj.enqueue(obj, (ok) => {
     let applicationId;
     let channelId;

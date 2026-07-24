@@ -1,10 +1,10 @@
-// Module ID: 9482
-// Function ID: 73861
+// Module ID: 9518
+// Function ID: 74070
 // Name: isNewMessageGroup
 // Dependencies: [653, 664, 5651, 21, 3800, 2]
 // Exports: isNewGroupItem
 
-// Module 9482 (isNewMessageGroup)
+// Module 9518 (isNewMessageGroup)
 import ME from "ME";
 
 let closure_3;

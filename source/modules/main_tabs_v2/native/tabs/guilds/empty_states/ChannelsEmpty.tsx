@@ -1,8 +1,8 @@
-// Module ID: 15078
-// Function ID: 114762
-// Dependencies: [31, 27, 3758, 653, 33, 4130, 4126, 689, 624, 8438, 8412, 13999, 5077, 5807, 15079, 1212, 2944, 7498, 1273, 15080, 4544, 2]
+// Module ID: 15125
+// Function ID: 115083
+// Dependencies: [31, 27, 3758, 653, 33, 4130, 4126, 689, 624, 8482, 8456, 14049, 5077, 5807, 15126, 1212, 2944, 7639, 1273, 15127, 4544, 2]
 
-// Module 15078
+// Module 15125
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -48,14 +48,14 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     outer1_1(outer1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(13999);
+  let obj1 = guild(14049);
   const youBarTotalHeight = obj1.useYouBarTotalHeight(16);
   let obj2 = guild(5077);
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(guild.id);
   if (isFavoritesGuildIdResult) {
     let tmp7Result = tmp7(guild(5807).FavoritesSpotIllustration, { width: 192, height: 108 });
   } else {
-    obj = { source: importDefault(15079) };
+    obj = { source: importDefault(15126) };
     tmp7Result = tmp7(closure_5, obj);
   }
   const intl = guild(1212).intl;
@@ -77,12 +77,12 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   if (canCustomizeGuild) {
     obj1 = { style: tmp.personalizeButtonWrapper };
     obj2 = {};
-    const obj3 = { source: importDefault(15080), disableColor: true };
+    const obj3 = { source: importDefault(15127), disableColor: true };
     obj2.icon = callback(guild(1273).Icon, obj3);
     const intl3 = guild(1212).intl;
     obj2.label = intl3.string(guild(1212).t["Yhi9/N"]);
     obj2.onPress = callback;
-    obj1.children = callback(guild(7498).RowButton, obj2);
+    obj1.children = callback(guild(7639).RowButton, obj2);
     canCustomizeGuild = callback(closure_4, obj1);
   }
   const items5 = [canCustomizeGuild, ];

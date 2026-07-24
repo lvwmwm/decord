@@ -1,10 +1,10 @@
-// Module ID: 14358
-// Function ID: 109798
+// Module ID: 14408
+// Function ID: 110121
 // Name: AppIcon
-// Dependencies: [31, 27, 7961, 33, 4130, 689, 4066, 3976, 2]
+// Dependencies: [31, 27, 7444, 33, 4130, 689, 4066, 3976, 2]
 // Exports: default
 
-// Module 14358 (AppIcon)
+// Module 14408 (AppIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getIconById } from "getDefaultIcon";

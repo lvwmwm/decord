@@ -1,5 +1,5 @@
 // Module ID: 1075
-// Function ID: 12351
+// Function ID: 12352
 // Name: browserProfilingIntegration
 // Dependencies: [1076, 1077, 1048, 794, 1004, 1078]
 

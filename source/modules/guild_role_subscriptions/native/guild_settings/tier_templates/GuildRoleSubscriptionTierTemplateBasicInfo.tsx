@@ -1,10 +1,10 @@
-// Module ID: 16480
-// Function ID: 128407
+// Module ID: 16527
+// Function ID: 128731
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [31, 27, 1851, 482, 33, 4130, 689, 5085, 1273, 4126, 1212, 5618, 14120, 4544, 2]
+// Dependencies: [31, 27, 1851, 482, 33, 4130, 689, 5085, 1273, 4126, 1212, 5616, 14170, 4544, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 16480 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 16527 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import "result";
 import { View } from "get ActivityIndicator";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -49,9 +49,9 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubs
   const obj3 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle };
   const intl = template(1212).intl;
   const obj4 = {};
-  let obj7 = template(5618);
+  let obj7 = template(5616);
   obj4.price = obj7.formatPrice(price_tier, CurrencyCodes.USD);
-  obj4.interval = template(14120).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj4.interval = template(14170).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj3.children = intl.format(template(1212).t.CgmBaG, obj4);
   items1[2] = callback(template(4126).Text, obj3);
   obj1.children = items1;

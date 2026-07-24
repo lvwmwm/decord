@@ -1,10 +1,10 @@
-// Module ID: 8684
-// Function ID: 68776
+// Module ID: 8725
+// Function ID: 68994
 // Name: useGetOrFetchStorefrontPricesForApplicationId
-// Dependencies: [31, 8685, 2]
+// Dependencies: [31, 8726, 2]
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds
 
-// Module 8684 (useGetOrFetchStorefrontPricesForApplicationId)
+// Module 8725 (useGetOrFetchStorefrontPricesForApplicationId)
 import result from "result";
 
 const require = arg1;

@@ -1,8 +1,8 @@
-// Module ID: 13333
-// Function ID: 102416
+// Module ID: 13386
+// Function ID: 102743
 // Dependencies: [1428, 2]
 
-// Module 13333
+// Module 13386
 import ApexExperiment from "ApexExperiment";
 
 let obj = { name: "2025-12-shadow-node-spike", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

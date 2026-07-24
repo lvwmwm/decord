@@ -1,10 +1,10 @@
-// Module ID: 15539
-// Function ID: 119871
+// Module ID: 15586
+// Function ID: 120193
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [57, 31, 27, 4991, 1348, 1852, 33, 4130, 689, 1456, 566, 4126, 1212, 9139, 5788, 4541, 5503, 5165, 4660, 9326, 5151, 1392, 8007, 1273, 5776, 5504, 4471, 2]
+// Dependencies: [57, 31, 27, 4991, 1348, 1852, 33, 4130, 689, 1456, 566, 4126, 1212, 9175, 5788, 4541, 5501, 5165, 4660, 9362, 5151, 1392, 7437, 1273, 5776, 5502, 4471, 2]
 // Exports: default
 
-// Module 15539 (ChannelSettingsEditForumTag)
+// Module 15586 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -285,7 +285,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       }
       obj4.trailing = tmp47;
       obj3.children = tmp30(channelId(5165).TableRow, obj4);
-      const items6 = [tmp30(channelId(5503).TableRowGroup, obj3), ];
+      const items6 = [tmp30(channelId(5501).TableRowGroup, obj3), ];
       const obj9 = { style: tmp.hint };
       const obj10 = { variant: "text-sm/medium", color: "text-muted" };
       let intl2 = channelId(1212).intl;
@@ -314,8 +314,8 @@ export default function ChannelSettingsEditForumTag(channelId) {
           callback2(true);
         }
       };
-      obj11.children = callback2(channelId(5504).TableSwitchRow, obj12);
-      items7[1] = callback2(channelId(5503).TableRowGroup, obj11);
+      obj11.children = callback2(channelId(5502).TableSwitchRow, obj12);
+      items7[1] = callback2(channelId(5501).TableRowGroup, obj11);
       let tmp55 = null;
       if (!tmp2) {
         const obj13 = { hasIcons: false };
@@ -343,7 +343,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
           obj.show(obj);
         };
         obj13.children = callback2(channelId(5165).TableRow, obj14);
-        tmp55 = callback2(channelId(5503).TableRowGroup, obj13);
+        tmp55 = callback2(channelId(5501).TableRowGroup, obj13);
       }
       items7[2] = tmp55;
       obj1.children = items7;
@@ -374,5 +374,5 @@ export default function ChannelSettingsEditForumTag(channelId) {
     const tmp34 = callback2;
     const tmp37 = tag(5151);
   }
-  tmp34Result = callback2(channelId(8007).ReactionIcon, {});
+  tmp34Result = callback2(channelId(7437).ReactionIcon, {});
 };

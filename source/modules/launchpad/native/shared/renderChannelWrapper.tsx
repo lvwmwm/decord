@@ -1,10 +1,10 @@
-// Module ID: 15661
-// Function ID: 120814
+// Module ID: 15708
+// Function ID: 121136
 // Name: getStyles
-// Dependencies: [31, 27, 33, 15659, 15662, 2]
+// Dependencies: [31, 27, 33, 15706, 15709, 2]
 // Exports: default
 
-// Module 15661 (getStyles)
+// Module 15708 (getStyles)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -17,5 +17,5 @@ let closure_4 = require("items")();
 const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/renderChannelWrapper.tsx");
 
 export default function renderChannelWrapper(children, fontScale) {
-  return <View style={getStyles(importDefault(15662)(arg1.fontScale))}>{arg0}</View>;
+  return <View style={getStyles(importDefault(15709)(arg1.fontScale))}>{arg0}</View>;
 };

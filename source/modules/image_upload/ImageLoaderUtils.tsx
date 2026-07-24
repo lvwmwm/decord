@@ -1,5 +1,5 @@
 // Module ID: 1426
-// Function ID: 16678
+// Function ID: 16679
 // Name: isAttachmentLadderEnabled
 // Dependencies: [57, 5, 653, 1427, 1362, 561, 1430, 1440, 1443, 1447, 1824, 22, 1825, 2]
 // Exports: getBestMediaProxySize, getImageSrc, getSizedImageSrc, isImageLoaded, loadImage

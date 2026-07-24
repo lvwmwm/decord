@@ -1,9 +1,9 @@
-// Module ID: 14071
-// Function ID: 108209
+// Module ID: 14121
+// Function ID: 108532
 // Name: QuestThemePicker
-// Dependencies: [31, 27, 1279, 1278, 3943, 482, 33, 4130, 689, 5464, 5484, 4063, 566, 3944, 3834, 1832, 14072, 4126, 13509, 1212, 2]
+// Dependencies: [31, 27, 1279, 1278, 3943, 482, 33, 4130, 689, 5462, 5482, 4063, 566, 3944, 3834, 1832, 14122, 4126, 13562, 1212, 2]
 
-// Module 14071 (QuestThemePicker)
+// Module 14121 (QuestThemePicker)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,22 +31,22 @@ class QuestThemePicker {
     items = [];
     items[0] = useToken;
     stateFromStores = obj2.useStateFromStores(items, () => token.theme);
-    f108211 = stateFromStores;
+    f108534 = stateFromStores;
     obj3 = require("initialize");
     items1 = [];
     items1[0] = c6;
     isSynced = obj3.useStateFromStoresObject(items1, () => ({ isSynced: memo.shouldSync("appearance") })).isSynced;
-    c5 = f108211.useRef(null);
+    c5 = f108534.useRef(null);
     items2 = [];
     items2[0] = stateFromStores;
-    effect = f108211.useEffect(() => {
+    effect = f108534.useEffect(() => {
       if (null == ref.current) {
         ref.current = stateFromStores;
       }
     }, items2);
     items3 = [];
     items3[0] = allMobileThemes;
-    memo = f108211.useMemo(() => {
+    memo = f108534.useMemo(() => {
       const items = [token2.LIGHT, token2.DARKER, token2.MIDNIGHT];
       return allMobileThemes.filter((type) => {
         let hasItem = type.type === items(allMobileThemes[13]).ClientThemeType.STANDARD_BACKGROUND_THEME;
@@ -74,7 +74,7 @@ class QuestThemePicker {
     items4[1] = token;
     items4[2] = token1;
     items4[3] = token2;
-    memo1 = f108211.useMemo(() => {
+    memo1 = f108534.useMemo(() => {
       let obj = { [outer1_9.LIGHT]: token, [outer1_9.DARKER]: token1, [outer1_9.MIDNIGHT]: token2 };
       return memo.map((theme) => {
         theme = theme.theme;
@@ -90,19 +90,19 @@ class QuestThemePicker {
     items5 = [, ];
     items5[0] = analyticsLocations;
     items5[1] = isSynced;
-    callback = f108211.useCallback((arg0) => {
+    callback = f108534.useCallback((arg0) => {
       const found = token1.find((theme) => theme.theme === closure_0);
       if (null != found) {
         tmp(allMobileThemes[16]).handleSaveTheme(found, analyticsLocations, isSynced);
         const obj = tmp(allMobileThemes[16]);
       }
     }, items5);
-    f108218 = callback;
+    f108541 = callback;
     items6 = [];
     items6[0] = callback;
     obj = { style: tmp.themeSection };
     obj1 = { style: tmp.themeSelector };
-    callback1 = f108211.useCallback(() => {
+    callback1 = f108534.useCallback(() => {
       if (null != ref.current) {
         callback(ref.current);
       }
@@ -132,19 +132,19 @@ class QuestThemePicker {
       return tmp(closure_5, obj, backgroundColor.theme);
     });
     obj2 = { style: tmp.resetButton, onPress: callback1 };
-    obj3 = { style: tmp.resetIcon, children: f108218(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
+    obj3 = { style: tmp.resetIcon, children: f108541(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
     items8 = [, ];
-    items8[0] = f108218(isSynced, obj3);
+    items8[0] = f108541(isSynced, obj3);
     obj4 = { variant: "text-xs/medium", color: "text-muted" };
     obj4.style = tmp.themeLabel;
     intl = require("getSystemLocale").intl;
     obj4.children = intl.string(require("getSystemLocale").t.yBZMsQ);
-    items8[1] = f108218(require("Text").Text, obj4);
+    items8[1] = f108541(require("Text").Text, obj4);
     obj2.children = items8;
     items7[1] = jsxs(c5, obj2);
     obj1.children = items7;
     obj.children = jsxs(isSynced, obj1);
-    return f108218(isSynced, obj);
+    return f108541(isSynced, obj);
   }
 }
 ({ View: closure_4, TouchableOpacity: closure_5 } = get_ActivityIndicator);

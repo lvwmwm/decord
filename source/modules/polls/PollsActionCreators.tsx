@@ -1,9 +1,9 @@
-// Module ID: 9935
-// Function ID: 76811
+// Module ID: 9967
+// Function ID: 77005
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 3759, 6830, 1194, 1348, 4468, 4946, 4349, 4467, 7902, 653, 44, 4470, 1212, 5048, 9936, 7901, 4324, 22, 566, 686, 7006, 9941, 3976, 7906, 6691, 7939, 4029, 2]
+// Dependencies: [5, 3759, 6829, 1194, 1348, 4468, 4946, 4349, 4467, 7989, 653, 44, 4470, 1212, 5048, 9968, 7988, 4324, 22, 566, 686, 7005, 9973, 3976, 7993, 6691, 8026, 4029, 2]
 
-// Module 9935 (_createForOfIteratorHelperLoose)
+// Module 9967 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -156,7 +156,7 @@ function handleShowVotesForAnswer(messageId) {
               const _String = String;
               answerId = String(message.poll.answers[0].answer_id);
             }
-            obj = importAll(9936);
+            obj = importAll(9968);
             obj = { message, initialAnswerId: answerId };
             obj.showVotesForAnswer(obj);
           }

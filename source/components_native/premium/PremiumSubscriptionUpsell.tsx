@@ -1,10 +1,10 @@
-// Module ID: 12469
-// Function ID: 96646
+// Module ID: 12522
+// Function ID: 96969
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [31, 27, 1921, 1849, 653, 6671, 1851, 33, 4130, 689, 4082, 1212, 1827, 566, 3776, 4554, 668, 4126, 12470, 12471, 8138, 4543, 2]
+// Dependencies: [31, 27, 1921, 1849, 653, 6671, 1851, 33, 4130, 689, 4082, 1212, 1827, 566, 3776, 4554, 668, 4126, 12523, 12524, 8182, 4543, 2]
 // Exports: default
 
-// Module 12469 (PremiumSubscriptionUpsell)
+// Module 12522 (PremiumSubscriptionUpsell)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -81,9 +81,9 @@ export default function PremiumSubscriptionUpsell(arg0) {
     }
     const items3 = [tmp14, , ];
     const obj6 = { style: tmp.upsellFeatures };
-    const obj7 = { style: tmp.upsellFeatureSubLogo, source: importDefault(12470) };
+    const obj7 = { style: tmp.upsellFeatureSubLogo, source: importDefault(12523) };
     const items4 = [callback(closure_4, obj7), , ];
-    const obj8 = { style: tmp.upsellFeatureLogoTier2, source: importDefault(12471) };
+    const obj8 = { style: tmp.upsellFeatureLogoTier2, source: importDefault(12524) };
     items4[1] = callback(closure_4, obj8);
     const obj9 = { style: tmp.upsellFeatureList };
     const obj10 = {};
@@ -94,7 +94,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj10.IconComponent = require(4082) /* CheckmarkLargeIcon */.CheckmarkLargeIcon;
     const intl4 = require(1212) /* getSystemLocale */.intl;
     const obj11 = {};
-    const tmp27 = importDefault(8138);
+    const tmp27 = importDefault(8182);
     obj11.discountPercentage = require(1827) /* shortenAndLocalizeNumber */.formatPercent(locale.locale, closure_9 / 100);
     obj10.label = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.P3aEj6, obj11);
     obj10.color = importDefault(689).unsafe_rawColors.WHITE;

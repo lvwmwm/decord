@@ -1,10 +1,10 @@
-// Module ID: 13990
-// Function ID: 107105
+// Module ID: 14040
+// Function ID: 107428
 // Name: useIsMobileQuestDockRenderedBase
-// Dependencies: [5, 31, 3823, 4167, 6942, 4976, 9448, 482, 13991, 6957, 566, 4979, 6940, 14014, 10229, 3981, 8133, 10464, 10465, 9458, 6965, 10482, 6963, 10518, 5465, 10483, 10838, 2]
+// Dependencies: [5, 31, 3823, 4167, 6941, 4976, 9484, 482, 14041, 6956, 566, 4979, 6939, 14064, 10259, 3981, 7423, 10493, 10494, 9494, 6964, 10511, 6962, 10547, 5463, 10512, 10867, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 13990 (useIsMobileQuestDockRenderedBase)
+// Module 14040 (useIsMobileQuestDockRenderedBase)
 import closure_3 from "QuestsExperimentLocations";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
-  const tmp = importDefault(8133)();
+  const tmp = importDefault(7423)();
   const items = [closure_7];
   let userStatus;
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => null != outer1_7.getQuestPreviewOverride(outer1_0(outer1_2[11]).QuestContent.QUEST_BAR_MOBILE), []);
@@ -27,8 +27,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   let isDismissedResult = null != userStatus;
   if (isDismissedResult) {
-    isDismissedResult = require(6940) /* _createForOfIteratorHelperLoose */.isDismissed(mobileQuestDock.userStatus, require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE);
-    const obj2 = require(6940) /* _createForOfIteratorHelperLoose */;
+    isDismissedResult = require(6939) /* _createForOfIteratorHelperLoose */.isDismissed(mobileQuestDock.userStatus, require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE);
+    const obj2 = require(6939) /* _createForOfIteratorHelperLoose */;
   }
   let claimedAt;
   if (null != mobileQuestDock) {
@@ -39,8 +39,8 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   }
   const obj = require(566) /* initialize */;
   const tmp8 = null != claimedAt;
-  const isQuestExpired = require(10464) /* _createForOfIteratorHelperLoose */.useIsQuestExpired(mobileQuestDock);
-  require(10465) /* getIsEligibleForQuests */;
+  const isQuestExpired = require(10493) /* _createForOfIteratorHelperLoose */.useIsQuestExpired(mobileQuestDock);
+  require(10494) /* getIsEligibleForQuests */;
   let tmp12 = null != mobileQuestDock;
   if (stateFromStores) {
     if (tmp12) {
@@ -68,7 +68,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   return tmp13;
 }
 function useIsMobileQuestDockRendered() {
-  const obj = importDefault(6957);
+  const obj = importDefault(6956);
   const items = [closure_7];
   let stateFromStores = stateFromStores2(566).useStateFromStores(items, () => outer1_7.getQuestPreviewOverride(stateFromStores2(outer1_2[11]).QuestContent.QUEST_BAR_MOBILE), []);
   const obj2 = stateFromStores2(566);
@@ -133,7 +133,7 @@ export const useMobileQuestDockHeight = function useMobileQuestDockHeight() {
   return num;
 };
 export const useMobileQuestDock = function useMobileQuestDock() {
-  const obj = importDefault(6957);
+  const obj = importDefault(6956);
   const items = [closure_7];
   let stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_7.getQuestPreviewOverride(outer1_0(outer1_2[11]).QuestContent.QUEST_BAR_MOBILE), []);
   const obj2 = require(566) /* initialize */;
@@ -161,8 +161,8 @@ export const useMobileQuestDock = function useMobileQuestDock() {
 export const useIsMobileQuestDockVisibleToUser = function useIsMobileQuestDockVisibleToUser(arg0, arg1) {
   let tmp = arg1;
   const _require = arg0;
-  const isChannelFocused = _require(10229).useIsChannelFocused();
-  const obj = _require(10229);
+  const isChannelFocused = _require(10259).useIsChannelFocused();
+  const obj = _require(10259);
   const currentNavigationRouteName = _require(3981).useCurrentNavigationRouteName();
   const obj2 = _require(3981);
   let tmp4 = null != _require(3981).coerceGuildsRoute({ name: currentNavigationRouteName });

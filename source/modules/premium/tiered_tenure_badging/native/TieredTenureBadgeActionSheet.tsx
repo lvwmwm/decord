@@ -1,12 +1,12 @@
-// Module ID: 8530
-// Function ID: 67975
+// Module ID: 8575
+// Function ID: 68205
 // Name: TieredTenureBadgeItem
-// Dependencies: [31, 27, 1849, 1851, 653, 33, 4130, 689, 8531, 6877, 8556, 5085, 4126, 1212, 8557, 566, 1872, 8559, 480, 1557, 5796, 4098, 8492, 7958, 5459, 8560, 5187, 5189, 2]
+// Dependencies: [31, 27, 1849, 1851, 653, 33, 4130, 689, 8576, 6876, 8601, 5085, 4126, 1212, 8602, 566, 1872, 8604, 480, 1557, 5796, 4098, 8537, 8045, 8605, 5187, 5189, 2]
 // Exports: default
 
-// Module 8530 (TieredTenureBadgeItem)
+// Module 8575 (TieredTenureBadgeItem)
 import result from "result";
-import { View } from "BottomSheetModal";
+import { View } from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 import ME from "ME";
@@ -26,14 +26,14 @@ function TieredTenureBadgeItem(arg0) {
   let premiumSince;
   ({ badge, isUsersBadge, premiumSince } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8531) /* getMobileTenureBadgeImages */;
+  let obj = require(8576) /* getMobileTenureBadgeImages */;
   const mobileTenureBadgeImages = obj.useMobileTenureBadgeImages(badge);
   if (null != mobileTenureBadgeImages) {
     const small = mobileTenureBadgeImages.small;
   }
-  let obj1 = require(6877) /* getTieredTenureBadgeData */;
+  let obj1 = require(6876) /* getTieredTenureBadgeData */;
   const tieredTenureBadgeData = obj1.getTieredTenureBadgeData(badge);
-  require(8556) /* getTenureBadgeRequirementString */;
+  require(8601) /* getTenureBadgeRequirementString */;
   if (null != tieredTenureBadgeData) {
     const tenureReqNumMonths = tieredTenureBadgeData.tenureReqNumMonths;
   }
@@ -191,7 +191,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     stringResult1 = intl2.format(tmp19(tmp20[13]).t["bF+q7R"], obj5);
   }
   obj4.children = stringResult1;
-  items3[1] = closure_10(userId(tieredTenureBadgeDataForUser[24]).TextWithIOSLinkWorkaround, obj4);
+  items3[1] = closure_10(userId(tieredTenureBadgeDataForUser[12]).Text, obj4);
   obj2.children = items3;
   const obj6 = { style: items4 };
   items4 = [tmp.footer, { paddingBottom: bottom }];
@@ -200,7 +200,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
   const tmp15 = View;
   const tmp16 = closure_10;
   const tmp18 = closure_10;
-  const tmp27 = importDefault(tieredTenureBadgeDataForUser[25]);
+  const tmp27 = importDefault(tieredTenureBadgeDataForUser[24]);
   const obj7 = {};
   if (isPremiumResult) {
     obj7.shiny = false;
@@ -264,7 +264,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     })
   ];
   obj9.children = items6;
-  obj8.children = callback2(userId(tieredTenureBadgeDataForUser[27]).BottomSheetScrollView, obj9);
-  return closure_10(userId(tieredTenureBadgeDataForUser[26]).BottomSheet, obj8);
+  obj8.children = callback2(userId(tieredTenureBadgeDataForUser[26]).BottomSheetScrollView, obj9);
+  return closure_10(userId(tieredTenureBadgeDataForUser[25]).BottomSheet, obj8);
 };
 export const TIERED_TENURE_BADGE_ACTION_SHEET_KEY = "TIERED_TENURE_BADGE_ACTION_SHEET";

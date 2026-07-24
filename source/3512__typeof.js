@@ -1,5 +1,5 @@
 // Module ID: 3512
-// Function ID: 26983
+// Function ID: 26984
 // Name: _typeof
 // Dependencies: []
 

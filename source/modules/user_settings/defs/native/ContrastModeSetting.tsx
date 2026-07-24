@@ -1,9 +1,9 @@
-// Module ID: 14244
-// Function ID: 109416
+// Module ID: 14294
+// Function ID: 109739
 // Name: slider
-// Dependencies: [31, 4122, 7662, 33, 13370, 14201, 11254, 10095, 1212, 1273, 2]
+// Dependencies: [31, 4122, 7751, 33, 13423, 14251, 11283, 10127, 1212, 1273, 2]
 
-// Module 14244 (slider)
+// Module 14294 (slider)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";

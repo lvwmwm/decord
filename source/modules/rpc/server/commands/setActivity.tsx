@@ -1,9 +1,9 @@
-// Module ID: 13417
-// Function ID: 103185
+// Module ID: 13470
+// Function ID: 103512
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [4167, 4033, 653, 8310, 10499, 9079, 10496, 686, 10449, 10482, 22, 664, 7820, 675, 2]
+// Dependencies: [4167, 4033, 653, 8354, 10528, 9117, 10525, 686, 10478, 10511, 22, 664, 7909, 675, 2]
 
-// Module 13417 (RPC_LOCAL_SCOPE)
+// Module 13470 (RPC_LOCAL_SCOPE)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -27,11 +27,11 @@ let items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_AC
 obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj;
 obj.validation = function validation(number) {
-  let obj = importDefault(10499)(number);
+  let obj = importDefault(10528)(number);
   obj = {};
   const requiredResult = obj.required();
   obj.pid = number.number().min(0);
-  let obj4 = importDefault(10499)(number);
+  let obj4 = importDefault(10528)(number);
   obj = {};
   const numberResult = number.number();
   const stringResult = number.string();
@@ -52,14 +52,14 @@ obj.validation = function validation(number) {
   obj.details_url = number.string().uri().min(1).max(256);
   const minResult4 = number.string().uri().min(1);
   const obj1 = {};
-  const obj19 = importDefault(10499)(number);
+  const obj19 = importDefault(10528)(number);
   obj1.start = number.number().min(1);
   const numberResult1 = number.number();
   obj1.end = number.number().min(1);
   obj.timestamps = obj19.keys(obj1);
   const numberResult2 = number.number();
   const obj2 = {};
-  const obj23 = importDefault(10499)(number);
+  const obj23 = importDefault(10528)(number);
   const stringResult5 = number.string();
   obj2.large_image = number.string().min(1).max(300);
   const minResult5 = number.string().min(1);
@@ -85,7 +85,7 @@ obj.validation = function validation(number) {
   obj.assets = obj23.keys(obj2);
   const minResult11 = number.string().min(1);
   const obj3 = {};
-  const obj41 = importDefault(10499)(number);
+  const obj41 = importDefault(10528)(number);
   const stringResult12 = number.string();
   obj3.id = number.string().min(2).max(128);
   let arrayResult = number.array();
@@ -100,7 +100,7 @@ obj.validation = function validation(number) {
   obj.party = obj41.keys(obj3);
   const defaultResult = number.number().default(constants.PRIVATE);
   obj4 = {};
-  const obj49 = importDefault(10499)(number);
+  const obj49 = importDefault(10528)(number);
   const stringResult13 = number.string();
   obj4.match = number.string().min(2).max(128);
   const minResult13 = number.string().min(2);
@@ -113,7 +113,7 @@ obj.validation = function validation(number) {
   arrayResult = number.array();
   const minResult15 = number.string().min(2);
   const obj5 = {};
-  const obj58 = importDefault(10499)(number);
+  const obj58 = importDefault(10528)(number);
   const stringResult16 = number.string();
   const minResult16 = number.string().min(1);
   obj5.label = number.string().min(1).max(32).required();
@@ -137,7 +137,7 @@ obj.validation = function validation(number) {
   obj.type = number.number().default(constants2.PLAYING).valid(constants2.PLAYING, constants2.LISTENING, constants2.WATCHING, constants2.COMPETING);
   const defaultResult1 = number.number().default(constants2.PLAYING);
   const numberResult6 = number.number();
-  obj.status_display_type = number.number().optional().valid(require(9079) /* StatusDisplayTypes */.StatusDisplayTypes.NAME, require(9079) /* StatusDisplayTypes */.StatusDisplayTypes.STATE, require(9079) /* StatusDisplayTypes */.StatusDisplayTypes.DETAILS);
+  obj.status_display_type = number.number().optional().valid(require(9117) /* StatusDisplayTypes */.StatusDisplayTypes.NAME, require(9117) /* StatusDisplayTypes */.StatusDisplayTypes.STATE, require(9117) /* StatusDisplayTypes */.StatusDisplayTypes.DETAILS);
   const keys = obj4.keys(obj);
   obj.activity = keys.allow(null);
   return requiredResult.keys(obj);

@@ -1,5 +1,5 @@
 // Module ID: 1504
-// Function ID: 17318
+// Function ID: 17319
 // Name: transformPreventedRoutes
 // Dependencies: [57, 65, 31, 33, 1465, 1502, 1483, 1503, 1505]
 // Exports: default

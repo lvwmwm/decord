@@ -1,10 +1,10 @@
-// Module ID: 7418
-// Function ID: 59617
+// Module ID: 7420
+// Function ID: 59652
 // Name: AccountCreditTier
-// Dependencies: [31, 27, 6637, 653, 33, 4130, 689, 3776, 1212, 2780, 5474, 4126, 566, 22, 2]
+// Dependencies: [31, 27, 6637, 653, 33, 4130, 689, 3776, 1212, 2780, 5472, 4126, 566, 22, 2]
 // Exports: default
 
-// Module 7418 (AccountCreditTier)
+// Module 7420 (AccountCreditTier)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -68,8 +68,8 @@ function AccountCreditTier(arg0) {
   }
   items[1] = divider;
   obj1.style = items;
-  obj2 = { size: require(5474) /* GameIcon */.GameIconSizes.SMALL, skuId: result };
-  const items1 = [callback(importDefault(5474), obj2), , ];
+  obj2 = { size: require(5472) /* GameIcon */.GameIconSizes.SMALL, skuId: result };
+  const items1 = [callback(importDefault(5472), obj2), , ];
   const obj3 = { style: tmp.textContainer };
   obj4 = { style: tmp.headerText, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl4 = require(1212) /* getSystemLocale */.intl;

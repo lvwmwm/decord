@@ -1,10 +1,10 @@
-// Module ID: 15848
-// Function ID: 122515
+// Module ID: 15895
+// Function ID: 122837
 // Name: useDrawerToggle
-// Dependencies: [31, 10013, 10014, 3991, 8277, 15849, 1212, 2]
+// Dependencies: [31, 10045, 10046, 3991, 8321, 15896, 1212, 2]
 // Exports: default
 
-// Module 15848 (useDrawerToggle)
+// Module 15895 (useDrawerToggle)
 import result from "result";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 

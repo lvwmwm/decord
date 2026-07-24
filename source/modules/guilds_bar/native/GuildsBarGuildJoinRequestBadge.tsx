@@ -1,10 +1,10 @@
-// Module ID: 14828
-// Function ID: 113176
+// Module ID: 14875
+// Function ID: 113497
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [31, 27, 33, 4130, 689, 4973, 3950, 14829, 14830, 14831, 11388, 5085, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4973, 3950, 14876, 14877, 14878, 11416, 5085, 2]
 // Exports: default
 
-// Module 14828 (GuildsBarGuildJoinRequestBadge)
+// Module 14875 (GuildsBarGuildJoinRequestBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,15 +23,15 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
   const tmp = _createForOfIteratorHelperLoose();
   if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp6 = importDefault(14829);
+    let tmp6 = importDefault(14876);
   } else if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp6 = importDefault(14830);
+    tmp6 = importDefault(14877);
   } else if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp6 = importDefault(14831);
+    tmp6 = importDefault(14878);
   } else {
     tmp6 = null;
     if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp6 = importDefault(11388);
+      tmp6 = importDefault(11416);
     }
   }
   let tmp15 = null;

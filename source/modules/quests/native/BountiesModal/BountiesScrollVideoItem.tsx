@@ -1,10 +1,10 @@
-// Module ID: 13915
-// Function ID: 106524
+// Module ID: 13966
+// Function ID: 106848
 // Name: BountiesScrollVideoItemInner
-// Dependencies: [5, 57, 31, 27, 8724, 6941, 4976, 33, 13916, 566, 10839, 13926, 10845, 13927, 13929, 13930, 13932, 10929, 6970, 4981, 13940, 2]
+// Dependencies: [5, 57, 31, 27, 8765, 6940, 4976, 33, 13967, 566, 10868, 13977, 10872, 13978, 13980, 13981, 13983, 10956, 6969, 4981, 13991, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 13915 (BountiesScrollVideoItemInner)
+// Module 13966 (BountiesScrollVideoItemInner)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -353,7 +353,7 @@ export const BountiesScrollVideoItem = function BountiesScrollVideoItem(bounty) 
   }
   const obj = {
     adContentId: bounty.id,
-    adCreativeType: bounty(6970).AdCreativeType.BOUNTY,
+    adCreativeType: bounty(6969).AdCreativeType.BOUNTY,
     questContent: bounty(4981).QuestContent.VIDEO_MODAL_MOBILE,
     sourceQuestContent,
     overrideVisibility: isActive,
@@ -361,5 +361,5 @@ export const BountiesScrollVideoItem = function BountiesScrollVideoItem(bounty) 
       return flag3(outer1_11, { bounty, sourceQuestContent, width: closure_2, height: _createForOfIteratorHelperLoose, index: _slicedToArray, isActive, isRecapPageRevealed: flag, isRecapPageOnTop: flag2, isScrollingInBoundsSharedValue: closure_8, isScrollIndicatorOverlayEnabled, shouldLoadHls: flag3, scrollAffordance: closure_11, peekScale: closure_12, softDownloadCapsEnabled });
     }
   };
-  return flag3(bounty(10929).QuestContentImpressionTrackerNative, obj);
+  return flag3(bounty(10956).QuestContentImpressionTrackerNative, obj);
 };

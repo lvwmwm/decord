@@ -1,10 +1,10 @@
-// Module ID: 11668
-// Function ID: 90480
+// Module ID: 11695
+// Function ID: 90718
 // Name: PortalAccessibilityWorkaroundView
 // Dependencies: [31, 27, 33, 3994, 2]
 // Exports: default
 
-// Module 11668 (PortalAccessibilityWorkaroundView)
+// Module 11695 (PortalAccessibilityWorkaroundView)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

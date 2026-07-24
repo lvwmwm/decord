@@ -1,10 +1,10 @@
-// Module ID: 10724
-// Function ID: 83451
+// Module ID: 10753
+// Function ID: 83643
 // Name: getNoiseCancellationDeferredToSystem
-// Dependencies: [4177, 10725, 566, 2]
+// Dependencies: [4177, 10754, 566, 2]
 // Exports: useNoiseCancellationDeferredToSystem
 
-// Module 10724 (getNoiseCancellationDeferredToSystem)
+// Module 10753 (getNoiseCancellationDeferredToSystem)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -14,7 +14,7 @@ function getNoiseCancellationDeferredToSystem(arg0) {
     obj = _isNativeReflectConstruct;
   }
   const systemMicrophoneMode = obj.getSystemMicrophoneMode();
-  return !importDefault(10725)(true, systemMicrophoneMode);
+  return !importDefault(10754)(true, systemMicrophoneMode);
 }
 const result = require("initialize").fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");
 

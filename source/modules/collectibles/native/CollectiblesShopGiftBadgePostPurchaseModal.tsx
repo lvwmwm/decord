@@ -1,10 +1,10 @@
-// Module ID: 11830
-// Function ID: 91697
+// Module ID: 11857
+// Function ID: 91935
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [31, 27, 33, 4130, 689, 1557, 4337, 6773, 5484, 7572, 1212, 5119, 4126, 2294, 9806, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1557, 4337, 6773, 5482, 7613, 1212, 5119, 4126, 2294, 9838, 2]
 // Exports: default
 
-// Module 11830 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11857 (CollectiblesShopGiftBadgePostPurchaseModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -54,7 +54,7 @@ export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgre
   obj2.children = intl2.string(importDefault(2294).roVAey);
   items[1] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items;
-  const items1 = [callback2(closure_5, obj), callback(importDefault(9806), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
+  const items1 = [callback2(closure_5, obj), callback(importDefault(9838), { currentProgress: currentProgress.giftBadgeProgress, onSendGift: callback1 })];
   obj.children = items1;
-  return callback2(require(7572) /* ModalScreen */.ModalScreen, obj);
+  return callback2(require(7613) /* ModalScreen */.ModalScreen, obj);
 };

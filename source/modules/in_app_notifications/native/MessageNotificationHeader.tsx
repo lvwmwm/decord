@@ -1,10 +1,10 @@
-// Module ID: 10313
-// Function ID: 79592
+// Module ID: 10342
+// Function ID: 79783
 // Name: LocationText
 // Dependencies: [31, 27, 4122, 3767, 1849, 33, 4130, 689, 4126, 4320, 669, 4629, 4631, 4593, 566, 4660, 1212, 5119, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10313 (LocationText)
+// Module 10342 (LocationText)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

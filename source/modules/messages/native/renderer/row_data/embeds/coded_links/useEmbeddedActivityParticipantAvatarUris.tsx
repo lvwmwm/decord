@@ -1,10 +1,10 @@
-// Module ID: 12291
-// Function ID: 95785
+// Module ID: 12318
+// Function ID: 96025
 // Name: useEmbeddedActivityParticipantAvatarUris
 // Dependencies: [31, 1347, 1849, 1327, 624, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 12291 (useEmbeddedActivityParticipantAvatarUris)
+// Module 12318 (useEmbeddedActivityParticipantAvatarUris)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

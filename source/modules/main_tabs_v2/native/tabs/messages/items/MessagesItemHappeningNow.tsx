@@ -1,10 +1,10 @@
-// Module ID: 14920
-// Function ID: 113706
+// Module ID: 14967
+// Function ID: 114027
 // Name: HappeningNowItem
-// Dependencies: [31, 27, 14183, 33, 1324, 689, 4130, 3834, 14921, 2]
+// Dependencies: [31, 27, 14233, 33, 1324, 689, 4130, 3834, 14968, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 14920 (HappeningNowItem)
+// Module 14967 (HappeningNowItem)
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ const result = set.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messa
 
 export default require("result").memo(function MessagesItemHappeningNow(listRef) {
   let obj = require(3834) /* map */;
-  obj = { style: callback(closure_4 + obj.useToken(importDefault(689).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: jsx(importDefault(14921), obj) };
+  obj = { style: callback(closure_4 + obj.useToken(importDefault(689).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: jsx(importDefault(14968), obj) };
   obj = { cards: set, listRef: listRef.listRef };
   return <View cards={set} listRef={arg0.listRef} />;
 });

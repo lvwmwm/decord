@@ -1,10 +1,10 @@
-// Module ID: 9288
-// Function ID: 72559
+// Module ID: 9324
+// Function ID: 72768
 // Name: ConversationNavigatorHeader
-// Dependencies: [31, 27, 1348, 33, 4130, 689, 566, 4320, 9122, 2]
+// Dependencies: [31, 27, 1348, 33, 4130, 689, 566, 4320, 9158, 2]
 // Exports: default
 
-// Module 9288 (ConversationNavigatorHeader)
+// Module 9324 (ConversationNavigatorHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,6 +45,6 @@ export default function ConversationNavigatorHeader(channelId) {
   obj.subtitle = tmp6;
   obj.variant = "heading-lg/semibold";
   obj.subtitleColor = "text-muted";
-  obj.children = jsx(channelId(9122).GenericHeaderTitle, { title: channelId.title });
+  obj.children = jsx(channelId(9158).GenericHeaderTitle, { title: channelId.title });
   return <View title={arg0.title} />;
 };

@@ -1,5 +1,5 @@
 // Module ID: 5886
-// Function ID: 49783
+// Function ID: 49794
 // Name: AvatarRoseExample
 // Dependencies: [33, 5085, 5887, 2]
 // Exports: AvatarRoseExample

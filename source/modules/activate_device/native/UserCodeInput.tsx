@@ -1,10 +1,10 @@
-// Module ID: 12888
-// Function ID: 100066
+// Module ID: 12940
+// Function ID: 100389
 // Name: UserCodeInput
-// Dependencies: [57, 31, 27, 12889, 33, 4130, 12890, 12891, 4126, 1212, 7512, 4543, 2]
+// Dependencies: [57, 31, 27, 12941, 33, 4130, 12942, 12943, 4126, 1212, 7574, 4543, 2]
 // Exports: UserCodeInput
 
-// Module 12888 (UserCodeInput)
+// Module 12940 (UserCodeInput)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -37,10 +37,10 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   const tmp3 = callback(React.useState(str), 2);
   const first = tmp3[0];
   _require = tmp3[1];
-  let obj = _require(12890);
+  let obj = _require(12942);
   const userCodeSubmit = obj.useUserCodeSubmit(first, onUserCodeAccepted, onClose);
   obj = {};
-  obj = { style: importDefault(12891).innerContent };
+  obj = { style: importDefault(12943).innerContent };
   ({ manualSubmit, error, submitting } = userCodeSubmit);
   const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.text };
   const intl = _require(1212).intl;
@@ -64,7 +64,7 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   const intl3 = _require(1212).intl;
   obj3.placeholder = intl3.formatToPlainString(_require(1212).t["0tbz6x"], { number: OAuthConstants.USER_CODE_LENGTH });
   obj3.errorMessage = error;
-  items1[1] = callback2(_require(7512).TextInput, obj3);
+  items1[1] = callback2(_require(7574).TextInput, obj3);
   const obj5 = { size: "lg" };
   const intl4 = _require(1212).intl;
   obj5.text = intl4.string(_require(1212).t["3PatSz"]);

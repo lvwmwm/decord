@@ -1,10 +1,10 @@
-// Module ID: 12150
-// Function ID: 95153
+// Module ID: 12177
+// Function ID: 95393
 // Name: RemediatedUserNotice
-// Dependencies: [31, 27, 3767, 653, 33, 4130, 689, 8238, 624, 4126, 1212, 8923, 2]
+// Dependencies: [31, 27, 3767, 653, 33, 4130, 689, 8282, 624, 4126, 1212, 8962, 2]
 // Exports: default
 
-// Module 12150 (RemediatedUserNotice)
+// Module 12177 (RemediatedUserNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

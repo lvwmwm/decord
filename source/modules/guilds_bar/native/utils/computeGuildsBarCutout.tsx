@@ -1,10 +1,10 @@
-// Module ID: 14827
-// Function ID: 113174
+// Module ID: 14874
+// Function ID: 113495
 // Name: computeGuildsBarCutout
-// Dependencies: [27, 14813, 1273, 7873, 2]
+// Dependencies: [27, 14860, 1273, 7961, 2]
 // Exports: default
 
-// Module 14827 (computeGuildsBarCutout)
+// Module 14874 (computeGuildsBarCutout)
 import { PixelRatio } from "get ActivityIndicator";
 import { GUILD_ITEM_SIZE } from "GUILD_ITEM_SIZE";
 
@@ -29,7 +29,7 @@ export default function computeGuildsBarCutout(containerSize) {
   }
   const roundToNearestPixelResult = PixelRatio.roundToNearestPixel(BADGE_SIZE + 2 * BADGE_PADDING);
   const roundToNearestPixelResult1 = PixelRatio.roundToNearestPixel(BADGE_SIZE2 + 2 * BADGE_PADDING);
-  const obj = { shape: require(7873) /* SolidCutout */.CutoutShape.RoundedRect, x: 0, y: 0, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2) };
+  const obj = { shape: require(7961) /* SolidCutout */.CutoutShape.RoundedRect, x: 0, y: 0, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2) };
   if ("top-right" === containerSize.position) {
     obj.x = containerSize - roundToNearestPixelResult + BADGE_PADDING;
     obj.y = -BADGE_PADDING;

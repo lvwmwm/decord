@@ -1,10 +1,10 @@
-// Module ID: 11181
-// Function ID: 86937
+// Module ID: 11211
+// Function ID: 87206
 // Name: BannerBase
-// Dependencies: [57, 31, 27, 4122, 33, 689, 4130, 11170, 3991, 1450, 3974, 566, 4542, 4554, 5453, 11182, 4126, 2]
+// Dependencies: [57, 31, 27, 4122, 33, 689, 4130, 11200, 3991, 1450, 3974, 566, 4542, 4554, 5453, 11212, 4126, 2]
 // Exports: default
 
-// Module 11181 (BannerBase)
+// Module 11211 (BannerBase)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -105,7 +105,7 @@ export default function BannerBase(arg0) {
   const items3 = [tmp.bannerBackgroundGradient, { height: first, width: diff }];
   const items4 = [callback2(sharedValue(4554), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 }), , ];
   obj2 = { style: tmp.imageContainer };
-  obj3 = { style: tmp.trinketsLottie, source: _require(11182), autoPlay: !stateFromStores };
+  obj3 = { style: tmp.trinketsLottie, source: _require(11212), autoPlay: !stateFromStores };
   const items5 = [callback2(sharedValue(5453), obj3), image];
   obj2.children = items5;
   items4[1] = callback3(View, obj2);

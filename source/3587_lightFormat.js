@@ -1,5 +1,5 @@
 // Module ID: 3587
-// Function ID: 27766
+// Function ID: 27767
 // Name: lightFormat
 // Dependencies: [3209, 3453, 3372, 3391, 3442, 3210]
 // Exports: default

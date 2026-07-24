@@ -1,15 +1,15 @@
-// Module ID: 10619
-// Function ID: 82820
+// Module ID: 10648
+// Function ID: 83012
 // Name: getScreens
-// Dependencies: [5, 57, 31, 27, 10620, 10211, 653, 10621, 33, 4130, 1450, 10215, 3991, 10622, 10209, 10214, 4345, 4337, 9995, 1934, 1207, 10679, 10010, 3977, 10635, 477, 3842, 4011, 5519, 2]
+// Dependencies: [5, 57, 31, 27, 10649, 10241, 653, 10650, 33, 4130, 1450, 10245, 3991, 10651, 10239, 10244, 4345, 4337, 10027, 1934, 1207, 10708, 10042, 3977, 10664, 477, 3842, 4011, 5517, 2]
 // Exports: default
 
-// Module 10619 (getScreens)
+// Module 10648 (getScreens)
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "context";
-import module_10620 from "module_10620";
+import module_10649 from "module_10649";
 import { ChannelCallScreens } from "BOX_MODE_ACTIONSHEET_WIDTH";
 import { ComponentActions } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_11 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
@@ -41,7 +41,7 @@ function CallWithVoiceChat(channel) {
   let tmp = _createForOfIteratorHelperLoose();
   const result = 2 * translateX(1450)().width;
   const require = result;
-  let obj = require(10215) /* context */;
+  let obj = require(10245) /* context */;
   const voiceChatNavigationContext = obj.useVoiceChatNavigationContext();
   translateX = undefined;
   if (null != voiceChatNavigationContext) {
@@ -138,7 +138,7 @@ function CallWithVoiceChat(channel) {
   let tmp15 = null;
   if (channel.isGuildStageVoice()) {
     obj5 = { channel };
-    tmp15 = callback2(translateX(10622), obj5);
+    tmp15 = callback2(translateX(10651), obj5);
   }
   const items1 = [tmp15, ];
   const items2 = [animatedStyle1, StyleSheet.absoluteFill];
@@ -149,7 +149,7 @@ function CallWithVoiceChat(channel) {
   let tmp21 = null;
   if (tmp9[0]) {
     const obj7 = { channel };
-    tmp21 = callback2(translateX(10209), obj7);
+    tmp21 = callback2(translateX(10239), obj7);
   }
   obj6.children = tmp21;
   items3[1] = callback2(closure_6, obj6);
@@ -158,7 +158,7 @@ function CallWithVoiceChat(channel) {
 }
 function MainCallScreen(channel) {
   channel = channel.channel;
-  let obj = isConnectedToVoiceChannel(10214);
+  let obj = isConnectedToVoiceChannel(10244);
   isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const id = React.useId();
   const items = [isConnectedToVoiceChannel, id];
@@ -197,12 +197,12 @@ function MainCallScreen(channel) {
       dismissOAuthModal();
     };
   }, []);
-  isConnectedToVoiceChannel(10679);
+  isConnectedToVoiceChannel(10708);
   if (isChannelContentGated) {
     obj = { onReturnToSafety: id(4337).pop };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
-    let tmp12Result = callback2(id(10010), obj);
-    const tmp21 = id(10010);
+    let tmp12Result = callback2(id(10042), obj);
+    const tmp21 = id(10042);
   } else {
     if (!tmp8) {
       if (!channel.isVocalThread()) {
@@ -214,7 +214,7 @@ function MainCallScreen(channel) {
     let tmp14 = null;
     if (channel.isGuildStageVoice()) {
       const obj2 = { channel };
-      tmp14 = callback2(id(10622), obj2);
+      tmp14 = callback2(id(10651), obj2);
     }
     obj1.children = tmp14;
     tmp12Result = callback2(closure_6, obj1);
@@ -225,7 +225,7 @@ function MainCallScreen(channel) {
   const obj3 = {};
   const tmp22 = id(3977)();
   const tmp23 = callback2;
-  const tmp24 = id(10635);
+  const tmp24 = id(10664);
   const obj8 = isConnectedToVoiceChannel(477);
   obj3.forceHide = isConnectedToVoiceChannel(477).isAndroid() || !isConnectedToVoiceChannel;
   obj3.showWhenParticipantOnScreen = !isConnectedToVoiceChannel;
@@ -265,6 +265,6 @@ export default function ChannelCallNavigator(channel) {
   }
   obj.value = tmp2;
   obj = { screens: getScreens({ channel }), initialRouteName: ChannelCallScreens.MAIN_CALL_SCREEN };
-  obj.children = callback2(require(5519) /* NavigationStack */.Navigator, obj);
+  obj.children = callback2(require(5517) /* NavigationStack */.Navigator, obj);
   return callback2(importDefault(4011).Provider, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9081
-// Function ID: 71208
+// Module ID: 9119
+// Function ID: 71420
 // Name: isListeningOnSpotify
-// Dependencies: [653, 8311, 4814, 2]
+// Dependencies: [653, 8355, 4814, 2]
 // Exports: default
 
-// Module 9081 (isListeningOnSpotify)
+// Module 9119 (isListeningOnSpotify)
 import ME from "ME";
 import { isSpotifyParty } from "spotifyUtmParams";
 

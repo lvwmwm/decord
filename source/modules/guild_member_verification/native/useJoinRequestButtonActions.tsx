@@ -1,10 +1,10 @@
-// Module ID: 11666
-// Function ID: 90466
+// Module ID: 11693
+// Function ID: 90704
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 57, 31, 1348, 653, 33, 3831, 1212, 5628, 4098, 9160, 3950, 4091, 689, 11667, 1934, 2]
+// Dependencies: [5, 57, 31, 1348, 653, 33, 3831, 1212, 5626, 4098, 9196, 3950, 4091, 689, 11694, 1934, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 11666 (useJoinRequestButtonActions)
+// Module 11693 (useJoinRequestButtonActions)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

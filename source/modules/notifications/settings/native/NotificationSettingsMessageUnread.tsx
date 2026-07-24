@@ -1,10 +1,10 @@
-// Module ID: 10302
-// Function ID: 79524
+// Module ID: 10331
+// Function ID: 79715
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [31, 27, 33, 4130, 689, 10296, 4126, 1212, 4660, 10303, 10294, 4098, 10305, 1934, 10288, 10307, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 10325, 4126, 1212, 4660, 10332, 10323, 4098, 10334, 1934, 10317, 10336, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 10302 (NotificationSettingsMessageUnread)
+// Module 10331 (NotificationSettingsMessageUnread)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ const require = arg1;
 function NotificationSettingsMessageUnread(onPress) {
   const _require = onPress;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(10296);
+  let obj = _require(10325);
   const unreadSelectOptions = obj.getUnreadSelectOptions();
   const found = unreadSelectOptions.find((value) => value.value === onPress.setting);
   obj = { style: onPress.style };
@@ -33,7 +33,7 @@ function NotificationSettingsMessageUnread(onPress) {
   const items1 = [callback2(View, obj), ];
   const obj3 = { onPress: onPress.onCustomize, activeOpacity: 0.6 };
   const obj4 = { style: tmp.card };
-  const items2 = [callback(importDefault(10303), { unreadSetting: onPress.setting }), , ];
+  const items2 = [callback(importDefault(10332), { unreadSetting: onPress.setting }), , ];
   const obj6 = { variant: "text-sm/medium", style: tmp.label };
   let label;
   if (null != found) {
@@ -73,7 +73,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
   const _require = style;
   let obj = {
     style: style.style,
-    setting: _require(10294).useGuildPresetSettings(style.guildId).unread,
+    setting: _require(10323).useGuildPresetSettings(style.guildId).unread,
     onCustomize() {
       let obj = outer1_1(outer1_2[11]);
       obj = { guildId: style.guildId };
@@ -86,7 +86,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
   const _require = style;
   let obj = {
     style: style.style,
-    setting: _require(10288).useChannelPresetSettings(style.channel).unread,
+    setting: _require(10317).useChannelPresetSettings(style.channel).unread,
     onCustomize() {
       let obj = outer1_1(outer1_2[11]);
       obj = { channel: style.channel };

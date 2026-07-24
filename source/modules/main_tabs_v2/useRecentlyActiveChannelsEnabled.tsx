@@ -1,5 +1,5 @@
 // Module ID: 6768
-// Function ID: 53027
+// Function ID: 53049
 // Name: isRecentlyActiveChannelsEnabled
 // Dependencies: [5090, 5089, 2]
 // Exports: isRecentlyActiveChannelsEnabled, useRecentlyActiveChannelsEnabled

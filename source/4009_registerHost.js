@@ -1,5 +1,5 @@
 // Module ID: 4009
-// Function ID: 33274
+// Function ID: 33275
 // Name: registerHost
 // Dependencies: [4010, 4005]
 

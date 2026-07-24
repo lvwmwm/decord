@@ -1,10 +1,10 @@
-// Module ID: 12362
-// Function ID: 96096
+// Module ID: 12389
+// Function ID: 96336
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [3781, 1851, 566, 3776, 5618, 1212, 1920, 2]
+// Dependencies: [3781, 1851, 566, 3776, 5616, 1212, 1920, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12362 (useFormatStringWithCommonPremiumParams)
+// Module 12389 (useFormatStringWithCommonPremiumParams)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 
@@ -22,8 +22,8 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
     if (stateFromStores) {
       const defaultPrice = importDefault(3776).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
       const obj2 = importDefault(3776);
-      str = require(5618) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
-      const obj3 = require(5618) /* formatSingleCurrencyPrice */;
+      str = require(5616) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
+      const obj3 = require(5616) /* formatSingleCurrencyPrice */;
     }
   }
   const replaced = body.replace(/\{price\}/g, str);

@@ -1,5 +1,5 @@
 // Module ID: 6572
-// Function ID: 50812
+// Function ID: 50823
 // Name: StreamingTier8SmallBadge
 // Dependencies: [33, 5085, 6573, 2]
 // Exports: StreamingTier8SmallBadge

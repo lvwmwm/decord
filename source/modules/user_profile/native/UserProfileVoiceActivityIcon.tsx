@@ -1,10 +1,10 @@
-// Module ID: 9084
-// Function ID: 71217
+// Module ID: 9122
+// Function ID: 71429
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [31, 3758, 482, 33, 566, 9085, 4623, 4653, 4654, 4656, 4655, 4658, 2]
+// Dependencies: [31, 3758, 482, 33, 566, 9123, 4623, 4653, 4654, 4656, 4655, 4658, 2]
 // Exports: default
 
-// Module 9084 (UserProfileVoiceActivityIcon)
+// Module 9122 (UserProfileVoiceActivityIcon)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "sum";
@@ -63,5 +63,5 @@ export default function UserProfileVoiceActivityIcon(channel) {
     }
   }
   const merged5 = Object.assign(merged);
-  return jsx(channel(9085).PhoneCallIcon, {});
+  return jsx(channel(9123).PhoneCallIcon, {});
 };

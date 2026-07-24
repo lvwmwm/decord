@@ -1,10 +1,10 @@
-// Module ID: 9947
-// Function ID: 76933
+// Module ID: 9979
+// Function ID: 77127
 // Name: EmojiPickerRowButton
-// Dependencies: [31, 27, 1852, 33, 4130, 689, 3976, 4660, 1212, 8007, 1324, 5151, 1392, 3774, 2]
+// Dependencies: [31, 27, 1852, 33, 4130, 689, 3976, 4660, 1212, 7437, 1324, 5151, 1392, 3774, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 9947 (EmojiPickerRowButton)
+// Module 9979 (EmojiPickerRowButton)
 import result from "result";
 import { Platform } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -55,7 +55,7 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
     str = iconSize;
   }
   obj.size = str;
-  obj.children = jsx(require(8007) /* ReactionIcon */.ReactionIcon, { color: require(3976) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300 });
+  obj.children = jsx(require(7437) /* ReactionIcon */.ReactionIcon, { color: require(3976) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300 });
   return jsx(require(4660) /* PressableBase */.PressableOpacity, { color: require(3976) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300 });
 };
 export const EmojiReactionRowButton = function EmojiReactionRowButton(emojiContainerSize) {

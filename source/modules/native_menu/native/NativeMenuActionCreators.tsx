@@ -1,8 +1,8 @@
-// Module ID: 9669
-// Function ID: 75316
+// Module ID: 9703
+// Function ID: 75528
 // Dependencies: [686, 4099, 4100, 2]
 
-// Module 9669
+// Module 9703
 let result = require("IMPACT_LIGHT").fileFinishedImporting("modules/native_menu/native/NativeMenuActionCreators.tsx");
 
 export default {

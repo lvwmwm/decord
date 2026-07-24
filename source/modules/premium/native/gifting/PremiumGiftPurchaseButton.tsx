@@ -1,10 +1,10 @@
-// Module ID: 9765
-// Function ID: 75952
+// Module ID: 9797
+// Function ID: 76146
 // Name: RewardPreview
-// Dependencies: [31, 27, 8268, 6779, 1874, 1849, 7130, 653, 33, 4130, 689, 5160, 8229, 1873, 1273, 4126, 1212, 4554, 9766, 1456, 8809, 566, 7203, 7453, 7147, 9690, 8776, 8265, 7156, 9680, 8206, 9688, 5085, 7771, 9106, 9693, 5484, 5459, 1920, 4543, 3989, 2]
+// Dependencies: [31, 27, 8312, 6779, 1874, 1849, 7129, 653, 33, 4130, 689, 5160, 8273, 1873, 1273, 4126, 1212, 4554, 9798, 1456, 8848, 566, 7203, 7429, 7146, 9724, 8815, 8309, 7156, 9714, 8250, 9722, 5085, 7533, 9142, 9727, 5482, 1920, 4543, 3989, 2]
 // Exports: default
 
-// Module 9765 (RewardPreview)
+// Module 9797 (RewardPreview)
 import useThemeAndReducedMotionAwareAssetUrl from "useThemeAndReducedMotionAwareAssetUrl";
 import get_ActivityIndicator from "BadgeId";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ function RewardPreview(arg0) {
     const obj1 = { nameplate: null, fullOpacity: true, animate: true };
     let obj8 = require(1873) /* getNameplateData */;
     obj1.nameplate = obj8.getNameplateData(collectiblesItem);
-    obj.children = callback(importDefault(8229), obj1);
+    obj.children = callback(importDefault(8273), obj1);
     const items = [callback(closure_5, obj), , ];
     const obj2 = { style: tmp.singleAvatarContainer };
     const obj3 = { user: currentUser, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.SMALL, "aria-hidden": true };
@@ -48,7 +48,7 @@ function RewardPreview(arg0) {
     items[2] = callback(require(4126) /* Text */.Text, obj4);
     obj.children = items;
     let tmp5Result = callback2(closure_13, obj);
-    const tmp26 = importDefault(8229);
+    const tmp26 = importDefault(8273);
   } else {
     tmp5Result = null;
     if (isAvatarDecorationRecord(collectiblesItem)) {
@@ -70,7 +70,7 @@ function RewardPreview(arg0) {
       const tmp7 = callback;
       obj7.size = require(1273) /* Button */.AvatarSizes.NORMAL;
       obj7.asset = collectiblesItem.asset;
-      obj6.children = callback(importDefault(9766), obj7);
+      obj6.children = callback(importDefault(9798), obj7);
       items1[1] = callback(closure_5, obj6);
       obj8 = { style: tmp.selectedRewardText, variant: "text-xs/medium", color: "text-overlay-light" };
       const intl = require(1212) /* getSystemLocale */.intl;
@@ -78,7 +78,7 @@ function RewardPreview(arg0) {
       items1[2] = callback(require(4126) /* Text */.Text, obj8);
       obj.children = items1;
       tmp5Result = tmp5(tmp6, obj);
-      const tmp16 = importDefault(9766);
+      const tmp16 = importDefault(9798);
     }
   }
   return tmp5Result;
@@ -160,7 +160,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   let tmp = callback3(importDefault(5160)().insets.bottom);
   let obj = defaultSelection(1456);
   importDefault = obj.useNavigation();
-  let obj1 = defaultSelection(8809);
+  let obj1 = defaultSelection(8848);
   const nativeGiftContext = obj1.useNativeGiftContext();
   ({ onPurchase: dependencyMap, isPurchasing, allRewards: c3, claimableRewards } = nativeGiftContext);
   const selectedGiftingPromotionReward = nativeGiftContext.selectedGiftingPromotionReward;
@@ -188,7 +188,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   if (null != stateFromStores1) {
     assetVariant = stateFromStores1.assetVariant;
   }
-  let inAppFlowImageLargeTilted = assetVariant === defaultSelection(7147).GiftCustomizationBanner_AssetVariant.LARGE_TILTED;
+  let inAppFlowImageLargeTilted = assetVariant === defaultSelection(7146).GiftCustomizationBanner_AssetVariant.LARGE_TILTED;
   let tmp7 = null != claimableRewards;
   if (tmp7) {
     tmp7 = claimableRewards.length > 0;
@@ -199,13 +199,13 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
     tmp8 = 1 === claimableRewards.length;
   }
   c9 = tmp8;
-  const tmp9 = importDefault(9690)();
+  const tmp9 = importDefault(9724)();
   let tmp10 = tmp9;
   if (tmp9) {
     tmp10 = null == selectedGiftingPromotionReward;
   }
   c10 = tmp10;
-  const GiftingBadgeExperiment = defaultSelection(8776).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = defaultSelection(8815).GiftingBadgeExperiment;
   let obj5 = defaultSelection(566);
   const items2 = [setSelectedGiftingPromotionReward];
   const stateFromStoresObject = obj5.useStateFromStoresObject(items2, () => {
@@ -239,7 +239,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
     items4[1] = String(importDefault(689).colors.BACKGROUND_BRAND);
     tmp13 = items4;
   }
-  let obj6 = defaultSelection(8206);
+  let obj6 = defaultSelection(8250);
   const product = obj6.useFetchCollectiblesProduct(selectedGiftingPromotionReward).product;
   const intl = defaultSelection(1212).intl;
   const string = intl.string;
@@ -253,13 +253,13 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   if (tmp10) {
     str = "primary";
   }
-  let obj7 = defaultSelection(9688);
+  let obj7 = defaultSelection(9722);
   let prop;
   if (null != stateFromStores1) {
     prop = stateFromStores1.mobileBackgroundAsset;
   }
   const themeAndReducedMotionAwareAssetUrl = obj7.useThemeAndReducedMotionAwareAssetUrl(prop);
-  let obj8 = defaultSelection(9688);
+  let obj8 = defaultSelection(9722);
   let asset;
   if (null != stateFromStores1) {
     asset = stateFromStores1.asset;
@@ -337,7 +337,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
       const intl4 = defaultSelection(1212).intl;
       const obj9 = { paidURL: importDefault(1920).getArticleURL(navigateToRewardSelection.PAID_TERMS) };
       obj8.children = intl4.format(defaultSelection(1212).t.hYoGUM, obj9);
-      tmp66 = callback(defaultSelection(5459).TextWithIOSLinkWorkaround, obj8);
+      tmp66 = callback(defaultSelection(4126).Text, obj8);
       const obj27 = importDefault(1920);
     }
     items8[1] = tmp66;
@@ -350,7 +350,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
     let fn;
     if (!isPurchasing) {
       fn = () => {
-        defaultSelection(outer1_2[40]).dismissKeyboard();
+        defaultSelection(outer1_2[39]).dismissKeyboard();
         if (c10) {
           if (c8) {
             navigateToRewardSelection();
@@ -386,13 +386,13 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         if (!tmp8) {
           const obj14 = { variant: "tertiary", size: "sm" };
           const obj15 = { size: "sm" };
-          obj14.icon = callback(defaultSelection(9106).PencilIcon, obj15);
+          obj14.icon = callback(defaultSelection(9142).PencilIcon, obj15);
           const intl2 = defaultSelection(1212).intl;
           obj14.accessibilityLabel = intl2.string(defaultSelection(1212).t.bt75uw);
           obj14.onPress = function onPress() {
             navigateToRewardSelection(selectedGiftingPromotionReward);
           };
-          tmp39 = callback(defaultSelection(7771).IconButton, obj14);
+          tmp39 = callback(defaultSelection(7533).IconButton, obj14);
         }
         items9[1] = tmp39;
         obj11.children = items9;
@@ -418,10 +418,10 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
       }
       obj16.nextTierName = str2;
       obj16.nextTierIcon = nextTier.simple_icon_url;
-      obj16.analyticsLocation = importDefault(5484).PREMIUM_GIFT_CUSTOMIZATION;
-      tmp32Result = callback(importDefault(9693), obj16);
+      obj16.analyticsLocation = importDefault(5482).PREMIUM_GIFT_CUSTOMIZATION;
+      tmp32Result = callback(importDefault(9727), obj16);
       const tmp26 = callback;
-      const tmp29 = importDefault(9693);
+      const tmp29 = importDefault(9727);
     }
   }
 };

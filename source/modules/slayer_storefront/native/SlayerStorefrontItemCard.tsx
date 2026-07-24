@@ -1,10 +1,10 @@
-// Module ID: 8212
-// Function ID: 64923
+// Module ID: 8256
+// Function ID: 65151
 // Name: SlayerStorefrontItemCard
-// Dependencies: [31, 27, 33, 4130, 689, 5611, 8213, 6784, 5085, 4554, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5609, 8257, 6784, 5085, 4554, 2]
 // Exports: default
 
-// Module 8212 (SlayerStorefrontItemCard)
+// Module 8256 (SlayerStorefrontItemCard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

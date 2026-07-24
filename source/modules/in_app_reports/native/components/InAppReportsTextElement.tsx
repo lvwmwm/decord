@@ -1,10 +1,10 @@
-// Module ID: 7619
-// Function ID: 61060
+// Module ID: 7708
+// Function ID: 61346
 // Name: TextElement
 // Dependencies: [31, 27, 33, 4130, 4562, 4126, 2]
 // Exports: default
 
-// Module 7619 (TextElement)
+// Module 7708 (TextElement)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

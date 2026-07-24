@@ -1,5 +1,5 @@
 // Module ID: 5668
-// Function ID: 48682
+// Function ID: 48692
 // Name: getGuildModeratorReportChannelId
 // Dependencies: [2]
 // Exports: default

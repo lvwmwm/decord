@@ -1,10 +1,10 @@
-// Module ID: 12480
-// Function ID: 96736
+// Module ID: 12533
+// Function ID: 97059
 // Name: getViewerProductId
-// Dependencies: [31, 6663, 5621, 1851, 6648, 5624, 477, 5618, 3791, 566, 2]
+// Dependencies: [31, 6663, 5619, 1851, 6648, 5622, 477, 5616, 3791, 566, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12480 (getViewerProductId)
+// Module 12533 (getViewerProductId)
 import result from "result";
 import { useNativeCheckoutStore } from "context";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -49,7 +49,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
           let tmp6 = getViewerProductId(subscription);
           let tmp8 = null;
           if (null != tmp6) {
-            tmp8 = _require(5624).AppStorePremiumProductIdsToPremiumBundledItems[tmp6];
+            tmp8 = _require(5622).AppStorePremiumProductIdsToPremiumBundledItems[tmp6];
           }
           let tmp11 = null != tmp8 && tmp8.basePlanId === plan.basePlanId;
           if (tmp11) {
@@ -80,7 +80,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
                   result = diff / 100;
                 }
                 obj1 = {};
-                let obj6 = _require(5618);
+                let obj6 = _require(5616);
                 const obj2 = { convertToMajorUnits: false };
                 obj1.priceString = obj6.formatPrice(result, first.currencyCode, obj2);
                 obj1.failure = null;
@@ -106,10 +106,10 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
           if (addOnPrice.majorUnits > 0) {
             const obj5 = {};
             obj6 = { convertToMajorUnits: false };
-            obj5.priceString = _require(5618).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, obj6);
+            obj5.priceString = _require(5616).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, obj6);
             obj5.failure = null;
             tmp20 = obj5;
-            const obj12 = _require(5618);
+            const obj12 = _require(5616);
           }
         }
         tmp20 = closure_7;

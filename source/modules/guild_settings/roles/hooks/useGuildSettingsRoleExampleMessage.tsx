@@ -1,10 +1,10 @@
-// Module ID: 16324
-// Function ID: 127392
+// Module ID: 16371
+// Function ID: 127716
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [31, 1857, 653, 4351, 6995, 1212, 7889, 16325, 2]
+// Dependencies: [31, 1857, 653, 4351, 6994, 1212, 7976, 16372, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 16324 (useGuildSettingsRoleExampleMessage)
+// Module 16371 (useGuildSettingsRoleExampleMessage)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MessageStates } from "ME";

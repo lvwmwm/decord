@@ -1,5 +1,5 @@
 // Module ID: 5966
-// Function ID: 49903
+// Function ID: 49914
 // Name: CompassSpotIllustration
 // Dependencies: [33, 5085, 5967, 2]
 // Exports: CompassSpotIllustration

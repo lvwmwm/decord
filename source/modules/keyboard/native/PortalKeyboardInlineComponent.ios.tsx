@@ -1,9 +1,9 @@
-// Module ID: 11669
-// Function ID: 90482
+// Module ID: 11696
+// Function ID: 90720
 // Name: customKeyboardWillHide
-// Dependencies: [31, 27, 4122, 3996, 1823, 5784, 1555, 4559, 3997, 3989, 4000, 11156, 2]
+// Dependencies: [31, 27, 4122, 3996, 1823, 5784, 1555, 4559, 3997, 3989, 4000, 11186, 2]
 
-// Module 11669 (customKeyboardWillHide)
+// Module 11696 (customKeyboardWillHide)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -66,7 +66,7 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
               let obj = messagesRef(3997);
               const result = obj.handlePortalKeyboardOpen(outer1_1);
               outer1_7.current = true;
-              obj = { viewHandle, height: messagesRef(11156).getKeyboardActionSheetHeight().minimum };
+              obj = { viewHandle, height: messagesRef(11186).getKeyboardActionSheetHeight().minimum };
               const DCDChatManager = keyboardContextForType.DCDChatManager;
               const result1 = DCDChatManager.customKeyboardWillShow(obj.viewHandle, obj.height, 0.25, 7);
             });

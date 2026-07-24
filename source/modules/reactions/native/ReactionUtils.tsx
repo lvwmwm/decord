@@ -1,10 +1,10 @@
-// Module ID: 9315
-// Function ID: 72829
+// Module ID: 9351
+// Function ID: 73038
 // Name: handleOutOfSuperReactions
-// Dependencies: [1348, 4349, 3947, 1849, 653, 1852, 33, 3769, 4099, 4100, 7005, 3776, 4098, 9316, 1934, 3989, 9326, 7006, 4324, 9427, 9436, 9437, 9438, 8007, 8009, 4470, 1212, 4126, 2]
+// Dependencies: [1348, 4349, 3947, 1849, 653, 1852, 33, 3769, 4099, 4100, 7004, 3776, 4098, 9352, 1934, 3989, 9362, 7005, 4324, 9463, 9472, 9473, 9474, 7437, 7483, 4470, 1212, 4126, 2]
 // Exports: handleAddNewReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 9315 (handleOutOfSuperReactions)
+// Module 9351 (handleOutOfSuperReactions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ function handleOutOfSuperReactions(onDismiss) {
     let openLazyResult;
     if (!obj.isPremium(currentUser)) {
       obj = { onDismiss };
-      openLazyResult = importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9316, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
+      openLazyResult = importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9352, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
       const obj2 = importDefault(4098);
     }
     return openLazyResult;
@@ -131,7 +131,7 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
         const obj1 = { messageId, channelId, emoji: isPoll.emoji };
         const obj7 = importDefault(4098);
         const merged2 = Object.assign(merged);
-        obj7.openLazy(require(1934) /* maybeLoadBundle */(9427, dependencyMap.paths), "MessageReactions", obj1);
+        obj7.openLazy(require(1934) /* maybeLoadBundle */(9463, dependencyMap.paths), "MessageReactions", obj1);
       }
     }
     const FORUM_CHANNEL_POST = constants3.FORUM_CHANNEL_POST;
@@ -141,7 +141,7 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
   let obj = importDefault(4098);
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(9436, dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(9472, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;

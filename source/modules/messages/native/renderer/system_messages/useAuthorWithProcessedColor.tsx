@@ -1,10 +1,10 @@
-// Module ID: 7649
-// Function ID: 61224
+// Module ID: 7738
+// Function ID: 61510
 // Name: getMessageAuthorWithProcessedColor
-// Dependencies: [27, 4360, 7650, 2]
+// Dependencies: [27, 4360, 7739, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 7649 (getMessageAuthorWithProcessedColor)
+// Module 7738 (getMessageAuthorWithProcessedColor)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("processColorStringsInternal").fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
@@ -22,7 +22,7 @@ export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithP
     tmp2 = processColor(colorString);
   }
   obj.colorString = tmp2;
-  obj.colorStrings = require(7650) /* processColorStringsInternal */.processColorStrings(colorStrings);
+  obj.colorStrings = require(7739) /* processColorStringsInternal */.processColorStrings(colorStrings);
   obj.guildId = guildId;
   return obj;
 };
@@ -39,7 +39,7 @@ export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcess
     tmp2 = processColor(colorString);
   }
   obj.colorString = tmp2;
-  obj.colorStrings = require(7650) /* processColorStringsInternal */.processColorStrings(colorStrings);
+  obj.colorStrings = require(7739) /* processColorStringsInternal */.processColorStrings(colorStrings);
   obj.guildId = guildId;
   return obj;
 };

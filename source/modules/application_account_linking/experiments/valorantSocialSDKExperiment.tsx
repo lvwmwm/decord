@@ -1,5 +1,5 @@
 // Module ID: 4158
-// Function ID: 35142
+// Function ID: 35143
 // Name: getIsValorantSocialSDKEnabled
 // Dependencies: [1428, 2]
 // Exports: getIsValorantSocialSDKEnabled

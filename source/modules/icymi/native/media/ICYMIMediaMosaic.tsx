@@ -1,10 +1,10 @@
-// Module ID: 15224
-// Function ID: 116082
+// Module ID: 15271
+// Function ID: 116404
 // Name: isMediaSourceGif
-// Dependencies: [57, 31, 27, 4122, 1348, 3767, 1849, 8306, 653, 33, 4130, 689, 4317, 668, 566, 8298, 8302, 3991, 4131, 15225, 5085, 4126, 1212, 8286, 4674, 4660, 8321, 10717, 4658, 15180, 8276, 7087, 1327, 22, 5069, 8274, 4320, 2]
+// Dependencies: [57, 31, 27, 4122, 1348, 3767, 1849, 8350, 653, 33, 4130, 689, 4317, 668, 566, 8342, 8346, 3991, 4131, 15272, 5085, 4126, 1212, 8330, 4674, 4660, 8365, 10746, 4658, 15227, 8320, 7086, 1327, 22, 5069, 8318, 4320, 2]
 // Exports: default
 
-// Module 15224 (isMediaSourceGif)
+// Module 15271 (isMediaSourceGif)
 import _slicedToArray from "_slicedToArray";
 import MessageEmbedTypes from "MessageEmbedTypes";
 import get_ActivityIndicator from "VoiceXIcon";
@@ -45,11 +45,11 @@ function MediaMosaicVideo(source) {
   let obj = require(566) /* initialize */;
   const items = [closure_11];
   let isGIFV = obj.useStateFromStores(items, () => outer1_11.videosMuted());
-  const rnvHttpEngine = require(8298) /* apexExperiment */.useRnvHttpEngine();
+  const rnvHttpEngine = require(8342) /* apexExperiment */.useRnvHttpEngine();
   obj = {};
   obj = {};
   let uri = source.videoURI;
-  const obj2 = require(8298) /* apexExperiment */;
+  const obj2 = require(8342) /* apexExperiment */;
   const tmp3 = closure_15;
   if (null == uri) {
     uri = source.sourceURI;
@@ -73,7 +73,7 @@ function MediaMosaicVideo(source) {
   }
   obj.disableFocus = isGIFV;
   obj.httpEngine = rnvHttpEngine;
-  return tmp3(importDefault(8302), obj);
+  return tmp3(importDefault(8346), obj);
 }
 function MediaMosaicImage(source) {
   let dimensions;
@@ -105,7 +105,7 @@ function MediaMosaicImage(source) {
   obj = {};
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
-      const obj = { uri: source(15225).createThumbhashImageFromPlaceholder(source.placeholder) };
+      const obj = { uri: source(15272).createThumbhashImageFromPlaceholder(source.placeholder) };
       ({ width: obj.width, height: obj.height } = source);
       return obj;
     }
@@ -397,7 +397,7 @@ class GravityAttachmentMediaMosaic {
     items = [, ];
     items[0] = length;
     items[1] = sources;
-    tmp = f116108();
+    tmp = f116430();
     memo = MessageEmbedTypes.useMemo(() => {
       let sum;
       const items = [];
@@ -487,7 +487,7 @@ class GravityAttachmentMediaMosaic {
 }
 function useMaxWidth(widthOverride) {
   let diff = widthOverride;
-  const context = React.useContext(require(15180) /* useICYMIContextConstructor */.ICYMIContext);
+  const context = React.useContext(require(15227) /* useICYMIContextConstructor */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (null != context) {

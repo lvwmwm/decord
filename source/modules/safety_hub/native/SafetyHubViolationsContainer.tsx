@@ -1,10 +1,10 @@
-// Module ID: 13658
-// Function ID: 104879
+// Module ID: 13709
+// Function ID: 105203
 // Name: SafetyHubViolationsHeader
-// Dependencies: [57, 31, 27, 11026, 7544, 653, 33, 4130, 689, 8474, 7576, 4126, 1212, 12506, 8525, 7543, 21, 13659, 7545, 4337, 11023, 1934, 11033, 566, 675, 11031, 2]
+// Dependencies: [57, 31, 27, 11053, 7589, 653, 33, 4130, 689, 8518, 7631, 4126, 1212, 12559, 8570, 7588, 21, 13710, 7590, 4337, 11050, 1934, 11060, 566, 675, 11058, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 13658 (SafetyHubViolationsHeader)
+// Module 13709 (SafetyHubViolationsHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -36,7 +36,7 @@ function SafetyHubViolationsHeader(count) {
   const colors = importDefault(689).colors;
   obj.color = "active" === status ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED;
   obj.size = "xs";
-  obj.children = closure_11(require(7576) /* WarningIcon */.WarningIcon, obj);
+  obj.children = closure_11(require(7631) /* WarningIcon */.WarningIcon, obj);
   const items2 = [closure_11(closure_6, obj), , ];
   const obj1 = { style: items3 };
   items3 = [tmp.headerTextContainer];
@@ -67,14 +67,14 @@ function SafetyHubViolationsHeader(count) {
   obj1.children = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp15(12506).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp15(12559).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp15(8525).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp15(8570).ChevronSmallDownIcon;
   }
   const items5 = [tmp.chevron];
   items2[2] = closure_11(ChevronSmallDownIcon, { size: "md", style: items5 });
   obj.children = items2;
-  return closure_12(importDefault(8474), obj);
+  return closure_12(importDefault(8518), obj);
 }
 function EmptyActiveState() {
   let obj = {};
@@ -103,7 +103,7 @@ function EmptyExpiredState() {
 }
 function RelativeIncidentTime(timestamp) {
   let obj = { style: _createForOfIteratorHelperLoose().incidentDate };
-  obj = { variant: "text-xs/medium", children: require(7543) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp) };
+  obj = { variant: "text-xs/medium", children: require(7588) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp) };
   obj.children = callback(require(4126) /* Text */.Text, obj);
   return callback(closure_6, obj);
 }
@@ -218,7 +218,7 @@ class SafetyHubViolationsContainer {
     items = [];
     items[0] = c7;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f104890 = stateFromStores;
+    f105214 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
@@ -253,7 +253,7 @@ class SafetyHubViolationsContainer {
     obj1.opened = first;
     obj1.count = classifications.length;
     tmp9 = jsxs;
-    tmp10 = f104890;
+    tmp10 = f105214;
     items4 = [, ];
     items4[0] = jsx(SafetyHubViolationsHeader, obj1);
     if (first) {
@@ -264,9 +264,9 @@ class SafetyHubViolationsContainer {
       items5[0] = tmp.separator;
       obj3.style = items5;
       tmp11 = jsxs;
-      tmp12 = f104890;
+      tmp12 = f105214;
       items6 = [, , , , ];
-      items6[0] = jsx(f104890, obj3);
+      items6[0] = jsx(f105214, obj3);
       tmp14 = memo.length > 0 && memo.map((classification) => outer1_11(outer1_20, { classification }, classification.id));
       items6[1] = tmp14;
       tmp15 = memo.length < classifications.length;
@@ -275,15 +275,15 @@ class SafetyHubViolationsContainer {
         tmp17 = Fragment;
         obj4 = {};
         tmp18 = jsx;
-        tmp19 = f104890;
+        tmp19 = f105214;
         obj5 = {};
         items7 = [];
         items7[0] = tmp.separator;
         obj5.style = items7;
         items8 = [, ];
-        items8[0] = jsx(f104890, obj5);
+        items8[0] = jsx(f105214, obj5);
         tmp20 = jsx;
-        tmp21 = f104890;
+        tmp21 = f105214;
         obj6 = {};
         items9 = [];
         items9[0] = tmp.moreButtonContainer;
@@ -311,7 +311,7 @@ class SafetyHubViolationsContainer {
         obj8.children = intl.format(require("getSystemLocale").t["9Ml56H"], obj9);
         obj7.children = jsx(require("Text").Text, obj8);
         obj6.children = jsx(Pressable, obj7);
-        items8[1] = jsx(f104890, obj6);
+        items8[1] = jsx(f105214, obj6);
         obj4.children = items8;
         tmp15 = jsxs(Fragment, obj4);
       }
@@ -383,9 +383,9 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/s
 
 export default SafetyHubViolationsContainer;
 export const ConnectedSafetyHubViolationsContainer = function ConnectedSafetyHubViolationsContainer() {
-  let obj = require(11031) /* useSafetyHubClassifications */;
+  let obj = require(11058) /* useSafetyHubClassifications */;
   const activeSafetyHubClassifications = obj.useActiveSafetyHubClassifications();
-  let obj1 = require(11031) /* useSafetyHubClassifications */;
+  let obj1 = require(11058) /* useSafetyHubClassifications */;
   const expiredSafetyHubClassifications = obj1.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     obj = {};

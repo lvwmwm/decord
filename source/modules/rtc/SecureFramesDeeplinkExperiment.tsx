@@ -1,10 +1,10 @@
-// Module ID: 8906
-// Function ID: 70291
+// Module ID: 8945
+// Function ID: 70506
 // Name: items
 // Dependencies: [4043, 2]
 // Exports: getSecureFramesDeeplinkExperiment, useSecureFramesDeeplinkExperiment
 
-// Module 8906 (items)
+// Module 8945 (items)
 let obj = { kind: "user", id: "2024-09_secure_frames_deeplink", label: "Secure Frames Deeplinks", defaultConfig: { enabled: false } };
 obj = { id: 1, label: "Enabled.", config: { enabled: true } };
 const items = [obj];

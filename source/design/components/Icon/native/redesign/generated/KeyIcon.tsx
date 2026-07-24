@@ -1,10 +1,10 @@
-// Module ID: 9210
-// Function ID: 72101
+// Module ID: 9246
+// Function ID: 72310
 // Name: KeyIcon
-// Dependencies: [31, 33, 689, 3833, 9211, 2]
+// Dependencies: [31, 33, 689, 3833, 9247, 2]
 // Exports: KeyIcon
 
-// Module 9210 (KeyIcon)
+// Module 9246 (KeyIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const KeyIcon = function KeyIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9211) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9247) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9211) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9247) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

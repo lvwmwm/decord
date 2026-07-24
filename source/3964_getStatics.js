@@ -1,5 +1,5 @@
 // Module ID: 3964
-// Function ID: 32821
+// Function ID: 32822
 // Name: getStatics
 // Dependencies: [3962]
 

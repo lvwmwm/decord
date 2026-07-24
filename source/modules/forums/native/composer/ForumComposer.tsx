@@ -1,10 +1,10 @@
-// Module ID: 9549
-// Function ID: 74379
+// Module ID: 9585
+// Function ID: 74588
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1278, 4468, 1917, 3758, 1906, 6928, 4467, 1849, 653, 1355, 1345, 1314, 1211, 482, 33, 4130, 689, 5464, 566, 3976, 3996, 7934, 4320, 9137, 6924, 5654, 3969, 5160, 3991, 7019, 4138, 6691, 22, 9139, 7596, 9550, 9551, 4471, 1212, 9552, 9554, 477, 9555, 9556, 9559, 1334, 9560, 1934, 9561, 9562, 7495, 1273, 7936, 1555, 1454, 9004, 8492, 9565, 4126, 9566, 9637, 9642, 9643, 8729, 9644, 9648, 5788, 9855, 4644, 9652, 7009, 4098, 9857, 8007, 4543, 4629, 2]
+// Dependencies: [5, 57, 31, 27, 1278, 4468, 1917, 3758, 1906, 6927, 4467, 1849, 653, 1355, 1345, 1314, 1211, 482, 33, 4130, 689, 5462, 566, 3976, 3996, 8021, 4320, 9173, 6923, 5654, 3969, 5160, 3991, 7018, 4138, 6691, 22, 9175, 7685, 9586, 9587, 4471, 1212, 9588, 9590, 477, 9591, 9592, 9595, 1334, 9596, 1934, 9597, 9598, 7636, 1273, 8023, 1555, 1454, 9043, 8537, 9601, 4126, 9602, 9673, 9678, 9679, 7512, 9680, 9682, 5788, 9887, 4644, 9686, 7008, 4098, 9889, 7437, 4543, 4629, 2]
 // Exports: default
 
-// Module 9549 (_createForOfIteratorHelperLoose)
+// Module 9585 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import KeyboardTypes from "KeyboardTypes";
 import useSafeAreaInsetsKeyboardAware from "useSafeAreaInsetsKeyboardAware";
@@ -127,7 +127,7 @@ function Tags(tags) {
     let obj = { style: tmp.tags };
     obj = { size: "sm", style: tmp.tagIcon };
     let items = [
-      callback(require(8729) /* TagIcon */.TagIcon, obj),
+      callback(require(7512) /* TagIcon */.TagIcon, obj),
       tags.map((id) => {
           let obj = {};
           let tmp2 = 0 !== arg1;
@@ -211,7 +211,7 @@ function ActionBar(channel) {
   items2 = [tmp.actionsContainer, { marginBottom: importDefault(5160)({ includeKeyboardHeight: true }).insets.bottom }];
   if (tmp6) {
     obj = { attachments: stateFromStores, channelId: channel.id, highlightThumbnails: true };
-    tmp6 = callback(importDefault(9648), obj);
+    tmp6 = callback(importDefault(9682), obj);
   }
   const items3 = [tmp6, ];
   obj1 = { style: tmp.actions };
@@ -224,7 +224,7 @@ function ActionBar(channel) {
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2.style = items5;
-      obj2.IconComponent = channel(8729).TagIcon;
+      obj2.IconComponent = channel(7512).TagIcon;
       obj2.onPress = function onPress() {
         isEdit.dismiss();
         let obj = outer1_1(outer1_2[75]);
@@ -247,13 +247,13 @@ function ActionBar(channel) {
       tmp8 = callback(channel(5788).HeaderActionButton, obj2);
     }
     items4[1] = tmp8;
-    let tmp28 = lastInput === channel(9554).PostComposerInputs.CONTENT;
+    let tmp28 = lastInput === channel(9590).PostComposerInputs.CONTENT;
     if (tmp28) {
       const obj3 = {};
       const intl3 = channel(1212).intl;
       obj3.accessibilityLabel = intl3.string(channel(1212).t.iZ7Mz9);
       obj3.style = tmp.actionButton;
-      obj3.IconComponent = channel(8007).ReactionIcon;
+      obj3.IconComponent = channel(7437).ReactionIcon;
       obj3.onPress = onShowExpressionPicker;
       obj3.foregroundRipple = true;
       tmp28 = callback(channel(5788).HeaderActionButton, obj3);
@@ -296,7 +296,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7.style = items6;
     if (tmp5) {
-      let ImageIcon = tmp20(9855).KeyboardIcon;
+      let ImageIcon = tmp20(9887).KeyboardIcon;
     } else {
       ImageIcon = tmp20(4644).ImageIcon;
     }

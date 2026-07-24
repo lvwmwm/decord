@@ -1,5 +1,5 @@
 // Module ID: 3742
-// Function ID: 28574
+// Function ID: 28575
 // Name: getLocalizedLink
 // Dependencies: [1212, 2]
 // Exports: default

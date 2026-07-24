@@ -1,10 +1,10 @@
-// Module ID: 11284
-// Function ID: 87798
+// Module ID: 11313
+// Function ID: 88038
 // Name: LayoutAnimation
 // Dependencies: [57, 31, 4131, 3991, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 11284 (LayoutAnimation)
+// Module 11313 (LayoutAnimation)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

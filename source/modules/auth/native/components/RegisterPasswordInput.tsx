@@ -1,9 +1,9 @@
-// Module ID: 14758
-// Function ID: 112584
+// Module ID: 14805
+// Function ID: 112905
 // Name: PasswordStrength
-// Dependencies: [29, 57, 31, 9196, 14731, 33, 4130, 689, 3991, 14755, 1212, 4126, 14749, 9209, 566, 3813, 7512, 3838, 9218, 8738, 2]
+// Dependencies: [29, 57, 31, 9232, 14778, 33, 4130, 689, 3991, 14802, 1212, 4126, 14796, 9245, 566, 3813, 7574, 3838, 9254, 8777, 2]
 
-// Module 14758 (PasswordStrength)
+// Module 14805 (PasswordStrength)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -33,17 +33,17 @@ function PasswordStrength(passwordScore) {
     if (isPasswordFocused) {
       if (0 !== password.length) {
         if (null == passwordError) {
-          if (passwordScore <= require(14755) /* PasswordScore */.PasswordScore.WEAK) {
+          if (passwordScore <= require(14802) /* PasswordScore */.PasswordScore.WEAK) {
             const intl2 = require(1212) /* getSystemLocale */.intl;
             let str = intl2.string(require(1212) /* getSystemLocale */.t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === require(14755) /* PasswordScore */.PasswordScore.MEDIUM) {
+          } else if (passwordScore === require(14802) /* PasswordScore */.PasswordScore.MEDIUM) {
             const intl = require(1212) /* getSystemLocale */.intl;
             str = intl.string(require(1212) /* getSystemLocale */.t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === require(14755) /* PasswordScore */.PasswordScore.STRONG) {
+            if (passwordScore === require(14802) /* PasswordScore */.PasswordScore.STRONG) {
               const intl4 = require(1212) /* getSystemLocale */.intl;
               str = intl4.string(require(1212) /* getSystemLocale */.t.Xraqqc);
               strong = tmp.strong;

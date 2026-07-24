@@ -1,5 +1,5 @@
 // Module ID: 3409
-// Function ID: 26617
+// Function ID: 26618
 // Name: endOfDay
 // Dependencies: [3209, 3210]
 // Exports: default

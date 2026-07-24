@@ -1,10 +1,10 @@
-// Module ID: 9355
-// Function ID: 73055
+// Module ID: 9391
+// Function ID: 73264
 // Name: ShinyButton
-// Dependencies: [31, 33, 4130, 689, 4544, 1273, 9356, 2]
+// Dependencies: [31, 33, 4130, 689, 4544, 1273, 9392, 2]
 // Exports: default
 
-// Module 9355 (ShinyButton)
+// Module 9391 (ShinyButton)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -40,14 +40,14 @@ export default function ShinyButton(style) {
   obj.disabled = disabled;
   let tmp6Result;
   if (!loading) {
-    obj = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9356) };
+    obj = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9392) };
     const items1 = [tmp3.sparkleIcon, ];
     if (disabled) {
       disabled = tmp3.disabled;
     }
     items1[1] = disabled;
     obj.style = items1;
-    tmp6Result = jsx(require(1273) /* Button */.Icon, { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9356) });
+    tmp6Result = jsx(require(1273) /* Button */.Icon, { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9392) });
     const tmp6 = jsx;
   }
   obj.icon = tmp6Result;

@@ -1,8 +1,8 @@
-// Module ID: 9663
-// Function ID: 75271
-// Dependencies: [653, 621, 675, 682, 9664, 477, 2]
+// Module ID: 9697
+// Function ID: 75483
+// Dependencies: [653, 621, 675, 682, 9698, 477, 2]
 
-// Module 9663
+// Module 9697
 import { AnalyticEvents } from "ME";
 import keys from "keys";
 
@@ -95,14 +95,14 @@ export default {
                     })(edges);
                   }
           };
-          lastAssetIndex(9664)(obj);
+          lastAssetIndex(9698)(obj);
         }
       }
     }
   },
   refreshAssets(batchSize) {
     batchSize = batchSize.batchSize;
-    importDefault(9664)({
+    importDefault(9698)({
       batchSize,
       extensions: batchSize.extensions,
       onFetched(edges) {

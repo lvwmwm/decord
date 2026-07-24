@@ -1,10 +1,10 @@
-// Module ID: 15590
-// Function ID: 120198
+// Module ID: 15637
+// Function ID: 120520
 // Name: getOverviewSettings
-// Dependencies: [31, 7662, 33, 1212, 1327, 3776, 10095, 13551, 2]
+// Dependencies: [31, 7751, 33, 1212, 1327, 3776, 10127, 13602, 2]
 // Exports: default
 
-// Module 15590 (getOverviewSettings)
+// Module 15637 (getOverviewSettings)
 import result from "result";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -87,5 +87,5 @@ export default function SettingsOverviewScreen() {
     obj = { isPremiumUser: hasPremiumSubscriptionToDisplay };
     return obj.createList(obj);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(13551).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(13602).SearchableSettingsList, { node });
 };

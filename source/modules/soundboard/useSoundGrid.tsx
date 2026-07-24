@@ -1,10 +1,10 @@
-// Module ID: 15748
-// Function ID: 121507
+// Module ID: 15795
+// Function ID: 121829
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1838, 3758, 1849, 4578, 4579, 1851, 4585, 4022, 15749, 566, 3776, 15750, 8402, 15751, 2]
+// Dependencies: [57, 31, 1838, 3758, 1849, 4578, 4579, 1851, 4585, 4022, 15796, 566, 3776, 15797, 8446, 15798, 2]
 // Exports: default, useSearchCategories
 
-// Module 15748 (_createForOfIteratorHelperLoose)
+// Module 15795 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -165,7 +165,7 @@ function addDefaultSection(arr, get) {
   let obj = { key: require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS };
   obj = { type: require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS };
   obj.categoryInfo = obj;
-  obj.items = createSoundItems(value, require(15749) /* sortSoundsOldestToNewestCreationDate */.sortSoundsOldestToNewestCreationDate);
+  obj.items = createSoundItems(value, require(15796) /* sortSoundsOldestToNewestCreationDate */.sortSoundsOldestToNewestCreationDate);
   arr.push(obj);
 }
 ({ DEFAULT_SOUND_GUILD_ID: closure_9, EMPTY_SOUND_LIST: closure_10 } = MAX_LENGTH_SOUND_NAME);

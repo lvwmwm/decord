@@ -1,10 +1,10 @@
-// Module ID: 10714
-// Function ID: 83393
+// Module ID: 10743
+// Function ID: 83585
 // Name: VoiceSensitivity
-// Dependencies: [5, 57, 31, 27, 4177, 4952, 6651, 653, 4344, 33, 4130, 689, 3974, 1450, 566, 4675, 4227, 3843, 1212, 1273, 7495, 7523, 477, 2]
+// Dependencies: [5, 57, 31, 27, 4177, 4952, 6651, 653, 4344, 33, 4130, 689, 3974, 1450, 566, 4675, 4227, 3843, 1212, 1273, 7636, 7658, 477, 2]
 // Exports: default
 
-// Module 10714 (VoiceSensitivity)
+// Module 10743 (VoiceSensitivity)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

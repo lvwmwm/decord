@@ -1,10 +1,10 @@
-// Module ID: 10099
-// Function ID: 78199
+// Module ID: 10131
+// Function ID: 78393
 // Name: NewBadge
-// Dependencies: [57, 31, 27, 1345, 33, 1334, 4130, 689, 4126, 1212, 5802, 8563, 2]
+// Dependencies: [57, 31, 27, 1345, 33, 1334, 4130, 689, 4126, 1212, 5802, 8608, 2]
 // Exports: ConversationCoachmark
 
-// Module 10099 (NewBadge)
+// Module 10131 (NewBadge)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -58,7 +58,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     return obj;
   }, items);
   const tmp = _createForOfIteratorHelperLoose();
-  const coachmark = first(8563).useCoachmark(ref, memo);
+  const coachmark = first(8608).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   obj = {};
   let coachmarkWrapper;

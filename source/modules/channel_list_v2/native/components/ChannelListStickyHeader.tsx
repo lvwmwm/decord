@@ -1,10 +1,10 @@
-// Module ID: 14986
-// Function ID: 114196
+// Module ID: 15033
+// Function ID: 114517
 // Name: ChannelListStickyHeader
-// Dependencies: [31, 27, 3759, 653, 33, 3991, 4130, 689, 1324, 12914, 14985, 5169, 5077, 3834, 566, 5698, 1212, 4126, 5701, 1273, 5514, 11396, 11471, 14987, 2]
+// Dependencies: [31, 27, 3759, 653, 33, 3991, 4130, 689, 1324, 12966, 15032, 5169, 5077, 3834, 566, 5698, 1212, 4126, 5701, 1273, 5512, 11424, 11501, 15034, 2]
 // Exports: default
 
-// Module 14986 (ChannelListStickyHeader)
+// Module 15033 (ChannelListStickyHeader)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -86,7 +86,7 @@ export default function ChannelListStickyHeader(guild) {
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[9])(guild);
   }, items);
-  const tmp5 = importDefault(14985)(guild);
+  const tmp5 = importDefault(15032)(guild);
   let obj = guild(5169);
   const iOSPressEffects = obj.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
@@ -142,7 +142,7 @@ export default function ChannelListStickyHeader(guild) {
   let tmp23 = null;
   if (flag2) {
     obj5 = { size: "xxs", color: importDefault(689).colors.TEXT_SUBTLE, style: tmp2.chevron };
-    tmp23 = callback(guild(5514).ChevronSmallRightIcon, obj5);
+    tmp23 = callback(guild(5512).ChevronSmallRightIcon, obj5);
   }
   items2[2] = tmp23;
   obj1.children = items2;
@@ -175,14 +175,14 @@ export default function ChannelListStickyHeader(guild) {
     tmp34 = null;
     if (!enabled) {
       const obj11 = { guild, useButtonComponent: true, useEventsButton: true };
-      tmp34 = callback(importDefault(11396), obj11);
+      tmp34 = callback(importDefault(11424), obj11);
     }
   }
   items5[1] = tmp34;
   if (enabled) {
     const obj12 = { style: tmp2.joinButton };
     const obj13 = { guildId: guild.id, joinSource: JoinGuildSources.CHANNEL_LIST_STICKY_HEADER_LURKER };
-    obj12.children = callback(importDefault(11471), obj13);
+    obj12.children = callback(importDefault(11501), obj13);
     enabled = callback(View, obj12);
   }
   items5[2] = enabled;
@@ -195,7 +195,7 @@ export default function ChannelListStickyHeader(guild) {
   let tmp46 = null;
   if (flag3) {
     const obj15 = { targetRef: ref, guild };
-    tmp46 = callback(importDefault(14987), obj15);
+    tmp46 = callback(importDefault(15034), obj15);
   }
   items5[4] = tmp46;
   obj.children = items5;

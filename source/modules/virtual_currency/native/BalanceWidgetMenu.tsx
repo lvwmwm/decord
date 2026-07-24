@@ -1,10 +1,10 @@
-// Module ID: 14667
-// Function ID: 111802
+// Module ID: 14714
+// Function ID: 112123
 // Name: BalanceWidget
-// Dependencies: [31, 27, 653, 655, 1345, 4976, 33, 1324, 4660, 4126, 1212, 9642, 1334, 675, 10919, 4979, 14668, 8722, 4098, 9798, 1934, 5484, 6773, 9797, 3946, 4558, 4130, 689, 2]
+// Dependencies: [31, 27, 653, 655, 1345, 4976, 33, 1324, 4660, 4126, 1212, 9678, 1334, 675, 10946, 4979, 14715, 8763, 4098, 9830, 1934, 5482, 6773, 9829, 3946, 4558, 4130, 689, 2]
 // Exports: default
 
-// Module 14667 (BalanceWidget)
+// Module 14714 (BalanceWidget)
 import result from "result";
 import { View } from "_createForOfIteratorHelperLoose";
 import { AnalyticEvents } from "ME";
@@ -71,7 +71,7 @@ class OrbsOnboardingMenuDismissibleContent {
   }
 }
 function BalanceWidgetMenu(style) {
-  let obj = str(8722);
+  let obj = str(8763);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
@@ -125,7 +125,7 @@ function BalanceWidgetMenu(style) {
   }
   obj.balance = str2;
   obj.accessibilityLabel = intl.formatToPlainString(str(1212).t.zPaLL9, obj);
-  obj.children = callback(importDefault(9797), { balance: str, onPress: callback, accessible: false });
+  obj.children = callback(importDefault(9829), { balance: str, onPress: callback, accessible: false });
   return callback(BalanceWidget, obj);
 }
 ({ ContentDismissActionType: closure_7, DismissibleContentGroupName: closure_8 } = ContentDismissActionType);
@@ -151,7 +151,7 @@ let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
 let result = require("ME").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = require(8722);
+  let obj = require(8763);
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   require(3946) /* UNSAFE_isDismissibleContentDismissed */;
   if (null == balance) {

@@ -1,5 +1,5 @@
 // Module ID: 4000
-// Function ID: 33241
+// Function ID: 33242
 // Name: PortalKeyboardState
 // Dependencies: [31, 33, 3981, 477, 4001, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost

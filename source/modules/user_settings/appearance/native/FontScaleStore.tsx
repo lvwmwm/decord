@@ -1,9 +1,9 @@
-// Module ID: 14152
-// Function ID: 108897
+// Module ID: 14202
+// Function ID: 109220
 // Name: customFontScale
-// Dependencies: [477, 9890, 677, 2]
+// Dependencies: [477, 9922, 677, 2]
 
-// Module 14152 (customFontScale)
+// Module 14202 (customFontScale)
 import set from "set";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 import set from "useStoreWithEqualityFn";

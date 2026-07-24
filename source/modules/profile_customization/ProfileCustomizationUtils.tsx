@@ -1,10 +1,10 @@
-// Module ID: 7846
-// Function ID: 62551
+// Module ID: 7935
+// Function ID: 62870
 // Name: getProfilePreviewValue
-// Dependencies: [31, 7841, 6856, 1917, 566, 3976, 1212, 2]
+// Dependencies: [31, 7930, 6855, 1917, 566, 3976, 1212, 2]
 // Exports: announcePendingAvatarChange, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 7846 (getProfilePreviewValue)
+// Module 7935 (getProfilePreviewValue)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

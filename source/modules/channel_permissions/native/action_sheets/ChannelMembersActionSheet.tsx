@@ -1,10 +1,10 @@
-// Module ID: 10879
-// Function ID: 84597
+// Module ID: 10906
+// Function ID: 84786
 // Name: ChannelMembersActionSheet
-// Dependencies: [31, 27, 1348, 1917, 1910, 1838, 3758, 653, 33, 4130, 689, 1557, 566, 1456, 4320, 8413, 1212, 5187, 5186, 4660, 4098, 7596, 10880, 5791, 7498, 10878, 10195, 1273, 5189, 8421, 4126, 2]
+// Dependencies: [31, 27, 1348, 1917, 1910, 1838, 3758, 653, 33, 4130, 689, 1557, 566, 1456, 4320, 8457, 1212, 5187, 5186, 4660, 4098, 7685, 10907, 5791, 7639, 10905, 10225, 1273, 5189, 8465, 4126, 2]
 // Exports: default
 
-// Module 10879 (ChannelMembersActionSheet)
+// Module 10906 (ChannelMembersActionSheet)
 import "set";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -77,9 +77,9 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = closure_8.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        const obj12 = require(8413) /* isAdmin */;
+        const obj12 = require(8457) /* isAdmin */;
         const existingRolesRows = obj12.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        const obj13 = require(8413) /* isAdmin */;
+        const obj13 = require(8457) /* isAdmin */;
         const items5 = [];
         obj = {};
         const existingMembersRows = obj13.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
@@ -125,8 +125,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5.onPress = function onPress() {
             return outer1_0(tmp[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5.icon = tmp13(require(10195) /* GroupPlusIcon */.GroupPlusIcon, {});
-          let tmp13Result = tmp13(require(7498) /* RowButtonWrapper */.RowButton, obj5);
+          obj5.icon = tmp13(require(10225) /* GroupPlusIcon */.GroupPlusIcon, {});
+          let tmp13Result = tmp13(require(7639) /* RowButtonWrapper */.RowButton, obj5);
         } else {
           const obj6 = { style: tmp.warning };
           const obj7 = { messageType: require(1273) /* Button */.HelpMessageTypes.INFO };

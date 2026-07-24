@@ -1,9 +1,9 @@
-// Module ID: 15650
-// Function ID: 120686
+// Module ID: 15697
+// Function ID: 121008
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 3823, 6757, 5722, 5039, 1352, 1194, 1348, 6961, 6879, 12678, 4142, 4970, 4325, 4146, 653, 33, 689, 4130, 4660, 4126, 566, 3991, 3989, 5772, 1212, 11934, 10204, 14404, 477, 13503, 11810, 7105, 3981, 7106, 7094, 1450, 1557, 7095, 10811, 675, 15651, 15658, 13504, 15677, 15678, 2]
+// Dependencies: [57, 31, 27, 3823, 6757, 5722, 5039, 1352, 1194, 1348, 6960, 6878, 12729, 4142, 4970, 4325, 4146, 653, 33, 689, 4130, 4660, 4126, 566, 3991, 3989, 5772, 1212, 11960, 10234, 14454, 477, 13556, 11837, 7104, 3981, 7105, 7093, 1450, 1557, 7094, 10840, 675, 15698, 15705, 13557, 15724, 15725, 2]
 
-// Module 15650 (_createForOfIteratorHelperLoose)
+// Module 15697 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import { View } from "getSystemLocale";
@@ -142,7 +142,7 @@ function TabHeader(text) {
 }
 function createAndAppendChannel(arg0, has, arr) {
   if (!has.has(arg0)) {
-    const tmp3 = importDefault(7105)(arg0);
+    const tmp3 = importDefault(7104)(arg0);
     if (null != tmp3) {
       arr.push(tmp3);
       has.add(arg0);

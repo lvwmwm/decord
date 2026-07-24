@@ -1,9 +1,9 @@
-// Module ID: 14800
-// Function ID: 112883
+// Module ID: 14847
+// Function ID: 113204
 // Name: DM_WIDTH
-// Dependencies: [57, 31, 27, 653, 33, 14801, 5122, 4130, 689, 3984, 14802, 14807, 14808, 14809, 3991, 14892, 14893, 14963, 10856, 2]
+// Dependencies: [57, 31, 27, 653, 33, 14848, 5122, 4130, 689, 3984, 14849, 14854, 14855, 14856, 3991, 14939, 14940, 15010, 10883, 2]
 
-// Module 14800 (DM_WIDTH)
+// Module 14847 (DM_WIDTH)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -69,10 +69,10 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
     items[1] = sideTablet;
     return items;
   }, items);
-  let obj = require(14802) /* HOME_DRAWER_FLING_PHYSICS */;
+  let obj = require(14849) /* HOME_DRAWER_FLING_PHYSICS */;
   const homeGesture = obj.useHomeGesture();
   ({ gesture, panelStyles, homeDrawerState } = homeGesture);
-  const sum = DM_WIDTH + isChatBesideChannelList(14807)();
+  const sum = DM_WIDTH + isChatBesideChannelList(14854)();
   obj = { value: homeDrawerState };
   obj = { gesture };
   const obj1 = {};
@@ -85,7 +85,7 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   obj2.width = tmp9;
   items1[1] = obj2;
   obj1.style = items1;
-  const items2 = [callback(require(14809) /* HomePanelContent */.HomePanelContent, {}), ];
+  const items2 = [callback(require(14856) /* HomePanelContent */.HomePanelContent, {}), ];
   const obj3 = { style: null, pointerEvents: "box-none", nativeID: "messages-parent-view" };
   const items3 = [panelStyles, tmp.sideContainer];
   obj3.style = items3;
@@ -95,19 +95,19 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
     num = 1;
   }
   obj4.activeIndex = num;
-  const items4 = [callback(isChatBesideChannelList(14893), { style: memo }), callback(isChatBesideChannelList(14963), { style: memo, selectedGuildId, selectedChannelId })];
+  const items4 = [callback(isChatBesideChannelList(14940), { style: memo }), callback(isChatBesideChannelList(15010), { style: memo, selectedGuildId, selectedChannelId })];
   obj4.children = items4;
-  obj3.children = closure_10(require(14892) /* NativeFreezeScreens */.NativeFreezeScreens, obj4);
+  obj3.children = closure_10(require(14939) /* NativeFreezeScreens */.NativeFreezeScreens, obj4);
   items2[1] = callback(isChatBesideChannelList(3991).View, obj3);
   obj1.children = items2;
   obj.children = closure_10(closure_5, obj1);
-  obj.children = callback(require(14808) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
-  return callback(require(14802) /* HOME_DRAWER_FLING_PHYSICS */.HomeDrawerStateContext.Provider, obj);
+  obj.children = callback(require(14855) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
+  return callback(require(14849) /* HOME_DRAWER_FLING_PHYSICS */.HomeDrawerStateContext.Provider, obj);
 });
 let obj2 = { borderTopRightRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 const memoResult = importAllResult.memo(function MainChannelsRedesignInner() {
-  const obj = { profile: require(10856) /* setLevels */.Profiles.LeftPanel, children: callback(closure_12, {}) };
-  return callback(importDefault(10856), obj);
+  const obj = { profile: require(10883) /* setLevels */.Profiles.LeftPanel, children: callback(closure_12, {}) };
+  return callback(importDefault(10883), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/MainChannels.tsx");
 

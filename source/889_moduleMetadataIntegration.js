@@ -1,5 +1,5 @@
 // Module ID: 889
-// Function ID: 9817
+// Function ID: 9818
 // Name: moduleMetadataIntegration
 // Dependencies: [863, 840, 890]
 

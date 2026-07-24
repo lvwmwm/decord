@@ -1,10 +1,10 @@
-// Module ID: 8380
-// Function ID: 66754
+// Module ID: 8424
+// Function ID: 66982
 // Name: useCollapsibleFloatingActionButtonState
 // Dependencies: [31, 3991, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 8380 (useCollapsibleFloatingActionButtonState)
+// Module 8424 (useCollapsibleFloatingActionButtonState)
 import result from "result";
 
 const require = arg1;

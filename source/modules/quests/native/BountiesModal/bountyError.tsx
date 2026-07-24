@@ -1,10 +1,10 @@
-// Module ID: 13927
-// Function ID: 106615
+// Module ID: 13978
+// Function ID: 106939
 // Name: resolveBountyRewardClaimErrorMessage
-// Dependencies: [13928, 1212, 3831, 9176, 2]
+// Dependencies: [13979, 1212, 3831, 9212, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 13927 (resolveBountyRewardClaimErrorMessage)
+// Module 13978 (resolveBountyRewardClaimErrorMessage)
 import { BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS as closure_3 } from "BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS";
 import set from "dispatcher";
 
@@ -33,6 +33,6 @@ const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/bo
 
 export const openBountyRewardClaimErrorToast = function openBountyRewardClaimErrorToast(code) {
   let obj = importDefault(3831);
-  obj = { key: "QUESTS_BOUNTIES_REWARD_CLAIM_FAILED", content: resolveBountyRewardClaimErrorMessage(code), icon: importDefault(9176), toastDurationMs: closure_3 };
+  obj = { key: "QUESTS_BOUNTIES_REWARD_CLAIM_FAILED", content: resolveBountyRewardClaimErrorMessage(code), icon: importDefault(9212), toastDurationMs: closure_3 };
   obj.open(obj);
 };

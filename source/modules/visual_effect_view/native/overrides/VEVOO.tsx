@@ -1,9 +1,9 @@
-// Module ID: 14711
-// Function ID: 112142
+// Module ID: 14758
+// Function ID: 112463
 // Name: VisualEffectViewOverrideOverlay_
-// Dependencies: [31, 27, 4129, 687, 33, 4130, 689, 3991, 4542, 4546, 7495, 14712, 14714, 14715, 9089, 5119, 566, 14662, 2]
+// Dependencies: [31, 27, 4129, 687, 33, 4130, 689, 3991, 4542, 4546, 7636, 14759, 14761, 14762, 9127, 5119, 566, 14709, 2]
 
-// Module 14711 (VisualEffectViewOverrideOverlay_)
+// Module 14758 (VisualEffectViewOverrideOverlay_)
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES";

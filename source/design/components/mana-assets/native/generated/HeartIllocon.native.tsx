@@ -1,5 +1,5 @@
 // Module ID: 6258
-// Function ID: 50341
+// Function ID: 50352
 // Name: HeartIllocon
 // Dependencies: [33, 5085, 6259, 2]
 // Exports: HeartIllocon

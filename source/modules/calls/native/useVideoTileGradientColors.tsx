@@ -1,10 +1,10 @@
-// Module ID: 7892
-// Function ID: 62837
+// Module ID: 7979
+// Function ID: 63148
 // Name: rgbToHex
-// Dependencies: [31, 653, 7893, 665, 2]
+// Dependencies: [31, 653, 7980, 665, 2]
 // Exports: useVideoTileGradientColors
 
-// Module 7892 (rgbToHex)
+// Module 7979 (rgbToHex)
 import result from "result";
 import { ThemeTypes } from "ME";
 
@@ -25,14 +25,14 @@ function rgbToHex(arg0) {
 function computeVideoTileGradientStops(modalV2BackgroundColor, modalV2BackgroundColor) {
   if (null != modalV2BackgroundColor) {
     if (null != modalV2BackgroundColor) {
-      let DARK = require(7893) /* getProfileTheme */.getProfileTheme(modalV2BackgroundColor);
+      let DARK = require(7980) /* getProfileTheme */.getProfileTheme(modalV2BackgroundColor);
       if (null == DARK) {
         DARK = ThemeTypes.DARK;
       }
-      const obj7 = require(7893) /* getProfileTheme */;
+      const obj7 = require(7980) /* getProfileTheme */;
       const obj = require(665) /* pad2 */;
-      const int2rgbArrayResult = obj.int2rgbArray(require(7893) /* getProfileTheme */.calculateModalV2BackgroundColor(modalV2BackgroundColor, modalV2BackgroundColor, DARK));
-      const obj2 = require(7893) /* getProfileTheme */;
+      const int2rgbArrayResult = obj.int2rgbArray(require(7980) /* getProfileTheme */.calculateModalV2BackgroundColor(modalV2BackgroundColor, modalV2BackgroundColor, DARK));
+      const obj2 = require(7980) /* getProfileTheme */;
       const obj3 = require(665) /* pad2 */;
       const int2rgbArrayResult1 = require(665) /* pad2 */.int2rgbArray(modalV2BackgroundColor);
       const obj4 = require(665) /* pad2 */;
@@ -40,13 +40,13 @@ function computeVideoTileGradientStops(modalV2BackgroundColor, modalV2Background
       const items = [int2rgbArrayResult[0], int2rgbArrayResult[1], int2rgbArrayResult[2]];
       const items1 = [, , ];
       [arr2[0], arr2[1], arr2[2]] = int2rgbArrayResult1;
-      let valueInColorGradientByPercentage = require(7893) /* getProfileTheme */.getValueInColorGradientByPercentage(items, items1, 20);
-      const obj5 = require(7893) /* getProfileTheme */;
+      let valueInColorGradientByPercentage = require(7980) /* getProfileTheme */.getValueInColorGradientByPercentage(items, items1, 20);
+      const obj5 = require(7980) /* getProfileTheme */;
       const items2 = [, , ];
       [arr3[0], arr3[1], arr3[2]] = int2rgbArrayResult;
       const items3 = [, , ];
       [arr4[0], arr4[1], arr4[2]] = int2rgbArrayResult2;
-      valueInColorGradientByPercentage = require(7893) /* getProfileTheme */.getValueInColorGradientByPercentage(items2, items3, 60);
+      valueInColorGradientByPercentage = require(7980) /* getProfileTheme */.getValueInColorGradientByPercentage(items2, items3, 60);
       const items4 = [rgbToHex(valueInColorGradientByPercentage), rgbToHex(valueInColorGradientByPercentage)];
       return items4;
     }

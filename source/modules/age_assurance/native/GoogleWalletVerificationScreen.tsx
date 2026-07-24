@@ -1,10 +1,10 @@
-// Module ID: 7575
-// Function ID: 60608
+// Module ID: 7630
+// Function ID: 60754
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 57, 31, 27, 33, 1456, 4347, 7569, 6837, 6842, 1212, 2716, 7572, 7573, 4541, 4126, 4965, 4543, 7538, 2]
+// Dependencies: [5, 57, 31, 27, 33, 1456, 4347, 7626, 6836, 6841, 1212, 2716, 7613, 7614, 4541, 4126, 4965, 4543, 7583, 2]
 // Exports: default
 
-// Module 7575 (GoogleWalletVerificationScreen)
+// Module 7630 (GoogleWalletVerificationScreen)
 import useNavigation from "useNavigation";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -33,10 +33,10 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
   }, items);
   const items1 = [callback];
   callback1 = React.useCallback(callback(async () => {
-    const obj = modalSessionId(7569);
-    const obj2 = modalSessionId(7569);
-    const tmp = yield modalSessionId(7569).getGoogleWalletCredential(yield obj.requestGoogleWalletVerification().request_json);
-    yield modalSessionId(7569).verifyGoogleWalletCredential(tmp);
+    const obj = modalSessionId(7626);
+    const obj2 = modalSessionId(7626);
+    const tmp = yield modalSessionId(7626).getGoogleWalletCredential(yield obj.requestGoogleWalletVerification().request_json);
+    yield modalSessionId(7626).verifyGoogleWalletCredential(tmp);
   }), items1);
   React = React.useRef(false);
   const items2 = [navigation, callback1];
@@ -74,8 +74,8 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     items3[1] = callback(modalSessionId(4126).Text, obj3);
     obj1.children = items3;
     obj.children = callback2(modalSessionId(4541).Stack, obj1);
-    obj.children = callback(modalSessionId(7573).ModalContent, obj);
-    let tmp14 = callback(modalSessionId(7572).ModalScreen, obj);
+    obj.children = callback(modalSessionId(7614).ModalContent, obj);
+    let tmp14 = callback(modalSessionId(7613).ModalScreen, obj);
   } else {
     const obj4 = {};
     const obj5 = {};
@@ -87,15 +87,15 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     const intl2 = modalSessionId(1212).intl;
     obj9.text = intl2.string(navigation(2716).fEUKEv);
     obj9.onPress = function onPress() {
-      const result = modalSessionId(7538).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(7538).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, modalSessionId(7538).AgeVerificationModalCta.METHOD_SELECT);
+      const result = modalSessionId(7583).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(7583).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, modalSessionId(7583).AgeVerificationModalCta.METHOD_SELECT);
       callback();
     };
     obj8.children = callback(modalSessionId(4543).Button, obj9);
     items4[1] = callback(modalSessionId(4965).ButtonGroup, obj8);
     obj6.children = items4;
     obj5.children = callback2(modalSessionId(4541).Stack, obj6);
-    obj4.children = callback(modalSessionId(7573).ModalContent, obj5);
-    tmp14 = callback(modalSessionId(7572).ModalScreen, obj4);
+    obj4.children = callback(modalSessionId(7614).ModalContent, obj5);
+    tmp14 = callback(modalSessionId(7613).ModalScreen, obj4);
   }
   return tmp14;
 };

@@ -1,5 +1,5 @@
 // Module ID: 1687
-// Function ID: 18674
+// Function ID: 18675
 // Name: WorkletEventHandlerNative
 // Dependencies: [6, 7, 99, 100, 1585, 1626]
 

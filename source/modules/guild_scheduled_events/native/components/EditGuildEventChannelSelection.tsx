@@ -1,10 +1,10 @@
-// Module ID: 8404
-// Function ID: 66888
+// Module ID: 8448
+// Function ID: 67116
 // Name: EditGuildEventChannelSelection
-// Dependencies: [31, 27, 3758, 3767, 1849, 6758, 653, 33, 4130, 689, 5780, 8400, 8384, 4320, 566, 4593, 8386, 8387, 1212, 4126, 4660, 1820, 8405, 8365, 4098, 8382, 1934, 1273, 8383, 2]
+// Dependencies: [31, 27, 3758, 3767, 1849, 6758, 653, 33, 4130, 689, 5780, 8444, 8428, 4320, 566, 4593, 8430, 8431, 1212, 4126, 4660, 1820, 8449, 8409, 4098, 8426, 1934, 1273, 8427, 2]
 // Exports: default
 
-// Module 8404 (EditGuildEventChannelSelection)
+// Module 8448 (EditGuildEventChannelSelection)
 import "result";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -44,9 +44,9 @@ export default function EditGuildEventChannelSelection(guild) {
   let obj = guild(5780);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
   let _isNativeReflectConstruct = tmp3;
-  let obj1 = guild(8400);
+  let obj1 = guild(8444);
   let closure_6 = obj1.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = guild(8384);
+  let obj2 = guild(8428);
   let closure_7 = obj2.useChannelsUserCanStartStageIn(guild);
   const tmp4 = channel(4320)(channel);
   let obj3 = guild(566);
@@ -60,13 +60,13 @@ export default function EditGuildEventChannelSelection(guild) {
     let obj5 = guild(4593);
     let channelIcon = obj5.getChannelIcon(channel);
   } else {
-    channelIcon = channel(8386);
+    channelIcon = channel(8430);
   }
   if (null != channel) {
     let obj6 = guild(4593);
     let LocationIcon = obj6.getChannelIconComponent(channel);
   } else {
-    LocationIcon = guild(8387).LocationIcon;
+    LocationIcon = guild(8431).LocationIcon;
   }
   let intl = guild(1212).intl;
   let string = intl.string;
@@ -166,7 +166,7 @@ export default function EditGuildEventChannelSelection(guild) {
   const items6 = [tmp21, , ];
   obj5 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp4 };
   items6[1] = callback(guild(4126).Text, obj5);
-  obj6 = { source: channel(8383) };
+  obj6 = { source: channel(8427) };
   items6[2] = callback(guild(1273).Icon, obj6);
   obj1.children = items6;
   items4[1] = closure_12(guild(4660).PressableOpacity, obj1);

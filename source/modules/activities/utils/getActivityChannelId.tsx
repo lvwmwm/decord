@@ -1,10 +1,10 @@
-// Module ID: 11956
-// Function ID: 92423
+// Module ID: 11982
+// Function ID: 92659
 // Name: getActivityChannelId
 // Dependencies: [1352, 1348, 4146, 2]
 // Exports: default
 
-// Module 11956 (getActivityChannelId)
+// Module 11982 (getActivityChannelId)
 import { isTextChannel } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

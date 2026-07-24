@@ -1,9 +1,9 @@
-// Module ID: 14324
-// Function ID: 109659
+// Module ID: 14374
+// Function ID: 109982
 // Name: toggle
-// Dependencies: [14312, 7662, 477, 14314, 10095, 1212, 2]
+// Dependencies: [14362, 7751, 477, 14364, 10127, 1212, 2]
 
-// Module 14324 (toggle)
+// Module 14374 (toggle)
 import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
 import createToggle from "createToggle";
 
@@ -23,8 +23,8 @@ const toggle = createToggle.createToggle({
     const tmp = callback();
     let tmp2 = !require(477) /* set */.isIOS();
     if (tmp2) {
-      tmp2 = !require(14314) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
-      const obj2 = require(14314) /* hasAndroidNotificationChannels */;
+      tmp2 = !require(14364) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
+      const obj2 = require(14364) /* hasAndroidNotificationChannels */;
     }
     if (tmp2) {
       tmp2 = null != tmp;
@@ -47,8 +47,8 @@ const obj = {
     const tmp = callback();
     let tmp2 = !require(477) /* set */.isIOS();
     if (tmp2) {
-      tmp2 = !require(14314) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
-      const obj2 = require(14314) /* hasAndroidNotificationChannels */;
+      tmp2 = !require(14364) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
+      const obj2 = require(14364) /* hasAndroidNotificationChannels */;
     }
     if (tmp2) {
       tmp2 = null != tmp;

@@ -1,5 +1,5 @@
 // Module ID: 3373
-// Function ID: 26499
+// Function ID: 26500
 // Name: startOfDay
 // Dependencies: [3209, 3210]
 // Exports: default

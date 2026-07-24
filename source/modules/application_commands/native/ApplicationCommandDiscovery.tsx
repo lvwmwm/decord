@@ -1,10 +1,10 @@
-// Module ID: 11437
-// Function ID: 88980
+// Module ID: 11466
+// Function ID: 89199
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4566, 11438, 9558, 653, 33, 11439, 4130, 689, 4549, 11440, 8189, 1881, 7928, 3843, 1212, 4324, 22, 11441, 6755, 11442, 11443, 1273, 9634, 2]
+// Dependencies: [57, 31, 27, 4566, 11467, 9594, 653, 33, 11468, 4130, 689, 4549, 11469, 8233, 1881, 8015, 3843, 1212, 4324, 22, 11470, 6755, 11471, 11472, 1273, 9670, 2]
 // Exports: default
 
-// Module 11437 (_createForOfIteratorHelperLoose)
+// Module 11466 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -145,14 +145,14 @@ export default function ApplicationCommandDiscovery(channel) {
   const first = tmp4[0];
   let closure_7 = tmp6;
   let closure_8 = ref.useRef(false);
-  let obj1 = require(11440) /* useCommandDiscoveryManager */;
+  let obj1 = require(11469) /* useCommandDiscoveryManager */;
   const commandDiscoveryManager = obj1.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj2 = channel(8189);
+  let obj2 = channel(8233);
   obj = { context: { channel, type: "channel" } };
   obj = {};
   let items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
   obj.commandTypes = items;
-  const BuiltInCommandFilter = require(7928) /* ScoreMethod */.BuiltInCommandFilter;
+  const BuiltInCommandFilter = require(8015) /* ScoreMethod */.BuiltInCommandFilter;
   obj.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj.applicationCommands = !canOnlyUseTextCommands;
   obj.filters = obj;
@@ -195,9 +195,9 @@ export default function ApplicationCommandDiscovery(channel) {
         if (0 !== commandsByActiveSection.length) {
           num = commandsByActiveSection.reduce((arg0, data) => {
             if (0 === data.data.length) {
-              let sum = outer3_0(11439).APPLICATION_SECTION_HEADER_HEIGHT + 160;
+              let sum = outer3_0(11468).APPLICATION_SECTION_HEADER_HEIGHT + 160;
             } else {
-              sum = arg0 + (outer3_0(11439).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
+              sum = arg0 + (outer3_0(11468).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
             }
             return sum;
           }, 0);

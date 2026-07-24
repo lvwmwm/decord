@@ -1,10 +1,10 @@
-// Module ID: 12104
-// Function ID: 94834
+// Module ID: 12130
+// Function ID: 95070
 // Name: useIsGameFriends
-// Dependencies: [57, 6901, 653, 566, 4964, 2]
+// Dependencies: [57, 6900, 653, 566, 4964, 2]
 // Exports: useIsGameFriends
 
-// Module 12104 (useIsGameFriends)
+// Module 12130 (useIsGameFriends)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { RelationshipTypes } from "ME";

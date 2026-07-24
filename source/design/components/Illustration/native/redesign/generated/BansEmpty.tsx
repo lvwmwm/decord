@@ -1,17 +1,17 @@
-// Module ID: 16346
-// Function ID: 127620
+// Module ID: 16393
+// Function ID: 127944
 // Name: getBansEmptySource
-// Dependencies: [31, 27, 33, 7403, 16347, 16348, 16349, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 16394, 16395, 16396, 3976, 2]
 // Exports: BansEmpty
 
-// Module 16346 (getBansEmptySource)
+// Module 16393 (getBansEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getBansEmptySource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

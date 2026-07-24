@@ -1,5 +1,5 @@
 // Module ID: 4664
-// Function ID: 40405
+// Function ID: 40409
 // Name: _callSuper
 // Dependencies: [57, 29, 5, 102, 6, 7, 15, 17, 18, 162, 4129, 1280, 4222, 653, 3, 507, 4665, 4672, 664, 561, 22, 1430, 4674, 4705, 4706, 4710, 4711, 1184, 4673, 4666, 675, 4712, 4713, 1934, 2]
 
@@ -234,11 +234,11 @@ export const CloudUploadStatus = obj;
 export const CloudUpload = ((arg0) => {
   class CloudUpload {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = f40433(this, CloudUpload);
+      tmp = f40437(this, CloudUpload);
       items = [];
       items[0] = arg0;
       tmp2 = outer1_23(this, CloudUpload, items);
-      f40487 = tmp2;
+      f40491 = tmp2;
       tmp2.status = outer1_21.NOT_STARTED;
       tmp2.loaded = 0;
       tmp2.reactNativeFilePrepped = false;
@@ -279,17 +279,17 @@ export const CloudUpload = ((arg0) => {
       if (null != arg3) {
         tmp2.allowOptimization = arg3;
       }
-      tmp6 = arg0.platform === f40487(f40473[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
+      tmp6 = arg0.platform === f40491(f40477[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
       if (tmp6) {
         tmp2.mimeType = arg0.compressionMetadata.originalContentType;
       }
       abortController = new AbortController();
       tmp2._abortController = abortController;
       if (null == tmp2.origin) {
-        tmp10 = f40487;
-        tmp11 = f40473;
+        tmp10 = f40491;
+        tmp11 = f40477;
         num3 = 17;
-        DefaultHttpClient = f40487(f40473[17]).DefaultHttpClient;
+        DefaultHttpClient = f40491(f40477[17]).DefaultHttpClient;
         prototype = DefaultHttpClient.prototype;
         tmp12 = new.target;
         tmp13 = new.target;
@@ -303,9 +303,9 @@ export const CloudUpload = ((arg0) => {
         if ("string" === typeof tmp2.origin) {
           origin = tmp2.origin;
         } else {
-          tmp8 = f40487;
-          tmp9 = f40473;
-          origin = f40487(f40473[16]).UploadOrigin[tmp2.origin];
+          tmp8 = f40491;
+          tmp9 = f40477;
+          origin = f40491(f40477[16]).UploadOrigin[tmp2.origin];
         }
         tmp2.uploadAnalytics.origin = origin;
       }

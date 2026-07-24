@@ -1,10 +1,10 @@
-// Module ID: 7637
-// Function ID: 61180
+// Module ID: 7726
+// Function ID: 61466
 // Name: createDefaultReaction
-// Dependencies: [653, 7635, 4083, 7638, 1184, 4075, 1212, 1920, 7639, 7640, 7641, 1392, 3769, 3775, 2]
+// Dependencies: [653, 7724, 4083, 7727, 1184, 4075, 1212, 1920, 7728, 7729, 7730, 1392, 3769, 3775, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 7637 (createDefaultReaction)
+// Module 7726 (createDefaultReaction)
 import { HelpdeskArticles } from "ME";
 
 let result = require("registerAsset").fileFinishedImporting("modules/messages/native/renderer/row_data/ForumPostActions.tsx");
@@ -15,7 +15,7 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
   let emojiId;
   let emojiName;
   ({ defaultReactionEmoji, customGuildEmoji } = arg0);
-  let obj = require(7641) /* apexExperiment */;
+  let obj = require(7730) /* apexExperiment */;
   const result = obj.shouldSkipAccessibilityLabels();
   let tmp2;
   if (null != defaultReactionEmoji) {
@@ -73,14 +73,14 @@ export const createForumPostActions = function createForumPostActions(arg0) {
   let showMediaPostSharePrompt;
   ({ isFollowing, defaultReaction } = arg0);
   ({ hasReactions, showMediaPostSharePrompt } = arg0);
-  const getAssetUriForEmbed = require(7635) /* frozen */.getAssetUriForEmbed;
+  const getAssetUriForEmbed = require(7724) /* frozen */.getAssetUriForEmbed;
   if (isFollowing) {
     let assetUriForEmbed = getAssetUriForEmbed(tmp3(4083));
   } else {
-    assetUriForEmbed = getAssetUriForEmbed(tmp3(7638));
+    assetUriForEmbed = getAssetUriForEmbed(tmp3(7727));
   }
   if (null != assetUriForEmbed) {
-    let obj1 = require(7635) /* frozen */;
+    let obj1 = require(7724) /* frozen */;
     let stringResult;
     const assetUriForEmbed1 = obj1.getAssetUriForEmbed(importDefault(4075));
     if (!hasReactions) {
@@ -106,11 +106,11 @@ export const createForumPostActions = function createForumPostActions(arg0) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       obj.cta = intl4.string(require(1212) /* getSystemLocale */.t.C5UQC9);
       const obj6 = importDefault(1920);
-      obj.icon = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7639));
-      const obj7 = require(7635) /* frozen */;
-      obj.closeIcon = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7640));
+      obj.icon = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7728));
+      const obj7 = require(7724) /* frozen */;
+      obj.closeIcon = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7729));
       tmp18 = obj;
-      const obj8 = require(7635) /* frozen */;
+      const obj8 = require(7724) /* frozen */;
     }
     const obj2 = { numDisplayedReactions: 3, isFollowing, followIcon: assetUriForEmbed };
     const intl5 = require(1212) /* getSystemLocale */.intl;
@@ -136,7 +136,7 @@ export const createForumPostActions = function createForumPostActions(arg0) {
     if (isFollowing) {
       let tmp7 = 4083;
     } else {
-      tmp7 = 7638;
+      tmp7 = 7727;
     }
     strResult = str(tmp7);
     const _HermesInternal = HermesInternal;

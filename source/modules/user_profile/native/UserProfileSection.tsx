@@ -1,10 +1,10 @@
-// Module ID: 10008
-// Function ID: 77355
+// Module ID: 10040
+// Function ID: 77549
 // Name: UserProfileSection
-// Dependencies: [31, 27, 33, 4130, 689, 3842, 5486, 3974, 7191, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 3842, 5484, 3974, 7191, 4126, 2]
 // Exports: default
 
-// Module 10008 (UserProfileSection)
+// Module 10040 (UserProfileSection)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ export default function UserProfileSection(title) {
   let obj1 = require(3842) /* ManaContext */;
   const themeContext = obj1.useThemeContext();
   const theme = themeContext.theme;
-  let obj2 = require(5486) /* useProfileThemeValues */;
+  let obj2 = require(5484) /* useProfileThemeValues */;
   const profileThemeValues = obj2.useProfileThemeValues(theme);
   obj = {};
   const merged1 = Object.assign(tmp3.contentContainer);

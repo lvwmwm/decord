@@ -1,0 +1,112 @@
+// Module ID: 8083
+// Function ID: 64044
+// Name: extractStroke
+// Dependencies: [8081, 8069, 8084]
+
+// Module 8083 (extractStroke)
+const module = arg2;
+const dependencyMap = arg6;
+let closure_2 = { butt: 0, square: 2, round: 1 };
+let closure_3 = { miter: 0, bevel: 2, round: 1 };
+let closure_4 = { none: 0, default: 0, nonScalingStroke: 1, "non-scaling-stroke": 1, inherit: 2, uri: 3 };
+arg5.default = function extractStroke(arg0, arg1, arr) {
+  let stroke;
+  let strokeDasharray;
+  let strokeDashoffset;
+  let strokeLinecap;
+  let strokeLinejoin;
+  let strokeMiterlimit;
+  let strokeOpacity;
+  let strokeWidth;
+  let vectorEffect;
+  ({ stroke, strokeOpacity, strokeLinecap, strokeLinejoin, strokeDasharray, strokeWidth, strokeDashoffset, strokeMiterlimit, vectorEffect } = arg1);
+  if (null != stroke) {
+    arr.push("stroke");
+    arg0.stroke = module(8081)(stroke);
+  }
+  if (null != strokeWidth) {
+    arr.push("strokeWidth");
+    arg0.strokeWidth = strokeWidth;
+  }
+  if (null != strokeOpacity) {
+    arr.push("strokeOpacity");
+    arg0.strokeOpacity = module(8069)(strokeOpacity);
+  }
+  if (null != strokeDasharray) {
+    arr.push("strokeDasharray");
+    let tmp9 = null;
+    if (strokeDasharray) {
+      tmp9 = null;
+      if ("none" !== strokeDasharray) {
+        tmp9 = module(8084)(strokeDasharray);
+      }
+    }
+    let combined = tmp9;
+    if (tmp9) {
+      combined = tmp9;
+      if (tmp9.length % 2 === 1) {
+        combined = tmp9.concat(tmp9);
+      }
+    }
+    arg0.strokeDasharray = combined;
+  }
+  if (null != strokeDashoffset) {
+    arr.push("strokeDashoffset");
+    let tmp14 = null;
+    if (strokeDasharray) {
+      tmp14 = null;
+      if (strokeDashoffset) {
+        tmp14 = +strokeDashoffset || 0;
+        const tmp15 = +strokeDashoffset || 0;
+      }
+    }
+    arg0.strokeDashoffset = tmp14;
+  }
+  if (null != strokeLinecap) {
+    arr.push("strokeLinecap");
+    let num6 = strokeLinecap;
+    if (strokeLinecap) {
+      num6 = table[strokeLinecap];
+    }
+    if (!num6) {
+      num6 = 0;
+    }
+    arg0.strokeLinecap = num6;
+  }
+  if (null != strokeLinejoin) {
+    arr.push("strokeLinejoin");
+    let num7 = strokeLinejoin;
+    if (strokeLinejoin) {
+      num7 = table2[strokeLinejoin];
+    }
+    if (!num7) {
+      num7 = 0;
+    }
+    arg0.strokeLinejoin = num7;
+  }
+  if (null != strokeMiterlimit) {
+    arr.push("strokeMiterlimit");
+    let num8 = strokeMiterlimit;
+    if (strokeMiterlimit) {
+      num8 = strokeMiterlimit;
+      if ("number" !== typeof strokeMiterlimit) {
+        const _parseFloat = parseFloat;
+        num8 = parseFloat(strokeMiterlimit);
+      }
+    }
+    if (!num8) {
+      num8 = 4;
+    }
+    arg0.strokeMiterlimit = num8;
+  }
+  if (null != vectorEffect) {
+    let num9 = vectorEffect;
+    if (vectorEffect) {
+      num9 = table3[vectorEffect];
+    }
+    if (!num9) {
+      num9 = 0;
+    }
+    arg0.vectorEffect = num9;
+  }
+};

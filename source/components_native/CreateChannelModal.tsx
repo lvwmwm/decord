@@ -1,12 +1,12 @@
-// Module ID: 8408
-// Function ID: 66910
+// Module ID: 8452
+// Function ID: 67138
 // Name: ChannelTypeRow
-// Dependencies: [57, 31, 27, 1352, 1391, 1348, 1838, 3758, 3767, 1849, 653, 7485, 33, 4130, 689, 4638, 4645, 4658, 4654, 4651, 4644, 4636, 4643, 4655, 4653, 4650, 1212, 4126, 5459, 1920, 3848, 5165, 7520, 7495, 1273, 5160, 566, 44, 4320, 4948, 8409, 1456, 8410, 4324, 5087, 8412, 5788, 8413, 22, 4312, 4541, 7505, 5773, 5503, 8416, 5504, 4652, 8420, 480, 8434, 5450, 5519, 2]
+// Dependencies: [57, 31, 27, 1352, 1391, 1348, 1838, 3758, 3767, 1849, 653, 7565, 33, 4130, 689, 4638, 4645, 4658, 4654, 4651, 4644, 4636, 4643, 4655, 4653, 4650, 1212, 4126, 1920, 3848, 5165, 7655, 7636, 1273, 5160, 566, 44, 4320, 4948, 8453, 1456, 8454, 4324, 5087, 8456, 5788, 8457, 22, 4312, 4541, 7575, 5773, 5501, 8460, 5502, 4652, 8464, 480, 8478, 5450, 5517, 2]
 // Exports: default
 
-// Module 8408 (ChannelTypeRow)
-import _toPropertyKey from "_toPropertyKey";
-import TableRowInner from "TableRowInner";
+// Module 8452 (ChannelTypeRow)
+import isThrottled from "isThrottled";
+import FormRadio from "FormRadio";
 import get_ActivityIndicator from "Text";
 import _callSuper from "_callSuper";
 import { isGuildOwner } from "isGuildOwner";
@@ -17,7 +17,7 @@ import closure_13 from "_isNativeReflectConstruct";
 import closure_14 from "_isNativeReflectConstruct";
 import ME from "ME";
 import { RowType } from "RowType";
-import jsxProd from "Form";
+import jsxProd from "Button";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_16;
@@ -42,7 +42,7 @@ function ChannelTypeRow(selected) {
   const onPress = selected.onPress;
   ({ isPrivate, isBeta } = selected);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = selected(onPress[30]);
+  let obj = selected(onPress[29]);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   if (ChannelTypes.GUILD_TEXT === channelType) {
@@ -92,10 +92,10 @@ function ChannelTypeRow(selected) {
     const obj7 = { variant: "text-xs/normal" };
     const intl13 = selected(onPress[26]).intl;
     const obj8 = {};
-    let obj13 = channelType(onPress[29]);
+    let obj13 = channelType(onPress[28]);
     obj8.hcArticleUrl = obj13.getCreatorSupportArticleURL(constants3.MEDIA_CHANNEL);
     obj7.children = intl13.format(selected(onPress[26]).t["2Sapx1"], obj8);
-    items[1] = callback(selected(onPress[28]).TextWithIOSLinkWorkaround, obj7);
+    items[1] = callback(selected(onPress[27]).Text, obj7);
     obj5.children = items;
     obj4.description = callback2(closure_22, obj5);
     tmp5 = obj4;
@@ -112,20 +112,20 @@ function ChannelTypeRow(selected) {
   };
   const obj10 = { style: tmp.flexRow, children: callback(isPrivate ? obj8 : obj1[channelType].IconComponent, {}) };
   obj9.icon = callback(closure_6, obj10);
-  obj9.trailing = callback(selected(onPress[32]).FormRadio, { selected });
+  obj9.trailing = callback(selected(onPress[31]).FormRadio, { selected });
   let tmp15 = label;
   if (true === isBeta) {
     const obj11 = { style: tmp.horizontalContainer };
     const obj12 = { text: label };
-    const items1 = [callback(selected(onPress[33]).FormLabel, obj12), ];
-    obj13 = { size: selected(onPress[34]).BetaSizes.SMALL };
-    items1[1] = callback(selected(onPress[34]).BetaTag, obj13);
+    const items1 = [callback(selected(onPress[32]).FormLabel, obj12), ];
+    obj13 = { size: selected(onPress[33]).BetaSizes.SMALL };
+    items1[1] = callback(selected(onPress[33]).BetaTag, obj13);
     obj11.children = items1;
     tmp15 = callback2(closure_6, obj11);
   }
   obj9.label = tmp15;
   obj9.subLabel = tmp5.description;
-  return callback(selected(onPress[31]).TableRow, obj9);
+  return callback(selected(onPress[30]).TableRow, obj9);
 }
 class CreateChannel {
   constructor(arg0) {
@@ -141,14 +141,14 @@ class CreateChannel {
     useState = undefined;
     c12 = undefined;
     c13 = undefined;
-    f66916 = undefined;
+    f67144 = undefined;
     c15 = undefined;
     c16 = undefined;
     updateName = function updateName(arg0, arg1) {
       let result = arg0;
       if (canResult1.has(arg1)) {
-        result = categoryId(createMode[49]).sanitizeGuildTextChannelName(arg0);
-        const obj = categoryId(createMode[49]);
+        result = categoryId(createMode[48]).sanitizeGuildTextChannelName(arg0);
+        const obj = categoryId(createMode[48]);
       }
       closure_9(result);
     };
@@ -182,7 +182,7 @@ class CreateChannel {
     c6 = canResult;
     canResult1 = c12.can(updateName.CONNECT, stateFromStores);
     c7 = canResult1;
-    currentUser = f66916.getCurrentUser();
+    currentUser = f67144.getCurrentUser();
     tmp9 = require("invariant")(null != currentUser, "CreateChannel: user cannot be undefined");
     tmp10 = require("computeDefaultGroupDmNameFromUserIds")(stateFromStores1);
     str = "";
@@ -215,13 +215,13 @@ class CreateChannel {
     c13 = first2;
     tmp23 = tmp21[1];
     tmp24 = tmp21[2];
-    f66916 = tmp24;
+    f67144 = tmp24;
     tmp25 = guildId(onChannelCreated.useState(false), 2);
     first3 = tmp25[0];
     c15 = first3;
     c16 = tmp25[1];
     effect = onChannelCreated.useEffect(() => {
-      outer1_1(createMode[43]).trackWithMetadata(outer1_18.OPEN_MODAL, { type: "Create Channel" });
+      outer1_1(createMode[42]).trackWithMetadata(outer1_18.OPEN_MODAL, { type: "Create Channel" });
     }, []);
     items2 = [, , , , , , , , , , , , ];
     items2[0] = navigation;
@@ -239,10 +239,10 @@ class CreateChannel {
     items2[12] = onChannelCreated;
     effect1 = onChannelCreated.useEffect(() => {
       let obj = {
-        headerLeft: categoryId(createMode[44]).getHeaderCloseButton(outer1_1(createMode[45]).close),
+        headerLeft: categoryId(createMode[43]).getHeaderCloseButton(outer1_1(createMode[44]).close),
         headerRight() {
           if (outer1_13) {
-            let tmpResult = tmp(categoryId(createMode[44]).HeaderSubmittingIndicator, {});
+            let tmpResult = tmp(categoryId(createMode[43]).HeaderSubmittingIndicator, {});
           } else {
             let obj = {};
             if (!outer1_15) {
@@ -255,8 +255,8 @@ class CreateChannel {
               if (!tmp14) {
                 let tmp15 = outer1_15;
                 if (outer1_15) {
-                  tmp15 = !categoryId(createMode[47]).canCreatePrivateChannel(outer1_10, outer1_6, outer1_7);
-                  let obj2 = categoryId(createMode[47]);
+                  tmp15 = !categoryId(createMode[46]).canCreatePrivateChannel(outer1_10, outer1_6, outer1_7);
+                  let obj2 = categoryId(createMode[46]);
                 }
                 tmp14 = tmp15;
               }
@@ -264,8 +264,8 @@ class CreateChannel {
               obj.onPress = function onPress() {
                 let obj = {};
                 if (null != outer2_5) {
-                  let items = outer3_1(createMode[48]).values(outer2_5.permissionOverwrites);
-                  const obj2 = outer3_1(createMode[48]);
+                  let items = outer3_1(createMode[47]).values(outer2_5.permissionOverwrites);
+                  const obj2 = outer3_1(createMode[47]);
                 } else {
                   items = [];
                 }
@@ -349,12 +349,12 @@ class CreateChannel {
       intl3 = require("getSystemLocale").intl;
       obj4 = {};
       obj11 = require("computeDefaultGroupDmNameFromUserIds");
-      tmp42 = f66916;
+      tmp42 = f67144;
       tmp43 = c13;
       flag = true;
       tmp44 = obj11;
       tmp45 = stateFromStores1;
-      obj4.name = obj11.computeChannelName(stateFromStores1, f66916, c13, true);
+      obj4.name = obj11.computeChannelName(stateFromStores1, f67144, c13, true);
       stringResult1 = intl3.format(require("getSystemLocale").t.s2ZzZZ, obj4);
     }
     obj3.description = stringResult1;
@@ -402,7 +402,7 @@ class CreateChannel {
       if (first1 !== c15.GUILD_CATEGORY) {
         tmp = categoryId;
         tmp = createMode;
-        num18 = 53;
+        num18 = 52;
         tmp = jsxs;
         obj7 = {};
         num19 = 26;
@@ -497,7 +497,7 @@ class CreateChannel {
       tmp78 = jsx;
       tmp79 = cloneChannelId;
       tmp80 = createMode;
-      num8 = 54;
+      num8 = 53;
       obj14 = {};
       obj14.guildId = guildId;
       obj14.channelType = first1;
@@ -512,7 +512,7 @@ class CreateChannel {
           obj15 = {};
           tmp = categoryId;
           tmp = createMode;
-          num20 = 53;
+          num20 = 52;
           tmp = jsxs;
           tmp = Fragment;
           tmp = jsx;
@@ -543,7 +543,7 @@ class CreateChannel {
           obj16.hasIcons = true;
           tmp91 = categoryId;
           tmp92 = createMode;
-          num11 = 55;
+          num11 = 54;
           tmp90 = jsx;
           obj17 = {};
           tmp93 = c15;
@@ -564,7 +564,7 @@ class CreateChannel {
           tmp99 = jsx;
           tmp = categoryId;
           tmp = createMode;
-          num14 = 56;
+          num14 = 55;
           obj17.icon = jsx(require("LockIcon").LockIcon, {});
           obj17.value = first3;
           obj17.onValueChange = function onValueChange(arg0) {
@@ -577,7 +577,7 @@ class CreateChannel {
           if (first3) {
             tmp = categoryId;
             tmp = createMode;
-            num15 = 47;
+            num15 = 46;
             obj19 = require("isAdmin");
             tmp = null;
             if (!obj19.canCreatePrivateChannel(first1, canResult, canResult1)) {
@@ -588,7 +588,7 @@ class CreateChannel {
               tmp = jsx;
               tmp = categoryId;
               tmp = createMode;
-              num16 = 34;
+              num16 = 33;
               obj19 = {};
               obj19.messageType = require("Button").HelpMessageTypes.ERROR;
               obj22 = require("isAdmin");
@@ -616,7 +616,7 @@ class CreateChannel {
       tmp = jsx;
       tmp = categoryId;
       tmp = createMode;
-      num17 = 34;
+      num17 = 33;
       obj21 = {};
       obj21.messageType = require("Button").HelpMessageTypes.ERROR;
       obj21.children = tmp23.message;
@@ -633,18 +633,18 @@ function AddMembers(guildId) {
   const _require = guildId;
   let tmp = _createForOfIteratorHelperLoose();
   const importDefault = canResult.useRef(guildId);
-  let obj = _require(navigation[41]);
+  let obj = _require(navigation[40]);
   navigation = obj.useNavigation();
   guild = guild.getGuild(guildId.guildId);
-  importDefault(navigation[37])(null != guild, "Guild must not be null");
+  importDefault(navigation[36])(null != guild, "Guild must not be null");
   const currentUser = authStore.getCurrentUser();
-  importDefault(navigation[37])(null != currentUser, "AddMembers: user cannot be undefined");
+  importDefault(navigation[36])(null != currentUser, "AddMembers: user cannot be undefined");
   canResult = closure_12.can(constants2.ADMINISTRATOR, guild);
   const tmp8 = callback(guild, currentUser);
   let closure_5 = tmp8;
   const tmp9 = currentUser(canResult.useState({}), 2);
   const first = tmp9[0];
-  const tmp11 = currentUser(importDefault(navigation[42])(guildId.onChannelCreated), 3);
+  const tmp11 = currentUser(importDefault(navigation[41])(guildId.onChannelCreated), 3);
   const first1 = tmp11[0];
   let closure_8 = tmp14;
   const effect = canResult.useEffect(() => {
@@ -661,7 +661,7 @@ function AddMembers(guildId) {
     const current = result.current;
     ({ guildId, channelType } = current);
     ({ name, categoryId, onChannelCreated, flags } = current);
-    let obj = guildId(navigation[49]);
+    let obj = guildId(navigation[48]);
     result = obj.permissionOverwritesForRoles(guildId, channelType, [], true);
     const values = Object.values(first);
     const item = values.forEach((row) => {
@@ -672,21 +672,21 @@ function AddMembers(guildId) {
       }
       if (tmp) {
         if (row.rowType === outer2_20.ROLE) {
-          arr = arr.push(channelType(navigation[49]).permissionOverwriteForRole(row.id, channelType));
-          const obj = channelType(navigation[49]);
+          arr = arr.push(channelType(navigation[48]).permissionOverwriteForRole(row.id, channelType));
+          const obj = channelType(navigation[48]);
         } else if (row.rowType === outer2_20.MEMBER) {
-          arr = arr.push(channelType(navigation[49]).permissionOverwriteForUser(row.id, channelType));
-          const obj2 = channelType(navigation[49]);
+          arr = arr.push(channelType(navigation[48]).permissionOverwriteForUser(row.id, channelType));
+          const obj2 = channelType(navigation[48]);
         }
       }
     });
-    let tmp2 = TableRowInner;
-    if (!TableRowInner) {
+    let tmp2 = FormRadio;
+    if (!FormRadio) {
       tmp2 = closure_5;
     }
     if (!tmp2) {
-      result.push(guildId(navigation[49]).permissionOverwriteForUser(currentUser.id, channelType));
-      let obj2 = guildId(navigation[49]);
+      result.push(guildId(navigation[48]).permissionOverwriteForUser(currentUser.id, channelType));
+      let obj2 = guildId(navigation[48]);
     }
     obj = { overwrites: result, guildId, channelType, name, categoryId, flags };
     if (channelType === outer1_15.GUILD_STAGE_VOICE) {
@@ -704,7 +704,7 @@ function AddMembers(guildId) {
     const intl = guildId(navigation[26]).intl;
     guildId = intl.string(guildId(navigation[26]).t["5Wxrcd"]);
     if (Object.keys(first).length <= 0) {
-      const obj = { headerRight: first1 ? (() => outer2_21(stringResult(navigation[44]).HeaderSubmittingIndicator, {})) : (() => outer2_21(stringResult(navigation[46]).HeaderActionButton, { text: stringResult, onPress: outer1_9 })) };
+      const obj = { headerRight: first1 ? (() => outer2_21(stringResult(navigation[43]).HeaderSubmittingIndicator, {})) : (() => outer2_21(stringResult(navigation[45]).HeaderActionButton, { text: stringResult, onPress: outer1_9 })) };
       navigation.setOptions(obj);
     } else {
       if (ref.current.channelType === outer1_15.GUILD_STAGE_VOICE) {
@@ -723,12 +723,12 @@ function AddMembers(guildId) {
     tmp20 = null;
     if ("" !== tmp13.message) {
       obj = { style: tmp.errorMessage };
-      const obj1 = { messageType: _require(navigation[34]).HelpMessageTypes.ERROR, children: tmp13.message };
-      obj.children = callback(_require(navigation[34]).HelpMessage, obj1);
+      const obj1 = { messageType: _require(navigation[33]).HelpMessageTypes.ERROR, children: tmp13.message };
+      obj.children = callback(_require(navigation[33]).HelpMessage, obj1);
       tmp20 = callback(first, obj);
     }
   }
-  const items2 = [tmp20, callback(_require(navigation[57]).AddMembersBody, { channel: null, guild, pendingAdditions: first, setPendingAdditions: tmp9[1] })];
+  const items2 = [tmp20, callback(_require(navigation[56]).AddMembersBody, { channel: null, guild, pendingAdditions: first, setPendingAdditions: tmp9[1] })];
   obj.children = items2;
   return closure_23(first, obj);
 }
@@ -818,8 +818,8 @@ export default function CreateChannelModal(arg0) {
     obj = {};
     const obj1 = {};
     const obj2 = {
-      impressionName: callback(outer1_2[58]).ImpressionNames.CHANNEL_ADD_INFO,
-      impressionProperties: { impression_group: callback(outer1_2[58]).ImpressionGroups.CHANNEL_ADD_FLOW },
+      impressionName: callback(outer1_2[57]).ImpressionNames.CHANNEL_ADD_INFO,
+      impressionProperties: { impression_group: callback(outer1_2[57]).ImpressionGroups.CHANNEL_ADD_FLOW },
       render(arg0) {
         const merged = Object.assign(arg0);
         return outer2_21(outer2_29, {});
@@ -829,9 +829,9 @@ export default function CreateChannelModal(arg0) {
     const obj4 = {};
     const intl = callback(outer1_2[26]).intl;
     obj4.headerTitle = intl.string(callback(outer1_2[26]).t.dMJ3Y6);
-    obj4.impressionName = callback(outer1_2[58]).ImpressionNames.CHANNEL_ADD_MEMBERS;
-    const obj3 = { impression_group: callback(outer1_2[58]).ImpressionGroups.CHANNEL_ADD_FLOW };
-    obj4.impressionProperties = { impression_group: callback(outer1_2[58]).ImpressionGroups.CHANNEL_ADD_FLOW };
+    obj4.impressionName = callback(outer1_2[57]).ImpressionNames.CHANNEL_ADD_MEMBERS;
+    const obj3 = { impression_group: callback(outer1_2[57]).ImpressionGroups.CHANNEL_ADD_FLOW };
+    obj4.impressionProperties = { impression_group: callback(outer1_2[57]).ImpressionGroups.CHANNEL_ADD_FLOW };
     obj4.render = function render(arg0) {
       const merged = Object.assign(arg0);
       return outer2_21(outer2_30, {});
@@ -842,13 +842,13 @@ export default function CreateChannelModal(arg0) {
     obj6.headerTitle = intl2.string(callback(outer1_2[26]).t.n3bcy8);
     obj6.render = function render(arg0) {
       const merged = Object.assign(arg0);
-      return outer2_21(outer2_1(outer2_2[59]), {});
+      return outer2_21(outer2_1(outer2_2[58]), {});
     };
     obj1[outer1_27.ADD_MODERATORS] = obj6;
     obj.screens = obj1;
     obj.initialStack = items;
     return obj;
   }));
-  return callback(_require(5519).Navigator, { screens, initialRouteStack });
+  return callback(_require(5517).Navigator, { screens, initialRouteStack });
 };
 export { CreateChannel };

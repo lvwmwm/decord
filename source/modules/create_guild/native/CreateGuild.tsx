@@ -1,10 +1,10 @@
-// Module ID: 10066
-// Function ID: 77739
+// Module ID: 10098
+// Function ID: 77933
 // Name: CreateGuild
-// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 4528, 4539, 4541, 4126, 1212, 10067, 7512, 5504, 5459, 4543, 9004, 2]
+// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 4528, 4539, 4541, 4126, 1212, 10099, 7574, 5502, 4543, 9043, 2]
 // Exports: default
 
-// Module 10066 (CreateGuild)
+// Module 10098 (CreateGuild)
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -80,7 +80,7 @@ export default function CreateGuild(arg0) {
   }
   obj2.children = customDescription;
   items1[1] = callback(isScreenReaderEnabled(4126).Text, obj2);
-  items1[2] = callback(ref(10067), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
+  items1[2] = callback(ref(10099), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
   const obj4 = { isClearable: true };
   const intl3 = isScreenReaderEnabled(1212).intl;
   obj4.label = intl3.string(isScreenReaderEnabled(1212).t.dBih7e);
@@ -97,18 +97,18 @@ export default function CreateGuild(arg0) {
   obj4.autoFocus = autoFocus;
   obj4.autoCorrect = false;
   obj4.returnKeyType = "done";
-  items1[3] = callback(isScreenReaderEnabled(7512).TextInput, obj4);
+  items1[3] = callback(isScreenReaderEnabled(7574).TextInput, obj4);
   if (!tmp2) {
     const obj5 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only" };
     const intl4 = isScreenReaderEnabled(1212).intl;
     obj5.subLabel = intl4.string(isScreenReaderEnabled(1212).t.edQ5va);
-    tmp3 = callback(isScreenReaderEnabled(5504).TableSwitchRow, obj5);
+    tmp3 = callback(isScreenReaderEnabled(5502).TableSwitchRow, obj5);
   }
   items1[4] = tmp3;
   const obj6 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted" };
   const intl5 = isScreenReaderEnabled(1212).intl;
   obj6.children = intl5.format(isScreenReaderEnabled(1212).t["2bprXx"], { guidelinesURL: MarketingURLs.GUIDELINES });
-  items1[5] = callback(isScreenReaderEnabled(5459).TextWithIOSLinkWorkaround, obj6);
+  items1[5] = callback(isScreenReaderEnabled(4126).Text, obj6);
   const obj8 = { disabled: "" === guild.name, size: "md", grow: true };
   if (null == customButtonLabel) {
     const intl6 = isScreenReaderEnabled(1212).intl;
@@ -142,9 +142,9 @@ export default function CreateGuild(arg0) {
           message2 = error.message;
         }
         obj9.children = message2;
-        tmp27Result = callback(ref(9004), obj9);
+        tmp27Result = callback(ref(9043), obj9);
         const tmp27 = callback;
-        const tmp30 = ref(9004);
+        const tmp30 = ref(9043);
       }
     }
   }

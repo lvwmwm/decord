@@ -1,8 +1,8 @@
-// Module ID: 15562
-// Function ID: 120023
-// Dependencies: [31, 27, 3767, 653, 33, 4130, 5052, 689, 11628, 566, 675, 1212, 7779, 4466, 1273, 2]
+// Module ID: 15609
+// Function ID: 120345
+// Dependencies: [31, 27, 3767, 653, 33, 4130, 5052, 689, 11655, 566, 675, 1212, 7870, 4466, 1273, 2]
 
-// Module 15562
+// Module 15609
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   let loaded;
   channel = channel.channel;
   const tmp = callback();
-  let obj = channel(11628);
+  let obj = channel(11655);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7779)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7870)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;

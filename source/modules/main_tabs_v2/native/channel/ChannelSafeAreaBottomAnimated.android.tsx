@@ -1,8 +1,8 @@
-// Module ID: 11676
-// Function ID: 90510
-// Dependencies: [31, 27, 33, 10393, 10397, 3991, 2]
+// Module ID: 11703
+// Function ID: 90748
+// Dependencies: [31, 27, 33, 10422, 10426, 3991, 2]
 
-// Module 11676
+// Module 11703
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -13,7 +13,7 @@ let require = arg1;
 ({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
 let closure_6 = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
 const memoResult = require("result").memo(function ChannelSafeAreaBottom(channelId) {
-  const tmp = importDefault(10393)();
+  const tmp = importDefault(10422)();
   const require = tmp;
   let obj = require(3991);
   const fn = function n() {
@@ -24,7 +24,7 @@ const memoResult = require("result").memo(function ChannelSafeAreaBottom(channel
   fn.__initData = closure_6;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: animatedStyle };
-  const items = [absoluteFill.absoluteFill, importDefault(10397)(channelId.channelId)];
+  const items = [absoluteFill.absoluteFill, importDefault(10426)(channelId.channelId)];
   obj.children = <closure_4 style={items} />;
   return jsx(importDefault(3991).View, { style: animatedStyle });
 });

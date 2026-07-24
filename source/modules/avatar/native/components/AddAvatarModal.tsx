@@ -1,9 +1,9 @@
-// Module ID: 16116
-// Function ID: 124948
+// Module ID: 16163
+// Function ID: 125272
 // Name: AddAvatarScreen
-// Dependencies: [5, 57, 31, 27, 7841, 653, 33, 4130, 689, 5084, 5052, 1557, 566, 7854, 16117, 7884, 4674, 7844, 7846, 4126, 1212, 16126, 1273, 4543, 16114, 480, 5788, 5087, 5519, 2]
+// Dependencies: [5, 57, 31, 27, 7930, 653, 33, 4130, 689, 5084, 5052, 1557, 566, 7943, 16164, 7971, 4674, 7933, 7935, 4126, 1212, 16173, 1273, 4543, 16161, 480, 5788, 5087, 5517, 2]
 
-// Module 16116 (AddAvatarScreen)
+// Module 16163 (AddAvatarScreen)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -38,9 +38,9 @@ function AddAvatarScreen() {
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getPendingChanges().pendingAvatar);
   if (null != first1) {
-    let obj1 = _require(7854);
-    obj = { imageUri: _require(16117).DEFAULT_AVATARS[first1] };
-    let obj3 = _require(7854);
+    let obj1 = _require(7943);
+    obj = { imageUri: _require(16164).DEFAULT_AVATARS[first1] };
+    let obj3 = _require(7943);
     obj.description = obj3.generateAvatarDescription();
     pendingImage = obj1.createPendingImage(obj);
   }
@@ -49,7 +49,7 @@ function AddAvatarScreen() {
     tmp11 = pendingImage;
   }
   let closure_3 = tmp11;
-  let obj4 = _require(7884);
+  let obj4 = _require(7971);
   let imageUri;
   if (null != tmp11) {
     imageUri = tmp11.imageUri;
@@ -83,7 +83,7 @@ function AddAvatarScreen() {
       return _handleSelectAvatar(...arguments);
     }
   };
-  items3[1] = callback(first1(16126), obj6);
+  items3[1] = callback(first1(16173), obj6);
   const obj7 = { style: tmp.errorContainer };
   const obj8 = { style: tmp.errorText };
   if (first) {
@@ -94,7 +94,7 @@ function AddAvatarScreen() {
   obj7.children = callback(_require(1273).LegacyText, obj8);
   items3[2] = callback(View, obj7);
   obj2.children = items3;
-  const items4 = [callback2(View, obj2), callback(first1(16117), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), ];
+  const items4 = [callback2(View, obj2), callback(first1(16164), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), ];
   const obj9 = { style: tmp.buttonContainer };
   const obj10 = {};
   const intl4 = _require(1212).intl;

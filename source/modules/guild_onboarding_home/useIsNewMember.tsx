@@ -1,10 +1,10 @@
-// Module ID: 5608
-// Function ID: 47684
+// Module ID: 5606
+// Function ID: 47681
 // Name: _getIsNewMember
 // Dependencies: [1909, 1917, 3746, 1360, 664, 566, 2]
 // Exports: default, getIsNewMember
 
-// Module 5608 (_getIsNewMember)
+// Module 5606 (_getIsNewMember)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { GuildMemberFlags } from "GuildMemberFlags";

@@ -1,10 +1,10 @@
-// Module ID: 14078
-// Function ID: 108299
+// Module ID: 14128
+// Function ID: 108622
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [31, 13998, 3991, 2]
+// Dependencies: [31, 14048, 3991, 2]
 // Exports: default
 
-// Module 14078 (useQuestDockAnimatedBorderRadius)
+// Module 14128 (useQuestDockAnimatedBorderRadius)
 import result from "result";
 
 const require = arg1;

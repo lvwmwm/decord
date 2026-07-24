@@ -1,5 +1,5 @@
 // Module ID: 6721
-// Function ID: 52237
+// Function ID: 52259
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 6, 7, 1316, 1194, 3, 1898, 1882, 22, 2]
 
@@ -142,7 +142,7 @@ let tmp4 = (() => {
           }, "handleUserSettingsProtoChange");
         }
       };
-      obj = f52249(UserSettingsProto[8]);
+      obj = f52271(UserSettingsProto[8]);
       this.throttledOnChange = obj.debounce(this.handleUserSettingsProtoChange, 0);
       return;
     }

@@ -1,10 +1,10 @@
-// Module ID: 16432
-// Function ID: 128055
+// Module ID: 16479
+// Function ID: 128379
 // Name: useArchiveOrDelete
-// Dependencies: [5, 57, 31, 14101, 14116, 1212, 4471, 1273, 44, 3830, 2]
+// Dependencies: [5, 57, 31, 14151, 14166, 1212, 4471, 1273, 44, 3830, 2]
 // Exports: default
 
-// Module 16432 (useArchiveOrDelete)
+// Module 16479 (useArchiveOrDelete)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -30,18 +30,18 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId)
     const obj = callback(tmp);
     return obj(...arguments);
   }
-  let obj = _require(14101);
+  let obj = _require(14151);
   const subscriptionListing = obj.useSubscriptionListing(editStateId);
-  const removeEditStateId = importAll(14116).useEditStateIds(groupListingId, guildId).removeEditStateId;
-  const obj2 = importAll(14116);
-  const deleteSubscriptionListing = _require(14101).useDeleteSubscriptionListing();
+  const removeEditStateId = importAll(14166).useEditStateIds(groupListingId, guildId).removeEditStateId;
+  const obj2 = importAll(14166);
+  const deleteSubscriptionListing = _require(14151).useDeleteSubscriptionListing();
   ({ error, deleteSubscriptionListing: closure_8, submitting } = deleteSubscriptionListing);
-  const obj3 = _require(14101);
-  const archiveSubscriptionListing = _require(14101).useArchiveSubscriptionListing();
+  const obj3 = _require(14151);
+  const archiveSubscriptionListing = _require(14151).useArchiveSubscriptionListing();
   ({ error: error2, archiveSubscriptionListing: closure_9 } = archiveSubscriptionListing);
   let closure_10 = removeEditStateId(null);
-  const obj4 = _require(14101);
-  const first = callback(importAll(14116).useName(editStateId), 1)[0];
+  const obj4 = _require(14151);
+  const first = callback(importAll(14166).useName(editStateId), 1)[0];
   let archived;
   if (null != subscriptionListing) {
     archived = subscriptionListing.archived;

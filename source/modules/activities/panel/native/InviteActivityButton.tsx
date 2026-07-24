@@ -1,8 +1,8 @@
-// Module ID: 15708
-// Function ID: 121134
-// Dependencies: [31, 10444, 4810, 33, 4098, 15709, 1934, 566, 10913, 4543, 10196, 1212, 2]
+// Module ID: 15755
+// Function ID: 121456
+// Dependencies: [31, 10473, 4810, 33, 4098, 15756, 1934, 566, 10940, 4543, 10226, 1212, 2]
 
-// Module 15708
+// Module 15755
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ const memoResult = require("result").memo(function InviteActivityButton(applicat
           obj = { activity: stateFromStores };
           obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
         },
-      icon: stateFromStores(10196)
+      icon: stateFromStores(10226)
     };
     const intl = applicationId(1212).intl;
     obj.text = intl.string(applicationId(1212).t["OzOM/q"]);
@@ -39,7 +39,7 @@ const memoResult = require("result").memo(function InviteActivityButton(applicat
           obj = { activity: stateFromStores };
           obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
         },
-      icon: stateFromStores(10196)
+      icon: stateFromStores(10226)
     });
   }
   return tmp2;

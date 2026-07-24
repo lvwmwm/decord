@@ -1,7 +1,7 @@
 // Module ID: 8091
-// Function ID: 64156
+// Function ID: 64113
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8033, 8092, 8042]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8078, 8092, 8087]
 
 // Module 8091 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Line";
-tmp3.defaultProps = { x1: 0, y1: 0, x2: 0, y2: 0 };
+tmp3.displayName = "Circle";
+tmp3.defaultProps = { cx: 0, cy: 0, r: 0 };
 
 export default tmp3;

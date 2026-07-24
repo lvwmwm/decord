@@ -1,10 +1,10 @@
-// Module ID: 10526
-// Function ID: 82169
+// Module ID: 10555
+// Function ID: 82361
 // Name: _getThermalState
-// Dependencies: [477, 10511, 2]
+// Dependencies: [477, 10540, 2]
 // Exports: default, getThermalState
 
-// Module 10526 (_getThermalState)
+// Module 10555 (_getThermalState)
 function _getThermalState(rawThermalState) {
   if (null == rawThermalState) {
     return obj.UNHANDLED;
@@ -47,10 +47,10 @@ obj = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERAT
 const result = require("set").fileFinishedImporting("modules/device/useThermalState.tsx");
 
 export default function useThermalState() {
-  return _getThermalState(importDefault(10511).useRawThermalState());
+  return _getThermalState(importDefault(10540).useRawThermalState());
 };
 export const ThermalStates = obj;
 export const AndroidThermalStates = obj;
 export const getThermalState = function getThermalState() {
-  return _getThermalState(importDefault(10511).getRawThermalState());
+  return _getThermalState(importDefault(10540).getRawThermalState());
 };

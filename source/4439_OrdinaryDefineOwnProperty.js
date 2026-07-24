@@ -1,5 +1,5 @@
 // Module ID: 4439
-// Function ID: 38933
+// Function ID: 38934
 // Name: OrdinaryDefineOwnProperty
 // Dependencies: [4376, 518, 4423, 4427, 519, 4440, 539, 4432, 4428, 4441, 4442]
 

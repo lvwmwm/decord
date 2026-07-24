@@ -1,9 +1,9 @@
-// Module ID: 13388
-// Function ID: 102911
+// Module ID: 13441
+// Function ID: 103238
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [662, 653, 566, 1317, 22, 1318, 587, 21, 2]
 
-// Module 13388 (_createForOfIteratorHelperLoose)
+// Module 13441 (_createForOfIteratorHelperLoose)
 import MAX_FAVORITES from "MAX_FAVORITES";
 import { ID_REGEX } from "ME";
 

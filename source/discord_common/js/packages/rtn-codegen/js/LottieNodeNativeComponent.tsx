@@ -1,9 +1,9 @@
-// Module ID: 7687
-// Function ID: 61386
+// Module ID: 7776
+// Function ID: 61672
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 117, 2]
 
-// Module 7687 (__INTERNAL_VIEW_CONFIG)
+// Module 7776 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 let obj = { uiViewClassName: "NativeLottieNode", validAttributes: {} };

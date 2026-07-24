@@ -1,10 +1,10 @@
-// Module ID: 10854
-// Function ID: 84270
+// Module ID: 10881
+// Function ID: 84459
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4167, 4175, 653, 6979, 7633, 1212, 10855, 5615, 5611, 3104, 7791, 8002, 4119, 7459, 478, 566, 1327, 5470, 2]
+// Dependencies: [57, 31, 4167, 4175, 653, 6978, 7722, 1212, 10882, 5613, 5609, 3104, 7882, 7433, 4119, 7539, 478, 566, 1327, 5468, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10854 (_createForOfIteratorHelperLoose)
+// Module 10881 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -100,7 +100,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(7633)(theme.theme));
+  ({ colors, baseColors } = importDefault(7722)(theme.theme));
   const value = closure_6.get(skuId);
   let applicationId;
   if (null != value) {
@@ -109,7 +109,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   const application = _isNativeReflectConstruct.getApplication(applicationId);
   const isFetchingResult = closure_6.isFetching(skuId);
   let result = null != applicationId;
-  const tmp = importDefault(7633)(theme.theme);
+  const tmp = importDefault(7722)(theme.theme);
   if (result) {
     result = _isNativeReflectConstruct.isFetchingApplication(applicationId);
   }
@@ -131,11 +131,11 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (importDefault(10855)(application)) {
+        if (importDefault(10882)(application)) {
           if ("guild" !== guildOrApplication.type) {
-            const result2 = require(5615) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
-            const obj2 = require(5615) /* transformStorefrontSKUPricesServer */;
-            const str4 = require(5611) /* _createForOfIteratorHelperLoose */.getCardImageURL(value);
+            const result2 = require(5613) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
+            const obj2 = require(5613) /* transformStorefrontSKUPricesServer */;
+            const str4 = require(5609) /* _createForOfIteratorHelperLoose */.getCardImageURL(value);
             str = undefined;
             if (null != str4) {
               str = str4.toString();

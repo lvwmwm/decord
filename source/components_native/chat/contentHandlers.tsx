@@ -1,9 +1,9 @@
-// Module ID: 10865
-// Function ID: 84513
+// Module ID: 10892
+// Function ID: 84702
 // Name: onLongPressLink
-// Dependencies: [5, 9525, 9581, 8341, 3827, 9528, 8492, 5484, 4098, 10866, 1934, 21, 3803, 1212, 5492, 3830, 4470, 9385, 2]
+// Dependencies: [5, 9561, 9617, 8385, 3827, 9564, 8537, 5482, 4098, 10893, 1934, 21, 3803, 1212, 5490, 3830, 4470, 9421, 2]
 
-// Module 10865 (onLongPressLink)
+// Module 10892 (onLongPressLink)
 import importDefaultResult from "castNativeSyntheticEventData";
 
 const require = arg1;
@@ -16,7 +16,7 @@ onLongPressLink = function onLongPressLink(nativeEvent) {
   }
   if (tmp) {
     const obj = { urlString: url };
-    importDefault(9525)(obj);
+    importDefault(9561)(obj);
   }
 };
 // CreateGeneratorClosureLongIndex (0x67)
@@ -37,21 +37,21 @@ obj.onTapMention = function onTapMention(nativeEvent) {
   let roleId;
   let roleName;
   let userId;
-  let obj = parsedUserId(9528);
+  let obj = parsedUserId(9564);
   const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
   ({ roleId, guildId } = nativeSyntheticEventData);
   if (null != userId) {
     obj = { userId, channelId };
-    const items = [importDefault(5484).USER_MENTION];
+    const items = [importDefault(5482).USER_MENTION];
     obj.sourceAnalyticsLocations = items;
-    importDefault(8492)(obj);
-    const tmp22 = importDefault(8492);
+    importDefault(8537)(obj);
+    const tmp22 = importDefault(8537);
   } else {
     if (null != roleId) {
       if (null != guildId) {
         obj = { guildId, roleId, channelId };
-        importDefault(4098).openLazy(parsedUserId(1934)(10866, dependencyMap.paths), "RoleMembersActionSheet", obj);
+        importDefault(4098).openLazy(parsedUserId(1934)(10893, dependencyMap.paths), "RoleMembersActionSheet", obj);
         const obj9 = importDefault(4098);
       }
     }
@@ -59,7 +59,7 @@ obj.onTapMention = function onTapMention(nativeEvent) {
       if (null != guildId) {
         const obj1 = { guildId };
         const obj6 = importDefault(4098);
-        const tmp14 = parsedUserId(1934)(10866, dependencyMap.paths);
+        const tmp14 = parsedUserId(1934)(10893, dependencyMap.paths);
         obj1.roleId = importDefault(21).castGuildIdAsEveryoneGuildRoleId(guildId);
         obj1.channelId = channelId;
         obj6.openLazy(tmp14, "RoleMembersActionSheet", obj1);
@@ -105,14 +105,14 @@ obj.onTapInlineCode = function onTapInlineCode(nativeEvent) {
     tmp = "string" === typeof node.content;
   }
   if (tmp) {
-    require(5492) /* _copy */.copy(node.content);
-    const obj = require(5492) /* _copy */;
+    require(5490) /* _copy */.copy(node.content);
+    const obj = require(5490) /* _copy */;
     const result = require(3830) /* presentAddedFriendToast */.presentCopiedToClipboard();
     const obj2 = require(3830) /* presentAddedFriendToast */;
   }
 };
 obj.onTapEmoji = function onTapEmoji(emojiNode) {
-  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9385, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9421, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
 };
 let result = require("isAttachmentUrl").fileFinishedImporting("components_native/chat/contentHandlers.tsx");
 

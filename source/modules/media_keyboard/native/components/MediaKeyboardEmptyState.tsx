@@ -1,10 +1,10 @@
-// Module ID: 9676
-// Function ID: 75330
+// Module ID: 9710
+// Function ID: 75542
 // Name: MediaKeyboardEmptyState
-// Dependencies: [31, 27, 4344, 33, 4130, 689, 4126, 4543, 5791, 1212, 9677, 9671, 9678, 2]
+// Dependencies: [31, 27, 4344, 33, 4130, 689, 4126, 4543, 5791, 1212, 9711, 9705, 9712, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 9676 (MediaKeyboardEmptyState)
+// Module 9710 (MediaKeyboardEmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NativePermissionStatus } from "NativePermissionStatus";
@@ -58,16 +58,16 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl3 = require(1212) /* getSystemLocale */.intl;
           obj.actionLabel = intl3.string(require(1212) /* getSystemLocale */.t.JuXTi6);
           obj.actionPress = tmp2;
-          obj.imageSource = importDefault(9677);
+          obj.imageSource = importDefault(9711);
           const intl4 = require(1212) /* getSystemLocale */.intl;
           obj.label = intl4.string(require(1212) /* getSystemLocale */.t["5g7NcN"]);
           return callback(MediaKeyboardEmptyState, obj);
         } else if (showCameraButton) {
-          obj = { actionIcon: callback(require(9671) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" }) };
+          obj = { actionIcon: callback(require(9705) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" }) };
           const intl = require(1212) /* getSystemLocale */.intl;
           obj.actionLabel = intl.string(require(1212) /* getSystemLocale */.t.tpoWUd);
           obj.actionPress = tmp;
-          obj.imageSource = importDefault(9678);
+          obj.imageSource = importDefault(9712);
           const intl2 = require(1212) /* getSystemLocale */.intl;
           obj.label = intl2.string(require(1212) /* getSystemLocale */.t.YOvRBZ);
           return callback(MediaKeyboardEmptyState, obj);
@@ -79,7 +79,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
   const intl5 = require(1212) /* getSystemLocale */.intl;
   obj.actionLabel = intl5.string(require(1212) /* getSystemLocale */.t["457oeG"]);
   obj.actionPress = photosEmpty.onPressPrivacySettings;
-  obj.imageSource = importDefault(9677);
+  obj.imageSource = importDefault(9711);
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl6.string(require(1212) /* getSystemLocale */.t["8p9jGu"]);
   return callback(MediaKeyboardEmptyState, obj);

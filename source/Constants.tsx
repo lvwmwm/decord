@@ -1139,6 +1139,9 @@ obj = {
   ORDER_SIGN(orderId) {
     return "/billing/orders/" + orderId + "/sign";
   },
+  ORDER_CANCEL_SIGNING(outer1_0) {
+    return "/billing/orders/" + outer1_0 + "/cancel-signing";
+  },
   ORDER_DISCARD(arg0) {
     return "/billing/orders/" + arg0 + "/discard";
   },
@@ -2350,9 +2353,9 @@ if (keys !== undefined) {
     continue;
   }
 }
-for (const key16298 in _module6) {
-  let tmp43 = key16298;
-  arg5[key16298] = sum[key16298];
+for (const key16300 in _module6) {
+  let tmp43 = key16300;
+  arg5[key16300] = sum[key16300];
   continue;
 }
 
@@ -2552,7 +2555,7 @@ export const SubscriptionStatusTypes = obj10;
 export const SubscriptionStatusTypesSets = obj11;
 export const InvoiceStatusTypes = { OPEN: 1, [1]: "OPEN", PAID: 2, [2]: "PAID", VOID: 3, [3]: "VOID", UNCOLLECTIBLE: 4, [4]: "UNCOLLECTIBLE" };
 export const PaymentModalPriceChangedError = "Price changed";
-export const AutoCompleteResultTypes = { USER: "USER", GLOBAL: "GLOBAL", ROLE: "ROLE", CHANNEL: "CHANNEL", EMOJI: "EMOJI", EMOJI_PREMIUM_UPSELL: "EMOJI_PREMIUM_UPSELL", SLASH: "SLASH", CHOICE: "CHOICE", STICKER: "STICKER", CHOICE_LOADING: "CHOICE_LOADING", LABEL: "LABEL" };
+export const AutoCompleteResultTypes = { USER: "USER", GLOBAL: "GLOBAL", ROLE: "ROLE", CHANNEL: "CHANNEL", EMOJI: "EMOJI", EMOJI_PREMIUM_UPSELL: "EMOJI_PREMIUM_UPSELL", SLASH: "SLASH", CHOICE: "CHOICE", STICKER: "STICKER", CHOICE_LOADING: "CHOICE_LOADING", LABEL: "LABEL", GAME_MENTION: "GAME_MENTION" };
 export const Accessibility = frozen10;
 export const ChatInputComponentViewedTypes = { GIF: "GIF", GIF_SEARCH: "GIF search", EMOJI: "emoji", EMOJI_SEARCH: "emoji search", CAMERA: "camera", NATIVE_MEDIA_PICKER: "native media picker", NITRO_GIFTING: "nitro gifting", SLASH_COMMAND: "slash command", START_THREAD: "start thread", ATTACH_FILE: "attach file", MEDIA_PICKER: "media picker", STICKER: "sticker", STICKER_SEARCH: "sticker search", ADD_BUTTON: "add button", APPS_BUTTON: "apps button", APPS: "apps", POLLS: "polls" };
 export const AnalyticsOverlayLocations = { OVERLAY_UNLOCKED: "overlay_unlocked", OVERLAY_UNLOCKED_PINNED: "overlay_unlocked_pinned", OVERLAY_LOCKED_ACTIVATED: "overlay_locked_activated" };

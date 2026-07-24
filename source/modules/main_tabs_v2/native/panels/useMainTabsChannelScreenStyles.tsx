@@ -1,10 +1,10 @@
-// Module ID: 15258
-// Function ID: 116431
+// Module ID: 15305
+// Function ID: 116753
 // Name: useMainTabsChannelScreenStyles
 // Dependencies: [31, 27, 4130, 689, 3991, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 15258 (useMainTabsChannelScreenStyles)
+// Module 15305 (useMainTabsChannelScreenStyles)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

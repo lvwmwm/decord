@@ -1,5 +1,5 @@
 // Module ID: 4260
-// Function ID: 37365
+// Function ID: 37366
 // Name: cloneRegExp
 // Dependencies: []
 

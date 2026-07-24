@@ -1,11 +1,11 @@
 // Module ID: 9321
-// Function ID: 72847
+// Function ID: 72752
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9321 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "18d0a2a6cf6cc6fa0358c3bbfd2bce6e", name: "wumpus-mario", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "94a3ac930e81037e0d0d694987ad1d50", name: "PaperIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

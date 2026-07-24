@@ -1,5 +1,5 @@
 // Module ID: 1392
-// Function ID: 16594
+// Function ID: 16595
 // Name: getAvatarURL
 // Dependencies: [653, 1393, 1395, 477, 1426, 1440, 1826, 1827, 24, 1828, 1830, 1831, 21, 1445, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberBannerURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedImageURL, isVideoURL

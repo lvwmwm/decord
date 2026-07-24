@@ -1,10 +1,10 @@
-// Module ID: 11179
-// Function ID: 86914
+// Module ID: 11209
+// Function ID: 87183
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4217, 1849, 1347, 566, 3748, 5470, 1327, 2]
+// Dependencies: [31, 4217, 1849, 1347, 566, 3748, 5468, 1327, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11179 (_createForOfIteratorHelperLoose)
+// Module 11209 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -96,7 +96,7 @@ function useEmbeddedApps(arr, arg1) {
   const _require = arr;
   const importDefault = arg1;
   let mapped = arr.map((applicationId) => applicationId.applicationId);
-  let tmp2 = importDefault(5470)(mapped);
+  let tmp2 = importDefault(5468)(mapped);
   const dependencyMap = tmp2;
   const set = new Set([]);
   const tmp3 = _createForOfIteratorHelperLoose(arr);

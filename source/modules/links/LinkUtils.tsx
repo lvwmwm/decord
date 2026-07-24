@@ -1,5 +1,5 @@
 // Module ID: 4321
-// Function ID: 37859
+// Function ID: 37860
 // Name: canViewChannel
 // Dependencies: [1348, 1838, 3758, 653, 1355, 4118, 2]
 // Exports: isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath

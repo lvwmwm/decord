@@ -1,10 +1,10 @@
-// Module ID: 10035
-// Function ID: 77525
+// Module ID: 10067
+// Function ID: 77719
 // Name: DirectoryEntryTypes
 // Dependencies: [653, 1212, 3763, 483, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap
 
-// Module 10035 (DirectoryEntryTypes)
+// Module 10067 (DirectoryEntryTypes)
 import ME from "ME";
 
 let closure_3;

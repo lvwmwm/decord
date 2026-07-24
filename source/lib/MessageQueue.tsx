@@ -1,10 +1,10 @@
-// Module ID: 7076
-// Function ID: 56571
+// Module ID: 7075
+// Function ID: 56580
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 102, 18, 4129, 1194, 4222, 653, 4123, 664, 3, 507, 4324, 7077, 6695, 1881, 44, 4664, 4666, 4670, 7078, 2]
+// Dependencies: [29, 6, 7, 15, 17, 102, 18, 4129, 1194, 4222, 653, 4123, 664, 3, 507, 4324, 7076, 6695, 1881, 44, 4664, 4666, 4670, 7077, 2]
 // Exports: getFailedMessageId, isMessageDataCommand
 
-// Module 7076 (_isNativeReflectConstruct)
+// Module 7075 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _inherits from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

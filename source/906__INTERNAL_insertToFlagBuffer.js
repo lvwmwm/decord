@@ -1,5 +1,5 @@
 // Module ID: 906
-// Function ID: 9953
+// Function ID: 9954
 // Name: _INTERNAL_insertToFlagBuffer
 // Dependencies: [65, 825, 800, 801, 796]
 // Exports: _INTERNAL_addFeatureFlagToActiveSpan, _INTERNAL_copyFlagsFromScopeToEvent, _INTERNAL_insertFlagToScope

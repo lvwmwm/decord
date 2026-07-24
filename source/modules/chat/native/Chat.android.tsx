@@ -1,9 +1,9 @@
-// Module ID: 10023
-// Function ID: 77458
+// Module ID: 10055
+// Function ID: 77652
 // Name: DCDChatList
-// Dependencies: [31, 4122, 33, 4130, 1324, 5217, 10024, 10025, 566, 9441, 2]
+// Dependencies: [31, 4122, 33, 4130, 1324, 5217, 10056, 10057, 566, 9477, 2]
 
-// Module 10023 (DCDChatList)
+// Module 10055 (DCDChatList)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -22,8 +22,8 @@ function DCDChatList() {
   obj = { gesture: memo };
   obj = { style: callback3().chatList, floatingChatInputEnabled: obj.useMobileVisualRefreshConfig({ location: "DCDChatList" }).chatInputFloating };
   const tmp = callback3();
-  obj.children = callback(require(10025) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "chat_list_android" });
-  obj.children = callback(importDefault(10024), obj);
+  obj.children = callback(require(10057) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "chat_list_android" });
+  obj.children = callback(importDefault(10056), obj);
   return callback(require(5217) /* Directions */.GestureDetector, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
@@ -38,7 +38,7 @@ const forwardRefResult = importAllResult.forwardRef((children) => {
   obj["ref"] = arg1;
   const items1 = [callback(DCDChatList, {}), children.children];
   obj["children"] = items1;
-  return callback2(importDefault(9441), obj);
+  return callback2(importDefault(9477), obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat/native/Chat.android.tsx");
 

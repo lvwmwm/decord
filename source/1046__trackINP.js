@@ -1,5 +1,5 @@
 // Module ID: 1046
-// Function ID: 11230
+// Function ID: 11231
 // Name: _trackINP
 // Dependencies: [77, 1035, 794, 1010, 1015]
 // Exports: registerInpInteractionListener, startTrackingINP

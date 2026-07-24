@@ -1,10 +1,10 @@
-// Module ID: 8625
-// Function ID: 68355
+// Module ID: 8667
+// Function ID: 68577
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [31, 27, 33, 4130, 689, 8597, 3827, 1557, 5500, 5189, 4126, 1212, 4543, 4098, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 8639, 3827, 1557, 5498, 5189, 4126, 1212, 4543, 4098, 2]
 // Exports: default
 
-// Module 8625 (GameProfileStoreLinksActionSheet)
+// Module 8667 (GameProfileStoreLinksActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   let websiteButtons;
   ({ websiteButtons, trackAction: require } = gameName);
   const tmp = _createForOfIteratorHelperLoose();
-  importDefault = importDefault(8597)(importDefault(3827).openURL);
+  importDefault = importDefault(8639)(importDefault(3827).openURL);
   let obj = {};
   obj = {};
   obj = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
@@ -44,7 +44,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   items[1] = callback(require(4126) /* Text */.Text, obj3);
   obj1.children = items;
   const items1 = [callback2(View, obj1), ];
-  const tmp2 = importDefault(8597);
+  const tmp2 = importDefault(8639);
   items1[1] = callback(View, {
     style: tmp.buttons,
     children: websiteButtons.map((url) => {
@@ -68,6 +68,6 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   });
   obj.children = items1;
   obj.children = callback2(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5500) /* ActionSheet */.ActionSheet, obj);
+  return callback(require(5498) /* ActionSheet */.ActionSheet, obj);
 };
 export const ACTION_SHEET_KEY = "game-profile-store-links";

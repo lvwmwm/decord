@@ -1,10 +1,10 @@
-// Module ID: 9149
-// Function ID: 71717
+// Module ID: 9185
+// Function ID: 71926
 // Name: useUserVerificationState
-// Dependencies: [31, 1849, 9150, 566, 3950, 2]
+// Dependencies: [31, 1849, 9186, 566, 3950, 2]
 // Exports: useSetInitialVerificationEffect
 
-// Module 9149 (useUserVerificationState)
+// Module 9185 (useUserVerificationState)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

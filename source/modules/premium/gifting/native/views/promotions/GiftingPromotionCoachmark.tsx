@@ -1,10 +1,10 @@
-// Module ID: 15611
-// Function ID: 120403
+// Module ID: 15658
+// Function ID: 120725
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [31, 27, 4122, 653, 1345, 33, 4130, 689, 566, 9688, 5464, 5484, 4098, 9679, 5187, 477, 7876, 5085, 4126, 4543, 1212, 2]
+// Dependencies: [31, 27, 4122, 653, 1345, 33, 4130, 689, 566, 9722, 5462, 5482, 4098, 9713, 5187, 477, 7964, 5085, 4126, 4543, 1212, 2]
 // Exports: default
 
-// Module 15611 (GiftingPromotionCoachmarkActionSheet)
+// Module 15658 (GiftingPromotionCoachmarkActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -42,13 +42,13 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let obj = markAsDismissed(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let obj1 = markAsDismissed(9688);
+  let obj1 = markAsDismissed(9722);
   let asset;
   if (null != coachmarkComponent) {
     asset = coachmarkComponent.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = obj1.useThemeAndReducedMotionAwareAssetUrl(asset);
-  analyticsLocations = analyticsLocations(5464)(analyticsLocations(5484).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)(analyticsLocations(5482).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items1 = [analyticsLocations, markAsDismissed];
   let tmp8Result = null;
   if (null != coachmarkComponent) {
@@ -85,7 +85,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           ({ imageShared: arr3[0], imageWrapperAndroid: arr3[1] } = tmp);
           obj5.style = items4;
           const obj6 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared };
-          obj5.children = callback(analyticsLocations(7876), obj6);
+          obj5.children = callback(analyticsLocations(7964), obj6);
           let tmp21 = callback(View, obj5);
         }
       }

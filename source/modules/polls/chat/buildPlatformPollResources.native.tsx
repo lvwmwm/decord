@@ -1,10 +1,10 @@
-// Module ID: 7904
-// Function ID: 62936
+// Module ID: 7991
+// Function ID: 63247
 // Name: buildPlatformPollResources
-// Dependencies: [22, 7905, 4130, 689, 7635, 5181, 5506, 1395, 2]
+// Dependencies: [22, 7992, 4130, 689, 7724, 5181, 5504, 1395, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 7904 (buildPlatformPollResources)
+// Module 7991 (buildPlatformPollResources)
 import importDefaultResult from "apply";
 
 const require = arg1;
@@ -42,9 +42,9 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   const importDefault = layoutType;
   const obj = { styles: importDefault(22).mapValues(closure_3, (arg0) => arg0(closure_0, closure_1)) };
   const obj2 = importDefault(22);
-  obj.selectedIcon = _require(7635).getAssetUriForEmbed(importDefault(5181));
-  const obj3 = _require(7635);
-  obj.checkmarkIcon = _require(7635).getAssetUriForEmbed(importDefault(5506));
+  obj.selectedIcon = _require(7724).getAssetUriForEmbed(importDefault(5181));
+  const obj3 = _require(7724);
+  obj.checkmarkIcon = _require(7724).getAssetUriForEmbed(importDefault(5504));
   return obj;
 };
 export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {

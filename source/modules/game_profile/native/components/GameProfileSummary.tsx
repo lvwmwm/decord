@@ -1,10 +1,10 @@
-// Module ID: 8646
-// Function ID: 68445
+// Module ID: 8687
+// Function ID: 68665
 // Name: GameProfileSummary
-// Dependencies: [57, 31, 27, 33, 4130, 8600, 1212, 4126, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 8642, 1212, 4126, 2]
 // Exports: default
 
-// Module 8646 (GameProfileSummary)
+// Module 8687 (GameProfileSummary)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

@@ -1,5 +1,5 @@
 // Module ID: 5644
-// Function ID: 48258
+// Function ID: 48268
 // Name: useGuildShopPreviewVisible
 // Dependencies: [3758, 653, 3946, 1334, 624, 5639, 2]
 // Exports: useGuildShopPreviewVisible

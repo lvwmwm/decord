@@ -1,10 +1,10 @@
-// Module ID: 7110
-// Function ID: 57153
+// Module ID: 7109
+// Function ID: 57166
 // Name: dismissGiftIntent
-// Dependencies: [6902, 1194, 4349, 1851, 653, 507, 686, 1184, 675, 7111, 2]
+// Dependencies: [6901, 1194, 4349, 1851, 653, 507, 686, 1184, 675, 7110, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 7110 (dismissGiftIntent)
+// Module 7109 (dismissGiftIntent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -24,7 +24,7 @@ function dismissGiftIntent(FRIEND_ANNIVERSARY, recipientUserId, explicit) {
   }
   obj.affinity = dmProbability;
   obj.track(constants.GIFT_INTENT_DISMISSED, obj);
-  let result = require(7111) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
+  let result = require(7110) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
   if (result) {
     result = FRIEND_ANNIVERSARY !== GiftIntentType.UNSPECIFIED;
   }

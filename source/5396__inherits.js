@@ -1,5 +1,5 @@
 // Module ID: 5396
-// Function ID: 46234
+// Function ID: 46239
 // Name: _inherits
 // Dependencies: [5397]
 

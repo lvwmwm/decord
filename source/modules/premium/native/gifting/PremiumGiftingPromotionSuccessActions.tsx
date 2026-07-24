@@ -1,10 +1,10 @@
-// Module ID: 9771
-// Function ID: 75986
+// Module ID: 9803
+// Function ID: 76180
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [31, 27, 6779, 1874, 1849, 33, 4130, 689, 566, 8809, 1456, 8776, 8206, 9680, 9772, 8229, 1873, 1273, 9766, 4543, 1212, 2]
+// Dependencies: [31, 27, 6779, 1874, 1849, 33, 4130, 689, 566, 8848, 1456, 8815, 8250, 9714, 9804, 8273, 1873, 1273, 9798, 4543, 1212, 2]
 // Exports: default
 
-// Module 9771 (PremiumGiftingPromotionSuccessActions)
+// Module 9803 (PremiumGiftingPromotionSuccessActions)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";

@@ -1,9 +1,9 @@
-// Module ID: 8718
-// Function ID: 68983
+// Module ID: 8759
+// Function ID: 69201
 // Name: memoResult1
-// Dependencies: [31, 27, 5621, 653, 33, 4130, 689, 8664, 6785, 8719, 6786, 8722, 8728, 4126, 1212, 8708, 477, 8729, 7871, 8667, 8703, 1876, 3776, 3834, 3974, 8731, 566, 4554, 8732, 2]
+// Dependencies: [31, 27, 5619, 653, 33, 4130, 689, 8705, 6785, 8760, 6786, 8763, 8769, 4126, 1212, 8749, 477, 7512, 7486, 8708, 8744, 1876, 3776, 3834, 3974, 8770, 566, 4554, 8771, 2]
 
-// Module 8718 (memoResult1)
+// Module 8759 (memoResult1)
 import importAllResult from "result";
 import { View } from "LinearGradient";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -217,9 +217,9 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(product) {
   product = product.product;
   ({ collectibleProductState, preferVCPrice, isDisabled, hidePrice } = product);
   const tmp = callback3();
-  let obj = require(8667) /* useCurrentUser */;
+  let obj = require(8708) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(8703) /* isUserPaidTier2 */;
+  let obj1 = require(8744) /* isUserPaidTier2 */;
   let isProfileFramesEarlyAccessPhase = obj1.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
   if (isProfileFramesEarlyAccessPhase) {
     let obj2 = require(6785) /* getProductOrbPrice */;
@@ -238,8 +238,8 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(product) {
   const obj9 = require(3974) /* hexToRgb */;
   const obj10 = require(3974) /* hexToRgb */;
   const hexToRgbaStringResult1 = obj9.hexToRgbaString(require(3974) /* hexToRgb */.hexWithOpacity(token, 0));
-  const productName = require(8731) /* getProductName */.getProductName(product);
-  const obj11 = require(8731) /* getProductName */;
+  const productName = require(8770) /* getProductName */.getProductName(product);
+  const obj11 = require(8770) /* getProductName */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.isFetchingGoogleSkus());
   obj = { style: items1, colors: items2, locations: [0, 0.4, 1], start: constants.START, end: constants.END };
@@ -255,7 +255,7 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(product) {
     obj2 = { product, hasShopDiscount: tmp7, discountSource: shopDiscountSource, styles: tmp, collectibleProductState, isFetchingGoogleSkus: stateFromStores, preferVCPrice, isDisabled };
     const items4 = [callback(closure_11, obj2), ];
     obj3 = { product };
-    items4[1] = callback(importDefault(8732), obj3);
+    items4[1] = callback(importDefault(8771), obj3);
     obj1.children = items4;
     tmp16 = callback2(View, obj1);
   }

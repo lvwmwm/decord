@@ -1,8 +1,8 @@
-// Module ID: 8438
-// Function ID: 67217
-// Dependencies: [5, 1909, 3759, 1194, 1917, 1838, 8439, 653, 3, 686, 507, 5717, 8446, 7852, 7849, 4942, 480, 3945, 1212, 1198, 5064, 2]
+// Module ID: 8482
+// Function ID: 67445
+// Dependencies: [5, 1909, 3759, 1194, 1917, 1838, 8483, 653, 3, 686, 507, 5717, 8490, 7941, 7938, 4942, 480, 3945, 1212, 1198, 5064, 2]
 
-// Module 8438
+// Module 8482
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -205,7 +205,7 @@ let obj = {
     const merged = Object.assign(tmp);
     let toServerGuildProfileResult = profile;
     if (null != profile) {
-      let obj3 = _require(8446);
+      let obj3 = _require(8490);
       toServerGuildProfileResult = obj3.toServerGuildProfile(profile);
     }
     obj["profile"] = toServerGuildProfileResult;
@@ -215,7 +215,7 @@ let obj = {
     obj(686).dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const pendingOriginalMd5s = store.getPendingOriginalMd5s();
     const obj5 = obj(686);
-    const obj6 = obj(7852);
+    const obj6 = obj(7941);
     const headersForMd5 = obj6.buildHeadersForMd5({ [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_ICON]: pendingOriginalMd5s.icon, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_BANNER]: pendingOriginalMd5s.banner, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_INVITE_SPLASH]: pendingOriginalMd5s.splash, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_DISCOVERY_SPLASH]: pendingOriginalMd5s.discoverySplash });
     const HTTP = _require(507).HTTP;
     const obj2 = { url: closure_10.GUILD(id), query: obj3, body: obj, headers: headersForMd5, oldFormErrors: true };

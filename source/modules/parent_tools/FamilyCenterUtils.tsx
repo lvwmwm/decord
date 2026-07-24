@@ -1,10 +1,10 @@
-// Module ID: 6828
-// Function ID: 53819
+// Module ID: 6827
+// Function ID: 53828
 // Name: getActivityTypeTextConfigs
 // Dependencies: [6769, 6770, 1212, 2198, 3712, 6771, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 6828 (getActivityTypeTextConfigs)
+// Module 6827 (getActivityTypeTextConfigs)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import items from "items";
 

@@ -1,10 +1,10 @@
-// Module ID: 9742
-// Function ID: 75787
+// Module ID: 9776
+// Function ID: 75999
 // Name: ClydeIcon
-// Dependencies: [31, 33, 689, 3833, 9743, 2]
+// Dependencies: [31, 33, 689, 3833, 9777, 2]
 // Exports: ClydeIcon
 
-// Module 9742 (ClydeIcon)
+// Module 9776 (ClydeIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ClydeIcon = function ClydeIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9743) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9777) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9743) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9777) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

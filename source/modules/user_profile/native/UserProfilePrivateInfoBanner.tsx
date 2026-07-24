@@ -1,10 +1,10 @@
-// Module ID: 12110
-// Function ID: 94865
+// Module ID: 12136
+// Function ID: 95101
 // Name: UserProfilePrivateInfoBanner
 // Dependencies: [27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: default
 
-// Module 12110 (UserProfilePrivateInfoBanner)
+// Module 12136 (UserProfilePrivateInfoBanner)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

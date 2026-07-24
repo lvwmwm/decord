@@ -1,11 +1,11 @@
 // Module ID: 16362
-// Function ID: 127722
+// Function ID: 127597
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 16362 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "b14cf67ed38d1ab1d1a28d6633250b87", name: "safety_check_light", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_settings/roles/native/images", width: 375, height: 280, scales: [2, 3], hash: "385febe027093418da10e0784f3891bd", name: "illustration-dark", type: "png" };
 
 export default registerAsset.registerAsset(obj);

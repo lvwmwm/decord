@@ -1,10 +1,10 @@
-// Module ID: 8234
-// Function ID: 65026
+// Module ID: 8278
+// Function ID: 65254
 // Name: ProfileEffectUserPreview
-// Dependencies: [31, 33, 8235, 1212, 2]
+// Dependencies: [31, 33, 8279, 1212, 2]
 // Exports: default
 
-// Module 8234 (ProfileEffectUserPreview)
+// Module 8278 (ProfileEffectUserPreview)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -27,5 +27,5 @@ export default function ProfileEffectUserPreview(profileEffect) {
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(8235), { profileEffectOverride: profileEffect });
+  return jsx(importDefault(8279), { profileEffectOverride: profileEffect });
 };

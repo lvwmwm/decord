@@ -1,5 +1,5 @@
 // Module ID: 1718
-// Function ID: 19303
+// Function ID: 19304
 // Name: ProgressTransitionManager
 // Dependencies: [6, 7, 27, 1589, 1626, 1585, 1593]
 

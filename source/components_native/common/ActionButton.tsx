@@ -1,10 +1,10 @@
-// Module ID: 9089
-// Function ID: 71230
+// Module ID: 9127
+// Function ID: 71442
 // Name: ActionButton
-// Dependencies: [31, 27, 33, 4548, 7771, 2]
+// Dependencies: [31, 27, 33, 4548, 7533, 2]
 // Exports: default
 
-// Module 9089 (ActionButton)
+// Module 9127 (ActionButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -24,6 +24,6 @@ export default function ActionButton(style) {
   ({ onPress: obj3.onPress, accessibilityLabel: obj3.accessibilityLabel } = style);
   obj.variant = str;
   obj.size = "sm";
-  obj.children = jsx(require(7771) /* IconButton */.IconButton, {});
+  obj.children = jsx(require(7533) /* IconButton */.IconButton, {});
   return <View />;
 };

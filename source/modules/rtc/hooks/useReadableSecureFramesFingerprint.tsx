@@ -1,10 +1,10 @@
-// Module ID: 8904
-// Function ID: 70280
+// Module ID: 8943
+// Function ID: 70495
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [31, 206, 8882, 2]
+// Dependencies: [31, 206, 8921, 2]
 // Exports: useReadableSecureFramesFingerprint
 
-// Module 8904 (useReadableSecureFramesFingerprint)
+// Module 8943 (useReadableSecureFramesFingerprint)
 import result from "result";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 5502
-// Function ID: 46914
+// Module ID: 5500
+// Function ID: 46911
 // Name: ActionSheetRowIcon
-// Dependencies: [31, 27, 33, 5165, 5170, 5503, 5504, 2]
+// Dependencies: [31, 27, 33, 5165, 5170, 5501, 5502, 2]
 // Exports: ActionSheetSwitchRow
 
-// Module 5502 (ActionSheetRowIcon)
+// Module 5500 (ActionSheetRowIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -50,12 +50,12 @@ ActionSheetRow.Group = function ActionSheetRowGroup(arg0) {
   let hasIcons;
   let title;
   ({ children, title, hasIcons } = arg0);
-  return <View>{jsx(require(5503) /* TableRowGroupTitle */.TableRowGroup, { hasIcons, title, children })}</View>;
+  return <View>{jsx(require(5501) /* TableRowGroupTitle */.TableRowGroup, { hasIcons, title, children })}</View>;
 };
 const result = require("jsxProd").fileFinishedImporting("design/components/Sheet/native/ActionSheetRow.native.tsx");
 
 export { ActionSheetRow };
 export const ActionSheetSwitchRow = function ActionSheetSwitchRow(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(require(5504) /* TableSwitchRow */.TableSwitchRow, {});
+  return jsx(require(5502) /* TableSwitchRow */.TableSwitchRow, {});
 };

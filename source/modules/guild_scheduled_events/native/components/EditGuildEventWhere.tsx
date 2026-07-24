@@ -1,10 +1,10 @@
-// Module ID: 8403
-// Function ID: 66877
+// Module ID: 8447
+// Function ID: 67105
 // Name: EditGuildEventWhere
-// Dependencies: [57, 31, 1348, 3758, 6758, 1354, 653, 33, 4130, 1212, 8349, 566, 1456, 8404, 8371, 4126, 4543, 1820, 8345, 3843, 8369, 8436, 3712, 8437, 5459, 8438, 2]
+// Dependencies: [57, 31, 1348, 3758, 6758, 1354, 653, 33, 4130, 1212, 8393, 566, 1456, 8448, 8415, 4126, 4543, 1820, 8389, 3843, 8413, 8480, 3712, 8481, 8482, 2]
 // Exports: default
 
-// Module 8403 (EditGuildEventWhere)
+// Module 8447 (EditGuildEventWhere)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -176,11 +176,11 @@ export default function EditGuildEventWhere(guild) {
     const intl4 = guild(ref[9]).intl;
     const obj8 = {
       onClick() {
-          guildEvent(ref[25]).open(guild.id, outer1_12.ROLES);
+          guildEvent(ref[24]).open(guild.id, outer1_12.ROLES);
         }
     };
     obj7.children = intl4.format(guild(ref[9]).t["K+DH2o"], obj8);
-    stateFromStores1 = callback3(guild(ref[24]).TextWithIOSLinkWorkaround, obj7);
+    stateFromStores1 = callback3(guild(ref[15]).Text, obj7);
   }
   items5[4] = stateFromStores1;
   obj4.children = items5;

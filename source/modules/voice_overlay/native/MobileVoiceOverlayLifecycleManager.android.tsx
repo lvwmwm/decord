@@ -1,9 +1,9 @@
-// Module ID: 13450
-// Function ID: 103499
+// Module ID: 13503
+// Function ID: 103826
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 1348, 1907, 1838, 4177, 3758, 4202, 3767, 4952, 1849, 4146, 10710, 653, 13451, 13452, 13453, 13454, 7607, 12716, 13455, 13456, 7594, 1212, 13457, 10721, 3994, 6999, 4320, 4974, 675, 4324, 63, 4530, 2]
+// Dependencies: [15, 17, 18, 6, 7, 1348, 1907, 1838, 4177, 3758, 4202, 3767, 4952, 1849, 4146, 10739, 653, 13504, 13505, 13506, 13507, 7696, 12767, 13508, 13509, 7683, 1212, 13510, 10750, 3994, 6998, 4320, 4974, 675, 4324, 63, 4530, 2]
 
-// Module 13450 (_isNativeReflectConstruct)
+// Module 13503 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "registerAsset";
 import closure_5 from "registerAsset";

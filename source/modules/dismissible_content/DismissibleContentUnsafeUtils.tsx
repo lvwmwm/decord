@@ -1,5 +1,5 @@
 // Module ID: 3946
-// Function ID: 32549
+// Function ID: 32550
 // Name: UNSAFE_isDismissibleContentDismissed
 // Dependencies: [5, 1316, 3947, 664, 3968, 1335, 1336, 21, 1333, 566, 1331, 2]
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE

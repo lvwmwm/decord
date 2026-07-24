@@ -1,10 +1,10 @@
-// Module ID: 16258
-// Function ID: 126596
+// Module ID: 16305
+// Function ID: 126920
 // Name: HeaderRow
-// Dependencies: [5, 57, 31, 27, 16252, 653, 1852, 33, 4130, 689, 8402, 9391, 675, 1212, 491, 4674, 4543, 4126, 566, 2]
+// Dependencies: [5, 57, 31, 27, 16299, 653, 1852, 33, 4130, 689, 8446, 9427, 675, 1212, 491, 4674, 4543, 4126, 566, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 16258 (HeaderRow)
+// Module 16305 (HeaderRow)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -61,7 +61,7 @@ function HeaderRow(guild) {
   [tmp5, c5] = callback(React.useState(null), 2);
   const tmp4 = callback(React.useState(null), 2);
   [c6, c7] = callback(React.useState(""), 2);
-  let obj = guild(8402);
+  let obj = guild(8446);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   const intl = guild(1212).intl;
   let items = [createUploadInstructionsListItem(intl.string(guild(1212).t.N2qTQ3), 1), , , ];

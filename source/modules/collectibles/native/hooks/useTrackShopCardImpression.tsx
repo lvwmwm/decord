@@ -1,10 +1,10 @@
-// Module ID: 8665
-// Function ID: 68574
+// Module ID: 8706
+// Function ID: 68794
 // Name: trackOnConsecutiveVisibility
-// Dependencies: [31, 653, 8666, 5464, 1450, 8667, 3776, 6786, 675, 8559, 480, 6785, 2]
+// Dependencies: [31, 653, 8707, 5462, 1450, 8708, 3776, 6786, 675, 8604, 480, 6785, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 8665 (trackOnConsecutiveVisibility)
+// Module 8706 (trackOnConsecutiveVisibility)
 import result from "result";
 import { AnalyticEvents } from "ME";
 
@@ -39,14 +39,14 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const _require = product;
   const importDefault = selectedProduct;
   const dependencyMap = flag2;
-  const collectiblesAnalyticsContext = _require(8666).useCollectiblesAnalyticsContext();
-  const analyticsLocations = importDefault(5464)().analyticsLocations;
+  const collectiblesAnalyticsContext = _require(8707).useCollectiblesAnalyticsContext();
+  const analyticsLocations = importDefault(5462)().analyticsLocations;
   const size = importDefault(1450)();
   const width = size.width;
   const height = size.height;
-  let obj = _require(8666);
-  const currentUser = _require(8667).useCurrentUser();
-  let obj2 = _require(8667);
+  let obj = _require(8707);
+  const currentUser = _require(8708).useCurrentUser();
+  let obj2 = _require(8708);
   const canUseCollectiblesResult = importDefault(3776).canUseCollectibles(currentUser);
   const obj3 = importDefault(3776);
   const shopDiscountSource = _require(6786).getShopDiscountSource(currentUser);
@@ -160,7 +160,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items2[5] = analyticsLocations;
   items2[6] = shopDiscountSource;
   const callback1 = collectiblesAnalyticsContext.useCallback(() => {
-    let obj = product(8559);
+    let obj = product(8604);
     obj = { name: product(480).ImpressionNames.SHOP_CARD, type: product(480).ImpressionTypes.VIEW };
     obj = { sku_id: selectedProduct.skuId };
     let cardId;

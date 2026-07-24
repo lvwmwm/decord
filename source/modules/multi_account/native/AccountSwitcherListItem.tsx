@@ -1,10 +1,10 @@
-// Module ID: 14737
-// Function ID: 112417
+// Module ID: 14784
+// Function ID: 112738
 // Name: AccountStatusIcon
-// Dependencies: [31, 27, 1857, 3970, 1849, 11452, 33, 4130, 566, 4091, 689, 4086, 4126, 1212, 4660, 3848, 1273, 3969, 2]
+// Dependencies: [31, 27, 1857, 3970, 1849, 11482, 33, 4130, 566, 4091, 689, 4086, 4126, 1212, 4660, 3848, 1273, 3969, 2]
 // Exports: default
 
-// Module 14737 (AccountStatusIcon)
+// Module 14784 (AccountStatusIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

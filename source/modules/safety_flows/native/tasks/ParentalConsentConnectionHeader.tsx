@@ -1,10 +1,10 @@
-// Module ID: 16571
-// Function ID: 129250
+// Module ID: 16618
+// Function ID: 129574
 // Name: ParentalConsentConnectionNavbar
-// Dependencies: [31, 27, 1849, 33, 4130, 5084, 689, 1557, 566, 4126, 5590, 1212, 2460, 2]
+// Dependencies: [31, 27, 1849, 33, 4130, 5084, 689, 1557, 566, 4126, 5588, 1212, 2460, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 16571 (ParentalConsentConnectionNavbar)
+// Module 16618 (ParentalConsentConnectionNavbar)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

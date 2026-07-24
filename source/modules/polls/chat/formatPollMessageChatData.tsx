@@ -1,10 +1,10 @@
-// Module ID: 7901
-// Function ID: 62874
+// Module ID: 7988
+// Function ID: 63185
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4122, 4991, 1348, 1917, 4349, 1849, 7902, 653, 4329, 3771, 3775, 1392, 7903, 3764, 3747, 7904, 1212, 7003, 7906, 477, 7907, 7908, 2]
+// Dependencies: [4122, 4991, 1348, 1917, 4349, 1849, 7989, 653, 4329, 3771, 3775, 1392, 7990, 3764, 3747, 7991, 1212, 7002, 7993, 477, 7994, 7995, 2]
 // Exports: default
 
-// Module 7901 (_createForOfIteratorHelperLoose)
+// Module 7988 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -204,8 +204,8 @@ function computeBasicPollChatData(message, arg1, maxSettingsForPreset) {
     let str = "";
     if (message.state === MessageStates.SENT) {
       if (null == formattedExpirationLabel) {
-        formattedExpirationLabel = require(7903) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
-        const obj2 = require(7903) /* formatExpirationLabel */;
+        formattedExpirationLabel = require(7990) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+        const obj2 = require(7990) /* formatExpirationLabel */;
       }
       str = formattedExpirationLabel;
     }

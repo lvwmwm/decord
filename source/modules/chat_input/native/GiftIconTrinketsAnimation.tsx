@@ -1,9 +1,9 @@
-// Module ID: 11356
-// Function ID: 88275
+// Module ID: 11385
+// Function ID: 88515
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [31, 27, 4122, 33, 4130, 4547, 1324, 3834, 689, 566, 1832, 477, 7956, 5085, 2]
+// Dependencies: [31, 27, 4122, 33, 4130, 4547, 1324, 3834, 689, 566, 1832, 477, 8043, 5085, 2]
 
-// Module 11356 (GiftIconTrinketsAnimation)
+// Module 11385 (GiftIconTrinketsAnimation)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -36,7 +36,7 @@ const memoResult = require("result").memo((trinketsAnimationUrl) => {
       stateFromStores = !stateFromStores;
       obj.autoplay = stateFromStores;
       obj.style = tmp3;
-      let tmp8Result = tmp8(require(7956) /* useAPNGPlayerControls */.APNGPlayer, obj);
+      let tmp8Result = tmp8(require(8043) /* useAPNGPlayerControls */.APNGPlayer, obj);
     } else {
       obj1 = {};
       obj2 = { uri: trinketsAnimationUrl };

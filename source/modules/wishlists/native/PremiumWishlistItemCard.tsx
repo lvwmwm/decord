@@ -1,10 +1,10 @@
-// Module ID: 9754
-// Function ID: 75891
+// Module ID: 9788
+// Function ID: 76103
 // Name: PremiumWishlistItemCard
-// Dependencies: [31, 33, 8672, 8673, 2]
+// Dependencies: [31, 33, 8713, 8714, 2]
 // Exports: default
 
-// Module 9754 (PremiumWishlistItemCard)
+// Module 9788 (PremiumWishlistItemCard)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -23,5 +23,5 @@ export default function PremiumWishlistItemCard(size) {
   const callback = React.useCallback(() => outer1_4(size(outer1_2[2]).PremiumSKUPreview, { size }), items);
   obj = { accessibilityLabel: sku.name, renderPreview: callback, source, isOwned: false, size };
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(8673), { accessibilityLabel: sku.name, renderPreview: callback, source, isOwned: false, size });
+  return jsx(importDefault(8714), { accessibilityLabel: sku.name, renderPreview: callback, source, isOwned: false, size });
 };

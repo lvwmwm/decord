@@ -1,10 +1,10 @@
-// Module ID: 12971
-// Function ID: 100402
+// Module ID: 13023
+// Function ID: 100725
 // Name: ReportModal
-// Dependencies: [57, 31, 27, 12972, 33, 4130, 689, 1557, 4126, 3827, 5459, 1212, 5503, 9094, 4543, 5087, 10976, 5519, 2]
+// Dependencies: [57, 31, 27, 13024, 33, 4130, 689, 1557, 4126, 3827, 1212, 5501, 9132, 4543, 5087, 11003, 5517, 2]
 // Exports: default
 
-// Module 12971 (ReportModal)
+// Module 13023 (ReportModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -36,7 +36,7 @@ function ReportModal(onSubmit) {
   obj = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.Hg8Ee7, { onClick: callback });
-  const items1 = [callback2(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj), , ];
+  const items1 = [callback2(require(4126) /* Text */.Text, obj), , ];
   obj = { style: tmp.formBody };
   const obj1 = {
     hasIcons: false,
@@ -51,10 +51,10 @@ function ReportModal(onSubmit) {
           return outer1_1(closure_0);
         }
       };
-      return outer1_9(outer1_0(tmp[13]).TableCheckboxRow, obj, arg0);
+      return outer1_9(outer1_0(tmp[12]).TableCheckboxRow, obj, arg0);
     })
   };
-  obj.children = callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj1);
+  obj.children = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj1);
   items1[1] = callback2(View, obj);
   const obj2 = { style: items2 };
   items2 = [tmp.submitButtonContainer, { paddingBottom: importDefault(1557)().bottom + 16 }];
@@ -94,9 +94,9 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
     ({ raidTypes: closure_0, onChange: closure_1, onSubmit: closure_2 } = onCloseModal);
     let obj = {};
     obj = { ignoreKeyboard: true };
-    const intl = onCloseModal(first[11]).intl;
-    obj.title = intl.string(onCloseModal(first[11]).t.uYPGsS);
-    obj.headerLeft = onCloseModal(first[15]).getHeaderCloseButton(onCloseModal.onCloseModal);
+    const intl = onCloseModal(first[10]).intl;
+    obj.title = intl.string(onCloseModal(first[10]).t.uYPGsS);
+    obj.headerLeft = onCloseModal(first[14]).getHeaderCloseButton(onCloseModal.onCloseModal);
     obj.render = function render() {
       return outer3_9(outer3_12, { raidTypes: closure_0, onChange: closure_1, onSubmit: closure_2 });
     };
@@ -120,11 +120,11 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
       });
     },
     onSubmit() {
-      const result = onCloseModal(first[16]).trackReportRaidViewed(outer1_1, outer1_2);
-      const obj = onCloseModal(first[16]);
-      onCloseModal(first[16]).handleReportRaid(outer1_1);
+      const result = onCloseModal(first[15]).trackReportRaidViewed(outer1_1, outer1_2);
+      const obj = onCloseModal(first[15]);
+      onCloseModal(first[15]).handleReportRaid(outer1_1);
       outer1_0();
     }
   }), items);
-  return callback2(onCloseModal(first[17]).Navigator, { screens, initialRouteName: "REPORT_RAID", headerStatusBarHeight: guildId(first[7])().top });
+  return callback2(onCloseModal(first[16]).Navigator, { screens, initialRouteName: "REPORT_RAID", headerStatusBarHeight: guildId(first[7])().top });
 };

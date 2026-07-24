@@ -1,10 +1,10 @@
-// Module ID: 12397
-// Function ID: 96318
+// Module ID: 12455
+// Function ID: 96646
 // Name: Header
-// Dependencies: [31, 27, 33, 4130, 4066, 5085, 1212, 3976, 12398, 12399, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 4066, 5085, 1212, 3976, 7532, 12456, 4126, 2]
 // Exports: default
 
-// Module 12397 (Header)
+// Module 12455 (Header)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,9 +30,9 @@ export default function Header(style) {
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lpNrPu);
   const tmp6 = importDefault(5085);
   if (obj3.isThemeDark(tmp2)) {
-    let tmp7Result = tmp7(12398);
+    let tmp7Result = tmp7(7532);
   } else {
-    tmp7Result = tmp7(12399);
+    tmp7Result = tmp7(12456);
   }
   obj.source = tmp7Result;
   const items1 = [tmp5(tmp6, obj), ];

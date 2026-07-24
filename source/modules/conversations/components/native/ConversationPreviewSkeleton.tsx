@@ -1,10 +1,10 @@
-// Module ID: 9291
-// Function ID: 72593
+// Module ID: 9327
+// Function ID: 72802
 // Name: ConversationPreviewSkeleton
-// Dependencies: [31, 27, 6833, 33, 4130, 689, 3991, 4131, 2]
+// Dependencies: [31, 27, 6832, 33, 4130, 689, 3991, 4131, 2]
 // Exports: default
 
-// Module 9291 (ConversationPreviewSkeleton)
+// Module 9327 (ConversationPreviewSkeleton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS";

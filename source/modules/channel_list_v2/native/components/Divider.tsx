@@ -1,10 +1,10 @@
-// Module ID: 11394
-// Function ID: 88575
+// Module ID: 11422
+// Function ID: 88814
 // Name: Divider
 // Dependencies: [31, 27, 33, 4130, 689, 1324, 2]
 // Exports: default
 
-// Module 11394 (Divider)
+// Module 11422 (Divider)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 11995
-// Function ID: 92692
+// Module ID: 12150
+// Function ID: 95216
 // Name: calculateTotalGaps
-// Dependencies: [5512, 1450, 2]
+// Dependencies: [5510, 1450, 2]
 // Exports: default
 
-// Module 11995 (calculateTotalGaps)
+// Module 12150 (calculateTotalGaps)
 import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
 
 function calculateTotalGaps(arg0, arg1) {

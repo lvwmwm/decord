@@ -1,10 +1,10 @@
-// Module ID: 14725
-// Function ID: 112260
+// Module ID: 14772
+// Function ID: 112581
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useRiveAppStatePlaybackExperiment
 
-// Module 14725 (apexExperiment)
+// Module 14772 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-rive-app-state-playback", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

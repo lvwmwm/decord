@@ -1,5 +1,5 @@
 // Module ID: 6643
-// Function ID: 51011
+// Function ID: 51022
 // Name: emitMWRCSentryErrorOnFailure
 // Dependencies: [4113, 653, 3, 6644, 6645, 1553, 668, 3827, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
@@ -25,8 +25,8 @@ function emitMWRCSentryErrorOnFailure(arg0, source, load_id) {
 importDefaultResult = new importDefaultResult("BillingStandaloneNativeUtils");
 let result = require("timestamp").fileFinishedImporting("modules/payments/native/utils/BillingStandaloneNativeUtils.tsx");
 
-export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalonePremiumCheckoutFromMobileApp(premium_plan_selection_action_sheet, arg1, arg2, arg3) {
-  const _require = premium_plan_selection_action_sheet;
+export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalonePremiumCheckoutFromMobileApp(premium_nitro_marketing_page, arg1, arg2, arg3) {
+  const _require = premium_nitro_marketing_page;
   let closure_1 = arg1;
   const dependencyMap = arg2;
   const CustomCheckoutFlow = arg3;

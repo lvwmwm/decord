@@ -1,10 +1,10 @@
-// Module ID: 15287
-// Function ID: 116573
+// Module ID: 15334
+// Function ID: 116895
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [31, 15285, 33, 3834, 689, 15286, 11383, 4098, 5500, 5502, 1392, 5085, 2]
+// Dependencies: [31, 15332, 33, 3834, 689, 15333, 11412, 4098, 5498, 5500, 1392, 5085, 2]
 // Exports: default
 
-// Module 15287 (OnboardingHomeResourcesSheet)
+// Module 15334 (OnboardingHomeResourcesSheet)
 import "result";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_3 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export default function OnboardingHomeResourcesSheet(guildId) {
   obj = {};
   obj = {
     hasIcons: true,
-    children: importDefault(15286)(guildId).map((label) => {
+    children: importDefault(15333)(guildId).map((label) => {
       let closure_0 = label;
       let obj = callback(outer1_2[10]);
       const resourceChannelIconURL = obj.getResourceChannelIconURL(label);
@@ -47,9 +47,9 @@ export default function OnboardingHomeResourcesSheet(guildId) {
       return outer1_4(guildId(outer1_2[9]).ActionSheetRow, obj, label.channelId);
     })
   };
-  obj.children = jsx(guildId(5502).ActionSheetRow.Group, {
+  obj.children = jsx(guildId(5500).ActionSheetRow.Group, {
     hasIcons: true,
-    children: importDefault(15286)(guildId).map((label) => {
+    children: importDefault(15333)(guildId).map((label) => {
       let closure_0 = label;
       let obj = callback(outer1_2[10]);
       const resourceChannelIconURL = obj.getResourceChannelIconURL(label);
@@ -77,9 +77,9 @@ export default function OnboardingHomeResourcesSheet(guildId) {
       return outer1_4(guildId(outer1_2[9]).ActionSheetRow, obj, label.channelId);
     })
   });
-  return jsx(guildId(5500).ActionSheet, {
+  return jsx(guildId(5498).ActionSheet, {
     hasIcons: true,
-    children: importDefault(15286)(guildId).map((label) => {
+    children: importDefault(15333)(guildId).map((label) => {
       let closure_0 = label;
       let obj = callback(outer1_2[10]);
       const resourceChannelIconURL = obj.getResourceChannelIconURL(label);

@@ -1,5 +1,5 @@
 // Module ID: 5793
-// Function ID: 49508
+// Function ID: 49519
 // Name: getSanitizedRestrictedGuilds
 // Dependencies: [4469, 1838, 653, 3803, 4324, 5794, 1212, 1207, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed

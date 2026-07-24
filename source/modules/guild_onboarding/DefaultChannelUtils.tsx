@@ -1,5 +1,5 @@
 // Module ID: 5060
-// Function ID: 43847
+// Function ID: 43852
 // Name: getDefaultPermissionsForChannel
 // Dependencies: [1908, 1348, 653, 483, 566, 3763, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault

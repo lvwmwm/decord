@@ -1,10 +1,10 @@
-// Module ID: 10980
-// Function ID: 85392
+// Module ID: 11007
+// Function ID: 85581
 // Name: getGuildMemberAgeInRange
 // Dependencies: [1917, 1838, 3758, 1849, 3746, 653, 566, 21, 1360, 2]
 // Exports: useCanBanMember, useCanKickMember, useCanManageMessages, useNewMemberBadge
 
-// Module 10980 (getGuildMemberAgeInRange)
+// Module 11007 (getGuildMemberAgeInRange)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";

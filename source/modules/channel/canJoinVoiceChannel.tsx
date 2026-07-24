@@ -1,5 +1,5 @@
 // Module ID: 4949
-// Function ID: 42435
+// Function ID: 42439
 // Name: canJoinVoiceChannel
 // Dependencies: [1352, 653, 2]
 // Exports: default

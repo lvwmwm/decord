@@ -1,10 +1,10 @@
-// Module ID: 9347
-// Function ID: 73023
+// Module ID: 9383
+// Function ID: 73232
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 4995, 9329, 9348, 3771, 22, 9330, 1916, 2]
+// Dependencies: [57, 31, 4995, 9365, 9384, 3771, 22, 9366, 1916, 2]
 // Exports: default
 
-// Module 9347 (_createForOfIteratorHelperLoose)
+// Module 9383 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import EmojiCategoryTypes from "EmojiCategoryTypes";
@@ -196,7 +196,7 @@ function _computeCategories(categories) {
               } else {
                 let tmp39 = require;
                 let tmp40 = dependencyMap;
-                obj6 = require(9348) /* isNSFWInvite */;
+                obj6 = require(9384) /* isNSFWInvite */;
                 if (obj6.shouldNSFWGateGuild(guild.id)) {
                   let obj7 = { emojiSections: items };
                   let obj8 = {};
@@ -388,7 +388,7 @@ function _computeSearchResults(emojis) {
   const obj1 = { type: constants3.EMOJI, emojis: substr1, emojisDisabled: set1 };
   const set = new Set();
   const tmp2 = pushCategory;
-  obj1.label = require(9330) /* _createForOfIteratorHelperLoose */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
+  obj1.label = require(9366) /* _createForOfIteratorHelperLoose */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
   obj1.footer = constants2.PREMIUM_UPSELL;
   obj.renderingData = obj1;
   obj.rowSize = rowSize;

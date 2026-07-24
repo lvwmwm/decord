@@ -1,9 +1,9 @@
-// Module ID: 13757
-// Function ID: 105515
+// Module ID: 13808
+// Function ID: 105839
 // Name: toggle
-// Dependencies: [5592, 7662, 653, 13727, 4470, 1212, 4561, 13758, 13759, 566, 10095, 2]
+// Dependencies: [5590, 7751, 653, 13778, 4470, 1212, 4561, 13809, 13810, 566, 10127, 2]
 
-// Module 13757 (toggle)
+// Module 13808 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -22,9 +22,9 @@ createToggle = {
   onValueChange: function handleUsageStatisticsChange(arg0) {
     if (arg0) {
       let items = [Consents.USAGE_STATISTICS];
-      const obj3 = require(13758) /* handleRequestSuccess */;
-      require(13758) /* handleRequestSuccess */.setConsents(items, []).catch((message) => outer1_0(outer1_2[8]).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(13758) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = require(13809) /* handleRequestSuccess */;
+      require(13809) /* handleRequestSuccess */.setConsents(items, []).catch((message) => outer1_0(outer1_2[8]).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = require(13809) /* handleRequestSuccess */.setConsents(items, []);
     } else {
       let obj = importDefault(4470);
       obj = {};
@@ -45,7 +45,7 @@ createToggle = {
     }
   },
   useIsDisabled() {
-    return require(13727) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13778) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

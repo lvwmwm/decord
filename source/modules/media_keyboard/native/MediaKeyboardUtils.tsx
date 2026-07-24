@@ -1,10 +1,10 @@
-// Module ID: 9652
-// Function ID: 75161
+// Module ID: 9686
+// Function ID: 75373
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 1280, 1348, 4468, 1906, 4467, 1552, 653, 4344, 4665, 7938, 4672, 4674, 4675, 675, 4686, 477, 4110, 9653, 1207, 9679, 4539, 9811, 9812, 22, 2]
+// Dependencies: [5, 1280, 1348, 4468, 1906, 4467, 1552, 653, 4344, 4665, 8025, 4672, 4674, 4675, 675, 4686, 477, 4110, 9687, 1207, 9713, 4539, 9843, 9844, 22, 2]
 // Exports: addAttachmentForCommand, cropResultToUploadItem, handleSelectGift, handleSelectThread
 
-// Module 9652 (_createForOfIteratorHelperLoose)
+// Module 9686 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -127,10 +127,10 @@ function addImagesFromPicker(id, items, IMAGE_PICKER) {
       return obj;
     });
     let obj = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
-    importDefault(7938).addFiles(obj);
-    const obj3 = importDefault(7938);
+    importDefault(8025).addFiles(obj);
+    const obj3 = importDefault(8025);
   } else {
-    obj = importDefault(7938);
+    obj = importDefault(8025);
     obj = { files: items, channelId: id, draftType: DraftType.ChannelMessage };
     obj.addFiles(obj);
   }
@@ -358,11 +358,11 @@ function handleSelectKeyboardItem(channelId, item, isIncluded, createdUsingInApp
   if (isIncluded) {
     const findUploadResult = closure_8.findUpload(channelId, DraftType.ChannelMessage, (closure_0) => image(outer1_2[11]).doesImageMatchUpload(image, closure_0));
     if (null != findUploadResult) {
-      importDefault(7938).remove(channelId, findUploadResult.id, DraftType.ChannelMessage);
-      const obj3 = importDefault(7938);
+      importDefault(8025).remove(channelId, findUploadResult.id, DraftType.ChannelMessage);
+      const obj3 = importDefault(8025);
     }
   } else {
-    let obj = importDefault(7938);
+    let obj = importDefault(8025);
     obj = { channelId, file: mediaNodeToUploadItem(item, createdUsingInAppCamera), draftType: DraftType.ChannelMessage };
     obj.addFile(obj);
   }
@@ -474,8 +474,8 @@ export const addAttachmentForCommand = function addAttachmentForCommand(channelI
     }
   }
   const tmp7 = getMediaKeyboardDraftType(outer1_5.target);
-  importDefault(7938).remove(channelId, outer1_5.option.name, tmp7);
-  const obj4 = importDefault(7938);
+  importDefault(8025).remove(channelId, outer1_5.option.name, tmp7);
+  const obj4 = importDefault(8025);
   obj = { channelId };
   const obj1 = {};
   const merged = Object.assign(result1);
@@ -485,7 +485,7 @@ export const addAttachmentForCommand = function addAttachmentForCommand(channelI
   obj.file = obj1;
   obj.draftType = tmp7;
   obj.allowOptimization = false;
-  importDefault(7938).addFile(obj);
+  importDefault(8025).addFile(obj);
 };
 export { handleCameraDialog };
 export { handleViewAllDialog };
@@ -546,7 +546,7 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
     };
   }
   obj1.onDismiss = fn;
-  _require(9679).openGiftModal(obj1);
+  _require(9713).openGiftModal(obj1);
 };
 export const handleSelectThread = function handleSelectThread(channel, chatInput) {
   let obj = importDefault(675);
@@ -565,8 +565,8 @@ export const handleSelectThread = function handleSelectThread(channel, chatInput
       current2.blur();
     }
     obj3 = require(477) /* set */;
-    const result = require(9811) /* navigateToThreadCreation */.navigateToThreadCreation(channel, "Plus Button");
-    const obj4 = require(9811) /* navigateToThreadCreation */;
+    const result = require(9843) /* navigateToThreadCreation */.navigateToThreadCreation(channel, "Plus Button");
+    const obj4 = require(9843) /* navigateToThreadCreation */;
   }
 };
 export { handleAttachFile };

@@ -1,10 +1,10 @@
-// Module ID: 14122
-// Function ID: 108681
+// Module ID: 14172
+// Function ID: 109004
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 31, 1348, 3752, 14117, 14123, 653, 1355, 4370, 624, 1360, 686, 8411, 5641, 12900, 2]
+// Dependencies: [5, 31, 1348, 3752, 14167, 14173, 653, 1355, 4370, 624, 1360, 686, 8455, 5641, 12952, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 14122 (_createForOfIteratorHelperLoose)
+// Module 14172 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { useMemo } from "result";
 import closure_6 from "_isNativeReflectConstruct";
@@ -359,8 +359,8 @@ export const isEligibleForNewBadge = function isEligibleForNewBadge(features) {
     result = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   }
   if (result) {
-    result = require(12900) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
-    const obj2 = require(12900) /* GuildFeatures */;
+    result = require(12952) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
+    const obj2 = require(12952) /* GuildFeatures */;
   }
   return result;
 };

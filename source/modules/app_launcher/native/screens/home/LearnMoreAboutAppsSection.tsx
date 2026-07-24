@@ -1,10 +1,10 @@
-// Module ID: 11214
-// Function ID: 87302
+// Module ID: 11244
+// Function ID: 87571
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [31, 27, 653, 33, 4130, 689, 3827, 1920, 1212, 11215, 8182, 4126, 4660, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 3827, 1920, 1212, 11245, 8226, 4126, 4660, 2]
 // Exports: default
 
-// Module 11214 (LearnMoreAboutAppsSection)
+// Module 11244 (LearnMoreAboutAppsSection)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -40,7 +40,7 @@ export default function LearnMoreAboutAppsSection(visible) {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   let obj = { sectionName: null, numItems: 1, numVisibleItems: 1 };
   const formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.xx5Sug, { sectionTitle: stringResult, sectionBody: stringResult1 });
-  obj.sectionName = require(8182) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
+  obj.sectionName = require(8226) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
   obj.viewed = visible.visible;
   obj = { style: tmp.container };
   obj = { style: tmp.divider };
@@ -59,5 +59,5 @@ export default function LearnMoreAboutAppsSection(visible) {
   items[5] = callback(View, { style: tmp.divider });
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(importDefault(11215), obj);
+  return callback(importDefault(11245), obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9193
-// Function ID: 71985
+// Module ID: 9229
+// Function ID: 72194
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 31, 9183, 33, 1456, 668, 9194, 9191, 1212, 2]
+// Dependencies: [5, 31, 9219, 33, 1456, 668, 9230, 9227, 1212, 2]
 // Exports: default
 
-// Module 9193 (ConfirmEmailChangeCode)
+// Module 9229 (ConfirmEmailChangeCode)
 import keys from "keys";
 import result from "result";
 import { setEmailToken } from "setChangeEmailError";
@@ -48,7 +48,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj.headerText = intl.string(isChangeEmail(1212).t["2x/2Uo"]);
   const intl2 = isChangeEmail(1212).intl;
   obj.confirmButtonText = intl2.string(isChangeEmail(1212).t.PDTjLN);
-  return jsx(navigation(9194), {
+  return jsx(navigation(9230), {
     onFormSubmit: (() => {
       // CreateGeneratorClosureLongIndex (0x67)
       let closure_0 = outer1_3(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 9082
-// Function ID: 71210
+// Module ID: 9120
+// Function ID: 71422
 // Name: unpackStageChannelParty
 // Dependencies: [57, 1194, 1348, 1838, 4954, 4947, 653, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 9082 (unpackStageChannelParty)
+// Module 9120 (unpackStageChannelParty)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

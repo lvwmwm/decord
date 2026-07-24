@@ -1,10 +1,10 @@
-// Module ID: 10946
-// Function ID: 85114
+// Module ID: 10973
+// Function ID: 85303
 // Name: useTrackCreateGuildViewed
 // Dependencies: [31, 5720, 653, 675, 2]
 // Exports: default
 
-// Module 10946 (useTrackCreateGuildViewed)
+// Module 10973 (useTrackCreateGuildViewed)
 import result from "result";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 import { AnalyticEvents } from "ME";

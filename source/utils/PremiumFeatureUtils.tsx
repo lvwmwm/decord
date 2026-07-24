@@ -1,10 +1,10 @@
-// Module ID: 7996
-// Function ID: 63565
+// Module ID: 8056
+// Function ID: 63841
 // Name: getUserMaxFileSize
 // Dependencies: [1850, 653, 1851, 1872, 2]
 // Exports: getUserMaxFileSize
 
-// Module 7996 (getUserMaxFileSize)
+// Module 8056 (getUserMaxFileSize)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";

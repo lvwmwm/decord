@@ -1,9 +1,9 @@
-// Module ID: 13698
-// Function ID: 105119
+// Module ID: 13749
+// Function ID: 105443
 // Name: route
-// Dependencies: [31, 7662, 653, 13647, 1212, 1273, 13699, 10095, 13648, 13646, 2]
+// Dependencies: [31, 7751, 653, 13698, 1212, 1273, 13750, 10127, 13699, 13697, 2]
 
-// Module 13698 (route)
+// Module 13749 (route)
 import result from "result";
 import ME from "ME";
 import createToggle from "createToggle";
@@ -63,7 +63,7 @@ createToggle = {
 createToggle = {
   route: ME.UserSettingsSections.ACCOUNT_CONFIRM_VIEW_BACKUP_CODES,
   getComponent() {
-    return require(13646) /* CodeRow */.default;
+    return require(13697) /* CodeRow */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

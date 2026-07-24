@@ -1,10 +1,10 @@
-// Module ID: 5619
-// Function ID: 47887
+// Module ID: 5617
+// Function ID: 47884
 // Name: CurrencyCodes
-// Dependencies: [57, 29, 482, 5620, 3813, 2]
+// Dependencies: [57, 29, 482, 5618, 3813, 2]
 // Exports: convertToMinorCurrencyUnits, currencyCodeFromBCP47Locale, floorToWholeCurrencyUnits, formatPrice
 
-// Module 5619 (CurrencyCodes)
+// Module 5617 (CurrencyCodes)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { CurrencyCodes } from "sum";
@@ -18,7 +18,7 @@ function convertToMajorCurrencyUnits(diff1, USD) {
     const error = new Error("Unexpected currency " + USD);
     throw error;
   } else {
-    let tmp4 = importDefault(5620);
+    let tmp4 = importDefault(5618);
     const prototype = tmp4.prototype;
     tmp4 = new tmp4(diff1);
     return tmp4.dividedBy(10 ** tmp).toNumber();
@@ -55,7 +55,7 @@ export const convertToMinorCurrencyUnits = (arg0, arg1) => {
     const error = new Error("Unexpected currency " + arg1);
     throw error;
   } else {
-    let tmp4 = importDefault(5620);
+    let tmp4 = importDefault(5618);
     const prototype = tmp4.prototype;
     tmp4 = new tmp4(arg0);
     return tmp4.times(10 ** tmp).toNumber();

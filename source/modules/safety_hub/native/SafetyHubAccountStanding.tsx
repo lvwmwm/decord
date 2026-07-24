@@ -1,10 +1,10 @@
-// Module ID: 13656
-// Function ID: 104868
+// Module ID: 13707
+// Function ID: 105192
 // Name: items
-// Dependencies: [57, 31, 27, 1849, 11026, 7544, 33, 7545, 13657, 4130, 689, 1212, 4091, 7507, 8479, 5776, 9003, 566, 1392, 8227, 1273, 4126, 2]
+// Dependencies: [57, 31, 27, 1849, 11053, 7589, 33, 7590, 13708, 4130, 689, 1212, 4091, 7577, 8524, 5776, 9042, 566, 1392, 8271, 1273, 4126, 2]
 // Exports: default
 
-// Module 13656 (items)
+// Module 13707 (items)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -18,7 +18,7 @@ let closure_10;
 let closure_9;
 const require = arg1;
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let obj = { [arg1(7545).AccountStandingState.ALL_GOOD]: { left: "0%" } };
+let obj = { [arg1(7590).AccountStandingState.ALL_GOOD]: { left: "0%" } };
 obj = { left: "25%" };
 obj = { translateX: -0.5 * require("SafetyHubAccountStandingSubwayMarker").SUBWAY_MARKER_WIDTH };
 let items = [obj];
@@ -84,39 +84,39 @@ export default function SafetyHubAccountStanding() {
     obj.status = accountStanding(1212).t["/Idfao"];
     obj.style = tmp4.good;
     obj.CustomIcon = accountStanding(4091).CircleCheckIcon;
-    obj[accountStanding(7545).AccountStandingState.ALL_GOOD] = obj;
+    obj[accountStanding(7590).AccountStandingState.ALL_GOOD] = obj;
     const obj1 = { title: accountStanding(1212).t.epkcmS };
     const intl2 = accountStanding(1212).intl;
     obj1.description = intl2.string(accountStanding(1212).t["774juc"]);
     obj1.status = accountStanding(1212).t.umleq4;
     obj1.style = tmp4.limited;
-    obj1.CustomIcon = accountStanding(7507).CircleErrorIcon;
-    obj1.iconSource = first(8479);
-    obj[accountStanding(7545).AccountStandingState.LIMITED] = obj1;
+    obj1.CustomIcon = accountStanding(7577).CircleErrorIcon;
+    obj1.iconSource = first(8524);
+    obj[accountStanding(7590).AccountStandingState.LIMITED] = obj1;
     const obj2 = { title: accountStanding(1212).t.crzE2X };
     const intl3 = accountStanding(1212).intl;
     obj2.description = intl3.string(accountStanding(1212).t["T/Ufh9"]);
     obj2.status = accountStanding(1212).t.WBtMHf;
     obj2.style = tmp4.veryLimited;
-    obj2.CustomIcon = accountStanding(7507).CircleErrorIcon;
-    obj2.iconSource = first(8479);
-    obj[accountStanding(7545).AccountStandingState.VERY_LIMITED] = obj2;
+    obj2.CustomIcon = accountStanding(7577).CircleErrorIcon;
+    obj2.iconSource = first(8524);
+    obj[accountStanding(7590).AccountStandingState.VERY_LIMITED] = obj2;
     const obj3 = { title: accountStanding(1212).t.XRNVzO };
     const intl4 = accountStanding(1212).intl;
     obj3.description = intl4.string(accountStanding(1212).t["hbH+9S"]);
     obj3.status = accountStanding(1212).t["7f+4Lg"];
     obj3.style = tmp4.atRisk;
-    obj3.CustomIcon = accountStanding(7507).CircleErrorIcon;
-    obj3.iconSource = first(8479);
-    obj[accountStanding(7545).AccountStandingState.AT_RISK] = obj3;
+    obj3.CustomIcon = accountStanding(7577).CircleErrorIcon;
+    obj3.iconSource = first(8524);
+    obj[accountStanding(7590).AccountStandingState.AT_RISK] = obj3;
     const obj4 = { title: accountStanding(1212).t.MExFkz };
     const intl5 = accountStanding(1212).intl;
     obj4.description = intl5.string(accountStanding(1212).t["2liUvt"]);
     obj4.status = accountStanding(1212).t["0OONGB"];
     obj4.style = tmp4.suspended;
     obj4.CustomIcon = accountStanding(5776).CircleXIcon;
-    obj4.iconSource = first(9003);
-    obj[accountStanding(7545).AccountStandingState.SUSPENDED] = obj4;
+    obj4.iconSource = first(9042);
+    obj[accountStanding(7590).AccountStandingState.SUSPENDED] = obj4;
     return obj;
   }, items);
   const items1 = [accountStanding, memo, first, tmp4];
@@ -159,7 +159,7 @@ export default function SafetyHubAccountStanding() {
     let obj1 = first(1392);
     let userAvatarSource = obj1.getUserAvatarSource(stateFromStores);
   } else {
-    userAvatarSource = first(8227);
+    userAvatarSource = first(8271);
   }
   const style = tmp13.style;
   obj = { style: items3 };

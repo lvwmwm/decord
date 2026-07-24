@@ -1,10 +1,10 @@
-// Module ID: 9122
-// Function ID: 71435
+// Module ID: 9158
+// Function ID: 71644
 // Name: GenericHeaderTitle
-// Dependencies: [31, 27, 9123, 33, 4130, 689, 4126, 3834, 5088, 5094, 9124, 477, 9129, 1557, 1457, 8829, 5162, 620, 9131, 10111, 4660, 1273, 2]
+// Dependencies: [31, 27, 9159, 33, 4130, 689, 4126, 3834, 5088, 5094, 9160, 477, 9165, 1557, 1457, 8868, 5162, 620, 9167, 10143, 4660, 1273, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9122 (GenericHeaderTitle)
+// Module 9158 (GenericHeaderTitle)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT";
@@ -136,7 +136,7 @@ function HeaderChannelActions(arg0) {
   const tmp = callback2();
   const merged = Object.assign(route.params);
   obj["screenIndex"] = screenIndex;
-  return callback(importDefault(9131), obj);
+  return callback(importDefault(9167), obj);
 }
 ({ View: closure_4, Platform } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);

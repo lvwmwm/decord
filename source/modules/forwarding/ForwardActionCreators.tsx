@@ -1,8 +1,8 @@
-// Module ID: 7086
-// Function ID: 56754
-// Dependencies: [57, 5, 1348, 3758, 653, 4123, 7087, 6924, 671, 6925, 1360, 6691, 7088, 4370, 2]
+// Module ID: 7085
+// Function ID: 56763
+// Dependencies: [57, 5, 1348, 3758, 653, 4123, 7086, 6923, 671, 6924, 1360, 6691, 7087, 4370, 2]
 
-// Module 7086
+// Module 7085
 import _slicedToArray from "_slicedToArray";
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ let obj = {
       const channel1 = outer2_5.getChannel(outer1_0.channel_id);
       if (null != outer1_2) {
         if (outer1_2.isICYMIGameContentForwarding) {
-          let guild_id = callback(7087).GAME_CONTENT_GUILD_ID;
+          let guild_id = callback(7086).GAME_CONTENT_GUILD_ID;
         }
         if (null == channel1) {
           if (null == guild_id) {
@@ -34,7 +34,7 @@ let obj = {
           const error1 = new Error("Unable to find destination channel for message");
           throw error1;
         } else {
-          const parsed = callback2(6924).parse(channel, "");
+          const parsed = callback2(6923).parse(channel, "");
           let obj = { guild_id };
           ({ channel_id: obj10.channel_id, id: obj10.message_id } = outer1_0);
           obj.type = callback(671).MessageReferenceTypes.FORWARD;
@@ -67,7 +67,7 @@ let obj = {
               num3 = obj1.addFlag(0, outer2_7.SUPPRESS_NOTIFICATIONS);
               tmp16 = tmp21;
             }
-            tmp20 = outer2_3(callback2(6925)(withMessage), 2);
+            tmp20 = outer2_3(callback2(6924)(withMessage), 2);
           }
           const obj3 = callback2(6691);
           obj = {};
@@ -78,16 +78,16 @@ let obj = {
           yield obj3.sendMessage(channel.id, parsed, false, obj);
           let result = null == tmp16 || "" === tmp16;
           if (!result) {
-            result = callback(7088).isRatelimitedInChannel(channel, outer2_6);
-            const obj5 = callback(7088);
+            result = callback(7087).isRatelimitedInChannel(channel, outer2_6);
+            const obj5 = callback(7087);
           }
           if (!result) {
             const obj6 = callback2(6691);
             const id = channel.id;
             obj1 = { location: outer2_8.FORWARDING, flags: num3 };
-            return yield obj6.sendMessage(id, callback2(6924).parse(channel, tmp16), false, obj1);
+            return yield obj6.sendMessage(id, callback2(6923).parse(channel, tmp16), false, obj1);
           }
-          const obj9 = callback2(6924);
+          const obj9 = callback2(6923);
         }
       }
       if (null != channel1) {

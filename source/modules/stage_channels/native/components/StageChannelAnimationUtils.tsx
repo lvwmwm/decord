@@ -1,10 +1,10 @@
-// Module ID: 10770
-// Function ID: 83684
+// Module ID: 10799
+// Function ID: 83876
 // Name: useStageActionBarAnimation
-// Dependencies: [3991, 10630, 10628, 1557, 4131, 2]
+// Dependencies: [3991, 10659, 10657, 1557, 4131, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 10770 (useStageActionBarAnimation)
+// Module 10799 (useStageActionBarAnimation)
 import { Easing } from "module_3991";
 
 let obj = { duration: 250 };

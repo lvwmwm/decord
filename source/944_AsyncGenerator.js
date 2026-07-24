@@ -1,5 +1,5 @@
 // Module ID: 944
-// Function ID: 10222
+// Function ID: 10223
 // Name: AsyncGenerator
 // Dependencies: [943]
 

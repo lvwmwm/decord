@@ -1,10 +1,10 @@
-// Module ID: 10136
-// Function ID: 78454
+// Module ID: 10168
+// Function ID: 78648
 // Name: useLastChannelMessage
 // Dependencies: [4349, 566, 2]
 // Exports: useLastChannelMessage
 
-// Module 10136 (useLastChannelMessage)
+// Module 10168 (useLastChannelMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

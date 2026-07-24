@@ -1,10 +1,10 @@
-// Module ID: 8250
-// Function ID: 65113
+// Module ID: 8294
+// Function ID: 65341
 // Name: maxOverflowOrFallback
-// Dependencies: [8251, 8248, 8249, 2]
+// Dependencies: [8295, 8292, 8293, 2]
 // Exports: computeProfileFrameDimensions
 
-// Module 8250 (maxOverflowOrFallback)
+// Module 8294 (maxOverflowOrFallback)
 function maxOverflowOrFallback(found, arg1) {
   let applyResult = arg1;
   if (found.length > 0) {
@@ -22,7 +22,7 @@ function stapleOverflow(arg0, arg1, arg2) {
 const result = require("ProfileFrameLayerAnchor").fileFinishedImporting("modules/collectibles/profile_frames/tooling/computeProfileFrameDimensions.tsx");
 
 export const computeProfileFrameDimensions = function computeProfileFrameDimensions(items1) {
-  INNER_WIDTH = INNER_WIDTH(8251).DefaultProfileFrameDimensions.INNER_WIDTH;
+  INNER_WIDTH = INNER_WIDTH(8295).DefaultProfileFrameDimensions.INNER_WIDTH;
   const found = items1.filter((layer) => {
     layer = layer.layer;
     let tmp = layer.type === INNER_WIDTH(outer1_1[1]).ProfileFrameLayerType.STAPLE;

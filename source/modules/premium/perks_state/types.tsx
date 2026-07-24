@@ -1,5 +1,5 @@
 // Module ID: 1866
-// Function ID: 20542
+// Function ID: 20543
 // Name: PerkConfigType
 // Dependencies: [2]
 

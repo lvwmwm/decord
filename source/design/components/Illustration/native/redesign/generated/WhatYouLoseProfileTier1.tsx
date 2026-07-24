@@ -1,17 +1,17 @@
-// Module ID: 7402
-// Function ID: 59541
+// Module ID: 7404
+// Function ID: 59576
 // Name: getWhatYouLoseProfileTier1Source
-// Dependencies: [31, 27, 33, 7403, 7404, 7405, 7406, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 7406, 7407, 7408, 3976, 2]
 // Exports: WhatYouLoseProfileTier1
 
-// Module 7402 (getWhatYouLoseProfileTier1Source)
+// Module 7404 (getWhatYouLoseProfileTier1Source)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getWhatYouLoseProfileTier1Source(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

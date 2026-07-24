@@ -1,10 +1,10 @@
-// Module ID: 13603
-// Function ID: 104518
+// Module ID: 13654
+// Function ID: 104842
 // Name: EditNameplateInner
-// Dependencies: [57, 31, 27, 6790, 1874, 1917, 653, 33, 4130, 689, 7186, 5464, 5484, 675, 7844, 5187, 4126, 1212, 7856, 7859, 566, 13604, 7846, 13605, 7877, 7878, 7857, 8228, 4554, 9805, 2]
+// Dependencies: [57, 31, 27, 6790, 1874, 1917, 653, 33, 4130, 689, 7186, 5462, 5482, 675, 7933, 5187, 4126, 1212, 7945, 7948, 566, 13655, 7935, 13656, 7965, 7966, 7946, 8272, 4554, 9837, 2]
 // Exports: default
 
-// Module 13603 (EditNameplateInner)
+// Module 13654 (EditNameplateInner)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG";
@@ -112,7 +112,7 @@ function NameplateActionSheetPreview(arg0) {
   let user;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = purchase(7857)(previewSkuId);
+  const tmp2 = purchase(7946)(previewSkuId);
   const product = tmp2.product;
   const require = product;
   purchase = tmp2.purchase;
@@ -148,15 +148,15 @@ function NameplateActionSheetPreview(arg0) {
   obj.accessibilityRole = "image";
   obj.accessible = true;
   obj = { style: tmp.nameplateGradientContainer };
-  const items1 = [callback2(require(8228) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 100 }), callback2(require(8228) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 140 }), ];
+  const items1 = [callback2(require(8272) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 100 }), callback2(require(8272) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 140 }), ];
   const obj1 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.1 }, end: { x: 0, y: 0.8 } };
   const items2 = [tmp.nameplatePreviewGradient.color, "" + tmp.nameplatePreviewGradient.color + "00"];
   obj1.colors = items2;
   items1[2] = callback2(purchase(4554), obj1);
   obj.children = items1;
-  const items3 = [callback3(View, obj), callback2(require(9805) /* NameplatePreview */.NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
+  const items3 = [callback3(View, obj), callback2(require(9837) /* NameplatePreview */.NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
   const obj2 = { style: tmp.nameplateGradientContainer };
-  const items4 = [callback2(require(8228) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 140 }), callback2(require(8228) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 100 }), ];
+  const items4 = [callback2(require(8272) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 140 }), callback2(require(8272) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, { width: 100 }), ];
   const obj3 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 } };
   const tmp11 = purchase(4554);
   const tmp4 = callback3;
@@ -196,7 +196,7 @@ export default function EditNameplateActionSheet(arg0) {
   if (undefined !== first) {
     tmp4 = first;
   }
-  const analyticsLocations = first(5464)(first(5484).EDIT_NAMEPLATE_SHEET).analyticsLocations;
+  const analyticsLocations = first(5462)(first(5482).EDIT_NAMEPLATE_SHEET).analyticsLocations;
   const items = [first, guildId];
   callback = React.useCallback(() => {
     let obj = first(outer1_2[13]);
@@ -229,7 +229,7 @@ export default function EditNameplateActionSheet(arg0) {
   let skuId;
   const obj2 = { style: tmp.bounceOffset };
   const tmp10 = callback2;
-  const tmp5 = first(5464);
+  const tmp5 = first(5462);
   const tmp8 = callback2;
   const tmp9 = callback3;
   if (null != currentNameplate) {
@@ -243,9 +243,9 @@ export default function EditNameplateActionSheet(arg0) {
   obj5.selectedSkuId = skuId1;
   obj5.onApply = callback1;
   obj5.analyticsLocations = analyticsLocations;
-  obj5.analyticsSource = first(5484).EDIT_NAMEPLATE_SHEET;
-  items2[1] = tmp10(first(7856), obj5);
+  obj5.analyticsSource = first(5482).EDIT_NAMEPLATE_SHEET;
+  items2[1] = tmp10(first(7945), obj5);
   obj.children = items2;
   obj.children = tmp9(guildId(5187).BottomSheet, obj);
-  return tmp8(guildId(5464).AnalyticsLocationProvider, obj);
+  return tmp8(guildId(5462).AnalyticsLocationProvider, obj);
 };

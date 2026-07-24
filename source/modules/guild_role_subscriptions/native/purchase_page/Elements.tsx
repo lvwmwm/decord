@@ -1,10 +1,10 @@
-// Module ID: 15268
-// Function ID: 116487
+// Module ID: 15315
+// Function ID: 116809
 // Name: TruncatedText
-// Dependencies: [57, 31, 27, 3781, 33, 4130, 689, 4126, 1212, 4660, 1273, 15269, 8002, 14116, 624, 8003, 5618, 2]
+// Dependencies: [57, 31, 27, 3781, 33, 4130, 689, 4126, 1212, 4660, 1273, 15316, 7433, 14166, 624, 7434, 5616, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15268 (TruncatedText)
+// Module 15315 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -110,23 +110,23 @@ export const ArrowButton = function ArrowButton(arg0) {
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
   const items = [callback2(require(4126) /* Text */.Text, obj), ];
-  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15269), style: tmp.arrowButtonIcon };
+  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15316), style: tmp.arrowButtonIcon };
   items[1] = callback2(require(1273) /* Button */.Icon, obj);
   obj.children = items;
   return callback3(require(4660) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(8002);
-  const _require = callback(importAll(14116).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14116);
+  const obj = importDefault(7433);
+  const _require = callback(importAll(14166).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14166);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(624).useStateFromStores(items, () => outer1_8.get(id.id));
-  const price = importDefault(8003)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const price = importDefault(7434)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + _require(5618).formatPrice(price.amount, price.currency) + "/mo.";
-    const obj4 = _require(5618);
+    str = "" + _require(5616).formatPrice(price.amount, price.currency) + "/mo.";
+    const obj4 = _require(5616);
   }
   return str;
 };

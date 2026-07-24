@@ -1,10 +1,10 @@
-// Module ID: 15513
-// Function ID: 119608
+// Module ID: 15560
+// Function ID: 119930
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [57, 5, 31, 27, 1391, 1348, 1910, 1838, 3758, 3767, 1849, 653, 33, 4130, 689, 1456, 1557, 566, 3763, 483, 8415, 4140, 1881, 3969, 4470, 1212, 3827, 1920, 1356, 15514, 9122, 4126, 4320, 10179, 5165, 5503, 15518, 15519, 2]
+// Dependencies: [57, 5, 31, 27, 1391, 1348, 1910, 1838, 3758, 3767, 1849, 653, 33, 4130, 689, 1456, 1557, 566, 3763, 483, 8459, 4140, 1881, 3969, 4470, 1212, 3827, 1920, 1356, 15561, 9158, 4126, 4320, 10209, 5165, 5501, 15565, 15566, 2]
 // Exports: default
 
-// Module 15513 (ChannelSettingsPermissionsOverrides)
+// Module 15560 (ChannelSettingsPermissionsOverrides)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import Text from "Text";
@@ -135,7 +135,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
             };
             const intl = outer2_0(1212).intl;
             obj.label = intl.string(outer2_0(1212).t.i4jeWR);
-            return outer2_19(outer2_0(9122).HeaderTextButton, obj);
+            return outer2_19(outer2_0(9158).HeaderTextButton, obj);
           }
       };
       navigation.setOptions(obj);
@@ -147,7 +147,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   const tmp6 = callback(require(4126) /* Text */.Text, obj);
   if (fromCreate.type === constants.MEMBER) {
     obj = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp6 };
-    let tmp7Result = callback(id(10179), obj);
+    let tmp7Result = callback(id(10209), obj);
   } else {
     obj1 = { end: true, label: null, start: true };
     role = role.getRole(stateFromStores.guild_id, id);
@@ -185,8 +185,8 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         flag = flag.flag;
         ({ title, description } = flag);
         const tmp = outer1_7(flag);
-        let obj = { variant: "text-xs/medium", color: "text-subtle", children: outer2_0(15518).renderDescription(description) };
-        const obj2 = outer2_0(15518);
+        let obj = { variant: "text-xs/medium", color: "text-subtle", children: outer2_0(15565).renderDescription(description) };
+        const obj2 = outer2_0(15565);
         const tmp2 = null != tmp && tmp;
         obj = { disabled: tmp4, label: title, subLabel: outer2_19(outer2_0(4126).Text, obj) };
         obj = {};
@@ -196,7 +196,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         obj.onValueChange = function onValueChange(arg0) {
           outer2_6(flag, arg0);
         };
-        obj.trailing = outer2_19(id(15519), obj);
+        obj.trailing = outer2_19(id(15566), obj);
         return outer2_19(outer2_0(5165).TableRow, obj, "row-" + arg1);
       });
       obj.children = outer1_19(outer1_0(outer1_19[35]).TableRowGroup, obj);

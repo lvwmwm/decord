@@ -1,10 +1,10 @@
-// Module ID: 9278
-// Function ID: 72510
+// Module ID: 9314
+// Function ID: 72719
 // Name: overrideSurvey
-// Dependencies: [9277, 653, 686, 675, 4942, 480, 1361, 507, 2]
+// Dependencies: [9313, 653, 686, 675, 4942, 480, 1361, 507, 2]
 // Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
 
-// Module 9278 (overrideSurvey)
+// Module 9314 (overrideSurvey)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SURVEY_REFETCH_INTERVAL } from "_isNativeReflectConstruct";
 import ME from "ME";

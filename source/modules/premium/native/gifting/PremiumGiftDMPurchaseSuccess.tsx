@@ -1,10 +1,10 @@
-// Module ID: 9770
-// Function ID: 75982
+// Module ID: 9802
+// Function ID: 76176
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [31, 27, 33, 4130, 689, 8809, 1456, 8776, 9680, 4543, 1212, 2262, 8783, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 8848, 1456, 8815, 9714, 4543, 1212, 2262, 8822, 4126, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 9770 (PremiumGiftDMSuccessBody)
+// Module 9802 (PremiumGiftDMSuccessBody)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,10 +25,10 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/native/
 
 export default function PremiumGiftDMSuccessBody() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8809) /* importDefaultResult1 */;
+  let obj = require(8848) /* importDefaultResult1 */;
   obj = {};
   obj = {};
-  obj.children = callback(importDefault(8783), { giftStyle: obj.useNativeGiftContext().giftStyle });
+  obj.children = callback(importDefault(8822), { giftStyle: obj.useNativeGiftContext().giftStyle });
   const items = [callback(View, obj), , ];
   const obj1 = { style: tmp.title, variant: "heading-lg/bold" };
   const intl = require(1212) /* getSystemLocale */.intl;

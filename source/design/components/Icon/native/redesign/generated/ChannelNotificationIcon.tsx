@@ -1,10 +1,10 @@
-// Module ID: 10205
-// Function ID: 78783
+// Module ID: 10235
+// Function ID: 78974
 // Name: ChannelNotificationIcon
-// Dependencies: [31, 33, 689, 3833, 10206, 2]
+// Dependencies: [31, 33, 689, 3833, 10236, 2]
 // Exports: ChannelNotificationIcon
 
-// Module 10205 (ChannelNotificationIcon)
+// Module 10235 (ChannelNotificationIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ChannelNotificationIcon = function ChannelNotificationIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10206) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10236) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10206) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10236) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

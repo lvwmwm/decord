@@ -1,11 +1,11 @@
 // Module ID: 9356
-// Function ID: 73058
+// Function ID: 73055
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9356 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 16, height: 16, scales: [2, 3], hash: "f5a4357d7c0b7e1db64214ae6f5682c3", name: "ic_premium_channel_16px", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "540091c70b333c8b8937ba1627138192", name: "wumpus-pikachu", type: "png" };
 
 export default registerAsset.registerAsset(obj);

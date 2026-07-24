@@ -1,10 +1,10 @@
-// Module ID: 16010
-// Function ID: 123885
+// Module ID: 16057
+// Function ID: 124207
 // Name: items
 // Dependencies: [4045, 4042, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 16010 (items)
+// Module 16057 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2025-12_voice_channel_hoisting", label: "Voice Channel Hoisting", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, defaultConfig: { enableWaveformIcon: false, enableHighlight: false } };

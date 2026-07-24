@@ -1,9 +1,9 @@
-// Module ID: 10774
-// Function ID: 83723
+// Module ID: 10803
+// Function ID: 83915
 // Name: getSizeStyle
-// Dependencies: [31, 27, 4143, 4148, 33, 4130, 689, 3974, 10775, 1450, 4663, 566, 7477, 10776, 4660, 1212, 7884, 1273, 10778, 10780, 8497, 4126, 2]
+// Dependencies: [31, 27, 4143, 4148, 33, 4130, 689, 3974, 10804, 1450, 4663, 566, 7557, 10805, 4660, 1212, 7971, 1273, 10807, 10809, 8542, 4126, 2]
 
-// Module 10774 (getSizeStyle)
+// Module 10803 (getSizeStyle)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -16,16 +16,16 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function getSizeStyle(size, speakerTileStyles) {
-  if (require(10775) /* StageTileSize */.StageTileSize.FULL === size) {
+  if (require(10804) /* StageTileSize */.StageTileSize.FULL === size) {
     return speakerTileStyles.full;
-  } else if (require(10775) /* StageTileSize */.StageTileSize.HALF === size) {
+  } else if (require(10804) /* StageTileSize */.StageTileSize.HALF === size) {
     return speakerTileStyles.half;
   } else {
     return speakerTileStyles.third;
   }
 }
 function getTileWidthStyle(arg0, arg1, arg2) {
-  const StageTileSize = require(10775) /* StageTileSize */.StageTileSize;
+  const StageTileSize = require(10804) /* StageTileSize */.StageTileSize;
   if (arg2) {
     let obj = { maxWidth: arg0 === StageTileSize.FULL ? closure_9 : result1 };
   } else {
@@ -38,7 +38,7 @@ function getTileWidthStyle(arg0, arg1, arg2) {
   }
 }
 function getImageBackgroundStyle(size, imageBackground) {
-  if (size === require(10775) /* StageTileSize */.StageTileSize.THIRD) {
+  if (size === require(10804) /* StageTileSize */.StageTileSize.THIRD) {
     const items = [imageBackground.imageBackground, ];
     const obj = { paddingBottom: 12 };
     items[1] = obj;

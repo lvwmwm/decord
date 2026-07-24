@@ -1,10 +1,10 @@
-// Module ID: 12601
-// Function ID: 97549
+// Module ID: 12652
+// Function ID: 97870
 // Name: getCachedPrivateChannelObfuscation
-// Dependencies: [1428, 2, 12602]
+// Dependencies: [1428, 2, 12653]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled, useIsChannelMetadataObfuscationEnabled
 
-// Module 12601 (getCachedPrivateChannelObfuscation)
+// Module 12652 (getCachedPrivateChannelObfuscation)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-02-private-channel-hiding", kind: "user", defaultConfig: { enableObfuscation: false, enableIntegrityCheck: false }, variations: { [1]: { enableObfuscation: true, enableIntegrityCheck: false }, [2]: { enableObfuscation: true, enableIntegrityCheck: true }, [3]: { enableObfuscation: false, enableIntegrityCheck: false } } };

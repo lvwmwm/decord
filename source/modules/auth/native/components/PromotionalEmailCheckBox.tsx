@@ -1,10 +1,10 @@
-// Module ID: 14770
-// Function ID: 112660
+// Module ID: 14817
+// Function ID: 112981
 // Name: PromotionalEmailCheckBox
-// Dependencies: [31, 27, 5591, 33, 4130, 3848, 1212, 7497, 4126, 2]
+// Dependencies: [31, 27, 5589, 33, 4130, 3848, 1212, 7638, 4126, 2]
 // Exports: default
 
-// Module 14770 (PromotionalEmailCheckBox)
+// Module 14817 (PromotionalEmailCheckBox)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import setPromoEmailConsentState from "setPromoEmailConsentState";
@@ -42,7 +42,7 @@ export default function PromotionalEmailCheckBox(style) {
     };
     obj.style = tmp.checkboxRow;
     const obj1 = { checked: tmp3 };
-    const items = [callback2(require(7497) /* FormCheckbox */.FormCheckbox, obj1), ];
+    const items = [callback2(require(7638) /* FormCheckbox */.FormCheckbox, obj1), ];
     const obj2 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.ylFCLt);

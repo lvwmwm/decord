@@ -1,5 +1,5 @@
 // Module ID: 5738
-// Function ID: 49328
+// Function ID: 49339
 // Name: trackSearchStart
 // Dependencies: [4991, 653, 574, 675, 3771, 5045, 5739, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart

@@ -1,17 +1,17 @@
-// Module ID: 16364
-// Function ID: 127724
+// Module ID: 16411
+// Function ID: 128048
 // Name: getChannelSetupSource
-// Dependencies: [31, 27, 33, 7403, 16365, 16366, 16367, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 16412, 16413, 16414, 3976, 2]
 // Exports: ChannelSetup
 
-// Module 16364 (getChannelSetupSource)
+// Module 16411 (getChannelSetupSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getChannelSetupSource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

@@ -1,10 +1,10 @@
-// Module ID: 8415
-// Function ID: 67016
+// Module ID: 8459
+// Function ID: 67244
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 1838, 5058, 5059, 653, 5057, 5065, 483, 4470, 1212, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8415 (_createForOfIteratorHelperLoose)
+// Module 8459 (_createForOfIteratorHelperLoose)
 import fetchOnboardingPrompts from "fetchOnboardingPrompts";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

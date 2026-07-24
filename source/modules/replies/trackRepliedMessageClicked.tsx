@@ -1,10 +1,10 @@
-// Module ID: 10891
-// Function ID: 84644
+// Module ID: 10918
+// Function ID: 84833
 // Name: trackRepliedMessageClicked
-// Dependencies: [6830, 653, 8655, 4324, 2]
+// Dependencies: [6829, 653, 8696, 4324, 2]
 // Exports: default
 
-// Module 10891 (trackRepliedMessageClicked)
+// Module 10918 (trackRepliedMessageClicked)
 import { ReferencedMessageState } from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 
@@ -19,7 +19,7 @@ export default function trackRepliedMessageClicked(messageReference, state, guil
   let tmp2 = null;
   let tmp3 = null;
   if (state.state === ReferencedMessageState.LOADED) {
-    const tmp10 = importDefault(8655)(state.message);
+    const tmp10 = importDefault(8696)(state.message);
     const content = tmp10.content;
     let length;
     if (null != content) {

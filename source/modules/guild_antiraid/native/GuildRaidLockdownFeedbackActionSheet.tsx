@@ -1,10 +1,10 @@
-// Module ID: 10977
-// Function ID: 85367
+// Module ID: 11004
+// Function ID: 85556
 // Name: GuildRaidLockdownFeedbackActionSheet
-// Dependencies: [57, 31, 653, 33, 4130, 1212, 6750, 4098, 5500, 5186, 5587, 5503, 9094, 7504, 4543, 4324, 2]
+// Dependencies: [57, 31, 653, 33, 4130, 1212, 6750, 4098, 5498, 5186, 5585, 5501, 9132, 7645, 4543, 4324, 2]
 // Exports: default
 
-// Module 10977 (GuildRaidLockdownFeedbackActionSheet)
+// Module 11004 (GuildRaidLockdownFeedbackActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { AnalyticEvents } from "ME";
@@ -73,7 +73,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
       const obj = {
         onPress() {
           (function onCheckboxChange(closure_0) {
-            outer2_2(outer2_1.includes(closure_0) ? ((arr) => arr.filter(/* F85373 */ function() { ... })) : ((arg0) => {
+            outer2_2(outer2_1.includes(closure_0) ? ((arr) => arr.filter(/* F85562 */ function() { ... })) : ((arg0) => {
               const items = [...arg0, closure_0];
               return items;
             }));
@@ -82,10 +82,10 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
         checked: first.includes(value),
         label: value.text
       };
-      return outer1_6(guildId(9094).TableCheckboxRow, obj, value);
+      return outer1_6(guildId(9132).TableCheckboxRow, obj, value);
     })
   };
-  const items1 = [callback(guildId(5503).TableRowGroup, obj8), , ];
+  const items1 = [callback(guildId(5501).TableRowGroup, obj8), , ];
   let hasItem = first.includes(guildId(6750).RaidLockdownFeedbackType.OTHER);
   if (hasItem) {
     const obj9 = { autoComplete: "off", value: first1 };
@@ -94,7 +94,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
     obj9.onChange = function onChange(arg0) {
       callback(arg0);
     };
-    hasItem = callback(guildId(7504).TextArea, obj9);
+    hasItem = callback(guildId(7645).TextArea, obj9);
   }
   items1[1] = hasItem;
   const obj10 = {
@@ -109,6 +109,6 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
   obj10.text = intl9.string(guildId(1212).t.nAt0rE);
   items1[2] = callback(guildId(4543).Button, obj10);
   obj7.children = items1;
-  obj5.children = tmp6(first(5587), obj7);
-  return tmp5(guildId(5500).ActionSheet, obj5);
+  obj5.children = tmp6(first(5585), obj7);
+  return tmp5(guildId(5498).ActionSheet, obj5);
 };

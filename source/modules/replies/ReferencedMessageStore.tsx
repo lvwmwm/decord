@@ -1,9 +1,9 @@
-// Module ID: 6830
-// Function ID: 53842
+// Module ID: 6829
+// Function ID: 53851
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 6, 7, 6831, 1348, 4349, 653, 1362, 4351, 6835, 566, 686, 2]
+// Dependencies: [15, 17, 18, 57, 6, 7, 6830, 1348, 4349, 653, 1362, 4351, 6834, 566, 686, 2]
 
-// Module 6830 (_isNativeReflectConstruct)
+// Module 6829 (_isNativeReflectConstruct)
 import closure_3 from "set";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -525,7 +525,7 @@ obj = {
         if (value.state === obj.LOADED) {
           obj = {};
           obj.state = obj.LOADED;
-          obj.message = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(value.message);
+          obj.message = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(value.message);
           const result = tmp4.set(channelId, messageId, obj);
         }
       }

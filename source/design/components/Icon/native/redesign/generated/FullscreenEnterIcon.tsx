@@ -1,10 +1,10 @@
-// Module ID: 13924
-// Function ID: 106604
+// Module ID: 13975
+// Function ID: 106928
 // Name: FullscreenEnterIcon
-// Dependencies: [31, 33, 689, 3833, 13925, 2]
+// Dependencies: [31, 33, 689, 3833, 13976, 2]
 // Exports: FullscreenEnterIcon
 
-// Module 13924 (FullscreenEnterIcon)
+// Module 13975 (FullscreenEnterIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const FullscreenEnterIcon = function FullscreenEnterIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13925) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13976) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13925) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13976) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

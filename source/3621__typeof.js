@@ -1,5 +1,5 @@
 // Module ID: 3621
-// Function ID: 27861
+// Function ID: 27862
 // Name: _typeof
 // Dependencies: [3209, 3622, 3213, 3210]
 // Exports: default

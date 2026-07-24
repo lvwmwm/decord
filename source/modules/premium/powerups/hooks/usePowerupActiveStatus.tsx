@@ -1,10 +1,10 @@
-// Module ID: 11531
-// Function ID: 89826
+// Module ID: 11561
+// Function ID: 90071
 // Name: usePowerupsActiveStatuses
 // Dependencies: [1838, 4017, 4019, 4018, 653, 566, 2]
 // Exports: default, isPowerupActiveStatusActive
 
-// Module 11531 (usePowerupsActiveStatuses)
+// Module 11561 (usePowerupsActiveStatuses)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GAME_SERVER_POWERUP_SKU_ID as closure_4 } from "NewGamesCoachmarkContent";

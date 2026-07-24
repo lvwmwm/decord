@@ -1,5 +1,5 @@
 // Module ID: 4630
-// Function ID: 40306
+// Function ID: 40310
 // Name: ThreadLockIcon
 // Dependencies: [31, 33, 689, 3833, 4594, 2]
 // Exports: ThreadLockIcon

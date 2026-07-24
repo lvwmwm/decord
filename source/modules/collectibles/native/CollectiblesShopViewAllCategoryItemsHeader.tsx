@@ -1,10 +1,10 @@
-// Module ID: 14513
-// Function ID: 110783
+// Module ID: 14563
+// Function ID: 111106
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [31, 27, 33, 4130, 1456, 12384, 9122, 9126, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 1456, 7422, 9158, 9162, 1212, 2]
 // Exports: default
 
-// Module 14513 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 14563 (CollectiblesShopViewAllCategoryItemsHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   let obj = _require(1456);
   _require = obj.useStackNavigation();
   const tmp = callback3();
-  let obj1 = _require(12384);
+  let obj1 = _require(7422);
   obj = {};
   obj = {};
   const youBarSettingsCustomHeaderPaddingTop = obj1.useYouBarSettingsCustomHeaderPaddingTop();
@@ -36,13 +36,13 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   obj["paddingTop"] = youBarSettingsCustomHeaderPaddingTop;
   obj.style = obj;
   obj1 = { style: tmp.backButton };
-  const obj2 = { source: importDefault(9126), color: buttonColor };
+  const obj2 = { source: importDefault(9162), color: buttonColor };
   const intl = _require(1212).intl;
   obj2.accessibilityLabel = intl.string(_require(1212).t["13/7kX"]);
   obj2.onPress = function onPress() {
     navigation.goBack();
   };
-  obj1.children = callback(_require(9122).HeaderIconButton, obj2);
+  obj1.children = callback(_require(9158).HeaderIconButton, obj2);
   const items = [callback(closure_4, obj1), , ];
   const obj3 = { resizeMode: "contain", style: tmp.logo, source: { uri: logoUrl } };
   const intl2 = _require(1212).intl;

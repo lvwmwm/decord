@@ -1,5 +1,5 @@
 // Module ID: 924
-// Function ID: 10072
+// Function ID: 10073
 // Name: wrapMethodHandler
 // Dependencies: [65, 799, 800, 801, 923]
 // Exports: wrapAllMCPHandlers

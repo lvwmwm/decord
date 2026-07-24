@@ -1,10 +1,10 @@
-// Module ID: 13869
-// Function ID: 106190
+// Module ID: 13920
+// Function ID: 106514
 // Name: OneWayToTwoWayNewTag
-// Dependencies: [31, 27, 653, 1345, 33, 4130, 689, 5052, 1273, 9642, 4126, 4543, 1212, 2]
+// Dependencies: [31, 27, 653, 1345, 33, 4130, 689, 5052, 1273, 9678, 4126, 4543, 1212, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 13869 (OneWayToTwoWayNewTag)
+// Module 13920 (OneWayToTwoWayNewTag)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -54,7 +54,7 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   obj = { style: tmp.titleContainer };
   const items = [newIndicatorDismissibleContent];
   const items1 = [
-    callback(importDefault(9642), {
+    callback(importDefault(9678), {
       contentTypes: items,
       children(visibleContent) {
         let tmp2 = null;

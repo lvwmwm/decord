@@ -1,5 +1,5 @@
 // Module ID: 682
-// Function ID: 8405
+// Function ID: 8406
 // Name: batchUpdates
 // Dependencies: [27, 2]
 // Exports: batchUpdates

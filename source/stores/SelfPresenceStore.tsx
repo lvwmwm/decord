@@ -1,7 +1,7 @@
 // Module ID: 4810
-// Function ID: 41959
+// Function ID: 41963
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4811, 1316, 4162, 4943, 4165, 10444, 4217, 4145, 653, 4174, 3803, 1360, 9081, 636, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4811, 1316, 4162, 4943, 4165, 10473, 4217, 4145, 653, 4174, 3803, 1360, 9119, 636, 22, 566, 686, 2]
 
 // Module 4810 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -165,7 +165,7 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(9081)(flags)) {
+      if (importDefault(9119)(flags)) {
         let shouldShowActivityResult = closure_8.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;

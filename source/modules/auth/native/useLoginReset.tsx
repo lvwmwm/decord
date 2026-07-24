@@ -1,10 +1,10 @@
-// Module ID: 9206
-// Function ID: 72082
+// Module ID: 9242
+// Function ID: 72291
 // Name: useLoginReset
-// Dependencies: [31, 1194, 5590, 2]
+// Dependencies: [31, 1194, 5588, 2]
 // Exports: default
 
-// Module 9206 (useLoginReset)
+// Module 9242 (useLoginReset)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

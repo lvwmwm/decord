@@ -1,9 +1,9 @@
-// Module ID: 9484
-// Function ID: 73867
+// Module ID: 9520
+// Function ID: 74076
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 153, 6, 7, 15, 17, 18, 4044, 7090, 1348, 1838, 4142, 1906, 4325, 1849, 9485, 7094, 21, 664, 9486, 566, 686, 9487, 22, 2]
+// Dependencies: [57, 153, 6, 7, 15, 17, 18, 4044, 7089, 1348, 1838, 4142, 1906, 4325, 1849, 9521, 7093, 21, 664, 9522, 566, 686, 9523, 22, 2]
 
-// Module 9484 (_isNativeReflectConstruct)
+// Module 9520 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import "_readOnlyError";
 import _inherits from "_inherits";
@@ -367,7 +367,7 @@ obj = {
     if (null != summary) {
       const _Object = Object;
       if (Object.keys(summary).length > 0) {
-        summaryFromServer = summaryFromServer(9487).createSummaryFromServer(summary, channelId);
+        summaryFromServer = summaryFromServer(9523).createSummaryFromServer(summary, channelId);
         let items = dependencyMap2[channelId];
         if (null == items) {
           items = [];
@@ -387,7 +387,7 @@ obj = {
           items1.push(summaryFromServer);
         }
         dependencyMap2[channelId] = items1;
-        const obj3 = summaryFromServer(9487);
+        const obj3 = summaryFromServer(9523);
       }
     }
     let obj = {};
@@ -677,10 +677,10 @@ obj = {
       const first = tmp[0];
       const arr = tmp[1];
       const obj = outer1_1(22);
-      const chainResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9487).createSummaryFromServer(summary, first)));
-      const sortByResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9487).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId));
-      const reversed = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9487).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId)).takeRight(75).reverse();
-      const takeRightResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9487).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId)).takeRight(75);
+      const chainResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9523).createSummaryFromServer(summary, first)));
+      const sortByResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9523).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId));
+      const reversed = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9523).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId)).takeRight(75).reverse();
+      const takeRightResult = outer1_1(22).chain(tmp[1].map((summary) => outer2_0(9523).createSummaryFromServer(summary, first))).sortBy((startId) => outer2_1(21).extractTimestamp(startId.startId)).takeRight(75);
       arg0[first] = reversed.filter((arg0) => Object.keys(arg0).length > 0).value();
       return arg0;
     }, {});

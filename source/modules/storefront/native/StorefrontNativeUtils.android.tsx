@@ -1,10 +1,10 @@
-// Module ID: 9738
-// Function ID: 75762
+// Module ID: 9772
+// Function ID: 75974
 // Name: useFormattedSKUPrice
-// Dependencies: [31, 7160, 566, 5621, 2]
+// Dependencies: [31, 7160, 566, 5619, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 9738 (useFormattedSKUPrice)
+// Module 9772 (useFormattedSKUPrice)
 import result from "result";
 
 const require = arg1;
@@ -34,7 +34,7 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
       const obj = _undefined(outer1_2[1]);
     }
   }, items);
-  const items1 = [stateFromStores(5621)];
+  const items1 = [stateFromStores(5619)];
   const items2 = [tmp3];
   stateFromStores = _require(566).useStateFromStores(items1, () => {
     let product = null;

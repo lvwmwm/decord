@@ -1,10 +1,10 @@
-// Module ID: 10967
-// Function ID: 85277
+// Module ID: 10994
+// Function ID: 85466
 // Name: SelectionHeader
-// Dependencies: [31, 27, 1348, 1906, 5188, 33, 4130, 689, 5186, 1212, 4543, 8425, 3848, 5165, 7497, 8524, 5160, 3843, 1557, 1450, 5084, 566, 4098, 5187, 5189, 2]
+// Dependencies: [31, 27, 1348, 1906, 5188, 33, 4130, 689, 5186, 1212, 4543, 8469, 3848, 5165, 7638, 8569, 5160, 3843, 1557, 1450, 5084, 566, 4098, 5187, 5189, 2]
 // Exports: default
 
-// Module 10967 (SelectionHeader)
+// Module 10994 (SelectionHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -118,9 +118,9 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp19Result = callback(selectedOptions(8425), obj2);
+      tmp19Result = callback(selectedOptions(8469), obj2);
       const tmp19 = callback;
-      const tmp22 = selectedOptions(8425);
+      const tmp22 = selectedOptions(8469);
     }
   }
   items1[1] = tmp19Result;
@@ -208,13 +208,13 @@ function SelectionOptionItem(item) {
       selected = false;
     }
     obj4.checked = selected;
-    let tmp19Result = callback(item(7497).FormCheckbox, obj4);
+    let tmp19Result = callback(item(7638).FormCheckbox, obj4);
     const tmp19 = callback;
   } else {
     tmp19Result = null;
     if (true === selected) {
       const obj5 = { color: "text-brand" };
-      tmp19Result = callback(item(8524).CheckmarkSmallBoldIcon, obj5);
+      tmp19Result = callback(item(8569).CheckmarkSmallBoldIcon, obj5);
     }
   }
   items1[1] = tmp19Result;

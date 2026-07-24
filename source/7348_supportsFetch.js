@@ -1,5 +1,5 @@
 // Module ID: 7348
-// Function ID: 59268
+// Function ID: 59297
 // Name: supportsFetch
 // Dependencies: [7237, 7235, 7236]
 

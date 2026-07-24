@@ -1,9 +1,9 @@
-// Module ID: 14523
-// Function ID: 110848
+// Module ID: 14573
+// Function ID: 111171
 // Name: toggle
-// Dependencies: [7662, 3803, 14522, 13727, 10095, 1212, 2]
+// Dependencies: [7751, 3803, 14572, 13778, 10127, 1212, 2]
 
-// Module 14523 (toggle)
+// Module 14573 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -21,11 +21,11 @@ const toggle = createToggle.createToggle({
     Quests3PDataOptedOut.updateSetting(!arg0);
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14522) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    let adPersonalizationTogglesDisabled = require(14572) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
     const DropsOptedOut = require(3803) /* explicitContentFromProto */.DropsOptedOut;
     const setting = DropsOptedOut.useSetting();
-    const obj = require(14522) /* useAdPersonalizationTogglesDisabled */;
-    const isParentallyControlled = require(13727) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    const obj = require(14572) /* useAdPersonalizationTogglesDisabled */;
+    const isParentallyControlled = require(13778) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = setting;
     }
@@ -50,11 +50,11 @@ let obj = {
     Quests3PDataOptedOut.updateSetting(!arg0);
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14522) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    let adPersonalizationTogglesDisabled = require(14572) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
     const DropsOptedOut = require(3803) /* explicitContentFromProto */.DropsOptedOut;
     const setting = DropsOptedOut.useSetting();
-    const obj = require(14522) /* useAdPersonalizationTogglesDisabled */;
-    const isParentallyControlled = require(13727) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    const obj = require(14572) /* useAdPersonalizationTogglesDisabled */;
+    const isParentallyControlled = require(13778) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = setting;
     }

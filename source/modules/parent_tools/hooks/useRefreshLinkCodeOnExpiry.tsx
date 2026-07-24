@@ -1,17 +1,17 @@
-// Module ID: 13780
-// Function ID: 105659
+// Module ID: 13831
+// Function ID: 105983
 // Name: useRefreshLinkCodeOnExpiry
-// Dependencies: [31, 8391, 2]
+// Dependencies: [31, 8435, 2]
 // Exports: default
 
-// Module 13780 (useRefreshLinkCodeOnExpiry)
+// Module 13831 (useRefreshLinkCodeOnExpiry)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useRefreshLinkCodeOnExpiry.tsx");
 
 export default function useRefreshLinkCodeOnExpiry(arg0, arg1) {
   const importDefault = arg0;
-  const tmp = importDefault(8391)(arg1);
+  const tmp = importDefault(8435)(arg1);
   const dependencyMap = tmp;
   const items = [arg0, tmp];
   const effect = React.useEffect(() => {

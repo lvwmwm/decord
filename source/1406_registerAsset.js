@@ -1,5 +1,5 @@
 // Module ID: 1406
-// Function ID: 16658
+// Function ID: 16659
 // Name: registerAsset
 // Dependencies: [1217]
 

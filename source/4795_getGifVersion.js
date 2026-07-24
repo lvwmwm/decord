@@ -1,5 +1,5 @@
 // Module ID: 4795
-// Function ID: 41700
+// Function ID: 41704
 // Name: getGifVersion
 // Dependencies: [4745]
 

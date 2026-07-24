@@ -1,10 +1,10 @@
-// Module ID: 13724
-// Function ID: 105265
+// Module ID: 13775
+// Function ID: 105589
 // Name: handleSensitiveMediaFilterPress
-// Dependencies: [1849, 6836, 9103, 1282, 1212, 6835, 7536, 7538, 4098, 13725, 1934, 5670, 5675, 2]
+// Dependencies: [1849, 6835, 9141, 1282, 1212, 6834, 7581, 7583, 4098, 13776, 1934, 5670, 5675, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 13724 (handleSensitiveMediaFilterPress)
+// Module 13775 (handleSensitiveMediaFilterPress)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EXPLICIT_MEDIA_SETTINGS_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY";
 import { SearchMediaTypes } from "SearchAutocompleteSelectAnalyticsActions";
@@ -74,7 +74,7 @@ export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilt
     };
     items.push(obj);
   }
-  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13725, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13776, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
 };
 export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {
@@ -101,8 +101,8 @@ export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMe
       if (tmp7) {
         let result = require(5670) /* _createForOfIteratorHelperLoose */.isMediaObscuredForHarmTypes(tmp2, enabledHarmTypesForMessage);
         if (result) {
-          result = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.shouldAgeVerifyForExplicitMedia();
-          const obj4 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
+          result = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.shouldAgeVerifyForExplicitMedia();
+          const obj4 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
         }
         tmp7 = result;
         const obj3 = require(5670) /* _createForOfIteratorHelperLoose */;

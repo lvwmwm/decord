@@ -1,10 +1,10 @@
-// Module ID: 9369
-// Function ID: 73102
+// Module ID: 9405
+// Function ID: 73311
 // Name: useShowNitroUpsellCallback
 // Dependencies: [31, 3991, 2]
 // Exports: default
 
-// Module 9369 (useShowNitroUpsellCallback)
+// Module 9405 (useShowNitroUpsellCallback)
 import result from "result";
 
 const require = arg1;

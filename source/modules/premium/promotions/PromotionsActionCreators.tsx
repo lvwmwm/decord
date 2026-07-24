@@ -1,10 +1,10 @@
-// Module ID: 7450
-// Function ID: 59746
+// Module ID: 7426
+// Function ID: 59692
 // Name: fetchActivePromotions
-// Dependencies: [5, 1921, 7131, 7130, 1851, 653, 686, 7451, 507, 6638, 1331, 1313, 7452, 2]
+// Dependencies: [5, 1921, 7130, 7129, 1851, 653, 686, 7427, 507, 6638, 1331, 1313, 7428, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 7450 (fetchActivePromotions)
+// Module 7426 (fetchActivePromotions)
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

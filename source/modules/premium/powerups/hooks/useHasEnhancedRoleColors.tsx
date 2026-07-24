@@ -1,5 +1,5 @@
 // Module ID: 4571
-// Function ID: 40083
+// Function ID: 40087
 // Name: useHasEnhancedRoleColors
 // Dependencies: [1838, 653, 566, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole

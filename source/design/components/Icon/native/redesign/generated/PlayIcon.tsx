@@ -1,10 +1,10 @@
-// Module ID: 8286
-// Function ID: 65422
+// Module ID: 8330
+// Function ID: 65650
 // Name: PlayIcon
-// Dependencies: [31, 33, 689, 3833, 8287, 2]
+// Dependencies: [31, 33, 689, 3833, 8331, 2]
 // Exports: PlayIcon
 
-// Module 8286 (PlayIcon)
+// Module 8330 (PlayIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PlayIcon = function PlayIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8287) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8331) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8287) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8331) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

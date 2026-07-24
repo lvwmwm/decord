@@ -1,10 +1,10 @@
-// Module ID: 9523
-// Function ID: 74118
+// Module ID: 9559
+// Function ID: 74327
 // Name: onClose
-// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 4098, 5187, 5186, 5501, 9524, 4126, 1212, 5459, 1920, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 4098, 5187, 5186, 5499, 9560, 4126, 1212, 1920, 2]
 // Exports: default
 
-// Module 9523 (onClose)
+// Module 9559 (onClose)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -44,12 +44,12 @@ export default function NotificationSurveyResponseActionSheet(header) {
   if (tmp3) {
     obj = { title: header };
     obj = { onPress: onClose };
-    obj.trailing = callback(require(5501) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj);
+    obj.trailing = callback(require(5499) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj);
     tmp3 = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   }
   const items = [tmp3, ];
   const obj1 = { style: tmp.view };
-  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(9524) }), , ];
+  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(9560) }), , ];
   const obj3 = { style: tmp.title, variant: "heading-md/bold" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl.string(require(1212) /* getSystemLocale */.t["d9+vQ8"]);
@@ -57,11 +57,11 @@ export default function NotificationSurveyResponseActionSheet(header) {
   const obj4 = { style: tmp.subtitle, variant: "text-md/normal" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const obj5 = {};
-  const obj2 = { style: tmp.rating, source: importDefault(9524) };
+  const obj2 = { style: tmp.rating, source: importDefault(9560) };
   const tmp2 = callback2;
   obj5.helpUrl = importDefault(1920).getArticleURL(HelpdeskArticles.HIGHLIGHTS_NOTIFICATIONS);
   obj4.children = intl2.format(require(1212) /* getSystemLocale */.t.WxD5QY, obj5);
-  items1[2] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj4);
+  items1[2] = callback(require(4126) /* Text */.Text, obj4);
   obj1.children = items1;
   items[1] = callback2(closure_3, obj1);
   obj.children = items;

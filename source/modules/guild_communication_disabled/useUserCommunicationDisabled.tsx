@@ -1,10 +1,10 @@
-// Module ID: 7664
-// Function ID: 61279
+// Module ID: 7753
+// Function ID: 61565
 // Name: getUserGuildMember
 // Dependencies: [1917, 1849, 566, 3747, 2]
 // Exports: useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 7664 (getUserGuildMember)
+// Module 7753 (getUserGuildMember)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

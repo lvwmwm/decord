@@ -1,9 +1,9 @@
-// Module ID: 15114
-// Function ID: 115106
+// Module ID: 15161
+// Function ID: 115427
 // Name: AvatarDefault
-// Dependencies: [31, 27, 13997, 653, 33, 4130, 689, 3834, 1273, 7873, 8007, 2]
+// Dependencies: [31, 27, 14047, 653, 33, 4130, 689, 3834, 1273, 7961, 7437, 2]
 
-// Module 15114 (AvatarDefault)
+// Module 15161 (AvatarDefault)
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import { StatusTypes } from "ME";
@@ -35,7 +35,7 @@ function AvatarDefault() {
   const result = num / 2;
   const sum = result + require(1273) /* Button */.STATUS_PADDING;
   const diff = tmp4 - sum - num / 4 * 2;
-  obj = { shape: require(7873) /* SolidCutout */.CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
+  obj = { shape: require(7961) /* SolidCutout */.CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
   obj = {};
   obj1 = { height: require(1273) /* Button */.AVATAR_SIZE_MAP[closure_5], width: require(1273) /* Button */.AVATAR_SIZE_MAP[closure_5], position: "relative" };
   obj.style = obj1;
@@ -45,10 +45,10 @@ function AvatarDefault() {
   items1 = [tmp.placeholderAvatar, { width: tmp4, height: tmp4, backgroundColor: token }];
   const items2 = [callback(View, { style: tmp.placeholderAvatarBackground }), ];
   const obj5 = { size: "custom", style: { width: tmp4, height: tmp4 }, color: "background-mod-strong" };
-  items2[1] = callback(require(8007) /* ReactionIcon */.ReactionIcon, obj5);
+  items2[1] = callback(require(7437) /* ReactionIcon */.ReactionIcon, obj5);
   obj3.children = items2;
   obj2.children = callback2(View, obj3);
-  const items3 = [callback(importDefault(7873), obj2), ];
+  const items3 = [callback(importDefault(7961), obj2), ];
   const obj6 = { size: num, status: StatusTypes.OFFLINE, isMobileOnline: false, isVROnline: false, streaming: false, style: { position: "absolute", right: closure_6, bottom: closure_6 } };
   items3[1] = callback(require(1273) /* Button */.Status, obj6);
   obj.children = items3;
@@ -62,7 +62,7 @@ function AvatarDefaultLarge() {
   const result = closure_8 / 2;
   const sum = result + require(1273) /* Button */.STATUS_PADDING;
   const diff = tmp3 - sum - closure_8 / 4 * 2;
-  obj = { shape: require(7873) /* SolidCutout */.CutoutShape.Circle, x: diff + closure_10, y: diff + closure_10, size: 2 * sum };
+  obj = { shape: require(7961) /* SolidCutout */.CutoutShape.Circle, x: diff + closure_10, y: diff + closure_10, size: 2 * sum };
   obj = { style: { height: require(1273) /* Button */.AVATAR_SIZE_MAP[closure_5], width: require(1273) /* Button */.AVATAR_SIZE_MAP[closure_5], position: "relative" } };
   const obj2 = {};
   const items = [tmp.avatarShadow, ];
@@ -79,10 +79,10 @@ function AvatarDefaultLarge() {
   const obj7 = { size: "custom", style: null, color: "background-mod-strong" };
   const obj8 = { width: require(1273) /* Button */.AVATAR_SIZE_MAP[closure_5], height: require(1273) /* Button */.AVATAR_SIZE_MAP[closure_5] };
   obj7.style = obj8;
-  items3[1] = callback(require(8007) /* ReactionIcon */.ReactionIcon, obj7);
+  items3[1] = callback(require(7437) /* ReactionIcon */.ReactionIcon, obj7);
   obj5.children = items3;
   obj4.children = callback2(View, obj5);
-  const items4 = [callback(importDefault(7873), obj4), ];
+  const items4 = [callback(importDefault(7961), obj4), ];
   const obj9 = { size: closure_8, status: StatusTypes.OFFLINE, isMobileOnline: false, isVROnline: false, streaming: false, style: { position: "absolute", right: closure_6 - closure_10, bottom: closure_6 - closure_10 } };
   items4[1] = callback(require(1273) /* Button */.Status, obj9);
   obj2.children = items4;

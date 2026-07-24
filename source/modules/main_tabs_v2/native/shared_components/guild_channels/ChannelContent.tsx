@@ -1,10 +1,10 @@
-// Module ID: 15354
-// Function ID: 117216
+// Module ID: 15401
+// Function ID: 117538
 // Name: ChannelContentComponent
-// Dependencies: [31, 27, 10260, 4326, 33, 4130, 477, 10261, 4623, 15355, 4652, 7576, 14971, 4126, 2]
+// Dependencies: [31, 27, 10289, 4326, 33, 4130, 477, 10290, 4623, 15402, 4652, 7631, 15018, 4126, 2]
 // Exports: renderChannelContent
 
-// Module 15354 (ChannelContentComponent)
+// Module 15401 (ChannelContentComponent)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -35,7 +35,7 @@ function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(10261) /* getLayoutStyles */;
+  let obj = require(10290) /* getLayoutStyles */;
   let tmp3 = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp3) {
@@ -80,7 +80,7 @@ function ChannelContentComponent(arg0) {
   obj5.resolvedUnreadSetting = resolvedUnreadSetting;
   obj5.connected = connected;
   obj5.layout = layout;
-  const items1 = [callback(importDefault(15355), obj5), ];
+  const items1 = [callback(importDefault(15402), obj5), ];
   let tmp22Result = tmp3;
   if (!tmp3) {
     tmp22Result = isNSFWResult;
@@ -106,12 +106,12 @@ function ChannelContentComponent(arg0) {
     const items3 = [tmp3, , ];
     if (isNSFWResult) {
       const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = callback(require(7576) /* WarningIcon */.WarningIcon, obj9);
+      isNSFWResult = callback(require(7631) /* WarningIcon */.WarningIcon, obj9);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj10 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = callback(importDefault(14971), obj10);
+      isSubscriptionGated = callback(importDefault(15018), obj10);
     }
     items3[2] = isSubscriptionGated;
     obj6.children = items3;

@@ -1,10 +1,10 @@
-// Module ID: 8762
-// Function ID: 69279
+// Module ID: 8801
+// Function ID: 69494
 // Name: ProductNameAndDescription
-// Dependencies: [27, 33, 4130, 689, 8763, 4126, 6786, 8713, 1212, 8764, 8233, 1876, 2]
+// Dependencies: [27, 33, 4130, 689, 8802, 4126, 6786, 8754, 1212, 8803, 8277, 1876, 2]
 // Exports: default
 
-// Module 8762 (ProductNameAndDescription)
+// Module 8801 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -14,7 +14,7 @@ let closure_5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(8763) /* _createForOfIteratorHelperLoose */;
+  let obj = require(8802) /* _createForOfIteratorHelperLoose */;
   obj = { style: tmp.description };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
@@ -28,7 +28,7 @@ function ProductPurchaseStatus(product) {
   product = product.product;
   let obj = require(6786) /* getPriceForCollectiblesProduct */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(8713) /* getProductPurchaseState */;
+  let obj1 = require(8754) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   obj = {};
   if (productPurchaseState.isPurchased) {
@@ -45,7 +45,7 @@ function ProductPurchaseStatus(product) {
     tmp6 = !result;
     if (tmp6) {
       const obj2 = { product, onTrackPress: product.onTrackPress };
-      tmp6 = callback(importDefault(8764), obj2);
+      tmp6 = callback(importDefault(8803), obj2);
     }
   }
   obj.children = tmp6;
@@ -54,7 +54,7 @@ function ProductPurchaseStatus(product) {
 function BundleProductDetailsActionSheetInfo(onTrackPress) {
   const product = onTrackPress.product;
   const tmp = callback3();
-  let obj = require(8233) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8277) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
   obj = {};
   const items = [tmp.body, ];

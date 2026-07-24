@@ -1,10 +1,10 @@
-// Module ID: 15243
-// Function ID: 116310
+// Module ID: 15290
+// Function ID: 116632
 // Name: ICYMIGuildEventRow
-// Dependencies: [31, 27, 6758, 1348, 1838, 33, 15179, 689, 8352, 1212, 8346, 4320, 8349, 8449, 8321, 8353, 5737, 8356, 15220, 21, 4126, 8451, 4646, 1273, 566, 2]
+// Dependencies: [31, 27, 6758, 1348, 1838, 33, 15226, 689, 8396, 1212, 8390, 4320, 8393, 8493, 8365, 8397, 5737, 8400, 15267, 21, 4126, 8495, 4646, 1273, 566, 2]
 // Exports: default
 
-// Module 15243 (ICYMIGuildEventRow)
+// Module 15290 (ICYMIGuildEventRow)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -28,7 +28,7 @@ function ICYMIGuildEventRow(event) {
   ({ channel, guild } = event);
   let React;
   const tmp = callback5();
-  const tmp2 = guild(8352)(event, null);
+  const tmp2 = guild(8396)(event, null);
   const tmp3 = callback2(event);
   const dependencyMap = tmp3;
   let toISOStringResult;
@@ -39,16 +39,16 @@ function ICYMIGuildEventRow(event) {
   React = toISOStringResult;
   const items = [toISOStringResult, tmp3];
   const tmp5 = guild(4320)(channel);
-  let obj = event(8349);
+  let obj = event(8393);
   let locationFromEvent = obj.getLocationFromEvent(event);
   if (null != tmp5) {
     locationFromEvent = tmp5;
   }
-  let obj1 = event(8449);
+  let obj1 = event(8493);
   const eventLocationIconSource = obj1.getEventLocationIconSource(event, channel, true);
-  let obj2 = event(8449);
+  let obj2 = event(8493);
   const eventLocationIconComponent = obj2.getEventLocationIconComponent(event, channel, true);
-  let obj3 = event(8346);
+  let obj3 = event(8390);
   const items1 = [event];
   const nextRecurrenceIdInEvent = obj3.getNextRecurrenceIdInEvent(event);
   const items2 = [guild.id, event.id];
@@ -81,9 +81,9 @@ function ICYMIGuildEventRow(event) {
   if (null != event) {
     id = event.id;
   }
-  const tmp12 = guild(8356);
+  const tmp12 = guild(8400);
   obj = {};
-  const tmp12Result = guild(8356)(guild_id, id, nextRecurrenceIdInEvent);
+  const tmp12Result = guild(8400)(guild_id, id, nextRecurrenceIdInEvent);
   const tmp16 = callback3;
   let intl = event(1212).intl;
   obj.actionLabel = intl.string(event(1212).t["6pFsLQ"]);
@@ -135,7 +135,7 @@ function ICYMIGuildEventRow(event) {
   }
   if (tmp25) {
     const obj4 = { variant: "text-md/normal", color: "text-subtle", lineClamp: 5 };
-    let obj11 = event(8451);
+    let obj11 = event(8495);
     obj5 = { guildId: guild.id };
     obj4.children = obj11.guildEventDetailsParser(event.description, true, obj5);
     tmp25 = callback3(event(4126).Text, obj4);
@@ -166,8 +166,8 @@ function ICYMIGuildEventRow(event) {
   const obj14 = { lineClamp: 2, variant: "text-xs/normal", color: "text-muted" };
   let result = null;
   if (null != locationFromEvent) {
-    result = event(8451).guildEventDetailsParser(locationFromEvent, true);
-    const obj23 = event(8451);
+    result = event(8495).guildEventDetailsParser(locationFromEvent, true);
+    const obj23 = event(8495);
   }
   obj14.children = result;
   items6[1] = callback3(event(4126).Text, obj14);
@@ -177,7 +177,7 @@ function ICYMIGuildEventRow(event) {
   items3[4] = callback4(closure_5, obj7);
   obj.children = items3;
   obj.children = callback4(closure_4, obj);
-  return tmp16(guild(15220), obj);
+  return tmp16(guild(15267), obj);
 }
 ({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ isGuildEventEnded: closure_6, isGuildScheduledEventActive: closure_7 } = _isNativeReflectConstruct);

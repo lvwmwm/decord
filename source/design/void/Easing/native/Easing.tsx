@@ -1,9 +1,9 @@
-// Module ID: 13032
-// Function ID: 100672
+// Module ID: 13084
+// Function ID: 100995
 // Name: STANDARD_EASING
 // Dependencies: [3991, 2]
 
-// Module 13032 (STANDARD_EASING)
+// Module 13084 (STANDARD_EASING)
 import { Easing } from "module_3991";
 import { Easing as Easing2 } from "module_3991";
 import bezierResult1 from "module_3991";

@@ -1,10 +1,10 @@
-// Module ID: 9004
-// Function ID: 70886
+// Module ID: 9043
+// Function ID: 71101
 // Name: Label
 // Dependencies: [31, 33, 3836, 3976, 4126, 2]
 // Exports: default
 
-// Module 9004 (Label)
+// Module 9043 (Label)
 import result from "result";
 import { jsx } from "jsxProd";
 

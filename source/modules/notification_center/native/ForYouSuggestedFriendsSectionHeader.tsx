@@ -1,10 +1,10 @@
-// Module ID: 15165
-// Function ID: 115475
+// Module ID: 15212
+// Function ID: 115797
 // Name: ForYouSuggestedFriendsSectionHeader
 // Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: default
 
-// Module 15165 (ForYouSuggestedFriendsSectionHeader)
+// Module 15212 (ForYouSuggestedFriendsSectionHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

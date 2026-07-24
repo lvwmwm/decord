@@ -1,10 +1,10 @@
-// Module ID: 11124
-// Function ID: 86583
+// Module ID: 11154
+// Function ID: 86852
 // Name: ForumPostGrid
-// Dependencies: [31, 1348, 3767, 11125, 33, 11126, 11130, 11141, 566, 44, 5681, 9137, 11145, 11146, 8328, 11151, 1358, 2]
+// Dependencies: [31, 1348, 3767, 11155, 33, 11156, 11160, 11171, 566, 44, 5681, 9173, 11175, 11176, 8372, 11181, 1358, 2]
 // Exports: ForumPostListDisabled
 
-// Module 11124 (ForumPostGrid)
+// Module 11154 (ForumPostGrid)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { useForumChannelStore } from "set";
@@ -25,7 +25,7 @@ function ForumPostGrid(arg0) {
   ({ hasUnreads, thread } = arg0);
   const obj = {};
   ({ firstMessage, isNew, media, parentChannel } = arg0);
-  const items = [callback(importDefault(11126), { thread, hasUnreads, isNew }), callback(importDefault(11130), { thread, hasUnreads, media }), callback(importDefault(11141), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items = [callback(importDefault(11156), { thread, hasUnreads, isNew }), callback(importDefault(11160), { thread, hasUnreads, media }), callback(importDefault(11171), { thread, firstMessage, hasUnreads, parentChannel })];
   obj.children = items;
   return callback2(closure_7, obj);
 }
@@ -139,12 +139,12 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
   const obj2 = threadId(566);
   const firstForumPostMessage = threadId(5681).useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(9137);
+  threadId(9173);
   if (loaded) {
     obj = { style };
     obj = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp7, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
-    obj.children = callback(stateFromStores(11146), obj);
-    tmp2 = callback(threadId(11145).ForumPostDisabledContainer, obj);
+    obj.children = callback(stateFromStores(11176), obj);
+    tmp2 = callback(threadId(11175).ForumPostDisabledContainer, obj);
   }
   return tmp2;
 };

@@ -1,10 +1,10 @@
-// Module ID: 14811
-// Function ID: 112970
+// Module ID: 14858
+// Function ID: 113291
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 31, 27, 1838, 4970, 14812, 14813, 3991, 574, 4099, 3976, 22, 1184, 1212, 7588, 14802, 3834, 689, 3743, 9891, 682, 5048, 7955, 9303, 477, 1557, 4528, 14814, 14815, 13998, 5217, 2]
+// Dependencies: [5, 31, 27, 1838, 4970, 14859, 14860, 3991, 574, 4099, 3976, 22, 1184, 1212, 7677, 14849, 3834, 689, 3743, 9923, 682, 5048, 8042, 9339, 477, 1557, 4528, 14861, 14862, 14048, 5217, 2]
 // Exports: default
 
-// Module 14811 (_createForOfIteratorHelperLoose)
+// Module 14858 (_createForOfIteratorHelperLoose)
 import withEqualityFn from "withEqualityFn";
 import set from "set";
 import { Dimensions } from "getGuildsBarGuildMenuItems";
@@ -293,8 +293,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         element = store.getFastListGuildFolders()[item.section - constants.GUILDS];
         if (tmp6 != element) {
           const type = item.type;
-          if (require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.SECTION !== type) {
-            if (require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM === type) {
+          if (require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.SECTION !== type) {
+            if (require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM === type) {
               if (element.type !== GuildsNodeType.ROOT) {
                 let tmp17 = element;
                 if (element.type !== GuildsNodeType.FOLDER) {

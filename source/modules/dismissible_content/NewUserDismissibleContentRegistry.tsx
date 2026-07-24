@@ -1,5 +1,5 @@
 // Module ID: 3968
-// Function ID: 32834
+// Function ID: 32835
 // Name: isUserAccountOldEnough
 // Dependencies: [1194, 1338, 1334, 664, 624, 21, 2]
 // Exports: disableNewUserDismissibleContent, useNewUserDismissibleContent

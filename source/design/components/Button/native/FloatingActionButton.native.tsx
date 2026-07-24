@@ -1,10 +1,10 @@
-// Module ID: 8379
-// Function ID: 66750
+// Module ID: 8423
+// Function ID: 66978
 // Name: styles
-// Dependencies: [31, 33, 4130, 689, 4547, 1324, 3991, 4542, 7772, 2]
+// Dependencies: [31, 33, 4130, 689, 4547, 1324, 3991, 4542, 7534, 2]
 // Exports: FloatingActionButton
 
-// Module 8379 (styles)
+// Module 8423 (styles)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -83,6 +83,6 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   obj1["icon"] = cloneElementResult;
   obj1["style"] = tmp3.button;
   obj1["pillStyle"] = tmp3.iconButtonPill;
-  obj.children = jsx(positionBottom(7772).BaseIconButton, {});
+  obj.children = jsx(positionBottom(7534).BaseIconButton, {});
   return jsx(positionRight(3991).View, { style: animatedStyle });
 };

@@ -1,9 +1,9 @@
-// Module ID: 15997
-// Function ID: 123754
+// Module ID: 16044
+// Function ID: 124076
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1844, 5078, 2]
 
-// Module 15997 (_isNativeReflectConstruct)
+// Module 16044 (_isNativeReflectConstruct)
 import AutomaticLifecycleManager from "AutomaticLifecycleManager";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

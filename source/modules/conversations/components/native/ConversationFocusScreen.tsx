@@ -1,10 +1,10 @@
-// Module ID: 9308
-// Function ID: 72685
+// Module ID: 9344
+// Function ID: 72894
 // Name: ConversationFocusScreen
-// Dependencies: [31, 27, 6831, 33, 4130, 689, 1459, 566, 9287, 4126, 1212, 4543, 9309, 2]
+// Dependencies: [31, 27, 6830, 33, 4130, 689, 1459, 566, 9323, 4126, 1212, 4543, 9345, 2]
 // Exports: default
 
-// Module 9308 (ConversationFocusScreen)
+// Module 9344 (ConversationFocusScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

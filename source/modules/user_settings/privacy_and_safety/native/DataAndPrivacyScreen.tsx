@@ -1,10 +1,10 @@
-// Module ID: 14526
-// Function ID: 110862
+// Module ID: 14576
+// Function ID: 111185
 // Name: getTermsOfServicePrivacyPolicySettings
-// Dependencies: [31, 5592, 7662, 653, 33, 1212, 1920, 8897, 1456, 13758, 13761, 10095, 13718, 13550, 2]
+// Dependencies: [31, 5590, 7751, 653, 33, 1212, 1920, 8936, 1456, 13809, 13812, 10127, 13769, 13601, 2]
 // Exports: default
 
-// Module 14526 (getTermsOfServicePrivacyPolicySettings)
+// Module 14576 (getTermsOfServicePrivacyPolicySettings)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MobileSetting } from "MobileSetting";
@@ -125,8 +125,8 @@ export default function DataAndPrivacySettings() {
     obj.sections = items;
     return obj.createList(obj);
   }, items);
-  obj = { screen: stackNavigation(13718).SettingsScreen.DATA_AND_PRIVACY };
-  let items1 = [callback(importDefault(13718), obj), callback(importDefault(13550), { node: memo })];
+  obj = { screen: stackNavigation(13769).SettingsScreen.DATA_AND_PRIVACY };
+  let items1 = [callback(importDefault(13769), obj), callback(importDefault(13601), { node: memo })];
   obj.children = items1;
   return callback2(closure_9, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15469
-// Function ID: 119082
+// Module ID: 15516
+// Function ID: 119404
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [31, 3767, 1849, 8818, 653, 33, 5464, 5484, 566, 15467, 8492, 8825, 2]
+// Dependencies: [31, 3767, 1849, 8857, 653, 33, 5462, 5482, 566, 15514, 8537, 8864, 2]
 // Exports: default
 
-// Module 15469 (IgnoredUserRequestsScreen)
+// Module 15516 (IgnoredUserRequestsScreen)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

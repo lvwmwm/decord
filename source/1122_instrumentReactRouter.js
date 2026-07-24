@@ -1,5 +1,5 @@
 // Module ID: 1122
-// Function ID: 12745
+// Function ID: 12746
 // Name: instrumentReactRouter
 // Dependencies: [77, 57, 31, 1000, 794, 1116]
 // Exports: reactRouterV4BrowserTracingIntegration, reactRouterV5BrowserTracingIntegration, withSentryRouting

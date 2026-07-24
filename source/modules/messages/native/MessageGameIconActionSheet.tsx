@@ -1,10 +1,10 @@
-// Module ID: 10963
-// Function ID: 85231
+// Module ID: 10990
+// Function ID: 85420
 // Name: MessageGameIconActionSheet
-// Dependencies: [31, 27, 4167, 653, 33, 4130, 477, 689, 566, 5187, 1273, 4126, 5459, 1212, 1920, 2]
+// Dependencies: [31, 27, 4167, 653, 33, 4130, 477, 689, 566, 5187, 1273, 4126, 1212, 1920, 2]
 // Exports: default
 
-// Module 10963 (MessageGameIconActionSheet)
+// Module 10990 (MessageGameIconActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -70,7 +70,7 @@ export default function MessageGameIconActionSheet(applicationId) {
     const obj8 = { helpdeskArticle: importDefault(1920).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
     items3[2] = intl2.format(applicationId(1212).t.BPDKoA, obj8);
     obj6.children = items3;
-    items2[1] = callback2(applicationId(5459).TextWithIOSLinkWorkaround, obj6);
+    items2[1] = callback2(applicationId(4126).Text, obj6);
     obj4.children = items2;
     items1[1] = callback2(View, obj4);
     obj1.children = items1;

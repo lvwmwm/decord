@@ -1,10 +1,10 @@
-// Module ID: 14522
-// Function ID: 110845
+// Module ID: 14572
+// Function ID: 111168
 // Name: useAdPersonalizationTogglesDisabled
-// Dependencies: [12610, 566, 2]
+// Dependencies: [12661, 566, 2]
 // Exports: useAdPersonalizationTogglesDisabled
 
-// Module 14522 (useAdPersonalizationTogglesDisabled)
+// Module 14572 (useAdPersonalizationTogglesDisabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

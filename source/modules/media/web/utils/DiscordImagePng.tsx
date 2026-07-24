@@ -1,5 +1,5 @@
 // Module ID: 4742
-// Function ID: 41169
+// Function ID: 41173
 // Name: DiscordImagePng
 // Dependencies: [5, 6, 7, 1879, 4743, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 9942
-// Function ID: 76910
+// Module ID: 9974
+// Function ID: 77104
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [31, 27, 1857, 1838, 1849, 33, 4130, 1557, 9943, 8180, 566, 7889, 5515, 4126, 1212, 4660, 8492, 1273, 5187, 2]
+// Dependencies: [31, 27, 1857, 1838, 1849, 33, 4130, 1557, 9975, 8224, 566, 7976, 5513, 4126, 1212, 4660, 8537, 1273, 5187, 2]
 // Exports: default
 
-// Module 9942 (AppInteractionInfoActionSheet)
+// Module 9974 (AppInteractionInfoActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -36,13 +36,13 @@ export default function AppInteractionInfoActionSheet(message) {
   let tmp3;
   const memo = React.useMemo(() => outer1_8(onBack(_undefined[8]), { onBack }), items);
   if (null != interactionMetadata) {
-    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 8180).ApplicationIntegrationType.USER_INSTALL];
+    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 8224).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp3;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp6;
   if (null != interactionMetadata2) {
-    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 8180).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 8224).ApplicationIntegrationType.GUILD_INSTALL];
   }
   React = tmp6;
   const interactionMetadata3 = message.interactionMetadata;
@@ -85,8 +85,8 @@ export default function AppInteractionInfoActionSheet(message) {
   }
   if (null != stateFromStores1) {
     obj = { style: tmp.itemContainer };
-    obj = { guild: stateFromStores1, size: message(5515).GuildIconSizes.SMALL_32 };
-    const items5 = [callback(onBack(5515), obj), ];
+    obj = { guild: stateFromStores1, size: message(5513).GuildIconSizes.SMALL_32 };
+    const items5 = [callback(onBack(5513), obj), ];
     obj1 = { style: tmp.itemLabel };
     obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
     const items6 = [callback(message(4126).Text, obj2), ];
@@ -99,7 +99,7 @@ export default function AppInteractionInfoActionSheet(message) {
     items5[1] = callback2(id, obj1);
     obj.children = items5;
     let tmp27 = callback2(id, obj);
-    const tmp33 = onBack(5515);
+    const tmp33 = onBack(5513);
   } else {
     tmp27 = null;
     if (null != stateFromStores) {

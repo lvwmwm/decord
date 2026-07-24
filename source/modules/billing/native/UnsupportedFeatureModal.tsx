@@ -1,10 +1,10 @@
-// Module ID: 8777
-// Function ID: 69357
+// Module ID: 8816
+// Function ID: 69572
 // Name: UnsupportedFeatureModal
-// Dependencies: [31, 27, 33, 5519, 5087, 4337, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 5517, 5087, 4337, 4126, 1212, 2]
 // Exports: default
 
-// Module 8777 (UnsupportedFeatureModal)
+// Module 8816 (UnsupportedFeatureModal)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -36,7 +36,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
   };
   obj.Unsupported = obj;
   obj.screens = obj;
-  return jsx(onDismiss(5519).Navigator, {
+  return jsx(onDismiss(5517).Navigator, {
     title: onDismiss.title,
     headerLeft: onDismiss(5087).getHeaderCloseButton(() => {
       let arr = outer1_1(outer1_2[5]);

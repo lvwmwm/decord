@@ -1,10 +1,10 @@
-// Module ID: 8476
-// Function ID: 67620
+// Module ID: 8520
+// Function ID: 67848
 // Name: useStagePrivacyLevelSettings
 // Dependencies: [3758, 653, 1354, 482, 566, 3763, 483, 1212, 1920, 2]
 // Exports: default
 
-// Module 8476 (useStagePrivacyLevelSettings)
+// Module 8520 (useStagePrivacyLevelSettings)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { HelpdeskArticles } from "ME";
 import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";

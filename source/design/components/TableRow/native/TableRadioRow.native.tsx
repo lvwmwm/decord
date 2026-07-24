@@ -1,10 +1,10 @@
-// Module ID: 7518
-// Function ID: 60217
+// Module ID: 7653
+// Function ID: 60852
 // Name: TableRadioRow
-// Dependencies: [31, 33, 7519, 3836, 3848, 5165, 7520, 2]
+// Dependencies: [31, 33, 7654, 3836, 3848, 5165, 7655, 2]
 // Exports: TableRadioRow
 
-// Module 7518 (TableRadioRow)
+// Module 7653 (TableRadioRow)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -30,7 +30,7 @@ export const TableRadioRow = function TableRadioRow(value) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let onSelect;
-  const context = onSelect.useContext(require(7519) /* context */.TableRadioGroupContext);
+  const context = onSelect.useContext(require(7654) /* context */.TableRadioGroupContext);
   onSelect = context.onSelect;
   if (null == legacyCompat_selected) {
     legacyCompat_selected = context.selectedValue === value;
@@ -64,6 +64,6 @@ export const TableRadioRow = function TableRadioRow(value) {
     onSelect(closure_0);
   };
   obj1 = { selected: legacyCompat_selected };
-  obj["trailing"] = jsx(require(7520) /* FormRadio */.FormRadio, { selected: legacyCompat_selected });
+  obj["trailing"] = jsx(require(7655) /* FormRadio */.FormRadio, { selected: legacyCompat_selected });
   return jsx(require(5165) /* TableRowInner */.TableRow, {});
 };

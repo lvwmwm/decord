@@ -1,10 +1,10 @@
-// Module ID: 16358
-// Function ID: 127698
+// Module ID: 16405
+// Function ID: 128022
 // Name: EnableCommunityModalSteps
-// Dependencies: [31, 27, 8439, 653, 33, 4130, 566, 1456, 4528, 4539, 686, 16356, 5585, 5121, 4543, 1212, 2]
+// Dependencies: [31, 27, 8483, 653, 33, 4130, 566, 1456, 4528, 4539, 686, 16403, 5583, 5121, 4543, 1212, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 16358 (EnableCommunityModalSteps)
+// Module 16405 (EnableCommunityModalSteps)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

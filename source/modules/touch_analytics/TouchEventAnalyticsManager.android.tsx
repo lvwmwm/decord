@@ -1,9 +1,9 @@
-// Module ID: 13470
-// Function ID: 103693
+// Module ID: 13523
+// Function ID: 104020
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1849, 13118, 13471, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1849, 13171, 13524, 4530, 2]
 
-// Module 13470 (_isNativeReflectConstruct)
+// Module 13523 (_isNativeReflectConstruct)
 import apexExperiment from "apexExperiment";
 import enforcing from "enforcing";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -30,25 +30,25 @@ function updateEnabledState() {
   }
   let result = true === isStaffResult;
   if (!result) {
-    result = require(13118) /* apexExperiment */.isZoomedExperimentEnabled();
-    const obj2 = require(13118) /* apexExperiment */;
+    result = require(13171) /* apexExperiment */.isZoomedExperimentEnabled();
+    const obj2 = require(13171) /* apexExperiment */;
   }
   if (result) {
     if (!c9) {
-      importDefault(13471).enableTouchLogging();
+      importDefault(13524).enableTouchLogging();
       c9 = true;
-      const obj3 = importDefault(13471);
+      const obj3 = importDefault(13524);
     }
   }
   if (!result) {
     if (c9) {
-      importDefault(13471).disableTouchLogging();
+      importDefault(13524).disableTouchLogging();
       c9 = false;
       while (true) {
         let tmp13 = __exception;
         continue;
       }
-      const obj4 = importDefault(13471);
+      const obj4 = importDefault(13524);
     }
   }
 }

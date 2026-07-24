@@ -1,10 +1,10 @@
-// Module ID: 11212
-// Function ID: 87298
+// Module ID: 11242
+// Function ID: 87567
 // Name: RecommendationAppRow
-// Dependencies: [31, 33, 1392, 11202, 2]
+// Dependencies: [31, 33, 1392, 11232, 2]
 // Exports: default
 
-// Module 11212 (RecommendationAppRow)
+// Module 11242 (RecommendationAppRow)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -30,5 +30,5 @@ export default function RecommendationAppRow(isLastRow) {
   obj = { id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true };
   const applicationIconSource = obj.getApplicationIconSource(obj);
   obj = { application, iconSource: applicationIconSource, onPress: isLastRow.onPress, isFirstRow, isLastRow: flag, showsPromoted: flag2 };
-  return jsx(require(11202) /* AppRowLabel */.BaseAppRow, { application, iconSource: applicationIconSource, onPress: isLastRow.onPress, isFirstRow, isLastRow: flag, showsPromoted: flag2 });
+  return jsx(require(11232) /* AppRowLabel */.BaseAppRow, { application, iconSource: applicationIconSource, onPress: isLastRow.onPress, isFirstRow, isLastRow: flag, showsPromoted: flag2 });
 };

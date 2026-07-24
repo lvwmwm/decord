@@ -1,9 +1,9 @@
-// Module ID: 8663
-// Function ID: 68557
+// Module ID: 8704
+// Function ID: 68777
 // Name: CollectiblesShopCardInternalV2
-// Dependencies: [31, 27, 1278, 655, 33, 4130, 689, 8664, 6785, 8665, 8667, 8668, 8670, 1212, 3831, 5464, 8700, 8702, 8703, 566, 3976, 4660, 6786, 1876, 7871, 4126, 7869, 8705, 8707, 8708, 8710, 8715, 8718, 8666, 4098, 8736, 11844, 11845, 3776, 8713, 8766, 11846, 11848, 491, 2]
+// Dependencies: [31, 27, 1278, 655, 33, 4130, 689, 8705, 6785, 8706, 8708, 8709, 8711, 1212, 3831, 5462, 8741, 8743, 8744, 566, 3976, 4660, 6786, 1876, 7486, 4126, 7958, 8746, 8748, 8749, 8751, 8756, 8759, 8707, 4098, 8775, 11871, 11872, 3776, 8754, 8805, 11873, 11875, 491, 2]
 
-// Module 8663 (CollectiblesShopCardInternalV2)
+// Module 8704 (CollectiblesShopCardInternalV2)
 import importAllResult from "PurchasedAssetOverlay";
 import get_ActivityIndicator from "DiceIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -393,7 +393,7 @@ const memoResult = importAllResult.memo(function CollectiblesShopCardV2(arg0) {
     obj = {};
     const merged1 = Object.assign(merged);
     obj.children = callback(CollectiblesShopCardV2Inner, obj);
-    return callback(require(8666) /* useCollectiblesAnalyticsContext */.CollectiblesAnalyticsProvider, obj);
+    return callback(require(8707) /* useCollectiblesAnalyticsContext */.CollectiblesAnalyticsProvider, obj);
   }
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardV2.tsx");

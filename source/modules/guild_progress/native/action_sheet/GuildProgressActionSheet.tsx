@@ -1,10 +1,10 @@
-// Module ID: 11509
-// Function ID: 89659
+// Module ID: 11539
+// Function ID: 89904
 // Name: GuildProgressHeader
-// Dependencies: [5, 31, 27, 8439, 1907, 11502, 653, 33, 4130, 689, 566, 11507, 3830, 675, 11510, 11511, 8481, 6289, 1212, 8438, 4674, 5917, 4138, 4098, 1207, 6409, 11512, 5484, 5907, 4126, 4543, 4660, 5500, 1273, 2]
+// Dependencies: [5, 31, 27, 8483, 1907, 11532, 653, 33, 4130, 689, 566, 11537, 3830, 675, 11540, 11541, 8526, 6289, 1212, 8482, 4674, 5917, 4138, 4098, 1207, 6409, 11542, 5482, 5907, 4126, 4543, 4660, 5498, 1273, 2]
 // Exports: default
 
-// Module 11509 (GuildProgressHeader)
+// Module 11539 (GuildProgressHeader)
 import closure_3 from "Steps";
 import PressableBase from "PressableBase";
 import { View } from "QUICK_SWITCHER";

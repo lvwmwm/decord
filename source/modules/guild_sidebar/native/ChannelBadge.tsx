@@ -1,10 +1,10 @@
-// Module ID: 15052
-// Function ID: 114610
+// Module ID: 15099
+// Function ID: 114931
 // Name: ChannelBadge
-// Dependencies: [31, 27, 1921, 33, 4130, 624, 15053, 11395, 4126, 1827, 2]
+// Dependencies: [31, 27, 1921, 33, 4130, 624, 15100, 11423, 4126, 1827, 2]
 // Exports: default
 
-// Module 15052 (ChannelBadge)
+// Module 15099 (ChannelBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,14 +31,14 @@ export default function ChannelBadge(arg0) {
     if (mentionCount > 0) {
       obj = { style: tmp.channelInfoContainer };
       obj = { mentionsCount: mentionCount, isMentionLowImportance };
-      obj.children = jsx(importDefault(15053), { mentionsCount: mentionCount, isMentionLowImportance });
+      obj.children = jsx(importDefault(15100), { mentionsCount: mentionCount, isMentionLowImportance });
       let tmp3 = <View mentionsCount={mentionCount} isMentionLowImportance={isMentionLowImportance} />;
     }
     return tmp3;
   }
   if (isNewChannel) {
-    const obj1 = { style: tmp.channelInfoContainer, children: jsx(importDefault(11395), {}) };
-    tmp3 = <View style={tmp.channelInfoContainer}>{jsx(importDefault(11395), {})}</View>;
+    const obj1 = { style: tmp.channelInfoContainer, children: jsx(importDefault(11423), {}) };
+    tmp3 = <View style={tmp.channelInfoContainer}>{jsx(importDefault(11423), {})}</View>;
   } else {
     tmp3 = null;
     if (null != muted) {

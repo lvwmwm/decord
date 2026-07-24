@@ -1,5 +1,5 @@
 // Module ID: 5227
-// Function ID: 45204
+// Function ID: 45209
 // Name: RNGestureHandlerModule
 // Dependencies: [27]
 

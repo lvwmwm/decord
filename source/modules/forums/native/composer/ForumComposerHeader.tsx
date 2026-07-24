@@ -1,10 +1,10 @@
-// Module ID: 9561
-// Function ID: 74504
+// Module ID: 9597
+// Function ID: 74715
 // Name: ForumComposerHeader
 // Dependencies: [31, 27, 33, 4130, 689, 4320, 4660, 1212, 5119, 4645, 4126, 4633, 2]
 // Exports: default
 
-// Module 9561 (ForumComposerHeader)
+// Module 9597 (ForumComposerHeader)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

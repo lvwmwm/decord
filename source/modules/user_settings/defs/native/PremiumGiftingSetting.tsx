@@ -1,9 +1,9 @@
-// Module ID: 13895
-// Function ID: 106275
+// Module ID: 13946
+// Function ID: 106599
 // Name: route
-// Dependencies: [31, 653, 33, 6656, 7227, 12393, 1273, 10095, 1212, 8773, 3789, 12485, 2]
+// Dependencies: [31, 653, 33, 6656, 7227, 12451, 1273, 10127, 1212, 8812, 3789, 12538, 2]
 
-// Module 13895 (route)
+// Module 13946 (route)
 import result from "result";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -30,7 +30,7 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumGiftingSettingTrailing() {
-    let obj = require(12393) /* useEligibleActiveOutboundPromotions */;
+    let obj = require(12451) /* useEligibleActiveOutboundPromotions */;
     const unseenOutboundPromotions = obj.useUnseenOutboundPromotions();
     obj = { value: unseenOutboundPromotions.length };
     return jsx(require(1273) /* Button */.Badge, { value: unseenOutboundPromotions.length });
@@ -41,7 +41,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_GIFTING,
   getComponent() {
-    return require(12485) /* GiftingSectionTitle */.default;
+    return require(12538) /* GiftingSectionTitle */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

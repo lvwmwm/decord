@@ -1,10 +1,10 @@
-// Module ID: 11961
-// Function ID: 92435
+// Module ID: 11987
+// Function ID: 92671
 // Name: VoicePanelStreamPreview
-// Dependencies: [31, 27, 4149, 1194, 33, 3991, 4543, 4130, 689, 10789, 566, 4194, 4131, 7589, 4126, 1212, 2]
+// Dependencies: [31, 27, 4149, 1194, 33, 3991, 4543, 4130, 689, 10818, 566, 4194, 4131, 7678, 4126, 1212, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 11961 (VoicePanelStreamPreview)
+// Module 11987 (VoicePanelStreamPreview)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -54,7 +54,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   if (null != stream) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10789)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = stream(10818)(guildId, channelId, ownerId).previewUrl;
   let obj = mode(566);
   const items = [_isNativeReflectConstruct, closure_5];
   const items1 = [stream];
@@ -118,7 +118,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   const items2 = [tmp11, ];
   const obj3 = { style: animatedStyle, layout };
   const tmp15 = callback;
-  const tmp2 = stream(10789);
+  const tmp2 = stream(10818);
   const tmp8 = closure_7;
   const tmp9 = closure_8;
   if (stateFromStores) {
@@ -138,7 +138,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     tmp17Result = tmp17(closure_9, obj6);
   }
   obj3.children = tmp17Result;
-  items2[1] = tmp15(stream(7589), obj3);
+  items2[1] = tmp15(stream(7678), obj3);
   obj.children = items2;
   return tmp8(tmp9, obj);
 };

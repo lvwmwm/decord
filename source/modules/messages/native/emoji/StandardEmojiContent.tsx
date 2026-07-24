@@ -1,10 +1,10 @@
-// Module ID: 9386
-// Function ID: 73188
+// Module ID: 9422
+// Function ID: 73397
 // Name: Emoji
-// Dependencies: [31, 27, 3947, 33, 4130, 689, 9387, 3775, 5085, 4126, 9388, 3771, 9330, 9389, 1212, 7495, 4543, 9391, 2]
+// Dependencies: [31, 27, 3947, 33, 4130, 689, 9423, 3775, 5085, 4126, 9424, 3771, 9366, 9425, 1212, 7636, 4543, 9427, 2]
 // Exports: default
 
-// Module 9386 (Emoji)
+// Module 9422 (Emoji)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ function Emoji(surrogate) {
   surrogate = surrogate.surrogate;
   let obj = {};
   const merged = Object.assign(_createForOfIteratorHelperLoose());
-  let obj1 = require(9387) /* styles */;
+  let obj1 = require(9423) /* styles */;
   const merged1 = Object.assign(obj1.useSharedMessageEmojiStyles());
   let obj2 = importDefault(3775);
   const uRL = obj2.getURL(surrogate);

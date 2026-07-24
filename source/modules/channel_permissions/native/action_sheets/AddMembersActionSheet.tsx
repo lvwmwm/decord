@@ -1,10 +1,10 @@
-// Module ID: 8420
-// Function ID: 67081
+// Module ID: 8464
+// Function ID: 67309
 // Name: _toPropertyKey
-// Dependencies: [5, 29, 57, 31, 27, 1917, 1910, 1838, 1849, 7485, 482, 33, 4130, 689, 3763, 5160, 4118, 566, 8413, 3843, 1212, 1273, 4126, 8421, 5189, 7879, 8425, 5047, 8430, 4320, 4312, 8414, 3830, 4098, 5187, 5186, 4543, 2]
+// Dependencies: [5, 29, 57, 31, 27, 1917, 1910, 1838, 1849, 7565, 482, 33, 4130, 689, 3763, 5160, 4118, 566, 8457, 3843, 1212, 1273, 4126, 8465, 5189, 7527, 8469, 5047, 8474, 4320, 4312, 8458, 3830, 4098, 5187, 5186, 4543, 2]
 // Exports: default
 
-// Module 8420 (_toPropertyKey)
+// Module 8464 (_toPropertyKey)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
 import _slicedToArray from "_slicedToArray";
@@ -222,7 +222,7 @@ class AddMembersBody {
     tmp39 = jsxs;
     tmp40 = Fragment;
     obj5 = {};
-    tmp41 = require("module_8425");
+    tmp41 = require("module_8469");
     intl5 = require("getSystemLocale").intl;
     obj5.accessibilityLabel = intl5.string(require("getSystemLocale").t["5h0QOP"]);
     intl6 = require("getSystemLocale").intl;
@@ -301,23 +301,33 @@ class AddMembersBody {
       item = item.item;
       const index = item.index;
       if ("string" === typeof item) {
-        let obj = { style: _undefined.sectionRowWrapper, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: item };
-        let tmp14Result = outer1_17(guild(_undefined[22]).Text, obj);
+        let obj = { style: null, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default" };
+        let items = [_undefined.sectionRowWrapper, ];
+        if (0 === index) {
+          obj = { paddingTop: 0 };
+        } else {
+          obj = {};
+        }
+        items[1] = obj;
+        obj.style = items;
+        obj.children = item;
+        outer1_17(guild(_undefined[22]).Text, obj);
+        const tmp9 = outer1_17;
       } else {
-        obj = {};
+        let obj1 = {};
         let tmp2 = num5 === index;
         if (!tmp2) {
           tmp2 = sum1 === index;
         }
-        obj.start = tmp2;
+        obj1.start = tmp2;
         let tmp4 = c10 === index;
         if (!tmp4) {
           tmp4 = closure_12 === index;
         }
-        obj.end = tmp4;
-        obj.item = item;
-        obj.guildId = item.id;
-        obj.onPress = function onPress() {
+        obj1.end = tmp4;
+        obj1.item = item;
+        obj1.guildId = item.id;
+        obj1.onPress = function onPress() {
           (function updatePendingAdditions(item) {
             let closure_0 = item;
             if (item.rowType !== outer3_14.EMPTY_STATE) {
@@ -360,11 +370,9 @@ class AddMembersBody {
             }
           })(item);
         };
-        obj.checked = outer1_22(item) in pendingAdditions;
-        tmp14Result = outer1_17(guild(_undefined[23]).ChannelOverwritesCheckboxItem, obj);
-        const tmp14 = outer1_17;
+        obj1.checked = outer1_22(item) in pendingAdditions;
+        return outer1_17(guild(_undefined[23]).ChannelOverwritesCheckboxItem, obj1);
       }
-      return tmp14Result;
     };
     obj11["keyboardShouldPersistTaps"] = "handled";
     tmp48 = jsx(tmp38, obj11);
@@ -375,7 +383,7 @@ class AddMembersBody {
 ({ RowType: closure_14, MEMBER_REQUEST_COUNT: closure_15 } = RowType);
 ({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = jsxProd);
 _createForOfIteratorHelperLoose = { container: { flex: 1 } };
-_createForOfIteratorHelperLoose = { alignItems: "stretch", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose = { alignItems: "stretch", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
 _createForOfIteratorHelperLoose.inputContainer = _createForOfIteratorHelperLoose;
 _createForOfIteratorHelperLoose.tagRoleColor = { height: 12, width: 12, borderRadius: 6 };
 let obj1 = { width: 16, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };

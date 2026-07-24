@@ -1,10 +1,10 @@
-// Module ID: 10154
-// Function ID: 78526
+// Module ID: 10186
+// Function ID: 78720
 // Name: SafetyTipsContainer
-// Dependencies: [31, 27, 33, 4130, 689, 4541, 5807, 4126, 1212, 7562, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4541, 5807, 4126, 1212, 7619, 2]
 // Exports: default
 
-// Module 10154 (SafetyTipsContainer)
+// Module 10186 (SafetyTipsContainer)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

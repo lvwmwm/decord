@@ -1,5 +1,5 @@
 // Module ID: 929
-// Function ID: 10106
+// Function ID: 10107
 // Name: captureMetric
 // Dependencies: [861]
 

@@ -1,5 +1,5 @@
 // Module ID: 1164
-// Function ID: 13210
+// Function ID: 13211
 // Name: TimeToInitialDisplay
 // Dependencies: [57, 31, 794, 1165, 1134, 1132, 977]
 // Exports: createTimeToFullDisplay, createTimeToInitialDisplay, updateInitialDisplaySpan

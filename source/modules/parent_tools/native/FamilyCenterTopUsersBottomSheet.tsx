@@ -1,10 +1,10 @@
-// Module ID: 13800
-// Function ID: 105749
+// Module ID: 13851
+// Function ID: 106073
 // Name: UserRow
-// Dependencies: [31, 1849, 33, 4130, 6828, 5165, 3969, 1273, 5500, 4126, 1212, 2198, 5503, 2]
+// Dependencies: [31, 1849, 33, 4130, 6827, 5165, 3969, 1273, 5498, 4126, 1212, 2198, 5501, 2]
 // Exports: default
 
-// Module 13800 (UserRow)
+// Module 13851 (UserRow)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function UserRow(userActivity) {
   if (null == user) {
     return null;
   } else {
-    let obj = require(6828) /* getActivityTypeTextConfigs */;
+    let obj = require(6827) /* getActivityTypeTextConfigs */;
     const topUserOrGuildDescription = obj.getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
     obj = { label: importDefault(3969).getName(user), subLabel: topUserOrGuildDescription };
     obj = { size: require(1273) /* Button */.AvatarSizes.SMALL, user, guildId: undefined };
@@ -39,7 +39,7 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   obj.children = intl.string(importDefault(2198).BxbvS7);
   const items = [callback(require(4126) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: topUserActivities.map((userActivity) => outer1_4(outer1_7, { userActivity }, userActivity.user_id)) };
-  items[1] = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
+  items[1] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj.children = items;
-  return callback2(require(5500) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5498) /* ActionSheet */.ActionSheet, obj);
 };

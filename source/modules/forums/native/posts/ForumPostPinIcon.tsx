@@ -1,10 +1,10 @@
-// Module ID: 11127
-// Function ID: 86610
+// Module ID: 11157
+// Function ID: 86879
 // Name: ForumPostPinIcon
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 11128, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 11158, 2]
 // Exports: default
 
-// Module 11127 (ForumPostPinIcon)
+// Module 11157 (ForumPostPinIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ export default function ForumPostPinIcon(containerStyle) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
   items = [tmp.pin, containerStyle.containerStyle];
-  obj = { source: importDefault(11128), style: tmp.pinIcon };
-  obj.children = jsx(require(1273) /* Button */.Icon, { source: importDefault(11128), style: tmp.pinIcon });
-  return <View source={importDefault(11128)} style={tmp.pinIcon} />;
+  obj = { source: importDefault(11158), style: tmp.pinIcon };
+  obj.children = jsx(require(1273) /* Button */.Icon, { source: importDefault(11158), style: tmp.pinIcon });
+  return <View source={importDefault(11158)} style={tmp.pinIcon} />;
 };

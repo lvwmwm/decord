@@ -1,9 +1,9 @@
-// Module ID: 13701
-// Function ID: 105146
+// Module ID: 13752
+// Function ID: 105470
 // Name: useAccountSMSBackupSettingDescription
-// Dependencies: [1849, 7662, 653, 9237, 566, 13697, 1212, 13647, 13699, 4471, 4337, 9236, 1934, 9239, 22, 10095, 13648, 2]
+// Dependencies: [1849, 7751, 653, 9273, 566, 13748, 1212, 13698, 13750, 4471, 4337, 9272, 1934, 9275, 22, 10127, 13699, 2]
 
-// Module 13701 (useAccountSMSBackupSettingDescription)
+// Module 13752 (useAccountSMSBackupSettingDescription)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserFlags } from "ME";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY";
@@ -16,8 +16,8 @@ function useAccountSMSBackupSettingDescription() {
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getCurrentUser());
   let sMSBackupDisabledMessage = null;
   if (null != stateFromStores) {
-    sMSBackupDisabledMessage = require(13697) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-    const obj2 = require(13697) /* getSMSBackupDisabledMessage */;
+    sMSBackupDisabledMessage = require(13748) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
+    const obj2 = require(13748) /* getSMSBackupDisabledMessage */;
   }
   return sMSBackupDisabledMessage;
 }
@@ -30,11 +30,11 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
     const str2 = intl2.string(require(1212) /* getSystemLocale */.t["CIGa+7"]);
     let obj = {};
     const formatted1 = intl3.string(require(1212) /* getSystemLocale */.t.wlfmlR).toUpperCase();
-    obj.onSubmit = importDefault(13647).disableSMS;
+    obj.onSubmit = importDefault(13698).disableSMS;
     obj.title = formatted1;
     obj.placeholder = formatted;
     obj.closeOnSuccess = true;
-    importDefault(13699)(obj);
+    importDefault(13750)(obj);
     const str3 = intl3.string(require(1212) /* getSystemLocale */.t.wlfmlR);
   } else {
     if (null != user) {
@@ -54,9 +54,9 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
       }
     }
     obj = importDefault(4337);
-    const obj1 = { reason: require(9239) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE };
-    obj.pushLazy(require(1934) /* maybeLoadBundle */(9236, dependencyMap.paths), obj1, closure_5);
-    const tmp5 = require(1934) /* maybeLoadBundle */(9236, dependencyMap.paths);
+    const obj1 = { reason: require(9275) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE };
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(9272, dependencyMap.paths), obj1, closure_5);
+    const tmp5 = require(1934) /* maybeLoadBundle */(9272, dependencyMap.paths);
   }
 }, 200);
 apply = {

@@ -1,9 +1,9 @@
-// Module ID: 8644
-// Function ID: 68442
+// Module ID: 8685
+// Function ID: 68662
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8644 (metadata)
+// Module 8685 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-weak.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/1538fd1d5a67d65aebc33a9b47ab87cafbd83433f31f064f8deba3f89104ac8f.png";

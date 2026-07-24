@@ -1,10 +1,10 @@
-// Module ID: 7802
-// Function ID: 62282
+// Module ID: 7893
+// Function ID: 62603
 // Name: getSnowflakeSelectDefaultValues
-// Dependencies: [1348, 1917, 1910, 1838, 3767, 1849, 7795, 1881, 4974, 4319, 4359, 4320, 7803, 1327, 2]
+// Dependencies: [1348, 1917, 1910, 1838, 3767, 1849, 7886, 1881, 4974, 4319, 4359, 4320, 7894, 1327, 2]
 // Exports: getInitialSnowflakeSelectOptions, queryChannels, queryMentionables
 
-// Module 7802 (getSnowflakeSelectDefaultValues)
+// Module 7893 (getSnowflakeSelectDefaultValues)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

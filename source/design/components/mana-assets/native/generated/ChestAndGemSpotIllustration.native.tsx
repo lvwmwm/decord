@@ -1,5 +1,5 @@
 // Module ID: 5942
-// Function ID: 49867
+// Function ID: 49878
 // Name: ChestAndGemSpotIllustration
 // Dependencies: [33, 5085, 5943, 2]
 // Exports: ChestAndGemSpotIllustration

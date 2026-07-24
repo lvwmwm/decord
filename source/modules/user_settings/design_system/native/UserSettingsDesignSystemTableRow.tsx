@@ -1,10 +1,10 @@
-// Module ID: 14433
-// Function ID: 110315
+// Module ID: 14483
+// Function ID: 110638
 // Name: MyTableRow
-// Dependencies: [57, 31, 27, 3947, 1849, 653, 33, 5165, 5791, 566, 1557, 4541, 5503, 4126, 1392, 1273, 5504, 9094, 7519, 7518, 5170, 13024, 13021, 13022, 13023, 7498, 4554, 2]
+// Dependencies: [57, 31, 27, 3947, 1849, 653, 33, 5165, 5791, 566, 1557, 4541, 5501, 4126, 1392, 1273, 5502, 9132, 7654, 7653, 5170, 13076, 13073, 13074, 13075, 7639, 4554, 2]
 // Exports: default
 
-// Module 14433 (MyTableRow)
+// Module 14483 (MyTableRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "set";
@@ -97,7 +97,7 @@ export default function UserSettingsDesignSystemTableRow() {
   obj17.icon = callback2(require(5165) /* TableRowInner */.TableRow.Icon, obj18);
   items1[6] = callback2(require(5165) /* TableRowInner */.TableRow, obj17);
   obj2.children = items1;
-  const items3 = [callback3(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj2), , , , , , ];
+  const items3 = [callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj2), , , , , , ];
   const obj19 = { title: "Table Row Section", hasIcons: true };
   const obj20 = { label: stateFromStores.globalName, subLabel: stateFromStores.username };
   const obj21 = { user: stateFromStores, guildId, status: constants.ONLINE, size: require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32 };
@@ -143,25 +143,25 @@ export default function UserSettingsDesignSystemTableRow() {
   obj34.icon = callback2(require(5165) /* TableRowInner */.TableRow.Icon, obj35);
   obj34.value = tmp4;
   obj34.onValueChange = callback;
-  items4[7] = callback2(require(5504) /* TableSwitchRow */.TableSwitchRow, obj34);
+  items4[7] = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj34);
   const obj36 = { icon: null, label: "Text & Images", subLabel: "Automatically play GIFs when possible", value: true, onValueChange: null, disabled: true };
   const obj37 = { IconComponent: require(5791) /* SettingsIcon */.SettingsIcon };
   obj36.icon = callback2(require(5165) /* TableRowInner */.TableRow.Icon, obj37);
   obj36.onValueChange = closure_10;
-  items4[8] = callback2(require(5504) /* TableSwitchRow */.TableSwitchRow, obj36);
+  items4[8] = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj36);
   const obj38 = { icon: null, label: "A checkbox row", subLabel: "This can be checked or unchecked" };
   const obj39 = { IconComponent: require(5791) /* SettingsIcon */.SettingsIcon };
   obj38.icon = callback2(require(5165) /* TableRowInner */.TableRow.Icon, obj39);
   obj38.checked = tmp6;
   obj38.onPress = callback1;
-  items4[9] = callback2(require(9094) /* TableCheckboxRow */.TableCheckboxRow, obj38);
+  items4[9] = callback2(require(9132) /* TableCheckboxRow */.TableCheckboxRow, obj38);
   const obj40 = { icon: null, label: "A really long label that has a checkbox next to it", subLabel: "Show more information in less space", checked: true, disabled: true };
   const obj41 = { IconComponent: require(5791) /* SettingsIcon */.SettingsIcon };
   obj40.icon = callback2(require(5165) /* TableRowInner */.TableRow.Icon, obj41);
   obj40.onPress = closure_10;
-  items4[10] = callback2(require(9094) /* TableCheckboxRow */.TableCheckboxRow, obj40);
+  items4[10] = callback2(require(9132) /* TableCheckboxRow */.TableCheckboxRow, obj40);
   obj19.children = items4;
-  items3[1] = callback3(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj19);
+  items3[1] = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj19);
   const obj42 = { title: "Draggable Table Rows", description: "Table rows can optionally show a drag handle. Note that this does not actually make them draggable, you need to implement that yourself.", hasIcons: true };
   const obj43 = { draggable: true, onPress: closure_10, icon: null, label: "Boost your Server", subLabel: "Unlock perks for the entire community" };
   const obj44 = { IconComponent: require(5791) /* SettingsIcon */.SettingsIcon };
@@ -174,7 +174,7 @@ export default function UserSettingsDesignSystemTableRow() {
   obj45.trailing = callback2(require(5165) /* TableRowInner */.TableRow.Arrow, {});
   items5[1] = callback2(require(5165) /* TableRowInner */.TableRow, obj45);
   obj42.children = items5;
-  items3[2] = callback3(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj42);
+  items3[2] = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj42);
   const obj47 = { title: "No Icons", hasIcons: false };
   const obj48 = { label: "First Item", subLabel: "Here is an item", onPress: closure_10 };
   const items6 = [callback2(require(5165) /* TableRowInner */.TableRow, obj48), , ];
@@ -183,30 +183,30 @@ export default function UserSettingsDesignSystemTableRow() {
   const obj50 = { label: "Third Item", subLabel: "Here is yet another item", onPress: closure_10 };
   items6[2] = callback2(require(5165) /* TableRowInner */.TableRow, obj50);
   obj47.children = items6;
-  items3[3] = callback3(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj47);
+  items3[3] = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj47);
   const obj51 = { title: "Radio Group", hasIcons: false, defaultValue: "option1", onChange: closure_10 };
-  const items7 = [callback2(require(7518) /* TableRadioRow */.TableRadioRow, { label: "First Item", subLabel: "Here is an item", value: "option1" }), callback2(require(7518) /* TableRadioRow */.TableRadioRow, { label: "Second Item", subLabel: "Here is another item", value: "option2" }), callback2(require(7518) /* TableRadioRow */.TableRadioRow, { label: "Third Item", subLabel: "Here is yet another item", value: "option3" }), callback2(require(7518) /* TableRadioRow */.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
+  const items7 = [callback2(require(7653) /* TableRadioRow */.TableRadioRow, { label: "First Item", subLabel: "Here is an item", value: "option1" }), callback2(require(7653) /* TableRadioRow */.TableRadioRow, { label: "Second Item", subLabel: "Here is another item", value: "option2" }), callback2(require(7653) /* TableRadioRow */.TableRadioRow, { label: "Third Item", subLabel: "Here is yet another item", value: "option3" }), callback2(require(7653) /* TableRadioRow */.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
   obj51.children = items7;
-  items3[4] = callback3(require(7519) /* context */.TableRadioGroup, obj51);
+  items3[4] = callback3(require(7654) /* context */.TableRadioGroup, obj51);
   const obj52 = { title: "Online Status", hasIcons: true, defaultValue: "option1", onChange: closure_10 };
   const obj53 = { icon: null, label: "Online", value: "option1" };
-  const obj54 = { variant: "text-status-online", source: importDefault(13024) };
+  const obj54 = { variant: "text-status-online", source: importDefault(13076) };
   obj53.icon = callback2(require(5170) /* TableRowIcon */.TableRowIcon, obj54);
-  const items8 = [callback2(require(7518) /* TableRadioRow */.TableRadioRow, obj53), , , ];
+  const items8 = [callback2(require(7653) /* TableRadioRow */.TableRadioRow, obj53), , , ];
   const obj55 = { icon: null, label: "Idle", value: "option2" };
-  const obj56 = { variant: "text-status-idle", source: importDefault(13021) };
+  const obj56 = { variant: "text-status-idle", source: importDefault(13073) };
   obj55.icon = callback2(require(5170) /* TableRowIcon */.TableRowIcon, obj56);
-  items8[1] = callback2(require(7518) /* TableRadioRow */.TableRadioRow, obj55);
+  items8[1] = callback2(require(7653) /* TableRadioRow */.TableRadioRow, obj55);
   const obj57 = { icon: null, label: "Do Not Disturb", value: "option3" };
-  const obj58 = { variant: "text-status-dnd", source: importDefault(13022) };
+  const obj58 = { variant: "text-status-dnd", source: importDefault(13074) };
   obj57.icon = callback2(require(5170) /* TableRowIcon */.TableRowIcon, obj58);
-  items8[2] = callback2(require(7518) /* TableRadioRow */.TableRadioRow, obj57);
+  items8[2] = callback2(require(7653) /* TableRadioRow */.TableRadioRow, obj57);
   const obj59 = { icon: null, label: "Invisible", value: "option4" };
-  const obj60 = { variant: "text-status-offline", source: importDefault(13023) };
+  const obj60 = { variant: "text-status-offline", source: importDefault(13075) };
   obj59.icon = callback2(require(5170) /* TableRowIcon */.TableRowIcon, obj60);
-  items8[3] = callback2(require(7518) /* TableRadioRow */.TableRadioRow, obj59);
+  items8[3] = callback2(require(7653) /* TableRadioRow */.TableRadioRow, obj59);
   obj52.children = items8;
-  items3[5] = callback3(require(7519) /* context */.TableRadioGroup, obj52);
+  items3[5] = callback3(require(7654) /* context */.TableRadioGroup, obj52);
   const obj61 = { spacing: 12 };
   const items9 = [callback2(require(4126) /* Text */.Text, { variant: "heading-sm/semibold", children: "Row buttons" }), , , ];
   const obj62 = {};
@@ -214,9 +214,9 @@ export default function UserSettingsDesignSystemTableRow() {
   obj62.icon = callback2(require(5165) /* TableRowInner */.TableRow.Icon, obj63);
   obj62.label = "Boost your server";
   obj62.onPress = closure_10;
-  items9[1] = callback2(require(7498) /* RowButtonWrapper */.RowButton, obj62);
+  items9[1] = callback2(require(7639) /* RowButtonWrapper */.RowButton, obj62);
   const obj64 = { label: "Disabled row button", onPress: closure_10, disabled: true, arrow: false };
-  items9[2] = callback2(require(7498) /* RowButtonWrapper */.RowButton, obj64);
+  items9[2] = callback2(require(7639) /* RowButtonWrapper */.RowButton, obj64);
   const obj65 = { style: { padding: 8 }, start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, colors: ["red", "orange", "yellow", "green", "teal", "blue", "purple"] };
   obj1 = { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 };
   const tmp5 = callback(React.useState(false), 2);
@@ -224,7 +224,7 @@ export default function UserSettingsDesignSystemTableRow() {
   const obj67 = { IconComponent: require(5791) /* SettingsIcon */.SettingsIcon, variant: "translucent" };
   obj66.icon = callback2(require(5165) /* TableRowInner */.TableRow.Icon, obj67);
   obj66.onPress = closure_10;
-  obj65.children = callback2(require(7498) /* RowButtonWrapper */.RowButton, obj66);
+  obj65.children = callback2(require(7639) /* RowButtonWrapper */.RowButton, obj66);
   items9[3] = callback2(importDefault(4554), obj65);
   obj61.children = items9;
   items3[6] = callback3(require(4541) /* Stack */.Stack, obj61);

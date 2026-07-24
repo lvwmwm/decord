@@ -1,10 +1,10 @@
-// Module ID: 11458
-// Function ID: 89205
+// Module ID: 11488
+// Function ID: 89426
 // Name: useUserCountryCode
-// Dependencies: [31, 3810, 3813, 566, 10138, 7616, 2]
+// Dependencies: [31, 3810, 3813, 566, 10170, 7705, 2]
 // Exports: useIsTeenInStrictCountry
 
-// Module 11458 (useUserCountryCode)
+// Module 11488 (useUserCountryCode)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
@@ -24,7 +24,7 @@ function useUserCountryCode() {
 }
 function useIsTeenInCountrySet(set) {
   const tmp = useUserCountryCode();
-  let userIsTeen = require(7616) /* useUserIsTeen */.useUserIsTeen();
+  let userIsTeen = require(7705) /* useUserIsTeen */.useUserIsTeen();
   if (userIsTeen) {
     userIsTeen = null != tmp;
   }

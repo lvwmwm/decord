@@ -1,10 +1,10 @@
-// Module ID: 8872
-// Function ID: 69966
+// Module ID: 8911
+// Function ID: 70181
 // Name: MicrophoneDenyIcon
-// Dependencies: [31, 33, 689, 3833, 8873, 2]
+// Dependencies: [31, 33, 689, 3833, 8912, 2]
 // Exports: MicrophoneDenyIcon
 
-// Module 8872 (MicrophoneDenyIcon)
+// Module 8911 (MicrophoneDenyIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MicrophoneDenyIcon = function MicrophoneDenyIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8873) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8912) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8873) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8912) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

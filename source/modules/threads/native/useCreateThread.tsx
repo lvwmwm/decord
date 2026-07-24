@@ -1,10 +1,10 @@
-// Module ID: 9550
-// Function ID: 74444
+// Module ID: 9586
+// Function ID: 74653
 // Name: useCreateThread
-// Dependencies: [5, 31, 4468, 4123, 5464, 7935, 6691, 6924, 7939, 7938, 7081, 4711, 4670, 7940, 2]
+// Dependencies: [5, 31, 4468, 4123, 5462, 8022, 6691, 6923, 8026, 8025, 7080, 4711, 4670, 8027, 2]
 // Exports: default, useCreateForumPost
 
-// Module 9550 (useCreateThread)
+// Module 9586 (useCreateThread)
 import getIsPrivate from "getIsPrivate";
 import result from "result";
 import { DraftType } from "_isNativeReflectConstruct";
@@ -22,8 +22,8 @@ export default function useCreateThread(arg0) {
   let threadSettings;
   let useDefaultThreadName;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
-  const analyticsLocations = importDefault(5464)().analyticsLocations;
-  let obj = analyticsLocations(7935);
+  const analyticsLocations = importDefault(5462)().analyticsLocations;
+  let obj = analyticsLocations(8022);
   obj = {
     parentChannel,
     parentMessageId,
@@ -61,7 +61,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
   const threadSettings = parentChannel.threadSettings;
   let name;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
   const items = [analyticsLocations, parentChannel];
   const callback = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
@@ -70,7 +70,7 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
       return callback(...arguments);
     };
   })(), items);
-  let obj = parentChannel(7935);
+  let obj = parentChannel(8022);
   obj = { parentChannel };
   if (null != threadSettings) {
     name = threadSettings.name;

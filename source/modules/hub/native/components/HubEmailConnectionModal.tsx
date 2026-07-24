@@ -1,10 +1,10 @@
-// Module ID: 11761
-// Function ID: 91300
+// Module ID: 11788
+// Function ID: 91538
 // Name: getScreens
-// Dependencies: [31, 11753, 33, 4130, 5084, 5087, 11762, 480, 11765, 11768, 11770, 11771, 11772, 11776, 5121, 1456, 5450, 11778, 5519, 1212, 2]
+// Dependencies: [31, 11780, 33, 4130, 5084, 5087, 11789, 480, 11792, 11795, 11797, 11798, 11799, 11803, 5121, 1456, 5450, 11805, 5517, 1212, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 11761 (getScreens)
+// Module 11788 (getScreens)
 import "result";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import { jsx } from "jsxProd";
@@ -148,7 +148,7 @@ export default function HubEmailConnectionModal(arg0) {
   obj = { screens, initialRouteStack };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return jsx(require(5519) /* NavigationStack */.Navigator, { screens, initialRouteStack });
+  return jsx(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteStack });
 };
 export const HubEmailConnectionScreen = function HubEmailConnectionScreen(children) {
   const tmp = _createForOfIteratorHelperLoose();

@@ -1,10 +1,10 @@
-// Module ID: 14420
-// Function ID: 110181
+// Module ID: 14470
+// Function ID: 110504
 // Name: ExampleButton
-// Dependencies: [57, 31, 27, 3943, 33, 14421, 4543, 14422, 7771, 5792, 12196, 13077, 10203, 7638, 8875, 4130, 689, 1456, 4098, 14423, 1934, 4541, 4126, 9670, 12187, 12192, 12194, 12193, 12191, 12190, 4965, 3842, 665, 4554, 5167, 4662, 8379, 2]
+// Dependencies: [57, 31, 27, 3943, 33, 14471, 4543, 14472, 7533, 5792, 12223, 13129, 10233, 7727, 8914, 4130, 689, 1456, 4098, 14473, 1934, 4541, 4126, 9704, 12214, 12219, 12221, 12220, 12218, 12217, 4965, 3842, 665, 4554, 5167, 4662, 8423, 2]
 // Exports: default
 
-// Module 14420 (ExampleButton)
+// Module 14470 (ExampleButton)
 import _slicedToArray from "_slicedToArray";
 import ManaContext from "ManaContext";
 import get_ActivityIndicator from "registerAsset";
@@ -30,7 +30,7 @@ function ExampleButton(arg0) {
   let text;
   let variant;
   ({ variant, text, grow } = arg0);
-  const tmp = importDefault(14421)();
+  const tmp = importDefault(14471)();
   const enableLoadingState = tmp.enableLoadingState;
   ({ buttonScale, buttonSize, iconPosition, showIcon, showDisabled } = tmp);
   importDefault = React.useRef(null);
@@ -69,7 +69,7 @@ function ExampleButton(arg0) {
   obj.size = buttonSize;
   let tmp6;
   if (showIcon) {
-    tmp6 = importDefault(14422);
+    tmp6 = importDefault(14472);
   }
   obj.icon = tmp6;
   obj.iconPosition = iconPosition;
@@ -89,7 +89,7 @@ function ExampleIconButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14421)();
+  const tmp = importDefault(14471)();
   enableLoadingState = tmp.enableLoadingState;
   ({ buttonSize, showDisabled } = tmp);
   importDefault = React.useRef(null);
@@ -140,7 +140,7 @@ function ExampleIconButton(arg0) {
     obj.icon = importDefault(5792);
     tmp7 = obj;
   }
-  return closure_9(enableLoadingState(7771).IconButton, tmp7);
+  return closure_9(enableLoadingState(7533).IconButton, tmp7);
 }
 function ExampleImageButton(arg0) {
   let buttonSize;
@@ -156,7 +156,7 @@ function ExampleImageButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14421)();
+  const tmp = importDefault(14471)();
   enableLoadingState = tmp.enableLoadingState;
   ({ buttonSize, showDisabled } = tmp);
   importDefault = React.useRef(null);
@@ -197,17 +197,17 @@ function ExampleImageButton(arg0) {
     obj.image = image;
     tmp5 = obj;
   }
-  return closure_9(enableLoadingState(12196).ImageButton, tmp5);
+  return closure_9(enableLoadingState(12223).ImageButton, tmp5);
 }
 function ExampleToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13077);
+  let obj = first(13129);
   obj = {};
-  obj = { text: "Unfollow", icon: importDefault(10203) };
+  obj = { text: "Unfollow", icon: importDefault(10233) };
   obj.on = obj;
-  obj.off = { text: "Follow", icon: importDefault(7638) };
+  obj.off = { text: "Follow", icon: importDefault(7727) };
   const toggleButtonProps = obj.useToggleButtonProps(obj, first);
   const obj2 = {};
   const merged = Object.assign(toggleButtonProps);
@@ -222,11 +222,11 @@ function ExampleIconToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13077);
+  let obj = first(13129);
   obj = {};
-  obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(8875) };
+  obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(8914) };
   obj.on = obj;
-  const obj1 = { variant: "secondary", accessibilityLabel: "Mute", icon: importDefault(8875) };
+  const obj1 = { variant: "secondary", accessibilityLabel: "Mute", icon: importDefault(8914) };
   obj.off = obj1;
   const toggleIconButtonProps = obj.useToggleIconButtonProps(obj, first);
   const obj2 = {};
@@ -235,7 +235,7 @@ function ExampleIconToggleButton() {
     callback(!first);
   };
   obj2["size"] = "md";
-  return callback2(first(7771).IconButton, obj2);
+  return callback2(first(7533).IconButton, obj2);
 }
 ({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ LIGHT_BACKGROUND_GRADIENT_PRESETS: closure_7, DARK_BACKGROUND_GRADIENT_PRESETS: closure_8 } = items1);
@@ -382,7 +382,7 @@ export default function UserSettingsDesignSystemButton() {
     text: "Button with a custom color icon",
     size: "md"
   };
-  const obj23 = { source: importDefault(9670) };
+  const obj23 = { source: importDefault(9704) };
   obj22.icon = callback2(require(4543) /* Button */.Button.Icon, obj23);
   obj21.children = callback2(require(4543) /* Button */.Button, obj22);
   const items9 = [callback2(closure_5, obj21), ];
@@ -395,7 +395,7 @@ export default function UserSettingsDesignSystemButton() {
     text: "Button with a entity variant icon",
     size: "md"
   };
-  const obj26 = { variant: "entity", source: importDefault(12187) };
+  const obj26 = { variant: "entity", source: importDefault(12214) };
   obj25.icon = callback2(require(4543) /* Button */.Button.Icon, obj26);
   obj24.children = callback2(require(4543) /* Button */.Button, obj25);
   items9[1] = callback2(closure_5, obj24);
@@ -415,7 +415,7 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: importDefault(9670)
+    icon: importDefault(9704)
   };
   obj30.children = callback2(require(4543) /* Button */.Button, obj31);
   const items11 = [callback2(closure_5, obj30), , , ];
@@ -427,7 +427,7 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: importDefault(9670),
+    icon: importDefault(9704),
     iconPosition: "end"
   };
   obj32.children = callback2(require(4543) /* Button */.Button, obj33);
@@ -550,17 +550,17 @@ export default function UserSettingsDesignSystemButton() {
       return outer1_9(outer1_5, obj, variant);
     })
   };
-  obj55.children = callback2(ExampleImageButton, { image: importDefault(12192), label: "Telegram" });
+  obj55.children = callback2(ExampleImageButton, { image: importDefault(12219), label: "Telegram" });
   const items22 = [callback2(closure_5, obj55), , ];
   const obj57 = { style: items23 };
   items23 = [tmp.buttonContainer];
-  const obj56 = { image: importDefault(12192), label: "Telegram" };
-  obj57.children = callback2(ExampleImageButton, { image: importDefault(12194), label: "WhatsApp" });
+  const obj56 = { image: importDefault(12219), label: "Telegram" };
+  obj57.children = callback2(ExampleImageButton, { image: importDefault(12221), label: "WhatsApp" });
   items22[1] = callback2(closure_5, obj57);
   const obj59 = { style: items24 };
   items24 = [tmp.buttonContainer];
-  const obj58 = { image: importDefault(12194), label: "WhatsApp" };
-  obj59.children = callback2(ExampleImageButton, { image: importDefault(12193), label: "Twitter" });
+  const obj58 = { image: importDefault(12221), label: "WhatsApp" };
+  obj59.children = callback2(ExampleImageButton, { image: importDefault(12220), label: "Twitter" });
   items22[2] = callback2(closure_5, obj59);
   obj54.children = items22;
   items20[1] = callback3(closure_5, obj54);
@@ -586,7 +586,7 @@ export default function UserSettingsDesignSystemButton() {
 
     }
   };
-  const items27 = [callback2(require(7771) /* IconButton */.IconButton, obj67), , ];
+  const items27 = [callback2(require(7533) /* IconButton */.IconButton, obj67), , ];
   const obj68 = {
     variant: "secondary",
     icon: importDefault(5792),
@@ -596,7 +596,7 @@ export default function UserSettingsDesignSystemButton() {
 
     }
   };
-  items27[1] = callback2(require(7771) /* IconButton */.IconButton, obj68);
+  items27[1] = callback2(require(7533) /* IconButton */.IconButton, obj68);
   const obj69 = {
     variant: "secondary",
     icon: importDefault(5792),
@@ -606,7 +606,7 @@ export default function UserSettingsDesignSystemButton() {
 
     }
   };
-  items27[2] = callback2(require(7771) /* IconButton */.IconButton, obj69);
+  items27[2] = callback2(require(7533) /* IconButton */.IconButton, obj69);
   obj66.children = items27;
   obj65.children = callback3(require(4541) /* Stack */.Stack, obj66);
   items26[2] = callback2(closure_6, obj65);
@@ -617,22 +617,22 @@ export default function UserSettingsDesignSystemButton() {
   const items28 = [callback2(require(4541) /* Stack */.Stack, obj71), , ];
   const obj72 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
   const obj73 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
-  const obj74 = { image: importDefault(12191), label: "Label", showLabel: true };
+  const obj74 = { image: importDefault(12218), label: "Label", showLabel: true };
   const items29 = [callback2(ExampleImageButton, obj74), , ];
-  const obj75 = { image: importDefault(12187), label: "Label", showLabel: true };
+  const obj75 = { image: importDefault(12214), label: "Label", showLabel: true };
   items29[1] = callback2(ExampleImageButton, obj75);
-  const obj76 = { image: importDefault(12190), label: "Label", showLabel: true };
+  const obj76 = { image: importDefault(12217), label: "Label", showLabel: true };
   items29[2] = callback2(ExampleImageButton, obj76);
   obj73.children = items29;
   obj72.children = callback3(require(4541) /* Stack */.Stack, obj73);
   items28[1] = callback2(closure_6, obj72);
   const obj77 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
   const obj78 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
-  const obj79 = { image: importDefault(12192), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj79 = { image: importDefault(12219), label: "Supercalifragilisticexpialidocious", showLabel: true };
   const items30 = [callback2(ExampleImageButton, obj79), , ];
-  const obj80 = { image: importDefault(12194), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj80 = { image: importDefault(12221), label: "Supercalifragilisticexpialidocious", showLabel: true };
   items30[1] = callback2(ExampleImageButton, obj80);
-  const obj81 = { image: importDefault(12193), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj81 = { image: importDefault(12220), label: "Supercalifragilisticexpialidocious", showLabel: true };
   items30[2] = callback2(ExampleImageButton, obj81);
   obj78.children = items30;
   obj77.children = callback3(require(4541) /* Stack */.Stack, obj78);
@@ -659,7 +659,7 @@ export default function UserSettingsDesignSystemButton() {
   let obj92 = require(665) /* pad2 */;
   obj87.secondaryColor = obj92.hex2int("#cc2300");
   const obj88 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#ffae70", "#cc2300"] };
-  const obj60 = { image: importDefault(12193), label: "Twitter" };
+  const obj60 = { image: importDefault(12220), label: "Twitter" };
   const obj89 = {};
   const obj90 = { spacing: 16 };
   const items35 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
@@ -762,7 +762,7 @@ export default function UserSettingsDesignSystemButton() {
     positionBottom: 32,
     accessibilityLabel: "Floating Action Button"
   };
-  items49[1] = callback2(require(8379) /* styles */.FloatingActionButton, obj);
+  items49[1] = callback2(require(8423) /* styles */.FloatingActionButton, obj);
   obj.children = items49;
   return callback3(closure_11, obj);
 };

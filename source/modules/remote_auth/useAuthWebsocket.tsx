@@ -1,10 +1,10 @@
-// Module ID: 14774
-// Function ID: 112679
+// Module ID: 14821
+// Function ID: 113000
 // Name: useAuthWebsocket
-// Dependencies: [5, 57, 31, 653, 3, 14773, 561, 8391, 12567, 14775, 1207, 507, 5590, 14777, 2]
+// Dependencies: [5, 57, 31, 653, 3, 14820, 561, 8435, 12618, 14822, 1207, 507, 5588, 14824, 2]
 // Exports: useAuthWebsocket
 
-// Module 14774 (useAuthWebsocket)
+// Module 14821 (useAuthWebsocket)
 import RemoteAuthStep from "RemoteAuthStep";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

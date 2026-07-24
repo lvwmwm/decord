@@ -1,9 +1,9 @@
-// Module ID: 11199
-// Function ID: 87148
+// Module ID: 11229
+// Function ID: 87417
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [57, 31, 27, 9547, 33, 477, 4130, 689, 8372, 4528, 3991, 1324, 11200, 4476, 5445, 566, 5189, 4099, 10229, 1820, 4559, 3834, 1557, 1450, 4001, 3977, 3842, 4525, 9342, 5448, 2]
+// Dependencies: [57, 31, 27, 9583, 33, 477, 4130, 689, 8416, 4528, 3991, 1324, 11230, 4476, 5445, 566, 5189, 4099, 10259, 1820, 4559, 3834, 1557, 1450, 4001, 3977, 3842, 4525, 9378, 5448, 2]
 
-// Module 11199 (PortalKeyboardBottomSheetHeader)
+// Module 11229 (PortalKeyboardBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "AccessibilityView";
@@ -33,7 +33,7 @@ function PortalKeyboardBottomSheetHeader(arg0) {
   items[1] = prop;
   items[2] = style;
   obj.style = items;
-  obj.children = callback(require(8372) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse });
+  obj.children = callback(require(8416) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse });
   return callback(closure_5, obj);
 }
 function PortalKeyboardBackground(arg0) {

@@ -1,9 +1,9 @@
-// Module ID: 15834
-// Function ID: 122270
+// Module ID: 15881
+// Function ID: 122592
 // Name: StreamIcon
-// Dependencies: [31, 27, 4122, 1347, 4149, 4202, 10015, 10013, 10018, 653, 4148, 33, 3991, 1273, 4130, 689, 1324, 10014, 15790, 15835, 10791, 15836, 15788, 10717, 8866, 5517, 7507, 1212, 8867, 4542, 15786, 4309, 4194, 10525, 15717, 15837, 15838, 566, 15820, 7589, 15839, 3842, 4528, 5464, 8492, 8878, 4361, 8516, 4126, 8577, 8931, 15763, 2]
+// Dependencies: [31, 27, 4122, 1347, 4149, 4202, 10047, 10045, 10050, 653, 4148, 33, 3991, 1273, 4130, 689, 1324, 10046, 15837, 15882, 10820, 15883, 15835, 10746, 8905, 5515, 7577, 1212, 8906, 4542, 15833, 4309, 4194, 10554, 15764, 15884, 15885, 566, 15867, 7678, 15886, 3842, 4528, 5462, 8537, 8917, 4361, 8561, 4126, 8620, 8970, 15810, 2]
 
-// Module 15834 (StreamIcon)
+// Module 15881 (StreamIcon)
 import importAllResult from "isVoiceChannelFull";
 import get_ActivityIndicator from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ let closure_9;
 const require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
-  const controlsSpecs = importAllResult.useContext(importDefault(10014)).controlsSpecs;
+  const controlsSpecs = importAllResult.useContext(importDefault(10046)).controlsSpecs;
   let obj = controlsSpecs(3991);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === outer1_11.HIDDEN;
@@ -54,13 +54,13 @@ function StreamIcon(voicePlatform) {
   fn.__workletHash = 3270040588948;
   fn.__initData = closure_22;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let tmp3 = importDefault(15790);
+  let tmp3 = importDefault(15837);
   if (voicePlatform === constants2.XBOX) {
-    tmp3 = importDefault(15835);
+    tmp3 = importDefault(15882);
   } else if (voicePlatform === constants2.MOBILE) {
-    tmp3 = importDefault(10791);
+    tmp3 = importDefault(10820);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp3 = importDefault(15836);
+    tmp3 = importDefault(15883);
   }
   obj = { source: tmp3 };
   const items = [callback2(importDefault(1324)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
@@ -71,30 +71,30 @@ function AnimatedLabelIcon(icon) {
   icon = icon.icon;
   const tmp = callback2(importDefault(1324)("VoicePanelCardFloatingControls"));
   const type = icon.type;
-  if (require(15788) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
+  if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     let obj = { voicePlatform: icon.voicePlatform };
     return callback(StreamIcon, obj);
-  } else if (require(15788) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: tmp.speakerMuteIcon, hitSlop: 12, onPress: icon.onPress };
     const obj1 = { style: tmp.iconWithoutBackground };
-    obj.children = callback(require(10717) /* VoiceXIcon */.VoiceXIcon, obj1);
+    obj.children = callback(require(10746) /* VoiceXIcon */.VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (require(15788) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: tmp.iconContainer, onPress: icon.onPress };
     const obj3 = { style: tmp.icon, state: icon.videoIconState };
-    obj2.children = callback(require(8866) /* VideoDisabledSvgIcon */.VideoIcon, obj3);
+    obj2.children = callback(require(8905) /* VideoDisabledSvgIcon */.VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (require(15788) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: tmp.iconContainer };
     const obj5 = { onPress: icon.onPress, hitSlop: 12 };
     const obj6 = { style: tmp.icon, state: icon.muteDeafenIconState, alwaysWhite: true };
-    obj5.children = callback(require(8866) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj6);
+    obj5.children = callback(require(8905) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj6);
     obj4.children = callback(Pressable, obj5);
-    return callback(importDefault(5517), obj4);
-  } else if (require(15788) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+    return callback(importDefault(5515), obj4);
+  } else if (require(15835) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: tmp.iconContainer, onPress: icon.onPress };
     const obj7 = { size: "xs", color: importDefault(689).colors.TEXT_FEEDBACK_WARNING };
-    obj.children = callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, obj7);
+    obj.children = callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj7);
     return callback(Pressable, obj);
   }
 }
@@ -107,8 +107,8 @@ function getAccessibilityLabel(arr, username) {
     const found = arr.find((type) => type.type === outer1_0(outer1_2[22]).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON);
     if (null != found) {
       const muteDeafenIconState = found.muteDeafenIconState;
-      if (require(8867) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED !== muteDeafenIconState) {
-        if (require(8867) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER !== muteDeafenIconState) {
+      if (require(8906) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED !== muteDeafenIconState) {
+        if (require(8906) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER !== muteDeafenIconState) {
           const intl = require(1212) /* getSystemLocale */.intl;
           obj = { username };
           return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Hd1oVG, obj);
@@ -159,7 +159,7 @@ let closure_24 = importAllResult.memo((participant) => {
   let layout;
   participant = participant.participant;
   ({ controlsHidden, isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(10014)).guildId;
+  guildId = importAllResult.useContext(guildId(10046)).guildId;
   const items = [guildId, participant];
   const callback = importAllResult.useCallback(() => {
     let obj = participant(outer1_2[30]);
@@ -213,12 +213,12 @@ let closure_24 = importAllResult.memo((participant) => {
     return obj.useAnimatedStyle(fn);
   })(controlsHidden);
   let tmp3 = closure_16;
-  obj.icon = guildId(15837);
+  obj.icon = guildId(15884);
   obj.onPress = callback;
   obj.style = tmp;
   obj.layout = layout;
-  const tmp4 = guildId(15717);
-  const result = participant(15786).isStableActivityParticipant(participant);
+  const tmp4 = guildId(15764);
+  const result = participant(15833).isStableActivityParticipant(participant);
   const intl = participant(1212).intl;
   const string = intl.string;
   const t = participant(1212).t;

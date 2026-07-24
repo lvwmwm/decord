@@ -1,9 +1,9 @@
-// Module ID: 9277
-// Function ID: 72481
+// Module ID: 9313
+// Function ID: 72690
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4051, 1838, 3758, 3947, 1849, 653, 664, 9278, 483, 587, 3712, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4051, 1838, 3758, 3947, 1849, 653, 664, 9314, 483, 587, 3712, 566, 686, 2]
 
-// Module 9277 (_isNativeReflectConstruct)
+// Module 9313 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "t";
@@ -129,7 +129,7 @@ function fetchSurveyIfNeeded() {
   }
   if (!tmp) {
     c23 = true;
-    obj = require(9278) /* overrideSurvey */;
+    obj = require(9314) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   }
 }
@@ -583,7 +583,7 @@ obj = {
       const hiddenSurveys = obj.hiddenSurveys;
       delete tmp[tmp2];
     }
-    obj = require(9278) /* overrideSurvey */;
+    obj = require(9314) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {

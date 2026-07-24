@@ -1,10 +1,10 @@
-// Module ID: 9309
-// Function ID: 72690
+// Module ID: 9345
+// Function ID: 72899
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4122, 3823, 1348, 1849, 8331, 653, 7622, 33, 4130, 689, 9310, 7621, 9312, 9482, 3800, 1212, 9439, 9440, 22, 4138, 9483, 9525, 9528, 4359, 1820, 9529, 9966, 9315, 7005, 9967, 9968, 10009, 10010, 10012, 10023, 477, 5121, 4660, 4126, 3842, 3803, 566, 1450, 5723, 4345, 10028, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4122, 3823, 1348, 1849, 8375, 653, 7711, 33, 4130, 689, 9346, 7710, 9348, 9518, 3800, 1212, 9475, 9476, 22, 4138, 9519, 9561, 9564, 4359, 1820, 9565, 9998, 9351, 7004, 9999, 10000, 10041, 10042, 10044, 10055, 477, 5121, 4660, 4126, 3842, 3803, 566, 1450, 5723, 4345, 10060, 2]
 // Exports: default
 
-// Module 9309 (_isNativeReflectConstruct)
+// Module 9345 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -19,7 +19,7 @@ import closure_14 from "_isNativeReflectConstruct";
 import closure_15 from "_isNativeReflectConstruct";
 import ME from "ME";
 import Changeset from "Changeset";
-import jsxProd from "module_9966";
+import jsxProd from "module_9998";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_16;

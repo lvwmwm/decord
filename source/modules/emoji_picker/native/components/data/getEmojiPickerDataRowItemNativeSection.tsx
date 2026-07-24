@@ -1,10 +1,10 @@
-// Module ID: 9358
-// Function ID: 73064
+// Module ID: 9394
+// Function ID: 73273
 // Name: getEmojiPickerDataRowItemNativeSection
-// Dependencies: [9357, 2]
+// Dependencies: [9393, 2]
 // Exports: default
 
-// Module 9358 (getEmojiPickerDataRowItemNativeSection)
+// Module 9394 (getEmojiPickerDataRowItemNativeSection)
 const result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemNativeSection.tsx");
 
 export default function getEmojiPickerDataRowItemNativeSection(isSectionNitroLocked, hasPremiumInlineRoadblockHeader, hasPremiumInlineRoadblockFooter) {
@@ -24,6 +24,6 @@ export default function getEmojiPickerDataRowItemNativeSection(isSectionNitroLoc
     const _Array = Array;
     items = Array.from(emojisDisabled);
   }
-  const obj = { type: require(9357) /* useEmojiPickerData */.EmojiPickerItemType.NATIVE_SECTION, title: label, guildId, emojiCount, emojisDisabled: items, emojisHidden: Array.from(emojisHidden), isSectionNitroLocked: flag, hasPremiumInlineRoadblockHeader, hasPremiumInlineRoadblockFooter };
+  const obj = { type: require(9393) /* useEmojiPickerData */.EmojiPickerItemType.NATIVE_SECTION, title: label, guildId, emojiCount, emojisDisabled: items, emojisHidden: Array.from(emojisHidden), isSectionNitroLocked: flag, hasPremiumInlineRoadblockHeader, hasPremiumInlineRoadblockFooter };
   return obj;
 };

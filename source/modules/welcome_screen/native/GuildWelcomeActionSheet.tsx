@@ -1,10 +1,10 @@
-// Module ID: 11689
-// Function ID: 90668
+// Module ID: 11716
+// Function ID: 90906
 // Name: WelcomeChannelRow
-// Dependencies: [31, 27, 4991, 1348, 1838, 3758, 11686, 11690, 653, 1852, 482, 33, 4130, 689, 5052, 566, 4320, 1198, 4098, 5085, 1392, 3771, 4126, 1273, 10949, 7495, 686, 11688, 675, 5500, 11691, 1212, 2]
+// Dependencies: [31, 27, 4991, 1348, 1838, 3758, 11713, 11717, 653, 1852, 482, 33, 4130, 689, 5052, 566, 4320, 1198, 4098, 5085, 1392, 3771, 4126, 1273, 10976, 7636, 686, 11715, 675, 5498, 11718, 1212, 2]
 // Exports: default
 
-// Module 11689 (WelcomeChannelRow)
+// Module 11716 (WelcomeChannelRow)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "_fetchWelcomeScreen";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -269,8 +269,8 @@ export default function GuildWelcomeActionSheet(guildId) {
     if (null != welcomeScreen) {
       obj = { startExpanded: true };
       obj = { contentContainerStyle: tmp.container };
-      obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(11691).Sizes.MEDIUM, textScale: 2 };
-      const items9 = [callback(onHide(11691), obj1), , , , ];
+      obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(11718).Sizes.MEDIUM, textScale: 2 };
+      const items9 = [callback(onHide(11718), obj1), , , , ];
       const obj2 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default" };
       const intl = guildId(1212).intl;
       const obj3 = {
@@ -286,7 +286,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       items9[2] = callback(guildId(4126).Text, obj4);
       const obj5 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default" };
       const intl2 = guildId(1212).intl;
-      const tmp18 = onHide(11691);
+      const tmp18 = onHide(11718);
       obj5.children = intl2.string(guildId(1212).t["haj5+i"]).toUpperCase();
       items9[3] = callback(guildId(4126).Text, obj5);
       let welcome_channels = welcomeScreen.welcome_channels;
@@ -301,7 +301,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       });
       obj.children = items9;
       obj.children = callback2(hasError, obj);
-      tmp10 = callback(guildId(5500).ActionSheet, obj);
+      tmp10 = callback(guildId(5498).ActionSheet, obj);
       const str = intl2.string(guildId(1212).t["haj5+i"]);
     }
   }

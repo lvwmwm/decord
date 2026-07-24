@@ -1,10 +1,10 @@
-// Module ID: 14231
-// Function ID: 109332
+// Module ID: 14281
+// Function ID: 109655
 // Name: EffectTile
-// Dependencies: [57, 31, 27, 1861, 33, 4130, 689, 7186, 14226, 14227, 4099, 4098, 5187, 5186, 1212, 2556, 4543, 4541, 8518, 8513, 8514, 4126, 2]
+// Dependencies: [57, 31, 27, 1861, 33, 4130, 689, 7186, 14276, 14277, 4099, 4098, 5187, 5186, 1212, 2556, 4543, 4541, 8563, 8558, 8559, 4126, 2]
 // Exports: default
 
-// Module 14231 (EffectTile)
+// Module 14281 (EffectTile)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -27,12 +27,12 @@ function EffectTile(arg0) {
   ({ userId, onClick } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   const intl = require(1212) /* getSystemLocale */.intl;
-  let OpWJ3f = require(8518) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+  let OpWJ3f = require(8563) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (null == OpWJ3f) {
     OpWJ3f = importDefault(2556).OpWJ3f;
   }
   const stringResult = intl.string(OpWJ3f);
-  let obj = require(8518) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(8563) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effectId);
   let hasItem = FLYWHEEL_EFFECTS.includes(effectId);
   obj = { onPress: onClick, accessibilityRole: "button" };
@@ -52,8 +52,8 @@ function EffectTile(arg0) {
   }
   items[1] = selected;
   obj1.style = items;
-  const obj2 = { userId, userName: stringResult, effectDisplayType: require(8514) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
-  const items1 = [callback2(importDefault(8513), obj2), , ];
+  const obj2 = { userId, userName: stringResult, effectDisplayType: require(8559) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
+  const items1 = [callback2(importDefault(8558), obj2), , ];
   if (showNewDot) {
     const obj3 = { style: tmp.tileNewDot, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     showNewDot = callback2(closure_5, obj3);
@@ -97,9 +97,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   ({ selectedEffectId, onSelectEffect } = userId);
   const tmp = _createForOfIteratorHelperLoose();
   let obj = userId(7186);
-  let obj1 = userId(14226);
+  let obj1 = userId(14276);
   const visibleEffectOrder = obj1.useVisibleEffectOrder();
-  let obj2 = userId(14227);
+  let obj2 = userId(14277);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: dependencyMap, dismissEffectDot: _slicedToArray } = displayNameStylesNewEffects);
   const tmp3 = callback(first.useState(selectedEffectId), 2);

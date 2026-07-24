@@ -1,10 +1,10 @@
-// Module ID: 16465
-// Function ID: 128293
+// Module ID: 16512
+// Function ID: 128617
 // Name: FormPriceTier
-// Dependencies: [31, 16424, 653, 33, 1212, 12903, 5618, 44, 4098, 8382, 1934, 2]
+// Dependencies: [31, 16471, 653, 33, 1212, 12955, 5616, 44, 4098, 8426, 1934, 2]
 // Exports: default
 
-// Module 16465 (FormPriceTier)
+// Module 16512 (FormPriceTier)
 import "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { CurrencyCodes } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 7807
-// Function ID: 62298
+// Module ID: 7898
+// Function ID: 62619
 // Name: getContentScanVersionFromMedia
 // Dependencies: [653, 1360, 5670, 5675, 4347, 1212, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 7807 (getContentScanVersionFromMedia)
+// Module 7898 (getContentScanVersionFromMedia)
 import { MessageAttachmentFlags } from "ME";
 
 function getContentScanVersionFromMedia(attachment) {

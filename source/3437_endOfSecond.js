@@ -1,5 +1,5 @@
 // Module ID: 3437
-// Function ID: 26701
+// Function ID: 26702
 // Name: endOfSecond
 // Dependencies: [3209, 3210]
 // Exports: default

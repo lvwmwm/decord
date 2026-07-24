@@ -1,9 +1,9 @@
-// Module ID: 10065
-// Function ID: 77714
+// Module ID: 10097
+// Function ID: 77908
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 7090, 6902, 1348, 3758, 3767, 653, 6979, 8483, 1327, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 7089, 6901, 1348, 3758, 3767, 653, 6978, 8528, 1327, 566, 686, 2]
 
-// Module 10065 (_isNativeReflectConstruct)
+// Module 10097 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -127,7 +127,7 @@ function _computeRows(query) {
   if (!tmp3) {
     id = id.id;
   }
-  const mostRecentDMedUser = set1(8483).getMostRecentDMedUser(set, id);
+  const mostRecentDMedUser = set1(8528).getMostRecentDMedUser(set, id);
   let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
   if (!isBlockedOrIgnoredResult) {
     isBlockedOrIgnoredResult = closure_11.isBlockedOrIgnored(mostRecentDMedUser.id);
@@ -155,10 +155,10 @@ function _computeRows(query) {
     const substr = found2.slice(0, 3);
     const item = substr.forEach((id) => set1.add(id.id));
   }
-  const obj2 = set1(8483);
+  const obj2 = set1(8528);
   tmp2 = type === constants.GUILD_VOICE;
   const obj = { query, omitUserIds: set, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: id, suggestedChannelIds: set1, inviteTargetType: closure_20 };
-  return set1(8483).generateRowsForQuery(obj);
+  return set1(8528).generateRowsForQuery(obj);
 }
 function _updateInviteSuggestions(rows) {
   let closure_22 = rows;
@@ -247,7 +247,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
     const applicationId = guild.applicationId;
     const blockedOrIgnoredIDs = closure_11.getBlockedOrIgnoredIDs();
-    let obj = require(8483) /* _createForOfIteratorHelperLoose */;
+    let obj = require(8528) /* _createForOfIteratorHelperLoose */;
     obj = { channel, applicationId, inviteTargetType };
     const usersAlreadyJoined = obj.getUsersAlreadyJoined(obj);
     const items = [...usersAlreadyJoined];

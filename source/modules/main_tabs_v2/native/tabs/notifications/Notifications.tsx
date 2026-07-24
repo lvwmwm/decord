@@ -1,10 +1,10 @@
-// Module ID: 15128
-// Function ID: 115198
+// Module ID: 15175
+// Function ID: 115520
 // Name: goBack
-// Dependencies: [31, 27, 8772, 1345, 33, 4130, 689, 3982, 8133, 9535, 15129, 5121, 4660, 1212, 15130, 4126, 15131, 9533, 15133, 5464, 5484, 6707, 5093, 5449, 15137, 15138, 10025, 3977, 1557, 14799, 4662, 3842, 2]
+// Dependencies: [31, 27, 8811, 1345, 33, 4130, 689, 3982, 7423, 9571, 15176, 5121, 4660, 1212, 15177, 4126, 15178, 9569, 15180, 5462, 5482, 6707, 5093, 5449, 15184, 15185, 10057, 3977, 1557, 14846, 4662, 3842, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15128 (goBack)
+// Module 15175 (goBack)
 import importAllResult from "ManaContext";
 import { View } from "getGuildThemeName";
 import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
@@ -134,9 +134,9 @@ let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   const tmp = callback3();
-  let obj = importDefault(9535);
+  let obj = importDefault(9571);
   const ref = importAllResult.useRef(null);
-  const tmp4 = importDefault(15129)(ref);
+  const tmp4 = importDefault(15176)(ref);
   const require = tmp4;
   const items = [tmp4];
   const callback = importAllResult.useCallback(() => tmp4(outer1_6.TAKE_ACTION), items);
@@ -154,7 +154,7 @@ let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj2.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
     obj2.onPress = goBack;
-    obj2.children = callback(require(15130) /* IconWithBadge */.LeftBackIconWithBadge, {});
+    obj2.children = callback(require(15177) /* IconWithBadge */.LeftBackIconWithBadge, {});
     const items1 = [callback(require(4660) /* PressableBase */.PressableOpacity, obj2), , ];
     const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header" };
     const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -164,18 +164,18 @@ let closure_11 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     let tmp21 = null;
     if (obj.useConfig({ location: "NativeNotifications" }).enabled) {
       const obj5 = {};
-      const obj6 = { ref, type: require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK, onOpen: callback };
-      const items2 = [callback(importDefault(15131), obj6), ];
+      const obj6 = { ref, type: require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK, onOpen: callback };
+      const items2 = [callback(importDefault(15178), obj6), ];
       const obj7 = {};
-      const tmp27 = importDefault(15131);
-      obj7.type = require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
+      const tmp27 = importDefault(15178);
+      obj7.type = require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
       obj7.onOpen = callback;
-      items2[1] = callback(importDefault(15131), obj7);
+      items2[1] = callback(importDefault(15178), obj7);
       obj5.children = items2;
       tmp21 = callback2(closure_8, obj5);
-      const tmp30 = importDefault(15131);
+      const tmp30 = importDefault(15178);
     }
-    const items3 = [tmp21, callback(importDefault(15133), {})];
+    const items3 = [tmp21, callback(importDefault(15180), {})];
     obj4.children = items3;
     items1[2] = callback2(View, obj4);
     obj1.children = items1;

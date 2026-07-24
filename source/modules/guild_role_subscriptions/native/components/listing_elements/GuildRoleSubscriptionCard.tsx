@@ -1,10 +1,10 @@
-// Module ID: 14126
-// Function ID: 108736
+// Module ID: 14176
+// Function ID: 109059
 // Name: SectionTitle
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 14116, 9405, 1212, 1273, 14127, 14128, 14131, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 14166, 9441, 1212, 1273, 14177, 14178, 14181, 2]
 // Exports: Content
 
-// Module 14126 (SectionTitle)
+// Module 14176 (SectionTitle)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -43,13 +43,13 @@ export const Content = function Content(arg0) {
   let guildId;
   let listingId;
   ({ listingId, guildId } = arg0);
-  let obj = importAll(14116);
+  let obj = importAll(14166);
   const first = callback(obj.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj1 = importAll(14116);
+  let obj1 = importAll(14166);
   const first1 = callback(obj1.useChannelBenefits(listingId), 1)[0];
-  let obj2 = importAll(14116);
+  let obj2 = importAll(14166);
   const first2 = callback(obj2.useIntangibleBenefits(listingId), 1)[0];
-  let obj3 = importAll(14116);
+  let obj3 = importAll(14166);
   const role = obj3.useRole(listingId, guildId);
   obj = {
     renderGap() {
@@ -60,7 +60,7 @@ export const Content = function Content(arg0) {
   obj1 = {};
   const intl = guildId(1212).intl;
   obj1.children = intl.string(guildId(1212).t["DJ+bGu"]);
-  const items = [callback2(SectionTitle, obj1), callback2(guildId(1273).Spacer, { size: 8 }), callback2(guildId(14127).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  const items = [callback2(SectionTitle, obj1), callback2(guildId(1273).Spacer, { size: 8 }), callback2(guildId(14177).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   obj.children = items;
   const items1 = [callback3(closure_7, obj), , , ];
   let tmp4 = null;
@@ -78,10 +78,10 @@ export const Content = function Content(arg0) {
     HermesBuiltin.arraySpread(first, 0);
     obj6.emojiIds = items3;
     obj6.guildId = guildId;
-    items2[2] = callback2(importDefault(14128), obj6);
+    items2[2] = callback2(importDefault(14178), obj6);
     obj2.children = items2;
     tmp4 = callback3(closure_7, obj2);
-    const tmp14 = importDefault(14128);
+    const tmp14 = importDefault(14178);
   }
   items1[1] = tmp4;
   let tmp18 = null;
@@ -95,7 +95,7 @@ export const Content = function Content(arg0) {
     const obj10 = { size: 14 };
     items4[1] = callback2(guildId(1273).Spacer, obj10);
     const obj11 = { gap: 14, children: first1.map((benefit) => outer1_6(guildId(outer1_3[13]).ChannelBenefitRow, { benefit, guildId }, benefit.ref_id)) };
-    items4[2] = callback2(guildId(9405).GappedList, obj11);
+    items4[2] = callback2(guildId(9441).GappedList, obj11);
     obj7.children = items4;
     tmp18 = callback3(closure_7, obj7);
   }
@@ -111,11 +111,11 @@ export const Content = function Content(arg0) {
     const obj15 = { size: 14 };
     items5[1] = callback2(guildId(1273).Spacer, obj15);
     const obj16 = { gap: 14, children: first2.map((benefit) => outer1_6(guildId(outer1_3[13]).IntangibleBenefitRow, { benefit, guildId }, arg1)) };
-    items5[2] = callback2(guildId(9405).GappedList, obj16);
+    items5[2] = callback2(guildId(9441).GappedList, obj16);
     obj12.children = items5;
     tmp27 = callback3(closure_7, obj12);
   }
   items1[3] = tmp27;
   obj.children = items1;
-  return callback3(guildId(9405).GappedList, obj);
+  return callback3(guildId(9441).GappedList, obj);
 };

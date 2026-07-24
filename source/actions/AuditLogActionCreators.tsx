@@ -1,10 +1,10 @@
-// Module ID: 16236
-// Function ID: 126454
+// Module ID: 16283
+// Function ID: 126778
 // Name: isLoading
-// Dependencies: [16226, 653, 507, 686, 2]
+// Dependencies: [16273, 653, 507, 686, 2]
 // Exports: fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 16236 (isLoading)
+// Module 16283 (isLoading)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

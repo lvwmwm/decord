@@ -1,5 +1,5 @@
 // Module ID: 832
-// Function ID: 9264
+// Function ID: 9265
 // Name: SentryNonRecordingSpan
 // Dependencies: [6, 7, 806, 796]
 

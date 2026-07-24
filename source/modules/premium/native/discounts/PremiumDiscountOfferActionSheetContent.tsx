@@ -1,8 +1,8 @@
-// Module ID: 15618
-// Function ID: 120455
-// Dependencies: [31, 27, 33, 4130, 689, 10970, 1212, 9014, 4632, 5807, 4126, 14661, 4543, 7871, 2]
+// Module ID: 15665
+// Function ID: 120777
+// Dependencies: [31, 27, 33, 4130, 689, 10997, 1212, 9053, 4632, 5807, 4126, 14708, 4543, 7486, 2]
 
-// Module 15618
+// Module 15665
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,13 +24,13 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   let onConfirm;
   ({ discountOffer, onConfirm } = arg0);
   const tmp = callback3();
-  let obj = { IconComponent: require(10970) /* UserIcon */.UserIcon };
+  let obj = { IconComponent: require(10997) /* UserIcon */.UserIcon };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t.kpMomJ);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl2.string(require(1212) /* getSystemLocale */.t.uVUtPw);
   const items = [obj, , ];
-  obj = { IconComponent: require(9014) /* ChatSmileIcon */.ChatSmileIcon };
+  obj = { IconComponent: require(9053) /* ChatSmileIcon */.ChatSmileIcon };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.label = intl3.string(require(1212) /* getSystemLocale */.t["R2IV/Q"]);
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -49,7 +49,7 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.qowbUk, { percent: amount });
   items1[1] = callback(require(4126) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(14661), { perks: items });
+  items1[2] = callback(importDefault(14708), { perks: items });
   const obj4 = { style: tmp.buttonContainer };
   const obj5 = { size: "lg" };
   const intl8 = require(1212) /* getSystemLocale */.intl;
@@ -57,7 +57,7 @@ const memoResult = require("result").memo(function PremiumDiscountOfferActionShe
   obj5.onPress = onConfirm;
   obj5.grow = true;
   const obj6 = { size: "md", color: importDefault(689).unsafe_rawColors.WHITE };
-  obj5.icon = callback(require(7871) /* NitroWheelIcon */.NitroWheelIcon, obj6);
+  obj5.icon = callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj6);
   obj4.children = callback(require(4543) /* Button */.Button, obj5);
   items1[3] = callback(View, obj4);
   obj1.children = items1;

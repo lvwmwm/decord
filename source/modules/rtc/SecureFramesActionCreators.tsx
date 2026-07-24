@@ -1,9 +1,9 @@
-// Module ID: 8900
-// Function ID: 70228
+// Module ID: 8939
+// Function ID: 70443
 // Name: savePersistentCodesEnabled
-// Dependencies: [5, 1194, 1348, 4146, 8899, 653, 686, 8897, 4029, 4470, 1212, 8901, 4944, 2]
+// Dependencies: [5, 1194, 1348, 4146, 8938, 653, 686, 8936, 4029, 4470, 1212, 8940, 4944, 2]
 
-// Module 8900 (savePersistentCodesEnabled)
+// Module 8939 (savePersistentCodesEnabled)
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

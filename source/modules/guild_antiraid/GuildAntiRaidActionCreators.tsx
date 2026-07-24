@@ -1,10 +1,10 @@
-// Module ID: 10976
-// Function ID: 85349
+// Module ID: 11003
+// Function ID: 85538
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1838, 7703, 653, 675, 4324, 8438, 3712, 507, 10243, 2]
+// Dependencies: [5, 1838, 7792, 653, 675, 4324, 8482, 3712, 507, 10273, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 10976 (_setGuildRaidAlerts)
+// Module 11003 (_setGuildRaidAlerts)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY";

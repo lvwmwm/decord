@@ -1,10 +1,10 @@
-// Module ID: 11843
-// Function ID: 91781
+// Module ID: 11870
+// Function ID: 92019
 // Name: UnlockWithNitroButton
-// Dependencies: [31, 5621, 6790, 655, 33, 566, 5624, 8765, 1212, 4544, 4126, 7871, 2]
+// Dependencies: [31, 5619, 6790, 655, 33, 566, 5622, 8804, 1212, 4544, 4126, 7486, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 11843 (UnlockWithNitroButton)
+// Module 11870 (UnlockWithNitroButton)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     }
     return isPurchasingProductResult;
   });
-  importDefault = importDefault(8765)();
+  importDefault = importDefault(8804)();
   if (null == text) {
     const intl = require(1212) /* getSystemLocale */.intl;
     text = intl.string(require(1212) /* getSystemLocale */.t.sEAnVH);
@@ -57,7 +57,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   }
   obj.size = str;
   obj.grow = true;
-  obj.icon = jsx(require(7871) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
+  obj.icon = jsx(require(7486) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
   obj.onPress = function onPress() {
     if (null != callback) {
       callback(outer1_5.UNLOCK_WITH_NITRO);

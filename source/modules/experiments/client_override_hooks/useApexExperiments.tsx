@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 80762
+// Module ID: 10491
+// Function ID: 80954
 // Name: makeClientVariant
-// Dependencies: [57, 31, 1188, 7784, 4052, 1429, 10463, 566, 2]
+// Dependencies: [57, 31, 1188, 7875, 4052, 1429, 10492, 566, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 10462 (makeClientVariant)
+// Module 10491 (makeClientVariant)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ let closure_3;
 let closure_4;
 const require = arg1;
 function makeClientVariant(id) {
-  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: require(7784) /* _callSuper */.Variation_Type.UNSPECIFIED };
+  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: require(7875) /* _callSuper */.Variation_Type.UNSPECIFIED };
 }
 function mergeApexExperiments(experimentsMetadata, registeredExperiments) {
   let length;

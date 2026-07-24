@@ -1,10 +1,10 @@
-// Module ID: 11661
-// Function ID: 90444
+// Module ID: 11688
+// Function ID: 90682
 // Name: ApplicationIconAndName
 // Dependencies: [33, 4130, 689, 1273, 4126, 2]
 // Exports: default
 
-// Module 11661 (ApplicationIconAndName)
+// Module 11688 (ApplicationIconAndName)
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

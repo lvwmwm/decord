@@ -1,10 +1,10 @@
-// Module ID: 10047
-// Function ID: 77643
+// Module ID: 10079
+// Function ID: 77837
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 57, 31, 27, 10042, 10035, 33, 4130, 566, 4030, 7504, 1212, 7519, 7518, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 10074, 10067, 33, 4130, 566, 4030, 7645, 1212, 7654, 7653, 4543, 2]
 // Exports: default
 
-// Module 10047 (GuildDirectoryEditDescriptionTemplate)
+// Module 10079 (GuildDirectoryEditDescriptionTemplate)
 import closure_3 from "DirectoryEntryTypes";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

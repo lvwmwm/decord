@@ -1,10 +1,10 @@
-// Module ID: 14241
-// Function ID: 109400
+// Module ID: 14291
+// Function ID: 109723
 // Name: useValue
-// Dependencies: [4122, 7662, 566, 13370, 10095, 1212, 2556, 2]
+// Dependencies: [4122, 7751, 566, 13423, 10127, 1212, 2556, 2]
 // Exports: onValueChange, useValue
 
-// Module 14241 (useValue)
+// Module 14291 (useValue)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -14,7 +14,7 @@ function useValue() {
   return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.displayNameStylesEnabled);
 }
 function onValueChange(enabled) {
-  const result = require(13370) /* setFontSize */.setDisplayNameStylesEnabled(enabled);
+  const result = require(13423) /* setFontSize */.setDisplayNameStylesEnabled(enabled);
 }
 createToggle = {
   useTitle() {

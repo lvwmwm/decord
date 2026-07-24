@@ -1,16 +1,16 @@
-// Module ID: 15587
-// Function ID: 120157
+// Module ID: 15634
+// Function ID: 120479
 // Name: LeftAlignedHeaderTitle
-// Dependencies: [57, 31, 27, 1921, 13552, 653, 33, 9113, 4130, 689, 4126, 1457, 12382, 15588, 5793, 624, 5464, 5484, 13555, 6707, 10631, 14575, 5519, 13084, 3834, 4660, 1212, 15130, 15589, 13556, 5121, 15590, 44, 2]
+// Dependencies: [57, 31, 27, 1921, 13603, 653, 33, 9149, 4130, 689, 4126, 1457, 12397, 15635, 5793, 624, 5462, 5482, 13606, 6707, 14624, 5517, 13136, 3834, 4660, 1212, 15177, 15636, 13607, 15637, 44, 2]
 
-// Module 15587 (LeftAlignedHeaderTitle)
+// Module 15634 (LeftAlignedHeaderTitle)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "getOverviewSettings";
-import { View } from "IconWithBadge";
+import importAllResult from "set";
+import { View } from "useAutoSettingsSearchSessionAnalytics";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import zustandStore from "zustandStore";
 import ME from "ME";
-import jsxProd from "set";
+import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -91,20 +91,18 @@ const memoResult = importAllResult.memo(() => {
   }, items3);
   const memo = importAllResult.useMemo(() => tmp(params[18]).getSettingScreens(), []);
   const layoutEffect1 = importAllResult.useLayoutEffect(() => tmp(params[19]).trackAppUIViewed(), []);
-  let obj4 = require(params[20]);
-  const globalStatusIndicatorState = obj4.useGlobalStatusIndicatorState();
-  const effect2 = importAllResult.useEffect(() => screen(params[21]).validate(), []);
+  const effect2 = importAllResult.useEffect(() => screen(params[20]).validate(), []);
+  let obj4 = require(params[21]);
+  const accessibilityNativeStackOptions = obj4.useAccessibilityNativeStackOptions();
   const tmp13 = screen(params[16]);
-  const accessibilityNativeStackOptions = require(params[22]).useAccessibilityNativeStackOptions();
-  const obj6 = require(params[22]);
-  const accessibilityNativeStackFocusTracking = require(params[23]).useAccessibilityNativeStackFocusTracking();
+  const accessibilityNativeStackFocusTracking = require(params[22]).useAccessibilityNativeStackFocusTracking();
   obj = {};
   ({ beforeRemove, transitionStart } = accessibilityNativeStackFocusTracking);
-  const obj7 = require(params[23]);
-  obj.backgroundColor = require(params[24]).useToken(screen(params[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  const obj6 = require(params[22]);
+  obj.backgroundColor = require(params[23]).useToken(screen(params[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
   obj.borderTopWidth = 1;
-  const obj9 = require(params[24]);
-  obj.borderTopColor = require(params[24]).useToken(screen(params[9]).colors.BORDER_SUBTLE);
+  const obj8 = require(params[23]);
+  obj.borderTopColor = require(params[23]).useToken(screen(params[9]).colors.BORDER_SUBTLE);
   const items4 = [tmp.backIcon];
   let zustandStore = importAllResult.useCallback((arg0) => {
     let closure_0 = arg0;
@@ -117,12 +115,12 @@ const memoResult = importAllResult.memo(() => {
         accessible: true,
         accessibilityRole: "button"
       };
-      const intl = lib(params[26]).intl;
-      obj.accessibilityLabel = intl.string(lib(params[26]).t["13/7kX"]);
-      obj.hitSlop = lib(params[27]).BACK_ICON_WITH_BADGE_HIT_SLOP;
-      obj = { style: lib.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: outer2_10(lib(params[27]).SettingsLeftIconWithBadge, { navigation: lib }) };
+      const intl = lib(params[25]).intl;
+      obj.accessibilityLabel = intl.string(lib(params[25]).t["13/7kX"]);
+      obj.hitSlop = lib(params[26]).BACK_ICON_WITH_BADGE_HIT_SLOP;
+      obj = { style: lib.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: outer2_10(lib(params[26]).SettingsLeftIconWithBadge, { navigation: lib }) };
       obj.children = outer2_10(closure_5, obj);
-      obj.children = outer2_10(lib(params[25]).PressableOpacity, obj);
+      obj.children = outer2_10(lib(params[24]).PressableOpacity, obj);
       return outer2_10(closure_5, obj);
     };
   }, items4);
@@ -154,12 +152,11 @@ const memoResult = importAllResult.memo(() => {
       }
     }
   }), []);
-  const obj10 = require(params[24]);
-  const autoSettingsSearchSessionAnalytics = require(params[28]).useAutoSettingsSearchSessionAnalytics();
+  const obj9 = require(params[23]);
+  const autoSettingsSearchSessionAnalytics = require(params[27]).useAutoSettingsSearchSessionAnalytics();
   obj = { value: tmp13(screen(params[17]).USER_SETTINGS).analyticsLocations };
-  const items5 = [callback2(screen(params[29]), {}), ];
+  const items5 = [callback2(screen(params[28]), {}), ];
   obj1 = {
-    top: globalStatusIndicatorState.isVisible,
     style: tmp.statusBarSpacer,
     accessible: false,
     onAccessibilityEscape() {
@@ -185,8 +182,8 @@ const memoResult = importAllResult.memo(() => {
     name: constants.OVERVIEW,
     options(navigation) {
       const obj = {};
-      const intl = tmp(params[26]).intl;
-      obj.title = intl.string(tmp(params[26]).t["3D5yo/"]);
+      const intl = tmp(params[25]).intl;
+      obj.title = intl.string(tmp(params[25]).t["3D5yo/"]);
       obj.headerLeft = callback2(navigation.navigation);
       obj.headerBackVisible = false;
       obj.headerShadowVisible = false;
@@ -195,7 +192,7 @@ const memoResult = importAllResult.memo(() => {
     },
     listeners: memo1,
     getComponent() {
-      return tmp(params[31]).default;
+      return tmp(params[29]).default;
     }
   };
   const items6 = [
@@ -222,7 +219,7 @@ const memoResult = importAllResult.memo(() => {
         },
         getComponent() {
           component = component.getComponent();
-          screen(params[32])(null != component, "[Settings Navigator] Invalid component for setting: " + closure_0);
+          screen(params[30])(null != component, "[Settings Navigator] Invalid component for setting: " + closure_0);
           return component;
         }
       };
@@ -237,7 +234,7 @@ const memoResult = importAllResult.memo(() => {
   ];
   obj2.children = items6;
   obj1.children = callback3(createNativeStackNavigator.Navigator, obj2);
-  items5[1] = callback2(require(params[30]).SafeAreaPaddingView, obj1);
+  items5[1] = callback2(closure_5, obj1);
   obj.children = items5;
   return callback3(require(params[16]).AnalyticsLocationProvider, obj);
 });

@@ -1,7 +1,7 @@
 // Module ID: 1336
-// Function ID: 15665
+// Function ID: 15666
 // Name: addVersionedDismissedContent
-// Dependencies: [57, 5, 1316, 1337, 1338, 1340, 1345, 653, 1335, 1346, 21, 1331, 3968, 566, 1334, 686, 12996, 675, 1339, 2]
+// Dependencies: [57, 5, 1316, 1337, 1338, 1340, 1345, 653, 1335, 1346, 21, 1331, 3968, 566, 1334, 686, 13048, 675, 1339, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
 // Module 1336 (addVersionedDismissedContent)
@@ -65,7 +65,7 @@ function markDismissibleContentAsDismissedPreProcessing(closure_0, forceTrack) {
   if (null != guildId) {
     tmp4 = guildId;
   }
-  require(12996) /* handleDCShownToUser */.handleDCDismissed(closure_0, tmp4);
+  require(13048) /* handleDCShownToUser */.handleDCDismissed(closure_0, tmp4);
 }
 function markDismissibleContentAsDismissedPostProcessing(content, groupName) {
   const obj = { content };
@@ -517,7 +517,7 @@ export const markLatestVersionDismissibleContentAsDismissed = function markLates
 export { getGuildNextNumTimesDismissed };
 export { getNextNumTimesDismissed };
 export { markVersionedDismissibleContentAsDismissed };
-export const markSnowflakeBoundDismissibleContentAsDismissed = function markSnowflakeBoundDismissibleContentAsDismissed(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, closure_0, arg2) {
+export const markSnowflakeBoundDismissibleContentAsDismissed = function markSnowflakeBoundDismissibleContentAsDismissed(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, promotionId, arg2) {
   return _markSnowflakeBoundDismissibleContentAsDismissed(...arguments);
 };
 export const markTimeRecurringDismissibleContentAsDismissed = function markTimeRecurringDismissibleContentAsDismissed(c2, arg1) {

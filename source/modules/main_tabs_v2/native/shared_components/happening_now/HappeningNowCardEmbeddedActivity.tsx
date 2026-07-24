@@ -1,10 +1,10 @@
-// Module ID: 14948
-// Function ID: 113937
+// Module ID: 14995
+// Function ID: 114258
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [57, 31, 27, 1849, 14183, 653, 33, 4130, 689, 624, 14949, 5470, 675, 5484, 10815, 1934, 14921, 3991, 8559, 480, 14932, 14184, 9075, 5085, 14945, 2]
+// Dependencies: [57, 31, 27, 1849, 14233, 653, 33, 4130, 689, 624, 14996, 5468, 675, 5482, 10844, 1934, 14968, 3991, 8604, 480, 14979, 14234, 7472, 5085, 14992, 2]
 // Exports: default
 
-// Module 14948 (HappeningNowCardEmbeddedActivity)
+// Module 14995 (HappeningNowCardEmbeddedActivity)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

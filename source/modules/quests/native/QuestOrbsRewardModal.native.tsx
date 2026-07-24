@@ -1,10 +1,10 @@
-// Module ID: 10930
-// Function ID: 84971
+// Module ID: 10957
+// Function ID: 85160
 // Name: CancelButton
-// Dependencies: [57, 5, 31, 27, 4122, 1849, 6651, 4976, 653, 655, 33, 4337, 10930, 1934, 4130, 689, 5094, 5119, 1212, 5085, 7956, 478, 10931, 8302, 10932, 10933, 10934, 10935, 566, 8722, 668, 9463, 8303, 6773, 5484, 10919, 4979, 10466, 5121, 4126, 8708, 4543, 2]
+// Dependencies: [57, 5, 31, 27, 4122, 1849, 6651, 4976, 653, 655, 33, 4337, 10957, 1934, 4130, 689, 5094, 5119, 1212, 5085, 8043, 478, 10958, 8346, 10959, 10960, 10961, 10962, 566, 8763, 668, 9499, 8347, 6773, 5482, 10946, 4979, 10495, 5121, 4126, 8749, 4543, 2]
 // Exports: default, openQuestOrbsRewardModal
 
-// Module 10930 (CancelButton)
+// Module 10957 (CancelButton)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importAllResult from "getCollectiblesQuestReward";
@@ -49,7 +49,7 @@ function StaticOrb() {
   obj = {};
   obj = {};
   const tmp = callback6();
-  obj.uri = importDefault(10933);
+  obj.uri = importDefault(10960);
   obj.source = obj;
   obj.style = tmp.animatedOrb;
   obj.fade = false;
@@ -178,7 +178,7 @@ let closure_21 = importAllResult.memo((animate) => {
   }
   let aPNGPlayerControls;
   const ref = importAllResult.useRef(null);
-  aPNGPlayerControls = flag(7956).useAPNGPlayerControls(ref);
+  aPNGPlayerControls = flag(8043).useAPNGPlayerControls(ref);
   const items = [flag, aPNGPlayerControls];
   const effect = importAllResult.useEffect(() => {
     if (flag) {
@@ -187,7 +187,7 @@ let closure_21 = importAllResult.memo((animate) => {
       obj.stop();
     }
   }, items);
-  return callback3(flag(7956).APNGPlayer, { ref, url, autoplay: false, style: { width: "100%", height: "100%" }, onLoad });
+  return callback3(flag(8043).APNGPlayer, { ref, url, autoplay: false, style: { width: "100%", height: "100%" }, onLoad });
 });
 let closure_22 = importAllResult.memo((animate) => {
   let onLoad;
@@ -213,7 +213,7 @@ let closure_23 = importAllResult.memo((style) => {
   let obj = {};
   ({ useReducedMotion, onStaticBgLoad, onAnimatedBgLoad, isAppActive } = style);
   obj = {};
-  obj = { uri: importDefault(10931) };
+  obj = { uri: importDefault(10958) };
   obj.source = obj;
   obj.style = style;
   obj.resizeMode = "cover";
@@ -222,11 +222,11 @@ let closure_23 = importAllResult.memo((style) => {
   let tmp3 = !useReducedMotion && isAppActive;
   if (tmp3) {
     const obj1 = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    const obj2 = { uri: importDefault(10932) };
+    const obj2 = { uri: importDefault(10959) };
     obj1.source = obj2;
     obj1.style = style;
     obj1.onLoad = onAnimatedBgLoad;
-    tmp3 = callback3(require(8302) /* _isNativeReflectConstruct */.VideoComponent, obj1);
+    tmp3 = callback3(require(8346) /* _isNativeReflectConstruct */.VideoComponent, obj1);
   }
   items[1] = tmp3;
   obj.children = items;
@@ -249,7 +249,7 @@ export default function QuestOrbsRewardModal(quest) {
   let obj = balance(566);
   let items = [closure_9];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.useReducedMotion);
-  let obj1 = balance(8722);
+  let obj1 = balance(8763);
   balance = obj1.useFetchVirtualCurrencyBalance().balance;
   const tmp3 = callback2(variant.useState(false), 2);
   let first = tmp3[0];
@@ -268,7 +268,7 @@ export default function QuestOrbsRewardModal(quest) {
     orbQuantityClaimed = userStatus.orbQuantityClaimed;
   }
   if (null == orbQuantityClaimed) {
-    let obj4 = balance(9463);
+    let obj4 = balance(9499);
     orbQuantityClaimed = obj4.getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
   }
   const effect = variant.useEffect(() => {
@@ -299,7 +299,7 @@ export default function QuestOrbsRewardModal(quest) {
     obj = { filter: outer1_12.VIRTUAL_CURRENCY, fromContent: balance(outer1_2[36]).QuestContent.REWARD_MODAL };
     balance(outer1_2[35]).openQuestHome(obj);
   }, []);
-  let obj5 = balance(10466);
+  let obj5 = balance(10495);
   variant = obj5.useMobileQuestOrbRewardModalCtaPriorityExperiment().variant;
   let num2 = 0;
   if (null != balance) {

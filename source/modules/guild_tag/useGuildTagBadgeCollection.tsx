@@ -1,10 +1,10 @@
-// Module ID: 16280
-// Function ID: 126743
+// Module ID: 16327
+// Function ID: 127067
 // Name: useGuildTagBadgeCollection
-// Dependencies: [31, 8439, 4017, 7632, 566, 2]
+// Dependencies: [31, 8483, 4017, 7721, 566, 2]
 // Exports: default
 
-// Module 16280 (useGuildTagBadgeCollection)
+// Module 16327 (useGuildTagBadgeCollection)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

@@ -1,5 +1,5 @@
 // Module ID: 1391
-// Function ID: 16582
+// Function ID: 16583
 // Name: isGuildOwner
 // Dependencies: [1388, 653, 1392, 1832, 21, 1836, 2]
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt

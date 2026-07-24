@@ -1,10 +1,10 @@
-// Module ID: 12286
-// Function ID: 95770
+// Module ID: 12313
+// Function ID: 96010
 // Name: createGroupDMInvite
-// Dependencies: [1348, 3767, 1849, 6979, 7633, 9480, 1212, 11953, 1395, 4320, 2]
+// Dependencies: [1348, 3767, 1849, 6978, 7722, 9516, 1212, 11979, 1395, 4320, 2]
 // Exports: createGroupDMInvite
 
-// Module 12286 (createGroupDMInvite)
+// Module 12313 (createGroupDMInvite)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,9 +20,9 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   let channel;
   let colors;
   let recipients_;
-  ({ colors, baseColors } = importDefault(7633)(closure_2));
-  const tmp = importDefault(7633)(closure_2);
-  ({ channel, recipients_ } = importDefault(9480)(invite));
+  ({ colors, baseColors } = importDefault(7722)(closure_2));
+  const tmp = importDefault(7722)(closure_2);
+  ({ channel, recipients_ } = importDefault(9516)(invite));
   let id;
   if (null != channel) {
     id = channel.id;
@@ -56,8 +56,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   }
   let channelIconSource = null;
   if (null != channel) {
-    channelIconSource = require(11953) /* getChannelIconURL */.getChannelIconSource(channel);
-    const obj2 = require(11953) /* getChannelIconURL */;
+    channelIconSource = require(11979) /* getChannelIconURL */.getChannelIconSource(channel);
+    const obj2 = require(11979) /* getChannelIconURL */;
   }
   let uri = null;
   if (null != channelIconSource) {

@@ -1,9 +1,9 @@
-// Module ID: 12713
-// Function ID: 98994
+// Module ID: 12764
+// Function ID: 99315
 // Name: ItemSeparator
-// Dependencies: [57, 5, 31, 27, 1347, 1857, 4149, 3758, 1849, 4203, 653, 1277, 5188, 482, 33, 4130, 12709, 10679, 566, 7495, 12391, 1212, 10196, 3981, 8481, 4126, 9383, 5464, 1820, 4944, 10522, 4341, 12714, 12715, 1450, 12722, 22, 4098, 8492, 3842, 12723, 7588, 2]
+// Dependencies: [57, 5, 31, 27, 1347, 1857, 4149, 3758, 1849, 4203, 653, 1277, 5188, 482, 33, 4130, 12760, 10708, 566, 7636, 12449, 1212, 10226, 3981, 8526, 4126, 9419, 5462, 1820, 4944, 10551, 4341, 12765, 12766, 1450, 12773, 22, 4098, 8537, 3842, 12774, 7677, 2]
 
-// Module 12713 (ItemSeparator)
+// Module 12764 (ItemSeparator)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importAllResult from "getVoiceChannelKeyByChannelId";
@@ -32,7 +32,7 @@ let closure_8;
 const require = arg1;
 function ItemSeparator() {
   const tmp = callback4();
-  return callback2(require(7495) /* Form */.FormDivider, { style: callback4().rowFormDivider });
+  return callback2(require(7636) /* Form */.FormDivider, { style: callback4().rowFormDivider });
 }
 function VoiceMemberListSectionHeader(title) {
   const tmp = callback4();
@@ -102,7 +102,7 @@ function VoiceSectionRow(arg0) {
 ({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = ME);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
 let closure_24 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
-let closure_25 = importAllResult.memo((channel) => callback2(importDefault(12709), { channel: channel.channel }));
+let closure_25 = importAllResult.memo((channel) => callback2(importDefault(12760), { channel: channel.channel }));
 let closure_26 = importAllResult.memo((channel) => {
   channel = channel.channel;
   channel(566);
@@ -118,9 +118,9 @@ let closure_26 = importAllResult.memo((channel) => {
       const intl = channel(1212).intl;
       obj.accessibilityLabel = intl.string(channel(1212).t["6Qgrev"]);
       obj.accessibilityHidden = true;
-      obj.source = importDefault(10196);
-      obj.size = channel(12391).CircularIconButton.Sizes.MEDIUM_32;
-      obj.leading = callback2(channel(12391).CircularIconButton, obj);
+      obj.source = importDefault(10226);
+      obj.size = channel(12449).CircularIconButton.Sizes.MEDIUM_32;
+      obj.leading = callback2(channel(12449).CircularIconButton, obj);
       const intl2 = channel(1212).intl;
       obj.label = intl2.string(channel(1212).t["6Qgrev"]);
       obj.onPress = function onPress() {
@@ -133,7 +133,7 @@ let closure_26 = importAllResult.memo((channel) => {
           const result = tmpResult.showInstantInviteActionSheet(channel, obj);
         }
       };
-      items[1] = callback2(channel(7495).FormRow, obj);
+      items[1] = callback2(channel(7636).FormRow, obj);
       obj.children = items;
       tmp4 = callback3(importAllResult.Fragment, obj);
     }

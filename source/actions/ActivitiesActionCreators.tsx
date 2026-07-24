@@ -1,8 +1,8 @@
-// Module ID: 10455
-// Function ID: 80672
-// Dependencies: [5, 1348, 653, 4123, 686, 507, 6924, 6691, 4324, 4140, 2]
+// Module ID: 10484
+// Function ID: 80864
+// Dependencies: [5, 1348, 653, 4123, 686, 507, 6923, 6691, 4324, 4140, 2]
 
-// Module 10455
+// Module 10484
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";

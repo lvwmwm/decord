@@ -1,10 +1,10 @@
-// Module ID: 7560
-// Function ID: 60508
+// Module ID: 7617
+// Function ID: 60658
 // Name: GetStartedScreen
-// Dependencies: [5, 31, 27, 7537, 653, 7544, 33, 4130, 689, 1557, 4347, 7561, 5807, 4126, 5503, 7562, 1212, 7536, 1920, 7538, 4543, 7563, 2]
+// Dependencies: [5, 31, 27, 7582, 653, 7589, 33, 4130, 689, 1557, 4347, 7618, 5807, 4126, 5501, 7619, 1212, 7581, 1920, 7583, 4543, 7620, 2]
 // Exports: default
 
-// Module 7560 (GetStartedScreen)
+// Module 7617 (GetStartedScreen)
 import SafetyHubLinks from "SafetyHubLinks";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -47,7 +47,7 @@ export default function GetStartedScreen(onComplete) {
   let obj = modalSessionId(4347);
   let initiateAgeVerification = obj.useInitiateAgeVerification({ onComplete: onComplete.onClose, entryPoint });
   initiateAgeVerification = initiateAgeVerification.initiateAgeVerification;
-  let obj1 = modalSessionId(7561);
+  let obj1 = modalSessionId(7618);
   obj = {};
   obj = {};
   obj1 = { style: tmp.getStartedContainer };
@@ -80,7 +80,7 @@ export default function GetStartedScreen(onComplete) {
       return outer1_9(initiateAgeVerification(outer1_2[15]), obj, arg1);
     })
   };
-  items1[1] = callback3(modalSessionId(5503).TableRowGroup, obj5);
+  items1[1] = callback3(modalSessionId(5501).TableRowGroup, obj5);
   const obj6 = { style: tmp.ageGroupLearnMoreContainer };
   obj7 = { variant: "text-xs/medium", color: "text-muted" };
   const intl = modalSessionId(1212).intl;
@@ -125,7 +125,7 @@ export default function GetStartedScreen(onComplete) {
     yield outer1_1();
   });
   const obj15 = { color: initiateAgeVerification(689).colors.WHITE };
-  obj14.icon = callback3(modalSessionId(7563).LinkExternalSmallIcon, obj15);
+  obj14.icon = callback3(modalSessionId(7620).LinkExternalSmallIcon, obj15);
   obj14.loading = initiateAgeVerification.loading;
   obj14.iconPosition = "end";
   obj13.children = callback3(modalSessionId(4543).Button, obj14);

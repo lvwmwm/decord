@@ -1,10 +1,10 @@
-// Module ID: 5504
-// Function ID: 46923
+// Module ID: 5502
+// Function ID: 46920
 // Name: TableSwitchRow
-// Dependencies: [57, 31, 27, 33, 4130, 477, 3836, 5165, 4126, 5505, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 477, 3836, 5165, 4126, 5503, 2]
 // Exports: TableSwitchRow
 
-// Module 5504 (TableSwitchRow)
+// Module 5502 (TableSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -106,6 +106,6 @@ export const TableSwitchRow = function TableSwitchRow(value) {
     });
   };
   obj3 = { "aria-hidden": true, value, onValueChange: handleOnPress, disabled };
-  obj["trailing"] = callback2(require(5505) /* FormSwitch */.FormSwitch, obj3);
+  obj["trailing"] = callback2(require(5503) /* FormSwitch */.FormSwitch, obj3);
   return callback2(require(5165) /* TableRowInner */.TableRow, obj);
 };

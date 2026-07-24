@@ -1,10 +1,10 @@
-// Module ID: 10636
-// Function ID: 82938
+// Module ID: 10665
+// Function ID: 83130
 // Name: ConnectivityGlobalStatusContent
-// Dependencies: [31, 27, 1348, 1838, 4202, 4145, 10632, 653, 33, 4130, 689, 8934, 566, 10367, 10630, 3976, 4066, 4663, 3981, 10528, 477, 1557, 9757, 10637, 2]
+// Dependencies: [31, 27, 1348, 1838, 4202, 4145, 10661, 653, 33, 4130, 689, 8973, 566, 10396, 10659, 3976, 4066, 4663, 3981, 10557, 477, 1557, 7530, 10666, 2]
 // Exports: default
 
-// Module 10636 (ConnectivityGlobalStatusContent)
+// Module 10665 (ConnectivityGlobalStatusContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -34,7 +34,7 @@ export default function ConnectivityGlobalStatusContent() {
   let remotePlatform;
   let rtcConnectionState;
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(8934)();
+  const tmp2 = importDefault(8973)();
   const require = tmp2;
   let obj = require(566) /* initialize */;
   const items = [closure_6, closure_5, _isNativeReflectConstruct, closure_7];
@@ -91,11 +91,11 @@ export default function ConnectivityGlobalStatusContent() {
   if (null != channel) {
     id = channel.id;
   }
-  let tmp5Result = importDefault(10367)(id);
-  const tmp5 = importDefault(10367);
+  let tmp5Result = importDefault(10396)(id);
+  const tmp5 = importDefault(10396);
   let obj1 = require(3976) /* AccessibilityAnnouncer */;
   let tmp11 = tmp9;
-  const tmp8 = importDefault(10630)();
+  const tmp8 = importDefault(10659)();
   if (isGuildStageVoiceResult) {
     if (!tmp5Result) {
       tmp5Result = tmp8;
@@ -105,7 +105,7 @@ export default function ConnectivityGlobalStatusContent() {
   let obj2 = require(4663) /* getIsScreenLandscape */;
   let isScreenLandscape = obj2.useIsScreenLandscape();
   if (isScreenLandscape) {
-    isScreenLandscape = require(3981) /* _createForOfIteratorHelperLoose */.isModalOpen(importDefault(10528));
+    isScreenLandscape = require(3981) /* _createForOfIteratorHelperLoose */.isModalOpen(importDefault(10557));
     const obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
   }
   if (isScreenLandscape) {
@@ -124,13 +124,13 @@ export default function ConnectivityGlobalStatusContent() {
   obj.style = items2;
   if (isScreenLandscape) {
     obj1 = { hidden: true };
-    isScreenLandscape = callback(importDefault(9757), obj1);
+    isScreenLandscape = callback(importDefault(7530), obj1);
   }
   const items3 = [isScreenLandscape, ];
   let tmp23 = null;
   if (isGuildStageVoiceResult) {
     obj2 = { channel, guild, hasRTCConnectivity: tmp9, isDarkTheme: isThemeDarkResult, rtcConnectionState, remotePlatform };
-    tmp23 = callback(importDefault(10637), obj2);
+    tmp23 = callback(importDefault(10666), obj2);
   }
   items3[1] = tmp23;
   obj.children = items3;

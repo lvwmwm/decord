@@ -1,5 +1,5 @@
 // Module ID: 5743
-// Function ID: 49380
+// Function ID: 49391
 // Name: VoiceChannelEffectAnimationType
 // Dependencies: [2]
 

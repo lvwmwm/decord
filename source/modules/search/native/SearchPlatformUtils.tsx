@@ -1,10 +1,10 @@
-// Module ID: 11398
-// Function ID: 88594
+// Module ID: 11426
+// Function ID: 88833
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5660, 10077, 9103, 11399, 653, 10078, 8276, 1360, 5784, 477, 1820, 4074, 1443, 9742, 689, 3803, 10076, 11406, 10085, 22, 620, 2]
+// Dependencies: [5660, 10109, 9141, 11427, 653, 10110, 8320, 1360, 5784, 477, 1820, 4074, 1443, 9776, 689, 3803, 10108, 11434, 10117, 22, 620, 2]
 // Exports: delayUntilNavigationComplete, getFiles, getLinks, getMedia, getMediaGridItemStyles, getUrlIcon, performKeyboardAwareNavigation, toSearchBarTag
 
-// Module 11398 (_createForOfIteratorHelperLoose)
+// Module 11426 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
@@ -132,7 +132,7 @@ function getUrlIcon(target) {
       return require(4074) /* LinkIcon */.LinkIcon;
     } else {
       if (obj2.isDiscordUrl(target)) {
-        return require(9742) /* ClydeIcon */.ClydeIcon;
+        return require(9776) /* ClydeIcon */.ClydeIcon;
       } else {
         let num = 0;
         if (0 < closure_13.length) {
@@ -225,14 +225,14 @@ function onInitialFetchMessagesSuccess(arg0) {
     }
     return tmp2;
   })) {
-    let obj = importDefault(10076);
+    let obj = importDefault(10108);
     obj = { searchContext };
     const result = obj.trackSearchEmptyMessageResult(obj);
   }
 }
 function onFetchMessagesStart(searchQueryString) {
   searchQueryString = searchQueryString.searchQueryString;
-  importDefault(11406).updateSearchQuery(searchQueryString.searchContext, (setSearchResultsQuery) => setSearchResultsQuery.setSearchResultsQuery(searchQueryString));
+  importDefault(11434).updateSearchQuery(searchQueryString.searchContext, (setSearchResultsQuery) => setSearchResultsQuery.setSearchResultsQuery(searchQueryString));
 }
 function fetchInitialMessages(closure_0) {
   const _require = closure_0;
@@ -246,14 +246,14 @@ function fetchInitialMessages(closure_0) {
     }
     tmp6 = closure_5;
   } else {
-    let obj = _require(10078);
+    let obj = _require(10110);
     const searchTabFetchId = obj.getSearchTabFetchId(closure_0, tmp3[0], queryString);
     if (!store.getIsFetching(searchTabFetchId)) {
-      let obj1 = queryString(10085);
+      let obj1 = queryString(10117);
       const result = obj1.clearAllSearchMesssages();
       obj = { searchContext: closure_0 };
-      queryString(10076).trackSearchStarted(obj);
-      const obj3 = queryString(10076);
+      queryString(10108).trackSearchStarted(obj);
+      const obj3 = queryString(10108);
       obj = {
         searchContext: closure_0,
         searchTabs: tmp3,
@@ -273,7 +273,7 @@ function fetchInitialMessages(closure_0) {
       }
       obj1.cursor = tmp21;
       obj.pagination = obj1;
-      const obj5 = queryString(10085);
+      const obj5 = queryString(10117);
       obj.trackExactTotalHits = _require(3803).SearchResultExactCountEnabled.getSetting();
       obj.searchMode = constants2.NEWEST;
       const tabMessages = obj5.fetchTabMessages(obj);
@@ -283,12 +283,12 @@ function fetchInitialMessages(closure_0) {
 }
 function syncAutocomplete(searchContext) {
   const queryString = store2.getQueryString(searchContext, true);
-  let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10110) /* _createForOfIteratorHelperLoose */;
   const tokenizeQueryResult = obj.tokenizeQuery(queryString);
-  const selectionScope = require(10078) /* _createForOfIteratorHelperLoose */.getSelectionScope(tokenizeQueryResult, queryString.length - 1, queryString.length - 1);
-  const obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+  const selectionScope = require(10110) /* _createForOfIteratorHelperLoose */.getSelectionScope(tokenizeQueryResult, queryString.length - 1, queryString.length - 1);
+  const obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
   obj = { searchContext, tokens: tokenizeQueryResult, cursorScope: selectionScope, queryString };
-  const result = importDefault(10085).updateAutocompleteQuery(obj);
+  const result = importDefault(10117).updateAutocompleteQuery(obj);
 }
 function subscribeSearchQueryState(searchContext, arg1, arg2, arg3) {
   let tmp = arg3;
@@ -328,10 +328,10 @@ let obj = {
   fetchNextMessages(searchContext, tab, onFetchSuccess) {
     const _require = searchContext;
     const queryString = store2.getQueryString(searchContext);
-    let obj = _require(10078);
+    let obj = _require(10110);
     const searchTabFetchId = obj.getSearchTabFetchId(searchContext, tab, queryString);
     const tmp3 = getInitialFetchLimit(tab);
-    const searchTabFetchId1 = _require(10078).getSearchTabFetchId(searchContext, tab, queryString);
+    const searchTabFetchId1 = _require(10110).getSearchTabFetchId(searchContext, tab, queryString);
     if (!store.getIsInitialFetchComplete(searchTabFetchId1)) {
       const isFetching = store.getIsFetching(searchTabFetchId);
       let flag = false;
@@ -359,7 +359,7 @@ let obj = {
         }
         obj.cursor = tmp27;
         obj.pagination = obj;
-        const obj3 = queryString(10085);
+        const obj3 = queryString(10117);
         obj.trackExactTotalHits = _require(3803).SearchResultExactCountEnabled.getSetting();
         obj.searchMode = constants2.NEWEST;
         tabMessages = obj3.fetchTabMessages(obj);
@@ -387,9 +387,9 @@ let obj = {
 };
 obj.syncAutocompleteDebounced = require("apply").debounce(syncAutocomplete, SEARCH_TEXT_INPUT_DEBOUNCE_TIME);
 obj.navigateToSearchWithPrefetch = function navigateToSearchWithPrefetch(closure_8, closure_9) {
-  let obj = importDefault(10085);
+  let obj = importDefault(10117);
   const result = obj.initializeAutocomplete(closure_9);
-  const result1 = importDefault(11406).initializeSearchQuery(closure_9);
+  const result1 = importDefault(11434).initializeSearchQuery(closure_9);
   fetchInitialMessages(closure_9);
   obj = { searchContext: closure_9 };
   closure_8.navigate("search", obj);
@@ -410,7 +410,7 @@ let result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImp
 export default obj;
 export const getMedia = function getMedia(items, items1) {
   let tmp;
-  const guildIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(items);
+  const guildIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(items);
   if (null != guildIdFromSearchContext) {
     tmp = guildIdFromSearchContext;
   }

@@ -1,10 +1,10 @@
-// Module ID: 7596
-// Function ID: 60790
+// Module ID: 7685
+// Function ID: 61076
 // Name: init
-// Dependencies: [5, 7597, 1348, 653, 686, 3982, 7007, 507, 5717, 2]
+// Dependencies: [5, 7686, 1348, 653, 686, 3982, 7006, 507, 5717, 2]
 // Exports: deleteChannel, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 7596 (init)
+// Module 7685 (init)
 import getRootNavigationRef from "getRootNavigationRef";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

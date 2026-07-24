@@ -1,10 +1,10 @@
-// Module ID: 11171
-// Function ID: 86836
+// Module ID: 11201
+// Function ID: 87105
 // Name: handleApplicationSelected
-// Dependencies: [31, 1348, 1849, 1455, 653, 4566, 4324, 6755, 11172, 6753, 1881, 7020, 1831, 7919, 1392, 10884, 9383, 11177, 5470, 10525, 4099, 2]
+// Dependencies: [31, 1348, 1849, 1455, 653, 4566, 4324, 6755, 11202, 6753, 1881, 7019, 1831, 8006, 1392, 10911, 9419, 11207, 5468, 10554, 4099, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11171 (handleApplicationSelected)
+// Module 11201 (handleApplicationSelected)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -73,7 +73,7 @@ export const handleViewAllSelected = function handleViewAllSelected(arg0) {
   ({ navigation, sectionName, applications, sectionItemType, commands } = arg0);
   ({ location: _location, context, sectionOverallPosition, sectionDescriptors, title, promotedApplicationIds } = arg0);
   let obj = require(4324) /* _createForOfIteratorHelperLoose */;
-  obj = { section_name: sectionName, num: sectionItemType === require(11172) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
+  obj = { section_name: sectionName, num: sectionItemType === require(11202) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
   obj.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_SECTION_VIEW_MORE, obj);
   navigation.navigate(constants.APP_LIST_VIEW, { analyticsLocation: _location, context, sectionName, sectionOverallPosition, applications, sectionItemType, commands, sectionDescriptors, title, promotedApplicationIds });
 };
@@ -109,10 +109,10 @@ export const handleApplicationCommandSelected = function handleApplicationComman
       }
     }
     if ("channel" === context.type) {
-      const result = importAll(7020).setAppLauncherActiveCommand(context.channel.id, command);
+      const result = importAll(7019).setAppLauncherActiveCommand(context.channel.id, command);
       const obj1 = { command, section: tmp4, context, installOnDemand, sectionName, analyticsLocation: _location, onCommandExecuted };
       navigation.navigate(constants.COMMAND_VIEW, obj1);
-      const obj4 = importAll(7020);
+      const obj4 = importAll(7019);
     }
   }
 };
@@ -245,7 +245,7 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
   if (null == application) {
     let applicationIconSource = importDefault(1831);
   } else {
-    const obj2 = require(7919) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(8006) /* _createForOfIteratorHelperLoose */;
     const obj3 = importDefault(1392);
     if (isRealApplicationResult) {
       const obj = {};
@@ -255,13 +255,13 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
     } else {
       applicationIconSource = obj3.makeSource(closure_7);
     }
-    isRealApplicationResult = require(7919) /* _createForOfIteratorHelperLoose */.isRealApplication(application);
+    isRealApplicationResult = require(8006) /* _createForOfIteratorHelperLoose */.isRealApplication(application);
   }
   return applicationIconSource;
 };
 export const useLogAppLauncherEmptyStateView = function useLogAppLauncherEmptyStateView(COMMAND_NOT_FOUND, query) {
   const _require = COMMAND_NOT_FOUND;
-  const entrypoint = _require(10884).useAppLauncherContext().entrypoint;
+  const entrypoint = _require(10911).useAppLauncherContext().entrypoint;
   const items = [COMMAND_NOT_FOUND, query, entrypoint];
   const effect = React.useEffect(() => {
     if (null != COMMAND_NOT_FOUND) {

@@ -1,9 +1,9 @@
-// Module ID: 11496
-// Function ID: 89468
+// Module ID: 11526
+// Function ID: 89713
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1917, 1849, 3747, 686, 5078, 2]
 
-// Module 11496 (_isNativeReflectConstruct)
+// Module 11526 (_isNativeReflectConstruct)
 import closure_3 from "_isNativeReflectConstruct";
 import isCommunicationDisabled from "isCommunicationDisabled";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

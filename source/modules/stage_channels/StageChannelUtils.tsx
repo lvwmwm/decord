@@ -1,10 +1,10 @@
-// Module ID: 7484
-// Function ID: 60083
+// Module ID: 7564
+// Function ID: 60329
 // Name: fillChunk
-// Dependencies: [4202, 1353, 4947, 653, 7485, 22, 4319, 1212, 3763, 2]
+// Dependencies: [4202, 1353, 4947, 653, 7565, 22, 4319, 1212, 3763, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7484 (fillChunk)
+// Module 7564 (fillChunk)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH";

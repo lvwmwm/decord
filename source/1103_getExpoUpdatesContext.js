@@ -1,5 +1,5 @@
 // Module ID: 1103
-// Function ID: 12600
+// Function ID: 12601
 // Name: getExpoUpdatesContext
 // Dependencies: [978, 977, 794, 979]
 

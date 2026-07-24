@@ -1,10 +1,10 @@
-// Module ID: 10100
-// Function ID: 78206
+// Module ID: 10132
+// Function ID: 78400
 // Name: ButtonBadge
-// Dependencies: [31, 33, 4130, 689, 477, 1273, 1324, 4549, 4660, 4126, 9128, 2]
+// Dependencies: [31, 33, 4130, 689, 477, 1273, 1324, 4549, 4660, 4126, 9164, 2]
 // Exports: default
 
-// Module 10100 (ButtonBadge)
+// Module 10132 (ButtonBadge)
 import importAllResult from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,7 +18,7 @@ class ButtonBadge {
     if (str === undefined) {
       str = "left";
     }
-    tmp = f78208(false);
+    tmp = f78402(false);
     tmp2 = jsx;
     obj = {};
     tmp3 = require("DEFAULT_BADGE_SIZE");

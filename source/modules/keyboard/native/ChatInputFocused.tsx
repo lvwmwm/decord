@@ -1,5 +1,5 @@
 // Module ID: 1556
-// Function ID: 17598
+// Function ID: 17599
 // Name: setIsAnyChatInputFocused
 // Dependencies: [2]
 // Exports: getIsAnyChatInputFocused, setIsAnyChatInputFocused

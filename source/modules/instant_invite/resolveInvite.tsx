@@ -1,10 +1,10 @@
-// Module ID: 8651
-// Function ID: 68468
+// Module ID: 8692
+// Function ID: 68688
 // Name: getExtendedInviteType
-// Dependencies: [1194, 1838, 6979, 653, 6978, 4116, 675, 4942, 480, 1361, 2]
+// Dependencies: [1194, 1838, 6978, 653, 6977, 4116, 675, 4942, 480, 1361, 2]
 // Exports: default
 
-// Module 8651 (getExtendedInviteType)
+// Module 8692 (getExtendedInviteType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import InviteSendStates from "InviteSendStates";
@@ -25,7 +25,7 @@ function getExtendedInviteType(target_type) {
   } else if (target_type.target_type === constants.EMBEDDED_APPLICATION) {
     return constants4.APPLICATION;
   } else {
-    const inviteType = require(6978) /* isGroupDMInvite */.getInviteType(target_type);
+    const inviteType = require(6977) /* isGroupDMInvite */.getInviteType(target_type);
     if (constants2.FRIEND === inviteType) {
       return constants4.FRIEND_INVITE;
     } else if (constants2.GROUP_DM === inviteType) {
@@ -36,7 +36,7 @@ function getExtendedInviteType(target_type) {
       const _String = String;
       return String(inviteType);
     }
-    const obj = require(6978) /* isGroupDMInvite */;
+    const obj = require(6977) /* isGroupDMInvite */;
   }
 }
 ({ InviteTargetTypes: closure_5, InviteTypes: closure_6 } = InviteSendStates);

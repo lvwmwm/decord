@@ -1,10 +1,10 @@
-// Module ID: 13945
-// Function ID: 106732
+// Module ID: 13996
+// Function ID: 107056
 // Name: BountiesScrollRecapFooter
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 477, 1212, 4126, 8708, 566, 3842, 2]
+// Dependencies: [31, 27, 4122, 33, 4130, 689, 477, 1212, 4126, 8749, 566, 3842, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 13945 (BountiesScrollRecapFooter)
+// Module 13996 (BountiesScrollRecapFooter)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ export const BountiesScrollRecapFooter = function BountiesScrollRecapFooter(orbA
   obj = { variant: "text-xs/bold", color: "text-brand", style: tmp.headerLabel, accessible: false, children: stringResult };
   const items = [callback(require(4126) /* Text */.Text, obj), ];
   obj = { style: tmp.orbRow, accessible: false, importantForAccessibility: "no-hide-descendants" };
-  const items1 = [callback(require(8708) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
+  const items1 = [callback(require(8749) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
   const obj1 = { variant: "display-sm", color: "text-strong", accessible: false, style: tmp.orbAmount, children: "+" + orbAmount };
   items1[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items1;

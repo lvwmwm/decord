@@ -1,10 +1,10 @@
-// Module ID: 14030
-// Function ID: 107419
+// Module ID: 14080
+// Function ID: 107742
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [31, 27, 4222, 653, 10468, 6959, 10474, 14031, 14032, 6945, 4979, 13931, 6837, 6842, 2]
+// Dependencies: [31, 27, 4222, 653, 10497, 6958, 10503, 14081, 14082, 6944, 4979, 13982, 6836, 6841, 2]
 // Exports: default
 
-// Module 14030 (useVideoQuestPlayerAnalytics)
+// Module 14080 (useVideoQuestPlayerAnalytics)
 import result from "result";
 import { AppState } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

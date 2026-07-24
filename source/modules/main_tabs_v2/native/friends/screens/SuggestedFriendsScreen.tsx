@@ -1,10 +1,10 @@
-// Module ID: 15462
-// Function ID: 119004
+// Module ID: 15509
+// Function ID: 119326
 // Name: SuggestedFriendsScreen
-// Dependencies: [31, 27, 653, 33, 4130, 689, 5464, 5484, 675, 14914, 8492, 15459, 4662, 8825, 9892, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5462, 5482, 675, 14961, 8537, 15506, 4662, 8864, 9924, 1212, 2]
 // Exports: default
 
-// Module 15462 (SuggestedFriendsScreen)
+// Module 15509 (SuggestedFriendsScreen)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

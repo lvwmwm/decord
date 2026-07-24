@@ -1,5 +1,5 @@
 // Module ID: 4679
-// Function ID: 40764
+// Function ID: 40768
 // Name: NativePermissionBaseUtils
 // Dependencies: [5, 6, 7, 4680, 4344, 653, 675, 4681, 1212, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 11919
-// Function ID: 92241
+// Module ID: 11946
+// Function ID: 92479
 // Name: getApplicationImage
-// Dependencies: [31, 4167, 653, 4155, 8312, 7820, 1212, 11920, 6865, 9082, 1392, 11922, 4814, 11923, 5470, 566, 675, 8315, 2]
+// Dependencies: [31, 4167, 653, 4155, 8356, 7909, 1212, 11947, 6864, 9120, 1392, 11949, 4814, 11950, 5468, 566, 675, 8359, 2]
 // Exports: useImageForActivity, useImageForContentEntry
 
-// Module 11919 (getApplicationImage)
+// Module 11946 (getApplicationImage)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -43,7 +43,7 @@ function useComputedImagesForActivity(activity, application) {
     let obj = { largeImage, smallImage };
   } else {
     if (obj15.isStageActivity(activity)) {
-      const result = require(9082) /* unpackStageChannelParty */.unpackStageChannelParty(activity);
+      const result = require(9120) /* unpackStageChannelParty */.unpackStageChannelParty(activity);
       let guildIconURL;
       if (null != result) {
         obj = { id: result.guildId };
@@ -68,8 +68,8 @@ function useComputedImagesForActivity(activity, application) {
       obj1.largeImage = tmp25;
       obj1.smallImage = undefined;
       obj = obj1;
-      const obj9 = require(9082) /* unpackStageChannelParty */;
-    } else if (importDefault(11922)(activity)) {
+      const obj9 = require(9120) /* unpackStageChannelParty */;
+    } else if (importDefault(11949)(activity)) {
       const obj3 = {};
       let obj4 = {};
       let obj7 = importDefault(4814);
@@ -81,7 +81,7 @@ function useComputedImagesForActivity(activity, application) {
       obj = obj3;
     } else {
       if (null == smallImage) {
-        if (importDefault(11923)(activity)) {
+        if (importDefault(11950)(activity)) {
           const obj5 = {};
           const obj6 = {};
           obj4 = importDefault(4814);
@@ -101,7 +101,7 @@ function useComputedImagesForActivity(activity, application) {
         obj = { largeImage: smallImage, smallImage: undefined };
       }
     }
-    obj15 = require(9082) /* unpackStageChannelParty */;
+    obj15 = require(9120) /* unpackStageChannelParty */;
   }
   return obj;
 }
@@ -125,8 +125,8 @@ function useTrackActivityDefaultIcon(arg0) {
   if (null != activity) {
     application_id = activity.application_id;
   }
-  const getOrFetchApplication = trackingSource(5470).useGetOrFetchApplication(application_id);
-  let obj = trackingSource(5470);
+  const getOrFetchApplication = trackingSource(5468).useGetOrFetchApplication(application_id);
+  let obj = trackingSource(5468);
   const items = [c4];
   let tmp4 = null == application_id;
   const stateFromStores = trackingSource(566).useStateFromStores(items, () => {
@@ -194,7 +194,7 @@ function useTrackActivityDefaultIcon(arg0) {
   }, items1);
 }
 function useRichImageForActivity(activity, activityApplication) {
-  let obj = require(5470) /* useGetOrFetchApplications */;
+  let obj = require(5468) /* useGetOrFetchApplications */;
   let application_id;
   if (null != activity) {
     application_id = activity.application_id;
@@ -214,7 +214,7 @@ function useRichImageForActivity(activity, activityApplication) {
     let tmp21Result;
     if (null != large_image) {
       obj = {};
-      let obj2 = require(7820) /* _createForOfIteratorHelperLoose */;
+      let obj2 = require(7909) /* _createForOfIteratorHelperLoose */;
       const items = [ImageSizes.LARGE, ImageSizes.LARGE];
       obj.src = obj2.getAssetImage(activity.application_id, large_image, items);
       const assets2 = activity.assets;
@@ -234,7 +234,7 @@ function useRichImageForActivity(activity, activityApplication) {
       tmp21Result = obj;
     }
     let small_image;
-    if (!importDefault(8315)(activity)) {
+    if (!importDefault(8359)(activity)) {
       if (null != activity) {
         const assets4 = activity.assets;
         if (null != assets4) {
@@ -246,7 +246,7 @@ function useRichImageForActivity(activity, activityApplication) {
     if (null != small_image) {
       const obj1 = {};
       const items1 = [ImageSizes.LARGE, ImageSizes.LARGE];
-      obj1.src = require(7820) /* _createForOfIteratorHelperLoose */.getAssetImage(activity.application_id, small_image, items1);
+      obj1.src = require(7909) /* _createForOfIteratorHelperLoose */.getAssetImage(activity.application_id, small_image, items1);
       const assets5 = activity.assets;
       let trimmed1;
       if (null != assets5) {
@@ -262,7 +262,7 @@ function useRichImageForActivity(activity, activityApplication) {
       }
       obj1.url = small_url;
       tmp14 = obj1;
-      const obj5 = require(7820) /* _createForOfIteratorHelperLoose */;
+      const obj5 = require(7909) /* _createForOfIteratorHelperLoose */;
     }
     obj2 = {};
     if (null == tmp21Result) {
@@ -291,7 +291,7 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   if (showCoverImage === undefined) {
     showCoverImage = true;
   }
-  ({ activity, activityApplication, fallbackApplication } = importDefault(11920)(entry));
+  ({ activity, activityApplication, fallbackApplication } = importDefault(11947)(entry));
   let obj = activityApplication;
   if (null != fallbackApplication) {
     obj = fallbackApplication;
@@ -302,12 +302,12 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   if (null != obj) {
     canonicalGameId = obj.getCanonicalGameId();
   }
-  let obj1 = require(6865) /* importDefaultResult1 */;
+  let obj1 = require(6864) /* importDefaultResult1 */;
   const data = obj1.useGame(canonicalGameId).data;
   if (null != data) {
     const coverURL = data.getCoverURL();
   }
-  let obj2 = require(8312) /* isPlayedGameEntry */;
+  let obj2 = require(8356) /* isPlayedGameEntry */;
   if (obj2.isListenedSessionEntry(entry)) {
     if (entry.extra.entries.length > 0) {
       obj = { src: entry.extra.entries[0].media.image_url };
@@ -346,15 +346,15 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
     useTrackActivityDefaultIcon(obj);
     return obj5;
   }
-  obj3 = require(8312) /* isPlayedGameEntry */;
+  obj3 = require(8356) /* isPlayedGameEntry */;
   if (obj3.isWatchedMediaEntry(entry)) {
     const obj6 = {};
-    let tmp5Result = tmp5(7820);
+    let tmp5Result = tmp5(7909);
     obj6.src = tmp5Result.getAssetImage(entry.extra.application_id, entry.extra.media_assets_large_image, ImageSizes.LARGE);
     obj6.alt = entry.extra.media_title;
     tmp7 = obj6;
   } else {
-    tmp5Result = tmp5(8312);
+    tmp5Result = tmp5(8356);
     if (tmp5Result.isTopArtistEntry(entry)) {
       const obj7 = { src: entry.extra.media.image_url };
       tmp7 = obj7;

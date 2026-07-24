@@ -1,10 +1,10 @@
-// Module ID: 14218
-// Function ID: 109225
+// Module ID: 14268
+// Function ID: 109548
 // Name: getSettingsOverrideReason
 // Dependencies: [3804, 662, 1212, 566, 2]
 // Exports: useSettingsOverrideReason
 
-// Module 14218 (getSettingsOverrideReason)
+// Module 14268 (getSettingsOverrideReason)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SettingsOverrideReasonKeys as closure_3 } from "MAX_FAVORITES";
 

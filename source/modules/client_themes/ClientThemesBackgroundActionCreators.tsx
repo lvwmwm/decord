@@ -1,10 +1,10 @@
-// Module ID: 14073
-// Function ID: 108240
+// Module ID: 14123
+// Function ID: 108563
 // Name: updateBackgroundGradientPreset
 // Dependencies: [686, 2]
 // Exports: resetBackgroundGradientPreset, resetPreviewClientTheme, updateBackgroundGradientPreset, updateMobilePendingThemeIndex
 
-// Module 14073 (updateBackgroundGradientPreset)
+// Module 14123 (updateBackgroundGradientPreset)
 const result = require("set").fileFinishedImporting("modules/client_themes/ClientThemesBackgroundActionCreators.tsx");
 
 export const updateBackgroundGradientPreset = function updateBackgroundGradientPreset(id) {

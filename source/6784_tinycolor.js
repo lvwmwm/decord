@@ -1,5 +1,5 @@
 // Module ID: 6784
-// Function ID: 53432
+// Function ID: 53454
 // Name: tinycolor
 // Dependencies: []
 

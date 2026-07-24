@@ -1,10 +1,10 @@
-// Module ID: 14871
-// Function ID: 113406
+// Module ID: 14918
+// Function ID: 113727
 // Name: HomeDrawerDMExpandedChildren
-// Dependencies: [31, 27, 1352, 3767, 4325, 1849, 482, 33, 4130, 566, 4320, 14872, 14206, 14845, 10202, 4126, 10255, 3808, 14835, 3987, 3984, 2]
+// Dependencies: [31, 27, 1352, 3767, 4325, 1849, 482, 33, 4130, 566, 4320, 14919, 14256, 14892, 10232, 4126, 10286, 3808, 14882, 3987, 3984, 2]
 // Exports: default
 
-// Module 14871 (HomeDrawerDMExpandedChildren)
+// Module 14918 (HomeDrawerDMExpandedChildren)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { isMultiUserDM } from "_callSuper";
@@ -40,9 +40,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp;
   });
   const obj2 = channel(566);
-  const tmp3 = importDefault(14206)(channel, { unread: channel(14872).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = importDefault(14256)(channel, { unread: channel(14919).useBaseChannelUnreadBadgeState(channel, false).unread });
   const View = tmp3;
-  const obj3 = channel(14872);
+  const obj3 = channel(14919);
   const items2 = [closure_7];
   const stateFromStores1 = channel(566).useStateFromStores(items2, () => outer1_7.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -71,9 +71,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     if (null != memo) {
       if (memo.isMuted) {
         if (null == memo) {
-          const BellSlashIcon = channel(10202).BellSlashIcon;
+          const BellSlashIcon = channel(10232).BellSlashIcon;
         }
-        const BellZIcon = channel(14845).BellZIcon;
+        const BellZIcon = channel(14892).BellZIcon;
       }
     }
     let obj = { style: tmp.title };
@@ -86,11 +86,11 @@ function HomeDrawerDMExpandedChildren(channel) {
     let tmp = null;
     if (null != closure_4) {
       const obj = { channel, message: closure_4, variant: "text-xs/medium", color: "text-strong", layout: channel(3808).ChannelListLayoutTypes.COZY, muted: memo.isMuted };
-      tmp = outer1_10(channel(10255).ChannelRowPreview, obj);
+      tmp = outer1_10(channel(10286).ChannelRowPreview, obj);
     }
     return tmp;
   }, items5);
-  return callback(channel(14835).HomeDrawerSharedItem, { title, subtitle });
+  return callback(channel(14882).HomeDrawerSharedItem, { title, subtitle });
 }
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 let closure_12 = _createForOfIteratorHelperLoose.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });

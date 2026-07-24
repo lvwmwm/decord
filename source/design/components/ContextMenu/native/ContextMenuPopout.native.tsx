@@ -1,10 +1,10 @@
-// Module ID: 13080
-// Function ID: 100803
+// Module ID: 13132
+// Function ID: 101126
 // Name: ContextMenuDivider
-// Dependencies: [57, 31, 27, 33, 4130, 689, 9304, 3991, 4476, 5160, 1450, 477, 4542, 9303, 5217, 4126, 13078, 4528, 4531, 1212, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 9340, 3991, 4476, 5160, 1450, 477, 4542, 9339, 5217, 4126, 13130, 4528, 4531, 1212, 2]
 // Exports: ContextMenuPopout
 
-// Module 13080 (ContextMenuDivider)
+// Module 13132 (ContextMenuDivider)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -85,7 +85,7 @@ function ContextMenuBackdrop(onDismiss) {
     obj.opacity = visible(outer1_2[12]).withSpring(value, visible(outer1_2[6]).CONTEXT_MENU_SPRING);
     return obj;
   };
-  obj = { withSpring: visible(4542).withSpring, visible, CONTEXT_MENU_SPRING: visible(9304).CONTEXT_MENU_SPRING };
+  obj = { withSpring: visible(4542).withSpring, visible, CONTEXT_MENU_SPRING: visible(9340).CONTEXT_MENU_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 6862317967896;
   fn.__initData = closure_15;

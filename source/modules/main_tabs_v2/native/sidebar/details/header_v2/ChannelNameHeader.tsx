@@ -1,9 +1,9 @@
-// Module ID: 15422
-// Function ID: 118551
+// Module ID: 15469
+// Function ID: 118873
 // Name: DirectMessageIcon
-// Dependencies: [31, 27, 1348, 1838, 3758, 4217, 1849, 653, 33, 4130, 689, 566, 1273, 4320, 1456, 4138, 4660, 4126, 1212, 4312, 9096, 4593, 8513, 5464, 8492, 2]
+// Dependencies: [31, 27, 1348, 1838, 3758, 4217, 1849, 653, 33, 4130, 689, 566, 1273, 4320, 1456, 4138, 4660, 4126, 1212, 4312, 9134, 4593, 8558, 5462, 8537, 2]
 
-// Module 15422 (DirectMessageIcon)
+// Module 15469 (DirectMessageIcon)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -215,7 +215,7 @@ function ChannelNameHeaderContent(channel) {
 }
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
-  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = importAllResult.useCallback(() => {
     const recipientId = channel.getRecipientId();

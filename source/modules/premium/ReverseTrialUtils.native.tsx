@@ -1,10 +1,10 @@
-// Module ID: 7427
-// Function ID: 59694
+// Module ID: 7835
+// Function ID: 61853
 // Name: useIsInReverseTrial
 // Dependencies: [1849, 566, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 7427 (useIsInReverseTrial)
+// Module 7835 (useIsInReverseTrial)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

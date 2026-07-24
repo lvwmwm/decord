@@ -1,9 +1,9 @@
-// Module ID: 15991
-// Function ID: 123659
+// Module ID: 16038
+// Function ID: 123981
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1347, 4954, 4149, 1194, 1348, 4177, 1906, 4146, 6651, 653, 477, 15992, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 27, 1347, 4954, 4149, 1194, 1348, 4177, 1906, 4146, 6651, 653, 477, 16039, 5078, 2]
 
-// Module 15991 (_isNativeReflectConstruct)
+// Module 16038 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
@@ -48,8 +48,8 @@ function handleAVAudioSessionMode() {
     if (!hasVideoResult) {
       if (null == currentEmbeddedActivity.getCurrentEmbeddedActivity()) {
         const AVAudioSessionMode = VoiceEngine.AVAudioSessionMode;
-        VIDEO = require(15992) /* _isNativeReflectConstruct */.shouldImmediatelyRequestVoicePermissions(id.getId(), channel.id) ? AVAudioSessionMode.VOICE : AVAudioSessionMode.LISTEN;
-        const obj = require(15992) /* _isNativeReflectConstruct */;
+        VIDEO = require(16039) /* _isNativeReflectConstruct */.shouldImmediatelyRequestVoicePermissions(id.getId(), channel.id) ? AVAudioSessionMode.VOICE : AVAudioSessionMode.LISTEN;
+        const obj = require(16039) /* _isNativeReflectConstruct */;
       }
     }
     VIDEO = VoiceEngine.AVAudioSessionMode.VIDEO;

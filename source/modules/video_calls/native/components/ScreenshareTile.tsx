@@ -1,10 +1,10 @@
-// Module ID: 10561
-// Function ID: 82497
+// Module ID: 10590
+// Function ID: 82689
 // Name: ScreenShareTile
-// Dependencies: [31, 27, 653, 33, 4130, 689, 10562, 5217, 1273, 10563, 4126, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 10591, 5217, 1273, 10592, 4126, 1212, 2]
 // Exports: default
 
-// Module 10561 (ScreenShareTile)
+// Module 10590 (ScreenShareTile)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NOOP } from "ME";
@@ -38,12 +38,12 @@ export default function ScreenShareTile(onSingleTap) {
   }
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap };
-  obj = { gesture: importDefault(10562)(obj) };
+  obj = { gesture: importDefault(10591)(obj) };
   obj = { style: tmp.container };
   const obj1 = { style: tmp.liveContainer, children: callback(require(1273) /* Button */.LiveTag, {}) };
   const items = [callback(closure_3, obj1), , ];
-  const tmp2 = importDefault(10562)(obj);
-  items[1] = callback(closure_4, { source: importDefault(10563), style: tmp.image, resizeMode: "contain" });
+  const tmp2 = importDefault(10591)(obj);
+  items[1] = callback(closure_4, { source: importDefault(10592), style: tmp.image, resizeMode: "contain" });
   const obj3 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj3.children = intl.string(require(1212) /* getSystemLocale */.t.G84gtR);

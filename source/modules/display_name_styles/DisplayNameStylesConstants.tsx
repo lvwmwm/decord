@@ -1,5 +1,5 @@
 // Module ID: 1861
-// Function ID: 20527
+// Function ID: 20528
 // Name: items3
 // Dependencies: [1862, 1863, 2]
 // Exports: getColorPresetsForEffect

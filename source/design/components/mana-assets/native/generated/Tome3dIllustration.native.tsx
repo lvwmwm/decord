@@ -1,5 +1,5 @@
 // Module ID: 6594
-// Function ID: 50845
+// Function ID: 50856
 // Name: Tome3dIllustration
 // Dependencies: [33, 5085, 6595, 2]
 // Exports: Tome3dIllustration

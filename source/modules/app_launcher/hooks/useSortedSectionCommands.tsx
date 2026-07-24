@@ -1,10 +1,10 @@
-// Module ID: 11257
-// Function ID: 87589
+// Module ID: 11286
+// Function ID: 87829
 // Name: useSortedSectionCommands
-// Dependencies: [57, 31, 11258, 11191, 664, 2]
+// Dependencies: [57, 31, 11287, 11221, 664, 2]
 // Exports: default
 
-// Module 11257 (useSortedSectionCommands)
+// Module 11286 (useSortedSectionCommands)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { CommandListSortOrder } from "CommandListSortOrder";

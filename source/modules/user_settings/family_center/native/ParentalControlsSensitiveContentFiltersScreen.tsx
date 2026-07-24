@@ -1,10 +1,10 @@
-// Module ID: 14552
-// Function ID: 111006
+// Module ID: 14602
+// Function ID: 111329
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [31, 7662, 33, 1212, 10095, 13550, 2]
+// Dependencies: [31, 7751, 33, 1212, 10127, 13601, 2]
 // Exports: default
 
-// Module 14552 (UserSettingsSensitiveContentFilters)
+// Module 14602 (UserSettingsSensitiveContentFilters)
 import result from "result";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -37,5 +37,5 @@ export default function UserSettingsSensitiveContentFilters() {
     obj.sections = items1;
     return obj.createList(obj);
   }, []);
-  return jsx(importDefault(13550), { node });
+  return jsx(importDefault(13601), { node });
 };

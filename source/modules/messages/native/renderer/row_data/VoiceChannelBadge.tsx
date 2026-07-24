@@ -1,10 +1,10 @@
-// Module ID: 7910
-// Function ID: 62963
+// Module ID: 7997
+// Function ID: 63274
 // Name: createVoiceChannelBadge
-// Dependencies: [27, 1348, 3758, 4146, 653, 7911, 4593, 4345, 2]
+// Dependencies: [27, 1348, 3758, 4146, 653, 7998, 4593, 4345, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 7910 (createVoiceChannelBadge)
+// Module 7997 (createVoiceChannelBadge)
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -14,7 +14,7 @@ import { Permissions } from "ME";
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
 export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId) {
-  let obj = require(7911) /* items */;
+  let obj = require(7998) /* items */;
   obj = {};
   let tmp;
   if (null != guildId) {

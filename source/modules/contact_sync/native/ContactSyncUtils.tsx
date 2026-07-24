@@ -1,10 +1,10 @@
-// Module ID: 11709
-// Function ID: 90884
+// Module ID: 11736
+// Function ID: 91122
 // Name: isContactSyncAvailable
-// Dependencies: [5, 27, 4812, 11708, 11707, 653, 478, 4942, 480, 686, 11710, 3803, 1184, 566, 1360, 1920, 3827, 4337, 2]
+// Dependencies: [5, 27, 4812, 11735, 11734, 653, 478, 4942, 480, 686, 11737, 3803, 1184, 566, 1360, 1920, 3827, 4337, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getStoredContacts, handleOpenLearnMoreLink, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 11709 (isContactSyncAvailable)
+// Module 11736 (isContactSyncAvailable)
 import closure_3 from "ME";
 import { NativeModules } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -86,7 +86,7 @@ export const bulkAddFriends = function bulkAddFriends(arr, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(11710) /* _isNativeReflectConstruct */;
+  let obj = require(11737) /* _isNativeReflectConstruct */;
   const result = obj.removeLastUserContactsUpload();
   const ContactSyncEnabled = require(3803) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);

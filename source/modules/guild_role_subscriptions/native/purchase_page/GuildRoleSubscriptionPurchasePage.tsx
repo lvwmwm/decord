@@ -1,12 +1,12 @@
-// Module ID: 15262
-// Function ID: 116456
+// Module ID: 15309
+// Function ID: 116778
 // Name: Separator
-// Dependencies: [31, 27, 1278, 1348, 1838, 653, 33, 4130, 689, 5459, 1212, 1273, 4126, 10681, 14099, 14101, 14102, 624, 15263, 4320, 15265, 15266, 15267, 4593, 5085, 5515, 15268, 9405, 15270, 15271, 3827, 15272, 2]
+// Dependencies: [31, 27, 1278, 1348, 1838, 653, 33, 4130, 689, 4126, 1212, 1273, 10710, 14149, 14151, 14152, 624, 15310, 4320, 15312, 15313, 15314, 4593, 5085, 5513, 15315, 9441, 15317, 15318, 3827, 15319, 2]
 // Exports: default
 
-// Module 15262 (Separator)
-import "ContentHeader";
-import get_ActivityIndicator from "GappedList";
+// Module 15309 (Separator)
+import "set";
+import get_ActivityIndicator from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import closure_10 from "_createForOfIteratorHelperLoose";
@@ -33,7 +33,7 @@ function LegalDisclaimer() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { termsURL: constants3.TERMS, paidURL: constants3.PAID_TERMS };
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.FSPTDI, obj);
-  return callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj);
+  return callback(require(4126) /* Text */.Text, obj);
 }
 function SocialBadge(onPress) {
   let iconSource;
@@ -54,7 +54,7 @@ function SocialBadge(onPress) {
   obj = { variant: "text-sm/medium", color: "text-default", children: text };
   items[1] = callback(require(4126) /* Text */.Text, obj);
   if (tmp2) {
-    const obj1 = { source: importDefault(10681), style: tmp.socialBadgeArrow };
+    const obj1 = { source: importDefault(10710), style: tmp.socialBadgeArrow };
     tmp2 = callback(require(1273) /* Button */.Icon, obj1);
   }
   items[2] = tmp2;
@@ -98,17 +98,17 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
   let store_page_trailer_url;
   const tmp = _createForOfIteratorHelperLoose();
   const importAll = tmp;
-  gatedChannelId(stateFromStores1[14])({ forceRestore: true });
-  let obj = guildId(stateFromStores1[15]);
+  gatedChannelId(stateFromStores1[13])({ forceRestore: true });
+  let obj = guildId(stateFromStores1[14]);
   const first = obj.useGroupListingsForGuild(guildId)[0];
-  let obj1 = guildId(stateFromStores1[16]);
+  let obj1 = guildId(stateFromStores1[15]);
   const groupListingsFetchContext = obj1.useGroupListingsFetchContext();
-  let obj2 = guildId(stateFromStores1[15]);
+  let obj2 = guildId(stateFromStores1[14]);
   const subscriptionsSettings = obj2.useSubscriptionsSettings(guildId);
-  let obj3 = guildId(stateFromStores1[17]);
+  let obj3 = guildId(stateFromStores1[16]);
   let items = [closure_10];
   const stateFromStores = obj3.useStateFromStores(items, () => outer1_10.getGuild(guildId));
-  let obj4 = guildId(stateFromStores1[15]);
+  let obj4 = guildId(stateFromStores1[14]);
   let id;
   if (null != first) {
     id = first.id;
@@ -128,20 +128,20 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
   obj.groupListingId = id1;
   obj.location = ROLE_SUBSCRIPTIONS_TAB;
   obj.relevantSubscriptionListingIds = mapped;
-  gatedChannelId(stateFromStores1[18])(obj);
-  let obj6 = guildId(stateFromStores1[17]);
+  gatedChannelId(stateFromStores1[17])(obj);
+  let obj6 = guildId(stateFromStores1[16]);
   const items1 = [closure_9];
   const items2 = [gatedChannelId];
   stateFromStores1 = obj6.useStateFromStores(items1, () => outer1_9.getChannel(gatedChannelId), items2);
-  closure_4 = gatedChannelId(stateFromStores1[19])(stateFromStores1);
-  let obj7 = guildId(stateFromStores1[17]);
+  closure_4 = gatedChannelId(stateFromStores1[18])(stateFromStores1);
+  let obj7 = guildId(stateFromStores1[16]);
   const items3 = [_isNativeReflectConstruct];
   if (groupListingsFetchContext) {
     if (null != subscriptionsSettings) {
       if (null != stateFromStores) {
         if (null != first) {
           const features = stateFromStores.features;
-          const coverImageURI = importAll(stateFromStores1[22]).getCoverImageURI(subscriptionsSettings);
+          const coverImageURI = importAll(stateFromStores1[21]).getCoverImageURI(subscriptionsSettings);
           const hasItem = features.has(constants2.PARTNERED);
           store_page_trailer_url = subscriptionsSettings.store_page_trailer_url;
           if (null != gatedChannelId) {
@@ -151,11 +151,11 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
                 unlockHook() {
                               let obj = { style: tmp.gatedChannel };
                               const items = [outer1_14(guildId(stateFromStores1[11]).Spacer, { size: 3 }), , , ];
-                              obj = { size: guildId(stateFromStores1[11]).Icon.Sizes.SMALL_20, style: tmp.gatedChannelIcon, source: guildId(stateFromStores1[23]).getChannelIcon(stateFromStores1) };
+                              obj = { size: guildId(stateFromStores1[11]).Icon.Sizes.SMALL_20, style: tmp.gatedChannelIcon, source: guildId(stateFromStores1[22]).getChannelIcon(stateFromStores1) };
                               items[1] = outer1_14(guildId(stateFromStores1[11]).Icon, obj);
                               items[2] = outer1_14(guildId(stateFromStores1[11]).Spacer, { size: 3 });
                               obj = { variant: "text-xs/semibold", color: "text-default", children: closure_4 };
-                              items[3] = outer1_14(guildId(stateFromStores1[12]).Text, obj);
+                              items[3] = outer1_14(guildId(stateFromStores1[9]).Text, obj);
                               obj.children = items;
                               return outer1_15(outer1_6, obj);
                             }
@@ -166,21 +166,21 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             obj2 = { right: 1 };
             obj1.scrollIndicatorInsets = obj2;
             obj3 = { source: coverImageURI, style: tmp.heroImage };
-            const items4 = [callback(gatedChannelId(stateFromStores1[24]), obj3), , ];
+            const items4 = [callback(gatedChannelId(stateFromStores1[23]), obj3), , ];
             obj4 = { style: tmp.contentCard };
             const obj5 = { style: tmp.guildIconContainer };
-            obj6 = { size: guildId(stateFromStores1[25]).GuildIconSizes.XLARGE, guild: stateFromStores, style: tmp.guildIcon };
-            obj5.children = callback(gatedChannelId(stateFromStores1[25]), obj6);
+            obj6 = { size: guildId(stateFromStores1[24]).GuildIconSizes.XLARGE, guild: stateFromStores, style: tmp.guildIcon };
+            obj5.children = callback(gatedChannelId(stateFromStores1[24]), obj6);
             const items5 = [callback(closure_6, obj5), , , , , , , , , , ];
             obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
             const intl3 = guildId(stateFromStores1[10]).intl;
             const obj8 = { serverName: stateFromStores.name };
             obj7.children = intl3.format(guildId(stateFromStores1[10]).t.mqCkpl, obj8);
-            items5[1] = callback(guildId(stateFromStores1[12]).Text, obj7);
+            items5[1] = callback(guildId(stateFromStores1[9]).Text, obj7);
             const obj9 = { size: 8 };
             items5[2] = callback(guildId(stateFromStores1[11]).Spacer, obj9);
             const obj10 = { variant: "text-sm/normal", color: "text-default", lineClamp: 3, children: subscriptionsSettings.description };
-            items5[3] = callback(guildId(stateFromStores1[26]).TruncatedText, obj10);
+            items5[3] = callback(guildId(stateFromStores1[25]).TruncatedText, obj10);
             let tmp38Result = hasItem;
             if (!hasItem) {
               tmp38Result = null != store_page_trailer_url;
@@ -193,7 +193,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
               const obj14 = { gap: 8 };
               let tmp46 = hasItem;
               if (hasItem) {
-                const obj15 = { iconSource: gatedChannelId(stateFromStores1[28]) };
+                const obj15 = { iconSource: gatedChannelId(stateFromStores1[27]) };
                 const intl4 = guildId(stateFromStores1[10]).intl;
                 obj15.text = intl4.string(guildId(stateFromStores1[10]).t["2MhjUV"]);
                 tmp46 = callback(SocialBadge, obj15);
@@ -201,17 +201,17 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
               const items7 = [tmp46, ];
               let tmp52 = null != store_page_trailer_url;
               if (tmp52) {
-                const obj16 = { iconSource: gatedChannelId(stateFromStores1[29]) };
+                const obj16 = { iconSource: gatedChannelId(stateFromStores1[28]) };
                 const intl5 = guildId(stateFromStores1[10]).intl;
                 obj16.text = intl5.string(guildId(stateFromStores1[10]).t["4PGeGA"]);
                 obj16.onPress = function onPress() {
-                  return gatedChannelId(stateFromStores1[30]).openURL(store_page_trailer_url);
+                  return gatedChannelId(stateFromStores1[29]).openURL(store_page_trailer_url);
                 };
                 tmp52 = callback(SocialBadge, obj16);
               }
               items7[1] = tmp52;
               obj14.children = items7;
-              obj13.children = closure_15(guildId(stateFromStores1[27]).GappedList, obj14);
+              obj13.children = closure_15(guildId(stateFromStores1[26]).GappedList, obj14);
               items6[1] = callback(closure_6, obj13);
               obj11.children = items6;
               tmp38Result = closure_15(closure_16, obj11);
@@ -230,25 +230,25 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             const obj19 = { textTransform: "uppercase" };
             obj18.style = obj19;
             obj18.children = formatResult;
-            items5[8] = callback(guildId(stateFromStores1[12]).Text, obj18);
+            items5[8] = callback(guildId(stateFromStores1[9]).Text, obj18);
             const obj20 = { size: 24 };
             items5[9] = callback(guildId(stateFromStores1[11]).Spacer, obj20);
-            const obj21 = { gap: 16, children: mapped.map((listingId) => outer1_14(gatedChannelId(stateFromStores1[31]), { listingId, guildId }, listingId)) };
-            items5[10] = callback(guildId(stateFromStores1[27]).GappedList, obj21);
+            const obj21 = { gap: 16, children: mapped.map((listingId) => outer1_14(gatedChannelId(stateFromStores1[30]), { listingId, guildId }, listingId)) };
+            items5[10] = callback(guildId(stateFromStores1[26]).GappedList, obj21);
             obj4.children = items5;
             items4[1] = closure_15(closure_6, obj4);
             const obj22 = { source: tmp16, style: tmp.moneyBirbPlaceholder };
-            items4[2] = callback(gatedChannelId(stateFromStores1[24]), obj22);
+            items4[2] = callback(gatedChannelId(stateFromStores1[23]), obj22);
             obj1.children = items4;
             return closure_15(closure_7, obj1);
           }
           const intl = guildId(stateFromStores1[10]).intl;
           formatResult = intl.string(guildId(stateFromStores1[10]).t["mPHb1/"]);
-          const obj33 = importAll(stateFromStores1[22]);
+          const obj33 = importAll(stateFromStores1[21]);
         }
       }
     }
   }
-  const tmp10 = gatedChannelId(stateFromStores1[18]);
+  const tmp10 = gatedChannelId(stateFromStores1[17]);
   return callback(closure_6, { style: tmp.loadingContainer, children: callback(closure_4, { size: "large" }) });
 };

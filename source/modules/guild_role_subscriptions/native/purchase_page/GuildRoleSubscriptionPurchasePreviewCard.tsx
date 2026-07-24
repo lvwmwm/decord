@@ -1,10 +1,10 @@
-// Module ID: 15272
-// Function ID: 116498
+// Module ID: 15319
+// Function ID: 116820
 // Name: ContentHeader
-// Dependencies: [57, 31, 27, 1348, 33, 4130, 689, 4126, 4098, 15273, 1934, 9405, 14129, 1273, 566, 4320, 1212, 4593, 14116, 15268, 5085, 15274, 2]
+// Dependencies: [57, 31, 27, 1348, 33, 4130, 689, 4126, 4098, 15320, 1934, 9441, 14179, 1273, 566, 4320, 1212, 4593, 14166, 15315, 5085, 15321, 2]
 // Exports: default
 
-// Module 15272 (ContentHeader)
+// Module 15319 (ContentHeader)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -59,7 +59,7 @@ function EmojiGallery(arg0) {
   }
   items[tmp6] = tmp7;
   obj.children = items;
-  obj.children = callback2(require(9405) /* GappedList */.GappedList, obj);
+  obj.children = callback2(require(9441) /* GappedList */.GappedList, obj);
   return callback2(closure_6, obj);
 }
 function BenefitShowCase(arg0) {
@@ -149,16 +149,16 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14116);
+  let obj = importAll(14166);
   const first = callback(obj.useImage(listingId), 1)[0];
-  let obj1 = importAll(14116);
-  let obj2 = importAll(14116);
+  let obj1 = importAll(14166);
+  let obj2 = importAll(14166);
   const first1 = callback(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj3 = importAll(14116);
+  let obj3 = importAll(14166);
   const first2 = callback(obj3.useChannelBenefits(listingId), 1)[0];
-  let obj4 = importAll(14116);
+  let obj4 = importAll(14166);
   const first3 = callback(obj4.useIntangibleBenefits(listingId), 1)[0];
-  let obj5 = listingId(15268);
+  let obj5 = listingId(15315);
   const first4 = first2[0];
   const first5 = first3[0];
   const size = first1.size;
@@ -183,7 +183,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   obj3.children = items1;
   items[2] = callback3(closure_6, obj3);
   obj.children = items;
-  const items2 = [callback3(closure_6, obj), callback2(listingId(1273).Spacer, { size: 16 }), callback2(guildId(15274), { listingId }), ];
+  const items2 = [callback3(closure_6, obj), callback2(listingId(1273).Spacer, { size: 16 }), callback2(guildId(15321), { listingId }), ];
   let tmp14Result = length > 0 || size > 0 || length2 > 0;
   if (tmp14Result) {
     const obj6 = {};
@@ -259,7 +259,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     }
     items6[2] = tmp47;
     obj9.children = items6;
-    obj8.children = callback3(listingId(9405).GappedList, obj9);
+    obj8.children = callback3(listingId(9441).GappedList, obj9);
     items3[1] = callback2(closure_6, obj8);
     const obj27 = {
       onPress() {

@@ -1,10 +1,10 @@
-// Module ID: 7491
-// Function ID: 60122
+// Module ID: 7571
+// Function ID: 60368
 // Name: StageSparkleInner
-// Dependencies: [31, 27, 33, 4130, 689, 7492, 5085, 7493, 3842, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 7572, 5085, 7573, 3842, 2]
 // Exports: default
 
-// Module 7491 (StageSparkleInner)
+// Module 7571 (StageSparkleInner)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -18,7 +18,7 @@ function StageSparkleInner(style) {
   let icon;
   ({ IconComponent, icon } = style);
   if (icon === undefined) {
-    icon = importDefault(7492);
+    icon = importDefault(7572);
   }
   const tmp3 = _createForOfIteratorHelperLoose();
   let obj = { style: items };
@@ -33,7 +33,7 @@ function StageSparkleInner(style) {
   }
   obj.children = tmp11;
   const items1 = [callback(View, obj), ];
-  const obj2 = { style: tmp3.sparkles, source: importDefault(7493) };
+  const obj2 = { style: tmp3.sparkles, source: importDefault(7573) };
   items1[1] = callback(importDefault(5085), obj2);
   obj.children = items1;
   return closure_5(View, obj);

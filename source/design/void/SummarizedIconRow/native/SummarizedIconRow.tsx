@@ -1,10 +1,10 @@
-// Module ID: 13009
-// Function ID: 100605
+// Module ID: 13061
+// Function ID: 100928
 // Name: OverflowSquircle
 // Dependencies: [31, 27, 33, 4130, 689, 4126, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 13009 (OverflowSquircle)
+// Module 13061 (OverflowSquircle)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 14427
-// Function ID: 110279
+// Module ID: 14477
+// Function ID: 110602
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [31, 27, 33, 4130, 4541, 4126, 4965, 4543, 7771, 5792, 2]
+// Dependencies: [31, 27, 33, 4130, 4541, 4126, 4965, 4543, 7533, 5792, 2]
 // Exports: default
 
-// Module 14427 (UserSettingsDesignSystemButtonGroup)
+// Module 14477 (UserSettingsDesignSystemButtonGroup)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -61,7 +61,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
 
     }
   };
-  const items4 = [callback(require(7771) /* IconButton */.IconButton, obj9), ];
+  const items4 = [callback(require(7533) /* IconButton */.IconButton, obj9), ];
   const obj10 = {
     accessibilityLabel: "Settings",
     variant: "secondary",
@@ -70,7 +70,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
 
     }
   };
-  items4[1] = callback(require(7771) /* IconButton */.IconButton, obj10);
+  items4[1] = callback(require(7533) /* IconButton */.IconButton, obj10);
   obj8.children = items4;
   items3[2] = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj8);
   obj7.children = items3;
@@ -97,7 +97,7 @@ export default function UserSettingsDesignSystemButtonGroup() {
 
     }
   };
-  items6[1] = callback(require(7771) /* IconButton */.IconButton, obj15);
+  items6[1] = callback(require(7533) /* IconButton */.IconButton, obj15);
   obj13.children = items6;
   items5[3] = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj13);
   items5[4] = callback(require(4126) /* Text */.Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });

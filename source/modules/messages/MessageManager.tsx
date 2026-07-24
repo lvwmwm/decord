@@ -1,9 +1,9 @@
-// Module ID: 9878
-// Function ID: 76477
+// Module ID: 9910
+// Function ID: 76671
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 4143, 4808, 1352, 5659, 1348, 1838, 4142, 1906, 3947, 653, 1355, 664, 3, 4803, 9581, 4062, 8340, 6691, 9879, 587, 3952, 1198, 5661, 4470, 1212, 686, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 4143, 4808, 1352, 5659, 1348, 1838, 4142, 1906, 3947, 653, 1355, 664, 3, 4803, 9617, 4062, 8384, 6691, 9911, 587, 3952, 1198, 5661, 4470, 1212, 686, 5078, 2]
 
-// Module 9878 (_isNativeReflectConstruct)
+// Module 9910 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "ME";
@@ -66,7 +66,7 @@ function fetchMessages(arg0) {
           let obj1 = importDefault(4803);
           const orCreate = obj1.getOrCreate(channelId);
           let orCreate1 = orCreate;
-          if (orCreate.some(require(9581) /* isAttachmentUrl */.messageHasExpiredAttachmentUrl)) {
+          if (orCreate.some(require(9617) /* isAttachmentUrl */.messageHasExpiredAttachmentUrl)) {
             importDefaultResult.log("Found expired attachment link, clearing messages");
             let obj5 = importDefault(4803);
             obj5.clear(channelId);
@@ -93,7 +93,7 @@ function fetchMessages(arg0) {
             if (!closure_10.isConnected()) {
               let flag = true;
             }
-            let hasUnreadResult = importDefault(8340)(channelId);
+            let hasUnreadResult = importDefault(8384)(channelId);
             if (hasUnreadResult) {
               hasUnreadResult = closure_15.hasUnread(channelId);
             }
@@ -142,7 +142,7 @@ function fetchMessages(arg0) {
                       importDefaultResult.log("Jumping to start of thread " + channel.id);
                       const obj3 = { channelId };
                       const obj26 = importDefault(6691);
-                      obj3.limit = require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.threadStart");
+                      obj3.limit = require(9911) /* getMessageLimit */.getMessageLimit("MessageManager.threadStart");
                       const obj4 = { messageId: channelId, flash: false };
                       obj3.jump = obj4;
                       obj3.isPreload = isPreload;
@@ -162,7 +162,7 @@ function fetchMessages(arg0) {
                         importDefaultResult.log("Jumping to most recent message in thread " + channel.id + " - " + trackedAckMessageId);
                         obj5 = { channelId };
                         const obj18 = importDefault(6691);
-                        obj5.limit = require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.threadUnread");
+                        obj5.limit = require(9911) /* getMessageLimit */.getMessageLimit("MessageManager.threadUnread");
                         obj6 = { messageId: trackedAckMessageId, flash: false, offset: 1 };
                         obj5.jump = obj6;
                         obj5.isPreload = isPreload;
@@ -176,7 +176,7 @@ function fetchMessages(arg0) {
                 }
                 obj7 = { channelId };
                 const obj22 = importDefault(6691);
-                obj7.limit = require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.initialFetch");
+                obj7.limit = require(9911) /* getMessageLimit */.getMessageLimit("MessageManager.initialFetch");
                 obj7.isPreload = isPreload;
                 obj7.skipLocalFetch = skipLocalFetch;
                 const obj8 = { jumpType: require(4062) /* GuildThemeSourcePreference */.JumpType.ANIMATED };
@@ -383,9 +383,9 @@ function handleLoadMessagesSuccess(jump) {
       }
       if (isStale) {
         let obj = importDefault(6691);
-        obj = { channelId, limit: require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.staleFetch"), jump: jump.jump };
+        obj = { channelId, limit: require(9911) /* getMessageLimit */.getMessageLimit("MessageManager.staleFetch"), jump: jump.jump };
         const messages = obj.fetchMessages(obj);
-        const obj3 = require(9879) /* getMessageLimit */;
+        const obj3 = require(9911) /* getMessageLimit */;
       }
     }
   }

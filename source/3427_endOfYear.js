@@ -1,5 +1,5 @@
 // Module ID: 3427
-// Function ID: 26671
+// Function ID: 26672
 // Name: endOfYear
 // Dependencies: [3209, 3210]
 // Exports: default

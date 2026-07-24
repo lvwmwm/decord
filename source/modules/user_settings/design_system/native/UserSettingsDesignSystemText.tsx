@@ -1,10 +1,10 @@
-// Module ID: 14418
-// Function ID: 110175
+// Module ID: 14468
+// Function ID: 110498
 // Name: UserSettingsDesignSystemText
-// Dependencies: [31, 27, 33, 3834, 689, 4541, 5503, 4127, 5165, 4126, 2]
+// Dependencies: [31, 27, 33, 3834, 689, 4541, 5501, 4127, 5165, 4126, 2]
 // Exports: default
 
-// Module 14418 (UserSettingsDesignSystemText)
+// Module 14468 (UserSettingsDesignSystemText)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ export default function UserSettingsDesignSystemText() {
     }
     return tmp;
   });
-  obj.children = jsx(require(5503) /* TableRowGroupTitle */.TableRowGroup, { title: "Text Variants", hasIcons: false });
+  obj.children = jsx(require(5501) /* TableRowGroupTitle */.TableRowGroup, { title: "Text Variants", hasIcons: false });
   obj.children = jsx(require(4541) /* Stack */.Stack, { spacing: importDefault(689).space.PX_24, style: { paddingHorizontal: token } });
   return <ScrollView spacing={importDefault(689).space.PX_24} style={{ paddingHorizontal: token }} />;
 };

@@ -1,10 +1,10 @@
-// Module ID: 8402
-// Function ID: 66864
+// Module ID: 8446
+// Function ID: 67092
 // Name: canManageResource
-// Dependencies: [57, 31, 3758, 1849, 8401, 482, 483, 1387, 566, 2]
+// Dependencies: [57, 31, 3758, 1849, 8445, 482, 483, 1387, 566, 2]
 // Exports: getManageResourcePermissions, useManageResourcePermissions
 
-// Module 8402 (canManageResource)
+// Module 8446 (canManageResource)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 10803
-// Function ID: 83856
+// Module ID: 10832
+// Function ID: 84048
 // Name: getNearestValue
 // Dependencies: [1273, 4542, 4131, 3991, 5217, 2]
 // Exports: default
 
-// Module 10803 (getNearestValue)
+// Module 10832 (getNearestValue)
 let obj = { damping: 30, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 obj = { duration: 500, easing: require("Button").STANDARD_EASING };
 let closure_4 = { code: "function getNearestValue_PanGestureAnimationsTsx1(array,measure,velocity=0){const unitVector=velocity<0?-1:velocity>0?1:0;function getSortedByMeasure(array,measure){'worklet';const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}if(array.length===0){return measure;}const sorted=getSortedByMeasure(array,measure);if(unitVector!==0){var _sorted$find;return(_sorted$find=sorted.find(function(value){const result=unitVector<0?measure>value:measure<value;return result;}))!==null&&_sorted$find!==void 0?_sorted$find:sorted[0];}return sorted[0];}" };
@@ -51,7 +51,7 @@ let closure_6 = (() => {
 })();
 let closure_7 = { code: "function withPanGestureSpring_PanGestureAnimationsTsx3(destination,velocity,config){const{SPRING_CONFIG,withSpring}=this.__closure;const springConfig=config!==null&&config!==void 0?config:SPRING_CONFIG;return withSpring(destination,{...springConfig,velocity:velocity});}" };
 let tmp2 = (() => {
-  export function withPanGestureSpring(targetHeight) {
+  export function withPanGestureSpring(value) {
     let tmp = arg2;
     if (null == arg2) {
       tmp = outer1_2;
@@ -60,7 +60,7 @@ let tmp2 = (() => {
     obj = {};
     const merged = Object.assign(tmp);
     obj["velocity"] = arg1;
-    return obj.withSpring(targetHeight, obj);
+    return obj.withSpring(value, obj);
   }
   obj = { SPRING_CONFIG: obj, withSpring: require(4542) /* withSpring */.withSpring };
   withPanGestureSpring.__closure = obj;

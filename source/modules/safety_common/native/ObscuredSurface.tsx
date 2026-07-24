@@ -1,10 +1,10 @@
-// Module ID: 8627
-// Function ID: 68360
+// Module ID: 8669
+// Function ID: 68582
 // Name: ObscuredSurface
-// Dependencies: [31, 27, 33, 4130, 689, 8628, 4639, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 8670, 4639, 4126, 1212, 2]
 // Exports: default
 
-// Module 8627 (ObscuredSurface)
+// Module 8669 (ObscuredSurface)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ export default function ObscuredSurface(obscured) {
   const tmp = _createForOfIteratorHelperLoose();
   let tmp3Result = children;
   if (obscured.obscured) {
-    let obj = { value: require(8628) /* context */.OBSCURED_VALUE };
+    let obj = { value: require(8670) /* context */.OBSCURED_VALUE };
     obj = { style: tmp.container };
     obj = { style: tmp.content, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessible: false, "aria-hidden": true, children };
     const items = [callback(View, obj), , ];
@@ -57,7 +57,7 @@ export default function ObscuredSurface(obscured) {
     items[2] = closure_5(View, obj2);
     obj.children = items;
     obj.children = closure_5(View, obj);
-    tmp3Result = tmp3(require(8628) /* context */.ObscuredSurfaceContext.Provider, obj);
+    tmp3Result = tmp3(require(8670) /* context */.ObscuredSurfaceContext.Provider, obj);
     const tmp12 = callback;
   }
   return tmp3Result;

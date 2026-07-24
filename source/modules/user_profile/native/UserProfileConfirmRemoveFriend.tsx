@@ -1,10 +1,10 @@
-// Module ID: 11655
-// Function ID: 90427
+// Module ID: 11682
+// Function ID: 90665
 // Name: UserProfileConfirmRemoveFriend
 // Dependencies: [31, 33, 4475, 1212, 4475, 2]
 // Exports: default
 
-// Module 11655 (UserProfileConfirmRemoveFriend)
+// Module 11682 (UserProfileConfirmRemoveFriend)
 import "result";
 import jsxProd from "jsxProd";
 

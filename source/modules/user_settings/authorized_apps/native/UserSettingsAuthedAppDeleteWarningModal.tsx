@@ -1,10 +1,10 @@
-// Module ID: 11631
-// Function ID: 90312
+// Module ID: 11658
+// Function ID: 90550
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [33, 10855, 1212, 11632, 8214, 4475, 2]
+// Dependencies: [33, 10882, 1212, 11659, 8258, 4475, 2]
 // Exports: default
 
-// Module 11631 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 11658 (UserSettingsAuthedAppDeleteWarningModal)
 import jsxProd from "jsxProd";
 
 let closure_3;
@@ -18,7 +18,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let scopes;
   application = application.application;
   ({ scopes, onDelete } = application);
-  let obj = require(10855) /* isSocialLayerApplication */;
+  let obj = require(10882) /* isSocialLayerApplication */;
   let result = obj.isSocialLayerSDKAuthorization(application, scopes);
   const intl = require(1212) /* getSystemLocale */.intl;
   if (result) {
@@ -38,22 +38,22 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
     formatToPlainStringResult1 = formatToPlainString(t.QWGvxA, obj1);
   }
   const obj2 = {};
-  let tmp8 = importDefault(11632)(application.id);
+  let tmp8 = importDefault(11659)(application.id);
   if (tmp8) {
     const obj3 = {};
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj4 = { applicationName: application.name };
     obj3.children = intl3.format(require(1212) /* getSystemLocale */.t.KRnERi, obj4);
-    tmp8 = callback(importDefault(8214), obj3);
-    const tmp12 = importDefault(8214);
+    tmp8 = callback(importDefault(8258), obj3);
+    const tmp12 = importDefault(8258);
   }
   const items = [tmp8, ];
   if (result) {
-    const obj5 = { look: require(8214) /* InfoBox */.InfoBoxLooks.WARNING };
+    const obj5 = { look: require(8258) /* InfoBox */.InfoBoxLooks.WARNING };
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj5.children = intl4.string(require(1212) /* getSystemLocale */.t.LY35Zy);
-    result = callback(importDefault(8214), obj5);
-    const tmp17 = importDefault(8214);
+    result = callback(importDefault(8258), obj5);
+    const tmp17 = importDefault(8258);
   }
   items[1] = result;
   obj2.children = items;

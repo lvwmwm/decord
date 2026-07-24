@@ -1,10 +1,10 @@
-// Module ID: 8436
-// Function ID: 67207
+// Module ID: 8480
+// Function ID: 67435
 // Name: EditGuildEventStepHeader
 // Dependencies: [31, 27, 33, 4130, 4126, 2]
 // Exports: default
 
-// Module 8436 (EditGuildEventStepHeader)
+// Module 8480 (EditGuildEventStepHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

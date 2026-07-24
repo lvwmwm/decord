@@ -1,10 +1,10 @@
-// Module ID: 13849
-// Function ID: 106054
+// Module ID: 13900
+// Function ID: 106378
 // Name: LaptopPhoneIcon
-// Dependencies: [31, 33, 689, 3833, 13850, 2]
+// Dependencies: [31, 33, 689, 3833, 13901, 2]
 // Exports: LaptopPhoneIcon
 
-// Module 13849 (LaptopPhoneIcon)
+// Module 13900 (LaptopPhoneIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const LaptopPhoneIcon = function LaptopPhoneIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13850) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13901) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13850) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13901) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

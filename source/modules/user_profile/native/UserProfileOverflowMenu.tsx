@@ -1,10 +1,10 @@
-// Module ID: 12136
-// Function ID: 95039
+// Module ID: 12163
+// Function ID: 95279
 // Name: UserProfileOverflowMenu
-// Dependencies: [57, 31, 4143, 1348, 3767, 1906, 653, 4148, 10420, 33, 566, 12137, 12143, 11895, 8266, 5464, 5484, 7887, 8920, 8921, 5491, 8559, 480, 8492, 1212, 4140, 4098, 4337, 12144, 1934, 8923, 10422, 7488, 10421, 7600, 477, 11653, 675, 8922, 4341, 3803, 5492, 3969, 3830, 5498, 11897, 9302, 7771, 8968, 689, 2]
+// Dependencies: [57, 31, 4143, 1348, 3767, 1906, 653, 4148, 10449, 33, 566, 12164, 12170, 11922, 8310, 5462, 5482, 7974, 8959, 8960, 5489, 8604, 480, 8537, 1212, 4140, 4098, 4337, 12171, 1934, 8962, 10451, 7568, 10450, 7689, 477, 11680, 675, 8961, 4341, 3803, 5490, 3969, 3830, 5496, 11924, 9338, 7533, 9007, 689, 2]
 // Exports: default
 
-// Module 12136 (UserProfileOverflowMenu)
+// Module 12163 (UserProfileOverflowMenu)
 import _slicedToArray from "_slicedToArray";
 import IgnoredInformationTable from "IgnoredInformationTable";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

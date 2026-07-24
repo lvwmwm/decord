@@ -1,10 +1,10 @@
-// Module ID: 12163
-// Function ID: 95208
+// Module ID: 12190
+// Function ID: 95448
 // Name: onCopy
-// Dependencies: [31, 27, 8482, 33, 4130, 689, 566, 1273, 12164, 1212, 9002, 4660, 5791, 4126, 8483, 4543, 2]
+// Dependencies: [31, 27, 8527, 33, 4130, 689, 566, 1273, 12191, 1212, 9041, 4660, 5791, 4126, 8528, 4543, 2]
 // Exports: default
 
-// Module 12163 (onCopy)
+// Module 12190 (onCopy)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ export default function _default(link) {
   const items = [_isNativeReflectConstruct];
   _require = obj.useStateFromStores(items, () => outer1_4.getInviteSettings());
   obj = { style: tmp.container };
-  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: importDefault(12164) };
+  obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: importDefault(12191) };
   let intl = _require(1212).intl;
   obj.title = intl.string(_require(1212).t.tQc0l8);
   const intl2 = _require(1212).intl;
@@ -47,7 +47,7 @@ export default function _default(link) {
   obj2.value = str;
   obj2.style = tmp.inviteInput;
   obj2.clearButtonVisibility = _require(1273).ClearButtonVisibility.NEVER;
-  const items2 = [callback(importDefault(9002), obj2), ];
+  const items2 = [callback(importDefault(9041), obj2), ];
   const obj3 = {};
   const intl3 = _require(1212).intl;
   obj3.accessibilityLabel = intl3.string(_require(1212).t["3D5yo/"]);

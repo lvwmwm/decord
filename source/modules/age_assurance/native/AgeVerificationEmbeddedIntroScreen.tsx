@@ -1,10 +1,10 @@
-// Module ID: 7566
-// Function ID: 60533
+// Module ID: 7623
+// Function ID: 60683
 // Name: AgeVerificationEmbeddedIntroScreen
-// Dependencies: [31, 653, 33, 4130, 689, 7543, 7559, 7567, 7572, 7573, 4541, 5807, 4126, 4347, 7574, 1212, 2716, 7536, 1920, 2]
+// Dependencies: [31, 653, 33, 4130, 689, 7588, 7616, 7624, 7613, 7614, 4541, 5807, 4126, 4347, 7629, 1212, 2716, 7581, 1920, 2]
 // Exports: default
 
-// Module 7566 (AgeVerificationEmbeddedIntroScreen)
+// Module 7623 (AgeVerificationEmbeddedIntroScreen)
 import result from "result";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   ({ entryPoint, navigation } = arg0);
   ({ onClose, modalSessionId, classificationId } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = navigation(7543);
+  let obj = navigation(7588);
   const items = [navigation];
   const isSuspendedUser = obj.useIsSuspendedUser();
   const callback = React.useCallback(() => {
@@ -50,7 +50,7 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   obj3.children = items2;
   items1[1] = callback2(navigation(4541).Stack, obj3);
   obj2.children = items1;
-  const items3 = [callback2(navigation(4541).Stack, obj2), callback(navigation(7574).AgeVerificationMethodsContainer, { ageVerificationMethods: importDefault(7567)({ onClose, classificationId, onGoogleWalletSelect: callback }).ageVerificationMethods, modalSessionId })];
+  const items3 = [callback2(navigation(4541).Stack, obj2), callback(navigation(7629).AgeVerificationMethodsContainer, { ageVerificationMethods: importDefault(7624)({ onClose, classificationId, onGoogleWalletSelect: callback }).ageVerificationMethods, modalSessionId })];
   obj1.children = items3;
   const items4 = [callback2(navigation(4541).Stack, obj1), ];
   const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.helpLink };
@@ -64,6 +64,6 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   obj6.children = intl.format(importDefault(2716).lG69e1, obj7);
   items4[1] = callback(navigation(4126).Text, obj6);
   obj.children = items4;
-  obj.children = callback2(navigation(7573).ModalContent, obj);
-  return callback(navigation(7572).ModalScreen, obj);
+  obj.children = callback2(navigation(7614).ModalContent, obj);
+  return callback(navigation(7613).ModalScreen, obj);
 };

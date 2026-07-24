@@ -1,10 +1,10 @@
-// Module ID: 9083
-// Function ID: 71215
+// Module ID: 9121
+// Function ID: 71427
 // Name: VoiceActivityStatus
-// Dependencies: [31, 33, 4130, 9084, 9072, 1212, 2]
+// Dependencies: [31, 33, 4130, 9122, 9111, 1212, 2]
 // Exports: default
 
-// Module 9083 (VoiceActivityStatus)
+// Module 9121 (VoiceActivityStatus)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -37,7 +37,7 @@ export default function VoiceActivityStatus(hideText) {
       obj = { channel, size: "xxs", color: "status-positive" };
       const items = [tmp.icon, hideText.iconStyle];
       obj.style = items;
-      tmp5 = callback(importDefault(9084), obj);
+      tmp5 = callback(importDefault(9122), obj);
     }
     const items1 = [tmp5, ];
     if (!!flag) {
@@ -47,7 +47,7 @@ export default function VoiceActivityStatus(hideText) {
     } else {
       if (!channel.isDM()) {
         if (!channel.isGroupDM()) {
-          const tmp14 = importDefault(9072);
+          const tmp14 = importDefault(9111);
           obj = { style: textStyle, maxFontSizeMultiplier };
           const intl = require(1212) /* getSystemLocale */.intl;
           const string = intl.string;
@@ -66,8 +66,8 @@ export default function VoiceActivityStatus(hideText) {
       textStyle = require(1212) /* getSystemLocale */.intl;
       maxFontSizeMultiplier = textStyle.string;
       obj1.children = maxFontSizeMultiplier(require(1212) /* getSystemLocale */.t["9FaEzi"]);
-      tmp11Result = callback(importDefault(9072), obj1);
-      const tmp20 = importDefault(9072);
+      tmp11Result = callback(importDefault(9111), obj1);
+      const tmp20 = importDefault(9111);
     }
     tmp3 = closure_5;
     tmp4 = closure_4;

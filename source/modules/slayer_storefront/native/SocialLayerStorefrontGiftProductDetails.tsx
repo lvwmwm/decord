@@ -1,10 +1,10 @@
-// Module ID: 9747
-// Function ID: 75806
+// Module ID: 9781
+// Function ID: 76018
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [31, 27, 653, 33, 4130, 689, 5470, 9738, 1392, 8212, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5468, 9772, 1392, 8256, 4126, 2]
 // Exports: default
 
-// Module 9747 (SocialLayerStorefrontGiftProductDetails)
+// Module 9781 (SocialLayerStorefrontGiftProductDetails)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME";
@@ -33,9 +33,9 @@ const result = require("ME").fileFinishedImporting("modules/slayer_storefront/na
 export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = getOrFetchApplication(5470);
+  let obj = getOrFetchApplication(5468);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  let obj1 = getOrFetchApplication(9738);
+  let obj1 = getOrFetchApplication(9772);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];
@@ -51,7 +51,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     return applicationIconURL;
   }, items);
   obj = { style: tmp.container };
-  const items1 = [callback(importDefault(8212), { sku, size: 55 }), , ];
+  const items1 = [callback(importDefault(8256), { sku, size: 55 }), , ];
   obj1 = { style: tmp.text };
   let tmp7Result = null != getOrFetchApplication;
   if (tmp7Result) {

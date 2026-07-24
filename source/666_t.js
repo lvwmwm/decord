@@ -1,5 +1,5 @@
 // Module ID: 666
-// Function ID: 8051
+// Function ID: 8052
 // Name: t
 // Dependencies: []
 
@@ -312,12 +312,12 @@ let fn = function t() {
     }
     name() {
       tmp = rgb2hex$2(this._rgb, "rgb");
-      keys = Object.keys(f8126);
+      keys = Object.keys(f8127);
       num = 0;
       if (0 < keys.length) {
         str = keys[num];
-        tmp2 = f8126;
-        while (f8126[str] !== tmp) {
+        tmp2 = f8127;
+        while (f8127[str] !== tmp) {
           num = num + 1;
         }
         return str.toLowerCase();

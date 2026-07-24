@@ -1,10 +1,10 @@
-// Module ID: 9399
-// Function ID: 73259
+// Module ID: 9435
+// Function ID: 73468
 // Name: EmojiOptionsActionSheet
-// Dependencies: [31, 33, 5492, 3830, 4098, 5500, 5503, 5165, 4074, 1212, 2]
+// Dependencies: [31, 33, 5490, 3830, 4098, 5498, 5501, 5165, 4074, 1212, 2]
 // Exports: default
 
-// Module 9399 (EmojiOptionsActionSheet)
+// Module 9435 (EmojiOptionsActionSheet)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -28,6 +28,6 @@ export default function EmojiOptionsActionSheet(emojiSrc) {
   obj.label = intl.string(emojiSrc(1212).t.cIoudn);
   obj.onPress = callback;
   obj.children = jsx(emojiSrc(5165).TableRow, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
-  obj.children = jsx(emojiSrc(5503).TableRowGroup, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
-  return jsx(emojiSrc(5500).ActionSheet, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
+  obj.children = jsx(emojiSrc(5501).TableRowGroup, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
+  return jsx(emojiSrc(5498).ActionSheet, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
 };

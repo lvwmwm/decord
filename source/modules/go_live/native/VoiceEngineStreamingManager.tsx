@@ -1,7 +1,7 @@
 // Module ID: 4308
-// Function ID: 37699
+// Function ID: 37700
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 27, 4149, 1348, 1906, 653, 4155, 3, 4015, 3803, 686, 507, 4194, 4309, 4179, 44, 4323, 1450, 10689, 10638, 1212, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 27, 4149, 1348, 1906, 653, 4155, 3, 4015, 3803, 686, 507, 4194, 4309, 4179, 44, 4323, 1450, 10718, 10667, 1212, 4530, 2]
 
 // Module 4308 (_isNativeReflectConstruct)
 import _classPrivateFieldKey from "_classPrivateFieldKey";

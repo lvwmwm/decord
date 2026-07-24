@@ -1,5 +1,5 @@
 // Module ID: 1009
-// Function ID: 11016
+// Function ID: 11017
 // Name: addClsInstrumentationHandler
 // Dependencies: [1010, 1034, 1040, 1035, 1041, 1042, 1043, 1044, 1045, 1039, 1046]
 

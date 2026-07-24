@@ -1,10 +1,10 @@
-// Module ID: 13807
-// Function ID: 105786
+// Module ID: 13858
+// Function ID: 106110
 // Name: formatGiftDate
-// Dependencies: [1212, 3355, 5618, 2198, 2]
+// Dependencies: [1212, 3355, 5616, 2198, 2]
 // Exports: getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 13807 (formatGiftDate)
+// Module 13858 (formatGiftDate)
 function formatGiftDate(offeredAt) {
   const dateTimeFormat = new Intl.DateTimeFormat(require(1212) /* getSystemLocale */.intl.currentLocale, { month: "short", day: "numeric" });
   return dateTimeFormat.format(require(3355).parseISO(offeredAt));
@@ -23,7 +23,7 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
   ({ price, gifterName, offeredAt, claimedAt } = claimed);
   let formatPriceResult = null;
   if (null != price) {
-    let obj = require(5618) /* formatSingleCurrencyPrice */;
+    let obj = require(5616) /* formatSingleCurrencyPrice */;
     formatPriceResult = obj.formatPrice(price.amount, price.currency);
   }
   if (null != formatPriceResult) {

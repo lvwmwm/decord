@@ -1,9 +1,9 @@
-// Module ID: 11462
-// Function ID: 89283
+// Module ID: 11492
+// Function ID: 89528
 // Name: ChatInputCharCounter
-// Dependencies: [57, 31, 1849, 653, 1851, 33, 4130, 566, 3776, 7934, 7941, 3831, 1212, 4660, 4126, 7871, 2]
+// Dependencies: [57, 31, 1849, 653, 1851, 33, 4130, 566, 3776, 8021, 8028, 3831, 1212, 4660, 4126, 7486, 2]
 
-// Module 11462 (ChatInputCharCounter)
+// Module 11492 (ChatInputCharCounter)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,7 +25,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const tmp3 = callback(importAllResult.useState(0), 2);
   const first = tmp3[0];
   const dependencyMap = tmp3[1];
-  const tmp5 = stateFromStores(7934)();
+  const tmp5 = stateFromStores(8021)();
   callback = tmp5;
   const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
     onMessageLengthChanged(length) {
@@ -41,7 +41,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
     obj.children = "-" + first;
     const items2 = [callback2(analyticsLocations(4126).Text, obj), ];
     let obj1 = { size: "sm" };
-    items2[1] = callback2(analyticsLocations(7871).NitroWheelIcon, obj1);
+    items2[1] = callback2(analyticsLocations(7486).NitroWheelIcon, obj1);
     obj.children = items2;
     tmp8 = callback3(analyticsLocations(4660).PressableOpacity, obj);
   }

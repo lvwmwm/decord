@@ -1,10 +1,10 @@
-// Module ID: 11186
-// Function ID: 86949
+// Module ID: 11216
+// Function ID: 87218
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 1838, 11165, 566, 7929, 11187, 11158, 2]
+// Dependencies: [31, 1838, 11195, 566, 8016, 11217, 11188, 2]
 // Exports: useBannerBots
 
-// Module 11186 (_createForOfIteratorHelperLoose)
+// Module 11216 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -117,7 +117,7 @@ export const useBannerBots = function useBannerBots(context) {
       return map;
     }, items);
   })({ context });
-  let obj1 = first1(11187);
+  let obj1 = first1(11217);
   obj = { context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true };
   let apps = obj1.useApplicationsInContext(obj).apps;
   const obj4 = (function useCommandsMap(context) {
@@ -165,8 +165,8 @@ export const useBannerBots = function useBannerBots(context) {
   }
   obj.guildId = guild_id;
   obj.fetchesShelf = true;
-  const activityApplications = first1(11158).useActivityApplications(obj);
-  const obj5 = first1(11158);
+  const activityApplications = first1(11188).useActivityApplications(obj);
+  const obj5 = first1(11188);
   let items = [_isNativeReflectConstruct];
   const stateFromStores = first1(566).useStateFromStores(items, () => outer1_4.getRecentApplicationCommandMetadata());
   let value = null;

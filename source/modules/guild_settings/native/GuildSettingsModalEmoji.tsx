@@ -1,10 +1,10 @@
-// Module ID: 16251
-// Function ID: 126532
+// Module ID: 16298
+// Function ID: 126856
 // Name: computeSectionItem
-// Dependencies: [57, 31, 27, 1838, 16252, 33, 22, 9391, 4130, 689, 1212, 4996, 4022, 566, 8402, 4126, 16254, 16258, 1273, 16259, 5586, 5448, 1456, 5087, 2]
+// Dependencies: [57, 31, 27, 1838, 16299, 33, 22, 9427, 4130, 689, 1212, 4996, 4022, 566, 8446, 4126, 16301, 16305, 1273, 16306, 5584, 5448, 1456, 5087, 2]
 // Exports: default
 
-// Module 16251 (computeSectionItem)
+// Module 16298 (computeSectionItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

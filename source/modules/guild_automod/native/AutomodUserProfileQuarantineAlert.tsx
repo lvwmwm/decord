@@ -1,10 +1,10 @@
-// Module ID: 11014
-// Function ID: 85686
+// Module ID: 11041
+// Function ID: 85875
 // Name: ChatBlockedAlert
-// Dependencies: [57, 29, 31, 27, 1194, 1917, 1838, 11007, 653, 3746, 33, 4130, 689, 4561, 1212, 1273, 11015, 4126, 11016, 5796, 624, 3764, 4559, 675, 2]
+// Dependencies: [57, 29, 31, 27, 1194, 1917, 1838, 11034, 653, 3746, 33, 4130, 689, 4561, 1212, 1273, 11042, 4126, 11043, 5796, 624, 3764, 4559, 675, 2]
 // Exports: default
 
-// Module 11014 (ChatBlockedAlert)
+// Module 11041 (ChatBlockedAlert)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "result";
@@ -44,7 +44,7 @@ function ChatBlockedAlert(arg0) {
   obj["confirmText"] = buttonCta;
   obj["onConfirm"] = onConfirm;
   obj = { style: tmp2.body };
-  obj = { source: importDefault(11015), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
+  obj = { source: importDefault(11042), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
   const items = [callback3(require(1273) /* Button */.Icon, obj), , ];
   const obj1 = { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title };
   items[1] = callback3(require(4126) /* Text */.Text, obj1);
@@ -66,7 +66,7 @@ function PerServerProfileAlert(arg0) {
     const intl = _require(1212).intl;
     stringResult = intl.string(_require(1212).t.TBeZmG);
   }
-  let obj = _require(11016);
+  let obj = _require(11043);
   const tmp7 = callback(obj.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   _require = tmp7[0];
   if (!tmp7[1]) {

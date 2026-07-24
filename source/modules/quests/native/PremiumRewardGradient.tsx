@@ -1,10 +1,10 @@
-// Module ID: 14059
-// Function ID: 108125
+// Module ID: 14109
+// Function ID: 108448
 // Name: useGradientColors
 // Dependencies: [31, 27, 33, 4130, 3974, 689, 3834, 4066, 3945, 4554, 5109, 2]
 // Exports: default
 
-// Module 14059 (useGradientColors)
+// Module 14109 (useGradientColors)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

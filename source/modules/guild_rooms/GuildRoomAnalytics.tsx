@@ -1,16 +1,16 @@
-// Module ID: 16053
-// Function ID: 124385
+// Module ID: 16100
+// Function ID: 124708
 // Name: resolveGuildId
-// Dependencies: [1194, 1348, 4202, 4146, 16049, 16054, 653, 4324, 2]
+// Dependencies: [1194, 1348, 4202, 4146, 16096, 16101, 653, 4324, 2]
 // Exports: trackGuildRoomInteracted, trackGuildRoomLayoutToggled, trackGuildRoomObjectInteracted, trackGuildRoomOpened, trackGuildRoomSeatSelected, trackGuildRoomUserConnected, trackGuildRoomUserDisconnected, trackGuildRoomUserInteracted, trackGuildRoomUserUpdated
 
-// Module 16053 (resolveGuildId)
+// Module 16100 (resolveGuildId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
-import { getSeatName } from "items";
+import { getSeatName } from "getName";
 import { AnalyticEvents } from "ME";
 
 function resolveGuildId(channelId, guildId) {

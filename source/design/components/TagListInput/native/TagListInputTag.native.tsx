@@ -1,10 +1,10 @@
-// Module ID: 8428
-// Function ID: 67161
+// Module ID: 8472
+// Function ID: 67389
 // Name: TagListInputTagComponent
-// Dependencies: [31, 27, 33, 4130, 689, 1324, 1212, 8429, 4660, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1324, 1212, 8473, 4660, 4126, 2]
 // Exports: TagListInputTagComponent
 
-// Module 8428 (TagListInputTagComponent)
+// Module 8472 (TagListInputTagComponent)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -73,7 +73,7 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
   const intl = require(1212) /* getSystemLocale */.intl;
   let obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = importDefault(8429)(() => callback("remove"), formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = importDefault(8473)(() => callback("remove"), formatToPlainStringResult));
   obj = {};
   const items = [tmp.tagWrapper, , , ];
   let prop;

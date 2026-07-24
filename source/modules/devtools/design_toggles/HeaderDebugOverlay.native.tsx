@@ -1,5 +1,5 @@
 // Module ID: 5088
-// Function ID: 44313
+// Function ID: 44318
 // Name: useHeaderDebugOverlay
 // Dependencies: [31, 27, 33, 4130, 689, 5089, 4126, 2]
 // Exports: default

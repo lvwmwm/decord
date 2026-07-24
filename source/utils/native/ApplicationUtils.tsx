@@ -1,10 +1,10 @@
-// Module ID: 10832
-// Function ID: 84089
+// Module ID: 10861
+// Function ID: 84281
 // Name: openOAuth2Modal
-// Dependencies: [653, 10621, 675, 8336, 3827, 10833, 483, 4337, 9995, 1934, 8310, 2]
+// Dependencies: [653, 10650, 675, 8380, 3827, 10862, 483, 4337, 10027, 1934, 8354, 2]
 // Exports: installApplication, installPrivateChannelIntegration
 
-// Module 10832 (openOAuth2Modal)
+// Module 10861 (openOAuth2Modal)
 import { AnalyticEvents } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
@@ -21,7 +21,7 @@ function openOAuth2Modal(arg0) {
     }
     outer1_1(outer1_3[7]).popWithKey(outer1_5);
   };
-  obj2.pushLazy(_require(1934)(9995, dependencyMap.paths), obj, closure_5);
+  obj2.pushLazy(_require(1934)(10027, dependencyMap.paths), obj, closure_5);
 }
 const result = require("expandLocation").fileFinishedImporting("utils/native/ApplicationUtils.tsx");
 
@@ -47,7 +47,7 @@ export const installApplication = function installApplication(arg0) {
           outer1_1(outer1_3[4]).openURL(customInstallUrl);
         }
     };
-    return customInstallUrl(8336).handleClick(obj);
+    return customInstallUrl(8380).handleClick(obj);
   } else {
     if (null != integrationTypesConfig) {
       const _Object = Object;
@@ -128,7 +128,7 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
   ({ applicationId, channelId, callback } = arg0);
   let obj = importDefault(4337);
   obj = { clientId: applicationId };
-  const items = [require(8310) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
+  const items = [require(8354) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
   obj.scopes = items;
   obj.channelId = channelId;
   obj.dismissOAuthModal = function dismissOAuthModal() {
@@ -136,5 +136,5 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
   };
   obj.disableGuildSelect = true;
   obj.callback = callback;
-  obj.pushLazy(require(1934) /* maybeLoadBundle */(9995, dependencyMap.paths), obj, closure_5);
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(10027, dependencyMap.paths), obj, closure_5);
 };

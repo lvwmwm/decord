@@ -1,10 +1,10 @@
-// Module ID: 14962
-// Function ID: 114022
+// Module ID: 15009
+// Function ID: 114343
 // Name: MessagesEmptyState
-// Dependencies: [57, 31, 27, 33, 4130, 1450, 1456, 8559, 480, 4663, 13999, 14959, 4126, 1212, 4543, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 1450, 1456, 8604, 480, 4663, 14049, 15006, 4126, 1212, 4543, 2]
 // Exports: default
 
-// Module 14962 (MessagesEmptyState)
+// Module 15009 (MessagesEmptyState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -38,14 +38,14 @@ export default function MessagesEmptyState() {
     navigation.navigate("friends", { screen: "add-friends", params: { sourcePage: "Messages Empty State", presentation: "card" } });
   }, items);
   obj = { type: _require(480).ImpressionTypes.VIEW, name: _require(480).ImpressionNames.MESSAGES_EMPTY_NUX };
-  navigation(8559)(obj);
+  navigation(8604)(obj);
   if (first > 0) {
     width = first;
   }
   const result = 0.9 * width;
   let obj2 = _require(4663);
   const isScreenLandscape = obj2.useIsScreenLandscape();
-  _require(13999);
+  _require(14049);
   obj = { alwaysBounceVertical: false, bounces: false };
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp15;
@@ -58,7 +58,7 @@ export default function MessagesEmptyState() {
   obj2 = { style: tmp.container, onLayout: callback };
   const obj3 = { style: tmp.innerContainer };
   const obj4 = { style: tmp.imageContainer };
-  const obj5 = { resizeMode: "contain", source: navigation(14959) };
+  const obj5 = { resizeMode: "contain", source: navigation(15006) };
   const obj6 = {};
   let num = 350;
   if (result < 622) {

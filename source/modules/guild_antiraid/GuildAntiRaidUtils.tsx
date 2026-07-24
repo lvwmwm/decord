@@ -1,10 +1,10 @@
-// Module ID: 7702
-// Function ID: 61421
+// Module ID: 7791
+// Function ID: 61707
 // Name: hasDetectedRaid
-// Dependencies: [7703, 3712, 7704, 1212, 2]
+// Dependencies: [7792, 3712, 7793, 1212, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 7702 (hasDetectedRaid)
+// Module 7791 (hasDetectedRaid)
 import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY";
 
 let closure_3;
@@ -54,27 +54,27 @@ export const hasDetectedDMRaid = function hasDetectedDMRaid(dmSpamDetectedAt) {
 };
 export const getIncidentAlertType = function getIncidentAlertType(guildIncident) {
   if (null != guildIncident) {
-    const GuildIncidentAlertTypes = require(7704) /* GuildIncidentActionSources */.GuildIncidentAlertTypes;
+    const GuildIncidentAlertTypes = require(7793) /* GuildIncidentActionSources */.GuildIncidentAlertTypes;
     const tmp2 = hasDetectedRaid(guildIncident);
   }
 };
 export const getEnabledInterventions = function getEnabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (pauseInvites) {
-    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(require(7793) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (pauseDms) {
-    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(require(7793) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };
 export const getDisabledInterventions = function getDisabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (!pauseInvites) {
-    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(require(7793) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (!pauseDms) {
-    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(require(7793) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };

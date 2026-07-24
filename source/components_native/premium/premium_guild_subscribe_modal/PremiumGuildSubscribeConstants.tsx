@@ -1,5 +1,5 @@
 // Module ID: 4968
-// Function ID: 42691
+// Function ID: 42695
 // Name: PremiumGuildSubscribeModalScenes
 // Dependencies: [2]
 

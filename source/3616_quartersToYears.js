@@ -1,5 +1,5 @@
 // Module ID: 3616
-// Function ID: 27850
+// Function ID: 27851
 // Name: quartersToYears
 // Dependencies: [3210, 3388]
 // Exports: default

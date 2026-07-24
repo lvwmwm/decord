@@ -1,5 +1,5 @@
 // Module ID: 4475
-// Function ID: 39534
+// Function ID: 39535
 // Name: getAlertModalItemKey
 // Dependencies: [5, 57, 830, 31, 27, 482, 33, 4130, 689, 4476, 4472, 3991, 1820, 4477, 4524, 682, 4531, 1212, 3849, 1557, 4539, 1450, 4540, 4541, 4126, 4542, 4543, 2]
 // Exports: showConfirmModal, useDismissModalCallback
@@ -203,7 +203,7 @@ class AlertModal {
         return obj;
       }
     }
-    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3991").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39566, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
+    obj = { sharedVisible: tmp9, sharedTransitionState: first, TransitionStates: require("_createForOfIteratorHelperLoose").TransitionStates, runOnJS: require("module_3991").runOnJS, cleanUp: context, windowHeight: height, ALERT_MODAL_MARGIN: 16, safeAreaTop: top, safeAreaBottom: bottom, withAlertModalSpring: f39567, sharedIndex: sharedValue, sharedTopHeight: context2, useReducedMotion: enabled };
     B.__closure = obj;
     B.__workletHash = 655123755546;
     B.__initData = memo;
@@ -391,8 +391,8 @@ let closure_20 = { code: "function AlertModalNativeTsx1(){const{withAlertModalSp
 let closure_21 = { code: "function AlertModalNativeTsx2(){const{sharedVisible,sharedTransitionState,TransitionStates,runOnJS,cleanUp,windowHeight,ALERT_MODAL_MARGIN,safeAreaTop,safeAreaBottom,withAlertModalSpring,sharedIndex,sharedTopHeight,useReducedMotion}=this.__closure;var _CARD_OFFSETS$sharedI;function onComplete(finished){if(finished===true&&sharedVisible.get()===0&&sharedTransitionState.get()===TransitionStates.YEETED){runOnJS(cleanUp)();}}const CARD_OFFSETS=[0,-20,-34];const maxHeight=windowHeight-ALERT_MODAL_MARGIN*2-Math.max(safeAreaTop,safeAreaBottom)*2;return{position:'absolute',opacity:withAlertModalSpring(sharedVisible.get(),onComplete),zIndex:10-sharedIndex.get(),height:sharedIndex.get()>0?sharedTopHeight.get():'auto',maxHeight:maxHeight,transform:useReducedMotion?[]:[{scale:withAlertModalSpring(sharedVisible.get()===1?1-sharedIndex.get()*0.1:0.7)},{translateY:withAlertModalSpring(sharedVisible.get()===1?(_CARD_OFFSETS$sharedI=CARD_OFFSETS[sharedIndex.get()])!==null&&_CARD_OFFSETS$sharedI!==void 0?_CARD_OFFSETS$sharedI:sharedVisible.get()*-12:50-sharedIndex.get()*50)}]};}" };
 let closure_22 = { code: "function withAlertModalSpring_AlertModalNativeTsx3(value,callback){const{withSpring,MODAL_SPRING}=this.__closure;return withSpring(value,MODAL_SPRING,'animate-always',callback);}" };
 let closure_23 = (() => {
-  function withAlertModalSpring(targetHeight, fn) {
-    return outer1_0(outer1_2[25]).withSpring(targetHeight, outer1_14, "animate-always", fn);
+  function withAlertModalSpring(value, fn) {
+    return outer1_0(outer1_2[25]).withSpring(value, outer1_14, "animate-always", fn);
   }
   withAlertModalSpring.__closure = { withSpring: require(4542) /* withSpring */.withSpring, MODAL_SPRING: closure_14 };
   withAlertModalSpring.__workletHash = 15556562210180;

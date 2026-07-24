@@ -1,5 +1,5 @@
 // Module ID: 4493
-// Function ID: 39650
+// Function ID: 39651
 // Name: ScreenStackHeaderSubview
 // Dependencies: [29, 65, 31, 27, 33, 4494, 4490, 4495, 4496, 4491, 4497]
 // Exports: ScreenStackHeaderBackButtonImage, ScreenStackHeaderCenterView, ScreenStackHeaderLeftView, ScreenStackHeaderRightView, ScreenStackHeaderSearchBarView

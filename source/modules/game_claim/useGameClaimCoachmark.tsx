@@ -1,10 +1,10 @@
-// Module ID: 15085
-// Function ID: 114787
+// Module ID: 15132
+// Function ID: 115108
 // Name: useCanShowGameClaimCoachmark
-// Dependencies: [3758, 653, 15086, 566, 15020, 2]
+// Dependencies: [3758, 653, 15133, 566, 15067, 2]
 // Exports: useCanShowGameClaimCoachmark
 
-// Module 15085 (useCanShowGameClaimCoachmark)
+// Module 15132 (useCanShowGameClaimCoachmark)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 
@@ -13,8 +13,8 @@ const result = require("items").fileFinishedImporting("modules/game_claim/useGam
 
 export const useCanShowGameClaimCoachmark = function useCanShowGameClaimCoachmark(id) {
   const _require = id;
-  let gameClaimCoachmarkEnabled = _require(15086).useGameClaimCoachmarkEnabled(id, "useCanShowGameClaimCoachmark");
-  const obj = _require(15086);
+  let gameClaimCoachmarkEnabled = _require(15133).useGameClaimCoachmarkEnabled(id, "useCanShowGameClaimCoachmark");
+  const obj = _require(15133);
   const items = [_isNativeReflectConstruct];
   const items1 = [id];
   if (gameClaimCoachmarkEnabled) {

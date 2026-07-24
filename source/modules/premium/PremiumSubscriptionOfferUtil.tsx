@@ -1,10 +1,10 @@
-// Module ID: 7425
-// Function ID: 59665
+// Module ID: 7833
+// Function ID: 61824
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 3782, 1851, 6686, 7426, 7127, 566, 3712, 7128, 7374, 1881, 7427, 2]
+// Dependencies: [57, 31, 3782, 1851, 6686, 7834, 7126, 566, 3712, 7127, 7374, 1881, 7835, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 7425 (_createForOfIteratorHelperLoose)
+// Module 7833 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -127,13 +127,13 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export const useIsInPremiumOfferExperience = function useIsInPremiumOfferExperience() {
   const premiumTrialOffer = require(6686) /* useGetTrialOffer */.usePremiumTrialOffer();
   const obj = require(6686) /* useGetTrialOffer */;
-  const hasActiveTrial = require(7426) /* useHasActiveTrial */.useHasActiveTrial();
-  const obj2 = require(7426) /* useHasActiveTrial */;
-  const premiumDiscountOffer = require(7127) /* useGetDiscountOffer */.usePremiumDiscountOffer();
-  const obj3 = require(7127) /* useGetDiscountOffer */;
-  const premiumGroupDiscountOffer = require(7127) /* useGetDiscountOffer */.usePremiumGroupDiscountOffer();
+  const hasActiveTrial = require(7834) /* useHasActiveTrial */.useHasActiveTrial();
+  const obj2 = require(7834) /* useHasActiveTrial */;
+  const premiumDiscountOffer = require(7126) /* useGetDiscountOffer */.usePremiumDiscountOffer();
+  const obj3 = require(7126) /* useGetDiscountOffer */;
+  const premiumGroupDiscountOffer = require(7126) /* useGetDiscountOffer */.usePremiumGroupDiscountOffer();
   let tmp6 = null != premiumTrialOffer;
-  const obj4 = require(7127) /* useGetDiscountOffer */;
+  const obj4 = require(7126) /* useGetDiscountOffer */;
   if (!tmp6) {
     tmp6 = hasActiveTrial;
   }
@@ -208,8 +208,8 @@ export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscount
     callback(true);
     tmp7(false);
   }
-  const tmp = importDefault(7128)(closure_10);
-  let tmp2 = importDefault(7128)(closure_11);
+  const tmp = importDefault(7127)(closure_10);
+  let tmp2 = importDefault(7127)(closure_11);
   [tmp4, require] = onFetchComplete(React.useState(false), 2);
   const tmp3 = onFetchComplete(React.useState(false), 2);
   [tmp6, tmp7] = onFetchComplete(React.useState(false), 2);
@@ -305,5 +305,5 @@ export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDisco
   return null;
 };
 export const useIsNUXEligible = function useIsNUXEligible() {
-  return require(7427) /* useIsInReverseTrial */.useIsInReverseTrial();
+  return require(7835) /* useIsInReverseTrial */.useIsInReverseTrial();
 };

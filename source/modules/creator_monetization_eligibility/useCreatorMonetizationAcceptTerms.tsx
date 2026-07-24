@@ -1,10 +1,10 @@
-// Module ID: 16379
-// Function ID: 127789
+// Module ID: 16426
+// Function ID: 128113
 // Name: useCreateCreatorMonetizationAcceptTermsRequest
-// Dependencies: [5, 57, 31, 1391, 1838, 1849, 566, 5642, 16380, 4030, 2]
+// Dependencies: [5, 57, 31, 1391, 1838, 1849, 566, 5642, 16427, 4030, 2]
 // Exports: default
 
-// Module 16379 (useCreateCreatorMonetizationAcceptTermsRequest)
+// Module 16426 (useCreateCreatorMonetizationAcceptTermsRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

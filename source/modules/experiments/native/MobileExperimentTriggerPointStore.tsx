@@ -1,9 +1,9 @@
-// Module ID: 12619
-// Function ID: 97981
+// Module ID: 12670
+// Function ID: 98302
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 12620, 686, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 12671, 686, 566, 2]
 
-// Module 12619 (_isNativeReflectConstruct)
+// Module 12670 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import commonTriggerPointConfiguration from "commonTriggerPointConfiguration";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -23,7 +23,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleConnectionOpen() {
-  const MobileConnectionOpenTriggerPoint = require(12620) /* commonTriggerPointConfiguration */.MobileConnectionOpenTriggerPoint;
+  const MobileConnectionOpenTriggerPoint = require(12671) /* commonTriggerPointConfiguration */.MobileConnectionOpenTriggerPoint;
   MobileConnectionOpenTriggerPoint.trigger();
 }
 let tmp2 = ((Store) => {

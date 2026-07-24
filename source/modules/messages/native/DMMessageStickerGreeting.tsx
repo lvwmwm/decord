@@ -1,10 +1,10 @@
-// Module ID: 11368
-// Function ID: 88385
+// Module ID: 11397
+// Function ID: 88625
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 57, 31, 27, 5035, 4349, 1849, 33, 4130, 689, 3941, 3834, 3974, 3831, 11369, 11370, 6691, 1212, 566, 663, 3969, 11371, 9601, 3991, 4131, 1273, 9600, 4554, 4660, 9615, 4126, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 5035, 4349, 1849, 33, 4130, 689, 3941, 3834, 3974, 3831, 11398, 11399, 6691, 1212, 566, 663, 3969, 11400, 9637, 3991, 4131, 1273, 9636, 4554, 4660, 9651, 4126, 4543, 2]
 // Exports: default
 
-// Module 11368 (DMMessageStickerGreeting)
+// Module 11397 (DMMessageStickerGreeting)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";

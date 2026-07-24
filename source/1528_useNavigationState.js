@@ -1,5 +1,5 @@
 // Module ID: 1528
-// Function ID: 17493
+// Function ID: 17494
 // Name: useNavigationState
 // Dependencies: [57, 31, 1508]
 // Exports: default

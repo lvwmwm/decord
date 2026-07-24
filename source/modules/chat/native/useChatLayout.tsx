@@ -1,5 +1,5 @@
 // Module ID: 3984
-// Function ID: 33082
+// Function ID: 33083
 // Name: useChatLayout
 // Dependencies: [31, 3985, 2]
 // Exports: default, getChatLayout

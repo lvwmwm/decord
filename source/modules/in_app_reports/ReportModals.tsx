@@ -1,10 +1,10 @@
-// Module ID: 7600
-// Function ID: 60855
+// Module ID: 7689
+// Function ID: 61141
 // Name: _submitHamReportForFirstDM
-// Dependencies: [5, 1353, 3768, 1857, 653, 7601, 7602, 7604, 1387, 4324, 2]
+// Dependencies: [5, 1353, 3768, 1857, 653, 7690, 7691, 7693, 1387, 4324, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 7600 (_submitHamReportForFirstDM)
+// Module 7689 (_submitHamReportForFirstDM)
 import ReportNames from "ReportNames";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -38,49 +38,49 @@ let result = require("_callSuper").fileFinishedImporting("modules/in_app_reports
 
 export const showReportModalForGuild = function showReportModalForGuild(guild) {
   let obj = { guild_id: guild.id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.GUILD, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.GUILD, record: guild };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.GUILD, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.GUILD, record: guild };
   obj = { onSubmit: arg1 };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
 };
 export const showReportModalForGuildDirectoryEntry = function showReportModalForGuildDirectoryEntry(entry) {
   let obj = { channel_id: entry.channelId, guild_id: entry.guildId };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY, record: entry };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY, record: entry };
   obj = { onSubmit: arg1 };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
 };
 export const showReportModalForMessage = function showReportModalForMessage(message, mobile_media_message_preview_action_sheet) {
   let obj = { message_id: message.id, channel_id: message.channel_id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.MESSAGE, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.MESSAGE, record: message };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.MESSAGE, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.MESSAGE, record: message };
   obj = { onSubmit: arg2 };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
 };
 export const showStaffTestReportModalForMessage = function showStaffTestReportModalForMessage(id, arg1, onSubmit) {
   let obj = { message_id: id.id, channel_id: id.channel_id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.MESSAGE, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.MESSAGE, record: id };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.MESSAGE, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.MESSAGE, record: id };
   obj = { onSubmit };
-  require(7602) /* _showReportModal */.showReportModal(obj, { variant: "staff" }, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, { variant: "staff" }, obj);
 };
 export const showStaffTestReportModalForGuild = function showStaffTestReportModalForGuild(guild_id, arg1, onSubmit) {
   let obj = { guild_id: guild_id.id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.GUILD, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.GUILD, record: guild_id };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.GUILD, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.GUILD, record: guild_id };
   obj = { onSubmit };
-  require(7602) /* _showReportModal */.showReportModal(obj, { variant: "staff" }, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, { variant: "staff" }, obj);
 };
 export const showReportModalForStageChannel = function showReportModalForStageChannel(channel) {
   stageInstanceByChannel = stageInstanceByChannel.getStageInstanceByChannel(channel.id);
   if (null != stageInstanceByChannel) {
     let obj = {};
     ({ id: obj.stage_instance_id, channel_id: obj.channel_id, guild_id: obj.guild_id } = stageInstanceByChannel);
-    trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.STAGE_CHANNEL, obj);
-    obj = { name: require(7601) /* ReportNames */.ReportNames.STAGE_CHANNEL, record: stageInstanceByChannel };
+    trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.STAGE_CHANNEL, obj);
+    obj = { name: require(7690) /* ReportNames */.ReportNames.STAGE_CHANNEL, record: stageInstanceByChannel };
     obj = { onSubmit: arg1 };
-    require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
-    const obj2 = require(7602) /* _showReportModal */;
+    require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
+    const obj2 = require(7691) /* _showReportModal */;
   }
 };
 export const showReportModalForGuildScheduledEvent = function showReportModalForGuildScheduledEvent(closure_0) {
@@ -91,63 +91,63 @@ export const showReportModalForGuildScheduledEvent = function showReportModalFor
     tmp2 = channel_id;
   }
   obj.channel_id = tmp2;
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT, record: closure_0 };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT, record: closure_0 };
   obj = { onSubmit: arg1 };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
 };
 export const showReportModalForFirstDM = function showReportModalForFirstDM(message, onSubmit) {
   let obj = { message_id: message.id, channel_id: message.channel_id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.FIRST_DM, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.FIRST_DM, record: message };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.FIRST_DM, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.FIRST_DM, record: message };
   obj = { onSubmit, isEligibleForFeedback: false };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
 };
 export const submitHamReportForFirstDM = function submitHamReportForFirstDM(closure_1) {
   return _submitHamReportForFirstDM(...arguments);
 };
 export const showReportModalForUser = function showReportModalForUser(closure_0, closure_1, closure_2, ReportNames) {
   let obj = { reported_user_id: closure_0.id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.USER, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.USER, record: closure_0, contextualGuildId: closure_1 };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.USER, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.USER, record: closure_0, contextualGuildId: closure_1 };
   obj = { onSubmit: closure_2, appContext: ReportNames };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
 };
 export const showStaffTestReportModalForUser = function showStaffTestReportModalForUser(id, contextualGuildId, onSubmit, appContext) {
   let obj = { reported_user_id: id.id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.USER, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.USER, record: id, contextualGuildId };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.USER, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.USER, record: id, contextualGuildId };
   obj = { onSubmit, isEligibleForFeedback: false, appContext };
-  require(7602) /* _showReportModal */.showReportModal(obj, { variant: "staff" }, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, { variant: "staff" }, obj);
 };
 export const showUnauthenticatedReportModalForUser = function showUnauthenticatedReportModalForUser(emailToken, onClose) {
   const tmp = new closure_6({});
   let obj = { reported_user_id: tmp.id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.UnauthenticatedReportNames.USER, obj);
-  obj = { name: require(7601) /* ReportNames */.UnauthenticatedReportNames.USER, record: tmp };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.UnauthenticatedReportNames.USER, obj);
+  obj = { name: require(7690) /* ReportNames */.UnauthenticatedReportNames.USER, record: tmp };
   obj = { onClose, isEligibleForFeedback: false, isAuthenticated: false, emailToken };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj);
 };
 export const showUnauthenticatedReportModalForGuild = function showUnauthenticatedReportModalForGuild(emailToken, onClose) {
   let obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
   const result = obj.dangerouslyConstructGuildRecordFromUntypedObject({});
   obj = { guild_id: result.id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.UnauthenticatedReportNames.GUILD, obj);
-  obj = { name: require(7601) /* ReportNames */.UnauthenticatedReportNames.GUILD, record: result };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.UnauthenticatedReportNames.GUILD, obj);
+  obj = { name: require(7690) /* ReportNames */.UnauthenticatedReportNames.GUILD, record: result };
   const obj1 = { onClose, isEligibleForFeedback: false, isAuthenticated: false, emailToken };
-  require(7602) /* _showReportModal */.showReportModal(obj, {}, obj1);
+  require(7691) /* _showReportModal */.showReportModal(obj, {}, obj1);
 };
 export const showUnauthenticatedReportModalForTida = function showUnauthenticatedReportModalForTida(emailToken, onClose) {
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN, {});
-  let obj = require(7602) /* _showReportModal */;
-  obj = { name: require(7601) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN, {});
+  let obj = require(7691) /* _showReportModal */;
+  obj = { name: require(7690) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN };
   obj = { onClose, isEligibleForFeedback: false, isAuthenticated: false, emailToken };
   obj.showReportModal(obj, {}, obj);
 };
 export const showUnauthenticatedReportModalForMessage = function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.UnauthenticatedReportNames.MESSAGE, { message_id: undefined, channel_id: undefined });
-  let obj = require(7602) /* _showReportModal */;
-  obj = { name: require(7601) /* ReportNames */.UnauthenticatedReportNames.MESSAGE, record: new _callSuper({}) };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.UnauthenticatedReportNames.MESSAGE, { message_id: undefined, channel_id: undefined });
+  let obj = require(7691) /* _showReportModal */;
+  obj = { name: require(7690) /* ReportNames */.UnauthenticatedReportNames.MESSAGE, record: new _callSuper({}) };
   obj = { onClose, isEligibleForFeedback: false, isAuthenticated: false, emailToken };
   obj.showReportModal(obj, {}, obj);
 };
@@ -156,14 +156,14 @@ export const submitReportForInappropriateConversationSafetyAlert = function subm
 };
 export const showReportModalForInappropriateConversationSafetyAlert = function showReportModalForInappropriateConversationSafetyAlert(lastChannelMessage) {
   let obj = { message_id: lastChannelMessage.id, channel_id: lastChannelMessage.channel_id };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.MESSAGE, obj);
-  obj = { name: require(7601) /* ReportNames */.ReportNames.MESSAGE, record: lastChannelMessage };
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.MESSAGE, obj);
+  obj = { name: require(7690) /* ReportNames */.ReportNames.MESSAGE, record: lastChannelMessage };
   obj = { onSubmit: arg1 };
-  require(7602) /* _showReportModal */.showReportModal(obj, { variant: "safety_alerts_v1" }, obj);
+  require(7691) /* _showReportModal */.showReportModal(obj, { variant: "safety_alerts_v1" }, obj);
 };
 export const showReportModalForWidget = function showReportModalForWidget(closure_0, closure_1) {
-  let obj = require(7602) /* _showReportModal */;
-  obj = { name: require(7601) /* ReportNames */.ReportNames.WIDGET };
+  let obj = require(7691) /* _showReportModal */;
+  obj = { name: require(7690) /* ReportNames */.ReportNames.WIDGET };
   const id = closure_1.id;
   let str = "";
   if (null != id) {
@@ -188,13 +188,13 @@ export const showReportModalForApp = function showReportModalForApp(arg0) {
   obj = { application_id: application.id, location: entrypoint };
   obj.trackWithMetadata(AnalyticEvents.REPORT_APPLICATION_CLICKED, obj);
   obj = { application_id: application.id, guild_id: contextualGuildId, channel_id: contextualChannelId };
-  trackShowReportModalAnalytics(require(7601) /* ReportNames */.ReportNames.APPLICATION, obj);
-  const obj4 = require(7602) /* _showReportModal */;
-  obj4.showReportModal({ name: require(7601) /* ReportNames */.ReportNames.APPLICATION, record: application, contextualGuildId, contextualChannelId, entrypoint }, {}, { onSubmit, appContext });
+  trackShowReportModalAnalytics(require(7690) /* ReportNames */.ReportNames.APPLICATION, obj);
+  const obj4 = require(7691) /* _showReportModal */;
+  obj4.showReportModal({ name: require(7690) /* ReportNames */.ReportNames.APPLICATION, record: application, contextualGuildId, contextualChannelId, entrypoint }, {}, { onSubmit, appContext });
 };
 export const showReportToModMessageModal = function showReportToModMessageModal(message) {
-  let obj = require(7602) /* _showReportModal */;
-  obj = { name: require(7601) /* ReportNames */.ModeratorReportNames.MESSAGE, record: message };
+  let obj = require(7691) /* _showReportModal */;
+  obj = { name: require(7690) /* ReportNames */.ModeratorReportNames.MESSAGE, record: message };
   obj = { onSubmit: arg1, isEligibleForFeedback: false };
   obj.showReportModal(obj, {}, obj);
 };

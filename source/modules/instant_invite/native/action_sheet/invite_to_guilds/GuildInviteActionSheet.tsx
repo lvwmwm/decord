@@ -1,10 +1,10 @@
-// Module ID: 12139
-// Function ID: 95084
+// Module ID: 12166
+// Function ID: 95324
 // Name: EmptyGuildList
-// Dependencies: [57, 31, 27, 33, 4130, 689, 1273, 1212, 12140, 12141, 12137, 4126, 5160, 11637, 12142, 5186, 5187, 5772, 8483, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 1273, 1212, 12167, 12168, 12164, 4126, 5160, 11664, 12169, 5186, 5187, 5772, 8528, 2]
 // Exports: default
 
-// Module 12139 (EmptyGuildList)
+// Module 12166 (EmptyGuildList)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -20,8 +20,8 @@ function EmptyGuildList() {
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["2bfiLk"]);
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.body = intl2.string(require(1212) /* getSystemLocale */.t.V6nAfF);
-  obj.darkSource = importDefault(12140);
-  obj.lightSource = importDefault(12141);
+  obj.darkSource = importDefault(12167);
+  obj.lightSource = importDefault(12168);
   return callback2(require(1273) /* Button */.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
@@ -29,7 +29,7 @@ function GuildList(recipientId) {
   const source = recipientId.source;
   let callback;
   const dependencyMap = _createForOfIteratorHelperLoose();
-  let obj = recipientId(12137);
+  let obj = recipientId(12164);
   let tmp = callback(obj.useServerInviteRows(recipientId, recipientId.query), 2);
   const first = tmp[0];
   if (0 === first.length) {
@@ -77,7 +77,7 @@ function GuildList(recipientId) {
       return guild.guild.id;
     };
     obj.ListEmptyComponent = EmptyGuildList;
-    return closure_6(recipientId(11637).UserProfileStackedActionSheetSectionList, obj);
+    return closure_6(recipientId(11664).UserProfileStackedActionSheetSectionList, obj);
   }
   const obj1 = {};
   const intl = recipientId(1212).intl;
@@ -126,7 +126,7 @@ export default function GuildInviteActionSheet(arg0) {
   const items = [callback2(_require(5772).SearchField, obj1), ];
   const obj2 = { variant: "text-xs/medium", color: "text-subtle" };
   const intl3 = _require(1212).intl;
-  const obj3 = { xDays: importDefault(8483).INVITE_OPTIONS_7_DAYS.label };
+  const obj3 = { xDays: importDefault(8528).INVITE_OPTIONS_7_DAYS.label };
   obj2.children = intl3.format(_require(1212).t["4UyUHh"], obj3);
   items[1] = callback2(_require(4126).Text, obj2);
   obj.children = items;

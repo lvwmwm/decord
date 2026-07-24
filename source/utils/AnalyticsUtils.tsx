@@ -1,7 +1,7 @@
 // Module ID: 675
-// Function ID: 8286
+// Function ID: 8287
 // Name: expandLocation
-// Dependencies: [29, 31, 676, 683, 653, 13127, 4156, 1844, 674, 480, 13125, 1184, 686, 6917, 1212, 12, 491, 2, 13128]
+// Dependencies: [29, 31, 676, 683, 653, 13180, 4156, 1844, 674, 480, 13178, 1184, 686, 6916, 1212, 12, 491, 2, 13181]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
 // Module 675 (expandLocation)
@@ -43,7 +43,7 @@ function expandSource(source) {
   return obj;
 }
 function addBreadcrumb(message) {
-  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13125) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
+  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13178) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
   if (!IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(message)) {
     let obj = importDefault(1184);
     obj = { category: "analytics", message };
@@ -73,16 +73,16 @@ function expandEventProperties(arg0) {
     const merged3 = Object.assign(expandSource(tmp.source));
     tmp9 = obj;
   }
-  tmp9.client_performance_cpu = importDefault(6917).getCurrentCPUUsagePercent();
-  const obj4 = importDefault(6917);
-  tmp9.client_performance_memory = importDefault(6917).getCurrentMemoryUsageKB();
-  const obj5 = importDefault(6917);
-  tmp9.cpu_core_count = importDefault(6917).getCPUCoreCount();
+  tmp9.client_performance_cpu = importDefault(6916).getCurrentCPUUsagePercent();
+  const obj4 = importDefault(6916);
+  tmp9.client_performance_memory = importDefault(6916).getCurrentMemoryUsageKB();
+  const obj5 = importDefault(6916);
+  tmp9.cpu_core_count = importDefault(6916).getCPUCoreCount();
   tmp9.accessibility_features = getAccessibilityFeatures();
   tmp9.rendered_locale = obj(1212).intl.currentLocale;
   tmp9.uptime_app = Math.floor((performance.now() - closure_16) / c15);
-  const obj6 = importDefault(6917);
-  const processUptime = importDefault(6917).getProcessUptime();
+  const obj6 = importDefault(6916);
+  const processUptime = importDefault(6916).getProcessUptime();
   if (null != processUptime) {
     const _Math = Math;
     tmp9.uptime_process_renderer = Math.floor(processUptime);

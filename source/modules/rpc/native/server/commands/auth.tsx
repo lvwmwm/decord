@@ -1,8 +1,8 @@
-// Module ID: 13438
-// Function ID: 103351
-// Dependencies: [4167, 653, 10496, 7371, 1207, 13439, 2]
+// Module ID: 13491
+// Function ID: 103678
+// Dependencies: [4167, 653, 10525, 7371, 1207, 13492, 2]
 
-// Module 13438
+// Module 13491
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

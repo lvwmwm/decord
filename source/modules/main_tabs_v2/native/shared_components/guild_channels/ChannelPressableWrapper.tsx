@@ -1,10 +1,10 @@
-// Module ID: 15167
-// Function ID: 115487
+// Module ID: 15214
+// Function ID: 115809
 // Name: renderChannelPressableWrapper
-// Dependencies: [31, 27, 33, 10261, 2]
+// Dependencies: [31, 27, 33, 10290, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 15167 (renderChannelPressableWrapper)
+// Module 15214 (renderChannelPressableWrapper)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ export const renderChannelPressableWrapper = function renderChannelPressableWrap
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(10261) /* getLayoutStyles */;
+  let obj = require(10290) /* getLayoutStyles */;
   obj = {};
   const layout2 = obj.getLayoutStyles(layout, launchpad).layout;
   if (isThread) {

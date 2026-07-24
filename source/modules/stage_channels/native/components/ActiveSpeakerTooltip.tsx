@@ -1,8 +1,8 @@
-// Module ID: 10801
-// Function ID: 83847
-// Dependencies: [57, 31, 27, 4143, 10773, 653, 33, 4130, 689, 566, 4964, 4660, 9994, 4126, 1212, 2]
+// Module ID: 10830
+// Function ID: 84039
+// Dependencies: [57, 31, 27, 4143, 10802, 653, 33, 4130, 689, 566, 4964, 4660, 10026, 4126, 1212, 2]
 
-// Module 10801
+// Module 10830
 import _slicedToArray from "_slicedToArray";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -47,7 +47,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj = { style: tmp.participantItemContainer };
       const obj1 = { style: tmp.participantAvatarContainer };
       const obj2 = { namesStyle: tmp.participantAvatarText, users: first, withNames: true, channelId: channel.id, guildId: channel.getGuildId() };
-      obj1.children = callback3(importDefault(9994), obj2);
+      obj1.children = callback3(importDefault(10026), obj2);
       const items2 = [callback3(View, obj1), ];
       const obj3 = { style: tmp.participantNameplateContainer };
       const obj4 = { style: tmp.participantNameplateSpeakingText, variant: "text-xs/medium", color: "text-default" };
@@ -59,7 +59,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj.children = items2;
       obj.children = callback4(View, obj);
       tmp3 = callback3(channel(4660).PressableOpacity, obj);
-      const tmp10 = importDefault(9994);
+      const tmp10 = importDefault(10026);
     }
   }
   return tmp3;

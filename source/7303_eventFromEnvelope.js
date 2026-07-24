@@ -1,5 +1,5 @@
 // Module ID: 7303
-// Function ID: 58929
+// Function ID: 58958
 // Name: eventFromEnvelope
 // Dependencies: [65, 57, 5, 7280, 7283, 7290]
 // Exports: makeMultiplexedTransport
@@ -60,7 +60,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
                 const tmp = callback(arg0);
                 let closure_1 = tmp;
                 const obj = {};
-                callback = outer4_4(/* F58937 */ function*() { ... });
+                callback = outer4_4(/* F58966 */ function*() { ... });
                 obj.send = function send() { ... };
                 return Object.assign({}, tmp, obj);
               };
@@ -72,7 +72,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
                 const tmp = callback(arg0);
                 let closure_1 = tmp;
                 const obj = {};
-                callback = outer4_4(/* F58937 */ function*() { ... });
+                callback = outer4_4(/* F58966 */ function*() { ... });
                 obj.send = function send() { ... };
                 return Object.assign({}, tmp, obj);
               };

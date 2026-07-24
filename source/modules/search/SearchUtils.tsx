@@ -1,10 +1,10 @@
-// Module ID: 10078
-// Function ID: 77844
+// Module ID: 10110
+// Function ID: 78038
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1348, 1907, 4346, 3767, 1906, 1849, 9103, 653, 3712, 1212, 10079, 21, 10084, 22, 10085, 4320, 3969, 2]
+// Dependencies: [57, 1348, 1907, 4346, 3767, 1906, 1849, 9141, 653, 3712, 1212, 10111, 21, 10116, 22, 10117, 4320, 3969, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker
 
-// Module 10078 (_createForOfIteratorHelperLoose)
+// Module 10110 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -529,7 +529,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
   } else {
     if (obj9.isSearchFilterTokenType(currentToken.type)) {
       if (null != nextToken) {
-        if (nextToken.type !== importDefault(10084).NON_TOKEN_TYPE) {
+        if (nextToken.type !== importDefault(10116).NON_TOKEN_TYPE) {
           if (null != nextToken) {
             if (!regex.test(nextToken.type)) {
               const obj1 = { type: constants2.FILTER, filter: currentToken.type, token: null };
@@ -541,9 +541,9 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       let obj2 = { type: constants2.FILTER, filter: currentToken.type, token: nextToken };
       return obj2;
     }
-    if (currentToken.type === importDefault(10084).NON_TOKEN_TYPE) {
+    if (currentToken.type === importDefault(10116).NON_TOKEN_TYPE) {
       if (null != previousToken) {
-        obj2 = require(10079) /* getMonths */;
+        obj2 = require(10111) /* getMonths */;
         if (obj2.isSearchFilterTokenType(previousToken.type)) {
           const obj3 = { type: constants2.FILTER, filter: previousToken.type, token: currentToken };
           let obj4 = obj3;
@@ -552,11 +552,11 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp9;
-    if (currentToken.type === importDefault(10084).NON_TOKEN_TYPE) {
+    if (currentToken.type === importDefault(10116).NON_TOKEN_TYPE) {
       tmp9 = currentToken;
     }
     obj4 = { type: constants2.FILTER_ALL, filter: null, token: tmp9 };
-    obj9 = require(10079) /* getMonths */;
+    obj9 = require(10111) /* getMonths */;
   }
 };
 export { quoteChannelName };
@@ -642,24 +642,24 @@ export const filterHasAnswer = function filterHasAnswer(type, type2) {
   return !tmp2;
 };
 export const refreshSearchTokens = function refreshSearchTokens() {
-  const result = require(10079) /* getMonths */.rebuildSearchTokenConfigs();
+  const result = require(10111) /* getMonths */.rebuildSearchTokenConfigs();
   importDefaultResult1.reset();
-  const obj = require(10079) /* getMonths */;
+  const obj = require(10111) /* getMonths */;
   const tmp3 = importDefault(22);
-  importDefault(22)(importDefault(10079)).forOwn((arg0, type) => {
+  importDefault(22)(importDefault(10111)).forOwn((arg0, type) => {
     const merged = Object.assign(arg0);
     return outer1_17.addRule({ type });
   });
   importDefaultResult2.reset();
-  const tmp3Result = importDefault(22)(importDefault(10079));
-  const crossDMSearchTokensConfig = require(10079) /* getMonths */.buildCrossDMSearchTokensConfig();
-  const obj3 = require(10079) /* getMonths */;
+  const tmp3Result = importDefault(22)(importDefault(10111));
+  const crossDMSearchTokensConfig = require(10111) /* getMonths */.buildCrossDMSearchTokensConfig();
+  const obj3 = require(10111) /* getMonths */;
   importDefault(22)(crossDMSearchTokensConfig).forOwn((arg0, type) => {
     const merged = Object.assign(arg0);
     return outer1_18.addRule({ type });
   });
   const obj4 = importDefault(22)(crossDMSearchTokensConfig);
-  const result1 = importDefault(10085).markSearchTokensRefreshed();
+  const result1 = importDefault(10117).markSearchTokensRefreshed();
 };
 export const getChannelDisplayName = function getChannelDisplayName(isDM) {
   const channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(isDM, authStore, closure_7);

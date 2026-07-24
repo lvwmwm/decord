@@ -1,10 +1,10 @@
-// Module ID: 7926
-// Function ID: 63190
+// Module ID: 8013
+// Function ID: 63502
 // Name: resolveNsfwTogglesWithDefaults
-// Dependencies: [1849, 3803, 4347, 7927, 3809, 4956, 2]
+// Dependencies: [1849, 3803, 4347, 8014, 3809, 4956, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 7926 (resolveNsfwTogglesWithDefaults)
+// Module 8013 (resolveNsfwTogglesWithDefaults)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -32,8 +32,8 @@ export const useViewNsfwCommandsOrDefault = function useViewNsfwCommandsOrDefaul
   const setting = ViewNsfwCommands.useSetting();
   const isAgeVerified = require(4347) /* isReactiveCheckEnabled */.useIsAgeVerified();
   const obj = require(4347) /* isReactiveCheckEnabled */;
-  const nSFWAllowed = require(7927) /* useNSFWAllowed */.useNSFWAllowed();
-  const obj2 = require(7927) /* useNSFWAllowed */;
+  const nSFWAllowed = require(8014) /* useNSFWAllowed */.useNSFWAllowed();
+  const obj2 = require(8014) /* useNSFWAllowed */;
   return resolveNsfwTogglesWithDefaults(setting, require(3809) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE), nSFWAllowed, isAgeVerified);
 };
 export const useViewNsfwGuildsOrDefault = function useViewNsfwGuildsOrDefault() {
@@ -41,8 +41,8 @@ export const useViewNsfwGuildsOrDefault = function useViewNsfwGuildsOrDefault() 
   const setting = ViewNsfwGuilds.useSetting();
   const isAgeVerified = require(4347) /* isReactiveCheckEnabled */.useIsAgeVerified();
   const obj = require(4347) /* isReactiveCheckEnabled */;
-  const nSFWAllowed = require(7927) /* useNSFWAllowed */.useNSFWAllowed();
-  const obj2 = require(7927) /* useNSFWAllowed */;
+  const nSFWAllowed = require(8014) /* useNSFWAllowed */.useNSFWAllowed();
+  const obj2 = require(8014) /* useNSFWAllowed */;
   return resolveNsfwTogglesWithDefaults(setting, require(3809) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.COMMANDS_TOGGLE), nSFWAllowed, isAgeVerified);
 };
 export const getViewNsfwCommandsOrDefault = function getViewNsfwCommandsOrDefault() {

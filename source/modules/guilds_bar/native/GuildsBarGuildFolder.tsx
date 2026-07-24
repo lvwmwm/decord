@@ -1,9 +1,9 @@
-// Module ID: 14822
-// Function ID: 113106
+// Module ID: 14869
+// Function ID: 113427
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 6879, 1838, 3947, 4970, 14812, 14818, 14813, 33, 4130, 689, 3834, 566, 5515, 1324, 4542, 3974, 665, 7589, 3991, 4476, 4596, 7806, 5085, 14823, 14825, 11652, 14833, 4099, 5048, 5517, 14815, 14834, 2]
+// Dependencies: [31, 6878, 1838, 3947, 4970, 14859, 14865, 14860, 33, 4130, 689, 3834, 566, 5513, 1324, 4542, 3974, 665, 7678, 3991, 4476, 4596, 7897, 5085, 14870, 14872, 11679, 14880, 4099, 5048, 5515, 14862, 14881, 2]
 
-// Module 14822 (_createForOfIteratorHelperLoose)
+// Module 14869 (_createForOfIteratorHelperLoose)
 import importAllResult from "getGuildFolderMenuItems";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -133,9 +133,9 @@ function MiniGuildIcon(arg0) {
   items1[2] = guildPreview3;
   obj.style = items1;
   obj.guild = stateFromStores;
-  obj.size = require(5515) /* makeSizeStyle */.GuildIconSizes.XXSMALL;
+  obj.size = require(5513) /* makeSizeStyle */.GuildIconSizes.XXSMALL;
   obj.selected = selected;
-  return tmp5(importDefault(5515), obj, "" + selected);
+  return tmp5(importDefault(5513), obj, "" + selected);
 }
 function TransitionWrapper(children) {
   let flag = children.fromTop;

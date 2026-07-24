@@ -1,10 +1,10 @@
-// Module ID: 16381
-// Function ID: 127830
+// Module ID: 16428
+// Function ID: 128154
 // Name: EligibilityActionSheet
-// Dependencies: [31, 653, 33, 4130, 4098, 8438, 5796, 16382, 5187, 4126, 1212, 16386, 2]
+// Dependencies: [31, 653, 33, 4130, 4098, 8482, 5796, 16429, 5187, 4126, 1212, 16433, 2]
 // Exports: default
 
-// Module 16381 (EligibilityActionSheet)
+// Module 16428 (EligibilityActionSheet)
 import result from "result";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -43,8 +43,8 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   const intl = onRequireModeratorMFAClick(1212).intl;
   obj.children = intl.string(onRequireModeratorMFAClick(1212).t["3s47iN"]);
   const items1 = [callback(onRequireModeratorMFAClick(4126).Heading, obj), ];
-  obj = { style: tmp.container, items: importDefault(16382)(onRequireModeratorMFAClick.eligibility, memo) };
-  items1[1] = callback(importDefault(16386), obj);
+  obj = { style: tmp.container, items: importDefault(16429)(onRequireModeratorMFAClick.eligibility, memo) };
+  items1[1] = callback(importDefault(16433), obj);
   obj.children = items1;
   return callback2(onRequireModeratorMFAClick(5187).BottomSheet, obj);
 };

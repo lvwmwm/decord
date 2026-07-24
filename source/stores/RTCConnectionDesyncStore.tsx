@@ -1,9 +1,9 @@
-// Module ID: 12681
-// Function ID: 98823
+// Module ID: 12732
+// Function ID: 99144
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4147, 1348, 4202, 1849, 4146, 4203, 653, 4148, 4163, 4319, 9088, 4227, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4147, 1348, 4202, 1849, 4146, 4203, 653, 4148, 4163, 4319, 9126, 4227, 566, 686, 2]
 
-// Module 12681 (_isNativeReflectConstruct)
+// Module 12732 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getAvatarDecoration from "getAvatarDecoration";
@@ -44,7 +44,7 @@ function upsert(id, closure_2, channelId) {
   obj = { type: ParticipantTypes.USER, user: id, id: id.id, streamId: null, voiceState: tmp, voicePlatform: null, speaking: false, lastSpoke: 0, soundsharing: false, ringing: false, userNick: importDefault(4319).getName(closure_2, channelId, id) };
   const obj3 = importDefault(4319);
   const tmp2 = makeSortedVoiceState;
-  obj.userAvatarDecoration = require(9088) /* getAvatarDecoration */.getAvatarDecoration(id, closure_2);
+  obj.userAvatarDecoration = require(9126) /* getAvatarDecoration */.getAvatarDecoration(id, closure_2);
   obj.localVideoDisabled = false;
   obj.isPoppedOut = false;
   const result1 = importDefaultResult1.set(id.id, obj);

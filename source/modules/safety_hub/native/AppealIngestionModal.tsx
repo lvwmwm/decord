@@ -1,10 +1,10 @@
-// Module ID: 11041
-// Function ID: 85948
+// Module ID: 11068
+// Function ID: 86137
 // Name: getHeader
-// Dependencies: [5, 57, 31, 27, 11026, 7544, 653, 33, 4130, 689, 4126, 566, 11031, 1456, 7545, 11040, 11032, 7543, 5121, 1212, 4543, 5087, 11042, 480, 11047, 11049, 11051, 11053, 11054, 5450, 5519, 2]
+// Dependencies: [5, 57, 31, 27, 11053, 7589, 653, 33, 4130, 689, 4126, 566, 11058, 1456, 7590, 11067, 11059, 7588, 5121, 1212, 4543, 5087, 11069, 480, 11074, 11076, 11078, 11080, 11081, 5450, 5517, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11041 (getHeader)
+// Module 11068 (getHeader)
 import closure_4 from "SafetyHubLinks";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -45,7 +45,7 @@ export default function AppealIngestionModal(classificationId) {
   let require;
   let flag;
   let flag2;
-  let obj = require(11031) /* useSafetyHubClassifications */;
+  let obj = require(11058) /* useSafetyHubClassifications */;
   const safetyHubClassification = obj.useSafetyHubClassification(classificationId.classificationId);
   ({ isDsaEligible: require, classification } = safetyHubClassification);
   flag = undefined;
@@ -147,7 +147,7 @@ export default function AppealIngestionModal(classificationId) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
   obj.headerTitleAlign = "center";
-  return callback2(require(5519) /* NavigationStack */.Navigator, obj);
+  return callback2(require(5517) /* NavigationStack */.Navigator, obj);
 };
 export const AppealIngestionModalHeader = function AppealIngestionModalHeader(arg0) {
   let headerText;

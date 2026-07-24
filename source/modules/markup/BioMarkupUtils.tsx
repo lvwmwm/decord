@@ -1,10 +1,10 @@
-// Module ID: 9012
-// Function ID: 70925
+// Module ID: 9051
+// Function ID: 71140
 // Name: getOrParseBioAST
-// Dependencies: [4564, 4565, 4121, 1362, 7674, 4120, 3829, 22, 2]
+// Dependencies: [4564, 4565, 4121, 1362, 7763, 4120, 3829, 22, 2]
 // Exports: parseBioReactWithCachedAST
 
-// Module 9012 (getOrParseBioAST)
+// Module 9051 (getOrParseBioAST)
 import importDefaultResult1 from "priv";
 import importDefaultResult from "_createForOfIteratorHelperLoose";
 import importAllResult from "reactParserFor";

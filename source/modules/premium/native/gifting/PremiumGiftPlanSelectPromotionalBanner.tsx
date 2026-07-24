@@ -1,8 +1,8 @@
-// Module ID: 9691
-// Function ID: 75414
-// Dependencies: [31, 27, 33, 4130, 689, 7146, 9688, 4554, 5085, 4126, 1212, 9692, 2]
+// Module ID: 9725
+// Function ID: 75626
+// Dependencies: [31, 27, 33, 4130, 689, 7145, 9722, 4554, 5085, 4126, 1212, 9726, 2]
 
-// Module 9691
+// Module 9725
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -33,10 +33,10 @@ const memoResult = require("result").memo(function PremiumGiftPlanSelectPromotio
   ({ claimableRewards, isSelected, onLayout } = giftPlanSelectionCardBannerComponent);
   const tmp = callback3();
   const gradient = giftPlanSelectionCardBannerComponent.gradient;
-  let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(7146) /* _isNativeReflectConstruct */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
-  let obj = require(9688) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(7145) /* _isNativeReflectConstruct */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
+  let obj = require(9722) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.mobileBannerAsset);
-  let obj1 = require(9688) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj1 = require(9722) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl1 = obj1.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.avatarAsset, true);
   obj = { style: tmp.gradient, useAngle: true };
   let angle;
@@ -95,12 +95,12 @@ const memoResult = require("result").memo(function PremiumGiftPlanSelectPromotio
     items3[1] = logoLargeTilted;
     obj7.promoRotatingStyle = items3;
     obj7.rotatingAvatarImageUrl = themeAndReducedMotionAwareAssetUrl1;
-    obj6.children = callback(importDefault(9692), obj7);
+    obj6.children = callback(importDefault(9726), obj7);
     tmp12Result = callback(View, obj6);
     const tmp12 = callback;
     const tmp13 = View;
     const tmp14 = callback;
-    const tmp17 = importDefault(9692);
+    const tmp17 = importDefault(9726);
   }
   items[2] = tmp12Result;
   obj.children = items;

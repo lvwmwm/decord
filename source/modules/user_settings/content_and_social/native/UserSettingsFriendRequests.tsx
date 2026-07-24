@@ -1,10 +1,10 @@
-// Module ID: 15464
-// Function ID: 119015
+// Module ID: 15511
+// Function ID: 119337
 // Name: UserSettingsFriendRequests
-// Dependencies: [31, 27, 653, 33, 3803, 5793, 5503, 1212, 5504, 1360, 2]
+// Dependencies: [31, 27, 653, 33, 3803, 5793, 5501, 1212, 5502, 1360, 2]
 // Exports: default
 
-// Module 15464 (UserSettingsFriendRequests)
+// Module 15511 (UserSettingsFriendRequests)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -42,7 +42,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(tmp3);
   };
-  const items1 = [callback(setting(5504).TableSwitchRow, obj), , ];
+  const items1 = [callback(setting(5502).TableSwitchRow, obj), , ];
   const obj1 = {};
   const intl3 = setting(1212).intl;
   obj1.label = intl3.string(setting(1212).t.IqlCSq);
@@ -57,7 +57,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[1] = callback(setting(5504).TableSwitchRow, obj1);
+  items1[1] = callback(setting(5502).TableSwitchRow, obj1);
   const obj2 = {};
   const intl4 = setting(1212).intl;
   obj2.label = intl4.string(setting(1212).t.mozb8f);
@@ -72,8 +72,8 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[2] = callback(setting(5504).TableSwitchRow, obj2);
+  items1[2] = callback(setting(5502).TableSwitchRow, obj2);
   obj.children = items1;
-  obj.children = callback2(setting(5503).TableRowGroup, obj);
+  obj.children = callback2(setting(5501).TableRowGroup, obj);
   return callback(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8981
-// Function ID: 70794
+// Module ID: 9020
+// Function ID: 71009
 // Name: PlayStationLinkSuccess
-// Dependencies: [31, 27, 33, 4130, 8943, 8982, 4126, 1212, 5121, 4543, 2]
+// Dependencies: [31, 27, 33, 4130, 8982, 9021, 4126, 1212, 5121, 4543, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 8981 (PlayStationLinkSuccess)
+// Module 9020 (PlayStationLinkSuccess)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 1
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
 export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
-  let obj = require(8943) /* styles */;
+  let obj = require(8982) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container };
   obj = { style: twoWayLinkStyles.content };

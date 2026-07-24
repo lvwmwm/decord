@@ -1,11 +1,11 @@
 // Module ID: 16265
-// Function ID: 126631
+// Function ID: 126259
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 16265 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c3befb4dec1b6486d35bd86d8fd2910e", name: "BoostGemOutlineIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "0ad684cb154c8b73e2d19dd6933251ad", name: "ic_premium_perk_money_24px", type: "png" };
 
 export default registerAsset.registerAsset(obj);

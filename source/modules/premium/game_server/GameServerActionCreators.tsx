@@ -1,10 +1,10 @@
-// Module ID: 11515
-// Function ID: 89701
+// Module ID: 11545
+// Function ID: 89946
 // Name: fetchGameServerCatalog
-// Dependencies: [1921, 1849, 4019, 653, 686, 11516, 4369, 507, 11518, 4040, 675, 11519, 2]
+// Dependencies: [1921, 1849, 4019, 653, 686, 11546, 4369, 507, 11548, 4040, 675, 11549, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, wakeGameServer
 
-// Module 11515 (fetchGameServerCatalog)
+// Module 11545 (fetchGameServerCatalog)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { GAME_SERVER_COLLECTION_ID } from "NewGamesCoachmarkContent";

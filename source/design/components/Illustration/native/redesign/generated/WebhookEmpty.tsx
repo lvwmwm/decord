@@ -1,17 +1,17 @@
-// Module ID: 15530
-// Function ID: 119767
+// Module ID: 15577
+// Function ID: 120089
 // Name: getWebhookEmptySource
-// Dependencies: [31, 27, 33, 7403, 15531, 15532, 15533, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 15578, 15579, 15580, 3976, 2]
 // Exports: WebhookEmpty
 
-// Module 15530 (getWebhookEmptySource)
+// Module 15577 (getWebhookEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getWebhookEmptySource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

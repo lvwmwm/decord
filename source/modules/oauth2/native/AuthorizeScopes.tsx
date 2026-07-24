@@ -1,10 +1,10 @@
-// Module ID: 9017
-// Function ID: 70938
+// Module ID: 9056
+// Function ID: 71153
 // Name: Scope
-// Dependencies: [31, 27, 33, 4130, 1212, 5776, 689, 4091, 4126, 5450, 8955, 8180, 8310, 2]
+// Dependencies: [31, 27, 33, 4130, 1212, 5776, 689, 4091, 4126, 5450, 8994, 8224, 8354, 2]
 // Exports: default
 
-// Module 9017 (Scope)
+// Module 9056 (Scope)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -85,9 +85,9 @@ export default function AuthorizeScopes(accountScopes) {
     return null;
   } else {
     const t = accountScopes(1212).t;
-    let hasItem = integrationType === accountScopes(8180).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === accountScopes(8224).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(accountScopes(8310).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(accountScopes(8354).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: tmp.scopesContainer };
     obj = { variant: "heading-sm/normal", color: "text-default" };

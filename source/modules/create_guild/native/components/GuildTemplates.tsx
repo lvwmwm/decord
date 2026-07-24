@@ -1,10 +1,10 @@
-// Module ID: 11739
-// Function ID: 91159
+// Module ID: 11766
+// Function ID: 91397
 // Name: GuildTemplatesHeader
-// Dependencies: [57, 31, 27, 11736, 9227, 653, 33, 4130, 5084, 689, 4126, 1212, 1456, 1557, 4543, 11712, 675, 10054, 11740, 5121, 5503, 2]
+// Dependencies: [57, 31, 27, 11763, 9263, 653, 33, 4130, 5084, 689, 4126, 1212, 1456, 1557, 4543, 11739, 675, 10086, 11767, 5121, 5501, 2]
 // Exports: default
 
-// Module 11739 (GuildTemplatesHeader)
+// Module 11766 (GuildTemplatesHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -94,13 +94,13 @@ function GuildTemplatesItem(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
   const obj = {
-    Icon: guildTemplate(11740).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id],
+    Icon: guildTemplate(11767).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id],
     message: guildTemplate.label,
     onPress() {
       return onGuildTemplatePress(guildTemplate);
     }
   };
-  return callback3(onGuildTemplatePress(10054), obj);
+  return callback3(onGuildTemplatePress(10086), obj);
 }
 ({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ getGuildTemplatesMap: closure_7, GuildTemplateId: closure_8 } = GuildTemplateId);

@@ -1,5 +1,5 @@
 // Module ID: 1851
-// Function ID: 20434
+// Function ID: 20435
 // Name: GuildFeatures
 // Dependencies: [653, 1852, 1212, 1853, 656, 2, 1854]
 
@@ -278,9 +278,6 @@ export const TR_OFFER_1_ORBS_REWARD_AMOUNT = 10000;
 export const TR_OFFER_1_PAYMENT_MODAL_BANNER_KEY = "tr-offer-1-payment-modal-banner";
 export const TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT = items12;
 export const DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT = [];
-export const COLLECTIBLES_SUMMER_SALE_2025_30_DISCOUNT_ID = "1397626558063050855";
-export const COLLECTIBLES_SUMMER_SALE_2025_50_DISCOUNT_ID = "1397609029626232955";
-export const COLLECTIBLES_VALENTINES_2026_DISCOUNT_ID = "1460778896906522665";
 export const DEFAULT_SOUND_SLOTS = 8;
 export const MORE_SOUNDBOARD_SOUNDS = 96;
 export const SubscriptionTrials = frozen7;
@@ -328,6 +325,7 @@ export const GiftingOrigin = { DM_CHANNEL: 0, [0]: "DM_CHANNEL", SHOP_PAGE: 1, [
 export const DISCOUNT_DURATION_FALLBACK = 1;
 export const DISCOUNT_PERCENTAGE_FALLBACK = 30;
 export const ANNUAL_DISCOUNT_PERCENTAGE_FALLBACK = 20;
+export const PRICE_PLACEHOLDER = "$...";
 export const TieredTenureBadge = obj41;
 export const TIERED_TENURE_BADGE_ORDER = items32;
 export const TENURE_BADGES = obj42;

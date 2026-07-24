@@ -1,10 +1,10 @@
-// Module ID: 11852
-// Function ID: 91836
+// Module ID: 11879
+// Function ID: 92074
 // Name: useSimilarGames
-// Dependencies: [4151, 1849, 8660, 8659, 6865, 566, 8589, 8601, 2]
+// Dependencies: [4151, 1849, 8701, 8700, 6864, 566, 8632, 8643, 2]
 // Exports: default
 
-// Module 11852 (useSimilarGames)
+// Module 11879 (useSimilarGames)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set";
@@ -21,7 +21,7 @@ export default function useSimilarGames(arg0, arg1) {
   if (arg1) {
     tmp = !set.has(arg0);
   }
-  let obj = require(8659) /* _getShopCollection */;
+  let obj = require(8700) /* _getShopCollection */;
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp);
   const data = similarGameIds.data;
   ({ isLoading, error } = similarGameIds);
@@ -31,8 +31,8 @@ export default function useSimilarGames(arg0, arg1) {
     tmp5 = data;
   }
   require = tmp5;
-  const games = require(6865) /* importDefaultResult1 */.useGames(tmp5);
-  let obj2 = require(6865) /* importDefaultResult1 */;
+  const games = require(6864) /* importDefaultResult1 */.useGames(tmp5);
+  let obj2 = require(6864) /* importDefaultResult1 */;
   const items = [_isNativeReflectConstruct];
   const items1 = [tmp5];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => tmp5.some((arg0) => {

@@ -1,5 +1,5 @@
 // Module ID: 5972
-// Function ID: 49912
+// Function ID: 49923
 // Name: ControllerSpotIllustration
 // Dependencies: [33, 5085, 5973, 2]
 // Exports: ControllerSpotIllustration

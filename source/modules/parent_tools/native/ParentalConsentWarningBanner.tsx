@@ -1,10 +1,10 @@
-// Module ID: 15679
-// Function ID: 120904
+// Module ID: 15726
+// Function ID: 121226
 // Name: StyleSheet
-// Dependencies: [31, 27, 6770, 653, 33, 689, 4130, 1557, 13769, 13768, 15680, 10631, 3834, 6784, 675, 6771, 5796, 4126, 4554, 1212, 2198, 2]
+// Dependencies: [31, 27, 6770, 653, 33, 689, 4130, 1557, 13820, 13819, 15727, 10660, 3834, 6784, 675, 6771, 5796, 4126, 4554, 1212, 2198, 2]
 // Exports: default
 
-// Module 15679 (StyleSheet)
+// Module 15726 (StyleSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { FamilyCenterSubPages } from "items";
@@ -49,13 +49,13 @@ export default function ParentalConsentWarningBanner(children) {
   const tmp = _createForOfIteratorHelperLoose();
   const require = tmp;
   const tmp2 = token(1557)();
-  let obj = require(13769) /* useParentalConsentWarning */;
+  let obj = require(13820) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj.useParentalConsentWarning();
-  let obj1 = require(13768) /* useIsParentalConsentBannerActive */;
+  let obj1 = require(13819) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj1.useIsParentalConsentBannerActive();
-  let obj2 = require(15680) /* getActiveRoute */;
+  let obj2 = require(15727) /* getActiveRoute */;
   const isOnMainSurface = obj2.useIsOnMainSurface();
-  let obj3 = require(10631) /* useGlobalStatusIndicatorState */;
+  let obj3 = require(10660) /* useGlobalStatusIndicatorState */;
   let obj4 = require(3834) /* map */;
   token = obj4.useToken(token(689).colors.BACKGROUND_FEEDBACK_WARNING);
   let items = [token];

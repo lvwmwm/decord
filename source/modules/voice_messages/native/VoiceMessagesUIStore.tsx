@@ -1,10 +1,10 @@
-// Module ID: 11103
-// Function ID: 86353
+// Module ID: 11130
+// Function ID: 86542
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11104, 621, 3991, 682, 4542, 2]
+// Dependencies: [11131, 621, 3991, 682, 4542, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11103 (VoiceMessageRecordingStatus)
+// Module 11130 (VoiceMessageRecordingStatus)
 import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import keys from "keys";
 

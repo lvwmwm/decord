@@ -1,10 +1,10 @@
-// Module ID: 14757
-// Function ID: 112577
+// Module ID: 14804
+// Function ID: 112898
 // Name: UsernameStatusMessage
-// Dependencies: [29, 57, 31, 14731, 33, 4130, 3991, 13662, 4541, 7507, 689, 4126, 1212, 14749, 7512, 477, 2]
+// Dependencies: [29, 57, 31, 14778, 33, 4130, 3991, 13713, 4541, 7577, 689, 4126, 1212, 14796, 7574, 477, 2]
 // Exports: RegisterUsernameInput
 
-// Module 14757 (UsernameStatusMessage)
+// Module 14804 (UsernameStatusMessage)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -31,10 +31,10 @@ function UsernameStatusMessage(arg0) {
   if (null != usernameStatus) {
     type = usernameStatus.type;
   }
-  if (type === require(13662) /* NameValidationState */.NameValidationState.ERROR) {
+  if (type === require(13713) /* NameValidationState */.NameValidationState.ERROR) {
     let obj = { direction: "horizontal", spacing: 4, align: "flex-start" };
     obj = { size: "xs", color: importDefault(689).colors.TEXT_FEEDBACK_CRITICAL };
-    const items = [callback3(require(7507) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
+    const items = [callback3(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
     const obj1 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp.status };
     const merged = Object.assign(_createForOfIteratorHelperLoose);
     const merged1 = Object.assign(_createForOfIteratorHelperLoose);
@@ -49,7 +49,7 @@ function UsernameStatusMessage(arg0) {
       if (null != usernameStatus) {
         type1 = usernameStatus.type;
       }
-      if (type1 === require(13662) /* NameValidationState */.NameValidationState.AVAILABLE) {
+      if (type1 === require(13713) /* NameValidationState */.NameValidationState.AVAILABLE) {
         const obj2 = {};
         const merged2 = Object.assign(_createForOfIteratorHelperLoose);
         const merged3 = Object.assign(_createForOfIteratorHelperLoose);
@@ -107,7 +107,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     tmp3 = autoFocus;
   }
   obj.enabled = tmp3;
-  importDefault(14749)(obj);
+  importDefault(14796)(obj);
   const tmp5 = callback(React.useState(true), 2);
   importDefault = tmp6;
   const tmp7 = callback2((errors) => errors.errors);
@@ -139,7 +139,7 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
   const tmp11 = closure_10;
   const tmp12 = closure_11;
   const tmp13 = callback3;
-  const tmp2 = importDefault(14749);
+  const tmp2 = importDefault(14796);
   obj.secureTextEntry = setUsername(477).isAndroid();
   const obj4 = setUsername(477);
   let str = "default";
@@ -161,12 +161,12 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     type = usernameStatus.type;
   }
   let str2;
-  if (type === setUsername(13662).NameValidationState.ERROR) {
+  if (type === setUsername(13713).NameValidationState.ERROR) {
     str2 = "error";
   }
   obj.status = str2;
   obj.submitBehavior = submitBehavior;
-  const items3 = [tmp13(setUsername(7512).TextInput, obj), callback3(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
+  const items3 = [tmp13(setUsername(7574).TextInput, obj), callback3(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
   obj.children = items3;
   return tmp11(tmp12, obj);
 };

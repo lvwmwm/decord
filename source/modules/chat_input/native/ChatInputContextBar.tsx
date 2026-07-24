@@ -1,9 +1,9 @@
-// Module ID: 10362
-// Function ID: 79943
+// Module ID: 10391
+// Function ID: 80135
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [31, 27, 4122, 1849, 653, 33, 1273, 4130, 689, 1324, 3834, 4126, 1212, 4660, 9003, 566, 3848, 4361, 8516, 7650, 3994, 10363, 3941, 3991, 4131, 9544, 675, 9542, 1198, 4360, 10364, 2]
+// Dependencies: [31, 27, 4122, 1849, 653, 33, 1273, 4130, 689, 1324, 3834, 4126, 1212, 4660, 9042, 566, 3848, 4361, 8561, 7739, 3994, 10392, 3941, 3991, 4131, 9580, 675, 9578, 1198, 4360, 10393, 2]
 
-// Module 10362 (ChatInputReplyBarNoAuthor)
+// Module 10391 (ChatInputReplyBarNoAuthor)
 import importAllResult from "set";
 import get_ActivityIndicator from "getContextBarCancelReason";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     }
     obj2.hitSlop = tmp20;
     obj2.onPress = onCancelReplying;
-    const obj3 = { source: importDefault(9003), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+    const obj3 = { source: importDefault(9042), size: require(1273) /* Button */.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
     obj2.children = callback(require(1273) /* Button */.Icon, obj3);
     obj1.children = callback(require(4660) /* PressableBase */.PressableOpacity, obj2);
     items[1] = callback(closure_5, obj1);
@@ -62,7 +62,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     obj4.onPress = onCancelReplying;
     obj4.style = tmp.contextBarRow;
     const obj5 = { style: tmp.contextCancelIconWrapper };
-    const obj6 = { source: importDefault(9003), size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
+    const obj6 = { source: importDefault(9042), size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
     obj5.children = callback(require(1273) /* Button */.Icon, obj6);
     const items1 = [callback(closure_5, obj5), ];
     const obj7 = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", style: tmp.contextButtonText };
@@ -83,7 +83,7 @@ class ChatInputReplyBar {
     colorStrings = undefined;
     nick = undefined;
     guildId = undefined;
-    f79949 = undefined;
+    f80141 = undefined;
     c7 = undefined;
     useDisplayNameStylesFont = undefined;
     author = undefined;
@@ -138,14 +138,14 @@ class ChatInputReplyBar {
     ({ onToggleReplyMention, chatInputFloatingOverride } = global);
     obj = require("useIsMobileVisualRefreshExperimentEnabled");
     tmp = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
-    tmp2 = f79952();
+    tmp2 = f80144();
     obj2 = require("map");
     token = obj2.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
     obj3 = require("map");
     bound = require("result");
     obj4 = require("initialize");
     items = [];
-    items[0] = f79949;
+    items[0] = f80141;
     stateFromStores = obj4.useStateFromStores(items, () => roleStyle.roleStyle);
     c1 = stateFromStores;
     obj5 = require("useCheckboxA11yNative");
@@ -159,7 +159,7 @@ class ChatInputReplyBar {
     items1[0] = colorString;
     items1[1] = stateFromStores;
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    f79949 = colorStrings.useMemo(() => {
+    f80141 = colorStrings.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {
@@ -444,7 +444,7 @@ function ChatInputEditBar(onCancelEditing) {
   }
   obj.style = prop;
   obj.onPress = onCancelEditing.onCancelEditing;
-  obj1 = { source: importDefault(9003) };
+  obj1 = { source: importDefault(9042) };
   const Sizes = require(1273) /* Button */.Icon.Sizes;
   obj1.size = chatInputFloating ? Sizes.CUSTOM : Sizes.SMALL_20;
   let floatingCloseIcon;

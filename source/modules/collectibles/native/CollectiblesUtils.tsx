@@ -1,10 +1,10 @@
-// Module ID: 8719
-// Function ID: 68991
+// Module ID: 8760
+// Function ID: 69209
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [653, 5618, 3789, 5621, 6786, 3776, 6785, 8720, 8721, 2]
+// Dependencies: [653, 5616, 3789, 5619, 6786, 3776, 6785, 8761, 8762, 2]
 // Exports: createOrbProfileBadge, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct
 
-// Module 8719 (_createForOfIteratorHelperLoose)
+// Module 8760 (_createForOfIteratorHelperLoose)
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -99,7 +99,7 @@ function extractPriceByPurchaseTypes(googleSkuIds) {
     if (null != googleSkuIds) {
       tmp8 = googleSkuIds[arg1];
     }
-    const product = importDefault(5621).getProduct(tmp8);
+    const product = importDefault(5619).getProduct(tmp8);
     let tmp10;
     if (null != product) {
       obj = {};
@@ -123,15 +123,15 @@ function isGPlaySynced(variants) {
     if (null != googleSkuIds) {
       tmp4 = googleSkuIds[closure_3.MOBILE];
     }
-    const product = importDefault(5621).getProduct(tmp4);
-    const obj2 = importDefault(5621);
+    const product = importDefault(5619).getProduct(tmp4);
+    const obj2 = importDefault(5619);
     const googleSkuIds2 = variants.googleSkuIds;
     let tmp9;
     if (null != googleSkuIds2) {
       tmp9 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
     }
-    const obj3 = importDefault(5621);
-    return null != product && null != importDefault(5621).getProduct(tmp9);
+    const obj3 = importDefault(5619);
+    return null != product && null != importDefault(5619).getProduct(tmp9);
   }
   obj = require(6785) /* getProductOrbPrice */;
 }
@@ -149,8 +149,8 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
     } else if (null != tmpResult.priceString) {
       let priceString = tmpResult.priceString;
     } else {
-      priceString = require(5618) /* formatSingleCurrencyPrice */.formatPrice(tmpResult.amount, tmpResult.currency);
-      const obj = require(5618) /* formatSingleCurrencyPrice */;
+      priceString = require(5616) /* formatSingleCurrencyPrice */.formatPrice(tmpResult.amount, tmpResult.currency);
+      const obj = require(5616) /* formatSingleCurrencyPrice */;
     }
   }
 };
@@ -210,5 +210,5 @@ export const filterHiddenCategories = function filterHiddenCategories(result) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: require(8720) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8720) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8721), description: "", isPreviewMode: true };
+  return { id: require(8761) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8761) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8762), description: "", isPreviewMode: true };
 };

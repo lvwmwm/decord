@@ -1,10 +1,10 @@
-// Module ID: 10751
-// Function ID: 83530
+// Module ID: 10780
+// Function ID: 83722
 // Name: GestureContainer
-// Dependencies: [31, 27, 10210, 10529, 33, 4130, 689, 1450, 3991, 5217, 4337, 4131, 1273, 2]
+// Dependencies: [31, 27, 10240, 10558, 33, 4130, 689, 1450, 3991, 5217, 4337, 4131, 1273, 2]
 // Exports: default
 
-// Module 10751 (GestureContainer)
+// Module 10780 (GestureContainer)
 import "result";
 import { View } from "get ActivityIndicator";
 import { useChannelCallStore } from "resetFocusTimer";

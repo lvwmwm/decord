@@ -1,10 +1,10 @@
-// Module ID: 7127
-// Function ID: 57274
+// Module ID: 7126
+// Function ID: 57287
 // Name: useGetDiscountOffer
-// Dependencies: [5621, 1851, 7128, 5624, 624, 2]
+// Dependencies: [5619, 1851, 7127, 5622, 624, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 7127 (useGetDiscountOffer)
+// Module 7126 (useGetDiscountOffer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 
@@ -13,7 +13,7 @@ let closure_5;
 const require = arg1;
 function useGetDiscountOffer(closure_4, offerIds) {
   const _require = offerIds;
-  const values = Object.values(_require(5624).DiscountIdToProductOfferId[closure_4]);
+  const values = Object.values(_require(5622).DiscountIdToProductOfferId[closure_4]);
   let tmp2 = null;
   if (0 !== values.length) {
     let tmp3 = null;

@@ -1,5 +1,5 @@
 // Module ID: 5744
-// Function ID: 49381
+// Function ID: 49392
 // Name: getUniqueListFromMetadata
 // Dependencies: [1849, 5743, 5745, 5746, 5747, 5748, 5749, 5750, 5751, 5752, 5753, 5754, 5755, 5756, 5757, 5758, 5759, 5760, 5761, 5762, 5763, 5764, 5765, 5766, 22, 1426, 1392, 3771, 3775, 1212, 2]
 // Exports: getEffectAnnouncement, getEffectUrl, sampleAnimationId

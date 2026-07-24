@@ -1,23 +1,23 @@
-// Module ID: 15724
-// Function ID: 121246
+// Module ID: 15771
+// Function ID: 121568
 // Name: renderActivityOrPIP
-// Dependencies: [31, 33, 15725, 15729, 15732, 15698, 15723, 2]
+// Dependencies: [31, 33, 15772, 15776, 15779, 15745, 15770, 2]
 // Exports: default
 
-// Module 15724 (renderActivityOrPIP)
+// Module 15771 (renderActivityOrPIP)
 import result from "result";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 15725;
+    let tmp4 = 15772;
   } else {
-    tmp4 = 15729;
+    tmp4 = 15776;
   }
   return jsx(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }
-const result = require("module_15725").fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
+const result = require("module_15772").fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
 
 export default function FramePanelUI() {
   const callback = React.useCallback(() => outer1_4(outer1_1(outer1_2[4]), {}), []);

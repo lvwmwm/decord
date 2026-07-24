@@ -1,10 +1,10 @@
-// Module ID: 9806
-// Function ID: 76140
+// Module ID: 9838
+// Function ID: 76334
 // Name: PostPurchaseFooter
-// Dependencies: [31, 27, 8268, 9807, 1345, 33, 4130, 689, 1557, 4337, 3982, 4543, 8773, 1212, 2294, 9808, 4126, 4099, 4100, 9686, 9809, 3946, 1334, 566, 8265, 2]
+// Dependencies: [31, 27, 8312, 9839, 1345, 33, 4130, 689, 1557, 4337, 3982, 4543, 8812, 1212, 2294, 9840, 4126, 4099, 4100, 9720, 9841, 3946, 1334, 566, 8309, 2]
 // Exports: default
 
-// Module 9806 (PostPurchaseFooter)
+// Module 9838 (PostPurchaseFooter)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ function PostPurchaseFooter(onSendGift) {
   }, []);
   obj = { grow: true, variant: "primary" };
   obj = { size: "sm", color: importDefault(689).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  obj.icon = callback4(onSendGift(8773).GiftIcon, obj);
+  obj.icon = callback4(onSendGift(8812).GiftIcon, obj);
   const intl = onSendGift(1212).intl;
   obj.text = intl.string(importDefault(2294).g86YiI);
   obj.onPress = callback;
@@ -63,7 +63,7 @@ function InProgressScreen(arg0) {
   const tmp = callback6(importDefault(1557)().bottom);
   let obj = { style: tmp.screenContainer };
   obj = { style: tmp.content };
-  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9808), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
+  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9840), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
   const items = [callback4(View, obj), ];
   const obj1 = { style: tmp.messageSection };
   const items1 = [callback4(require(4126) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), ];
@@ -95,12 +95,12 @@ function LevelUpScreen(arg0) {
   let tmp9 = null != newTier.simple_icon_url;
   if (tmp9) {
     const obj1 = { icon: newTier.simple_icon_url, size: 140 };
-    tmp9 = callback4(importDefault(9686), obj1);
+    tmp9 = callback4(importDefault(9720), obj1);
   }
   obj.children = tmp9;
   const items = [callback4(View, obj), ];
   const obj2 = { style: tmp.levelUpBody };
-  const items1 = [callback4(importDefault(9809), { progress: simulatedProgress, currentTier, newTier, style: tmp.levelUpProgress }), ];
+  const items1 = [callback4(importDefault(9841), { progress: simulatedProgress, currentTier, newTier, style: tmp.levelUpProgress }), ];
   const obj4 = { style: tmp.messageSection };
   const obj5 = { variant: "heading-xxl/bold", style: tmp.centerText };
   const intl = require(1212) /* getSystemLocale */.intl;

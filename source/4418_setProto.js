@@ -1,5 +1,5 @@
 // Module ID: 4418
-// Function ID: 38890
+// Function ID: 38891
 // Name: setProto
 // Dependencies: [4419, 518, 4420, 4421]
 

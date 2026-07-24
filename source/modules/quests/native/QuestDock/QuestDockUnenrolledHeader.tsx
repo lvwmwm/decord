@@ -1,9 +1,9 @@
-// Module ID: 14081
-// Function ID: 108317
+// Module ID: 14131
+// Function ID: 108640
 // Name: questDockHeaderLayoutAnimation
-// Dependencies: [57, 31, 27, 4976, 13994, 482, 33, 4130, 689, 4542, 14076, 13995, 478, 13991, 14004, 4979, 6969, 4066, 3976, 3834, 14078, 3991, 13990, 7589, 14082, 14056, 5085, 14084, 14085, 14047, 4126, 1212, 4660, 9802, 8968, 2]
+// Dependencies: [57, 31, 27, 4976, 14044, 482, 33, 4130, 689, 4542, 14126, 14045, 478, 14041, 14054, 4979, 6968, 4066, 3976, 3834, 14128, 3991, 14040, 7678, 14132, 14106, 5085, 14134, 14135, 14097, 4126, 1212, 4660, 9834, 9007, 2]
 
-// Module 14081 (questDockHeaderLayoutAnimation)
+// Module 14131 (questDockHeaderLayoutAnimation)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getSystemLocale";
 import get_ActivityIndicator from "registerAsset";

@@ -1,10 +1,10 @@
-// Module ID: 9095
-// Function ID: 71245
+// Module ID: 9133
+// Function ID: 71457
 // Name: GroupDMRow
-// Dependencies: [31, 8818, 33, 4320, 9096, 1273, 9097, 4126, 9094, 5165, 2]
+// Dependencies: [31, 8857, 33, 4320, 9134, 1273, 9135, 4126, 9132, 5165, 2]
 // Exports: default
 
-// Module 9095 (GroupDMRow)
+// Module 9133 (GroupDMRow)
 import result from "result";
 import { UserRowModes } from "UserRowModes";
 import { jsx } from "jsxProd";
@@ -38,8 +38,8 @@ export default function GroupDMRow(channel) {
     }
   }, items);
   obj = { size: channel(1273).AvatarSizes.REFRESH_MEDIUM_32, channel };
-  const tmp6 = onPress(9096);
-  let obj2 = channel(9097);
+  const tmp6 = onPress(9134);
+  let obj2 = channel(9135);
   const recipientsLabel = obj2.useRecipientsLabel(channel);
   obj = {};
   const merged1 = Object.assign(merged);
@@ -50,7 +50,7 @@ export default function GroupDMRow(channel) {
     tmp10 = jsx(channel(4126).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
   }
   obj["subLabel"] = tmp10;
-  obj["icon"] = jsx(onPress(9096), {});
+  obj["icon"] = jsx(onPress(9134), {});
   obj["onPress"] = callback;
   let str = "";
   if (null != tmp4) {
@@ -63,7 +63,7 @@ export default function GroupDMRow(channel) {
     obj2 = {};
     const merged2 = Object.assign(obj);
     obj2["checked"] = flag;
-    let tmp20 = jsx(channel(9094).TableCheckboxRow, {});
+    let tmp20 = jsx(channel(9132).TableCheckboxRow, {});
   } else {
     const obj3 = {};
     const merged3 = Object.assign(obj);

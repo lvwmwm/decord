@@ -1,20 +1,22 @@
-// Module ID: 11461
-// Function ID: 89224
+// Module ID: 11491
+// Function ID: 89460
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6, 7, 4468, 7022, 653, 4567, 1552, 11434, 7020, 6753, 8189, 6755, 8185, 11433, 1881, 11152, 4118, 22, 11280, 11225, 4099, 4324, 9557, 7938, 3996, 1555, 11278, 2]
+// Dependencies: [57, 6, 7, 4468, 7021, 653, 4567, 1552, 11147, 7019, 6753, 8233, 6755, 8229, 11146, 1881, 11182, 4118, 22, 11309, 11148, 4099, 4324, 9593, 8025, 3996, 1555, 11307, 2]
 
-// Module 11461 (_createForOfIteratorHelperLoose)
+// Module 11491 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
-import MENTION_SENTINEL from "MENTION_SENTINEL";
+import closure_5 from "regExp";
 import DRAG_HANDLE from "DRAG_HANDLE";
 import { DraftType } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
-import { COMMAND_SENTINEL } from "MENTION_SENTINEL";
+import regExp from "regExp";
 import { MediaKeyboardTarget } from "DRAG_HANDLE";
 
 let closure_10;
 let closure_11;
+let closure_12;
+let closure_13;
 let closure_9;
 const require = arg1;
 function _createForOfIteratorHelperLoose(iterable) {
@@ -120,8 +122,9 @@ function getNextOption(options) {
   return first;
 }
 ({ AnalyticEvents: closure_9, AutoCompleteResultTypes: closure_10, WHITESPACE_RE: closure_11 } = ME);
-let closure_14 = { FULL_COMMAND: 0, [0]: "FULL_COMMAND", PARTIAL_COMMAND: 1, [1]: "PARTIAL_COMMAND" };
-let tmp3 = (() => {
+({ COMMAND_SENTINEL: closure_12, formatGameMentionRaw: closure_13 } = regExp);
+let closure_15 = { FULL_COMMAND: 0, [0]: "FULL_COMMAND", PARTIAL_COMMAND: 1, [1]: "PARTIAL_COMMAND" };
+const tmp4 = (() => {
   class ApplicationCommandManager {
     constructor(arg0) {
       self = this;
@@ -132,9 +135,11 @@ let tmp3 = (() => {
       this.optionsToNodes = map;
       map1 = new Map();
       this.optionValueNodes = map1;
-      tmp4 = outer1_1(outer1_3[8]);
-      tmp4 = new tmp4();
-      this.parser = tmp4;
+      map2 = new Map();
+      this.mentionGames = map2;
+      tmp5 = outer1_1(outer1_3[8]);
+      tmp5 = new tmp5();
+      this.parser = tmp5;
       this.optionValues = {};
       this.optionValidationResults = {};
       this.canAutoInsertFirstOption = true;
@@ -145,21 +150,25 @@ let tmp3 = (() => {
         if (arg2) {
           if (null != self.props.activeCommand) {
             if (null != activeOption) {
-              const type = insertOrJumpCommandOption.type;
-              if (outer2_10.USER === type) {
-                let obj = { type: "userMention", userId: insertOrJumpCommandOption.user.id };
-                let tmp8 = obj;
-                insertOrJumpCommandOption = self.insertOrJumpCommandOption;
-                obj = { displayText, preferred: true, value: tmp8 };
-                const result = insertOrJumpCommandOption(activeOption, undefined, false, obj);
-              } else if (outer2_10.ROLE !== type) {
-                if (outer2_10.CHANNEL === type) {
-                  const obj1 = { type: "channelMention", channelId: insertOrJumpCommandOption.channel.id };
-                  tmp8 = obj1;
+              if (insertOrJumpCommandOption.type === outer2_10.GAME_MENTION) {
+                return false;
+              } else {
+                const type = insertOrJumpCommandOption.type;
+                if (outer2_10.USER === type) {
+                  let obj = { type: "userMention", userId: insertOrJumpCommandOption.user.id };
+                  let tmp8 = obj;
+                  insertOrJumpCommandOption = self.insertOrJumpCommandOption;
+                  obj = { displayText, preferred: true, value: tmp8 };
+                  const result = insertOrJumpCommandOption(activeOption, undefined, false, obj);
+                } else if (outer2_10.ROLE !== type) {
+                  if (outer2_10.CHANNEL === type) {
+                    const obj1 = { type: "channelMention", channelId: insertOrJumpCommandOption.channel.id };
+                    tmp8 = obj1;
+                  }
                 }
+                const obj2 = { type: "roleMention", roleId: insertOrJumpCommandOption.id };
+                tmp8 = obj2;
               }
-              const obj2 = { type: "roleMention", roleId: insertOrJumpCommandOption.id };
-              tmp8 = obj2;
             }
           }
         }
@@ -214,7 +223,7 @@ let tmp3 = (() => {
             obj = {};
             const obj1 = {};
             const merged = Object.assign(command);
-            obj1["preferredCommandType"] = outer2_14.FULL_COMMAND;
+            obj1["preferredCommandType"] = outer2_15.FULL_COMMAND;
             obj.preferredCommand = obj1;
             const result = self.updateApplicationCommandManagerState(obj);
           }
@@ -230,7 +239,7 @@ let tmp3 = (() => {
         }
         if (id !== id) {
           let obj = {};
-          obj = { id, untranslatedName, displayName: untranslatedName, preferredCommandType: outer2_14.PARTIAL_COMMAND };
+          obj = { id, untranslatedName, displayName: untranslatedName, preferredCommandType: outer2_15.PARTIAL_COMMAND };
           obj.preferredCommand = obj;
           obj.location = location;
           const result = self.updateApplicationCommandManagerState(obj);
@@ -507,6 +516,67 @@ let tmp3 = (() => {
             return false;
           }
         });
+        const parser8 = self.parser;
+        const obj4 = {
+          ruleId: "silentHighlightRuleId",
+          type: ApplicationCommandManager(outer2_3[8]).ChatInputNodeType.SILENT_HIGHLIGHT,
+          matchFunction(arg0) {
+            return ApplicationCommandManager(outer3_3[14]).getSilentHighlightNodes(arg0);
+          },
+          style() {
+            const styles = outer1_0.styles;
+            return styles.autocomplete();
+          },
+          editDisabled() {
+            return false;
+          }
+        };
+        parser8.addRule({
+          ruleId: "gameHighlightRuleId",
+          type: ApplicationCommandManager(outer2_3[8]).ChatInputNodeType.GAME_HIGHLIGHT,
+          matchFunction(arg0) {
+            return ApplicationCommandManager(outer3_3[14]).getGameHighlightNodes(outer1_0.mentionGames, arg0);
+          },
+          style() {
+            const styles = outer1_0.styles;
+            return styles.gameMention();
+          },
+          deleteNodeOnBackspace: true,
+          editDisabled() {
+            return true;
+          }
+        });
+        const parser9 = self.parser;
+        const obj5 = {
+          ruleId: "gameHighlightRuleId",
+          type: ApplicationCommandManager(outer2_3[8]).ChatInputNodeType.GAME_HIGHLIGHT,
+          matchFunction(arg0) {
+            return ApplicationCommandManager(outer3_3[14]).getGameHighlightNodes(outer1_0.mentionGames, arg0);
+          },
+          style() {
+            const styles = outer1_0.styles;
+            return styles.gameMention();
+          },
+          deleteNodeOnBackspace: true,
+          editDisabled() {
+            return true;
+          }
+        };
+        parser9.addRule({
+          ruleId: "gameMentionInputRuleId",
+          type: ApplicationCommandManager(outer2_3[8]).ChatInputNodeType.GAME_MENTION_INPUT,
+          matchFunction(arr) {
+            return ApplicationCommandManager(outer3_3[14]).getGameMentionInputNodes(arr);
+          },
+          style() {
+            const styles = outer1_0.styles;
+            return styles.commandOption();
+          },
+          deleteNodeOnBackspace: true,
+          editDisabled() {
+            return true;
+          }
+        });
       };
       this.getCurrentCommand = (str, channel, displayName, section) => {
         let closure_2;
@@ -524,7 +594,7 @@ let tmp3 = (() => {
                 const _HermesInternal = HermesInternal;
                 if (text.startsWith("" + outer2_12 + displayName.displayName)) {
                   flag = true;
-                  if (displayName.preferredCommandType === outer2_14.FULL_COMMAND) {
+                  if (displayName.preferredCommandType === outer2_15.FULL_COMMAND) {
                     obj = { command: displayName, section };
                     return obj;
                   }
@@ -542,7 +612,7 @@ let tmp3 = (() => {
                 if (null != displayName) {
                   preferredCommandType = displayName.preferredCommandType;
                 }
-                if (preferredCommandType === outer2_14.PARTIAL_COMMAND) {
+                if (preferredCommandType === outer2_15.PARTIAL_COMMAND) {
                   const contextCommands = _self.contextCommands;
                   let found = contextCommands.find((id) => id.id === displayName.id);
                   if (null != found) {
@@ -554,7 +624,7 @@ let tmp3 = (() => {
                       obj2 = {};
                       let obj3 = {};
                       let merged = Object.assign(found);
-                      obj3["preferredCommandType"] = outer2_14.FULL_COMMAND;
+                      obj3["preferredCommandType"] = outer2_15.FULL_COMMAND;
                       obj2.command = obj3;
                       obj2.section = cachedApplicationSection;
                       tmp21 = obj2;
@@ -598,7 +668,7 @@ let tmp3 = (() => {
                         obj2 = {};
                         obj3 = {};
                         const merged = Object.assign(first);
-                        obj3["preferredCommandType"] = outer3_14.FULL_COMMAND;
+                        obj3["preferredCommandType"] = outer3_15.FULL_COMMAND;
                         obj2.command = obj3;
                         obj2.section = cachedApplicationSection;
                         obj1.v = obj2;
@@ -672,7 +742,7 @@ let tmp3 = (() => {
           return {};
         } else {
           const obj = {};
-          const tmp17 = outer2_15(self.optionValueNodes);
+          const tmp17 = outer2_16(self.optionValueNodes);
           const iter3 = tmp17();
           let iter2 = iter3;
           if (!iter3.done) {
@@ -729,7 +799,7 @@ let tmp3 = (() => {
               const _Set = Set;
               const optionValueNodes = self.optionValueNodes;
               const set = new Set(optionValueNodes.keys());
-              const tmp10 = outer2_17(displayName, set, true);
+              const tmp10 = outer2_18(displayName, set, true);
               if (null != tmp10) {
                 const result = self.insertOrJumpCommandOption(tmp10, displayName.displayName.length + 2, true, undefined, displayName);
               }
@@ -818,7 +888,7 @@ let tmp3 = (() => {
             const optionValueNodes = self.optionValueNodes;
             const set = new Set(optionValueNodes.keys());
             set.add(name.name);
-            const tmp13 = outer2_17(activeCommand, set);
+            const tmp13 = outer2_18(activeCommand, set);
             let tmp14 = null != displayText;
             if (tmp14) {
               let tmp15 = _location + num !== text.length;
@@ -1009,6 +1079,21 @@ let tmp3 = (() => {
     }
   }
   let obj = {
+    key: "addGameMention",
+    value: function addGameMention(game) {
+      const mentionGames = this.mentionGames;
+      const result = mentionGames.set(game.id, game);
+    }
+  };
+  let items = [obj, , , , ];
+  obj = {
+    key: "getMentionGames",
+    value: function getMentionGames() {
+      return this.mentionGames;
+    }
+  };
+  items[1] = obj;
+  obj = {
     key: "setPreferredOptionValue",
     value: function setPreferredOptionValue(id, name, displayText) {
       const self = this;
@@ -1018,8 +1103,8 @@ let tmp3 = (() => {
       self.preferredOptionValues[id][name] = displayText;
     }
   };
-  let items = [obj, , ];
-  obj = {
+  items[2] = obj;
+  items[3] = {
     key: "mergePropsAndUpdate",
     value: function mergePropsAndUpdate(editId) {
       let activeCommand;
@@ -1027,6 +1112,7 @@ let tmp3 = (() => {
       let command;
       let focused;
       let iter2;
+      let iter4;
       let lastCommandAutocompleteResponseNonce;
       let queryCommands;
       let section;
@@ -1062,37 +1148,37 @@ let tmp3 = (() => {
         if (null != activeCommand3) {
           id1 = activeCommand3.id;
         }
-        let tmp47 = id !== id1;
-        let closure_3 = tmp47;
+        let tmp60 = id !== id1;
+        let closure_3 = tmp60;
         let activeOption = self.activeOption;
         let currentOption = activeOption;
-        let tmp48 = tmp5;
+        let tmp61 = tmp5;
         if (!tmp5) {
-          tmp48 = tmp6;
+          tmp61 = tmp6;
         }
-        if (!tmp48) {
-          tmp48 = tmp7;
+        if (!tmp61) {
+          tmp61 = tmp7;
         }
-        if (!tmp48) {
-          tmp48 = tmp47;
+        if (!tmp61) {
+          tmp61 = tmp60;
         }
-        if (tmp48) {
+        if (tmp61) {
           let focused2 = editId.focused;
           if (!focused2) {
-            let obj4 = ApplicationCommandManager(outer1_3[25]);
-            const keyboardType = obj4.getKeyboardType();
+            let obj5 = ApplicationCommandManager(outer1_3[25]);
+            const keyboardType = obj5.getKeyboardType();
             focused2 = keyboardType !== ApplicationCommandManager(outer1_3[26]).KeyboardTypes.SYSTEM;
           }
           currentOption = self.getCurrentOption(focused2, editId.selectionStart);
           activeOption = currentOption;
         }
-        let tmp53 = tmp47;
-        if (tmp47) {
-          tmp53 = null != self.activeCommand;
+        let tmp66 = tmp60;
+        if (tmp60) {
+          tmp66 = null != self.activeCommand;
         }
-        if (tmp53) {
-          let obj5 = outer1_1(outer1_3[24]);
-          obj5.clearAll(channel.id, outer1_7.SlashCommand);
+        if (tmp66) {
+          outer1_1(outer1_3[24]).clearAll(channel.id, outer1_7.SlashCommand);
+          const obj7 = outer1_1(outer1_3[24]);
         }
         let name;
         if (null != activeOption) {
@@ -1103,25 +1189,25 @@ let tmp3 = (() => {
         if (null != activeOption2) {
           name1 = activeOption2.name;
         }
-        let MENTION_SENTINEL = tmp60;
-        let tmp62 = tmp5;
+        let closure_5 = tmp73;
+        let tmp75 = tmp5;
         if (!tmp5) {
-          tmp62 = tmp60;
+          tmp75 = tmp73;
         }
-        if (!tmp62) {
-          tmp62 = tmp61;
+        if (!tmp75) {
+          tmp75 = tmp74;
         }
-        if (tmp62) {
+        if (tmp75) {
           let preferredCommandType;
           if (null != activeCommand) {
             preferredCommandType = activeCommand.preferredCommandType;
           }
-          tmp62 = preferredCommandType === outer1_14.FULL_COMMAND;
+          tmp75 = preferredCommandType === outer1_15.FULL_COMMAND;
         }
-        if (tmp62) {
+        if (tmp75) {
           self.optionValues = self.getAllCommandOptionValues(activeCommand, editId.text);
-          const obj7 = ApplicationCommandManager(outer1_3[27]);
-          self.optionValidationResults = obj7.getValidationResults(activeCommand, self.optionValues, editId.channel.guild_id, editId.channel.id, false);
+          const obj8 = ApplicationCommandManager(outer1_3[27]);
+          self.optionValidationResults = obj8.getValidationResults(activeCommand, self.optionValues, editId.channel.guild_id, editId.channel.id, false);
           const chatInputNodes = self.chatInputNodes;
           self.chatInputNodes = chatInputNodes.map((type) => {
             if (type.type === ApplicationCommandManager(outer2_3[8]).ChatInputNodeType.COMMAND_OPTION) {
@@ -1172,35 +1258,35 @@ let tmp3 = (() => {
             return type;
           });
         }
-        let tmp69 = tmp5;
+        let tmp82 = tmp5;
         if (!tmp5) {
-          tmp69 = tmp47;
+          tmp82 = tmp60;
         }
-        if (!tmp69) {
-          tmp69 = tmp60;
+        if (!tmp82) {
+          tmp82 = tmp73;
         }
-        if (!tmp69) {
-          tmp69 = editId !== editId.editId;
+        if (!tmp82) {
+          tmp82 = editId !== editId.editId;
         }
-        if (tmp69) {
+        if (tmp82) {
           const current = self.ref.current;
           let result = current.updateNativeTextBlocksThrottled(self.chatInputNodes, editId.editId);
         }
-        let tmp71 = tmp47;
-        if (tmp47) {
-          tmp71 = null != activeCommand;
+        let tmp84 = tmp60;
+        if (tmp60) {
+          tmp84 = null != activeCommand;
         }
-        if (tmp71) {
+        if (tmp84) {
           self.canAutoInsertFirstOption = true;
         }
-        if (!obj8.isEmpty(self.optionsToNodes)) {
+        if (!obj9.isEmpty(self.optionsToNodes)) {
           self.canAutoInsertFirstOption = false;
         }
         let preferredCommandType1;
         if (null != activeCommand) {
           preferredCommandType1 = activeCommand.preferredCommandType;
         }
-        if (preferredCommandType1 !== outer1_14.FULL_COMMAND) {
+        if (preferredCommandType1 !== outer1_15.FULL_COMMAND) {
           let items = [];
         } else {
           items = undefined;
@@ -1208,12 +1294,12 @@ let tmp3 = (() => {
             items = activeCommand.options;
           }
         }
-        const tmp77 = items.filter((required) => required.required).length > 0;
+        const tmp90 = items.filter((required) => required.required).length > 0;
         let preferredCommandType2;
         if (null != activeCommand) {
           preferredCommandType2 = activeCommand.preferredCommandType;
         }
-        if (preferredCommandType2 !== outer1_14.FULL_COMMAND) {
+        if (preferredCommandType2 !== outer1_15.FULL_COMMAND) {
           let items1 = [];
         } else {
           items1 = undefined;
@@ -1221,61 +1307,73 @@ let tmp3 = (() => {
             items1 = activeCommand.options;
           }
         }
-        const tmp81 = 1 === items1.filter((required) => !required.required).length;
+        const tmp94 = 1 === items1.filter((required) => !required.required).length;
         let canAutoInsertFirstOption = self.canAutoInsertFirstOption;
         if (canAutoInsertFirstOption) {
           let preferredCommandType3;
           if (null != activeCommand) {
             preferredCommandType3 = activeCommand.preferredCommandType;
           }
-          canAutoInsertFirstOption = preferredCommandType3 === outer1_14.FULL_COMMAND;
+          canAutoInsertFirstOption = preferredCommandType3 === outer1_15.FULL_COMMAND;
         }
         if (canAutoInsertFirstOption) {
           canAutoInsertFirstOption = ApplicationCommandManager(outer1_3[18]).isEmpty(self.optionsToNodes);
-          const obj9 = ApplicationCommandManager(outer1_3[18]);
+          const obj10 = ApplicationCommandManager(outer1_3[18]);
         }
         if (canAutoInsertFirstOption) {
           canAutoInsertFirstOption = editId.text.length >= text.length;
         }
         if (canAutoInsertFirstOption) {
-          if (!self.insertFirstOptionIfValid(editId.text, activeCommand, activeCommand.displayName, tmp77, tmp81)) {
-            let result1 = self.insertFirstOptionIfValid(editId.text, activeCommand, activeCommand.untranslatedName, tmp77, tmp81);
+          let result1 = activeCommand;
+          result1 = tmp90;
+          result1 = tmp94;
+          if (!self.insertFirstOptionIfValid(editId.text, activeCommand, activeCommand.displayName, tmp90, tmp94)) {
+            result1 = self;
+            result1 = activeCommand;
+            result1 = tmp90;
+            result1 = tmp94;
+            result1 = self.insertFirstOptionIfValid(editId.text, activeCommand, activeCommand.untranslatedName, tmp90, tmp94);
           }
         }
         if (name !== name1) {
-          let type;
+          result1 = undefined;
           if (null != activeOption) {
-            type = activeOption.type;
+            result1 = activeOption.type;
           }
-          if (type === ApplicationCommandManager(outer1_3[15]).ApplicationCommandOptionType.ATTACHMENT) {
+          result1 = ApplicationCommandManager;
+          result1 = outer1_3;
+          if (result1 === ApplicationCommandManager(outer1_3[15]).ApplicationCommandOptionType.ATTACHMENT) {
             if (!self.optionValidationResults[activeOption.name].success) {
               const current2 = self.ref.current;
-              let obj = { type: ApplicationCommandManager(outer1_3[26]).KeyboardTypes.MEDIA };
+              let obj = {};
+              result1 = ApplicationCommandManager;
+              result1 = outer1_3;
+              obj.type = ApplicationCommandManager(outer1_3[26]).KeyboardTypes.MEDIA;
               obj = {};
-              let openCustomKeyboardResult = outer1_13;
-              obj.target = outer1_13.COMMAND;
+              result1 = outer1_14;
+              obj.target = outer1_14.COMMAND;
               obj.option = activeOption;
               obj.context = obj;
-              openCustomKeyboardResult = current2.openCustomKeyboard(obj);
+              result1 = current2.openCustomKeyboard(obj);
             }
             self.props = editId;
             const obj1 = {};
-            openCustomKeyboardResult = undefined;
+            result1 = undefined;
             if (null != activeCommand) {
-              openCustomKeyboardResult = activeCommand.preferredCommandType;
+              result1 = activeCommand.preferredCommandType;
             }
-            openCustomKeyboardResult = outer1_14;
-            if (openCustomKeyboardResult === outer1_14.FULL_COMMAND) {
-              if (tmp60) {
-                openCustomKeyboardResult = null == activeCommand;
-                let arr5 = activeCommand;
-                if (!openCustomKeyboardResult) {
+            result1 = outer1_15;
+            if (result1 === outer1_15.FULL_COMMAND) {
+              if (tmp73) {
+                result1 = null == activeCommand;
+                let arr6 = activeCommand;
+                if (!result1) {
                   let options = activeCommand.options;
-                  openCustomKeyboardResult = null == options;
-                  arr5 = options;
+                  result1 = null == options;
+                  arr6 = options;
                 }
-                if (!openCustomKeyboardResult) {
-                  openCustomKeyboardResult = arr5.forEach((name) => {
+                if (!result1) {
+                  result1 = arr6.forEach((name) => {
                     name = name.name;
                     const obj = {};
                     name = undefined;
@@ -1306,14 +1404,14 @@ let tmp3 = (() => {
                     obj1[name] = obj;
                   });
                 }
-                if (tmp60) {
+                if (tmp73) {
                   if (null != activeOption) {
                     obj1[activeOption.name].hasValue = true;
                   }
                   if (null != self.activeOption) {
-                    openCustomKeyboardResult = obj1[self.activeOption.name];
-                    if (null != openCustomKeyboardResult) {
-                      if (openCustomKeyboardResult.hasValue) {
+                    result1 = obj1[self.activeOption.name];
+                    if (null != result1) {
+                      if (result1.hasValue) {
                         obj1[self.activeOption.name].lastValidationResult = self.optionValidationResults[self.activeOption.name];
                       }
                     }
@@ -1321,28 +1419,28 @@ let tmp3 = (() => {
                 }
               }
             }
-            openCustomKeyboardResult = self.getCurrentOption(true, editId.selectionStart);
+            result1 = self.getCurrentOption(true, editId.selectionStart);
             if (tmp5) {
-              if (null != openCustomKeyboardResult) {
-                const name2 = openCustomKeyboardResult.name;
+              if (null != result1) {
+                const name2 = result1.name;
                 let obj2 = obj1[name2];
                 if (null == obj2) {
                   obj2 = {};
                 }
                 let optionsToNodes2 = self.optionsToNodes;
-                openCustomKeyboardResult = optionsToNodes2.get(name2);
-                openCustomKeyboardResult = undefined;
-                if (null != openCustomKeyboardResult) {
-                  openCustomKeyboardResult = openCustomKeyboardResult.location;
+                result1 = optionsToNodes2.get(name2);
+                result1 = undefined;
+                if (null != result1) {
+                  result1 = result1.location;
                 }
-                obj2.location = openCustomKeyboardResult;
+                obj2.location = result1;
                 const optionsToNodes3 = self.optionsToNodes;
                 let value = optionsToNodes3.get(name2);
-                openCustomKeyboardResult = undefined;
+                result1 = undefined;
                 if (null != value) {
-                  openCustomKeyboardResult = value.length;
+                  result1 = value.length;
                 }
-                obj2.length = openCustomKeyboardResult;
+                obj2.length = result1;
                 obj2.optionValue = self.optionValues[name2];
                 obj2.hasValue = true;
                 obj1[name2] = obj2;
@@ -1351,73 +1449,73 @@ let tmp3 = (() => {
             self.activeCommand = activeCommand;
             self.activeCommandSection = tmp9;
             self.activeOption = activeOption;
-            if (!tmp47) {
-              openCustomKeyboardResult = globalThis;
+            if (!tmp60) {
+              result1 = globalThis;
               const _Object = Object;
-              tmp47 = Object.keys(obj1).length > 0;
+              tmp60 = Object.keys(obj1).length > 0;
             }
-            if (!tmp47) {
-              tmp47 = flag;
+            if (!tmp60) {
+              tmp60 = flag;
             }
-            if (tmp47) {
-              openCustomKeyboardResult = outer1_2;
-              openCustomKeyboardResult = outer1_3;
+            if (tmp60) {
+              result1 = outer1_2;
+              result1 = outer1_3;
               let obj3 = { channelId: editId.channel.id };
               const activeCommand4 = self.activeCommand;
-              openCustomKeyboardResult = undefined;
+              result1 = undefined;
               if (null != activeCommand4) {
-                openCustomKeyboardResult = activeCommand4.preferredCommandType;
+                result1 = activeCommand4.preferredCommandType;
               }
-              openCustomKeyboardResult = outer1_14;
-              openCustomKeyboardResult = null;
-              if (openCustomKeyboardResult === outer1_14.FULL_COMMAND) {
-                openCustomKeyboardResult = self.activeCommand;
+              result1 = outer1_15;
+              result1 = null;
+              if (result1 === outer1_15.FULL_COMMAND) {
+                result1 = self.activeCommand;
               }
-              obj3.command = openCustomKeyboardResult;
+              obj3.command = result1;
               const activeCommandSection = self.activeCommandSection;
-              openCustomKeyboardResult = null;
+              result1 = null;
               if (null != activeCommandSection) {
-                openCustomKeyboardResult = activeCommandSection;
+                result1 = activeCommandSection;
               }
-              obj3.section = openCustomKeyboardResult;
+              obj3.section = result1;
               const preferredCommand6 = self.preferredCommand;
-              openCustomKeyboardResult = undefined;
+              result1 = undefined;
               if (null != preferredCommand6) {
-                openCustomKeyboardResult = preferredCommand6.id;
+                result1 = preferredCommand6.id;
               }
-              openCustomKeyboardResult = null;
-              obj3.preferredCommandId = openCustomKeyboardResult;
+              result1 = null;
+              obj3.preferredCommandId = result1;
               obj3.location = self.location;
               obj3.changedOptionStates = obj1;
-              openCustomKeyboardResult = outer1_2(outer1_3[9]).updateChannelState(obj3);
-              const obj15 = outer1_2(outer1_3[9]);
+              result1 = outer1_2(outer1_3[9]).updateChannelState(obj3);
+              const obj16 = outer1_2(outer1_3[9]);
             }
           }
         }
-        openCustomKeyboardResult = tmp60;
+        result1 = tmp73;
         if (name !== name1) {
-          openCustomKeyboardResult = null != activeOption;
+          result1 = null != activeOption;
         }
-        if (openCustomKeyboardResult) {
-          openCustomKeyboardResult = ApplicationCommandManager;
-          openCustomKeyboardResult = outer1_3;
-          openCustomKeyboardResult = activeOption.type !== ApplicationCommandManager(outer1_3[15]).ApplicationCommandOptionType.ATTACHMENT;
+        if (result1) {
+          result1 = ApplicationCommandManager;
+          result1 = outer1_3;
+          result1 = activeOption.type !== ApplicationCommandManager(outer1_3[15]).ApplicationCommandOptionType.ATTACHMENT;
         }
-        if (openCustomKeyboardResult) {
-          openCustomKeyboardResult = ApplicationCommandManager;
-          openCustomKeyboardResult = outer1_3;
-          openCustomKeyboardResult = ApplicationCommandManager(outer1_3[25]).getKeyboardType();
-          openCustomKeyboardResult = openCustomKeyboardResult !== ApplicationCommandManager(outer1_3[26]).KeyboardTypes.SYSTEM;
-          const obj12 = ApplicationCommandManager(outer1_3[25]);
+        if (result1) {
+          result1 = ApplicationCommandManager;
+          result1 = outer1_3;
+          result1 = ApplicationCommandManager(outer1_3[25]).getKeyboardType();
+          result1 = result1 !== ApplicationCommandManager(outer1_3[26]).KeyboardTypes.SYSTEM;
+          const obj13 = ApplicationCommandManager(outer1_3[25]);
         }
-        if (openCustomKeyboardResult) {
+        if (result1) {
           const current3 = self.ref.current;
-          openCustomKeyboardResult = current3.closeCustomKeyboard();
+          result1 = current3.closeCustomKeyboard();
           const current4 = self.ref.current;
-          openCustomKeyboardResult = current4.focus();
+          result1 = current4.focus();
         }
-        obj8 = ApplicationCommandManager(outer1_3[18]);
-        tmp61 = lastCommandAutocompleteResponseNonce !== editId.lastCommandAutocompleteResponseNonce;
+        obj9 = ApplicationCommandManager(outer1_3[18]);
+        tmp74 = lastCommandAutocompleteResponseNonce !== editId.lastCommandAutocompleteResponseNonce;
       }
       self.contextCommands = editId.queryCommands;
       const preferredCommand = self.preferredCommand;
@@ -1450,13 +1548,13 @@ let tmp3 = (() => {
           if (null != preferredCommand3) {
             preferredCommandType4 = preferredCommand3.preferredCommandType;
           }
-          let tmp17 = preferredCommandType4 === outer1_14.PARTIAL_COMMAND;
+          let tmp17 = preferredCommandType4 === outer1_15.PARTIAL_COMMAND;
           if (tmp17) {
             let preferredCommandType5;
             if (null != command) {
               preferredCommandType5 = command.preferredCommandType;
             }
-            tmp17 = preferredCommandType5 === outer1_14.FULL_COMMAND;
+            tmp17 = preferredCommandType5 === outer1_15.FULL_COMMAND;
           }
           if (tmp17) {
             self.preferredCommand = command;
@@ -1484,7 +1582,7 @@ let tmp3 = (() => {
           }
           tmp22 = preferredCommandType6 !== preferredCommandType7;
         }
-        obj4 = self.preferredOptionValues[channel.id];
+        let obj4 = self.preferredOptionValues[channel.id];
         if (null == obj4) {
           obj4 = {};
         }
@@ -1495,12 +1593,40 @@ let tmp3 = (() => {
           preferredCommandType8 = command.preferredCommandType;
         }
         let tmp27 = null;
-        if (preferredCommandType8 === outer1_14.FULL_COMMAND) {
+        if (preferredCommandType8 === outer1_15.FULL_COMMAND) {
           tmp27 = command;
         }
         obj5.activeCommand = tmp27;
         obj5.preferredOptionValues = obj4;
         self.chatInputNodes = parser.parse(editId.text, obj5);
+        const mentionGames = self.mentionGames;
+        const items2 = [];
+        HermesBuiltin.arraySpread(mentionGames.values(), 0);
+        const mapped = items2.map((name) => name.name);
+        const tmp32 = outer1_16(self.mentionGames);
+        let iter = tmp32();
+        if (!iter.done) {
+          do {
+            let tmp33 = outer1_4;
+            let tmp34 = outer1_4(iter.value, 2);
+            let first = tmp34[0];
+            let tmp36 = ApplicationCommandManager;
+            let tmp37 = outer1_3;
+            obj3 = ApplicationCommandManager(outer1_3[14]);
+            let hasItem = 0 !== obj3.findGameMentionTokens(editId.text, tmp34[1].name, mapped).locations.length;
+            if (!hasItem) {
+              let text2 = editId.text;
+              let tmp39 = outer1_13;
+              hasItem = text2.includes(outer1_13(first));
+            }
+            if (!hasItem) {
+              let mentionGames2 = self.mentionGames;
+              let deleteResult = mentionGames2.delete(first);
+            }
+            iter2 = tmp32();
+            iter = iter2;
+          } while (!iter2.done);
+        }
         let optionsToNodes = self.optionsToNodes;
         optionsToNodes.clear();
         let optionValueNodes = self.optionValueNodes;
@@ -1538,50 +1664,50 @@ let tmp3 = (() => {
           if (null != activeCommand2) {
             preferredCommandType9 = activeCommand2.preferredCommandType;
           }
-          if (preferredCommandType9 === outer1_14.FULL_COMMAND) {
-            const items2 = [];
+          if (preferredCommandType9 === outer1_15.FULL_COMMAND) {
+            const items3 = [];
             const activeCommand5 = self.activeCommand;
             options = undefined;
-            openCustomKeyboardResult = outer1_15;
+            result1 = outer1_16;
             if (null != activeCommand5) {
               options = activeCommand5.options;
             }
             if (null == options) {
               options = [];
             }
-            result = openCustomKeyboardResult(options);
-            let iter = result();
-            if (!iter.done) {
+            const result1Result = result1(options);
+            let iter3 = result1Result();
+            if (!iter3.done) {
               do {
-                value = iter.value;
+                value = iter3.value;
                 name = value.name;
-                let tmp34 = obj4[name];
+                let tmp47 = obj4[name];
                 let optionValueNodes2 = self.optionValueNodes;
                 value = optionValueNodes2.get(name);
-                let tmp35 = null == tmp34 || "" === tmp34.displayText;
-                if (!tmp35) {
-                  let tmp36 = null != value;
-                  if (tmp36) {
+                let tmp48 = null == tmp47 || "" === tmp47.displayText;
+                if (!tmp48) {
+                  let tmp49 = null != value;
+                  if (tmp49) {
                     let str2 = editId.text;
-                    tmp36 = str2.substring(value.location + value.displayName.length + 1, value.location + value.length) === tmp34.displayText;
+                    tmp49 = str2.substring(value.location + value.displayName.length + 1, value.location + value.length) === tmp47.displayText;
                   }
-                  tmp35 = tmp36;
+                  tmp48 = tmp49;
                 }
-                if (!tmp35) {
+                if (!tmp48) {
                   delete tmp[tmp2];
-                  let tmp37 = ApplicationCommandManager;
-                  let tmp38 = outer1_3;
+                  let tmp50 = ApplicationCommandManager;
+                  let tmp51 = outer1_3;
                   if (value.type === ApplicationCommandManager(outer1_3[15]).ApplicationCommandOptionType.ATTACHMENT) {
-                    let arr = items2.push(name);
+                    let arr = items3.push(name);
                   }
                 }
-                iter2 = result();
-                iter = iter2;
-              } while (!iter2.done);
+                iter4 = result1Result();
+                iter3 = iter4;
+              } while (!iter4.done);
             }
-            if (items2.length > 0) {
-              obj3 = outer1_1(outer1_3[24]);
-              obj3.removeFiles(channel.id, items2, outer1_7.SlashCommand);
+            if (items3.length > 0) {
+              obj4 = outer1_1(outer1_3[24]);
+              obj4.removeFiles(channel.id, items3, outer1_7.SlashCommand);
             }
           }
         }
@@ -1592,7 +1718,7 @@ let tmp3 = (() => {
       } else {
         if (!tmp5) {
           if (null != self.preferredCommand) {
-            if (self.preferredCommand.preferredCommandType === outer1_14.FULL_COMMAND) {
+            if (self.preferredCommand.preferredCommandType === outer1_15.FULL_COMMAND) {
               let currentCommand = {};
               ({ preferredCommand: obj.command, preferredCommandSection: obj.section } = self);
             }
@@ -1602,8 +1728,7 @@ let tmp3 = (() => {
       }
     }
   };
-  items[1] = obj;
-  obj = {
+  items[4] = {
     key: "updateValidationResults",
     value: function updateValidationResults() {
       let self = this;
@@ -1614,7 +1739,7 @@ let tmp3 = (() => {
       if (null != activeCommand) {
         preferredCommandType = activeCommand.preferredCommandType;
       }
-      if (preferredCommandType === outer1_14.FULL_COMMAND) {
+      if (preferredCommandType === outer1_15.FULL_COMMAND) {
         const activeCommand2 = self.activeCommand;
         let tmp2 = null == activeCommand2;
         let arr = activeCommand2;
@@ -1634,9 +1759,8 @@ let tmp3 = (() => {
       outer1_2(outer1_3[9]).updateOptionStates(self.props.channel.id, obj);
     }
   };
-  items[2] = obj;
   return callback(ApplicationCommandManager, items);
 })();
 let result = require("_defineProperties").fileFinishedImporting("modules/application_commands/native/ApplicationCommandManager.tsx");
 
-export default tmp3;
+export default tmp4;

@@ -1,10 +1,10 @@
-// Module ID: 15454
-// Function ID: 118899
+// Module ID: 15501
+// Function ID: 119221
 // Name: AddFriendScreen
-// Dependencies: [57, 31, 27, 1849, 653, 11707, 33, 4130, 689, 11709, 3969, 675, 1212, 8332, 9122, 477, 4662, 4126, 12862, 12864, 2]
+// Dependencies: [57, 31, 27, 1849, 653, 11734, 33, 4130, 689, 11736, 3969, 675, 1212, 8376, 9158, 477, 4662, 4126, 12914, 12916, 2]
 // Exports: default
 
-// Module 15454 (AddFriendScreen)
+// Module 15501 (AddFriendScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -37,9 +37,9 @@ export default function AddFriendScreen(navigation) {
   let tmp4;
   navigation = navigation.navigation;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = navigation(11709);
+  let obj = navigation(11736);
   const contactSyncAccount = obj.useContactSyncAccount();
-  let obj1 = navigation(11709);
+  let obj1 = navigation(11736);
   [tmp4, dependencyMap] = callback(React.useState(!obj1.isContactSyncEnabled(contactSyncAccount)), 2);
   callback = React.useCallback(() => {
     const currentUser = outer1_7.getCurrentUser();
@@ -95,7 +95,7 @@ export default function AddFriendScreen(navigation) {
   const intl2 = navigation(1212).intl;
   obj2.children = intl2.string(navigation(1212).t["Rn/sLl"]);
   items2[1] = callback(navigation(4126).Text, obj2);
-  items2[2] = callback(contactSyncAccount(12862), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
+  items2[2] = callback(contactSyncAccount(12914), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
   const obj4 = { style: tmp.otherOptionsContainer };
   const obj5 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
   const intl3 = navigation(1212).intl;
@@ -104,7 +104,7 @@ export default function AddFriendScreen(navigation) {
   let tmp11 = null;
   if (tmp4) {
     const obj6 = { style: tmp.rowContainer, location: "Add Friend Modal" };
-    tmp11 = callback(contactSyncAccount(12864), obj6);
+    tmp11 = callback(contactSyncAccount(12916), obj6);
   }
   items3[1] = tmp11;
   obj4.children = items3;

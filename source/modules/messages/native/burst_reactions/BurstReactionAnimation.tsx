@@ -1,10 +1,10 @@
-// Module ID: 7068
-// Function ID: 56510
+// Module ID: 7067
+// Function ID: 56519
 // Name: BurstReactionAnimation
-// Dependencies: [31, 4122, 33, 4130, 7026, 566, 7069, 5453, 2]
+// Dependencies: [31, 4122, 33, 4130, 7025, 566, 7068, 5453, 2]
 // Exports: default
 
-// Module 7068 (BurstReactionAnimation)
+// Module 7067 (BurstReactionAnimation)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -30,14 +30,14 @@ export default function BurstReactionAnimation(arg0) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   const tmp3 = callback();
-  const burstReactionAnimationSource = require(7026) /* _generateAnimationSource */.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
+  const burstReactionAnimationSource = require(7025) /* _generateAnimationSource */.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
   require(566) /* initialize */;
   [][0] = _isNativeReflectConstruct;
   if (null == burstReactionAnimationSource) {
     return null;
   } else {
     if (withFadeOut) {
-      let tmp7 = 7069;
+      let tmp7 = 7068;
     } else {
       tmp7 = 5453;
     }
@@ -60,5 +60,5 @@ export default function BurstReactionAnimation(arg0) {
     obj["source"] = burstReactionAnimationSource;
     return jsx(importDefault(tmp7), { style: tmp3.content, loop: false });
   }
-  const obj2 = require(7026) /* _generateAnimationSource */;
+  const obj2 = require(7025) /* _generateAnimationSource */;
 };

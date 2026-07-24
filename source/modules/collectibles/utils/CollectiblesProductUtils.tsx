@@ -1,5 +1,5 @@
 // Module ID: 6785
-// Function ID: 53512
+// Function ID: 53534
 // Name: getProductOrbPrice
 // Dependencies: [57, 6780, 653, 1876, 2]
 // Exports: getProductSkuIds, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct

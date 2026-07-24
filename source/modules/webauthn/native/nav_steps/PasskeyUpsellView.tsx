@@ -1,10 +1,10 @@
-// Module ID: 13628
-// Function ID: 104690
+// Module ID: 13679
+// Function ID: 105014
 // Name: PasskeyUpsellView
-// Dependencies: [57, 31, 27, 13624, 653, 1345, 33, 4130, 689, 1456, 1212, 13629, 13630, 5087, 1920, 5121, 13633, 4126, 477, 5459, 4543, 9201, 2]
+// Dependencies: [57, 31, 27, 13675, 653, 1345, 33, 4130, 689, 1456, 1212, 13680, 13681, 5087, 1920, 5121, 13684, 4126, 477, 4543, 9237, 2]
 // Exports: default
 
-// Module 13628 (PasskeyUpsellView)
+// Module 13679 (PasskeyUpsellView)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -74,7 +74,7 @@ export default function PasskeyUpsellView() {
   obj = { bottom: true, style: tmp2.container };
   obj = { contentContainerStyle: tmp2.scrollViewContainer };
   obj1 = { style: tmp2.headerContainer };
-  const obj2 = { source: importDefault(13633), style: tmp2.headerImage };
+  const obj2 = { source: importDefault(13684), style: tmp2.headerImage };
   const items1 = [callback(closure_6, obj2), , ];
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.headerText };
   let intl = navigation(1212).intl;
@@ -132,7 +132,7 @@ export default function PasskeyUpsellView() {
   const obj13 = { variant: "text-sm/semibold", color: "text-brand" };
   const intl5 = navigation(1212).intl;
   obj13.children = intl5.format(navigation(1212).t.OeGXVv, { learnMoreLink: articleURL });
-  const items6 = [callback(navigation(5459).TextWithIOSLinkWorkaround, obj13), , ];
+  const items6 = [callback(navigation(4126).Text, obj13), , ];
   const obj14 = {};
   const intl6 = navigation(1212).intl;
   const string3 = intl6.string;
@@ -147,7 +147,7 @@ export default function PasskeyUpsellView() {
     let obj = callback(outer1_2[11]);
     obj.markDismissed(outer1_10.TAKE_ACTION);
     obj = { setRegistering: closure_2, setError: callback, onRegisterSuccess };
-    callback(outer1_2[21]).registerPasskey(obj);
+    callback(outer1_2[20]).registerPasskey(obj);
   };
   obj14.size = "lg";
   obj14.disabled = tmp5;

@@ -1,10 +1,10 @@
-// Module ID: 8520
-// Function ID: 67951
+// Module ID: 8565
+// Function ID: 68181
 // Name: PerLetterEffect
-// Dependencies: [31, 27, 33, 4130, 8521, 8522, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 8566, 8567, 4126, 2]
 // Exports: default
 
-// Module 8520 (PerLetterEffect)
+// Module 8565 (PerLetterEffect)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

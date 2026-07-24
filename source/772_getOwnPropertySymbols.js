@@ -1,5 +1,5 @@
 // Module ID: 772
-// Function ID: 8846
+// Function ID: 8847
 // Name: getOwnPropertySymbols
 // Dependencies: [773, 774]
 

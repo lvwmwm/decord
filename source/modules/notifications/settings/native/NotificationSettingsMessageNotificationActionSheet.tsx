@@ -1,10 +1,10 @@
-// Module ID: 10300
-// Function ID: 79519
+// Module ID: 10329
+// Function ID: 79710
 // Name: NotificationSettingsMessageNotificationActionSheet
-// Dependencies: [31, 27, 653, 33, 4130, 689, 5187, 10297, 4126, 1212, 7519, 7518, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5187, 10326, 4126, 1212, 7654, 7653, 2]
 // Exports: default
 
-// Module 10300 (NotificationSettingsMessageNotificationActionSheet)
+// Module 10329 (NotificationSettingsMessageNotificationActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserNotificationSettings } from "ME";
@@ -30,7 +30,7 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   let obj = { startExpanded: true, backgroundStyles: tmp.sheet };
   obj = { style: tmp.header };
   obj = { notificationSetting: defaultValue.value };
-  obj.children = callback(importDefault(10297), obj);
+  obj.children = callback(importDefault(10326), obj);
   const items = [callback(View, obj), ];
   const obj1 = { style: tmp.content };
   const obj2 = { variant: "text-sm/semibold" };
@@ -44,19 +44,19 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   obj5.label = intl2.string(require(1212) /* getSystemLocale */.t["HVah/3"]);
   obj5.value = UserNotificationSettings.ALL_MESSAGES;
   obj5.subLabel = defaultValue.allMessagesSubLabel;
-  const items2 = [callback(require(7518) /* TableRadioRow */.TableRadioRow, obj5), , ];
+  const items2 = [callback(require(7653) /* TableRadioRow */.TableRadioRow, obj5), , ];
   const obj6 = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.label = intl3.string(require(1212) /* getSystemLocale */.t["tu+ZWJ"]);
   obj6.value = UserNotificationSettings.ONLY_MENTIONS;
-  items2[1] = callback(require(7518) /* TableRadioRow */.TableRadioRow, obj6);
+  items2[1] = callback(require(7653) /* TableRadioRow */.TableRadioRow, obj6);
   const obj7 = {};
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj7.label = intl4.string(require(1212) /* getSystemLocale */.t.X4wWUi);
   obj7.value = UserNotificationSettings.NO_MESSAGES;
-  items2[2] = callback(require(7518) /* TableRadioRow */.TableRadioRow, obj7);
+  items2[2] = callback(require(7653) /* TableRadioRow */.TableRadioRow, obj7);
   obj4.children = items2;
-  obj3.children = callback2(require(7519) /* context */.TableRadioGroup, obj4);
+  obj3.children = callback2(require(7654) /* context */.TableRadioGroup, obj4);
   items1[2] = callback(View, obj3);
   obj1.children = items1;
   items[1] = callback2(View, obj1);

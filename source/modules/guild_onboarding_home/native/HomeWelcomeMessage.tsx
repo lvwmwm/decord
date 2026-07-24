@@ -1,10 +1,10 @@
-// Module ID: 15288
-// Function ID: 116577
+// Module ID: 15335
+// Function ID: 116899
 // Name: replaceUsernameVariable
-// Dependencies: [31, 27, 1838, 1849, 4333, 33, 4130, 689, 624, 7887, 8236, 5687, 7888, 3969, 3842, 665, 7880, 1273, 11909, 4126, 4319, 8423, 2]
+// Dependencies: [31, 27, 1838, 1849, 4333, 33, 4130, 689, 624, 7974, 8280, 5687, 7975, 3969, 3842, 665, 7967, 1273, 11936, 4126, 4319, 8467, 2]
 // Exports: default
 
-// Module 15288 (replaceUsernameVariable)
+// Module 15335 (replaceUsernameVariable)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";

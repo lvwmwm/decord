@@ -1,10 +1,10 @@
-// Module ID: 8206
-// Function ID: 64894
+// Module ID: 8250
+// Function ID: 65122
 // Name: useFetchCollectiblesProduct
 // Dependencies: [57, 31, 4175, 6774, 653, 624, 1876, 6773, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 8206 (useFetchCollectiblesProduct)
+// Module 8250 (useFetchCollectiblesProduct)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

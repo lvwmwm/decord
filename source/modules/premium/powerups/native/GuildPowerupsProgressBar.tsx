@@ -1,10 +1,10 @@
-// Module ID: 15044
-// Function ID: 114565
+// Module ID: 15091
+// Function ID: 114886
 // Name: GuildPowerupsProgressBar
-// Dependencies: [31, 27, 15045, 1838, 33, 689, 3991, 4554, 4130, 624, 15046, 15047, 4131, 11512, 5484, 1212, 2230, 8372, 4126, 5514, 2]
+// Dependencies: [31, 27, 15092, 1838, 33, 689, 3991, 4554, 4130, 624, 15093, 15094, 4131, 11542, 5482, 1212, 2230, 8416, 4126, 5512, 2]
 // Exports: default
 
-// Module 15044 (GuildPowerupsProgressBar)
+// Module 15091 (GuildPowerupsProgressBar)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

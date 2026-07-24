@@ -1,10 +1,10 @@
-// Module ID: 7401
-// Function ID: 59533
+// Module ID: 7403
+// Function ID: 59568
 // Name: WhatYouLoseItem
-// Dependencies: [31, 27, 1851, 33, 4130, 689, 5085, 4126, 3776, 5464, 7402, 44, 7407, 1212, 7408, 7409, 7410, 7411, 4098, 5187, 6670, 4543, 7156, 2]
+// Dependencies: [31, 27, 1851, 33, 4130, 689, 5085, 4126, 3776, 5462, 7404, 44, 7409, 1212, 7410, 7411, 7412, 7413, 4098, 5187, 6670, 4543, 7156, 2]
 // Exports: default
 
-// Module 7401 (WhatYouLoseItem)
+// Module 7403 (WhatYouLoseItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";

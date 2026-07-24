@@ -1,10 +1,10 @@
-// Module ID: 10591
-// Function ID: 82642
+// Module ID: 10620
+// Function ID: 82834
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4148, 686, 664, 22, 5744, 3976, 566, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 10591 (_isNativeReflectConstruct)
+// Module 10620 (_isNativeReflectConstruct)
 import dispatcher from "dispatcher";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

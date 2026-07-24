@@ -1,10 +1,10 @@
-// Module ID: 16202
-// Function ID: 125750
+// Module ID: 16249
+// Function ID: 126074
 // Name: Overview
-// Dependencies: [31, 27, 1342, 1849, 653, 33, 4130, 689, 1920, 566, 9189, 1456, 4540, 4543, 1212, 15964, 507, 9230, 4126, 5459, 14370, 2]
+// Dependencies: [31, 27, 1342, 1849, 653, 33, 4130, 689, 1920, 566, 9225, 1456, 4540, 4543, 1212, 16011, 507, 9266, 4126, 14420, 2]
 // Exports: default
 
-// Module 16202 (Overview)
+// Module 16249 (Overview)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -116,7 +116,7 @@ export default function Overview() {
   const obj2 = { variant: "text-sm/medium", style: tmp.body };
   const intl2 = require(navigation[14]).intl;
   obj2.children = intl2.format(require(navigation[14]).t["0rqMV5"], { helpCenterURL: closure_14 });
-  items2[1] = callback(require(navigation[19]).TextWithIOSLinkWorkaround, obj2);
+  items2[1] = callback(require(navigation[18]).Text, obj2);
   const obj3 = { helpCenterURL: closure_14 };
   let tmp4 = stateFromStores(navigation[12]);
   items2[2] = callback(View, { style: tmp.blocks, children: callback() });
@@ -126,7 +126,7 @@ export default function Overview() {
   const obj6 = { variant: "secondary" };
   const intl3 = require(navigation[14]).intl;
   obj6.text = intl3.string(require(navigation[14]).t["Yl/Riu"]);
-  obj6.onPress = require(navigation[20]).emailSupport;
+  obj6.onPress = require(navigation[19]).emailSupport;
   obj5.children = callback(require(navigation[13]).Button, obj6);
   items3[1] = callback(View, obj5);
   obj.children = items3;

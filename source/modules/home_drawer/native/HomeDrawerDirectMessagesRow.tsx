@@ -1,10 +1,10 @@
-// Module ID: 14839
-// Function ID: 113219
+// Module ID: 14886
+// Function ID: 113540
 // Name: HomeDrawerDMsRow
-// Dependencies: [31, 27, 4217, 3767, 653, 33, 4130, 689, 566, 4126, 1212, 14835, 3987, 3984, 2]
+// Dependencies: [31, 27, 4217, 3767, 653, 33, 4130, 689, 566, 4126, 1212, 14882, 3987, 3984, 2]
 // Exports: default
 
-// Module 14839 (HomeDrawerDMsRow)
+// Module 14886 (HomeDrawerDMsRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ function HomeDrawerDMsRow() {
   obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.YUU0RF);
   obj3.title = callback(require(4126) /* Text */.Text, obj4);
   obj3.subtitle = tmp3;
-  return callback(require(14835) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
+  return callback(require(14882) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
 }
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 _createForOfIteratorHelperLoose = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 } };

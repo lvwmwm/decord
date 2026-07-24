@@ -1,10 +1,10 @@
-// Module ID: 14162
-// Function ID: 108964
+// Module ID: 14212
+// Function ID: 109287
 // Name: GradientThemeBackground
-// Dependencies: [31, 27, 1278, 14161, 482, 33, 4130, 689, 3975, 3840, 4662, 1273, 14163, 624, 3834, 14164, 3944, 3848, 4660, 1212, 2]
+// Dependencies: [31, 27, 1278, 14211, 482, 33, 4130, 689, 3975, 3840, 4662, 1273, 14213, 624, 3834, 14214, 3944, 3848, 4660, 1212, 2]
 // Exports: default
 
-// Module 14162 (GradientThemeBackground)
+// Module 14212 (GradientThemeBackground)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ function GradientThemeBackground(arg0) {
   obj1.mixColorOverride = isThemeDarkResult ? importDefaultResult1 : importDefaultResult2;
   const items1 = [callback(importDefault(4662), obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(14163), style: tmp2.lock };
+    const obj3 = { source: importDefault(14213), style: tmp2.lock };
     isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
   }
   items1[1] = isThemeLocked;
@@ -73,7 +73,7 @@ function DefaultThemeBackground(item) {
   if ("system" === item.theme) {
     obj1 = { style: { alignSelf: "center", justifyContent: "center", flex: 1 } };
     obj2 = { fill: token2 };
-    obj1.children = callback(importDefault(14164), obj2);
+    obj1.children = callback(importDefault(14214), obj2);
     tmp9 = callback(View, obj1);
   }
   obj.children = tmp9;
@@ -103,7 +103,7 @@ function CustomThemeBackground(arg0) {
   obj1.customTheme = item;
   const items1 = [callback(require(4662) /* getThemeMixColor */.CustomThemedGradient, obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(14163), style: tmp2.lock };
+    const obj3 = { source: importDefault(14213), style: tmp2.lock };
     isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
   }
   items1[1] = isThemeLocked;

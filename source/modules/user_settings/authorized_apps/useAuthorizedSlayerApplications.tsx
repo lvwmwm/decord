@@ -1,10 +1,10 @@
-// Module ID: 14533
-// Function ID: 110916
+// Module ID: 14583
+// Function ID: 111239
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [31, 5066, 566, 10855, 5472, 2]
+// Dependencies: [31, 5066, 566, 10882, 5470, 2]
 // Exports: default
 
-// Module 14533 (useAuthorizedSlayerApplications)
+// Module 14583 (useAuthorizedSlayerApplications)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";

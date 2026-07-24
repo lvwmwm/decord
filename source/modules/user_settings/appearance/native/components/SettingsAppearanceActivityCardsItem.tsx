@@ -1,10 +1,10 @@
-// Module ID: 14181
-// Function ID: 108996
+// Module ID: 14231
+// Function ID: 109319
 // Name: ActivityCardsItem
-// Dependencies: [31, 33, 7879, 689, 14182, 2]
+// Dependencies: [31, 33, 7527, 689, 14232, 2]
 // Exports: default
 
-// Module 14181 (ActivityCardsItem)
+// Module 14231 (ActivityCardsItem)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export default function ActivityCardsItem(animatedStyles) {
   };
   obj.showsHorizontalScrollIndicator = false;
   obj.horizontal = true;
-  return jsx(animatedStyles(7879).FlashList, { paddingVertical: importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16 });
+  return jsx(animatedStyles(7527).FlashList, { paddingVertical: importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16 });
 };

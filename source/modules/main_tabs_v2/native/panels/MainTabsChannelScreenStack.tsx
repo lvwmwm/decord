@@ -1,9 +1,9 @@
-// Module ID: 15256
-// Function ID: 116405
+// Module ID: 15303
+// Function ID: 116727
 // Name: useIsCompletelyCovered
-// Dependencies: [57, 31, 27, 9123, 653, 482, 33, 4130, 15257, 3991, 4559, 4066, 1324, 8303, 15258, 4476, 3992, 4489, 15259, 1457, 14791, 3989, 14795, 5217, 3977, 14790, 3984, 686, 3990, 3842, 2]
+// Dependencies: [57, 31, 27, 9159, 653, 482, 33, 4130, 15304, 3991, 4559, 4066, 1324, 8347, 15305, 4476, 3992, 4489, 15306, 1457, 14838, 3989, 14842, 5217, 3977, 14837, 3984, 686, 3990, 3842, 2]
 
-// Module 15256 (useIsCompletelyCovered)
+// Module 15303 (useIsCompletelyCovered)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "dispatcher";
@@ -26,8 +26,8 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   const _require = index;
   const importDefault = highestFullyRenderedScreenIndex;
   const dependencyMap = translateX;
-  const enabled = importDefault(15257).useConfig({ location: "MainTabsChannelScreenStack" }).enabled;
-  const obj = importDefault(15257);
+  const enabled = importDefault(15304).useConfig({ location: "MainTabsChannelScreenStack" }).enabled;
+  const obj = importDefault(15304);
   const fn = function c() {
     return translateX.get() > 0;
   };
@@ -100,10 +100,10 @@ let closure_18 = importAllResult.memo(function FirstChannelScreen(cleanup) {
   ({ guildId, channelId, showCreateThread, freeze, focusChatPressableComponent, parentFreezeValue, highestFullyRenderedScreenIndex } = cleanup);
   const tmp = cleanup(4066)();
   let obj = transitionState(1324);
-  let obj1 = transitionState(8303);
+  let obj1 = transitionState(8347);
   const orientation = obj1.useOrientation();
   const tmp2 = callback2();
-  let obj2 = transitionState(15258);
+  let obj2 = transitionState(15305);
   const items = [cleanup, transitionState];
   const mainTabsChannelScreenStyles = obj2.useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX), parentFreezeValue);
   const effect = importAllResult.useEffect(() => {
@@ -138,7 +138,7 @@ let closure_18 = importAllResult.memo(function FirstChannelScreen(cleanup) {
   obj2.pointerEvents = str;
   obj2.accessibilityElementsHidden = !isActive || undefined;
   obj2.importantForAccessibility = "no-hide-descendants";
-  obj2.children = callback(cleanup(15259), { guildId, channelId, showCreateThread, isNavigationScreen: null == containerWidth, frame, screenIndex: index });
+  obj2.children = callback(cleanup(15306), { guildId, channelId, showCreateThread, isNavigationScreen: null == containerWidth, frame, screenIndex: index });
   obj1.children = callback(closure_7, obj2);
   const items2 = [callback(transitionState(4489).Freeze, obj1), focusChatPressableComponent];
   obj.children = items2;

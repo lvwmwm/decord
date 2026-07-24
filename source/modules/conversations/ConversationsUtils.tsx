@@ -1,10 +1,10 @@
-// Module ID: 6834
-// Function ID: 53984
+// Module ID: 6833
+// Function ID: 53993
 // Name: mapConversationModeration
 // Dependencies: [22, 2]
 // Exports: mapConversation
 
-// Module 6834 (mapConversationModeration)
+// Module 6833 (mapConversationModeration)
 function mapConversationModeration(moderation) {
   const prop = moderation.flagged_message_details;
   return { status: moderation.status, statusReason: moderation.status_reason, messageViolationRate: moderation.message_violation_rate, flaggedMessageCount: moderation.flagged_message_count, totalMessageCount: moderation.total_message_count, flaggedMessageIds: moderation.flagged_message_ids, flaggedMessageDetails: prop.map((messageId) => ({ messageId: messageId.message_id, category: messageId.category, severity: messageId.severity, confidence: messageId.confidence, reason: messageId.reason })), flaggedSummaryDetails: moderation.flagged_summary_details, flaggedTitle: moderation.flagged_title, flaggedSummary: moderation.flagged_summary, flaggedKeyPoints: moderation.flagged_key_points, failedMessageIds: moderation.failed_message_ids };

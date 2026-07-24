@@ -1,5 +1,5 @@
 // Module ID: 1180
-// Function ID: 13406
+// Function ID: 13407
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 31, 27, 1173, 977, 1174, 1175, 1177, 1178, 1179]
 // Exports: getCapturedScreenshot

@@ -1,7 +1,7 @@
 // Module ID: 3768
-// Function ID: 28911
+// Function ID: 28912
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 1858, 653, 1360, 3769, 5679, 7006, 8180, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1858, 653, 1360, 3769, 5679, 7005, 8224, 2]
 // Exports: isMessageComponentsV2
 
 // Module 3768 (_callSuper)

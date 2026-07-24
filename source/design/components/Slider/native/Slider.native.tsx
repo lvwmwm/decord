@@ -1,10 +1,10 @@
-// Module ID: 13090
-// Function ID: 100849
+// Module ID: 13142
+// Function ID: 101172
 // Name: Slider
-// Dependencies: [31, 27, 33, 4130, 689, 4099, 4100, 7523, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4099, 4100, 7658, 2]
 // Exports: Slider
 
-// Module 13090 (Slider)
+// Module 13142 (Slider)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -62,7 +62,7 @@ export const Slider = function Slider(step) {
   obj1["minimumTrackTintColor"] = tmp3.minimumTrackTintColor.backgroundColor;
   obj1["maximumTrackTintColor"] = tmp3.maximumTrackTintColor.backgroundColor;
   obj1["tapToSeek"] = true;
-  items1[1] = callback(step(7523), obj1);
+  items1[1] = callback(step(7658), obj1);
   let tmp12 = null;
   if (null != endIcon) {
     const obj2 = { style: tmp3.endIcon, children: endIcon };

@@ -1,10 +1,10 @@
-// Module ID: 14451
-// Function ID: 110399
+// Module ID: 14501
+// Function ID: 110722
 // Name: useCanRotate
-// Dependencies: [57, 31, 27, 33, 4130, 8303, 8564, 4543, 5504, 4126, 5121, 5449, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 8347, 8609, 4543, 5502, 4126, 5121, 5449, 2]
 // Exports: default
 
-// Module 14451 (useCanRotate)
+// Module 14501 (useCanRotate)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -60,7 +60,7 @@ function Content() {
     };
     return obj;
   }, items);
-  let obj = first(8564);
+  let obj = first(8609);
   const tooltip = obj.useTooltip(ref, memo);
   obj = {};
   obj = { style: tmp.container, children: callback2(first(4543).Button, obj1) };
@@ -73,7 +73,7 @@ function Content() {
     text: str,
     size: "md"
   };
-  const items1 = [callback2(View, obj), callback2(first(5504).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), callback2(first(5504).TableSwitchRow, { label: "Enable Bottom Position", value: first1, onValueChange: tmp7[1] }), callback2(TooltipNote, {})];
+  const items1 = [callback2(View, obj), callback2(first(5502).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), callback2(first(5502).TableSwitchRow, { label: "Enable Bottom Position", value: first1, onValueChange: tmp7[1] }), callback2(TooltipNote, {})];
   obj.children = items1;
   return callback3(closure_6, obj);
 }

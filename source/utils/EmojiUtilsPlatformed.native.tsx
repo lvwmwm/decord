@@ -1,9 +1,9 @@
-// Module ID: 7025
-// Function ID: 56390
+// Module ID: 7024
+// Function ID: 56399
 // Name: getURL
-// Dependencies: [57, 5, 27, 3772, 4110, 477, 22, 1392, 7026, 1447, 3974, 7065, 7070, 2]
+// Dependencies: [57, 5, 27, 3772, 4110, 477, 22, 1392, 7025, 1447, 3974, 7064, 7069, 2]
 
-// Module 7025 (getURL)
+// Module 7024 (getURL)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -239,7 +239,7 @@ let obj = {
     let emoji;
     let messageId;
     ({ channelId, messageId, emoji } = arg0);
-    const result = require(7065) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
+    const result = require(7064) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
   }
 };
 let result = require("get ActivityIndicator").fileFinishedImporting("utils/EmojiUtilsPlatformed.native.tsx");

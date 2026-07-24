@@ -1,10 +1,10 @@
-// Module ID: 16333
-// Function ID: 127496
+// Module ID: 16380
+// Function ID: 127820
 // Name: IdentityApplicationRow
-// Dependencies: [57, 31, 27, 33, 9984, 5165, 1273, 4066, 5186, 1212, 6735, 1392, 3976, 4098, 8360, 5500, 8760, 5189, 5121, 5503, 2]
+// Dependencies: [57, 31, 27, 33, 10016, 5165, 1273, 4066, 5186, 1212, 6735, 1392, 3976, 4098, 8404, 5498, 8799, 5189, 5121, 5501, 2]
 // Exports: default
 
-// Module 16333 (IdentityApplicationRow)
+// Module 16380 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(9984) /* useRequestApplication */;
+  let obj = require(10016) /* useRequestApplication */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;
@@ -158,7 +158,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     items.push(intl4.string(require(1212) /* getSystemLocale */.t.y3ZnnU));
   }
-  let obj2 = require(8360) /* useSegmentedControlState */;
+  let obj2 = require(8404) /* useSegmentedControlState */;
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp2[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = obj2.useSegmentedControlState(obj);
   if (1 === first) {
@@ -177,7 +177,7 @@ export default function SelectConnectionActionSheet(arg0) {
   if (num > 0) {
     obj1 = {};
     obj2 = { state: segmentedControlState };
-    obj1.children = callback2(require(8760) /* SegmentedControl */.SegmentedControl, obj2);
+    obj1.children = callback2(require(8799) /* SegmentedControl */.SegmentedControl, obj2);
     let tmp19 = callback2(closure_5, obj1);
   } else {
     tmp19 = null;
@@ -186,9 +186,9 @@ export default function SelectConnectionActionSheet(arg0) {
   const obj3 = {};
   const obj4 = { bottom: true };
   const obj5 = { hasIcons: true, children: tmp17 };
-  obj4.children = callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj5);
+  obj4.children = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj5);
   obj3.children = callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   items1[1] = callback2(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj3);
   obj.children = items1;
-  return closure_7(require(5500) /* ActionSheet */.ActionSheet, obj);
+  return closure_7(require(5498) /* ActionSheet */.ActionSheet, obj);
 };

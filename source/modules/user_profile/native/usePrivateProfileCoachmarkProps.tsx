@@ -1,10 +1,10 @@
-// Module ID: 15099
-// Function ID: 114957
+// Module ID: 15146
+// Function ID: 115278
 // Name: PrivateProfileCoachmarkImage
-// Dependencies: [31, 27, 653, 1345, 33, 4130, 6426, 1282, 1212, 7616, 3803, 1334, 5796, 2]
+// Dependencies: [31, 27, 653, 1345, 33, 4130, 6426, 1282, 1212, 7705, 3803, 1334, 5796, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 15099 (PrivateProfileCoachmarkImage)
+// Module 15146 (PrivateProfileCoachmarkImage)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";

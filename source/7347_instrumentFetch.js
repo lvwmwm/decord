@@ -1,5 +1,5 @@
 // Module ID: 7347
-// Function ID: 59241
+// Function ID: 59270
 // Name: instrumentFetch
 // Dependencies: [57, 5, 7234, 7348, 7242, 7237, 7250, 7243]
 // Exports: addFetchEndInstrumentationHandler, addFetchInstrumentationHandler

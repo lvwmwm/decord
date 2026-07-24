@@ -1,5 +1,5 @@
 // Module ID: 5662
-// Function ID: 48610
+// Function ID: 48620
 // Name: validateGuildId
 // Dependencies: [6, 7, 653, 5663, 5664, 5665, 4015, 22, 2]
 

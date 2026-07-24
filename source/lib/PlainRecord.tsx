@@ -1,5 +1,5 @@
 // Module ID: 1388
-// Function ID: 16566
+// Function ID: 16567
 // Name: constructInPlace
 // Dependencies: [1389, 44, 1390, 620, 2]
 // Exports: copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord

@@ -1,5 +1,5 @@
 // Module ID: 4040
-// Function ID: 33646
+// Function ID: 33647
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default

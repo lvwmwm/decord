@@ -1,10 +1,10 @@
-// Module ID: 16566
-// Function ID: 129222
+// Module ID: 16613
+// Function ID: 129546
 // Name: SafetyFlowTaskScreen
-// Dependencies: [31, 33, 4130, 7572, 7573, 4541, 4126, 5459, 11071, 16564, 9905, 2]
+// Dependencies: [31, 33, 4130, 7613, 7614, 4541, 4126, 11098, 16611, 9937, 2]
 // Exports: default
 
-// Module 16566 (SafetyFlowTaskScreen)
+// Module 16613 (SafetyFlowTaskScreen)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -51,30 +51,30 @@ export default function SafetyFlowTaskScreen(action) {
   let tmp5 = null != subtitle;
   if (tmp5) {
     const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp5 = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj2);
+    tmp5 = callback(require(4126) /* Text */.Text, obj2);
   }
   items[2] = tmp5;
   obj.children = items;
   const items1 = [closure_4(require(4541) /* Stack */.Stack, obj), children];
   obj.children = items1;
-  const items2 = [closure_4(require(7573) /* ModalContent */.ModalContent, obj), ];
+  const items2 = [closure_4(require(7614) /* ModalContent */.ModalContent, obj), ];
   if (undefined === footer) {
     const obj3 = {};
     if (withLogout) {
-      withLogout = callback(importDefault(16564), {});
+      withLogout = callback(importDefault(16611), {});
     }
     const items3 = [withLogout, ];
     let tmp12 = null != action;
     if (tmp12) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp12 = callback(require(9905) /* ModalActionButton */.ModalActionButton, obj4);
+      tmp12 = callback(require(9937) /* ModalActionButton */.ModalActionButton, obj4);
     }
     items3[1] = tmp12;
     obj3.children = items3;
-    footer = closure_4(require(11071) /* ModalFooter */.ModalFooter, obj3);
+    footer = closure_4(require(11098) /* ModalFooter */.ModalFooter, obj3);
     const tmp16 = closure_4;
   }
   items2[1] = footer;
   obj.children = items2;
-  return closure_4(require(7572) /* ModalScreen */.ModalScreen, obj);
+  return closure_4(require(7613) /* ModalScreen */.ModalScreen, obj);
 };

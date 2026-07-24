@@ -1,10 +1,10 @@
-// Module ID: 10840
-// Function ID: 84128
+// Module ID: 10869
+// Function ID: 84320
 // Name: shouldUseScrollIndicatorOverlay
 // Dependencies: [1428, 2]
 // Exports: useIsBountiesVerticalScrollExperimentActive, useIsBountiesVerticalScrollExperimentEnabled, useIsScrollIndicatorOverlayVariant
 
-// Module 10840 (shouldUseScrollIndicatorOverlay)
+// Module 10869 (shouldUseScrollIndicatorOverlay)
 import ApexExperiment from "ApexExperiment";
 
 function shouldUseScrollIndicatorOverlay(scrollAffordanceVariant) {

@@ -1,10 +1,10 @@
-// Module ID: 15275
-// Function ID: 116526
+// Module ID: 15322
+// Function ID: 116848
 // Name: emphasisHook
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 4126, 1557, 14116, 3712, 5187, 1212, 1273, 15268, 4337, 15276, 1934, 4098, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 4126, 1557, 14166, 3712, 5187, 1212, 1273, 15315, 4337, 15323, 1934, 4098, 2]
 // Exports: default
 
-// Module 15275 (emphasisHook)
+// Module 15322 (emphasisHook)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -32,9 +32,9 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   let changeToListingId;
   activeSubscription = activeSubscription.activeSubscription;
   ({ activeListingId, changeToListingId } = activeSubscription);
-  let obj = importAll(14116);
+  let obj = importAll(14166);
   const first = callback(obj.useName(activeListingId), 1)[0];
-  let obj1 = importAll(14116);
+  let obj1 = importAll(14166);
   let obj2 = importDefault(3712)(activeSubscription.currentPeriodEnd);
   const tmp = _createForOfIteratorHelperLoose();
   obj = { startExpanded: true };
@@ -71,7 +71,7 @@ export default function ChangeSubscriptionCard(activeSubscription) {
       obj.pushLazy(activeSubscription(outer1_3[17])(outer1_3[16], outer1_3.paths), obj);
       outer1_1(outer1_3[18]).hideActionSheet();
     };
-    items3[1] = callback2(activeSubscription(15268).ArrowButton, obj8);
+    items3[1] = callback2(activeSubscription(15315).ArrowButton, obj8);
     obj6.children = items3;
     tmp7 = callback3(closure_9, obj6);
   }

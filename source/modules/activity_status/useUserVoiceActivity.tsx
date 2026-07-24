@@ -1,10 +1,10 @@
-// Module ID: 9066
-// Function ID: 71171
+// Module ID: 9105
+// Function ID: 71386
 // Name: getUserVoiceState
 // Dependencies: [1348, 3758, 4146, 482, 566, 2]
 // Exports: canViewUserVoiceChannel, default
 
-// Module 9066 (getUserVoiceState)
+// Module 9105 (getUserVoiceState)
 import importDefaultResult from "_isNativeReflectConstruct";
 import importDefaultResult1 from "_isNativeReflectConstruct";
 import importDefaultResult2 from "_isNativeReflectConstruct";

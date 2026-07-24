@@ -1,9 +1,9 @@
-// Module ID: 12644
-// Function ID: 98358
+// Module ID: 12695
+// Function ID: 98679
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 11452, 653, 3, 25, 684, 675, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 11482, 653, 3, 25, 684, 675, 566, 686, 2]
 
-// Module 12644 (_isNativeReflectConstruct)
+// Module 12695 (_isNativeReflectConstruct)
 import ME from "ME";
 import timestamp from "timestamp";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,5 +1,5 @@
 // Module ID: 6002
-// Function ID: 49957
+// Function ID: 49968
 // Name: DiamondSpotIllustration
 // Dependencies: [33, 5085, 6003, 2]
 // Exports: DiamondSpotIllustration

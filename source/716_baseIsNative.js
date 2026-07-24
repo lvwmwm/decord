@@ -1,5 +1,5 @@
 // Module ID: 716
-// Function ID: 8738
+// Function ID: 8739
 // Name: baseIsNative
 // Dependencies: [573, 717, 597, 719]
 

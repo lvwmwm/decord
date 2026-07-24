@@ -1,10 +1,10 @@
-// Module ID: 7866
-// Function ID: 62679
+// Module ID: 7955
+// Function ID: 62998
 // Name: EditCollectibleListItem
-// Dependencies: [31, 27, 1849, 655, 33, 4130, 689, 4660, 4099, 4100, 1273, 7867, 4126, 1212, 5464, 6773, 4098, 7868, 7869, 566, 3776, 7857, 6786, 2]
+// Dependencies: [31, 27, 1849, 655, 33, 4130, 689, 4660, 4099, 4100, 1273, 7956, 4126, 1212, 5462, 6773, 4098, 7957, 7958, 566, 3776, 7946, 6786, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 7866 (EditCollectibleListItem)
+// Module 7955 (EditCollectibleListItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -74,7 +74,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
-  obj = { source: importDefault(7867), size: require(1273) /* Button */.IconSizes.LARGE };
+  obj = { source: importDefault(7956), size: require(1273) /* Button */.IconSizes.LARGE };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -96,7 +96,7 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
   obj.analyticsSource = 0;
   const merged = Object.assign(analyticsSource, obj);
   const tmp3 = _createForOfIteratorHelperLoose();
-  analyticsLocations = analyticsLocations(5464)(analyticsSource).analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
   obj = {
     style: tmp3.optionCell,
@@ -109,13 +109,13 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
     }, items)
   };
   const merged1 = Object.assign(merged);
-  obj = { source: analyticsLocations(7868), size: analyticsSource(1273).IconSizes.LARGE };
+  obj = { source: analyticsLocations(7957), size: analyticsSource(1273).IconSizes.LARGE };
   const items1 = [callback(analyticsSource(1273).Icon, obj), , ];
   const obj1 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp3.optionCellText };
   const intl = analyticsSource(1212).intl;
   obj1.children = intl.string(analyticsSource(1212).t.pWG4ze);
   items1[1] = callback(analyticsSource(4126).Text, obj1);
-  items1[2] = callback(analyticsSource(7869).NewBadge, { style: tmp3.newIcon });
+  items1[2] = callback(analyticsSource(7958).NewBadge, { style: tmp3.newIcon });
   obj["children"] = items1;
   return callback2(EditCollectibleListItem, obj);
 };
@@ -133,7 +133,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getCurrentUser());
   const obj3 = importDefault(3776);
-  const tmp6 = importDefault(7857)(skuId);
+  const tmp6 = importDefault(7946)(skuId);
   const purchase = tmp6.purchase;
   const canUseCollectiblesResult = importDefault(3776).canUseCollectibles(stateFromStores);
   const isProductNewResult = require(6786) /* getPriceForCollectiblesProduct */.isProductNew(skuId);
@@ -149,7 +149,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   if (null == purchase) {
     if (!result) {
       obj = { style: tmp3.lockIcon, isNew: isProductNewResult };
-      let tmp17 = callback(require(7869) /* NewBadge */.LockBadge, obj);
+      let tmp17 = callback(require(7958) /* NewBadge */.LockBadge, obj);
     }
     items1[1] = tmp17;
     obj["children"] = items1;
@@ -161,7 +161,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
     if (!isTryItOut) {
       if (null == purchase) {
         obj1 = { style: tmp3.lockIcon, isNew: isProductNewResult };
-        tmp18 = callback(require(7869) /* NewBadge */.PremiumBadge, obj1);
+        tmp18 = callback(require(7958) /* NewBadge */.PremiumBadge, obj1);
       } else {
         tmp18 = null;
       }

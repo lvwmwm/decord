@@ -1,5 +1,5 @@
 // Module ID: 1455
-// Function ID: 16984
+// Function ID: 16985
 // Name: APP_LAUNCHER_BUILT_IN_SECTION_ICON
 // Dependencies: [1456, 689, 2, 1551]
 // Exports: useAppLauncherNavigation

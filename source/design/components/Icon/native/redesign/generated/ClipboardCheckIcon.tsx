@@ -1,10 +1,10 @@
-// Module ID: 14628
-// Function ID: 111441
+// Module ID: 14677
+// Function ID: 111760
 // Name: ClipboardCheckIcon
-// Dependencies: [31, 33, 689, 3833, 14629, 2]
+// Dependencies: [31, 33, 689, 3833, 14678, 2]
 // Exports: ClipboardCheckIcon
 
-// Module 14628 (ClipboardCheckIcon)
+// Module 14677 (ClipboardCheckIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ClipboardCheckIcon = function ClipboardCheckIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14629) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14678) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14629) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14678) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

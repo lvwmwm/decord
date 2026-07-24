@@ -1,5 +1,5 @@
 // Module ID: 6012
-// Function ID: 49972
+// Function ID: 49983
 // Name: DiscordWordmarkLogo
 // Dependencies: [27, 33, 689, 3834, 6013, 2]
 // Exports: DiscordWordmarkLogo

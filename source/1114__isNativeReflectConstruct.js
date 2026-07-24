@@ -1,5 +1,5 @@
 // Module ID: 1114
-// Function ID: 12676
+// Function ID: 12677
 // Name: _isNativeReflectConstruct
 // Dependencies: [57, 77, 6, 7, 15, 17, 18, 31, 1000, 1115, 794, 1116]
 // Exports: useProfiler, withProfiler

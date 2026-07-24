@@ -1,5 +1,5 @@
 // Module ID: 5928
-// Function ID: 49846
+// Function ID: 49857
 // Name: CampfireSceneSpotIllustration
 // Dependencies: [33, 5085, 5929, 2]
 // Exports: CampfireSceneSpotIllustration

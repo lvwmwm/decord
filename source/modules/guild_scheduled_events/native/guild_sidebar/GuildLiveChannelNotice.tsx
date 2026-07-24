@@ -1,10 +1,10 @@
-// Module ID: 15016
-// Function ID: 114397
+// Module ID: 15063
+// Function ID: 114718
 // Name: UserSummaryRow
-// Dependencies: [31, 27, 4951, 1353, 4149, 3758, 4203, 1354, 482, 33, 689, 1273, 4120, 10268, 9969, 9889, 477, 4547, 4130, 4126, 11563, 10261, 1820, 4341, 7477, 4066, 8830, 4543, 3976, 4320, 566, 1212, 4593, 8461, 8349, 8387, 8353, 4963, 4957, 4950, 8455, 4654, 15015, 9099, 5167, 2]
+// Dependencies: [31, 27, 4951, 1353, 4149, 3758, 4203, 1354, 482, 33, 689, 1273, 4120, 10297, 10001, 9921, 477, 4547, 4130, 4126, 11590, 10290, 1820, 4341, 7557, 4066, 8869, 4543, 3976, 4320, 566, 1212, 4593, 8505, 8393, 8431, 8397, 4963, 4957, 4950, 8499, 4654, 15062, 9137, 5167, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 15016 (UserSummaryRow)
+// Module 15063 (UserSummaryRow)
 import importAllResult from "getSystemLocale";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -105,9 +105,9 @@ function UserSummaryRow(arg0) {
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       obj1.style = items2;
       let obj2 = { size: "custom" };
-      let obj5 = max(10261);
+      let obj5 = max(10290);
       obj2.style = obj5.makeSizeStyle(14);
-      const items3 = [callback(max(11563).HeadphonesIcon, obj2), ];
+      const items3 = [callback(max(11590).HeadphonesIcon, obj2), ];
       let obj3 = { variant: "text-xs/semibold", style: null, maxFontSizeMultiplier: 1 };
       let obj4 = { marginLeft: 4 };
       obj3.style = obj4;
@@ -164,7 +164,7 @@ function JoinChannelButton(disabled) {
   const tmp = callback5();
   const tmp2 = importDefault(4066)();
   let obj = { style: tmp.button };
-  const tmp3 = importDefault(8830)();
+  const tmp3 = importDefault(8869)();
   obj = { onPress: useJoin(channel) };
   const tmp4 = useJoin(channel);
   const tmp5 = closure_13;
@@ -207,7 +207,7 @@ function GuildVoiceEventNotice(channel) {
   const tmp5 = callback;
   const tmp6 = closure_26;
   obj.LocationIcon = channel(4593).getChannelIconComponent(channel);
-  obj.LiveIcon = channel(8461).CalendarIcon;
+  obj.LiveIcon = channel(8505).CalendarIcon;
   obj = { guildId: channel.guild_id, users: stateFromStoresArray, isLiveStreaming: stateFromStores1 };
   obj.voiceUsers = callback(UserSummaryRow, obj);
   let tmp7;
@@ -222,7 +222,7 @@ function GuildVoiceEventNotice(channel) {
 }
 function GuildExternalEventNotice(guildEvent) {
   guildEvent = guildEvent.guildEvent;
-  let obj = require(8349) /* _getLocationFromEvent */;
+  let obj = require(8393) /* _getLocationFromEvent */;
   const locationFromEvent = obj.getLocationFromEvent(guildEvent);
   let tmp2 = null;
   if (null != locationFromEvent) {
@@ -231,8 +231,8 @@ function GuildExternalEventNotice(guildEvent) {
     obj.heading = intl.string(require(1212) /* getSystemLocale */.t.TxqPQR);
     obj.topic = guildEvent.name;
     obj.location = callback3(locationFromEvent, true);
-    obj.LocationIcon = require(8387) /* LocationIcon */.LocationIcon;
-    obj.LiveIcon = require(8461) /* CalendarIcon */.CalendarIcon;
+    obj.LocationIcon = require(8431) /* LocationIcon */.LocationIcon;
+    obj.LiveIcon = require(8505) /* CalendarIcon */.CalendarIcon;
     obj = { guildEvent };
     obj.joinButton = callback(SeeDetailButton, obj);
     tmp2 = callback(closure_26, obj);
@@ -270,7 +270,7 @@ function GuildLiveStageNotice(channel) {
   const obj3 = channel(566);
   const stageHasStream = channel(4950).useStageHasStream(channel.id);
   const obj4 = channel(4950);
-  const guildActiveEvent = channel(8455).useGuildActiveEvent(channel.guild_id);
+  const guildActiveEvent = channel(8499).useGuildActiveEvent(channel.guild_id);
   obj = {};
   const intl = channel(1212).intl;
   obj.heading = intl.string(channel(1212).t["X2K3/4"]);
@@ -282,7 +282,7 @@ function GuildLiveStageNotice(channel) {
   }
   obj.LocationIcon = channelIconComponent;
   if (null != guildActiveEvent) {
-    let StageIcon = channel(8461).CalendarIcon;
+    let StageIcon = channel(8505).CalendarIcon;
   } else {
     StageIcon = channel(4654).StageIcon;
   }
@@ -320,8 +320,8 @@ obj["guild"] = {
     if ("string" === typeof content.content) {
       content = content.content;
     } else {
-      content = require(9969) /* smartOutput */.smartOutput(content, output, state);
-      const obj = require(9969) /* smartOutput */;
+      content = require(10001) /* smartOutput */.smartOutput(content, output, state);
+      const obj = require(10001) /* smartOutput */;
     }
     return content;
   }
@@ -331,8 +331,8 @@ let obj1 = {
     if ("string" === typeof content.content) {
       content = content.content;
     } else {
-      content = require(9969) /* smartOutput */.smartOutput(content, output, state);
-      const obj = require(9969) /* smartOutput */;
+      content = require(10001) /* smartOutput */.smartOutput(content, output, state);
+      const obj = require(10001) /* smartOutput */;
     }
     return content;
   }
@@ -446,9 +446,9 @@ let result = set.fileFinishedImporting("modules/guild_scheduled_events/native/gu
 
 export default importAllResult.memo((guild) => {
   guild = guild.guild;
-  let obj = activeEventOrStageInstanceChannel(15015);
+  let obj = activeEventOrStageInstanceChannel(15062);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
-  let obj1 = activeEventOrStageInstanceChannel(8455);
+  let obj1 = activeEventOrStageInstanceChannel(8499);
   const guildActiveEvent = obj1.useGuildActiveEvent(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(566);
   const items = [closure_7];
@@ -523,13 +523,13 @@ export const getScaledLiveChannelNoticeHeight = function getScaledLiveChannelNot
   let hasSpeakers;
   let hasStream;
   ({ hasSpeakers, hasButton, hasAudience, hasStream } = guildLiveChannelNoticeInfo);
-  require(9889) /* scaleLineHeight */;
+  require(9921) /* scaleLineHeight */;
   if (!hasSpeakers) {
     if (!hasAudience) {
       let num = 0;
     }
-    const sum = PX_82 + require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-md/semibold", fontScale);
-    const obj = require(9889) /* scaleLineHeight */;
+    const sum = PX_82 + require(9921) /* scaleLineHeight */.scaleTextLineHeight("text-md/semibold", fontScale);
+    const obj = require(9921) /* scaleLineHeight */;
     const tmp7 = PX_4;
     let num3 = 0;
     if (obj2.isAndroid()) {
@@ -538,7 +538,7 @@ export const getScaledLiveChannelNoticeHeight = function getScaledLiveChannelNot
     const sum1 = tmp7 + num3;
     obj2 = require(477) /* set */;
     let num4 = 0;
-    const sum2 = sum1 + require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
+    const sum2 = sum1 + require(9921) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
     if (hasButton) {
       num4 = PX_82 + require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT;
     }

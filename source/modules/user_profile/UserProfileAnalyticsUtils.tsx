@@ -1,10 +1,10 @@
-// Module ID: 8267
-// Function ID: 65188
+// Module ID: 8311
+// Function ID: 65416
 // Name: getProfileProperties
-// Dependencies: [8268, 5066, 6902, 4149, 1917, 4217, 3767, 1849, 6856, 8264, 653, 482, 1392, 7887, 675, 4324, 8272, 2]
+// Dependencies: [8312, 5066, 6901, 4149, 1917, 4217, 3767, 1849, 6855, 8308, 653, 482, 1392, 7974, 675, 4324, 8316, 2]
 // Exports: maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8267 (getProfileProperties)
+// Module 8311 (getProfileProperties)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
@@ -161,7 +161,7 @@ function getTrackUserProfileProperties(voiceChannelId) {
     if (showGuildProfile) {
       tmp3 = guildId;
     }
-    const displayProfile = require(7887) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
+    const displayProfile = require(7974) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
     let member = null;
     if (showGuildProfile) {
       member = null;
@@ -321,7 +321,7 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
   let timeToInteractiveMs;
   let timeToLoadMs;
   let viewStartedAt;
-  let obj = require(8272) /* isUserProfilePerformanceAnalyticsEnabled */;
+  let obj = require(8316) /* isUserProfilePerformanceAnalyticsEnabled */;
   if (obj.isUserProfilePerformanceAnalyticsEnabled("UserProfileAnalyticsUtils")) {
     ({ timeToInteractiveMs, timeToLoadMs, timeToFetchMs } = voiceChannelId);
     let num2 = 0;

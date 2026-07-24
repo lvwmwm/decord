@@ -1,10 +1,10 @@
-// Module ID: 12772
-// Function ID: 99479
+// Module ID: 12823
+// Function ID: 99800
 // Name: getSystemwideEchoCancellationExperimentConfig
 // Dependencies: [1428, 2]
 // Exports: getSystemwideEchoCancellationExperimentConfig
 
-// Module 12772 (getSystemwideEchoCancellationExperimentConfig)
+// Module 12823 (getSystemwideEchoCancellationExperimentConfig)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-06-systemwide-echo-cancellation-for-people-who-refuse-to-wear-headphones", defaultConfig: { echoReferenceMode: "mix" }, variations: { [1]: { echoReferenceMode: "auto" } } };

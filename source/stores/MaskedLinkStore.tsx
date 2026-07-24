@@ -1,9 +1,9 @@
-// Module ID: 8338
-// Function ID: 66070
+// Module ID: 8382
+// Function ID: 66298
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8311, 8339, 1443, 587, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 8355, 8383, 1443, 587, 566, 686, 2]
 
-// Module 8338 (_isNativeReflectConstruct)
+// Module 8382 (_isNativeReflectConstruct)
 import getHostname from "getHostname";
 import isOriginalContentTypeDifferent from "isOriginalContentTypeDifferent";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -23,7 +23,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _isTrustedDomain(url) {
-  const hostname = require(8339) /* getHostname */.getHostname(url);
+  const hostname = require(8383) /* getHostname */.getHostname(url);
   if (window.GLOBAL_ENV.INVITE_HOST !== hostname) {
     const _window2 = window;
     if (window.GLOBAL_ENV.GIFT_CODE_HOST !== hostname) {
@@ -49,7 +49,7 @@ function _isTrustedDomain(url) {
   return true;
 }
 function _isTrustedProtocol(url) {
-  return set1.has(require(8339) /* getHostname */.getProtocol(url));
+  return set1.has(require(8383) /* getHostname */.getProtocol(url));
 }
 let set = new Set();
 const set1 = new Set();
@@ -149,7 +149,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     if (_isTrustedDomain(url)) {
       return false;
     } else {
-      let obj = require(8339) /* getHostname */;
+      let obj = require(8383) /* getHostname */;
       set.add(obj.getHostname(url));
       const Storage = require(587) /* Storage */.Storage;
       obj = { trustedDomains: set, trustedProtocols: set1 };
@@ -161,7 +161,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     if (_isTrustedProtocol(url)) {
       return false;
     } else {
-      let obj = require(8339) /* getHostname */;
+      let obj = require(8383) /* getHostname */;
       set1.add(obj.getProtocol(url));
       const Storage = require(587) /* Storage */.Storage;
       obj = { trustedDomains: set, trustedProtocols: set1 };

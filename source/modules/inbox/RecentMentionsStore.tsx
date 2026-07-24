@@ -1,9 +1,9 @@
-// Module ID: 6880
-// Function ID: 54482
+// Module ID: 6879
+// Function ID: 54490
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3768, 1194, 1348, 4349, 4142, 3767, 3947, 4325, 1849, 653, 587, 4351, 4345, 4365, 22, 4206, 5651, 6881, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3768, 1194, 1348, 4349, 4142, 3767, 3947, 4325, 1849, 653, 587, 4351, 4345, 4365, 22, 4206, 5651, 6880, 566, 686, 2]
 
-// Module 6880 (_isNativeReflectConstruct)
+// Module 6879 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import Storage from "Storage";
@@ -130,7 +130,7 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!importDefault(6881)(message, id)) {
+        if (!importDefault(6880)(message, id)) {
           const tmp12 = findOrCreateMessageRecord(message);
           let obj = { message: tmp12, userId: id, suppressEveryone: !closure_28.everyoneFilter, suppressRoles: !closure_28.roleFilter };
           let tmp19 = null;

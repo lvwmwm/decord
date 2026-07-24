@@ -1,10 +1,10 @@
-// Module ID: 9903
-// Function ID: 76631
+// Module ID: 9935
+// Function ID: 76825
 // Name: ShareChatInput
-// Dependencies: [31, 27, 653, 33, 4130, 689, 477, 7934, 7503, 1212, 4660, 8007, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 477, 8021, 7644, 1212, 4660, 7437, 2]
 // Exports: default
 
-// Module 9903 (ShareChatInput)
+// Module 9935 (ShareChatInput)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -51,8 +51,8 @@ export default function ShareChatInput(disabled) {
   }
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  obj = { ref: inputRef, maxLength: importDefault(7934)() };
-  const tmp2 = importDefault(7934)();
+  obj = { ref: inputRef, maxLength: importDefault(8021)() };
+  const tmp2 = importDefault(8021)();
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t.ZroO3G);
   obj.placeholderTextColor = tmp.inputPlaceholder.color;
@@ -71,7 +71,7 @@ export default function ShareChatInput(disabled) {
   obj.textAlignVertical = "center";
   obj.inputTextStyle = tmp.chatText;
   obj.editable = !flag;
-  const items = [callback(importDefault(7503), obj), ];
+  const items = [callback(importDefault(7644), obj), ];
   obj = {};
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.iZ7Mz9);
@@ -79,7 +79,7 @@ export default function ShareChatInput(disabled) {
   obj.onPress = onPressEmoji;
   obj.style = tmp.emojiButton;
   obj.disabled = flag;
-  obj.children = callback(require(8007) /* ReactionIcon */.ReactionIcon, { size: "md" });
+  obj.children = callback(require(7437) /* ReactionIcon */.ReactionIcon, { size: "md" });
   items[1] = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
   obj.children = items;
   return callback2(View, obj);

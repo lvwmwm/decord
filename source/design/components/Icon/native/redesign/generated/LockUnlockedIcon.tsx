@@ -1,10 +1,10 @@
-// Module ID: 10342
-// Function ID: 79853
+// Module ID: 10371
+// Function ID: 80045
 // Name: LockUnlockedIcon
-// Dependencies: [31, 33, 689, 3833, 10343, 2]
+// Dependencies: [31, 33, 689, 3833, 10372, 2]
 // Exports: LockUnlockedIcon
 
-// Module 10342 (LockUnlockedIcon)
+// Module 10371 (LockUnlockedIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const LockUnlockedIcon = function LockUnlockedIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10343) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10372) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10343) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10372) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

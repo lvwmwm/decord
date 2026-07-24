@@ -1,10 +1,10 @@
-// Module ID: 11126
-// Function ID: 86608
+// Module ID: 11156
+// Function ID: 86877
 // Name: ForumPostGridHeader
-// Dependencies: [31, 27, 5685, 1355, 33, 4130, 11127, 11129, 11138, 11139, 11140, 2]
+// Dependencies: [31, 27, 5685, 1355, 33, 4130, 11157, 11159, 11168, 11169, 11170, 2]
 // Exports: default
 
-// Module 11126 (ForumPostGridHeader)
+// Module 11156 (ForumPostGridHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
@@ -31,15 +31,15 @@ export default function ForumPostGridHeader(arg0) {
   let tmp5 = hasFlagResult;
   if (hasFlagResult) {
     obj = { containerStyle: tmp.pinIcon };
-    tmp5 = callback(importDefault(11127), obj);
+    tmp5 = callback(importDefault(11157), obj);
   }
-  const items = [tmp5, callback(require(11129) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11138), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
+  const items = [tmp5, callback(require(11159) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11168), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
   if (isNew) {
-    isNew = callback(importDefault(11139), {});
+    isNew = callback(importDefault(11169), {});
   }
   items[3] = isNew;
   obj.children = items;
-  const items1 = [closure_7(View, obj), callback(importDefault(11140), { title: thread.name, hasUnreads })];
+  const items1 = [closure_7(View, obj), callback(importDefault(11170), { title: thread.name, hasUnreads })];
   obj.children = items1;
   return closure_7(View, obj);
 };

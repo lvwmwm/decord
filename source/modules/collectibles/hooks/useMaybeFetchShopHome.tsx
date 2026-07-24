@@ -1,10 +1,10 @@
-// Module ID: 14475
-// Function ID: 110587
+// Module ID: 14525
+// Function ID: 110910
 // Name: useMaybeFetchCollectiblesShopHome
-// Dependencies: [57, 31, 4044, 6774, 6821, 655, 566, 6824, 6773, 14476, 2]
+// Dependencies: [57, 31, 4044, 6774, 6820, 655, 566, 6823, 6773, 14526, 2]
 // Exports: useMaybeFetchCollectiblesShopHome
 
-// Module 14475 (useMaybeFetchCollectiblesShopHome)
+// Module 14525 (useMaybeFetchCollectiblesShopHome)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -83,7 +83,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   const tmp12 = callback2(() => {
     const obj = {};
     const merged = Object.assign(dependencyMap);
-    obj["variantsReturnStyle"] = HOME(6824).ShopVariantsReturnStyle.VARIANTS_GROUP;
+    obj["variantsReturnStyle"] = HOME(6823).ShopVariantsReturnStyle.VARIANTS_GROUP;
     obj["includeBundles"] = true;
     obj["includeDynamicBlocks"] = true;
     obj["shopHomeConfig"] = c11;
@@ -99,7 +99,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   if (tmp14) {
     tmp14 = tmp9;
   }
-  hasExpiredShopBlocks = _require(14476).useHasExpiredShopBlocks(first, tmp14, flag);
+  hasExpiredShopBlocks = _require(14526).useHasExpiredShopBlocks(first, tmp14, flag);
   const items5 = [tmp3[1], hasExpiredShopBlocks];
   const tmp16 = callback2(() => {
     let tmp = !hasExpiredShopBlocks;

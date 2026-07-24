@@ -1,10 +1,10 @@
-// Module ID: 13851
-// Function ID: 106057
+// Module ID: 13902
+// Function ID: 106381
 // Name: UserSettingsSessions
-// Dependencies: [57, 31, 27, 1849, 653, 33, 4130, 5052, 689, 13638, 566, 13852, 4541, 5503, 1212, 5165, 5121, 4126, 1327, 4660, 1273, 7607, 1456, 11369, 7375, 13853, 11855, 10791, 9212, 13854, 2]
+// Dependencies: [57, 31, 27, 1849, 653, 33, 4130, 5052, 689, 13689, 566, 13903, 4541, 5501, 1212, 5165, 5121, 4126, 1327, 4660, 1273, 7696, 1456, 11398, 7375, 13904, 11882, 10820, 9248, 13905, 2]
 // Exports: default
 
-// Module 13851 (UserSettingsSessions)
+// Module 13902 (UserSettingsSessions)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "registerAsset";
@@ -25,7 +25,7 @@ function UserSettingsSessions() {
   let currentSession;
   let otherSessions;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = otherSessions(13638);
+  let obj = otherSessions(13689);
   let authSessions = obj.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   let obj1 = otherSessions(566);
@@ -60,7 +60,7 @@ function UserSettingsSessions() {
       tmp8 = callback2(SessionInfo, obj2);
     }
     obj1.children = tmp8;
-    const items1 = [callback2(otherSessions(5503).TableRowGroup, obj1), , ];
+    const items1 = [callback2(otherSessions(5501).TableRowGroup, obj1), , ];
     if (otherSessions.length <= 0) {
       if (null != stateFromStores) {
         let tmp9 = null;
@@ -88,7 +88,7 @@ function UserSettingsSessions() {
     obj4.hasIcons = true;
     const items2 = [otherSessions.map((id_hash) => outer1_10(outer1_15, { session: id_hash }, id_hash.id_hash)), callback2(UnknownLegacySessionsInfo, {})];
     obj4.children = items2;
-    tmp9 = callback3(otherSessions(5503).TableRowGroup, obj4);
+    tmp9 = callback3(otherSessions(5501).TableRowGroup, obj4);
     tmp25 = callback3;
     const tmp28 = callback2;
   }
@@ -142,18 +142,18 @@ function SessionInfo(session) {
         if ("ios" !== trimmed) {
           if ("android" !== trimmed) {
             if ("horizon os" === trimmed) {
-              let obj = { text: os, iconSource: importDefault(10791), IconComponent: session(13854).VrHeadsetIcon };
+              let obj = { text: os, iconSource: importDefault(10820), IconComponent: session(13905).VrHeadsetIcon };
             } else {
-              obj = { text: os, iconSource: importDefault(13853), IconComponent: session(11855).ScreenIcon };
+              obj = { text: os, iconSource: importDefault(13904), IconComponent: session(11882).ScreenIcon };
             }
           }
         }
-        obj = { text: os, iconSource: importDefault(10791), IconComponent: session(9212).MobilePhoneIcon };
+        obj = { text: os, iconSource: importDefault(10820), IconComponent: session(9248).MobilePhoneIcon };
       }
       let formatDateResult = null;
       ({ text, iconSource, IconComponent } = obj);
       if (!current) {
-        let obj4 = session(13638);
+        let obj4 = session(13689);
         formatDateResult = obj4.formatDate(session.approx_last_used_time);
       }
       const items = [text, platform];
@@ -167,7 +167,7 @@ function SessionInfo(session) {
           return session(outer1_2[11]).logOutSessions(session.id_hash);
         };
         obj1.hitSlop = { top: 5, left: 5, bottom: 5, right: 5 };
-        const obj2 = { style: tmp.logoutButton, source: importDefault(7607) };
+        const obj2 = { style: tmp.logoutButton, source: importDefault(7696) };
         obj1.children = callback2(session(1273).Icon, obj2);
         tmp20 = callback2(session(4660).PressableOpacity, obj1);
       }
@@ -218,15 +218,15 @@ function SessionInfo(session) {
   const obj16 = {};
   const intl = session(1212).intl;
   obj16.text = intl.string(session(1212).t.cDHCNY);
-  obj16.iconSource = importDefault(13853);
-  obj16.IconComponent = session(11855).ScreenIcon;
+  obj16.iconSource = importDefault(13904);
+  obj16.IconComponent = session(11882).ScreenIcon;
   obj = obj16;
 }
 function UnknownLegacySessionsInfo() {
   let obj = _require(1456);
   _require = obj.useNavigation();
   obj = {};
-  obj = { variant: "translucent", source: importDefault(11369) };
+  obj = { variant: "translucent", source: importDefault(11398) };
   obj.icon = callback2(_require(5165).TableRow.Icon, obj);
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t.iUa0sn);

@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 65402
+// Module ID: 8328
+// Function ID: 65630
 // Name: usePrevious
 // Dependencies: [31, 2]
 // Exports: default, usePreviousWhen
 
-// Module 8284 (usePrevious)
+// Module 8328 (usePrevious)
 import result from "result";
 
 ({ useRef: closure_0, useEffect: closure_1 } = result);

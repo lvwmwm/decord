@@ -1,10 +1,10 @@
-// Module ID: 7102
-// Function ID: 57118
+// Module ID: 7101
+// Function ID: 57131
 // Name: _fetchGameAutocomplete
-// Dependencies: [5, 7091, 653, 7092, 686, 507, 2]
+// Dependencies: [5, 7090, 653, 7091, 686, 507, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 7102 (_fetchGameAutocomplete)
+// Module 7101 (_fetchGameAutocomplete)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

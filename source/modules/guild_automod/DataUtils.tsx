@@ -1,9 +1,9 @@
-// Module ID: 11013
-// Function ID: 85681
+// Module ID: 11040
+// Function ID: 85870
 // Name: _transformMetadataToCamelCase
 // Dependencies: [22, 2]
 
-// Module 11013 (_transformMetadataToCamelCase)
+// Module 11040 (_transformMetadataToCamelCase)
 const result = require("set").fileFinishedImporting("modules/guild_automod/DataUtils.tsx");
 function _transformMetadataToCamelCase(body) {
   let closure_0 = body;

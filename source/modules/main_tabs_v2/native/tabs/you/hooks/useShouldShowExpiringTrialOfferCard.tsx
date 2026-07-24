@@ -1,10 +1,10 @@
-// Module ID: 15490
-// Function ID: 119245
+// Module ID: 15537
+// Function ID: 119567
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [12646, 653, 1851, 664, 624, 6686, 6678, 2]
+// Dependencies: [12697, 653, 1851, 664, 624, 6686, 6678, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 15490 (useShouldShowExpiringTrialOfferCard)
+// Module 15537 (useShouldShowExpiringTrialOfferCard)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NoticeTypes } from "ME";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";

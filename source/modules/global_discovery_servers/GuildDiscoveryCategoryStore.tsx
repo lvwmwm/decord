@@ -1,10 +1,10 @@
-// Module ID: 15197
-// Function ID: 115704
+// Module ID: 15244
+// Function ID: 116026
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8440, 22, 1327, 1212, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 8484, 22, 1327, 1212, 566, 686, 2]
 // Exports: areDiscoveryCategoriesEqual
 
-// Module 15197 (_isNativeReflectConstruct)
+// Module 15244 (_isNativeReflectConstruct)
 import apply from "apply";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

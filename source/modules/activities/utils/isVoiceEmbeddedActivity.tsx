@@ -1,10 +1,10 @@
-// Module ID: 10438
-// Function ID: 80384
+// Module ID: 10467
+// Function ID: 80576
 // Name: isVoiceEmbeddedActivity
 // Dependencies: [1194, 1348, 1906, 4146, 669, 2]
 // Exports: default
 
-// Module 10438 (isVoiceEmbeddedActivity)
+// Module 10467 (isVoiceEmbeddedActivity)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

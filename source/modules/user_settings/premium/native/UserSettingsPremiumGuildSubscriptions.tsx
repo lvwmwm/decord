@@ -1,17 +1,17 @@
-// Module ID: 12430
-// Function ID: 96518
+// Module ID: 12483
+// Function ID: 96841
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1849, 3778, 4023, 3781, 3782, 653, 1851, 33, 4130, 4973, 7375, 5793, 4026, 5638, 4451, 4126, 1212, 5459, 1920, 12431, 1867, 12445, 12447, 12449, 12453, 3842, 7429, 6636, 7427, 12386, 566, 1456, 6642, 1553, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1849, 3778, 4023, 3781, 3782, 653, 1851, 33, 4130, 4973, 7375, 5793, 4026, 5638, 4451, 4126, 1212, 1920, 12484, 1867, 12498, 12500, 12502, 12506, 3842, 12404, 6636, 7835, 12444, 566, 1456, 6642, 1553, 2]
 // Exports: default
 
-// Module 12430 (_isNativeReflectConstruct)
+// Module 12483 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
 import dispatcher from "dispatcher";
 import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds";
-import importAllResult from "FEATURES_PREMIUM_GUILD_USER";
-import get_ActivityIndicator from "_callSuper";
+import importAllResult from "ManaContext";
+import get_ActivityIndicator from "handlePress";
 import closure_11 from "_isNativeReflectConstruct";
 import closure_12 from "_isNativeReflectConstruct";
 import closure_13 from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ import closure_14 from "_isNativeReflectConstruct";
 import closure_15 from "_isNativeReflectConstruct";
 import ME from "ME";
 import { FractionalPremiumStates } from "GuildFeatures";
-import jsxProd from "_createForOfIteratorHelperLoose";
+import jsxProd from "calculateFractionalPremiumInfo";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_10;
@@ -126,9 +126,9 @@ const tmp6 = ((PureComponent) => {
         const items1 = [outer1_19(UserSettingsPremiumGuildSubscriptions(outer1_2[22]).Text, obj), , ];
         const obj1 = { style: tmp.blurb, variant: "text-sm/medium", color: "interactive-text-default" };
         const intl2 = UserSettingsPremiumGuildSubscriptions(outer1_2[23]).intl;
-        const obj2 = { helpdeskArticle: outer1_1(outer1_2[25]).getArticleURL(outer1_16.GUILD_SUBSCRIPTIONS) };
+        const obj2 = { helpdeskArticle: outer1_1(outer1_2[24]).getArticleURL(outer1_16.GUILD_SUBSCRIPTIONS) };
         obj1.children = intl2.format(UserSettingsPremiumGuildSubscriptions(outer1_2[23]).t.A4UTjH, obj2);
-        items1[1] = outer1_19(UserSettingsPremiumGuildSubscriptions(outer1_2[24]).TextWithIOSLinkWorkaround, obj1);
+        items1[1] = outer1_19(UserSettingsPremiumGuildSubscriptions(outer1_2[22]).Text, obj1);
         let tmp11 = null != externalManagementMessage;
         if (tmp11) {
           const obj3 = { style: tmp.externalManagement, variant: "text-sm/medium", color: "text-default", children: externalManagementMessage };
@@ -136,10 +136,10 @@ const tmp6 = ((PureComponent) => {
         }
         items1[2] = tmp11;
         obj.children = items1;
-        const items2 = [outer1_20(outer1_9, obj), outer1_19(outer1_1(outer1_2[26]), {})];
+        const items2 = [outer1_20(outer1_9, obj), outer1_19(outer1_1(outer1_2[25]), {})];
         obj.children = items2;
         tmp3Result = tmp3(outer1_8.Fragment, obj);
-        const obj6 = outer1_1(outer1_2[25]);
+        const obj6 = outer1_1(outer1_2[24]);
         const tmp5 = outer1_9;
       }
       return tmp3Result;
@@ -160,24 +160,24 @@ const tmp6 = ((PureComponent) => {
       const props = this.props;
       ({ fractionalState, isInReverseTrial } = props);
       ({ hasFetchedSubscriptionPlans, hasAvailableSlots, fpDurationText, premiumGroupRole } = props);
-      if (premiumGroupRole === UserSettingsPremiumGuildSubscriptions(outer1_2[27]).PremiumSubscriptionGroupRole.MEMBER) {
+      if (premiumGroupRole === UserSettingsPremiumGuildSubscriptions(outer1_2[26]).PremiumSubscriptionGroupRole.MEMBER) {
         let obj = { style: tmp.boostingUnavailablePill };
-        let tmp3 = outer1_19(outer1_1(outer1_2[28]), obj);
+        let tmp3 = outer1_19(outer1_1(outer1_2[27]), obj);
       } else {
         tmp3 = null;
         if (fractionalState !== outer1_18.NONE) {
           obj = { fpDurationText, isInReverseTrial, style: tmp.boostingUnavailablePill };
-          tmp3 = outer1_19(outer1_1(outer1_2[29]), obj);
+          tmp3 = outer1_19(outer1_1(outer1_2[28]), obj);
         }
       }
       obj = { style: tmp.scroller };
       const items = [tmp3, self.renderPremiumGuildSubscriptions(), ];
       const obj1 = { style: tmp.upsellSection };
-      const items1 = [outer1_19(UserSettingsPremiumGuildSubscriptions(outer1_2[30]).TopPattern, { style: tmp.background }), ];
+      const items1 = [outer1_19(UserSettingsPremiumGuildSubscriptions(outer1_2[29]).TopPattern, { style: tmp.background }), ];
       let tmp13 = null;
       if (hasFetchedSubscriptionPlans) {
         const obj3 = { onLearnMorePremium: self.handleLearnMorePremium, fractionalState, isInReverseTrial, hasAvailableSlots };
-        tmp13 = outer1_19(outer1_1(outer1_2[31]), obj3);
+        tmp13 = outer1_19(outer1_1(outer1_2[30]), obj3);
       }
       items1[1] = tmp13;
       obj1.children = items1;
@@ -199,7 +199,7 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   let fractionalState;
   let getActivityIndicator;
   let _isNativeReflectConstruct;
-  let obj = _require(fractionalState[33]);
+  let obj = _require(fractionalState[32]);
   _require = obj.useSubscriptionPlansLoaded();
   let prop;
   if (null != route) {
@@ -209,14 +209,14 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
     }
   }
   importDefault = null == prop || prop;
-  const tmp2 = importDefault(fractionalState[34])({ forceFetch: true });
+  const tmp2 = importDefault(fractionalState[33])({ forceFetch: true });
   fractionalState = tmp2.fractionalState;
-  getActivityIndicator = _require(fractionalState[35]).useIsInReverseTrial();
-  const obj2 = _require(fractionalState[35]);
-  _isNativeReflectConstruct = importDefault(fractionalState[36])(tmp2.endsAt, _require(fractionalState[36]).CountDownMessageTypes.LONG_TIME_LEFT);
-  const tmp3 = importDefault(fractionalState[36]);
+  getActivityIndicator = _require(fractionalState[34]).useIsInReverseTrial();
+  const obj2 = _require(fractionalState[34]);
+  _isNativeReflectConstruct = importDefault(fractionalState[35])(tmp2.endsAt, _require(fractionalState[35]).CountDownMessageTypes.LONG_TIME_LEFT);
+  const tmp3 = importDefault(fractionalState[35]);
   const items = [closure_13, closure_12, closure_14, closure_11];
-  const stateFromStoresObject = _require(fractionalState[37]).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(fractionalState[36]).useStateFromStoresObject(items, () => {
     const obj = { hasFetchedSlots: outer1_13.hasFetched, hasSlots: Object.keys(outer1_13.boostSlots).length > 0 };
     const values = Object.values(outer1_13.boostSlots);
     obj.hasAvailableSlots = values.filter((isAvailable) => isAvailable.isAvailable()).length > 0;
@@ -235,15 +235,15 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
     obj.premiumGroupRole = premiumGroupRole;
     return obj;
   });
-  const obj3 = _require(fractionalState[37]);
+  const obj3 = _require(fractionalState[36]);
   const items1 = [closure_15];
-  const stateFromStores = _require(fractionalState[37]).useStateFromStores(items1, () => outer1_15.getPremiumTypeSubscription());
-  const obj4 = _require(fractionalState[37]);
-  const navigation = _require(fractionalState[38]).useNavigation();
-  const obj5 = _require(fractionalState[38]);
+  const stateFromStores = _require(fractionalState[36]).useStateFromStores(items1, () => outer1_15.getPremiumTypeSubscription());
+  const obj4 = _require(fractionalState[36]);
+  const navigation = _require(fractionalState[37]).useNavigation();
+  const obj5 = _require(fractionalState[37]);
   obj = { navigation };
-  const externalManagementMessage = _require(fractionalState[39]).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
-  const obj6 = _require(fractionalState[39]);
+  const externalManagementMessage = _require(fractionalState[38]).getExternalManagementMessage(stateFromStores, { shouldAllowExternalManagement: true });
+  const obj6 = _require(fractionalState[38]);
   const tmp8 = closure_19;
   const tmp9 = closure_22;
   let tmp10 = null;

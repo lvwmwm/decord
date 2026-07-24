@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 70751
+// Module ID: 9009
+// Function ID: 70966
 // Name: authorizeConnection
-// Dependencies: [4940, 653, 686, 4098, 8936, 8971, 8988, 4337, 8999, 1934, 4814, 9006, 8336, 3827, 4938, 2]
+// Dependencies: [4940, 653, 686, 4098, 8975, 9010, 9027, 4337, 9038, 1934, 4814, 9045, 8380, 3827, 4938, 2]
 // Exports: default
 
-// Module 8970 (authorizeConnection)
+// Module 9009 (authorizeConnection)
 import { GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE as closure_3 } from "OperatorTypes";
 import { PlatformTypes } from "ME";
 
@@ -39,9 +39,9 @@ export default function authorizeConnection(successRedirect) {
     overrideUrl(4098).hideActionSheet();
     const obj15 = overrideUrl(4098);
     const items = [_location];
-    overrideUrl(8936).showModal(items);
+    overrideUrl(8975).showModal(items);
     const result = registerHandleModalClose();
-    const obj16 = overrideUrl(8936);
+    const obj16 = overrideUrl(8975);
   } else {
     if (platformType !== PlatformTypes.PLAYSTATION) {
       if (platformType !== PlatformTypes.PLAYSTATION_STAGING) {
@@ -49,16 +49,16 @@ export default function authorizeConnection(successRedirect) {
           overrideUrl(4098).hideActionSheet();
           const obj11 = overrideUrl(4098);
           const items1 = [_location];
-          overrideUrl(8988).showModal(items1);
+          overrideUrl(9027).showModal(items1);
           const result1 = registerHandleModalClose();
-          const obj12 = overrideUrl(8988);
+          const obj12 = overrideUrl(9027);
         } else if (platformType === PlatformTypes.DOMAIN) {
           overrideUrl(4098).hideActionSheet();
           const obj8 = overrideUrl(4098);
           let obj = {};
           const items2 = [_location];
           obj.locationStack = items2;
-          overrideUrl(4337).pushLazy(require(1934) /* maybeLoadBundle */(8999, dependencyMap.paths), obj);
+          overrideUrl(4337).pushLazy(require(1934) /* maybeLoadBundle */(9038, dependencyMap.paths), obj);
           const result2 = registerHandleModalClose();
           const obj9 = overrideUrl(4337);
         } else {
@@ -71,13 +71,13 @@ export default function authorizeConnection(successRedirect) {
             overrideUrl(4098).hideActionSheet();
             const obj5 = overrideUrl(4098);
             obj = { platformType, location: _location, successRedirect };
-            overrideUrl(4337).pushLazy(require(1934) /* maybeLoadBundle */(9006, dependencyMap.paths), obj);
+            overrideUrl(4337).pushLazy(require(1934) /* maybeLoadBundle */(9045, dependencyMap.paths), obj);
             const result3 = registerHandleModalClose();
             const obj6 = overrideUrl(4337);
           } else {
             if (null != overrideUrl) {
               if (platformType === closure_3) {
-                let obj2 = require(8336) /* isLinkTrusted */;
+                let obj2 = require(8380) /* isLinkTrusted */;
                 const obj1 = {
                   shouldConfirm: true,
                   href: overrideUrl,
@@ -106,8 +106,8 @@ export default function authorizeConnection(successRedirect) {
     overrideUrl(4098).hideActionSheet();
     const obj13 = overrideUrl(4098);
     const items3 = [_location];
-    overrideUrl(8971).showModal(items3, platformType);
+    overrideUrl(9010).showModal(items3, platformType);
     const result4 = registerHandleModalClose();
-    const obj14 = overrideUrl(8971);
+    const obj14 = overrideUrl(9010);
   }
 };

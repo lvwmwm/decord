@@ -1,10 +1,10 @@
-// Module ID: 8406
-// Function ID: 66903
+// Module ID: 8450
+// Function ID: 67131
 // Name: useStageChannelUpsellCardStore
 // Dependencies: [1354, 677, 587, 682, 3743, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 8406 (useStageChannelUpsellCardStore)
+// Module 8450 (useStageChannelUpsellCardStore)
 import { GUILD_EVENT_STAGE_UPSELL_CARD_KEY as closure_2 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 

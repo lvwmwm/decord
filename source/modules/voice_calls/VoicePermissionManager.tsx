@@ -1,9 +1,9 @@
-// Module ID: 15992
-// Function ID: 123667
+// Module ID: 16039
+// Function ID: 123989
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4954, 4147, 1194, 1348, 4177, 4202, 653, 4344, 4675, 15993, 4314, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4954, 4147, 1194, 1348, 4177, 4202, 653, 4344, 4675, 16040, 4314, 5078, 2]
 
-// Module 15992 (_isNativeReflectConstruct)
+// Module 16039 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getAudienceRequestToSpeakState from "getAudienceRequestToSpeakState";

@@ -1,5 +1,5 @@
 // Module ID: 4078
-// Function ID: 33891
+// Function ID: 33892
 // Name: CopyIcon
 // Dependencies: [31, 33, 689, 3833, 4079, 2]
 // Exports: CopyIcon

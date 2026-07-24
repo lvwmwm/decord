@@ -1,5 +1,5 @@
 // Module ID: 3592
-// Function ID: 27778
+// Function ID: 27779
 // Name: minutesToHours
 // Dependencies: [3210, 3388]
 // Exports: default

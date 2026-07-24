@@ -1,10 +1,10 @@
-// Module ID: 15138
-// Function ID: 115261
+// Module ID: 15185
+// Function ID: 115583
 // Name: isHoisted
-// Dependencies: [57, 31, 27, 6879, 4142, 1849, 6882, 15139, 653, 8772, 4326, 33, 6883, 1457, 3981, 3803, 1450, 3808, 15140, 566, 15142, 14914, 4345, 21, 6884, 4111, 668, 22, 675, 15141, 15143, 8559, 480, 15144, 15145, 2]
+// Dependencies: [57, 31, 27, 6878, 4142, 1849, 6881, 15186, 653, 8811, 4326, 33, 6882, 1457, 3981, 3803, 1450, 3808, 15187, 566, 15189, 14961, 4345, 21, 6883, 4111, 668, 22, 675, 15188, 15190, 8604, 480, 15191, 15192, 2]
 // Exports: NotificationCenterForYou
 
-// Module 15138 (isHoisted)
+// Module 15185 (isHoisted)
 import _slicedToArray from "_slicedToArray";
 import trackImpression from "trackImpression";
 import { View } from "apply";
@@ -23,7 +23,7 @@ let RootNavigatorScreen;
 let YouBarNavigatorScreens;
 const require = arg1;
 function isHoisted(type) {
-  return type.type === require(6883) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
+  return type.type === require(6882) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
 }
 ({ RootNavigatorScreen, YouBarNavigatorScreens } = MODE_CHANGE_PHYSICS);
 let items = [, , , , ];

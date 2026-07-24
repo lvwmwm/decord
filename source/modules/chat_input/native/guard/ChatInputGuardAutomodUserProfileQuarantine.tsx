@@ -1,8 +1,8 @@
-// Module ID: 11497
-// Function ID: 89480
-// Dependencies: [31, 1194, 1917, 3746, 33, 566, 3764, 11006, 1212, 11481, 11498, 2]
+// Module ID: 11527
+// Function ID: 89725
+// Dependencies: [31, 1194, 1917, 3746, 33, 566, 3764, 11033, 1212, 11511, 11528, 2]
 
-// Module 11497
+// Module 11527
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -46,9 +46,9 @@ const memoResult = importAllResult.memo(function ChatInputGuardAutomodUserProfil
   }
   obj = { type: "simple-action", actionOnPress: callback, actionLabel: stringResult };
   const obj2 = guildId(3764);
-  obj.icon = jsx(guildId(11498).ChatXIcon, {});
+  obj.icon = jsx(guildId(11528).ChatXIcon, {});
   obj.message = stringResult1;
-  return jsx(importDefault(11481), { type: "simple-action", actionOnPress: callback, actionLabel: stringResult });
+  return jsx(importDefault(11511), { type: "simple-action", actionOnPress: callback, actionLabel: stringResult });
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardAutomodUserProfileQuarantine.tsx");
 

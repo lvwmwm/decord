@@ -1,10 +1,10 @@
-// Module ID: 9250
-// Function ID: 72317
+// Module ID: 9286
+// Function ID: 72526
 // Name: createNativePlaceholderConfig
-// Dependencies: [31, 8828, 3974, 2]
+// Dependencies: [31, 8867, 3974, 2]
 // Exports: default
 
-// Module 9250 (createNativePlaceholderConfig)
+// Module 9286 (createNativePlaceholderConfig)
 import result from "result";
 
 let require = arg1;
@@ -20,7 +20,7 @@ function createNativePlaceholderConfig(type) {
   const obj = { borderRadius: undefined, borderTopLeftRadius: undefined, borderTopRightRadius: undefined, borderBottomLeftRadius: undefined, borderBottomRightRadius: undefined, divider: undefined, dividerColorRgba: undefined, dividerPaddingLeft: undefined, dividerPaddingRight: undefined, placeholderShape: undefined, placeholderShapeColorRgba: undefined, placeholderShapeCount: undefined, placeholderShapeGap: undefined, placeholderShapePaddingHorizontal: undefined, placeholderShapePaddingVertical: undefined, placeholderFeedBackgroundColorRgba: undefined, placeholderFeedColorRgba: undefined, placeholderFeedLabelPadding: undefined, placeholderFeedLabelPaddingInnerRatio: undefined, placeholderFeedLabelSize: undefined, placeholderFeedLabelSecondarySize: undefined, placeholderFeedPadding: undefined, placeholderFeedShape: undefined, placeholderFeedShapeSize: undefined };
   let NONE = type;
   if (null == type) {
-    NONE = require(8828) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
+    NONE = require(8867) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
   }
   obj.placeholderType = NONE;
   obj.width = undefined;
@@ -31,7 +31,7 @@ function createNativePlaceholderConfig(type) {
     return obj;
   } else {
     let num20 = 1;
-    if (require(8828) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
+    if (require(8867) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
       if (require(dependencyMap[num20]).FastestListPropsPlaceholderType.SHAPE === type) {
         const borderRadius2 = type.borderRadius;
         let num15 = 0;

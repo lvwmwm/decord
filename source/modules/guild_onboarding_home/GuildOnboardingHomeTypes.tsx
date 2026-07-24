@@ -1,10 +1,10 @@
-// Module ID: 11384
-// Function ID: 88489
+// Module ID: 11413
+// Function ID: 88729
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [1348, 653, 1327, 3763, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, settingsFromServer, settingsToServer
 
-// Module 11384 (_createForOfIteratorHelperLoose)
+// Module 11413 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

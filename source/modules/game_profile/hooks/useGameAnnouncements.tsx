@@ -1,10 +1,10 @@
-// Module ID: 8658
-// Function ID: 68518
+// Module ID: 8699
+// Function ID: 68738
 // Name: useGameAnnouncements
-// Dependencies: [31, 8596, 566, 8659, 2]
+// Dependencies: [31, 8638, 566, 8700, 2]
 // Exports: default
 
-// Module 8658 (useGameAnnouncements)
+// Module 8699 (useGameAnnouncements)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

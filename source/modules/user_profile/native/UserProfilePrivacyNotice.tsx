@@ -1,10 +1,10 @@
-// Module ID: 12112
-// Function ID: 94875
+// Module ID: 12138
+// Function ID: 95111
 // Name: usePrivacyNoticeContentTypes
-// Dependencies: [57, 31, 27, 653, 1345, 33, 4130, 689, 1282, 1212, 12113, 7616, 3803, 1334, 5802, 4126, 5796, 4086, 4660, 5119, 2]
+// Dependencies: [57, 31, 27, 653, 1345, 33, 4130, 689, 1282, 1212, 12139, 7705, 3803, 1334, 5802, 4126, 5796, 4086, 4660, 5119, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 12112 (usePrivacyNoticeContentTypes)
+// Module 12138 (usePrivacyNoticeContentTypes)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

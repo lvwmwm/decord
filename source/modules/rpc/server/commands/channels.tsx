@@ -1,9 +1,9 @@
-// Module ID: 13398
-// Function ID: 103029
+// Module ID: 13451
+// Function ID: 103356
 // Name: items
-// Dependencies: [1352, 1348, 1838, 3758, 1906, 4146, 4033, 653, 8310, 10496, 10501, 22, 13395, 10499, 4944, 4312, 1198, 7460, 2]
+// Dependencies: [1352, 1348, 1838, 3758, 1906, 4146, 4033, 653, 8354, 10525, 10530, 22, 13448, 10528, 4944, 4312, 1198, 7540, 2]
 
-// Module 13398 (items)
+// Module 13451 (items)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -32,7 +32,7 @@ obj.handler = function handler(args) {
   const socket = args.socket;
   const channel = store.getChannel(channel_id);
   if (null == channel) {
-    let tmp18 = importDefault(10496);
+    let tmp18 = importDefault(10525);
     let obj = { errorCode: constants2.INVALID_CHANNEL };
     const _HermesInternal = HermesInternal;
     const prototype2 = tmp18.prototype;
@@ -41,9 +41,9 @@ obj.handler = function handler(args) {
   } else {
     if (channel.isPrivate()) {
       const scopes = socket.authorization.scopes;
-      if (!scopes.includes(require(8310) /* set */.OAuth2Scopes.RPC)) {
-        if (!scopes.includes(require(8310) /* set */.OAuth2Scopes.DM_CHANNELS_READ)) {
-          let tmp7 = importDefault(10496);
+      if (!scopes.includes(require(8354) /* set */.OAuth2Scopes.RPC)) {
+        if (!scopes.includes(require(8354) /* set */.OAuth2Scopes.DM_CHANNELS_READ)) {
+          let tmp7 = importDefault(10525);
           obj = { errorCode: constants2.INVALID_PERMISSIONS };
           const prototype = tmp7.prototype;
           tmp7 = new tmp7(obj, "Invalid scope");
@@ -51,8 +51,8 @@ obj.handler = function handler(args) {
         }
       }
     }
-    const obj3 = require(10501) /* recurseReplaceContentTree */;
-    return obj3.transformChannel(channel, require(10501) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
+    const obj3 = require(10530) /* recurseReplaceContentTree */;
+    return obj3.transformChannel(channel, require(10530) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
   }
 };
 obj[RPCCommands.GET_CHANNEL] = obj;
@@ -67,7 +67,7 @@ obj[RPCCommands.GET_CHANNELS] = {
     if (guild_id) {
       guild = guild.getGuild(guild_id);
       if (null == guild) {
-        let tmp6 = importDefault(10496);
+        let tmp6 = importDefault(10525);
         obj = { errorCode: constants2.INVALID_GUILD };
         const _HermesInternal = HermesInternal;
         const prototype = tmp6.prototype;
@@ -89,9 +89,9 @@ const items1 = [require("set").OAuth2Scopes.GUILDS_MEMBERS_READ, require("set").
 obj3[RPC_SCOPE_CONFIG.ANY] = items1;
 obj2.scope = obj3;
 obj2.handler = function handler() {
-  const tmp = importDefault(13395)();
+  const tmp = importDefault(13448)();
   if (null == tmp) {
-    let tmp5 = importDefault(10496);
+    let tmp5 = importDefault(10525);
     let obj = { errorCode: constants2.INVALID_CHANNEL };
     const prototype = tmp5.prototype;
     tmp5 = new tmp5(obj, "Invalid channel");
@@ -113,7 +113,7 @@ const obj1 = {
     if (guild_id) {
       guild = guild.getGuild(guild_id);
       if (null == guild) {
-        let tmp6 = importDefault(10496);
+        let tmp6 = importDefault(10525);
         obj = { errorCode: constants2.INVALID_GUILD };
         const _HermesInternal = HermesInternal;
         const prototype = tmp6.prototype;
@@ -132,7 +132,7 @@ const obj1 = {
 obj[RPCCommands.SELECT_VOICE_CHANNEL] = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10499)(string);
+    let obj = importDefault(10528)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.channel_id = string.string().allow(null);
@@ -252,9 +252,9 @@ obj5.handler = function handler(socket) {
   }
   let transformChannelResult = null;
   if (null != channel) {
-    const obj = require(10501) /* recurseReplaceContentTree */;
-    transformChannelResult = obj.transformChannel(channel, require(10501) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
-    const obj2 = require(10501) /* recurseReplaceContentTree */;
+    const obj = require(10530) /* recurseReplaceContentTree */;
+    transformChannelResult = obj.transformChannel(channel, require(10530) /* recurseReplaceContentTree */.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes));
+    const obj2 = require(10530) /* recurseReplaceContentTree */;
   }
   return transformChannelResult;
 };
@@ -262,7 +262,7 @@ obj[RPCCommands.GET_SELECTED_VOICE_CHANNEL] = obj5;
 let obj4 = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10499)(string);
+    let obj = importDefault(10528)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.channel_id = string.string().allow(null);
@@ -371,7 +371,7 @@ let obj4 = {
 obj[RPCCommands.SELECT_TEXT_CHANNEL] = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10499)(string);
+    let obj = importDefault(10528)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.channel_id = string.string().allow(null);
@@ -479,7 +479,7 @@ obj[RPCCommands.SELECT_TEXT_CHANNEL] = {
 const obj7 = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10499)(string);
+    let obj = importDefault(10528)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.channel_id = string.string().allow(null);
@@ -592,7 +592,7 @@ obj[RPCCommands.CREATE_CHANNEL_INVITE] = {
     let obj = Object.create(null);
     obj.channel_id = 0;
     const merged = Object.assign(args, obj);
-    obj = importDefault(7460);
+    obj = importDefault(7540);
     const invite = obj.createInvite(channel_id, merged, "RPC");
     return invite.catch(() => {
       let tmp = outer1_1(outer1_2[9]);
@@ -609,7 +609,7 @@ const obj8 = {
     let obj = Object.create(null);
     obj.channel_id = 0;
     const merged = Object.assign(args, obj);
-    obj = importDefault(7460);
+    obj = importDefault(7540);
     const invite = obj.createInvite(channel_id, merged, "RPC");
     return invite.catch(() => {
       let tmp = outer1_1(outer1_2[9]);

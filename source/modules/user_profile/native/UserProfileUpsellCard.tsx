@@ -1,10 +1,10 @@
-// Module ID: 13611
-// Function ID: 104568
+// Module ID: 13662
+// Function ID: 104892
 // Name: UserProfileUpsellCard
-// Dependencies: [31, 27, 5512, 6671, 33, 4130, 689, 1273, 7871, 4126, 4554, 668, 2]
+// Dependencies: [31, 27, 5510, 6671, 33, 4130, 689, 1273, 7486, 4126, 4554, 668, 2]
 // Exports: default
 
-// Module 13611 (UserProfileUpsellCard)
+// Module 13662 (UserProfileUpsellCard)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -50,7 +50,7 @@ export default function UserProfileUpsellCard(headerText) {
   if (null != headerText) {
     obj = { style: tmp.titleContainer };
     const obj1 = { color: importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const items1 = [callback(require(7871) /* NitroWheelIcon */.NitroWheelIcon, obj1), ];
+    const items1 = [callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj1), ];
     const obj2 = { variant: "heading-sm/bold", children: headerText };
     items1[1] = callback(require(4126) /* Text */.Text, obj2);
     obj.children = items1;

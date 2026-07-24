@@ -1,10 +1,10 @@
-// Module ID: 8737
-// Function ID: 69107
+// Module ID: 8776
+// Function ID: 69322
 // Name: PreviewProfileTrigger
-// Dependencies: [57, 31, 27, 655, 653, 482, 33, 4130, 689, 4547, 3842, 3976, 1212, 8738, 1876, 8667, 8492, 8736, 7194, 8740, 5464, 5484, 6785, 8741, 8742, 8666, 8559, 480, 8207, 675, 8703, 8743, 8744, 7869, 8705, 8708, 3789, 8745, 5187, 5189, 8710, 8746, 8762, 8768, 1273, 8769, 7195, 4098, 8771, 477, 2]
+// Dependencies: [57, 31, 27, 655, 653, 482, 33, 4130, 689, 4547, 3842, 3976, 1212, 8777, 1876, 8708, 8537, 8775, 7194, 8779, 5462, 5482, 6785, 8780, 8781, 8707, 8604, 480, 8251, 675, 8744, 8782, 8783, 7958, 8746, 8749, 3789, 8784, 5187, 5189, 8751, 8785, 8801, 8807, 1273, 8808, 7195, 4098, 8810, 477, 2]
 // Exports: default
 
-// Module 8737 (PreviewProfileTrigger)
+// Module 8776 (PreviewProfileTrigger)
 import _slicedToArray from "_slicedToArray";
 import BadgeWithTooltip from "BadgeWithTooltip";
 import result from "BadgeWithTooltip";
@@ -64,7 +64,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
   const intl = handlePreviewPress(1212).intl;
   obj.accessibilityLabel = intl.string(handlePreviewPress(1212).t["3Qcx6K"]);
   obj = { size: "md", color: onTrackPress(689).colors.INTERACTIVE_ICON_DEFAULT };
-  obj.children = callback4(handlePreviewPress(8738).EyeIcon, obj);
+  obj.children = callback4(handlePreviewPress(8777).EyeIcon, obj);
   return callback4(closure_7, obj);
 }
 function ProductDetailsActionSheetInner(product) {
@@ -405,5 +405,5 @@ export default function ProductDetailsActionSheet(shopAnalyticsContext) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj.children = callback4(ProductDetailsActionSheetWithOrderCTX, obj);
-  return callback4(require(8666) /* useCollectiblesAnalyticsContext */.CollectiblesAnalyticsProvider, obj);
+  return callback4(require(8707) /* useCollectiblesAnalyticsContext */.CollectiblesAnalyticsProvider, obj);
 };

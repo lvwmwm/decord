@@ -1,10 +1,10 @@
-// Module ID: 14877
-// Function ID: 113444
+// Module ID: 14924
+// Function ID: 113765
 // Name: GuildsBarFooterWrapper
-// Dependencies: [14813, 33, 4130, 689, 3834, 3987, 5517, 2]
+// Dependencies: [14860, 33, 4130, 689, 3834, 3987, 5515, 2]
 // Exports: default
 
-// Module 14877 (GuildsBarFooterWrapper)
+// Module 14924 (GuildsBarFooterWrapper)
 import { GUILD_ITEM_HIT_SLOP } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -31,5 +31,5 @@ export default function GuildsBarFooterWrapper(children) {
   items[1] = tmp5;
   obj.style = items;
   obj.children = children.children;
-  return tmp3(importDefault(5517), obj);
+  return tmp3(importDefault(5515), obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7711
-// Function ID: 61445
+// Module ID: 7800
+// Function ID: 61731
 // Name: createGuildProductPurchaseSystemMessage
-// Dependencies: [3768, 1348, 653, 4360, 7649, 1395, 1392, 7681, 7651, 1212, 7652, 2]
+// Dependencies: [3768, 1348, 653, 4360, 7738, 1395, 1392, 7770, 7740, 1212, 7741, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 7711 (createGuildProductPurchaseSystemMessage)
+// Module 7800 (createGuildProductPurchaseSystemMessage)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MessageTypes } from "ME";
@@ -36,7 +36,7 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
     }
     let obj1 = require(4360) /* useNullableMessageAuthor */;
     const guildMemberAvatar = obj1.getMessageAuthor(message).guildMemberAvatar;
-    let obj2 = require(7649) /* getMessageAuthorWithProcessedColor */;
+    let obj2 = require(7738) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj2.getMessageAuthorWithProcessedColor(message);
     require(1395) /* ensureAvatarSource */;
     if (null != guildMemberAvatar) {
@@ -49,15 +49,15 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
       const tmp9Result = tmp9(guildMemberAvatarSource);
       obj1 = { username: messageAuthorWithProcessedColor.nick };
       obj2 = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-      obj1.usernameOnClickHandler = importDefault(7651)(obj2);
+      obj1.usernameOnClickHandler = importDefault(7740)(obj2);
       obj1.productName = product_name;
-      obj.content = require(7681) /* getGuildProductPurchaseSystemMessageContentMobile */.getGuildProductPurchaseSystemMessageContentMobile(obj1);
+      obj.content = require(7770) /* getGuildProductPurchaseSystemMessageContentMobile */.getGuildProductPurchaseSystemMessageContentMobile(obj1);
       obj.totalMonthsSubscribed = 0;
       obj.username = messageAuthorWithProcessedColor.nick;
       obj.avatarURL = tmp9Result.uri;
       const intl = require(1212) /* getSystemLocale */.intl;
       obj.welcomeLabel = intl.string(require(1212) /* getSystemLocale */.t.s2N5HS);
-      const merged1 = Object.assign(importDefault(7652)(obj));
+      const merged1 = Object.assign(importDefault(7741)(obj));
       return obj;
     }
     guildMemberAvatarSource = author.getAvatarSource(undefined);

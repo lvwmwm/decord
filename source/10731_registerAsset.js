@@ -1,11 +1,11 @@
 // Module ID: 10731
-// Function ID: 83473
+// Function ID: 83543
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 10731 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "db76c9ef21a10a502ae95ae16e345521", name: "add", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f32d9237628628dc39ab04879ac15862", name: "ScreenArrowIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

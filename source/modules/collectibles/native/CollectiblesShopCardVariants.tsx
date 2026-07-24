@@ -1,9 +1,9 @@
-// Module ID: 8732
-// Function ID: 69092
+// Module ID: 8771
+// Function ID: 69307
 // Name: VariantOption
-// Dependencies: [31, 27, 33, 4130, 689, 8713, 8733, 5154, 8734, 8664, 6785, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 8754, 8772, 5154, 8773, 8705, 6785, 2]
 
-// Module 8732 (VariantOption)
+// Module 8771 (VariantOption)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -16,7 +16,7 @@ const require = arg1;
 function VariantOption(variant) {
   variant = variant.variant;
   const tmp = callback3(variant.isSelected);
-  let obj = require(8713) /* getProductPurchaseState */;
+  let obj = require(8754) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   obj = { style: items };
   items = [tmp.variantOption, { zIndex: variant.zIndex }];
@@ -33,7 +33,7 @@ function VariantOption(variant) {
 function VariantCheckmark(variant) {
   const obj = {};
   const colors = importDefault(689).colors;
-  obj.color = importDefault(8733)(variant.variant) ? colors.BLACK : colors.WHITE;
+  obj.color = importDefault(8772)(variant.variant) ? colors.BLACK : colors.WHITE;
   obj.size = "xxs";
   return closure_4(require(5154) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
 }
@@ -45,7 +45,7 @@ function VariantOverflowOption(isSelected) {
   items1 = [, ];
   ({ variantOptionInner: arr2[0], variantOverflowInner: arr2[1] } = tmp);
   obj = { color: importDefault(689).colors.WHITE, size: "xxs" };
-  obj.children = callback(require(8734) /* PlusSmallIcon */.PlusSmallIcon, obj);
+  obj.children = callback(require(8773) /* PlusSmallIcon */.PlusSmallIcon, obj);
   obj.children = callback(View, obj);
   return callback(View, obj);
 }
@@ -71,7 +71,7 @@ let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
 });
 const memoResult = require("result").memo(function CardProductVariants(product) {
   product = product.product;
-  let obj = defaultVariantIndex(8664);
+  let obj = defaultVariantIndex(8705);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
   const tmp = callback2();
   if (obj2.getIsVariantProduct(product)) {

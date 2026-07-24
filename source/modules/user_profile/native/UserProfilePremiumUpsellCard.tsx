@@ -1,10 +1,10 @@
-// Module ID: 13610
-// Function ID: 104563
+// Module ID: 13661
+// Function ID: 104887
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [31, 653, 33, 4130, 1557, 1456, 6685, 5464, 5484, 7375, 8139, 7999, 13611, 1212, 4126, 2]
+// Dependencies: [31, 653, 33, 4130, 1557, 1456, 6685, 5462, 5482, 7375, 8183, 8059, 13662, 1212, 4126, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13610 (UserProfilePremiumUpsellCard)
+// Module 13661 (UserProfilePremiumUpsellCard)
 import result from "result";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -30,9 +30,9 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   const tmp = callback(analyticsLocations(1557)().bottom);
   let nitroTrialCtaOverride = navigation(6685).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   const obj2 = navigation(6685);
-  const tmp5 = analyticsLocations(5484);
+  const tmp5 = analyticsLocations(5482);
   const items = [isTryItOut ? tmp5.USER_SETTINGS_TRY_OUT_PREMIUM : tmp5.USER_SETTINGS_USER_PROFILE];
-  analyticsLocations = analyticsLocations(5464)(items).analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)(items).analyticsLocations;
   const items1 = [navigation];
   callback = React.useCallback(() => {
     analyticsLocations(outer1_2[9]).setSection(outer1_7.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
@@ -45,7 +45,7 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
     analyticsLocations(outer1_2[10])(obj);
   }, items2);
   obj = { style: tmp.container };
-  const tmp4 = analyticsLocations(5464);
+  const tmp4 = analyticsLocations(5462);
   const tmp8 = jsx;
   if (isTryItOut) {
     if (null == nitroTrialCtaOverride) {
@@ -74,5 +74,5 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   }
   obj.children = stringResult1;
   obj.children = jsx(navigation(4126).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5 });
-  return tmp8(analyticsLocations(13611), obj);
+  return tmp8(analyticsLocations(13662), obj);
 };

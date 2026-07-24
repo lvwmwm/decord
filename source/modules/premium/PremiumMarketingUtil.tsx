@@ -1,10 +1,10 @@
-// Module ID: 12126
-// Function ID: 94985
+// Module ID: 12153
+// Function ID: 95225
 // Name: navigateToPremiumHomePage
-// Dependencies: [653, 5796, 6822, 1198, 2]
+// Dependencies: [653, 5796, 6821, 1198, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12126 (navigateToPremiumHomePage)
+// Module 12153 (navigateToPremiumHomePage)
 import ME from "ME";
 
 let closure_2;
@@ -19,7 +19,7 @@ export const navigateToNitroHomePage = function navigateToNitroHomePage(arg0) {
   if (null != arg0) {
     arg0();
   }
-  require(6822) /* pushLayer */.popLayer();
-  const obj = require(6822) /* pushLayer */;
+  require(6821) /* pushLayer */.popLayer();
+  const obj = require(6821) /* pushLayer */;
   require(1198) /* shouldNavigate */.transitionTo(constants.APPLICATION_STORE);
 };

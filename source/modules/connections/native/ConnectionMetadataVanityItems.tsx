@@ -1,10 +1,10 @@
-// Module ID: 10001
-// Function ID: 77331
+// Module ID: 10033
+// Function ID: 77525
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 4940, 33, 4130, 689, 1212, 10002, 10003, 22, 1827, 4126, 1273, 4939, 2]
+// Dependencies: [31, 27, 4940, 33, 4130, 689, 1212, 10034, 10035, 22, 1827, 4126, 1273, 4939, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 10001 (_createForOfIteratorHelperLoose)
+// Module 10033 (_createForOfIteratorHelperLoose)
 import "result";
 import { View } from "get ActivityIndicator";
 import OperatorTypes from "OperatorTypes";
@@ -286,7 +286,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl = require(1212) /* getSystemLocale */.intl;
     obj = { count: NumberResult1 };
     obj.label = intl.format(require(1212) /* getSystemLocale */.t.Y88M5x, obj);
-    obj.imageSrc = importDefault(10002);
+    obj.imageSrc = importDefault(10034);
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj.imageAlt = intl2.string(require(1212) /* getSystemLocale */.t.HKUEZo);
     items.push(callback(VanityItem, obj, closure_4.STEAM_ITEM_COUNT_DOTA2));
@@ -296,7 +296,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj2 = { count: NumberResult2 };
     obj1.label = intl3.format(require(1212) /* getSystemLocale */.t.Y88M5x, obj2);
-    obj1.imageSrc = importDefault(10003);
+    obj1.imageSrc = importDefault(10035);
     const intl4 = require(1212) /* getSystemLocale */.intl;
     obj1.imageAlt = intl4.string(require(1212) /* getSystemLocale */.t.C8p1Sh);
     items.push(callback(VanityItem, obj1, closure_4.STEAM_ITEM_COUNT_TF2));

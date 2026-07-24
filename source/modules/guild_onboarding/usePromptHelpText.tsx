@@ -1,5 +1,5 @@
 // Module ID: 5146
-// Function ID: 44860
+// Function ID: 44865
 // Name: formatRoleString
 // Dependencies: [1348, 1910, 3758, 3767, 1849, 653, 1212, 566, 4320, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText

@@ -1,5 +1,5 @@
 // Module ID: 6502
-// Function ID: 50707
+// Function ID: 50718
 // Name: ShareNitroSpotIllustration
 // Dependencies: [33, 5085, 6503, 2]
 // Exports: ShareNitroSpotIllustration

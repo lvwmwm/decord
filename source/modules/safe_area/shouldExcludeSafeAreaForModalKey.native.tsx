@@ -1,10 +1,10 @@
-// Module ID: 15556
-// Function ID: 119989
+// Module ID: 15603
+// Function ID: 120311
 // Name: set
-// Dependencies: [653, 10621, 4341, 2]
+// Dependencies: [653, 10650, 4341, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 15556 (set)
+// Module 15603 (set)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 import set from "getVoiceChannelKeyByChannelId";
 

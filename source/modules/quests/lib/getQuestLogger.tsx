@@ -1,10 +1,10 @@
-// Module ID: 6948
-// Function ID: 55532
+// Module ID: 6947
+// Function ID: 55541
 // Name: getQuestLogger
 // Dependencies: [683, 482, 3, 2]
 // Exports: getQuestLogger
 
-// Module 6948 (getQuestLogger)
+// Module 6947 (getQuestLogger)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NOOP } from "sum";
 

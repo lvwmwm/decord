@@ -1,10 +1,10 @@
-// Module ID: 7020
-// Function ID: 56315
+// Module ID: 7019
+// Function ID: 56324
 // Name: updateOptionStates
-// Dependencies: [1194, 7021, 653, 44, 6755, 686, 507, 21, 1881, 2]
+// Dependencies: [1194, 7020, 653, 44, 6755, 686, 507, 21, 1881, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionValidationStates, updateRegistry
 
-// Module 7020 (updateOptionStates)
+// Module 7019 (updateOptionStates)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

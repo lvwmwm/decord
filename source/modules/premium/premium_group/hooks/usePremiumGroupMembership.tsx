@@ -1,10 +1,10 @@
-// Module ID: 12418
-// Function ID: 96376
+// Module ID: 12471
+// Function ID: 96699
 // Name: usePremiumGroupMembership
-// Dependencies: [31, 12419, 566, 686, 2]
+// Dependencies: [31, 12472, 566, 686, 2]
 // Exports: default
 
-// Module 12418 (usePremiumGroupMembership)
+// Module 12471 (usePremiumGroupMembership)
 import { useEffect } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

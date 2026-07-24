@@ -1,5 +1,5 @@
 // Module ID: 6528
-// Function ID: 50746
+// Function ID: 50757
 // Name: SoundboardSpotIllustration
 // Dependencies: [33, 5085, 6529, 2]
 // Exports: SoundboardSpotIllustration

@@ -1,10 +1,10 @@
-// Module ID: 7521
-// Function ID: 60238
+// Module ID: 7656
+// Function ID: 60873
 // Name: FormRadioGroup
-// Dependencies: [31, 27, 33, 5164, 7519, 7190, 2]
+// Dependencies: [31, 27, 33, 5164, 7654, 7190, 2]
 // Exports: default
 
-// Module 7521 (FormRadioGroup)
+// Module 7656 (FormRadioGroup)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function FormRadioGroup(arg0) {
     obj = { style: { marginBottom: 24, marginHorizontal: 12 } };
     obj = {};
     const obj1 = { defaultValue: value, hasIcons, title, accessibilityLabel, children };
-    obj.children = callback(require(7519) /* context */.TableRadioGroup, obj1);
+    obj.children = callback(require(7654) /* context */.TableRadioGroup, obj1);
     const items = [callback(View, obj), ];
     let tmp16 = null;
     if (null != hint) {

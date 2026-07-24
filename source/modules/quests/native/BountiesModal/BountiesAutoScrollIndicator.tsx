@@ -1,10 +1,10 @@
-// Module ID: 13952
-// Function ID: 106752
+// Module ID: 14003
+// Function ID: 107076
 // Name: BouncingArrow
-// Dependencies: [31, 27, 33, 3991, 4131, 4130, 689, 3834, 13953, 4126, 1212, 13955, 2]
+// Dependencies: [31, 27, 33, 3991, 4131, 4130, 689, 3834, 14004, 4126, 1212, 14006, 2]
 // Exports: default
 
-// Module 13952 (BouncingArrow)
+// Module 14003 (BouncingArrow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -63,7 +63,7 @@ export default function BountiesAutoScrollIndicator(showProgressRing) {
   let obj = _require(3834);
   const token = obj.useToken(importDefault(689).colors.WHITE);
   obj = { size: "md", color: importDefault(689).colors.WHITE };
-  const tmp3 = callback(_require(13953).ArrowSmallUpIcon, obj);
+  const tmp3 = callback(_require(14004).ArrowSmallUpIcon, obj);
   _require = tmp3;
   obj = { style: tmp.root };
   const obj1 = { variant: "text-md/semibold", color: "text-default" };
@@ -85,7 +85,7 @@ export default function BountiesAutoScrollIndicator(showProgressRing) {
           return c0;
         }
     };
-    let tmp7Result = tmp7(_require(13955).AnimatedCircularProgress, obj3);
+    let tmp7Result = tmp7(_require(14006).AnimatedCircularProgress, obj3);
   } else {
     const obj4 = { children: tmp3 };
     tmp7Result = tmp7(BouncingArrow, obj4);

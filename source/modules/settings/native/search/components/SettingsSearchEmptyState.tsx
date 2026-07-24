@@ -1,8 +1,8 @@
-// Module ID: 14582
-// Function ID: 111171
-// Dependencies: [31, 27, 33, 4130, 3843, 1212, 8430, 4541, 4126, 2]
+// Module ID: 14631
+// Function ID: 111490
+// Dependencies: [31, 27, 33, 4130, 3843, 1212, 8474, 4541, 4126, 2]
 
-// Module 14582
+// Module 14631
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
     AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_1[5]).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container };
-  const items = [callback(require(8430) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  const items = [callback(require(8474) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
   obj = { style: tmp.textContainer, align: "center", justify: "center" };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   let intl = require(1212) /* getSystemLocale */.intl;

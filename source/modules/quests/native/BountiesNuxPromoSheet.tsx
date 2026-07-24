@@ -1,10 +1,10 @@
-// Module ID: 13964
-// Function ID: 106818
+// Module ID: 14014
+// Function ID: 107141
 // Name: BountiesNuxPromoSheet
-// Dependencies: [31, 27, 33, 4130, 689, 4098, 13963, 11548, 1212, 5912, 4543, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4098, 14013, 7515, 1212, 5912, 4543, 2]
 // Exports: default
 
-// Module 13964 (BountiesNuxPromoSheet)
+// Module 14014 (BountiesNuxPromoSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -33,5 +33,5 @@ export default function BountiesNuxPromoSheet() {
   obj.text = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.onPress = callback;
   obj.actions = jsx(require(4543) /* Button */.Button, { grow: true, size: "lg", variant: "primary" });
-  return jsx(require(11548) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary" });
+  return jsx(require(7515) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary" });
 };

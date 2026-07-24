@@ -1,5 +1,5 @@
 // Module ID: 5721
-// Function ID: 49169
+// Function ID: 49179
 // Name: getPreviousSafeRouteForNsfwReturn
 // Dependencies: [5722, 1348, 1907, 653, 4345, 5723, 2]
 // Exports: default

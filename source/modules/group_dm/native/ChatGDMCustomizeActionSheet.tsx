@@ -1,10 +1,10 @@
-// Module ID: 9108
-// Function ID: 71370
+// Module ID: 9144
+// Function ID: 71579
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [31, 33, 9109, 9112, 1212, 10162, 2]
+// Dependencies: [31, 33, 9145, 9148, 1212, 10192, 2]
 // Exports: default
 
-// Module 9108 (ChatGDMCustomizeActionSheet)
+// Module 9144 (ChatGDMCustomizeActionSheet)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -15,13 +15,13 @@ export default function ChatGDMCustomizeActionSheet(channelId) {
   let dependencyMap;
   let importDefault;
   channelId = channelId.channelId;
-  ({ onGoBack: importDefault, ref: dependencyMap } = importDefault(9109)());
+  ({ onGoBack: importDefault, ref: dependencyMap } = importDefault(9145)());
   const obj = { screenKey: "kick" };
-  const tmp = importDefault(9109)();
+  const tmp = importDefault(9145)();
   const intl = channelId(1212).intl;
   obj.title = intl.string(channelId(1212).t["1r5E+m"]);
   obj.render = function render() {
     return outer1_3(outer1_1(outer1_2[5]), { ref: closure_2, onFinish: closure_1, channelId });
   };
-  return jsx(importDefault(9112), { screenKey: "kick" });
+  return jsx(importDefault(9148), { screenKey: "kick" });
 };

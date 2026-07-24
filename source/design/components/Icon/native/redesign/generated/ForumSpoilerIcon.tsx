@@ -1,5 +1,5 @@
 // Module ID: 4641
-// Function ID: 40328
+// Function ID: 40332
 // Name: ForumSpoilerIcon
 // Dependencies: [31, 33, 689, 3833, 4615, 2]
 // Exports: ForumSpoilerIcon

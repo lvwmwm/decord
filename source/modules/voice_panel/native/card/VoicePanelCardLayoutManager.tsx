@@ -1,10 +1,10 @@
-// Module ID: 10017
-// Function ID: 77392
+// Module ID: 10049
+// Function ID: 77586
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 57, 31, 27, 4143, 10015, 10018, 4148, 3991, 10019, 620, 10020, 10021, 10022, 682, 2]
+// Dependencies: [6, 7, 57, 31, 27, 4143, 10047, 10050, 4148, 3991, 10051, 620, 10052, 10053, 10054, 682, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 10017 (_createForOfIteratorHelperLoose)
+// Module 10049 (_createForOfIteratorHelperLoose)
 import closure_3 from "VoicePanelModes";
 import closure_4 from "CARD_SIZE";
 import _slicedToArray from "_slicedToArray";

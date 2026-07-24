@@ -1,5 +1,5 @@
 // Module ID: 4275
-// Function ID: 37421
+// Function ID: 37422
 // Name: formatSinkWantStat
 // Dependencies: [2]
 // Exports: formatSinkWantAsInt, formatSinkWantStat

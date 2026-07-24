@@ -1,10 +1,10 @@
-// Module ID: 13967
-// Function ID: 106879
+// Module ID: 14017
+// Function ID: 107202
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 13968, 1849, 6774, 6776, 655, 664, 6785, 566, 3776, 13969, 658, 13970, 13971, 659, 11850, 13972, 8684, 13973, 13975, 2]
+// Dependencies: [5, 57, 31, 14018, 1849, 6774, 6776, 655, 664, 6785, 566, 3776, 14019, 658, 14020, 14021, 659, 11877, 14022, 8725, 14023, 14025, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 13967 (_createForOfIteratorHelperLoose)
+// Module 14017 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -181,12 +181,12 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
   const obj2 = enabled(566);
   const tmp8 = first;
   const canUseShopDiscountsResult = first(3776).canUseShopDiscounts(stateFromStores);
-  if (enabled(13969).BountiesShopCarouselExperimentVariation.POPULARITY === variation) {
+  if (enabled(14019).BountiesShopCarouselExperimentVariation.POPULARITY === variation) {
     POPULARITY = enabled(658).CollectibleSearchSortType.POPULARITY;
-  } else if (enabled(13969).BountiesShopCarouselExperimentVariation.RECENCY === variation) {
+  } else if (enabled(14019).BountiesShopCarouselExperimentVariation.RECENCY === variation) {
     POPULARITY = enabled(658).CollectibleSearchSortType.RECENCY;
   } else {
-    const BASE = enabled(13969).BountiesShopCarouselExperimentVariation.BASE;
+    const BASE = enabled(14019).BountiesShopCarouselExperimentVariation.BASE;
     POPULARITY = enabled(658).CollectibleSearchSortType.POPULARITY;
   }
   const items1 = [enabled, POPULARITY];
@@ -222,17 +222,17 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
     }
     callback2(false);
   }, items2);
-  let tmp5Result = tmp5(11850);
+  let tmp5Result = tmp5(11877);
   let fetchCollectiblesProducts = tmp5Result.useFetchCollectiblesProducts(first);
   const items3 = [first];
   const effect2 = obj.useEffect(() => {
     if (0 !== first.length) {
-      let obj = enabled(13972);
+      let obj = enabled(14022);
       obj = { skuIds: first };
       const result = obj.maybeFetchProductsBySkuIds(obj);
     }
   }, items3);
-  tmp5Result = tmp5(8684);
+  tmp5Result = tmp5(8725);
   const getOrFetchStorefrontPricesForSkuIds = tmp5Result.useGetOrFetchStorefrontPricesForSkuIds({ skuIds: first });
   const obj3 = first(3776);
   const items4 = [canUseShopDiscountsResult];
@@ -240,7 +240,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
   const tmp5Result1 = enabled(566);
   const items5 = [canUseShopDiscountsResult];
   const stateFromStoresArray1 = enabled(566).useStateFromStoresArray(items5, () => first.map((arg0) => canUseShopDiscountsResult.getFetchStateForSku(arg0)));
-  const tmp23 = tmp8(13973)();
+  const tmp23 = tmp8(14023)();
   const constants = tmp23;
   const items6 = [tmp23, first, stateFromStoresArray, canUseShopDiscountsResult];
   const memo = obj.useMemo(() => tmp23(first).map((arg0, arg1) => outer2_15(arg0, outer1_8[arg1], outer1_6)), items6);
@@ -270,7 +270,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
   }), items8);
   const tmp5Result2 = enabled(566);
   obj = { products: memo2, screen: constants.ORBS };
-  const filteredAndSortedProducts = enabled(13975).useFilteredAndSortedProducts(obj);
+  const filteredAndSortedProducts = enabled(14025).useFilteredAndSortedProducts(obj);
   const items9 = [filteredAndSortedProducts];
   const memo3 = obj.useMemo(() => filteredAndSortedProducts.slice(0, 10), items9);
   if (!fetchCollectiblesProducts) {

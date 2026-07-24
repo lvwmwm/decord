@@ -1,10 +1,10 @@
-// Module ID: 12170
-// Function ID: 95252
+// Module ID: 12197
+// Function ID: 95492
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [31, 27, 1838, 1849, 653, 33, 4130, 689, 5515, 566, 1212, 686, 3830, 5500, 5186, 12171, 4126, 2]
+// Dependencies: [31, 27, 1838, 1849, 653, 33, 4130, 689, 5513, 566, 1212, 686, 3830, 5498, 5186, 12198, 4126, 2]
 // Exports: default
 
-// Module 12170 (InstantInviteQRCodeActionSheet)
+// Module 12197 (InstantInviteQRCodeActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -78,9 +78,9 @@ export default function InstantInviteQRCodeActionSheet(location) {
   if (null != channel) {
     tmp8 = null;
     if (null != store.getGuild(channel.guild_id)) {
-      let obj = { guild: store.getGuild(channel.guild_id), size: require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE };
-      tmp8 = callback(importDefault(5515), obj);
-      const tmp13 = importDefault(5515);
+      let obj = { guild: store.getGuild(channel.guild_id), size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE };
+      tmp8 = callback(importDefault(5513), obj);
+      const tmp13 = importDefault(5513);
     }
   }
   (function useOnFriendAdded(presentFriendRequestAcceptedToast) {
@@ -110,7 +110,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
     plainText = tmp7.plainText;
   }
   obj3.accessibilityLabel = plainText;
-  let items = [callback(importDefault(12171), obj3), ];
+  let items = [callback(importDefault(12198), obj3), ];
   let tmp22 = null != tmp8;
   if (tmp22) {
     let obj4 = { style: tmp.iconContainer };
@@ -129,5 +129,5 @@ export default function InstantInviteQRCodeActionSheet(location) {
   items1[1] = tmp25;
   obj1.children = items1;
   obj.children = closure_10(View, obj1);
-  return callback(require(5500) /* ActionSheet */.ActionSheet, obj);
+  return callback(require(5498) /* ActionSheet */.ActionSheet, obj);
 };

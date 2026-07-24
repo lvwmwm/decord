@@ -1,10 +1,10 @@
-// Module ID: 9052
-// Function ID: 71094
+// Module ID: 9091
+// Function ID: 71309
 // Name: getXboxURIForChannel
-// Dependencies: [1838, 4177, 3767, 1849, 8950, 653, 4320, 1212, 507, 2]
+// Dependencies: [1838, 4177, 3767, 1849, 8989, 653, 4320, 1212, 507, 2]
 // Exports: default
 
-// Module 9052 (getXboxURIForChannel)
+// Module 9091 (getXboxURIForChannel)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

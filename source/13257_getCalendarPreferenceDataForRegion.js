@@ -1,0 +1,73 @@
+// Module ID: 13257
+// Function ID: 101930
+// Name: getCalendarPreferenceDataForRegion
+// Dependencies: [13258, 13259, 1257, 13260, 13261]
+
+// Module 13257 (getCalendarPreferenceDataForRegion)
+const require = arg1;
+const dependencyMap = arg6;
+arg5.getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
+  let str = null;
+  if (region) {
+    str = region.toUpperCase();
+  }
+  if (!str) {
+    str = "";
+  }
+  let v001 = require(13258).calendars[str];
+  if (!v001) {
+    v001 = require(13258).calendars["001"];
+  }
+  return v001.map((arg0) => {
+    let str = "gregory";
+    if ("gregorian" !== arg0) {
+      let str2 = "islamicc";
+      if ("islamic-civil" !== arg0) {
+        str2 = arg0;
+      }
+      str = str2;
+    }
+    return str;
+  });
+};
+arg5.getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
+  const formatted = locale.toLowerCase();
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  let v001 = require(13259).hourCycles[formatted];
+  if (!v001) {
+    v001 = require(13259).hourCycles[str];
+  }
+  if (!v001) {
+    const concat = "".concat;
+    v001 = require(13259).hourCycles["".concat("", formatted, "-001")];
+  }
+  if (!v001) {
+    v001 = require(13259).hourCycles["001"];
+  }
+  return require(1257) /* createExporter */.__spreadArray([], v001, true);
+};
+arg5.getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
+  const formatted = region.toLowerCase();
+  if (require(13260).timezones[formatted]) {
+    return require(1257) /* createExporter */.__spreadArray([], require(13260).timezones[formatted], true);
+  } else {
+    return [];
+  }
+};
+arg5.getWeekDataForRegion = function getWeekDataForRegion(region) {
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  if (!str) {
+    str = "001";
+  }
+  let v001 = require(13261).weekData[str];
+  if (!v001) {
+    v001 = require(13261).weekData["001"];
+  }
+  return v001;
+};

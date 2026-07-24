@@ -1,9 +1,9 @@
-// Module ID: 14190
-// Function ID: 109043
+// Module ID: 14240
+// Function ID: 109366
 // Name: SettingsAppearanceChannelListPreviewNitroUpsellComponent
-// Dependencies: [31, 27, 4122, 653, 33, 3991, 4554, 4542, 4546, 4130, 689, 5464, 5484, 8139, 7999, 4543, 1212, 1273, 566, 8569, 2]
+// Dependencies: [31, 27, 4122, 653, 33, 3991, 4554, 4542, 4546, 4130, 689, 5462, 5482, 8183, 8059, 4543, 1212, 1273, 566, 8614, 2]
 
-// Module 14190 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
+// Module 14240 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   fn.__workletHash = 16911565077998;
   fn.__initData = closure_20;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  analyticsLocations = analyticsLocations(5464)(analyticsLocations(5484).CLIENT_THEMES_EDITOR).analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)(analyticsLocations(5482).CLIENT_THEMES_EDITOR).analyticsLocations;
   const items = [analyticsLocations];
   obj = { style: tmp.nitroUpsell };
   const callback = importAllResult.useCallback(() => {
@@ -67,8 +67,8 @@ const View = get_ActivityIndicator.View;
 let closure_13 = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 1)"];
 let closure_14 = { code: "function animationEntering_SettingsAppearanceChannelListPreviewNitroUpsellTsx1(visible){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard)};}" };
 let closure_15 = (() => {
-  function animationEntering(targetHeight) {
-    const obj = { opacity: outer1_0(outer1_2[7]).withSpring(targetHeight, outer1_0(outer1_2[8]).springStandard) };
+  function animationEntering(value) {
+    const obj = { opacity: outer1_0(outer1_2[7]).withSpring(value, outer1_0(outer1_2[8]).springStandard) };
     return obj;
   }
   animationEntering.__closure = { withSpring: require(4542) /* withSpring */.withSpring, springStandard: require(4546) /* SUBTLE_SPRING */.springStandard };
@@ -79,7 +79,7 @@ let closure_15 = (() => {
 let closure_16 = { code: "function animationExiting_SettingsAppearanceChannelListPreviewNitroUpsellTsx2(visible,cleanUp){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard,'respect-motion-settings',function(finished){cleanUp===null||cleanUp===void 0||cleanUp(finished);})};}" };
 let closure_17 = { code: "function SettingsAppearanceChannelListPreviewNitroUpsellTsx3(finished){const{cleanUp}=this.__closure;var _cleanUp;(_cleanUp=cleanUp)===null||_cleanUp===void 0||_cleanUp(finished);}" };
 let closure_18 = (() => {
-  function animationExiting(targetHeight, cleanUp) {
+  function animationExiting(value, cleanUp) {
     let closure_0 = cleanUp;
     const obj = {};
     const fn = function s(arg0) {
@@ -90,7 +90,7 @@ let closure_18 = (() => {
     fn.__closure = { cleanUp };
     fn.__workletHash = 15025873527064;
     fn.__initData = outer1_17;
-    obj.opacity = outer1_0(outer1_2[7]).withSpring(targetHeight, outer1_0(outer1_2[8]).springStandard, "respect-motion-settings", fn);
+    obj.opacity = outer1_0(outer1_2[7]).withSpring(value, outer1_0(outer1_2[8]).springStandard, "respect-motion-settings", fn);
     return obj;
   }
   animationExiting.__closure = { withSpring: require(4542) /* withSpring */.withSpring, springStandard: require(4546) /* SUBTLE_SPRING */.springStandard };
@@ -137,7 +137,7 @@ const memoResult = importAllResult.memo(function SettingsAppearanceChannelListPr
   obj.entering = closure_15;
   obj.exiting = closure_18;
   obj.renderItem = callback;
-  return closure_10(importDefault(8569), obj);
+  return closure_10(importDefault(8614), obj);
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelListPreviewNitroUpsell.tsx");
 

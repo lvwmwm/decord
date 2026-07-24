@@ -1,10 +1,10 @@
-// Module ID: 11795
-// Function ID: 91496
+// Module ID: 11822
+// Function ID: 91734
 // Name: forumKeyExtractor
-// Dependencies: [31, 27, 3759, 5040, 1348, 4468, 4946, 11125, 653, 1277, 482, 33, 4130, 689, 5052, 477, 8829, 4126, 1212, 9137, 5681, 566, 11796, 14, 4098, 11798, 1934, 1324, 4543, 11274, 4660, 8525, 11799, 8729, 9141, 11800, 4320, 11151, 11124, 11801, 7879, 7009, 4662, 3831, 7415, 5650, 5464, 5484, 4619, 10436, 9139, 7019, 9545, 9564, 4099, 4100, 9562, 9145, 5160, 10434, 8379, 11804, 11386, 2]
+// Dependencies: [31, 27, 3759, 5040, 1348, 4468, 4946, 11155, 653, 1277, 482, 33, 4130, 689, 5052, 477, 8868, 4126, 1212, 9173, 5681, 566, 11823, 14, 4098, 11825, 1934, 1324, 4543, 11303, 4660, 8570, 11826, 7512, 9177, 11827, 4320, 11181, 11154, 11828, 7527, 7008, 4662, 3831, 7417, 5650, 5462, 5482, 4619, 10465, 9175, 7018, 9581, 9600, 4099, 4100, 9598, 9181, 5160, 10463, 8423, 11831, 11414, 2]
 // Exports: default
 
-// Module 11795 (forumKeyExtractor)
+// Module 11822 (forumKeyExtractor)
 import ChevronSmallDownIcon from "ChevronSmallDownIcon";
 import { View } from "useIsMobileVisualRefreshExperimentEnabled";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -40,7 +40,7 @@ function forumKeyExtractor(arg0, arg1) {
 }
 function ArchivedSection() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8829) /* useGradientBottom */;
+  let obj = require(8868) /* useGradientBottom */;
   obj = {};
   const items = [tmp.section, obj.useClientThemesOverride()];
   obj.style = items;
@@ -115,7 +115,7 @@ function SortAndViewOptions(channel) {
     obj.text = string3Result;
     obj.onPress = ArrowsUpDownIcon;
     obj.size = "sm";
-    ArrowsUpDownIcon = id(11274).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = id(11303).ArrowsUpDownIcon;
     obj = {};
     str4 = "xxs";
     obj.size = "xxs";
@@ -138,7 +138,7 @@ function SortAndViewOptions(channel) {
     obj.onPress = ArrowsUpDownIcon;
     const obj1 = { style: tmp.optionsPill };
     const obj2 = { size: "xs", style: tmp.sortOptionsIcon };
-    const items1 = [callback(id(11274).ArrowsUpDownIcon, obj2), , ];
+    const items1 = [callback(id(11303).ArrowsUpDownIcon, obj2), , ];
     const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", style: tmp.sortOptionsText };
     const intl2 = id(1212).intl;
     const string2 = intl2.string;
@@ -151,7 +151,7 @@ function SortAndViewOptions(channel) {
     obj3.children = string2Result;
     items1[1] = callback(id(4126).Text, obj3);
     const obj4 = { size: "xs" };
-    items1[2] = callback(id(8525).ChevronSmallDownIcon, obj4);
+    items1[2] = callback(id(8570).ChevronSmallDownIcon, obj4);
     obj1.children = items1;
     obj.children = closure_16(View, obj1);
     return tmp3(tmp4(4660).PressableOpacity, obj);
@@ -173,7 +173,7 @@ function TagFilter(channel) {
     obj.onPress = handlePress;
     obj.size = "sm";
     obj = { size: "xxs" };
-    obj.icon = callback(tmp3(8729).TagIcon, obj);
+    obj.icon = callback(tmp3(7512).TagIcon, obj);
     let tmp2Result = tmp2(tmp3(4543).Button, obj);
   } else {
     obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.8 };
@@ -195,7 +195,7 @@ function TagFilter(channel) {
     obj4.children = intl2.string(channel(1212).t["112vVE"]);
     items[1] = callback(channel(4126).Text, obj4);
     const obj5 = { size: "xs" };
-    items[2] = callback(channel(8525).ChevronSmallDownIcon, obj5);
+    items[2] = callback(channel(8570).ChevronSmallDownIcon, obj5);
     obj1.children = items;
     obj.children = closure_16(View, obj1);
     tmp2Result = tmp2(tmp3(4660).PressableOpacity, obj);
@@ -466,7 +466,7 @@ function onCreatePostWithoutPermission() {
   obj = { key: "FORUM_NO_POST_PERMISSION_HELP" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.content = intl.string(require(1212) /* getSystemLocale */.t.iyzwnD);
-  obj.icon = importDefault(7415);
+  obj.icon = importDefault(7417);
   obj.open(obj);
 }
 ({ AnalyticsObjects: closure_11, AnalyticsPages: closure_12, AnalyticsSections: closure_13 } = ME);

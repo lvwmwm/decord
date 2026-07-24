@@ -1,10 +1,10 @@
-// Module ID: 12331
-// Function ID: 95950
+// Module ID: 12358
+// Function ID: 96190
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 566, 3974, 4126, 1212, 5515, 1387, 2]
+// Dependencies: [31, 27, 4122, 33, 4130, 689, 566, 3974, 4126, 1212, 5513, 1387, 2]
 // Exports: default
 
-// Module 12331 (GuildDiscoveryPreviewElement)
+// Module 12358 (GuildDiscoveryPreviewElement)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ export default function GuildDiscoveryPreviewElement(guild) {
   const obj2 = { style: tmp.guildInfo };
   const obj3 = { style: tmp.guildIcon };
   const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const tmp4 = importDefault(5515);
+  const tmp4 = importDefault(5513);
   obj3.guild = require(1387) /* fromGuildPropertiesWithAdditionalFields */.fromClientDiscoverableGuild(guild);
   obj3.animate = !stateFromStores;
   const items3 = [callback(tmp4, obj3), ];

@@ -1,9 +1,9 @@
-// Module ID: 11407
-// Function ID: 88657
+// Module ID: 11435
+// Function ID: 88896
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 5660, 11408, 11409, 11410, 10077, 9103, 620, 10078, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 5660, 11436, 11437, 11438, 10109, 9141, 620, 10110, 566, 686, 2]
 
-// Module 11407 (_isNativeReflectConstruct)
+// Module 11435 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -114,7 +114,7 @@ function createInitialState(searchContext) {
 }
 function handleSearchQuery(searchContext) {
   searchContext = searchContext.searchContext;
-  const searchContextId = require(10078) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
+  const searchContextId = require(10110) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
   let value = map.get(searchContextId);
   if (null == value) {
     value = createInitialState(searchContext);
@@ -142,7 +142,7 @@ function computeLayoutForState(value) {
     } else {
       arr = table2[searchContext.type];
     }
-    channel = channel.getChannel(_require(10078).getChannelIdFromSearchContext(searchContext));
+    channel = channel.getChannel(_require(10110).getChannelIdFromSearchContext(searchContext));
     let isArchivedThreadResult;
     if (null != channel) {
       isArchivedThreadResult = channel.isArchivedThread();
@@ -174,8 +174,8 @@ function computeLayoutForState(value) {
         return dispatcher;
       }
     });
-    let obj = _require(10078);
-    channel = _require(10078).getSearchContextId(searchContext);
+    let obj = _require(10110);
+    channel = _require(10110).getSearchContextId(searchContext);
     const reduced = found.reduce((arg0, closure_1) => {
       if (outer1_14.MEMBERS === closure_1) {
         arg0[closure_1] = outer1_11.getCount(closure_8);
@@ -213,7 +213,7 @@ function computeLayoutForState(value) {
         flag = tmp20;
       }
     }
-    const obj3 = _require(10078);
+    const obj3 = _require(10110);
     let tmp23 = !_require(620).areArraysShallowEqual(value.candidateTabs, found);
     const obj4 = _require(620);
     const tmp24 = !_require(620).areArraysShallowEqual(value.visibleTabs, visibleTabs);

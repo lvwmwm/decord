@@ -1,10 +1,10 @@
-// Module ID: 14006
-// Function ID: 107231
+// Module ID: 14056
+// Function ID: 107554
 // Name: QuestDisclosureModalInner
-// Dependencies: [27, 653, 33, 4130, 689, 3803, 9009, 1212, 9023, 10970, 8940, 5807, 4126, 9468, 5167, 5459, 1920, 4543, 2]
+// Dependencies: [27, 653, 33, 4130, 689, 3803, 9048, 1212, 9062, 10997, 8979, 5807, 4126, 9504, 5167, 1920, 4543, 2]
 // Exports: default
 
-// Module 14006 (QuestDisclosureModalInner)
+// Module 14056 (QuestDisclosureModalInner)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -45,26 +45,26 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   let obj = {};
   if (setting) {
     obj = { size: "xs" };
-    obj.icon = tmp3(tmp4(9009).ServerIcon, obj);
+    obj.icon = tmp3(tmp4(9048).ServerIcon, obj);
     const intl4 = tmp4(1212).intl;
     obj.text = intl4.string(tmp4(1212).t["2bL0wT"]);
     let items = [obj];
     items1 = items;
   } else {
     obj = { size: "xs" };
-    obj.icon = tmp3(tmp4(9023).GlobeEarthIcon, obj);
+    obj.icon = tmp3(tmp4(9062).GlobeEarthIcon, obj);
     const intl = tmp4(1212).intl;
     obj.text = intl.string(tmp4(1212).t.xQSdPv);
     items1 = [obj, , ];
     const obj1 = {};
     const obj2 = { size: "xs" };
-    obj1.icon = tmp3(tmp4(10970).UserIcon, obj2);
+    obj1.icon = tmp3(tmp4(10997).UserIcon, obj2);
     const intl2 = tmp4(1212).intl;
     obj1.text = intl2.string(tmp4(1212).t.mYt7hQ);
     items1[1] = obj1;
     const obj3 = {};
     const obj4 = { size: "xs" };
-    obj3.icon = tmp3(tmp4(8940).GameControllerIcon, obj4);
+    obj3.icon = tmp3(tmp4(8979).GameControllerIcon, obj4);
     const intl3 = tmp4(1212).intl;
     obj3.text = intl3.string(tmp4(1212).t.XAsWxQ);
     items1[2] = obj3;
@@ -72,7 +72,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const obj5 = { style: tmp.container };
   const items2 = [callback(View, { style: tmp.illustration, children: callback(require(5807) /* AccountAgeTier10LargeBadge */.WumpusCouchSpotIllustration, {}) }), , , , ];
   const obj7 = { variant: "text-md/normal", color: "mobile-text-heading-primary" };
-  let obj10 = require(9468) /* getQuestUrl */;
+  let obj10 = require(9504) /* getQuestUrl */;
   const obj8 = { gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest };
   obj7.children = obj10.getDisclosureText(obj8);
   items2[1] = callback(require(4126) /* Text */.Text, obj7);
@@ -108,7 +108,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const tmp7 = View;
   obj11.privacySettingsUrl = items1(1920).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
   obj10.children = intl5.format(require(1212) /* getSystemLocale */.t.tzq9Wa, obj11);
-  items2[3] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj10);
+  items2[3] = callback(require(4126) /* Text */.Text, obj10);
   const obj12 = { style: tmp.closeButton };
   const obj13 = { variant: "primary", grow: true, size: "lg" };
   const intl6 = require(1212) /* getSystemLocale */.intl;

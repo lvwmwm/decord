@@ -1,7 +1,7 @@
 // Module ID: 6639
-// Function ID: 50982
+// Function ID: 50993
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [31, 27, 4122, 653, 33, 4130, 689, 624, 3991, 4542, 4554, 5515, 4126, 6640, 2]
+// Dependencies: [31, 27, 4122, 653, 33, 4130, 689, 624, 3991, 4542, 4554, 5513, 4126, 6640, 2]
 // Exports: default
 
 // Module 6639 (GuildBoostingMarketingPersistentCta)
@@ -85,13 +85,13 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   let obj3 = { style: tmp.guildInfoContainer };
   const obj4 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild };
   const tmp4 = stateFromStores(4554);
-  obj4.size = isVisible(5515).GuildIconSizes.LARGE;
-  const items3 = [callback(stateFromStores(5515), obj4), ];
+  obj4.size = isVisible(5513).GuildIconSizes.LARGE;
+  const items3 = [callback(stateFromStores(5513), obj4), ];
   const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
   items3[1] = callback(isVisible(4126).Text, obj5);
   obj3.children = items3;
   const items4 = [callback2(View, obj3), ];
-  const tmp5 = stateFromStores(5515);
+  const tmp5 = stateFromStores(5513);
   items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(6640), obj7) });
   obj2.children = items4;
   obj1.children = callback2(View, obj2);

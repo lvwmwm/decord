@@ -1,10 +1,10 @@
-// Module ID: 10339
-// Function ID: 79808
+// Module ID: 10368
+// Function ID: 80000
 // Name: useNativeForumPostHandlers
-// Dependencies: [31, 3823, 1348, 3767, 1849, 5656, 5686, 653, 1211, 7006, 44, 4320, 4593, 1443, 8328, 9581, 8274, 477, 4099, 4100, 7009, 4138, 3989, 10340, 9315, 9312, 2]
+// Dependencies: [31, 3823, 1348, 3767, 1849, 5656, 5686, 653, 1211, 7005, 44, 4320, 4593, 1443, 8372, 9617, 8318, 477, 4099, 4100, 7008, 4138, 3989, 10369, 9351, 9348, 2]
 // Exports: default
 
-// Module 10339 (useNativeForumPostHandlers)
+// Module 10368 (useNativeForumPostHandlers)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

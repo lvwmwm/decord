@@ -1,10 +1,10 @@
-// Module ID: 11805
-// Function ID: 91601
+// Module ID: 11832
+// Function ID: 91839
 // Name: ChannelTitleContent
-// Dependencies: [31, 27, 4808, 1352, 1348, 1838, 4217, 3767, 1849, 653, 1355, 1345, 33, 4130, 5052, 689, 566, 1212, 4593, 4320, 9063, 11806, 11807, 1273, 10115, 11808, 5085, 10113, 9348, 4660, 4126, 3969, 7882, 8474, 3946, 1334, 9642, 11809, 2]
+// Dependencies: [31, 27, 4808, 1352, 1348, 1838, 4217, 3767, 1849, 653, 1355, 1345, 33, 4130, 5052, 689, 566, 1212, 4593, 4320, 9102, 11833, 11834, 1273, 10147, 11835, 5085, 10145, 9384, 4660, 4126, 3969, 7969, 8518, 3946, 1334, 9678, 11836, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 11805 (ChannelTitleContent)
+// Module 11832 (ChannelTitleContent)
 import importAllResult from "conceal";
 import { View } from "registerAsset";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -403,7 +403,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
       }
       const obj1 = { userId: recipientId, guildId: stateFromStores.guild_id };
       obj2 = { onPressTitle };
-      obj3 = { title: callback(DMChannelName, obj), icon: channelIcon, titleSuffix: tmp21, subTitle: callback(importDefault(9063), obj1) };
+      obj3 = { title: callback(DMChannelName, obj), icon: channelIcon, titleSuffix: tmp21, subTitle: callback(importDefault(9102), obj1) };
       obj2.children = callback(ChannelTitleContent, obj3);
       return callback(ChannelTitleWrapper, obj2);
     }

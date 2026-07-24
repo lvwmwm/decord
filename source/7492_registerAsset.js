@@ -1,11 +1,11 @@
 // Module ID: 7492
-// Function ID: 60125
+// Function ID: 59908
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 7492 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 33, height: 32, scales: [1, 2, 3], hash: "981aef55993c2a089b56e9b3e929139e", name: "ic_stage_channel_32px", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "220c71f96225f35f4c52e38db6b8734b", name: "SoundboardIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

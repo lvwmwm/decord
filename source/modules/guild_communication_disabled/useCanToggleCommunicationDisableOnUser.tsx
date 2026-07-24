@@ -1,10 +1,10 @@
-// Module ID: 8174
-// Function ID: 64546
+// Module ID: 8218
+// Function ID: 64774
 // Name: canToggleCommunicationDisableOnUser
 // Dependencies: [1391, 1838, 3758, 1849, 653, 3763, 566, 2]
 // Exports: default
 
-// Module 8174 (canToggleCommunicationDisableOnUser)
+// Module 8218 (canToggleCommunicationDisableOnUser)
 import { isGuildOwner } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

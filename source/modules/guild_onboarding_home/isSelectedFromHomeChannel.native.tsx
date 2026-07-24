@@ -1,10 +1,10 @@
-// Module ID: 10389
-// Function ID: 80104
+// Module ID: 10418
+// Function ID: 80296
 // Name: isSelectedFromHomeChannel
 // Dependencies: [5659, 1906, 1355, 3982, 3981, 2]
 // Exports: default
 
-// Module 10389 (isSelectedFromHomeChannel)
+// Module 10418 (isSelectedFromHomeChannel)
 import "_isNativeReflectConstruct";
 import "_isNativeReflectConstruct";
 import { isGuildHomeChannel } from "set";

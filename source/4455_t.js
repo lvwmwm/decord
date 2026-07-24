@@ -1,5 +1,5 @@
 // Module ID: 4455
-// Function ID: 39186
+// Function ID: 39187
 // Name: t
 // Dependencies: [31]
 
@@ -544,7 +544,7 @@ const fn = function t(exports, React) {
       items = [];
       items[0] = stripe;
       memo = stripe.useMemo(() => outer1_12(stripe), items);
-      f39225 = memo;
+      f39226 = memo;
       tmp2 = _slicedToArray(stripe.useState(() => {
         const obj = {};
         let stripe = null;
@@ -621,7 +621,7 @@ const fn = function t(exports, React) {
         }
       }, items2);
       tmp7 = usePrevious(options);
-      f39227 = tmp7;
+      f39228 = tmp7;
       items3 = [, , ];
       items3[0] = options;
       items3[1] = tmp7;
@@ -699,7 +699,7 @@ const fn = function t(exports, React) {
       }), 2);
       first1 = tmp6[0];
       c5 = first1;
-      f39240 = tmp6[1];
+      f39241 = tmp6[1];
       safeSetContext = function safeSetContext(checkoutSdk) {
         let closure_0 = checkoutSdk;
         let closure_1 = arg1;

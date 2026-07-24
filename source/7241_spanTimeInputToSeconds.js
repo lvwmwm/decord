@@ -1,5 +1,5 @@
 // Module ID: 7241
-// Function ID: 58290
+// Function ID: 58319
 // Name: spanTimeInputToSeconds
 // Dependencies: [77, 7242, 7246, 7248, 7250, 7251, 7252, 7253, 7254, 7255, 7258, 7263, 7236]
 // Exports: addChildSpanToSpan, getRootSpan, getSpanDescendants, removeChildSpanFromSpan, showSpanDropWarning, spanToTraceContext, spanToTraceHeader, spanToTransactionTraceContext, updateMetricSummaryOnActiveSpan, updateSpanName

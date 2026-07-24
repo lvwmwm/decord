@@ -1,10 +1,10 @@
-// Module ID: 9312
-// Function ID: 72755
+// Module ID: 9348
+// Function ID: 72964
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 9313, 6830, 1348, 1917, 4946, 4349, 4222, 3758, 4142, 1849, 7622, 653, 4317, 4353, 1881, 5675, 7005, 4619, 3747, 3831, 1212, 9314, 9315, 1872, 4099, 4100, 9145, 7007, 7009, 4324, 5492, 4312, 21, 3830, 9439, 14, 22, 477, 1555, 675, 9440, 6691, 4979, 4062, 9444, 9474, 2]
+// Dependencies: [57, 5, 9349, 6829, 1348, 1917, 4946, 4349, 4222, 3758, 4142, 1849, 7711, 653, 4317, 4353, 1881, 5675, 7004, 4619, 3747, 3831, 1212, 9350, 9351, 1872, 4099, 4100, 9181, 7006, 7008, 4324, 5490, 4312, 21, 3830, 9475, 14, 22, 477, 1555, 675, 9476, 6691, 4979, 4062, 9480, 9510, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 9312 (_createForOfIteratorHelperLoose)
+// Module 9348 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { updateShouldShowJumpToPresentButton as closure_5 } from "getChatInputContainerHeight";
@@ -428,7 +428,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     flag = false;
   }
   if (MESSAGE === undefined) {
-    MESSAGE = require(7005) /* checkReactionResponse */.ReactionLocations.MESSAGE;
+    MESSAGE = require(7004) /* checkReactionResponse */.ReactionLocations.MESSAGE;
   }
   const guildId = channel.getGuildId();
   currentUser = currentUser.getCurrentUser();
@@ -466,14 +466,14 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     }
     openResult.content = stringResult;
     t = dependencyMap;
-    openResult.icon = importDefault(9314);
+    openResult.icon = importDefault(9350);
     openResult = obj14.open(openResult);
     isForumPostResult = channel.isForumPost();
   } else if (null != reaction) {
     if (flag) {
       if (true === !reaction.me_burst) {
         if (!obj5.isPremium(currentUser)) {
-          return require(9315) /* handleOutOfSuperReactions */.handleOutOfSuperReactions();
+          return require(9351) /* handleOutOfSuperReactions */.handleOutOfSuperReactions();
         }
         obj5 = require(1872) /* isPremiumAtLeast */;
       }
@@ -482,7 +482,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
       if (!result) {
         if (channel.isPrivate()) {
           if (!result1) {
-            const obj7 = require(7005) /* checkReactionResponse */;
+            const obj7 = require(7004) /* checkReactionResponse */;
             const obj = { burst: flag };
             obj7.addReaction(channel.id, messageId, reaction.emoji, MESSAGE, obj);
             if (!flag) {
@@ -495,7 +495,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
       if (result) {
         const guildId1 = channel.getGuildId();
         if (null != guildId1) {
-          return require(9145) /* openMemberVerificationModal */.openMemberVerificationModal(guildId1);
+          return require(9181) /* openMemberVerificationModal */.openMemberVerificationModal(guildId1);
         }
       }
     }
@@ -504,16 +504,16 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     obj1 = { channelId: channel.id, messageId, emoji: reaction.emoji, location: MESSAGE };
     let obj2 = { burst: flag };
     obj1.options = obj2;
-    require(7005) /* checkReactionResponse */.removeReaction(obj1);
+    require(7004) /* checkReactionResponse */.removeReaction(obj1);
   } else {
-    obj2 = require(9315) /* handleOutOfSuperReactions */;
+    obj2 = require(9351) /* handleOutOfSuperReactions */;
     const obj3 = { burst: flag };
     const result4 = obj2.handleAddNewReactions(channel, messageId, MESSAGE, obj3);
   }
 };
 export const handleToggleFollowForumPost = function handleToggleFollowForumPost(channel, outer2_21) {
   const result = require(4099) /* getAndroidLightImpactEffect */.triggerHapticFeedback(importDefault(4100).IMPACT_LIGHT);
-  const obj2 = importDefault(7007);
+  const obj2 = importDefault(7006);
   if (outer2_21) {
     obj2.leaveThread(channel, "iOS Forum Toolbar");
   } else {
@@ -532,16 +532,16 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
     isMediaChannelResult = channel1.isMediaChannel();
   }
   let obj = { postId: id, location };
-  const result = require(7009) /* trackForumChannelSeenBatch */.trackForumPostLinkCopied(obj);
+  const result = require(7008) /* trackForumChannelSeenBatch */.trackForumPostLinkCopied(obj);
   if (null != isMediaChannelResult && isMediaChannelResult) {
     obj = { media_post_id: id };
     require(4324) /* _createForOfIteratorHelperLoose */.trackWithMetadata(constants3.MEDIA_POST_SHARE_PROMPT_CLICKED, obj);
     const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
   }
-  const obj2 = require(7009) /* trackForumChannelSeenBatch */;
+  const obj2 = require(7008) /* trackForumChannelSeenBatch */;
   const result1 = require(4099) /* getAndroidLightImpactEffect */.triggerHapticFeedback(importDefault(4100).IMPACT_LIGHT);
   if (null == channel) {
-    const obj9 = require(5492) /* _copy */;
+    const obj9 = require(5490) /* _copy */;
     let result2;
     if (true === tmp5) {
       result2 = importDefault(21).castChannelIdAsMessageId(id);
@@ -550,7 +550,7 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
     obj9.copy(require(4312) /* _createForOfIteratorHelperLoose */.getChannelPermalink(guildId, id, result2));
     const obj10 = require(4312) /* _createForOfIteratorHelperLoose */;
   } else {
-    const obj7 = require(5492) /* _copy */;
+    const obj7 = require(5490) /* _copy */;
     obj7.copy(require(4312) /* _createForOfIteratorHelperLoose */.getChannelLinkToCopy(channel, channel1));
     const obj8 = require(4312) /* _createForOfIteratorHelperLoose */;
   }
@@ -559,7 +559,7 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
 };
 export const findMessageIndex = function findMessageIndex(rows, focusTargetId) {
   if (null != focusTargetId) {
-    return require(9439) /* findMessageRowIndex */.findMessageRowIndex(rows, focusTargetId);
+    return require(9475) /* findMessageRowIndex */.findMessageRowIndex(rows, focusTargetId);
   }
 };
 export { getVisibleMessages };
@@ -590,7 +590,7 @@ export const startOrCancelChannelLatestMessagesLoad = function startOrCancelChan
 export { recordTimings };
 export const findMessageIndexInRows = function findMessageIndexInRows(focusTargetId, rows) {
   if (null != focusTargetId) {
-    return require(9439) /* findMessageRowIndex */.findMessageRowIndex(rows, focusTargetId);
+    return require(9475) /* findMessageRowIndex */.findMessageRowIndex(rows, focusTargetId);
   }
 };
 export { getMessage };
@@ -652,7 +652,7 @@ export const scrollToBottom = function scrollToBottom(current) {
   if (flag) {
     flag = !arg1;
   }
-  importDefault(9440).scrollToBottom(current.current, flag);
+  importDefault(9476).scrollToBottom(current.current, flag);
 };
 export const scrollToTop = function scrollToTop(current) {
   let flag = arg2;
@@ -662,7 +662,7 @@ export const scrollToTop = function scrollToTop(current) {
   if (flag) {
     flag = !arg1;
   }
-  importDefault(9440).scrollToTop(current.current, flag);
+  importDefault(9476).scrollToTop(current.current, flag);
 };
 export const scrollToRelativeOffset = function scrollToRelativeOffset(current) {
   let flag = arg3;
@@ -672,13 +672,13 @@ export const scrollToRelativeOffset = function scrollToRelativeOffset(current) {
   if (flag) {
     flag = !arg1;
   }
-  const result = importDefault(9440).scrollToRelativeOffset(current.current, arg2, flag);
+  const result = importDefault(9476).scrollToRelativeOffset(current.current, arg2, flag);
 };
 export const scrollToTopMessage = function scrollToTopMessage(current, getPreviousRows) {
   const previousRows = getPreviousRows.getPreviousRows();
   if (previousRows.length > 0) {
-    importDefault(9440).scrollTo(current.current, previousRows.length - 1);
-    const obj = importDefault(9440);
+    importDefault(9476).scrollTo(current.current, previousRows.length - 1);
+    const obj = importDefault(9476);
   }
 };
 export const canAddNewReactions = function canAddNewReactions(isPrivate) {
@@ -726,7 +726,7 @@ export const clearRows = function clearRows(current, clear) {
   arg4(obj);
   clear.clear();
   callback3(arg2, arg3, false);
-  importDefault(9440).clearRows(current.current);
+  importDefault(9476).clearRows(current.current);
 };
 export const handleFirstLayout = function handleFirstLayout(arg0, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
   arg0({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestsVisibleMessagesChangedSource.FIRST_LAYOUT });
@@ -886,16 +886,16 @@ export const handleVisibleMessagesChange = function handleVisibleMessagesChange(
           const arr = getVisibleMessages(obj);
           if (arr.length > 0) {
             obj = { visibleMessages: arr, source: tmp };
-            const result = require(9444) /* _manuallyStartConsoleQuest */.questsVisibleMobileMessagesChanged(obj);
-            const obj4 = require(9474) /* _createForOfIteratorHelperLoose */;
+            const result = require(9480) /* _manuallyStartConsoleQuest */.questsVisibleMobileMessagesChanged(obj);
+            const obj4 = require(9510) /* _createForOfIteratorHelperLoose */;
             const result1 = obj4.handleAnnouncementMessageViewTracking(arr, shouldTrackAnnouncementMessageViews, guildId, channel);
-            const obj5 = require(9474) /* _createForOfIteratorHelperLoose */;
+            const obj5 = require(9510) /* _createForOfIteratorHelperLoose */;
             const result2 = obj5.handleOfficialMessageViewTracking(arr, shouldTrackOfficialMessageViews, guildId, channel);
-            const obj6 = require(9474) /* _createForOfIteratorHelperLoose */;
+            const obj6 = require(9510) /* _createForOfIteratorHelperLoose */;
             const result3 = obj6.handleRichPresenceInviteEmbedViewTracking(arr, shouldTrackRichPresenceInviteEmbedViews, guildId, channel);
-            const obj7 = require(9474) /* _createForOfIteratorHelperLoose */;
+            const obj7 = require(9510) /* _createForOfIteratorHelperLoose */;
             const result4 = obj7.handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEmbedViews, guildId, channel);
-            const obj2 = require(9444) /* _manuallyStartConsoleQuest */;
+            const obj2 = require(9480) /* _manuallyStartConsoleQuest */;
           }
         }
       }

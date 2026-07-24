@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 90372
+// Module ID: 11671
+// Function ID: 90610
 // Name: getMutualFriendsLabel
 // Dependencies: [1212, 2]
 // Exports: default
 
-// Module 11644 (getMutualFriendsLabel)
+// Module 11671 (getMutualFriendsLabel)
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/getMutualFriendsLabel.tsx");
 
 export default function getMutualFriendsLabel(arg0) {

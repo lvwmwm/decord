@@ -1,10 +1,10 @@
-// Module ID: 16332
-// Function ID: 127473
+// Module ID: 16379
+// Function ID: 127797
 // Name: Header
-// Dependencies: [57, 31, 27, 653, 4940, 33, 4130, 689, 4066, 9984, 1273, 1392, 3976, 5165, 1212, 4660, 5119, 5504, 477, 4126, 4814, 5503, 2]
+// Dependencies: [57, 31, 27, 653, 4940, 33, 4130, 689, 4066, 10016, 1273, 1392, 3976, 5165, 1212, 4660, 5119, 5502, 477, 4126, 4814, 5501, 2]
 // Exports: default
 
-// Module 16332 (Header)
+// Module 16379 (Header)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -30,7 +30,7 @@ function Header(arg0) {
   let platform;
   ({ platform, integration, applicationId } = arg0);
   ({ onRemove, locked } = arg0);
-  let obj = require(9984) /* useRequestApplication */;
+  let obj = require(10016) /* useRequestApplication */;
   let application;
   if (null != integration) {
     application = integration.application;
@@ -158,7 +158,7 @@ function BooleanConfigRule(metadataField) {
     }
     _slicedToArray(tmp, num);
   };
-  return closure_12(metadataField(5504).TableSwitchRow, obj, metadataField);
+  return closure_12(metadataField(5502).TableSwitchRow, obj, metadataField);
 }
 function NumericalConfigRule(existingPendingConfiguration) {
   let _slicedToArray;
@@ -377,7 +377,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
           _slicedToArray(tmp, num4);
         }
     };
-    return onInputValueChange(metadataField(5504).TableSwitchRow, obj4, metadataField);
+    return onInputValueChange(metadataField(5502).TableSwitchRow, obj4, metadataField);
   }
 }
 function BlueskyMetadataRules(arg0) {

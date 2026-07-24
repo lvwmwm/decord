@@ -1,5 +1,5 @@
 // Module ID: 6442
-// Function ID: 50617
+// Function ID: 50628
 // Name: RocketshipSpotIllustration
 // Dependencies: [33, 5085, 6443, 2]
 // Exports: RocketshipSpotIllustration

@@ -1,10 +1,10 @@
-// Module ID: 8492
-// Function ID: 67804
+// Module ID: 8537
+// Function ID: 68034
 // Name: getUserProfileActionSheetKey
-// Dependencies: [5, 7461, 3767, 1849, 1934, 3803, 8493, 4098, 8498, 2]
+// Dependencies: [5, 7541, 3767, 1849, 1934, 3803, 8538, 4098, 8543, 2]
 // Exports: getUserProfileBlockedSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8492 (getUserProfileActionSheetKey)
+// Module 8537 (getUserProfileActionSheetKey)
 import explicitContentFromProto from "explicitContentFromProto";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -24,7 +24,7 @@ function showUserProfileActionSheet(isPreviewingChanges, arg1) {
     if (isIgnoredResult) {
       let obj = importDefault(4098);
       obj = {};
-      const tmp9 = require(1934) /* maybeLoadBundle */(8493, dependencyMap.paths);
+      const tmp9 = require(1934) /* maybeLoadBundle */(8538, dependencyMap.paths);
       const merged = Object.assign(isPreviewingChanges);
       let str = "ignore";
       if (isBlockedResult) {
@@ -35,7 +35,7 @@ function showUserProfileActionSheet(isPreviewingChanges, arg1) {
       obj.openLazy(tmp9, getUserProfileIgnoredSpeedBumpActionSheetKey(isPreviewingChanges.userId), obj);
     }
   }
-  const tmp17 = require(1934) /* maybeLoadBundle */(8498, dependencyMap.paths);
+  const tmp17 = require(1934) /* maybeLoadBundle */(8543, dependencyMap.paths);
   const obj3 = importDefault(4098);
   obj = {};
   const merged1 = Object.assign(isPreviewingChanges);

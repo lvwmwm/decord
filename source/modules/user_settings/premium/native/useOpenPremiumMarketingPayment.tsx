@@ -1,10 +1,10 @@
-// Module ID: 12424
-// Function ID: 96475
+// Module ID: 12477
+// Function ID: 96798
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [31, 653, 1851, 5464, 6686, 6685, 6661, 1212, 3776, 2]
+// Dependencies: [31, 653, 1851, 5462, 6686, 6685, 6661, 1212, 3776, 2]
 // Exports: default
 
-// Module 12424 (useOpenPremiumMarketingPayment)
+// Module 12477 (useOpenPremiumMarketingPayment)
 import result from "result";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";

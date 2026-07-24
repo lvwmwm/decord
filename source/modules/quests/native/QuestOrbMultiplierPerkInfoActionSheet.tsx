@@ -1,10 +1,10 @@
-// Module ID: 14062
-// Function ID: 108138
+// Module ID: 14112
+// Function ID: 108461
 // Name: Footer
-// Dependencies: [31, 27, 653, 33, 4130, 689, 4098, 5796, 7958, 3827, 1920, 4543, 1212, 1557, 5446, 3842, 4126, 9466, 3040, 5187, 14059, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 4098, 5796, 8045, 3827, 1920, 4543, 1212, 1557, 5446, 3842, 4126, 9502, 3040, 5187, 14109, 2]
 // Exports: default
 
-// Module 14062 (Footer)
+// Module 14112 (Footer)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -28,7 +28,7 @@ function Footer(eligibleToReceivePremiumRewards) {
     outer1_0(outer1_2[7]).openUserSettings(obj);
   }, []);
   const tmp = _createForOfIteratorHelperLoose();
-  ({ loading, onPress } = importDefault(7958)(false, callback, constants.QUEST_ORB_MULTIPLIER_PERK_INFO));
+  ({ loading, onPress } = importDefault(8045)(false, callback, constants.QUEST_ORB_MULTIPLIER_PERK_INFO));
   const callback1 = React.useCallback(() => {
     outer1_1(outer1_2[6]).hideActionSheet();
     const obj = outer1_1(outer1_2[6]);
@@ -116,12 +116,12 @@ let result = require("ME").fileFinishedImporting("modules/quests/native/QuestOrb
 export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   multiplier = multiplier.multiplier;
   const orbMultiplierEligibility = multiplier.orbMultiplierEligibility;
-  let obj = multiplier(9466);
+  let obj = multiplier(9502);
   const result = obj.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
   const dependencyMap = result;
-  let tmp2 = orbMultiplierEligibility === multiplier(9466).QuestOrbMultiplierEligibilityType.NITRO;
+  let tmp2 = orbMultiplierEligibility === multiplier(9502).QuestOrbMultiplierEligibilityType.NITRO;
   if (!tmp2) {
-    tmp2 = orbMultiplierEligibility === multiplier(9466).QuestOrbMultiplierEligibilityType.UPSELL;
+    tmp2 = orbMultiplierEligibility === multiplier(9502).QuestOrbMultiplierEligibilityType.UPSELL;
   }
   const items = [orbMultiplierEligibility];
   const items1 = [result, orbMultiplierEligibility, multiplier];
@@ -156,6 +156,6 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   }, items1);
   obj = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles: closure_11 };
   obj = { visible: tmp2, children: callback(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
-  obj.children = callback(orbMultiplierEligibility(14059), obj);
+  obj.children = callback(orbMultiplierEligibility(14109), obj);
   return callback(multiplier(5187).BottomSheet, obj);
 };

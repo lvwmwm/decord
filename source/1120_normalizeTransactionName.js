@@ -1,5 +1,5 @@
 // Module ID: 1120
-// Function ID: 12727
+// Function ID: 12728
 // Name: normalizeTransactionName
 // Dependencies: [77, 1000, 794]
 // Exports: reactRouterV3BrowserTracingIntegration

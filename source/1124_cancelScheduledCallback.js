@@ -1,5 +1,5 @@
 // Module ID: 1124
-// Function ID: 12763
+// Function ID: 12764
 // Name: cancelScheduledCallback
 // Dependencies: [5, 77, 57, 65, 31, 1000, 1125, 1126, 794, 1118, 1116]
 // Exports: createReactRouterV6CompatibleTracingIntegration, createV6CompatibleWithSentryReactRouterRouting, createV6CompatibleWrapCreateBrowserRouter, createV6CompatibleWrapCreateMemoryRouter, createV6CompatibleWrapUseRoutes
@@ -11,15 +11,15 @@ import _slicedToArray from "_slicedToArray";
 import _toConsumableArray from "_toConsumableArray";
 import result from "result";
 
-function cancelScheduledCallback(_animationFrame) {
+function cancelScheduledCallback(closure_0) {
   const WINDOW = require(1000) /* keys */.WINDOW;
   if (null != WINDOW) {
     if (WINDOW.cancelAnimationFrame) {
       const WINDOW2 = require(1000) /* keys */.WINDOW;
-      WINDOW2.cancelAnimationFrame(_animationFrame);
+      WINDOW2.cancelAnimationFrame(closure_0);
     }
   }
-  clearTimeout(_animationFrame);
+  clearTimeout(closure_0);
 }
 function computeLocationKey(_location) {
   let pathname;

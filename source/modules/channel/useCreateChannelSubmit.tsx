@@ -1,10 +1,10 @@
-// Module ID: 8410
-// Function ID: 66939
+// Module ID: 8454
+// Function ID: 67167
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 57, 31, 653, 1881, 483, 8411, 3976, 1212, 2]
+// Dependencies: [5, 57, 31, 653, 1881, 483, 8455, 3976, 1212, 2]
 // Exports: default
 
-// Module 8410 (useCreateChannelSubmit)
+// Module 8454 (useCreateChannelSubmit)
 import fromHexReverseArray from "fromHexReverseArray";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

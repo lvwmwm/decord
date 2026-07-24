@@ -1,5 +1,5 @@
 // Module ID: 1003
-// Function ID: 10963
+// Function ID: 10964
 // Name: _lazyLoadIntegration
 // Dependencies: [5, 1004, 794]
 // Exports: lazyLoadIntegration

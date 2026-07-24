@@ -1,7 +1,7 @@
 // Module ID: 12050
-// Function ID: 93736
+// Function ID: 93685
 // Name: cached
-// Dependencies: [12013]
+// Dependencies: [12039]
 
 // Module 12050 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "tegn", verb: "\u00E5 ha" }, file: { unit: "bytes", verb: "\u00E5 ha" }, array: { unit: "elementer", verb: "\u00E5 inneholde" }, set: { unit: "elementer", verb: "\u00E5 inneholde" } };
-      let closure_1 = { regex: "input", email: "e-postadresse", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dato- og klokkeslett", date: "ISO-dato", time: "ISO-klokkeslett", duration: "ISO-varighet", ipv4: "IPv4-omr\u00E5de", ipv6: "IPv6-omr\u00E5de", cidrv4: "IPv4-spekter", cidrv6: "IPv6-spekter", base64: "base64-enkodet streng", base64url: "base64url-enkodet streng", json_string: "JSON-streng", e164: "E.164-nummer", jwt: "JWT", template_literal: "input" };
-      let closure_2 = { nan: "NaN", number: "tall", array: "liste" };
+      let closure_0 = { string: { unit: "car\u00E0cters", verb: "contenir" }, file: { unit: "bytes", verb: "contenir" }, array: { unit: "elements", verb: "contenir" }, set: { unit: "elements", verb: "contenir" } };
+      let closure_1 = { regex: "entrada", email: "adre\u00E7a electr\u00F2nica", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data i hora ISO", date: "data ISO", time: "hora ISO", duration: "durada ISO", ipv4: "adre\u00E7a IPv4", ipv6: "adre\u00E7a IPv6", cidrv4: "rang IPv4", cidrv6: "rang IPv6", base64: "cadena codificada en base64", base64url: "cadena codificada en base64url", json_string: "cadena JSON", e164: "n\u00FAmero E.164", jwt: "JWT", template_literal: "entrada" };
+      let closure_2 = { nan: "NaN" };
       return (code) => {
         let minimum;
         let origin;
@@ -76,119 +76,123 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp51 = parsedTypeResult;
+          let tmp53 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp51 = tmp50;
+            tmp53 = tmp52;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Ugyldig input: forventet instanceof " + code.expected + ", fikk " + tmp51;
+            let combined = "Tipus inv\u00E0lid: s'esperava instanceof " + code.expected + ", s'ha rebut " + tmp53;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Ugyldig input: forventet " + expected + ", fikk " + tmp51;
+            combined = "Tipus inv\u00E0lid: s'esperava " + expected + ", s'ha rebut " + tmp53;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Ugyldig verdi: forventet " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "Valor inv\u00E0lid: s'esperava " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Ugyldig valg: forventet en av " + closure_2.joinValues(code.values, "|");
+            combined1 = "Opci\u00F3 inv\u00E0lida: s'esperava una de " + closure_2.joinValues(code.values, " o ");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str28 = "<";
+          let str33 = "menys de";
           if (code.inclusive) {
-            str28 = "<=";
+            str33 = "com a m\u00E0xim";
           }
-          const tmp26 = getSizing(code.origin);
+          const tmp28 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str29 = "value";
-          if (tmp26) {
-            if (tmp28) {
-              str29 = origin2;
+          let str34 = "el valor";
+          if (tmp28) {
+            if (tmp30) {
+              str34 = origin2;
             }
             let str = code.maximum.toString();
-            const unit = tmp26.unit;
-            let str34 = "elementer";
+            const unit = tmp28.unit;
+            let str40 = "elements";
             if (null != unit) {
-              str34 = unit;
+              str40 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "For stor(t): forventet " + str29 + " til \u00E5 ha " + str28 + str + " " + str34;
-            const str33 = code.maximum;
+            let combined2 = "Massa gran: s'esperava que " + str34 + " contingu\u00E9s " + str33 + " " + str + " " + str40;
+            const str39 = code.maximum;
           } else {
-            let tmp29 = str29;
-            if (tmp28) {
-              tmp29 = origin2;
+            let tmp31 = str34;
+            if (tmp30) {
+              tmp31 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "For stor(t): forventet " + tmp29 + " til \u00E5 ha " + str28 + code.maximum.toString();
-            const str30 = code.maximum;
+            combined2 = "Massa gran: s'esperava que " + tmp31 + " fos " + str33 + " " + code.maximum.toString();
+            const str35 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str22 = ">";
+          let str24 = "m\u00E9s de";
           if (code.inclusive) {
-            str22 = ">=";
+            str24 = "com a m\u00EDnim";
           }
-          const tmp15 = getSizing(code.origin);
+          const tmp17 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
-          if (tmp15) {
+          if (tmp17) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str22 + str1 + " " + tmp15.unit;
+            let combined3 = "Massa petit: s'esperava que " + origin + " contingu\u00E9s " + str24 + " " + str1 + " " + tmp17.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str22 + str1;
+            combined3 = "Massa petit: s'esperava que " + origin + " fos " + str24 + " " + str1;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Ugyldig streng: m\u00E5 starte med \"" + code.prefix + "\"";
+            let combined4 = "Format inv\u00E0lid: ha de comen\u00E7ar amb \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Ugyldig streng: m\u00E5 ende med \"" + code.suffix + "\"";
+            combined4 = "Format inv\u00E0lid: ha d'acabar amb \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Ugyldig streng: m\u00E5 inneholde \"" + code.includes + "\"";
+            combined4 = "Format inv\u00E0lid: ha d'incloure \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Ugyldig streng: m\u00E5 matche m\u00F8nsteret " + code.pattern;
+            combined4 = "Format inv\u00E0lid: ha de coincidir amb el patr\u00F3 " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Ugyldig " + format;
+            combined4 = "Format inv\u00E0lid per a " + format;
           }
           return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Ugyldig tall: m\u00E5 v\u00E6re et multiplum av " + code.divisor;
+          return "N\u00FAmero inv\u00E0lid: ha de ser m\u00FAltiple de " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str7 = "Ukjent n\u00F8kkel";
+          let str7 = "";
+          let str8 = "";
           if (code.keys.length > 1) {
-            str7 = "Ukjente n\u00F8kler";
+            str8 = "s";
+          }
+          if (code.keys.length > 1) {
+            str7 = "s";
           }
           const _HermesInternal3 = HermesInternal;
-          return "" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "Clau" + str8 + " no reconeguda" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Ugyldig n\u00F8kkel i " + code.origin;
+            return "Clau inv\u00E0lida a " + code.origin;
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "Ugyldig verdi i " + code.origin;
+                return "Element inv\u00E0lid a " + code.origin;
               }
             }
-            return "Ugyldig input";
+            return "Entrada inv\u00E0lida";
           }
         }
       };

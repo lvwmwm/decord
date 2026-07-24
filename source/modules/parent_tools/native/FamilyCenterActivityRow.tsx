@@ -1,10 +1,10 @@
-// Module ID: 13803
-// Function ID: 105764
+// Module ID: 13854
+// Function ID: 106088
 // Name: memoResult1
-// Dependencies: [31, 27, 1849, 6769, 6770, 653, 33, 4130, 689, 1273, 44, 624, 21, 4126, 3969, 6828, 5515, 9171, 1212, 2198, 13804, 13807, 13808, 2]
+// Dependencies: [31, 27, 1849, 6769, 6770, 653, 33, 4130, 689, 1273, 44, 624, 21, 4126, 3969, 6827, 5513, 9207, 1212, 2198, 13855, 13858, 13859, 2]
 // Exports: default
 
-// Module 13803 (memoResult1)
+// Module 13854 (memoResult1)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo((action) => {
     const obj8 = importDefault(3969);
     const _Date = Date;
     const date = new Date(extractTimestampResult);
-    obj4.children = action(6828).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
+    obj4.children = action(6827).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
     items2[1] = callback(action(4126).Text, obj4);
     obj2.children = items2;
     items1[1] = callback2(View, obj2);
@@ -96,17 +96,17 @@ const memoResult1 = importAllResult.memo((action) => {
     obj = {};
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp);
     obj.guild = stateFromStores;
-    obj.size = action(5515).GuildIconSizes.NORMAL;
+    obj.size = action(5513).GuildIconSizes.NORMAL;
     obj.animate = true;
-    const items1 = [callback(importDefault(5515), obj), ];
+    const items1 = [callback(importDefault(5513), obj), ];
     const obj1 = { style: tmp.text };
     const obj2 = { style: tmp.headerContainer };
     const obj3 = { style: tmp.headerAndIconContainer };
     let tmp14 = null;
     if (hasItem) {
-      const obj4 = { style: tmp.badge, guild: stateFromStores, size: importDefault(9171).Sizes.SMALL, disableColor: true };
-      tmp14 = callback(importDefault(9171), obj4);
-      const tmp18 = importDefault(9171);
+      const obj4 = { style: tmp.badge, guild: stateFromStores, size: importDefault(9207).Sizes.SMALL, disableColor: true };
+      tmp14 = callback(importDefault(9207), obj4);
+      const tmp18 = importDefault(9207);
     }
     const items2 = [tmp14, ];
     const obj5 = { style: tmp.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: stateFromStores.name };
@@ -141,13 +141,13 @@ export default function FamilyCenterActivityRow(action) {
   let skuId;
   let subscriptionPlanId;
   action = action.action;
-  let obj = require(6828) /* getActivityTypeTextConfigs */;
+  let obj = require(6827) /* getActivityTypeTextConfigs */;
   if (!obj.isUserAction(action)) {
-    let obj1 = require(6828) /* getActivityTypeTextConfigs */;
+    let obj1 = require(6827) /* getActivityTypeTextConfigs */;
     if (!obj1.isGuildAction(action)) {
-      let obj2 = require(6828) /* getActivityTypeTextConfigs */;
+      let obj2 = require(6827) /* getActivityTypeTextConfigs */;
       if (!obj2.isPurchase(action)) {
-        let obj3 = require(6828) /* getActivityTypeTextConfigs */;
+        let obj3 = require(6827) /* getActivityTypeTextConfigs */;
         if (!obj3.isGift(action)) {
           return null;
         }
@@ -160,7 +160,7 @@ export default function FamilyCenterActivityRow(action) {
     if (null != purchaseInfo) {
       obj = {};
       ({ sku_id: obj11.skuId, subscription_plan_id: obj11.subscriptionPlanId, total: obj11.total, currency: obj11.currency } = purchaseInfo);
-      tmp23 = callback(importDefault(13804), obj);
+      tmp23 = callback(importDefault(13855), obj);
     }
     return tmp23;
   } else {
@@ -169,10 +169,10 @@ export default function FamilyCenterActivityRow(action) {
       if (null == giftInfo) {
         return null;
       } else {
-        const giftRowDisplayInfo = require(13807) /* formatGiftDate */.getGiftRowDisplayInfo(giftInfo);
+        const giftRowDisplayInfo = require(13858) /* formatGiftDate */.getGiftRowDisplayInfo(giftInfo);
         ({ skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt } = giftRowDisplayInfo);
         obj = { skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt };
-        return callback(importDefault(13808), obj);
+        return callback(importDefault(13859), obj);
       }
     } else {
       obj1 = {};
@@ -186,7 +186,7 @@ export default function FamilyCenterActivityRow(action) {
       obj1.children = tmp14Result;
       return callback(View, obj1);
     }
-    obj6 = require(6828) /* getActivityTypeTextConfigs */;
+    obj6 = require(6827) /* getActivityTypeTextConfigs */;
   }
-  obj5 = require(6828) /* getActivityTypeTextConfigs */;
+  obj5 = require(6827) /* getActivityTypeTextConfigs */;
 };

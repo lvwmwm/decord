@@ -1,10 +1,10 @@
-// Module ID: 6937
-// Function ID: 55319
+// Module ID: 6936
+// Function ID: 55328
 // Name: useIntersectionObserver
-// Dependencies: [31, 6938, 6939, 2]
+// Dependencies: [31, 6937, 6938, 2]
 // Exports: useIsVisible
 
-// Module 6937 (useIntersectionObserver)
+// Module 6936 (useIntersectionObserver)
 import result from "result";
 
 let closure_3;
@@ -25,7 +25,7 @@ function useIntersectionObserver(current, arg1, flag) {
   if (null == arg1) {
     tmp3 = closure_7;
   }
-  const tmp2Result = flag(6938)(tmp3);
+  const tmp2Result = flag(6937)(tmp3);
   callback = tmp2Result;
   closure_4 = callback3(null);
   const items = [flag, current, tmp2Result];
@@ -78,7 +78,7 @@ export const useIsVisible = function useIsVisible(arg0, arg1, flag) {
     flag = true;
   }
   const items = [num];
-  return useIntersectionObserver(num(6938)((isIntersecting) => {
+  return useIntersectionObserver(num(6937)((isIntersecting) => {
     callback(isIntersecting.isIntersecting);
   }).current, callback2(() => {
     let value = outer1_8.get(num);

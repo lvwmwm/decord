@@ -1,10 +1,10 @@
-// Module ID: 10564
-// Function ID: 82502
+// Module ID: 10593
+// Function ID: 82694
 // Name: StreamTextOverlay
-// Dependencies: [31, 27, 4149, 1194, 653, 4191, 33, 4130, 689, 3974, 4126, 1273, 566, 10565, 10567, 1212, 4319, 10574, 10587, 10577, 10562, 5217, 4660, 10589, 2]
+// Dependencies: [31, 27, 4149, 1194, 653, 4191, 33, 4130, 689, 3974, 4126, 1273, 566, 10594, 10596, 1212, 4319, 10603, 10616, 10606, 10591, 5217, 4660, 10618, 2]
 // Exports: default
 
-// Module 10564 (StreamTextOverlay)
+// Module 10593 (StreamTextOverlay)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -86,15 +86,15 @@ let closure_14 = importAllResult.memo((participant) => {
   let obj = participant(566);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getActiveStreamForStreamKey(participant.id));
-  const tmp2 = importDefault(10565)(MediaEngineContextTypes.STREAM, participant.user.id);
+  const tmp2 = importDefault(10594)(MediaEngineContextTypes.STREAM, participant.user.id);
   if (null != stateFromStores) {
     const state = stateFromStores.state;
     if (ApplicationStreamStates.FAILED === state) {
-      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10567).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
-      return callback(importDefault(10567), obj);
+      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10596).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+      return callback(importDefault(10596), obj);
     } else if (ApplicationStreamStates.ENDED === state) {
-      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10567).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
-      return callback(importDefault(10567), obj);
+      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10596).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+      return callback(importDefault(10596), obj);
     } else {
       if (ApplicationStreamStates.RECONNECTING === state) {
         const obj1 = {};
@@ -115,8 +115,8 @@ let closure_14 = importAllResult.memo((participant) => {
         }
       }
       if (null != tmp2) {
-        const obj4 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10567).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp2 };
-        return callback(importDefault(10567), obj4);
+        const obj4 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10596).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp2 };
+        return callback(importDefault(10596), obj4);
       } else {
         const obj5 = {};
         id = id.getId();
@@ -129,14 +129,14 @@ let closure_14 = importAllResult.memo((participant) => {
                 }
         };
         if (stateFromStores.ownerId === id) {
-          let REMOTE_STREAM = participant(10577).VideoSpinnerContext.SELF_STREAM;
+          let REMOTE_STREAM = participant(10606).VideoSpinnerContext.SELF_STREAM;
         } else {
-          REMOTE_STREAM = participant(10577).VideoSpinnerContext.REMOTE_STREAM;
+          REMOTE_STREAM = participant(10606).VideoSpinnerContext.REMOTE_STREAM;
         }
         obj6.videoSpinnerContext = REMOTE_STREAM;
         obj6.userId = user.id;
         obj6.paused = stateFromStores.state === ApplicationStreamStates.PAUSED;
-        const items1 = [callback(importDefault(10574), obj6), tmp8];
+        const items1 = [callback(importDefault(10603), obj6), tmp8];
         obj5.children = items1;
         return closure_11(closure_12, obj5);
       }
@@ -151,7 +151,7 @@ let closure_15 = importAllResult.memo((arg0) => {
   ({ onFullScreen, style } = arg0);
   let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { top: 4, left: 4, right: 4, bottom: 4 } };
   items = [callback2().statusWrapper, style];
-  obj = { source: importDefault(10589), size: require(1273) /* Button */.Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE };
+  obj = { source: importDefault(10618), size: require(1273) /* Button */.Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
   return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
 });

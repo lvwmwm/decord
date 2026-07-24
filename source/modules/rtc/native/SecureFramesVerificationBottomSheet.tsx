@@ -1,10 +1,10 @@
-// Module ID: 8913
-// Function ID: 70333
+// Module ID: 8952
+// Function ID: 70548
 // Name: SecureFramesVerificationBottomSheet
-// Dependencies: [31, 27, 8899, 33, 4130, 689, 8904, 4098, 5187, 5186, 5501, 4660, 1212, 4126, 4541, 4652, 8911, 8914, 2]
+// Dependencies: [31, 27, 8938, 33, 4130, 689, 8943, 4098, 5187, 5186, 5499, 4660, 1212, 4126, 4541, 4652, 8950, 8953, 2]
 // Exports: default
 
-// Module 8913 (SecureFramesVerificationBottomSheet)
+// Module 8952 (SecureFramesVerificationBottomSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
@@ -38,7 +38,7 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   onShareClick = onShareClick.onShareClick;
   ({ title, subtitle, footer, epochAuthenticator } = onShareClick);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = onShareClick(8904);
+  let obj = onShareClick(8943);
   obj = { fingerprintBase64: epochAuthenticator, chunkSize: closure_5, desiredLength: closure_7 };
   const readableSecureFramesFingerprint = obj.useReadableSecureFramesFingerprint(obj);
   const items = [readableSecureFramesFingerprint, onShareClick];
@@ -54,7 +54,7 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
     readableSecureFramesFingerprint(outer1_2[7]).hideActionSheet();
   }, []);
   obj = { startExpanded: true };
-  const obj1 = { title: null, leading: callback(onShareClick(5501).ActionSheetCloseButton, { onPress: callback1 }) };
+  const obj1 = { title: null, leading: callback(onShareClick(5499).ActionSheetCloseButton, { onPress: callback1 }) };
   const obj2 = { style: tmp.share, hitSlop: 8, onPress: callback, disabled: null == readableSecureFramesFingerprint, accessibilityRole: "button" };
   const intl = onShareClick(1212).intl;
   obj2.accessibilityLabel = intl.string(onShareClick(1212).t.RDE0Sc);
@@ -82,12 +82,12 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   let tmp9 = null != readableSecureFramesFingerprint;
   if (tmp9) {
     const obj11 = { chunks: readableSecureFramesFingerprint };
-    tmp9 = callback(readableSecureFramesFingerprint(8914), obj11);
+    tmp9 = callback(readableSecureFramesFingerprint(8953), obj11);
   }
   obj10.trailing = tmp9;
   obj10.chunks = readableSecureFramesFingerprint;
   obj10.columns = closure_6;
-  items2[1] = callback(readableSecureFramesFingerprint(8911), obj10);
+  items2[1] = callback(readableSecureFramesFingerprint(8950), obj10);
   const obj12 = { style: tmp.footer, variant: "text-xs/normal", color: "text-muted", children: footer };
   items2[2] = callback(onShareClick(4126).Text, obj12);
   obj4.children = items2;

@@ -1,5 +1,5 @@
 // Module ID: 1052
-// Function ID: 11261
+// Function ID: 11262
 // Name: _wrapTimeFunction
 // Dependencies: [794, 1004]
 

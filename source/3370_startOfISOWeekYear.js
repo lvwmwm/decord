@@ -1,5 +1,5 @@
 // Module ID: 3370
-// Function ID: 26491
+// Function ID: 26492
 // Name: startOfISOWeekYear
 // Dependencies: [3366, 3367, 3210]
 // Exports: default

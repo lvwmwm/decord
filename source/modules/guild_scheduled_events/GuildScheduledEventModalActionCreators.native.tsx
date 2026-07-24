@@ -1,10 +1,10 @@
-// Module ID: 8353
-// Function ID: 66516
+// Module ID: 8397
+// Function ID: 66744
 // Name: openGuildEventDetails
-// Dependencies: [5, 1354, 8354, 4098, 8355, 1934, 8346, 12208, 2]
+// Dependencies: [5, 1354, 8398, 4098, 8399, 1934, 8390, 12235, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8353 (openGuildEventDetails)
+// Module 8397 (openGuildEventDetails)
 import maybeLoadBundle from "maybeLoadBundle";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY";
@@ -20,15 +20,15 @@ function openGuildEventDetails(arg0) {
   let obj = importDefault(4098);
   obj = { eventId, event, onCloseActionSheet: onClose };
   if (null == recurrenceId) {
-    recurrenceId = require(8346) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(event);
-    const obj3 = require(8346) /* getNextBucketedTime */;
+    recurrenceId = require(8390) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(event);
+    const obj3 = require(8390) /* getNextBucketedTime */;
   }
   let tmp5;
   if (null != recurrenceId) {
     tmp5 = recurrenceId;
   }
   obj.recurrenceId = tmp5;
-  obj.openLazy(require(1934) /* maybeLoadBundle */(8355, dependencyMap.paths), closure_5, obj, "stack");
+  obj.openLazy(require(1934) /* maybeLoadBundle */(8399, dependencyMap.paths), closure_5, obj, "stack");
 }
 function _transitionToEventDetailsFromInvite() {
   // CreateGeneratorClosureLongIndex (0x67)
@@ -44,5 +44,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   let obj = importDefault(4098);
   obj = { channel };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(12208, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(12235, dependencyMap.paths), closure_4, obj);
 };

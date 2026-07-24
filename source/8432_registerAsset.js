@@ -1,11 +1,11 @@
 // Module ID: 8432
-// Function ID: 67179
+// Function ID: 67002
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 8432 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 160, height: 160, scales: [2, 3], hash: "85840ade8b69557ffa30f1445cbffe12", name: "img_no_results_alt_darker", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "be0495259d7800ba5ff04ac01243104d", name: "LocationIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,9 +1,9 @@
-// Module ID: 13622
-// Function ID: 104644
+// Module ID: 13673
+// Function ID: 104968
 // Name: PasswordlessUpsell
-// Dependencies: [57, 31, 27, 13623, 7662, 11024, 653, 13624, 33, 4130, 689, 1456, 5167, 5085, 13625, 4126, 1212, 4543, 4337, 13626, 1934, 566, 13648, 9203, 5594, 5503, 10095, 13649, 13550, 13652, 6653, 8360, 675, 8760, 8758, 2]
+// Dependencies: [57, 31, 27, 13674, 7751, 11051, 653, 13675, 33, 4130, 689, 1456, 5167, 5085, 13676, 4126, 1212, 4543, 4337, 13677, 1934, 566, 13699, 9239, 5592, 5501, 10127, 13700, 13601, 13703, 6653, 8404, 675, 8799, 8797, 2]
 
-// Module 13622 (PasswordlessUpsell)
+// Module 13673 (PasswordlessUpsell)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useSegmentedControlState";
 import { View } from "RestrictedAccountRedirect";
@@ -27,7 +27,7 @@ function PasswordlessUpsell() {
   obj = { border: "none", shadow: "none" };
   const obj1 = { style: { flexDirection: "row", gap: 8 } };
   const obj2 = { style: { width: 70, height: 70 } };
-  const obj3 = { source: _require(13625), resizeMode: "contain", style: tmp.upsellImagePasswordless };
+  const obj3 = { source: _require(13676), resizeMode: "contain", style: tmp.upsellImagePasswordless };
   obj2.children = callback2(importDefault(5085), obj3);
   const items = [callback2(View, obj2), ];
   const obj4 = { style: { flex: 1 } };
@@ -121,10 +121,10 @@ function AccountSecurityPage() {
     obj.ListHeaderComponent = outer1_1(outer1_2[27]);
     return obj.createList(obj);
   }, []);
-  return callback2(importDefault(13550), { node });
+  return callback2(importDefault(13601), { node });
 }
 function AccountStandingPage() {
-  return callback2(require(13652) /* AutomatedUnderageAppealStatus */.default, { visible: true });
+  return callback2(require(13703) /* AutomatedUnderageAppealStatus */.default, { visible: true });
 }
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
 let obj = {};
@@ -150,7 +150,7 @@ const memoResult = importAllResult.memo(() => {
   if (null != params) {
     initialTab = params.initialTab;
   }
-  let obj1 = _require(8360);
+  let obj1 = _require(8404);
   obj = {};
   obj = {};
   const intl = _require(1212).intl;
@@ -185,9 +185,9 @@ const memoResult = importAllResult.memo(() => {
   const segmentedControlState = obj1.useSegmentedControlState(obj);
   const obj3 = {};
   const obj2 = { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) };
-  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(8760).SegmentedControl, { state: segmentedControlState }) }), ];
-  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(8760).SegmentedControl, { state: segmentedControlState }) };
-  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(_require(8758).SegmentedControlPages, { state: segmentedControlState }) });
+  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(8799).SegmentedControl, { state: segmentedControlState }) }), ];
+  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(8799).SegmentedControl, { state: segmentedControlState }) };
+  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(_require(8797).SegmentedControlPages, { state: segmentedControlState }) });
   obj3.children = items1;
   return callback3(closure_13, obj3);
 });

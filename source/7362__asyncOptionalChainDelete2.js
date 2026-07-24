@@ -1,5 +1,5 @@
 // Module ID: 7362
-// Function ID: 59335
+// Function ID: 59364
 // Name: _asyncOptionalChainDelete2
 // Dependencies: [5, 7361]
 // Exports: _asyncOptionalChainDelete

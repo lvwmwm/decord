@@ -1,10 +1,10 @@
-// Module ID: 9990
-// Function ID: 77237
+// Module ID: 10022
+// Function ID: 77431
 // Name: makeGuildRoleConnectionsConnectAccountsActionSheetKey
-// Dependencies: [4337, 9991, 1934, 4098, 9983, 2]
+// Dependencies: [4337, 10023, 1934, 4098, 10015, 2]
 // Exports: openGuildRoleConnectionsConnectAccountModal, openGuildRoleConnectionsModal
 
-// Module 9990 (makeGuildRoleConnectionsConnectAccountsActionSheetKey)
+// Module 10022 (makeGuildRoleConnectionsConnectAccountsActionSheetKey)
 function makeGuildRoleConnectionsConnectAccountsActionSheetKey(id) {
   return "GuildRoleConnectionsConnectAccountsActionSheet-" + id;
 }
@@ -22,11 +22,11 @@ export const openGuildRoleConnectionsModal = function openGuildRoleConnectionsMo
       }
     }
   };
-  obj.pushLazy(onClose(1934)(9991, dependencyMap.paths), obj, "ROLE_CONNECTIONS_MODAL_KEY");
+  obj.pushLazy(onClose(1934)(10023, dependencyMap.paths), obj, "ROLE_CONNECTIONS_MODAL_KEY");
 };
 export { makeGuildRoleConnectionsConnectAccountsActionSheetKey };
 export const openGuildRoleConnectionsConnectAccountModal = function openGuildRoleConnectionsConnectAccountModal(verificationRole, guildId) {
   let obj = importDefault(4098);
   obj = { role: verificationRole, guildId };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(9983, dependencyMap.paths), makeGuildRoleConnectionsConnectAccountsActionSheetKey(verificationRole.id), obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(10015, dependencyMap.paths), makeGuildRoleConnectionsConnectAccountsActionSheetKey(verificationRole.id), obj);
 };

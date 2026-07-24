@@ -1,7 +1,7 @@
 // Module ID: 7223
-// Function ID: 58203
+// Function ID: 58232
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 6, 7, 27, 3811, 5619, 7204, 2]
+// Dependencies: [5, 6, 7, 27, 3811, 5617, 7204, 2]
 
 // Module 7223 (productSK2ToIAPProduct)
 import CurrencyCodes from "CurrencyCodes";
@@ -20,7 +20,7 @@ function productSK2ToIAPProduct(description) {
     items.push(promoOfferToDiscount(description.subscription.introductoryOffer));
   }
   const price = description.price;
-  const NumberResult = Number(price.toFixed(require(5619) /* CurrencyCodes */.CurrencyExponents[description.currency.toLowerCase(description.currency)]));
+  const NumberResult = Number(price.toFixed(require(5617) /* CurrencyCodes */.CurrencyExponents[description.currency.toLowerCase(description.currency)]));
   const obj = { identifier: String(description.id), price: NumberResult, currencySymbol: str2.split(/[0-9]/)[0], currencyCode: str3.toLowerCase(), priceString: String(NumberResult), countryCode: "", downloadable: false, description: description.description, title: description.displayName, discounts: items };
   return obj;
 }

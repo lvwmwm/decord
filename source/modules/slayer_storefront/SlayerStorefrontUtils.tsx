@@ -1,10 +1,10 @@
-// Module ID: 5611
-// Function ID: 47696
+// Module ID: 5609
+// Function ID: 47693
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4167, 5612, 4153, 1838, 5613, 5614, 653, 655, 482, 4369, 22, 5615, 1443, 4988, 566, 5470, 2]
+// Dependencies: [4167, 5610, 4153, 1838, 5611, 5612, 653, 655, 482, 4369, 22, 5613, 1443, 4988, 566, 5468, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 5611 (_createForOfIteratorHelperLoose)
+// Module 5609 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { WishlistRecommendationReason as closure_4 } from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
@@ -434,8 +434,8 @@ export const transformSlayerApplicationStorefrontServer = function transformSlay
   obj.application = fromServer;
   let result;
   if (null != body.storefront_pricing) {
-    result = require(5615) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(body.storefront_pricing);
-    const obj3 = require(5615) /* transformStorefrontSKUPricesServer */;
+    result = require(5613) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(body.storefront_pricing);
+    const obj3 = require(5613) /* transformStorefrontSKUPricesServer */;
   }
   obj.storefrontPricing = result;
   const obj2 = importDefault(22);
@@ -674,7 +674,7 @@ export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetS
   let obj = _require(566);
   const items = [closure_7];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuildIdFromApplicationId(closure_0));
-  const getOrFetchApplication = _require(5470).useGetOrFetchApplication(applicationId);
+  const getOrFetchApplication = _require(5468).useGetOrFetchApplication(applicationId);
   obj = {};
   if (null == stateFromStores) {
     let guildId;

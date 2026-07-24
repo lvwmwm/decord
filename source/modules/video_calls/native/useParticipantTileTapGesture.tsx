@@ -1,10 +1,10 @@
-// Module ID: 10562
-// Function ID: 82499
+// Module ID: 10591
+// Function ID: 82691
 // Name: useParticipantTileTapGesture
 // Dependencies: [5217, 2]
 // Exports: default
 
-// Module 10562 (useParticipantTileTapGesture)
+// Module 10591 (useParticipantTileTapGesture)
 const result = require("set").fileFinishedImporting("modules/video_calls/native/useParticipantTileTapGesture.tsx");
 
 export default function useParticipantTileTapGesture(arg0) {

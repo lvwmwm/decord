@@ -1,10 +1,10 @@
-// Module ID: 15788
-// Function ID: 121889
+// Module ID: 15835
+// Function ID: 122211
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [31, 4202, 4146, 4148, 33, 10014, 8867, 624, 10747, 4227, 10712, 15058, 15739, 3831, 7507, 689, 1212, 2]
+// Dependencies: [31, 4202, 4146, 4148, 33, 10046, 8906, 624, 10776, 4227, 10741, 15105, 15786, 3831, 7577, 689, 1212, 2]
 // Exports: default
 
-// Module 15788 (useVoicePanelCardUserStateIcons)
+// Module 15835 (useVoicePanelCardUserStateIcons)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -32,19 +32,19 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   let isRTCDisconnectedUIVisible;
   let callback;
   let callback1;
-  setShowFloatingCTA = setShowFloatingCTA.useContext(importDefault(10014)).setShowFloatingCTA;
+  setShowFloatingCTA = setShowFloatingCTA.useContext(importDefault(10046)).setShowFloatingCTA;
   let tmp2;
   if (arg0 === stateFromStores.USER) {
     tmp2 = id;
   }
-  muteDeafenIconState = _require(8867).useMuteDeafenIconState(tmp2, guildId);
-  let obj = _require(8867);
+  muteDeafenIconState = _require(8906).useMuteDeafenIconState(tmp2, guildId);
+  let obj = _require(8906);
   let tmp4;
   if (arg0 === stateFromStores.USER) {
     tmp4 = id;
   }
-  videoIconState = _require(8867).useVideoIconState(tmp4, guildId);
-  let obj2 = _require(8867);
+  videoIconState = _require(8906).useVideoIconState(tmp4, guildId);
+  let obj2 = _require(8906);
   let items = [muteDeafenIconState];
   stateFromStores = _require(624).useStateFromStores(items, () => muteDeafenIconState.isConnected());
   let obj3 = _require(624);
@@ -65,16 +65,16 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (arg0 === stateFromStores.STREAM) {
     tmp9 = id;
   }
-  let tmp8 = importDefault(10747);
-  showTileVolumeIndicator = importDefault(10712).useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
+  let tmp8 = importDefault(10776);
+  showTileVolumeIndicator = importDefault(10741).useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = 0 === tmp8(tmp9, _require(4227).MediaEngineContextTypes.STREAM).effectiveVolume;
   }
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === stateFromStores.STREAM;
   }
-  let obj5 = importDefault(10712);
-  isRTCDisconnectedUIVisible = _require(15058).useIsRTCDisconnectedUIVisible(tmp, id);
+  let obj5 = importDefault(10741);
+  isRTCDisconnectedUIVisible = _require(15105).useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [setShowFloatingCTA];
   callback = setShowFloatingCTA.useCallback(() => {
 
@@ -85,7 +85,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
       key: "user-disconnected-indicator",
       icon() {
         const obj = { size: "xs", color: callback2(689).colors.STATUS_WARNING };
-        return stateFromStores1(callback(7507).CircleErrorIcon, obj);
+        return stateFromStores1(callback(7577).CircleErrorIcon, obj);
       }
     };
     const intl = callback(tmp[16]).intl;
@@ -140,7 +140,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
             muteDeafenIconState,
             withLeftMargin: items1.length > 0,
             onPress() {
-                    if (callback(8867).MuteDeafenIconState.DEAFENED_SERVER === outer1_4) {
+                    if (callback(8906).MuteDeafenIconState.DEAFENED_SERVER === outer1_4) {
                       let obj = {};
                       const _HermesInternal4 = HermesInternal;
                       obj.key = "" + outer1_1 + "-status";
@@ -148,7 +148,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
                       obj.content = intl4.string(callback(1212).t.btxSdB);
                       callback2(3831).open(obj);
                       const obj7 = callback2(3831);
-                    } else if (callback(8867).MuteDeafenIconState.DEAFENED === tmp) {
+                    } else if (callback(8906).MuteDeafenIconState.DEAFENED === tmp) {
                       obj = {};
                       const _HermesInternal3 = HermesInternal;
                       obj.key = "" + outer1_1 + "-status";
@@ -156,7 +156,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
                       obj.content = intl3.string(callback(1212).t.NjmiOL);
                       callback2(3831).open(obj);
                       const obj5 = callback2(3831);
-                    } else if (callback(8867).MuteDeafenIconState.MUTED_SERVER === tmp) {
+                    } else if (callback(8906).MuteDeafenIconState.MUTED_SERVER === tmp) {
                       let obj2 = callback2(3831);
                       const obj1 = {};
                       const _HermesInternal2 = HermesInternal;
@@ -164,7 +164,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
                       const intl2 = callback(1212).intl;
                       obj1.content = intl2.string(callback(1212).t.uLddbQ);
                       obj2.open(obj1);
-                    } else if (callback(8867).MuteDeafenIconState.MUTED_LOCAL === tmp) {
+                    } else if (callback(8906).MuteDeafenIconState.MUTED_LOCAL === tmp) {
                       obj = callback2(3831);
                       obj2 = {};
                       const _HermesInternal = HermesInternal;
@@ -172,7 +172,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
                       const intl = callback(1212).intl;
                       obj2.content = intl.string(callback(1212).t.Q8Uzof);
                       obj.open(obj2);
-                    } else if (callback(8867).MuteDeafenIconState.MUTED === tmp) {
+                    } else if (callback(8906).MuteDeafenIconState.MUTED === tmp) {
                       const obj3 = {};
                       const _HermesInternal5 = HermesInternal;
                       obj3.key = "" + outer1_1 + "-status";

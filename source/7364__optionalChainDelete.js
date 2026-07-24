@@ -1,5 +1,5 @@
 // Module ID: 7364
-// Function ID: 59343
+// Function ID: 59372
 // Name: _optionalChainDelete
 // Dependencies: [7363]
 

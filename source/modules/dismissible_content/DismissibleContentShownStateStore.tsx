@@ -1,5 +1,5 @@
 // Module ID: 1340
-// Function ID: 15742
+// Function ID: 15743
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1341, 1342, 1343, 677, 1339, 682, 1344, 566, 686, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, removeCandidateContent, useIsAnyContentShown, useIsContentShown

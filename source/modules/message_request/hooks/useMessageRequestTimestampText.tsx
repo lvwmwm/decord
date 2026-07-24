@@ -1,10 +1,10 @@
-// Module ID: 15561
-// Function ID: 120017
+// Module ID: 15608
+// Function ID: 120339
 // Name: getMessageTimestampForChannel
-// Dependencies: [4142, 21, 11628, 566, 3712, 7023, 2]
+// Dependencies: [4142, 21, 11655, 566, 3712, 7022, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 15561 (getMessageTimestampForChannel)
+// Module 15608 (getMessageTimestampForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -29,7 +29,7 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
   const _require = channel;
-  let obj = _require(11628);
+  let obj = _require(11655);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = {};
   const items = [_isNativeReflectConstruct];
@@ -45,7 +45,7 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
 };
 export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
   const _require = channel;
-  let obj = _require(11628);
+  let obj = _require(11655);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = {};
   const items = [_isNativeReflectConstruct];
@@ -54,8 +54,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
   const tmp3 = getMessageTimestampForChannel(obj);
   let str = "";
   if (null != tmp3) {
-    str = _require(7023).getTimestampString(tmp3);
-    const obj4 = _require(7023);
+    str = _require(7022).getTimestampString(tmp3);
+    const obj4 = _require(7022);
   }
   return str;
 };

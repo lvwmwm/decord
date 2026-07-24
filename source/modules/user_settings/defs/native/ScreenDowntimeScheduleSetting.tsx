@@ -1,9 +1,9 @@
-// Module ID: 14350
-// Function ID: 109753
+// Module ID: 14400
+// Function ID: 110076
 // Name: toggle
-// Dependencies: [7662, 6829, 13814, 7123, 10095, 1212, 3803, 2]
+// Dependencies: [7751, 6828, 13865, 7122, 10127, 1212, 3803, 2]
 
-// Module 14350 (toggle)
+// Module 14400 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -22,10 +22,10 @@ const toggle = createToggle.createToggle({
     return EnableScreenDowntimeScheduleNotifications.updateSetting(addFlagResult);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(6829) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
-    const obj = require(6829) /* apexExperiment */;
-    const tmp2 = importDefault(13814)();
-    const hasActiveParentLinks = require(7123) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = require(6828) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
+    const obj = require(6828) /* apexExperiment */;
+    const tmp2 = importDefault(13865)();
+    const hasActiveParentLinks = require(7122) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }
@@ -51,10 +51,10 @@ let obj = {
     return EnableScreenDowntimeScheduleNotifications.updateSetting(addFlagResult);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(6829) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
-    const obj = require(6829) /* apexExperiment */;
-    const tmp2 = importDefault(13814)();
-    const hasActiveParentLinks = require(7123) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = require(6828) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
+    const obj = require(6828) /* apexExperiment */;
+    const tmp2 = importDefault(13865)();
+    const hasActiveParentLinks = require(7122) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }

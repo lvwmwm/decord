@@ -1,10 +1,10 @@
-// Module ID: 8647
-// Function ID: 68449
+// Module ID: 8688
+// Function ID: 68669
 // Name: GameProfileLinkAccount
-// Dependencies: [31, 27, 1849, 33, 4130, 689, 5467, 566, 8600, 4126, 1212, 5085, 1273, 4543, 8648, 2]
+// Dependencies: [31, 27, 1849, 33, 4130, 689, 5465, 566, 8642, 4126, 1212, 5085, 1273, 4543, 8689, 2]
 // Exports: default
 
-// Module 8647 (GameProfileLinkAccount)
+// Module 8688 (GameProfileLinkAccount)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

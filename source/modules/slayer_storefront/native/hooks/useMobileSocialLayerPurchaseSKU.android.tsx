@@ -1,10 +1,10 @@
-// Module ID: 9739
-// Function ID: 75767
+// Module ID: 9773
+// Function ID: 75979
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [31, 653, 7160, 9740, 2]
+// Dependencies: [31, 653, 7160, 9774, 2]
 // Exports: default
 
-// Module 9739 (useMobileSocialLayerPurchaseSKU)
+// Module 9773 (useMobileSocialLayerPurchaseSKU)
 import result from "result";
 import { PriceSetAssignmentPurchaseTypes as closure_4 } from "ME";
 
@@ -50,7 +50,7 @@ export default function useMobileSocialLayerPurchaseSKU(sku) {
     const merged1 = Object.assign(merged);
     obj["platformSkuId"] = tmp6;
     obj["isFreeForStaffSelfPurchase"] = false;
-    return importDefault(9740)(obj);
+    return importDefault(9774)(obj);
   }
   DEFAULT = constants.DEFAULT;
 };

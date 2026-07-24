@@ -1,10 +1,10 @@
-// Module ID: 16220
-// Function ID: 125937
+// Module ID: 16267
+// Function ID: 126261
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 1391, 1348, 1907, 4051, 3758, 3767, 1849, 8439, 653, 33, 4130, 689, 1212, 8438, 10374, 5497, 4471, 4561, 3830, 5087, 5788, 1360, 7512, 4320, 5503, 5165, 7679, 16011, 5504, 7519, 7518, 14988, 1920, 16221, 1392, 9486, 1273, 7504, 5130, 7495, 4541, 5448, 3842, 1456, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 1391, 1348, 1907, 4051, 3758, 3767, 1849, 8483, 653, 33, 4130, 689, 1212, 8482, 10403, 5495, 4471, 4561, 3830, 5087, 5788, 1360, 7574, 4320, 5501, 5165, 7768, 16058, 5502, 7654, 7653, 15035, 1920, 16268, 1392, 9522, 1273, 7645, 5130, 7636, 4541, 5448, 3842, 1456, 566, 2]
 // Exports: default
 
-// Module 16220 (_isNativeReflectConstruct)
+// Module 16267 (_isNativeReflectConstruct)
 import isGuildOwner from "isGuildOwner";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "jsxProd";

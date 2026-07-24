@@ -1,10 +1,10 @@
-// Module ID: 9731
-// Function ID: 75686
+// Module ID: 9765
+// Function ID: 75898
 // Name: useWishlistApplicationIds
 // Dependencies: [31, 653, 2]
 // Exports: useWishlistApplicationIds
 
-// Module 9731 (useWishlistApplicationIds)
+// Module 9765 (useWishlistApplicationIds)
 import result from "result";
 import { COLLECTIBLES_APPLICATION_ID as closure_1 } from "ME";
 

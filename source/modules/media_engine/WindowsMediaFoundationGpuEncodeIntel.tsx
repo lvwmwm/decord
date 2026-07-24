@@ -1,10 +1,10 @@
-// Module ID: 12822
-// Function ID: 99652
+// Module ID: 12873
+// Function ID: 99973
 // Name: getWmfGpuEncodeIntel
 // Dependencies: [1428, 2]
 // Exports: getWmfGpuEncodeIntel
 
-// Module 12822 (getWmfGpuEncodeIntel)
+// Module 12873 (getWmfGpuEncodeIntel)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-01-wmf-gpu-encode-intel", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

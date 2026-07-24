@@ -1,10 +1,10 @@
-// Module ID: 5470
-// Function ID: 46739
+// Module ID: 5468
+// Function ID: 46736
 // Name: useGetOrFetchApplications
-// Dependencies: [31, 4167, 620, 5465, 22, 1327, 566, 2]
+// Dependencies: [31, 4167, 620, 5463, 22, 1327, 566, 2]
 // Exports: useGetOrFetchApplication
 
-// Module 5470 (useGetOrFetchApplications)
+// Module 5468 (useGetOrFetchApplications)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,11 +1,11 @@
-// Module ID: 15379
-// Function ID: 117363
+// Module ID: 15426
+// Function ID: 117685
 // Name: SearchableMembersScreen
-// Dependencies: [31, 27, 5658, 1348, 1917, 1838, 1906, 11409, 10077, 9103, 9133, 653, 33, 4130, 624, 5464, 10078, 15340, 3763, 1820, 10076, 8492, 1212, 3843, 15380, 15378, 15333, 10867, 15344, 15381, 5484, 11309, 2]
+// Dependencies: [31, 27, 5658, 1348, 1917, 1838, 1906, 11437, 10109, 9141, 9169, 653, 33, 4130, 624, 5462, 10110, 15387, 3763, 1820, 10108, 8537, 1212, 3843, 15427, 15425, 15380, 10894, 15391, 15428, 5482, 11338, 2]
 
-// Module 15379 (SearchableMembersScreen)
-import importAllResult from "module_11309";
-import { View } from "module_10867";
+// Module 15426 (SearchableMembersScreen)
+import importAllResult from "module_11338";
+import { View } from "module_10894";
 import { EVERYONE_CHANNEL_ID } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
@@ -27,8 +27,8 @@ const require = arg1;
 function SearchableMembersScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const guildId = searchContext.guildId;
-  const analyticsLocations = guildId(5464)().analyticsLocations;
-  let obj = searchContext(10078);
+  const analyticsLocations = guildId(5462)().analyticsLocations;
+  let obj = searchContext(10110);
   const dependencyMap = obj.getSearchContextId(searchContext);
   let obj1 = searchContext(624);
   let items = [stateFromStores5];
@@ -55,8 +55,8 @@ function SearchableMembersScreen(searchContext) {
   const stateFromStores1 = obj2.useStateFromStores(items1, () => stateFromStores4.getChannelId());
   const tmp = callback();
   obj = { placeholderHeight: closure_13, numColumns: 1 };
-  const fullscreenPlaceholderCount = searchContext(15340).useFullscreenPlaceholderCount(obj);
-  const obj4 = searchContext(15340);
+  const fullscreenPlaceholderCount = searchContext(15387).useFullscreenPlaceholderCount(obj);
+  const obj4 = searchContext(15387);
   const items2 = [callback];
   const stateFromStores2 = searchContext(624).useStateFromStores(items2, () => {
     const guild = callback.getGuild(guildId);
@@ -92,9 +92,9 @@ function SearchableMembersScreen(searchContext) {
     let obj = searchContext(1820);
     const result = obj.dismissGlobalKeyboard();
     obj = { searchContext, userId: userId.id, index, entityType: outer1_15.USER };
-    const result1 = guildId(10076).trackSearchResultClicked(obj);
+    const result1 = guildId(10108).trackSearchResultClicked(obj);
     obj = { userId: userId.id, channelId: closure_5 !== stateFromStores1 ? closure_5 : stateFromStores1, sourceAnalyticsLocations: analyticsLocations };
-    guildId(8492)(obj);
+    guildId(8537)(obj);
   }, items4);
   const items5 = [searchContext];
   const items6 = [callback];
@@ -102,7 +102,7 @@ function SearchableMembersScreen(searchContext) {
     let index;
     let user;
     ({ user, index } = arg0);
-    let obj = guildId(10076);
+    let obj = guildId(10108);
     obj = { searchContext, userId: user.id, index, entityType: outer1_15.USER };
     const result = obj.trackSearchResultClicked(obj);
     const result1 = searchContext(1820).dismissGlobalKeyboard();
@@ -199,21 +199,21 @@ function SearchableMembersScreen(searchContext) {
     return items;
   }, items11);
   const obj9 = searchContext(624);
-  const contentContainerStyles = searchContext(15380).useContentContainerStyles();
-  const obj10 = searchContext(15380);
-  const messageTabCountsErrorText = searchContext(15378).useMessageTabCountsErrorText({ searchContext });
+  const contentContainerStyles = searchContext(15427).useContentContainerStyles();
+  const obj10 = searchContext(15427);
+  const messageTabCountsErrorText = searchContext(15425).useMessageTabCountsErrorText({ searchContext });
   if (null != messageTabCountsErrorText) {
     obj = { text: messageTabCountsErrorText };
-    let tmp20 = jsx(guildId(15333), { text: messageTabCountsErrorText });
+    let tmp20 = jsx(guildId(15380), { text: messageTabCountsErrorText });
   } else {
     if (stateFromStores4) {
       if (null != stateFromStores3) {
         obj1 = { onUserPress: callback1, onUserLongPress: callback2, channelId: stateFromStores3, guildId, disableStickySections: true, listStyleOverride: tmp.userList, isNameplatedList: true, canShowDisplayNameStylesFont: true };
-        tmp20 = jsx(guildId(10867), { onUserPress: callback1, onUserLongPress: callback2, channelId: stateFromStores3, guildId, disableStickySections: true, listStyleOverride: tmp.userList, isNameplatedList: true, canShowDisplayNameStylesFont: true });
+        tmp20 = jsx(guildId(10894), { onUserPress: callback1, onUserLongPress: callback2, channelId: stateFromStores3, guildId, disableStickySections: true, listStyleOverride: tmp.userList, isNameplatedList: true, canShowDisplayNameStylesFont: true });
       }
     }
     obj2 = { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo };
-    tmp20 = jsx(guildId(15344), { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo });
+    tmp20 = jsx(guildId(15391), { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo });
   }
   return tmp20;
 }
@@ -242,8 +242,8 @@ function ThreadMembersScreen(searchContext) {
       return isInitialSearchQueryResult;
     }, items2)) {
       obj = { channelId, guildId, onUserPress: searchContext(1820).dismissGlobalKeyboard, disableStickySections: true };
-      let tmp7 = jsx(channelId(15381), { channelId, guildId, onUserPress: searchContext(1820).dismissGlobalKeyboard, disableStickySections: true });
-      const tmp5 = channelId(15381);
+      let tmp7 = jsx(channelId(15428), { channelId, guildId, onUserPress: searchContext(1820).dismissGlobalKeyboard, disableStickySections: true });
+      const tmp5 = channelId(15428);
     }
     return tmp7;
   }
@@ -255,15 +255,15 @@ let closure_19 = _createForOfIteratorHelperLoose.createStyles({ container: { fle
 const memoResult = importAllResult.memo(function MembersScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const tmp = callback();
-  const analyticsLocations = importDefault(5464)(importDefault(5484).SEARCH_MEMBERS).analyticsLocations;
+  const analyticsLocations = importDefault(5462)(importDefault(5482).SEARCH_MEMBERS).analyticsLocations;
   const type = searchContext.type;
   if (constants.CHANNEL === type) {
     let obj = { value: analyticsLocations };
     obj = { style: tmp.container };
     const obj1 = { channelId: searchContext.channelId, disableStickySections: true, listStyleOverride: tmp.userList, onUserPress: require(1820) /* dismissGlobalKeyboard */.dismissGlobalKeyboard };
-    obj.children = jsx(importDefault(11309), { channelId: searchContext.channelId, disableStickySections: true, listStyleOverride: tmp.userList, onUserPress: require(1820) /* dismissGlobalKeyboard */.dismissGlobalKeyboard });
+    obj.children = jsx(importDefault(11338), { channelId: searchContext.channelId, disableStickySections: true, listStyleOverride: tmp.userList, onUserPress: require(1820) /* dismissGlobalKeyboard */.dismissGlobalKeyboard });
     obj.children = <View style={tmp.container} />;
-    return jsx(require(5464) /* mergeLocations */.AnalyticsLocationProvider, { style: tmp.container });
+    return jsx(require(5462) /* mergeLocations */.AnalyticsLocationProvider, { style: tmp.container });
   } else if (constants.THREAD === type) {
     const obj2 = { searchContext };
     ({ channelId: obj3.channelId, guildId: obj3.guildId } = searchContext);
@@ -280,9 +280,9 @@ const memoResult = importAllResult.memo(function MembersScreen(searchContext) {
     obj = { value: analyticsLocations };
     const obj3 = { searchContext, guildId: searchContext.guildId };
     obj.children = <SearchableMembersScreen searchContext={searchContext} guildId={searchContext.guildId} />;
-    return jsx(require(5464) /* mergeLocations */.AnalyticsLocationProvider, { value: analyticsLocations });
+    return jsx(require(5462) /* mergeLocations */.AnalyticsLocationProvider, { value: analyticsLocations });
   }
-  const tmp2 = importDefault(5464);
+  const tmp2 = importDefault(5462);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/tabs/pages/MembersScreen.tsx");
 

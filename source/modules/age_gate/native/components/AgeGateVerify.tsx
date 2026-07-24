@@ -1,10 +1,10 @@
-// Module ID: 15986
-// Function ID: 123606
+// Module ID: 16033
+// Function ID: 123928
 // Name: AgeGateVerify
-// Dependencies: [31, 27, 33, 4130, 689, 4345, 4347, 5121, 5807, 4126, 4543, 7536, 7538, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4345, 4347, 5121, 5807, 4126, 4543, 7581, 7583, 2]
 // Exports: default
 
-// Module 15986 (AgeGateVerify)
+// Module 16033 (AgeGateVerify)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

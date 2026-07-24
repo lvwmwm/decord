@@ -1,10 +1,10 @@
-// Module ID: 7477
-// Function ID: 60012
+// Module ID: 7557
+// Function ID: 60258
 // Name: connectToStage
-// Dependencies: [5, 4149, 1348, 1838, 3758, 1906, 1356, 7478, 5697, 5048, 12348, 12349, 4944, 4194, 4309, 12351, 2]
+// Dependencies: [5, 4149, 1348, 1838, 3758, 1906, 1356, 7558, 5697, 5048, 12375, 12376, 4944, 4194, 4309, 12378, 2]
 // Exports: connectOrLurkStage, showUserProfile
 
-// Module 7477 (connectToStage)
+// Module 7557 (connectToStage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ function connectToStage(channel, flag) {
       return false;
     }
   }
-  let obj = importDefault(12349);
+  let obj = importDefault(12376);
   obj.initialize();
   const voiceChannel = importDefault(4944).selectVoiceChannel(channel.id);
   if (store.getVoiceChannelId() !== channel.id) {
@@ -74,14 +74,14 @@ function connectAndOpen(channel, flag) {
   const voiceChannelId = store.getVoiceChannelId();
   let result = !flag3 && voiceChannelId !== channel.id;
   if (result) {
-    result = _require(12351).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12351);
+    result = _require(12378).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12378);
   }
   if (result) {
-    result = flag2(7478).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(7558).showChannelChangeConfirmationAlert(channel, () => {
       outer1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(7478);
+    const obj2 = flag2(7558);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
@@ -90,7 +90,7 @@ function connectAndOpen(channel, flag) {
   }
 }
 function navigateToStage(arg0, arg1) {
-  importAll(7478).navigateToStage(arg0, arg1);
+  importAll(7558).navigateToStage(arg0, arg1);
 }
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
 
@@ -137,5 +137,5 @@ export { connectToStage };
 export { connectAndOpen };
 export { navigateToStage };
 export const showUserProfile = function showUserProfile(arg0) {
-  const result = importAll(7478).showPlatformUserProfile(arg0);
+  const result = importAll(7558).showPlatformUserProfile(arg0);
 };

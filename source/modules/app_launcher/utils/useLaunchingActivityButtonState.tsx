@@ -1,10 +1,10 @@
-// Module ID: 11264
-// Function ID: 87620
+// Module ID: 11293
+// Function ID: 87860
 // Name: useLaunchingActivityButtonState
-// Dependencies: [31, 1347, 10479, 5470, 566, 10482, 8284, 2]
+// Dependencies: [31, 1347, 10508, 5468, 566, 10511, 8328, 2]
 // Exports: default
 
-// Module 11264 (useLaunchingActivityButtonState)
+// Module 11293 (useLaunchingActivityButtonState)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

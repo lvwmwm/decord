@@ -1,9 +1,9 @@
-// Module ID: 8776
-// Function ID: 69356
+// Module ID: 8815
+// Function ID: 69571
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 8776 (apexExperiment)
+// Module 8815 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-gifting-badge", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

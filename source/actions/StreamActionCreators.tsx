@@ -1,7 +1,7 @@
 // Module ID: 4309
-// Function ID: 37721
+// Function ID: 37722
 // Name: isVoiceChannelFull
-// Dependencies: [5, 4144, 4310, 4311, 4149, 1194, 1348, 1838, 1906, 4146, 653, 4195, 686, 4194, 44, 4312, 4323, 4336, 507, 664, 4942, 480, 8856, 4944, 4140, 8922, 2]
+// Dependencies: [5, 4144, 4310, 4311, 4149, 1194, 1348, 1838, 1906, 4146, 653, 4195, 686, 4194, 44, 4312, 4323, 4336, 507, 664, 4942, 480, 8895, 4944, 4140, 8961, 2]
 // Exports: changeStreamRegion, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, toggleSelfStreamHidden, updateStreamSettings
 
 // Module 4309 (isVoiceChannelFull)
@@ -191,7 +191,7 @@ export const notifyStreamStart = function notifyStreamStart() {
 };
 export const updateStreamSettings = function updateStreamSettings(noTrack) {
   if (true !== noTrack.noTrack) {
-    let obj = require(8856) /* isPremiumRequirement */;
+    let obj = require(8895) /* isPremiumRequirement */;
     const result = obj.trackStreamSettingsUpdate(noTrack.preset, noTrack.resolution, noTrack.frameRate, noTrack.soundshareEnabled);
   }
   obj = { type: "STREAM_UPDATE_SETTINGS" };

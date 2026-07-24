@@ -1,5 +1,5 @@
 // Module ID: 4007
-// Function ID: 33270
+// Function ID: 33271
 // Name: usePortalState
 // Dependencies: [31, 4004]
 // Exports: usePortalState

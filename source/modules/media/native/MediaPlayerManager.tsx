@@ -1,9 +1,9 @@
-// Module ID: 13458
-// Function ID: 103551
+// Module ID: 13511
+// Function ID: 103878
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 1347, 4342, 1348, 4349, 3758, 6651, 653, 10226, 13459, 482, 3, 621, 682, 3982, 686, 477, 620, 6691, 10229, 4530, 2]
+// Dependencies: [6, 7, 15, 17, 18, 27, 1347, 4342, 1348, 4349, 3758, 6651, 653, 10256, 13512, 482, 3, 621, 682, 3982, 686, 477, 620, 6691, 10259, 4530, 2]
 
-// Module 13458 (_isNativeReflectConstruct)
+// Module 13511 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import withEqualityFn from "withEqualityFn";
 import sum from "sum";

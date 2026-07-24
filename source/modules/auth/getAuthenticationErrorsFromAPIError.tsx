@@ -1,10 +1,10 @@
-// Module ID: 9200
-// Function ID: 72046
+// Module ID: 9236
+// Function ID: 72255
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError
 
-// Module 9200 (getAuthenticationErrorsFromAPIError)
+// Module 9236 (getAuthenticationErrorsFromAPIError)
 const result = require("set").fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");
 
 export const getAuthenticationErrorsFromAPIError = function getAuthenticationErrorsFromAPIError(error) {

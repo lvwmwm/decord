@@ -1,5 +1,5 @@
 // Module ID: 5408
-// Function ID: 46379
+// Function ID: 46384
 // Name: useUnmountAwareTimeout
 // Dependencies: [5359, 31]
 // Exports: useUnmountAwareAnimationFrame, useUnmountAwareTimeout
@@ -35,7 +35,7 @@ export const useUnmountAwareAnimationFrame = function useUnmountAwareAnimationFr
   const first = callback(callback4(() => new Set()), 1)[0];
   const items = [first];
   callback3(() => () => {
-    const item = outer1_0.forEach((_animationFrame) => cancelAnimationFrame(_animationFrame));
+    const item = outer1_0.forEach((closure_0) => cancelAnimationFrame(closure_0));
     outer1_0.clear();
   }, items);
   const items1 = [first];

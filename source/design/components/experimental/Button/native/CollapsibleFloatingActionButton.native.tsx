@@ -1,10 +1,10 @@
-// Module ID: 8378
-// Function ID: 66746
+// Module ID: 8422
+// Function ID: 66974
 // Name: CollapsableButton
-// Dependencies: [31, 33, 4547, 4130, 3991, 4542, 4546, 4544, 8379, 689, 2]
+// Dependencies: [31, 33, 4547, 4130, 3991, 4542, 4546, 4544, 8423, 689, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 8378 (CollapsableButton)
+// Module 8422 (CollapsableButton)
 import result from "result";
 import { jsx } from "jsxProd";
 import getButtonPadding from "getButtonPadding";
@@ -64,7 +64,7 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   let obj = { icon: 0, positionBottom: 0, positionRight: 0, text: 0, state: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  let obj1 = require(8379) /* styles */;
+  let obj1 = require(8423) /* styles */;
   const styles = obj1.useStyles();
   let cloneElementResult = icon;
   if (result.isValidElement(icon)) {
@@ -73,11 +73,11 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   }
   obj = { position: "absolute" };
   if (null == positionRight) {
-    positionRight = require(8379) /* styles */.DEFAULT_POSITION_OFFSET;
+    positionRight = require(8423) /* styles */.DEFAULT_POSITION_OFFSET;
   }
   obj.right = positionRight;
   if (null == positionBottom) {
-    positionBottom = require(8379) /* styles */.DEFAULT_POSITION_OFFSET;
+    positionBottom = require(8423) /* styles */.DEFAULT_POSITION_OFFSET;
   }
   obj.bottom = positionBottom;
   const items = [styles.button, obj];

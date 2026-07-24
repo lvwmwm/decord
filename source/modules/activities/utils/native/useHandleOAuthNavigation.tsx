@@ -1,10 +1,10 @@
-// Module ID: 15696
-// Function ID: 121039
+// Module ID: 15743
+// Function ID: 121361
 // Name: useHandleOAuthNavigation
-// Dependencies: [31, 653, 10621, 4337, 9995, 1934, 1207, 2]
+// Dependencies: [31, 653, 10650, 4337, 10027, 1934, 1207, 2]
 // Exports: default
 
-// Module 15696 (useHandleOAuthNavigation)
+// Module 15743 (useHandleOAuthNavigation)
 import result from "result";
 import { ComponentActions } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";

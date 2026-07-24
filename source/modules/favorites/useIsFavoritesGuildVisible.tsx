@@ -1,10 +1,10 @@
-// Module ID: 14885
-// Function ID: 113503
+// Module ID: 14932
+// Function ID: 113824
 // Name: isFavoritesGuildVisible
-// Dependencies: [1340, 3947, 1849, 1351, 1851, 5077, 1872, 10193, 1334, 3946, 566, 2]
+// Dependencies: [1340, 3947, 1849, 1351, 1851, 5077, 1872, 10223, 1334, 3946, 566, 2]
 // Exports: default
 
-// Module 14885 (isFavoritesGuildVisible)
+// Module 14932 (isFavoritesGuildVisible)
 import { useIsContentShown } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -41,7 +41,7 @@ function isFavoritesGuildVisible(favoriteGuildEnabled, getCurrentUser, getGuildI
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/favorites/useIsFavoritesGuildVisible.tsx");
 
 export default function useIsFavoritesGuildVisible(location) {
-  let obj = enabled(10193);
+  let obj = enabled(10223);
   obj = { location };
   enabled = obj.useFavoritesGuildConfig(obj).enabled;
   let closure_1 = useIsContentShown(enabled(1334).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);

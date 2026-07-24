@@ -1,10 +1,10 @@
-// Module ID: 9907
-// Function ID: 76643
+// Module ID: 9939
+// Function ID: 76837
 // Name: FailedGroupDMRow
-// Dependencies: [31, 27, 1348, 1838, 4217, 3767, 1849, 482, 33, 4130, 689, 4320, 9096, 1273, 4126, 566, 3969, 9908, 4475, 4475, 1212, 2]
+// Dependencies: [31, 27, 1348, 1838, 4217, 3767, 1849, 482, 33, 4130, 689, 4320, 9134, 1273, 4126, 566, 3969, 9940, 4475, 4475, 1212, 2]
 // Exports: default
 
-// Module 9907 (FailedGroupDMRow)
+// Module 9939 (FailedGroupDMRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -28,7 +28,7 @@ function FailedGroupDMRow(channel) {
   const tmp2 = importDefault(4320)(channel);
   obj.size = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj.channel = channel;
-  const items = [callback(importDefault(9096), obj), ];
+  const items = [callback(importDefault(9134), obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
   items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
@@ -88,8 +88,8 @@ function FailedChannelRow(channel) {
     return outer1_5.getGuild(guild_id);
   });
   obj = { style: tmp.row };
-  obj = { "aria-label": "", guild: stateFromStores, channel, size: channel(9908).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const items1 = [callback(channel(9908).GuildIconWithChannelType, obj), ];
+  obj = { "aria-label": "", guild: stateFromStores, channel, size: channel(9940).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const items1 = [callback(channel(9940).GuildIconWithChannelType, obj), ];
   const obj1 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4320)(channel) };
   items1[1] = callback(channel(4126).Text, obj1);
   obj.children = items1;

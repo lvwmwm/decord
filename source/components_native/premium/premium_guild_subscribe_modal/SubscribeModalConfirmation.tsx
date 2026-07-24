@@ -1,10 +1,10 @@
-// Module ID: 12541
-// Function ID: 97053
+// Module ID: 12592
+// Function ID: 97374
 // Name: PendingCancellationWarning
-// Dependencies: [5, 31, 27, 11595, 1838, 4023, 3782, 653, 6671, 4018, 33, 4130, 3974, 689, 566, 4022, 9176, 4126, 1212, 12542, 12543, 4543, 12552, 4554, 668, 675, 12507, 44, 4026, 4471, 12556, 1934, 2]
+// Dependencies: [5, 31, 27, 11622, 1838, 4023, 3782, 653, 6671, 4018, 33, 4130, 3974, 689, 566, 4022, 9212, 4126, 1212, 12593, 12594, 4543, 12603, 4554, 668, 675, 12560, 44, 4026, 4471, 12607, 1934, 2]
 // Exports: default
 
-// Module 12541 (PendingCancellationWarning)
+// Module 12592 (PendingCancellationWarning)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import maybeLoadBundle from "maybeLoadBundle";
 import get_ActivityIndicator from "invariant";
@@ -43,7 +43,7 @@ function PendingCancellationWarning(slots) {
     tmp3 = null;
     if (null != stateFromStores) {
       obj = { style: tmp.pendingCancellation };
-      obj = { style: tmp.pendingCancellationIcon, source: importDefault(9176) };
+      obj = { style: tmp.pendingCancellationIcon, source: importDefault(9212) };
       const items1 = [callback(closure_6, obj), ];
       const obj1 = { style: tmp.pendingCancellationMessage, variant: "text-sm/medium" };
       const intl = require(1212) /* getSystemLocale */.intl;
@@ -65,13 +65,13 @@ function SubscribeConfirmation(arg0) {
   ({ guild, isModifyingSubscription } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { style: tmp.subscribeImage, source: importDefault(12542) };
+  obj = { style: tmp.subscribeImage, source: importDefault(12593) };
   const items = [callback(closure_6, obj), , , , , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t.yTlZV0);
   items[1] = callback(require(4126) /* Text */.Text, obj);
-  items[2] = callback(importDefault(12543), { style: tmp.guildPreview, guild });
+  items[2] = callback(importDefault(12594), { style: tmp.guildPreview, guild });
   const obj2 = { style: items1, variant: "text-sm/medium" };
   items1 = [, ];
   ({ blurb: arr2[0], warning: arr2[1] } = tmp);
@@ -99,7 +99,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = prop(12552);
+  let obj = prop(12603);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   let obj1 = prop(566);
   const items = [closure_10];
@@ -137,7 +137,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj6.children = intl3.format(prop(1212).t["5zQYEz"], obj7);
     const items2 = [callback(prop(4126).Text, obj6), , , ];
     const obj8 = { style: tmp.guildPreview, guild: stateFromStores };
-    items2[1] = callback(onPremiumGuildSubscribe(12543), obj8);
+    items2[1] = callback(onPremiumGuildSubscribe(12594), obj8);
     const obj9 = { style: tmp.previewHeader, variant: "eyebrow", color: "text-default" };
     const intl4 = prop(1212).intl;
     const obj10 = { slotCount: prop.length };
@@ -151,7 +151,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj11.end = prop(668).HorizontalGradient.END;
     obj11.colors = Gradients.PREMIUM_GUILD;
     const obj12 = { guild };
-    obj11.children = callback(onPremiumGuildSubscribe(12543), obj12);
+    obj11.children = callback(onPremiumGuildSubscribe(12594), obj12);
     items2[3] = callback(onPremiumGuildSubscribe(4554), obj11);
     obj5.children = items2;
     items1[3] = callback2(closure_7, obj5);

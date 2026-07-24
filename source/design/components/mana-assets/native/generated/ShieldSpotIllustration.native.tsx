@@ -1,5 +1,5 @@
 // Module ID: 6506
-// Function ID: 50713
+// Function ID: 50724
 // Name: ShieldSpotIllustration
 // Dependencies: [33, 5085, 6507, 2]
 // Exports: ShieldSpotIllustration

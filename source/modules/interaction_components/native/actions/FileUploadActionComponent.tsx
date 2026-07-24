@@ -1,10 +1,10 @@
-// Module ID: 16078
-// Function ID: 124571
+// Module ID: 16125
+// Function ID: 124895
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 31, 27, 1348, 4468, 653, 33, 4130, 4025, 5165, 13544, 1212, 4353, 4091, 9836, 7771, 5119, 7794, 44, 566, 11281, 4711, 4670, 16079, 1881, 4470, 4674, 11121, 7938, 9653, 1820, 9652, 4672, 4541, 689, 5503, 2]
+// Dependencies: [5, 31, 27, 1348, 4468, 653, 33, 4130, 4025, 5165, 13597, 1212, 4353, 4091, 9868, 7533, 5119, 7885, 44, 566, 11310, 4711, 4670, 16126, 1881, 4470, 4674, 11151, 8025, 9687, 1820, 9686, 4672, 4541, 689, 5501, 2]
 // Exports: default
 
-// Module 16078 (_createForOfIteratorHelperLoose)
+// Module 16125 (_createForOfIteratorHelperLoose)
 import ME from "ME";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import { View } from "_createForOfIteratorHelperLoose";
@@ -106,7 +106,7 @@ function MainAreaCanUpload(arg0) {
   ({ openFilePicker, types, maxSizeBytes } = arg0);
   let obj = require(4025) /* formatSize */;
   obj = { onPress: openFilePicker };
-  obj = { IconComponent: require(13544) /* FileUpIcon */.FileUpIcon };
+  obj = { IconComponent: require(13597) /* FileUpIcon */.FileUpIcon };
   obj.icon = callback(require(5165) /* TableRowInner */.TableRow.Icon, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.format(require(1212) /* getSystemLocale */.t["/2JwTv"], { maxValues });
@@ -135,9 +135,9 @@ function File(upload) {
   obj = { style: callback2().defaultAttachmentIconWrapper };
   const tmp = callback2();
   const tmp2 = callback;
-  obj.children = callback(upload(9836).AttachmentIcon, { fileName: upload.filename });
+  obj.children = callback(upload(9868).AttachmentIcon, { fileName: upload.filename });
   obj.defaultPreview = callback(View, obj);
-  obj.icon = callback(handleRemoveFile(9836), obj);
+  obj.icon = callback(handleRemoveFile(9868), obj);
   let filename = upload.filename;
   if (null == filename) {
     const intl = upload(1212).intl;
@@ -154,7 +154,7 @@ function File(upload) {
   };
   const intl2 = upload(1212).intl;
   obj2.accessibilityLabel = intl2.string(upload(1212).t.N86XcP);
-  obj.trailing = callback(upload(7771).IconButton, obj2);
+  obj.trailing = callback(upload(7533).IconButton, obj2);
   obj.start = true;
   obj.end = true;
   return tmp2(upload(5165).TableRow, obj);

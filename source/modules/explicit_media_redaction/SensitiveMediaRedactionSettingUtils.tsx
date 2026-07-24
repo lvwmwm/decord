@@ -1,5 +1,5 @@
 // Module ID: 5677
-// Function ID: 48769
+// Function ID: 48779
 // Name: getShouldObscureForSetting
 // Dependencies: [1282, 22, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting

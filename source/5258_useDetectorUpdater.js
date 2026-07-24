@@ -1,5 +1,5 @@
 // Module ID: 5258
-// Function ID: 45370
+// Function ID: 45375
 // Name: useDetectorUpdater
 // Dependencies: [31, 5254, 5243, 5259, 5260, 5261, 5262]
 // Exports: useDetectorUpdater

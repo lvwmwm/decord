@@ -1,9 +1,9 @@
-// Module ID: 8523
-// Function ID: 67959
+// Module ID: 8568
+// Function ID: 68189
 // Name: getBotLabel
-// Dependencies: [31, 27, 4156, 33, 4130, 689, 1212, 8524, 4126, 2]
+// Dependencies: [31, 27, 4156, 33, 4130, 689, 1212, 8569, 4126, 2]
 
-// Module 8523 (getBotLabel)
+// Module 8568 (getBotLabel)
 import "result";
 import { View } from "get ActivityIndicator";
 import { BotTagTypes } from "ApplicationTypes";

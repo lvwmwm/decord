@@ -1,10 +1,10 @@
-// Module ID: 11835
-// Function ID: 91740
+// Module ID: 11862
+// Function ID: 91978
 // Name: screens
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 5087, 4337, 8722, 9786, 566, 5085, 10931, 8302, 10932, 5121, 8716, 4126, 1212, 4543, 7847, 8719, 5519, 2]
+// Dependencies: [31, 27, 4122, 33, 4130, 689, 5087, 4337, 8763, 9818, 566, 5085, 10958, 8346, 10959, 5121, 8757, 4126, 1212, 4543, 7936, 8760, 5517, 2]
 // Exports: default
 
-// Module 11835 (screens)
+// Module 11862 (screens)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -57,24 +57,24 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   }, items2);
   if (stateFromStores) {
     obj = {};
-    const obj1 = { uri: onPressViewBadge(10931) };
+    const obj1 = { uri: onPressViewBadge(10958) };
     obj.source = obj1;
     obj.style = tmp.background;
     let tmp7Result = tmp7(onPressViewBadge(5085), obj);
     const tmp14 = onPressViewBadge(5085);
   } else {
     const obj2 = { source: null, poster: null, style: null, resizeMode: "contain", muted: true, pauseWhileAppInactive: true, paused: false };
-    const obj3 = { uri: onPressViewBadge(10932) };
+    const obj3 = { uri: onPressViewBadge(10959) };
     obj2.source = obj3;
-    obj2.poster = onPressViewBadge(10931);
+    obj2.poster = onPressViewBadge(10958);
     obj2.style = tmp.background;
-    tmp7Result = tmp7(modalKey(8302).VideoComponent, obj2);
+    tmp7Result = tmp7(modalKey(8346).VideoComponent, obj2);
   }
   const items3 = [tmp7Result, ];
   const obj4 = { style: tmp.main, top: true, bottom: true, left: true, right: true };
   const obj5 = { style: tmp.body };
   const obj6 = {};
-  const obj7 = { uri: onPressViewBadge(8716) };
+  const obj7 = { uri: onPressViewBadge(8757) };
   obj6.source = obj7;
   obj6.style = tmp.orbBadge;
   const items4 = [callback(onPressViewBadge(5085), obj6), ];
@@ -141,5 +141,5 @@ export default function OrbBadgeCollectedModal(arg0) {
     const result = obj.pinUserProfileBadgesOnClient(items, 600);
   }, []);
   let obj = { screens: screens(modalKey, onPressViewBadge, orbBalancePriorToPurchase), initialRouteName: constants.ROOT };
-  return callback(require(5519) /* NavigationStack */.Navigator, obj);
+  return callback(require(5517) /* NavigationStack */.Navigator, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7902
-// Function ID: 62914
+// Module ID: 7989
+// Function ID: 63225
 // Name: useMessagePollInteractions
 // Dependencies: [677, 682, 620, 21, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 7902 (useMessagePollInteractions)
+// Module 7989 (useMessagePollInteractions)
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 
 let closure_3 = {};

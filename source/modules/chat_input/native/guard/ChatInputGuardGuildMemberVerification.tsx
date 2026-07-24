@@ -1,8 +1,8 @@
-// Module ID: 11489
-// Function ID: 89449
-// Dependencies: [31, 27, 4122, 11105, 653, 33, 4130, 9162, 3950, 11490, 1212, 4324, 9152, 11491, 5119, 9145, 566, 11481, 5453, 11492, 2]
+// Module ID: 11519
+// Function ID: 89694
+// Dependencies: [31, 27, 4122, 11132, 653, 33, 4130, 9198, 3950, 11520, 1212, 4324, 9188, 11521, 5119, 9181, 566, 11511, 5453, 11522, 2]
 
-// Module 11489
+// Module 11519
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { TextAreaCta } from "TextAreaCta";
@@ -16,14 +16,14 @@ let closure_8 = _createForOfIteratorHelperLoose.createStyles({ noticeIcon: { hei
 const memoResult = require("result").memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;
   const tmp = callback();
-  let obj = guildId(9162);
+  let obj = guildId(9198);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (null != currentUserGuildJoinRequest) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
   if (guildId(3950).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    let tmp7 = importDefault(11490);
+    let tmp7 = importDefault(11520);
     const intl2 = guildId(1212).intl;
     let stringResult = intl2.string(guildId(1212).t.lk30cY);
     class A {
@@ -38,7 +38,7 @@ const memoResult = require("result").memo(function ChatInputGuardGuildMemberVeri
       }
     }
   } else if (guildId(3950).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-    tmp7 = importDefault(11491);
+    tmp7 = importDefault(11521);
     class A {
       constructor() {
         obj = outer1_1(outer1_2[11]);
@@ -98,7 +98,7 @@ const memoResult = require("result").memo(function ChatInputGuardGuildMemberVeri
   const intl3 = guildId(1212).intl;
   obj.actionLabel = intl3.string(guildId(1212).t["r8/DT+"]);
   obj.actionOnPress = A;
-  return tmp17(importDefault(11481), obj);
+  return tmp17(importDefault(11511), obj);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildMemberVerification.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 8491
-// Function ID: 67797
+// Module ID: 8536
+// Function ID: 68027
 // Name: placeholderRowWidth
 // Dependencies: [31, 27, 4122, 33, 4130, 689, 3991, 566, 4131, 4134, 2]
 
-// Module 8491 (placeholderRowWidth)
+// Module 8536 (placeholderRowWidth)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

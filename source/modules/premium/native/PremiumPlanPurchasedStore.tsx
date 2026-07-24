@@ -1,7 +1,7 @@
 // Module ID: 6660
-// Function ID: 51222
+// Function ID: 51234
 // Name: usePremiumPlanPurchasedStore
-// Dependencies: [3823, 1851, 621, 682, 6661, 5484, 2]
+// Dependencies: [3823, 1851, 621, 682, 6661, 5482, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
 // Module 6660 (usePremiumPlanPurchasedStore)
@@ -49,7 +49,7 @@ export const handleMobileWebCheckoutStatus = function handleMobileWebCheckoutSta
     if ("dismissed" !== state.mobileWebRedirectCheckoutStatus) {
       if (key.getKey() !== closure_4) {
         const obj = { premiumType: TIER_2.TIER_2 };
-        const items = [importDefault(5484).DEEPLINK];
+        const items = [importDefault(5482).DEEPLINK];
         obj.analyticsLocations = items;
         obj.analyticsLocation = {};
         importDefault(6661)(obj);

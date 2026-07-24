@@ -1,10 +1,10 @@
-// Module ID: 11005
-// Function ID: 85609
+// Module ID: 11032
+// Function ID: 85798
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [57, 31, 27, 653, 7483, 33, 4130, 689, 1212, 6750, 4098, 5500, 5587, 4126, 7495, 1273, 4543, 4324, 10976, 7488, 2]
+// Dependencies: [57, 31, 27, 653, 7563, 33, 4130, 689, 1212, 6750, 4098, 5498, 5585, 4126, 7636, 1273, 4543, 4324, 11003, 7568, 2]
 // Exports: default
 
-// Module 11005 (GuildRaidResolveActionSheet)
+// Module 11032 (GuildRaidResolveActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -85,7 +85,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       style: tmp.option,
       onPress() {
         (function onCheckboxChange(closure_0) {
-          outer2_4(outer2_3.includes(closure_0) ? ((arr) => arr.filter(/* F85617 */ function() { ... })) : ((arg0) => {
+          outer2_4(outer2_3.includes(closure_0) ? ((arr) => arr.filter(/* F85806 */ function() { ... })) : ((arg0) => {
             const items = [...arg0, closure_0];
             return items;
           }));
@@ -136,6 +136,6 @@ export default function GuildRaidResolveActionSheet(arg0) {
   obj7.size = "md";
   items1[4] = handleClose(require(4543) /* Button */.Button, obj7);
   obj3.children = items1;
-  obj2.children = callback2(importDefault(5587), obj3);
-  return handleClose(require(5500) /* ActionSheet */.ActionSheet, obj2);
+  obj2.children = callback2(importDefault(5585), obj3);
+  return handleClose(require(5498) /* ActionSheet */.ActionSheet, obj2);
 };

@@ -1,9 +1,9 @@
-// Module ID: 13404
-// Function ID: 103075
+// Module ID: 13457
+// Function ID: 103402
 // Name: Activity
-// Dependencies: [13405, 8310, 2]
+// Dependencies: [13458, 8354, 2]
 
-// Module 13404 (Activity)
+// Module 13457 (Activity)
 let obj = {
   request: undefined,
   response(string) {
@@ -47,8 +47,8 @@ obj = {
     let arrayResult = string.array();
     const stringResult5 = string.string();
     const stringResult6 = string.string();
-    const items = [...require(13405) /* RPCCommands */.joiEnum(require(8310) /* set */.OAuth2Scopes)];
-    const obj12 = require(13405) /* RPCCommands */;
+    const items = [...require(13458) /* RPCCommands */.joiEnum(require(8354) /* set */.OAuth2Scopes)];
+    const obj12 = require(13458) /* RPCCommands */;
     obj.scopes = arrayResult.items(stringResult6.valid.apply(items)).required();
     const itemsResult = arrayResult.items(stringResult6.valid.apply(items));
     obj.expires = string.string().required();
@@ -227,10 +227,10 @@ function ButtonComponent(number) {
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export const RPCCommandSchemas = {
-  [require(13405).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
-  [require(13405).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
-  [require(13405).RPCCommand.AUTHENTICATE]: obj,
-  [require(13405).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
+  [require(13458).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
+  [require(13458).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
+  [require(13458).RPCCommand.AUTHENTICATE]: obj,
+  [require(13458).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
     request: undefined,
     response(array) {
       let obj = {};
@@ -244,7 +244,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13405).RPCCommand.SHARE_INTERACTION]: {
+  [require(13458).RPCCommand.SHARE_INTERACTION]: {
     request(string) {
       let obj = { command: string.string().required() };
       let arrayResult = string.array();
@@ -275,7 +275,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13405).RPCCommand.SHARE_LINK]: {
+  [require(13458).RPCCommand.SHARE_LINK]: {
     request(string) {
       const obj = { custom_id: string.string().max(64) };
       const stringResult = string.string();
@@ -294,7 +294,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13405).RPCCommand.GET_RELATIONSHIPS]: {
+  [require(13458).RPCCommand.GET_RELATIONSHIPS]: {
     request: undefined,
     response(array) {
       let obj = {};
@@ -314,7 +314,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13405).RPCCommand.INVITE_USER_EMBEDDED]: {
+  [require(13458).RPCCommand.INVITE_USER_EMBEDDED]: {
     request(string) {
       const obj = { user_id: string.string().required() };
       const stringResult = string.string();
@@ -324,7 +324,7 @@ export const RPCCommandSchemas = {
     },
     response: undefined
   },
-  [require(13405).RPCCommand.GET_USER]: {
+  [require(13458).RPCCommand.GET_USER]: {
     request(string) {
       const obj = {};
       const stringResult = string.string();
@@ -335,7 +335,7 @@ export const RPCCommandSchemas = {
       return User(arg0).allow(null);
     }
   },
-  [require(13405).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
+  [require(13458).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
     request(string) {
       const obj = { quest_id: string.string().required() };
       return obj;
@@ -350,7 +350,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13405).RPCCommand.QUEST_START_TIMER]: {
+  [require(13458).RPCCommand.QUEST_START_TIMER]: {
     request(string) {
       const obj = { quest_id: string.string().required() };
       return obj;
@@ -360,7 +360,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13405).RPCCommand.GET_QUEST]: {
+  [require(13458).RPCCommand.GET_QUEST]: {
     request: undefined,
     response(string) {
       const obj = { quest_id: string.string().required() };
@@ -375,7 +375,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13405).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: {
+  [require(13458).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: {
     request: undefined,
     response(string) {
       const obj = { ticket: string.string().required() };

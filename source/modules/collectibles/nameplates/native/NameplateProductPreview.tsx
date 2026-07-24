@@ -1,10 +1,10 @@
-// Module ID: 8752
-// Function ID: 69195
+// Module ID: 8791
+// Function ID: 69410
 // Name: NameplateUser
-// Dependencies: [31, 27, 4122, 33, 4130, 689, 8207, 1873, 1212, 4126, 4554, 8667, 7881, 7846, 566, 3969, 4361, 8513, 8514, 1273, 8753, 5165, 2]
+// Dependencies: [31, 27, 4122, 33, 4130, 689, 8251, 1873, 1212, 4126, 4554, 8708, 7968, 7935, 566, 3969, 4361, 8558, 8559, 1273, 8792, 5165, 2]
 // Exports: default
 
-// Module 8752 (NameplateUser)
+// Module 8791 (NameplateUser)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -86,7 +86,7 @@ export default function NameplateProductPreview(product) {
   let firstAvatarDecoration;
   let firstNameplate;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8207) /* ItemsSortingHat */;
+  let obj = require(8251) /* ItemsSortingHat */;
   const shopProductItems = obj.useShopProductItems(product.product);
   ({ firstNameplate, firstAvatarDecoration } = shopProductItems);
   let obj1 = require(1873) /* getNameplateData */;

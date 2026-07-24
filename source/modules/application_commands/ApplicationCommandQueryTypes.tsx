@@ -1,9 +1,9 @@
-// Module ID: 7928
-// Function ID: 63199
+// Module ID: 8015
+// Function ID: 63511
 // Name: ScoreMethod
 // Dependencies: [2]
 
-// Module 7928 (ScoreMethod)
+// Module 8015 (ScoreMethod)
 const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandQueryTypes.tsx");
 
 export const ScoreMethod = { NONE: "none", APPLICATION_ONLY: "application_only", COMMAND_ONLY: "command_only", COMMAND_OR_APPLICATION: "command_or_application" };

@@ -1,10 +1,10 @@
-// Module ID: 8829
-// Function ID: 69601
+// Module ID: 8868
+// Function ID: 69816
 // Name: useGradientBottom
-// Dependencies: [31, 4130, 3941, 8830, 2]
+// Dependencies: [31, 4130, 3941, 8869, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 8829 (useGradientBottom)
+// Module 8868 (useGradientBottom)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
@@ -51,7 +51,7 @@ export const useGradientMidpoint = function useGradientMidpoint() {
 export const useClientThemesOverride = function useClientThemesOverride(themedChatInput) {
   let none = themedChatInput;
   let tmp;
-  if (importDefault(8830)()) {
+  if (importDefault(8869)()) {
     if (null == none) {
       none = tmp2.none;
     }

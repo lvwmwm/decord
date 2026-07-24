@@ -1,9 +1,9 @@
-// Module ID: 7014
-// Function ID: 56273
+// Module ID: 7013
+// Function ID: 56282
 // Name: ForumChannelAnalyticsManager
 // Dependencies: [7, 6, 1348, 2]
 
-// Module 7014 (ForumChannelAnalyticsManager)
+// Module 7013 (ForumChannelAnalyticsManager)
 import _classCallCheck from "_classCallCheck";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "_defineProperties";

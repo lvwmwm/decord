@@ -1,7 +1,7 @@
 // Module ID: 5048
-// Function ID: 43612
+// Function ID: 43617
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [29, 5, 5049, 1194, 4971, 1907, 1838, 1906, 3947, 1849, 653, 1197, 4470, 1212, 686, 5050, 507, 1198, 5053, 1934, 5589, 5597, 5602, 5628, 5697, 4942, 480, 5716, 3763, 483, 5717, 3799, 675, 5721, 4345, 5723, 2]
+// Dependencies: [29, 5, 5049, 1194, 4971, 1907, 1838, 1906, 3947, 1849, 653, 1197, 4470, 1212, 686, 5050, 507, 1198, 5053, 1934, 5587, 5595, 5600, 5626, 5697, 4942, 480, 5716, 3763, 483, 5717, 3799, 675, 5721, 4345, 5723, 2]
 
 // Module 5048 (showTooManyUserGuildsAlert)
 import fromHexReverseArray from "fromHexReverseArray";
@@ -188,7 +188,7 @@ export default {
     return callback(async () => {
       let channelIdForGuildTransition = outer1_2;
       if (null == outer1_2) {
-        let obj = callback(5602);
+        let obj = callback(5600);
         channelIdForGuildTransition = obj.getChannelIdForGuildTransition(tmp);
       }
       let tmp5 = outer1_1;
@@ -209,7 +209,7 @@ export default {
         obj["welcomeModalChannelId"] = tmp12;
         tmp5 = obj;
       }
-      callback2(5628)(outer2_21.CHANNEL(outer1_0, channelIdForGuildTransition, outer1_3), tmp5);
+      callback2(5626)(outer2_21.CHANNEL(outer1_0, channelIdForGuildTransition, outer1_3), tmp5);
       yield new Promise(setImmediate);
     })();
   },

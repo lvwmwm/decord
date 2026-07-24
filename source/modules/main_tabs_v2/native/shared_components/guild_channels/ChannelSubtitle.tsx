@@ -1,10 +1,10 @@
-// Module ID: 15350
-// Function ID: 117205
+// Module ID: 15397
+// Function ID: 117527
 // Name: ChannelSubtitle
-// Dependencies: [31, 33, 10261, 4126, 15049, 10258, 2]
+// Dependencies: [31, 33, 10290, 4126, 15096, 10287, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15350 (ChannelSubtitle)
+// Module 15397 (ChannelSubtitle)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  let obj = require(15049) /* getChannelSubtitleData */;
+  let obj = require(15096) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -37,7 +37,7 @@ function ChannelSubtitle(arg0) {
     obj.layout = layout;
     obj.color = "text-muted";
     obj.disableAnimatedEmoji = !("voice" === channelSubtitleData.type && connected);
-    obj["children"] = require(10258) /* getRules */.renderMessagePreviewMarkup(obj);
+    obj["children"] = require(10287) /* getRules */.renderMessagePreviewMarkup(obj);
     return jsx(require(4126) /* Text */.Text, { content: channelSubtitleData.subtitle });
   }
 }
@@ -50,7 +50,7 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
   if (null == subtitle) {
     return null;
   } else {
-    let obj = { variant: require(10261) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
+    let obj = { variant: require(10290) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
     if ("string" === typeof subtitle) {
       obj = {};
       const merged = Object.assign(obj);

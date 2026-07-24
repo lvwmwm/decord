@@ -1,5 +1,5 @@
 // Module ID: 1827
-// Function ID: 20018
+// Function ID: 20019
 // Name: shortenAndLocalizeNumber
 // Dependencies: [1212, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber

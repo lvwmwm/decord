@@ -1,10 +1,10 @@
-// Module ID: 11944
-// Function ID: 92338
+// Module ID: 11970
+// Function ID: 92574
 // Name: useTrackUserProfileActivityView
-// Dependencies: [57, 31, 8690, 566, 2]
+// Dependencies: [57, 31, 8731, 566, 2]
 // Exports: default
 
-// Module 11944 (useTrackUserProfileActivityView)
+// Module 11970 (useTrackUserProfileActivityView)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

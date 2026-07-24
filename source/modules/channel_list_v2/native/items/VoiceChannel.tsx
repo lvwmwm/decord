@@ -1,9 +1,9 @@
-// Module ID: 15057
-// Function ID: 114624
+// Module ID: 15104
+// Function ID: 114945
 // Name: _handleVoiceChannelPress
-// Dependencies: [5, 31, 27, 6759, 3758, 4142, 4325, 4203, 10260, 653, 33, 689, 4619, 9145, 1934, 4341, 8455, 15056, 15058, 10214, 566, 15049, 9067, 4120, 7641, 8450, 675, 15050, 14969, 9099, 1212, 4312, 14980, 14974, 14982, 11179, 2]
+// Dependencies: [5, 31, 27, 6759, 3758, 4142, 4325, 4203, 10289, 653, 33, 689, 4619, 9181, 1934, 4341, 8499, 15103, 15105, 10244, 566, 15096, 9106, 4120, 7730, 8494, 675, 15097, 15016, 9137, 1212, 4312, 15027, 15021, 15029, 11209, 2]
 
-// Module 15057 (_handleVoiceChannelPress)
+// Module 15104 (_handleVoiceChannelPress)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importAllResult from "_createForOfIteratorHelperLoose";
 import { View } from "LimitAndDurationInfo";
@@ -43,13 +43,13 @@ let closure_15 = importAllResult.memo((channel) => {
   ({ selected, collapsed, subtitle } = channel);
   let gameMentionsAsPlainText;
   ({ locked, voiceStates, embeddedActivitiesCount } = channel);
-  let obj = channel(8455);
+  let obj = channel(8499);
   const activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(15056);
+  let obj1 = channel(15103);
   const startTime = obj1.useStartTime(channel);
-  let obj2 = channel(15058);
+  let obj2 = channel(15105);
   const ensureSyncedChannelVoiceStates = obj2.useEnsureSyncedChannelVoiceStates(channel.id, voiceStates);
-  let obj3 = channel(10214);
+  let obj3 = channel(10244);
   const isConnectedToVoiceChannel = obj3.useIsConnectedToVoiceChannel(channel);
   let obj4 = channel(566);
   const items = [closure_8, closure_9];
@@ -57,7 +57,7 @@ let closure_15 = importAllResult.memo((channel) => {
   const stateFromStoresObject = obj4.useStateFromStoresObject(items, () => ({ hasUnread: outer1_8.hasUnread(channel.id), mentionCount: outer1_8.getMentionCount(channel.id), resolvedUnreadSetting: outer1_9.resolveUnreadSetting(channel) }), items1);
   let hasUnread = stateFromStoresObject.hasUnread;
   ({ mentionCount, resolvedUnreadSetting } = stateFromStoresObject);
-  let obj5 = channel(15049);
+  let obj5 = channel(15096);
   const channelSubtitleData = obj5.getChannelSubtitleData(subtitle);
   let type;
   if (null != subtitle) {
@@ -70,7 +70,7 @@ let closure_15 = importAllResult.memo((channel) => {
       text = subtitle.text;
     }
   }
-  let obj6 = channel(9067);
+  let obj6 = channel(9106);
   gameMentionsAsPlainText = obj6.useGameMentionsAsPlainText(text);
   let result = null;
   if (null != gameMentionsAsPlainText) {
@@ -81,7 +81,7 @@ let closure_15 = importAllResult.memo((channel) => {
   let tmp12;
   if (!obj10.shouldSkipAccessibilityLabels()) {
     obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-    tmp12 = gameMentionsAsPlainText(8450)(obj);
+    tmp12 = gameMentionsAsPlainText(8494)(obj);
   }
   const items2 = [, , ];
   ({ id: arr4[0], guild_id: arr4[1] } = channel);
@@ -101,7 +101,7 @@ let closure_15 = importAllResult.memo((channel) => {
     }
     result = subtitle;
   }
-  obj10 = channel(7641);
+  obj10 = channel(7730);
   const tmp17 = jsx;
   obj1 = {
     onPress() {
@@ -117,7 +117,7 @@ let closure_15 = importAllResult.memo((channel) => {
     accessibilityRole: "button",
     accessibilityLabel: tmp12
   };
-  const tmp18 = jsx(gameMentionsAsPlainText(15050), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
+  const tmp18 = jsx(gameMentionsAsPlainText(15097), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
   const intl = channel(1212).intl;
   obj1.accessibilityHint = intl.string(channel(1212).t["9C444m"]);
   obj1.channel = channel;
@@ -143,18 +143,18 @@ let closure_15 = importAllResult.memo((channel) => {
       obj4 = { style: obj.voiceStatesCollapsed };
       const summarizedVoiceUsers = channel(4312).computeSummarizedVoiceUsers(obj2);
       obj5 = { users: summarizedVoiceUsers, max: 8, guildId: channel.guild_id, renderIcon: false };
-      obj4.children = jsx(gameMentionsAsPlainText(14980), { users: summarizedVoiceUsers, max: 8, guildId: channel.guild_id, renderIcon: false });
+      obj4.children = jsx(gameMentionsAsPlainText(15027), { users: summarizedVoiceUsers, max: 8, guildId: channel.guild_id, renderIcon: false });
       tmp20 = <View style={obj.voiceStatesCollapsed} />;
       const obj15 = channel(4312);
     } else {
       obj6 = { style: obj.voiceStates };
       obj7 = { channel, collapsed, voiceStates: ensureSyncedChannelVoiceStates };
-      obj6.children = jsx(gameMentionsAsPlainText(14974), { channel, collapsed, voiceStates: ensureSyncedChannelVoiceStates });
+      obj6.children = jsx(gameMentionsAsPlainText(15021), { channel, collapsed, voiceStates: ensureSyncedChannelVoiceStates });
       tmp20 = <View style={obj.voiceStates} />;
     }
   }
   obj1.children = tmp20;
-  return tmp17(gameMentionsAsPlainText(14969), obj1);
+  return tmp17(gameMentionsAsPlainText(15016), obj1);
 });
 let obj1 = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
 const memoResult = importAllResult.memo((channel) => {
@@ -165,7 +165,7 @@ const memoResult = importAllResult.memo((channel) => {
   let subtitle;
   channel = channel.channel;
   ({ selected, subtitle } = channel);
-  const arr = importDefault(11179)(channel);
+  const arr = importDefault(11209)(channel);
   let obj = channel(566);
   const items = [closure_7, closure_6];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ locked: !outer1_7.can(outer1_12.CONNECT, channel), bypassLimit: outer1_7.can(outer1_12.MOVE_MEMBERS, channel), collapsed: outer1_6.isCollapsed(channel.id) }));
@@ -181,7 +181,7 @@ const memoResult = importAllResult.memo((channel) => {
   }
   obj.embeddedActivitiesCount = num;
   obj.collapsed = collapsed;
-  let tmp6 = importDefault(14982)(channel.guild_id)[channel.id];
+  let tmp6 = importDefault(15029)(channel.guild_id)[channel.id];
   if (null == tmp6) {
     tmp6 = NO_VOICE_STATES;
   }

@@ -1,8 +1,8 @@
-// Module ID: 7880
-// Function ID: 62739
-// Dependencies: [31, 27, 4122, 1917, 4217, 653, 33, 4130, 689, 1273, 566, 7881, 7846, 7882, 7883, 4660, 2]
+// Module ID: 7967
+// Function ID: 63050
+// Dependencies: [31, 27, 4122, 1917, 4217, 653, 33, 4130, 689, 1273, 566, 7968, 7935, 7969, 7970, 4660, 2]
 
-// Module 7880
+// Module 7967
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -77,7 +77,7 @@ const forwardRefResult = require("result").forwardRef((user, ref) => {
     return member;
   });
   const obj4 = user(566);
-  const tmp9 = guildId(7881);
+  const tmp9 = guildId(7968);
   obj = { pendingValue: pendingAvatarDecoration };
   let avatarDecoration;
   if (null != user) {
@@ -92,19 +92,19 @@ const forwardRefResult = require("result").forwardRef((user, ref) => {
   obj.guildId = guildId;
   obj = { isMobileOnline, isVROnline, size };
   let tmp13 = null;
-  const obj5 = user(7846);
+  const obj5 = user(7935);
   if (!disableStatus) {
     tmp13 = status;
   }
   obj.status = tmp13;
   const items4 = [tmp5.avatarStatusStyle, statusStyle];
   obj.statusStyle = items4;
-  obj.streaming = guildId(7882)(activities);
+  obj.streaming = guildId(7969)(activities);
   if (flag) {
     flag = !stateFromStores;
   }
   obj.animate = flag;
-  obj.avatarDecoration = tmp9(user(7846).getProfilePreviewValue(obj));
+  obj.avatarDecoration = tmp9(user(7935).getProfilePreviewValue(obj));
   if (null != onPress) {
     obj1 = { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" };
     let merged1 = Object.assign(merged);

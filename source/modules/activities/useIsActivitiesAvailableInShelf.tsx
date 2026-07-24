@@ -1,10 +1,10 @@
-// Module ID: 10553
-// Function ID: 82431
+// Module ID: 10582
+// Function ID: 82623
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [31, 10517, 10554, 10486, 2]
+// Dependencies: [31, 10546, 10583, 10515, 2]
 // Exports: default
 
-// Module 10553 (useIsActivitiesAvailableInShelf)
+// Module 10582 (useIsActivitiesAvailableInShelf)
 import result from "result";
 
 const require = arg1;
@@ -12,9 +12,9 @@ const result = require("useIsPrivateChannelWithEnabledActivities").fileFinishedI
 
 export default function useIsActivitiesAvailableInShelf(arg0, arg1) {
   const _require = arg0;
-  const isActivitiesEnabledForCurrentPlatform = _require(10517).useIsActivitiesEnabledForCurrentPlatform();
+  const isActivitiesEnabledForCurrentPlatform = _require(10546).useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != arg0;
-  let obj = _require(10517);
+  let obj = _require(10546);
   if (tmp3) {
     tmp3 = "" !== arg0;
   }

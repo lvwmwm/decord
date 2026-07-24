@@ -1,5 +1,5 @@
 // Module ID: 6430
-// Function ID: 50599
+// Function ID: 50610
 // Name: PsychicIllocon
 // Dependencies: [33, 5085, 6431, 2]
 // Exports: PsychicIllocon

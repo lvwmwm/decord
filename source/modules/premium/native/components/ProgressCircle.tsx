@@ -1,9 +1,9 @@
-// Module ID: 11625
-// Function ID: 90258
+// Module ID: 11652
+// Function ID: 90496
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 4130, 8018, 3842, 689, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 4130, 8063, 3842, 689, 2]
 
-// Module 11625 (_isNativeReflectConstruct)
+// Module 11652 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import closure_4 from "jsxProd";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

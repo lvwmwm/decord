@@ -1,10 +1,10 @@
-// Module ID: 16323
-// Function ID: 127386
+// Module ID: 16370
+// Function ID: 127710
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [27, 16305, 16307, 16304, 482, 33, 4130, 689, 4066, 4571, 16324, 1212, 7621, 5187, 5186, 4098, 9293, 1913, 7650, 16325, 4126, 2230, 3994, 2]
+// Dependencies: [27, 16352, 16354, 16351, 482, 33, 4130, 689, 4066, 4571, 16371, 1212, 7710, 5187, 5186, 4098, 9329, 1913, 7739, 16372, 4126, 2230, 3994, 2]
 // Exports: default
 
-// Module 16323 (EnhancedRoleColorsSelectStyleModal)
+// Module 16370 (EnhancedRoleColorsSelectStyleModal)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { RoleColorsStyle } from "_isNativeReflectConstruct";
 import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS";
@@ -67,10 +67,10 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
   const dependencyMap = tmp;
   let obj = require(4571) /* useHasEnhancedRoleColors */;
   const hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
-  let obj1 = require(16324) /* useGuildSettingsRoleExampleMessage */;
+  let obj1 = require(16371) /* useGuildSettingsRoleExampleMessage */;
   let intl = require(1212) /* getSystemLocale */.intl;
   let closure_4 = obj1.useGuildSettingsRoleExampleMessage(intl.string(require(1212) /* getSystemLocale */.t.Mi9Kbe));
-  let tmp3 = importDefault(7621);
+  let tmp3 = importDefault(7710);
   tmp3 = new tmp3();
   const RoleColorsStyle = tmp3;
   obj = {};
@@ -115,9 +115,9 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
             message.message.roleColor = undefined;
             const result = outer2_0(1913).extractColorStringsFromServerColors(id.colors);
             const obj = outer2_0(1913);
-            message.message.roleColors = outer2_0(7650).processColorStrings(result);
+            message.message.roleColors = outer2_0(7739).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = outer2_1(16325);
+            message.message.avatarURL = outer2_1(16372);
           }
         };
         const items1 = [outer1_9(outer1_1(tmp[16]), obj), ];

@@ -1,7 +1,7 @@
 // Module ID: 6648
-// Function ID: 51041
+// Function ID: 51052
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 1851, 5624, 3776, 2]
+// Dependencies: [57, 1851, 5622, 3776, 2]
 // Exports: getModifySubscriptionItemsForProduct, getPremiumBundlesWithPredicate, getProductIdFromSubscription, getProductIdsForBothIntervals, productsHaveSamePerks, shouldAlwaysExcludeFromPlanSelect
 
 // Module 6648 (_createForOfIteratorHelperLoose)
@@ -93,12 +93,12 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getPremiumBundleWithPredicate(arg0) {
-  const values = Object.values(require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
+  const values = Object.values(require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
   return values.find(arg0);
 }
 function getPremiumBundledItemsFromProductId(productId) {
-  if (productId in require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems) {
-    return require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems[productId];
+  if (productId in require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems) {
+    return require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems[productId];
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -135,7 +135,7 @@ function getToggledIntervalProduct(productIdFromSubscription) {
 function isValidBundleProductId(productIdFromSubscription) {
   let tmp = null != productIdFromSubscription;
   if (tmp) {
-    tmp = productIdFromSubscription in require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems;
+    tmp = productIdFromSubscription in require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems;
   }
   return tmp;
 }
@@ -226,7 +226,7 @@ function planQuantityMapsEqual(size, size2) {
   }
 }
 function getProductIdFromSubscriptionItems(subscriptionItemsForProduct) {
-  const keys = Object.keys(require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
+  const keys = Object.keys(require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
   let num = 0;
   if (0 < keys.length) {
     while (!planQuantityMapsEqual(tmp, aggregateQuantitiesByPlanId(getSubscriptionItemsForProduct(keys[num])))) {
@@ -241,7 +241,7 @@ function getProductIdFromSubscriptionItems(subscriptionItemsForProduct) {
 let result = require("SubscriptionPlans").fileFinishedImporting("modules/premium/native/PremiumBundledPlansUtils.tsx");
 
 export const getPremiumBundlesWithPredicate = function getPremiumBundlesWithPredicate(predicate) {
-  const values = Object.values(require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
+  const values = Object.values(require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
   return values.filter(predicate);
 };
 export { getPremiumBundleWithPredicate };

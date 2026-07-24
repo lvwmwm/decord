@@ -1,9 +1,9 @@
-// Module ID: 7789
-// Function ID: 62157
+// Module ID: 7880
+// Function ID: 62478
 // Name: nativeStyleProperties
-// Dependencies: [27, 4122, 1348, 1838, 4123, 7622, 653, 4130, 3974, 689, 5648, 4351, 1449, 2]
+// Dependencies: [27, 4122, 1348, 1838, 4123, 7711, 653, 4130, 3974, 689, 5648, 4351, 1449, 2]
 
-// Module 7789 (nativeStyleProperties)
+// Module 7880 (nativeStyleProperties)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";

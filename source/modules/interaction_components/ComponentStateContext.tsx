@@ -1,10 +1,10 @@
-// Module ID: 7794
-// Function ID: 62186
+// Module ID: 7885
+// Function ID: 62507
 // Name: isInteractionComponent
-// Dependencies: [57, 31, 7629, 3759, 1348, 1917, 4946, 1849, 7795, 33, 1881, 4359, 4357, 566, 7664, 5650, 7797, 7798, 686, 4559, 4353, 2]
+// Dependencies: [57, 31, 7718, 3759, 1348, 1917, 4946, 1849, 7886, 33, 1881, 4359, 4357, 566, 7753, 5650, 7888, 7889, 686, 4559, 4353, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 7794 (isInteractionComponent)
+// Module 7885 (isInteractionComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -130,7 +130,7 @@ function useShouldDisableInteractiveComponents(channel_id) {
   if (null != channel) {
     guild_id = channel.guild_id;
   }
-  const obj5 = channel(7664);
+  const obj5 = channel(7753);
   const isThreadModerator = channel(5650).useIsThreadModerator(channel);
   const obj6 = channel(5650);
   let tmp7 = !stateFromStores;

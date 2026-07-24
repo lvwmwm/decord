@@ -1,10 +1,10 @@
-// Module ID: 6835
-// Function ID: 53993
+// Module ID: 6834
+// Function ID: 54002
 // Name: timeoutAttachmentsAndEmbedsForMessage
-// Dependencies: [4129, 1348, 5671, 6836, 653, 1282, 1212, 675, 5669, 6837, 6842, 6843, 3809, 4956, 4347, 5674, 2]
+// Dependencies: [4129, 1348, 5671, 6835, 653, 1282, 1212, 675, 5669, 6836, 6841, 6842, 3809, 4956, 4347, 5674, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForReason
 
-// Module 6835 (timeoutAttachmentsAndEmbedsForMessage)
+// Module 6834 (timeoutAttachmentsAndEmbedsForMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -104,8 +104,8 @@ export const trackMediaRedactionAction = function trackMediaRedactionAction(arg0
 export const TimeoutCancelSource = { UPDATE: "update", TIMEOUT: "timeout" };
 export const trackScanTiming = function trackScanTiming(setAt, UPDATE) {
   const bound = Math.min(Math.floor((Date.now() - setAt) / 1000), 3);
-  let obj = importDefault(6837);
-  obj = { name: require(6842) /* set */.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING };
+  let obj = importDefault(6836);
+  obj = { name: require(6841) /* set */.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING };
   const items = ["timingBucket:" + bound, "source:" + UPDATE, "metricVersion:1"];
   obj.tags = items;
   obj.increment(obj);
@@ -138,14 +138,14 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
         obj.message_id = messageId;
         obj.embed_ids = embedIds;
         obj.user_is_underage = require(5669) /* isCurrentUserTeen */.isCurrentUserTeen();
-        obj.scan_timeout_duration = require(6843) /* _isNativeReflectConstruct */.MESSAGE_SCAN_TIMEOUT;
+        obj.scan_timeout_duration = require(6842) /* _isNativeReflectConstruct */.MESSAGE_SCAN_TIMEOUT;
         obj.attachment_ids_v2 = attachmentIds;
         obj.track(AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, obj);
         const obj3 = require(5669) /* isCurrentUserTeen */;
-        obj = { name: require(6842) /* set */.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, tags: ["metricVersion:1"] };
-        importDefault(6837).increment(obj);
-        const obj4 = importDefault(6837);
-        const obj1 = { name: require(6842) /* set */.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION };
+        obj = { name: require(6841) /* set */.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, tags: ["metricVersion:1"] };
+        importDefault(6836).increment(obj);
+        const obj4 = importDefault(6836);
+        const obj1 = { name: require(6841) /* set */.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION };
         let length1;
         if (null != attachmentIds) {
           length1 = attachmentIds.length;
@@ -162,8 +162,8 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
         if (null != length2) {
           num10 = length2;
         }
-        importDefault(6837).distribution(obj1, num9 + num10);
-        const obj6 = importDefault(6837);
+        importDefault(6836).distribution(obj1, num9 + num10);
+        const obj6 = importDefault(6836);
       } else {
         let length3;
         if (null != embedIds) {
@@ -197,8 +197,8 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     importDefault(675).track(AnalyticEvents.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED, obj);
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
-      obj = importDefault(6837);
-      obj = { name: require(6842) /* set */.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
+      obj = importDefault(6836);
+      obj = { name: require(6841) /* set */.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
       obj.distribution(obj, sum);
     }
     const obj3 = importDefault(675);

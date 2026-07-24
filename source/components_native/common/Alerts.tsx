@@ -1,9 +1,9 @@
-// Module ID: 15599
-// Function ID: 120252
+// Module ID: 15646
+// Function ID: 120574
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4122, 12676, 13329, 9277, 9491, 33, 15600, 15601, 15605, 15606, 4130, 689, 4471, 4524, 5587, 3842, 566, 620, 4540, 10364, 1273, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4122, 12727, 13382, 9313, 9527, 33, 15647, 15648, 15652, 15653, 4130, 689, 4471, 4524, 5585, 3842, 566, 620, 4540, 10393, 1273, 2]
 
-// Module 15599 (_isNativeReflectConstruct)
+// Module 15646 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -45,7 +45,7 @@ let obj = {
     return importDefaultResult.shouldShowWarning();
   },
   getComponent() {
-    return require(15601) /* _isNativeReflectConstruct */.default;
+    return require(15648) /* _isNativeReflectConstruct */.default;
   }
 };
 items = [importDefaultResult];
@@ -57,7 +57,7 @@ obj = {
     return importDefaultResult1.shouldShowWarning();
   },
   getComponent() {
-    return require(15605) /* _isNativeReflectConstruct */.default;
+    return require(15652) /* _isNativeReflectConstruct */.default;
   }
 };
 items2 = [importDefaultResult1];
@@ -70,7 +70,7 @@ items1[2] = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(15606) /* MobileSurvey */.default;
+    return require(15653) /* MobileSurvey */.default;
   }
 };
 importDefaultResult3 = new importDefaultResult3(items1);
@@ -256,7 +256,7 @@ let obj1 = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(15606) /* MobileSurvey */.default;
+    return require(15653) /* MobileSurvey */.default;
   }
 };
 let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/common/Alerts.tsx");

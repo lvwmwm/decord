@@ -1,10 +1,10 @@
-// Module ID: 12131
-// Function ID: 95021
+// Module ID: 12158
+// Function ID: 95261
 // Name: useIsNitroWishlistingEnabled
 // Dependencies: [1428, 2]
 // Exports: getAreNitroWishlistRoadblocksEnabled, getIsNitroWishlistingEnabled, useAreNitroWishlistRoadblocksEnabled, useIsNitroWishlistingEnabled
 
-// Module 12131 (useIsNitroWishlistingEnabled)
+// Module 12158 (useIsNitroWishlistingEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-03-wishlisting-nitro", kind: "user", defaultConfig: { isEnabled: false, isRoadblocksEnabled: false }, variations: { [0]: { isEnabled: false, isRoadblocksEnabled: false }, [1]: { isEnabled: true, isRoadblocksEnabled: false }, [2]: { isEnabled: true, isRoadblocksEnabled: true } } };

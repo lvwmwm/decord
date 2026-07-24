@@ -1,10 +1,10 @@
-// Module ID: 9994
-// Function ID: 77270
+// Module ID: 10026
+// Function ID: 77464
 // Name: UserSummaryItem
 // Dependencies: [31, 27, 1917, 33, 4130, 689, 1273, 566, 1392, 4319, 1212, 4126, 2]
 // Exports: default
 
-// Module 9994 (UserSummaryItem)
+// Module 10026 (UserSummaryItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

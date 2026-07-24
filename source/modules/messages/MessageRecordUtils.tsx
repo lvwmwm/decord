@@ -1,5 +1,5 @@
 // Module ID: 4351
-// Function ID: 38594
+// Function ID: 38595
 // Name: createMinimalMessageRecord
 // Dependencies: [4352, 3768, 1857, 1194, 3767, 1849, 653, 4353, 4114, 4360, 21, 4365, 4366, 4463, 3712, 4464, 4466, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage

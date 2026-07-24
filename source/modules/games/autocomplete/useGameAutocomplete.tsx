@@ -1,10 +1,10 @@
-// Module ID: 7101
-// Function ID: 57107
+// Module ID: 7100
+// Function ID: 57120
 // Name: fetchStore
-// Dependencies: [57, 31, 7091, 653, 566, 7092, 7102, 2]
+// Dependencies: [57, 31, 7090, 653, 566, 7091, 7101, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 7101 (fetchStore)
+// Module 7100 (fetchStore)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import importDefaultResult from "_isNativeReflectConstruct";
@@ -13,8 +13,8 @@ import initialize from "initialize";
 
 const require = arg1;
 initialize = {
-  getQueryId(toLocaleLowerCase) {
-    return QueryIds.GAME_AUTOCOMPLETE(require(7092) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(toLocaleLowerCase));
+  getQueryId(query) {
+    return QueryIds.GAME_AUTOCOMPLETE(require(7091) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(query));
   },
   get(arg0) {
     const results = importDefaultResult.getResults(arg0);
@@ -25,7 +25,7 @@ initialize = {
     return tmp2;
   },
   load(arg0) {
-    return require(7102) /* _fetchGameAutocomplete */.fetchGameAutocomplete(arg0);
+    return require(7101) /* _fetchGameAutocomplete */.fetchGameAutocomplete(arg0);
   },
   getIsLoading(wishlistId) {
     return importDefaultResult.isFetching(wishlistId);
@@ -58,11 +58,11 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 export const GAME_AUTOCOMPLETE_DEBOUNCE_MS = 200;
 export const GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS = 500;
 export const useGameAutocomplete = fetchStore;
-export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplete(toLocaleLowerCase) {
+export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplete(query) {
   let data;
   let isLoading;
-  let obj = require(7092) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */;
-  const result = obj.normalizeGameAutocompleteQuery(toLocaleLowerCase);
+  let obj = require(7091) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */;
+  const result = obj.normalizeGameAutocompleteQuery(query);
   const tmp2 = (function useDebouncedQueryValue(result) {
     let closure_0 = result;
     const tmp = outer1_2(outer1_3.useState(result), 2);

@@ -1,10 +1,10 @@
-// Module ID: 10567
-// Function ID: 82529
+// Module ID: 10596
+// Function ID: 82721
 // Name: VideoEmptyState
-// Dependencies: [31, 27, 1348, 653, 33, 4130, 689, 10568, 1273, 1212, 10571, 8857, 566, 4559, 4309, 4194, 4126, 4544, 2]
+// Dependencies: [31, 27, 1348, 653, 33, 4130, 689, 10597, 1273, 1212, 10600, 8896, 566, 4559, 4309, 4194, 4126, 4544, 2]
 // Exports: default
 
-// Module 10567 (VideoEmptyState)
+// Module 10596 (VideoEmptyState)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -48,7 +48,7 @@ export default function VideoEmptyState(arg0) {
     let tmp17 = !removeSplashImage;
     if (tmp17) {
       obj = { style: tmp3.placeholderImage };
-      tmp17 = callback(stream(10568).StreamEnded, obj);
+      tmp17 = callback(stream(10597).StreamEnded, obj);
     }
     const items = [tmp17, ];
     const obj1 = { style: tmp3.placeholderText };
@@ -64,7 +64,7 @@ export default function VideoEmptyState(arg0) {
     let tmp8 = !removeSplashImage;
     if (tmp8) {
       const obj3 = { style: tmp3.placeholderImage };
-      tmp8 = callback(stream(10571).StreamFailed, obj3);
+      tmp8 = callback(stream(10600).StreamFailed, obj3);
     }
     const items1 = [tmp8, ];
     const obj4 = { style: tmp3.placeholderText };
@@ -79,13 +79,13 @@ export default function VideoEmptyState(arg0) {
     tmp6Result = null;
   }
   if (null != avError) {
-    let obj8 = stream(8857);
+    let obj8 = stream(8896);
     let errorCode = obj8.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === obj.STREAM_FAILED) {
-      let obj7 = stream(8857);
-      errorCode = obj7.getErrorInfo(stream(8857).AVError.STREAM_FAILED_TO_START).errorCode;
+      let obj7 = stream(8896);
+      errorCode = obj7.getErrorInfo(stream(8896).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   let obj9 = stream(566);

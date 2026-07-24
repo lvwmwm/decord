@@ -1,10 +1,10 @@
-// Module ID: 13332
-// Function ID: 102348
+// Module ID: 13385
+// Function ID: 102675
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 6, 7, 4044, 1188, 8323, 1194, 8306, 491, 8330, 566, 686, 2]
+// Dependencies: [15, 17, 18, 6, 7, 4044, 1188, 8367, 1194, 8350, 491, 8374, 566, 686, 2]
 // Exports: resetGlobalState
 
-// Module 13332 (_isNativeReflectConstruct)
+// Module 13385 (_isNativeReflectConstruct)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";

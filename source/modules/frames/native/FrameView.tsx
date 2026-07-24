@@ -1,9 +1,9 @@
-// Module ID: 15726
-// Function ID: 121256
+// Module ID: 15773
+// Function ID: 121578
 // Name: FrameView
-// Dependencies: [57, 31, 10479, 10480, 4155, 33, 566, 5465, 686, 10489, 10601, 15727, 15728, 10612, 2]
+// Dependencies: [57, 31, 10508, 10509, 4155, 33, 566, 5463, 686, 10518, 10630, 15774, 15775, 10641, 2]
 
-// Module 15726 (FrameView)
+// Module 15773 (FrameView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

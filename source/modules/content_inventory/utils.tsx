@@ -1,10 +1,10 @@
-// Module ID: 7815
-// Function ID: 62348
+// Module ID: 7906
+// Function ID: 62669
 // Name: calculateTimestampDurations
-// Dependencies: [664, 21, 1212, 3712, 7816, 3355, 7810, 2]
+// Dependencies: [664, 21, 1212, 3712, 7907, 3355, 7901, 2]
 // Exports: formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getTrendingType, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 7815 (calculateTimestampDurations)
+// Module 7906 (calculateTimestampDurations)
 function calculateTimestampDurations(end, now) {
   const bound = Math.max(end - now, 0);
   const result = bound / importDefault(664).Millis.SECOND;
@@ -131,7 +131,7 @@ function getTrait(contentInventoryEntry, AGGREGATE_COUNT) {
 }
 function isEntryActive(entry) {
   let is_live;
-  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.IS_LIVE);
+  const tmp2 = getTrait(entry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.IS_LIVE);
   if (null != tmp2) {
     is_live = tmp2.is_live;
   }
@@ -150,7 +150,7 @@ function isEntryExpired(content) {
 }
 function getEntryDuration(contentInventoryEntry) {
   let duration_seconds;
-  const tmp2 = getTrait(contentInventoryEntry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.DURATION_SECONDS);
+  const tmp2 = getTrait(contentInventoryEntry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.DURATION_SECONDS);
   if (null != tmp2) {
     duration_seconds = tmp2.duration_seconds;
   }
@@ -158,7 +158,7 @@ function getEntryDuration(contentInventoryEntry) {
 }
 function getStreakCount(entry) {
   let streak_count_days;
-  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.STREAK_DAYS);
+  const tmp2 = getTrait(entry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.STREAK_DAYS);
   if (null != tmp2) {
     streak_count_days = tmp2.streak_count_days;
   }
@@ -248,7 +248,7 @@ export { getTrait };
 export { isEntryActive };
 export const isEntryNew = function isEntryNew(entry) {
   let first_time;
-  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.FIRST_TIME);
+  const tmp2 = getTrait(entry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.FIRST_TIME);
   if (null != tmp2) {
     first_time = tmp2.first_time;
   }
@@ -269,7 +269,7 @@ export const isEntryLive = function isEntryLive(entry) {
 export { getEntryDuration };
 export const getAggregateRange = function getAggregateRange(contentInventoryEntry) {
   let range;
-  const tmp2 = getTrait(contentInventoryEntry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.AGGREGATE_RANGE);
+  const tmp2 = getTrait(contentInventoryEntry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.AGGREGATE_RANGE);
   if (null != tmp2) {
     range = tmp2.range;
   }
@@ -277,14 +277,14 @@ export const getAggregateRange = function getAggregateRange(contentInventoryEntr
 };
 export const isEntryMarathon = function isEntryMarathon(entry) {
   let marathon;
-  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.MARATHON);
+  const tmp2 = getTrait(entry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.MARATHON);
   if (null != tmp2) {
     marathon = tmp2.marathon;
   }
   return marathon;
 };
 export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(entry) {
-  const tmp = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.RESURRECTED);
+  const tmp = getTrait(entry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.RESURRECTED);
   let prop;
   if (null != tmp) {
     prop = tmp.resurrected_last_played;
@@ -400,7 +400,7 @@ export const getRichGameStateBadgeText = function getRichGameStateBadgeText(stat
   }
 };
 export const isEntryTopGame = function isEntryTopGame(contentInventoryEntry) {
-  return contentInventoryEntry.content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_GAME;
+  return contentInventoryEntry.content_type === require(7901) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_GAME;
 };
 export { getStreakCount };
 export const isValidStreak = function isValidStreak(id) {
@@ -439,7 +439,7 @@ export const getMarathonDescription = function getMarathonDescription(entry) {
 };
 export const getTrendingType = function getTrendingType(entry) {
   let trending;
-  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.TRENDING_CONTENT);
+  const tmp2 = getTrait(entry, require(7907) /* ContentInventoryTraitType */.ContentInventoryTraitType.TRENDING_CONTENT);
   if (null != tmp2) {
     trending = tmp2.trending;
   }

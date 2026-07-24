@@ -1,5 +1,5 @@
 // Module ID: 1324
-// Function ID: 15545
+// Function ID: 15546
 // Name: useIsMobileVisualRefreshExperimentEnabled
 // Dependencies: [1325, 2]
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig

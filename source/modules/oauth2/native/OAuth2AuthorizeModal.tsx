@@ -1,10 +1,10 @@
-// Module ID: 9995
-// Function ID: 77276
+// Module ID: 10027
+// Function ID: 77470
 // Name: OAuth2AuthorizeModal
-// Dependencies: [31, 27, 33, 4130, 689, 8952, 1557, 3991, 4542, 4660, 1212, 9996, 5119, 4126, 5121, 9998, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 8991, 1557, 3991, 4542, 4660, 1212, 10028, 5119, 4126, 5121, 10030, 2]
 // Exports: default
 
-// Module 9995 (OAuth2AuthorizeModal)
+// Module 10027 (OAuth2AuthorizeModal)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ let result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/OAu
 
 export default function OAuth2AuthorizeModal(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = sharedValue(8952)(arg0);
+  const tmp2 = sharedValue(8991)(arg0);
   const require = tmp2;
   let obj = require(3991);
   sharedValue = obj.useSharedValue(0);
@@ -80,7 +80,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   };
   if (null != tmp2.backStep) {
     const obj3 = { color: sharedValue(689).colors.INTERACTIVE_TEXT_DEFAULT };
-    let tmp18 = callback(require(9996) /* ArrowSmallLeftIcon */.ArrowSmallLeftIcon, obj3);
+    let tmp18 = callback(require(10028) /* ArrowSmallLeftIcon */.ArrowSmallLeftIcon, obj3);
   } else {
     const obj4 = { color: sharedValue(689).colors.INTERACTIVE_TEXT_DEFAULT };
     tmp18 = callback(require(5119) /* XSmallIcon */.XSmallIcon, obj4);
@@ -102,7 +102,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   const merged = Object.assign(tmp2);
   obj8["onScroll"] = callback;
   obj8["centerContent"] = true;
-  obj7.children = callback(sharedValue(9998), obj8);
+  obj7.children = callback(sharedValue(10030), obj8);
   items4[1] = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj7);
   obj.children = items4;
   return closure_6(View, obj);

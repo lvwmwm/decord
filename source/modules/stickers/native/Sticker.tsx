@@ -1,10 +1,10 @@
-// Module ID: 9615
-// Function ID: 74901
+// Module ID: 9651
+// Function ID: 75112
 // Name: getStickerAssetUrl
-// Dependencies: [31, 27, 1278, 33, 4799, 4466, 1212, 7686, 9616, 5085, 3976, 5152, 5153, 2]
+// Dependencies: [31, 27, 1278, 33, 4799, 4466, 1212, 7775, 9652, 5085, 3976, 5152, 5153, 2]
 // Exports: default
 
-// Module 9615 (getStickerAssetUrl)
+// Module 9651 (getStickerAssetUrl)
 import "result";
 import { PixelRatio } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -63,10 +63,10 @@ export default function Sticker(opaque) {
     obj.width = size;
     obj.height = size;
     obj.opacity = num;
-    const NativeLottieRenderMode = require(7686) /* NativeLottieView */.NativeLottieRenderMode;
+    const NativeLottieRenderMode = require(7775) /* NativeLottieView */.NativeLottieRenderMode;
     obj.renderMode = animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
     obj.accessibilityLabel = formatToPlainStringResult;
-    return jsx(importDefault(7686), { url: tmp });
+    return jsx(importDefault(7775), { url: tmp });
   } else {
     if (sticker.format_type === require(4799) /* StickerFormat */.StickerFormat.APNG) {
       if ("type" in sticker) {
@@ -82,7 +82,7 @@ export default function Sticker(opaque) {
       obj.accessibilityLabel = formatToPlainStringResult;
       const obj2 = {};
       const merged = Object.assign(obj);
-      return jsx(importDefault(9616), {});
+      return jsx(importDefault(9652), {});
     }
     const obj3 = { resizeMode: "contain" };
     obj4 = { height: size, width: size, opacity: num };

@@ -1,5 +1,5 @@
 // Module ID: 3832
-// Function ID: 31991
+// Function ID: 31992
 // Name: FriendsIcon
 // Dependencies: [31, 33, 689, 3833, 4067, 2]
 // Exports: FriendsIcon

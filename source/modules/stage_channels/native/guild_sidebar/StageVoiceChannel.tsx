@@ -1,9 +1,9 @@
-// Module ID: 15059
-// Function ID: 114671
+// Module ID: 15106
+// Function ID: 114992
 // Name: getStageChannelAccessibilityProps
-// Dependencies: [31, 27, 6759, 3758, 4142, 4325, 4203, 1353, 653, 10260, 33, 1212, 4130, 689, 566, 4950, 15060, 4963, 4957, 4619, 9145, 1820, 7477, 9099, 4320, 10214, 14969, 15050, 14974, 2]
+// Dependencies: [31, 27, 6759, 3758, 4142, 4325, 4203, 1353, 653, 10289, 33, 1212, 4130, 689, 566, 4950, 15107, 4963, 4957, 4619, 9181, 1820, 7557, 9137, 4320, 10244, 15016, 15097, 15021, 2]
 
-// Module 15059 (getStageChannelAccessibilityProps)
+// Module 15106 (getStageChannelAccessibilityProps)
 import importAllResult from "result";
 import { View } from "LimitAndDurationInfo";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo((channel) => {
   }, items1);
   ({ stageInstance, hasUnread, hasMedia, collapsed } = stateFromStoresObject);
   ({ resolvedUnreadSetting, voiceStates, locked } = stateFromStoresObject);
-  let arr3 = importDefault(15060)(channel.guild_id)[channel.id];
+  let arr3 = importDefault(15107)(channel.guild_id)[channel.id];
   if (null == arr3) {
     arr3 = NO_VOICE_STATES;
   }
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo((channel) => {
   const callback1 = importAllResult.useCallback(() => {
     const result = channel(outer1_3[23]).openChannelLongPressActionSheet(channel.id);
   }, items3);
-  let obj2 = channel(10214);
+  let obj2 = channel(10244);
   let topic;
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   if (null != stageInstance) {
@@ -115,7 +115,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj["resolvedUnreadSetting"] = resolvedUnreadSetting;
   obj["subtitle"] = topic;
   obj = { channel, isChannelSelected: selected, isChannelCollapsed: collapsed };
-  const tmp11 = importDefault(14969);
+  const tmp11 = importDefault(15016);
   const tmp13 = jsx;
   if (!hasMedia) {
     let tmp15 = channel.userLimit > 0;
@@ -126,12 +126,12 @@ const memoResult = importAllResult.memo((channel) => {
   }
   obj.enableConnectedUserLimit = hasMedia;
   obj.voiceStates = voiceStates;
-  obj["channelInfo"] = tmp13(importDefault(15050), obj);
+  obj["channelInfo"] = tmp13(importDefault(15097), obj);
   let tmp17 = arr3.length > 0;
   if (tmp17) {
     obj1 = { style: tmp.voiceStates };
     obj2 = { channel, collapsed, voiceStates: arr3, audienceCount: stageParticipantsCount };
-    obj1.children = jsx(importDefault(14974), { channel, collapsed, voiceStates: arr3, audienceCount: stageParticipantsCount });
+    obj1.children = jsx(importDefault(15021), { channel, collapsed, voiceStates: arr3, audienceCount: stageParticipantsCount });
     tmp17 = <View style={tmp.voiceStates} />;
   }
   obj["children"] = tmp17;

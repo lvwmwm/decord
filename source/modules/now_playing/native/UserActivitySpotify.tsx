@@ -1,10 +1,10 @@
-// Module ID: 10900
-// Function ID: 84665
+// Module ID: 10927
+// Function ID: 84854
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8311, 33, 1554, 507, 3827, 10901, 4543, 7823, 1212, 1273, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8355, 33, 1554, 507, 3827, 10928, 4543, 7912, 1212, 1273, 2]
 // Exports: SpotifyPlayButton
 
-// Module 10900 (_callSuper)
+// Module 10927 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import closure_5 from "spotifyUtmParams";
 import getSystemLocale from "getSystemLocale";
@@ -233,7 +233,7 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
   activity = activity.activity;
   let obj = { style: activity.style };
   obj = {};
-  obj = { source: importDefault(7823) };
+  obj = { source: importDefault(7912) };
   obj.icon = callback4(activity(4543).Button.Icon, obj);
   const intl = activity(1212).intl;
   obj.text = intl.formatToPlainString(activity(1212).t.LEgD7t, { platform: activity.name });

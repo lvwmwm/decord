@@ -1,9 +1,9 @@
-// Module ID: 12679
-// Function ID: 98771
+// Module ID: 12730
+// Function ID: 99092
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4044, 6902, 1352, 1348, 5592, 5042, 1917, 1838, 3767, 1849, 653, 12680, 5047, 1832, 3969, 3803, 7098, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4044, 6901, 1352, 1348, 5590, 5042, 1917, 1838, 3767, 1849, 653, 12731, 5047, 1832, 3969, 3803, 7097, 566, 686, 2]
 
-// Module 12679 (_isNativeReflectConstruct)
+// Module 12730 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_5 from "ME";
@@ -230,7 +230,7 @@ function performQuery() {
       if (null != currentUser) {
         isStaffResult = currentUser.isStaff();
       }
-      let obj = require(12680) /* getFrictionlessGDMsEnabled */;
+      let obj = require(12731) /* getFrictionlessGDMsEnabled */;
       let frictionlessGDMsEnabled = obj.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
       if (frictionlessGDMsEnabled) {
         const members = importDefault(5047).requestMembers(null, _var);
@@ -309,7 +309,7 @@ function parseUserResults(arg0) {
   if (c20) {
     if ("" !== c21) {
       const currentUser = authStore.getCurrentUser();
-      const frictionlessGDMsEnabled = require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const frictionlessGDMsEnabled = require(12731) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
       let set = null;
       if (frictionlessGDMsEnabled) {
         const _Set = Set;
@@ -400,7 +400,7 @@ function parseUserResults(arg0) {
         } while (!iter3.done);
       }
       tmp4.emitChange();
-      const obj4 = require(12680) /* getFrictionlessGDMsEnabled */;
+      const obj4 = require(12731) /* getFrictionlessGDMsEnabled */;
     }
   }
 }
@@ -430,7 +430,7 @@ function createSearchContext() {
     c19.destroy();
     c19 = null;
   }
-  return importDefault(7098).getUserSearchContext(parseUserResults, 1000);
+  return importDefault(7097).getUserSearchContext(parseUserResults, 1000);
 }
 function handleModalActionSheetOpen(key) {
   if (key.key !== closure_18) {
@@ -460,8 +460,8 @@ function handleClose() {
 function performQueryOnAffinityChange() {
   let tmp = !c20;
   if (!tmp) {
-    tmp = !require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-    const obj = require(12680) /* getFrictionlessGDMsEnabled */;
+    tmp = !require(12731) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+    const obj = require(12731) /* getFrictionlessGDMsEnabled */;
   }
   let tmp4 = !tmp;
   if (!tmp) {
@@ -555,8 +555,8 @@ tmp4 = new tmp4(require("dispatcher"), {
   GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch() {
     let tmp = !c20;
     if (!tmp) {
-      tmp = !require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = require(12680) /* getFrictionlessGDMsEnabled */;
+      tmp = !require(12731) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const obj = require(12731) /* getFrictionlessGDMsEnabled */;
     }
     let tmp4 = !tmp;
     if (!tmp) {
@@ -567,8 +567,8 @@ tmp4 = new tmp4(require("dispatcher"), {
   GUILD_MEMBERS_REQUEST: function handleGuildMembersRequest(query) {
     let tmp = !c20;
     if (!tmp) {
-      tmp = !require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = require(12680) /* getFrictionlessGDMsEnabled */;
+      tmp = !require(12731) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const obj = require(12731) /* getFrictionlessGDMsEnabled */;
     }
     let tmp4 = !tmp;
     if (!tmp) {

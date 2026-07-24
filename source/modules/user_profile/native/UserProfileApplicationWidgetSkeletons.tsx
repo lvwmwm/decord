@@ -1,10 +1,10 @@
-// Module ID: 12088
-// Function ID: 94686
+// Module ID: 12114
+// Function ID: 94922
 // Name: ImageSkeleton
 // Dependencies: [31, 27, 33, 4130, 689, 4126, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12088 (ImageSkeleton)
+// Module 12114 (ImageSkeleton)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

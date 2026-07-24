@@ -1,10 +1,10 @@
-// Module ID: 9522
-// Function ID: 74111
+// Module ID: 9558
+// Function ID: 74320
 // Name: FeedbackForm
-// Dependencies: [57, 31, 27, 33, 4130, 7495, 1212, 5459, 1920, 4543, 4337, 5519, 5087, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 7636, 1212, 4126, 1920, 4543, 4337, 5517, 5087, 2]
 // Exports: default
 
-// Module 9522 (FeedbackForm)
+// Module 9558 (FeedbackForm)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -59,7 +59,7 @@ function FeedbackForm(result) {
     const intl3 = require(first[6]).intl;
     const obj4 = { helpdeskURL: importDefault(first[8]).getSubmitRequestURL() };
     obj3.children = intl3.format(require(first[6]).t.ybi2tD, obj4);
-    tmp16 = callback2(require(first[7]).TextWithIOSLinkWorkaround, obj3);
+    tmp16 = callback2(require(first[7]).Text, obj3);
     const obj8 = importDefault(first[8]);
   }
   const items2 = [tmp16, ];

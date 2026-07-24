@@ -1,10 +1,10 @@
-// Module ID: 16117
-// Function ID: 124963
+// Module ID: 16164
+// Function ID: 125287
 // Name: DefaultAvatarButton
-// Dependencies: [31, 27, 33, 16118, 16119, 16120, 16121, 16122, 16123, 16124, 16125, 1212, 4130, 689, 4126, 4660, 5085, 2]
+// Dependencies: [31, 27, 33, 16165, 16166, 16167, 16168, 16169, 16170, 16171, 16172, 1212, 4130, 689, 4126, 4660, 5085, 2]
 // Exports: default
 
-// Module 16117 (DefaultAvatarButton)
+// Module 16164 (DefaultAvatarButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

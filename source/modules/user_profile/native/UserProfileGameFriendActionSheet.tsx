@@ -1,10 +1,10 @@
-// Module ID: 11985
-// Function ID: 92615
+// Module ID: 12011
+// Function ID: 92851
 // Name: GameFriendApplicationRow
-// Dependencies: [5, 57, 31, 27, 3767, 653, 33, 4130, 689, 11653, 5502, 5119, 1273, 4126, 11986, 5470, 4319, 8923, 3830, 4098, 5500, 5186, 1212, 2]
+// Dependencies: [5, 57, 31, 27, 3767, 653, 33, 4130, 689, 11680, 5500, 5119, 1273, 4126, 12012, 5468, 4319, 8962, 3830, 4098, 5498, 5186, 1212, 2]
 // Exports: default
 
-// Module 11985 (GameFriendApplicationRow)
+// Module 12011 (GameFriendApplicationRow)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

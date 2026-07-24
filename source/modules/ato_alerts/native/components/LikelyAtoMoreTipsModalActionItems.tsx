@@ -1,10 +1,10 @@
-// Module ID: 10418
-// Function ID: 80229
+// Module ID: 10447
+// Function ID: 80421
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [31, 1849, 33, 566, 3969, 5503, 5165, 1212, 10202, 2]
+// Dependencies: [31, 1849, 33, 566, 3969, 5501, 5165, 1212, 10232, 2]
 // Exports: default
 
-// Module 10418 (LikelyAtoMoreTipsModalActionItems)
+// Module 10447 (LikelyAtoMoreTipsModalActionItems)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export default function LikelyAtoMoreTipsModalActionItems(senderId) {
   const intl2 = senderId(1212).intl;
   obj.subLabel = intl2.string(senderId(1212).t.w2ve0t);
   obj.onPress = senderId.handleMutePressed;
-  obj.icon = jsx(senderId(10202).BellSlashIcon, {});
+  obj.icon = jsx(senderId(10232).BellSlashIcon, {});
   obj.children = jsx(senderId(5165).TableRow, {});
-  return jsx(senderId(5503).TableRowGroup, {});
+  return jsx(senderId(5501).TableRowGroup, {});
 };

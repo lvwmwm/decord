@@ -1,10 +1,10 @@
-// Module ID: 11023
-// Function ID: 85742
+// Module ID: 11050
+// Function ID: 85931
 // Name: ClassificationDetailModal
-// Dependencies: [31, 653, 11024, 33, 4130, 689, 4337, 5087, 11025, 5796, 11055, 11032, 1457, 5519, 1212, 2]
+// Dependencies: [31, 653, 11051, 33, 4130, 689, 4337, 5087, 11052, 5796, 11082, 11059, 1457, 5517, 1212, 2]
 // Exports: default
 
-// Module 11023 (ClassificationDetailModal)
+// Module 11050 (ClassificationDetailModal)
 import result from "result";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -30,7 +30,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = _createForOfIteratorHelperLoose();
   dependencyMap = tmp;
-  let obj = classificationId(11055);
+  let obj = classificationId(11082);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -56,7 +56,7 @@ export default function ClassificationDetailModal(classificationId) {
       },
       headerLeft: classificationId(table[7]).getHeaderCloseButton(closeModal),
       render() {
-        return outer3_7(source(11025), {
+        return outer3_7(source(11052), {
           classificationId: closure_0,
           source: closure_2,
           onClose() {
@@ -85,5 +85,5 @@ export default function ClassificationDetailModal(classificationId) {
   obj = { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL };
   const intl = classificationId(1212).intl;
   obj.headerBackTitle = intl.string(classificationId(1212).t["13/7kX"]);
-  return jsx(classificationId(5519).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL });
+  return jsx(classificationId(5517).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL });
 };

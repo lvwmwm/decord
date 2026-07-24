@@ -1,10 +1,10 @@
-// Module ID: 10715
-// Function ID: 83413
+// Module ID: 10744
+// Function ID: 83605
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [31, 27, 4149, 1194, 4177, 4191, 33, 4130, 566, 44, 8843, 10709, 1212, 5165, 10716, 2]
+// Dependencies: [31, 27, 4149, 1194, 4177, 4191, 33, 4130, 566, 44, 8882, 10738, 1212, 5165, 10745, 2]
 // Exports: default
 
-// Module 10715 (UserSettingsVoiceOutputOptions)
+// Module 10744 (UserSettingsVoiceOutputOptions)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -60,7 +60,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj = {};
   const intl2 = stateFromStores1(1212).intl;
   obj.label = intl2.string(stateFromStores1(1212).t.xPHVBs);
-  obj1 = { style: tmp.slider, children: callback(importDefault(10716), obj2) };
+  obj1 = { style: tmp.slider, children: callback(importDefault(10745), obj2) };
   obj2 = {
     style: tmp.slider,
     value: stateFromStores,
@@ -77,11 +77,11 @@ export default function UserSettingsVoiceOutputOptions() {
     obj3.label = intl3.string(stateFromStores1(1212).t.pEAl4b);
     const obj4 = { style: tmp.slider };
     const obj5 = { value: stateFromStores2, onValueChange: callback };
-    obj4.children = callback(importDefault(10716), obj5);
+    obj4.children = callback(importDefault(10745), obj5);
     obj3.subLabel = callback(View, obj4);
     tmp7 = callback(stateFromStores1(5165).TableRow, obj3);
   }
   items4[1] = tmp7;
   obj.children = items4;
-  return closure_10(stateFromStores1(10709).UserSettingsTableRowGroup, obj);
+  return closure_10(stateFromStores1(10738).UserSettingsTableRowGroup, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 14797
-// Function ID: 112858
+// Module ID: 14844
+// Function ID: 113179
 // Name: getGuildsComponent
-// Dependencies: [31, 27, 1906, 3947, 8772, 33, 9113, 14798, 15128, 15176, 566, 15250, 8322, 5519, 5449, 2]
+// Dependencies: [31, 27, 1906, 3947, 8811, 33, 9149, 14845, 15175, 15223, 566, 15297, 8366, 5517, 5449, 2]
 
-// Module 14797 (getGuildsComponent)
+// Module 14844 (getGuildsComponent)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,13 +19,13 @@ let closure_5;
 let closure_9;
 let require = arg1;
 function getGuildsComponent() {
-  return require(14798).default;
+  return require(14845).default;
 }
 function getNotificationsComponent() {
-  return require(15128) /* goBack */.ThemedNotifications;
+  return require(15175) /* goBack */.ThemedNotifications;
 }
 function getICYMIComponent() {
-  return require(15176) /* ICYMINavigator */.default;
+  return require(15223) /* ICYMINavigator */.default;
 }
 ({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);

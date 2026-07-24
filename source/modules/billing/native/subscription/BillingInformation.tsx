@@ -1,10 +1,10 @@
-// Module ID: 7417
-// Function ID: 59612
+// Module ID: 7419
+// Function ID: 59647
 // Name: getBillingInformationStringNative
 // Dependencies: [5, 653, 3776, 478, 1212, 7203, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 7417 (getBillingInformationStringNative)
+// Module 7419 (getBillingInformationStringNative)
 import serializePurchaseResponse from "serializePurchaseResponse";
 import { SubscriptionStatusTypes } from "ME";
 

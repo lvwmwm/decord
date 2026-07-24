@@ -1,10 +1,10 @@
-// Module ID: 7765
-// Function ID: 61653
+// Module ID: 7858
+// Function ID: 61980
 // Name: importDefaultResult1
-// Dependencies: [653, 664, 1362, 4120, 7766, 7779, 2]
+// Dependencies: [653, 664, 1362, 4120, 7859, 7870, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 7765 (importDefaultResult1)
+// Module 7858 (importDefaultResult1)
 import { MessageTypes } from "ME";
 import importDefaultResult from "priv";
 import importDefaultResult1 from "priv";
@@ -110,7 +110,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   }
   if (message.type !== MessageTypes.CHANGELOG) {
     let obj = {};
-    let obj1 = require(7779) /* getInitialParserStateFromMessage */;
+    let obj1 = require(7870) /* getInitialParserStateFromMessage */;
     obj = { contentMessage: message2, hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowGameMentions: true };
     let tmp5 = flag2;
     if (!flag2) {
@@ -132,7 +132,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   const obj5 = importDefault(4120);
   obj1 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag };
   flag = flag2;
-  const obj6 = require(7766) /* LHeading */;
+  const obj6 = require(7859) /* LHeading */;
   if (!flag2) {
     flag = flag3;
   }
@@ -143,7 +143,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   obj1.allowList = flag2;
   obj1.allowLinks = flag4;
   obj1.previewLinkTarget = flag4;
-  obj.content = obj5.astParserFor(require(7766) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1);
+  obj.content = obj5.astParserFor(require(7859) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1);
   flag4 = importDefaultResult3;
   const result1 = importDefaultResult3.set(message, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9917
-// Function ID: 76708
+// Module ID: 9949
+// Function ID: 76902
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 9532, 9533, 9918, 566, 1327, 2]
+// Dependencies: [57, 31, 9568, 9569, 9950, 566, 1327, 2]
 // Exports: default
 
-// Module 9917 (_createForOfIteratorHelperLoose)
+// Module 9949 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -90,9 +90,9 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getSavedMessagesForType(arg0) {
-  if (require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK === arg0) {
+  if (require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK === arg0) {
     return store.getMessageBookmarks();
-  } else if (require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER === arg0) {
+  } else if (require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER === arg0) {
     return store.getMessageReminders();
   } else {
     return store.getSavedMessages();
@@ -106,7 +106,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function useSavedMessagesForPage() {
   let ALL = arg0;
   if (arg0 === undefined) {
-    ALL = ALL(9533).SavedMessageSortTypes.ALL;
+    ALL = ALL(9569).SavedMessageSortTypes.ALL;
   }
   let importDefault;
   let dependencyMap;
@@ -168,7 +168,7 @@ export default function useSavedMessagesForPage() {
       outer2_5.removeChangeListener(handleChange);
     };
   }, items);
-  importDefault(9918)();
+  importDefault(9950)();
   const items1 = [store];
   return ALL(566).useStateFromStoresArray(items1, () => {
     const mapped = closure_1.map((channelId) => outer2_5.getSavedMessage(channelId.channelId, channelId.messageId));

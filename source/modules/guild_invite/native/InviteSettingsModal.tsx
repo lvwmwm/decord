@@ -1,10 +1,10 @@
-// Module ID: 16488
-// Function ID: 128496
+// Module ID: 16535
+// Function ID: 128820
 // Name: AdvancedInstantInviteScreen
-// Dependencies: [57, 31, 1348, 8482, 1838, 3758, 653, 33, 4130, 689, 1456, 566, 44, 22, 16489, 8488, 4470, 1212, 4559, 686, 5788, 7495, 16490, 8483, 480, 5087, 5519, 2]
+// Dependencies: [57, 31, 1348, 8527, 1838, 3758, 653, 33, 4130, 689, 1456, 566, 44, 22, 16536, 8533, 4470, 1212, 4559, 686, 5788, 7636, 16537, 8528, 480, 5087, 5517, 2]
 // Exports: default
 
-// Module 16488 (AdvancedInstantInviteScreen)
+// Module 16535 (AdvancedInstantInviteScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -145,15 +145,15 @@ function AdvancedInstantInviteScreen() {
   obj = { contentContainerStyle: tmp.formContainer };
   obj = { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses };
   let obj4 = navigation(4559);
-  obj.maxUsesOptions = channel(8483).getMaxUsesOptions;
+  obj.maxUsesOptions = channel(8528).getMaxUsesOptions;
   ({ temporary: obj6.temporary, flags: obj6.flags, roleIds: obj6.roleIds } = settings);
   obj.onChangeMaxAge = callback2;
   obj.onChangeMaxUses = callback1;
   obj.onChangeTemporary = callback3;
   obj.onChangeFlags = callback4;
   obj.onChangeRoleIds = callback5;
-  obj.children = jsx(channel(16490), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
-  return jsx(navigation(7495).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
+  obj.children = jsx(channel(16537), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
+  return jsx(navigation(7636).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
 }
 ({ InviteModalScenes: closure_9, Permissions: closure_10 } = ME);
 _createForOfIteratorHelperLoose = {};
@@ -177,5 +177,5 @@ export default function InviteSettingsModal() {
     obj[outer2_9.ADVANCED] = obj;
     return obj;
   })(), []);
-  return jsx(require(5519) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
+  return jsx(require(5517) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
 };

@@ -1,9 +1,9 @@
-// Module ID: 13866
-// Function ID: 106141
+// Module ID: 13917
+// Function ID: 106465
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 57, 31, 27, 4812, 1838, 653, 4940, 33, 4130, 1273, 689, 5052, 4938, 566, 4543, 1212, 4126, 5515, 4814, 5504, 13867, 8214, 4470, 4561, 8970, 13868, 13871, 4939, 10001, 3827, 1920, 4660, 9670, 13873, 2748, 1392, 3976, 4541, 7607, 5165, 5503, 3842, 2]
+// Dependencies: [5, 6, 7, 15, 17, 18, 57, 31, 27, 4812, 1838, 653, 4940, 33, 4130, 1273, 689, 5052, 4938, 566, 4543, 1212, 4126, 5513, 4814, 5502, 13918, 8258, 4470, 4561, 9009, 13919, 13922, 4939, 10033, 3827, 1920, 4660, 9704, 13924, 2748, 1392, 3976, 4541, 7696, 5165, 5501, 3842, 2]
 
-// Module 13866 (_isNativeReflectConstruct)
+// Module 13917 (_isNativeReflectConstruct)
 import _inherits from "_inherits";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -61,8 +61,8 @@ function Integration(integration) {
     }
     obj = { style: legacyClassComponentStyles.integrationContainer };
     obj1 = { style: legacyClassComponentStyles.integrationContainerInternal };
-    obj2 = { guild: integration.guild, size: integration(5515).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
-    const items4 = [callback4(importDefault(5515), obj2), , ];
+    obj2 = { guild: integration.guild, size: integration(5513).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
+    const items4 = [callback4(importDefault(5513), obj2), , ];
     const obj3 = { style: legacyClassComponentStyles.integrationTextRowContainer };
     const obj4 = { lineClamp: 1, variant: "text-sm/medium", children: integration.guild.name };
     const items5 = [callback4(integration(4126).Text, obj4), ];
@@ -71,7 +71,7 @@ function Integration(integration) {
     const tmp20 = View;
     const tmp21 = closure_20;
     const tmp22 = View;
-    const tmp26 = importDefault(5515);
+    const tmp26 = importDefault(5513);
     const tmp28 = closure_20;
     const tmp29 = View;
     const tmp31 = callback4;
@@ -127,7 +127,7 @@ function RowSwitch(label) {
   const merged = Object.assign(label, obj);
   obj = { label: label.label };
   const merged1 = Object.assign(merged);
-  return callback4(require(5504) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback4(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
 }
 ({ FRIEND_SYNC_PLATFORM_TYPES: closure_14, ACTIVITY_PLATFORM_TYPES: closure_15, PlatformTypes: closure_16, HelpdeskArticles: closure_17 } = ME);
 ({ jsx: closure_19, jsxs: closure_20 } = jsxProd);

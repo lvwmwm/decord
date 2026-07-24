@@ -1,10 +1,10 @@
-// Module ID: 11274
-// Function ID: 87662
+// Module ID: 11303
+// Function ID: 87902
 // Name: ArrowsUpDownIcon
-// Dependencies: [31, 33, 689, 3833, 11275, 2]
+// Dependencies: [31, 33, 689, 3833, 11304, 2]
 // Exports: ArrowsUpDownIcon
 
-// Module 11274 (ArrowsUpDownIcon)
+// Module 11303 (ArrowsUpDownIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ArrowsUpDownIcon = function ArrowsUpDownIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11275) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11304) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11275) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11304) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

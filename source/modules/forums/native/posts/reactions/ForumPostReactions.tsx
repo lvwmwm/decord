@@ -1,10 +1,10 @@
-// Module ID: 10430
-// Function ID: 80348
+// Module ID: 10459
+// Function ID: 80540
 // Name: MaxForumPostReactions
-// Dependencies: [31, 27, 33, 4130, 10350, 9137, 10338, 2]
+// Dependencies: [31, 27, 33, 4130, 10379, 9173, 10367, 2]
 // Exports: ForumPostActionBarReactions, MaxForumPostReactions, MostCommonForumPostReaction
 
-// Module 10430 (MaxForumPostReactions)
+// Module 10459 (MaxForumPostReactions)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,12 +29,12 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
   ({ parentChannel, firstMessage, containerWidth, containerStyle } = thread);
   const tmp = callback2();
   const dependencyMap = tmp;
-  const disableReactionCreates = reactionContainerStyle(10350)(thread).disableReactionCreates;
+  const disableReactionCreates = reactionContainerStyle(10379)(thread).disableReactionCreates;
   let num = 28;
   if (disableReactionCreates) {
     num = 0;
   }
-  let obj = thread(9137);
+  let obj = thread(9173);
   obj = { containerWidth: containerWidth - num, reactionEmojiWidth: 46, digitWidth: 7.5, message: firstMessage, parentChannel };
   const maxPossibleForumPostReactions = obj.useMaxPossibleForumPostReactions(obj);
   ({ reactions, additionalReactionCount } = maxPossibleForumPostReactions);
@@ -57,13 +57,13 @@ export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
     let tmp6 = additionalReactionCount > 0;
     if (tmp6) {
       const obj1 = { count: additionalReactionCount, containerStyle: reactionContainerStyle, threadId: thread.id };
-      tmp6 = callback(thread(10338).AdditionalReactionCount, obj1);
+      tmp6 = callback(thread(10367).AdditionalReactionCount, obj1);
     }
     items1[1] = tmp6;
     let tmp10 = !disableReactionCreates;
     if (tmp10) {
       const obj2 = { containerStyle: reactionContainerStyle, threadId: thread.id };
-      tmp10 = callback(thread(10338).AddReactionButton, obj2);
+      tmp10 = callback(thread(10367).AddReactionButton, obj2);
     }
     items1[2] = tmp10;
     obj.children = items1;
@@ -86,8 +86,8 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
   ({ parentChannel, firstMessage, containerStyle } = thread);
   const tmp = callback2();
   const dependencyMap = tmp;
-  const disableReactionCreates = reactionContainerStyle(10350)(thread).disableReactionCreates;
-  let obj = thread(9137);
+  const disableReactionCreates = reactionContainerStyle(10379)(thread).disableReactionCreates;
+  let obj = thread(9173);
   obj = { message: firstMessage, parentChannel, sorted: false };
   let num = 2;
   if (disableReactionCreates) {
@@ -118,7 +118,7 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
       const items2 = [tmp.actionBarReaction, reactionContainerStyle];
       obj1.containerStyle = items2;
       obj1.threadId = thread.id;
-      tmp6 = callback(thread(10338).AdditionalReactionCount, obj1);
+      tmp6 = callback(thread(10367).AdditionalReactionCount, obj1);
     }
     items1[1] = tmp6;
     let tmp10 = !disableReactionCreates;
@@ -127,7 +127,7 @@ export const ForumPostActionBarReactions = function ForumPostActionBarReactions(
       const items3 = [tmp.actionBarReaction, reactionContainerStyle];
       obj2.containerStyle = items3;
       obj2.threadId = thread.id;
-      tmp10 = callback(thread(10338).AddReactionButton, obj2);
+      tmp10 = callback(thread(10367).AddReactionButton, obj2);
     }
     items1[2] = tmp10;
     obj.children = items1;
@@ -148,14 +148,14 @@ export const MostCommonForumPostReaction = function MostCommonForumPostReaction(
   thread = thread.thread;
   ({ parentChannel, firstMessage, locationAnalyticsObject } = thread);
   const tmp = callback2();
-  ({ disableReactionCreates, disableReactionUpdates } = importDefault(10350)(thread));
-  let obj = require(9137) /* sortForumPostReactionsByPopularityDesc */;
+  ({ disableReactionCreates, disableReactionUpdates } = importDefault(10379)(thread));
+  let obj = require(9173) /* sortForumPostReactionsByPopularityDesc */;
   const first = obj.useSomeForumPostReactions({ parentChannel, message: firstMessage }).reactions[0];
   if (null != first) {
     if (!disableReactionUpdates) {
       if (!disableReactionCreates) {
         obj = { containerStyle: tmp.mostCommonContainer, thread, reaction: first, locationAnalyticsObject, animateCount: false };
-        let tmp5 = callback(require(10338) /* BurstReactionButton */.ForumPostReactionButton, obj);
+        let tmp5 = callback(require(10367) /* BurstReactionButton */.ForumPostReactionButton, obj);
       } else {
         tmp5 = null;
       }

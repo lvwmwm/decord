@@ -1,10 +1,10 @@
-// Module ID: 9338
-// Function ID: 72971
+// Module ID: 9374
+// Function ID: 73180
 // Name: DoubleTapReminderContent
-// Dependencies: [31, 1345, 33, 4130, 689, 4126, 1212, 3946, 1334, 3803, 7656, 3831, 9339, 2]
+// Dependencies: [31, 1345, 33, 4130, 689, 4126, 1212, 3946, 1334, 3803, 7745, 3831, 9375, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 9338 (DoubleTapReminderContent)
+// Module 9374 (DoubleTapReminderContent)
 import "result";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
@@ -43,11 +43,11 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
     const DoubleTapReactionEmoji = _require(3803).DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
     const disableDoubleTap = setting.disableDoubleTap;
-    const result = _require(7656).disambiguatedEmojiFromSettingsValue(setting);
+    const result = _require(7745).disambiguatedEmojiFromSettingsValue(setting);
     let areEmojisEqualResult = !(null != disableDoubleTap && disableDoubleTap) && null != result;
     if (areEmojisEqualResult) {
-      areEmojisEqualResult = _require(7656).areEmojisEqual(result, emoji);
-      const obj3 = _require(7656);
+      areEmojisEqualResult = _require(7745).areEmojisEqual(result, emoji);
+      const obj3 = _require(7745);
     }
     if (areEmojisEqualResult) {
       obj = {
@@ -66,7 +66,7 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
       const result1 = _require(3946).UNSAFE_markDismissibleContentAsDismissed(_require(1334).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj);
       const obj6 = _require(3946);
     }
-    const obj2 = _require(7656);
+    const obj2 = _require(7745);
     const tmp5 = null != disableDoubleTap && disableDoubleTap;
   }
 };

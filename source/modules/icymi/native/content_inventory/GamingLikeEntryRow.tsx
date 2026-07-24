@@ -1,10 +1,10 @@
-// Module ID: 15228
-// Function ID: 116157
+// Module ID: 15275
+// Function ID: 116479
 // Name: items
-// Dependencies: [31, 27, 1849, 33, 11931, 7815, 11936, 15179, 689, 566, 4361, 8516, 5470, 7813, 8588, 8600, 7810, 15229, 1934, 8321, 4337, 15233, 1212, 15235, 4126, 3969, 6884, 21, 666, 4660, 5085, 15236, 2]
+// Dependencies: [31, 27, 1849, 33, 11957, 7906, 11962, 15226, 689, 566, 4361, 8561, 5468, 7904, 8631, 8642, 7901, 15276, 1934, 8365, 4337, 15280, 1212, 15282, 4126, 3969, 6883, 21, 666, 4660, 5085, 15283, 2]
 // Exports: default
 
-// Module 15228 (items)
+// Module 15275 (items)
 import ContentInventoryReplyRow from "ContentInventoryReplyRow";
 import { View } from "DISCORD_EPOCH";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ let items = [obj, , , , ];
 obj = {
   Badge: require("ActiveTimestamp").StreakBadge,
   predicate(entry) {
-    const streakCount = require(7815) /* calculateTimestampDurations */.getStreakCount(entry);
+    const streakCount = require(7906) /* calculateTimestampDurations */.getStreakCount(entry);
     let num = 0;
     if (null != streakCount) {
       num = streakCount;
@@ -33,10 +33,10 @@ items[1] = obj;
 obj = {
   Badge: require("ActiveTimestamp").TrendingBadge,
   predicate(entry) {
-    const trendingType = require(7815) /* calculateTimestampDurations */.getTrendingType(entry);
+    const trendingType = require(7906) /* calculateTimestampDurations */.getTrendingType(entry);
     let tmp2 = null != trendingType;
     if (tmp2) {
-      tmp2 = trendingType !== require(11936) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
+      tmp2 = trendingType !== require(11962) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
     }
     return tmp2;
   }
@@ -57,7 +57,7 @@ let obj1 = {
 items[4] = {
   Badge: require("ActiveTimestamp").MarathonBadge,
   predicate(entry) {
-    return true === require(7815) /* calculateTimestampDurations */.isEntryMarathon(entry);
+    return true === require(7906) /* calculateTimestampDurations */.isEntryMarathon(entry);
   }
 };
 let closure_11 = createICYMIStyles.createICYMIStyles((arg0) => {
@@ -79,7 +79,7 @@ let closure_11 = createICYMIStyles.createICYMIStyles((arg0) => {
 let obj2 = {
   Badge: require("ActiveTimestamp").MarathonBadge,
   predicate(entry) {
-    return true === require(7815) /* calculateTimestampDurations */.isEntryMarathon(entry);
+    return true === require(7906) /* calculateTimestampDurations */.isEntryMarathon(entry);
   }
 };
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/content_inventory/GamingLikeEntryRow.tsx");

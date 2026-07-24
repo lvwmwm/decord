@@ -1,10 +1,10 @@
-// Module ID: 12501
-// Function ID: 96848
+// Module ID: 12554
+// Function ID: 97172
 // Name: PremiumText
 // Dependencies: [31, 27, 1851, 33, 4130, 3974, 689, 3776, 1212, 1273, 2]
 // Exports: default
 
-// Module 12501 (PremiumText)
+// Module 12554 (PremiumText)
 import "result";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -16,6 +16,7 @@ let closure_4;
 let closure_5;
 let closure_6;
 let closure_7;
+let closure_8;
 const require = arg1;
 function PremiumText(basePlanId) {
   let isCurrentPlan;
@@ -58,25 +59,24 @@ function PremiumText(basePlanId) {
     }
     items[1] = tmp22;
     obj.children = items;
-    return closure_7(View, obj);
+    return closure_8(View, obj);
   } else {
     let priceString;
     if (null != product) {
       priceString = product.priceString;
     }
-    let str3 = "$...";
-    if (null != priceString) {
-      str3 = priceString;
+    if (null == priceString) {
+      priceString = closure_5;
     }
     if (intervalType !== constants.MONTH) {
       const intl3 = require(1212) /* getSystemLocale */.intl;
       const formatToPlainString2 = intl3.formatToPlainString;
       if (isGift) {
-        const obj4 = { price: str3 };
+        const obj4 = { price: priceString };
         let formatToPlainString2Result = formatToPlainString2(tmp28(1212).t.rm53bV, obj4);
       } else {
         const t = require(1212) /* getSystemLocale */.t;
-        const obj5 = { price: str3 };
+        const obj5 = { price: priceString };
         formatToPlainString2Result = formatToPlainString2(isCurrentPlan ? t.dFbQCa : t["rS8FA+"], obj5);
       }
       tmp28 = require;
@@ -87,18 +87,18 @@ function PremiumText(basePlanId) {
     const formatToPlainString = intl.formatToPlainString;
     if (isGift) {
       FIjgMp = FIjgMp(tmp10[obj6]).t.FIjgMp;
-      obj6 = { price: str3 };
+      obj6 = { price: priceString };
       let formatToPlainStringResult = formatToPlainString(FIjgMp, obj6);
     } else {
       const t2 = require(dependencyMap[obj6]).t;
-      const obj7 = { price: str3 };
+      const obj7 = { price: priceString };
       formatToPlainStringResult = formatToPlainString(isCurrentPlan ? t2.V6iX43 : t2.AbOLNu, obj7);
     }
     tmp10 = dependencyMap;
   }
 }
-({ PREMIUM_YEARLY_DISCOUNT_PERCENT: closure_4, SubscriptionIntervalTypes: closure_5 } = GuildFeatures);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ PREMIUM_YEARLY_DISCOUNT_PERCENT: closure_4, PRICE_PLACEHOLDER: closure_5, SubscriptionIntervalTypes: closure_6 } = GuildFeatures);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: null, borderRadius: 2, marginLeft: 4, paddingHorizontal: 2 };
 _createForOfIteratorHelperLoose.borderColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.3);

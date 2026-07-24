@@ -1,9 +1,9 @@
-// Module ID: 11583
-// Function ID: 90059
+// Module ID: 11610
+// Function ID: 90297
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11583 (metadata)
+// Module 11610 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/powerups/badge-packs/group-static.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/8dd1f75ba9ef2e0587c9963de0964edc7577f98385e85372e9dc600d353dd3b1.png";

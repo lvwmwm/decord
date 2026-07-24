@@ -1,10 +1,10 @@
-// Module ID: 10836
-// Function ID: 84113
+// Module ID: 10865
+// Function ID: 84305
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [1348, 1838, 3758, 4146, 4155, 653, 10517, 566, 1212, 2]
+// Dependencies: [1348, 1838, 3758, 4146, 4155, 653, 10546, 566, 1212, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 10836 (getEmbeddedActivityLaunchability)
+// Module 10865 (getEmbeddedActivityLaunchability)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";
@@ -60,7 +60,7 @@ function getEmbeddedActivityLaunchability(arg0) {
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }
-    obj2 = require(10517) /* isActivitiesAllowed */;
+    obj2 = require(10546) /* isActivitiesAllowed */;
   } else {
     return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL;
   }

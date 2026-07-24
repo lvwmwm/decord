@@ -1,10 +1,10 @@
-// Module ID: 7413
-// Function ID: 59603
+// Module ID: 7415
+// Function ID: 59638
 // Name: SubscriptionRenewalMutationsNotice
 // Dependencies: [31, 27, 3777, 33, 4130, 689, 4973, 1273, 1212, 3776, 2]
 // Exports: default
 
-// Module 7413 (SubscriptionRenewalMutationsNotice)
+// Module 7415 (SubscriptionRenewalMutationsNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import { isNoneSubscription } from "_isNativeReflectConstruct";

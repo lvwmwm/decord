@@ -1,5 +1,5 @@
 // Module ID: 1860
-// Function ID: 20514
+// Function ID: 20515
 // Name: wrapHue
 // Dependencies: [57, 1861, 1862, 666, 665, 1863, 2]
 // Exports: applyFlywheelViewingFallback, buildGummyColors, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, parseServerDisplayNameStyles, rebuildGummySourceColor

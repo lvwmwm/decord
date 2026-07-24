@@ -1,5 +1,5 @@
 // Module ID: 1010
-// Function ID: 11017
+// Function ID: 11018
 // Name: triggerHandlers
 // Dependencies: [1011, 794, 1012, 1027, 1030, 1031, 1022]
 

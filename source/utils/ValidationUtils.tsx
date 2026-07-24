@@ -1,9 +1,9 @@
-// Module ID: 8342
-// Function ID: 66100
+// Module ID: 8386
+// Function ID: 66328
 // Name: set
 // Dependencies: [2]
 
-// Module 8342 (set)
+// Module 8386 (set)
 const re0 = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i;
 const re1 = /^((https:\/\/)?(discord\.gg\/)|(discord\.com\/)(invite\/)?)?[A-Za-z0-9]{8,8}$/;
 const re2 = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;

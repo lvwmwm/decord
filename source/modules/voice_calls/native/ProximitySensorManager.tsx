@@ -1,9 +1,9 @@
-// Module ID: 16159
-// Function ID: 125333
+// Module ID: 16206
+// Function ID: 125657
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 27, 1347, 4149, 4202, 8837, 477, 16160, 8838, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 27, 1347, 4149, 4202, 8876, 477, 16207, 8877, 5078, 2]
 
-// Module 16159 (_isNativeReflectConstruct)
+// Module 16206 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -31,7 +31,7 @@ function handleChange() {
   currentRouteType = currentRouteType.getCurrentRouteType();
   const tmp3 = null != currentEmbeddedActivity.getCurrentEmbeddedActivity();
   const isConnectedResult = connected.isConnected();
-  let tmp6 = currentRouteType === require(8838) /* RouteTypes */.RouteTypes.RECEIVER && isConnectedResult;
+  let tmp6 = currentRouteType === require(8877) /* RouteTypes */.RouteTypes.RECEIVER && isConnectedResult;
   if (tmp6) {
     let isIOSResult = require(477) /* set */.isIOS();
     if (!isIOSResult) {

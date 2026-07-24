@@ -1,9 +1,9 @@
-// Module ID: 10784
-// Function ID: 83757
+// Module ID: 10813
+// Function ID: 83949
 // Name: StreamPreviewTile
-// Dependencies: [31, 27, 4149, 1849, 10210, 4148, 33, 4130, 3974, 689, 5464, 1557, 566, 4323, 8492, 10564, 10754, 10590, 10597, 10785, 10790, 10791, 9034, 9055, 10792, 1273, 10530, 3991, 4131, 10793, 2]
+// Dependencies: [31, 27, 4149, 1849, 10240, 4148, 33, 4130, 3974, 689, 5462, 1557, 566, 4323, 8537, 10593, 10783, 10619, 10626, 10814, 10819, 10820, 9073, 9094, 10821, 1273, 10559, 3991, 4131, 10822, 2]
 
-// Module 10784 (StreamPreviewTile)
+// Module 10813 (StreamPreviewTile)
 import importAllResult from "result";
 import get_ActivityIndicator from "module_3991";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -49,17 +49,17 @@ class StreamPreviewTile {
 function ParticipantIcon(participant) {
   participant = participant.participant;
   if (participant.type === constants.STREAM) {
-    let tmp5 = importDefault(10790);
+    let tmp5 = importDefault(10819);
   } else if (participant.type === constants.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp5 = importDefault(10791);
+      tmp5 = importDefault(10820);
     } else if (constants2.XBOX === voicePlatform) {
-      tmp5 = importDefault(9034);
+      tmp5 = importDefault(9073);
     } else if (constants2.PLAYSTATION === voicePlatform) {
-      tmp5 = importDefault(9055);
+      tmp5 = importDefault(9094);
     } else if (constants2.QUEST === voicePlatform) {
-      tmp5 = importDefault(10792);
+      tmp5 = importDefault(10821);
     }
   }
   let tmp16 = null;

@@ -1,10 +1,10 @@
-// Module ID: 11649
-// Function ID: 90384
+// Module ID: 11676
+// Function ID: 90622
 // Name: defaultCountFormatter
-// Dependencies: [31, 27, 1921, 33, 3991, 4130, 689, 4542, 9423, 11650, 5217, 477, 2]
+// Dependencies: [31, 27, 1921, 33, 3991, 4130, 689, 4542, 9459, 11677, 5217, 477, 2]
 // Exports: Tabs
 
-// Module 11649 (defaultCountFormatter)
+// Module 11676 (defaultCountFormatter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

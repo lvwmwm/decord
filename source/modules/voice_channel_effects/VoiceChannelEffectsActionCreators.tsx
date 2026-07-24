@@ -1,7 +1,7 @@
 // Module ID: 5741
-// Function ID: 49364
+// Function ID: 49375
 // Name: _getCancellationSlowConnection
-// Dependencies: [4991, 1906, 5742, 5743, 653, 4579, 22, 5744, 507, 5767, 5484, 4585, 2]
+// Dependencies: [4991, 1906, 5742, 5743, 653, 4579, 22, 5744, 507, 5767, 5482, 4585, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect
 
 // Module 5741 (_getCancellationSlowConnection)
@@ -48,7 +48,7 @@ export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCu
 
   });
   const postResult = HTTP.post(obj);
-  const items = [importDefault(5484).CHANNEL_CALL];
+  const items = [importDefault(5482).CHANNEL_CALL];
   importDefault(5767)(items, arg2, sound, abortController(4585).AnalyticsSoundType.ENTRY);
 };
 export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundboardEffect(id, emojiId, arg2, arg3, arg4) {

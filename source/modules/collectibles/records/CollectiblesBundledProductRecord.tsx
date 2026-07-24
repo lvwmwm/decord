@@ -1,5 +1,5 @@
 // Module ID: 6777
-// Function ID: 53374
+// Function ID: 53396
 // Name: CollectiblesBundledProductRecord
 // Dependencies: [6, 7, 4171, 2]
 

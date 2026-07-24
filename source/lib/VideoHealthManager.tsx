@@ -1,9 +1,9 @@
-// Module ID: 12751
-// Function ID: 99402
+// Module ID: 12802
+// Function ID: 99723
 // Name: VideoHealthManager
-// Dependencies: [6, 7, 653, 3, 12752, 4206, 664, 4368, 2]
+// Dependencies: [6, 7, 653, 3, 12803, 4206, 664, 4368, 2]
 
-// Module 12751 (VideoHealthManager)
+// Module 12802 (VideoHealthManager)
 import set from "set";
 import isTablet from "isTablet";
 import { VideoToggleState } from "ME";

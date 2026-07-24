@@ -1,10 +1,10 @@
-// Module ID: 8471
-// Function ID: 67568
+// Module ID: 8515
+// Function ID: 67796
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1352, 1348, 1838, 1354, 653, 8411, 44, 7490, 8344, 2]
+// Dependencies: [5, 1352, 1348, 1838, 1354, 653, 8455, 44, 7570, 8388, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8471 (createStageChannelForEvent)
+// Module 8515 (createStageChannelForEvent)
 import ME from "ME";
 import { createChannelRecordFromServer as closure_4 } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

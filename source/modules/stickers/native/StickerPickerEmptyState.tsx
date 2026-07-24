@@ -1,10 +1,10 @@
-// Module ID: 9629
-// Function ID: 74978
+// Module ID: 9665
+// Function ID: 75189
 // Name: EmptyStateSticker
-// Dependencies: [57, 31, 27, 5035, 3806, 653, 1851, 33, 4130, 9600, 9615, 5464, 5484, 566, 675, 4126, 1212, 4660, 4099, 4100, 4543, 5085, 7997, 9623, 2]
+// Dependencies: [57, 31, 27, 5035, 3806, 653, 1851, 33, 4130, 9636, 9651, 5462, 5482, 566, 675, 4126, 1212, 4660, 4099, 4100, 4543, 5085, 8057, 9659, 2]
 // Exports: default
 
-// Module 9629 (EmptyStateSticker)
+// Module 9665 (EmptyStateSticker)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -22,14 +22,14 @@ let closure_9;
 let require = arg1;
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
-  const animated = require(9600) /* _createForOfIteratorHelperLoose */.useShouldAnimateSticker(sticker.isFocused);
+  const animated = require(9636) /* _createForOfIteratorHelperLoose */.useShouldAnimateSticker(sticker.isFocused);
   let id;
-  const obj = require(9600) /* _createForOfIteratorHelperLoose */;
+  const obj = require(9636) /* _createForOfIteratorHelperLoose */;
   const tmp2 = closure_11;
   if (null != sticker) {
     id = sticker.id;
   }
-  return tmp2(importDefault(9615), { sticker, size: 60, animated }, id);
+  return tmp2(importDefault(9651), { sticker, size: 60, animated }, id);
 }
 ({ AnalyticEvents: closure_8, AnalyticsSections: closure_9 } = ME);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -39,9 +39,9 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/sti
 export default function _default() {
   let tmp = callback4();
   const require = tmp;
-  let obj = require(9600) /* _createForOfIteratorHelperLoose */;
+  let obj = require(9636) /* _createForOfIteratorHelperLoose */;
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  analyticsLocations = analyticsLocations(5464)(analyticsLocations(5484).EMPTY_STATE).analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)(analyticsLocations(5482).EMPTY_STATE).analyticsLocations;
   let obj1 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => {
@@ -67,7 +67,7 @@ export default function _default() {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.FnNud4);
   items2[1] = callback2(require(4126) /* Text */.Text, obj1);
-  const tmp3 = analyticsLocations(5464);
+  const tmp3 = analyticsLocations(5462);
   items2[2] = callback2(View, {
     style: tmp.stickersRow,
     children: stateFromStoresArray.map((id) => {
@@ -115,7 +115,7 @@ export default function _default() {
       return tmp(tmp(4660).PressableOpacity, obj, id);
     })
   };
-  obj5.source = analyticsLocations(7997);
+  obj5.source = analyticsLocations(8057);
   obj5.style = tmp.nitroWheel;
   obj5.resizeMode = "contain";
   obj4.icon = callback2(analyticsLocations(5085), obj5);
@@ -124,7 +124,7 @@ export default function _default() {
   obj4.variant = "active";
   obj4.size = "sm";
   obj4.onPress = function onPress() {
-    return analyticsLocations(9623)({ section: outer1_9.EXPRESSION_PICKER });
+    return analyticsLocations(9659)({ section: outer1_9.EXPRESSION_PICKER });
   };
   obj3.children = callback2(require(4543) /* Button */.Button, obj4);
   items2[3] = callback2(View, obj3);

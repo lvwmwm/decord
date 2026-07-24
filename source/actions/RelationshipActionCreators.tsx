@@ -1,9 +1,9 @@
-// Module ID: 8923
-// Function ID: 70384
+// Module ID: 8962
+// Function ID: 70599
 // Name: showAlert
-// Dependencies: [57, 1849, 653, 8924, 5133, 4470, 5050, 1212, 8925, 8926, 8927, 507, 3969, 3976, 686, 8928, 7488, 2]
+// Dependencies: [57, 1849, 653, 8963, 5133, 4470, 5050, 1212, 8964, 8965, 8966, 507, 3969, 3976, 686, 8967, 7568, 2]
 
-// Module 8923 (showAlert)
+// Module 8962 (showAlert)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -62,7 +62,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
         if (num !== constants.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
           if (arg1 === obj.SHOW_ALWAYS) {
             if (null != substr) {
-              obj = require(8927) /* validateDiscordTag */;
+              obj = require(8966) /* validateDiscordTag */;
               if (!num) {
                 num = 0;
               }
@@ -81,7 +81,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
           }
         }
       }
-      obj5 = require(8926) /* isLimitedAccessErrorCode */;
+      obj5 = require(8965) /* isLimitedAccessErrorCode */;
     }
   }
   throw arg0;
@@ -221,7 +221,7 @@ obj = {
     }, () => outer1_1(outer1_3[14]).dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" }));
   },
   confirmClearPendingRelationships(arg0) {
-    importDefault(8928)(arg0);
+    importDefault(8967)(arg0);
   },
   clearPendingRelationships() {
     const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;

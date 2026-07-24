@@ -1,5 +1,5 @@
 // Module ID: 5192
-// Function ID: 45065
+// Function ID: 45070
 // Name: BottomSheet
 // Dependencies: [57, 31, 27, 33, 1582, 5193, 5194, 5217, 5190, 5206, 44, 5200, 5310, 5312, 5315, 5317, 5321, 5324, 5328]
 
@@ -517,7 +517,7 @@ class BottomSheet {
     workletCallback = obj39.useWorkletCallback(pnpm_BottomSheetTsx9, items11);
     pnpm_BottomSheetTsx9 = workletCallback;
     obj41 = require("cancelAnimation");
-    f45080 = obj41.useWorkletCallback((() => {
+    f45085 = obj41.useWorkletCallback((() => {
       function animateToPositionCompleted(arg0) {
         if (arg0) {
           if (outer1_68.value === animationConfigs(DEFAULT_ANIMATE_ON_MOUNT[8]).ANIMATION_SOURCE.MOUNT) {

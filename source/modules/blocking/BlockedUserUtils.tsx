@@ -1,10 +1,10 @@
-// Module ID: 14850
-// Function ID: 113299
+// Module ID: 14897
+// Function ID: 113620
 // Name: voiceStateHasBlockedUsers
 // Dependencies: [3767, 1327, 22, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds
 
-// Module 14850 (voiceStateHasBlockedUsers)
+// Module 14897 (voiceStateHasBlockedUsers)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

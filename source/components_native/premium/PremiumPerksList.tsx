@@ -1,10 +1,10 @@
-// Module ID: 14661
-// Function ID: 111746
+// Module ID: 14708
+// Function ID: 112067
 // Name: PremiumPerksList
 // Dependencies: [31, 27, 33, 4130, 689, 4126, 2]
 // Exports: default
 
-// Module 14661 (PremiumPerksList)
+// Module 14708 (PremiumPerksList)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

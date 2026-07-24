@@ -1,5 +1,5 @@
 // Module ID: 1393
-// Function ID: 16639
+// Function ID: 16640
 // Name: DECORATION_TO_AVATAR_RATIO
 // Dependencies: [1394, 2]
 

@@ -1,5 +1,5 @@
 // Module ID: 1518
-// Function ID: 17426
+// Function ID: 17427
 // Name: useNavigationHelpers
 // Dependencies: [31, 1460, 1481, 1484, 1461]
 // Exports: default

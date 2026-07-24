@@ -1,5 +1,5 @@
 // Module ID: 1585
-// Function ID: 17701
+// Function ID: 17702
 // Name: isJest
 // Dependencies: [31, 27]
 // Exports: isAndroid, isFabric, isIOS, isMacOS, isReact19, isWeb, isWindowAvailable, shouldBeUseWeb

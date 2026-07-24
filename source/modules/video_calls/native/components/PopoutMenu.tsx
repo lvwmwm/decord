@@ -1,9 +1,9 @@
-// Module ID: 10558
-// Function ID: 82453
+// Module ID: 10587
+// Function ID: 82645
 // Name: PopoutMenuRow
-// Dependencies: [57, 31, 27, 33, 4130, 689, 5158, 1273, 7495, 1450, 1557, 22, 3991, 4131, 4101, 5217, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 5158, 1273, 7636, 1450, 1557, 22, 3991, 4131, 4101, 5217, 2]
 
-// Module 10558 (PopoutMenuRow)
+// Module 10587 (PopoutMenuRow)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -37,7 +37,7 @@ function PopoutMenuRow(onClose) {
   }
   obj.leading = tmp5;
   obj = { style: tmp.popoutMenuRowLabel, text: onClose.text };
-  obj.label = callback(onClick(7495).FormLabel, obj);
+  obj.label = callback(onClick(7636).FormLabel, obj);
   obj.style = tmp.popoutMenuRow;
   obj.onPress = callback;
   return callback(onClose(5158), obj);

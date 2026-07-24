@@ -1,5 +1,5 @@
 // Module ID: 5061
-// Function ID: 43852
+// Function ID: 43857
 // Name: replaceFlagIconAndFlagColor
 // Dependencies: [2]
 // Exports: default

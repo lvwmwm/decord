@@ -1,5 +1,5 @@
 // Module ID: 5129
-// Function ID: 44474
+// Function ID: 44479
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [4991, 3771, 5130, 1327, 5131, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer

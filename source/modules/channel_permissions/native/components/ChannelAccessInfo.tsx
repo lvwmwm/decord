@@ -1,10 +1,10 @@
-// Module ID: 11504
-// Function ID: 89577
+// Module ID: 11534
+// Function ID: 89822
 // Name: ChannelAccessInfo
-// Dependencies: [31, 27, 1391, 1917, 1910, 33, 4130, 689, 1212, 566, 8413, 1327, 4126, 4660, 10878, 1273, 11503, 4646, 8424, 8422, 10681, 2]
+// Dependencies: [31, 27, 1391, 1917, 1910, 33, 4130, 689, 1212, 566, 8457, 1327, 4126, 4660, 10905, 1273, 11533, 4646, 8468, 8466, 10710, 2]
 // Exports: default
 
-// Module 11504 (ChannelAccessInfo)
+// Module 11534 (ChannelAccessInfo)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { isGuildOwner } from "isGuildOwner";
@@ -84,7 +84,7 @@ export default function ChannelAccessInfo(guild) {
     id = guild.id;
   }
   memberIds = memberIds.getMemberIds(id);
-  let obj1 = guild(8413);
+  let obj1 = guild(8457);
   const existingMembers = obj1.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
   let tmp6 = 0 === stateFromStoresArray.length;
   if (tmp6) {
@@ -126,16 +126,16 @@ export default function ChannelAccessInfo(guild) {
   } else {
     obj7 = {};
     const MEMBERS = constants.MEMBERS;
-    channel(11503);
+    channel(11533);
     const items5 = [renderCounts(MEMBERS, existingMembers.length, undefined, guild(4646).GroupIcon), ];
     const ROLES = constants.ROLES;
-    channel(8424);
-    items5[1] = renderCounts(ROLES, stateFromStoresArray.length, undefined, guild(8422).ShieldUserIcon);
+    channel(8468);
+    items5[1] = renderCounts(ROLES, stateFromStoresArray.length, undefined, guild(8466).ShieldUserIcon);
     obj7.children = items5;
   }
   obj1.children = callback2(closure_10, obj7);
   const items6 = [callback(View, obj1), ];
-  const obj8 = { source: channel(10681), size: guild(1273).Icon.Sizes.SMALL };
+  const obj8 = { source: channel(10710), size: guild(1273).Icon.Sizes.SMALL };
   items6[1] = callback(guild(1273).Icon, obj8);
   obj.children = items6;
   items2[1] = callback2(guild(4660).PressableOpacity, obj);

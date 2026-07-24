@@ -1,10 +1,10 @@
-// Module ID: 12503
-// Function ID: 96859
+// Module ID: 12556
+// Function ID: 97183
 // Name: GiftingBadgeIntro
-// Dependencies: [57, 31, 27, 8268, 33, 4130, 689, 1324, 5464, 5484, 566, 8265, 4126, 1212, 2294, 9686, 4543, 8773, 9679, 12504, 12506, 8525, 2]
+// Dependencies: [57, 31, 27, 8312, 33, 4130, 689, 1324, 5462, 5482, 566, 8309, 4126, 1212, 2294, 9720, 4543, 8812, 9713, 12557, 12559, 8570, 2]
 // Exports: default
 
-// Module 12503 (GiftingBadgeIntro)
+// Module 12556 (GiftingBadgeIntro)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -149,12 +149,12 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
   const tmp2 = analyticsLocations(currentTier.useState(false), 2);
   let first = tmp2[0];
   const dependencyMap = tmp2[1];
-  analyticsLocations = importDefault(5464)(importDefault(5484).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  analyticsLocations = importDefault(5462)(importDefault(5482).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
   let obj = analyticsLocation(566);
   let items = [_isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const obj = {};
-    const singleRequirementProgress = outer1_7.getSingleRequirementProgress(analyticsLocation(8265).BadgeId.GIFTING);
+    const singleRequirementProgress = outer1_7.getSingleRequirementProgress(analyticsLocation(8309).BadgeId.GIFTING);
     let current;
     if (null != singleRequirementProgress) {
       current = singleRequirementProgress.current;
@@ -164,10 +164,10 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       num = current;
     }
     obj.badgeProgress = num;
-    obj.currentTier = outer1_7.getCurrentTier(analyticsLocation(8265).BadgeId.GIFTING);
-    obj.nextTier = outer1_7.getNextTier(analyticsLocation(8265).BadgeId.GIFTING);
-    obj.giftsRemaining = outer1_7.getRemainingToNextTier(analyticsLocation(8265).BadgeId.GIFTING);
-    const badgeById = outer1_7.getBadgeById(analyticsLocation(8265).BadgeId.GIFTING);
+    obj.currentTier = outer1_7.getCurrentTier(analyticsLocation(8309).BadgeId.GIFTING);
+    obj.nextTier = outer1_7.getNextTier(analyticsLocation(8309).BadgeId.GIFTING);
+    obj.giftsRemaining = outer1_7.getRemainingToNextTier(analyticsLocation(8309).BadgeId.GIFTING);
+    const badgeById = outer1_7.getBadgeById(analyticsLocation(8309).BadgeId.GIFTING);
     let tiers;
     if (null != badgeById) {
       tiers = badgeById.tiers;
@@ -186,7 +186,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
   } else {
     let tmp49 = callback(currentTier);
     const tmp77 = callback(nextTier);
-    const giftingBadgeProgressPercent = analyticsLocation(12504).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    const giftingBadgeProgressPercent = analyticsLocation(12557).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
     if (null != nextTier) {
       const intl2 = analyticsLocation(1212).intl;
       obj = { count: tmp6 };
@@ -226,7 +226,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       const obj5 = { icon: currentTier.simple_icon_url, size: 36 };
       const obj6 = { margin: 4 };
       obj5.style = obj6;
-      tmp23 = callback2(importDefault(9686), obj5);
+      tmp23 = callback2(importDefault(9720), obj5);
     }
     let items1 = [tmp23, , ];
     const obj7 = { style: tmp.progressTitleText, variant: "text-md/medium", color: "text-strong", children: formatToPlainStringResult };
@@ -240,7 +240,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       const obj8 = { icon: nextTier.simple_icon_url, size: 36 };
       const obj9 = { margin: 4 };
       obj8.style = obj9;
-      tmp31 = callback2(importDefault(9686), obj8);
+      tmp31 = callback2(importDefault(9720), obj8);
     }
     items1[2] = tmp31;
     obj4.children = items1;
@@ -278,11 +278,11 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     const items5 = [callback3(closure_6, obj3), , , , ];
     const obj17 = { variant: "primary" };
     const obj18 = { size: "sm", color: importDefault(689).unsafe_rawColors.WHITE };
-    obj17.icon = callback2(analyticsLocation(8773).GiftIcon, obj18);
+    obj17.icon = callback2(analyticsLocation(8812).GiftIcon, obj18);
     const intl4 = analyticsLocation(1212).intl;
     obj17.text = intl4.string(importDefault(2294).DZnomS);
     obj17.onPress = function onPress() {
-      let obj = analyticsLocation(9679);
+      let obj = analyticsLocation(9713);
       obj = { analyticsLocation, analyticsLocations };
       obj.openGiftModal(obj);
     };
@@ -301,9 +301,9 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     obj21.children = intl5.string(importDefault(2294).WZ4cXA);
     const items6 = [callback2(analyticsLocation(4126).Text, obj21), ];
     if (first) {
-      let ChevronSmallDownIcon = tmp61(12506).ChevronSmallUpIcon;
+      let ChevronSmallDownIcon = tmp61(12559).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp61(8525).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp61(8570).ChevronSmallDownIcon;
     }
     const obj22 = { color: importDefault(689).colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = callback2(ChevronSmallDownIcon, obj22);
@@ -329,7 +329,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
               let tmp6 = null != key.simple_icon_url;
               if (tmp6) {
                 obj = { icon: key.simple_icon_url, size: 36 };
-                tmp6 = outer1_9(tmp(9686), obj);
+                tmp6 = outer1_9(tmp(9720), obj);
               }
               const items1 = [tmp6, ];
               obj = { style: tmp.badgeCopy };
@@ -364,5 +364,5 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     obj2.children = items5;
     return callback3(closure_6, obj2);
   }
-  const tmp4 = importDefault(5464);
+  const tmp4 = importDefault(5462);
 };

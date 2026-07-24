@@ -1,10 +1,10 @@
-// Module ID: 15607
-// Function ID: 120321
+// Module ID: 15654
+// Function ID: 120643
 // Name: useSound
-// Dependencies: [31, 1347, 10479, 4144, 1352, 4149, 1194, 1348, 1838, 4177, 10220, 4202, 1906, 4952, 4146, 4203, 653, 33, 566, 10246, 4314, 4194, 3748, 1327, 2]
+// Dependencies: [31, 1347, 10508, 4144, 1352, 4149, 1194, 1348, 1838, 4177, 10250, 4202, 1906, 4952, 4146, 4203, 653, 33, 566, 10276, 4314, 4194, 3748, 1327, 5629, 2]
 // Exports: default
 
-// Module 15607 (useSound)
+// Module 15654 (useSound)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { NO_ACTIVITIES } from "_createForOfIteratorHelperLoose";
@@ -355,7 +355,7 @@ function VoiceChannel() {
   return null;
 }
 function ActivitySounds() {
-  const items = [closure_15, _createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_9];
+  const items = [closure_15, _createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_9, closure_10];
   useSound(items, () => {
     const voiceChannelId = outer1_15.getVoiceChannelId();
     const channelId = outer1_15.getChannelId();
@@ -374,22 +374,33 @@ function ActivitySounds() {
     } else {
       embeddedActivitiesForChannel1 = outer1_4;
     }
-    obj = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel };
     obj3 = outer1_0(outer1_1[23]);
-    if (obj5.isNotNullish(embeddedActivityLocationChannelId)) {
+    if (obj4.isNotNullish(embeddedActivityLocationChannelId)) {
       let embeddedActivitiesForChannel2 = outer1_3.getEmbeddedActivitiesForChannel(embeddedActivityLocationChannelId);
     } else {
       embeddedActivitiesForChannel2 = outer1_4;
     }
-    obj.connectedChannelActivities = embeddedActivitiesForChannel2;
-    obj5 = outer1_0(outer1_1[23]);
+    obj4 = outer1_0(outer1_1[23]);
     let selfEmbeddedActivityForLocation = null;
-    if (obj6.isNotNullish(connectedActivityLocation)) {
+    if (obj5.isNotNullish(connectedActivityLocation)) {
       selfEmbeddedActivityForLocation = outer1_3.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
     }
-    obj.userConnectedActivity = selfEmbeddedActivityForLocation;
-    obj.voiceChannelActivities = embeddedActivitiesForChannel1;
-    obj.connectedFrame = outer1_5.getConnectedFrame();
+    const connectedFrame = outer1_5.getConnectedFrame();
+    obj = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, connectedFrame };
+    let channelId1;
+    if (null != connectedFrame) {
+      channelId1 = connectedFrame.channelId;
+    }
+    let result = null != channelId1;
+    if (result) {
+      let channelId2;
+      if (null != connectedFrame) {
+        channelId2 = connectedFrame.channelId;
+      }
+      result = outer1_0(outer1_1[24]).isVibegrationsChannelCandidate(outer1_10.getChannel(channelId2), "ActivitySounds");
+      const obj7 = outer1_0(outer1_1[24]);
+    }
+    obj.inVibegrationsChannel = result;
     return obj;
   }, (voiceChannelActivities) => {
     let channelActivities;
@@ -397,10 +408,11 @@ function ActivitySounds() {
     let connectedActivityLocation;
     let connectedChannelActivities;
     let connectedFrame;
+    let inVibegrationsChannel;
     let userConnectedActivity;
     let voiceChannelId;
     ({ connectedActivityLocation, currentUserId: closure_0, userConnectedActivity } = arg1);
-    ({ voiceChannelActivities, connectedFrame, voiceChannelId, channelActivities, connectedChannelActivities } = arg1);
+    ({ voiceChannelActivities, connectedFrame, voiceChannelId, channelActivities, connectedChannelActivities, inVibegrationsChannel } = arg1);
     const someResult = voiceChannelActivities.some((applicationId) => {
       applicationId = undefined;
       if (null != userConnectedActivity) {
@@ -538,16 +550,17 @@ function ActivitySounds() {
     }
     let tmp34 = str4;
     if (!tmp32) {
-      if (null != voiceChannelActivities.connectedFrame) {
-        if (tmp35) {
-          str4 = "activity_end";
+      if (null == voiceChannelActivities.connectedFrame) {
+        if (null != connectedFrame) {
+          let str8 = "activity_launch";
         }
-        let str8 = str4;
-        tmp35 = null != voiceChannelActivities.connectedFrame && null == connectedFrame;
-      } else {
-        str8 = "activity_launch";
+        tmp34 = str8;
       }
-      tmp34 = str8;
+      if (!tmp35) {
+        str4 = "activity_end";
+      }
+      str8 = str4;
+      tmp35 = null == voiceChannelActivities.connectedFrame || null != connectedFrame || voiceChannelActivities.inVibegrationsChannel;
     }
     return tmp34;
   });

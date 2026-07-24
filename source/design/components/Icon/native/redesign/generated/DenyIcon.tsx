@@ -1,10 +1,10 @@
-// Module ID: 10424
-// Function ID: 80299
+// Module ID: 10453
+// Function ID: 80491
 // Name: DenyIcon
-// Dependencies: [31, 33, 689, 3833, 8496, 2]
+// Dependencies: [31, 33, 689, 3833, 8541, 2]
 // Exports: DenyIcon
 
-// Module 10424 (DenyIcon)
+// Module 10453 (DenyIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const DenyIcon = function DenyIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8496) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8541) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8496) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8541) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

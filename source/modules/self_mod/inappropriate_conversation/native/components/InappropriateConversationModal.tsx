@@ -1,10 +1,10 @@
-// Module ID: 14693
-// Function ID: 112006
+// Module ID: 14740
+// Function ID: 112327
 // Name: IntroScreen
-// Dependencies: [57, 31, 27, 1849, 10134, 33, 4130, 689, 566, 3969, 1456, 5807, 4126, 1212, 4543, 10131, 14694, 10154, 5087, 10128, 4337, 10132, 5519, 2]
+// Dependencies: [57, 31, 27, 1849, 10166, 33, 4130, 689, 566, 3969, 1456, 5807, 4126, 1212, 4543, 10163, 14741, 10186, 5087, 10160, 4337, 10164, 5517, 2]
 // Exports: default
 
-// Module 14693 (IntroScreen)
+// Module 14740 (IntroScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { useState } from "result";
@@ -88,7 +88,7 @@ function TakeActionScreen(arg0) {
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.S0XtKF);
   items[1] = callback2(require(4126) /* Text */.Text, obj1);
   obj.children = items;
-  const items1 = [callback3(closure_7, obj), callback2(importDefault(14694), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
+  const items1 = [callback3(closure_7, obj), callback2(importDefault(14741), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
   obj.children = items1;
   return callback3(closure_7, obj);
 }
@@ -99,7 +99,7 @@ function SafetyTipsScreen() {
   obj = { showHeader: true };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.description = intl.string(require(1212) /* getSystemLocale */.t.DJMZX6);
-  const tmp2 = importDefault(10154);
+  const tmp2 = importDefault(10186);
   obj.safetyTips = callback().map((children) => outer1_13(outer1_0(outer1_2[12]).Text, { variant: "text-sm/medium", children }, arg1));
   obj.children = callback2(tmp2, obj);
   obj.children = callback2(closure_7, obj);

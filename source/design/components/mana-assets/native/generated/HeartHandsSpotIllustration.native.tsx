@@ -1,5 +1,5 @@
 // Module ID: 6256
-// Function ID: 50338
+// Function ID: 50349
 // Name: HeartHandsSpotIllustration
 // Dependencies: [33, 5085, 6257, 2]
 // Exports: HeartHandsSpotIllustration

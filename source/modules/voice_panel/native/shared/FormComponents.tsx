@@ -1,10 +1,10 @@
-// Module ID: 8865
-// Function ID: 69940
+// Module ID: 8904
+// Function ID: 70155
 // Name: VoiceBadges
-// Dependencies: [31, 4217, 33, 4130, 689, 5517, 5503, 8866, 1273, 5464, 8867, 8878, 8920, 4361, 8516, 8492, 566, 6981, 4126, 1212, 5165, 4543, 8922, 3969, 8577, 8931, 2]
+// Dependencies: [31, 4217, 33, 4130, 689, 5515, 5501, 8905, 1273, 5462, 8906, 8917, 8959, 4361, 8561, 8537, 566, 6980, 4126, 1212, 5165, 4543, 8961, 3969, 8620, 8970, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 8865 (VoiceBadges)
+// Module 8904 (VoiceBadges)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -23,22 +23,22 @@ function VoiceBadges(arg0) {
   if (null != muteDeafenIconState) {
     obj = { style: tmp.iconWrapper };
     obj = { state: muteDeafenIconState, size: require(1273) /* Button */.IconSizes.SMALL, style: tmp.icon };
-    obj.children = callback(require(8866) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
-    tmp4 = callback(importDefault(5517), obj);
-    const tmp8 = importDefault(5517);
+    obj.children = callback(require(8905) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
+    tmp4 = callback(importDefault(5515), obj);
+    const tmp8 = importDefault(5515);
   }
   const items = [tmp4, ];
   let tmp11 = null;
   if (null != videoIconState) {
     const obj1 = { style: tmp.iconWrapper };
     const obj2 = { state: videoIconState, size: require(1273) /* Button */.IconSizes.SMALL, style: tmp.icon };
-    obj1.children = callback(require(8866) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
-    tmp11 = callback(importDefault(5517), obj1);
-    const tmp15 = importDefault(5517);
+    obj1.children = callback(require(8905) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
+    tmp11 = callback(importDefault(5515), obj1);
+    const tmp15 = importDefault(5515);
   }
   items[1] = tmp11;
   obj.children = items;
-  return closure_6(importDefault(5517), obj);
+  return closure_6(importDefault(5515), obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" } };
@@ -60,8 +60,8 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
   const tmp3 = _createForOfIteratorHelperLoose();
   obj = {};
   const merged1 = Object.assign(merged);
-  obj.children = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
-  return callback(importDefault(5517), obj);
+  obj.children = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback(importDefault(5515), obj);
 };
 export const MemberRowItem = function MemberRowItem(user) {
   let guildId;

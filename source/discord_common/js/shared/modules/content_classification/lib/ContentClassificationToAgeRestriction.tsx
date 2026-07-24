@@ -1,10 +1,10 @@
-// Module ID: 6867
-// Function ID: 54353
+// Module ID: 6866
+// Function ID: 54361
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6868, 6869, 483, 6870, 6871, 6872, 6873, 6874, 6875, 2]
+// Dependencies: [6867, 6868, 483, 6869, 6870, 6871, 6872, 6873, 6874, 2]
 // Exports: contentClassificationToAgeRestriction
 
-// Module 6867 (_createForOfIteratorHelperLoose)
+// Module 6866 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;
@@ -93,12 +93,12 @@ function contentClassificationToAgeRestrictionConclusion(data) {
     data = data.data;
     if (data.type === obj.MINIMAL) {
       if (null != data.discord_classifications) {
-        items.push(_conclusionFromDiscordContentClassificationFlags(require(6868) /* AgeRestrictionSource */.AgeRestrictionSource.DISCORD_CLASSIFICATION, data.discord_classifications));
+        items.push(_conclusionFromDiscordContentClassificationFlags(require(6867) /* AgeRestrictionSource */.AgeRestrictionSource.DISCORD_CLASSIFICATION, data.discord_classifications));
       }
     } else if (null != data.manual_classifications) {
-      items.push(_conclusionFromDiscordContentClassificationFlags(require(6868) /* AgeRestrictionSource */.AgeRestrictionSource.MANUAL_CLASSIFICATION, data.manual_classifications));
+      items.push(_conclusionFromDiscordContentClassificationFlags(require(6867) /* AgeRestrictionSource */.AgeRestrictionSource.MANUAL_CLASSIFICATION, data.manual_classifications));
     } else if (null != data.automated_classifications) {
-      items.push(_conclusionFromDiscordContentClassificationFlags(require(6868) /* AgeRestrictionSource */.AgeRestrictionSource.AUTOMATED_CLASSIFICATION, data.automated_classifications));
+      items.push(_conclusionFromDiscordContentClassificationFlags(require(6867) /* AgeRestrictionSource */.AgeRestrictionSource.AUTOMATED_CLASSIFICATION, data.automated_classifications));
     }
     if (null != data.agency_ratings) {
       if (null == data.agency_ratings.esrb) {
@@ -119,26 +119,26 @@ function contentClassificationToAgeRestrictionConclusion(data) {
               })(data.agency_ratings.igdb));
             }
           } else {
-            const IS_ADULT = require(6873) /* set */.ContentRatingGOPClassificationSets.IS_ADULT;
+            const IS_ADULT = require(6872) /* set */.ContentRatingGOPClassificationSets.IS_ADULT;
             const hasItem = IS_ADULT.has(data.agency_ratings.gop.classification);
-            let AgeRestrictionStatus3 = require(6869) /* AgeRestrictionStatus */.AgeRestrictionStatus;
-            obj = { source: require(6868) /* AgeRestrictionSource */.AgeRestrictionSource.AGENCY_CLASSIFICATION_GOP, status: hasItem ? AgeRestrictionStatus3.ADULT : AgeRestrictionStatus3.EVERYONE };
+            let AgeRestrictionStatus3 = require(6868) /* AgeRestrictionStatus */.AgeRestrictionStatus;
+            obj = { source: require(6867) /* AgeRestrictionSource */.AgeRestrictionSource.AGENCY_CLASSIFICATION_GOP, status: hasItem ? AgeRestrictionStatus3.ADULT : AgeRestrictionStatus3.EVERYONE };
             AgeRestrictionStatus3 = items.push(obj);
             const tmp15 = hasItem ? AgeRestrictionStatus3.ADULT : AgeRestrictionStatus3.EVERYONE;
           }
         } else {
-          const IS_ADULT_ONLY2 = require(6872) /* set */.ContentRatingPEGIRatingSets.IS_ADULT_ONLY;
+          const IS_ADULT_ONLY2 = require(6871) /* set */.ContentRatingPEGIRatingSets.IS_ADULT_ONLY;
           const hasItem1 = IS_ADULT_ONLY2.has(data.agency_ratings.pegi.rating);
-          let AgeRestrictionStatus2 = require(6869) /* AgeRestrictionStatus */.AgeRestrictionStatus;
-          obj = { source: require(6868) /* AgeRestrictionSource */.AgeRestrictionSource.AGENCY_CLASSIFICATION_PEGI, status: hasItem1 ? AgeRestrictionStatus2.ADULT : AgeRestrictionStatus2.EVERYONE };
+          let AgeRestrictionStatus2 = require(6868) /* AgeRestrictionStatus */.AgeRestrictionStatus;
+          obj = { source: require(6867) /* AgeRestrictionSource */.AgeRestrictionSource.AGENCY_CLASSIFICATION_PEGI, status: hasItem1 ? AgeRestrictionStatus2.ADULT : AgeRestrictionStatus2.EVERYONE };
           AgeRestrictionStatus2 = items.push(obj);
           const tmp12 = hasItem1 ? AgeRestrictionStatus2.ADULT : AgeRestrictionStatus2.EVERYONE;
         }
       } else {
-        const IS_ADULT_ONLY = require(6871) /* set */.ContentRatingESRBRatingSets.IS_ADULT_ONLY;
+        const IS_ADULT_ONLY = require(6870) /* set */.ContentRatingESRBRatingSets.IS_ADULT_ONLY;
         const hasItem2 = IS_ADULT_ONLY.has(data.agency_ratings.esrb.rating);
-        let AgeRestrictionStatus = require(6869) /* AgeRestrictionStatus */.AgeRestrictionStatus;
-        obj = { source: require(6868) /* AgeRestrictionSource */.AgeRestrictionSource.AGENCY_CLASSIFICATION_ESRB, status: hasItem2 ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE };
+        let AgeRestrictionStatus = require(6868) /* AgeRestrictionStatus */.AgeRestrictionStatus;
+        obj = { source: require(6867) /* AgeRestrictionSource */.AgeRestrictionSource.AGENCY_CLASSIFICATION_ESRB, status: hasItem2 ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE };
         AgeRestrictionStatus = items.push(obj);
         const tmp9 = hasItem2 ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE;
       }
@@ -155,7 +155,7 @@ function contentClassificationToAgeRestrictionConclusion(data) {
         if (null != tmp21) {
           let tmp24 = importAll;
           let tmp25 = dependencyMap;
-          let obj4 = importAll(6875);
+          let obj4 = importAll(6874);
           tmp23 = tmp21;
           if (obj4.compare(value.status, tmp21.status) > 0) {
             tmp23 = value;
@@ -177,15 +177,15 @@ function _conclusionFromDiscordContentClassificationFlags(AUTOMATED_CLASSIFICATI
   let obj = importAll(483);
   const deserializeResult = obj.deserialize(automated_classifications);
   obj = { source: AUTOMATED_CLASSIFICATION };
-  if (obj2.has(deserializeResult, require(6870) /* frozen */.DiscordContentClassificationFlags.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED)) {
-    obj.status = require(6869) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT;
+  if (obj2.has(deserializeResult, require(6869) /* frozen */.DiscordContentClassificationFlags.EMERGENCY_ONLY_USE_IF_YOU_HAVE_TO_FORCE_MARK_AGE_RESTRICTED)) {
+    obj.status = require(6868) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT;
     let tmp8 = obj;
   } else {
     const obj4 = importAll(483);
-    const AgeRestrictionStatus = require(6869) /* AgeRestrictionStatus */.AgeRestrictionStatus;
-    obj.status = importAll(483).hasAny(deserializeResult, require(6870) /* frozen */.DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE;
+    const AgeRestrictionStatus = require(6868) /* AgeRestrictionStatus */.AgeRestrictionStatus;
+    obj.status = importAll(483).hasAny(deserializeResult, require(6869) /* frozen */.DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT) ? AgeRestrictionStatus.ADULT : AgeRestrictionStatus.EVERYONE;
     tmp8 = obj;
-    const hasAnyResult = importAll(483).hasAny(deserializeResult, require(6870) /* frozen */.DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
+    const hasAnyResult = importAll(483).hasAny(deserializeResult, require(6869) /* frozen */.DiscordContentClassificationFlagMasks.RESTRICTED_TO_ADULT);
   }
   return tmp8;
 }

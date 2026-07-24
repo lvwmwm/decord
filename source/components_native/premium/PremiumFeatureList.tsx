@@ -1,10 +1,10 @@
-// Module ID: 8138
-// Function ID: 64401
+// Module ID: 8182
+// Function ID: 64629
 // Name: PremiumFeatureList
-// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 7495, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 7636, 2]
 // Exports: default
 
-// Module 8138 (PremiumFeatureList)
+// Module 8182 (PremiumFeatureList)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,9 +39,10 @@ export default function PremiumFeatureList(style) {
       let obj = {};
       obj = { style: items };
       items = [lib.item, closure_3];
-      obj = { size: "md", color: color.color, style: items1 };
-      items1 = [lib.iconMargin, closure_1];
-      const items2 = [lib(color.IconComponent, obj), ];
+      obj = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+      const items1 = [lib.iconMargin, closure_1];
+      obj.children = lib(color.IconComponent, { size: "md", color: color.color, style: items1 });
+      const items2 = [lib(outer1_3, obj), ];
       const items3 = [lib.label, result];
       items2[1] = lib(outer1_0(outer1_1[7]).FormRow.Label, { numberOfLines: 2, style: items3, text: color.label });
       obj.children = items2;

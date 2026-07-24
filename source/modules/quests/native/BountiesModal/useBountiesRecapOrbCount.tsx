@@ -1,10 +1,10 @@
-// Module ID: 13914
-// Function ID: 106515
+// Module ID: 13965
+// Function ID: 106839
 // Name: getRecapOrbCountFromPullProgress
-// Dependencies: [57, 31, 3991, 13910, 2]
+// Dependencies: [57, 31, 3991, 13961, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 13914 (getRecapOrbCountFromPullProgress)
+// Module 13965 (getRecapOrbCountFromPullProgress)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

@@ -1,9 +1,9 @@
-// Module ID: 10422
-// Function ID: 80269
+// Module ID: 10451
+// Function ID: 80461
 // Name: IgnoredInformationTable
-// Dependencies: [57, 31, 27, 1348, 1849, 8924, 10420, 653, 33, 4130, 689, 8494, 1212, 4088, 5503, 5165, 1273, 1557, 5464, 5484, 566, 675, 7889, 5187, 5189, 8497, 4126, 4319, 8496, 4098, 10421, 1934, 480, 4543, 8923, 5459, 1920, 3827, 2]
+// Dependencies: [57, 31, 27, 1348, 1849, 8963, 10449, 653, 33, 4130, 689, 8539, 1212, 4088, 5501, 5165, 1273, 1557, 5462, 5482, 566, 675, 7976, 5187, 5189, 8542, 4126, 4319, 8541, 4098, 10450, 1934, 480, 4543, 8962, 1920, 3827, 2]
 
-// Module 10422 (IgnoredInformationTable)
+// Module 10451 (IgnoredInformationTable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "maybeLoadBundle";
 import { View } from "getNickname";
@@ -36,7 +36,7 @@ function IgnoredInformationTable() {
       return outer1_13(outer1_0(outer1_2[15]).TableRow, obj, arg1);
     })
   };
-  return callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ BLOCK_CONFIRMATION_ACTION_SHEET_KEY: closure_9, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: closure_10 } = IGNORE_CONFIRMATION_ACTION_SHEET_KEY);
 ({ AnalyticEvents: closure_11, HelpdeskArticles: closure_12 } = ME);
@@ -170,7 +170,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
   const tmp2 = callback(importAllResult.useState(false), 2);
   const first = tmp2[0];
   const bottom = channelId(1557)().bottom;
-  const items = [channelId(5484).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const items = [channelId(5482).IGNORE_CONFIRMATION_ACTION_SHEET];
   let obj = userId(566);
   const items1 = [closure_7];
   const items2 = [userId];
@@ -218,7 +218,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj5.style = tmp.avatar;
     const items6 = [callback2(userId(1273).Avatar, obj5), ];
     const obj6 = { style: tmp.avatarIconContainer };
-    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8497) };
+    const obj7 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8542) };
     obj6.children = callback2(userId(1273).Icon, obj7);
     items6[1] = callback2(stateFromStores, obj6);
     obj4.children = items6;
@@ -244,7 +244,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj13.title = intl3.string(userId(1212).t["1v01gh"]);
     obj13.hasIcons = true;
     const obj14 = {};
-    const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8496), color: tmp.destructiveIcon.color };
+    const obj15 = { size: userId(1273).Icon.Sizes.MEDIUM, source: channelId(8541), color: tmp.destructiveIcon.color };
     obj14.icon = callback2(userId(1273).Icon, obj15);
     const intl4 = userId(1212).intl;
     obj14.label = intl4.string(userId(1212).t.bwxY30);
@@ -265,7 +265,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     };
     obj14.arrow = true;
     obj13.children = callback2(userId(5165).TableRow, obj14);
-    obj12.children = callback2(userId(5503).TableRowGroup, obj13);
+    obj12.children = callback2(userId(5501).TableRowGroup, obj13);
     items8[2] = callback2(stateFromStores, obj12);
     const obj17 = { style: tmp.button };
     const obj18 = { size: "lg" };
@@ -299,19 +299,19 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
       articleLink() {
           channelId(outer1_2[29]).hideActionSheet();
           const obj = channelId(outer1_2[29]);
-          const articleURL = channelId(outer1_2[36]).getArticleURL(outer1_12.STEALTH_REMEDIATION_FEATURE_GUIDE);
-          const obj2 = channelId(outer1_2[36]);
-          channelId(outer1_2[37]).openURL(articleURL);
+          const articleURL = channelId(outer1_2[35]).getArticleURL(outer1_12.STEALTH_REMEDIATION_FEATURE_GUIDE);
+          const obj2 = channelId(outer1_2[35]);
+          channelId(outer1_2[36]).openURL(articleURL);
         }
     };
     obj19.children = intl8.format(userId(1212).t.iX9qtL, obj21);
-    items9[1] = callback2(userId(5459).TextWithIOSLinkWorkaround, obj19);
+    items9[1] = callback2(userId(4126).Text, obj19);
     obj17.children = items9;
     items8[3] = callback3(stateFromStores, obj17);
     obj2.children = items8;
     obj.children = callback3(userId(5189).BottomSheetScrollView, obj2);
     obj.children = callback2(userId(5187).BottomSheet, obj);
-    tmp9Result = callback2(userId(5464).AnalyticsLocationProvider, obj);
+    tmp9Result = callback2(userId(5462).AnalyticsLocationProvider, obj);
     const tmp12 = callback2;
     const tmp21 = callback2;
     const tmp9 = callback2;

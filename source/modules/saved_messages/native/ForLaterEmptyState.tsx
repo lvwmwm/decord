@@ -1,10 +1,10 @@
-// Module ID: 9931
-// Function ID: 76805
+// Module ID: 9963
+// Function ID: 76999
 // Name: ForLaterEmptyState
-// Dependencies: [27, 33, 4130, 9932, 4126, 1212, 9533, 2]
+// Dependencies: [27, 33, 4130, 9964, 4126, 1212, 9569, 2]
 // Exports: ForLaterEmptyState
 
-// Module 9931 (ForLaterEmptyState)
+// Module 9963 (ForLaterEmptyState)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -24,12 +24,12 @@ export const ForLaterEmptyState = function ForLaterEmptyState(type) {
   const tmp = callback2();
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer };
   obj = { style: tmp.container };
-  obj = { source: importDefault(9932), style: tmp.image };
+  obj = { source: importDefault(9964), style: tmp.image };
   const items = [callback(closure_4, obj), ];
   const obj1 = { style: tmp.textContainer };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text };
   const intl = require(1212) /* getSystemLocale */.intl;
-  if (type === require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
+  if (type === require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
     let erEf2g = require(1212) /* getSystemLocale */.t.AE4yja;
   } else {
     erEf2g = require(1212) /* getSystemLocale */.t.erEf2g;
@@ -38,7 +38,7 @@ export const ForLaterEmptyState = function ForLaterEmptyState(type) {
   const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
   const obj3 = { variant: "text-sm/medium", color: "text-default", style: tmp.text };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  if (type === require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
+  if (type === require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER) {
     w1o_75 = require(1212) /* getSystemLocale */.t.iBFuNE;
   } else {
     w1o_75 = require(1212) /* getSystemLocale */.t["w1o+75"];

@@ -1,10 +1,10 @@
-// Module ID: 10429
-// Function ID: 80340
+// Module ID: 10458
+// Function ID: 80532
 // Name: ForumPostActionBar
-// Dependencies: [57, 31, 27, 3759, 3760, 1348, 653, 33, 4130, 689, 566, 5681, 1450, 9312, 8829, 10430, 4660, 1212, 4082, 4126, 10204, 4074, 2]
+// Dependencies: [57, 31, 27, 3759, 3760, 1348, 653, 33, 4130, 689, 566, 5681, 1450, 9348, 8868, 10459, 4660, 1212, 4082, 4126, 10234, 4074, 2]
 // Exports: default
 
-// Module 10429 (ForumPostActionBar)
+// Module 10458 (ForumPostActionBar)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -36,7 +36,7 @@ export default function ForumPostActionBar(channel) {
   channel = channel.channel;
   let stateFromStores1;
   let items9 = function handleFollow() {
-    const result = channel(9312).handleToggleFollowForumPost(channel, stateFromStores1);
+    const result = channel(9348).handleToggleFollowForumPost(channel, stateFromStores1);
   };
   const tmp = _createForOfIteratorHelperLoose();
   let obj = channel(566);
@@ -64,7 +64,7 @@ export default function ForumPostActionBar(channel) {
   const callback = React.useCallback((nativeEvent) => {
     callback(width - nativeEvent.nativeEvent.layout.width - 40);
   }, items3);
-  let obj4 = channel(8829);
+  let obj4 = channel(8868);
   obj = {};
   const items4 = [tmp.actionBarContainer, obj4.useGradientTop()];
   obj.style = items4;
@@ -72,7 +72,7 @@ export default function ForumPostActionBar(channel) {
   if (tmp9) {
     obj = { style: tmp.reactionRow };
     obj1 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp5[0] };
-    obj.children = callback(channel(10430).ForumPostActionBarReactions, obj1);
+    obj.children = callback(channel(10459).ForumPostActionBarReactions, obj1);
     tmp9 = callback(View, obj);
   }
   const items5 = [tmp9, ];
@@ -90,7 +90,7 @@ export default function ForumPostActionBar(channel) {
     obj3.onPress = function onPress() {
       const guildId = channel.getGuildId();
       if (null != guildId) {
-        let obj = channel(9312);
+        let obj = channel(9348);
         obj = { section: outer1_9.CHANNEL_HEADER };
         const result = obj.handleCopyLinkForumPost(guildId, channel.id, obj);
       }
@@ -130,7 +130,7 @@ export default function ForumPostActionBar(channel) {
       obj5.style = tmp.actionButton;
       obj5.onPress = items9;
       const obj7 = { size: "xs" };
-      const items11 = [callback(tmp20(10204).BellIcon, obj7), ];
+      const items11 = [callback(tmp20(10234).BellIcon, obj7), ];
       const obj8 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default" };
       const intl2 = tmp20(tmp21[num3]).intl;
       obj8.children = intl2.string(tmp20(tmp21[num3]).t["0rQinA"]);

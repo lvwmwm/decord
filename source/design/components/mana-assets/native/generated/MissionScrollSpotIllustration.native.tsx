@@ -1,5 +1,5 @@
 // Module ID: 6300
-// Function ID: 50404
+// Function ID: 50415
 // Name: MissionScrollSpotIllustration
 // Dependencies: [33, 5085, 6301, 2]
 // Exports: MissionScrollSpotIllustration

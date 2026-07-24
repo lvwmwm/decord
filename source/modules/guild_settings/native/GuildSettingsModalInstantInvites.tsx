@@ -1,10 +1,10 @@
-// Module ID: 16341
-// Function ID: 127577
+// Module ID: 16388
+// Function ID: 127901
 // Name: InvitesDisabledRow
-// Dependencies: [57, 31, 27, 10219, 7464, 1348, 1838, 8439, 653, 33, 4130, 1212, 1920, 9094, 5459, 5170, 9176, 11416, 566, 22, 7704, 7702, 4098, 10974, 1934, 3831, 10168, 5585, 1273, 16342, 5448, 2]
+// Dependencies: [57, 31, 27, 10249, 7544, 1348, 1838, 8483, 653, 33, 4130, 1212, 1920, 9132, 4126, 5170, 9212, 11444, 566, 22, 7793, 7791, 4098, 11001, 1934, 3831, 10198, 5583, 1273, 16389, 5448, 2]
 // Exports: default
 
-// Module 16341 (InvitesDisabledRow)
+// Module 16388 (InvitesDisabledRow)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "SceneLoadingIndicator";
@@ -48,7 +48,7 @@ class InvitesDisabledRow {
     obj = { label: stringResult };
     obj1 = { variant: "text-xs/medium" };
     obj1.children = stringResult1;
-    obj.subLabel = jsx(require("findLinks").TextWithIOSLinkWorkaround, obj1);
+    obj.subLabel = jsx(require("Text").Text, obj1);
     tmp8 = null;
     if (invitesDisabled) {
       tmp9 = jsx;

@@ -1,10 +1,10 @@
-// Module ID: 12448
-// Function ID: 96591
+// Module ID: 12501
+// Function ID: 96914
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [27, 653, 33, 4130, 689, 5187, 7507, 4126, 5459, 1212, 1920, 2]
+// Dependencies: [27, 653, 33, 4130, 689, 5187, 7577, 4126, 1212, 1920, 2]
 // Exports: default
 
-// Module 12448 (NitroCreditEducationActionSheet)
+// Module 12501 (NitroCreditEducationActionSheet)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export default function NitroCreditEducationActionSheet(aboutText) {
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.aboutContainer };
-  const items = [callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
+  const items = [callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
   const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText.aboutText };
   items[1] = callback(View, { style: tmp.aboutTextContainer, children: callback(require(4126) /* Text */.Text, obj3) });
   obj.children = items;
@@ -39,7 +39,7 @@ export default function NitroCreditEducationActionSheet(aboutText) {
   const obj2 = { style: tmp.aboutTextContainer, children: callback(require(4126) /* Text */.Text, obj3) };
   obj5.helpCenterLink = importDefault(1920).getArticleURL(HelpdeskArticles.FRACTIONAL_PREMIUM_ABOUT);
   obj4.children = intl.format(require(1212) /* getSystemLocale */.t.bg3jBj, obj5);
-  items1[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj4);
+  items1[1] = callback(require(4126) /* Text */.Text, obj4);
   obj.children = items1;
   obj.children = callback2(View, obj);
   return callback(require(5187) /* Background */.BottomSheet, obj);

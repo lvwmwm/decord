@@ -1,7 +1,7 @@
 // Module ID: 4216
-// Function ID: 36663
+// Function ID: 36664
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4150, 1194, 4177, 4217, 4202, 653, 4195, 44, 4219, 22, 4194, 6981, 686, 4227, 477, 12730, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4150, 1194, 4177, 4217, 4202, 653, 4195, 44, 4219, 22, 4194, 6980, 686, 4227, 477, 12781, 566, 2]
 
 // Module 4216 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -462,8 +462,8 @@ if (importDefaultResult.isSupported()) {
             tmp8 = null == dependencyMap3[streamKey];
           }
           if (tmp8) {
-            dependencyMap2[streamKey] = require(6981) /* _findPlayingActivity */.getStreamerApplication(decodeStreamKeyResult, closure_12);
-            const obj3 = require(6981) /* _findPlayingActivity */;
+            dependencyMap2[streamKey] = require(6980) /* _findPlayingActivity */.getStreamerApplication(decodeStreamKeyResult, closure_12);
+            const obj3 = require(6980) /* _findPlayingActivity */;
           }
           const StreamRTCAnalyticsContext = require(4219) /* _isNativeReflectConstruct */.StreamRTCAnalyticsContext;
           obj = { streamRegion: region, streamApplication: dependencyMap2[streamKey], streamSourceType: parseSourceType(dependencyMap3[streamKey]) };

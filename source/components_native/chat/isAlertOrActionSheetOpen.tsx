@@ -1,10 +1,10 @@
-// Module ID: 9490
-// Function ID: 73954
+// Module ID: 9526
+// Function ID: 74163
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [3823, 9491, 4472, 2]
+// Dependencies: [3823, 9527, 4472, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 9490 (isAlertOrActionSheetOpen)
+// Module 9526 (isAlertOrActionSheetOpen)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

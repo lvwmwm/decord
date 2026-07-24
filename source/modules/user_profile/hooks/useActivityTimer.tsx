@@ -1,10 +1,10 @@
-// Module ID: 11946
-// Function ID: 92344
+// Module ID: 11972
+// Function ID: 92580
 // Name: extractTimeComponents
-// Dependencies: [57, 31, 664, 7815, 4015, 2]
+// Dependencies: [57, 31, 664, 7906, 4015, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 11946 (extractTimeComponents)
+// Module 11972 (extractTimeComponents)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 
@@ -68,5 +68,5 @@ export const formatTimeForA11yLabel = function formatTimeForA11yLabel(arg0) {
   let seconds;
   ({ hours, minutes, seconds } = extractTimeComponents(arg0));
   const tmp = extractTimeComponents(arg0);
-  return require(7815) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
+  return require(7906) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
 };

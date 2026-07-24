@@ -1,5 +1,5 @@
 // Module ID: 5069
-// Function ID: 44018
+// Function ID: 44023
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5039, 1352, 1348, 5070, 1849, 653, 686, 21, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck

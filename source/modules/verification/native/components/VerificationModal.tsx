@@ -1,10 +1,10 @@
-// Module ID: 16196
-// Function ID: 125696
+// Module ID: 16243
+// Function ID: 126020
 // Name: PhoneThenEmailInterstitial
-// Dependencies: [5, 31, 27, 16197, 1342, 1849, 653, 33, 4130, 1273, 16198, 1212, 4543, 480, 5087, 5788, 8468, 5497, 5590, 16202, 9188, 9193, 9190, 9228, 9238, 9239, 9189, 16203, 9262, 9233, 566, 4098, 3989, 5519, 2]
+// Dependencies: [5, 31, 27, 16244, 1342, 1849, 653, 33, 4130, 1273, 16245, 1212, 4543, 480, 5087, 5788, 8512, 5495, 5588, 16249, 9224, 9229, 9226, 9264, 9274, 9275, 9225, 16250, 9298, 9269, 566, 4098, 3989, 5517, 2]
 // Exports: default
 
-// Module 16196 (PhoneThenEmailInterstitial)
+// Module 16243 (PhoneThenEmailInterstitial)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import showActionSheet from "showActionSheet";
 import { View } from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ let closure_9;
 const require = arg1;
 function PhoneThenEmailInterstitial(navigation) {
   navigation = navigation.navigation;
-  let obj = { Illustration: navigation(16198).VerifyPhone };
+  let obj = { Illustration: navigation(16245).VerifyPhone };
   const intl = navigation(1212).intl;
   obj.title = intl.string(navigation(1212).t.KLnLIP);
   const intl2 = navigation(1212).intl;
@@ -201,7 +201,7 @@ export default function VerificationModal() {
   };
   let intl = stateFromStores(1212).intl;
   obj.headerBackTitle = intl.string(stateFromStores(1212).t["13/7kX"]);
-  return jsx(stateFromStores(5519).Navigator, {
+  return jsx(stateFromStores(5517).Navigator, {
     screens: React.useMemo(() => (function getScreens() {
       function impressionProperties(RESEND_EMAIL) {
         return { impression_group: stateFromStores(outer3_2[13]).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: RESEND_EMAIL };

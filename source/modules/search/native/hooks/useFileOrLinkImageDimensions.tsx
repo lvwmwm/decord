@@ -1,10 +1,10 @@
-// Module ID: 15393
-// Function ID: 117478
+// Module ID: 15440
+// Function ID: 117800
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [31, 9103, 2]
+// Dependencies: [31, 9141, 2]
 // Exports: useFileOrLinkImageDimensions
 
-// Module 15393 (useFileOrLinkImageDimensions)
+// Module 15440 (useFileOrLinkImageDimensions)
 import result from "result";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 

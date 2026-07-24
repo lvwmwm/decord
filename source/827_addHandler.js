@@ -1,5 +1,5 @@
 // Module ID: 827
-// Function ID: 9232
+// Function ID: 9233
 // Name: addHandler
 // Dependencies: [800, 801, 810]
 

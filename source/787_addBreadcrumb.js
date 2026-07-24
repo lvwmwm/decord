@@ -1,5 +1,5 @@
 // Module ID: 787
-// Function ID: 8908
+// Function ID: 8909
 // Name: addBreadcrumb
 // Dependencies: [788, 794, 1111, 1000, 1089, 1152, 1156, 1170, 1163, 1183, 1176, 1181, 1173, 977]
 

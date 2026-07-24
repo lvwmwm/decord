@@ -1,10 +1,10 @@
-// Module ID: 9328
-// Function ID: 72862
+// Module ID: 9364
+// Function ID: 73071
 // Name: EmojiPickerActionSheet
-// Dependencies: [57, 31, 27, 1849, 9329, 653, 1852, 33, 4130, 689, 7006, 3991, 9330, 5160, 1557, 477, 5464, 5484, 9337, 4098, 9326, 9338, 4126, 1212, 5772, 9340, 3776, 9316, 1934, 4099, 4100, 9342, 5187, 4001, 9343, 9384, 9406, 2]
+// Dependencies: [57, 31, 27, 1849, 9365, 653, 1852, 33, 4130, 689, 7005, 3991, 9366, 5160, 1557, 477, 5462, 5482, 9373, 4098, 9362, 9374, 4126, 1212, 5772, 9376, 3776, 9352, 1934, 4099, 4100, 9378, 5187, 4001, 9379, 9420, 9442, 2]
 // Exports: default
 
-// Module 9328 (EmojiPickerActionSheet)
+// Module 9364 (EmojiPickerActionSheet)
 import _slicedToArray from "_slicedToArray";
 import PortalKeyboardFooterIOS from "PortalKeyboardFooterIOS";
 import { View } from "items";

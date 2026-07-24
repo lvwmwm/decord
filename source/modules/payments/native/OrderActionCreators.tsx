@@ -1,8 +1,8 @@
 // Module ID: 6668
-// Function ID: 51364
+// Function ID: 51376
 // Name: getOrders
-// Dependencies: [5, 4113, 653, 3, 507, 3791, 686, 5627, 2]
-// Exports: discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
+// Dependencies: [5, 4113, 653, 3, 507, 3791, 686, 5625, 2]
+// Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
 // Module 6668 (getOrders)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
@@ -159,7 +159,7 @@ async function _getOrCreateOrder(arg0, arg1) {
     ({ skuId, isGift, paymentGateway, recipientUserId, purchaseType, giftInfo, createdAfter, subscriptionPlanId, externalGatewayFacet } = arg0);
     yield undefined;
     let obj = { isGift, status: outer2_4.DRAFT, skuId, createdAfter };
-    const arr = yield outer2_8(obj);
+    const arr = yield outer2_9(obj);
     if (arr.length > 0) {
       const first = arr[0];
       obj = { orderId: first.id, skuId, isGift };
@@ -171,7 +171,7 @@ async function _getOrCreateOrder(arg0, arg1) {
       const items = [obj1];
       obj.orderLineItems = items;
       obj.externalGatewayFacet = externalGatewayFacet;
-      return yield outer2_10(obj);
+      return yield outer2_11(obj);
     }
   })();
   iter.next();
@@ -271,6 +271,9 @@ async function _updateOrder(arg0, arg1) {
   iter.next();
   return iter;
 }
+function discardOrder(id) {
+  return _discardOrder(...arguments);
+}
 async function _discardOrder(arg0, arg1) {
   const HTTP = outer2_0(outer2_2[4]).HTTP;
   const tmp = yield HTTP.post({ url: outer2_5.ORDER_DISCARD(arg0), rejectWithError: false });
@@ -282,6 +285,10 @@ async function _discardOrder(arg0, arg1) {
     return tmp.body;
   }
   const obj = { url: outer2_5.ORDER_DISCARD(arg0), rejectWithError: false };
+}
+async function _cancelSigningAndDiscardOrder(arg0, arg1) {
+  yield outer2_21(arg0);
+  yield outer2_17(arg0);
 }
 async function _markOrderAsSigningInProgress(arg0, arg1) {
   let closure_0 = arg0;
@@ -319,9 +326,45 @@ async function _markOrderAsSigningInProgress(arg0, arg1) {
     yield tmp2;
   }
 }
+function cancelOrderSigning(arg0) {
+  return _cancelOrderSigning(...arguments);
+}
+async function _cancelOrderSigning(arg0, arg1) {
+  let closure_0 = arg0;
+  const value = outer2_8.get(arg0);
+  if (null != value) {
+    let obj = { orderId: arg0 };
+    outer2_6.info("cancel signing already in progress for order, awaiting existing promise", obj);
+    return yield value;
+  } else {
+    const tmp3 = outer2_3(async () => {
+      let obj = outer4_1(outer4_2[6]);
+      obj = { type: "ORDER_CANCEL_SIGNING_START", orderId: outer1_0 };
+      obj.dispatch(obj);
+      const HTTP = outer4_0(outer4_2[4]).HTTP;
+      obj = { url: outer4_5.ORDER_CANCEL_SIGNING(outer1_0), rejectWithError: true };
+      const tmp2 = yield HTTP.post(obj);
+      if (null == tmp2.body) {
+        const _Error = Error;
+        const error = new Error("Invalid cancel signing response");
+        throw error;
+      } else {
+        const obj1 = { orderId: outer1_0 };
+        outer4_6.info("cancel order signing, transitioned back to DRAFT", obj1);
+        const obj2 = { type: "ORDER_CANCEL_SIGNING_SUCCESS", orderId: outer1_0 };
+        yield outer4_1(outer4_2[6]).dispatch(obj2);
+        outer4_8.delete(outer1_0);
+        return tmp2.body;
+      }
+    })();
+    const result = outer2_8.set(arg0, tmp3);
+    return yield tmp3;
+  }
+}
 importDefaultResult = new importDefaultResult("OrderActionCreators");
 let c7 = null;
-const result = require("ME").fileFinishedImporting("modules/payments/native/OrderActionCreators.tsx");
+const map = new Map();
+let result = require("ME").fileFinishedImporting("modules/payments/native/OrderActionCreators.tsx");
 
 export const logger = importDefaultResult;
 export const DRAFT_ORDER_LOOKBACK_DAYS = 3;
@@ -339,9 +382,11 @@ export const patchOrder = function patchOrder(arg0) {
 export const updateOrder = function updateOrder(arg0) {
   return _updateOrder(...arguments);
 };
-export const discardOrder = function discardOrder(id) {
-  return _discardOrder(...arguments);
+export { discardOrder };
+export const cancelSigningAndDiscardOrder = function cancelSigningAndDiscardOrder() {
+  return _cancelSigningAndDiscardOrder(...arguments);
 };
 export const markOrderAsSigningInProgress = function markOrderAsSigningInProgress(id) {
   return _markOrderAsSigningInProgress(...arguments);
 };
+export { cancelOrderSigning };

@@ -1,10 +1,10 @@
-// Module ID: 10161
-// Function ID: 78544
+// Module ID: 10191
+// Function ID: 78735
 // Name: getNavigationModalPresentation
-// Dependencies: [477, 8133, 4110, 8303, 2]
+// Dependencies: [477, 7423, 4110, 8347, 2]
 // Exports: default
 
-// Module 10161 (getNavigationModalPresentation)
+// Module 10191 (getNavigationModalPresentation)
 import set from "set";
 import set from "set";
 import set from "getSystemVersion";
@@ -48,20 +48,20 @@ export default function getNavigationModalPresentation() {
   obj = { presentation };
   let tmp4;
   if (lockOrientation) {
-    const orientationLock = require(8303) /* handleOrientationChange */.getOrientationLock();
+    const orientationLock = require(8347) /* handleOrientationChange */.getOrientationLock();
     let str2 = "landscape";
     let str4 = "landscape";
     if ("LANDSCAPE" !== orientationLock) {
       if (null != orientationLock) {
         str2 = "portrait";
       } else {
-        const orientation = require(8303) /* handleOrientationChange */.getOrientation();
-        const obj3 = require(8303) /* handleOrientationChange */;
+        const orientation = require(8347) /* handleOrientationChange */.getOrientation();
+        const obj3 = require(8347) /* handleOrientationChange */;
       }
       str4 = str2;
     }
     tmp4 = str4;
-    const obj2 = require(8303) /* handleOrientationChange */;
+    const obj2 = require(8347) /* handleOrientationChange */;
   }
   obj.orientation = tmp4;
   return obj;

@@ -1,10 +1,10 @@
-// Module ID: 7516
-// Function ID: 60208
+// Module ID: 7651
+// Function ID: 60843
 // Name: FormSwitchRow
-// Dependencies: [57, 31, 27, 33, 4130, 477, 5158, 5177, 7514, 5164, 5504, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 477, 5158, 5177, 7649, 5164, 5502, 2]
 // Exports: default
 
-// Module 7516 (FormSwitchRow)
+// Module 7651 (FormSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -111,7 +111,7 @@ export default function FormSwitchRowContainer(DEPRECATED_style) {
     obj = {};
     ({ value: obj3.value, onValueChange: obj3.onValueChange } = DEPRECATED_style);
     const merged = Object.assign(DEPRECATED_style);
-    obj.children = callback2(require(5504) /* TableSwitchRow */.TableSwitchRow, obj);
+    obj.children = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
     let tmpResult = tmp(View, obj);
   } else {
     obj = {};

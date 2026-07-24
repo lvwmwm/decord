@@ -1,10 +1,10 @@
-// Module ID: 14583
-// Function ID: 111174
+// Module ID: 14632
+// Function ID: 111493
 // Name: SettingSearchBar
-// Dependencies: [31, 27, 13552, 33, 4130, 689, 1820, 5795, 5772, 2]
+// Dependencies: [31, 27, 13603, 33, 4130, 689, 1820, 5795, 5772, 2]
 // Exports: default
 
-// Module 14583 (SettingSearchBar)
+// Module 14632 (SettingSearchBar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import zustandStore from "zustandStore";

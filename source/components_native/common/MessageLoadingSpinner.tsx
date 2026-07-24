@@ -1,10 +1,10 @@
-// Module ID: 10582
-// Function ID: 82602
+// Module ID: 10611
+// Function ID: 82794
 // Name: result
-// Dependencies: [31, 27, 33, 477, 3834, 689, 5586, 2]
+// Dependencies: [31, 27, 33, 477, 3834, 689, 5584, 2]
 // Exports: default
 
-// Module 10582 (result)
+// Module 10611 (result)
 import "result";
 import { jsx } from "jsxProd";
 import set from "set";
@@ -32,7 +32,7 @@ export default function MessageLoadingSpinner(color) {
   } else {
     obj = { animating: color.animate };
     const merged1 = Object.assign(color);
-    tmp8 = jsx(require(5586) /* ActivityIndicator */.ActivityIndicator, { animating: color.animate });
+    tmp8 = jsx(require(5584) /* ActivityIndicator */.ActivityIndicator, { animating: color.animate });
   }
   return tmp8;
 };

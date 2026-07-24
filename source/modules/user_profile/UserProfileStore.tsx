@@ -1,9 +1,9 @@
-// Module ID: 6856
-// Function ID: 54149
+// Module ID: 6855
+// Function ID: 54158
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1921, 1857, 1194, 1838, 1196, 4217, 4970, 653, 6857, 22, 6858, 6876, 4015, 1876, 1829, 6877, 1212, 6878, 4814, 1327, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1921, 1857, 1194, 1838, 1196, 4217, 4970, 653, 6856, 22, 6857, 6875, 4015, 1876, 1829, 6876, 1212, 6877, 4814, 1327, 2]
 
-// Module 6856 (_isNativeReflectConstruct)
+// Module 6855 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import items from "items";
@@ -110,12 +110,12 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function createUserWidgetFromServer(data) {
   const type = data.data.type;
-  if (require(6857) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
-    if (require(6857) /* WidgetType */.WidgetType.FAVORITE_GAMES !== type) {
-      if (require(6857) /* WidgetType */.WidgetType.PLAYED_GAMES !== type) {
-        if (require(6857) /* WidgetType */.WidgetType.WANT_TO_PLAY_GAMES !== type) {
-          if (require(6857) /* WidgetType */.WidgetType.APPLICATION === type) {
-            const ApplicationWidget = require(6876) /* ApplicationWidget */.ApplicationWidget;
+  if (require(6856) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
+    if (require(6856) /* WidgetType */.WidgetType.FAVORITE_GAMES !== type) {
+      if (require(6856) /* WidgetType */.WidgetType.PLAYED_GAMES !== type) {
+        if (require(6856) /* WidgetType */.WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (require(6856) /* WidgetType */.WidgetType.APPLICATION === type) {
+            const ApplicationWidget = require(6875) /* ApplicationWidget */.ApplicationWidget;
             let obj = { id: data.id, applicationId: data.data.application_id };
             const prototype = ApplicationWidget.prototype;
             const applicationWidget = new ApplicationWidget(obj);
@@ -129,7 +129,7 @@ function createUserWidgetFromServer(data) {
   const mapped = games.map((applicationId) => ({ applicationId: applicationId.game_id, comment: applicationId.comment, tags: applicationId.tags }));
   const obj2 = importDefault(22);
   obj = { id: data.id, type, games: importDefault(22).uniqBy(mapped, "applicationId") };
-  const baseGameWidget = new require(6858) /* items */.BaseGameWidget(obj);
+  const baseGameWidget = new require(6857) /* items */.BaseGameWidget(obj);
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -602,7 +602,7 @@ function handleProfileUpdateSuccess(guild_id) {
           let obj = {};
           const merged = Object.assign(value);
           obj = { collectibles };
-          const merged1 = Object.assign(importDefault(6878)(obj));
+          const merged1 = Object.assign(importDefault(6877)(obj));
           obj["accentColor"] = accent_color;
           obj["banner"] = banner;
           obj["bio"] = bio;
@@ -622,7 +622,7 @@ function handleProfileUpdateSuccess(guild_id) {
       const obj1 = {};
       const merged2 = Object.assign(value1);
       const obj2 = { collectibles: collectibles2 };
-      const merged3 = Object.assign(importDefault(6878)(obj2));
+      const merged3 = Object.assign(importDefault(6877)(obj2));
       obj1["accentColor"] = accent_color2;
       obj1["banner"] = banner2;
       obj1["bio"] = bio2;

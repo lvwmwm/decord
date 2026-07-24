@@ -1,10 +1,10 @@
-// Module ID: 11203
-// Function ID: 87272
+// Module ID: 11233
+// Function ID: 87541
 // Name: useHeroMediaDimensions
-// Dependencies: [31, 4122, 1455, 5188, 33, 4130, 10885, 10614, 566, 5470, 11178, 8302, 1212, 2]
+// Dependencies: [31, 4122, 1455, 5188, 33, 4130, 10912, 10643, 566, 5468, 11208, 8346, 1212, 2]
 // Exports: default
 
-// Module 11203 (useHeroMediaDimensions)
+// Module 11233 (useHeroMediaDimensions)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -19,7 +19,7 @@ function useHeroMediaDimensions(arg0) {
     obj = {};
   }
   let width = obj.width;
-  let defaultAppLauncherWidth = require(10885) /* useDefaultAppLauncherWidth */.useDefaultAppLauncherWidth();
+  let defaultAppLauncherWidth = require(10912) /* useDefaultAppLauncherWidth */.useDefaultAppLauncherWidth();
   if (null != width) {
     defaultAppLauncherWidth = width;
   }
@@ -41,11 +41,11 @@ export default function HeroMedia(width) {
   const tmp = callback();
   const size = useHeroMediaDimensions({ width: width.width });
   let obj = { applicationId, size: size.width, names: ["embedded_cover"] };
-  const tmp2 = importDefault(10614)(obj);
+  const tmp2 = importDefault(10643)(obj);
   let obj1 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_3.useReducedMotion, []);
-  let obj2 = require(5470) /* useGetOrFetchApplications */;
+  let obj2 = require(5468) /* useGetOrFetchApplications */;
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let prop;
   if (null != getOrFetchApplication) {
@@ -57,7 +57,7 @@ export default function HeroMedia(width) {
   }
   let tmp7 = null;
   if (null != prop1) {
-    tmp7 = importDefault(11178)(applicationId, prop.activity_preview_video_asset_id);
+    tmp7 = importDefault(11208)(applicationId, prop.activity_preview_video_asset_id);
   }
   let tmp16Result = null;
   if (null != tmp7) {

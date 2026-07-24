@@ -1,10 +1,10 @@
-// Module ID: 10169
-// Function ID: 78619
+// Module ID: 10199
+// Function ID: 78810
 // Name: canUnlinkLobbyChannel
 // Dependencies: [3758, 653, 566, 2]
 // Exports: useCanUnlinkLobbyChannel
 
-// Module 10169 (canUnlinkLobbyChannel)
+// Module 10199 (canUnlinkLobbyChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 

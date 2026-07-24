@@ -1,10 +1,10 @@
-// Module ID: 13555
-// Function ID: 104208
+// Module ID: 13606
+// Function ID: 104532
 // Name: getSettingTitle
-// Dependencies: [10096, 653, 7375, 5793, 5784, 477, 1820, 13556, 44, 13557, 14575, 22, 2]
+// Dependencies: [10128, 653, 7375, 5793, 5784, 477, 1820, 13607, 44, 13608, 14624, 22, 2]
 // Exports: getInitialScrollIndex, getScoredSettingListSearchResultItems, getSettingListSearchResultItems, getSettingScreens, getSettingSearchableTitles, onRouteSettingOnPress, toSettingListItems
 
-// Module 13555 (getSettingTitle)
+// Module 13606 (getSettingTitle)
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { AnalyticsPages } from "ME";
 
@@ -12,13 +12,13 @@ let closure_3;
 let closure_4;
 let closure_5;
 function getSettingTitle(closure_0) {
-  const cachedSettingTitle = require(13556) /* map */.getCachedSettingTitle(closure_0);
-  const obj = require(13556) /* map */;
+  const cachedSettingTitle = require(13607) /* map */.getCachedSettingTitle(closure_0);
+  const obj = require(13607) /* map */;
   importDefault(44)(null != cachedSettingTitle, "Setting " + closure_0 + " is missing a title.");
   return cachedSettingTitle;
 }
 function getSearchResultIconComponent(arg0) {
-  const tmp = require(13557) /* MobileSetting */.SETTING_RENDERER_CONFIG[arg0];
+  const tmp = require(13608) /* MobileSetting */.SETTING_RENDERER_CONFIG[arg0];
   const type = tmp.type;
   if (constants2.RADIO !== type) {
     if (constants2.VOLUME_SLIDER !== type) {
@@ -71,7 +71,7 @@ export const onRouteSettingOnPress = function onRouteSettingOnPress(arg0) {
 };
 export { getSettingTitle };
 export const getSettingSearchableTitles = function getSettingSearchableTitles() {
-  const entries = Object.entries(items(13557).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(13608).SETTING_RENDERER_CONFIG);
   items = [];
   const item = entries.forEach((arg0) => {
     let tmp;
@@ -95,7 +95,7 @@ export const getSettingSearchableTitles = function getSettingSearchableTitles() 
 export const getSettingScreens = function getSettingScreens() {
   let items = [];
   const set = new Set();
-  const entries = Object.entries(items(13557).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(13608).SETTING_RENDERER_CONFIG);
   const item = entries.forEach((arg0) => {
     let tmp;
     let tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 12992
-// Function ID: 100530
+// Module ID: 13044
+// Function ID: 100853
 // Name: isActivityParticipantCurrentUserCurrentSession
 // Dependencies: [1194, 2]
 // Exports: isActivityParticipantCurrentUserCurrentSession
 
-// Module 12992 (isActivityParticipantCurrentUserCurrentSession)
+// Module 13044 (isActivityParticipantCurrentUserCurrentSession)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("set").fileFinishedImporting("modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx");

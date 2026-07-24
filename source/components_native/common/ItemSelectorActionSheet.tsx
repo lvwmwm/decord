@@ -1,10 +1,10 @@
-// Module ID: 8382
-// Function ID: 66760
+// Module ID: 8426
+// Function ID: 66988
 // Name: ItemSelectorActionSheet
-// Dependencies: [31, 33, 3834, 689, 1557, 5187, 5186, 5501, 5189, 7519, 7518, 2]
+// Dependencies: [31, 33, 3834, 689, 1557, 5187, 5186, 5499, 5189, 7654, 7653, 2]
 // Exports: default
 
-// Module 8382 (ItemSelectorActionSheet)
+// Module 8426 (ItemSelectorActionSheet)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -33,7 +33,7 @@ export default function ItemSelectorActionSheet(arg0) {
   let tmp4 = null;
   if (null != onClose) {
     const obj1 = { onPress: onClose };
-    tmp4 = callback(items(5501).ActionSheetCloseButton, obj1);
+    tmp4 = callback(items(5499).ActionSheetCloseButton, obj1);
   }
   obj.trailing = tmp4;
   obj.header = callback(items(5186).BottomSheetTitleHeader, obj);
@@ -55,7 +55,7 @@ export default function ItemSelectorActionSheet(arg0) {
     }
   };
   obj4.children = items.map((label, value) => outer1_3(items(outer1_2[10]).TableRadioRow, { label: label.label, value }, value));
-  items[1] = callback(items(7519).TableRadioGroup, obj4);
+  items[1] = callback(items(7654).TableRadioGroup, obj4);
   obj2.children = items;
   obj.children = closure_4(items(5189).BottomSheetScrollView, obj2);
   return callback(items(5187).BottomSheet, obj);

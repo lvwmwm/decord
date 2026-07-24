@@ -1,10 +1,10 @@
-// Module ID: 11755
-// Function ID: 91287
+// Module ID: 11782
+// Function ID: 91525
 // Name: InviteErrorBase
-// Dependencies: [31, 27, 653, 33, 4130, 689, 3976, 4066, 11756, 11757, 11758, 1212, 4126, 4543, 1392, 1273, 11759, 5515, 5459, 1920, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 3976, 4066, 11783, 11784, 11785, 1212, 4126, 4543, 1392, 1273, 11786, 5513, 1920, 2]
 // Exports: default
 
-// Module 11755 (InviteErrorBase)
+// Module 11782 (InviteErrorBase)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -27,11 +27,11 @@ function InviteErrorBase(invite) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = require(3976) /* AccessibilityAnnouncer */;
   if (obj.isThemeDark(importDefault(4066)())) {
-    let tmp4 = 11756;
+    let tmp4 = 11783;
   } else {
-    tmp4 = 11757;
+    tmp4 = 11784;
   }
-  let obj1 = require(11758) /* getDescriptiveInviteError */;
+  let obj1 = require(11785) /* getDescriptiveInviteError */;
   let code;
   if (null != inviteError) {
     code = inviteError.code;
@@ -91,10 +91,10 @@ function InviteDisabledError(onPressClose) {
     obj = {};
     const obj1 = { style: tmp.disabledView };
     const guildIconURL = obj.getGuildIconURL(obj);
-    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11759) };
+    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11786) };
     const items = [callback(onPressClose(1273).Icon, obj2), ];
-    const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: onPressClose(5515).GuildIconSizes.XLARGE };
-    items[1] = callback(importDefault(5515), obj3);
+    const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: onPressClose(5513).GuildIconSizes.XLARGE };
+    items[1] = callback(importDefault(5513), obj3);
     obj1.children = items;
     const items1 = [callback2(closure_4, obj1), , , ];
     const obj4 = { style: tmp.disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical" };
@@ -104,10 +104,10 @@ function InviteDisabledError(onPressClose) {
     const obj5 = { style: tmp.disabledBody, variant: "text-md/normal", color: "text-default" };
     const intl2 = onPressClose(1212).intl;
     const obj6 = {};
-    const tmp11 = importDefault(5515);
+    const tmp11 = importDefault(5513);
     obj6.articleLink = importDefault(1920).getArticleURL(constants2.INVITE_DISABLED);
     obj5.children = intl2.format(onPressClose(1212).t.RXSeLl, obj6);
-    items1[2] = callback(onPressClose(5459).TextWithIOSLinkWorkaround, obj5);
+    items1[2] = callback(onPressClose(4126).Text, obj5);
     const obj7 = { variant: "primary", size: "lg" };
     const intl3 = onPressClose(1212).intl;
     obj7.text = intl3.string(onPressClose(1212).t["yD/zkn"]);

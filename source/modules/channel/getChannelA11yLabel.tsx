@@ -1,10 +1,10 @@
-// Module ID: 8450
-// Function ID: 67421
+// Module ID: 8494
+// Function ID: 67649
 // Name: getStatusLabel
-// Dependencies: [1352, 3767, 1849, 653, 1212, 4320, 4623, 3969, 7815, 2]
+// Dependencies: [1352, 3767, 1849, 653, 1212, 4320, 4623, 3969, 7906, 2]
 // Exports: default, getChannelA11yHint
 
-// Module 8450 (getStatusLabel)
+// Module 8494 (getStatusLabel)
 import { THREAD_CHANNEL_TYPES } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -138,7 +138,7 @@ export default function getChannelA11yLabel(mentionCount) {
       if (null != voiceChannelStartTime) {
         const intl7 = require(1212) /* getSystemLocale */.intl;
         const obj5 = {};
-        let obj6 = require(7815) /* calculateTimestampDurations */;
+        let obj6 = require(7906) /* calculateTimestampDurations */;
         obj6 = { start: voiceChannelStartTime };
         const _Date = Date;
         obj5.duration = obj6.formatActiveA11yTimestamp(obj6, Date.now());

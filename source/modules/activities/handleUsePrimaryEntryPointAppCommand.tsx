@@ -1,10 +1,10 @@
-// Module ID: 10827
-// Function ID: 84054
+// Module ID: 10856
+// Function ID: 84246
 // Name: _handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 1348, 1849, 10816, 10523, 10524, 10828, 10486, 2]
+// Dependencies: [5, 1348, 1849, 10845, 10552, 10553, 10857, 10515, 2]
 // Exports: default
 
-// Module 10827 (_handleUsePrimaryEntryPointAppCommand)
+// Module 10856 (_handleUsePrimaryEntryPointAppCommand)
 import getEmbeddedActivitiesManager from "getEmbeddedActivitiesManager";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";

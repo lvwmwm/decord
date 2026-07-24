@@ -1,10 +1,10 @@
-// Module ID: 14115
-// Function ID: 108556
+// Module ID: 14165
+// Function ID: 108879
 // Name: WhatYouLose
-// Dependencies: [5, 57, 31, 27, 3782, 33, 4130, 689, 14116, 3712, 1212, 5515, 1273, 4126, 14106, 5085, 14124, 5464, 5484, 8002, 4471, 4451, 3830, 3798, 4543, 14112, 14101, 14125, 14126, 566, 2]
+// Dependencies: [5, 57, 31, 27, 3782, 33, 4130, 689, 14166, 3712, 1212, 5513, 1273, 4126, 14156, 5085, 14174, 5462, 5482, 7433, 4471, 4451, 3830, 3798, 4543, 14162, 14151, 14175, 14176, 566, 2]
 // Exports: default
 
-// Module 14115 (WhatYouLose)
+// Module 14165 (WhatYouLose)
 import closure_4 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -24,10 +24,10 @@ function WhatYouLose(subscription) {
   let listingId;
   ({ listingId, guild } = subscription);
   const tmp = callback4();
-  let obj = importAll(14116);
-  let obj1 = importAll(14116);
-  let obj2 = importAll(14116);
-  let obj3 = importAll(14116);
+  let obj = importAll(14166);
+  let obj1 = importAll(14166);
+  let obj2 = importAll(14166);
+  let obj3 = importAll(14166);
   let obj4 = importDefault(3712)(subscription.subscription.currentPeriodEnd);
   const intl = require(1212) /* getSystemLocale */.intl;
   const formatResult = obj4.format(c12);
@@ -36,7 +36,7 @@ function WhatYouLose(subscription) {
   obj = { style: tmp.container };
   obj1 = { style: tmp.header };
   const formatResult1 = intl.format(require(1212) /* getSystemLocale */.t.EtAXzC, { subscriptionEndDate: obj4.format(c12) });
-  const items = [callback2(importDefault(5515), { guild }), callback2(require(1273) /* Button */.Spacer, { size: 16 }), ];
+  const items = [callback2(importDefault(5513), { guild }), callback2(require(1273) /* Button */.Spacer, { size: 16 }), ];
   obj2 = {};
   obj3 = { variant: "text-md/semibold", color: "interactive-text-active" };
   obj3.children = callback(obj3.useName(listingId), 1)[0];
@@ -46,7 +46,7 @@ function WhatYouLose(subscription) {
   obj2.children = items1;
   items[2] = callback3(closure_7, obj2);
   obj1.children = items;
-  const items2 = [callback3(closure_7, obj1), callback2(importDefault(14106), { style: { marginVertical: 16 } }), , , , , ];
+  const items2 = [callback3(closure_7, obj1), callback2(importDefault(14156), { style: { marginVertical: 16 } }), , , , , ];
   const obj5 = { variant: "text-md/semibold", color: "interactive-text-active" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj5.children = intl3.string(require(1212) /* getSystemLocale */.t["9SgXmT"]);
@@ -60,7 +60,7 @@ function WhatYouLose(subscription) {
   items2[5] = callback2(require(4126) /* Text */.Text, obj7);
   const obj8 = {};
   const formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.OVlNGT, obj);
-  obj8.source = importDefault(14124);
+  obj8.source = importDefault(14174);
   obj8.style = tmp.cactus;
   items2[6] = callback2(importDefault(5085), obj8);
   obj.children = items2;
@@ -74,8 +74,8 @@ function CancelSubscriptionButtonFooter(guild) {
   let first = tmp3[0];
   const dependencyMap = tmp3[1];
   const tmp2 = _createForOfIteratorHelperLoose();
-  const analyticsLocations = subscription(5464)(subscription(5484).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let obj = subscription(8002);
+  const analyticsLocations = subscription(5462)(subscription(5482).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
+  let obj = subscription(7433);
   cancelSubscription = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
@@ -107,8 +107,8 @@ function Content(subscription) {
   let listing;
   subscription = subscription.subscription;
   const tmp = _createForOfIteratorHelperLoose();
-  ({ listing, guild } = importDefault(14112)(subscription));
-  let obj = require(14101) /* _createForOfIteratorHelperLoose */;
+  ({ listing, guild } = importDefault(14162)(subscription));
+  let obj = require(14151) /* _createForOfIteratorHelperLoose */;
   let id;
   if (null != guild) {
     id = guild.id;
@@ -128,7 +128,7 @@ function Content(subscription) {
       obj = { style: tmp.container };
       obj = {};
       const obj1 = { style: tmp.heroImage, asset: tmp6 };
-      const items = [callback2(importDefault(14125), obj1), ];
+      const items = [callback2(importDefault(14175), obj1), ];
       const obj2 = { style: tmp.body };
       const obj3 = { guild, listingId: listing.id, subscription };
       const items1 = [callback2(WhatYouLose, obj3), , , , ];
@@ -143,7 +143,7 @@ function Content(subscription) {
       const obj7 = { size: 16 };
       items1[3] = callback2(require(1273) /* Button */.Spacer, obj7);
       const obj8 = { listingId: listing.id, guildId: guild.id };
-      items1[4] = callback2(importAll(14126).Content, obj8);
+      items1[4] = callback2(importAll(14176).Content, obj8);
       obj2.children = items1;
       items[1] = callback3(closure_7, obj2);
       obj.children = items;

@@ -1,9 +1,9 @@
-// Module ID: 14980
-// Function ID: 114161
+// Module ID: 15027
+// Function ID: 114482
 // Name: VOICE_USER_SUMMARY_HEIGHT
-// Dependencies: [31, 27, 33, 1273, 4130, 8830, 8829, 4654, 4658, 2]
+// Dependencies: [31, 27, 33, 1273, 4130, 8869, 8868, 4654, 4658, 2]
 
-// Module 14980 (VOICE_USER_SUMMARY_HEIGHT)
+// Module 15027 (VOICE_USER_SUMMARY_HEIGHT)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import importAllResult from "result";
@@ -26,10 +26,10 @@ const memoResult = importAllResult.memo((guildId) => {
   ({ users, max, renderIcon, noPadding, stageIcon } = guildId);
   const tmp = callback2();
   let transparentBorder = null;
-  if (importDefault(8830)()) {
+  if (importDefault(8869)()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = guildId(8829);
+  let obj = guildId(8868);
   obj = {};
   const items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   obj.style = items;

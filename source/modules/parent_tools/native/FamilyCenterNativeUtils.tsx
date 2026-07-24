@@ -1,10 +1,10 @@
-// Module ID: 11058
-// Function ID: 86038
+// Module ID: 11085
+// Function ID: 86227
 // Name: FAMILY_CENTER_REQUEST_MODAL_KEY
-// Dependencies: [4348, 6770, 653, 675, 6771, 4337, 11059, 1934, 2]
+// Dependencies: [4348, 6770, 653, 675, 6771, 4337, 11086, 1934, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 11058 (FAMILY_CENTER_REQUEST_MODAL_KEY)
+// Module 11085 (FAMILY_CENTER_REQUEST_MODAL_KEY)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import items from "items";
 import { AnalyticEvents } from "ME";
@@ -27,7 +27,7 @@ export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeSca
     importDefault(6771).setPendingConnection(match[1], match[2]);
     const obj3 = importDefault(6771);
     obj = { userId: match[1], linkCode: match[2] };
-    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11059, dependencyMap.paths), obj, "family-center-request-modal");
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11086, dependencyMap.paths), obj, "family-center-request-modal");
   }
 };
 export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
@@ -38,7 +38,7 @@ export const resumeFamilyCenterConnection = function resumeFamilyCenterConnectio
     obj.popWithKey("family-center-request-modal");
     obj = {};
     ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
-    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11059, dependencyMap.paths), obj, "family-center-request-modal");
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11086, dependencyMap.paths), obj, "family-center-request-modal");
     flag = true;
     const obj2 = importDefault(4337);
   }

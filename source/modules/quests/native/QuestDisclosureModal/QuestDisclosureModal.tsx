@@ -1,15 +1,15 @@
-// Module ID: 14005
-// Function ID: 107223
+// Module ID: 14055
+// Function ID: 107546
 // Name: CloseButton
-// Dependencies: [33, 5788, 7607, 14004, 1212, 5087, 14006, 5519, 2]
+// Dependencies: [33, 5788, 7696, 14054, 1212, 5087, 14056, 5517, 2]
 // Exports: default
 
-// Module 14005 (CloseButton)
+// Module 14055 (CloseButton)
 import { jsx } from "jsxProd";
 
 function CloseButton() {
   const obj = {
-    source: importDefault(7607),
+    source: importDefault(7696),
     onPress() {
       return outer1_1(outer1_2[3]).hideModal();
     }
@@ -17,7 +17,7 @@ function CloseButton() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   return jsx(require(5788) /* HeaderActionButton */.HeaderActionButton, {
-    source: importDefault(7607),
+    source: importDefault(7696),
     onPress() {
       return outer1_1(outer1_2[3]).hideModal();
     }
@@ -54,5 +54,5 @@ export default function QuestDisclosureModal(arg0) {
   obj = { screens: { [closure_4.DISCLOSURE]: obj }, initialRouteName: constants.DISCLOSURE };
   let intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  return jsx(require(5519) /* NavigationStack */.Navigator, { screens: { [closure_4.DISCLOSURE]: obj }, initialRouteName: constants.DISCLOSURE });
+  return jsx(require(5517) /* NavigationStack */.Navigator, { screens: { [closure_4.DISCLOSURE]: obj }, initialRouteName: constants.DISCLOSURE });
 };

@@ -1,10 +1,10 @@
-// Module ID: 8631
-// Function ID: 68377
+// Module ID: 8673
+// Function ID: 68599
 // Name: GameGenres
 // Dependencies: [57, 653, 3952, 1212, 4369, 477, 3712, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8631 (GameGenres)
+// Module 8673 (GameGenres)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 

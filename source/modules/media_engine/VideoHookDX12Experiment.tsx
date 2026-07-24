@@ -1,9 +1,9 @@
-// Module ID: 12769
-// Function ID: 99475
+// Module ID: 12820
+// Function ID: 99796
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12769 (apexExperiment)
+// Module 12820 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-04-video-hook-dx12", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

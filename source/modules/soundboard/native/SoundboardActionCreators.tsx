@@ -1,10 +1,10 @@
-// Module ID: 15744
-// Function ID: 121485
+// Module ID: 15791
+// Function ID: 121807
 // Name: showSoundboardSoundPickerActionSheet
-// Dependencies: [653, 1207, 3946, 1334, 4098, 15745, 1934, 2]
+// Dependencies: [653, 1207, 3946, 1334, 4098, 15792, 1934, 2]
 // Exports: showSoundboardSoundPickerActionSheet
 
-// Module 15744 (showSoundboardSoundPickerActionSheet)
+// Module 15791 (showSoundboardSoundPickerActionSheet)
 import { ComponentActions } from "ME";
 
 let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporting("modules/soundboard/native/SoundboardActionCreators.tsx");
@@ -17,5 +17,5 @@ export const showSoundboardSoundPickerActionSheet = function showSoundboardSound
   ComponentDispatch.dispatch(ComponentActions.TOGGLE_CALL_CONTROL_DRAWER);
   const result = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
   const obj = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
-  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(15745, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource });
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(15792, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource });
 };

@@ -1,9 +1,9 @@
-// Module ID: 8181
-// Function ID: 64566
+// Module ID: 8225
+// Function ID: 64794
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8182, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 8226, 566, 686, 2]
 
-// Module 8181 (_isNativeReflectConstruct)
+// Module 8225 (_isNativeReflectConstruct)
 import initialize from "initialize";
 import dispatcher from "dispatcher";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -23,20 +23,20 @@ function _isNativeReflectConstruct() {
 function handleDismiss(closeReason) {
   let DISMISSED = closeReason.closeReason;
   if (DISMISSED === undefined) {
-    DISMISSED = require(8182) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+    DISMISSED = require(8226) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
-  obj.entrypoint = require(8182) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
+  obj.entrypoint = require(8226) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
   obj.closeReason = DISMISSED;
   obj.initialState = undefined;
   obj.activeChannelId = null;
   return true;
 }
 function handleDismissWithDismissed() {
-  handleDismiss({ closeReason: require(8182) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED });
+  handleDismiss({ closeReason: require(8226) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED });
 }
 function handleSetActiveCommand() {
-  handleDismiss({ closeReason: require(8182) /* AppLauncherEntrypoint */.AppLauncherCloseReason.COMMAND });
+  handleDismiss({ closeReason: require(8226) /* AppLauncherEntrypoint */.AppLauncherCloseReason.COMMAND });
 }
 let obj = { show: false, entrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, lastShownEntrypoint: require("AppLauncherEntrypoint").AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: require("AppLauncherEntrypoint").AppLauncherCloseReason.DISMISSED, initialState: undefined };
 let tmp2 = ((Store) => {
@@ -144,7 +144,7 @@ obj = {
     obj.entrypoint = entrypoint;
     obj.lastShownEntrypoint = entrypoint;
     ({ activeViewType, initialState, activeChannelId } = entrypoint);
-    obj.closeReason = require(8182) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+    obj.closeReason = require(8226) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
     obj.activeViewType = activeViewType;
     obj.activeChannelId = activeChannelId;
     obj.initialState = initialState;

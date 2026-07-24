@@ -1,5 +1,5 @@
 // Module ID: 687
-// Function ID: 8472
+// Function ID: 8473
 // Name: STORAGE_KEY_LOG_DISPATCHES
 // Dependencies: [688, 2]
 

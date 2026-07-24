@@ -1,9 +1,9 @@
-// Module ID: 10559
-// Function ID: 82477
+// Module ID: 10588
+// Function ID: 82669
 // Name: areParticipantsEqual
-// Dependencies: [57, 31, 27, 1347, 4143, 1194, 4177, 1906, 4952, 10539, 10210, 4148, 33, 4130, 1273, 689, 10215, 22, 10531, 10560, 566, 4323, 10561, 10564, 10574, 10020, 10590, 10597, 10527, 10615, 3834, 7812, 8479, 10546, 10542, 10545, 1450, 477, 8303, 2]
+// Dependencies: [57, 31, 27, 1347, 4143, 1194, 4177, 1906, 4952, 10568, 10240, 4148, 33, 4130, 1273, 689, 10245, 22, 10560, 10589, 566, 4323, 10590, 10593, 10603, 10052, 10619, 10626, 10556, 10644, 3834, 7903, 8524, 10575, 10571, 10574, 1450, 477, 8347, 2]
 
-// Module 10559 (areParticipantsEqual)
+// Module 10588 (areParticipantsEqual)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "hasFetchedColors";
 import get_ActivityIndicator from "ActivityTileInner";
@@ -296,15 +296,15 @@ let closure_21 = importAllResult.memo((channel) => {
     obj.style = items1;
     if (tmp10) {
       if (!tmp4) {
-        obj2 = { participant: tmp5, avatarSize: require(1273) /* Button */.AvatarSizes.PROFILE, resizeMode: require(10574) /* resetIOSScrollZoom */.ResizeMode.COVER };
-        let tmp18 = callback3(importDefault(10590), obj2);
-        const tmp16 = importDefault(10590);
+        obj2 = { participant: tmp5, avatarSize: require(1273) /* Button */.AvatarSizes.PROFILE, resizeMode: require(10603) /* resetIOSScrollZoom */.ResizeMode.COVER };
+        let tmp18 = callback3(importDefault(10619), obj2);
+        const tmp16 = importDefault(10619);
       }
       let items2 = [tmp18, ];
       let tmp22 = null;
       if (tmp3) {
         let obj3 = { style: tmp.thermalAlertIconContainer };
-        let obj4 = { style: tmp.thermalAlertIcon, source: importDefault(8479), color: tmp.thermalAlertIcon.color };
+        let obj4 = { style: tmp.thermalAlertIcon, source: importDefault(8524), color: tmp.thermalAlertIcon.color };
         obj3.children = callback3(require(1273) /* Button */.Icon, obj4);
         tmp22 = callback3(closure_5, obj3);
       }
@@ -326,13 +326,13 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = require(10546) /* useIsViewingActivity */;
+  let obj = require(10575) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = require(10542) /* useShouldForcePipOrientation */;
+  let obj2 = require(10571) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp4 = importDefault(10545)(obj);
+  const tmp4 = importDefault(10574)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background };
   obj2 = { activeOpacity: 0.7 };
   const obj3 = {};

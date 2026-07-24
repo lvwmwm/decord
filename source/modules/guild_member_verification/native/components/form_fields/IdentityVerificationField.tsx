@@ -1,10 +1,10 @@
-// Module ID: 9180
-// Function ID: 71901
+// Module ID: 9216
+// Function ID: 72110
 // Name: BaseIdentityVerificationField
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 4082, 4543, 1212, 3950, 9181, 4337, 9236, 1934, 9239, 9265, 9212, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 4082, 4543, 1212, 3950, 9217, 4337, 9272, 1934, 9275, 9301, 9248, 2]
 // Exports: default
 
-// Module 9180 (BaseIdentityVerificationField)
+// Module 9216 (BaseIdentityVerificationField)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -92,11 +92,11 @@ export default function IdentityVerificationField(arg0) {
       stringResult1 = intl.string(require(1212) /* getSystemLocale */.t.mhv8BM);
     }
     if (require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = require(9265) /* EnvelopeIcon */.EnvelopeIcon;
+      let EnvelopeIcon = require(9301) /* EnvelopeIcon */.EnvelopeIcon;
     } else if (require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = require(9212) /* MobilePhoneIcon */.MobilePhoneIcon;
+      EnvelopeIcon = require(9248) /* MobilePhoneIcon */.MobilePhoneIcon;
     } else {
-      EnvelopeIcon = require(9265) /* EnvelopeIcon */.EnvelopeIcon;
+      EnvelopeIcon = require(9301) /* EnvelopeIcon */.EnvelopeIcon;
     }
     let obj = {
       label: stringResult1,

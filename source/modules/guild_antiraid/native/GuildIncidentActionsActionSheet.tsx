@@ -1,9 +1,9 @@
-// Module ID: 10974
-// Function ID: 85321
+// Module ID: 11001
+// Function ID: 85510
 // Name: DurationSelectionActionSheet
-// Dependencies: [31, 10219, 10975, 7703, 653, 33, 4130, 5500, 5186, 1212, 5502, 624, 7702, 4098, 1273, 5165, 5503, 5504, 8479, 7576, 4965, 4543, 10976, 675, 10977, 2]
+// Dependencies: [31, 10249, 11002, 7792, 653, 33, 4130, 5498, 5186, 1212, 5500, 624, 7791, 4098, 1273, 5165, 5501, 5502, 8524, 7631, 4965, 4543, 11003, 675, 11004, 2]
 
-// Module 10974 (DurationSelectionActionSheet)
+// Module 11001 (DurationSelectionActionSheet)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import useGuildIncidentsActionSheetStore from "useGuildIncidentsActionSheetStore";
@@ -43,9 +43,9 @@ function DurationSelectionActionSheet(onClose) {
       }, label.value);
     })
   };
-  items[1] = callback2(onClose(5502).ActionSheetRow.Group, obj);
+  items[1] = callback2(onClose(5500).ActionSheetRow.Group, obj);
   obj.children = items;
-  return callback3(onClose(5500).ActionSheet, obj);
+  return callback3(onClose(5498).ActionSheet, obj);
 }
 ({ resetGuildIncidentsActionSheetStore: closure_5, setInitialTime: closure_6, setPauseDms: closure_7, setPauseInvites: closure_8, setTime: closure_9, useGuildIncidentsActionSheetStore: closure_10 } = useGuildIncidentsActionSheetStore);
 ({ AnalyticEvents: closure_12, GuildFeatures: closure_13 } = ME);

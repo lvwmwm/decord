@@ -1,10 +1,10 @@
-// Module ID: 9136
-// Function ID: 71520
+// Module ID: 9172
+// Function ID: 71729
 // Name: useIsNsfwGated
 // Dependencies: [4346, 1849, 566, 2]
 // Exports: default
 
-// Module 9136 (useIsNsfwGated)
+// Module 9172 (useIsNsfwGated)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

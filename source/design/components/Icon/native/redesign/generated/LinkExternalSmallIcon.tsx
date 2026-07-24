@@ -1,10 +1,10 @@
-// Module ID: 7563
-// Function ID: 60521
+// Module ID: 7620
+// Function ID: 60671
 // Name: LinkExternalSmallIcon
-// Dependencies: [31, 33, 689, 3833, 7564, 2]
+// Dependencies: [31, 33, 689, 3833, 7621, 2]
 // Exports: LinkExternalSmallIcon
 
-// Module 7563 (LinkExternalSmallIcon)
+// Module 7620 (LinkExternalSmallIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const LinkExternalSmallIcon = function LinkExternalSmallIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(7564) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(7621) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7564) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7621) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

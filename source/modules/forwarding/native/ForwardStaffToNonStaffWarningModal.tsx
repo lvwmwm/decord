@@ -1,10 +1,10 @@
-// Module ID: 9877
-// Function ID: 76475
+// Module ID: 9909
+// Function ID: 76669
 // Name: ForwardStaffToNonStaffWarningModal
 // Dependencies: [33, 4475, 1212, 2]
 // Exports: default
 
-// Module 9877 (ForwardStaffToNonStaffWarningModal)
+// Module 9909 (ForwardStaffToNonStaffWarningModal)
 import jsxProd from "jsxProd";
 
 let closure_2;

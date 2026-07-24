@@ -1,5 +1,5 @@
 // Module ID: 5174
-// Function ID: 45001
+// Function ID: 45006
 // Name: TableRowTrailingText
 // Dependencies: [31, 33, 4126, 2]
 // Exports: TableRowTrailingText

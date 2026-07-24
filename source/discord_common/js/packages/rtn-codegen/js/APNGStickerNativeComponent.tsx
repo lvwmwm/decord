@@ -1,9 +1,9 @@
-// Module ID: 9617
-// Function ID: 74905
+// Module ID: 9653
+// Function ID: 75116
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 9617 (__INTERNAL_VIEW_CONFIG)
+// Module 9653 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "APNGStickerView", validAttributes: { url: true } };

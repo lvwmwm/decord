@@ -1,7 +1,7 @@
 // Module ID: 4345
-// Function ID: 38380
+// Function ID: 38381
 // Name: shouldAgeVerifyForAgeGate
-// Dependencies: [1391, 1348, 4346, 1838, 1849, 1197, 653, 1212, 21, 4347, 3809, 4956, 566, 7538, 1920, 5589, 5723, 2]
+// Dependencies: [1391, 1348, 4346, 1838, 1849, 1197, 653, 1212, 21, 4347, 3809, 4956, 566, 7583, 1920, 5587, 5723, 2]
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userCannotSeeNSFWContent, userNeedsAgeGate
 
 // Module 4345 (shouldAgeVerifyForAgeGate)
@@ -240,7 +240,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
       obj.description = stringResult1;
       const intl7 = require(dependencyMap[num]).intl;
       obj.agreement = intl7.string(require(dependencyMap[num]).t.FDSSia);
-      obj.modalType = require(7538) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+      obj.modalType = require(7583) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
     }
     const format = intl6.format;
     let string2 = tmp28(tmp29[num]).t;
@@ -253,7 +253,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
     const intl8 = require(dependencyMap[num]).intl;
     string2 = intl8.string;
     obj.agreement = string2(require(dependencyMap[num]).t.Zt4Mf4);
-    num = require(7538) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+    num = require(7583) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
     obj.modalType = num;
   } else if (stateFromStores) {
     const intl4 = require(dependencyMap[num]).intl;
@@ -264,7 +264,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
     obj = { helpURL: importDefault(1920).getArticleURL(constants.NSFW_AGE_GATING) };
     obj.description = intl5.format(tmp2 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"], obj);
     obj.agreement = null;
-    NSFW_CHANNEL_UNDERAGE = require(7538) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
+    NSFW_CHANNEL_UNDERAGE = require(7583) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
     obj.modalType = NSFW_CHANNEL_UNDERAGE;
     const obj5 = importDefault(1920);
     const tmp21 = tmp2 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"];
@@ -275,7 +275,7 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
     obj.description = intl2.string(tmp2 ? t2.ZtuRts : t2.E4Cd5I);
     const intl3 = require(dependencyMap[num]).intl;
     obj.agreement = intl3.string(require(dependencyMap[num]).t.wVq7uo);
-    obj.modalType = require(7538) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
+    obj.modalType = require(7583) /* AgeVerificationModalEntryPoint */.NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
     return obj;
   }
 };
@@ -407,9 +407,9 @@ export const maybeOpenAgeGateForVoiceChannel = function maybeOpenAgeGateForVoice
   const tmp = !shouldShowAgeGateForVoiceChannel(id);
   let flag = !tmp;
   if (!tmp) {
-    require(5589) /* openAgeGateModal */.openAgeGateModal(AgeGateSource.NSFW_VOICE_CHANNEL);
+    require(5587) /* openAgeGateModal */.openAgeGateModal(AgeGateSource.NSFW_VOICE_CHANNEL);
     flag = true;
-    const obj = require(5589) /* openAgeGateModal */;
+    const obj = require(5587) /* openAgeGateModal */;
   }
   return flag;
 };
@@ -419,8 +419,8 @@ export const maybeShowAgeGate = function maybeShowAgeGate(guildId, channelId, NS
     if (null == NSFW_SERVER) {
       NSFW_SERVER = AgeGateSource.NSFW_SERVER;
     }
-    require(5589) /* openAgeGateModal */.openAgeGateModal(NSFW_SERVER);
-    const obj2 = require(5589) /* openAgeGateModal */;
+    require(5587) /* openAgeGateModal */.openAgeGateModal(NSFW_SERVER);
+    const obj2 = require(5587) /* openAgeGateModal */;
   } else {
     let tmp2 = isCurrentUserMissingDateOfBirth();
     if (tmp2) {
@@ -431,8 +431,8 @@ export const maybeShowAgeGate = function maybeShowAgeGate(guildId, channelId, NS
       if (null == NSFW_SERVER) {
         NSFW_CHANNEL = AgeGateSource.NSFW_CHANNEL;
       }
-      require(5589) /* openAgeGateModal */.openAgeGateModal(NSFW_CHANNEL);
-      const obj = require(5589) /* openAgeGateModal */;
+      require(5587) /* openAgeGateModal */.openAgeGateModal(NSFW_CHANNEL);
+      const obj = require(5587) /* openAgeGateModal */;
     }
   }
 };

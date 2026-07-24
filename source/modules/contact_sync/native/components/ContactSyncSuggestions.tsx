@@ -1,10 +1,10 @@
-// Module ID: 11727
-// Function ID: 91031
+// Module ID: 11754
+// Function ID: 91269
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [57, 31, 27, 653, 11728, 33, 4130, 689, 5084, 4549, 4126, 3969, 1392, 9094, 1273, 1212, 3834, 3974, 21, 7495, 7879, 4554, 668, 4543, 675, 2]
+// Dependencies: [57, 31, 27, 653, 11755, 33, 4130, 689, 5084, 4549, 4126, 3969, 1392, 9132, 1273, 1212, 3834, 3974, 21, 7636, 7527, 4554, 668, 4543, 675, 2]
 // Exports: default
 
-// Module 11727 (SuggestedFriendsSectionHeader)
+// Module 11754 (SuggestedFriendsSectionHeader)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -67,7 +67,7 @@ function SuggestionRow(suggestion) {
   obj.onPress = function onPress() {
     return onSelect(suggestion.suggested_user.id);
   };
-  return callback(suggestion(9094).TableCheckboxRow, obj);
+  return callback(suggestion(9132).TableCheckboxRow, obj);
 }
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -178,7 +178,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   obj.contentContainerStyle = obj1;
   obj.data = memo;
   obj.renderItem = callback1;
-  const items5 = [callback(friendSuggestions(7879).FlashList, obj), , ];
+  const items5 = [callback(friendSuggestions(7527).FlashList, obj), , ];
   obj2 = { style: tmp.linearGradient };
   const someResult = keys.some((arg0) => first[arg0]);
   obj2.start = friendSuggestions(668).VerticalGradient.START;

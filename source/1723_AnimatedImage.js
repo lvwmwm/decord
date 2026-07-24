@@ -1,5 +1,5 @@
 // Module ID: 1723
-// Function ID: 19369
+// Function ID: 19370
 // Name: AnimatedImage
 // Dependencies: [27, 1616]
 

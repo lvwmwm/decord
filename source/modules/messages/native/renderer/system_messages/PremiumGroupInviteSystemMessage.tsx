@@ -1,10 +1,10 @@
-// Module ID: 7733
-// Function ID: 61496
+// Module ID: 7822
+// Function ID: 61782
 // Name: createPremiumGroupInviteSystemMessage
-// Dependencies: [1194, 1348, 4130, 689, 7734, 7652, 7635, 7738, 2]
+// Dependencies: [1194, 1348, 4130, 689, 7823, 7741, 7724, 7487, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 7733 (createPremiumGroupInviteSystemMessage)
+// Module 7822 (createPremiumGroupInviteSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -19,16 +19,16 @@ export const createPremiumGroupInviteSystemMessage = function createPremiumGroup
   ({ message, theme } = message);
   channel = channel.getChannel(message.getChannelId());
   id = id.getId();
-  let obj = require(7734) /* createPremiumGroupInviteEmbed */;
+  let obj = require(7823) /* createPremiumGroupInviteEmbed */;
   const premiumGroupInviteEmbed = obj.createPremiumGroupInviteEmbed(message, theme, id, channel);
   if (null == premiumGroupInviteEmbed) {
     return null;
   } else {
     const tmp5 = _createForOfIteratorHelperLoose(theme);
     obj = {};
-    const merged = Object.assign(importDefault(7652)(message));
+    const merged = Object.assign(importDefault(7741)(message));
     obj["premiumGroupInviteInfo"] = premiumGroupInviteEmbed;
-    obj["iconUrl"] = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7738));
+    obj["iconUrl"] = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7487));
     obj["iconTintColor"] = tmp5.iconTintColor;
     obj["iconDividerColor"] = tmp5.iconDividerColor;
     return obj;

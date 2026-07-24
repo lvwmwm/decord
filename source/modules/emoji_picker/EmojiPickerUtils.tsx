@@ -1,10 +1,10 @@
-// Module ID: 9330
-// Function ID: 72873
+// Module ID: 9366
+// Function ID: 73082
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4991, 1838, 4970, 1849, 4995, 653, 1852, 1314, 1851, 491, 9331, 4324, 9332, 9334, 9335, 566, 1872, 9336, 1212, 3775, 3771, 675, 22, 664, 1331, 2]
+// Dependencies: [31, 4991, 1838, 4970, 1849, 4995, 653, 1852, 1314, 1851, 491, 9367, 4324, 9368, 9370, 9371, 566, 1872, 9372, 1212, 3775, 3771, 675, 22, 664, 1331, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useIsFavoriteEmoji
 
-// Module 9330 (_createForOfIteratorHelperLoose)
+// Module 9366 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -171,7 +171,7 @@ export const initializeSearch = function initializeSearch(arg0) {
   ({ intention, location: _location } = arg0);
   let obj = require(491) /* v1 */;
   const replaced = obj.v4().replace(closure_21, "");
-  const EmojiPickerStore = require(9331) /* createStore */.EmojiPickerStore;
+  const EmojiPickerStore = require(9367) /* createStore */.EmojiPickerStore;
   EmojiPickerStore.setAnalyticsId(replaced);
   const str = obj.v4();
   obj = { search_type: searchTypeForIntention(intention), load_id: replaced, location: _location };
@@ -204,7 +204,7 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, gui
   let stateFromStores1;
   let c11;
   let soundmojiEmojiPickerSectionExperiment;
-  const result = _require(9332).maybeFetchTopEmojisByGuild(tmp);
+  const result = _require(9368).maybeFetchTopEmojisByGuild(tmp);
   let tmp5 = callback(CHAT);
   c4 = tmp5;
   let tmp6 = useFrequentlyUsedEmojis(tmp);
@@ -213,10 +213,10 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, gui
   c6 = tmp7;
   let tmp8 = useFavoriteEmojis(tmp);
   c7 = tmp8;
-  let obj = _require(9332);
-  ({ topEmojis, newlyAddedEmojis } = importDefault(9334)(tmp, CHAT));
-  allEmojis = importDefault(9335)({ topEmojis, newlyAddedEmojis }).allEmojis;
-  const tmp9 = importDefault(9334)(tmp, CHAT);
+  let obj = _require(9368);
+  ({ topEmojis, newlyAddedEmojis } = importDefault(9370)(tmp, CHAT));
+  allEmojis = importDefault(9371)({ topEmojis, newlyAddedEmojis }).allEmojis;
+  const tmp9 = importDefault(9370)(tmp, CHAT);
   let items = [c4];
   let items1 = [tmp];
   stateFromStores = _require(566).useStateFromStores(items, () => _undefined.getDisambiguatedEmojiContext(closure_2), items1);
@@ -237,7 +237,7 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, gui
   const isPremiumResult = _require(1872).isPremium(stateFromStores2);
   c11 = isPremiumResult;
   const obj5 = _require(1872);
-  soundmojiEmojiPickerSectionExperiment = _require(9336).useSoundmojiEmojiPickerSectionExperiment({ location: "useEmojiCategories" });
+  soundmojiEmojiPickerSectionExperiment = _require(9372).useSoundmojiEmojiPickerSectionExperiment({ location: "useEmojiCategories" });
   const items4 = [stateFromStores, channel, tmp, CHAT, isPremiumResult, allEmojis, stateFromStores1, tmp7, tmp6, tmp8, tmp5, soundmojiEmojiPickerSectionExperiment, flag];
   return flag.useMemo(() => {
     let emojiNitroLocked;
@@ -449,7 +449,7 @@ export const trackPremiumSettingsPaneOpened = function trackPremiumSettingsPaneO
 export const trackEmojiSearchStart = function trackEmojiSearchStart(location, intention) {
   let obj = importDefault(4324);
   obj = { search_type: searchTypeForIntention(intention), location };
-  const EmojiPickerStore = require(9331) /* createStore */.EmojiPickerStore;
+  const EmojiPickerStore = require(9367) /* createStore */.EmojiPickerStore;
   const merged = Object.assign(loadIdPayload(EmojiPickerStore.getAnalyticsId()));
   obj.trackWithMetadata(constants4.SEARCH_STARTED, obj);
 };
@@ -488,7 +488,7 @@ export const trackEmojiSearchSelect = function trackEmojiSearchSelect(arg0) {
     loadId = emojiSuggestions.loadId;
   }
   if (null == loadId) {
-    const EmojiPickerStore = require(9331) /* createStore */.EmojiPickerStore;
+    const EmojiPickerStore = require(9367) /* createStore */.EmojiPickerStore;
     loadId = EmojiPickerStore.getAnalyticsId();
   }
   const merged = Object.assign(loadIdPayload(loadId));

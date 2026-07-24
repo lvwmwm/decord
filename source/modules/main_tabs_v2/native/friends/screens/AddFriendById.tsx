@@ -1,9 +1,9 @@
-// Module ID: 12862
-// Function ID: 99938
+// Module ID: 12914
+// Function ID: 100261
 // Name: getDefaultTextState
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1212, 4126, 5773, 12863, 8927, 8923, 3830, 675, 3843, 7504, 4543, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1212, 4126, 5773, 12915, 8966, 8962, 3830, 675, 3843, 7645, 4543, 2]
 
-// Module 12862 (getDefaultTextState)
+// Module 12914 (getDefaultTextState)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -162,7 +162,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         substr = trimmed.substring(1);
         tmp2 = substr;
       }
-      obj = sourcePage(8927);
+      obj = sourcePage(8966);
       const validateDiscordTagResult = obj.validateDiscordTag(tmp2);
       if (null != validateDiscordTagResult) {
         obj = { status: outer1_13.ERROR, field: outer1_14.DISCORD_TAG, message: validateDiscordTagResult };
@@ -173,14 +173,14 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         const obj2 = { discordTag: tmp2 };
         const obj3 = { location: "Search - Add Friend Search" };
         obj2.context = obj3;
-        obj2.errorUxConfig = sourcePage(8923).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
+        obj2.errorUxConfig = sourcePage(8962).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
         let tmp9;
         if (trimmed1.length > 0) {
           tmp9 = trimmed1;
         }
         obj2.note = tmp9;
-        const obj5 = ref(8923);
-        ref(8923).sendRequest(obj2).then(() => {
+        const obj5 = ref(8962);
+        ref(8962).sendRequest(obj2).then(() => {
           outer1_4(outer2_16());
           outer1_8("");
           let obj = { status: outer2_13.SUCCESS };
@@ -219,8 +219,8 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
             if (null != code) {
               num2 = code;
             }
-            obj.message = sourcePage(8927).humanizeAbortCode(num2, substr);
-            obj = sourcePage(8927);
+            obj.message = sourcePage(8966).humanizeAbortCode(num2, substr);
+            obj = sourcePage(8966);
             let code1;
             if (null != body) {
               const body3 = body.body;
@@ -233,11 +233,11 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
             }
             obj.a11yMessage = obj.humanizeAbortCodeForA11y(num, substr);
             outer1_6(obj);
-            const obj4 = sourcePage(8927);
+            const obj4 = sourcePage(8966);
             const tmp15 = outer1_6;
           }
         });
-        const sendRequestResult = ref(8923).sendRequest(obj2);
+        const sendRequestResult = ref(8962).sendRequest(obj2);
       }
     }
   }
@@ -255,7 +255,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const tmp6 = first(importAllResult.useState(""), 2);
   first2 = tmp6[0];
   closure_8 = tmp6[1];
-  let obj1 = importDefault(12863);
+  let obj1 = importDefault(12915);
   const enabled = obj1.useConfig({ location: "AddFriendbyId" }).enabled;
   const items = [first1];
   const items1 = [first1];
@@ -370,7 +370,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       }
     }
     obj6.status = str2;
-    items8[1] = callback(sourcePage(7504).TextArea, obj6);
+    items8[1] = callback(sourcePage(7645).TextArea, obj6);
     if (first1.status !== constants.ERROR) {
       const obj7 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted" };
       let intl2 = sourcePage(1212).intl;

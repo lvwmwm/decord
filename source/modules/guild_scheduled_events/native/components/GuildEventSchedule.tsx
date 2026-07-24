@@ -1,10 +1,10 @@
-// Module ID: 8370
-// Function ID: 66712
+// Module ID: 8414
+// Function ID: 66940
 // Name: GuildEventSchedule
-// Dependencies: [31, 33, 3712, 8346, 8371, 1212, 2]
+// Dependencies: [31, 33, 3712, 8390, 8415, 1212, 2]
 // Exports: default
 
-// Module 8370 (GuildEventSchedule)
+// Module 8414 (GuildEventSchedule)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -22,14 +22,14 @@ export default function GuildEventSchedule(schedule) {
   const onChange = schedule.onChange;
   ({ guildEvent, recurrenceId } = schedule);
   let obj = onChange(3712)();
-  const addResult = obj.add(schedule(8346).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  const addResult = obj.add(schedule(8390).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
   const memo = React.useMemo(() => onChange(outer1_2[2])(schedule.startDate).add(15, "minutes"), items);
   const tmp = onChange(3712)();
-  const addResult1 = onChange(3712)().add(schedule(8346).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const addResult1 = onChange(3712)().add(schedule(8390).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(schedule(8346).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(schedule(8346).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(schedule(8390).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(schedule(8390).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   obj = {};
   obj = {
@@ -47,7 +47,7 @@ export default function GuildEventSchedule(schedule) {
   obj.dateLabel = intl.string(schedule(1212).t.kKOIwJ);
   const intl2 = schedule(1212).intl;
   obj.timeLabel = intl2.string(schedule(1212).t["6dGmCD"]);
-  const items1 = [callback(schedule(8371).GuildEventDatetime, obj), ];
+  const items1 = [callback(schedule(8415).GuildEventDatetime, obj), ];
   let tmp9 = null != guildEvent.scheduled_end_time;
   if (tmp9) {
     const obj1 = {
@@ -65,7 +65,7 @@ export default function GuildEventSchedule(schedule) {
     obj1.dateLabel = intl3.string(schedule(1212).t.CTLgZJ);
     const intl4 = schedule(1212).intl;
     obj1.timeLabel = intl4.string(schedule(1212).t.j2RuXF);
-    tmp9 = callback(schedule(8371).GuildEventDatetime, obj1);
+    tmp9 = callback(schedule(8415).GuildEventDatetime, obj1);
   }
   items1[1] = tmp9;
   obj.children = items1;

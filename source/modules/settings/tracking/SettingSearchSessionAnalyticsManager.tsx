@@ -1,5 +1,5 @@
 // Module ID: 5794
-// Function ID: 49521
+// Function ID: 49532
 // Name: SettingSearchSessionAnalyticsManager
 // Dependencies: [6, 7, 491, 5795, 2]
 

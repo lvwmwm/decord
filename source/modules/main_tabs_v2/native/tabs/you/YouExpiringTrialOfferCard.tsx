@@ -1,10 +1,10 @@
-// Module ID: 15491
-// Function ID: 119249
+// Module ID: 15538
+// Function ID: 119571
 // Name: getNoticeCTAColor
-// Dependencies: [31, 27, 12646, 653, 6671, 1851, 33, 664, 4130, 689, 15492, 675, 1212, 3712, 624, 6686, 6678, 15490, 1920, 4126, 3776, 4660, 1273, 7871, 4554, 5511, 2]
+// Dependencies: [31, 27, 12697, 653, 6671, 1851, 33, 664, 4130, 689, 15539, 675, 1212, 3712, 624, 6686, 6678, 15537, 1920, 4126, 3776, 4660, 1273, 7486, 4554, 5509, 2]
 // Exports: default
 
-// Module 15491 (getNoticeCTAColor)
+// Module 15538 (getNoticeCTAColor)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -87,7 +87,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const tmp4 = importDefault(6678);
-  let obj3 = navigateToPremium(15490);
+  let obj3 = navigateToPremium(15537);
   shouldShowExpiringTrialOfferCard = obj3.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -178,7 +178,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         obj.children = items2;
         const obj8 = navigateToPremium(3776);
         const obj6 = { style: navigateToPremium.style, children: tmp12(tmp13, obj) };
-        return callback(importDefault(5511), obj6);
+        return callback(importDefault(5509), obj6);
       }
     }
     return null;

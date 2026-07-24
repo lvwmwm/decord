@@ -1,10 +1,10 @@
-// Module ID: 15361
-// Function ID: 117259
+// Module ID: 15408
+// Function ID: 117581
 // Name: SearchListContentAuthor
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 4126, 3969, 4320, 9096, 4645, 1212, 4593, 5167, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 4126, 3969, 4320, 9134, 4645, 1212, 4593, 5167, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15361 (SearchListContentAuthor)
+// Module 15408 (SearchListContentAuthor)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,13 +41,13 @@ function SearchListPrivateChannel(channel) {
     obj.style = tmp.channel;
     obj = { style: tmp.gdmIcon };
     obj = { channel, size: require(1273) /* Button */.AvatarSizes.SIZE_16 };
-    obj.children = callback(importDefault(9096), obj);
+    obj.children = callback(importDefault(9134), obj);
     const items = [callback(View, obj), ];
     const obj1 = { style: tmp.channelName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp2 };
     items[1] = callback(require(4126) /* Text */.Text, obj1);
     obj.children = items;
     let tmp3Result = tmp3(tmp4, obj);
-    const tmp15 = importDefault(9096);
+    const tmp15 = importDefault(9134);
   } else {
     obj.style = tmp.privateChannelIcon;
     const obj2 = { style: tmp.icon, size: "xs", color: "interactive-text-default" };

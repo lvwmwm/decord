@@ -1,9 +1,9 @@
-// Module ID: 10409
-// Function ID: 80189
+// Module ID: 10438
+// Function ID: 80381
 // Name: LikelyAtoWarningBanner
-// Dependencies: [31, 9101, 10410, 653, 662, 33, 4130, 689, 10131, 10132, 4337, 10282, 7488, 3827, 10411, 1212, 10414, 1934, 4126, 10418, 5459, 2]
+// Dependencies: [31, 9139, 10439, 653, 662, 33, 4130, 689, 10163, 10164, 4337, 10311, 7568, 3827, 10440, 1212, 10443, 1934, 4126, 10447, 2]
 
-// Module 10409 (LikelyAtoWarningBanner)
+// Module 10438 (LikelyAtoWarningBanner)
 import result from "result";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY";
@@ -55,7 +55,7 @@ class LikelyAtoWarningBanner {
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f80194 = handleLearnMore.useCallback((cta) => {
+    f80386 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
       obj = { channelId, guildId: null, muteDurationSeconds: outer1_9.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);
@@ -101,7 +101,7 @@ class LikelyAtoWarningBanner {
       const obj1 = { variant: "text-sm/normal", color: "text-link" };
       const intl2 = channelId(senderId[15]).intl;
       obj1.children = intl2.format(channelId(senderId[15]).t.UkH122, { learnMoreLink: handleLearnMore });
-      obj.learnMore = outer1_10(channelId(senderId[20]).TextWithIOSLinkWorkaround, obj1);
+      obj.learnMore = outer1_10(channelId(senderId[18]).Text, obj1);
       obj.pushLazy(tmp, obj, handleLearnMore);
       const arr = callback();
       const obj2 = { learnMoreLink: handleLearnMore };

@@ -1,10 +1,10 @@
-// Module ID: 8589
-// Function ID: 68200
+// Module ID: 8632
+// Function ID: 68423
 // Name: getRejectionReasons
-// Dependencies: [31, 4151, 653, 675, 1360, 8590, 8591, 8592, 44, 2]
+// Dependencies: [31, 4151, 653, 675, 1360, 8633, 8223, 8634, 44, 2]
 // Exports: default, gameIdIsAcceptable
 
-// Module 8589 (getRejectionReasons)
+// Module 8632 (getRejectionReasons)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
@@ -16,11 +16,11 @@ function getRejectionReasons(gameFlags) {
     return items;
   } else {
     const items1 = [];
-    if (obj.hasFlag(gameFlags.gameFlags, require(8590) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(gameFlags.gameFlags, require(8633) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       items1.push(closure_7.Disabled);
     }
-    const themes = gameFlags.themes;
-    if (themes.includes(require(8591) /* ThirdPartyGameApplicationThemes */.ThirdPartyGameApplicationThemes.EROTIC)) {
+    obj2 = importAll(1360);
+    if (obj.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(closure_7.NSFW);
     }
     return items1;

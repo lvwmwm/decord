@@ -1,10 +1,10 @@
-// Module ID: 8519
-// Function ID: 67948
+// Module ID: 8564
+// Function ID: 68178
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: [31, 1861, 665, 3834, 689, 1862, 2]
 // Exports: default
 
-// Module 8519 (useDisplayNameStylesEffectDefaultColors)
+// Module 8564 (useDisplayNameStylesEffectDefaultColors)
 import result from "result";
 import items3 from "items3";
 

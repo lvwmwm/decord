@@ -1,10 +1,10 @@
-// Module ID: 12699
-// Function ID: 98957
+// Module ID: 12750
+// Function ID: 99278
 // Name: NUFChannelIllustration
-// Dependencies: [57, 31, 27, 33, 4130, 689, 1212, 12700, 12701, 3991, 4131, 12702, 12703, 12704, 12705, 5167, 4638, 4126, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 1212, 12751, 12752, 3991, 4131, 12753, 12754, 12755, 12756, 5167, 4638, 4126, 2]
 // Exports: default
 
-// Module 12699 (NUFChannelIllustration)
+// Module 12750 (NUFChannelIllustration)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -54,7 +54,7 @@ export default function NUFChannelIllustration() {
       const obj = {};
       const intl2 = callback(1212).intl;
       obj.name = intl2.string(callback(1212).t["9m/HsX"]);
-      obj.avatar = first(12700);
+      obj.avatar = first(12751);
       obj.message = intl.string(callback(1212).t["5alrl0"]);
       items[tmp] = obj;
       return items;
@@ -65,7 +65,7 @@ export default function NUFChannelIllustration() {
       const obj = {};
       const intl2 = callback(1212).intl;
       obj.name = intl2.string(callback(1212).t["AW1kM+"]);
-      obj.avatar = first(12701);
+      obj.avatar = first(12752);
       obj.message = intl.string(callback(1212).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
@@ -103,22 +103,22 @@ export default function NUFChannelIllustration() {
   obj = { style: tmp.container };
   obj1 = {};
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  obj1.source = first(12702);
+  obj1.source = first(12753);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   obj1.style = items2;
   const items3 = [callback(closure_6, obj1), , , , , ];
-  obj2 = { source: first(12703), style: items4 };
+  obj2 = { source: first(12754), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = callback(closure_6, obj2);
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
-  items3[2] = callback(closure_6, { source: first(12704), style: items5 });
-  const obj3 = { source: first(12704), style: items5 };
+  items3[2] = callback(closure_6, { source: first(12755), style: items5 });
+  const obj3 = { source: first(12755), style: items5 };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
-  items3[3] = callback(closure_6, { source: first(12705), style: items6 });
+  items3[3] = callback(closure_6, { source: first(12756), style: items6 });
   items3[4] = callback(closure_5, { style: tmp.cardBackground });
   const obj6 = { style: tmp.card, shadow: "low", border: "subtle" };
   const obj7 = { style: tmp.header };

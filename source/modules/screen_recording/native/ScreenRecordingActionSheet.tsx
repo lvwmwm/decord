@@ -1,10 +1,10 @@
-// Module ID: 14721
-// Function ID: 112244
+// Module ID: 14768
+// Function ID: 112565
 // Name: ScreenRecordingActionSheet
-// Dependencies: [31, 27, 14717, 33, 4130, 689, 4126, 4543, 4098, 4660, 5119, 4120, 5500, 2]
+// Dependencies: [31, 27, 14764, 33, 4130, 689, 4126, 4543, 4098, 4660, 5119, 4120, 5498, 2]
 // Exports: default
 
-// Module 14721 (ScreenRecordingActionSheet)
+// Module 14768 (ScreenRecordingActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
@@ -120,5 +120,5 @@ export default function ScreenRecordingActionSheet() {
     tmp10Result = tmp13;
   }
   obj9 = { children: tmp10Result };
-  return callback(_require(5500).ActionSheet, obj9);
+  return callback(_require(5498).ActionSheet, obj9);
 };

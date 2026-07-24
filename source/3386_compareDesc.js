@@ -1,5 +1,5 @@
 // Module ID: 3386
-// Function ID: 26548
+// Function ID: 26549
 // Name: compareDesc
 // Dependencies: [3209, 3210]
 // Exports: default

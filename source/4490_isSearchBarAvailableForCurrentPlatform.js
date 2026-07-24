@@ -1,5 +1,5 @@
 // Module ID: 4490
-// Function ID: 39628
+// Function ID: 39629
 // Name: isSearchBarAvailableForCurrentPlatform
 // Dependencies: [27]
 // Exports: executeNativeBackPress, parseBooleanToOptionalBooleanNativeProp

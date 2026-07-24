@@ -1,10 +1,10 @@
-// Module ID: 8766
-// Function ID: 69303
+// Module ID: 8805
+// Function ID: 69518
 // Name: useProductDisableState
 // Dependencies: [3782, 566, 656, 1212, 2]
 // Exports: useProductDisableState
 
-// Module 8766 (useProductDisableState)
+// Module 8805 (useProductDisableState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 12877
-// Function ID: 100015
+// Module ID: 12929
+// Function ID: 100338
 // Name: BuildOverrideModal
-// Dependencies: [31, 27, 10440, 33, 4130, 689, 4066, 3976, 12878, 12879, 566, 10939, 3712, 5121, 4126, 1212, 4543, 4337, 2]
+// Dependencies: [31, 27, 10469, 33, 4130, 689, 4066, 3976, 12930, 12931, 566, 10966, 3712, 5121, 4126, 1212, 4543, 4337, 2]
 // Exports: default
 
-// Module 12877 (BuildOverrideModal)
+// Module 12929 (BuildOverrideModal)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,9 +43,9 @@ export default function BuildOverrideModal(overrideUrl) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = str(3976);
   if (obj.isThemeDark(tmp2)) {
-    let tmp3Result = tmp3(12878);
+    let tmp3Result = tmp3(12930);
   } else {
-    tmp3Result = tmp3(12879);
+    tmp3Result = tmp3(12931);
   }
   let obj1 = str(566);
   const items = [_isNativeReflectConstruct];
@@ -56,7 +56,7 @@ export default function BuildOverrideModal(overrideUrl) {
   if (null != override) {
     const targetBuildOverride = override.targetBuildOverride;
     if (null != targetBuildOverride) {
-      const tmp10 = targetBuildOverride[str(undefined, 10939).DEVICE_FIELD];
+      const tmp10 = targetBuildOverride[str(undefined, 10966).DEVICE_FIELD];
       if (null != tmp10) {
         id = tmp10.id;
       }

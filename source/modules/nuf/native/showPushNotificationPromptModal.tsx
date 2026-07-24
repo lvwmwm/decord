@@ -1,10 +1,10 @@
-// Module ID: 14783
-// Function ID: 112767
+// Module ID: 14830
+// Function ID: 113088
 // Name: showPushNotificationPromptModal
-// Dependencies: [11448, 11734, 4337, 14784, 1934, 11451, 2]
+// Dependencies: [11478, 11761, 4337, 14831, 1934, 11481, 2]
 // Exports: showPushNotificationPromptModal
 
-// Module 14783 (showPushNotificationPromptModal)
+// Module 14830 (showPushNotificationPromptModal)
 import { PermissionStateType } from "_isNativeReflectConstruct";
 import { NUF_NOTIFICATION_MODAL_KEY as closure_4 } from "NewUserTypes";
 
@@ -19,6 +19,6 @@ export const showPushNotificationPromptModal = function showPushNotificationProm
       onComplete();
     }
   };
-  obj.pushLazy(onComplete(1934)(14784, dependencyMap.paths), obj, closure_4);
-  const result = onComplete(11451).setPushPermissionState(PermissionStateType.PROMPT_SEEN);
+  obj.pushLazy(onComplete(1934)(14831, dependencyMap.paths), obj, closure_4);
+  const result = onComplete(11481).setPushPermissionState(PermissionStateType.PROMPT_SEEN);
 };

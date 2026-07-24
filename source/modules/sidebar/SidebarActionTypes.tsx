@@ -1,5 +1,5 @@
 // Module ID: 5661
-// Function ID: 48609
+// Function ID: 48619
 // Name: SidebarType
 // Dependencies: [2]
 

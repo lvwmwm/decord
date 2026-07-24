@@ -1,5 +1,5 @@
 // Module ID: 3457
-// Function ID: 26801
+// Function ID: 26802
 // Name: formatDistance
 // Dependencies: [3385, 3407, 3412, 3455, 3209, 3458, 3459, 3372, 3210, 3214]
 // Exports: default

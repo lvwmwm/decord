@@ -1,10 +1,10 @@
-// Module ID: 15830
-// Function ID: 122256
+// Module ID: 15877
+// Function ID: 122578
 // Name: ParticipantsSummary
-// Dependencies: [57, 31, 27, 33, 4130, 689, 3974, 15831, 9994, 1273, 4552, 4126, 3991, 4558, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3974, 15878, 10026, 1273, 4552, 4126, 3991, 4558, 2]
 // Exports: default
 
-// Module 15830 (ParticipantsSummary)
+// Module 15877 (ParticipantsSummary)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -19,13 +19,13 @@ function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(15831)(applicationId, channelId), max: 5 };
-  const tmp = importDefault(15831)(applicationId, channelId);
+  const obj = { users: importDefault(15878)(applicationId, channelId), max: 5 };
+  const tmp = importDefault(15878)(applicationId, channelId);
   obj.avatarSize = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj.withPlusCount = true;
   obj.style = { marginBottom: 8 };
   obj.cutout = { inset: -8 };
-  return callback2(importDefault(9994), obj);
+  return callback2(importDefault(10026), obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" } };

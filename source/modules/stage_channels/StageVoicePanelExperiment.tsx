@@ -1,5 +1,5 @@
 // Module ID: 4343
-// Function ID: 38376
+// Function ID: 38377
 // Name: useIsStageVoicePanelEnabled
 // Dependencies: [1428, 2]
 // Exports: isStageVoicePanelEnabled, useIsStageVoicePanelEnabled

@@ -1,10 +1,10 @@
-// Module ID: 11230
-// Function ID: 87435
+// Module ID: 11259
+// Function ID: 87675
 // Name: AppInThisServer
-// Dependencies: [31, 27, 33, 4130, 689, 11207, 1327, 4126, 1212, 4660, 1324, 11171, 8372, 8182, 11176, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 11237, 1327, 4126, 1212, 4660, 1324, 11201, 8416, 8226, 11206, 2]
 // Exports: default
 
-// Module 11230 (AppInThisServer)
+// Module 11259 (AppInThisServer)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function AppInThisServer(onAppSelected) {
   onAppSelected = onAppSelected.onAppSelected;
   const tmp2 = _createForOfIteratorHelperLoose();
   const application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11171);
+  let obj = onAppSelected(11201);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -46,13 +46,13 @@ function AppInThisServer(onAppSelected) {
   let tmp5 = null;
   if (null != appLauncherIconSource) {
     obj = { iconSource: appLauncherIconSource, wrapperStyle: tmp2.iconContainer, iconSize: 36 };
-    tmp5 = callback(application(11176), obj);
+    tmp5 = callback(application(11206), obj);
   }
   const items1 = [tmp5, ];
   const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
   items1[1] = callback(onAppSelected(4126).Text, obj1);
   obj.children = items1;
-  return closure_6(onAppSelected(8372).PressableScale, obj, application.id);
+  return closure_6(onAppSelected(8416).PressableScale, obj, application.id);
 }
 ({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);

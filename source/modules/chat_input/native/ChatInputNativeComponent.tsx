@@ -1,9 +1,9 @@
-// Module ID: 11357
-// Function ID: 88279
+// Module ID: 11386
+// Function ID: 88519
 // Name: ChatInputNativeComponent
-// Dependencies: [57, 31, 27, 3942, 33, 4130, 689, 1212, 4066, 3976, 3974, 477, 11109, 11115, 11117, 2]
+// Dependencies: [57, 31, 27, 3942, 33, 4130, 689, 1212, 4066, 3976, 3974, 477, 11136, 11142, 11144, 2]
 
-// Module 11357 (ChatInputNativeComponent)
+// Module 11386 (ChatInputNativeComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -73,8 +73,8 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
     num3 = 1;
   }
   const obj6 = _require(477);
-  const tmp10 = importDefault(11109)(onMaxHeightChanged);
-  _require = _require(11115).useShouldUseFabricChatInput();
+  const tmp10 = importDefault(11136)(onMaxHeightChanged);
+  _require = _require(11142).useShouldUseFabricChatInput();
   obj = { accessibilityLabel: tmp8, children: tmp9, editable, keyboardAppearance: num3, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp10, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset };
   return jsx(callback(importAllResult.useState(() => {
     if (callback) {

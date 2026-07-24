@@ -1,10 +1,10 @@
-// Module ID: 15461
-// Function ID: 118999
+// Module ID: 15508
+// Function ID: 119321
 // Name: UsernameSearchScreen
-// Dependencies: [31, 27, 653, 33, 4130, 689, 675, 5160, 4528, 8829, 477, 5587, 4662, 12862, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 675, 5160, 4528, 8868, 477, 5585, 4662, 12914, 1212, 2]
 // Exports: default
 
-// Module 15461 (UsernameSearchScreen)
+// Module 15508 (UsernameSearchScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -60,7 +60,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(8829);
+  let obj = navigation(8868);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj1 = navigation(477);
   let prop = null;
@@ -79,7 +79,7 @@ export default function UsernameSearchScreen(navigation) {
   const items2 = [callback(ref(4662), { absolute: true }), ];
   obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled" };
   const items3 = [tmp.container, prop, ];
-  const tmp7 = ref(5587);
+  const tmp7 = ref(5585);
   items3[2] = { paddingBottom: insets.bottom + ref(689).space.PX_16 };
   obj1.contentContainerStyle = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false };
@@ -88,7 +88,7 @@ export default function UsernameSearchScreen(navigation) {
   obj3.headerText = intl.string(navigation(1212).t.YEOwDM);
   obj3.headerTextStyle = tmp.headerText;
   obj3.ref = ref;
-  obj1.children = callback(ref(12862), obj3);
+  obj1.children = callback(ref(12914), obj3);
   items2[1] = callback(closure_4, obj1);
   obj.children = items2;
   obj.children = callback2(tmp7, obj);

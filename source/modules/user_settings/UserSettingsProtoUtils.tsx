@@ -1,5 +1,5 @@
 // Module ID: 1332
-// Function ID: 15642
+// Function ID: 15643
 // Name: getProtoFieldClass
 // Dependencies: [1318, 2]
 // Exports: createModifiedProto, getProtoFieldClass

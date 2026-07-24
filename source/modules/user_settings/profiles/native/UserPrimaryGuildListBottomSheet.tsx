@@ -1,10 +1,10 @@
-// Module ID: 13608
-// Function ID: 104551
+// Module ID: 13659
+// Function ID: 104875
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [31, 27, 7632, 33, 4130, 477, 689, 7845, 5165, 4098, 1212, 5515, 8577, 7520, 22, 5187, 4126, 7879, 7495, 2]
+// Dependencies: [31, 27, 7721, 33, 4130, 477, 689, 7934, 5165, 4098, 1212, 5513, 8620, 7655, 22, 5187, 4126, 7527, 7636, 2]
 // Exports: default
 
-// Module 13608 (UserPrimaryGuildListBottomSheet)
+// Module 13659 (UserPrimaryGuildListBottomSheet)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { GuildTagBadgeSize } from "items";
@@ -134,7 +134,7 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
   obj.children = intl.string(availableGuilds(1212).t.Fo0g9x);
   obj.children = callback(availableGuilds(4126).Text, obj);
   obj.header = callback(memo, obj);
-  obj.children = callback(availableGuilds(7879).BottomSheetFlashList, {
+  obj.children = callback(availableGuilds(7527).BottomSheetFlashList, {
     ItemSeparatorComponent() {
       return outer1_6(availableGuilds(outer1_2[18]).FormDivider, { iconPush: true, style: tmp.divider });
     },

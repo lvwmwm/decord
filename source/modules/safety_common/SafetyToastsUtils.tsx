@@ -1,10 +1,10 @@
-// Module ID: 7489
-// Function ID: 60110
+// Module ID: 7569
+// Function ID: 60356
 // Name: getSafetyToastTypeContent
-// Dependencies: [1348, 1849, 7483, 4319, 3969, 1212, 2298, 2]
+// Dependencies: [1348, 1849, 7563, 4319, 3969, 1212, 2298, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7489 (getSafetyToastTypeContent)
+// Module 7569 (getSafetyToastTypeContent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SafetyToastType } from "SafetyToastType";

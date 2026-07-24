@@ -1,10 +1,10 @@
-// Module ID: 14136
-// Function ID: 108796
+// Module ID: 14186
+// Function ID: 109119
 // Name: KrispLogo
-// Dependencies: [31, 27, 4177, 7662, 653, 33, 1920, 4130, 4066, 3976, 10728, 10729, 1212, 5217, 10727, 4126, 10724, 10095, 13550, 2]
+// Dependencies: [31, 27, 4177, 7751, 653, 33, 1920, 4130, 4066, 3976, 10757, 10758, 1212, 5217, 10756, 4126, 10753, 10127, 13601, 2]
 // Exports: default
 
-// Module 14136 (KrispLogo)
+// Module 14186 (KrispLogo)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,9 +24,9 @@ function KrispLogo() {
   const tmp = callback3();
   let obj = require(3976) /* AccessibilityAnnouncer */;
   if (obj.isThemeLight(tmp2)) {
-    let tmp3Result = tmp3(10728);
+    let tmp3Result = tmp3(10757);
   } else {
-    tmp3Result = tmp3(10729);
+    tmp3Result = tmp3(10758);
   }
   obj = { style: tmp.krisp };
   obj = { style: tmp.logo, source: tmp3Result };
@@ -36,7 +36,7 @@ function KrispLogo() {
   const obj1 = { accessibilityRole: "link" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.onPress = require(10727) /* handleKrispLinkPressed */.handleKrispLinkPressed;
+  obj1.onPress = require(10756) /* handleKrispLinkPressed */.handleKrispLinkPressed;
   const obj2 = { variant: "text-sm/medium", color: "text-link" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl3.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
@@ -46,7 +46,7 @@ function KrispLogo() {
   return callback2(closure_4, obj);
 }
 function SystemProcessingSubLabel() {
-  let obj = require(10724) /* getNoiseCancellationDeferredToSystem */;
+  let obj = require(10753) /* getNoiseCancellationDeferredToSystem */;
   let tmp = null;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     obj = { variant: "text-sm/medium" };
@@ -134,5 +134,5 @@ export default function SettingsVoiceScreen() {
     obj.sections = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13550), { node });
+  return callback(importDefault(13601), { node });
 };

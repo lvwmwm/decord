@@ -1,10 +1,10 @@
-// Module ID: 11142
-// Function ID: 86678
+// Module ID: 11172
+// Function ID: 86947
 // Name: num2
-// Dependencies: [31, 27, 33, 4130, 689, 477, 9137, 1212, 4629, 4126, 10352, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 477, 9173, 1212, 4629, 4126, 10381, 2]
 // Exports: default
 
-// Module 11142 (num2)
+// Module 11172 (num2)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -47,7 +47,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   hasUnreads = hasUnreads.hasUnreads;
   ({ thread, containerStyle } = hasUnreads);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(9137) /* sortForumPostReactionsByPopularityDesc */;
+  let obj = require(9173) /* sortForumPostReactionsByPopularityDesc */;
   messageCount = obj.useMessageCount(thread);
   ({ messageCountText, unreadCount } = messageCount);
   let str = "text-muted";
@@ -71,7 +71,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     let tmp6Result = tmp6(require(4126) /* Text */.Text, obj1);
   } else {
     const obj2 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
-    tmp6Result = tmp6(importDefault(10352), obj2);
+    tmp6Result = tmp6(importDefault(10381), obj2);
   }
   items1[1] = tmp6Result;
   let tmp12 = null != unreadCount;

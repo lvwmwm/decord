@@ -1,10 +1,10 @@
-// Module ID: 9195
-// Function ID: 72001
+// Module ID: 9231
+// Function ID: 72210
 // Name: LinkButton
-// Dependencies: [5, 57, 31, 27, 9196, 1194, 653, 33, 4130, 4660, 4126, 4471, 1212, 477, 4684, 9197, 1456, 566, 1459, 5590, 9198, 4472, 9199, 9200, 9201, 4029, 9202, 9206, 9207, 9209, 9203, 4543, 9210, 1553, 9212, 9214, 7512, 9218, 8738, 9219, 4541, 9226, 9004, 2]
+// Dependencies: [5, 57, 31, 27, 9232, 1194, 653, 33, 4130, 4660, 4126, 4471, 1212, 477, 4684, 9233, 1456, 566, 1459, 5588, 9234, 4472, 9235, 9236, 9237, 4029, 9238, 9242, 9243, 9245, 9239, 4543, 9246, 1553, 9248, 9250, 7574, 9254, 8777, 9255, 4541, 9262, 9043, 2]
 // Exports: default
 
-// Module 9195 (LinkButton)
+// Module 9231 (LinkButton)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";

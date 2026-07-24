@@ -1,5 +1,5 @@
 // Module ID: 3842
-// Function ID: 32019
+// Function ID: 32020
 // Name: ManaContext
 // Dependencies: [2, 3843, 3848, 3849, 3850, 3844, 3851, 3852, 3853, 3854, 3855, 3856, 3857, 3939, 3906, 3940]
 

@@ -1,5 +1,5 @@
 // Module ID: 672
-// Function ID: 8276
+// Function ID: 8277
 // Name: SKUFlags
 // Dependencies: [2]
 

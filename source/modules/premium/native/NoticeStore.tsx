@@ -1,9 +1,9 @@
-// Module ID: 12646
-// Function ID: 98398
+// Module ID: 12697
+// Function ID: 98719
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 6688, 1851, 653, 587, 3712, 566, 686, 2]
 
-// Module 12646 (_isNativeReflectConstruct)
+// Module 12697 (_isNativeReflectConstruct)
 import GuildFeatures from "GuildFeatures";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

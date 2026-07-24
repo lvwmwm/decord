@@ -1,10 +1,10 @@
-// Module ID: 5485
-// Function ID: 46810
+// Module ID: 5483
+// Function ID: 46807
 // Name: GuildOnboardingCompleted
-// Dependencies: [31, 27, 4122, 1910, 1838, 1849, 5058, 33, 4130, 689, 1456, 566, 5148, 3842, 5486, 1392, 1825, 1327, 4528, 3991, 4131, 5085, 5121, 4126, 1212, 1273, 5487, 5515, 3712, 5518, 4543, 2]
+// Dependencies: [31, 27, 4122, 1910, 1838, 1849, 5058, 33, 4130, 689, 1456, 566, 5148, 3842, 5484, 1392, 1825, 1327, 4528, 3991, 4131, 5085, 5121, 4126, 1212, 1273, 5485, 5513, 3712, 5516, 4543, 2]
 // Exports: default
 
-// Module 5485 (GuildOnboardingCompleted)
+// Module 5483 (GuildOnboardingCompleted)
 import set from "set";
 import get_ActivityIndicator from "makeSizeStyle";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

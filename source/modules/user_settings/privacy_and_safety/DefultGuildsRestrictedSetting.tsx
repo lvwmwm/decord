@@ -1,10 +1,10 @@
-// Module ID: 14537
-// Function ID: 110939
+// Module ID: 14587
+// Function ID: 111262
 // Name: useDefaultGuildsRestricted
 // Dependencies: [3803, 2]
 // Exports: useDefaultGuildsRestricted
 
-// Module 14537 (useDefaultGuildsRestricted)
+// Module 14587 (useDefaultGuildsRestricted)
 const result = require("set").fileFinishedImporting("modules/user_settings/privacy_and_safety/DefultGuildsRestrictedSetting.tsx");
 
 export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() {

@@ -1,10 +1,10 @@
-// Module ID: 15075
-// Function ID: 114748
+// Module ID: 15122
+// Function ID: 115069
 // Name: items
 // Dependencies: [1391, 1838, 1849, 653, 566, 5641, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 15075 (items)
+// Module 15122 (items)
 import { isGuildOwner } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,5 +1,5 @@
 // Module ID: 5659
-// Function ID: 48512
+// Function ID: 48522
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4044, 5660, 1348, 1838, 3758, 1906, 3947, 1849, 653, 1355, 482, 5661, 1207, 21, 4368, 566, 686, 2]
 // Exports: isViewChannelSidebar

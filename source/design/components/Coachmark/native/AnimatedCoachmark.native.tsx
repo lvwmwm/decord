@@ -1,10 +1,10 @@
-// Module ID: 8571
-// Function ID: 68110
+// Module ID: 8616
+// Function ID: 68340
 // Name: renderTooltipItem
-// Dependencies: [57, 31, 27, 33, 3991, 8572, 3849, 8568, 8569, 2]
+// Dependencies: [57, 31, 27, 33, 3991, 8617, 3849, 8613, 8614, 2]
 // Exports: AnimatedCoachmark
 
-// Module 8571 (renderTooltipItem)
+// Module 8616 (renderTooltipItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";
@@ -19,7 +19,7 @@ function renderTooltipItem(arg0, arg1) {
     obj = {};
     const merged = Object.assign(arg0);
     obj["enterExitAnimatedStyles"] = arg1;
-    tmp2 = jsx(require(8572) /* Coachmark */.CoachmarkContainer, {});
+    tmp2 = jsx(require(8617) /* Coachmark */.CoachmarkContainer, {});
   }
   obj.children = tmp2;
   return jsx(importDefault(3991).View, { style: items, pointerEvents: "box-none" });
@@ -33,7 +33,7 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   const merged = Object.assign(visible, obj);
   const tmp3 = callback(React.useState(visible), 2);
   const importDefault = tmp3[1];
-  obj = visible(8568);
+  obj = visible(8613);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {
@@ -48,5 +48,5 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   obj.entering = result;
   obj.exiting = result;
   obj.renderItem = renderTooltipItem;
-  return jsx(importDefault(8569), { useReducedMotion: React.useContext(visible(3849).AccessibilityPreferencesContext).reducedMotion.enabled });
+  return jsx(importDefault(8614), { useReducedMotion: React.useContext(visible(3849).AccessibilityPreferencesContext).reducedMotion.enabled });
 };

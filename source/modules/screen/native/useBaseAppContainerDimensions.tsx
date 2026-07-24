@@ -1,5 +1,5 @@
 // Module ID: 3986
-// Function ID: 33090
+// Function ID: 33091
 // Name: useBaseAppContainerDimensions
 // Dependencies: [31, 1450, 1557, 2]
 // Exports: default, getBaseAppContainerDimensions

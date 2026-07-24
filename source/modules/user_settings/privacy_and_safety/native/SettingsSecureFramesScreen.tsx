@@ -1,10 +1,10 @@
-// Module ID: 14516
-// Function ID: 110795
+// Module ID: 14566
+// Function ID: 111118
 // Name: UserListItem
-// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 14517, 3969, 7889, 5464, 8492, 5165, 1273, 1212, 5171, 3834, 1456, 14515, 4126, 7879, 5459, 8897, 2]
+// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 14567, 3969, 7976, 5462, 8537, 5165, 1273, 1212, 5171, 3834, 1456, 14565, 4126, 7527, 8936, 2]
 // Exports: default
 
-// Module 14516 (UserListItem)
+// Module 14566 (UserListItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -99,12 +99,12 @@ function SettingsSecureFramesFooter() {
     items2[1] = callback(View, obj1);
     const obj4 = { variant: "text-xs/normal", color: "text-default" };
     const intl2 = navigation(secureFramesVerifiedUserIds[15]).intl;
-    const obj5 = { helpArticle: navigation(secureFramesVerifiedUserIds[23]).getSecureFramesVerifiedDevicesHelpdeskArticle() };
+    const obj5 = { helpArticle: navigation(secureFramesVerifiedUserIds[22]).getSecureFramesVerifiedDevicesHelpdeskArticle() };
     obj4.children = intl2.format(navigation(secureFramesVerifiedUserIds[15]).t["7w9ymD"], obj5);
-    items2[2] = callback(navigation(secureFramesVerifiedUserIds[22]).TextWithIOSLinkWorkaround, obj4);
+    items2[2] = callback(navigation(secureFramesVerifiedUserIds[20]).Text, obj4);
     obj.children = items2;
     tmp6 = callback2(View, obj);
-    const obj11 = navigation(secureFramesVerifiedUserIds[23]);
+    const obj11 = navigation(secureFramesVerifiedUserIds[22]);
   }
   return tmp6;
 }
@@ -130,9 +130,9 @@ export default function SettingsSecureFramesScreen() {
   const items = [callback(require(4126) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-sm/normal", color: "text-default" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  const obj2 = { helpArticle: require(8897) /* _createForOfIteratorHelperLoose */.getSecureFramesHelpdeskArticle() };
+  const obj2 = { helpArticle: require(8936) /* _createForOfIteratorHelperLoose */.getSecureFramesHelpdeskArticle() };
   obj1.children = intl2.format(require(1212) /* getSystemLocale */.t["8IwQfG"], obj2);
-  items[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj1);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   const items1 = [callback2(View, obj), callback(SettingsSecureFramesFooter, {})];
   obj.children = items1;

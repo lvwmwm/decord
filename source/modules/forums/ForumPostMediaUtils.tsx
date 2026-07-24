@@ -1,10 +1,10 @@
-// Module ID: 8328
-// Function ID: 65974
+// Module ID: 8372
+// Function ID: 66202
 // Name: isValidImageAttachment
 // Dependencies: [31, 5683, 1348, 4349, 1849, 653, 4317, 3803, 1360, 1443, 1327, 4353, 1881, 4358, 21, 2]
 // Exports: getEmbedColor, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostMediaThumbnail
 
-// Module 8328 (isValidImageAttachment)
+// Module 8372 (isValidImageAttachment)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

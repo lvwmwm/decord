@@ -1,9 +1,9 @@
-// Module ID: 16552
-// Function ID: 129101
+// Module ID: 16599
+// Function ID: 129425
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 1838, 3758, 3767, 1906, 1849, 653, 16553, 16554, 4320, 11953, 1392, 1327, 3969, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 1838, 3758, 3767, 1906, 1849, 653, 16600, 16601, 4320, 11979, 1392, 1327, 3969, 5078, 2]
 
-// Module 16552 (_isNativeReflectConstruct)
+// Module 16599 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
@@ -114,13 +114,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function indexingEnabled() {
-  let obj = importDefault(16553);
-  obj = { autoTrackExposure: true, disable: !importDefault(16554).hasSearch() };
+  let obj = importDefault(16600);
+  obj = { autoTrackExposure: true, disable: !importDefault(16601).hasSearch() };
   return obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).searchEnabled;
 }
 function clearEnabled() {
-  let obj = importDefault(16553);
-  obj = { autoTrackExposure: true, disable: !importDefault(16554).hasSearch() };
+  let obj = importDefault(16600);
+  obj = { autoTrackExposure: true, disable: !importDefault(16601).hasSearch() };
   return obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).clearEnabled;
 }
 function handleRelativeURL(channelIconURL) {
@@ -181,7 +181,7 @@ function makeSearchItem(value, guild, flag) {
   const CHANNELResult = closure_19.CHANNEL(id, value.id);
   obj = { id: CHANNELResult, relatedUniqueIdentifier: CHANNELResult, type: "url", title: sum, displayName: sum };
   const obj2 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
-  obj.thumbnailURL = handleRelativeURL(require(11953) /* getChannelIconURL */.getChannelIconURL(value, 128, false));
+  obj.thumbnailURL = handleRelativeURL(require(11979) /* getChannelIconURL */.getChannelIconURL(value, 128, false));
   if (value.type === constants.DM) {
     let OTHER_CHANNEL = constants4.DM;
   } else {
@@ -286,8 +286,8 @@ function getChannelKeywords(channel) {
   return items;
 }
 function setChannelActivity(channelId) {
-  let obj = importDefault(16553);
-  obj = { autoTrackExposure: true, disable: !importDefault(16554).hasUserActivity() };
+  let obj = importDefault(16600);
+  obj = { autoTrackExposure: true, disable: !importDefault(16601).hasUserActivity() };
   if (obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).activityEnabled) {
     let channel;
     if (null != channelId) {
@@ -320,11 +320,11 @@ function setChannelActivity(channelId) {
       obj.keywords = items1;
       obj.displayName = sum;
       obj.type = "com.discord.view-channel";
-      importDefault(16554).setActivity(obj);
-      const obj7 = importDefault(16554);
+      importDefault(16601).setActivity(obj);
+      const obj7 = importDefault(16601);
     } else {
-      importDefault(16554).resignActivity();
-      const obj4 = importDefault(16554);
+      importDefault(16601).resignActivity();
+      const obj4 = importDefault(16601);
     }
   }
 }
@@ -390,12 +390,12 @@ function indexChannelUpdates(items) {
       } while (!iter3.done);
     }
     if (items.length > 0) {
-      importDefault(16554).indexDomains(items);
-      const obj3 = importDefault(16554);
+      importDefault(16601).indexDomains(items);
+      const obj3 = importDefault(16601);
     }
     if (items1.length > 0) {
-      importDefault(16554).deleteSearchItems(items1);
-      const obj4 = importDefault(16554);
+      importDefault(16601).deleteSearchItems(items1);
+      const obj4 = importDefault(16601);
     }
   }
 }

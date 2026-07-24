@@ -1,10 +1,10 @@
-// Module ID: 11106
-// Function ID: 86381
+// Module ID: 11133
+// Function ID: 86570
 // Name: FloatingChatInputContainer
 // Dependencies: [57, 31, 33, 3991, 3834, 689, 1571, 3996, 1555, 4131, 4134, 2]
 // Exports: default
 
-// Module 11106 (FloatingChatInputContainer)
+// Module 11133 (FloatingChatInputContainer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 11137
-// Function ID: 86665
+// Module ID: 11167
+// Function ID: 86934
 // Name: ForumPostAppliedTagPills
-// Dependencies: [31, 27, 33, 4130, 689, 9644, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 9680, 2]
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 11137 (ForumPostAppliedTagPills)
+// Module 11167 (ForumPostAppliedTagPills)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -47,7 +47,7 @@ export const ForumPostAppliedTagPills = function ForumPostAppliedTagPills(additi
     obj.tag = obj;
     obj.containerStyle = tmp.tag;
     obj.hasUnreads = hasUnreads;
-    tmp4 = callback(hasUnreads(9644).AppliedForumTagPill, obj);
+    tmp4 = callback(hasUnreads(9680).AppliedForumTagPill, obj);
   }
   items1[1] = tmp4;
   obj.children = items1;

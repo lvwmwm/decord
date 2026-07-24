@@ -1,10 +1,10 @@
-// Module ID: 12825
-// Function ID: 99658
+// Module ID: 12876
+// Function ID: 99979
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 6736, 477, 22, 12826, 12827, 12828, 1327, 2]
+// Dependencies: [57, 6736, 477, 22, 12877, 12878, 12879, 1327, 2]
 // Exports: areKeyCombosEqual, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toString
 
-// Module 12825 (_createForOfIteratorHelperLoose)
+// Module 12876 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import items from "items";
 import set from "set";
@@ -109,16 +109,16 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
       return key;
     }
   }
-  const BACKTICK_CODES = require(12827) /* _isNativeReflectConstruct */.BACKTICK_CODES;
+  const BACKTICK_CODES = require(12878) /* _isNativeReflectConstruct */.BACKTICK_CODES;
   if (BACKTICK_CODES.has(keyCode)) {
-    let obj = require(12827) /* _isNativeReflectConstruct */;
+    let obj = require(12878) /* _isNativeReflectConstruct */;
     const layoutMap = obj.getLayoutMap();
     const value = layoutMap.get("Backquote");
     if (key === value) {
       return maybePlusConversion(key);
     } else {
       obj = { key: value, code: "Backquote", keyCode };
-      const exactKeyboardEventMatchFromAny = require(12827) /* _isNativeReflectConstruct */.getExactKeyboardEventMatchFromAny(obj);
+      const exactKeyboardEventMatchFromAny = require(12878) /* _isNativeReflectConstruct */.getExactKeyboardEventMatchFromAny(obj);
       if ("\\" === key) {
         if ("`" === value) {
           return key;
@@ -134,7 +134,7 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
         key = exactKeyboardEventMatchFromAny.key;
       }
       maybePlusConversion(key);
-      const obj3 = require(12827) /* _isNativeReflectConstruct */;
+      const obj3 = require(12878) /* _isNativeReflectConstruct */;
       const tmp9 = maybePlusConversion;
     }
   } else {
@@ -168,7 +168,7 @@ function codeToKey(arg0) {
     if (KeyboardEnvs.WINDOWS === tmp6) {
       tmp11 = invertResult1["" + tmp5];
     } else if (KeyboardEnvs.BROWSER === tmp6) {
-      const tmp15 = importDefault(12826)(tmp5);
+      const tmp15 = importDefault(12877)(tmp5);
       let tmp17 = null;
       if (null != tmp15) {
         tmp11 = getKeyConversionForBrowser(tmp15);
@@ -179,7 +179,7 @@ function codeToKey(arg0) {
     if (null != tmp17) {
       return getCodeToKeyLanguageCorrection(tmp2, tmp17, tmp3);
     } else {
-      const keyboardEventShapeFromKeycode = require(12827) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKeycode(tmp2);
+      const keyboardEventShapeFromKeycode = require(12878) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKeycode(tmp2);
       let tmp29 = null;
       if (null != keyboardEventShapeFromKeycode) {
         tmp29 = getCodeToKeyLanguageCorrection(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp3);
@@ -245,8 +245,8 @@ function keyToCode(key) {
             tmp17 = tmp === KeyboardEnvs.BROWSER;
           }
           if (tmp17 === true) {
-            parsed = importDefault(12826)(getKeyConversionForBrowser(key));
-            const tmp30 = importDefault(12826);
+            parsed = importDefault(12877)(getKeyConversionForBrowser(key));
+            const tmp30 = importDefault(12877);
           } else if (tmp8 === true) {
             parsed = set[key];
           } else if (KEYBOARD_KEY === constants.MOUSE_BUTTON === true) {
@@ -272,7 +272,7 @@ function keyToCode(key) {
   if (null != tmp6) {
     return tmp6;
   } else {
-    const keyboardEventShapeFromKey = require(12827) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKey(key);
+    const keyboardEventShapeFromKey = require(12878) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKey(key);
     let keyCode = null;
     if (null != keyboardEventShapeFromKey) {
       keyCode = keyboardEventShapeFromKey.keyCode;
@@ -353,7 +353,7 @@ export const getRawCodeFromKey = function getRawCodeFromKey(arg0) {
     tmp = getEnv();
   }
   if (tmp === KeyboardEnvs.BROWSER) {
-    let tmp4 = importDefault(12826)(arg0);
+    let tmp4 = importDefault(12877)(arg0);
   } else {
     tmp4 = set[arg0];
   }
@@ -423,7 +423,7 @@ export const toCombo = function toCombo(shortcut) {
   }
   const str = shortcut.replace(/numpad plus/i, "");
   const str2 = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus");
-  const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(12828).modKey).split("+");
+  const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(12879).modKey).split("+");
   const mapped = parts.map((str) => str.trim().replace("plus", "+"));
   return mapped.reduce((arr, str) => {
     let tmp5;

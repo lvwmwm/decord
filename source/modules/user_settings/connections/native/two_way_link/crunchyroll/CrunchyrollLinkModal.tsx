@@ -1,10 +1,10 @@
-// Module ID: 8989
-// Function ID: 70815
+// Module ID: 9028
+// Function ID: 71030
 // Name: CloseButton
-// Dependencies: [31, 8990, 653, 33, 5788, 7607, 8988, 1212, 8991, 8944, 8993, 8995, 8996, 8998, 8943, 8987, 5519, 2]
+// Dependencies: [31, 9029, 653, 33, 5788, 7696, 9027, 1212, 9030, 8983, 9032, 9034, 9035, 9037, 8982, 9026, 5517, 2]
 // Exports: default
 
-// Module 8989 (CloseButton)
+// Module 9028 (CloseButton)
 import result from "result";
 import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes";
 import { PlatformTypes } from "ME";
@@ -13,7 +13,7 @@ import { jsx } from "jsxProd";
 const require = arg1;
 function CloseButton() {
   const obj = {
-    source: importDefault(7607),
+    source: importDefault(7696),
     onPress() {
       return outer1_1(outer1_2[6]).hideModal();
     }
@@ -21,7 +21,7 @@ function CloseButton() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   return jsx(require(5788) /* HeaderActionButton */.HeaderActionButton, {
-    source: importDefault(7607),
+    source: importDefault(7696),
     onPress() {
       return outer1_1(outer1_2[6]).hideModal();
     }
@@ -30,7 +30,7 @@ function CloseButton() {
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkModal.tsx");
 
 export default function CrunchyrollLinkModal(locationStack) {
-  let obj = twoWayLinkStyles(8943);
+  let obj = twoWayLinkStyles(8982);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = React.useMemo(() => (function getScreens(twoWayLinkStyles) {
@@ -98,9 +98,9 @@ export default function CrunchyrollLinkModal(locationStack) {
       }
     };
   })(twoWayLinkStyles), items);
-  const accountLinkStepTracking = twoWayLinkStyles(8987).useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack.locationStack);
+  const accountLinkStepTracking = twoWayLinkStyles(9026).useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack.locationStack);
   obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING };
   const intl = twoWayLinkStyles(1212).intl;
   obj.headerBackTitle = intl.string(twoWayLinkStyles(1212).t["13/7kX"]);
-  return jsx(twoWayLinkStyles(5519).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING });
+  return jsx(twoWayLinkStyles(5517).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: constants.LANDING });
 };

@@ -1,9 +1,9 @@
-// Module ID: 7771
-// Function ID: 61731
+// Module ID: 7533
+// Function ID: 60036
 // Name: IconButton
-// Dependencies: [31, 33, 4130, 689, 4550, 7772, 4126, 2]
+// Dependencies: [31, 33, 4130, 689, 4550, 7534, 4126, 2]
 
-// Module 7771 (IconButton)
+// Module 7533 (IconButton)
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";
@@ -46,7 +46,7 @@ const forwardRefResult = require("result").forwardRef((grow, ref) => {
     obj["accessibilityLabel"] = "";
     obj["size"] = "lg";
     obj["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
-    const items = [callback(require(7772) /* BaseIconButton */.BaseIconButton, obj), ];
+    const items = [callback(require(7534) /* BaseIconButton */.BaseIconButton, obj), ];
     const obj1 = { style: tmp3.label, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
     items[1] = callback(require(4126) /* Text */.Text, obj1);
     obj["children"] = items;
@@ -57,7 +57,7 @@ const forwardRefResult = require("result").forwardRef((grow, ref) => {
     obj2["accessibilityLabel"] = accessibilityLabel;
     obj2["accessibilityHint"] = accessibilityHint;
     obj2["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
-    tmp10 = callback(require(7772) /* BaseIconButton */.BaseIconButton, obj2);
+    tmp10 = callback(require(7534) /* BaseIconButton */.BaseIconButton, obj2);
   }
   return tmp10;
 });

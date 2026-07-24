@@ -1,7 +1,7 @@
 // Module ID: 4969
-// Function ID: 42692
+// Function ID: 42696
 // Name: SubscribeModalGuildSelect
-// Dependencies: [57, 31, 27, 1838, 4970, 4968, 33, 4130, 689, 4973, 1456, 566, 4974, 5121, 5771, 1212, 4966, 4660, 5515, 1273, 2]
+// Dependencies: [57, 31, 27, 1838, 4970, 4968, 33, 4130, 689, 4973, 1456, 566, 4974, 5121, 5771, 1212, 4966, 4660, 5513, 1273, 2]
 // Exports: default
 
 // Module 4969 (SubscribeModalGuildSelect)

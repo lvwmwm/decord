@@ -1,5 +1,5 @@
 // Module ID: 1318
-// Function ID: 15490
+// Function ID: 15491
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [57, 662, 653, 1284, 1282, 1317, 1283, 22, 2]
 // Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, protoToB64WithType, runMigrations, serializeUsageHistory

@@ -1,10 +1,10 @@
-// Module ID: 14400
-// Function ID: 110105
+// Module ID: 14450
+// Function ID: 110428
 // Name: _writeCaches
 // Dependencies: [5, 1348, 6708, 686, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 14400 (_writeCaches)
+// Module 14450 (_writeCaches)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { ChannelLoader } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

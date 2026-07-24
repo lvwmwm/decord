@@ -1,10 +1,10 @@
-// Module ID: 7557
-// Function ID: 60476
+// Module ID: 7602
+// Function ID: 60584
 // Name: AgeVerifyScreen
-// Dependencies: [31, 7537, 33, 7543, 3981, 4347, 7547, 4130, 689, 4337, 5788, 1212, 5519, 2]
+// Dependencies: [31, 7582, 33, 7588, 3981, 4347, 7592, 4130, 689, 4337, 5788, 1212, 5517, 2]
 // Exports: default
 
-// Module 7557 (AgeVerifyScreen)
+// Module 7602 (AgeVerifyScreen)
 import result from "result";
 import { AGE_VERIFICATION_MODAL_KEY as closure_4 } from "set";
 import { jsx } from "jsxProd";

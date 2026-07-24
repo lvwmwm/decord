@@ -1,5 +1,5 @@
 // Module ID: 1277
-// Function ID: 14405
+// Function ID: 14406
 // Name: semanticColor
 // Dependencies: [1278, 477, 689, 4110, 3976, 2]
 // Exports: getThemedRippleConfig

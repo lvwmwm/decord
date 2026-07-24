@@ -1,10 +1,10 @@
-// Module ID: 10614
-// Function ID: 82793
+// Module ID: 10643
+// Function ID: 82985
 // Name: useEmbeddedActivityBackground
-// Dependencies: [57, 31, 7820, 2]
+// Dependencies: [57, 31, 7909, 2]
 // Exports: default
 
-// Module 10614 (useEmbeddedActivityBackground)
+// Module 10643 (useEmbeddedActivityBackground)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

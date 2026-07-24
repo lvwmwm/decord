@@ -1,10 +1,10 @@
-// Module ID: 13092
-// Function ID: 100858
+// Module ID: 13144
+// Function ID: 101181
 // Name: CarouselPagination
-// Dependencies: [31, 27, 33, 4130, 689, 3991, 4131, 13032, 13093, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 3991, 4131, 13084, 13145, 2]
 // Exports: default
 
-// Module 13092 (CarouselPagination)
+// Module 13144 (CarouselPagination)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -64,5 +64,5 @@ export default function CarouselPagination(arg0) {
   const tmp2 = <closure_8 />;
   const tmp = callback();
   const items = [tmp.container, containerStyle];
-  return <View style={items}>{jsx(require(13093) /* Pagination */.Pagination, { dotElement: tmp2, inactiveDotElement: tmp2, dotsLength: numberOfItems, activeDotIndex: currentIndex })}</View>;
+  return <View style={items}>{jsx(require(13145) /* Pagination */.Pagination, { dotElement: tmp2, inactiveDotElement: tmp2, dotsLength: numberOfItems, activeDotIndex: currentIndex })}</View>;
 };

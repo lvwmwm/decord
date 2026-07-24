@@ -1,5 +1,5 @@
 // Module ID: 6274
-// Function ID: 50365
+// Function ID: 50376
 // Name: LanternSpotIllustration
 // Dependencies: [33, 5085, 6275, 2]
 // Exports: LanternSpotIllustration

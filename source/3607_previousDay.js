@@ -1,5 +1,5 @@
 // Module ID: 3607
-// Function ID: 27824
+// Function ID: 27825
 // Name: previousDay
 // Dependencies: [3210, 3472, 3580]
 // Exports: default

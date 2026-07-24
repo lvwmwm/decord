@@ -1,10 +1,10 @@
-// Module ID: 15609
-// Function ID: 120396
+// Module ID: 15656
+// Function ID: 120718
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [31, 27, 1849, 1345, 33, 4130, 689, 566, 3776, 4098, 5187, 15610, 1273, 9382, 4126, 1212, 4543, 12380, 2]
+// Dependencies: [31, 27, 1849, 1345, 33, 4130, 689, 566, 3776, 4098, 5187, 15657, 1273, 9418, 4126, 1212, 4543, 7443, 2]
 // Exports: default
 
-// Module 15609 (AppIconsCoachmarkActionSheet)
+// Module 15656 (AppIconsCoachmarkActionSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -53,10 +53,10 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     contentStyles: tmp.container
   };
   obj = { style: tmp.info };
-  obj1 = { source: importDefault(15610), style: tmp.image };
+  obj1 = { source: importDefault(15657), style: tmp.image };
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer };
-  const obj3 = { source: importDefault(9382), size: markAsDismissed(1273).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
+  const obj3 = { source: importDefault(9418), size: markAsDismissed(1273).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
   const items3 = [callback(markAsDismissed(1273).Icon, obj3), ];
   const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = markAsDismissed(1212).intl;

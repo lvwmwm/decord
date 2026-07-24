@@ -1,17 +1,17 @@
-// Module ID: 6997
-// Function ID: 55945
+// Module ID: 6996
+// Function ID: 55954
 // Name: maybeConvertPrivateChannel
-// Dependencies: [1348, 5606, 4140, 2]
+// Dependencies: [1348, 5604, 4140, 2]
 // Exports: default
 
-// Module 6997 (maybeConvertPrivateChannel)
+// Module 6996 (maybeConvertPrivateChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 const result = require("module_4140").fileFinishedImporting("modules/private_channel_creation/maybeConvertPrivateChannel.tsx");
 
 export default function maybeConvertPrivateChannel(channelId) {
-  if (channelId !== require(5606) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  if (channelId !== require(5604) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return null;
   } else {
     channel = channel.getChannel(channelId);

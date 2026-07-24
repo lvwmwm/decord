@@ -1,10 +1,10 @@
-// Module ID: 8298
-// Function ID: 65507
+// Module ID: 8342
+// Function ID: 65735
 // Name: apexExperiment
 // Dependencies: [1188, 1194, 1428, 477, 2]
 // Exports: getMuxExperimentDimension, useRnvHttpEngine
 
-// Module 8298 (apexExperiment)
+// Module 8342 (apexExperiment)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import ApexExperiment from "ApexExperiment";

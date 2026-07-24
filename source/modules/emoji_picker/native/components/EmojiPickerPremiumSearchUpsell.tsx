@@ -1,9 +1,9 @@
-// Module ID: 9367
-// Function ID: 73095
+// Module ID: 9403
+// Function ID: 73304
 // Name: useEmojiPickerPremiumSearchUpsellViewed
-// Dependencies: [31, 27, 1849, 653, 1851, 33, 4130, 689, 675, 3776, 4098, 8139, 7999, 1273, 9368, 4126, 1212, 4660, 2]
+// Dependencies: [31, 27, 1849, 653, 1851, 33, 4130, 689, 675, 3776, 4098, 8183, 8059, 1273, 9404, 4126, 1212, 4660, 2]
 
-// Module 9367 (useEmojiPickerPremiumSearchUpsellViewed)
+// Module 9403 (useEmojiPickerPremiumSearchUpsellViewed)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -84,7 +84,7 @@ const memoResult = importAllResult.memo((useTier0UpsellContent) => {
   const tmp = callback2();
   useEmojiPickerPremiumSearchUpsellViewed(useTier0UpsellContent);
   let obj = { style: tmp.premiumSearchUpsellContent };
-  obj = { style: tmp.nitroIcon, source: importDefault(9368), disableColor: true, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
+  obj = { style: tmp.nitroIcon, source: importDefault(9404), disableColor: true, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { lineClamp: 2, variant: "text-sm/medium", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;

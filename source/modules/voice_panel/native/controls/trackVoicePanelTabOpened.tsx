@@ -1,10 +1,10 @@
-// Module ID: 15849
-// Function ID: 122519
+// Module ID: 15896
+// Function ID: 122841
 // Name: trackVoicePanelTabOpened
 // Dependencies: [4142, 653, 675, 2]
 // Exports: default
 
-// Module 15849 (trackVoicePanelTabOpened)
+// Module 15896 (trackVoicePanelTabOpened)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

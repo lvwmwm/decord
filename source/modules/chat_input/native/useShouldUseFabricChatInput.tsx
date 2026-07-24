@@ -1,10 +1,10 @@
-// Module ID: 11115
-// Function ID: 86499
+// Module ID: 11142
+// Function ID: 86688
 // Name: resolveShouldUseFabric
-// Dependencies: [477, 3994, 11116, 2]
+// Dependencies: [477, 3994, 11143, 2]
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput
 
-// Module 11115 (resolveShouldUseFabric)
+// Module 11142 (resolveShouldUseFabric)
 function resolveShouldUseFabric(enabled) {
   if (null != closure_3) {
     let tmp4 = closure_3;
@@ -24,7 +24,7 @@ function resolveShouldUseFabric(enabled) {
 const result = require("apexExperiment").fileFinishedImporting("modules/chat_input/native/useShouldUseFabricChatInput.tsx");
 
 export const useShouldUseFabricChatInput = function useShouldUseFabricChatInput() {
-  return resolveShouldUseFabric(importDefault(11116).useConfig({ location: "chat_input" }).enabled);
+  return resolveShouldUseFabric(importDefault(11143).useConfig({ location: "chat_input" }).enabled);
 };
 export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
   if (null != closure_3) {
@@ -34,8 +34,8 @@ export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
     let enabled = !obj.isAndroid();
     if (enabled) {
       obj = { location: "chat_input" };
-      enabled = importDefault(11116).getConfig(obj).enabled;
-      const obj2 = importDefault(11116);
+      enabled = importDefault(11143).getConfig(obj).enabled;
+      const obj2 = importDefault(11143);
     }
     tmpResult = resolveShouldUseFabric(enabled);
     const tmp = resolveShouldUseFabric;

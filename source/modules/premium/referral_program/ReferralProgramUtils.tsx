@@ -1,10 +1,10 @@
-// Module ID: 7742
-// Function ID: 61520
+// Module ID: 7830
+// Function ID: 61805
 // Name: isReferralProgramPopoverSeen
-// Dependencies: [6689, 1345, 664, 1212, 3946, 1334, 21, 1336, 7423, 566, 7743, 2]
+// Dependencies: [6689, 1345, 664, 1212, 3946, 1334, 21, 1336, 7831, 566, 7836, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 7742 (isReferralProgramPopoverSeen)
+// Module 7830 (isReferralProgramPopoverSeen)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ContentDismissActionType } from "ContentDismissActionType";
 
@@ -69,10 +69,10 @@ export const useIsReferralProgramBadgeShowable = function useIsReferralProgramBa
     return tmp;
   }
 };
-export const markReferralProgramPopoverSeen = function markReferralProgramPopoverSeen(closure_0) {
-  if (null != closure_0) {
+export const markReferralProgramPopoverSeen = function markReferralProgramPopoverSeen(promotionId) {
+  if (null != promotionId) {
     let obj = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
-    const result = require(1336) /* addVersionedDismissedContent */.markSnowflakeBoundDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, closure_0, obj);
+    const result = require(1336) /* addVersionedDismissedContent */.markSnowflakeBoundDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, promotionId, obj);
     const obj2 = require(1336) /* addVersionedDismissedContent */;
   } else {
     obj = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
@@ -81,8 +81,8 @@ export const markReferralProgramPopoverSeen = function markReferralProgramPopove
 };
 export { isReferralProgramPopoverSeen };
 export const useIsReferralProgramPopoverShowable = function useIsReferralProgramPopoverShowable() {
-  let isEligibleSenderForReferralProgram = require(7423) /* useIsEligibleSenderForReferralProgram */.useIsEligibleSenderForReferralProgram(false);
-  const obj = require(7423) /* useIsEligibleSenderForReferralProgram */;
+  let isEligibleSenderForReferralProgram = require(7831) /* useIsEligibleSenderForReferralProgram */.useIsEligibleSenderForReferralProgram(false);
+  const obj = require(7831) /* useIsEligibleSenderForReferralProgram */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getReferralsRemaining());
   const obj2 = require(566) /* initialize */;

@@ -1,10 +1,10 @@
-// Module ID: 14439
-// Function ID: 110340
+// Module ID: 14489
+// Function ID: 110663
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 8360, 4541, 8760, 8758, 4543, 3843, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 8404, 4541, 8799, 8797, 4543, 3843, 2]
 // Exports: default
 
-// Module 14439 (UserSettingsDesignSystemSegmentedControl)
+// Module 14489 (UserSettingsDesignSystemSegmentedControl)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

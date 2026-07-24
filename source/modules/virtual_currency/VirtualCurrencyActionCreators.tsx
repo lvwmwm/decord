@@ -1,10 +1,10 @@
-// Module ID: 8725
-// Function ID: 69051
+// Module ID: 8766
+// Function ID: 69269
 // Name: fetchVirtualCurrencyBalance
 // Dependencies: [5, 4175, 653, 3, 686, 507, 4029, 7369, 1184, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 8725 (fetchVirtualCurrencyBalance)
+// Module 8766 (fetchVirtualCurrencyBalance)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

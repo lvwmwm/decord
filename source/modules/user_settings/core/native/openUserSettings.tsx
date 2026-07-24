@@ -1,5 +1,5 @@
 // Module ID: 5796
-// Function ID: 49534
+// Function ID: 49545
 // Name: openUserSettings
 // Dependencies: [5797, 653, 3982, 686, 2]
 // Exports: openUserSettings

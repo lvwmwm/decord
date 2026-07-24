@@ -1,10 +1,10 @@
-// Module ID: 11729
-// Function ID: 91046
+// Module ID: 11756
+// Function ID: 91284
 // Name: ContactSyncInviteFriends
-// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 5085, 11730, 4126, 1212, 4543, 675, 3969, 8332, 2]
+// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 5085, 11757, 4126, 1212, 4543, 675, 3969, 8376, 2]
 // Exports: default
 
-// Module 11729 (ContactSyncInviteFriends)
+// Module 11756 (ContactSyncInviteFriends)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ export default function ContactSyncInviteFriends() {
   _require = obj.useStateFromStores(items, () => outer1_4.getCurrentUser());
   obj = {};
   obj = { style: tmp.container };
-  const obj1 = { style: tmp.art, source: importDefault(11730) };
+  const obj1 = { style: tmp.art, source: importDefault(11757) };
   const items1 = [callback(importDefault(5085), obj1), , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   let intl = _require(1212).intl;

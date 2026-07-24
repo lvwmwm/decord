@@ -1,10 +1,10 @@
-// Module ID: 11557
-// Function ID: 89955
+// Module ID: 11586
+// Function ID: 90196
 // Name: GuildPowerupCardFooterActive
-// Dependencies: [27, 33, 4130, 4091, 689, 4126, 7507, 1212, 2230, 11558, 11532, 8013, 2]
+// Dependencies: [27, 33, 4130, 4091, 689, 4126, 7577, 1212, 2230, 11587, 11562, 7477, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 11557 (GuildPowerupCardFooterActive)
+// Module 11586 (GuildPowerupCardFooterActive)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

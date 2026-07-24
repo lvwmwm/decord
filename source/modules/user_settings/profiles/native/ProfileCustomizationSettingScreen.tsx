@@ -1,9 +1,9 @@
-// Module ID: 13559
-// Function ID: 104248
+// Module ID: 13610
+// Function ID: 104572
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 29, 57, 31, 27, 9783, 7841, 662, 653, 33, 4130, 1212, 13560, 13612, 1456, 6653, 8360, 9111, 9230, 3989, 13576, 13613, 624, 4324, 9785, 5087, 9122, 4015, 1529, 11649, 8758, 2]
+// Dependencies: [5, 29, 57, 31, 27, 9815, 7930, 662, 653, 33, 4130, 1212, 13611, 13663, 1456, 6653, 8404, 9147, 9266, 3989, 13627, 13664, 624, 4324, 9817, 5087, 9158, 4015, 1529, 11676, 8797, 2]
 
-// Module 13559 (ProfileCustomizationSubsection)
+// Module 13610 (ProfileCustomizationSubsection)
 import zustandStore from "zustandStore";
 import defaultCountFormatter from "defaultCountFormatter";
 import _slicedToArray from "_slicedToArray";
@@ -33,7 +33,7 @@ let obj = {
   },
   id: "edit-user-profile",
   renderPage(autoFocusElement) {
-    return callback(importDefault(13560), { autoFocusElement: autoFocusElement.autoFocusElement });
+    return callback(importDefault(13611), { autoFocusElement: autoFocusElement.autoFocusElement });
   },
   subSection: ProfileCustomizationSubsection.USER_PROFILE
 };
@@ -45,7 +45,7 @@ obj = {
   },
   id: "edit-user-profiles-guilds",
   renderPage() {
-    return callback(importDefault(13612), {});
+    return callback(importDefault(13663), {});
   },
   subSection: ProfileCustomizationSubsection.GUILD
 };

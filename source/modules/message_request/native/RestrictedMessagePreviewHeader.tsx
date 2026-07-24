@@ -1,10 +1,10 @@
-// Module ID: 15580
-// Function ID: 120115
+// Module ID: 15627
+// Function ID: 120437
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [31, 27, 11476, 33, 4130, 689, 5464, 3969, 8492, 5492, 3830, 4098, 11635, 1934, 8267, 5737, 4337, 4660, 1212, 1273, 4126, 15563, 5515, 15581, 2]
+// Dependencies: [31, 27, 11506, 33, 4130, 689, 5462, 3969, 8537, 5490, 3830, 4098, 11662, 1934, 8311, 5737, 4337, 4660, 1212, 1273, 4126, 15610, 5513, 15628, 2]
 // Exports: default
 
-// Module 15580 (RestrictedMessagePreviewHeader)
+// Module 15627 (RestrictedMessagePreviewHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { MOBILE_MESSAGE_REQUESTS_MODAL_KEY as closure_5 } from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL";

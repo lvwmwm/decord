@@ -1,10 +1,10 @@
-// Module ID: 13981
-// Function ID: 107032
+// Module ID: 14031
+// Function ID: 107355
 // Name: sharedValue
-// Dependencies: [31, 33, 4130, 689, 8663, 3991, 4131, 2]
+// Dependencies: [31, 33, 4130, 689, 8704, 3991, 4131, 2]
 // Exports: default
 
-// Module 13981 (sharedValue)
+// Module 14031 (sharedValue)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -22,12 +22,12 @@ let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("m
 export default function _default(width) {
   let COLLECTIBLES_SHOP_CARD_WIDTH = width.width;
   if (COLLECTIBLES_SHOP_CARD_WIDTH === undefined) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(8663).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(8704).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   let COLLECTIBLES_SHOP_CARD_HEIGHT = width.height;
   sharedValue = undefined;
   if (null == COLLECTIBLES_SHOP_CARD_HEIGHT) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(8663).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(8704).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   const tmp5 = callback(COLLECTIBLES_SHOP_CARD_WIDTH, COLLECTIBLES_SHOP_CARD_HEIGHT);
   sharedValue = sharedValue(3991).useSharedValue(0.3);

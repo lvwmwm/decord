@@ -1,5 +1,5 @@
 // Module ID: 4193
-// Function ID: 36068
+// Function ID: 36069
 // Name: useIsClipsSettingsRedesignEnabled
 // Dependencies: [4183, 1428, 4188, 566, 2]
 // Exports: isClipsSettingsRedesignEnabled, useDisabledWhenAutoclippingOff

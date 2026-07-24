@@ -1,5 +1,5 @@
 // Module ID: 1878
-// Function ID: 20895
+// Function ID: 20896
 // Name: PaletteKeys
 // Dependencies: [2]
 

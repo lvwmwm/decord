@@ -1,10 +1,10 @@
-// Module ID: 8233
-// Function ID: 65024
+// Module ID: 8277
+// Function ID: 65252
 // Name: useCollectiblesMobileFlexibleBundlesExperiment
 // Dependencies: [1428, 2]
 // Exports: useCollectiblesMobileFlexibleBundlesExperiment
 
-// Module 8233 (useCollectiblesMobileFlexibleBundlesExperiment)
+// Module 8277 (useCollectiblesMobileFlexibleBundlesExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-05-mobile-collectibles-flexible-bundles", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

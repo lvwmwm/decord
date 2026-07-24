@@ -1,10 +1,10 @@
-// Module ID: 12870
-// Function ID: 99984
+// Module ID: 12922
+// Function ID: 100307
 // Name: RemoteAuthBody
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1557, 12871, 12869, 5162, 507, 22, 12872, 4126, 1212, 1273, 4965, 4543, 4337, 12873, 12874, 5586, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1557, 12923, 12921, 5162, 507, 22, 12924, 4126, 1212, 1273, 4965, 4543, 4337, 12925, 12926, 5584, 2]
 // Exports: default
 
-// Module 12870 (RemoteAuthBody)
+// Module 12922 (RemoteAuthBody)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -83,7 +83,7 @@ function RemoteAuthLogin(arg0) {
     tmp6 = !tmp3[0];
   }
   obj = {};
-  obj = { source: importDefault(12872), style: tmp.mainImage };
+  obj = { source: importDefault(12924), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   const obj1 = { variant: "heading-md/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -131,7 +131,7 @@ function RemoteAuthLogin(arg0) {
 function RemoteAuthLoginSucceeded() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12873), style: tmp.mainImage };
+  obj = { source: importDefault(12925), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -154,7 +154,7 @@ function RemoteAuthLoginSucceeded() {
 function RemoteAuthNotFound() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  obj = { source: importDefault(12874), style: tmp.mainImage };
+  obj = { source: importDefault(12926), style: tmp.mainImage };
   const items = [callback2(closure_6, obj), , , ];
   obj = { variant: "heading-xl/extrabold" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -175,7 +175,7 @@ function RemoteAuthNotFound() {
   return callback3(closure_11, obj);
 }
 function RemoteAuthLoading() {
-  return callback2(closure_7, { style: _createForOfIteratorHelperLoose().loadingContainer, children: callback2(require(5586) /* ActivityIndicator */.ActivityIndicator, {}) });
+  return callback2(closure_7, { style: _createForOfIteratorHelperLoose().loadingContainer, children: callback2(require(5584) /* ActivityIndicator */.ActivityIndicator, {}) });
 }
 ({ ImageBackground: closure_5, Image: closure_6, View: closure_7 } = get_ActivityIndicator);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
@@ -193,9 +193,9 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/rem
 
 export default function RemoteAuth(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = { source: importDefault(12871) };
+  let obj = { source: importDefault(12923) };
   ({ imageStyle: obj.imageStyle, background: obj.style } = tmp);
-  obj = { style: items, source: importDefault(12869) };
+  obj = { style: items, source: importDefault(12921) };
   items = [tmp.logo, { marginTop: importDefault(1557)().top }];
   const items1 = [callback2(closure_6, obj), ];
   obj = { style: tmp.container };

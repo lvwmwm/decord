@@ -1,5 +1,5 @@
 // Module ID: 7260
-// Function ID: 58482
+// Function ID: 58511
 // Name: SyncPromise
 // Dependencies: [6, 7, 7243]
 // Exports: rejectedSyncPromise, resolvedSyncPromise

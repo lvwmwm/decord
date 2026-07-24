@@ -1,8 +1,8 @@
-// Module ID: 9181
-// Function ID: 71908
-// Dependencies: [653, 675, 4337, 9182, 1934, 686, 2]
+// Module ID: 9217
+// Function ID: 72117
+// Dependencies: [653, 675, 4337, 9218, 1934, 686, 2]
 
-// Module 9181
+// Module 9217
 import { AnalyticEvents } from "ME";
 
 const result = require("module_4337").fileFinishedImporting("actions/native/EmailVerificationModalActionCreators.tsx");
@@ -18,7 +18,7 @@ export default {
       obj.track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
     }
     obj = { isChangeEmail: flag };
-    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(9182, dependencyMap.paths), obj, "EMAIL_VERIFICATION_MODAL_KEY");
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(9218, dependencyMap.paths), obj, "EMAIL_VERIFICATION_MODAL_KEY");
   },
   close() {
     importDefault(686).wait(() => {

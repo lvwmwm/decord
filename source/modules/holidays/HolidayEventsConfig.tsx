@@ -1,9 +1,9 @@
-// Module ID: 16064
-// Function ID: 124486
+// Module ID: 16111
+// Function ID: 124810
 // Name: useIsExperimentEligible
-// Dependencies: [10248, 1212, 16065, 16066, 1334, 2]
+// Dependencies: [10278, 1212, 16112, 16113, 1334, 2]
 
-// Module 16064 (useIsExperimentEligible)
+// Module 16111 (useIsExperimentEligible)
 let obj = {
   experiment: null,
   useIsExperimentEligible() {

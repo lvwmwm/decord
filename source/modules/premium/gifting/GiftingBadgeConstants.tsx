@@ -1,10 +1,10 @@
-// Module ID: 9807
-// Function ID: 76151
+// Module ID: 9839
+// Function ID: 76345
 // Name: getNextTierForProgress
-// Dependencies: [8268, 2]
+// Dependencies: [8312, 2]
 // Exports: getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 9807 (getNextTierForProgress)
+// Module 9839 (getNextTierForProgress)
 import { getSingleRequirementThreshold as closure_0 } from "_isNativeReflectConstruct";
 
 function getNextTierForProgress(arr, arg1) {

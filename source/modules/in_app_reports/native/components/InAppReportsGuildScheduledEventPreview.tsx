@@ -1,10 +1,10 @@
-// Module ID: 12330
-// Function ID: 95947
+// Module ID: 12357
+// Function ID: 96187
 // Name: GuildScheduledEventPreview
-// Dependencies: [31, 27, 1838, 33, 4130, 689, 566, 3974, 4126, 1212, 5515, 2]
+// Dependencies: [31, 27, 1838, 33, 4130, 689, 566, 3974, 4126, 1212, 5513, 2]
 // Exports: default
 
-// Module 12330 (GuildScheduledEventPreview)
+// Module 12357 (GuildScheduledEventPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -50,9 +50,9 @@ export default function GuildScheduledEventPreview(event) {
     const obj3 = { style: tmp.guildInfo };
     const obj4 = { guild: stateFromStores };
     const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-    obj4.size = event(5515).GuildIconSizes.XXSMALL;
+    obj4.size = event(5513).GuildIconSizes.XXSMALL;
     obj4.selected = false;
-    const items3 = [callback(importDefault(5515), obj4), ];
+    const items3 = [callback(importDefault(5513), obj4), ];
     const obj5 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
     items3[1] = callback(event(4126).Text, obj5);
     obj3.children = items3;

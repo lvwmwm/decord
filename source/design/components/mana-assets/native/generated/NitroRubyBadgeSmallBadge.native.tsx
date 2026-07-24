@@ -1,5 +1,5 @@
 // Module ID: 6352
-// Function ID: 50482
+// Function ID: 50493
 // Name: NitroRubyBadgeSmallBadge
 // Dependencies: [33, 5085, 6353, 2]
 // Exports: NitroRubyBadgeSmallBadge

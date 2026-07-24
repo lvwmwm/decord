@@ -1,10 +1,10 @@
-// Module ID: 10232
-// Function ID: 79044
+// Module ID: 10262
+// Function ID: 79235
 // Name: isSameDate
 // Dependencies: [1212, 2]
 // Exports: getStatusExpiryParts
 
-// Module 10232 (isSameDate)
+// Module 10262 (isSameDate)
 function isSameDate(date, date1) {
   const fullYear = date.getFullYear();
   let tmp2 = fullYear === date1.getFullYear();

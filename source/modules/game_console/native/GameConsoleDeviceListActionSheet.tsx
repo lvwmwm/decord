@@ -1,10 +1,10 @@
-// Module ID: 9048
-// Function ID: 71067
+// Module ID: 9087
+// Function ID: 71282
 // Name: TransferFooter
-// Dependencies: [5, 57, 31, 27, 4144, 653, 33, 4130, 689, 5121, 4543, 1212, 9049, 4126, 9050, 566, 9040, 44, 9047, 4098, 1207, 1273, 8214, 5187, 5186, 5189, 2]
+// Dependencies: [5, 57, 31, 27, 4144, 653, 33, 4130, 689, 5121, 4543, 1212, 9088, 4126, 9089, 566, 9079, 44, 9086, 4098, 1207, 1273, 8258, 5187, 5186, 5189, 2]
 // Exports: default
 
-// Module 9048 (TransferFooter)
+// Module 9087 (TransferFooter)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -42,7 +42,7 @@ function TransferFooter(arg0) {
 function DeviceOption(name) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.deviceOption };
-  obj = { style: tmp.deviceIcon, source: importDefault(9049) };
+  obj = { style: tmp.deviceIcon, source: importDefault(9088) };
   const items = [callback(closure_8, obj), ];
   obj = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: name.name };
   items[1] = callback(require(4126) /* Text */.Text, obj);
@@ -52,7 +52,7 @@ function DeviceOption(name) {
 function EmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.emptyContainer };
-  obj = { source: importDefault(9050), style: tmp.emptyArt };
+  obj = { source: importDefault(9089), style: tmp.emptyArt };
   const items = [callback(closure_8, obj), , ];
   obj = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 8753
-// Function ID: 69201
+// Module ID: 8792
+// Function ID: 69416
 // Name: UserNameplateRow
-// Dependencies: [57, 31, 33, 4130, 689, 5166, 3834, 5167, 8229, 5165, 5125, 2]
+// Dependencies: [57, 31, 33, 4130, 689, 5166, 3834, 5167, 8273, 5165, 5125, 2]
 // Exports: UserNameplateRow
 
-// Module 8753 (UserNameplateRow)
+// Module 8792 (UserNameplateRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import jsxProd from "jsxProd";
@@ -94,7 +94,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   obj.style = _createForOfIteratorHelperLoose().card;
   const merged1 = Object.assign(merged);
   obj = { nameplate, isPressed: tmp6[0], invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow };
-  const items2 = [callback2(onPressOut(8229), obj), ];
+  const items2 = [callback2(onPressOut(8273), obj), ];
   obj1 = { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps };
   items2[1] = callback2(onPressIn(5165).TableRowInner, obj1);
   obj["children"] = items2;

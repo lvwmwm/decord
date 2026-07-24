@@ -1,15 +1,15 @@
-// Module ID: 7428
-// Function ID: 59700
+// Module ID: 12403
+// Function ID: 96417
 // Name: usePerkCardHeight
-// Dependencies: [31, 27, 1851, 653, 33, 4549, 7429, 4025, 5796, 5484, 1212, 7430, 7431, 7432, 7433, 7434, 7435, 7436, 7437, 7438, 7439, 7440, 7441, 7442, 7443, 7444, 7445, 7446, 5459, 1920, 4130, 689, 5085, 4126, 7447, 4543, 2]
+// Dependencies: [31, 27, 1851, 653, 33, 4549, 12404, 4025, 5796, 5482, 1212, 12405, 12406, 12407, 12408, 12409, 12410, 12411, 12412, 12413, 12414, 12415, 12416, 12417, 12418, 12419, 12420, 12421, 4126, 1920, 4130, 689, 5085, 12422, 4543, 2]
 // Exports: default, usePremiumPerkCard
 
-// Module 7428 (usePerkCardHeight)
+// Module 12403 (usePerkCardHeight)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import get_ActivityIndicator from "metadata";
 import { MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE as closure_6 } from "GuildFeatures";
 import ME from "ME";
-import jsxProd from "Text";
+import jsxProd from "PillText";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_10;
@@ -135,7 +135,7 @@ export default function PremiumPerkCard(variant) {
     let tmp28 = null != pillText;
     if (tmp28) {
       const obj7 = { pillText, style: tmp4.pillTextContainer };
-      tmp28 = callback(importDefault(7447), obj7);
+      tmp28 = callback(importDefault(12422), obj7);
     }
     const items4 = [tmp28, tmp6, , , ];
     const obj8 = { style: null, variant: "heading-lg/extrabold", accessibilityRole: "header" };
@@ -162,7 +162,7 @@ export const PerkCardVariant = obj;
 export const PERK_CARD_SIZES = frozen;
 export { usePerkCardHeight };
 export const usePremiumPerkCard = function usePremiumPerkCard() {
-  let obj = subscriptionPlansLoaded(7429);
+  let obj = subscriptionPlansLoaded(12404);
   subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
   let obj1 = subscriptionPlansLoaded(4025);
   const formatSizeResult = obj1.formatSize(closure_6 / 1024, { useKibibytes: true });
@@ -201,7 +201,7 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj.title = intl.string(subscriptionPlansLoaded(1212).t.KcyDwF);
   const intl2 = subscriptionPlansLoaded(1212).intl;
   obj.description = intl2.string(subscriptionPlansLoaded(1212).t.Mt3U1W);
-  obj.imageSrc = importDefault(7430);
+  obj.imageSrc = importDefault(12405);
   obj.buttonOnPress = callback1;
   obj.customProfile = obj;
   obj1 = {};
@@ -209,7 +209,7 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj1.title = intl3.string(subscriptionPlansLoaded(1212).t.kWM48G);
   const intl4 = subscriptionPlansLoaded(1212).intl;
   obj1.description = intl4.string(subscriptionPlansLoaded(1212).t.CjRASJ);
-  obj1.imageSrc = importDefault(7431);
+  obj1.imageSrc = importDefault(12406);
   obj1.buttonOnPress = callback2;
   obj.clientThemes = obj1;
   const obj2 = {};
@@ -217,7 +217,7 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj2.title = intl5.string(subscriptionPlansLoaded(1212).t["NyDu/6"]);
   const intl6 = subscriptionPlansLoaded(1212).intl;
   obj2.description = intl6.string(subscriptionPlansLoaded(1212).t["4pEwXL"]);
-  obj2.imageSrc = importDefault(7432);
+  obj2.imageSrc = importDefault(12407);
   obj2.buttonOnPress = callback3;
   obj.serverBoosts = obj2;
   const obj3 = {};
@@ -225,7 +225,7 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj3.title = intl7.string(subscriptionPlansLoaded(1212).t["NyDu/6"]);
   const intl8 = subscriptionPlansLoaded(1212).intl;
   obj3.description = intl8.string(subscriptionPlansLoaded(1212).t["4pEwXL"]);
-  obj3.imageSrc = importDefault(7433);
+  obj3.imageSrc = importDefault(12408);
   const intl9 = subscriptionPlansLoaded(1212).intl;
   obj3.imageOverlayText = intl9.string(subscriptionPlansLoaded(1212).t["/VzCKE"]);
   obj.greyServerBoosts = obj3;
@@ -234,7 +234,7 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj4.title = intl10.string(subscriptionPlansLoaded(1212).t.OuItFi);
   const intl11 = subscriptionPlansLoaded(1212).intl;
   obj4.description = intl11.string(subscriptionPlansLoaded(1212).t.mPyrE6);
-  obj4.imageSrc = importDefault(7434);
+  obj4.imageSrc = importDefault(12409);
   obj4.buttonOnPress = callback4;
   obj.customAppIcons = obj4;
   const obj5 = {};
@@ -242,35 +242,35 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj5.title = intl12.string(subscriptionPlansLoaded(1212).t["R2IV/Q"]);
   const intl13 = subscriptionPlansLoaded(1212).intl;
   obj5.description = intl13.string(subscriptionPlansLoaded(1212).t.R5Xag2);
-  obj5.imageSrc = importDefault(7435);
+  obj5.imageSrc = importDefault(12410);
   obj.emoji = obj5;
   const obj6 = {};
   const intl14 = subscriptionPlansLoaded(1212).intl;
   obj6.title = intl14.string(subscriptionPlansLoaded(1212).t.LWsArT);
   const intl15 = subscriptionPlansLoaded(1212).intl;
   obj6.description = intl15.string(subscriptionPlansLoaded(1212).t["4lSyCY"]);
-  obj6.imageSrc = importDefault(7436);
+  obj6.imageSrc = importDefault(12411);
   obj.customSounds = obj6;
   const obj7 = {};
   const intl16 = subscriptionPlansLoaded(1212).intl;
   obj7.title = intl16.string(subscriptionPlansLoaded(1212).t.tzdIwI);
   const intl17 = subscriptionPlansLoaded(1212).intl;
   obj7.description = intl17.string(subscriptionPlansLoaded(1212).t.hJG8ZN);
-  obj7.imageSrc = importDefault(7437);
+  obj7.imageSrc = importDefault(12412);
   obj.sticker = obj7;
   const obj8 = {};
   const intl18 = subscriptionPlansLoaded(1212).intl;
   obj8.title = intl18.string(subscriptionPlansLoaded(1212).t.EYxi0o);
   const intl19 = subscriptionPlansLoaded(1212).intl;
   obj8.description = intl19.string(subscriptionPlansLoaded(1212).t.M9AIt1);
-  obj8.imageSrc = importDefault(7438);
+  obj8.imageSrc = importDefault(12413);
   obj.earlyAccess = obj8;
   const obj9 = {};
   const intl20 = subscriptionPlansLoaded(1212).intl;
   obj9.title = intl20.string(subscriptionPlansLoaded(1212).t["H4/NBN"]);
   const intl21 = subscriptionPlansLoaded(1212).intl;
   obj9.description = intl21.string(subscriptionPlansLoaded(1212).t.wo3D3T);
-  obj9.imageSrc = importDefault(7439);
+  obj9.imageSrc = importDefault(12414);
   obj9.buttonOnPress = callback;
   obj.memberPricing = obj9;
   const obj10 = {};
@@ -278,57 +278,57 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   obj10.title = intl22.formatToPlainString(subscriptionPlansLoaded(1212).t.jqhAdL, { premiumMaxSize: formatSizeResult });
   const intl23 = subscriptionPlansLoaded(1212).intl;
   obj10.description = intl23.formatToPlainString(subscriptionPlansLoaded(1212).t["HI+cfm"], { premiumMaxSize: formatSizeResult });
-  obj10.imageSrc = importDefault(7440);
+  obj10.imageSrc = importDefault(12415);
   obj.largeUploads = obj10;
   const obj11 = {};
   const intl24 = subscriptionPlansLoaded(1212).intl;
   obj11.title = intl24.string(subscriptionPlansLoaded(1212).t.RSXQYO);
   const intl25 = subscriptionPlansLoaded(1212).intl;
   obj11.description = intl25.string(subscriptionPlansLoaded(1212).t.ymCPxp);
-  obj11.imageSrc = importDefault(7441);
+  obj11.imageSrc = importDefault(12416);
   obj.hdVideo = obj11;
   const obj12 = {};
   const intl26 = subscriptionPlansLoaded(1212).intl;
   obj12.title = intl26.string(subscriptionPlansLoaded(1212).t["6S7kO7"]);
   const intl27 = subscriptionPlansLoaded(1212).intl;
   obj12.description = intl27.string(subscriptionPlansLoaded(1212).t.A0U9fk);
-  obj12.imageSrc = importDefault(7442);
+  obj12.imageSrc = importDefault(12417);
   obj.superReactions = obj12;
   const obj13 = {};
   const intl28 = subscriptionPlansLoaded(1212).intl;
   obj13.title = intl28.string(subscriptionPlansLoaded(1212).t["f4M+H9"]);
   const intl29 = subscriptionPlansLoaded(1212).intl;
   obj13.description = intl29.string(subscriptionPlansLoaded(1212).t["7ZCYvC"]);
-  obj13.imageSrc = importDefault(7443);
+  obj13.imageSrc = importDefault(12418);
   obj.entranceSounds = obj13;
   const obj14 = {};
   const intl30 = subscriptionPlansLoaded(1212).intl;
   obj14.title = intl30.string(subscriptionPlansLoaded(1212).t.dcFfSJ);
   const intl31 = subscriptionPlansLoaded(1212).intl;
   obj14.description = intl31.string(subscriptionPlansLoaded(1212).t["37MFFq"]);
-  obj14.imageSrc = importDefault(7444);
+  obj14.imageSrc = importDefault(12419);
   obj.badge = obj14;
   const obj15 = {};
   const intl32 = subscriptionPlansLoaded(1212).intl;
   obj15.title = intl32.string(subscriptionPlansLoaded(1212).t.dcFfSJ);
   const intl33 = subscriptionPlansLoaded(1212).intl;
   obj15.description = intl33.string(subscriptionPlansLoaded(1212).t["37MFFq"]);
-  obj15.imageSrc = importDefault(7445);
+  obj15.imageSrc = importDefault(12420);
   const intl34 = subscriptionPlansLoaded(1212).intl;
   obj15.imageOverlayText = intl34.string(subscriptionPlansLoaded(1212).t["/VzCKE"]);
   obj.greyBadge = obj15;
   const obj16 = {};
   const intl35 = subscriptionPlansLoaded(1212).intl;
   obj16.title = intl35.string(subscriptionPlansLoaded(1212).t.aJE9i1);
-  obj16.imageSrc = { uri: importDefault(7446) };
+  obj16.imageSrc = { uri: importDefault(12421) };
   obj16.imageStyle = { aspectRatio: 1.9789473684210526 };
   const obj18 = { variant: "text-sm/normal" };
   const intl36 = subscriptionPlansLoaded(1212).intl;
   const obj19 = {};
-  const obj17 = { uri: importDefault(7446) };
+  const obj17 = { uri: importDefault(12421) };
   obj19.termsLink = importDefault(1920).getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0);
   obj18.children = intl36.format(subscriptionPlansLoaded(1212).t["9Wv+8h"], obj19);
-  obj16.bodyComponent = callback(subscriptionPlansLoaded(5459).TextWithIOSLinkWorkaround, obj18);
+  obj16.bodyComponent = callback(subscriptionPlansLoaded(4126).Text, obj18);
   obj.xboxGamePass = obj16;
   return obj;
 };

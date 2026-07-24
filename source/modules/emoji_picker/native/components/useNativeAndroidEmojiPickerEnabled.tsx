@@ -1,10 +1,10 @@
-// Module ID: 9345
-// Function ID: 73011
+// Module ID: 9381
+// Function ID: 73220
 // Name: useNativeAndroidEmojiPickerEnabled
 // Dependencies: [1194, 477, 1898, 2]
 // Exports: default
 
-// Module 9345 (useNativeAndroidEmojiPickerEnabled)
+// Module 9381 (useNativeAndroidEmojiPickerEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

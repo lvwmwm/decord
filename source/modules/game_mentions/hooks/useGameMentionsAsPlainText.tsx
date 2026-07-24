@@ -1,35 +1,30 @@
-// Module ID: 9067
-// Function ID: 71179
+// Module ID: 9106
+// Function ID: 71394
 // Name: useGameMentionsAsPlainText
-// Dependencies: [31, 4151, 1849, 4567, 6865, 566, 1832, 8601, 1212, 2]
+// Dependencies: [31, 4151, 1849, 4567, 6864, 566, 1832, 8643, 1212, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9067 (useGameMentionsAsPlainText)
+// Module 9106 (useGameMentionsAsPlainText)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
-import { GAME_MENTION_RAW_RE_GLOBAL as closure_5 } from "MENTION_SENTINEL";
+import regExp from "regExp";
 
+let closure_5;
+let closure_6;
 const require = arg1;
-let closure_6 = [];
+({ extractGameMentionIds: closure_5, GAME_MENTION_RAW_RE_GLOBAL: closure_6 } = regExp);
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionsAsPlainText.tsx");
 
 export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(state) {
   const _require = state;
-  let items = [state];
+  const items = [state];
   const memo = React.useMemo(() => {
-    if (null != state) {
-      if ("" !== state) {
-        const items = [];
-        HermesBuiltin.arraySpread(state.matchAll(outer1_5), 0);
-        let mapped = items.map((arg0) => arg0[1]);
-        if (mapped.length <= 0) {
-          mapped = outer1_6;
-        }
-        return mapped;
-      }
+    let str = "";
+    if (null != closure_0) {
+      str = closure_0;
     }
-    return outer1_6;
+    return outer1_5(str);
   }, items);
   const games = _require(memo[4]).useGames(memo);
   const obj = _require(memo[4]);
@@ -43,7 +38,7 @@ export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(st
         if (null != currentUser) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return nsfwAllowed.replace(outer1_5, (arg0, arg1) => {
+        return nsfwAllowed.replace(outer1_6, (arg0, arg1) => {
           const game = outer2_3.getGame(arg1);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
             const intl2 = nsfwAllowed(memo[8]).intl;

@@ -1,10 +1,10 @@
-// Module ID: 14946
-// Function ID: 113933
+// Module ID: 14993
+// Function ID: 114254
 // Name: TypingIndicator
 // Dependencies: [31, 27, 33, 4130, 689, 4066, 3976, 1273, 2]
 // Exports: TypingIndicator
 
-// Module 14946 (TypingIndicator)
+// Module 14993 (TypingIndicator)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

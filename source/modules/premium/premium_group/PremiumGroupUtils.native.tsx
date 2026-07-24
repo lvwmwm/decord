@@ -1,10 +1,10 @@
-// Module ID: 7736
-// Function ID: 61501
+// Module ID: 7825
+// Function ID: 61787
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1849, 3790, 3969, 1212, 2780, 2, 7737]
+// Dependencies: [1849, 3790, 3969, 1212, 2780, 2, 7826]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7736 (getPremiumGroupInviteEmbedText)
+// Module 7825 (getPremiumGroupInviteEmbedText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 

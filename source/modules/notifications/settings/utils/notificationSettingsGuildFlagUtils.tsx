@@ -1,10 +1,10 @@
-// Module ID: 10294
-// Function ID: 79495
+// Module ID: 10323
+// Function ID: 79686
 // Name: updateGuildPreset
-// Dependencies: [4325, 653, 662, 4328, 5079, 10289, 5073, 624, 2]
+// Dependencies: [4325, 653, 662, 4328, 5079, 10318, 5073, 624, 2]
 // Exports: updateGuildPreset, useGuildPresetSettings
 
-// Module 10294 (updateGuildPreset)
+// Module 10323 (updateGuildPreset)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserNotificationSettings } from "ME";
 import { GuildNotificationSettingsFlags as closure_5 } from "MAX_FAVORITES";
@@ -17,20 +17,20 @@ export const updateGuildPreset = function updateGuildPreset(guildId, arg1) {
   if (arg1 === require(4328) /* Presets */.Presets.ALL_MESSAGES) {
     let obj = { message_notifications: UserNotificationSettings.ALL_MESSAGES };
     const obj4 = importDefault(5079);
-    obj.flags = require(10289) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES);
+    obj.flags = require(10318) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES);
     const result = obj4.updateGuildNotificationSettings(guildId, obj, require(5073) /* differ */.NotificationLabels.PresetAll);
-    const obj6 = require(10289) /* resetGuildUnreadFlags */;
+    const obj6 = require(10318) /* resetGuildUnreadFlags */;
   } else if (arg1 === require(4328) /* Presets */.Presets.MENTIONS) {
     obj = importDefault(5079);
-    obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: require(10289) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
+    obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: require(10318) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
     const result1 = obj.updateGuildNotificationSettings(guildId, obj, require(5073) /* differ */.NotificationLabels.PresetMentions);
-    const obj3 = require(10289) /* resetGuildUnreadFlags */;
+    const obj3 = require(10318) /* resetGuildUnreadFlags */;
   } else if (arg1 === require(4328) /* Presets */.Presets.NOTHING) {
     const obj1 = { message_notifications: UserNotificationSettings.NO_MESSAGES };
     const obj7 = importDefault(5079);
-    obj1.flags = require(10289) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
+    obj1.flags = require(10318) /* resetGuildUnreadFlags */.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS);
     const result2 = obj7.updateGuildNotificationSettings(guildId, obj1, require(5073) /* differ */.NotificationLabels.PresetNothing);
-    const obj9 = require(10289) /* resetGuildUnreadFlags */;
+    const obj9 = require(10318) /* resetGuildUnreadFlags */;
   }
 };
 export const useGuildPresetSettings = function useGuildPresetSettings(guildId) {

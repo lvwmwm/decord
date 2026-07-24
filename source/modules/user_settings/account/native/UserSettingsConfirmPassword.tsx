@@ -1,10 +1,10 @@
-// Module ID: 9233
-// Function ID: 72199
+// Module ID: 9269
+// Function ID: 72408
 // Name: UserSettingsConfirmPasswordWrapped
-// Dependencies: [5, 57, 31, 27, 1849, 653, 33, 4130, 689, 6653, 566, 5793, 4029, 1184, 1212, 9234, 4126, 9000, 9004, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 653, 33, 4130, 689, 6653, 566, 5793, 4029, 1184, 1212, 9270, 4126, 9039, 9043, 4543, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 9233 (UserSettingsConfirmPasswordWrapped)
+// Module 9269 (UserSettingsConfirmPasswordWrapped)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -83,7 +83,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     obj.style = items1;
     let tmp13 = null;
     if (!hideUnverifiedBanner) {
-      tmp13 = callback(importDefault(9234), {});
+      tmp13 = callback(importDefault(9270), {});
     }
     const items2 = [tmp13, ];
     obj = { style: tmp.container };
@@ -110,13 +110,13 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     obj3.returnKeyType = "done";
     obj3.autoCapitalize = "none";
     obj3.autoFocus = true;
-    items3[2] = callback(importDefault(9000), obj3);
+    items3[2] = callback(importDefault(9039), obj3);
     let tmp25 = null;
     if (null != obj1) {
       tmp25 = null;
       if (null == obj1.getFieldMessage("password")) {
         const obj4 = { style: tmp.hint, children: obj1.message };
-        tmp25 = callback(importDefault(9004), obj4);
+        tmp25 = callback(importDefault(9043), obj4);
       }
     }
     items3[3] = tmp25;
@@ -140,7 +140,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     const tmp17 = closure_11;
     const tmp18 = _handleSubmit;
     const tmp19 = callback;
-    const tmp23 = importDefault(9000);
+    const tmp23 = importDefault(9039);
     const tmp30 = _handleSubmit;
   }
   return tmp11Result;

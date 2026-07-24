@@ -1,10 +1,10 @@
-// Module ID: 8713
-// Function ID: 68963
+// Module ID: 8754
+// Function ID: 69181
 // Name: getProductPurchaseState
-// Dependencies: [6790, 8714, 1876, 566, 2]
+// Dependencies: [6790, 8755, 1876, 566, 2]
 // Exports: useProductPurchaseState
 
-// Module 8713 (getProductPurchaseState)
+// Module 8754 (getProductPurchaseState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -15,7 +15,7 @@ function getProductPurchaseState(outer2_5, skuId) {
   if (null == items) {
     items = [];
   }
-  const tmp2Result = importDefault(8714)(items.map((skuId) => outer2_5.getPurchase(skuId.skuId)));
+  const tmp2Result = importDefault(8755)(items.map((skuId) => outer2_5.getPurchase(skuId.skuId)));
   let type;
   if (null != skuId) {
     type = skuId.type;
@@ -50,7 +50,7 @@ function getProductPurchaseState(outer2_5, skuId) {
     obj = { isPurchased: tmp, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false };
     return obj;
   }
-  const tmp2 = importDefault(8714);
+  const tmp2 = importDefault(8755);
 }
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
 

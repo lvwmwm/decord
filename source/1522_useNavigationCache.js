@@ -1,5 +1,5 @@
 // Module ID: 1522
-// Function ID: 17454
+// Function ID: 17455
 // Name: useNavigationCache
 // Dependencies: [77, 29, 31, 1478, 1461]
 // Exports: default

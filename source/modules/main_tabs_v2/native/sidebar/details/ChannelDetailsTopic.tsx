@@ -1,9 +1,9 @@
-// Module ID: 15424
-// Function ID: 118572
+// Module ID: 15471
+// Function ID: 118894
 // Name: GuildChannelDetailsTopic
-// Dependencies: [57, 31, 27, 1849, 9102, 653, 33, 477, 4130, 3834, 689, 666, 3991, 4542, 4120, 4660, 4126, 4554, 566, 3969, 4312, 2]
+// Dependencies: [57, 31, 27, 1849, 9140, 653, 33, 477, 4130, 3834, 689, 666, 3991, 4542, 4120, 4660, 4126, 4554, 566, 3969, 4312, 2]
 
-// Module 15424 (GuildChannelDetailsTopic)
+// Module 15471 (GuildChannelDetailsTopic)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

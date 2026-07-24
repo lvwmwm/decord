@@ -1,10 +1,10 @@
-// Module ID: 8366
-// Function ID: 66693
+// Module ID: 8410
+// Function ID: 66921
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 57, 31, 33, 4130, 689, 8351, 8346, 8359, 1820, 8367, 4543, 1212, 8368, 8345, 8369, 8370, 4126, 5519, 2]
+// Dependencies: [5, 57, 31, 33, 4130, 689, 8395, 8390, 8403, 1820, 8411, 4543, 1212, 8412, 8389, 8413, 8414, 4126, 5517, 2]
 // Exports: default
 
-// Module 8366 (EditGuildEventRecurrenceModal)
+// Module 8410 (EditGuildEventRecurrenceModal)
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -49,11 +49,11 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     callback(obj);
     callback2(null);
   }
-  let tmp2 = importDefault(8351)(recurrenceId, guildEvent.id);
+  let tmp2 = importDefault(8395)(recurrenceId, guildEvent.id);
   const dependencyMap = tmp2;
-  let obj = guildEvent(8346);
+  let obj = guildEvent(8390);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj1 = guildEvent(8346);
+  let obj1 = guildEvent(8390);
   scheduleForRecurrenceWithException = obj1.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp2);
   const tmp5 = callback(React.useState(scheduleForRecurrenceWithException), 2);
   callback = tmp5[0];
@@ -61,7 +61,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
   const tmp6 = callback(React.useState(null), 2);
   const first = tmp6[0];
   closure_8 = tmp6[1];
-  const tmp8 = callback(importDefault(8359)(() => {
+  const tmp8 = callback(importDefault(8403)(() => {
     const result = recurrenceId(tmp2[9]).dismissGlobalKeyboard();
     return outer1_1(tmp2[10])(guildEvent, recurrenceId, _slicedToArray, tmp2);
   }), 2);
@@ -113,5 +113,5 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     fullscreen: true
   };
   obj1 = { screens: { [closure_10.TIME]: obj }, initialRouteName: error.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: _createForOfIteratorHelperLoose().cardStyle };
-  return first(guildEvent(5519).Navigator, obj1);
+  return first(guildEvent(5517).Navigator, obj1);
 };

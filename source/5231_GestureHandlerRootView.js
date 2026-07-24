@@ -1,5 +1,5 @@
 // Module ID: 5231
-// Function ID: 45210
+// Function ID: 45215
 // Name: GestureHandlerRootView
 // Dependencies: [29, 31, 27, 33, 5218, 5232, 5233]
 // Exports: default

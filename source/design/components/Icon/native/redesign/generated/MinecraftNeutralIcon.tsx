@@ -1,10 +1,10 @@
-// Module ID: 8619
-// Function ID: 68347
+// Module ID: 8661
+// Function ID: 68569
 // Name: MinecraftNeutralIcon
-// Dependencies: [31, 27, 33, 689, 3833, 8620, 8621, 8622, 2]
+// Dependencies: [31, 27, 33, 689, 3833, 8662, 8663, 8664, 2]
 // Exports: MinecraftNeutralIcon
 
-// Module 8619 (MinecraftNeutralIcon)
+// Module 8661 (MinecraftNeutralIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,16 +34,16 @@ export const MinecraftNeutralIcon = function MinecraftNeutralIcon(secondaryColor
   Object.setPrototypeOf(null);
   const merged = Object.assign(secondaryColor, obj);
   obj = {};
-  obj = { source: require(8620) /* registerAsset */, color, style };
+  obj = { source: require(8662) /* registerAsset */, color, style };
   const merged1 = Object.assign(merged);
   const items = [callback(require(3833) /* BaseIconImage */.BaseIconImage, obj), , ];
-  const obj1 = { source: require(8621) /* registerAsset */, color: str };
+  const obj1 = { source: require(8663) /* registerAsset */, color: str };
   const items1 = [style];
   const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = callback(require(3833) /* BaseIconImage */.BaseIconImage, obj1);
-  const obj2 = { source: require(8622) /* registerAsset */, color: str2 };
+  const obj2 = { source: require(8664) /* registerAsset */, color: str2 };
   const items3 = [style];
   const items4 = [...items3.flat(), { position: "absolute", top: 0 }];
   obj2.style = items4;

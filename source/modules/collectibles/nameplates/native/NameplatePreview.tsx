@@ -1,10 +1,10 @@
-// Module ID: 9805
-// Function ID: 76134
+// Module ID: 9837
+// Function ID: 76328
 // Name: NameplatePreview
-// Dependencies: [31, 27, 4122, 1917, 33, 4130, 689, 1873, 9088, 7840, 566, 3969, 4361, 1273, 8229, 8513, 8514, 4126, 2]
+// Dependencies: [31, 27, 4122, 1917, 33, 4130, 689, 1873, 9126, 7929, 566, 3969, 4361, 1273, 8273, 8558, 8559, 4126, 2]
 // Exports: NameplatePreview
 
-// Module 9805 (NameplatePreview)
+// Module 9837 (NameplatePreview)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -67,9 +67,9 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     let obj = user(1873);
     nameplateData = obj.getNameplateData(nameplate);
   }
-  let obj1 = user(9088);
+  let obj1 = user(9126);
   const avatarDecoration = obj1.useAvatarDecoration(user, guildId);
-  const pendingAvatarDecoration = guildId(7840)({ guildId }).pendingAvatarDecoration;
+  const pendingAvatarDecoration = guildId(7929)({ guildId }).pendingAvatarDecoration;
   let obj2 = user(566);
   const items = [_isNativeReflectConstruct];
   stateFromStores = obj2.useStateFromStores(items, () => outer1_5.useReducedMotion);
@@ -119,15 +119,15 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     return outer1_7(user(_undefined[13]).Avatar, obj);
   }, items2);
   obj1 = { nameplate: nameplateData, style: tmp.nameplate, fullOpacity: true, animate: flag2 };
-  const items3 = [callback(guildId(8229), obj1), , ];
+  const items3 = [callback(guildId(8273), obj1), , ];
   obj2 = { style: tmp.avatar, children: memo };
   items3[1] = callback(c4, obj2);
   obj3 = { style: tmp.content };
   let tmp16 = null != tmp12;
   if (tmp16) {
-    obj4 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(8514).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
-    tmp16 = callback(guildId(8513), obj4);
-    const tmp20 = guildId(8513);
+    obj4 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(8559).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+    tmp16 = callback(guildId(8558), obj4);
+    const tmp20 = guildId(8558);
   }
   const items4 = [tmp16, ];
   let tmp22 = null == tmp12;

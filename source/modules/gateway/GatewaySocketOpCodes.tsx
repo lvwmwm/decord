@@ -1,9 +1,9 @@
-// Module ID: 12570
-// Function ID: 97249
+// Module ID: 12621
+// Function ID: 97570
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4223, 12571, 21, 631, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4223, 12622, 21, 631, 2]
 
-// Module 12570 (_isNativeReflectConstruct)
+// Module 12621 (_isNativeReflectConstruct)
 import Opcode from "Opcode";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

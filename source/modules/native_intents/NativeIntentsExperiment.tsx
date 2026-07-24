@@ -1,9 +1,9 @@
-// Module ID: 16553
-// Function ID: 129133
+// Module ID: 16600
+// Function ID: 129457
 // Name: items
 // Dependencies: [4042, 2]
 
-// Module 16553 (items)
+// Module 16600 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "user", id: "2025-06_native_intents", label: "Native Intents", defaultConfig: { searchEnabled: false, clearEnabled: false, activityEnabled: false } };

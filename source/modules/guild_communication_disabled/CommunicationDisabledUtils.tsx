@@ -1,5 +1,5 @@
 // Module ID: 3747
-// Function ID: 28590
+// Function ID: 28591
 // Name: isCommunicationDisabled
 // Dependencies: [2]
 // Exports: isMemberCommunicationDisabled

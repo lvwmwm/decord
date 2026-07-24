@@ -1,9 +1,9 @@
-// Module ID: 7463
-// Function ID: 59943
+// Module ID: 7543
+// Function ID: 60189
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 7464, 6979, 7465, 7467, 7468, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 7544, 6978, 7545, 7547, 7548, 566, 686, 2]
 
-// Module 7463 (_isNativeReflectConstruct)
+// Module 7543 (_isNativeReflectConstruct)
 import InviteSendStates from "InviteSendStates";
 import head from "head";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -153,9 +153,9 @@ tmp3 = new tmp3(require("dispatcher"), {
   },
   FRIEND_INVITE_CREATE_SUCCESS: function handleFriendInviteCreateSuccess(invite) {
     closure_13[invite.invite.code] = _isNativeReflectConstruct.createFromServer(invite.invite);
-    const tmp = importDefault(7465);
-    const tmp2 = importDefault(7467);
-    const tmpResult = tmp(tmp2(importDefault(7468)(Object.values(closure_13), "createdAt")));
+    const tmp = importDefault(7545);
+    const tmp2 = importDefault(7547);
+    const tmpResult = tmp(tmp2(importDefault(7548)(Object.values(closure_13), "createdAt")));
     let tmp5 = null;
     if (null != tmpResult) {
       tmp5 = tmpResult;
@@ -176,9 +176,9 @@ tmp3 = new tmp3(require("dispatcher"), {
         }
       });
     }
-    const tmp2 = importDefault(7465);
-    const tmp3 = importDefault(7467);
-    const tmp2Result = tmp2(tmp3(importDefault(7468)(Object.values(closure_13), "createdAt")));
+    const tmp2 = importDefault(7545);
+    const tmp3 = importDefault(7547);
+    const tmp2Result = tmp2(tmp3(importDefault(7548)(Object.values(closure_13), "createdAt")));
     let tmp6 = null;
     if (null != tmp2Result) {
       tmp6 = tmp2Result;
@@ -229,9 +229,9 @@ tmp3 = new tmp3(require("dispatcher"), {
     const item = invites.forEach((code) => {
       closure_13[code.code] = outer1_7.createFromServer(code);
     });
-    const tmp2 = importDefault(7465);
-    const tmp3 = importDefault(7467);
-    const tmp2Result = tmp2(tmp3(importDefault(7468)(Object.values(closure_13), "createdAt")));
+    const tmp2 = importDefault(7545);
+    const tmp3 = importDefault(7547);
+    const tmp2Result = tmp2(tmp3(importDefault(7548)(Object.values(closure_13), "createdAt")));
     let tmp6 = null;
     if (null != tmp2Result) {
       tmp6 = tmp2Result;

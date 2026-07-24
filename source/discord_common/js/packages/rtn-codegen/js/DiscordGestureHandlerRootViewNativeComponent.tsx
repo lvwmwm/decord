@@ -1,9 +1,9 @@
-// Module ID: 13478
-// Function ID: 103803
+// Module ID: 13531
+// Function ID: 104130
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 13478 (__INTERNAL_VIEW_CONFIG)
+// Module 13531 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "DiscordGestureHandlerRootView", validAttributes: {} };

@@ -1,6 +1,6 @@
 // Module ID: 4140
-// Function ID: 34403
-// Dependencies: [57, 5, 4141, 1352, 1348, 4142, 653, 8922, 507, 5050, 3982, 4138, 4944, 686, 8340, 675, 1198, 3976, 1212, 5717, 4369, 2]
+// Function ID: 34404
+// Dependencies: [57, 5, 4141, 1352, 1348, 4142, 653, 8961, 507, 5050, 3982, 4138, 4944, 686, 8384, 675, 1198, 3976, 1212, 5717, 4369, 2]
 
 // Module 4140
 import _slicedToArray from "_slicedToArray";
@@ -206,7 +206,7 @@ export default {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    if (importDefault(8340)(id)) {
+    if (importDefault(8384)(id)) {
       let obj = importDefault(675);
       obj = { last_changelog_id: closure_5.latestChangelogId(), unread_count: unreadCount.getUnreadCount(id) };
       obj.track(constants.CHANGE_LOG_DM_REMOVED, obj);

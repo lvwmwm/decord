@@ -1,10 +1,10 @@
-// Module ID: 15170
-// Function ID: 115500
+// Module ID: 15217
+// Function ID: 115822
 // Name: ContactSuggestionActions
-// Dependencies: [31, 27, 33, 3991, 4130, 689, 14912, 4131, 4542, 1273, 15171, 4543, 1212, 2]
+// Dependencies: [31, 27, 33, 3991, 4130, 689, 14959, 4131, 4542, 1273, 15218, 4543, 1212, 2]
 // Exports: ContactSuggestionActions
 
-// Module 15170 (ContactSuggestionActions)
+// Module 15217 (ContactSuggestionActions)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 9928
-// Function ID: 76793
+// Module ID: 9960
+// Function ID: 76987
 // Name: ForLaterCardReminderHeader
-// Dependencies: [27, 33, 4130, 689, 9920, 4094, 4126, 2]
+// Dependencies: [27, 33, 4130, 689, 9952, 4094, 4126, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 9928 (ForLaterCardReminderHeader)
+// Module 9960 (ForLaterCardReminderHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -27,7 +27,7 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   savedMessage = savedMessage.savedMessage;
   ({ throttledNow, actions } = savedMessage);
   const tmp = callback3();
-  let obj = require(9920) /* _savedMessageJumpToMessage */;
+  let obj = require(9952) /* _savedMessageJumpToMessage */;
   obj = {};
   let dueAt;
   if (null != savedMessage) {
@@ -35,7 +35,7 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   }
   obj.dueAt = dueAt;
   obj.now = throttledNow;
-  obj.type = require(9920) /* _savedMessageJumpToMessage */.DueInStringTypes.SHORT;
+  obj.type = require(9952) /* _savedMessageJumpToMessage */.DueInStringTypes.SHORT;
   const dueInString = obj.useDueInString(obj);
   const isOverdue = dueInString.isOverdue;
   if (null == savedMessage.saveData.dueAt) {

@@ -1,9 +1,9 @@
-// Module ID: 10459
-// Function ID: 80723
+// Module ID: 10488
+// Function ID: 80915
 // Name: ChatUpdatesQueue
 // Dependencies: [6, 7, 27, 2]
 
-// Module 10459 (ChatUpdatesQueue)
+// Module 10488 (ChatUpdatesQueue)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import get_ActivityIndicator from "get ActivityIndicator";

@@ -1,10 +1,10 @@
-// Module ID: 7414
-// Function ID: 59605
+// Module ID: 7416
+// Function ID: 59640
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 7415, 4126, 1212, 3776, 4543, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1273, 7417, 4126, 1212, 3776, 4543, 2]
 // Exports: default
 
-// Module 7414 (SubscriptionAccountHoldNotice)
+// Module 7416 (SubscriptionAccountHoldNotice)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { SubscriptionStatusTypes } from "ME";
@@ -34,7 +34,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
   if (subscription.status === SubscriptionStatusTypes.ACCOUNT_HOLD) {
     let obj = { style: tmp.container };
     obj = { style: tmp.textContainer };
-    obj = { size: subscription(1273).IconSizes.MEDIUM, style: tmp.icon, source: importDefault(7415) };
+    obj = { size: subscription(1273).IconSizes.MEDIUM, style: tmp.icon, source: importDefault(7417) };
     const items = [callback(subscription(1273).Icon, obj), ];
     const obj1 = { style: tmp.text, variant: "text-sm/medium" };
     const intl = subscription(1212).intl;

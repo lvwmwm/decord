@@ -1,5 +1,5 @@
 // Module ID: 4360
-// Function ID: 38675
+// Function ID: 38676
 // Name: useNullableMessageAuthor
 // Dependencies: [1348, 1917, 1910, 1838, 3767, 1849, 44, 566, 3969, 4361, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor

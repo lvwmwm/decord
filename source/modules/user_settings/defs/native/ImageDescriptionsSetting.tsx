@@ -1,16 +1,16 @@
-// Module ID: 14294
-// Function ID: 109515
+// Module ID: 14344
+// Function ID: 109838
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: [1280, 7662, 3803, 14295, 10095, 1212, 2]
+// Dependencies: [1280, 7751, 3803, 14345, 10127, 1212, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14294 (onImageDescriptionSettingValueChange)
+// Module 14344 (onImageDescriptionSettingValueChange)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
 const require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
-  let obj = require(14295) /* trackSettingsUpdated */;
+  let obj = require(14345) /* trackSettingsUpdated */;
   obj = { videoUploadQuality: _isNativeReflectConstruct.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: _isNativeReflectConstruct.lowQualityImageMode, dataSavingMode: _isNativeReflectConstruct.dataSavingMode };
   obj.setImageDescriptions(obj);
 }

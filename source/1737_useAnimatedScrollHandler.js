@@ -1,5 +1,5 @@
 // Module ID: 1737
-// Function ID: 19474
+// Function ID: 19475
 // Name: useAnimatedScrollHandler
 // Dependencies: [1727, 1729]
 

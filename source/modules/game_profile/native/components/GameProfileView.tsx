@@ -1,10 +1,10 @@
-// Module ID: 8629
-// Function ID: 68364
+// Module ID: 8671
+// Function ID: 68586
 // Name: GameProfileView
-// Dependencies: [31, 27, 33, 4130, 689, 5464, 5484, 8630, 8634, 8635, 8636, 8646, 8647, 8650, 8653, 8662, 11851, 11853, 11870, 11871, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5462, 5482, 8672, 8675, 8676, 8677, 8687, 8688, 8691, 8694, 8703, 11878, 11880, 11897, 11898, 2]
 // Exports: default
 
-// Module 8629 (GameProfileView)
+// Module 8671 (GameProfileView)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -42,7 +42,7 @@ export default function GameProfileView(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = React.useRef(null);
   const dependencyMap = React.useRef(null);
-  const analyticsLocations = importDefault(5464)(importDefault(5484).GAME_PROFILE).analyticsLocations;
+  const analyticsLocations = importDefault(5462)(importDefault(5482).GAME_PROFILE).analyticsLocations;
   const items = [onStoreLinksMeasured];
   React = React.useCallback(() => {
     const current = ref.current;
@@ -55,7 +55,7 @@ export default function GameProfileView(arg0) {
   }, items);
   let obj = { value: analyticsLocations };
   obj = { style: tmp.container };
-  const items1 = [callback(importDefault(8630), { game, scrollY, onHeightMeasured: onHeaderHeightMeasured }), ];
+  const items1 = [callback(importDefault(8672), { game, scrollY, onHeightMeasured: onHeaderHeightMeasured }), ];
   obj = {
     style: tmp.body,
     onLayout(nativeEvent) {
@@ -63,7 +63,7 @@ export default function GameProfileView(arg0) {
       callback();
     }
   };
-  const items2 = [callback(importDefault(8634), { game, viewId, source, trackAction }), , , , , , , , , , ];
+  const items2 = [callback(importDefault(8675), { game, viewId, source, trackAction }), , , , , , , , , , ];
   let tmp6 = websiteButtons.length > 0;
   if (tmp6) {
     const obj1 = {
@@ -74,25 +74,25 @@ export default function GameProfileView(arg0) {
         }
     };
     const obj2 = { game, websiteButtons, trackAction };
-    obj1.children = callback(importDefault(8635), obj2);
+    obj1.children = callback(importDefault(8676), obj2);
     tmp6 = callback(View, obj1);
   }
   items2[1] = tmp6;
-  items2[2] = callback(importDefault(8636), { game, trackAction });
-  items2[3] = callback(importDefault(8646), { game, viewId, source, trackAction });
-  items2[4] = callback(importDefault(8647), { game, analyticsLocations, trackAction });
-  items2[5] = callback(importDefault(8650), { closeModal, game, onInviteResolved: onGuildInviteResolved, trackAction });
-  items2[6] = callback(importDefault(8653), { gameId: game.id, invite, closeModal, trackAction, scrollOffsetRef });
-  items2[7] = callback(importDefault(8662), { game, closeModal, trackAction });
-  items2[8] = callback(importDefault(11851), { gameId: game.id, trackAction });
-  items2[9] = callback(importDefault(11853), { game, viewId, source, trackAction });
+  items2[2] = callback(importDefault(8677), { game, trackAction });
+  items2[3] = callback(importDefault(8687), { game, viewId, source, trackAction });
+  items2[4] = callback(importDefault(8688), { game, analyticsLocations, trackAction });
+  items2[5] = callback(importDefault(8691), { closeModal, game, onInviteResolved: onGuildInviteResolved, trackAction });
+  items2[6] = callback(importDefault(8694), { gameId: game.id, invite, closeModal, trackAction, scrollOffsetRef });
+  items2[7] = callback(importDefault(8703), { game, closeModal, trackAction });
+  items2[8] = callback(importDefault(11878), { gameId: game.id, trackAction });
+  items2[9] = callback(importDefault(11880), { game, viewId, source, trackAction });
   const obj5 = { style: tmp.buttonsContainer };
-  const items3 = [callback(importDefault(11870), { game, trackAction }), callback(importDefault(11871), { applicationId: game.id, trackAction })];
+  const items3 = [callback(importDefault(11897), { game, trackAction }), callback(importDefault(11898), { applicationId: game.id, trackAction })];
   obj5.children = items3;
   items2[10] = callback2(View, obj5);
   obj.children = items2;
   items1[1] = callback2(View, obj);
   obj.children = items1;
   obj.children = callback2(View, obj);
-  return callback(onStoreLinksMeasured(5464).AnalyticsLocationProvider, obj);
+  return callback(onStoreLinksMeasured(5462).AnalyticsLocationProvider, obj);
 };

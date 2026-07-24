@@ -1,5 +1,5 @@
 // Module ID: 6176
-// Function ID: 50218
+// Function ID: 50229
 // Name: GemLevel2SpotIllustration
 // Dependencies: [33, 5085, 6177, 2]
 // Exports: GemLevel2SpotIllustration

@@ -1,10 +1,10 @@
-// Module ID: 12321
-// Function ID: 95928
+// Module ID: 12348
+// Function ID: 96168
 // Name: createSafetySystemNotificationEmbed
-// Dependencies: [27, 653, 3712, 7577, 4600, 7543, 7635, 1212, 2]
+// Dependencies: [27, 653, 3712, 7632, 4600, 7588, 7724, 1212, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 12321 (createSafetySystemNotificationEmbed)
+// Module 12348 (createSafetySystemNotificationEmbed)
 import { Image } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 
@@ -25,7 +25,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
           type = first1.type;
         }
         if (type === MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION) {
-          let obj = require(7543) /* parseMessageEmbedForProps */;
+          let obj = require(7588) /* parseMessageEmbedForProps */;
           const parseMessageForPropsResult = obj.parseMessageForProps(message);
           if (null != parseMessageForPropsResult) {
             let tmp9;
@@ -33,13 +33,13 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (null != parseMessageForPropsResult.ctas) {
               let mapCtaToNativeDataResult;
               if (null != parseMessageForPropsResult.ctas[0]) {
-                mapCtaToNativeDataResult = require(7543) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[0], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
-                const obj2 = require(7543) /* parseMessageEmbedForProps */;
+                mapCtaToNativeDataResult = require(7588) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[0], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
+                const obj2 = require(7588) /* parseMessageEmbedForProps */;
               }
               let mapCtaToNativeDataResult1;
               if (null != parseMessageForPropsResult.ctas[1]) {
-                mapCtaToNativeDataResult1 = require(7543) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[1], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
-                const obj3 = require(7543) /* parseMessageEmbedForProps */;
+                mapCtaToNativeDataResult1 = require(7588) /* parseMessageEmbedForProps */.mapCtaToNativeData(parseMessageForPropsResult.ctas[1], parseMessageForPropsResult.learn_more_link, parseMessageForPropsResult.classification_id);
+                const obj3 = require(7588) /* parseMessageEmbedForProps */;
               }
               tmp10 = mapCtaToNativeDataResult1;
               tmp9 = mapCtaToNativeDataResult;
@@ -53,11 +53,11 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             }
             obj.titleText = str2;
             if ("danger" === parseMessageForPropsResult.icon) {
-              let tmp22 = 7577;
+              let tmp22 = 7632;
             } else {
               tmp22 = 4600;
             }
-            obj.titleIcon = require(7635) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(tmp22)));
+            obj.titleIcon = require(7724) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(tmp22)));
             const intl = require(1212) /* getSystemLocale */.intl;
             obj = {};
             const timestamp = parseMessageForPropsResult.timestamp;
@@ -65,7 +65,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (null != timestamp) {
               num8 = timestamp;
             }
-            const obj5 = require(7635) /* frozen */;
+            const obj5 = require(7724) /* frozen */;
             const tmp20 = importDefault;
             const obj7 = importDefault(3712)();
             obj.daysAgo = obj7.diff(importDefault(3712).unix(num8), "days");

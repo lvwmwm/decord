@@ -1,10 +1,10 @@
-// Module ID: 16292
-// Function ID: 126820
+// Module ID: 16339
+// Function ID: 127144
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1348, 1838, 3758, 3767, 1849, 16208, 653, 33, 4130, 5052, 689, 1212, 3976, 665, 7495, 1273, 16293, 3842, 566, 4593, 4320, 4660, 1557, 4543, 5497, 8412, 8734, 16294, 16295, 16206, 10949, 14186, 3763, 5048, 4470, 5788, 16296, 5448, 7596, 1456, 44, 4549, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1348, 1838, 3758, 3767, 1849, 16255, 653, 33, 4130, 5052, 689, 1212, 3976, 665, 7636, 1273, 16340, 3842, 566, 4593, 4320, 4660, 1557, 4543, 5495, 8456, 8773, 16341, 16342, 16253, 10976, 14236, 3763, 5048, 4470, 5788, 16343, 5448, 7685, 1456, 44, 4549, 2]
 // Exports: default
 
-// Module 16292 (_callSuper)
+// Module 16339 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -122,7 +122,7 @@ function ChannelItem(arg0) {
     let tmp19 = callback4(channelIconComponent, obj3);
   } else {
     obj4 = { size: channel(1273).Icon.Sizes.SMALL_20, source: channelIcon, style: channelIconStyle };
-    tmp19 = callback4(channel(7495).FormRow.Icon, obj4);
+    tmp19 = callback4(channel(7636).FormRow.Icon, obj4);
   }
   obj2.leading = tmp19;
   obj2.style = legacyClassComponentStyles.formRowStyle;
@@ -140,8 +140,8 @@ function ChannelItem(arg0) {
   if (stateFromStores) {
     tmp21 = null;
     if (sortingEnabled) {
-      const obj5 = { source: importDefault(16293), style: actionIconStyle };
-      tmp21 = callback4(channel(7495).FormRow.Icon, obj5);
+      const obj5 = { source: importDefault(16340), style: actionIconStyle };
+      tmp21 = callback4(channel(7636).FormRow.Icon, obj5);
     }
   }
   obj2.trailing = tmp21;
@@ -150,7 +150,7 @@ function ChannelItem(arg0) {
     num6 = 1;
   }
   obj2.numberOfLines = num6;
-  obj.children = tmp15(channel(7495).FormRow, obj2);
+  obj.children = tmp15(channel(7636).FormRow, obj2);
   obj["children"] = tmp12(tmp13, obj);
   return tmp5(tmp6, obj);
 }
@@ -204,7 +204,7 @@ function CreateButton(guild) {
       const result = obj.showSimpleActionSheet(obj);
     };
     let obj1 = { color: "white" };
-    obj.icon = callback4(guild(8734).PlusSmallIcon, obj1);
+    obj.icon = callback4(guild(8773).PlusSmallIcon, obj1);
     obj.children = callback4(guild(4543).Button, obj);
     tmp3 = callback4(closure_10, obj);
   }

@@ -1,9 +1,9 @@
-// Module ID: 10506
-// Function ID: 82000
+// Module ID: 10535
+// Function ID: 82192
 // Name: BaseSocket
-// Dependencies: [6, 7, 653, 22, 10496, 2]
+// Dependencies: [6, 7, 653, 22, 10525, 2]
 
-// Module 10506 (BaseSocket)
+// Module 10535 (BaseSocket)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import ME from "ME";

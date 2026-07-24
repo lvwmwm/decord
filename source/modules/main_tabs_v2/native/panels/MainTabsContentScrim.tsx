@@ -1,10 +1,10 @@
-// Module ID: 15254
-// Function ID: 116400
+// Module ID: 15301
+// Function ID: 116722
 // Name: MainTabsContentScrim
 // Dependencies: [27, 33, 4130, 689, 3991, 2]
 // Exports: MainTabsContentScrim
 
-// Module 15254 (MainTabsContentScrim)
+// Module 15301 (MainTabsContentScrim)
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 

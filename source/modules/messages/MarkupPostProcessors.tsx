@@ -1,10 +1,10 @@
-// Module ID: 7780
-// Function ID: 61761
+// Module ID: 7871
+// Function ID: 62082
 // Name: checkForJumboEmoji
-// Dependencies: [653, 4464, 4046, 7781, 4114, 1184, 2]
+// Dependencies: [653, 4464, 4046, 7872, 4114, 1184, 2]
 // Exports: runMessageMarkupPostProcessors
 
-// Module 7780 (checkForJumboEmoji)
+// Module 7871 (checkForJumboEmoji)
 import ME from "ME";
 import set from "getAPIEndpoint";
 

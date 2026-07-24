@@ -1,5 +1,5 @@
 // Module ID: 6308
-// Function ID: 50416
+// Function ID: 50427
 // Name: MushroomSpotIllustration
 // Dependencies: [33, 5085, 6309, 2]
 // Exports: MushroomSpotIllustration

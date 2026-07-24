@@ -1,9 +1,9 @@
-// Module ID: 7932
-// Function ID: 63334
+// Module ID: 8019
+// Function ID: 63646
 // Name: get untranslatedDescription
 // Dependencies: [3767, 1849, 4566, 1881, 6755, 1212, 4320, 4470, 4140, 6691, 2]
 
-// Module 7932 (get untranslatedDescription)
+// Module 8019 (get untranslatedDescription)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

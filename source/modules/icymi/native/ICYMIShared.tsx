@@ -1,10 +1,10 @@
-// Module ID: 15218
-// Function ID: 115999
+// Module ID: 15265
+// Function ID: 116321
 // Name: Separator
-// Dependencies: [31, 27, 5683, 1348, 1917, 3758, 1849, 653, 33, 7087, 11878, 4644, 9851, 15147, 5069, 5628, 5584, 6691, 4062, 15179, 477, 689, 1273, 7873, 5515, 4549, 4660, 4126, 6884, 15219, 8968, 566, 4319, 8321, 8492, 4651, 8320, 14951, 8461, 1212, 15180, 4066, 3834, 3974, 3991, 4131, 4140, 4629, 5514, 4120, 2]
+// Dependencies: [31, 27, 5683, 1348, 1917, 3758, 1849, 653, 33, 7086, 11905, 4644, 9883, 15194, 5069, 5626, 5582, 6691, 4062, 15226, 477, 689, 1273, 7961, 5513, 4549, 4660, 4126, 6883, 15266, 9007, 566, 4319, 8365, 8537, 4651, 8364, 14998, 8505, 1212, 15227, 4066, 3834, 3974, 3991, 4131, 4140, 4629, 5512, 4120, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost
 
-// Module 15218 (Separator)
+// Module 15265 (Separator)
 import initialize from "initialize";
 import { View } from "Text";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import ME from "ME";
-import jsxProd from "module_8321";
+import jsxProd from "module_8365";
 import createICYMIStyles from "createICYMIStyles";
 
 let closure_10;
@@ -30,7 +30,7 @@ let closure_20;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f116006().separator };
+    obj = { style: f116328().separator };
     return jsx(View, obj);
   }
 }
@@ -76,7 +76,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, id, type } = global);
     ({ timestamp, hideTimestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f116006();
+    tmp = f116328();
     obj = require("getFontScale");
     obj = {};
     fontScale = obj.useFontScale();
@@ -238,16 +238,16 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
     obj = { page: outer1_12.ICYMI, object: outer1_10.ACK_MESSAGE_VIEWED, objectType: outer1_11.ACK_SEMI_AUTOMATIC };
     obj.ack(id, obj, true, true, closure_1);
   }, 1500);
-  importDefault(5628)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
+  importDefault(5626)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(5584).runAfterInteractions(() => {
+    _require(5582).runAfterInteractions(() => {
       let obj = id3(outer1_2[17]);
       obj = { channelId: id, limit: outer1_14 };
       obj = { messageId: id3, flash: true, jumpType: id(outer1_2[18]).JumpType.ANIMATED };
       obj.jump = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(5584);
+    let obj = _require(5582);
   }
 };
 export { Separator };
@@ -652,7 +652,7 @@ export const ThreadAsComments = function ThreadAsComments(parentMessage) {
         obj4 = { variant: "text-sm/bold", color: "interactive-text-default", children: str };
         items3[1] = callback(parentMessage(4126).Text, obj4);
         const obj5 = { style: tmp.chevron, size: "xxs" };
-        items3[2] = callback(parentMessage(5514).ChevronSmallRightIcon, obj5);
+        items3[2] = callback(parentMessage(5512).ChevronSmallRightIcon, obj5);
         obj2.children = items3;
         items2[2] = callback2(View, obj2);
         obj.children = items2;
@@ -671,7 +671,7 @@ export const ThreadAsComments = function ThreadAsComments(parentMessage) {
     const obj9 = { style: tmp.commentsIcon };
     const items6 = [callback(parentMessage(4629).ChatIcon, obj9), ];
     const obj10 = { style: tmp.chevron, size: "xxs" };
-    items6[1] = callback(parentMessage(5514).ChevronSmallRightIcon, obj10);
+    items6[1] = callback(parentMessage(5512).ChevronSmallRightIcon, obj10);
     obj8.children = items6;
     items5[1] = callback2(View, obj8);
     obj6.children = items5;

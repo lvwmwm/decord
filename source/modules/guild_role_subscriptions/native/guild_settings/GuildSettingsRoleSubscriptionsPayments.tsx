@@ -1,8 +1,8 @@
-// Module ID: 16473
-// Function ID: 128352
-// Dependencies: [31, 33, 15261, 1212, 2]
+// Module ID: 16520
+// Function ID: 128676
+// Dependencies: [31, 33, 15308, 1212, 2]
 
-// Module 16473
+// Module 16520
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -14,7 +14,7 @@ const forwardRefResult = require("result").forwardRef(() => {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl2.string(require(1212) /* getSystemLocale */.t.pRuzXJ);
   obj.brightTitle = true;
-  return jsx(importDefault(15261), {});
+  return jsx(importDefault(15308), {});
 });
 const result = require("UnavailableNotice").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
 

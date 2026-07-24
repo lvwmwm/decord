@@ -1,5 +1,5 @@
 // Module ID: 5768
-// Function ID: 49415
+// Function ID: 49426
 // Name: getCurrentVoiceChannel
 // Dependencies: [1194, 1348, 4146, 2]
 // Exports: default

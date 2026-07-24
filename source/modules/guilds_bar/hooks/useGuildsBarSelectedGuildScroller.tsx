@@ -1,10 +1,10 @@
-// Module ID: 14889
-// Function ID: 113518
+// Module ID: 14936
+// Function ID: 113839
 // Name: useGuildsBarSelectedGuildScroller
 // Dependencies: [31, 3947, 2]
 // Exports: default
 
-// Module 14889 (useGuildsBarSelectedGuildScroller)
+// Module 14936 (useGuildsBarSelectedGuildScroller)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

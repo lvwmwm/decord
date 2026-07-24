@@ -1,9 +1,9 @@
-// Module ID: 9553
-// Function ID: 74466
+// Module ID: 9589
+// Function ID: 74675
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5658, 3758, 653, 44, 6924, 2]
+// Dependencies: [57, 5658, 3758, 653, 44, 6923, 2]
 
-// Module 9553 (_createForOfIteratorHelperLoose)
+// Module 9589 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -164,7 +164,7 @@ export default {
   },
   everyoneMemberCount,
   extractEveryoneRole(arg0, getGuildId) {
-    const tmp = _createForOfIteratorHelperLoose(importDefault(6924).parsePreprocessor(getGuildId, arg0));
+    const tmp = _createForOfIteratorHelperLoose(importDefault(6923).parsePreprocessor(getGuildId, arg0));
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {

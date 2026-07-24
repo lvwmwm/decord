@@ -1,10 +1,10 @@
-// Module ID: 11507
-// Function ID: 89616
+// Module ID: 11537
+// Function ID: 89861
 // Name: useIOSCompletionStates
-// Dependencies: [1907, 1838, 3758, 11508, 11502, 653, 4098, 11509, 1934, 11510, 566, 11505, 11622, 1212, 21, 2]
+// Dependencies: [1907, 1838, 3758, 11538, 11532, 653, 4098, 11539, 1934, 11540, 566, 11535, 11649, 1212, 21, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet, useGuildProgressStep, useIsEligibleForGuildProgress
 
-// Module 11507 (useIOSCompletionStates)
+// Module 11537 (useIOSCompletionStates)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,10 +20,10 @@ function useIOSCompletionStates(guild) {
   let obj = _require(566);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.can(outer1_9.ADMINISTRATOR, closure_0));
-  const guildPersonalized = _require(11505).useGuildPersonalized(guild);
-  const obj2 = _require(11505);
-  const guildPopulated = _require(11505).useGuildPopulated(guild);
-  const obj3 = _require(11505);
+  const guildPersonalized = _require(11535).useGuildPersonalized(guild);
+  const obj2 = _require(11535);
+  const guildPopulated = _require(11535).useGuildPopulated(guild);
+  const obj3 = _require(11535);
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_3.getDefaultChannel(guild.id));
   const obj4 = _require(566);
@@ -33,8 +33,8 @@ function useIOSCompletionStates(guild) {
   } else {
     items3 = [];
   }
-  const channelsMessaged = _require(11505).useChannelsMessaged(items3);
-  const obj5 = _require(11505);
+  const channelsMessaged = _require(11535).useChannelsMessaged(items3);
+  const obj5 = _require(11535);
   const items4 = [closure_6];
   let stateFromStores2 = channelsMessaged;
   if (!channelsMessaged) {
@@ -65,7 +65,7 @@ function useIOSCompletionStates(guild) {
   const items6 = [closure_6];
   const stateFromStores4 = _require(566).useStateFromStores(items6, () => outer1_6.getProgress(guild.id));
   if (stateFromStores) {
-    const ServerSetupBoostCtaExperiment = _require(11622).ServerSetupBoostCtaExperiment;
+    const ServerSetupBoostCtaExperiment = _require(11649).ServerSetupBoostCtaExperiment;
     obj = { location: "GuildProgress" };
     const enabled = ServerSetupBoostCtaExperiment.getConfig(obj).enabled;
     const items7 = [guildPopulated, guildPersonalized, stateFromStores2];
@@ -105,15 +105,15 @@ export const PROGRESS_BACKGROUND_COLOR = "rgba(78, 93, 148, 0.3)";
 export const openActionSheet = function openActionSheet(guild) {
   let obj = importDefault(4098);
   obj = { guild };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(11509, dependencyMap.paths), "guild-progress-" + guild.id, obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(11539, dependencyMap.paths), "guild-progress-" + guild.id, obj);
 };
 export const hideActionSheet = function hideActionSheet(arg0) {
   importDefault(4098).hideActionSheet("guild-progress-" + arg0);
 };
 export const createGuildProgress = function createGuildProgress(id) {
   if (null != guild.getGuild(id)) {
-    const progress = importDefault(11510).createProgress(id);
-    const obj = importDefault(11510);
+    const progress = importDefault(11540).createProgress(id);
+    const obj = importDefault(11540);
   }
 };
 export { useIOSCompletionStates };

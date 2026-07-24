@@ -1,10 +1,10 @@
-// Module ID: 15495
-// Function ID: 119299
+// Module ID: 15542
+// Function ID: 119621
 // Name: styles
-// Dependencies: [31, 27, 653, 9103, 33, 4130, 689, 15496, 1212, 10280, 15408, 9309, 15505, 15507, 15512, 15513, 15522, 15525, 15534, 15536, 15537, 15538, 15539, 15540, 2]
+// Dependencies: [31, 27, 653, 9141, 33, 4130, 689, 15543, 1212, 10309, 15455, 9345, 15552, 15554, 15559, 15560, 15569, 15572, 15581, 15583, 15584, 15585, 15586, 15587, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 15495 (styles)
+// Module 15542 (styles)
 import "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 7918
-// Function ID: 62980
+// Module ID: 8005
+// Function ID: 63291
 // Name: isActivityInTextSupportedForChannel
 // Dependencies: [1348, 3758, 482, 669, 566, 2]
 // Exports: isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 7918 (isActivityInTextSupportedForChannel)
+// Module 8005 (isActivityInTextSupportedForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { Permissions } from "sum";

@@ -1,9 +1,9 @@
-// Module ID: 14032
-// Function ID: 107452
+// Module ID: 14082
+// Function ID: 107775
 // Name: getSafeAreaInsetOrPadding
-// Dependencies: [57, 31, 27, 6651, 6944, 4976, 653, 33, 689, 8148, 4130, 666, 14022, 10464, 9458, 3743, 3991, 4542, 4546, 4131, 4134, 14030, 6965, 8298, 14033, 1554, 477, 1207, 10474, 9444, 566, 1184, 1557, 1212, 14041, 4660, 13917, 13919, 13921, 13922, 9949, 8286, 8288, 13923, 13924, 2]
+// Dependencies: [57, 31, 27, 6651, 6943, 4976, 653, 33, 689, 8192, 4130, 666, 14072, 10493, 9494, 3743, 3991, 4542, 4546, 4131, 4134, 14080, 6964, 8342, 14083, 1554, 477, 1207, 10503, 9480, 566, 1184, 1557, 1212, 14091, 4660, 13968, 13970, 13972, 13973, 9981, 8330, 8332, 13974, 13975, 2]
 
-// Module 14032 (getSafeAreaInsetOrPadding)
+// Module 14082 (getSafeAreaInsetOrPadding)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "isNonEmptyString";
 import get_ActivityIndicator from "reportDevtoolsEvent";
@@ -280,7 +280,7 @@ const memoResult = importAllResult.memo((onLoad) => {
   let obj3 = onLoad(onToggleFullscreen[16]);
   class K {
     constructor() {
-      tmp = f107463();
+      tmp = f107786();
       obj = {};
       obj2 = onLoad(onToggleFullscreen[17]);
       num = 0;

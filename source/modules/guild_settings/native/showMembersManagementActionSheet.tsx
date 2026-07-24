@@ -1,10 +1,10 @@
-// Module ID: 15299
-// Function ID: 116670
+// Module ID: 15346
+// Function ID: 116992
 // Name: showMembersManagementActionSheet
-// Dependencies: [1849, 1212, 4098, 15300, 1934, 5646, 15301, 5497, 2]
+// Dependencies: [1849, 1212, 4098, 15347, 1934, 5646, 15348, 5495, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 15299 (showMembersManagementActionSheet)
+// Module 15346 (showMembersManagementActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -42,7 +42,7 @@ export default function showMembersManagementActionSheet(guild) {
     items.push(obj);
   }
   obj = { key: "GuildSettingsMembersMore", options: items, hasIcons: false };
-  const result = guild(5497).showSimpleActionSheet(obj);
+  const result = guild(5495).showSimpleActionSheet(obj);
 };
 export const getMembersManagementActions = function getMembersManagementActions(guild) {
   let canPrune;

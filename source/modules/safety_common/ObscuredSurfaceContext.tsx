@@ -1,10 +1,10 @@
-// Module ID: 8628
-// Function ID: 68362
+// Module ID: 8670
+// Function ID: 68584
 // Name: context
 // Dependencies: [31, 2]
 // Exports: useObscuredSurface
 
-// Module 8628 (context)
+// Module 8670 (context)
 import importAllResult from "result";
 
 const context = importAllResult.createContext({ obscured: false });

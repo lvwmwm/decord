@@ -1,5 +1,5 @@
 // Module ID: 3949
-// Function ID: 32621
+// Function ID: 32622
 // Name: isActionedApplicationStatus
 // Dependencies: [3950, 2]
 // Exports: isActionedAndNotAcked, isApprovedAndAcked, isSubmittedApplicationStatus

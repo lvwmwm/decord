@@ -1,10 +1,10 @@
-// Module ID: 15246
-// Function ID: 116339
+// Module ID: 15293
+// Function ID: 116661
 // Name: ICYMIForumThreadRow
-// Dependencies: [31, 27, 1348, 1838, 33, 15179, 689, 566, 5048, 8321, 15218, 9099, 8320, 4320, 15220, 1212, 21, 4660, 4126, 4120, 15224, 15226, 2]
+// Dependencies: [31, 27, 1348, 1838, 33, 15226, 689, 566, 5048, 8365, 15265, 9137, 8364, 4320, 15267, 1212, 21, 4660, 4126, 4120, 15271, 15273, 2]
 // Exports: default
 
-// Module 15246 (ICYMIForumThreadRow)
+// Module 15293 (ICYMIForumThreadRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ class ICYMIForumThreadRow {
   constructor(arg0) {
     channel = global.channel;
     message = global.message;
-    tmp = f116346();
+    tmp = f116668();
     obj = require("initialize");
     items = [];
     items[0] = defineProperty;

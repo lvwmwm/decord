@@ -1,5 +1,5 @@
 // Module ID: 1073
-// Function ID: 12309
+// Function ID: 12310
 // Name: setActiveSpanInBrowser
 // Dependencies: [794]
 

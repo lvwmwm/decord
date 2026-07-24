@@ -1,10 +1,10 @@
-// Module ID: 12116
-// Function ID: 94892
+// Module ID: 12142
+// Function ID: 95128
 // Name: UserProfileGameFriendsCard
-// Dependencies: [31, 33, 4130, 5470, 1212, 11661, 5511, 4126, 2]
+// Dependencies: [31, 33, 4130, 5468, 1212, 11688, 5509, 4126, 2]
 // Exports: default
 
-// Module 12116 (UserProfileGameFriendsCard)
+// Module 12142 (UserProfileGameFriendsCard)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -21,7 +21,7 @@ export default function UserProfileGameFriendsCard(arg0) {
   let jsx;
   ({ applicationIds, style } = arg0);
   const tmp = callback();
-  const found = importDefault(5470)(applicationIds).filter((arg0) => null != arg0);
+  const found = importDefault(5468)(applicationIds).filter((arg0) => null != arg0);
   if (0 === found.length) {
     return null;
   } else {
@@ -30,7 +30,7 @@ export default function UserProfileGameFriendsCard(arg0) {
       const intl2 = found(1212).intl;
       let obj = {
         applicationName() {
-              return lib(textmdnormal(11661), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+              return lib(textmdnormal(11688), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
             }
       };
       let formatResult = intl2.format(found(1212).t.wQ6urw, obj);
@@ -38,10 +38,10 @@ export default function UserProfileGameFriendsCard(arg0) {
       const intl = found(1212).intl;
       obj = {
         applicationName() {
-              return lib(textmdnormal(11661), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+              return lib(textmdnormal(11688), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
             },
         applicationName2() {
-              return lib(textmdnormal(11661), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
+              return lib(textmdnormal(11688), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
             }
       };
       formatResult = intl.format(found(1212).t.C98CSN, obj);
@@ -54,7 +54,7 @@ export default function UserProfileGameFriendsCard(arg0) {
               return lib.map((application) => callback2(callback(table[5]), { application, useComma: true, textVariant: outer1_1, iconSize: 16 }, application.id));
             },
         applicationNameLast() {
-              return lib(textmdnormal(11661), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
+              return lib(textmdnormal(11688), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
             }
       };
       formatResult = intl4.format(found(1212).t.UxpwAh, obj);
@@ -66,7 +66,7 @@ export default function UserProfileGameFriendsCard(arg0) {
     obj1.title = intl3.string(found(1212).t["Uv/eTx"]);
     const obj2 = { variant: "text-md/normal", color: "text-default", children: formatResult };
     obj1.children = jsx(found(4126).Text, { variant: "text-md/normal", color: "text-default", children: formatResult });
-    return jsx(importDefault(5511), {});
+    return jsx(importDefault(5509), {});
   }
-  const arr = importDefault(5470)(applicationIds);
+  const arr = importDefault(5468)(applicationIds);
 };

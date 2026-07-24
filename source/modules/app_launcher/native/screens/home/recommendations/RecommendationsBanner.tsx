@@ -1,8 +1,8 @@
-// Module ID: 11211
-// Function ID: 87293
-// Dependencies: [31, 27, 1857, 653, 33, 4130, 10884, 11203, 10614, 5085, 7887, 8260, 1392, 7812, 2]
+// Module ID: 11241
+// Function ID: 87562
+// Dependencies: [31, 27, 1857, 653, 33, 4130, 10911, 11233, 10643, 5085, 7974, 8304, 1392, 7903, 2]
 
-// Module 11211
+// Module 11241
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,11 +18,11 @@ let closure_9 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: {
 let closure_10 = importAllResult.memo((applicationId) => {
   let imageSource;
   let imageStyle;
-  let obj = heroMediaDimensions(10884);
-  let obj1 = heroMediaDimensions(11203);
+  let obj = heroMediaDimensions(10911);
+  let obj1 = heroMediaDimensions(11233);
   heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
-  const tmp2 = importDefault(10614)(obj);
+  const tmp2 = importDefault(10643)(obj);
   importDefault = tmp2;
   let items = [heroMediaDimensions, tmp2];
   const memo = importAllResult.useMemo(() => {
@@ -57,12 +57,12 @@ let closure_11 = importAllResult.memo((applicationBot) => {
   if (null == id) {
     id = closure_7;
   }
-  const tmp = importDefault(7887);
-  const obj = { displayProfile: importDefault(7887)(id) };
-  const tmpResult = importDefault(7887)(id);
-  const tmp4 = importDefault(8260);
+  const tmp = importDefault(7974);
+  const obj = { displayProfile: importDefault(7974)(id) };
+  const tmpResult = importDefault(7974)(id);
+  const tmp4 = importDefault(8304);
   obj.user = new _isNativeReflectConstruct(applicationBot);
-  return <tmp4 displayProfile={importDefault(7887)(id)} />;
+  return <tmp4 displayProfile={importDefault(7974)(id)} />;
 });
 const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   let applicationBot;
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   const tmp = callback();
   let obj = importDefault(1392);
   const applicationIconSource = obj.getApplicationIconSource({ id: applicationId, icon: applicationIcon, bot: applicationBot, botIconFirst: true });
-  importDefault(7812);
+  importDefault(7903);
   if ("number" !== typeof applicationIconSource) {
     let uri;
     if (null != applicationIconSource) {

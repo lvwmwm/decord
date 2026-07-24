@@ -1,10 +1,10 @@
-// Module ID: 9913
-// Function ID: 76678
+// Module ID: 9945
+// Function ID: 76872
 // Name: _upsertSavedMessage
-// Dependencies: [5, 9532, 653, 507, 9533, 686, 4351, 2]
+// Dependencies: [5, 9568, 653, 507, 9569, 686, 4351, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 9913 (_upsertSavedMessage)
+// Module 9945 (_upsertSavedMessage)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

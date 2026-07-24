@@ -81,9 +81,9 @@ function _clearIndex(index) {
   closure_5[index] = null;
   closure_6[index] = null;
 }
-function _freeCallback(_animationFrame) {
-  if (null != _animationFrame) {
-    const index = closure_7.indexOf(_animationFrame);
+function _freeCallback(closure_0) {
+  if (null != closure_0) {
+    const index = closure_7.indexOf(closure_0);
     if (-1 !== index) {
       _clearIndex(index);
       let tmp5 = "queueReactNativeMicrotask" !== tmp2;
@@ -93,7 +93,7 @@ function _freeCallback(_animationFrame) {
       if (tmp5) {
         require(44) /* invariant */(importDefault(179), "NativeTiming is available");
         const tmp8 = require(44) /* invariant */;
-        importDefault(179).deleteTimer(_animationFrame);
+        importDefault(179).deleteTimer(closure_0);
         const obj = importDefault(179);
       }
     }
@@ -230,21 +230,21 @@ let obj = {
       setSendIdleEvents(false);
     }
   },
-  clearTimeout(_animationFrame) {
-    _freeCallback(_animationFrame);
+  clearTimeout(closure_0) {
+    _freeCallback(closure_0);
   },
   clearInterval(closure_0) {
     _freeCallback(closure_0);
   },
-  clearReactNativeMicrotask(_animationFrame) {
-    _freeCallback(_animationFrame);
-    const index = arr2.indexOf(_animationFrame);
+  clearReactNativeMicrotask(closure_0) {
+    _freeCallback(closure_0);
+    const index = arr2.indexOf(closure_0);
     if (-1 !== index) {
       arr2.splice(index, 1);
     }
   },
-  cancelAnimationFrame(_animationFrame) {
-    _freeCallback(_animationFrame);
+  cancelAnimationFrame(closure_0) {
+    _freeCallback(closure_0);
   },
   callTimers(arg0) {
     let length;

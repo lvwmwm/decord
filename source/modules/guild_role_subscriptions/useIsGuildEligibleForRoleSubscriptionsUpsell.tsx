@@ -1,10 +1,10 @@
-// Module ID: 15076
-// Function ID: 114755
+// Module ID: 15123
+// Function ID: 115076
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
 // Dependencies: [1391, 1838, 1849, 653, 566, 5642, 2]
 // Exports: default
 
-// Module 15076 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 15123 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import { isGuildOwner } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

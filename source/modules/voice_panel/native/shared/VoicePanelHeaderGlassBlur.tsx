@@ -1,9 +1,9 @@
-// Module ID: 11380
-// Function ID: 88457
+// Module ID: 11409
+// Function ID: 88697
 // Name: StyleSheet
-// Dependencies: [31, 27, 33, 4130, 477, 3991, 4542, 4066, 7589, 4532, 3976, 5517, 2]
+// Dependencies: [31, 27, 33, 4130, 477, 3991, 4542, 4066, 7678, 4532, 3976, 5515, 2]
 
-// Module 11380 (StyleSheet)
+// Module 11409 (StyleSheet)
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -70,7 +70,7 @@ export default require("result").memo(function HeaderGlassBlur(shown) {
   items = [tmp.blur, style, animatedStyle];
   obj2 = { blurStyle: "ultra-thin" };
   const tmp5 = closure_5;
-  const tmp6 = importDefault(7589);
+  const tmp6 = importDefault(7678);
   const tmp7 = callback;
   const tmp8 = importDefault(4532);
   let str = "light";
@@ -85,12 +85,12 @@ export default require("result").memo(function HeaderGlassBlur(shown) {
   const obj3 = { style: tmp.strokeContainer };
   obj7 = shown(3976);
   const tmp9 = closure_5;
-  const items3 = [callback(importDefault(5517), { style: tmp.stroke }), ];
+  const items3 = [callback(importDefault(5515), { style: tmp.stroke }), ];
   const obj5 = {};
   const obj4 = { style: tmp.stroke };
-  const tmp10 = importDefault(5517);
+  const tmp10 = importDefault(5515);
   const tmp11 = callback;
-  const tmp12 = importDefault(5517);
+  const tmp12 = importDefault(5515);
   obj5.style = shown(3976).isThemeDark(tmp4) ? tmp.strokeAlt : tmp.strokeAltLight;
   items3[1] = tmp11(tmp12, obj5);
   obj3.children = items3;

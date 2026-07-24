@@ -1,10 +1,10 @@
-// Module ID: 10111
-// Function ID: 78271
+// Module ID: 10143
+// Function ID: 78465
 // Name: ChannelHeader
-// Dependencies: [31, 1348, 653, 1355, 33, 477, 3989, 10093, 1207, 3982, 624, 4345, 10112, 10114, 10116, 10122, 1212, 10124, 2]
+// Dependencies: [31, 1348, 653, 1355, 33, 477, 3989, 10125, 1207, 3982, 624, 4345, 10144, 10146, 10148, 10154, 1212, 10156, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 10111 (ChannelHeader)
+// Module 10143 (ChannelHeader)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ComponentActions } from "ME";
@@ -36,14 +36,14 @@ export default function ChannelHeader(channelId) {
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getChannel(channelId));
   const tmp = !channelId(4345).useIsChannelContentGated(stateFromStores) && pressable;
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
-    let tmp2Result = jsx(importDefault(10112), {});
+    let tmp2Result = jsx(importDefault(10144), {});
   } else if (channelId === StaticChannelRoute.GUILD_HOME) {
-    tmp2Result = jsx(importDefault(10114), {});
+    tmp2Result = jsx(importDefault(10146), {});
   } else {
     if (null != stateFromStores) {
       if (stateFromStores.isPrivate()) {
         obj = { channelId, pressable: tmp, screenIndex };
-        tmp2Result = jsx(importDefault(10116), { channelId, pressable: tmp, screenIndex });
+        tmp2Result = jsx(importDefault(10148), { channelId, pressable: tmp, screenIndex });
       }
     }
     if (null != stateFromStores) {
@@ -64,8 +64,8 @@ export default function ChannelHeader(channelId) {
           stringResult = intl.string(channelId(1212).t["L9fR+P"]);
         }
         obj.searchPlaceholder = stringResult;
-        tmp2Result = jsx(importDefault(10122), { channelId });
-        const tmp11 = importDefault(10122);
+        tmp2Result = jsx(importDefault(10154), { channelId });
+        const tmp11 = importDefault(10154);
         const tmp8 = jsx;
       }
     }
@@ -80,9 +80,9 @@ export default function ChannelHeader(channelId) {
     obj1.isNavigationScreen = isNavigationScreen;
     obj1.screenIndex = screenIndex;
     obj1.showCreateThread = flag2;
-    tmp2Result = jsx(importDefault(10124), { channelId });
+    tmp2Result = jsx(importDefault(10156), { channelId });
     const tmp2 = jsx;
-    const tmp5 = importDefault(10124);
+    const tmp5 = importDefault(10156);
   }
   return tmp2Result;
 };

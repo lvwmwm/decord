@@ -1,12 +1,17 @@
 // Module ID: 8094
-// Function ID: 64174
+// Function ID: 64130
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [42]
+// Dependencies: [38, 110, 42]
 
 // Module 8094 (__INTERNAL_VIEW_CONFIG)
+import weakSet from "weakSet";
 import get from "get";
 
-const obj = { uiViewClassName: "RNSVGLinearGradient", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, x1: true, y1: true, x2: true, y2: true, gradient: true, gradientUnits: true, gradientTransform: true } };
+let obj = { uiViewClassName: "RNSVGClipPath", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
+obj = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: null, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true };
+obj = { process: require("processColor").default };
+obj.color = obj;
+obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-export default get.get("RNSVGLinearGradient", () => obj);
+export default get.get("RNSVGClipPath", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

@@ -1,9 +1,9 @@
-// Module ID: 14565
-// Function ID: 111067
+// Module ID: 14615
+// Function ID: 111390
 // Name: toggle
-// Dependencies: [6769, 7662, 7125, 13728, 10095, 1212, 2]
+// Dependencies: [6769, 7751, 7124, 13779, 10127, 1212, 2]
 
-// Module 14565 (toggle)
+// Module 14615 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -16,8 +16,8 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuests3PSettingValue() {
     let tmp;
-    const selectedTeenId = require(7125) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = require(13728) /* result */.ParentalControlledQuests3PDataOptedOut;
+    const selectedTeenId = require(7124) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledQuests3PDataOptedOut = require(13779) /* result */.ParentalControlledQuests3PDataOptedOut;
     if (null != selectedTeenId) {
       tmp = selectedTeenId;
     }
@@ -25,7 +25,7 @@ createToggle = {
   },
   onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = require(13728) /* result */.ParentalControlledQuests3PDataOptedOut;
+    const ParentalControlledQuests3PDataOptedOut = require(13779) /* result */.ParentalControlledQuests3PDataOptedOut;
     let tmp2;
     if (null != selectedTeenId) {
       tmp2 = selectedTeenId;
@@ -34,8 +34,8 @@ createToggle = {
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
     let tmp;
-    const selectedTeenId = require(7125) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(13728) /* result */.ParentalControlledDropsOptedOut;
+    const selectedTeenId = require(7124) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledDropsOptedOut = require(13779) /* result */.ParentalControlledDropsOptedOut;
     if (null != selectedTeenId) {
       tmp = selectedTeenId;
     }

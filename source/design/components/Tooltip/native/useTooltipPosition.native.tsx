@@ -1,10 +1,10 @@
-// Module ID: 8567
-// Function ID: 68082
+// Module ID: 8612
+// Function ID: 68312
 // Name: useTooltipPosition
 // Dependencies: [31, 2]
 // Exports: default
 
-// Module 8567 (useTooltipPosition)
+// Module 8612 (useTooltipPosition)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("design/components/Tooltip/native/useTooltipPosition.native.tsx");

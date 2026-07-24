@@ -1,9 +1,9 @@
-// Module ID: 8715
-// Function ID: 68972
+// Module ID: 8756
+// Function ID: 69190
 // Name: PurchasedAssetOverlay
-// Dependencies: [57, 31, 27, 655, 33, 8663, 689, 4130, 8694, 4652, 6785, 1876, 8207, 8215, 5085, 8716, 656, 8717, 8226, 8216, 8697, 8699, 3974, 3834, 8664, 2]
+// Dependencies: [57, 31, 27, 655, 33, 8704, 689, 4130, 8735, 4652, 6785, 1876, 8251, 8259, 5085, 8757, 656, 8758, 8270, 8260, 8738, 8740, 3974, 3834, 8705, 2]
 
-// Module 8715 (PurchasedAssetOverlay)
+// Module 8756 (PurchasedAssetOverlay)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -16,7 +16,7 @@ let closure_8;
 const require = arg1;
 function PurchasedAssetOverlay() {
   const tmp = callback3();
-  obj = { style: tmp.overlayContainer, children: callback2(require(8694) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj) };
+  obj = { style: tmp.overlayContainer, children: callback2(require(8735) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj) };
   obj = { size: "lg", style: tmp.overlayIcon };
   return callback2(View, obj);
 }
@@ -71,7 +71,7 @@ function ProductPreviewInner(arg0) {
   ({ product, cardWidth } = arg0);
   ({ disableBundleStaticBackground, muteBundleStaticBackground } = arg0);
   const tmp = callback3();
-  let obj = cardWidth(8207);
+  let obj = cardWidth(8251);
   const shopProductItems = obj.useShopProductItems(product);
   const items = [cardWidth];
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
@@ -88,18 +88,18 @@ function ProductPreviewInner(arg0) {
   }, items);
   if (product.type === cardWidth(1876).CollectiblesItemType.BUNDLE) {
     obj = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, size: "small", previewAssets: product.previewAssets, disableStaticBackground: disableBundleStaticBackground, mutedStaticBackground: muteBundleStaticBackground, targetSize: memo };
-    return callback2(importDefault(8215), obj);
+    return callback2(importDefault(8259), obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = {};
-    const obj1 = { uri: importDefault(8716) };
+    const obj1 = { uri: importDefault(8757) };
     obj.source = obj1;
     obj.style = tmp.externalProductImage;
     return callback2(importDefault(5085), obj);
   } else {
     const ALL = cardWidth(656).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      const obj2 = { skuId: product.skuId, width: cardWidth(8717).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: cardWidth(8717).FRACTIONAL_NITRO_COIN_SIZE.CARD };
-      return callback2(cardWidth(8717).FractionalNitroCoinIllustration, obj2);
+      const obj2 = { skuId: product.skuId, width: cardWidth(8758).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: cardWidth(8758).FRACTIONAL_NITRO_COIN_SIZE.CARD };
+      return callback2(cardWidth(8758).FractionalNitroCoinIllustration, obj2);
     } else {
       const first = callback(product.items, 1)[0];
       let type;
@@ -108,20 +108,20 @@ function ProductPreviewInner(arg0) {
       }
       if (cardWidth(1876).CollectiblesItemType.AVATAR_DECORATION === type) {
         const obj3 = { item: first, size: 100 };
-        return callback2(importDefault(8226), obj3);
+        return callback2(importDefault(8270), obj3);
       } else if (cardWidth(1876).CollectiblesItemType.PROFILE_EFFECT === type) {
         const obj4 = { style: tmp.profileEffectContainer };
         const obj5 = { item: first, hideBackground: true };
-        obj4.children = callback2(importDefault(8216), obj5);
+        obj4.children = callback2(importDefault(8260), obj5);
         return callback2(View, obj4);
       } else if (cardWidth(1876).CollectiblesItemType.PROFILE_FRAME === type) {
         const obj6 = { style: tmp.profileFrameContainer };
-        const obj7 = { profileFrame: first, previewWidth: cardWidth(8663).COLLECTIBLES_SHOP_CARD_WIDTH - importDefault(689).space.PX_32, previewHeight: closure_9, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-        obj6.children = callback2(importDefault(8697), obj7);
+        const obj7 = { profileFrame: first, previewWidth: cardWidth(8704).COLLECTIBLES_SHOP_CARD_WIDTH - importDefault(689).space.PX_32, previewHeight: closure_9, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
+        obj6.children = callback2(importDefault(8738), obj7);
         return callback2(View, obj6);
       } else if (cardWidth(1876).CollectiblesItemType.NAMEPLATE === type) {
         const obj8 = { item: first };
-        return callback2(importDefault(8699), obj8);
+        return callback2(importDefault(8740), obj8);
       } else {
         return null;
       }
@@ -182,7 +182,7 @@ const memoResult = importAllResult.memo(function AssetTileV2(arg0) {
   let solidBackground;
   ({ product, isPurchased, isDisabled } = arg0);
   ({ solidBackground, disableBundleStaticBackground, muteBundleStaticBackground, cardWidth } = arg0);
-  let obj = require(8664) /* useDefaultVariantIndex */;
+  let obj = require(8705) /* useDefaultVariantIndex */;
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
   obj = { solidBackground };
   obj = { product: require(6785) /* getProductOrbPrice */.getSelectedProduct(product, defaultVariantIndex), isPurchased, isDisabled, disableBundleStaticBackground, muteBundleStaticBackground, cardWidth };

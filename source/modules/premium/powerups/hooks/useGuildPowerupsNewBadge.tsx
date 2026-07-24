@@ -1,10 +1,10 @@
-// Module ID: 11542
-// Function ID: 89881
+// Module ID: 11572
+// Function ID: 90126
 // Name: useBadgeableMarketingVersion
-// Dependencies: [57, 31, 4017, 4018, 1345, 1334, 566, 11535, 5802, 1336, 2]
+// Dependencies: [57, 31, 4017, 4018, 1345, 1334, 566, 11565, 5802, 1336, 2]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 11542 (useBadgeableMarketingVersion)
+// Module 11572 (useBadgeableMarketingVersion)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ function useBadgeableMarketingVersion(guildId) {
   if (null != stateFromStores) {
     tmp3 = stateFromStores;
   }
-  const tmp2Result = importDefault(11535)(guildId, tmp3);
+  const tmp2Result = importDefault(11565)(guildId, tmp3);
   let num = 0;
   if (tmp2Result >= constants.GUILD_THEME) {
     num = tmp2Result;

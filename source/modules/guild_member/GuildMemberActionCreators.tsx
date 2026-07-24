@@ -1,5 +1,5 @@
 // Module ID: 5080
-// Function ID: 44210
+// Function ID: 44215
 // Name: updateGuildSelfMember
 // Dependencies: [1909, 653, 5064, 686, 507, 2]
 // Exports: updateGuildSelfMember

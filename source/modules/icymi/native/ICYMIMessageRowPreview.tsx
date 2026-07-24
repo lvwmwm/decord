@@ -1,9 +1,9 @@
-// Module ID: 15223
-// Function ID: 116065
+// Module ID: 15270
+// Function ID: 116387
 // Name: isMediaEmbed
-// Dependencies: [31, 653, 33, 8328, 3808, 7623, 5679, 4066, 4130, 689, 3803, 7621, 9293, 7808, 1212, 2]
+// Dependencies: [31, 653, 33, 8372, 3808, 7712, 5679, 4066, 4130, 689, 3803, 7710, 9329, 7899, 1212, 2]
 
-// Module 15223 (isMediaEmbed)
+// Module 15270 (isMediaEmbed)
 import importAllResult from "result";
 import { MessageEmbedTypes } from "ME";
 import { jsx } from "jsxProd";
@@ -68,7 +68,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(9293), obj);
+  return setting2(messageOptions(9329), obj);
 }
 const memoResult = importAllResult.memo((message) => {
   message = message.message;
@@ -161,7 +161,7 @@ const memoResult2 = importAllResult.memo((message) => {
   obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(7623).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7712).DEFAULT_OPTIONS);
   obj["ignoreMentioned"] = true;
   obj["renderReplies"] = false;
   obj["renderThreadEmbeds"] = false;

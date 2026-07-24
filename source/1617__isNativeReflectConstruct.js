@@ -1,5 +1,5 @@
 // Module ID: 1617
-// Function ID: 17925
+// Function ID: 17926
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1618, 31, 27, 33, 1585, 1636, 44, 1677, 1678, 1686, 1688, 1626, 1607, 1689, 1691, 1685, 1669, 1622, 1611, 1593, 1695, 1610, 1679, 1681, 1696, 1697, 1698, 1720, 1721]
 // Exports: createAnimatedComponent

@@ -1,9 +1,9 @@
-// Module ID: 9363
-// Function ID: 73076
+// Module ID: 9399
+// Function ID: 73285
 // Name: LABEL_TOP_PADDING
-// Dependencies: [31, 27, 9329, 33, 4130, 689, 1273, 7837, 4126, 1212, 9361, 2]
+// Dependencies: [31, 27, 9365, 33, 4130, 689, 1273, 7926, 4126, 1212, 9397, 2]
 
-// Module 9363 (LABEL_TOP_PADDING)
+// Module 9399 (LABEL_TOP_PADDING)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import IMAGE_SIZE from "IMAGE_SIZE";
@@ -28,7 +28,7 @@ let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
   const tmp = callback3();
   let obj = { style: tmp.nsfwContainer };
-  obj = { source: importDefault(7837), size: require(1273) /* Button */.Icon.Sizes.SMALL };
+  obj = { source: importDefault(7926), size: require(1273) /* Button */.Icon.Sizes.SMALL };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -44,7 +44,7 @@ const memoResult1 = importAllResult.memo((useTier0UpsellContent) => {
   let obj = { style: callback3().section };
   if (isSectionNitroLocked) {
     obj = { useTier0UpsellContent: useTier0UpsellContent.useTier0UpsellContent };
-    isSectionNitroLocked = callback(require(9361) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, obj);
+    isSectionNitroLocked = callback(require(9397) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, obj);
   }
   const items = [isSectionNitroLocked, ];
   let tmp6 = null;

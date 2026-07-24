@@ -1,18 +1,18 @@
-// Module ID: 15734
-// Function ID: 121296
+// Module ID: 15781
+// Function ID: 121618
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4122, 1347, 4143, 8293, 10620, 10539, 1348, 4177, 4202, 4342, 10015, 10013, 653, 4155, 10226, 4148, 10016, 33, 15735, 3991, 9423, 664, 15736, 566, 3831, 10593, 1212, 15737, 15738, 8843, 10486, 15739, 1450, 1557, 15762, 10017, 10019, 22, 491, 1207, 682, 10395, 11110, 6838, 675, 8303, 10532, 15691, 4476, 15763, 4323, 4324, 3989, 5584, 15764, 15765, 3748, 15766, 15772, 15773, 15696, 1184, 15774, 10014, 4011, 2]
+// Dependencies: [57, 31, 27, 4122, 1347, 4143, 8337, 10649, 10568, 1348, 4177, 4202, 4342, 10047, 10045, 653, 4155, 10256, 4148, 10048, 33, 15782, 3991, 9459, 664, 15783, 566, 3831, 10622, 1212, 15784, 15785, 8882, 10515, 15786, 1450, 1557, 15809, 10049, 10051, 22, 491, 1207, 682, 10424, 11137, 6837, 675, 8347, 10561, 15738, 4476, 15810, 4323, 4324, 3989, 5582, 15811, 15812, 3748, 15813, 15819, 15820, 15743, 1184, 15821, 10046, 4011, 2]
 // Exports: default
 
-// Module 15734 (_createForOfIteratorHelperLoose)
+// Module 15781 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown";
 import { AppState } from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_createForOfIteratorHelperLoose";
 import closure_8 from "_isNativeReflectConstruct";
-import module_8293 from "module_8293";
-import module_10620 from "module_10620";
+import module_8337 from "module_8337";
+import module_10649 from "module_10649";
 import closure_11 from "_isNativeReflectConstruct";
 import closure_12 from "_isNativeReflectConstruct";
 import closure_13 from "_isNativeReflectConstruct";
@@ -390,7 +390,7 @@ export default function VoicePanelController(channelId) {
   let closure_31;
   let trackActivityThermalStateNoticeShown;
   let closure_7;
-  let module_8293;
+  let module_8337;
   let connected;
   let controlsSpecs;
   let focused;
@@ -586,7 +586,7 @@ export default function VoicePanelController(channelId) {
   ({ channelType: trackActivityThermalStateNoticeShown, connected } = tmp5);
   const contentDimensions = tmp5.contentDimensions;
   ({ dragScrolling: closure_7, focused } = tmp5);
-  ({ isCall: module_8293, layoutManager } = tmp5);
+  ({ isCall: module_8337, layoutManager } = tmp5);
   let mode = tmp5.mode;
   ({ preJoinContentSize: closure_12, safeArea } = tmp5);
   ({ scrollPosition: closure_14, windowDimensions } = tmp5);
@@ -671,7 +671,7 @@ export default function VoicePanelController(channelId) {
       const setControlsMode = memo.setControlsMode;
       const _Set = Set;
       const set = new Set();
-      let module_10620 = outer1_4.useRef(set);
+      let module_10649 = outer1_4.useRef(set);
       const items2 = [tmp2Result, callback1, callback];
       const items3 = [setControlsMode];
       const callback2 = outer1_4.useCallback((arg0) => {
@@ -1510,7 +1510,7 @@ export default function VoicePanelController(channelId) {
       let obj5 = guildId(first[64]);
     }
   }
-  obj1 = { value: callback(React.useState(() => ({ channelId, channelType: trackActivityThermalStateNoticeShown, connected, contentDimensions, controlsSpecs, dismissPanel, dismissToPIPGestureRef: closure_36, dragScrolling: closure_7, focused, generateStateLocker: closure_23, guildId, hideControls: closure_26, isCall: module_8293, isFocusedVideoZoomed: closure_17, layoutManager, mode, morphablePanelMode: closure_21, mountedCards: _createForOfIteratorHelperLoose, pipAvoidanceSpecs: closure_33, preJoinContentSize: closure_12, safeArea, scrollPosition: closure_14, setControlsMode, setFocused: closure_31, setIsFocusedVideoZoomed: closure_18, setMode, setShowFloatingCTA: c35, showControls, showFloatingCTA: c34, streamOutputSinkStack: first, usePIPState: channelId(first[65]).usePIPState, useReducedMotion: closure_19, windowDimensions, wrapperDimensions: closure_16, wrapperOffset: closure_20, panelCardStillInPIP: closure_22 })), 1)[0] };
+  obj1 = { value: callback(React.useState(() => ({ channelId, channelType: trackActivityThermalStateNoticeShown, connected, contentDimensions, controlsSpecs, dismissPanel, dismissToPIPGestureRef: closure_36, dragScrolling: closure_7, focused, generateStateLocker: closure_23, guildId, hideControls: closure_26, isCall: module_8337, isFocusedVideoZoomed: closure_17, layoutManager, mode, morphablePanelMode: closure_21, mountedCards: _createForOfIteratorHelperLoose, pipAvoidanceSpecs: closure_33, preJoinContentSize: closure_12, safeArea, scrollPosition: closure_14, setControlsMode, setFocused: closure_31, setIsFocusedVideoZoomed: closure_18, setMode, setShowFloatingCTA: c35, showControls, showFloatingCTA: c34, streamOutputSinkStack: first, usePIPState: channelId(first[65]).usePIPState, useReducedMotion: closure_19, windowDimensions, wrapperDimensions: closure_16, wrapperOffset: closure_20, panelCardStillInPIP: closure_22 })), 1)[0] };
   obj2 = { value: controllerPIPState };
   let obj3 = {};
   let tmp33 = null;

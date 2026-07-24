@@ -1,9 +1,9 @@
-// Module ID: 14399
-// Function ID: 110094
+// Module ID: 14449
+// Function ID: 110417
 // Name: handleCacheActionPress
-// Dependencies: [5, 4808, 33, 4098, 3831, 4086, 1212, 566, 3803, 5500, 5186, 5502, 13544, 14400, 14401, 10095, 2]
+// Dependencies: [5, 4808, 33, 4098, 3831, 4086, 1212, 566, 3803, 5498, 5186, 5500, 13597, 14450, 14451, 10127, 2]
 
-// Module 14399 (handleCacheActionPress)
+// Module 14449 (handleCacheActionPress)
 import CircleInformationIcon from "CircleInformationIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -31,14 +31,14 @@ function CacheActionsActionSheet() {
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.ZVZVwR);
   obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true };
-  const obj1 = { icon: callback2(require(13544) /* FileUpIcon */.FileUpIcon, {}) };
+  const obj1 = { icon: callback2(require(13597) /* FileUpIcon */.FileUpIcon, {}) };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl2.string(require(1212) /* getSystemLocale */.t["/GUaXh"]);
   obj1.label = stringResult;
   // CreateGeneratorClosureLongIndex (0x67)
   obj1.onPress = callback(stringResult);
-  const items = [callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
-  const obj2 = { variant: "danger", icon: callback2(require(14401) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" }) };
+  const items = [callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
+  const obj2 = { variant: "danger", icon: callback2(require(14451) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" }) };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.tgwiMO);
   obj2.onPress = function onPress() {
@@ -46,10 +46,10 @@ function CacheActionsActionSheet() {
     const intl = outer1_0(outer1_2[6]).intl;
     outer1_8(intl.string(outer1_0(outer1_2[6]).t["23xR5w"]));
   };
-  items[1] = callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
+  items[1] = callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
   obj.children = items;
-  obj.children = callback3(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback2(require(5500) /* ActionSheet */.ActionSheet, obj);
+  obj.children = callback3(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback2(require(5498) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 CacheActionsActionSheet = "CacheActionsActionSheet";

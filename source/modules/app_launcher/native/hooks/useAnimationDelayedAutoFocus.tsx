@@ -1,10 +1,10 @@
-// Module ID: 11292
-// Function ID: 87861
+// Module ID: 11321
+// Function ID: 88101
 // Name: useAnimationDelayedAutoFocus
-// Dependencies: [31, 11285, 2]
+// Dependencies: [31, 11314, 2]
 // Exports: useAnimationDelayedAutoFocus
 
-// Module 11292 (useAnimationDelayedAutoFocus)
+// Module 11321 (useAnimationDelayedAutoFocus)
 import result from "result";
 
 const require = arg1;
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/native
 export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocus(autoFocus, onPress) {
   const _require = autoFocus;
   const dependencyMap = onPress;
-  const awaitAnimationCompletion = _require(11285).useAwaitAnimationCompletion();
+  const awaitAnimationCompletion = _require(11314).useAwaitAnimationCompletion();
   let closure_3 = awaitAnimationCompletion.useRef(false);
   const items = [autoFocus, onPress, awaitAnimationCompletion];
   const effect = awaitAnimationCompletion.useEffect(() => {

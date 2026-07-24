@@ -1,5 +1,5 @@
 // Module ID: 4066
-// Function ID: 33871
+// Function ID: 33872
 // Name: useTheme
 // Dependencies: [653, 3976, 2]
 // Exports: useThemeIndex

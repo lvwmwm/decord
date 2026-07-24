@@ -1,5 +1,5 @@
 // Module ID: 3499
-// Function ID: 26925
+// Function ID: 26926
 // Name: hoursToSeconds
 // Dependencies: [3210, 3388]
 // Exports: default

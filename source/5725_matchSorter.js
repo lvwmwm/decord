@@ -1,5 +1,5 @@
 // Module ID: 5725
-// Function ID: 49212
+// Function ID: 49222
 // Name: matchSorter
 // Dependencies: [5726, 5727]
 // Exports: matchSorter

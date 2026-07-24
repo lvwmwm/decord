@@ -1,10 +1,10 @@
-// Module ID: 8459
-// Function ID: 67508
+// Module ID: 8503
+// Function ID: 67736
 // Name: GuildEventsNoContent
-// Dependencies: [31, 27, 3758, 653, 482, 33, 4130, 5052, 689, 566, 7491, 8460, 8461, 4126, 1212, 5459, 8438, 2]
+// Dependencies: [31, 27, 3758, 653, 482, 33, 4130, 5052, 689, 566, 7571, 8504, 8505, 4126, 1212, 8482, 2]
 // Exports: default
 
-// Module 8459 (GuildEventsNoContent)
+// Module 8503 (GuildEventsNoContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,8 +38,8 @@ export default function GuildEventsNoContent(guild) {
   const items1 = [guild];
   let stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container };
-  obj = { icon: onClose(8460), IconComponent: guild(8461).CalendarIcon };
-  const items2 = [callback(onClose(7491), obj), , , ];
+  obj = { icon: onClose(8504), IconComponent: guild(8505).CalendarIcon };
+  const items2 = [callback(onClose(7571), obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = guild(1212).intl;
   obj1.children = intl.string(guild(1212).t["WgZ+3D"]);
@@ -54,11 +54,11 @@ export default function GuildEventsNoContent(guild) {
     const obj4 = {
       onClick() {
           onClose();
-          onClose(outer1_2[16]).open(guild.id, outer1_5.ROLES);
+          onClose(outer1_2[15]).open(guild.id, outer1_5.ROLES);
         }
     };
     obj3.children = intl3.format(guild(1212).t["K+DH2o"], obj4);
-    stateFromStores = callback(guild(5459).TextWithIOSLinkWorkaround, obj3);
+    stateFromStores = callback(guild(4126).Text, obj3);
   }
   items2[3] = stateFromStores;
   obj.children = items2;

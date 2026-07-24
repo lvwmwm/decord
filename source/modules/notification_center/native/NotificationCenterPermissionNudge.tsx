@@ -1,10 +1,10 @@
-// Module ID: 15137
-// Function ID: 115254
+// Module ID: 15184
+// Function ID: 115576
 // Name: NotificationCenterBannerImpl
-// Dependencies: [57, 31, 27, 653, 1345, 11449, 33, 4130, 689, 675, 10202, 4126, 1212, 4543, 11450, 4660, 5119, 14313, 5802, 1334, 2]
+// Dependencies: [57, 31, 27, 653, 1345, 11479, 33, 4130, 689, 675, 10232, 4126, 1212, 4543, 11480, 4660, 5119, 14363, 5802, 1334, 2]
 // Exports: default
 
-// Module 15137 (NotificationCenterBannerImpl)
+// Module 15184 (NotificationCenterBannerImpl)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -36,7 +36,7 @@ function NotificationCenterBannerImpl(onDismiss) {
   let obj = { style: tmp.container };
   obj = { style: tmp.iconContainer };
   obj = { size: "md", color: importDefault(689).colors.ICON_STRONG };
-  obj.children = callback4(onDismiss(10202).BellSlashIcon, obj);
+  obj.children = callback4(onDismiss(10232).BellSlashIcon, obj);
   const items = [callback4(View, obj), , ];
   const obj1 = { style: tmp.contentContainer };
   const obj2 = { variant: "text-md/semibold", color: "text-default" };
@@ -96,9 +96,9 @@ let obj2 = { alignSelf: "flex-start", marginTop: require("_createForOfIteratorHe
 result = require("get ActivityIndicator").fileFinishedImporting("modules/notification_center/native/NotificationCenterPermissionNudge.tsx");
 
 export default function NotificationCenterPermissionNudge() {
-  let obj = importDefault(14313);
-  const canSeePushNotificationNudge = require(11450) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
-  const obj2 = require(11450) /* _requestPushNotificationPermission */;
+  let obj = importDefault(14363);
+  const canSeePushNotificationNudge = require(11480) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
+  const obj2 = require(11480) /* _requestPushNotificationPermission */;
   let prop = null;
   if (!obj.useConfig({ location: "NotificationCenterPermissionNudge" }).inHoldout) {
     prop = null;

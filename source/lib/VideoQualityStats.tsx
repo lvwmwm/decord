@@ -1,9 +1,9 @@
-// Module ID: 6984
-// Function ID: 55807
+// Module ID: 6983
+// Function ID: 55816
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 6, 7, 6985, 6991, 4206, 2]
+// Dependencies: [15, 17, 18, 57, 6, 7, 6984, 6990, 4206, 2]
 
-// Module 6984 (_isNativeReflectConstruct)
+// Module 6983 (_isNativeReflectConstruct)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -82,7 +82,7 @@ function parseCodecType(name) {
 let closure_9 = [0, 500000, 1000000, 1500000, 2000000, 3000000, 4000000, 5000000, 6000000, 7000000, 8000000];
 let closure_10 = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
 let closure_11 = [720, 480, 360];
-let closure_12 = ["framesCodec", "framesNetwork", "packets", "packetsLost", "framesDropped", "framesCodecError", "bytes", "nackCount", "pliCount", "qpSum", "freezeCount", "pauseCount", "totalFreezesDuration", "totalPausesDuration", "totalFramesDuration", "totalDecodeTime", "keyframes", "passthroughCount", "cryptorSuccessCount", "cryptorFailureCount", "cryptorDuration", "cryptorAttempts", "cryptorMissingKeyCount", "cryptorInvalidNonceCount", "qualityDecodeErrors", "qualityDecoderReboots", "qualityScoreErrors", "qualityFrameDrops", "qualitySizeMismatches", "screenshareFramesUnique"];
+let closure_12 = ["framesCodec", "framesNetwork", "packets", "packetsLost", "framesDropped", "networkFramesDropped", "framesCodecError", "bytes", "nackCount", "pliCount", "qpSum", "freezeCount", "pauseCount", "totalFreezesDuration", "totalPausesDuration", "totalFramesDuration", "totalDecodeTime", "keyframes", "passthroughCount", "cryptorSuccessCount", "cryptorFailureCount", "cryptorDuration", "cryptorAttempts", "cryptorMissingKeyCount", "cryptorInvalidNonceCount", "qualityDecodeErrors", "qualityDecoderReboots", "qualityScoreErrors", "qualityFrameDrops", "qualitySizeMismatches", "screenshareFramesUnique"];
 let obj = { H264: "H264", H265: "H265", VP8: "VP8", VP9: "VP9", AV1: "AV1", UNKNOWN: "UNKNOWN" };
 obj = { NVIDIA_CUDA: "nvidia_cuda", NVIDIA_DIRECT_3D: "nvidia_direct_3d", NVIDIA_VULKAN: "nvidia_vulkan", OPENH264: "openh264", VIDEOTOOLBOX: "videotoolbox", AMD_DIRECT_3D: "amd_direct_3d", AMD_VAAPI: "amd_vaapi", INTEL: "intel", INTEL_DIRECT_3D: "intel_direct_3d", INTEL_VAAPI: "intel_vaapi", VP8_LIBVPX: "vp8_libvpx", EXYNOS: "exynos", QUALCOMM: "qualcomm", MEDIATEK: "mediatek", WMF_SW: "wmf_sw", WMF_HW: "wmf_hw", WMF_DIRECT_3D: "wmf_direct_3d", WMF_DIRECT_3D_INTEL: "wmf_direct_3d_intel", WMF_DIRECT_3D_NVIDIA: "wmf_direct_3d_nvidia", WMF_DIRECT_3D_AMD: "wmf_direct_3d_amd", WMF_CHROME: "wmf_chrome", UNCATEGORIZED: "uncategorized", UNKNOWN: "unknown" };
 obj = { VIDEOTOOLBOX: "videotoolbox", VP8_LIBVPX: "vp8_libvpx", ELECTRON: "electron", FFMPEG: "ffmpeg", DAV1D: "dav1d", WEBRTC: "WebRTC", EXYNOS: "exynos", QUALCOMM: "qualcomm", MEDIATEK: "mediatek", UNCATEGORIZED: "uncategorized", D3D11VIDEODECODER: "d3d11videodecoder", ANDROID: "android", UNKNOWN: "unknown" };
@@ -115,7 +115,7 @@ let tmp3 = (() => {
       tmp7 = new tmp7();
       this.systemResources = tmp7;
       this.decoderCodec = outer1_13.UNKNOWN;
-      this.aggregatedProperties = { framesCodec: 0, framesNetwork: 0, packets: 0, packetsLost: 0, framesDropped: 0, framesCodecError: 0, bytes: 0, nackCount: 0, pliCount: 0, qpSum: 0, freezeCount: 0, pauseCount: 0, totalFreezesDuration: 0, totalPausesDuration: 0, totalFramesDuration: 0, totalDecodeTime: 0, keyframes: 0, passthroughCount: 0, cryptorSuccessCount: 0, cryptorFailureCount: 0, cryptorDuration: 0, cryptorAttempts: 0, cryptorMissingKeyCount: 0, cryptorInvalidNonceCount: 0, qualityDecodeErrors: 0, qualityDecoderReboots: 0, qualityScoreErrors: 0, qualityFrameDrops: 0, qualitySizeMismatches: 0, screenshareFramesUnique: 0 };
+      this.aggregatedProperties = { framesCodec: 0, framesNetwork: 0, packets: 0, packetsLost: 0, framesDropped: 0, networkFramesDropped: 0, framesCodecError: 0, bytes: 0, nackCount: 0, pliCount: 0, qpSum: 0, freezeCount: 0, pauseCount: 0, totalFreezesDuration: 0, totalPausesDuration: 0, totalFramesDuration: 0, totalDecodeTime: 0, keyframes: 0, passthroughCount: 0, cryptorSuccessCount: 0, cryptorFailureCount: 0, cryptorDuration: 0, cryptorAttempts: 0, cryptorMissingKeyCount: 0, cryptorInvalidNonceCount: 0, qualityDecodeErrors: 0, qualityDecoderReboots: 0, qualityScoreErrors: 0, qualityFrameDrops: 0, qualitySizeMismatches: 0, screenshareFramesUnique: 0 };
       this.aggregationDuration = 0;
       this.bitrateBuckets = {};
       this.fpsBuckets = {};
@@ -404,6 +404,7 @@ let tmp2 = (() => {
       this.packets = 0;
       this.packetsLost = 0;
       this.framesDropped = 0;
+      this.networkFramesDropped = 0;
       this.nackCount = 0;
       this.pliCount = 0;
       this.encoder = null;
@@ -445,100 +446,112 @@ let tmp2 = (() => {
   }
   let obj = {
     key: "parseInboundStats",
-    value(resolution, timestamp) {
+    value(networkFramesDropped, timestamp) {
       let framesDecodeErrors;
+      let framesDropped;
       let totalDecodeTime;
       const tmp = new RawVideoStats();
-      if (null != resolution) {
-        ({ bytesReceived: tmp.bytes, framesDecoded: tmp.framesCodec, framesDecodeErrors } = resolution);
+      if (null != networkFramesDropped) {
+        ({ bytesReceived: tmp.bytes, framesDecoded: tmp.framesCodec, framesDecodeErrors } = networkFramesDropped);
         let tmp2 = null;
         if (null != framesDecodeErrors) {
           tmp2 = framesDecodeErrors;
         }
         tmp.framesCodecError = tmp2;
-        ({ framesReceived: tmp.framesNetwork, packetsReceived: tmp.packets, packetsLost: tmp.packetsLost, framesDropped: tmp.framesDropped } = resolution);
+        ({ framesReceived: tmp.framesNetwork, packetsReceived: tmp.packets, packetsLost: tmp.packetsLost, framesDropped } = networkFramesDropped);
         let num2 = 0;
-        if (null != resolution.resolution) {
-          num2 = resolution.resolution.height;
+        if (null != framesDropped) {
+          num2 = framesDropped;
         }
-        tmp.resolution = num2;
+        tmp.framesDropped = num2;
+        networkFramesDropped = networkFramesDropped.networkFramesDropped;
         let num3 = 0;
-        if (null != resolution.resolution) {
-          const _Math = Math;
-          num3 = Math.min(resolution.resolution.height, resolution.resolution.width);
+        if (null != networkFramesDropped) {
+          num3 = networkFramesDropped;
         }
-        tmp.minorResolution = num3;
+        tmp.networkFramesDropped = num3;
         let num4 = 0;
-        if (null != resolution.resolution) {
-          const _Math2 = Math;
-          num4 = Math.max(resolution.resolution.height, resolution.resolution.width);
+        if (null != networkFramesDropped.resolution) {
+          num4 = networkFramesDropped.resolution.height;
         }
-        tmp.majorResolution = num4;
-        tmp.timestamp = timestamp;
-        ({ nackCount: tmp.nackCount, pliCount: tmp.pliCount } = resolution);
-        tmp.decoder = outer1_21(resolution.decoderImplementationName);
-        tmp.codecType = outer1_22(resolution.codec.name);
-        tmp.qpSum = 0;
-        ({ freezeCount: tmp.freezeCount, pauseCount: tmp.pauseCount, totalFreezesDuration: tmp.totalFreezesDuration, totalPausesDuration: tmp.totalPausesDuration, totalFramesDuration: tmp.totalFramesDuration, totalDecodeTime } = resolution);
+        tmp.resolution = num4;
         let num5 = 0;
-        if (null != totalDecodeTime) {
-          num5 = totalDecodeTime;
+        if (null != networkFramesDropped.resolution) {
+          const _Math = Math;
+          num5 = Math.min(networkFramesDropped.resolution.height, networkFramesDropped.resolution.width);
         }
-        tmp.totalDecodeTime = num5;
-        const keyFramesDecoded = resolution.keyFramesDecoded;
+        tmp.minorResolution = num5;
+        let num6 = 0;
+        if (null != networkFramesDropped.resolution) {
+          const _Math2 = Math;
+          num6 = Math.max(networkFramesDropped.resolution.height, networkFramesDropped.resolution.width);
+        }
+        tmp.majorResolution = num6;
+        tmp.timestamp = timestamp;
+        ({ nackCount: tmp.nackCount, pliCount: tmp.pliCount } = networkFramesDropped);
+        tmp.decoder = outer1_21(networkFramesDropped.decoderImplementationName);
+        tmp.codecType = outer1_22(networkFramesDropped.codec.name);
+        tmp.qpSum = 0;
+        ({ freezeCount: tmp.freezeCount, pauseCount: tmp.pauseCount, totalFreezesDuration: tmp.totalFreezesDuration, totalPausesDuration: tmp.totalPausesDuration, totalFramesDuration: tmp.totalFramesDuration, totalDecodeTime } = networkFramesDropped);
+        let num7 = 0;
+        if (null != totalDecodeTime) {
+          num7 = totalDecodeTime;
+        }
+        tmp.totalDecodeTime = num7;
+        const keyFramesDecoded = networkFramesDropped.keyFramesDecoded;
         let tmp8 = null;
         if (null != keyFramesDecoded) {
           tmp8 = keyFramesDecoded;
         }
         tmp.keyframes = tmp8;
-        const passthroughCount = resolution.passthroughCount;
-        let num6 = 0;
-        if (null != passthroughCount) {
-          num6 = passthroughCount;
-        }
-        tmp.passthroughCount = num6;
-        const decryptSuccessCount = resolution.decryptSuccessCount;
-        let num7 = 0;
-        if (null != decryptSuccessCount) {
-          num7 = decryptSuccessCount;
-        }
-        tmp.cryptorSuccessCount = num7;
-        const decryptFailureCount = resolution.decryptFailureCount;
+        const passthroughCount = networkFramesDropped.passthroughCount;
         let num8 = 0;
-        if (null != decryptFailureCount) {
-          num8 = decryptFailureCount;
+        if (null != passthroughCount) {
+          num8 = passthroughCount;
         }
-        tmp.cryptorFailureCount = num8;
-        const decryptDuration = resolution.decryptDuration;
+        tmp.passthroughCount = num8;
+        const decryptSuccessCount = networkFramesDropped.decryptSuccessCount;
         let num9 = 0;
-        if (null != decryptDuration) {
-          num9 = decryptDuration;
+        if (null != decryptSuccessCount) {
+          num9 = decryptSuccessCount;
         }
-        tmp.cryptorDuration = num9;
-        const decryptAttempts = resolution.decryptAttempts;
+        tmp.cryptorSuccessCount = num9;
+        const decryptFailureCount = networkFramesDropped.decryptFailureCount;
         let num10 = 0;
-        if (null != decryptAttempts) {
-          num10 = decryptAttempts;
+        if (null != decryptFailureCount) {
+          num10 = decryptFailureCount;
         }
-        tmp.cryptorAttempts = num10;
-        const decryptMissingKeyCount = resolution.decryptMissingKeyCount;
+        tmp.cryptorFailureCount = num10;
+        const decryptDuration = networkFramesDropped.decryptDuration;
         let num11 = 0;
-        if (null != decryptMissingKeyCount) {
-          num11 = decryptMissingKeyCount;
+        if (null != decryptDuration) {
+          num11 = decryptDuration;
         }
-        tmp.cryptorMissingKeyCount = num11;
-        const decryptInvalidNonceCount = resolution.decryptInvalidNonceCount;
+        tmp.cryptorDuration = num11;
+        const decryptAttempts = networkFramesDropped.decryptAttempts;
         let num12 = 0;
-        if (null != decryptInvalidNonceCount) {
-          num12 = decryptInvalidNonceCount;
+        if (null != decryptAttempts) {
+          num12 = decryptAttempts;
         }
-        tmp.cryptorInvalidNonceCount = num12;
-        const sinkWantLocalAsInt = resolution.sinkWantLocalAsInt;
+        tmp.cryptorAttempts = num12;
+        const decryptMissingKeyCount = networkFramesDropped.decryptMissingKeyCount;
         let num13 = 0;
-        if (null != sinkWantLocalAsInt) {
-          num13 = sinkWantLocalAsInt;
+        if (null != decryptMissingKeyCount) {
+          num13 = decryptMissingKeyCount;
         }
-        tmp.localWant = num13;
+        tmp.cryptorMissingKeyCount = num13;
+        const decryptInvalidNonceCount = networkFramesDropped.decryptInvalidNonceCount;
+        let num14 = 0;
+        if (null != decryptInvalidNonceCount) {
+          num14 = decryptInvalidNonceCount;
+        }
+        tmp.cryptorInvalidNonceCount = num14;
+        const sinkWantLocalAsInt = networkFramesDropped.sinkWantLocalAsInt;
+        let num15 = 0;
+        if (null != sinkWantLocalAsInt) {
+          num15 = sinkWantLocalAsInt;
+        }
+        tmp.localWant = num15;
       }
       return tmp;
     }
@@ -567,6 +580,7 @@ let tmp2 = (() => {
         }
         obj.packetsLost = num2;
         obj.framesDropped = 0;
+        obj.networkFramesDropped = 0;
         let num3 = 0;
         if (null != framesSent.resolution) {
           num3 = framesSent.resolution.height;

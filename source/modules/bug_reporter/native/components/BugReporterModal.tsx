@@ -1,10 +1,10 @@
-// Module ID: 10321
-// Function ID: 79629
+// Module ID: 10350
+// Function ID: 79820
 // Name: handleClose
-// Dependencies: [5, 57, 31, 27, 1849, 10320, 33, 4130, 689, 666, 664, 4337, 1456, 566, 1212, 5087, 4665, 3831, 7607, 10322, 561, 10323, 10332, 5788, 7518, 5085, 1392, 4686, 4541, 4126, 5167, 9836, 4660, 1273, 4543, 7512, 5503, 5165, 4098, 10333, 1934, 7519, 7504, 685, 10334, 9615, 5519, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 10349, 33, 4130, 689, 666, 664, 4337, 1456, 566, 1212, 5087, 4665, 3831, 7696, 10351, 561, 10352, 10361, 5788, 7653, 5085, 1392, 4686, 4541, 4126, 5167, 9868, 4660, 1273, 4543, 7574, 5501, 5165, 4098, 10362, 1934, 7654, 7645, 685, 10363, 9651, 5517, 2]
 // Exports: default
 
-// Module 10321 (handleClose)
+// Module 10350 (handleClose)
 import zustandStore from "zustandStore";
 import _slicedToArray from "_slicedToArray";
 import AttachmentIcon from "AttachmentIcon";
@@ -465,6 +465,6 @@ export default function BugReportModal(screenshotUri) {
     obj.BUG_REPORT_CREATE = obj;
     return obj;
   })({ screenshotUri, screenshot }), items);
-  return callback(screenshotUri(5519).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
+  return callback(screenshotUri(5517).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
 };
 export { BugCreateScreen };

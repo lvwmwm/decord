@@ -1,10 +1,10 @@
-// Module ID: 13884
-// Function ID: 106245
+// Module ID: 13935
+// Function ID: 106569
 // Name: ThemedTabBadge
-// Dependencies: [57, 31, 27, 3782, 1851, 6671, 33, 4130, 689, 3976, 4066, 4126, 8559, 480, 7453, 1273, 13885, 6686, 7127, 3776, 3946, 1334, 566, 5802, 7423, 7742, 7449, 1212, 4554, 668, 477, 2]
+// Dependencies: [57, 31, 27, 3782, 1851, 6671, 33, 4130, 689, 3976, 4066, 4126, 8604, 480, 7429, 1273, 13936, 6686, 7126, 3776, 3946, 1334, 566, 5802, 7831, 7830, 7425, 1212, 4554, 668, 477, 2]
 // Exports: default
 
-// Module 13884 (ThemedTabBadge)
+// Module 13935 (ThemedTabBadge)
 import _slicedToArray from "_slicedToArray";
 import "set";
 import { View } from "getSystemLocale";
@@ -42,13 +42,13 @@ function OfferBadge(componentId) {
   ({ acked, badgeCopy, ackedBadgeCopy } = componentId);
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { type: require(480) /* isThrottled */.ImpressionTypes.VIEW, name: require(480) /* isThrottled */.ImpressionNames.PREMIUM_MARKETING_COMPONENT };
-  obj = { component_type: require(7453) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB, component_id: componentId };
+  obj = { component_type: require(7429) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB, component_id: componentId };
   obj.properties = obj;
   obj = { disableTrack: null == componentId };
-  importDefault(8559)(obj, obj);
+  importDefault(8604)(obj, obj);
   if (acked) {
     const obj1 = { style: tmp.acked };
-    const obj2 = { source: importDefault(13885), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color, style: tmp.icon };
+    const obj2 = { source: importDefault(13936), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color, style: tmp.icon };
     const items = [callback2(require(1273) /* Button */.Icon, obj2), ];
     const obj3 = { variant: "eyebrow", color: "interactive-text-default", style: tmp.text, children: ackedBadgeCopy };
     items[1] = callback2(require(4126) /* Text */.Text, obj3);
@@ -86,7 +86,7 @@ export default function PremiumTabBadge() {
   let string = _createForOfIteratorHelperLoose();
   let obj = require(6686) /* useGetTrialOffer */;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
-  let obj1 = require(7127) /* useGetDiscountOffer */;
+  let obj1 = require(7126) /* useGetDiscountOffer */;
   const premiumDiscountOffer = obj1.usePremiumDiscountOffer();
   let obj3 = require(3776) /* _createForOfIteratorHelperLoose */;
   const hasTier2Premium = obj3.useHasTier2Premium();
@@ -111,12 +111,12 @@ export default function PremiumTabBadge() {
         let items2 = [require(1334) /* DismissibleContent */.DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
       }
       const tmp20 = callback(tmp16(items2, undefined, true), 2);
-      let obj6 = require(7423) /* useIsEligibleSenderForReferralProgram */;
+      let obj6 = require(7831) /* useIsEligibleSenderForReferralProgram */;
       const isEligibleSenderForReferralProgram = obj6.useIsEligibleSenderForReferralProgram();
-      let obj7 = require(7742) /* isReferralProgramPopoverSeen */;
+      let obj7 = require(7830) /* isReferralProgramPopoverSeen */;
       const isReferralProgramEntrypointBadgeAcknowledged = obj7.useIsReferralProgramEntrypointBadgeAcknowledged();
-      let obj8 = require(7449) /* usePromotionMarketingComponent */;
-      const promotionMarketingComponent = obj8.usePromotionMarketingComponent(require(7453) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB);
+      let obj8 = require(7425) /* usePromotionMarketingComponent */;
+      const promotionMarketingComponent = obj8.usePromotionMarketingComponent(require(7429) /* MarketingComponentType */.MarketingComponentType.PREMIUM_TAB);
       let obj9 = require(5802) /* useSelectedDismissibleContent */;
       let prop = null;
       if (null != promotionMarketingComponent) {
@@ -194,7 +194,7 @@ export default function PremiumTabBadge() {
           const items3 = [, ];
           ({ premiumDiscountBadge: arr4[0], ackedBadge: arr4[1] } = string);
           obj4.style = items3;
-          obj5 = { source: importDefault(13885), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: string.icon.color, style: string.icon };
+          obj5 = { source: importDefault(13936), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: string.icon.color, style: string.icon };
           const items4 = [callback2(require(1273) /* Button */.Icon, obj5), ];
           obj6 = { variant: "eyebrow", color: "interactive-text-default", style: string.text };
           const intl5 = require(1212) /* getSystemLocale */.intl;

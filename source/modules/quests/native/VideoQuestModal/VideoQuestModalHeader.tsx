@@ -1,10 +1,10 @@
-// Module ID: 14050
-// Function ID: 108068
+// Module ID: 14100
+// Function ID: 108391
 // Name: VideoQuestModalHeader
-// Dependencies: [31, 27, 6944, 33, 4130, 689, 14022, 10464, 6965, 3743, 10474, 4126, 1212, 14045, 2]
+// Dependencies: [31, 27, 6943, 33, 4130, 689, 14072, 10493, 6964, 3743, 10503, 4126, 1212, 14095, 2]
 // Exports: default
 
-// Module 14050 (VideoQuestModalHeader)
+// Module 14100 (VideoQuestModalHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import { useVideoQuestUIStore } from "_toPropertyKey";
@@ -37,9 +37,9 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = _createForOfIteratorHelperLoose();
-  let obj = quest(14022);
+  let obj = quest(14072);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj1 = quest(10464);
+  let obj1 = quest(10493);
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
   const tmp4 = useVideoQuestUIStore((arg0) => {
     let tmp = arg0.videoProgress[quest.id];
@@ -57,7 +57,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     completedAt = userStatus.completedAt;
   }
   if (null == completedAt) {
-    let obj2 = quest(10474);
+    let obj2 = quest(10503);
     const videoQuestProgressRemainingAccessibilityLabel = obj2.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp6);
   }
   obj = { style: items };
@@ -90,7 +90,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   obj3.children = gamePublisher;
   items1[1] = callback(quest(4126).Text, obj3);
   obj.children = items1;
-  const items3 = [closure_6(View, obj), callback(questTaskDetails(14045), { iconColor: closeButtonIconColor, onClose })];
+  const items3 = [closure_6(View, obj), callback(questTaskDetails(14095), { iconColor: closeButtonIconColor, onClose })];
   obj.children = items3;
   return closure_6(View, obj);
 };

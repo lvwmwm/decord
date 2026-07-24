@@ -1,10 +1,10 @@
-// Module ID: 15460
-// Function ID: 118996
+// Module ID: 15507
+// Function ID: 119318
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [31, 27, 33, 4130, 689, 11722, 4126, 1212, 5459, 11709, 4543, 11705, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 11749, 4126, 1212, 11736, 4543, 11732, 2]
 // Exports: default
 
-// Module 15460 (AddFriendsContactSyncEmptyState)
+// Module 15507 (AddFriendsContactSyncEmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 export default function AddFriendsContactSyncEmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.content };
-  obj = { resizeMode: "contain", style: tmp.headerImage, source: importDefault(11722) };
+  obj = { resizeMode: "contain", style: tmp.headerImage, source: importDefault(11749) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -44,16 +44,16 @@ export default function AddFriendsContactSyncEmptyState() {
   const obj1 = { style: tmp.subtitle };
   const obj2 = { style: tmp.subtitleText, variant: "text-sm/medium" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
-  const obj3 = { learnMoreHook: require(11709) /* isContactSyncAvailable */.handleOpenLearnMoreLink };
+  const obj3 = { learnMoreHook: require(11736) /* isContactSyncAvailable */.handleOpenLearnMoreLink };
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.OXdOPf, obj3);
-  obj1.children = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj2);
+  obj1.children = callback(require(4126) /* Text */.Text, obj2);
   items[2] = callback(closure_3, obj1);
   const obj4 = { style: tmp.trailing };
   const obj5 = { variant: "primary", size: "lg" };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj5.text = intl3.string(require(1212) /* getSystemLocale */.t.QUXSpo);
   obj5.onPress = function onPress() {
-    outer1_0(outer1_2[11]).openContactSyncModal({}, "Add Friends Contact Sync Empty State");
+    outer1_0(outer1_2[10]).openContactSyncModal({}, "Add Friends Contact Sync Empty State");
   };
   obj4.children = callback(require(4543) /* Button */.Button, obj5);
   items[3] = callback(closure_3, obj4);

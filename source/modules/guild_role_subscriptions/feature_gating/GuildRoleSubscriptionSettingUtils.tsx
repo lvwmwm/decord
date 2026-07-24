@@ -1,5 +1,5 @@
 // Module ID: 5641
-// Function ID: 48233
+// Function ID: 48243
 // Name: canSeeGuildRoleSubscriptionSettingsContent
 // Dependencies: [1391, 3758, 1849, 653, 566, 5642, 5634, 2]
 // Exports: canSeeGuildRoleSubscriptionSettings, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings

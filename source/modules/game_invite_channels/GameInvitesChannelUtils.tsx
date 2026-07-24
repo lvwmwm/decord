@@ -1,7 +1,7 @@
 // Module ID: 5653
-// Function ID: 48341
+// Function ID: 48351
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 31, 1348, 1838, 653, 566, 5654, 5681, 5465, 5687, 5689, 2]
+// Dependencies: [29, 31, 1348, 1838, 653, 566, 5654, 5681, 5463, 5687, 5689, 2]
 // Exports: canInviteToActivity, useFirstMessage, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useSubscribeToGameInvitePostAuthors
 
 // Module 5653 (_createForOfIteratorHelperLoose)
@@ -174,7 +174,7 @@ export const useFirstMessage = function useFirstMessage(stateFromStores, enabled
 export { useGameInvitesChannelApplicationId };
 export const useGameInvitesChannelOfficialApplication = function useGameInvitesChannelOfficialApplication(arg0) {
   const tmp = useGameInvitesChannelApplicationId(arg0);
-  application = application(5465).useApplication(tmp);
+  application = application(5463).useApplication(tmp);
   const items = [application];
   return useMemo(() => {
     const merged = Object.assign(outer1_4(application, outer1_3));

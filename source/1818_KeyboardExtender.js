@@ -1,5 +1,5 @@
 // Module ID: 1818
-// Function ID: 19983
+// Function ID: 19984
 // Name: KeyboardExtender
 // Dependencies: [31, 27, 33, 1572, 1776, 1787]
 // Exports: default

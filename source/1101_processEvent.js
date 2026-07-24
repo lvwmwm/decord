@@ -1,5 +1,5 @@
 // Module ID: 1101
-// Function ID: 12574
+// Function ID: 12575
 // Name: processEvent
 // Dependencies: [65, 977]
 // Exports: screenshotIntegration

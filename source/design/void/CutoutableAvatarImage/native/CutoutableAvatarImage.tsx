@@ -1,9 +1,9 @@
-// Module ID: 11951
-// Function ID: 92383
+// Module ID: 11977
+// Function ID: 92619
 // Name: StaticNativeCutoutAvatarImage
-// Dependencies: [31, 27, 11952, 33, 3, 1392, 11953, 11954, 7873, 5085, 3991, 4542, 491, 8018, 620, 2]
+// Dependencies: [31, 27, 11978, 33, 3, 1392, 11979, 11980, 7961, 5085, 3991, 4542, 491, 8063, 620, 2]
 
-// Module 11951 (StaticNativeCutoutAvatarImage)
+// Module 11977 (StaticNativeCutoutAvatarImage)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_SPRING_CONFIG } from "n";
@@ -27,10 +27,10 @@ function StaticNativeCutoutAvatarImage(cutout) {
     return items;
   }, items);
   const obj = { style, cutouts: memo };
-  const tmp2 = importDefault(11954)(source);
+  const tmp2 = importDefault(11980)(source);
   const items1 = [obj.image, imageStyle];
   obj.children = callback(importDefault(5085), { style: items1, source: tmp2, usesSmallCache: true });
-  return callback(importDefault(7873), obj);
+  return callback(importDefault(7961), obj);
 }
 function AnimatedNativeCutoutAvatarImage(cutout) {
   let imageStyle;
@@ -64,15 +64,15 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
     obj.cutouts = items;
     return obj;
   };
-  obj = { cutout, CutoutShape: cutout(7873).CutoutShape, withSpring: cutout(4542).withSpring, CHANNEL_SPRING_CONFIG };
+  obj = { cutout, CutoutShape: cutout(7961).CutoutShape, withSpring: cutout(4542).withSpring, CHANNEL_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 12529564164821;
   fn.__initData = closure_14;
   const animatedProps = obj.useAnimatedProps(fn);
   obj = { style, animatedProps };
   let items = [obj.image, imageStyle];
-  obj.children = callback(importDefault(5085), { style: items, source: importDefault(11954)(source), usesSmallCache: true });
-  return callback(cutout(7873).ClipViewAnimated, obj);
+  obj.children = callback(importDefault(5085), { style: items, source: importDefault(11980)(source), usesSmallCache: true });
+  return callback(cutout(7961).ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
   if (true === animate.animate) {
@@ -131,10 +131,10 @@ function CutoutAvatarImage(arg0) {
       obj = {};
       const obj1 = { tintColor };
       obj.style = obj1;
-      obj.source = importDefault(11954)(source);
+      obj.source = importDefault(11980)(source);
       obj.usesSmallCache = true;
       obj.children = callback(importDefault(5085), obj);
-      let tmp7 = callback(require(8018) /* inlineStyles */.ForeignObject, obj);
+      let tmp7 = callback(require(8063) /* inlineStyles */.ForeignObject, obj);
       const tmp14 = importDefault(5085);
     }
     const obj2 = { style };
@@ -153,8 +153,8 @@ function CutoutAvatarImage(arg0) {
     const obj8 = { cx: diff, cy: diff1, r: tmp, fill: "black" };
     items[1] = callback(require(dependencyMap[str3]).Circle, obj8);
     obj5.children = items;
-    obj4.children = closure_8(require(8018) /* inlineStyles */.Mask, obj5);
-    const items1 = [callback(require(8018) /* inlineStyles */.Defs, obj4), tmp7, ];
+    obj4.children = closure_8(require(8063) /* inlineStyles */.Mask, obj5);
+    const items1 = [callback(require(8063) /* inlineStyles */.Defs, obj4), tmp7, ];
     if (null == cutout.border) {
       items1[2] = null;
       obj3.children = items1;
@@ -181,12 +181,12 @@ function CutoutAvatarImage(arg0) {
     tmp15 = callback;
     tmp16 = closure_5;
     tmp17 = closure_8;
-    tmp20 = importDefault(8018);
+    tmp20 = importDefault(8063);
     const tmp21 = callback;
     const tmp23 = closure_8;
   }
-  const obj11 = { x: "0", y: "0", height: "100%", width: "100%", href: importDefault(11954)(source), mask: "url(#" + v4Result + ")" };
-  tmp7 = callback(require(8018) /* inlineStyles */.Image, obj11);
+  const obj11 = { x: "0", y: "0", height: "100%", width: "100%", href: importDefault(11980)(source), mask: "url(#" + v4Result + ")" };
+  tmp7 = callback(require(8063) /* inlineStyles */.Image, obj11);
 }
 ({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -226,7 +226,7 @@ const memoResult = importAllResult.memo((style) => {
   } else if (null != user) {
     avatarSource = user.getAvatarSource(tmp6, animate2, size2);
   } else if (null != channel) {
-    let obj1 = require(11953) /* getChannelIconURL */;
+    let obj1 = require(11979) /* getChannelIconURL */;
     const channelIconURL = obj1.getChannelIconURL(channel, size2);
     let tmp13 = channelIconURL;
     if ("number" !== typeof channelIconURL) {

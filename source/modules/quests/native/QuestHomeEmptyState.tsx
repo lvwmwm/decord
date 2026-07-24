@@ -1,10 +1,10 @@
-// Module ID: 13961
-// Function ID: 106813
+// Module ID: 14011
+// Function ID: 107136
 // Name: QuestHomeEmptyState
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1212, 3834, 3984, 5121, 477, 4126, 13962, 4554, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1212, 3834, 3984, 5121, 477, 4126, 14012, 4554, 2]
 // Exports: default
 
-// Module 13961 (QuestHomeEmptyState)
+// Module 14011 (QuestHomeEmptyState)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -68,7 +68,7 @@ export default function QuestHomeEmptyState(subtitle) {
   let tmp13 = null;
   if (!importDefault(3984)().isChatLockedOpen) {
     const obj6 = {};
-    const obj7 = { style: tmp5.emptyImage, source: importDefault(13962), resizeMode: "cover" };
+    const obj7 = { style: tmp5.emptyImage, source: importDefault(14012), resizeMode: "cover" };
     const items2 = [callback(closure_4, obj7), ];
     const obj8 = { style: tmp5.gradient };
     ({ END: obj12.end, START: obj12.start } = VerticalGradient);

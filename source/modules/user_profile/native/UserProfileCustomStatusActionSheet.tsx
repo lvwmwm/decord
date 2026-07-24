@@ -1,10 +1,10 @@
-// Module ID: 11908
-// Function ID: 92163
+// Module ID: 11935
+// Function ID: 92401
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [31, 27, 1849, 5512, 33, 4130, 689, 566, 11893, 4319, 1212, 11637, 7880, 11898, 2]
+// Dependencies: [31, 27, 1849, 5510, 33, 4130, 689, 566, 11920, 4319, 1212, 11664, 7967, 11925, 2]
 // Exports: default
 
-// Module 11908 (UserProfileCustomStatusActionSheet)
+// Module 11935 (UserProfileCustomStatusActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -59,12 +59,12 @@ export default function UserProfileCustomStatusActionSheet(user) {
   obj = { title: stringResult };
   obj1 = { style: tmp.statusPreviewContainer };
   const obj2 = { style: tmp.avatarContainer };
-  const tmp3 = importDefault(11893)(user.id);
-  obj2.children = callback(importDefault(7880), { user, statusStyle: tmp.avatarStatus });
+  const tmp3 = importDefault(11920)(user.id);
+  obj2.children = callback(importDefault(7967), { user, statusStyle: tmp.avatarStatus });
   const items2 = [callback(View, obj2), ];
   const obj4 = { customStatusActivity: tmp3, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText };
-  items2[1] = callback(importDefault(11898), obj4);
+  items2[1] = callback(importDefault(11925), obj4);
   obj1.children = items2;
   obj.children = callback2(View, obj1);
-  return callback(importDefault(11637), obj);
+  return callback(importDefault(11664), obj);
 };

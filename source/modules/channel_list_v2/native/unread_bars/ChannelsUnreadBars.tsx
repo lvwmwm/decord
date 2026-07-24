@@ -1,9 +1,9 @@
-// Module ID: 15009
-// Function ID: 114314
+// Module ID: 15056
+// Function ID: 114635
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4122, 1348, 6879, 4142, 4325, 10260, 4326, 33, 4130, 6760, 4549, 7588, 13999, 574, 620, 566, 3991, 14983, 8133, 4099, 4100, 15010, 2]
+// Dependencies: [57, 31, 27, 4122, 1348, 6878, 4142, 4325, 10289, 4326, 33, 4130, 6760, 4549, 7677, 14049, 574, 620, 566, 3991, 15030, 7423, 4099, 4100, 15057, 2]
 
-// Module 15009 (_createForOfIteratorHelperLoose)
+// Module 15056 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -216,7 +216,7 @@ function findNearestUnreadItem(containerSize, id) {
         } else {
           let tmp64 = require;
           let tmp65 = dependencyMap;
-          if (value.type === require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
+          if (value.type === require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
             tmp13 = tmp12;
             if (value.layoutStart > diff) {
               break;
@@ -227,7 +227,7 @@ function findNearestUnreadItem(containerSize, id) {
               let tmp17 = require;
               let tmp18 = dependencyMap;
               tmp14 = value;
-              if (value.type === require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
+              if (value.type === require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
                 let tmp19 = shouldSkipSection;
                 tmp14 = tmp12;
                 if (!shouldSkipSection(value.section)) {

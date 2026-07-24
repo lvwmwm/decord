@@ -1,10 +1,10 @@
-// Module ID: 11813
-// Function ID: 91640
+// Module ID: 11840
+// Function ID: 91878
 // Name: ProfileEffectAssetPreview
-// Dependencies: [31, 27, 655, 8200, 33, 4130, 689, 8225, 5085, 11814, 8241, 8697, 8207, 8233, 8215, 1873, 8229, 1876, 656, 8717, 8716, 8226, 1212, 4126, 6785, 8719, 11815, 8667, 3776, 8731, 2]
+// Dependencies: [31, 27, 655, 8244, 33, 4130, 689, 8269, 5085, 11841, 8285, 8738, 8251, 8277, 8259, 1873, 8273, 1876, 656, 8758, 8757, 8270, 1212, 4126, 6785, 8760, 11842, 8708, 3776, 8770, 2]
 // Exports: default
 
-// Module 11813 (ProfileEffectAssetPreview)
+// Module 11840 (ProfileEffectAssetPreview)
 import result from "result";
 import { View } from "useCurrentUser";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
@@ -20,12 +20,12 @@ let closure_8;
 let require = arg1;
 function ProfileEffectAssetPreview(item) {
   const tmp = callback4();
-  const tmp2 = importDefault(8225)(item.item.skuId);
+  const tmp2 = importDefault(8269)(item.item.skuId);
   let tmp3 = null;
   if (null != tmp2) {
     let obj = { style: tmp.profileEffectContainer };
     obj = {};
-    obj = { uri: importDefault(11814) };
+    obj = { uri: importDefault(11841) };
     obj.source = obj;
     obj.alt = tmp2.accessibilityLabel;
     obj.style = tmp.profileEffect;
@@ -48,12 +48,12 @@ function ProfileFrameAssetPreview(arg0) {
   let item;
   let width;
   ({ item, width, height } = arg0);
-  const tmp = importDefault(8241)(item.skuId, "CollectiblesShopCheckoutDetails");
+  const tmp = importDefault(8285)(item.skuId, "CollectiblesShopCheckoutDetails");
   let tmp2 = null;
   if (null != tmp) {
     const obj = { profileFrame: tmp, previewWidth: width, previewHeight: height, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    tmp2 = callback(importDefault(8697), obj);
-    const tmp6 = importDefault(8697);
+    tmp2 = callback(importDefault(8738), obj);
+    const tmp6 = importDefault(8738);
   }
   return tmp2;
 }
@@ -69,10 +69,10 @@ function BundleAssetPreview(height) {
   let c5;
   const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = width(8207);
+  let obj = width(8251);
   const shopProductItems = obj.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
-  let obj1 = width(8233);
+  let obj1 = width(8277);
   const bundleWidth = BUNDLE_PREVIEW_CONFIG.small.bundleWidth;
   rounded = bundleWidth;
   if (!obj1.useCollectiblesMobileFlexibleBundlesExperiment("CollectiblesShopCheckoutDetails").enabled) {
@@ -100,7 +100,7 @@ function BundleAssetPreview(height) {
   obj = { style: memo1 };
   const memo2 = bundleWidth.useMemo(() => ({ width, height }), items2);
   obj1 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2, exposureLocation: "CollectiblesShopCheckoutDetails" };
-  obj.children = callback(height(8215), obj1);
+  obj.children = callback(height(8259), obj1);
   obj.children = callback(rounded, obj);
   return callback(rounded, obj);
 }
@@ -108,7 +108,7 @@ function NameplateAssetPreview(item) {
   let obj = require(1873) /* getNameplateData */;
   const nameplateData = obj.getNameplateData(item.item);
   obj = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true, style: _createForOfIteratorHelperLoose().nameplate };
-  return callback(importDefault(8229), obj);
+  return callback(importDefault(8273), obj);
 }
 function CollectibleProductPreview(arg0) {
   let product;
@@ -137,11 +137,11 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   ({ product, width, height } = userAvatarSource);
   const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
-    let obj = { skuId: product.skuId, width: require(8717) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: require(8717) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    return callback(require(8717) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj);
+    let obj = { skuId: product.skuId, width: require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
+    return callback(require(8758) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = {};
-    const obj1 = { uri: importDefault(8716) };
+    const obj1 = { uri: importDefault(8757) };
     obj.source = obj1;
     obj.style = tmp.externalProductImage;
     return callback(importDefault(5085), obj);
@@ -149,7 +149,7 @@ function CollectibleProductPreviewContent(userAvatarSource) {
     const type = product.type;
     if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj2 = { item: product.items[0], size: width, avatarSource: userAvatarSource.userAvatarSource, animate: false };
-      return callback(importDefault(8226), obj2);
+      return callback(importDefault(8270), obj2);
     } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj3 = { item: product.items[0] };
       return callback(ProfileEffectAssetPreview, obj3);
@@ -316,7 +316,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
   }
   let dependencyMap;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8667) /* useCurrentUser */;
+  let obj = require(8708) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
   let obj1 = flag2(3776);
   const canUseShopDiscountsResult = obj1.canUseShopDiscounts(currentUser);

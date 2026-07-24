@@ -1,11 +1,11 @@
 // Module ID: 8099
-// Function ID: 64192
+// Function ID: 64151
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8096, 8100, 8101, 8033, 8042]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8100, 8101, 8102]
 
 // Module 8099 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
-import module_8096 from "module_8096";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -23,7 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Mask";
-tmp3.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
+tmp3.displayName = "FeBlend";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { mode: "normal" });
 
 export default tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 8902
-// Function ID: 70254
+// Module ID: 8941
+// Function ID: 70469
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [57, 31, 27, 1348, 1849, 8899, 653, 1277, 33, 4130, 689, 566, 4319, 8903, 8904, 8878, 8905, 8897, 4337, 3831, 4091, 1212, 8906, 8907, 8332, 5464, 8492, 8908, 1273, 5121, 4660, 5091, 4126, 4541, 8909, 8911, 4543, 2]
+// Dependencies: [57, 31, 27, 1348, 1849, 8938, 653, 1277, 33, 4130, 689, 566, 4319, 8942, 8943, 8917, 8944, 8936, 4337, 3831, 4091, 1212, 8945, 8946, 8376, 5462, 8537, 8947, 1273, 5121, 4660, 5091, 4126, 4541, 8948, 8950, 4543, 2]
 // Exports: default
 
-// Module 8902 (SecureFramesUserVerificationModal)
+// Module 8941 (SecureFramesUserVerificationModal)
 import _slicedToArray from "_slicedToArray";
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon";
 import get_ActivityIndicator from "useIsSecureFramesKeyInconsistent";

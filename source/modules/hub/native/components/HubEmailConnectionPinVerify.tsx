@@ -1,10 +1,10 @@
-// Module ID: 11772
-// Function ID: 91380
+// Module ID: 11799
+// Function ID: 91618
 // Name: presentResendToast
-// Dependencies: [57, 5, 31, 27, 1838, 33, 4130, 3831, 11773, 11774, 10886, 22, 11766, 1212, 4029, 5737, 11761, 11775, 4126, 5459, 9264, 2]
+// Dependencies: [57, 5, 31, 27, 1838, 33, 4130, 3831, 11800, 11801, 10913, 22, 11793, 1212, 4029, 5737, 11788, 11802, 4126, 9300, 2]
 // Exports: default
 
-// Module 11772 (presentResendToast)
+// Module 11799 (presentResendToast)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import result from "result";
@@ -20,7 +20,7 @@ let closure_9;
 const require = arg1;
 function presentResendToast(content) {
   let obj = importDefault(3831);
-  obj = { key: "HUB_EMAIL_RESET", content, icon: importDefault(11773) };
+  obj = { key: "HUB_EMAIL_RESET", content, icon: importDefault(11800) };
   obj.open(obj);
 }
 ({ View: closure_6, Image: closure_7 } = get_ActivityIndicator);
@@ -66,7 +66,7 @@ export default function HubEmailConnectionPinVerify(email) {
   const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   const intl2 = email(onClose[13]).intl;
   obj3.children = intl2.format(email(onClose[13]).t["b+W0oq"], { onClick: obj.throttle(_handleCodeEntered(onClose[11]), 1000), email });
-  items1[2] = callback2(email(onClose[19]).TextWithIOSLinkWorkaround, obj3);
+  items1[2] = callback2(email(onClose[18]).Text, obj3);
   const obj4 = { style: tmp.label, variant: "text-sm/semibold", color: "text-muted" };
   const intl3 = email(onClose[13]).intl;
   obj4.children = intl3.string(email(onClose[13]).t.rpWT1s);
@@ -77,9 +77,9 @@ export default function HubEmailConnectionPinVerify(email) {
     onCodeEntered: function handleCodeEntered(arg0) {
       return _handleCodeEntered(...arguments);
     },
-    codeType: email(onClose[20]).CodeType.ALPHANUMERIC
+    codeType: email(onClose[19]).CodeType.ALPHANUMERIC
   };
-  items1[4] = callback2(email(onClose[20]).CodeBlocks, obj5);
+  items1[4] = callback2(email(onClose[19]).CodeBlocks, obj5);
   let tmp9 = null != first;
   if (tmp9) {
     const obj6 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: first.getAnyErrorMessage() };

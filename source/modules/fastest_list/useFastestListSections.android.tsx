@@ -1,10 +1,10 @@
-// Module ID: 9251
-// Function ID: 72321
+// Module ID: 9287
+// Function ID: 72530
 // Name: useFastestListSections
-// Dependencies: [31, 5450, 9252, 9253, 2]
+// Dependencies: [31, 5450, 9288, 9289, 2]
 // Exports: default
 
-// Module 9251 (useFastestListSections)
+// Module 9287 (useFastestListSections)
 import result from "result";
 
 const result = require("ITEM").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");

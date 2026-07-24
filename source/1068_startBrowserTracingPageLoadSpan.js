@@ -1,5 +1,5 @@
 // Module ID: 1068
-// Function ID: 12264
+// Function ID: 12265
 // Name: startBrowserTracingPageLoadSpan
 // Dependencies: [77, 794, 1066, 1004, 1009, 1048, 1069, 1071]
 // Exports: browserTracingIntegration

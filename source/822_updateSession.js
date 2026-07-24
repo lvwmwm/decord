@@ -1,5 +1,5 @@
 // Module ID: 822
-// Function ID: 9207
+// Function ID: 9208
 // Name: updateSession
 // Dependencies: [815, 807]
 

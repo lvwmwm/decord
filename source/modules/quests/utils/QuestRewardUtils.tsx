@@ -1,10 +1,10 @@
-// Module ID: 9463
-// Function ID: 73708
+// Module ID: 9499
+// Function ID: 73917
 // Name: getCollectiblesQuestReward
-// Dependencies: [6774, 9464, 6947, 6940, 3355, 1212, 9465, 9466, 9467, 9468, 9469, 4979, 2]
+// Dependencies: [6774, 9500, 6946, 6939, 3355, 1212, 9501, 9502, 9503, 9504, 9505, 4979, 2]
 // Exports: getCollectibleQuestRewardDuration, getCollectibleQuestRewardExtendableExpirationDate, getCollectiblesQuestRewardItem, getDefaultPlatform, getDefaultRewardName, getDefaultRewardNameWithArticle, getInGameQuestReward, getPlatformString, getQuestOrbMultiplierForUser, getQuestPrimaryReward, getRewardCodeQuestReward, getVirtualCurrencyRewardPremiumOrbQuantity, hasCollectiblesQuestReward, hasInGameQuestReward, hasQuestRewardCode, isCollectibleQuestRewardPermanentWithPremiumSubscription, isTieredRewardCodeQuest
 
-// Module 9463 (getCollectiblesQuestReward)
+// Module 9499 (getCollectiblesQuestReward)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "QuestRewardTypes";
 
@@ -17,7 +17,7 @@ function getCollectiblesQuestReward(rewardsConfig) {
     type = found.type;
   }
   let tmp3 = null;
-  if (type === require(6947) /* QuestRewardTypes */.QuestRewardTypes.COLLECTIBLE) {
+  if (type === require(6946) /* QuestRewardTypes */.QuestRewardTypes.COLLECTIBLE) {
     tmp3 = found;
   }
   return tmp3;
@@ -73,7 +73,7 @@ function getQuestOrbMultiplier(config) {
   if (null != found) {
     type = found.type;
   }
-  if (type !== require(6947) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+  if (type !== require(6946) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
     return null;
   } else {
     ({ premiumOrbQuantity, orbQuantity } = found);
@@ -96,17 +96,17 @@ function getQuestOrbRewardQuantityForUser(config, stateFromStores) {
   } else if (null == stateFromStores) {
     return found.orbQuantity;
   } else {
-    const questOrbMultiplierEligibilityForUser = require(9465) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(stateFromStores);
+    const questOrbMultiplierEligibilityForUser = require(9501) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(stateFromStores);
     if (hasPremiumOrbQuantity(config)) {
       return orbQuantity;
     }
     orbQuantity = found.orbQuantity;
-    const obj = require(9465) /* getQuestOrbMultiplierEligibilityForUser */;
+    const obj = require(9501) /* getQuestOrbMultiplierEligibilityForUser */;
   }
 }
 function _getDefaultRewardName(config, stateFromStores, arg2) {
   if (hasFractionalPremiumQuestReward(config)) {
-    return require(9467) /* getFractionalPremiumQuestRewards */.getFractionalPremiumQuestRewardName(config);
+    return require(9503) /* getFractionalPremiumQuestRewards */.getFractionalPremiumQuestRewardName(config);
   } else if (hasVirtualCurrencyReward(config)) {
     let tmp7 = getQuestOrbRewardQuantityForUser(config, stateFromStores);
     if (null == tmp7) {
@@ -120,7 +120,7 @@ function _getDefaultRewardName(config, stateFromStores, arg2) {
     let obj = { orbAmount: num2 };
     return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["nLXlh+"], obj);
   } else {
-    obj = require(9468) /* getQuestUrl */;
+    obj = require(9504) /* getQuestUrl */;
     const messages = obj.getDefaultReward(config).messages;
     return arg2 ? messages.nameWithArticle : messages.name;
   }
@@ -138,8 +138,8 @@ export const getCollectibleQuestRewardExtendableExpirationDate = function getCol
     if ("expiresAtPremium" in tmp) {
       questFormattedDate = null;
       if (null != tmp.expiresAtPremium) {
-        questFormattedDate = require(6940) /* _createForOfIteratorHelperLoose */.getQuestFormattedDate(tmp.expiresAtPremium);
-        const obj = require(6940) /* _createForOfIteratorHelperLoose */;
+        questFormattedDate = require(6939) /* _createForOfIteratorHelperLoose */.getQuestFormattedDate(tmp.expiresAtPremium);
+        const obj = require(6939) /* _createForOfIteratorHelperLoose */;
       }
     }
   }
@@ -244,7 +244,7 @@ export const getVirtualCurrencyRewardPremiumOrbQuantity = function getVirtualCur
   if (null != found) {
     type = found.type;
   }
-  if (type === require(6947) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+  if (type === require(6946) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
     return found.premiumOrbQuantity;
   }
 };
@@ -257,7 +257,7 @@ export const isCollectibleQuestRewardPermanentWithPremiumSubscription = function
     if (null != tmp3) {
       expirationMode = tmp3.expirationMode;
     }
-    tmp = expirationMode === require(9464) /* QuestRewardExpirationMode */.QuestRewardExpirationMode.PREMIUM_PERMANENT;
+    tmp = expirationMode === require(9500) /* QuestRewardExpirationMode */.QuestRewardExpirationMode.PREMIUM_PERMANENT;
   }
   return tmp;
 };
@@ -289,14 +289,14 @@ export const getQuestOrbMultiplierForUser = function getQuestOrbMultiplierForUse
     if (null != tmp2) {
       num2 = tmp2;
     }
-    const questOrbMultiplierEligibilityForUser = require(9465) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStandardSub);
+    const questOrbMultiplierEligibilityForUser = require(9501) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStandardSub);
     let num4 = 1;
     if (hasPremiumOrbQuantity(config)) {
       num4 = 1;
       if (obj2.shouldReceiveQuestOrbMultiplier(questOrbMultiplierEligibilityForUser)) {
         num4 = num2;
       }
-      obj2 = require(9466) /* items */;
+      obj2 = require(9502) /* items */;
     }
     return num4;
   }
@@ -313,7 +313,7 @@ export const getRewardCodeQuestReward = function getRewardCodeQuestReward(idx) {
     return null;
   } else {
     let tmp5 = null;
-    if (tmp.config.rewardsConfig.rewards[idx].type === require(6947) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE) {
+    if (tmp.config.rewardsConfig.rewards[idx].type === require(6946) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE) {
       tmp5 = tmp2;
     }
     return tmp5;
@@ -321,7 +321,7 @@ export const getRewardCodeQuestReward = function getRewardCodeQuestReward(idx) {
 };
 export const isTieredRewardCodeQuest = function isTieredRewardCodeQuest(quest) {
   const rewardsConfig = quest.quest.config.rewardsConfig;
-  let everyResult = rewardsConfig.assignmentMethod === require(9469) /* QuestRewardAssignmentMethods */.QuestRewardAssignmentMethods.TIERED;
+  let everyResult = rewardsConfig.assignmentMethod === require(9505) /* QuestRewardAssignmentMethods */.QuestRewardAssignmentMethods.TIERED;
   if (everyResult) {
     everyResult = rewardsConfig.rewards.length > 0;
   }

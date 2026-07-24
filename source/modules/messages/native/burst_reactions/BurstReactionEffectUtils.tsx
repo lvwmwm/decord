@@ -1,10 +1,10 @@
-// Module ID: 7026
-// Function ID: 56401
+// Module ID: 7025
+// Function ID: 56410
 // Name: _generateAnimationSource
-// Dependencies: [5, 57, 31, 27, 3775, 7027, 1392, 477, 7064, 2]
+// Dependencies: [5, 57, 31, 27, 3775, 7026, 1392, 477, 7063, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 7026 (_generateAnimationSource)
+// Module 7025 (_generateAnimationSource)
 import items from "items";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

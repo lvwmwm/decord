@@ -1,10 +1,10 @@
-// Module ID: 7105
-// Function ID: 57128
+// Module ID: 7104
+// Function ID: 57141
 // Name: createAutocompleterResultForChannelId
 // Dependencies: [1348, 3767, 1849, 5043, 653, 4320, 2]
 // Exports: default
 
-// Module 7105 (createAutocompleterResultForChannelId)
+// Module 7104 (createAutocompleterResultForChannelId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

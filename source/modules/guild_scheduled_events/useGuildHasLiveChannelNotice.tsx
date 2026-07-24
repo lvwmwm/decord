@@ -1,10 +1,10 @@
-// Module ID: 15012
-// Function ID: 114355
+// Module ID: 15059
+// Function ID: 114676
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [31, 4951, 1353, 4149, 1348, 3758, 4203, 15013, 1354, 482, 15014, 566, 8455, 15015, 4963, 4957, 2]
+// Dependencies: [31, 4951, 1353, 4149, 1348, 3758, 4203, 15060, 1354, 482, 15061, 566, 8499, 15062, 4963, 4957, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 15012 (useGuildHasLiveChannelNotice)
+// Module 15059 (useGuildHasLiveChannelNotice)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 8261
-// Function ID: 65165
+// Module ID: 8305
+// Function ID: 65393
 // Name: ProfileBanner
 // Dependencies: [31, 27, 653, 33, 4130, 665, 5085, 2]
 // Exports: default
 
-// Module 8261 (ProfileBanner)
+// Module 8305 (ProfileBanner)
 import "result";
 import { View } from "get ActivityIndicator";
 import { BANNER_HEIGHT } from "ME";

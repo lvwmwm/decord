@@ -1,5 +1,5 @@
 // Module ID: 4984
-// Function ID: 42971
+// Function ID: 42975
 // Name: DismissibleQuestContentFlags
 // Dependencies: [2]
 

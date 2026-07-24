@@ -1,10 +1,10 @@
-// Module ID: 6965
-// Function ID: 55667
+// Module ID: 6964
+// Function ID: 55676
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6942, 4983, 22, 664, 6940, 1327, 2]
+// Dependencies: [6941, 4983, 22, 664, 6939, 1327, 2]
 // Exports: formatWatchTaskRemainingTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasSomeFirstPartyTasks, hasStreamOnDesktopTask, isDesktopOnlyPlayQuest, isVideoQuestForMobilePlatformOnly
 
-// Module 6965 (_createForOfIteratorHelperLoose)
+// Module 6964 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -325,7 +325,7 @@ function _getTaskDetailsForType(arg0) {
     tmp7 = taskConfigV2.tasks[includeTaskTypes(undefined, 4983).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP];
   }
   if (null == tmp7) {
-    let obj1 = includeTaskTypes(6940);
+    let obj1 = includeTaskTypes(6939);
     const _Error = Error;
     const _HermesInternal = HermesInternal;
     const error = new Error("Quest " + quest.id + " has no task matching the include filters");

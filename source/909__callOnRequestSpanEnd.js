@@ -1,5 +1,5 @@
 // Module ID: 909
-// Function ID: 9970
+// Function ID: 9971
 // Name: _callOnRequestSpanEnd
 // Dependencies: [77, 65, 831, 796, 842, 832, 825, 880, 804, 817, 812, 876, 816]
 // Exports: instrumentFetchRequest

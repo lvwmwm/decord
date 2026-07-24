@@ -1,5 +1,5 @@
 // Module ID: 3903
-// Function ID: 32288
+// Function ID: 32289
 // Name: isUriInput
 // Dependencies: [5, 57, 31, 27, 3886, 3883]
 // Exports: useRiveFile

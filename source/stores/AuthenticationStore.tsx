@@ -1,7 +1,7 @@
 // Module ID: 1194
-// Function ID: 13658
+// Function ID: 13659
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1195, 1196, 653, 1197, 3, 684, 587, 1198, 675, 13111, 686, 13112, 9200, 4030, 490, 13113, 1184, 11454, 566, 10463, 13114, 1328, 1881, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1195, 1196, 653, 1197, 3, 684, 587, 1198, 675, 13164, 686, 13165, 9236, 4030, 490, 13166, 1184, 11484, 566, 10492, 13167, 1328, 1881, 2]
 
 // Module 1194 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -105,7 +105,7 @@ function loadExperiments(withGuildExperiments) {
   const obj2 = importDefault(675);
   obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj };
   obj = {};
-  let obj3 = require(13111) /* fetchExperiments */;
+  let obj3 = require(13164) /* fetchExperiments */;
   obj.location = require(1198) /* shouldNavigate */.getFingerprintLocation();
   obj.context = obj;
   const experiments = obj3.fetchExperiments(obj);
@@ -481,7 +481,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     if (null != email) {
       tmp2 = email;
     }
-    obj.setUser(id, username, tmp2, importDefault(11454)(user));
+    obj.setUser(id, username, tmp2, importDefault(11484)(user));
     setAnalyticsToken(analyticsToken);
     id = user.id;
     if (undefined !== auth) {
@@ -521,7 +521,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     if (null != email) {
       tmp = email;
     }
-    importDefault(1184).setUser(id, username, tmp, importDefault(11454)(user));
+    importDefault(1184).setUser(id, username, tmp, importDefault(11484)(user));
     setAuthToken(token, user.id);
     if (null != analyticsToken) {
       setAnalyticsToken(analyticsToken);
@@ -728,7 +728,7 @@ tmp6 = new tmp6(require("dispatcher"), {
       } else {
         NONE = LoginStates.NONE;
       }
-      obj = require(9200) /* getAuthenticationErrorsFromAPIError */;
+      obj = require(9236) /* getAuthenticationErrorsFromAPIError */;
     } else {
       NONE = LoginStates.NONE;
     }
@@ -758,7 +758,7 @@ let obj = {
     if (null != email) {
       tmp2 = email;
     }
-    obj.setUser(id, username, tmp2, importDefault(11454)(user));
+    obj.setUser(id, username, tmp2, importDefault(11484)(user));
     setAnalyticsToken(analyticsToken);
     id = user.id;
     if (undefined !== auth) {
@@ -798,7 +798,7 @@ let obj = {
     if (null != email) {
       tmp = email;
     }
-    importDefault(1184).setUser(id, username, tmp, importDefault(11454)(user));
+    importDefault(1184).setUser(id, username, tmp, importDefault(11484)(user));
     setAuthToken(token, user.id);
     if (null != analyticsToken) {
       setAnalyticsToken(analyticsToken);
@@ -1005,7 +1005,7 @@ let obj = {
       } else {
         NONE = LoginStates.NONE;
       }
-      obj = require(9200) /* getAuthenticationErrorsFromAPIError */;
+      obj = require(9236) /* getAuthenticationErrorsFromAPIError */;
     } else {
       NONE = LoginStates.NONE;
     }

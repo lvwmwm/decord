@@ -1,12 +1,12 @@
 // Module ID: 3771
-// Function ID: 28959
+// Function ID: 28960
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 3772, 3773, 3774, 3775, 22, 12991, 2]
+// Dependencies: [6, 7, 3772, 3773, 3774, 3775, 22, 13043, 2]
 // Exports: asUnicodeEmoji
 
 // Module 3771 (_createForOfIteratorHelperLoose)
 import apply from "apply";
-import module_12991 from "module_12991";
+import module_13043 from "module_13043";
 import createText from "createText";
 import module_917631 from "module_917631";
 import module_127988 from "module_127988";
@@ -522,8 +522,8 @@ let obj = {
     if (str === undefined) {
       str = "";
     }
-    if (hasOwnProperty.call(require(12991), arg0)) {
-      str = require(12991)[arg0];
+    if (hasOwnProperty.call(require(13043), arg0)) {
+      str = require(13043)[arg0];
     }
     let combined = str;
     if (flag) {

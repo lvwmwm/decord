@@ -1,5 +1,5 @@
 // Module ID: 1441
-// Function ID: 16789
+// Function ID: 16790
 // Name: hasOwnProperty
 // Dependencies: []
 

@@ -1,5 +1,5 @@
 // Module ID: 5298
-// Function ID: 45758
+// Function ID: 45763
 // Name: useGestureHandler
 // Dependencies: [1582, 5217, 5190]
 

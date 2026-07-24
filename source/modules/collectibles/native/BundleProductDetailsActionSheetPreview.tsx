@@ -1,10 +1,10 @@
-// Module ID: 8747
-// Function ID: 69173
+// Module ID: 8786
+// Function ID: 69388
 // Name: BundleThumbnail
-// Dependencies: [57, 31, 27, 655, 33, 4130, 689, 8748, 5217, 6786, 8749, 4126, 1212, 2]
+// Dependencies: [57, 31, 27, 655, 33, 4130, 689, 8787, 5217, 6786, 8788, 4126, 1212, 2]
 // Exports: default
 
-// Module 8747 (BundleThumbnail)
+// Module 8786 (BundleThumbnail)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -126,7 +126,7 @@ export default function BundleProductDetailsActionSheetPreview(onActiveItemChang
   obj = { skuId: tmp10.skuId, type: tmp10.type, items: items1 };
   items1 = [items[num]];
   obj = { style: tmp.previewContainer };
-  const items2 = [callback5(onTrackPress(8749).IndividualProductPreview, { product: obj, width, handlePreviewPress, onTrackPress }), ];
+  const items2 = [callback5(onTrackPress(8788).IndividualProductPreview, { product: obj, width, handlePreviewPress, onTrackPress }), ];
   const obj1 = { style: tmp.bundleContainer };
   const obj2 = { style: tmp.bundleInfoContainer };
   const items3 = [callback5(onTrackPress(4126).Text, { variant: "heading-xl/bold", children: product.name }), ];

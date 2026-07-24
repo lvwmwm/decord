@@ -1,10 +1,10 @@
-// Module ID: 9756
-// Function ID: 75900
+// Module ID: 9790
+// Function ID: 76112
 // Name: WishlistViewMoreCard
-// Dependencies: [31, 27, 33, 4130, 689, 1212, 9751, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 9785, 4126, 2]
 // Exports: default
 
-// Module 9756 (WishlistViewMoreCard)
+// Module 9790 (WishlistViewMoreCard)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function WishlistViewMoreCard(recipientName) {
   let obj = { onPress };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["8uYD+I"], { username: recipientName });
-  const items = [callback(importDefault(9751), { accessibilityHidden: true, sku, size, recipientName }), ];
+  const items = [callback(importDefault(9785), { accessibilityHidden: true, sku, size, recipientName }), ];
   obj = { style: callback3().moreOverlay };
   obj = { variant: "text-md/semibold", color: "text-overlay-light" };
   const intl2 = require(1212) /* getSystemLocale */.intl;

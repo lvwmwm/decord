@@ -1,9 +1,9 @@
-// Module ID: 10101
-// Function ID: 78212
+// Module ID: 10133
+// Function ID: 78406
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [31, 27, 7010, 33, 4130, 1457, 10102, 9122, 4543, 1212, 9139, 566, 5772, 7009, 2]
+// Dependencies: [31, 27, 7009, 33, 4130, 1457, 10134, 9158, 4543, 1212, 9175, 566, 5772, 7008, 2]
 
-// Module 10101 (ForumChannelCloseSearchButton)
+// Module 10133 (ForumChannelCloseSearchButton)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -49,7 +49,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
   let placeholder;
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
-  let obj = channelId(10102);
+  let obj = channelId(10134);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let tmp = callback();
   const items = [_isNativeReflectConstruct];

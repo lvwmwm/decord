@@ -1,9 +1,9 @@
-// Module ID: 9475
-// Function ID: 73807
+// Module ID: 9511
+// Function ID: 74016
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 653, 480, 5484, 1327, 1362, 675, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 653, 480, 5482, 1327, 1362, 675, 5078, 2]
 
-// Module 9475 (_createForOfIteratorHelperLoose)
+// Module 9511 (_createForOfIteratorHelperLoose)
 import isThrottled from "isThrottled";
 import QUICK_SWITCHER from "QUICK_SWITCHER";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -123,9 +123,9 @@ function getAnalyticsConfig(type) {
     const obj5 = { event: require(480) /* isThrottled */.ImpressionNames.VOICE_INVITE_EMBED };
     const obj6 = { impression_type: require(480) /* isThrottled */.ImpressionTypes.VIEW };
     ({ inviteCode: obj3.invite_code, inviteGuildId: obj3.invite_guild_id, inviteChannelId: obj3.invite_channel_id, inviteInstanceId: obj3.invite_instance_id, hasActiveStream: obj3.has_active_stream } = type);
-    const INVITE_EMBED = importDefault(5484).INVITE_EMBED;
+    const INVITE_EMBED = importDefault(5482).INVITE_EMBED;
     if (type.treatmentRendered) {
-      const items = [INVITE_EMBED, importDefault(5484).VOICE_CHANNEL_LIST_INVITE_EMBED];
+      const items = [INVITE_EMBED, importDefault(5482).VOICE_CHANNEL_LIST_INVITE_EMBED];
       let items1 = items;
     } else {
       items1 = [INVITE_EMBED];

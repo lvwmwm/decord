@@ -1,10 +1,10 @@
-// Module ID: 9339
-// Function ID: 72977
+// Module ID: 9375
+// Function ID: 73186
 // Name: ToastEmoji
 // Dependencies: [31, 4122, 1852, 33, 4130, 689, 477, 566, 1392, 5151, 4126, 1212, 4528, 3843, 3831, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9339 (ToastEmoji)
+// Module 9375 (ToastEmoji)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EMOJI_URL_BASE_SIZE } from "set";

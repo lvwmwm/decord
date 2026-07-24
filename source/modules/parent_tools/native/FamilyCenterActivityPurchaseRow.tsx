@@ -1,10 +1,10 @@
-// Module ID: 13804
-// Function ID: 105770
+// Module ID: 13855
+// Function ID: 106094
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [31, 27, 33, 4130, 689, 7857, 13805, 5618, 13806, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 7946, 13856, 5616, 13857, 4126, 2]
 // Exports: default
 
-// Module 13804 (FamilyCenterActivityPurchaseRow)
+// Module 13855 (FamilyCenterActivityPurchaseRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,8 +32,8 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   ({ skuId, subscriptionPlanId } = arg0);
   ({ total, currency } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
-  const product = importDefault(7857)(skuId).product;
-  let obj = require(13805) /* getCollectibleTypeName */;
+  const product = importDefault(7946)(skuId).product;
+  let obj = require(13856) /* getCollectibleTypeName */;
   let tmp2 = null;
   if (null != product) {
     tmp2 = product;
@@ -51,7 +51,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const obj7 = require(5618) /* formatSingleCurrencyPrice */;
+    const obj7 = require(5616) /* formatSingleCurrencyPrice */;
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -59,7 +59,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj = { style: tmp.container };
     obj = { displayName };
     let tmp12 = null;
-    const formatPriceResult = require(5618) /* formatSingleCurrencyPrice */.formatPrice(total, currency);
+    const formatPriceResult = require(5616) /* formatSingleCurrencyPrice */.formatPrice(total, currency);
     const tmp6 = callback2;
     const tmp7 = View;
     const tmp8 = callback;
@@ -69,7 +69,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj.product = tmp12;
     obj.isSubscription = isSubscription;
     obj.subscriptionPlanId = subscriptionPlanId;
-    const items = [tmp8(importDefault(13806), obj), ];
+    const items = [tmp8(importDefault(13857), obj), ];
     const obj1 = { style: tmp.textContainer };
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
     const items1 = [callback(require(4126) /* Text */.Text, obj2), ];

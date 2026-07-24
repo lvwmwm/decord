@@ -1,10 +1,10 @@
-// Module ID: 7092
-// Function ID: 56871
+// Module ID: 7091
+// Function ID: 56884
 // Name: GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH
-// Dependencies: [6859, 2]
+// Dependencies: [6858, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 7092 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
+// Module 7091 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
 const result = require("set").fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
 
 export const GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH = 100;
@@ -24,11 +24,11 @@ export const shouldSuppressAutocompleteFetch = function shouldSuppressAutocomple
   }
   return false;
 };
-export const normalizeGameAutocompleteQuery = function normalizeGameAutocompleteQuery(toLocaleLowerCase) {
-  if (null == toLocaleLowerCase) {
+export const normalizeGameAutocompleteQuery = function normalizeGameAutocompleteQuery(query) {
+  if (null == query) {
     return null;
   } else {
-    const formatted = toLocaleLowerCase.trim().toLowerCase();
+    const formatted = query.trim().toLowerCase();
     const replaced = formatted.replaceAll("_", " ");
     const substr = replaced.slice(0, 100);
     let tmp = null;
@@ -39,6 +39,6 @@ export const normalizeGameAutocompleteQuery = function normalizeGameAutocomplete
   }
 };
 export const isGameAutocompleteResultAllowedInGameWidgets = function isGameAutocompleteResultAllowedInGameWidgets(id) {
-  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(6859) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_BANNED_APPLICATION_IDS;
+  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(6858) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_BANNED_APPLICATION_IDS;
   return !GAME_WIDGET_BANNED_APPLICATION_IDS.has(id.id);
 };

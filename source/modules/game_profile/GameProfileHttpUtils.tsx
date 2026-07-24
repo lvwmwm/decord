@@ -1,10 +1,10 @@
-// Module ID: 8659
-// Function ID: 68522
+// Module ID: 8700
+// Function ID: 68742
 // Name: _getShopCollection
-// Dependencies: [5, 1921, 8596, 653, 8660, 686, 4369, 507, 566, 561, 664, 8654, 2]
+// Dependencies: [5, 1921, 8638, 653, 8701, 686, 4369, 507, 566, 561, 664, 8695, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 8659 (_getShopCollection)
+// Module 8700 (_getShopCollection)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import importDefaultResult from "_isNativeReflectConstruct";

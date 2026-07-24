@@ -1,5 +1,5 @@
 // Module ID: 6464
-// Function ID: 50650
+// Function ID: 50661
 // Name: ServerBannerDefaultExample
 // Dependencies: [33, 5085, 6465, 2]
 // Exports: ServerBannerDefaultExample

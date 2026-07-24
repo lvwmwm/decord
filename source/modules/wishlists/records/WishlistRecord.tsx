@@ -1,10 +1,10 @@
-// Module ID: 8678
-// Function ID: 68696
+// Module ID: 8719
+// Function ID: 68916
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1858, 4153, 8679, 8680, 8681, 8682, 653, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1858, 4153, 8720, 8721, 8722, 8723, 653, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 8678 (_isNativeReflectConstruct)
+// Module 8719 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

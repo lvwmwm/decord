@@ -1,10 +1,10 @@
-// Module ID: 10184
-// Function ID: 78667
+// Module ID: 10214
+// Function ID: 78858
 // Name: RolePill
-// Dependencies: [31, 27, 653, 33, 4130, 689, 3803, 5488, 5492, 3830, 4660, 5508, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 3803, 5486, 5490, 3830, 4660, 5506, 4126, 2]
 // Exports: default
 
-// Module 10184 (RolePill)
+// Module 10214 (RolePill)
 import "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -38,7 +38,7 @@ export default function RolePill(role) {
   ({ guildId, color } = role);
   const DeveloperMode = role(3803).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(5488);
+  let obj = role(5486);
   obj = { guildId, roleId: role.id, size: 12 };
   const roleIcon = obj.useRoleIcon(obj);
   let name = role.name;
@@ -85,9 +85,9 @@ export default function RolePill(role) {
     obj2.roleColor = tmp18;
     obj2.size = 14;
     obj2.displayRoleIcon = false;
-    let tmp11Result = callback(combined(5508), obj2);
+    let tmp11Result = callback(combined(5506), obj2);
     const tmp14 = callback;
-    const tmp17 = combined(5508);
+    const tmp17 = combined(5506);
   } else {
     const obj3 = {};
     const items = [tmp7.bubble, ];

@@ -1,9 +1,9 @@
-// Module ID: 10076
-// Function ID: 77776
+// Module ID: 10108
+// Function ID: 77970
 // Name: toAnalyticsSearchFilterType
-// Dependencies: [1348, 10077, 9133, 653, 10091, 10078, 4324, 491, 3803, 2]
+// Dependencies: [1348, 10109, 9169, 653, 10123, 10110, 4324, 491, 3803, 2]
 
-// Module 10076 (toAnalyticsSearchFilterType)
+// Module 10108 (toAnalyticsSearchFilterType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { SEARCH_HISTORY_TO_ANALYTICS_SEARCH_HISTORY as closure_5 } from "SearchEntrypointAnalyticsLocations";
@@ -39,17 +39,17 @@ export default {
     let searchContext;
     let searchLocation;
     ({ searchContext, searchLocation } = arg0);
-    let obj = importDefault(10091);
+    let obj = importDefault(10123);
     obj.initialize(searchContext, searchLocation);
-    const channelIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
+    const channelIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
     const channel = store.getChannel(channelIdFromSearchContext);
-    const obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+    const obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
     obj = {};
     const obj3 = importDefault(4324);
-    obj.search_session_id = importDefault(10091).getSessionId(searchContext);
+    obj.search_session_id = importDefault(10123).getSessionId(searchContext);
     obj.search_location = searchLocation;
-    const obj5 = importDefault(10091);
-    obj.guild_id = require(10078) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
+    const obj5 = importDefault(10123);
+    obj.guild_id = require(10110) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
     obj.channel_id = channelIdFromSearchContext;
     let type;
     if (null != channel) {
@@ -62,22 +62,22 @@ export default {
     searchContext = searchContext.searchContext;
     if (!store2.isInitialSearchQuery(searchContext)) {
       let type;
-      let obj = importDefault(10091);
+      let obj = importDefault(10123);
       obj.refreshQueryId(searchContext);
-      const channelIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
+      const channelIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
       const channel = store.getChannel(channelIdFromSearchContext);
-      const obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+      const obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
       const str = store2.getQueryString(searchContext);
       const str2 = store2.getTextInputValue(searchContext);
       obj = {};
       const obj3 = importDefault(4324);
-      obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-      const obj5 = importDefault(10091);
-      obj.search_query_id = importDefault(10091).getQueryId(searchContext);
-      const obj6 = importDefault(10091);
-      obj.search_location = importDefault(10091).getLocation(searchContext);
-      const obj7 = importDefault(10091);
-      obj.guild_id = require(10078) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
+      obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+      const obj5 = importDefault(10123);
+      obj.search_query_id = importDefault(10123).getQueryId(searchContext);
+      const obj6 = importDefault(10123);
+      obj.search_location = importDefault(10123).getLocation(searchContext);
+      const obj7 = importDefault(10123);
+      obj.guild_id = require(10110) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
       obj.channel_id = channelIdFromSearchContext;
       if (null != channel) {
         type = channel.type;
@@ -86,7 +86,7 @@ export default {
       obj.search_query_length = str.trim().length;
       obj.search_query_content_length = str2.trim().length;
       obj3.trackWithMetadata(closure_7.SEARCH_STARTED_MOBILE, obj);
-      const obj8 = require(10078) /* _createForOfIteratorHelperLoose */;
+      const obj8 = require(10110) /* _createForOfIteratorHelperLoose */;
     }
   },
   trackSearchResultClicked(arg0) {
@@ -99,27 +99,27 @@ export default {
     ({ searchContext, channelId } = arg0);
     ({ index, messageId, userId, entityType } = arg0);
     if (!store2.isInitialSearchQuery(searchContext)) {
-      let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+      let obj = require(10110) /* _createForOfIteratorHelperLoose */;
       const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
-      const channelIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
+      const channelIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
       const channel = store.getChannel(channelIdFromSearchContext);
       const channel1 = store.getChannel(channelId);
-      const obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+      const obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
       const str = store2.getQueryString(searchContext);
       const str2 = store2.getTextInputValue(searchContext);
       obj = {};
       const obj3 = importDefault(4324);
-      obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-      const obj5 = importDefault(10091);
-      obj.search_location = importDefault(10091).getLocation(searchContext);
-      const obj6 = importDefault(10091);
-      obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+      obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+      const obj5 = importDefault(10123);
+      obj.search_location = importDefault(10123).getLocation(searchContext);
+      const obj6 = importDefault(10123);
+      obj.search_query_id = importDefault(10123).getQueryId(searchContext);
       obj.search_query_length = str.trim().length;
       obj.search_query_content_length = str2.trim().length;
-      const obj7 = importDefault(10091);
-      obj.search_tab_selected = importDefault(10091).getSelectedTab(searchContext);
+      const obj7 = importDefault(10123);
+      obj.search_tab_selected = importDefault(10123).getSelectedTab(searchContext);
       obj.search_result_index = index;
-      const obj8 = importDefault(10091);
+      const obj8 = importDefault(10123);
       obj.search_result_click_id = require(491) /* v1 */.v4();
       obj.search_result_content_entity_type = entityType;
       obj.search_result_user_id = userId;
@@ -155,20 +155,20 @@ export default {
     ({ searchResultTotalCount, numMemberTabReturnedResults, numChannelTabReturnedResults, numPeopleTabReturnedResults, numMessageTabReturnedResults, numMediaTabReturnedResults, numFileTabReturnedResults, numLinkTabReturnedResults } = searchContext);
     if (!store2.isInitialSearchQuery(searchContext)) {
       let type;
-      let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+      let obj = require(10110) /* _createForOfIteratorHelperLoose */;
       const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
-      const channelIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
+      const channelIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
       const channel = store.getChannel(channelIdFromSearchContext);
-      const obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+      const obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
       const str = store2.getQueryString(searchContext);
       const str2 = store2.getTextInputValue(searchContext);
       obj = {};
       const obj3 = importDefault(4324);
-      obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-      const obj5 = importDefault(10091);
-      obj.search_location = importDefault(10091).getLocation(searchContext);
-      const obj6 = importDefault(10091);
-      obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+      obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+      const obj5 = importDefault(10123);
+      obj.search_location = importDefault(10123).getLocation(searchContext);
+      const obj6 = importDefault(10123);
+      obj.search_query_id = importDefault(10123).getQueryId(searchContext);
       obj.search_query_length = str.trim().length;
       obj.search_query_content_length = str2.trim().length;
       obj.search_result_total_count = searchResultTotalCount;
@@ -179,7 +179,7 @@ export default {
       obj.num_media_tab_returned_results = numMediaTabReturnedResults;
       obj.num_file_tab_returned_results = numFileTabReturnedResults;
       obj.num_link_tab_returned_results = numLinkTabReturnedResults;
-      const obj7 = importDefault(10091);
+      const obj7 = importDefault(10123);
       obj.exact_search_result_count_setting_enabled = require(3803) /* explicitContentFromProto */.SearchResultExactCountEnabled.getSetting();
       obj.guild_id = guildIdFromSearchContext;
       obj.channel_id = channelIdFromSearchContext;
@@ -195,20 +195,20 @@ export default {
     searchContext = searchContext.searchContext;
     if (!store2.isInitialSearchQuery(searchContext)) {
       let type;
-      let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+      let obj = require(10110) /* _createForOfIteratorHelperLoose */;
       const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
-      const channelIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
+      const channelIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
       const channel = store.getChannel(channelIdFromSearchContext);
-      const obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+      const obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
       const str = store2.getQueryString(searchContext);
       const str2 = store2.getTextInputValue(searchContext);
       obj = {};
       const obj3 = importDefault(4324);
-      obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-      const obj5 = importDefault(10091);
-      obj.search_location = importDefault(10091).getLocation(searchContext);
-      const obj6 = importDefault(10091);
-      obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+      obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+      const obj5 = importDefault(10123);
+      obj.search_location = importDefault(10123).getLocation(searchContext);
+      const obj6 = importDefault(10123);
+      obj.search_query_id = importDefault(10123).getQueryId(searchContext);
       obj.search_query_length = str.trim().length;
       obj.search_query_content_length = str2.trim().length;
       obj.guild_id = guildIdFromSearchContext;
@@ -218,27 +218,27 @@ export default {
       }
       obj.channel_type = type;
       obj3.trackWithMetadata(closure_7.SEARCH_EMPTY_RESULT_MOBILE, obj);
-      const obj7 = importDefault(10091);
+      const obj7 = importDefault(10123);
     }
   },
   trackSearchEmptyMessageResult(searchContext) {
     searchContext = searchContext.searchContext;
     if (!store2.isInitialSearchQuery(searchContext)) {
       let type;
-      let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+      let obj = require(10110) /* _createForOfIteratorHelperLoose */;
       const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
-      const channelIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
+      const channelIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getChannelIdFromSearchContext(searchContext);
       const channel = store.getChannel(channelIdFromSearchContext);
-      const obj2 = require(10078) /* _createForOfIteratorHelperLoose */;
+      const obj2 = require(10110) /* _createForOfIteratorHelperLoose */;
       const str = store2.getQueryString(searchContext);
       const str2 = store2.getTextInputValue(searchContext);
       obj = {};
       const obj3 = importDefault(4324);
-      obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-      const obj5 = importDefault(10091);
-      obj.search_location = importDefault(10091).getLocation(searchContext);
-      const obj6 = importDefault(10091);
-      obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+      obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+      const obj5 = importDefault(10123);
+      obj.search_location = importDefault(10123).getLocation(searchContext);
+      const obj6 = importDefault(10123);
+      obj.search_query_id = importDefault(10123).getQueryId(searchContext);
       obj.search_query_length = str.trim().length;
       obj.search_query_content_length = str2.trim().length;
       obj.guild_id = guildIdFromSearchContext;
@@ -248,11 +248,11 @@ export default {
       }
       obj.channel_type = type;
       obj3.trackWithMetadata(closure_7.SEARCH_EMPTY_MESSAGE_RESULT_MOBILE, obj);
-      const obj7 = importDefault(10091);
+      const obj7 = importDefault(10123);
     }
   },
   trackSearchClosed(searchContext) {
-    importDefault(10091).terminate(searchContext.searchContext);
+    importDefault(10123).terminate(searchContext.searchContext);
   },
   trackSearchIndexing(searchContext) {
     let documentsIndexed;
@@ -260,24 +260,24 @@ export default {
     searchContext = searchContext.searchContext;
     ({ isHistoricalIndexing, documentsIndexed } = searchContext);
     let obj = importDefault(4324);
-    obj = { is_historical_indexing: isHistoricalIndexing, documents_indexed: documentsIndexed, search_tab_selected: importDefault(10091).getSelectedTab(searchContext) };
-    const obj3 = importDefault(10091);
-    obj.search_location = importDefault(10091).getLocation(searchContext);
-    const obj4 = importDefault(10091);
-    obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-    const obj5 = importDefault(10091);
-    obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+    obj = { is_historical_indexing: isHistoricalIndexing, documents_indexed: documentsIndexed, search_tab_selected: importDefault(10123).getSelectedTab(searchContext) };
+    const obj3 = importDefault(10123);
+    obj.search_location = importDefault(10123).getLocation(searchContext);
+    const obj4 = importDefault(10123);
+    obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+    const obj5 = importDefault(10123);
+    obj.search_query_id = importDefault(10123).getQueryId(searchContext);
     obj.trackWithMetadata(closure_7.SEARCH_V2_INDEXING_VIEWED, obj);
   },
   trackSearchHistoryClicked(searchContext) {
     searchContext = searchContext.searchContext;
     const channel = store.getChannel(searchContext.channelId);
     let obj = importDefault(4324);
-    obj = { search_tab_selected: importDefault(10091).getSelectedTab(searchContext) };
-    const obj3 = importDefault(10091);
-    obj.search_location = importDefault(10091).getLocation(searchContext);
-    const obj4 = importDefault(10091);
-    obj.search_session_id = importDefault(10091).getSessionId(searchContext);
+    obj = { search_tab_selected: importDefault(10123).getSelectedTab(searchContext) };
+    const obj3 = importDefault(10123);
+    obj.search_location = importDefault(10123).getLocation(searchContext);
+    const obj4 = importDefault(10123);
+    obj.search_session_id = importDefault(10123).getSessionId(searchContext);
     let type;
     if (null != channel) {
       type = channel.type;
@@ -290,11 +290,11 @@ export default {
     searchContext = searchContext.searchContext;
     const channel = store.getChannel(searchContext.channelId);
     let obj = importDefault(4324);
-    obj = { search_tab_selected: importDefault(10091).getSelectedTab(searchContext) };
-    const obj3 = importDefault(10091);
-    obj.search_location = importDefault(10091).getLocation(searchContext);
-    const obj4 = importDefault(10091);
-    obj.search_session_id = importDefault(10091).getSessionId(searchContext);
+    obj = { search_tab_selected: importDefault(10123).getSelectedTab(searchContext) };
+    const obj3 = importDefault(10123);
+    obj.search_location = importDefault(10123).getLocation(searchContext);
+    const obj4 = importDefault(10123);
+    obj.search_session_id = importDefault(10123).getSessionId(searchContext);
     let type;
     if (null != channel) {
       type = channel.type;
@@ -308,13 +308,13 @@ export default {
     searchContext = searchContext.searchContext;
     ({ searchTokenType, location: _location } = searchContext);
     let obj = importDefault(4324);
-    obj = { search_tab_selected: importDefault(10091).getSelectedTab(searchContext) };
-    const obj3 = importDefault(10091);
-    obj.search_location = importDefault(10091).getLocation(searchContext);
-    const obj4 = importDefault(10091);
-    obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-    const obj5 = importDefault(10091);
-    obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+    obj = { search_tab_selected: importDefault(10123).getSelectedTab(searchContext) };
+    const obj3 = importDefault(10123);
+    obj.search_location = importDefault(10123).getLocation(searchContext);
+    const obj4 = importDefault(10123);
+    obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+    const obj5 = importDefault(10123);
+    obj.search_query_id = importDefault(10123).getQueryId(searchContext);
     obj.search_filter_type = toAnalyticsSearchFilterType(searchTokenType);
     obj.location = _location;
     obj.trackWithMetadata(closure_7.SEARCH_V2_FILTER_ADD, obj);
@@ -325,13 +325,13 @@ export default {
     searchContext = searchContext.searchContext;
     ({ searchTokenType, isDefault } = searchContext);
     let obj = importDefault(4324);
-    obj = { search_tab_selected: importDefault(10091).getSelectedTab(searchContext) };
-    const obj3 = importDefault(10091);
-    obj.search_location = importDefault(10091).getLocation(searchContext);
-    const obj4 = importDefault(10091);
-    obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-    const obj5 = importDefault(10091);
-    obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+    obj = { search_tab_selected: importDefault(10123).getSelectedTab(searchContext) };
+    const obj3 = importDefault(10123);
+    obj.search_location = importDefault(10123).getLocation(searchContext);
+    const obj4 = importDefault(10123);
+    obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+    const obj5 = importDefault(10123);
+    obj.search_query_id = importDefault(10123).getQueryId(searchContext);
     obj.search_filter_type = toAnalyticsSearchFilterType(searchTokenType);
     obj.is_default_search_filter = isDefault;
     obj.trackWithMetadata(closure_7.SEARCH_V2_FILTER_REMOVE, obj);
@@ -339,13 +339,13 @@ export default {
   trackSearchTabSelected(searchContext) {
     searchContext = searchContext.searchContext;
     let obj = importDefault(4324);
-    obj = { search_session_id: importDefault(10091).getSessionId(searchContext) };
-    const obj3 = importDefault(10091);
-    obj.search_query_id = importDefault(10091).getQueryId(searchContext);
-    const obj4 = importDefault(10091);
-    obj.search_tab_selected = importDefault(10091).getSelectedTab(searchContext);
-    const obj5 = importDefault(10091);
-    obj.search_location = importDefault(10091).getLocation(searchContext);
+    obj = { search_session_id: importDefault(10123).getSessionId(searchContext) };
+    const obj3 = importDefault(10123);
+    obj.search_query_id = importDefault(10123).getQueryId(searchContext);
+    const obj4 = importDefault(10123);
+    obj.search_tab_selected = importDefault(10123).getSelectedTab(searchContext);
+    const obj5 = importDefault(10123);
+    obj.search_location = importDefault(10123).getLocation(searchContext);
     obj.trackWithMetadata(closure_7.SEARCH_V2_TAB_SELECTED, obj);
   },
   trackSearchJumpToMessage(arg0) {
@@ -354,13 +354,13 @@ export default {
     ({ searchContext, channelId } = arg0);
     const channel = store.getChannel(channelId);
     let obj = importDefault(4324);
-    obj = { search_tab_selected: importDefault(10091).getSelectedTab(searchContext) };
-    const obj3 = importDefault(10091);
-    obj.search_location = importDefault(10091).getLocation(searchContext);
-    const obj4 = importDefault(10091);
-    obj.search_session_id = importDefault(10091).getSessionId(searchContext);
-    const obj5 = importDefault(10091);
-    obj.search_query_id = importDefault(10091).getQueryId(searchContext);
+    obj = { search_tab_selected: importDefault(10123).getSelectedTab(searchContext) };
+    const obj3 = importDefault(10123);
+    obj.search_location = importDefault(10123).getLocation(searchContext);
+    const obj4 = importDefault(10123);
+    obj.search_session_id = importDefault(10123).getSessionId(searchContext);
+    const obj5 = importDefault(10123);
+    obj.search_query_id = importDefault(10123).getQueryId(searchContext);
     let type;
     if (null != channel) {
       type = channel.type;

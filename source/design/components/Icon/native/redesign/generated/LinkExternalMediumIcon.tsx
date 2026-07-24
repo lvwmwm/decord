@@ -1,10 +1,10 @@
-// Module ID: 12344
-// Function ID: 96015
+// Module ID: 12371
+// Function ID: 96255
 // Name: LinkExternalMediumIcon
-// Dependencies: [31, 33, 689, 3833, 12345, 2]
+// Dependencies: [31, 33, 689, 3833, 12372, 2]
 // Exports: LinkExternalMediumIcon
 
-// Module 12344 (LinkExternalMediumIcon)
+// Module 12371 (LinkExternalMediumIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const LinkExternalMediumIcon = function LinkExternalMediumIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(12345) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(12372) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(12345) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(12372) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

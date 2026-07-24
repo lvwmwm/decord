@@ -1,10 +1,10 @@
-// Module ID: 7683
-// Function ID: 61370
+// Module ID: 7772
+// Function ID: 61656
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
 // Dependencies: [653, 1212, 1920, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 7683 (getPrivateChannelIntegrationAddedSystemMessageContent)
+// Module 7772 (getPrivateChannelIntegrationAddedSystemMessageContent)
 import ME from "ME";
 
 let closure_3;

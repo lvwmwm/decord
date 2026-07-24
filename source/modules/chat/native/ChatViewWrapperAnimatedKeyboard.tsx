@@ -1,10 +1,10 @@
-// Module ID: 10392
-// Function ID: 80109
+// Module ID: 10421
+// Function ID: 80301
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [31, 27, 33, 3991, 4134, 10393, 4131, 5163, 10397, 10399, 5449, 10400, 2]
+// Dependencies: [31, 27, 33, 3991, 4134, 10422, 4131, 5163, 10426, 10428, 5449, 10429, 2]
 // Exports: default
 
-// Module 10392 (ChatViewWrapperAnimatedKeyboard)
+// Module 10421 (ChatViewWrapperAnimatedKeyboard)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ let closure_12 = importAllResult.memo((channelId) => {
   const items = [tmp];
   let obj = {};
   const items1 = [
-    importDefault(10397)(channelId.channelId),
+    importDefault(10426)(channelId.channelId),
     importAllResult.useMemo(() => {
       const obj = { position: "absolute", bottom: -closure_0, height: closure_0, right: 0, left: 0 };
       return obj;
@@ -44,7 +44,7 @@ export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   let style;
   ({ channelId, style } = arg0);
   ({ children, stickyHeader } = arg0);
-  let tmp = importDefault(10399)(channelId);
+  let tmp = importDefault(10428)(channelId);
   let obj = {};
   obj = { header: stickyHeader, style, pointerEvents: tmp };
   obj = {
@@ -107,6 +107,6 @@ export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   let items = [callback(View, { style, children }), callback(closure_12, { channelId })];
   obj.children = items;
   obj.children = callback2(importDefault(3991).View, obj);
-  obj.children = callback(require(10400) /* StickyWrapper */.StickyWrapper, obj);
+  obj.children = callback(require(10429) /* StickyWrapper */.StickyWrapper, obj);
   return callback(require(5449) /* Layer */.LayerScope, obj);
 };

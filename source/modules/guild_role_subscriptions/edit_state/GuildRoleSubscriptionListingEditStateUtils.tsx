@@ -1,10 +1,10 @@
-// Module ID: 14116
-// Function ID: 108564
+// Module ID: 14166
+// Function ID: 108887
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 4991, 3752, 14117, 14094, 653, 1851, 566, 5450, 4369, 14118, 14119, 665, 3750, 14120, 14101, 14121, 682, 44, 5048, 5636, 22, 9391, 14122, 491, 2]
+// Dependencies: [5, 57, 31, 4991, 3752, 14167, 14144, 653, 1851, 566, 5450, 4369, 14168, 14169, 665, 3750, 14170, 14151, 14171, 682, 44, 5048, 5636, 22, 9427, 14172, 491, 2]
 // Exports: useApplicationId, useChannelAccessFormat, useChannelBenefits, useClearEditStateOnUnmount, useCreateOrUpdateListingFromEditState, useDescription, useEditStateIds, useHasChanges, useHasChangesForEditStateIds, useImage, useIntangibleBenefits, useName, usePriceTier, useRole, useRoleColor, useRoleIcon, useSubscriptionPlan, useTierEmojiIds, useTrialInterval, useTrialLimit
 
-// Module 14116 (_createForOfIteratorHelperLoose)
+// Module 14166 (_createForOfIteratorHelperLoose)
 import closure_4 from "AllChannelAccessOptions";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -266,7 +266,7 @@ export const useApplicationId = function useApplicationId(listingId) {
   });
 };
 export const useRoleIcon = function useRoleIcon(listingId) {
-  const tmp = importDefault(14118)(arg1, listingId);
+  const tmp = importDefault(14168)(arg1, listingId);
   const require = tmp;
   const items = [tmp];
   return useListingEditState(listingId, "roleIcon", React.useMemo(() => {
@@ -294,7 +294,7 @@ export const useRoleIcon = function useRoleIcon(listingId) {
 };
 export const useRole = function useRole(listingId, guildId) {
   let closure_0 = listingId;
-  const tmp = importDefault(14118)(guildId, listingId);
+  const tmp = importDefault(14168)(guildId, listingId);
   importDefault = tmp;
   const tmp2 = callback3((arg0) => {
     let roleColor;
@@ -344,7 +344,7 @@ export const useRole = function useRole(listingId, guildId) {
   }, items);
 };
 export const useRoleColor = function useRoleColor(editStateId, guildId) {
-  const tmp = importDefault(14118)(guildId, editStateId);
+  const tmp = importDefault(14168)(guildId, editStateId);
   const require = tmp;
   const items = [tmp];
   return useListingEditState(editStateId, "roleColor", React.useMemo(() => {
@@ -359,7 +359,7 @@ export const useRoleColor = function useRoleColor(editStateId, guildId) {
   }, items));
 };
 export const useChannelAccessFormat = function useChannelAccessFormat(editStateId, guildId) {
-  const tmp = importDefault(14118)(guildId, editStateId);
+  const tmp = importDefault(14168)(guildId, editStateId);
   const require = tmp;
   const items = [tmp];
   return useListingEditState(editStateId, "channelAccessFormat", React.useMemo(() => {
@@ -396,7 +396,7 @@ export const useIntangibleBenefits = function useIntangibleBenefits(listingId) {
 };
 export const useTierEmojiIds = function useTierEmojiIds(listingId, guildId) {
   const _require = guildId;
-  const tmp = importDefault(14118)(guildId, listingId);
+  const tmp = importDefault(14168)(guildId, listingId);
   importDefault = tmp;
   const items = [_isNativeReflectConstruct];
   const items1 = [guildId];
@@ -412,9 +412,9 @@ export const useTierEmojiIds = function useTierEmojiIds(listingId, guildId) {
   }, items2));
 };
 export const useTrialInterval = function useTrialInterval(editStateId) {
-  const subscriptionTrial = require(14101) /* _createForOfIteratorHelperLoose */.useSubscriptionTrial(editStateId);
+  const subscriptionTrial = require(14151) /* _createForOfIteratorHelperLoose */.useSubscriptionTrial(editStateId);
   let active_trial;
-  const obj = require(14101) /* _createForOfIteratorHelperLoose */;
+  const obj = require(14151) /* _createForOfIteratorHelperLoose */;
   if (null != subscriptionTrial) {
     active_trial = subscriptionTrial.active_trial;
   }
@@ -422,7 +422,7 @@ export const useTrialInterval = function useTrialInterval(editStateId) {
   if (null != active_trial) {
     tmp4 = active_trial;
   }
-  const selectedOption = importDefault(14121)(tmp4).selectedOption;
+  const selectedOption = importDefault(14171)(tmp4).selectedOption;
   let tmp6 = null;
   if (null != selectedOption) {
     tmp6 = selectedOption;
@@ -430,7 +430,7 @@ export const useTrialInterval = function useTrialInterval(editStateId) {
   return useListingEditState(editStateId, "trialInterval", tmp6);
 };
 export const useTrialLimit = function useTrialLimit(editStateId) {
-  const subscriptionTrial = require(14101) /* _createForOfIteratorHelperLoose */.useSubscriptionTrial(editStateId);
+  const subscriptionTrial = require(14151) /* _createForOfIteratorHelperLoose */.useSubscriptionTrial(editStateId);
   let prop;
   if (null != subscriptionTrial) {
     prop = subscriptionTrial.max_num_active_trial_users;
@@ -552,7 +552,7 @@ export const useEditStateIds = function useEditStateIds(groupListingId, guildId,
   let c2;
   let dependencyMap;
   let c4;
-  subscriptionListingsForGroup = _require(14101).useSubscriptionListingsForGroup(groupListingId, tmp);
+  subscriptionListingsForGroup = _require(14151).useSubscriptionListingsForGroup(groupListingId, tmp);
   const tmp3 = callback3((arg0) => arg0.editStateIdsForGroup[closure_0]);
   c2 = tmp3;
   const tmp4 = callback3((setEditStateIdsForGroup) => setEditStateIdsForGroup.setEditStateIdsForGroup);

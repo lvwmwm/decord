@@ -1,9 +1,9 @@
-// Module ID: 12746
-// Function ID: 99264
+// Module ID: 12797
+// Function ID: 99585
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 6985, 4206, 22, 12747, 6991, 4227, 4297, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 6984, 4206, 22, 12798, 6990, 4227, 4297, 2]
 
-// Module 12746 (_isNativeReflectConstruct)
+// Module 12797 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import sleep from "sleep";
@@ -29,7 +29,7 @@ function explodePlayoutMetrics(obj) {
     let obj2 = arg0[key10016];
     let tmp13 = require;
     let tmp14 = dependencyMap;
-    if (obj2 instanceof require(6985) /* _createForOfIteratorHelperLoose */.Histogram) {
+    if (obj2 instanceof require(6984) /* _createForOfIteratorHelperLoose */.Histogram) {
       let report = obj2.getReport([75, 95, 99]);
       let _Math = Math;
       let text = `${key10016}_mean`;

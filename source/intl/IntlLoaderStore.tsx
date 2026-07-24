@@ -1,5 +1,5 @@
 // Module ID: 1922
-// Function ID: 21750
+// Function ID: 21751
 // Name: _setAppLocale
 // Dependencies: [5, 677, 1923, 1212, 1933, 1250, 3204, 3679, 3710, 3712, 1184, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData

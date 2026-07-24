@@ -1,10 +1,10 @@
-// Module ID: 11161
-// Function ID: 86771
+// Module ID: 11191
+// Function ID: 87040
 // Name: useActivityShelfItemsSorting
-// Dependencies: [31, 1331, 8183, 477, 1881, 2]
+// Dependencies: [31, 1331, 8227, 477, 1881, 2]
 // Exports: default
 
-// Module 11161 (useActivityShelfItemsSorting)
+// Module 11191 (useActivityShelfItemsSorting)
 import result from "result";
 
 const require = arg1;

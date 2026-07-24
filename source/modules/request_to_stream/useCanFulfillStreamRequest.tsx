@@ -1,10 +1,10 @@
-// Module ID: 10918
-// Function ID: 84820
+// Module ID: 10945
+// Function ID: 85009
 // Name: canFulfillStreamRequest
-// Dependencies: [4150, 4149, 1194, 1348, 1838, 3758, 4217, 4202, 653, 10685, 477, 566, 2]
+// Dependencies: [4150, 4149, 1194, 1348, 1838, 3758, 4217, 4202, 653, 10714, 477, 566, 2]
 // Exports: default
 
-// Module 10918 (canFulfillStreamRequest)
+// Module 10945 (canFulfillStreamRequest)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

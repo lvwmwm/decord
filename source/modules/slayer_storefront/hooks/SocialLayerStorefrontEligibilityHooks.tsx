@@ -1,10 +1,10 @@
-// Module ID: 8689
-// Function ID: 68835
+// Module ID: 8730
+// Function ID: 69053
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [8690, 4150, 6856, 1838, 4217, 5613, 566, 8312, 8691, 2]
+// Dependencies: [8731, 4150, 6855, 1838, 4217, 5611, 566, 8356, 8732, 2]
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
 
-// Module 8689 (_createForOfIteratorHelperLoose)
+// Module 8730 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -135,7 +135,7 @@ function useUsersPlayingStorefrontEnabledGamesApplicationIds(userIds) {
     return items;
   }, items1);
   const obj = userIds(566);
-  const slayerStorefrontDevApplicationIdOverride = userIds(8691).useSlayerStorefrontDevApplicationIdOverride();
+  const slayerStorefrontDevApplicationIdOverride = userIds(8732).useSlayerStorefrontDevApplicationIdOverride();
   let tmp3 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {
     const items2 = [];

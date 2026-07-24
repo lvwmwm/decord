@@ -1,10 +1,10 @@
-// Module ID: 7955
-// Function ID: 63444
+// Module ID: 8042
+// Function ID: 63756
 // Name: convertThemeToProto
 // Dependencies: [5, 3942, 1279, 1278, 653, 1281, 1331, 1282, 1313, 686, 3803, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 7955 (convertThemeToProto)
+// Module 8042 (convertThemeToProto)
 import closure_3 from "SystemThemeState";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

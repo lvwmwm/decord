@@ -1,10 +1,10 @@
-// Module ID: 15433
-// Function ID: 118646
+// Module ID: 15480
+// Function ID: 118968
 // Name: RequestsSettingsModalButton
-// Dependencies: [31, 27, 33, 9113, 4130, 689, 9125, 9122, 11630, 1212, 15434, 6707, 5519, 15435, 15441, 15453, 15454, 15455, 15461, 15462, 15463, 15465, 15468, 15469, 3977, 1557, 3842, 2]
+// Dependencies: [31, 27, 33, 9149, 4130, 689, 9161, 9158, 11657, 1212, 15481, 6707, 5517, 15482, 15488, 15500, 15501, 15502, 15508, 15509, 15510, 15512, 15515, 15516, 3977, 1557, 3842, 2]
 // Exports: default
 
-// Module 15433 (RequestsSettingsModalButton)
+// Module 15480 (RequestsSettingsModalButton)
 import result from "result";
 import { View } from "set";
 import jsxProd from "jsxProd";
@@ -16,17 +16,17 @@ let closure_6;
 const require = arg1;
 function RequestsSettingsModalButton(onPress) {
   let obj = { isModal: true };
-  obj = { source: importDefault(11630), onPress: onPress.onPress };
+  obj = { source: importDefault(11657), onPress: onPress.onPress };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["3D5yo/"]);
-  obj.children = callback(require(9122) /* GenericHeaderTitle */.HeaderIconButton, obj);
-  return callback(importDefault(9125), obj);
+  obj.children = callback(require(9158) /* GenericHeaderTitle */.HeaderIconButton, obj);
+  return callback(importDefault(9161), obj);
 }
 function FriendsNavigator() {
   const _require = createNativeStackNavigator();
-  importDefault = importDefault(15434)();
+  importDefault = importDefault(15481)();
   const layoutEffect = React.useLayoutEffect(() => lib(6707).trackAppUIViewed(), []);
-  let obj = _require(5519);
+  let obj = _require(5517);
   const dependencyMap = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(arg0) {
@@ -71,8 +71,8 @@ function FriendsNavigator() {
           presentation2 = params3.presentation;
         }
         if ("card" !== presentation2) {
-          let renderModalCloseImage = lib(9122).getRenderModalCloseImage(navigation);
-          const obj3 = lib(9122);
+          let renderModalCloseImage = lib(9158).getRenderModalCloseImage(navigation);
+          const obj3 = lib(9158);
         }
         obj["headerLeft"] = renderModalCloseImage;
         const params4 = route.params;
@@ -84,7 +84,7 @@ function FriendsNavigator() {
         let merged1 = Object.assign(dependencyMap);
         return obj;
       }
-      renderModalCloseImage = lib(9122).getRenderModalBackImage(navigation);
+      renderModalCloseImage = lib(9158).getRenderModalBackImage(navigation);
     }
   };
   obj = {
@@ -102,12 +102,12 @@ function FriendsNavigator() {
         obj["onPress"] = function onPress() {
           return outer1_0.navigate("add-friends", { sourcePage: "Friends Screen Header" });
         };
-        return outer2_5(navigation(9122).HeaderTextButton, obj);
+        return outer2_5(navigation(9158).HeaderTextButton, obj);
       };
       return obj;
     },
     getComponent() {
-      return lib(15435).default;
+      return lib(15482).default;
     }
   };
   const items = [callback(createNativeStackNavigator.Screen, obj), , , , , , , , , , ];
@@ -117,7 +117,7 @@ function FriendsNavigator() {
   obj2.title = intl.string(_require(1212).t.jD1qzM);
   obj1.options = obj2;
   obj1.getComponent = function getComponent() {
-    return lib(15441).default;
+    return lib(15488).default;
   };
   items[1] = callback(createNativeStackNavigator.Screen, obj1);
   let obj3 = { name: "gdm" };
@@ -126,7 +126,7 @@ function FriendsNavigator() {
   obj4.title = intl2.string(_require(1212).t["3hF1W4"]);
   obj3.options = obj4;
   obj3.getComponent = function getComponent() {
-    return lib(15453).default;
+    return lib(15500).default;
   };
   items[2] = callback(createNativeStackNavigator.Screen, obj3);
   const obj5 = { name: "add-friend" };
@@ -135,7 +135,7 @@ function FriendsNavigator() {
   obj6.title = intl3.string(_require(1212).t.w5uwoI);
   obj5.options = obj6;
   obj5.getComponent = function getComponent() {
-    return lib(15454).default;
+    return lib(15501).default;
   };
   items[3] = callback(createNativeStackNavigator.Screen, obj5);
   const obj7 = { name: "add-friends" };
@@ -144,7 +144,7 @@ function FriendsNavigator() {
   obj8.title = intl4.string(_require(1212).t.zIJnA6);
   obj7.options = obj8;
   obj7.getComponent = function getComponent() {
-    return lib(15455).default;
+    return lib(15502).default;
   };
   items[4] = callback(createNativeStackNavigator.Screen, obj7);
   const obj9 = { name: "username-search" };
@@ -153,7 +153,7 @@ function FriendsNavigator() {
   obj10.title = intl5.string(_require(1212).t.QzVsOs);
   obj9.options = obj10;
   obj9.getComponent = function getComponent() {
-    return lib(15461).default;
+    return lib(15508).default;
   };
   items[5] = callback(createNativeStackNavigator.Screen, obj9);
   const obj11 = { name: "suggested-friends" };
@@ -162,7 +162,7 @@ function FriendsNavigator() {
   obj12.title = intl6.string(_require(1212).t["1uAmCw"]);
   obj11.options = obj12;
   obj11.getComponent = function getComponent() {
-    return lib(15462).default;
+    return lib(15509).default;
   };
   items[6] = callback(createNativeStackNavigator.Screen, obj11);
   const obj13 = { name: "requests-settings" };
@@ -171,7 +171,7 @@ function FriendsNavigator() {
   obj14.title = intl7.string(_require(1212).t.XT4hVl);
   obj13.options = obj14;
   obj13.getComponent = function getComponent() {
-    return lib(15463).default;
+    return lib(15510).default;
   };
   items[7] = callback(createNativeStackNavigator.Screen, obj13);
   items[8] = callback(createNativeStackNavigator.Screen, {
@@ -191,7 +191,7 @@ function FriendsNavigator() {
       return obj;
     },
     getComponent() {
-      return lib(15465).default;
+      return lib(15512).default;
     }
   });
   const obj16 = { name: "spam-requests" };
@@ -200,7 +200,7 @@ function FriendsNavigator() {
   obj17.title = intl8.string(_require(1212).t.oHVeHc);
   obj16.options = obj17;
   obj16.getComponent = function getComponent() {
-    return lib(15468).default;
+    return lib(15515).default;
   };
   items[9] = callback(createNativeStackNavigator.Screen, obj16);
   const obj18 = { name: "ignored-user-requests" };
@@ -209,7 +209,7 @@ function FriendsNavigator() {
   obj19.title = intl9.string(_require(1212).t.tFY5Zb);
   obj18.options = obj19;
   obj18.getComponent = function getComponent() {
-    return lib(15469).default;
+    return lib(15516).default;
   };
   items[10] = callback(createNativeStackNavigator.Screen, obj18);
   obj.children = items;

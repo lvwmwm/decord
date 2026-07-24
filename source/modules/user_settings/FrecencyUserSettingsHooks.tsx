@@ -1,10 +1,10 @@
-// Module ID: 9584
-// Function ID: 74677
+// Module ID: 9620
+// Function ID: 74888
 // Name: useFrecencySettings
 // Dependencies: [31, 1316, 1331, 566, 2]
 // Exports: useFrecencySettings
 
-// Module 9584 (useFrecencySettings)
+// Module 9620 (useFrecencySettings)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

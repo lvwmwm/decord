@@ -1,10 +1,10 @@
-// Module ID: 16451
-// Function ID: 128225
+// Module ID: 16498
+// Function ID: 128549
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5052, 14116, 5121, 8474, 4126, 1212, 1273, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5052, 14166, 5121, 8518, 4126, 1212, 1273, 2]
 // Exports: default
 
-// Module 16451 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 16498 (GuildRoleSubscriptionBenefitModalHeader)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -48,7 +48,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   canSave = canSave.canSave;
   ({ title, onSave, onClose, listingId } = canSave);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = importAll(14116);
+  let obj = importAll(14166);
   obj = { top: true, style: tmp.headerContainer };
   obj = { style: items, accessibilityRole: "button", onPress: onClose };
   items = [, ];
@@ -57,7 +57,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
   obj.children = callback2(require(4126) /* Text */.Text, obj1);
-  const items1 = [callback2(importDefault(8474), obj), , ];
+  const items1 = [callback2(importDefault(8518), obj), , ];
   const obj2 = { style: tmp.titleContainer };
   const items2 = [callback2(require(1273) /* Button */.LegacyText, { style: tmp.title, accessibilityRole: "header", children: title }), ];
   const obj4 = { style: tmp.subtitle, variant: "text-xs/medium", color: "text-default", children: callback(obj.useName(listingId), 1)[0] };
@@ -69,7 +69,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   ({ headerButtonContainer: arr4[0], headerButtonEnd: arr4[1] } = tmp);
   const obj3 = { style: tmp.title, accessibilityRole: "header", children: title };
   const tmp2 = callback3;
-  const tmp4 = importDefault(8474);
+  const tmp4 = importDefault(8518);
   const obj6 = {};
   const items4 = [tmp.headerButton, ];
   let disabledButton = !canSave;
@@ -81,7 +81,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj6.children = intl2.string(require(1212) /* getSystemLocale */.t["R3BPH+"]);
   obj5.children = callback2(require(1273) /* Button */.LegacyText, obj6);
-  items1[2] = callback2(importDefault(8474), obj5);
+  items1[2] = callback2(importDefault(8518), obj5);
   obj.children = items1;
   return tmp2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

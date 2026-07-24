@@ -1,10 +1,10 @@
-// Module ID: 15478
-// Function ID: 119159
+// Module ID: 15525
+// Function ID: 119481
 // Name: useHasSettingsBadge
-// Dependencies: [31, 27, 1849, 1345, 1851, 33, 4130, 478, 689, 1324, 12393, 6687, 3946, 1334, 566, 7887, 8236, 8240, 3976, 666, 3776, 15479, 10465, 15480, 15481, 10919, 4979, 15482, 13897, 1212, 15483, 15485, 7871, 5791, 15473, 4554, 2]
+// Dependencies: [31, 27, 1849, 1345, 1851, 33, 4130, 478, 689, 1324, 12451, 6687, 3946, 1334, 566, 7974, 8280, 8284, 3976, 666, 3776, 15526, 10494, 15527, 15528, 10946, 4979, 15529, 13948, 1212, 15530, 15532, 7486, 5791, 15520, 4554, 2]
 
-// Module 15478 (useHasSettingsBadge)
-import importAllResult from "module_15485";
+// Module 15525 (useHasSettingsBadge)
+import importAllResult from "module_15532";
 import get_ActivityIndicator from "str2";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -20,8 +20,8 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function useHasSettingsBadge() {
-  let tmp = require(12393) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
-  const obj = require(12393) /* useEligibleActiveOutboundPromotions */;
+  let tmp = require(12451) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
+  const obj = require(12451) /* useEligibleActiveOutboundPromotions */;
   const obj2 = require(6687) /* hasUserTrialOfferExpired */;
   const tmp2 = null != require(6687) /* hasUserTrialOfferExpired */.useTrialOffer(closure_9);
   const obj3 = require(3946) /* UNSAFE_isDismissibleContentDismissed */;

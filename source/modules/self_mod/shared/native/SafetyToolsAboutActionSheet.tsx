@@ -1,10 +1,10 @@
-// Module ID: 10155
-// Function ID: 78529
+// Module ID: 10187
+// Function ID: 78723
 // Name: SafetyToolsAboutScreen
-// Dependencies: [57, 31, 27, 10134, 653, 33, 4130, 689, 10128, 4098, 10131, 10132, 10156, 1212, 3830, 10141, 5459, 1920, 4543, 4126, 2]
+// Dependencies: [57, 31, 27, 10166, 653, 33, 4130, 689, 10160, 4098, 10163, 10164, 10188, 1212, 3830, 10173, 4126, 1920, 4543, 2]
 // Exports: default
 
-// Module 10155 (SafetyToolsAboutScreen)
+// Module 10187 (SafetyToolsAboutScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -88,7 +88,7 @@ export default function SafetyToolsAboutScreen(channelId) {
   let obj5 = recipientId(warningId[17]);
   obj2.learnMoreLink = obj5.getArticleURL(HelpdeskArticles.SAFETY_ALERTS);
   obj1.children = intl2.format(channelId(warningId[13]).t["njJ/Cg"], obj2);
-  const items2 = [callback(channelId(warningId[16]).TextWithIOSLinkWorkaround, obj1), ];
+  const items2 = [callback(channelId(warningId[16]).Text, obj1), ];
   const obj3 = { variant: "secondary", size: "lg", disabled: first };
   const intl3 = channelId(warningId[13]).intl;
   obj3.text = intl3.string(channelId(warningId[13]).t.Xb2REN);
@@ -101,11 +101,11 @@ export default function SafetyToolsAboutScreen(channelId) {
   obj5 = {
     reportFalsePositiveHook(children) {
       const obj = { variant: "text-sm/medium", color: "text-link", disabled: first, onPress: closure_7, children };
-      return outer1_8(channelId(warningId[19]).Text, obj, arg1);
+      return outer1_8(channelId(warningId[16]).Text, obj, arg1);
     }
   };
   obj4.children = intl4.format(channelId(warningId[13]).t["2uYViD"], obj5);
-  items3[1] = callback(channelId(warningId[19]).Text, obj4);
+  items3[1] = callback(channelId(warningId[16]).Text, obj4);
   obj.children = items3;
   return callback2(recipientId(warningId[15]), obj);
 };

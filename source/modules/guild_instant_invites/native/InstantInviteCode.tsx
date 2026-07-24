@@ -1,10 +1,10 @@
-// Module ID: 10178
-// Function ID: 78640
+// Module ID: 10208
+// Function ID: 78831
 // Name: InstantInviteDetails
-// Dependencies: [31, 27, 1352, 3767, 1849, 33, 4130, 689, 4593, 4638, 4541, 4126, 4320, 4094, 1212, 10166, 2]
+// Dependencies: [31, 27, 1352, 3767, 1849, 33, 4130, 689, 4593, 4638, 4541, 4126, 4320, 4094, 1212, 10196, 2]
 // Exports: default
 
-// Module 10178 (InstantInviteDetails)
+// Module 10208 (InstantInviteDetails)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { createChannelRecordFromInvite as closure_5 } from "_callSuper";

@@ -1,9 +1,9 @@
-// Module ID: 12834
-// Function ID: 99786
+// Module ID: 12885
+// Function ID: 100107
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 12834 (apexExperiment)
+// Module 12885 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: undefined, enableHardwareSilenceWarning: false };

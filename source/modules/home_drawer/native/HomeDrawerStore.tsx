@@ -1,9 +1,9 @@
-// Module ID: 14803
-// Function ID: 112922
+// Module ID: 14850
+// Function ID: 113243
 // Name: computeMaxX
 // Dependencies: [653, 677, 3991, 3743, 2]
 
-// Module 14803 (computeMaxX)
+// Module 14850 (computeMaxX)
 import { DM_WIDTH } from "ME";
 import useStoreWithEqualityFn from "useStoreWithEqualityFn";
 

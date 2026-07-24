@@ -1,10 +1,10 @@
-// Module ID: 10271
-// Function ID: 79350
+// Module ID: 10300
+// Function ID: 79541
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 653, 33, 4130, 3834, 689, 8018, 9851, 10272, 4317, 10274, 5679, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 3834, 689, 8063, 9883, 10301, 4317, 10303, 5679, 2]
 // Exports: usePreviewableMedia
 
-// Module 10271 (_createForOfIteratorHelperLoose)
+// Module 10300 (_createForOfIteratorHelperLoose)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -104,10 +104,10 @@ function VoiceMessageIcon() {
   const token1 = obj1.useToken(importDefault(689).colors.BACKGROUND_MOD_SUBTLE);
   obj = { width: "100%", height: "100%", viewBox: "0 0 64 61", fill: "none" };
   const tmp = callback3();
-  obj.children = callback(require(8018) /* inlineStyles */.Path, { d: "M22.2188 59.8545C19.5607 61.6263 16.0003 59.7208 16 56.5264V48C7.16344 48 2.5772e-07 40.8366 0 32V16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V32C64 40.8366 56.8366 48 48 48H40L22.2188 59.8545Z", fill: token, stroke: token1 });
-  const items = [callback(importDefault(8018), obj), ];
+  obj.children = callback(require(8063) /* inlineStyles */.Path, { d: "M22.2188 59.8545C19.5607 61.6263 16.0003 59.7208 16 56.5264V48C7.16344 48 2.5772e-07 40.8366 0 32V16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V32C64 40.8366 56.8366 48 48 48H40L22.2188 59.8545Z", fill: token, stroke: token1 });
+  const items = [callback(importDefault(8063), obj), ];
   obj1 = { style: tmp.voiceMessageIconOverlay };
-  const items1 = [callback(require(9851) /* CirclePlayIcon */.CirclePlayIcon, { size: "md", color: "background-brand", secondaryColor: "white" }), callback(require(10272) /* WaveformIcon */.WaveformIcon, { size: "md", color: "background-brand" })];
+  const items1 = [callback(require(9883) /* CirclePlayIcon */.CirclePlayIcon, { size: "md", color: "background-brand", secondaryColor: "white" }), callback(require(10301) /* WaveformIcon */.WaveformIcon, { size: "md", color: "background-brand" })];
   obj1.children = items1;
   items[1] = callback2(View, obj1);
   obj.children = items;
@@ -194,7 +194,7 @@ function getBasePreviewableMedia(arg0) {
                 let tmp18 = callback;
                 let tmp19 = require;
                 let tmp20 = dependencyMap;
-                obj2.icon = callback(require(9851) /* CirclePlayIcon */.CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+                obj2.icon = callback(require(9883) /* CirclePlayIcon */.CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
                 let str6 = null;
                 if (isForward) {
                   str6 = "forward";
@@ -213,7 +213,7 @@ function getBasePreviewableMedia(arg0) {
                 let obj3 = { size: "lg" };
                 let tmp15 = importDefault;
                 obj3.color = importDefault(689).colors.ICON_SUBTLE;
-                obj2.icon = callback(require(10274) /* FileIcon */.FileIcon, obj3);
+                obj2.icon = callback(require(10303) /* FileIcon */.FileIcon, obj3);
                 let str5 = null;
                 if (isForward) {
                   str5 = "forward";

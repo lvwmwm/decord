@@ -1,10 +1,10 @@
-// Module ID: 13673
-// Function ID: 104994
+// Module ID: 13724
+// Function ID: 105318
 // Name: SettingsAgeGroupHeader
-// Dependencies: [31, 27, 7662, 653, 33, 4130, 689, 7536, 1920, 4126, 1212, 2716, 10095, 13550, 2]
+// Dependencies: [31, 27, 7751, 653, 33, 4130, 689, 7581, 1920, 4126, 1212, 2716, 10127, 13601, 2]
 // Exports: default
 
-// Module 13673 (SettingsAgeGroupHeader)
+// Module 13724 (SettingsAgeGroupHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { MobileSetting } from "MobileSetting";
@@ -54,5 +54,5 @@ export default function SettingsAgeGroupScreen() {
     obj.ListHeaderComponent = outer1_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13550), { node });
+  return callback(importDefault(13601), { node });
 };

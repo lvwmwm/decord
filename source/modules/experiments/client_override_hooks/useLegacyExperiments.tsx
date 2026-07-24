@@ -1,10 +1,10 @@
-// Module ID: 10461
-// Function ID: 80750
+// Module ID: 10490
+// Function ID: 80942
 // Name: bucketVariantType
-// Dependencies: [57, 31, 4044, 4045, 7784, 4052, 7782, 566, 2]
+// Dependencies: [57, 31, 4044, 4045, 7875, 4052, 7873, 566, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 10461 (bucketVariantType)
+// Module 10490 (bucketVariantType)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -15,11 +15,11 @@ let closure_7;
 const require = arg1;
 function bucketVariantType(arg0) {
   if (arg0 === constants.CONTROL) {
-    let TREATMENT = require(7784) /* _callSuper */.Variation_Type.CONTROL;
+    let TREATMENT = require(7875) /* _callSuper */.Variation_Type.CONTROL;
   } else if (arg0 === constants.NOT_ELIGIBLE) {
-    TREATMENT = require(7784) /* _callSuper */.Variation_Type.UNSPECIFIED;
+    TREATMENT = require(7875) /* _callSuper */.Variation_Type.UNSPECIFIED;
   } else {
-    TREATMENT = require(7784) /* _callSuper */.Variation_Type.TREATMENT;
+    TREATMENT = require(7875) /* _callSuper */.Variation_Type.TREATMENT;
   }
   return TREATMENT;
 }

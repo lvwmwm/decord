@@ -1,10 +1,10 @@
-// Module ID: 15142
-// Function ID: 115365
+// Module ID: 15189
+// Function ID: 115687
 // Name: set
-// Dependencies: [31, 6883, 5470, 2]
+// Dependencies: [31, 6882, 5468, 2]
 // Exports: useGetOrFetchNotificationCenterItemsApplications
 
-// Module 15142 (set)
+// Module 15189 (set)
 import result from "result";
 import set from "useGetOrFetchApplications";
 
@@ -33,5 +33,5 @@ export const useGetOrFetchNotificationCenterItemsApplications = function useGetO
     });
     return items;
   }, items);
-  return importDefault(5470)(memo);
+  return importDefault(5468)(memo);
 };

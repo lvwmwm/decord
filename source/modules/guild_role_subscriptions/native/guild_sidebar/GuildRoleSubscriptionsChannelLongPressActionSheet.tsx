@@ -1,10 +1,10 @@
-// Module ID: 15031
-// Function ID: 114508
+// Module ID: 15078
+// Function ID: 114829
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [31, 27, 1355, 33, 4130, 689, 5500, 5186, 1273, 10113, 1212, 7495, 14961, 10199, 2]
+// Dependencies: [31, 27, 1355, 33, 4130, 689, 5498, 5186, 1273, 10145, 1212, 7636, 15008, 10229, 2]
 // Exports: default
 
-// Module 15031 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 15078 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { StaticChannelRoute } from "set";
@@ -28,24 +28,24 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   let obj = {};
   obj = {};
   obj = { style: _createForOfIteratorHelperLoose().headerIcon };
-  const obj1 = { disableColor: true, source: importDefault(10113) };
+  const obj1 = { disableColor: true, source: importDefault(10145) };
   obj.children = callback(require(1273) /* Button */.Icon, obj1);
   obj.leading = callback(View, obj);
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t["KzCF/6"]);
   const items = [callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
   const obj2 = {};
-  const obj3 = { source: importDefault(14961) };
+  const obj3 = { source: importDefault(15008) };
   obj2.leading = callback(require(1273) /* Button */.Icon, obj3);
   const obj4 = {};
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj4.text = intl2.string(require(1212) /* getSystemLocale */.t.WqhZss);
-  obj2.label = callback(require(7495) /* Form */.FormLabel, obj4);
+  obj2.label = callback(require(7636) /* Form */.FormLabel, obj4);
   obj2.onPress = function onPress() {
     callback();
     const result = outer1_0(outer1_2[13]).copyGuildChannelOrThreadLink(closure_0, outer1_4.ROLE_SUBSCRIPTIONS);
   };
-  items[1] = callback(require(7495) /* Form */.FormRow, obj2);
+  items[1] = callback(require(7636) /* Form */.FormRow, obj2);
   obj.children = items;
-  return callback2(require(5500) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5498) /* ActionSheet */.ActionSheet, obj);
 };

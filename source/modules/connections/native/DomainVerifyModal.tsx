@@ -1,10 +1,10 @@
-// Module ID: 8999
-// Function ID: 70850
+// Module ID: 9038
+// Function ID: 71065
 // Name: DomainScreen
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1456, 507, 5121, 4126, 1212, 9000, 9005, 4543, 4337, 5087, 5519, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 1456, 507, 5121, 4126, 1212, 9039, 9044, 4543, 4337, 5087, 5517, 2]
 // Exports: default
 
-// Module 8999 (DomainScreen)
+// Module 9038 (DomainScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -239,7 +239,7 @@ function HTTPProofScreen(proof) {
   obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.GL3q7k);
   const items1 = [callback2(require(4126) /* Text */.Text, obj2), , , ];
   const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code };
-  let obj6 = require(9005) /* EXAMPLE_DOMAIN */;
+  let obj6 = require(9044) /* EXAMPLE_DOMAIN */;
   obj3.children = obj6.getHttpName(domain);
   items1[1] = callback2(require(4126) /* Text */.Text, obj3);
   const obj4 = { variant: "text-md/normal" };
@@ -369,6 +369,6 @@ export default function DomainVerifyModal(arg0) {
     obj2 = { screens: obj, initialRouteName: constants.DOMAIN };
     const intl4 = onClose(1212).intl;
     obj2.headerBackTitle = intl4.string(onClose(1212).t["13/7kX"]);
-    return callback2(onClose(5519).Navigator, obj2);
+    return callback2(onClose(5517).Navigator, obj2);
   }
 };

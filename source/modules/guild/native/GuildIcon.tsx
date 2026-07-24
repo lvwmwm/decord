@@ -1,9 +1,9 @@
-// Module ID: 5515
-// Function ID: 46958
+// Module ID: 5513
+// Function ID: 46955
 // Name: makeSizeStyle
-// Dependencies: [57, 31, 5516, 1391, 653, 33, 4130, 689, 1832, 5122, 5085, 5517, 290, 2]
+// Dependencies: [57, 31, 5514, 1391, 653, 33, 4130, 689, 1832, 5122, 5085, 5515, 290, 2]
 
-// Module 5515 (makeSizeStyle)
+// Module 5513 (makeSizeStyle)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { ExpressionSourceGuildRecord as closure_5 } from "_callSuper";

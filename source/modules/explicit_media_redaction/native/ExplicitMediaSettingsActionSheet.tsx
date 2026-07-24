@@ -1,10 +1,10 @@
-// Module ID: 13725
-// Function ID: 105271
+// Module ID: 13776
+// Function ID: 105595
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [31, 27, 33, 4130, 689, 4098, 5187, 5186, 7519, 1282, 7518, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4098, 5187, 5186, 7654, 1282, 7653, 2]
 // Exports: default
 
-// Module 13725 (ExplicitMediaSettingsActionSheet)
+// Module 13776 (ExplicitMediaSettingsActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -47,7 +47,7 @@ export default function ExplicitMediaSettingsActionSheet(options) {
   obj.onChange = callback;
   obj.hasIcons = false;
   obj.children = options.map((label) => outer1_5(options(outer1_2[10]).TableRadioRow, { label: label.label, value: label.value }, label.value));
-  obj.children = callback(options(7519).TableRadioGroup, obj);
+  obj.children = callback(options(7654).TableRadioGroup, obj);
   items1[1] = callback(View, obj);
   obj.children = items1;
   return closure_6(options(5187).BottomSheet, obj);

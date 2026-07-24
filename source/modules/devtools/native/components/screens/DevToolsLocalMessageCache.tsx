@@ -1,10 +1,10 @@
-// Module ID: 13517
-// Function ID: 104024
+// Module ID: 13570
+// Function ID: 104351
 // Name: CacheLogEntry
-// Dependencies: [27, 1348, 33, 4130, 689, 5165, 4541, 5503, 6720, 4126, 2]
+// Dependencies: [27, 1348, 33, 4130, 689, 5165, 4541, 5501, 6720, 4126, 2]
 // Exports: default
 
-// Module 13517 (CacheLogEntry)
+// Module 13570 (CacheLogEntry)
 import { ScrollView } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -85,12 +85,12 @@ export default function DevToolsLocalMessageCache() {
   const obj4 = { label: "Incomplete Fetches", subLabel: importDefault(6720).channelsFetchStarted.size - importDefault(6720).channelsFetchedNetwork.size };
   items[3] = callback(require(5165) /* TableRowInner */.TableRow, obj4);
   obj.children = items;
-  const items1 = [callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(4126) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
+  const items1 = [callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(4126) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
   const obj5 = { title: "Fetch Log (Reversed)", hasIcons: false };
   const fetchLogs = importDefault(6720).fetchLogs;
   const reversed = Array.from(fetchLogs.values()).reverse();
   obj5.children = reversed.map((entry) => outer1_5(outer1_8, { entry }, arg1));
-  items1[2] = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj5);
+  items1[2] = callback(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj5);
   obj.children = items1;
   obj.children = callback2(require(4541) /* Stack */.Stack, obj);
   return callback(ScrollView, obj);

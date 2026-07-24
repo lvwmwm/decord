@@ -1,10 +1,10 @@
-// Module ID: 13778
-// Function ID: 105641
+// Module ID: 13829
+// Function ID: 105965
 // Name: FamilyCenterActivityBannerButton
-// Dependencies: [31, 27, 33, 4130, 7123, 7124, 13779, 689, 11064, 1212, 2198, 13786, 13787, 4126, 5459, 2]
+// Dependencies: [31, 27, 33, 4130, 7122, 7123, 13830, 689, 11091, 1212, 2198, 13837, 13838, 4126, 2]
 // Exports: default
 
-// Module 13778 (FamilyCenterActivityBannerButton)
+// Module 13829 (FamilyCenterActivityBannerButton)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,9 +17,9 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function FamilyCenterActivityBannerButton() {
-  let obj = require(7123) /* useUserIdsForLinkStatus */;
+  let obj = require(7122) /* useUserIdsForLinkStatus */;
   const hasActiveLinks = obj.useHasActiveLinks();
-  const tmp3 = importDefault(7124)();
+  const tmp3 = importDefault(7123)();
   const tmp = callback2();
   let tmp4 = null;
   if (!obj2.useHasMaxConnections()) {
@@ -27,7 +27,7 @@ function FamilyCenterActivityBannerButton() {
       tmp4 = null;
     }
     obj = { style: tmp.container };
-    let tmp7Result = require(13779) /* FamilyCenterTeenQRCodeButtonInner */;
+    let tmp7Result = require(13830) /* FamilyCenterTeenQRCodeButtonInner */;
     tmp7Result = closure_5(tmp3 ? tmp7Result.FamilyCenterParentQRCodeButton : tmp7Result.FamilyCenterTeenQRCodeButton, {});
     obj.children = tmp7Result;
     closure_5(closure_3, obj);
@@ -53,15 +53,15 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityBanner() {
   const tmp3 = _createForOfIteratorHelperLoose();
-  let obj = require(7123) /* useUserIdsForLinkStatus */;
+  let obj = require(7122) /* useUserIdsForLinkStatus */;
   const hasMaxConnections = obj.useHasMaxConnections();
-  let obj1 = require(11064) /* useAgeSpecificText */;
+  let obj1 = require(11091) /* useAgeSpecificText */;
   const intl = require(1212) /* getSystemLocale */.intl;
   const tmp = importDefault;
-  const tmp2 = importDefault(7124)();
+  const tmp2 = importDefault(7123)();
   const intl2 = require(1212) /* getSystemLocale */.intl;
   const ageSpecificText = obj1.useAgeSpecificText(intl.string(importDefault(2198)["T7GyW+"]), intl2.string(importDefault(2198).goKE2b));
-  let obj2 = require(11064) /* useAgeSpecificText */;
+  let obj2 = require(11091) /* useAgeSpecificText */;
   const intl3 = require(1212) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2198)["T7GyW+"]);
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -69,9 +69,9 @@ export default function FamilyCenterActivityBanner() {
   obj = {};
   const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(importDefault(2198).MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(importDefault(2198).EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
   if (tmp2) {
-    let tmp14 = 13786;
+    let tmp14 = 13837;
   } else {
-    tmp14 = 13787;
+    tmp14 = 13838;
   }
   obj.source = tmp(tmp14);
   obj.style = tmp3.art;
@@ -79,7 +79,7 @@ export default function FamilyCenterActivityBanner() {
   obj1 = { style: tmp3.header, variant: "heading-lg/semibold", children: ageSpecificText };
   items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj2 = { style: tmp3.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-  items[2] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj2);
+  items[2] = callback(require(4126) /* Text */.Text, obj2);
   let tmp15 = null;
   if (!hasMaxConnections) {
     tmp15 = callback(FamilyCenterActivityBannerButton, {});

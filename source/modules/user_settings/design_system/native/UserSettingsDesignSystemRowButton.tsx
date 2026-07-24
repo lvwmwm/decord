@@ -1,10 +1,10 @@
-// Module ID: 14429
-// Function ID: 110290
+// Module ID: 14479
+// Function ID: 110613
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [31, 27, 33, 7495, 4541, 689, 4126, 7498, 5792, 2]
+// Dependencies: [31, 27, 33, 7636, 4541, 689, 4126, 7639, 5792, 2]
 // Exports: default
 
-// Module 14429 (UserSettingsDesignSystemRowButton)
+// Module 14479 (UserSettingsDesignSystemRowButton)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function UserSettingsDesignSystemRowButton() {
   obj.children = items;
   obj.description = callback2(require(4541) /* Stack */.Stack, obj);
   obj.children = callback(closure_3, {});
-  const items1 = [callback(require(7495) /* Form */.FormSection, obj), ];
+  const items1 = [callback(require(7636) /* Form */.FormSection, obj), ];
   const obj2 = { style: { padding: 16 } };
   const obj3 = {};
   const obj4 = {
@@ -39,7 +39,7 @@ export default function UserSettingsDesignSystemRowButton() {
 
     }
   };
-  const items2 = [callback(require(7498) /* RowButtonWrapper */.RowButton, obj4), , , , , , ];
+  const items2 = [callback(require(7639) /* RowButtonWrapper */.RowButton, obj4), , , , , , ];
   const obj5 = {
     variant: "primary",
     icon: importDefault(5792),
@@ -49,7 +49,7 @@ export default function UserSettingsDesignSystemRowButton() {
 
     }
   };
-  items2[1] = callback(require(7498) /* RowButtonWrapper */.RowButton, obj5);
+  items2[1] = callback(require(7639) /* RowButtonWrapper */.RowButton, obj5);
   const obj6 = {
     variant: "secondary",
     icon: importDefault(5792),
@@ -58,7 +58,7 @@ export default function UserSettingsDesignSystemRowButton() {
 
     }
   };
-  items2[2] = callback(require(7498) /* RowButtonWrapper */.RowButton, obj6);
+  items2[2] = callback(require(7639) /* RowButtonWrapper */.RowButton, obj6);
   const obj7 = {
     icon: importDefault(5792),
     label: "Secondary Row Button",
@@ -67,7 +67,7 @@ export default function UserSettingsDesignSystemRowButton() {
 
     }
   };
-  items2[3] = callback(require(7498) /* RowButtonWrapper */.RowButton, obj7);
+  items2[3] = callback(require(7639) /* RowButtonWrapper */.RowButton, obj7);
   const obj8 = {
     icon: importDefault(5792),
     label: "Secondary Row Button",
@@ -76,14 +76,14 @@ export default function UserSettingsDesignSystemRowButton() {
 
     }
   };
-  items2[4] = callback(require(7498) /* RowButtonWrapper */.RowButton, obj8);
+  items2[4] = callback(require(7639) /* RowButtonWrapper */.RowButton, obj8);
   const obj9 = { icon: null, label: "Row Button", subLabel: "With a custom RowButton.Icon" };
   const obj10 = { source: importDefault(5792) };
-  obj9.icon = callback(require(7498) /* RowButtonWrapper */.RowButton.Icon, obj10);
+  obj9.icon = callback(require(7639) /* RowButtonWrapper */.RowButton.Icon, obj10);
   obj9.onPress = function onPress() {
 
   };
-  items2[5] = callback(require(7498) /* RowButtonWrapper */.RowButton, obj9);
+  items2[5] = callback(require(7639) /* RowButtonWrapper */.RowButton, obj9);
   const obj11 = {
     icon: importDefault(5792),
     label: "Row Button",
@@ -93,7 +93,7 @@ export default function UserSettingsDesignSystemRowButton() {
     },
     disabled: true
   };
-  items2[6] = callback(require(7498) /* RowButtonWrapper */.RowButton, obj11);
+  items2[6] = callback(require(7639) /* RowButtonWrapper */.RowButton, obj11);
   obj3.children = items2;
   obj2.children = callback2(require(4541) /* Stack */.Stack, obj3);
   items1[1] = callback(closure_3, obj2);

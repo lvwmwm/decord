@@ -1,9 +1,9 @@
-// Module ID: 10080
-// Function ID: 77979
+// Module ID: 10112
+// Function ID: 78173
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1917, 1838, 1906, 3970, 1849, 653, 5043, 10078, 7098, 3969, 4276, 5047, 4974, 10079, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1917, 1838, 1906, 3970, 1849, 653, 5043, 10110, 7097, 3969, 4276, 5047, 4974, 10111, 566, 686, 2]
 
-// Module 10080 (_isNativeReflectConstruct)
+// Module 10112 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import conceal from "conceal";
@@ -110,13 +110,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getOrCreateUserSearchContext(searchContext) {
-  let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10110) /* _createForOfIteratorHelperLoose */;
   const searchContextId = obj.getSearchContextId(searchContext);
   let value = map1.get(searchContextId);
   if (null == value) {
-    obj = { results: [], context: importDefault(7098).getUserSearchContext(handleUserSearchResults.bind(null, searchContext)) };
+    obj = { results: [], context: importDefault(7097).getUserSearchContext(handleUserSearchResults.bind(null, searchContext)) };
     value = obj;
-    const obj3 = importDefault(7098);
+    const obj3 = importDefault(7097);
   }
   const result = map1.set(searchContextId, value);
   return value;
@@ -153,7 +153,7 @@ function isUserAutocompleteMode(autocompleteMode) {
 function handleUserSearchResults(searchContext, results) {
   let mode;
   let tokens;
-  let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10110) /* _createForOfIteratorHelperLoose */;
   const searchContextId = obj.getSearchContextId(searchContext);
   let value = map1.get(searchContextId);
   value = map.get(searchContextId);
@@ -205,8 +205,8 @@ function handleUserSearchResults(searchContext, results) {
 function setSelectedSearchContext(searchContext) {
   if (!importDefault(4276)(closure_18, searchContext)) {
     closure_18 = searchContext;
-    require(10078) /* _createForOfIteratorHelperLoose */.clearTokenCache();
-    const obj = require(10078) /* _createForOfIteratorHelperLoose */;
+    require(10110) /* _createForOfIteratorHelperLoose */.clearTokenCache();
+    const obj = require(10110) /* _createForOfIteratorHelperLoose */;
   }
 }
 function getAutocompleteList(searchContext, autocompleteMode, tokens) {
@@ -305,12 +305,12 @@ function getAutocompleteList(searchContext, autocompleteMode, tokens) {
   }
 }
 function handleChannelCreateOrDelete() {
-  require(10078) /* _createForOfIteratorHelperLoose */.clearTokenCache();
+  require(10110) /* _createForOfIteratorHelperLoose */.clearTokenCache();
 }
 function rebuildAutocompleteResults(c18) {
   let mode;
   let tokens;
-  let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10110) /* _createForOfIteratorHelperLoose */;
   const searchContextId = obj.getSearchContextId(c18);
   const value = map.get(searchContextId);
   if (null == value) {
@@ -401,11 +401,11 @@ tmp6 = new tmp6(require("dispatcher"), {
     let tokens;
     ({ searchContext, tokens, cursorScope } = arg0);
     setSelectedSearchContext(searchContext);
-    let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+    let obj = require(10110) /* _createForOfIteratorHelperLoose */;
     const queryFromTokens = obj.getQueryFromTokens(tokens);
-    let obj1 = require(10078) /* _createForOfIteratorHelperLoose */;
+    let obj1 = require(10110) /* _createForOfIteratorHelperLoose */;
     const autocompleteMode = obj1.getAutocompleteMode(cursorScope, tokens);
-    const searchContextId = require(10078) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
+    const searchContextId = require(10110) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
     let value = map.get(searchContextId);
     if (null != value) {
       if (queryFromTokens === value.query) {
@@ -428,7 +428,7 @@ tmp6 = new tmp6(require("dispatcher"), {
       }
       if (null != trimmed) {
         if (trimmed.length > 0) {
-          const guildIdFromSearchContext = require(10078) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
+          const guildIdFromSearchContext = require(10110) /* _createForOfIteratorHelperLoose */.getGuildIdFromSearchContext(searchContext);
           if (null != guildIdFromSearchContext) {
             const members = importDefault(5047).requestMembers(guildIdFromSearchContext, trimmed, c22);
             const obj5 = importDefault(5047);
@@ -442,7 +442,7 @@ tmp6 = new tmp6(require("dispatcher"), {
           }
           obj1.guild = tmp21;
           obj.filters = obj1;
-          const obj4 = require(10078) /* _createForOfIteratorHelperLoose */;
+          const obj4 = require(10110) /* _createForOfIteratorHelperLoose */;
           obj.boosters = require(4974) /* _createForOfIteratorHelperLoose */.getBoosterMap(AutocompleterResultTypes.USER);
           context3.setQuery(obj);
           autocompletes = undefined;
@@ -471,7 +471,7 @@ tmp6 = new tmp6(require("dispatcher"), {
       flag = true;
     }
   },
-  SEARCH_EDITOR_STATE_CLEAR: function handleSearchEditorStateClear(id) {
+  SEARCH_QUERY_TEXT_CLEAR: function handleSearchQueryTextClear(id) {
     id = id.id;
     const value = map1.get(id);
     if (null != value) {

@@ -1,10 +1,10 @@
-// Module ID: 11714
-// Function ID: 90947
+// Module ID: 11741
+// Function ID: 91185
 // Name: headerTitle
-// Dependencies: [5, 57, 31, 27, 1849, 6651, 11706, 11707, 653, 4344, 33, 4130, 689, 5084, 11705, 4126, 1212, 11709, 11715, 1557, 1456, 566, 11713, 477, 668, 675, 4098, 11716, 1934, 4675, 4662, 11717, 11718, 11721, 11724, 11725, 11726, 11727, 11729, 480, 5087, 11731, 11732, 5519, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 6651, 11733, 11734, 653, 4344, 33, 4130, 689, 5084, 11732, 4126, 1212, 11736, 11742, 1557, 1456, 566, 11740, 477, 668, 675, 4098, 11743, 1934, 4675, 4662, 11744, 11745, 11748, 11751, 11752, 11753, 11754, 11756, 480, 5087, 11758, 11759, 5517, 2]
 // Exports: ContactSyncOnboardingModal
 
-// Module 11714 (headerTitle)
+// Module 11741 (headerTitle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import NewUserPermissionsOnboarding from "NewUserPermissionsOnboarding";
@@ -38,7 +38,7 @@ function OnboardingTrailingLanding() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = {};
   const tmp = _createForOfIteratorHelperLoose();
-  obj.learnMoreUrl = require(11709) /* isContactSyncAvailable */.getOpenLearnMoreUrl();
+  obj.learnMoreUrl = require(11736) /* isContactSyncAvailable */.getOpenLearnMoreUrl();
   obj.children = intl.format(require(1212) /* getSystemLocale */.t["84S6+Z"], obj);
   return callback4(require(4126) /* Text */.Text, obj);
 }
@@ -47,7 +47,7 @@ function OnboardingTrailing(isOnboarding) {
     let tmp3Result = tmp3(OnboardingTrailingLanding, {});
   } else {
     const obj = { discoverabilityEnabled: tmp, onValueChanged: tmp2 };
-    tmp3Result = tmp3(importDefault(11715), obj);
+    tmp3Result = tmp3(importDefault(11742), obj);
   }
   return tmp3Result;
 }
@@ -173,7 +173,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
   const tmp5 = callback2();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  first(11724)(navigation, navigateToLandingPage.navigateToLandingPage);
+  first(11751)(navigation, navigateToLandingPage.navigateToLandingPage);
   const items = [navigation];
   callback = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
@@ -208,7 +208,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
   }
   obj.initialName = str;
   obj.prefilledFromContactBook = null != name && "" !== name && isNameFromContactBook;
-  obj.children = tmp11(first(11726), obj);
+  obj.children = tmp11(first(11753), obj);
   return tmp9(tmp10, obj);
 }
 function ContactSyncSuggestionScreen(onComplete) {

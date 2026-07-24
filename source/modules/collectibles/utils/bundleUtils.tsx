@@ -1,12 +1,12 @@
-// Module ID: 8696
-// Function ID: 68894
+// Module ID: 8737
+// Function ID: 69112
 // Name: extractBundleItemsFromArray
-// Dependencies: [8207, 6786, 2]
+// Dependencies: [8251, 6786, 2]
 // Exports: bundleContainsNameplates, isValidCollectiblesBundle, isValidCollectiblesBundleItems
 
-// Module 8696 (extractBundleItemsFromArray)
+// Module 8737 (extractBundleItemsFromArray)
 function extractBundleItemsFromArray(items) {
-  const itemsSortingHat = new require(8207) /* ItemsSortingHat */.ItemsSortingHat(items);
+  const itemsSortingHat = new require(8251) /* ItemsSortingHat */.ItemsSortingHat(items);
   return { firstProfileEffect: itemsSortingHat.firstProfileEffect, firstAvatarDecoration: itemsSortingHat.firstAvatarDecoration, firstNameplate: itemsSortingHat.firstNameplate };
 }
 function extractBundleItems(items) {

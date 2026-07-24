@@ -1,7 +1,7 @@
 // Module ID: 6665
-// Function ID: 51329
+// Function ID: 51341
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 57, 1858, 5620, 5618, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1858, 5618, 5616, 2]
 
 // Module 6665 (_callSuper)
 import Record from "Record";
@@ -113,7 +113,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function convertPriceToMajorUnit(amount) {
-  let tmp = importDefault(5620);
+  let tmp = importDefault(5618);
   tmp = new tmp(amount.amount);
   return tmp.dividedBy(10 ** amount.exponent).toNumber();
 }

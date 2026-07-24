@@ -1,10 +1,10 @@
-// Module ID: 11993
-// Function ID: 92689
+// Module ID: 12020
+// Function ID: 92929
 // Name: QuoteIcon
-// Dependencies: [31, 33, 689, 3833, 11994, 2]
+// Dependencies: [31, 33, 689, 3833, 12021, 2]
 // Exports: QuoteIcon
 
-// Module 11993 (QuoteIcon)
+// Module 12020 (QuoteIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const QuoteIcon = function QuoteIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11994) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(12021) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11994) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(12021) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

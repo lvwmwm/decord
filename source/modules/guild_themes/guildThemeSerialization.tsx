@@ -1,5 +1,5 @@
 // Module ID: 1837
-// Function ID: 20059
+// Function ID: 20060
 // Name: cloneCustomUserThemeSettings
 // Dependencies: [2]
 // Exports: cloneGuildTheme, fromServerGuildTheme, toServerGuildThemeSettings

@@ -1,10 +1,10 @@
-// Module ID: 11391
-// Function ID: 88561
+// Module ID: 11419
+// Function ID: 88800
 // Name: renderChannelBadge
-// Dependencies: [31, 33, 1273, 11390, 4126, 1212, 1827, 2]
+// Dependencies: [31, 33, 1273, 11418, 4126, 1212, 1827, 2]
 // Exports: renderChannelBadge
 
-// Module 11391 (renderChannelBadge)
+// Module 11419 (renderChannelBadge)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -32,7 +32,7 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(require(11390) /* renderChannelBadge */.NewBadge, {});
+    tmp2 = jsx(require(11418) /* renderChannelBadge */.NewBadge, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {

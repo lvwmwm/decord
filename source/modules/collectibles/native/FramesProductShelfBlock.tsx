@@ -1,10 +1,10 @@
-// Module ID: 14501
-// Function ID: 110715
+// Module ID: 14551
+// Function ID: 111038
 // Name: ListEdgeSpacer
-// Dependencies: [31, 27, 33, 4130, 689, 14483, 5464, 5484, 13973, 13975, 8666, 8663, 8743, 4126, 5449, 7879, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 14533, 5462, 5482, 14023, 14025, 8707, 8704, 8782, 4126, 5449, 7527, 2]
 // Exports: default
 
-// Module 14501 (ListEdgeSpacer)
+// Module 14551 (ListEdgeSpacer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,12 +40,12 @@ export default function _default(block) {
   block = block.block;
   const preferVCPrice = block.preferVCPrice;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = block(14483);
-  const tmp3 = preferVCPrice(13973)();
+  let obj = block(14533);
+  const tmp3 = preferVCPrice(14023)();
   const dependencyMap = tmp3;
   const items = [block.rankedSkuIds, tmp3];
   const memo = React.useMemo(() => tmp3(block.rankedSkuIds), items);
-  let obj1 = block(13975);
+  let obj1 = block(14025);
   const filteredAndSortedProducts = obj1.useFilteredAndSortedProducts({ products: memo });
   const items1 = [preferVCPrice];
   const callback = React.useCallback((arg0) => {
@@ -59,7 +59,7 @@ export default function _default(block) {
   }, items1);
   let tmp22Result = null;
   if (0 !== filteredAndSortedProducts.length) {
-    obj = { value: tmp2(preferVCPrice(5484).COLLECTIBLES_SHOP_SHELF).analyticsLocations };
+    obj = { value: tmp2(preferVCPrice(5482).COLLECTIBLES_SHOP_SHELF).analyticsLocations };
     obj = { style: tmp.container };
     let tmp10 = null != block.mobileBackgroundImage;
     if (tmp10) {
@@ -70,18 +70,18 @@ export default function _default(block) {
     }
     const items2 = [tmp10, , ];
     const obj3 = { style: tmp.header };
-    const items3 = [callback(preferVCPrice(8743), { location: "FramesProductShelfBlock", tooltipPosition: "bottom" }), ];
+    const items3 = [callback(preferVCPrice(8782), { location: "FramesProductShelfBlock", tooltipPosition: "bottom" }), ];
     const obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: block.title };
     items3[1] = callback(block(4126).Text, obj4);
     obj3.children = items3;
     items2[1] = callback2(closure_5, obj3);
     const obj5 = {};
-    const obj6 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.title, data: filteredAndSortedProducts, keyExtractor: tmp6, onScroll: obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback, decelerationRate: "fast", snapToInterval: block(8663).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
-    obj5.children = callback(block(7879).FlashList, obj6);
+    const obj6 = { horizontal: true, accessibilityRole: "list", accessibilityLabel: block.title, data: filteredAndSortedProducts, keyExtractor: tmp6, onScroll: obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll, renderItem: callback, decelerationRate: "fast", snapToInterval: block(8704).COLLECTIBLES_SHOP_CARD_WIDTH + preferVCPrice(689).space.PX_12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListEdgeSpacer, ListFooterComponent: ListEdgeSpacer, ItemSeparatorComponent: ListItemSeparator };
+    obj5.children = callback(block(7527).FlashList, obj6);
     items2[2] = callback(block(5449).LayerScope, obj5);
     obj.children = items2;
     obj.children = callback2(closure_5, obj);
-    tmp22Result = callback(block(5464).AnalyticsLocationProvider, obj);
+    tmp22Result = callback(block(5462).AnalyticsLocationProvider, obj);
     const tmp22 = callback;
     const tmp25 = callback2;
     const tmp26 = closure_5;

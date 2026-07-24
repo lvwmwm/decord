@@ -1,10 +1,10 @@
-// Module ID: 9869
-// Function ID: 76404
+// Module ID: 9901
+// Function ID: 76598
 // Name: useRedactableMediaAttachmentsForMessage
-// Dependencies: [4349, 624, 9870, 5670, 5675, 2]
+// Dependencies: [4349, 624, 9902, 5670, 5675, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 9869 (useRedactableMediaAttachmentsForMessage)
+// Module 9901 (useRedactableMediaAttachmentsForMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -17,7 +17,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(624).useStateFromStores(items, () => attachmentId.getMessage(closure_0, closure_1));
   let obj = _require(624);
-  let closure_3 = _require(9870).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let closure_3 = _require(9902).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -33,7 +33,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
     }
     return found;
   }
-  const obj2 = _require(9870);
+  const obj2 = _require(9902);
 };
 export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmbedsForMessage(channelId, messageId, embedId) {
   const _require = channelId;
@@ -42,7 +42,7 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(624).useStateFromStores(items, () => embedId.getMessage(closure_0, closure_1));
   let obj = _require(624);
-  let closure_3 = _require(9870).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let closure_3 = _require(9902).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -58,5 +58,5 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
     }
     return found;
   }
-  const obj2 = _require(9870);
+  const obj2 = _require(9902);
 };

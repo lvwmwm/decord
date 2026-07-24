@@ -1,10 +1,10 @@
-// Module ID: 12688
-// Function ID: 98899
+// Module ID: 12739
+// Function ID: 99220
 // Name: parseParticipant
-// Dependencies: [12689, 1212, 2910, 2]
+// Dependencies: [12740, 1212, 2910, 2]
 // Exports: getHavenSoundControlName, parseRoom
 
-// Module 12688 (parseParticipant)
+// Module 12739 (parseParticipant)
 function parseParticipant(userId) {
   return { userId: userId.user_id, position: userId.position, avatar: userId.avatar };
 }
@@ -21,13 +21,13 @@ export const parseRoom = function parseRoom(roomId) {
   return { roomId: roomId.room_id, participants: participants.map(parseParticipant), seats: seats.map(parseSeat) };
 };
 export const getHavenSoundControlName = function getHavenSoundControlName(arg0) {
-  if (require(12689) /* HavenGenres */.HavenSoundKeys.RADIO === arg0) {
+  if (require(12740) /* HavenGenres */.HavenSoundKeys.RADIO === arg0) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     return intl3.string(importDefault(2910).AjiGKB);
-  } else if (require(12689) /* HavenGenres */.HavenSoundKeys.ENVIRONMENT === arg0) {
+  } else if (require(12740) /* HavenGenres */.HavenSoundKeys.ENVIRONMENT === arg0) {
     const intl2 = require(1212) /* getSystemLocale */.intl;
     return intl2.string(importDefault(2910).YEYIbI);
-  } else if (require(12689) /* HavenGenres */.HavenSoundKeys.CAMPFIRE === arg0) {
+  } else if (require(12740) /* HavenGenres */.HavenSoundKeys.CAMPFIRE === arg0) {
     const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(importDefault(2910)["Vk9+Ez"]);
   } else {

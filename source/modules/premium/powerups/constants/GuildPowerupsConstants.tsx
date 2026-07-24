@@ -1,5 +1,5 @@
 // Module ID: 4018
-// Function ID: 33436
+// Function ID: 33437
 // Name: BoostedGuildTiers
 // Dependencies: [1851, 4019, 653, 4021, 1334, 4022, 1212, 4057, 4058, 4059, 4060, 4041, 2]
 // Exports: GUILD_FEATURE_TO_PERK

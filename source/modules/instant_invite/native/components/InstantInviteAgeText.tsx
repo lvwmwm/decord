@@ -1,10 +1,10 @@
-// Module ID: 11748
-// Function ID: 91232
+// Module ID: 11775
+// Function ID: 91470
 // Name: InstantInviteAgeText
-// Dependencies: [31, 27, 8482, 33, 4130, 566, 4126, 8483, 4660, 8481, 1212, 2]
+// Dependencies: [31, 27, 8527, 33, 4130, 566, 4126, 8528, 4660, 8526, 1212, 2]
 // Exports: default
 
-// Module 11748 (InstantInviteAgeText)
+// Module 11775 (InstantInviteAgeText)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ export default function InstantInviteAgeText(style) {
     const items1 = [tmp.inviteAgeContainer, style.style];
     obj.style = items1;
     obj = { variant: "text-xs/normal" };
-    const items2 = [require(8483) /* _createForOfIteratorHelperLoose */.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [require(8528) /* _createForOfIteratorHelperLoose */.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj.children = items2;
     const items3 = [callback(require(4126) /* Text */.Text, obj), ];
     if (canEditInvite) {
@@ -63,7 +63,7 @@ export default function InstantInviteAgeText(style) {
     items3[1] = canEditInvite;
     obj.children = items3;
     tmp4Result = callback(View, obj);
-    const obj4 = require(8483) /* _createForOfIteratorHelperLoose */;
+    const obj4 = require(8528) /* _createForOfIteratorHelperLoose */;
     const tmp4 = callback;
     const tmp5 = View;
   }

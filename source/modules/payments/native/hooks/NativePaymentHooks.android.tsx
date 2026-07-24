@@ -1,10 +1,10 @@
-// Module ID: 8002
-// Function ID: 63603
+// Module ID: 7433
+// Function ID: 59778
 // Name: notSupported
-// Dependencies: [5, 57, 31, 5621, 3, 566, 22, 7160, 3791, 2]
+// Dependencies: [5, 57, 31, 5619, 3, 566, 22, 7160, 3791, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
 
-// Module 8002 (notSupported)
+// Module 7433 (notSupported)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

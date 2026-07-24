@@ -1,9 +1,9 @@
-// Module ID: 16162
-// Function ID: 125356
+// Module ID: 16209
+// Function ID: 125680
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 3976, 1212, 16163, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 653, 3976, 1212, 16210, 5078, 2]
 
-// Module 16162 (_isNativeReflectConstruct)
+// Module 16209 (_isNativeReflectConstruct)
 import getSystemLocale from "getSystemLocale";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -29,8 +29,8 @@ function handleRelationshipAdd(relationship) {
     const intl = require(1212) /* getSystemLocale */.intl;
     const obj = { username: relationship.user.username };
     AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1212) /* getSystemLocale */.t.zH0kC7, obj));
-    const result = importAll(16163).showPendingNotification(relationship.user);
-    const obj2 = importAll(16163);
+    const result = importAll(16210).showPendingNotification(relationship.user);
+    const obj2 = importAll(16210);
   }
 }
 function handleFriendRequestAccepted(user) {
@@ -38,7 +38,7 @@ function handleFriendRequestAccepted(user) {
   const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1212) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1212) /* getSystemLocale */.t["/+7xky"], { username: user.username }));
-  const result = importAll(16163).showAcceptedNotification(user);
+  const result = importAll(16210).showAcceptedNotification(user);
 }
 tmp2 = new tmp2();
 let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/relationships/RelationshipManager.tsx");

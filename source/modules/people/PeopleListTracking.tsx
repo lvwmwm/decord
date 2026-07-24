@@ -1,10 +1,10 @@
-// Module ID: 12149
-// Function ID: 95144
+// Module ID: 12176
+// Function ID: 95384
 // Name: trackFriendsListItemAction
 // Dependencies: [653, 675, 2]
 // Exports: trackFriendsListItemClicked, trackFriendsListItemContextMenuInteracted, trackFriendsListItemMessageClicked, trackFriendsListItemRemoveFriendClicked, trackFriendsListItemVideoCallClicked, trackFriendsListItemVoiceCallClicked, trackViewFriendRequestNote
 
-// Module 12149 (trackFriendsListItemAction)
+// Module 12176 (trackFriendsListItemAction)
 import { AnalyticEvents } from "ME";
 
 function trackFriendsListItemAction(arg0) {

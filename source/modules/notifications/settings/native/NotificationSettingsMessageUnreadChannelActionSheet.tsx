@@ -1,10 +1,10 @@
-// Module ID: 10307
-// Function ID: 79541
+// Module ID: 10336
+// Function ID: 79732
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: [31, 4325, 653, 4326, 662, 33, 10288, 10306, 1212, 5079, 10289, 5073, 2]
+// Dependencies: [31, 4325, 653, 4326, 662, 33, 10317, 10335, 1212, 5079, 10318, 5073, 2]
 // Exports: default
 
-// Module 10307 (NotificationSettingsMessageUnreadChannelActionSheet)
+// Module 10336 (NotificationSettingsMessageUnreadChannelActionSheet)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { UserNotificationSettings } from "ME";
@@ -19,7 +19,7 @@ export default function NotificationSettingsMessageUnreadChannelActionSheet(chan
   let notification;
   let unread;
   const _require = channel;
-  let obj = _require(10288);
+  let obj = _require(10317);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   ({ unread, notification } = channelPresetSettings);
   obj = { value: unread };
@@ -42,5 +42,5 @@ export default function NotificationSettingsMessageUnreadChannelActionSheet(chan
     const NotificationLabel = channel(outer1_2[11]).NotificationLabel;
     const result = obj.updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.unreads(ONLY_MENTIONS));
   };
-  return jsx(importDefault(10306), { value: unread });
+  return jsx(importDefault(10335), { value: unread });
 };

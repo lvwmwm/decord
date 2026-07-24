@@ -1,10 +1,10 @@
-// Module ID: 8768
-// Function ID: 69309
+// Module ID: 8807
+// Function ID: 69524
 // Name: VariantOption
-// Dependencies: [31, 27, 33, 4130, 689, 8713, 4660, 1212, 8733, 5154, 6785, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 8754, 4660, 1212, 8772, 5154, 6785, 4126, 2]
 // Exports: default
 
-// Module 8768 (VariantOption)
+// Module 8807 (VariantOption)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function VariantOption(onSelect) {
   let variant;
   ({ variant, isSelected } = onSelect);
   const tmp = callback2(isSelected);
-  let obj = require(8713) /* getProductPurchaseState */;
+  let obj = require(8754) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   obj = { accessibilityRole: "button" };
   if (isPurchased) {
@@ -46,7 +46,7 @@ function VariantOption(onSelect) {
 function VariantCheckmark(variant) {
   const obj = {};
   const colors = importDefault(689).colors;
-  obj.color = importDefault(8733)(variant.variant) ? colors.BLACK : colors.WHITE;
+  obj.color = importDefault(8772)(variant.variant) ? colors.BLACK : colors.WHITE;
   obj.size = "md";
   return closure_4(require(5154) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
 }

@@ -1,5 +1,5 @@
 // Module ID: 857
-// Function ID: 9618
+// Function ID: 9619
 // Name: _getTraceInfoFromScope
 // Dependencies: [825, 796, 833]
 

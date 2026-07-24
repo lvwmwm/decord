@@ -1,7 +1,7 @@
 // Module ID: 7203
-// Function ID: 57970
+// Function ID: 57999
 // Name: serializePurchaseResponse
-// Dependencies: [5, 27, 4129, 3811, 1849, 5621, 653, 1851, 7204, 3, 44, 477, 7223, 5624, 22, 491, 3791, 566, 7224, 1554, 4110, 7225, 2]
+// Dependencies: [5, 27, 4129, 3811, 1849, 5619, 653, 1851, 7204, 3, 44, 477, 7223, 5622, 22, 491, 3791, 566, 7224, 1554, 4110, 7225, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
 // Module 7203 (serializePurchaseResponse)
@@ -139,10 +139,10 @@ let _default = {
   loadProducts() {
     if (obj.isIOS()) {
       const _Object = Object;
-      let items = [importDefault(7223).fetchSubscriptions(Object.values(require(5624) /* SubscriptionPlans */.ProductIds)), ];
+      let items = [importDefault(7223).fetchSubscriptions(Object.values(require(5622) /* SubscriptionPlans */.ProductIds)), ];
       const obj2 = importDefault(7223);
       const _Object2 = Object;
-      items[1] = importDefault(7223).fetchProducts(Object.values(require(5624) /* SubscriptionPlans */.ProductIds));
+      items[1] = importDefault(7223).fetchProducts(Object.values(require(5622) /* SubscriptionPlans */.ProductIds));
       const obj3 = importDefault(7223);
       let nextPromise = _Promise.all(items).then((arg0) => {
         let tmp;

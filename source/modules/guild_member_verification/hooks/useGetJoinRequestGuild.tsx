@@ -1,10 +1,10 @@
-// Module ID: 11886
-// Function ID: 91979
+// Module ID: 11913
+// Function ID: 92217
 // Name: useGetGuildJoinRequest
-// Dependencies: [31, 3948, 566, 9160, 2]
+// Dependencies: [31, 3948, 566, 9196, 2]
 // Exports: default
 
-// Module 11886 (useGetGuildJoinRequest)
+// Module 11913 (useGetGuildJoinRequest)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,21 +1,21 @@
-// Module ID: 13712
-// Function ID: 105201
+// Module ID: 13763
+// Function ID: 105525
 // Name: handleUnignoreUser
-// Dependencies: [31, 1849, 33, 8923, 5464, 5165, 1273, 1212, 8492, 4543, 566, 2]
+// Dependencies: [31, 1849, 33, 8962, 5462, 5165, 1273, 1212, 8537, 4543, 566, 2]
 // Exports: default
 
-// Module 13712 (handleUnignoreUser)
+// Module 13763 (handleUnignoreUser)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function handleUnignoreUser(id) {
-  importDefault(8923).unignoreUser(id, "ignored-users-list-mobile");
+  importDefault(8962).unignoreUser(id, "ignored-users-list-mobile");
 }
 function IgnoredUserRow(userRecord) {
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button" };
   obj = { source: userRecord.getAvatarSource(undefined), size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 };
   obj.icon = jsx(userRecord(1273).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 });

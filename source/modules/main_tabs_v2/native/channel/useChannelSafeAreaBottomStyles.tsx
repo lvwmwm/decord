@@ -1,10 +1,10 @@
-// Module ID: 10397
-// Function ID: 80148
+// Module ID: 10426
+// Function ID: 80340
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [31, 4808, 3759, 1348, 4177, 4202, 653, 1355, 4130, 689, 10398, 4574, 3996, 624, 1555, 477, 1324, 3834, 8829, 2]
+// Dependencies: [31, 4808, 3759, 1348, 4177, 4202, 653, 1355, 4130, 689, 10427, 4574, 3996, 624, 1555, 477, 1324, 3834, 8868, 2]
 // Exports: default
 
-// Module 10397 (useChannelSafeAreaBottomStyles)
+// Module 10426 (useChannelSafeAreaBottomStyles)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ export default function useChannelSafeAreaBottomStyles(arg0) {
   const tmp2 = callback(require(3834) /* map */.useToken(refreshToken));
   require = tmp2;
   let obj3 = require(3834) /* map */;
-  gradientBottom = require(8829) /* useGradientBottom */.useGradientBottom();
+  gradientBottom = require(8868) /* useGradientBottom */.useGradientBottom();
   const tmp4 = (function useChannelSafeAreaBottomType(arg0) {
     let closure_1 = null != gradientBottom(tmp4[10])(arg0);
     const needSubscriptionToAccess = gradientBottom(tmp4[11])(arg0).needSubscriptionToAccess;

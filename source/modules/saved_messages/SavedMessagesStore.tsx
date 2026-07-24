@@ -1,9 +1,9 @@
-// Module ID: 9532
-// Function ID: 74225
+// Module ID: 9568
+// Function ID: 74434
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1849, 3754, 9533, 4351, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1849, 3754, 9569, 4351, 566, 686, 2]
 
-// Module 9532 (_isNativeReflectConstruct)
+// Module 9568 (_isNativeReflectConstruct)
 import sortedInsert from "sortedInsert";
 import savedMessageDataToClient from "savedMessageDataToClient";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -188,11 +188,11 @@ function handleGuild() {
 }
 let c8 = 10000000000000;
 const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap((saveData) => {
-  const items = [require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.ALL, ];
+  const items = [require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.ALL, ];
   if (null != saveData.saveData.dueAt) {
-    let BOOKMARK = require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
+    let BOOKMARK = require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = require(9569) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;

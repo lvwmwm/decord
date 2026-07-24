@@ -1,10 +1,10 @@
-// Module ID: 11039
-// Function ID: 85935
+// Module ID: 11066
+// Function ID: 86124
 // Name: items
-// Dependencies: [31, 27, 11026, 7544, 33, 4130, 689, 1212, 566, 1557, 11038, 7536, 7538, 4098, 5187, 5189, 4126, 5503, 5165, 3827, 4543, 11032, 5459, 2]
+// Dependencies: [31, 27, 11053, 7589, 33, 4130, 689, 1212, 566, 1557, 11065, 7581, 7583, 4098, 5187, 5189, 4126, 5501, 5165, 3827, 4543, 11059, 2]
 // Exports: default
 
-// Module 11039 (items)
+// Module 11066 (items)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -127,7 +127,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
       return outer1_8(onClose(tmp[18]).TableRow, obj, arg1);
     })
   };
-  obj6.children = callback(onClose(5503).TableRowGroup, obj7);
+  obj6.children = callback(onClose(5501).TableRowGroup, obj7);
   items6[1] = callback(callback, obj6);
   const obj8 = { style: tmp.moreInfo };
   const obj9 = {};
@@ -143,7 +143,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     return classificationId(tmp[19]).openURL(outer1_7.AGE_VERIFICATION_LINK);
   };
   obj9.children = callback(onClose(5165).TableRow, obj10);
-  obj8.children = callback(onClose(5503).TableRowGroup, obj9);
+  obj8.children = callback(onClose(5501).TableRowGroup, obj9);
   items6[2] = callback(callback, obj8);
   const obj11 = { style: tmp.footer };
   const obj12 = {
@@ -159,7 +159,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const obj13 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore };
   const intl7 = onClose(1212).intl;
   obj13.children = intl7.format(onClose(1212).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
-  items7[1] = callback(onClose(5459).TextWithIOSLinkWorkaround, obj13);
+  items7[1] = callback(onClose(4126).Text, obj13);
   obj11.children = items7;
   items6[3] = callback2(callback, obj11);
   obj1.children = items6;

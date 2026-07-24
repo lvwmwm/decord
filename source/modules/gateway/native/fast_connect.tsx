@@ -1,7 +1,7 @@
 // Module ID: 25
 // Function ID: 1097
 // Name: prepareIdentify
-// Dependencies: [26, 27, 476, 3, 477, 479, 480, 652, 12600, 6892, 12582, 12569, 12567, 20, 14, 2]
+// Dependencies: [26, 27, 476, 3, 477, 479, 480, 652, 12651, 6891, 12633, 12620, 12618, 20, 14, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 25 (prepareIdentify)
@@ -43,7 +43,7 @@ function prepareIdentify(json, json, parsed, arg3) {
   obj.properties = obj;
   const obj6 = importAll(652);
   const obj3 = {};
-  const obj9 = require(12600) /* getClientCapabilities */;
+  const obj9 = require(12651) /* getClientCapabilities */;
   if (obj11.isAndroid()) {
     const useChannelObfuscation2 = importDefault(479).getConstants().useChannelObfuscation;
     let tmp9 = null != useChannelObfuscation2 && useChannelObfuscation2;
@@ -75,7 +75,7 @@ function prepareIdentify(json, json, parsed, arg3) {
       tmp30 = closure_6;
     }
     obj15.prepareIdentify(tmp25, json, parsed, tmp30);
-    obj16 = require(6892) /* isCacheEnabled */;
+    obj16 = require(6891) /* isCacheEnabled */;
   } else {
     const DCDFastConnectManager = closure_4.DCDFastConnectManager;
     let tmp17 = null;
@@ -83,7 +83,7 @@ function prepareIdentify(json, json, parsed, arg3) {
       tmp17 = closure_6;
     }
     DCDFastConnectManager.prepareIdentify(json, json, json, tmp17);
-    obj14 = require(6892) /* isCacheEnabled */;
+    obj14 = require(6891) /* isCacheEnabled */;
   }
   return obj.client_state;
 }

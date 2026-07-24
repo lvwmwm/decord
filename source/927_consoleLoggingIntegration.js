@@ -1,5 +1,5 @@
 // Module ID: 927
-// Function ID: 10095
+// Function ID: 10096
 // Name: consoleLoggingIntegration
 // Dependencies: [77, 816, 801, 800, 895, 825, 928, 856, 863]
 

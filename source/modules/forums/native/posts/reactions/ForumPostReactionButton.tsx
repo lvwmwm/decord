@@ -1,10 +1,10 @@
-// Module ID: 10338
-// Function ID: 79800
+// Module ID: 10367
+// Function ID: 79992
 // Name: BurstReactionButton
-// Dependencies: [31, 27, 33, 4130, 689, 10339, 4660, 1212, 4126, 7006, 9315, 10350, 3803, 9431, 665, 1392, 3769, 5151, 10352, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 10368, 4660, 1212, 4126, 7005, 9351, 10379, 3803, 9467, 665, 1392, 3769, 5151, 10381, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10338 (BurstReactionButton)
+// Module 10367 (BurstReactionButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -158,7 +158,7 @@ export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.N8hbZB);
   const items = [_createForOfIteratorHelperLoose().container, containerStyle];
   obj.style = items;
-  obj.onPress = importDefault(10339)({ threadId }).onTapReactionCount;
+  obj.onPress = importDefault(10368)({ threadId }).onTapReactionCount;
   obj = { variant: "heading-sm/medium", color: "interactive-text-default" };
   const items1 = ["+", count];
   obj.children = items1;
@@ -171,15 +171,15 @@ export const AddReactionButton = function AddReactionButton(reactionType) {
   let NORMAL = reactionType.reactionType;
   ({ threadId, containerStyle } = reactionType);
   if (NORMAL === undefined) {
-    NORMAL = require(7006) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = require(7005) /* ReactionTypes */.ReactionTypes.NORMAL;
   }
   let obj = { threadId, reactionType: NORMAL };
   obj = { style: items, accessible: true };
   items = [_createForOfIteratorHelperLoose().container, containerStyle];
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lfIHs4);
-  obj.onPress = importDefault(10339)(obj).onTapAddReaction;
-  obj.children = callback2(require(9315) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
+  obj.onPress = importDefault(10368)(obj).onTapAddReaction;
+  obj.children = callback2(require(9351) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
   return callback2(require(4660) /* PressableBase */.PressableOpacity, obj);
 };
 export const ForumPostReactionButton = function ForumPostReactionButton(emojiSize) {

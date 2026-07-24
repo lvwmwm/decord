@@ -1,10 +1,10 @@
-// Module ID: 10887
-// Function ID: 84637
+// Module ID: 10914
+// Function ID: 84826
 // Name: getNavigatorCurrentRoute
 // Dependencies: [3982, 2]
 // Exports: default
 
-// Module 10887 (getNavigatorCurrentRoute)
+// Module 10914 (getNavigatorCurrentRoute)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/navigator/getNavigatorCurrentRoute.tsx");
 
 export default function getNavigatorCurrentRoute() {

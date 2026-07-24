@@ -1,5 +1,5 @@
 // Module ID: 1110
-// Function ID: 12655
+// Function ID: 12656
 // Name: browserReplayIntegrationNoop
 // Dependencies: [65, 978, 1111]
 // Exports: browserReplayIntegration

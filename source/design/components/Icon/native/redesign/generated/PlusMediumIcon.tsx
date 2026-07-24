@@ -1,10 +1,10 @@
-// Module ID: 11788
-// Function ID: 91467
+// Module ID: 11815
+// Function ID: 91705
 // Name: PlusMediumIcon
-// Dependencies: [31, 33, 689, 3833, 11319, 2]
+// Dependencies: [31, 33, 689, 3833, 11348, 2]
 // Exports: PlusMediumIcon
 
-// Module 11788 (PlusMediumIcon)
+// Module 11815 (PlusMediumIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PlusMediumIcon = function PlusMediumIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11319) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11348) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11319) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11348) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

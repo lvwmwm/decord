@@ -1,5 +1,5 @@
 // Module ID: 972
-// Function ID: 10475
+// Function ID: 10476
 // Name: escapeStringForRegex
 // Dependencies: []
 

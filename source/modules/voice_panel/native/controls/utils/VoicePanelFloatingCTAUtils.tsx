@@ -1,10 +1,10 @@
-// Module ID: 15739
-// Function ID: 121437
+// Module ID: 15786
+// Function ID: 121759
 // Name: useFloatingCTAProps
-// Dependencies: [57, 31, 27, 4143, 15740, 6758, 1348, 1354, 33, 4066, 10014, 15719, 8455, 624, 8402, 8346, 8356, 4098, 8365, 15741, 12202, 7498, 8461, 1212, 5119, 15742, 10195, 15743, 5803, 8277, 3946, 7507, 1334, 15744, 11561, 7066, 2]
+// Dependencies: [57, 31, 27, 4143, 15787, 6758, 1348, 1354, 33, 4066, 10046, 15766, 8499, 624, 8446, 8390, 8400, 4098, 8409, 15788, 12229, 7639, 8505, 1212, 5119, 15789, 10225, 15790, 5803, 8321, 3946, 7577, 1334, 15791, 7491, 7065, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 15739 (useFloatingCTAProps)
+// Module 15786 (useFloatingCTAProps)
 import _slicedToArray from "_slicedToArray";
 import CircleErrorIcon from "CircleErrorIcon";
 import { Pressable } from "useChannelFloatingCTAContent";
@@ -28,7 +28,7 @@ function useFloatingCTAProps(stateFromStores) {
       }
       return tmp;
     }, items);
-  })(importDefault(8277)(React.useContext(importDefault(10014)).showFloatingCTA));
+  })(importDefault(8321)(React.useContext(importDefault(10046)).showFloatingCTA));
   let tmp2 = (function useGuildEventControlsProps(id) {
     let entity_type;
     let name;
@@ -164,8 +164,8 @@ function getBadConnectionCTAProps(arg0) {
   obj.label = intl.string(_require(1212).t.uv1tVh);
   const intl2 = _require(1212).intl;
   obj.subLabel = intl2.string(_require(1212).t["gQ14+g"]);
-  obj = { IconComponent: _require(7507).CircleErrorIcon, variant: "translucent" };
-  obj.icon = jsx(_require(7498).RowButton.Icon, { IconComponent: _require(7507).CircleErrorIcon, variant: "translucent" });
+  obj = { IconComponent: _require(7577).CircleErrorIcon, variant: "translucent" };
+  obj.icon = jsx(_require(7639).RowButton.Icon, { IconComponent: _require(7577).CircleErrorIcon, variant: "translucent" });
   obj.onPress = function onPress() {
     let tmp;
     if (null != callback) {
@@ -206,7 +206,7 @@ function getDismissableCTAProps(arg0) {
   } else if (require(1334) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA === dismissableContent) {
     let obj = {};
     obj = { color: "interactive-icon-default" };
-    obj.icon = jsx(require(11561) /* SoundboardIcon */.SoundboardIcon, { color: "interactive-icon-default" });
+    obj.icon = jsx(require(7491) /* SoundboardIcon */.SoundboardIcon, { color: "interactive-icon-default" });
     obj.onPress = function onPress() {
       if (null != closure_0) {
         let obj = outer1_0(outer1_2[33]);
@@ -216,7 +216,7 @@ function getDismissableCTAProps(arg0) {
       outer1_15();
     };
     obj = { quest: require(1212) /* getSystemLocale */.t.XLlWUe };
-    obj.label = require(7066) /* getDeviceSpecificString */.getDeviceSpecificString(obj, require(1212) /* getSystemLocale */.t.IJgkPX);
+    obj.label = require(7065) /* getDeviceSpecificString */.getDeviceSpecificString(obj, require(1212) /* getSystemLocale */.t.IJgkPX);
     obj.trailing = <CloseSoundboardMobileFloatingCtaIcon />;
     return obj;
   } else {

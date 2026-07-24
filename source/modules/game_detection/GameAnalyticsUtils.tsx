@@ -1,5 +1,5 @@
 // Module ID: 4300
-// Function ID: 37653
+// Function ID: 37654
 // Name: normalizePath
 // Dependencies: [4162, 4301, 477, 2]
 // Exports: getRunningGameAnalytics, isVerifiedGameExecutable

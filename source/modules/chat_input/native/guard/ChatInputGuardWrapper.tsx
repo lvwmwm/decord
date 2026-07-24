@@ -1,10 +1,10 @@
-// Module ID: 11464
-// Function ID: 89298
+// Module ID: 11494
+// Function ID: 89543
 // Name: ChatInputGuardWrapper
-// Dependencies: [31, 3759, 1352, 1917, 1838, 4946, 3767, 1849, 11105, 653, 9237, 33, 566, 4620, 3747, 3764, 11465, 11466, 10405, 10404, 5698, 11467, 11468, 4324, 8923, 4337, 9236, 1934, 9239, 9181, 9990, 9811, 11470, 11472, 11482, 11481, 4086, 1212, 11484, 11487, 11488, 11489, 11493, 11494, 11497, 11498, 8461, 11500, 2]
+// Dependencies: [31, 3759, 1352, 1917, 1838, 4946, 3767, 1849, 11132, 653, 9273, 33, 566, 4620, 3747, 3764, 11495, 11496, 10434, 10433, 5698, 11497, 11498, 4324, 8962, 4337, 9272, 1934, 9275, 9217, 10022, 9843, 11500, 11502, 11512, 11511, 4086, 1212, 11514, 11517, 11518, 11519, 11523, 11524, 11527, 11528, 8505, 11530, 2]
 // Exports: default
 
-// Module 11464 (ChatInputGuardWrapper)
+// Module 11494 (ChatInputGuardWrapper)
 import "navigateToThreadCreation";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isThread } from "_callSuper";
@@ -16,7 +16,7 @@ import closure_9 from "_isNativeReflectConstruct";
 import { TextAreaCta } from "TextAreaCta";
 import ME from "ME";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_15 } from "PHONE_VERIFICATION_MODAL_KEY";
-import { jsx } from "module_11472";
+import { jsx } from "module_11502";
 
 let closure_11;
 let closure_12;

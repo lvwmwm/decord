@@ -1,5 +1,5 @@
 // Module ID: 5087
-// Function ID: 44283
+// Function ID: 44288
 // Name: HeaderBackImage
 // Dependencies: [5, 31, 27, 653, 33, 4130, 689, 4126, 5088, 5091, 1457, 5093, 1212, 5094, 5119, 477, 1557, 5084, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage

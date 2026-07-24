@@ -1,5 +1,5 @@
 // Module ID: 6286
-// Function ID: 50383
+// Function ID: 50394
 // Name: MagnifyingGlassSpotIllustration
 // Dependencies: [33, 5085, 6287, 2]
 // Exports: MagnifyingGlassSpotIllustration

@@ -1,5 +1,5 @@
 // Module ID: 883
-// Function ID: 9770
+// Function ID: 9771
 // Name: winterCGHeadersToDict
 // Dependencies: [57]
 // Exports: httpHeadersToSpanAttributes, httpRequestToRequestData, winterCGRequestToRequestData

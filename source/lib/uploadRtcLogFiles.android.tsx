@@ -1,10 +1,10 @@
-// Module ID: 10325
-// Function ID: 79704
+// Module ID: 10354
+// Function ID: 79895
 // Name: _uploadRtcLogFiles
-// Dependencies: [5, 653, 3, 8245, 4029, 507, 2]
+// Dependencies: [5, 653, 3, 8289, 4029, 507, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 10325 (_uploadRtcLogFiles)
+// Module 10354 (_uploadRtcLogFiles)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import importDefaultResult from "_readFile";

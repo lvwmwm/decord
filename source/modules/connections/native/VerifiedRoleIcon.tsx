@@ -1,10 +1,10 @@
-// Module ID: 5508
-// Function ID: 46942
+// Module ID: 5506
+// Function ID: 46939
 // Name: VerifiedRoleIcon
-// Dependencies: [31, 27, 653, 33, 689, 4130, 5509, 5488, 4074, 2]
+// Dependencies: [31, 27, 653, 33, 689, 4130, 5507, 5486, 4074, 2]
 // Exports: default
 
-// Module 5508 (VerifiedRoleIcon)
+// Module 5506 (VerifiedRoleIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -43,13 +43,13 @@ export default function VerifiedRoleIcon(arg0) {
   if (null == roleColor) {
     roleColor = closure_3;
   }
-  let obj = require(5509) /* getHigherContrastColor */;
+  let obj = require(5507) /* getHigherContrastColor */;
   obj = { backgroundColor: roleColor };
   const items = [WHITE, PRIMARY_630];
   obj.colors = items;
   const diff = size - size / 8 * 2;
   const higherContrastColor = obj.getHigherContrastColor(obj);
-  let obj2 = require(5488) /* useRoleIcon */;
+  let obj2 = require(5486) /* useRoleIcon */;
   obj = { guildId };
   if (null == roleId) {
     let id;

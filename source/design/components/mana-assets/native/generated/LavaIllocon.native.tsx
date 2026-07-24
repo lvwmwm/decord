@@ -1,5 +1,5 @@
 // Module ID: 6278
-// Function ID: 50371
+// Function ID: 50382
 // Name: LavaIllocon
 // Dependencies: [33, 5085, 6279, 2]
 // Exports: LavaIllocon

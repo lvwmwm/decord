@@ -1,10 +1,10 @@
-// Module ID: 16303
-// Function ID: 127051
+// Module ID: 16350
+// Function ID: 127375
 // Name: logTransitionEvent
-// Dependencies: [5, 57, 31, 27, 1391, 1910, 1849, 8439, 16304, 653, 33, 4130, 5084, 689, 675, 4324, 4126, 1212, 16302, 566, 44, 3763, 1456, 5784, 5087, 5048, 3830, 16301, 4098, 14820, 1934, 4541, 7512, 5503, 5165, 13569, 665, 4543, 16308, 16309, 8438, 16310, 5160, 4528, 4539, 5585, 4559, 5519, 2]
+// Dependencies: [5, 57, 31, 27, 1391, 1910, 1849, 8483, 16351, 653, 33, 4130, 5084, 689, 675, 4324, 4126, 1212, 16349, 566, 44, 3763, 1456, 5784, 5087, 5048, 3830, 16348, 4098, 14867, 1934, 4541, 7574, 5501, 5165, 13620, 665, 4543, 16355, 16356, 8482, 16357, 5160, 4528, 4539, 5583, 4559, 5517, 2]
 // Exports: default
 
-// Module 16303 (logTransitionEvent)
+// Module 16350 (logTransitionEvent)
 import closure_4 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Stack";
@@ -39,7 +39,7 @@ function logTransitionEvent(from_step, FLOW_DISMISSED, skip, guildId) {
 }
 function closeModal(from_step, guildId) {
   logTransitionEvent(from_step, constants4.FLOW_DISMISSED, false, guildId);
-  importDefault(16302).close();
+  importDefault(16349).close();
 }
 function useGuildSettingsStoreGuild() {
   const items = [closure_12];
@@ -439,5 +439,5 @@ export default function GuildSettingsRoleCreateModal() {
   importDefault(4559)(() => {
     outer1_29(outer1_26.FLOW_INITIALIZED, outer1_26[outer1_25.STEP_DISPLAY], false, id.id);
   });
-  return callback3(_require(5519).Navigator, { screens: closure_28, initialRouteName: obj4.STEP_DISPLAY });
+  return callback3(_require(5517).Navigator, { screens: closure_28, initialRouteName: obj4.STEP_DISPLAY });
 };

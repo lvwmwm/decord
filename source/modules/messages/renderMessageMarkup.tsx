@@ -1,10 +1,10 @@
-// Module ID: 7779
-// Function ID: 61746
+// Module ID: 7870
+// Function ID: 62067
 // Name: getInitialParserStateFromMessage
-// Dependencies: [7780, 4120, 2]
+// Dependencies: [7871, 4120, 2]
 // Exports: default, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 7779 (getInitialParserStateFromMessage)
+// Module 7870 (getInitialParserStateFromMessage)
 function getInitialParserStateFromMessage(message, closure_7) {
   let mentionGames;
   let obj = { channelId: message.channel_id, messageId: message.id };

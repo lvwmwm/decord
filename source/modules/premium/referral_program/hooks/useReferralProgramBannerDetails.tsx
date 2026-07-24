@@ -1,10 +1,10 @@
-// Module ID: 12368
-// Function ID: 96122
+// Module ID: 12431
+// Function ID: 96483
 // Name: MAX_REFERRALS_SENT
-// Dependencies: [31, 1849, 6689, 566, 7889, 2]
+// Dependencies: [31, 1849, 6689, 566, 7976, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 12368 (MAX_REFERRALS_SENT)
+// Module 12431 (MAX_REFERRALS_SENT)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

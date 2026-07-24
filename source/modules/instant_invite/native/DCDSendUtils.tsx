@@ -1,5 +1,5 @@
 // Module ID: 4304
-// Function ID: 37685
+// Function ID: 37686
 // Name: sendSMS
 // Dependencies: [27, 477, 4305, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS

@@ -1,10 +1,10 @@
-// Module ID: 10637
-// Function ID: 82941
+// Module ID: 10666
+// Function ID: 83133
 // Name: getText
-// Dependencies: [5, 57, 31, 27, 3823, 1353, 653, 33, 1212, 4130, 689, 4320, 566, 4559, 10638, 7587, 10628, 4955, 7536, 7538, 7482, 7478, 1273, 4126, 4544, 4543, 10630, 10367, 4066, 3840, 9757, 4593, 2]
+// Dependencies: [5, 57, 31, 27, 3823, 1353, 653, 33, 1212, 4130, 689, 4320, 566, 4559, 10667, 7676, 10657, 4955, 7581, 7583, 7562, 7558, 1273, 4126, 4544, 4543, 10659, 10396, 4066, 3840, 7530, 4593, 2]
 // Exports: default
 
-// Module 10637 (getText)
+// Module 10666 (getText)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import getThreadChannelIcon from "getThreadChannelIcon";
@@ -41,7 +41,7 @@ class StageChannelRaiseHandAck {
   constructor(arg0) {
     channel = global.channel;
     c1 = undefined;
-    f82947 = undefined;
+    f83139 = undefined;
     c3 = undefined;
     _handleAcceptInvite = function _handleAcceptInvite(arg0) {
       // CreateGeneratorClosureLongIndex (0x67)
@@ -64,9 +64,9 @@ class StageChannelRaiseHandAck {
     items1 = [];
     items1[0] = channel.id;
     stateFromStores = obj.useStateFromStores(items, () => outer1_9.getStageInstanceByChannel(channel.id), items1);
-    f82947 = stateFromStores;
+    f83139 = stateFromStores;
     tmp6 = require("useMountLayoutEffect")(() => {
-      let obj = _undefined(10638);
+      let obj = _undefined(10667);
       obj = {};
       const intl = channel(1212).intl;
       obj = { channelName: _undefined };
@@ -159,8 +159,8 @@ class StageChannelRaiseHandAck {
       obj8 = { variant: "secondary", onPress: null, pillStyle: null, size: "sm", text: null, grow: true };
       obj8.onPress = function handleDeclineInvite() {
         if (null != channel) {
-          const result = channel(7482).audienceAckRequestToSpeak(channel, true);
-          const obj = channel(7482);
+          const result = channel(7562).audienceAckRequestToSpeak(channel, true);
+          const obj = channel(7562);
         }
       };
       obj8.pillStyle = tmp.declineButtonPill;
@@ -237,8 +237,8 @@ export default function GlobalStageChannelStatus(arg0) {
     const intl = id(1212).intl;
     stringResult = intl.string(id(1212).t["/YzI63"]);
   }
-  const tmp6 = importDefault(10630)();
-  let invitedHeaderText = importDefault(10367)(id);
+  const tmp6 = importDefault(10659)();
+  let invitedHeaderText = importDefault(10396)(id);
   let obj = id(566);
   const items = [closure_9];
   const items1 = [id];
@@ -272,7 +272,7 @@ export default function GlobalStageChannelStatus(arg0) {
         } else {
           obj = { style: tmp.noticeContainer };
           obj1 = { animated: true, barStyle: str };
-          const items2 = [callback2(importDefault(9757), obj1), , ];
+          const items2 = [callback2(importDefault(7530), obj1), , ];
           const obj2 = { style: activeSpeakerIcon, size: id(1273).Icon.Sizes.REFRESH_SMALL_16 };
           let obj5 = id(4593);
           obj2.source = obj5.getChannelIconWithGuild(channel, guild);

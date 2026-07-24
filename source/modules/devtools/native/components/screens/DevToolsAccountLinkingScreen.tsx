@@ -1,10 +1,10 @@
-// Module ID: 14695
-// Function ID: 112043
+// Module ID: 14742
+// Function ID: 112364
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [57, 31, 27, 4167, 5066, 1838, 3947, 33, 4130, 689, 566, 5472, 1557, 5470, 5467, 5503, 5165, 4126, 7512, 4543, 2]
+// Dependencies: [57, 31, 27, 4167, 5066, 1838, 3947, 33, 4130, 689, 566, 5470, 1557, 5468, 5465, 5501, 5165, 4126, 7574, 4543, 2]
 // Exports: default
 
-// Module 14695 (DevToolsAccountLinkingScreen)
+// Module 14742 (DevToolsAccountLinkingScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -60,8 +60,8 @@ export default function DevToolsAccountLinkingScreen() {
     gameApplicationIds = [];
   }
   let tmp2 = importDefault(1557)();
-  let found = importDefault(5470)(gameApplicationIds).filter((arg0) => null != arg0);
-  let obj2 = first(5470);
+  let found = importDefault(5468)(gameApplicationIds).filter((arg0) => null != arg0);
+  let obj2 = first(5468);
   getOrFetchApplication = obj2.useGetOrFetchApplication(first);
   let obj3 = first(566);
   const items2 = [_isNativeReflectConstruct];
@@ -79,13 +79,13 @@ export default function DevToolsAccountLinkingScreen() {
     }
     return found;
   });
-  const tmp8 = importDefault(5467)(getOrFetchApplication, { debug: true });
+  const tmp8 = importDefault(5465)(getOrFetchApplication, { debug: true });
   ({ startAuthorization: result, hasAlreadyLinked, debug, connectionApp } = tmp8);
   let id;
   if (null != connectionApp) {
     id = connectionApp.id;
   }
-  const arr4 = importDefault(5470)(gameApplicationIds);
+  const arr4 = importDefault(5468)(gameApplicationIds);
   let str = "N/A";
   let str2 = "N/A";
   ({ canDeauthorize, deauthorize } = (function useDeauthorize(id) {
@@ -161,13 +161,13 @@ export default function DevToolsAccountLinkingScreen() {
   } else {
     obj3 = { label: "No guild selected" };
     obj1.children = callback(first(5165).TableRow, obj3);
-    const items4 = [callback(first(5503).TableRowGroup, obj1), , , ];
+    const items4 = [callback(first(5501).TableRowGroup, obj1), , , ];
     const obj4 = { title: "Application", hasIcons: false };
     const obj5 = {};
     const obj6 = { padding: importDefault(689).space.PX_12 };
     obj5.style = obj6;
     const obj7 = { label: "Application ID", value: first, onChange: tmp5 };
-    obj5.children = callback(first(7512).TextInput, obj7);
+    obj5.children = callback(first(7574).TextInput, obj7);
     const items5 = [callback(closure_7, obj5), , ];
     const obj8 = {};
     if (null != getOrFetchApplication) {
@@ -181,7 +181,7 @@ export default function DevToolsAccountLinkingScreen() {
     obj9.label = "Linked Games: " + str2;
     items5[2] = callback(first(5165).TableRow, obj9);
     obj4.children = items5;
-    items4[1] = callback2(first(5503).TableRowGroup, obj4);
+    items4[1] = callback2(first(5501).TableRowGroup, obj4);
     const obj10 = { title: "Authorization", hasIcons: false };
     const obj11 = { label: "Connection Entrypoint URL" };
     const obj12 = { variant: "text-sm/semibold" };
@@ -226,7 +226,7 @@ export default function DevToolsAccountLinkingScreen() {
     obj15.children = items7;
     items6[2] = callback2(closure_7, obj15);
     obj10.children = items6;
-    items4[2] = callback2(first(5503).TableRowGroup, obj10);
+    items4[2] = callback2(first(5501).TableRowGroup, obj10);
     let prop;
     if (null != connectionApp) {
       prop = connectionApp.applicationAccountLinkBenefitConfig;
@@ -257,7 +257,7 @@ export default function DevToolsAccountLinkingScreen() {
       obj23.label = "Reward: " + str20;
       items8[1] = callback(first(5165).TableRow, obj23);
       obj18.children = items8;
-      tmp44Result = callback2(first(5503).TableRowGroup, obj18);
+      tmp44Result = callback2(first(5501).TableRowGroup, obj18);
       const tmp44 = callback2;
       const tmp53 = callback;
     }

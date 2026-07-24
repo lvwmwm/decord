@@ -1,5 +1,5 @@
 // Module ID: 820
-// Function ID: 9163
+// Function ID: 9164
 // Name: Scope
 // Dependencies: [77, 65, 6, 7, 806, 808, 821, 822, 804, 815, 809, 823, 807, 800, 801]
 

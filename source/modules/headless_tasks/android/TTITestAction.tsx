@@ -1,9 +1,9 @@
-// Module ID: 16621
-// Function ID: 129593
+// Module ID: 16668
+// Function ID: 129917
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 15903, 4044, 7461, 1194, 1348, 1838, 3, 3988, 10330, 16092, 686, 6917, 1554, 675, 5590, 7460, 4138, 14400, 1284, 2]
+// Dependencies: [5, 15950, 4044, 7541, 1194, 1348, 1838, 3, 3988, 10359, 16139, 686, 6916, 1554, 675, 5588, 7540, 4138, 14450, 1284, 2]
 
-// Module 16621 (_createForOfIteratorHelperLoose)
+// Module 16668 (_createForOfIteratorHelperLoose)
 import importDefaultResult from "_isNativeReflectConstruct";
 import { applicationReady } from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -180,42 +180,42 @@ let obj = {
     importDefault(3988).logToDevice(json);
   },
   () => {
-    const result = require(10330) /* formatString */.resetComponentProfiler();
+    const result = require(10359) /* formatString */.resetComponentProfiler();
     sendReply("success", "reset-component-profiler");
   },
   () => {
-    const result = require(10330) /* formatString */.pauseComponentProfiler();
+    const result = require(10359) /* formatString */.pauseComponentProfiler();
     sendReply("success", "pause-component-profiler");
   },
   () => {
-    const result = require(10330) /* formatString */.resumeComponentProfiler();
+    const result = require(10359) /* formatString */.resumeComponentProfiler();
     sendReply("success", "resume-component-profiler");
   },
   () => {
-    const obj = { stats: require(10330) /* formatString */.dumpStats() };
+    const obj = { stats: require(10359) /* formatString */.dumpStats() };
     sendReply("success", "dump-component-profiler-stats", obj);
   },
   () => {
     const obj = {};
     let report;
-    if (null != importDefault(16092)) {
-      report = importDefault(16092).requestReport();
-      const obj2 = importDefault(16092);
+    if (null != importDefault(16139)) {
+      report = importDefault(16139).requestReport();
+      const obj2 = importDefault(16139);
     }
     obj.report = report;
     sendReply("success", "dump-jank-stats", obj);
   },
   (multiplier) => {
-    if (null != importDefault(16092)) {
-      const result = importDefault(16092).setJankHeuristicMultiplier(multiplier.multiplier);
-      const obj = importDefault(16092);
+    if (null != importDefault(16139)) {
+      const result = importDefault(16139).setJankHeuristicMultiplier(multiplier.multiplier);
+      const obj = importDefault(16139);
     }
     sendReply("success", "set-jank-multiplier");
   },
   () => {
-    if (null != importDefault(16092)) {
-      importDefault(16092).startTracking();
-      const obj = importDefault(16092);
+    if (null != importDefault(16139)) {
+      importDefault(16139).startTracking();
+      const obj = importDefault(16139);
     }
     sendReply("success", "start-jank-stats");
   },
@@ -229,9 +229,9 @@ let obj = {
   "get-resource-usage": fn
 };
 fn = () => {
-  const obj = { cumulativeCPU: importDefault(6917).getCumulativeCPUUsage() };
-  const obj2 = importDefault(6917);
-  obj.currentMemoryUsage = importDefault(6917).getCurrentMemoryUsageKB();
+  const obj = { cumulativeCPU: importDefault(6916).getCumulativeCPUUsage() };
+  const obj2 = importDefault(6916);
+  obj.currentMemoryUsage = importDefault(6916).getCurrentMemoryUsageKB();
   sendReply("success", "get-resource-usage", obj);
 };
 // CreateGeneratorClosureLongIndex (0x67)

@@ -1,10 +1,10 @@
-// Module ID: 7576
-// Function ID: 60618
+// Module ID: 7631
+// Function ID: 60764
 // Name: WarningIcon
-// Dependencies: [31, 33, 689, 3833, 7577, 2]
+// Dependencies: [31, 33, 689, 3833, 7632, 2]
 // Exports: WarningIcon
 
-// Module 7576 (WarningIcon)
+// Module 7631 (WarningIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const WarningIcon = function WarningIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(7577) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(7632) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7577) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7632) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

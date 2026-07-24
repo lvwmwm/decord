@@ -1,5 +1,5 @@
 // Module ID: 4752
-// Function ID: 41271
+// Function ID: 41275
 // Name: isPngImageHeaderChunk
 // Dependencies: [4745, 4748]
 

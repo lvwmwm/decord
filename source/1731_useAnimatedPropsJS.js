@@ -1,5 +1,5 @@
 // Module ID: 1731
-// Function ID: 19402
+// Function ID: 19403
 // Name: useAnimatedPropsJS
 // Dependencies: [1732, 1585]
 

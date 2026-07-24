@@ -1,10 +1,10 @@
-// Module ID: 11270
-// Function ID: 87642
+// Module ID: 11299
+// Function ID: 87882
 // Name: FrecencyCommandsSection
-// Dependencies: [31, 27, 653, 33, 4130, 11249, 11271, 4324, 8182, 4126, 1212, 6755, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 11278, 11300, 4324, 8226, 4126, 1212, 6755, 2]
 // Exports: default
 
-// Module 11270 (FrecencyCommandsSection)
+// Module 11299 (FrecencyCommandsSection)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -31,7 +31,7 @@ export default function FrecencyCommandsSection(commands) {
   const context = commands.context;
   ({ onPressCommand: importDefault, section: dependencyMap, onExecuteCommand: result, installOnDemand: View, sectionName } = commands);
   const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(11271)({ context, commands: commands.allCommands, limit: 5 });
+  const arr = importDefault(11300)({ context, commands: commands.allCommands, limit: 5 });
   const items = [arr.length, sectionName];
   const effect = React.useEffect(() => {
     if (0 !== arr.length) {

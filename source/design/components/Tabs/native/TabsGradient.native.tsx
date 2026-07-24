@@ -1,10 +1,10 @@
-// Module ID: 11794
-// Function ID: 91487
+// Module ID: 11821
+// Function ID: 91725
 // Name: useGradientAnimatedStyle
 // Dependencies: [31, 653, 33, 3991, 4554, 4130, 4542, 2]
 // Exports: default
 
-// Module 11794 (useGradientAnimatedStyle)
+// Module 11821 (useGradientAnimatedStyle)
 import result from "result";
 import { HorizontalGradient } from "ME";
 import jsxProd from "jsxProd";

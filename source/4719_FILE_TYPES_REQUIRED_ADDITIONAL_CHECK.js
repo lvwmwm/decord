@@ -1,5 +1,5 @@
 // Module ID: 4719
-// Function ID: 41053
+// Function ID: 41057
 // Name: FILE_TYPES_REQUIRED_ADDITIONAL_CHECK
 // Dependencies: [6, 7, 4717, 4720, 4726, 4727, 4728, 4729, 4730]
 

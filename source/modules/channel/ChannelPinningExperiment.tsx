@@ -1,10 +1,10 @@
-// Module ID: 11811
-// Function ID: 91635
+// Module ID: 11838
+// Function ID: 91873
 // Name: useCanPinChannelsInGuild
 // Dependencies: [1428, 6767, 2]
 // Exports: useCanPinChannelsInGuild
 
-// Module 11811 (useCanPinChannelsInGuild)
+// Module 11838 (useCanPinChannelsInGuild)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { name: "2026-04-channel-pinning", kind: "user", defaultConfig: { canPinEverywhere: false }, variations: { [1]: { canPinEverywhere: true } } };

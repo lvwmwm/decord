@@ -1,5 +1,5 @@
 // Module ID: 1776
-// Function ID: 19767
+// Function ID: 19768
 // Name: useGenericKeyboardHandler
 // Dependencies: [31, 1774, 1777, 1775, 1582, 1778, 1779]
 // Exports: useFocusedInputHandler, useKeyboardAnimation, useKeyboardController, useKeyboardHandler, useReanimatedFocusedInput, useReanimatedKeyboardAnimation

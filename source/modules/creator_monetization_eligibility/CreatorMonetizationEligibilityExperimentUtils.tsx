@@ -1,5 +1,5 @@
 // Module ID: 5642
-// Function ID: 48244
+// Function ID: 48254
 // Name: getCreatorMonetizationEligibleCountry
 // Dependencies: [1849, 3778, 653, 566, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, useIsExpeditedOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry

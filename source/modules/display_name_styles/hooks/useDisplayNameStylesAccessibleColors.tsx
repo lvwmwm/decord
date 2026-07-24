@@ -1,10 +1,10 @@
-// Module ID: 8517
-// Function ID: 67940
+// Module ID: 8562
+// Function ID: 68170
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [31, 4122, 566, 1862, 8518, 3974, 666, 2]
+// Dependencies: [31, 4122, 566, 1862, 8563, 3974, 666, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 8517 (useDisplayNameStylesAccessibleColors)
+// Module 8562 (useDisplayNameStylesAccessibleColors)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

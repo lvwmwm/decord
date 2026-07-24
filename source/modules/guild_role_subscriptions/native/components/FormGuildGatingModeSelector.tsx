@@ -1,10 +1,10 @@
-// Module ID: 16418
-// Function ID: 127956
+// Module ID: 16465
+// Function ID: 128280
 // Name: FormGuildGatingModeSelector
-// Dependencies: [31, 27, 33, 4130, 16419, 4471, 1212, 4126, 16421, 10949, 16422, 2]
+// Dependencies: [31, 27, 33, 4130, 16466, 4471, 1212, 4126, 16468, 10976, 16469, 2]
 // Exports: default
 
-// Module 16418 (FormGuildGatingModeSelector)
+// Module 16465 (FormGuildGatingModeSelector)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   const onChange = isFullServerGating.onChange;
   const tmp = callback3();
   const dependencyMap = tmp;
-  let obj = isFullServerGating(16419);
+  let obj = isFullServerGating(16466);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   let items = [onChange];
   const items1 = [onChange, isFullServerGating, tmp];
@@ -52,7 +52,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
     }
     onChange(true);
   }, items1);
-  obj = { icon: onChange(10949) };
+  obj = { icon: onChange(10976) };
   let intl = isFullServerGating(1212).intl;
   obj.title = intl.string(isFullServerGating(1212).t.rXqxhF);
   let intl2 = isFullServerGating(1212).intl;
@@ -60,11 +60,11 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   obj.selected = !isFullServerGating;
   obj.onPress = callback;
   obj.disabled = roleSubscriptionSettingsDisabled;
-  const items2 = [callback(onChange(16421), obj), callback(View, { style: tmp.space }), ];
+  const items2 = [callback(onChange(16468), obj), callback(View, { style: tmp.space }), ];
   let obj2 = {};
   let obj1 = { style: tmp.space };
-  const tmp5 = onChange(16421);
-  obj2.icon = onChange(16422);
+  const tmp5 = onChange(16468);
+  obj2.icon = onChange(16469);
   let intl3 = isFullServerGating(1212).intl;
   obj2.title = intl3.string(isFullServerGating(1212).t.WzC9s6);
   const intl4 = isFullServerGating(1212).intl;
@@ -72,7 +72,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   obj2.selected = isFullServerGating;
   obj2.onPress = callback1;
   obj2.disabled = roleSubscriptionSettingsDisabled;
-  items2[2] = callback(onChange(16421), obj2);
+  items2[2] = callback(onChange(16468), obj2);
   obj.children = items2;
   return callback2(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8728
-// Function ID: 69081
+// Module ID: 8769
+// Function ID: 69299
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: [31, 33, 4130, 689, 3991, 4131, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 8728 (CollectiblesShopPricePlaceholder)
+// Module 8769 (CollectiblesShopPricePlaceholder)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

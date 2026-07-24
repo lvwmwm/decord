@@ -1,5 +1,5 @@
 // Module ID: 7252
-// Function ID: 58400
+// Function ID: 58429
 // Name: getMetricSummaryJsonForSpan
 // Dependencies: [57, 7242]
 // Exports: getMetricSummaryJsonForSpan, updateMetricSummaryOnSpan

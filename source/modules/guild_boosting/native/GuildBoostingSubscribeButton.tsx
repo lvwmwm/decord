@@ -1,7 +1,7 @@
 // Module ID: 6640
-// Function ID: 50986
+// Function ID: 50997
 // Name: _handleBoostPress
-// Dependencies: [5, 31, 27, 4023, 653, 4968, 1851, 33, 6641, 4337, 4966, 12507, 1456, 5464, 624, 1867, 11571, 4543, 1212, 4652, 2]
+// Dependencies: [5, 31, 27, 4023, 653, 4968, 1851, 33, 6641, 4337, 4966, 12560, 1456, 5462, 624, 1867, 11598, 4543, 1212, 4652, 2]
 // Exports: default
 
 // Module 6640 (_handleBoostPress)

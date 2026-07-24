@@ -1,10 +1,10 @@
-// Module ID: 7753
-// Function ID: 61569
+// Module ID: 7846
+// Function ID: 61896
 // Name: createGiftIntentEmbed
-// Dependencies: [7754, 1849, 1851, 4130, 689, 1212, 7758, 3969, 7635, 4067, 7759, 7760, 2]
+// Dependencies: [7847, 1849, 1851, 4130, 689, 1212, 7851, 3969, 7724, 4067, 7852, 7853, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 7753 (createGiftIntentEmbed)
+// Module 7846 (createGiftIntentEmbed)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { GiftIntentType } from "GuildFeatures";
@@ -42,9 +42,9 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
       } else {
         tmp2 = null;
         if (GiftIntentType.UNSPECIFIED !== giftIntentType) {
-          require(7758) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
+          require(7851) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
           tmp2 = null;
-          const obj10 = require(7758) /* _sendGiftMessage */;
+          const obj10 = require(7851) /* _sendGiftMessage */;
         }
       }
       if (null == tmp2) {
@@ -64,13 +64,13 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
         obj1.giftIntentType = giftIntentType;
         ({ headerTextColor: obj4.headerTextColor, subHeaderTextColor: obj4.subHeaderTextColor, backgroundColor: obj4.backgroundColor, borderColor: obj4.borderColor } = _createForOfIteratorHelperLoose(theme));
         const tmp8 = _createForOfIteratorHelperLoose(theme);
-        obj1.subHeaderIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(4067));
+        obj1.subHeaderIconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(4067));
         const intl3 = require(1212) /* getSystemLocale */.intl;
         obj1.primaryCtaLabel = intl3.string(require(1212) /* getSystemLocale */.t.ilhtIa);
-        const obj5 = require(7635) /* frozen */;
-        obj1.primaryCtaIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7759));
-        const obj6 = require(7635) /* frozen */;
-        obj1.secondaryCtaIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7760));
+        const obj5 = require(7724) /* frozen */;
+        obj1.primaryCtaIconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7852));
+        const obj6 = require(7724) /* frozen */;
+        obj1.secondaryCtaIconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7853));
         const intl4 = require(1212) /* getSystemLocale */.intl;
         obj1.secondaryCtaAccessibilityLabel = intl4.string(require(1212) /* getSystemLocale */.t.I5gL2H);
         return obj1;

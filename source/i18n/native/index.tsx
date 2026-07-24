@@ -1,7 +1,7 @@
-// Module ID: 15904
-// Function ID: 122944
-// Dependencies: [15905, 15953, 2]
+// Module ID: 15951
+// Function ID: 123266
+// Dependencies: [15952, 16000, 2]
 
-// Module 15904
+// Module 15951
 require("getMessage").setUpdateRules(require("I18nLink"));
 const result = require("set").fileFinishedImporting("i18n/native/index.tsx");

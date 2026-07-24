@@ -1,10 +1,10 @@
-// Module ID: 9432
-// Function ID: 73410
+// Module ID: 9468
+// Function ID: 73619
 // Name: useCanRemoveAllReactions
 // Dependencies: [3758, 653, 5650, 566, 2]
 // Exports: default
 
-// Module 9432 (useCanRemoveAllReactions)
+// Module 9468 (useCanRemoveAllReactions)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 

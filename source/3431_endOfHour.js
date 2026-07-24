@@ -1,5 +1,5 @@
 // Module ID: 3431
-// Function ID: 26683
+// Function ID: 26684
 // Name: endOfHour
 // Dependencies: [3209, 3210]
 // Exports: default

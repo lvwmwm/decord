@@ -1,10 +1,10 @@
-// Module ID: 10727
-// Function ID: 83461
+// Module ID: 10756
+// Function ID: 83653
 // Name: handleKrispLinkPressed
-// Dependencies: [31, 27, 1278, 653, 33, 1920, 675, 1212, 3827, 566, 3976, 10728, 10729, 4126, 2]
+// Dependencies: [31, 27, 1278, 653, 33, 1920, 675, 1212, 3827, 566, 3976, 10757, 10758, 4126, 2]
 // Exports: default
 
-// Module 10727 (handleKrispLinkPressed)
+// Module 10756 (handleKrispLinkPressed)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -46,9 +46,9 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.theme);
   let obj1 = require(3976) /* AccessibilityAnnouncer */;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp2Result = tmp2(10728);
+    let tmp2Result = tmp2(10757);
   } else {
-    tmp2Result = tmp2(10729);
+    tmp2Result = tmp2(10758);
   }
   obj = { style: closure_13.detailsView };
   obj = { style: closure_13.logo, source: tmp2Result };

@@ -1,10 +1,10 @@
-// Module ID: 13114
-// Function ID: 101061
+// Module ID: 13167
+// Function ID: 101388
 // Name: setClientState
 // Dependencies: [27, 477, 479, 2]
 // Exports: setClientState
 
-// Module 13114 (setClientState)
+// Module 13167 (setClientState)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/cache/ClientStateStoreStorage.native.tsx");

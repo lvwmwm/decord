@@ -1,10 +1,10 @@
-// Module ID: 14397
-// Function ID: 110063
+// Module ID: 14447
+// Function ID: 110386
 // Name: Code
-// Dependencies: [5, 57, 31, 27, 683, 653, 33, 4130, 689, 4126, 3988, 1557, 10329, 566, 14, 6707, 8332, 7879, 4541, 5503, 9094, 685, 5165, 12227, 2]
+// Dependencies: [5, 57, 31, 27, 683, 653, 33, 4130, 689, 4126, 3988, 1557, 10358, 566, 14, 6707, 8376, 7527, 4541, 5501, 9132, 685, 5165, 12254, 2]
 // Exports: default
 
-// Module 14397 (Code)
+// Module 14447 (Code)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -63,7 +63,7 @@ export default function UserSettingsStartupTimings() {
   callback = tmp4[1];
   useResult = useResult.use(lastTrackedAppUiViewed2Properties);
   let items = [useResult, first, first1];
-  const memo = useResult.useMemo(() => first(10329)(result, !first, first1).split("\n"), items);
+  const memo = useResult.useMemo(() => first(10358)(result, !first, first1).split("\n"), items);
   let obj = require(566) /* initialize */;
   let items1 = [_isNativeReflectConstruct];
   let closure_6 = obj.useStateFromStores(items1, () => alertStartupMetrics.alertStartupMetrics);
@@ -95,7 +95,7 @@ export default function UserSettingsStartupTimings() {
     obj = {
       title: "Performance testing",
       hasIcons: false,
-      children: callback(callback2(9094).TableCheckboxRow, {
+      children: callback(callback2(9132).TableCheckboxRow, {
         label: "Show start times at launch",
         onPress() {
           let obj = callback(table[21]);
@@ -105,7 +105,7 @@ export default function UserSettingsStartupTimings() {
         checked: closure_6
       })
     };
-    const items = [callback(callback2(5503).TableRowGroup, obj), , , , ];
+    const items = [callback(callback2(5501).TableRowGroup, obj), , , , ];
     const obj2 = { title: "Key Cold Start Times", hasIcons: false };
     const obj3 = {};
     const obj4 = {};
@@ -152,7 +152,7 @@ export default function UserSettingsStartupTimings() {
     obj4.children = items2;
     obj3.label = callback2(closure_10, obj4);
     obj2.children = callback(callback2(5165).TableRow, obj3);
-    items[1] = callback(callback2(5503).TableRowGroup, obj2);
+    items[1] = callback(callback2(5501).TableRowGroup, obj2);
     const obj13 = { title: "Legend", hasIcons: false };
     const obj14 = {};
     const obj15 = {};
@@ -160,17 +160,17 @@ export default function UserSettingsStartupTimings() {
     obj15.children = items10;
     obj14.label = callback2(closure_10, obj15);
     obj13.children = callback(callback2(5165).TableRow, obj14);
-    items[2] = callback(callback2(5503).TableRowGroup, obj13);
+    items[2] = callback(callback2(5501).TableRowGroup, obj13);
     const obj16 = { title: "Detailed Times", hasIcons: false };
     const items11 = [
-      callback(callback2(9094).TableCheckboxRow, {
+      callback(callback2(9132).TableCheckboxRow, {
         label: "Hide the Noise",
         onPress() {
           return outer1_2((arg0) => !arg0);
         },
         checked: first
       }),
-      callback(callback2(9094).TableCheckboxRow, {
+      callback(callback2(9132).TableCheckboxRow, {
         label: "Hide paints",
         onPress() {
           return outer1_4((arg0) => !arg0);
@@ -179,11 +179,11 @@ export default function UserSettingsStartupTimings() {
       })
     ];
     obj16.children = items11;
-    items[3] = callback2(callback2(5503).TableRowGroup, obj16);
+    items[3] = callback2(callback2(5501).TableRowGroup, obj16);
     const obj19 = { title: "Share Timings", hasIcons: true };
-    const obj20 = { icon: callback(callback2(12227).ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress: closure_14 };
+    const obj20 = { icon: callback(callback2(12254).ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress: closure_14 };
     obj19.children = callback(callback2(5165).TableRow, obj20);
-    items[4] = callback(callback2(5503).TableRowGroup, obj19);
+    items[4] = callback(callback2(5501).TableRowGroup, obj19);
     obj.children = items;
     const items12 = [callback2(callback2(4541).Stack, obj), callback(closure_6, { style: callback2.border })];
     obj.children = items12;
@@ -193,6 +193,6 @@ export default function UserSettingsStartupTimings() {
   obj.renderItem = function renderItem(children) {
     return callback(num, { children: children.item });
   };
-  obj.children = callback2(require(7879) /* defaultMVCPConfig */.FlashList, obj);
+  obj.children = callback2(require(7527) /* defaultMVCPConfig */.FlashList, obj);
   return callback2(closure_6, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9808
-// Function ID: 76157
+// Module ID: 9840
+// Function ID: 76351
 // Name: GiftingBadgeProgressBar
-// Dependencies: [31, 27, 8268, 33, 4130, 689, 9686, 4126, 1212, 2294, 2]
+// Dependencies: [31, 27, 8312, 33, 4130, 689, 9720, 4126, 1212, 2294, 2]
 // Exports: default
 
-// Module 9808 (GiftingBadgeProgressBar)
+// Module 9840 (GiftingBadgeProgressBar)
 import "result";
 import { View } from "get ActivityIndicator";
 import { getSingleRequirementThreshold as closure_4 } from "_isNativeReflectConstruct";
@@ -70,7 +70,7 @@ export default function GiftingBadgeProgress(title) {
   let tmp8 = null != simple_icon_url;
   if (tmp8) {
     obj = { icon: currentTier.simple_icon_url, size: iconSize };
-    tmp8 = callback2(importDefault(9686), obj);
+    tmp8 = callback2(importDefault(9720), obj);
   }
   const items = [tmp8, , ];
   obj = { style: tmp.content };
@@ -102,7 +102,7 @@ export default function GiftingBadgeProgress(title) {
   let tmp26 = null != simple_icon_url1;
   if (tmp26) {
     const obj6 = { icon: nextTier.simple_icon_url, size: iconSize };
-    tmp26 = callback2(importDefault(9686), obj6);
+    tmp26 = callback2(importDefault(9720), obj6);
   }
   items[2] = tmp26;
   obj.children = items;

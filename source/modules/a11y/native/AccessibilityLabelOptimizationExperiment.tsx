@@ -1,10 +1,10 @@
-// Module ID: 7641
-// Function ID: 61186
+// Module ID: 7730
+// Function ID: 61472
 // Name: apexExperiment
 // Dependencies: [1428, 4528, 2]
 // Exports: shouldSkipAccessibilityLabels
 
-// Module 7641 (apexExperiment)
+// Module 7730 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { kind: "user", name: "2026-03-mobile-accessibility-label-optimization", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

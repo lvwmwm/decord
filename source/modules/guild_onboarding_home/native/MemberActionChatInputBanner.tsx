@@ -1,9 +1,9 @@
-// Module ID: 11386
-// Function ID: 88510
+// Module ID: 11414
+// Function ID: 88749
 // Name: ActionChannelInfo
-// Dependencies: [57, 31, 27, 4122, 4991, 1348, 1917, 653, 1852, 33, 4130, 689, 624, 4320, 4126, 1212, 1273, 10949, 5085, 1392, 3771, 11387, 11384, 3991, 4131, 11388, 4660, 1198, 11385, 5607, 2]
+// Dependencies: [57, 31, 27, 4122, 4991, 1348, 1917, 653, 1852, 33, 4130, 689, 624, 4320, 4126, 1212, 1273, 10976, 5085, 1392, 3771, 11415, 11413, 3991, 4131, 11416, 4660, 1198, 7535, 5605, 2]
 
-// Module 11386 (ActionChannelInfo)
+// Module 11414 (ActionChannelInfo)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "shouldNavigate";
@@ -46,7 +46,7 @@ function ChannelActionEmoji(emoji) {
   let id;
   const tmp = callback3();
   let obj = { style: tmp.emojiPlaceholder };
-  obj = { size: id(1273).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(10949) };
+  obj = { size: id(1273).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(10976) };
   obj.children = callback(id(1273).Icon, obj);
   const tmp2 = callback(View, obj);
   id = undefined;
@@ -361,7 +361,7 @@ let closure_16 = { code: "function MemberActionChatInputBannerTsx1(){const{useRe
 let closure_17 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  let obj = channel(5607);
+  let obj = channel(5605);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [closure_9];
   const stateFromStores = channel(624).useStateFromStores(items, () => {
@@ -391,7 +391,7 @@ const memoResult1 = importAllResult.memo((channel) => {
   let channelAction;
   let completed;
   channel = channel.channel;
-  let obj = require(11387) /* useMemberActionsForChannel */;
+  let obj = require(11415) /* useMemberActionsForChannel */;
   const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
@@ -399,11 +399,11 @@ const memoResult1 = importAllResult.memo((channel) => {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = require(11387) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = require(11415) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
   if (null != channelAction) {
     actionType = channelAction.actionType;
   }
-  if (actionType !== require(11384) /* _createForOfIteratorHelperLoose */.NewMemberActionTypes.VIEW) {
+  if (actionType !== require(11413) /* _createForOfIteratorHelperLoose */.NewMemberActionTypes.VIEW) {
     obj = { channel };
     let tmp5 = callback(closure_18, obj);
   } else {

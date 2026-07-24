@@ -1,7 +1,7 @@
 // Module ID: 7196
-// Function ID: 57920
+// Function ID: 57949
 // Name: useNativeIAPPayments
-// Dependencies: [5, 57, 31, 5623, 3781, 3782, 5621, 653, 3, 566, 6658, 7197, 3791, 7198, 5450, 675, 7157, 5624, 44, 4451, 7200, 7201, 2]
+// Dependencies: [5, 57, 31, 5621, 3781, 3782, 5619, 653, 3, 566, 6658, 7197, 3791, 7198, 5450, 675, 7157, 5622, 44, 4451, 7200, 7201, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
 
 // Module 7196 (useNativeIAPPayments)

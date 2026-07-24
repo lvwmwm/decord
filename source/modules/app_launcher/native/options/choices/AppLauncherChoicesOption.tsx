@@ -1,10 +1,10 @@
-// Module ID: 11287
-// Function ID: 87836
+// Module ID: 11316
+// Function ID: 88076
 // Name: AppLauncherChoicesOption
-// Dependencies: [57, 31, 33, 4130, 689, 1820, 4098, 11288, 1934, 11292, 7495, 4126, 2]
+// Dependencies: [57, 31, 33, 4130, 689, 1820, 4098, 11317, 1934, 11321, 7636, 4126, 2]
 // Exports: default
 
-// Module 11287 (AppLauncherChoicesOption)
+// Module 11316 (AppLauncherChoicesOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";

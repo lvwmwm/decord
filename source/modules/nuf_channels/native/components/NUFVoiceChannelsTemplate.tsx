@@ -1,10 +1,10 @@
-// Module ID: 12706
-// Function ID: 98975
+// Module ID: 12757
+// Function ID: 99296
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [31, 33, 12707, 1212, 12708, 12696, 1820, 4944, 2]
+// Dependencies: [31, 33, 12758, 1212, 12759, 12747, 1820, 4944, 2]
 // Exports: default
 
-// Module 12706 (NUFVoiceChannelsTemplate)
+// Module 12757 (NUFVoiceChannelsTemplate)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export default function NUFVoiceChannelsTemplate(channel) {
   obj.title = intl.string(channel(1212).t.w5HAll);
   const intl2 = channel(1212).intl;
   obj.description = intl2.string(channel(1212).t.Ww4hhq);
-  obj.imageSrc = importDefault(12708);
+  obj.imageSrc = importDefault(12759);
   const intl3 = channel(1212).intl;
   obj.CTALabel = intl3.string(channel(1212).t.eIi3Om);
   obj.onCTAPress = function onCTAPress() {
@@ -28,5 +28,5 @@ export default function NUFVoiceChannelsTemplate(channel) {
     const obj2 = outer1_2(outer1_3[6]);
     const voiceChannel = outer1_1(outer1_3[7]).selectVoiceChannel(channel.id);
   };
-  return jsx(importDefault(12707), {});
+  return jsx(importDefault(12758), {});
 };

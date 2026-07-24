@@ -1,10 +1,10 @@
-// Module ID: 6910
-// Function ID: 55060
+// Module ID: 6909
+// Function ID: 55068
 // Name: promise
 // Dependencies: [2]
 // Exports: notifyAboutTTI, schedulePostTTIEvent
 
-// Module 6910 (promise)
+// Module 6909 (promise)
 let closure_0 = {
   resolve() {
 

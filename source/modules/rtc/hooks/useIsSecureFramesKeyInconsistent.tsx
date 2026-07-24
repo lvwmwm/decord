@@ -1,10 +1,10 @@
-// Module ID: 8908
-// Function ID: 70309
+// Module ID: 8947
+// Function ID: 70524
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [31, 4202, 4216, 566, 8897, 2]
+// Dependencies: [31, 4202, 4216, 566, 8936, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent
 
-// Module 8908 (useIsSecureFramesKeyInconsistent)
+// Module 8947 (useIsSecureFramesKeyInconsistent)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

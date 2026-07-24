@@ -1,10 +1,10 @@
-// Module ID: 7870
-// Function ID: 62696
+// Module ID: 7959
+// Function ID: 63015
 // Name: PremiumFeaturesBackground
 // Dependencies: [31, 6671, 1851, 33, 4130, 689, 666, 4554, 668, 2]
 // Exports: default
 
-// Module 7870 (PremiumFeaturesBackground)
+// Module 7959 (PremiumFeaturesBackground)
 import "result";
 import { Gradients } from "items";
 import { PremiumTypes } from "GuildFeatures";

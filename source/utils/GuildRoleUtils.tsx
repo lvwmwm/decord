@@ -1,5 +1,5 @@
 // Module ID: 1912
-// Function ID: 21570
+// Function ID: 21571
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [21, 665, 1913, 1914, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles

@@ -1,9 +1,9 @@
-// Module ID: 7754
-// Function ID: 61571
+// Module ID: 7847
+// Function ID: 61898
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 6902, 1316, 5592, 3767, 653, 7755, 3803, 7756, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 6901, 1316, 5590, 3767, 653, 7848, 3803, 7849, 22, 566, 686, 2]
 
-// Module 7754 (_isNativeReflectConstruct)
+// Module 7847 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import apply from "apply";
@@ -122,7 +122,7 @@ function categorizeTopAffinityFriendAnniversaries(flag) {
   if (flag === undefined) {
     flag = false;
   }
-  const result = require(7755) /* _createForOfIteratorHelperLoose */.categorizeFriendAnniversariesByAffinity(closure_16, (arg0) => {
+  const result = require(7848) /* _createForOfIteratorHelperLoose */.categorizeFriendAnniversariesByAffinity(closure_16, (arg0) => {
     const userAffinity = outer1_10.getUserAffinity(arg0);
     let dmProbability;
     if (null != userAffinity) {
@@ -167,7 +167,7 @@ function updateFriendAnniversaries() {
                     let tmp25 = date;
                     let tmp26 = require;
                     let tmp27 = dependencyMap;
-                    let obj = require(7755) /* _createForOfIteratorHelperLoose */;
+                    let obj = require(7848) /* _createForOfIteratorHelperLoose */;
                     tmp20 = date;
                     if (obj.isFriendAnniversary(date)) {
                       let tmp28 = arr;
@@ -194,7 +194,7 @@ function updateFriendAnniversaries() {
           } else {
             resetFriendAnniversaries();
           }
-          obj3 = require(7756) /* getFriendAnniversaryGateConfig */;
+          obj3 = require(7849) /* getFriendAnniversaryGateConfig */;
         }
       }
     }
@@ -523,7 +523,7 @@ tmp4 = new tmp4(require("dispatcher"), {
         iter = iter2;
       } while (!iter2.done);
     }
-    closure_15.messageGiftIntentLastShownMap = require(7755) /* _createForOfIteratorHelperLoose */.pruneTimestampMap(obj, getCurrentTime(), 1296000000);
+    closure_15.messageGiftIntentLastShownMap = require(7848) /* _createForOfIteratorHelperLoose */.pruneTimestampMap(obj, getCurrentTime(), 1296000000);
     closure_15.lastKnownGiftIntentDismissedAtMs = settingsTimestampMs;
   },
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: function handleDevToolResetFriendsListGiftIntentsShown() {

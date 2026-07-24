@@ -1,9 +1,9 @@
-// Module ID: 8473
-// Function ID: 67588
+// Module ID: 8517
+// Function ID: 67816
 // Name: closeModal
-// Dependencies: [5, 57, 31, 27, 1353, 4947, 653, 1354, 33, 4130, 689, 4337, 4660, 1212, 1273, 7640, 7491, 5515, 566, 5598, 7495, 4126, 8474, 8475, 8476, 4559, 675, 1820, 7482, 5601, 4029, 7494, 8477, 7535, 4543, 5121, 5587, 2]
+// Dependencies: [5, 57, 31, 27, 1353, 4947, 653, 1354, 33, 4130, 689, 4337, 4660, 1212, 1273, 7729, 7571, 5513, 566, 5596, 7636, 4126, 8518, 8519, 8520, 4559, 675, 1820, 7562, 5599, 4029, 8521, 8522, 7580, 4543, 5121, 5585, 2]
 
-// Module 8473 (closeModal)
+// Module 8517 (closeModal)
 import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "FormHeader";
@@ -36,7 +36,7 @@ function NavigationBar(guild) {
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
     obj.onPress = closeModal;
-    obj = { source: importDefault(7640) };
+    obj = { source: importDefault(7729) };
     obj.children = callback2(require(1273) /* Button */.Icon, obj);
     obj.children = callback2(require(4660) /* PressableBase */.PressableOpacity, obj);
     tmp2 = callback2(closure_7, obj);
@@ -46,11 +46,11 @@ function NavigationBar(guild) {
 function HeaderIcon(guild) {
   guild = guild.guild;
   if (null == guild) {
-    let tmp7 = callback2(importDefault(7491), {});
+    let tmp7 = callback2(importDefault(7571), {});
   } else {
-    const obj = { style: tmp.guildIcon, size: require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE, guild };
-    tmp7 = callback2(importDefault(5515), obj);
-    const tmp5 = importDefault(5515);
+    const obj = { style: tmp.guildIcon, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE, guild };
+    tmp7 = callback2(importDefault(5513), obj);
+    const tmp5 = importDefault(5513);
   }
   return tmp7;
 }

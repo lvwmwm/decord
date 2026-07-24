@@ -1,8 +1,8 @@
-// Module ID: 10317
-// Function ID: 79614
-// Dependencies: [31, 27, 33, 4130, 689, 1212, 4138, 4062, 10310, 9949, 10254, 2]
+// Module ID: 10346
+// Function ID: 79805
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 4138, 4062, 10339, 9981, 10284, 2]
 
-// Module 10317
+// Module 10346
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -29,16 +29,16 @@ const memoResult = importAllResult.memo(function MessageFailedToSendNotification
   obj = {};
   obj = { style: callback().iconContainer };
   const obj1 = { size: "md", color: messageId(689).colors.ICON_SUBTLE };
-  obj.children = jsx(channelId(9949).RetryIcon, { size: "md", color: messageId(689).colors.ICON_SUBTLE });
+  obj.children = jsx(channelId(9981).RetryIcon, { size: "md", color: messageId(689).colors.ICON_SUBTLE });
   obj.icon = <View style={callback().iconContainer} />;
   const obj2 = {};
   const intl2 = channelId(1212).intl;
   obj2.text = intl2.string(channelId(1212).t.xxRPOT);
-  obj.children = jsx(channelId(10254).SystemMessageText, {});
+  obj.children = jsx(channelId(10284).SystemMessageText, {});
   obj.header = obj;
   obj.onPress = callback;
   obj.notification = notification;
-  return jsx(channelId(10310).NotificationPressable, { style: callback().iconContainer });
+  return jsx(channelId(10339).NotificationPressable, { style: callback().iconContainer });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_notifications/native/MessageFailedToSendNotification.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12920
-// Function ID: 100282
+// Module ID: 12972
+// Function ID: 100605
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 57, 31, 27, 1849, 7632, 33, 4130, 689, 566, 4319, 1392, 12921, 4126, 1212, 4541, 10298, 8577, 12922, 12966, 4543, 5167, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 7721, 33, 4130, 689, 566, 4319, 1392, 12973, 4126, 1212, 4541, 10327, 8620, 12974, 13018, 4543, 5167, 2]
 // Exports: default
 
-// Module 12920 (GuildSettingsServerTagPreview)
+// Module 12972 (GuildSettingsServerTagPreview)
 import items from "items";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -103,7 +103,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   obj2 = { style: items3 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp2);
-  obj3 = { source: onAdopted(10298), style: tmp2.avatar, importantForAccessibility: "no" };
+  obj3 = { source: onAdopted(10327), style: tmp2.avatar, importantForAccessibility: "no" };
   const items4 = [callback3(closure_6, obj3), ];
   const obj4 = { style: tmp2.messageBody };
   const items5 = [callback3(guildId(4126).Text, { variant: "text-md/semibold", color: "text-default", children: "Locke" }), ];
@@ -141,11 +141,11 @@ export default function GuildSettingsServerTagPreview(guildId) {
       }
       obj12.secondaryTintColor = tmp26;
       ({ SIZE_12: obj18.width, SIZE_12: obj18.height } = GuildTagBadgeSize);
-      tmp22Result = callback3(guildId(12922).GuildBadge, obj12);
+      tmp22Result = callback3(guildId(12974).GuildBadge, obj12);
       const tmp22 = callback3;
     }
     obj11.guildBadge = tmp22Result;
-    tmp18Result = callback3(guildId(8577).BaseGuildTagChiplet, obj11);
+    tmp18Result = callback3(guildId(8620).BaseGuildTagChiplet, obj11);
     const tmp18 = callback3;
   }
   items8[1] = tmp18Result;
@@ -162,7 +162,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const obj14 = { style: items10 };
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp2);
-  const items11 = [callback3(closure_6, { source: onAdopted(12966), style: tmp2.avatar, importantForAccessibility: "no" }), ];
+  const items11 = [callback3(closure_6, { source: onAdopted(13018), style: tmp2.avatar, importantForAccessibility: "no" }), ];
   const obj16 = { style: tmp2.messageBody };
   const items12 = [callback3(guildId(4126).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" }), ];
   const obj17 = { variant: "text-md/normal", color: "text-default" };

@@ -1,12 +1,12 @@
-// Module ID: 15249
-// Function ID: 116366
+// Module ID: 15296
+// Function ID: 116688
 // Name: jsx
-// Dependencies: [31, 8293, 33, 5517, 4489, 2]
+// Dependencies: [31, 8337, 33, 5515, 4489, 2]
 // Exports: default
 
-// Module 15249 (jsx)
+// Module 15296 (jsx)
 import "result";
-import module_8293 from "module_8293";
+import module_8337 from "module_8337";
 import { jsx } from "jsxProd";
 import set from "set";
 

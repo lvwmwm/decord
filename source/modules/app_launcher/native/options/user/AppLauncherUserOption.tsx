@@ -1,10 +1,10 @@
-// Module ID: 11307
-// Function ID: 87962
+// Module ID: 11336
+// Function ID: 88202
 // Name: AppLauncherUserOption
-// Dependencies: [57, 31, 4122, 33, 4130, 689, 566, 11299, 1820, 4098, 11308, 1934, 11308, 1273, 11302, 9104, 11305, 4126, 2]
+// Dependencies: [57, 31, 4122, 33, 4130, 689, 566, 11328, 1820, 4098, 11337, 1934, 11337, 1273, 11331, 7607, 11334, 4126, 2]
 // Exports: default
 
-// Module 11307 (AppLauncherUserOption)
+// Module 11336 (AppLauncherUserOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -86,14 +86,14 @@ export default function AppLauncherUserOption(option) {
     obj = { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: option(1273).AvatarSizes.REFRESH_MEDIUM_32 };
     let tmp15 = jsx(option(1273).Avatar, { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: option(1273).AvatarSizes.REFRESH_MEDIUM_32 });
   } else {
-    const obj1 = { icon: jsx(option(9104).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
-    tmp15 = jsx(importDefault(11302), { icon: jsx(option(9104).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper });
-    const tmp13 = importDefault(11302);
+    const obj1 = { icon: jsx(option(7607).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
+    tmp15 = jsx(importDefault(11331), { icon: jsx(option(7607).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper });
+    const tmp13 = importDefault(11331);
   }
   obj.leading = tmp15;
   if (null != tmp6) {
     let obj2 = { guildId: guild_id, user: tmp6 };
-    let tmp19 = jsx(importDefault(11305), { guildId: guild_id, user: tmp6 });
+    let tmp19 = jsx(importDefault(11334), { guildId: guild_id, user: tmp6 });
   } else {
     tmp19 = null;
     if (null != first) {
@@ -103,5 +103,5 @@ export default function AppLauncherUserOption(option) {
   }
   obj.selectedItemName = tmp19;
   obj.autoFocus = autoFocus;
-  return tmp7(importDefault(11299), obj);
+  return tmp7(importDefault(11328), obj);
 };

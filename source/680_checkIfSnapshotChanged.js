@@ -1,5 +1,5 @@
 // Module ID: 680
-// Function ID: 8397
+// Function ID: 8398
 // Name: checkIfSnapshotChanged
 // Dependencies: [681]
 

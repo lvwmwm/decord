@@ -1,10 +1,10 @@
-// Module ID: 15844
-// Function ID: 122454
+// Module ID: 15891
+// Function ID: 122776
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [57, 31, 27, 10015, 33, 3991, 5517, 1273, 4130, 689, 10385, 15774, 4542, 15769, 5217, 15845, 2]
+// Dependencies: [57, 31, 27, 10047, 33, 3991, 5515, 1273, 4130, 689, 10414, 15821, 4542, 15816, 5217, 15892, 2]
 // Exports: default
 
-// Module 15844 (VoicePanelPIPPushToTalkOverlay)
+// Module 15891 (VoicePanelPIPPushToTalkOverlay)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { PUSH_TO_TALK_PIP_PHYSICS } from "VoicePanelModes";
@@ -38,7 +38,7 @@ let closure_18 = { code: "function VoicePanelPIPPushToTalkOverlayTsx6(){const{ru
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPPushToTalkOverlay.tsx");
 
 export default function VoicePanelPIPPushToTalkOverlay() {
-  let obj = pIPState(15774);
+  let obj = pIPState(15821);
   pIPState = obj.usePIPState();
   const tmp2 = callback3();
   const tmp3 = WHITE((function usePushToTalk() {
@@ -122,7 +122,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
       return obj;
     }
   }
-  obj1 = { withSpring: pIPState(4542).withSpring, isPushingToTalk: first, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(15769).getVoicePanelPIPBorderRadius, pipState: pIPState };
+  obj1 = { withSpring: pIPState(4542).withSpring, isPushingToTalk: first, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: pIPState(15816).getVoicePanelPIPBorderRadius, pipState: pIPState };
   H.__closure = obj1;
   H.__workletHash = 450590017248;
   H.__initData = closure_15;
@@ -170,7 +170,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   obj3 = { gesture: memo };
   const obj4 = { style: items3, hitSlop: closure_11 };
   items3 = [tmp2.iconContainer, animatedStyle];
-  obj5 = { style: animatedStyle1, size: pIPState(1273).Icon.Sizes.SMALL_20, source: first(15845), disableColor: true };
+  obj5 = { style: animatedStyle1, size: pIPState(1273).Icon.Sizes.SMALL_20, source: first(15892), disableColor: true };
   obj4.children = callback(closure_10, obj5);
   obj3.children = callback(set, obj4);
   items2[1] = callback(pIPState(5217).GestureDetector, obj3);

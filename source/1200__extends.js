@@ -1,5 +1,5 @@
 // Module ID: 1200
-// Function ID: 13774
+// Function ID: 13775
 // Name: _extends
 // Dependencies: [1201, 1203, 1205, 1206]
 // Exports: createBrowserHistory, createHashHistory, createMemoryHistory, locationsAreEqual

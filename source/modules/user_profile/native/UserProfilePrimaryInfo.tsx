@@ -1,10 +1,10 @@
-// Module ID: 8512
-// Function ID: 67910
+// Module ID: 8557
+// Function ID: 68140
 // Name: getStyleConfig
-// Dependencies: [31, 27, 8264, 5512, 653, 7632, 33, 4130, 689, 8513, 8514, 8523, 4660, 8525, 4126, 8527, 6971, 3982, 8561, 1212, 8575, 8265, 5796, 3831, 8254, 675, 6969, 4979, 477, 8576, 1450, 7845, 8577, 3969, 2]
+// Dependencies: [31, 27, 8308, 5510, 653, 7721, 33, 4130, 689, 8558, 8559, 8568, 4660, 8570, 4126, 8572, 6970, 3982, 8606, 1212, 8618, 8309, 5796, 3831, 8298, 675, 6968, 4979, 477, 8619, 1450, 7934, 8620, 3969, 2]
 // Exports: default
 
-// Module 8512 (getStyleConfig)
+// Module 8557 (getStyleConfig)
 import getUserPrimaryGuild from "getUserPrimaryGuild";
 import get_ActivityIndicator from "QuestsVisibleMessagesChangedSource";
 import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY";
@@ -443,7 +443,7 @@ function GuildTag(arg0) {
     showToastOnPress = false;
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(7845) /* getUserPrimaryGuild */;
+  let obj = require(7934) /* getUserPrimaryGuild */;
   let primaryGuild;
   if (null != user) {
     primaryGuild = user.primaryGuild;
@@ -468,7 +468,7 @@ function GuildTag(arg0) {
       obj1.textStyle = obj2;
       obj1.badgeSize = guildTagBadgeSize;
       obj1.textVariant = tmp4.guildTagTextVariant;
-      obj.children = callback(importDefault(8577), obj1);
+      obj.children = callback(importDefault(8620), obj1);
       tmp6 = callback(closure_5, obj);
     }
   }

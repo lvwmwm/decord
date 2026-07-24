@@ -1,9 +1,9 @@
-// Module ID: 11452
-// Function ID: 89139
+// Module ID: 11482
+// Function ID: 89360
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 11453, 11454, 684, 11455, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 11483, 11484, 684, 11485, 566, 686, 2]
 
-// Module 11452 (_isNativeReflectConstruct)
+// Module 11482 (_isNativeReflectConstruct)
 import isStaff from "isStaff";
 import fromEntries from "fromEntries";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -143,7 +143,7 @@ obj = {
     const id = user.id;
     let tmp = !c11;
     if (tmp) {
-      tmp = importDefault(11454)(user);
+      tmp = importDefault(11484)(user);
     }
     if (tmp) {
       c11 = true;
@@ -191,7 +191,7 @@ obj = {
     let from;
     let to;
     ({ from, to } = arg0);
-    closure_13 = require(11455) /* calculatePositionDeltas */.moveItemFromTo(closure_13, from, to);
+    closure_13 = require(11485) /* calculatePositionDeltas */.moveItemFromTo(closure_13, from, to);
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate(user) {
     user = user.user;

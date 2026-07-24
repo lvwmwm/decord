@@ -1,10 +1,10 @@
-// Module ID: 9646
-// Function ID: 75122
+// Module ID: 7609
+// Function ID: 60618
 // Name: IdIcon
-// Dependencies: [31, 33, 689, 3833, 9647, 2]
+// Dependencies: [31, 33, 689, 3833, 7610, 2]
 // Exports: IdIcon
 
-// Module 9646 (IdIcon)
+// Module 7609 (IdIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const IdIcon = function IdIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9647) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(7610) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9647) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7610) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

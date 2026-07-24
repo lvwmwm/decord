@@ -1,5 +1,5 @@
 // Module ID: 3365
-// Function ID: 26476
+// Function ID: 26477
 // Name: addISOWeekYears
 // Dependencies: [3213, 3366, 3369, 3210]
 // Exports: default

@@ -1,8 +1,8 @@
-// Module ID: 10114
-// Function ID: 78278
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 10115, 4126, 1212, 2]
+// Module ID: 10146
+// Function ID: 78472
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 10147, 4126, 1212, 2]
 
-// Module 10114
+// Module 10146
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -18,7 +18,7 @@ obj.container = obj;
 let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = require("result").memo(function HomeChannelHeader() {
   let obj = { style: callback3().container };
-  obj = { source: importDefault(10115), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
+  obj = { source: importDefault(10147), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
   const items = [callback(require(1273) /* Button */.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active" };
   const intl = require(1212) /* getSystemLocale */.intl;

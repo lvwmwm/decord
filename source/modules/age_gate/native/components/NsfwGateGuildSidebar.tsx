@@ -1,10 +1,10 @@
-// Module ID: 15095
-// Function ID: 114917
+// Module ID: 15142
+// Function ID: 115238
 // Name: NsfwGateGuildSidebar
-// Dependencies: [31, 27, 1917, 1838, 1849, 9350, 653, 33, 4130, 689, 566, 675, 7926, 14986, 1273, 5052, 15096, 1212, 1920, 2]
+// Dependencies: [31, 27, 1917, 1838, 1849, 9386, 653, 33, 4130, 689, 566, 675, 8013, 15033, 1273, 5052, 15143, 1212, 1920, 2]
 // Exports: default
 
-// Module 15095 (NsfwGateGuildSidebar)
+// Module 15142 (NsfwGateGuildSidebar)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

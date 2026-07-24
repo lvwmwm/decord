@@ -1,10 +1,10 @@
-// Module ID: 15560
-// Function ID: 120014
+// Module ID: 15607
+// Function ID: 120336
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [31, 27, 3767, 33, 4130, 1273, 689, 566, 3969, 15561, 1395, 4126, 1212, 15562, 15563, 2]
+// Dependencies: [31, 27, 3767, 33, 4130, 1273, 689, 566, 3969, 15608, 1395, 4126, 1212, 15609, 15610, 2]
 // Exports: default
 
-// Module 15560 (MessageRequestRowSenderDetails)
+// Module 15607 (MessageRequestRowSenderDetails)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -53,7 +53,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
       return nickname;
     }
   });
-  let obj1 = otherUser(15561);
+  let obj1 = otherUser(15608);
   const messageRequestRelativeTimestampText = obj1.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const rounded = Math.floor(random * importDefault(1395).DEFAULT_AVATARS.length);
@@ -110,7 +110,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   let tmp22 = !flag;
   if (tmp22) {
     const obj10 = { style: tmp.messagePreview, channel };
-    tmp22 = callback(importDefault(15562), obj10);
+    tmp22 = callback(importDefault(15609), obj10);
   }
   items5[1] = tmp22;
   if (flag) {
@@ -120,8 +120,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     obj11 = { style: tmp.messagePreview, userId: otherUser.id };
     const intl2 = otherUser(1212).intl;
     obj11.suffix = intl2.string(otherUser(1212).t.hTltPn);
-    flag = callback(importDefault(15563), obj11);
-    const tmp29 = importDefault(15563);
+    flag = callback(importDefault(15610), obj11);
+    const tmp29 = importDefault(15610);
   }
   items5[2] = flag;
   obj3.children = items5;

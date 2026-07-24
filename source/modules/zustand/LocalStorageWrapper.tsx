@@ -1,9 +1,9 @@
-// Module ID: 6946
-// Function ID: 55527
+// Module ID: 6945
+// Function ID: 55536
 // Name: frozen
 // Dependencies: [587, 2]
 
-// Module 6946 (frozen)
+// Module 6945 (frozen)
 const frozen = Object.freeze({
   getItem(arg0) {
     const Storage = require(587) /* Storage */.Storage;

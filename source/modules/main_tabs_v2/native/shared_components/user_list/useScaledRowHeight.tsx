@@ -1,10 +1,10 @@
-// Module ID: 8832
-// Function ID: 69618
+// Module ID: 8871
+// Function ID: 69833
 // Name: useScaledRowHeightData
 // Dependencies: [4549, 3834, 689, 2]
 // Exports: default
 
-// Module 8832 (useScaledRowHeightData)
+// Module 8871 (useScaledRowHeightData)
 function useScaledRowHeightData() {
   let obj = require(4549) /* getFontScale */;
   const fontScale = obj.useFontScale();

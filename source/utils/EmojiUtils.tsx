@@ -1,7 +1,7 @@
 // Module ID: 3775
-// Function ID: 29025
+// Function ID: 29026
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 1352, 3758, 1849, 653, 1852, 3774, 3776, 4996, 3751, 7025, 1447, 1392, 2]
+// Dependencies: [5, 1352, 3758, 1849, 653, 1852, 3774, 3776, 4996, 3751, 7024, 1447, 1392, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
 // Module 3775 (_createForOfIteratorHelperLoose)
@@ -438,7 +438,7 @@ export const getEmojiUrl = function getEmojiUrl(arg0, arg1) {
     let emojiURL = importDefault(1392).getEmojiURL(obj);
     const obj2 = importDefault(1392);
   } else {
-    obj = importDefault(7025);
+    obj = importDefault(7024);
     emojiURL = obj.getURL(tmp);
   }
   return emojiURL;

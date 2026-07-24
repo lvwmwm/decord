@@ -1,10 +1,10 @@
-// Module ID: 7540
-// Function ID: 60326
+// Module ID: 7585
+// Function ID: 60434
 // Name: getScreens
-// Dependencies: [31, 33, 4130, 689, 4337, 1212, 5788, 7541, 7546, 5519, 2]
+// Dependencies: [31, 33, 4130, 689, 4337, 1212, 5788, 7586, 7591, 5517, 2]
 // Exports: default
 
-// Module 7540 (getScreens)
+// Module 7585 (getScreens)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -33,7 +33,7 @@ function getScreens(headerStyle, headerTitle) {
   };
   obj.render = function render(arg0, arg1) {
     let closure_0 = arg1;
-    return handleClose(callback2(7541), {
+    return handleClose(callback2(7586), {
       onClose: handleClose,
       trustedOrigin: origin,
       onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
@@ -52,7 +52,7 @@ function getScreens(headerStyle, headerTitle) {
       return handleClose(callback(5788).HeaderActionButton, obj);
     },
     render(injectedJavaScriptBeforeContentLoaded) {
-      return handleClose(callback2(7546), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+      return handleClose(callback2(7591), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
     }
   };
   obj[constants.VERIFY_AGE] = obj;

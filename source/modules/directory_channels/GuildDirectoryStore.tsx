@@ -1,9 +1,9 @@
-// Module ID: 10042
-// Function ID: 77570
+// Module ID: 10074
+// Function ID: 77764
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 10035, 10034, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 10067, 10066, 566, 686, 2]
 
-// Module 10042 (_isNativeReflectConstruct)
+// Module 10074 (_isNativeReflectConstruct)
 import orderByTotalMemberCount from "orderByTotalMemberCount";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -154,7 +154,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   GUILD_DIRECTORY_ENTRY_CREATE: function handleCreateEntry(channelId) {
     channelId = channelId.channelId;
-    let obj = require(10034) /* orderByTotalMemberCount */;
+    let obj = require(10066) /* orderByTotalMemberCount */;
     const result = obj.guildDirectoryEntryFromServer(channelId.entry);
     if (null != result) {
       let tmp2;
@@ -242,7 +242,7 @@ tmp2 = new tmp2(require("dispatcher"), {
   },
   GUILD_DIRECTORY_ENTRY_UPDATE: function handleUpdateEntry(channelId) {
     channelId = channelId.channelId;
-    let obj = require(10034) /* orderByTotalMemberCount */;
+    let obj = require(10066) /* orderByTotalMemberCount */;
     const result = obj.guildDirectoryEntryFromServer(channelId.entry);
     let tmp5;
     if (null != dependencyMap[channelId]) {

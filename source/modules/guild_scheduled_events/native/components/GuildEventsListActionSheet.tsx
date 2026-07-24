@@ -1,10 +1,10 @@
-// Module ID: 8453
-// Function ID: 67429
+// Module ID: 8497
+// Function ID: 67657
 // Name: GuildEventsListHeader
-// Dependencies: [31, 27, 4142, 1354, 653, 4326, 33, 4130, 8454, 5186, 1212, 8390, 8365, 8455, 8357, 8353, 4559, 675, 5069, 5187, 8458, 5122, 2]
+// Dependencies: [31, 27, 4142, 1354, 653, 4326, 33, 4130, 8498, 5186, 1212, 8434, 8409, 8499, 8401, 8397, 4559, 675, 5069, 5187, 8502, 5122, 2]
 // Exports: default
 
-// Module 8453 (GuildEventsListHeader)
+// Module 8497 (GuildEventsListHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ function GuildEventsListHeader(arg0) {
   let eventCount;
   let guild;
   ({ eventCount, guild } = arg0);
-  let tmp = importDefault(8454)(guild.id);
+  let tmp = importDefault(8498)(guild.id);
   importDefault = tmp;
   let obj = {};
   if (eventCount > 0) {
@@ -50,7 +50,7 @@ function GuildEventsListHeader(arg0) {
         const obj2 = guild(outer1_2[12]);
       }
     };
-    tmp = jsx(guild(8390).ActionSheetHeaderPressableText, {});
+    tmp = jsx(guild(8434).ActionSheetHeaderPressableText, {});
   }
   obj.trailing = tmp;
   return jsx(guild(5186).BottomSheetTitleHeader, {});
@@ -60,7 +60,7 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default function GuildEventsListActionSheet(guild) {
   guild = guild.guild;
-  arr = arr(8455)(guild.id);
+  arr = arr(8499)(guild.id);
   const items = [arr, guild.id];
   const tmp = callback();
   const effect = React.useEffect(() => {
@@ -104,7 +104,7 @@ export default function GuildEventsListActionSheet(guild) {
   const obj1 = { inActionSheet: true, events: arr, onPressEvent: callback1, onCloseAction: callback, guild };
   const ref = React.useRef(_isNativeReflectConstruct.ackMessageId(guild.id, ReadStateTypes.GUILD_EVENT));
   obj1.lastAckedId = arr(5122)(ref);
-  obj.children = jsx(arr(8458), { inActionSheet: true, events: arr, onPressEvent: callback1, onCloseAction: callback, guild });
+  obj.children = jsx(arr(8502), { inActionSheet: true, events: arr, onPressEvent: callback1, onCloseAction: callback, guild });
   obj.children = <View style={tmp.container} />;
   return jsx(guild(5187).BottomSheet, { style: tmp.container });
 };

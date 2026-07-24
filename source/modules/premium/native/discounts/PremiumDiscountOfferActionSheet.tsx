@@ -1,10 +1,10 @@
-// Module ID: 15617
-// Function ID: 120449
+// Module ID: 15664
+// Function ID: 120771
 // Name: markAsDismissed
-// Dependencies: [31, 1851, 653, 1345, 33, 5464, 5484, 675, 7374, 8139, 6661, 5187, 15618, 2]
+// Dependencies: [31, 1851, 653, 1345, 33, 5462, 5482, 675, 7374, 8183, 6661, 5187, 15665, 2]
 // Exports: default
 
-// Module 15617 (markAsDismissed)
+// Module 15664 (markAsDismissed)
 import result from "result";
 import GuildFeatures from "GuildFeatures";
 import ME from "ME";

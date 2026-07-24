@@ -1,10 +1,10 @@
-// Module ID: 13719
-// Function ID: 105239
+// Module ID: 13770
+// Function ID: 105563
 // Name: FamilyCenterSettingsParentalControlsNotice
-// Dependencies: [31, 7483, 33, 7123, 13650, 2198, 6822, 4140, 2]
+// Dependencies: [31, 7563, 33, 7122, 13701, 2198, 6821, 4140, 2]
 // Exports: default
 
-// Module 13719 (FamilyCenterSettingsParentalControlsNotice)
+// Module 13770 (FamilyCenterSettingsParentalControlsNotice)
 import "result";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/family_center/native/FamilyCenterSettingsNotice.tsx");
 
 export default function FamilyCenterSettingsParentalControlsNotice() {
-  let obj = activeLinkUserIds(7123);
+  let obj = activeLinkUserIds(7122);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = {
     label: importDefault(2198).i284fU,
@@ -26,7 +26,7 @@ export default function FamilyCenterSettingsParentalControlsNotice() {
     },
     count: activeLinkUserIds.length
   };
-  return jsx(importDefault(13650), {
+  return jsx(importDefault(13701), {
     label: importDefault(2198).i284fU,
     noticeType: SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
     labelHook() {

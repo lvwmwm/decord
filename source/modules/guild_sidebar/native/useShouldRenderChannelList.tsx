@@ -1,10 +1,10 @@
-// Module ID: 15087
-// Function ID: 114792
+// Module ID: 15134
+// Function ID: 115113
 // Name: useShouldRenderChannelList
 // Dependencies: [57, 31, 6708, 4808, 653, 3981, 3982, 1207, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 15087 (useShouldRenderChannelList)
+// Module 15134 (useShouldRenderChannelList)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

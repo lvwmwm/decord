@@ -1,10 +1,10 @@
-// Module ID: 7085
-// Function ID: 56750
+// Module ID: 7084
+// Function ID: 56759
 // Name: getAttachmentMimeTypes
 // Dependencies: [653, 4324, 2]
 // Exports: logMessageSendFailure
 
-// Module 7085 (getAttachmentMimeTypes)
+// Module 7084 (getAttachmentMimeTypes)
 import { AnalyticEvents } from "ME";
 
 function getAttachmentMimeTypes(fileItems) {

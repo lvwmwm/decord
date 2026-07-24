@@ -1,9 +1,9 @@
-// Module ID: 13669
-// Function ID: 104976
+// Module ID: 13720
+// Function ID: 105300
 // Name: pressable
-// Dependencies: [1849, 7662, 566, 9181, 10095, 1212, 2]
+// Dependencies: [1849, 7751, 566, 9217, 10127, 1212, 2]
 
-// Module 13669 (pressable)
+// Module 13720 (pressable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -26,7 +26,7 @@ createToggle = {
     });
   },
   onPress: function onAccountEmailSettingPress() {
-    importDefault(9181).open(true);
+    importDefault(9217).open(true);
   },
   withArrow: true
 };

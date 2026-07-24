@@ -1,10 +1,10 @@
-// Module ID: 15088
-// Function ID: 114800
+// Module ID: 15135
+// Function ID: 115121
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1347, 1351, 3757, 4808, 6758, 5039, 3760, 1352, 5076, 1348, 6759, 4162, 3758, 4142, 1906, 4325, 1386, 482, 6760, 1282, 5690, 10190, 22, 1327, 2]
+// Dependencies: [57, 31, 1347, 1351, 3757, 4808, 6758, 5039, 3760, 1352, 5076, 1348, 6759, 4162, 3758, 4142, 1906, 4325, 1386, 482, 6760, 1282, 5690, 10220, 22, 1327, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15088 (_createForOfIteratorHelperLoose)
+// Module 15135 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import importDefaultResult1 from "_isNativeReflectConstruct";
@@ -337,7 +337,7 @@ function computeFavoritesState(favoriteChannels) {
     },
     set: undefined
   });
-  const favoritesCategories = favoriteChannels(10190).getFavoritesCategories(favoriteChannels);
+  const favoritesCategories = favoriteChannels(10220).getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
     id = id.id;
@@ -610,7 +610,7 @@ let items = [importDefaultResult, importDefaultResult1, importDefaultResult2, im
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_sidebar/FavoritesGuildChannelList.tsx");
 
 export const useFavoritesGuildChannelList = function useFavoritesGuildChannelList() {
-  let obj = hasAccess(10190);
+  let obj = hasAccess(10220);
   hasAccess = obj.useFavoritesAccess("FavoritesGuildChannelList").hasAccess;
   let tmp = callback(React.useState(() => outer1_27()), 2);
   let closure_1 = tmp[1];

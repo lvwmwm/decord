@@ -1,10 +1,10 @@
-// Module ID: 12974
-// Function ID: 100420
+// Module ID: 13026
+// Function ID: 100743
 // Name: CommunityPill
-// Dependencies: [31, 27, 12975, 1838, 5657, 653, 33, 4130, 689, 478, 1212, 5707, 5704, 9023, 5710, 4660, 3831, 1273, 4126, 8133, 566, 1387, 12976, 12977, 1450, 5515, 1392, 1426, 8829, 3834, 5085, 5701, 10121, 2]
+// Dependencies: [31, 27, 13027, 1838, 5657, 653, 33, 4130, 689, 478, 1212, 5707, 5704, 9062, 5710, 4660, 3831, 1273, 4126, 7423, 566, 1387, 13028, 13029, 1450, 5513, 1392, 1426, 8868, 3834, 5085, 5701, 10153, 2]
 // Exports: default
 
-// Module 12974 (CommunityPill)
+// Module 13026 (CommunityPill)
 import GuildBadgeV2 from "GuildBadgeV2";
 import get_ActivityIndicator from "isAttachmentLadderEnabled";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,7 +29,7 @@ function CommunityPill(guildVisibility) {
   if (guildVisibility.guildVisibility === GlobeEarthIcon(5704).GuildVisibility.PUBLIC) {
     const intl2 = GlobeEarthIcon(1212).intl;
     importDefault = intl2.string(GlobeEarthIcon(1212).t.op2cJ6);
-    GlobeEarthIcon = GlobeEarthIcon(9023).GlobeEarthIcon;
+    GlobeEarthIcon = GlobeEarthIcon(9062).GlobeEarthIcon;
     tmp2 = importDefault(5710);
   }
   let obj = {

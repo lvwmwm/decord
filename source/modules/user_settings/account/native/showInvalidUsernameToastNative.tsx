@@ -1,10 +1,10 @@
-// Module ID: 9232
-// Function ID: 72197
+// Module ID: 9268
+// Function ID: 72406
 // Name: showInvalidUsernameToast
-// Dependencies: [3831, 1212, 7607, 2]
+// Dependencies: [3831, 1212, 7696, 2]
 // Exports: showInvalidUsernameToast
 
-// Module 9232 (showInvalidUsernameToast)
+// Module 9268 (showInvalidUsernameToast)
 const result = require("registerAsset").fileFinishedImporting("modules/user_settings/account/native/showInvalidUsernameToastNative.tsx");
 
 export const showInvalidUsernameToast = function showInvalidUsernameToast() {
@@ -12,6 +12,6 @@ export const showInvalidUsernameToast = function showInvalidUsernameToast() {
   obj = { key: "USER_SETTINGS_UPDATE_FAILURE" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.content = intl.string(require(1212) /* getSystemLocale */.t["TGg/2k"]);
-  obj.icon = importDefault(7607);
+  obj.icon = importDefault(7696);
   obj.open(obj);
 };

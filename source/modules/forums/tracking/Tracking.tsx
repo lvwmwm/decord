@@ -1,10 +1,10 @@
-// Module ID: 7009
-// Function ID: 56161
+// Module ID: 7008
+// Function ID: 56170
 // Name: trackForumChannelSeenBatch
-// Dependencies: [1348, 4468, 5656, 7010, 653, 4324, 7011, 675, 7016, 477, 7017, 2]
+// Dependencies: [1348, 4468, 5656, 7009, 653, 4324, 7010, 675, 7015, 477, 7016, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 7009 (trackForumChannelSeenBatch)
+// Module 7008 (trackForumChannelSeenBatch)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { DraftType } from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ export const trackForumChannelSeenBatch = function trackForumChannelSeenBatch(ch
   ({ guildId, sessionId, postIds, additionalTimes } = channelId);
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId, sessionId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId, sessionId }));
   obj["guild_id"] = guildId;
   obj["channel_id"] = channelId;
   obj["post_ids"] = postIds;
@@ -41,7 +41,7 @@ export const trackForumSearched = function trackForumSearched(channelId) {
   ({ guildId, numSearchResults } = channelId);
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = guildId;
   obj["channel_id"] = channelId;
   obj["num_search_results"] = numSearchResults;
@@ -51,7 +51,7 @@ export const trackForumSearchCleared = function trackForumSearchCleared(channelI
   channelId = channelId.channelId;
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = channelId.guildId;
   obj["channel_id"] = channelId;
   obj.trackWithMetadata(constants.FORUM_CHANNEL_SEARCH_CLEARED, obj);
@@ -66,7 +66,7 @@ export const trackForumTagFilterClicked = function trackForumTagFilterClicked(ch
   ({ guildId, tagId, filterTagIds, added, location: _location } = channelId);
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = guildId;
   obj["channel_id"] = channelId;
   obj["tag_id"] = tagId;
@@ -79,7 +79,7 @@ export const trackForumCreateNewPostClick = function trackForumCreateNewPostClic
   channelId = channelId.channelId;
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = channelId.guildId;
   obj["channel_id"] = channelId;
   obj.trackWithMetadata(constants.FORUM_CHANNEL_CREATE_NEW_POST_CLICKED, obj);
@@ -88,7 +88,7 @@ export const trackForumCreateNewPostKeybindUsed = function trackForumCreateNewPo
   channelId = channelId.channelId;
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = channelId.guildId;
   obj["channel_id"] = channelId;
   obj.trackWithMetadata(constants.FORUM_CHANNEL_CREATE_NEW_POST_KEYBIND_USED, obj);
@@ -155,15 +155,15 @@ export const maybeTrackForumNewPostDraftCreated = function maybeTrackForumNewPos
       let obj = importDefault(4324);
       obj = {};
       obj = { channelId };
-      const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata(obj));
+      const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata(obj));
       obj["guild_id"] = channelId.guildId;
       obj["channel_id"] = channelId;
-      const obj3 = require(7011) /* getForumChannelSessionId */;
-      obj["applied_tag_ids"] = require(7011) /* getForumChannelSessionId */.getForumPostDraftAppliedTagIds(channelId);
-      const obj5 = require(7011) /* getForumChannelSessionId */;
-      obj["num_attachments"] = require(7011) /* getForumChannelSessionId */.getForumPostDraftNumAttachments(channelId);
+      const obj3 = require(7010) /* getForumChannelSessionId */;
+      obj["applied_tag_ids"] = require(7010) /* getForumChannelSessionId */.getForumPostDraftAppliedTagIds(channelId);
+      const obj5 = require(7010) /* getForumChannelSessionId */;
+      obj["num_attachments"] = require(7010) /* getForumChannelSessionId */.getForumPostDraftNumAttachments(channelId);
       obj.trackWithMetadata(constants.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, obj);
-      const obj6 = require(7011) /* getForumChannelSessionId */;
+      const obj6 = require(7010) /* getForumChannelSessionId */;
     }
   }
 };
@@ -171,7 +171,7 @@ export const trackForumNewPostCleared = function trackForumNewPostCleared(channe
   channelId = channelId.channelId;
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = channelId.guildId;
   obj["channel_id"] = channelId;
   obj.trackWithMetadata(constants.FORUM_CHANNEL_NEW_POST_DRAFT_CLEARED, obj);
@@ -213,7 +213,7 @@ export const trackForumScrolled = function trackForumScrolled(channelId) {
   channelId = channelId.channelId;
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = channelId.guildId;
   obj["channel_id"] = channelId;
   obj.trackWithMetadata(constants.FORUM_CHANNEL_SCROLLED, obj);
@@ -233,12 +233,12 @@ export const trackForumMorePostsLoaded = function trackForumMorePostsLoaded(arg0
   const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
   const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(store.getChannel(channelId)));
   const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged2 = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged2 = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = guildId;
   obj["channel_id"] = channelId;
   obj["num_archived_threads"] = numArchivedThreads;
-  const obj5 = require(7011) /* getForumChannelSessionId */;
-  obj["num_active_threads"] = require(7011) /* getForumChannelSessionId */.getNumActiveThreads(guildId, channelId);
+  const obj5 = require(7010) /* getForumChannelSessionId */;
+  obj["num_active_threads"] = require(7010) /* getForumChannelSessionId */.getNumActiveThreads(guildId, channelId);
   obj["has_more_threads"] = hasMoreThreads;
   obj["filter_tag_ids"] = filterTagIds;
   obj["sort_order"] = sortOrder;
@@ -252,7 +252,7 @@ export const trackForumPostClicked = function trackForumPostClicked(channelId) {
   ({ guildId, postId, location: _location } = channelId);
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumPostAnalyticsMetadata({ channelId: postId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumPostAnalyticsMetadata({ channelId: postId }));
   obj["guild_id"] = guildId;
   obj["channel_id"] = channelId;
   obj["is_search_result"] = null != searchResults.getSearchResults(channelId);
@@ -265,11 +265,11 @@ export const trackForumSortOrderUpdated = function trackForumSortOrderUpdated(gu
   ({ channelId, sortOrder } = guildId);
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = guildId.guildId;
   obj["channel_id"] = channelId;
-  const obj3 = require(7011) /* getForumChannelSessionId */;
-  obj["sort_type"] = require(7011) /* getForumChannelSessionId */.convertSortOrderToReadableString(sortOrder);
+  const obj3 = require(7010) /* getForumChannelSessionId */;
+  obj["sort_type"] = require(7010) /* getForumChannelSessionId */.convertSortOrderToReadableString(sortOrder);
   obj["sort_order"] = sortOrder;
   obj["forum_channel_sort_order"] = sortOrder;
   obj.trackWithMetadata(constants.FORUM_CHANNEL_POSTS_SORTED, obj);
@@ -281,7 +281,7 @@ export const trackForumLayoutUpdated = function trackForumLayoutUpdated(channelI
   ({ guildId, forumLayout } = channelId);
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7011) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
+  const merged = Object.assign(require(7010) /* getForumChannelSessionId */.collectForumAnalyticsMetadata({ channelId }));
   obj["guild_id"] = guildId;
   obj["channel_id"] = channelId;
   obj["forum_channel_layout"] = forumLayout;
@@ -318,15 +318,15 @@ export const trackForumPostSidebarViewed = function trackForumPostSidebarViewed(
   const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
   const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channelId));
   const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
-  const merged2 = Object.assign(require(7016) /* collectThreadMetadata */.collectThreadMetadata(channelId, true));
-  const obj5 = require(7016) /* collectThreadMetadata */;
+  const merged2 = Object.assign(require(7015) /* collectThreadMetadata */.collectThreadMetadata(channelId, true));
+  const obj5 = require(7015) /* collectThreadMetadata */;
   const merged3 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.getChannelOpenedMetadata(channelId.id));
   obj["channel_view"] = "Split View";
   const obj6 = require(4324) /* _createForOfIteratorHelperLoose */;
   obj["platform"] = require(477) /* set */.getPlatform();
   obj.trackWithMetadata(constants.CHANNEL_OPENED, obj);
   obj = { channelId: channelId.id };
-  importDefault(7017)(obj);
+  importDefault(7016)(obj);
 };
 export const trackMobileForumComposerOpened = function trackMobileForumComposerOpened(arg0) {
   let _location;
@@ -347,7 +347,7 @@ export const trackForumCreateNewPostStarted = function trackForumCreateNewPostSt
   channelId = channelId.channelId;
   let obj = importDefault(4324);
   obj = {};
-  const merged = Object.assign(require(7016) /* collectThreadMetadata */.collectThreadMetadata(store.getChannel(channelId)));
+  const merged = Object.assign(require(7015) /* collectThreadMetadata */.collectThreadMetadata(store.getChannel(channelId)));
   obj["channel_id"] = channelId;
   obj["guild_id"] = channelId.guildId;
   obj.trackWithMetadata(constants.THREAD_CREATION_STARTED, obj);

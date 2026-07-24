@@ -1,9 +1,9 @@
-// Module ID: 7796
-// Function ID: 62238
+// Module ID: 7887
+// Function ID: 62559
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 102, 18, 162, 2]
 
-// Module 7796 (_isNativeReflectConstruct)
+// Module 7887 (_isNativeReflectConstruct)
 import _wrapNativeSuper from "_wrapNativeSuper";
 import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 8897
-// Function ID: 70169
+// Module ID: 8936
+// Function ID: 70384
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 1194, 4177, 4202, 4216, 1849, 8898, 8899, 653, 1920, 8900, 8907, 8882, 8901, 1212, 3969, 3712, 664, 44, 206, 507, 1184, 4470, 4319, 2]
+// Dependencies: [57, 5, 1194, 4177, 4202, 4216, 1849, 8937, 8938, 653, 1920, 8939, 8946, 8921, 8940, 1212, 3969, 3712, 664, 44, 206, 507, 1184, 4470, 4319, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, validateSecureFramesKeyConsistent
 
-// Module 8897 (_createForOfIteratorHelperLoose)
+// Module 8936 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -208,7 +208,7 @@ function showSecureFramesKeyInconsistentAlert(arg0) {
   let nickname;
   let userId;
   ({ userId, channelId, nickname } = arg0);
-  let obj = require(8907) /* getGuildId */;
+  let obj = require(8946) /* getGuildId */;
   obj = { userId, channelId, keyVersion: closure_12, reason: constants.OTHER_USER_INCONSISTENT_KEYS };
   const result = obj.trackE2EEUserVerificationFailed(obj);
   obj = {};
@@ -230,32 +230,32 @@ export const getSecureFramesVerifiedDevicesHelpdeskArticle = function getSecureF
   return importDefault(1920).getArticleURL(constants3.END_TO_END_ENCRYPTION);
 };
 export const addVerification = function addVerification(userId, userKey, isOtherUserKeyPersistent, channelId, DEEP_LINK) {
-  let obj = importDefault(8900);
+  let obj = importDefault(8939);
   if (isOtherUserKeyPersistent) {
     const secureFramesVerifiedKey = obj.createSecureFramesVerifiedKey(userId, userKey);
   } else {
     const secureFramesTransientKey = obj.createSecureFramesTransientKey(userId, userKey);
   }
   obj = { channelId, userId, analyticsLocation: DEEP_LINK };
-  const result = require(8907) /* getGuildId */.trackE2EEUserVerified(obj);
+  const result = require(8946) /* getGuildId */.trackE2EEUserVerified(obj);
 };
 export const deleteVerification = function deleteVerification(userId, userKey, isOtherUserKeyPersistent) {
   if (isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const uint8Array = new Uint8Array(userKey);
-    const obj2 = require(8882) /* set */;
-    const serializeKeyResult = require(8882) /* set */.serializeKey(uint8Array);
-    const result = importDefault(8900).deleteSecureFramesVerifiedKey(userId, serializeKeyResult);
-    const obj3 = importDefault(8900);
+    const obj2 = require(8921) /* set */;
+    const serializeKeyResult = require(8921) /* set */.serializeKey(uint8Array);
+    const result = importDefault(8939).deleteSecureFramesVerifiedKey(userId, serializeKeyResult);
+    const obj3 = importDefault(8939);
   } else {
-    const result1 = importDefault(8900).deleteSecureFramesTransientKey(userId);
-    const obj = importDefault(8900);
+    const result1 = importDefault(8939).deleteSecureFramesTransientKey(userId);
+    const obj = importDefault(8939);
   }
 };
 export const deletePersistentVerification = function deletePersistentVerification(userId, verifiedKey) {
   const _require = userId;
   const importDefault = verifiedKey;
-  let obj = importDefault(8901);
+  let obj = importDefault(8940);
   obj = {};
   const intl = _require(1212).intl;
   obj.title = intl.string(_require(1212).t.hdL152);
@@ -283,7 +283,7 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
     const obj = outer1_1(outer1_2[11]);
     const result1 = userId(outer1_2[12]).trackE2EESettingsUserDelete();
   };
-  let result = importDefault(8901).openSecureFramesUpdateConfirmation(obj);
+  let result = importDefault(8940).openSecureFramesUpdateConfirmation(obj);
 };
 export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
   let obj = importDefault(3712)();

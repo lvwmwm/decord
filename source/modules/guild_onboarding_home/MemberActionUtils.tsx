@@ -1,10 +1,10 @@
-// Module ID: 11387
-// Function ID: 88529
+// Module ID: 11415
+// Function ID: 88768
 // Name: useMemberActionsForChannel
-// Dependencies: [1917, 4333, 4334, 3746, 5608, 624, 1360, 2]
+// Dependencies: [1917, 4333, 4334, 3746, 5606, 624, 1360, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11387 (useMemberActionsForChannel)
+// Module 11415 (useMemberActionsForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ export const useMemberActionsForChannel = function useMemberActionsForChannel(gu
   const items = [closure_4];
   const items1 = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getNewMemberActions(closure_0), items1);
-  const tmp = importDefault(5608)(guild_id);
+  const tmp = importDefault(5606)(guild_id);
   const items2 = [closure_5];
   const stateFromStores1 = _require(624).useStateFromStores(items2, () => outer1_5.getCompletedActions(closure_0));
   if (tmp) {

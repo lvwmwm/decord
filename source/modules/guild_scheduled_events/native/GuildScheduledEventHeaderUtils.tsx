@@ -1,10 +1,10 @@
-// Module ID: 12202
-// Function ID: 95386
+// Module ID: 12229
+// Function ID: 95626
 // Name: getGuildScheduledEventHeaderProps
-// Dependencies: [6758, 1354, 8346, 689, 8460, 1212, 7593, 12203, 2]
+// Dependencies: [6758, 1354, 8390, 689, 8504, 1212, 7682, 12230, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 12202 (getGuildScheduledEventHeaderProps)
+// Module 12229 (getGuildScheduledEventHeaderProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GuildScheduledEventEntityTypes as closure_5 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 
@@ -26,7 +26,7 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
   ({ startDateTimeString, diffMinutes, currentOrPastEvent, upcomingEvent } = eventTimeData.eventTimeData);
   ({ event, recurrenceId } = eventTimeData);
   ({ isStage, theme, isCanceled } = eventTimeData);
-  let obj = require(8346) /* getNextBucketedTime */;
+  let obj = require(8390) /* getNextBucketedTime */;
   if (null != recurrenceId) {
     let tmp3 = obj.getNextRecurrenceIdInEvent(event) === recurrenceId;
     if (tmp3) {
@@ -38,12 +38,12 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
   }
   const tmp5 = callback(event);
   const ICON_SUBTLE = importDefault(689).colors.ICON_SUBTLE;
-  let tmp6 = importDefault(8460);
+  let tmp6 = importDefault(8504);
   if (tmp2) {
     const intl4 = require(1212) /* getSystemLocale */.intl;
     let stringResult = intl4.string(require(1212) /* getSystemLocale */.t["X2K3/4"]);
     if (isStage) {
-      tmp6 = importDefault(7593);
+      tmp6 = importDefault(7682);
     }
     let entity_type;
     if (null != event) {
@@ -57,11 +57,11 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     let stringResult1 = stringResult;
     let tmp8 = tmp6;
   } else if (tmp5) {
-    tmp8 = importDefault(12203);
+    tmp8 = importDefault(12230);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
     stringResult1 = startDateTimeString;
   } else if (currentOrPastEvent) {
-    tmp8 = importDefault(12203);
+    tmp8 = importDefault(12230);
     const intl3 = require(1212) /* getSystemLocale */.intl;
     stringResult1 = intl3.string(require(1212) /* getSystemLocale */.t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
@@ -80,8 +80,8 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
       }
       stringResult1 = formatToPlainStringResult;
       ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
-      tmp8 = importDefault(12203);
-      const tmp11 = importDefault(12203);
+      tmp8 = importDefault(12230);
+      const tmp11 = importDefault(12230);
     }
   }
   if (isCanceled) {

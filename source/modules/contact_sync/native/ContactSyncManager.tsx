@@ -1,10 +1,10 @@
-// Module ID: 11710
-// Function ID: 90912
+// Module ID: 11737
+// Function ID: 91150
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 5, 4812, 1849, 11708, 11707, 653, 587, 11709, 5584, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 5, 4812, 1849, 11735, 11734, 653, 587, 11736, 5582, 5078, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 11710 (_isNativeReflectConstruct)
+// Module 11737 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import set from "set";

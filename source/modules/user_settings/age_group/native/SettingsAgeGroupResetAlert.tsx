@@ -1,10 +1,10 @@
-// Module ID: 13677
-// Function ID: 105012
+// Module ID: 13728
+// Function ID: 105336
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 33, 1456, 12693, 4472, 3830, 1212, 4475, 2716, 4475, 2]
+// Dependencies: [5, 33, 1456, 12744, 4472, 3830, 1212, 4475, 2716, 4475, 2]
 // Exports: default
 
-// Module 13677 (SettingsAgeGroupResetAlert)
+// Module 13728 (SettingsAgeGroupResetAlert)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import jsxProd from "jsxProd";
 

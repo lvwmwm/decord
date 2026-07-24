@@ -1,5 +1,5 @@
 // Module ID: 1571
-// Function ID: 17635
+// Function ID: 17636
 // Name: KeyboardChatScrollView
 // Dependencies: [1572, 1580, 1775, 1776, 1777, 1774, 1780, 1786, 1787, 1816]
 

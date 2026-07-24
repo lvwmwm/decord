@@ -1,10 +1,10 @@
-// Module ID: 10543
-// Function ID: 82361
+// Module ID: 10572
+// Function ID: 82553
 // Name: usePipVideoOrStream
-// Dependencies: [1347, 4143, 10544, 4149, 1194, 1348, 4177, 4202, 4148, 566, 4194, 3981, 10528, 2]
+// Dependencies: [1347, 4143, 10573, 4149, 1194, 1348, 4177, 4202, 4148, 566, 4194, 3981, 10557, 2]
 // Exports: useHasPipParticipant
 
-// Module 10543 (usePipVideoOrStream)
+// Module 10572 (usePipVideoOrStream)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

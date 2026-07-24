@@ -1,10 +1,10 @@
-// Module ID: 16128
-// Function ID: 125000
+// Module ID: 16175
+// Function ID: 125324
 // Name: _shouldSkipContactSyncStep
-// Dependencies: [5, 27, 14743, 4812, 1849, 653, 11707, 4344, 11709, 477, 8481, 686, 1457, 11712, 3981, 16129, 4337, 1198, 11781, 2]
+// Dependencies: [5, 27, 14790, 4812, 1849, 653, 11734, 4344, 11736, 477, 8526, 686, 1457, 11739, 3981, 16176, 4337, 1198, 11808, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 16128 (_shouldSkipContactSyncStep)
+// Module 16175 (_shouldSkipContactSyncStep)
 import importDefaultResult from "ME";
 import { NativeModules } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -23,16 +23,16 @@ function _shouldSkipContactSyncStep() {
   return obj(...arguments);
 }
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
-  require(11712) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
-  const obj = require(11712) /* trackNUFStep */;
-  if (obj2.isModalOpen(require(16129) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
-    importDefault(4337).popWithKey(require(16129) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY);
+  require(11739) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
+  const obj = require(11739) /* trackNUFStep */;
+  if (obj2.isModalOpen(require(16176) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
+    importDefault(4337).popWithKey(require(16176) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY);
     const obj3 = importDefault(4337);
   }
   obj2 = require(3981) /* _createForOfIteratorHelperLoose */;
   require(1198) /* shouldNavigate */.transitionTo(constants.ME, { navigationReplace: true });
   const obj4 = require(1198) /* shouldNavigate */;
-  const result = require(11781) /* setNewUser */.setNewUserFlowCompleted();
+  const result = require(11808) /* setNewUser */.setNewUserFlowCompleted();
 }
 function getNextOnboardingStep(arg0, first1, first) {
   return _getNextOnboardingStep(...arguments);

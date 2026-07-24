@@ -1,10 +1,10 @@
-// Module ID: 10631
-// Function ID: 82903
+// Module ID: 10660
+// Function ID: 83095
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [1348, 4202, 10632, 653, 10543, 8934, 566, 10630, 10628, 3981, 4341, 10633, 10634, 2]
+// Dependencies: [1348, 4202, 10661, 653, 10572, 8973, 566, 10659, 10657, 3981, 4341, 10662, 10663, 2]
 // Exports: useGlobalStatusIndicatorState
 
-// Module 10631 (useGlobalStatusIndicatorState)
+// Module 10660 (useGlobalStatusIndicatorState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { RTC_PANEL_HEIGHT } from "RTC_PANEL_HEIGHT";
@@ -21,12 +21,12 @@ export const useGlobalStatusIndicatorState = function useGlobalStatusIndicatorSt
   }
   let stateFromStores;
   let importDefault;
-  let obj = stateFromStores(10543);
+  let obj = stateFromStores(10572);
   hasPipParticipant = obj.useHasPipParticipant({ isActivityViewFocused: false });
-  const tmp2 = importDefault(8934)();
+  const tmp2 = importDefault(8973)();
   const items = [closure_4];
   stateFromStores = stateFromStores(566).useStateFromStores(items, () => outer1_4.getChannelId());
-  const tmp4 = importDefault(10630)();
+  const tmp4 = importDefault(10659)();
   importDefault = tmp4;
   const obj2 = stateFromStores(566);
   const items1 = [_isNativeReflectConstruct];
@@ -43,7 +43,7 @@ export const useGlobalStatusIndicatorState = function useGlobalStatusIndicatorSt
     return isGuildStageVoiceResult;
   }, items2);
   const obj3 = stateFromStores(566);
-  let num = stateFromStores(10628).useGetStageRTCPanelHeight(stateFromStores);
+  let num = stateFromStores(10657).useGetStageRTCPanelHeight(stateFromStores);
   stateFromStores(3981);
   let tmp9 = null != tmp2;
   if (tmp9) {
@@ -55,13 +55,13 @@ export const useGlobalStatusIndicatorState = function useGlobalStatusIndicatorSt
     const obj5 = stateFromStores(4341);
   }
   obj = {};
-  const obj4 = stateFromStores(10628);
-  obj.voicePanelEnabled = stateFromStores(10633).useIsVoicePanelShowing();
+  const obj4 = stateFromStores(10657);
+  obj.voicePanelEnabled = stateFromStores(10662).useIsVoicePanelShowing();
   obj.isRemoteVisible = tmp9;
   obj.isVoiceChannelSelected = null != stateFromStores;
   obj.hasPipParticipant = hasPipParticipant;
   obj.showWhenParticipantOnScreen = flag;
-  obj.isConnectedToStageChannel = null != importDefault(10634)();
+  obj.isConnectedToStageChannel = null != importDefault(10663)();
   obj.isInvitedToSpeak = tmp4;
   ({ voicePanelEnabled, hasPipParticipant } = obj);
   if (!voicePanelEnabled) {

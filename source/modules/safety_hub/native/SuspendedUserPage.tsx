@@ -1,10 +1,10 @@
-// Module ID: 15591
-// Function ID: 120202
+// Module ID: 15638
+// Function ID: 120524
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [31, 27, 7544, 33, 4130, 689, 5121, 7771, 1212, 5590, 7607, 4126, 3827, 13652, 2]
+// Dependencies: [31, 27, 7589, 33, 4130, 689, 5121, 7533, 1212, 5588, 7696, 4126, 3827, 13703, 2]
 // Exports: default
 
-// Module 15591 (SuspendedUserSafetyHubPage)
+// Module 15638 (SuspendedUserSafetyHubPage)
 import "result";
 import { View } from "get ActivityIndicator";
 import { SafetyHubLinks } from "SafetyHubLinks";
@@ -37,8 +37,8 @@ export default function SuspendedUserSafetyHubPage() {
   obj1.onPress = function onPress() {
     outer1_1(outer1_2[9]).closeSuspendedUser();
   };
-  obj1.icon = importDefault(7607);
-  const items = [callback(require(7771) /* IconButton */.IconButton, obj1), ];
+  obj1.icon = importDefault(7696);
+  const items = [callback(require(7533) /* IconButton */.IconButton, obj1), ];
   const obj2 = {
     style: tmp.text,
     onPress() {
@@ -56,7 +56,7 @@ export default function SuspendedUserSafetyHubPage() {
   obj2.children = items1;
   items[1] = callback2(require(4126) /* Text */.Text, obj2);
   obj.children = items;
-  const items2 = [callback2(View, obj), callback(importDefault(13652), { visible: true })];
+  const items2 = [callback2(View, obj), callback(importDefault(13703), { visible: true })];
   obj.children = items2;
   obj.children = callback2(View, obj);
   return callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

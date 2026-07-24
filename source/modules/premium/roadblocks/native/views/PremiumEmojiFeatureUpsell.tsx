@@ -1,10 +1,10 @@
-// Module ID: 9379
-// Function ID: 73159
+// Module ID: 9415
+// Function ID: 73368
 // Name: PremiumEmojiFeatureUpsell
-// Dependencies: [31, 27, 33, 4130, 689, 1557, 5784, 668, 3991, 9380, 7951, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1557, 5784, 668, 3991, 9416, 8038, 2]
 // Exports: default
 
-// Module 9379 (PremiumEmojiFeatureUpsell)
+// Module 9415 (PremiumEmojiFeatureUpsell)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 9361
-// Function ID: 73071
+// Module ID: 9397
+// Function ID: 73280
 // Name: PremiumUpsellGradientBackground
 // Dependencies: [31, 27, 6671, 33, 4130, 4554, 668, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 9361 (PremiumUpsellGradientBackground)
+// Module 9397 (PremiumUpsellGradientBackground)
 import "result";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";

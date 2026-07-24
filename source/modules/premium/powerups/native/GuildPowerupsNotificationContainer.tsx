@@ -1,10 +1,10 @@
-// Module ID: 11588
-// Function ID: 90067
+// Module ID: 11615
+// Function ID: 90305
 // Name: Tier3OverrideNotice
-// Dependencies: [27, 33, 4130, 689, 4126, 11589, 11590, 1212, 2230, 11593, 2]
+// Dependencies: [27, 33, 4130, 689, 4126, 11616, 11617, 1212, 2230, 11620, 2]
 // Exports: default
 
-// Module 11588 (Tier3OverrideNotice)
+// Module 11615 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -25,8 +25,8 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp2 = importDefault(11589)(guildId);
-  const tmp3 = importDefault(11590)(guildId);
+  const tmp2 = importDefault(11616)(guildId);
+  const tmp3 = importDefault(11617)(guildId);
   if (tmp2.shouldShow) {
     let obj = { style: tmp.container };
     obj = { variant: "eyebrow", color: "text-subtle" };
@@ -43,7 +43,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     if (shouldShow2) {
       const obj1 = { guildId };
       ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp3);
-      shouldShow2 = callback(importDefault(11593), obj1);
+      shouldShow2 = callback(importDefault(11620), obj1);
     }
     items[2] = shouldShow2;
     obj.children = items;

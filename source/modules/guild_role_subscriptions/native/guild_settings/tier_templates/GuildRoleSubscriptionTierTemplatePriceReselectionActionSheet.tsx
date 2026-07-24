@@ -1,10 +1,10 @@
-// Module ID: 16483
-// Function ID: 128415
+// Module ID: 16530
+// Function ID: 128739
 // Name: PriceOptionRow
-// Dependencies: [57, 31, 27, 1851, 482, 33, 4130, 689, 3848, 8474, 5085, 16387, 15290, 4126, 1212, 5618, 14120, 1557, 5187, 5189, 1273, 4544, 4098, 2]
+// Dependencies: [57, 31, 27, 1851, 482, 33, 4130, 689, 3848, 8518, 5085, 16434, 15337, 4126, 1212, 5616, 14170, 1557, 5187, 5189, 1273, 4544, 4098, 2]
 // Exports: default
 
-// Module 16483 (PriceOptionRow)
+// Module 16530 (PriceOptionRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -42,13 +42,13 @@ function PriceOptionRow(selected) {
   obj.onPress = onPress;
   obj = { style: tmp.rowStatusIcon };
   const tmp3 = closure_10;
-  const tmp4 = importDefault(8474);
+  const tmp4 = importDefault(8518);
   const tmp6 = callback2;
   const tmp7 = importDefault;
   if (selected) {
-    let tmp10 = 16387;
+    let tmp10 = 16434;
   } else {
-    tmp10 = 15290;
+    tmp10 = 15337;
   }
   obj.source = tmp7(tmp10);
   const items1 = [tmp6(importDefault(5085), obj), ];
@@ -56,9 +56,9 @@ function PriceOptionRow(selected) {
   const intl = require(1212) /* getSystemLocale */.intl;
   const obj2 = {};
   const tmp8 = importDefault(5085);
-  obj2.price = require(5618) /* formatSingleCurrencyPrice */.formatPrice(price, CurrencyCodes.USD);
-  const obj6 = require(5618) /* formatSingleCurrencyPrice */;
-  obj2.interval = require(14120) /* getBenefitKey */.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj2.price = require(5616) /* formatSingleCurrencyPrice */.formatPrice(price, CurrencyCodes.USD);
+  const obj6 = require(5616) /* formatSingleCurrencyPrice */;
+  obj2.interval = require(14170) /* getBenefitKey */.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
   obj1.children = intl.format(require(1212) /* getSystemLocale */.t.CgmBaG, obj2);
   items1[1] = callback2(require(4126) /* Text */.Text, obj1);
   obj.children = items1;

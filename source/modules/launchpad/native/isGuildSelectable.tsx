@@ -1,10 +1,10 @@
-// Module ID: 15657
-// Function ID: 120789
+// Module ID: 15704
+// Function ID: 121111
 // Name: isGuildSelectable
-// Dependencies: [1353, 4149, 6879, 4325, 2]
+// Dependencies: [1353, 4149, 6878, 4325, 2]
 // Exports: default
 
-// Module 15657 (isGuildSelectable)
+// Module 15704 (isGuildSelectable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import closure_2 from "_isNativeReflectConstruct";

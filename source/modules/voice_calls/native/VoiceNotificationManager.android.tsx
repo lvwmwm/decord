@@ -1,9 +1,9 @@
-// Module ID: 13385
-// Function ID: 102840
+// Module ID: 13438
+// Function ID: 103167
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 6, 7, 27, 1347, 4167, 4149, 1348, 4177, 4202, 3767, 1849, 653, 689, 7000, 6999, 10768, 9080, 4320, 1212, 4530, 2]
+// Dependencies: [15, 17, 18, 57, 6, 7, 27, 1347, 4167, 4149, 1348, 4177, 4202, 3767, 1849, 653, 689, 6999, 6998, 10797, 9118, 4320, 1212, 4530, 2]
 
-// Module 13385 (_isNativeReflectConstruct)
+// Module 13438 (_isNativeReflectConstruct)
 import ME from "ME";
 import ServiceNotificationPriority from "ServiceNotificationPriority";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

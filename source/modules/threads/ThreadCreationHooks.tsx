@@ -1,10 +1,10 @@
-// Module ID: 7935
-// Function ID: 63349
+// Module ID: 8022
+// Function ID: 63661
 // Name: getIsPrivate
-// Dependencies: [57, 5, 31, 5682, 1194, 1348, 4468, 4349, 6928, 1211, 653, 4123, 5650, 6924, 7936, 1212, 7937, 21, 507, 7019, 7938, 6925, 1360, 4666, 7939, 7009, 4324, 6691, 4470, 686, 3976, 664, 6996, 8141, 2]
+// Dependencies: [57, 5, 31, 5682, 1194, 1348, 4468, 4349, 6927, 1211, 653, 4123, 5650, 6923, 8023, 1212, 8024, 21, 507, 7018, 8025, 6924, 1360, 4666, 8026, 7008, 4324, 6691, 4470, 686, 3976, 664, 6995, 8185, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 7935 (getIsPrivate)
+// Module 8022 (getIsPrivate)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import set from "set";
@@ -95,10 +95,10 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
     if (null != content) {
       str3 = content;
     }
-    const obj = importDefault(6924);
-    const str4 = importDefault(6924).unparse(str3, stateFromStores.id, true);
-    const tmp10 = importDefault(7936);
-    let str7 = importDefault(7936)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
+    const obj = importDefault(6923);
+    const str4 = importDefault(6923).unparse(str3, stateFromStores.id, true);
+    const tmp10 = importDefault(8023);
+    let str7 = importDefault(8023)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
     const items = [];
     const match = str7.match(/(?:\s|[!@#$%^&*()_\-+={}[\]:";'<>?,./])+/);
     while (null != match) {

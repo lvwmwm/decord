@@ -1,5 +1,5 @@
 // Module ID: 4996
-// Function ID: 43211
+// Function ID: 43215
 // Name: isPurchasableRoleSubscriptionEmoji
 // Dependencies: [4992, 2]
 // Exports: isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji

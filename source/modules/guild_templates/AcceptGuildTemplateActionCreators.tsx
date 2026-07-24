@@ -1,8 +1,8 @@
-// Module ID: 10950
-// Function ID: 85131
+// Module ID: 10977
+// Function ID: 85320
 // Dependencies: [4808, 1838, 653, 686, 507, 5737, 2]
 
-// Module 10950
+// Module 10977
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { Endpoints } from "ME";

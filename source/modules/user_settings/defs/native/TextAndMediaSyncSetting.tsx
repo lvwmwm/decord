@@ -1,9 +1,9 @@
-// Module ID: 14303
-// Function ID: 109561
+// Module ID: 14353
+// Function ID: 109884
 // Name: toggle
-// Dependencies: [1279, 7662, 566, 10095, 1212, 7955, 2]
+// Dependencies: [1279, 7751, 566, 10127, 1212, 8042, 2]
 
-// Module 14303 (toggle)
+// Module 14353 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 

@@ -1,10 +1,10 @@
-// Module ID: 16266
-// Function ID: 126632
+// Module ID: 16313
+// Function ID: 126956
 // Name: useLoadGuildStickersWithCreator
-// Dependencies: [5, 57, 31, 1849, 5036, 566, 9601, 2]
+// Dependencies: [5, 57, 31, 1849, 5036, 566, 9637, 2]
 // Exports: default
 
-// Module 16266 (useLoadGuildStickersWithCreator)
+// Module 16313 (useLoadGuildStickersWithCreator)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

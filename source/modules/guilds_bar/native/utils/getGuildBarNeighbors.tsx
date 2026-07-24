@@ -1,10 +1,10 @@
-// Module ID: 14868
-// Function ID: 113394
+// Module ID: 14915
+// Function ID: 113715
 // Name: toNeighbor
 // Dependencies: [4970, 4972, 2]
 // Exports: default
 
-// Module 14868 (toNeighbor)
+// Module 14915 (toNeighbor)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

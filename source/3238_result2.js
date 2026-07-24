@@ -1,5 +1,5 @@
 // Module ID: 3238
-// Function ID: 25894
+// Function ID: 25895
 // Name: result2
 // Dependencies: []
 // Exports: default

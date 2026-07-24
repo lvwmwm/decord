@@ -1,8 +1,8 @@
 // Module ID: 6786
-// Function ID: 53530
+// Function ID: 53552
 // Name: getPriceForCollectiblesProduct
-// Dependencies: [6779, 1874, 6780, 6781, 6787, 655, 653, 482, 3776, 1865, 1867, 6788, 5618, 477, 1876, 22, 1212, 6785, 2]
-// Exports: canActionOnProduct, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getProductDiscount, getProductTypeNameForLogging, getProfileEffects, getProfileFrames, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice, sortProductsByUserDiscounts
+// Dependencies: [6779, 1874, 6780, 6781, 6787, 655, 653, 482, 3776, 1865, 1867, 6788, 5616, 477, 1876, 22, 1212, 6785, 2]
+// Exports: canActionOnProduct, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getProductDiscount, getProductTypeNameForLogging, getProfileEffects, getProfileFrames, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
 // Module 6786 (getPriceForCollectiblesProduct)
 import { isAvatarDecorationRecord } from "_isNativeReflectConstruct";
@@ -295,8 +295,8 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
     if (null != tmp) {
       currency = tmp.currency;
     }
-    str = require(5618) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
-    const obj = require(5618) /* formatSingleCurrencyPrice */;
+    str = require(5616) /* formatSingleCurrencyPrice */.formatPrice(amount, currency);
+    const obj = require(5616) /* formatSingleCurrencyPrice */;
   }
   return str;
 };
@@ -604,27 +604,6 @@ export const sortProductsByPrice = function sortProductsByPrice(arr) {
     }
     return num3 - num4;
   });
-};
-export const sortProductsByUserDiscounts = function sortProductsByUserDiscounts(arr, arr2) {
-  if (0 !== arr2.length) {
-    if (0 !== arr.length) {
-      let closure_0 = arr2.map((discountId) => discountId.discountId);
-      return arr.sort((eligibleOffers, eligibleOffers2) => {
-        eligibleOffers = eligibleOffers.eligibleOffers;
-        let someResult;
-        if (null != eligibleOffers) {
-          someResult = eligibleOffers.some((arg0) => outer1_0.includes(arg0));
-        }
-        eligibleOffers2 = eligibleOffers2.eligibleOffers;
-        let someResult1;
-        if (null != eligibleOffers2) {
-          someResult1 = eligibleOffers2.some((arg0) => outer1_0.includes(arg0));
-        }
-        return +null != someResult1 && someResult1 - +null != someResult && someResult;
-      });
-    }
-  }
-  return arr;
 };
 export const removeRewardProductsFilter = function removeRewardProductsFilter(arr) {
   return arr.filter((isCategoryReward) => !isCategoryReward.isCategoryReward);

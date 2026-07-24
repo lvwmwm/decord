@@ -1,10 +1,10 @@
-// Module ID: 5473
-// Function ID: 46776
+// Module ID: 5471
+// Function ID: 46773
 // Name: accountLinkAuthorizationStarted
 // Dependencies: [686, 2]
 // Exports: accountLinkAuthorizationCompleted, accountLinkAuthorizationStarted, devtoolsSetGloballyDisabledAuthorizationFlows
 
-// Module 5473 (accountLinkAuthorizationStarted)
+// Module 5471 (accountLinkAuthorizationStarted)
 const result = require("set").fileFinishedImporting("modules/application_account_linking/AccountLinkingActionCreators.tsx");
 
 export const accountLinkAuthorizationStarted = function accountLinkAuthorizationStarted(id, accountLinkCallbacks) {

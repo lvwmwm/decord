@@ -1,10 +1,10 @@
-// Module ID: 11717
-// Function ID: 91006
+// Module ID: 11744
+// Function ID: 91244
 // Name: NewUserPermissionsOnboarding
 // Dependencies: [31, 27, 33, 4130, 5084, 689, 4126, 4543, 1212, 2]
 // Exports: default
 
-// Module 11717 (NewUserPermissionsOnboarding)
+// Module 11744 (NewUserPermissionsOnboarding)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

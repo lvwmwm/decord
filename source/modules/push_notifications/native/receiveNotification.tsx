@@ -1,10 +1,10 @@
-// Module ID: 16590
-// Function ID: 129428
+// Module ID: 16637
+// Function ID: 129752
 // Name: onStageConnectionError
-// Dependencies: [5, 7461, 6758, 1194, 1348, 1849, 5593, 653, 4195, 1354, 11453, 3, 3831, 1212, 9314, 3982, 1207, 7477, 4138, 5737, 8353, 3981, 15143, 6883, 8492, 5484, 4140, 8922, 675, 4324, 477, 10815, 21, 15141, 6707, 20, 6708, 4808, 12644, 11456, 566, 10804, 9878, 4111, 668, 9501, 8321, 7087, 686, 4337, 1198, 4336, 12857, 2]
+// Dependencies: [5, 7541, 6758, 1194, 1348, 1849, 5591, 653, 4195, 1354, 11483, 3, 3831, 1212, 9350, 3982, 1207, 7557, 4138, 5737, 8397, 3981, 15190, 6882, 8537, 5482, 4140, 8961, 675, 4324, 477, 10844, 21, 15188, 6707, 20, 6708, 4808, 12695, 11486, 566, 10833, 9910, 4111, 668, 9537, 8365, 7086, 686, 4337, 1198, 4336, 12909, 2]
 // Exports: default
 
-// Module 16590 (onStageConnectionError)
+// Module 16637 (onStageConnectionError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
@@ -27,7 +27,7 @@ function onStageConnectionError() {
   obj = { key: "STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.content = intl.string(require(1212) /* getSystemLocale */.t.ah3RLk);
-  obj.icon = importDefault(9314);
+  obj.icon = importDefault(9350);
   obj.open(obj);
 }
 function waitForConnection() {
@@ -96,7 +96,7 @@ function _maybeAckNotificationCenter() {
 }
 function receiveNotification_(type) {
   const _require = type;
-  let obj = _require(10804);
+  let obj = _require(10833);
   const result = obj.initializeRouteManagerIfNeeded();
   let importDefault = false;
   if ("MESSAGE_CREATE" === type.type) {
@@ -105,10 +105,10 @@ function receiveNotification_(type) {
     obj = {};
     ({ guild_id: obj10.guildId, channel_id: obj10.channelId, message_id: obj10.messageId } = type);
     obj.isPreload = true;
-    const messages = importDefault(9878).fetchMessages(obj);
+    const messages = importDefault(9910).fetchMessages(obj);
     importDefault = true;
     let flag = true;
-    const obj9 = importDefault(9878);
+    const obj9 = importDefault(9910);
   } else {
     flag = false;
     if ("GENERIC_PUSH_NOTIFICATION_SENT" === type.type) {
@@ -126,24 +126,24 @@ function receiveNotification_(type) {
               tracking_type = type.type;
             }
             if (tmp13) {
-              _require(9501).receivedNotification(payload.messageId, payload.channelId, tracking_type);
-              const obj6 = _require(9501);
+              _require(9537).receivedNotification(payload.messageId, payload.channelId, tracking_type);
+              const obj6 = _require(9537);
             }
             obj = {};
             ({ guildId: obj8.guildId, channelId: obj8.channelId, messageId: obj8.messageId } = payload);
             obj.isPreload = true;
-            const messages1 = importDefault(9878).fetchMessages(obj);
+            const messages1 = importDefault(9910).fetchMessages(obj);
             importDefault = true;
             flag = true;
-            let obj7 = importDefault(9878);
+            let obj7 = importDefault(9910);
             tmp13 = null != tracking_type && null != payload.messageId && null != payload.channelId;
           } else {
             if (payload.type === _require(668).LinkingTypes.ICYMI) {
               if (null != type.channel_id) {
                 if (null != type.message_id) {
-                  const forNotification = importDefault(8321).fetchForNotification(type.channel_id, type.message_id);
+                  const forNotification = importDefault(8365).fetchForNotification(type.channel_id, type.message_id);
                   flag = false;
-                  let obj5 = importDefault(8321);
+                  let obj5 = importDefault(8365);
                 }
               }
             }
@@ -160,16 +160,16 @@ function receiveNotification_(type) {
                       status_emoji_id = type.status_emoji_id;
                     }
                   }
-                  let obj1 = { id: type.notification_center_id, type: _require(7087).ICYMIItemTypes.CUSTOM_STATUS, score: 1000 };
+                  let obj1 = { id: type.notification_center_id, type: _require(7086).ICYMIItemTypes.CUSTOM_STATUS, score: 1000 };
                   let obj2 = {};
                   ({ user_id: obj3.user_id, status_text: obj3.text } = type);
                   obj2.emoji_id = status_emoji_id;
                   obj2.emoji_name = type.status_emoji_name;
                   obj2.emoji_animated = type.status_emoji_animated;
                   obj1.data = obj2;
-                  const forStatusNotification = importDefault(8321).fetchForStatusNotification(obj1);
+                  const forStatusNotification = importDefault(8365).fetchForStatusNotification(obj1);
                   flag = false;
-                  const obj4 = importDefault(8321);
+                  const obj4 = importDefault(8365);
                 }
               }
             }
@@ -357,15 +357,15 @@ export default function receiveNotification(getData) {
         if (data.receiving_user_id !== store.getId()) {
           data(6708);
           data(4808);
-          data(12644);
+          data(12695);
           let then = closure_17;
-          const obj = data(11456);
-          then = data(11456).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
+          const obj = data(11486);
+          then = data(11486).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION).then;
           then(() => {
             const Emitter = outer1_1(outer1_3[40]).Emitter;
             Emitter.batched(() => outer2_34(outer1_0));
           });
-          const switchAccountResult = data(11456).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
+          const switchAccountResult = data(11486).switchAccount(data.receiving_user_id, false, arg1 ? then.PUSH_NOTIFICATION_INITIAL : then.PUSH_NOTIFICATION);
         }
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 8173
-// Function ID: 64544
+// Module ID: 8217
+// Function ID: 64772
 // Name: ShieldIcon
-// Dependencies: [31, 33, 689, 3833, 8172, 2]
+// Dependencies: [31, 33, 689, 3833, 8216, 2]
 // Exports: ShieldIcon
 
-// Module 8173 (ShieldIcon)
+// Module 8217 (ShieldIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ShieldIcon = function ShieldIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8172) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8216) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8172) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8216) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

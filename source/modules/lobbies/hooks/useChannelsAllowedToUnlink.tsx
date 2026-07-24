@@ -1,10 +1,10 @@
-// Module ID: 16214
-// Function ID: 125919
+// Module ID: 16261
+// Function ID: 126243
 // Name: getChannelsAllowedToUnlink
-// Dependencies: [1907, 3758, 10169, 566, 2]
+// Dependencies: [1907, 3758, 10199, 566, 2]
 // Exports: useChannelsAllowedToUnlink
 
-// Module 16214 (getChannelsAllowedToUnlink)
+// Module 16261 (getChannelsAllowedToUnlink)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

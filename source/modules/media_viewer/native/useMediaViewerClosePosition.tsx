@@ -1,10 +1,10 @@
-// Module ID: 12256
-// Function ID: 95699
+// Module ID: 12283
+// Function ID: 95939
 // Name: computeClosePosition
-// Dependencies: [57, 31, 653, 12253, 8391, 3991, 2]
+// Dependencies: [57, 31, 653, 12280, 8435, 3991, 2]
 // Exports: default
 
-// Module 12256 (computeClosePosition)
+// Module 12283 (computeClosePosition)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { NOOP } from "ME";
@@ -12,7 +12,7 @@ import { NOOP } from "ME";
 const require = arg1;
 function computeClosePosition(arg0, height) {
   if (null != arg2) {
-    let obj = importDefault(12253)(arg0, height, arg2);
+    let obj = importDefault(12280)(arg0, height, arg2);
   } else {
     obj = { height };
   }

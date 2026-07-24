@@ -1,9 +1,9 @@
-// Module ID: 10941
-// Function ID: 85059
+// Module ID: 10968
+// Function ID: 85248
 // Name: BundleUpdaterManager
-// Dependencies: [5, 6, 7, 27, 653, 3, 477, 90, 1934, 4329, 675, 6837, 2]
+// Dependencies: [5, 6, 7, 27, 653, 3, 477, 90, 1934, 4329, 675, 6836, 2]
 
-// Module 10941 (BundleUpdaterManager)
+// Module 10968 (BundleUpdaterManager)
 import timestamp from "timestamp";
 import set from "set";
 import getSourceCodeScriptURL from "getSourceCodeScriptURL";

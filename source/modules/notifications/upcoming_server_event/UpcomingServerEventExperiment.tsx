@@ -1,10 +1,10 @@
-// Module ID: 14344
-// Function ID: 109722
+// Module ID: 14394
+// Function ID: 110045
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 14344 (apexExperiment)
+// Module 14394 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-04-upcoming-server-event", defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true }, [3]: { showSettingsToggle: true } } };

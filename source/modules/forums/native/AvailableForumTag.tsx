@@ -1,10 +1,10 @@
-// Module ID: 9858
-// Function ID: 76311
+// Module ID: 9890
+// Function ID: 76505
 // Name: AvailableForumTag
-// Dependencies: [31, 4991, 1852, 33, 4130, 689, 566, 9645, 8372, 5151, 1392, 4126, 2]
+// Dependencies: [31, 4991, 1852, 33, 4130, 689, 566, 9681, 8416, 5151, 1392, 4126, 2]
 // Exports: default
 
-// Module 9858 (AvailableForumTag)
+// Module 9890 (AvailableForumTag)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EMOJI_URL_BASE_SIZE } from "set";

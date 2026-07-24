@@ -1,9 +1,9 @@
-// Module ID: 8849
-// Function ID: 69818
+// Module ID: 8888
+// Function ID: 70033
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1316, 4177, 1906, 1849, 8850, 4227, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1316, 4177, 1906, 1849, 8889, 4227, 566, 686, 2]
 
-// Module 8849 (_isNativeReflectConstruct)
+// Module 8888 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -36,8 +36,8 @@ function hasVideoBackgroundLive(backgroundOption) {
       if (null != voiceAndVideo) {
         prop = voiceAndVideo.videoBackgroundFilterDesktop;
       }
-      videoBackgroundOptionFromProto = require(8850) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-      const obj = require(8850) /* isCustomBackgroundOption */;
+      videoBackgroundOptionFromProto = require(8889) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+      const obj = require(8889) /* isCustomBackgroundOption */;
     }
     let isVideoEnabledResult = null != store.getVoiceChannelId();
     if (isVideoEnabledResult) {

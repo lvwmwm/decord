@@ -1,10 +1,10 @@
-// Module ID: 7865
-// Function ID: 62676
+// Module ID: 7954
+// Function ID: 62995
 // Name: useCollectibleListLayout
 // Dependencies: [57, 31, 2]
 // Exports: default
 
-// Module 7865 (useCollectibleListLayout)
+// Module 7954 (useCollectibleListLayout)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 

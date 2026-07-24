@@ -1,10 +1,10 @@
-// Module ID: 11381
-// Function ID: 88461
+// Module ID: 11410
+// Function ID: 88701
 // Name: ResourceChannelButtons
-// Dependencies: [57, 31, 27, 33, 4130, 689, 1457, 11382, 11383, 4543, 1273, 10005, 11385, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 1457, 11411, 11412, 4543, 1273, 10037, 7535, 2]
 // Exports: default
 
-// Module 11381 (ResourceChannelButtons)
+// Module 11410 (ResourceChannelButtons)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

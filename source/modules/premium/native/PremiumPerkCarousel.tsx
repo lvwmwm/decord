@@ -1,10 +1,10 @@
-// Module ID: 12379
-// Function ID: 96197
+// Module ID: 12442
+// Function ID: 96558
 // Name: PremiumPerkCarousel
-// Dependencies: [57, 31, 27, 33, 4130, 7428, 4126, 7998, 1273, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 12403, 4126, 8058, 1273, 2]
 // Exports: default
 
-// Module 12379 (PremiumPerkCarousel)
+// Module 12442 (PremiumPerkCarousel)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

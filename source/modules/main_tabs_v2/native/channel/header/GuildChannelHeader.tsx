@@ -1,9 +1,9 @@
-// Module ID: 10124
-// Function ID: 78337
+// Module ID: 10156
+// Function ID: 78531
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 10125, 4808, 1352, 5658, 1348, 4051, 1838, 3767, 1849, 653, 1345, 33, 3834, 689, 566, 10119, 5513, 9348, 1212, 4320, 10117, 5802, 1334, 1920, 4593, 8563, 1324, 9548, 10111, 2]
+// Dependencies: [57, 31, 27, 10157, 4808, 1352, 5658, 1348, 4051, 1838, 3767, 1849, 653, 1345, 33, 3834, 689, 566, 10151, 5511, 9384, 1212, 4320, 10149, 5802, 1334, 1920, 4593, 8608, 1324, 9584, 10143, 2]
 
-// Module 10124 (_createForOfIteratorHelperLoose)
+// Module 10156 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ChannelHeader";
 import { View } from "getThreadChannelIcon";
@@ -187,8 +187,8 @@ function GuildChannelMemberCount(channel) {
     const count = outer1_6.requestCount(channel.guild_id, channel.id);
   }, items1);
   if (null == total) {
-    const obj3 = channel(10119);
-    return obj3.renderMemberCountText(online, total, flag, channel(5513).ICON_SIZE[token]);
+    const obj3 = channel(10151);
+    return obj3.renderMemberCountText(online, total, flag, channel(5511).ICON_SIZE[token]);
   }
 }
 function computeVisibleChannelName(channel) {
@@ -254,7 +254,7 @@ function ChannelLinkedLobbyCoachmark(guild) {
     return obj;
   }, items1);
   let obj = guild(5802);
-  const coachmark = guild(8563).useCoachmark(guild.iconRef, memo);
+  const coachmark = guild(8608).useCoachmark(guild.iconRef, memo);
   return null;
 }
 ({ ChannelTypes: closure_15, HelpdeskArticles: closure_16, StatusTypes: closure_17 } = ME);

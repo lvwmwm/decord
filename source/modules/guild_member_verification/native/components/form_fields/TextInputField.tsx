@@ -1,10 +1,10 @@
-// Module ID: 9267
-// Function ID: 72396
+// Module ID: 9303
+// Function ID: 72605
 // Name: TextInputField
-// Dependencies: [31, 27, 4621, 482, 33, 4130, 5052, 689, 4126, 7512, 1212, 2]
+// Dependencies: [31, 27, 4621, 482, 33, 4130, 5052, 689, 4126, 7574, 1212, 2]
 // Exports: default
 
-// Module 9267 (TextInputField)
+// Module 9303 (TextInputField)
 import "result";
 import { View } from "get ActivityIndicator";
 import { MAX_TEXT_RESPONSE_LENGTH } from "items";
@@ -41,7 +41,7 @@ export default function TextInputField(field) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t["Sqn+Wh"]);
   obj.onChange = field.onChange;
-  items[1] = callback(require(7512) /* TextInput */.TextInput, obj);
+  items[1] = callback(require(7574) /* TextInput */.TextInput, obj);
   obj.children = items;
   return closure_5(View, obj);
 };

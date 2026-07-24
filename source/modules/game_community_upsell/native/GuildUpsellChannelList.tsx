@@ -1,10 +1,10 @@
-// Module ID: 15089
-// Function ID: 114856
+// Module ID: 15136
+// Function ID: 115177
 // Name: GuildUpsellChannelList
-// Dependencies: [31, 27, 14590, 653, 33, 4130, 689, 12637, 15090, 566, 675, 11737, 5167, 4126, 1212, 4543, 13999, 15091, 15093, 2]
+// Dependencies: [31, 27, 14639, 653, 33, 4130, 689, 12688, 15137, 566, 675, 11764, 5167, 4126, 1212, 4543, 14049, 15138, 15140, 2]
 // Exports: default
 
-// Module 15089 (GuildUpsellChannelList)
+// Module 15136 (GuildUpsellChannelList)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

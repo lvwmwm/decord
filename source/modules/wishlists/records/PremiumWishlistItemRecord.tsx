@@ -1,10 +1,10 @@
-// Module ID: 8681
-// Function ID: 68731
+// Module ID: 8722
+// Function ID: 68951
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4169, 8679, 653, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4169, 8720, 653, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 8681 (_isNativeReflectConstruct)
+// Module 8722 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

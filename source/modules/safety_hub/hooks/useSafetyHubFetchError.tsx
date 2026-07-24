@@ -1,10 +1,10 @@
-// Module ID: 13654
-// Function ID: 104862
+// Module ID: 13705
+// Function ID: 105186
 // Name: useSafetyHubFetchError
-// Dependencies: [11026, 566, 2]
+// Dependencies: [11053, 566, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 13654 (useSafetyHubFetchError)
+// Module 13705 (useSafetyHubFetchError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

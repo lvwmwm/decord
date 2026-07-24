@@ -1,27 +1,27 @@
-// Module ID: 8367
-// Function ID: 66705
+// Module ID: 8411
+// Function ID: 66933
 // Name: saveGuildEventRecurrence
-// Dependencies: [8346, 8344, 21, 2]
+// Dependencies: [8390, 8388, 21, 2]
 // Exports: default
 
-// Module 8367 (saveGuildEventRecurrence)
+// Module 8411 (saveGuildEventRecurrence)
 let result = require("DISCORD_EPOCH").fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 
 export default function saveGuildEventRecurrence(guild_id, event_exception_id, startDate, event_exception_id) {
-  let obj = require(8346) /* getNextBucketedTime */;
+  let obj = require(8390) /* getNextBucketedTime */;
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(event_exception_id, guild_id);
   startDate = null;
   if (!obj2.areDatesIdentical(baseScheduleForRecurrence.startDate, startDate.startDate)) {
     startDate = startDate.startDate;
   }
-  obj2 = require(8346) /* getNextBucketedTime */;
+  obj2 = require(8390) /* getNextBucketedTime */;
   let endDate = null;
   if (!obj3.areDatesIdentical(baseScheduleForRecurrence.endDate, startDate.endDate)) {
     endDate = startDate.endDate;
   }
   if (null != event_exception_id) {
-    const result = require(8346) /* getNextBucketedTime */.areSchedulesIdentical(startDate, baseScheduleForRecurrence);
-    const obj5 = importDefault(8344);
+    const result = require(8390) /* getNextBucketedTime */.areSchedulesIdentical(startDate, baseScheduleForRecurrence);
+    const obj5 = importDefault(8388);
     if (result) {
       let result1 = obj5.deleteGuildEventException(guild_id.guild_id, guild_id.id, event_exception_id.event_exception_id);
     } else {
@@ -58,7 +58,7 @@ export default function saveGuildEventRecurrence(guild_id, event_exception_id, s
     }
     obj.scheduled_end_time = toISOStringResult3;
     obj.is_canceled = false;
-    return importDefault(8344).createGuildEventException(obj, guild_id.guild_id, guild_id.id);
+    return importDefault(8388).createGuildEventException(obj, guild_id.guild_id, guild_id.id);
   }
-  obj3 = require(8346) /* getNextBucketedTime */;
+  obj3 = require(8390) /* getNextBucketedTime */;
 };

@@ -1,5 +1,5 @@
 // Module ID: 3848
-// Function ID: 32050
+// Function ID: 32051
 // Name: useCheckboxA11yNative
 // Dependencies: [27, 2]
 // Exports: useCheckboxA11yNative, useRadioA11yNative

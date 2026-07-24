@@ -1,10 +1,10 @@
-// Module ID: 7652
-// Function ID: 61237
+// Module ID: 7741
+// Function ID: 61523
 // Name: createCommonMessage
-// Dependencies: [1348, 4130, 3976, 3974, 689, 3800, 7635, 7653, 7654, 7655, 2]
+// Dependencies: [1348, 4130, 3976, 3974, 689, 3800, 7724, 7742, 7743, 7744, 2]
 // Exports: default
 
-// Module 7652 (createCommonMessage)
+// Module 7741 (createCommonMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -36,10 +36,10 @@ export default function createCommonMessage(reactions) {
   obj.highlightColor = tmp.highlightColor;
   obj.reactions = reactions.reactions;
   const obj3 = require(3976) /* AccessibilityAnnouncer */;
-  obj.swipeToReplyIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7653));
-  const obj4 = require(7635) /* frozen */;
-  obj.swipeToEditIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7654));
-  const obj5 = require(7635) /* frozen */;
-  obj.accessibilityActions = require(7655) /* getQuickReactionLabel */.createMessageAccessibilityActions(message, channel);
+  obj.swipeToReplyIconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7742));
+  const obj4 = require(7724) /* frozen */;
+  obj.swipeToEditIconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7743));
+  const obj5 = require(7724) /* frozen */;
+  obj.accessibilityActions = require(7744) /* getQuickReactionLabel */.createMessageAccessibilityActions(message, channel);
   return obj;
 };

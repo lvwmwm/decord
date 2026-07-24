@@ -1,10 +1,10 @@
-// Module ID: 11650
-// Function ID: 90405
+// Module ID: 11677
+// Function ID: 90643
 // Name: useAnimatedTextStyle
 // Dependencies: [31, 27, 33, 3991, 4130, 689, 4542, 4126, 477, 1212, 2]
 // Exports: TabItem
 
-// Module 11650 (useAnimatedTextStyle)
+// Module 11677 (useAnimatedTextStyle)
 import result from "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

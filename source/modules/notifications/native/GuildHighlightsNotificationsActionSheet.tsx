@@ -1,13 +1,13 @@
-// Module ID: 9499
-// Function ID: 74011
+// Module ID: 9535
+// Function ID: 74220
 // Name: GuildPill
-// Dependencies: [57, 31, 27, 1838, 4325, 653, 9500, 33, 4130, 689, 5515, 4126, 9501, 624, 1212, 9502, 1557, 5187, 5189, 5459, 1920, 3991, 5167, 7495, 5079, 5073, 4098, 2]
+// Dependencies: [57, 31, 27, 1838, 4325, 653, 9536, 33, 4130, 689, 5513, 4126, 9537, 624, 1212, 9538, 1557, 5187, 5189, 1920, 3991, 5167, 7636, 5079, 5073, 4098, 2]
 // Exports: default
 
-// Module 9499 (GuildPill)
+// Module 9535 (GuildPill)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
-import { View } from "set";
+import { View } from "get ActivityIndicator";
 import closure_6 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -25,8 +25,8 @@ function GuildPill(guild) {
   guild = guild.guild;
   const tmp = callback3();
   let obj = { style: tmp.guildPill };
-  obj = { guild, size: require(5515) /* makeSizeStyle */.GuildIconSizes.SMALL_32, animate: true };
-  const items = [callback(importDefault(5515), obj), ];
+  obj = { guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.SMALL_32, animate: true };
+  const items = [callback(importDefault(5513), obj), ];
   obj = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
   let name;
   if (null != guild) {
@@ -180,16 +180,16 @@ export default function SummaryFeedbackActionSheet(guildId) {
     const obj5 = { style: tmp.centerText, variant: "text-md/medium", color: "text-default" };
     const intl5 = guildId(ref[14]).intl;
     const obj6 = {};
-    let obj11 = feedbackSettings(ref[20]);
+    let obj11 = feedbackSettings(ref[19]);
     obj6.helpUrl = obj11.getArticleURL(callback.HIGHLIGHTS_NOTIFICATIONS);
     obj5.children = intl5.format(guildId(ref[14]).t.enfuur, obj6);
-    items5[2] = callback(guildId(ref[19]).TextWithIOSLinkWorkaround, obj5);
+    items5[2] = callback(guildId(ref[11]).Text, obj5);
     obj2.children = items5;
     const items6 = [callback2(first1, obj2), , , ];
     let tmp45 = null != null;
     if (tmp45) {
       const obj7 = { style: tmp.feedback, children: null };
-      tmp45 = callback(feedbackSettings(ref[21]).View, obj7);
+      tmp45 = callback(feedbackSettings(ref[20]).View, obj7);
     }
     items6[1] = tmp45;
     const tmp50 = isFeedbackGood(first);
@@ -204,13 +204,13 @@ export default function SummaryFeedbackActionSheet(guildId) {
       }
       obj9.value = muted;
       obj9.onValueChange = function onValueChange(arg0) {
-        let obj = feedbackSettings(ref[24]);
+        let obj = feedbackSettings(ref[23]);
         obj = { notify_highlights: arg0 ? tmp2.DISABLED : tmp2.ENABLED };
-        const NotificationLabel = guildId(ref[25]).NotificationLabel;
+        const NotificationLabel = guildId(ref[24]).NotificationLabel;
         const result = obj.updateGuildNotificationSettings(guildId, obj, NotificationLabel.highlights(!arg0));
       };
-      obj8.children = callback(guildId(ref[23]).FormSwitchRow, obj9);
-      tmp52Result = callback(guildId(ref[22]).Card, obj8);
+      obj8.children = callback(guildId(ref[22]).FormSwitchRow, obj9);
+      tmp52Result = callback(guildId(ref[21]).Card, obj8);
       const tmp52 = callback;
       const tmp55 = callback;
     }
@@ -219,13 +219,13 @@ export default function SummaryFeedbackActionSheet(guildId) {
     const intl7 = guildId(ref[14]).intl;
     obj11 = {
       notifSettingsHook() {
-          feedbackSettings(ref[26]).hideActionSheet();
-          const obj = feedbackSettings(ref[26]);
-          feedbackSettings(ref[24]).open(guildId);
+          feedbackSettings(ref[25]).hideActionSheet();
+          const obj = feedbackSettings(ref[25]);
+          feedbackSettings(ref[23]).open(guildId);
         }
     };
     obj10.children = intl7.format(guildId(ref[14]).t.F9rfLX, obj11);
-    items6[3] = callback(guildId(ref[19]).TextWithIOSLinkWorkaround, obj10);
+    items6[3] = callback(guildId(ref[11]).Text, obj10);
     obj1.children = items6;
     obj.children = callback2(first1, obj1);
     obj.children = callback(guildId(ref[18]).BottomSheetScrollView, obj);

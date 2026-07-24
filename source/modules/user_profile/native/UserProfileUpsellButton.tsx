@@ -1,10 +1,10 @@
-// Module ID: 13566
-// Function ID: 104304
+// Module ID: 13617
+// Function ID: 104628
 // Name: UserProfileUpsellButton
-// Dependencies: [31, 653, 1851, 33, 4130, 5464, 6685, 675, 4543, 7941, 1212, 7871, 2]
+// Dependencies: [31, 653, 1851, 33, 4130, 5462, 6685, 675, 4543, 8028, 1212, 7486, 2]
 // Exports: default
 
-// Module 13566 (UserProfileUpsellButton)
+// Module 13617 (UserProfileUpsellButton)
 import result from "result";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";
@@ -23,7 +23,7 @@ let result = require("GuildFeatures").fileFinishedImporting("modules/user_profil
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let label = analyticsObject.label;
-  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
   let obj = analyticsObject(6685);
   const nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
@@ -51,6 +51,6 @@ export default function UserProfileUpsellButton(analyticsObject) {
   }
   obj.text = label;
   obj = { color: "white", size: "sm", style: callback().nitroWheel };
-  obj.icon = jsx(analyticsObject(7871).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
+  obj.icon = jsx(analyticsObject(7486).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
   return jsx(analyticsObject(4543).Button, { color: "white", size: "sm", style: callback().nitroWheel });
 };

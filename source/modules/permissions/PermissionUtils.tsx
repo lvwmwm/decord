@@ -1,10 +1,10 @@
-// Module ID: 15518
-// Function ID: 119655
+// Module ID: 15565
+// Function ID: 119977
 // Name: filterExperimental
 // Dependencies: [482, 1212, 1327, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 15518 (filterExperimental)
+// Module 15565 (filterExperimental)
 import { Permissions } from "sum";
 
 function filterExperimental(permissions, showExperimental) {

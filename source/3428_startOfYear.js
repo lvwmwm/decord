@@ -1,5 +1,5 @@
 // Module ID: 3428
-// Function ID: 26674
+// Function ID: 26675
 // Name: startOfYear
 // Dependencies: [3209, 3210]
 // Exports: default

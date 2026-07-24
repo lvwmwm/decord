@@ -1,5 +1,5 @@
 // Module ID: 4021
-// Function ID: 33445
+// Function ID: 33446
 // Name: VANITY_URL_POWERUP_SKU_ID
 // Dependencies: [2]
 

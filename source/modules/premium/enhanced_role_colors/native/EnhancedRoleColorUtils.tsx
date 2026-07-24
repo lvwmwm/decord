@@ -1,10 +1,10 @@
-// Module ID: 7650
-// Function ID: 61227
+// Module ID: 7739
+// Function ID: 61513
 // Name: processColorStringsInternal
 // Dependencies: [57, 31, 27, 1278, 482, 666, 1327, 4571, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7650 (processColorStringsInternal)
+// Module 7739 (processColorStringsInternal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { processColor } from "get ActivityIndicator";

@@ -1,9 +1,9 @@
-// Module ID: 7766
-// Function ID: 61658
+// Module ID: 7859
+// Function ID: 61985
 // Name: LHeading
-// Dependencies: [31, 27, 1921, 653, 33, 689, 4130, 1273, 624, 7767, 675, 3827, 3829, 7769, 4120, 5121, 7771, 7773, 1212, 3742, 7775, 7777, 2]
+// Dependencies: [31, 27, 1921, 653, 33, 689, 4130, 1273, 624, 7860, 675, 3827, 3829, 7862, 4120, 5121, 7533, 7864, 1212, 3742, 7866, 7868, 2]
 
-// Module 7766 (LHeading)
+// Module 7859 (LHeading)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -62,7 +62,7 @@ function LinkInner(target) {
   let obj = target(624);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.locale);
-  const changelog = target(7767).useChangelog(changelogId, stateFromStores).changelog;
+  const changelog = target(7860).useChangelog(changelogId, stateFromStores).changelog;
   obj = {
     accessibilityRole: "link",
     style: className,
@@ -111,7 +111,7 @@ function changelogRules(changelogId, arg1) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(7769);
+  let obj = importDefault(7862);
   if (flag) {
     obj = {};
     obj = { Link: getLinkComponent(changelogId), ListItem: closure_14, LHeading, Heading: LHeading };
@@ -183,27 +183,27 @@ const memoResult1 = importAllResult.memo((video) => {
   obj.children = items1;
   const items2 = [callback2(closure_5, obj), ];
   obj = { bottom: true, style: tmp.footer };
-  const obj1 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7773).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  const obj1 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7864).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
   const intl = onScroll(1212).intl;
   obj1.accessibilityLabel = intl.string(onScroll(1212).t["/lXfom"]);
   obj1.onPress = function onPress() {
     outer1_1(outer1_2[11]).openURL(outer1_1(outer1_2[19])(outer1_7.TWITTER));
   };
-  const items3 = [callback(onScroll(7771).IconButton, obj1), , ];
-  const obj2 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7775).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  const items3 = [callback(onScroll(7533).IconButton, obj1), , ];
+  const obj2 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7866).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
   const intl2 = onScroll(1212).intl;
   obj2.accessibilityLabel = intl2.string(onScroll(1212).t["h0or/l"]);
   obj2.onPress = function onPress() {
     outer1_1(outer1_2[11]).openURL(outer1_8.FACEBOOK_URL);
   };
-  items3[1] = callback(onScroll(7771).IconButton, obj2);
-  const obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7777).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  items3[1] = callback(onScroll(7533).IconButton, obj2);
+  const obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7868).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
   const intl3 = onScroll(1212).intl;
   obj3.accessibilityLabel = intl3.string(onScroll(1212).t["5uVPyf"]);
   obj3.onPress = function onPress() {
     outer1_1(outer1_2[11]).openURL(outer1_8.INSTAGRAM_URL);
   };
-  items3[2] = callback(onScroll(7771).IconButton, obj3);
+  items3[2] = callback(onScroll(7533).IconButton, obj3);
   obj.children = items3;
   items2[1] = callback2(onScroll(5121).SafeAreaPaddingView, obj);
   obj.children = items2;

@@ -1,11 +1,11 @@
 // Module ID: 7407
-// Function ID: 59554
+// Function ID: 59587
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 7407 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180.5, height: 88, scales: [2, 3], hash: "170926482058c89c2a2a9d537ff237a4", name: "img_what_you_lose_emojis", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 180, height: 108, scales: [2, 3], hash: "b78926d791a6ae551c895470cfd808a1", name: "img_what_you_lose_profile_tier1_darker", type: "png" };
 
 export default registerAsset.registerAsset(obj);

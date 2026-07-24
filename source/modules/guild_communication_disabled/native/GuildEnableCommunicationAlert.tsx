@@ -1,10 +1,10 @@
-// Module ID: 10988
-// Function ID: 85524
+// Module ID: 11015
+// Function ID: 85713
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 57, 31, 27, 1849, 1919, 653, 33, 4130, 7664, 4559, 675, 10987, 3831, 1212, 10332, 4561, 4126, 4319, 10166, 5459, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 1919, 653, 33, 4130, 7753, 4559, 675, 11014, 3831, 1212, 10361, 4561, 4126, 4319, 10196, 2]
 // Exports: default
 
-// Module 10988 (GuildEnableCommunicationAlert)
+// Module 11015 (GuildEnableCommunicationAlert)
 import closure_3 from "getFriendlyDurationString";
 import _slicedToArray from "_slicedToArray";
 import "result";
@@ -40,7 +40,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   }
   const tmp3 = callback();
   const dependencyMap = tmp3;
-  let closure_3 = _handleConfirmRemoveTimeout(userId(7664)(userId, guildId), 1)[0];
+  let closure_3 = _handleConfirmRemoveTimeout(userId(7753)(userId, guildId), 1)[0];
   userId(4559)(() => {
     let obj = userId(tmp3[11]);
     obj = { type: outer1_7, guild_id: guildId, other_user_id: userId };
@@ -95,7 +95,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   ({ cta: arr2[0], description: arr2[1] } = tmp3);
   const intl5 = tmp9(1212).intl;
   obj3.children = intl5.format(guildId(1212).t.KtENkK, { link: closure_8 });
-  items[1] = closure_10(guildId(5459).TextWithIOSLinkWorkaround, obj3);
+  items[1] = closure_10(guildId(4126).Text, obj3);
   obj.children = items;
   obj["children"] = tmp11(tmp12, obj);
   return tmp5(tmp6, obj);

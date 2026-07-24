@@ -1,9 +1,9 @@
-// Module ID: 7498
-// Function ID: 60139
+// Module ID: 7639
+// Function ID: 60785
 // Name: RowButtonWrapper
-// Dependencies: [31, 33, 4130, 689, 1324, 5170, 5165, 3991, 5167, 7499, 2]
+// Dependencies: [31, 33, 4130, 689, 1324, 5170, 5165, 3991, 5167, 7640, 2]
 
-// Module 7498 (RowButtonWrapper)
+// Module 7639 (RowButtonWrapper)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -128,7 +128,7 @@ function RowButtonWrapper(isRefreshEnabled) {
     const merged1 = Object.assign(merged);
     obj["variant"] = "transparent";
     obj = { pressed: sharedValue, children };
-    obj["children"] = jsx(merged(7499).BackgroundBlurView, { pressed: sharedValue, children });
+    obj["children"] = jsx(merged(7640).BackgroundBlurView, { pressed: sharedValue, children });
     return jsx(merged(5167).InternalCard, { pressed: sharedValue, children });
   } else {
     let str = "subtle";

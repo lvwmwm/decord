@@ -1,10 +1,10 @@
-// Module ID: 7461
-// Function ID: 59925
+// Module ID: 7541
+// Function ID: 60171
 // Name: shouldWaitForBlockingModals
-// Dependencies: [7462, 4808, 686, 2]
+// Dependencies: [7542, 4808, 686, 2]
 // Exports: addPostConnectionCallback
 
-// Module 7461 (shouldWaitForBlockingModals)
+// Module 7541 (shouldWaitForBlockingModals)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 import importDefaultResult from "dispatcher";

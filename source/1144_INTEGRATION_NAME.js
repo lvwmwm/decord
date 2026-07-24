@@ -1,5 +1,5 @@
 // Module ID: 1144
-// Function ID: 13048
+// Function ID: 13049
 // Name: INTEGRATION_NAME
 // Dependencies: [77, 1136, 977, 794, 1142, 1129, 793, 1134, 1133, 1137, 1145, 1098]
 // Exports: getReactNavigationIntegration, reactNavigationIntegration

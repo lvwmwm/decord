@@ -1,10 +1,10 @@
-// Module ID: 13828
-// Function ID: 105891
+// Module ID: 13879
+// Function ID: 106215
 // Name: FamilyCenterModalAcceptScreen
-// Dependencies: [31, 27, 33, 4130, 689, 4337, 3830, 1212, 11061, 7572, 7573, 13825, 4075, 4126, 2198, 13795, 11063, 11071, 4965, 4543, 5087, 11073, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4337, 3830, 1212, 11088, 7613, 7614, 13876, 4075, 4126, 2198, 13846, 11090, 11098, 4965, 4543, 5087, 11100, 2]
 // Exports: default
 
-// Module 13828 (FamilyCenterModalAcceptScreen)
+// Module 13879 (FamilyCenterModalAcceptScreen)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ function FamilyCenterModalAcceptScreen(otherUser) {
     const intl = otherUser(outer1_2[7]).intl;
     otherUser(outer1_2[6]).presentFailedToast(intl.string(otherUser(outer1_2[7]).t.R0RpRX));
   }, []);
-  let obj = otherUser(11061);
+  let obj = otherUser(11088);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   const acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const isAcceptLoading = familyCenterActions.isAcceptLoading;
@@ -36,20 +36,20 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   obj = {};
   const obj1 = { style: tmp.header };
   const obj2 = { otherUser, iconSrc: acceptLinkRequest(4075), iconStyles: tmp.icon };
-  const items1 = [callback(acceptLinkRequest(13825), obj2), , ];
+  const items1 = [callback(acceptLinkRequest(13876), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold" };
   let intl = otherUser(1212).intl;
   obj3.children = intl.string(acceptLinkRequest(2198).rlNJwZ);
   items1[1] = callback(otherUser(4126).Text, obj3);
-  items1[2] = callback(acceptLinkRequest(13795), { user: otherUser });
+  items1[2] = callback(acceptLinkRequest(13846), { user: otherUser });
   obj1.children = items1;
-  const items2 = [callback2(View, obj1), callback(acceptLinkRequest(11063), {}), ];
+  const items2 = [callback2(View, obj1), callback(acceptLinkRequest(11090), {}), ];
   const obj4 = { style: tmp.disclaimer, variant: "text-xs/normal", color: "text-default" };
   const intl2 = otherUser(1212).intl;
   obj4.children = intl2.format(acceptLinkRequest(2198).snlFqR, { username: otherUser.username });
   items2[2] = callback(otherUser(4126).Text, obj4);
   obj.children = items2;
-  const items3 = [callback2(otherUser(7573).ModalContent, obj), ];
+  const items3 = [callback2(otherUser(7614).ModalContent, obj), ];
   const obj6 = {};
   const obj7 = {};
   const obj8 = { variant: "primary", disabled: isAcceptLoading, loading: isAcceptLoading };
@@ -64,9 +64,9 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   items4[1] = callback(otherUser(4543).Button, obj9);
   obj7.children = items4;
   obj6.children = callback2(otherUser(4965).ButtonGroup, obj7);
-  items3[1] = callback(otherUser(11071).ModalFooter, obj6);
+  items3[1] = callback(otherUser(11098).ModalFooter, obj6);
   obj.children = items3;
-  return callback2(otherUser(7572).ModalScreen, obj);
+  return callback2(otherUser(7613).ModalScreen, obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -104,5 +104,5 @@ export default function FamilyCenterModalAccept(otherUser) {
   let obj = { initialRouteName: "ACCEPT", screens: memo };
   const intl = otherUser(1212).intl;
   obj.headerBackTitle = intl.string(otherUser(1212).t["13/7kX"]);
-  return callback(otherUser(11073).Modal, obj);
+  return callback(otherUser(11100).Modal, obj);
 };

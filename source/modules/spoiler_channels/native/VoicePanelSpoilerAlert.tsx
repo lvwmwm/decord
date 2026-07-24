@@ -1,10 +1,10 @@
-// Module ID: 12354
-// Function ID: 96054
+// Module ID: 12381
+// Function ID: 96294
 // Name: VoicePanelSpoilerAlert
 // Dependencies: [31, 33, 4475, 4475, 1212, 5048, 4944, 2]
 // Exports: default
 
-// Module 12354 (VoicePanelSpoilerAlert)
+// Module 12381 (VoicePanelSpoilerAlert)
 import "result";
 import jsxProd from "jsxProd";
 

@@ -1,10 +1,10 @@
-// Module ID: 13008
-// Function ID: 100599
+// Module ID: 13060
+// Function ID: 100922
 // Name: Collapsible
 // Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 4542, 2]
 // Exports: default
 
-// Module 13008 (Collapsible)
+// Module 13060 (Collapsible)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

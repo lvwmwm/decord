@@ -1,9 +1,9 @@
-// Module ID: 7510
-// Function ID: 60188
+// Module ID: 7646
+// Function ID: 60825
 // Name: getLengthRemainingTextColor
-// Dependencies: [31, 27, 33, 4130, 689, 5780, 5774, 3836, 7511, 1212, 5783, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5780, 5774, 3836, 7647, 1212, 5783, 4126, 2]
 
-// Module 7510 (getLengthRemainingTextColor)
+// Module 7646 (getLengthRemainingTextColor)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -55,7 +55,7 @@ const forwardRefResult = require("result").forwardRef((isDisabled) => {
   if (null != maxLength) {
     diff = maxLength - iter.value.length;
   }
-  let obj4 = require(7511) /* useCharacterLimitAnnouncement */;
+  let obj4 = require(7647) /* useCharacterLimitAnnouncement */;
   obj = { currentLength: iter.value.length, maxLength };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.message = intl.string(require(1212) /* getSystemLocale */.t.c2Jqed);

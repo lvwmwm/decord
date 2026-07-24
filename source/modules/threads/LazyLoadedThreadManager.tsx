@@ -1,7 +1,7 @@
 // Module ID: 5690
-// Function ID: 48974
+// Function ID: 48984
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4808, 1352, 1348, 1906, 653, 1355, 686, 5606, 3952, 3965, 507, 2]
+// Dependencies: [4808, 1352, 1348, 1906, 653, 1355, 686, 5604, 3952, 3965, 507, 2]
 
 // Module 5690 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -117,7 +117,7 @@ function loadThread(channelId) {
   const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === _require(5606).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
@@ -219,7 +219,7 @@ export default {
           let tmp8 = items1;
           let tmp9 = dependencyMap;
           let tmp10 = tmp7;
-          if (value !== items1(5606).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+          if (value !== items1(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
             let tmp11 = isStaticChannelRoute;
             tmp10 = tmp7;
             if (!isStaticChannelRoute(value)) {

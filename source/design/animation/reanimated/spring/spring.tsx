@@ -1,5 +1,5 @@
 // Module ID: 4542
-// Function ID: 39844
+// Function ID: 39845
 // Name: withSpring
 // Dependencies: [4132, 4133, 3991, 2]
 
@@ -8,7 +8,7 @@ import { CONFIG_NEVER_ANIMATE } from "CONFIG_NEVER_ANIMATE";
 
 let closure_3 = { code: "function withSpring_springTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE,ReduceMotion,REAwithSpring}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithSpring(toValue,configForRea,callback);}" };
 const tmp2 = (() => {
-  export function withSpring(targetHeight, SUBTLE_SPRING, onComplete, fn) {
+  export function withSpring(value, SUBTLE_SPRING, onComplete, fn) {
     let str = onComplete;
     if (onComplete === undefined) {
       str = "respect-motion-settings";
@@ -30,7 +30,7 @@ const tmp2 = (() => {
     } else {
       tmp3 = outer1_2;
     }
-    return outer1_0(outer1_1[2]).withSpring(targetHeight, tmp3, fn);
+    return outer1_0(outer1_1[2]).withSpring(value, tmp3, fn);
   }
   withSpring.__closure = { accessibilityPreferencesSharedValue: require(4133) /* mutable */.accessibilityPreferencesSharedValue, CONFIG_NEVER_ANIMATE, ReduceMotion: require(3991).ReduceMotion, REAwithSpring: require(3991).withSpring };
   withSpring.__workletHash = 14783154107972;

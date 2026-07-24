@@ -1,10 +1,10 @@
-// Module ID: 11481
-// Function ID: 89416
+// Module ID: 11511
+// Function ID: 89661
 // Name: ChatInputGuard
-// Dependencies: [31, 27, 9313, 33, 4130, 689, 783, 8830, 11366, 4662, 477, 11374, 5165, 7771, 10171, 10166, 4126, 4543, 4965, 8372, 2]
+// Dependencies: [31, 27, 9349, 33, 4130, 689, 783, 8869, 11395, 4662, 477, 11403, 5165, 7533, 10201, 10196, 4126, 4543, 4965, 8416, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 11481 (ChatInputGuard)
+// Module 11511 (ChatInputGuard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { updateChatInputContainerHeight as closure_6 } from "getChatInputContainerHeight";
@@ -70,7 +70,7 @@ export default function ChatInputGuard(type) {
   let message2;
   let subtext;
   let subtext2;
-  const tmp = callback3(importDefault(8830)());
+  const tmp = callback3(importDefault(8869)());
   if ("simple-action" === type.type) {
     ({ countdown, actionIcon, actionLabel, actionOnPress } = type);
     let obj = { style: tmp.floating };
@@ -81,12 +81,12 @@ export default function ChatInputGuard(type) {
         const obj1 = { accessibilityLabel: actionLabel };
         if (null == actionIcon) {
           const obj2 = { color: importDefault(689).colors.WHITE };
-          actionIcon = callback(require(10171) /* ArrowSmallRightIcon */.ArrowSmallRightIcon, obj2);
+          actionIcon = callback(require(10201) /* ArrowSmallRightIcon */.ArrowSmallRightIcon, obj2);
         }
         obj1.icon = actionIcon;
         obj1.size = "sm";
         obj1.onPress = actionOnPress;
-        let tmp28Result = callback(require(7771) /* IconButton */.IconButton, obj1);
+        let tmp28Result = callback(require(7533) /* IconButton */.IconButton, obj1);
         const tmp28 = callback;
       }
       obj.trailing = tmp28Result;
@@ -103,7 +103,7 @@ export default function ChatInputGuard(type) {
       ({ text: arr3[0], spacing: arr3[1] } = tmp);
       obj4.style = items;
       obj4.deadline = countdown;
-      tmp28Result = callback(importDefault(10166), obj4);
+      tmp28Result = callback(importDefault(10196), obj4);
     }
     tmp19 = closure_5;
   } else {
@@ -136,7 +136,7 @@ export default function ChatInputGuard(type) {
         const obj10 = { disabled: buttonSecondaryDisabled, loading: buttonSecondaryLoading, text: buttonSecondaryText, onPress: buttonSecondaryOnPress, variant: "secondary", size: "sm" };
         items2[1] = callback(require(4543) /* Button */.Button, obj10);
         obj9.children = items2;
-        tmp9 = callback2(require(8372) /* TwinButtons */.TwinButtons, obj9);
+        tmp9 = callback2(require(8416) /* TwinButtons */.TwinButtons, obj9);
       }
     }
     obj8.children = tmp9;
@@ -148,7 +148,7 @@ export default function ChatInputGuard(type) {
       ({ text: arr2[0], spacing: arr2[1] } = tmp);
       obj11.style = items3;
       obj11.deadline = countdown2;
-      tmp14 = callback(importDefault(10166), obj11);
+      tmp14 = callback(importDefault(10196), obj11);
     }
     items1[3] = tmp14;
     obj6.children = items1;
@@ -161,7 +161,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   screenIndex = screenIndex.screenIndex;
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
-  const tmp = importDefault(8830)();
+  const tmp = importDefault(8869)();
   const tmp2 = callback3(tmp);
   const items = [screenIndex];
   let obj = {};
@@ -169,7 +169,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   const callback = React.useCallback((nativeEvent) => {
     outer1_6(screenIndex, nativeEvent.nativeEvent.layout.height);
   }, items);
-  items1[1] = importDefault(11366)({ isCreatingThread: false });
+  items1[1] = importDefault(11395)({ isCreatingThread: false });
   obj.style = items1;
   obj.onLayout = callback;
   obj.collapsable = false;
@@ -192,7 +192,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
     tmp15 = null;
     if (null != channelId) {
       const obj1 = { channelId, screenIndex, onJumpToPresent };
-      tmp15 = callback(importDefault(11374), obj1);
+      tmp15 = callback(importDefault(11403), obj1);
     }
   }
   items2[2] = tmp15;

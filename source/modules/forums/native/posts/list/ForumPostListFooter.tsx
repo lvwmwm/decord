@@ -1,10 +1,10 @@
-// Module ID: 11150
-// Function ID: 86705
+// Module ID: 11180
+// Function ID: 86974
 // Name: ForumPostListFooter
-// Dependencies: [31, 27, 653, 33, 4130, 689, 11107, 11142, 11143, 10430, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 11134, 11172, 11173, 10459, 2]
 // Exports: default
 
-// Module 11150 (ForumPostListFooter)
+// Module 11180 (ForumPostListFooter)
 import "result";
 import { View } from "get ActivityIndicator";
 import { AnalyticsObjects } from "ME";
@@ -28,17 +28,17 @@ export default function ForumPostListFooter(parentChannel) {
   let thread;
   ({ thread, firstMessage, hasUnreads } = parentChannel);
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11107) /* useTypingUserIds */;
+  let obj = require(11134) /* useTypingUserIds */;
   const typingUserIds = obj.useTypingUserIds(thread.id);
   let tmp2 = typingUserIds.length > 0;
   obj = { style: tmp.footer };
-  const items = [callback(importDefault(11142), { thread, hasUnreads }), , ];
+  const items = [callback(importDefault(11172), { thread, hasUnreads }), , ];
   if (tmp2) {
     obj = {};
     const obj1 = { style: tmp.dot };
     const items1 = [callback(View, obj1), ];
     const obj2 = { thread, typingUserIds, hasUnreads };
-    items1[1] = callback(importDefault(11143), obj2);
+    items1[1] = callback(importDefault(11173), obj2);
     obj.children = items1;
     tmp2 = callback2(closure_6, obj);
   }
@@ -46,7 +46,7 @@ export default function ForumPostListFooter(parentChannel) {
   let tmp11 = null != firstMessage;
   if (tmp11) {
     const obj3 = { thread, firstMessage, parentChannel: parentChannel.parentChannel, locationAnalyticsObject: AnalyticsObjects.FORUM_LIST_ITEM_FOOTER };
-    tmp11 = callback(require(10430) /* MaxForumPostReactions */.MostCommonForumPostReaction, obj3);
+    tmp11 = callback(require(10459) /* MaxForumPostReactions */.MostCommonForumPostReaction, obj3);
   }
   items[2] = tmp11;
   obj.children = items;

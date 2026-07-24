@@ -1,5 +1,5 @@
 // Module ID: 3954
-// Function ID: 32647
+// Function ID: 32648
 // Name: _extends
 // Dependencies: [31, 3955, 1205, 1206, 1199, 3958]
 

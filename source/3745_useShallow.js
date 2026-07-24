@@ -1,5 +1,5 @@
 // Module ID: 3745
-// Function ID: 28586
+// Function ID: 28587
 // Name: useShallow
 // Dependencies: [31, 3744]
 // Exports: useShallow

@@ -1,10 +1,10 @@
-// Module ID: 10331
-// Function ID: 79747
+// Module ID: 10360
+// Function ID: 79938
 // Name: getLogMetadata
 // Dependencies: [1554, 4110, 2]
 // Exports: default
 
-// Module 10331 (getLogMetadata)
+// Module 10360 (getLogMetadata)
 const result = require("set").fileFinishedImporting("modules/debug/getLogMetadata.native.tsx");
 
 export default function getLogMetadata() {

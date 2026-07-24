@@ -1,9 +1,9 @@
-// Module ID: 13916
-// Function ID: 106546
+// Module ID: 13967
+// Function ID: 106870
 // Name: getSafeAreaInsetOrPadding
-// Dependencies: [57, 31, 27, 6651, 653, 33, 689, 8148, 4130, 666, 3991, 4542, 4546, 4131, 4134, 1207, 566, 477, 1184, 1557, 1212, 4660, 13917, 13919, 13921, 13922, 9949, 8286, 8288, 13923, 13924, 2]
+// Dependencies: [57, 31, 27, 6651, 653, 33, 689, 8192, 4130, 666, 3991, 4542, 4546, 4131, 4134, 1207, 566, 477, 1184, 1557, 1212, 4660, 13968, 13970, 13972, 13973, 9981, 8330, 8332, 13974, 13975, 2]
 
-// Module 13916 (getSafeAreaInsetOrPadding)
+// Module 13967 (getSafeAreaInsetOrPadding)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "PlayIcon";

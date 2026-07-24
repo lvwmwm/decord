@@ -1,7 +1,7 @@
 // Module ID: 5083
-// Function ID: 44242
+// Function ID: 44247
 // Name: _getBackgroundGradientColor
-// Dependencies: [57, 5, 31, 27, 4122, 5082, 1348, 1838, 1906, 5058, 5059, 5055, 653, 33, 1198, 4130, 5084, 689, 1447, 3974, 5085, 4554, 668, 566, 1557, 1456, 3991, 5063, 5065, 1392, 1825, 675, 4324, 4131, 5087, 5121, 5123, 1327, 5453, 4126, 1212, 5459, 2]
+// Dependencies: [57, 5, 31, 27, 4122, 5082, 1348, 1838, 1906, 5058, 5059, 5055, 653, 33, 1198, 4130, 5084, 689, 1447, 3974, 5085, 4554, 668, 566, 1557, 1456, 3991, 5063, 5065, 1392, 1825, 675, 4324, 4131, 5087, 5121, 5123, 1327, 5453, 4126, 1212, 2]
 // Exports: default
 
 // Module 5083 (_getBackgroundGradientColor)
@@ -580,7 +580,7 @@ export default function GuildOnboardingPrompt(guildId) {
   const intl3 = guildId(prompts[40]).intl;
   obj23 = { privacyLink: constants.PRIVACY };
   obj22.children = intl3.format(guildId(prompts[40]).t.kI6UoD, obj23);
-  obj21.children = guildSplashURL(guildId(prompts[41]).TextWithIOSLinkWorkaround, obj22);
+  obj21.children = guildSplashURL(guildId(prompts[39]).Text, obj22);
   items24[1] = guildSplashURL(currentPromptIdx(prompts[26]).View, obj21);
   obj10.children = items24;
   items15[1] = tmp49(closure_7, obj10);

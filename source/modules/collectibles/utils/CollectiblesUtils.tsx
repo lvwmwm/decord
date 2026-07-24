@@ -1,10 +1,10 @@
-// Module ID: 6823
-// Function ID: 53809
+// Module ID: 6822
+// Function ID: 53818
 // Name: constructGoLiveSource
-// Dependencies: [4185, 4227, 6824, 6636, 3800, 2]
+// Dependencies: [4185, 4227, 6823, 6636, 3800, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 6823 (constructGoLiveSource)
+// Module 6822 (constructGoLiveSource)
 import { ApplicationStreamPresets } from "makeButton";
 
 const result = require("ShopVariantsReturnStyle").fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");
@@ -52,8 +52,8 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     if (null !== noCache.paymentGateway) {
       obj.payment_gateway = noCache.paymentGateway;
     }
-    if (noCache.variantsReturnStyle === require(6824) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = require(6824) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP;
+    if (noCache.variantsReturnStyle === require(6823) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
+      obj.variants_return_style = require(6823) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;

@@ -1,5 +1,5 @@
 // Module ID: 4074
-// Function ID: 33885
+// Function ID: 33886
 // Name: LinkIcon
 // Dependencies: [31, 33, 689, 3833, 4075, 2]
 // Exports: LinkIcon

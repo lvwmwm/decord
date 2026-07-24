@@ -1,10 +1,10 @@
-// Module ID: 8765
-// Function ID: 69300
+// Module ID: 8804
+// Function ID: 69515
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [31, 653, 1851, 5464, 6661, 2]
+// Dependencies: [31, 653, 1851, 5462, 6661, 2]
 // Exports: default
 
-// Module 8765 (useOpenNitroSubscribeActionSheet)
+// Module 8804 (useOpenNitroSubscribeActionSheet)
 import result from "result";
 import ME from "ME";
 import { PremiumTypes } from "GuildFeatures";

@@ -1,10 +1,10 @@
-// Module ID: 8942
-// Function ID: 70485
+// Module ID: 8981
+// Function ID: 70700
 // Name: TwoWayLinkLanding
-// Dependencies: [31, 27, 4812, 33, 4130, 8943, 566, 4126, 5165, 5459, 1212, 5121, 4541, 4543, 2]
+// Dependencies: [31, 27, 4812, 33, 4130, 8982, 566, 4126, 5165, 1212, 5121, 4541, 4543, 2]
 // Exports: TwoWayLinkLanding
 
-// Module 8942 (TwoWayLinkLanding)
+// Module 8981 (TwoWayLinkLanding)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -90,10 +90,10 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   let tmp12 = null;
   if (null != learnMoreLink) {
     const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body };
-    const intl = require(valueProps[10]).intl;
+    const intl = require(valueProps[9]).intl;
     const obj7 = { helpCenterLink: learnMoreLink };
-    obj6.children = intl.format(require(valueProps[10]).t["/l3n+1"], obj7);
-    tmp12 = callback(require(valueProps[9]).TextWithIOSLinkWorkaround, obj6);
+    obj6.children = intl.format(require(valueProps[9]).t["/l3n+1"], obj7);
+    tmp12 = callback(require(valueProps[7]).Text, obj6);
   }
   items3[1] = tmp12;
   obj.children = items3;
@@ -101,12 +101,12 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   const obj8 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   const obj9 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton };
   const obj10 = { variant: "primary", size: "lg" };
-  const intl2 = require(valueProps[10]).intl;
-  obj10.text = intl2.string(require(valueProps[10]).t.LhlgY9);
+  const intl2 = require(valueProps[9]).intl;
+  obj10.text = intl2.string(require(valueProps[9]).t.LhlgY9);
   obj10.onPress = onNext;
-  obj9.children = callback(require(valueProps[13]).Button, obj10);
-  obj8.children = callback(require(valueProps[12]).Stack, obj9);
-  items4[1] = callback(require(valueProps[11]).SafeAreaPaddingView, obj8);
+  obj9.children = callback(require(valueProps[12]).Button, obj10);
+  obj8.children = callback(require(valueProps[11]).Stack, obj9);
+  items4[1] = callback(require(valueProps[10]).SafeAreaPaddingView, obj8);
   obj.children = items4;
   return closure_7(closure_3, obj);
 };

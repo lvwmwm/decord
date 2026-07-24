@@ -1,10 +1,10 @@
-// Module ID: 11035
-// Function ID: 85894
+// Module ID: 11062
+// Function ID: 86083
 // Name: ClassificationEvidence
-// Dependencies: [57, 31, 27, 1278, 1849, 11026, 7544, 653, 33, 7621, 4130, 566, 3976, 11036, 11037, 7543, 4317, 8274, 8148, 10023, 9293, 4351, 21, 2]
+// Dependencies: [57, 31, 27, 1278, 1849, 11053, 7589, 653, 33, 7710, 4130, 566, 3976, 11063, 11064, 7588, 4317, 8318, 8192, 10055, 9329, 4351, 21, 2]
 // Exports: default
 
-// Module 11035 (ClassificationEvidence)
+// Module 11062 (ClassificationEvidence)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -52,9 +52,9 @@ export default function ClassificationEvidence(arg0) {
   const items1 = [id];
   const resolveAssetSource = first2.resolveAssetSource;
   if (obj1.useStateFromStores(items1, () => ref(3976).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp8(11036));
+    let assetSource = resolveAssetSource(tmp8(11063));
   } else {
-    assetSource = resolveAssetSource(tmp8(11037));
+    assetSource = resolveAssetSource(tmp8(11064));
   }
   let map = arg0.flaggedContent[0];
   const tmp11 = first1(React.useState(map.attachments.length), 2);
@@ -76,10 +76,10 @@ export default function ClassificationEvidence(arg0) {
         str = filename;
       }
       obj["filename"] = str;
-      obj["flags"] = ref(7543).getSpoilerFlagsForAttachment(filename);
+      obj["flags"] = ref(7588).getSpoilerFlagsForAttachment(filename);
       obj["size"] = 0;
       obj["proxy_url"] = filename.url;
-      const obj2 = ref(7543);
+      const obj2 = ref(7588);
       if (obj3.isImageFile(filename.filename)) {
         obj = {};
         const merged1 = Object.assign(obj);
@@ -159,7 +159,7 @@ export default function ClassificationEvidence(arg0) {
       obj.attachmentId = uri.id;
       return obj;
     });
-    let obj = ref(8274);
+    let obj = ref(8318);
     obj = { initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout };
     obj.openMediaModal(obj);
   }, items4);
@@ -234,7 +234,7 @@ export default function ClassificationEvidence(arg0) {
         }
       };
       obj = { uri: uri.url };
-      return outer1_18(first(8148), obj, arg1);
+      return outer1_18(first(8192), obj, arg1);
     });
     items8[1] = callback(assetSource, obj);
     obj.children = items8;
@@ -242,10 +242,10 @@ export default function ClassificationEvidence(arg0) {
   } else {
     obj1 = {};
     obj2 = { ref, onTapImage: callback, inverted: false };
-    const items9 = [callback(first(10023), obj2), ];
+    const items9 = [callback(first(10055), obj2), ];
     const obj3 = { rowGenerator: closure_20 };
     const tmp26 = callback;
-    const tmp29 = first(9293);
+    const tmp29 = first(9329);
     let obj4 = { id: map.id };
     const _Date = Date;
     const obj10 = ref(4351);

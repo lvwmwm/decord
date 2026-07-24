@@ -1,10 +1,10 @@
-// Module ID: 8336
-// Function ID: 66061
+// Module ID: 8380
+// Function ID: 66289
 // Name: isLinkTrusted
-// Dependencies: [8337, 1348, 1838, 8338, 4349, 3767, 1906, 653, 3829, 4470, 1212, 675, 8339, 8340, 8341, 8343, 3821, 12219, 12223, 4568, 12224, 12226, 2]
+// Dependencies: [8381, 1348, 1838, 8382, 4349, 3767, 1906, 653, 3829, 4470, 1212, 675, 8383, 8384, 8385, 8387, 3821, 12246, 12250, 4568, 12251, 12253, 2]
 // Exports: handleClick, isLinkTrusted
 
-// Module 8336 (isLinkTrusted)
+// Module 8380 (isLinkTrusted)
 import BlockedDomainStore from "BlockedDomainStore";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -287,7 +287,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
           obj1 = {};
           let tmp71 = _require;
           let num2 = 12;
-          let obj3 = _require(8339);
+          let obj3 = _require(8383);
           let tmp72 = tmp4;
           obj1.url_domain = obj3.getHostname(tmp4);
           obj1.guild_id = guild1.id;
@@ -298,7 +298,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         let tmp75 = dependencyMap;
         let num3 = 13;
         let tmp76 = channelId;
-        if (channelId(8340)(preventDefaultResult)) {
+        if (channelId(8384)(preventDefaultResult)) {
           let tmp77 = channelId;
           let tmp78 = dependencyMap;
           let num4 = 11;
@@ -315,7 +315,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
       let tmp82 = channelId;
       let tmp83 = dependencyMap;
       let num5 = 14;
-      let obj6 = channelId(8341);
+      let obj6 = channelId(8385);
       let tmp84 = tmp4;
       let trackLinkClickedResult = obj6.trackLinkClicked(tmp4);
       let tmp86 = onClick;
@@ -330,7 +330,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         obj3 = { skipExtensionCheck: undefined, analyticsLocations: items, messageId };
         let tmp90 = channelId;
         obj3.channelId = preventDefaultResult;
-        let defaultResult = _require(8343).default(tmp4, obj3);
+        let defaultResult = _require(8387).default(tmp4, obj3);
         if (null != defaultResult) {
           let tmp93 = defaultResult;
           let tmp94 = preventDefault;
@@ -352,7 +352,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
         preventDefaultResult = channelId;
         preventDefaultResult = dependencyMap;
         let num14 = 17;
-        let obj17 = channelId(12219);
+        let obj17 = channelId(12246);
         preventDefaultResult = obj17.show(tmp4);
       } else {
         preventDefaultResult = trusted;
@@ -362,14 +362,14 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
           preventDefaultResult = _require;
           preventDefaultResult = dependencyMap;
           let num7 = 18;
-          let TRUSTED_URLS = _require(12223).TRUSTED_URLS;
+          let TRUSTED_URLS = _require(12250).TRUSTED_URLS;
           preventDefaultResult = tmp4;
           preventDefaultResult = TRUSTED_URLS.has(tmp4);
         }
         preventDefaultResult = _require;
         preventDefaultResult = dependencyMap;
         let num8 = 12;
-        let obj9 = _require(8339);
+        let obj9 = _require(8383);
         preventDefaultResult = tmp4;
         preventDefaultResult = obj9.getProtocol(tmp4);
         let str2 = "http:";
@@ -393,13 +393,13 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
             preventDefaultResult = channelId;
             preventDefaultResult = dependencyMap;
             let num12 = 20;
-            let obj13 = channelId(12224);
+            let obj13 = channelId(12251);
             obj4 = {};
             preventDefaultResult = tmp4;
             obj4.url = tmp4;
             preventDefaultResult = _require;
             let num13 = 21;
-            obj4.trustUrl = _require(12226).trustProtocol;
+            obj4.trustUrl = _require(12253).trustProtocol;
             preventDefaultResult = handleConfirm;
             obj4.onConfirm = handleConfirm;
             obj4.onCancel = tmp98;
@@ -419,11 +419,11 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
             preventDefaultResult = dependencyMap;
             let num10 = 20;
             preventDefaultResult = null != preventDefaultResult ? preventDefaultResult.displayTarget : tmp4;
-            let obj11 = channelId(12224);
+            let obj11 = channelId(12251);
             let obj5 = { url: preventDefaultResult };
             preventDefaultResult = _require;
             let num11 = 21;
-            obj5.trustUrl = _require(12226).trustDomain;
+            obj5.trustUrl = _require(12253).trustDomain;
             preventDefaultResult = handleConfirm;
             obj5.onConfirm = handleConfirm;
             preventDefaultResult = tmp98;
@@ -445,7 +445,7 @@ export const handleClick = function handleClick(href, preventDefault, arg2, cont
           if (flag2) {
             preventDefaultResult = channelId;
             preventDefaultResult = dependencyMap;
-            let obj15 = channelId(8341);
+            let obj15 = channelId(8385);
             obj6 = { messageId: tmp7, channelId, guildId: tmp5, sourceChannelId: tmp9, sourceGuildId: tmp10 };
             preventDefaultResult = obj15.trackAnnouncementMessageLinkClicked(obj6);
           }

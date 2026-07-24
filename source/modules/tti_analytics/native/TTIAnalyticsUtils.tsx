@@ -1,7 +1,7 @@
 // Module ID: 6707
-// Function ID: 51934
+// Function ID: 51956
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6708, 4044, 1278, 1194, 1348, 683, 653, 6912, 1355, 33, 4110, 6913, 491, 1554, 3982, 3981, 20, 1184, 675, 6914, 3988, 6916, 14, 664, 6917, 4471, 4561, 1934, 2]
+// Dependencies: [5, 6708, 4044, 1278, 1194, 1348, 683, 653, 6911, 1355, 33, 4110, 6912, 491, 1554, 3982, 3981, 20, 1184, 675, 6913, 3988, 6915, 14, 664, 6916, 4471, 4561, 1934, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
 // Module 6707 (_createForOfIteratorHelperLoose)
@@ -110,7 +110,7 @@ function getDeviceMetadata() {
     obj.device_manufacturer = require(4110) /* getSystemVersion */.getDeviceManufacturer();
     const obj5 = require(4110) /* getSystemVersion */;
     obj.smallest_screen_width_dp = require(4110) /* getSystemVersion */.getSmallestScreenWidthDp();
-    obj.device_performance_class = importDefault(6913)();
+    obj.device_performance_class = importDefault(6912)();
     const obj6 = require(4110) /* getSystemVersion */;
     obj.soc_name = require(4110) /* getSystemVersion */.getSocName();
     const obj7 = require(4110) /* getSystemVersion */;
@@ -479,7 +479,7 @@ export const trackAppUIViewed = function trackAppUIViewed(ModalScreen, arg1, has
   if (hasCacheResult === undefined) {
     hasCacheResult = closure_4.hasCache();
   }
-  const AppStartInfo = require(6914) /* AppStartInfo */.AppStartInfo;
+  const AppStartInfo = require(6913) /* AppStartInfo */.AppStartInfo;
   if (!AppStartInfo.getAppUIViewed()) {
     (function trackAppUIViewedAsync(ModalScreen, arg1, hasCacheResult) {
       return outer1_27(...arguments);

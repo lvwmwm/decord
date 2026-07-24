@@ -1,5 +1,5 @@
 // Module ID: 6546
-// Function ID: 50773
+// Function ID: 50784
 // Name: StreamingTier2LargeBadge
 // Dependencies: [33, 5085, 6547, 2]
 // Exports: StreamingTier2LargeBadge

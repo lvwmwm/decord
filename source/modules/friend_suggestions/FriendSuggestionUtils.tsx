@@ -1,10 +1,10 @@
-// Module ID: 14911
-// Function ID: 113665
+// Module ID: 14958
+// Function ID: 113986
 // Name: getSuggestedContactNameForSuggestion
 // Dependencies: [2]
 // Exports: getSuggestedContactNameForSuggestion
 
-// Module 14911 (getSuggestedContactNameForSuggestion)
+// Module 14958 (getSuggestedContactNameForSuggestion)
 const result = require("set").fileFinishedImporting("modules/friend_suggestions/FriendSuggestionUtils.tsx");
 
 export const getSuggestedContactNameForSuggestion = function getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend) {

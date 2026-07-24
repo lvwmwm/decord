@@ -1,10 +1,10 @@
-// Module ID: 16481
-// Function ID: 128410
+// Module ID: 16528
+// Function ID: 128734
 // Name: GuildRoleSubscriptionRolePreview
-// Dependencies: [31, 27, 1849, 33, 4130, 689, 1212, 624, 4319, 5085, 4126, 665, 1273, 5490, 2]
+// Dependencies: [31, 27, 1849, 33, 4130, 689, 1212, 624, 4319, 5085, 4126, 665, 1273, 5488, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 16481 (GuildRoleSubscriptionRolePreview)
+// Module 16528 (GuildRoleSubscriptionRolePreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -53,7 +53,7 @@ export const GuildRoleSubscriptionRolePreview = function GuildRoleSubscriptionRo
   const obj4 = { color: importAll(665).int2hex(roleColor) };
   obj3.style = obj4;
   obj3.children = name;
-  const items3 = [callback(require(4126) /* Text */.Text, obj3), callback(require(1273) /* Button */.Spacer, { size: 4 }), callback(importDefault(5490), { name: roleName, source: { uri: roleImage }, size: 16 }), callback(require(1273) /* Button */.Spacer, { size: 8 }), callback(require(4126) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" })];
+  const items3 = [callback(require(4126) /* Text */.Text, obj3), callback(require(1273) /* Button */.Spacer, { size: 4 }), callback(importDefault(5488), { name: roleName, source: { uri: roleImage }, size: 16 }), callback(require(1273) /* Button */.Spacer, { size: 8 }), callback(require(4126) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" })];
   obj2.children = items3;
   const items4 = [callback2(View, obj2), ];
   const obj5 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };

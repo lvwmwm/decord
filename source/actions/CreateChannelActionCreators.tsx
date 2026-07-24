@@ -1,8 +1,8 @@
-// Module ID: 8411
-// Function ID: 66945
+// Module ID: 8455
+// Function ID: 67173
 // Dependencies: [4325, 653, 662, 686, 4942, 480, 1361, 507, 5079, 5073, 5717, 2]
 
-// Module 8411
+// Module 8455
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES";

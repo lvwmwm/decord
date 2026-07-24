@@ -1,9 +1,9 @@
-// Module ID: 9673
-// Function ID: 75324
+// Module ID: 9707
+// Function ID: 75536
 // Name: FOOTER_HEIGHT
-// Dependencies: [31, 27, 33, 4130, 689, 9663, 4126, 1212, 4543, 9674, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 9697, 4126, 1212, 4543, 9708, 2]
 
-// Module 9673 (FOOTER_HEIGHT)
+// Module 9707 (FOOTER_HEIGHT)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
   let onViewAll;
   ({ disabled, onViewAll } = arg0);
   const tmp = callback3();
-  let obj = importDefault(9663);
+  let obj = importDefault(9697);
   if (obj.useHasReachedEnd()) {
     obj = { style: tmp.container };
     obj = { variant: "text-sm/normal", style: tmp.label };
@@ -45,7 +45,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
     obj2.disabled = disabled;
     obj1.children = callback(require(4543) /* Button */.Button, obj2);
     items[1] = callback(closure_3, obj1);
-    const obj3 = { source: importDefault(9674) };
+    const obj3 = { source: importDefault(9708) };
     items[2] = callback(closure_4, obj3);
     obj.children = items;
     let tmp4 = callback2(closure_3, obj);

@@ -1,10 +1,10 @@
-// Module ID: 14512
-// Function ID: 110780
+// Module ID: 14562
+// Function ID: 111103
 // Name: CollectiblesProgressiveImage
 // Dependencies: [31, 27, 33, 3991, 4131, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 14512 (CollectiblesProgressiveImage)
+// Module 14562 (CollectiblesProgressiveImage)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,5 +1,5 @@
 // Module ID: 3819
-// Function ID: 31721
+// Function ID: 31722
 // Name: makeLongFormatter
 // Dependencies: [3803, 1282, 3817, 3820, 3712, 2]
 // Exports: default

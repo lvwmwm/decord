@@ -1,10 +1,10 @@
-// Module ID: 11948
-// Function ID: 92364
+// Module ID: 11974
+// Function ID: 92600
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [6902, 5592, 1849, 4203, 653, 566, 2]
+// Dependencies: [6901, 5590, 1849, 4203, 653, 566, 2]
 // Exports: default
 
-// Module 11948 (usePersonalizedVoiceChannelUsers)
+// Module 11974 (usePersonalizedVoiceChannelUsers)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

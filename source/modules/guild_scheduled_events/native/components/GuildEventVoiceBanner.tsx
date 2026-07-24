@@ -1,8 +1,8 @@
-// Module ID: 12709
-// Function ID: 98981
-// Dependencies: [31, 27, 1906, 6758, 33, 4130, 689, 8455, 566, 8402, 8346, 4098, 8365, 4341, 8353, 4660, 8361, 4543, 1212, 2]
+// Module ID: 12760
+// Function ID: 99302
+// Dependencies: [31, 27, 1906, 6758, 33, 4130, 689, 8499, 566, 8446, 8390, 4098, 8409, 4341, 8397, 4660, 8405, 4543, 1212, 2]
 
-// Module 12709
+// Module 12760
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,9 +25,9 @@ const memoResult = importAllResult.memo((channel) => {
   let dependencyMap;
   let importAllResult;
   let tmp = callback3();
-  let obj = channel(8455);
+  let obj = channel(8499);
   const activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(8455);
+  let obj1 = channel(8499);
   const imminentUpcomingGuildEvents = obj1.useImminentUpcomingGuildEvents(channel.id);
   let obj2 = channel(566);
   const items = [_isNativeReflectConstruct];
@@ -41,9 +41,9 @@ const memoResult = importAllResult.memo((channel) => {
     tmp5 = first;
   }
   dependencyMap = tmp5;
-  let obj3 = channel(8402);
+  let obj3 = channel(8446);
   const canManageGuildEventResult = obj3.useManageResourcePermissions(channel).canManageGuildEvent(tmp5);
-  const nextRecurrenceIdInEvent = channel(8346).getNextRecurrenceIdInEvent(tmp5);
+  const nextRecurrenceIdInEvent = channel(8390).getNextRecurrenceIdInEvent(tmp5);
   let tmp9;
   if (null != nextRecurrenceIdInEvent) {
     tmp9 = nextRecurrenceIdInEvent;
@@ -70,9 +70,9 @@ const memoResult = importAllResult.memo((channel) => {
   } else {
     obj = { accessibilityRole: "button", onPress: tmp11, style: tmp.header };
     obj = { event: tmp5, showUserCount: false };
-    const items2 = [callback2(channel(8361).GuildEventCardHeader, obj), , ];
+    const items2 = [callback2(channel(8405).GuildEventCardHeader, obj), , ];
     obj1 = { event: tmp5, descriptionContainerStyle: tmp.descriptionContainerStyle, condensed: tmp4 };
-    items2[1] = callback2(channel(8361).GuildEventCardMetaInfo, obj1);
+    items2[1] = callback2(channel(8405).GuildEventCardMetaInfo, obj1);
     if (tmp4) {
       tmp4 = canManageGuildEventResult;
     }
@@ -92,7 +92,7 @@ const memoResult = importAllResult.memo((channel) => {
     obj.children = items2;
     return closure_8(channel(4660).PressableOpacity, obj);
   }
-  const obj5 = channel(8346);
+  const obj5 = channel(8390);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventVoiceBanner.tsx");
 

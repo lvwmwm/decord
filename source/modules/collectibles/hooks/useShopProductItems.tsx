@@ -1,10 +1,10 @@
-// Module ID: 8207
-// Function ID: 64900
+// Module ID: 8251
+// Function ID: 65128
 // Name: ItemsSortingHat
 // Dependencies: [6, 7, 31, 1876, 1212, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 8207 (ItemsSortingHat)
+// Module 8251 (ItemsSortingHat)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import result from "result";

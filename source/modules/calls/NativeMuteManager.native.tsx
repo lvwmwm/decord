@@ -1,9 +1,9 @@
-// Module ID: 12745
-// Function ID: 99252
+// Module ID: 12796
+// Function ID: 99573
 // Name: NativeMuteManager
-// Dependencies: [6, 7, 8837, 4177, 3, 4015, 686, 8843, 4179, 2]
+// Dependencies: [6, 7, 8876, 4177, 3, 4015, 686, 8882, 4179, 2]
 
-// Module 12745 (NativeMuteManager)
+// Module 12796 (NativeMuteManager)
 import dispatcher from "dispatcher";
 import getInputDeviceName from "getInputDeviceName";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

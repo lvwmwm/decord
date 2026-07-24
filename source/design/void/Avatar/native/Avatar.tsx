@@ -1,9 +1,9 @@
-// Module ID: 13026
-// Function ID: 100652
+// Module ID: 13078
+// Function ID: 100975
 // Name: getStatusSize
-// Dependencies: [31, 27, 653, 1274, 33, 4130, 689, 11951, 13015, 13016, 7873, 7838, 13027, 7872, 13017, 4545, 10592, 10593, 2]
+// Dependencies: [31, 27, 653, 1274, 33, 4130, 689, 11977, 13067, 13068, 7961, 7927, 13079, 7960, 13069, 4545, 10621, 10622, 2]
 
-// Module 13026 (getStatusSize)
+// Module 13078 (getStatusSize)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { StatusTypes } from "ME";
@@ -17,22 +17,22 @@ let closure_8;
 let closure_9;
 const require = arg1;
 function getStatusSize(arg0) {
-  if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
-    if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL !== arg0) {
-      if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL_20 !== arg0) {
-        if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.SMALL !== arg0) {
-          if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+  if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
+    if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL !== arg0) {
+      if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL_20 !== arg0) {
+        if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.SMALL !== arg0) {
+          if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.NORMAL !== arg0) {
-              if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.TABS_22 !== arg0) {
-                if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE !== arg0) {
-                  if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE_48 !== arg0) {
-                    if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE !== arg0) {
-                      if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE_72 !== arg0) {
-                        if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXLARGE !== arg0) {
-                          if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.PROFILE !== arg0) {
-                            if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.YOUBAR_60 !== arg0) {
+            if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.NORMAL !== arg0) {
+              if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.TABS_22 !== arg0) {
+                if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE !== arg0) {
+                  if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE_48 !== arg0) {
+                    if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE !== arg0) {
+                      if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE_72 !== arg0) {
+                        if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXLARGE !== arg0) {
+                          if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.PROFILE !== arg0) {
+                            if (require(11977) /* StaticNativeCutoutAvatarImage */.AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -53,8 +53,8 @@ function getStatusSize(arg0) {
   return closure_7.SMALL;
 }
 function getAvatarDecorationMargin(closure_10) {
-  const decorationSizeForAvatarSize = require(7838) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(closure_10);
-  return (decorationSizeForAvatarSize - require(11951) /* StaticNativeCutoutAvatarImage */.styles[closure_10].width) / 2;
+  const decorationSizeForAvatarSize = require(7927) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(closure_10);
+  return (decorationSizeForAvatarSize - require(11977) /* StaticNativeCutoutAvatarImage */.styles[closure_10].width) / 2;
 }
 ({ STATUS_PADDING: closure_6, StatusSizes: closure_7 } = STATUS_PADDING);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

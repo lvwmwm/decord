@@ -1,5 +1,5 @@
 // Module ID: 7291
-// Function ID: 58770
+// Function ID: 58799
 // Name: isErrorEvent
 // Dependencies: [57, 6, 7, 7283, 7264, 7236, 7290, 7247, 7243, 7259, 7260, 7292, 7279, 7280, 7263, 7285, 7272, 7293, 7276, 7294, 7241]
 
@@ -72,7 +72,7 @@ export const BaseClient = (() => {
         }
         return tmp;
       });
-      f58775 = found;
+      f58804 = found;
       if (found) {
         tmp13 = BaseClient;
         tmp14 = outer1_1;

@@ -1,5 +1,5 @@
 // Module ID: 5632
-// Function ID: 48050
+// Function ID: 48060
 // Name: isCreatorMonetizationEnabledGuild
 // Dependencies: [1838, 653, 566, 2]
 // Exports: default

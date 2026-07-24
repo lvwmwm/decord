@@ -1,10 +1,10 @@
-// Module ID: 15515
-// Function ID: 119640
+// Module ID: 15562
+// Function ID: 119962
 // Name: isGuildEligibleForStageChannels
 // Dependencies: [1838, 653, 566, 2]
 // Exports: useGuildEligibleForStageChannels
 
-// Module 15515 (isGuildEligibleForStageChannels)
+// Module 15562 (isGuildEligibleForStageChannels)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 

@@ -1,10 +1,10 @@
-// Module ID: 10048
-// Function ID: 77652
+// Module ID: 10080
+// Function ID: 77846
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 57, 31, 1838, 3758, 4970, 10042, 653, 566, 4559, 10046, 2]
+// Dependencies: [5, 57, 31, 1838, 3758, 4970, 10074, 653, 566, 4559, 10078, 2]
 // Exports: default
 
-// Module 10048 (useAvailableAndAddedGuilds)
+// Module 10080 (useAvailableAndAddedGuilds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

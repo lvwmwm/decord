@@ -1,10 +1,10 @@
-// Module ID: 10661
-// Function ID: 83198
+// Module ID: 10690
+// Function ID: 83390
 // Name: MicrophoneArrowRightIcon
-// Dependencies: [31, 33, 689, 3833, 10662, 2]
+// Dependencies: [31, 33, 689, 3833, 10691, 2]
 // Exports: MicrophoneArrowRightIcon
 
-// Module 10661 (MicrophoneArrowRightIcon)
+// Module 10690 (MicrophoneArrowRightIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const MicrophoneArrowRightIcon = function MicrophoneArrowRightIcon(color)
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(10662) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10691) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10662) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10691) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

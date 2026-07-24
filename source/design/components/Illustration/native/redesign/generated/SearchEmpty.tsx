@@ -1,17 +1,17 @@
-// Module ID: 9371
-// Function ID: 73108
+// Module ID: 9407
+// Function ID: 73317
 // Name: getSearchEmptySource
-// Dependencies: [31, 27, 33, 7403, 9372, 9373, 9374, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 9408, 9409, 9410, 3976, 2]
 // Exports: SearchEmpty
 
-// Module 9371 (getSearchEmptySource)
+// Module 9407 (getSearchEmptySource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getSearchEmptySource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

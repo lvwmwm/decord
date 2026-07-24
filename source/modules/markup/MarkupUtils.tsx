@@ -1,7 +1,7 @@
 // Module ID: 4120
-// Function ID: 34097
+// Function ID: 34098
 // Name: combineAndInjectMentionRule
-// Dependencies: [4121, 4564, 22, 4565, 7674, 2]
+// Dependencies: [4121, 4564, 22, 4565, 7763, 2]
 
 // Module 4120 (combineAndInjectMentionRule)
 import importDefaultResult from "apply";
@@ -103,22 +103,22 @@ let closure_15 = require("apply").once(() => {
   return importDefault(22).omit.apply(items1);
 });
 obj = { text: require("parseLink").RULES.text };
-let closure_16 = require("apply").once(() => importAll(7674).reactParserFor(callback()));
-let closure_17 = require("apply").once(() => importAll(7674).reactParserFor(callback3()));
-let closure_18 = require("apply").once(() => importAll(7674).reactParserFor(callback4()));
-let closure_19 = require("apply").once(() => importAll(7674).reactParserFor(callback5()));
-let closure_20 = require("apply").once(() => importAll(7674).reactParserFor(callback6()));
-let closure_21 = require("apply").once(() => importAll(7674).reactParserFor(callback7()));
-let closure_22 = require("apply").once(() => importAll(7674).reactParserFor(callback8()));
-let closure_23 = require("apply").once(() => importAll(7674).reactParserFor(callback9()));
-let closure_24 = require("apply").once(() => importAll(7674).reactParserFor(callback10()));
-let closure_25 = require("apply").once(() => importAll(7674).reactParserFor(callback2()));
-let closure_26 = require("apply").once(() => importAll(7674).astParserFor(callback()));
-let closure_27 = require("apply").once(() => importAll(7674).astParserFor(callback3()));
-let closure_28 = require("apply").once(() => importAll(7674).astParserFor(callback5()));
-let closure_29 = require("apply").once(() => importAll(7674).astParserFor(callback6()));
-let closure_30 = require("apply").once(() => importAll(7674).astParserFor(callback7()));
-let closure_31 = require("apply").once(() => importAll(7674).astParserFor(callback10()));
+let closure_16 = require("apply").once(() => importAll(7763).reactParserFor(callback()));
+let closure_17 = require("apply").once(() => importAll(7763).reactParserFor(callback3()));
+let closure_18 = require("apply").once(() => importAll(7763).reactParserFor(callback4()));
+let closure_19 = require("apply").once(() => importAll(7763).reactParserFor(callback5()));
+let closure_20 = require("apply").once(() => importAll(7763).reactParserFor(callback6()));
+let closure_21 = require("apply").once(() => importAll(7763).reactParserFor(callback7()));
+let closure_22 = require("apply").once(() => importAll(7763).reactParserFor(callback8()));
+let closure_23 = require("apply").once(() => importAll(7763).reactParserFor(callback9()));
+let closure_24 = require("apply").once(() => importAll(7763).reactParserFor(callback10()));
+let closure_25 = require("apply").once(() => importAll(7763).reactParserFor(callback2()));
+let closure_26 = require("apply").once(() => importAll(7763).astParserFor(callback()));
+let closure_27 = require("apply").once(() => importAll(7763).astParserFor(callback3()));
+let closure_28 = require("apply").once(() => importAll(7763).astParserFor(callback5()));
+let closure_29 = require("apply").once(() => importAll(7763).astParserFor(callback6()));
+let closure_30 = require("apply").once(() => importAll(7763).astParserFor(callback7()));
+let closure_31 = require("apply").once(() => importAll(7763).astParserFor(callback10()));
 obj = { combineAndInjectMentionRule, createReactRules: require("MarkupText"), defaultReactRuleOptions: obj };
 Object.defineProperty(obj, "defaultRules", { get: () => callback(), set: undefined });
 Object.defineProperty(obj, "guildEventRules", { get: () => callback9(), set: undefined });

@@ -1,7 +1,7 @@
 // Module ID: 4349
-// Function ID: 38478
+// Function ID: 38479
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 5, 1909, 4350, 1921, 1194, 1348, 4802, 1907, 1917, 1838, 3758, 3767, 1906, 3947, 1849, 653, 3, 21, 4803, 4808, 1882, 4806, 4351, 1360, 22, 6835, 4360, 3769, 7076, 12692, 9965, 1881, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 5, 1909, 4350, 1921, 1194, 1348, 4802, 1907, 1917, 1838, 3758, 3767, 1906, 3947, 1849, 653, 3, 21, 4803, 4808, 1882, 4806, 4351, 1360, 22, 6834, 4360, 3769, 7075, 12743, 9997, 1881, 566, 686, 2]
 
 // Module 4349 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
@@ -317,8 +317,8 @@ function handleMessageSendFailedAutomod(arg0) {
   let messageData;
   let require;
   ({ type: require, messageData } = arg0);
-  const failedMessageId = require(7076) /* _isNativeReflectConstruct */.getFailedMessageId(messageData);
-  const obj = require(7076) /* _isNativeReflectConstruct */;
+  const failedMessageId = require(7075) /* _isNativeReflectConstruct */.getFailedMessageId(messageData);
+  const obj = require(7075) /* _isNativeReflectConstruct */;
   const orCreate = importDefault(4803).getOrCreate(messageData.message.channelId);
   if (orCreate.has(failedMessageId)) {
     const updateResult = orCreate.update(failedMessageId, (embeds) => {
@@ -932,7 +932,7 @@ tmp6 = new tmp6(require("dispatcher"), {
     const value = importDefault(4803).get(messageId.channelId);
     if (null != value) {
       if (value.has(messageId)) {
-        const updateResult = value.update(messageId, require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage);
+        const updateResult = value.update(messageId, require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage);
         importDefault(4803).commit(updateResult);
       }
     }

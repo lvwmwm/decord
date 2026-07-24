@@ -1,10 +1,10 @@
-// Module ID: 10264
-// Function ID: 79319
+// Module ID: 10293
+// Function ID: 79510
 // Name: items
-// Dependencies: [689, 1273, 5515, 5474, 10263, 2]
+// Dependencies: [689, 1273, 5513, 5472, 10292, 2]
 // Exports: getCompactStyles
 
-// Module 10264 (items)
+// Module 10293 (items)
 let obj = { layout: { margin: { marginLeft: 4, marginRight: 4, marginVertical: 0 }, marginPanels: { marginLeft: 8, marginRight: 8, marginVertical: 0 }, marginThread: { marginLeft: 56, marginRight: 4, marginVertical: 0 } } };
 obj = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 4, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };
 obj.container = obj;
@@ -48,7 +48,7 @@ export const getCompactStyles = function getCompactStyles(arg0) {
     const obj1 = { variant: "text-xs/semibold" };
     obj.text = obj1;
     obj.timestamp = obj;
-    let tmp = importDefault(10263)(obj, obj);
+    let tmp = importDefault(10292)(obj, obj);
   } else {
     tmp = obj;
   }

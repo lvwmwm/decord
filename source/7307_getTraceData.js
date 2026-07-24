@@ -1,5 +1,5 @@
 // Module ID: 7307
-// Function ID: 58962
+// Function ID: 58991
 // Name: getTraceData
 // Dependencies: [7232, 7235, 7264, 7250, 7263, 7284, 7254, 7255, 7241, 7272, 7249, 7248, 7236]
 // Exports: getTraceData

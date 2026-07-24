@@ -1,9 +1,9 @@
-// Module ID: 14473
-// Function ID: 110556
+// Module ID: 14523
+// Function ID: 110879
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 4129, 1278, 1849, 6774, 6811, 655, 653, 33, 4130, 5484, 12382, 14474, 566, 5450, 491, 7859, 14475, 477, 6785, 8002, 8667, 8676, 3976, 5464, 1456, 8719, 3789, 14477, 675, 6825, 7888, 14478, 14480, 14503, 1184, 8666, 8769, 14506, 14507, 14483, 14508, 6838, 2]
+// Dependencies: [57, 31, 27, 4129, 1278, 1849, 6774, 6810, 655, 653, 33, 4130, 5482, 12397, 14524, 566, 5450, 491, 7948, 14525, 477, 6785, 7433, 8708, 8717, 3976, 5462, 1456, 8760, 3789, 14527, 675, 6824, 7975, 14528, 14530, 14553, 1184, 8707, 8808, 14556, 14557, 14533, 14558, 6837, 2]
 
-// Module 14473 (_createForOfIteratorHelperLoose)
+// Module 14523 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import expandLocation from "expandLocation";
 import get_ActivityIndicator from "useNavigation";
@@ -108,12 +108,12 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function screenToAnalyticsLocation(screen) {
   if (constants.SHOP_ALL === screen) {
-    return importDefault(5484).COLLECTIBLES_SHOP_INDEX_PAGE;
+    return importDefault(5482).COLLECTIBLES_SHOP_INDEX_PAGE;
   } else if (constants.ORBS === screen) {
-    return importDefault(5484).COLLECTIBLES_SHOP_ORBS_TAB;
+    return importDefault(5482).COLLECTIBLES_SHOP_ORBS_TAB;
   } else {
     const FEATURED_PAGE = constants.FEATURED_PAGE;
-    return importDefault(5484).COLLECTIBLES_SHOP_HOME_SCREEN;
+    return importDefault(5482).COLLECTIBLES_SHOP_HOME_SCREEN;
   }
 }
 class CollectiblesShopV2 {

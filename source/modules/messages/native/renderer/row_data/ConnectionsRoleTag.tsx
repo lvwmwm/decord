@@ -1,10 +1,10 @@
-// Module ID: 7912
-// Function ID: 62968
+// Module ID: 7999
+// Function ID: 63279
 // Name: createConnectionsRoleTag
 // Dependencies: [27, 653, 689, 665, 2]
 // Exports: createConnectionsRoleTag
 
-// Module 7912 (createConnectionsRoleTag)
+// Module 7999 (createConnectionsRoleTag)
 import { processColor } from "get ActivityIndicator";
 import { DEFAULT_ROLE_COLOR_HEX } from "ME";
 

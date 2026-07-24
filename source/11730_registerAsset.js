@@ -1,11 +1,11 @@
 // Module ID: 11730
-// Function ID: 91050
+// Function ID: 91020
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 11730 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/contact_sync/native/images", width: 156.5, height: 118, scales: [2, 3], hash: "273d7cc721dbd2991c78c1e8d926e220", name: "empty-suggestions-header", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 48, height: 48, scales: [2, 3], hash: "8d7c88bf2a3c70b7581717d42e9c4ec1", name: "send_message_32px", type: "png" };
 
 export default registerAsset.registerAsset(obj);

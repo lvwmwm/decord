@@ -1,5 +1,5 @@
 // Module ID: 1740
-// Function ID: 19500
+// Function ID: 19501
 // Name: useDerivedValue
 // Dependencies: [65, 31, 1585, 1626, 1654]
 // Exports: useDerivedValue

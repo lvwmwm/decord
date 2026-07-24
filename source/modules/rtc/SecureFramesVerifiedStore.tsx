@@ -1,9 +1,9 @@
-// Module ID: 8879
-// Function ID: 69981
+// Module ID: 8918
+// Function ID: 70196
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 4202, 4216, 8880, 8881, 653, 8897, 4194, 4227, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 4202, 4216, 8919, 8920, 653, 8936, 4194, 4227, 566, 686, 2]
 
-// Module 8879 (_isNativeReflectConstruct)
+// Module 8918 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -171,7 +171,7 @@ function handleUserUpdate(userId) {
       }
       flag = isKeyVerifiedResult !== map.get(userId);
       const result = map.set(userId, isKeyVerifiedResult);
-      obj = require(8897) /* _createForOfIteratorHelperLoose */;
+      obj = require(8936) /* _createForOfIteratorHelperLoose */;
     }
     const tmp18 = computeStreamVerifications();
     if (!flag) {

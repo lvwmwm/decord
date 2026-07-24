@@ -1,5 +1,5 @@
 // Module ID: 958
-// Function ID: 10377
+// Function ID: 10378
 // Name: extractToolCalls
 // Dependencies: [65, 934, 954]
 // Exports: extractToolsFromCompiledGraph, setResponseAttributes

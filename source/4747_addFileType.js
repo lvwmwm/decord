@@ -1,5 +1,5 @@
 // Module ID: 4747
-// Function ID: 41246
+// Function ID: 41250
 // Name: addFileType
 // Dependencies: [4748, 4749, 4751, 4752, 4753, 4757, 4758, 4759, 4760, 4745]
 

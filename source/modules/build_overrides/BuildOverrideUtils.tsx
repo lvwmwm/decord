@@ -1,5 +1,5 @@
 // Module ID: 4046
-// Function ID: 33738
+// Function ID: 33739
 // Name: getAPIEndpoint
 // Dependencies: [4047, 653, 1554, 477, 1443, 507, 1445, 4048, 2]
 // Exports: getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, probablyHasBuildOverride, validateURL

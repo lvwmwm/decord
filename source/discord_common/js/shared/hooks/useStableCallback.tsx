@@ -1,10 +1,10 @@
-// Module ID: 8392
-// Function ID: 66793
+// Module ID: 8436
+// Function ID: 67021
 // Name: useStableCallback
 // Dependencies: [31, 2]
 // Exports: default
 
-// Module 8392 (useStableCallback)
+// Module 8436 (useStableCallback)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useStableCallback.tsx");

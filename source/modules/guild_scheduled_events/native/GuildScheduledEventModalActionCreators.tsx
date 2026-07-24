@@ -1,10 +1,10 @@
-// Module ID: 8365
-// Function ID: 66660
+// Module ID: 8409
+// Function ID: 66888
 // Name: openCreateOrEditGuildEventModal
-// Dependencies: [5, 31, 1348, 1907, 1838, 3758, 6758, 1354, 8354, 653, 33, 4337, 44, 8366, 1934, 4098, 8399, 8453, 8469, 8478, 4472, 8344, 3831, 1212, 8479, 8460, 8350, 8480, 8362, 5492, 3830, 8481, 7460, 8353, 8351, 8346, 12198, 7600, 3803, 5491, 1450, 12199, 5497, 2]
+// Dependencies: [5, 31, 1348, 1907, 1838, 3758, 6758, 1354, 8398, 653, 33, 4337, 44, 8410, 1934, 4098, 8443, 8497, 8513, 8523, 4472, 8388, 3831, 1212, 8524, 8504, 8394, 8525, 8406, 5490, 3830, 8526, 7540, 8397, 8395, 8390, 12225, 7689, 3803, 5489, 1450, 12226, 5495, 2]
 // Exports: closeGuildEventListActionSheet, openGuildEventListActionSheet, openShareEvent, showGuildEventModeratorActionSheet, transitionToEventDetailsFromInvite
 
-// Module 8365 (openCreateOrEditGuildEventModal)
+// Module 8409 (openCreateOrEditGuildEventModal)
 import closure_3 from "_isNativeReflectConstruct";
 import showInstantInviteActionSheet from "showInstantInviteActionSheet";
 import closure_5 from "_isNativeReflectConstruct";
@@ -42,12 +42,12 @@ function openCreateOrEditGuildEventModal(guild, arg1) {
     importDefault(44)(null != guildEvent, "recurrence editing requires a guild event");
     let obj = importDefault(4337);
     obj = { guildEvent, recurrenceId, onCloseModal: handleClose };
-    obj.pushLazy(require(1934) /* maybeLoadBundle */(8366, dependencyMap.paths), obj, closure_13);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(8410, dependencyMap.paths), obj, closure_13);
   } else {
     importDefault(4098).hideAllActionSheets();
     const obj3 = importDefault(4098);
     obj = { guild, targetChannel: tmp, initialGuildEvent: guildEvent, onCloseModal: handleClose };
-    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(8399, dependencyMap.paths), obj, closure_13);
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(8443, dependencyMap.paths), obj, closure_13);
     const obj4 = importDefault(4337);
   }
 }
@@ -55,7 +55,7 @@ function openStartGuildEventModal(event, recurrenceId, onCloseActionSheet) {
   let obj = importDefault(4098);
   obj.hideAllActionSheets();
   obj = { event, recurrenceId, onCloseActionSheet };
-  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(8469, dependencyMap.paths), obj, closure_15);
+  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(8513, dependencyMap.paths), obj, closure_15);
 }
 function openDeleteGuildEventActionSheet(eventId, guildId, recurrenceId) {
   let obj = require(4472) /* useAlertStore */;
@@ -64,7 +64,7 @@ function openDeleteGuildEventActionSheet(eventId, guildId, recurrenceId) {
 }
 function updateRsvp(arg0, arg1, arg2, arg3) {
   let closure_0 = arg3;
-  importDefault(8344).updateRsvp(arg0, arg1, arg2, arg3, (arg0) => {
+  importDefault(8388).updateRsvp(arg0, arg1, arg2, arg3, (arg0) => {
     let tmp2 = tmp;
     if (null == arg0) {
       tmp2 = callback === outer1_12.INTERESTED;
@@ -101,7 +101,7 @@ function handleGuildScheduledEventRsvp(id, closure_1, guild_id) {
   const _require = id;
   closure_1 = guild_id;
   const dependencyMap = arg3;
-  let obj = _require(8350);
+  let obj = _require(8394);
   obj = {
     eventId: id,
     recurrenceId: closure_1,
@@ -132,7 +132,7 @@ export { openCreateOrEditGuildEventModal };
 export const openGuildEventListActionSheet = function openGuildEventListActionSheet(outer1_0) {
   let obj = importDefault(4098);
   obj = { guild: outer1_0 };
-  obj.openLazy(require(1934) /* maybeLoadBundle */(8453, dependencyMap.paths), closure_14, obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(8497, dependencyMap.paths), closure_14, obj);
 };
 export const closeGuildEventListActionSheet = function closeGuildEventListActionSheet() {
   importDefault(4098).hideActionSheet(closure_14);
@@ -147,7 +147,7 @@ export const openShareEvent = function openShareEvent(event, arg1) {
     channel = defaultChannel.getDefaultChannel(event.guild_id);
   }
   if (null != channel) {
-    let obj = require(8362) /* canEveryoneRoleViewEvent */;
+    let obj = require(8406) /* canEveryoneRoleViewEvent */;
     const result = obj.isGuildEventInvitable(event);
     if (result) {
       const guild = store.getGuild(event.guild_id);
@@ -158,22 +158,22 @@ export const openShareEvent = function openShareEvent(event, arg1) {
       if (null != vanityURLCode) {
         if ("" !== guild.vanityURLCode) {
           if (!closure_8.can(constants2.CREATE_INSTANT_INVITE, channel)) {
-            const obj4 = require(8481) /* showInstantInviteActionSheet */;
+            const obj4 = require(8526) /* showInstantInviteActionSheet */;
             obj = { guildScheduledEventId: event.id, stackingBehavior: "stack" };
             const result1 = obj4.showVanityUrlInviteActionSheet(guild, channel, constants.GUILD_SCHEDULED_EVENT, obj);
           }
         }
       }
       obj = { createInvite: result, guildScheduledEventId: event.id, stackingBehavior: "stack", source: constants.GUILD_SCHEDULED_EVENT };
-      const result2 = require(8481) /* showInstantInviteActionSheet */.showInstantInviteActionSheet(channel, obj);
-      const obj6 = require(8481) /* showInstantInviteActionSheet */;
+      const result2 = require(8526) /* showInstantInviteActionSheet */.showInstantInviteActionSheet(channel, obj);
+      const obj6 = require(8526) /* showInstantInviteActionSheet */;
     } else {
       let tmp6 = null != arg1;
       if (tmp6) {
         tmp6 = "" !== arg1;
       }
       if (tmp6) {
-        let obj1 = require(5492) /* _copy */;
+        let obj1 = require(5490) /* _copy */;
         obj1.copy(arg1);
         require(3830) /* presentAddedFriendToast */.presentLinkCopied();
         const obj3 = require(3830) /* presentAddedFriendToast */;
@@ -183,7 +183,7 @@ export const openShareEvent = function openShareEvent(event, arg1) {
     obj1 = { key: "ERROR_OCCURRED_TRY_AGAIN" };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj1.content = intl.string(require(1212) /* getSystemLocale */.t.fEptJP);
-    obj1.icon = importDefault(8479);
+    obj1.icon = importDefault(8524);
     importDefault(3831).open(obj1);
     const obj8 = importDefault(3831);
   }

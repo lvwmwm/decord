@@ -1,10 +1,10 @@
-// Module ID: 10414
-// Function ID: 80208
+// Module ID: 10443
+// Function ID: 80400
 // Name: MoreTipsModalScreen
-// Dependencies: [31, 27, 9101, 653, 33, 4130, 689, 10154, 4126, 1212, 10415, 5788, 4337, 7607, 1273, 1557, 624, 10131, 6837, 6842, 5519, 2]
+// Dependencies: [31, 27, 9139, 653, 33, 4130, 689, 10186, 4126, 1212, 10444, 5788, 4337, 7696, 1273, 1557, 624, 10163, 6836, 6841, 5517, 2]
 // Exports: default
 
-// Module 10414 (MoreTipsModalScreen)
+// Module 10443 (MoreTipsModalScreen)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ function MoreTipsModalScreen(learnMore) {
   let obj = { keyboardShouldPersistTaps: "handled", style: tmp.scroll };
   obj = { style: tmp.contentContainer };
   obj = { style: tmp.tipsContainer };
-  const items = [callback(importDefault(10154), { description, safetyTips, showHeader: true }), ];
+  const items = [callback(importDefault(10186), { description, safetyTips, showHeader: true }), ];
   let tmp8 = null;
   if (null != learnMore) {
     const obj1 = { style: tmp.learnMore, children: learnMore };
@@ -46,7 +46,7 @@ function MoreTipsModalScreen(learnMore) {
   const items2 = [callback(require(4126) /* Text */.Text, obj3), actionItems];
   obj2.children = items2;
   items1[1] = callback2(closure_4, obj2);
-  items1[2] = callback(importDefault(10415), { channelId, warningId, senderId });
+  items1[2] = callback(importDefault(10444), { channelId, warningId, senderId });
   obj.children = items1;
   obj.children = callback2(closure_4, obj);
   return callback(closure_5, obj);

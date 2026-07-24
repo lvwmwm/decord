@@ -1,10 +1,10 @@
-// Module ID: 12955
-// Function ID: 100362
+// Module ID: 13007
+// Function ID: 100685
 // Name: items
-// Dependencies: [31, 33, 12924, 8018, 2]
+// Dependencies: [31, 33, 12976, 8063, 2]
 // Exports: GuildBadgeDollarSign
 
-// Module 12955 (items)
+// Module 13007 (items)
 import "result";
 import jsxProd from "jsxProd";
 
@@ -29,7 +29,7 @@ export const GuildBadgeDollarSign = function GuildBadgeDollarSign(primaryTintCol
   let obj = { width: 0, height: 0, primaryTintColor: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
-  let obj1 = require(12924) /* getTransformedBadgeColors */;
+  let obj1 = require(12976) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor: primaryTintColor.primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items };
   const primaryColorsTransformed = obj1.getTransformedBadgeColors(obj).primaryColorsTransformed;
   obj = {};
@@ -38,29 +38,29 @@ export const GuildBadgeDollarSign = function GuildBadgeDollarSign(primaryTintCol
   obj["height"] = num2;
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
-  items = [callback(require(8018) /* inlineStyles */.Path, { d: "M16 11.9295V9H15V11.9295H16Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M16 12V9H15V12H16Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M1 7L1 4H0L0 7H1Z", fill: "black" }), , , , , , , , , , , , , , , , , , , , , ];
+  items = [callback(require(8063) /* inlineStyles */.Path, { d: "M16 11.9295V9H15V11.9295H16Z", fill: "black" }), callback(require(8063) /* inlineStyles */.Path, { d: "M16 12V9H15V12H16Z", fill: "black" }), callback(require(8063) /* inlineStyles */.Path, { d: "M1 7L1 4H0L0 7H1Z", fill: "black" }), , , , , , , , , , , , , , , , , , , , , ];
   obj1 = { d: "M15 7V3H11V1H5.00002V3H2.00002V4H1.00002V7H2.00002V8H5.00002V9H1.00002V13H5.00002V15H11V13H14V12H15V9H14V8H11V7H15Z", fill: primaryColorsTransformed[1] };
-  items[3] = callback(require(8018) /* inlineStyles */.Path, obj1);
-  items[4] = callback(require(8018) /* inlineStyles */.Path, { d: "M15 12H14V13H15V12Z", fill: "black" });
-  items[5] = callback(require(8018) /* inlineStyles */.Path, { d: "M13 9H12V10H13V9Z", fill: "white" });
-  items[6] = callback(require(8018) /* inlineStyles */.Path, { d: "M12 8H8V9H12V8Z", fill: "white" });
-  items[7] = callback(require(8018) /* inlineStyles */.Path, { d: "M5 3H2V4H5V3Z", fill: "white" });
-  items[8] = callback(require(8018) /* inlineStyles */.Path, { d: "M7 9H6V10H7V9Z", fill: "black" });
-  items[9] = callback(require(8018) /* inlineStyles */.Path, { d: "M8 6H7V7H8V6Z", fill: "black" });
-  items[10] = callback(require(8018) /* inlineStyles */.Path, { d: "M8 5H7V6H8V5Z", fill: primaryColorsTransformed[0] });
-  items[11] = callback(require(8018) /* inlineStyles */.Path, { d: "M7 10H6V11H7V10Z", fill: primaryColorsTransformed[0] });
-  items[12] = callback(require(8018) /* inlineStyles */.Path, { d: "M6 9H5V10H6V9Z", fill: primaryColorsTransformed[0] });
-  items[13] = callback(require(8018) /* inlineStyles */.Path, { d: "M9 6H8V7H9V6Z", fill: primaryColorsTransformed[0] });
-  items[14] = callback(require(8018) /* inlineStyles */.Path, { d: "M2 3H1V4H2V3Z", fill: "black" });
-  items[15] = callback(require(8018) /* inlineStyles */.Path, { d: "M2 4H1V5H2V4Z", fill: "white" });
-  items[16] = callback(require(8018) /* inlineStyles */.Path, { d: "M11 13V15H5.00002V13H1.00002V9H6.00002V8H2.00002V7H1.00002V8H1.52588e-05V14H4.00002V16H12V14H14V13H11Z", fill: "black" });
-  items[17] = callback(require(8018) /* inlineStyles */.Path, { d: "M13 3V7H15V3H13Z", fill: primaryColorsTransformed[0] });
-  items[18] = callback(require(8018) /* inlineStyles */.Path, { d: "M9 1V3H11V1L9 1Z", fill: primaryColorsTransformed[0] });
-  items[19] = callback(require(8018) /* inlineStyles */.Path, { d: "M9 13V15H11V13H9Z", fill: primaryColorsTransformed[0] });
-  items[20] = callback(require(8018) /* inlineStyles */.Path, { d: "M14 9V8H12V9H13V12H12V13H14V12H15V9H14Z", fill: primaryColorsTransformed[0] });
-  items[21] = callback(require(8018) /* inlineStyles */.Path, { d: "M12 5V4H11V3H9.00002V1H5.00002V2H7.00002V3H8.00002V4H9.00002V5H10V6H11V7H13V5H12Z", fill: "white" });
-  items[22] = callback(require(8018) /* inlineStyles */.Path, { d: "M9.00002 12V11H8.00002V10H7.00002V11H6.00002V10H5.00002V9H1.00002V10H4.00002V11H5.00002V12H6.00002V13H7.00002V14H8.00002V15H9.00002V13H10V12H9.00002Z", fill: "white" });
-  items[23] = callback(require(8018) /* inlineStyles */.Path, { d: "M12 2V0H4.00002V2H2.00002V3H5.00002V1H11V3H12H15V7H8.00002V8H14V9H15V8H16V2H12Z", fill: "black" });
+  items[3] = callback(require(8063) /* inlineStyles */.Path, obj1);
+  items[4] = callback(require(8063) /* inlineStyles */.Path, { d: "M15 12H14V13H15V12Z", fill: "black" });
+  items[5] = callback(require(8063) /* inlineStyles */.Path, { d: "M13 9H12V10H13V9Z", fill: "white" });
+  items[6] = callback(require(8063) /* inlineStyles */.Path, { d: "M12 8H8V9H12V8Z", fill: "white" });
+  items[7] = callback(require(8063) /* inlineStyles */.Path, { d: "M5 3H2V4H5V3Z", fill: "white" });
+  items[8] = callback(require(8063) /* inlineStyles */.Path, { d: "M7 9H6V10H7V9Z", fill: "black" });
+  items[9] = callback(require(8063) /* inlineStyles */.Path, { d: "M8 6H7V7H8V6Z", fill: "black" });
+  items[10] = callback(require(8063) /* inlineStyles */.Path, { d: "M8 5H7V6H8V5Z", fill: primaryColorsTransformed[0] });
+  items[11] = callback(require(8063) /* inlineStyles */.Path, { d: "M7 10H6V11H7V10Z", fill: primaryColorsTransformed[0] });
+  items[12] = callback(require(8063) /* inlineStyles */.Path, { d: "M6 9H5V10H6V9Z", fill: primaryColorsTransformed[0] });
+  items[13] = callback(require(8063) /* inlineStyles */.Path, { d: "M9 6H8V7H9V6Z", fill: primaryColorsTransformed[0] });
+  items[14] = callback(require(8063) /* inlineStyles */.Path, { d: "M2 3H1V4H2V3Z", fill: "black" });
+  items[15] = callback(require(8063) /* inlineStyles */.Path, { d: "M2 4H1V5H2V4Z", fill: "white" });
+  items[16] = callback(require(8063) /* inlineStyles */.Path, { d: "M11 13V15H5.00002V13H1.00002V9H6.00002V8H2.00002V7H1.00002V8H1.52588e-05V14H4.00002V16H12V14H14V13H11Z", fill: "black" });
+  items[17] = callback(require(8063) /* inlineStyles */.Path, { d: "M13 3V7H15V3H13Z", fill: primaryColorsTransformed[0] });
+  items[18] = callback(require(8063) /* inlineStyles */.Path, { d: "M9 1V3H11V1L9 1Z", fill: primaryColorsTransformed[0] });
+  items[19] = callback(require(8063) /* inlineStyles */.Path, { d: "M9 13V15H11V13H9Z", fill: primaryColorsTransformed[0] });
+  items[20] = callback(require(8063) /* inlineStyles */.Path, { d: "M14 9V8H12V9H13V12H12V13H14V12H15V9H14Z", fill: primaryColorsTransformed[0] });
+  items[21] = callback(require(8063) /* inlineStyles */.Path, { d: "M12 5V4H11V3H9.00002V1H5.00002V2H7.00002V3H8.00002V4H9.00002V5H10V6H11V7H13V5H12Z", fill: "white" });
+  items[22] = callback(require(8063) /* inlineStyles */.Path, { d: "M9.00002 12V11H8.00002V10H7.00002V11H6.00002V10H5.00002V9H1.00002V10H4.00002V11H5.00002V12H6.00002V13H7.00002V14H8.00002V15H9.00002V13H10V12H9.00002Z", fill: "white" });
+  items[23] = callback(require(8063) /* inlineStyles */.Path, { d: "M12 2V0H4.00002V2H2.00002V3H5.00002V1H11V3H12H15V7H8.00002V8H14V9H15V8H16V2H12Z", fill: "black" });
   obj["children"] = items;
-  return callback2(require(8018) /* inlineStyles */.Svg, obj);
+  return callback2(require(8063) /* inlineStyles */.Svg, obj);
 };

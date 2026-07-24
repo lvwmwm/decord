@@ -1,10 +1,10 @@
-// Module ID: 7376
-// Function ID: 59482
+// Module ID: 7378
+// Function ID: 59517
 // Name: getHeaderBackground
-// Dependencies: [57, 5, 31, 27, 1849, 5621, 653, 1851, 33, 689, 4130, 3776, 7165, 7377, 7378, 7162, 7163, 7164, 7166, 7379, 7380, 7381, 7115, 7382, 7383, 7384, 7385, 7386, 7167, 7387, 7388, 7389, 7390, 7391, 7392, 7393, 7170, 7394, 7395, 7396, 7172, 7397, 7398, 7399, 7156, 7203, 7400, 7401, 6647, 6658, 491, 4451, 1456, 566, 44, 5464, 5618, 477, 1273, 4543, 1212, 4126, 7412, 5484, 7413, 7414, 2]
+// Dependencies: [57, 5, 31, 27, 1849, 5619, 653, 1851, 33, 689, 4130, 3776, 7165, 7379, 7380, 7162, 7163, 7164, 7166, 7381, 7382, 7383, 7114, 7384, 7385, 7386, 7387, 7388, 7167, 7389, 7390, 7391, 7392, 7393, 7394, 7395, 7170, 7396, 7397, 7398, 7172, 7399, 7400, 7401, 7156, 7203, 7402, 7403, 6647, 6658, 491, 4451, 1456, 566, 44, 5462, 5616, 477, 1273, 4543, 1212, 4126, 7414, 5482, 7415, 7416, 2]
 // Exports: default
 
-// Module 7376 (getHeaderBackground)
+// Module 7378 (getHeaderBackground)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import registerAsset from "registerAsset";
@@ -73,13 +73,13 @@ function onCancelClick(subscription, analyticsLocations) {
   } else {
     obj = {
       subscription,
-      mode: _require(7401).WhatYouLoseMode.CANCEL,
+      mode: _require(7403).WhatYouLoseMode.CANCEL,
       onContinue(arg0) {
           return outer1_32(closure_0, closure_1, arg0);
         }
     };
-    tmp4Result = importDefault(7400)(obj);
-    const tmp4 = importDefault(7400);
+    tmp4Result = importDefault(7402)(obj);
+    const tmp4 = importDefault(7402);
   }
   return tmp4Result;
 }
@@ -504,8 +504,8 @@ export default function PremiumSubscriptionDetails(subscription) {
   subscription = subscription.subscription;
   ({ style, onClickManagePremiumGuild } = subscription);
   const tmp = callback5();
-  let obj = require(7412) /* createSubscriptionInvoicePreview */;
-  obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(5464)().analyticsLocations, analyticsLocation: importDefault(5484).PREMIUM_SUBSCRIPTION_DETAILS };
+  let obj = require(7414) /* createSubscriptionInvoicePreview */;
+  obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(5462)().analyticsLocations, analyticsLocation: importDefault(5482).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   let tmp4Result = null;
   if (null != first) {
@@ -520,13 +520,13 @@ export default function PremiumSubscriptionDetails(subscription) {
     }
     if (tmp9) {
       const obj2 = { subscription, renewalMutations: subscription.renewalMutations };
-      tmp9 = callback3(importDefault(7413), obj2);
+      tmp9 = callback3(importDefault(7415), obj2);
     }
     items[1] = tmp9;
     let tmp15 = subscription.status === constants3.ACCOUNT_HOLD;
     if (tmp15) {
       const obj3 = { subscription };
-      tmp15 = callback3(importDefault(7414), obj3);
+      tmp15 = callback3(importDefault(7416), obj3);
     }
     items[2] = tmp15;
     const obj4 = { subscription, renewalInvoicePreview: first, onClickManagePremiumGuild };

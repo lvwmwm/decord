@@ -1,10 +1,10 @@
-// Module ID: 16477
-// Function ID: 128374
+// Module ID: 16524
+// Function ID: 128698
 // Name: TierTemplatesRenderer
-// Dependencies: [57, 31, 27, 14123, 16424, 653, 33, 4130, 689, 4126, 16478, 624, 14101, 14102, 11323, 16484, 1557, 1456, 675, 4324, 16434, 9106, 1212, 5087, 8559, 480, 16419, 1273, 5459, 2]
+// Dependencies: [57, 31, 27, 14173, 16471, 653, 33, 4130, 689, 4126, 16525, 624, 14151, 14152, 11352, 16531, 1557, 1456, 675, 4324, 16481, 9142, 1212, 5087, 8604, 480, 16466, 1273, 2]
 // Exports: default
 
-// Module 16477 (TierTemplatesRenderer)
+// Module 16524 (TierTemplatesRenderer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "Button";
@@ -54,7 +54,7 @@ function TierTemplatesRenderer(groupListingId) {
           return outer1_14(outer1_8, { style });
         };
         obj.decelerationRate = "fast";
-        obj.snapToInterval = guildId(16478).CARD_WIDTH + c16;
+        obj.snapToInterval = guildId(16525).CARD_WIDTH + c16;
         obj.renderItem = function renderItem(item) {
           return outer1_14(groupListingId(outer1_3[10]), { template: item.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId });
         };
@@ -173,7 +173,7 @@ function GuildSettingsRoleSubscriptionTierTemplateSelectionComponent(guildId) {
   const obj4 = { variant: "text-sm/medium", style: tmp.text };
   const intl3 = guildId(groupListingId[22]).intl;
   obj4.children = intl3.format(guildId(groupListingId[22]).t.iQML2g, { creatorPortalUrl: "https://discord.com/creator-portal/learn-from-creators?tab=lightning-lessons" });
-  items7[4] = callback(guildId(groupListingId[28]).TextWithIOSLinkWorkaround, obj4);
+  items7[4] = callback(guildId(groupListingId[9]).Text, obj4);
   items7[5] = callback(guildId(groupListingId[27]).Spacer, { size: 24 });
   const obj5 = { templates: stateFromStores };
   if (!loading) {
@@ -209,5 +209,5 @@ export default function GuildSettingsRoleSubscriptionTierTemplateSelection(guild
   obj = {};
   const merged = Object.assign(guildId);
   obj.children = callback(GuildSettingsRoleSubscriptionTierTemplateSelectionComponent, obj);
-  return callback(require(14102) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
+  return callback(require(14152) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
 };

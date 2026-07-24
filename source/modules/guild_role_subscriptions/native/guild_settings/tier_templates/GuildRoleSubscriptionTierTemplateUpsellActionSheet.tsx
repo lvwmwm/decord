@@ -1,10 +1,10 @@
-// Module ID: 15073
-// Function ID: 114737
+// Module ID: 15120
+// Function ID: 115058
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [57, 31, 27, 4122, 653, 1345, 33, 4130, 689, 4663, 624, 5187, 1212, 8302, 4126, 4543, 8438, 4098, 2]
+// Dependencies: [57, 31, 27, 4122, 653, 1345, 33, 4130, 689, 4663, 624, 5187, 1212, 8346, 4126, 4543, 8482, 4098, 2]
 // Exports: default
 
-// Module 15073 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 15120 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -65,7 +65,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1 = { accessibilityRole: "image" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj1.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.gCgirr);
-  obj1.children = callback2(markAsDismissed(8302), { style: tmp.videoContainer, src: closure_12, width: first, height: first / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
+  obj1.children = callback2(markAsDismissed(8346), { style: tmp.videoContainer, src: closure_12, width: first, height: first / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info };
   const obj4 = { variant: "heading-lg/semibold", style: tmp.title, color: "mobile-text-heading-primary" };
@@ -85,7 +85,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj8.text = intl4.string(require(1212) /* getSystemLocale */.t.BQq86h);
   obj8.onPress = function onPress() {
-    markAsDismissed(8438).open(closure_0, outer1_7.ROLE_SUBSCRIPTIONS_TIERS, undefined, outer1_8.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
+    markAsDismissed(8482).open(closure_0, outer1_7.ROLE_SUBSCRIPTIONS_TIERS, undefined, outer1_8.ROLE_SUBSCRIPTION_TIER_TEMPLATE);
     markAsDismissed(outer1_9.UNKNOWN);
   };
   obj7.children = callback2(require(4543) /* Button */.Button, obj8);

@@ -1,9 +1,9 @@
-// Module ID: 8825
-// Function ID: 69580
+// Module ID: 8864
+// Function ID: 69795
 // Name: Placeholder
-// Dependencies: [57, 31, 27, 8826, 33, 4130, 689, 8827, 5165, 1324, 8829, 3991, 4126, 1273, 4660, 4662, 1557, 8832, 8833, 8834, 9095, 9098, 9244, 2]
+// Dependencies: [57, 31, 27, 8865, 33, 4130, 689, 8866, 5165, 1324, 8868, 3991, 4126, 1273, 4660, 4662, 1557, 8871, 8872, 8873, 9133, 9136, 9280, 2]
 
-// Module 8825 (Placeholder)
+// Module 8864 (Placeholder)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -19,7 +19,7 @@ function Placeholder(arg0) {
   let end;
   let start;
   ({ start, end } = arg0);
-  let obj = require(8827) /* styles */;
+  let obj = require(8866) /* styles */;
   const fastestListTableRowPlaceholderStyles = obj.useFastestListTableRowPlaceholderStyles();
   obj = { end, start };
   const items = [fastestListTableRowPlaceholderStyles.placeholderUsername, callback(importAllResult.useState(() => ({ width: `${10 + 80 * Math.random() | 0}%` })), 1)[0]];

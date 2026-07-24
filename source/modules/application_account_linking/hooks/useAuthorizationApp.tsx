@@ -1,10 +1,10 @@
-// Module ID: 5469
-// Function ID: 46734
+// Module ID: 5467
+// Function ID: 46731
 // Name: getAuthorizationApp
-// Dependencies: [31, 4167, 4153, 4156, 1881, 5470, 2]
+// Dependencies: [31, 4167, 4153, 4156, 1881, 5468, 2]
 // Exports: useAuthorizationApp
 
-// Module 5469 (getAuthorizationApp)
+// Module 5467 (getAuthorizationApp)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";

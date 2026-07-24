@@ -1,10 +1,10 @@
-// Module ID: 13890
-// Function ID: 106264
+// Module ID: 13941
+// Function ID: 106588
 // Name: SubscriptionIcon
-// Dependencies: [31, 33, 689, 3833, 13891, 2]
+// Dependencies: [31, 33, 689, 3833, 13942, 2]
 // Exports: SubscriptionIcon
 
-// Module 13890 (SubscriptionIcon)
+// Module 13941 (SubscriptionIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const SubscriptionIcon = function SubscriptionIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13891) /* registerAsset */, color: ICON_OVERLAY_LIGHT, style: color.style };
+  obj = { source: require(13942) /* registerAsset */, color: ICON_OVERLAY_LIGHT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13891) /* registerAsset */, color: ICON_OVERLAY_LIGHT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13942) /* registerAsset */, color: ICON_OVERLAY_LIGHT, style: color.style });
 };

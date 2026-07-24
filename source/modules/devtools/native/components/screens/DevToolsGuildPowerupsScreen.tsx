@@ -1,10 +1,10 @@
-// Module ID: 14673
-// Function ID: 111835
+// Module ID: 14720
+// Function ID: 112156
 // Name: setWarningBoosts
-// Dependencies: [5, 31, 27, 1316, 11595, 1838, 3947, 14674, 653, 33, 4130, 689, 507, 3712, 4026, 11520, 14586, 5504, 11526, 1331, 1334, 1557, 566, 4126, 5503, 5165, 2]
+// Dependencies: [5, 31, 27, 1316, 11622, 1838, 3947, 14721, 653, 33, 4130, 689, 507, 3712, 4026, 11550, 14635, 5502, 11556, 1331, 1334, 1557, 566, 4126, 5501, 5165, 2]
 // Exports: default
 
-// Module 14673 (setWarningBoosts)
+// Module 14720 (setWarningBoosts)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -45,9 +45,9 @@ function UserDCSwitchRow(dc) {
   let handleToggleDismissState;
   let isDismissed;
   dc = dc.dc;
-  ({ isDismissed, handleToggleDismissState } = importDefault(14586)(dc));
+  ({ isDismissed, handleToggleDismissState } = importDefault(14635)(dc));
   const obj = { label: callback3(dc), value: isDismissed, onValueChange: handleToggleDismissState };
-  return callback4(require(5504) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback4(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
 }
 function GuildDCSwitchRow(dc) {
   dc = dc.dc;
@@ -65,7 +65,7 @@ function GuildDCSwitchRow(dc) {
     }
   }, items);
   const obj = { label: callback2(dc), value: dc.isDismissed, onValueChange: callback };
-  return callback4(dc(5504).TableSwitchRow, obj);
+  return callback4(dc(5502).TableSwitchRow, obj);
 }
 ({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
 ({ GUILD_DCS: closure_11, SERVER_TAG_GUILD_DCS: closure_12, USER_DCS: closure_13, VANITY_URL_POWERUP_DCS: closure_14, getGuildDCString: closure_15, getUserDCString: closure_16 } = items);
@@ -150,7 +150,7 @@ export default function DevToolsGuildPowerupsScreen() {
         }
     };
     obj2.children = callback4(stateFromStores(5165).TableRow, obj3);
-    const items6 = [callback4(stateFromStores(5503).TableRowGroup, obj2), , , , , , ];
+    const items6 = [callback4(stateFromStores(5501).TableRowGroup, obj2), , , , , , ];
     const obj4 = { title: "Warning State", hasIcons: false };
     const obj5 = {
       label: "Set Half Boosts expiring in 1 day",
@@ -167,15 +167,15 @@ export default function DevToolsGuildPowerupsScreen() {
     };
     items7[1] = callback4(stateFromStores(5165).TableRow, obj6);
     obj4.children = items7;
-    items6[1] = callback5(stateFromStores(5503).TableRowGroup, obj4);
+    items6[1] = callback5(stateFromStores(5501).TableRowGroup, obj4);
     const obj7 = { title: "User Level DCs", hasIcons: false, children: closure_13.map((dc) => outer1_18(outer1_24, { dc }, dc)) };
-    items6[2] = callback4(stateFromStores(5503).TableRowGroup, obj7);
+    items6[2] = callback4(stateFromStores(5501).TableRowGroup, obj7);
     const obj8 = { title: "Guild Level DCs", hasIcons: false, children: closure_11.map((dc) => outer1_18(outer1_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[3] = callback4(stateFromStores(5503).TableRowGroup, obj8);
+    items6[3] = callback4(stateFromStores(5501).TableRowGroup, obj8);
     const obj9 = { title: "Server Tag Guild Level DCs", hasIcons: false, children: closure_12.map((dc) => outer1_18(outer1_25, { dc, guildId: stateFromStores, isDismissed: closure_1.includes(dc) }, dc)) };
-    items6[4] = callback4(stateFromStores(5503).TableRowGroup, obj9);
+    items6[4] = callback4(stateFromStores(5501).TableRowGroup, obj9);
     const obj10 = { title: "Powerup Rollback DCs", hasIcons: false, children: closure_14.map((dc) => outer1_18(outer1_24, { dc }, dc)) };
-    items6[5] = callback4(stateFromStores(5503).TableRowGroup, obj10);
+    items6[5] = callback4(stateFromStores(5501).TableRowGroup, obj10);
     const obj11 = { title: "System Messages", hasIcons: false };
     const obj12 = {
       label: "Send Powerups System Message",
@@ -186,7 +186,7 @@ export default function DevToolsGuildPowerupsScreen() {
         }
     };
     obj11.children = callback4(stateFromStores(5165).TableRow, obj12);
-    items6[6] = callback4(stateFromStores(5503).TableRowGroup, obj11);
+    items6[6] = callback4(stateFromStores(5501).TableRowGroup, obj11);
     obj.children = items6;
     tmp28Result = callback5(closure_5, obj);
     const tmp28 = callback5;

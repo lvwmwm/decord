@@ -1,7 +1,7 @@
 // Module ID: 7374
-// Function ID: 59463
+// Function ID: 59492
 // Name: _fetchUserOffer
-// Dependencies: [5, 7112, 1851, 653, 477, 686, 675, 507, 7114, 1184, 3946, 1334, 1331, 2]
+// Dependencies: [5, 7111, 1851, 653, 477, 686, 675, 507, 7113, 1184, 3946, 1334, 1331, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
 // Module 7374 (_fetchUserOffer)

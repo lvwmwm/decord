@@ -1,10 +1,10 @@
-// Module ID: 11964
-// Function ID: 92459
+// Module ID: 11990
+// Function ID: 92695
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [653, 22, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 11964 (_createForOfIteratorHelperLoose)
+// Module 11990 (_createForOfIteratorHelperLoose)
 import { ActivityTypes } from "ME";
 
 function _createForOfIteratorHelperLoose(iterable) {

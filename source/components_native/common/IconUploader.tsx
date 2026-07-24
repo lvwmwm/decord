@@ -1,10 +1,10 @@
-// Module ID: 10164
-// Function ID: 78568
+// Module ID: 10194
+// Function ID: 78759
 // Name: IconUploader
-// Dependencies: [5, 31, 27, 653, 33, 4130, 4674, 5515, 1392, 10165, 4660, 1212, 2]
+// Dependencies: [5, 31, 27, 653, 33, 4130, 4674, 5513, 1392, 10195, 4660, 1212, 2]
 // Exports: default
 
-// Module 10164 (IconUploader)
+// Module 10194 (IconUploader)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -60,9 +60,9 @@ export default function IconUploader(disabled) {
   }
   if ("guild" === str) {
     if (!tmp8) {
-      obj = { style: iconStyle, icon: fnResult, value: name, size: require(5515) /* makeSizeStyle */.GuildIconSizes.XLARGE, animate: true };
-      let tmp7 = callback(importDefault(5515), obj);
-      const tmp12 = importDefault(5515);
+      obj = { style: iconStyle, icon: fnResult, value: name, size: require(5513) /* makeSizeStyle */.GuildIconSizes.XLARGE, animate: true };
+      let tmp7 = callback(importDefault(5513), obj);
+      const tmp12 = importDefault(5513);
     }
     tmp8 = null == icon && null == name;
   } else {
@@ -77,7 +77,7 @@ export default function IconUploader(disabled) {
   const items1 = [tmp7, ];
   let tmp16 = null;
   if (!flag) {
-    const obj2 = { style: tmp.uploadIcon, source: importDefault(10165) };
+    const obj2 = { style: tmp.uploadIcon, source: importDefault(10195) };
     tmp16 = callback(closure_6, obj2);
   }
   items1[1] = tmp16;

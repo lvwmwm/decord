@@ -1,10 +1,10 @@
-// Module ID: 14927
-// Function ID: 113815
+// Module ID: 14974
+// Function ID: 114136
 // Name: isActivityPermanentCustomStatus
 // Dependencies: [653, 2]
 // Exports: isActivityPermanentCustomStatus
 
-// Module 14927 (isActivityPermanentCustomStatus)
+// Module 14974 (isActivityPermanentCustomStatus)
 import { ActivityTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/custom_status/utils/isActivityPermanentCustomStatus.tsx");

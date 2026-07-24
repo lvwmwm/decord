@@ -1,9 +1,9 @@
-// Module ID: 10118
-// Function ID: 78307
+// Module ID: 10150
+// Function ID: 78501
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 10118 (apexExperiment)
+// Module 10150 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-01-chat-loading-indicator", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

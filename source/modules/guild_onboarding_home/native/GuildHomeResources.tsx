@@ -1,10 +1,10 @@
-// Module ID: 15292
-// Function ID: 116601
+// Module ID: 15339
+// Function ID: 116923
 // Name: ResourceChannelRow
-// Dependencies: [31, 27, 1348, 1907, 4349, 3758, 653, 33, 4130, 689, 566, 8328, 11133, 15293, 6691, 11383, 1392, 4660, 4126, 4120, 15286, 1198, 1212, 15294, 4543, 2]
+// Dependencies: [31, 27, 1348, 1907, 4349, 3758, 653, 33, 4130, 689, 566, 8372, 11163, 15340, 6691, 11412, 1392, 4660, 4126, 4120, 15333, 1198, 1212, 15341, 4543, 2]
 // Exports: default
 
-// Module 15292 (ResourceChannelRow)
+// Module 15339 (ResourceChannelRow)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,9 +39,9 @@ function ResourceChannelRow(channelId) {
   const items2 = [closure_8];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => outer1_8.getMessages(channelId));
   const firstResult = stateFromStores2.first();
-  let obj4 = channelId(8328);
+  let obj4 = channelId(8372);
   const forumPostMediaProperties = obj4.useForumPostMediaProperties(firstResult, false);
-  let obj5 = channelId(8328);
+  let obj5 = channelId(8372);
   let length;
   const firstMediaIsEmbed = obj5.useFirstMediaIsEmbed(firstResult, false);
   if (null != forumPostMediaProperties) {
@@ -51,10 +51,10 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  let obj6 = channelId(11133);
+  let obj6 = channelId(11163);
   obj = { channel: stateFromStores, media: first };
   const shouldObscure = obj6.useSharedMediaProps(obj).shouldObscure;
-  const tmp8 = stateFromStores(15293)(firstResult);
+  const tmp8 = stateFromStores(15340)(firstResult);
   const tmp9 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp9;
   const items3 = [channelId, tmp9];
@@ -124,15 +124,15 @@ function ResourceChannelRow(channelId) {
               if (tmp39) {
                 tmp39 = shouldObscure;
               }
-              obj10.embedLeftBorderColor = channelId(8328).getEmbedColor(firstResult, tmp39);
+              obj10.embedLeftBorderColor = channelId(8372).getEmbedColor(firstResult, tmp39);
               let id;
               if (null != firstResult) {
                 id = firstResult.id;
               }
               obj10.firstMessageId = id;
               obj10.containerStyle = tmp.thumbnail;
-              tmp36Result = callback(channelId(11133).ForumPostMediaThumbnail, obj10);
-              const obj23 = channelId(8328);
+              tmp36Result = callback(channelId(11163).ForumPostMediaThumbnail, obj10);
+              const obj23 = channelId(8372);
               const tmp36 = callback;
             }
           } else {
@@ -164,14 +164,14 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 export default function GuildHomeResources(guildId) {
   guildId = guildId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
-  const arr = importDefault(15286)(guildId);
+  const arr = importDefault(15333)(guildId);
   if (0 === arr.length) {
     let obj = { style: tmp.emptyStateContainer };
     obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
     const intl = guildId(1212).intl;
     obj.children = intl.string(guildId(1212).t.owvC9U);
     const items = [callback(guildId(4126).Text, obj), , ];
-    const obj1 = { style: tmp.emptyStateImage, source: importDefault(15294) };
+    const obj1 = { style: tmp.emptyStateImage, source: importDefault(15341) };
     items[1] = callback(closure_5, obj1);
     const obj2 = {
       onPress() {

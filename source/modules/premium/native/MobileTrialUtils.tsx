@@ -1,7 +1,7 @@
 // Module ID: 6685
-// Function ID: 51444
+// Function ID: 51466
 // Name: useShouldShowPremiumTrialUserSettingsAvatarBadge
-// Dependencies: [1851, 6686, 3946, 1334, 7114, 3776, 1212, 2]
+// Dependencies: [1851, 6686, 3946, 1334, 7113, 3776, 1212, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
 // Module 6685 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
@@ -52,6 +52,6 @@ export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_p
     } else {
       return null;
     }
-    obj5 = require(7114) /* apexExperiment */;
+    obj5 = require(7113) /* apexExperiment */;
   }
 };

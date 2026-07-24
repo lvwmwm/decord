@@ -1,9 +1,9 @@
-// Module ID: 6831
-// Function ID: 53905
+// Module ID: 6830
+// Function ID: 53914
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 3767, 1906, 1849, 6832, 6833, 1362, 21, 4351, 6834, 1327, 3769, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 3767, 1906, 1849, 6831, 6832, 1362, 21, 4351, 6833, 1327, 3769, 566, 686, 2]
 
-// Module 6831 (_isNativeReflectConstruct)
+// Module 6830 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import mapConversationModeration from "mapConversationModeration";
@@ -701,7 +701,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(6834).mapConversation);
+      const mapped = rawConversations.map(set(6833).mapConversation);
       const found = mapped.filter(set(1327).isNotNullish);
       const peekResult = importDefaultResult.peek(channelId);
       if (isJump) {

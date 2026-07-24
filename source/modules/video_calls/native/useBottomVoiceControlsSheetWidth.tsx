@@ -1,10 +1,10 @@
-// Module ID: 10550
-// Function ID: 82419
+// Module ID: 10579
+// Function ID: 82611
 // Name: useBottomVoiceControlsSheetWidth
-// Dependencies: [10211, 1450, 2]
+// Dependencies: [10241, 1450, 2]
 // Exports: default
 
-// Module 10550 (useBottomVoiceControlsSheetWidth)
+// Module 10579 (useBottomVoiceControlsSheetWidth)
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
 
 let closure_2;

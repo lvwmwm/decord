@@ -1,10 +1,10 @@
-// Module ID: 15177
-// Function ID: 115531
+// Module ID: 15224
+// Function ID: 115853
 // Name: SettingsButton
-// Dependencies: [57, 31, 27, 4122, 1194, 1838, 8318, 8306, 15178, 1345, 33, 4130, 689, 15179, 7771, 13902, 8321, 4098, 15181, 1934, 4086, 15192, 4126, 1212, 8133, 5121, 4662, 3941, 4660, 15128, 15130, 5119, 8320, 1450, 1557, 1457, 6707, 566, 15118, 15212, 15215, 5803, 1334, 15202, 1456, 7087, 9914, 9533, 13990, 669, 15216, 15222, 15227, 15240, 15241, 15242, 15243, 15244, 15245, 15246, 15247, 8829, 15248, 7879, 477, 10025, 3977, 15249, 15180, 3842, 2]
+// Dependencies: [57, 31, 27, 4122, 1194, 1838, 8362, 8350, 15225, 1345, 33, 4130, 689, 15226, 7533, 13953, 8365, 4098, 15228, 1934, 4086, 15239, 4126, 1212, 7423, 5121, 4662, 3941, 4660, 15175, 15177, 5119, 8364, 1450, 1557, 1457, 6707, 566, 15165, 15259, 15262, 5803, 1334, 15249, 1456, 7086, 9946, 9569, 14040, 669, 15263, 15269, 15274, 15287, 15288, 15289, 15290, 15291, 15292, 15293, 15294, 8868, 15295, 7527, 477, 10057, 3977, 15296, 15227, 3842, 2]
 // Exports: ICYMITab
 
-// Module 15177 (SettingsButton)
+// Module 15224 (SettingsButton)
 import CutoutGuildBanner from "CutoutGuildBanner";
 import importAllResult from "XSmallIcon";
 import get_ActivityIndicator from "colorToHex";
@@ -30,7 +30,7 @@ function SettingsButton() {
     accessibilityLabel: "button",
     variant: "tertiary",
     size: "sm",
-    icon: callback(require(13902) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" }),
+    icon: callback(require(13953) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" }),
     onPress() {
       outer1_1(outer1_2[16]).itemInteracted("filters_button", "filters_button", "press_info_button");
       const obj = outer1_1(outer1_2[16]);
@@ -39,7 +39,7 @@ function SettingsButton() {
       outer1_1(outer1_2[17]).openLazy(outer1_0(outer1_2[19])(outer1_2[18], outer1_2.paths), "ICYMISettingsActionSheet", {});
     }
   };
-  return callback(require(7771) /* IconButton */.IconButton, obj);
+  return callback(require(7533) /* IconButton */.IconButton, obj);
 }
 function InfoButton() {
   let obj = {
@@ -55,7 +55,7 @@ function InfoButton() {
       outer1_0(outer1_2[21]).pushICYMIInfoModal({ extendedOnboarding: true });
     }
   };
-  return callback(require(7771) /* IconButton */.IconButton, obj);
+  return callback(require(7533) /* IconButton */.IconButton, obj);
 }
 function ICYMIHeaderTextWrapper() {
   const tmp = callback4();
@@ -77,7 +77,7 @@ function ICYMIHeaderTextWrapper() {
   });
 }
 function handleEndReached() {
-  require(8320) /* generateHydrationId */.hydrateNextPage();
+  require(8364) /* generateHydrationId */.hydrateNextPage();
 }
 function ICYMI(inNestedNavigator) {
   let data;
@@ -344,7 +344,7 @@ let closure_18 = createICYMIStyles.createICYMIStyles((margin) => {
 let closure_19 = importAllResult.memo((inNestedNavigator) => {
   inNestedNavigator = inNestedNavigator.inNestedNavigator;
   const tmp = callback4();
-  const tmp2 = importDefault(8133)();
+  const tmp2 = importDefault(7423)();
   let obj = { top: !tmp2, style: tmp.header };
   obj = { absolute: true, wide: true, tall: true, mix: true };
   obj = { dark: require(3941) /* colorToHex */.OverlayOpacity.LEVEL_7, light: require(3941) /* colorToHex */.OverlayOpacity.LEVEL_8 };
@@ -372,10 +372,10 @@ let closure_19 = importAllResult.memo((inNestedNavigator) => {
   const obj5 = { style: tmp.headerClose };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj5.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  obj5.onPress = require(15128) /* goBack */.goBack;
+  obj5.onPress = require(15175) /* goBack */.goBack;
   let LeftBackIconWithBadge = require;
   if (inNestedNavigator) {
-    LeftBackIconWithBadge = LeftBackIconWithBadge(15130).LeftBackIconWithBadge;
+    LeftBackIconWithBadge = LeftBackIconWithBadge(15177).LeftBackIconWithBadge;
     const obj6 = { includeNotificationsCount: true };
     let tmp11Result = tmp11(LeftBackIconWithBadge, obj6);
   } else {
@@ -393,7 +393,7 @@ export const ICYMITab = function ICYMITab(route) {
   let obj = require(566) /* initialize */;
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getId());
-  const tmp3 = importDefault(8133)();
+  const tmp3 = importDefault(7423)();
   require = tmp3;
   let inNestedNavigator;
   if (null != route) {
@@ -436,6 +436,6 @@ export const ICYMITab = function ICYMITab(route) {
   items2[1] = callback(require(3842) /* ManaContext */.ThemeContextProvider, obj4);
   obj1["children"] = items2;
   obj.children = closure_16(Fragment, obj1);
-  obj.children = callback(require(15180) /* useICYMIContextConstructor */.ICYMIContextProvider, obj);
-  return tmp8(importDefault(15249), obj);
+  obj.children = callback(require(15227) /* useICYMIContextConstructor */.ICYMIContextProvider, obj);
+  return tmp8(importDefault(15296), obj);
 };

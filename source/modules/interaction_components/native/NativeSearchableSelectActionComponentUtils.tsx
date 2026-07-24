@@ -1,10 +1,10 @@
-// Module ID: 7804
-// Function ID: 62292
+// Module ID: 7895
+// Function ID: 62613
 // Name: getChannelIconData
-// Dependencies: [1348, 1910, 1838, 1849, 653, 4359, 1327, 1395, 5489, 7805, 665, 689, 7806, 4593, 2]
+// Dependencies: [1348, 1910, 1838, 1849, 653, 4359, 1327, 1395, 5487, 7896, 665, 689, 7897, 4593, 2]
 // Exports: transformSearchableSelectOptions
 
-// Module 7804 (getChannelIconData)
+// Module 7895 (getChannelIconData)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -16,7 +16,7 @@ let closure_8;
 const require = arg1;
 function getChannelIconData(channel, guild) {
   if (channel.type === constants.GUILD_CATEGORY) {
-    let channelIconWithGuild = importDefault(7806);
+    let channelIconWithGuild = importDefault(7897);
   } else {
     channelIconWithGuild = require(4593) /* getThreadChannelIcon */.getChannelIconWithGuild(channel, guild);
     const obj = require(4593) /* getThreadChannelIcon */;

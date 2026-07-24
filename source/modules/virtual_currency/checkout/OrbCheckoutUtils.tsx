@@ -1,10 +1,10 @@
-// Module ID: 5625
-// Function ID: 48005
+// Module ID: 5623
+// Function ID: 48002
 // Name: getOrbPriceFromPrices
-// Dependencies: [653, 655, 5626, 1212, 5627, 3798, 2]
+// Dependencies: [653, 655, 5624, 1212, 5625, 3798, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 5625 (getOrbPriceFromPrices)
+// Module 5623 (getOrbPriceFromPrices)
 import ME from "ME";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import { ConstraintReasonCode } from "ConstraintReasonCode";
@@ -64,8 +64,8 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
   if (null == code) {
     return null;
   } else {
-    if (!(code instanceof require(5627) /* _callSuper */.OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof require(5627) /* _callSuper */.OrderProcessingPendingError) {
+    if (!(code instanceof require(5625) /* _callSuper */.OrderSigningFailedWithConstraintsError)) {
+      if (code instanceof require(5625) /* _callSuper */.OrderProcessingPendingError) {
         const intl5 = require(1212) /* getSystemLocale */.intl;
         let stringResult = intl5.string(require(1212) /* getSystemLocale */.t["2BmwgV"]);
       } else if (code.code === require(3798) /* _isNativeReflectConstruct */.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {

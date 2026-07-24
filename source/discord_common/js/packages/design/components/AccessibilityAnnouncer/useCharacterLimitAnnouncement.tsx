@@ -1,10 +1,10 @@
-// Module ID: 7511
-// Function ID: 60191
+// Module ID: 7647
+// Function ID: 60828
 // Name: useCharacterLimitAnnouncement
 // Dependencies: [31, 3843, 2]
 // Exports: useCharacterLimitAnnouncement
 
-// Module 7511 (useCharacterLimitAnnouncement)
+// Module 7647 (useCharacterLimitAnnouncement)
 import result from "result";
 
 const require = arg1;

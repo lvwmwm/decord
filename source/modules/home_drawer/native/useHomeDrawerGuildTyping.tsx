@@ -1,10 +1,10 @@
-// Module ID: 14851
-// Function ID: 113312
+// Module ID: 14898
+// Function ID: 113633
 // Name: areHomeDrawerGuildTypingStatesEqual
-// Dependencies: [3760, 1352, 1348, 11108, 620, 14847, 14848, 566, 21, 2]
+// Dependencies: [3760, 1352, 1348, 11135, 620, 14894, 14895, 566, 21, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 14851 (areHomeDrawerGuildTypingStatesEqual)
+// Module 14898 (areHomeDrawerGuildTypingStatesEqual)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isThread } from "_callSuper";
 import closure_5 from "_isNativeReflectConstruct";

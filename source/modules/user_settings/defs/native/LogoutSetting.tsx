@@ -1,9 +1,9 @@
-// Module ID: 14385
-// Function ID: 110001
+// Module ID: 14435
+// Function ID: 110324
 // Name: handleLogout
-// Dependencies: [33, 587, 668, 4944, 10638, 7375, 5590, 4472, 4475, 1212, 10095, 10654, 2]
+// Dependencies: [33, 587, 668, 4944, 10667, 7375, 5588, 4472, 4475, 1212, 10127, 10683, 2]
 
-// Module 14385 (handleLogout)
+// Module 14435 (handleLogout)
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";
 
@@ -16,11 +16,11 @@ function handleLogout() {
   const date = new Date();
   importDefault(4944).disconnect();
   const obj2 = importDefault(4944);
-  const result1 = importDefault(10638).clearAllNotifications();
-  const obj3 = importDefault(10638);
+  const result1 = importDefault(10667).clearAllNotifications();
+  const obj3 = importDefault(10667);
   importDefault(7375).close();
   const obj4 = importDefault(7375);
-  importDefault(5590).logout("confirm_logout_alert");
+  importDefault(5588).logout("confirm_logout_alert");
 }
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
 const pressable = createToggle.createPressable({

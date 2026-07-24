@@ -1,10 +1,10 @@
-// Module ID: 9946
-// Function ID: 76929
+// Module ID: 9978
+// Function ID: 77123
 // Name: useEmojisForReactionRow
-// Dependencies: [31, 1852, 9330, 1450, 3775, 2]
+// Dependencies: [31, 1852, 9366, 1450, 3775, 2]
 // Exports: useEmojisForReactionRow
 
-// Module 9946 (useEmojisForReactionRow)
+// Module 9978 (useEmojisForReactionRow)
 import result from "result";
 import { EmojiIntention } from "set";
 

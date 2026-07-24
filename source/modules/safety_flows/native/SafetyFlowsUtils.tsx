@@ -1,21 +1,21 @@
-// Module ID: 16563
-// Function ID: 129204
+// Module ID: 16610
+// Function ID: 129528
 // Name: getScreensForTaskType
-// Dependencies: [5, 31, 1849, 16557, 16559, 4337, 16558, 3831, 10332, 1212, 2460, 1456, 16562, 2]
+// Dependencies: [5, 31, 1849, 16604, 16606, 4337, 16605, 3831, 10361, 1212, 2460, 1456, 16609, 2]
 // Exports: useOnTaskComplete
 
-// Module 16563 (getScreensForTaskType)
+// Module 16610 (getScreensForTaskType)
 import module_4337 from "module_4337";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
 function getScreensForTaskType(task_type) {
-  const tmp = require(16557) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+  const tmp = require(16604) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
   let tmp2 = null;
   if (null != tmp) {
     let tmp5 = tmp;
-    if (task_type === require(16557) /* TaskType */.TaskType.EMAIL_VERIFICATION) {
+    if (task_type === require(16604) /* TaskType */.TaskType.EMAIL_VERIFICATION) {
       currentUser = currentUser.getCurrentUser();
       let email;
       if (null != currentUser) {
@@ -23,7 +23,7 @@ function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp;
       if (null != email) {
-        const items = [require(16557) /* TaskType */.SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [require(16604) /* TaskType */.SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }
@@ -42,8 +42,8 @@ function _fetchAndUpdateTask() {
 function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     let obj = importDefault(4337);
-    obj.popWithKey(require(16558) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
-    obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: importDefault(10332) };
+    obj.popWithKey(require(16605) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
+    obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: importDefault(10361) };
     const intl = require(1212) /* getSystemLocale */.intl;
     obj.content = intl.string(importDefault(2460)["/fHz9S"]);
     importDefault(3831).open(obj);
@@ -52,7 +52,7 @@ function navigateToScreenForTask(arr, task_type) {
     if (null != tmp2) {
       arr.push(tmp2[0]);
     } else {
-      arr.push(require(16557) /* TaskType */.SafetyFlowScreens.UPDATE_APP);
+      arr.push(require(16604) /* TaskType */.SafetyFlowScreens.UPDATE_APP);
     }
   }
 }

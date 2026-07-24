@@ -1,10 +1,10 @@
-// Module ID: 14802
-// Function ID: 112892
+// Module ID: 14849
+// Function ID: 113213
 // Name: HOME_DRAWER_FLING_PHYSICS
-// Dependencies: [57, 31, 14803, 14804, 653, 3987, 3991, 1457, 675, 4099, 1450, 1557, 3984, 14805, 3981, 4542, 5217, 7590, 2]
+// Dependencies: [57, 31, 14850, 14851, 653, 3987, 3991, 1457, 675, 4099, 1450, 1557, 3984, 14852, 3981, 4542, 5217, 7679, 2]
 // Exports: useHomeGesture
 
-// Module 14802 (HOME_DRAWER_FLING_PHYSICS)
+// Module 14849 (HOME_DRAWER_FLING_PHYSICS)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import computeMaxX from "computeMaxX";

@@ -1,10 +1,10 @@
-// Module ID: 8469
-// Function ID: 67545
+// Module ID: 8513
+// Function ID: 67773
 // Name: NavigationBar
-// Dependencies: [5, 57, 31, 27, 1348, 1838, 1354, 8354, 33, 4130, 689, 4337, 4660, 1212, 1273, 7640, 4126, 8463, 566, 8402, 8470, 5121, 7535, 8473, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 1348, 1838, 1354, 8398, 33, 4130, 689, 4337, 4660, 1212, 1273, 7729, 4126, 8507, 566, 8446, 8514, 5121, 7580, 8517, 4543, 2]
 // Exports: default
 
-// Module 8469 (NavigationBar)
+// Module 8513 (NavigationBar)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -30,7 +30,7 @@ function NavigationBar(onClose) {
   obj.onPress = function onPress() {
     return onClose();
   };
-  obj = { source: importDefault(7640) };
+  obj = { source: importDefault(7729) };
   obj.children = callback(onClose(1273).Icon, obj);
   obj.children = callback(onClose(4660).PressableOpacity, obj);
   return callback(View, obj);

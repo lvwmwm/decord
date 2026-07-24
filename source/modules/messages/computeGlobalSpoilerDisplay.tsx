@@ -1,10 +1,10 @@
-// Module ID: 10848
-// Function ID: 84170
+// Module ID: 10875
+// Function ID: 84359
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: [3758, 653, 624, 3803, 2]
 // Exports: useShouldDisplaySpoilerObscurity
 
-// Module 10848 (computeGlobalSpoilerDisplay)
+// Module 10875 (computeGlobalSpoilerDisplay)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

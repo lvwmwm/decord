@@ -1,10 +1,10 @@
-// Module ID: 15417
-// Function ID: 118513
+// Module ID: 15464
+// Function ID: 118835
 // Name: getSearchQueryChannelIds
-// Dependencies: [1917, 3767, 1849, 10077, 9103, 653, 1212, 9880, 4074, 9025, 9655, 9657, 10159, 4644, 11561, 10256, 10970, 9029, 15418, 10078, 3969, 2]
+// Dependencies: [1917, 3767, 1849, 10109, 9141, 653, 1212, 9912, 4074, 9064, 9689, 9691, 7496, 4644, 7491, 7488, 10997, 9068, 15465, 10110, 3969, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15417 (getSearchQueryChannelIds)
+// Module 15464 (getSearchQueryChannelIds)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -33,7 +33,7 @@ export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
 export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   const intl = require(1212) /* getSystemLocale */.intl;
   if (intl.string(require(1212) /* getSystemLocale */.t.nrpA5E) === text) {
-    return importDefault(9880);
+    return importDefault(9912);
   } else {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     if (intl3.string(require(1212) /* getSystemLocale */.t.ZNR2fi) === text) {
@@ -41,19 +41,19 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
     } else {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       if (intl4.string(require(1212) /* getSystemLocale */.t["20uQR3"]) === text) {
-        return require(9025) /* EmbedIcon */.EmbedIcon;
+        return require(9064) /* EmbedIcon */.EmbedIcon;
       } else {
         const intl5 = require(1212) /* getSystemLocale */.intl;
         if (intl5.string(require(1212) /* getSystemLocale */.t.L4lxyE) === text) {
-          return require(9655) /* PollsIcon */.PollsIcon;
+          return require(9689) /* PollsIcon */.PollsIcon;
         } else {
           const intl6 = require(1212) /* getSystemLocale */.intl;
           if (intl6.string(require(1212) /* getSystemLocale */.t["AV/v6i"]) === text) {
-            return require(9657) /* AttachmentIcon */.AttachmentIcon;
+            return require(9691) /* AttachmentIcon */.AttachmentIcon;
           } else {
             const intl7 = require(1212) /* getSystemLocale */.intl;
             if (intl7.string(require(1212) /* getSystemLocale */.t.XM9XGP) === text) {
-              return require(10159) /* VideoIcon */.VideoIcon;
+              return require(7496) /* VideoIcon */.VideoIcon;
             } else {
               const intl8 = require(1212) /* getSystemLocale */.intl;
               if (intl8.string(require(1212) /* getSystemLocale */.t.TNLcpx) === text) {
@@ -61,11 +61,11 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
               } else {
                 const intl9 = require(1212) /* getSystemLocale */.intl;
                 if (intl9.string(require(1212) /* getSystemLocale */.t.F8Wf0e) === text) {
-                  return require(11561) /* SoundboardIcon */.SoundboardIcon;
+                  return require(7491) /* SoundboardIcon */.SoundboardIcon;
                 } else {
                   const intl2 = require(1212) /* getSystemLocale */.intl;
                   if (intl2.string(require(1212) /* getSystemLocale */.t.PJgX2h) === text) {
-                    return require(10256) /* StickerIcon */.StickerIcon;
+                    return require(7488) /* StickerIcon */.StickerIcon;
                   }
                 }
               }
@@ -79,21 +79,21 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = require(1212) /* getSystemLocale */.intl;
   if (intl.string(require(1212) /* getSystemLocale */.t.tPZo4p) === text) {
-    return require(10970) /* UserIcon */.UserIcon;
+    return require(10997) /* UserIcon */.UserIcon;
   } else {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     if (intl3.string(require(1212) /* getSystemLocale */.t.JL7sRS) === text) {
-      return require(9029) /* RobotIcon */.RobotIcon;
+      return require(9068) /* RobotIcon */.RobotIcon;
     } else {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       if (intl2.string(require(1212) /* getSystemLocale */.t.WjkIKU) === text) {
-        return require(15418) /* WebhookIcon */.WebhookIcon;
+        return require(15465) /* WebhookIcon */.WebhookIcon;
       }
     }
   }
 };
 export const toSearchListUserItem = function toSearchListUserItem(items, user, callback2) {
-  let obj = require(10078) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10110) /* _createForOfIteratorHelperLoose */;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(items);
   if (null == user) {
     return null;

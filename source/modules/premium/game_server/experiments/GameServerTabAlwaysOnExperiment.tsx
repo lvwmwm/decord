@@ -1,10 +1,10 @@
-// Module ID: 15082
-// Function ID: 114772
+// Module ID: 15129
+// Function ID: 115093
 // Name: useIsGameServerTabAlwaysOnEnabled
 // Dependencies: [1428, 2]
 // Exports: useIsGameServerTabAlwaysOnEnabled
 
-// Module 15082 (useIsGameServerTabAlwaysOnEnabled)
+// Module 15129 (useIsGameServerTabAlwaysOnEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-02-game-server-tab-always-on", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

@@ -1,8 +1,8 @@
-// Module ID: 14832
-// Function ID: 113181
-// Dependencies: [31, 27, 33, 4130, 689, 1273, 11759, 2]
+// Module ID: 14879
+// Function ID: 113502
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 11786, 2]
 
-// Module 14832
+// Module 14879
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -20,10 +20,10 @@ const memoResult = require("result").memo(function InvitesDisabledBadge(style) {
   let obj = { style: items };
   items = [tmp.pauseRing, style.style];
   obj = { style: tmp.pauseBackground };
-  obj = { style: tmp.pause, themedColor: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE, source: importDefault(11759) };
-  obj.children = jsx(require(1273) /* Button */.ThemedIcon, { style: tmp.pause, themedColor: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE, source: importDefault(11759) });
-  obj.children = <View style={tmp.pause} themedColor={importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE} source={importDefault(11759)} />;
-  return <View style={tmp.pause} themedColor={importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE} source={importDefault(11759)} />;
+  obj = { style: tmp.pause, themedColor: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE, source: importDefault(11786) };
+  obj.children = jsx(require(1273) /* Button */.ThemedIcon, { style: tmp.pause, themedColor: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE, source: importDefault(11786) });
+  obj.children = <View style={tmp.pause} themedColor={importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE} source={importDefault(11786)} />;
+  return <View style={tmp.pause} themedColor={importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE} source={importDefault(11786)} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guild/native/InvitesDisabledBadge.tsx");
 

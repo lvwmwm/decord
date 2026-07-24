@@ -1,10 +1,10 @@
-// Module ID: 9857
-// Function ID: 76304
+// Module ID: 9889
+// Function ID: 76498
 // Name: ForumPostTagsActionSheet
-// Dependencies: [57, 31, 27, 5685, 33, 4130, 1212, 5654, 5500, 5186, 9858, 4543, 9139, 4098, 2]
+// Dependencies: [57, 31, 27, 5685, 33, 4130, 1212, 5654, 5498, 5186, 9890, 4543, 9175, 4098, 2]
 // Exports: default
 
-// Module 9857 (ForumPostTagsActionSheet)
+// Module 9889 (ForumPostTagsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -115,5 +115,5 @@ export default function ForumPostTagsActionSheet(thread) {
   obj2.children = toggleTag(thread(4543).Button, obj3);
   items[1] = toggleTag(closure_5, obj2);
   obj.children = items;
-  return callback2(thread(5500).ActionSheet, obj);
+  return callback2(thread(5498).ActionSheet, obj);
 };

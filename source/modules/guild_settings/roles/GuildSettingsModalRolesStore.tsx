@@ -1,9 +1,9 @@
-// Module ID: 16299
-// Function ID: 127003
+// Module ID: 16346
+// Function ID: 127327
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1910, 1838, 653, 11455, 3976, 1212, 483, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1910, 1838, 653, 11485, 3976, 1212, 483, 566, 686, 2]
 
-// Module 16299 (_isNativeReflectConstruct)
+// Module 16346 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -168,7 +168,7 @@ tmp2 = new tmp2(require("dispatcher"), {
     if (null == _null) {
       return false;
     } else {
-      const moveItemFromToResult = importDefault(11455).moveItemFromTo(_null, from, to);
+      const moveItemFromToResult = importDefault(11485).moveItemFromTo(_null, from, to);
       _null = moveItemFromToResult;
       if (moveItemFromToResult[from] !== _null[from]) {
         const AccessibilityAnnouncer2 = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;

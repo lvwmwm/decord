@@ -1,8 +1,8 @@
-// Module ID: 15061
-// Function ID: 114686
-// Dependencies: [31, 4142, 4325, 10260, 4326, 33, 4130, 689, 9099, 4138, 566, 14900, 14969, 8450, 2]
+// Module ID: 15108
+// Function ID: 115007
+// Dependencies: [31, 4142, 4325, 10289, 4326, 33, 4130, 689, 9137, 4138, 566, 14947, 15016, 8494, 2]
 
-// Module 15061
+// Module 15108
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -40,10 +40,10 @@ const memoResult = importAllResult.memo((channel) => {
   const items5 = [channel];
   const stateFromStores = channel(566).useStateFromStores(items4, () => outer1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
   const obj2 = channel(566);
-  ({ isIncomingCall, isOngoingCall } = importDefault(14900)(channel.id));
+  ({ isIncomingCall, isOngoingCall } = importDefault(14947)(channel.id));
   obj = { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" };
-  const tmp6 = importDefault(14900)(channel.id);
-  obj.accessibilityLabel = importDefault(8450)({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
+  const tmp6 = importDefault(14947)(channel.id);
+  obj.accessibilityLabel = importDefault(8494)({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
   obj.accessibilityState = { selected };
   obj.channel = channel;
   obj.selected = selected;
@@ -51,7 +51,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj.resolvedUnreadSetting = UnreadSetting.ALL_MESSAGES;
   obj.mentionCount = mentionCount;
   obj.muted = stateFromStores;
-  return jsx(importDefault(14969), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" });
+  return jsx(importDefault(15016), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button" });
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/items/DMChannel.tsx");
 

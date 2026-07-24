@@ -1,10 +1,10 @@
-// Module ID: 8773
-// Function ID: 69344
+// Module ID: 8812
+// Function ID: 69559
 // Name: GiftIcon
-// Dependencies: [31, 33, 689, 3833, 7759, 2]
+// Dependencies: [31, 33, 689, 3833, 7852, 2]
 // Exports: GiftIcon
 
-// Module 8773 (GiftIcon)
+// Module 8812 (GiftIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const GiftIcon = function GiftIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(7759) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(7852) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7759) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7852) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

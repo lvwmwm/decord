@@ -1,10 +1,10 @@
-// Module ID: 11883
-// Function ID: 91960
+// Module ID: 11910
+// Function ID: 92198
 // Name: TraitEmoji
 // Dependencies: [31, 27, 33, 4130, 689, 1392, 3775, 5151, 4126, 2]
 // Exports: default
 
-// Module 11883 (TraitEmoji)
+// Module 11910 (TraitEmoji)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

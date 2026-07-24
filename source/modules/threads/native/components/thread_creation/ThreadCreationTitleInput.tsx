@@ -1,8 +1,8 @@
-// Module ID: 15313
-// Function ID: 116785
-// Dependencies: [31, 1348, 653, 33, 15314, 7019, 7936, 566, 7935, 1212, 7512, 5122, 2]
+// Module ID: 15360
+// Function ID: 117107
+// Dependencies: [31, 1348, 653, 33, 15361, 7018, 8023, 566, 8022, 1212, 7574, 5122, 2]
 
-// Module 15313
+// Module 15360
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { MAX_CHANNEL_NAME_LENGTH } from "ME";
@@ -14,7 +14,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const threadSettingsDraft = chatInputRef.threadSettingsDraft;
   const optional = chatInputRef.optional;
   const dependencyMap = ref;
-  let obj = chatInputRef(15314);
+  let obj = chatInputRef(15361);
   obj = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];
@@ -69,8 +69,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const stateFromStores = chatInputRef(566).useStateFromStores(items4, () => outer1_4.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";
   if (null != stateFromStores) {
-    str = chatInputRef(7935).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
-    const obj4 = chatInputRef(7935);
+    str = chatInputRef(8022).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
+    const obj4 = chatInputRef(8022);
   }
   const intl = chatInputRef(1212).intl;
   const string = intl.string;
@@ -102,7 +102,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   obj.ref = ref;
   obj.returnKeyType = "next";
   obj.textContentType = "none";
-  return jsx(chatInputRef(7512).TextInput, { defaultValue: threadSettingsDraft(5122)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult });
+  return jsx(chatInputRef(7574).TextInput, { defaultValue: threadSettingsDraft(5122)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityLabel: stringResult });
 }));
 const result = require("ME").fileFinishedImporting("modules/threads/native/components/thread_creation/ThreadCreationTitleInput.tsx");
 

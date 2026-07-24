@@ -1,10 +1,10 @@
-// Module ID: 11254
-// Function ID: 87585
+// Module ID: 11283
+// Function ID: 87825
 // Name: CirclePlusIcon
-// Dependencies: [31, 27, 33, 689, 3833, 11255, 11256, 2]
+// Dependencies: [31, 27, 33, 689, 3833, 11284, 11285, 2]
 // Exports: CirclePlusIcon
 
-// Module 11254 (CirclePlusIcon)
+// Module 11283 (CirclePlusIcon)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,10 +30,10 @@ export const CirclePlusIcon = function CirclePlusIcon(color) {
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
-  obj = { source: require(11255) /* registerAsset */, color: secondaryColor, style };
+  obj = { source: require(11284) /* registerAsset */, color: secondaryColor, style };
   const merged1 = Object.assign(merged);
   const items = [callback(require(3833) /* BaseIconImage */.BaseIconImage, obj), ];
-  const obj1 = { source: require(11256) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
+  const obj1 = { source: require(11285) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
   const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
   obj1.style = items2;

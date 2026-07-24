@@ -1,0 +1,11 @@
+// Module ID: 14236
+// Function ID: 109334
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 14236 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "714bfdcefc91a8c05361da54def8f212", name: "ic_voice_channel_24px", type: "png" };
+
+export default registerAsset.registerAsset(obj);

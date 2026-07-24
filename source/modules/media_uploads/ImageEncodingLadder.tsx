@@ -1,5 +1,5 @@
 // Module ID: 4699
-// Function ID: 40927
+// Function ID: 40931
 // Name: getAdaptiveImageCompressionQuality
 // Dependencies: [6, 7, 653, 2]
 

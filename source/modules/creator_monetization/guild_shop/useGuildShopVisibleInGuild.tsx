@@ -1,5 +1,5 @@
 // Module ID: 5643
-// Function ID: 48255
+// Function ID: 48265
 // Name: useGuildShopVisibleInGuild
 // Dependencies: [653, 5639, 5631, 5644, 5634, 2]
 // Exports: isGuildShopVisibleInGuild, useGuildShopVisibleInGuild

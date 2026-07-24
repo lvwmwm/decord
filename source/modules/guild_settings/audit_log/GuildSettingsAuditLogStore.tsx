@@ -1,9 +1,9 @@
-// Module ID: 16226
-// Function ID: 126062
+// Module ID: 16273
+// Function ID: 126386
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 16227, 1352, 1911, 1917, 1910, 1838, 653, 483, 22, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 16274, 1352, 1911, 1917, 1910, 1838, 653, 483, 22, 566, 686, 2]
 
-// Module 16226 (_isNativeReflectConstruct)
+// Module 16273 (_isNativeReflectConstruct)
 import _callSuper from "_callSuper";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
 import dispatcher from "dispatcher";

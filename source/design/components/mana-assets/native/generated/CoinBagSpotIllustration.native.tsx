@@ -1,5 +1,5 @@
 // Module ID: 5960
-// Function ID: 49894
+// Function ID: 49905
 // Name: CoinBagSpotIllustration
 // Dependencies: [33, 5085, 5961, 2]
 // Exports: CoinBagSpotIllustration

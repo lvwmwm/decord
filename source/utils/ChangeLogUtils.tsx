@@ -1,10 +1,10 @@
-// Module ID: 7769
-// Function ID: 61695
+// Module ID: 7862
+// Function ID: 62022
 // Name: parseWithClassNameExtraction
-// Dependencies: [3829, 7770, 4572, 4590, 4591, 4120, 2]
+// Dependencies: [3829, 7863, 4572, 4590, 4591, 4120, 2]
 // Exports: renderChangelogMessageMarkup
 
-// Module 7769 (parseWithClassNameExtraction)
+// Module 7862 (parseWithClassNameExtraction)
 const require = arg1;
 function parseWithClassNameExtraction(transformUpperCase) {
   let flag = transformUpperCase.transformUpperCase;
@@ -35,33 +35,33 @@ function parseWithClassNameExtraction(transformUpperCase) {
 }
 function defaultRules(arg0) {
   let obj = {};
-  const merged = Object.assign(require(7770) /* ChangeLogLink */.baseRules);
+  const merged = Object.assign(require(7863) /* ChangeLogLink */.baseRules);
   obj = {};
   const merged1 = Object.assign(image);
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.image) {
-    const customRules = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.image) {
+    const customRules = require(7863) /* ChangeLogLink */.customRules;
     image = customRules.image(arg0);
   } else {
-    image = require(7770) /* ChangeLogLink */.customRules.image;
+    image = require(7863) /* ChangeLogLink */.customRules.image;
   }
   const merged2 = Object.assign(image);
   obj["image"] = obj;
   obj = {};
   const merged3 = Object.assign(link);
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.link) {
-    const customRules2 = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.link) {
+    const customRules2 = require(7863) /* ChangeLogLink */.customRules;
     link = customRules2.link(arg0);
   } else {
-    link = require(7770) /* ChangeLogLink */.customRules.link;
+    link = require(7863) /* ChangeLogLink */.customRules.link;
   }
   const merged4 = Object.assign(link);
   obj["link"] = obj;
   const merged5 = Object.assign(list);
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.list) {
-    const customRules3 = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.list) {
+    const customRules3 = require(7863) /* ChangeLogLink */.customRules;
     list = customRules3.list(arg0);
   } else {
-    list = require(7770) /* ChangeLogLink */.customRules.list;
+    list = require(7863) /* ChangeLogLink */.customRules.list;
   }
   const merged6 = Object.assign(list);
   obj["list"] = {};
@@ -85,38 +85,38 @@ function defaultRules(arg0) {
   const obj3 = {};
   const merged7 = Object.assign(lheading);
   obj3["parse"] = parseWithClassNameExtraction({ transformUpperCase: true });
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.lheading) {
-    const customRules4 = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.lheading) {
+    const customRules4 = require(7863) /* ChangeLogLink */.customRules;
     lheading = customRules4.lheading(arg0);
   } else {
-    lheading = require(7770) /* ChangeLogLink */.customRules.lheading;
+    lheading = require(7863) /* ChangeLogLink */.customRules.lheading;
   }
   const merged8 = Object.assign(lheading);
   obj["lheading"] = obj3;
   const merged9 = Object.assign(heading);
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.heading) {
-    const customRules5 = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.heading) {
+    const customRules5 = require(7863) /* ChangeLogLink */.customRules;
     heading = customRules5.heading(arg0);
   } else {
-    heading = require(7770) /* ChangeLogLink */.customRules.heading;
+    heading = require(7863) /* ChangeLogLink */.customRules.heading;
   }
   const merged10 = Object.assign(heading);
   obj["heading"] = {};
   const merged11 = Object.assign(blockQuote);
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.blockQuote) {
-    const customRules6 = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.blockQuote) {
+    const customRules6 = require(7863) /* ChangeLogLink */.customRules;
     blockQuote = customRules6.blockQuote(arg0);
   } else {
-    blockQuote = require(7770) /* ChangeLogLink */.customRules.blockQuote;
+    blockQuote = require(7863) /* ChangeLogLink */.customRules.blockQuote;
   }
   const merged12 = Object.assign(blockQuote);
   obj["blockQuote"] = {};
   const merged13 = Object.assign(paragraph);
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.paragraph) {
-    const customRules7 = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.paragraph) {
+    const customRules7 = require(7863) /* ChangeLogLink */.customRules;
     paragraph = customRules7.paragraph(arg0);
   } else {
-    paragraph = require(7770) /* ChangeLogLink */.customRules.paragraph;
+    paragraph = require(7863) /* ChangeLogLink */.customRules.paragraph;
   }
   const merged14 = Object.assign(paragraph);
   obj["paragraph"] = {};
@@ -127,11 +127,11 @@ function specialRules(arg0) {
   obj = {};
   const merged = Object.assign(lheading);
   obj["parse"] = parseWithClassNameExtraction({ transformUpperCase: false });
-  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.lheading) {
-    const customRules = require(7770) /* ChangeLogLink */.customRules;
+  if ("function" === typeof require(7863) /* ChangeLogLink */.customRules.lheading) {
+    const customRules = require(7863) /* ChangeLogLink */.customRules;
     lheading = customRules.lheading(arg0);
   } else {
-    lheading = require(7770) /* ChangeLogLink */.customRules.lheading;
+    lheading = require(7863) /* ChangeLogLink */.customRules.lheading;
   }
   const merged1 = Object.assign(lheading);
   obj.lheading = obj;

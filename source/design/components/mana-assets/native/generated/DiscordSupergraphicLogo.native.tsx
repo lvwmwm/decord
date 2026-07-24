@@ -1,5 +1,5 @@
 // Module ID: 6010
-// Function ID: 49969
+// Function ID: 49980
 // Name: DiscordSupergraphicLogo
 // Dependencies: [27, 33, 689, 3834, 6011, 2]
 // Exports: DiscordSupergraphicLogo

@@ -1,5 +1,5 @@
 // Module ID: 4127
-// Function ID: 34328
+// Function ID: 34329
 // Name: TEXT_VARIANT
 // Dependencies: [2]
 

@@ -1,9 +1,9 @@
-// Module ID: 11680
-// Function ID: 90604
+// Module ID: 11707
+// Function ID: 90842
 // Name: ChatViewPopups
-// Dependencies: [31, 11681, 11685, 11693, 2]
+// Dependencies: [31, 11708, 11712, 11720, 2]
 
-// Module 11680 (ChatViewPopups)
+// Module 11707 (ChatViewPopups)
 import importAllResult from "result";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 12996
-// Function ID: 100538
+// Module ID: 13048
+// Function ID: 100861
 // Name: handleDCShownToUser
 // Dependencies: [686, 2]
 // Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
 
-// Module 12996 (handleDCShownToUser)
+// Module 13048 (handleDCShownToUser)
 const result = require("set").fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkActionCreators.tsx");
 
 export const handleDCShownToUser = function handleDCShownToUser(dismissibleContent, guildId) {

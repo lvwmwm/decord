@@ -1,10 +1,10 @@
-// Module ID: 13507
-// Function ID: 103982
+// Module ID: 13560
+// Function ID: 104309
 // Name: CommonProperty
-// Dependencies: [57, 31, 27, 1849, 13331, 653, 33, 4130, 689, 4126, 5165, 9597, 3712, 9429, 4660, 5492, 4078, 566, 7879, 4541, 5503, 5504, 11274, 4089, 13508, 5772, 2]
+// Dependencies: [57, 31, 27, 1849, 13384, 653, 33, 4130, 689, 4126, 5165, 9633, 3712, 9465, 4660, 5490, 4078, 566, 7527, 4541, 5501, 5502, 11303, 4089, 13561, 5772, 2]
 // Exports: default
 
-// Module 13507 (CommonProperty)
+// Module 13560 (CommonProperty)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -42,7 +42,7 @@ function LoggedEvent(arg0) {
   const dependencyMap = tmp[1];
   user = user.getUser(fingerprint);
   let obj = { collapsable: false };
-  obj = { arrow: !first, icon: callback2(fingerprint(9597).AnalyticsIcon, {}), label: event };
+  obj = { arrow: !first, icon: callback2(fingerprint(9633).AnalyticsIcon, {}), label: event };
   if ("name" in properties) {
     let str2 = properties.name;
   } else {
@@ -83,7 +83,7 @@ function LoggedEvent(arg0) {
     if (tmp20) {
       const obj4 = { name: "User " };
       obj5 = { user };
-      obj4.children = callback2(map(9429), obj5);
+      obj4.children = callback2(map(9465), obj5);
       tmp20 = callback2(CommonProperty, obj4);
     }
     items1[1] = tmp20;
@@ -93,8 +93,8 @@ function LoggedEvent(arg0) {
         style: map.copyContainer,
         onPress() {
               if (null != fingerprint) {
-                fingerprint(5492).copy(fingerprint);
-                const obj = fingerprint(5492);
+                fingerprint(5490).copy(fingerprint);
+                const obj = fingerprint(5490);
               }
             }
       };
@@ -209,12 +209,12 @@ export default function DevToolsAnalyticsScreen() {
   obj = {};
   const obj1 = { spacing: 16 };
   const obj2 = { title: "Actions", hasIcons: true };
-  const obj3 = { icon: callback2(trimmed(11274).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp3[1] };
-  const items2 = [callback2(trimmed(5504).TableSwitchRow, obj3), ];
-  const obj4 = { arrow: true, variant: "danger", icon: callback2(trimmed(4089).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(13508).clearAnalyticsLog };
+  const obj3 = { icon: callback2(trimmed(11303).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp3[1] };
+  const items2 = [callback2(trimmed(5502).TableSwitchRow, obj3), ];
+  const obj4 = { arrow: true, variant: "danger", icon: callback2(trimmed(4089).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(13561).clearAnalyticsLog };
   items2[1] = callback2(trimmed(5165).TableRow, obj4);
   obj2.children = items2;
-  const items3 = [callback3(trimmed(5503).TableRowGroup, obj2), , ];
+  const items3 = [callback3(trimmed(5501).TableRowGroup, obj2), , ];
   const str2 = str.toLowerCase();
   const tmp10 = View;
   const tmp11 = callback2;
@@ -235,7 +235,7 @@ export default function DevToolsAnalyticsScreen() {
     }
   }
   obj6.children = tmp14;
-  items3[2] = callback2(trimmed(5503).TableRowGroup, obj6);
+  items3[2] = callback2(trimmed(5501).TableRowGroup, obj6);
   obj1.children = items3;
   obj.ListHeaderComponent = tmp12(trimmed(4541).Stack, obj1);
   obj.contentContainerStyle = tmp.contentContainer;
@@ -247,6 +247,6 @@ export default function DevToolsAnalyticsScreen() {
     ({ item, index } = arg0);
     return outer1_8(outer1_12, { start: 0 === index, end: index === reversed.length - 1, event: item.event, properties: item.properties, timestamp: item.timestamp, fingerprint: item.fingerprint });
   };
-  obj.children = tmp11(trimmed(7879).FlashList, obj);
+  obj.children = tmp11(trimmed(7527).FlashList, obj);
   return tmp9(tmp10, obj);
 };

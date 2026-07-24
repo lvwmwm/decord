@@ -1,10 +1,10 @@
-// Module ID: 12913
-// Function ID: 100208
+// Module ID: 12965
+// Function ID: 100531
 // Name: _checkForNewerBuild
 // Dependencies: [5, 4112, 3, 507, 3827, 477, 668, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 12913 (_checkForNewerBuild)
+// Module 12965 (_checkForNewerBuild)
 import set from "set";
 import { UPDATE_CONFIG } from "currentUpdateConfig";
 import importDefaultResult from "_isNativeReflectConstruct";

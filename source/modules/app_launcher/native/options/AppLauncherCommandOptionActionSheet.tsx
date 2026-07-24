@@ -1,10 +1,10 @@
-// Module ID: 11289
-// Function ID: 87853
+// Module ID: 11318
+// Function ID: 88093
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [31, 27, 1455, 33, 4130, 689, 5187, 5186, 5501, 4098, 1273, 2]
+// Dependencies: [31, 27, 1455, 33, 4130, 689, 5187, 5186, 5499, 4098, 1273, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11289 (AppLauncherCommandOptionActionSheet)
+// Module 11318 (AppLauncherCommandOptionActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -48,7 +48,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   obj = { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper };
   const obj1 = {
     style: { alignSelf: "flex-start" },
-    children: jsx(merged(5501).ActionSheetCloseButton, {
+    children: jsx(merged(5499).ActionSheetCloseButton, {
       onPress() {
         outer1_1(outer1_2[9]).hideActionSheet();
         if (null != merged.onDismiss) {
@@ -57,7 +57,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
       }
     })
   };
-  obj.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(5501).ActionSheetCloseButton, {
+  obj.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(5499).ActionSheetCloseButton, {
     onPress() {
       outer1_1(outer1_2[9]).hideActionSheet();
       if (null != merged.onDismiss) {

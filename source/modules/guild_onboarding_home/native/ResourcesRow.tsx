@@ -1,10 +1,10 @@
-// Module ID: 15284
-// Function ID: 116563
+// Module ID: 15331
+// Function ID: 116885
 // Name: ResourcesRow
-// Dependencies: [31, 27, 15285, 33, 4130, 689, 15286, 11383, 4098, 15287, 1934, 4660, 4126, 1212, 2]
+// Dependencies: [31, 27, 15332, 33, 4130, 689, 15333, 11412, 4098, 15334, 1934, 4660, 4126, 1212, 2]
 // Exports: default
 
-// Module 15284 (ResourcesRow)
+// Module 15331 (ResourcesRow)
 import "result";
 import { ScrollView } from "get ActivityIndicator";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
@@ -25,7 +25,7 @@ export default function ResourcesRow(guildId) {
   guildId = guildId.guildId;
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  const arr = importDefault(15286)(guildId);
+  const arr = importDefault(15333)(guildId);
   let obj = { horizontal: true, style: tmp.container };
   const substr = arr.slice(0, 2);
   const items = [

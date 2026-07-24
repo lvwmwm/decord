@@ -1,10 +1,10 @@
-// Module ID: 15563
-// Function ID: 120027
+// Module ID: 15610
+// Function ID: 120349
 // Name: MessageRequestMutualServers
-// Dependencies: [31, 27, 33, 4130, 5515, 15564, 1212, 11651, 4126, 4660, 2]
+// Dependencies: [31, 27, 33, 4130, 5513, 15611, 1212, 11678, 4126, 4660, 2]
 // Exports: default
 
-// Module 15563 (MessageRequestMutualServers)
+// Module 15610 (MessageRequestMutualServers)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ export default function MessageRequestMutualServers(textVariant) {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(5515).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(5513).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -33,7 +33,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = callback2();
-  let obj = iconSize(15564);
+  let obj = iconSize(15611);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -49,7 +49,7 @@ export default function MessageRequestMutualServers(textVariant) {
   let tmp11 = length > 0;
   if (tmp11) {
     const obj1 = { size: iconSize, names: substr.map((name) => name.name), children: substr.map((guild) => outer1_4(outer1_1(outer1_2[4]), { guild, size: iconSize }, guild.id)) };
-    tmp11 = callback(iconSize(11651).GuildIconPile, obj1);
+    tmp11 = callback(iconSize(11678).GuildIconPile, obj1);
   }
   const items1 = [tmp11, ];
   const obj2 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label };

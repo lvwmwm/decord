@@ -1,10 +1,10 @@
-// Module ID: 7873
-// Function ID: 62705
+// Module ID: 7961
+// Function ID: 63022
 // Name: SolidCutout
-// Dependencies: [31, 27, 33, 3834, 7874, 7875, 3991, 2]
+// Dependencies: [31, 27, 33, 3834, 7962, 7963, 3991, 2]
 // Exports: default
 
-// Module 7873 (SolidCutout)
+// Module 7961 (SolidCutout)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -75,7 +75,7 @@ export default function ClipView(cutouts) {
   ({ children, style } = cutouts);
   Object.setPrototypeOf(null);
   const merged = Object.assign(cutouts, obj);
-  const context = React.useContext(require(7874) /* context */.CutoutBackgroundContext);
+  const context = React.useContext(require(7962) /* context */.CutoutBackgroundContext);
   let tmp4 = cutouts;
   let tmp5 = null;
   if (null != context) {
@@ -98,7 +98,7 @@ export default function ClipView(cutouts) {
   obj["style"] = style;
   const items = [children, tmp5];
   obj["children"] = items;
-  return callback2(importDefault(7875), obj);
+  return callback2(importDefault(7963), obj);
 };
 export const ClipViewAnimated = animatedComponent;
 export const CutoutShape = obj;

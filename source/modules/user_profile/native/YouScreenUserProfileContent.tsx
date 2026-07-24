@@ -1,20 +1,20 @@
-// Module ID: 15488
-// Function ID: 119212
+// Module ID: 15535
+// Function ID: 119534
 // Name: YouAvatar
-// Dependencies: [57, 31, 27, 1340, 4810, 6856, 8264, 5512, 1345, 33, 15481, 15100, 477, 8263, 8238, 11987, 8266, 8515, 1334, 5802, 11916, 4543, 9106, 689, 1212, 15489, 1457, 7887, 8239, 8254, 566, 1324, 8236, 8240, 12214, 15490, 12101, 12107, 12108, 11902, 15491, 12111, 14667, 11918, 11887, 7191, 12117, 15493, 11974, 12122, 12128, 8360, 3991, 5449, 11898, 8512, 8450, 11649, 8758, 2]
+// Dependencies: [57, 31, 27, 1340, 4810, 6855, 8308, 5510, 1345, 33, 15528, 15147, 477, 8307, 8282, 12013, 12014, 8310, 8560, 1334, 5802, 11943, 4543, 9142, 689, 1212, 15536, 1457, 7974, 8283, 8298, 566, 1324, 8280, 8284, 12241, 15537, 12127, 12133, 12134, 11929, 15538, 12137, 14714, 11945, 11914, 7191, 12143, 15540, 12000, 12148, 12155, 8404, 3991, 5449, 11925, 8557, 8494, 11676, 8797, 2]
 // Exports: default
 
-// Module 15488 (YouAvatar)
-import defaultCountFormatter from "defaultCountFormatter";
-import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled";
-import get_ActivityIndicator from "useDisplayProfile";
+// Module 15535 (YouAvatar)
+import getStatusLabel from "getStatusLabel";
+import initialize from "initialize";
+import get_ActivityIndicator from "Link";
 import { useIsContentShown } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
 import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
 import { ContentDismissActionType } from "ContentDismissActionType";
-import jsxProd from "useUserProfileColors";
+import jsxProd from "useProfileTheme";
 
 let closure_13;
 let closure_14;
@@ -36,7 +36,7 @@ function YouAvatar(arg0) {
   obj["importantForAccessibility"] = "no-hide-descendants";
   obj["accessibilityElementsHidden"] = isAndroidResult;
   obj["accessible"] = !isAndroidResult && undefined;
-  return closure_13(importDefault(8263), obj);
+  return closure_13(importDefault(8307), obj);
 }
 function YouScreenWidgetsBoardContainer(containerBackground) {
   let activeSection;
@@ -45,7 +45,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
   let userId;
   containerBackground = containerBackground.containerBackground;
   ({ userId, activeSection, isRefreshEnabled, containerBorderColor } = containerBackground);
-  const tmp = importDefault(8238)();
+  const tmp = importDefault(8282)();
   const items = [tmp.card, ];
   if (isRefreshEnabled) {
     let obj = { backgroundColor: containerBackground, borderColor: containerBorderColor, borderWidth: 1 };
@@ -56,20 +56,23 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
     items[1] = obj;
     tmp2 = items;
   }
-  obj = { style: tmp.profileContent, children: callback2(importDefault(11987), obj1) };
-  obj1 = { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp2 };
-  return callback2(closure_6, obj);
+  obj = { style: tmp.profileContent };
+  const items1 = [callback2(importDefault(12013), {}), ];
+  const obj1 = { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp2 };
+  items1[1] = callback2(importDefault(12014), obj1);
+  obj.children = items1;
+  return callback3(closure_6, obj);
 }
 function EditSection(navigateToProfileCustomization) {
   navigateToProfileCustomization = navigateToProfileCustomization.navigateToProfileCustomization;
   let dependencyMap;
   let callback;
-  let obj = navigateToProfileCustomization(8266);
+  let obj = navigateToProfileCustomization(8310);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const ref = React.useRef(null);
-  let obj1 = navigateToProfileCustomization(8515);
+  let obj1 = navigateToProfileCustomization(8560);
   const isDisplayNameStylesFlywheelSettersEnabled = obj1.useIsDisplayNameStylesFlywheelSettersEnabled("YouScreenUserProfileContent");
-  const tmp = trackUserProfileAction(8238)();
+  const tmp = trackUserProfileAction(8282)();
   navigateToProfileCustomization(5802);
   if (isDisplayNameStylesFlywheelSettersEnabled) {
     if (!tmp4) {
@@ -92,22 +95,22 @@ function EditSection(navigateToProfileCustomization) {
     obj = { style: tmp.primaryButtons };
     obj1 = { ref, variant: "primary" };
     const obj2 = { size: "sm", color: trackUserProfileAction(689).colors.WHITE };
-    obj1.icon = callback2(navigateToProfileCustomization(9106).PencilIcon, obj2);
+    obj1.icon = callback2(navigateToProfileCustomization(9142).PencilIcon, obj2);
     const intl = navigateToProfileCustomization(1212).intl;
     obj1.text = intl.string(navigateToProfileCustomization(1212).t.AAjhgi);
     obj1.onPress = callback;
     obj1.grow = true;
     obj.secondaryButton = callback2(navigateToProfileCustomization(4543).Button, obj1);
-    const items2 = [callback2(trackUserProfileAction(11916), obj), ];
+    const items2 = [callback2(trackUserProfileAction(11943), obj), ];
     const obj3 = { targetRef: ref, visible: tmp14, markAsDismissed: tmp10[1] };
-    items2[1] = callback2(trackUserProfileAction(15489), obj3);
+    items2[1] = callback2(trackUserProfileAction(15536), obj3);
     obj.children = items2;
-    return callback3(closure_14, obj);
+    return callback3(closure_15, obj);
   }
   items = [];
 }
 ({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
+({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/YouScreenUserProfileContent.tsx");
 
 export default function YouScreenUserProfileContent(user) {
@@ -162,48 +165,48 @@ export default function YouScreenUserProfileContent(user) {
   let closure_32;
   const tmp = navigateToFriends(navigateToPremium[14])();
   c5 = tmp;
-  let obj = user(navigateToPremium[26]);
+  let obj = user(navigateToPremium[27]);
   navigation = obj.useNavigation();
-  let obj1 = user(navigateToPremium[16]);
+  let obj1 = user(navigateToPremium[17]);
   trackUserProfileAction = obj1.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let tmp3 = navigateToFriends(navigateToPremium[27])(user.id);
+  let tmp3 = navigateToFriends(navigateToPremium[28])(user.id);
   c8 = tmp3;
-  let obj2 = user(navigateToPremium[28]);
+  let obj2 = user(navigateToPremium[29]);
   customStatusActivity = obj2.useCustomStatusActivity();
-  let obj3 = user(navigateToPremium[30]);
+  let obj3 = user(navigateToPremium[31]);
   let items = [c8];
   const stateFromStores = obj3.useStateFromStores(items, () => _undefined2.getStatus());
-  let tmp7 = navigateToFriends(navigateToPremium[31])("YouScreenUserProfileContent");
+  let tmp7 = navigateToFriends(navigateToPremium[32])("YouScreenUserProfileContent");
   UserProfileSections = tmp7;
-  const tmp8 = navigateToFriends(navigateToPremium[32])({ user, displayProfile: tmp3 });
+  const tmp8 = navigateToFriends(navigateToPremium[33])({ user, displayProfile: tmp3 });
   const primaryColor = tmp8.primaryColor;
   UserProfileThemeTypes = tmp9;
   ({ theme, secondaryColor } = tmp8);
-  let obj4 = user(navigateToPremium[33]);
+  let obj4 = user(navigateToPremium[34]);
   const userProfileColors = obj4.useUserProfileColors({ theme, primaryColor, secondaryColor });
   containerBackground = userProfileColors.containerBackground;
   containerBorderColor = userProfileColors.containerBorderColor;
   ({ avatarBackground, statusBackground } = userProfileColors);
   let items1 = [trackUserProfileAction];
-  let tmp5 = navigateToFriends(navigateToPremium[29])(tmp3);
+  let tmp5 = navigateToFriends(navigateToPremium[30])(tmp3);
   const callback = initialTab.useCallback(() => {
     trackUserProfileAction({ action: "PRESS_SET_STATUS" });
     const result = user(navigateToPremium[11]).showYouAccountActionSheet();
   }, items1);
-  let obj5 = user(navigateToPremium[34]);
+  let obj5 = user(navigateToPremium[35]);
   enabled = obj5.useVirtualCurrencyMobileEnabled().enabled;
   const tmp13 = navigateToShop(initialTab.useState(null), 2);
   const first = tmp13[0];
   c15 = tmp14;
-  let obj7 = user(navigateToPremium[35]);
+  let obj7 = user(navigateToPremium[36]);
   shouldShowExpiringTrialOfferCard = obj7.useShouldShowExpiringTrialOfferCard();
-  let obj8 = user(navigateToPremium[30]);
+  let obj8 = user(navigateToPremium[31]);
   let items2 = [customStatusActivity];
   stateFromStores1 = obj8.useStateFromStores(items2, () => customStatusActivity.getFirstWishlistId(user.id));
-  let obj9 = user(navigateToPremium[36]);
+  let obj9 = user(navigateToPremium[37]);
   let tmp17 = obj9.useDisplayableBoardWidgets(user.id).length > 0;
   c18 = tmp17;
-  let obj10 = user(navigateToPremium[37]);
+  let obj10 = user(navigateToPremium[38]);
   const profileTabIndices = obj10.useProfileTabIndices(tmp17, true);
   boardTabIndex = profileTabIndices.boardTabIndex;
   wishlistTabIndex = profileTabIndices.wishlistTabIndex;
@@ -213,7 +216,7 @@ export default function YouScreenUserProfileContent(user) {
   const callback1 = initialTab.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj11 = user(navigateToPremium[38]);
+  let obj11 = user(navigateToPremium[39]);
   const pageHeights = obj11.usePageHeights();
   handlePageContentSize = pageHeights.handlePageContentSize;
   const items3 = [trackUserProfileAction];
@@ -221,7 +224,7 @@ export default function YouScreenUserProfileContent(user) {
     trackUserProfileAction({ action: "PRESS_SECTION", section });
   }, items3);
   const ref = initialTab.useRef(null);
-  const profileSectionTabs = user(navigateToPremium[37]).useProfileSectionTabs({ initialUserProfileSection: initialTab, wishlistTabIndex, boardTabIndex, onTabChange: callback2 });
+  const profileSectionTabs = user(navigateToPremium[38]).useProfileSectionTabs({ initialUserProfileSection: initialTab, wishlistTabIndex, boardTabIndex, onTabChange: callback2 });
   activeProfileTabSection = profileSectionTabs.activeProfileTabSection;
   setActiveProfileTabSection = profileSectionTabs.setActiveProfileTabSection;
   restoreActiveIndex = profileSectionTabs.restoreActiveIndex;
@@ -231,7 +234,7 @@ export default function YouScreenUserProfileContent(user) {
   callback3 = initialTab.useCallback(() => {
     let tmp2 = null;
     if (null == customStatusActivity) {
-      tmp2 = navigateToFriends(navigateToPremium[39])();
+      tmp2 = navigateToFriends(navigateToPremium[40])();
     }
     c15(tmp2);
   }, items4);
@@ -260,31 +263,31 @@ export default function YouScreenUserProfileContent(user) {
     obj = { style: items1 };
     items1 = [_undefined.cards, _undefined.profileContent];
     const obj1 = { navigateToPremium, style: tmp2 };
-    const items2 = [containerBorderColor(navigateToFriends(navigateToPremium[40]), obj1), , , , , , , , , ];
+    const items2 = [containerBorderColor(navigateToFriends(navigateToPremium[41]), obj1), , , , , , , , , ];
     let tmp7 = !shouldShowExpiringTrialOfferCard;
     if (tmp7) {
       const obj2 = { navigateToPremium, navigateToShop, hasCustomProfileTheme: c11 };
-      tmp7 = containerBorderColor(navigateToFriends(navigateToPremium[41]), obj2);
+      tmp7 = containerBorderColor(navigateToFriends(navigateToPremium[42]), obj2);
     }
     items2[1] = tmp7;
     let tmp14 = enabled;
     if (enabled) {
       const obj3 = { style: tmp2 };
-      tmp14 = containerBorderColor(navigateToFriends(navigateToPremium[42]), obj3);
+      tmp14 = containerBorderColor(navigateToFriends(navigateToPremium[43]), obj3);
     }
     items2[2] = tmp14;
     const obj4 = { user, currentUser: user, style: tmp2 };
-    items2[3] = containerBorderColor(navigateToFriends(navigateToPremium[43]), obj4);
+    items2[3] = containerBorderColor(navigateToFriends(navigateToPremium[44]), obj4);
     const obj5 = { userId: user.id, displayProfile: c8 };
     let tmp20;
     if (!c10) {
       tmp20 = tmp2;
     }
     obj5.style = tmp20;
-    items2[4] = containerBorderColor(navigateToFriends(navigateToPremium[44]), obj5);
+    items2[4] = containerBorderColor(navigateToFriends(navigateToPremium[45]), obj5);
     let tmp21 = c10;
     if (c10) {
-      tmp21 = containerBorderColor(navigateToFriends(navigateToPremium[45]), {});
+      tmp21 = containerBorderColor(navigateToFriends(navigateToPremium[46]), {});
     }
     items2[5] = tmp21;
     const obj6 = { userId: user.id };
@@ -293,30 +296,30 @@ export default function YouScreenUserProfileContent(user) {
       tmp26 = tmp2;
     }
     obj6.style = tmp26;
-    items2[6] = containerBorderColor(user(navigateToPremium[46]).UserProfileAccountConnectionsCard, obj6);
+    items2[6] = containerBorderColor(user(navigateToPremium[47]).UserProfileAccountConnectionsCard, obj6);
     const obj7 = { userId: user.id };
     let tmp28;
     if (!c10) {
       tmp28 = tmp2;
     }
     obj7.style = tmp28;
-    items2[7] = containerBorderColor(user(navigateToPremium[46]).UserProfileApplicationRoleConnectionsCard, obj7);
+    items2[7] = containerBorderColor(user(navigateToPremium[47]).UserProfileApplicationRoleConnectionsCard, obj7);
     const obj8 = { userId: user.id, navigateToFriends, style: tmp2 };
-    items2[8] = containerBorderColor(navigateToFriends(navigateToPremium[47]), obj8);
+    items2[8] = containerBorderColor(navigateToFriends(navigateToPremium[48]), obj8);
     const obj9 = { userId: user.id };
     let tmp31;
     const tmp18 = containerBorderColor;
-    const tmp19 = navigateToFriends(navigateToPremium[44]);
+    const tmp19 = navigateToFriends(navigateToPremium[45]);
     const tmp25 = containerBorderColor;
     const tmp27 = containerBorderColor;
     const tmp29 = containerBorderColor;
-    const tmp5 = c15;
+    const tmp5 = enabled;
     const tmp6 = navigation;
     if (!c10) {
       tmp31 = tmp2;
     }
     obj9.style = tmp31;
-    items2[9] = tmp29(navigateToFriends(navigateToPremium[48]), obj9);
+    items2[9] = tmp29(navigateToFriends(navigateToPremium[49]), obj9);
     obj.children = items2;
     return tmp5(tmp6, obj);
   }, items6);
@@ -324,7 +327,7 @@ export default function YouScreenUserProfileContent(user) {
   callback5 = initialTab.useCallback(() => {
     let obj = { style: _undefined.profileContent };
     if (null == stateFromStores1) {
-      let tmp3Result = containerBorderColor(user(navigateToPremium[49]).WishlistEmptyState, {});
+      let tmp3Result = containerBorderColor(user(navigateToPremium[50]).WishlistEmptyState, {});
     } else {
       obj = { wishlistId: stateFromStores1 };
       let tmp9;
@@ -333,9 +336,9 @@ export default function YouScreenUserProfileContent(user) {
       }
       obj.containerWidth = tmp9;
       obj.isVisible = c27;
-      tmp3Result = containerBorderColor(navigateToFriends(navigateToPremium[49]), obj);
+      tmp3Result = containerBorderColor(navigateToFriends(navigateToPremium[50]), obj);
       const tmp3 = containerBorderColor;
-      const tmp6 = navigateToFriends(navigateToPremium[49]);
+      const tmp6 = navigateToFriends(navigateToPremium[50]);
     }
     const items = [tmp3Result, ];
     obj = { userId: user.id, wishlistId: stateFromStores1 };
@@ -344,15 +347,15 @@ export default function YouScreenUserProfileContent(user) {
       tmp17 = first1;
     }
     obj.containerWidth = tmp17;
-    items[1] = containerBorderColor(navigateToFriends(navigateToPremium[50]), obj);
+    items[1] = containerBorderColor(navigateToFriends(navigateToPremium[51]), obj);
     obj.children = items;
-    return c15(navigation, obj);
+    return enabled(navigation, obj);
   }, items7);
   const items8 = [callback4, callback5, handlePageContentSize, tmp17, boardTabIndex, wishlistTabIndex, user.id, activeProfileTabSection, tmp7, containerBackground, containerBorderColor];
   const memo = initialTab.useMemo(() => {
     let obj = { id: "main" };
-    const intl = user(navigateToPremium[24]).intl;
-    obj.label = intl.string(user(navigateToPremium[24]).t.LXw470);
+    const intl = user(navigateToPremium[25]).intl;
+    obj.label = intl.string(user(navigateToPremium[25]).t.LXw470);
     obj = {
       scrollEnabled: false,
       onContentSizeChange(arg0, arg1) {
@@ -364,8 +367,8 @@ export default function YouScreenUserProfileContent(user) {
     const items = [obj];
     if (c18) {
       obj = { id: "board" };
-      const intl2 = user(navigateToPremium[24]).intl;
-      obj.label = intl2.string(user(navigateToPremium[24]).t.laViwx);
+      const intl2 = user(navigateToPremium[25]).intl;
+      obj.label = intl2.string(user(navigateToPremium[25]).t.laViwx);
       const obj1 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
@@ -378,8 +381,8 @@ export default function YouScreenUserProfileContent(user) {
       items.push(obj);
     }
     const obj3 = { id: "wishlist" };
-    const intl3 = user(navigateToPremium[24]).intl;
-    obj3.label = intl3.string(user(navigateToPremium[24]).t["7lZ31J"]);
+    const intl3 = user(navigateToPremium[25]).intl;
+    obj3.label = intl3.string(user(navigateToPremium[25]).t["7lZ31J"]);
     obj3.page = containerBorderColor(c5, {
       scrollEnabled: false,
       onContentSizeChange(arg0, arg1) {
@@ -390,26 +393,26 @@ export default function YouScreenUserProfileContent(user) {
     items.push(obj3);
     return items;
   }, items8);
-  const obj13 = user(navigateToPremium[37]);
-  obj = { pageWidth: first1, defaultIndex: activeProfileTabSectionIndex, itemSpacing: navigateToFriends(navigateToPremium[23]).space.PX_24, items: memo, onPageChange: handleTabChange };
-  segmentedControlState = user(navigateToPremium[51]).useSegmentedControlState(obj);
-  const obj14 = user(navigateToPremium[51]);
-  const pagerFillHeight = user(navigateToPremium[38]).usePagerFillHeight();
+  const obj13 = user(navigateToPremium[38]);
+  obj = { pageWidth: first1, defaultIndex: activeProfileTabSectionIndex, itemSpacing: navigateToFriends(navigateToPremium[24]).space.PX_24, items: memo, onPageChange: handleTabChange };
+  segmentedControlState = user(navigateToPremium[52]).useSegmentedControlState(obj);
+  const obj14 = user(navigateToPremium[52]);
+  const pagerFillHeight = user(navigateToPremium[39]).usePagerFillHeight();
   const items9 = [segmentedControlState, restoreActiveIndex];
   ({ pagerRef, fillHeight, measureFill } = pagerFillHeight);
   const layoutEffect = initialTab.useLayoutEffect(() => {
     restoreActiveIndex(segmentedControlState);
   }, items9);
-  const obj16 = user(navigateToPremium[38]);
-  const pagesHeightStyle = user(navigateToPremium[38]).usePagesHeightStyle(segmentedControlState, pageHeights.pageHeights, fillHeight);
+  const obj16 = user(navigateToPremium[39]);
+  const pagesHeightStyle = user(navigateToPremium[39]).usePagesHeightStyle(segmentedControlState, pageHeights.pageHeights, fillHeight);
   closure_32 = initialTab.useRef(segmentedControlState.setActiveIndex);
   const items10 = [segmentedControlState];
   const effect1 = initialTab.useEffect(() => {
     closure_32.current = segmentedControlState.setActiveIndex;
   }, items10);
-  const obj17 = user(navigateToPremium[38]);
+  const obj17 = user(navigateToPremium[39]);
   const items11 = [initialTab, navigation, wishlistTabIndex, setActiveProfileTabSection];
-  const focusEffect = user(navigateToPremium[26]).useFocusEffect(initialTab.useCallback(() => {
+  const focusEffect = user(navigateToPremium[27]).useFocusEffect(initialTab.useCallback(() => {
     if (undefined !== initialTab) {
       let num = 0;
       if (initialTab === _undefined3.WISHLIST) {
@@ -453,18 +456,18 @@ export default function YouScreenUserProfileContent(user) {
   ({ customStatusBubble: arr15[0], customStatusBubbleInset: arr15[1] } = tmp);
   obj4.placeholderText = labelResult;
   obj4.prompt = first;
-  items13[1] = containerBorderColor(navigateToFriends(navigateToPremium[54]), obj4);
+  items13[1] = containerBorderColor(navigateToFriends(navigateToPremium[55]), obj4);
   obj5 = { style: items15 };
   items15 = [, ];
   ({ primaryInfo: arr16[0], profileContent: arr16[1] } = tmp);
   let obj6 = { user };
   let pronouns;
-  const obj18 = user(navigateToPremium[26]);
+  const obj18 = user(navigateToPremium[27]);
   const tmp38 = containerBorderColor;
   const tmp39 = containerBorderColor;
-  const tmp40 = c15;
+  const tmp40 = enabled;
   const tmp41 = navigation;
-  const tmp42 = c15;
+  const tmp42 = enabled;
   const tmp43 = navigation;
   const tmp44 = containerBorderColor;
   if (null != tmp3) {
@@ -474,13 +477,13 @@ export default function YouScreenUserProfileContent(user) {
   obj6.badges = tmp5;
   obj6.badgeContainerBackground = containerBackground;
   obj6.onPressDisplayName = callback;
-  let intl = user(navigateToPremium[24]).intl;
+  let intl = user(navigateToPremium[25]).intl;
   obj7 = {};
-  const tmp45 = navigateToFriends(navigateToPremium[55]);
-  obj7.status = user(navigateToPremium[56]).getStatusLabel(stateFromStores);
-  const obj27 = user(navigateToPremium[56]);
-  let intl2 = user(navigateToPremium[24]).intl;
-  obj6.displayNameAccessibilityHint = "" + intl.formatToPlainString(user(navigateToPremium[24]).t["er+FRD"], obj7) + ", " + intl2.string(user(navigateToPremium[24]).t.C6COaT);
+  const tmp45 = navigateToFriends(navigateToPremium[56]);
+  obj7.status = user(navigateToPremium[57]).getStatusLabel(stateFromStores);
+  const obj27 = user(navigateToPremium[57]);
+  let intl2 = user(navigateToPremium[25]).intl;
+  obj6.displayNameAccessibilityHint = "" + intl.formatToPlainString(user(navigateToPremium[25]).t["er+FRD"], obj7) + ", " + intl2.string(user(navigateToPremium[25]).t.C6COaT);
   obj6.themeType = UserProfileThemeTypes.YOU_SCREEN;
   obj6.showChevron = true;
   const items16 = [tmp44(tmp45, obj6), containerBorderColor(c18, { navigateToProfileCustomization })];
@@ -494,14 +497,14 @@ export default function YouScreenUserProfileContent(user) {
     str = "gradient-background";
   }
   obj10.variant = str;
-  obj9.children = containerBorderColor(user(navigateToPremium[57]).Tabs, obj10);
+  obj9.children = containerBorderColor(user(navigateToPremium[58]).Tabs, obj10);
   const items17 = [containerBorderColor(navigation, obj9), ];
-  obj11 = { ref: pagerRef, onLayout: measureFill, style: pagesHeightStyle, children: containerBorderColor(user(navigateToPremium[58]).SegmentedControlPages, { state: segmentedControlState }) };
-  items17[1] = containerBorderColor(navigateToFriends(navigateToPremium[52]).View, obj11);
+  obj11 = { ref: pagerRef, onLayout: measureFill, style: pagesHeightStyle, children: containerBorderColor(user(navigateToPremium[59]).SegmentedControlPages, { state: segmentedControlState }) };
+  items17[1] = containerBorderColor(navigateToFriends(navigateToPremium[53]).View, obj11);
   obj8.children = items17;
-  items13[3] = c15(navigation, obj8);
+  items13[3] = enabled(navigation, obj8);
   obj2.children = items13;
   obj1.children = tmp40(tmp41, obj2);
-  obj.children = tmp39(user(navigateToPremium[53]).LayerScope, obj1);
-  return tmp38(navigateToFriends(navigateToPremium[52]).View, obj);
+  obj.children = tmp39(user(navigateToPremium[54]).LayerScope, obj1);
+  return tmp38(navigateToFriends(navigateToPremium[53]).View, obj);
 };

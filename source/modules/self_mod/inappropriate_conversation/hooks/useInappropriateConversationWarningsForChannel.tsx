@@ -1,10 +1,10 @@
-// Module ID: 10108
-// Function ID: 78255
+// Module ID: 10140
+// Function ID: 78449
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [9101, 566, 2]
+// Dependencies: [9139, 566, 2]
 // Exports: useInappropriateConversationWarningsForChannel
 
-// Module 10108 (useInappropriateConversationWarningsForChannel)
+// Module 10140 (useInappropriateConversationWarningsForChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SafetyWarningTypes } from "_isNativeReflectConstruct";
 

@@ -1,10 +1,10 @@
-// Module ID: 6931
-// Function ID: 55300
+// Module ID: 6930
+// Function ID: 55309
 // Name: set
-// Dependencies: [4119, 1327, 6932, 6933, 2]
+// Dependencies: [4119, 1327, 6931, 6932, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 6931 (set)
+// Module 6930 (set)
 import set from "makeStorefrontSKUCodedLink";
 
 const items = [require("CodedLinkType").CodedLinkType.APP_DIRECTORY_PROFILE, require("CodedLinkType").CodedLinkType.ACTIVITY_BOOKMARK, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, require("CodedLinkType").CodedLinkType.APP_OAUTH2_LINK];
@@ -26,7 +26,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
     if (require(4119) /* CodedLinkType */.CodedLinkType.APP_OAUTH2_LINK !== type) {
       if (require(4119) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
         if (require(4119) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          const result = require(6932) /* makeStorefrontSKUCodedLink */.parseStorefrontSkuCodedLink(code);
+          const result = require(6931) /* makeStorefrontSKUCodedLink */.parseStorefrontSkuCodedLink(code);
           let tmp9 = null;
           if (null != result) {
             let obj = { type };
@@ -35,7 +35,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
           }
           return tmp9;
         } else if (require(4119) /* CodedLinkType */.CodedLinkType.ACTIVITY_BOOKMARK === type) {
-          obj = { type, applicationId: code, params: require(6933) /* extractActivityBookmarkParams */.extractActivityBookmarkParams(url) };
+          obj = { type, applicationId: code, params: require(6932) /* extractActivityBookmarkParams */.extractActivityBookmarkParams(url) };
           return obj;
         }
       }

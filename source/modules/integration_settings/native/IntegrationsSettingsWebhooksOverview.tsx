@@ -1,10 +1,10 @@
-// Module ID: 15525
-// Function ID: 119704
+// Module ID: 15572
+// Function ID: 120026
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 31, 27, 1348, 1907, 1838, 3758, 1849, 15526, 653, 33, 4130, 689, 1456, 1392, 5165, 1273, 1212, 21, 3969, 566, 15527, 7498, 15528, 1920, 4126, 15530, 5503, 7495, 4541, 5448, 3842, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 31, 27, 1348, 1907, 1838, 3758, 1849, 15573, 653, 33, 4130, 689, 1456, 1392, 5165, 1273, 1212, 21, 3969, 566, 15574, 7639, 15575, 1920, 4126, 15577, 5501, 7636, 4541, 5448, 3842, 2]
 // Exports: default
 
-// Module 15525 (_isNativeReflectConstruct)
+// Module 15572 (_isNativeReflectConstruct)
 import result from "result";
 import getActivityIndicator from "get ActivityIndicator";
 import closure_5 from "jsxProd";

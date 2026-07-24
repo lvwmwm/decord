@@ -1,10 +1,10 @@
-// Module ID: 15649
-// Function ID: 120678
+// Module ID: 15696
+// Function ID: 121000
 // Name: nativeEventEmitter
-// Dependencies: [31, 27, 3991, 10633, 2]
+// Dependencies: [31, 27, 3991, 10662, 2]
 // Exports: default
 
-// Module 15649 (nativeEventEmitter)
+// Module 15696 (nativeEventEmitter)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 

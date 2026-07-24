@@ -1,10 +1,10 @@
-// Module ID: 11056
-// Function ID: 86030
+// Module ID: 11083
+// Function ID: 86219
 // Name: CtaButtonType
-// Dependencies: [4348, 11057, 4347, 566, 2]
+// Dependencies: [4348, 11084, 4347, 566, 2]
 // Exports: getCtaButtonType, useCtaButtonType
 
-// Module 11056 (CtaButtonType)
+// Module 11083 (CtaButtonType)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -13,7 +13,7 @@ let result = require("isReactiveCheckEnabled").fileFinishedImporting("modules/me
 
 export const CtaButtonType = obj;
 export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
-  const obj = require(11057) /* shouldRenderReportFalsePositiveButton */;
+  const obj = require(11084) /* shouldRenderReportFalsePositiveButton */;
   if (obj.shouldRenderReportFalsePositiveButton(id)) {
     let CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;
   } else {
@@ -30,7 +30,7 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
   return CONNECT_TO_TEEN;
 };
 export const useCtaButtonType = function useCtaButtonType(id, channel_id) {
-  const obj = require(11057) /* shouldRenderReportFalsePositiveButton */;
+  const obj = require(11084) /* shouldRenderReportFalsePositiveButton */;
   const shouldRenderReportFalsePositiveButton = obj.useShouldRenderReportFalsePositiveButton(id);
   const result = require(4347) /* isReactiveCheckEnabled */.isAgeVerificationMessageWithRetryCta(channel_id, id);
   const obj2 = require(4347) /* isReactiveCheckEnabled */;

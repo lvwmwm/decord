@@ -1,10 +1,10 @@
-// Module ID: 14223
-// Function ID: 109271
+// Module ID: 14273
+// Function ID: 109594
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [7841, 1917, 3969, 566, 2]
+// Dependencies: [7930, 1917, 3969, 566, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14223 (useDisplayNameStylesPendingName)
+// Module 14273 (useDisplayNameStylesPendingName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

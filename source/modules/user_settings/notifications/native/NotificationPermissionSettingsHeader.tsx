@@ -1,10 +1,10 @@
-// Module ID: 14315
-// Function ID: 109624
+// Module ID: 14365
+// Function ID: 109947
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [31, 27, 653, 11449, 33, 4130, 689, 11450, 675, 5167, 10202, 4126, 1212, 4543, 2]
+// Dependencies: [31, 27, 653, 11479, 33, 4130, 689, 11480, 675, 5167, 10232, 4126, 1212, 4543, 2]
 // Exports: default
 
-// Module 14315 (NotificationPermissionSettingsHeader)
+// Module 14365 (NotificationPermissionSettingsHeader)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -37,7 +37,7 @@ const result = require("ME").fileFinishedImporting("modules/user_settings/notifi
 
 export default function NotificationPermissionSettingsHeader() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = canSeePushNotificationNudge(11450);
+  let obj = canSeePushNotificationNudge(11480);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = React.useEffect(() => {
@@ -54,7 +54,7 @@ export default function NotificationPermissionSettingsHeader() {
     const obj1 = { style: tmp.cardContent };
     const obj2 = { style: tmp.iconCircle };
     const obj3 = { size: "md", color: importDefault(689).colors.ICON_STRONG };
-    obj2.children = callback(canSeePushNotificationNudge(10202).BellSlashIcon, obj3);
+    obj2.children = callback(canSeePushNotificationNudge(10232).BellSlashIcon, obj3);
     const items1 = [callback(View, obj2), , , ];
     const obj4 = { variant: "heading-lg/bold", color: "text-default" };
     const intl = canSeePushNotificationNudge(1212).intl;

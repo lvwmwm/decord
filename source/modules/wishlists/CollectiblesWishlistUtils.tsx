@@ -1,10 +1,10 @@
-// Module ID: 8668
-// Function ID: 68594
+// Module ID: 8709
+// Function ID: 68814
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1876, 1212, 6786, 8669, 2]
+// Dependencies: [1876, 1212, 6786, 8710, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8668 (getProductNameAndTypeFromSku)
+// Module 8709 (getProductNameAndTypeFromSku)
 const result = require("getPriceForCollectiblesProduct").fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
 export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
@@ -43,8 +43,8 @@ export const isWishlistableCollectiblesProduct = function isWishlistableCollecti
     if (tmp4) {
       let tmp7 = selectedProduct.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
       if (tmp7) {
-        tmp7 = !require(8669) /* apexExperiment */.getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
-        const obj2 = require(8669) /* apexExperiment */;
+        tmp7 = !require(8710) /* apexExperiment */.getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
+        const obj2 = require(8710) /* apexExperiment */;
       }
       tmp4 = !tmp7;
     }

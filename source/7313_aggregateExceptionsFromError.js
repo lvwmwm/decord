@@ -1,5 +1,5 @@
 // Module ID: 7313
-// Function ID: 58989
+// Function ID: 59018
 // Name: aggregateExceptionsFromError
 // Dependencies: [65, 7243, 7245]
 // Exports: applyAggregateErrorsToEvent

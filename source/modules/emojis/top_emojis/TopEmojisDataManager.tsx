@@ -1,9 +1,9 @@
-// Module ID: 16020
-// Function ID: 123950
+// Module ID: 16067
+// Function ID: 124272
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3947, 1852, 9332, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 3947, 1852, 9368, 5078, 2]
 
-// Module 16020 (_isNativeReflectConstruct)
+// Module 16067 (_isNativeReflectConstruct)
 import set from "set";
 import maybeFetchTopEmojisByGuild from "maybeFetchTopEmojisByGuild";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,8 +1,8 @@
-// Module ID: 14086
-// Function ID: 108347
-// Dependencies: [57, 31, 27, 33, 4130, 14076, 10464, 10926, 4979, 14027, 4126, 2]
+// Module ID: 14136
+// Function ID: 108670
+// Dependencies: [57, 31, 27, 33, 4130, 14126, 10493, 10953, 4979, 14077, 4126, 2]
 
-// Module 14086
+// Module 14136
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -15,20 +15,20 @@ const require = arg1;
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 let closure_8 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { alignItems: "center", display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1, gap: 8, justifyContent: "center", padding: 8 }, progressIndicatorWrapper: { flexGrow: 0, flexShrink: 0 }, copy: { flexGrow: 1, flexShrink: 1 } });
 const memoResult = importAllResult.memo(function QuestDockEnrolledHeader() {
-  const quest = importAllResult.useContext(importDefault(14076)).quest;
+  const quest = importAllResult.useContext(importDefault(14126)).quest;
   const tmp = callback4();
-  let obj = require(10464) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10493) /* _createForOfIteratorHelperLoose */;
   const questTaskDetails = obj.useQuestTaskDetails(quest);
-  let obj1 = require(10464) /* _createForOfIteratorHelperLoose */;
-  let obj2 = require(10926) /* formatWithOrWithoutMarkdown */;
+  let obj1 = require(10493) /* _createForOfIteratorHelperLoose */;
+  let obj2 = require(10953) /* formatWithOrWithoutMarkdown */;
   const questBarTitle = obj2.useQuestBarTitle(quest);
-  let obj3 = require(10926) /* formatWithOrWithoutMarkdown */;
+  let obj3 = require(10953) /* formatWithOrWithoutMarkdown */;
   obj = { quest, isExpanded: false, activeScreen: callback(obj1.useTaskPlatformScreen(quest, questTaskDetails), 1)[0], sourceQuestContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE };
   obj = { style: tmp.wrapper };
   obj1 = { style: tmp.progressIndicatorWrapper };
   const questBarSubtitle = obj3.useQuestBarSubtitle(obj);
   obj2 = { quest, size: "x-sm", progress: questTaskDetails.percentComplete, loading: false, hasConfetti: true };
-  obj1.children = callback2(importDefault(14027), obj2);
+  obj1.children = callback2(importDefault(14077), obj2);
   const items = [callback2(View, obj1), ];
   obj3 = { style: tmp.copy };
   const obj4 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: questBarTitle };

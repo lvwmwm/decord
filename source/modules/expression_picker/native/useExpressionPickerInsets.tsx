@@ -1,10 +1,10 @@
-// Module ID: 9572
-// Function ID: 74558
+// Module ID: 9608
+// Function ID: 74769
 // Name: useExpressionPickerInsets
 // Dependencies: [31, 653, 1557, 5160, 689, 2]
 // Exports: default
 
-// Module 9572 (useExpressionPickerInsets)
+// Module 9608 (useExpressionPickerInsets)
 import result from "result";
 import { EXPRESSION_FOOTER_HEIGHT } from "ME";
 

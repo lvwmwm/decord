@@ -1,5 +1,5 @@
 // Module ID: 1166
-// Function ID: 13266
+// Function ID: 13267
 // Name: INTEGRATION_NAME
 // Dependencies: [77, 1136, 1142, 794, 1134, 1137, 1098]
 // Exports: reactNativeNavigationIntegration

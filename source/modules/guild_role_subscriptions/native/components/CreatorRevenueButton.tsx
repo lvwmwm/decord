@@ -1,10 +1,10 @@
-// Module ID: 9354
-// Function ID: 73053
+// Module ID: 9390
+// Function ID: 73262
 // Name: CreatorRevenueButton
-// Dependencies: [31, 33, 4130, 9355, 2]
+// Dependencies: [31, 33, 4130, 9391, 2]
 // Exports: CreatorRevenueButton
 
-// Module 9354 (CreatorRevenueButton)
+// Module 9390 (CreatorRevenueButton)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -21,5 +21,5 @@ export const CreatorRevenueButton = function CreatorRevenueButton(arg0) {
   ({ disabled, text, onPress, style, loading } = arg0);
   style = [callback().container, ];
   style[1] = style;
-  return jsx(importDefault(9355), { style, loading, disabled, onPress, text });
+  return jsx(importDefault(9391), { style, loading, disabled, onPress, text });
 };

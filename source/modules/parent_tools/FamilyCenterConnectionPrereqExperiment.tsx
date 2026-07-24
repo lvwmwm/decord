@@ -1,9 +1,9 @@
-// Module ID: 11072
-// Function ID: 86148
+// Module ID: 11099
+// Function ID: 86337
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 11072 (apexExperiment)
+// Module 11099 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-family-center-connection-prereq", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

@@ -1,10 +1,10 @@
-// Module ID: 13680
-// Function ID: 105023
+// Module ID: 13731
+// Function ID: 105347
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1341, 5797, 1849, 653, 33, 4130, 689, 9230, 9232, 22, 675, 7375, 9234, 13681, 4126, 1212, 4541, 7512, 4543, 3842, 6653, 566, 44, 1456, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1341, 5797, 1849, 653, 33, 4130, 689, 9266, 9268, 22, 675, 7375, 9270, 13732, 4126, 1212, 4541, 7574, 4543, 3842, 6653, 566, 44, 1456, 2]
 // Exports: default
 
-// Module 13680 (_isNativeReflectConstruct)
+// Module 13731 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import showInvalidUsernameToast from "showInvalidUsernameToast";

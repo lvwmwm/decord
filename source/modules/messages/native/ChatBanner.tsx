@@ -1,10 +1,10 @@
-// Module ID: 10434
-// Function ID: 80361
+// Module ID: 10463
+// Function ID: 80553
 // Name: OptInChannelBanner
-// Dependencies: [31, 27, 4808, 4142, 10435, 653, 33, 4130, 689, 10436, 10437, 566, 21, 1324, 675, 4324, 5072, 4126, 1212, 4543, 5650, 7007, 4660, 5069, 7660, 2]
+// Dependencies: [31, 27, 4808, 4142, 10464, 653, 33, 4130, 689, 10465, 10466, 566, 21, 1324, 675, 4324, 5072, 4126, 1212, 4543, 5650, 7006, 4660, 5069, 7749, 2]
 // Exports: default
 
-// Module 10434 (OptInChannelBanner)
+// Module 10463 (OptInChannelBanner)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -226,7 +226,7 @@ function NewMessagesChatBar(channel) {
       };
       num2 = callback;
       const obj3 = { size: "sm", color: importDefault(689).colors.WHITE };
-      obj2.children = callback(channel(7660).XSmallBoldIcon, obj3);
+      obj2.children = callback(channel(7749).XSmallBoldIcon, obj3);
       items1[1] = callback(channel(4660).PressableOpacity, obj2);
       t.children = items1;
       callback2(closure_4, t);
@@ -262,7 +262,7 @@ export default function ChatBanner(channel) {
   let oldestUnreadTimestamp;
   let unreadCount;
   channel = channel.channel;
-  let obj = importDefault(10437)();
+  let obj = importDefault(10466)();
   let obj1 = channel(566);
   const items = [closure_6];
   const items1 = [channel.id];

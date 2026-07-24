@@ -1,5 +1,5 @@
 // Module ID: 949
-// Function ID: 10282
+// Function ID: 10283
 // Name: extractModel
 // Dependencies: [5, 65, 77, 934, 950, 936, 816, 951, 937, 842, 952, 817, 845, 843, 825]
 // Exports: instrumentGoogleGenAIClient

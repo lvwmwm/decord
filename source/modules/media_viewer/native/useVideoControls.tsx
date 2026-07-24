@@ -1,10 +1,10 @@
-// Module ID: 8282
-// Function ID: 65374
+// Module ID: 8326
+// Function ID: 65602
 // Name: useVideoControls
-// Dependencies: [57, 31, 4122, 33, 621, 682, 8283, 4130, 566, 8275, 8284, 8276, 8285, 2]
+// Dependencies: [57, 31, 4122, 33, 621, 682, 8327, 4130, 566, 8319, 8328, 8320, 8329, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8282 (useVideoControls)
+// Module 8326 (useVideoControls)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

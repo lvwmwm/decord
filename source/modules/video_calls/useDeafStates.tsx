@@ -1,10 +1,10 @@
-// Module ID: 10748
-// Function ID: 83524
+// Module ID: 10777
+// Function ID: 83716
 // Name: getDeafStates
 // Dependencies: [1194, 4177, 4146, 566, 2]
 // Exports: default
 
-// Module 10748 (getDeafStates)
+// Module 10777 (getDeafStates)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

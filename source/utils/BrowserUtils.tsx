@@ -1,5 +1,5 @@
 // Module ID: 4449
-// Function ID: 38956
+// Function ID: 38957
 // Name: getChromeVersion
 // Dependencies: [4450, 2]
 // Exports: canUseWebp, isFirefox, supportsHEVCAlpha

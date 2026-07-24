@@ -1,10 +1,10 @@
-// Module ID: 8426
-// Function ID: 67156
+// Module ID: 8470
+// Function ID: 67384
 // Name: BottomSheetTextInput
-// Dependencies: [31, 33, 5785, 5783, 8427, 2]
+// Dependencies: [31, 33, 5785, 5783, 8471, 2]
 // Exports: BottomSheetTextInput
 
-// Module 8426 (BottomSheetTextInput)
+// Module 8470 (BottomSheetTextInput)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -39,7 +39,7 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
   };
   const obj2 = ref(5783);
   const merged1 = Object.assign(merged);
-  return jsx(ref(8427), {
+  return jsx(ref(8471), {
     ref(current) {
       ref.current = current;
       if ("function" === typeof ref) {

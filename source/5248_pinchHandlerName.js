@@ -1,5 +1,5 @@
 // Module ID: 5248
-// Function ID: 45287
+// Function ID: 45292
 // Name: pinchHandlerName
 // Dependencies: [5236, 5234]
 

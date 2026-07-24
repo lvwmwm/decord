@@ -1,10 +1,10 @@
-// Module ID: 11971
-// Function ID: 92495
+// Module ID: 11997
+// Function ID: 92731
 // Name: ModeratorActionRow
-// Dependencies: [31, 4954, 1348, 1907, 1917, 1838, 3758, 4146, 653, 3746, 33, 4130, 1324, 5165, 5511, 4126, 8266, 4098, 9066, 566, 5650, 10980, 1356, 8174, 4320, 4314, 4312, 3763, 1212, 10659, 7482, 10661, 7495, 4658, 10375, 1934, 5048, 5791, 4337, 10981, 1360, 9959, 3747, 10998, 10984, 8874, 10735, 8870, 11563, 9134, 4072, 11000, 9027, 11002, 11972, 11653, 7007, 5503, 2]
+// Dependencies: [31, 4954, 1348, 1907, 1917, 1838, 3758, 4146, 653, 3746, 33, 4130, 1324, 5165, 5509, 4126, 8310, 4098, 9105, 566, 5650, 11007, 1356, 8218, 4320, 4314, 4312, 3763, 1212, 10688, 7562, 10690, 7636, 4658, 10404, 1934, 5048, 5791, 4337, 11008, 1360, 9991, 3747, 11025, 11011, 8913, 10764, 8909, 11590, 9170, 4072, 11027, 9066, 11029, 11998, 11680, 7006, 5501, 2]
 // Exports: default
 
-// Module 11971 (ModeratorActionRow)
+// Module 11997 (ModeratorActionRow)
 import "MicrophoneArrowRightIcon";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -64,7 +64,7 @@ function ModeratorActionRow(arg0) {
     obj.disabled = disabled;
     obj.isDestructive = isDestructive;
     obj.onPress = onPress;
-    return jsx(require(5511) /* Divider */.UserProfileFormRow, { label });
+    return jsx(require(5509) /* Divider */.UserProfileFormRow, { label });
   }
 }
 ({ GuildFeatures: closure_12, Permissions: closure_13 } = ME);

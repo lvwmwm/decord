@@ -1,10 +1,10 @@
-// Module ID: 10106
-// Function ID: 78249
+// Module ID: 10138
+// Function ID: 78443
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1316, 1849, 566, 7616, 10107, 2]
+// Dependencies: [1316, 1849, 566, 7705, 10139, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10106 (useSafetyAlertsSettingOrDefault)
+// Module 10138 (useSafetyAlertsSettingOrDefault)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 
@@ -25,9 +25,9 @@ export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOr
     return null == value || value;
   });
   const obj2 = require(566) /* initialize */;
-  let userIsTeen = require(7616) /* useUserIsTeen */.useUserIsTeen();
-  const obj3 = require(7616) /* useUserIsTeen */;
-  const tmp3 = !userIsTeen || !require(10107) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });
+  let userIsTeen = require(7705) /* useUserIsTeen */.useUserIsTeen();
+  const obj3 = require(7705) /* useUserIsTeen */;
+  const tmp3 = !userIsTeen || !require(10139) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });
   let tmp4 = !tmp3;
   if (tmp3) {
     if (!userIsTeen) {

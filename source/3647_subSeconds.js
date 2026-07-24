@@ -1,5 +1,5 @@
 // Module ID: 3647
-// Function ID: 27941
+// Function ID: 27942
 // Name: subSeconds
 // Dependencies: [3213, 3376, 3210]
 // Exports: default

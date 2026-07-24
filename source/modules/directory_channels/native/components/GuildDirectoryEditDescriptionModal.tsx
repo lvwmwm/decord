@@ -1,10 +1,10 @@
-// Module ID: 10045
-// Function ID: 77605
+// Module ID: 10077
+// Function ID: 77799
 // Name: GuildDirectoryEditDescription
-// Dependencies: [5, 31, 27, 33, 4130, 5084, 10046, 10044, 5121, 4126, 1212, 10047, 5087, 5519, 2]
+// Dependencies: [5, 31, 27, 33, 4130, 5084, 10078, 10076, 5121, 4126, 1212, 10079, 5087, 5517, 2]
 // Exports: default
 
-// Module 10045 (GuildDirectoryEditDescription)
+// Module 10077 (GuildDirectoryEditDescription)
 import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -41,7 +41,7 @@ function GuildDirectoryEditDescription(entry) {
   obj3.buttonLabel = intl2.string(entry(1212).t["R3BPH+"]);
   obj3.entry = entry;
   obj3.directoryChannelId = entry.channelId;
-  items[1] = callback(_onSubmit(10047), obj3);
+  items[1] = callback(_onSubmit(10079), obj3);
   obj.children = items;
   obj.children = callback2(closure_6, obj);
   return callback(entry(5121).SafeAreaPaddingView, obj);
@@ -51,7 +51,7 @@ function getScreens(arg0) {
   let obj = {};
   obj = {
     fullscreen: true,
-    headerLeft: _require(5087).getHeaderCloseButton(importDefault(10044).close),
+    headerLeft: _require(5087).getHeaderCloseButton(importDefault(10076).close),
     headerTitle() {
       return null;
     },
@@ -77,5 +77,5 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/d
 
 export default function GuildDirectoryEditDescriptionModal(arg0) {
   const obj = { screens: getScreens(arg0), initialRouteName: EDIT_DESCRIPTION };
-  return callback(require(5519) /* NavigationStack */.Navigator, obj);
+  return callback(require(5517) /* NavigationStack */.Navigator, obj);
 };

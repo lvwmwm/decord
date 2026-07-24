@@ -1,9 +1,9 @@
-// Module ID: 15858
-// Function ID: 122559
+// Module ID: 15905
+// Function ID: 122881
 // Name: VoicePanelVisualEffectView
-// Dependencies: [31, 27, 33, 4130, 689, 3834, 1324, 8372, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 3834, 1324, 8416, 2]
 
-// Module 15858 (VoicePanelVisualEffectView)
+// Module 15905 (VoicePanelVisualEffectView)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -35,7 +35,7 @@ const memoResult = require("result").memo(function VoicePanelVisualEffectViewInn
     tmp5 = token;
   }
   obj.android_fallbackColor = tmp5;
-  const tmp4Result = callback(require(8372) /* TwinButtons */.BackgroundBlurFill, obj);
+  const tmp4Result = callback(require(8416) /* TwinButtons */.BackgroundBlurFill, obj);
   let tmp7 = tmp4Result;
   if (tmp3) {
     obj = { style: tmp2.wrapper };

@@ -1,10 +1,10 @@
-// Module ID: 7888
-// Function ID: 62787
+// Module ID: 7975
+// Function ID: 63098
 // Name: maybeFetchUserProfile
-// Dependencies: [1348, 1917, 6856, 6773, 7812, 4939, 686, 7889, 7890, 2]
+// Dependencies: [1348, 1917, 6855, 6773, 7903, 4939, 686, 7976, 7977, 2]
 // Exports: default
 
-// Module 7888 (maybeFetchUserProfile)
+// Module 7975 (maybeFetchUserProfile)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -133,8 +133,8 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       const obj3 = _require(6773);
     }
     if (null != closure_0) {
-      _require(7812).maybeFetchColors(closure_0);
-      const obj4 = _require(7812);
+      _require(7903).maybeFetchColors(closure_0);
+      const obj4 = _require(7903);
     }
     obj = { type, withMutualGuilds, withMutualFriends: flag2, withMutualFriendsCount: flag, guildId, joinRequestId: tmp2, abortSignal: tmp3 };
     id = undefined;
@@ -154,7 +154,7 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       });
       return Promise.resolve();
     } else {
-      const profile = _require(7889).fetchProfile(id, obj, obj(7890));
+      const profile = _require(7976).fetchProfile(id, obj, obj(7977));
       let resolved = profile;
       if (tmp20) {
         resolved = profile;

@@ -1,10 +1,10 @@
-// Module ID: 11054
-// Function ID: 86025
+// Module ID: 11081
+// Function ID: 86214
 // Name: AppealIngestionSpam
-// Dependencies: [31, 27, 33, 4130, 11041, 5121, 1273, 2]
+// Dependencies: [31, 27, 33, 4130, 11068, 5121, 1273, 2]
 // Exports: default
 
-// Module 11054 (AppealIngestionSpam)
+// Module 11081 (AppealIngestionSpam)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,5 +21,5 @@ export default function AppealIngestionSpam() {
   obj = { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - SPAM" }) };
   obj.children = jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - SPAM" }) });
   obj.children = <View bottom style={tmp.container}>{jsx(require(1273) /* Button */.LegacyText, { children: "TODO - SPAM" })}</View>;
-  return jsx(require(11041) /* getHeader */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - SPAM" }) });
+  return jsx(require(11068) /* getHeader */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: jsx(require(1273) /* Button */.LegacyText, { children: "TODO - SPAM" }) });
 };

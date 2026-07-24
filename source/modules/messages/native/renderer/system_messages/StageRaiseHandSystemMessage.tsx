@@ -1,10 +1,10 @@
-// Module ID: 7716
-// Function ID: 61455
+// Module ID: 7805
+// Function ID: 61741
 // Name: createRequestToSpeakEphemeralIndication
-// Dependencies: [4951, 1348, 3758, 653, 1212, 1920, 7649, 21, 4314, 7651, 7652, 2]
+// Dependencies: [4951, 1348, 3758, 653, 1212, 1920, 7738, 21, 4314, 7740, 7741, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7716 (createRequestToSpeakEphemeralIndication)
+// Module 7805 (createRequestToSpeakEphemeralIndication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -36,7 +36,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export const createStageRaiseHandSystemMessage = function createStageRaiseHandSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7649) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7738) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const canResult = closure_5.can(constants4.MUTE_MEMBERS, channel.getChannel(message.channel_id));
   participant = participant.getParticipant(message.channel_id, message.author.id);
@@ -68,12 +68,12 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
   }
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7651)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7740)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.M87x7Y, obj);
   obj.showInviteToSpeakButton = tmp7;
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.buttonLabel = intl2.string(require(1212) /* getSystemLocale */.t.f0T7hI);
   obj.ephemeralIndication = createRequestToSpeakEphemeralIndication(message);
-  const merged = Object.assign(importDefault(7652)(roleStyle));
+  const merged = Object.assign(importDefault(7741)(roleStyle));
   return obj;
 };

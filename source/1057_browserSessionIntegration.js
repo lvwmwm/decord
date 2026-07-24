@@ -1,5 +1,5 @@
 // Module ID: 1057
-// Function ID: 11313
+// Function ID: 11314
 // Name: browserSessionIntegration
 // Dependencies: [794, 1004, 1048, 1009]
 

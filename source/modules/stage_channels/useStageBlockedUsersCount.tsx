@@ -1,10 +1,10 @@
-// Module ID: 7587
-// Function ID: 60645
+// Module ID: 7676
+// Function ID: 60931
 // Name: useStageBlockedUsersCount
 // Dependencies: [4951, 566, 4957, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 7587 (useStageBlockedUsersCount)
+// Module 7676 (useStageBlockedUsersCount)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

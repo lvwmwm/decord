@@ -1,5 +1,5 @@
 // Module ID: 5138
-// Function ID: 44557
+// Function ID: 44562
 // Name: normalizeLocale
 // Dependencies: [5, 57, 6, 7, 1921, 3, 3741, 5139, 5140, 5141, 22, 1835, 1327, 2]
 // Exports: install

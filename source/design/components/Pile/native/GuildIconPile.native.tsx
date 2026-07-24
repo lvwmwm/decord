@@ -1,10 +1,10 @@
-// Module ID: 11651
-// Function ID: 90414
+// Module ID: 11678
+// Function ID: 90652
 // Name: GuildIconPile
-// Dependencies: [31, 33, 5515, 9909, 11652, 7873, 9910, 2]
+// Dependencies: [31, 33, 5513, 9941, 11679, 7961, 9942, 2]
 // Exports: GuildIconPile
 
-// Module 11651 (GuildIconPile)
+// Module 11678 (GuildIconPile)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -23,8 +23,8 @@ export const GuildIconPile = function GuildIconPile(arg0) {
   const Children = React.Children;
   ({ size, names } = arg0);
   const countResult = Children.count(children);
-  const tmp2 = require(5515) /* makeSizeStyle */.ImageSizes[size];
-  let obj = { "aria-label": require(11652) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7873) /* SolidCutout */.CutoutShape.RoundedRect, size: tmp2 };
+  const tmp2 = require(5513) /* makeSizeStyle */.ImageSizes[size];
+  let obj = { "aria-label": require(11679) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount), shape: require(7961) /* SolidCutout */.CutoutShape.RoundedRect, size: tmp2 };
   let num = 3;
   if (tmp2 <= 40) {
     num = 2;
@@ -35,9 +35,9 @@ export const GuildIconPile = function GuildIconPile(arg0) {
   let tmp4 = null != totalCount && countResult < totalCount;
   if (tmp4) {
     obj = { size: tmp2, borderRadius: tmp2 / 3, value: totalCount - countResult };
-    tmp4 = callback(require(9910) /* map */.PileOverflow, obj);
+    tmp4 = callback(require(9942) /* map */.PileOverflow, obj);
   }
   items[1] = tmp4;
   obj.children = items;
-  return closure_4(require(9909) /* Pile */.Pile, obj);
+  return closure_4(require(9941) /* Pile */.Pile, obj);
 };

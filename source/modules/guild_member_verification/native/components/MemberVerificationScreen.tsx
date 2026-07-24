@@ -1,9 +1,9 @@
-// Module ID: 15430
-// Function ID: 118629
+// Module ID: 15477
+// Function ID: 118951
 // Name: Loading
-// Dependencies: [31, 27, 1907, 1838, 3948, 653, 33, 4130, 689, 5586, 9147, 566, 5450, 3950, 9152, 1198, 3981, 1557, 5587, 15431, 2]
+// Dependencies: [31, 27, 1907, 1838, 3948, 653, 33, 4130, 689, 5584, 9183, 566, 5450, 3950, 9188, 1198, 3981, 1557, 5585, 15478, 2]
 
-// Module 15430 (Loading)
+// Module 15477 (Loading)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -16,11 +16,11 @@ import makeAuthenticated from "makeAuthenticated";
 
 const require = arg1;
 function Loading() {
-  return <View style={_createForOfIteratorHelperLoose().flexLoading}>{jsx(require(5586) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
+  return <View style={_createForOfIteratorHelperLoose().flexLoading}>{jsx(require(5584) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(9147), {});
+  return jsx(importDefault(9183), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;
@@ -153,9 +153,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     obj.style = items1;
     const obj1 = { guildId, onClose: callback };
     obj.children = <MemberVerificationRouteView guildId={guildId} onClose={callback} />;
-    obj.children = jsx(importDefault(5587), { marginLeft: tmp4, marginRight: tmp5 });
+    obj.children = jsx(importDefault(5585), { marginLeft: tmp4, marginRight: tmp5 });
     tmp8 = <ExistingJoinRequestHandler marginLeft={tmp4} marginRight={tmp5} />;
-    const tmp14 = importDefault(5587);
+    const tmp14 = importDefault(5585);
   }
   return tmp8;
 });

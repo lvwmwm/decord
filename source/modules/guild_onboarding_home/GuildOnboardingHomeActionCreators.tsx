@@ -1,10 +1,10 @@
-// Module ID: 11383
-// Function ID: 88472
+// Module ID: 11412
+// Function ID: 88712
 // Name: _fetchGuildHomeSettings
-// Dependencies: [5, 1909, 1348, 4333, 4334, 653, 686, 507, 11384, 675, 4138, 21, 2]
+// Dependencies: [5, 1909, 1348, 4333, 4334, 653, 686, 507, 11413, 675, 4138, 21, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 11383 (_fetchGuildHomeSettings)
+// Module 11412 (_fetchGuildHomeSettings)
 import closure_3 from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

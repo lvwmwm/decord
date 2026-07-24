@@ -1,10 +1,10 @@
-// Module ID: 9190
-// Function ID: 71972
+// Module ID: 9226
+// Function ID: 72181
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 57, 31, 27, 1849, 33, 4130, 1456, 566, 9191, 668, 4030, 3831, 1212, 9192, 4126, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 33, 4130, 1456, 566, 9227, 668, 4030, 3831, 1212, 9228, 4126, 4543, 2]
 // Exports: default
 
-// Module 9190 (ConfirmEmailChangeStart)
+// Module 9226 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -43,7 +43,7 @@ export default function ConfirmEmailChangeStart() {
     obj = { oldEmail: stateFromStores.email };
     obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
     obj1 = { style: tmp.container };
-    const obj2 = { style: tmp.image, source: navigation(9192) };
+    const obj2 = { style: tmp.image, source: navigation(9228) };
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
     const intl2 = require(1212) /* getSystemLocale */.intl;

@@ -1,5 +1,5 @@
 // Module ID: 4096
-// Function ID: 33917
+// Function ID: 33918
 // Name: removeInAppBrowserCloseSubscription
 // Dependencies: [27, 621, 477, 4097, 668, 3827, 1327, 2]
 // Exports: browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen

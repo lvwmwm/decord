@@ -1,9 +1,9 @@
-// Module ID: 10796
-// Function ID: 83817
+// Module ID: 10825
+// Function ID: 84009
 // Name: RaisedHandIcon
-// Dependencies: [31, 27, 1917, 33, 4130, 689, 4314, 1273, 7583, 1450, 566, 4957, 4319, 5217, 1212, 7477, 10778, 3976, 10797, 2]
+// Dependencies: [31, 27, 1917, 33, 4130, 689, 4314, 1273, 7672, 1450, 566, 4957, 4319, 5217, 1212, 7557, 10807, 3976, 10826, 2]
 
-// Module 10796 (RaisedHandIcon)
+// Module 10825 (RaisedHandIcon)
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ function RaisedHandIcon(rtsState) {
   }
   items[1] = activeBackground;
   obj.style = items;
-  obj = { style: tmp.raisedHand, source: importDefault(7583), color: activeBackground ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_800 };
+  obj = { style: tmp.raisedHand, source: importDefault(7672), color: activeBackground ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_800 };
   obj.children = callback(require(1273) /* Button */.Icon, obj);
   return callback(View, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 8263
-// Function ID: 65169
+// Module ID: 8307
+// Function ID: 65397
 // Name: OpenableUserProfileAvatar
-// Dependencies: [31, 27, 8264, 5512, 33, 8238, 7880, 8266, 8273, 1212, 2]
+// Dependencies: [31, 27, 8308, 5510, 33, 8282, 7967, 8310, 8317, 1212, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8263 (OpenableUserProfileAvatar)
+// Module 8307 (OpenableUserProfileAvatar)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -25,7 +25,7 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   obj.backgroundColor = 0;
   obj.size = 0;
   const merged = Object.assign(backgroundColor, obj);
-  const tmp3 = importDefault(8238)();
+  const tmp3 = importDefault(8282)();
   obj = {};
   const items = [, , ];
   ({ avatarBackground: arr[0], avatarPosition: arr[1] } = tmp3);
@@ -36,7 +36,7 @@ const forwardRefResult = importAllResult.forwardRef((backgroundColor, ref) => {
   ({ avatar: arr3[0], avatarPosition: arr3[1] } = tmp3);
   obj.size = size;
   const merged1 = Object.assign(merged);
-  items1[1] = callback(importDefault(7880), obj);
+  items1[1] = callback(importDefault(7967), obj);
   obj.children = items1;
   return callback2(closure_8, obj);
 });
@@ -57,20 +57,30 @@ export const OpenableUserProfileAvatar = function OpenableUserProfileAvatar(anim
   let trackUserProfileAction;
   ref = ref.useRef(null);
   trackUserProfileAction = flag(guildId[7]).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const tmp4 = null != user.avatar || user.hasAvatarForGuild(guildId);
   const items = [flag, guildId, trackUserProfileAction, user];
   obj = { ref };
   const callback = ref.useCallback(() => {
     let obj = { action: outer1_5.VIEW_AVATAR };
     trackUserProfileAction(obj);
-    obj = { user, guildId, animate: flag, originViewOrOriginLayout: ref.current, description: user.username };
+    obj = { user, guildId, animate: flag, originViewOrOriginLayout: ref.current };
     user(guildId[8])(obj);
   }, items);
   const merged1 = Object.assign(merged);
   obj["animate"] = flag;
   obj["user"] = user;
   obj["guildId"] = guildId;
-  obj["onPress"] = callback;
-  const intl = flag(guildId[9]).intl;
-  obj["accessibilityLabel"] = intl.string(flag(guildId[9]).t.xB7MI3);
-  return callback(closure_10, obj);
+  let tmp9;
+  if (tmp4) {
+    tmp9 = callback;
+  }
+  obj["onPress"] = tmp9;
+  if (tmp4) {
+    const intl = flag(guildId[9]).intl;
+    let accessibilityLabel = intl.string(flag(guildId[9]).t.xB7MI3);
+  } else {
+    accessibilityLabel = merged.accessibilityLabel;
+  }
+  obj["accessibilityLabel"] = accessibilityLabel;
+  return closure_7(closure_10, obj);
 };

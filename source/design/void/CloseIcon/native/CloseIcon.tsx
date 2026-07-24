@@ -1,10 +1,10 @@
-// Module ID: 13001
-// Function ID: 100558
+// Module ID: 13053
+// Function ID: 100881
 // Name: Close
-// Dependencies: [31, 33, 8018, 2]
+// Dependencies: [31, 33, 8063, 2]
 // Exports: default
 
-// Module 13001 (Close)
+// Module 13053 (Close)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -33,6 +33,6 @@ export default function Close(width) {
   obj["height"] = num2;
   obj["viewBox"] = "0 0 24 24";
   obj = { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" };
-  obj["children"] = jsx(require(8018) /* inlineStyles */.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
-  return jsx(require(8018) /* inlineStyles */.Svg, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
+  obj["children"] = jsx(require(8063) /* inlineStyles */.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
+  return jsx(require(8063) /* inlineStyles */.Svg, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
 };

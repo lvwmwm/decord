@@ -1,10 +1,10 @@
-// Module ID: 9087
-// Function ID: 71223
+// Module ID: 9125
+// Function ID: 71435
 // Name: ActivityEmoji
-// Dependencies: [31, 33, 4130, 3803, 1392, 8007, 5151, 2]
+// Dependencies: [31, 33, 4130, 3803, 1392, 7437, 5151, 2]
 // Exports: default
 
-// Module 9087 (ActivityEmoji)
+// Module 9125 (ActivityEmoji)
 import result from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -67,7 +67,7 @@ export default function ActivityEmoji(emoji) {
     let obj = { style };
     style = "sm";
     obj.size = "sm";
-    jsx(emoji(8007).ReactionIcon, { style });
+    jsx(emoji(7437).ReactionIcon, { style });
   } else {
     obj = { src: memo, name: emoji.name };
     const items1 = [style, ];

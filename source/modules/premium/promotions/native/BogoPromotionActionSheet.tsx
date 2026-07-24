@@ -1,10 +1,10 @@
-// Module ID: 15613
-// Function ID: 120423
+// Module ID: 15660
+// Function ID: 120745
 // Name: BogoPromotionActionSheet
-// Dependencies: [31, 27, 1851, 653, 1345, 33, 4130, 689, 5464, 6661, 5187, 5085, 4126, 1212, 5459, 1920, 8560, 2]
+// Dependencies: [31, 27, 1851, 653, 1345, 33, 4130, 689, 5462, 6661, 5187, 5085, 4126, 1212, 1920, 8605, 2]
 // Exports: default
 
-// Module 15613 (BogoPromotionActionSheet)
+// Module 15660 (BogoPromotionActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -38,7 +38,7 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/premium/p
 export default function BogoPromotionActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = _createForOfIteratorHelperLoose();
-  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5462)().analyticsLocations;
   const items = [analyticsLocations, markAsDismissed];
   const items1 = [markAsDismissed];
   const callback = React.useCallback(() => {
@@ -67,7 +67,7 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   const intl2 = markAsDismissed(1212).intl;
   const obj3 = { helpCenterLink: analyticsLocations(1920).getArticleURL(SUMMER_BOGO_2025.SUMMER_BOGO_2025) };
   obj2.children = intl2.format(markAsDismissed(1212).t.y7lJK6, obj3);
-  items3[2] = callback(markAsDismissed(5459).TextWithIOSLinkWorkaround, obj2);
+  items3[2] = callback(markAsDismissed(4126).Text, obj2);
   const obj4 = { style: items6 };
   items6 = [tmp.buttonContainer];
   const obj5 = {};
@@ -75,7 +75,7 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   const intl3 = markAsDismissed(1212).intl;
   obj5.text = intl3.string(markAsDismissed(1212).t.J61px0);
   obj5.onPress = callback;
-  obj4.children = callback(analyticsLocations(8560), obj5);
+  obj4.children = callback(analyticsLocations(8605), obj5);
   items3[3] = callback(View, obj4);
   obj.children = items3;
   obj.children = callback2(View, obj);

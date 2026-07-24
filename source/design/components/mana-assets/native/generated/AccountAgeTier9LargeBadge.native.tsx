@@ -1,5 +1,5 @@
 // Module ID: 5844
-// Function ID: 49720
+// Function ID: 49731
 // Name: AccountAgeTier9LargeBadge
 // Dependencies: [33, 5085, 5845, 2]
 // Exports: AccountAgeTier9LargeBadge

@@ -1,10 +1,10 @@
-// Module ID: 11311
-// Function ID: 87992
+// Module ID: 11340
+// Function ID: 88232
 // Name: ChannelIcon
-// Dependencies: [57, 31, 1838, 33, 4130, 689, 4638, 4593, 11302, 4974, 4098, 11289, 11290, 4320, 5165, 4126, 2]
+// Dependencies: [57, 31, 1838, 33, 4130, 689, 4638, 4593, 11331, 4974, 4098, 11318, 11319, 4320, 5165, 4126, 2]
 // Exports: default
 
-// Module 11311 (ChannelIcon)
+// Module 11340 (ChannelIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_5 from "_createForOfIteratorHelperLoose";

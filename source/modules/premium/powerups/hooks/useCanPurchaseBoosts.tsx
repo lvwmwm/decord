@@ -1,10 +1,10 @@
-// Module ID: 11537
-// Function ID: 89865
+// Module ID: 11567
+// Function ID: 90110
 // Name: useCanPurchaseBoosts
 // Dependencies: [1849, 1851, 6636, 566, 2]
 // Exports: default
 
-// Module 11537 (useCanPurchaseBoosts)
+// Module 11567 (useCanPurchaseBoosts)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { FractionalPremiumStates } from "GuildFeatures";
 

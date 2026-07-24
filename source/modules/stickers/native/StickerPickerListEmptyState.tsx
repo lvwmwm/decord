@@ -1,8 +1,8 @@
-// Module ID: 9633
-// Function ID: 75023
-// Dependencies: [31, 27, 653, 33, 4130, 689, 5189, 1273, 1212, 9634, 2]
+// Module ID: 9669
+// Function ID: 75234
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5189, 1273, 1212, 9670, 2]
 
-// Module 9633
+// Module 9669
 import importAllResult from "result";
 import { ScrollView } from "get ActivityIndicator";
 import { EXPRESSION_FOOTER_HEIGHT } from "ME";
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo(function StickerPickerListEmptyState(ins
   const intl = insetTop(1212).intl;
   obj.body = intl.string(insetTop(1212).t.jyiGfc);
   ({ emptyStateBody: obj2.bodyStyle, emptyStateContainer: obj2.containerStyle, emptyStateImage: obj2.imageStyle } = callback());
-  obj.source = insetBottom(9634);
+  obj.source = insetBottom(9670);
   obj.titleStyle = { marginBottom: 0 };
   obj.children = jsx(insetTop(1273).RefreshEmptyState, {});
   return <BottomSheetScrollView />;

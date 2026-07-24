@@ -1,10 +1,10 @@
-// Module ID: 9182
-// Function ID: 71912
+// Module ID: 9218
+// Function ID: 72121
 // Name: closeModal
-// Dependencies: [57, 31, 1849, 9183, 653, 33, 9181, 480, 5087, 9184, 9187, 9188, 9190, 9193, 9228, 9233, 9235, 566, 5450, 5519, 1212, 2]
+// Dependencies: [57, 31, 1849, 9219, 653, 33, 9217, 480, 5087, 9220, 9223, 9224, 9226, 9229, 9264, 9269, 9271, 566, 5450, 5517, 1212, 2]
 // Exports: default
 
-// Module 9182 (closeModal)
+// Module 9218 (closeModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -15,7 +15,7 @@ import { jsx } from "jsxProd";
 const require = arg1;
 function closeModal() {
   resetChangeEmailStore();
-  importDefault(9181).close();
+  importDefault(9217).close();
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
 

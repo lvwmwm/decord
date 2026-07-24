@@ -1,5 +1,5 @@
 // Module ID: 5230
-// Function ID: 45207
+// Function ID: 45212
 // Name: gestureHandlerRootHOC
 // Dependencies: [31, 27, 33, 5231, 3964]
 // Exports: default

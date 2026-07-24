@@ -1,10 +1,10 @@
-// Module ID: 15553
-// Function ID: 119971
+// Module ID: 15600
+// Function ID: 120293
 // Name: ContextMenuCommandItem
-// Dependencies: [31, 27, 33, 4130, 689, 5165, 22, 1212, 11337, 5085, 1881, 4076, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5165, 22, 1212, 11366, 5085, 1881, 4076, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 15553 (ContextMenuCommandItem)
+// Module 15600 (ContextMenuCommandItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -46,7 +46,7 @@ export default function ContextMenuCommandItem(item) {
     obj.commandName = item.displayName;
     return intl.formatToPlainString(item(outer1_2[7]).t.Pk4Mz3, obj);
   }, items);
-  let obj = item(11337);
+  let obj = item(11366);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { accessibilityLabel: memo, onPress, label: item.displayName };
   let tmp7 = null != applicationCommandsIconSource;
@@ -99,7 +99,7 @@ export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(sect
   let start;
   section = section.section;
   ({ onPress, start, end } = section);
-  let obj = require(11337) /* getApplicationCommandsIconSource */;
+  let obj = require(11366) /* getApplicationCommandsIconSource */;
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { onPress, label: section.name };
   let tmp4 = null != applicationCommandsIconSource;

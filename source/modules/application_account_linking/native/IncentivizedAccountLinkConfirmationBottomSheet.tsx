@@ -1,10 +1,10 @@
-// Module ID: 15626
-// Function ID: 120530
+// Module ID: 15673
+// Function ID: 120852
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [31, 27, 4122, 653, 33, 566, 14497, 477, 7876, 14498, 5085, 4543, 1212, 10157, 689, 4098, 3827, 1920, 11548, 2844, 2]
+// Dependencies: [31, 27, 4122, 653, 33, 566, 14547, 477, 7964, 14548, 5085, 4543, 1212, 10189, 689, 4098, 3827, 1920, 7515, 2844, 2]
 // Exports: default
 
-// Module 15626 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 15673 (IncentivizedAccountLinkConfirmationBottomSheet)
 import "result";
 import { Image } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,23 +19,23 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   const items = [_isNativeReflectConstruct];
   if (obj.useStateFromStores(items, () => outer1_4.useReducedMotion)) {
     obj = {};
-    obj = { uri: importDefault(14497) };
+    obj = { uri: importDefault(14547) };
     obj.source = obj;
     obj.style = { width: 150, height: 150 };
-    let tmp3Result = <Image uri={importDefault(14497)} />;
+    let tmp3Result = <Image uri={importDefault(14547)} />;
   } else {
     let obj1 = require(477) /* set */;
     if (obj1.isAndroid()) {
       obj1 = {};
-      let tmp4Result = tmp4(7876);
-      obj1.url = tmp4(14498);
+      let tmp4Result = tmp4(7964);
+      obj1.url = tmp4(14548);
       obj1.style = { width: 150, height: 150 };
       tmp3Result = tmp3(tmp4Result, obj1);
     } else {
       let obj2 = {};
       const obj3 = {};
       tmp4Result = tmp4(5085);
-      obj3.uri = tmp4(14498);
+      obj3.uri = tmp4(14548);
       obj2.source = obj3;
       obj2.resizeMode = "contain";
       obj2.style = { width: 150, height: 150 };
@@ -46,7 +46,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj4.text = intl.string(require(1212) /* getSystemLocale */.t.aRIFWD);
   const obj5 = { size: "sm", color: importDefault(689).colors.WHITE };
-  obj4.icon = jsx(require(10157) /* WindowLaunchIcon */.WindowLaunchIcon, { size: "sm", color: importDefault(689).colors.WHITE });
+  obj4.icon = jsx(require(10189) /* WindowLaunchIcon */.WindowLaunchIcon, { size: "sm", color: importDefault(689).colors.WHITE });
   obj4.iconPosition = "end";
   obj4.size = "lg";
   obj4.onPress = function onPress() {
@@ -65,5 +65,5 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   obj6.onDismiss = function onDismiss() {
     outer1_1(outer1_2[15]).hideActionSheet();
   };
-  return jsx(require(11548) /* PromoSheet */.PromoSheet, {});
+  return jsx(require(7515) /* PromoSheet */.PromoSheet, {});
 };

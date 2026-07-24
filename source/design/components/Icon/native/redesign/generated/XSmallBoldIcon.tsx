@@ -1,10 +1,10 @@
-// Module ID: 7660
-// Function ID: 61265
+// Module ID: 7749
+// Function ID: 61551
 // Name: XSmallBoldIcon
-// Dependencies: [31, 33, 689, 3833, 5507, 2]
+// Dependencies: [31, 33, 689, 3833, 5505, 2]
 // Exports: XSmallBoldIcon
 
-// Module 7660 (XSmallBoldIcon)
+// Module 7749 (XSmallBoldIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const XSmallBoldIcon = function XSmallBoldIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(5507) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(5505) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(5507) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(5505) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

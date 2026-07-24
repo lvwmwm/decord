@@ -1,10 +1,10 @@
-// Module ID: 6955
-// Function ID: 55569
+// Module ID: 6954
+// Function ID: 55578
 // Name: _rewardRedemptionInstructionsFromServer
-// Dependencies: [4979, 6947, 2]
+// Dependencies: [4979, 6946, 2]
 // Exports: questRewardsConfigV2FromServer
 
-// Module 6955 (_rewardRedemptionInstructionsFromServer)
+// Module 6954 (_rewardRedemptionInstructionsFromServer)
 function _rewardRedemptionInstructionsFromServer(redemption_instructions_by_platform) {
   const obj = {};
   const keys = Object.keys(redemption_instructions_by_platform);
@@ -23,34 +23,34 @@ function _rewardRedemptionInstructionsFromServer(redemption_instructions_by_plat
 }
 function _questRewardV2FromServer(type) {
   type = type.type;
-  if (require(6947) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE === type) {
-    let obj = { type: require(6947) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE };
+  if (require(6946) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE === type) {
+    let obj = { type: require(6946) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE };
     ({ sku_id: obj9.skuId, asset: obj9.asset, asset_video: obj9.assetVideo } = type);
     obj = { redemptionInstructionsByPlatform: _rewardRedemptionInstructionsFromServer(type.messages.redemption_instructions_by_platform), name: type.messages.name, nameWithArticle: type.messages.name_with_article };
     obj.messages = obj;
     ({ approximate_count: obj9.approximateCount, redemption_link: obj9.redemptionLink } = type);
     return obj;
-  } else if (require(6947) /* QuestRewardTypes */.QuestRewardTypes.COLLECTIBLE === type) {
-    const obj1 = { type: require(6947) /* QuestRewardTypes */.QuestRewardTypes.COLLECTIBLE };
+  } else if (require(6946) /* QuestRewardTypes */.QuestRewardTypes.COLLECTIBLE === type) {
+    const obj1 = { type: require(6946) /* QuestRewardTypes */.QuestRewardTypes.COLLECTIBLE };
     ({ sku_id: obj7.skuId, asset: obj7.asset, asset_video: obj7.assetVideo } = type);
     const obj2 = { redemptionInstructionsByPlatform: _rewardRedemptionInstructionsFromServer(type.messages.redemption_instructions_by_platform), name: type.messages.name, nameWithArticle: type.messages.name_with_article };
     obj1.messages = obj2;
     ({ expires_at: obj7.expiresAt, expiration_mode: obj7.expirationMode, expires_at_premium: obj7.expiresAtPremium } = type);
     return obj1;
-  } else if (require(6947) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY === type) {
-    const obj3 = { type: require(6947) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY, skuId: type.sku_id };
+  } else if (require(6946) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY === type) {
+    const obj3 = { type: require(6946) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY, skuId: type.sku_id };
     const obj4 = { redemptionInstructionsByPlatform: _rewardRedemptionInstructionsFromServer(type.messages.redemption_instructions_by_platform), name: type.messages.name, nameWithArticle: type.messages.name_with_article };
     obj3.messages = obj4;
     ({ orb_quantity: obj5.orbQuantity, premium_orb_quantity: obj5.premiumOrbQuantity } = type);
     return obj3;
-  } else if (require(6947) /* QuestRewardTypes */.QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
-    const obj5 = { type: require(6947) /* QuestRewardTypes */.QuestRewardTypes.FRACTIONAL_PREMIUM };
+  } else if (require(6946) /* QuestRewardTypes */.QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
+    const obj5 = { type: require(6946) /* QuestRewardTypes */.QuestRewardTypes.FRACTIONAL_PREMIUM };
     ({ sku_id: obj3.skuId, asset: obj3.asset, asset_video: obj3.assetVideo, quantity: obj3.quantity } = type);
     const obj6 = { redemptionInstructionsByPlatform: _rewardRedemptionInstructionsFromServer(type.messages.redemption_instructions_by_platform), name: type.messages.name, nameWithArticle: type.messages.name_with_article };
     obj5.messages = obj6;
     return obj5;
-  } else if (require(6947) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === type) {
-    obj = { type: require(6947) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME };
+  } else if (require(6946) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === type) {
+    obj = { type: require(6946) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME };
     ({ sku_id: obj.skuId, asset: obj.asset, asset_video: obj.assetVideo } = type);
     const obj7 = { redemptionInstructionsByPlatform: _rewardRedemptionInstructionsFromServer(type.messages.redemption_instructions_by_platform), name: type.messages.name, nameWithArticle: type.messages.name_with_article };
     obj.messages = obj7;

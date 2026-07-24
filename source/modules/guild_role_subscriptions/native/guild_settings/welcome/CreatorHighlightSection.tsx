@@ -1,10 +1,10 @@
-// Module ID: 16402
-// Function ID: 127879
+// Module ID: 16449
+// Function ID: 128203
 // Name: GuildServerSubscriberCount
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 1273, 9356, 1212, 16403, 3827, 16375, 5085, 14129, 4544, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 1273, 9392, 1212, 16450, 3827, 16422, 5085, 14179, 4544, 2]
 // Exports: default
 
-// Module 16402 (GuildServerSubscriberCount)
+// Module 16449 (GuildServerSubscriberCount)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,7 +26,7 @@ function GuildServerSubscriberCount(arg0) {
   items[2] = style;
   obj = { style: tmp.subscriberCount, variant: "text-sm/medium", color: "text-overlay-light", children: subscriberCount };
   const items1 = [callback(require(4126) /* Text */.Text, obj), , ];
-  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE, style: tmp.subscriberCountIcon, source: importDefault(9356) };
+  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE, style: tmp.subscriberCountIcon, source: importDefault(9392) };
   items1[1] = callback(require(1273) /* Button */.Icon, obj);
   const obj1 = { variant: "text-sm/normal", color: "text-overlay-light" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -49,12 +49,12 @@ function CreatorGuildCard(highlightedCreatorGuild) {
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp2 = guild_id(16403)(guild_id, 3, 60);
+  const tmp2 = guild_id(16450)(guild_id, 3, 60);
   const dependencyMap = tmp2;
   const hasAllImperativeDetails = tmp2.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp2];
   if (tmp2.isLoading) {
-    let obj = { style: tmp.cardContainer, children: callback(guild_id(16375), {}) };
+    let obj = { style: tmp.cardContainer, children: callback(guild_id(16422), {}) };
     return callback(closure_4, obj);
   } else if (hasAllImperativeDetails) {
     const details = tmp2.details;

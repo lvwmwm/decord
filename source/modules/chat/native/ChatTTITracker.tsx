@@ -1,10 +1,10 @@
-// Module ID: 11100
-// Function ID: 86290
+// Module ID: 11127
+// Function ID: 86479
 // Name: ChatTTITracker
-// Dependencies: [33, 10026, 14, 2]
+// Dependencies: [33, 10058, 14, 2]
 // Exports: ChatTTITracker
 
-// Module 11100 (ChatTTITracker)
+// Module 11127 (ChatTTITracker)
 import jsxProd from "jsxProd";
 
 let closure_3;
@@ -25,7 +25,7 @@ export const ChatTTITracker = function ChatTTITracker(messages) {
           displayMessagesWithCache.record(nativeEvent.nativeEvent.timestamp);
         }
     };
-    tmp3 = callback(require(10026) /* TTIMeasurementView */.TTIMeasurementView, obj, "cached_messages_tti");
+    tmp3 = callback(require(10058) /* TTIMeasurementView */.TTIMeasurementView, obj, "cached_messages_tti");
   }
   const items = [tmp3, ];
   if (messages.hasFetched) {
@@ -36,7 +36,7 @@ export const ChatTTITracker = function ChatTTITracker(messages) {
           displayLatestMessages.record(nativeEvent.nativeEvent.timestamp);
         }
     };
-    let tmp7 = callback(require(10026) /* TTIMeasurementView */.TTIMeasurementView, obj, "latest_messages_tti");
+    let tmp7 = callback(require(10058) /* TTIMeasurementView */.TTIMeasurementView, obj, "latest_messages_tti");
   } else {
     tmp7 = null;
     if (messages.ready) {

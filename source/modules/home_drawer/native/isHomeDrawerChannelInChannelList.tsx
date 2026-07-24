@@ -1,10 +1,10 @@
-// Module ID: 14848
-// Function ID: 113277
+// Module ID: 14895
+// Function ID: 113598
 // Name: useIsHomeDrawerChannelInChannelList
 // Dependencies: [4325, 566, 6767, 2]
 // Exports: useIsHomeDrawerChannelInChannelList
 
-// Module 14848 (useIsHomeDrawerChannelInChannelList)
+// Module 14895 (useIsHomeDrawerChannelInChannelList)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

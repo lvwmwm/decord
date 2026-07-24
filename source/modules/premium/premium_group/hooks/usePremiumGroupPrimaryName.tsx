@@ -1,10 +1,10 @@
-// Module ID: 12417
-// Function ID: 96374
+// Module ID: 12470
+// Function ID: 96697
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [12418, 12422, 3969, 2]
+// Dependencies: [12471, 12475, 3969, 2]
 // Exports: default
 
-// Module 12417 (usePremiumGroupPrimaryName)
+// Module 12470 (usePremiumGroupPrimaryName)
 const result = require("conceal").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx");
 
 export default function usePremiumGroupPrimaryName() {
@@ -21,7 +21,7 @@ export default function usePremiumGroupPrimaryName() {
     flag2 = true;
   }
   obj = { useCachedData: flag, fetch: flag2 };
-  const premiumGroupMembership = importDefault(12418)(obj).premiumGroupMembership;
+  const premiumGroupMembership = importDefault(12471)(obj).premiumGroupMembership;
   let subscriptionId;
   if (null != premiumGroupMembership) {
     subscriptionId = premiumGroupMembership.subscriptionId;
@@ -31,7 +31,7 @@ export default function usePremiumGroupPrimaryName() {
     tmp3 = subscriptionId;
   }
   obj = { useCachedData: flag, fetch: flag2 };
-  const premiumGroupMembers = importDefault(12422)(tmp3, obj).premiumGroupMembers;
+  const premiumGroupMembers = importDefault(12475)(tmp3, obj).premiumGroupMembers;
   let primary;
   if (null != premiumGroupMembers) {
     primary = premiumGroupMembers.primary;

@@ -1,5 +1,5 @@
 // Module ID: 7286
-// Function ID: 58745
+// Function ID: 58774
 // Name: mergeAndOverwriteScopeData
 // Dependencies: [65, 7261, 7242, 7241, 7272]
 // Exports: applyScopeDataToEvent, mergeScopeData

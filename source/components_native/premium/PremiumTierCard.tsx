@@ -1,10 +1,10 @@
-// Module ID: 12497
-// Function ID: 96837
+// Module ID: 12550
+// Function ID: 97161
 // Name: textLogoTier2
-// Dependencies: [31, 27, 6671, 1851, 33, 4130, 689, 4973, 1324, 4554, 668, 3776, 12498, 12499, 7172, 7115, 7116, 7167, 5167, 2]
+// Dependencies: [31, 27, 6671, 1851, 33, 4130, 689, 4973, 1324, 4554, 668, 3776, 12551, 12552, 7172, 7114, 7115, 7167, 5167, 2]
 // Exports: default
 
-// Module 12497 (textLogoTier2)
+// Module 12550 (textLogoTier2)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getPremiumGradientColor } from "items";
@@ -48,9 +48,9 @@ export default function _default(children) {
   }
   obj.style = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp12 = importDefault(12498);
+    let tmp12 = importDefault(12551);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp12 = importDefault(12499);
+    tmp12 = importDefault(12552);
   } else if (PremiumTypes.TIER_2 === premiumType) {
     tmp12 = importDefault(7172);
   }
@@ -69,9 +69,9 @@ export default function _default(children) {
   items1[1] = wumpusLogoTier2;
   obj1.style = items1;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp23 = importDefault(7115);
+    let tmp23 = importDefault(7114);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp23 = importDefault(7116);
+    tmp23 = importDefault(7115);
   } else if (PremiumTypes.TIER_2 === premiumType) {
     tmp23 = importDefault(7167);
   }

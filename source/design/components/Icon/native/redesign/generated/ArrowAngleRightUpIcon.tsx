@@ -1,10 +1,10 @@
-// Module ID: 9881
-// Function ID: 76508
+// Module ID: 9913
+// Function ID: 76702
 // Name: ArrowAngleRightUpIcon
-// Dependencies: [31, 33, 689, 3833, 9882, 2]
+// Dependencies: [31, 33, 689, 3833, 9914, 2]
 // Exports: ArrowAngleRightUpIcon
 
-// Module 9881 (ArrowAngleRightUpIcon)
+// Module 9913 (ArrowAngleRightUpIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ArrowAngleRightUpIcon = function ArrowAngleRightUpIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9882) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9914) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9882) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9914) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

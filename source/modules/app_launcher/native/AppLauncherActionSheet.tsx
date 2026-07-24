@@ -1,10 +1,10 @@
-// Module ID: 15447
-// Function ID: 118809
+// Module ID: 15494
+// Function ID: 119131
 // Name: AppLauncherActionSheet
-// Dependencies: [57, 31, 1455, 33, 3991, 10884, 8182, 10885, 5187, 11201, 11316, 5444, 2]
+// Dependencies: [57, 31, 1455, 33, 3991, 10911, 8226, 10912, 5187, 11231, 11345, 5444, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 15447 (AppLauncherActionSheet)
+// Module 15494 (AppLauncherActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

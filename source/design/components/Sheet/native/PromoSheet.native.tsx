@@ -1,10 +1,10 @@
-// Module ID: 11548
-// Function ID: 89906
+// Module ID: 7515
+// Function ID: 59942
 // Name: PromoSheet
-// Dependencies: [29, 31, 27, 33, 4130, 689, 1324, 8574, 5187, 4541, 8573, 4126, 2]
+// Dependencies: [29, 31, 27, 33, 4130, 689, 1324, 7516, 5187, 4541, 7517, 4126, 2]
 // Exports: PromoSheet
 
-// Module 11548 (PromoSheet)
+// Module 7515 (PromoSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -59,7 +59,7 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj = {};
       const merged1 = Object.assign(graphic);
       obj["style"] = tmp3.graphic;
-      let tmp10 = callback2(gradientColor(8573).Graphic, obj);
+      let tmp10 = callback2(gradientColor(7517).Graphic, obj);
     }
     const items1 = [tmp10, , ];
     const obj1 = {};

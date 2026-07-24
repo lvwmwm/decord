@@ -1,10 +1,10 @@
-// Module ID: 10830
-// Function ID: 84071
+// Module ID: 10859
+// Function ID: 84263
 // Name: _getPrimaryAppCommand
-// Dependencies: [5, 31, 1348, 7920, 1881, 7928, 7924, 8180, 2]
+// Dependencies: [5, 31, 1348, 8007, 1881, 8015, 8011, 8224, 2]
 // Exports: default, useIsPrimaryAppCommandUsableInAppDM
 
-// Module 10830 (_getPrimaryAppCommand)
+// Module 10859 (_getPrimaryAppCommand)
 import ScoreMethod from "ScoreMethod";
 import result from "result";
 import closure_4 from "_isNativeReflectConstruct";
@@ -23,7 +23,7 @@ function queryForPrimaryAppCommand(outer1_0, id) {
   let obj = {};
   const items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj.commandTypes = items;
-  obj = { placeholderCount: 1, scoreMethod: require(7928) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
   return closure_7.query(outer1_0, obj, obj).commands[0];
 }
 function useGetPrimaryAppCommand(context, applicationId) {
@@ -48,7 +48,7 @@ function useGetPrimaryAppCommand(context, applicationId) {
 }
 function useQueryForPrimaryAppCommand(context, applicationId) {
   let obj = { commandTypes: items };
-  obj = { placeholderCount: 1, scoreMethod: require(7928) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
   return callback2(context, obj, obj);
 }
 function isPrimaryAppCommandUsableInAppDM(integration_types) {
@@ -58,7 +58,7 @@ function isPrimaryAppCommandUsableInAppDM(integration_types) {
     let hasItem = null != integration_types.integration_types;
     if (hasItem) {
       integration_types = integration_types.integration_types;
-      hasItem = integration_types.includes(require(8180) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+      hasItem = integration_types.includes(require(8224) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
     }
     let hasItem1 = null != integration_types.contexts;
     if (hasItem1) {

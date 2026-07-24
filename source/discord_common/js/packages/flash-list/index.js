@@ -1,9 +1,9 @@
-// Module ID: 7879
-// Function ID: 62733
+// Module ID: 7527
+// Function ID: 60003
 // Name: defaultMVCPConfig
 // Dependencies: [31, 33, 477, 5354, 3991, 5353, 5189, 2]
 
-// Module 7879 (defaultMVCPConfig)
+// Module 7527 (defaultMVCPConfig)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import set from "set";

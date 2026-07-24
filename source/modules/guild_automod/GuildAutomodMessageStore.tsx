@@ -1,9 +1,9 @@
-// Module ID: 7627
-// Function ID: 61079
+// Module ID: 7716
+// Function ID: 61365
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 4349, 653, 7076, 7109, 4351, 6740, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4349, 653, 7075, 7108, 4351, 6740, 21, 566, 686, 2]
 
-// Module 7627 (_isNativeReflectConstruct)
+// Module 7716 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "ME";
 import set from "set";
@@ -34,11 +34,11 @@ function removeFailedMessage(id) {
 }
 function handleMessageSendFailedAutomod(messageData) {
   messageData = messageData.messageData;
-  let obj = require(7076) /* _isNativeReflectConstruct */;
+  let obj = require(7075) /* _isNativeReflectConstruct */;
   const failedMessageId = obj.getFailedMessageId(messageData);
-  obj = { id: failedMessageId, isBlockedEdit: require(7076) /* _isNativeReflectConstruct */.isMessageDataEdit(messageData), messageData };
-  const obj3 = require(7076) /* _isNativeReflectConstruct */;
-  obj.errorMessage = require(7109) /* _callSuper */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
+  obj = { id: failedMessageId, isBlockedEdit: require(7075) /* _isNativeReflectConstruct */.isMessageDataEdit(messageData), messageData };
+  const obj3 = require(7075) /* _isNativeReflectConstruct */;
+  obj.errorMessage = require(7108) /* _callSuper */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
   closure_13[failedMessageId] = obj;
   closure_14 = closure_14 + 1;
   return true;

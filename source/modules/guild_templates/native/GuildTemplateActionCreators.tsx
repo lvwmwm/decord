@@ -1,9 +1,9 @@
-// Module ID: 10944
-// Function ID: 85097
+// Module ID: 10971
+// Function ID: 85286
 // Name: showModal
-// Dependencies: [5718, 4337, 10945, 1934, 686, 2]
+// Dependencies: [5718, 4337, 10972, 1934, 686, 2]
 
-// Module 10944 (showModal)
+// Module 10971 (showModal)
 import merged from "map";
 
 const require = arg1;
@@ -11,7 +11,7 @@ let obj = {};
 obj["showModal"] = function showModal(code) {
   let obj = importDefault(4337);
   obj = { code };
-  obj.pushLazy(require(1934) /* maybeLoadBundle */(10945, dependencyMap.paths), obj, "GUILD_TEMPLATE_MODAL_KEY");
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(10972, dependencyMap.paths), obj, "GUILD_TEMPLATE_MODAL_KEY");
   obj = { type: "GUILD_TEMPLATE_MODAL_SHOW", code };
   importDefault(686).dispatch(obj);
   const obj3 = importDefault(686);

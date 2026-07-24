@@ -1,10 +1,10 @@
-// Module ID: 14898
-// Function ID: 113590
+// Module ID: 14945
+// Function ID: 113911
 // Name: getMessagesItemChannelSizes
-// Dependencies: [31, 1348, 33, 9889, 689, 14899, 566, 14909, 2]
+// Dependencies: [31, 1348, 33, 9921, 689, 14946, 566, 14956, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 14898 (getMessagesItemChannelSizes)
+// Module 14945 (getMessagesItemChannelSizes)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
 import importAllResult from "result";
@@ -26,10 +26,10 @@ const memoResult = require("result").memo(function MessagesItemChannel(arg0) {
   }
   if (true === isPrivateResult) {
     obj = { channel: stateFromStores, height: placeholderHeight, isGradientTheme };
-    let tmp5 = jsx(importDefault(14899), { channel: stateFromStores, height: placeholderHeight, isGradientTheme });
+    let tmp5 = jsx(importDefault(14946), { channel: stateFromStores, height: placeholderHeight, isGradientTheme });
   } else {
     obj = { height: placeholderHeight, row };
-    tmp5 = jsx(importDefault(14909), { height: placeholderHeight, row });
+    tmp5 = jsx(importDefault(14956), { height: placeholderHeight, row });
   }
   return tmp5;
 });
@@ -37,14 +37,14 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 
 export default memoResult;
 export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(fontScale) {
-  let obj = require(9889) /* scaleLineHeight */;
+  let obj = require(9921) /* scaleLineHeight */;
   const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const scaleTextLineHeightResult1 = require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
+  const scaleTextLineHeightResult1 = require(9921) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
   const PX_16 = importDefault(689).space.PX_16;
   const PX_32 = importDefault(689).space.PX_32;
   obj = { avatar: PX_32 };
   const sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
-  obj.height = sum + require(14899) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
+  obj.height = sum + require(14946) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
   obj.label = scaleTextLineHeightResult;
   obj.labelSecondary = scaleTextLineHeightResult1;
   obj.padding = PX_16;

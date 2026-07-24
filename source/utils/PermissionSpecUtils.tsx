@@ -1,9 +1,9 @@
-// Module ID: 15514
-// Function ID: 119625
+// Module ID: 15561
+// Function ID: 119947
 // Name: getPermissionOptions
-// Dependencies: [1352, 1838, 653, 7485, 15515, 5632, 4582, 15516, 1212, 1920, 5650, 4950, 15517, 5649, 15518, 8438, 7009, 2]
+// Dependencies: [1352, 1838, 653, 7565, 15562, 5632, 4582, 15563, 1212, 1920, 5650, 4950, 15564, 5649, 15565, 8482, 7008, 2]
 
-// Module 15514 (getPermissionOptions)
+// Module 15561 (getPermissionOptions)
 import { VOICE_THREAD_PARENT_CHANNEL_TYPES as closure_4 } from "_callSuper";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
@@ -15,7 +15,7 @@ let closure_7;
 let closure_8;
 let closure_9;
 function getPermissionOptions(id) {
-  let obj = require(15515) /* isGuildEligibleForStageChannels */;
+  let obj = require(15562) /* isGuildEligibleForStageChannels */;
   const result = obj.isGuildEligibleForStageChannels(id);
   const guild = store.getGuild(id);
   let result1 = null != guild;
@@ -34,7 +34,7 @@ function getPermissionOptions(id) {
   obj.PRIORITY_SPEAKER_DESCRIPTION = intl.format(require(1212) /* getSystemLocale */.t.ZuzwPz, obj1);
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2 = {};
-  const obj4 = require(15516) /* items */;
+  const obj4 = require(15563) /* items */;
   obj2.helpCenterArticle = importDefault(1920).getArticleURL(constants.SOUNDBOARD);
   obj.SOUNDBOARD_DESCRIPTION = intl3.format(require(1212) /* getSystemLocale */.t.fVE8y8, obj2);
   obj.showStageChannelPermissions = result;
@@ -87,7 +87,7 @@ export default {
       enabled = set.has(stateFromStores.type);
     }
     let obj2 = _require(4950);
-    let obj3 = _require(15517);
+    let obj3 = _require(15564);
     let result = obj3.canCurrentUserManageMessageFilters(guild_id);
     const isMediaChannelResult = stateFromStores.isMediaChannel();
     const importAll = isMediaChannelResult;
@@ -111,45 +111,45 @@ export default {
     const type = stateFromStores.type;
     if (constants2.GUILD_CATEGORY === type) {
       const intl21 = _require(1212).intl;
-      const items = [importAll(15518).generateChannelGeneralSection(tmp3, intl21.string(_require(1212).t["AkPxc+"])), , , , , ];
-      const obj34 = importAll(15518);
+      const items = [importAll(15565).generateChannelGeneralSection(tmp3, intl21.string(_require(1212).t["AkPxc+"])), , , , , ];
+      const obj34 = importAll(15565);
       const intl22 = _require(1212).intl;
-      items[1] = importAll(15518).generateChannelMembershipSection(tmp3, intl22.string(_require(1212).t.Ny49TN));
-      const obj35 = importAll(15518);
+      items[1] = importAll(15565).generateChannelMembershipSection(tmp3, intl22.string(_require(1212).t.Ny49TN));
+      const obj35 = importAll(15565);
       const intl23 = _require(1212).intl;
       const obj1 = { showPrivateThreads: true, showCreateThreads: true, inSoundmojiExperiment };
-      items[2] = importAll(15518).generateChannelTextSection(tmp3, intl23.string(_require(1212).t.cKobO5), obj1);
-      const obj36 = importAll(15518);
+      items[2] = importAll(15565).generateChannelTextSection(tmp3, intl23.string(_require(1212).t.cKobO5), obj1);
+      const obj36 = importAll(15565);
       const intl24 = _require(1212).intl;
-      items[3] = importAll(15518).generateChannelVoiceSection(tmp3, intl24.string(_require(1212).t["46Ra1b"]));
-      const obj38 = importAll(15518);
+      items[3] = importAll(15565).generateChannelVoiceSection(tmp3, intl24.string(_require(1212).t["46Ra1b"]));
+      const obj38 = importAll(15565);
       const intl25 = _require(1212).intl;
-      items[4] = importAll(15518).generateChannelAppsSection(tmp3, intl25.string(_require(1212).t["rrh/W6"]));
+      items[4] = importAll(15565).generateChannelAppsSection(tmp3, intl25.string(_require(1212).t["rrh/W6"]));
       let arraySpreadResult = HermesBuiltin.arraySpread(conditionalPermissionSpec(tmp.showStageChannelPermissions, () => {
         const intl = guild_id(outer1_3[8]).intl;
         return isMediaChannelResult(outer1_3[14]).generateChannelStageSection(closure_1, intl.string(guild_id(outer1_3[8]).t.yniauk));
       }), 5);
-      const obj39 = importAll(15518);
+      const obj39 = importAll(15565);
       const intl26 = _require(1212).intl;
-      items[arraySpreadResult] = importAll(15518).generateChannelEventsSection(tmp3, intl26.string(_require(1212).t.b8lplT));
+      items[arraySpreadResult] = importAll(15565).generateChannelEventsSection(tmp3, intl26.string(_require(1212).t.b8lplT));
       const sum = arraySpreadResult + 1;
       let items3 = items;
-      const obj40 = importAll(15518);
+      const obj40 = importAll(15565);
     } else if (constants2.GUILD_VOICE === type) {
       const intl14 = _require(1212).intl;
       obj2 = { showManageWebhooks: true };
-      const items1 = [importAll(15518).generateChannelGeneralSection(tmp3, intl14.string(_require(1212).t.ouHggI), obj2), , , , , ];
-      const obj25 = importAll(15518);
+      const items1 = [importAll(15565).generateChannelGeneralSection(tmp3, intl14.string(_require(1212).t.ouHggI), obj2), , , , , ];
+      const obj25 = importAll(15565);
       const intl15 = _require(1212).intl;
-      items1[1] = importAll(15518).generateChannelMembershipSection(tmp3, intl15.string(_require(1212).t.Ny49TN));
-      const obj27 = importAll(15518);
+      items1[1] = importAll(15565).generateChannelMembershipSection(tmp3, intl15.string(_require(1212).t.Ny49TN));
+      const obj27 = importAll(15565);
       const intl16 = _require(1212).intl;
-      items1[2] = importAll(15518).generateChannelVoiceSection(tmp3, intl16.string(_require(1212).t["46Ra1b"]));
-      const obj28 = importAll(15518);
+      items1[2] = importAll(15565).generateChannelVoiceSection(tmp3, intl16.string(_require(1212).t["46Ra1b"]));
+      const obj28 = importAll(15565);
       const intl17 = _require(1212).intl;
       obj3 = {};
       let formatResult;
-      const obj29 = importAll(15518);
+      const obj29 = importAll(15565);
       if (result) {
         const intl18 = _require(1212).intl;
         const obj4 = {
@@ -164,33 +164,33 @@ export default {
       items1[3] = obj29.generateChannelVoiceChatSection(tmp3, intl17.string(_require(1212).t.iqlsnD), obj3);
       const stringResult = intl17.string(_require(1212).t.iqlsnD);
       const intl19 = _require(1212).intl;
-      items1[4] = importAll(15518).generateChannelEventsSection(tmp3, intl19.string(_require(1212).t.b8lplT));
-      const obj32 = importAll(15518);
+      items1[4] = importAll(15565).generateChannelEventsSection(tmp3, intl19.string(_require(1212).t.b8lplT));
+      const obj32 = importAll(15565);
       const intl20 = _require(1212).intl;
-      items1[5] = importAll(15518).generateChannelAppsSection(tmp3, intl20.string(_require(1212).t["rrh/W6"]));
+      items1[5] = importAll(15565).generateChannelAppsSection(tmp3, intl20.string(_require(1212).t["rrh/W6"]));
       items3 = items1;
-      const obj33 = importAll(15518);
+      const obj33 = importAll(15565);
     } else if (constants2.GUILD_STAGE_VOICE === type) {
       const intl6 = _require(1212).intl;
       obj5 = { showManageWebhooks: false };
-      const items2 = [importAll(15518).generateChannelGeneralSection(tmp3, intl6.string(_require(1212).t.ouHggI), obj5), , , , , , ];
-      const obj14 = importAll(15518);
+      const items2 = [importAll(15565).generateChannelGeneralSection(tmp3, intl6.string(_require(1212).t.ouHggI), obj5), , , , , , ];
+      const obj14 = importAll(15565);
       const intl7 = _require(1212).intl;
-      items2[1] = importAll(15518).generateChannelMembershipSection(tmp3, intl7.string(_require(1212).t.Ny49TN));
-      const obj16 = importAll(15518);
+      items2[1] = importAll(15565).generateChannelMembershipSection(tmp3, intl7.string(_require(1212).t.Ny49TN));
+      const obj16 = importAll(15565);
       const intl8 = _require(1212).intl;
-      items2[2] = importAll(15518).generateChannelStageVoiceSection(tmp3, intl8.string(_require(1212).t["46Ra1b"]), isStageVideoEnabledResult);
-      const obj17 = importAll(15518);
+      items2[2] = importAll(15565).generateChannelStageVoiceSection(tmp3, intl8.string(_require(1212).t["46Ra1b"]), isStageVideoEnabledResult);
+      const obj17 = importAll(15565);
       const intl9 = _require(1212).intl;
-      items2[3] = importAll(15518).generateChannelStageSection(tmp3, intl9.string(_require(1212).t.yniauk));
-      const obj18 = importAll(15518);
+      items2[3] = importAll(15565).generateChannelStageSection(tmp3, intl9.string(_require(1212).t.yniauk));
+      const obj18 = importAll(15565);
       const intl10 = _require(1212).intl;
-      items2[4] = importAll(15518).generateChannelEventsSection(tmp3, intl10.string(_require(1212).t.b8lplT));
-      const obj19 = importAll(15518);
+      items2[4] = importAll(15565).generateChannelEventsSection(tmp3, intl10.string(_require(1212).t.b8lplT));
+      const obj19 = importAll(15565);
       const intl11 = _require(1212).intl;
       const obj6 = {};
       let formatResult1;
-      const obj20 = importAll(15518);
+      const obj20 = importAll(15565);
       if (result) {
         const intl12 = _require(1212).intl;
         let obj7 = {
@@ -206,29 +206,29 @@ export default {
       const stringResult1 = intl11.string(_require(1212).t.iqlsnD);
       const intl13 = _require(1212).intl;
       let obj8 = { showActivities: false };
-      items2[6] = importAll(15518).generateChannelAppsSection(tmp3, intl13.string(_require(1212).t["rrh/W6"]), obj8);
+      items2[6] = importAll(15565).generateChannelAppsSection(tmp3, intl13.string(_require(1212).t["rrh/W6"]), obj8);
       items3 = items2;
-      const obj23 = importAll(15518);
+      const obj23 = importAll(15565);
     } else {
       if (constants2.GUILD_FORUM !== type) {
         if (constants2.GUILD_MEDIA !== type) {
           const intl27 = _require(1212).intl;
-          items3 = [importAll(15518).generateChannelGeneralSection(tmp3, intl27.string(_require(1212).t.ouHggI)), , , ];
-          const obj41 = importAll(15518);
+          items3 = [importAll(15565).generateChannelGeneralSection(tmp3, intl27.string(_require(1212).t.ouHggI)), , , ];
+          const obj41 = importAll(15565);
           const intl28 = _require(1212).intl;
-          items3[1] = importAll(15518).generateChannelMembershipSection(tmp3, intl28.string(_require(1212).t.Ny49TN));
-          const obj42 = importAll(15518);
+          items3[1] = importAll(15565).generateChannelMembershipSection(tmp3, intl28.string(_require(1212).t.Ny49TN));
+          const obj42 = importAll(15565);
           const intl29 = _require(1212).intl;
           let obj9 = { showPrivateThreads: stateFromStores.type !== constants2.GUILD_ANNOUNCEMENT, showCreateThreads: true, inSoundmojiExperiment };
-          items3[2] = importAll(15518).generateChannelTextSection(tmp3, intl29.string(_require(1212).t.cKobO5), obj9);
-          const obj43 = importAll(15518);
+          items3[2] = importAll(15565).generateChannelTextSection(tmp3, intl29.string(_require(1212).t.cKobO5), obj9);
+          const obj43 = importAll(15565);
           const intl30 = _require(1212).intl;
-          items3[3] = importAll(15518).generateChannelAppsSection(tmp3, intl30.string(_require(1212).t["rrh/W6"]));
+          items3[3] = importAll(15565).generateChannelAppsSection(tmp3, intl30.string(_require(1212).t["rrh/W6"]));
           arraySpreadResult = HermesBuiltin.arraySpread(conditionalPermissionSpec(enabled, () => {
             const intl = guild_id(outer1_3[8]).intl;
             return isMediaChannelResult(outer1_3[14]).generateChannelVoiceSection(closure_1, intl.string(guild_id(outer1_3[8]).t["46Ra1b"]));
           }), 4);
-          const obj45 = importAll(15518);
+          const obj45 = importAll(15565);
         }
       }
       let intl = _require(1212).intl;
@@ -240,13 +240,13 @@ export default {
         stringResult2 = string(t.TS7Cnb);
       }
       const t2 = _require(1212).t;
-      obj7 = importAll(15518);
+      obj7 = importAll(15565);
       const intl2 = _require(1212).intl;
       const items4 = [obj7.generateChannelGeneralSection(tmp3, intl2.string(_require(1212).t.ouHggI)), , , ];
-      obj8 = importAll(15518);
+      obj8 = importAll(15565);
       const intl3 = _require(1212).intl;
       items4[1] = obj8.generateChannelMembershipSection(tmp3, intl3.string(_require(1212).t.Ny49TN));
-      obj9 = importAll(15518);
+      obj9 = importAll(15565);
       const obj10 = { showPrivateThreads: false, showCreateThreads: false };
       let formatResult2;
       if (result) {
@@ -266,13 +266,13 @@ export default {
       obj10.inSoundmojiExperiment = inSoundmojiExperiment;
       items4[2] = obj9.generateChannelTextSection(tmp3, stringResult2, obj10);
       const intl5 = _require(1212).intl;
-      items4[3] = importAll(15518).generateChannelAppsSection(tmp3, intl5.string(_require(1212).t["rrh/W6"]));
+      items4[3] = importAll(15565).generateChannelAppsSection(tmp3, intl5.string(_require(1212).t["rrh/W6"]));
       HermesBuiltin.arraySpread(conditionalPermissionSpec(enabled, () => {
         const intl = guild_id(outer1_3[8]).intl;
         return isMediaChannelResult(outer1_3[14]).generateChannelVoiceSection(closure_1, intl.string(guild_id(outer1_3[8]).t["46Ra1b"]));
       }), 4);
       items3 = items4;
-      const obj13 = importAll(15518);
+      const obj13 = importAll(15565);
       tmp20 = isMediaChannelResult ? t2.YjJTtH : t2["1MTnqY"];
     }
     return filterPermissions(items3, set);
@@ -295,9 +295,9 @@ export default {
       set.add(constants4.MANAGE_OFFICIAL_MESSAGES.toString());
       const str3 = constants4.MANAGE_OFFICIAL_MESSAGES;
     }
-    return filterPermissions(importAll(15518).generateGuildPermissionSpec(getPermissionOptions(features.id)), set);
+    return filterPermissions(importAll(15565).generateGuildPermissionSpec(getPermissionOptions(features.id)), set);
   },
   getGuildPermissionSpecMap(id) {
-    return importAll(15518).getGuildPermissionSpec(getPermissionOptions(id.id));
+    return importAll(15565).getGuildPermissionSpec(getPermissionOptions(id.id));
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 11162
-// Function ID: 86784
+// Module ID: 11192
+// Function ID: 87053
 // Name: useDeveloperActivityShelfItems
 // Dependencies: [31, 7370, 4155, 566, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 11162 (useDeveloperActivityShelfItems)
+// Module 11192 (useDeveloperActivityShelfItems)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DEFAULT_EMBEDDED_ACTIVITY_CONFIG as closure_4 } from "items3";

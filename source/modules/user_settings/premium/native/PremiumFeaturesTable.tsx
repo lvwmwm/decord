@@ -1,10 +1,10 @@
-// Module ID: 12406
-// Function ID: 96345
+// Module ID: 12459
+// Function ID: 96668
 // Name: CheckIcon
-// Dependencies: [57, 31, 27, 653, 1851, 33, 4130, 689, 4973, 4066, 3976, 1273, 12407, 12408, 4126, 1212, 4554, 8001, 3776, 12409, 12410, 5085, 12411, 12412, 12413, 12414, 12415, 2]
+// Dependencies: [57, 31, 27, 653, 1851, 33, 4130, 689, 4973, 4066, 3976, 1273, 12460, 12461, 4126, 1212, 4554, 7432, 3776, 12462, 12463, 5085, 12464, 12465, 12466, 12467, 12468, 2]
 // Exports: default
 
-// Module 12406 (CheckIcon)
+// Module 12459 (CheckIcon)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "set";
@@ -16,6 +16,7 @@ import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let closure_10;
 let closure_11;
+let closure_12;
 let closure_7;
 let closure_8;
 let closure_9;
@@ -25,13 +26,13 @@ function CheckIcon() {
   const tmp = importDefault(4066)();
   const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   const isThemeDarkResult = obj.isThemeDark(importDefault(4066)());
-  obj = { source: importDefault(12407) };
+  obj = { source: importDefault(12460) };
   obj.color = obj.isThemeDark(importDefault(4066)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
   obj.size = require(1273) /* Button */.IconSizes.SMALL;
   return callback2(require(1273) /* Button */.Icon, obj);
 }
 function CloseIcon() {
-  const obj = { source: importDefault(12408), style: callback3().icon, size: require(1273) /* Button */.IconSizes.SMALL };
+  const obj = { source: importDefault(12461), style: callback3().icon, size: require(1273) /* Button */.IconSizes.SMALL };
   return callback2(require(1273) /* Button */.Icon, obj);
 }
 function CellText(text) {
@@ -151,7 +152,7 @@ function Row(withTopBorderRadius) {
         const items4 = [topBorderRadius2, , , , , ];
         let tmp16 = flag;
         if (flag) {
-          const obj2 = { borderTopColor: c12, borderTopWidth: 2 };
+          const obj2 = { borderTopColor: c13, borderTopWidth: 2 };
           tmp16 = obj2;
         }
         items4[1] = tmp16;
@@ -162,7 +163,7 @@ function Row(withTopBorderRadius) {
         items4[2] = bottomBorderRadius2;
         let tmp18 = flag2;
         if (flag2) {
-          const obj3 = { borderBottomColor: c12, borderBottomWidth: 2 };
+          const obj3 = { borderBottomColor: c13, borderBottomWidth: 2 };
           tmp18 = obj3;
         }
         items4[3] = tmp18;
@@ -189,7 +190,7 @@ function Row(withTopBorderRadius) {
       }
       items2[2] = tmp14(tmp15, obj1);
       obj.children = items2;
-      return closure_11(View, obj);
+      return closure_12(View, obj);
     }
   }
   const obj7 = {};
@@ -215,9 +216,9 @@ function Row(withTopBorderRadius) {
   obj7.children = column2;
   obj1 = obj7;
 }
-({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_7, PremiumTypes: closure_8, SubscriptionPlans: closure_9 } = GuildFeatures);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let c12 = "rgba(184, 69, 193, 0.5)";
+({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_7, PRICE_PLACEHOLDER: closure_8, PremiumTypes: closure_9, SubscriptionPlans: closure_10 } = GuildFeatures);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+let c13 = "rgba(184, 69, 193, 0.5)";
 _createForOfIteratorHelperLoose = { container: { display: "flex", flex: 1, width: "100%" }, headerText: { textAlign: "center" }, logo: { marginTop: 8, marginBottom: -6 }, table: { marginTop: 16 }, row: { display: "flex", flexDirection: "row" }, bottomBorder: { borderBottomColor: "rgba(106, 116, 128, 0.24)", borderBottomWidth: 1 } };
 _createForOfIteratorHelperLoose = { borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.sm };
 _createForOfIteratorHelperLoose.topBorderRadius = _createForOfIteratorHelperLoose;
@@ -234,7 +235,7 @@ _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_
 let obj3 = {};
 let obj2 = { backgroundColor: require("result").PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
 obj3.icon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj3);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj3);
 let obj4 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesTable.tsx");
 
@@ -257,28 +258,26 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   const premiumGroupRole = highlightNitroBasic.premiumGroupRole;
   const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = str(isPremiumGroup[9])();
-  const tmp3 = str(isPremiumGroup[17])(closure_9.PREMIUM_MONTH_TIER_0);
-  const tmp4 = str(isPremiumGroup[17])(closure_9.PREMIUM_MONTH_TIER_2);
+  const tmp3 = str(isPremiumGroup[17])(closure_10.PREMIUM_MONTH_TIER_0);
+  const tmp4 = str(isPremiumGroup[17])(closure_10.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (null != tmp3) {
     priceString = tmp3.priceString;
   }
-  let str2 = "$...";
-  let str3 = "$...";
-  if (null != priceString) {
-    str3 = priceString;
+  if (null == priceString) {
+    priceString = closure_8;
   }
   let priceString1;
   if (null != tmp4) {
     priceString1 = tmp4.priceString;
   }
-  if (null != priceString1) {
-    str2 = priceString1;
+  if (null == priceString1) {
+    priceString1 = closure_8;
   }
   let obj = flag(isPremiumGroup[18]);
-  const maxFileSizeForPremiumType = obj.getMaxFileSizeForPremiumType(closure_8.TIER_0);
+  const maxFileSizeForPremiumType = obj.getMaxFileSizeForPremiumType(closure_9.TIER_0);
   let obj1 = flag(isPremiumGroup[18]);
-  const maxFileSizeForPremiumType1 = obj1.getMaxFileSizeForPremiumType(closure_8.TIER_2);
+  const maxFileSizeForPremiumType1 = obj1.getMaxFileSizeForPremiumType(closure_9.TIER_2);
   obj = { column1: callback2(str(isPremiumGroup[19]), obj), column2: callback2(str(isPremiumGroup[20]), obj1), withBottomBorder: false, disableAccessibility: true };
   obj = { style: tmp.logo, width: 48, height: 9 };
   obj1 = { style: tmp.logo, width: 50, height: 9 };
@@ -322,15 +321,15 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   const intl4 = flag(isPremiumGroup[15]).intl;
   obj5.rowName = intl4.string(flag(isPremiumGroup[15]).t.LkKGZ2);
   obj7 = { style: tmp.priceContainer };
-  const parts = str3.split(/ (?=\()/g);
-  obj7.children = parts.map((text) => outer1_10(outer1_17, { text }, text));
+  const parts = priceString.split(/ (?=\()/g);
+  obj7.children = parts.map((text) => outer1_11(outer1_18, { text }, text));
   obj5.column1 = callback2(View, obj7);
-  obj5.column1AccessibilityLabel = str3;
+  obj5.column1AccessibilityLabel = priceString;
   const obj8 = { style: tmp.priceContainer };
-  const parts1 = str2.split(/ (?=\()/g);
-  obj8.children = parts1.map((text) => outer1_10(outer1_17, { text }, text));
+  const parts1 = priceString1.split(/ (?=\()/g);
+  obj8.children = parts1.map((text) => outer1_11(outer1_18, { text }, text));
   obj5.column2 = callback2(View, obj8);
-  obj5.column2AccessibilityLabel = str2;
+  obj5.column2AccessibilityLabel = priceString1;
   items[2] = obj5;
   obj9 = {};
   const obj10 = {};
@@ -454,7 +453,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   const obj19 = { numBoosts: closure_7 };
   const obj20 = { numBoosts: closure_7 };
   const tmp15 = str(isPremiumGroup[21]);
-  const tmp19 = closure_11;
+  const tmp19 = closure_12;
   const tmp20 = View;
   const tmp21 = callback2;
   items2[2] = callback2(View, {
@@ -466,7 +465,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
       obj["disableHighlightColumn2"] = isPremiumGroup;
       obj["variant"] = str;
       obj["rowNumber"] = arg1;
-      return outer1_10(outer1_19, obj, arg1);
+      return outer1_11(outer1_20, obj, arg1);
     })
   });
   obj27.children = items2;

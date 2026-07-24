@@ -1,10 +1,10 @@
-// Module ID: 16011
-// Function ID: 123887
+// Module ID: 16058
+// Function ID: 124209
 // Name: items
 // Dependencies: [4045, 4042, 2]
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 16011 (items)
+// Module 16058 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-02_past_vc_activity_messages", label: "Past VC Activity Messages", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };

@@ -1,8 +1,8 @@
-// Module ID: 14396
-// Function ID: 110060
-// Dependencies: [31, 33, 4660, 1212, 8332, 12, 12227, 2]
+// Module ID: 14446
+// Function ID: 110383
+// Dependencies: [31, 33, 4660, 1212, 8376, 12, 12254, 2]
 
-// Module 14396
+// Module 14446
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -16,7 +16,7 @@ const memoResult = require("result").memo(function ShareLogsButton() {
     obj = { message: outer1_0(outer1_1[5]).stringify() };
     return obj.showShareActionSheet(obj, "Debug Logs");
   };
-  obj.children = jsx(require(12227) /* ShareIcon */.ShareIcon, {});
+  obj.children = jsx(require(12254) /* ShareIcon */.ShareIcon, {});
   return jsx(require(4660) /* PressableBase */.PressableOpacity, {});
 });
 const result = require("PressableBase").fileFinishedImporting("modules/debug/native/ShareLogsButton.tsx");

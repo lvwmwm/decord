@@ -1,9 +1,9 @@
-// Module ID: 15761
-// Function ID: 121610
+// Module ID: 15808
+// Function ID: 121932
 // Name: SoundCategoryItem
-// Dependencies: [31, 27, 15746, 1849, 653, 33, 4130, 689, 4585, 5515, 1212, 9604, 4094, 15759, 4660, 1273, 4652, 4099, 4100, 566, 3776, 7957, 1557, 4001, 8511, 2]
+// Dependencies: [31, 27, 15793, 1849, 653, 33, 4130, 689, 4585, 5513, 1212, 9640, 4094, 15806, 4660, 1273, 4652, 4099, 4100, 566, 3776, 8044, 1557, 4001, 8556, 2]
 
-// Module 15761 (SoundCategoryItem)
+// Module 15808 (SoundCategoryItem)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setSearchQuery } from "openExpressionPicker";
@@ -35,13 +35,13 @@ function SoundCategoryItem(style) {
     const guild = category.categoryInfo.guild;
     let name = guild.name;
     let obj = { guild, style: tmp.guildItem };
-    let tmp7 = callback(importDefault(5515), obj);
+    let tmp7 = callback(importDefault(5513), obj);
     let tmp8 = null;
     let tmp6 = null;
   } else if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl3 = require(1212) /* getSystemLocale */.intl;
     name = intl3.string(require(1212) /* getSystemLocale */.t.y3LQCG);
-    tmp6 = importDefault(9604);
+    tmp6 = importDefault(9640);
     tmp7 = null;
     tmp8 = null;
   } else if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
@@ -54,7 +54,7 @@ function SoundCategoryItem(style) {
   } else if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl = require(1212) /* getSystemLocale */.intl;
     name = intl.string(require(1212) /* getSystemLocale */.t.Rtvk9X);
-    tmp6 = importDefault(15759);
+    tmp6 = importDefault(15806);
     tmp7 = null;
     tmp8 = null;
   } else {
@@ -65,7 +65,7 @@ function SoundCategoryItem(style) {
     if (require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.SEARCH === type) {
       const intl4 = require(1212) /* getSystemLocale */.intl;
       name = intl4.string(require(1212) /* getSystemLocale */.t.sKt3xS);
-      tmp6 = importDefault(15759);
+      tmp6 = importDefault(15806);
       tmp7 = null;
       tmp8 = null;
     }

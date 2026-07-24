@@ -1,10 +1,10 @@
-// Module ID: 15483
-// Function ID: 119189
+// Module ID: 15530
+// Function ID: 119511
 // Name: CoachmarkVariant
-// Dependencies: [57, 31, 6820, 1345, 33, 5802, 1334, 15482, 11261, 1212, 15484, 624, 12993, 6799, 9642, 2]
+// Dependencies: [57, 31, 6819, 1345, 33, 5802, 1334, 15529, 11290, 1212, 15531, 624, 13045, 6798, 9678, 2]
 // Exports: default
 
-// Module 15483 (CoachmarkVariant)
+// Module 15530 (CoachmarkVariant)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,7 +26,7 @@ function CoachmarkVariant(shopButtonRef) {
   const tmp3 = tmp[0] === navigateToShop(1334).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING;
   const dependencyMap = tmp3;
   obj = {};
-  obj = { ref: shopButtonRef, IconComponent: navigateToShop(11261).ShopIcon };
+  obj = { ref: shopButtonRef, IconComponent: navigateToShop(11290).ShopIcon };
   const intl = navigateToShop(1212).intl;
   obj.accessibilityLabel = intl.string(navigateToShop(1212).t.pWG4ze);
   obj.onPress = function onPress() {
@@ -36,7 +36,7 @@ function CoachmarkVariant(shopButtonRef) {
     navigateToShop();
   };
   obj.showRedDot = tmp3;
-  const items = [callback2(importDefault(15482), obj), callback2(importDefault(15484), { marketing, shopButtonRef, navigateToShop, visible: tmp3, onDismiss: tmp[1] })];
+  const items = [callback2(importDefault(15529), obj), callback2(importDefault(15531), { marketing, shopButtonRef, navigateToShop, visible: tmp3, onDismiss: tmp[1] })];
   obj.children = items;
   return callback3(closure_7, obj);
 }
@@ -75,7 +75,7 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
   if (null != stateFromStores) {
     type = stateFromStores.type;
   }
-  if (type === navigateToShop(6799).CollectiblesMarketingType.COACHMARK) {
+  if (type === navigateToShop(6798).CollectiblesMarketingType.COACHMARK) {
     obj = { marketing: stateFromStores, navigateToShop, shopButtonRef };
     return callback2(CoachmarkVariant, obj);
   } else {
@@ -86,7 +86,7 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
         type1 = stateFromStores.type;
       }
       let prop = null;
-      if (type1 === navigateToShop(6799).CollectiblesMarketingType.BADGE) {
+      if (type1 === navigateToShop(6798).CollectiblesMarketingType.BADGE) {
         prop = navigateToShop(1334).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING;
       }
       obj.contentType = prop;
@@ -100,14 +100,14 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
       }
       obj.latestVersion = num5;
       obj.children = content;
-      let tmp25Result = tmp25(navigateToShop(9642).SelectedVersionedDismissibleContent, obj);
+      let tmp25Result = tmp25(navigateToShop(9678).SelectedVersionedDismissibleContent, obj);
     } else {
       const obj1 = {};
       let type2;
       if (null != stateFromStores) {
         type2 = stateFromStores.type;
       }
-      if (type2 === navigateToShop(6799).CollectiblesMarketingType.BADGE) {
+      if (type2 === navigateToShop(6798).CollectiblesMarketingType.BADGE) {
         let dismissibleContent;
         if (null != stateFromStores) {
           dismissibleContent = stateFromStores.dismissibleContent;
@@ -121,7 +121,7 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
         tmp25Result = tmp25(tmp8, obj1);
       }
       items2 = [];
-      tmp8 = shopButtonRef(9642);
+      tmp8 = shopButtonRef(9678);
     }
     return tmp25Result;
   }

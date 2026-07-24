@@ -1,10 +1,10 @@
-// Module ID: 12468
-// Function ID: 96639
+// Module ID: 12521
+// Function ID: 96962
 // Name: GuildBoostingGuildListItem
-// Dependencies: [31, 27, 1838, 4970, 653, 33, 4130, 689, 4066, 566, 4037, 8474, 5737, 7375, 5515, 4126, 9626, 1212, 12437, 2]
+// Dependencies: [31, 27, 1838, 4970, 653, 33, 4130, 689, 4066, 566, 4037, 8518, 5737, 7375, 5513, 4126, 9662, 1212, 12490, 2]
 // Exports: default
 
-// Module 12468 (GuildBoostingGuildListItem)
+// Module 12521 (GuildBoostingGuildListItem)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -40,16 +40,16 @@ function GuildBoostingGuildListItem(guildId) {
         }
     };
     obj = { guild: stateFromStores };
-    const tmp10 = importDefault(8474);
-    obj.size = guildId(5515).GuildIconSizes.LARGE;
+    const tmp10 = importDefault(8518);
+    obj.size = guildId(5513).GuildIconSizes.LARGE;
     obj.style = tmp.guildIcon;
     obj.selected = false;
-    const items1 = [callback(importDefault(5515), obj), , ];
+    const items1 = [callback(importDefault(5513), obj), , ];
     const obj1 = { style: tmp.guildCardDescription };
     const obj2 = { variant: "text-md/bold", children: stateFromStores.name };
     const items2 = [callback(guildId(4126).Text, obj2), ];
     const obj3 = { style: tmp.subscriptionInfo };
-    const obj4 = { source: importDefault(9626), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
+    const obj4 = { source: importDefault(9662), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const items3 = [callback(closure_4, obj4), ];
     const obj5 = { variant: "text-xs/medium" };
     const intl = guildId(1212).intl;
@@ -61,10 +61,10 @@ function GuildBoostingGuildListItem(guildId) {
     obj1.children = items2;
     items1[1] = callback2(closure_3, obj1);
     const obj7 = { guild: stateFromStores, theme: tmp2 };
-    items1[2] = callback(importDefault(12437), obj7);
+    items1[2] = callback(importDefault(12490), obj7);
     obj.children = items1;
     tmp6 = callback2(tmp10, obj);
-    const tmp12 = importDefault(5515);
+    const tmp12 = importDefault(5513);
   }
   return tmp6;
 }

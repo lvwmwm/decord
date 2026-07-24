@@ -1,8 +1,8 @@
-// Module ID: 9044
-// Function ID: 71050
-// Dependencies: [31, 4177, 8950, 653, 33, 3946, 1334, 1212, 4471, 9045, 8970, 2]
+// Module ID: 9083
+// Function ID: 71265
+// Dependencies: [31, 4177, 8989, 653, 33, 3946, 1334, 1212, 4471, 9084, 9009, 2]
 
-// Module 9044
+// Module 9083
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GAME_CONSOLE_ALERT_MODAL_LOCATION as closure_4 } from "XBOX_URL_BASE";
@@ -57,7 +57,7 @@ export default {
     let obj = importDefault(4471);
     obj = { title };
     obj = { body, errorCodeMessage, dismissCallback: importDefault(4471).close };
-    obj.body = jsx(reconnectPlatformType(9045).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: importDefault(4471).close });
+    obj.body = jsx(reconnectPlatformType(9084).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: importDefault(4471).close });
     obj.onConfirm = function onConfirm() {
       if (null != reconnectPlatformType) {
         const obj = { platformType: reconnectPlatformType, location: outer1_4 };

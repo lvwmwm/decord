@@ -1,10 +1,10 @@
-// Module ID: 10230
-// Function ID: 79032
+// Module ID: 10260
+// Function ID: 79223
 // Name: useFocusModeEnabled
-// Dependencies: [4810, 3770, 653, 3803, 1331, 1313, 675, 4470, 1212, 10231, 2]
+// Dependencies: [4810, 3770, 653, 3803, 1331, 1313, 675, 4470, 1212, 10261, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10230 (useFocusModeEnabled)
+// Module 10260 (useFocusModeEnabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import ME from "ME";

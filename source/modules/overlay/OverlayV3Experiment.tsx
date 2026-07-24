@@ -1,5 +1,5 @@
 // Module ID: 3971
-// Function ID: 32885
+// Function ID: 32886
 // Name: getOverlayChatConfig
 // Dependencies: [1428, 2]
 // Exports: getOverlayDefaultKeybind, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode

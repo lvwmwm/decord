@@ -1,5 +1,5 @@
 // Module ID: 978
-// Function ID: 10601
+// Function ID: 10602
 // Name: isHermesEnabled
 // Dependencies: [57, 27, 793, 973, 979]
 // Exports: getDefaultEnvironment, getExpoGoVersion, getExpoSdkVersion, getHermesVersion, getReactNativeVersion, isExpo, isExpoGo, isFabricEnabled, isHermesEnabled, isMobileOs, isRunningInMetroDevServer, isTurboModuleEnabled, isWeb, notMobileOs, notWeb

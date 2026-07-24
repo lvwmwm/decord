@@ -1,10 +1,10 @@
-// Module ID: 12445
-// Function ID: 96583
+// Module ID: 12498
+// Function ID: 96906
 // Name: handlePress
-// Dependencies: [27, 3790, 33, 4130, 689, 4098, 12446, 1934, 1212, 2780, 4126, 2]
+// Dependencies: [27, 3790, 33, 4130, 689, 4098, 12499, 1934, 1212, 2780, 4126, 2]
 // Exports: default
 
-// Module 12445 (handlePress)
+// Module 12498 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getPremiumGroupProductName as closure_5 } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 import { jsx } from "jsxProd";
@@ -18,7 +18,7 @@ function handlePress() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj = { premiumGroupProductName: callback() };
   obj.aboutText = intl.formatToPlainString(importDefault(2780)["5xN/C1"], obj);
-  obj.openLazy(require(1934) /* maybeLoadBundle */(12446, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(12499, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
 let obj = {};

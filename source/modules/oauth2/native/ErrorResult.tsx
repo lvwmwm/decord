@@ -1,10 +1,10 @@
-// Module ID: 8965
-// Function ID: 70737
+// Module ID: 9004
+// Function ID: 70952
 // Name: error
-// Dependencies: [31, 27, 33, 4130, 689, 5121, 8966, 4126, 1212, 4543, 4337, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5121, 9005, 4126, 1212, 4543, 4337, 2]
 // Exports: default
 
-// Module 8965 (error)
+// Module 9004 (error)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function ErrorResult(error) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { bottom: true, style: tmp.container };
   obj = { style: tmp.inner };
-  obj = { source: importDefault(8966), style: tmp.image };
+  obj = { source: importDefault(9005), style: tmp.image };
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.text, variant: "text-md/medium" };
   if (null == error) {

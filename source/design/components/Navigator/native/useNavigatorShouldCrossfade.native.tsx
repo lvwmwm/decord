@@ -1,10 +1,10 @@
-// Module ID: 5520
-// Function ID: 47019
+// Module ID: 5518
+// Function ID: 47016
 // Name: useNavigatorShouldCrossfade
 // Dependencies: [31, 477, 3849, 2]
 // Exports: useNavigatorShouldCrossfade
 
-// Module 5520 (useNavigatorShouldCrossfade)
+// Module 5518 (useNavigatorShouldCrossfade)
 import result from "result";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 11374
-// Function ID: 88425
+// Module ID: 11403
+// Function ID: 88665
 // Name: JumpToPresentButton
-// Dependencies: [31, 27, 9313, 4808, 4349, 33, 4130, 689, 477, 3834, 1324, 566, 10633, 1212, 11375, 11376, 7771, 11377, 2]
+// Dependencies: [31, 27, 9349, 4808, 4349, 33, 4130, 689, 477, 3834, 1324, 566, 10662, 1212, 11404, 11405, 7533, 11406, 2]
 // Exports: default
 
-// Module 11374 (JumpToPresentButton)
+// Module 11403 (JumpToPresentButton)
 import "result";
 import { View } from "get ActivityIndicator";
 import getChatInputContainerHeight from "getChatInputContainerHeight";
@@ -54,11 +54,11 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp2;
   });
-  let obj1 = channelId(10633);
+  let obj1 = channelId(10662);
   const isVoicePanelMounted = obj1.useIsVoicePanelMounted(channelId);
   const tmp3 = screenIndex(1324)("JumpToPresentButton");
-  const isVoicePanelOpen = channelId(10633).useIsVoicePanelOpen(channelId);
-  const obj3 = channelId(10633);
+  const isVoicePanelOpen = channelId(10662).useIsVoicePanelOpen(channelId);
+  const obj3 = channelId(10662);
   const items1 = [closure_7];
   const stateFromStores = channelId(566).useStateFromStores(items1, () => null != outer1_7.getMessages(channelId).jumpReturnTargetId);
   if (!tmp4) {
@@ -81,17 +81,17 @@ export default function JumpToPresentButton(channelId) {
   if (tmp4) {
     if (tmp3) {
       obj = { accessibilityLabel: stringResult };
-      stringResult = screenIndex(11376);
+      stringResult = screenIndex(11405);
       obj.icon = stringResult;
       obj.onPress = onJumpToPresent;
-      let tmp12Result = tmp12(screenIndex(11375), obj);
-      const tmp21 = screenIndex(11375);
+      let tmp12Result = tmp12(screenIndex(11404), obj);
+      const tmp21 = screenIndex(11404);
     } else {
-      obj1 = { accessibilityLabel: stringResult, onPress: onJumpToPresent, icon: screenIndex(11376), variant: "primary-overlay" };
-      tmp12Result = tmp12(channelId(7771).IconButton, obj1);
+      obj1 = { accessibilityLabel: stringResult, onPress: onJumpToPresent, icon: screenIndex(11405), variant: "primary-overlay" };
+      tmp12Result = tmp12(channelId(7533).IconButton, obj1);
     }
   } else {
-    obj.children = tmp12(channelId(11377).MemoedVoicePanelDismissChatButton, {});
+    obj.children = tmp12(channelId(11406).MemoedVoicePanelDismissChatButton, {});
     return tmp10(tmp11, obj);
   }
 };

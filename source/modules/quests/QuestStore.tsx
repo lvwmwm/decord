@@ -1,9 +1,9 @@
-// Module ID: 6942
-// Function ID: 55389
+// Module ID: 6941
+// Function ID: 55398
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 6943, 6944, 4976, 664, 22, 4983, 6947, 1184, 6940, 4979, 6948, 6949, 6957, 6958, 561, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 6942, 6943, 4976, 664, 22, 4983, 6946, 1184, 6939, 4979, 6947, 6948, 6956, 6957, 561, 566, 686, 2]
 
-// Module 6942 (_isNativeReflectConstruct)
+// Module 6941 (_isNativeReflectConstruct)
 import useConsoleQuestUIStore from "useConsoleQuestUIStore";
 import _toPropertyKey from "_toPropertyKey";
 import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource";
@@ -245,7 +245,7 @@ function updateQuestRewardData(questId, entitlements) {
         tag = reward.tag;
       }
       let rewardCode = null;
-      if (tag === require(6947) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE) {
+      if (tag === require(6946) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE) {
         rewardCode = reward.rewardCode;
       }
       if (null != rewardCode) {
@@ -305,7 +305,7 @@ function _runExpirationCheck() {
       outer1_50.emitChange();
     }
   })();
-  let result = require(6940) /* _createForOfIteratorHelperLoose */.findNextUpcomingExpirationEpochMs(Array.from(store.values()));
+  let result = require(6939) /* _createForOfIteratorHelperLoose */.findNextUpcomingExpirationEpochMs(Array.from(store.values()));
   if (null != result) {
     const _Math = Math;
     const _Date = Date;
@@ -666,13 +666,13 @@ tmp5 = new tmp5(require("dispatcher"), {
         let result = map.set(value.id, value);
         let tmp10 = mapped;
         let tmp11 = dependencyMap;
-        let obj5 = mapped(6940);
+        let obj5 = mapped(6939);
         let result1 = map1.set(value.id, obj5.isQuestExpired(value));
         let targetedContent = value.targetedContent;
         if (targetedContent.includes(mapped(4979).QuestContent.QUEST_BAR)) {
           let tmp13 = mapped;
           let tmp14 = dependencyMap;
-          let obj6 = mapped(6948);
+          let obj6 = mapped(6947);
           let obj1 = {};
           let tmp15 = QuestsExperimentLocations;
           obj1.location = QuestsExperimentLocations.QUESTS_STORE;
@@ -715,7 +715,7 @@ tmp5 = new tmp5(require("dispatcher"), {
           let result3 = map.set(value.id, value);
           let tmp27 = mapped;
           let tmp28 = dependencyMap;
-          let obj10 = mapped(6940);
+          let obj10 = mapped(6939);
           let result4 = map1.set(value.id, obj10.isQuestExpired(value));
         }
         iter6 = tmp21Result();
@@ -803,7 +803,7 @@ tmp5 = new tmp5(require("dispatcher"), {
       }
       obj.adCreativeId = tmp11;
       obj.fetchedAt = fetchedAt;
-      obj.ttlMillis = require(6958) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds);
+      obj.ttlMillis = require(6957) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds);
       obj.adDecisionData = adDecisionData;
       obj.adContext = adContext;
       obj.metadataSealed = metadataSealed;
@@ -811,7 +811,7 @@ tmp5 = new tmp5(require("dispatcher"), {
       const _Map = Map;
       map1 = new Map(map1);
       const result1 = map1.set(placement, obj);
-      const obj6 = require(6958) /* resolveResponseTtl */;
+      const obj6 = require(6957) /* resolveResponseTtl */;
     } else if (null == quest) {
       map.delete(placement);
     } else {
@@ -842,13 +842,13 @@ tmp5 = new tmp5(require("dispatcher"), {
     let responseTtlSeconds;
     placement = placement.placement;
     ({ responseTtlSeconds, fetchedAt } = placement);
-    let obj = importDefault(6957);
+    let obj = importDefault(6956);
     if (obj.getConfig({ location: "handleClearExpiredQuestToDeliver" }).enableNewRequestBehavior) {
       let c4 = false;
       const _Map = Map;
       map = new Map(map);
       const result = map.set(placement, false);
-      obj = { questId: null, adCreativeId: null, fetchedAt, ttlMillis: require(6958) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds) };
+      obj = { questId: null, adCreativeId: null, fetchedAt, ttlMillis: require(6957) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds) };
       const _Map2 = Map;
       map1 = new Map(map1);
       const result1 = map1.set(placement, obj);
@@ -873,7 +873,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     ({ serverQuests, fetchedAt, responseTtlSeconds } = content);
     map = new Map(map);
     const result = map.set(content, false);
-    const responseTtl = require(6958) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds);
+    const responseTtl = require(6957) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds);
     let value = store2.get(content);
     let prop;
     if (null != value) {
@@ -895,7 +895,7 @@ tmp5 = new tmp5(require("dispatcher"), {
           let tmp17 = require;
           let tmp18 = dependencyMap;
           value = store.get(tmp8);
-          let obj5 = require(6949) /* questConfigFromServer */;
+          let obj5 = require(6948) /* questConfigFromServer */;
           let result2 = obj5.questWithUserStatusFromServer(tmp9);
           if (null != value) {
             let tmp11 = updateQuestData;
@@ -919,7 +919,7 @@ tmp5 = new tmp5(require("dispatcher"), {
             closure_36 = map3;
             let tmp29 = require;
             let tmp30 = dependencyMap;
-            let obj8 = require(6940) /* _createForOfIteratorHelperLoose */;
+            let obj8 = require(6939) /* _createForOfIteratorHelperLoose */;
             let result4 = map3.set(tmp8, obj8.isQuestExpired(result2));
             let tmp32 = result2;
           }
@@ -1077,21 +1077,21 @@ tmp5 = new tmp5(require("dispatcher"), {
   },
   QUESTS_USER_STATUS_UPDATE: function handleQuestUserStatusUpdate(user_status) {
     user_status = user_status.user_status;
-    let obj = require(6948) /* getQuestLogger */;
+    let obj = require(6947) /* getQuestLogger */;
     obj = { location: QuestsExperimentLocations.QUESTS_STORE };
     const questLogger = obj.getQuestLogger(obj);
     questLogger.log("Received user status update for " + user_status.quest_id, user_status);
-    const result = require(6949) /* questConfigFromServer */.questUserStatusFromServer(user_status);
+    const result = require(6948) /* questConfigFromServer */.questUserStatusFromServer(user_status);
     updateQuestData(user_status.quest_id, { userStatus: result });
     const value = store.get(user_status.quest_id);
     if (null != value) {
-      const isQuestExpiredResult = require(6940) /* _createForOfIteratorHelperLoose */.isQuestExpired(value);
+      const isQuestExpiredResult = require(6939) /* _createForOfIteratorHelperLoose */.isQuestExpired(value);
       if (store4.get(user_status.quest_id) !== isQuestExpiredResult) {
         const _Map = Map;
         const map = new Map(store4);
         store4 = map.set(user_status.quest_id, isQuestExpiredResult);
       }
-      const obj5 = require(6940) /* _createForOfIteratorHelperLoose */;
+      const obj5 = require(6939) /* _createForOfIteratorHelperLoose */;
     }
     let hasItem = 0 === Object.keys(result.progress).length;
     if (hasItem) {
@@ -1126,13 +1126,13 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
     const value = store.get(previewQuestUserStatus.questId);
     if (null != value) {
-      const isQuestExpiredResult = require(6940) /* _createForOfIteratorHelperLoose */.isQuestExpired(value);
+      const isQuestExpiredResult = require(6939) /* _createForOfIteratorHelperLoose */.isQuestExpired(value);
       if (store4.get(previewQuestUserStatus.questId) !== isQuestExpiredResult) {
         const _Map3 = Map;
         const map2 = new Map(store4);
         store4 = map2.set(previewQuestUserStatus.questId, isQuestExpiredResult);
       }
-      const obj4 = require(6940) /* _createForOfIteratorHelperLoose */;
+      const obj4 = require(6939) /* _createForOfIteratorHelperLoose */;
     }
   },
   QUESTS_PREVIEW_OVERRIDE: function handlePreviewOverride(arg0) {
@@ -1209,7 +1209,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
     obj.adCreativeId = tmp3;
     obj.fetchedAt = placement.fetchedAt;
-    obj.ttlMillis = require(6958) /* resolveResponseTtl */.resolveResponseTtl(placement.responseTtlSeconds);
+    obj.ttlMillis = require(6957) /* resolveResponseTtl */.resolveResponseTtl(placement.responseTtlSeconds);
     ({ adDecisionData: obj2.adDecisionData, adContext: obj2.adContext, metadataSealed: obj2.metadataSealed, trafficMetadataSealed: obj2.trafficMetadataSealed } = placement);
     map1 = new Map(map1);
     const result1 = map1.set(placement.placement, obj);

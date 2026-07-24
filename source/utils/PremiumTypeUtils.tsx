@@ -1,5 +1,5 @@
 // Module ID: 1872
-// Function ID: 20863
+// Function ID: 20864
 // Name: isPremiumAtLeast
 // Dependencies: [1851, 2]
 // Exports: isPremium, isPremiumAtMost, isPremiumExactly

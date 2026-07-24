@@ -1,10 +1,10 @@
-// Module ID: 14884
-// Function ID: 113485
+// Module ID: 14931
+// Function ID: 113806
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4122, 653, 33, 4130, 5052, 689, 3974, 4099, 4100, 1273, 1212, 3842, 566, 10364, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4122, 653, 33, 4130, 5052, 689, 3974, 4099, 4100, 1273, 1212, 3842, 566, 10393, 2]
 // Exports: default
 
-// Module 14884 (_isNativeReflectConstruct)
+// Module 14931 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import IMPACT_LIGHT from "IMPACT_LIGHT";
@@ -261,5 +261,5 @@ export default function UnreadBars(contentInset) {
   }
   items1[1] = tmp6;
   obj.children = items1;
-  return closure_14(require(10364) /* _toPropertyKey */.TransitionGroup, obj);
+  return closure_14(require(10393) /* _toPropertyKey */.TransitionGroup, obj);
 };

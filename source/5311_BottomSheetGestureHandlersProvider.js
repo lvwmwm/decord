@@ -1,5 +1,5 @@
 // Module ID: 5311
-// Function ID: 45824
+// Function ID: 45829
 // Name: BottomSheetGestureHandlersProvider
 // Dependencies: [31, 33, 5194, 1582, 5190, 5200]
 // Exports: default

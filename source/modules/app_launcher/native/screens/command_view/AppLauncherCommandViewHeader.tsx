@@ -1,10 +1,10 @@
-// Module ID: 11277
-// Function ID: 87728
+// Module ID: 11306
+// Function ID: 87968
 // Name: DEFAULT_CONTENT_PADDING
-// Dependencies: [31, 27, 1455, 33, 11251, 4130, 689, 11171, 3991, 3834, 7812, 5085, 4126, 1273, 2]
+// Dependencies: [31, 27, 1455, 33, 11280, 4130, 689, 11201, 3991, 3834, 7903, 5085, 4126, 1273, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 11277 (DEFAULT_CONTENT_PADDING)
+// Module 11306 (DEFAULT_CONTENT_PADDING)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -142,7 +142,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   if (null != token) {
     str = token;
   }
-  const tmp7 = section(7812);
+  const tmp7 = section(7903);
   if (null != memo) {
     obj2 = { style: tmp.appIcon, source: memo };
     let tmp14 = callback(section(5085), obj2);
@@ -163,7 +163,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   items2[1] = prop;
   obj4.style = items2;
   let items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  let items4 = [callback(section(3991).View, { style: items3 }), callback(section(11251), { onPress: onPress.onPressBack }), , , ];
+  let items4 = [callback(section(3991).View, { style: items3 }), callback(section(11280), { onPress: onPress.onPressBack }), , , ];
   const obj5 = { lineClamp: 1, animated: true, style: null, variant: "heading-lg/bold", color: "text-overlay-light" };
   const items5 = [tmp.appSmallName, animatedStyle];
   obj5.style = items5;

@@ -1,10 +1,10 @@
-// Module ID: 9060
-// Function ID: 71147
+// Module ID: 9099
+// Function ID: 71362
 // Name: openAcceptFriendRequestConfirmModal
-// Dependencies: [9061, 653, 33, 675, 4471, 9062, 1934, 2]
+// Dependencies: [9100, 653, 33, 675, 4471, 9101, 1934, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 9060 (openAcceptFriendRequestConfirmModal)
+// Module 9099 (openAcceptFriendRequestConfirmModal)
 import { ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID as closure_3 } from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";

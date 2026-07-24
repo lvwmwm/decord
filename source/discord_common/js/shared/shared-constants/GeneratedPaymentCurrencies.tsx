@@ -1,5 +1,5 @@
 // Module ID: 7224
-// Function ID: 58224
+// Function ID: 58253
 // Name: GeneratedPaymentCurrencies
 // Dependencies: [2]
 

@@ -1,9 +1,9 @@
-// Module ID: 15383
-// Function ID: 117408
+// Module ID: 15430
+// Function ID: 117730
 // Name: getVoiceStates
-// Dependencies: [31, 11408, 10077, 9103, 9133, 33, 10078, 566, 14982, 15060, 15337, 1212, 3843, 15340, 10076, 15378, 15333, 15344, 2]
+// Dependencies: [31, 11436, 10109, 9141, 9169, 33, 10110, 566, 15029, 15107, 15384, 1212, 3843, 15387, 10108, 15425, 15380, 15391, 2]
 
-// Module 15383 (getVoiceStates)
+// Module 15430 (getVoiceStates)
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

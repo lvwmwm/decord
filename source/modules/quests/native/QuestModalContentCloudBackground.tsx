@@ -1,10 +1,10 @@
-// Module ID: 14023
-// Function ID: 107348
+// Module ID: 14073
+// Function ID: 107671
 // Name: items
-// Dependencies: [31, 27, 33, 4130, 3840, 4066, 4554, 5085, 14024, 14025, 2]
+// Dependencies: [31, 27, 33, 4130, 3840, 4066, 4554, 5085, 14074, 14075, 2]
 // Exports: default
 
-// Module 14023 (items)
+// Module 14073 (items)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -103,9 +103,9 @@ export default function QuestModalContentCloudBackground(align) {
     const items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
     obj2.style = items2;
     if (isThemeDarkResult) {
-      let tmp16 = 14024;
+      let tmp16 = 14074;
     } else {
-      tmp16 = 14025;
+      tmp16 = 14075;
     }
     obj2.source = importDefault(tmp16);
     obj2.resizeMode = str2;

@@ -1,10 +1,10 @@
-// Module ID: 9289
-// Function ID: 72563
+// Module ID: 9325
+// Function ID: 72772
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 6831, 6833, 33, 4130, 689, 9290, 4126, 1212, 1459, 1557, 9272, 566, 21, 9273, 9275, 7879, 2]
+// Dependencies: [5, 57, 31, 27, 6830, 6832, 33, 4130, 689, 9326, 4126, 1212, 1459, 1557, 9308, 566, 21, 9309, 9311, 7527, 2]
 // Exports: default
 
-// Module 9289 (_createForOfIteratorHelperLoose)
+// Module 9325 (_createForOfIteratorHelperLoose)
 import closure_3 from "CONVERSATION_COLORS";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -102,7 +102,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function renderItem(item) {
   item = item.item;
-  return jsx(importDefault(9290), { channelId: item.channelId, conversationId: item.conversationId });
+  return jsx(importDefault(9326), { channelId: item.channelId, conversationId: item.conversationId });
 }
 function keyExtractor(conversationId) {
   return conversationId.conversationId;

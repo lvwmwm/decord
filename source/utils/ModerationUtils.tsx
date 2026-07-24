@@ -1,10 +1,10 @@
-// Module ID: 13740
-// Function ID: 105384
+// Module ID: 13791
+// Function ID: 105708
 // Name: mapColorToHighlightColor
-// Dependencies: [653, 3805, 688, 13741, 1212, 1282, 2]
+// Dependencies: [653, 3805, 688, 13792, 1212, 1282, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 13740 (mapColorToHighlightColor)
+// Module 13791 (mapColorToHighlightColor)
 import ME from "ME";
 import { ExplicitContentFilterTypes as closure_5 } from "items";
 
@@ -13,21 +13,21 @@ let closure_3;
 let closure_4;
 function mapColorToHighlightColor(arg0) {
   if (obj.unsafe_getRawColor("PRIMARY_400") === arg0) {
-    return require(13741) /* HighlightColors */.HighlightColors.ACCENT;
+    return require(13792) /* HighlightColors */.HighlightColors.ACCENT;
   } else {
     if (obj3.unsafe_getRawColor("GREEN_360") === arg0) {
-      return require(13741) /* HighlightColors */.HighlightColors.GREEN;
+      return require(13792) /* HighlightColors */.HighlightColors.GREEN;
     } else {
       if (obj4.unsafe_getRawColor("YELLOW_360") === arg0) {
-        return require(13741) /* HighlightColors */.HighlightColors.YELLOW;
+        return require(13792) /* HighlightColors */.HighlightColors.YELLOW;
       } else {
         if (obj5.unsafe_getRawColor("ORANGE_345") === arg0) {
-          return require(13741) /* HighlightColors */.HighlightColors.ORANGE;
+          return require(13792) /* HighlightColors */.HighlightColors.ORANGE;
         } else {
           if (obj2.unsafe_getRawColor("RED_400") === arg0) {
-            return require(13741) /* HighlightColors */.HighlightColors.RED;
+            return require(13792) /* HighlightColors */.HighlightColors.RED;
           } else {
-            return require(13741) /* HighlightColors */.HighlightColors.NONE;
+            return require(13792) /* HighlightColors */.HighlightColors.NONE;
           }
           obj2 = require(688) /* unsafe_getRawColor */;
         }

@@ -1,10 +1,10 @@
-// Module ID: 11225
-// Function ID: 87385
+// Module ID: 11148
+// Function ID: 86760
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [7, 6, 31, 5039, 1352, 1907, 1917, 1910, 3767, 1849, 4567, 22, 1327, 4320, 4974, 1881, 6924, 2]
+// Dependencies: [7, 6, 31, 5039, 1352, 1907, 1917, 1910, 3767, 1849, 4567, 22, 1327, 4320, 4974, 1881, 6923, 2]
 // Exports: parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 11225 (_createForOfIteratorHelperLoose)
+// Module 11148 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";
 import closure_5 from "_isNativeReflectConstruct";
@@ -14,7 +14,7 @@ import closure_8 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_10 from "_isNativeReflectConstruct";
 import closure_11 from "_isNativeReflectConstruct";
-import MENTION_SENTINEL from "MENTION_SENTINEL";
+import regExp from "regExp";
 import importDefaultResult from "_createForOfIteratorHelperLoose";
 
 let closure_12;
@@ -165,7 +165,7 @@ function getChannels(getGuildId, arr) {
     });
   }
 }
-({ MENTION_SENTINEL: closure_12, CHANNEL_SENTINEL: closure_13 } = MENTION_SENTINEL);
+({ MENTION_SENTINEL: closure_12, CHANNEL_SENTINEL: closure_13 } = regExp);
 const re14 = /^@(([^@#:]+)#([0-9]{4}))$/i;
 function matchPrefix(arg0, str, sortBy) {
   let closure_0 = arg0;
@@ -299,7 +299,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
     return {};
   } else {
     let obj = {};
-    const parserState = require(6924) /* _createForOfIteratorHelperLoose */.createParserState(channel);
+    const parserState = require(6923) /* _createForOfIteratorHelperLoose */.createParserState(channel);
     const tmp8 = _createForOfIteratorHelperLoose(activeCommand.options);
     let iter2 = tmp8();
     if (!iter2.done) {
@@ -316,7 +316,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
                   obj = { type: "text" };
                   let tmp2 = importDefault;
                   let tmp3 = dependencyMap;
-                  let obj2 = importDefault(6924);
+                  let obj2 = importDefault(6923);
                   obj.text = obj2.parse(channel, tmp[0].text, parserState).content;
                   let items = [obj];
                   obj[value.name] = items;

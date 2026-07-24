@@ -1,10 +1,10 @@
-// Module ID: 11231
-// Function ID: 87443
+// Module ID: 11260
+// Function ID: 87683
 // Name: EmptyState
-// Dependencies: [31, 27, 33, 4130, 689, 11171, 8182, 11232, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 11201, 8226, 11261, 4126, 1212, 2]
 // Exports: default
 
-// Module 11231 (EmptyState)
+// Module 11260 (EmptyState)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,10 +23,10 @@ const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/na
 
 export default function EmptyState() {
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(11171) /* handleApplicationSelected */;
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8182) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
+  let obj = require(11201) /* handleApplicationSelected */;
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8226) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
   obj = { style: tmp.container };
-  const items = [callback(importDefault(11232), {}), ];
+  const items = [callback(importDefault(11261), {}), ];
   obj = { style: tmp.textContainer, variant: "text-md/semibold", color: "text-default" };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.string(require(1212) /* getSystemLocale */.t["V7+xhH"]);

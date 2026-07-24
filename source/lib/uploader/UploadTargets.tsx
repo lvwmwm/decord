@@ -1,5 +1,5 @@
 // Module ID: 4706
-// Function ID: 40947
+// Function ID: 40951
 // Name: MessageAttachmentUploadTarget
 // Dependencies: [6, 7, 1348, 653, 4670, 4666, 4707, 4709, 2]
 // Exports: getUploadTarget

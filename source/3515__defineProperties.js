@@ -1,5 +1,5 @@
 // Module ID: 3515
-// Function ID: 27031
+// Function ID: 27032
 // Name: _defineProperties
 // Dependencies: [3512]
 

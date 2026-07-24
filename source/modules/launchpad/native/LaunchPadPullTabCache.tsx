@@ -1,10 +1,10 @@
-// Module ID: 15643
-// Function ID: 120632
+// Module ID: 15690
+// Function ID: 120954
 // Name: getLaunchPadPullTabPositionCached
-// Dependencies: [10451, 587, 477, 4684, 1450, 2]
+// Dependencies: [10480, 587, 477, 4684, 1450, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, persistLaunchPadPullTabPosition
 
-// Module 15643 (getLaunchPadPullTabPositionCached)
+// Module 15690 (getLaunchPadPullTabPositionCached)
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 
 let closure_3;

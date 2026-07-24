@@ -1,10 +1,10 @@
-// Module ID: 15619
-// Function ID: 120457
+// Module ID: 15666
+// Function ID: 120779
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [31, 27, 1849, 653, 1345, 33, 3849, 3976, 4066, 566, 3776, 1212, 2556, 5796, 5584, 3946, 1334, 5187, 5121, 5446, 5807, 477, 5085, 15620, 7956, 1273, 4126, 4543, 4130, 689, 2]
+// Dependencies: [31, 27, 1849, 653, 1345, 33, 3849, 3976, 4066, 566, 3776, 1212, 2556, 5796, 5582, 3946, 1334, 5187, 5121, 5446, 5807, 477, 5085, 15667, 8043, 1273, 4126, 4543, 4130, 689, 2]
 // Exports: default
 
-// Module 15619 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 15666 (DisplayNameStylesFlywheelMobileActionSheet)
 import result from "result";
 import { View } from "Button";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -145,7 +145,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     obj9 = markAsDismissed(477);
     if (obj9.isIOS()) {
       const obj11 = {};
-      const obj12 = { uri: ref(15620) };
+      const obj12 = { uri: ref(15667) };
       obj11.source = obj12;
       obj11.style = tmp3.image;
       obj11.resizeMode = "contain";
@@ -154,8 +154,8 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       let tmp21Result = tmp21(ref(5085), obj11);
       const tmp28 = ref(5085);
     } else {
-      const obj13 = { url: ref(15620), style: tmp3.image, autoplay: true };
-      tmp21Result = tmp21(markAsDismissed(7956).APNGPlayer, obj13);
+      const obj13 = { url: ref(15667), style: tmp3.image, autoplay: true };
+      tmp21Result = tmp21(markAsDismissed(8043).APNGPlayer, obj13);
     }
   }
 };

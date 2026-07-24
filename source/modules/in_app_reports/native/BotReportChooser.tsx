@@ -1,10 +1,10 @@
-// Module ID: 11896
-// Function ID: 92058
+// Module ID: 11923
+// Function ID: 92296
 // Name: ReportAppProfile
-// Dependencies: [31, 4167, 33, 5500, 4126, 1212, 5502, 4098, 7600, 566, 5465, 2]
+// Dependencies: [31, 4167, 33, 5498, 4126, 1212, 5500, 4098, 7689, 566, 5463, 2]
 // Exports: default
 
-// Module 11896 (ReportAppProfile)
+// Module 11923 (ReportAppProfile)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ function ReportAppProfile(arg0) {
     const result = outer1_0(outer1_2[8]).showReportModalForUser(closure_0, closure_1, closure_2, _isNativeReflectConstruct);
   };
   obj.arrow = true;
-  return callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  return callback(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 function ReportAppBehavior(arg0) {
   let _isNativeReflectConstruct;
@@ -46,7 +46,7 @@ function ReportAppBehavior(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getAppIdForBotUserId(id.id));
-  let obj1 = require(5465) /* fetchApplication */;
+  let obj1 = require(5463) /* fetchApplication */;
   const data = obj1.useApplication(stateFromStores).data;
   obj = {};
   obj = { variant: "heading-md/semibold" };
@@ -68,7 +68,7 @@ function ReportAppBehavior(arg0) {
   };
   obj.arrow = true;
   obj.disabled = null == data;
-  return callback(require(5502) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  return callback(require(5500) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 ({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 const BotReportChooser = "BotReportChooser";
@@ -86,7 +86,7 @@ export default function BotReportChooser(arg0) {
   const merged1 = Object.assign(arg0);
   items[1] = callback(ReportAppBehavior, {});
   obj.children = items;
-  obj.children = callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5500) /* ActionSheet */.ActionSheet, obj);
+  obj.children = callback2(require(5500) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback(require(5498) /* ActionSheet */.ActionSheet, obj);
 };
 export const BOT_REPORT_CHOOSER_KEY = "BotReportChooser";

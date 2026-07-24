@@ -1,9 +1,9 @@
-// Module ID: 10629
-// Function ID: 82889
+// Module ID: 10658
+// Function ID: 83081
 // Name: FocusedControlsHeader
-// Dependencies: [31, 27, 653, 33, 4130, 1273, 3991, 10630, 4131, 5121, 1450, 8018, 10631, 10635, 10530, 4528, 5464, 5484, 10599, 10641, 675, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 1273, 3991, 10659, 4131, 5121, 1450, 8063, 10660, 10664, 10559, 4528, 5462, 5482, 10628, 10670, 675, 2]
 
-// Module 10629 (FocusedControlsHeader)
+// Module 10658 (FocusedControlsHeader)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -47,7 +47,7 @@ function FocusedControlsHeader(reveal) {
   fn2.__initData = closure_12;
   const animatedStyle = obj1.useAnimatedStyle(fn2);
   obj = { style: animatedStyle };
-  obj1 = { top: !derivedValue(10630)(), left: isTouchingLeftScreenEdge, right: true, children: callback(closure_5, { style: tmp.headerContainer, children: header }) };
+  obj1 = { top: !derivedValue(10659)(), left: isTouchingLeftScreenEdge, right: true, children: callback(closure_5, { style: tmp.headerContainer, children: header }) };
   obj.children = callback(reveal(5121).SafeAreaPaddingView, obj1);
   return callback(derivedValue(3991).View, obj);
 }
@@ -58,14 +58,14 @@ function FocusedControlsHeaderGradient() {
   obj = { height: "100%", width };
   obj = {};
   const obj1 = { id: "grad", y1: "0%", x1: "0", x2: "0", y2: "100%" };
-  const items1 = [callback(require(8018) /* inlineStyles */.Stop, { offset: "0%", stopColor: "black", stopOpacity: ".8" }), callback(require(8018) /* inlineStyles */.Stop, { offset: "66%", stopColor: "black", stopOpacity: ".51" }), callback(require(8018) /* inlineStyles */.Stop, { offset: "100%", stopColor: "black", stopOpacity: "0" })];
+  const items1 = [callback(require(8063) /* inlineStyles */.Stop, { offset: "0%", stopColor: "black", stopOpacity: ".8" }), callback(require(8063) /* inlineStyles */.Stop, { offset: "66%", stopColor: "black", stopOpacity: ".51" }), callback(require(8063) /* inlineStyles */.Stop, { offset: "100%", stopColor: "black", stopOpacity: "0" })];
   obj1.children = items1;
-  obj.children = callback2(require(8018) /* inlineStyles */.LinearGradient, obj1);
-  const items2 = [callback(require(8018) /* inlineStyles */.Defs, obj), ];
+  obj.children = callback2(require(8063) /* inlineStyles */.LinearGradient, obj1);
+  const items2 = [callback(require(8063) /* inlineStyles */.Defs, obj), ];
   const obj2 = { height: "100%", width, fill: "url(#grad)" };
-  items2[1] = callback(require(8018) /* inlineStyles */.Rect, obj2);
+  items2[1] = callback(require(8063) /* inlineStyles */.Rect, obj2);
   obj.children = items2;
-  obj.children = callback2(require(8018) /* inlineStyles */.Svg, obj);
+  obj.children = callback2(require(8063) /* inlineStyles */.Svg, obj);
   return callback(closure_5, obj);
 }
 ({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
@@ -107,13 +107,13 @@ const memoResult = importAllResult.memo((disableGradient) => {
   let analyticsLocations;
   let callback;
   ({ omitPTT, bottomHeader, onDrawerClose, isTouchingLeftScreenEdge } = disableGradient);
-  let obj = require(10631) /* useGlobalStatusIndicatorState */;
+  let obj = require(10660) /* useGlobalStatusIndicatorState */;
   const globalStatusIndicatorState = obj.useGlobalStatusIndicatorState();
-  let obj1 = require(10635) /* nativeEventEmitter */;
+  let obj1 = require(10664) /* nativeEventEmitter */;
   globalStatusIndicatorHeightSharedValue = obj1.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp3 = globalStatusIndicatorHeightSharedValue(10630)();
+  const tmp3 = globalStatusIndicatorHeightSharedValue(10659)();
   dependencyMap = tmp3;
-  reveal = reveal.useContext(require(10530) /* useRevealProviderValue */.RevealContext).reveal;
+  reveal = reveal.useContext(require(10559) /* useRevealProviderValue */.RevealContext).reveal;
   let obj2 = require(4528) /* SCREEN_READER_ENABLED_GETTER */;
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   if (!reveal) {
@@ -164,8 +164,8 @@ const memoResult = importAllResult.memo((disableGradient) => {
   fn.__initData = closure_15;
   const animatedStyle = require(3991).useAnimatedStyle(fn);
   const obj7 = require(3991);
-  analyticsLocations = globalStatusIndicatorHeightSharedValue(5464)(globalStatusIndicatorHeightSharedValue(5484).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  callback = globalStatusIndicatorHeightSharedValue(10599)();
+  analyticsLocations = globalStatusIndicatorHeightSharedValue(5462)(globalStatusIndicatorHeightSharedValue(5482).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  callback = globalStatusIndicatorHeightSharedValue(10628)();
   obj1 = {};
   if (null == containerStyle) {
     containerStyle = derivedValue.absoluteFill;
@@ -213,7 +213,7 @@ const memoResult = importAllResult.memo((disableGradient) => {
         reveal,
         children
       };
-      tmp14 = callback(globalStatusIndicatorHeightSharedValue(10641), obj3);
+      tmp14 = callback(globalStatusIndicatorHeightSharedValue(10670), obj3);
     }
   }
   items1[2] = tmp14;

@@ -1,5 +1,5 @@
 // Module ID: 6687
-// Function ID: 51454
+// Function ID: 51476
 // Name: hasUserTrialOfferExpired
 // Dependencies: [57, 31, 1849, 6688, 566, 3776, 4015, 2]
 // Exports: useTrialOffer

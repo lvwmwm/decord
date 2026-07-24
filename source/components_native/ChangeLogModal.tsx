@@ -1,13 +1,13 @@
-// Module ID: 14375
-// Function ID: 109916
+// Module ID: 14425
+// Function ID: 110239
 // Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1905, 33, 4130, 689, 3842, 8274, 675, 14376, 5085, 8302, 1212, 4660, 8474, 9610, 1273, 7766, 1450, 7767, 1457, 5087, 3712, 7768, 4126, 4337, 5519, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1905, 33, 4130, 689, 3842, 8318, 675, 14426, 5085, 8346, 1212, 4660, 8518, 9646, 1273, 7859, 1450, 7860, 1457, 5087, 3712, 7861, 4126, 4337, 5517, 2]
 // Exports: default
 
-// Module 14375 (_callSuper)
+// Module 14425 (_callSuper)
 import getActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
-import module_14376 from "module_14376";
+import module_14426 from "module_14426";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "module_4337";
@@ -32,7 +32,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return module_14376(arg0, constructResult);
+  return module_14426(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -158,13 +158,13 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f109931;
+      tmp13 = f110254;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f109931, obj5);
+      tmp14 = jsx(f110254, obj5);
     }
     return tmp14;
   }
@@ -426,7 +426,7 @@ export default function ChangelogModal() {
     obj.CHANGELOG = obj;
     return obj;
   }, []);
-  return callback4(require(5519) /* NavigationStack */.Navigator, { screens, initialRouteName: "CHANGELOG" });
+  return callback4(require(5517) /* NavigationStack */.Navigator, { screens, initialRouteName: "CHANGELOG" });
 };
 export const ListItem = tmp4;
 export { ChangeLogScreen };

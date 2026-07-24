@@ -1,10 +1,10 @@
-// Module ID: 16459
-// Function ID: 128262
+// Module ID: 16506
+// Function ID: 128586
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 57, 31, 27, 16424, 33, 4130, 689, 12905, 16436, 16428, 1212, 7494, 5085, 4126, 16460, 2]
+// Dependencies: [5, 57, 31, 27, 16471, 33, 4130, 689, 12957, 16483, 16475, 1212, 8521, 5085, 4126, 16507, 2]
 // Exports: default
 
-// Module 16459 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 16506 (GuildRoleSubscriptionTierConfirmationModal)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -38,8 +38,8 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
   const merged = Object.assign(onDone, obj);
   let importDefault;
   const tmp4 = _createForOfIteratorHelperLoose();
-  const tmp5 = importDefault(12905)();
-  obj = onDone(16436);
+  const tmp5 = importDefault(12957)();
+  obj = onDone(16483);
   const editStateContext = obj.useEditStateContext();
   ({ guildId, editStateId } = editStateContext);
   const tmp7 = callback2(React.useState(false), 2);
@@ -67,29 +67,29 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
       const obj3 = { style: tmp5.header };
       const intl3 = onDone(1212).intl;
       obj3.children = intl3.string(onDone(1212).t["3S8gA7"]);
-      const items1 = [callback3(importDefault(7494), obj3), ];
+      const items1 = [callback3(importDefault(8521), obj3), ];
       const obj4 = { style: tmp4.coverPhotoContainer };
       const obj5 = { style: tmp4.coverPhoto, resizeMode: "cover", source: first1 };
       obj4.children = callback3(importDefault(5085), obj5);
       items1[1] = callback3(View, obj4);
       obj2.children = items1;
       tmp17 = callback4(closure_9, obj2);
-      const tmp23 = importDefault(7494);
+      const tmp23 = importDefault(8521);
     }
     const items2 = [tmp17, , ];
     const obj6 = { style: tmp5.header };
     const intl4 = onDone(1212).intl;
     obj6.children = intl4.string(onDone(1212).t["74JctW"]);
-    items2[1] = callback3(importDefault(7494), obj6);
+    items2[1] = callback3(importDefault(8521), obj6);
     const obj7 = { style: tmp4.description, variant: "text-md/medium", color: "interactive-text-active", children: callback2(closure_7.useGroupDescriptionState(), 1)[0] };
     items2[2] = callback3(onDone(4126).Text, obj7);
     obj1.children = items2;
     flag = callback4(closure_9, obj1);
     const tmp15 = callback4;
     const tmp16 = closure_9;
-    const tmp29 = importDefault(7494);
+    const tmp29 = importDefault(8521);
   }
-  const items3 = [flag, callback3(onDone(16460).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  const items3 = [flag, callback3(onDone(16507).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   obj["children"] = items3;
-  return callback4(importDefault(16428), obj);
+  return callback4(importDefault(16475), obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7656
-// Function ID: 61246
+// Module ID: 7745
+// Function ID: 61532
 // Name: getFallbackDoubleTapDisambiguatedEmoji
-// Dependencies: [31, 1340, 4991, 7657, 1345, 1852, 33, 3771, 3803, 7658, 3769, 4099, 7005, 7659, 3775, 7661, 1934, 4472, 3946, 1334, 2]
+// Dependencies: [31, 1340, 4991, 7746, 1345, 1852, 33, 3771, 3803, 7747, 3769, 4099, 7004, 7748, 3775, 7750, 1934, 4472, 3946, 1334, 2]
 // Exports: areEmojisEqual, handleAddDefaultDoubleTapReaction
 
-// Module 7656 (getFallbackDoubleTapDisambiguatedEmoji)
+// Module 7745 (getFallbackDoubleTapDisambiguatedEmoji)
 import result from "result";
 import { isContentShown } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -130,8 +130,8 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
       })) {
         const result1 = require(4099) /* getAndroidLightImpactEffect */.triggerHapticFeedback(require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.IMPACT_LIGHT);
         const obj19 = require(4099) /* getAndroidLightImpactEffect */;
-        obj = { channelId: channel.id, messageId: message.id, emoji: tmp5, location: require(7005) /* checkReactionResponse */.ReactionLocations.DOUBLE_TAP };
-        require(7005) /* checkReactionResponse */.removeReaction(obj);
+        obj = { channelId: channel.id, messageId: message.id, emoji: tmp5, location: require(7004) /* checkReactionResponse */.ReactionLocations.DOUBLE_TAP };
+        require(7004) /* checkReactionResponse */.removeReaction(obj);
       } else {
         if (flag) {
           let tmp10Result = getFallbackDoubleTapDisambiguatedEmoji();
@@ -154,13 +154,13 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
               require(4472) /* useAlertStore */.openAlert(NITRO_UPSELL_ALERT_KEY, <lazyResult emojiName={tmp10Result.name} />);
             } else if (null != emojiUnavailableReason) {
               let obj4 = { emojiName: tmp10Result.name, reason: emojiUnavailableReason };
-              const result2 = require(7659) /* DoubleTapErrorToastIcon */.showDoubleTapErrorToast(obj4);
+              const result2 = require(7748) /* DoubleTapErrorToastIcon */.showDoubleTapErrorToast(obj4);
             }
           }
           const result3 = require(4099) /* getAndroidLightImpactEffect */.triggerHapticFeedback(require(4099) /* getAndroidLightImpactEffect */.HapticFeedbackTypes.IMPACT_LIGHT);
-          const obj10 = require(7005) /* checkReactionResponse */;
+          const obj10 = require(7004) /* checkReactionResponse */;
           const id = channel.id;
-          obj10.addReaction(id, message.id, tmp5, require(7005) /* checkReactionResponse */.ReactionLocations.DOUBLE_TAP);
+          obj10.addReaction(id, message.id, tmp5, require(7004) /* checkReactionResponse */.ReactionLocations.DOUBLE_TAP);
           const obj9 = require(4099) /* getAndroidLightImpactEffect */;
           const obj5 = { dismissAction: ContentDismissActionType.INDIRECT_ACTION };
           const result4 = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj5);
@@ -171,7 +171,7 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
           }
           const obj11 = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
         } else if (!flag) {
-          obj4 = require(7659) /* DoubleTapErrorToastIcon */;
+          obj4 = require(7748) /* DoubleTapErrorToastIcon */;
           obj7 = {};
           let emojiName;
           if (null != setting) {
@@ -183,7 +183,7 @@ export const handleAddDefaultDoubleTapReaction = function handleAddDefaultDouble
       }
       const tmp3 = reactionEmojiFromSettingsValue;
     }
-    obj22 = require(7658) /* canReactToMessageInternal */;
+    obj22 = require(7747) /* canReactToMessageInternal */;
   }
 };
 export const areEmojisEqual = function areEmojisEqual(customEmojiById, emoji) {

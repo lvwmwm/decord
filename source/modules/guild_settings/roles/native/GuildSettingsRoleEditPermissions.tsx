@@ -1,13 +1,13 @@
-// Module ID: 16328
-// Function ID: 127405
+// Module ID: 16375
+// Function ID: 127729
 // Name: GuildSettingsRoleEditPermission
-// Dependencies: [57, 31, 27, 1391, 3758, 1849, 653, 33, 4130, 689, 3763, 44, 5459, 1212, 4098, 16329, 1934, 15514, 16326, 5772, 675, 483, 4126, 15518, 5504, 5503, 1273, 8430, 2]
+// Dependencies: [57, 31, 27, 1391, 3758, 1849, 653, 33, 4130, 689, 3763, 44, 4126, 1212, 4098, 16376, 1934, 15561, 16373, 5772, 675, 483, 15565, 5502, 5501, 1273, 8474, 2]
 // Exports: default
 
-// Module 16328 (GuildSettingsRoleEditPermission)
+// Module 16375 (GuildSettingsRoleEditPermission)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
-import get_ActivityIndicator from "getNoResultsAltSource";
+import get_ActivityIndicator from "set";
 import { isGuildOwner } from "isGuildOwner";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_11 from "_isNativeReflectConstruct";
@@ -96,13 +96,13 @@ export default function GuildSettingsRoleEditPermission(guild) {
         }
     };
     obj1.children = intl.format(guild(1212).t.ZhSOBy, obj2);
-    tmp12 = callback2(guild(5459).TextWithIOSLinkWorkaround, obj1);
+    tmp12 = callback2(guild(4126).Text, obj1);
   }
   obj.children = tmp12;
   canResult = obj2.can(obj);
   const tmp14 = callback2;
   const tmp15 = c6;
-  let obj7 = role(15514);
+  let obj7 = role(15561);
   const guildPermissionSpec = obj7.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {};
@@ -117,7 +117,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const found = mapped.filter((permissions) => permissions.permissions.length > 0);
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   let obj3 = {};
-  const items = [callback2(role(16326), { role }), , , ];
+  const items = [callback2(role(16373), { role }), , , ];
   const tmp14Result = callback2(c6, obj);
   const tmp21 = mapped1.length > 0;
   const tmp22 = closure_16;
@@ -155,10 +155,10 @@ export default function GuildSettingsRoleEditPermission(guild) {
             tmp = !_undefined.can(flag, flag, null, obj);
             const obj3 = outer1_2(outer1_3[21]);
           }
-          obj = { variant: "text-xs/medium", color: "text-subtle", style: tmp.subLabel, children: guild(outer1_3[23]).renderDescription(description) };
-          const obj5 = guild(outer1_3[23]);
+          obj = { variant: "text-xs/medium", color: "text-subtle", style: tmp.subLabel, children: guild(outer1_3[22]).renderDescription(description) };
+          const obj5 = guild(outer1_3[22]);
           const obj1 = { start: 0 === index, end: index === section.section.data.length - 1 };
-          const tmp20 = outer1_14(guild(outer1_3[22]).Text, obj);
+          const tmp20 = outer1_14(guild(outer1_3[12]).Text, obj);
           obj1.value = outer1_2(outer1_3[21]).has(closure_2, flag);
           obj1.disabled = tmp;
           obj1.onValueChange = function onValueChange(arg0) {
@@ -173,11 +173,11 @@ export default function GuildSettingsRoleEditPermission(guild) {
           };
           obj1.label = title;
           obj1.subLabel = tmp20;
-          return outer1_14(guild(outer1_3[24]).TableSwitchRow, obj1);
+          return outer1_14(guild(outer1_3[23]).TableSwitchRow, obj1);
         },
       renderSectionHeader(section) {
           const title = section.section.title;
-          const obj = { accessible: true, accessibilityRole: "header", accessibilityLabel: title, children: outer1_14(guild(outer1_3[25]).TableRowGroupTitle, { title }) };
+          const obj = { accessible: true, accessibilityRole: "header", accessibilityLabel: title, children: outer1_14(guild(outer1_3[24]).TableRowGroupTitle, { title }) };
           return outer1_14(c6, obj);
         },
       SectionSeparatorComponent(leadingItem) {
@@ -199,7 +199,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     };
     let tmp24Result = tmp24(closure_8, obj6);
   } else {
-    obj7 = { Illustration: guild(8430).NoResultsAlt };
+    obj7 = { Illustration: guild(8474).NoResultsAlt };
     ({ emptyState: obj12.style, emptyStateText: obj12.bodyStyle } = tmp);
     const intl2 = guild(1212).intl;
     const obj8 = { query: first };

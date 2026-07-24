@@ -1,9 +1,9 @@
-// Module ID: 14883
-// Function ID: 113467
+// Module ID: 14930
+// Function ID: 113788
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 6879, 3947, 4970, 14813, 13997, 33, 4130, 7588, 1557, 13990, 13999, 574, 620, 566, 3991, 14884, 2]
+// Dependencies: [57, 31, 27, 6878, 3947, 4970, 14860, 14047, 33, 4130, 7677, 1557, 14040, 14049, 574, 620, 566, 3991, 14931, 2]
 
-// Module 14883 (_createForOfIteratorHelperLoose)
+// Module 14930 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -219,7 +219,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId) {
       } else {
         let tmp32 = require;
         let tmp33 = dependencyMap;
-        if (value.type === require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
+        if (value.type === require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
           flag2 = flag;
           if (value.layoutStart > diff) {
             break;
@@ -250,7 +250,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId) {
                 let type = value.type;
                 let tmp16 = require;
                 let tmp17 = dependencyMap;
-                if (require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.SECTION === type) {
+                if (require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.SECTION === type) {
                   let element = guildsTree.getNode(value.recyclerKey);
                   flag3 = flag;
                   tmp9 = element;
@@ -321,7 +321,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId) {
                 } else {
                   let tmp35 = require;
                   let tmp36 = dependencyMap;
-                  if (require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM === type) {
+                  if (require(7677) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM === type) {
                     let node = guildsTree.getNode(value.recyclerKey);
                     flag3 = flag;
                     tmp9 = tmp4;
@@ -538,7 +538,7 @@ const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {
     obj["orientation"] = "visible";
     fastList.scrollToLocation(obj);
   }, items2);
-  obj.children = jsx(top(14884), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
+  obj.children = jsx(top(14931), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
   return <scrollPosValue style={tmp6.style} collapsable={false} pointerEvents="box-none" testID="guilds-bar-unread-bars" />;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/guilds_bar/native/GuildsBarUnreadBars.tsx");

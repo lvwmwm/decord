@@ -1,10 +1,10 @@
-// Module ID: 11621
-// Function ID: 90243
+// Module ID: 11648
+// Function ID: 90481
 // Name: GuildPowerupsBoostButton
 // Dependencies: [31, 1838, 1849, 4023, 653, 33, 566, 6636, 1867, 4966, 6640, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 11621 (GuildPowerupsBoostButton)
+// Module 11648 (GuildPowerupsBoostButton)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

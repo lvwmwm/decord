@@ -1,9 +1,9 @@
-// Module ID: 5587
-// Function ID: 47418
+// Module ID: 5585
+// Function ID: 47415
 // Name: getKeyboardHeightWithOffset
 // Dependencies: [57, 31, 27, 1452, 33, 1823, 3996, 1555, 5163, 5161, 5162, 2]
 
-// Module 5587 (getKeyboardHeightWithOffset)
+// Module 5585 (getKeyboardHeightWithOffset)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

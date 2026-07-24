@@ -1,10 +1,10 @@
-// Module ID: 16195
-// Function ID: 125693
+// Module ID: 16242
+// Function ID: 126017
 // Name: isEligibleForSafetyFlowsExperiment
 // Dependencies: [1325, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 16195 (isEligibleForSafetyFlowsExperiment)
+// Module 16242 (isEligibleForSafetyFlowsExperiment)
 const obj = { name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const tmp2 = require("getUnitId")(obj);
 let closure_0 = tmp2;

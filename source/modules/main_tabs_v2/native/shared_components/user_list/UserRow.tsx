@@ -1,9 +1,9 @@
-// Module ID: 8834
-// Function ID: 69623
+// Module ID: 8873
+// Function ID: 69838
 // Name: handleCall
-// Dependencies: [31, 27, 4122, 4167, 6905, 1348, 4217, 3767, 8818, 653, 33, 4130, 689, 4140, 44, 8835, 9057, 3830, 9058, 8923, 6906, 566, 1273, 4126, 3969, 9063, 5464, 9088, 1212, 9089, 4084, 4082, 4543, 1833, 9085, 4629, 8492, 1934, 9090, 9091, 8013, 4571, 7650, 4361, 8516, 8513, 8523, 9093, 8577, 9094, 8753, 5165, 2]
+// Dependencies: [31, 27, 4122, 4167, 6904, 1348, 4217, 3767, 8857, 653, 33, 4130, 689, 4140, 44, 8874, 9096, 3830, 9097, 8962, 6905, 566, 1273, 4126, 3969, 9102, 5462, 9126, 1212, 9127, 4084, 4082, 4543, 1833, 9123, 4629, 8537, 1934, 9128, 9129, 7477, 4571, 7739, 4361, 8561, 8558, 8568, 9131, 8620, 9132, 8792, 5165, 2]
 
-// Module 8834 (handleCall)
+// Module 8873 (handleCall)
 import importAllResult from "CheckmarkLargeIcon";
 import { View } from "getAvatarDecoration";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -44,7 +44,7 @@ function handleCall(id) {
 }
 function handleAccept(id, applicationId) {
   let closure_0 = applicationId;
-  let obj = importDefault(9057);
+  let obj = importDefault(9096);
   obj = {
     userId: id.id,
     applicationId,
@@ -64,12 +64,12 @@ function handleAccept(id, applicationId) {
 function handleCancel(id, applicationId) {
   if (null != applicationId) {
     let obj = { userId: id.id, applicationId };
-    const result = importDefault(9058).cancelGameFriendRequest(obj);
-    const obj4 = importDefault(9058);
+    const result = importDefault(9097).cancelGameFriendRequest(obj);
+    const obj4 = importDefault(9097);
     const result1 = require(3830) /* presentAddedFriendToast */.presentGameFriendRequestIgnoredToast();
     const obj6 = require(3830) /* presentAddedFriendToast */;
   } else {
-    obj = importDefault(8923);
+    obj = importDefault(8962);
     obj = { location: Friends_v2 };
     obj.cancelFriendRequest(id.id, obj);
     const result2 = require(3830) /* presentAddedFriendToast */.presentFriendRequestIgnoredToast();
@@ -77,7 +77,7 @@ function handleCancel(id, applicationId) {
   }
 }
 function handleAcceptSuggestion(id) {
-  let obj = importDefault(8923);
+  let obj = importDefault(8962);
   obj = { userId: id.id, context: obj, type: undefined, fromFriendSuggestion: true };
   obj = { location: Friends_v2 };
   obj.addRelationship(obj);
@@ -100,7 +100,7 @@ function UserRowSubLabel(arg0) {
     if (type !== constants.SUGGESTION) {
       if (type !== constants.PENDING_OUTGOING) {
         obj = { userId: user.id, guildId, textStyle: gameIcon.activityText, animate };
-        return callback(importDefault(9063), obj);
+        return callback(importDefault(9102), obj);
       }
     }
   }

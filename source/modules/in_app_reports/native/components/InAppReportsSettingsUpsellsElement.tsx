@@ -1,10 +1,10 @@
-// Module ID: 12341
-// Function ID: 95996
+// Module ID: 12368
+// Function ID: 96236
 // Name: SettingsUpsellsTableRow
-// Dependencies: [57, 31, 27, 1348, 653, 33, 4130, 689, 4559, 7604, 12335, 5791, 566, 7612, 5503, 1212, 5459, 5796, 4324, 2]
+// Dependencies: [57, 31, 27, 1348, 653, 33, 4130, 689, 4559, 7693, 12362, 5791, 566, 7701, 5501, 1212, 4126, 5796, 4324, 2]
 // Exports: default
 
-// Module 12341 (SettingsUpsellsTableRow)
+// Module 12368 (SettingsUpsellsTableRow)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -29,7 +29,7 @@ function SettingsUpsellsTableRow(arg0) {
   const tmp = callback(React.useState(false), 2);
   const dependencyMap = tmp[1];
   importDefault(4559)(() => {
-    callback2(outer1_0(7604).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
+    callback2(outer1_0(7693).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
   });
   const obj = {
     title,
@@ -39,11 +39,11 @@ function SettingsUpsellsTableRow(arg0) {
     onPress() {
       callback();
       dependencyMap(true);
-      callback2(outer1_0(7604).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
+      callback2(outer1_0(7693).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
     },
     icon: callback2(require(5791) /* SettingsIcon */.SettingsIcon, {})
   };
-  return callback2(importDefault(12335), obj);
+  return callback2(importDefault(12362), obj);
 }
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = ME);
 ({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
@@ -106,7 +106,7 @@ export default function SettingsUpsellElement(settingsUpsells) {
         }
     };
     obj2.children = intl2.format(settingsUpsells(reportId[15]).t["u7mo+k"], obj3);
-    items1[1] = callback2(settingsUpsells(reportId[16]).TextWithIOSLinkWorkaround, obj2);
+    items1[1] = callback2(settingsUpsells(reportId[16]).Text, obj2);
     obj.children = items1;
     tmp4 = callback3(closure_5, obj);
   }

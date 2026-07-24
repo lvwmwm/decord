@@ -1,9 +1,9 @@
-// Module ID: 16581
-// Function ID: 129338
+// Module ID: 16628
+// Function ID: 129662
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 5, 6, 7, 15, 17, 18, 1347, 10479, 4150, 4149, 4162, 4203, 6942, 15714, 4976, 664, 6948, 6940, 10476, 4977, 9444, 4979, 6969, 4302, 4301, 4983, 6965, 4194, 1327, 4300, 6963, 5078, 2]
+// Dependencies: [57, 5, 6, 7, 15, 17, 18, 1347, 10508, 4150, 4149, 4162, 4203, 6941, 15761, 4976, 664, 6947, 6939, 10505, 4977, 9480, 4979, 6968, 4302, 4301, 4983, 6964, 4194, 1327, 4300, 6962, 5078, 2]
 
-// Module 16581 (_isNativeReflectConstruct)
+// Module 16628 (_isNativeReflectConstruct)
 import "_slicedToArray";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -113,7 +113,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function isQuestProgressable(userStatus) {
-  let tmp = !require(6940) /* _createForOfIteratorHelperLoose */.isQuestExpired(userStatus);
+  let tmp = !require(6939) /* _createForOfIteratorHelperLoose */.isQuestExpired(userStatus);
   if (tmp) {
     tmp = null != userStatus.userStatus;
   }
@@ -126,7 +126,7 @@ function isQuestProgressable(userStatus) {
   return tmp;
 }
 function handleEmbeddedActivityLaunchSuccess(applicationId) {
-  let obj = require(10476) /* _createForOfIteratorHelperLoose */;
+  let obj = require(10505) /* _createForOfIteratorHelperLoose */;
   const tmp2 = _createForOfIteratorHelperLoose(obj.getEligibleQuestsForApplicationId(quests.quests, applicationId));
   const iter = tmp2();
   let iter2 = iter;
@@ -143,8 +143,8 @@ function handleEmbeddedActivityLaunchSuccess(applicationId) {
       let iter3 = tmp2();
       iter2 = iter3;
     }
-    obj = { questContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY, questContentCTA: require(6969) /* getQuestContentName */.QuestContentCTA.START_QUEST, sourceQuestContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY };
-    return require(9444) /* _manuallyStartConsoleQuest */.enrollInQuest(tmp3.id, obj);
+    obj = { questContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY, questContentCTA: require(6968) /* getQuestContentName */.QuestContentCTA.START_QUEST, sourceQuestContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.RUNNING_ACTIVITY };
+    return require(9480) /* _manuallyStartConsoleQuest */.enrollInQuest(tmp3.id, obj);
   }
 }
 function isQuestRobloxRelated(arr, distributor) {

@@ -1,9 +1,9 @@
-// Module ID: 13702
-// Function ID: 105156
+// Module ID: 13753
+// Function ID: 105480
 // Name: route
-// Dependencies: [31, 13623, 1849, 7662, 653, 4470, 1212, 5594, 566, 10095, 13626, 2]
+// Dependencies: [31, 13674, 1849, 7751, 653, 4470, 1212, 5592, 566, 10127, 13677, 2]
 
-// Module 13702 (route)
+// Module 13753 (route)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -37,8 +37,8 @@ createToggle = {
   },
   useTrailing: function useAccountSecurityKeysSettingTrailing() {
     if (!_isNativeReflectConstruct.hasFetchedCredentials()) {
-      const webAuthnCredentials = require(5594) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
-      let obj = require(5594) /* _fetchWebAuthnConditionalChallenge */;
+      const webAuthnCredentials = require(5592) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
+      let obj = require(5592) /* _fetchWebAuthnConditionalChallenge */;
     }
     const items = [_isNativeReflectConstruct];
     return require(566) /* initialize */.useStateFromStores(items, () => {
@@ -53,7 +53,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(13626) /* UserSettingsWebAuthn */.default;
+    return require(13677) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

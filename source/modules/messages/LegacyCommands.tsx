@@ -1,10 +1,10 @@
-// Module ID: 11120
-// Function ID: 86528
+// Module ID: 11150
+// Function ID: 86797
 // Name: executeCommand
-// Dependencies: [57, 4991, 4349, 653, 3803, 7933, 3829, 7005, 3769, 6691, 4324, 2]
+// Dependencies: [57, 4991, 4349, 653, 3803, 8020, 3829, 7004, 3769, 6691, 4324, 2]
 // Exports: handleLegacyCommands
 
-// Module 11120 (executeCommand)
+// Module 11150 (executeCommand)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -52,7 +52,7 @@ const obj5 = {
             const trimmed = str.trim();
             const byName = disambiguatedEmojiContext.getByName(trimmed.slice(2, -1));
             if (null != byName) {
-              const obj2 = require(7005) /* checkReactionResponse */;
+              const obj2 = require(7004) /* checkReactionResponse */;
               obj2.addReaction(channel.id, lastResult.id, require(3769) /* getReactionEmojiName */.toReactionEmoji(byName));
               const obj = { content: "" };
               return obj;
@@ -87,7 +87,7 @@ obj4 = {
   action(arg0, channel) {
     channel = channel.channel;
     if (null != channel.guild_id) {
-      let obj = importDefault(7933);
+      let obj = importDefault(8020);
       obj.changeNickname(channel.guild_id, channel.id, closure_8, arg0);
       obj = { content: "" };
       return obj;

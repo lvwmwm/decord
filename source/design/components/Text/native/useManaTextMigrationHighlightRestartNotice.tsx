@@ -1,10 +1,10 @@
-// Module ID: 14679
-// Function ID: 111916
+// Module ID: 14726
+// Function ID: 112237
 // Name: useManaTextMigrationHighlightRestartNotice
 // Dependencies: [31, 4129, 566, 4471, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 14679 (useManaTextMigrationHighlightRestartNotice)
+// Module 14726 (useManaTextMigrationHighlightRestartNotice)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

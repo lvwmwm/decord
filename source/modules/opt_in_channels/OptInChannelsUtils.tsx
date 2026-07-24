@@ -1,10 +1,10 @@
-// Module ID: 9980
-// Function ID: 77115
+// Module ID: 10012
+// Function ID: 77309
 // Name: setIndex
-// Dependencies: [31, 1348, 5070, 4142, 3767, 1849, 653, 1355, 6766, 4326, 5607, 5045, 4320, 5071, 6760, 9981, 5069, 1198, 3946, 1334, 566, 1212, 3712, 21, 2]
+// Dependencies: [31, 1348, 5070, 4142, 3767, 1849, 653, 1355, 6766, 4326, 5605, 5045, 4320, 5071, 6760, 10013, 5069, 1198, 3946, 1334, 566, 1212, 3712, 21, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 9980 (setIndex)
+// Module 10012 (setIndex)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -129,8 +129,8 @@ export const clearRecentChannels = function clearRecentChannels(outer1_0, outer1
   if (arg2 === undefined) {
     tmp = null;
   }
-  require(9981) /* _bulkClearRecents */.bulkClearRecents(outer1_0, outer1_1);
-  const obj = require(9981) /* _bulkClearRecents */;
+  require(10013) /* _bulkClearRecents */.bulkClearRecents(outer1_0, outer1_1);
+  const obj = require(10013) /* _bulkClearRecents */;
   require(5069) /* _createForOfIteratorHelperLoose */.bulkAck(outer1_1.map((channelId) => ({ channelId, readStateType: outer1_14.CHANNEL, messageId: outer1_6.lastMessageId(channelId) })));
   if (null != tmp) {
     require(1198) /* shouldNavigate */.transitionTo(closure_9.CHANNEL(outer1_0, tmp));

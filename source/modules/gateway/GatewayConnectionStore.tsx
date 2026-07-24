@@ -1,7 +1,7 @@
 // Module ID: 4808
-// Function ID: 41877
+// Function ID: 41881
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 1316, 1194, 4809, 1348, 4177, 4202, 4223, 1906, 4810, 4216, 653, 662, 12563, 12607, 3, 587, 5733, 4944, 477, 12599, 22, 4194, 12578, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5, 1316, 1194, 4809, 1348, 4177, 4202, 4223, 1906, 4810, 4216, 653, 662, 12614, 12658, 3, 587, 5733, 4944, 477, 12650, 22, 4194, 12629, 566, 686, 2]
 
 // Module 4808 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -115,23 +115,23 @@ async function _handleConnectionOpen(arg0, arg1) {
   const outer2_29 = null;
 }
 function handleClipsFlags() {
-  const localVoiceState = require(12563) /* importDefaultResult1 */.localVoiceState;
+  const localVoiceState = require(12614) /* importDefaultResult1 */.localVoiceState;
   localVoiceState.update();
 }
 function handleMediaEngineChange() {
-  const localVoiceState = require(12563) /* importDefaultResult1 */.localVoiceState;
+  const localVoiceState = require(12614) /* importDefaultResult1 */.localVoiceState;
   localVoiceState.update();
   return false;
 }
 function handleLocalPresenceChange() {
-  const localPresenceState = require(12563) /* importDefaultResult1 */.localPresenceState;
+  const localPresenceState = require(12614) /* importDefaultResult1 */.localPresenceState;
   localPresenceState.update();
   return false;
 }
 function deleteStream(streamKey) {
-  const socket = require(12563) /* importDefaultResult1 */.socket;
+  const socket = require(12614) /* importDefaultResult1 */.socket;
   if (socket.isSessionEstablished()) {
-    const socket2 = require(12563) /* importDefaultResult1 */.socket;
+    const socket2 = require(12614) /* importDefaultResult1 */.socket;
     socket2.streamDelete(streamKey);
   }
 }
@@ -227,11 +227,11 @@ let tmp5 = ((Store) => {
 tmp5.displayName = "GatewayConnectionStore";
 tmp5 = new tmp5(require("dispatcher"), {
   START_SESSION: function handleSessionStart() {
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     const verbose = importDefaultResult.verbose;
     if (socket.isClosed()) {
       verbose("Socket is reconnecting because of starting new session");
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       let flag = socket2.connect();
     } else {
       verbose("Socket is not reconnecting during a new session because it is not closed");
@@ -241,36 +241,36 @@ tmp5 = new tmp5(require("dispatcher"), {
   },
   LOGIN_SUCCESS: function handleSessionRefresh() {
     const obj = {};
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     obj.isEstablished = socket.isSessionEstablished();
     importDefaultResult.verbose("session refresh dispatched", obj);
-    const socket2 = require(12563) /* importDefaultResult1 */.socket;
+    const socket2 = require(12614) /* importDefaultResult1 */.socket;
     const tmp2 = !socket2.isSessionEstablished();
     let connectResult = !tmp2;
     if (!tmp2) {
-      const socket3 = require(12563) /* importDefaultResult1 */.socket;
+      const socket3 = require(12614) /* importDefaultResult1 */.socket;
       socket3.close();
-      const socket4 = require(12563) /* importDefaultResult1 */.socket;
+      const socket4 = require(12614) /* importDefaultResult1 */.socket;
       connectResult = socket4.connect();
     }
     return connectResult;
   },
   LOGOUT: function handleLogout(isSwitchingAccount) {
     if (isSwitchingAccount.isSwitchingAccount) {
-      const localPresenceState = require(12563) /* importDefaultResult1 */.localPresenceState;
+      const localPresenceState = require(12614) /* importDefaultResult1 */.localPresenceState;
       localPresenceState.handleAccountSwitch();
     }
     importDefaultResult.verbose("Closing socket because of logout");
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     socket.close();
   },
   CLEAR_CACHES: function handleClearCaches(resetSocket) {
     if (resetSocket.resetSocket) {
-      const socket = require(12563) /* importDefaultResult1 */.socket;
+      const socket = require(12614) /* importDefaultResult1 */.socket;
       socket.close();
-      const dispatcher = require(12563) /* importDefaultResult1 */.socket.dispatcher;
+      const dispatcher = require(12614) /* importDefaultResult1 */.socket.dispatcher;
       dispatcher.clear();
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       socket2.connect();
     }
     return false;
@@ -292,16 +292,16 @@ tmp5 = new tmp5(require("dispatcher"), {
       return false;
     } else if (state.willReconnect) {
       if (null != state.streamKey) {
-        const socket2 = require(12563) /* importDefaultResult1 */.socket;
+        const socket2 = require(12614) /* importDefaultResult1 */.socket;
         socket2.streamPing(state.streamKey);
       } else {
-        const socket = require(12563) /* importDefaultResult1 */.socket;
+        const socket = require(12614) /* importDefaultResult1 */.socket;
         socket.voiceServerPing();
       }
     }
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(guildId) {
-    const localVoiceState = require(12563) /* importDefaultResult1 */.localVoiceState;
+    const localVoiceState = require(12614) /* importDefaultResult1 */.localVoiceState;
     localVoiceState.update({ guildId: guildId.guildId, channelId: guildId.channelId });
     let channelId = null;
     if (guildId.lockVoiceStateForResume) {
@@ -316,15 +316,15 @@ tmp5 = new tmp5(require("dispatcher"), {
     }
     if (isIOSResult) {
       if (null == guildId.channelId) {
-        const socket3 = require(12563) /* importDefaultResult1 */.socket;
+        const socket3 = require(12614) /* importDefaultResult1 */.socket;
         socket3.close(true);
       } else {
-        const socket = require(12563) /* importDefaultResult1 */.socket;
+        const socket = require(12614) /* importDefaultResult1 */.socket;
         if (socket.isClosed()) {
-          importAll(12599).setIsPaused(false);
-          const socket2 = require(12563) /* importDefaultResult1 */.socket;
+          importAll(12650).setIsPaused(false);
+          const socket2 = require(12614) /* importDefaultResult1 */.socket;
           socket2.connect();
-          const obj3 = importAll(12599);
+          const obj3 = importAll(12650);
         }
       }
     }
@@ -357,24 +357,24 @@ tmp5 = new tmp5(require("dispatcher"), {
     }, false);
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    if (guild.guild.id === require(12563) /* importDefaultResult1 */.localVoiceState.guildId) {
-      const localVoiceState = require(12563) /* importDefaultResult1 */.localVoiceState;
+    if (guild.guild.id === require(12614) /* importDefaultResult1 */.localVoiceState.guildId) {
+      const localVoiceState = require(12614) /* importDefaultResult1 */.localVoiceState;
       localVoiceState.setState({ guildId: null, channelId: null });
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    if (channel.channel.id === require(12563) /* importDefaultResult1 */.localVoiceState.channelId) {
-      const localVoiceState = require(12563) /* importDefaultResult1 */.localVoiceState;
+    if (channel.channel.id === require(12614) /* importDefaultResult1 */.localVoiceState.channelId) {
+      const localVoiceState = require(12614) /* importDefaultResult1 */.localVoiceState;
       localVoiceState.setState({ guildId: null, channelId: null });
     }
   },
   CALL_DELETE: function handleCallDelete(channelId) {
     channelId = channelId.channelId;
-    if (channelId === require(12563) /* importDefaultResult1 */.localVoiceState.channelId) {
+    if (channelId === require(12614) /* importDefaultResult1 */.localVoiceState.channelId) {
       if (c29 === channelId) {
         return false;
       } else {
-        const localVoiceState = require(12563) /* importDefaultResult1 */.localVoiceState;
+        const localVoiceState = require(12614) /* importDefaultResult1 */.localVoiceState;
         localVoiceState.setState({ guildId: null, channelId: null });
       }
     }
@@ -390,33 +390,33 @@ tmp5 = new tmp5(require("dispatcher"), {
           isClosedResult = state.state === constants2.ACTIVE;
         }
         if (isClosedResult) {
-          const socket3 = require(12563) /* importDefaultResult1 */.socket;
+          const socket3 = require(12614) /* importDefaultResult1 */.socket;
           isClosedResult = socket3.isClosed();
         }
         if (isClosedResult) {
-          importAll(12599).setIsPaused(false);
-          const socket4 = require(12563) /* importDefaultResult1 */.socket;
+          importAll(12650).setIsPaused(false);
+          const socket4 = require(12614) /* importDefaultResult1 */.socket;
           socket4.connect();
-          const obj2 = importAll(12599);
+          const obj2 = importAll(12650);
         }
       }
-      const socket = require(12563) /* importDefaultResult1 */.socket;
+      const socket = require(12614) /* importDefaultResult1 */.socket;
       socket.close(true);
     } else {
       if (state.state === constants2.ACTIVE) {
-        importAll(12599).setIsPaused(false);
+        importAll(12650).setIsPaused(false);
         if (closure_11.isAuthenticated()) {
-          const socket2 = require(12563) /* importDefaultResult1 */.socket;
+          const socket2 = require(12614) /* importDefaultResult1 */.socket;
           socket2.resetBackoff("App state is active");
         }
-        const obj3 = importAll(12599);
+        const obj3 = importAll(12650);
       }
       return false;
     }
   },
   GUILD_MEMBERS_REQUEST: function handleGuildMembersRequest(userIds) {
     const _require = userIds;
-    let socket = _require(12563).socket;
+    let socket = _require(12614).socket;
     if (socket.isSessionEstablished()) {
       if ("userIds" in userIds) {
         const obj2 = importDefault(22)(userIds.userIds);
@@ -426,7 +426,7 @@ tmp5 = new tmp5(require("dispatcher"), {
         });
         const chunkResult = importDefault(22)(userIds.userIds).chunk(100);
       } else {
-        const socket2 = _require(12563).socket;
+        const socket2 = _require(12614).socket;
         const obj = {};
         ({ query: obj.query, limit: obj.limit } = userIds);
         obj.presences = userIds.presences;
@@ -440,32 +440,32 @@ tmp5 = new tmp5(require("dispatcher"), {
     let guildId;
     let query;
     ({ guildId, query, continuationToken } = arg0);
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       const obj = { query, continuationToken };
       socket2.searchRecentMembers(guildId, obj);
     }
   },
   GUILD_SUBSCRIPTIONS_FLUSH: function handleGuildSubscriptionsFlush(subscriptions) {
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       const result = socket2.updateGuildSubscriptions(subscriptions.subscriptions);
     }
     return false;
   },
   CALL_CONNECT: function handleCallConnect(channelId) {
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       socket2.callConnect(channelId.channelId);
     }
     return false;
   },
   CALL_CONNECT_MULTIPLE: function handleCallConnectMultiple(channelIds) {
     channelIds = channelIds.channelIds;
-    let socket = require(12563) /* importDefaultResult1 */.socket;
+    let socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
       const item = channelIds.forEach((channelId) => {
         const socket = outer1_0(outer1_3[18]).socket;
@@ -480,7 +480,7 @@ tmp5 = new tmp5(require("dispatcher"), {
     let guildId;
     let streamType;
     ({ streamType, guildId, channelId } = arg0);
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
       if (null != guildId) {
         channel = channel.getChannel(channelId);
@@ -495,7 +495,7 @@ tmp5 = new tmp5(require("dispatcher"), {
           region = call.region;
         }
       }
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       if (null == region) {
         region = preferredRegion.getPreferredRegion();
       }
@@ -507,12 +507,12 @@ tmp5 = new tmp5(require("dispatcher"), {
     let allowMultiple;
     let streamKey;
     ({ streamKey, allowMultiple } = arg0);
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
       if (!allowMultiple) {
         cleanupAllStreamsExceptSelf();
       }
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       socket2.streamWatch(streamKey);
     }
     return false;
@@ -526,14 +526,14 @@ tmp5 = new tmp5(require("dispatcher"), {
     let paused;
     let streamKey;
     ({ streamKey, paused } = arg0);
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       socket2.streamSetPaused(streamKey, paused);
     }
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     socket.expeditedHeartbeat(5000, "user clicked on notification", true);
     return false;
   },
@@ -542,27 +542,27 @@ tmp5 = new tmp5(require("dispatcher"), {
     let guildId;
     let threads;
     ({ guildId, channelId, threads } = arg0);
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     const forumUnreads = socket.requestForumUnreads(guildId, channelId, threads);
   },
   REQUEST_SOUNDBOARD_SOUNDS: function handleRequestSoundboardSounds(guildIds) {
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     const soundboardSounds = socket.requestSoundboardSounds(guildIds.guildIds);
   },
   REMOTE_COMMAND: function handleRemoteCommand(arg0) {
     let payload;
     let sessionId;
     ({ sessionId, payload } = arg0);
-    const socket = require(12563) /* importDefaultResult1 */.socket;
+    const socket = require(12614) /* importDefaultResult1 */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12563) /* importDefaultResult1 */.socket;
+      const socket2 = require(12614) /* importDefaultResult1 */.socket;
       socket2.remoteCommand(sessionId, payload);
     }
     return false;
   },
   RESET_SOCKET: function handleResetSocket(args) {
-    if (require(12563) /* importDefaultResult1 */.socket.connectionState !== importDefault(12578).WILL_RECONNECT) {
-      const socket = require(12563) /* importDefaultResult1 */.socket;
+    if (require(12614) /* importDefaultResult1 */.socket.connectionState !== importDefault(12629).WILL_RECONNECT) {
+      const socket = require(12614) /* importDefaultResult1 */.socket;
       const result = socket.resetSocketAndClearCacheOnError(args.args);
     }
   },

@@ -1,13 +1,13 @@
-// Module ID: 16450
-// Function ID: 128212
+// Module ID: 16497
+// Function ID: 128536
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1348, 5070, 3758, 653, 4326, 33, 4130, 689, 5052, 4320, 4098, 14969, 5085, 16387, 566, 5500, 4126, 1212, 5772, 4660, 4337, 8408, 1934, 8410, 8412, 1273, 12540, 5189, 2]
+// Dependencies: [57, 31, 27, 1348, 5070, 3758, 653, 4326, 33, 4130, 689, 5052, 4320, 4098, 15016, 5085, 16434, 566, 5498, 4126, 1212, 5772, 4660, 4337, 8452, 1934, 8454, 8456, 1273, 12591, 5189, 2]
 // Exports: default
 
-// Module 16450 (_createForOfIteratorHelperLoose)
+// Module 16497 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
-import { View } from "module_8412";
+import { View } from "module_8456";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
@@ -122,9 +122,9 @@ function ChannelRow(channel) {
   obj.selected = selected;
   obj.disableHighlightOnPress = true;
   obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  const items1 = [callback(onChannelSelected(14969), obj), ];
+  const items1 = [callback(onChannelSelected(15016), obj), ];
   if (selected) {
-    obj = { style: tmp.selectedIcon, source: onChannelSelected(16387) };
+    obj = { style: tmp.selectedIcon, source: onChannelSelected(16434) };
     selected = callback(onChannelSelected(5085), obj);
     const tmp12 = onChannelSelected(5085);
   }
@@ -265,7 +265,7 @@ export default function ChannelSelectorActionSheet(guildId) {
       str = str2.toString();
     }
     obj6.color = str;
-    obj6.source = importDefault(12540);
+    obj6.source = importDefault(12591);
     const items3 = [callback(guildId(1273).Icon, obj6), ];
     const obj7 = { style: tmp.createChannelLabel, variant: "text-md/medium", color: "text-link" };
     const intl3 = guildId(1212).intl;
@@ -290,5 +290,5 @@ export default function ChannelSelectorActionSheet(guildId) {
       return outer1_11(outer1_17, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
     }
   });
-  return callback(guildId(5500).ActionSheet, obj);
+  return callback(guildId(5498).ActionSheet, obj);
 };

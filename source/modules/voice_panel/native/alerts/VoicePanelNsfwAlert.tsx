@@ -1,10 +1,10 @@
-// Module ID: 15868
-// Function ID: 122624
+// Module ID: 15915
+// Function ID: 122946
 // Name: VoicePanelNsfwAlert
 // Dependencies: [31, 1391, 1838, 33, 4475, 4475, 1212, 5048, 4944, 2]
 // Exports: default
 
-// Module 15868 (VoicePanelNsfwAlert)
+// Module 15915 (VoicePanelNsfwAlert)
 import "result";
 import { isGuildNSFW } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

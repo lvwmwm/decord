@@ -1,9 +1,9 @@
-// Module ID: 16245
-// Function ID: 126478
+// Module ID: 16292
+// Function ID: 126802
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1857, 3767, 1849, 653, 33, 4130, 689, 1395, 1392, 4814, 3976, 5470, 4126, 16228, 1212, 3969, 1273, 1387, 4320, 4312, 3712, 1327, 665, 9644, 5151, 5167, 16237, 4660, 4098, 8492, 13574, 3842, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 1857, 3767, 1849, 653, 33, 4130, 689, 1395, 1392, 4814, 3976, 5468, 4126, 16275, 1212, 3969, 1273, 1387, 4320, 4312, 3712, 1327, 665, 9680, 5151, 5167, 16284, 4660, 4098, 8537, 13625, 3842, 566, 2]
 
-// Module 16245 (_isNativeReflectConstruct)
+// Module 16292 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ensureAvatarSource from "ensureAvatarSource";
@@ -71,7 +71,7 @@ function getUserAvatarSource(arg0, action, guildId) {
   return obj4.ensureAvatarSource(obj5.makeSource(require(1395) /* ensureAvatarSource */.getAutomodAvatarURL()));
 }
 function ApplicationHook(applicationId) {
-  let obj = require(5470) /* useGetOrFetchApplications */;
+  let obj = require(5468) /* useGetOrFetchApplications */;
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId);
   let tmp2 = null;
   if (null != getOrFetchApplication) {

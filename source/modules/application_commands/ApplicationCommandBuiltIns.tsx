@@ -1,10 +1,10 @@
-// Module ID: 7930
-// Function ID: 63209
+// Module ID: 8017
+// Function ID: 63521
 // Name: getOptionValue
-// Dependencies: [5, 1348, 3758, 1849, 4566, 653, 7931, 1919, 4123, 6755, 1212, 7932, 1881, 3803, 7933, 7934, 5650, 7935, 669, 7937, 6691, 6924, 5048, 3969, 664, 8174, 3712, 4140, 44, 5629, 8175, 2]
+// Dependencies: [5, 1348, 3758, 1849, 4566, 653, 8018, 1919, 4123, 6755, 1212, 8019, 1881, 3803, 8020, 8021, 5650, 8022, 669, 8024, 6691, 6923, 5048, 3969, 664, 8218, 3712, 4140, 44, 5627, 8219, 2]
 // Exports: getBuiltInCommands
 
-// Module 7930 (getOptionValue)
+// Module 8017 (getOptionValue)
 import importDefaultResult from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -390,7 +390,7 @@ obj13.execute = function execute(arr) {
       if (null != tmp3) {
         str3 = tmp3;
       }
-      const obj = importDefault(7933);
+      const obj = importDefault(8020);
       const id = guild.id;
       const id2 = channel.id;
       if (!str3) {
@@ -450,7 +450,7 @@ Object.defineProperty(obj17, "displayDescription", {
   },
   set: undefined
 });
-Object.defineProperty(obj17, "maxLength", { get: () => require(7934) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj17, "maxLength", { get: () => require(8021) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
 obj17.required = true;
 items8[1] = obj17;
 obj15.options = items8;
@@ -993,7 +993,7 @@ Object.defineProperty(obj31, "displayDescription", {
   set: undefined
 });
 obj31.required = true;
-Object.defineProperty(obj31, "maxLength", { get: () => require(7934) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj31, "maxLength", { get: () => require(8021) /* getMaxMessageLength_ */.getMaxMessageLength(), set: undefined });
 items12[1] = obj31;
 obj29.options = items12;
 obj29.execute = function execute(arr, channel) {
@@ -1096,8 +1096,8 @@ obj32.execute = function execute(arr, channel) {
     }
     const NumberResult = Number(num);
     const NumberResult1 = Number(num2);
-    require(5629) /* startDiceRoll */.startDiceRoll(channel.id, NumberResult, NumberResult1);
-    const obj = require(5629) /* startDiceRoll */;
+    require(5627) /* startDiceRoll */.startDiceRoll(channel.id, NumberResult, NumberResult1);
+    const obj = require(5627) /* startDiceRoll */;
   }
 };
 items[sum10 + 1] = obj32;

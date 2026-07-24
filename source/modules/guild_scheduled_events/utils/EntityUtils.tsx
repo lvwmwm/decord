@@ -1,10 +1,10 @@
-// Module ID: 8349
-// Function ID: 66494
+// Module ID: 8393
+// Function ID: 66722
 // Name: _getLocationFromEvent
 // Dependencies: [1348, 1354, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 8349 (_getLocationFromEvent)
+// Module 8393 (_getLocationFromEvent)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 

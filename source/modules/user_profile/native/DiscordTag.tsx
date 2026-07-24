@@ -1,10 +1,10 @@
-// Module ID: 9429
-// Function ID: 73402
+// Module ID: 9465
+// Function ID: 73611
 // Name: DiscordTag
-// Dependencies: [31, 27, 33, 4130, 689, 4126, 8523, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 8568, 2]
 // Exports: default
 
-// Module 9429 (DiscordTag)
+// Module 9465 (DiscordTag)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -65,8 +65,8 @@ export default function DiscordTag(arg0) {
     tmp16 = null;
     if (!hideBotTag) {
       const obj2 = { style: tmp.botTag, verified: user.isVerifiedBot() };
-      tmp16 = callback(importDefault(8523), obj2);
-      const tmp20 = importDefault(8523);
+      tmp16 = callback(importDefault(8568), obj2);
+      const tmp20 = importDefault(8568);
     }
   }
   items2[1] = tmp16;

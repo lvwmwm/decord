@@ -1,10 +1,10 @@
-// Module ID: 11604
-// Function ID: 90179
+// Module ID: 11631
+// Function ID: 90417
 // Name: GuildPowerupsPerkCard
-// Dependencies: [31, 27, 33, 4130, 689, 4066, 3976, 11601, 11556, 4554, 4126, 11557, 1273, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4066, 3976, 11628, 11585, 4554, 4126, 11586, 1273, 1212, 2]
 // Exports: default
 
-// Module 11604 (GuildPowerupsPerkCard)
+// Module 11631 (GuildPowerupsPerkCard)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -64,8 +64,8 @@ export default function GuildPowerupsPerkCard(arg0) {
     }
     obj1.imageUrl = str;
     obj1.isAnimated = isImageAnimated;
-    riveComponent = callback(importDefault(11556), obj1);
-    const tmp12 = importDefault(11556);
+    riveComponent = callback(importDefault(11585), obj1);
+    const tmp12 = importDefault(11585);
     const tmp9 = callback;
   }
   const items1 = [riveComponent, callback(importDefault(4554), { colors: tmp5, style: tmp3.gradient })];
@@ -79,7 +79,7 @@ export default function GuildPowerupsPerkCard(arg0) {
   const obj5 = {};
   const merged1 = Object.assign(merged);
   obj5["status"] = status;
-  items4[1] = callback(require(11557) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
+  items4[1] = callback(require(11586) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
   obj3.children = items4;
   items2[1] = callback2(View, obj3);
   let tmp14 = "new" === badge;
@@ -102,5 +102,5 @@ export default function GuildPowerupsPerkCard(arg0) {
   }
   items2[3] = tmp18;
   obj.children = items2;
-  return callback2(importDefault(11601), obj);
+  return callback2(importDefault(11628), obj);
 };

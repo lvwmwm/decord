@@ -1,7 +1,7 @@
 // Module ID: 6650
-// Function ID: 51072
+// Function ID: 51083
 // Name: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING
-// Dependencies: [57, 31, 27, 1849, 3781, 3782, 6637, 6651, 5621, 653, 1851, 33, 4130, 6652, 1557, 5464, 5484, 6653, 4559, 675, 566, 1456, 1390, 6654, 6656, 686, 6658, 6638, 6686, 7126, 6685, 7373, 7374, 7375, 5793, 3776, 7376, 7416, 7418, 7419, 7999, 12389, 7187, 477, 2]
+// Dependencies: [57, 31, 27, 1849, 3781, 3782, 6637, 6651, 5619, 653, 1851, 33, 4130, 6652, 1557, 5462, 5482, 6653, 4559, 675, 566, 1456, 1390, 6654, 6656, 686, 6658, 6638, 6686, 7125, 6685, 7373, 7374, 7375, 5793, 3776, 7376, 7378, 7418, 7420, 7421, 8059, 12399, 12447, 7187, 477, 2]
 // Exports: default
 
 // Module 6650 (USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING)
@@ -40,7 +40,6 @@ export default function UserSettingsPremium(applicationId) {
   let _slicedToArray;
   let dependencyMap;
   let importDefault;
-  let isFromTextSection;
   let isFullScreenPresentation;
   let onClose;
   let onPaymentDismiss;
@@ -49,8 +48,7 @@ export default function UserSettingsPremium(applicationId) {
   let tmp8;
   let tmp9;
   applicationId = applicationId.applicationId;
-  ({ activitySessionId: importDefault, channelId: dependencyMap, guildId: _slicedToArray, onClose, premiumFeatureCardOrder, isFullScreenPresentation } = applicationId);
-  ({ isFromTextSection, onPaymentSuccess, onPaymentDismiss } = applicationId);
+  ({ activitySessionId: importDefault, channelId: dependencyMap, guildId: _slicedToArray, onClose, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation } = applicationId);
   if (isFullScreenPresentation === undefined) {
     isFullScreenPresentation = false;
   }
@@ -63,14 +61,14 @@ export default function UserSettingsPremium(applicationId) {
   let premiumDiscountOffer;
   let tmp = callback2();
   importDefault(6652)();
-  if (isFromTextSection) {
-    let items = [importDefault(5484).TEXT_AND_IMAGES];
+  if (applicationId.isFromTextSection) {
+    let items = [importDefault(5482).TEXT_AND_IMAGES];
     let items1 = items;
   } else {
     items1 = [];
   }
-  const items2 = [...items1, importDefault(5484).PREMIUM_MARKETING];
-  analyticsLocations = importDefault(5464)(items2).analyticsLocations;
+  const items2 = [...items1, importDefault(5482).PREMIUM_MARKETING];
+  analyticsLocations = importDefault(5462)(items2).analyticsLocations;
   let obj = applicationId(6653);
   closure_5 = obj.useSettingNavigationRoute();
   importDefault(4559)(() => {
@@ -94,7 +92,7 @@ export default function UserSettingsPremium(applicationId) {
   });
   let obj1 = applicationId(566);
   const items3 = [premiumDiscountOffer];
-  const tmp3 = importDefault(5464);
+  const tmp3 = importDefault(5462);
   [tmp8, tmp9] = callback(obj1.useStateFromStoresArray(items3, () => {
     const items = [premiumDiscountOffer.getPremiumTypeSubscription(), premiumDiscountOffer.hasFetchedSubscriptions()];
     return items;
@@ -137,11 +135,8 @@ export default function UserSettingsPremium(applicationId) {
     }
     return null != result && result;
   });
-  const tmp7 = callback(obj1.useStateFromStoresArray(items3, () => {
-    const items = [premiumDiscountOffer.getPremiumTypeSubscription(), premiumDiscountOffer.hasFetchedSubscriptions()];
-    return items;
-  }), 2);
-  const isPaymentsBlocked = applicationId(6656).useIsPaymentsBlocked();
+  let obj9 = applicationId(6656);
+  const isPaymentsBlocked = obj9.useIsPaymentsBlocked();
   const effect = analyticsLocations.useEffect(() => {
     outer1_1(outer1_2[25]).wait(() => outer2_1(outer2_2[26]).init());
     const obj = outer1_1(outer1_2[25]);
@@ -159,11 +154,14 @@ export default function UserSettingsPremium(applicationId) {
     }
     ref.current = stateFromStores;
   }, items10);
-  const obj10 = applicationId(6656);
-  premiumTrialOffer = applicationId(6686).usePremiumTrialOffer();
-  const obj11 = applicationId(6686);
-  premiumDiscountOffer = applicationId(7126).usePremiumDiscountOffer();
-  const obj12 = applicationId(7126);
+  let obj10 = applicationId(6686);
+  premiumTrialOffer = obj10.usePremiumTrialOffer();
+  const tmp7 = callback(obj1.useStateFromStoresArray(items3, () => {
+    const items = [premiumDiscountOffer.getPremiumTypeSubscription(), premiumDiscountOffer.hasFetchedSubscriptions()];
+    return items;
+  }), 2);
+  premiumDiscountOffer = applicationId(7125).usePremiumDiscountOffer();
+  const obj12 = applicationId(7125);
   const premiumTrialOfferPremiumType = applicationId(6685).usePremiumTrialOfferPremiumType();
   const items11 = [premiumTrialOffer, premiumDiscountOffer];
   const effect2 = analyticsLocations.useEffect(() => {
@@ -177,119 +175,138 @@ export default function UserSettingsPremium(applicationId) {
     }
   }, items11);
   let tmp23 = null != tmp8 && stateFromStores3 && tmp9;
-  applicationId(3776);
-  if (null != stateFromStores4) {
-    if (stateFromStores3) {
-      if (tmp9) {
-        if (stateFromStores1) {
-          if (isPaymentsBlocked) {
-            obj = { style: tmp.container };
-            tmp = importDefault(7187);
-            obj.children = tmp26(tmp, {});
-            let tmp26Result = tmp26(stateFromStores, obj);
-          } else {
-            obj = {};
-            const items12 = [tmp.root, ];
-            obj1 = {};
-            let num3 = 0;
-            if (obj17.isAndroid()) {
-              num3 = importDefault(1557)().bottom;
-            }
-            obj1.marginBottom = num3;
-            items12[1] = obj1;
-            obj.style = items12;
-            obj2 = { value: analyticsLocations };
-            if (tmp25) {
-              if (null == premiumFeatureCardOrder) {
-                obj3 = { onClose };
-                let tmp40Result = jsx(importDefault(7419), { onClose });
-              }
-              obj2.children = tmp40Result;
-              obj.children = tmp30(tmp33, obj2);
-              tmp26Result = tmp26(tmp27, obj);
-            }
-            let TIER_2_LEADING = premiumFeatureCardOrder;
-            if (null == premiumFeatureCardOrder) {
-              if (premiumTrialOfferPremiumType === closure_17.TIER_0) {
-                TIER_2_LEADING = applicationId(7999).PremiumFeatureCardOrder.TIER_0_LEADING;
-              } else {
-                TIER_2_LEADING = premiumFeatureCardOrder;
-                if (premiumTrialOfferPremiumType === closure_17.TIER_2) {
-                  TIER_2_LEADING = applicationId(7999).PremiumFeatureCardOrder.TIER_2_LEADING;
-                }
-              }
-            }
-            obj4 = { applicationId, userHasSubscription: tmp23 };
-            let tmp44 = tmp23;
-            obj17 = applicationId(477);
-            tmp27 = closure_6;
-            tmp30 = jsx;
-            const tmp40 = jsx;
-            if (tmp23) {
-              obj5 = {
-                style: tmp.subscriptionHeader,
-                onClickManagePremiumGuild: function handleLearnMorePremiumGuild() {
-                              const routes = navigation2.getState().routes;
-                              const found = routes.find((name) => name.name === outer2_16.GUILD_BOOSTING);
-                              let obj = outer1_1(outer1_2[33]);
-                              obj.setSection(outer1_16.GUILD_BOOSTING);
-                              obj = { destinationPane: outer1_16.GUILD_BOOSTING };
-                              const result = applicationId(outer1_2[34]).trackUserSettingsPaneViewed(obj);
-                              if (null != found) {
-                                navigation2.navigate(found);
-                              } else {
-                                navigation2.push(outer1_16.GUILD_BOOSTING);
-                              }
-                            },
-                subscription: tmp8
-              };
-              tmp44 = jsx(importDefault(7376), {
-                style: tmp.subscriptionHeader,
-                onClickManagePremiumGuild: function handleLearnMorePremiumGuild() {
-                              const routes = navigation2.getState().routes;
-                              const found = routes.find((name) => name.name === outer2_16.GUILD_BOOSTING);
-                              let obj = outer1_1(outer1_2[33]);
-                              obj.setSection(outer1_16.GUILD_BOOSTING);
-                              obj = { destinationPane: outer1_16.GUILD_BOOSTING };
-                              const result = applicationId(outer1_2[34]).trackUserSettingsPaneViewed(obj);
-                              if (null != found) {
-                                navigation2.navigate(found);
-                              } else {
-                                navigation2.push(outer1_16.GUILD_BOOSTING);
-                              }
-                            },
-                subscription: tmp8
-              });
-            }
-            obj4.subscriptionDetails = tmp44;
-            if (tmp23) {
-              obj6 = { style: tmp.billingInfo, subscription: tmp8 };
-              tmp23 = jsx(importDefault(7416), { style: tmp.billingInfo, subscription: tmp8 });
-            }
-            obj4.billingInfo = tmp23;
-            if (stateFromStores3) {
-              obj7 = { style: tmp.accountCredit, currentSubscription: tmp8, entitlements: stateFromStores2, hasPremiumGroup: stateFromStores5 };
-              stateFromStores3 = jsx(importDefault(7418), { style: tmp.accountCredit, currentSubscription: tmp8, entitlements: stateFromStores2, hasPremiumGroup: stateFromStores5 });
-            }
-            obj4.accountCredit = stateFromStores3;
-            obj4.onClose = onClose;
-            if (null != TIER_2_LEADING) {
-              let TIER_2_LEADING2 = TIER_2_LEADING;
-            } else {
-              TIER_2_LEADING2 = applicationId(7999).PremiumFeatureCardOrder.TIER_2_LEADING;
-            }
-            obj4.premiumFeatureCardOrder = TIER_2_LEADING2;
-            obj4.entitlements = stateFromStores2;
-            obj4.onPaymentSuccess = onPaymentSuccess;
-            obj4.onPaymentDismiss = onPaymentDismiss;
-            obj4.isFullScreenPresentation = isFullScreenPresentation;
-            tmp40Result = tmp40(importDefault(12389), obj4);
-            const tmp43 = importDefault(12389);
+  const obj13 = applicationId(6685);
+  const hasTier2Premium = applicationId(3776).useHasTier2Premium();
+  const obj14 = applicationId(3776);
+  obj = { userHasSubscription: tmp23 };
+  let tmp26 = hasTier2Premium;
+  if (hasTier2Premium) {
+    tmp26 = null == premiumFeatureCardOrder;
+  }
+  obj.isNitroHomeSurface = tmp26;
+  obj.isConfirmedNonSubscriber = tmp9;
+  const buyNitroExperiment = applicationId(7376).useBuyNitroExperiment(obj);
+  if (null == stateFromStores4 || !stateFromStores3 || !tmp9 || !stateFromStores1) {
+    if (!buyNitroExperiment.canRenderRedesignUpsellEarly) {
+      obj = { style: tmp.loadingSpinnerContainer, children: <closure_5 animating size="large" /> };
+      return <closure_6 style={tmp.loadingSpinnerContainer}><closure_5 animating size="large" /></closure_6>;
+    }
+  }
+  if (isPaymentsBlocked) {
+    obj1 = { style: tmp.container };
+    tmp = importDefault(7187);
+    obj1.children = tmp31(tmp, {});
+    tmp31(stateFromStores, obj1);
+  } else {
+    obj2 = {};
+    const items12 = [tmp.root, ];
+    obj3 = {};
+    let num3 = 0;
+    if (obj20.isAndroid()) {
+      num3 = importDefault(1557)().bottom;
+    }
+    obj3.marginBottom = num3;
+    items12[1] = obj3;
+    obj2.style = items12;
+    obj4 = { value: analyticsLocations };
+    if (buyNitroExperiment.showRedesignUpsell) {
+      obj5 = { onClose, applicationId, initialLoadCompleted: !tmp24, onPaymentSuccess, onPaymentDismiss };
+      if (null == premiumFeatureCardOrder) {
+        obj5.initialTier = undefined;
+        let tmp44Result = tmp64(tmp67, obj5);
+      } else if (premiumFeatureCardOrder === applicationId(8059).PremiumFeatureCardOrder.TIER_0_LEADING) {
+        let TIER_2 = closure_17.TIER_0;
+      } else {
+        TIER_2 = closure_17.TIER_2;
+      }
+      tmp64 = jsx;
+    } else {
+      if (hasTier2Premium) {
+        if (null == premiumFeatureCardOrder) {
+          obj6 = { onClose };
+          tmp44Result = jsx(importDefault(12399), { onClose });
+        }
+      }
+      let TIER_2_LEADING = premiumFeatureCardOrder;
+      if (null == premiumFeatureCardOrder) {
+        if (premiumTrialOfferPremiumType === closure_17.TIER_0) {
+          TIER_2_LEADING = applicationId(8059).PremiumFeatureCardOrder.TIER_0_LEADING;
+        } else {
+          TIER_2_LEADING = premiumFeatureCardOrder;
+          if (premiumTrialOfferPremiumType === closure_17.TIER_2) {
+            TIER_2_LEADING = applicationId(8059).PremiumFeatureCardOrder.TIER_2_LEADING;
           }
         }
       }
+      obj7 = { applicationId, userHasSubscription: tmp23 };
+      let tmp48 = tmp23;
+      if (tmp23) {
+        obj8 = {
+          style: tmp.subscriptionHeader,
+          onClickManagePremiumGuild: function handleLearnMorePremiumGuild() {
+                  const routes = navigation2.getState().routes;
+                  const found = routes.find((name) => name.name === outer2_16.GUILD_BOOSTING);
+                  let obj = outer1_1(outer1_2[33]);
+                  obj.setSection(outer1_16.GUILD_BOOSTING);
+                  obj = { destinationPane: outer1_16.GUILD_BOOSTING };
+                  const result = applicationId(outer1_2[34]).trackUserSettingsPaneViewed(obj);
+                  if (null != found) {
+                    navigation2.navigate(found);
+                  } else {
+                    navigation2.push(outer1_16.GUILD_BOOSTING);
+                  }
+                },
+          subscription: tmp8
+        };
+        tmp48 = jsx(importDefault(7378), {
+          style: tmp.subscriptionHeader,
+          onClickManagePremiumGuild: function handleLearnMorePremiumGuild() {
+                  const routes = navigation2.getState().routes;
+                  const found = routes.find((name) => name.name === outer2_16.GUILD_BOOSTING);
+                  let obj = outer1_1(outer1_2[33]);
+                  obj.setSection(outer1_16.GUILD_BOOSTING);
+                  obj = { destinationPane: outer1_16.GUILD_BOOSTING };
+                  const result = applicationId(outer1_2[34]).trackUserSettingsPaneViewed(obj);
+                  if (null != found) {
+                    navigation2.navigate(found);
+                  } else {
+                    navigation2.push(outer1_16.GUILD_BOOSTING);
+                  }
+                },
+          subscription: tmp8
+        });
+      }
+      obj7.subscriptionDetails = tmp48;
+      if (tmp23) {
+        obj9 = { style: tmp.billingInfo, subscription: tmp8 };
+        tmp23 = jsx(importDefault(7418), { style: tmp.billingInfo, subscription: tmp8 });
+      }
+      obj7.billingInfo = tmp23;
+      if (stateFromStores3) {
+        obj10 = { style: tmp.accountCredit, currentSubscription: tmp8, entitlements: stateFromStores2, hasPremiumGroup: stateFromStores5 };
+        stateFromStores3 = jsx(importDefault(7420), { style: tmp.accountCredit, currentSubscription: tmp8, entitlements: stateFromStores2, hasPremiumGroup: stateFromStores5 });
+      }
+      obj7.accountCredit = stateFromStores3;
+      obj7.onClose = onClose;
+      if (null != TIER_2_LEADING) {
+        let TIER_2_LEADING2 = TIER_2_LEADING;
+      } else {
+        TIER_2_LEADING2 = applicationId(8059).PremiumFeatureCardOrder.TIER_2_LEADING;
+      }
+      obj7.premiumFeatureCardOrder = TIER_2_LEADING2;
+      obj7.entitlements = stateFromStores2;
+      obj7.onPaymentSuccess = onPaymentSuccess;
+      obj7.onPaymentDismiss = onPaymentDismiss;
+      obj7.isFullScreenPresentation = isFullScreenPresentation;
+      tmp44Result = jsx(importDefault(12447), { applicationId, userHasSubscription: tmp23 });
+      const tmp44 = jsx;
+      const tmp47 = importDefault(12447);
     }
+    obj4.children = tmp44Result;
+    obj2.children = jsx(applicationId(5462).AnalyticsLocationProvider, { value: analyticsLocations });
+    tmp31(closure_6, obj2);
+    obj20 = applicationId(477);
+    const tmp32 = closure_6;
+    const tmp35 = jsx;
   }
-  obj8 = { style: tmp.loadingSpinnerContainer, children: <closure_5 animating size="large" /> };
-  return <closure_6 style={tmp.loadingSpinnerContainer}><closure_5 animating size="large" /></closure_6>;
 };

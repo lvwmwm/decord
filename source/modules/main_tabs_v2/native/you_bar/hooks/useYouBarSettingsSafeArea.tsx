@@ -1,12 +1,12 @@
-// Module ID: 12384
-// Function ID: 96231
+// Module ID: 7422
+// Function ID: 59668
 // Name: useYouBarSettingsOutsideSafeAreaTop
-// Dependencies: [1557, 8133, 478, 2]
+// Dependencies: [1557, 7423, 478, 2]
 // Exports: useYouBarSettingsCustomHeaderPaddingTop
 
-// Module 12384 (useYouBarSettingsOutsideSafeAreaTop)
+// Module 7422 (useYouBarSettingsOutsideSafeAreaTop)
 function useYouBarSettingsOutsideSafeAreaTop() {
-  const tmp = importDefault(8133)();
+  const tmp = importDefault(7423)();
   const obj = require(478) /* isWindows */;
   return require(478) /* isWindows */.isIOS() || tmp;
 }

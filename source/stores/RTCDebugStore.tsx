@@ -1,10 +1,10 @@
-// Module ID: 10766
-// Function ID: 83622
+// Module ID: 10795
+// Function ID: 83814
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 57, 6, 7, 4177, 1849, 653, 4191, 10767, 4227, 686, 566, 2]
+// Dependencies: [15, 17, 18, 57, 6, 7, 4177, 1849, 653, 4191, 10796, 4227, 686, 566, 2]
 // Exports: keySection, parseSection
 
-// Module 10766 (_isNativeReflectConstruct)
+// Module 10795 (_isNativeReflectConstruct)
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -556,7 +556,7 @@ obj = {
     section = section.section;
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY: function handleOpenReplay() {
-    importAll(10767).chooseReplayPath();
+    importAll(10796).chooseReplayPath();
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: function handleOpenReplayAtPath(path) {
     path = path.path;

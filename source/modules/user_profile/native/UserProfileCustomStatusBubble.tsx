@@ -1,9 +1,9 @@
-// Module ID: 11898
-// Function ID: 92068
+// Module ID: 11925
+// Function ID: 92306
 // Name: getClampedMaxLines
-// Dependencies: [57, 31, 27, 5512, 1852, 33, 4130, 689, 3803, 5085, 1392, 477, 4126, 5151, 8266, 9067, 9889, 4098, 11899, 5484, 1212, 4660, 11254, 2]
+// Dependencies: [57, 31, 27, 5510, 1852, 33, 4130, 689, 3803, 5085, 1392, 477, 4126, 5151, 8310, 9106, 9921, 4098, 11926, 5482, 1212, 4660, 11283, 2]
 
-// Module 11898 (getClampedMaxLines)
+// Module 11925 (getClampedMaxLines)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -182,7 +182,7 @@ let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   return obj;
 });
 let closure_12 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_13 = { [arg1(5512).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_13 = { [arg1(5510).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 let closure_14 = _createForOfIteratorHelperLoose.createStyles(() => ({ container: { alignItems: "center" } }));
 const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   let customStatusActivity;
@@ -246,9 +246,9 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   const textVariant = tmp3.textVariant;
   const emojiOnlyEmojiSize = tmp3.emojiOnlyEmojiSize;
   ({ statusBubblePaddingHorizontal, statusBubblePaddingVertical } = tmp3);
-  obj = _require(8266);
+  obj = _require(8310);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  let obj1 = _require(9067);
+  let obj1 = _require(9106);
   if (undefined === previewText) {
     let state;
     if (null != customStatusActivity) {
@@ -328,7 +328,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
   obj = { top: statusBubblePaddingVertical, bottom: statusBubblePaddingVertical, left: statusBubblePaddingHorizontal, right: statusBubblePaddingHorizontal };
   const ref = textVariant.useRef(null);
   const imperativeHandle = textVariant.useImperativeHandle(arg1, () => ref.current);
-  let obj4 = _require(9889);
+  let obj4 = _require(9921);
   const scaledTextLineHeight = obj4.useScaledTextLineHeight(textVariant);
   if (!tmp7) {
     if (!tmp15) {
@@ -433,7 +433,7 @@ const forwardRefResult = importAllResult.forwardRef((showFullStatus) => {
         tmp59 = obj10;
       }
       obj9.style = tmp59;
-      obj8.children = callback2(_require(11254).CirclePlusIcon, obj9);
+      obj8.children = callback2(_require(11283).CirclePlusIcon, obj9);
       const items8 = [callback2(trackUserProfileAction, obj8), , ];
       const obj11 = { style: tmp2.addStatusIconSpacer };
       items8[1] = callback2(trackUserProfileAction, obj11);

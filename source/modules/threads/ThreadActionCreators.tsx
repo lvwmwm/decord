@@ -1,9 +1,9 @@
-// Module ID: 7007
-// Function ID: 56074
+// Module ID: 7006
+// Function ID: 56083
 // Name: patchThread
-// Dependencies: [5, 1352, 1194, 1348, 3758, 7008, 3760, 7018, 653, 1355, 507, 686, 4470, 1212, 4324, 7019, 7020, 7023, 7024, 1327, 1359, 2]
+// Dependencies: [5, 1352, 1194, 1348, 3758, 7007, 3760, 7017, 653, 1355, 507, 686, 4470, 1212, 4324, 7018, 7019, 7022, 7023, 1327, 1359, 2]
 
-// Module 7007 (patchThread)
+// Module 7006 (patchThread)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { createChannelRecordFromServer as closure_4 } from "_callSuper";
 import closure_5 from "_isNativeReflectConstruct";
@@ -217,11 +217,11 @@ export default {
     obj = { location: SUMMARY_ACTION_SHEET, channel_id: channel.id, guild_id: channel.guild_id };
     obj.trackWithMetadata(constants.THREAD_CREATION_STARTED, obj);
     obj = { parentMessageId: id, isPrivate: false, location: SUMMARY_ACTION_SHEET };
-    importDefault(7019).changeThreadSettings(channel.id, obj);
+    importDefault(7018).changeThreadSettings(channel.id, obj);
     if (null == id) {
       const obj1 = { channelId: channel.id, command: null, section: null };
-      require(7020) /* updateOptionStates */.setActiveCommand(obj1);
-      const obj5 = require(7020) /* updateOptionStates */;
+      require(7019) /* updateOptionStates */.setActiveCommand(obj1);
+      const obj5 = require(7019) /* updateOptionStates */;
     }
   },
   setNotificationSettings(channel, muteSettings) {

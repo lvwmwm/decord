@@ -1,10 +1,10 @@
-// Module ID: 10904
-// Function ID: 84762
+// Module ID: 10931
+// Function ID: 84951
 // Name: _getMetadata
-// Dependencies: [5, 4217, 653, 686, 10901, 507, 2]
+// Dependencies: [5, 4217, 653, 686, 10928, 507, 2]
 // Exports: getMetadata, play, sync
 
-// Module 10904 (_getMetadata)
+// Module 10931 (_getMetadata)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
@@ -24,8 +24,8 @@ export const sync = function sync(activity, userId) {
 };
 export const play = function play(closure_0, closure_1) {
   const _require = closure_0;
-  const spotifyMetadataFromActivity = _require(10901).getSpotifyMetadataFromActivity(closure_0, closure_1);
-  let obj = _require(10901);
+  const spotifyMetadataFromActivity = _require(10928).getSpotifyMetadataFromActivity(closure_0, closure_1);
+  let obj = _require(10928);
   spotifyMetadataFromActivity.then((metadata) => {
     let obj = callback(outer1_2[3]);
     obj = { type: "ACTIVITY_PLAY", activity: closure_0, userId: callback, metadata };

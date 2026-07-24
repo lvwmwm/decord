@@ -1,10 +1,10 @@
-// Module ID: 10482
-// Function ID: 81142
+// Module ID: 10511
+// Function ID: 81334
 // Name: canLaunchFrame
-// Dependencies: [653, 7919, 7371, 2]
+// Dependencies: [653, 8006, 7371, 2]
 // Exports: canLaunchFrame
 
-// Module 10482 (canLaunchFrame)
+// Module 10511 (canLaunchFrame)
 import { ApplicationFlags } from "ME";
 
 const result = require("getApplicationFlags").fileFinishedImporting("modules/frames/utils/canLaunchFrame.tsx");
@@ -19,7 +19,7 @@ export const canLaunchFrame = function canLaunchFrame(application) {
       }
       return hasApplicationFlagResult;
     }
-    obj = require(7919) /* _createForOfIteratorHelperLoose */;
+    obj = require(8006) /* _createForOfIteratorHelperLoose */;
   }
   return false;
 };

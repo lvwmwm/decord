@@ -1,5 +1,5 @@
 // Module ID: 4776
-// Function ID: 41487
+// Function ID: 41491
 // Name: getResourceBlock
 // Dependencies: [4777, 4778]
 

@@ -1,10 +1,10 @@
-// Module ID: 7506
-// Function ID: 60181
+// Module ID: 7576
+// Function ID: 60377
 // Name: ErrorText
-// Dependencies: [31, 33, 3836, 3976, 4541, 7507, 4126, 2]
+// Dependencies: [31, 33, 3836, 3976, 4541, 7577, 4126, 2]
 // Exports: ErrorText
 
-// Module 7506 (ErrorText)
+// Module 7576 (ErrorText)
 import result from "result";
 import jsxProd from "jsxProd";
 
@@ -30,7 +30,7 @@ export const ErrorText = function ErrorText(children) {
     }
   }, items);
   obj = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style };
-  const items1 = [callback(nodeText(7507).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
+  const items1 = [callback(nodeText(7577).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
   obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
   items1[1] = callback(nodeText(4126).Text, obj);
   obj.children = items1;

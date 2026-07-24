@@ -1,10 +1,10 @@
-// Module ID: 10753
-// Function ID: 83540
+// Module ID: 10782
+// Function ID: 83732
 // Name: SingleScreenshare
-// Dependencies: [31, 10210, 33, 4130, 689, 4559, 10754, 4323, 2]
+// Dependencies: [31, 10240, 33, 4130, 689, 4559, 10783, 4323, 2]
 // Exports: default
 
-// Module 10753 (SingleScreenshare)
+// Module 10782 (SingleScreenshare)
 import "result";
 import resetFocusTimer from "resetFocusTimer";
 import { jsx } from "jsxProd";
@@ -41,5 +41,5 @@ export default function SingleScreenshare(channel) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj.containerStyle = stageStreamContainer;
-  return tmp3(channel(10754), obj);
+  return tmp3(channel(10783), obj);
 };

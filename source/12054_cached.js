@@ -1,7 +1,7 @@
 // Module ID: 12054
-// Function ID: 93780
+// Function ID: 93729
 // Name: cached
-// Dependencies: [12013]
+// Dependencies: [12039]
 
 // Module 12054 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "caracteres", verb: "ter" }, file: { unit: "bytes", verb: "ter" }, array: { unit: "itens", verb: "ter" }, set: { unit: "itens", verb: "ter" } };
-      let closure_1 = { regex: "padr\u00E3o", email: "endere\u00E7o de e-mail", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e hora ISO", date: "data ISO", time: "hora ISO", duration: "dura\u00E7\u00E3o ISO", ipv4: "endere\u00E7o IPv4", ipv6: "endere\u00E7o IPv6", cidrv4: "faixa de IPv4", cidrv6: "faixa de IPv6", base64: "texto codificado em base64", base64url: "URL codificada em base64", json_string: "texto JSON", e164: "n\u00FAmero E.164", jwt: "JWT", template_literal: "entrada" };
-      let closure_2 = { nan: "NaN", number: "n\u00FAmero", null: "nulo" };
+      let closure_0 = { string: { unit: "characters", verb: "to have" }, file: { unit: "bytes", verb: "to have" }, array: { unit: "items", verb: "to have" }, set: { unit: "items", verb: "to have" }, map: { unit: "entries", verb: "to have" } };
+      let closure_1 = { regex: "input", email: "email address", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datetime", date: "ISO date", time: "ISO time", duration: "ISO duration", ipv4: "IPv4 address", ipv6: "IPv6 address", mac: "MAC address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded string", base64url: "base64url-encoded string", json_string: "JSON string", e164: "E.164 number", jwt: "JWT", template_literal: "input" };
+      let closure_2 = { nan: "NaN" };
       return (code) => {
         let minimum;
         let origin;
@@ -76,122 +76,113 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp53 = parsedTypeResult;
+          let tmp51 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp53 = tmp52;
+            tmp51 = tmp50;
           }
-          if (obj.test(code.expected)) {
-            const _HermesInternal17 = HermesInternal;
-            let combined = "Tipo inv\u00E1lido: esperado instanceof " + code.expected + ", recebido " + tmp53;
-          } else {
-            const _HermesInternal16 = HermesInternal;
-            combined = "Tipo inv\u00E1lido: esperado " + expected + ", recebido " + tmp53;
-          }
-          return combined;
+          const _HermesInternal16 = HermesInternal;
+          return "Invalid input: expected " + expected + ", received " + tmp51;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Entrada inv\u00E1lida: esperado " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined = "Invalid input: expected " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Op\u00E7\u00E3o inv\u00E1lida: esperada uma das " + closure_2.joinValues(code.values, "|");
+            combined = "Invalid option: expected one of " + closure_2.joinValues(code.values, "|");
           }
-          return combined1;
+          return combined;
         } else if ("too_big" === code) {
-          let str32 = "<";
+          let str28 = "<";
           if (code.inclusive) {
-            str32 = "<=";
+            str28 = "<=";
           }
-          const tmp28 = getSizing(code.origin);
+          const tmp26 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str33 = "valor";
-          if (tmp28) {
-            if (tmp30) {
-              str33 = origin2;
+          let str29 = "value";
+          if (tmp26) {
+            if (tmp28) {
+              str29 = origin2;
             }
             let str = code.maximum.toString();
-            const unit = tmp28.unit;
-            let str38 = "elementos";
+            const unit = tmp26.unit;
+            let str34 = "elements";
             if (null != unit) {
-              str38 = unit;
+              str34 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Muito grande: esperado que " + str33 + " tivesse " + str32 + str + " " + str38;
-            const str37 = code.maximum;
+            let combined1 = "Too big: expected " + str29 + " to have " + str28 + str + " " + str34;
+            const str33 = code.maximum;
           } else {
-            let tmp31 = str33;
-            if (tmp30) {
-              tmp31 = origin2;
+            let tmp29 = str29;
+            if (tmp28) {
+              tmp29 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Muito grande: esperado que " + tmp31 + " fosse " + str32 + code.maximum.toString();
-            const str34 = code.maximum;
+            combined1 = "Too big: expected " + tmp29 + " to be " + str28 + code.maximum.toString();
+            const str30 = code.maximum;
           }
-          return combined2;
+          return combined1;
         } else if ("too_small" === code) {
-          let str26 = ">";
+          let str22 = ">";
           if (code.inclusive) {
-            str26 = ">=";
+            str22 = ">=";
           }
-          const tmp17 = getSizing(code.origin);
+          const tmp15 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
-          if (tmp17) {
+          if (tmp15) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Muito pequeno: esperado que " + origin + " tivesse " + str26 + str1 + " " + tmp17.unit;
+            let combined2 = "Too small: expected " + origin + " to have " + str22 + str1 + " " + tmp15.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Muito pequeno: esperado que " + origin + " fosse " + str26 + str1;
+            combined2 = "Too small: expected " + origin + " to be " + str22 + str1;
           }
-          return combined3;
+          return combined2;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Texto inv\u00E1lido: deve come\u00E7ar com \"" + code.prefix + "\"";
+            let combined3 = "Invalid string: must start with \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Texto inv\u00E1lido: deve terminar com \"" + code.suffix + "\"";
+            combined3 = "Invalid string: must end with \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Texto inv\u00E1lido: deve incluir \"" + code.includes + "\"";
+            combined3 = "Invalid string: must include \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Texto inv\u00E1lido: deve corresponder ao padr\u00E3o " + code.pattern;
+            combined3 = "Invalid string: must match pattern " + code.pattern;
           } else {
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "" + format + " inv\u00E1lido";
+            combined3 = "Invalid " + format;
           }
-          return combined4;
+          return combined3;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "N\u00FAmero inv\u00E1lido: deve ser m\u00FAltiplo de " + code.divisor;
+          return "Invalid number: must be a multiple of " + code.divisor;
         } else if ("unrecognized_keys" === code) {
-          let str8 = "";
-          let str9 = "";
+          let str7 = "";
           if (code.keys.length > 1) {
-            str9 = "s";
-          }
-          if (code.keys.length > 1) {
-            str8 = "s";
+            str7 = "s";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Chave" + str9 + " desconhecida" + str8 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "Unrecognized key" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Chave inv\u00E1lida em " + code.origin;
-          } else if ("invalid_union" === code) {
-            return "Entrada inv\u00E1lida";
-          } else if ("invalid_element" === code) {
-            const _HermesInternal = HermesInternal;
-            return "Valor inv\u00E1lido em " + code.origin;
+            return "Invalid key in " + code.origin;
           } else {
-            return "Campo inv\u00E1lido";
+            if ("invalid_union" !== code) {
+              if ("invalid_element" === code) {
+                const _HermesInternal = HermesInternal;
+                return "Invalid value in " + code.origin;
+              }
+            }
+            return "Invalid input";
           }
         }
       };

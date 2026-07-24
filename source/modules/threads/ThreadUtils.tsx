@@ -1,10 +1,10 @@
-// Module ID: 7023
-// Function ID: 56378
+// Module ID: 7022
+// Function ID: 56387
 // Name: getAccessibilityLabelFormatter
-// Dependencies: [29, 4142, 4325, 3760, 1211, 653, 1212, 6731, 4324, 675, 7016, 5073, 1360, 566, 21, 3712, 2]
+// Dependencies: [29, 4142, 4325, 3760, 1211, 653, 1212, 6731, 4324, 675, 7015, 5073, 1360, 566, 21, 3712, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 7023 (getAccessibilityLabelFormatter)
+// Module 7022 (getAccessibilityLabelFormatter)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -67,7 +67,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     return tmp11;
   }
-  let obj = require(7016) /* collectThreadMetadata */;
+  let obj = require(7015) /* collectThreadMetadata */;
   const result = obj.collectThreadMetadata(outer1_0);
   if (null != result) {
     const guildId = outer1_0.getGuildId();

@@ -1,10 +1,10 @@
-// Module ID: 7422
-// Function ID: 59656
+// Module ID: 12402
+// Function ID: 96415
 // Name: PremiumReferralTrialPill
 // Dependencies: [27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 7422 (PremiumReferralTrialPill)
+// Module 12402 (PremiumReferralTrialPill)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

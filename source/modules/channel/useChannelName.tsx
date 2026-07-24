@@ -1,5 +1,5 @@
 // Module ID: 4320
-// Function ID: 37846
+// Function ID: 37847
 // Name: computeDefaultGroupDmNameFromUserIds
 // Dependencies: [57, 4044, 3767, 1849, 653, 1327, 3969, 1212, 566, 2]
 // Exports: computeGroupDmName, default, unescapeChannelName, useComputedGroupDmName

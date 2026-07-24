@@ -1,10 +1,10 @@
-// Module ID: 15140
-// Function ID: 115320
+// Module ID: 15187
+// Function ID: 115642
 // Name: PAGE_SIZE_WITH_MENTIONS
-// Dependencies: [5, 57, 31, 6880, 6882, 15139, 4326, 566, 15141, 5069, 7885, 2]
+// Dependencies: [5, 57, 31, 6879, 6881, 15186, 4326, 566, 15188, 5069, 7972, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 15140 (PAGE_SIZE_WITH_MENTIONS)
+// Module 15187 (PAGE_SIZE_WITH_MENTIONS)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

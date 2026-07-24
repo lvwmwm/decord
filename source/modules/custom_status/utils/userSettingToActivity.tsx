@@ -1,10 +1,10 @@
-// Module ID: 8239
-// Function ID: 65055
+// Module ID: 8283
+// Function ID: 65283
 // Name: _activityFromSetting
 // Dependencies: [31, 4991, 653, 3771, 3803, 566, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8239 (_activityFromSetting)
+// Module 8283 (_activityFromSetting)
 import { useMemo } from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ActivityTypes } from "ME";

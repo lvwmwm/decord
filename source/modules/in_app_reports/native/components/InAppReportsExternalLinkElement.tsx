@@ -1,10 +1,10 @@
-// Module ID: 12343
-// Function ID: 96008
+// Module ID: 12370
+// Function ID: 96248
 // Name: ExternalLinkItem
-// Dependencies: [27, 33, 4130, 4126, 1212, 7498, 5170, 12344, 3827, 2]
+// Dependencies: [27, 33, 4130, 4126, 1212, 7639, 5170, 12371, 3827, 2]
 // Exports: default
 
-// Module 12343 (ExternalLinkItem)
+// Module 12370 (ExternalLinkItem)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -17,14 +17,14 @@ function ExternalLinkItem(data) {
   let tmp3 = null;
   if (data.is_localized) {
     let obj = { label: tmp, subLabel: tmp2 };
-    obj = { IconComponent: url(12344).LinkExternalMediumIcon };
+    obj = { IconComponent: url(12371).LinkExternalMediumIcon };
     obj.trailing = callback(url(5170).TableRowIcon, obj);
     obj.onPress = function onPress() {
       outer1_1(outer1_2[8]).openURL(url);
     };
     obj.arrow = false;
     obj.accessibilityRole = "link";
-    tmp3 = callback(url(7498).RowButton, obj);
+    tmp3 = callback(url(7639).RowButton, obj);
   }
   return tmp3;
 }

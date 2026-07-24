@@ -1,10 +1,10 @@
-// Module ID: 7688
-// Function ID: 61389
+// Module ID: 7777
+// Function ID: 61675
 // Name: pickHelloSticker
-// Dependencies: [1849, 7689, 653, 21, 6691, 675, 2]
+// Dependencies: [1849, 7778, 653, 21, 6691, 675, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 7688 (pickHelloSticker)
+// Module 7777 (pickHelloSticker)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { WELCOME_STICKERS } from "items";
 import { AnalyticEvents } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 9638
-// Function ID: 75053
+// Module ID: 9674
+// Function ID: 75264
 // Name: useHorizontalAutocompleteResults
-// Dependencies: [57, 31, 653, 9639, 668, 566, 2]
+// Dependencies: [57, 31, 653, 9675, 668, 566, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 9638 (useHorizontalAutocompleteResults)
+// Module 9674 (useHorizontalAutocompleteResults)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import ME from "ME";

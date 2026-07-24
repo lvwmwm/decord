@@ -1,9 +1,9 @@
-// Module ID: 12638
-// Function ID: 98228
+// Module ID: 12689
+// Function ID: 98549
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 4946, 12639, 653, 10638, 3712, 1212, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1838, 4946, 12690, 653, 10667, 3712, 1212, 566, 686, 2]
 
-// Module 12638 (_isNativeReflectConstruct)
+// Module 12689 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "LocalNotificationTypes";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -31,7 +31,7 @@ function handleSchedule(arg0) {
   set.add(arg0);
 }
 function handleCancel(arg0) {
-  const result = importDefault(10638).cancelLocalNotifications(arg0);
+  const result = importDefault(10667).cancelLocalNotifications(arg0);
   set.delete(arg0);
 }
 ({ LocalNotificationTypes: closure_10, FIRE_DATE_FORMAT: closure_11 } = LocalNotificationTypes);
@@ -77,7 +77,7 @@ let tmp4 = ((Store) => {
 tmp4.displayName = "LocalPushNotificationStore";
 tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: function handleCheckScheduledNotifs() {
-    const scheduledLocalNotifications = importDefault(10638).getScheduledLocalNotifications((arr) => {
+    const scheduledLocalNotifications = importDefault(10667).getScheduledLocalNotifications((arr) => {
       const found = arr.filter((userInfo) => {
         let tmp = null != userInfo.userInfo;
         if (tmp) {
@@ -124,8 +124,8 @@ tmp4 = new tmp4(require("dispatcher"), {
               const intl = require(1212) /* getSystemLocale */.intl;
               obj.alertBody = intl.string(require(1212) /* getSystemLocale */.t["hrDBa+"]);
               obj.category = "local";
-              const result = importDefault(10638).scheduleLocalNotification(obj);
-              const obj3 = importDefault(10638);
+              const result = importDefault(10667).scheduleLocalNotification(obj);
+              const obj3 = importDefault(10667);
             }
           }
         }
@@ -140,7 +140,7 @@ tmp4 = new tmp4(require("dispatcher"), {
   },
   LOGOUT: function handleCancelAll() {
     set.clear();
-    const result = importDefault(10638).cancelAllLocalNotifications();
+    const result = importDefault(10667).cancelAllLocalNotifications();
   }
 });
 let result = set.fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationStore.tsx");

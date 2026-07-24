@@ -1,7 +1,7 @@
 // Module ID: 7191
-// Function ID: 57892
+// Function ID: 57921
 // Name: Divider
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1324, 3842, 5486, 3974, 5164, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1324, 3842, 5484, 3974, 5164, 2]
 // Exports: default
 
 // Module 7191 (Divider)
@@ -43,7 +43,7 @@ export default function Divider(outer) {
   let obj = require(3842) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   const theme = themeContext.theme;
-  const profileThemeValues = require(5486) /* useProfileThemeValues */.useProfileThemeValues(theme);
+  const profileThemeValues = require(5484) /* useProfileThemeValues */.useProfileThemeValues(theme);
   let tmp5 = null;
   if (tmp4) {
     obj = { backgroundColor: require(3974) /* hexToRgb */.hexOpacityToRgba(_createForOfIteratorHelperLoose[theme], profileThemeValues.dividerOpacity) };

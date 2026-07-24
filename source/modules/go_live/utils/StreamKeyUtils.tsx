@@ -1,5 +1,5 @@
 // Module ID: 4194
-// Function ID: 36074
+// Function ID: 36075
 // Name: isStreamKey
 // Dependencies: [57, 4195, 2]
 // Exports: decodeStreamKey, encodeStreamKey, isStreamKey

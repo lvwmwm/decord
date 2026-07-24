@@ -1,10 +1,10 @@
-// Module ID: 12392
-// Function ID: 96260
+// Module ID: 12450
+// Function ID: 96588
 // Name: isUserEligibleBasedOnCurrentOrPreviousSubs
-// Dependencies: [5, 1849, 3782, 6688, 6637, 7130, 1851, 653, 3712, 3776, 477, 4368, 6656, 12393, 12394, 624, 6686, 7127, 12395, 12396, 4451, 7450, 2]
+// Dependencies: [5, 1849, 3782, 6688, 6637, 7129, 1851, 653, 3712, 3776, 477, 4368, 6656, 12451, 12452, 624, 6686, 7126, 12453, 12454, 4451, 7426, 2]
 // Exports: maybeFetchActiveBogoPromotion, useIsEligibleForBogoPromotion
 
-// Module 12392 (isUserEligibleBasedOnCurrentOrPreviousSubs)
+// Module 12450 (isUserEligibleBasedOnCurrentOrPreviousSubs)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -108,10 +108,10 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   }
   let obj = require(6656) /* items */;
   const isPaymentsBlocked = obj.useIsPaymentsBlocked();
-  const promotion = require(12393) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
-  const obj2 = require(12393) /* useEligibleActiveOutboundPromotions */;
-  const bogoPromotionGateEnabled = require(12394) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
-  const obj3 = require(12394) /* apexExperiment */;
+  const promotion = require(12451) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
+  const obj2 = require(12451) /* useEligibleActiveOutboundPromotions */;
+  const bogoPromotionGateEnabled = require(12452) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
+  const obj3 = require(12452) /* apexExperiment */;
   const items = [closure_5];
   const stateFromStoresObject = require(624) /* defaultAreStatesEqual */.useStateFromStoresObject(items, () => ({ mostRecentSubscription: outer1_5.getMostRecentPremiumTypeSubscription(), premiumSubscription: outer1_5.getPremiumTypeSubscription(), previousPremiumSubscription: outer1_5.getPreviousPremiumTypeSubscription() }));
   ({ mostRecentSubscription, premiumSubscription, previousPremiumSubscription } = stateFromStoresObject);
@@ -119,7 +119,7 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   const premiumTrialOffer = require(6686) /* useGetTrialOffer */.usePremiumTrialOffer();
   const obj5 = require(6686) /* useGetTrialOffer */;
   let endDate;
-  const premiumDiscountOffer = require(7127) /* useGetDiscountOffer */.usePremiumDiscountOffer();
+  const premiumDiscountOffer = require(7126) /* useGetDiscountOffer */.usePremiumDiscountOffer();
   if (null != promotion) {
     endDate = promotion.endDate;
   }
@@ -127,7 +127,7 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   if (null != endDate) {
     num = endDate;
   }
-  const obj6 = require(7127) /* useGetDiscountOffer */;
+  const obj6 = require(7126) /* useGetDiscountOffer */;
   const valueOfResult = new Date(num).valueOf();
   const timestamp = Date.now();
   obj = {};
@@ -137,15 +137,15 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
     num2 = valueOfResult - timestamp;
   }
   obj.delay = num2;
-  importDefault(12395)(obj);
+  importDefault(12453)(obj);
   let isAndroidResult = !require(4368) /* isTablet */.isMobile;
   if (!isAndroidResult) {
     isAndroidResult = require(477) /* set */.isAndroid();
     const obj9 = require(477) /* set */;
   }
-  const tmp10 = importDefault(12395);
+  const tmp10 = importDefault(12453);
   const tmp15 = isUserEligibleBasedOnCurrentOrPreviousSubs({ experimentEnabled: bogoPromotionGateEnabled, premiumSubscription, mostRecentSubscription, previousPremiumSubscription });
-  let bogoMarketingMaterialsEnabled = require(12396) /* apexExperiment */.useBogoMarketingMaterialsEnabled("bogo marketing eligibility hook");
+  let bogoMarketingMaterialsEnabled = require(12454) /* apexExperiment */.useBogoMarketingMaterialsEnabled("bogo marketing eligibility hook");
   let tmp17 = !tmp9;
   if (timestamp <= valueOfResult) {
     if (!flag) {

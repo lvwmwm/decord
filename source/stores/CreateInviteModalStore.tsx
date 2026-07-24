@@ -1,9 +1,9 @@
-// Module ID: 8482
-// Function ID: 67658
+// Module ID: 8527
+// Function ID: 67888
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1838, 7463, 653, 8483, 8485, 44, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1838, 7543, 653, 8528, 8530, 44, 566, 686, 2]
 
-// Module 8482 (_isNativeReflectConstruct)
+// Module 8527 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -35,7 +35,7 @@ function updateWithLatestInvite(channelId, arg1) {
     guild_id = channel.guild_id;
   }
   guild = guild.getGuild(guild_id);
-  let obj = require(8485) /* getDefaultInviteExpiration */;
+  let obj = require(8530) /* getDefaultInviteExpiration */;
   let maxAge = obj.getDefaultInviteExpiration({ guild });
   const invite2 = invite.getInvite(channelId, { targetType, targetUserId, targetApplicationId });
   obj = { channelId };

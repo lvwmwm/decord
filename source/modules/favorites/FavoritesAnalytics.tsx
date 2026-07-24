@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 78757
+// Module ID: 10224
+// Function ID: 78948
 // Name: setNextFavoritesGuildViewSource
 // Dependencies: [3947, 653, 5077, 675, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddModalOpened, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildUpsellModalOpened, trackFavoritesGuildViewed, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 10194 (setNextFavoritesGuildViewSource)
+// Module 10224 (setNextFavoritesGuildViewSource)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 

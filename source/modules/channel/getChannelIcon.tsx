@@ -1,10 +1,10 @@
-// Module ID: 11953
-// Function ID: 92395
+// Module ID: 11979
+// Function ID: 92631
 // Name: getChannelIconURL
 // Dependencies: [57, 1849, 653, 1327, 1392, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 11953 (getChannelIconURL)
+// Module 11979 (getChannelIconURL)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ChannelTypes } from "ME";

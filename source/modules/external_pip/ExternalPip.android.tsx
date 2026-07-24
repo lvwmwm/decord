@@ -1,9 +1,9 @@
-// Module ID: 10233
-// Function ID: 79047
+// Module ID: 10263
+// Function ID: 79238
 // Name: NativeModules
 // Dependencies: [6, 7, 27, 2]
 
-// Module 10233 (NativeModules)
+// Module 10263 (NativeModules)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import get_ActivityIndicator from "get ActivityIndicator";

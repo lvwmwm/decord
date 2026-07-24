@@ -1,10 +1,10 @@
-// Module ID: 13528
-// Function ID: 104074
+// Module ID: 13581
+// Function ID: 104401
 // Name: TrainIcon
-// Dependencies: [31, 33, 689, 3833, 13529, 2]
+// Dependencies: [31, 33, 689, 3833, 13582, 2]
 // Exports: TrainIcon
 
-// Module 13528 (TrainIcon)
+// Module 13581 (TrainIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const TrainIcon = function TrainIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13529) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13582) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13529) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13582) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

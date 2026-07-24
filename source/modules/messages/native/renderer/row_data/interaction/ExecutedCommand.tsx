@@ -1,10 +1,10 @@
-// Module ID: 7916
-// Function ID: 62974
+// Module ID: 8003
+// Function ID: 63285
 // Name: getCommandUserAvatar
-// Dependencies: [27, 1857, 1348, 1849, 653, 1395, 1392, 4360, 7917, 689, 6753, 1881, 7650, 7918, 1212, 7919, 2]
+// Dependencies: [27, 1857, 1348, 1849, 653, 1395, 1392, 4360, 8004, 689, 6753, 1881, 7739, 8005, 1212, 8006, 2]
 // Exports: createExecutedCommand
 
-// Module 7916 (getCommandUserAvatar)
+// Module 8003 (getCommandUserAvatar)
 import { processColor } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -62,7 +62,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     if (!tmp5) {
       tmp5 = message.type === MessageTypes.INTERACTION_PREMIUM_UPSELL;
     }
-    let obj = require(7917) /* canViewInteractionInfo */;
+    let obj = require(8004) /* canViewInteractionInfo */;
     const result = obj.isPrimaryEntryPointCommandMessage(message);
     let obj1 = require(4360) /* useNullableMessageAuthor */;
     const userAuthor = obj1.getUserAuthor(message.interaction.user, channel);
@@ -118,9 +118,9 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       guildId = channel.getGuildId();
     }
     let id = message.interaction.user.id;
-    let obj4 = require(7650) /* processColorStringsInternal */;
+    let obj4 = require(7739) /* processColorStringsInternal */;
     const result1 = obj4.isNativeMessageEligibleForEnhancedRoleColors(guildId, id);
-    let obj5 = require(7650) /* processColorStringsInternal */;
+    let obj5 = require(7739) /* processColorStringsInternal */;
     id = undefined;
     if (null != tmp18) {
       id = tmp18.id;
@@ -128,12 +128,12 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     let processColorStringsResult = null;
     const result2 = obj5.isNativeMessageEligibleForEnhancedRoleColors(guildId, id);
     if (result1) {
-      let obj6 = require(7650) /* processColorStringsInternal */;
+      let obj6 = require(7739) /* processColorStringsInternal */;
       processColorStringsResult = obj6.processColorStrings(userAuthor.colorStrings);
     }
     let processColorStringsResult1 = null;
     if (result2) {
-      let obj7 = require(7650) /* processColorStringsInternal */;
+      let obj7 = require(7739) /* processColorStringsInternal */;
       processColorStringsResult1 = obj7.processColorStrings(userAuthor1.colorStrings);
     }
     obj = {};
@@ -160,7 +160,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     obj.usernameOnClick = obj;
     if (tmp) {
       if (!result) {
-        const result3 = require(7918) /* isActivityInTextSupportedForChannel */.isActivitiesInTextEnabled(channel);
+        const result3 = require(8005) /* isActivityInTextSupportedForChannel */.isActivitiesInTextEnabled(channel);
         const intl = require(1212) /* getSystemLocale */.intl;
         const formatToParts = intl.formatToParts;
         const t = require(1212) /* getSystemLocale */.t;
@@ -175,7 +175,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
           const merged1 = Object.assign(obj);
           formatToPartsResult = formatToParts(t.k964Wm, obj3);
         }
-        const obj12 = require(7918) /* isActivityInTextSupportedForChannel */;
+        const obj12 = require(8005) /* isActivityInTextSupportedForChannel */;
       }
       obj4 = { userId: message.interaction.user.id, username: obj.username, usernameColor: tmp31, avatarURL: tmp3, targetUsernameColor: tmp27, content: formatToPartsResult };
       obj5 = { color: processColor(semanticColor), borderRadius: 4, spaceAround: true };
@@ -185,8 +185,8 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     }
     let result4 = displayName;
     if (result) {
-      result4 = require(7919) /* _createForOfIteratorHelperLoose */.formatPrimaryEntryPointCommandName(displayName);
-      const obj16 = require(7919) /* _createForOfIteratorHelperLoose */;
+      result4 = require(8006) /* _createForOfIteratorHelperLoose */.formatPrimaryEntryPointCommandName(displayName);
+      const obj16 = require(8006) /* _createForOfIteratorHelperLoose */;
     }
     const intl2 = require(1212) /* getSystemLocale */.intl;
     obj6 = {};

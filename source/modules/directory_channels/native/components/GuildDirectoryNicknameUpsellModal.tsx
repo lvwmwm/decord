@@ -1,10 +1,10 @@
-// Module ID: 11694
-// Function ID: 90705
+// Module ID: 11721
+// Function ID: 90943
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 57, 31, 27, 1838, 11683, 33, 4130, 5084, 689, 566, 5160, 5080, 4029, 5515, 4126, 1212, 9000, 1273, 4543, 11684, 11693, 5087, 5519, 5450, 2]
+// Dependencies: [5, 57, 31, 27, 1838, 11710, 33, 4130, 5084, 689, 566, 5160, 5080, 4029, 5513, 4126, 1212, 9039, 1273, 4543, 11711, 11720, 5087, 5517, 5450, 2]
 // Exports: default
 
-// Module 11694 (GuildDirectoryNicknameUpsell)
+// Module 11721 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -46,8 +46,8 @@ function GuildDirectoryNicknameUpsell(arg0) {
   obj = { paddingBottom: insets.bottom + importDefault(689).space.PX_16, paddingTop: insets.top };
   items1[1] = obj;
   obj.contentContainerStyle = items1;
-  const obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: require(5515) /* makeSizeStyle */.GuildIconSizes.XLARGE };
-  const items2 = [callback(importDefault(5515), obj1), , , , ];
+  const obj1 = { style: tmp.guildIcon, guild: stateFromStores, size: require(5513) /* makeSizeStyle */.GuildIconSizes.XLARGE };
+  const items2 = [callback(importDefault(5513), obj1), , , , ];
   const obj2 = { style: tmp.header };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -72,7 +72,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   const tmp14 = callback;
   const tmp7 = closure_11;
   const tmp8 = closure_7;
-  const tmp9 = importDefault(5515);
+  const tmp9 = importDefault(5513);
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj6.label = intl3.string(require(1212) /* getSystemLocale */.t.ilDlmW);
   const intl4 = require(1212) /* getSystemLocale */.intl;
@@ -102,7 +102,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       }
     }, 100);
   };
-  items2[2] = tmp14(importDefault(9000), obj6);
+  items2[2] = tmp14(importDefault(9039), obj6);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
   const obj8 = { style: tmp.redesignButtonContainer };
   const obj9 = { size: "lg" };
@@ -163,5 +163,5 @@ export default function GuildDirectoryNicknameUpsellModal(arg0) {
     })(closure_0)),
     initialRouteName: "UPSELL_SCREEN_KEY"
   };
-  return callback(_require(5519).Navigator, obj);
+  return callback(_require(5517).Navigator, obj);
 };

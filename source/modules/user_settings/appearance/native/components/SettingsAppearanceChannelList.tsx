@@ -1,10 +1,10 @@
-// Module ID: 14178
-// Function ID: 108988
+// Module ID: 14228
+// Function ID: 109311
 // Name: ChannelListPreview
-// Dependencies: [31, 27, 33, 4130, 689, 14179, 14180, 14181, 3991, 1212, 14187, 7879, 14190, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 14229, 14230, 14231, 3991, 1212, 14237, 7527, 14240, 2]
 // Exports: default
 
-// Module 14178 (ChannelListPreview)
+// Module 14228 (ChannelListPreview)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -75,9 +75,9 @@ export default function ChannelListPreview(useGradientBackground) {
   if (useGradientBackground) {
     obj = { style: tmp.channelPreviewGradient };
     obj = { themes, themeIndex, isDimmed: false, backgroundToken: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    obj.children = callback(importDefault(14187), obj);
+    obj.children = callback(importDefault(14237), obj);
     tmp4 = callback(View, obj);
-    const tmp9 = importDefault(14187);
+    const tmp9 = importDefault(14237);
   }
   const items2 = [tmp4, , ];
   const obj1 = {};
@@ -90,8 +90,8 @@ export default function ChannelListPreview(useGradientBackground) {
   };
   obj1.showsVerticalScrollIndicator = false;
   obj1.importantForAccessibility = "no-hide-descendants";
-  items2[1] = callback(animatedStyles(7879).FlashList, obj1);
-  items2[2] = callback(importDefault(14190), { visible: isNitroLocked, theme: themes[themeIndex] });
+  items2[1] = callback(animatedStyles(7527).FlashList, obj1);
+  items2[2] = callback(importDefault(14240), { visible: isNitroLocked, theme: themes[themeIndex] });
   obj.children = items2;
   return closure_6(importDefault(3991).View, obj);
 };

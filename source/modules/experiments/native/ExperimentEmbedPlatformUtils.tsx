@@ -1,10 +1,10 @@
-// Module ID: 10951
-// Function ID: 85137
+// Module ID: 10978
+// Function ID: 85326
 // Name: regExp
-// Dependencies: [4098, 10952, 1934, 10461, 10462, 7781, 4052, 2]
+// Dependencies: [4098, 10979, 1934, 10490, 10491, 7872, 4052, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 10951 (regExp)
+// Module 10978 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = require("maybeLoadBundle").fileFinishedImporting("modules/experiments/native/ExperimentEmbedPlatformUtils.tsx");
 
@@ -16,10 +16,10 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
   if (null != experimentTreatmentFromEmbedURL) {
     const _Number = Number;
     if (!Number.isNaN(experimentTreatmentFromEmbedURL)) {
-      let obj = _require(10461);
+      let obj = _require(10490);
       const legacyExperiments = obj.getLegacyExperiments();
       ({ experiments, overridesInfo } = legacyExperiments);
-      const apexExperiments = _require(10462).getApexExperiments();
+      const apexExperiments = _require(10491).getApexExperiments();
       let tmp5 = experiments[experimentFromEmbedURL];
       if (null == tmp5) {
         tmp5 = apexExperiments.experiments[experimentFromEmbedURL];
@@ -33,7 +33,7 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
         if (null != tmp6) {
           tmp7 = tmp6;
         }
-        const experimentBuckets = _require(7781).getExperimentBuckets(tmp5);
+        const experimentBuckets = _require(7872).getExperimentBuckets(tmp5);
         const iter = experimentBuckets.find((value) => value.value === closure_0);
         if (null != iter) {
           if (null != tmp7) {
@@ -45,11 +45,11 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
           _require(4052).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
           const obj4 = _require(4052);
         }
-        const obj3 = _require(7781);
+        const obj3 = _require(7872);
       }
-      const obj2 = _require(10462);
+      const obj2 = _require(10491);
     }
   }
   obj = { id: experimentFromEmbedURL };
-  importDefault(4098).openLazy(_require(1934)(10952, dependencyMap.paths), "ExperimentOverrideSheet", obj);
+  importDefault(4098).openLazy(_require(1934)(10979, dependencyMap.paths), "ExperimentOverrideSheet", obj);
 };

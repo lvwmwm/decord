@@ -1,5 +1,5 @@
 // Module ID: 665
-// Function ID: 8033
+// Function ID: 8034
 // Name: pad2
 // Dependencies: [666, 2]
 // Exports: getContrast, getDarkness, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgba, isValidHex, rgb2int

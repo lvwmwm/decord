@@ -1,9 +1,9 @@
-// Module ID: 7772
-// Function ID: 61734
+// Module ID: 7534
+// Function ID: 60039
 // Name: BaseIconButton
 // Dependencies: [31, 33, 4130, 4547, 3991, 4545, 4548, 4550, 4552, 2]
 
-// Module 7772 (BaseIconButton)
+// Module 7534 (BaseIconButton)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,9 +1,9 @@
-// Module ID: 7628
-// Function ID: 61102
+// Module ID: 7717
+// Function ID: 61388
 // Name: createThreadEmbed
-// Dependencies: [27, 4122, 4167, 3942, 4991, 7627, 7629, 3759, 7630, 6830, 3760, 5683, 1278, 1194, 1348, 1917, 1838, 3767, 7080, 1849, 4123, 7622, 653, 7632, 4320, 7633, 21, 7634, 5723, 1212, 7635, 7636, 7637, 4466, 1360, 7003, 7642, 4571, 7643, 7645, 5651, 7647, 7764, 7765, 7786, 5670, 6835, 3803, 7787, 7792, 7720, 7835, 4360, 1395, 1392, 7838, 1273, 5488, 7895, 1327, 7896, 3747, 4939, 7897, 7898, 3800, 7901, 7909, 7845, 5648, 689, 7910, 7650, 7912, 7913, 7761, 7916, 8192, 12281, 12300, 12302, 12316, 7653, 7654, 12317, 12320, 12321, 12322, 7655, 12323, 2]
+// Dependencies: [27, 4122, 4167, 3942, 4991, 7716, 7718, 3759, 7719, 6829, 3760, 5683, 1278, 1194, 1348, 1917, 1838, 3767, 7079, 1849, 4123, 7711, 653, 7721, 4320, 7722, 21, 7723, 5723, 1212, 7724, 7725, 7726, 4466, 1360, 7002, 7731, 4571, 7732, 7734, 5651, 7736, 7857, 7858, 7877, 5670, 6834, 3803, 7878, 7883, 7809, 7924, 4360, 1395, 1392, 7927, 1273, 5486, 7982, 1327, 7983, 3747, 4939, 7984, 7985, 3800, 7988, 7996, 7934, 5648, 689, 7997, 7739, 7999, 8000, 7854, 8003, 8236, 12308, 12327, 12329, 12343, 7742, 7743, 12344, 12347, 12348, 12349, 7744, 12350, 2]
 
-// Module 7628 (createThreadEmbed)
+// Module 7717 (createThreadEmbed)
 import { processColor } from "shouldUseOldMaxMessageCount";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -42,15 +42,15 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
     if (message.hasFlag(closure_30.HAS_THREAD)) {
       if (null != channel1) {
         let channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel1, closure_23, closure_21);
-        const backgroundColor = importDefault(7633)(forcedTheme).baseColors.backgroundColor;
+        const backgroundColor = importDefault(7722)(forcedTheme).baseColors.backgroundColor;
         const obj11 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
         const mostRecentMessage = store3.getMostRecentMessage(importDefault(21).castMessageIdAsChannelId(message.id));
         const obj12 = importDefault(21);
         const count = store3.getCount(importDefault(21).castMessageIdAsChannelId(message.id));
         const obj13 = importDefault(21);
-        let intl5 = require(7634) /* shouldUseOldMaxMessageCount */.formatMobileMessageCountLabel(count, channel1.id);
-        const obj14 = require(7634) /* shouldUseOldMaxMessageCount */;
-        let string2 = require(7634) /* shouldUseOldMaxMessageCount */.formatMessageCountLabel(count, channel1.id);
+        let intl5 = require(7723) /* shouldUseOldMaxMessageCount */.formatMobileMessageCountLabel(count, channel1.id);
+        const obj14 = require(7723) /* shouldUseOldMaxMessageCount */;
+        let string2 = require(7723) /* shouldUseOldMaxMessageCount */.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
             let obj1 = require(5723) /* getSpoilerGatingChannelId */;
@@ -71,10 +71,10 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                   const intl4 = require(1212) /* getSystemLocale */.intl;
                   obj.messagePreviewString = intl4.string(require(1212) /* getSystemLocale */.t.ZTo4HS);
                   obj.archived = true;
-                  obj.archivedIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7636));
+                  obj.archivedIconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7725));
                   obj.backgroundColor = backgroundColor;
                   obj1 = obj;
-                  const obj9 = require(7635) /* frozen */;
+                  const obj9 = require(7724) /* frozen */;
                 }
               }
               if (null != mostRecentMessage) {
@@ -143,14 +143,14 @@ function getForumPostActions(message, channel) {
       if (null != emojiId) {
         usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(defaultReactionEmoji.emojiId);
       }
-      let obj = require(7637) /* createDefaultReaction */;
+      let obj = require(7726) /* createDefaultReaction */;
       obj = { defaultReactionEmoji, customGuildEmoji: usableCustomEmojiById };
       defaultReaction = obj.createDefaultReaction(obj);
     }
     const hasJoinedResult = closure_14.hasJoined(message.channel_id);
     const shouldDisplayPromptResult = closure_11.shouldDisplayPrompt(channel.id);
     obj = { isFollowing: hasJoinedResult, hasReactions: 0 !== message.reactions.length, defaultReaction, showMediaPostSharePrompt: shouldDisplayPromptResult };
-    return require(7637) /* createDefaultReaction */.createForumPostActions(obj);
+    return require(7726) /* createDefaultReaction */.createForumPostActions(obj);
   }
 }
 function createMessageContent(message) {

@@ -1,10 +1,10 @@
-// Module ID: 9065
-// Function ID: 71167
+// Module ID: 9104
+// Function ID: 71382
 // Name: getDiscoverableApplicationStream
 // Dependencies: [4149, 3767, 653, 566, 2]
 // Exports: default
 
-// Module 9065 (getDiscoverableApplicationStream)
+// Module 9104 (getDiscoverableApplicationStream)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { RelationshipTypes } from "ME";

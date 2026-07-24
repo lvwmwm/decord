@@ -1,5 +1,5 @@
 // Module ID: 1331
-// Function ID: 15576
+// Function ID: 15577
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 6, 7, 1316, 662, 653, 686, 44, 1318, 507, 664, 3, 1332, 587, 1319, 1282, 1317, 1333, 675, 1334, 1335, 1336, 2]
 // Exports: addDismissedContent, checkAllDismissedContents, clearDismissedContents, clearGuildDismissedContents, clearGuildThemeSourcePreferenceOverride, markUserSettingsLoadOkayForDevelopment, removeDismissedContent, removeDismissedRecurringContent, setDefaultGuildThemePreference, updateGuildDismissedContent, updateUserChannelSettings
@@ -206,7 +206,7 @@ let tmp9 = (() => {
           logger2.log("Not persisting proto because the proto was null");
         }
       });
-      tmp2 = f15609(UserSettingsProtoActionCreators[11]);
+      tmp2 = f15610(UserSettingsProtoActionCreators[11]);
       tmp2 = new tmp2(this.ProtoClass.typeName);
       this.logger = tmp2;
       return;

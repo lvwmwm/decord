@@ -1,10 +1,10 @@
-// Module ID: 10936
-// Function ID: 85011
+// Module ID: 10963
+// Function ID: 85200
 // Name: QuestCollectibleRewardModalMessages
-// Dependencies: [1849, 4976, 33, 4130, 689, 566, 9463, 10464, 4126, 1212, 6948, 9772, 2]
+// Dependencies: [1849, 4976, 33, 4130, 689, 566, 9499, 10493, 4126, 1212, 6947, 9804, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 10936 (QuestCollectibleRewardModalMessages)
+// Module 10963 (QuestCollectibleRewardModalMessages)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
@@ -20,10 +20,10 @@ function QuestCollectibleRewardModalMessages(quest) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getCurrentUser());
-  let obj1 = require(9463) /* getCollectiblesQuestReward */;
+  let obj1 = require(9499) /* getCollectiblesQuestReward */;
   const defaultRewardNameWithArticle = obj1.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   obj = {};
-  const claimedCollectibleRewardMessage = require(10464) /* _createForOfIteratorHelperLoose */.useClaimedCollectibleRewardMessage(quest.config);
+  const claimedCollectibleRewardMessage = require(10493) /* _createForOfIteratorHelperLoose */.useClaimedCollectibleRewardMessage(quest.config);
   obj = { variant: "heading-xl/bold", style: tmp.title };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.children = intl.format(require(1212) /* getSystemLocale */.t.YNaxMp, { itemName: defaultRewardNameWithArticle });
@@ -44,7 +44,7 @@ export const openQuestCollectibleRewardModal = function openQuestCollectibleRewa
   let product;
   let require;
   ({ quest: require, product } = onSuccess);
-  let obj = require(6948) /* getQuestLogger */;
+  let obj = require(6947) /* getQuestLogger */;
   obj = { location: QuestsExperimentLocations.QUEST_HOME_MOBILE };
   const questLogger = obj.getQuestLogger(obj);
   if (null != product) {
@@ -55,8 +55,8 @@ export const openQuestCollectibleRewardModal = function openQuestCollectibleRewa
         },
       onSuccess: onSuccess.onSuccess
     };
-    importDefault(9772).open(obj);
-    const obj4 = importDefault(9772);
+    importDefault(9804).open(obj);
+    const obj4 = importDefault(9804);
   } else {
     questLogger.warn("Product is null");
   }

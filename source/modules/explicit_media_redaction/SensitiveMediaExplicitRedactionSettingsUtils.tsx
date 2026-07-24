@@ -1,5 +1,5 @@
 // Module ID: 5676
-// Function ID: 48763
+// Function ID: 48773
 // Name: resolveExplicitContentSettingWithDefaults
 // Dependencies: [1849, 3805, 1282, 3809, 3816, 3803, 5677, 2]
 // Exports: shouldRedactMessageMediaForForum, updateExplicitContentSetting

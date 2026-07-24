@@ -1,10 +1,10 @@
-// Module ID: 8680
-// Function ID: 68718
+// Module ID: 8721
+// Function ID: 68938
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 6779, 6778, 1874, 6780, 6781, 4169, 8679, 653, 1876, 2]
+// Dependencies: [6, 7, 15, 17, 18, 6779, 6778, 1874, 6780, 6781, 4169, 8720, 653, 1876, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 8680 (_createForOfIteratorHelperLoose)
+// Module 8721 (_createForOfIteratorHelperLoose)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

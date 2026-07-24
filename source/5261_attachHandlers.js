@@ -1,5 +1,5 @@
 // Module ID: 5261
-// Function ID: 45377
+// Function ID: 45382
 // Name: attachHandlers
 // Dependencies: [27, 5241, 5254, 5226, 5240, 5220, 5239, 5242]
 // Exports: attachHandlers

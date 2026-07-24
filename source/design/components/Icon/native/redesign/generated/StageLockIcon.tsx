@@ -1,5 +1,5 @@
 // Module ID: 4653
-// Function ID: 40352
+// Function ID: 40356
 // Name: StageLockIcon
 // Dependencies: [31, 33, 689, 3833, 4607, 2]
 // Exports: StageLockIcon

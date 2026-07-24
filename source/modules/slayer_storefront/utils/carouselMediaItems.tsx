@@ -1,10 +1,10 @@
-// Module ID: 9737
-// Function ID: 75756
+// Module ID: 9771
+// Function ID: 75968
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4369, 5611, 2]
+// Dependencies: [4369, 5609, 2]
 // Exports: convertCarouselItemsToMediaItems, getThumbnailSrc
 
-// Module 9737 (_createForOfIteratorHelperLoose)
+// Module 9771 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;
@@ -157,7 +157,7 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
                 let tmp38 = obj9;
                 let tmp39 = applicationId;
                 let tmp40 = heroWidth;
-                assetURL1 = obj9.getAssetURL(applicationId, value.backgroundAssetId, heroWidth, require(5611) /* _createForOfIteratorHelperLoose */.LARGE_ASSET_FORMAT);
+                assetURL1 = obj9.getAssetURL(applicationId, value.backgroundAssetId, heroWidth, require(5609) /* _createForOfIteratorHelperLoose */.LARGE_ASSET_FORMAT);
               }
               obj.backgroundSrc = assetURL1;
               arr = push(obj);
@@ -192,7 +192,7 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
                 let tmp16 = obj4;
                 let tmp17 = applicationId;
                 let tmp18 = heroWidth;
-                assetURL3 = obj4.getAssetURL(applicationId, value.backgroundAssetId, heroWidth, require(5611) /* _createForOfIteratorHelperLoose */.LARGE_ASSET_FORMAT);
+                assetURL3 = obj4.getAssetURL(applicationId, value.backgroundAssetId, heroWidth, require(5609) /* _createForOfIteratorHelperLoose */.LARGE_ASSET_FORMAT);
               }
               obj.backgroundSrc = assetURL3;
               let arr1 = push(obj);

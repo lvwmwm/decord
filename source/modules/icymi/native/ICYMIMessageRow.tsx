@@ -1,10 +1,10 @@
-// Module ID: 15222
-// Function ID: 116046
+// Module ID: 15269
+// Function ID: 116368
 // Name: MessageRowContent
-// Dependencies: [31, 27, 1348, 1917, 1838, 3767, 4325, 1849, 15217, 653, 33, 689, 15179, 477, 15180, 8276, 7087, 566, 15223, 15224, 4126, 1212, 1273, 4319, 5048, 8320, 8321, 9099, 9529, 15218, 15220, 21, 4660, 8450, 15226, 2]
+// Dependencies: [31, 27, 1348, 1917, 1838, 3767, 4325, 1849, 15264, 653, 33, 689, 15226, 477, 15227, 8320, 7086, 566, 15270, 15271, 4126, 1212, 1273, 4319, 5048, 8364, 8365, 9137, 9565, 15265, 15267, 21, 4660, 8494, 15273, 2]
 // Exports: default
 
-// Module 15222 (MessageRowContent)
+// Module 15269 (MessageRowContent)
 import importAllResult from "DISCORD_EPOCH";
 import { View } from "openChannelLongPressActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -39,7 +39,7 @@ class MessageRowContent {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = f116054();
+    tmp = f116376();
     context = defineProperty.useContext(require("useICYMIContextConstructor").ICYMIContext);
     obj = require("_createForOfIteratorHelperLoose");
     result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, require("MessageEmbedTypes").GRAVITY_VALID_EMBED_TYPES);
@@ -166,7 +166,7 @@ function ReplyMessageContent(message) {
   message = message.message;
   ({ channel, guild } = message);
   const tmp = callback3();
-  const context = importAllResult.useContext(message(15180).ICYMIContext);
+  const context = importAllResult.useContext(message(15227).ICYMIContext);
   let obj = message(566);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getUser(message.author.id));
@@ -180,7 +180,7 @@ function ReplyMessageContent(message) {
   if (null == colorString) {
     colorString = closure_12;
   }
-  const width = importAllResult.useContext(message(15180).ICYMIContext).width;
+  const width = importAllResult.useContext(message(15227).ICYMIContext).width;
   let tmp6 = null;
   if (null != stateFromStores) {
     obj = { style: tmp.replyPreview };
@@ -207,7 +207,7 @@ function ReplyMessageContent(message) {
     obj8.value = obj9;
     const obj10 = { message, channel, guild, nested: true };
     obj8.children = callback(MessageRowContent, obj10);
-    items4[1] = callback(message(15180).ICYMIContext.Provider, obj8);
+    items4[1] = callback(message(15227).ICYMIContext.Provider, obj8);
     obj4.children = items4;
     items3[1] = callback2(View, obj4);
     obj2.children = items3;
@@ -360,7 +360,7 @@ export default function MessageRowWrapper(arg0) {
   let messageContext;
   let visible;
   ({ message, messageContext, visible } = arg0);
-  let obj = gravityMessage(8320);
+  let obj = gravityMessage(8364);
   gravityMessage = obj.useGravityMessage(message);
   const items = [_isNativeReflectConstruct];
   const stateFromStores = gravityMessage(566).useStateFromStores(items, () => outer1_5.getChannel(gravityMessage.getChannelId()));

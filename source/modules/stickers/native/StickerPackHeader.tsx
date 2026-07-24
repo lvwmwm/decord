@@ -1,8 +1,8 @@
-// Module ID: 9609
-// Function ID: 74876
-// Dependencies: [31, 27, 9568, 33, 4130, 689, 4126, 4466, 1273, 9610, 9611, 1212, 9612, 4660, 2]
+// Module ID: 9645
+// Function ID: 75087
+// Dependencies: [31, 27, 9604, 33, 4130, 689, 4126, 4466, 1273, 9646, 9647, 1212, 9648, 4660, 2]
 
-// Module 9609
+// Module 9645
 import { View } from "get ActivityIndicator";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
 import jsxProd from "jsxProd";
@@ -54,13 +54,13 @@ const memoResult = importAllResult.memo((withDescription) => {
   let result = obj4.isStickerPackAnimated(stickerPack);
   if (result) {
     const obj2 = { style: tmp.iconContainer };
-    const obj3 = { source: importDefault(9610), style: tmp.animatedIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
+    const obj3 = { source: importDefault(9646), style: tmp.animatedIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
     obj2.children = callback(require(1273) /* Button */.Icon, obj3);
     result = callback(View, obj2);
   }
   items[1] = result;
   obj4 = { style: tmp.iconContainer };
-  const obj5 = { source: importDefault(9611), style: tmp.premiumIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
+  const obj5 = { source: importDefault(9647), style: tmp.premiumIcon, size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
   obj4.children = callback(require(1273) /* Button */.Icon, obj5);
   items[2] = callback(View, obj4);
   obj.children = items;
@@ -84,7 +84,7 @@ const memoResult = importAllResult.memo((withDescription) => {
   if (withBanner) {
     const obj10 = { stickerPack };
     ({ bannerContainer: obj14.containerStyle, banner: obj14.style } = tmp);
-    withBanner = callback(importDefault(9612), obj10);
+    withBanner = callback(importDefault(9648), obj10);
   }
   const items2 = [withBanner, ];
   if (null != onPress) {

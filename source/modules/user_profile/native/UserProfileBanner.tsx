@@ -1,10 +1,10 @@
-// Module ID: 8260
-// Function ID: 65161
+// Module ID: 8304
+// Function ID: 65389
 // Name: UserProfileBanner
-// Dependencies: [57, 31, 27, 653, 33, 4130, 666, 689, 3803, 7883, 1392, 8261, 4660, 1212, 8262, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 666, 689, 3803, 7970, 1392, 8305, 4660, 1212, 8306, 2]
 // Exports: default
 
-// Module 8260 (UserProfileBanner)
+// Module 8304 (UserProfileBanner)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

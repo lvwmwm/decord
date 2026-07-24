@@ -1,10 +1,10 @@
-// Module ID: 12664
-// Function ID: 98593
+// Module ID: 12715
+// Function ID: 98914
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [6651, 12659, 12662, 668, 4098, 12665, 1934, 480, 2]
+// Dependencies: [6651, 12710, 12713, 668, 4098, 12716, 1934, 480, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 12664 (showVoiceChannelBlockedUserWarning)
+// Module 12715 (showVoiceChannelBlockedUserWarning)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
 import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium";
@@ -26,8 +26,8 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
     obj.blocked_user_ids = items;
     obj.warning_surface = constants.POST_JOIN_SHEET;
     obj.impressionProperties = obj;
-    obj.openLazy(require(1934) /* maybeLoadBundle */(12665, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
-    const tmp9 = require(1934) /* maybeLoadBundle */(12665, dependencyMap.paths);
+    obj.openLazy(require(1934) /* maybeLoadBundle */(12716, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
+    const tmp9 = require(1934) /* maybeLoadBundle */(12716, dependencyMap.paths);
   } else {
     callback();
   }

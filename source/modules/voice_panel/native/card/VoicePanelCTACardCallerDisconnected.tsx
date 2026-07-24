@@ -1,9 +1,9 @@
-// Module ID: 15822
-// Function ID: 122202
+// Module ID: 15869
+// Function ID: 122524
 // Name: getSourceFromURI
-// Dependencies: [57, 31, 1194, 1348, 1849, 33, 4130, 689, 10014, 566, 4319, 5517, 5085, 4126, 1212, 2]
+// Dependencies: [57, 31, 1194, 1348, 1849, 33, 4130, 689, 10046, 566, 4319, 5515, 5085, 4126, 1212, 2]
 
-// Module 15822 (getSourceFromURI)
+// Module 15869 (getSourceFromURI)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

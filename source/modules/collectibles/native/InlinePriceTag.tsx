@@ -1,10 +1,10 @@
-// Module ID: 8764
-// Function ID: 69291
+// Module ID: 8803
+// Function ID: 69506
 // Name: PriceTag
-// Dependencies: [31, 27, 5621, 655, 653, 33, 4130, 689, 4126, 1876, 6785, 6786, 8708, 1212, 8667, 3776, 8765, 8766, 8719, 8767, 566, 8703, 8728, 477, 8729, 7871, 2]
+// Dependencies: [31, 27, 5619, 655, 653, 33, 4130, 689, 4126, 1876, 6785, 6786, 8749, 1212, 8708, 3776, 8804, 8805, 8760, 8806, 566, 8744, 8769, 477, 7512, 7486, 2]
 // Exports: default
 
-// Module 8764 (PriceTag)
+// Module 8803 (PriceTag)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -87,7 +87,7 @@ function OrbsPriceTag(arg0) {
     if (result) {
       obj = { priceFormatted: original.toString(), variant: "text-md/medium", style: tmp.strikedOrbPrice };
       obj1 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      obj.icon = callback(require(8708) /* OrbsIcon */.OrbsIcon, obj1);
+      obj.icon = callback(require(8749) /* OrbsIcon */.OrbsIcon, obj1);
       const intl = require(1212) /* getSystemLocale */.intl;
       const obj2 = { orbAmount: original.toString() };
       obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.QfcKZ5, obj2);
@@ -98,7 +98,7 @@ function OrbsPriceTag(arg0) {
     let tmp21;
     if (!result) {
       const obj4 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      tmp21 = callback(require(8708) /* OrbsIcon */.OrbsIcon, obj4);
+      tmp21 = callback(require(8749) /* OrbsIcon */.OrbsIcon, obj4);
     }
     obj3.icon = tmp21;
     const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -173,27 +173,27 @@ export default function InlinePriceTag(arg0) {
   ({ product, onTrackPress: require } = arg0);
   const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  let obj = require(8667) /* useCurrentUser */;
+  let obj = require(8708) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
   let obj1 = require(6786) /* getPriceForCollectiblesProduct */;
   const shopDiscountSource = obj1.getShopDiscountSource(currentUser);
   let obj2 = importDefault(3776);
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
-  const dependencyMap = importDefault(8765)(constants.SHOP_PRODUCT_DETAILS);
-  let obj3 = require(8766) /* useProductDisableState */;
+  const dependencyMap = importDefault(8804)(constants.SHOP_PRODUCT_DETAILS);
+  let obj3 = require(8805) /* useProductDisableState */;
   const isDisabled = obj3.useProductDisableState(product.skuId).isDisabled;
-  let obj4 = require(8719) /* _createForOfIteratorHelperLoose */;
+  let obj4 = require(8760) /* _createForOfIteratorHelperLoose */;
   const formattedPriceForCollectiblesProduct = obj4.getFormattedPriceForCollectiblesProduct(product, false, true);
-  let obj5 = require(8767) /* useVirtualCurrencyData */;
+  let obj5 = require(8806) /* useVirtualCurrencyData */;
   const virtualCurrencyData = obj5.useVirtualCurrencyData(product, canUseShopDiscountsResult);
   let obj6 = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj6.useStateFromStores(items, () => outer1_5.isFetchingGoogleSkus());
-  let obj7 = require(8703) /* isUserPaidTier2 */;
+  let obj7 = require(8744) /* isUserPaidTier2 */;
   const isProfileFramesEarlyAccessPhase = obj7.useIsProfileFramesEarlyAccessPhase("InlinePriceTag");
   if (stateFromStores) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return callback(require(8728) /* CollectiblesShopPricePlaceholder */.CollectiblesShopPricePlaceholder, {});
+      return callback(require(8769) /* CollectiblesShopPricePlaceholder */.CollectiblesShopPricePlaceholder, {});
     }
   }
   if (null == formattedPriceForCollectiblesProduct) {
@@ -208,7 +208,7 @@ export default function InlinePriceTag(arg0) {
     if (!canUseShopDiscountsResult) {
       tmp11 = tmp9;
     }
-    let obj8 = require(8719) /* _createForOfIteratorHelperLoose */;
+    let obj8 = require(8760) /* _createForOfIteratorHelperLoose */;
     const formattedPriceForCollectiblesProduct1 = obj8.getFormattedPriceForCollectiblesProduct(product, true, true);
     let obj9 = require(6786) /* getPriceForCollectiblesProduct */;
     obj = { style: tmp.container };
@@ -251,7 +251,7 @@ export default function InlinePriceTag(arg0) {
         const items3 = [, ];
         ({ nitroIcon: arr4[0], nitroIconSubscribeNow: arr4[1] } = tmp);
         obj8.style = items3;
-        const items4 = [callback(require(7871) /* NitroWheelIcon */.NitroWheelIcon, obj8), ];
+        const items4 = [callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj8), ];
         obj9 = { variant: "text-md/normal", color: "interactive-text-default" };
         let androidTextPadding;
         if (obj26.isAndroid()) {
@@ -302,10 +302,10 @@ export default function InlinePriceTag(arg0) {
         const obj14 = { color: str2 };
         str2 = tmp.nitroIcon;
         obj14.style = str2;
-        let tmp39 = callback(require(8729) /* TagIcon */.TagIcon, obj14);
+        let tmp39 = callback(require(7512) /* TagIcon */.TagIcon, obj14);
       } else {
         const obj15 = { color: str2, style: tmp.nitroIcon };
-        tmp39 = callback(require(7871) /* NitroWheelIcon */.NitroWheelIcon, obj15);
+        tmp39 = callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj15);
       }
       obj12.icon = tmp39;
       callback(PriceTag, obj12);

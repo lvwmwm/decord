@@ -1,10 +1,10 @@
-// Module ID: 8632
-// Function ID: 68386
+// Module ID: 8674
+// Function ID: 68608
 // Name: GameProfileRankPill
-// Dependencies: [31, 27, 33, 4130, 689, 8633, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 7508, 4126, 1212, 2]
 // Exports: default
 
-// Module 8632 (GameProfileRankPill)
+// Module 8674 (GameProfileRankPill)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function GameProfileRankPill(arg0) {
   let obj = { style: tmp.container };
   obj = { style: tmp.gameRankPill };
   obj = { size: "xxs", color: importDefault(689).colors.BLACK };
-  const items = [callback(require(8633) /* TrophyIcon */.TrophyIcon, obj), ];
+  const items = [callback(require(7508) /* TrophyIcon */.TrophyIcon, obj), ];
   const obj1 = { variant: "text-xs/bold", color: "text-overlay-dark" };
   const intl = require(1212) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;

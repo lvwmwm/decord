@@ -1,10 +1,10 @@
-// Module ID: 16126
-// Function ID: 124986
+// Module ID: 16173
+// Function ID: 125310
 // Name: TouchableUploadAvatar
-// Dependencies: [31, 27, 33, 4130, 689, 12869, 4660, 1212, 5085, 1273, 11804, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 12921, 4660, 1212, 5085, 1273, 11831, 2]
 // Exports: default
 
-// Module 16126 (TouchableUploadAvatar)
+// Module 16173 (TouchableUploadAvatar)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
   }
   const tmp = _createForOfIteratorHelperLoose();
   if (!showPendingAvatar) {
-    let tmp3 = importDefault(12869);
+    let tmp3 = importDefault(12921);
   } else {
     tmp3 = avatarSource;
   }
@@ -52,7 +52,7 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
     const obj1 = { resizeMode: "contain", style: defaultLogoStyle, source: tmp3 };
     const items = [callback(importDefault(5085), obj1), ];
     const obj2 = { style: tmp.uploadAvatarWrapper };
-    const obj3 = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: importDefault(11804), style: tmp.uploadAvatarIcon };
+    const obj3 = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: importDefault(11831), style: tmp.uploadAvatarIcon };
     obj2.children = callback(require(1273) /* Button */.Icon, obj3);
     items[1] = callback(View, obj2);
     obj.children = items;

@@ -1,10 +1,10 @@
-// Module ID: 14642
-// Function ID: 111565
+// Module ID: 14689
+// Function ID: 111886
 // Name: MFAOptionScreen
-// Dependencies: [27, 33, 9197, 14643, 5121, 4541, 4126, 14644, 9222, 2]
+// Dependencies: [27, 33, 9233, 14690, 5121, 4541, 4126, 14691, 9258, 2]
 // Exports: default
 
-// Module 14642 (MFAOptionScreen)
+// Module 14689 (MFAOptionScreen)
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
@@ -26,8 +26,8 @@ export default function MFAOptionScreen(arg0) {
   let subtitle;
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
-  const tmp = importDefault(9197)();
-  let obj = importDefault(14643);
+  const tmp = importDefault(9233)();
+  let obj = importDefault(14690);
   const screenStyles = obj.useScreenStyles(tmp);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
@@ -63,7 +63,7 @@ export default function MFAOptionScreen(arg0) {
   const items3 = [submit, ];
   if (tmp5) {
     const obj6 = { props: screenProps };
-    tmp5 = callback(importDefault(14644), obj6);
+    tmp5 = callback(importDefault(14691), obj6);
   }
   items3[1] = tmp5;
   obj5.children = items3;
@@ -71,7 +71,7 @@ export default function MFAOptionScreen(arg0) {
   obj.children = items2;
   const tmp6Result = closure_5(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
   const obj7 = {};
-  const items4 = [callback(importDefault(9222), { backgroundImageCover: false }), ];
+  const items4 = [callback(importDefault(9258), { backgroundImageCover: false }), ];
   let tmp23 = tmp6Result;
   if (tmp) {
     const obj8 = { keyboardShouldPersistTaps: "handled", children: tmp6Result };

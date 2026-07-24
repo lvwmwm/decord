@@ -1,11 +1,11 @@
 // Module ID: 9049
-// Function ID: 71084
+// Function ID: 71127
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9049 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/game_console/images", width: 32, height: 32, scales: [2, 3], hash: "238a115f1ad03e07bad0181bb5c110d4", name: "ic_playstation_device_ps5_32px", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5bfdb70bf70b33af737927fefb52cdba", name: "ServerIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

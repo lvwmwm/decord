@@ -1,10 +1,10 @@
-// Module ID: 11551
-// Function ID: 89932
+// Module ID: 11580
+// Function ID: 90173
 // Name: GuildPowerupsBottomSheetHeader
-// Dependencies: [27, 4122, 4019, 4018, 33, 4130, 689, 11531, 11528, 11552, 11553, 566, 11554, 3842, 11556, 4126, 11557, 11559, 11560, 4086, 1212, 2230, 11545, 11566, 4021, 8441, 11567, 11568, 11572, 11577, 11578, 4543, 11576, 5187, 2]
+// Dependencies: [27, 4122, 4019, 4018, 33, 4130, 689, 11561, 11558, 11581, 11582, 566, 11583, 3842, 11585, 4126, 11586, 11588, 11589, 4086, 1212, 2230, 11575, 11593, 4021, 8485, 11594, 11595, 11599, 11604, 11605, 4543, 11603, 5187, 2]
 // Exports: default
 
-// Module 11551 (GuildPowerupsBottomSheetHeader)
+// Module 11580 (GuildPowerupsBottomSheetHeader)
 import { View } from "useGuildPowerupOnActivate";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "NewGamesCoachmarkContent";
@@ -22,10 +22,10 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   let powerup;
   ({ guildId, powerup } = arg0);
   const tmp = callback3();
-  const tmp2 = importDefault(11531)(guildId, powerup);
-  let obj = require(11552) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, importDefault(11528)(guildId, powerup, "GuildPowerupsBottomSheet"));
-  const tmp5 = importDefault(11553)(powerup, true);
+  const tmp2 = importDefault(11561)(guildId, powerup);
+  let obj = require(11581) /* useCalculatePowerupCardStatus */;
+  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, importDefault(11558)(guildId, powerup, "GuildPowerupsBottomSheet"));
+  const tmp5 = importDefault(11582)(powerup, true);
   let str = "";
   if (null != tmp5) {
     str = tmp5;
@@ -40,7 +40,7 @@ function GuildPowerupsBottomSheetHeader(arg0) {
   obj = {};
   if (powerup.type === constants.LEVEL) {
     obj = { style: tmp.gemContainer };
-    let tmp14 = callback(importDefault(11554), obj);
+    let tmp14 = callback(importDefault(11583), obj);
   } else if (tmp7 === tmp8) {
     obj1 = { style: tmp.image };
     const obj2 = { stateMachine: "SM_Auto" };
@@ -50,14 +50,14 @@ function GuildPowerupsBottomSheetHeader(arg0) {
     tmp14 = callback(View, obj1);
   } else {
     const obj4 = { imageUrl: str, style: tmp.image, isAnimated: true };
-    tmp14 = callback(importDefault(11556), obj4);
+    tmp14 = callback(importDefault(11585), obj4);
   }
   const items1 = [tmp14, ];
   const obj5 = { style: tmp.headerContainer };
   const obj6 = { variant: "heading-xl/bold", accessibilityRole: "header", children: powerup.title };
   const items2 = [callback(require(4126) /* Text */.Text, obj6), ];
   const obj7 = { cost: powerup.cost, costDecorator: str2, status: calculatePowerupCardStatus, style: tmp.statusContainer };
-  items2[1] = callback(require(11557) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj7);
+  items2[1] = callback(require(11586) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj7);
   obj5.children = items2;
   items1[1] = callback2(View, obj5);
   obj.children = items1;
@@ -66,10 +66,10 @@ function GuildPowerupsBottomSheetHeader(arg0) {
 function GuildPowerupsBottomSheetLevelBody(powerup) {
   const tmp = callback3();
   const require = tmp;
-  const arr = importDefault(11559)(powerup.powerup);
+  const arr = importDefault(11588)(powerup.powerup);
   return callback(View, {
     style: tmp.levelContainer,
-    children: importDefault(11559)(powerup.powerup).map((children) => {
+    children: importDefault(11588)(powerup.powerup).map((children) => {
       let obj = tmp(outer1_2[18]);
       obj = { style: tmp.perkContainer };
       const iconForPerk = obj.getIconForPerk(children.perkIcon);
@@ -124,21 +124,21 @@ function GuildPowerupsBottomSheetFooter(arg0) {
   let onActivate;
   let dependencyMap;
   const tmp = callback3();
-  const tmp2 = onActivate(11545)(guildId);
-  ({ showToggleButton, showConfigureButton, isPowerupActive } = onActivate(11566)(guildId, powerup));
+  const tmp2 = onActivate(11575)(guildId);
+  ({ showToggleButton, showConfigureButton, isPowerupActive } = onActivate(11593)(guildId, powerup));
   if (showConfigureButton) {
     let result = powerup.skuId !== isPowerupActive(4021).GUILD_POWERUP_TAG_SKU_ID;
     if (!result) {
-      let obj = isPowerupActive(8441);
+      let obj = isPowerupActive(8485);
       result = obj.canUseMobileServerTagSettings(guildId);
     }
     showConfigureButton = result;
   }
-  const tmp3 = onActivate(11566)(guildId, powerup);
-  ({ disabled, reason } = onActivate(11567)(guildId, powerup, isPowerupActive));
-  const tmp10 = onActivate(11568)(guildId, powerup);
+  const tmp3 = onActivate(11593)(guildId, powerup);
+  ({ disabled, reason } = onActivate(11594)(guildId, powerup, isPowerupActive));
+  const tmp10 = onActivate(11595)(guildId, powerup);
   onActivate = tmp10.onActivate;
-  dependencyMap = onActivate(11572)(guildId, powerup);
+  dependencyMap = onActivate(11599)(guildId, powerup);
   if (tmp2) {
     let tmp15 = !showConfigureButton;
     const hasItem = set.has(powerup.skuId);
@@ -168,7 +168,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     }
     if (tmp24) {
       const obj1 = { text: reason };
-      tmp24 = callback(onActivate(11578), obj1);
+      tmp24 = callback(onActivate(11605), obj1);
     }
     items[1] = tmp24;
     if (showConfigureButton) {
@@ -254,8 +254,8 @@ export default function GuildPowerupsBottomSheet(arg0) {
   let guildId;
   let powerup;
   ({ guildId, powerup } = arg0);
-  let obj = require(11576) /* ModalType */;
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11576) /* ModalType */.ModalType.DETAIL);
+  let obj = require(11603) /* ModalType */;
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11603) /* ModalType */.ModalType.DETAIL);
   obj = { startExpanded: true };
   obj = { style: callback3().container };
   const items = [callback(GuildPowerupsBottomSheetHeader, { guildId, powerup }), callback(GuildPowerupsBottomSheetBody, { guildId, powerup }), callback(GuildPowerupsBottomSheetFooter, { guildId, powerup })];

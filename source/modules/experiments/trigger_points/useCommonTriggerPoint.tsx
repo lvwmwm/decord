@@ -1,10 +1,10 @@
-// Module ID: 12382
-// Function ID: 96226
+// Module ID: 12397
+// Function ID: 96378
 // Name: useCommonTriggerPoint
 // Dependencies: [57, 31, 4044, 566, 2]
 // Exports: useCommonTriggerPoint
 
-// Module 12382 (useCommonTriggerPoint)
+// Module 12397 (useCommonTriggerPoint)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

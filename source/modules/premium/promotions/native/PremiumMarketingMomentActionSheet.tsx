@@ -1,10 +1,10 @@
-// Module ID: 15616
-// Function ID: 120442
+// Module ID: 15663
+// Function ID: 120764
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [31, 27, 4122, 653, 1345, 33, 4130, 689, 566, 5464, 686, 7457, 8559, 480, 7453, 12362, 5187, 4666, 8302, 5085, 4126, 5459, 3827, 8560, 1212, 2]
+// Dependencies: [31, 27, 4122, 653, 1345, 33, 4130, 689, 566, 5462, 686, 7537, 8604, 480, 7429, 12389, 5187, 4666, 8346, 5085, 4126, 3827, 8605, 1212, 2]
 // Exports: default
 
-// Module 15616 (PremiumMarketingMomentActionSheet)
+// Module 15663 (PremiumMarketingMomentActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -135,7 +135,7 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
       variant: "text-sm/normal",
       accessibilityRole: "link",
       onPress() {
-          return bottomSheetData(promotionId[22]).openURL(helpArticleLinkProps.url);
+          return bottomSheetData(promotionId[21]).openURL(helpArticleLinkProps.url);
         },
       children: helpArticleLinkProps.linkText
     };
@@ -143,7 +143,7 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   }
   items8[2] = tmp20;
   obj9.children = items8;
-  items5[2] = closure_9(markAsDismissed(promotionId[21]).TextWithIOSLinkWorkaround, obj9);
+  items5[2] = closure_9(markAsDismissed(promotionId[20]).Text, obj9);
   const obj11 = { style: items9 };
   items9 = [tmp.buttonContainer];
   const obj12 = {};
@@ -159,12 +159,12 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
     copy = button3.copy;
   }
   if (null == copy) {
-    const intl = markAsDismissed(promotionId[24]).intl;
-    copy = intl.string(markAsDismissed(promotionId[24]).t.J61px0);
+    const intl = markAsDismissed(promotionId[23]).intl;
+    copy = intl.string(markAsDismissed(promotionId[23]).t.J61px0);
   }
   obj12.text = copy;
   obj12.onPress = callback1;
-  obj11.children = callback(bottomSheetData(promotionId[23]), obj12);
+  obj11.children = callback(bottomSheetData(promotionId[22]), obj12);
   items5[3] = callback(tmp25, obj11);
   obj2.children = items5;
   obj1.children = tmp13(tmp14, obj2);

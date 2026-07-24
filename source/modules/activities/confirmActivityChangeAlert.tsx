@@ -1,10 +1,10 @@
-// Module ID: 10820
-// Function ID: 84026
+// Module ID: 10849
+// Function ID: 84218
 // Name: confirmActivityChangeModal
 // Dependencies: [3767, 1849, 4320, 4470, 1212, 1832, 2]
 // Exports: default
 
-// Module 10820 (confirmActivityChangeModal)
+// Module 10849 (confirmActivityChangeModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

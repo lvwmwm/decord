@@ -1,8 +1,8 @@
-// Module ID: 10782
-// Function ID: 83751
-// Dependencies: [31, 27, 33, 4130, 10775, 4957, 4663, 10783, 10774, 2]
+// Module ID: 10811
+// Function ID: 83943
+// Dependencies: [31, 27, 33, 4130, 10804, 4957, 4663, 10812, 10803, 2]
 
-// Module 10782
+// Module 10811
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -23,11 +23,11 @@ const memoResult = require("result").memo((row) => {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = require(10775) /* StageTileSize */.StageTileSize.FULL;
+    THIRD = require(10804) /* StageTileSize */.StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = require(10775) /* StageTileSize */.StageTileSize.HALF;
+    THIRD = require(10804) /* StageTileSize */.StageTileSize.HALF;
   } else {
-    THIRD = require(10775) /* StageTileSize */.StageTileSize.THIRD;
+    THIRD = require(10804) /* StageTileSize */.StageTileSize.THIRD;
   }
   obj = {};
   const items = [tmp.container, ];

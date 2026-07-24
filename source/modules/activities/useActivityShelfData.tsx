@@ -1,10 +1,10 @@
-// Module ID: 11160
-// Function ID: 86757
+// Module ID: 11190
+// Function ID: 87026
 // Name: useActivityShelfData
-// Dependencies: [31, 1849, 7372, 1347, 566, 5470, 1327, 8183, 477, 8177, 2]
+// Dependencies: [31, 1849, 7372, 1347, 566, 5468, 1327, 8227, 477, 8221, 2]
 // Exports: useActivityShelfData
 
-// Module 11160 (useActivityShelfData)
+// Module 11190 (useActivityShelfData)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

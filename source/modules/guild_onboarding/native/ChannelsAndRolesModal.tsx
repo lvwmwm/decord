@@ -1,10 +1,10 @@
-// Module ID: 9970
-// Function ID: 77000
+// Module ID: 10002
+// Function ID: 77194
 // Name: ChannelsAndRolesScreen
-// Dependencies: [57, 31, 27, 1838, 5059, 33, 4130, 689, 624, 5730, 8360, 1212, 8760, 9971, 9977, 9112, 2]
+// Dependencies: [57, 31, 27, 1838, 5059, 33, 4130, 689, 624, 5730, 8404, 1212, 8799, 10003, 10009, 9148, 2]
 // Exports: default
 
-// Module 9970 (ChannelsAndRolesScreen)
+// Module 10002 (ChannelsAndRolesScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -103,5 +103,5 @@ export default function ChannelsAndRolesModal(arg0) {
   obj.render = function render() {
     return outer1_8(outer1_11, { guildId: closure_0, defaultTab: closure_1 });
   };
-  return tmp3(importDefault(9112), obj);
+  return tmp3(importDefault(9148), obj);
 };

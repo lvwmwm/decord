@@ -1,10 +1,10 @@
-// Module ID: 8322
-// Function ID: 65954
+// Module ID: 8366
+// Function ID: 66182
 // Name: apexExperiment
-// Dependencies: [8323, 1428, 8325, 2]
+// Dependencies: [8367, 1428, 8369, 2]
 // Exports: getICYMIEnabled, useICYMIEnabled
 
-// Module 8322 (apexExperiment)
+// Module 8366 (apexExperiment)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
@@ -24,8 +24,8 @@ export const useICYMIEnabled = function useICYMIEnabled(TabsNavigator) {
   let obj = { location: TabsNavigator };
   obj = { location: TabsNavigator };
   const config = apexExperiment2.useConfig(obj);
-  const tmp = importDefault(8325)("hide_icymi_tab");
-  return !importDefault(8325)("hide_icymi_tab") && ApexExperiment.useConfig(obj).enabled;
+  const tmp = importDefault(8369)("hide_icymi_tab");
+  return !importDefault(8369)("hide_icymi_tab") && ApexExperiment.useConfig(obj).enabled;
 };
 export const getICYMIEnabled = function getICYMIEnabled(ICYMIManager) {
   const value = _isNativeReflectConstruct.get("hide_icymi_tab");

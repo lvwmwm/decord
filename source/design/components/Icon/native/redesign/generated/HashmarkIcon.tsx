@@ -1,10 +1,10 @@
-// Module ID: 13512
-// Function ID: 104012
+// Module ID: 13565
+// Function ID: 104339
 // Name: HashmarkIcon
-// Dependencies: [31, 33, 689, 3833, 13513, 2]
+// Dependencies: [31, 33, 689, 3833, 13566, 2]
 // Exports: HashmarkIcon
 
-// Module 13512 (HashmarkIcon)
+// Module 13565 (HashmarkIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const HashmarkIcon = function HashmarkIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13513) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13566) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13513) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13566) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

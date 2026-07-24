@@ -1,11 +1,11 @@
 // Module ID: 9964
-// Function ID: 76977
+// Function ID: 77001
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9964 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "59c1068002b82917b518f48d03d4151e", name: "BookmarkOutlineIcon", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 280, height: 262, scales: [1], hash: "f30ab52fb194d8e8f6a2de0e6e9d812d", name: "empty_state_image", type: "png" };
 
 export default registerAsset.registerAsset(obj);

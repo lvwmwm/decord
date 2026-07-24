@@ -1,10 +1,10 @@
-// Module ID: 10823
-// Function ID: 84033
+// Module ID: 10852
+// Function ID: 84225
 // Name: ConfirmActivityGateContent
-// Dependencies: [31, 27, 4155, 33, 4130, 10824, 4126, 1212, 4543, 3827, 4470, 2]
+// Dependencies: [31, 27, 4155, 33, 4130, 10853, 4126, 1212, 4543, 3827, 4470, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10823 (ConfirmActivityGateContent)
+// Module 10852 (ConfirmActivityGateContent)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PRIVATE_APPS_HELP_ARTICLE } from "items3";
@@ -19,7 +19,7 @@ const require = arg1;
 function ConfirmActivityGateContent(activityName) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer };
-  obj = { source: importDefault(10824), style: tmp.announcementBirb };
+  obj = { source: importDefault(10853), style: tmp.announcementBirb };
   const items = [callback(closure_3, obj), , , ];
   obj = { style: tmp.alertEyebrowText, variant: "eyebrow" };
   const intl = require(1212) /* getSystemLocale */.intl;

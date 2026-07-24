@@ -1,10 +1,10 @@
-// Module ID: 11253
-// Function ID: 87580
+// Module ID: 11282
+// Function ID: 87820
 // Name: AppDetailsOverflowMenu
-// Dependencies: [31, 33, 7919, 8191, 1212, 11254, 3803, 5492, 3830, 9646, 9302, 7771, 8969, 2]
+// Dependencies: [31, 33, 8006, 8235, 1212, 11283, 3803, 5490, 3830, 7609, 9338, 7533, 9008, 2]
 // Exports: default
 
-// Module 11253 (AppDetailsOverflowMenu)
+// Module 11282 (AppDetailsOverflowMenu)
 import "result";
 import { jsx } from "jsxProd";
 

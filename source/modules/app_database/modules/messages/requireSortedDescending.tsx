@@ -1,5 +1,5 @@
 // Module ID: 4807
-// Function ID: 41875
+// Function ID: 41879
 // Name: requireSortedDescending
 // Dependencies: [44, 21, 2]
 // Exports: requireSortedDescending

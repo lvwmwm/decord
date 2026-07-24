@@ -1,10 +1,10 @@
-// Module ID: 7844
-// Function ID: 62538
+// Module ID: 7933
+// Function ID: 62857
 // Name: setPendingChanges
-// Dependencies: [1917, 1849, 6856, 4276, 7845, 686, 2]
+// Dependencies: [1917, 1849, 6855, 4276, 7934, 686, 2]
 // Exports: setPendingChanges
 
-// Module 7844 (setPendingChanges)
+// Module 7933 (setPendingChanges)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -310,7 +310,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       }
     }
     if ("primaryGuildId" in merged) {
-      const guildId2 = require(7845) /* getUserPrimaryGuild */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
+      const guildId2 = require(7934) /* getUserPrimaryGuild */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
       let tmp50 = null;
       if (null != guildId2) {
         tmp50 = guildId2;
@@ -320,7 +320,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         obj.pendingPrimaryGuildId = merged.primaryGuildId;
       }
-      const obj2 = require(7845) /* getUserPrimaryGuild */;
+      const obj2 = require(7934) /* getUserPrimaryGuild */;
     }
     if ("legacyUsernameDisabled" in merged) {
       obj.pendingLegacyUsernameDisabled = merged.legacyUsernameDisabled;

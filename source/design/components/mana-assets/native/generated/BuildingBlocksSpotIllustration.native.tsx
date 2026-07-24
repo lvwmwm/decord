@@ -1,5 +1,5 @@
 // Module ID: 5920
-// Function ID: 49834
+// Function ID: 49845
 // Name: BuildingBlocksSpotIllustration
 // Dependencies: [33, 5085, 5921, 2]
 // Exports: BuildingBlocksSpotIllustration

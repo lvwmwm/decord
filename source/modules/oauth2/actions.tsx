@@ -1,10 +1,10 @@
-// Module ID: 8961
-// Function ID: 70644
+// Module ID: 9000
+// Function ID: 70859
 // Name: getLocationContextServer
-// Dependencies: [5, 1348, 1906, 653, 507, 5590, 484, 2]
+// Dependencies: [5, 1348, 1906, 653, 507, 5588, 484, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 8961 (getLocationContextServer)
+// Module 9000 (getLocationContextServer)
 import dispatchLogout from "dispatchLogout";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -102,7 +102,7 @@ export const fetchChannels = function fetchChannels(guildId) {
   return _fetchChannels(...arguments);
 };
 export const logoutWithRedirect = function logoutWithRedirect(pathname, TTI_test) {
-  const obj = importDefault(5590);
+  const obj = importDefault(5588);
   obj.logout(TTI_test, require(484) /* getAuthenticationPath */.getLoginPath(pathname.pathname + pathname.search, false));
 };
 export const verifyUserCode = function verifyUserCode(arg0) {

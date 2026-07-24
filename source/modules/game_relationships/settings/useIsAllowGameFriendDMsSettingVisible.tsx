@@ -1,10 +1,10 @@
-// Module ID: 14547
-// Function ID: 110978
+// Module ID: 14597
+// Function ID: 111301
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [6901, 566, 2]
+// Dependencies: [6900, 566, 2]
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 14547 (useIsAllowGameFriendDMsSettingVisible)
+// Module 14597 (useIsAllowGameFriendDMsSettingVisible)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

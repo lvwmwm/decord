@@ -1,10 +1,10 @@
-// Module ID: 7941
-// Function ID: 63404
+// Module ID: 8028
+// Function ID: 63716
 // Name: usePremiumUpsellConfig
-// Dependencies: [31, 1849, 653, 1851, 33, 7942, 1212, 7943, 7944, 7945, 7946, 7947, 7948, 4471, 7960, 1934, 3776, 6686, 7999, 3989, 675, 4098, 8139, 2]
+// Dependencies: [31, 1849, 653, 1851, 33, 8029, 1212, 8030, 8031, 8032, 8033, 8034, 8035, 4471, 8047, 1934, 3776, 6686, 8059, 3989, 675, 4098, 8183, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 7941 (usePremiumUpsellConfig)
+// Module 8028 (usePremiumUpsellConfig)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -220,7 +220,7 @@ export default {
   usePremiumUpsellConfig
 };
 export const getUpsellItems = function getUpsellItems() {
-  let obj = { key: constants.GLOBAL_EMOJI, image: importDefault(7942) };
+  let obj = { key: constants.GLOBAL_EMOJI, image: importDefault(8029) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.activeTitle = intl.string(require(1212) /* getSystemLocale */.t.gKtr8N);
   const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -228,7 +228,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl3.format(require(1212) /* getSystemLocale */.t.rf7Ixp, {});
   const items = [obj, , , , , ];
-  obj = { key: constants.ANIMATED_EMOJI, image: importDefault(7943) };
+  obj = { key: constants.ANIMATED_EMOJI, image: importDefault(8030) };
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj.activeTitle = intl4.string(require(1212) /* getSystemLocale */.t.F6rmyq);
   const intl5 = require(1212) /* getSystemLocale */.intl;
@@ -236,7 +236,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl6 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl6.format(require(1212) /* getSystemLocale */.t.JxTzzb, {});
   items[1] = obj;
-  obj = { key: constants.ANIMATED_AVATAR, image: importDefault(7944) };
+  obj = { key: constants.ANIMATED_AVATAR, image: importDefault(8031) };
   const intl7 = require(1212) /* getSystemLocale */.intl;
   obj.activeTitle = intl7.string(require(1212) /* getSystemLocale */.t["tQh+gF"]);
   const intl8 = require(1212) /* getSystemLocale */.intl;
@@ -244,7 +244,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl9 = require(1212) /* getSystemLocale */.intl;
   obj.description = intl9.format(require(1212) /* getSystemLocale */.t["Tso/Fn"], {});
   items[2] = obj;
-  const obj1 = { key: constants.UPLOAD, image: importDefault(7945) };
+  const obj1 = { key: constants.UPLOAD, image: importDefault(8032) };
   const intl10 = require(1212) /* getSystemLocale */.intl;
   obj1.activeTitle = intl10.string(require(1212) /* getSystemLocale */.t["1EOZqw"]);
   const intl11 = require(1212) /* getSystemLocale */.intl;
@@ -257,7 +257,7 @@ export const getUpsellItems = function getUpsellItems() {
   obj2.maxUploadPremium = intl14.string(require(1212) /* getSystemLocale */.t.EaBfeq);
   obj1.description = intl12.format(require(1212) /* getSystemLocale */.t.DUT5IC, obj2);
   items[3] = obj1;
-  const obj3 = { key: constants.BADGE, image: importDefault(7946) };
+  const obj3 = { key: constants.BADGE, image: importDefault(8033) };
   const intl15 = require(1212) /* getSystemLocale */.intl;
   obj3.activeTitle = intl15.string(require(1212) /* getSystemLocale */.t["602BK4"]);
   const intl16 = require(1212) /* getSystemLocale */.intl;
@@ -265,7 +265,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl17 = require(1212) /* getSystemLocale */.intl;
   obj3.description = intl17.format(require(1212) /* getSystemLocale */.t["p7i+li"], {});
   items[4] = obj3;
-  const obj4 = { key: constants.APP_ICONS, image: importDefault(7947) };
+  const obj4 = { key: constants.APP_ICONS, image: importDefault(8034) };
   const intl18 = require(1212) /* getSystemLocale */.intl;
   obj4.activeTitle = intl18.string(require(1212) /* getSystemLocale */.t["1B1Cyn"]);
   const intl19 = require(1212) /* getSystemLocale */.intl;

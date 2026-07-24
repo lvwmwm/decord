@@ -1,10 +1,10 @@
-// Module ID: 16151
-// Function ID: 125218
+// Module ID: 16198
+// Function ID: 125542
 // Name: ParentalConsentWarningModal
-// Dependencies: [31, 27, 6769, 6770, 653, 1345, 33, 1334, 6771, 3982, 5796, 4340, 4130, 689, 1557, 1212, 2198, 675, 686, 1336, 4098, 4337, 16152, 1934, 5187, 4541, 5807, 4126, 4543, 2]
+// Dependencies: [31, 27, 6769, 6770, 653, 1345, 33, 1334, 6771, 3982, 5796, 4340, 4130, 689, 1557, 1212, 2198, 675, 686, 1336, 4098, 4337, 16199, 1934, 5187, 4541, 5807, 4126, 4543, 2]
 // Exports: default
 
-// Module 16151 (ParentalConsentWarningModal)
+// Module 16198 (ParentalConsentWarningModal)
 import result from "result";
 import { View } from "Text";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

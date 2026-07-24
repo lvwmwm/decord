@@ -1,10 +1,10 @@
-// Module ID: 5480
-// Function ID: 46788
+// Module ID: 5478
+// Function ID: 46785
 // Name: ProviderConnectionCard
-// Dependencies: [5, 31, 653, 33, 4066, 4814, 1212, 5481, 5482, 675, 4324, 1392, 3976, 1273, 4074, 5479, 2]
+// Dependencies: [5, 31, 653, 33, 4066, 4814, 1212, 5479, 5480, 675, 4324, 1392, 3976, 1273, 4074, 5477, 2]
 // Exports: default
 
-// Module 5480 (ProviderConnectionCard)
+// Module 5478 (ProviderConnectionCard)
 import getPlatformUserUrl from "getPlatformUserUrl";
 import result from "result";
 import { AnalyticEvents } from "ME";

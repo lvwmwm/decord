@@ -1,5 +1,5 @@
 // Module ID: 4569
-// Function ID: 40061
+// Function ID: 40065
 // Name: makeMatcher
 // Dependencies: [1443, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs

@@ -1,5 +1,5 @@
 // Module ID: 1689
-// Function ID: 18698
+// Function ID: 18699
 // Name: isWorkletEventHandler
 // Dependencies: [6, 7, 99, 100, 1690, 1679, 1687]
 

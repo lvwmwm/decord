@@ -1,10 +1,10 @@
-// Module ID: 8480
-// Function ID: 67639
+// Module ID: 8525
+// Function ID: 67869
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [57, 31, 27, 1354, 33, 4130, 689, 8350, 1212, 5187, 5186, 5121, 7519, 7518, 4543, 8365, 4098, 2]
+// Dependencies: [57, 31, 27, 1354, 33, 4130, 689, 8394, 1212, 5187, 5186, 5121, 7654, 7653, 4543, 8409, 4098, 2]
 // Exports: default
 
-// Module 8480 (GuildEventRsvpPickerActionSheet)
+// Module 8525 (GuildEventRsvpPickerActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -32,9 +32,9 @@ export default function GuildEventRsvpPickerActionSheet(event) {
   ({ recurrenceId: importDefault, guildId: dependencyMap, onRsvp: _slicedToArray } = event);
   let INTERESTED;
   let tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(first.useState(event(8350).ResponseOptions.SERIES), 2);
+  const tmp2 = callback(first.useState(event(8394).ResponseOptions.SERIES), 2);
   first = tmp2[0];
-  let obj = event(8350);
+  let obj = event(8394);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (null != existingRsvp) {
@@ -57,9 +57,9 @@ export default function GuildEventRsvpPickerActionSheet(event) {
   obj.header = callback2(event(5186).BottomSheetTitleHeader, obj);
   const obj1 = { bottom: true, style: tmp.container };
   const obj2 = { defaultValue: first, onChange: tmp2[1], hasIcons: false };
-  const responseOptions = event(8350).getResponseOptions();
+  const responseOptions = event(8394).getResponseOptions();
   obj2.children = responseOptions.map((value) => outer1_7(event(outer1_2[13]).TableRadioRow, { value: value.value, label: value.name }, value.value));
-  const items = [callback2(event(7519).TableRadioGroup, obj2), ];
+  const items = [callback2(event(7654).TableRadioGroup, obj2), ];
   const obj3 = { style: tmp.buttonWrapper };
   const obj4 = {
     onPress() {

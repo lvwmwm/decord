@@ -1,10 +1,10 @@
-// Module ID: 16289
-// Function ID: 126790
+// Module ID: 16336
+// Function ID: 127114
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8439, 653, 33, 4130, 689, 8438, 4471, 1212, 4561, 16250, 16290, 4814, 1392, 3976, 5503, 5165, 5504, 3834, 1456, 566, 4066, 5087, 5788, 5796, 1920, 7495, 4541, 4126, 5448, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 8483, 653, 33, 4130, 689, 8482, 4471, 1212, 4561, 16297, 16337, 4814, 1392, 3976, 5501, 5165, 5502, 3834, 1456, 566, 4066, 5087, 5788, 5796, 1920, 7636, 4541, 4126, 5448, 2]
 // Exports: default
 
-// Module 16289 (_isNativeReflectConstruct)
+// Module 16336 (_isNativeReflectConstruct)
 import getActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -324,7 +324,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     items2[1] = callback3(platformType(4126).Text, obj6);
     obj4.children = items2;
     obj3.children = closure_17(platformType(4541).Stack, obj4);
-    const items3 = [callback3(platformType(7495).Form, obj3), callback3(platformType(5448).NavScrim, {})];
+    const items3 = [callback3(platformType(7636).Form, obj3), callback3(platformType(5448).NavScrim, {})];
     obj2.children = items3;
     return closure_17(closure_18, obj2);
   }

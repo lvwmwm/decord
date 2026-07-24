@@ -1,7 +1,7 @@
 // Module ID: 12049
-// Function ID: 93725
+// Function ID: 93674
 // Name: cached
-// Dependencies: [12013]
+// Dependencies: [12039]
 
 // Module 12049 (cached)
 const self = this;
@@ -63,9 +63,9 @@ if (self2) {
         }
         return tmp2;
       }
-      let closure_0 = { string: { unit: "tekens", verb: "heeft" }, file: { unit: "bytes", verb: "heeft" }, array: { unit: "elementen", verb: "heeft" }, set: { unit: "elementen", verb: "heeft" } };
-      let closure_1 = { regex: "invoer", email: "emailadres", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datum en tijd", date: "ISO datum", time: "ISO tijd", duration: "ISO duur", ipv4: "IPv4-adres", ipv6: "IPv6-adres", cidrv4: "IPv4-bereik", cidrv6: "IPv6-bereik", base64: "base64-gecodeerde tekst", base64url: "base64 URL-gecodeerde tekst", json_string: "JSON string", e164: "E.164-nummer", jwt: "JWT", template_literal: "invoer" };
-      let closure_2 = { nan: "NaN", number: "getal" };
+      let closure_0 = { string: { unit: "\u0441\u0438\u043C\u0432\u043E\u043B\u0430", verb: "\u0434\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430" }, file: { unit: "\u0431\u0430\u0439\u0442\u0430", verb: "\u0434\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430" }, array: { unit: "\u0435\u043B\u0435\u043C\u0435\u043D\u0442\u0430", verb: "\u0434\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430" }, set: { unit: "\u0435\u043B\u0435\u043C\u0435\u043D\u0442\u0430", verb: "\u0434\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430" } };
+      let closure_1 = { regex: "\u0432\u0445\u043E\u0434", email: "\u0438\u043C\u0435\u0439\u043B \u0430\u0434\u0440\u0435\u0441", url: "URL", emoji: "\u0435\u043C\u043E\u0434\u0436\u0438", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO \u0432\u0440\u0435\u043C\u0435", date: "ISO \u0434\u0430\u0442\u0430", time: "ISO \u0432\u0440\u0435\u043C\u0435", duration: "ISO \u043F\u0440\u043E\u0434\u044A\u043B\u0436\u0438\u0442\u0435\u043B\u043D\u043E\u0441\u0442", ipv4: "IPv4 \u0430\u0434\u0440\u0435\u0441", ipv6: "IPv6 \u0430\u0434\u0440\u0435\u0441", cidrv4: "IPv4 \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D", cidrv6: "IPv6 \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D", base64: "base64-\u043A\u043E\u0434\u0438\u0440\u0430\u043D \u043D\u0438\u0437", base64url: "base64url-\u043A\u043E\u0434\u0438\u0440\u0430\u043D \u043D\u0438\u0437", json_string: "JSON \u043D\u0438\u0437", e164: "E.164 \u043D\u043E\u043C\u0435\u0440", jwt: "JWT", template_literal: "\u0432\u0445\u043E\u0434" };
+      let closure_2 = { nan: "NaN", number: "\u0447\u0438\u0441\u043B\u043E", array: "\u043C\u0430\u0441\u0438\u0432" };
       return (code) => {
         let minimum;
         let origin;
@@ -76,135 +76,138 @@ if (self2) {
             expected = code.expected;
           }
           const parsedTypeResult = closure_2.parsedType(code.input);
-          let tmp55 = parsedTypeResult;
+          let tmp52 = parsedTypeResult;
           if (null != closure_2[parsedTypeResult]) {
-            tmp55 = tmp54;
+            tmp52 = tmp51;
           }
           if (obj.test(code.expected)) {
             const _HermesInternal17 = HermesInternal;
-            let combined = "Ongeldige invoer: verwacht instanceof " + code.expected + ", ontving " + tmp55;
+            let combined = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u0432\u0445\u043E\u0434: \u043E\u0447\u0430\u043A\u0432\u0430\u043D instanceof " + code.expected + ", \u043F\u043E\u043B\u0443\u0447\u0435\u043D " + tmp52;
           } else {
             const _HermesInternal16 = HermesInternal;
-            combined = "Ongeldige invoer: verwacht " + expected + ", ontving " + tmp55;
+            combined = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u0432\u0445\u043E\u0434: \u043E\u0447\u0430\u043A\u0432\u0430\u043D " + expected + ", \u043F\u043E\u043B\u0443\u0447\u0435\u043D " + tmp52;
           }
           return combined;
         } else if ("invalid_value" === code) {
           if (1 === code.values.length) {
             const _HermesInternal15 = HermesInternal;
-            let combined1 = "Ongeldige invoer: verwacht " + closure_2.stringifyPrimitive(code.values[0]);
+            let combined1 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u0432\u0445\u043E\u0434: \u043E\u0447\u0430\u043A\u0432\u0430\u043D " + closure_2.stringifyPrimitive(code.values[0]);
           } else {
             const _HermesInternal14 = HermesInternal;
-            combined1 = "Ongeldige optie: verwacht \u00E9\u00E9n van " + closure_2.joinValues(code.values, "|");
+            combined1 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u0430 \u043E\u043F\u0446\u0438\u044F: \u043E\u0447\u0430\u043A\u0432\u0430\u043D\u043E \u0435\u0434\u043D\u043E \u043E\u0442 " + closure_2.joinValues(code.values, "|");
           }
           return combined1;
         } else if ("too_big" === code) {
-          let str38 = "<";
+          let str35 = "<";
           if (code.inclusive) {
-            str38 = "<=";
+            str35 = "<=";
           }
-          const tmp28 = getSizing(code.origin);
-          let str39 = "laat";
-          if ("date" !== code.origin) {
-            let str41 = "groot";
-            if ("string" === code.origin) {
-              str41 = "lang";
-            }
-            str39 = str41;
-          }
+          const tmp27 = getSizing(code.origin);
           const origin2 = code.origin;
-          let str43 = "waarde";
-          if (tmp28) {
-            if (tmp30) {
-              str43 = origin2;
+          let str36 = "\u0441\u0442\u043E\u0439\u043D\u043E\u0441\u0442";
+          if (tmp27) {
+            if (tmp29) {
+              str36 = origin2;
             }
             let str = code.maximum.toString();
-            const unit = tmp28.unit;
-            let str50 = "elementen";
+            const unit = tmp27.unit;
+            let str41 = "\u0435\u043B\u0435\u043C\u0435\u043D\u0442\u0430";
             if (null != unit) {
-              str50 = unit;
+              str41 = unit;
             }
             const _HermesInternal13 = HermesInternal;
-            let combined2 = "Te " + str39 + ": verwacht dat " + str43 + " " + str38 + str + " " + str50 + " " + tmp28.verb;
-            const str49 = code.maximum;
+            let combined2 = "\u0422\u0432\u044A\u0440\u0434\u0435 \u0433\u043E\u043B\u044F\u043C\u043E: \u043E\u0447\u0430\u043A\u0432\u0430 \u0441\u0435 " + str36 + " \u0434\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430 " + str35 + str + " " + str41;
+            const str40 = code.maximum;
           } else {
-            let tmp31 = str43;
-            if (tmp30) {
-              tmp31 = origin2;
+            let tmp30 = str36;
+            if (tmp29) {
+              tmp30 = origin2;
             }
             const _HermesInternal12 = HermesInternal;
-            combined2 = "Te " + str39 + ": verwacht dat " + tmp31 + " " + str38 + code.maximum.toString() + " is";
-            const str44 = code.maximum;
+            combined2 = "\u0422\u0432\u044A\u0440\u0434\u0435 \u0433\u043E\u043B\u044F\u043C\u043E: \u043E\u0447\u0430\u043A\u0432\u0430 \u0441\u0435 " + tmp30 + " \u0434\u0430 \u0431\u044A\u0434\u0435 " + str35 + code.maximum.toString();
+            const str37 = code.maximum;
           }
           return combined2;
         } else if ("too_small" === code) {
-          let str23 = ">";
+          let str29 = ">";
           if (code.inclusive) {
-            str23 = ">=";
+            str29 = ">=";
           }
-          const tmp15 = getSizing(code.origin);
-          let str24 = "vroeg";
-          if ("date" !== code.origin) {
-            let str26 = "klein";
-            if ("string" === code.origin) {
-              str26 = "kort";
-            }
-            str24 = str26;
-          }
+          const tmp16 = getSizing(code.origin);
           ({ origin, minimum } = code);
           const str1 = minimum.toString();
-          if (tmp15) {
+          if (tmp16) {
             const _HermesInternal11 = HermesInternal;
-            let combined3 = "Te " + str24 + ": verwacht dat " + origin + " " + str23 + str1 + " " + tmp15.unit + " " + tmp15.verb;
+            let combined3 = "\u0422\u0432\u044A\u0440\u0434\u0435 \u043C\u0430\u043B\u043A\u043E: \u043E\u0447\u0430\u043A\u0432\u0430 \u0441\u0435 " + origin + " \u0434\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430 " + str29 + str1 + " " + tmp16.unit;
           } else {
             const _HermesInternal10 = HermesInternal;
-            combined3 = "Te " + str24 + ": verwacht dat " + origin + " " + str23 + str1 + " is";
+            combined3 = "\u0422\u0432\u044A\u0440\u0434\u0435 \u043C\u0430\u043B\u043A\u043E: \u043E\u0447\u0430\u043A\u0432\u0430 \u0441\u0435 " + origin + " \u0434\u0430 \u0431\u044A\u0434\u0435 " + str29 + str1;
           }
           return combined3;
         } else if ("invalid_format" === code) {
           if ("starts_with" === code.format) {
             const _HermesInternal9 = HermesInternal;
-            let combined4 = "Ongeldige tekst: moet met \"" + code.prefix + "\" beginnen";
+            return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u043D\u0438\u0437: \u0442\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u0437\u0430\u043F\u043E\u0447\u0432\u0430 \u0441 \"" + code.prefix + "\"";
           } else if ("ends_with" === code.format) {
             const _HermesInternal8 = HermesInternal;
-            combined4 = "Ongeldige tekst: moet op \"" + code.suffix + "\" eindigen";
+            return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u043D\u0438\u0437: \u0442\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u0437\u0430\u0432\u044A\u0440\u0448\u0432\u0430 \u0441 \"" + code.suffix + "\"";
           } else if ("includes" === code.format) {
             const _HermesInternal7 = HermesInternal;
-            combined4 = "Ongeldige tekst: moet \"" + code.includes + "\" bevatten";
+            return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u043D\u0438\u0437: \u0442\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u0432\u043A\u043B\u044E\u0447\u0432\u0430 \"" + code.includes + "\"";
           } else if ("regex" === code.format) {
             const _HermesInternal6 = HermesInternal;
-            combined4 = "Ongeldige tekst: moet overeenkomen met patroon " + code.pattern;
+            return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u043D\u0438\u0437: \u0442\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u0441\u044A\u0432\u043F\u0430\u0434\u0430 \u0441 " + code.pattern;
           } else {
+            let str15 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D";
+            if ("emoji" === code.format) {
+              str15 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u043E";
+            }
+            if ("datetime" === code.format) {
+              str15 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u043E";
+            }
+            if ("date" === code.format) {
+              str15 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u0430";
+            }
+            if ("time" === code.format) {
+              str15 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u043E";
+            }
+            if ("duration" === code.format) {
+              str15 = "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u0430";
+            }
             let format = table2[code.format];
             if (null == format) {
               format = code.format;
             }
             const _HermesInternal5 = HermesInternal;
-            combined4 = "Ongeldig: " + format;
+            return "" + str15 + " " + format;
           }
-          return combined4;
         } else if ("not_multiple_of" === code) {
           const _HermesInternal4 = HermesInternal;
-          return "Ongeldig getal: moet een veelvoud van " + code.divisor + " zijn";
+          return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u043E \u0447\u0438\u0441\u043B\u043E: \u0442\u0440\u044F\u0431\u0432\u0430 \u0434\u0430 \u0431\u044A\u0434\u0435 \u043A\u0440\u0430\u0442\u043D\u043E \u043D\u0430 " + code.divisor;
         } else if ("unrecognized_keys" === code) {
           let str7 = "";
+          let str8 = "";
           if (code.keys.length > 1) {
-            str7 = "s";
+            str8 = "\u0438";
+          }
+          if (code.keys.length > 1) {
+            str7 = "\u043E\u0432\u0435";
           }
           const _HermesInternal3 = HermesInternal;
-          return "Onbekende key" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
+          return "\u041D\u0435\u0440\u0430\u0437\u043F\u043E\u0437\u043D\u0430\u0442" + str8 + " \u043A\u043B\u044E\u0447" + str7 + ": " + closure_2.joinValues(code.keys, ", ");
         } else {
           str = "invalid_key";
           if ("invalid_key" === code) {
             const _HermesInternal2 = HermesInternal;
-            return "Ongeldige key in " + code.origin;
+            return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u043A\u043B\u044E\u0447 \u0432 " + code.origin;
           } else {
             if ("invalid_union" !== code) {
               if ("invalid_element" === code) {
                 const _HermesInternal = HermesInternal;
-                return "Ongeldige waarde in " + code.origin;
+                return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u0430 \u0441\u0442\u043E\u0439\u043D\u043E\u0441\u0442 \u0432 " + code.origin;
               }
             }
-            return "Ongeldige invoer";
+            return "\u041D\u0435\u0432\u0430\u043B\u0438\u0434\u0435\u043D \u0432\u0445\u043E\u0434";
           }
         }
       };

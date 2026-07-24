@@ -1,10 +1,10 @@
-// Module ID: 8700
-// Function ID: 68907
+// Module ID: 8741
+// Function ID: 69125
 // Name: useTrackShopCardClick
-// Dependencies: [31, 8701, 653, 8666, 8667, 6786, 6785, 675, 2]
+// Dependencies: [31, 8742, 653, 8707, 8708, 6786, 6785, 675, 2]
 // Exports: useTrackShopCardClick
 
-// Module 8700 (useTrackShopCardClick)
+// Module 8741 (useTrackShopCardClick)
 import result from "result";
 import { useSelectedVariantIndex } from "useSelectedVariantIndex";
 import { AnalyticEvents } from "ME";

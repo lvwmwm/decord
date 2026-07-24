@@ -1,15 +1,15 @@
-// Module ID: 10881
-// Function ID: 84610
+// Module ID: 10908
+// Function ID: 84799
 // Name: handleTapCommandMention
-// Dependencies: [31, 1348, 1455, 4566, 4567, 33, 6755, 3982, 4098, 1555, 4471, 1212, 1273, 10882, 3830, 5492, 3803, 9646, 5497, 10884, 4126, 3989, 10886, 9969, 2]
+// Dependencies: [31, 1348, 1455, 4566, 4567, 33, 6755, 3982, 4098, 1555, 4471, 1212, 1273, 10909, 3830, 5490, 3803, 7609, 5495, 10911, 4126, 3989, 10913, 10001, 2]
 // Exports: default
 
-// Module 10881 (handleTapCommandMention)
+// Module 10908 (handleTapCommandMention)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME";
-import { COMMAND_SENTINEL } from "MENTION_SENTINEL";
+import { COMMAND_SENTINEL } from "regExp";
 import { jsxs } from "jsxProd";
 
 let closure_5;
@@ -116,7 +116,7 @@ function handleLongPressCommandMention(commandName, commandId) {
   let obj = {};
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t["42H+Nb"]);
-  obj.IconComponent = _require(10882).SlashBoxIcon;
+  obj.IconComponent = _require(10909).SlashBoxIcon;
   obj.onPress = function onPress() {
     commandName(outer1_2[14]).presentCommandCopied();
     const obj = commandName(outer1_2[14]);
@@ -128,7 +128,7 @@ function handleLongPressCommandMention(commandName, commandId) {
     obj = {};
     const intl2 = _require(1212).intl;
     obj.label = intl2.string(_require(1212).t.oJ1Muw);
-    obj.IconComponent = _require(9646).IdIcon;
+    obj.IconComponent = _require(7609).IdIcon;
     obj.onPress = function onPress() {
       commandName(outer1_2[14]).presentIdCopied();
       const obj = commandName(outer1_2[14]);
@@ -137,7 +137,7 @@ function handleLongPressCommandMention(commandName, commandId) {
     items.push(obj);
   }
   obj = { key: "LongPressCommandMention", options: items, hasIcons: true };
-  const result = _require(5497).showSimpleActionSheet(obj);
+  const result = _require(5495).showSimpleActionSheet(obj);
 }
 ({ AppLauncherRouteName: closure_5, useAppLauncherNavigation: closure_6 } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
 let result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/markup/native/MarkupReactCommandRule.tsx");
@@ -148,7 +148,7 @@ export default function MarkupReactCommandRule(node) {
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != React.useContext(node(10884).AppLauncherContext);
+  let closure_1 = null != React.useContext(node(10911).AppLauncherContext);
   const dependencyMap = callback();
   let obj = {
     style,
@@ -182,7 +182,7 @@ export default function MarkupReactCommandRule(node) {
       obj.onSetCommand = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10886)();
+        callback(10913)();
         callback(4098).hideActionSheet();
         if (null != bestActiveInput) {
           bestActiveInput.openSystemKeyboard();
@@ -204,7 +204,7 @@ export default function MarkupReactCommandRule(node) {
       outer1_11(node.commandName, node.commandId);
     }
   };
-  const items = ["/", node(9969).smartOutput(node, output, state)];
+  const items = ["/", node(10001).smartOutput(node, output, state)];
   obj.children = items;
   return jsxs(node(4126).Text, {
     style,
@@ -238,7 +238,7 @@ export default function MarkupReactCommandRule(node) {
       obj.onSetCommand = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10886)();
+        callback(10913)();
         callback(4098).hideActionSheet();
         if (null != bestActiveInput) {
           bestActiveInput.openSystemKeyboard();

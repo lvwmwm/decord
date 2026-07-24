@@ -1,11 +1,11 @@
-// Module ID: 15298
-// Function ID: 116640
+// Module ID: 15345
+// Function ID: 116962
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1194, 4051, 1917, 1910, 1838, 3758, 1849, 8439, 653, 33, 7094, 4130, 689, 1456, 10184, 4319, 3969, 1212, 10179, 1557, 566, 5646, 8413, 9302, 15299, 5788, 8468, 5048, 8438, 21, 3843, 5772, 7879, 1273, 8502, 5448, 2]
+// Dependencies: [57, 31, 27, 1194, 4051, 1917, 1910, 1838, 3758, 1849, 8483, 653, 33, 7093, 4130, 689, 1456, 10214, 4319, 3969, 1212, 10209, 1557, 566, 5646, 8457, 9338, 15346, 5788, 8512, 5048, 8482, 21, 3843, 5772, 7527, 1273, 8547, 5448, 2]
 
-// Module 15298 (_createForOfIteratorHelperLoose)
+// Module 15345 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_8438";
+import importAllResult from "module_8482";
 import { View } from "showMembersManagementActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
@@ -172,7 +172,7 @@ let closure_20 = importAllResult.memo((guild) => {
     obj.arrow = true;
     obj.start = start;
     obj.end = end;
-    return callback(guildMember(10179), obj);
+    return callback(guildMember(10209), obj);
   }
   tmp = callback2();
 });

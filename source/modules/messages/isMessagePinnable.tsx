@@ -1,10 +1,10 @@
-// Module ID: 9539
-// Function ID: 74285
+// Module ID: 9575
+// Function ID: 74494
 // Name: isMessagePinnable
 // Dependencies: [3758, 653, 5651, 5650, 2]
 // Exports: default
 
-// Module 9539 (isMessagePinnable)
+// Module 9575 (isMessagePinnable)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

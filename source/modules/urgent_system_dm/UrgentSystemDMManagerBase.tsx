@@ -1,9 +1,9 @@
-// Module ID: 16184
-// Function ID: 125577
+// Module ID: 16231
+// Function ID: 125901
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1348, 1906, 1849, 16185, 653, 7889, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 1348, 1906, 1849, 16232, 653, 7976, 5078, 2]
 
-// Module 16184 (_isNativeReflectConstruct)
+// Module 16231 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -53,8 +53,8 @@ function maybeClearUrgentMessage(channelId) {
   }
   if (hasUrgentMessagesResult) {
     let c12 = false;
-    importAll(7889).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
-    const obj2 = importAll(7889);
+    importAll(7976).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
+    const obj2 = importAll(7976);
   }
 }
 let c12 = false;

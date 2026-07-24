@@ -1,10 +1,10 @@
-// Module ID: 15579
-// Function ID: 120104
+// Module ID: 15626
+// Function ID: 120426
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [57, 31, 27, 1348, 4349, 1849, 33, 4130, 689, 1557, 566, 15580, 15582, 11472, 2]
+// Dependencies: [57, 31, 27, 1348, 4349, 1849, 33, 4130, 689, 1557, 566, 15627, 15629, 11502, 2]
 // Exports: default
 
-// Module 15579 (RestrictedMessageRequestPreview)
+// Module 15626 (RestrictedMessageRequestPreview)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -106,9 +106,9 @@ export default function RestrictedMessageRequestPreview(channelId) {
         }
       };
       obj1 = { channel: stateFromStores, user: stateFromStores1 };
-      const items8 = [callback(ref(15580), obj1), ];
+      const items8 = [callback(ref(15627), obj1), ];
       obj2 = { channelId };
-      items8[1] = callback(ref(15582), obj2);
+      items8[1] = callback(ref(15629), obj2);
       obj.children = items8;
       const items9 = [closure_11(closure_5, obj), ];
       const obj3 = {};
@@ -117,7 +117,7 @@ export default function RestrictedMessageRequestPreview(channelId) {
       items10[1] = obj4;
       obj3.style = items10;
       const obj5 = { channel: stateFromStores };
-      obj3.children = callback(ref(11472), obj5);
+      obj3.children = callback(ref(11502), obj5);
       items9[1] = callback(first1, obj3);
       obj.children = items9;
       tmp10Result = tmp10(first1, obj);

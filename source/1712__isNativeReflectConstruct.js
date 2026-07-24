@@ -1,5 +1,5 @@
 // Module ID: 1712
-// Function ID: 19247
+// Function ID: 19248
 // Name: _isNativeReflectConstruct
 // Dependencies: [77, 6, 7, 15, 17, 18, 1701, 1654, 1586, 1652]
 // Exports: combineTransition

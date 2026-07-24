@@ -1,10 +1,10 @@
-// Module ID: 10723
-// Function ID: 83444
+// Module ID: 10752
+// Function ID: 83636
 // Name: getSelectedNoiseSuppressionOption
-// Dependencies: [4177, 653, 8843, 10724, 566, 2]
+// Dependencies: [4177, 653, 8882, 10753, 566, 2]
 // Exports: handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10723 (getSelectedNoiseSuppressionOption)
+// Module 10752 (getSelectedNoiseSuppressionOption)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -29,12 +29,12 @@ let obj = { NONE: "NONE", STANDARD: "STANDARD", KRISP: "KRISP" };
 let result = require("getInputDeviceName").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceUtils.tsx");
 
 export const handleAutomaticGainControlChange = function handleAutomaticGainControlChange(arg0) {
-  let obj = importDefault(8843);
+  let obj = importDefault(8882);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   const result = obj.setAutomaticGainControl(arg0, obj);
 };
 export const handleEchoCancellationChange = function handleEchoCancellationChange(echoCancellation) {
-  let obj = importDefault(8843);
+  let obj = importDefault(8882);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   obj.setEchoCancellation(echoCancellation, obj);
 };
@@ -42,11 +42,11 @@ export const handleNoiseSuppressionChange = function handleNoiseSuppressionChang
   let KRISP;
   let STANDARD;
   ({ KRISP, STANDARD } = obj);
-  obj = importDefault(8843);
+  obj = importDefault(8882);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   obj.setNoiseCancellation(arg0 === KRISP, obj);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  importDefault(8843).setNoiseSuppression(arg0 === STANDARD, obj);
+  importDefault(8882).setNoiseSuppression(arg0 === STANDARD, obj);
 };
 export const NoiseSuppressionOpt = obj;
 export { getSelectedNoiseSuppressionOption };

@@ -1,10 +1,10 @@
-// Module ID: 15621
-// Function ID: 120469
+// Module ID: 15668
+// Function ID: 120791
 // Name: HasBadgeCoachmark
-// Dependencies: [31, 27, 8268, 1345, 33, 4130, 689, 4098, 3982, 5187, 9686, 4126, 1212, 2294, 4543, 9679, 5484, 15622, 8773, 566, 8265, 2]
+// Dependencies: [31, 27, 8312, 1345, 33, 4130, 689, 4098, 3982, 5187, 9720, 4126, 1212, 2294, 4543, 9713, 5482, 15669, 8812, 566, 8309, 2]
 // Exports: default
 
-// Module 15621 (HasBadgeCoachmark)
+// Module 15668 (HasBadgeCoachmark)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -43,7 +43,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   let tmp9 = null != currentTier.simple_icon_url;
   if (tmp9) {
     const obj1 = { icon: currentTier.simple_icon_url, size: 120 };
-    tmp9 = callback(importDefault(9686), obj1);
+    tmp9 = callback(importDefault(9720), obj1);
   }
   obj.children = tmp9;
   const items2 = [callback(closure_5, obj), , ];
@@ -103,7 +103,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   obj = { style: tmp.container };
   obj = { style: tmp.graphicContainer };
   const obj1 = {};
-  const obj2 = { uri: importDefault(15622) };
+  const obj2 = { uri: importDefault(15669) };
   obj1.source = obj2;
   obj1.style = tmp.newBadgeImage;
   obj.children = callback(closure_4, obj1);
@@ -124,7 +124,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   const intl3 = markAsDismissed(1212).intl;
   obj7.text = intl3.string(importDefault(2294).DZnomS);
   const obj8 = { size: "sm", color: importDefault(689).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  obj7.icon = callback(markAsDismissed(8773).GiftIcon, obj8);
+  obj7.icon = callback(markAsDismissed(8812).GiftIcon, obj8);
   obj7.onPress = callback;
   obj6.children = callback(markAsDismissed(4543).Button, obj7);
   items2[2] = callback(closure_5, obj6);

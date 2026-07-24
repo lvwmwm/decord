@@ -1,9 +1,9 @@
-// Module ID: 10444
-// Function ID: 80538
+// Module ID: 10473
+// Function ID: 80730
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1347, 4167, 4150, 10445, 4811, 1316, 4149, 1348, 4162, 10447, 1906, 4145, 653, 3803, 8239, 22, 10448, 4301, 636, 10449, 1360, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1347, 4167, 4150, 10474, 4811, 1316, 4149, 1348, 4162, 10476, 1906, 4145, 653, 3803, 8283, 22, 10477, 4301, 636, 10478, 1360, 566, 686, 2]
 
-// Module 10444 (_isNativeReflectConstruct)
+// Module 10473 (_isNativeReflectConstruct)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -331,7 +331,7 @@ tmp3 = new tmp3(require("dispatcher"), {
         }
         let tmp8 = require;
         let tmp9 = dependencyMap;
-        let obj2 = require(10449) /* _computeActivityPartyPrivacyFlags */;
+        let obj2 = require(10478) /* _computeActivityPartyPrivacyFlags */;
         let obj3 = require(1360) /* hasFlag */;
         flags = undefined;
         if (null != tmp6) {
@@ -346,7 +346,7 @@ tmp3 = new tmp3(require("dispatcher"), {
         let tmp14 = require;
         let tmp15 = dependencyMap;
         let hasFlagResult = obj3.hasFlag(num3, constants.INSTANCE);
-        let obj4 = require(10449) /* _computeActivityPartyPrivacyFlags */;
+        let obj4 = require(10478) /* _computeActivityPartyPrivacyFlags */;
         let tmp16 = obj2;
         let tmp17 = tmp6;
         let tmp18 = tmp7;

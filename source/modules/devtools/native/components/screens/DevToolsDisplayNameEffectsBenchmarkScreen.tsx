@@ -1,10 +1,10 @@
-// Module ID: 14697
-// Function ID: 112062
+// Module ID: 14744
+// Function ID: 112383
 // Name: makeUniqueName
-// Dependencies: [57, 31, 27, 1849, 1861, 33, 1862, 8522, 1212, 8518, 2556, 4130, 689, 4541, 4126, 4543, 8513, 8514, 566, 14698, 5503, 5165, 9021, 4363, 2]
+// Dependencies: [57, 31, 27, 1849, 1861, 33, 1862, 8567, 1212, 8563, 2556, 4130, 689, 4541, 4126, 4543, 8558, 8559, 566, 14745, 5501, 5165, 9060, 4363, 2]
 // Exports: default
 
-// Module 14697 (makeUniqueName)
+// Module 14744 (makeUniqueName)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -21,7 +21,7 @@ function makeUniqueName(closure_0) {
   const length = String(Math.max(arg2 - 1, 0)).length;
   const padStartResult = String(arg1).padStart(length, "0");
   const StringResult = String(arg1);
-  const splitGraphemesResult = require(8522) /* splitGraphemes */.splitGraphemes(closure_0);
+  const splitGraphemesResult = require(8567) /* splitGraphemes */.splitGraphemes(closure_0);
   let sum = padStartResult;
   if (splitGraphemesResult.length > length) {
     const substr = splitGraphemesResult.slice(0, splitGraphemesResult.length - length);
@@ -31,7 +31,7 @@ function makeUniqueName(closure_0) {
 }
 function effectName(arg0) {
   const intl = require(1212) /* getSystemLocale */.intl;
-  let OpWJ3f = require(8518) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
+  let OpWJ3f = require(8563) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (null == OpWJ3f) {
     OpWJ3f = importDefault(2556).OpWJ3f;
   }
@@ -73,11 +73,11 @@ function BenchmarkRow(arg0) {
   let userId;
   let userName;
   ({ userId, effect, userName, style } = arg0);
-  let obj = require(8518) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(8563) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   obj = { style };
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
-  obj = { userId, userName, effectDisplayType: require(8514) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "text-md/semibold" };
-  obj.children = callback2(importDefault(8513), obj);
+  obj = { userId, userName, effectDisplayType: require(8559) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "text-md/semibold" };
+  obj.children = callback2(importDefault(8558), obj);
   return callback2(closure_6, obj);
 }
 ({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);

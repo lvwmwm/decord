@@ -1,10 +1,10 @@
-// Module ID: 9021
-// Function ID: 70974
+// Module ID: 9060
+// Function ID: 71189
 // Name: Checkbox
-// Dependencies: [27, 33, 4130, 3848, 1212, 4541, 7497, 4126, 2]
+// Dependencies: [27, 33, 4130, 3848, 1212, 4541, 7638, 4126, 2]
 // Exports: Checkbox
 
-// Module 9021 (Checkbox)
+// Module 9060 (Checkbox)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

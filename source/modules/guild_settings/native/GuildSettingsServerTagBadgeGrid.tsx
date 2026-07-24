@@ -1,10 +1,10 @@
-// Module ID: 16279
-// Function ID: 126737
+// Module ID: 16326
+// Function ID: 127061
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [31, 27, 7632, 33, 689, 4130, 16280, 11512, 4541, 4126, 1212, 16281, 16282, 12922, 5514, 2]
+// Dependencies: [31, 27, 7721, 33, 689, 4130, 16327, 11542, 4541, 4126, 1212, 16328, 16329, 12974, 5512, 2]
 // Exports: default
 
-// Module 16279 (GuildSettingsServerTagBadgeGrid)
+// Module 16326 (GuildSettingsServerTagBadgeGrid)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { GuildTagBadgeSize } from "items";
@@ -37,7 +37,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   guildId = guildId.guildId;
   ({ selectedBadge: importDefault, onSelectBadge: dependencyMap, cellSize: result } = guildId);
   const tmp = _createForOfIteratorHelperLoose();
-  ({ unlockedBadges, lockedBadges } = importDefault(16280)());
+  ({ unlockedBadges, lockedBadges } = importDefault(16327)());
   const items = [guildId];
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[7])({ guildId, autoOpenPerkId: "guildTagsBadgePacks" });
@@ -85,7 +85,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     obj3.children = intl3.string(guildId(1212).t.U5p3GZ);
     items2[1] = callback(guildId(4126).Text, obj3);
     const obj4 = { size: "md", color: importDefault(689).colors.ICON_SUBTLE };
-    items2[2] = callback(guildId(5514).ChevronSmallRightIcon, obj4);
+    items2[2] = callback(guildId(5512).ChevronSmallRightIcon, obj4);
     obj1.children = items2;
     tmp5 = callback2(closure_4, obj1);
   }

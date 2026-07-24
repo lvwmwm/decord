@@ -1,10 +1,10 @@
-// Module ID: 13756
-// Function ID: 105502
+// Module ID: 13807
+// Function ID: 105826
 // Name: renderSuccessIcon
-// Dependencies: [31, 27, 1838, 33, 4091, 689, 4130, 566, 5515, 13754, 1212, 4126, 11651, 11413, 4098, 3831, 5187, 4543, 2]
+// Dependencies: [31, 27, 1838, 33, 4091, 689, 4130, 566, 5513, 13805, 1212, 4126, 11678, 11441, 4098, 3831, 5187, 4543, 2]
 // Exports: default
 
-// Module 13756 (renderSuccessIcon)
+// Module 13807 (renderSuccessIcon)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_6 from "_createForOfIteratorHelperLoose";
@@ -25,8 +25,8 @@ function StoreGuildIcon(guildId) {
   let obj = guildId(566);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(guildId));
-  obj = { guild: stateFromStores, size: guildId(5515).GuildIconSizes.XSMALL };
-  return callback(importDefault(5515), obj);
+  obj = { guild: stateFromStores, size: guildId(5513).GuildIconSizes.XSMALL };
+  return callback(importDefault(5513), obj);
 }
 function GuildCard(guildIds) {
   let direction;

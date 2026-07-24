@@ -1,8 +1,8 @@
-// Module ID: 10692
-// Function ID: 83330
+// Module ID: 10721
+// Function ID: 83522
 // Dependencies: [4185, 1325, 2]
 
-// Module 10692
+// Module 10721
 import { ApplicationStreamResolutions } from "makeButton";
 import importDefaultResult from "getUnitId";
 

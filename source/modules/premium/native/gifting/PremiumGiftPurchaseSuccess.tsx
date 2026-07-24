@@ -1,10 +1,10 @@
-// Module ID: 9769
-// Function ID: 75976
+// Module ID: 9801
+// Function ID: 76170
 // Name: PremiumGiftSuccessBody
-// Dependencies: [31, 27, 4175, 1851, 653, 33, 4130, 689, 8809, 1456, 8776, 4366, 9680, 8332, 4543, 1212, 3776, 5492, 3830, 8783, 4126, 8372, 4079, 2]
+// Dependencies: [31, 27, 4175, 1851, 653, 33, 4130, 689, 8848, 1456, 8815, 4366, 9714, 8376, 4543, 1212, 3776, 5490, 3830, 8822, 4126, 8416, 4079, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 9769 (PremiumGiftSuccessBody)
+// Module 9801 (PremiumGiftSuccessBody)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -37,7 +37,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   let premiumType;
   giftCodeRecord = giftCodeRecord.giftCodeRecord;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = giftCodeRecord(8809);
+  let obj = giftCodeRecord(8848);
   const nativeGiftContext = obj.useNativeGiftContext();
   let giftStyle = nativeGiftContext.giftStyle;
   ({ premiumType, planInterval } = nativeGiftContext);
@@ -69,7 +69,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
     const result = giftCodeRecord(outer1_2[18]).presentCopiedToClipboard();
   }, items);
   obj1 = { giftStyle };
-  obj.children = callback(giftCodeURL(8783), obj1);
+  obj.children = callback(giftCodeURL(8822), obj1);
   const items1 = [callback(View, obj), , , , ];
   obj2 = { style: tmp.title, variant: "heading-lg/bold" };
   const intl = giftCodeRecord(1212).intl;
@@ -90,7 +90,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   obj5.children = intl3.string(giftCodeRecord(1212).t["qS+yMo"]);
   const items2 = [callback(giftCodeRecord(4126).Text, obj5), ];
   const obj6 = { text: giftCodeURL, icon: giftCodeURL(4079), iconPosition: "end", onPress: callback };
-  items2[1] = callback(giftCodeRecord(8372).InputButton, obj6);
+  items2[1] = callback(giftCodeRecord(8416).InputButton, obj6);
   obj4.children = items2;
   items1[3] = callback2(View, obj4);
   const obj7 = { style: tmp.disclaimer, variant: "text-xs/normal" };

@@ -1,10 +1,10 @@
-// Module ID: 15671
-// Function ID: 120842
+// Module ID: 15718
+// Function ID: 121164
 // Name: useTextChannelPressEvents
-// Dependencies: [31, 1348, 4140, 4138, 10340, 14967, 9099, 2]
+// Dependencies: [31, 1348, 4140, 4138, 10369, 15014, 9137, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 15671 (useTextChannelPressEvents)
+// Module 15718 (useTextChannelPressEvents)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

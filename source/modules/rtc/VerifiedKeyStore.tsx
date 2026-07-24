@@ -1,9 +1,9 @@
-// Module ID: 8881
-// Function ID: 70014
+// Module ID: 8920
+// Function ID: 70229
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8882, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 8921, 21, 566, 686, 2]
 
-// Module 8881 (_isNativeReflectConstruct)
+// Module 8920 (_isNativeReflectConstruct)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -109,8 +109,8 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
     dependencyMap[userId] = obj;
     const uint8Array = new Uint8Array(key);
-    const obj2 = require(8882) /* set */;
-    obj[require(8882) /* set */.serializeKey(uint8Array)] = Date.now();
+    const obj2 = require(8921) /* set */;
+    obj[require(8921) /* set */.serializeKey(uint8Array)] = Date.now();
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function handleSecureFramesVerifiedKeyDelete(serializedKey) {
     serializedKey = serializedKey.serializedKey;

@@ -1,5 +1,5 @@
 // Module ID: 3859
-// Function ID: 32079
+// Function ID: 32080
 // Name: useObservedValue
 // Dependencies: [31, 27, 33, 3860, 3849, 3906, 3907, 3908, 2]
 // Exports: useArtboardBinding, useBooleanBinding, useColorBinding, useEnumBinding, useImageBinding, useNumberBinding, useStringBinding, useTriggerBinding

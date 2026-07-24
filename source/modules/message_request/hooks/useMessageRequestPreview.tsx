@@ -1,10 +1,10 @@
-// Module ID: 11628
-// Function ID: 90271
+// Module ID: 11655
+// Function ID: 90509
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 4349, 4142, 11629, 653, 566, 22, 507, 686, 2]
+// Dependencies: [5, 4349, 4142, 11656, 653, 566, 22, 507, 686, 2]
 // Exports: useMessageRequestPreview
 
-// Module 11628 (_createForOfIteratorHelperLoose)
+// Module 11655 (_createForOfIteratorHelperLoose)
 import initialize from "initialize";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

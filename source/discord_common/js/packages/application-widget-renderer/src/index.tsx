@@ -1,9 +1,9 @@
-// Module ID: 12000
-// Function ID: 92710
+// Module ID: 12026
+// Function ID: 92946
 // Name: resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [2, 12001, 12002, 12003, 12006, 12084, 12085]
+// Dependencies: [2, 12027, 12028, 12029, 12032, 12110, 12111]
 
-// Module 12000 (resolvedValuesFromUserApplicationIdentityProfile)
+// Module 12026 (resolvedValuesFromUserApplicationIdentityProfile)
 const result = require("decimalToClampedPercentage").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/index.tsx");
 for (const key10021 in require("_createForOfIteratorHelperLoose")) {
   let tmp3 = key10021;

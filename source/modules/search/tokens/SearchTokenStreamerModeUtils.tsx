@@ -1,10 +1,10 @@
-// Module ID: 10083
-// Function ID: 78023
+// Module ID: 10115
+// Function ID: 78217
 // Name: isFromUserFilterSupported
-// Dependencies: [3970, 653, 10078, 2]
+// Dependencies: [3970, 653, 10110, 2]
 // Exports: getValidFilterTokens
 
-// Module 10083 (isFromUserFilterSupported)
+// Module 10115 (isFromUserFilterSupported)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -39,7 +39,7 @@ function isInChannelFilterSupported(selectedSearchContext, items2) {
     tmp = items;
   }
   [tmp3] = tmp;
-  const tmp4 = !require(10078) /* _createForOfIteratorHelperLoose */.isGuildLikeSearchContext(selectedSearchContext);
+  const tmp4 = !require(10110) /* _createForOfIteratorHelperLoose */.isGuildLikeSearchContext(selectedSearchContext);
   let tmp5 = !tmp4;
   if (tmp4) {
     tmp5 = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;

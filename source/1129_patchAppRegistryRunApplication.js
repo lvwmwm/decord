@@ -1,5 +1,5 @@
 // Module ID: 1129
-// Function ID: 12893
+// Function ID: 12894
 // Name: patchAppRegistryRunApplication
 // Dependencies: [978, 794, 973, 1130]
 

@@ -1,10 +1,10 @@
-// Module ID: 15118
-// Function ID: 115146
+// Module ID: 15165
+// Function ID: 115468
 // Name: useICYMITabBadge
-// Dependencies: [8306, 566, 2]
+// Dependencies: [8350, 566, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 15118 (useICYMITabBadge)
+// Module 15165 (useICYMITabBadge)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,5 +1,5 @@
 // Module ID: 654
-// Function ID: 7946
+// Function ID: 7947
 // Name: APP_WITH_INVITE_AND_GUILD_ONBOARDING
 // Dependencies: [655, 660, 661, 484, 2]
 

@@ -1,10 +1,10 @@
-// Module ID: 13875
-// Function ID: 106204
+// Module ID: 13926
+// Function ID: 106528
 // Name: ClipsIcon
-// Dependencies: [31, 33, 689, 3833, 13876, 2]
+// Dependencies: [31, 33, 689, 3833, 13927, 2]
 // Exports: ClipsIcon
 
-// Module 13875 (ClipsIcon)
+// Module 13926 (ClipsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ClipsIcon = function ClipsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(13876) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13927) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13876) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13927) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

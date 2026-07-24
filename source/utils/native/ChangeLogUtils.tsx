@@ -1,9 +1,9 @@
-// Module ID: 7770
-// Function ID: 61708
+// Module ID: 7863
+// Function ID: 62035
 // Name: ChangeLogLink
-// Dependencies: [31, 27, 33, 4130, 689, 4973, 4562, 5459, 3829, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4973, 4562, 4126, 3829, 2]
 
-// Module 7770 (ChangeLogLink)
+// Module 7863 (ChangeLogLink)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -51,7 +51,7 @@ function ChangeLogList(styling) {
               const obj = { variant: "text-sm/normal" };
               const merged = Object.assign(closure_2);
               obj["children"] = callback(arr, closure_1);
-              arr = items.push(outer4_5(outer4_0(styling[7]).TextWithIOSLinkWorkaround, obj, -1));
+              arr = items.push(outer4_5(outer4_0(styling[7]).Text, obj, -1));
               arr = [];
             }
           }
@@ -85,7 +85,7 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (null == Paragraph) {
-    Paragraph = require(5459) /* findLinks */.TextWithIOSLinkWorkaround;
+    Paragraph = require(4126) /* Text */.Text;
   }
   const tmp = _createForOfIteratorHelperLoose();
   return <Paragraph key={state.key} variant="text-sm/normal" style={_createForOfIteratorHelperLoose().text}>{output(node.content, state)}</Paragraph>;
@@ -107,7 +107,7 @@ function ChangeLogBlockQuote(state) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { variant: "text-sm/normal", style: tmp.text, children: output(node.content, state) };
-  obj.children = jsx(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, { variant: "text-sm/normal", style: tmp.text, children: output(node.content, state) });
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: output(node.content, state) });
   return <closure_3 key={state.key} variant="text-sm/normal" style={tmp.text}>{output(node.content, state)}</closure_3>;
 }
 ({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);

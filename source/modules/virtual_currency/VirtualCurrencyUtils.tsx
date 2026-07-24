@@ -1,10 +1,10 @@
-// Module ID: 9452
-// Function ID: 73654
+// Module ID: 9488
+// Function ID: 73863
 // Name: get1PShopApplicationIdForSKU
 // Dependencies: [653, 655, 1345, 1851, 3946, 1334, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 9452 (get1PShopApplicationIdForSKU)
+// Module 9488 (get1PShopApplicationIdForSKU)
 import { COLLECTIBLES_APPLICATION_ID as closure_2 } from "ME";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import ContentDismissActionType from "ContentDismissActionType";

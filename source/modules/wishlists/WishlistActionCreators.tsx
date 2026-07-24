@@ -1,27 +1,26 @@
-// Module ID: 8683
-// Function ID: 68749
+// Module ID: 8724
+// Function ID: 68969
 // Name: extraWishlistParams
-// Dependencies: [5, 6796, 6856, 1849, 3778, 5612, 8678, 653, 478, 1327, 686, 5615, 507, 8676, 1184, 4029, 675, 7889, 2]
+// Dependencies: [5, 6855, 1849, 3778, 5610, 8719, 653, 478, 1327, 686, 5613, 507, 8717, 1184, 4029, 675, 7976, 2]
 
-// Module 8683 (extraWishlistParams)
+// Module 8724 (extraWishlistParams)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { CollectiblesUserDiscountRecord as closure_4 } from "CollectiblesUserDiscountRecord";
+import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
 import { getWishlistSkuIds } from "_isNativeReflectConstruct";
 import ME from "ME";
 
+let closure_10;
 let closure_11;
 let closure_12;
-let closure_13;
 const require = arg1;
 function extraWishlistParams() {
   const obj = {};
-  if (null != closure_7.ipCountryCode) {
-    obj.country_code = closure_7.ipCountryCode;
+  if (null != closure_6.ipCountryCode) {
+    obj.country_code = closure_6.ipCountryCode;
   }
   if (obj2.isAndroid()) {
     obj.payment_gateway = constants.GOOGLE;
@@ -37,18 +36,8 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   wishlist_items = wishlist_items.wishlist_items;
   const mapped = wishlist_items.map((sku) => sku.sku);
   const found = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
-  maybeDispatchUserDiscounts(wishlist_items);
   dispatchSkusFetchSuccessFromWishlistResponse(found);
   maybeDispatchStorefrontPricesFetchSuccessFromWishlistResponse(wishlist_items.storefront_pricing, found);
-}
-function maybeDispatchUserDiscounts(user_discounts) {
-  if (null != user_discounts.user_discounts) {
-    user_discounts = user_discounts.user_discounts;
-    const mapped = user_discounts.map((arg0) => outer1_4.fromServer(arg0));
-    let obj = importDefault(686);
-    obj = { type: "WISHLIST_USER_DISCOUNTS_RESPONSE_SUCCESS", userDiscounts: mapped };
-    obj.dispatch(obj);
-  }
 }
 function dispatchSkusFetchSuccessFromWishlistResponse(found) {
   let obj = importDefault(686);
@@ -61,12 +50,12 @@ function maybeDispatchStorefrontPricesFetchSuccessFromWishlistResponse(storefron
     obj = { type: "SKUS_PRICING_FETCH_SUCCESS" };
     obj = { type: "skus", skuIds: found.map((id) => id.id) };
     obj.priceId = obj;
-    obj.data = require(5615) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(storefront_pricing);
+    obj.data = require(5613) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(storefront_pricing);
     obj.dispatch(obj);
-    const obj4 = require(5615) /* transformStorefrontSKUPricesServer */;
+    const obj4 = require(5613) /* transformStorefrontSKUPricesServer */;
   }
 }
-({ AnalyticEvents: closure_11, Endpoints: closure_12, PaymentGateways: closure_13 } = ME);
+({ AnalyticEvents: closure_10, Endpoints: closure_11, PaymentGateways: closure_12 } = ME);
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/wishlists/WishlistActionCreators.tsx");
 
 export default {

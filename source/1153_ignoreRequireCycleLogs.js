@@ -1,5 +1,5 @@
 // Module ID: 1153
-// Function ID: 13136
+// Function ID: 13137
 // Name: ignoreRequireCycleLogs
 // Dependencies: [27]
 // Exports: ignoreRequireCycleLogs

@@ -1,10 +1,10 @@
-// Module ID: 12102
-// Function ID: 94827
+// Module ID: 12128
+// Function ID: 95063
 // Name: useIsMobileGameCollectionExperimentEnabled
 // Dependencies: [1428, 2]
 // Exports: useIsMobileGameCollectionExperimentEnabled
 
-// Module 12102 (useIsMobileGameCollectionExperimentEnabled)
+// Module 12128 (useIsMobileGameCollectionExperimentEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-07-mobile-game-collection", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

@@ -1,9 +1,9 @@
-// Module ID: 6817
-// Function ID: 53759
+// Module ID: 6816
+// Function ID: 53770
 // Name: ShelfBlockRecord
-// Dependencies: [6, 7, 6806, 2]
+// Dependencies: [6, 7, 6805, 2]
 
-// Module 6817 (ShelfBlockRecord)
+// Module 6816 (ShelfBlockRecord)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

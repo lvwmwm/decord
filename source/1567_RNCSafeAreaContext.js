@@ -1,5 +1,5 @@
 // Module ID: 1567
-// Function ID: 17631
+// Function ID: 17632
 // Name: RNCSafeAreaContext
 // Dependencies: [27]
 

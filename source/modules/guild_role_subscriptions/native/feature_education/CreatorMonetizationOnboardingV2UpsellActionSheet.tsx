@@ -1,10 +1,10 @@
-// Module ID: 15071
-// Function ID: 114731
+// Module ID: 15118
+// Function ID: 115052
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [31, 27, 653, 1345, 33, 4130, 5187, 4126, 1212, 5085, 15072, 4543, 8438, 2]
+// Dependencies: [31, 27, 653, 1345, 33, 4130, 5187, 4126, 1212, 5085, 15119, 4543, 8482, 2]
 // Exports: default
 
-// Module 15071 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 15118 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { GuildSettingsSections } from "ME";
@@ -39,7 +39,7 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.kUUFbG);
   items[1] = callback(require(4126) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.image, resizeMode: "contain", source: importDefault(15072) };
+  const obj2 = { style: tmp.image, resizeMode: "contain", source: importDefault(15119) };
   items[2] = callback(importDefault(5085), obj2);
   const obj3 = {
     onPress() {

@@ -1,10 +1,10 @@
-// Module ID: 14121
-// Function ID: 108676
+// Module ID: 14171
+// Function ID: 108999
 // Name: useTrialIntervalOptions
-// Dependencies: [31, 14094, 1851, 1212, 14120, 2]
+// Dependencies: [31, 14144, 1851, 1212, 14170, 2]
 // Exports: default
 
-// Module 14121 (useTrialIntervalOptions)
+// Module 14171 (useTrialIntervalOptions)
 import result from "result";
 import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS";
 import { SubscriptionIntervalTypes } from "GuildFeatures";

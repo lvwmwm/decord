@@ -1,5 +1,5 @@
 // Module ID: 4388
-// Function ID: 38827
+// Function ID: 38828
 // Name: ToNumber
 // Dependencies: [517, 4389, 4390, 518, 4395]
 

@@ -1,10 +1,10 @@
-// Module ID: 15806
-// Function ID: 122029
+// Module ID: 15853
+// Function ID: 122351
 // Name: activityPlatformToConnectedAccountType
 // Dependencies: [653, 2]
 // Exports: default
 
-// Module 15806 (activityPlatformToConnectedAccountType)
+// Module 15853 (activityPlatformToConnectedAccountType)
 import ME from "ME";
 
 ({ ActivityGamePlatforms: closure_0, PlatformTypes: closure_1 } = ME);

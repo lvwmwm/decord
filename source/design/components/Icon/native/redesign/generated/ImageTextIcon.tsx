@@ -1,10 +1,10 @@
-// Module ID: 14289
-// Function ID: 109501
+// Module ID: 14339
+// Function ID: 109824
 // Name: ImageTextIcon
-// Dependencies: [31, 33, 689, 3833, 14290, 2]
+// Dependencies: [31, 33, 689, 3833, 14340, 2]
 // Exports: ImageTextIcon
 
-// Module 14289 (ImageTextIcon)
+// Module 14339 (ImageTextIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ImageTextIcon = function ImageTextIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14290) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14340) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14290) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14340) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

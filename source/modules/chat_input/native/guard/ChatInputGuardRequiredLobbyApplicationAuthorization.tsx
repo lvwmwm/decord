@@ -1,8 +1,8 @@
-// Module ID: 11493
-// Function ID: 89458
-// Dependencies: [31, 27, 33, 4130, 689, 11481, 1212, 3827, 2]
+// Module ID: 11523
+// Function ID: 89703
+// Dependencies: [31, 27, 33, 4130, 689, 11511, 1212, 3827, 2]
 
-// Module 11493
+// Module 11523
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -41,10 +41,10 @@ const memoResult = require("result").memo(function ChatInputGuardRequiredLobbyAp
         fn = () => outer1_1(outer1_2[7]).openURLExternally(connectionEntrypointUrl);
       }
       obj.actionOnPress = fn;
-      return jsx(importDefault(11481), { name: requiredLinkedLobbyApplication.name });
+      return jsx(importDefault(11511), { name: requiredLinkedLobbyApplication.name });
     }
   }
-  return jsx(importDefault(11481), { type: "simple-action", message: "" });
+  return jsx(importDefault(11511), { type: "simple-action", message: "" });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardRequiredLobbyApplicationAuthorization.tsx");
 

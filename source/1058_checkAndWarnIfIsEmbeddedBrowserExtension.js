@@ -1,5 +1,5 @@
 // Module ID: 1058
-// Function ID: 11317
+// Function ID: 11318
 // Name: checkAndWarnIfIsEmbeddedBrowserExtension
 // Dependencies: [1048, 794, 1004]
 

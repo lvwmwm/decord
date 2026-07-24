@@ -1,10 +1,10 @@
-// Module ID: 6876
-// Function ID: 54371
+// Module ID: 6875
+// Function ID: 54379
 // Name: ApplicationWidget
-// Dependencies: [6, 7, 6857, 2]
+// Dependencies: [6, 7, 6856, 2]
 // Exports: isApplicationWidgetWithId
 
-// Module 6876 (ApplicationWidget)
+// Module 6875 (ApplicationWidget)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

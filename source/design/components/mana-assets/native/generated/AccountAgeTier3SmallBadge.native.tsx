@@ -1,5 +1,5 @@
 // Module ID: 5822
-// Function ID: 49687
+// Function ID: 49698
 // Name: AccountAgeTier3SmallBadge
 // Dependencies: [33, 5085, 5823, 2]
 // Exports: AccountAgeTier3SmallBadge

@@ -1,10 +1,10 @@
-// Module ID: 14998
-// Function ID: 114252
+// Module ID: 15045
+// Function ID: 114573
 // Name: checkPowerupUpsellEligibility
 // Dependencies: [1917, 4970, 1849, 4023, 1851, 1872, 566, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 14998 (checkPowerupUpsellEligibility)
+// Module 15045 (checkPowerupUpsellEligibility)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

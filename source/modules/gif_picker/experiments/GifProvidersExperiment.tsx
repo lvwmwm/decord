@@ -1,9 +1,9 @@
-// Module ID: 9578
-// Function ID: 74637
+// Module ID: 9614
+// Function ID: 74848
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 9578 (apexExperiment)
+// Module 9614 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2025-10-gif-providers-multi-treatment", kind: "user", defaultConfig: { provider: "tenor", fallbackProvider: "tenor", enableMetrics: true }, variations: { [0]: { provider: "tenor", fallbackProvider: "tenor", enableMetrics: true }, [1]: { provider: "giphy", fallbackProvider: "tenor", enableMetrics: true }, [2]: { provider: "klipy", fallbackProvider: "tenor", enableMetrics: true } } };

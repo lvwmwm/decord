@@ -1,5 +1,5 @@
 // Module ID: 6698
-// Function ID: 51882
+// Function ID: 51904
 // Name: isForegrounded
 // Dependencies: [27, 2]
 // Exports: isForegrounded

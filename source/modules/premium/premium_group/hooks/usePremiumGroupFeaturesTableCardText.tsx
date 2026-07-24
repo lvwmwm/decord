@@ -1,10 +1,10 @@
-// Module ID: 12416
-// Function ID: 96370
+// Module ID: 12469
+// Function ID: 96693
 // Name: getPremiumGroupFeaturesTableCardSubheaderString
-// Dependencies: [3782, 3790, 1212, 2780, 1867, 7736, 12417, 566, 2]
+// Dependencies: [3782, 3790, 1212, 2780, 1867, 7825, 12470, 566, 2]
 // Exports: default
 
-// Module 12416 (getPremiumGroupFeaturesTableCardSubheaderString)
+// Module 12469 (getPremiumGroupFeaturesTableCardSubheaderString)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 
@@ -14,8 +14,8 @@ const require = arg1;
 function getPremiumGroupFeaturesTableCardSubheaderString(arg0, primaryName, stateFromStores) {
   if (arg0 === require(1867) /* _callSuper */.PremiumSubscriptionGroupRole.PRIMARY) {
     let obj = { withIntervals: true };
-    let priceString = require(7736) /* getPremiumGroupInviteEmbedText */.getPriceString(stateFromStores, obj);
-    const obj2 = require(7736) /* getPremiumGroupInviteEmbedText */;
+    let priceString = require(7825) /* getPremiumGroupInviteEmbedText */.getPriceString(stateFromStores, obj);
+    const obj2 = require(7825) /* getPremiumGroupInviteEmbedText */;
   } else {
     priceString = null;
     if (null != primaryName) {
@@ -54,5 +54,5 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
     obj1 = { subheaderString: getPremiumGroupFeaturesTableCardSubheaderString(arg0, tmp, stateFromStores), bodyString: formatResult };
     return obj1;
   }
-  tmp = importDefault(12417)(obj);
+  tmp = importDefault(12470)(obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8176
-// Function ID: 64551
+// Module ID: 8220
+// Function ID: 64779
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1352, 1838, 4566, 653, 8177, 7925, 6755, 1881, 483, 8180, 44, 6753, 6754, 2]
+// Dependencies: [1352, 1838, 4566, 653, 8221, 8012, 6755, 1881, 483, 8224, 44, 6753, 6754, 2]
 // Exports: hasAccess
 
-// Module 8176 (_createForOfIteratorHelperLoose)
+// Module 8220 (_createForOfIteratorHelperLoose)
 import { ChannelRecordBase } from "_callSuper";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
@@ -202,7 +202,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
       }
     }
     if (null != context) {
-      obj = require(7925) /* computeAllowNsfw */;
+      obj = require(8012) /* computeAllowNsfw */;
       const commandContextType = obj.computeCommandContextType(context, commandBotId);
     }
     if (null != type.contexts) {
@@ -235,8 +235,8 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
     } else {
       let contextGuildId;
       if (null != context) {
-        contextGuildId = require(7925) /* computeAllowNsfw */.getContextGuildId(context);
-        const obj3 = require(7925) /* computeAllowNsfw */;
+        contextGuildId = require(8012) /* computeAllowNsfw */.getContextGuildId(context);
+        const obj3 = require(8012) /* computeAllowNsfw */;
       }
       if (null == contextGuildId) {
         return obj.ALLOWED;
@@ -247,7 +247,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
           if (isUserInstalled) {
             const integration_types = type.integration_types;
             if (null != integration_types) {
-              if (integration_types.includes(require(8180) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL)) {
+              if (integration_types.includes(require(8224) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL)) {
                 return obj.ALLOWED;
               }
             }

@@ -1,10 +1,10 @@
-// Module ID: 16350
-// Function ID: 127630
+// Module ID: 16397
+// Function ID: 127954
 // Name: GuildSettingsModalCommunity
-// Dependencies: [31, 1348, 1907, 3758, 3767, 1849, 8439, 15204, 653, 33, 4130, 689, 3834, 1456, 566, 8438, 1212, 5788, 5087, 4320, 4098, 8382, 1934, 7495, 4541, 5503, 5165, 2]
+// Dependencies: [31, 1348, 1907, 3758, 3767, 1849, 8483, 15251, 653, 33, 4130, 689, 3834, 1456, 566, 8482, 1212, 5788, 5087, 4320, 4098, 8426, 1934, 7636, 4541, 5501, 5165, 2]
 // Exports: default
 
-// Module 16350 (GuildSettingsModalCommunity)
+// Module 16397 (GuildSettingsModalCommunity)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

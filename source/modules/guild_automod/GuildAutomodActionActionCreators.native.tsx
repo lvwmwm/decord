@@ -1,10 +1,10 @@
-// Module ID: 11006
-// Function ID: 85621
+// Module ID: 11033
+// Function ID: 85810
 // Name: getPromiseableActionHandlers
-// Dependencies: [31, 11007, 33, 4337, 11011, 1934, 4471, 11014, 2]
+// Dependencies: [31, 11034, 33, 4337, 11038, 1934, 4471, 11041, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 11006 (getPromiseableActionHandlers)
+// Module 11033 (getPromiseableActionHandlers)
 import "result";
 import AutomodEventType from "AutomodEventType";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export const openSubmitFeedback = function openSubmitFeedback(messageId, content
     automodDecision: obj
   };
   obj = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(require(1934) /* maybeLoadBundle */(11011, dependencyMap.paths), obj, closure_4);
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(11038, dependencyMap.paths), obj, closure_4);
 };
 export function openRaidResolveModal() {
 

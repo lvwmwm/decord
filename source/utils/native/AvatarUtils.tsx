@@ -1,5 +1,5 @@
 // Module ID: 1395
-// Function ID: 16644
+// Function ID: 16645
 // Name: ensureAvatarSource
 // Dependencies: [27, 1396, 1397, 1398, 1399, 1400, 1401, 1402, 1403, 1404, 1405, 1406, 1407, 1408, 1409, 1410, 1411, 1412, 1413, 1414, 1415, 1416, 1417, 1418, 1419, 1420, 1421, 1422, 1423, 1424, 1425, 2]
 // Exports: ensureAvatarSource, getAutomodAvatarURL

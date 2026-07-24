@@ -1,10 +1,10 @@
-// Module ID: 16486
-// Function ID: 128447
+// Module ID: 16533
+// Function ID: 128771
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 1352, 1348, 5070, 4051, 1838, 16194, 3767, 4325, 1849, 653, 33, 4130, 689, 4098, 10281, 1934, 5079, 5073, 4324, 10291, 10295, 10302, 7519, 1212, 7518, 5503, 5504, 4126, 1273, 3827, 1920, 10290, 5165, 10285, 5170, 11788, 3761, 4328, 4593, 4320, 7495, 4541, 10286, 3842, 1456, 566, 5071, 5448, 5087, 16487, 10280, 5519, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 1352, 1348, 5070, 4051, 1838, 16241, 3767, 4325, 1849, 653, 33, 4130, 689, 4098, 10310, 1934, 5079, 5073, 4324, 10320, 10324, 10331, 7654, 1212, 7653, 5501, 5502, 4126, 1273, 3827, 1920, 10319, 5165, 10314, 5170, 11815, 3761, 4328, 4593, 4320, 7636, 4541, 10315, 3842, 1456, 566, 5071, 5448, 5087, 16534, 10309, 5517, 2]
 // Exports: default
 
-// Module 16486 (_isNativeReflectConstruct)
+// Module 16533 (_isNativeReflectConstruct)
 import NotificationSettingsMessageUnread from "NotificationSettingsMessageUnread";
 import result from "result";
 import getActivityIndicator from "get ActivityIndicator";
@@ -68,7 +68,7 @@ function ConnectedNotificationSettings(guildId) {
   }), items1);
   const tmp3 = callback(stateFromStoresObject, closure_3);
   obj = {};
-  obj = { guildId, channels: memo, navigation, shouldUseNewNotificationSystem: guildId(10286).useShouldUseNewNotificationSystem("NotificationSettingsModalNative") };
+  obj = { guildId, channels: memo, navigation, shouldUseNewNotificationSystem: guildId(10315).useShouldUseNewNotificationSystem("NotificationSettingsModalNative") };
   const merged = Object.assign(tmp3);
   const items2 = [callback4(closure_35, obj), callback4(guildId(5448).NavScrim, {})];
   obj.children = items2;
@@ -560,6 +560,6 @@ export default function NotificationSettingsModal() {
   obj.params = obj1;
   const items1 = [obj];
   obj.initialRouteStack = items1;
-  return closure_31(require(5519) /* NavigationStack */.Navigator, obj);
+  return closure_31(require(5517) /* NavigationStack */.Navigator, obj);
 };
 export const NotificationSettings = tmp5;

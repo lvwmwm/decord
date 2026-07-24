@@ -1,10 +1,10 @@
-// Module ID: 11875
-// Function ID: 91922
+// Module ID: 11902
+// Function ID: 92160
 // Name: StyleSheet
-// Dependencies: [31, 27, 33, 4130, 689, 3991, 4131, 1392, 8372, 4126, 8632, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 3991, 4131, 1392, 8416, 4126, 8674, 2]
 // Exports: default
 
-// Module 11875 (StyleSheet)
+// Module 11902 (StyleSheet)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -112,7 +112,7 @@ export default function GameProfileNavigationHeader(game) {
   let tmp11Result = null;
   if (null != name) {
     obj = { style: tmp.headerContainer };
-    const items2 = [callback(game(8372).BackgroundBlurFill, {}), ];
+    const items2 = [callback(game(8416).BackgroundBlurFill, {}), ];
     obj = { style: tmp.headerRow };
     let tmp16 = null != memo;
     if (tmp16) {
@@ -134,12 +134,12 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp25) {
       const obj5 = { style: tmp.rankPillContainer };
       const obj6 = { rank: game.l30Rank, compact: true };
-      const items5 = [callback(application(8632), obj6), ];
+      const items5 = [callback(application(8674), obj6), ];
       const obj7 = {};
       const items6 = [StyleSheet.absoluteFill, animatedStyle1];
       obj7.style = items6;
       const obj8 = { rank: game.l30Rank };
-      obj7.children = callback(application(8632), obj8);
+      obj7.children = callback(application(8674), obj8);
       items5[1] = callback(application(3991).View, obj7);
       obj5.children = items5;
       tmp25 = callback2(closure_5, obj5);

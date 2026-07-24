@@ -1,10 +1,10 @@
-// Module ID: 15644
-// Function ID: 120639
+// Module ID: 15691
+// Function ID: 120961
 // Name: useLaunchPadGesture
-// Dependencies: [31, 10451, 3981, 1557, 5217, 477, 14710, 10019, 3991, 4099, 2]
+// Dependencies: [31, 10480, 3981, 1557, 5217, 477, 14757, 10051, 3991, 4099, 2]
 // Exports: default
 
-// Module 15644 (useLaunchPadGesture)
+// Module 15691 (useLaunchPadGesture)
 import result from "result";
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 

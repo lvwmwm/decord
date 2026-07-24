@@ -1,5 +1,5 @@
 // Module ID: 4400
-// Function ID: 38852
+// Function ID: 38853
 // Name: defineProperty
 // Dependencies: [1381, 1382, 4401]
 

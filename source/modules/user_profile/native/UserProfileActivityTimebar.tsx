@@ -1,10 +1,10 @@
-// Module ID: 11945
-// Function ID: 92342
+// Module ID: 11971
+// Function ID: 92578
 // Name: UserProfileActivityTimebar
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1324, 11946, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1324, 11972, 4126, 2]
 // Exports: default
 
-// Module 11945 (UserProfileActivityTimebar)
+// Module 11971 (UserProfileActivityTimebar)
 import "result";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -35,7 +35,7 @@ export default function UserProfileActivityTimebar(arg0) {
   const tmp = importDefault(1324)("UserProfileActivityTimebar");
   const tmp2 = _createForOfIteratorHelperLoose();
   let tmp4;
-  ({ elapsed, duration, percentage } = importDefault(11946)({ start, end }));
+  ({ elapsed, duration, percentage } = importDefault(11972)({ start, end }));
   if (!tmp) {
     let obj = { fontFamily: Fonts.CODE_NORMAL };
     tmp4 = obj;
@@ -52,10 +52,10 @@ export default function UserProfileActivityTimebar(arg0) {
   }
   obj3.color = str;
   const obj1 = { width: `${100 * percentage}%` };
-  const tmp3 = importDefault(11946)({ start, end });
+  const tmp3 = importDefault(11972)({ start, end });
   const tmp8 = callback;
   const tmp9 = tmp;
-  obj3.children = require(11946) /* extractTimeComponents */.formatTime(elapsed);
+  obj3.children = require(11972) /* extractTimeComponents */.formatTime(elapsed);
   const items2 = [tmp8(require(4126) /* Text */.Text, obj3), ];
   const obj4 = { variant: "text-xs/normal", style: tmp4, tabularNumbers: tmp };
   let str2;
@@ -63,10 +63,10 @@ export default function UserProfileActivityTimebar(arg0) {
     str2 = "text-subtle";
   }
   obj4.color = str2;
-  const obj7 = require(11946) /* extractTimeComponents */;
+  const obj7 = require(11972) /* extractTimeComponents */;
   const tmp10 = callback;
   const tmp11 = tmp;
-  obj4.children = require(11946) /* extractTimeComponents */.formatTime(duration);
+  obj4.children = require(11972) /* extractTimeComponents */.formatTime(duration);
   items2[1] = tmp10(require(4126) /* Text */.Text, obj4);
   obj2.children = items2;
   items1[1] = closure_6(View, obj2);

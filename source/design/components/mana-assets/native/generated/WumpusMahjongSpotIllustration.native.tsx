@@ -1,5 +1,5 @@
 // Module ID: 6634
-// Function ID: 50905
+// Function ID: 50916
 // Name: WumpusMahjongSpotIllustration
 // Dependencies: [33, 5085, 6635, 2]
 // Exports: WumpusMahjongSpotIllustration

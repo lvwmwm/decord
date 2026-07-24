@@ -1,9 +1,9 @@
-// Module ID: 10632
-// Function ID: 82907
+// Module ID: 10661
+// Function ID: 83099
 // Name: RTC_PANEL_HEIGHT
 // Dependencies: [2]
 
-// Module 10632 (RTC_PANEL_HEIGHT)
+// Module 10661 (RTC_PANEL_HEIGHT)
 const result = require("set").fileFinishedImporting("modules/connectivity/native/ConnectivityConstants.tsx");
 
 export const RTC_PANEL_HEIGHT = 28;

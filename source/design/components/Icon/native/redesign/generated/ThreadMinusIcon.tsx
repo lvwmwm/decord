@@ -1,10 +1,10 @@
-// Module ID: 11972
-// Function ID: 92524
+// Module ID: 11998
+// Function ID: 92760
 // Name: ThreadMinusIcon
-// Dependencies: [31, 33, 689, 3833, 11973, 2]
+// Dependencies: [31, 33, 689, 3833, 11999, 2]
 // Exports: ThreadMinusIcon
 
-// Module 11972 (ThreadMinusIcon)
+// Module 11998 (ThreadMinusIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ThreadMinusIcon = function ThreadMinusIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(11973) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11999) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11973) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11999) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

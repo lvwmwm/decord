@@ -1,8 +1,8 @@
-// Module ID: 11470
-// Function ID: 89342
-// Dependencies: [31, 27, 1838, 11105, 653, 33, 4130, 689, 566, 4098, 8578, 1934, 4324, 4660, 5515, 4126, 5701, 1273, 5514, 1212, 11471, 2]
+// Module ID: 11500
+// Function ID: 89587
+// Dependencies: [31, 27, 1838, 11132, 653, 33, 4130, 689, 566, 4098, 8621, 1934, 4324, 4660, 5513, 4126, 5701, 1273, 5512, 1212, 11501, 2]
 
-// Module 11470
+// Module 11500
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -49,20 +49,20 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
   if (null != stateFromStores) {
     obj = { style: tmp.cardContainer };
     obj = { style: tmp.headerRow, onPress: callback, accessibilityRole: "button", accessibilityLabel: stateFromStores.name };
-    const obj1 = { guild: stateFromStores, size: guildId(5515).GuildIconSizes.LARGE, style: tmp.guildIcon };
-    const items3 = [callback(importDefault(5515), obj1), ];
+    const obj1 = { guild: stateFromStores, size: guildId(5513).GuildIconSizes.LARGE, style: tmp.guildIcon };
+    const items3 = [callback(importDefault(5513), obj1), ];
     const obj2 = { style: tmp.textColumn };
     const obj3 = { style: tmp.nameRow };
     const obj4 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: stateFromStores.name };
     const items4 = [callback(guildId(4126).Text, obj4), , ];
     const obj5 = {};
-    const tmp12 = importDefault(5515);
+    const tmp12 = importDefault(5513);
     obj5.size = guildId(1273).Icon.Sizes.SMALL;
     obj5.guild = stateFromStores;
     obj5.style = tmp.badge;
     items4[1] = callback(importDefault(5701), obj5);
     const obj6 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.chevron };
-    items4[2] = callback(guildId(5514).ChevronSmallRightIcon, obj6);
+    items4[2] = callback(guildId(5512).ChevronSmallRightIcon, obj6);
     obj3.children = items4;
     const items5 = [callback2(View, obj3), ];
     const obj7 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1 };
@@ -74,7 +74,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
     obj.children = items3;
     const items6 = [callback2(guildId(4660).PressableOpacity, obj), ];
     const obj8 = { guildId, joinSource: constants.CHAT_INPUT_BLOCKER, onBeforeJoin: tmp4 };
-    items6[1] = callback(importDefault(11471), obj8);
+    items6[1] = callback(importDefault(11501), obj8);
     obj.children = items6;
     tmp5 = callback2(View, obj);
     const tmp13 = importDefault(5701);

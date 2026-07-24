@@ -1,10 +1,10 @@
-// Module ID: 10716
-// Function ID: 83420
+// Module ID: 10745
+// Function ID: 83612
 // Name: VolumeSlider
-// Dependencies: [31, 27, 4191, 33, 477, 4130, 689, 3834, 10717, 7523, 4580, 1212, 4658, 2]
+// Dependencies: [31, 27, 4191, 33, 477, 4130, 689, 3834, 10746, 7658, 4580, 1212, 4658, 2]
 // Exports: default
 
-// Module 10716 (VolumeSlider)
+// Module 10745 (VolumeSlider)
 import "result";
 import { View } from "get ActivityIndicator";
 import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources";
@@ -53,9 +53,9 @@ export default function VolumeSlider(maxTrackTintColor) {
   obj = { style: items };
   items = [tmp5.volumerSlider, maxTrackTintColor.style];
   obj = { style: tmp5.leftIcon };
-  const items1 = [callback(require(10717) /* VoiceXIcon */.VoiceXIcon, obj), , ];
+  const items1 = [callback(require(10746) /* VoiceXIcon */.VoiceXIcon, obj), , ];
   obj1 = { style: tmp5.volumerSliderNative };
-  const tmp10 = importDefault(7523);
+  const tmp10 = importDefault(7658);
   const tmp7 = closure_6;
   const tmp8 = View;
   const tmp9 = callback;

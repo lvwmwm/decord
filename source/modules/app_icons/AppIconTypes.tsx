@@ -1,9 +1,9 @@
-// Module ID: 7962
-// Function ID: 63531
+// Module ID: 7445
+// Function ID: 59853
 // Name: FreemiumAppIconIds
 // Dependencies: [2]
 
-// Module 7962 (FreemiumAppIconIds)
+// Module 7445 (FreemiumAppIconIds)
 let obj = { DEFAULT: "AppIcon" };
 obj = { BRAND_DARK: "BrandDarkIcon", BRAND_INVERTED: "BrandInvertedIcon", MATTE_LIGHT: "MatteLightIcon", MATTE_DARK: "MatteDarkIcon", PASTEL: "PastelIcon", PIRATE: "PirateIcon", CAMO: "CamoIcon", SUNSET: "SunsetIcon", GALAXY: "GalaxyIcon", Y2K: "Y2KIcon", CHERRY_BLOSSOM: "CherryBlossomIcon", BEANIE: "BeanieIcon", GAMING: "GamingIcon", CIRCUIT: "CircuitIcon", HOLO_WAVES: "HoloWavesIcon", BLUSH: "BlushIcon", ANGRY: "AngryIcon", MANGA: "MangaIcon", CONTROLLER: "ControllerIcon", MUSHROOM: "MushroomIcon", BLURPLE_TWILIGHT: "BlurpleTwilightIcon", IN_RAINBOWS: "InRainbowsIcon", COLOR_WAVE: "ColorWaveIcon", MIDNIGHT_PRISM: "MidnightPrismIcon" };
 obj = { DRIP: "DripIcon", SLIMY: "SlimyIcon", ZOMBIE: "ZombieIcon", CLYDE_STEIN: "ClydeSteinIcon" };

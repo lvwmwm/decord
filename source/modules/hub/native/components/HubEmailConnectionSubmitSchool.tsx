@@ -1,10 +1,10 @@
-// Module ID: 11770
-// Function ID: 91356
+// Module ID: 11797
+// Function ID: 91594
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 57, 31, 27, 11753, 653, 33, 4130, 689, 1456, 5160, 11766, 4029, 11761, 1273, 1212, 4126, 9000, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 11780, 653, 33, 4130, 689, 1456, 5160, 11793, 4029, 11788, 1273, 1212, 4126, 9039, 4543, 2]
 // Exports: default
 
-// Module 11770 (HubEmailConnectionSubmitSchool)
+// Module 11797 (HubEmailConnectionSubmitSchool)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -107,7 +107,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       }
     }, 100);
   };
-  items1[2] = callback2(importDefault(9000), obj5);
+  items1[2] = callback2(importDefault(9039), obj5);
   obj2.children = items1;
   const items2 = [closure_10(tmp10, obj2), callback2(first, { style: tmp.redesignGrowSpacing }), ];
   const obj7 = { style: tmp.redesignSubmit };
@@ -121,5 +121,5 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   items2[2] = callback2(first, obj7);
   obj.children = items2;
   obj.children = closure_10(tmp9, obj);
-  return callback2(require(11761) /* getScreens */.HubEmailConnectionScreen, obj);
+  return callback2(require(11788) /* getScreens */.HubEmailConnectionScreen, obj);
 };

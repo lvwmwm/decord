@@ -1,12 +1,12 @@
-// Module ID: 11025
-// Function ID: 85753
+// Module ID: 11052
+// Function ID: 85942
 // Name: ClassificationHeader
-// Dependencies: [31, 27, 1921, 11026, 7544, 653, 33, 4130, 689, 4126, 7545, 1212, 566, 5459, 8474, 3827, 8173, 4543, 11031, 11033, 675, 5121, 11034, 7543, 11038, 6837, 6842, 11040, 2]
+// Dependencies: [31, 27, 1921, 11053, 7589, 653, 33, 4130, 689, 4126, 7590, 1212, 566, 8518, 3827, 8217, 4543, 11058, 11060, 675, 5121, 11061, 7588, 11065, 6836, 6841, 11067, 2]
 // Exports: default
 
-// Module 11025 (ClassificationHeader)
+// Module 11052 (ClassificationHeader)
 import result from "result";
-import get_ActivityIndicator from "module_11040";
+import get_ActivityIndicator from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_8 from "_isNativeReflectConstruct";
 import SafetyHubLinks from "SafetyHubLinks";
@@ -151,7 +151,7 @@ function ClassificationGuidance(arg0) {
   obj = { variant: "text-sm/normal" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.children = intl2.format(require(1212) /* getSystemLocale */.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
-  items[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   items[2] = callback(ClassificationPolicyCard, { classificationTypeText, policyExplainerLink });
   items[3] = appealComponent;
   obj.children = items;
@@ -163,14 +163,14 @@ function ClassificationPolicyCard(classificationDescription) {
   let obj = {};
   obj = {
     onPress() {
-      outer1_1(outer1_2[15]).openURL(policyExplainerLink);
+      outer1_1(outer1_2[14]).openURL(policyExplainerLink);
     },
     style: items
   };
   items = [tmp.classificationPolicyCard];
   obj = { style: tmp.classificationPolicyCardIcon };
   const obj1 = { size: "sm", color: importDefault(689).colors.TEXT_LINK };
-  obj.children = callback(policyExplainerLink(8173).ShieldIcon, obj1);
+  obj.children = callback(policyExplainerLink(8217).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent };
   const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
@@ -179,7 +179,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj2.children = callback(policyExplainerLink(4126).Text, obj3);
   items1[1] = callback(closure_4, obj2);
   obj.children = items1;
-  obj.children = callback2(importDefault(8474), obj);
+  obj.children = callback2(importDefault(8518), obj);
   return callback(closure_4, obj);
 }
 function AppealStatus() {
@@ -256,7 +256,7 @@ export default function ConnectedClassificationDetail(classificationId) {
   classificationId = classificationId.classificationId;
   const source = classificationId.source;
   const onClose = classificationId.onClose;
-  let obj = classificationId(onClose[18]);
+  let obj = classificationId(onClose[17]);
   const safetyHubClassification = obj.useSafetyHubClassification(classificationId);
   const classification = safetyHubClassification.classification;
   const isAppealEligible = safetyHubClassification.isAppealEligible;
@@ -277,7 +277,7 @@ export default function ConnectedClassificationDetail(classificationId) {
     tmp4 = length > 0;
   }
   let closure_6 = tmp4;
-  let obj3 = classificationId(onClose[19]);
+  let obj3 = classificationId(onClose[18]);
   const safetyHubAccountStanding = obj3.useSafetyHubAccountStanding();
   hasItem = !tmp7;
   if (!(null == classification || !classification.is_coppa)) {
@@ -303,7 +303,7 @@ export default function ConnectedClassificationDetail(classificationId) {
       const current = ref.current;
       ({ classificationState, source } = current);
       ({ accountStanding, classificationId, hasFlaggedContent } = current);
-      let obj = source(onClose[20]);
+      let obj = source(onClose[19]);
       obj = {};
       obj.action = obj.ViewViolationDetail;
       obj.account_standing = accountStanding.state;
@@ -343,9 +343,9 @@ export default function ConnectedClassificationDetail(classificationId) {
       flagged_content1 = [];
     }
     obj5.flaggedContent = flagged_content1;
-    items3[1] = callback(source(onClose[22]), obj5);
+    items3[1] = callback(source(onClose[21]), obj5);
     const obj6 = { actions: classification.actions };
-    let obj8 = classificationId(onClose[23]);
+    let obj8 = classificationId(onClose[22]);
     obj6.classificationExpiration = obj8.getClassificationExpiration(classification);
     items3[2] = callback(ClassificationActionsTaken, obj6);
     const obj7 = {};
@@ -354,7 +354,7 @@ export default function ConnectedClassificationDetail(classificationId) {
     obj8 = {
       hasBeenAppealed: null != classification.appeal_status,
       onPressLetUsKnow() {
-          let obj = source(onClose[20]);
+          let obj = source(onClose[19]);
           obj = { action: obj.ClickLetUsKnow, account_standing: safetyHubAccountStanding.state };
           const items = [Number(classificationId)];
           obj.classification_ids = items;
@@ -368,21 +368,21 @@ export default function ConnectedClassificationDetail(classificationId) {
           ({ isDsaEligible: obj2.is_dsa_eligible, violationType: obj2.violation_type } = safetyHubClassification);
           obj.track(outer1_12.SAFETY_HUB_ACTION, obj);
           if (hasItem1) {
-            source(onClose[24]).openV2(classificationId, onClose);
-            const obj9 = source(onClose[24]);
+            source(onClose[23]).openV2(classificationId, onClose);
+            const obj9 = source(onClose[23]);
           } else if (hasItem) {
-            source(onClose[24]).open(classificationId, onClose);
-            const obj8 = source(onClose[24]);
+            source(onClose[23]).open(classificationId, onClose);
+            const obj8 = source(onClose[23]);
           } else if (isAppealEligible) {
-            let tmp5Result = tmp5(tmp6[25]);
-            obj = { name: classificationId(tmp6[26]).MetricEvents.APPEAL_INGESTION_VIEW };
+            let tmp5Result = tmp5(tmp6[24]);
+            obj = { name: classificationId(tmp6[25]).MetricEvents.APPEAL_INGESTION_VIEW };
             tmp5Result.increment(obj);
-            tmp5Result = tmp5(tmp6[27]);
+            tmp5Result = tmp5(tmp6[26]);
             const obj1 = { classificationId };
             tmp5Result.open(obj1);
           } else {
-            tmp5(tmp6[15]).openURL(ref.APPEALS_LINK);
-            const tmp5Result1 = tmp5(tmp6[15]);
+            tmp5(tmp6[14]).openURL(ref.APPEALS_LINK);
+            const tmp5Result1 = tmp5(tmp6[14]);
           }
         }
     };
@@ -396,9 +396,9 @@ export default function ConnectedClassificationDetail(classificationId) {
     const tmp38 = closure_14;
     const tmp39 = classification;
     const tmp42 = callback;
-    const tmp45 = source(onClose[22]);
+    const tmp45 = source(onClose[21]);
   }
   obj1.children = tmp38Result;
-  obj.children = callback(classificationId(onClose[21]).SafeAreaPaddingView, obj1);
+  obj.children = callback(classificationId(onClose[20]).SafeAreaPaddingView, obj1);
   tmp19Result = callback(closure_6, obj);
 };

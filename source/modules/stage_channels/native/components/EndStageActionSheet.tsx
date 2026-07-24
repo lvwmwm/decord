@@ -1,10 +1,10 @@
-// Module ID: 12347
-// Function ID: 96021
+// Module ID: 12374
+// Function ID: 96261
 // Name: EndStageActionSheet
-// Dependencies: [31, 27, 4947, 653, 33, 4130, 689, 4098, 8836, 7579, 1273, 1212, 4126, 4543, 7482, 2]
+// Dependencies: [31, 27, 4947, 653, 33, 4130, 689, 4098, 8875, 7634, 1273, 1212, 4126, 4543, 7562, 2]
 // Exports: default
 
-// Module 12347 (EndStageActionSheet)
+// Module 12374 (EndStageActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH";
@@ -61,5 +61,5 @@ export default function EndStageActionSheet(channel) {
   items[3] = callback(View, obj4);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(handleClose(7579), obj);
+  return callback(handleClose(7634), obj);
 };

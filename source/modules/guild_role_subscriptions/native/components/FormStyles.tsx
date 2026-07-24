@@ -1,9 +1,9 @@
-// Module ID: 12905
-// Function ID: 100136
+// Module ID: 12957
+// Function ID: 100459
 // Name: styles
 // Dependencies: [653, 4130, 5052, 689, 2]
 
-// Module 12905 (styles)
+// Module 12957 (styles)
 import { Fonts } from "ME";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importDefaultResult from "createTextStyle";

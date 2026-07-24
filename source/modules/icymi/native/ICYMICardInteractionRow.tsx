@@ -1,10 +1,10 @@
-// Module ID: 15226
-// Function ID: 116123
+// Module ID: 15273
+// Function ID: 116445
 // Name: onAddReaction
-// Dependencies: [57, 31, 27, 5683, 1348, 4946, 3758, 653, 1852, 33, 3769, 7005, 4130, 689, 477, 3974, 566, 4140, 6691, 9326, 4660, 1212, 8007, 4126, 9431, 665, 1392, 9312, 9087, 10352, 9880, 9951, 15218, 4629, 7006, 9966, 9534, 8321, 9872, 9544, 3834, 4554, 666, 5514, 2]
+// Dependencies: [57, 31, 27, 5683, 1348, 4946, 3758, 653, 1852, 33, 3769, 7004, 4130, 689, 477, 3974, 566, 4140, 6691, 9362, 4660, 1212, 7437, 4126, 9467, 665, 1392, 9348, 9125, 10381, 9912, 9983, 15265, 4629, 7005, 9998, 9570, 8365, 9904, 9580, 3834, 4554, 666, 5512, 2]
 // Exports: default
 
-// Module 15226 (onAddReaction)
+// Module 15273 (onAddReaction)
 import _slicedToArray from "_slicedToArray";
 import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon";
 import get_ActivityIndicator from "_createForOfIteratorHelperLoose";
@@ -30,9 +30,9 @@ const require = arg1;
 function onAddReaction(id, id2, byName, burst) {
   if (null != byName) {
     let obj = require(3769) /* getReactionEmojiName */;
-    const obj2 = require(7005) /* checkReactionResponse */;
+    const obj2 = require(7004) /* checkReactionResponse */;
     obj = { burst };
-    obj2.addReaction(id, id2, obj.toReactionEmoji(byName), require(7005) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
+    obj2.addReaction(id, id2, obj.toReactionEmoji(byName), require(7004) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
     const toReactionEmojiResult = obj.toReactionEmoji(byName);
   }
 }
@@ -299,7 +299,7 @@ function ForwardButton(disabled) {
   obj.disabled = disabled;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.xIUfJS);
-  obj.children = callback(importDefault(9880), { size: "sm" });
+  obj.children = callback(importDefault(9912), { size: "sm" });
   return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
@@ -318,7 +318,7 @@ function ReplyButton(disabled) {
   obj.disabled = disabled;
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["5NwaNY"]);
-  obj.children = callback(require(9951) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
+  obj.children = callback(require(9983) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
   return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {

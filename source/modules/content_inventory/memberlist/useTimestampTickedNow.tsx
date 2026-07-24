@@ -1,10 +1,10 @@
-// Module ID: 11929
-// Function ID: 92290
+// Module ID: 11955
+// Function ID: 92526
 // Name: dropMilliseconds
 // Dependencies: [57, 31, 4122, 664, 566, 4015, 2]
 // Exports: useTimestampTickedNow
 
-// Module 11929 (dropMilliseconds)
+// Module 11955 (dropMilliseconds)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,9 +1,9 @@
-// Module ID: 9789
-// Function ID: 76086
+// Module ID: 9821
+// Function ID: 76280
 // Name: OrbLottieAnimation
-// Dependencies: [31, 33, 4066, 3976, 9790, 9793, 2]
+// Dependencies: [31, 33, 4066, 3976, 9822, 9825, 2]
 
-// Module 9789 (OrbLottieAnimation)
+// Module 9821 (OrbLottieAnimation)
 import closure_2 from "result";
 import result from "result";
 import { jsx } from "jsxProd";
@@ -39,9 +39,9 @@ const forwardRefResult = result.forwardRef((animationType) => {
     }
   }));
   if (isThemeLightResult) {
-    let SpendEarnOrbsLottie = tmp6(9790).SpendEarnOrbsLightThemeLottie;
+    let SpendEarnOrbsLottie = tmp6(9822).SpendEarnOrbsLightThemeLottie;
   } else {
-    SpendEarnOrbsLottie = tmp6(9793).SpendEarnOrbsLottie;
+    SpendEarnOrbsLottie = tmp6(9825).SpendEarnOrbsLottie;
   }
   obj = { ref: tmp3, size: "custom", width: 60, height: 60, opacity: 0.8, animation: null, useLottieDefaultColors: true };
   let str = "spend";

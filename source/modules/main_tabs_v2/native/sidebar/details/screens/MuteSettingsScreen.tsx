@@ -1,9 +1,9 @@
-// Module ID: 15547
-// Function ID: 119906
+// Module ID: 15594
+// Function ID: 120228
 // Name: UnmuteOptions
-// Dependencies: [31, 27, 1348, 1838, 3767, 1849, 653, 33, 4130, 689, 7007, 5079, 5073, 10282, 5165, 1273, 10284, 4126, 1212, 4320, 10285, 1456, 10346, 10281, 1457, 624, 9122, 1557, 2]
+// Dependencies: [31, 27, 1348, 1838, 3767, 1849, 653, 33, 4130, 689, 7006, 5079, 5073, 10311, 5165, 1273, 10313, 4126, 1212, 4320, 10314, 1456, 10375, 10310, 1457, 624, 9158, 1557, 2]
 
-// Module 15547 (UnmuteOptions)
+// Module 15594 (UnmuteOptions)
 import importAllResult from "result";
 import { View } from "useSafeAreaInsets";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -30,7 +30,7 @@ function UnmuteOptions(channel) {
     channel(outer1_2[13]).handleUnmutePress(channel.id, channel.guild_id);
   }, items);
   obj = {};
-  obj = { disableColor: true, source: navigation(10284) };
+  obj = { disableColor: true, source: navigation(10313) };
   obj.icon = callback(channel(1273).Icon, obj);
   const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
   const intl = channel(1212).intl;
@@ -48,8 +48,8 @@ function UnmuteOptions(channel) {
   const obj3 = { muteConfig: channel.muteConfig };
   const obj6 = channel(4320);
   const tmp5 = callback;
-  const tmp6 = navigation(10285);
-  const MuteSettingType = channel(10285).MuteSettingType;
+  const tmp6 = navigation(10314);
+  const MuteSettingType = channel(10314).MuteSettingType;
   obj3.type = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj3);
   obj.children = items1;

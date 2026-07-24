@@ -1,5 +1,5 @@
 // Module ID: 1921
-// Function ID: 21733
+// Function ID: 21734
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 5, 1922, 1316, 3741, 1212, 566, 686, 2]
 

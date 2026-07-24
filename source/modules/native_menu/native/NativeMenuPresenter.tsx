@@ -1,10 +1,10 @@
-// Module ID: 15597
-// Function ID: 120247
+// Module ID: 15644
+// Function ID: 120569
 // Name: MenuContainer
-// Dependencies: [31, 9547, 566, 9669, 4540, 2]
+// Dependencies: [31, 9583, 566, 9703, 4540, 2]
 // Exports: default
 
-// Module 15597 (MenuContainer)
+// Module 15644 (MenuContainer)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

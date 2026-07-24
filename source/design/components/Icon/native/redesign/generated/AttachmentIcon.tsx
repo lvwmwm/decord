@@ -1,10 +1,10 @@
-// Module ID: 9657
-// Function ID: 75232
+// Module ID: 9691
+// Function ID: 75444
 // Name: AttachmentIcon
-// Dependencies: [31, 33, 689, 3833, 9658, 2]
+// Dependencies: [31, 33, 689, 3833, 9692, 2]
 // Exports: AttachmentIcon
 
-// Module 9657 (AttachmentIcon)
+// Module 9691 (AttachmentIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const AttachmentIcon = function AttachmentIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9658) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9692) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9658) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9692) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

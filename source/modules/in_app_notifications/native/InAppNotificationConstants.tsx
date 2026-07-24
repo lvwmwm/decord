@@ -1,9 +1,9 @@
-// Module ID: 10237
-// Function ID: 79095
+// Module ID: 10267
+// Function ID: 79286
 // Name: set
 // Dependencies: [689, 3991, 2]
 
-// Module 10237 (set)
+// Module 10267 (set)
 import { Easing } from "module_3991";
 import set from "set";
 

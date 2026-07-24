@@ -1,5 +1,5 @@
 // Module ID: 4939
-// Function ID: 42311
+// Function ID: 42315
 // Name: officialApplicationIds
 // Dependencies: [1910, 1838, 3758, 4940, 653, 1443, 44, 1212, 22, 4941, 566, 3946, 1334, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux

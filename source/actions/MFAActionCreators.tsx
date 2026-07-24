@@ -1,8 +1,8 @@
-// Module ID: 13647
-// Function ID: 104810
-// Dependencies: [12671, 653, 507, 686, 2]
+// Module ID: 13698
+// Function ID: 105134
+// Dependencies: [12722, 653, 507, 686, 2]
 
-// Module 13647
+// Module 13698
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";
 

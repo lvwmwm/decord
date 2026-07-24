@@ -1,10 +1,10 @@
-// Module ID: 6846
-// Function ID: 54127
+// Module ID: 6845
+// Function ID: 54136
 // Name: hasAttachmentsEmbedsOrComponents
 // Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 6846 (hasAttachmentsEmbedsOrComponents)
+// Module 6845 (hasAttachmentsEmbedsOrComponents)
 function hasAttachmentsEmbedsOrComponents(attachments) {
   let tmp = null != attachments.attachments;
   if (tmp) {

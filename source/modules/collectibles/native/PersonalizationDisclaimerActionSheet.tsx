@@ -1,10 +1,10 @@
-// Module ID: 14496
-// Function ID: 110707
+// Module ID: 14546
+// Function ID: 111030
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [31, 653, 33, 4130, 689, 3827, 1920, 5187, 4126, 1212, 4965, 4543, 7563, 4098, 2]
+// Dependencies: [31, 653, 33, 4130, 689, 3827, 1920, 5187, 4126, 1212, 4965, 4543, 7620, 4098, 2]
 // Exports: default
 
-// Module 14496 (PersonalizationDisclaimerActionSheet)
+// Module 14546 (PersonalizationDisclaimerActionSheet)
 import result from "result";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -39,7 +39,7 @@ export default function PersonalizationDisclaimerActionSheet() {
   obj1.text = intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
   obj1.onPress = callback;
   const obj2 = { color: importDefault(689).colors.WHITE };
-  obj1.icon = callback(require(7563) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
+  obj1.icon = callback(require(7620) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
   obj1.iconPosition = "end";
   const items1 = [callback(require(4543) /* Button */.Button, obj1), ];
   const obj3 = { variant: "tertiary", size: "lg" };

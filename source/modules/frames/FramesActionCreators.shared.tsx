@@ -1,10 +1,10 @@
-// Module ID: 10485
-// Function ID: 81151
+// Module ID: 10514
+// Function ID: 81343
 // Name: _launchFrame
-// Dependencies: [5, 10479, 686, 10486, 10837, 10487, 10524, 10515, 2]
+// Dependencies: [5, 10508, 686, 10515, 10866, 10516, 10553, 10544, 2]
 // Exports: launchFrame, refreshProxyTicket, stopFrame, updateFrameLayoutMode, updateFramePanelMode
 
-// Module 10485 (_launchFrame)
+// Module 10514 (_launchFrame)
 import leaveCurrentFrame from "leaveCurrentFrame";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

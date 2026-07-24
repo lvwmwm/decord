@@ -1,5 +1,5 @@
 // Module ID: 1802
-// Function ID: 19917
+// Function ID: 19918
 // Name: ArrowComponent
 // Dependencies: [31, 27, 33, 1776]
 // Exports: default

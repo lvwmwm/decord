@@ -1,10 +1,10 @@
-// Module ID: 15074
-// Function ID: 114745
+// Module ID: 15121
+// Function ID: 115066
 // Name: useCanSeeNUFChannelsForGuild
 // Dependencies: [1917, 1838, 1849, 653, 3746, 566, 3969, 1360, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 15074 (useCanSeeNUFChannelsForGuild)
+// Module 15121 (useCanSeeNUFChannelsForGuild)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_isNativeReflectConstruct";

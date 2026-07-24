@@ -1,10 +1,10 @@
-// Module ID: 10208
-// Function ID: 78789
+// Module ID: 10238
+// Function ID: 78980
 // Name: ChannelVoiceChatModal
-// Dependencies: [31, 33, 4320, 4323, 9112, 4654, 4011, 10209, 2]
+// Dependencies: [31, 33, 4320, 4323, 9148, 4654, 4011, 10239, 2]
 // Exports: default
 
-// Module 10208 (ChannelVoiceChatModal)
+// Module 10238 (ChannelVoiceChatModal)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -40,5 +40,5 @@ export default function ChannelVoiceChatModal(channel) {
     obj.children = outer1_4(outer1_1(outer1_2[7]), obj);
     return outer1_4(outer1_1(outer1_2[6]).Provider, obj);
   };
-  return jsx(importDefault(9112), { screenKey: "StageVoiceChat" });
+  return jsx(importDefault(9148), { screenKey: "StageVoiceChat" });
 };

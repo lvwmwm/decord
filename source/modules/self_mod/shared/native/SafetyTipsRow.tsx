@@ -1,10 +1,10 @@
-// Module ID: 7562
-// Function ID: 60518
+// Module ID: 7619
+// Function ID: 60668
 // Name: SafetyTipsRow
 // Dependencies: [31, 27, 33, 4130, 689, 5165, 4126, 2]
 // Exports: default
 
-// Module 7562 (SafetyTipsRow)
+// Module 7619 (SafetyTipsRow)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

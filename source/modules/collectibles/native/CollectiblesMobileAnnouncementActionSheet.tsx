@@ -1,10 +1,10 @@
-// Module ID: 15627
-// Function ID: 120535
+// Module ID: 15674
+// Function ID: 120857
 // Name: CatEarsBackdrop
-// Dependencies: [31, 27, 655, 5188, 1345, 33, 4130, 689, 1450, 5189, 1557, 3991, 15628, 4126, 1212, 15629, 6773, 5484, 5187, 15631, 5807, 4543, 2]
+// Dependencies: [31, 27, 655, 5188, 1345, 33, 4130, 689, 1450, 5189, 1557, 3991, 15675, 4126, 1212, 15676, 6773, 5482, 5187, 15678, 5807, 4543, 2]
 // Exports: default
 
-// Module 15627 (CatEarsBackdrop)
+// Module 15674 (CatEarsBackdrop)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
@@ -47,7 +47,7 @@ function CatEarsBackdrop() {
   obj1 = { top: -138 * result1, left: tmp6, right: tmp6 };
   items1[1] = obj1;
   const obj2 = {};
-  const obj3 = { uri: top(15628) };
+  const obj3 = { uri: top(15675) };
   obj2.source = obj3;
   obj2.style = tmp.mascotImage;
   obj2.accessibilityElementsHidden = true;
@@ -98,7 +98,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   let showGiftingMarketing;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(15629);
+  let obj = markAsDismissed(15676);
   const profileFramesMarketing = obj.useProfileFramesMarketing("CollectiblesMobileAnnouncementActionSheet");
   const intl = markAsDismissed(1212).intl;
   const string = intl.string;
@@ -138,7 +138,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
     callback.current = true;
     markAsDismissed(outer1_8.PRIMARY);
     let obj = markAsDismissed(6773);
-    obj = { screen: outer1_6.FEATURED_PAGE, analyticsLocations: [], analyticsSource: callback(5484).ACTION_SHEET };
+    obj = { screen: outer1_6.FEATURED_PAGE, analyticsLocations: [], analyticsSource: callback(5482).ACTION_SHEET };
     const result = obj.openCollectiblesShopMobile(obj);
   }, items1);
   const callback1 = React.useCallback(() => {
@@ -149,7 +149,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   obj = { onDismiss: callback1, backdropChildren: memo };
   obj = { style: tmp.container };
   const obj1 = {};
-  const obj2 = { uri: importDefault(15631) };
+  const obj2 = { uri: importDefault(15678) };
   obj1.source = obj2;
   obj1.style = tmp.framePreviewImage;
   obj1.accessibilityElementsHidden = true;

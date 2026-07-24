@@ -1,9 +1,9 @@
-// Module ID: 16534
-// Function ID: 128973
+// Module ID: 16581
+// Function ID: 129297
 // Name: AVErrorStreamSendLowFPSDefinition
-// Dependencies: [4143, 4149, 4216, 653, 664, 4194, 16531, 8856, 8857, 16528, 2]
+// Dependencies: [4143, 4149, 4216, 653, 664, 4194, 16578, 8895, 8896, 16575, 2]
 
-// Module 16534 (AVErrorStreamSendLowFPSDefinition)
+// Module 16581 (AVErrorStreamSendLowFPSDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -43,30 +43,30 @@ export const AVErrorStreamSendLowFPSDefinition = {
                 if (null == participant) {
                   return null;
                 } else {
-                  const accumulatedStatsWithMinDatapoints = require(16531) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
+                  const accumulatedStatsWithMinDatapoints = require(16578) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
                   if (null == accumulatedStatsWithMinDatapoints) {
                     return null;
                   } else {
-                    const maxQuality = require(8856) /* isPremiumRequirement */.getMaxQuality(participant);
+                    const maxQuality = require(8895) /* isPremiumRequirement */.getMaxQuality(participant);
                     let tmp17 = null;
                     if (null != maxQuality) {
                       if (accumulatedStatsWithMinDatapoints.short.frameRate < obj2.getWarningFrameRate(maxQuality.maxFrameRate)) {
-                        obj = { type: require(8857) /* validateUniqueErrorCodes */.AVError.STREAM_SEND_LOW_FPS };
-                        const obj5 = require(16528) /* getCommonErrorContext */;
+                        obj = { type: require(8896) /* validateUniqueErrorCodes */.AVError.STREAM_SEND_LOW_FPS };
+                        const obj5 = require(16575) /* getCommonErrorContext */;
                         const merged = Object.assign(obj5.getStreamErrorContext(require(4194) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
                         const items = [obj];
                         let tmp12 = items;
                         const obj6 = require(4194) /* isStreamKey */;
                       } else {
                         tmp12 = null;
-                        const obj3 = require(16531) /* getReportInboundErrors */;
+                        const obj3 = require(16578) /* getReportInboundErrors */;
                       }
                       tmp17 = tmp12;
-                      obj2 = require(16531) /* getReportInboundErrors */;
+                      obj2 = require(16578) /* getReportInboundErrors */;
                     }
                     return tmp17;
                   }
-                  const obj9 = require(16531) /* getReportInboundErrors */;
+                  const obj9 = require(16578) /* getReportInboundErrors */;
                 }
               } else {
                 return null;

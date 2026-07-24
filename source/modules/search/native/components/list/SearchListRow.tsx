@@ -1,9 +1,9 @@
-// Module ID: 15346
-// Function ID: 117159
+// Module ID: 15393
+// Function ID: 117481
 // Name: SearchListRow
-// Dependencies: [31, 27, 9103, 33, 4130, 689, 4660, 4126, 2]
+// Dependencies: [31, 27, 9141, 33, 4130, 689, 4660, 4126, 2]
 
-// Module 15346 (SearchListRow)
+// Module 15393 (SearchListRow)
 import { View } from "get ActivityIndicator";
 import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 import jsxProd from "jsxProd";

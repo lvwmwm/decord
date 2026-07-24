@@ -1,9 +1,9 @@
-// Module ID: 14666
-// Function ID: 111787
+// Module ID: 14713
+// Function ID: 112108
 // Name: BalanceWidgetMenuSection
-// Dependencies: [57, 31, 27, 33, 9113, 5519, 9122, 10161, 4130, 689, 4541, 4126, 14667, 4098, 9798, 1934, 1212, 7512, 4543, 9787, 9797, 5160, 5449, 14669, 2]
+// Dependencies: [57, 31, 27, 33, 9149, 5517, 9158, 10191, 4130, 689, 4541, 4126, 14714, 4098, 9830, 1934, 1212, 7574, 4543, 9819, 9829, 5160, 5449, 14716, 2]
 
-// Module 14666 (BalanceWidgetMenuSection)
+// Module 14713 (BalanceWidgetMenuSection)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -20,7 +20,7 @@ function BalanceWidgetMenuSection() {
   const tmp = callback4();
   let obj = { spacing: 16, style: tmp.container };
   obj = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Menu" };
-  const items = [callback2(require(4126) /* Text */.Text, obj), callback2(importDefault(14667), {})];
+  const items = [callback2(require(4126) /* Text */.Text, obj), callback2(importDefault(14714), {})];
   obj.children = items;
   return callback3(require(4541) /* Stack */.Stack, obj);
 }
@@ -83,7 +83,7 @@ function OrbsFlowTest() {
   let obj = {};
   obj = { style: callback4().wrap, contentContainerStyle: obj };
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
-  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(14669), {})];
+  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(14716), {})];
   obj.children = items;
   obj.children = callback3(closure_5, obj);
   return callback2(require(5449) /* Layer */.LayerScope, obj);
@@ -101,7 +101,7 @@ _createForOfIteratorHelperLoose = { flexDirection: "row", justifyContent: "cente
 obj.balancePillContainer = _createForOfIteratorHelperLoose;
 let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function OrbsFlowTestModal() {
-  let obj = _require(5519);
+  let obj = _require(5517);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {

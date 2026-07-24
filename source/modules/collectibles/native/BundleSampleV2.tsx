@@ -1,10 +1,10 @@
-// Module ID: 8215
-// Function ID: 64940
+// Module ID: 8259
+// Function ID: 65168
 // Name: getSizedAssetUri
-// Dependencies: [31, 27, 8200, 33, 5085, 4130, 689, 44, 1876, 1873, 8216, 8226, 8228, 1273, 8233, 2]
+// Dependencies: [31, 27, 8244, 33, 5085, 4130, 689, 44, 1876, 1873, 8260, 8270, 8272, 1273, 8277, 2]
 // Exports: default
 
-// Module 8215 (getSizedAssetUri)
+// Module 8259 (getSizedAssetUri)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
@@ -111,7 +111,7 @@ function BundleSampleV2Composed(arg0) {
   if (tmp12) {
     obj = { style: tmp.pfx };
     const obj1 = { item: pfx };
-    obj.children = callback(importDefault(8216), obj1);
+    obj.children = callback(importDefault(8260), obj1);
     tmp12 = callback(closure_4, obj);
   }
   const items = [tmp12, , ];
@@ -131,7 +131,7 @@ function BundleSampleV2Composed(arg0) {
       }
       obj3.avatarSize = XSMALL_20;
       obj3.nameplate = nameplateData;
-      obj3 = callback(require(8228) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
+      obj3 = callback(require(8272) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
       obj2.children = obj3;
       callback(closure_4, obj2);
       const tmp26 = callback;
@@ -145,7 +145,7 @@ function BundleSampleV2Composed(arg0) {
     const obj5 = { item: deco, size: tmp9 };
     tmp9 = null != nameplateData;
     obj5.threeTierBundle = tmp9;
-    obj4.children = callback(importDefault(8226), obj5);
+    obj4.children = callback(importDefault(8270), obj5);
     callback(closure_4, obj4);
     const tmp19 = callback;
     const tmp20 = closure_4;
@@ -159,7 +159,7 @@ function BundleSampleV2StaticPreview(composedFallbackProps) {
   let targetSize;
   composedFallbackProps = composedFallbackProps.composedFallbackProps;
   ({ previewAssets, disableStaticBackground, mutedStaticBackground, targetSize, exposureLocation } = composedFallbackProps);
-  let obj = require(8233) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8277) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment(exposureLocation).enabled) {
     obj = { previewAssets, disableBackground: disableStaticBackground, mutedBackground: mutedStaticBackground, targetSize };
     let tmpResult = tmp(BundleStaticPreviewContent, obj);

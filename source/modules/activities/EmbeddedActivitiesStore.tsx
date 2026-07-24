@@ -1,7 +1,7 @@
 // Module ID: 1347
-// Function ID: 15830
+// Function ID: 15831
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 15, 17, 18, 6, 7, 1194, 1348, 1906, 1849, 4155, 10226, 653, 10535, 10536, 3748, 10481, 12992, 1207, 10523, 686, 10438, 8183, 477, 1881, 6755, 566, 2]
+// Dependencies: [57, 15, 17, 18, 6, 7, 1194, 1348, 1906, 1849, 4155, 10256, 653, 10564, 10565, 3748, 10510, 13044, 1207, 10552, 686, 10467, 8227, 477, 1881, 6755, 566, 2]
 
 // Module 1347 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
@@ -141,7 +141,7 @@ function updateEmbeddedActivities(instance) {
   participants = instance.participants;
   const applicationId = obj.applicationId;
   ({ launchId, compositeInstanceId, location: _location, participants } = obj);
-  let tmp = importDefault(10481)(applicationId);
+  let tmp = importDefault(10510)(applicationId);
   if (null != tmp) {
     let embeddedActivityLocationChannelId = applicationId(3748).getEmbeddedActivityLocationChannelId(_location);
     if (null != embeddedActivityLocationChannelId) {

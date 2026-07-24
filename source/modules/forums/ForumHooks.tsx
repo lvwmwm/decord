@@ -1,10 +1,10 @@
-// Module ID: 9137
-// Function ID: 71524
+// Module ID: 9173
+// Function ID: 71733
 // Name: sortForumPostReactionsByPopularityDesc
-// Dependencies: [5, 31, 4991, 5039, 5040, 5683, 1348, 4958, 1838, 3758, 4142, 1849, 5682, 5656, 9138, 7010, 5685, 653, 1355, 1211, 566, 5684, 686, 22, 1327, 4559, 21, 7023, 1357, 7634, 4360, 7779, 8328, 9139, 5069, 2]
+// Dependencies: [5, 31, 4991, 5039, 5040, 5683, 1348, 4958, 1838, 3758, 4142, 1849, 5682, 5656, 9174, 7009, 5685, 653, 1355, 1211, 566, 5684, 686, 22, 1327, 4559, 21, 7022, 1357, 7723, 4360, 7870, 8372, 9175, 5069, 2]
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanViewArchivedPosts, useChannelTemplate, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions
 
-// Module 9137 (sortForumPostReactionsByPopularityDesc)
+// Module 9173 (sortForumPostReactionsByPopularityDesc)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getInitialParserStateFromMessage from "getInitialParserStateFromMessage";
 import closure_5 from "_isNativeReflectConstruct";
@@ -379,8 +379,8 @@ export const useMessageCount = function useMessageCount(thread) {
     }
     return num;
   });
-  const messageCountText = _require(7634).getMessageCountText(stateFromStores, thread.id);
-  const obj2 = _require(7634);
+  const messageCountText = _require(7723).getMessageCountText(stateFromStores, thread.id);
+  const obj2 = _require(7723);
   const items1 = [closure_13];
   const dependencyMap = _require(566).useStateFromStores(items1, () => {
     const items = [outer1_13];

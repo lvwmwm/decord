@@ -1,10 +1,10 @@
-// Module ID: 11732
-// Function ID: 91054
+// Module ID: 11759
+// Function ID: 91292
 // Name: AddPhoneScreen
-// Dependencies: [5, 57, 31, 27, 1849, 11706, 33, 4130, 5084, 689, 1456, 4126, 1212, 9238, 9239, 11705, 624, 5584, 44, 9262, 9233, 2]
+// Dependencies: [5, 57, 31, 27, 1849, 11733, 33, 4130, 5084, 689, 1456, 4126, 1212, 9274, 9275, 11732, 624, 5582, 44, 9298, 9269, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 11732 (AddPhoneScreen)
+// Module 11759 (AddPhoneScreen)
 import initialValues from "initialValues";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -45,12 +45,12 @@ export const AddPhoneScreen = function AddPhoneScreen() {
   obj.children = items;
   const obj2 = { style: tmp.container };
   const tmp2 = callback3(View, obj);
-  obj2.reason = _require(9239).ChangePhoneReason.CONTACT_SYNC;
+  obj2.reason = _require(9275).ChangePhoneReason.CONTACT_SYNC;
   obj2.header = tmp2;
   obj2.onComplete = function onComplete(arg0) {
     return callback(outer1_2[15]).submitPhone(arg0, callback);
   };
-  return callback2(importDefault(9238), obj2);
+  return callback2(importDefault(9274), obj2);
 };
 export const VerifyPhoneScreen = function VerifyPhoneScreen() {
   let require;

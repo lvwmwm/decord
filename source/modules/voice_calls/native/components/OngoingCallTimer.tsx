@@ -1,10 +1,10 @@
-// Module ID: 12726
-// Function ID: 99082
+// Module ID: 12777
+// Function ID: 99403
 // Name: OnGoingCallTimer
-// Dependencies: [31, 4809, 33, 566, 21, 12727, 2]
+// Dependencies: [31, 4809, 33, 566, 21, 12778, 2]
 // Exports: default
 
-// Module 12726 (OnGoingCallTimer)
+// Module 12777 (OnGoingCallTimer)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -31,5 +31,5 @@ export default function OnGoingCallTimer(channelId) {
     const obj2 = importDefault(21);
   }
   obj = { style: channelId.style, timestamp: num };
-  return jsx(importDefault(12727), { style: channelId.style, timestamp: num });
+  return jsx(importDefault(12778), { style: channelId.style, timestamp: num });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10575
-// Function ID: 82567
+// Module ID: 10604
+// Function ID: 82759
 // Name: ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT
 // Dependencies: [1194, 1428, 566, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 10575 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
+// Module 10604 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ApexExperiment from "ApexExperiment";
 

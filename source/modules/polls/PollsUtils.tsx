@@ -1,10 +1,10 @@
-// Module ID: 7003
-// Function ID: 55985
+// Module ID: 7002
+// Function ID: 55994
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1348, 7004, 4349, 3758, 3767, 7071, 653, 491, 566, 5606, 664, 1833, 4360, 1212, 7006, 22, 4319, 2]
+// Dependencies: [1348, 7003, 4349, 3758, 3767, 7070, 653, 491, 566, 5604, 664, 1833, 4360, 1212, 7005, 22, 4319, 2]
 // Exports: createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 7003 (_createForOfIteratorHelperLoose)
+// Module 7002 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -141,7 +141,7 @@ function getPollResultsPollName(merged, closure_8) {
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
   const obj = { id, name: "", animated: false };
-  reactions = reactions.getReactions(channelId, message.id, obj, closure_9, channel(7006).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, obj, closure_9, channel(7005).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {

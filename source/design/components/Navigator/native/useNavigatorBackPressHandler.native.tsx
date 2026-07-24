@@ -1,5 +1,5 @@
 // Module ID: 5093
-// Function ID: 44335
+// Function ID: 44340
 // Name: useNavigatorBackPressHandler
 // Dependencies: [31, 27, 1457, 477, 2]
 // Exports: useNavigatorBackPressHandler

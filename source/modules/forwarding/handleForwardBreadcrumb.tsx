@@ -1,10 +1,10 @@
-// Module ID: 11075
-// Function ID: 86153
+// Module ID: 11102
+// Function ID: 86342
 // Name: _handleForwardBreadcrumb
-// Dependencies: [5, 1348, 1838, 653, 5736, 5048, 675, 5628, 2]
+// Dependencies: [5, 1348, 1838, 653, 5736, 5048, 675, 5626, 2]
 // Exports: default
 
-// Module 11075 (_handleForwardBreadcrumb)
+// Module 11102 (_handleForwardBreadcrumb)
 import showTooManyUserGuildsAlert from "showTooManyUserGuildsAlert";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

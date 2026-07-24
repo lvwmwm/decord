@@ -1,10 +1,10 @@
-// Module ID: 16336
-// Function ID: 127527
+// Module ID: 16383
+// Function ID: 127851
 // Name: items
 // Dependencies: [4042, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled
 
-// Module 16336 (items)
+// Module 16383 (items)
 import createExperiment from "createExperiment";
 
 let obj = { kind: "guild", id: "2026-04_application_identity_linked_roles", label: "Application Identity Linked Roles", defaultConfig: { enabled: false } };

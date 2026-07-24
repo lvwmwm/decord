@@ -1,5 +1,5 @@
 // Module ID: 4274
-// Function ID: 37406
+// Function ID: 37407
 // Name: convertAudioLevel
 // Dependencies: [4275, 2]
 // Exports: default
@@ -419,6 +419,24 @@ function transformOutboundVideoStats(video, id) {
       minResolutionHeight = encoderQualityStats14.minResolutionHeight;
     }
     obj.minResolutionHeight = minResolutionHeight;
+    const encoderQualityStats15 = found.encoderQualityStats;
+    let reconFramesRequested;
+    if (null != encoderQualityStats15) {
+      reconFramesRequested = encoderQualityStats15.reconFramesRequested;
+    }
+    obj.reconFramesRequested = reconFramesRequested;
+    const encoderQualityStats16 = found.encoderQualityStats;
+    let prop3;
+    if (null != encoderQualityStats16) {
+      prop3 = encoderQualityStats16.reconFramesSuccessful;
+    }
+    obj.reconFramesSuccessful = prop3;
+    const encoderQualityStats17 = found.encoderQualityStats;
+    let reconFramesFailed;
+    if (null != encoderQualityStats17) {
+      reconFramesFailed = encoderQualityStats17.reconFramesFailed;
+    }
+    obj.reconFramesFailed = reconFramesFailed;
     return obj;
   }
 }

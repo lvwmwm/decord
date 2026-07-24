@@ -1,7 +1,7 @@
 // Module ID: 6649
-// Function ID: 51063
+// Function ID: 51074
 // Name: getScreens
-// Dependencies: [31, 653, 33, 1212, 5087, 6650, 12427, 12430, 12472, 12485, 5464, 5519, 2]
+// Dependencies: [31, 653, 33, 1212, 5087, 6650, 12480, 12483, 12525, 12538, 5462, 5517, 2]
 // Exports: default
 
 // Module 6649 (getScreens)
@@ -110,9 +110,9 @@ export default function PremiumModal(initialRoute) {
   if (null == PREMIUM) {
     PREMIUM = UserSettingsSections.PREMIUM;
   }
-  let obj = { value: importDefault(5464)(analyticsLocations).analyticsLocations };
+  let obj = { value: importDefault(5462)(analyticsLocations).analyticsLocations };
   obj = { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM };
-  obj.children = jsx(require(5519) /* NavigationStack */.Navigator, { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM });
-  return jsx(require(5464) /* mergeLocations */.AnalyticsLocationProvider, { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM });
+  obj.children = jsx(require(5517) /* NavigationStack */.Navigator, { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM });
+  return jsx(require(5462) /* mergeLocations */.AnalyticsLocationProvider, { screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM });
 };
 export const PREMIUM_KEY = "PREMIUM_KEY";

@@ -1,5 +1,5 @@
 // Module ID: 5175
-// Function ID: 45003
+// Function ID: 45008
 // Name: DragIcon
 // Dependencies: [31, 33, 689, 3833, 5176, 2]
 // Exports: DragIcon

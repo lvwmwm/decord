@@ -1,10 +1,10 @@
-// Module ID: 10471
-// Function ID: 81039
+// Module ID: 10500
+// Function ID: 81231
 // Name: getBrandSafetyContext
-// Dependencies: [9445, 1348, 1838, 3767, 3947, 1849, 10470, 6940, 1392, 4320, 2]
+// Dependencies: [9481, 1348, 1838, 3767, 3947, 1849, 10499, 6939, 1392, 4320, 2]
 // Exports: getBrandSafetyContext
 
-// Module 10471 (getBrandSafetyContext)
+// Module 10500 (getBrandSafetyContext)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -19,9 +19,9 @@ let closure_4;
 let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  let obj = require(6940) /* _createForOfIteratorHelperLoose */;
+  let obj = require(6939) /* _createForOfIteratorHelperLoose */;
   const result = obj.isBillableQuestContent(questContent);
-  let obj1 = require(6940) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(6939) /* _createForOfIteratorHelperLoose */;
   const adContext = obj1.getAdContext(questContent);
   let tmp3 = callback2();
   require = tmp3;

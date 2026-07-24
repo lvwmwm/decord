@@ -1,5 +1,5 @@
 // Module ID: 5663
-// Function ID: 48638
+// Function ID: 48648
 // Name: GuildMemberSubscriptions
 // Dependencies: [6, 7, 664, 4015, 21, 3, 22, 2]
 

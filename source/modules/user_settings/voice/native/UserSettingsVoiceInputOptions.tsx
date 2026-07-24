@@ -1,10 +1,10 @@
-// Module ID: 10713
-// Function ID: 83385
+// Module ID: 10742
+// Function ID: 83577
 // Name: handleInputModePress
-// Dependencies: [31, 27, 4177, 653, 33, 4130, 5497, 1212, 8843, 566, 10709, 5165, 4126, 5504, 10714, 2]
+// Dependencies: [31, 27, 4177, 653, 33, 4130, 5495, 1212, 8882, 566, 10738, 5165, 4126, 5502, 10743, 2]
 // Exports: default
 
-// Module 10713 (handleInputModePress)
+// Module 10742 (handleInputModePress)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -17,7 +17,7 @@ let closure_7;
 let closure_8;
 const require = arg1;
 function handleInputModePress() {
-  let obj = require(5497) /* showSimpleActionSheet */;
+  let obj = require(5495) /* showSimpleActionSheet */;
   obj = { key: "InputMode" };
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
@@ -83,7 +83,7 @@ export default function UserSettingsVoiceInputOptions() {
       obj = { autoThreshold };
       return obj.setMode(inputMode, obj);
     };
-    const items2 = [callback(inputMode(5504).TableSwitchRow, obj3), ];
+    const items2 = [callback(inputMode(5502).TableSwitchRow, obj3), ];
     const obj4 = {};
     const intl6 = inputMode(1212).intl;
     obj4.label = intl6.string(inputMode(1212).t["o+2oMK"]);
@@ -97,7 +97,7 @@ export default function UserSettingsVoiceInputOptions() {
           return obj.setMode(inputMode, obj);
         }
     };
-    obj5.children = callback(importDefault(10714), obj6);
+    obj5.children = callback(importDefault(10743), obj6);
     obj4.subLabel = callback(View, obj5);
     items2[1] = callback(inputMode(5165).TableRow, obj4);
     obj2.children = items2;
@@ -105,6 +105,6 @@ export default function UserSettingsVoiceInputOptions() {
   }
   items1[1] = tmp9;
   obj.children = items1;
-  return callback2(inputMode(10709).UserSettingsTableRowGroup, obj);
+  return callback2(inputMode(10738).UserSettingsTableRowGroup, obj);
 };
 export { handleInputModePress };

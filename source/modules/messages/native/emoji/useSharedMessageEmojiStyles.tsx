@@ -1,9 +1,9 @@
-// Module ID: 9387
-// Function ID: 73193
+// Module ID: 9423
+// Function ID: 73402
 // Name: styles
 // Dependencies: [4130, 689, 2]
 
-// Module 9387 (styles)
+// Module 9423 (styles)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let obj = { emojiContainer: { flexDirection: "row", alignItems: "center" }, emojiDescriptionWrapper: { flexDirection: "column", flex: 1 }, emojiWrapper: { marginLeft: -8, marginRight: 8 } };

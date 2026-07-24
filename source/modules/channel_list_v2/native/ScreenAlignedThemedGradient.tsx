@@ -1,10 +1,10 @@
-// Module ID: 15064
-// Function ID: 114703
+// Module ID: 15111
+// Function ID: 115024
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [31, 27, 33, 8831, 3991, 9891, 4662, 2]
+// Dependencies: [31, 27, 33, 8870, 3991, 9923, 4662, 2]
 // Exports: default
 
-// Module 15064 (ScreenAlignedThemedGradient)
+// Module 15111 (ScreenAlignedThemedGradient)
 import "result";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

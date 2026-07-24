@@ -1,8 +1,8 @@
-// Module ID: 15113
-// Function ID: 115101
-// Dependencies: [31, 27, 1849, 13997, 33, 4130, 689, 566, 3991, 4542, 3969, 15114, 15115, 15116, 2]
+// Module ID: 15160
+// Function ID: 115422
+// Dependencies: [31, 27, 1849, 14047, 33, 4130, 689, 566, 3991, 4542, 3969, 15161, 15162, 15163, 2]
 
-// Module 15113
+// Module 15160
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -59,14 +59,14 @@ const memoResult = importAllResult.memo(function YouBarUser(arg0) {
     if (null != name) {
       obj = { style: tmp.youButton };
       obj = { isLargeAvatar: tmp3, onPress: onAvatarPress };
-      const items2 = [callback(sharedValue(15115), obj), ];
+      const items2 = [callback(sharedValue(15162), obj), ];
       obj1 = {};
       const items3 = [tmp.userText, animatedStyle, ];
       obj2 = { flexShrink: 1 };
       items3[2] = obj2;
       obj1.style = items3;
       obj3 = { userId: stateFromStores.id, username: name };
-      obj1.children = callback(sharedValue(15116), obj3);
+      obj1.children = callback(sharedValue(15163), obj3);
       items2[1] = callback(sharedValue(3991).View, obj1);
       obj.children = items2;
     }
@@ -74,7 +74,7 @@ const memoResult = importAllResult.memo(function YouBarUser(arg0) {
   }
   const obj4 = { style: items4 };
   items4 = [tmp.youButton];
-  const items5 = [callback(sharedValue(15114), { isLarge: !isQuestRendered }), ];
+  const items5 = [callback(sharedValue(15161), { isLarge: !isQuestRendered }), ];
   const obj5 = { style: items6 };
   items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj5.children = callback(View, { style: tmp.placeholder });

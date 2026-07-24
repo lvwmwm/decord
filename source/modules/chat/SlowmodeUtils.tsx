@@ -1,10 +1,10 @@
-// Module ID: 6929
-// Function ID: 55292
+// Module ID: 6928
+// Function ID: 55301
 // Name: canBypassSlowmodeHelper
 // Dependencies: [3758, 653, 566, 1212, 664, 3712, 2]
 // Exports: canBypassSlowmode, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 6929 (canBypassSlowmodeHelper)
+// Module 6928 (canBypassSlowmodeHelper)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 

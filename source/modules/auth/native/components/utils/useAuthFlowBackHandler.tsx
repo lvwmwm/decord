@@ -1,10 +1,10 @@
-// Module ID: 14747
-// Function ID: 112502
+// Module ID: 14794
+// Function ID: 112823
 // Name: useAuthFlowBackHandler
-// Dependencies: [31, 14732, 14729, 5093, 2]
+// Dependencies: [31, 14779, 14776, 5093, 2]
 // Exports: default
 
-// Module 14747 (useAuthFlowBackHandler)
+// Module 14794 (useAuthFlowBackHandler)
 import result from "result";
 import { RegistrationTransitionActionTypes as closure_3 } from "RegistrationTransitionActionTypes";
 
@@ -13,7 +13,7 @@ const result = require("getInitialAuthScreen").fileFinishedImporting("modules/au
 
 export default function useAuthFlowBackHandler(arg0) {
   const _require = arg0;
-  const dependencyMap = React.useContext(_require(14729).TrackRegistrationContext);
+  const dependencyMap = React.useContext(_require(14776).TrackRegistrationContext);
   _require(5093).useNavigatorBackPressHandler(() => {
     callback({ step: closure_0, actionType: outer1_3.VIEWED });
     return false;

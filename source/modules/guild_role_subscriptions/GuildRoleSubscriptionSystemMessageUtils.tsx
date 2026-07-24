@@ -1,10 +1,10 @@
-// Module ID: 7679
-// Function ID: 61351
+// Module ID: 7768
+// Function ID: 61637
 // Name: identityHook
-// Dependencies: [1838, 1849, 7680, 653, 21, 1212, 5632, 4324, 2]
+// Dependencies: [1838, 1849, 7769, 653, 21, 1212, 5632, 4324, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 7679 (identityHook)
+// Module 7768 (identityHook)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import getJoinButtonLabels from "getJoinButtonLabels";

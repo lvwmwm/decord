@@ -1,10 +1,10 @@
-// Module ID: 11789
-// Function ID: 91469
+// Module ID: 11816
+// Function ID: 91707
 // Name: GuildDirectoryEmpty
-// Dependencies: [31, 27, 1907, 653, 33, 4130, 689, 1557, 566, 10037, 11790, 1273, 1212, 4126, 7495, 10038, 11791, 8481, 11792, 2]
+// Dependencies: [31, 27, 1907, 653, 33, 4130, 689, 1557, 566, 10069, 11817, 1273, 1212, 4126, 7636, 10070, 11818, 8526, 11819, 2]
 // Exports: default
 
-// Module 11789 (GuildDirectoryEmpty)
+// Module 11816 (GuildDirectoryEmpty)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -38,14 +38,14 @@ export default function GuildDirectoryEmpty(guild) {
   let obj = guild(566);
   const items = [_isNativeReflectConstruct];
   const dependencyMap = obj.useStateFromStores(items, () => outer1_5.getChannels(guild.id));
-  let obj1 = guild(10037);
+  let obj1 = guild(10069);
   obj = { contentContainerStyle: items1 };
   items1 = [tmp.container, ];
   obj = { paddingBottom: channel(1557)().bottom + 16 };
   items1[1] = obj;
   obj1 = {};
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
-  obj1.source = channel(11790);
+  obj1.source = channel(11817);
   obj1.style = tmp.header;
   const items2 = [callback(closure_3, obj1), , , , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header" };
@@ -61,27 +61,27 @@ export default function GuildDirectoryEmpty(guild) {
     const obj5 = {
       style: tmp.ctaContainer,
       onPress() {
-          let obj = channel(10038);
+          let obj = channel(10070);
           obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
           return obj.open(obj);
         },
-      iconSource: channel(11791)
+      iconSource: channel(11818)
     };
     const intl3 = guild(1212).intl;
     obj5.title = intl3.string(guild(1212).t.hyK15i);
-    tmp5 = callback(guild(7495).FormCTA, obj5);
+    tmp5 = callback(guild(7636).FormCTA, obj5);
   }
   items2[3] = tmp5;
   const obj6 = {
     style: tmp.ctaContainer,
     onPress() {
-      return guild(8481).handleOpenInviteActionsheet(guild, channel.id, dependencyMap, outer1_6.HUB_EMPTY_STATE);
+      return guild(8526).handleOpenInviteActionsheet(guild, channel.id, dependencyMap, outer1_6.HUB_EMPTY_STATE);
     },
-    iconSource: channel(11792)
+    iconSource: channel(11819)
   };
   const intl4 = guild(1212).intl;
   obj6.title = intl4.string(guild(1212).t.L4bwJ9);
-  items2[4] = callback(guild(7495).FormCTA, obj6);
+  items2[4] = callback(guild(7636).FormCTA, obj6);
   obj.children = items2;
   return closure_8(closure_4, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10466
-// Function ID: 80991
+// Module ID: 10495
+// Function ID: 81183
 // Name: date
-// Dependencies: [57, 31, 4976, 1428, 9465, 9466, 10467, 664, 2]
+// Dependencies: [57, 31, 4976, 1428, 9501, 9502, 10496, 664, 2]
 // Exports: useMobileQuestOrbRewardModalCtaPriorityExperiment, useQuestOrbsMultiplierMarketing, useShouldRemoveQuestHomeHero
 
-// Module 10466 (date)
+// Module 10495 (date)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
@@ -77,17 +77,17 @@ export const MutedVideoQuestNewDefaultsVariant = obj3;
 export const MutedVideoQuestNewDefaultsExperiment = ApexExperiment;
 export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMarketing(location) {
   let obj = { location };
-  const questOrbMultiplierEligibility = require(9465) /* getQuestOrbMultiplierEligibilityForUser */.useQuestOrbMultiplierEligibility();
+  const questOrbMultiplierEligibility = require(9501) /* getQuestOrbMultiplierEligibilityForUser */.useQuestOrbMultiplierEligibility();
   obj = {};
-  let enabled = questOrbMultiplierEligibility !== require(9466) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE;
+  let enabled = questOrbMultiplierEligibility !== require(9502) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE;
   if (enabled) {
-    enabled = questOrbMultiplierEligibility !== require(9466) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
+    enabled = questOrbMultiplierEligibility !== require(9502) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
   }
   if (enabled) {
     enabled = closure_5.useConfig(obj).enabled;
   }
   obj.shouldShowBonusOrbsUX = enabled;
-  obj.multiplier = require(10467) /* QuestOrbsMultiplier */.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100;
+  obj.multiplier = require(10496) /* QuestOrbsMultiplier */.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100;
   return obj;
 };
 export const VideoQuestPlayerRefactorExperiment = ApexExperiment;

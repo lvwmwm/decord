@@ -1,9 +1,9 @@
-// Module ID: 15345
-// Function ID: 117148
+// Module ID: 15392
+// Function ID: 117470
 // Name: FriendPresence
-// Dependencies: [5, 57, 31, 27, 4122, 4217, 3767, 653, 33, 4130, 689, 4126, 3969, 9063, 566, 8523, 1273, 8423, 12432, 15346, 2]
+// Dependencies: [5, 57, 31, 27, 4122, 4217, 3767, 653, 33, 4130, 689, 4126, 3969, 9102, 566, 8568, 1273, 8467, 12485, 15393, 2]
 
-// Module 15345 (FriendPresence)
+// Module 15392 (FriendPresence)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
@@ -37,7 +37,7 @@ function FriendPresence(user) {
     ({ activityStatusIcon: obj.iconStyle, activityStatusText: obj.textStyle } = tmp);
     obj.emojiSize = 16;
     obj.animate = animate;
-    tmp5 = callback(importDefault(9063), obj);
+    tmp5 = callback(importDefault(9102), obj);
   }
   return tmp5;
 }

@@ -1,9 +1,9 @@
-// Module ID: 15752
-// Function ID: 121544
+// Module ID: 15799
+// Function ID: 121866
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 1849, 15747, 33, 4130, 689, 4585, 1212, 9403, 566, 3776, 7957, 9361, 15753, 4549, 22, 5515, 1273, 15759, 9604, 4094, 9360, 7588, 4126, 2]
+// Dependencies: [31, 27, 1849, 15794, 33, 4130, 689, 4585, 1212, 9439, 566, 3776, 8044, 9397, 15800, 4549, 22, 5513, 1273, 15806, 9640, 4094, 9396, 7677, 4126, 2]
 
-// Module 15752 (_createForOfIteratorHelperLoose)
+// Module 15799 (_createForOfIteratorHelperLoose)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -127,7 +127,7 @@ function SoundPickerButtonRow(section) {
   } else {
     let result = !tmp3;
     if (result) {
-      let obj = section(7957);
+      let obj = section(8044);
       result = obj.isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
     }
     c3 = result;
@@ -135,7 +135,7 @@ function SoundPickerButtonRow(section) {
     const items = [tmp.row];
     obj.style = items;
     if (result) {
-      result = callback(section(9361).PremiumUpsellGradientBackground, {});
+      result = callback(section(9397).PremiumUpsellGradientBackground, {});
     }
     const items1 = [
       result,
@@ -291,7 +291,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
       let value = iter3.value;
       let tmp8 = importDefault;
       let tmp9 = dependencyMap;
-      let arr3 = importDefault(9403)(value.items, tmp4);
+      let arr3 = importDefault(9439)(value.items, tmp4);
       let tmp10 = closure_9;
       obj = { category: value, height: arr3.length * closure_9 + (18 * fontScale + 8), soundsByRow: arr3 };
       arr = items1.push(obj);
@@ -386,7 +386,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     optimizeListItemRender: true,
     inActionSheet: true
   };
-  return callback(importDefault(7588), obj);
+  return callback(importDefault(7677), obj);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundboard/native/SoundboardSoundPickerList.tsx");
 

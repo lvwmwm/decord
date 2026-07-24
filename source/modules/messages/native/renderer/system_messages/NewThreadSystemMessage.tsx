@@ -1,10 +1,10 @@
-// Module ID: 7698
-// Function ID: 61413
+// Module ID: 7787
+// Function ID: 61699
 // Name: createNewThreadSystemMessage
-// Dependencies: [1348, 3767, 1849, 7649, 1212, 7651, 4320, 7652, 2]
+// Dependencies: [1348, 3767, 1849, 7738, 1212, 7740, 4320, 7741, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 7698 (createNewThreadSystemMessage)
+// Module 7787 (createNewThreadSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -14,7 +14,7 @@ const result = require("_isNativeReflectConstruct").fileFinishedImporting("modul
 
 export const createNewThreadSystemMessage = function createNewThreadSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7649) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7738) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const messageReference = message.messageReference;
   let channel_id;
@@ -24,7 +24,7 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   channel = channel.getChannel(channel_id);
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
-  obj = { actorName: messageAuthorWithProcessedColor.nick, actorHook: importDefault(7651)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { actorName: messageAuthorWithProcessedColor.nick, actorHook: importDefault(7740)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   if (null != channel) {
     let content = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
     const obj4 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
@@ -41,6 +41,6 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   obj1.threadId = channel_id1;
   obj.threadOnClick = obj1;
   obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t.veX9jq, obj);
-  const merged = Object.assign(importDefault(7652)(roleStyle));
+  const merged = Object.assign(importDefault(7741)(roleStyle));
   return obj;
 };

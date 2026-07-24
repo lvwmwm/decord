@@ -1,5 +1,5 @@
 // Module ID: 1798
-// Function ID: 19900
+// Function ID: 19901
 // Name: KeyboardToolbar
 // Dependencies: [57, 29, 31, 27, 33, 1799, 1800, 1776, 1801, 1802, 1572, 1803, 1807, 1791]
 

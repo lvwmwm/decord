@@ -1,5 +1,5 @@
 // Module ID: 1370
-// Function ID: 16493
+// Function ID: 16494
 // Name: isGeneratorFunction
 // Dependencies: [1371, 1369, 551, 523]
 

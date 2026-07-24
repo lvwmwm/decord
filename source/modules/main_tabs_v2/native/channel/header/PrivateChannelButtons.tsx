@@ -1,8 +1,8 @@
-// Module ID: 10103
-// Function ID: 78224
-// Dependencies: [31, 27, 4143, 1348, 3767, 1849, 4146, 9132, 653, 4148, 1905, 9133, 33, 1273, 4130, 689, 1324, 566, 10104, 7668, 10109, 8835, 10110, 10111, 10075, 10076, 4324, 4098, 10126, 1934, 4660, 1212, 5786, 10127, 8340, 3827, 675, 10157, 5791, 4341, 4658, 9134, 9085, 4126, 10159, 2]
+// Module ID: 10135
+// Function ID: 78418
+// Dependencies: [31, 27, 4143, 1348, 3767, 1849, 4146, 9168, 653, 4148, 1905, 9169, 33, 1273, 4130, 689, 1324, 566, 10136, 7757, 10141, 8874, 10142, 10143, 10107, 10108, 4324, 4098, 10158, 1934, 4660, 1212, 5786, 10159, 8384, 3827, 675, 10189, 5791, 4341, 4658, 9170, 9123, 4126, 7496, 2]
 
-// Module 10103
+// Module 10135
 import importAllResult from "getSystemLocale";
 import { View } from "showActionSheet";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -84,7 +84,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     return isInChannelResult;
   }, items2);
-  let obj3 = channelId(10104);
+  let obj3 = channelId(10136);
   inappropriateConversationSafetyToolsWarningForChannel = obj3.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
   c6 = tmp5;
   let obj4 = channelId(566);
@@ -112,7 +112,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     return tmp3;
   });
-  let obj5 = channelId(7668);
+  let obj5 = channelId(7757);
   let id;
   if (null != stateFromStores) {
     id = stateFromStores.id;
@@ -159,7 +159,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     tmp11 = callParticipants.length > 0;
   }
   c10 = tmp11;
-  const tmp12 = screenIndex(10109)({ context: { type: "channel", channel: stateFromStores } });
+  const tmp12 = screenIndex(10141)({ context: { type: "channel", channel: stateFromStores } });
   application = tmp12.application;
   const items6 = [stateFromStores];
   callback = stateFromStores.useCallback(() => {
@@ -246,7 +246,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     return tmpResult;
   }, items11);
-  if (screenIndex(8340)(channelId)) {
+  if (screenIndex(8384)(channelId)) {
     obj = {
       style: tmp.button,
       onPress() {
@@ -259,7 +259,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     const intl5 = channelId(1212).intl;
     obj.accessibilityLabel = intl5.string(channelId(1212).t["+KSnWX"]);
     obj = { size: "sm" };
-    obj.children = callback(channelId(10157).WindowLaunchIcon, obj);
+    obj.children = callback(channelId(10189).WindowLaunchIcon, obj);
     let tmp21Result = callback(channelId(4660).PressableOpacity, obj);
   } else if (tmp12.isAppDM) {
     let tmp58 = null;
@@ -332,7 +332,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
       } else {
         if (stateFromStores1) {
           const obj10 = { size: "sm", color: screenIndex(689).unsafe_rawColors.RED_400 };
-          tmp32Result = tmp32(tmp33(9134).PhoneHangUpIcon, obj10);
+          tmp32Result = tmp32(tmp33(9170).PhoneHangUpIcon, obj10);
         } else {
           const obj11 = { size: "sm" };
           let GREEN_360;
@@ -340,7 +340,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
             GREEN_360 = screenIndex(689).unsafe_rawColors.GREEN_360;
           }
           obj11.color = GREEN_360;
-          tmp32Result = tmp32(tmp33(9085).PhoneCallIcon, obj11);
+          tmp32Result = tmp32(tmp33(9123).PhoneCallIcon, obj11);
         }
         const items14 = [
           tmp32Result,
@@ -395,7 +395,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
             obj14.accessibilityLabel = intl2.string(channelId(1212).t.oCqlGG);
             obj14.accessibilityRole = "button";
             const obj15 = { size: "sm" };
-            obj14.children = callback(channelId(10159).VideoIcon, obj15);
+            obj14.children = callback(channelId(7496).VideoIcon, obj15);
             tmp50Result = callback(channelId(4660).PressableOpacity, obj14);
             const tmp50 = callback;
           }

@@ -1,10 +1,10 @@
-// Module ID: 11897
-// Function ID: 92065
+// Module ID: 11924
+// Function ID: 92303
 // Name: openUserContextMenuCommands
-// Dependencies: [8267, 4098, 3981, 1881, 2]
+// Dependencies: [8311, 4098, 3981, 1881, 2]
 // Exports: default
 
-// Module 11897 (openUserContextMenuCommands)
+// Module 11924 (openUserContextMenuCommands)
 let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/native/openUserContextMenuCommands.tsx");
 
 export default function openUserContextMenuCommands(analyticsLocations) {
@@ -13,7 +13,7 @@ export default function openUserContextMenuCommands(analyticsLocations) {
   let userId;
   analyticsLocations = analyticsLocations.analyticsLocations;
   ({ userId, selectedChannel, showUserProfile } = analyticsLocations);
-  let obj = analyticsLocations(8267);
+  let obj = analyticsLocations(8311);
   const result = obj.trackUserProfileAction({ action: "PRESS_VIEW_APP_COMMANDS", analyticsLocations });
   importDefault(4098).hideActionSheet();
   const obj2 = importDefault(4098);

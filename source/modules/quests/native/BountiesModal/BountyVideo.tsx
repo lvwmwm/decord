@@ -1,10 +1,10 @@
-// Module ID: 13932
-// Function ID: 106660
+// Module ID: 13983
+// Function ID: 106984
 // Name: BountyVideo
-// Dependencies: [57, 31, 27, 4976, 33, 478, 9458, 689, 4130, 13933, 8298, 10839, 10840, 3991, 3834, 4131, 4134, 13913, 13916, 13934, 5085, 13935, 13937, 13939, 9787, 2]
+// Dependencies: [57, 31, 27, 4976, 33, 478, 9494, 689, 4130, 13984, 8342, 10868, 10869, 3991, 3834, 4131, 4134, 13964, 13967, 13985, 5085, 13986, 13988, 13990, 9819, 2]
 // Exports: BountyVideo
 
-// Module 13932 (BountyVideo)
+// Module 13983 (BountyVideo)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -37,7 +37,7 @@ let closure_15 = _createForOfIteratorHelperLoose.createStyles(() => {
   obj.videoContainer = obj;
   obj = { position: "absolute", top: importDefault(689).space.PX_8, left: importDefault(689).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_8 };
   obj.leftRow = obj;
-  const obj1 = { position: "absolute", bottom: 0, height: require(13933) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
+  const obj1 = { position: "absolute", bottom: 0, height: require(13984) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
   obj.progress = obj1;
   const obj2 = {};
   const merged1 = Object.assign(closure_6.absoluteFillObject);
@@ -209,59 +209,55 @@ export const BountyVideo = function BountyVideo(bounty) {
   Ae.__initData = closure_16;
   const animatedStyle = obj6.useAnimatedStyle(Ae);
   let obj7 = bounty(handleVideoError[13]);
-  function ve() {
-    if (null != isScrollingInBoundsSharedValue) {
-      const value = isScrollingInBoundsSharedValue.get();
-    }
-    const obj = {};
-    let num = 0;
-    if (flag) {
-      num = 0;
-      if (true !== value) {
-        num = 1;
-      }
-    }
-    obj.opacity = bounty(handleVideoError[15]).withTiming(num, bounty(handleVideoError[16]).timingStandard);
-    return obj;
-  }
-  obj = { isScrollingInBoundsSharedValue, withTiming: bounty(handleVideoError[15]).withTiming, isActive: flag, timingStandard: bounty(handleVideoError[16]).timingStandard };
-  ve.__closure = obj;
-  ve.__workletHash = 12676706441349;
-  ve.__initData = closure_17;
-  const animatedStyle1 = obj7.useAnimatedStyle(ve);
-  let obj9 = bounty(handleVideoError[13]);
   class Fe {
     constructor() {
-      if (null == peekScale) {
-        return {};
-      } else {
-        tmp = peekScale;
-        value = peekScale.get();
-        obj = {};
-        obj = {};
-        num = 1;
-        tmp4 = bounty;
-        tmp5 = handleVideoError;
-        num2 = 17;
-        diff = 1 - value;
-        diff1 = 1 - bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_SCALE;
-        obj.translateY = diff / diff1 * bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_TOP_OFFSET;
-        items = [, ];
-        items[0] = obj;
-        obj1 = {};
-        obj1.scale = value;
-        items[1] = obj1;
-        obj.transform = items;
-        return obj;
+      if (null != closure_5) {
+        tmp2 = closure_5;
+        value = closure_5.get();
       }
+      obj = {};
+      obj2 = bounty(handleVideoError[15]);
+      num = 0;
+      if (c4) {
+        flag = true;
+        num = 0;
+        if (true !== value) {
+          num = 1;
+        }
+      }
+      obj.opacity = obj2.withTiming(num, bounty(handleVideoError[16]).timingStandard);
+      return obj;
+    }
+  }
+  obj = { isScrollingInBoundsSharedValue, withTiming: bounty(handleVideoError[15]).withTiming, isActive: flag, timingStandard: bounty(handleVideoError[16]).timingStandard };
+  Fe.__closure = obj;
+  Fe.__workletHash = 12676706441349;
+  Fe.__initData = closure_17;
+  const animatedStyle1 = obj7.useAnimatedStyle(Fe);
+  let obj9 = bounty(handleVideoError[13]);
+  function ve() {
+    if (null == peekScale) {
+      return {};
+    } else {
+      const value = peekScale.get();
+      let obj = {};
+      obj = {};
+      const diff = 1 - value;
+      const diff1 = 1 - bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_SCALE;
+      obj.translateY = diff / diff1 * bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_TOP_OFFSET;
+      const items = [obj, ];
+      obj = { scale: value };
+      items[1] = obj;
+      obj.transform = items;
+      return obj;
     }
   }
   obj = { peekScale, AUTO_SCROLL_PEEK_SCALE: bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_SCALE, AUTO_SCROLL_PEEK_TOP_OFFSET: bounty(handleVideoError[17]).AUTO_SCROLL_PEEK_TOP_OFFSET };
-  Fe.__closure = obj;
-  Fe.__workletHash = 7501077341815;
-  Fe.__initData = closure_18;
+  ve.__closure = obj;
+  ve.__workletHash = 7501077341815;
+  ve.__initData = closure_18;
   let tmp26 = isCtaVisible;
-  const animatedStyle2 = obj9.useAnimatedStyle(Fe);
+  const animatedStyle2 = obj9.useAnimatedStyle(ve);
   if (isBountiesVerticalScrollExperimentEnabled) {
     let tmp27 = isCtaVisible;
     if (isCtaVisible) {
@@ -355,11 +351,15 @@ export const BountyVideo = function BountyVideo(bounty) {
   }
   items7[2] = renderEndCardResult;
   if (isScrollIndicatorEnabled) {
-    isScrollIndicatorEnabled = tmp6;
-  }
-  if (isScrollIndicatorEnabled) {
-    const obj11 = { opacityStyle: animatedStyle1, isActive: flag, isEndCardVisible };
+    const obj11 = { opacityStyle: animatedStyle1 };
+    if (flag) {
+      flag = tmp6;
+    }
+    obj11.enabled = flag;
+    obj11.isEndCardVisible = isEndCardVisible;
     isScrollIndicatorEnabled = callback(handleVideoProgress(handleVideoError[21]), obj11);
+    const tmp60 = callback;
+    const tmp63 = handleVideoProgress(handleVideoError[21]);
   }
   items7[3] = isScrollIndicatorEnabled;
   const obj12 = { style: items11, pointerEvents: "box-none" };

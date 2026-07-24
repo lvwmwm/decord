@@ -1,10 +1,10 @@
-// Module ID: 12334
-// Function ID: 95960
+// Module ID: 12361
+// Function ID: 96200
 // Name: IgnoreUserElement
-// Dependencies: [31, 1348, 3767, 653, 33, 566, 4319, 4324, 8923, 12335, 1212, 9218, 2]
+// Dependencies: [31, 1348, 3767, 653, 33, 566, 4319, 4324, 8962, 12362, 1212, 9254, 2]
 // Exports: default
 
-// Module 12334 (IgnoreUserElement)
+// Module 12361 (IgnoreUserElement)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

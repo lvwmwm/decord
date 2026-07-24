@@ -1,10 +1,10 @@
-// Module ID: 10075
-// Function ID: 77767
+// Module ID: 10107
+// Function ID: 77961
 // Name: getChannelDetailsSearchContext
 // Dependencies: [31, 1348, 653, 44, 624, 2]
 // Exports: useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
 
-// Module 10075 (getChannelDetailsSearchContext)
+// Module 10107 (getChannelDetailsSearchContext)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SearchTypes } from "ME";

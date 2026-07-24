@@ -1,10 +1,10 @@
-// Module ID: 9734
-// Function ID: 75706
+// Module ID: 9768
+// Function ID: 75918
 // Name: openSocialLayerStorefrontUnsupportedOnMobileAlert
-// Dependencies: [33, 4471, 1212, 3104, 7791, 7459, 4337, 9735, 1934, 9746, 9750, 2]
+// Dependencies: [33, 4471, 1212, 3104, 7882, 7539, 4337, 9769, 1934, 9780, 9784, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 9734 (openSocialLayerStorefrontUnsupportedOnMobileAlert)
+// Module 9768 (openSocialLayerStorefrontUnsupportedOnMobileAlert)
 import { jsx } from "jsxProd";
 
 function openSocialLayerStorefrontUnsupportedOnMobileAlert() {
@@ -24,13 +24,13 @@ export const SOCIAL_LAYER_STOREFRONT_SELF_PURCHASE_SUCCESS_MODAL_KEY = "social-l
 export const SOCIAL_LAYER_STOREFRONT_GIFT_PURCHASE_SUCCESS_MODAL_KEY = "social-layer-storefront-gift-purchase-success-native-modal";
 export { openSocialLayerStorefrontUnsupportedOnMobileAlert };
 export const openSocialLayerStorefrontProductDetailsModal = function openSocialLayerStorefrontProductDetailsModal(merged) {
-  let obj = require(7791) /* apexExperiment */;
+  let obj = require(7882) /* apexExperiment */;
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_product_details_modal" })) {
-    const socialLayerStorefrontConfig = require(7459) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontConfig();
+    const socialLayerStorefrontConfig = require(7539) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontConfig();
     const obj3 = importDefault(4337);
     obj = { presentation: "modal" };
-    obj3.pushLazy(require(1934) /* maybeLoadBundle */(9735, dependencyMap.paths), merged, "social-layer-storefront-product-details-native-modal", obj);
-    const obj2 = require(7459) /* _fetchSocialLayerStorefront */;
+    obj3.pushLazy(require(1934) /* maybeLoadBundle */(9769, dependencyMap.paths), merged, "social-layer-storefront-product-details-native-modal", obj);
+    const obj2 = require(7539) /* _fetchSocialLayerStorefront */;
   } else {
     openSocialLayerStorefrontUnsupportedOnMobileAlert();
   }
@@ -40,7 +40,7 @@ export const closeSocialLayerStorefrontProductDetailsModal = function closeSocia
 };
 export const openSocialLayerStorefrontGiftModal = function openSocialLayerStorefrontGiftModal(merged) {
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_gift_modal" })) {
-    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(9746, dependencyMap.paths), merged, "social-layer-storefront-native-gift-modal");
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(9780, dependencyMap.paths), merged, "social-layer-storefront-native-gift-modal");
     const obj2 = importDefault(4337);
   }
 };

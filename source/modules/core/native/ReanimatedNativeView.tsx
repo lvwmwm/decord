@@ -1,8 +1,8 @@
-// Module ID: 7589
-// Function ID: 60764
-// Dependencies: [3994, 3992, 3991, 5517, 2]
+// Module ID: 7678
+// Function ID: 61050
+// Dependencies: [3994, 3992, 3991, 5515, 2]
 
-// Module 7589
+// Module 7678
 import isFabric from "isFabric";
 
 if (isFabric.isFabric()) {

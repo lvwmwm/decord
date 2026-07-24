@@ -1,10 +1,10 @@
-// Module ID: 9957
-// Function ID: 76966
+// Module ID: 9989
+// Function ID: 77160
 // Name: PinIcon
-// Dependencies: [31, 33, 689, 3833, 9958, 2]
+// Dependencies: [31, 33, 689, 3833, 9990, 2]
 // Exports: PinIcon
 
-// Module 9957 (PinIcon)
+// Module 9989 (PinIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const PinIcon = function PinIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(9958) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(9990) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9958) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(9990) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

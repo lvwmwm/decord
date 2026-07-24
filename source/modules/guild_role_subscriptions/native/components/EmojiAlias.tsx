@@ -1,10 +1,10 @@
-// Module ID: 16441
-// Function ID: 128146
+// Module ID: 16488
+// Function ID: 128470
 // Name: EmojiAlias
 // Dependencies: [31, 27, 33, 4130, 4126, 2]
 // Exports: default
 
-// Module 16441 (EmojiAlias)
+// Module 16488 (EmojiAlias)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

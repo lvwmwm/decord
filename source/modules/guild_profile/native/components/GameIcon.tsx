@@ -1,10 +1,10 @@
-// Module ID: 11876
-// Function ID: 91928
+// Module ID: 11903
+// Function ID: 92166
 // Name: styles
-// Dependencies: [31, 27, 33, 4130, 689, 1392, 11877, 4660, 11878, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1392, 11904, 4660, 11905, 2]
 // Exports: default
 
-// Module 11876 (styles)
+// Module 11903 (styles)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,7 +50,7 @@ export default function GameIcon(arg0) {
   if (null != activityLevel) {
     level = activityLevel.level;
   }
-  let tmp7 = level === game(11877).ClanGameplayActivity.HIGH;
+  let tmp7 = level === game(11904).ClanGameplayActivity.HIGH;
   if (null == source) {
     return null;
   } else if (null != onPress) {
@@ -69,7 +69,7 @@ export default function GameIcon(arg0) {
       const obj2 = { style: tmp.fireIcon };
       tmp = onPress;
       obj2.color = onPress(689).unsafe_rawColors.ORANGE_260;
-      obj1.children = callback(game(11878).FireIcon, obj2);
+      obj1.children = callback(game(11905).FireIcon, obj2);
       tmp7 = callback(closure_4, obj1);
     }
     callback[1] = tmp7;
@@ -86,7 +86,7 @@ export default function GameIcon(arg0) {
     if (tmp7) {
       const obj5 = { style: tmp.gameIconMask };
       const obj6 = { style: tmp.fireIcon, color: onPress(689).unsafe_rawColors.ORANGE_330 };
-      obj5.children = callback(game(11878).FireIcon, obj6);
+      obj5.children = callback(game(11905).FireIcon, obj6);
       tmp13 = callback(closure_4, obj5);
     }
     items3[1] = tmp13;

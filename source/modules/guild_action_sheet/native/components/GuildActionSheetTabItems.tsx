@@ -1,10 +1,10 @@
-// Module ID: 12980
-// Function ID: 100479
+// Module ID: 13032
+// Function ID: 100802
 // Name: GuildActionSheetTabItems
-// Dependencies: [31, 1348, 1907, 1906, 653, 33, 12968, 4037, 566, 8484, 8481, 4965, 7771, 1212, 8013, 689, 4324, 4098, 4966, 10196, 7638, 5079, 5792, 8438, 2]
+// Dependencies: [31, 1348, 1907, 1906, 653, 33, 13020, 4037, 566, 8529, 8526, 4965, 7533, 1212, 7477, 689, 4324, 4098, 4966, 10226, 7727, 5079, 5792, 8482, 2]
 // Exports: default
 
-// Module 12980 (GuildActionSheetTabItems)
+// Module 13032 (GuildActionSheetTabItems)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -25,13 +25,13 @@ let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules
 
 export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
-  let obj = guild(12968);
+  let obj = guild(13020);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   const total = stateFromStores(4037)(guild.id).total;
   let obj1 = guild(566);
   const items = [closure_6];
   stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getChannels(guild.id));
-  let obj2 = guild(8484);
+  let obj2 = guild(8529);
   let shouldRenderInviteResult = obj2.shouldRenderInvite(stateFromStores, guild);
   const items1 = [stateFromStores, guild];
   let closure_2 = React.useCallback(() => {
@@ -57,7 +57,7 @@ export default function GuildActionSheetTabItems(guild) {
   }
   obj.label = formatToPlainStringResult;
   obj2 = { color: stateFromStores(689).unsafe_rawColors.GUILD_BOOSTING_PINK };
-  obj.icon = callback(guild(8013).BoostGemIcon, obj2);
+  obj.icon = callback(guild(7477).BoostGemIcon, obj2);
   obj.grow = true;
   obj.onPress = function onPress() {
     let obj = stateFromStores(outer1_3[16]);
@@ -67,31 +67,31 @@ export default function GuildActionSheetTabItems(guild) {
     const obj3 = stateFromStores(outer1_3[17]);
     callback(outer1_3[18]).openApplyBoostModal(guild.id);
   };
-  const items2 = [callback(guild(7771).IconButton, obj), , , ];
+  const items2 = [callback(guild(7533).IconButton, obj), , , ];
   if (shouldRenderInviteResult) {
     let obj3 = { variant: "secondary" };
     const intl3 = guild(1212).intl;
     obj3.label = intl3.string(guild(1212).t.VINpSK);
-    obj3.icon = stateFromStores(10196);
+    obj3.icon = stateFromStores(10226);
     obj3.grow = true;
     obj3.onPress = function onPress() {
       stateFromStores(outer1_3[17]).hideActionSheet();
       callback();
     };
-    shouldRenderInviteResult = callback(guild(7771).IconButton, obj3);
+    shouldRenderInviteResult = callback(guild(7533).IconButton, obj3);
   }
   items2[1] = shouldRenderInviteResult;
   const obj4 = { variant: "secondary" };
   const intl4 = guild(1212).intl;
   obj4.label = intl4.string(guild(1212).t.HcoRu0);
-  obj4.icon = stateFromStores(7638);
+  obj4.icon = stateFromStores(7727);
   obj4.grow = true;
   obj4.onPress = function onPress() {
     stateFromStores(outer1_3[17]).hideActionSheet();
     const obj = stateFromStores(outer1_3[17]);
     stateFromStores(outer1_3[21]).open(guild.id);
   };
-  items2[2] = callback(guild(7771).IconButton, obj4);
+  items2[2] = callback(guild(7533).IconButton, obj4);
   if (canAccessSettings) {
     const obj5 = { variant: "secondary" };
     const intl5 = guild(1212).intl;
@@ -103,7 +103,7 @@ export default function GuildActionSheetTabItems(guild) {
       const obj = stateFromStores(outer1_3[17]);
       stateFromStores(outer1_3[23]).open(guild.id);
     };
-    canAccessSettings = callback(guild(7771).IconButton, obj5);
+    canAccessSettings = callback(guild(7533).IconButton, obj5);
   }
   items2[3] = canAccessSettings;
   obj.children = items2;

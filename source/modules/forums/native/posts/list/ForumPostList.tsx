@@ -1,10 +1,10 @@
-// Module ID: 11146
-// Function ID: 86697
+// Module ID: 11176
+// Function ID: 86966
 // Name: ForumPostList
-// Dependencies: [57, 31, 27, 1355, 33, 4130, 5654, 11127, 11137, 11147, 11150, 2]
+// Dependencies: [57, 31, 27, 1355, 33, 4130, 5654, 11157, 11167, 11177, 11180, 2]
 // Exports: default
 
-// Module 11146 (ForumPostList)
+// Module 11176 (ForumPostList)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -49,13 +49,13 @@ export default function ForumPostList(arg0) {
     const obj1 = { style: tmp.header };
     let tmp10 = hasFlagResult;
     if (hasFlagResult) {
-      tmp10 = callback2(importDefault(11127), {});
+      tmp10 = callback2(importDefault(11157), {});
     }
     const items = [tmp10, ];
     let tmp14 = 0 !== first.length;
     if (tmp14) {
       const obj2 = { appliedTags: first, additionalTagsCount: tmp2[1], hasUnreads };
-      tmp14 = callback2(require(11137) /* ForumPostAppliedTagPills */.ForumPostAppliedTagPills, obj2);
+      tmp14 = callback2(require(11167) /* ForumPostAppliedTagPills */.ForumPostAppliedTagPills, obj2);
     }
     items[1] = tmp14;
     obj1.children = items;
@@ -63,9 +63,9 @@ export default function ForumPostList(arg0) {
     const tmp8 = closure_7;
     const tmp9 = View;
   }
-  const items1 = [tmp8Result, callback2(importDefault(11147), { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
+  const items1 = [tmp8Result, callback2(importDefault(11177), { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
   obj.children = items1;
-  const items2 = [closure_7(View, obj), callback2(importDefault(11150), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items2 = [closure_7(View, obj), callback2(importDefault(11180), { thread, firstMessage, hasUnreads, parentChannel })];
   obj.children = items2;
   return closure_7(closure_8, obj);
 };

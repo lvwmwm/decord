@@ -1,10 +1,10 @@
-// Module ID: 15004
-// Function ID: 114305
+// Module ID: 15051
+// Function ID: 114626
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 31, 4023, 4018, 653, 11571, 5464, 6658, 4026, 4022, 4966, 6641, 2]
+// Dependencies: [5, 31, 4023, 4018, 653, 11598, 5462, 6658, 4026, 4022, 4966, 6641, 2]
 // Exports: default
 
-// Module 15004 (useGuildPowerupsBoostAction)
+// Module 15051 (useGuildPowerupsBoostAction)
 import useGuildBoostPurchaseHandler from "useGuildBoostPurchaseHandler";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -25,10 +25,10 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
   const importDefault = arg1;
   const dependencyMap = arg2;
   const callback = arg4;
-  const tmp2 = importDefault(11571)(arg3);
+  const tmp2 = importDefault(11598)(arg3);
   const shouldUseMobileWebRedirectCheckout = tmp2.shouldUseMobileWebRedirectCheckout;
   const handleMobileWebRedirectCheckout = tmp2.handleMobileWebRedirectCheckout;
-  const analyticsLocations = importDefault(5464)().analyticsLocations;
+  const analyticsLocations = importDefault(5462)().analyticsLocations;
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [arg1, arg2, arg0, arg4, shouldUseMobileWebRedirectCheckout, handleMobileWebRedirectCheckout, analyticsLocations];
   return shouldUseMobileWebRedirectCheckout.useCallback(callback(tmp), items);

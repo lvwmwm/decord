@@ -1,10 +1,10 @@
-// Module ID: 12301
-// Function ID: 95824
+// Module ID: 12328
+// Function ID: 96064
 // Name: getJoinOrStartButtonState
-// Dependencies: [31, 1212, 7918, 10520, 2]
+// Dependencies: [31, 1212, 8005, 10549, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 12301 (getJoinOrStartButtonState)
+// Module 12328 (getJoinOrStartButtonState)
 import result from "result";
 
 const require = arg1;
@@ -24,7 +24,7 @@ function getJoinOrStartButtonState(channel) {
   }
   obj.text = stringResult;
   obj.tooltip = undefined;
-  let obj1 = require(7918) /* isActivityInTextSupportedForChannel */;
+  let obj1 = require(8005) /* isActivityInTextSupportedForChannel */;
   const result = obj1.isActivitiesInTextEnabled(channel.channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {
@@ -52,23 +52,23 @@ function getJoinOrStartButtonState(channel) {
     return obj;
   } else {
     if (null != joinability) {
-      if (joinability !== require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
-        if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
+      if (joinability !== require(10549) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
+        if (require(10549) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
           const intl8 = require(1212) /* getSystemLocale */.intl;
           let stringResult2 = intl8.string(require(1212) /* getSystemLocale */.t.hHGrWz);
-        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
+        } else if (require(10549) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
           const intl7 = require(1212) /* getSystemLocale */.intl;
           stringResult2 = intl7.string(require(1212) /* getSystemLocale */.t["4WuFRE"]);
-        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
+        } else if (require(10549) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
           const intl6 = require(1212) /* getSystemLocale */.intl;
           stringResult2 = intl6.string(require(1212) /* getSystemLocale */.t.uGDCcw);
-        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
+        } else if (require(10549) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
           const intl5 = require(1212) /* getSystemLocale */.intl;
           stringResult2 = intl5.string(require(1212) /* getSystemLocale */.t.UXoQTp);
-        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
+        } else if (require(10549) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
           const intl4 = require(1212) /* getSystemLocale */.intl;
           stringResult2 = intl4.string(require(1212) /* getSystemLocale */.t.rZfiNq);
-        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
+        } else if (require(10549) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
           const intl3 = require(1212) /* getSystemLocale */.intl;
           stringResult2 = intl3.string(require(1212) /* getSystemLocale */.t.w5SAps);
         } else {

@@ -1,10 +1,10 @@
-// Module ID: 13503
-// Function ID: 103920
+// Module ID: 13556
+// Function ID: 104247
 // Name: navigateToDevTools
-// Dependencies: [31, 27, 33, 9113, 5519, 9122, 13504, 9027, 4126, 689, 13506, 4098, 4337, 2]
+// Dependencies: [31, 27, 33, 9149, 5517, 9158, 13557, 9066, 4126, 689, 13559, 4098, 4337, 2]
 // Exports: navigateToDevTools
 
-// Module 13503 (navigateToDevTools)
+// Module 13556 (navigateToDevTools)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -17,7 +17,7 @@ const require = arg1;
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 let closure_7 = require("result").memo((screenKey) => {
   screenKey = screenKey.screenKey;
-  let obj = _require(5519);
+  let obj = _require(5517);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {};
   let str = "home";
@@ -43,7 +43,7 @@ let closure_7 = require("result").memo((screenKey) => {
   };
   obj = {
     name: "home",
-    component: importDefault(13504),
+    component: importDefault(13557),
     options() {
       return {
         headerTitle() {
@@ -61,8 +61,8 @@ let closure_7 = require("result").memo((screenKey) => {
     }
   };
   let items = [callback(createNativeStackNavigator.Screen, obj), ];
-  let merged = Object.assign(_require(13506).DevToolsScreens);
-  let merged1 = Object.assign(_require(13506).PerformanceTestingScreens);
+  let merged = Object.assign(_require(13559).DevToolsScreens);
+  let merged1 = Object.assign(_require(13559).PerformanceTestingScreens);
   const entries = Object.entries({});
   items[1] = entries.map((arg0) => {
     let tmp;

@@ -1,10 +1,10 @@
-// Module ID: 10052
-// Function ID: 77684
+// Module ID: 10084
+// Function ID: 77878
 // Name: GuildDirectoryAddAlert
-// Dependencies: [31, 27, 33, 4130, 689, 4561, 1212, 5515, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4561, 1212, 5513, 4126, 2]
 // Exports: default
 
-// Module 10052 (GuildDirectoryAddAlert)
+// Module 10084 (GuildDirectoryAddAlert)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,8 +36,8 @@ export default function GuildDirectoryAddAlert(arg0) {
   obj = { style: tmp.container };
   obj = { style: tmp.guildIcon, guild };
   const tmp2 = importDefault(4561);
-  obj.size = require(5515) /* makeSizeStyle */.GuildIconSizes.XLARGE;
-  const items = [callback(importDefault(5515), obj), , ];
+  obj.size = require(5513) /* makeSizeStyle */.GuildIconSizes.XLARGE;
+  const items = [callback(importDefault(5513), obj), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.CueiPY);

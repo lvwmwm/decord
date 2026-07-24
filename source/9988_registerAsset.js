@@ -1,11 +1,11 @@
 // Module ID: 9988
-// Function ID: 77235
+// Function ID: 77159
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9988 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "a22308efe22f297561f3f188b87b515b", name: "ic_flower_star_24px", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6adfcc7a553215ee3085ec15a5a3e3a4", name: "ClockXIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

@@ -1,10 +1,10 @@
-// Module ID: 14127
-// Function ID: 108743
+// Module ID: 14177
+// Function ID: 109066
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [31, 27, 1849, 33, 4130, 689, 1212, 566, 4319, 1392, 5489, 5085, 4126, 665, 1273, 5490, 2]
+// Dependencies: [31, 27, 1849, 33, 4130, 689, 1212, 566, 4319, 1392, 5487, 5085, 4126, 665, 1273, 5488, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 14127 (GuildRoleSubscriptionMemberPreview)
+// Module 14177 (GuildRoleSubscriptionMemberPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -54,7 +54,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
       avatarURL = obj2.getDefaultAvatarURL(undefined, undefined);
     }
     const source = importDefault(1392).makeSource(avatarURL);
-    let obj3 = require(5489) /* getRoleIconSource */;
+    let obj3 = require(5487) /* getRoleIconSource */;
     const roleIconData = obj3.getRoleIconData(role, 16);
     obj = {};
     const items1 = [tmp3.container, style];
@@ -84,13 +84,13 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
       obj7.source = tmp26;
       obj7.unicodeEmoji = roleIconData.unicodeEmoji;
       obj7.size = 16;
-      items4[1] = callback(importDefault(5490), obj7);
+      items4[1] = callback(importDefault(5488), obj7);
       obj5.children = items4;
       tmp19Result = closure_8(closure_7, obj5);
       const tmp19 = closure_8;
       const tmp20 = closure_7;
       const tmp21 = callback;
-      const tmp25 = importDefault(5490);
+      const tmp25 = importDefault(5488);
     }
     items3[1] = tmp19Result;
     const obj9 = { size: 8 };

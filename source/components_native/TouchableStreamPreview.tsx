@@ -1,10 +1,10 @@
-// Module ID: 10785
-// Function ID: 83769
+// Module ID: 10814
+// Function ID: 83961
 // Name: StreamPreviewContainer
-// Dependencies: [31, 27, 4144, 4149, 1194, 1348, 1838, 3758, 4146, 653, 33, 4130, 3974, 689, 4312, 566, 1212, 4944, 4309, 4336, 4323, 4194, 4559, 10786, 4126, 2]
+// Dependencies: [31, 27, 4144, 4149, 1194, 1348, 1838, 3758, 4146, 653, 33, 4130, 3974, 689, 4312, 566, 1212, 4944, 4309, 4336, 4323, 4194, 4559, 10815, 4126, 2]
 // Exports: default
 
-// Module 10785 (StreamPreviewContainer)
+// Module 10814 (StreamPreviewContainer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

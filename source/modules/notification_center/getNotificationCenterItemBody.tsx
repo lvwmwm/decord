@@ -1,10 +1,10 @@
-// Module ID: 15151
-// Function ID: 115446
+// Module ID: 15198
+// Function ID: 115768
 // Name: escapeMarkdown
-// Dependencies: [6758, 1838, 3767, 1849, 653, 1212, 3969, 6883, 1832, 44, 2]
+// Dependencies: [6758, 1838, 3767, 1849, 653, 1212, 3969, 6882, 1832, 44, 2]
 // Exports: default
 
-// Module 15151 (escapeMarkdown)
+// Module 15198 (escapeMarkdown)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isGuildEventEnded } from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -67,7 +67,7 @@ export default function getNotificationCenterItemBody(arg0) {
   const tmp2Result = escapeMarkdown(obj.getName(authStore.getUser(id1)));
   applicationId = item.applicationId;
   const type = item.type;
-  if (renderApplication(6883).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED === type) {
+  if (renderApplication(6882).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED === type) {
     let other_users = item.other_users;
     let id2;
     if (null != other_users) {
@@ -101,7 +101,7 @@ export default function getNotificationCenterItemBody(arg0) {
     const intl6 = renderApplication(1212).intl;
     obj = { user: tmp54Result, user2: tmp61(applicationId(3969).getName(authStore.getUser(id3))), count: bound };
     return intl6.format(renderApplication(1212).t.g5xyIC, obj);
-  } else if (renderApplication(6883).NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE === type) {
+  } else if (renderApplication(6882).NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE === type) {
     let arr;
     if (null != item.local_id) {
       const parts = str6.split("_");
@@ -113,7 +113,7 @@ export default function getNotificationCenterItemBody(arg0) {
     }
     const _HermesInternal3 = HermesInternal;
     return "Update to build " + str8 + " available!";
-  } else if (renderApplication(6883).NotificationCenterItems.FRIEND_SUGGESTION_CREATED === type) {
+  } else if (renderApplication(6882).NotificationCenterItems.FRIEND_SUGGESTION_CREATED === type) {
     if (relationshipType.getRelationshipType(id) === constants.PENDING_OUTGOING) {
       const intl5 = renderApplication(1212).intl;
       obj = { user: tmp2Result };
@@ -126,7 +126,7 @@ export default function getNotificationCenterItemBody(arg0) {
       }
     }
     return str5;
-  } else if (renderApplication(6883).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED === type) {
+  } else if (renderApplication(6882).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED === type) {
     const guild_scheduled_event_id = item.guild_scheduled_event_id;
     let guildScheduledEvent = null;
     if (null != guild_scheduled_event_id) {
@@ -168,16 +168,16 @@ export default function getNotificationCenterItemBody(arg0) {
     formatResult = str4;
     const tmp37 = isGuildEventEnded;
     tmp37Result = isGuildEventEnded(tmp38);
-  } else if (renderApplication(6883).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS === type) {
+  } else if (renderApplication(6882).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS === type) {
     const obj2 = { username: tmp2Result, applicationId, renderApplication, withApplication: renderApplication(1212).t["9Dgf1L"], withDefault: renderApplication(1212).t.uIomXw };
     return getFriendRequestItemBody(obj2);
-  } else if (renderApplication(6883).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED === type) {
+  } else if (renderApplication(6882).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED === type) {
     const obj3 = { username: tmp2Result, applicationId, renderApplication, withApplication: renderApplication(1212).t.nnC1q9, withDefault: renderApplication(1212).t["5Uzkdp"] };
     return getFriendRequestItemBody(obj3);
-  } else if (renderApplication(6883).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED === type) {
+  } else if (renderApplication(6882).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED === type) {
     const obj4 = { username: tmp2Result, applicationId, renderApplication, withApplication: renderApplication(1212).t.jXlYiF, withDefault: renderApplication(1212).t.McYRBk };
     return getFriendRequestItemBody(obj4);
-  } else if (renderApplication(6883).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED === type) {
+  } else if (renderApplication(6882).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED === type) {
     const _HermesInternal2 = HermesInternal;
     applicationId(44)(null != applicationId, "Expected application id for " + item.type);
     const intl3 = renderApplication(1212).intl;
@@ -188,7 +188,7 @@ export default function getNotificationCenterItemBody(arg0) {
         }
     };
     return intl3.format(renderApplication(1212).t["BB/0vn"], obj5);
-  } else if (renderApplication(6883).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS === type) {
+  } else if (renderApplication(6882).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS === type) {
     const _HermesInternal = HermesInternal;
     applicationId(44)(null != applicationId, "Expected application id for " + item.type);
     const intl2 = renderApplication(1212).intl;
@@ -199,7 +199,7 @@ export default function getNotificationCenterItemBody(arg0) {
         }
     };
     return intl2.format(renderApplication(1212).t["7cqOLI"], obj6);
-  } else if (renderApplication(6883).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED === type) {
+  } else if (renderApplication(6882).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED === type) {
     if (null == applicationId) {
       let body2 = item.body;
     } else {

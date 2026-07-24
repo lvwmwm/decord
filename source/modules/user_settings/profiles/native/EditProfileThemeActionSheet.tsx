@@ -1,10 +1,10 @@
-// Module ID: 13591
-// Function ID: 104450
+// Module ID: 13642
+// Function ID: 104774
 // Name: EditProfileThemeActionSheet
-// Dependencies: [31, 33, 4130, 689, 5500, 5186, 1212, 1273, 5503, 5165, 4098, 2]
+// Dependencies: [31, 33, 4130, 689, 5498, 5186, 1212, 1273, 5501, 5165, 4098, 2]
 // Exports: default
 
-// Module 13591 (EditProfileThemeActionSheet)
+// Module 13642 (EditProfileThemeActionSheet)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -43,7 +43,7 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
     outer1_1(outer1_2[10]).hideActionSheet();
   };
   obj1.children = callback(onResetTheme(5165).TableRow, obj2);
-  items[1] = callback(onResetTheme(5503).TableRowGroup, obj1);
+  items[1] = callback(onResetTheme(5501).TableRowGroup, obj1);
   obj.children = items;
-  return callback2(onResetTheme(5500).ActionSheet, obj);
+  return callback2(onResetTheme(5498).ActionSheet, obj);
 };

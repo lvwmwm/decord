@@ -1,10 +1,10 @@
-// Module ID: 9231
-// Function ID: 72195
+// Module ID: 9267
+// Function ID: 72404
 // Name: trackUserAvatarUpdated
-// Dependencies: [653, 7855, 675, 1392, 2]
+// Dependencies: [653, 7944, 675, 1392, 2]
 // Exports: trackUserAvatarUpdated
 
-// Module 9231 (trackUserAvatarUpdated)
+// Module 9267 (trackUserAvatarUpdated)
 import { AnalyticEvents } from "ME";
 
 const result = require("expandLocation").fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");
@@ -19,16 +19,16 @@ export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildPro
   }
   let NEW_ASSET = isGuildProfile.avatarAssetOrigin;
   if (NEW_ASSET === undefined) {
-    NEW_ASSET = require(7855) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
+    NEW_ASSET = require(7944) /* AssetOriginTypes */.AssetOriginTypes.NEW_ASSET;
   }
   let obj = importDefault(675);
   obj = { animated: require(1392) /* getAvatarURL */.isAnimatedIconHash(avatarHash), is_guild_profile: flag };
   let NumberResult;
-  if (NEW_ASSET === require(7855) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+  if (NEW_ASSET === require(7944) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
     const _Number = Number;
     NumberResult = Number(avatarId);
   }
   obj.recent_avatar_id = NumberResult;
-  obj.is_edited_recent_avatar = NEW_ASSET === require(7855) /* AssetOriginTypes */.AssetOriginTypes.EDITED_ARCHIVED_ASSET;
+  obj.is_edited_recent_avatar = NEW_ASSET === require(7944) /* AssetOriginTypes */.AssetOriginTypes.EDITED_ARCHIVED_ASSET;
   obj.track(AnalyticEvents.USER_AVATAR_UPDATED, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 16456
-// Function ID: 128255
+// Module ID: 16503
+// Function ID: 128579
 // Name: Row
-// Dependencies: [31, 27, 14117, 653, 33, 4130, 689, 5052, 3848, 8474, 1273, 16457, 1212, 16458, 2]
+// Dependencies: [31, 27, 14167, 653, 33, 4130, 689, 5052, 3848, 8518, 1273, 16504, 1212, 16505, 2]
 // Exports: default
 
-// Module 16456 (Row)
+// Module 16503 (Row)
 import "result";
 import { View } from "get ActivityIndicator";
 import { AllChannelAccessOptions } from "AllChannelAccessOptions";
@@ -56,7 +56,7 @@ function Row(arg0) {
   items[1] = callback(require(1273) /* Button */.LegacyText, obj2);
   items[2] = callback(require(1273) /* Button */.RadioIndicator, { style: tmp.rowIndicator, active: selected });
   obj.children = items;
-  return closure_6(importDefault(8474), obj);
+  return closure_6(importDefault(8518), obj);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -89,7 +89,7 @@ export default function AllChannelsSwitch(style) {
   obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: obj };
   items = [tmp.container, style.style];
   obj = { disabled };
-  obj = { icon: importDefault(16457) };
+  obj = { icon: importDefault(16504) };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.label = intl.string(require(1212) /* getSystemLocale */.t["vs2T+B"]);
   obj.selected = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
@@ -98,7 +98,7 @@ export default function AllChannelsSwitch(style) {
   };
   obj.disabled = disabled;
   const items1 = [callback(Row, obj), callback(View, { style: tmp.separator }), ];
-  const obj2 = { icon: importDefault(16458) };
+  const obj2 = { icon: importDefault(16505) };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj2.label = intl2.string(require(1212) /* getSystemLocale */.t.l4Tr7X);
   obj2.selected = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;

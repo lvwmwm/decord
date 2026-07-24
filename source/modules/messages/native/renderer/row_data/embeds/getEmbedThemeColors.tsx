@@ -1,10 +1,10 @@
-// Module ID: 7633
-// Function ID: 61157
+// Module ID: 7722
+// Function ID: 61443
 // Name: getEmbedThemeColors
 // Dependencies: [31, 4130, 3976, 689, 3974, 2]
 // Exports: useEmbedThemeColors
 
-// Module 7633 (getEmbedThemeColors)
+// Module 7722 (getEmbedThemeColors)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

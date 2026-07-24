@@ -1,5 +1,5 @@
 // Module ID: 3473
-// Function ID: 26850
+// Function ID: 26851
 // Name: getDayOfYear
 // Dependencies: [3209, 3428, 3371, 3210]
 // Exports: default

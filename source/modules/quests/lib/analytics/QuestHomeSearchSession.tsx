@@ -1,10 +1,10 @@
-// Module ID: 6976
-// Function ID: 55768
+// Module ID: 6975
+// Function ID: 55777
 // Name: getOrCreateQuestHomeSearchSession
 // Dependencies: [491, 6705, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 6976 (getOrCreateQuestHomeSearchSession)
+// Module 6975 (getOrCreateQuestHomeSearchSession)
 let c2 = null;
 const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/QuestHomeSearchSession.tsx");
 

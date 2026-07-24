@@ -1,10 +1,10 @@
-// Module ID: 7546
-// Function ID: 60399
+// Module ID: 7591
+// Function ID: 60507
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [57, 31, 27, 7537, 7539, 33, 3, 4130, 689, 3981, 4347, 7542, 3827, 7547, 5586, 2]
+// Dependencies: [57, 31, 27, 7582, 7584, 33, 3, 4130, 689, 3981, 4347, 7587, 3827, 7592, 5584, 2]
 // Exports: default
 
-// Module 7546 (AgeVerificationWebViewScreen)
+// Module 7591 (AgeVerificationWebViewScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

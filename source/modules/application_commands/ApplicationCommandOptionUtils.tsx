@@ -1,10 +1,10 @@
-// Module ID: 8185
-// Function ID: 64628
+// Module ID: 8229
+// Function ID: 64856
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4566, 44, 8186, 4118, 1881, 2]
+// Dependencies: [4566, 44, 8230, 4118, 1881, 2]
 // Exports: getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, normalizeNumericString
 
-// Module 8185 (_createForOfIteratorHelperLoose)
+// Module 8229 (_createForOfIteratorHelperLoose)
 import { TRUE_OPTION_NAME } from "TRUE_OPTION_NAME";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -254,9 +254,9 @@ export const normalizeNumericString = function normalizeNumericString(locale, so
   let group;
   if (locale !== closure_5) {
     closure_5 = locale;
-    en_US = require(8186) /* numberParts */.numberParts[locale];
+    en_US = require(8230) /* numberParts */.numberParts[locale];
     if (null == en_US) {
-      en_US = require(8186) /* numberParts */.numberParts["en-US"];
+      en_US = require(8230) /* numberParts */.numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = en_US);

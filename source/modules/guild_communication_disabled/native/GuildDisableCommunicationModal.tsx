@@ -1,10 +1,10 @@
-// Module ID: 10985
-// Function ID: 85501
+// Module ID: 11012
+// Function ID: 85690
 // Name: GuildDisableCommunicationModal
-// Dependencies: [31, 33, 9110, 9112, 1212, 4319, 10986, 2]
+// Dependencies: [31, 33, 9146, 9148, 1212, 4319, 11013, 2]
 // Exports: default
 
-// Module 10985 (GuildDisableCommunicationModal)
+// Module 11012 (GuildDisableCommunicationModal)
 import "result";
 import { jsx } from "jsxProd";
 

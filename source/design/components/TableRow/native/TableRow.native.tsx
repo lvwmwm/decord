@@ -1,5 +1,5 @@
 // Module ID: 5165
-// Function ID: 44968
+// Function ID: 44973
 // Name: TableRowInner
 // Dependencies: [31, 27, 33, 4130, 689, 1324, 5166, 3834, 5167, 5125, 5170, 5171, 5174, 4549, 477, 5175, 4126, 2]
 
@@ -125,7 +125,7 @@ class TableRowInner {
       num2 = 1.5;
       tmp6 = fontScale > 1.5;
     }
-    tmp7 = f44971(true === disabled, null != tmp2, tmp6, tmp);
+    tmp7 = f44976(true === disabled, null != tmp2, tmp6, tmp);
     obj3 = require("map");
     token = obj3.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
     obj4 = require("map");

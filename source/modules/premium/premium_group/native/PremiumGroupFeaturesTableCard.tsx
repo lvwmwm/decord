@@ -1,10 +1,10 @@
-// Module ID: 12415
-// Function ID: 96367
+// Module ID: 12468
+// Function ID: 96690
 // Name: BetaPill
-// Dependencies: [27, 6671, 33, 4130, 689, 4126, 1212, 12416, 1273, 4554, 3974, 8017, 2]
+// Dependencies: [27, 6671, 33, 4130, 689, 4126, 1212, 12469, 1273, 4554, 3974, 8062, 2]
 // Exports: default
 
-// Module 12415 (BetaPill)
+// Module 12468 (BetaPill)
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   let subheaderString;
   ({ style, premiumGroupRole } = arg0);
   const tmp = callback3();
-  const tmp2 = importDefault(12416)(premiumGroupRole, false);
+  const tmp2 = importDefault(12469)(premiumGroupRole, false);
   if (null == tmp2) {
     return null;
   } else {
@@ -63,7 +63,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj.locations = [0, 0.4996, 0.9593];
     obj.style = tmp.premiumGroupCard;
     obj = { style: tmp.headerContainer };
-    const items1 = [callback(importDefault(8017), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(importDefault(8062), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj.children = items1;
     const items2 = [callback2(View, obj), , ];
     const obj1 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };

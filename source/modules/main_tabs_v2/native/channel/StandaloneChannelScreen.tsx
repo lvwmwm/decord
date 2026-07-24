@@ -1,15 +1,15 @@
-// Module ID: 15259
-// Function ID: 116435
+// Module ID: 15306
+// Function ID: 116757
 // Name: Header
-// Dependencies: [31, 27, 9123, 653, 1355, 33, 4130, 689, 1457, 1557, 8829, 9009, 1212, 3981, 9302, 9124, 5449, 10111, 9131, 10093, 4574, 5607, 4066, 1324, 8303, 10123, 3984, 1273, 4662, 15260, 15277, 15295, 15312, 10386, 15316, 2]
+// Dependencies: [31, 27, 9159, 653, 1355, 33, 4130, 689, 1457, 1557, 8868, 9048, 1212, 3981, 9338, 9160, 5449, 10143, 9167, 10125, 4574, 5605, 4066, 1324, 8347, 10155, 3984, 1273, 4662, 15307, 15324, 15342, 15359, 10415, 15363, 2]
 
-// Module 15259 (Header)
+// Module 15306 (Header)
 import importAllResult from "StandaloneMembersView";
 import get_ActivityIndicator from "Button";
 import MIN_HEADER_HEIGHT from "MIN_HEADER_HEIGHT";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
-import jsxProd from "module_10386";
+import jsxProd from "module_10415";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let MIDNIGHT_BORDER_WIDTH;
@@ -210,10 +210,10 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
   const importDefault = tmp;
   let obj = frame(1457);
   const dependencyMap = obj.useNavigation();
-  let obj1 = frame(10093);
+  let obj1 = frame(10125);
   const isSwipeToMemberListEnabled = obj1.useIsSwipeToMemberListEnabled();
   const needSubscriptionToAccess = importDefault(4574)(channelId).needSubscriptionToAccess;
-  let obj2 = frame(5607);
+  let obj2 = frame(5605);
   let tmp3 = guildId;
   if (null == guildId) {
     tmp3 = closure_7;
@@ -223,7 +223,7 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
   importAllResult = tmp6;
   let obj3 = frame(1324);
   chatInputFloating = obj3.useMobileVisualRefreshConfig({ location: "StandaloneChannelScreen" }).chatInputFloating;
-  let obj4 = frame(8303);
+  let obj4 = frame(8347);
   orientation = obj4.useOrientation();
   let items = [frame, tmp6, chatInputFloating, orientation, , ];
   ({ container: arr[4], midnightContainerBorder: arr[5] } = tmp);
@@ -260,7 +260,7 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
     items[2] = prop;
     return items;
   }, items1);
-  let obj5 = frame(10123);
+  let obj5 = frame(10155);
   const isForumChannelSearchActive = obj5.useIsForumChannelSearchActive(channelId);
   const tmp11 = (!importDefault(3984)().isChatLockedOpen || isNavigationScreen) && !isForumChannelSearchActive;
   c6 = tmp11;
@@ -277,7 +277,7 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
             let tmp36 = null;
             if (canSeeOnboardingHome) {
               obj2 = { guildId };
-              tmp36 = callback(importDefault(15277), obj2);
+              tmp36 = callback(importDefault(15324), obj2);
             }
             obj1.children = tmp36;
             items2[1] = callback(chatInputFloating, obj1);
@@ -285,12 +285,12 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
             return closure_12(chatInputFloating, obj);
           } else if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
             obj3 = { guildId };
-            return callback(importDefault(15295), obj3);
+            return callback(importDefault(15342), obj3);
           } else if (showCreateThread) {
             obj4 = { style: memo1 };
             const items3 = [tmp52, ];
             obj5 = { channelId, screenIndex };
-            items3[1] = callback(frame(15312).CreateThreadView, obj5);
+            items3[1] = callback(frame(15359).CreateThreadView, obj5);
             obj4.children = items3;
             return tmp55(chatInputFloating, obj4);
           } else {
@@ -298,13 +298,13 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
             const items4 = [tmp52, ];
             const obj7 = { style: memo1 };
             const obj8 = { guildId, channelId, chatInputRef: ref, screenIndex };
-            obj7.children = callback(importDefault(10386), obj8);
+            obj7.children = callback(importDefault(10415), obj8);
             items4[1] = callback(chatInputFloating, obj7);
             obj6.children = items4;
             const tmp55Result = tmp55(closure_13, obj6);
             if (isSwipeToMemberListEnabled) {
               const obj9 = { style: memo, channelId, screenIndex, isBackEnabled: tmp11, children: tmp55Result };
-              let tmp20Result = tmp20(importDefault(15316), obj9);
+              let tmp20Result = tmp20(importDefault(15363), obj9);
             } else {
               const obj10 = {
                 style: memo,
@@ -333,7 +333,7 @@ const memoResult = importAllResult.memo(function StandaloneChannelScreen(arg0) {
         tmp49 = channelId;
       }
       obj14.gatedChannelId = tmp49;
-      items6[1] = callback(importDefault(15260), obj14);
+      items6[1] = callback(importDefault(15307), obj14);
       obj12.children = items6;
       items5[1] = closure_12(chatInputFloating, obj12);
       obj11.children = items5;

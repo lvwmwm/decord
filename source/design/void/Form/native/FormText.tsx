@@ -1,9 +1,9 @@
-// Module ID: 7515
-// Function ID: 60205
+// Module ID: 7650
+// Function ID: 60840
 // Name: FormTextColors
 // Dependencies: [31, 33, 4130, 4973, 689, 1273, 2]
 
-// Module 7515 (FormTextColors)
+// Module 7650 (FormTextColors)
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";

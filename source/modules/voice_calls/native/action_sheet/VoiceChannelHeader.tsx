@@ -1,9 +1,9 @@
-// Module ID: 12723
-// Function ID: 99063
+// Module ID: 12774
+// Function ID: 99384
 // Name: PrivateChannelSubtitle
-// Dependencies: [31, 27, 1347, 1838, 3758, 653, 33, 4130, 689, 12724, 12725, 4126, 12726, 566, 10679, 4320, 8481, 1212, 3981, 1273, 4623, 12728, 10741, 10196, 4660, 2]
+// Dependencies: [31, 27, 1347, 1838, 3758, 653, 33, 4130, 689, 12775, 12776, 4126, 12777, 566, 10708, 4320, 8526, 1212, 3981, 1273, 4623, 12779, 10770, 10226, 4660, 2]
 
-// Module 12723 (PrivateChannelSubtitle)
+// Module 12774 (PrivateChannelSubtitle)
 import "result";
 import { View } from "get ActivityIndicator";
 import closure_4 from "_createForOfIteratorHelperLoose";
@@ -22,20 +22,20 @@ const require = arg1;
 function PrivateChannelSubtitle(channel) {
   channel = channel.channel;
   const tmp = _createForOfIteratorHelperLoose();
-  const state = importDefault(12724)(channel.id).state;
+  const state = importDefault(12775)(channel.id).state;
   let obj = { style: tmp.subtitleWrapper };
   obj = { useAllAloneText: false, channel, voiceState: state, style: tmp.subtitle };
-  const items = [callback(importDefault(12725), obj), , ];
-  let tmp4 = state === require(12724) /* id */.CallStates.CONNECTED;
+  const items = [callback(importDefault(12776), obj), , ];
+  let tmp4 = state === require(12775) /* id */.CallStates.CONNECTED;
   if (tmp4) {
     obj = { style: tmp.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
     tmp4 = callback(require(4126) /* Text */.Text, obj);
   }
   items[1] = tmp4;
-  let tmp8 = state === require(12724) /* id */.CallStates.CONNECTED;
+  let tmp8 = state === require(12775) /* id */.CallStates.CONNECTED;
   if (tmp8) {
     const obj1 = { channelId: channel.id, style: tmp.subtitle };
-    tmp8 = callback(importDefault(12726), obj1);
+    tmp8 = callback(importDefault(12777), obj1);
   }
   items[2] = tmp8;
   obj.children = items;
@@ -55,7 +55,7 @@ class VoiceChannelHeader {
     items1[0] = c4;
     items2 = [];
     items2[0] = channel;
-    f99067 = obj2.useStateFromStores(items1, () => outer1_4.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    f99388 = obj2.useStateFromStores(items1, () => outer1_4.getSelfEmbeddedActivityForChannel(channel.id), items2);
     name = undefined;
     tmp4 = require("computeDefaultGroupDmNameFromUserIds")(channel);
     if (null != stateFromStores) {
@@ -105,7 +105,7 @@ class VoiceChannelHeader {
     tmp13 = jsx;
     obj3 = {};
     obj3.size = require("Button").Icon.Sizes.MEDIUM;
-    tmp14 = f99067;
+    tmp14 = f99388;
     tmp15 = closure_2;
     if (require("isRoleRequired")(channel)) {
       num4 = 21;
@@ -165,7 +165,7 @@ class VoiceChannelHeader {
   }
 }
 function AddMemberButton(onPress) {
-  const obj = { onPress: onPress.onPress, iconSource: importDefault(10196), iconStyle: _createForOfIteratorHelperLoose().icons };
+  const obj = { onPress: onPress.onPress, iconSource: importDefault(10226), iconStyle: _createForOfIteratorHelperLoose().icons };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["6Qgrev"]);
   return callback(IconButton, obj);

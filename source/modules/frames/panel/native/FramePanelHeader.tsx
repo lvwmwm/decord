@@ -1,8 +1,8 @@
-// Module ID: 15730
-// Function ID: 121278
-// Dependencies: [57, 31, 27, 10479, 33, 566, 5470, 15706, 15708, 15712, 15713, 15731, 15723, 2]
+// Module ID: 15777
+// Function ID: 121600
+// Dependencies: [57, 31, 27, 10508, 33, 566, 5468, 15753, 15755, 15759, 15760, 15778, 15770, 2]
 
-// Module 15730
+// Module 15777
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -31,11 +31,11 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
     applicationId = stateFromStores.applicationId;
   }
   const items1 = [applicationId];
-  const first = callback(importDefault(5470)(items1), 1)[0];
-  let obj1 = require(15706) /* useBaseActivityPanelHeaderContent */;
+  const first = callback(importDefault(5468)(items1), 1)[0];
+  let obj1 = require(15753) /* useBaseActivityPanelHeaderContent */;
   const baseActivityPanelHeaderContent = obj1.useBaseActivityPanelHeaderContent({ landscape, setMode, wrapperOffset, pipState });
   ({ gesture, headerWrapperStyles, headerStyles } = baseActivityPanelHeaderContent);
-  let obj2 = require(15706) /* useBaseActivityPanelHeaderContent */;
+  let obj2 = require(15753) /* useBaseActivityPanelHeaderContent */;
   const minimizeAndQuestButtonContainerStyles = obj2.useMinimizeAndQuestButtonContainerStyles();
   if (null == stateFromStores) {
     return null;
@@ -46,7 +46,7 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
       id = first.id;
     }
     obj.applicationId = id;
-    const tmp27Result = callback2(importDefault(15708), obj);
+    const tmp27Result = callback2(importDefault(15755), obj);
     obj = { hasConnectedActivity: null != stateFromStores, gesture, headerWrapperStyles, headerStyles, landscape };
     obj1 = {};
     const items2 = [minimizeAndQuestButtonContainerStyles.buttonContainer, ];
@@ -61,7 +61,7 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
     const tmp11 = View;
     const tmp13 = callback2;
     const tmp27 = callback2;
-    const tmp30 = importDefault(15708);
+    const tmp30 = importDefault(15755);
     if (!landscape) {
       if (null != first) {
         name = first.name;
@@ -69,11 +69,11 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
     }
     obj2.activityName = name;
     obj2.setMode = setMode;
-    const items3 = [tmp13(importDefault(15712), obj2), , ];
+    const items3 = [tmp13(importDefault(15759), obj2), , ];
     let tmp18 = null != applicationId;
     if (tmp18) {
       const obj3 = { applicationId };
-      tmp18 = callback2(importDefault(15713), obj3);
+      tmp18 = callback2(importDefault(15760), obj3);
     }
     items3[1] = tmp18;
     let tmp22 = null;
@@ -89,14 +89,14 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
     }
     items4[1] = tmp23;
     const obj4 = { frame: stateFromStores, setMode };
-    items4[2] = callback2(importDefault(15731), obj4);
+    items4[2] = callback2(importDefault(15778), obj4);
     obj.children = items4;
-    return closure_7(require(15706) /* useBaseActivityPanelHeaderContent */.BaseActivityPanelContent, obj);
+    return closure_7(require(15753) /* useBaseActivityPanelHeaderContent */.BaseActivityPanelContent, obj);
   }
 });
 const memoResult = importAllResult.memo(() => {
-  let obj = require(15706) /* useBaseActivityPanelHeaderContent */;
-  obj = { context: importDefault(15723) };
+  let obj = require(15753) /* useBaseActivityPanelHeaderContent */;
+  obj = { context: importDefault(15770) };
   const baseActivityPanelHeader = obj.useBaseActivityPanelHeader(obj);
   obj = { style: baseActivityPanelHeader.headerStyles, children: callback2(closure_8, obj1) };
   return callback2(View, obj);

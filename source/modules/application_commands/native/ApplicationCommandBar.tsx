@@ -1,10 +1,10 @@
-// Module ID: 11445
-// Function ID: 89048
+// Module ID: 11475
+// Function ID: 89269
 // Name: ApplicationCommandOptionItem
-// Dependencies: [57, 31, 27, 1917, 33, 4130, 689, 4973, 4660, 1212, 1273, 566, 11337, 5085, 4126, 7495, 8284, 11446, 2]
+// Dependencies: [57, 31, 27, 1917, 33, 4130, 689, 4973, 4660, 1212, 1273, 566, 11366, 5085, 4126, 7636, 8328, 11476, 2]
 // Exports: default
 
-// Module 11445 (ApplicationCommandOptionItem)
+// Module 11475 (ApplicationCommandOptionItem)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -406,10 +406,10 @@ export default function _default(command) {
   }
   items5[3] = tmp26Result;
   obj.children = items5;
-  const items8 = [closure_10(closure_6, obj), callback2(command(7495).FormDivider, { style: tmp.applicationDescriptionDivider }), , ];
+  const items8 = [closure_10(closure_6, obj), callback2(command(7636).FormDivider, { style: tmp.applicationDescriptionDivider }), , ];
   const obj7 = { command, option: currentOption, optionState: tmp15 };
   items8[2] = callback2(closure_12, obj7);
-  items8[3] = callback2(command(7495).FormDivider, { style: tmp.applicationDescriptionDivider });
+  items8[3] = callback2(command(7636).FormDivider, { style: tmp.applicationDescriptionDivider });
   obj.children = items8;
   return closure_10(onPressOption, obj);
 };

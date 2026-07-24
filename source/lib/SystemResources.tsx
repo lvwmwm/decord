@@ -1,9 +1,9 @@
-// Module ID: 6991
-// Function ID: 55917
+// Module ID: 6990
+// Function ID: 55926
 // Name: SystemResources
-// Dependencies: [5, 6, 7, 6985, 6917, 6992, 2]
+// Dependencies: [5, 6, 7, 6984, 6916, 6991, 2]
 
-// Module 6991 (SystemResources)
+// Module 6990 (SystemResources)
 import DeviceState from "DeviceState";
 import set from "set";
 import _defineProperties from "_defineProperties";
@@ -13,11 +13,11 @@ const tmp2 = (() => {
   class SystemResources {
     constructor() {
       tmp = outer1_4(this, SystemResources);
-      histogram = new f55928(f55922[3]).Histogram();
+      histogram = new f55937(f55931[3]).Histogram();
       this.cpuHistogram = histogram;
-      histogram1 = new f55928(f55922[3]).Histogram();
+      histogram1 = new f55937(f55931[3]).Histogram();
       this.memoryHistogram = histogram1;
-      obj = f55925(f55922[4]);
+      obj = f55934(f55931[4]);
       this.startCPU = obj.getCumulativeCPUUsage();
       this.lastCPU = this.startCPU;
       this.lastBattery = null;
@@ -32,7 +32,7 @@ const tmp2 = (() => {
       const report = cpuHistogram.getReport();
       const memoryHistogram = this.memoryHistogram;
       const report1 = memoryHistogram.getReport();
-      let obj = callback2(6917);
+      let obj = callback2(6916);
       const cumulativeCPUUsage = obj.getCumulativeCPUUsage();
       let result;
       if (null != this.startCPU) {
@@ -59,9 +59,9 @@ const tmp2 = (() => {
     key: "takeSample",
     value() {
       const self = this;
-      const cumulativeCPUUsage = callback2(6917).getCumulativeCPUUsage();
-      const obj = callback2(6917);
-      const currentMemoryUsageKB = callback2(6917).getCurrentMemoryUsageKB();
+      const cumulativeCPUUsage = callback2(6916).getCumulativeCPUUsage();
+      const obj = callback2(6916);
+      const currentMemoryUsageKB = callback2(6916).getCurrentMemoryUsageKB();
       if (null != cumulativeCPUUsage) {
         let flag = true;
         if (null != self.lastCPU) {
@@ -77,12 +77,12 @@ const tmp2 = (() => {
           self.lastCPU = cumulativeCPUUsage;
         }
       } else {
-        const currentCPUUsagePercent = callback2(6917).getCurrentCPUUsagePercent();
+        const currentCPUUsagePercent = callback2(6916).getCurrentCPUUsagePercent();
         if (null != currentCPUUsagePercent) {
           const cpuHistogram2 = self.cpuHistogram;
           cpuHistogram2.addSample(currentCPUUsagePercent);
         }
-        const obj3 = callback2(6917);
+        const obj3 = callback2(6916);
       }
       if (null != currentMemoryUsageKB) {
         const memoryHistogram = self.memoryHistogram;

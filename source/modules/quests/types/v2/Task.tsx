@@ -1,10 +1,10 @@
-// Module ID: 6951
-// Function ID: 55553
+// Module ID: 6950
+// Function ID: 55562
 // Name: _firstPartyTasksFromServer
-// Dependencies: [6952, 4983, 6953, 6954, 2]
+// Dependencies: [6951, 4983, 6952, 6953, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 6951 (_firstPartyTasksFromServer)
+// Module 6950 (_firstPartyTasksFromServer)
 function _firstPartyTasksFromServer(tasks) {
   let obj = {};
   const keys = Object.keys(tasks);
@@ -36,14 +36,14 @@ function _thirdPartyTasksFromServer(tasks) {
 function _questTaskFromServer(type) {
   type = type.type;
   if (require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO === type) {
-    let obj = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO, target: type.target, assets: require(6953) /* videoAssetFromServer */.desktopVideoAssetsFromServer(type.assets) };
-    const obj14 = require(6953) /* videoAssetFromServer */;
-    obj.messages = require(6953) /* videoAssetFromServer */.desktopVideoMessagesFromServer(type.messages);
+    let obj = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO, target: type.target, assets: require(6952) /* videoAssetFromServer */.desktopVideoAssetsFromServer(type.assets) };
+    const obj14 = require(6952) /* videoAssetFromServer */;
+    obj.messages = require(6952) /* videoAssetFromServer */.desktopVideoMessagesFromServer(type.messages);
     return obj;
   } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE === type) {
-    obj = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE, target: type.target, assets: require(6953) /* videoAssetFromServer */.mobileVideoAssetsFromServer(type.assets) };
-    const obj11 = require(6953) /* videoAssetFromServer */;
-    obj.messages = require(6953) /* videoAssetFromServer */.mobileVideoMessagesFromServer(type.messages);
+    obj = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE, target: type.target, assets: require(6952) /* videoAssetFromServer */.mobileVideoAssetsFromServer(type.assets) };
+    const obj11 = require(6952) /* videoAssetFromServer */;
+    obj.messages = require(6952) /* videoAssetFromServer */.mobileVideoMessagesFromServer(type.messages);
     return obj;
   } else if (require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP === type) {
     const obj1 = { type: require(4983) /* set */.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
@@ -87,11 +87,11 @@ const result = require("videoAssetFromServer").fileFinishedImporting("modules/qu
 
 export const questTaskConfigFromServer = function questTaskConfigFromServer(type) {
   type = type.type;
-  if (require(6952) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY === type) {
-    let obj = { type: require(6952) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY, tasks: _firstPartyTasksFromServer(type.tasks), joinOperator: type.join_operator };
+  if (require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY === type) {
+    let obj = { type: require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.FIRST_PARTY, tasks: _firstPartyTasksFromServer(type.tasks), joinOperator: type.join_operator };
     return obj;
-  } else if (require(6952) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY === type) {
-    obj = { type: require(6952) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY, tasks: _thirdPartyTasksFromServer(type.tasks) };
+  } else if (require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY === type) {
+    obj = { type: require(6951) /* QuestTaskConfigTypes */.QuestTaskConfigTypes.THIRD_PARTY, tasks: _thirdPartyTasksFromServer(type.tasks) };
     ({ enrollment_url: obj.enrollmentUrl, developer_application_id: obj.developerApplicationId, join_operator: obj.joinOperator } = type);
     return obj;
   }

@@ -1,9 +1,9 @@
-// Module ID: 9401
-// Function ID: 73265
+// Module ID: 9437
+// Function ID: 73474
 // Name: ExpressionGuildDetails
-// Dependencies: [31, 27, 5516, 33, 4130, 689, 5515, 1392, 5085, 4126, 1212, 4660, 9400, 9171, 1273, 2]
+// Dependencies: [31, 27, 5514, 33, 4130, 689, 5513, 1392, 5085, 4126, 1212, 4660, 9436, 9207, 1273, 2]
 
-// Module 9401 (ExpressionGuildDetails)
+// Module 9437 (ExpressionGuildDetails)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ExpressionSourceGuildRecord as closure_4 } from "_callSuper";

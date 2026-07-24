@@ -1,5 +1,5 @@
 // Module ID: 6716
-// Function ID: 52207
+// Function ID: 52229
 // Name: isReadableChannel
 // Dependencies: [1352, 1348, 3758, 653, 2]
 // Exports: isReadableChannelId

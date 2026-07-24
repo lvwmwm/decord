@@ -1,10 +1,10 @@
-// Module ID: 9020
-// Function ID: 70965
+// Module ID: 9059
+// Function ID: 71180
 // Name: BotPermissions
-// Dependencies: [57, 31, 27, 33, 4130, 689, 3763, 483, 8964, 9021, 4541, 5119, 4126, 1212, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3763, 483, 9003, 9060, 4541, 5119, 4126, 1212, 2]
 // Exports: default
 
-// Module 9020 (BotPermissions)
+// Module 9059 (BotPermissions)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

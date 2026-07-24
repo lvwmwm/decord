@@ -1,9 +1,9 @@
-// Module ID: 11367
-// Function ID: 88383
+// Module ID: 11396
+// Function ID: 88623
 // Name: ChatInputAccessibilityDivider
 // Dependencies: [31, 27, 33, 4528, 477, 1212, 2]
 
-// Module 11367 (ChatInputAccessibilityDivider)
+// Module 11396 (ChatInputAccessibilityDivider)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "result";

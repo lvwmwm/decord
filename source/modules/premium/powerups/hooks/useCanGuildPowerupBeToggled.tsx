@@ -1,10 +1,10 @@
-// Module ID: 11567
-// Function ID: 89981
+// Module ID: 11594
+// Function ID: 90219
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [31, 4017, 4018, 566, 11531, 1212, 2230, 2]
+// Dependencies: [31, 4017, 4018, 566, 11561, 1212, 2230, 2]
 // Exports: default
 
-// Module 11567 (useCanGuildPowerupBeToggled)
+// Module 11594 (useCanGuildPowerupBeToggled)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
@@ -18,7 +18,7 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
   const dependencyMap = arg2;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = _require(566).useStateFromStores(items, () => tmp2.getStateForGuild(closure_0));
-  const tmp2 = importDefault(11531)(arg0, arg1);
+  const tmp2 = importDefault(11561)(arg0, arg1);
   _isNativeReflectConstruct = tmp2;
   const items1 = [stateFromStores, , , , ];
   ({ skuId: arr2[1], dependencies: arr2[2] } = arg1);

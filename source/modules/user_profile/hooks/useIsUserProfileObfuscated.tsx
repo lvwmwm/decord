@@ -1,10 +1,10 @@
-// Module ID: 11915
-// Function ID: 92189
+// Module ID: 11942
+// Function ID: 92427
 // Name: useIsUserProfileObfuscated
-// Dependencies: [6856, 566, 2]
+// Dependencies: [6855, 566, 2]
 // Exports: default
 
-// Module 11915 (useIsUserProfileObfuscated)
+// Module 11942 (useIsUserProfileObfuscated)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

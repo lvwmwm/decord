@@ -1,10 +1,10 @@
-// Module ID: 13579
-// Function ID: 104383
+// Module ID: 13630
+// Function ID: 104707
 // Name: EditUserProfileAvatar
-// Dependencies: [31, 4122, 33, 4130, 5464, 5484, 3776, 7840, 7854, 13580, 4098, 13581, 1934, 13582, 13582, 7838, 7846, 566, 3991, 4131, 7880, 4660, 1212, 13583, 1273, 2]
+// Dependencies: [31, 4122, 33, 4130, 5462, 5482, 3776, 7929, 7943, 13631, 4098, 13632, 1934, 13633, 13633, 7927, 7935, 566, 3991, 4131, 7967, 4660, 1212, 13634, 1273, 2]
 // Exports: default
 
-// Module 13579 (EditUserProfileAvatar)
+// Module 13630 (EditUserProfileAvatar)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";

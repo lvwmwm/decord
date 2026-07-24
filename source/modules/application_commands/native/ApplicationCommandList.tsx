@@ -1,10 +1,10 @@
-// Module ID: 11444
-// Function ID: 89040
+// Module ID: 11473
+// Function ID: 89259
 // Name: ApplicationCommandList
-// Dependencies: [31, 27, 9558, 33, 8189, 1881, 7928, 6755, 11442, 11443, 2]
+// Dependencies: [31, 27, 9594, 33, 8233, 1881, 8015, 6755, 11471, 11472, 2]
 // Exports: default
 
-// Module 11444 (ApplicationCommandList)
+// Module 11473 (ApplicationCommandList)
 import result from "result";
 import { FlatList } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 14867
-// Function ID: 113375
+// Module ID: 14914
+// Function ID: 113696
 // Name: folderLabel
-// Dependencies: [1838, 4970, 1212, 7955, 3976, 14868, 5048, 2]
+// Dependencies: [1838, 4970, 1212, 8042, 3976, 14915, 5048, 2]
 // Exports: default
 
-// Module 14867 (folderLabel)
+// Module 14914 (folderLabel)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -20,14 +20,14 @@ function folderLabel(name) {
   name = intl.string(require(1212) /* getSystemLocale */.t.ebAnWE);
 }
 function persistAndAnnounce(intl) {
-  require(7955) /* convertThemeToProto */.saveGuildFolders(compatibleGuildFolders.getCompatibleGuildFolders());
+  require(8042) /* convertThemeToProto */.saveGuildFolders(compatibleGuildFolders.getCompatibleGuildFolders());
   if (null != intl) {
     const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl);
   }
 }
 function performMove(id, arg1, arg2, closure_5, intl) {
-  const tmp = importDefault(14868)(id);
+  const tmp = importDefault(14915)(id);
   if (null != tmp) {
     const tmp3 = arg1(tmp);
     if (null != tmp3) {
@@ -97,7 +97,7 @@ export default function getGuildsBarGuildAccessibilityActions(guildId) {
   if (null != name) {
     str = name;
   }
-  const tmp3 = importDefault(14868)(guildId);
+  const tmp3 = importDefault(14915)(guildId);
   if (null == tmp3) {
     return items;
   } else {

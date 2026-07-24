@@ -1,10 +1,10 @@
-// Module ID: 11204
-// Function ID: 87276
+// Module ID: 11234
+// Function ID: 87545
 // Name: BrokenImage
-// Dependencies: [31, 33, 8018, 2]
+// Dependencies: [31, 33, 8063, 2]
 // Exports: default
 
-// Module 11204 (BrokenImage)
+// Module 11234 (BrokenImage)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -14,6 +14,6 @@ const result = require("inlineStyles").fileFinishedImporting("modules/image/nati
 export default function BrokenImage(arg0) {
   const obj = { width: 24, height: 24, fill: "hsl(217, 7.6%, 33.5%)" };
   const merged = Object.assign(arg0);
-  obj["children"] = jsx(require(8018) /* inlineStyles */.Path, { d: "M21 5v6.59l-3-3-4 4-4-4-4 4-3-3V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Zm-3 6.42 3 3V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6.58l3 3 4-4 4 4 4-4Z" });
-  return jsx(importDefault(8018), { width: 24, height: 24, fill: "hsl(217, 7.6%, 33.5%)" });
+  obj["children"] = jsx(require(8063) /* inlineStyles */.Path, { d: "M21 5v6.59l-3-3-4 4-4-4-4 4-3-3V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Zm-3 6.42 3 3V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6.58l3 3 4-4 4 4 4-4Z" });
+  return jsx(importDefault(8063), { width: 24, height: 24, fill: "hsl(217, 7.6%, 33.5%)" });
 };

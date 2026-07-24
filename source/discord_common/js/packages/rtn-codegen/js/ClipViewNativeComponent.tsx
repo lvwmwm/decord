@@ -1,9 +1,9 @@
-// Module ID: 7875
-// Function ID: 62712
+// Module ID: 7963
+// Function ID: 63029
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [42, 2]
 
-// Module 7875 (__INTERNAL_VIEW_CONFIG)
+// Module 7963 (__INTERNAL_VIEW_CONFIG)
 import get from "get";
 
 const obj = { uiViewClassName: "ClipView", validAttributes: { cutouts: true } };

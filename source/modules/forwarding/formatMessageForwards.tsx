@@ -1,10 +1,10 @@
-// Module ID: 7643
-// Function ID: 61193
+// Module ID: 7732
+// Function ID: 61479
 // Name: createGuildBreadcrumb
-// Dependencies: [6, 7, 7644, 1348, 1838, 3758, 3767, 1849, 1392, 1212, 3800, 4320, 5679, 2]
+// Dependencies: [6, 7, 7733, 1348, 1838, 3758, 3767, 1849, 1392, 1212, 3800, 4320, 5679, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7643 (createGuildBreadcrumb)
+// Module 7732 (createGuildBreadcrumb)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

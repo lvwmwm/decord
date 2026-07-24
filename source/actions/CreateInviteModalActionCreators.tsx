@@ -1,8 +1,8 @@
-// Module ID: 8488
-// Function ID: 67775
-// Dependencies: [8482, 653, 686, 675, 7460, 1212, 2]
+// Module ID: 8533
+// Function ID: 68005
+// Dependencies: [8527, 653, 686, 675, 7540, 1212, 2]
 
-// Module 8488
+// Module 8533
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";
 
@@ -71,7 +71,7 @@ export default {
           code = invite.code;
         }
       }
-      obj = importDefault(7460);
+      obj = importDefault(7540);
       obj = { temporary, validate: code };
       const _parseInt = parseInt;
       obj.max_age = parseInt(maxAge, 10);

@@ -1,9 +1,9 @@
-// Module ID: 11279
-// Function ID: 87740
+// Module ID: 11308
+// Function ID: 87980
 // Name: isValidRoleMention
-// Dependencies: [1921, 4467, 1881, 8187, 44, 1212, 8185, 6753, 8188, 2]
+// Dependencies: [1921, 4467, 1881, 8231, 44, 1212, 8229, 6753, 8232, 2]
 
-// Module 11279 (isValidRoleMention)
+// Module 11308 (isValidRoleMention)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 
@@ -60,7 +60,7 @@ let obj = {
     } else {
       obj = {};
       const trimmed = type.text.trim();
-      obj.success = null != require(8187) /* findChoiceStringValue */.toChoiceBooleanValue(trimmed);
+      obj.success = null != require(8231) /* findChoiceStringValue */.toChoiceBooleanValue(trimmed);
       return obj;
     }
   },
@@ -77,11 +77,11 @@ let obj = {
       return obj;
     }
     if (null != type2.choices) {
-      obj = { success: null != require(8187) /* findChoiceStringValue */.findChoiceStringValue(type2.choices, surrogate) };
+      obj = { success: null != require(8231) /* findChoiceStringValue */.findChoiceStringValue(type2.choices, surrogate) };
       return obj;
     } else {
       if (type2.autocomplete) {
-        let obj1 = require(8187) /* findChoiceStringValue */;
+        let obj1 = require(8231) /* findChoiceStringValue */;
         if (null != obj1.findAutocompleteChoiceStringValue(id, type2.name, surrogate)) {
           obj = { success: true };
           return obj;
@@ -151,18 +151,18 @@ let obj = {
     if (null != trimmed) {
       if (0 !== trimmed.length) {
         if (null != type2.choices) {
-          let obj = { success: null != require(8187) /* findChoiceStringValue */.findChoiceNumberValue(type2.choices, trimmed) };
+          let obj = { success: null != require(8231) /* findChoiceStringValue */.findChoiceNumberValue(type2.choices, trimmed) };
           return obj;
         } else {
           if (type2.autocomplete) {
-            obj = require(8187) /* findChoiceStringValue */;
+            obj = require(8231) /* findChoiceStringValue */;
             if (null != obj.findAutocompleteChoiceNumberValue(id, type2.name, trimmed)) {
               obj = { success: true };
               return obj;
             }
           }
           const _Number = Number;
-          let obj1 = importAll(8185);
+          let obj1 = importAll(8229);
           const NumberResult = Number(obj1.normalizeNumericString(_isNativeReflectConstruct.locale, trimmed));
           if (null != NumberResult) {
             const _isNaN = isNaN;
@@ -194,18 +194,18 @@ let obj = {
     if (null != trimmed) {
       if (0 !== trimmed.length) {
         if (null != type2.choices) {
-          let obj = { success: null != require(8187) /* findChoiceStringValue */.findChoiceNumberValue(type2.choices, trimmed) };
+          let obj = { success: null != require(8231) /* findChoiceStringValue */.findChoiceNumberValue(type2.choices, trimmed) };
           return obj;
         } else {
           if (type2.autocomplete) {
-            obj = require(8187) /* findChoiceStringValue */;
+            obj = require(8231) /* findChoiceStringValue */;
             if (null != obj.findAutocompleteChoiceNumberValue(id, type2.name, trimmed)) {
               obj = { success: true };
               return obj;
             }
           }
           const _Number = Number;
-          let obj1 = importAll(8185);
+          let obj1 = importAll(8229);
           const NumberResult = Number(obj1.normalizeNumericString(_isNativeReflectConstruct.locale, trimmed));
           const _isNaN = isNaN;
           if (!isNaN(NumberResult)) {
@@ -232,7 +232,7 @@ let obj = {
         let obj = { success: true };
         return obj;
       } else {
-        const obj3 = require(8188) /* _createForOfIteratorHelperLoose */;
+        const obj3 = require(8232) /* _createForOfIteratorHelperLoose */;
         obj = { allowRoles: false };
         const applicationCommandOption = obj3.resolveApplicationCommandOption(type.text, source, id, obj);
         obj1 = {};
@@ -254,7 +254,7 @@ let obj = {
         let obj = { success: true };
         return obj;
       } else {
-        const applicationCommandOption = require(8188) /* _createForOfIteratorHelperLoose */.resolveApplicationCommandOption(type.text, source, id);
+        const applicationCommandOption = require(8232) /* _createForOfIteratorHelperLoose */.resolveApplicationCommandOption(type.text, source, id);
         obj = {};
         type = undefined;
         if (null != applicationCommandOption) {
@@ -276,7 +276,7 @@ let obj = {
         let obj = { success: true };
         return obj;
       } else {
-        const obj3 = require(8188) /* _createForOfIteratorHelperLoose */;
+        const obj3 = require(8232) /* _createForOfIteratorHelperLoose */;
         obj = { allowUsers: false };
         const applicationCommandOption = obj3.resolveApplicationCommandOption(type.text, source, id, obj);
         obj1 = {};
@@ -298,7 +298,7 @@ let obj = {
         let obj = { success: true };
         return obj;
       } else {
-        const applicationCommandOption = require(8188) /* _createForOfIteratorHelperLoose */.resolveApplicationCommandOption(type.text, source, id);
+        const applicationCommandOption = require(8232) /* _createForOfIteratorHelperLoose */.resolveApplicationCommandOption(type.text, source, id);
         obj = {};
         let tmp11 = null != applicationCommandOption;
         if (tmp11) {

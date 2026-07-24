@@ -1,5 +1,5 @@
 // Module ID: 1890
-// Function ID: 21085
+// Function ID: 21086
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [5, 6, 7, 1889, 1891, 20, 1892, 2]
 
@@ -140,9 +140,9 @@ let tmp2 = (() => {
       tmp = outer1_4(this, Database);
       this.raw = arg0;
       this.name = arg0.name;
-      this.lastState = f21109(Database[3]).DatabaseState.Open;
+      this.lastState = f21110(Database[3]).DatabaseState.Open;
       this.handle = arg0.handle;
-      Runtime = f21109(Database[4]).Runtime;
+      Runtime = f21110(Database[4]).Runtime;
       this.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
         if (self.handle === arg0) {
           self.lastState = lastState;

@@ -1,5 +1,5 @@
 // Module ID: 5719
-// Function ID: 49166
+// Function ID: 49176
 // Name: createResolvedGuildTemplate
 // Dependencies: [5720, 2]
 // Exports: default

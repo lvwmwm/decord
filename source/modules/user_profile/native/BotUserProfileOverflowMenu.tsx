@@ -1,10 +1,10 @@
-// Module ID: 11894
-// Function ID: 92037
+// Module ID: 11921
+// Function ID: 92275
 // Name: BotUserProfileOverflowMenu
-// Dependencies: [31, 1348, 3767, 1906, 1849, 653, 10420, 33, 566, 11895, 8266, 5464, 5484, 8492, 1212, 8923, 4098, 10422, 1934, 480, 7488, 10421, 11896, 11896, 477, 11653, 675, 5492, 3969, 3830, 7371, 7919, 11252, 3803, 11897, 9302, 7771, 8968, 689, 2]
+// Dependencies: [31, 1348, 3767, 1906, 1849, 653, 10449, 33, 566, 11922, 8310, 5462, 5482, 8537, 1212, 8962, 4098, 10451, 1934, 480, 7568, 10450, 11923, 11923, 477, 11680, 675, 5490, 3969, 3830, 7371, 8006, 11281, 3803, 11924, 9338, 7533, 9007, 689, 2]
 // Exports: default
 
-// Module 11894 (BotUserProfileOverflowMenu)
+// Module 11921 (BotUserProfileOverflowMenu)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 7920
-// Function ID: 63018
+// Module ID: 8007
+// Function ID: 63329
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 6, 7, 15, 17, 18, 5, 31, 7921, 1921, 1194, 1348, 1917, 1838, 1849, 7922, 4566, 653, 3, 7923, 7924, 6753, 6754, 5048, 44, 7925, 675, 1881, 7928, 566, 686, 7929, 7930, 1331, 8176, 6755, 2]
+// Dependencies: [57, 6, 7, 15, 17, 18, 5, 31, 8008, 1921, 1194, 1348, 1917, 1838, 1849, 8009, 4566, 653, 3, 8010, 8011, 6753, 6754, 5048, 44, 8012, 675, 1881, 8015, 566, 686, 8016, 8017, 1331, 8220, 6755, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, useDiscoveryState, useGuildIndexState
 
-// Module 7920 (_isNativeReflectConstruct)
+// Module 8007 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import result from "result";
@@ -490,7 +490,7 @@ function useUserIndexState(arg0, allowFetch) {
         tmp = callback;
       }
       if (tmp) {
-        let obj = callback(7924);
+        let obj = callback(8011);
         obj = { type: "user" };
         const applicationCommandIndex = obj.requestApplicationCommandIndex(obj);
       }
@@ -583,7 +583,7 @@ function queryIndex(allowApplicationCommands) {
   let userState;
   ({ permissionContext, contextState, userState, applicationStates, text, builtIns } = allowApplicationCommands);
   if (builtIns === undefined) {
-    builtIns = NONE(7928).BuiltInCommandFilter.ALLOW;
+    builtIns = NONE(8015).BuiltInCommandFilter.ALLOW;
   }
   let flag = allowApplicationCommands.allowApplicationCommands;
   if (flag === undefined) {
@@ -595,7 +595,7 @@ function queryIndex(allowApplicationCommands) {
   }
   NONE = allowApplicationCommands.scoreMethod;
   if (NONE === undefined) {
-    NONE = NONE(7928).ScoreMethod.NONE;
+    NONE = NONE(8015).ScoreMethod.NONE;
   }
   let sortOptions = allowApplicationCommands.sortOptions;
   if (sortOptions === undefined) {
@@ -614,9 +614,9 @@ function queryIndex(allowApplicationCommands) {
   if (null != formatted) {
     parts = formatted.split(" ");
   }
-  if (builtIns !== NONE(7928).BuiltInCommandFilter.DENY) {
-    let obj = NONE(7930);
-    let builtInCommands = obj.getBuiltInCommands(permissionContext.commandTypes, true, builtIns === NONE(7928).BuiltInCommandFilter.ONLY_TEXT);
+  if (builtIns !== NONE(8015).BuiltInCommandFilter.DENY) {
+    let obj = NONE(8017);
+    let builtInCommands = obj.getBuiltInCommands(permissionContext.commandTypes, true, builtIns === NONE(8015).BuiltInCommandFilter.ONLY_TEXT);
   } else {
     builtInCommands = [];
   }
@@ -846,7 +846,7 @@ function queryIndex(allowApplicationCommands) {
     return outer1_62(section.section.name, section2.section.name);
   });
   if (builtInCommands.length > 0) {
-    const tmp66 = queryIndexSection(NONE(7930).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
+    const tmp66 = queryIndexSection(NONE(8017).BUILT_IN_SECTIONS[constants.BUILT_IN], builtInCommands, true, true, obj);
     if (null != tmp66) {
       items.push(tmp66);
     }
@@ -861,7 +861,7 @@ function queryIndex(allowApplicationCommands) {
       return obj;
     });
   });
-  if (NONE === NONE(7928).ScoreMethod.COMMAND_ONLY) {
+  if (NONE === NONE(8015).ScoreMethod.COMMAND_ONLY) {
     const context = permissionContext.context;
     let guild_id;
     if (null != permissionContext) {
@@ -957,7 +957,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
   }
   let allowedForUser = null;
   if (null != guild_id) {
-    let obj = importAll(8176);
+    let obj = importAll(8220);
     allowedForUser = obj.computeAllowedForUser(descriptor.permissions, context.guild_id, userId, roleIds, isImpersonating);
   }
   let guild_id1;
@@ -966,7 +966,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
   }
   let allowedForChannel = null;
   if (null != guild_id1) {
-    let obj1 = importAll(8176);
+    let obj1 = importAll(8220);
     allowedForChannel = obj1.computeAllowedForChannel(descriptor.permissions, context, context.guild_id);
   }
   const items = [];
@@ -977,7 +977,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
       let value = iter.value;
       let tmp14 = importAll;
       let tmp15 = dependencyMap;
-      let obj3 = importAll(8176);
+      let obj3 = importAll(8220);
       obj = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: descriptor.botId, isGuildInstalled };
       let tmp16 = arg3;
       if (!arg3) {
@@ -987,7 +987,7 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
       let tmp18 = require;
       let tmp19 = dependencyMap;
       let hasAccessResult = obj3.hasAccess(value, permissionContext, obj);
-      if (hasAccessResult === require(8176) /* _createForOfIteratorHelperLoose */.HasAccessResult.ALLOWED) {
+      if (hasAccessResult === require(8220) /* _createForOfIteratorHelperLoose */.HasAccessResult.ALLOWED) {
         let arr = items.push(value);
       }
       iter2 = tmp13();
@@ -995,13 +995,13 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
     } while (!iter2.done);
   }
   let arr2 = items;
-  if (scoreMethod !== require(7928) /* ScoreMethod */.ScoreMethod.NONE) {
+  if (scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.NONE) {
     arr2 = items;
     if (null != query) {
       arr2 = items;
       if (null != splitQuery) {
         const items1 = [];
-        if (scoreMethod === require(7928) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY) {
+        if (scoreMethod === require(8015) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY) {
           const name = descriptor.name;
           const toLocaleLowerCaseResult = name.toLocaleLowerCase();
           if (toLocaleLowerCaseResult.startsWith(query)) {
@@ -1034,11 +1034,11 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
             value = iter3.value;
             let tmp33 = require;
             let tmp34 = dependencyMap;
-            let tmp35 = scoreMethod !== require(7928) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY;
+            let tmp35 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY;
             if (tmp35) {
               let tmp36 = require;
               let tmp37 = dependencyMap;
-              tmp35 = scoreMethod !== require(7928) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION;
+              tmp35 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.COMMAND_OR_APPLICATION;
             }
             let tmp38;
             if (!tmp35) {
@@ -1077,9 +1077,9 @@ function queryIndexSection(descriptor, builtInCommands, isGuildInstalled, arg3, 
     }
   }
   if (0 !== arr2.length) {
-    let tmp53 = scoreMethod !== require(7928) /* ScoreMethod */.ScoreMethod.NONE;
+    let tmp53 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.NONE;
     if (tmp53) {
-      tmp53 = scoreMethod !== require(7928) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY;
+      tmp53 = scoreMethod !== require(8015) /* ScoreMethod */.ScoreMethod.APPLICATION_ONLY;
     }
     if (!tmp53) {
       const sorted = arr2.sort((displayName, displayName2) => outer1_62(displayName.displayName, displayName2.displayName));
@@ -1813,8 +1813,8 @@ export const useGuildIndexState = function useGuildIndexState(arg0, arg1) {
         obj.track(outer1_22.APPLICATION_COMMAND_CACHE_FETCH, obj);
         if (outer1_55(stateFromStoresObject)) {
           obj = { type: "guild", guildId: callback };
-          const applicationCommandIndex = callback(7924).requestApplicationCommandIndex(obj);
-          const obj3 = callback(7924);
+          const applicationCommandIndex = callback(8011).requestApplicationCommandIndex(obj);
+          const obj3 = callback(8011);
         }
       }
       dependencyMap(false);
@@ -1879,9 +1879,9 @@ export const appLauncherOnlyCompareNames = function appLauncherOnlyCompareNames(
 };
 export const getSection = function getSection(arg0, applicationId) {
   if (applicationId === constants.BUILT_IN) {
-    let obj = { descriptor: require(7930) /* getOptionValue */.BUILT_IN_SECTIONS[constants.BUILT_IN] };
+    let obj = { descriptor: require(8017) /* getOptionValue */.BUILT_IN_SECTIONS[constants.BUILT_IN] };
     const items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
-    obj.sectionCommands = require(7930) /* getOptionValue */.getBuiltInCommands(items, true, false);
+    obj.sectionCommands = require(8017) /* getOptionValue */.getBuiltInCommands(items, true, false);
     obj.isGuildInstalled = true;
     obj.isUserInstalled = true;
     return obj;

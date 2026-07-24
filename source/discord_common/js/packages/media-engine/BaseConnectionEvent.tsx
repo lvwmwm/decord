@@ -1,5 +1,5 @@
 // Module ID: 4282
-// Function ID: 37511
+// Function ID: 37512
 // Name: BaseConnectionEvent
 // Dependencies: [2]
 

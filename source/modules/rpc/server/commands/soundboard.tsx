@@ -1,9 +1,9 @@
-// Module ID: 13432
-// Function ID: 103319
+// Module ID: 13485
+// Function ID: 103646
 // Name: items
-// Dependencies: [5, 4578, 1849, 4033, 482, 8310, 5733, 4585, 10499, 5768, 5739, 10496, 5770, 5484, 2]
+// Dependencies: [5, 4578, 1849, 4033, 482, 8354, 5733, 4585, 10528, 5768, 5739, 10525, 5770, 5482, 2]
 
-// Module 13432 (items)
+// Module 13485 (items)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -32,7 +32,7 @@ const items1 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC
 obj2[RPC_SCOPE_CONFIG.ALL] = items1;
 obj1.scope = obj2;
 obj1.validation = function validation(string) {
-  let obj = importDefault(10499)(string);
+  let obj = importDefault(10528)(string);
   obj = { guild_id: string.string(), sound_id: string.string() };
   return obj.required().keys(obj);
 };

@@ -1,5 +1,5 @@
 // Module ID: 1117
-// Function ID: 12700
+// Function ID: 12701
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 31, 1000, 1113, 1118, 794, 1116]
 // Exports: withErrorBoundary

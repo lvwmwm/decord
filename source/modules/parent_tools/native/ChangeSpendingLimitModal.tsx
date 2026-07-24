@@ -1,10 +1,10 @@
-// Module ID: 13810
-// Function ID: 105810
+// Module ID: 13861
+// Function ID: 106134
 // Name: renderMonthlySpendLine
-// Dependencies: [5, 31, 27, 33, 4130, 689, 7576, 4126, 1212, 2198, 13811, 3831, 4091, 4337, 3830, 5618, 7572, 7573, 4541, 7512, 11071, 4965, 4543, 5087, 11073, 2]
+// Dependencies: [5, 31, 27, 33, 4130, 689, 7631, 4126, 1212, 2198, 13862, 3831, 4091, 4337, 3830, 5616, 7613, 7614, 4541, 7574, 11098, 4965, 4543, 5087, 11100, 2]
 // Exports: default
 
-// Module 13810 (renderMonthlySpendLine)
+// Module 13861 (renderMonthlySpendLine)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, 
   } else if (isOverspending) {
     let obj = { style: formatToPlainStringResult.warningRow };
     obj = { size: "xs", color: importDefault(689).colors.ICON_FEEDBACK_WARNING };
-    const items = [callback(require(7576) /* WarningIcon */.WarningIcon, obj), ];
+    const items = [callback(require(7631) /* WarningIcon */.WarningIcon, obj), ];
     const obj1 = { variant: "text-sm/normal", style: formatToPlainStringResult.warningText };
     const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj2 = { amount: tmp };
@@ -63,7 +63,7 @@ function ChangeSpendingLimitScreen(teenId) {
     return obj(...arguments);
   }
   const tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(13811);
+  let obj = _require(13862);
   const changeSpendingLimitFormState = obj.useChangeSpendingLimitFormState(teenId.teenId);
   ({ amountInput, isOverspending, isSubmitting, renewalDate, monthlySpend, save: c0 } = changeSpendingLimitFormState);
   let formatPriceResult = null;
@@ -71,7 +71,7 @@ function ChangeSpendingLimitScreen(teenId) {
   if (null != monthlySpend) {
     formatPriceResult = null;
     if (monthlySpend > 0) {
-      let obj1 = _require(5618);
+      let obj1 = _require(5616);
       formatPriceResult = obj1.formatPrice(monthlySpend, tmp3);
     }
   }
@@ -106,7 +106,7 @@ function ChangeSpendingLimitScreen(teenId) {
   }
   obj6.keyboardType = str;
   obj6.isClearable = true;
-  const items2 = [callback(_require(7512).TextInput, obj6), ];
+  const items2 = [callback(_require(7574).TextInput, obj6), ];
   let tmp16 = null;
   if (isOverspending) {
     const obj7 = { style: tmp.warningOverlay, pointerEvents: "none" };
@@ -120,7 +120,7 @@ function ChangeSpendingLimitScreen(teenId) {
   items[1] = closure_7(_require(4541).Stack, obj3);
   obj1.children = items;
   obj.children = closure_7(_require(4541).Stack, obj1);
-  const items3 = [callback(_require(7573).ModalContent, obj), ];
+  const items3 = [callback(_require(7614).ModalContent, obj), ];
   const obj8 = {};
   const obj9 = {};
   if (isClearingCap) {
@@ -147,9 +147,9 @@ function ChangeSpendingLimitScreen(teenId) {
   items4[1] = callback(_require(4543).Button, obj12);
   obj9.children = items4;
   obj8.children = closure_7(_require(4965).ButtonGroup, obj9);
-  items3[1] = callback(_require(11071).ModalFooter, obj8);
+  items3[1] = callback(_require(11098).ModalFooter, obj8);
   obj.children = items3;
-  return closure_7(_require(7572).ModalScreen, obj);
+  return closure_7(_require(7613).ModalScreen, obj);
 }
 const View = get_ActivityIndicator.View;
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
@@ -193,5 +193,5 @@ export default function ChangeSpendingLimitModal(teenId) {
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo };
   let intl = teenId(1212).intl;
   obj.headerBackTitle = intl.string(teenId(1212).t["13/7kX"]);
-  return callback(teenId(11073).Modal, obj);
+  return callback(teenId(11100).Modal, obj);
 };

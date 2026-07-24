@@ -1,10 +1,10 @@
-// Module ID: 10323
-// Function ID: 79681
+// Module ID: 10352
+// Function ID: 79872
 // Name: _fetchBugReportConfig
-// Dependencies: [5, 1278, 653, 507, 1212, 10324, 477, 4942, 480, 2]
+// Dependencies: [5, 1278, 653, 507, 1212, 10353, 477, 4942, 480, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 10323 (_fetchBugReportConfig)
+// Module 10352 (_fetchBugReportConfig)
 import _uploadDebugLogFiles from "_uploadDebugLogFiles";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

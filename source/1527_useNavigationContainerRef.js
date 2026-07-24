@@ -1,5 +1,5 @@
 // Module ID: 1527
-// Function ID: 17491
+// Function ID: 17492
 // Name: useNavigationContainerRef
 // Dependencies: [31, 1474]
 // Exports: default

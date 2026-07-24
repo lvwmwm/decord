@@ -1,5 +1,5 @@
 // Module ID: 1121
-// Function ID: 12738
+// Function ID: 12739
 // Name: routeMatchToParamSpanAttributes
 // Dependencies: [57, 77, 1000, 794]
 // Exports: tanstackRouterBrowserTracingIntegration

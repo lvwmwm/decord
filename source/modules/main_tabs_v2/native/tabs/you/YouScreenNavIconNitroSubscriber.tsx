@@ -1,8 +1,8 @@
-// Module ID: 15485
-// Function ID: 119205
-// Dependencies: [57, 31, 6689, 7420, 1345, 33, 7423, 566, 5802, 1334, 15480, 15482, 7871, 1212, 2]
+// Module ID: 15532
+// Function ID: 119527
+// Dependencies: [57, 31, 6689, 12400, 1345, 33, 7831, 566, 5802, 1334, 15527, 15529, 7486, 1212, 2]
 
-// Module 15485
+// Module 15532
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -18,7 +18,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
   showReferralNotificationDot = undefined;
   let dependencyMap;
   let callback;
-  let obj = onPress(7423);
+  let obj = onPress(7831);
   if (showReferralNotificationDot) {
     showReferralNotificationDot = obj.useIsEligibleSenderForReferralProgram(!showReferralNotificationDot);
   }
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
       }
     }
   }
-  obj = { cooldownDurationMs: onPress(15480).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+  obj = { cooldownDurationMs: onPress(15527).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
   const tmp5 = callback(onPress(5802).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   dependencyMap = tmp6;
   const tmp7 = tmp5[0] === onPress(1334).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
@@ -52,12 +52,12 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
   }, items2);
   obj = {};
   const obj3 = onPress(5802);
-  obj.IconComponent = onPress(7871).NitroWheelIcon;
+  obj.IconComponent = onPress(7486).NitroWheelIcon;
   const intl = onPress(1212).intl;
   obj.accessibilityLabel = intl.string(onPress(1212).t.Ipxkog);
   obj.onPress = callback;
   obj.showRedDot = tmp7;
-  return jsx(showReferralNotificationDot(15482), {});
+  return jsx(showReferralNotificationDot(15529), {});
 });
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIconNitroSubscriber.tsx");
 

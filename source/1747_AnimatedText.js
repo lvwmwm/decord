@@ -1,5 +1,5 @@
 // Module ID: 1747
-// Function ID: 19543
+// Function ID: 19544
 // Name: AnimatedText
 // Dependencies: [27, 1616]
 

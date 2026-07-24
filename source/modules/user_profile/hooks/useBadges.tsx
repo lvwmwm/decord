@@ -1,10 +1,10 @@
-// Module ID: 8254
-// Function ID: 65128
+// Module ID: 8298
+// Function ID: 65356
 // Name: useBadges
 // Dependencies: [3970, 1849, 3803, 624, 1212, 2]
 // Exports: default
 
-// Module 8254 (useBadges)
+// Module 8298 (useBadges)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

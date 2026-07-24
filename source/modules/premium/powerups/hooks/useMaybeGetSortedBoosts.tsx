@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 90212
+// Module ID: 11640
+// Function ID: 90450
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [57, 31, 11595, 4958, 1917, 1838, 11614, 566, 11615, 4026, 21, 1212, 2]
+// Dependencies: [57, 31, 11622, 4958, 1917, 1838, 11641, 566, 11642, 4026, 21, 1212, 2]
 // Exports: default, useGetBoostUserConfig
 
-// Module 11613 (useMaybeGetSortedBoosts)
+// Module 11640 (useMaybeGetSortedBoosts)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

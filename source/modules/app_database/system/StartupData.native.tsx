@@ -1,5 +1,5 @@
 // Module ID: 1899
-// Function ID: 21339
+// Function ID: 21340
 // Name: getUserId
 // Dependencies: [27, 477, 1900, 2]
 // Exports: getUserId, setUserId

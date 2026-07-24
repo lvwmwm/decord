@@ -1,5 +1,5 @@
 // Module ID: 3897
-// Function ID: 32246
+// Function ID: 32247
 // Name: getBooleanProperty
 // Dependencies: [57, 3881, 3894]
 // Exports: useRiveBoolean

@@ -1,10 +1,10 @@
-// Module ID: 11480
-// Function ID: 89407
+// Module ID: 11510
+// Function ID: 89652
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 566, 11475, 3831, 1212, 9176, 4098, 5187, 5186, 5501, 7495, 4543, 2]
+// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 566, 11505, 3831, 1212, 9212, 4098, 5187, 5186, 5499, 7636, 4543, 2]
 // Exports: default
 
-// Module 11480 (SpamMessageRequestHamActionSheet)
+// Module 11510 (SpamMessageRequestHamActionSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -42,7 +42,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(recipientId.getRecipientId()));
-  let obj1 = require(11475) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(11505) /* _createForOfIteratorHelperLoose */;
   obj = {
     user: stateFromStores,
     onError() {
@@ -67,7 +67,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj1 = {};
   let intl = require(1212) /* getSystemLocale */.intl;
   obj1.title = intl.string(require(1212) /* getSystemLocale */.t["9ty6yc"]);
-  obj1.trailing = callback(require(5501) /* ActionSheetCloseButton */.ActionSheetCloseButton, {
+  obj1.trailing = callback(require(5499) /* ActionSheetCloseButton */.ActionSheetCloseButton, {
     onPress() {
       outer1_1(outer1_2[12]).hideActionSheet();
       callback2();
@@ -84,7 +84,7 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj4.onValueChange = function onValueChange(arg0) {
     return callback3(arg0);
   };
-  const items2 = [callback(require(7495) /* Form */.FormSwitchRow, obj4), ];
+  const items2 = [callback(require(7636) /* Form */.FormSwitchRow, obj4), ];
   const obj5 = { style: tmp.buttonContainer };
   const obj6 = {
     size: "md",

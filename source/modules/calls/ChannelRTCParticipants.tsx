@@ -1,10 +1,10 @@
-// Module ID: 10532
-// Function ID: 82215
+// Module ID: 10561
+// Function ID: 82407
 // Name: getEmbeddedActivityParticipantId
-// Dependencies: [6, 7, 1347, 4149, 1194, 4809, 1348, 4177, 4952, 1849, 10533, 4146, 4148, 653, 4191, 4960, 3754, 10534, 22, 10535, 10536, 4319, 9088, 4194, 2]
+// Dependencies: [6, 7, 1347, 4149, 1194, 4809, 1348, 4177, 4952, 1849, 10562, 4146, 4148, 653, 4191, 4960, 3754, 10563, 22, 10564, 10565, 4319, 9126, 4194, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual
 
-// Module 10532 (getEmbeddedActivityParticipantId)
+// Module 10561 (getEmbeddedActivityParticipantId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

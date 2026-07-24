@@ -1,19 +1,19 @@
-// Module ID: 10849
-// Function ID: 84174
+// Module ID: 10876
+// Function ID: 84363
 // Name: useChatWidth
-// Dependencies: [31, 3984, 3986, 10850, 10851, 2]
+// Dependencies: [31, 3984, 3986, 10877, 10878, 2]
 // Exports: default, getChatWidth
 
-// Module 10849 (useChatWidth)
+// Module 10876 (useChatWidth)
 import result from "result";
 
 const require = arg1;
 const result = require("useBaseAppContainerDimensions").fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
 
 export default function useChatWidth(arg0) {
-  let context = React.useContext(importDefault(10851));
+  let context = React.useContext(importDefault(10878));
   const width = importDefault(3986)().width;
-  require(10850) /* computeTabletDrawerWidth */;
+  require(10877) /* computeTabletDrawerWidth */;
   if (null == context) {
     if (null == arg0) {
       let diff = width;
@@ -34,8 +34,8 @@ export const getChatWidth = function getChatWidth(arg0) {
   if (null == arg0) {
     let diff = width;
     if (obj.getChatLayout().isChatLockedOpen) {
-      diff = width - require(10850) /* computeTabletDrawerWidth */.getDrawerWidth();
-      const obj3 = require(10850) /* computeTabletDrawerWidth */;
+      diff = width - require(10877) /* computeTabletDrawerWidth */.getDrawerWidth();
+      const obj3 = require(10877) /* computeTabletDrawerWidth */;
     }
     let tmp = diff;
   } else {

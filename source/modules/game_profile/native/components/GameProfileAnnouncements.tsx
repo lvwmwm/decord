@@ -1,10 +1,10 @@
-// Module ID: 8653
-// Function ID: 68478
+// Module ID: 8694
+// Function ID: 68698
 // Name: getSharedMarkdownParser
-// Dependencies: [31, 27, 33, 4562, 1212, 4130, 689, 8654, 4126, 8656, 3800, 8007, 5464, 8658, 8600, 8594, 8661, 4543, 5514, 2]
+// Dependencies: [31, 27, 33, 4562, 1212, 4130, 689, 8695, 4126, 8697, 3800, 7437, 5462, 8699, 8642, 8636, 8702, 4543, 5512, 2]
 // Exports: default
 
-// Module 8653 (getSharedMarkdownParser)
+// Module 8694 (getSharedMarkdownParser)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -63,7 +63,7 @@ function EmbedAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj = message(8654);
+    let obj = message(8695);
     posterUrl = obj.getPosterUrl(proxyUrl, 160, c12);
   }
   let tmp9 = proxyUrl;
@@ -121,7 +121,7 @@ function EmbedAnnouncementCard(message) {
     if (tmp30) {
       const obj8 = { style: tmp.embedMedia };
       const obj9 = { uri: tmp9, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp.mediaImage };
-      obj8.children = callback(message(8656).ImageWithPlaceholder, obj9);
+      obj8.children = callback(message(8697).ImageWithPlaceholder, obj9);
       tmp30 = callback(closure_7, obj8);
     }
     items3[1] = tmp30;
@@ -168,7 +168,7 @@ function EmbedAnnouncementCard(message) {
     if (tmp60) {
       const obj18 = { style: tmp.reactionInfo };
       const obj19 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED };
-      const items6 = [callback(message(8007).ReactionIcon, obj19), ];
+      const items6 = [callback(message(7437).ReactionIcon, obj19), ];
       obj20 = { variant: "text-xs/medium", color: "text-muted", children: formatReactionCount(message.reactionCount) };
       items6[1] = callback(message(4126).Text, obj20);
       obj18.children = items6;
@@ -207,7 +207,7 @@ function MessageAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj = message(8654);
+    let obj = message(8695);
     posterUrl = obj.getPosterUrl(proxyUrl, 160, c12);
   }
   let tmp9 = proxyUrl;
@@ -229,7 +229,7 @@ function MessageAnnouncementCard(message) {
   if (tmp12) {
     obj = { style: tmp.smallCardMedia };
     const obj1 = { uri: tmp9, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp.mediaImage };
-    obj.children = callback(message(8656).ImageWithPlaceholder, obj1);
+    obj.children = callback(message(8697).ImageWithPlaceholder, obj1);
     tmp12 = callback(closure_7, obj);
   }
   const items = [tmp12, ];
@@ -259,7 +259,7 @@ function MessageAnnouncementCard(message) {
   if (tmp31) {
     const obj9 = { style: tmp.reactionInfo };
     const obj10 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED };
-    const items3 = [callback(message(8007).ReactionIcon, obj10), ];
+    const items3 = [callback(message(7437).ReactionIcon, obj10), ];
     obj11 = { variant: "text-xs/medium", color: "text-muted", children: formatReactionCount(message.reactionCount) };
     items3[1] = callback(message(4126).Text, obj11);
     obj9.children = items3;
@@ -330,7 +330,7 @@ function PollAnnouncementCard(message) {
     const _Date = Date;
     const date = new Date(message.timestamp);
     obj6.createdAt = date;
-    obj5 = message(8654);
+    obj5 = message(8695);
     obj6.expiryLabel = obj5.getPollExpiryLabel(poll);
     obj5.children = intl2.format(message(1212).t.t0FTsH, obj6);
     obj4.children = callback(message(4126).Text, obj5);

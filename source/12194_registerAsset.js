@@ -1,11 +1,11 @@
 // Module ID: 12194
-// Function ID: 95350
+// Function ID: 95489
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 12194 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 52, height: 52, scales: [2, 3], hash: "615539ba0c63645e5c19643e8d442753", name: "whatsapp", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "13168e0700737564714d8e4fc44106f6", name: "ShareIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

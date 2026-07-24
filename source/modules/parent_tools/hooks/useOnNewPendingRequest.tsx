@@ -1,10 +1,10 @@
-// Module ID: 13783
-// Function ID: 105670
+// Module ID: 13834
+// Function ID: 105994
 // Name: useOnNewPendingRequest
-// Dependencies: [31, 6769, 7123, 566, 4559, 6771, 2]
+// Dependencies: [31, 6769, 7122, 566, 4559, 6771, 2]
 // Exports: default
 
-// Module 13783 (useOnNewPendingRequest)
+// Module 13834 (useOnNewPendingRequest)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

@@ -1,10 +1,10 @@
-// Module ID: 10473
-// Function ID: 81068
+// Module ID: 10502
+// Function ID: 81260
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 653, 477, 668, 5078, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 10473 (_isNativeReflectConstruct)
+// Module 10502 (_isNativeReflectConstruct)
 import set from "set";
 import keys from "keys";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

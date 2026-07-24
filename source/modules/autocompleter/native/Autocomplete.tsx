@@ -1,24 +1,27 @@
-// Module ID: 11431
-// Function ID: 88924
+// Module ID: 11459
+// Function ID: 89164
 // Name: AutocompleteLabel
-// Dependencies: [31, 27, 1838, 3767, 1849, 653, 9558, 33, 4130, 689, 7495, 566, 3969, 1273, 9429, 5165, 5174, 1212, 7806, 4593, 4320, 4126, 5085, 11432, 9600, 4660, 9615, 22, 2]
+// Dependencies: [31, 27, 1838, 3767, 1849, 653, 9594, 33, 4130, 689, 7636, 566, 3969, 1273, 9465, 5165, 5174, 1212, 7897, 4593, 4320, 4126, 5085, 11460, 9636, 4660, 9651, 22, 4160, 1832, 11461, 2]
 
-// Module 11431 (AutocompleteLabel)
-import result from "result";
+// Module 11459 (AutocompleteLabel)
+import set from "set";
 import { View } from "apply";
 import closure_5 from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import ME from "ME";
-import { jsx } from "jsxProd";
+import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_10;
+let closure_9;
 const require = arg1;
 function AutocompleteLabel(text) {
   const tmp = _createForOfIteratorHelperLoose();
-  return jsx(require(7495) /* Form */.FormRow.Label, { style: _createForOfIteratorHelperLoose().leading, text: text.text });
+  return callback(require(7636) /* Form */.FormRow.Label, { style: _createForOfIteratorHelperLoose().leading, text: text.text });
 }
 const ChannelTypes = ME.ChannelTypes;
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { height: require("AUTOCOMPLETE_ROW_HEIGHT").AUTOCOMPLETE_ROW_HEIGHT, paddingVertical: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
 _createForOfIteratorHelperLoose.row = _createForOfIteratorHelperLoose;
@@ -37,9 +40,13 @@ _createForOfIteratorHelperLoose.commandChoiceLoadingContainer = { flex: 1, justi
 const obj3 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400 };
 _createForOfIteratorHelperLoose.commandChoiceLoadingItem = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
 _createForOfIteratorHelperLoose.autocompleteIcon = { opacity: 0.6 };
+const obj7 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.gameIcon = obj7;
+const obj8 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.labelRow = obj8;
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
-const obj7 = {
+const obj9 = {
   User(user) {
     let guildId;
     let nick;
@@ -68,21 +75,35 @@ const obj7 = {
       const obj4 = guildId(3969);
     }
     obj.text = stateFromStores;
-    obj.label = <AutocompleteLabel />;
+    obj.label = callback(AutocompleteLabel, obj);
     const obj1 = { status, user, size: user(1273).AvatarSizes.SMALL, guildId, autoStatusCutout: true };
-    obj.leading = jsx(user(1273).Avatar, { status, user, size: user(1273).AvatarSizes.SMALL, guildId, autoStatusCutout: true });
+    obj.leading = callback(user(1273).Avatar, obj1);
     const items1 = [, ];
     ({ trailing: arr2[0], username: arr2[1] } = tmp);
-    obj.trailing = jsx(guildId(9429), { user, usernameStyle: items1, discriminatorStyle: tmp.trailing });
-    return jsx(user(7495).FormRow, {});
+    obj.trailing = callback(guildId(9465), { user, usernameStyle: items1, discriminatorStyle: tmp.trailing });
+    return callback(user(7636).FormRow, obj);
   },
   Global(arg0) {
+    let badge;
     let description;
     let onPress;
     let text;
-    ({ text, description, onPress } = arg0);
-    const obj = { onPress, accessibilityRole: "menuitem", label: <AutocompleteLabel text={text} />, trailing: jsx(require(5174) /* TableRowTrailingText */.TableRowTrailingText, { text: description }) };
-    return jsx(require(5165) /* TableRowInner */.TableRow, { onPress, accessibilityRole: "menuitem", label: <AutocompleteLabel text={text} />, trailing: jsx(require(5174) /* TableRowTrailingText */.TableRowTrailingText, { text: description }) });
+    ({ text, badge } = arg0);
+    ({ description, onPress } = arg0);
+    let obj = { onPress, accessibilityRole: "menuitem" };
+    if (null != badge) {
+      obj = { style: tmp.labelRow };
+      obj = { text };
+      const items = [callback(AutocompleteLabel, obj), badge];
+      obj.children = items;
+      let tmp5 = callback2(View, obj);
+    } else {
+      const obj1 = { text };
+      tmp5 = callback(AutocompleteLabel, obj1);
+    }
+    obj.label = tmp5;
+    obj.trailing = callback(require(5174) /* TableRowTrailingText */.TableRowTrailingText, { text: description });
+    return callback(require(5165) /* TableRowInner */.TableRow, obj);
   },
   Role(colorString) {
     let name;
@@ -101,7 +122,7 @@ const obj7 = {
     items[1] = tmp4;
     obj.style = items;
     obj.text = "@" + name;
-    obj.label = jsx(require(7495) /* Form */.FormRow.Label, {});
+    obj.label = closure_9(require(7636) /* Form */.FormRow.Label, obj);
     const obj1 = {};
     let str = "";
     if (showDescription) {
@@ -109,8 +130,8 @@ const obj7 = {
       str = intl.string(require(1212) /* getSystemLocale */.t.HrUmDH);
     }
     obj1.text = str;
-    obj.trailing = jsx(require(5174) /* TableRowTrailingText */.TableRowTrailingText, {});
-    return jsx(require(5165) /* TableRowInner */.TableRow, {});
+    obj.trailing = closure_9(require(5174) /* TableRowTrailingText */.TableRowTrailingText, obj1);
+    return closure_9(require(5165) /* TableRowInner */.TableRow, obj);
   },
   Channel(onPress) {
     let category;
@@ -118,23 +139,23 @@ const obj7 = {
     ({ channel, category } = onPress);
     const tmp = _createForOfIteratorHelperLoose();
     if (channel.type === ChannelTypes.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(7806);
+      let channelIconWithGuild = importDefault(7897);
     } else {
       let obj = require(4593) /* getThreadChannelIcon */;
       channelIconWithGuild = obj.getChannelIconWithGuild(channel, tmp2);
     }
     obj = { source: channelIconWithGuild, style: tmp.autocompleteIcon };
-    const tmp8 = jsx(require(1273) /* Button */.Icon, { source: channelIconWithGuild, style: tmp.autocompleteIcon });
+    const tmp8 = callback(require(1273) /* Button */.Icon, obj);
     const channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_7, _isNativeReflectConstruct);
-    obj = { onPress: onPress.onPress, accessibilityRole: "menuitem", leading: tmp8, label: <AutocompleteLabel text={channelName} /> };
+    obj = { onPress: onPress.onPress, accessibilityRole: "menuitem", leading: tmp8, label: callback(AutocompleteLabel, { text: channelName }) };
     const obj1 = { style: tmp.trailing, variant: "text-sm/medium", color: "text-muted" };
     let name = null != category;
     if (name) {
       name = category.name;
     }
     obj1.children = name;
-    obj.trailing = jsx(require(4126) /* Text */.Text, { style: tmp.trailing, variant: "text-sm/medium", color: "text-muted" });
-    return jsx(require(7495) /* Form */.FormRow, { onPress: onPress.onPress, accessibilityRole: "menuitem", leading: tmp8, label: <AutocompleteLabel text={channelName} /> });
+    obj.trailing = callback(require(4126) /* Text */.Text, obj1);
+    return callback(require(7636) /* Form */.FormRow, obj);
   },
   Emoji(url) {
     let name;
@@ -150,7 +171,7 @@ const obj7 = {
       obj.style = items;
       obj = { uri: url };
       obj.source = obj;
-      let tmp5 = jsx(importDefault(5085), { uri: url });
+      let tmp5 = callback(importDefault(5085), obj);
     } else {
       obj = {};
       const items1 = [, ];
@@ -158,19 +179,19 @@ const obj7 = {
       obj.style = items1;
       obj.allowFontScaling = false;
       obj.children = surrogates;
-      tmp5 = jsx(require(1273) /* Button */.LegacyText, {});
+      tmp5 = callback(require(1273) /* Button */.LegacyText, obj);
     }
     const obj1 = { onPress, accessibilityRole: "menuitem", leading: tmp5 };
     const obj2 = { text: ":" + name + ":" };
-    obj1.label = <AutocompleteLabel text={":" + name + ":"} />;
-    return jsx(require(7495) /* Form */.FormRow, { onPress, accessibilityRole: "menuitem", leading: tmp5 });
+    obj1.label = callback(AutocompleteLabel, obj2);
+    return callback(require(7636) /* Form */.FormRow, obj1);
   },
   EmojiPremiumUpsell(arg0) {
     let onPress;
     let results;
     ({ results, onPress } = arg0);
-    const obj = { onPress, accessibilityRole: "menuitem", label: jsx(importDefault(11432), { results }) };
-    return jsx(require(7495) /* Form */.FormRow, { onPress, accessibilityRole: "menuitem", label: jsx(importDefault(11432), { results }) });
+    const obj = { onPress, accessibilityRole: "menuitem", label: callback(importDefault(11460), { results }) };
+    return callback(require(7636) /* Form */.FormRow, obj);
   },
   Choice(arg0) {
     let choice;
@@ -178,8 +199,8 @@ const obj7 = {
     ({ choice, onPress } = arg0);
     let obj = { onPress, accessibilityRole: "menuitem" };
     obj = { text: choice.displayName };
-    obj.label = <AutocompleteLabel text={choice.displayName} />;
-    return jsx(require(7495) /* Form */.FormRow, { text: choice.displayName });
+    obj.label = callback(AutocompleteLabel, obj);
+    return callback(require(7636) /* Form */.FormRow, obj);
   },
   ChoiceLoading() {
     const tmp = _createForOfIteratorHelperLoose();
@@ -187,9 +208,9 @@ const obj7 = {
     let obj = { DEPRECATED_style: tmp.row };
     obj = { style: tmp.commandChoiceLoadingContainer };
     const items = [tmp.commandChoiceLoadingItem, { width: memo }];
-    obj.children = <View style={items} />;
-    obj.leading = <View style={tmp.commandChoiceLoadingContainer} />;
-    return jsx(require(7495) /* Form */.FormRow, { style: tmp.commandChoiceLoadingContainer });
+    obj.children = callback(View, { style: items });
+    obj.leading = callback(View, obj);
+    return callback(require(7636) /* Form */.FormRow, obj);
   },
   Sticker(arg0) {
     let isInteracting;
@@ -197,18 +218,35 @@ const obj7 = {
     let onPress;
     let sticker;
     ({ sticker, onPress, onLongPress, isInteracting } = arg0);
-    let obj = require(9600) /* _createForOfIteratorHelperLoose */;
+    let obj = require(9636) /* _createForOfIteratorHelperLoose */;
     const shouldAnimateSticker = obj.useShouldAnimateSticker(isInteracting);
-    obj = { accessibilityRole: "menuitem", style: _createForOfIteratorHelperLoose().stickerContainer, onPress, onLongPress, pointerEvents: "box-only", children: jsx(importDefault(9615), { sticker, size: 40, animated: shouldAnimateSticker }) };
-    return jsx(require(4660) /* PressableBase */.PressableOpacity, { accessibilityRole: "menuitem", style: _createForOfIteratorHelperLoose().stickerContainer, onPress, onLongPress, pointerEvents: "box-only", children: jsx(importDefault(9615), { sticker, size: 40, animated: shouldAnimateSticker }) });
+    obj = { accessibilityRole: "menuitem", style: _createForOfIteratorHelperLoose().stickerContainer, onPress, onLongPress, pointerEvents: "box-only", children: callback(importDefault(9651), { sticker, size: 40, animated: shouldAnimateSticker }) };
+    return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
   },
   Label(text) {
-    const obj = { label: <AutocompleteLabel text={arg0.label} /> };
-    return jsx(require(7495) /* Form */.FormRow, { label: <AutocompleteLabel text={arg0.label} /> });
+    const obj = { label: callback(AutocompleteLabel, { text: text.label }) };
+    return callback(require(7636) /* Form */.FormRow, obj);
+  },
+  Game(game) {
+    game = game.game;
+    const tmp = _createForOfIteratorHelperLoose();
+    const tmp2 = importDefault(4160)(game.id, game.icon, { size: 32 });
+    let obj = require(1832) /* isNullOrEmpty */;
+    if (obj.isNullOrEmpty(tmp2)) {
+      obj = { size: "sm", style: tmp.gameIcon };
+      let tmp3Result = tmp3(require(11461) /* UnknownGameIcon */.UnknownGameIcon, obj);
+    } else {
+      obj = { style: tmp.gameIcon };
+      const obj1 = { uri: tmp2 };
+      obj.source = obj1;
+      tmp3Result = tmp3(importDefault(5085), obj);
+    }
+    const obj2 = { onPress: game.onPress, accessibilityRole: "menuitem", leading: tmp3Result, label: callback(AutocompleteLabel, { text: game.name }) };
+    return callback(require(7636) /* Form */.FormRow, obj2);
   }
 };
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/autocompleter/native/Autocomplete.tsx");
 
-export default obj7;
+export default obj9;
 export const AUTOCOMPLETE_STICKER_NODE_SIZE = 56;
 export const AUTOCOMPLETE_STICKER_NODE_MARGIN = 4;

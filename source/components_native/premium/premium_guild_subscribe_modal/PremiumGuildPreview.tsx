@@ -1,10 +1,10 @@
-// Module ID: 12543
-// Function ID: 97083
+// Module ID: 12594
+// Function ID: 97404
 // Name: getThemedImageSource
-// Dependencies: [31, 27, 1278, 653, 33, 4130, 689, 4973, 3976, 12544, 12545, 12546, 12547, 12548, 12549, 12550, 12551, 1273, 4022, 566, 5515, 2]
+// Dependencies: [31, 27, 1278, 653, 33, 4130, 689, 4973, 3976, 12595, 12596, 12597, 12598, 12599, 12600, 12601, 12602, 1273, 4022, 566, 5513, 2]
 // Exports: default
 
-// Module 12543 (getThemedImageSource)
+// Module 12594 (getThemedImageSource)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -26,13 +26,13 @@ function getThemedImageSource(arg0, arg1, arg2) {
 }
 function getTierIcon(arg0, arg1) {
   if (BoostedGuildTiers.NONE === arg1) {
-    return getThemedImageSource(arg0, importDefault(12544), importDefault(12545));
+    return getThemedImageSource(arg0, importDefault(12595), importDefault(12596));
   } else if (BoostedGuildTiers.TIER_1 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12546), importDefault(12547));
+    return getThemedImageSource(arg0, importDefault(12597), importDefault(12598));
   } else if (BoostedGuildTiers.TIER_2 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12548), importDefault(12549));
+    return getThemedImageSource(arg0, importDefault(12599), importDefault(12600));
   } else if (BoostedGuildTiers.TIER_3 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12550), importDefault(12551));
+    return getThemedImageSource(arg0, importDefault(12601), importDefault(12602));
   }
 }
 function PremiumGuildTierPill(tier) {
@@ -70,8 +70,8 @@ export default function PremiumGuildPreview(guild) {
   obj = { style: items1 };
   items1 = [tmp.guild, guild.style];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.theme);
-  obj = { guild, size: require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE, selected: false };
-  const items2 = [callback(importDefault(5515), obj), ];
+  obj = { guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.LARGE, selected: false };
+  const items2 = [callback(importDefault(5513), obj), ];
   const obj1 = { style: tmp.guildInfo };
   const items3 = [callback(require(1273) /* Button */.LegacyText, { style: tmp.guildName, children: guild.name }), callback(PremiumGuildTierPill, { tier: guild.premiumTier, theme: stateFromStores })];
   obj1.children = items3;

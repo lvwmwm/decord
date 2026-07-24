@@ -1,10 +1,10 @@
-// Module ID: 13976
-// Function ID: 106984
+// Module ID: 14026
+// Function ID: 107307
 // Name: useBadBundleFilter
-// Dependencies: [31, 1849, 6790, 624, 3776, 8713, 6786, 6785, 2]
+// Dependencies: [31, 1849, 6790, 624, 3776, 8754, 6786, 6785, 2]
 // Exports: useBadBundleFilter
 
-// Module 13976 (useBadBundleFilter)
+// Module 14026 (useBadBundleFilter)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 

@@ -1,5 +1,5 @@
 // Module ID: 5672
-// Function ID: 48751
+// Function ID: 48761
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled

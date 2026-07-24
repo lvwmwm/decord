@@ -1,10 +1,10 @@
-// Module ID: 8202
-// Function ID: 64864
+// Module ID: 8246
+// Function ID: 65092
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 3781, 653, 1851, 44, 8203, 3776, 5638, 566, 8205, 3712, 2]
+// Dependencies: [57, 31, 3781, 653, 1851, 44, 8247, 3776, 5638, 566, 8249, 3712, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionSKUs, subscriptionCanDowngrade, useGetOrFetchSubscriptionPlan
 
-// Module 8202 (_createForOfIteratorHelperLoose)
+// Module 8246 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -112,7 +112,7 @@ function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, 
   }
   let obj = { oldPlanId: currentSubscriptionPlanIdForGroup, newPlanId };
   if (null == currentSubscriptionPlanIdForGroup) {
-    const CheckoutError2 = require(8203) /* _isNativeReflectConstruct */.CheckoutError;
+    const CheckoutError2 = require(8247) /* _isNativeReflectConstruct */.CheckoutError;
     obj = { message: "Current subscription has no plan in group" };
     obj.extraSentryInformation = obj;
     const prototype2 = CheckoutError2.prototype;
@@ -121,7 +121,7 @@ function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, 
   } else {
     if (currentSubscriptionPlanIdForGroup === closure_8.PREMIUM_YEAR_TIER_1) {
       if (newPlanId === closure_8.PREMIUM_MONTH_TIER_2) {
-        const CheckoutError = require(8203) /* _isNativeReflectConstruct */.CheckoutError;
+        const CheckoutError = require(8247) /* _isNativeReflectConstruct */.CheckoutError;
         obj = { message: "Unexpected plan switch" };
         obj.extraSentryInformation = obj;
         const prototype = CheckoutError.prototype;
@@ -200,7 +200,7 @@ export const useGetOrFetchSubscriptionPlan = function useGetOrFetchSubscriptionP
 };
 export const getSubscriptionPauseDurations = function getSubscriptionPauseDurations(status) {
   let iter2;
-  const keys = Object.keys(require(8205) /* PauseDuration */.PauseDuration);
+  const keys = Object.keys(require(8249) /* PauseDuration */.PauseDuration);
   const found = keys.filter((arg0) => isNaN(Number(arg0)));
   if (status.status !== constants.PAUSED) {
     let obj = { durations: found, currentDaysPaused: 0 };
@@ -217,7 +217,7 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
         let value = iter.value;
         let tmp8 = require;
         let tmp9 = dependencyMap;
-        if (require(8205) /* PauseDuration */.PauseDuration[value] > rounded) {
+        if (require(8249) /* PauseDuration */.PauseDuration[value] > rounded) {
           let arr = items.push(value);
         }
         iter2 = tmp7();

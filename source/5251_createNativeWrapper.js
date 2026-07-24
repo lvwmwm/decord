@@ -1,5 +1,5 @@
 // Module ID: 5251
-// Function ID: 45290
+// Function ID: 45295
 // Name: createNativeWrapper
 // Dependencies: [65, 31, 33, 5252]
 // Exports: default

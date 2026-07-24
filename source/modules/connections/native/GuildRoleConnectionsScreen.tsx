@@ -1,12 +1,12 @@
-// Module ID: 9992
-// Function ID: 77249
+// Module ID: 10024
+// Function ID: 77443
 // Name: GuildRoleConnectionsScreen
-// Dependencies: [57, 31, 27, 1857, 1194, 1917, 1910, 653, 33, 4130, 689, 1273, 4066, 566, 675, 4324, 5048, 4098, 9993, 1934, 9983, 9990, 4814, 1392, 3976, 5459, 1212, 1920, 9989, 5508, 4126, 9994, 2]
+// Dependencies: [57, 31, 27, 1857, 1194, 1917, 1910, 653, 33, 4130, 689, 1273, 4066, 566, 675, 4324, 5048, 4098, 10025, 1934, 10015, 10022, 4814, 1392, 3976, 4126, 1212, 1920, 10021, 5506, 10026, 2]
 // Exports: default
 
-// Module 9992 (GuildRoleConnectionsScreen)
+// Module 10024 (GuildRoleConnectionsScreen)
 import _slicedToArray from "_slicedToArray";
-import UserSummaryItem from "UserSummaryItem";
+import set from "set";
 import get_ActivityIndicator from "wrapURL";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_9 from "_isNativeReflectConstruct";
@@ -63,7 +63,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
   const React = obj1.useStateFromStores(items1, () => outer1_9.getId());
   let obj2 = guildId(566);
   const items2 = [closure_10];
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => outer1_10.getMember(guildId, UserSummaryItem));
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => outer1_10.getMember(guildId, set));
   let tmp3 = callback(React.useState([]), 2);
   const first = tmp3[0];
   let closure_7 = tmp3[1];
@@ -92,7 +92,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     const intl = guildId(1212).intl;
     obj2 = { helpdeskArticleUrl: onCloseModal(1920).getArticleURL(constants.CONNECTION_DETAILS) };
     obj1.children = intl.format(guildId(1212).t["Y+TsEV"], obj2);
-    const items5 = [callback2(guildId(5459).TextWithIOSLinkWorkaround, obj1), ];
+    const items5 = [callback2(guildId(4126).Text, obj1), ];
     let obj3 = {
       style: tmp.verifiedRoles,
       children: found.map((id) => {
@@ -148,7 +148,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
           }
           let items = [tmp5, outer1_14(onCloseModal(tmp[29]), { style: tmp.verifiedRoleIcon, guildId: closure_0, role: id, size: 24 }), , ];
           let obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp.verifiedRoleName, children: id.name };
-          items[2] = outer1_14(guildId(tmp[30]).Text, obj2);
+          items[2] = outer1_14(guildId(tmp[25]).Text, obj2);
           const obj3 = {
             style: tmp.platformIconContainer,
             users: [],
@@ -302,7 +302,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
           const tmp4 = first;
           obj3.avatarSize = guildId(tmp[11]).AvatarSizes.XSMALL;
           obj3.withPlusCount = true;
-          items[3] = outer1_14(onCloseModal(tmp[31]), obj3);
+          items[3] = outer1_14(onCloseModal(tmp[30]), obj3);
           obj.children = items;
           return tmp3(tmp4, obj, id.id);
         })

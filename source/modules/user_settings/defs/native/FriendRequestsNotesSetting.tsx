@@ -1,9 +1,9 @@
-// Module ID: 14570
-// Function ID: 111088
+// Module ID: 14620
+// Function ID: 111411
 // Name: toggle
-// Dependencies: [7662, 10095, 1212, 3803, 12863, 2]
+// Dependencies: [7751, 10127, 1212, 3803, 12915, 2]
 
-// Module 14570 (toggle)
+// Module 14620 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -21,7 +21,7 @@ const toggle = createToggle.createToggle({
     return HideFriendRequestNotes.updateSetting(!arg0);
   },
   usePredicate() {
-    return importDefault(12863).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
+    return importDefault(12915).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
   }
 });
 const obj = {
@@ -39,7 +39,7 @@ const obj = {
     return HideFriendRequestNotes.updateSetting(!arg0);
   },
   usePredicate() {
-    return importDefault(12863).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
+    return importDefault(12915).useConfig({ location: "FriendRequestsNotesSetting" }).enabled;
   }
 };
 const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsNotesSetting.tsx");

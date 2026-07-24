@@ -1,5 +1,5 @@
 // Module ID: 1823
-// Function ID: 20004
+// Function ID: 20005
 // Name: useSystemKeyboardHeight
 // Dependencies: [1453, 1454, 2]
 // Exports: default, getSystemKeyboardHeight

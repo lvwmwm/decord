@@ -1,9 +1,9 @@
-// Module ID: 10086
-// Function ID: 78073
+// Module ID: 10118
+// Function ID: 78267
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 6, 7, 15, 17, 18, 9103, 653, 10087, 10088, 2]
+// Dependencies: [29, 6, 7, 15, 17, 18, 9141, 653, 10119, 10120, 2]
 
-// Module 10086 (_isNativeReflectConstruct)
+// Module 10118 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import closure_4 from "SearchAutocompleteSelectAnalyticsActions";
 import ME from "ME";

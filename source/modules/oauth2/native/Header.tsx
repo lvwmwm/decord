@@ -1,10 +1,10 @@
-// Module ID: 9031
-// Function ID: 70993
+// Module ID: 9070
+// Function ID: 71208
 // Name: Header
-// Dependencies: [31, 27, 653, 33, 4130, 689, 1392, 1273, 4126, 8523, 1360, 1212, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1392, 1273, 4126, 8568, 1360, 1212, 2]
 // Exports: default
 
-// Module 9031 (Header)
+// Module 9070 (Header)
 import "result";
 import { View } from "get ActivityIndicator";
 import { UserFlags } from "ME";
@@ -65,8 +65,8 @@ export default function Header(accountScopes) {
       const obj15 = require(1360) /* hasFlag */;
     }
     obj10.verified = hasFlagResult;
-    tmp9Result = callback(importDefault(8523), obj10);
-    const tmp12 = importDefault(8523);
+    tmp9Result = callback(importDefault(8568), obj10);
+    const tmp12 = importDefault(8568);
     const tmp9 = callback;
   }
   items3[1] = tmp9Result;

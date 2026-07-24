@@ -1,8 +1,8 @@
-// Module ID: 11471
-// Function ID: 89347
+// Module ID: 11501
+// Function ID: 89592
 // Dependencies: [31, 1348, 1849, 3759, 653, 33, 566, 5713, 1282, 5700, 5715, 5048, 4543, 1212, 1392, 3969, 2]
 
-// Module 11471
+// Module 11501
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

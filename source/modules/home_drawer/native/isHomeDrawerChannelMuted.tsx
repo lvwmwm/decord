@@ -1,10 +1,10 @@
-// Module ID: 14847
-// Function ID: 113273
+// Module ID: 14894
+// Function ID: 113594
 // Name: useIsHomeDrawerChannelMuted
 // Dependencies: [3760, 1352, 4325, 566, 2]
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 14847 (useIsHomeDrawerChannelMuted)
+// Module 14894 (useIsHomeDrawerChannelMuted)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { isThread } from "_callSuper";
 import closure_4 from "_isNativeReflectConstruct";

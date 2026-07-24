@@ -1,10 +1,10 @@
-// Module ID: 10964
-// Function ID: 85234
+// Module ID: 10991
+// Function ID: 85423
 // Name: PopoutCheck
-// Dependencies: [57, 31, 27, 1857, 1194, 1917, 1910, 1838, 10965, 4940, 653, 33, 4130, 689, 1212, 4939, 4082, 4126, 4066, 22, 3834, 4814, 9987, 8523, 1273, 1392, 3976, 44, 5464, 5484, 566, 675, 4324, 5048, 5187, 5508, 4543, 4098, 9990, 8492, 2]
+// Dependencies: [57, 31, 27, 1857, 1194, 1917, 1910, 1838, 10992, 4940, 653, 33, 4130, 689, 1212, 4939, 4082, 4126, 4066, 22, 3834, 4814, 10019, 8568, 1273, 1392, 3976, 44, 5462, 5482, 566, 675, 4324, 5048, 5187, 5506, 4543, 4098, 10022, 8537, 2]
 // Exports: default
 
-// Module 10964 (PopoutCheck)
+// Module 10991 (PopoutCheck)
 import _slicedToArray from "_slicedToArray";
 import expandLocation from "expandLocation";
 import get_ActivityIndicator from "invariant";
@@ -121,10 +121,10 @@ class PopoutChecks {
             }
             if (officialApplicationIds.includes(str)) {
               obj = { style: lib.botTag, guildId, roleColor: closure_5, size: 16 };
-              let tmp10 = outer1_16(lib(9987), obj);
+              let tmp10 = outer1_16(lib(10019), obj);
             } else if (null != tmp5) {
               obj = { style: lib.botTag, verified: false };
-              tmp10 = outer1_16(lib(8523), obj);
+              tmp10 = outer1_16(lib(8568), obj);
             }
             const obj1 = {};
             const items = [lib.popoutChecksGroup, ];

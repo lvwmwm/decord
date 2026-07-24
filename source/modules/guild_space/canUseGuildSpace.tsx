@@ -1,10 +1,10 @@
-// Module ID: 5609
-// Function ID: 47689
+// Module ID: 5607
+// Function ID: 47686
 // Name: canUseGuildSpace
-// Dependencies: [3758, 653, 5610, 566, 2]
+// Dependencies: [3758, 653, 5608, 566, 2]
 // Exports: canUseGuildSpace, useCanUseGuildSpace
 
-// Module 5609 (canUseGuildSpace)
+// Module 5607 (canUseGuildSpace)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Permissions } from "ME";
 
@@ -20,8 +20,8 @@ export const useCanUseGuildSpace = function useCanUseGuildSpace(id, useGuildActi
   if (null != id) {
     id = id.id;
   }
-  const guildSpaceExperimentEnabled = _require(5610).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
-  const obj = _require(5610);
+  const guildSpaceExperimentEnabled = _require(5608).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
+  const obj = _require(5608);
   const items = [_isNativeReflectConstruct];
   const items1 = [id];
   const stateFromStores = _require(566).useStateFromStores(items, () => {

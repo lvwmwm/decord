@@ -1,10 +1,10 @@
-// Module ID: 16437
-// Function ID: 128080
+// Module ID: 16484
+// Function ID: 128404
 // Name: getComponentPropsForScreen
-// Dependencies: [57, 31, 16424, 14094, 33, 4130, 44, 5788, 7607, 1212, 16438, 16423, 16439, 16459, 16462, 16464, 1557, 4337, 5450, 5519, 16466, 2]
+// Dependencies: [57, 31, 16471, 14144, 33, 4130, 44, 5788, 7696, 1212, 16485, 16470, 16486, 16506, 16509, 16511, 1557, 4337, 5450, 5517, 16513, 2]
 // Exports: default
 
-// Module 16437 (getComponentPropsForScreen)
+// Module 16484 (getComponentPropsForScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

@@ -1,10 +1,10 @@
-// Module ID: 9533
-// Function ID: 74268
+// Module ID: 9569
+// Function ID: 74477
 // Name: savedMessageDataToClient
 // Dependencies: [4351, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDeleteObjectToClient
 
-// Module 9533 (savedMessageDataToClient)
+// Module 9569 (savedMessageDataToClient)
 function savedMessageDataToClient(save_data) {
   const obj = { channelId: save_data.channel_id, messageId: save_data.message_id, savedAt: new Date(save_data.saved_at) };
   ({ author_summary: obj.authorSummary, channel_summary: obj.channelSummary, message_summary: obj.messageSummary } = save_data);

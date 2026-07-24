@@ -1,7 +1,7 @@
 // Module ID: 4347
-// Function ID: 38416
+// Function ID: 38417
 // Name: isReactiveCheckEnabled
-// Dependencies: [5, 57, 31, 4348, 3810, 1194, 4349, 1849, 7568, 7537, 653, 1197, 7483, 7538, 4956, 3809, 1881, 566, 11072, 686, 7542, 7536, 7488, 8284, 1212, 2716, 12693, 2]
+// Dependencies: [5, 57, 31, 4348, 3810, 1194, 4349, 1849, 7625, 7582, 653, 1197, 7563, 7583, 4956, 3809, 1881, 566, 11099, 686, 7587, 7581, 7568, 8328, 1212, 2716, 12744, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
 // Module 4347 (isReactiveCheckEnabled)
@@ -279,7 +279,7 @@ export const isAgeVerificationMessageWithConnectToTeenCta = function isAgeVerifi
               }
               let enabled = !tmp3;
               if (true === hasItem) {
-                const FamilyCenterConnectionPrereqExperiment = require(11072) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
+                const FamilyCenterConnectionPrereqExperiment = require(11099) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
                 obj = { location: "isAgeVerificationMessageWithConnectToTeenCta" };
                 enabled = FamilyCenterConnectionPrereqExperiment.getConfig(obj).enabled;
               }
@@ -328,7 +328,7 @@ export const useInitiateAgeVerification = function useInitiateAgeVerification(on
   obj = {
     loading: tmp3[0],
     initiateAgeVerification: current.useCallback((() => {
-      let closure_0 = classificationId(async (arg0) => {
+      let closure_0 = classificationId(async (arg0, arg1) => {
         outer2_4(true);
         let obj = entryPoint(flag[19]);
         obj.dispatch({ type: "INITIATE_AGE_VERIFICATION" });
@@ -338,6 +338,7 @@ export const useInitiateAgeVerification = function useInitiateAgeVerification(on
           tmp3 = outer2_3;
         }
         obj.classificationId = tmp3;
+        obj.vendor = arg1;
         const tmp4 = yield onComplete(flag[20]).requestAgeVerification(obj);
         const obj2 = onComplete(flag[20]);
         obj = { webviewUrl: tmp4.verification_webview_url, verificationRequestId: tmp4.verification_request_id, verificationVendorName: tmp4.verification_vendor_name, incodeParameters: tmp4.incode_parameters, onComplete: closure_0, onClose: outer2_6, onCancel: outer2_6, entryPoint: outer2_1, shouldShowExpressiveModal: outer2_2 };
@@ -366,7 +367,7 @@ export const useWatchAgeVerificationStatusChange = function useWatchAgeVerificat
     }
     return prop;
   });
-  const tmp2 = importDefault(8284)(stateFromStores);
+  const tmp2 = importDefault(8328)(stateFromStores);
   const obj = _require(566);
   const items1 = [closure_8];
   const stateFromStores1 = _require(566).useStateFromStores(items1, () => null != outer1_8.getSuspendedUserToken());

@@ -1,10 +1,10 @@
-// Module ID: 10268
-// Function ID: 79335
+// Module ID: 10297
+// Function ID: 79526
 // Name: createInlineChannelReact
-// Dependencies: [31, 33, 9969, 1273, 1327, 2]
+// Dependencies: [31, 33, 10001, 1273, 1327, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact
 
-// Module 10268 (createInlineChannelReact)
+// Module 10297 (createInlineChannelReact)
 import "result";
 import { jsxs } from "jsxProd";
 
@@ -83,14 +83,14 @@ const result = require("smartOutput").fileFinishedImporting("modules/markup/nati
 
 export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, output, key) {
   if (null == inContent.inContent) {
-    let smartOutputResult = require(9969) /* smartOutput */.smartOutput(inContent, output, key);
-    const obj3 = require(9969) /* smartOutput */;
+    let smartOutputResult = require(10001) /* smartOutput */.smartOutput(inContent, output, key);
+    const obj3 = require(10001) /* smartOutput */;
   } else {
     const obj = {};
-    const items = [output(inContent.inContent, key), " \u203A ", require(9969) /* smartOutput */.smartOutput(inContent, output, key)];
+    const items = [output(inContent.inContent, key), " \u203A ", require(10001) /* smartOutput */.smartOutput(inContent, output, key)];
     obj.children = items;
     smartOutputResult = jsxs(require(1273) /* Button */.LegacyText, {}, key.key);
-    const obj2 = require(9969) /* smartOutput */;
+    const obj2 = require(10001) /* smartOutput */;
   }
   return smartOutputResult;
 };

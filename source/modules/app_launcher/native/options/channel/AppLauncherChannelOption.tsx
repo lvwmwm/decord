@@ -1,10 +1,10 @@
-// Module ID: 11310
-// Function ID: 87985
+// Module ID: 11339
+// Function ID: 88225
 // Name: AppLauncherChannelOption
-// Dependencies: [57, 31, 1348, 33, 566, 4320, 11299, 11311, 4098, 11311, 1934, 2]
+// Dependencies: [57, 31, 1348, 33, 566, 4320, 11328, 11340, 4098, 11340, 1934, 2]
 // Exports: default
 
-// Module 11310 (AppLauncherChannelOption)
+// Module 11339 (AppLauncherChannelOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

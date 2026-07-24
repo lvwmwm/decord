@@ -1,9 +1,9 @@
-// Module ID: 9457
-// Function ID: 73682
+// Module ID: 9493
+// Function ID: 73891
 // Name: trackRoundtrip
-// Dependencies: [6, 7, 4222, 653, 6695, 675, 6919, 6698, 2]
+// Dependencies: [6, 7, 4222, 653, 6695, 675, 6918, 6698, 2]
 
-// Module 9457 (trackRoundtrip)
+// Module 9493 (trackRoundtrip)
 import getDeviceMetadata from "getDeviceMetadata";
 import isForegrounded from "isForegrounded";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ function trackRoundtrip(apiResponseTimestamp) {
     let obj = require(6695) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(6919)());
+    const merged = Object.assign(importDefault(6918)());
     obj["endpoint"] = apiResponseTimestamp.endpoint;
     obj["was_successful"] = apiResponseTimestamp.wasSuccessful;
     obj["api_latency_ms"] = diff;

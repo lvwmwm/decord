@@ -1,10 +1,10 @@
-// Module ID: 9693
-// Function ID: 75422
+// Module ID: 9727
+// Function ID: 75634
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [31, 27, 33, 4130, 689, 5464, 8559, 480, 9686, 4126, 1212, 2294, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5462, 8604, 480, 9720, 4126, 1212, 2294, 2]
 // Exports: default
 
-// Module 9693 (GiftingBadgeProgressBanner)
+// Module 9727 (GiftingBadgeProgressBanner)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,17 +37,17 @@ export default function GiftingBadgeProgressBanner(arg0) {
     items1 = [];
   }
   let obj = {};
-  const tmp2 = importDefault(5464);
+  const tmp2 = importDefault(5462);
   obj.name = require(480) /* isThrottled */.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
   obj.type = require(480) /* isThrottled */.ImpressionTypes.VIEW;
   obj.properties = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: tmp2(...items1).analyticsLocations };
-  importDefault(8559)(obj, { trackOnInitialLoad: true });
+  importDefault(8604)(obj, { trackOnInitialLoad: true });
   obj = { style: tmp.container };
   obj = { style: tmp.iconContainer };
   let tmp8 = null != nextTierIcon;
   if (tmp8) {
     const obj1 = { icon: nextTierIcon, size: 24 };
-    tmp8 = callback(importDefault(9686), obj1);
+    tmp8 = callback(importDefault(9720), obj1);
   }
   obj.children = tmp8;
   const items2 = [callback(View, obj), ];

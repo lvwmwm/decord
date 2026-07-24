@@ -1,9 +1,9 @@
-// Module ID: 14572
-// Function ID: 111096
+// Module ID: 14622
+// Function ID: 111419
 // Name: toggle
-// Dependencies: [7662, 10095, 1212, 2364, 3803, 14573, 14574, 2]
+// Dependencies: [7751, 10127, 1212, 2364, 3803, 14623, 2]
 
-// Module 14572 (toggle)
+// Module 14622 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -17,10 +17,7 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,
-  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged,
-  usePredicate() {
-    return require(14574) /* apexExperiment */.useNotifyFriendsOnProfileUpdateExperiment("NotifyFriendsOnProfileUpdateSetting");
-  }
+  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged
 });
 const obj = {
   useTitle() {
@@ -33,10 +30,7 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: require("explicitContentFromProto").NotifyFriendsOnProfileUpdate.useSetting,
-  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged,
-  usePredicate() {
-    return require(14574) /* apexExperiment */.useNotifyFriendsOnProfileUpdateExperiment("NotifyFriendsOnProfileUpdateSetting");
-  }
+  onValueChange: require("onNotifyFriendsOnProfileUpdateSettingsChanged").onNotifyFriendsOnProfileUpdateSettingsChanged
 };
 const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnProfileUpdateSetting.tsx");
 

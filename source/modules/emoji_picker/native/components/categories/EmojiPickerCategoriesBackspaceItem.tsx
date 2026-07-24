@@ -1,10 +1,10 @@
-// Module ID: 9424
-// Function ID: 73340
+// Module ID: 9460
+// Function ID: 73549
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: [31, 27, 653, 33, 4015, 1212, 9425, 2]
+// Dependencies: [31, 27, 653, 33, 4015, 1212, 9461, 2]
 // Exports: default
 
-// Module 9424 (EmojiPickerCategoriesBackspaceItem)
+// Module 9460 (EmojiPickerCategoriesBackspaceItem)
 import result from "result";
 import { Pressable } from "get ActivityIndicator";
 import { NODE_MARGIN } from "ME";
@@ -58,6 +58,6 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   obj.onPressOut = callback1;
   obj.onLongPress = callback;
   const items2 = [iconStyle, { opacity: 0.5 }];
-  obj.children = jsx(onBackspace(9425).BackspaceIcon, { style: items2 });
+  obj.children = jsx(onBackspace(9461).BackspaceIcon, { style: items2 });
   return <Pressable top={NODE_MARGIN} bottom={NODE_MARGIN} right={NODE_MARGIN} left={NODE_MARGIN} />;
 };

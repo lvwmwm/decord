@@ -1,10 +1,10 @@
-// Module ID: 5514
-// Function ID: 46956
+// Module ID: 5512
+// Function ID: 46953
 // Name: ChevronSmallRightIcon
 // Dependencies: [31, 33, 689, 3833, 5172, 2]
 // Exports: ChevronSmallRightIcon
 
-// Module 5514 (ChevronSmallRightIcon)
+// Module 5512 (ChevronSmallRightIcon)
 import "result";
 import { jsx } from "jsxProd";
 

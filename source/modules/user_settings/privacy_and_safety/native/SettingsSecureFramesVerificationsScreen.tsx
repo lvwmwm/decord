@@ -1,10 +1,10 @@
-// Module ID: 14520
-// Function ID: 110823
+// Module ID: 14570
+// Function ID: 111146
 // Name: VerificationListItem
-// Dependencies: [31, 27, 1849, 33, 4130, 8897, 5165, 1212, 4660, 5119, 4126, 6653, 1456, 566, 3969, 9122, 14517, 7879, 2]
+// Dependencies: [31, 27, 1849, 33, 4130, 8936, 5165, 1212, 4660, 5119, 4126, 6653, 1456, 566, 3969, 9158, 14567, 7527, 2]
 // Exports: default
 
-// Module 14520 (VerificationListItem)
+// Module 14570 (VerificationListItem)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -106,12 +106,12 @@ export default function SettingsSecureFramesVerificationsScreen() {
       const intl = userId(1212).intl;
       obj.title = intl.string(userId(1212).t["5b3FNI"]);
       obj.subtitle = outer1_2;
-      return outer2_6(userId(9122).GenericHeaderTitle, obj);
+      return outer2_6(userId(9158).GenericHeaderTitle, obj);
     };
     navigation.setOptions(obj);
   });
   const obj4 = navigation(3969);
-  secureFramesUserVerifiedKeys = userId(14517).useSecureFramesUserVerifiedKeys(userId);
+  secureFramesUserVerifiedKeys = userId(14567).useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
   const memo = secureFramesUserVerifiedKeys.useMemo(() => {
@@ -135,6 +135,6 @@ export default function SettingsSecureFramesVerificationsScreen() {
   obj = { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent };
   obj1 = { style: tmp.listFooter, children: <ClearVerificationsListFooter userId={userId} /> };
   obj.ListFooterComponent = <View style={tmp.listFooter}><ClearVerificationsListFooter userId={userId} /></View>;
-  obj.children = jsx(userId(7879).FlashList, { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent });
+  obj.children = jsx(userId(7527).FlashList, { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent });
   return <View keyExtractor={keyExtractor} getItemType={getItemType} renderItem={renderItem} data={memo} contentContainerStyle={tmp.listContent} />;
 };

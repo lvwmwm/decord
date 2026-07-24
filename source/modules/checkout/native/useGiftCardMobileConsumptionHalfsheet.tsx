@@ -1,5 +1,5 @@
 // Module ID: 5799
-// Function ID: 49566
+// Function ID: 49577
 // Name: useGiftCardMobileConsumptionHalfsheet
 // Dependencies: [57, 31, 5800, 3779, 1345, 482, 5801, 566, 1334, 5802, 4451, 686, 5806, 1934, 4098, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet

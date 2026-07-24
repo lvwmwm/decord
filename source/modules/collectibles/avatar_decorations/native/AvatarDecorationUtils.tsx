@@ -1,10 +1,10 @@
-// Module ID: 7838
-// Function ID: 62466
+// Module ID: 7927
+// Function ID: 62785
 // Name: getDecorationSizeForAvatarSize
-// Dependencies: [1393, 1273, 4098, 7839, 1934, 2]
+// Dependencies: [1393, 1273, 4098, 7928, 1934, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
-// Module 7838 (getDecorationSizeForAvatarSize)
+// Module 7927 (getDecorationSizeForAvatarSize)
 import { DECORATION_TO_AVATAR_RATIO as closure_3 } from "DECORATION_TO_AVATAR_RATIO";
 
 let result = require("showActionSheet").fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarDecorationUtils.tsx");
@@ -55,5 +55,5 @@ export const openAvatarDecorationActionSheet = function openAvatarDecorationActi
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
   importDefault(4098).hideActionSheet();
   const obj = importDefault(4098);
-  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(7839, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(7928, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
 };

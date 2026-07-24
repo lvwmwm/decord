@@ -1,10 +1,10 @@
-// Module ID: 8414
-// Function ID: 67003
+// Module ID: 8458
+// Function ID: 67231
 // Name: _updatePermission
-// Dependencies: [5, 8415, 686, 4140, 2]
+// Dependencies: [5, 8459, 686, 4140, 2]
 // Exports: init, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 8414 (_updatePermission)
+// Module 8458 (_updatePermission)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

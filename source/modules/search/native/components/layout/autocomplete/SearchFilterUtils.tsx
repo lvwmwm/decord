@@ -1,10 +1,10 @@
-// Module ID: 15324
-// Function ID: 116937
+// Module ID: 15371
+// Function ID: 117259
 // Name: getSearchTokenText
-// Dependencies: [9103, 9133, 653, 1212, 10970, 9657, 12852, 4647, 8461, 15325, 15327, 9029, 10079, 11406, 11398, 4098, 8389, 1934, 10076, 2]
+// Dependencies: [9141, 9169, 653, 1212, 10997, 9691, 12904, 4647, 8505, 15372, 15374, 9068, 10111, 11434, 11426, 4098, 8433, 1934, 10108, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 15324 (getSearchTokenText)
+// Module 15371 (getSearchTokenText)
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import ME from "ME";
@@ -15,11 +15,11 @@ let closure_6;
 let closure_7;
 let closure_8;
 function getSearchTokenText(arg0) {
-  let tmp = importDefault(10079)[arg0];
+  let tmp = importDefault(10111)[arg0];
   if (null == tmp) {
-    const result = require(10079) /* getMonths */.rebuildSearchTokenConfigs();
-    tmp = importDefault(10079)[arg0];
-    const obj = require(10079) /* getMonths */;
+    const result = require(10111) /* getMonths */.rebuildSearchTokenConfigs();
+    tmp = importDefault(10111)[arg0];
+    const obj = require(10111) /* getMonths */;
   }
   let key;
   if (null != tmp) {
@@ -106,21 +106,21 @@ export const getSearchTokenSubLabel = function getSearchTokenSubLabel(searchToke
 };
 export const getSearchTokenIcon = function getSearchTokenIcon(searchTokenType) {
   if (constants.FILTER_FROM === searchTokenType) {
-    return require(10970) /* UserIcon */.UserIcon;
+    return require(10997) /* UserIcon */.UserIcon;
   } else if (constants.FILTER_HAS === searchTokenType) {
-    return require(9657) /* AttachmentIcon */.AttachmentIcon;
+    return require(9691) /* AttachmentIcon */.AttachmentIcon;
   } else if (constants.FILTER_IN === searchTokenType) {
-    return require(12852) /* ChannelListMagnifyingGlassIcon */.ChannelListMagnifyingGlassIcon;
+    return require(12904) /* ChannelListMagnifyingGlassIcon */.ChannelListMagnifyingGlassIcon;
   } else if (constants.FILTER_MENTIONS === searchTokenType) {
     return require(4647) /* AtIcon */.AtIcon;
   } else if (constants.FILTER_ON === searchTokenType) {
-    return require(8461) /* CalendarIcon */.CalendarIcon;
+    return require(8505) /* CalendarIcon */.CalendarIcon;
   } else if (constants.FILTER_BEFORE === searchTokenType) {
-    return require(15325) /* CalendarMinusIcon */.CalendarMinusIcon;
+    return require(15372) /* CalendarMinusIcon */.CalendarMinusIcon;
   } else if (constants.FILTER_AFTER === searchTokenType) {
-    return require(15327) /* CalendarPlusIcon */.CalendarPlusIcon;
+    return require(15374) /* CalendarPlusIcon */.CalendarPlusIcon;
   } else if (constants.FILTER_AUTHOR_TYPE === searchTokenType) {
-    return require(9029) /* RobotIcon */.RobotIcon;
+    return require(9068) /* RobotIcon */.RobotIcon;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -156,12 +156,12 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(ou
                   obj = {
                     onSubmit(format) {
                       let closure_0 = format.format(outer4_6);
-                      let obj = callback(11406);
+                      let obj = callback(11434);
                       obj.updateSearchQuery(outer1_0, () => { ... });
                       obj = { searchContext: outer1_0, searchTokenType: outer1_1, location: outer1_2 };
-                      callback(10076).trackSearchFilterAdd(obj);
-                      const obj2 = callback(10076);
-                      const initialMessages = callback(11398).fetchInitialMessages(outer1_0);
+                      callback(10108).trackSearchFilterAdd(obj);
+                      const obj2 = callback(10108);
+                      const initialMessages = callback(11426).fetchInitialMessages(outer1_0);
                     }
                   };
                   obj.openLazy(callback(paths[17])(paths[16], paths.paths), "DatePicker", obj);
@@ -177,22 +177,22 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(ou
     (function handleSearchTokenPress(closure_0, closure_1, closure_2) {
       closure_0 = closure_1;
       const callback = closure_2;
-      callback(11406).updateSearchQuery(closure_0, (saveDraftTextInputValue) => {
+      callback(11434).updateSearchQuery(closure_0, (saveDraftTextInputValue) => {
         if (closure_1 === outer3_5.CONTEXT_MENU) {
           const result = saveDraftTextInputValue.saveDraftTextInputValue();
         }
         saveDraftTextInputValue.setTextInputValue(outer3_3);
         saveDraftTextInputValue.addTag({ type: outer3_4.PREFIX, searchTokenType: closure_0, location: closure_1, text: outer3_9(closure_0) });
       });
-      const obj = callback(11406);
-      callback(11398).syncAutocomplete(closure_0);
+      const obj = callback(11434);
+      callback(11426).syncAutocomplete(closure_0);
     })(closure_0, closure_1, closure_2);
   };
 };
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
   let closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(10079));
+  const keys = Object.keys(items(10111));
   const item = keys.forEach((token) => {
     let obj = textInputValue(outer1_2[12]);
     if (obj.isSearchFilterTokenType(token)) {

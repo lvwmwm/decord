@@ -1,10 +1,10 @@
-// Module ID: 10481
-// Function ID: 81138
+// Module ID: 10510
+// Function ID: 81330
 // Name: getNonTestModeUrlForApplication
 // Dependencies: [7372, 7370, 2]
 // Exports: default
 
-// Module 10481 (getNonTestModeUrlForApplication)
+// Module 10510 (getNonTestModeUrlForApplication)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_1 from "_isNativeReflectConstruct";
 

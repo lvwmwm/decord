@@ -1,5 +1,5 @@
 // Module ID: 5186
-// Function ID: 45022
+// Function ID: 45027
 // Name: RedesignBottomSheetTitleHeaderBase
 // Dependencies: [57, 31, 27, 33, 4130, 689, 1450, 3834, 1324, 4126, 5088, 2]
 // Exports: BottomSheetTitleHeader

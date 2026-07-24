@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 88965
+// Module ID: 11147
+// Function ID: 86751
 // Name: ChatInputParser
 // Dependencies: [6, 7, 27, 22, 2]
 // Exports: convertToNativeStyle
 
-// Module 11434 (ChatInputParser)
+// Module 11147 (ChatInputParser)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { processColor } from "get ActivityIndicator";
@@ -90,4 +90,4 @@ export const convertToNativeStyle = (color) => {
   return obj;
 };
 export const ChatInputParseResultDataType = { COMMAND_OPTION: 0, [0]: "COMMAND_OPTION", ROLE_HIGHLIGHT: 1, [1]: "ROLE_HIGHLIGHT" };
-export const ChatInputNodeType = { COMMAND_OPTION: 0, [0]: "COMMAND_OPTION", COMMAND_OPTION_WITH_VALUE: 1, [1]: "COMMAND_OPTION_WITH_VALUE", EMOJI_HIGHLIGHT: 2, [2]: "EMOJI_HIGHLIGHT", USER_HIGHLIGHT: 3, [3]: "USER_HIGHLIGHT", ROLE_HIGHLIGHT: 4, [4]: "ROLE_HIGHLIGHT", CHANNEL_HIGHLIGHT: 5, [5]: "CHANNEL_HIGHLIGHT", SILENT_HIGHLIGHT: 6, [6]: "SILENT_HIGHLIGHT" };
+export const ChatInputNodeType = { COMMAND_OPTION: 0, [0]: "COMMAND_OPTION", COMMAND_OPTION_WITH_VALUE: 1, [1]: "COMMAND_OPTION_WITH_VALUE", EMOJI_HIGHLIGHT: 2, [2]: "EMOJI_HIGHLIGHT", USER_HIGHLIGHT: 3, [3]: "USER_HIGHLIGHT", ROLE_HIGHLIGHT: 4, [4]: "ROLE_HIGHLIGHT", CHANNEL_HIGHLIGHT: 5, [5]: "CHANNEL_HIGHLIGHT", SILENT_HIGHLIGHT: 6, [6]: "SILENT_HIGHLIGHT", GAME_HIGHLIGHT: 7, [7]: "GAME_HIGHLIGHT", GAME_MENTION_INPUT: 8, [8]: "GAME_MENTION_INPUT" };

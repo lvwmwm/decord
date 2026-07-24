@@ -1,5 +1,5 @@
 // Module ID: 5788
-// Function ID: 49501
+// Function ID: 49512
 // Name: HeaderActionButton
 // Dependencies: [31, 1277, 33, 4130, 689, 4126, 4547, 4545, 4660, 2]
 

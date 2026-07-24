@@ -1,10 +1,10 @@
-// Module ID: 5479
-// Function ID: 46786
+// Module ID: 5477
+// Function ID: 46783
 // Name: ConnectionCardView
 // Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 4091, 4543, 2]
 // Exports: default
 
-// Module 5479 (ConnectionCardView)
+// Module 5477 (ConnectionCardView)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

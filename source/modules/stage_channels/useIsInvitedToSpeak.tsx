@@ -1,10 +1,10 @@
-// Module ID: 10630
-// Function ID: 82899
+// Module ID: 10659
+// Function ID: 83091
 // Name: useIsInvitedToSpeak
 // Dependencies: [1194, 1906, 566, 4314, 2]
 // Exports: default
 
-// Module 10630 (useIsInvitedToSpeak)
+// Module 10659 (useIsInvitedToSpeak)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 

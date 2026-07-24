@@ -1,5 +1,5 @@
 // Module ID: 5262
-// Function ID: 45383
+// Function ID: 45388
 // Name: updateHandlers
 // Dependencies: [5254, 5241, 5226, 5240, 5220]
 

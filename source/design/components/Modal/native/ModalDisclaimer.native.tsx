@@ -1,10 +1,10 @@
-// Module ID: 13088
-// Function ID: 100844
+// Module ID: 13140
+// Function ID: 101167
 // Name: ModalDisclaimer
 // Dependencies: [31, 27, 33, 4130, 4126, 2]
 // Exports: ModalDisclaimer
 
-// Module 13088 (ModalDisclaimer)
+// Module 13140 (ModalDisclaimer)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

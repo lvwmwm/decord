@@ -1,5 +1,5 @@
 // Module ID: 6174
-// Function ID: 50215
+// Function ID: 50226
 // Name: GemLevel2Illocon
 // Dependencies: [33, 5085, 6175, 2]
 // Exports: GemLevel2Illocon

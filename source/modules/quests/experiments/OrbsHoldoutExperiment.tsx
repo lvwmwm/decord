@@ -1,9 +1,9 @@
-// Module ID: 13988
-// Function ID: 107072
+// Module ID: 14038
+// Function ID: 107395
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 
-// Module 13988 (apexExperiment)
+// Module 14038 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-06-orbs-holdout", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };

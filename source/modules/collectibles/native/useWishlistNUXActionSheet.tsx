@@ -1,10 +1,10 @@
-// Module ID: 8670
-// Function ID: 68600
+// Module ID: 8711
+// Function ID: 68820
 // Name: useHasNeverWishlisted
-// Dependencies: [31, 6856, 1194, 1345, 566, 3946, 1334, 1336, 4098, 8671, 1934, 2]
+// Dependencies: [31, 6855, 1194, 1345, 566, 3946, 1334, 1336, 4098, 8712, 1934, 2]
 // Exports: default
 
-// Module 8670 (useHasNeverWishlisted)
+// Module 8711 (useHasNeverWishlisted)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

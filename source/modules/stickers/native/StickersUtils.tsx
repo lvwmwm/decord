@@ -1,10 +1,10 @@
-// Module ID: 9602
-// Function ID: 74837
+// Module ID: 9638
+// Function ID: 75048
 // Name: useStickerCategories
-// Dependencies: [31, 27, 1838, 1849, 9603, 653, 1314, 9600, 4799, 9604, 9605, 1555, 2]
+// Dependencies: [31, 27, 1838, 1849, 9639, 653, 1314, 9636, 4799, 9640, 9641, 1555, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 9602 (useStickerCategories)
+// Module 9638 (useStickerCategories)
 import result from "result";
 import { NativeModules } from "get ActivityIndicator";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

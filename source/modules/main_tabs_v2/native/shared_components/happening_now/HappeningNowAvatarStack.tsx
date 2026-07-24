@@ -1,10 +1,10 @@
-// Module ID: 14945
-// Function ID: 113923
+// Module ID: 14992
+// Function ID: 114244
 // Name: HappeningNowAvatarStack
-// Dependencies: [57, 31, 27, 1921, 11952, 33, 4130, 689, 1273, 3991, 624, 4542, 7873, 4126, 1827, 14946, 2]
+// Dependencies: [57, 31, 27, 1921, 11978, 33, 4130, 689, 1273, 3991, 624, 4542, 7961, 4126, 1827, 14993, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 14945 (HappeningNowAvatarStack)
+// Module 14992 (HappeningNowAvatarStack)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

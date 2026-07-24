@@ -1,10 +1,10 @@
-// Module ID: 13860
-// Function ID: 106096
+// Module ID: 13911
+// Function ID: 106420
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [653, 4815, 33, 4130, 1273, 4066, 1557, 6735, 5470, 5187, 5186, 1212, 5189, 5165, 4098, 8970, 1392, 3976, 5467, 5464, 5484, 2]
+// Dependencies: [653, 4815, 33, 4130, 1273, 4066, 1557, 6735, 5468, 5187, 5186, 1212, 5189, 5165, 4098, 9009, 1392, 3976, 5465, 5462, 5482, 2]
 // Exports: default
 
-// Module 13860 (AddApplicationIdentityTableRow)
+// Module 13911 (AddApplicationIdentityTableRow)
 import { AnalyticsLocations } from "ME";
 import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items1";
 import jsxProd from "jsxProd";
@@ -18,10 +18,10 @@ function AddApplicationIdentityTableRow(application) {
   let start;
   application = application.application;
   ({ start, end } = application);
-  const tmp = analyticsLocations(5467)(application);
+  const tmp = analyticsLocations(5465)(application);
   const startAuthorization = tmp.startAuthorization;
-  analyticsLocations = analyticsLocations(5464)(analyticsLocations(5484).ACTION_SHEET).analyticsLocations;
-  const tmp2 = analyticsLocations(5464);
+  analyticsLocations = analyticsLocations(5462)(analyticsLocations(5482).ACTION_SHEET).analyticsLocations;
+  const tmp2 = analyticsLocations(5462);
   let obj = startAuthorization(1273);
   const iconSource = application.getIconSource(obj.getIconSize(startAuthorization(1273).IconSizes.LARGE));
   obj = {

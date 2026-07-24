@@ -1,5 +1,5 @@
 // Module ID: 977
-// Function ID: 10505
+// Function ID: 10506
 // Name: getRNSentryModule
 // Dependencies: [57, 27, 978, 973, 980, 794, 989, 983, 990]
 // Exports: getDataFromUri, getRNSentryModule

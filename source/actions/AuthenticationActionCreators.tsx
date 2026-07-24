@@ -1,9 +1,9 @@
-// Module ID: 5590
-// Function ID: 47437
+// Module ID: 5588
+// Function ID: 47434
 // Name: dispatchLogout
-// Dependencies: [5, 5591, 1194, 5592, 653, 5593, 3, 4124, 686, 3982, 1198, 4337, 4942, 480, 507, 4029, 5594, 5595, 587, 684, 2]
+// Dependencies: [5, 5589, 1194, 5590, 653, 5591, 3, 4124, 686, 3982, 1198, 4337, 4942, 480, 507, 4029, 5592, 5593, 587, 684, 2]
 
-// Module 5590 (dispatchLogout)
+// Module 5588 (dispatchLogout)
 import closure_5 from "str2";
 import { setPromoEmailConsentState } from "setPromoEmailConsentState";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

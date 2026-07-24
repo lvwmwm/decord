@@ -1,5 +1,5 @@
 // Module ID: 780
-// Function ID: 8865
+// Function ID: 8866
 // Name: basePropertyDeep
 // Dependencies: [704]
 

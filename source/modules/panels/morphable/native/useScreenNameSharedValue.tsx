@@ -1,10 +1,10 @@
-// Module ID: 15693
-// Function ID: 121015
+// Module ID: 15740
+// Function ID: 121337
 // Name: useScreenNameSharedValue
 // Dependencies: [31, 3982, 3991, 2]
 // Exports: default
 
-// Module 15693 (useScreenNameSharedValue)
+// Module 15740 (useScreenNameSharedValue)
 import result from "result";
 
 const require = arg1;

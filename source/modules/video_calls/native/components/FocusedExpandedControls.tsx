@@ -1,10 +1,10 @@
-// Module ID: 10744
-// Function ID: 83508
+// Module ID: 10773
+// Function ID: 83700
 // Name: ExpandedControlItemIcon
-// Dependencies: [31, 27, 4149, 1194, 4191, 33, 4130, 689, 1273, 10745, 10746, 7495, 566, 10747, 1212, 10716, 477, 8836, 8861, 10689, 10748, 10733, 10749, 10750, 2]
+// Dependencies: [31, 27, 4149, 1194, 4191, 33, 4130, 689, 1273, 10774, 10775, 7636, 566, 10776, 1212, 10745, 477, 8875, 8900, 10718, 10777, 10762, 10778, 10779, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10744 (ExpandedControlItemIcon)
+// Module 10773 (ExpandedControlItemIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,9 +31,9 @@ function ExpandedControlItemIcon(iconSource) {
     if (iconSource.showIconSparkle) {
       obj = {};
       const items = [tmp14, , ];
-      obj = { style: tmp.sparkle2, source: importDefault(10745) };
+      obj = { style: tmp.sparkle2, source: importDefault(10774) };
       items[1] = callback(closure_4, obj);
-      const obj1 = { style: tmp.sparkle, source: importDefault(10746) };
+      const obj1 = { style: tmp.sparkle, source: importDefault(10775) };
       items[2] = callback(closure_4, obj1);
       obj.children = items;
       tmp10 = callback2(closure_3, obj);
@@ -61,16 +61,16 @@ function ExpandedControlItem(iconSource) {
   }
   if (tmp2) {
     let obj = { tintColor: importDefault(689).unsafe_rawColors.BRAND_500, renderIosBackground: true, value: switchValue, disabled, onValueChange: onSwitchValueChange };
-    trailing = callback(require(7495) /* Form */.FormSwitch, obj);
+    trailing = callback(require(7636) /* Form */.FormSwitch, obj);
   }
   obj = { disabled };
   obj = { iconSource: iconSource.iconSource, showIconSparkle };
   obj.leading = callback(ExpandedControlItemIcon, obj);
   const tmp = _createForOfIteratorHelperLoose();
-  obj.label = callback(require(7495) /* Form */.FormLabel, { text: label, style: _createForOfIteratorHelperLoose().formColor });
+  obj.label = callback(require(7636) /* Form */.FormLabel, { text: label, style: _createForOfIteratorHelperLoose().formColor });
   obj.onPress = onPress;
   obj.trailing = trailing;
-  return callback(require(7495) /* Form */.FormRow, obj);
+  return callback(require(7636) /* Form */.FormRow, obj);
 }
 ({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
@@ -105,18 +105,18 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (null != stateFromStores) {
     ownerId = stateFromStores.ownerId;
   }
-  const tmp3 = importDefault(10747);
-  ({ effectiveVolume, handleVolumeChange } = importDefault(10747)(ownerId, MediaEngineContextTypes.STREAM));
+  const tmp3 = importDefault(10776);
+  ({ effectiveVolume, handleVolumeChange } = importDefault(10776)(ownerId, MediaEngineContextTypes.STREAM));
   obj = {};
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.text = intl.string(require(1212) /* getSystemLocale */.t.pEAl4b);
   const items1 = [tmp.formColor, { marginBottom: 16 }];
   obj.style = items1;
-  const items2 = [callback(require(7495) /* Form */.FormLabel, obj), ];
+  const items2 = [callback(require(7636) /* Form */.FormLabel, obj), ];
   obj = {};
-  const tmp3Result = importDefault(10747)(ownerId, MediaEngineContextTypes.STREAM);
+  const tmp3Result = importDefault(10776)(ownerId, MediaEngineContextTypes.STREAM);
   const tmp6 = callback;
-  const tmp7 = importDefault(10716);
+  const tmp7 = importDefault(10745);
   let fn;
   if (obj4.isAndroid()) {
     fn = () => true;
@@ -131,7 +131,7 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   let tmp9 = null;
   if (null != stateFromStores) {
     const obj1 = { label: tmp8 };
-    tmp9 = callback(require(7495) /* Form */.FormRow, obj1);
+    tmp9 = callback(require(7636) /* Form */.FormRow, obj1);
   }
   return tmp9;
 };
@@ -139,7 +139,7 @@ export const AudioRouteButton = function AudioRouteButton(arg0) {
   let importDefault;
   let require;
   ({ channelId: require, isConnectedToVoiceChannel: importDefault } = arg0);
-  let obj = require(8836) /* _handleToggleVideo */;
+  let obj = require(8875) /* _handleToggleVideo */;
   obj = {
     onPress() {
       const result = outer1_0(outer1_2[18]).showAudioOutputSelector(closure_0, closure_1);
@@ -157,7 +157,7 @@ export const ScreenshareButton = function ScreenshareButton(arg0) {
   let onPress;
   let text;
   ({ channel, disabled } = arg0);
-  const tmp = importDefault(10689)(channel);
+  const tmp = importDefault(10718)(channel);
   const obj = {};
   let tmp4 = !tmp.isFeatureEnabled;
   ({ onPress, imgSource, text } = tmp);
@@ -175,12 +175,12 @@ export const DeafenButton = function DeafenButton(disabled) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(10733) /* NOOP */;
-  const deafHandler = obj.createDeafHandler(importDefault(10748)(disabled.channel));
+  let obj = require(10762) /* NOOP */;
+  const deafHandler = obj.createDeafHandler(importDefault(10777)(disabled.channel));
   if (deafHandler.deaf) {
-    let tmp5 = 10749;
+    let tmp5 = 10778;
   } else {
-    tmp5 = 10750;
+    tmp5 = 10779;
   }
   obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(tmp5) };
   const intl = require(1212) /* getSystemLocale */.intl;

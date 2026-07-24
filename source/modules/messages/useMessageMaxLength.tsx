@@ -1,10 +1,10 @@
-// Module ID: 7934
-// Function ID: 63344
+// Module ID: 8021
+// Function ID: 63656
 // Name: getMaxMessageLength_
 // Dependencies: [1849, 653, 3776, 566, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 7934 (getMaxMessageLength_)
+// Module 8021 (getMaxMessageLength_)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

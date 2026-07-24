@@ -1,10 +1,10 @@
-// Module ID: 13091
-// Function ID: 100852
+// Module ID: 13143
+// Function ID: 101175
 // Name: Badge
-// Dependencies: [31, 27, 1921, 653, 1275, 33, 4130, 689, 477, 566, 7533, 1827, 2]
+// Dependencies: [31, 27, 1921, 653, 1275, 33, 4130, 689, 477, 566, 7668, 1827, 2]
 // Exports: MaskedBadge
 
-// Module 13091 (Badge)
+// Module 13143 (Badge)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -108,7 +108,7 @@ class Badge {
         obj2.style = items3;
         tmp11 = closure_0;
         num3 = 11;
-        tmp10 = require("module_7533");
+        tmp10 = require("module_7668");
         obj4 = require("shortenAndLocalizeNumber");
         tmp12 = globalThis;
         _Math = Math;

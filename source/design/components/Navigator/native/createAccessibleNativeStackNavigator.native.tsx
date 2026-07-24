@@ -1,9 +1,9 @@
-// Module ID: 13085
-// Function ID: 100832
+// Module ID: 13137
+// Function ID: 101155
 // Name: useAccessibilityPatchedDescriptors
-// Dependencies: [31, 33, 5519, 1457, 9113, 2]
+// Dependencies: [31, 33, 5517, 1457, 9149, 2]
 
-// Module 13085 (useAccessibilityPatchedDescriptors)
+// Module 13137 (useAccessibilityPatchedDescriptors)
 import result from "result";
 import { jsx } from "jsxProd";
 import Link from "Link";
@@ -66,7 +66,7 @@ const navigatorFactory = Link.createNavigatorFactory(function AccessibleNativeSt
   obj["state"] = state;
   obj["navigation"] = navigation;
   obj["descriptors"] = useAccessibilityPatchedDescriptors(navigationBuilder.descriptors);
-  obj.children = jsx(require(9113) /* createNativeStackNavigator */.NativeStackView, {});
+  obj.children = jsx(require(9149) /* createNativeStackNavigator */.NativeStackView, {});
   return <NavigationContent />;
 });
 const result = require("NavigationStack").fileFinishedImporting("design/components/Navigator/native/createAccessibleNativeStackNavigator.native.tsx");

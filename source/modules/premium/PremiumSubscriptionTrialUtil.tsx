@@ -1,10 +1,10 @@
-// Module ID: 7426
-// Function ID: 59683
+// Module ID: 7834
+// Function ID: 61842
 // Name: useHasActiveTrial
 // Dependencies: [1849, 3782, 6688, 1851, 566, 6687, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 7426 (useHasActiveTrial)
+// Module 7834 (useHasActiveTrial)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

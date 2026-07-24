@@ -1,10 +1,10 @@
-// Module ID: 15403
-// Function ID: 117565
+// Module ID: 15450
+// Function ID: 117887
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [22, 15404, 15406, 2]
+// Dependencies: [22, 15451, 15453, 2]
 // Exports: createASTHighlighter
 
-// Module 15403 (_createForOfIteratorHelperLoose)
+// Module 15450 (_createForOfIteratorHelperLoose)
 import set from "MAX_MESSAGE_SEARCH_RESULTS_OFFSET";
 
 function _createForOfIteratorHelperLoose(iterable) {
@@ -105,7 +105,7 @@ function analyze(str) {
   const mapped1 = mapped.reject(isBlank).map(lowercase);
   const rejectResult = mapped.reject(isBlank);
   const rejectResult1 = mapped1.reject(isStopWord);
-  return mapped1.reject(isStopWord).map(require(15404) /* snowballStem */.snowballStem).value();
+  return mapped1.reject(isStopWord).map(require(15451) /* snowballStem */.snowballStem).value();
 }
 function shouldHighlight(arg0, set) {
   let flag = arg2;
@@ -118,7 +118,7 @@ function shouldHighlight(arg0, set) {
   } else if (isStopWord(tmp)) {
     return false;
   } else {
-    const snowballStemResult = require(15404) /* snowballStem */.snowballStem(tmp);
+    const snowballStemResult = require(15451) /* snowballStem */.snowballStem(tmp);
     if (flag) {
       const tmp6 = _createForOfIteratorHelperLoose(set.values());
       let iter = tmp6();
@@ -133,7 +133,7 @@ function shouldHighlight(arg0, set) {
     } else {
       return set.has(snowballStemResult);
     }
-    const obj = require(15404) /* snowballStem */;
+    const obj = require(15451) /* snowballStem */;
   }
 }
 function highlightAST(content, arg1, arg2) {

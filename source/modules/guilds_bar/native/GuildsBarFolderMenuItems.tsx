@@ -1,10 +1,10 @@
-// Module ID: 14815
-// Function ID: 113037
+// Module ID: 14862
+// Function ID: 113358
 // Name: getGuildFolderMenuItems
-// Dependencies: [5, 4970, 653, 9265, 1212, 12967, 1934, 5791, 14816, 2]
+// Dependencies: [5, 4970, 653, 9301, 1212, 13019, 1934, 5791, 14863, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 14815 (getGuildFolderMenuItems)
+// Module 14862 (getGuildFolderMenuItems)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticsSections } from "ME";
@@ -14,7 +14,7 @@ const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/Gu
 
 export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFolderMenuItems) {
   const _require = guildFolderMenuItems;
-  let obj = { IconComponent: _require(9265).EnvelopeIcon };
+  let obj = { IconComponent: _require(9301).EnvelopeIcon };
   const intl = _require(1212).intl;
   obj.label = intl.string(_require(1212).t.e6RscS);
   obj.action = function action() {

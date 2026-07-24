@@ -1,10 +1,10 @@
-// Module ID: 7588
-// Function ID: 60656
+// Module ID: 7677
+// Function ID: 60942
 // Name: _isNativeReflectConstruct
-// Dependencies: [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 620, 5517, 4126, 477, 3991, 7589, 7590, 5189, 7591, 5217, 3994, 2]
+// Dependencies: [29, 15, 17, 18, 57, 6, 7, 31, 27, 33, 22, 620, 5515, 4126, 477, 3991, 7678, 7679, 5189, 7680, 5217, 3994, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7588 (_isNativeReflectConstruct)
+// Module 7677 (_isNativeReflectConstruct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import module_3991 from "module_3991";
 import createFakeSharedValue from "createFakeSharedValue";
@@ -1619,7 +1619,7 @@ let closure_24 = importAllResult.memo(function _FastListSectionRenderer(disableW
   fastListInstance = children(section, fastListInstance);
   section = [fastListInstance, false];
   obj.children = section;
-  closure_15(importDefault(5517), obj);
+  closure_15(importDefault(5515), obj);
 });
 let closure_25 = importAllResult.memo(function _FastListSectionFooterRenderer(disableWrapper) {
   let children;
@@ -1648,7 +1648,7 @@ let closure_25 = importAllResult.memo(function _FastListSectionFooterRenderer(di
   children = children(section, fastListInstance);
   section = [children, false];
   obj.children = section;
-  closure_15(importDefault(5517), obj);
+  closure_15(importDefault(5515), obj);
 });
 let closure_26 = importAllResult.memo(function _FastListItemRenderer(disableWrapper) {
   let children;
@@ -1683,7 +1683,7 @@ let closure_26 = importAllResult.memo(function _FastListItemRenderer(disableWrap
   }
   const items = [childrenResult1, false];
   obj.children = items;
-  childrenResult = closure_15(importDefault(5517), obj);
+  childrenResult = closure_15(importDefault(5515), obj);
 });
 let closure_27 = importAllResult.memo(function _FastListHeaderFooterRenderer(disableWrapper) {
   let children;
@@ -1711,7 +1711,7 @@ let closure_27 = importAllResult.memo(function _FastListHeaderFooterRenderer(dis
   children = children(fastListInstance);
   fastListInstance = [children, false];
   obj.children = fastListInstance;
-  closure_15(importDefault(5517), obj);
+  closure_15(importDefault(5515), obj);
 });
 let closure_28 = importAllResult.memo(function _FastListSpacer(layoutSize) {
   layoutSize = layoutSize.layoutSize;
@@ -1725,7 +1725,7 @@ let closure_28 = importAllResult.memo(function _FastListSpacer(layoutSize) {
     tmp3 = obj;
   }
   obj.style = tmp3;
-  return closure_16(importDefault(5517), obj);
+  return closure_16(importDefault(5515), obj);
 });
 let closure_29 = (() => {
   class FastListScrollAnchor {

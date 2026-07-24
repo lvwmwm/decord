@@ -1,8 +1,8 @@
-// Module ID: 11392
-// Function ID: 88563
-// Dependencies: [31, 27, 3758, 4146, 653, 33, 4130, 689, 477, 8830, 4066, 3976, 10214, 624, 4963, 4957, 4950, 11393, 4126, 1212, 4543, 4654, 4658, 2]
+// Module ID: 11420
+// Function ID: 88802
+// Dependencies: [31, 27, 3758, 4146, 653, 33, 4130, 689, 477, 8869, 4066, 3976, 10244, 624, 4963, 4957, 4950, 11421, 4126, 1212, 4543, 4654, 4658, 2]
 
-// Module 11392
+// Module 11420
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -67,10 +67,10 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (small === undefined) {
     small = false;
   }
-  const tmp = voiceStates(8830)();
+  const tmp = voiceStates(8869)();
   let obj = channel(3976);
   let intl = callback(tmp, obj.isThemeLight(voiceStates(4066)()));
-  let obj1 = channel(10214);
+  let obj1 = channel(10244);
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
   let obj2 = channel(624);
   const items = [_isNativeReflectConstruct];
@@ -102,10 +102,10 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   }
   tmp7 = obj4.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
   obj = { channel, video: tmp12 };
-  const connectedUserLimit = channel(11393).useConnectedUserLimit(obj);
-  const obj7 = channel(11393);
+  const connectedUserLimit = channel(11421).useConnectedUserLimit(obj);
+  const obj7 = channel(11421);
   obj = { channel, video: tmp12, userCount: num };
-  let connectedUserLimitFormatted = channel(11393).useConnectedUserLimitFormatted(obj);
+  let connectedUserLimitFormatted = channel(11421).useConnectedUserLimitFormatted(obj);
   let tmp15 = !stateFromStores && !isConnectedToVoiceChannel && tmp10 != connectedUserLimitFormatted && num > 0;
   if (tmp15) {
     tmp15 = num >= connectedUserLimit / 2 + 1;

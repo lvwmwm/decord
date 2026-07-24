@@ -1,5 +1,5 @@
 // Module ID: 3751
-// Function ID: 28603
+// Function ID: 28604
 // Name: isRestrictedFromShowingGuildPurchaseEntryPoints
 // Dependencies: [3752, 1838, 3753, 653, 2]
 // Exports: isRestrictedFromMonetizationReapplication, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings

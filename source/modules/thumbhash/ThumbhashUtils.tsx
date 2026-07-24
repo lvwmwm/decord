@@ -1,10 +1,10 @@
-// Module ID: 15225
-// Function ID: 116118
+// Module ID: 15272
+// Function ID: 116440
 // Name: thumbHashToRGBA
-// Dependencies: [14083, 2]
+// Dependencies: [14133, 2]
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 15225 (thumbHashToRGBA)
+// Module 15272 (thumbHashToRGBA)
 function thumbHashToRGBA(arg0) {
   let obj = arg1;
   const _require = arg0;
@@ -303,6 +303,6 @@ let result = require("set").fileFinishedImporting("modules/thumbhash/ThumbhashUt
 
 export const createThumbhashImageFromPlaceholder = function createThumbhashImageFromPlaceholder(placeholder) {
   const tmp = thumbHashToRGBA(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0)), { detail: 1, pop: 1.1 });
-  return require(14083) /* thumbHashToRGBA */.rgbaToDataURL(tmp.w, tmp.h, tmp.rgba);
+  return require(14133) /* thumbHashToRGBA */.rgbaToDataURL(tmp.w, tmp.h, tmp.rgba);
 };
 export { thumbHashToRGBA };

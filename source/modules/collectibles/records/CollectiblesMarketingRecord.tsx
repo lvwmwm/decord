@@ -1,9 +1,9 @@
-// Module ID: 6797
-// Function ID: 53681
+// Module ID: 6796
+// Function ID: 53693
 // Name: CollectiblesMarketingsRecord
-// Dependencies: [6, 7, 6798, 6800, 6801, 6802, 6799, 2]
+// Dependencies: [6, 7, 6797, 6799, 6800, 6801, 6798, 2]
 
-// Module 6797 (CollectiblesMarketingsRecord)
+// Module 6796 (CollectiblesMarketingsRecord)
 import CollectiblesMarketingType from "CollectiblesMarketingType";
 import set from "set";
 import { CollectiblesMarketingBadgeRecord as closure_4 } from "CollectiblesMarketingBadgeRecord";

@@ -1,10 +1,10 @@
-// Module ID: 11133
-// Function ID: 86638
+// Module ID: 11163
+// Function ID: 86907
 // Name: ForumPostMediaAndroid
-// Dependencies: [57, 31, 27, 1278, 1277, 33, 4130, 689, 5085, 4533, 11134, 6835, 11135, 477, 5674, 4660, 7536, 7538, 11136, 3976, 3803, 10339, 1449, 2]
+// Dependencies: [57, 31, 27, 1278, 1277, 33, 4130, 689, 5085, 4533, 11164, 6834, 11165, 477, 5674, 4660, 7581, 7583, 11166, 3976, 3803, 10368, 1449, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail
 
-// Module 11133 (ForumPostMediaAndroid)
+// Module 11163 (ForumPostMediaAndroid)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -83,13 +83,13 @@ function ForumPostMedia(obscureReason) {
   const _require = obscureReason;
   const tmp = _createForOfIteratorHelperLoose();
   const ref = React.useRef(null);
-  let obj = _require(6835);
+  let obj = _require(6834);
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     obj = {};
     const merged = Object.assign(obscureReason);
-    let tmp6Result = callback2(ref(11135), obj);
-    const tmp19 = ref(11135);
+    let tmp6Result = callback2(ref(11165), obj);
+    const tmp19 = ref(11165);
   } else {
     let obj1 = _require(477);
     if (obj1.isAndroid()) {
@@ -158,7 +158,7 @@ function useSharedMediaProps(arg0) {
   let channel;
   let media;
   ({ channel, media } = arg0);
-  let obj = require(11136) /* getForumPostShouldObscure */;
+  let obj = require(11166) /* getForumPostShouldObscure */;
   const tmp = callback(obj.useShouldObscure({ media, channel }), 2);
   obj = { shouldObscure: tmp[0], obscureReason: tmp[1] };
   let str = "light";

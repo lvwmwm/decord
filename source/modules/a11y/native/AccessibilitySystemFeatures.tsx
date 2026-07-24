@@ -1,9 +1,9 @@
-// Module ID: 13368
-// Function ID: 102709
+// Module ID: 13421
+// Function ID: 103036
 // Name: toggleFeature
-// Dependencies: [27, 4122, 13127, 13369, 10019, 675, 13370, 2]
+// Dependencies: [27, 4122, 13180, 13422, 10051, 675, 13423, 2]
 
-// Module 13368 (toggleFeature)
+// Module 13421 (toggleFeature)
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags";
@@ -17,12 +17,12 @@ function toggleFeature(PREFERS_COLOR_SCHEME_DARK, useReducedMotion) {
   } else {
     closure_8 = tmp & ~PREFERS_COLOR_SCHEME_DARK;
   }
-  const tmp2 = require(13369) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK];
+  const tmp2 = require(13422) /* A11Y_FEATURE_MAP */.A11Y_FEATURE_MAP[PREFERS_COLOR_SCHEME_DARK];
   if (null != tmp2) {
     const obj = {};
     obj[tmp2] = useReducedMotion;
-    importDefault(10019)(require(13369) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
-    const tmp5 = importDefault(10019);
+    importDefault(10051)(require(13422) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, obj);
+    const tmp5 = importDefault(10051);
   }
 }
 ({ AccessibilityInfo: closure_3, Appearance: closure_4, AppState: closure_5 } = get_ActivityIndicator);
@@ -61,7 +61,7 @@ export default {
     if (arg0) {
       str = "reduce";
     }
-    const result = require(13370) /* setFontSize */.systemPrefersReducedMotionChanged(str);
+    const result = require(13423) /* setFontSize */.systemPrefersReducedMotionChanged(str);
     toggleFeature(AccessibilityFeatureFlags.REDUCED_MOTION, _isNativeReflectConstruct.useReducedMotion);
   },
   handleReduceTransparencyChanged(useReducedMotion) {

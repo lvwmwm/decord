@@ -1,5 +1,5 @@
 // Module ID: 4538
-// Function ID: 39829
+// Function ID: 39830
 // Name: MODERN_ANDROID_BLURRING_AVAILABLE
 // Dependencies: [4110, 4536, 4537, 2]
 

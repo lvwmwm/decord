@@ -1,10 +1,10 @@
-// Module ID: 13717
-// Function ID: 105227
+// Module ID: 13768
+// Function ID: 105551
 // Name: UserSettingsSensitiveContentFilters
-// Dependencies: [31, 7662, 33, 1212, 10095, 13718, 13550, 2]
+// Dependencies: [31, 7751, 33, 1212, 10127, 13769, 13601, 2]
 // Exports: default
 
-// Module 13717 (UserSettingsSensitiveContentFilters)
+// Module 13768 (UserSettingsSensitiveContentFilters)
 import result from "result";
 import { MobileSetting } from "MobileSetting";
 import jsxProd from "jsxProd";
@@ -42,8 +42,8 @@ export default function UserSettingsSensitiveContentFilters() {
     obj.sections = items1;
     return obj.createList(obj);
   }, []);
-  obj = { screen: require(13718) /* items */.SettingsScreen.SENSITIVE_CONTENT_FILTERS };
-  let items = [callback(importDefault(13718), obj), callback(importDefault(13550), { node: memo })];
+  obj = { screen: require(13769) /* items */.SettingsScreen.SENSITIVE_CONTENT_FILTERS };
+  let items = [callback(importDefault(13769), obj), callback(importDefault(13601), { node: memo })];
   obj.children = items;
   return callback2(closure_6, obj);
 };

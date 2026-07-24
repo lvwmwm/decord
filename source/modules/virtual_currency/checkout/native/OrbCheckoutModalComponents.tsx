@@ -1,10 +1,10 @@
-// Module ID: 11833
-// Function ID: 91727
+// Module ID: 11860
+// Function ID: 91965
 // Name: OrbCheckoutErrorCard
-// Dependencies: [31, 27, 33, 4130, 689, 4541, 7507, 4126, 11813, 1212, 11815, 11832, 5625, 5459, 4066, 11834, 4543, 3976, 8708, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4541, 7577, 4126, 11840, 1212, 11842, 11859, 5623, 4066, 11861, 4543, 3976, 8749, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 11833 (OrbCheckoutErrorCard)
+// Module 11860 (OrbCheckoutErrorCard)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,7 +34,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/virtual_currenc
 export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(error) {
   let obj = { style: _createForOfIteratorHelperLoose().errorCard };
   obj = { direction: "horizontal", spacing: 8, align: "flex-start" };
-  const items = [callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" }), ];
+  const items = [callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" }), ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: error.error };
   items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
@@ -54,7 +54,7 @@ export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product)
     let tmp5 = callback(closure_4, obj);
   } else {
     obj = { product, useOrbPrice: true };
-    tmp5 = callback(importDefault(11813), obj);
+    tmp5 = callback(importDefault(11840), obj);
   }
   const obj1 = { style: tmp.topRowWrapper };
   const obj2 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle };
@@ -77,33 +77,33 @@ export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSource
   const obj1 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.y0WGqP);
-  const items2 = [callback(require(4126) /* Text */.Text, obj1), callback(importDefault(11815), { orbAmount: orbAmount.orbBalance })];
+  const items2 = [callback(require(4126) /* Text */.Text, obj1), callback(importDefault(11842), { orbAmount: orbAmount.orbBalance })];
   obj.children = items2;
   items[1] = callback2(closure_4, obj);
   obj.children = items;
   return callback2(closure_4, obj);
 };
 export const OrbCheckoutLegalFinePrint = function OrbCheckoutLegalFinePrint() {
-  let obj = skuId(11832);
+  let obj = skuId(11859);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = React.useMemo(() => skuId(outer1_2[12]).getOrbCheckoutDisclaimerMessage(skuId), items);
   obj = { style: _createForOfIteratorHelperLoose().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo };
-  return callback(skuId(5459).TextWithIOSLinkWorkaround, obj);
+  return callback(skuId(4126).Text, obj);
 };
 export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPress) {
   let isRedeeming;
   let orbProductContext;
   const tmp = importDefault(4066)();
-  let obj = require(11832) /* useOrbCheckoutModalContextProvider */;
+  let obj = require(11859) /* useOrbCheckoutModalContextProvider */;
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   ({ isRedeeming, orbProductContext } = orbCheckoutModalContext);
-  const virtualCurrencyBalance = require(11834) /* useVirtualCurrencyBalance */.useVirtualCurrencyBalance();
+  const virtualCurrencyBalance = require(11861) /* useVirtualCurrencyBalance */.useVirtualCurrencyBalance();
   if (null != orbProductContext) {
     const orbPriceAmount = orbProductContext.orbPriceAmount;
   }
   obj = {};
-  const obj2 = require(11834) /* useVirtualCurrencyBalance */;
+  const obj2 = require(11861) /* useVirtualCurrencyBalance */;
   const tmp4 = closure_6;
   let str = "primary";
   if (obj4.isThemeDark(tmp)) {
@@ -121,7 +121,7 @@ export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPr
     str2 = "control-overlay-primary-text-default";
   }
   obj.color = str2;
-  obj.icon = tmp5(require(8708) /* OrbsIcon */.OrbsIcon, obj);
+  obj.icon = tmp5(require(8749) /* OrbsIcon */.OrbsIcon, obj);
   obj.iconPosition = "start";
   obj.loading = isRedeeming;
   obj.onPress = onPress.onPress;

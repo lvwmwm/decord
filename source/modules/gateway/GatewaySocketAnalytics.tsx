@@ -1,10 +1,10 @@
-// Module ID: 12577
-// Function ID: 97355
+// Module ID: 12628
+// Function ID: 97676
 // Name: prettyPrintTrace_
 // Dependencies: [29, 1849, 653, 20, 14, 675, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 12577 (prettyPrintTrace_)
+// Module 12628 (prettyPrintTrace_)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 11348
-// Function ID: 88225
+// Module ID: 11377
+// Function ID: 88465
 // Name: EnteringAnimation
-// Dependencies: [31, 27, 4122, 33, 4130, 4547, 689, 4131, 4134, 566, 8829, 11157, 3991, 5453, 11349, 11182, 2]
+// Dependencies: [31, 27, 4122, 33, 4130, 4547, 689, 4131, 4134, 566, 8868, 11187, 3991, 5453, 11378, 11212, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 11348 (EnteringAnimation)
+// Module 11377 (EnteringAnimation)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -73,13 +73,13 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
-  let obj1 = require(8829) /* useGradientBottom */;
+  let obj1 = require(8868) /* useGradientBottom */;
   const gradientBottom = obj1.useGradientBottom();
-  importDefault(11157)({ channelId: channelId.channelId });
+  importDefault(11187)({ channelId: channelId.channelId });
   obj = {};
   obj = { entering: closure_11, exiting: closure_13, style: items1, collapsable: false };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
-  obj1 = { collapsable: false, style: tmp.glowLottie, source: require(11349) /* items */, autoPlay: !stateFromStores };
+  obj1 = { collapsable: false, style: tmp.glowLottie, source: require(11378) /* items */, autoPlay: !stateFromStores };
   const items2 = [callback(importDefault(5453), obj1), , ];
   const items3 = [tmp.glowMask, gradientBottom];
   items2[1] = callback(closure_3, { collapsable: false, style: items3 });
@@ -89,7 +89,7 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   const obj3 = { collapsable: false, style: tmp.trinketsLottie };
   const obj2 = { collapsable: false, style: tmp.fakeButton };
   const tmp5 = importDefault(5453);
-  obj3.source = require(11182) /* items1 */;
+  obj3.source = require(11212) /* items1 */;
   obj3.autoPlay = !stateFromStores;
   items4[1] = callback(importDefault(5453), obj3);
   obj.children = items4;

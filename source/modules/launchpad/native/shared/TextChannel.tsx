@@ -1,9 +1,9 @@
-// Module ID: 15667
-// Function ID: 120829
-// Dependencies: [31, 27, 5039, 1921, 1348, 1277, 4326, 33, 4130, 15659, 689, 14872, 5650, 566, 4320, 9137, 14206, 5723, 4549, 15668, 4574, 11179, 10255, 3808, 15670, 7918, 15055, 15660, 4660, 15671, 15672, 15663, 15666, 2]
+// Module ID: 15714
+// Function ID: 121151
+// Dependencies: [31, 27, 5039, 1921, 1348, 1277, 4326, 33, 4130, 15706, 689, 14919, 5650, 566, 4320, 9173, 14256, 5723, 4549, 15715, 4574, 11209, 10286, 3808, 15717, 8005, 15102, 15707, 4660, 15718, 15719, 15710, 15713, 2]
 
-// Module 15667
-import importAllResult from "module_15663";
+// Module 15714
+import importAllResult from "module_15710";
 import { View } from "items";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -19,7 +19,7 @@ const require = arg1;
 ({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 let closure_12 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { flex: 1, borderRadius: importDefault(15659)().container.borderRadius, marginBottom: 1 };
+  obj = { flex: 1, borderRadius: importDefault(15706)().container.borderRadius, marginBottom: 1 };
   obj.pressable = obj;
   obj = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_MUTED, borderRadius: importDefault(689).radii.md };
   obj.selectedBorder = obj;
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
   let arr4;
   let dependencyMap;
   const isForumLikeChannelResult = channel.isForumLikeChannel();
-  let obj = channel(14872);
+  let obj = channel(14919);
   const channelUnreadBadgeState = obj.useChannelUnreadBadgeState(channel, flag);
   ({ newChannel, unread, resolvedUnreadSetting, mentionCount } = channelUnreadBadgeState);
   ({ optInEnabled, isMentionLowImportance } = channelUnreadBadgeState);
@@ -69,7 +69,7 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
   if (null != tmp6) {
     const tmp7 = tmp6;
   }
-  let obj4 = channel(9137);
+  let obj4 = channel(9173);
   const unreadThreadsCountForParent = obj4.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   obj = {};
   let tmp10 = unread;
@@ -77,7 +77,7 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
     tmp10 = !flag;
   }
   obj.unread = tmp10;
-  const tmp9Result = arr4(14206)(channel, obj);
+  const tmp9Result = arr4(14256)(channel, obj);
   let obj6 = channel(5723);
   const isChannelSpoilerGated = obj6.useIsChannelSpoilerGated(channel);
   let obj7 = channel(4549);
@@ -85,18 +85,18 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
   let obj8 = channel(566);
   const items2 = [closure_6];
   const stateFromStores2 = obj8.useStateFromStores(items2, () => outer1_6.locale);
-  const tmp15 = arr4(15668)();
-  const tmp9 = arr4(14206);
+  const tmp15 = arr4(15715)();
+  const tmp9 = arr4(14256);
   ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(4574)(channel.id));
-  arr4 = arr4(11179)(channel);
+  arr4 = arr4(11209)(channel);
   if (null != tmp9Result) {
     if (!isChannelSpoilerGated) {
       obj = { channel, message: tmp9Result, color: "text-muted", muted: flag, layout: channel(3808).ChannelListLayoutTypes.COMPACT };
-      let result = callback(channel(10255).ChannelRowPreview, obj);
+      let result = callback(channel(10286).ChannelRowPreview, obj);
     }
     dependencyMap = tmp24;
     const items3 = [arr4.length > 0, arr4];
-    const isActivitiesInTextEnabled = channel(7918).useIsActivitiesInTextEnabled(channel.id);
+    const isActivitiesInTextEnabled = channel(8005).useIsActivitiesInTextEnabled(channel.id);
     const memo = importAllResult.useMemo(() => {
       let tmp = null;
       if (_undefined) {
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
       }
       return tmp;
     }, items3);
-    const obj13 = channel(7918);
+    const obj13 = channel(8005);
     obj1 = {};
     const items4 = [tmp3.pressable, ];
     let rowSelected;
@@ -117,23 +117,23 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
     obj1.underlayColor = tmp15;
     obj2 = { color: tmp15 };
     obj1.androidRippleConfig = getThemedRippleConfig(obj2);
-    const tmp28 = arr4(15660);
+    const tmp28 = arr4(15707);
     const tmp29 = closure_11;
-    const merged = Object.assign(channel(15671).useTextChannelPressEvents(channel, flag2));
-    const obj16 = channel(15671);
+    const merged = Object.assign(channel(15718).useTextChannelPressEvents(channel, flag2));
+    const obj16 = channel(15718);
     obj3 = { channel, unread, mentionCount };
-    const merged1 = Object.assign(channel(15672).getChannelAccessibilityProps(obj3));
+    const merged1 = Object.assign(channel(15719).getChannelAccessibilityProps(obj3));
     if (selected) {
       obj4 = { style: tmp3.selectedBorder, pointerEvents: "none" };
       selected = callback(View, obj4);
     }
     const items5 = [selected, ];
     const obj5 = { channel, channelCategoryName: tmp7, subtitle: result, hasActiveThreads: obj1.useHasActiveThreads(channel).hasActiveThreads };
-    const obj17 = channel(15672);
+    const obj17 = channel(15719);
     obj6 = { unread, resolvedUnreadSetting, muted: flag };
-    obj5.unreadBadge = callback(arr4(15663), obj6);
+    obj5.unreadBadge = callback(arr4(15710), obj6);
     obj7 = {};
-    const tmp42 = arr4(15672);
+    const tmp42 = arr4(15719);
     if (newChannel) {
       newChannel = optInEnabled;
     }
@@ -161,7 +161,7 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
     }
     obj7.newPostCount = tmp47;
     obj7.locale = stateFromStores2;
-    obj5.mentionBadge = arr4(15666)(obj7);
+    obj5.mentionBadge = arr4(15713)(obj7);
     obj5.unread = unread;
     obj5.resolvedUnreadSetting = resolvedUnreadSetting;
     obj5.mentionCount = mentionCount;
@@ -182,7 +182,7 @@ const memoResult = importAllResult.memo(function TextChannel(channel) {
   }
   const tmp16 = arr4(4574)(channel.id);
   obj8 = { subtitle: channel.subtitle, muted: flag, channelId: channel.id, guildId: channel.guild_id };
-  result = channel(15670).renderChannelSubtitle(obj8);
+  result = channel(15717).renderChannelSubtitle(obj8);
 });
 let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/shared/TextChannel.tsx");
 

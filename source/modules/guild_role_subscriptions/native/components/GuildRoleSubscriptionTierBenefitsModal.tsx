@@ -1,10 +1,10 @@
-// Module ID: 16439
-// Function ID: 128109
+// Module ID: 16486
+// Function ID: 128433
 // Name: AddBenefitButton
-// Dependencies: [57, 31, 27, 14117, 16424, 14094, 33, 4130, 689, 8474, 5085, 16440, 4126, 1212, 1392, 16441, 12905, 14121, 44, 16419, 7495, 7494, 16442, 16443, 16436, 14101, 16415, 14116, 16445, 16446, 16455, 14120, 16456, 16428, 2]
+// Dependencies: [57, 31, 27, 14167, 16471, 14144, 33, 4130, 689, 8518, 5085, 16487, 4126, 1212, 1392, 16488, 12957, 14171, 44, 16466, 7636, 8521, 16489, 16490, 16483, 14151, 16462, 14166, 16492, 16493, 16502, 14170, 16503, 16475, 2]
 // Exports: GuildRoleSubscriptionTierChannelBenefitsModal, GuildRoleSubscriptionTierIntangibleBenefitsModal
 
-// Module 16439 (AddBenefitButton)
+// Module 16486 (AddBenefitButton)
 import _slicedToArray from "_slicedToArray";
 import getBenefitKey from "getBenefitKey";
 import get_ActivityIndicator from "_createForOfIteratorHelperLoose";
@@ -46,8 +46,8 @@ function AddBenefitButton(disabled) {
   obj.disabled = flag;
   obj = {};
   const tmp2 = closure_13;
-  const tmp3 = importDefault(8474);
-  obj.source = importDefault(16440);
+  const tmp3 = importDefault(8518);
+  obj.source = importDefault(16487);
   const items1 = [callback(importDefault(5085), obj), ];
   const obj1 = { style: tmp.addBenefitLabel, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label };
   items1[1] = callback(require(4126) /* Text */.Text, obj1);
@@ -96,7 +96,7 @@ function EmojiRowLabel(emoji) {
   const tmp2 = importDefault(5085);
   obj.uri = importDefault(1392).getEmojiURL({ id: emoji.id, animated: emoji.animated, size: 48 });
   obj.source = obj;
-  const items = [callback(tmp2, obj), callback(importDefault(16441), { name: emoji.name })];
+  const items = [callback(tmp2, obj), callback(importDefault(16488), { name: emoji.name })];
   obj.children = items;
   return callback2(closure_14, obj);
 }
@@ -107,8 +107,8 @@ function ListFooterSection(onChangeTrialInterval) {
   onChangeTrialInterval = onChangeTrialInterval.onChangeTrialInterval;
   ({ interval, trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = options(12905)();
-  const tmp3 = options(14121)(interval);
+  const tmp2 = options(12957)();
+  const tmp3 = options(14171)(interval);
   options = tmp3.options;
   const selectedOption = tmp3.selectedOption;
   const items = [onChangeTrialInterval, options];
@@ -121,7 +121,7 @@ function ListFooterSection(onChangeTrialInterval) {
     }
     onChangeTrialInterval(value);
   }, items);
-  let obj = onChangeTrialInterval(16419);
+  let obj = onChangeTrialInterval(16466);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   obj = { style: tmp.listFooterContainer };
   obj = {};
@@ -130,7 +130,7 @@ function ListFooterSection(onChangeTrialInterval) {
   obj.value = null != selectedOption;
   obj.onValueChange = callback;
   obj.disabled = roleSubscriptionSettingsDisabled;
-  const items1 = [callback(onChangeTrialInterval(7495).FormSwitchRow, obj), ];
+  const items1 = [callback(onChangeTrialInterval(7636).FormSwitchRow, obj), ];
   const obj1 = {};
   if (null == selectedOption) {
     const disabledSection = tmp.disabledSection;
@@ -146,7 +146,7 @@ function ListFooterSection(onChangeTrialInterval) {
   const obj3 = { style: tmp2.header };
   const intl3 = onChangeTrialInterval(1212).intl;
   obj3.children = intl3.string(onChangeTrialInterval(1212).t.m1KuWd);
-  items3[1] = callback(options(7494), obj3);
+  items3[1] = callback(options(8521), obj3);
   const obj4 = { style: null, variant: "text-sm/medium", color: "text-default" };
   const items4 = [, ];
   ({ listFooterSectionDescription: arr5[0], listFooterText: arr5[1] } = tmp);
@@ -158,7 +158,7 @@ function ListFooterSection(onChangeTrialInterval) {
   let tmp14 = !tmp5;
   let tmp15 = tmp14;
   const tmp10 = closure_7;
-  const tmp11 = options(7494);
+  const tmp11 = options(8521);
   const tmp12 = callback;
   const tmp7 = closure_13;
   const tmp8 = closure_7;
@@ -167,12 +167,12 @@ function ListFooterSection(onChangeTrialInterval) {
     tmp15 = roleSubscriptionSettingsDisabled;
   }
   obj5.disabled = tmp15;
-  items3[3] = tmp12(options(16442), obj5);
+  items3[3] = tmp12(options(16489), obj5);
   const obj6 = { style: tmp2.header };
-  const tmp13 = options(16442);
+  const tmp13 = options(16489);
   const intl5 = onChangeTrialInterval(1212).intl;
   obj6.children = intl5.string(onChangeTrialInterval(1212).t["/JD9oe"]);
-  items3[4] = callback(options(7494), obj6);
+  items3[4] = callback(options(8521), obj6);
   const obj7 = { style: null, variant: "text-sm/medium", color: "text-default" };
   const items5 = [, ];
   ({ listFooterSectionDescription: arr6[0], listFooterText: arr6[1] } = tmp);
@@ -181,13 +181,13 @@ function ListFooterSection(onChangeTrialInterval) {
   obj7.children = intl6.string(onChangeTrialInterval(1212).t.Cg5eBm);
   items3[5] = callback(onChangeTrialInterval(4126).Text, obj7);
   const obj8 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit };
-  const tmp16 = options(7494);
+  const tmp16 = options(8521);
   const tmp17 = callback;
   if (null != selectedOption) {
     tmp14 = roleSubscriptionSettingsDisabled;
   }
   obj8.disabled = tmp14;
-  items3[6] = tmp17(options(16443), obj8);
+  items3[6] = tmp17(options(16490), obj8);
   obj1.children = items3;
   items1[1] = tmp9(tmp10, obj1);
   obj.children = items1;
@@ -238,9 +238,9 @@ function Content(arg0) {
         (function deleteBenefit(ref_type, closure_1) {
           let closure_0 = closure_1;
           if (ref_type === constants.CHANNEL) {
-            outer2_8((arr) => arr.filter(/* F128127 */ function() { ... }));
+            outer2_8((arr) => arr.filter(/* F128451 */ function() { ... }));
           } else {
-            outer2_10((arr) => arr.filter(/* F128129 */ function() { ... }));
+            outer2_10((arr) => arr.filter(/* F128453 */ function() { ... }));
           }
         })(benefit.ref_type, closure_1);
       },
@@ -280,11 +280,11 @@ function Content(arg0) {
     tmp4 = tmp3;
   }
   dependencyMap = tmp4;
-  let obj = require(16436) /* useEditStateContext */;
+  let obj = require(16483) /* useEditStateContext */;
   const editStateContext = obj.useEditStateContext();
   editStateId = editStateContext.editStateId;
   guildId = editStateContext.guildId;
-  let obj1 = require(14101) /* _createForOfIteratorHelperLoose */;
+  let obj1 = require(14151) /* _createForOfIteratorHelperLoose */;
   const subscriptionListing = obj1.useSubscriptionListing(editStateId);
   let role_id;
   if (null != subscriptionListing) {
@@ -295,30 +295,30 @@ function Content(arg0) {
     tmp8 = role_id;
   }
   c6 = tmp8;
-  const tmp9 = editStateId(importAll(14116).useChannelBenefits(editStateId), 2);
+  const tmp9 = editStateId(importAll(14166).useChannelBenefits(editStateId), 2);
   first = tmp9[0];
   AllChannelAccessOptions = tmp9[1];
-  let obj3 = importAll(14116);
-  const tmp11 = editStateId(importAll(14116).useIntangibleBenefits(editStateId), 2);
+  let obj3 = importAll(14166);
+  const tmp11 = editStateId(importAll(14166).useIntangibleBenefits(editStateId), 2);
   first1 = tmp11[0];
   closure_10 = tmp11[1];
-  const obj4 = importAll(14116);
-  const tmp13 = editStateId(importAll(14116).useTierEmojiIds(editStateId, guildId), 2);
+  const obj4 = importAll(14166);
+  const tmp13 = editStateId(importAll(14166).useTierEmojiIds(editStateId, guildId), 2);
   first2 = tmp13[0];
   callback = tmp13[1];
-  const obj5 = importAll(14116);
-  const obj6 = importAll(14116);
-  [tmp16, tmp17] = editStateId(importAll(14116).useTrialInterval(editStateId), 2);
-  let tmp15 = editStateId(importAll(14116).useTrialInterval(editStateId), 2);
-  const obj7 = importAll(14116);
-  [tmp19, tmp20] = editStateId(importAll(14116).useTrialLimit(editStateId), 2);
-  const tmp18 = editStateId(importAll(14116).useTrialLimit(editStateId), 2);
-  const tmp21 = editStateId(importAll(14116).useChannelAccessFormat(editStateId, guildId), 2);
+  const obj5 = importAll(14166);
+  const obj6 = importAll(14166);
+  [tmp16, tmp17] = editStateId(importAll(14166).useTrialInterval(editStateId), 2);
+  let tmp15 = editStateId(importAll(14166).useTrialInterval(editStateId), 2);
+  const obj7 = importAll(14166);
+  [tmp19, tmp20] = editStateId(importAll(14166).useTrialLimit(editStateId), 2);
+  const tmp18 = editStateId(importAll(14166).useTrialLimit(editStateId), 2);
+  const tmp21 = editStateId(importAll(14166).useChannelAccessFormat(editStateId, guildId), 2);
   const first3 = tmp21[0];
   c13 = tmp23;
-  const obj8 = importAll(14116);
-  roleSubscriptionSettingsDisabled = require(16419) /* useRoleSubscriptionSettingsDisabled */.useRoleSubscriptionSettingsDisabled();
-  const tmp25 = importDefault(16445)(guildId);
+  const obj8 = importAll(14166);
+  roleSubscriptionSettingsDisabled = require(16466) /* useRoleSubscriptionSettingsDisabled */.useRoleSubscriptionSettingsDisabled();
+  const tmp25 = importDefault(16492)(guildId);
   _createForOfIteratorHelperLoose = tmp25;
   let items = [first2, tmp25, true === onlyIntangible, first3 === AllChannelAccessOptions.ALL_CHANNELS_ACCESS, true === onlyChannels, tmp4, first, first1];
   let tmp27 = null;
@@ -403,13 +403,13 @@ function Content(arg0) {
       }
       return tmp3Result;
     },
-    keyExtractor: require(14120) /* getBenefitKey */.getBenefitKey
+    keyExtractor: require(14170) /* getBenefitKey */.getBenefitKey
   };
   let tmp32 = null;
   if (true !== onlyIntangible) {
-    if (importDefault(16415)(guildId).isFullServerGating) {
+    if (importDefault(16462)(guildId).isFullServerGating) {
       obj1 = { style: tmp.allChannelsSwitch, channelAccessFormat: first3, setChannelAccessFormat: tmp21[1], disabled: roleSubscriptionSettingsDisabled };
-      tmp32 = callback(importDefault(16456), obj1);
+      tmp32 = callback(importDefault(16503), obj1);
     } else {
       tmp32 = null;
     }
@@ -426,15 +426,15 @@ function Content(arg0) {
       onPress() {
         if (type === addBenefit.EMOJI) {
           let obj = { guildId: outer1_5, subscriptionRoleId: outer1_6, initialTierEmojiIds: outer1_11, onSave: outer1_12, listingId: outer1_4 };
-          callback(16446).showEditEmojisModal(obj);
-          const obj3 = callback(16446);
+          callback(16493).showEditEmojisModal(obj);
+          const obj3 = callback(16493);
         } else {
           if (tmp === addBenefit.CHANNEL) {
             let INTANGIBLE = constants.CHANNEL;
           } else {
             INTANGIBLE = constants.INTANGIBLE;
           }
-          obj = callback(16446);
+          obj = callback(16493);
           obj = { guildId: outer1_5, type: INTANGIBLE, onSave: outer1_16, listingId: outer1_4 };
           const result = obj.showCreateBenefitModal(obj);
         }
@@ -495,7 +495,7 @@ export const GuildRoleSubscriptionTierChannelBenefitsModal = function GuildRoleS
   const merged = Object.assign(arg0);
   obj["scrollable"] = false;
   obj["children"] = callback(GuildRoleSubscriptionTierBenefitsTab, { onlyChannels: true });
-  return callback(importDefault(16428), obj);
+  return callback(importDefault(16475), obj);
 };
 export const GuildRoleSubscriptionTierIntangibleBenefitsModal = function GuildRoleSubscriptionTierIntangibleBenefitsModal(arg0) {
   const obj = {};
@@ -508,5 +508,5 @@ export const GuildRoleSubscriptionTierIntangibleBenefitsModal = function GuildRo
   const merged = Object.assign(arg0);
   obj["scrollable"] = false;
   obj["children"] = callback(GuildRoleSubscriptionTierBenefitsTab, { onlyIntangible: true });
-  return callback(importDefault(16428), obj);
+  return callback(importDefault(16475), obj);
 };

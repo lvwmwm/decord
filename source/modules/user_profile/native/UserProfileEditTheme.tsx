@@ -1,10 +1,10 @@
-// Module ID: 13590
-// Function ID: 104440
+// Module ID: 13641
+// Function ID: 104764
 // Name: ColorSwatch
-// Dependencies: [31, 27, 33, 4130, 689, 665, 5509, 4660, 1212, 9106, 4126, 7887, 8236, 7812, 4276, 3946, 1334, 13567, 4098, 13591, 1934, 8968, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 665, 5507, 4660, 1212, 9142, 4126, 7974, 8280, 7903, 4276, 3946, 1334, 13618, 4098, 13642, 1934, 9007, 2]
 // Exports: default
 
-// Module 13590 (ColorSwatch)
+// Module 13641 (ColorSwatch)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function ColorSwatch(color) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = require(665) /* pad2 */;
   const int2hexResult = obj.int2hex(color);
-  let obj1 = require(5509) /* getHigherContrastColor */;
+  let obj1 = require(5507) /* getHigherContrastColor */;
   const items = [WHITE, PRIMARY_530];
   obj = { style: tmp.colorSwatchContainer };
   const higherContrastColor = obj1.getHigherContrastColor({ backgroundColor: int2hexResult, colors: items });
@@ -34,7 +34,7 @@ function ColorSwatch(color) {
   obj.style = items1;
   obj.onPress = onPress;
   obj1 = { size: "xs", color: higherContrastColor, style: tmp.dropperIcon };
-  obj.children = callback(require(9106) /* PencilIcon */.PencilIcon, obj1);
+  obj.children = callback(require(9142) /* PencilIcon */.PencilIcon, obj1);
   const items2 = [callback(require(4660) /* PressableBase */.PressableOpacity, obj, color), ];
   const obj2 = { variant: "text-sm/normal", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: label };
   items2[1] = callback(require(4126) /* Text */.Text, obj2);

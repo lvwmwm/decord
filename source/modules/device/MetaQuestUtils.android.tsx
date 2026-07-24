@@ -1,5 +1,5 @@
 // Module ID: 1553
-// Function ID: 17591
+// Function ID: 17592
 // Name: isMetaQuest
 // Dependencies: [647, 1554, 2]
 // Exports: isMetaQuest, isQuestRelease

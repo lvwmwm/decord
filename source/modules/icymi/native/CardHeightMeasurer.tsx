@@ -1,9 +1,9 @@
-// Module ID: 15247
-// Function ID: 116348
+// Module ID: 15294
+// Function ID: 116670
 // Name: CardHeightMeasurer
-// Dependencies: [31, 27, 33, 15180, 8321, 2]
+// Dependencies: [31, 27, 33, 15227, 8365, 2]
 
-// Module 15247 (CardHeightMeasurer)
+// Module 15294 (CardHeightMeasurer)
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -14,7 +14,7 @@ const memoResult = importAllResult.memo((children) => {
   const items = [itemId];
   return <View onLayout={importAllResult.useCallback((nativeEvent) => {
     outer1_1(outer1_2[4]).setCardHeight(itemId, nativeEvent.nativeEvent.layout.height);
-  }, items)} pointerEvents="box-none" style={{ width: importAllResult.useContext(itemId(15180).ICYMIContext).width, alignSelf: "center" }}>{arg0.children}</View>;
+  }, items)} pointerEvents="box-none" style={{ width: importAllResult.useContext(itemId(15227).ICYMIContext).width, alignSelf: "center" }}>{arg0.children}</View>;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/CardHeightMeasurer.tsx");
 

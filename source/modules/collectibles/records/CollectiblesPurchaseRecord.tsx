@@ -1,9 +1,9 @@
-// Module ID: 6803
-// Function ID: 53703
+// Module ID: 6802
+// Function ID: 53715
 // Name: CollectiblesPurchaseRecord
 // Dependencies: [6, 7, 6777, 6778, 6776, 655, 653, 4171, 2]
 
-// Module 6803 (CollectiblesPurchaseRecord)
+// Module 6802 (CollectiblesPurchaseRecord)
 import ME from "ME";
 import getPricesFromServer from "getPricesFromServer";
 import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord";

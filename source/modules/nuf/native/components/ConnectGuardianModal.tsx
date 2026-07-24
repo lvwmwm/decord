@@ -1,10 +1,10 @@
-// Module ID: 16135
-// Function ID: 125075
+// Module ID: 16182
+// Function ID: 125399
 // Name: ConnectGuardianModal
-// Dependencies: [31, 27, 653, 6770, 33, 4130, 689, 1557, 16136, 675, 5586, 4126, 1212, 2198, 5459, 13784, 4543, 2]
+// Dependencies: [31, 27, 653, 6770, 33, 4130, 689, 1557, 16183, 675, 5584, 4126, 1212, 2198, 13835, 4543, 2]
 // Exports: default
 
-// Module 16135 (ConnectGuardianModal)
+// Module 16182 (ConnectGuardianModal)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -39,7 +39,7 @@ const result = require("ME").fileFinishedImporting("modules/nuf/native/component
 export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
   let tmp = _createForOfIteratorHelperLoose();
-  let obj = onComplete(16136);
+  let obj = onComplete(16183);
   const connectGuardianGate = obj.useConnectGuardianGate();
   const dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -63,7 +63,7 @@ export default function ConnectGuardianModal(route) {
     const items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     obj.style = items1;
-    obj.children = callback(onComplete(5586).ActivityIndicator, {});
+    obj.children = callback(onComplete(5584).ActivityIndicator, {});
     let tmp8 = callback(View, obj);
   } else {
     obj = { style: tmp.container };
@@ -76,7 +76,7 @@ export default function ConnectGuardianModal(route) {
     const intl2 = onComplete(1212).intl;
     const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
     obj3.children = intl2.format(connectGuardianGate(2198).F4GT2S, obj4);
-    items2[1] = callback(onComplete(5459).TextWithIOSLinkWorkaround, obj3);
+    items2[1] = callback(onComplete(4126).Text, obj3);
     obj1.children = items2;
     const items3 = [callback2(View, obj1), , , ];
     const obj5 = { style: tmp.cardSection };
@@ -86,7 +86,7 @@ export default function ConnectGuardianModal(route) {
     const items4 = [callback(onComplete(4126).Text, obj6), ];
     const obj7 = { shareActions: "compact" };
     ({ linkCode: obj10.linkCode, expiresAt: obj10.expiresAt, refresh: obj10.onRefresh } = connectGuardianGate);
-    items4[1] = callback(onComplete(13784).ConnectGuardianCard, obj7);
+    items4[1] = callback(onComplete(13835).ConnectGuardianCard, obj7);
     obj5.children = items4;
     items3[1] = callback2(View, obj5);
     const obj8 = { style: tmp.grow };

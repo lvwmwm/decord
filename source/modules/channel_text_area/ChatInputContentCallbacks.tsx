@@ -1,10 +1,10 @@
-// Module ID: 11119
-// Function ID: 86520
+// Module ID: 11149
+// Function ID: 86789
 // Name: areMemberGroupsHydrated
-// Dependencies: [57, 31, 5658, 5688, 5664, 7934, 22, 2]
+// Dependencies: [57, 31, 5658, 5688, 5664, 8021, 22, 2]
 // Exports: useHereMentionCallback
 
-// Module 11119 (areMemberGroupsHydrated)
+// Module 11149 (areMemberGroupsHydrated)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -51,7 +51,7 @@ export const useHereMentionCallback = function useHereMentionCallback(arg0, arg1
   let closure_0 = arg0;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  const tmp = importDefault(7934)();
+  const tmp = importDefault(8021)();
   const callback = tmp;
   const tmp2 = callback(first.useState(false), 2);
   first = tmp2[0];

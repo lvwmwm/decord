@@ -1,10 +1,10 @@
-// Module ID: 7743
-// Function ID: 61532
+// Module ID: 7836
+// Function ID: 61859
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 7743 (apexExperiment)
+// Module 7836 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { name: "2026-02-referral-reminder-dc", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

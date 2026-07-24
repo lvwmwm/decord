@@ -1,10 +1,10 @@
-// Module ID: 14929
-// Function ID: 113819
+// Module ID: 14976
+// Function ID: 114140
 // Name: getActiveTextChannels
-// Dependencies: [1352, 1348, 3758, 4325, 12631, 653, 1355, 1327, 2]
+// Dependencies: [1352, 1348, 3758, 4325, 12682, 653, 1355, 1327, 2]
 // Exports: getActiveTextChannels
 
-// Module 14929 (getActiveTextChannels)
+// Module 14976 (getActiveTextChannels)
 import { isTextChannel } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

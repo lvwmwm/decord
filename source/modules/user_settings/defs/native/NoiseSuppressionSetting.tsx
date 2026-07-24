@@ -1,9 +1,9 @@
-// Module ID: 14145
-// Function ID: 108850
+// Module ID: 14195
+// Function ID: 109173
 // Name: toggle
-// Dependencies: [4177, 7662, 566, 10723, 10095, 1212, 2]
+// Dependencies: [4177, 7751, 566, 10752, 10127, 1212, 2]
 
-// Module 14145 (toggle)
+// Module 14195 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
@@ -19,8 +19,8 @@ createToggle = {
     return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getNoiseSuppression());
   },
   onValueChange: function onNoiseSuppressionSettingValueChange(arg0) {
-    const NoiseSuppressionOpt = require(10723) /* getSelectedNoiseSuppressionOption */.NoiseSuppressionOpt;
-    const result = require(10723) /* getSelectedNoiseSuppressionOption */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+    const NoiseSuppressionOpt = require(10752) /* getSelectedNoiseSuppressionOption */.NoiseSuppressionOpt;
+    const result = require(10752) /* getSelectedNoiseSuppressionOption */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
   },
   usePredicate: function useHasNoiseSuppressionSetting() {
     const items = [_isNativeReflectConstruct];

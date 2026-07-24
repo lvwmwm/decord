@@ -1,8 +1,8 @@
-// Module ID: 16183
-// Function ID: 125575
-// Dependencies: [16184, 4471, 1212, 16186, 2]
+// Module ID: 16230
+// Function ID: 125899
+// Dependencies: [16231, 4471, 1212, 16233, 2]
 
-// Module 16183
+// Module 16230
 import importDefaultResult from "_isNativeReflectConstruct";
 
 const require = arg1;
@@ -14,7 +14,7 @@ importDefaultResult = new importDefaultResult(() => {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj.body = intl2.string(require(1212) /* getSystemLocale */.t["7KjxW3"]);
   obj.isDismissable = false;
-  obj.onConfirm = importDefault(16186);
+  obj.onConfirm = importDefault(16233);
   return obj.show(obj);
 });
 const result = require("getSystemLocale").fileFinishedImporting("modules/urgent_system_dm/native/UrgentSystemDMManager.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 13992
-// Function ID: 107144
+// Module ID: 14042
+// Function ID: 107467
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4976, 13993, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4976, 14043, 566, 686, 2]
 
-// Module 13992 (_isNativeReflectConstruct)
+// Module 14042 (_isNativeReflectConstruct)
 import roundToNearestPixel from "roundToNearestPixel";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

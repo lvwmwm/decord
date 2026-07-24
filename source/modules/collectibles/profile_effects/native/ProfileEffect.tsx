@@ -1,10 +1,10 @@
-// Module ID: 8218
-// Function ID: 64950
+// Module ID: 8262
+// Function ID: 65178
 // Name: usePreloadProfileEffect
-// Dependencies: [57, 31, 27, 4122, 6651, 33, 4130, 1450, 8219, 8220, 8221, 8223, 566, 668, 8224, 8222, 5085, 8225, 2]
+// Dependencies: [57, 31, 27, 4122, 6651, 33, 4130, 1450, 8263, 8264, 8265, 8267, 566, 668, 8268, 8266, 5085, 8269, 2]
 // Exports: default
 
-// Module 8218 (usePreloadProfileEffect)
+// Module 8262 (usePreloadProfileEffect)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -237,8 +237,8 @@ export default function WrappedProfileEffect(skuId) {
   let obj = require(566) /* initialize */;
   const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.useReducedMotion);
-  const tmp = importDefault(8225)(skuId.skuId);
-  useThumbnail = require(8219) /* randomizeProfileEffect */.usePotentiallyRandomizedProfileEffect(tmp);
+  const tmp = importDefault(8269)(skuId.skuId);
+  useThumbnail = require(8263) /* randomizeProfileEffect */.usePotentiallyRandomizedProfileEffect(tmp);
   if (null == useThumbnail) {
     return null;
   } else {

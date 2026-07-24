@@ -1,5 +1,5 @@
 // Module ID: 4369
-// Function ID: 38769
+// Function ID: 38770
 // Name: _httpGetWithCountryCodeQuery
 // Dependencies: [5, 1194, 3778, 3779, 3782, 653, 4370, 4368, 4449, 1426, 4451, 507, 477, 1212, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
@@ -42,7 +42,7 @@ async function _httpGetWithCountryCodeQuery(arg0, arg1) {
           return new Promise((() => {
             let closure_0 = outer4_2(async (arg0) => {
               function wait() { ... }
-              return (/* F38776 */ function*() { ... })();
+              return (/* F38777 */ function*() { ... })();
             });
             return function() {
               return callback(...arguments);

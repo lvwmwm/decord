@@ -1,5 +1,5 @@
 // Module ID: 5695
-// Function ID: 49037
+// Function ID: 49047
 // Name: _createHandoffToken
 // Dependencies: [5, 653, 491, 507, 2]
 

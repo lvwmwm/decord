@@ -1,5 +1,5 @@
 // Module ID: 6534
-// Function ID: 50755
+// Function ID: 50766
 // Name: StickersSpotIllustration
 // Dependencies: [33, 5085, 6535, 2]
 // Exports: StickersSpotIllustration

@@ -1,5 +1,5 @@
 // Module ID: 992
-// Function ID: 10646
+// Function ID: 10647
 // Name: reactNativeErrorHandlersIntegration
 // Dependencies: [978, 793, 794, 790, 993]
 
@@ -182,7 +182,7 @@ arg5.reactNativeErrorHandlersIntegration = function reactNativeErrorHandlersInte
                   _ErrorUtils.setGlobalHandler((arg0, arg1) => {
                     let closure_0 = arg0;
                     let closure_1 = arg1;
-                    return outer4_2(closure_0, undefined, undefined, /* F10663 */ function*() { ... });
+                    return outer4_2(closure_0, undefined, undefined, /* F10664 */ function*() { ... });
                   });
                 } else {
                   let debug = callback(outer3_1[2]).debug;

@@ -1,7 +1,7 @@
 // Module ID: 5736
-// Function ID: 49303
+// Function ID: 49314
 // Name: _startLurking
-// Dependencies: [5, 3759, 4051, 1838, 653, 1198, 5737, 5628, 5048, 5698, 5700, 675, 507, 1440, 2]
+// Dependencies: [5, 3759, 4051, 1838, 653, 1198, 5737, 5626, 5048, 5698, 5700, 675, 507, 1440, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
 // Module 5736 (_startLurking)

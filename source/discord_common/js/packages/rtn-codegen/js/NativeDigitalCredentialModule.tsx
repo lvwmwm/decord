@@ -1,9 +1,9 @@
-// Module ID: 7570
-// Function ID: 60593
+// Module ID: 7627
+// Function ID: 60743
 // Name: enforcing
 // Dependencies: [27, 2]
 
-// Module 7570 (enforcing)
+// Module 7627 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDigitalCredentialModule");

@@ -1,10 +1,10 @@
-// Module ID: 9580
-// Function ID: 74641
+// Module ID: 9616
+// Function ID: 74852
 // Name: isKlipyProvider
 // Dependencies: [653, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite
 
-// Module 9580 (isKlipyProvider)
+// Module 9616 (isKlipyProvider)
 import { SearchTypes } from "ME";
 
 function isKlipyProvider(providerName) {

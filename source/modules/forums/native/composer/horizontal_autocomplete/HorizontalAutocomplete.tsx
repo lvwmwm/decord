@@ -1,9 +1,9 @@
-// Module ID: 9641
-// Function ID: 75092
+// Module ID: 9677
+// Function ID: 75307
 // Name: HorizontalAutocompleteOption
-// Dependencies: [31, 27, 1910, 1838, 3767, 1849, 653, 33, 4130, 5052, 689, 3991, 4559, 4131, 1273, 4126, 3969, 566, 5489, 5490, 7806, 4593, 4320, 5085, 2]
+// Dependencies: [31, 27, 1910, 1838, 3767, 1849, 653, 33, 4130, 5052, 689, 3991, 4559, 4131, 1273, 4126, 3969, 566, 5487, 5488, 7897, 4593, 4320, 5085, 2]
 
-// Module 9641 (HorizontalAutocompleteOption)
+// Module 9677 (HorizontalAutocompleteOption)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -100,7 +100,7 @@ let obj3 = {
     const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getRole(closure_0, closure_1));
     let roleIconData = null;
     if (null != stateFromStores) {
-      let obj1 = require(5489) /* getRoleIconSource */;
+      let obj1 = require(5487) /* getRoleIconSource */;
       roleIconData = obj1.getRoleIconData(stateFromStores, 30);
     }
     obj = { onPress: onPress.onPress };
@@ -116,11 +116,11 @@ let obj3 = {
       obj1.source = tmp15;
       obj1.unicodeEmoji = roleIconData.unicodeEmoji;
       obj1.size = 24;
-      obj.children = closure_10(importDefault(5490), obj1);
+      obj.children = closure_10(importDefault(5488), obj1);
       tmp9Result = closure_10(closure_4, obj);
       const tmp10 = closure_4;
       const tmp11 = closure_10;
-      const tmp14 = importDefault(5490);
+      const tmp14 = importDefault(5488);
       const tmp9 = closure_10;
     }
     const items1 = [tmp9Result, ];
@@ -143,7 +143,7 @@ let obj3 = {
     channel(566);
     [][0] = channel;
     if (channel.type === ChannelTypes.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(7806);
+      let channelIconWithGuild = importDefault(7897);
     } else {
       let obj = channel(4593);
       channelIconWithGuild = obj.getChannelIconWithGuild(channel, tmp3);

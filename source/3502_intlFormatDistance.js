@@ -1,5 +1,5 @@
 // Module ID: 3502
-// Function ID: 26932
+// Function ID: 26933
 // Name: intlFormatDistance
 // Dependencies: [3371, 3395, 3396, 3398, 3399, 3401, 3406, 3412, 3209, 3210, 3388]
 // Exports: default

@@ -1,5 +1,5 @@
 // Module ID: 3843
-// Function ID: 32020
+// Function ID: 32021
 // Name: AccessibilityAnnouncer
 // Dependencies: [27, 3844, 2]
 

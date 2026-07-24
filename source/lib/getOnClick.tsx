@@ -1,10 +1,10 @@
-// Module ID: 8343
-// Function ID: 66107
+// Module ID: 8387
+// Function ID: 66335
 // Name: openInviteModal
-// Dependencies: [57, 5, 4167, 6758, 5613, 1194, 1917, 1838, 4115, 4349, 1906, 3947, 4970, 653, 655, 5614, 686, 4116, 7460, 8344, 1934, 5048, 5628, 8353, 4114, 4119, 6932, 3821, 675, 10524, 11087, 12209, 10486, 4140, 10827, 12213, 9734, 10465, 1443, 10919, 4981, 12214, 6773, 4324, 4321, 12215, 12217, 2]
+// Dependencies: [57, 5, 4167, 6758, 5611, 1194, 1917, 1838, 4115, 4349, 1906, 3947, 4970, 653, 655, 5612, 686, 4116, 7540, 8388, 1934, 5048, 5626, 8397, 4114, 4119, 6931, 3821, 675, 10553, 11114, 12236, 10515, 4140, 10856, 12240, 9768, 10494, 1443, 10946, 4981, 12241, 6773, 4324, 4321, 12242, 12244, 2]
 // Exports: default
 
-// Module 8343 (openInviteModal)
+// Module 8387 (openInviteModal)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -287,7 +287,7 @@ export default function getOnClick(outer1_0) {
           return true;
         };
       }
-      obj2 = _require(10465);
+      obj2 = _require(10494);
     }
   }
   if (null != findCodedLinkResult) {
@@ -403,6 +403,6 @@ export default function getOnClick(outer1_0) {
         return true;
       };
     }
-    obj9 = _require(12215);
+    obj9 = _require(12242);
   }
 };

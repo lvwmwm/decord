@@ -1,11 +1,11 @@
 // Module ID: 7441
-// Function ID: 59728
+// Function ID: 59817
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 7441 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "b10c11253ea31418fc5b5f03e59f065a", name: "hd_video", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "67f86c057cc3cdebb258af63ee3c92db", name: "UploadIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

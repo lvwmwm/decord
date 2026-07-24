@@ -1,10 +1,10 @@
-// Module ID: 10436
-// Function ID: 80377
+// Module ID: 10465
+// Function ID: 80569
 // Name: useShowChannelOptInNotice
-// Dependencies: [4325, 653, 1355, 6767, 566, 5607, 2]
+// Dependencies: [4325, 653, 1355, 6767, 566, 5605, 2]
 // Exports: default
 
-// Module 10436 (useShowChannelOptInNotice)
+// Module 10465 (useShowChannelOptInNotice)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { NULL_STRING_GUILD_ID } from "ME";
 import { ChannelFlags } from "set";
@@ -36,7 +36,7 @@ export default function useShowChannelOptInNotice(getGuildId) {
   if (null == guild_id) {
     guild_id = NULL_STRING_GUILD_ID;
   }
-  let canSeeOnboardingHome = _require(5607).useCanSeeOnboardingHome(guild_id);
+  let canSeeOnboardingHome = _require(5605).useCanSeeOnboardingHome(guild_id);
   if (null == getGuildId) {
     return false;
   } else {
@@ -54,5 +54,5 @@ export default function useShowChannelOptInNotice(getGuildId) {
     }
     return optInEnabledForGuild;
   }
-  const obj3 = _require(5607);
+  const obj3 = _require(5605);
 };

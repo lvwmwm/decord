@@ -1,10 +1,10 @@
-// Module ID: 8464
-// Function ID: 67522
+// Module ID: 8508
+// Function ID: 67750
 // Name: GuildEventRecurrences
-// Dependencies: [31, 27, 33, 4130, 689, 8465, 4126, 1212, 21, 8467, 4543, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 8509, 4126, 1212, 21, 8511, 4543, 2]
 // Exports: default
 
-// Module 8464 (GuildEventRecurrences)
+// Module 8508 (GuildEventRecurrences)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function GuildEventRecurrences(guildEventId) {
   ({ guildId, recurrenceRule, hideViewMoreButton } = guildEventId);
   ref = ref.useRef(null);
   const tmp2 = _createForOfIteratorHelperLoose();
-  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: closure_4 } = importDefault(8465)(guildEventId, guildId, recurrenceRule));
+  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: closure_4 } = importDefault(8509)(guildEventId, guildId, recurrenceRule));
   let obj = { style: tmp2.container };
   obj = { variant: "heading-md/semibold" };
   const intl = guildEventId(1212).intl;

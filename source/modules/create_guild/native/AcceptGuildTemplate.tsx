@@ -1,10 +1,10 @@
-// Module ID: 10947
-// Function ID: 85117
+// Module ID: 10974
+// Function ID: 85306
 // Name: GuildTemplateResolving
-// Dependencies: [31, 27, 1352, 1911, 653, 5720, 33, 4130, 689, 5052, 5586, 44, 1557, 1914, 4126, 1212, 10067, 9000, 4543, 7191, 1273, 22, 8385, 10948, 10949, 10184, 665, 2]
+// Dependencies: [31, 27, 1352, 1911, 653, 5720, 33, 4130, 689, 5052, 5584, 44, 1557, 1914, 4126, 1212, 10099, 9039, 4543, 7191, 1273, 22, 8429, 10975, 10976, 10214, 665, 2]
 // Exports: default
 
-// Module 10947 (GuildTemplateResolving)
+// Module 10974 (GuildTemplateResolving)
 import "result";
 import get_ActivityIndicator from "set";
 import { isGuildVocalChannelType } from "_callSuper";
@@ -26,7 +26,7 @@ let closure_8;
 let closure_9;
 let require = arg1;
 function GuildTemplateResolving() {
-  return callback(closure_4, { style: _createForOfIteratorHelperLoose().resolvingContainer, children: callback(require(5586) /* ActivityIndicator */.ActivityIndicator, {}) });
+  return callback(closure_4, { style: _createForOfIteratorHelperLoose().resolvingContainer, children: callback(require(5584) /* ActivityIndicator */.ActivityIndicator, {}) });
 }
 function GuildTemplateResolved(guildTemplate) {
   let chooseIcon;
@@ -51,7 +51,7 @@ function GuildTemplateResolved(guildTemplate) {
   const items1 = [callback(guildTemplate(4126).Text, obj), , , , , , , , , , ];
   obj = { style: tmp.description, variant: "text-lg/medium", color: "text-default", children: guildTemplate.name };
   items1[1] = callback(guildTemplate(4126).Text, obj);
-  items1[2] = callback(importDefault(10067), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
+  items1[2] = callback(importDefault(10099), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
   const obj2 = {};
   const intl2 = guildTemplate(1212).intl;
   obj2.label = intl2.string(guildTemplate(1212).t.dBih7e);
@@ -67,7 +67,7 @@ function GuildTemplateResolved(guildTemplate) {
   obj2.autoFocus = true;
   obj2.autoCorrect = false;
   obj2.returnKeyType = "done";
-  items1[3] = callback(importDefault(9000), obj2);
+  items1[3] = callback(importDefault(9039), obj2);
   const obj4 = { style: tmp.createButtonWrapper };
   const obj5 = { size: "md" };
   const intl4 = guildTemplate(1212).intl;
@@ -178,11 +178,11 @@ function Channels(channels) {
 function getChannelIcon(type) {
   type = type.type;
   if (isGuildVocalChannelType(type)) {
-    let tmp4 = importDefault(8385);
+    let tmp4 = importDefault(8429);
   } else if (type === constants2.GUILD_CATEGORY) {
-    tmp4 = importDefault(10948);
+    tmp4 = importDefault(10975);
   } else {
-    tmp4 = importDefault(10949);
+    tmp4 = importDefault(10976);
   }
   return tmp4;
 }

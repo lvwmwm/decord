@@ -1,9 +1,9 @@
-// Module ID: 13044
-// Function ID: 100706
+// Module ID: 13096
+// Function ID: 101029
 // Name: MenuItem
-// Dependencies: [31, 33, 4130, 13042, 4545, 5158, 5177, 2]
+// Dependencies: [31, 33, 4130, 13094, 4545, 5158, 5177, 2]
 
-// Module 13044 (MenuItem)
+// Module 13096 (MenuItem)
 import importAllResult from "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -28,7 +28,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13042).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13094).MenuContext).menuClose;
   if (null != IconComponent) {
     let obj = { size: "sm" };
     let tmp2 = <IconComponent size="sm" />;

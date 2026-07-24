@@ -1,10 +1,10 @@
-// Module ID: 9271
-// Function ID: 72420
+// Module ID: 9307
+// Function ID: 72629
 // Name: useGuildHasFeature
 // Dependencies: [1838, 653, 1428, 566, 2]
 // Exports: isTopicalNavEnabled, useIsTopicalNavEnabled
 
-// Module 9271 (useGuildHasFeature)
+// Module 9307 (useGuildHasFeature)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import { GuildFeatures } from "ME";
 import ApexExperiment from "ApexExperiment";

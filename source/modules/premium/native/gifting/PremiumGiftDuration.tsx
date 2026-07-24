@@ -1,10 +1,10 @@
-// Module ID: 9764
-// Function ID: 75946
+// Module ID: 9796
+// Function ID: 76140
 // Name: PremiumGiftDurationButton
-// Dependencies: [31, 27, 1851, 33, 4130, 689, 8809, 5165, 7498, 9689, 3848, 4126, 1212, 8810, 5450, 2]
+// Dependencies: [31, 27, 1851, 33, 4130, 689, 8848, 5165, 7639, 9723, 3848, 4126, 1212, 8849, 5450, 2]
 // Exports: default
 
-// Module 9764 (PremiumGiftDurationButton)
+// Module 9796 (PremiumGiftDurationButton)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -23,14 +23,14 @@ function PremiumGiftDurationButton(arg0) {
   let planInterval;
   let selected;
   ({ selected, planInterval } = arg0);
-  let obj = planInterval(8809);
+  let obj = planInterval(8848);
   const nativeGiftContext = obj.useNativeGiftContext();
   const setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp2 = _createForOfIteratorHelperLoose();
   if (selected) {
     let RowButton = tmp3(5165).TableRow;
   } else {
-    RowButton = tmp3(7498).RowButton;
+    RowButton = tmp3(7639).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
@@ -74,7 +74,7 @@ function PremiumGiftDurationButton(arg0) {
   items1[1] = tmp21;
   obj2.children = items1;
   obj1.label = closure_8(View, obj2);
-  obj1.trailing = callback(planInterval(4126).Text, { variant: "text-md/semibold", children: setPlanInterval(9689)(nativeGiftContext.premiumType, planInterval) });
+  obj1.trailing = callback(planInterval(4126).Text, { variant: "text-md/semibold", children: setPlanInterval(9723)(nativeGiftContext.premiumType, planInterval) });
   obj1.onPress = function onPress() {
     setPlanInterval(planInterval);
   };
@@ -109,9 +109,9 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/premium/n
 
 export default function PremiumGiftDuration() {
   const tmp = callback3();
-  let obj = planInterval(8809);
+  let obj = planInterval(8848);
   planInterval = obj.useNativeGiftContext().planInterval;
-  const tmp2 = importDefault(5450)(importDefault(8810).useConfig({ location: "PremiumGiftDuration" }).monthlyDefaultSelected);
+  const tmp2 = importDefault(5450)(importDefault(8849).useConfig({ location: "PremiumGiftDuration" }).monthlyDefaultSelected);
   importDefault = tmp2;
   let items = [tmp2];
   const memo = React.useMemo(() => {

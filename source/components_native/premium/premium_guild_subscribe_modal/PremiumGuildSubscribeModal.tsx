@@ -1,7 +1,7 @@
 // Module ID: 4967
-// Function ID: 42679
+// Function ID: 42683
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [57, 31, 1278, 4968, 653, 33, 4969, 5087, 4966, 5788, 3976, 5789, 5790, 5791, 1212, 5793, 5796, 1273, 5798, 12541, 5450, 4540, 5519, 2]
+// Dependencies: [57, 31, 1278, 4968, 653, 33, 4969, 5087, 4966, 5788, 3976, 5789, 5790, 5791, 1212, 5793, 5796, 1273, 5798, 12592, 5450, 4540, 5517, 2]
 // Exports: default
 
 // Module 4967 (PremiumGuildSubscribeModal)
@@ -141,5 +141,5 @@ export default function PremiumGuildSubscribeModal(arg0) {
       callback(tmp.name);
     }
   };
-  return jsx(require(5519) /* NavigationStack */.Navigator, { screens: tmp.screens, initialRouteStack: initialStack });
+  return jsx(require(5517) /* NavigationStack */.Navigator, { screens: tmp.screens, initialRouteStack: initialStack });
 };

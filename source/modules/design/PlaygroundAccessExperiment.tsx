@@ -1,10 +1,10 @@
-// Module ID: 9887
-// Function ID: 76566
+// Module ID: 9919
+// Function ID: 76760
 // Name: usePlaygroundAccessExperiment
 // Dependencies: [1849, 1428, 566, 2]
 // Exports: getHasPlaygroundAccess, useHasPlaygroundAccess
 
-// Module 9887 (usePlaygroundAccessExperiment)
+// Module 9919 (usePlaygroundAccessExperiment)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ApexExperiment from "ApexExperiment";
 

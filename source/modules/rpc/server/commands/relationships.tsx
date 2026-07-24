@@ -1,9 +1,9 @@
-// Module ID: 13416
-// Function ID: 103180
+// Module ID: 13469
+// Function ID: 103507
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 3767, 1849, 4033, 653, 13403, 8310, 483, 10496, 10501, 2]
+// Dependencies: [57, 3767, 1849, 4033, 653, 13456, 8354, 483, 10525, 10530, 2]
 
-// Module 13416 (_createForOfIteratorHelperLoose)
+// Module 13469 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -112,7 +112,7 @@ obj.handler = function handler(socket) {
   const obj2 = importAll(483);
   const deserializeResult = importAll(483).deserialize(num);
   if (obj.has(deserializeResult, obj3.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
-    let tmp20 = importDefault(10496);
+    let tmp20 = importDefault(10525);
     obj = { errorCode: constants3.INVALID_PERMISSIONS };
     const prototype = tmp20.prototype;
     tmp20 = new tmp20(obj, "Missing Permissions");
@@ -136,9 +136,9 @@ obj.handler = function handler(socket) {
           if (null != user) {
             let tmp13 = require;
             let tmp14 = dependencyMap;
-            let obj5 = require(10501) /* recurseReplaceContentTree */;
+            let obj5 = require(10530) /* recurseReplaceContentTree */;
             let result = obj5.transformBaseRelationship(tmp8, user);
-            let obj6 = require(10501) /* recurseReplaceContentTree */;
+            let obj6 = require(10530) /* recurseReplaceContentTree */;
             let arr = items.push(obj6.transformApplicationRelationship(result, socket.socket.application.id));
             let tmp17 = user;
           }

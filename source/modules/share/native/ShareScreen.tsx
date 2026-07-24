@@ -1,10 +1,10 @@
-// Module ID: 12907
-// Function ID: 100152
+// Module ID: 12959
+// Function ID: 100475
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 57, 31, 27, 1352, 1348, 3758, 653, 9875, 8818, 33, 4130, 689, 477, 1212, 12908, 7089, 1327, 12909, 4370, 675, 9878, 4138, 8333, 9907, 1934, 4472, 12910, 12911, 5094, 9122, 1553, 5087, 9883, 12912, 2]
+// Dependencies: [5, 57, 31, 27, 1352, 1348, 3758, 653, 9907, 8857, 33, 4130, 689, 477, 1212, 12960, 7088, 1327, 12961, 4370, 675, 9910, 4138, 8377, 9939, 1934, 4472, 12962, 12963, 5094, 9158, 1553, 5087, 9915, 12964, 2]
 // Exports: default
 
-// Module 12907 (getAttachmentsRestriction)
+// Module 12959 (getAttachmentsRestriction)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import isMetaQuest from "isMetaQuest";

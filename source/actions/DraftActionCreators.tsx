@@ -1,9 +1,9 @@
-// Module ID: 7019
-// Function ID: 56310
+// Module ID: 7018
+// Function ID: 56319
 // Name: dispatcher
 // Dependencies: [686, 2]
 
-// Module 7019 (dispatcher)
+// Module 7018 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/DraftActionCreators.tsx");
 
 export default {
@@ -12,9 +12,9 @@ export default {
     obj = { type: "DRAFT_CLEAR", channelId, draftType };
     obj.dispatch(obj);
   },
-  saveDraft(id, comment, ChannelMessage) {
+  saveDraft(id, result, ChannelMessage) {
     let obj = importDefault(686);
-    obj = { type: "DRAFT_SAVE", channelId: id, draft: comment, draftType: ChannelMessage };
+    obj = { type: "DRAFT_SAVE", channelId: id, draft: result, draftType: ChannelMessage };
     obj.dispatch(obj);
   },
   changeDraft(id, draft, ChannelMessage) {

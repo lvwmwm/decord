@@ -1,10 +1,10 @@
-// Module ID: 14158
-// Function ID: 108945
+// Module ID: 14208
+// Function ID: 109268
 // Name: ThemeMidnightIcon
-// Dependencies: [31, 33, 689, 3833, 14159, 2]
+// Dependencies: [31, 33, 689, 3833, 14209, 2]
 // Exports: ThemeMidnightIcon
 
-// Module 14158 (ThemeMidnightIcon)
+// Module 14208 (ThemeMidnightIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const ThemeMidnightIcon = function ThemeMidnightIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14159) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14209) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14159) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14209) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

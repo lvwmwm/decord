@@ -1,10 +1,10 @@
-// Module ID: 16224
-// Function ID: 126017
+// Module ID: 16271
+// Function ID: 126341
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 3758, 8439, 653, 33, 4130, 689, 7616, 8438, 5503, 1212, 1920, 5504, 5087, 5788, 7519, 13740, 7518, 4126, 7495, 4541, 5448, 3842, 1456, 566, 2]
+// Dependencies: [6, 7, 15, 17, 18, 31, 3758, 8483, 653, 33, 4130, 689, 7705, 8482, 5501, 1212, 1920, 5502, 5087, 5788, 7654, 13791, 7653, 4126, 7636, 4541, 5448, 3842, 1456, 566, 2]
 // Exports: default
 
-// Module 16224 (_isNativeReflectConstruct)
+// Module 16271 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import getSystemLocale from "getSystemLocale";
@@ -44,7 +44,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
   if (null == DEFAULT2) {
     DEFAULT2 = constants2.DEFAULT;
   }
-  let obj = require(7616) /* useUserIsTeen */;
+  let obj = require(7705) /* useUserIsTeen */;
   let tmp4 = DEFAULT === constants2.AGE_RESTRICTED;
   const userIsTeen = obj.useUserIsTeen();
   if (tmp4) {
@@ -65,8 +65,8 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
     obj1.value = DEFAULT2 === constants2.AGE_RESTRICTED;
     obj1.onValueChange = tmp6;
     obj1.disabled = tmp4;
-    obj.children = callback3(require(5504) /* TableSwitchRow */.TableSwitchRow, obj1);
-    tmp7 = callback3(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj, "filter-section");
+    obj.children = callback3(require(5502) /* TableSwitchRow */.TableSwitchRow, obj1);
+    tmp7 = callback3(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj, "filter-section");
     const obj4 = importDefault(1920);
   }
   return tmp7;

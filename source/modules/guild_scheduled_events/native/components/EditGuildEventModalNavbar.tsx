@@ -1,10 +1,10 @@
-// Module ID: 8368
-// Function ID: 66707
+// Module ID: 8412
+// Function ID: 66935
 // Name: EditGuildEventModalNavbar
-// Dependencies: [57, 31, 27, 33, 4130, 8345, 1327, 5121, 4126, 1212, 5788, 7607, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 8389, 1327, 5121, 4126, 1212, 5788, 7696, 2]
 // Exports: default
 
-// Module 8368 (EditGuildEventModalNavbar)
+// Module 8412 (EditGuildEventModalNavbar)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import { View } from "get ActivityIndicator";
@@ -23,11 +23,11 @@ export default function EditGuildEventModalNavbar(screen) {
   let tmp9;
   screen = screen.screen;
   const tmp = callback4();
-  if (require(8345) /* recurrenceRuleToServer */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
+  if (require(8389) /* recurrenceRuleToServer */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (require(8345) /* recurrenceRuleToServer */.EditGuildEventScreens.DETAILS === screen) {
+  } else if (require(8389) /* recurrenceRuleToServer */.EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (require(8345) /* recurrenceRuleToServer */.EditGuildEventScreens.PREVIEW === screen) {
+  } else if (require(8389) /* recurrenceRuleToServer */.EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
     let obj = require(1327) /* isDiscordFrontendDevelopment */;
@@ -46,7 +46,7 @@ export default function EditGuildEventModalNavbar(screen) {
   const intl2 = require(1212) /* getSystemLocale */.intl;
   obj3.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj3.onPress = screen.onClose;
-  obj3.source = importDefault(7607);
+  obj3.source = importDefault(7696);
   obj3.style = tmp.rightButton;
   obj2.children = callback2(require(5788) /* HeaderActionButton */.HeaderActionButton, obj3);
   items1[2] = callback2(View, obj2);

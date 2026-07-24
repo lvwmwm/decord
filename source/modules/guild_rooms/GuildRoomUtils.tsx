@@ -1,10 +1,10 @@
-// Module ID: 12686
-// Function ID: 98892
+// Module ID: 12737
+// Function ID: 99213
 // Name: mapGuildRoomBaseObjectFields
-// Dependencies: [12687, 2]
+// Dependencies: [12738, 2]
 // Exports: serverGuildRoomToClient
 
-// Module 12686 (mapGuildRoomBaseObjectFields)
+// Module 12737 (mapGuildRoomBaseObjectFields)
 function mapGuildRoomBaseObjectFields(objectId) {
   const obj = { objectId: objectId.object_id, createdBy: objectId.created_by };
   let date;
@@ -17,11 +17,11 @@ function mapGuildRoomBaseObjectFields(objectId) {
   return obj;
 }
 function serverGuildRoomObjectToClient(object_type) {
-  if (object_type.object_type === require(12687) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT) {
-    let obj = { objectType: require(12687) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT };
+  if (object_type.object_type === require(12738) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT) {
+    let obj = { objectType: require(12738) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT };
     const merged = Object.assign(mapGuildRoomBaseObjectFields(object_type));
   } else {
-    obj = { objectType: require(12687) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.NOTE };
+    obj = { objectType: require(12738) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.NOTE };
     const merged1 = Object.assign(mapGuildRoomBaseObjectFields(object_type));
     obj["content"] = object_type.content;
     obj["position"] = object_type.position;

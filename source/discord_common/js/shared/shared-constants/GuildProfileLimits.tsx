@@ -1,5 +1,5 @@
 // Module ID: 5130
-// Function ID: 44487
+// Function ID: 44492
 // Name: MAX_TRAITS
 // Dependencies: [2]
 

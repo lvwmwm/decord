@@ -1,8 +1,8 @@
-// Module ID: 11801
-// Function ID: 91596
-// Dependencies: [31, 27, 33, 4130, 3976, 1557, 11802, 11803, 4126, 1212, 2]
+// Module ID: 11828
+// Function ID: 91834
+// Dependencies: [31, 27, 33, 4130, 3976, 1557, 11829, 11830, 4126, 1212, 2]
 
-// Module 11801
+// Module 11828
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -32,9 +32,9 @@ const memoResult = require("result").memo((topViewHeight) => {
   const obj1 = {};
   let obj4 = require(3976) /* AccessibilityAnnouncer */;
   if (obj4.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp7Result = tmp7(11802);
+    let tmp7Result = tmp7(11829);
   } else {
-    tmp7Result = tmp7(11803);
+    tmp7Result = tmp7(11830);
   }
   obj1.source = tmp7Result;
   obj1.style = tmp.image;

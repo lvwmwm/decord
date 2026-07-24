@@ -1,9 +1,9 @@
-// Module ID: 14729
-// Function ID: 112303
+// Module ID: 14776
+// Function ID: 112624
 // Name: getInitialAuthScreen
-// Dependencies: [57, 31, 27, 653, 33, 14730, 5087, 14739, 5521, 9203, 4130, 689, 14780, 9197, 1571, 9222, 14781, 9220, 5519, 478, 1212, 14782, 6707, 14786, 2]
+// Dependencies: [57, 31, 27, 653, 33, 14777, 5087, 14786, 5519, 9239, 4130, 689, 14827, 9233, 1571, 9258, 14828, 9256, 5517, 478, 1212, 14829, 6707, 14833, 2]
 
-// Module 14729 (getInitialAuthScreen)
+// Module 14776 (getInitialAuthScreen)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function getInitialAuthScreen() {
   return AuthStates.WELCOME;
 }
 function NavigatorWithCaptchaHook() {
-  let obj = _require(14780);
+  let obj = _require(14827);
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp3 = callback3();
   let tmp4 = callback(importAllResult.useState(getInitialAuthScreen()), 2);
@@ -50,10 +50,10 @@ function NavigatorWithCaptchaHook() {
   obj = {};
   const tmp11 = closure_10;
   const tmp12 = closure_9;
-  const tmp2 = importDefault(9197)();
-  obj.backgroundImageSource = _require(14781);
+  const tmp2 = importDefault(9233)();
+  obj.backgroundImageSource = _require(14828);
   obj.backgroundImageCover = true;
-  const items = [callback2(importDefault(9222), obj), ];
+  const items = [callback2(importDefault(9258), obj), ];
   if (tmp2) {
     obj1 = { value: tmp7 };
     const obj2 = {};
@@ -104,10 +104,10 @@ function NavigatorWithCaptchaHook() {
     obj8.paddingBottom = importDefault(689).space.PX_16;
     obj7.headerLeftContainerStyle = obj8;
     obj7.disableHeaderAnimation = true;
-    obj4.children = callback2(_require(5519).Navigator, obj7);
+    obj4.children = callback2(_require(5517).Navigator, obj7);
     obj2.children = callback2(closure_6, obj4);
     obj1.children = callback2(closure_6, obj2);
-    let tmp14Result = tmp14(tmp15(9220).WideAuthScrollContext.Provider, obj1);
+    let tmp14Result = tmp14(tmp15(9256).WideAuthScrollContext.Provider, obj1);
     obj15 = _require(478);
     const tmp21 = callback2;
     const tmp22 = closure_6;
@@ -123,7 +123,7 @@ function NavigatorWithCaptchaHook() {
     obj9.onWillFocus = closure_5.dismiss;
     const obj10 = { borderBottomWidth: 0 };
     obj9.headerStyle = obj10;
-    tmp14Result = tmp14(tmp15(5519).Navigator, obj9);
+    tmp14Result = tmp14(tmp15(5517).Navigator, obj9);
   }
   items[1] = tmp14Result;
   obj.children = items;
@@ -175,7 +175,7 @@ let closure_12 = Object.fromEntries(getRegistrationSteps.map((arg0) => {
   const items1 = [AuthStates.REGISTER_IDENTITY, AuthStates.LOGIN, AuthStates.AGE_GATE_UNDERAGE];
   let tmp8 = null;
   if (set.has(tmp)) {
-    const obj1 = { cardStyleInterpolator: require(5521) /* createStackNavigator */.CardStyleInterpolators.forFadeFromCenter };
+    const obj1 = { cardStyleInterpolator: require(5519) /* createStackNavigator */.CardStyleInterpolators.forFadeFromCenter };
     tmp8 = obj1;
   }
   const merged3 = Object.assign(tmp8);
@@ -206,7 +206,7 @@ const memoResult = importAllResult.memo(function Auth() {
     return () => outer2_1(outer2_2[21]).terminate();
   }, []);
   const layoutEffect = importAllResult.useLayoutEffect(() => callback(outer1_2[22]).trackAppUIViewed(), []);
-  importDefault(14786)();
+  importDefault(14833)();
   let closure_0 = importAllResult.useRef(undefined);
   return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(outer1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
 });

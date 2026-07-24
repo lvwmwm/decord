@@ -1,5 +1,5 @@
 // Module ID: 5900
-// Function ID: 49804
+// Function ID: 49815
 // Name: BellSpotIllustration
 // Dependencies: [33, 5085, 5901, 2]
 // Exports: BellSpotIllustration

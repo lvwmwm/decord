@@ -1,10 +1,10 @@
-// Module ID: 13560
-// Function ID: 104272
+// Module ID: 13611
+// Function ID: 104596
 // Name: UserSettingsEditUserProfile
-// Dependencies: [31, 1849, 33, 5464, 5484, 566, 7888, 13561, 2]
+// Dependencies: [31, 1849, 33, 5462, 5482, 566, 7975, 13612, 2]
 // Exports: default
 
-// Module 13560 (UserSettingsEditUserProfile)
+// Module 13611 (UserSettingsEditUserProfile)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -26,12 +26,12 @@ export default function UserSettingsEditUserProfile(arg0) {
   }, items1);
   let tmp4 = null;
   if (null != stateFromStores) {
-    obj = { value: tmp(importDefault(5484).USER_SETTINGS_USER_PROFILE).analyticsLocations };
+    obj = { value: tmp(importDefault(5482).USER_SETTINGS_USER_PROFILE).analyticsLocations };
     obj = { currentUser: stateFromStores };
     const merged = Object.assign(arg0);
-    obj.children = jsx(importDefault(13561), { currentUser: stateFromStores });
-    tmp4 = jsx(stateFromStores(5464).AnalyticsLocationProvider, { currentUser: stateFromStores });
-    const tmp9 = importDefault(13561);
+    obj.children = jsx(importDefault(13612), { currentUser: stateFromStores });
+    tmp4 = jsx(stateFromStores(5462).AnalyticsLocationProvider, { currentUser: stateFromStores });
+    const tmp9 = importDefault(13612);
   }
   return tmp4;
 };

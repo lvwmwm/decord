@@ -1,10 +1,10 @@
-// Module ID: 15240
-// Function ID: 116288
+// Module ID: 15287
+// Function ID: 116610
 // Name: placeholderRowWidth
-// Dependencies: [31, 27, 33, 15179, 689, 11671, 3991, 15218, 2]
+// Dependencies: [31, 27, 33, 15226, 689, 11698, 3991, 15265, 2]
 // Exports: ICYMILoading
 
-// Module 15240 (placeholderRowWidth)
+// Module 15287 (placeholderRowWidth)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function ICYMILoadingItem() {
   let subtitle;
   let title;
   const tmp = callback3();
-  const tmp2 = importDefault(11671)({ visible: true, animated: true });
+  const tmp2 = importDefault(11698)({ visible: true, animated: true });
   const memo = React.useMemo(() => ({ avatarTitle: Math.floor(10 * Math.random()), title: Math.floor(10 * Math.random()), subtitle: Math.floor(10 * Math.random()) }), []);
   let obj = {};
   obj = { style: tmp.container };
@@ -64,7 +64,7 @@ function ICYMILoadingItem() {
   items6[2] = tmp2;
   items3[3] = callback(importDefault(3991).View, { style: items6 });
   obj.children = items3;
-  const items7 = [callback2(View, obj), callback(require(15218) /* Separator */.Separator, {})];
+  const items7 = [callback2(View, obj), callback(require(15265) /* Separator */.Separator, {})];
   obj.children = items7;
   return callback2(closure_7, obj);
 }

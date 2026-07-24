@@ -1,5 +1,5 @@
 // Module ID: 6056
-// Function ID: 50038
+// Function ID: 50049
 // Name: FavoritesSpotIllustration
 // Dependencies: [33, 5085, 6057, 2]
 // Exports: FavoritesSpotIllustration

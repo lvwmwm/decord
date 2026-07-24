@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 129414
+// Module ID: 16633
+// Function ID: 129738
 // Name: externalFingerprint
 // Dependencies: [1194, 4988, 686, 2]
 // Exports: default
 
-// Module 16586 (externalFingerprint)
+// Module 16633 (externalFingerprint)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8455
-// Function ID: 67447
+// Module ID: 8499
+// Function ID: 67675
 // Name: useGuildUpcomingEvents
-// Dependencies: [57, 31, 1348, 1838, 3758, 6758, 8456, 1354, 653, 664, 566, 8346, 8457, 8352, 2]
+// Dependencies: [57, 31, 1348, 1838, 3758, 6758, 8500, 1354, 653, 664, 566, 8390, 8501, 8396, 2]
 // Exports: default, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents
 
-// Module 8455 (useGuildUpcomingEvents)
+// Module 8499 (useGuildUpcomingEvents)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_4 from "_isNativeReflectConstruct";

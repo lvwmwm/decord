@@ -1,10 +1,10 @@
-// Module ID: 14508
-// Function ID: 110761
+// Module ID: 14558
+// Function ID: 111084
 // Name: DebugLogView
 // Dependencies: [31, 27, 4129, 6789, 33, 4130, 689, 566, 4126, 2]
 // Exports: default
 
-// Module 14508 (DebugLogView)
+// Module 14558 (DebugLogView)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 12690
-// Function ID: 98905
+// Module ID: 12741
+// Function ID: 99226
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [12691, 10536, 2]
+// Dependencies: [12742, 10565, 2]
 // Exports: default
 
-// Module 12690 (_createForOfIteratorHelperLoose)
+// Module 12741 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(iterable) {
   let closure_0 = iterable;
   iterable = "undefined" !== typeof Symbol;
@@ -88,7 +88,7 @@ const result = require("set").fileFinishedImporting("modules/presence/splitAgeRe
 
 export default function splitAgeRestrictedActivities(activities, hiddenActivities) {
   let iter2;
-  const ContentClassificationPresenceFilterExperiment = require(12691) /* apexExperiment */.ContentClassificationPresenceFilterExperiment;
+  const ContentClassificationPresenceFilterExperiment = require(12742) /* apexExperiment */.ContentClassificationPresenceFilterExperiment;
   if (ContentClassificationPresenceFilterExperiment.getConfig({ location: "presence_filtering" }).enabled) {
     const items = [];
     const items1 = [];
@@ -99,7 +99,7 @@ export default function splitAgeRestrictedActivities(activities, hiddenActivitie
         let value = iter.value;
         let tmp3 = require;
         let tmp4 = dependencyMap;
-        let obj2 = require(10536) /* isAgeRestrictedClassificationReference */;
+        let obj2 = require(10565) /* isAgeRestrictedClassificationReference */;
         if (obj2.isAgeRestrictedClassificationReference(value.content_classification)) {
           let arr = items1.push(value);
         } else {

@@ -1,10 +1,10 @@
-// Module ID: 9682
-// Function ID: 75379
+// Module ID: 9716
+// Function ID: 75591
 // Name: useSelectPremiumGift
-// Dependencies: [5, 31, 1456, 8809, 9683, 3776, 5624, 4471, 1212, 9680, 2]
+// Dependencies: [5, 31, 1456, 8848, 9717, 3776, 5622, 4471, 1212, 9714, 2]
 // Exports: useSelectPremiumGift
 
-// Module 9682 (useSelectPremiumGift)
+// Module 9716 (useSelectPremiumGift)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import result from "result";
 

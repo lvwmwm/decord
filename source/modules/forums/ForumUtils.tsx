@@ -1,5 +1,5 @@
 // Module ID: 5684
-// Function ID: 48913
+// Function ID: 48923
 // Name: getForumPostReadStates
 // Dependencies: [1348, 1838, 4142, 5685, 1355, 1212, 1357, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned

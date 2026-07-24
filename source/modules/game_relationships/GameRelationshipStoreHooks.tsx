@@ -1,10 +1,10 @@
-// Module ID: 11986
-// Function ID: 92626
+// Module ID: 12012
+// Function ID: 92862
 // Name: useGameRelationshipsForUserByType
-// Dependencies: [57, 6901, 653, 566, 4964, 2]
+// Dependencies: [57, 6900, 653, 566, 4964, 2]
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
-// Module 11986 (useGameRelationshipsForUserByType)
+// Module 12012 (useGameRelationshipsForUserByType)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { RelationshipTypes } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 13993
-// Function ID: 107158
+// Module ID: 14043
+// Function ID: 107481
 // Name: roundToNearestPixel
-// Dependencies: [27, 13994, 664, 4542, 2]
+// Dependencies: [27, 14044, 664, 4542, 2]
 // Exports: isSoftDismissed
 
-// Module 13993 (roundToNearestPixel)
+// Module 14043 (roundToNearestPixel)
 import { PixelRatio } from "get ActivityIndicator";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 

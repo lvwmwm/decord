@@ -1,15 +1,15 @@
-// Module ID: 14554
-// Function ID: 111014
+// Module ID: 14604
+// Function ID: 111337
 // Name: useIsDisabled
-// Dependencies: [6769, 7662, 7125, 13728, 14540, 7536, 7538, 13727, 10095, 1212, 2198, 2]
+// Dependencies: [6769, 7751, 7124, 13779, 14590, 7581, 7583, 13778, 10127, 1212, 2198, 2]
 
-// Module 14554 (useIsDisabled)
+// Module 14604 (useIsDisabled)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useIsDisabled() {
-  return require(13727) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
+  return require(13778) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
 }
 createToggle = {
   useTitle() {
@@ -24,12 +24,12 @@ createToggle = {
   useValue() {
     let tmp;
     const tmp2 = useIsDisabled();
-    const selectedTeenId = require(7125) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledDefaultMessageRequestRestricted = require(13728) /* result */.ParentalControlledDefaultMessageRequestRestricted;
+    const selectedTeenId = require(7124) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledDefaultMessageRequestRestricted = require(13779) /* result */.ParentalControlledDefaultMessageRequestRestricted;
     if (null != selectedTeenId) {
       tmp = selectedTeenId;
     }
-    const obj = require(7125) /* useSelectedTeen */;
+    const obj = require(7124) /* useSelectedTeen */;
     return !tmp2 && !ParentalControlledDefaultMessageRequestRestricted.useControlledSetting(tmp);
   },
   useIsDisabled,
@@ -37,14 +37,14 @@ createToggle = {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
       if (!arg0) {
-        let obj = require(14540) /* shouldAgeVerifyForDMDefaultOff */;
+        let obj = require(14590) /* shouldAgeVerifyForDMDefaultOff */;
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
-          obj = { entryPoint: require(7538) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
-          const result = importDefault(7536).showAgeVerificationGetStartedModal(obj);
-          const obj2 = importDefault(7536);
+          obj = { entryPoint: require(7583) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+          const result = importDefault(7581).showAgeVerificationGetStartedModal(obj);
+          const obj2 = importDefault(7581);
         }
       }
-      const ParentalControlledDefaultMessageRequestRestricted = require(13728) /* result */.ParentalControlledDefaultMessageRequestRestricted;
+      const ParentalControlledDefaultMessageRequestRestricted = require(13779) /* result */.ParentalControlledDefaultMessageRequestRestricted;
       const result1 = ParentalControlledDefaultMessageRequestRestricted.updateControlledSetting(selectedTeenId, !arg0);
     }
   },

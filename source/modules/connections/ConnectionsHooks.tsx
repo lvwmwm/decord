@@ -1,5 +1,5 @@
 // Module ID: 6735
-// Function ID: 52467
+// Function ID: 52489
 // Name: usePlatformAllowed
 // Dependencies: [57, 31, 4812, 1849, 653, 6736, 664, 566, 6738, 22, 4814, 2]
 // Exports: useEmptyStatePlatforms, useLegacyPlatformType, usePlatforms

@@ -1,10 +1,10 @@
-// Module ID: 12220
-// Function ID: 95467
+// Module ID: 12247
+// Function ID: 95707
 // Name: BlockedDomainActionSheet
-// Dependencies: [31, 33, 4130, 689, 5187, 4541, 5807, 4126, 1212, 12221, 4543, 4098, 2]
+// Dependencies: [31, 33, 4130, 689, 5187, 4541, 5807, 4126, 1212, 12248, 4543, 4098, 2]
 // Exports: default
 
-// Module 12220 (BlockedDomainActionSheet)
+// Module 12247 (BlockedDomainActionSheet)
 import "result";
 import jsxProd from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -36,7 +36,7 @@ export default function BlockedDomainActionSheet(url) {
   obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.jnHyYU, {});
   items[2] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items;
-  const items1 = [callback2(require(4541) /* Stack */.Stack, obj), callback(require(12221) /* URLCallout */.URLCallout, { url: url.url }), ];
+  const items1 = [callback2(require(4541) /* Stack */.Stack, obj), callback(require(12248) /* URLCallout */.URLCallout, { url: url.url }), ];
   const obj3 = { grow: true };
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["/g10LC"]);

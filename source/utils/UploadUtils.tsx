@@ -1,5 +1,5 @@
 // Module ID: 4666
-// Function ID: 40500
+// Function ID: 40504
 // Name: items
 // Dependencies: [4667, 4665, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData

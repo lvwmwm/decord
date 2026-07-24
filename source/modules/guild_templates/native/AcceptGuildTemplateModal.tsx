@@ -1,10 +1,10 @@
-// Module ID: 10945
-// Function ID: 85100
+// Module ID: 10972
+// Function ID: 85289
 // Name: ConnectedAcceptGuildTemplate
-// Dependencies: [5, 57, 31, 6693, 653, 33, 4130, 5084, 566, 5047, 10946, 5121, 10947, 4674, 10950, 10944, 5087, 5519, 2]
+// Dependencies: [5, 57, 31, 6693, 653, 33, 4130, 5084, 566, 5047, 10973, 5121, 10974, 4674, 10977, 10971, 5087, 5517, 2]
 // Exports: default
 
-// Module 10945 (ConnectedAcceptGuildTemplate)
+// Module 10972 (ConnectedAcceptGuildTemplate)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -28,7 +28,7 @@ function ConnectedAcceptGuildTemplate(code) {
   callback = tmp6[1];
   const tmp8 = callback(React.useState(null), 2);
   React = tmp8[1];
-  stateFromStores(10946)(stateFromStores);
+  stateFromStores(10973)(stateFromStores);
   obj = { top: true, style: tmp2.container };
   obj = {
     code,
@@ -45,12 +45,12 @@ function ConnectedAcceptGuildTemplate(code) {
   obj.chooseIcon = first1(tmp);
   obj.createServer = function createServer() {
     if (null != stateFromStores) {
-      const obj = stateFromStores(10950);
-      stateFromStores(10950).acceptGuildTemplate(stateFromStores.code, first, first1).then(() => stateFromStores(table[15]).hideModal(), (arg0) => outer1_6(arg0));
-      const acceptGuildTemplateResult = stateFromStores(10950).acceptGuildTemplate(stateFromStores.code, first, first1);
+      const obj = stateFromStores(10977);
+      stateFromStores(10977).acceptGuildTemplate(stateFromStores.code, first, first1).then(() => stateFromStores(table[15]).hideModal(), (arg0) => outer1_6(arg0));
+      const acceptGuildTemplateResult = stateFromStores(10977).acceptGuildTemplate(stateFromStores.code, first, first1);
     }
   };
-  obj.children = jsx(stateFromStores(10947), {
+  obj.children = jsx(stateFromStores(10974), {
     code,
     guildTemplate: stateFromStores,
     name: first,
@@ -95,5 +95,5 @@ export default function AcceptGuildTemplateModal(code) {
     obj["ACCEPT_GUILD_TEMPLATE"] = obj;
     return obj;
   })({ code }), items);
-  return jsx(code(5519).Navigator, { initialRouteName: "ACCEPT_GUILD_TEMPLATE", screens });
+  return jsx(code(5517).Navigator, { initialRouteName: "ACCEPT_GUILD_TEMPLATE", screens });
 };

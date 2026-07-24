@@ -1,10 +1,10 @@
-// Module ID: 13913
-// Function ID: 106484
+// Module ID: 13964
+// Function ID: 106808
 // Name: set
-// Dependencies: [57, 31, 27, 4976, 10840, 13912, 3991, 4131, 4134, 4096, 2]
+// Dependencies: [57, 31, 27, 4976, 10869, 13963, 3991, 4131, 4134, 4096, 2]
 // Exports: clearDismissedScrollAffordanceBountyIds, useBountiesAutoScroll
 
-// Module 13913 (set)
+// Module 13964 (set)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { AppState } from "get ActivityIndicator";

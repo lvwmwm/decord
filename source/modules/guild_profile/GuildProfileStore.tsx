@@ -1,9 +1,9 @@
-// Module ID: 8417
-// Function ID: 67036
+// Module ID: 8461
+// Function ID: 67264
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 653, 561, 5129, 566, 686, 2]
 
-// Module 8417 (_isNativeReflectConstruct)
+// Module 8461 (_isNativeReflectConstruct)
 import Backoff from "Backoff";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

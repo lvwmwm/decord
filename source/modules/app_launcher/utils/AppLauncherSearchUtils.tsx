@@ -1,10 +1,10 @@
-// Module ID: 11187
-// Function ID: 86962
+// Module ID: 11217
+// Function ID: 87231
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 7922, 7920, 7921, 11188, 4566, 4567, 7925, 1881, 7919, 8176, 11159, 11190, 22, 8182, 566, 8180, 11189, 11191, 2]
+// Dependencies: [57, 31, 8009, 8007, 8008, 11218, 4566, 4567, 8012, 1881, 8006, 8220, 11189, 11220, 22, 8226, 566, 8224, 11219, 11221, 2]
 // Exports: bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, useGlobalSearchResults, useLocalSearchResults
 
-// Module 11187 (_createForOfIteratorHelperLoose)
+// Module 11217 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_6 from "_isNativeReflectConstruct";
@@ -13,7 +13,7 @@ import closure_11 from "_isNativeReflectConstruct";
 import closure_12 from "_isNativeReflectConstruct";
 import { FetchState } from "_isNativeReflectConstruct";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
-import { COMMAND_SENTINEL } from "MENTION_SENTINEL";
+import { COMMAND_SENTINEL } from "regExp";
 
 let closure_10;
 let closure_7;
@@ -113,7 +113,7 @@ function useApplicationsInContext(allowFetch) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let obj = onlyWithCommands(7925);
+  let obj = onlyWithCommands(8012);
   const items = [onlyWithCommands(1881).ApplicationCommandType.CHAT];
   const hasBaseAccessPermissions = obj.usePermissionContext(channel, items).hasBaseAccessPermissions;
   const tmp2 = callback2(context, hasBaseAccessPermissions, flag);
@@ -180,7 +180,7 @@ function useApplicationsInContext(allowFetch) {
     includeBuiltIn = allowFetch.includeBuiltIn;
   }
   if (includeBuiltIn) {
-    items2.push(onlyWithCommands(7919).FAKE_BUILT_IN_APP);
+    items2.push(onlyWithCommands(8006).FAKE_BUILT_IN_APP);
   }
   obj = { apps: items2 };
   let fetching;
@@ -280,7 +280,7 @@ function filterApplicationAllowed(type) {
     channel = type.channel;
   }
   const items = [_require(1881).ApplicationCommandType.CHAT, _require(1881).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-  let closure_1 = _require(7925).buildPermissionContext(channel, items);
+  let closure_1 = _require(8012).buildPermissionContext(channel, items);
   return (id) => {
     let closure_1;
     let closure_2;
@@ -395,9 +395,9 @@ function sortApplicationFreceny(id, id2) {
   return store.getScoreWithoutLoadingLatest(id2.id) - scoreWithoutLoadingLatest;
 }
 function sortApplicationAlpha(FAKE_BUILT_IN_APP, FAKE_BUILT_IN_APP) {
-  const sectionName = require(7919) /* _createForOfIteratorHelperLoose */.getSectionName(FAKE_BUILT_IN_APP);
-  const obj = require(7919) /* _createForOfIteratorHelperLoose */;
-  return callback(sectionName, require(7919) /* _createForOfIteratorHelperLoose */.getSectionName(FAKE_BUILT_IN_APP));
+  const sectionName = require(8006) /* _createForOfIteratorHelperLoose */.getSectionName(FAKE_BUILT_IN_APP);
+  const obj = require(8006) /* _createForOfIteratorHelperLoose */;
+  return callback(sectionName, require(8006) /* _createForOfIteratorHelperLoose */.getSectionName(FAKE_BUILT_IN_APP));
 }
 function filterCommandAllowed(type) {
   const _require = type;
@@ -406,7 +406,7 @@ function filterCommandAllowed(type) {
     channel = type.channel;
   }
   const items = [_require(1881).ApplicationCommandType.CHAT];
-  let closure_1 = _require(7925).buildPermissionContext(channel, items);
+  let closure_1 = _require(8012).buildPermissionContext(channel, items);
   let closure_2 = {};
   return (applicationId) => {
     let applicationAllowedForChannel;
@@ -853,7 +853,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     substr = query.substring(1);
     tmp = substr;
   }
-  const tmp3 = fetches.entrypoint === substr(8182).AppLauncherEntrypoint.VOICE;
+  const tmp3 = fetches.entrypoint === substr(8226).AppLauncherEntrypoint.VOICE;
   dependencyMap = tmp3;
   guild_id = undefined;
   if ("channel" === context.type) {
@@ -896,7 +896,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
       obj.length = diff;
       return tmp2(obj, (arg0, arg1) => {
         let results;
-        const searchResults = outer2_12.getSearchResults({ query: outer1_0, guildId: outer1_4, page: arg1 + 1, integrationType: substr(8180).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: outer1_3, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11189).SearchAppsRequestSource.APP_LAUNCHER });
+        const searchResults = outer2_12.getSearchResults({ query: outer1_0, guildId: outer1_4, page: arg1 + 1, integrationType: substr(8224).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: outer1_3, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11219).SearchAppsRequestSource.APP_LAUNCHER });
         if (null != searchResults) {
           results = searchResults.results;
         }

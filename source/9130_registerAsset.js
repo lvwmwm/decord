@@ -1,11 +1,11 @@
 // Module ID: 9130
-// Function ID: 71479
+// Function ID: 71450
 // Name: registerAsset
 // Dependencies: [1217]
 
 // Module 9130 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 24, height: 24, scales: [2, 3, 4], hash: "3b3008631d50089085453fd7d277929c", name: "stack-nav-close", type: "png" };
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f55d97ba12842f12a33d545b3d0fbaea", name: "CrownIcon", type: "png" };
 
 export default registerAsset.registerAsset(obj);

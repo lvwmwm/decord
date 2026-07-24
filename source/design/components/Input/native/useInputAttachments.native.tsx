@@ -1,7 +1,7 @@
 // Module ID: 5779
-// Function ID: 49455
+// Function ID: 49466
 // Name: estimateAttachmentWidth
-// Dependencies: [57, 31, 27, 33, 5513, 4126, 1324, 5780, 2]
+// Dependencies: [57, 31, 27, 33, 5511, 4126, 1324, 5780, 2]
 // Exports: useInputAttachments
 
 // Module 5779 (estimateAttachmentWidth)
@@ -17,7 +17,7 @@ const require = arg1;
 function estimateAttachmentWidth(arg0, arg1) {
   let num = 0;
   if (null != arg0) {
-    num = require(5513) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
+    num = require(5511) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
   }
   return num;
 }

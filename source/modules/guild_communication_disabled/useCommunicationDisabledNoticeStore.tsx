@@ -1,5 +1,5 @@
 // Module ID: 1918
-// Function ID: 21705
+// Function ID: 21706
 // Name: DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY
 // Dependencies: [57, 1919, 587, 622, 682, 677, 3743, 2]
 // Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore

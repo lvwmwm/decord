@@ -1,10 +1,10 @@
-// Module ID: 8429
-// Function ID: 67166
+// Module ID: 8473
+// Function ID: 67394
 // Name: useAccessibilityPress
 // Dependencies: [31, 2]
 // Exports: default
 
-// Module 8429 (useAccessibilityPress)
+// Module 8473 (useAccessibilityPress)
 import result from "result";
 
 const result = require("set").fileFinishedImporting("modules/a11y/native/useAccessibilityPress.tsx");

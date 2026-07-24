@@ -1,10 +1,10 @@
-// Module ID: 9286
-// Function ID: 72544
+// Module ID: 9322
+// Function ID: 72753
 // Name: HeaderWithBorder
-// Dependencies: [31, 33, 3834, 689, 9122, 477, 9113, 5519, 9287, 9288, 1212, 9289, 9297, 9308, 3982, 2]
+// Dependencies: [31, 33, 3834, 689, 9158, 477, 9149, 5517, 9323, 9324, 1212, 9325, 9333, 9344, 3982, 2]
 // Exports: default, openConversationNavigator
 
-// Module 9286 (HeaderWithBorder)
+// Module 9322 (HeaderWithBorder)
 import "result";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -17,7 +17,7 @@ function HeaderWithBorder(arg0) {
   const token = obj.useToken(importDefault(689).colors.BORDER_SUBTLE);
   obj = {};
   const merged = Object.assign(arg0);
-  const obj2 = require(9122) /* GenericHeaderTitle */;
+  const obj2 = require(9158) /* GenericHeaderTitle */;
   obj["shouldHandleSafeArea"] = require(477) /* set */.isAndroid();
   obj["style"] = { borderColor: token };
   return obj2.renderHeader(obj);
@@ -31,11 +31,11 @@ export default function ConversationNavigator(route) {
   let Screen;
   const params = route.route.params;
   const channelId = params.channelId;
-  let obj = channelId(5519);
+  let obj = channelId(5517);
   obj = { id: "conversation-navigator", screenOptions: obj.useAccessibilityNativeStackOptions() };
   obj = {
     initialParams: { channelId, guildId: params.guildId },
-    name: channelId(9287).ConversationNavigatorScreens.LIST,
+    name: channelId(9323).ConversationNavigatorScreens.LIST,
     options(navigation) {
       let obj = {
         header(arg0) {
@@ -60,7 +60,7 @@ export default function ConversationNavigator(route) {
   const items = [
     callback(Screen, obj),
     callback(createNativeStackNavigator.Screen, {
-      name: channelId(9287).ConversationNavigatorScreens.FOCUS,
+      name: channelId(9323).ConversationNavigatorScreens.FOCUS,
       options(route) {
         route = route.route;
         const obj = {

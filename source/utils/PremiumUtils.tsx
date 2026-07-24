@@ -1,7 +1,7 @@
 // Module ID: 3776
-// Function ID: 29049
+// Function ID: 29050
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 3777, 1849, 3778, 3779, 3781, 3782, 653, 1851, 3790, 482, 3, 3791, 3788, 1872, 44, 1212, 2780, 3712, 3800, 3821, 5618, 3789, 12386, 664, 566, 8203, 4025, 12987, 6788, 1865, 1867, 7996, 2]
+// Dependencies: [57, 31, 3777, 1849, 3778, 3779, 3781, 3782, 653, 1851, 3790, 482, 3, 3791, 3788, 1872, 44, 1212, 2780, 3712, 3800, 3821, 5616, 3789, 12444, 664, 566, 8247, 4025, 13039, 6788, 1865, 1867, 8056, 2]
 // Exports: calculateYearlyPlanMonthlyRateAmount, calculateYearlyPlanMonthsSaved, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, formatInterval, formatIntervalDuration, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getFormattedRateForPlan, getInterval, getIntervalForInvoice, getIntervalString, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBoostOnlySubscription, isNewUser, isNitroLockedState, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumSubscriptionPlan, isSwitchingPlansDisabled, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState
 
 // Module 3776 (_createForOfIteratorHelperLoose)
@@ -1358,7 +1358,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       tmp3 = tmp;
     }
   }
-  const formatPrice = require(5618) /* formatSingleCurrencyPrice */.formatPrice;
+  const formatPrice = require(5616) /* formatSingleCurrencyPrice */.formatPrice;
   if (flag) {
     const invoiceItems = tmp3.invoiceItems;
     const found = invoiceItems.filter((subscriptionPlanId) => outer1_34.has(subscriptionPlanId.subscriptionPlanId));
@@ -1557,7 +1557,7 @@ function getUnactivatedFractionalPremiumDurationString(unactivatedUnits) {
   if (tmp > 0) {
     if (unactivatedUnits.fractionalState === constants5.NONE) {
       const obj = { days: require(1212) /* getSystemLocale */.t.fYmirx, hours: require(1212) /* getSystemLocale */.t["C3RO+g"], minutes: require(1212) /* getSystemLocale */.t.r77oHc };
-      const obj2 = require(12386) /* roundFPCountdownUnits */;
+      const obj2 = require(12444) /* roundFPCountdownUnits */;
       const result = obj2.roundFPCountdownUnits(require(3800) /* resetCache */.diffAsUnits(0, tmp * importDefault(664).Millis.HOUR));
       const obj3 = require(3800) /* resetCache */;
       return require(3800) /* resetCache */.unitsAsStrings(result, obj);
@@ -1646,7 +1646,7 @@ function getFormattedPriceForPlan(id, arg1, arg2) {
     let tmp10 = require;
     let tmp11 = dependencyMap;
     let num = 22;
-    let obj = require(5618) /* formatSingleCurrencyPrice */;
+    let obj = require(5616) /* formatSingleCurrencyPrice */;
     let formatPriceResult = obj.formatPrice(tmp5.amount, tmp5.currency);
     let tmp12 = constants7;
     let tmp13 = id.currency !== constants7.USD;
@@ -1737,8 +1737,8 @@ function getFormattedPlanPriceFromInvoice(renewalInvoicePreview, subscription, v
   } else {
     amount = result.amount;
   }
-  const obj2 = require(5618) /* formatSingleCurrencyPrice */;
-  return obj2.formatRate(require(5618) /* formatSingleCurrencyPrice */.formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
+  const obj2 = require(5616) /* formatSingleCurrencyPrice */;
+  return obj2.formatRate(require(5616) /* formatSingleCurrencyPrice */.formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
 }
 function getPremiumGuildIntervalPrice(planId, paymentSourceId, currency, user) {
   if (null != paymentSourceId) {
@@ -1920,7 +1920,7 @@ function formatTrialCtaIntervalDuration(intervalType) {
   if (num === undefined) {
     num = 1;
   }
-  let obj = require(5618) /* formatSingleCurrencyPrice */;
+  let obj = require(5616) /* formatSingleCurrencyPrice */;
   const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { maximumFractionDigits: 0, minimumFractionDigits: 0 });
   if (constants6.DAY === MONTH) {
     if (num >= 7) {
@@ -2040,7 +2040,7 @@ function getItemsWithUpsertedPlanIdForGroup(renewalMutations, planId, quantity, 
     }
     return mapped.filter((quantity) => 0 !== quantity.quantity);
   } else {
-    const CheckoutError = _require(8203).CheckoutError;
+    const CheckoutError = _require(8247).CheckoutError;
     obj = { message: "Expected planId in group" };
     obj = { newPlanId: planId, planGroup: closure_31 };
     obj.extraSentryInformation = obj;
@@ -2097,14 +2097,14 @@ function isNewUser(createdAt) {
   return tmp;
 }
 function canUseQuestOrbMultiplier(perks) {
-  return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.QUEST_ORB_MULTIPLIER, perks);
+  return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.QUEST_ORB_MULTIPLIER, perks);
 }
 function canUseCollectibles(user) {
-  return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.COLLECTIBLES, user);
+  return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.COLLECTIBLES, user);
 }
 function formatPriceString(defaultPrice, interval) {
-  const obj = require(5618) /* formatSingleCurrencyPrice */;
-  return "" + require(5618) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency) + "/" + getIntervalStringAsNoun(interval);
+  const obj = require(5616) /* formatSingleCurrencyPrice */;
+  return "" + require(5616) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency) + "/" + getIntervalStringAsNoun(interval);
 }
 function castPremiumSubscriptionAsSkuId(skuIdForPlan) {
   return skuIdForPlan;
@@ -2471,78 +2471,78 @@ obj = {
   getDaysSincePremium,
   getDaysRemainingUntilSubscriptionCurrentPeriodEnds,
   canUseAnimatedEmojis(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.ANIMATED_EMOJIS, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.ANIMATED_EMOJIS, currentUser);
   },
   canUseEmojisEverywhere(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.EMOJIS_EVERYWHERE, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.EMOJIS_EVERYWHERE, currentUser);
   },
   canUseSoundboardEverywhere(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.SOUNDBOARD_EVERYWHERE, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.SOUNDBOARD_EVERYWHERE, currentUser);
   },
   canUseCustomCallSounds(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.CUSTOM_CALL_SOUNDS, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.CUSTOM_CALL_SOUNDS, currentUser);
   },
   canUploadLargeFiles(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.UPLOAD_LARGE_FILES, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.UPLOAD_LARGE_FILES, currentUser);
   },
   canUseBadges(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.PROFILE_BADGES, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.PROFILE_BADGES, currentUser);
   },
   canUseHighVideoUploadQuality(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
   },
   canEditDiscriminator(stateFromStores) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.CUSTOM_DISCRIMINATOR, stateFromStores);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.CUSTOM_DISCRIMINATOR, stateFromStores);
   },
   hasBoostDiscount(stateFromStores) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.BOOST_DISCOUNT, stateFromStores);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.BOOST_DISCOUNT, stateFromStores);
   },
   canUseAnimatedAvatar(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.ANIMATED_AVATAR, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.ANIMATED_AVATAR, currentUser);
   },
   canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
   },
   canUseIncreasedMessageLength(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INCREASED_MESSAGE_LENGTH, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.INCREASED_MESSAGE_LENGTH, currentUser);
   },
   canUseIncreasedGuildCap(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INCREASED_GUILD_LIMIT, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.INCREASED_GUILD_LIMIT, currentUser);
   },
   canRedeemPremiumPerks(isPremiumWithFractionalPremiumOnly) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumProfileCustomization(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.PROFILE_PREMIUM_FEATURES, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.PROFILE_PREMIUM_FEATURES, currentUser);
   },
   canUsePremiumAppIcons(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.APP_ICONS, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.APP_ICONS, currentUser);
   },
   canUsePremiumGuildMemberProfile(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
   },
   canUseClientThemes(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.CLIENT_THEMES, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.CLIENT_THEMES, currentUser);
   },
   canStreamQuality(HIGH, user) {
     if (HIGH === obj.HIGH) {
-      let canUserUseResult = require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.STREAM_HIGH_QUALITY, user);
-      const obj2 = require(12987) /* _isNativeReflectConstruct */;
+      let canUserUseResult = require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.STREAM_HIGH_QUALITY, user);
+      const obj2 = require(13039) /* _isNativeReflectConstruct */;
     } else {
-      obj = require(12987) /* _isNativeReflectConstruct */;
-      canUserUseResult = obj.canUserUse(require(12987) /* _isNativeReflectConstruct */.STREAM_MID_QUALITY, user);
+      obj = require(13039) /* _isNativeReflectConstruct */;
+      canUserUseResult = obj.canUserUse(require(13039) /* _isNativeReflectConstruct */.STREAM_MID_QUALITY, user);
     }
     return canUserUseResult;
   },
   canUseQuestOrbMultiplier,
   hasFreeBoosts(stateFromStores) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.FREE_BOOSTS, stateFromStores);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.FREE_BOOSTS, stateFromStores);
   },
   canUseCustomStickersEverywhere(currentUser) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.STICKERS_EVERYWHERE, currentUser);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.STICKERS_EVERYWHERE, currentUser);
   },
   canUseCustomBackgrounds(id) {
-    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.VIDEO_FILTER_ASSETS, id);
+    return require(13039) /* _isNativeReflectConstruct */.canUserUse(require(13039) /* _isNativeReflectConstruct */.VIDEO_FILTER_ASSETS, id);
   },
   canUseCollectibles,
   canUseMonthlyOrbs(perks) {
@@ -2948,7 +2948,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
           let tmp21 = require;
           let tmp22 = dependencyMap;
           let num = 22;
-          let obj = require(5618) /* formatSingleCurrencyPrice */;
+          let obj = require(5616) /* formatSingleCurrencyPrice */;
           let tmp23 = amount;
           let tmp24 = subscription;
           formatPriceResult = obj.formatPrice(amount, tmp.currency);
@@ -2960,7 +2960,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
   }
   let str = "";
   if (null != tmp10) {
-    let obj1 = require(5618) /* formatSingleCurrencyPrice */;
+    let obj1 = require(5616) /* formatSingleCurrencyPrice */;
     str = obj1.formatRate(tmp10, value.interval, value.intervalCount);
   }
   let taxInclusive;
@@ -3068,7 +3068,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
 export { getFormattedPriceForPlan };
 export const getFormattedRateForPlan = function getFormattedRateForPlan(interval) {
   const tmp = getFormattedPriceForPlan(interval, arg1, arg2);
-  return require(5618) /* formatSingleCurrencyPrice */.formatRate(tmp, interval.interval, interval.intervalCount);
+  return require(5616) /* formatSingleCurrencyPrice */.formatRate(tmp, interval.interval, interval.intervalCount);
 };
 export { getPlanIdFromInvoice };
 export { getStatusFromInvoice };

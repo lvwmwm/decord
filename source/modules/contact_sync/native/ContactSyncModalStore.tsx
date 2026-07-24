@@ -1,10 +1,10 @@
-// Module ID: 11706
-// Function ID: 90825
+// Module ID: 11733
+// Function ID: 91063
 // Name: initialValues
-// Dependencies: [4812, 1849, 11707, 653, 621, 682, 2]
+// Dependencies: [4812, 1849, 11734, 653, 621, 682, 2]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
 
-// Module 11706 (initialValues)
+// Module 11733 (initialValues)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ContactPermissions } from "ContactSyncLandingPage";

@@ -1,10 +1,10 @@
-// Module ID: 13843
-// Function ID: 106011
+// Module ID: 13894
+// Function ID: 106335
 // Name: AuthorizedAppScreen
-// Dependencies: [31, 33, 6653, 1456, 13844, 2]
+// Dependencies: [31, 33, 6653, 1456, 13895, 2]
 // Exports: default
 
-// Module 13843 (AuthorizedAppScreen)
+// Module 13894 (AuthorizedAppScreen)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -20,5 +20,5 @@ export default function AuthorizedAppScreen() {
     stackNavigation.setOptions({ title: settingNavigationRoute.params.oauth2Token.application.name, headerShown: true });
   }, items);
   obj = { oauth2Token: settingNavigationRoute.params.oauth2Token };
-  return jsx(stackNavigation(13844), { oauth2Token: settingNavigationRoute.params.oauth2Token });
+  return jsx(stackNavigation(13895), { oauth2Token: settingNavigationRoute.params.oauth2Token });
 };

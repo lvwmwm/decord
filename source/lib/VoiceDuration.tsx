@@ -1,9 +1,9 @@
-// Module ID: 12749
-// Function ID: 99323
+// Module ID: 12800
+// Function ID: 99644
 // Name: VoiceDuration
 // Dependencies: [6, 7, 4206, 4282, 2]
 
-// Module 12749 (VoiceDuration)
+// Module 12800 (VoiceDuration)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 

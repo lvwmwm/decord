@@ -1,10 +1,10 @@
-// Module ID: 10940
-// Function ID: 85039
+// Module ID: 10967
+// Function ID: 85228
 // Name: _applyStaffBuildOverride
-// Dependencies: [5, 1194, 10941, 507, 4046, 2]
+// Dependencies: [5, 1194, 10968, 507, 4046, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 10940 (_applyStaffBuildOverride)
+// Module 10967 (_applyStaffBuildOverride)
 import set from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

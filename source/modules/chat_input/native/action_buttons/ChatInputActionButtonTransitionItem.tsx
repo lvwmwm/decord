@@ -1,10 +1,10 @@
-// Module ID: 11352
-// Function ID: 88243
+// Module ID: 11381
+// Function ID: 88483
 // Name: interactivityProps
-// Dependencies: [31, 27, 11105, 33, 4476, 3991, 4131, 11353, 2]
+// Dependencies: [31, 27, 11132, 33, 4476, 3991, 4131, 11382, 2]
 // Exports: default
 
-// Module 11352 (interactivityProps)
+// Module 11381 (interactivityProps)
 import result from "result";
 import { StyleSheet } from "get ActivityIndicator";
 import { CHAT_INPUT_TIMING_CONFIG } from "TextAreaCta";
@@ -82,8 +82,8 @@ function BounceTransitionItem(state) {
   state = state.state;
   ({ cleanup, bounceEnterDelayMs, children } = state);
   let obj = { visible: state !== require(4476) /* _createForOfIteratorHelperLoose */.TransitionStates.YEETED, initiallyVisible: state !== require(4476) /* _createForOfIteratorHelperLoose */.TransitionStates.ENTERED, enterDelayMs: bounceEnterDelayMs, onExitComplete: cleanup, interactiveDuringEnter: true };
-  const tmp = importDefault(11353);
-  ({ animatedStyle, isInteractive } = importDefault(11353)(obj));
+  const tmp = importDefault(11382);
+  ({ animatedStyle, isInteractive } = importDefault(11382)(obj));
   obj = { style: items };
   items = [closure_6.transitionItemCentered, animatedStyle];
   const merged = Object.assign(interactivityProps(isInteractive));

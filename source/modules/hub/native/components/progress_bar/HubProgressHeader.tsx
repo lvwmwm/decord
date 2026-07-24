@@ -1,10 +1,10 @@
-// Module ID: 11701
-// Function ID: 90769
+// Module ID: 11728
+// Function ID: 91007
 // Name: HubProgressHeader
-// Dependencies: [31, 27, 5714, 10040, 33, 4130, 689, 11698, 1282, 1212, 7495, 4098, 11702, 1934, 11787, 2]
+// Dependencies: [31, 27, 5714, 10072, 33, 4130, 689, 11725, 1282, 1212, 7636, 4098, 11729, 1934, 11814, 2]
 // Exports: default
 
-// Module 11701 (HubProgressHeader)
+// Module 11728 (HubProgressHeader)
 import "result";
 import { View } from "get ActivityIndicator";
 import items from "items";

@@ -1,10 +1,10 @@
-// Module ID: 15261
-// Function ID: 116454
+// Module ID: 15308
+// Function ID: 116776
 // Name: UnavailableNotice
-// Dependencies: [31, 27, 33, 4130, 689, 5085, 15067, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5085, 15114, 4126, 2]
 // Exports: default
 
-// Module 15261 (UnavailableNotice)
+// Module 15308 (UnavailableNotice)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function UnavailableNotice(brightTitle) {
   items = [, ];
   ({ container: arr[0], unavailableContainer: arr[1] } = tmp);
   obj = { style: tmp.unavailableInfo };
-  obj = { source: importDefault(15067) };
+  obj = { source: importDefault(15114) };
   const items1 = [callback(importDefault(5085), obj), , ];
   const obj1 = { variant: "heading-lg/extrabold", color: "text-default" };
   const items2 = [tmp.joinCtaTitle, ];

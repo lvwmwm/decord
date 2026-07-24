@@ -1,10 +1,10 @@
-// Module ID: 14075
-// Function ID: 108258
+// Module ID: 14125
+// Function ID: 108581
 // Name: QuestBarPreview
-// Dependencies: [31, 27, 33, 4130, 689, 13998, 14076, 14077, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 14048, 14126, 14127, 2]
 // Exports: QuestBarPreview
 
-// Module 14075 (QuestBarPreview)
+// Module 14125 (QuestBarPreview)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -30,9 +30,9 @@ export const QuestBarPreview = function QuestBarPreview(quest) {
       const obj1 = {};
       const obj2 = { isRendered: true, isVisibleToUser: true, quest };
       obj1.value = obj2;
-      obj1.children = jsx(require(14077) /* QuestDockWithGestureAnimation */.QuestDockWithEntranceAnimation, {});
-      obj.children = jsx(importDefault(14076).Provider, {});
-      obj.children = jsx(require(13998) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, {});
+      obj1.children = jsx(require(14127) /* QuestDockWithGestureAnimation */.QuestDockWithEntranceAnimation, {});
+      obj.children = jsx(importDefault(14126).Provider, {});
+      obj.children = jsx(require(14048) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, {});
       obj.children = <View />;
       tmp2 = <View />;
     }

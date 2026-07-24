@@ -1,5 +1,5 @@
 // Module ID: 7308
-// Function ID: 58964
+// Function ID: 58993
 // Name: getTraceMetaTags
 // Dependencies: [57, 7307]
 // Exports: getTraceMetaTags

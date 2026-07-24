@@ -1,10 +1,10 @@
-// Module ID: 14684
-// Function ID: 111948
+// Module ID: 14731
+// Function ID: 112269
 // Name: SelectMenuNativeComponent
-// Dependencies: [31, 27, 33, 3994, 14685, 2]
+// Dependencies: [31, 27, 33, 3994, 14732, 2]
 // Exports: default
 
-// Module 14684 (SelectMenuNativeComponent)
+// Module 14731 (SelectMenuNativeComponent)
 import "result";
 import { jsx } from "jsxProd";
 import isFabric from "isFabric";

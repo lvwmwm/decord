@@ -1,5 +1,5 @@
 // Module ID: 4977
-// Function ID: 42963
+// Function ID: 42967
 // Name: QuestVariants
 // Dependencies: [2]
 

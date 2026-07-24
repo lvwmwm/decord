@@ -1,10 +1,10 @@
-// Module ID: 11021
-// Function ID: 85727
+// Module ID: 11048
+// Function ID: 85916
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [31, 27, 6836, 653, 33, 4130, 689, 11022, 4347, 6835, 1212, 5796, 4098, 3827, 1920, 7536, 7538, 9868, 1934, 5187, 5807, 4126, 4543, 5459, 2]
+// Dependencies: [31, 27, 6835, 653, 33, 4130, 689, 11049, 4347, 6834, 1212, 5796, 4098, 3827, 1920, 7581, 7583, 9900, 1934, 5187, 5807, 4126, 4543, 2]
 // Exports: default
 
-// Module 11021 (ExplicitMediaLearnMoreActionSheet)
+// Module 11048 (ExplicitMediaLearnMoreActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY";
@@ -173,7 +173,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   };
   items6[1] = callback(channelId(attachmentId[22]).Button, obj7);
   const obj8 = { style: tmp.linkSubtext, variant: "text-sm/medium", color: "text-muted", children: callback1() };
-  items6[2] = callback(channelId(attachmentId[23]).TextWithIOSLinkWorkaround, obj8);
+  items6[2] = callback(channelId(attachmentId[21]).Text, obj8);
   obj5.children = items6;
   items4[2] = closure_9(isVerifiedTeen, obj5);
   obj.children = items4;

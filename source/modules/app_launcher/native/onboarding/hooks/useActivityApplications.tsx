@@ -1,10 +1,10 @@
-// Module ID: 11158
-// Function ID: 86744
+// Module ID: 11188
+// Function ID: 87013
 // Name: useActivityApplications
-// Dependencies: [31, 11159, 10486, 2]
+// Dependencies: [31, 11189, 10515, 2]
 // Exports: useActivityApplications
 
-// Module 11158 (useActivityApplications)
+// Module 11188 (useActivityApplications)
 import result from "result";
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useActivityApplications = function useActivityApplications(guildId)
   guildId = guildId.guildId;
   const fetchesShelf = guildId.fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const mapped = fetchesShelf(11159)({ guildId }).map((application) => application.application);
+  const mapped = fetchesShelf(11189)({ guildId }).map((application) => application.application);
   const effect = React.useEffect(() => {
     if (fetchesShelf) {
       let obj = guildId(outer1_2[2]);

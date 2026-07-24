@@ -1,9 +1,9 @@
-// Module ID: 6844
-// Function ID: 54104
+// Module ID: 6843
+// Function ID: 54113
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4351, 6835, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4351, 6834, 566, 686, 2]
 
-// Module 6844 (_isNativeReflectConstruct)
+// Module 6843 (_isNativeReflectConstruct)
 import timeoutAttachmentsAndEmbedsForMessage from "timeoutAttachmentsAndEmbedsForMessage";
 import initialize from "initialize";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -103,8 +103,8 @@ tmp2 = new tmp2(require("dispatcher"), {
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleScanTimeout(id) {
     const tmp = createCompositeKey({ id: id.messageId, channel_id: id.channelId });
     if (null != dependencyMap[tmp]) {
-      dependencyMap[tmp] = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(tmp2);
-      const obj2 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
+      dependencyMap[tmp] = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(tmp2);
+      const obj2 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
     }
   }
 });

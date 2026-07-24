@@ -1,11 +1,11 @@
 // Module ID: 8106
-// Function ID: 64223
+// Function ID: 64199
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8107, 8102, 8042]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8107, 8101, 8102]
 
 // Module 8106 (_isNativeReflectConstruct)
 import jsxProd from "jsxProd";
-import extractPolyPoints from "extractPolyPoints";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
@@ -13,6 +13,7 @@ import "result";
 import { jsx } from "jsxProd";
 import tmp3 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Polygon";
-tmp3.defaultProps = { points: "" };
+tmp3.displayName = "FeComposite";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { k1: 0, k2: 0, k3: 0, k4: 0 });
 
 export default tmp3;

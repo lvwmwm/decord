@@ -1,10 +1,10 @@
-// Module ID: 7522
-// Function ID: 60240
+// Module ID: 7657
+// Function ID: 60875
 // Name: FormSliderRow
-// Dependencies: [31, 27, 33, 4130, 5164, 5167, 4126, 7523, 5158, 2]
+// Dependencies: [31, 27, 33, 4130, 5164, 5167, 4126, 7658, 5158, 2]
 // Exports: default
 
-// Module 7522 (FormSliderRow)
+// Module 7657 (FormSliderRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,20 +38,20 @@ export default function FormSliderRow(arg0) {
     const obj3 = {};
     const merged1 = Object.assign(merged);
     obj3["style"] = tmp4.slider;
-    items1[1] = callback(importDefault(7523), obj3);
+    items1[1] = callback(importDefault(7658), obj3);
     obj.children = items1;
     let tmp5Result = tmp5(require(5167) /* getCardBackgroundToken */.Card, obj);
-    const tmp20 = importDefault(7523);
+    const tmp20 = importDefault(7658);
   } else {
     obj = {};
     const obj4 = { label, trailing };
     const items2 = [callback(importDefault(5158), obj4), ];
     const obj5 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = callback(importDefault(7523), obj5);
+    items2[1] = callback(importDefault(7658), obj5);
     obj.children = items2;
     tmp5Result = tmp5(closure_7, obj);
-    const tmp10 = importDefault(7523);
+    const tmp10 = importDefault(7658);
   }
   return tmp5Result;
 };

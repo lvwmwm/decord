@@ -1,10 +1,10 @@
-// Module ID: 15862
-// Function ID: 122601
+// Module ID: 15909
+// Function ID: 122923
 // Name: AnimatedButtonWrapper
-// Dependencies: [31, 27, 10015, 33, 4130, 689, 3991, 15777, 477, 4542, 4131, 2]
+// Dependencies: [31, 27, 10047, 33, 4130, 689, 3991, 15824, 477, 4542, 4131, 2]
 // Exports: default
 
-// Module 15862 (AnimatedButtonWrapper)
+// Module 15909 (AnimatedButtonWrapper)
 import result from "result";
 import { MODE_CHANGE_PHYSICS } from "VoicePanelModes";
 import { jsx } from "jsxProd";

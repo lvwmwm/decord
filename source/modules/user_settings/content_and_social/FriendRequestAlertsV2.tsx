@@ -1,10 +1,10 @@
-// Module ID: 9059
-// Function ID: 71144
+// Module ID: 9098
+// Function ID: 71359
 // Name: useIsFriendRequestAlertsV2Enabled
 // Dependencies: [1428, 2]
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled
 
-// Module 9059 (useIsFriendRequestAlertsV2Enabled)
+// Module 9098 (useIsFriendRequestAlertsV2Enabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2025-10-friend-request-alerts-v2", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };

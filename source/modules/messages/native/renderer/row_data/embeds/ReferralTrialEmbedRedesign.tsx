@@ -1,10 +1,10 @@
-// Module ID: 7740
-// Function ID: 61515
+// Module ID: 7828
+// Function ID: 61800
 // Name: createReferralTrialEmbedRedesign
-// Dependencies: [1348, 1849, 3782, 6688, 5621, 653, 1851, 4130, 689, 5624, 7741, 1212, 3969, 1920, 3776, 6687, 7742, 1553, 7635, 7738, 2]
+// Dependencies: [1348, 1849, 3782, 6688, 5619, 653, 1851, 4130, 689, 5622, 7829, 1212, 3969, 1920, 3776, 6687, 7830, 1553, 7724, 7487, 2]
 // Exports: createReferralTrialEmbedRedesign
 
-// Module 7740 (createReferralTrialEmbedRedesign)
+// Module 7828 (createReferralTrialEmbedRedesign)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -60,7 +60,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
             obj1.helpdeskArticle = obj2;
             let obj3 = { titleText: formatToPlainStringResult, titleColor };
             const obj32 = importDefault(1920);
-            obj3.headerImageUrl = importDefault(7741);
+            obj3.headerImageUrl = importDefault(7829);
             const intl12 = require(1212) /* getSystemLocale */.intl;
             obj3.headerText = intl12.string(require(1212) /* getSystemLocale */.t.HtTvXA);
             obj3.headerColor = headerTextColor;
@@ -103,7 +103,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                 if (!result) {
                   if (!tmp12) {
                     if (!tmp19) {
-                      obj3 = require(7742) /* isReferralProgramPopoverSeen */;
+                      obj3 = require(7830) /* isReferralProgramPopoverSeen */;
                       const _Date = Date;
                       const referralTrialOfferExpirationCopy = obj3.getReferralTrialOfferExpirationCopy(Date.parse(relevantUserTrialOffer.expires_at));
                       const intl = require(1212) /* getSystemLocale */.intl;
@@ -159,9 +159,9 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
                     const intl7 = require(1212) /* getSystemLocale */.intl;
                     obj10["acceptLabelText"] = intl7.string(require(1212) /* getSystemLocale */.t.bXTClc);
                     obj10["acceptLabelColor"] = acceptLabelColor;
-                    obj10["acceptLabelIconUrl"] = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7738));
+                    obj10["acceptLabelIconUrl"] = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7487));
                     tmp56 = obj10;
-                    const obj21 = require(7635) /* frozen */;
+                    const obj21 = require(7724) /* frozen */;
                   }
                   return tmp56;
                 }
@@ -213,7 +213,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
             const formatToPartsResult = intl11.formatToParts(require(1212) /* getSystemLocale */.t.yisueA, obj1);
           }
         }
-        obj16 = { titleText: "", titleColor, headerImageUrl: importDefault(7741), headerText: "", headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor };
+        obj16 = { titleText: "", titleColor, headerImageUrl: importDefault(7829), headerText: "", headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor };
         const intl9 = require(1212) /* getSystemLocale */.intl;
         obj16.bodyText = intl9.string(require(1212) /* getSystemLocale */.t.eEz1N5);
         obj16.bodyTextColor = bodyTextColor;

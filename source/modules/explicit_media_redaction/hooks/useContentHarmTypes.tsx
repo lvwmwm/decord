@@ -1,10 +1,10 @@
-// Module ID: 9870
-// Function ID: 76413
+// Module ID: 9902
+// Function ID: 76607
 // Name: useEnabledHarmTypesBitmaskForChannelAndAuthorId
 // Dependencies: [31, 1316, 1348, 3767, 1849, 5670, 566, 5677, 5673, 2]
 // Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 9870 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
+// Module 9902 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

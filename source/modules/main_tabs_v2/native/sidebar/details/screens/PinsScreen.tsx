@@ -1,8 +1,8 @@
-// Module ID: 15546
-// Function ID: 119903
-// Dependencies: [31, 27, 1348, 9103, 33, 4130, 689, 1459, 566, 10075, 15408, 2]
+// Module ID: 15593
+// Function ID: 120225
+// Dependencies: [31, 27, 1348, 9141, 33, 4130, 689, 1459, 566, 10107, 15455, 2]
 
-// Module 15546
+// Module 15593
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { SearchTabs } from "SearchAutocompleteSelectAnalyticsActions";
@@ -28,8 +28,8 @@ const memoResult = require("result").memo(() => {
     return guild_id;
   });
   const obj2 = channelId(566);
-  const channelDetailsSearchContext = channelId(10075).useChannelDetailsSearchContext(channelId, stateFromStores);
-  obj = { style: callback().container, children: jsx(importDefault(15408), obj) };
+  const channelDetailsSearchContext = channelId(10107).useChannelDetailsSearchContext(channelId, stateFromStores);
+  obj = { style: callback().container, children: jsx(importDefault(15455), obj) };
   obj = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
   return <View searchContext={channelDetailsSearchContext} isFocused tab={SearchTabs.PINS} />;
 });

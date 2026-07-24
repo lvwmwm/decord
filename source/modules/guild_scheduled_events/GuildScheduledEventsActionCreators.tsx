@@ -1,8 +1,8 @@
-// Module ID: 8344
-// Function ID: 66142
-// Dependencies: [5, 1194, 6758, 1354, 653, 507, 4944, 1198, 8345, 4369, 686, 8350, 21, 2]
+// Module ID: 8388
+// Function ID: 66370
+// Dependencies: [5, 1194, 6758, 1354, 653, 507, 4944, 1198, 8389, 4369, 686, 8394, 21, 2]
 
-// Module 8344
+// Module 8388
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -56,18 +56,18 @@ export default {
     ({ privacyLevel: obj2.privacy_level, scheduledStartTime: obj2.scheduled_start_time, scheduledEndTime: obj2.scheduled_end_time, entityType: obj2.entity_type } = entityType);
     obj.channel_id = channelId;
     obj.entity_metadata = entityMetadata;
-    obj.recurrence_rule = require(8345) /* recurrenceRuleToServer */.recurrenceRuleToServer(entityType.recurrenceRule);
+    obj.recurrence_rule = require(8389) /* recurrenceRuleToServer */.recurrenceRuleToServer(entityType.recurrenceRule);
     const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     obj = { url: closure_10.GUILD_EVENT(arg2, arg0), body: obj };
-    const obj3 = require(8345) /* recurrenceRuleToServer */;
+    const obj3 = require(8389) /* recurrenceRuleToServer */;
     obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return HTTP.patch(obj);
   },
   createGuildEvent(first, id) {
-    let obj = { name: first.name, description: first.description, image: first.image, privacy_level: first.privacyLevel, scheduled_start_time: first.scheduledStartTime, scheduled_end_time: first.scheduledEndTime, entity_type: first.entityType, channel_id: first.channelId, entity_metadata: first.entityMetadata, recurrence_rule: require(8345) /* recurrenceRuleToServer */.recurrenceRuleToServer(first.recurrenceRule) };
+    let obj = { name: first.name, description: first.description, image: first.image, privacy_level: first.privacyLevel, scheduled_start_time: first.scheduledStartTime, scheduled_end_time: first.scheduledEndTime, entity_type: first.entityType, channel_id: first.channelId, entity_metadata: first.entityMetadata, recurrence_rule: require(8389) /* recurrenceRuleToServer */.recurrenceRuleToServer(first.recurrenceRule) };
     const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     obj = { url: closure_10.GUILD_EVENTS_FOR_GUILD(id), body: obj };
-    const obj2 = require(8345) /* recurrenceRuleToServer */;
+    const obj2 = require(8389) /* recurrenceRuleToServer */;
     obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return HTTP.post(obj);
   },

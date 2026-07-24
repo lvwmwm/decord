@@ -1,10 +1,10 @@
-// Module ID: 9735
-// Function ID: 75720
+// Module ID: 9769
+// Function ID: 75932
 // Name: HeroMedia
-// Dependencies: [57, 31, 27, 6663, 4175, 5613, 9736, 653, 33, 666, 689, 4130, 5084, 9737, 8302, 5085, 4126, 1212, 9738, 1273, 1832, 4369, 1557, 8002, 566, 5470, 5467, 5611, 5484, 5450, 491, 4559, 675, 9734, 7459, 477, 9739, 5615, 5094, 5119, 4554, 8212, 9741, 3104, 4543, 7771, 7759, 9744, 5459, 7194, 7195, 8769, 2]
+// Dependencies: [57, 31, 27, 6663, 4175, 5611, 9770, 653, 33, 666, 689, 4130, 5084, 9771, 8346, 5085, 4126, 1212, 9772, 1273, 1832, 4369, 1557, 7433, 566, 5468, 5465, 5609, 5482, 5450, 491, 4559, 675, 9768, 7539, 477, 9773, 5613, 5094, 5119, 4554, 8256, 9775, 3104, 4543, 7533, 7852, 9778, 7194, 7195, 8808, 2]
 // Exports: default
 
-// Module 9735 (HeroMedia)
+// Module 9769 (HeroMedia)
 import _slicedToArray from "_slicedToArray";
 import useMountLayoutEffect from "useMountLayoutEffect";
 import get_ActivityIndicator from "_createForOfIteratorHelperLoose";
@@ -41,7 +41,7 @@ function HeroMedia(mediaItem) {
     obj.muted = true;
     obj.resizeMode = "cover";
     obj.style = tmp.heroImage;
-    obj.children = callback(require(8302) /* _isNativeReflectConstruct */.VideoComponent, obj);
+    obj.children = callback(require(8346) /* _isNativeReflectConstruct */.VideoComponent, obj);
     let tmp7 = callback(closure_7, obj);
   } else if (null != mediaItem.backgroundSrc) {
     const obj2 = { style: tmp.hero };
@@ -79,7 +79,7 @@ function InGameItemTag() {
 }
 function ProductPriceSection(sku) {
   const tmp = callback3();
-  let obj = require(9738) /* useFormattedSKUPrice */;
+  let obj = require(9772) /* useFormattedSKUPrice */;
   obj = { sku: sku.sku, priceSetAssignmentPurchaseType: constants2.DEFAULT };
   const userPrice = obj.useFormattedSKUPrice(obj).userPrice;
   let tmp2 = null;
@@ -284,7 +284,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
   let result = callback3();
   const dependencyMap = result;
   const rect = analyticsLocations(1557)();
-  let obj = analyticsLocations(8002);
+  let obj = analyticsLocations(7433);
   const storeFront = obj.useNativeIAPPayments().storeFront;
   let obj1 = skuId(566);
   let items = [memo2];
@@ -298,7 +298,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     }
     return isFetchingResult;
   });
-  let obj3 = skuId(5470);
+  let obj3 = skuId(5468);
   let applicationId;
   if (null != stateFromStores) {
     applicationId = stateFromStores.applicationId;
@@ -397,7 +397,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     obj.track(_undefined.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj);
   }, items6);
   const items7 = [stateFromStores, stateFromStores2];
-  const tmp6 = analyticsLocations(5467);
+  const tmp6 = analyticsLocations(5465);
   [arr9, arr10] = storeFront(stateFromStores.useMemo(() => {
     let applicationId;
     if (null != stateFromStores) {
@@ -572,7 +572,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
   obj.onPurchasePending = function onPurchasePending() {
 
   };
-  const tmp39Result = analyticsLocations(9739)(obj);
+  const tmp39Result = analyticsLocations(9773)(obj);
   c16 = tmp39Result;
   const items10 = [tmp39Result, callback, memo2, callback1];
   const items11 = [skuId, memo1, callback];
@@ -591,7 +591,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
   } else {
     result = skuId;
     result = dependencyMap;
-    result = skuId(5615).isSlayerSkuAvailableOnThisPlatform(stateFromStores);
+    result = skuId(5613).isSlayerSkuAvailableOnThisPlatform(stateFromStores);
     const intl4 = skuId(1212).intl;
     result = intl4.string(skuId(1212).t.boqtTA);
     obj = {};
@@ -599,7 +599,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     obj1 = {};
     result = c16;
     result = memo1;
-    const obj33 = skuId(5615);
+    const obj33 = skuId(5613);
     let num3 = 0;
     if (!obj36.isIOS()) {
       num3 = rect.top;
@@ -609,7 +609,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     obj.style = items12;
     obj2 = { style: result.header };
     obj3 = {
-      onPress: skuId(9734).closeSocialLayerStorefrontProductDetailsModal,
+      onPress: skuId(9768).closeSocialLayerStorefrontProductDetailsModal,
       backImage() {
           return callback1(skuId(result[39]).XSmallIcon, { size: "md", style: closeButtonIcon.closeButtonIcon });
         }
@@ -645,13 +645,13 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
       tmp61 = null != memo;
       if (tmp61) {
         const obj9 = { sku: stateFromStores };
-        tmp61 = callback1(analyticsLocations(8212), obj9);
+        tmp61 = callback1(analyticsLocations(8256), obj9);
       }
     }
     const items17 = [tmp61, , ];
     let exclusive2 = stateFromStores.exclusive;
     if (exclusive2) {
-      const obj10 = { style: result.exclusiveBadgeContainer, children: callback1(skuId(9741).ExclusiveBadge, {}) };
+      const obj10 = { style: result.exclusiveBadgeContainer, children: callback1(skuId(9775).ExclusiveBadge, {}) };
       exclusive2 = callback1(memo1, obj10);
     }
     items17[1] = exclusive2;
@@ -713,14 +713,14 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     result = callback1;
     const obj23 = { icon: null, variant: "primary", size: "lg" };
     result = analyticsLocations;
-    obj23.icon = analyticsLocations(7759);
+    obj23.icon = analyticsLocations(7852);
     obj23.disabled = tmp33;
     result = skuId;
     result = dependencyMap;
     const intl3 = skuId(1212).intl;
     obj23.accessibilityLabel = intl3.string(skuId(1212).t.QAZA5f);
     obj23.onPress = tmp43;
-    items21[1] = result(skuId(7771).IconButton, obj23);
+    items21[1] = result(skuId(7533).IconButton, obj23);
     obj20.children = items21;
     items20[2] = c16(memo1, obj20);
     if (result) {
@@ -734,13 +734,13 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
         result = getOrFetchApplication;
       }
       const obj25 = { shouldAppendDisclaimer: false === tmp6(tmp7).hasAlreadyLinked };
-      const mobileFinePrintMessageForApplication = skuId(9744).getMobileFinePrintMessageForApplication(result, result, obj25);
+      const mobileFinePrintMessageForApplication = skuId(9778).getMobileFinePrintMessageForApplication(result, result, obj25);
       obj24.children = mobileFinePrintMessageForApplication.map((children) => {
         const obj = { variant: "text-xs/normal", color: "text-muted", children };
-        return callback1(skuId(result[48]).TextWithIOSLinkWorkaround, obj, arg1);
+        return callback1(skuId(result[16]).Text, obj, arg1);
       });
       result = result(result, obj24);
-      const obj31 = skuId(9744);
+      const obj31 = skuId(9778);
     }
     items20[3] = result;
     obj16.children = items20;
@@ -748,7 +748,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     obj.children = items14;
     return result(result, obj);
   }
-  const tmp39 = analyticsLocations(9739);
+  const tmp39 = analyticsLocations(9773);
 }
 function SocialLayerStorefrontProductDetailsModalWithOrderCTX(skuId) {
   let obj = require(477) /* set */;
@@ -764,7 +764,7 @@ function SocialLayerStorefrontProductDetailsModalWithOrderCTX(skuId) {
   obj.skuIds = items;
   obj.isGift = false;
   obj.activeSubscription = null;
-  obj.onOrderRetryCancellation = require(9734) /* openSocialLayerStorefrontUnsupportedOnMobileAlert */.closeSocialLayerStorefrontProductDetailsModal;
+  obj.onOrderRetryCancellation = require(9768) /* openSocialLayerStorefrontUnsupportedOnMobileAlert */.closeSocialLayerStorefrontProductDetailsModal;
   obj = {};
   const merged = Object.assign(skuId);
   obj.children = callback(SocialLayerStorefrontProductDetailsModal, obj);
@@ -829,5 +829,5 @@ export default function WrappedSocialLayerStorefrontProductDetailsModal(arg0) {
   obj = {};
   const merged = Object.assign(arg0);
   obj.children = callback(SocialLayerStorefrontProductDetailsModalWithOrderCTX, obj);
-  return callback(require(8769) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
+  return callback(require(8808) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
 };

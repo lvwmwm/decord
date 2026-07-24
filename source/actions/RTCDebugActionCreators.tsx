@@ -1,10 +1,10 @@
-// Module ID: 10767
-// Function ID: 83669
+// Module ID: 10796
+// Function ID: 83861
 // Name: open
-// Dependencies: [10766, 686, 8847, 3741, 2]
+// Dependencies: [10795, 686, 8886, 3741, 2]
 // Exports: chooseReplayPath, close, open, openReplay, setSection, setShouldRecordNextConnection, setSimulcastDebugOverride
 
-// Module 10767 (open)
+// Module 10796 (open)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const result = require("trackVoiceAndVideoDebuggingSettingsUpdated").fileFinishedImporting("actions/RTCDebugActionCreators.tsx");
@@ -27,7 +27,7 @@ export const setSection = function setSection(section) {
   obj.dispatch(obj);
 };
 export const setShouldRecordNextConnection = function setShouldRecordNextConnection(value) {
-  importDefault(8847)("connection_replay_log_enabled", value, _isNativeReflectConstruct.shouldRecordNextConnection());
+  importDefault(8886)("connection_replay_log_enabled", value, _isNativeReflectConstruct.shouldRecordNextConnection());
   let obj = importDefault(686);
   obj = { type: "RTC_DEBUG_SET_RECORDING_FLAG", value };
   obj.dispatch(obj);

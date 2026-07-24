@@ -1,10 +1,10 @@
-// Module ID: 7535
-// Function ID: 60280
+// Module ID: 7580
+// Function ID: 60384
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [31, 27, 653, 33, 4130, 689, 4347, 1212, 4126, 3821, 1920, 7536, 7538, 4086, 7576, 1273, 4955, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 4347, 1212, 4126, 3821, 1920, 7581, 7583, 4086, 7631, 1273, 4955, 2]
 // Exports: default
 
-// Module 7535 (StageChannelAgeVerificationNoticeContent)
+// Module 7580 (StageChannelAgeVerificationNoticeContent)
 import "result";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -79,7 +79,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     if (isVerifiedTeen) {
       let WarningIcon = tmp12(4086).CircleInformationIcon;
     } else {
-      WarningIcon = tmp12(7576).WarningIcon;
+      WarningIcon = tmp12(7631).WarningIcon;
     }
     obj = { size: "refresh_sm", color: importDefault(689).colors.TEXT_DEFAULT, style: tmp.icon };
     const items = [Text(WarningIcon, obj), ];

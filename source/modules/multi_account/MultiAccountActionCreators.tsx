@@ -1,10 +1,10 @@
-// Module ID: 11456
-// Function ID: 89183
+// Module ID: 11486
+// Function ID: 89404
 // Name: validateMultiAccountTokens
-// Dependencies: [5, 1194, 11452, 653, 3, 684, 686, 507, 675, 5590, 2]
+// Dependencies: [5, 1194, 11482, 653, 3, 684, 686, 507, 675, 5588, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11456 (validateMultiAccountTokens)
+// Module 11486 (validateMultiAccountTokens)
 import fromEntries from "fromEntries";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
@@ -48,8 +48,8 @@ export const switchAccount = function switchAccount(id, switchSynchronously, CHO
     obj.location = tmp5;
     importDefault(686).dispatch(obj);
     const obj3 = importDefault(686);
-    resolved = importDefault(5590).switchAccountToken(token, switchSynchronously);
-    const obj5 = importDefault(5590);
+    resolved = importDefault(5588).switchAccountToken(token, switchSynchronously);
+    const obj5 = importDefault(5588);
   }
   return resolved;
 };

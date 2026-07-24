@@ -1,10 +1,10 @@
-// Module ID: 7543
-// Function ID: 60377
+// Module ID: 7588
+// Function ID: 60485
 // Name: parseMessageEmbedForProps
-// Dependencies: [1194, 7544, 653, 3712, 4317, 1212, 7545, 566, 2]
+// Dependencies: [1194, 7589, 653, 3712, 4317, 1212, 7590, 566, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 7543 (parseMessageEmbedForProps)
+// Module 7588 (parseMessageEmbedForProps)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import SafetyHubLinks from "SafetyHubLinks";
 import ME from "ME";
@@ -97,7 +97,7 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
   }
 };
 export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
-  let tmp = first.type !== require(7545) /* ContentIdType */.ContentIdType.MESSAGE;
+  let tmp = first.type !== require(7590) /* ContentIdType */.ContentIdType.MESSAGE;
   if (!tmp) {
     let tmp2 = "" === first.content;
     if (tmp2) {

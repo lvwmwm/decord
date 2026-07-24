@@ -1,7 +1,7 @@
 // Module ID: 6769
-// Function ID: 53030
+// Function ID: 53052
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 3811, 1196, 1849, 6770, 1387, 21, 6771, 6828, 6829, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 3811, 1196, 1849, 6770, 1387, 21, 6771, 6827, 6828, 2]
 
 // Module 6769 (_isNativeReflectConstruct)
 import getCountryCodeByCountryName from "getCountryCodeByCountryName";

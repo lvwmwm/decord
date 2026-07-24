@@ -1,10 +1,10 @@
-// Module ID: 9728
-// Function ID: 75609
+// Module ID: 9762
+// Function ID: 75821
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 31, 27, 5612, 1851, 653, 655, 8264, 33, 689, 4130, 8663, 8676, 9729, 9733, 5464, 5484, 675, 8492, 9682, 9734, 3982, 3831, 1212, 6773, 8774, 3969, 4126, 9751, 9756, 2]
+// Dependencies: [5, 31, 27, 5610, 1851, 653, 655, 8308, 33, 689, 4130, 8704, 8717, 9763, 9767, 5462, 5482, 675, 8537, 9716, 9768, 3982, 3831, 1212, 6773, 8813, 3969, 4126, 9785, 9790, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 9728 (PremiumGiftWishlistBanner)
+// Module 9762 (PremiumGiftWishlistBanner)
 import closure_3 from "ME";
 import result from "result";
 import get_ActivityIndicator from "Text";
@@ -50,11 +50,11 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/p
 export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(giftRecipient) {
   giftRecipient = giftRecipient.giftRecipient;
   let sku;
-  let obj = { width: giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_WIDTH, height: giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_HEIGHT };
+  const size = { width: giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_WIDTH, height: giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_WIDTH };
   WISHLIST_IN_DM_LENGTH_MOBILE = giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[12]).WISHLIST_IN_DM_LENGTH_MOBILE;
-  let obj1 = giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[13]);
+  let obj = giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[13]);
   obj = { userId: giftRecipient.id, numItems: WISHLIST_IN_DM_LENGTH_MOBILE };
-  const wishlistRecommendationsForSingleUser = obj1.useWishlistRecommendationsForSingleUser(obj);
+  const wishlistRecommendationsForSingleUser = obj.useWishlistRecommendationsForSingleUser(obj);
   const wishlistAndRecommendations = wishlistRecommendationsForSingleUser.wishlistAndRecommendations;
   const skusToUserAndReason = wishlistRecommendationsForSingleUser.skusToUserAndReason;
   const status = wishlistRecommendationsForSingleUser.status;
@@ -90,7 +90,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
     obj = { totalUnownedWishlistItemCount, wishlistInDmLength: WISHLIST_IN_DM_LENGTH_MOBILE, displayItems: memo };
     return obj.getBannerMode(obj);
   }, items1);
-  const analyticsLocations = obj(WISHLIST_IN_DM_LENGTH_MOBILE[15])(obj(WISHLIST_IN_DM_LENGTH_MOBILE[16]).WISHLIST_BANNER).analyticsLocations;
+  const analyticsLocations = size(WISHLIST_IN_DM_LENGTH_MOBILE[15])(size(WISHLIST_IN_DM_LENGTH_MOBILE[16]).WISHLIST_BANNER).analyticsLocations;
   let closure_10 = skusToUserAndReason.useRef(false);
   const items2 = [status, memo, giftRecipient.id, analyticsLocations];
   const effect = skusToUserAndReason.useEffect(() => {
@@ -102,7 +102,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
       tmp = memo.length > 0;
     }
     if (tmp) {
-      obj = obj(WISHLIST_IN_DM_LENGTH_MOBILE[17]);
+      let obj = size(WISHLIST_IN_DM_LENGTH_MOBILE[17]);
       obj = { gift_recipient_id: giftRecipient.id, sku_ids: memo.map((sku) => sku.sku.id), location_stack: analyticsLocations };
       const _Array = Array;
       const _Set = Set;
@@ -114,11 +114,10 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
   }, items2);
   const items3 = [giftRecipient.id, analyticsLocations];
   let callback = skusToUserAndReason.useCallback(() => {
-    const obj = { userId: giftRecipient.id, initialSection: name.WISHLIST, sourceAnalyticsLocations: analyticsLocations };
-    obj(WISHLIST_IN_DM_LENGTH_MOBILE[18])(obj);
+    size(WISHLIST_IN_DM_LENGTH_MOBILE[18])({ userId: giftRecipient.id, initialSection: name.WISHLIST, sourceAnalyticsLocations: analyticsLocations });
   }, items3);
-  let obj3 = giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[19]);
-  const selectPremiumGift = obj3.useSelectPremiumGift("PremiumGiftWishlistBanner");
+  let obj2 = giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[19]);
+  const selectPremiumGift = obj2.useSelectPremiumGift("PremiumGiftWishlistBanner");
   const items4 = [giftRecipient, defaultWishlistId, selectPremiumGift];
   let closure_12 = skusToUserAndReason.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
@@ -127,11 +126,11 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
       return callback(...arguments);
     };
   })(), items4);
-  let obj4 = obj(WISHLIST_IN_DM_LENGTH_MOBILE[26]);
-  let name = obj4.getName(giftRecipient);
-  let obj5 = giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[14]).BANNER_CONFIG_MOBILE[memo1];
-  const subtitle = obj5.getSubtitle(name);
-  const tmp9 = callback2(giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_WIDTH, giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_HEIGHT);
+  let obj3 = size(WISHLIST_IN_DM_LENGTH_MOBILE[26]);
+  let name = obj3.getName(giftRecipient);
+  let obj4 = giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[14]).BANNER_CONFIG_MOBILE[memo1];
+  const subtitle = obj4.getSubtitle(name);
+  const tmp9 = callback2(size.width, size.height);
   callback = tmp9;
   if ("error" === status) {
     return null;
@@ -149,9 +148,9 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
       sku = memo[WISHLIST_IN_DM_LENGTH_MOBILE - 1];
     }
     obj = {};
-    obj1 = { style: tmp9.title, variant: "text-lg/semibold", children: obj5.title };
+    const obj1 = { style: tmp9.title, variant: "text-lg/semibold", children: obj4.title };
     const items5 = [callback(giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[27]).Text, obj1), , ];
-    const obj2 = { style: tmp9.subtitle, variant: "text-sm/medium", color: "text-muted", children: subtitle };
+    obj2 = { style: tmp9.subtitle, variant: "text-sm/medium", color: "text-muted", children: subtitle };
     items5[1] = callback(giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[27]).Text, obj2);
     if (tmp10) {
       obj3 = { style: tmp9.placeholderRow };
@@ -160,14 +159,14 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
       obj3.children = Array.from(obj4, (arg0, arg1) => tmp9(totalUnownedWishlistItemCount, { style: tmp9.placeholder }, arg1));
       let tmp19Result = callback(totalUnownedWishlistItemCount, obj3);
     } else {
-      obj5 = { horizontal: true, showsHorizontalScrollIndicator: false, snapToInterval: giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_WIDTH + PX_16, snapToAlignment: "start", decelerationRate: "fast", nestedScrollEnabled: true };
-      const obj6 = { gap: PX_16, paddingHorizontal: PX_16, paddingVertical: obj(WISHLIST_IN_DM_LENGTH_MOBILE[9]).space.PX_8 };
+      const obj5 = { horizontal: true, showsHorizontalScrollIndicator: false, snapToInterval: giftRecipient(WISHLIST_IN_DM_LENGTH_MOBILE[11]).COLLECTIBLES_SHOP_CARD_WIDTH + PX_16, snapToAlignment: "start", decelerationRate: "fast", nestedScrollEnabled: true };
+      const obj6 = { gap: PX_16, paddingHorizontal: PX_16, paddingVertical: size(WISHLIST_IN_DM_LENGTH_MOBILE[9]).space.PX_8 };
       obj5.contentContainerStyle = obj6;
       const items6 = [
         substr.map((sku) => {
               sku = sku.sku;
               const source = sku.source;
-              obj = { style: tmp9.wishlistItemShadow, children: tmp9(obj(WISHLIST_IN_DM_LENGTH_MOBILE[28]), obj) };
+              obj = { style: tmp9.wishlistItemShadow, children: tmp9(size(WISHLIST_IN_DM_LENGTH_MOBILE[28]), obj) };
               obj = {
                 sku,
                 size: source,
@@ -187,13 +186,13 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
         tmp19Result = tmp19(tmp20, obj5);
       } else {
         const obj7 = { style: tmp9.wishlistItemShadow };
-        let tmp30 = obj;
+        let tmp30 = size;
         if (tmp11) {
           tmp30 = tmp30(tmp31[29]);
           const obj8 = {};
           sku = sku.sku;
           obj8.sku = sku;
-          obj8.size = obj;
+          obj8.size = size;
           obj8.recipientName = name;
           name = totalUnownedWishlistItemCount - WISHLIST_IN_DM_LENGTH_MOBILE;
           totalUnownedWishlistItemCount = name + 1;
@@ -204,7 +203,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
         } else {
           const obj9 = {
             sku: sku.sku,
-            size: obj,
+            size,
             source: sku.source,
             recipientName: name,
             onPress() {
@@ -225,5 +224,5 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
     obj.children = items5;
     return sku(totalUnownedWishlistItemCount, obj);
   }
-  const tmp3 = obj(WISHLIST_IN_DM_LENGTH_MOBILE[15]);
+  const tmp3 = size(WISHLIST_IN_DM_LENGTH_MOBILE[15]);
 };

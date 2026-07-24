@@ -1,10 +1,10 @@
-// Module ID: 10288
-// Function ID: 79464
+// Module ID: 10317
+// Function ID: 79655
 // Name: useChannelPresetSettings
-// Dependencies: [57, 1348, 4325, 653, 4326, 662, 624, 4328, 10286, 5079, 10289, 5073, 2]
+// Dependencies: [57, 1348, 4325, 653, 4326, 662, 624, 4328, 10315, 5079, 10318, 5073, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting, useChannelPresetInheritance, useChannelPresetSettings
 
-// Module 10288 (useChannelPresetSettings)
+// Module 10317 (useChannelPresetSettings)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -62,24 +62,24 @@ export const updateChannelPreset = function updateChannelPreset(guild_id, id, ar
   const channelIdFlags = store.getChannelIdFlags(guild_id, id);
   if (arg2 === require(4328) /* Presets */.Presets.ALL_MESSAGES) {
     const obj4 = importDefault(5079);
-    let obj = { message_notifications: UserNotificationSettings.ALL_MESSAGES, flags: require(10289) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ALL_MESSAGES) };
+    let obj = { message_notifications: UserNotificationSettings.ALL_MESSAGES, flags: require(10318) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ALL_MESSAGES) };
     const result = obj4.updateChannelOverrideSettings(guild_id, id, obj, require(5073) /* differ */.NotificationLabels.PresetAll);
-    const obj6 = require(10289) /* resetGuildUnreadFlags */;
+    const obj6 = require(10318) /* resetGuildUnreadFlags */;
   } else if (arg2 === require(4328) /* Presets */.Presets.MENTIONS) {
     obj = importDefault(5079);
-    obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: require(10289) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
+    obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: require(10318) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
     const result1 = obj.updateChannelOverrideSettings(guild_id, id, obj, require(5073) /* differ */.NotificationLabels.PresetMentions);
-    const obj3 = require(10289) /* resetGuildUnreadFlags */;
+    const obj3 = require(10318) /* resetGuildUnreadFlags */;
   } else if (arg2 === require(4328) /* Presets */.Presets.NOTHING) {
     const obj7 = importDefault(5079);
-    const obj1 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: require(10289) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
+    const obj1 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: require(10318) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
     const result2 = obj7.updateChannelOverrideSettings(guild_id, id, obj1, require(5073) /* differ */.NotificationLabels.PresetNothing);
-    const obj9 = require(10289) /* resetGuildUnreadFlags */;
+    const obj9 = require(10318) /* resetGuildUnreadFlags */;
   }
 };
 export const updateChannelToGuildDefault = function updateChannelToGuildDefault(guild_id, id) {
   let obj = importDefault(5079);
-  obj = { message_notifications: UserNotificationSettings.NULL, flags: require(10289) /* resetGuildUnreadFlags */.resetChannelUnreadFlags(store.getChannelIdFlags(guild_id, id)) };
+  obj = { message_notifications: UserNotificationSettings.NULL, flags: require(10318) /* resetGuildUnreadFlags */.resetChannelUnreadFlags(store.getChannelIdFlags(guild_id, id)) };
   const result = obj.updateChannelOverrideSettings(guild_id, id, obj, require(5073) /* differ */.NotificationLabels.PresetDefault);
 };
 export const updateChannelUnreadSetting = function updateChannelUnreadSetting(guild_id, id, ALL_MESSAGES) {
@@ -91,7 +91,7 @@ export const updateChannelUnreadSetting = function updateChannelUnreadSetting(gu
   } else {
     UNREADS_ONLY_MENTIONS = constants.UNREADS_ONLY_MENTIONS;
   }
-  obj.flags = require(10289) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS);
+  obj.flags = require(10318) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS);
   const NotificationLabel = require(5073) /* differ */.NotificationLabel;
   const result = obj.updateChannelOverrideSettings(guild_id, id, obj, NotificationLabel.unreads(ALL_MESSAGES));
 };

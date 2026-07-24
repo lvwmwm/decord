@@ -1,5 +1,5 @@
 // Module ID: 4665
-// Function ID: 40491
+// Function ID: 40495
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 4666, 22, 4670, 491, 631, 2]
 // Exports: isResolvedUpload

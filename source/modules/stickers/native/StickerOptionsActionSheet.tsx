@@ -1,10 +1,10 @@
-// Module ID: 9621
-// Function ID: 74948
+// Module ID: 9657
+// Function ID: 75159
 // Name: StickerOptionsActionSheet
-// Dependencies: [31, 33, 5492, 3830, 4098, 5500, 5503, 5165, 4074, 1212, 2]
+// Dependencies: [31, 33, 5490, 3830, 4098, 5498, 5501, 5165, 4074, 1212, 2]
 // Exports: default
 
-// Module 9621 (StickerOptionsActionSheet)
+// Module 9657 (StickerOptionsActionSheet)
 import result from "result";
 import { jsx } from "jsxProd";
 
@@ -28,6 +28,6 @@ export default function StickerOptionsActionSheet(stickerUrl) {
   obj.label = intl.string(stickerUrl(1212).t.B1ubHx);
   obj.onPress = callback;
   obj.children = jsx(stickerUrl(5165).TableRow, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
-  obj.children = jsx(stickerUrl(5503).TableRowGroup, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
-  return jsx(stickerUrl(5500).ActionSheet, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
+  obj.children = jsx(stickerUrl(5501).TableRowGroup, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
+  return jsx(stickerUrl(5498).ActionSheet, { icon: jsx(stickerUrl(4074).LinkIcon, {}) });
 };

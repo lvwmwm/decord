@@ -1,10 +1,10 @@
-// Module ID: 11080
-// Function ID: 86169
+// Module ID: 11107
+// Function ID: 86358
 // Name: toggleMemberListContentFeedHidden
-// Dependencies: [1348, 1906, 3947, 1849, 11081, 653, 686, 675, 11082, 5484, 2]
+// Dependencies: [1348, 1906, 3947, 1849, 11108, 653, 686, 675, 11109, 5482, 2]
 // Exports: clearDeleteHistoryError, onGameProfileOpen, onTapContentInventoryEntryEmbed, toggleMemberListContentFeedHidden
 
-// Module 11080 (toggleMemberListContentFeedHidden)
+// Module 11107 (toggleMemberListContentFeedHidden)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -38,7 +38,7 @@ export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEnt
       }
       showUserProfileResult.channelId = id;
       showUserProfileResult.messageId = message.id;
-      let items = importDefault(5484);
+      let items = importDefault(5482);
       if (tmp2) {
         items = [];
         items[0] = items.AVATAR;
@@ -47,8 +47,8 @@ export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEnt
         items1 = [items.USERNAME];
       }
       showUserProfileResult.sourceAnalyticsLocations = items1;
-      showUserProfileResult = importAll(11082).showUserProfile(showUserProfileResult);
-      const obj2 = importAll(11082);
+      showUserProfileResult = importAll(11109).showUserProfile(showUserProfileResult);
+      const obj2 = importAll(11109);
     }
   }
 };

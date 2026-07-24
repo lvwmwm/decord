@@ -1,10 +1,10 @@
-// Module ID: 11322
-// Function ID: 88061
+// Module ID: 11351
+// Function ID: 88301
 // Name: createPollCreationImageForMedia
-// Dependencies: [5, 57, 31, 7071, 7003, 11323, 9935, 11324, 11325, 11326, 1212, 7906, 2]
+// Dependencies: [5, 57, 31, 7070, 7002, 11352, 9967, 11353, 11354, 11355, 1212, 7993, 2]
 // Exports: default
 
-// Module 11322 (createPollCreationImageForMedia)
+// Module 11351 (createPollCreationImageForMedia)
 import useRequest from "useRequest";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -87,7 +87,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
     tmp18 = 0 === found1.length;
   }
   const tmp14 = first(React.useState({}), 2);
-  const tmp21 = first(importDefault(11323)(importDefault(9935).createPoll), 2);
+  const tmp21 = first(importDefault(11352)(importDefault(9967).createPoll), 2);
   const first4 = tmp21[0];
   const loading = tmp23.loading;
   let closure_16 = tmp24;
@@ -220,7 +220,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
       let intl = id(initialQuestion[10]).intl;
       obj.question = intl.string(id(initialQuestion[10]).t.gPX3oI);
     }
-    if (first.filter((text) => callback(7003).isAnswerFilled(text)).length < closure_8) {
+    if (first.filter((text) => callback(7002).isAnswerFilled(text)).length < closure_8) {
       c0 = false;
       let _HermesInternal = HermesInternal;
       let combined = "answer-" + first[0].localCreationAnswerId;
@@ -228,7 +228,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
       obj[combined] = intl2.string(id(initialQuestion[10]).t.fYvzEX);
     }
     const item = first.forEach((localCreationAnswerId) => {
-      const obj = callback(7003);
+      const obj = callback(7002);
       if (obj.isIncompleteAnswer(localCreationAnswerId)) {
         let c0 = false;
         const _HermesInternal = HermesInternal;

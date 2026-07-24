@@ -1,10 +1,10 @@
-// Module ID: 7750
-// Function ID: 61564
+// Module ID: 7843
+// Function ID: 61891
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1348, 1849, 7649, 7651, 4130, 689, 1212, 7635, 7751, 7652, 2]
+// Dependencies: [1348, 1849, 7738, 7740, 4130, 689, 1212, 7724, 7844, 7741, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7750 (createFriendRequestAcceptedSystemMessage)
+// Module 7843 (createFriendRequestAcceptedSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 
@@ -21,10 +21,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
       const currentUser = authStore.getCurrentUser();
       if (null != user) {
         if (null != currentUser) {
-          let str5 = require(7649) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
+          let str5 = require(7738) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
           let obj = { userId: recipientId, message, author: str5, roleStyle: message.roleStyle };
           obj = { username: str5.nick };
-          obj.usernameOnClick = importDefault(7651)(obj);
+          obj.usernameOnClick = importDefault(7740)(obj);
           const content = message.content;
           if (null != content) {
             if ("" !== content) {
@@ -61,10 +61,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
             formatToPartsResult = formatToParts(t.hyPOTm, obj);
           }
           const obj4 = { content: formatToPartsResult };
-          const obj10 = require(7649) /* getMessageAuthorWithProcessedColor */;
-          obj4.iconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7751));
+          const obj10 = require(7738) /* getMessageAuthorWithProcessedColor */;
+          obj4.iconUrl = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7844));
           obj4.textColor = undefined;
-          const merged2 = Object.assign(importDefault(7652)(message));
+          const merged2 = Object.assign(importDefault(7741)(message));
           return obj4;
         }
       }

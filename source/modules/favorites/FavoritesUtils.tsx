@@ -1,5 +1,5 @@
 // Module ID: 5077
-// Function ID: 44181
+// Function ID: 44186
 // Name: isFavoritesGuildId
 // Dependencies: [1386, 653, 1212, 2]
 // Exports: canFavoriteChannelType, getFavoritesAwareGuildName

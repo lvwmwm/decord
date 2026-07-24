@@ -1,10 +1,10 @@
-// Module ID: 7999
-// Function ID: 63581
+// Module ID: 8059
+// Function ID: 63857
 // Name: PremiumFeaturesCards
-// Dependencies: [31, 27, 1851, 33, 4130, 8000, 2]
+// Dependencies: [31, 27, 1851, 33, 4130, 8060, 2]
 // Exports: default
 
-// Module 7999 (PremiumFeaturesCards)
+// Module 8059 (PremiumFeaturesCards)
 import "result";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";

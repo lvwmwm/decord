@@ -1,5 +1,5 @@
 // Module ID: 1034
-// Function ID: 11127
+// Function ID: 11128
 // Name: _addMeasureSpans
 // Dependencies: [57, 77, 1035, 794, 1015, 1037, 1038, 1010, 1016, 1018, 1019, 1039]
 // Exports: addPerformanceEntries, startTrackingInteractions, startTrackingLongAnimationFrames, startTrackingLongTasks, startTrackingWebVitals

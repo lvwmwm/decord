@@ -1,10 +1,10 @@
-// Module ID: 12860
-// Function ID: 99925
+// Module ID: 12912
+// Function ID: 100248
 // Name: AddFriendModalScene
-// Dependencies: [57, 31, 27, 1849, 653, 11707, 33, 4130, 5052, 689, 11709, 4559, 675, 477, 1459, 4337, 3969, 1212, 8332, 5788, 12861, 5087, 4126, 12862, 12864, 1557, 5519, 2]
+// Dependencies: [57, 31, 27, 1849, 653, 11734, 33, 4130, 5052, 689, 11736, 4559, 675, 477, 1459, 4337, 3969, 1212, 8376, 5788, 12913, 5087, 4126, 12914, 12916, 1557, 5517, 2]
 // Exports: default
 
-// Module 12860 (AddFriendModalScene)
+// Module 12912 (AddFriendModalScene)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "set";
@@ -147,5 +147,5 @@ export default function AddFriendModal(arg0) {
     obj.ADD_FRIEND = obj;
     return obj;
   })(closure_0), items);
-  return callback2(_require(5519).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: importDefault(1557)().top });
+  return callback2(_require(5517).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: importDefault(1557)().top });
 };

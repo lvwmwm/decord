@@ -1,10 +1,10 @@
-// Module ID: 11483
-// Function ID: 89429
+// Module ID: 11513
+// Function ID: 89674
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: [4349, 566, 2]
 // Exports: useLongestChannelMessageBeforeReply
 
-// Module 11483 (_createForOfIteratorHelperLoose)
+// Module 11513 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

@@ -1,5 +1,5 @@
 // Module ID: 5358
-// Function ID: 45963
+// Function ID: 45968
 // Name: RecyclerView
 // Dependencies: [5359, 5365, 31, 27, 33, 5367, 5376, 5377, 5379, 5405, 5410, 5411, 5400, 5403, 5409, 5378, 5412, 5356, 5416, 5413, 5418, 5419]
 
@@ -301,7 +301,7 @@ class RecyclerViewComponent {
         }
       }
     }), items1);
-    f45974 = tmp32;
+    f45979 = tmp32;
     items2 = [, ];
     items2[0] = tmp32;
     items2[1] = recyclerViewManager;
@@ -423,7 +423,7 @@ class RecyclerViewComponent {
       return eventResult;
     }, items4);
     result1 = recyclerViewManager.shouldMaintainVisibleContentPosition();
-    f45986 = result1;
+    f45991 = result1;
     items5 = [, ];
     items5[0] = maintainVisibleContentPosition;
     items5[1] = result1;

@@ -1,8 +1,8 @@
-// Module ID: 13400
-// Function ID: 103054
-// Dependencies: [1391, 1838, 653, 8310, 10499, 10496, 2]
+// Module ID: 13453
+// Function ID: 103381
+// Dependencies: [1391, 1838, 653, 8354, 10528, 10525, 2]
 
-// Module 13400
+// Module 13453
 import { getGuildIconURL } from "isGuildOwner";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import ME from "ME";
@@ -14,7 +14,7 @@ let obj = {};
 obj = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10499)(string);
+    let obj = importDefault(10528)(string);
     obj = { guild_id: string.string() };
     const requiredResult = obj.required();
     const numberResult = string.number();

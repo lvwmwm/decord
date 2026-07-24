@@ -1,10 +1,10 @@
-// Module ID: 9131
-// Function ID: 71480
+// Module ID: 9167
+// Function ID: 71689
 // Name: JoinCallButton
-// Dependencies: [31, 27, 5040, 1352, 1348, 4146, 9132, 653, 9133, 33, 4130, 9085, 689, 9134, 9136, 9137, 9143, 566, 5650, 22, 9144, 9270, 4341, 1212, 10029, 5786, 10030, 9139, 477, 3989, 10075, 10076, 10093, 1207, 3982, 10097, 4631, 10098, 10099, 10100, 4345, 10101, 10103, 2]
+// Dependencies: [31, 27, 5040, 1352, 1348, 4146, 9168, 653, 9169, 33, 4130, 9123, 689, 9170, 9172, 9173, 9179, 566, 5650, 22, 9180, 9306, 4341, 1212, 10061, 5786, 10062, 9175, 477, 3989, 10107, 10108, 10125, 1207, 3982, 10129, 4631, 10130, 10131, 10132, 4345, 10133, 10135, 2]
 // Exports: default
 
-// Module 9131 (JoinCallButton)
+// Module 9167 (JoinCallButton)
 import "toAnalyticsSearchFilterType";
 import { View } from "withErrorHandling";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -24,11 +24,11 @@ let closure_9;
 const require = arg1;
 function JoinCallButton() {
   const obj = { size: "sm", color: importDefault(689).unsafe_rawColors.GREEN_360 };
-  return jsx(require(9085) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.GREEN_360 });
+  return jsx(require(9123) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.GREEN_360 });
 }
 function EndCallButton() {
   const obj = { size: "sm", color: importDefault(689).unsafe_rawColors.RED_400 };
-  return jsx(require(9134) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.RED_400 });
+  return jsx(require(9170) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: importDefault(689).unsafe_rawColors.RED_400 });
 }
 function ChannelActionButtons(channel) {
   let channelHasThreads;
@@ -294,11 +294,11 @@ export default function ChannelActions(channelId) {
     return obj;
   });
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  let obj1 = channelId(9137);
+  let obj1 = channelId(9173);
   obj = { style: containerStyle };
   if (obj1.useHasForumSearchQuery(channelId)) {
     obj = { channelId };
-    let tmp6 = jsx(channelId(10101).ForumChannelCloseSearchButton, { channelId });
+    let tmp6 = jsx(channelId(10133).ForumChannelCloseSearchButton, { channelId });
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {
@@ -307,7 +307,7 @@ export default function ChannelActions(channelId) {
       }
     }
     const obj2 = { channelId, screenIndex };
-    tmp6 = jsx(importDefault(10103), { channelId, screenIndex });
+    tmp6 = jsx(importDefault(10135), { channelId, screenIndex });
   }
   obj.children = tmp6;
   return <View style={containerStyle} />;

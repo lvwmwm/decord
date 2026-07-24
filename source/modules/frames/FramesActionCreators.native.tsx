@@ -1,9 +1,9 @@
-// Module ID: 10483
-// Function ID: 81144
+// Module ID: 10512
+// Function ID: 81336
 // Name: _launchFrameOnNative
-// Dependencies: [5, 4146, 10484, 10485, 2]
+// Dependencies: [5, 4146, 10513, 10514, 2]
 
-// Module 10483 (_launchFrameOnNative)
+// Module 10512 (_launchFrameOnNative)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import merged from "_launchFrame";

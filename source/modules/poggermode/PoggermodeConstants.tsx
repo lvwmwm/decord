@@ -1,9 +1,9 @@
-// Module ID: 6921
-// Function ID: 55149
+// Module ID: 6920
+// Function ID: 55157
 // Name: ConfettiLocation
 // Dependencies: [2]
 
-// Module 6921 (ConfettiLocation)
+// Module 6920 (ConfettiLocation)
 let obj = { LEVEL_1: 0, [0]: "LEVEL_1", LEVEL_2: 1, [1]: "LEVEL_2", LEVEL_3: 2, [2]: "LEVEL_3", LEVEL_4: 3, [3]: "LEVEL_4", LEVEL_5: 4, [4]: "LEVEL_5" };
 obj = { [obj.LEVEL_1]: items, [obj.LEVEL_2]: items1, [obj.LEVEL_3]: items2, [obj.LEVEL_4]: items3, [obj.LEVEL_5]: items4 };
 items = [[1, 0.0001], [25, 0.05], [50, 0.1], [100, 0.5], [250, 1], [500, 2], [1000, 3], [9001, 4]];

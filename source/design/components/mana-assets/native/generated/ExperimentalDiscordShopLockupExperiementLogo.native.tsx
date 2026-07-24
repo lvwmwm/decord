@@ -1,5 +1,5 @@
 // Module ID: 6042
-// Function ID: 50017
+// Function ID: 50028
 // Name: ExperimentalDiscordShopLockupExperiementLogo
 // Dependencies: [27, 33, 689, 3834, 6043, 2]
 // Exports: ExperimentalDiscordShopLockupExperiementLogo

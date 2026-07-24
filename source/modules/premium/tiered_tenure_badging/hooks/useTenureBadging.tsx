@@ -1,10 +1,10 @@
-// Module ID: 8557
-// Function ID: 68014
+// Module ID: 8602
+// Function ID: 68244
 // Name: useTieredTenureBadge
-// Dependencies: [6856, 1849, 3782, 1851, 566, 8558, 1872, 3712, 6877, 2]
+// Dependencies: [6855, 1849, 3782, 1851, 566, 8603, 1872, 3712, 6876, 2]
 // Exports: useTieredTenureBadgeData, useTieredTenureBadgesFromSubscriptionData
 
-// Module 8557 (useTieredTenureBadge)
+// Module 8602 (useTieredTenureBadge)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -21,7 +21,7 @@ function useTieredTenureBadge() {
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  const tieredTenureBadgeForUser = require(8558) /* useTieredTenureBadgeForUser */.useTieredTenureBadgeForUser(id);
+  const tieredTenureBadgeForUser = require(8603) /* useTieredTenureBadgeForUser */.useTieredTenureBadgeForUser(id);
   let tmp4 = null;
   if (null != tieredTenureBadgeForUser) {
     tmp4 = tieredTenureBadgeForUser;
@@ -84,15 +84,15 @@ function useTieredTenureEarnedOnDate() {
     if (null != stateFromStores) {
       earnedOnDate = null;
       if (null != stateFromStores.premiumSince) {
-        earnedOnDate = require(6877) /* getTieredTenureBadgeData */.getEarnedOnDate(tmp, stateFromStores.premiumSince);
-        const obj2 = require(6877) /* getTieredTenureBadgeData */;
+        earnedOnDate = require(6876) /* getTieredTenureBadgeData */.getEarnedOnDate(tmp, stateFromStores.premiumSince);
+        const obj2 = require(6876) /* getTieredTenureBadgeData */;
       }
     }
   }
   return earnedOnDate;
 }
 function useTieredTenureBadgeDataForUser(userId) {
-  const tieredTenureBadgeForUser = require(8558) /* useTieredTenureBadgeForUser */.useTieredTenureBadgeForUser(userId);
+  const tieredTenureBadgeForUser = require(8603) /* useTieredTenureBadgeForUser */.useTieredTenureBadgeForUser(userId);
   let tmp2 = null;
   if (null != tieredTenureBadgeForUser) {
     tmp2 = table[tieredTenureBadgeForUser];

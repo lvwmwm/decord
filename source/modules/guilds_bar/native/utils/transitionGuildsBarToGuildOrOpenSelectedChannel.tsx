@@ -1,10 +1,10 @@
-// Module ID: 14838
-// Function ID: 113217
+// Module ID: 14885
+// Function ID: 113538
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
 // Dependencies: [1906, 3947, 653, 3982, 3981, 4138, 5737, 2]
 // Exports: default
 
-// Module 14838 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 14885 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import { ME } from "ME";

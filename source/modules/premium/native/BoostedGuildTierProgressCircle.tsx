@@ -1,10 +1,10 @@
-// Module ID: 12437
-// Function ID: 96567
+// Module ID: 12490
+// Function ID: 96890
 // Name: getTierIcon
-// Dependencies: [31, 27, 653, 33, 4130, 689, 12438, 12442, 12443, 12444, 4037, 4022, 11625, 4126, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 12491, 12495, 12496, 12497, 4037, 4022, 11652, 4126, 2]
 // Exports: default
 
-// Module 12437 (getTierIcon)
+// Module 12490 (getTierIcon)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -23,15 +23,15 @@ function getTierIcon(theme, premiumTier) {
     if (premiumTier.premiumTier !== closure_6.NONE) {
       premiumTier = premiumTier.premiumTier;
       if (closure_6.TIER_1 === premiumTier) {
-        return importDefault(12442);
+        return importDefault(12495);
       } else if (closure_6.TIER_2 === premiumTier) {
-        return importDefault(12443);
+        return importDefault(12496);
       } else if (closure_6.TIER_3 === premiumTier) {
-        return importDefault(12444);
+        return importDefault(12497);
       }
     }
   }
-  return require(12438) /* getTier048PxSource */.getTier048PxSource(theme);
+  return require(12491) /* getTier048PxSource */.getTier048PxSource(theme);
 }
 ({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_5, BoostedGuildTiers: closure_6 } = ME);
@@ -56,7 +56,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
   }
   if (null == guild) {
     let obj = { style: tmp.guildTierBackground };
-    obj = { source: getTierIcon(theme), style: tmp.guildTierNoneIcon };
+    obj = { source: getTierIcon(theme), style: tmp.guildTierNoneIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
     obj.children = callback(closure_4, obj);
     return callback(closure_3, obj);
   } else {
@@ -78,9 +78,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     const obj8 = require(4022) /* _createForOfIteratorHelperLoose */;
     obj2.source = getTierIcon(theme, guild);
     obj2.style = tmp.guildTierIcon;
+    obj2.accessibilityElementsHidden = true;
+    obj2.importantForAccessibility = "no";
     const items = [callback(closure_4, obj2), ];
     const obj3 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active" };
-    const tmp9 = importDefault(11625);
+    const tmp9 = importDefault(11652);
     obj3.children = require(4022) /* _createForOfIteratorHelperLoose */.getTierName(guild.premiumTier);
     items[1] = callback(require(4126) /* Text */.Text, obj3);
     obj1.children = items;

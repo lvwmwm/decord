@@ -1,7 +1,7 @@
 // Module ID: 6691
-// Function ID: 51597
+// Function ID: 51619
 // Name: trackInvite
-// Dependencies: [57, 5, 6, 7, 4808, 6692, 6693, 6694, 6920, 6922, 6830, 5035, 4149, 1194, 1348, 6923, 1838, 4115, 4349, 3758, 4217, 4142, 6928, 1849, 653, 6930, 5720, 4123, 27, 3, 4114, 6931, 4119, 6934, 6935, 4324, 6940, 4981, 6959, 6977, 675, 4116, 6978, 6981, 4366, 6983, 1212, 1920, 4666, 686, 6995, 4329, 6996, 6835, 507, 4351, 5606, 14, 6720, 4803, 21, 1882, 1901, 6709, 4806, 6997, 6998, 7001, 7002, 3776, 6925, 1360, 5648, 7003, 7072, 7076, 7079, 7085, 7086, 7108, 664, 7109, 1881, 7007, 3976, 7110, 4470, 2]
+// Dependencies: [57, 5, 6, 7, 4808, 6692, 6693, 6694, 6919, 6921, 6829, 5035, 4149, 1194, 1348, 6922, 1838, 4115, 4349, 3758, 4217, 4142, 6927, 1849, 653, 6929, 5720, 4123, 27, 3, 4114, 6930, 4119, 6933, 6934, 4324, 6939, 4981, 6958, 6976, 675, 4116, 6977, 6980, 4366, 6982, 1212, 1920, 4666, 686, 6994, 4329, 6995, 6834, 507, 4351, 5604, 14, 6720, 4803, 21, 1882, 1901, 6709, 4806, 6996, 6997, 7000, 7001, 3776, 6924, 1360, 5648, 7002, 7071, 7075, 7078, 7084, 7085, 7107, 664, 7108, 1881, 7006, 3976, 7109, 4470, 2]
 
 // Module 6691 (trackInvite)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -73,7 +73,7 @@ function trackInvite(channelId) {
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   let result1 = null != invite;
   if (result1) {
-    let obj1 = require(6978) /* isGroupDMInvite */;
+    let obj1 = require(6977) /* isGroupDMInvite */;
     result1 = obj1.isEmbeddedApplicationInvite(invite);
   }
   let id1;
@@ -84,7 +84,7 @@ function trackInvite(channelId) {
     }
   }
   if (tmp8) {
-    let obj2 = require(6935) /* trackAppEmbedViewed */;
+    let obj2 = require(6934) /* trackAppEmbedViewed */;
     const result2 = obj2.trackAppEmbedLinkSent(id1, LinkType.ACTIVITY_INVITE, id);
   }
   let channel = store.getChannel(channelId.channelId);
@@ -125,14 +125,14 @@ function trackInvite(channelId) {
             STREAM = GDM_INVITE;
             if (lastActiveStream.channelId === channel.id) {
               obj.destination_user_id = lastActiveStream.ownerId;
-              const streamerApplication = require(6981) /* _findPlayingActivity */.getStreamerApplication(lastActiveStream, closure_24);
+              const streamerApplication = require(6980) /* _findPlayingActivity */.getStreamerApplication(lastActiveStream, closure_24);
               let id3 = null;
               if (null != streamerApplication) {
                 id3 = streamerApplication.id;
               }
               obj.application_id = id3;
               STREAM = constants3.STREAM;
-              const obj9 = require(6981) /* _findPlayingActivity */;
+              const obj9 = require(6980) /* _findPlayingActivity */;
             }
           }
         }
@@ -389,13 +389,13 @@ let obj14 = {
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_RECEIVED, obj);
     }
     obj = { messageId: nonce, channelId: id, content: intl, loggingName: messageName };
-    obj14.receiveMessage(id, require(6995) /* userRecordToServer */.createBotMessage(obj));
+    obj14.receiveMessage(id, require(6994) /* userRecordToServer */.createBotMessage(obj));
   },
   sendNitroSystemMessage(channelId, content, nonce) {
     obj = { channelId, nonce, type: constants6.NITRO_NOTIFICATION, content, flags: closure_35.EPHEMERAL, author: obj };
     obj = { id: closure_42, username: "Nitro Notification", discriminator: closure_43, avatar: "nitro", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6995)(obj));
+    const merged = Object.assign(importDefault(6994)(obj));
     obj["state"] = constants9.SENT;
     obj["channel_id"] = channelId;
     obj14.receiveMessage(channelId, obj, true);
@@ -404,7 +404,7 @@ let obj14 = {
     obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: closure_35.EPHEMERAL, author: obj, giftingPrompt };
     obj = { id: closure_42, username: "Gifting Prompt", discriminator: closure_43, avatar: "gifting_prompt", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6995)(obj));
+    const merged = Object.assign(importDefault(6994)(obj));
     obj["state"] = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
@@ -412,7 +412,7 @@ let obj14 = {
     obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: closure_35.EPHEMERAL, author: obj, boostingPrompt };
     obj = { id: closure_42, username: "Guild Boost Upsell", discriminator: closure_43, avatar: "guild_boost_upsell", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6995)(obj));
+    const merged = Object.assign(importDefault(6994)(obj));
     obj["state"] = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
@@ -503,11 +503,11 @@ let obj14 = {
         obj.messageName = "BOT_GUILD_EXPLICIT_CONTENT";
         return obj;
       });
-      const nonce = require(6996) /* snowflakeSequence */.createNonce();
+      const nonce = require(6995) /* snowflakeSequence */.createNonce();
       obj14.sendBotMessage(channelId, message, messageName, nonce);
-      const obj9 = require(6996) /* snowflakeSequence */;
-      let obj1 = { action: require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT, messageId: nonce, channelId, context: EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED };
-      const result = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.trackMediaRedactionAction(obj1);
+      const obj9 = require(6995) /* snowflakeSequence */;
+      let obj1 = { action: require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT, messageId: nonce, channelId, context: EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED };
+      const result = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */.trackMediaRedactionAction(obj1);
       let tmp = null != attachments1;
       if (tmp) {
         tmp = attachments1.length > 0;
@@ -517,7 +517,7 @@ let obj14 = {
         const obj2 = { type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE", messageId: nonce, channelId, attachments: attachments1 };
         obj1.dispatch(obj2);
       }
-      const obj10 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
+      const obj10 = require(6834) /* timeoutAttachmentsAndEmbedsForMessage */;
     }
   },
   truncateMessages(channelId, truncateBottom, truncateTop) {
@@ -1020,14 +1020,14 @@ let obj14 = {
         } else {
           let nonce = outer1_3.nonce;
           if (null == nonce) {
-            let obj = callback(6996);
+            let obj = callback(6995);
             nonce = obj.createNonce();
           }
           obj = {};
           const merged = Object.assign(outer1_3);
           obj["nonce"] = nonce;
           outer1_3 = obj;
-          const backgroundifyResult = callback2(6998).backgroundify(function _trySend() {
+          const backgroundifyResult = callback2(6997).backgroundify(function _trySend() {
             return outer3_56._sendMessage(outer2_0, outer2_1, outer2_3);
           }, undefined);
           c0 = backgroundifyResult;
@@ -1036,7 +1036,7 @@ let obj14 = {
             let backgroundifyResultResult = backgroundifyResult();
           } else {
             if (outer1_2) {
-              if (outer1_0 !== callback(5606).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+              if (outer1_0 !== callback(5604).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
                 const _HermesInternal = HermesInternal;
                 outer2_52.info("Waiting for channel " + outer1_0 + " to be ready before sending.");
                 backgroundifyResultResult = new Promise((arg0, arg1) => {
@@ -1123,7 +1123,7 @@ let obj14 = {
     return obj;
   },
   sendInvite(id, code, _location, closure_1, content) {
-    const tmp = importDefault(7001)(code);
+    const tmp = importDefault(7000)(code);
     let combined = tmp;
     if (null != content) {
       const _HermesInternal = HermesInternal;
@@ -1369,6 +1369,7 @@ let obj14 = {
         obj.poll = callback(outer2_3[73]).createPollServerDataFromCreateRequest(poll);
         obj.sharedCustomTheme = sharedCustomTheme;
         obj.mediaMention = mediaMention;
+        obj.mentionGames = outer1_1.mentionGames;
         const tmp42Result = tmp42(obj);
         if (false !== outer1_2.eagerDispatch) {
           let result = callback(outer2_3[74]).updateComboOnMessageSend(outer1_0, tmp42Result.id);
@@ -1398,15 +1399,15 @@ let obj14 = {
         obj1 = { channelId: outer1_0, content: tmp8, nonce, tts: infoResult, message_reference: messageReference, allowed_mentions: allowedMentions, flags: addFlagResult1, analyticsLocation: _location };
         obj.message = obj1;
         if (null != outer1_1.components) {
-          tmp75.message.components = outer1_1.components;
+          tmp76.message.components = outer1_1.components;
         }
         if (null != announcementSendOptions) {
-          ({ createThread: tmp75.message.create_thread, threadName: tmp75.message.title, publish } = announcementSendOptions);
-          let tmp80 = null != publish;
-          if (tmp80) {
-            tmp80 = publish;
+          ({ createThread: tmp76.message.create_thread, threadName: tmp76.message.title, publish } = announcementSendOptions);
+          let tmp81 = null != publish;
+          if (tmp81) {
+            tmp81 = publish;
           }
-          tmp75.message.publish = tmp80;
+          tmp76.message.publish = tmp81;
         }
         if (null != activityAction) {
           let session_id;
@@ -1426,37 +1427,37 @@ let obj14 = {
           if (null != sessionId) {
             obj2 = { type: activityAction.type, session_id: sessionId };
             ({ targetUserId: obj10.target_user_id, activity } = activityAction);
-            if (tmp86) {
+            if (tmp87) {
               obj2.party_id = activity.party.id;
             }
-            tmp75.message.application_id = activity.application_id;
-            tmp75.message.activity = obj2;
-            tmp86 = null != activity.party && null != activity.party.id;
+            tmp76.message.application_id = activity.application_id;
+            tmp76.message.activity = obj2;
+            tmp87 = null != activity.party && null != activity.party.id;
           }
         }
         if (null != poll) {
-          tmp75.message.poll = poll;
+          tmp76.message.poll = poll;
         }
         if (null != sharedCustomTheme) {
-          tmp75.message.shared_client_theme = sharedCustomTheme;
+          tmp76.message.shared_client_theme = sharedCustomTheme;
         }
         if (null != stickerIds) {
-          tmp75.message.sticker_ids = stickerIds;
+          tmp76.message.sticker_ids = stickerIds;
         }
         if (outer2_12.isEnabled()) {
-          tmp75.message.has_poggermode_enabled = true;
+          tmp76.message.has_poggermode_enabled = true;
         }
         if (withCheckpoint) {
-          tmp75.message.with_checkpoint = true;
+          tmp76.message.with_checkpoint = true;
         }
         if (null != contentInventoryEntry) {
-          tmp75.message.content_inventory_entry = contentInventoryEntry;
+          tmp76.message.content_inventory_entry = contentInventoryEntry;
         }
         if (null != mediaMention) {
-          tmp75.message.media_mention = mediaMention;
+          tmp76.message.media_mention = mediaMention;
         }
-        if (tmp96) {
-          tmp75.message.attachments = attachments;
+        if (tmp97) {
+          tmp76.message.attachments = attachments;
         }
         if (null != attachmentsToUpload) {
           infoResult = attachmentsToUpload;
@@ -1488,7 +1489,6 @@ let obj14 = {
               }
             }
             let obj11 = callback(outer2_3[76]);
-            const tmp99 = infoResult;
           }
         }
         infoResult = globalThis;
@@ -2140,7 +2140,7 @@ let obj14 = {
       obj = { message_name: message.loggingName, message_author: message.author.username };
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_DISMISSED, obj);
     }
-    const result = require(7110) /* dismissGiftIntent */.logGiftIntentMessageDismissed(message.channel_id, message.id);
+    const result = require(7109) /* dismissGiftIntent */.logGiftIntentMessageDismissed(message.channel_id, message.id);
     self.deleteMessage(message.channel_id, message.id, true);
   },
   revealMessage(id, messageId) {

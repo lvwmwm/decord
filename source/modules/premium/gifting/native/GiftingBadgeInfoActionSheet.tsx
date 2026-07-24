@@ -1,10 +1,10 @@
-// Module ID: 9685
-// Function ID: 75393
+// Module ID: 9719
+// Function ID: 75605
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [31, 27, 4122, 8268, 653, 33, 4130, 689, 1557, 566, 8265, 675, 5187, 4126, 1212, 2294, 9686, 2]
+// Dependencies: [31, 27, 4122, 8312, 653, 33, 4130, 689, 1557, 566, 8309, 675, 5187, 4126, 1212, 2294, 9720, 2]
 // Exports: default
 
-// Module 9685 (GiftingBadgeInfoActionSheet)
+// Module 9719 (GiftingBadgeInfoActionSheet)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

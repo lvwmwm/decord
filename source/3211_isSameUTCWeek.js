@@ -1,5 +1,5 @@
 // Module ID: 3211
-// Function ID: 25827
+// Function ID: 25828
 // Name: isSameUTCWeek
 // Dependencies: [3210, 3212]
 // Exports: default

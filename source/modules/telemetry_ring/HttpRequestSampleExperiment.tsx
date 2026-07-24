@@ -1,10 +1,10 @@
-// Module ID: 15959
-// Function ID: 123266
+// Module ID: 16006
+// Function ID: 123588
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: getHttpRequestSampleRate
 
-// Module 15959 (apexExperiment)
+// Module 16006 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { kind: "user", name: "2026-04-http-request-sample", defaultConfig: { sampleRate: 0 }, variations: { [1]: { sampleRate: 0.0001 } } };

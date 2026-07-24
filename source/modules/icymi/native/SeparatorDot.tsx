@@ -1,10 +1,10 @@
-// Module ID: 15239
-// Function ID: 116286
+// Module ID: 15286
+// Function ID: 116608
 // Name: SeparatorDot
 // Dependencies: [31, 27, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 15239 (SeparatorDot)
+// Module 15286 (SeparatorDot)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

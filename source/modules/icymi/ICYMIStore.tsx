@@ -1,9 +1,9 @@
-// Module ID: 8306
-// Function ID: 65636
+// Module ID: 8350
+// Function ID: 65864
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 8307, 4044, 6758, 1194, 1348, 8316, 1838, 4349, 3758, 4142, 3767, 4325, 8318, 8319, 653, 8329, 664, 8320, 7087, 7810, 7815, 8312, 8330, 5736, 4351, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 57, 8351, 4044, 6758, 1194, 1348, 8360, 1838, 4349, 3758, 4142, 3767, 4325, 8362, 8363, 653, 8373, 664, 8364, 7086, 7901, 7906, 8356, 8374, 5736, 4351, 566, 686, 2]
 
-// Module 8306 (_isNativeReflectConstruct)
+// Module 8350 (_isNativeReflectConstruct)
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -138,7 +138,7 @@ function tabHasNewContentOnInitialLoad(first, closure_35) {
 function filterStaffGuild(data) {
   if (closure_24.filterStaffContent()) {
     if (obj.isGuildItem(data)) {
-      if (data.data.guild_id === require(7087) /* MessageEmbedTypes */.GAME_CONTENT_GUILD_ID) {
+      if (data.data.guild_id === require(7086) /* MessageEmbedTypes */.GAME_CONTENT_GUILD_ID) {
         return true;
       } else {
         const guild = store2.getGuild(data.data.guild_id);
@@ -374,7 +374,7 @@ function injectRecommendedGuildsRow() {
         }
       }
     }
-    const obj = { id: "recommendedGuilds", type: require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS, score: 50 };
+    const obj = { id: "recommendedGuilds", type: require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS, score: 50 };
     closure_39[obj.id] = obj;
     closure_38[obj.id] = obj;
     if (0 === items1.length) {
@@ -459,7 +459,7 @@ function reload(arg0) {
     tmp7 = c33 !== closure_37.load_id;
   }
   if (tmp7) {
-    const ICYMIAnalytics = require(8330) /* listItemToType */.ICYMIAnalytics;
+    const ICYMIAnalytics = require(8374) /* listItemToType */.ICYMIAnalytics;
     const obj = { newTrackingProps: closure_37, hasNewContent: c45, unreadFeedItems: length, readFeedItems: length2, homeSessionId: "gravity" };
     ICYMIAnalytics.trackFeedLoaded(obj);
     const load_id = closure_37.load_id;
@@ -475,7 +475,7 @@ function reload(arg0) {
     let c59 = true;
   }
   const items = [...closure_51];
-  require(8320) /* generateHydrationId */.hydrateItems(items, 0, require(7087) /* MessageEmbedTypes */.ICYMI_PAGE_SIZE);
+  require(8364) /* generateHydrationId */.hydrateItems(items, 0, require(7086) /* MessageEmbedTypes */.ICYMI_PAGE_SIZE);
   let c56 = false;
 }
 function computeDisplayItems(closure_35) {
@@ -527,18 +527,18 @@ function getNewUnreadItems(first, channelId) {
       let value = iter.value;
       let tmp2 = require;
       let tmp3 = dependencyMap;
-      if (value.type !== require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS) {
+      if (value.type !== require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS) {
         if (!set.has(value.id)) {
           let tmp4 = store3;
           let tmp5 = null == store3.getReadTimestamp(value.id);
           if (tmp5) {
             let tmp6 = require;
             let tmp7 = dependencyMap;
-            let tmp8 = value.type !== require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
+            let tmp8 = value.type !== require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
             if (!tmp8) {
               let tmp9 = require;
               let tmp10 = dependencyMap;
-              let obj2 = require(8320) /* generateHydrationId */;
+              let obj2 = require(8364) /* generateHydrationId */;
               let tmp11 = obj2.isItemUnreadInChannel(value.data.channel_id, value.data.message_id) && value.data.channel_id !== channelId;
               tmp8 = tmp11;
             }
@@ -566,8 +566,8 @@ function filterDehydratedItemListByChannel(closure_32, arg1) {
   });
 }
 function maybeFilterChannelItems(arg0, stateFromStores1) {
-  const obj = require(8320) /* generateHydrationId */;
-  if (numberToCustomScoreResult === require(8320) /* generateHydrationId */.ICYMICustomScore.MUTED) {
+  const obj = require(8364) /* generateHydrationId */;
+  if (numberToCustomScoreResult === require(8364) /* generateHydrationId */.ICYMICustomScore.MUTED) {
     closure_32 = filterDehydratedItemListByChannel(closure_32, arg0);
     closure_50 = filterDehydratedItemListByChannel(closure_50, arg0);
     closure_51 = filterDehydratedItemListByChannel(closure_51, arg0);
@@ -586,8 +586,8 @@ function filterDehydratedItemListByGuild(closure_32, guildId) {
   });
 }
 function maybeFilterGuildItems(guildId, guildScore) {
-  const obj = require(8320) /* generateHydrationId */;
-  if (numberToCustomScoreResult === require(8320) /* generateHydrationId */.ICYMICustomScore.MUTED) {
+  const obj = require(8364) /* generateHydrationId */;
+  if (numberToCustomScoreResult === require(8364) /* generateHydrationId */.ICYMICustomScore.MUTED) {
     closure_32 = filterDehydratedItemListByGuild(closure_32, guildId);
     closure_50 = filterDehydratedItemListByGuild(closure_50, guildId);
     closure_51 = filterDehydratedItemListByGuild(closure_51, guildId);
@@ -601,7 +601,7 @@ function handleReaction(colors) {
   ({ emoji, reactionType } = colors);
   if (null == dependencyMap[colors.messageId]) {
     return false;
-  } else if (tmp3.type !== require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+  } else if (tmp3.type !== require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
     return false;
   } else {
     const tmp5 = store.getId() === tmp2;
@@ -1055,7 +1055,7 @@ tmp5 = new tmp5(require("dispatcher"), {
         reload();
       }
     } else if (null != messageItem) {
-      let obj = { id: messageItem.message.id, type: require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE, score: 50 };
+      let obj = { id: messageItem.message.id, type: require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE, score: 50 };
       obj = { channel_id: messageItem.channel_id, message_id: messageItem.message.id, guild_id: messageItem.guild_id, channel_type: constants.GUILD_TEXT };
       obj.data = obj;
       closure_38[messageItem.message.id] = obj;
@@ -1151,20 +1151,20 @@ tmp5 = new tmp5(require("dispatcher"), {
           if (c43 > 0) {
             let c48 = null;
           }
-          let tmp9 = closure_36.length > require(7087) /* MessageEmbedTypes */.MIN_ITEMS_FOR_NEW_PILL;
+          let tmp9 = closure_36.length > require(7086) /* MessageEmbedTypes */.MIN_ITEMS_FOR_NEW_PILL;
           if (!isReloading) {
             let c45 = tmp9;
           }
           if (tmp9) {
             items = [];
             HermesBuiltin.arraySpread(arr2, HermesBuiltin.arraySpread(first, 0));
-            require(8320) /* generateHydrationId */.hydrateItems(items, 0, require(7087) /* MessageEmbedTypes */.ICYMI_PAGE_SIZE);
+            require(8364) /* generateHydrationId */.hydrateItems(items, 0, require(7086) /* MessageEmbedTypes */.ICYMI_PAGE_SIZE);
             if (first.length + arr2.length === 0) {
               let c59 = true;
             }
-            const obj2 = require(8320) /* generateHydrationId */;
+            const obj2 = require(8364) /* generateHydrationId */;
           }
-          const ICYMIAnalytics = require(8330) /* listItemToType */.ICYMIAnalytics;
+          const ICYMIAnalytics = require(8374) /* listItemToType */.ICYMIAnalytics;
           obj = {};
           obj.newTrackingProps = obj;
           obj.hasNewContent = c45;
@@ -1251,7 +1251,7 @@ tmp5 = new tmp5(require("dispatcher"), {
         outer1_40[content_id.content_id] = true;
       }
     });
-    set.delete(_require(8320).generateHydrationId(startingIndex, endingIndex));
+    set.delete(_require(8364).generateHydrationId(startingIndex, endingIndex));
   },
   LOAD_ICYMI_CUSTOM_SCORES: function handleLoadCustomScores(scores) {
     let iter3;
@@ -1350,7 +1350,7 @@ tmp5 = new tmp5(require("dispatcher"), {
   MESSAGE_REACTION_ADD_MANY: function handleReactionBatch(arg0) {
     if (null == dependencyMap[arg0.messageId]) {
       return false;
-    } else if (tmp2.type !== require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+    } else if (tmp2.type !== require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
       return false;
     } else {
       const message = tmp2.message;
@@ -1361,7 +1361,7 @@ tmp5 = new tmp5(require("dispatcher"), {
   MESSAGE_REACTION_REMOVE_ALL: function handleRemoveAllReactions(arg0) {
     let tmp2 = null != tmp;
     if (tmp2) {
-      const tmp5 = tmp.type === require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
+      const tmp5 = tmp.type === require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
       if (tmp5) {
         const message = tmp.message;
         tmp.message = message.set("reactions", []);
@@ -1373,7 +1373,7 @@ tmp5 = new tmp5(require("dispatcher"), {
   MESSAGE_REACTION_REMOVE_EMOJI: function handleRemoveEmojiReactions(arg0) {
     let tmp3 = null != tmp2;
     if (tmp3) {
-      const tmp6 = tmp2.type === require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
+      const tmp6 = tmp2.type === require(7086) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
       if (tmp6) {
         const message = tmp2.message;
         tmp2.message = message.removeReactionsForEmoji(tmp);

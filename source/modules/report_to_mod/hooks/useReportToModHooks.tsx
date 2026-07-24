@@ -1,10 +1,10 @@
-// Module ID: 9541
-// Function ID: 74289
+// Module ID: 9577
+// Function ID: 74498
 // Name: useIsReportToModEnabled
-// Dependencies: [31, 1838, 4349, 566, 5647, 5668, 5655, 6691, 7889, 2]
+// Dependencies: [31, 1838, 4349, 566, 5647, 5668, 5655, 6691, 7976, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 9541 (useIsReportToModEnabled)
+// Module 9577 (useIsReportToModEnabled)
 import { useEffect } from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -95,7 +95,7 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     }
   }
   if (null != reported_user_id) {
-    const user = require(7889) /* _fetchProfile */.getUser(reported_user_id);
-    const obj = require(7889) /* _fetchProfile */;
+    const user = require(7976) /* _fetchProfile */.getUser(reported_user_id);
+    const obj = require(7976) /* _fetchProfile */;
   }
 };

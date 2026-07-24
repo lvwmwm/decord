@@ -1,9 +1,9 @@
-// Module ID: 9662
-// Function ID: 75246
+// Module ID: 9696
+// Function ID: 75458
 // Name: NativeModules
-// Dependencies: [57, 31, 27, 1451, 1552, 5188, 4344, 33, 4130, 689, 3991, 9663, 9666, 1453, 1557, 1450, 5084, 5189, 9423, 4687, 22, 9667, 9673, 9675, 9676, 4683, 7588, 1212, 2]
+// Dependencies: [57, 31, 27, 1451, 1552, 5188, 4344, 33, 4130, 689, 3991, 9697, 9700, 1453, 1557, 1450, 5084, 5189, 9459, 4687, 22, 9701, 9707, 9709, 9710, 4683, 7677, 1212, 2]
 
-// Module 9662 (NativeModules)
+// Module 9696 (NativeModules)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "getSystemLocale";

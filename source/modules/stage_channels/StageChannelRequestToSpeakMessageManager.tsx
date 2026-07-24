@@ -1,9 +1,9 @@
-// Module ID: 16174
-// Function ID: 125454
+// Module ID: 16221
+// Function ID: 125778
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 4349, 3758, 1906, 1849, 653, 1356, 16175, 663, 6691, 5078, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 4349, 3758, 1906, 1849, 653, 1356, 16222, 663, 6691, 5078, 2]
 
-// Module 16174 (_isNativeReflectConstruct)
+// Module 16221 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import trackInvite from "trackInvite";

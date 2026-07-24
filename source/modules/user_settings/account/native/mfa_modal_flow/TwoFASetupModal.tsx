@@ -1,10 +1,10 @@
-// Module ID: 13685
-// Function ID: 105053
+// Module ID: 13736
+// Function ID: 105377
 // Name: getPageMarker
-// Dependencies: [31, 27, 13686, 33, 4130, 689, 1456, 13684, 5121, 4543, 1212, 13687, 5087, 13688, 13691, 13692, 13694, 5450, 9203, 5519, 2]
+// Dependencies: [31, 27, 13737, 33, 4130, 689, 1456, 13735, 5121, 4543, 1212, 13738, 5087, 13739, 13742, 13743, 13745, 5450, 9239, 5517, 2]
 // Exports: TwoFASetupModalScreen, default
 
-// Module 13685 (getPageMarker)
+// Module 13736 (getPageMarker)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { TwoFAModalSetupSections } from "frozen";
@@ -15,7 +15,7 @@ let closure_6;
 let closure_7;
 const require = arg1;
 function getPageMarker(arg0) {
-  return callback(require(13687) /* PageMarker */.PageMarker, { currentPage: table[arg0], numMarkers: Object.keys(table).length - 1 });
+  return callback(require(13738) /* PageMarker */.PageMarker, { currentPage: table[arg0], numMarkers: Object.keys(table).length - 1 });
 }
 ({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 _createForOfIteratorHelperLoose = {};
@@ -78,7 +78,7 @@ export default function TwoFASetupModal(initialRouteName) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
   obj.headerTitleAlign = "center";
-  return callback(require(5519) /* NavigationStack */.Navigator, obj);
+  return callback(require(5517) /* NavigationStack */.Navigator, obj);
 };
 export const TwoFASetupModalScreen = function TwoFASetupModalScreen(children) {
   const tmp = _createForOfIteratorHelperLoose();

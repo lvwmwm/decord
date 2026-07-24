@@ -1,10 +1,10 @@
-// Module ID: 10367
-// Function ID: 80000
+// Module ID: 10396
+// Function ID: 80192
 // Name: useCanCurrentUserSpeakInChannel
 // Dependencies: [1194, 566, 4314, 2]
 // Exports: default
 
-// Module 10367 (useCanCurrentUserSpeakInChannel)
+// Module 10396 (useCanCurrentUserSpeakInChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

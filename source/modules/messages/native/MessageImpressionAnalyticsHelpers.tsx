@@ -1,10 +1,10 @@
-// Module ID: 9474
-// Function ID: 73780
+// Module ID: 9510
+// Function ID: 73989
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4115, 4203, 653, 6930, 6979, 9475, 5648, 4119, 6978, 9476, 9477, 4116, 2]
+// Dependencies: [31, 4115, 4203, 653, 6929, 6978, 9511, 5648, 4119, 6977, 9512, 9513, 4116, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 9474 (_createForOfIteratorHelperLoose)
+// Module 9510 (_createForOfIteratorHelperLoose)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -104,8 +104,8 @@ function getVoiceInviteEmbedRenderInfo(state) {
           if (obj5.getInviteType(state) !== InviteTypes.GUILD) {
             return null;
           } else {
-            const guildInviteExtendedType = require(6978) /* isGroupDMInvite */.getGuildInviteExtendedType(state);
-            if (guildInviteExtendedType !== require(6978) /* isGroupDMInvite */.GuildInviteExtendedType.VOICE_CHANNEL) {
+            const guildInviteExtendedType = require(6977) /* isGroupDMInvite */.getGuildInviteExtendedType(state);
+            if (guildInviteExtendedType !== require(6977) /* isGroupDMInvite */.GuildInviteExtendedType.VOICE_CHANNEL) {
               return null;
             } else {
               const guild = state.guild;
@@ -117,20 +117,20 @@ function getVoiceInviteEmbedRenderInfo(state) {
               if (null != id) {
                 let obj = {};
                 obj = { guildId: id, location: "mobile_invite_embed_impression" };
-                let enabled = require(9476) /* items */.getVoiceChannelListInviteExperiment(obj).enabled;
+                let enabled = require(9512) /* items */.getVoiceChannelListInviteExperiment(obj).enabled;
                 if (enabled) {
-                  enabled = require(9477) /* resolveVoiceChannelListInviteEmbedData */.canShowVoiceChannelListInviteEmbed(state);
-                  const obj4 = require(9477) /* resolveVoiceChannelListInviteEmbedData */;
+                  enabled = require(9513) /* resolveVoiceChannelListInviteEmbedData */.canShowVoiceChannelListInviteEmbed(state);
+                  const obj4 = require(9513) /* resolveVoiceChannelListInviteEmbedData */;
                 }
                 obj.treatmentRendered = enabled;
                 tmp2 = obj;
-                const obj2 = require(9476) /* items */;
+                const obj2 = require(9512) /* items */;
               }
               return tmp2;
             }
-            const obj6 = require(6978) /* isGroupDMInvite */;
+            const obj6 = require(6977) /* isGroupDMInvite */;
           }
-          obj5 = require(6978) /* isGroupDMInvite */;
+          obj5 = require(6977) /* isGroupDMInvite */;
         }
       }
     }

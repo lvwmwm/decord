@@ -1,10 +1,10 @@
-// Module ID: 12431
-// Function ID: 96533
+// Module ID: 12484
+// Function ID: 96856
 // Name: GuildBoostSlotCooldown
-// Dependencies: [31, 27, 1278, 1838, 4023, 3782, 653, 33, 4130, 689, 5052, 6678, 4126, 1212, 21, 4660, 4966, 5515, 12432, 566, 1392, 12433, 12437, 4451, 4026, 22, 2]
+// Dependencies: [31, 27, 1278, 1838, 4023, 3782, 653, 33, 4130, 689, 5052, 6678, 4126, 1212, 21, 4660, 4966, 5513, 12485, 566, 1392, 12486, 12490, 4451, 4026, 22, 2]
 // Exports: default
 
-// Module 12431 (GuildBoostSlotCooldown)
+// Module 12484 (GuildBoostSlotCooldown)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -190,14 +190,14 @@ function BoostedGuildInfo(guild) {
   if (null != guild) {
     let obj = { style: tmp.guildInfo };
     obj = { style: tmp.guildInfoIcon };
-    obj = { guild, size: require(5515) /* makeSizeStyle */.GuildIconSizes.NORMAL, selected: false };
-    obj.children = callback(importDefault(5515), obj);
+    obj = { guild, size: require(5513) /* makeSizeStyle */.GuildIconSizes.NORMAL, selected: false };
+    obj.children = callback(importDefault(5513), obj);
     const items = [callback(closure_5, obj), ];
     const obj1 = {};
     const obj2 = { style: tmp.guildInfoName, variant: "heading-lg/extrabold", color: "interactive-text-active", children: guild.name };
     const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
     const obj3 = { style: tmp.guildInfoRowBottom };
-    const obj4 = { source: importDefault(12432), style: tmp.guildInfoRowIcon };
+    const obj4 = { source: importDefault(12485), style: tmp.guildInfoRowIcon };
     const items2 = [callback(closure_6, obj4), ];
     const obj5 = { style: tmp.guildInfoSubscriptionCount, variant: "text-xs/semibold", color: "interactive-text-active" };
     const intl = require(1212) /* getSystemLocale */.intl;
@@ -210,7 +210,7 @@ function BoostedGuildInfo(guild) {
     items[1] = callback2(closure_5, obj1);
     obj.children = items;
     tmp2 = callback2(closure_5, obj);
-    const tmp10 = importDefault(5515);
+    const tmp10 = importDefault(5513);
   }
   return tmp2;
 }
@@ -233,7 +233,7 @@ function BoostedGuild(arg0) {
       guildBannerSource = obj2.getGuildBannerSource(stateFromStores);
     }
   }
-  let obj3 = require(12433) /* getSubscriptionPlaceholderPatternSource */;
+  let obj3 = require(12486) /* getSubscriptionPlaceholderPatternSource */;
   let subscriptionPlaceholderPatternSource = obj3.useSubscriptionPlaceholderPatternSource();
   if (null != guildBannerSource) {
     subscriptionPlaceholderPatternSource = guildBannerSource;
@@ -256,7 +256,7 @@ function BoostedGuild(arg0) {
     tmp17 = callback(closure_5, obj3);
   }
   items3[1] = tmp17;
-  items3[2] = callback(guildBoostSlots(12437), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = callback(guildBoostSlots(12490), { guild: stateFromStores, theme: stateFromStores1 });
   obj1.children = items3;
   const items4 = [closure_12(closure_5, obj1), callback(BoostedGuildInfo, { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length })];
   obj.children = items4;

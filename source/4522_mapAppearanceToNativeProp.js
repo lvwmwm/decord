@@ -1,5 +1,5 @@
 // Module ID: 4522
-// Function ID: 39751
+// Function ID: 39752
 // Name: mapAppearanceToNativeProp
 // Dependencies: [29, 57, 31, 27, 33, 4516, 4523, 4489, 4481, 4491]
 // Exports: default

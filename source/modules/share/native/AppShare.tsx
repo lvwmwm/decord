@@ -1,10 +1,10 @@
-// Module ID: 16618
-// Function ID: 129572
+// Module ID: 16665
+// Function ID: 129896
 // Name: AppShare
-// Dependencies: [57, 31, 27, 6696, 13328, 1194, 653, 11453, 33, 566, 5590, 477, 13367, 11456, 6707, 675, 4559, 13476, 12907, 1553, 8333, 5585, 15592, 15635, 4475, 2]
+// Dependencies: [57, 31, 27, 6696, 13381, 1194, 653, 11483, 33, 566, 5588, 477, 13420, 11486, 6707, 675, 4559, 13529, 12959, 1553, 8377, 5583, 15639, 15682, 4475, 2]
 // Exports: default
 
-// Module 16618 (AppShare)
+// Module 16665 (AppShare)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -85,9 +85,9 @@ export default function AppShare(attachments) {
   let obj = { appEntryKey: "share" };
   if (tmp) {
     obj = { appEntryKey: "share", sharedContent: attachments };
-    const tmp12 = importDefault(12907);
+    const tmp12 = importDefault(12959);
     if (obj3.isMetaQuest()) {
-      let exitApp = importDefault(8333).close;
+      let exitApp = importDefault(8377).close;
     } else {
       exitApp = exitApp.exitApp;
     }
@@ -95,10 +95,10 @@ export default function AppShare(attachments) {
     tmp7(tmp12, obj);
     obj3 = _require(1553);
   } else {
-    let items1 = [tmp7(_require(5585).SceneLoadingIndicator, {}), , , ];
+    let items1 = [tmp7(_require(5583).SceneLoadingIndicator, {}), , , ];
     obj = { appEntryKey: "share" };
-    items1[1] = callback(_require(15592).ActionSheetContainer, obj);
-    items1[2] = callback(importDefault(15635), {});
+    items1[1] = callback(_require(15639).ActionSheetContainer, obj);
+    items1[2] = callback(importDefault(15682), {});
     items1[3] = callback(_require(4475).AlertModalContainer, {});
     obj.children = items1;
     return closure_11(tmp6, obj);

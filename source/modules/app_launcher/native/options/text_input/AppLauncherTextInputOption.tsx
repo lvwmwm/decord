@@ -1,10 +1,10 @@
-// Module ID: 11295
-// Function ID: 87888
+// Module ID: 11324
+// Function ID: 88128
 // Name: AppLauncherTextInputOption
-// Dependencies: [57, 31, 27, 1852, 33, 4130, 689, 10884, 1881, 9332, 11292, 8182, 1273, 11296, 477, 11297, 1820, 9326, 2]
+// Dependencies: [57, 31, 27, 1852, 33, 4130, 689, 10911, 1881, 9368, 11321, 8226, 1273, 11325, 477, 11326, 1820, 9362, 2]
 // Exports: default
 
-// Module 11295 (AppLauncherTextInputOption)
+// Module 11324 (AppLauncherTextInputOption)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -53,7 +53,7 @@ export default function AppLauncherTextInputOption(guildId) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = onChangeText(10884);
+  let obj = onChangeText(10911);
   let closure_5 = React.useRef({ start: 0, end: 0 });
   const ref = React.useRef(null);
   let tmp5 = option.type === onChangeText(1881).ApplicationCommandOptionType.STRING;
@@ -107,17 +107,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = onChangeText(11292);
+  let obj1 = onChangeText(11321);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (null != current) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(8182).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(8226).AppLauncherEntrypoint.VOICE) {
     let TextInput = onChangeText(1273).TextInput;
   } else {
-    TextInput = guildId(11296);
+    TextInput = guildId(11325);
   }
   obj = {};
   const items3 = [tmp.container, , ];
@@ -166,7 +166,7 @@ export default function AppLauncherTextInputOption(guildId) {
           const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
         }
     };
-    tmp5 = callback(guildId(11297), obj1);
+    tmp5 = callback(guildId(11326), obj1);
   }
   items4[1] = tmp5;
   obj.children = items4;

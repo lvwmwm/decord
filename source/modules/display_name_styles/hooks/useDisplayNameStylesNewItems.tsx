@@ -1,10 +1,10 @@
-// Module ID: 14227
-// Function ID: 109283
+// Module ID: 14277
+// Function ID: 109606
 // Name: useDisplayNameStylesNewFonts
-// Dependencies: [31, 14228, 1861, 566, 14229, 2]
+// Dependencies: [31, 14278, 1861, 566, 14279, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14227 (useDisplayNameStylesNewFonts)
+// Module 14277 (useDisplayNameStylesNewFonts)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import items3 from "items3";

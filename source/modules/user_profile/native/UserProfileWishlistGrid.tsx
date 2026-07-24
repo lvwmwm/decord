@@ -1,10 +1,10 @@
-// Module ID: 12122
-// Function ID: 94948
+// Module ID: 12148
+// Function ID: 95184
 // Name: WishlistEmptyState
-// Dependencies: [5, 31, 27, 6774, 9753, 8677, 8680, 8682, 8678, 1849, 4175, 6856, 8264, 653, 655, 1851, 33, 3, 4130, 689, 12123, 3842, 3976, 8266, 4098, 6773, 5484, 4126, 1212, 4543, 11788, 4086, 11995, 5464, 8002, 566, 12124, 7791, 12106, 12125, 3982, 3831, 12126, 9679, 478, 7459, 5615, 9734, 8492, 3789, 8774, 5692, 3791, 8736, 12127, 1934, 7771, 9106, 9751, 2]
+// Dependencies: [5, 31, 27, 6774, 9787, 8718, 8721, 8723, 8719, 1849, 4175, 6855, 8308, 653, 655, 1851, 33, 3, 4130, 689, 12149, 3842, 3976, 8310, 4098, 6773, 5482, 4126, 1212, 4543, 11815, 4086, 12150, 5462, 7433, 566, 12151, 7882, 12132, 12152, 3982, 3831, 12153, 9713, 478, 7539, 5613, 9768, 8537, 3789, 8813, 5692, 3791, 8775, 12154, 1934, 7533, 9142, 9785, 2]
 // Exports: default
 
-// Module 12122 (WishlistEmptyState)
+// Module 12148 (WishlistEmptyState)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import CircleInformationIcon from "CircleInformationIcon";
 import { View } from "Text";
@@ -40,7 +40,7 @@ class WishlistEmptyState {
     shouldShowMRNotice = global.shouldShowMRNotice;
     c0 = undefined;
     obj = require("useIsMobileWishlistSuggestionsEnabled");
-    tmp = f94951(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
+    tmp = f95187(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
     obj2 = require("ManaContext");
     obj3 = require("AccessibilityAnnouncer");
     str = "mobile-text-heading-primary";

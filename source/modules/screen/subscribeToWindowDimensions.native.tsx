@@ -1,10 +1,10 @@
-// Module ID: 11110
-// Function ID: 86427
+// Module ID: 11137
+// Function ID: 86616
 // Name: subscribeToWindowDimensions
 // Dependencies: [1451, 2]
 // Exports: default
 
-// Module 11110 (subscribeToWindowDimensions)
+// Module 11137 (subscribeToWindowDimensions)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const result = require("set").fileFinishedImporting("modules/screen/subscribeToWindowDimensions.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15773
-// Function ID: 121726
+// Module ID: 15820
+// Function ID: 122048
 // Name: usePanelOpenState
-// Dependencies: [57, 31, 4342, 10015, 653, 3991, 1207, 10811, 3952, 3965, 10804, 10484, 2]
+// Dependencies: [57, 31, 4342, 10047, 653, 3991, 1207, 10840, 3952, 3965, 10833, 10513, 2]
 // Exports: default
 
-// Module 15773 (usePanelOpenState)
+// Module 15820 (usePanelOpenState)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import withEqualityFn from "withEqualityFn";
@@ -90,12 +90,12 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       ComponentDispatch2.unsubscribe(outer2_7.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  const tmp3 = callback(first.useState(() => callback2(10811).getHistory().location.pathname), 2);
+  const tmp3 = callback(first.useState(() => callback2(10840).getHistory().location.pathname), 2);
   first = tmp3[0];
   let withEqualityFn = tmp3[1];
   const items1 = [arg0, first];
   const effect1 = first.useEffect(() => {
-    let closure_0 = callback2(10811).addRouteChangeListener((pathname) => {
+    let closure_0 = callback2(10840).addRouteChangeListener((pathname) => {
       if (outer1_4 !== pathname.pathname) {
         outer1_5(outer1_4);
         let obj = callback(3952);
@@ -111,10 +111,10 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
             tmp = matchPathResult.params.channelId === callback;
           }
           if (!tmp) {
-            callback2(10484)();
+            callback2(10513)();
           }
         }
-        obj3 = callback(10804);
+        obj3 = callback(10833);
       }
     });
     return () => {

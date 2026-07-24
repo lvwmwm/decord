@@ -1,11 +1,11 @@
-// Module ID: 9983
-// Function ID: 77140
+// Module ID: 10015
+// Function ID: 77334
 // Name: PlatformIcon
-// Dependencies: [5, 57, 31, 27, 5066, 1921, 1857, 1194, 1348, 4812, 1917, 3758, 4940, 653, 33, 4130, 689, 4066, 4814, 1392, 3976, 1273, 4593, 4320, 4126, 1212, 4939, 9984, 5467, 8523, 9985, 9986, 22, 3834, 9987, 44, 3831, 9314, 4559, 7495, 4938, 566, 4941, 5048, 675, 4324, 4098, 5796, 9990, 8970, 686, 4337, 9995, 1934, 8180, 9999, 5187, 5459, 10000, 5508, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 5066, 1921, 1857, 1194, 1348, 4812, 1917, 3758, 4940, 653, 33, 4130, 689, 4066, 4814, 1392, 3976, 1273, 4593, 4320, 4126, 1212, 4939, 10016, 5465, 8568, 10017, 10018, 22, 3834, 10019, 44, 3831, 9350, 4559, 7636, 4938, 566, 4941, 5048, 675, 4324, 4098, 5796, 10022, 9009, 686, 4337, 10027, 1934, 8224, 10031, 5187, 10032, 5506, 4543, 2]
 
-// Module 9983 (PlatformIcon)
+// Module 10015 (PlatformIcon)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import findLinks from "findLinks";
+import useAppplicationRoleConnectionItems from "useAppplicationRoleConnectionItems";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "useRequestApplication";
 import closure_9 from "_isNativeReflectConstruct";
@@ -313,7 +313,7 @@ function IdentityConnectionsCheckGroup(eligibilityState) {
   return tmp23Result;
 }
 function ConnectionsChecks(eligibilityStatesGroups) {
-  let findLinks;
+  let useAppplicationRoleConnectionItems;
   let closure_8;
   let closure_9;
   let dependencyMap;
@@ -323,7 +323,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
   let onPlatformConnected;
   eligibilityStatesGroups = eligibilityStatesGroups.eligibilityStatesGroups;
   ({ onPlatformAttempt: importDefault, onPlatformConnect: dependencyMap, onPlatformConnected } = eligibilityStatesGroups);
-  ({ onPlatformIdentityAuthorize: findLinks, initialAttemptedPlatformType, initialAttemptedApplicationId } = eligibilityStatesGroups);
+  ({ onPlatformIdentityAuthorize: useAppplicationRoleConnectionItems, initialAttemptedPlatformType, initialAttemptedApplicationId } = eligibilityStatesGroups);
   let first;
   let closure_11;
   let first1;
@@ -433,7 +433,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
                   value();
                 }
               },
-          onIdentityAuthorize: findLinks
+          onIdentityAuthorize: useAppplicationRoleConnectionItems
         };
         return outer1_29(outer1_37, obj, str);
       }
@@ -674,7 +674,7 @@ function ConnectedUserAccountOptions(account) {
       callback3(enabled);
       outer1_1(outer1_2[40]).setFriendSync(account.type, account.id, enabled);
     };
-    tmp10 = callback2(account(7495).FormSwitchRow, obj);
+    tmp10 = callback2(account(7636).FormSwitchRow, obj);
   }
   let tmp14;
   if (set2.has(account.type)) {
@@ -687,7 +687,7 @@ function ConnectedUserAccountOptions(account) {
       callback4(show_activity);
       outer1_1(outer1_2[40]).setShowActivity(account.type, account.id, show_activity);
     };
-    tmp14 = callback2(account(7495).FormSwitchRow, obj);
+    tmp14 = callback2(account(7636).FormSwitchRow, obj);
   }
   let tmp18;
   if (true === value.hasMetadata) {
@@ -708,7 +708,7 @@ function ConnectedUserAccountOptions(account) {
       }
       const result = outer1_1(outer1_2[40]).setMetadataVisibility(type, id, num);
     };
-    tmp18 = callback2(account(7495).FormSwitchRow, obj2);
+    tmp18 = callback2(account(7636).FormSwitchRow, obj2);
   }
   const obj3 = { style: _createForOfIteratorHelperLoose().accountConnectedPrivacyOptionsContainer };
   const obj4 = {};
@@ -727,7 +727,7 @@ function ConnectedUserAccountOptions(account) {
     }
     outer1_1(outer1_2[40]).setVisibility(type, id, num);
   };
-  const items = [callback2(account(7495).FormSwitchRow, obj4), tmp18, tmp14, tmp10];
+  const items = [callback2(account(7636).FormSwitchRow, obj4), tmp18, tmp14, tmp10];
   obj3.children = items;
   return callback3(closure_8, obj3);
 }
@@ -792,7 +792,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     useState = undefined;
     useStateFromStores = undefined;
-    f77195 = undefined;
+    f77389 = undefined;
     useState = undefined;
     handleClose = function handleClose() {
       let flag = true;
@@ -839,7 +839,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       obj.initialAttemptedApplicationId = tmp3;
       obj.overrideUrl = obj.overrideUrl;
-      obj.onCloseModal = findLinks;
+      obj.onCloseModal = useAppplicationRoleConnectionItems;
       obj2.openLazy(resolved, guildRoleConnectionsConnectAccountsActionSheetKey, obj);
     };
     handlePlatformAttempt = function handlePlatformAttempt() {
@@ -932,7 +932,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
         });
       }
     };
-    tmp = f77198();
+    tmp = f77392();
     registerAsset = tmp;
     tmp2 = onCloseModal(registerAsset.useState(filter.CHECKS_REQUIRED), 2);
     first = tmp2[0];
@@ -964,7 +964,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj3 = require("initialize");
     items2 = [];
     items2[0] = useState;
-    f77194 = obj3.useStateFromStores(items2, () => outer1_12.getId());
+    f77388 = obj3.useStateFromStores(items2, () => outer1_12.getId());
     tmp13 = onCloseModal(registerAsset.useState(null), 2);
     first2 = tmp13[0];
     useStateFromStores = first2;
@@ -986,7 +986,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp;
     }), 2);
-    [useState, f77195] = tmp17;
+    [useState, f77389] = tmp17;
     tmp18 = onCloseModal(registerAsset.useState(null), 2);
     [c28, useState] = tmp18;
     c30 = require("useTheme")();
@@ -994,7 +994,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores2 = obj4.useStateFromStores(items3, () => member.getMember(guildId, closure_21));
-    f77196 = stateFromStores2;
+    f77390 = stateFromStores2;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;
@@ -1002,7 +1002,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     obj6 = require("initialize");
     items5 = [];
     items5[0] = useState;
-    f77198 = obj6.useStateFromStores(items5, () => outer1_10.locale);
+    f77392 = obj6.useStateFromStores(items5, () => outer1_10.locale);
     values = Object.values(stateFromStores3);
     found = values.filter((channel) => {
       let canResult = outer1_16.can(_undefined.VIEW_CHANNEL, channel);
@@ -1226,7 +1226,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             applicationId = handleManageConnections;
             obj5.onConnectionsClick = handleManageConnections;
             obj4.children = intl5.format(guildId(initialAttemptedPlatformType[25]).t.gsgvxh, obj5);
-            items[2] = _undefined2(guildId(initialAttemptedPlatformType[57]).TextWithIOSLinkWorkaround, obj4);
+            items[2] = _undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj4);
             obj.children = items;
             applicationId = applicationId(applicationId, obj);
             const tmp87 = _undefined2;
@@ -1270,7 +1270,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             const intl4 = guildId(initialAttemptedPlatformType[25]).intl;
             const obj11 = { privacyPolicyUrl: first3.PRIVACY, onAuthorizedApplicationsClick: handleManageAuthorizedApplications, onConnectionsClick: handleManageConnections };
             obj10.children = intl4.format(guildId(initialAttemptedPlatformType[25]).t.gsgvxh, obj11);
-            items1[1] = _undefined2(guildId(initialAttemptedPlatformType[57]).TextWithIOSLinkWorkaround, obj10);
+            items1[1] = _undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj10);
             obj7.children = items1;
             return tmp28(tmp29, obj7);
           }
@@ -1284,7 +1284,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             obj15.children = intl.string(guildId(initialAttemptedPlatformType[25]).t.TOjkEg);
             const items2 = [_undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj15), ];
             const obj16 = { account: found, userId: closure_21, theme: callback4, locale: closure_32, style: tmp.accountConnectedPreviewConnectedUserAccount, showMetadata: closure_16, showInvisibleIcon: closure_18 };
-            items2[1] = _undefined2(guildId(initialAttemptedPlatformType[58]).ConnectedUserAccount, obj16);
+            items2[1] = _undefined2(guildId(initialAttemptedPlatformType[57]).ConnectedUserAccount, obj16);
             obj14.children = items2;
             const items3 = [callback4(outer1_8, obj14), ];
             const obj17 = { style: tmp.accountConnectedPrivacy };
@@ -1308,7 +1308,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             obj21.children = intl3.string(guildId(initialAttemptedPlatformType[25]).t.TOjkEg);
             const items6 = [_undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj21), ];
             const obj22 = { applicationRoleConnection: found1, theme: callback4, locale: closure_32, style: tmp.accountConnectedPreviewConnectedUserAccount };
-            items6[1] = _undefined2(guildId(initialAttemptedPlatformType[58]).ConnectedApplicationUserRoleAccount, obj22);
+            items6[1] = _undefined2(guildId(initialAttemptedPlatformType[57]).ConnectedApplicationUserRoleAccount, obj22);
             obj20.children = items6;
             tmp56 = callback4(outer1_8, obj20);
           }
@@ -1323,7 +1323,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             obj = { style: tmp.content };
             const obj23 = { style: tmp.roleGranted };
             const obj24 = { guildId, style: tmp.verifiedIcon, role, size: 24 };
-            const items7 = [_undefined2(role(initialAttemptedPlatformType[59]), obj24), ];
+            const items7 = [_undefined2(role(initialAttemptedPlatformType[58]), obj24), ];
             const obj25 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp.roleGrantedName, children: role.name };
             items7[1] = _undefined2(guildId(initialAttemptedPlatformType[24]).Text, obj25);
             obj23.children = items7;
@@ -1359,7 +1359,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
         const intl4 = guildId(initialAttemptedPlatformType[25]).intl;
         obj.text = intl4.string(guildId(initialAttemptedPlatformType[25]).t["8SuVoE"]);
         obj.grow = true;
-        return _undefined2(guildId(initialAttemptedPlatformType[60]).Button, obj);
+        return _undefined2(guildId(initialAttemptedPlatformType[59]).Button, obj);
       } else if (found.ACCOUNT_CONNECTED === tmp) {
         obj = {
           variant: "primary",
@@ -1370,7 +1370,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
         const intl3 = guildId(initialAttemptedPlatformType[25]).intl;
         obj.text = intl3.string(guildId(initialAttemptedPlatformType[25]).t.i4jeWR);
         obj.grow = true;
-        return _undefined2(guildId(initialAttemptedPlatformType[60]).Button, obj);
+        return _undefined2(guildId(initialAttemptedPlatformType[59]).Button, obj);
       } else {
         let someResult;
         if (null != closure_8) {
@@ -1387,7 +1387,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
         const intl = guildId(initialAttemptedPlatformType[25]).intl;
         obj2.text = intl.string(guildId(initialAttemptedPlatformType[25]).t.cpT0Cq);
         obj2.grow = true;
-        const items = [_undefined2(guildId(initialAttemptedPlatformType[60]).Button, obj2), ];
+        const items = [_undefined2(guildId(initialAttemptedPlatformType[59]).Button, obj2), ];
         let tmp10 = null;
         if (tmp4) {
           const obj3 = { style: tmp.manageConnectionsButton };
@@ -1395,7 +1395,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
           const intl2 = guildId(initialAttemptedPlatformType[25]).intl;
           obj4.text = intl2.string(guildId(initialAttemptedPlatformType[25]).t.VXV55P);
           obj4.grow = true;
-          obj3.children = _undefined2(guildId(initialAttemptedPlatformType[60]).Button, obj4);
+          obj3.children = _undefined2(guildId(initialAttemptedPlatformType[59]).Button, obj4);
           tmp10 = _undefined2(outer1_8, obj3);
         }
         items[1] = tmp10;

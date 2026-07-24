@@ -1,9 +1,9 @@
-// Module ID: 16540
-// Function ID: 128998
+// Module ID: 16587
+// Function ID: 129322
 // Name: AVErrorAudioCaptureSampleRateMismatchDefinition
-// Dependencies: [4215, 4177, 4202, 664, 8857, 16528, 2]
+// Dependencies: [4215, 4177, 4202, 664, 8896, 16575, 2]
 
-// Module 16540 (AVErrorAudioCaptureSampleRateMismatchDefinition)
+// Module 16587 (AVErrorAudioCaptureSampleRateMismatchDefinition)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -47,11 +47,11 @@ export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
         const _Math = Math;
         let tmp7;
         if (Math.abs(num2) > 30) {
-          const obj = { type: require(8857) /* validateUniqueErrorCodes */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH, audioCaptureSampleRateMismatchPercent: num2 };
-          const merged = Object.assign(require(16528) /* getCommonErrorContext */.getVoiceChannelErrorContext());
+          const obj = { type: require(8896) /* validateUniqueErrorCodes */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH, audioCaptureSampleRateMismatchPercent: num2 };
+          const merged = Object.assign(require(16575) /* getCommonErrorContext */.getVoiceChannelErrorContext());
           const items = [obj];
           tmp7 = items;
-          const obj3 = require(16528) /* getCommonErrorContext */;
+          const obj3 = require(16575) /* getCommonErrorContext */;
         }
         return tmp7;
       }

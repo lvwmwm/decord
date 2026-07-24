@@ -1,10 +1,10 @@
-// Module ID: 7922
-// Function ID: 63128
+// Module ID: 8009
+// Function ID: 63439
 // Name: _isNativeReflectConstruct
 // Dependencies: [6, 7, 15, 17, 18, 1316, 4566, 4156, 662, 4214, 22, 566, 686, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 7922 (_isNativeReflectConstruct)
+// Module 8009 (_isNativeReflectConstruct)
 import closure_2 from "TRUE_OPTION_NAME";
 import ApplicationTypes from "ApplicationTypes";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

@@ -1,10 +1,10 @@
-// Module ID: 9235
-// Function ID: 72214
+// Module ID: 9271
+// Function ID: 72423
 // Name: handlePress
-// Dependencies: [31, 27, 9183, 33, 4130, 689, 9181, 9192, 4126, 1212, 4543, 2]
+// Dependencies: [31, 27, 9219, 33, 4130, 689, 9217, 9228, 4126, 1212, 4543, 2]
 // Exports: default
 
-// Module 9235 (handlePress)
+// Module 9271 (handlePress)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetChangeEmailStore } from "setChangeEmailError";
@@ -19,7 +19,7 @@ let closure_8;
 const require = arg1;
 function handlePress() {
   resetChangeEmailStore();
-  importDefault(9181).close();
+  importDefault(9217).close();
 }
 ({ View: closure_3, Image: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -39,7 +39,7 @@ const result = require("setChangeEmailError").fileFinishedImporting("modules/ver
 export default function ChangeEmailComplete(email) {
   const tmp = _createForOfIteratorHelperLoose();
   let obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer };
-  obj = { style: tmp.image, source: importDefault(9192) };
+  obj = { style: tmp.image, source: importDefault(9228) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.bodyInner };
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };

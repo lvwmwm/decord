@@ -1,10 +1,10 @@
-// Module ID: 15980
-// Function ID: 123552
+// Module ID: 16027
+// Function ID: 123874
 // Name: onClose
-// Dependencies: [31, 3947, 1197, 15981, 653, 33, 477, 3831, 15982, 1212, 5589, 5048, 4337, 675, 480, 5087, 15983, 15985, 15986, 14771, 9349, 4345, 4347, 5519, 2]
+// Dependencies: [31, 3947, 1197, 16028, 653, 33, 477, 3831, 16029, 1212, 5587, 5048, 4337, 675, 480, 5087, 16030, 16032, 16033, 14818, 9385, 4345, 4347, 5517, 2]
 // Exports: default
 
-// Module 15980 (onClose)
+// Module 16027 (onClose)
 import closure_3 from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";
@@ -16,7 +16,7 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function onClose() {
-  require(5589) /* openAgeGateModal */.closeAgeGateModal();
+  require(5587) /* openAgeGateModal */.closeAgeGateModal();
 }
 function renderHeaderTitle() {
   return null;
@@ -198,5 +198,5 @@ export default function ExistingUserAgeGateModal(source) {
   obj.initialRouteName = shouldAgeVerifyForAgeGate ? closure_7.Pawtect : closure_7.AgeGate;
   const intl = source(1212).intl;
   obj.headerBackTitle = intl.string(source(1212).t["13/7kX"]);
-  return jsx(source(5519).Navigator, {});
+  return jsx(source(5517).Navigator, {});
 };

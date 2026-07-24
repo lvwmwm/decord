@@ -1,10 +1,10 @@
-// Module ID: 12144
-// Function ID: 95106
+// Module ID: 12171
+// Function ID: 95346
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 57, 31, 27, 3767, 1849, 33, 4130, 689, 566, 1212, 4337, 8923, 5587, 4561, 4126, 5773, 3969, 2]
+// Dependencies: [5, 57, 31, 27, 3767, 1849, 33, 4130, 689, 566, 1212, 4337, 8962, 5585, 4561, 4126, 5773, 3969, 2]
 // Exports: default
 
-// Module 12144 (AddFriendNicknameModal)
+// Module 12171 (AddFriendNicknameModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -75,7 +75,7 @@ export default function AddFriendNicknameModal(arg0) {
   obj = { style: tmp.container };
   obj = {};
   obj1 = {};
-  const tmp14 = showUserProfile(5587);
+  const tmp14 = showUserProfile(5585);
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj1.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["R3BPH+"]);
   obj1.onConfirm = function handleSubmit() {

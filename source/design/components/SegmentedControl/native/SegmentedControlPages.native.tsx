@@ -1,10 +1,10 @@
-// Module ID: 8758
-// Function ID: 69213
+// Module ID: 8797
+// Function ID: 69428
 // Name: SegmentedControlPage
-// Dependencies: [57, 31, 27, 33, 3991, 8759, 477, 5217, 4539, 4489, 2]
+// Dependencies: [57, 31, 27, 33, 3991, 8798, 477, 5217, 4539, 4489, 2]
 // Exports: SegmentedControlPages
 
-// Module 8758 (SegmentedControlPage)
+// Module 8797 (SegmentedControlPage)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { jsx } from "jsxProd";

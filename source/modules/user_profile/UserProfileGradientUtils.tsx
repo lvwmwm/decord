@@ -1,10 +1,10 @@
-// Module ID: 7893
-// Function ID: 62843
+// Module ID: 7980
+// Function ID: 63154
 // Name: getProfileTheme
 // Dependencies: [57, 653, 665, 3975, 22, 3976, 666, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getUserProfileGradientContainerColors
 
-// Module 7893 (getProfileTheme)
+// Module 7980 (getProfileTheme)
 import _slicedToArray from "_slicedToArray";
 import { ThemeTypes } from "ME";
 import apply from "apply";

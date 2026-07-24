@@ -1,9 +1,9 @@
-// Module ID: 9201
-// Function ID: 72049
+// Module ID: 9237
+// Function ID: 72258
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 27, 3, 5594, 1212, 477, 9202, 9203, 1553, 2]
+// Dependencies: [5, 27, 3, 5592, 1212, 477, 9238, 9239, 1553, 2]
 
-// Module 9201 (_promptForRegisterCredential)
+// Module 9237 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 import importDefaultResult from "_fetchWebAuthnConditionalChallenge";

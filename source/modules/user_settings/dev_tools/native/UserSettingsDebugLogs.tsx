@@ -1,10 +1,10 @@
-// Module ID: 14394
-// Function ID: 110042
+// Module ID: 14444
+// Function ID: 110365
 // Name: UserSettingsDebugLogs
-// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5781, 1557, 3831, 587, 12, 4126, 5772, 13902, 1212, 14395, 4098, 14396, 7879, 2]
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5781, 1557, 3831, 587, 12, 4126, 5772, 13953, 1212, 14445, 4098, 14446, 7527, 2]
 // Exports: default
 
-// Module 14394 (UserSettingsDebugLogs)
+// Module 14444 (UserSettingsDebugLogs)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,10 +23,11 @@ _createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIterat
 _createForOfIteratorHelperLoose.wrap = _createForOfIteratorHelperLoose;
 let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "row", alignItems: "center" };
 _createForOfIteratorHelperLoose.searchWrap = obj1;
+_createForOfIteratorHelperLoose.searchField = { flex: 1 };
 _createForOfIteratorHelperLoose.shareButton = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, height: require("InputHeights").InputHeights.MD, width: require("InputHeights").InputHeights.MD, justifyContent: "center", alignItems: "center" };
-const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, height: require("InputHeights").InputHeights.MD, width: require("InputHeights").InputHeights.MD, justifyContent: "center", alignItems: "center" };
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, height: require("InputHeights").InputHeights.MD, width: require("InputHeights").InputHeights.MD, justifyContent: "center", alignItems: "center" };
 _createForOfIteratorHelperLoose.list = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
 _createForOfIteratorHelperLoose.log = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
 _createForOfIteratorHelperLoose.code = { fontFamily: require("ME").Fonts.CODE_BOLD };
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
@@ -98,6 +99,7 @@ export default function UserSettingsDebugLogs() {
   let items2 = [tmp];
   let obj = { style: tmp.wrap };
   obj = { style: tmp.searchWrap };
+  obj = { style: tmp.searchField };
   const callback1 = React.useCallback((item) => {
     item = item.item;
     let obj = { style: tmp.log };
@@ -119,11 +121,11 @@ export default function UserSettingsDebugLogs() {
     obj.children = items1;
     return first1(memo, obj, item.index);
   }, items2);
-  obj = { size: "md", placeholder: "Filter (regex)", onChange: tmp10[1], defaultValue: first1, trailingIcon: require(callback[14]).FiltersHorizontalIcon };
-  let obj1 = {};
+  let obj1 = { size: "md", placeholder: "Filter (regex)", onChange: tmp10[1], defaultValue: first1, trailingIcon: require(callback[14]).FiltersHorizontalIcon };
+  const obj2 = {};
   const intl = require(callback[15]).intl;
-  obj1.accessibilityLabel = intl.string(require(callback[15]).t["+1H47t"]);
-  obj1.onPress = function onPress() {
+  obj2.accessibilityLabel = intl.string(require(callback[15]).t["+1H47t"]);
+  obj2.onPress = function onPress() {
     let obj = tmp(callback[16]);
     obj = {
       sortOrder: first,
@@ -138,21 +140,22 @@ export default function UserSettingsDebugLogs() {
     };
     const result = obj.openUserSettingsDebugLogsFiltersActionSheet(obj);
   };
-  obj.trailingPressableProps = obj1;
-  const items3 = [callback(require(callback[13]).SearchField, obj), ];
+  obj1.trailingPressableProps = obj2;
+  obj.children = callback(require(callback[13]).SearchField, obj1);
+  const items3 = [callback(memo, obj), ];
   const tmp3 = first(React.useState(0), 2);
   items3[1] = callback(memo, { style: tmp.shareButton, children: callback(importDefault(callback[18]), {}) });
   obj.children = items3;
   const items4 = [first1(memo, obj), ];
-  const obj3 = {};
   const obj4 = {};
+  const obj5 = {};
   const merged = Object.assign(tmp.list);
-  obj4["paddingBottom"] = importDefault(callback[8])().bottom + importDefault(callback[6]).space.PX_16;
-  obj3.contentContainerStyle = obj4;
-  obj3.data = tmp12[0];
-  obj3.renderItem = callback1;
-  obj3.refreshControl = callback(closure_5, { refreshing: false, onRefresh: callback });
-  items4[1] = callback(require(callback[19]).FlashList, obj3);
+  obj5["paddingBottom"] = importDefault(callback[8])().bottom + importDefault(callback[6]).space.PX_16;
+  obj4.contentContainerStyle = obj5;
+  obj4.data = tmp12[0];
+  obj4.renderItem = callback1;
+  obj4.refreshControl = callback(closure_5, { refreshing: false, onRefresh: callback });
+  items4[1] = callback(require(callback[19]).FlashList, obj4);
   obj.children = items4;
   return first1(memo, obj);
 };

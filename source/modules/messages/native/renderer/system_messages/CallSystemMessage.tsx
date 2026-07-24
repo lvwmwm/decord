@@ -1,10 +1,10 @@
-// Module ID: 7666
-// Function ID: 61289
+// Module ID: 7755
+// Function ID: 61575
 // Name: createCallSystemMessage
-// Dependencies: [4143, 1194, 4146, 653, 4148, 7667, 7668, 1212, 1395, 3800, 7652, 2]
+// Dependencies: [4143, 1194, 4146, 653, 4148, 7756, 7757, 1212, 1395, 3800, 7741, 2]
 // Exports: createCallSystemMessage
 
-// Module 7666 (createCallSystemMessage)
+// Module 7755 (createCallSystemMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -20,9 +20,9 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   const channelId = message.getChannelId();
   const call = message.call;
   userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
-  const tmp4 = importDefault(7667)(message);
+  const tmp4 = importDefault(7756)(message);
   participants = participants.getParticipants(channelId);
-  let obj = require(7668) /* checkIsCallActive */;
+  let obj = require(7757) /* checkIsCallActive */;
   const checkIsCallActiveResult = obj.checkIsCallActive(channelId, message.id);
   let tmp6 = !checkIsCallActiveResult;
   if (tmp6) {
@@ -75,6 +75,6 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp6, avatarURLs: mapped };
   const timestamp = message.timestamp;
   obj.rawMilliseconds = timestamp.valueOf();
-  const merged = Object.assign(importDefault(7652)(message));
+  const merged = Object.assign(importDefault(7741)(message));
   return obj;
 };

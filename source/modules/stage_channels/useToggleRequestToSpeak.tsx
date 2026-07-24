@@ -1,10 +1,10 @@
-// Module ID: 10672
-// Function ID: 83220
+// Module ID: 10701
+// Function ID: 83412
 // Name: useToggleRequestToSpeak
-// Dependencies: [57, 31, 1194, 566, 4314, 4955, 7536, 7538, 7482, 2]
+// Dependencies: [57, 31, 1194, 566, 4314, 4955, 7581, 7583, 7562, 2]
 // Exports: default
 
-// Module 10672 (useToggleRequestToSpeak)
+// Module 10701 (useToggleRequestToSpeak)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

@@ -1,10 +1,10 @@
-// Module ID: 9006
-// Function ID: 70892
+// Module ID: 9045
+// Function ID: 71107
 // Name: FederatedSocialModal
-// Dependencies: [5, 57, 31, 653, 33, 4130, 4814, 1212, 4938, 3827, 9007, 5121, 4126, 9000, 1273, 4543, 5087, 5519, 2]
+// Dependencies: [5, 57, 31, 653, 33, 4130, 4814, 1212, 4938, 3827, 9046, 5121, 4126, 9039, 1273, 4543, 5087, 5517, 2]
 // Exports: default
 
-// Module 9006 (FederatedSocialModal)
+// Module 9045 (FederatedSocialModal)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -104,5 +104,5 @@ export default function FederatedSocialModal(platformType) {
     })(closure_0);
   };
   screens.root = obj;
-  return callback(_require(5519).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(5517).Navigator, { initialRouteName: "root", screens });
 };

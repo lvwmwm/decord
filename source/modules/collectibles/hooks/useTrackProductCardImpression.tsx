@@ -1,10 +1,10 @@
-// Module ID: 11845
-// Function ID: 91787
+// Module ID: 11872
+// Function ID: 92025
 // Name: useTrackProductCardImpression
-// Dependencies: [31, 6774, 653, 8666, 566, 8667, 3776, 6786, 675, 2]
+// Dependencies: [31, 6774, 653, 8707, 566, 8708, 3776, 6786, 675, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 11845 (useTrackProductCardImpression)
+// Module 11872 (useTrackProductCardImpression)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AnalyticEvents } from "ME";

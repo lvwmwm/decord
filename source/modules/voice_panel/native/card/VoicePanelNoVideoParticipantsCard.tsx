@@ -1,8 +1,8 @@
-// Module ID: 15821
-// Function ID: 122199
-// Dependencies: [31, 27, 33, 4130, 689, 10014, 4323, 5517, 4126, 1212, 2]
+// Module ID: 15868
+// Function ID: 122521
+// Dependencies: [31, 27, 33, 4130, 689, 10046, 4323, 5515, 4126, 1212, 2]
 
-// Module 15821
+// Module 15868
 import importAllResult from "result";
 import { Pressable } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,7 +22,7 @@ obj.buttonText = { color: require("_createForOfIteratorHelperLoose").unsafe_rawC
 let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
 const obj2 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_860 };
 const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCard() {
-  const channelId = importAllResult.useContext(importDefault(10014)).channelId;
+  const channelId = importAllResult.useContext(importDefault(10046)).channelId;
   const tmp = callback3();
   const items = [channelId];
   const callback = importAllResult.useCallback(() => {
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCa
   obj.children = callback(channelId(4126).Text, obj1);
   items1[1] = callback(Pressable, obj);
   obj.children = items1;
-  return callback2(importDefault(5517), obj);
+  return callback2(importDefault(5515), obj);
 });
 let result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelNoVideoParticipantsCard.tsx");
 

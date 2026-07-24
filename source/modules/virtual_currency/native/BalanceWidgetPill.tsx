@@ -1,9 +1,9 @@
-// Module ID: 9787
-// Function ID: 76074
+// Module ID: 9819
+// Function ID: 76268
 // Name: BalanceWidgetPill
-// Dependencies: [31, 27, 33, 4130, 4547, 689, 477, 9788, 1212, 9789, 9795, 9796, 2]
+// Dependencies: [31, 27, 33, 4130, 4547, 689, 477, 9820, 1212, 9821, 9827, 9828, 2]
 
-// Module 9787 (BalanceWidgetPill)
+// Module 9819 (BalanceWidgetPill)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

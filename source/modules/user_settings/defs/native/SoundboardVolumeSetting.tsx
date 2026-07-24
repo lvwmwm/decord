@@ -1,9 +1,9 @@
-// Module ID: 14142
-// Function ID: 108834
+// Module ID: 14192
+// Function ID: 109157
 // Name: volumeSlider
-// Dependencies: [7662, 10095, 1212, 5739, 5733, 5484, 2]
+// Dependencies: [7751, 10127, 1212, 5739, 5733, 5482, 2]
 
-// Module 14142 (volumeSlider)
+// Module 14192 (volumeSlider)
 import createToggle from "createToggle";
 
 const volumeSlider = createToggle.createVolumeSlider({
@@ -15,7 +15,7 @@ const volumeSlider = createToggle.createVolumeSlider({
   maximum: 100,
   useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [importDefault(5484).USER_SETTINGS];
+    const items = [importDefault(5482).USER_SETTINGS];
     return require(5733) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
   }
 });
@@ -28,7 +28,7 @@ const obj = {
   maximum: 100,
   useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [importDefault(5484).USER_SETTINGS];
+    const items = [importDefault(5482).USER_SETTINGS];
     return require(5733) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
   }
 };

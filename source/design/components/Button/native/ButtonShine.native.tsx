@@ -1,5 +1,5 @@
 // Module ID: 4553
-// Function ID: 39917
+// Function ID: 39918
 // Name: useShineEffectStyles
 // Dependencies: [57, 31, 33, 4548, 666, 3976, 3991, 4131, 4130, 2]
 // Exports: ButtonShine

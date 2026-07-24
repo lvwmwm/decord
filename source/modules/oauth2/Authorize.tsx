@@ -1,10 +1,10 @@
-// Module ID: 8954
-// Function ID: 70581
+// Module ID: 8993
+// Function ID: 70796
 // Name: filterScopes
-// Dependencies: [1348, 3947, 653, 8955, 8310, 4988, 3763, 483, 2]
+// Dependencies: [1348, 3947, 653, 8994, 8354, 4988, 3763, 483, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 8954 (filterScopes)
+// Module 8993 (filterScopes)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -21,12 +21,12 @@ export const filterScopes = function filterScopes(items) {
     const RemovedScopes = outer1_0(outer1_2[3]).RemovedScopes;
     return !RemovedScopes.includes(arg0);
   });
-  let hasItem = found.includes(require(8310) /* set */.OAuth2Scopes.BOT);
+  let hasItem = found.includes(require(8354) /* set */.OAuth2Scopes.BOT);
   if (hasItem) {
-    hasItem = !found.includes(require(8310) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
+    hasItem = !found.includes(require(8354) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   if (hasItem) {
-    found.push(require(8310) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
+    found.push(require(8354) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   return found;
 };

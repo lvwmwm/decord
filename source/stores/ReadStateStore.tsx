@@ -1,7 +1,7 @@
 // Module ID: 4142
-// Function ID: 34489
+// Function ID: 34490
 // Name: _isNativeReflectConstruct
-// Dependencies: [15, 17, 18, 5, 57, 6, 7, 1347, 4143, 1908, 4044, 6758, 5604, 5605, 6882, 5040, 3760, 1316, 1352, 1194, 5659, 1348, 4802, 4469, 1838, 4943, 4349, 3758, 3767, 1906, 4325, 1849, 12843, 653, 10226, 1355, 1354, 4326, 1211, 3, 12844, 12845, 21, 664, 686, 4365, 12846, 507, 4015, 9456, 10229, 3766, 12847, 6767, 6879, 12848, 1934, 1360, 3712, 22, 1327, 4806, 3982, 10228, 3765, 1361, 6651, 8340, 566, 2]
+// Dependencies: [15, 17, 18, 5, 57, 6, 7, 1347, 4143, 1908, 4044, 6758, 5602, 5603, 6881, 5040, 3760, 1316, 1352, 1194, 5659, 1348, 4802, 4469, 1838, 4943, 4349, 3758, 3767, 1906, 4325, 1849, 12895, 653, 10256, 1355, 1354, 4326, 1211, 3, 12896, 12897, 21, 664, 686, 4365, 12898, 507, 4015, 9492, 10259, 3766, 12899, 6767, 6878, 12900, 1934, 1360, 3712, 22, 1327, 4806, 3982, 10258, 3765, 1361, 6651, 8384, 566, 2]
 
 // Module 4142 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -280,7 +280,7 @@ function shouldAutomaticallyAck(value, timestamp) {
           staffLog(value, "App not active");
           return false;
         }
-        obj = importDefault(9456);
+        obj = importDefault(9492);
       }
       if (tmp2) {
         if (!value._persisted) {
@@ -319,7 +319,7 @@ function shouldAutomaticallyAck(value, timestamp) {
                   tmp35(value, "Chat not focused");
                   flag6 = false;
                 }
-                obj2 = require(10229) /* getFocusedChannelId */;
+                obj2 = require(10259) /* getFocusedChannelId */;
               }
               return flag6;
             }
@@ -3025,8 +3025,8 @@ tmp13 = new tmp13(require("dispatcher"), {
       if (null != value.oldestUnreadMessageId) {
         if (!value.oldestUnreadMessageIdStale) {
           if (!hasUnreadResult) {
-            hasUnreadResult = require(10229) /* getFocusedChannelId */.getFocusedChannelId() === channelId;
-            const obj7 = require(10229) /* getFocusedChannelId */;
+            hasUnreadResult = require(10259) /* getFocusedChannelId */.getFocusedChannelId() === channelId;
+            const obj7 = require(10259) /* getFocusedChannelId */;
           }
           if (!hasUnreadResult) {
             value.oldestUnreadMessageId = message.id;
@@ -3064,7 +3064,7 @@ tmp13 = new tmp13(require("dispatcher"), {
                     if (obj12.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
                       obj5 = { shouldMention: true, isMentionLowImportance: true };
                     }
-                    obj12 = require(10228) /* computeThreadNotificationSetting */;
+                    obj12 = require(10258) /* computeThreadNotificationSetting */;
                   } else if (!channel.isVocal()) {
                     if (!closure_38.isChannelMuted(channel.guild_id, channel.id)) {
                       if (closure_38.resolvedMessageNotifications(channel) === constants9.ALL_MESSAGES) {

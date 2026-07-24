@@ -1,8 +1,8 @@
-// Module ID: 14874
-// Function ID: 113424
-// Dependencies: [31, 3948, 1391, 3947, 4970, 33, 4130, 689, 14823, 3834, 566, 5515, 14858, 14825, 3950, 9152, 14838, 14866, 14814, 3991, 14844, 5085, 2]
+// Module ID: 14921
+// Function ID: 113745
+// Dependencies: [31, 3948, 1391, 3947, 4970, 33, 4130, 689, 14870, 3834, 566, 5513, 14905, 14872, 3950, 9188, 14885, 14913, 14861, 3991, 14891, 5085, 2]
 
-// Module 14874
+// Module 14921
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import isGuildOwner from "isGuildOwner";

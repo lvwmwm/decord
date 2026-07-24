@@ -1,10 +1,10 @@
-// Module ID: 15760
-// Function ID: 121607
+// Module ID: 15807
+// Function ID: 121929
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [31, 27, 33, 4130, 689, 1557, 668, 9380, 7951, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 1557, 668, 9416, 8038, 2]
 // Exports: default
 
-// Module 15760 (PremiumSoundboardFeatureUpsell)
+// Module 15807 (PremiumSoundboardFeatureUpsell)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/roadblo
 
 export default function PremiumSoundboardFeatureUpsell(shouldShow) {
   let obj = { style: callback(require(668) /* keys */.EXPRESSION_FOOTER_HEIGHT + importDefault(1557)().bottom).container };
-  obj = { shouldShow: shouldShow.shouldShow, featureName: require(7951) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE };
-  obj.children = jsx(importDefault(9380), { shouldShow: shouldShow.shouldShow, featureName: require(7951) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE });
-  return <View shouldShow={arg0.shouldShow} featureName={require(7951) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE} />;
+  obj = { shouldShow: shouldShow.shouldShow, featureName: require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE };
+  obj.children = jsx(importDefault(9416), { shouldShow: shouldShow.shouldShow, featureName: require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE });
+  return <View shouldShow={arg0.shouldShow} featureName={require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE} />;
 };

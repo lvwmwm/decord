@@ -1,10 +1,10 @@
-// Module ID: 11779
-// Function ID: 91421
+// Module ID: 11806
+// Function ID: 91659
 // Name: showInstantInviteModal
-// Dependencies: [1907, 653, 8481, 2]
+// Dependencies: [1907, 653, 8526, 2]
 // Exports: showInstantInviteModal
 
-// Module 11779 (showInstantInviteModal)
+// Module 11806 (showInstantInviteModal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { InstantInviteSources } from "ME";
 

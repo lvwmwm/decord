@@ -1,10 +1,10 @@
-// Module ID: 9859
-// Function ID: 76317
+// Module ID: 9891
+// Function ID: 76511
 // Name: PublishModal
-// Dependencies: [57, 31, 27, 33, 4130, 4973, 9860, 1273, 1212, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 4973, 9892, 1273, 1212, 2]
 // Exports: default
 
-// Module 9859 (PublishModal)
+// Module 9891 (PublishModal)
 import _slicedToArray from "_slicedToArray";
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,7 +23,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/a
 
 export default function PublishModal(channelId) {
   const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(importDefault(9860)(channelId.channelId), 2);
+  const tmp2 = callback(importDefault(9892)(channelId.channelId), 2);
   const first = tmp2[0];
   if (tmp2[1]) {
     let obj = { style: tmp.alertLoading };

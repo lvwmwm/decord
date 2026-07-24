@@ -1,5 +1,5 @@
 // Module ID: 5688
-// Function ID: 48962
+// Function ID: 48972
 // Name: subscribeChannel
 // Dependencies: [686, 5664, 2]
 // Exports: subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers

@@ -1,9 +1,9 @@
-// Module ID: 5603
-// Function ID: 47596
+// Module ID: 5601
+// Function ID: 47593
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5604, 5605, 1352, 1348, 1838, 4142, 4325, 1849, 21, 3754, 3712, 5606, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 5602, 5603, 1352, 1348, 1838, 4142, 4325, 1849, 21, 3754, 3712, 5604, 566, 686, 2]
 
-// Module 5603 (_isNativeReflectConstruct)
+// Module 5601 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import closure_5 from "t";
@@ -92,7 +92,7 @@ const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(function
 let closure_18 = [];
 let closure_19 = [];
 let closure_20 = [];
-const f47606 = () => {
+const f47603 = () => {
   let values = secondaryIndexMap.values(constants.FAVORITE);
   values = secondaryIndexMap.values(constants.DEFAULT);
   let tmp = values === values;
@@ -189,7 +189,7 @@ tmp3 = new tmp3(require("dispatcher"), {
     const tmp = !isPrivate(channel.type);
     let tmp2 = !tmp;
     if (!tmp) {
-      const tmp5 = channel.id !== require(5606) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      const tmp5 = channel.id !== require(5604) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
       if (tmp5) {
         const result = secondaryIndexMap.set(channel.id, makeSortedChannel(channel));
       }

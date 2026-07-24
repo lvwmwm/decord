@@ -1,8 +1,8 @@
-// Module ID: 8901
-// Function ID: 70248
-// Dependencies: [1348, 4202, 8899, 653, 4337, 8902, 1934, 4098, 8912, 1212, 4471, 1273, 5628, 8915, 2]
+// Module ID: 8940
+// Function ID: 70463
+// Dependencies: [1348, 4202, 8938, 653, 4337, 8941, 1934, 4098, 8951, 1212, 4471, 1273, 5626, 8954, 2]
 
-// Module 8901
+// Module 8940
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
@@ -22,13 +22,13 @@ export default {
   openSecureFramesStreamVerification(stateFromStores4, channelId) {
     let obj = importDefault(4098);
     obj = { streamKey: stateFromStores4, channelId };
-    obj.openLazy(require(1934) /* maybeLoadBundle */(8912, dependencyMap.paths), closure_6, obj);
+    obj.openLazy(require(1934) /* maybeLoadBundle */(8951, dependencyMap.paths), closure_6, obj);
   },
   openSecureFramesUserVerificationModal(id, id2, arg2) {
     if (arg2()) {
       let obj = importDefault(4337);
       obj = { userId: id, channelId: id2 };
-      obj.pushLazy(require(1934) /* maybeLoadBundle */(8902, dependencyMap.paths), obj, closure_7);
+      obj.pushLazy(require(1934) /* maybeLoadBundle */(8941, dependencyMap.paths), obj, closure_7);
     }
   },
   openSecureFramesUpdateConfirmation(result) {
@@ -67,10 +67,10 @@ export default {
     }
     if (null != channelId) {
       if (null != channel) {
-        importDefault(5628)(closure_9.CHANNEL(guildId, channelId));
-        const tmp6 = importDefault(5628);
+        importDefault(5626)(closure_9.CHANNEL(guildId, channelId));
+        const tmp6 = importDefault(5626);
         let obj = { userId, channelId, guildId, fingerprint };
-        importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(8915, dependencyMap.paths), closure_5, obj);
+        importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(8954, dependencyMap.paths), closure_5, obj);
         const obj4 = importDefault(4098);
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 10282
-// Function ID: 79435
+// Module ID: 10311
+// Function ID: 79626
 // Name: getMuteSettingLabel
-// Dependencies: [3760, 1348, 1838, 3767, 4325, 1849, 653, 662, 1212, 4320, 7007, 5079, 5073, 10283, 2]
+// Dependencies: [3760, 1348, 1838, 3767, 4325, 1849, 653, 662, 1212, 4320, 7006, 5079, 5073, 10312, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10282 (getMuteSettingLabel)
+// Module 10311 (getMuteSettingLabel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -64,7 +64,7 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
   const channel = store.getChannel(channelId);
   if (null != channel) {
     if (channel.isThread()) {
-      let tmp6Result = tmp6(7007);
+      let tmp6Result = tmp6(7006);
       const obj = { muted: false };
       const result = tmp6Result.setNotificationSettings(channel, obj);
     } else {
@@ -80,14 +80,14 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
   let onOptionPress;
   ({ guildId, onOptionPress } = arg0);
   ({ channelId, muteDurationSeconds } = arg0);
-  const muteSettings = importAll(10283).getMuteSettings(muteDurationSeconds);
+  const muteSettings = importAll(10312).getMuteSettings(muteDurationSeconds);
   const channel = store.getChannel(channelId);
   guild = guild.getGuild(guildId);
   if (null != onOptionPress) {
     onOptionPress(muteSettings);
   } else if (null != channel) {
     if (channel.isThread()) {
-      let tmp3Result = tmp3(7007);
+      let tmp3Result = tmp3(7006);
       const result = tmp3Result.setNotificationSettings(channel, muteSettings);
     } else {
       tmp3Result = tmp3(5079);

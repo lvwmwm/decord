@@ -1,24 +1,24 @@
-// Module ID: 16205
-// Function ID: 125788
+// Module ID: 16252
+// Function ID: 126112
 // Name: close
-// Dependencies: [57, 31, 1838, 8439, 653, 33, 16206, 8438, 480, 1212, 5087, 16207, 16220, 16224, 16225, 16235, 16250, 16251, 16263, 16275, 16277, 15525, 15534, 16285, 16289, 16291, 15536, 16292, 16297, 16298, 16318, 16337, 16341, 16344, 10981, 10994, 10996, 16345, 16350, 16351, 16373, 16413, 16414, 16430, 16469, 16473, 16474, 16477, 16485, 1557, 5450, 566, 5519, 2]
+// Dependencies: [57, 31, 1838, 8483, 653, 33, 16253, 8482, 480, 1212, 5087, 16254, 16267, 16271, 16272, 16282, 16297, 16298, 16310, 16322, 16324, 15572, 15581, 16332, 16336, 16338, 15583, 16339, 16344, 16345, 16365, 16384, 16388, 16391, 11008, 11021, 11023, 16392, 16397, 16398, 16420, 16460, 16461, 16477, 16516, 16520, 16521, 16524, 16532, 1557, 5450, 566, 5517, 2]
 // Exports: default
 
-// Module 16205 (close)
+// Module 16252 (close)
 import _slicedToArray from "_slicedToArray";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_6 from "_isNativeReflectConstruct";
 import ME from "ME";
-import { jsx } from "module_16344";
+import { jsx } from "module_16391";
 
 let closure_7;
 let closure_8;
 const require = arg1;
 function close() {
-  importDefault(16206).terminate();
-  const obj = importDefault(16206);
-  importDefault(8438).close();
+  importDefault(16253).terminate();
+  const obj = importDefault(16253);
+  importDefault(8482).close();
 }
 ({ GuildSettingsSections: closure_7, WebhookTypes: closure_8 } = ME);
 const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");

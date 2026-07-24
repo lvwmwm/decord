@@ -1,10 +1,10 @@
-// Module ID: 13581
-// Function ID: 104400
+// Module ID: 13632
+// Function ID: 104724
 // Name: ChangeAvatarActionSheet
-// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 3776, 5500, 5186, 1212, 7871, 5503, 5165, 7495, 13566, 2]
+// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 3776, 5498, 5186, 1212, 7486, 5501, 5165, 7636, 13617, 2]
 // Exports: default
 
-// Module 13581 (ChangeAvatarActionSheet)
+// Module 13632 (ChangeAvatarActionSheet)
 import "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -60,7 +60,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.title = intl.string(require(1212) /* getSystemLocale */.t.lqaIxI);
   if (isPremiumResult) {
-    isPremiumResult = callback(require(7871) /* NitroWheelIcon */.NitroWheelIcon, {});
+    isPremiumResult = callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, {});
   }
   obj.trailing = isPremiumResult;
   ({ titleWrapper: obj4.titleWrapperStyle, titleContainer: obj4.titleContainerStyle } = tmp);
@@ -88,26 +88,26 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     const obj6 = {};
     const intl5 = require(1212) /* getSystemLocale */.intl;
     obj6.text = intl5.string(require(1212) /* getSystemLocale */.t.xZ0Wot);
-    const items3 = [callback(require(7495) /* Form */.FormLabel, obj6), ];
+    const items3 = [callback(require(7636) /* Form */.FormLabel, obj6), ];
     const obj7 = { style: tmp.nitroWheel, size: "sm" };
-    items3[1] = callback(require(7871) /* NitroWheelIcon */.NitroWheelIcon, obj7);
+    items3[1] = callback(require(7486) /* NitroWheelIcon */.NitroWheelIcon, obj7);
     obj5.children = items3;
     obj4.label = callback2(View, obj5);
     const obj8 = {};
     const obj9 = { style: tmp.sublabel, numberOfLines: 3 };
     const intl6 = require(1212) /* getSystemLocale */.intl;
     obj9.text = intl6.string(require(1212) /* getSystemLocale */.t.L3UPqR);
-    const items4 = [callback(require(7495) /* Form */.FormSubLabel, obj9), ];
+    const items4 = [callback(require(7636) /* Form */.FormSubLabel, obj9), ];
     const obj10 = { style: tmp.upsellButton };
     const obj11 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR };
     const intl7 = require(1212) /* getSystemLocale */.intl;
     obj11.label = intl7.string(require(1212) /* getSystemLocale */.t.mr4K7D);
-    obj10.children = callback(importDefault(13566), obj11);
+    obj10.children = callback(importDefault(13617), obj11);
     items4[1] = callback(View, obj10);
     obj8.children = items4;
     obj4.subLabel = callback2(closure_8, obj8);
     showAnimatedAvatarUpsell = callback(require(5165) /* TableRowInner */.TableRow, obj4);
-    const tmp21 = importDefault(13566);
+    const tmp21 = importDefault(13617);
   }
   items2[2] = showAnimatedAvatarUpsell;
   let tmp23 = null != handleEditAvatarDecorationSelect;
@@ -117,7 +117,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     const obj14 = {};
     const intl8 = require(1212) /* getSystemLocale */.intl;
     obj14.text = intl8.string(require(1212) /* getSystemLocale */.t.BVcYCx);
-    obj13.children = callback(require(7495) /* Form */.FormLabel, obj14);
+    obj13.children = callback(require(7636) /* Form */.FormLabel, obj14);
     obj12.label = callback(View, obj13);
     obj12.onPress = handleEditAvatarDecorationSelect;
     tmp23 = callback(require(5165) /* TableRowInner */.TableRow, obj12);
@@ -131,13 +131,13 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     obj16.style = items5;
     const intl9 = require(1212) /* getSystemLocale */.intl;
     obj16.text = intl9.string(require(1212) /* getSystemLocale */.t.twB3fz);
-    obj15.label = callback(require(7495) /* Form */.FormLabel, obj16);
+    obj15.label = callback(require(7636) /* Form */.FormLabel, obj16);
     obj15.onPress = handleRemoveAvatarSelect;
     flag = callback(require(5165) /* TableRowInner */.TableRow, obj15);
   }
   items2[4] = flag;
   obj1.children = items2;
-  items1[1] = callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj1);
+  items1[1] = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj1);
   obj.children = items1;
-  return callback2(require(5500) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5498) /* ActionSheet */.ActionSheet, obj);
 };

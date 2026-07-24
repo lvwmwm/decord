@@ -1,7 +1,7 @@
 // Module ID: 6658
-// Function ID: 51120
+// Function ID: 51131
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 5, 31, 5623, 6659, 6660, 1849, 3782, 5621, 653, 482, 33, 3, 1193, 587, 675, 507, 3791, 4451, 477, 7203, 5638, 7204, 686, 22, 5624, 6656, 7227, 1212, 7156, 4471, 7161, 1934, 4337, 6649, 7122, 4029, 7229, 3798, 4942, 480, 7365, 7366, 1361, 7157, 7367, 491, 7194, 2]
+// Dependencies: [29, 5, 31, 5621, 6659, 6660, 1849, 3782, 5619, 653, 482, 33, 3, 1193, 587, 675, 507, 3791, 4451, 477, 7203, 5638, 7204, 686, 22, 5622, 6656, 7227, 1212, 7156, 4471, 7161, 1934, 4337, 6649, 7121, 4029, 7229, 3798, 4942, 480, 7365, 7366, 1361, 7157, 7367, 491, 7194, 2]
 // Exports: cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
 // Module 6658 (_createForOfIteratorHelperLoose)
@@ -185,13 +185,16 @@ async function _getTrialOfferSignature(arg0, arg1, arg2, arg3) {
   obj = { product_id: arg0, product_offer_id: arg1, app_account_token: arg2 };
   return yield HTTP.post(obj).body;
 }
+function preCompletionFailureReason(code) {
+  return set.has(code.code) ? obj.USER_CANCELLED : obj.PURCHASE_INCOMPLETE;
+}
 function handlePurchaseException(code, purchase_type) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
   if (!set.has(code.code)) {
-    let obj = require(7122) /* isSpendingLimitError */;
+    let obj = require(7121) /* isSpendingLimitError */;
     let billingError = code;
     if (!(code instanceof require(4029) /* V6OrEarlierAPIError */.BillingError)) {
       const BillingError = require(4029) /* V6OrEarlierAPIError */.BillingError;
@@ -199,8 +202,8 @@ function handlePurchaseException(code, purchase_type) {
       billingError = new BillingError(code);
     }
     if (obj.isSpendingLimitError(billingError)) {
-      const result = require(7122) /* isSpendingLimitError */.showSpendingLimitReachedAlert();
-      const obj10 = require(7122) /* isSpendingLimitError */;
+      const result = require(7121) /* isSpendingLimitError */.showSpendingLimitReachedAlert();
+      const obj10 = require(7121) /* isSpendingLimitError */;
     } else {
       const message = code.message;
       const _JSON = JSON;
@@ -426,14 +429,14 @@ function determineProductId(arg0) {
       if (require(7365) /* APBRequestOperations */.APBRequestOperations.RESUBSCRIBE !== arg0) {
         if (require(7365) /* APBRequestOperations */.APBRequestOperations.REACTIVATE !== arg0) {
           if (require(7365) /* APBRequestOperations */.APBRequestOperations.CHARGE === arg0) {
-            return require(5624) /* SubscriptionPlans */.ProductIds.GENERIC_CONSUMABLE;
+            return require(5622) /* SubscriptionPlans */.ProductIds.GENERIC_CONSUMABLE;
           } else {
             if (require(7366) /* ACRequestOperations */.ACRequestOperations.CREATE !== arg0) {
               if (require(7366) /* ACRequestOperations */.ACRequestOperations.CANCEL !== arg0) {
                 if (require(7366) /* ACRequestOperations */.ACRequestOperations.REACTIVATE !== arg0) {
                   if (require(7366) /* ACRequestOperations */.ACRequestOperations.MODIFY !== arg0) {
                     if (require(7366) /* ACRequestOperations */.ACRequestOperations.CHARGE === arg0) {
-                      return require(5624) /* SubscriptionPlans */.ProductIds.GENERIC_CONSUMABLE;
+                      return require(5622) /* SubscriptionPlans */.ProductIds.GENERIC_CONSUMABLE;
                     } else {
                       const _Error = Error;
                       const error = new Error("Invalid operation");
@@ -443,27 +446,27 @@ function determineProductId(arg0) {
                 }
               }
             }
-            return require(5624) /* SubscriptionPlans */.ProductIds.GENERIC_SUBSCRIPTION;
+            return require(5622) /* SubscriptionPlans */.ProductIds.GENERIC_SUBSCRIPTION;
           }
         }
       }
     }
   }
-  return require(5624) /* SubscriptionPlans */.ProductIds.GENERIC_SUBSCRIPTION;
+  return require(5622) /* SubscriptionPlans */.ProductIds.GENERIC_SUBSCRIPTION;
 }
 async function _cancelGenericSubscription(arg0, arg1, arg2, arg3) {
-  if (outer2_31()) {
+  if (outer2_32()) {
     if (arg2) {
       let CANCEL = tmp2(tmp3[42]).ACRequestOperations.CANCEL;
     } else {
       CANCEL = tmp2(tmp3[41]).APBRequestOperations.CANCEL;
     }
-    const tmp6 = outer2_38(CANCEL);
+    const tmp6 = outer2_39(CANCEL);
     let obj = outer2_1(outer2_3[23]);
     obj = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: tmp6 };
     yield obj.dispatch(obj);
     obj = { operation: CANCEL, request_identifier: arg0, subscription_id: arg1 };
-    yield outer2_36(obj);
+    yield outer2_37(obj);
     const obj1 = { type: "IAP_PURCHASE_PRODUCT_SUCCESS", productIdentifier: tmp6 };
     outer2_1(outer2_3[23]).dispatch(obj1);
     return true;
@@ -484,16 +487,16 @@ async function _createGenericSubscription(arg0, arg1) {
     let requestIdentifier;
     ({ requestIdentifier, items, currency, countryCode, orderId } = arg0);
     yield undefined;
-    if (outer2_31()) {
-      if (outer2_40(currency)) {
-        const tmp9 = outer2_38(outer2_0(outer2_3[42]).ACRequestOperations.CREATE);
+    if (outer2_32()) {
+      if (outer2_41(currency)) {
+        const tmp9 = outer2_39(outer2_0(outer2_3[42]).ACRequestOperations.CREATE);
         let obj2 = outer2_1(outer2_3[23]);
         let obj = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: tmp9 };
         yield obj2.dispatch(obj);
         obj = { request_identifier: requestIdentifier, items: items.map((planId) => ({ plan_id: planId.planId, quantity: planId.quantity })), currency, country_code: countryCode, order_id: orderId };
         const obj1 = { operation: outer2_0(outer2_3[42]).ACRequestOperations.CREATE };
         const merged = Object.assign(obj);
-        const tmp27 = yield outer2_32(requestIdentifier, yield outer2_34(obj1).requestJSONString, tmp9, true);
+        const tmp27 = yield outer2_33(requestIdentifier, yield outer2_35(obj1).requestJSONString, tmp9, true);
         const purchaseResponse = tmp27.purchaseResponse;
         obj2 = { encodedReceipt: purchaseResponse.transactionReceipt, retries: 3, presentmentCurrency: currency, appStoreRegion: countryCode, jwsRepresentation: purchaseResponse.jwsRepresentation, source: "createGenericSubscription", orderId };
         yield outer2_28(obj2);
@@ -524,13 +527,13 @@ async function _modifyGenericSubscription(arg0, arg1) {
     let requestIdentifier;
     ({ requestIdentifier, items, orderId, onPurchaseComplete } = subscriptionId);
     yield undefined;
-    if (outer2_31()) {
+    if (outer2_32()) {
       const GENERIC_SUBSCRIPTION = outer2_0(outer2_3[25]).ProductIds.GENERIC_SUBSCRIPTION;
       let obj1 = outer2_1(outer2_3[23]);
       let obj = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: GENERIC_SUBSCRIPTION };
       yield obj1.dispatch(obj);
       obj = { operation: outer2_0(outer2_3[42]).ACRequestOperations.MODIFY, request_identifier: requestIdentifier, subscription_id: subscriptionId.subscriptionId, subscription_items: items.map((planId) => ({ plan_id: planId.planId, quantity: planId.quantity })), order_id: orderId };
-      const tmp17 = yield outer2_32(requestIdentifier, yield outer2_34(obj).requestJSONString, GENERIC_SUBSCRIPTION, true);
+      const tmp17 = yield outer2_33(requestIdentifier, yield outer2_35(obj).requestJSONString, GENERIC_SUBSCRIPTION, true);
       const purchaseResponse = tmp17.purchaseResponse;
       if (null != onPurchaseComplete) {
         const onPurchaseCompleteResult = onPurchaseComplete();
@@ -557,21 +560,21 @@ async function _resubscribeGenericSubscription(arg0, arg1, arg2) {
   let iter = (function*(requestIdentifier) {
     requestIdentifier = requestIdentifier.requestIdentifier;
     yield undefined;
-    if (outer2_31()) {
+    if (outer2_32()) {
       let obj = { request_identifier: requestIdentifier, subscription_id: requestIdentifier.subscriptionId };
       if (arg1) {
         let REACTIVATE = tmp6(tmp7[42]).ACRequestOperations.REACTIVATE;
       } else {
         REACTIVATE = tmp6(tmp7[41]).APBRequestOperations.REACTIVATE;
       }
-      const tmp4Result = outer2_38(REACTIVATE);
+      const tmp4Result = outer2_39(REACTIVATE);
       let obj1 = outer2_1(outer2_3[23]);
       obj = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: tmp4Result };
       yield obj1.dispatch(obj);
       if (arg1) {
         obj = { operation: outer2_0(outer2_3[42]).ACRequestOperations.REACTIVATE };
         const merged = Object.assign(tmp3);
-        const tmp29 = yield outer2_32(requestIdentifier, yield outer2_34(obj).requestJSONString, tmp9, true);
+        const tmp29 = yield outer2_33(requestIdentifier, yield outer2_35(obj).requestJSONString, tmp9, true);
         const purchaseResponse = tmp29.purchaseResponse;
         obj1 = { encodedReceipt: purchaseResponse.transactionReceipt, retries: 3, jwsRepresentation: purchaseResponse.jwsRepresentation, source: "resubscribeGenericSubscription" };
         yield outer2_28(obj1);
@@ -584,9 +587,9 @@ async function _resubscribeGenericSubscription(arg0, arg1, arg2) {
       } else {
         const obj4 = { operation: outer2_0(outer2_3[41]).APBRequestOperations.REACTIVATE };
         const merged1 = Object.assign(tmp3);
-        return yield outer2_36(obj4);
+        return yield outer2_37(obj4);
       }
-      const tmp4 = outer2_38;
+      const tmp4 = outer2_39;
     } else {
       return false;
     }
@@ -687,9 +690,9 @@ async function _mobilePurchaseSKU(arg0, arg1, arg2) {
     }
     orderId = orderId.orderId;
     yield undefined;
-    if (outer2_31()) {
-      if (outer2_40(currency)) {
-        const tmp9 = outer2_38(outer2_0(outer2_3[42]).ACRequestOperations.CHARGE);
+    if (outer2_32()) {
+      if (outer2_41(currency)) {
+        const tmp9 = outer2_39(outer2_0(outer2_3[42]).ACRequestOperations.CHARGE);
         let obj2 = outer2_1(outer2_3[23]);
         let obj = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: tmp9 };
         yield obj2.dispatch(obj);
@@ -697,12 +700,12 @@ async function _mobilePurchaseSKU(arg0, arg1, arg2) {
         obj = { sku_id: skuId, load_id: analyticsLoadId, location_stack: analyticsLocations, payment_gateway: outer2_20.APPLE_ADVANCED_COMMERCE };
         const result = obj4.trackPaymentFlowStartedAnalyticsAndCTP(obj);
         yield (function retryPendingPurchases(currency, countryCode) {
-          return outer3_44(...arguments);
+          return outer3_45(...arguments);
         })(currency, countryCode);
         const obj1 = { sku_id: skuId, request_identifier: requestIdentifier, currency, country_code: countryCode, is_gift: isGift, gift_info_options: giftInfoOptions, order_id: orderId };
         obj2 = { operation: outer2_0(outer2_3[42]).ACRequestOperations.CHARGE };
         const merged = Object.assign(obj1);
-        const tmp39 = yield outer2_32(requestIdentifier, yield outer2_34(obj2).requestJSONString, tmp9, true);
+        const tmp39 = yield outer2_33(requestIdentifier, yield outer2_35(obj2).requestJSONString, tmp9, true);
         const purchaseResponse = tmp39.purchaseResponse;
         const jwsRepresentation = purchaseResponse.jwsRepresentation;
         if (null != jwsRepresentation) {
@@ -752,7 +755,7 @@ async function _mobilePurchaseSKU(arg0, arg1, arg2) {
 async function _migrateToACOM() {
   if (null == outer2_13.getCurrentUser()) {
     return false;
-  } else if (outer2_31()) {
+  } else if (outer2_32()) {
     let activeGuildSubscriptions = outer2_14.getActiveGuildSubscriptions();
     if (null == activeGuildSubscriptions) {
       activeGuildSubscriptions = [];
@@ -1195,7 +1198,7 @@ let obj = {
 };
 let items = [require("module_7204").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
-obj = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", POST_PURCHASE_FAILED: "post_purchase_failed" };
+obj = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", USER_CANCELLED: "user_cancelled", POST_PURCHASE_FAILED: "post_purchase_failed" };
 let result = set.fileFinishedImporting("actions/native/BillingActionCreators.tsx");
 
 export default obj;

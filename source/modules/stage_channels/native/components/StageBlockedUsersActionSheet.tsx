@@ -1,10 +1,10 @@
-// Module ID: 7585
-// Function ID: 60633
+// Module ID: 7674
+// Function ID: 60919
 // Name: RestrictedUser
-// Dependencies: [57, 31, 27, 3767, 4954, 4947, 33, 4130, 689, 566, 1212, 1273, 7586, 4126, 4098, 7587, 5121, 4543, 5187, 7588, 2]
+// Dependencies: [57, 31, 27, 3767, 4954, 4947, 33, 4130, 689, 566, 1212, 1273, 7675, 4126, 4098, 7676, 5121, 4543, 5187, 7677, 2]
 // Exports: default
 
-// Module 7585 (RestrictedUser)
+// Module 7674 (RestrictedUser)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -50,7 +50,7 @@ function RestrictedUser(guildId) {
     const obj2 = {};
     const items3 = [tmp.iconContainer];
     obj2.style = items3;
-    const obj3 = { style: tmp.icon, source: user(7586), color: user(689).unsafe_rawColors.WHITE };
+    const obj3 = { style: tmp.icon, source: user(7675), color: user(689).unsafe_rawColors.WHITE };
     obj2.children = callback(require(1273) /* Button */.Icon, obj3);
     speaker = callback(View, obj2);
   }
@@ -172,9 +172,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = items1(handleDismiss.useState(0), 2);
   const dependencyMap = tmp2[1];
-  let obj = channel(7587);
+  let obj = channel(7676);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  let obj1 = channel(7587);
+  let obj1 = channel(7676);
   const stageIgnoredUsers = obj1.useStageIgnoredUsers(channel.id);
   const callback = handleDismiss.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
@@ -209,7 +209,7 @@ export default function StageBlockedUsersActionSheet(channel) {
   obj3.itemSize = function itemSize() {
     return 48;
   };
-  const items3 = [callback(onAccept(7588), obj3), callback(View, { style: { height: tmp2[0] } })];
+  const items3 = [callback(onAccept(7677), obj3), callback(View, { style: { height: tmp2[0] } })];
   obj2.children = items3;
   return callback2(channel(5187).BottomSheet, obj2);
 };

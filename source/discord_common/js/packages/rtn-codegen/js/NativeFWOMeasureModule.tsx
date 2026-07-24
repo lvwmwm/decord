@@ -1,9 +1,9 @@
-// Module ID: 9307
-// Function ID: 72684
+// Module ID: 9343
+// Function ID: 72893
 // Name: NativeFWOMeasureModule
 // Dependencies: [27, 2]
 
-// Module 9307 (NativeFWOMeasureModule)
+// Module 9343 (NativeFWOMeasureModule)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const value = TurboModuleRegistry.get("NativeFWOMeasureModule");

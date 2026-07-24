@@ -1,10 +1,10 @@
-// Module ID: 13653
-// Function ID: 104859
+// Module ID: 13704
+// Function ID: 105183
 // Name: useIsSafetyHubLoading
-// Dependencies: [11026, 566, 2]
+// Dependencies: [11053, 566, 2]
 // Exports: default
 
-// Module 13653 (useIsSafetyHubLoading)
+// Module 13704 (useIsSafetyHubLoading)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

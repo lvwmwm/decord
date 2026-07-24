@@ -1,9 +1,9 @@
-// Module ID: 15519
-// Function ID: 119682
+// Module ID: 15566
+// Function ID: 120004
 // Name: getAccessibilityLabel
-// Dependencies: [31, 27, 33, 689, 4130, 3763, 1212, 10424, 8694, 15520, 3848, 2]
+// Dependencies: [31, 27, 33, 689, 4130, 3763, 1212, 10453, 8735, 15567, 3848, 2]
 
-// Module 15519 (getAccessibilityLabel)
+// Module 15566 (getAccessibilityLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -29,17 +29,17 @@ function getIcon(arg0, arg1, icon) {
     let obj = { size: "sm", style: icon.icon };
     const colors3 = importDefault(689).colors;
     obj.color = arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL;
-    return jsx(require(10424) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
+    return jsx(require(10453) /* DenyIcon */.DenyIcon, { size: "sm", style: icon.icon });
   } else if (require(3763) /* calculateElevatedPermissions */.ALLOW === arg0) {
     obj = { size: "sm", style: icon.icon };
     const colors2 = importDefault(689).colors;
     obj.color = arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE;
-    return jsx(require(8694) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon });
+    return jsx(require(8735) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon });
   } else if (require(3763) /* calculateElevatedPermissions */.PASSTHROUGH === arg0) {
     obj = { size: "sm", style: icon.icon };
     const colors = importDefault(689).colors;
     obj.color = arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT;
-    return jsx(require(15520) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
+    return jsx(require(15567) /* SlashIcon */.SlashIcon, { size: "sm", style: icon.icon });
   } else {
     return null;
   }

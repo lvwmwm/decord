@@ -1,9 +1,9 @@
-// Module ID: 13569
-// Function ID: 104323
+// Module ID: 13620
+// Function ID: 104647
 // Name: styles
-// Dependencies: [31, 27, 33, 4130, 689, 665, 4660, 3974, 1273, 9985, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 665, 4660, 3974, 1273, 10017, 2]
 
-// Module 13569 (styles)
+// Module 13620 (styles)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -44,14 +44,14 @@ const memoResult = require("result").memo((color) => {
       obj.children = null;
       let tmp25Result = tmp12(color(4660).PressableOpacity, obj);
     } else {
-      const obj2 = { source: onSelect(9985) };
+      const obj2 = { source: onSelect(10017) };
       if (v < 0.5) {
         let BLACK2 = onSelect(689).unsafe_rawColors.WHITE;
       } else {
         BLACK2 = onSelect(689).unsafe_rawColors.BLACK;
       }
       obj2.color = BLACK2;
-      jsx(color(1273).Icon, { source: onSelect(9985) });
+      jsx(color(1273).Icon, { source: onSelect(10017) });
       const tmp16 = jsx;
     }
     const obj8 = color(665);
@@ -66,14 +66,14 @@ const memoResult = require("result").memo((color) => {
       obj3.children = null;
       tmp25Result = tmp25(tmp26, obj3);
     } else {
-      const obj5 = { source: onSelect(9985) };
+      const obj5 = { source: onSelect(10017) };
       if (v < 0.5) {
         let BLACK = onSelect(689).unsafe_rawColors.WHITE;
       } else {
         BLACK = onSelect(689).unsafe_rawColors.BLACK;
       }
       obj5.color = BLACK;
-      jsx(color(1273).Icon, { source: onSelect(9985) });
+      jsx(color(1273).Icon, { source: onSelect(10017) });
       const tmp2 = jsx;
     }
     const obj12 = color(665);

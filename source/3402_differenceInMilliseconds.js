@@ -1,5 +1,5 @@
 // Module ID: 3402
-// Function ID: 26596
+// Function ID: 26597
 // Name: differenceInMilliseconds
 // Dependencies: [3209, 3210]
 // Exports: default

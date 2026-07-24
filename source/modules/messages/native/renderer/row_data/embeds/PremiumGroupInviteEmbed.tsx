@@ -1,10 +1,10 @@
-// Module ID: 7734
-// Function ID: 61498
+// Module ID: 7823
+// Function ID: 61784
 // Name: createPremiumGroupInviteEmbed
-// Dependencies: [3790, 4130, 689, 7635, 7735, 7736, 1212, 2780, 2]
+// Dependencies: [3790, 4130, 689, 7724, 7824, 7825, 1212, 2780, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 7734 (createPremiumGroupInviteEmbed)
+// Module 7823 (createPremiumGroupInviteEmbed)
 import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
 
 let closure_3;
@@ -27,10 +27,10 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
     ({ headerTextColor, bodyTextColor, linkTextColor, betaPillTextColor, betaPillBackgroundColor } = tmp10);
     const obj4 = require(4130) /* _createForOfIteratorHelperLoose */;
     const author = message.author;
-    const assetUriForEmbed = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7735));
-    const obj6 = require(7635) /* frozen */;
+    const assetUriForEmbed = require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7824));
+    const obj6 = require(7724) /* frozen */;
     obj = { sender: author, channel, isSender: id === author.id, inviteState: constants.UNKNOWN };
-    const premiumGroupInviteEmbedText = require(7736) /* getPremiumGroupInviteEmbedText */.getPremiumGroupInviteEmbedText(obj);
+    const premiumGroupInviteEmbedText = require(7825) /* getPremiumGroupInviteEmbedText */.getPremiumGroupInviteEmbedText(obj);
     if (null != premiumGroupInviteEmbedText) {
       ({ header, body } = premiumGroupInviteEmbedText);
       const intl = require(1212) /* getSystemLocale */.intl;
@@ -48,6 +48,6 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
       obj2.learnMoreLink = formatToPartsResult;
       return obj2;
     }
-    const obj7 = require(7736) /* getPremiumGroupInviteEmbedText */;
+    const obj7 = require(7825) /* getPremiumGroupInviteEmbedText */;
   }
 };

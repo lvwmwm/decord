@@ -1,10 +1,10 @@
-// Module ID: 10119
-// Function ID: 78308
+// Module ID: 10151
+// Function ID: 78502
 // Name: TitleWrapper
-// Dependencies: [57, 31, 27, 3767, 1849, 9123, 33, 4130, 689, 1324, 4660, 477, 8513, 4126, 1273, 10120, 9096, 3834, 4593, 10121, 1212, 4320, 2]
+// Dependencies: [57, 31, 27, 3767, 1849, 9159, 33, 4130, 689, 1324, 4660, 477, 8558, 4126, 1273, 10152, 9134, 3834, 4593, 10153, 1212, 4320, 2]
 // Exports: renderChannelIcon, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 10119 (TitleWrapper)
+// Module 10151 (TitleWrapper)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -90,9 +90,9 @@ function ChannelTitle(guildId) {
     obj.accessibilityLabel = accessibleTitle;
     obj.accessibilityRole = "header";
     obj.maxFontSizeMultiplier = 2;
-    let tmp8Result = callback2(importDefault(8513), obj);
+    let tmp8Result = callback2(importDefault(8558), obj);
     const tmp12 = callback2;
-    const tmp15 = importDefault(8513);
+    const tmp15 = importDefault(8558);
   } else {
     const obj1 = { variant: null, color: "mobile-text-heading-primary", lineClamp: 1, style: null, accessibilityLabel: null, accessibilityRole: "header", maxFontSizeMultiplier: 2 };
     let str = "heading-lg/bold";
@@ -109,7 +109,7 @@ function ChannelTitle(guildId) {
   items[1] = tmp8Result;
   let tmp16 = !disableArrow;
   if (tmp16) {
-    const obj2 = { source: importDefault(10120), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: tmp2.arrowIcon };
+    const obj2 = { source: importDefault(10152), size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, style: tmp2.arrowIcon };
     tmp16 = callback2(require(1273) /* Button */.Icon, obj2);
   }
   items[2] = tmp16;
@@ -130,7 +130,7 @@ function GroupDMIcon(channel) {
   obj.size = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj.channel = channel.channel;
   obj.style = tmp.channelIcon;
-  return callback2(importDefault(9096), obj);
+  return callback2(importDefault(9134), obj);
 }
 function UserAvatar(user) {
   let isMobileOnline;
@@ -214,7 +214,7 @@ function MemberCountText(arg0) {
     tmp8 = leadingAccessoryWidth;
   }
   obj.dotContainerWidth = tmp8;
-  const items = [closure_9(importDefault(10121), obj), ];
+  const items = [closure_9(importDefault(10153), obj), ];
   let tmp10Result = null;
   if (withSeparator) {
     obj = { variant: null, color: "text-subtle", children: "\u2022" };

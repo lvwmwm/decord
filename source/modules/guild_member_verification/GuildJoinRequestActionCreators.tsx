@@ -1,9 +1,9 @@
-// Module ID: 9160
-// Function ID: 71784
+// Module ID: 9196
+// Function ID: 71993
 // Name: _fetchGuildJoinRequests
-// Dependencies: [5, 1352, 6692, 3948, 653, 3950, 686, 507, 7108, 4470, 1212, 4944, 2]
+// Dependencies: [5, 1352, 6692, 3948, 653, 3950, 686, 507, 7107, 4470, 1212, 4944, 2]
 
-// Module 9160 (_fetchGuildJoinRequests)
+// Module 9196 (_fetchGuildJoinRequests)
 import isTermsFormField from "isTermsFormField";
 import { createChannelRecordFromServer as closure_4 } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -95,7 +95,7 @@ export default {
   },
   setSelectedGuildJoinRequest(guildId, request) {
     if (null != request) {
-      let obj = require(7108) /* trackMemberApplicationViewed */;
+      let obj = require(7107) /* trackMemberApplicationViewed */;
       obj = { guildId };
       ({ applicationStatus: obj2.applicationStatus, userId: obj2.applicationUserId } = request);
       const result = obj.trackMemberApplicationViewed(obj);

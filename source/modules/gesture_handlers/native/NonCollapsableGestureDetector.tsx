@@ -1,10 +1,10 @@
-// Module ID: 14808
-// Function ID: 112956
+// Module ID: 14855
+// Function ID: 113277
 // Name: NonCollapsableGestureDetector
 // Dependencies: [29, 31, 27, 33, 5217, 2]
 // Exports: NonCollapsableGestureDetector
 
-// Module 14808 (NonCollapsableGestureDetector)
+// Module 14855 (NonCollapsableGestureDetector)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "result";
 import { View } from "get ActivityIndicator";

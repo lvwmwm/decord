@@ -1,10 +1,10 @@
-// Module ID: 11926
-// Function ID: 92283
+// Module ID: 11952
+// Function ID: 92519
 // Name: TimestampBadge
-// Dependencies: [31, 27, 653, 33, 4130, 11927, 6982, 9075, 9070, 9076, 8940, 11929, 11930, 689, 11931, 7815, 4646, 4126, 10893, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 11953, 6981, 7472, 9109, 9114, 8979, 11955, 11956, 689, 11957, 7906, 4646, 4126, 10920, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 11926 (TimestampBadge)
+// Module 11952 (TimestampBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { ActivityTypes } from "ME";
@@ -21,7 +21,7 @@ const result = require("ME").fileFinishedImporting("modules/user_profile/native/
 export const TimestampBadge = function TimestampBadge(activity) {
   activity = activity.activity;
   const tmp = callback3();
-  let obj = require(11929) /* dropMilliseconds */;
+  let obj = require(11955) /* dropMilliseconds */;
   const timestamps = activity.timestamps;
   let start;
   if (null != timestamps) {
@@ -31,7 +31,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
     start = activity.created_at;
   }
   if (null != start) {
-    if (!importDefault(11930)(activity)) {
+    if (!importDefault(11956)(activity)) {
       const timestamps2 = activity.timestamps;
       let end;
       if (null != timestamps2) {
@@ -53,15 +53,15 @@ export const TimestampBadge = function TimestampBadge(activity) {
         flag = false;
       }
       if (flag) {
-        let GameControllerIcon = require(11927) /* HourglassIcon */.HourglassIcon;
-      } else if (importDefault(6982)(activity)) {
-        GameControllerIcon = require(9075) /* AppsIcon */.AppsIcon;
+        let GameControllerIcon = require(11953) /* HourglassIcon */.HourglassIcon;
+      } else if (importDefault(6981)(activity)) {
+        GameControllerIcon = require(7472) /* AppsIcon */.AppsIcon;
       } else if (activity.type === ActivityTypes.WATCHING) {
-        GameControllerIcon = require(9070) /* TvIcon */.TvIcon;
+        GameControllerIcon = require(9109) /* TvIcon */.TvIcon;
       } else if (activity.type === ActivityTypes.LISTENING) {
-        GameControllerIcon = require(9076) /* MusicIcon */.MusicIcon;
+        GameControllerIcon = require(9114) /* MusicIcon */.MusicIcon;
       } else {
-        GameControllerIcon = require(8940) /* GameControllerIcon */.GameControllerIcon;
+        GameControllerIcon = require(8979) /* GameControllerIcon */.GameControllerIcon;
       }
       obj = { style: tmp.container };
       obj = { size: "xxs", color: importDefault(689).colors.TEXT_FEEDBACK_POSITIVE };
@@ -70,7 +70,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
       const obj2 = { start, end, isCountDown: null != isCountDown && isCountDown };
       obj1.entry = obj2;
       obj1.style = tmp.bold;
-      items[1] = callback(require(11931) /* ActiveTimestamp */.ActiveTimestamp, obj1);
+      items[1] = callback(require(11957) /* ActiveTimestamp */.ActiveTimestamp, obj1);
       obj.children = items;
       return callback2(View, obj);
     }
@@ -79,9 +79,9 @@ export const TimestampBadge = function TimestampBadge(activity) {
 };
 export const PartyBadge = function PartyBadge(activity) {
   activity = activity.activity;
-  if (!importDefault(6982)(activity)) {
+  if (!importDefault(6981)(activity)) {
     if (null != activity.party) {
-      const richGameStateBadgeText = require(7815) /* calculateTimestampDurations */.getRichGameStateBadgeText(activity.state, activity.party);
+      const richGameStateBadgeText = require(7906) /* calculateTimestampDurations */.getRichGameStateBadgeText(activity.state, activity.party);
       let tmp9 = null;
       if (null != richGameStateBadgeText) {
         let obj = { style: tmp.container };
@@ -98,7 +98,7 @@ export const PartyBadge = function PartyBadge(activity) {
   return null;
 };
 export const EpisodeBadge = function EpisodeBadge(activity) {
-  let obj = require(7815) /* calculateTimestampDurations */;
+  let obj = require(7906) /* calculateTimestampDurations */;
   const assets = activity.activity.assets;
   let large_text;
   if (null != assets) {
@@ -109,7 +109,7 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
   if (null != episodeBadgeText) {
     obj = { style: tmp.container };
     obj = { size: "xxs", color: importDefault(689).colors.TEXT_MUTED };
-    const items = [callback(require(10893) /* TopicsIcon */.TopicsIcon, obj), ];
+    const items = [callback(require(10920) /* TopicsIcon */.TopicsIcon, obj), ];
     const obj1 = { variant: "text-sm/medium", color: "text-muted", children: episodeBadgeText };
     items[1] = callback(require(4126) /* Text */.Text, obj1);
     obj.children = items;

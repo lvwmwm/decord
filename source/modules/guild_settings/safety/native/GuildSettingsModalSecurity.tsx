@@ -1,10 +1,10 @@
-// Module ID: 16297
-// Function ID: 126951
+// Module ID: 16344
+// Function ID: 127275
 // Name: GuildSettingsModalSecurity
-// Dependencies: [31, 27, 1391, 1838, 1849, 8439, 653, 33, 4130, 689, 566, 8438, 4126, 1212, 4543, 13695, 5448, 2]
+// Dependencies: [31, 27, 1391, 1838, 1849, 8483, 653, 33, 4130, 689, 566, 8482, 4126, 1212, 4543, 13746, 5448, 2]
 // Exports: default
 
-// Module 16297 (GuildSettingsModalSecurity)
+// Module 16344 (GuildSettingsModalSecurity)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { isGuildOwnerWithRequiredMfaLevel as closure_6 } from "isGuildOwner";
@@ -115,7 +115,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   obj1.children = items4;
   const items5 = [callback3(closure_4, obj1), ];
   const obj6 = { style: tmp.center };
-  const items6 = [callback2(closure_5, { source: stateFromStores(13695), style: tmp.image, resizeMode: "contain" }), ];
+  const items6 = [callback2(closure_5, { source: stateFromStores(13746), style: tmp.image, resizeMode: "contain" }), ];
   const obj8 = { style: tmp.infoWrapper };
   const obj9 = { variant: "text-sm/medium", color: "text-muted" };
   const intl4 = guildId(1212).intl;

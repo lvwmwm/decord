@@ -1,10 +1,10 @@
-// Module ID: 12516
-// Function ID: 96934
+// Module ID: 12569
+// Function ID: 97258
 // Name: ProgressBarMarkerInnerContent
-// Dependencies: [31, 27, 653, 33, 12517, 12518, 12519, 4130, 689, 4066, 3991, 4542, 11618, 3974, 3976, 9985, 4126, 4022, 2]
+// Dependencies: [31, 27, 653, 33, 12570, 12571, 12572, 4130, 689, 4066, 3991, 4542, 11645, 3974, 3976, 10017, 4126, 4022, 2]
 // Exports: default
 
-// Module 12516 (ProgressBarMarkerInnerContent)
+// Module 12569 (ProgressBarMarkerInnerContent)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { BoostedGuildTiers } from "ME";
@@ -87,7 +87,7 @@ function ProgressBarMarkerInnerContent(arg0) {
     const tmp17 = closure_4;
     const tmp18 = closure_7;
   } else if (isDisabled) {
-    let tmp27Result = tmp27(sharedValue(11618).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+    let tmp27Result = tmp27(sharedValue(11645).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
   } else {
     const obj2 = { source: obj[tier] };
     const items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
@@ -212,7 +212,7 @@ export default function ProgressBarMarker(arg0) {
       tmp7 = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp7) {
-      const obj5 = { source: importDefault(9985), style: tmp.progressBarMarkerUnlockedIcon };
+      const obj5 = { source: importDefault(10017), style: tmp.progressBarMarkerUnlockedIcon };
       tmp7 = callback(closure_5, obj5);
     }
     const items5 = [tmp7, ];

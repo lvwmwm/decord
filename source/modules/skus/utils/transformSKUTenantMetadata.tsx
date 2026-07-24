@@ -1,5 +1,5 @@
 // Module ID: 4172
-// Function ID: 35401
+// Function ID: 35402
 // Name: transformCollectiblesItemAssetsFromServer
 // Dependencies: [1876, 2]
 // Exports: default

@@ -1,10 +1,10 @@
-// Module ID: 10146
-// Function ID: 78502
+// Module ID: 10178
+// Function ID: 78696
 // Name: VibingWumpusScreen
-// Dependencies: [57, 31, 27, 4122, 10134, 10147, 653, 33, 4130, 689, 624, 10148, 675, 10149, 5453, 10150, 4126, 1212, 4543, 4337, 8286, 8288, 5519, 2]
+// Dependencies: [57, 31, 27, 4122, 10166, 10179, 653, 33, 4130, 689, 624, 10180, 675, 10181, 5453, 10182, 4126, 1212, 4543, 4337, 8330, 8332, 5517, 2]
 // Exports: default
 
-// Module 10146 (VibingWumpusScreen)
+// Module 10178 (VibingWumpusScreen)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -194,6 +194,6 @@ export default function VibingWumpusModal() {
       return outer1_12(outer1_16, {});
     }
   };
-  return callback(require(5519) /* NavigationStack */.Navigator, { screens: { VIBING_WUMPUS }, initialRouteName: "VIBING_WUMPUS" });
+  return callback(require(5517) /* NavigationStack */.Navigator, { screens: { VIBING_WUMPUS }, initialRouteName: "VIBING_WUMPUS" });
 };
 export { VibingWumpusScreen };

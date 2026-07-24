@@ -1,5 +1,5 @@
 // Module ID: 4697
-// Function ID: 40914
+// Function ID: 40918
 // Name: calculateTargetDimensions
 // Dependencies: [6, 7, 1280, 3, 2]
 // Exports: calculateOptimalBitrate, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC

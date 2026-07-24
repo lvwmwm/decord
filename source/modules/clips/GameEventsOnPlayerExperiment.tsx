@@ -1,5 +1,5 @@
 // Module ID: 4668
-// Function ID: 40537
+// Function ID: 40541
 // Name: apexExperiment
 // Dependencies: [1428, 2]
 // Exports: isGameEventsOnPlayerEnabled

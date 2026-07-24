@@ -1,10 +1,10 @@
-// Module ID: 9965
-// Function ID: 76978
+// Module ID: 9997
+// Function ID: 77172
 // Name: canEditMessage
 // Dependencies: [653, 5651, 4351, 5679, 2]
 // Exports: default
 
-// Module 9965 (canEditMessage)
+// Module 9997 (canEditMessage)
 import ME from "ME";
 
 let closure_3;

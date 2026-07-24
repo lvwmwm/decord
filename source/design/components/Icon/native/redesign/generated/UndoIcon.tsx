@@ -1,10 +1,10 @@
-// Module ID: 14010
-// Function ID: 107242
+// Module ID: 14060
+// Function ID: 107565
 // Name: UndoIcon
-// Dependencies: [31, 33, 689, 3833, 14011, 2]
+// Dependencies: [31, 33, 689, 3833, 14061, 2]
 // Exports: UndoIcon
 
-// Module 14010 (UndoIcon)
+// Module 14060 (UndoIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const UndoIcon = function UndoIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(14011) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14061) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14011) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14061) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

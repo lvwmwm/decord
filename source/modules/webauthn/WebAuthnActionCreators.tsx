@@ -1,10 +1,10 @@
-// Module ID: 5594
-// Function ID: 47516
+// Module ID: 5592
+// Function ID: 47513
 // Name: _fetchWebAuthnConditionalChallenge
 // Dependencies: [5, 653, 507, 686, 4942, 640, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 5594 (_fetchWebAuthnConditionalChallenge)
+// Module 5592 (_fetchWebAuthnConditionalChallenge)
 import ImpressionNames from "ImpressionNames";
 import { Endpoints } from "ME";
 

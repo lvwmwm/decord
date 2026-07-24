@@ -1,9 +1,9 @@
-// Module ID: 8493
-// Function ID: 67812
+// Module ID: 8538
+// Function ID: 68042
 // Name: InformationTable
-// Dependencies: [57, 31, 27, 1348, 1917, 1849, 8264, 653, 33, 4130, 689, 8494, 1212, 5503, 5165, 1273, 3976, 4066, 566, 7887, 5464, 5484, 8266, 8495, 675, 7889, 8492, 5187, 5189, 8496, 8497, 4126, 4319, 4543, 4660, 3803, 2]
+// Dependencies: [57, 31, 27, 1348, 1917, 1849, 8308, 653, 33, 4130, 689, 8539, 1212, 5501, 5165, 1273, 3976, 4066, 566, 7974, 5462, 5482, 8310, 8540, 675, 7976, 8537, 5187, 5189, 8541, 8542, 4126, 4319, 4543, 4660, 3803, 2]
 
-// Module 8493 (InformationTable)
+// Module 8538 (InformationTable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Text";
 import { View } from "Background";
@@ -21,11 +21,11 @@ let closure_12;
 let closure_13;
 const require = arg1;
 function InformationTable(speedBumpType) {
-  let obj = { icon: importDefault(8494) };
+  let obj = { icon: importDefault(8539) };
   const intl = items(1212).intl;
   obj.text = intl.string(items(1212).t.kcuWva);
   items = [obj, ];
-  obj = { icon: importDefault(8494) };
+  obj = { icon: importDefault(8539) };
   if ("block" === speedBumpType.speedBumpType) {
     const intl3 = items(1212).intl;
     let stringResult = intl3.string(items(1212).t.QxrDY1);
@@ -45,7 +45,7 @@ function InformationTable(speedBumpType) {
       return outer1_12(items(outer1_2[14]).TableRow, obj, arg1);
     })
   };
-  return callback2(items(5503).TableRowGroup, obj);
+  return callback2(items(5501).TableRowGroup, obj);
 }
 ({ AnalyticEvents: closure_10, EMPTY_STRING_SNOWFLAKE_ID: closure_11 } = ME);
 ({ jsx: closure_12, jsxs: closure_13 } = jsxProd);

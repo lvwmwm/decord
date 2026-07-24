@@ -1,9 +1,9 @@
-// Module ID: 10384
-// Function ID: 80063
+// Module ID: 10413
+// Function ID: 80255
 // Name: CallPTTButtonLooks
-// Dependencies: [57, 31, 1348, 4177, 4202, 653, 33, 4130, 689, 3974, 566, 10367, 10215, 10385, 5217, 3991, 1273, 1212, 2]
+// Dependencies: [57, 31, 1348, 4177, 4202, 653, 33, 4130, 689, 3974, 566, 10396, 10245, 10414, 5217, 3991, 1273, 1212, 2]
 
-// Module 10384 (CallPTTButtonLooks)
+// Module 10413 (CallPTTButtonLooks)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -102,14 +102,14 @@ const memoResult = importAllResult.memo((look) => {
   const obj5 = sendCallback(stateFromStores1[12]);
   class G {
     constructor() {
-      obj = sendCallback(f80066[15]);
+      obj = sendCallback(f80258[15]);
       tmp = obj.runOnJS(c6)(true);
-      obj2 = sendCallback(f80066[15]);
+      obj2 = sendCallback(f80258[15]);
       tmp2 = obj2.runOnJS(c4)(false);
       if (null != setIsSwipeToChatDisabled) {
         tmp3 = sendCallback;
-        tmp4 = f80066;
-        obj3 = sendCallback(f80066[15]);
+        tmp4 = f80258;
+        obj3 = sendCallback(f80258[15]);
         tmp5 = setIsSwipeToChatDisabled;
         tmp6 = obj3.runOnJS(setIsSwipeToChatDisabled)(false);
       }
@@ -125,7 +125,7 @@ const memoResult = importAllResult.memo((look) => {
   const PanResult = Gesture.Pan();
   class F {
     constructor() {
-      obj = sendCallback(f80066[15]);
+      obj = sendCallback(f80258[15]);
       tmp = obj.runOnJS(c6)(false);
       return;
     }

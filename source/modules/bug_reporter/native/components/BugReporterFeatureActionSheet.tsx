@@ -1,10 +1,10 @@
-// Module ID: 10333
-// Function ID: 79750
+// Module ID: 10362
+// Function ID: 79941
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 10323, 5165, 4098, 7520, 5160, 22, 5045, 8832, 8833, 5187, 5186, 1212, 5772, 9244, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 10352, 5165, 4098, 7655, 5160, 22, 5045, 8871, 8872, 5187, 5186, 1212, 5772, 9280, 2]
 // Exports: default
 
-// Module 10333 (BugReporterFeatureActionSheet)
+// Module 10362 (BugReporterFeatureActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { View } from "get ActivityIndicator";
@@ -40,9 +40,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10323);
+  let obj = item(10352);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10323).getFeatureId(feature);
+  const featureId1 = item(10352).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -53,7 +53,7 @@ let closure_10 = importAllResult.memo((item) => {
     }
   };
   obj = { selected: featureId === featureId1 };
-  obj.trailing = callback(item(7520).FormRadio, obj);
+  obj.trailing = callback(item(7655).FormRadio, obj);
   return callback(item(5165).TableRow, obj);
 });
 const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, justifyContent: "center" };

@@ -1,5 +1,5 @@
 // Module ID: 4466
-// Function ID: 39400
+// Function ID: 39401
 // Name: getStickerPackPreviewSticker
 // Dependencies: [1316, 1838, 4467, 4798, 3806, 653, 4799, 1392, 1826, 477, 1426, 4801, 2]
 // Exports: createStickerPackCategory, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker, shouldAttachSticker

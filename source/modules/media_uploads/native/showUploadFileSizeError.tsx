@@ -1,10 +1,10 @@
-// Module ID: 7940
-// Function ID: 63401
+// Module ID: 8027
+// Function ID: 63713
 // Name: showUploadFileSizeError
-// Dependencies: [1280, 1849, 653, 4123, 1851, 1872, 7085, 4711, 4324, 4666, 4674, 7941, 668, 5484, 1212, 4025, 4470, 2]
+// Dependencies: [1280, 1849, 653, 4123, 1851, 1872, 7084, 4711, 4324, 4666, 4674, 8028, 668, 5482, 1212, 4025, 4470, 2]
 // Exports: default
 
-// Module 7940 (showUploadFileSizeError)
+// Module 8027 (showUploadFileSizeError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import ME from "ME";
@@ -34,7 +34,7 @@ export default function showUploadFileSizeError(arg0) {
   let obj = items(1872);
   const isPremiumExactlyResult = obj.isPremiumExactly(currentUser, closure_8.TIER_2);
   if (null != file.items) {
-    let obj1 = items(7085);
+    let obj1 = items(7084);
     let attachmentMimeTypes = obj1.getAttachmentMimeTypes(file.items);
   } else {
     attachmentMimeTypes = [];
@@ -146,12 +146,12 @@ export default function showUploadFileSizeError(arg0) {
     obj6.analyticsLocation = obj7;
     const items4 = [];
     arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
-    items4[arraySpreadResult] = items1(5484).FILE_UPLOAD_POPOUT;
+    items4[arraySpreadResult] = items1(5482).FILE_UPLOAD_POPOUT;
     const sum = arraySpreadResult + 1;
     obj6.analyticsLocations = items4;
     obj8 = { type: constants3.UPLOAD_ERROR_UPSELL };
     obj6.analyticsProperties = obj8;
     obj6.largestFileSize = num2;
-    const result = items1(7941).handleShowUpsellAlert(obj6);
+    const result = items1(8028).handleShowUpsellAlert(obj6);
   }
 };

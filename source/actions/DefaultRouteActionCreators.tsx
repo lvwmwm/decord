@@ -1,10 +1,10 @@
-// Module ID: 10810
-// Function ID: 83928
+// Module ID: 10839
+// Function ID: 84120
 // Name: isLurkingGuildRoute
 // Dependencies: [3759, 653, 3952, 3965, 686, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 10810 (isLurkingGuildRoute)
+// Module 10839 (isLurkingGuildRoute)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Routes } from "ME";
 

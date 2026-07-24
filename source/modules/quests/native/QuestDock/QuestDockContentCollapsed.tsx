@@ -1,8 +1,8 @@
-// Module ID: 14080
-// Function ID: 108313
-// Dependencies: [31, 27, 4976, 13994, 33, 4130, 14076, 13995, 3991, 4542, 7589, 14081, 14086, 2]
+// Module ID: 14130
+// Function ID: 108636
+// Dependencies: [31, 27, 4976, 14044, 33, 4130, 14126, 14045, 3991, 4542, 7678, 14131, 14136, 2]
 
-// Module 14080
+// Module 14130
 import importAllResult from "result";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import { QUEST_DOCK_MODE_CHANGE_PHYSICS as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT";
@@ -25,13 +25,13 @@ let closure_10 = { code: "function QuestDockContentCollapsedTsx2(){const{activeQ
 const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideOnExpand) {
   hideOnExpand = hideOnExpand.hideOnExpand;
   const require = tmp;
-  const userStatus = importAllResult.useContext(activeQuestDockMode(14076)).quest.userStatus;
+  const userStatus = importAllResult.useContext(activeQuestDockMode(14126)).quest.userStatus;
   let enrolledAt;
   if (null != userStatus) {
     enrolledAt = userStatus.enrolledAt;
   }
   let tmp4 = null != enrolledAt;
-  activeQuestDockMode = importAllResult.useContext(require(13995) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = importAllResult.useContext(require(14045) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
   let obj = require(3991);
   const fn = function p() {
     const obj = {};
@@ -76,15 +76,15 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideO
   const obj3 = require(3991);
   const tmp7 = closure_7;
   if (!tmp4) {
-    tmp9 = callback(activeQuestDockMode(14081), {});
+    tmp9 = callback(activeQuestDockMode(14131), {});
   }
   const items1 = [tmp9, ];
   if (tmp4) {
-    tmp4 = callback(activeQuestDockMode(14086), {});
+    tmp4 = callback(activeQuestDockMode(14136), {});
   }
   items1[1] = tmp4;
   obj.children = items1;
-  return tmp7(activeQuestDockMode(7589), obj);
+  return tmp7(activeQuestDockMode(7678), obj);
 });
 const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentCollapsed.tsx");
 

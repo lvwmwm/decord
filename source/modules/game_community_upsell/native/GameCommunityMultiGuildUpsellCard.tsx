@@ -1,10 +1,10 @@
-// Module ID: 15094
-// Function ID: 114900
+// Module ID: 15141
+// Function ID: 115221
 // Name: getGuildIconSize
-// Dependencies: [5, 57, 31, 27, 4122, 1838, 653, 33, 1450, 4130, 689, 566, 1392, 1426, 675, 5048, 5737, 1212, 7873, 5701, 1273, 4126, 4543, 9302, 7771, 8968, 2]
+// Dependencies: [5, 57, 31, 27, 4122, 1838, 653, 33, 1450, 4130, 689, 566, 1392, 1426, 675, 5048, 5737, 1212, 7961, 5701, 1273, 4126, 4543, 9338, 7533, 9007, 2]
 // Exports: default
 
-// Module 15094 (getGuildIconSize)
+// Module 15141 (getGuildIconSize)
 import closure_3 from "_createForOfIteratorHelperLoose";
 import _slicedToArray from "_slicedToArray";
 import result from "result";

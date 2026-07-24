@@ -1,5 +1,5 @@
 // Module ID: 7337
-// Function ID: 59160
+// Function ID: 59189
 // Name: sanitizeTagKey
 // Dependencies: [65, 57, 7242]
 // Exports: getBucketKey, sanitizeMetricKey, sanitizeTags, sanitizeUnit, serializeMetricBuckets, simpleHash

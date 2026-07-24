@@ -1,10 +1,10 @@
-// Module ID: 8850
-// Function ID: 69840
+// Module ID: 8889
+// Function ID: 70055
 // Name: isCustomBackgroundOption
-// Dependencies: [1348, 4202, 7851, 653, 1392, 4324, 675, 2]
+// Dependencies: [1348, 4202, 7940, 653, 1392, 4324, 675, 2]
 // Exports: getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 8850 (isCustomBackgroundOption)
+// Module 8889 (isCustomBackgroundOption)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import VideoFilterType from "VideoFilterType";

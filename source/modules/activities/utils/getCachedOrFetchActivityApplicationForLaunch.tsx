@@ -1,10 +1,10 @@
-// Module ID: 10816
-// Function ID: 83969
+// Module ID: 10845
+// Function ID: 84161
 // Name: _getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 4167, 4153, 1348, 10486, 10510, 10817, 2]
+// Dependencies: [5, 4167, 4153, 1348, 10515, 10539, 10846, 2]
 // Exports: default
 
-// Module 10816 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 10845 (_getCachedOrFetchActivityApplicationForLaunch)
 import getShelfItemData from "getShelfItemData";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";

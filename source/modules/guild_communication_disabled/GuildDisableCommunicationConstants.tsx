@@ -1,5 +1,5 @@
 // Module ID: 1919
-// Function ID: 21716
+// Function ID: 21717
 // Name: getFriendlyDurationString
 // Dependencies: [653, 1212, 1920, 2]
 // Exports: getDisableCommunicationDurationOptions

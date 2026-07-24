@@ -1,7 +1,7 @@
 // Module ID: 7161
-// Function ID: 57837
+// Function ID: 57866
 // Name: getHeaderBackground
-// Dependencies: [31, 27, 653, 33, 4130, 4973, 3776, 7162, 7163, 7164, 7165, 7166, 7115, 7116, 7167, 7168, 7169, 7170, 7171, 7172, 7173, 3976, 7174, 7175, 7176, 7177, 7178, 7179, 7180, 7181, 7182, 1212, 4066, 4561, 7183, 7184, 1273, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 4973, 3776, 7162, 7163, 7164, 7165, 7166, 7114, 7115, 7167, 7168, 7169, 7170, 7171, 7172, 7173, 3976, 7174, 7175, 7176, 7177, 7178, 7179, 7180, 7181, 7182, 1212, 4066, 4561, 7183, 7184, 1273, 2]
 // Exports: default
 
 // Module 7161 (getHeaderBackground)
@@ -34,9 +34,9 @@ function getHeaderBackground(arg0) {
 }
 function getHeaderImage(premiumBranding) {
   if (require(3776) /* _createForOfIteratorHelperLoose */.Branding.TIER_0 === premiumBranding) {
-    return importDefault(7115);
+    return importDefault(7114);
   } else if (require(3776) /* _createForOfIteratorHelperLoose */.Branding.TIER_1 === premiumBranding) {
-    return importDefault(7116);
+    return importDefault(7115);
   } else if (require(3776) /* _createForOfIteratorHelperLoose */.Branding.TIER_2 === premiumBranding) {
     return importDefault(7167);
   } else if (require(3776) /* _createForOfIteratorHelperLoose */.Branding.BUNDLE === premiumBranding) {

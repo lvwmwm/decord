@@ -1,10 +1,10 @@
-// Module ID: 7950
-// Function ID: 63425
+// Module ID: 8037
+// Function ID: 63737
 // Name: getPageContent
-// Dependencies: [57, 31, 27, 4122, 1278, 1280, 3947, 1849, 1851, 653, 4185, 33, 4130, 689, 3834, 3776, 7951, 4711, 4670, 1212, 3827, 1920, 7952, 7953, 7954, 7409, 668, 566, 7955, 5504, 4126, 477, 7956, 5085, 7941, 7957, 5464, 675, 7958, 3989, 4098, 7949, 5500, 4554, 7959, 5459, 4543, 7738, 2]
+// Dependencies: [57, 31, 27, 4122, 1278, 1280, 3947, 1849, 1851, 653, 4185, 33, 4130, 689, 3834, 3776, 8038, 4711, 4670, 1212, 3827, 1920, 8039, 8040, 8041, 7411, 668, 566, 8042, 5502, 4126, 477, 8043, 5085, 8028, 8044, 5462, 675, 8045, 3989, 4098, 8036, 5498, 4554, 8046, 4543, 7487, 2]
 // Exports: default
 
-// Module 7950 (getPageContent)
+// Module 8037 (getPageContent)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "initialize";
@@ -32,7 +32,7 @@ let closure_21;
 const require = arg1;
 function getPageContent(featureName, isKestrelTreatment) {
   let tmp = null;
-  if (featureName === require(7951) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
+  if (featureName === require(8038) /* EntitlementFeatureNames */.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
     const obj = { isKestrelTreatment };
     tmp = callback2(AlwaysCompressImagesSwitch, obj);
   }
@@ -62,7 +62,7 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       const intl2 = require(1212) /* getSystemLocale */.intl;
       obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["wC0+Ph"]);
       obj.subLabel = callback2(require(4126) /* Text */.Text, obj1);
-      obj.children = callback2(require(5504) /* TableSwitchRow */.TableSwitchRow, obj);
+      obj.children = callback2(require(5502) /* TableSwitchRow */.TableSwitchRow, obj);
       tmp4 = callback2(View, obj);
     }
   }
@@ -78,7 +78,7 @@ function PremiumUpsellImage(arg0) {
     if (!useReducedMotion) {
       if (null != image.uri) {
         obj = { url: image.uri, style, autoplay: true };
-        let tmp5 = callback2(require(7956) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(require(8043) /* useAPNGPlayerControls */.APNGPlayer, obj);
       }
       return tmp5;
     }
@@ -310,14 +310,14 @@ export default function PremiumUpsellActionSheet(arg0) {
       obj4.style = items7;
       obj4.variant = "text-sm/normal";
       obj4.children = tmp11.description;
-      items6[2] = callback2(legacyProps(onViewAllPerks[45]).TextWithIOSLinkWorkaround, obj4);
+      items6[2] = callback2(legacyProps(onViewAllPerks[30]).Text, obj4);
       obj1.children = items6;
       items5[1] = closure_21(View, obj1);
       items5[2] = getPageContent(featureName, true === tmp11.showBetaBadge);
       obj5 = { style: tmp.buttonContainer };
       let string = callback2;
-      let num7 = 46;
-      let Button = legacyProps(onViewAllPerks[46]).Button;
+      let num6 = 45;
+      let Button = legacyProps(onViewAllPerks[45]).Button;
       let obj6 = { loading };
       let onPress = null;
       if (!loading) {
@@ -333,7 +333,7 @@ export default function PremiumUpsellActionSheet(arg0) {
         string2Result = string2(intl2["8x0jKT"]);
       }
       obj6.text = string2Result;
-      obj6.icon = useTier0UpsellContent(onViewAllPerks[47]);
+      obj6.icon = useTier0UpsellContent(onViewAllPerks[46]);
       obj6 = [, ];
       obj6[0] = string(Button, obj6);
       Button = callback2;
@@ -343,8 +343,8 @@ export default function PremiumUpsellActionSheet(arg0) {
       string = intl2.string;
       obj7.text = string(legacyProps(onViewAllPerks[19]).t.PcTCB7);
       obj7.onPress = tmp15;
-      num7 = callback2(legacyProps(onViewAllPerks[num7]).Button, obj7);
-      obj6[1] = num7;
+      num6 = callback2(legacyProps(onViewAllPerks[num6]).Button, obj7);
+      obj6[1] = num6;
       obj5.children = obj6;
       obj5 = closure_21(View, obj5);
       items5[3] = obj5;

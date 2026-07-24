@@ -1,10 +1,10 @@
-// Module ID: 10269
-// Function ID: 79339
+// Module ID: 10298
+// Function ID: 79530
 // Name: Timestamp
-// Dependencies: [31, 33, 4130, 689, 10270, 1273, 3831, 2]
+// Dependencies: [31, 33, 4130, 689, 10299, 1273, 3831, 2]
 // Exports: default
 
-// Module 10269 (Timestamp)
+// Module 10298 (Timestamp)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -31,6 +31,6 @@ export default function Timestamp(node) {
     obj = { key: "TIMESTAMP", content: node.full };
     obj.open(obj);
   };
-  obj.children = importDefault(10270)(node);
+  obj.children = importDefault(10299)(node);
   return jsx(node(1273).LegacyText, {});
 };

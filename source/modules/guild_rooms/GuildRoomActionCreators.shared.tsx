@@ -1,10 +1,10 @@
-// Module ID: 16052
-// Function ID: 124343
+// Module ID: 16099
+// Function ID: 124665
 // Name: _guildRoomConnect
-// Dependencies: [5, 1194, 16049, 653, 507, 12686, 686, 16053, 9276, 9283, 12687, 2]
-// Exports: createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, placePendingGuildRoomNote, selectGuildRoomLocalPosition, startPendingGuildRoomNote
+// Dependencies: [5, 1194, 16096, 653, 507, 12737, 686, 16100, 9312, 9319, 12738, 2]
+// Exports: createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomLocalDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, placePendingGuildRoomNote, selectGuildRoomLocalPosition, startPendingGuildRoomNote
 
-// Module 16052 (_guildRoomConnect)
+// Module 16099 (_guildRoomConnect)
 import mapGuildRoomBaseObjectFields from "mapGuildRoomBaseObjectFields";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -75,6 +75,11 @@ export const guildRoomConnect = function guildRoomConnect() {
 };
 export const guildRoomDisconnect = function guildRoomDisconnect(arg0, arg1) {
   return _guildRoomDisconnect(...arguments);
+};
+export const guildRoomLocalDisconnect = function guildRoomLocalDisconnect(userId, oldChannelId) {
+  let obj = importDefault(686);
+  obj = { type: "GUILD_ROOM_DISCONNECT", userId, roomId: oldChannelId };
+  obj.dispatch(obj);
 };
 export const guildRoomUpdate = function guildRoomUpdate() {
   return _guildRoomUpdate(...arguments);

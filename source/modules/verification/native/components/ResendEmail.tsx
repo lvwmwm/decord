@@ -1,10 +1,10 @@
-// Module ID: 9188
-// Function ID: 71957
+// Module ID: 9224
+// Function ID: 72166
 // Name: ResendEmail
-// Dependencies: [57, 31, 27, 1342, 1849, 653, 33, 4130, 1456, 566, 44, 9189, 9181, 5807, 4126, 1212, 4543, 5590, 3831, 2]
+// Dependencies: [57, 31, 27, 1342, 1849, 653, 33, 4130, 1456, 566, 44, 9225, 9217, 5807, 4126, 1212, 4543, 5588, 3831, 2]
 // Exports: default
 
-// Module 9188 (ResendEmail)
+// Module 9224 (ResendEmail)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -38,7 +38,7 @@ export default function ResendEmail() {
   let obj2 = navigation(566);
   const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_6.getAction());
-  let obj3 = verified(9189);
+  let obj3 = verified(9225);
   let tmp5 = !obj3.isEmailReverification(stateFromStores1);
   [tmp7, dependencyMap] = callback(React.useState(false), 2);
   callback = React.useRef(verified);

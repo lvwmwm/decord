@@ -1,10 +1,10 @@
-// Module ID: 7658
-// Function ID: 61255
+// Module ID: 7747
+// Function ID: 61541
 // Name: canReactToMessageInternal
 // Dependencies: [1917, 4946, 3758, 1849, 653, 1360, 3747, 566, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 7658 (canReactToMessageInternal)
+// Module 7747 (canReactToMessageInternal)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

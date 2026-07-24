@@ -1,5 +1,5 @@
 // Module ID: 6334
-// Function ID: 50455
+// Function ID: 50466
 // Name: NitroLogoCardSpotIllustration
 // Dependencies: [33, 5085, 6335, 2]
 // Exports: NitroLogoCardSpotIllustration

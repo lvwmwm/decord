@@ -1,10 +1,10 @@
-// Module ID: 9141
-// Function ID: 71642
+// Module ID: 9177
+// Function ID: 71851
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 9142, 9140, 7009, 7011, 2]
+// Dependencies: [7, 6, 15, 17, 18, 9178, 9176, 7008, 7010, 2]
 // Exports: markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 9141 (_isNativeReflectConstruct)
+// Module 9177 (_isNativeReflectConstruct)
 import trackForumChannelSeenBatch from "trackForumChannelSeenBatch";
 import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -22,7 +22,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getForumPostSeenManagerId(parent_id) {
-  return "" + require(9142) /* _createForOfIteratorHelperLoose */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id;
+  return "" + require(9178) /* _createForOfIteratorHelperLoose */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id;
 }
 let tmp2 = ((AnalyticsFeedItemSeenManager) => {
   class ForumChannelSeenManager {
@@ -89,8 +89,8 @@ let result = require("_possibleConstructorReturn").fileFinishedImporting("module
 export default tmp2;
 export { getForumPostSeenManagerId };
 export const markForumPostItemAsSeen = function markForumPostItemAsSeen(parent_id, item, timestampMillis) {
-  const result = require(9140) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemSeen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
+  const result = require(9176) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemSeen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
 };
 export const markForumPostItemAsUnseen = function markForumPostItemAsUnseen(parent_id, item, timestampMillis) {
-  const result = require(9140) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemUnseen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
+  const result = require(9176) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemUnseen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
 };

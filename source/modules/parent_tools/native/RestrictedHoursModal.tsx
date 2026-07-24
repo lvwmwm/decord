@@ -1,10 +1,10 @@
-// Module ID: 15969
-// Function ID: 123331
+// Module ID: 16016
+// Function ID: 123653
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 5586, 1557, 15970, 566, 3991, 4131, 1212, 2198, 7572, 15971, 3842, 4126, 5519, 15972, 5590, 15968, 4540, 11073, 2]
+// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 5584, 1557, 16017, 566, 3991, 4131, 1212, 2198, 7613, 16018, 3842, 4126, 5517, 16019, 5588, 16015, 4540, 11100, 2]
 // Exports: default
 
-// Module 15969 (RestrictedHoursLogoutBlockingLayer)
+// Module 16016 (RestrictedHoursLogoutBlockingLayer)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -22,7 +22,7 @@ function RestrictedHoursLogoutBlockingLayer(visible) {
   if (visible.visible) {
     let obj = { style: tmp.logoutBlockingLayer, pointerEvents: "auto", accessibilityLiveRegion: "polite" };
     obj = { size: "large" };
-    obj.children = callback2(require(5586) /* ActivityIndicator */.ActivityIndicator, obj);
+    obj.children = callback2(require(5584) /* ActivityIndicator */.ActivityIndicator, obj);
     tmp2 = callback2(closure_5, obj);
   }
   return tmp2;
@@ -196,7 +196,7 @@ let closure_14 = { code: "function RestrictedHoursModalTsx3(){const{contentOpaci
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/parent_tools/native/RestrictedHoursModal.tsx");
 
 export default function RestrictedHoursModal() {
-  const tmp = importDefault(15972)();
+  const tmp = importDefault(16019)();
   const require = tmp;
   importDefault = React.useRef(false);
   const dependencyMap = React.useRef(true);
@@ -215,15 +215,15 @@ export default function RestrictedHoursModal() {
       current = ref.current;
     }
     if (!current) {
-      const result = tmp(15968).closeRestrictedHoursModal();
-      const obj = tmp(15968);
+      const result = tmp(16015).closeRestrictedHoursModal();
+      const obj = tmp(16015);
     }
   }, items);
   importDefault(4540)(() => true);
   const tmp4 = (function useScreens(result, arg1) {
     let closure_1 = arg1;
     const items = [result, arg1];
-    return result(5519).useNavigatorScreens(() => {
+    return result(5517).useNavigatorScreens(() => {
       const obj = {
         headerShown: false,
         gestureEnabled: false,
@@ -237,21 +237,21 @@ export default function RestrictedHoursModal() {
     if (!ref.current) {
       ref.current = true;
       callback(true);
-      const obj = ref(5590);
-      ref(5590).logout("restricted_hours").finally(() => {
+      const obj = ref(5588);
+      ref(5588).logout("restricted_hours").finally(() => {
         if (outer1_2.current) {
           outer1_1.current = false;
           outer1_3(false);
         }
       });
-      const logoutResult = ref(5590).logout("restricted_hours");
+      const logoutResult = ref(5588).logout("restricted_hours");
     }
   }, []), tmp3[0]);
-  return callback2(require(11073) /* Modal */.Modal, {
+  return callback2(require(11100) /* Modal */.Modal, {
     screens: (function useScreens(result, arg1) {
       let closure_1 = arg1;
       const items = [result, arg1];
-      return result(5519).useNavigatorScreens(() => {
+      return result(5517).useNavigatorScreens(() => {
         const obj = {
           headerShown: false,
           gestureEnabled: false,
@@ -265,14 +265,14 @@ export default function RestrictedHoursModal() {
       if (!ref.current) {
         ref.current = true;
         callback(true);
-        const obj = ref(5590);
-        ref(5590).logout("restricted_hours").finally(() => {
+        const obj = ref(5588);
+        ref(5588).logout("restricted_hours").finally(() => {
           if (outer1_2.current) {
             outer1_1.current = false;
             outer1_3(false);
           }
         });
-        const logoutResult = ref(5590).logout("restricted_hours");
+        const logoutResult = ref(5588).logout("restricted_hours");
       }
     }, []), tmp3[0]),
     initialRouteName: constants.MAIN

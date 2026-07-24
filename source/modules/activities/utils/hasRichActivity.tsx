@@ -1,5 +1,5 @@
 // Module ID: 4218
-// Function ID: 36776
+// Function ID: 36777
 // Name: hasRichActivity
 // Dependencies: [653, 2]
 // Exports: default

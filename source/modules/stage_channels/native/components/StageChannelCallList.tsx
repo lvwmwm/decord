@@ -1,10 +1,10 @@
-// Module ID: 10772
-// Function ID: 83690
+// Module ID: 10801
+// Function ID: 83882
 // Name: getSpeakerRowHeight
-// Dependencies: [57, 31, 10773, 4947, 33, 1273, 10774, 4957, 4559, 4963, 44, 10781, 1212, 9994, 10782, 10794, 7588, 10798, 1450, 4663, 2]
+// Dependencies: [57, 31, 10802, 4947, 33, 1273, 10803, 4957, 4559, 4963, 44, 10810, 1212, 10026, 10811, 10823, 7677, 10827, 1450, 4663, 2]
 // Exports: default
 
-// Module 10772 (getSpeakerRowHeight)
+// Module 10801 (getSpeakerRowHeight)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
@@ -18,13 +18,13 @@ let closure_9;
 const require = arg1;
 function getSpeakerRowHeight(arg0, arg1) {
   if (arg0 > 0) {
-    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
+    return require(10803) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
   } else if (1 === arg1) {
-    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.FULL + 8;
+    return require(10803) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.FULL + 8;
   } else if (2 === arg1) {
-    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.HALF + 8;
+    return require(10803) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.HALF + 8;
   } else {
-    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
+    return require(10803) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
   }
 }
 ({ useActiveSpeakerPillScrollHandler: closure_5, useActiveSpeakerPillState: closure_6 } = require("useActiveSpeakerPillScrollHandler"));
@@ -285,7 +285,7 @@ const result = require("useActiveSpeakerPillScrollHandler").fileFinishedImportin
 
 export default function StageChannelCallList(channel) {
   channel = channel.channel;
-  let obj = width(10798);
+  let obj = width(10827);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
   width = isScreenLandscape(1450)().width;
   isScreenLandscape = width(4663).useIsScreenLandscape();
@@ -303,7 +303,7 @@ export default function StageChannelCallList(channel) {
     return obj;
   }, items);
   const obj2 = width(4663);
-  const tmp4 = callback(width(10798).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
+  const tmp4 = callback(width(10827).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   obj = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
   return callback3(closure_12, obj);
 };

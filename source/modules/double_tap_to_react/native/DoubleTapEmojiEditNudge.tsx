@@ -1,10 +1,10 @@
-// Module ID: 9948
-// Function ID: 76940
+// Module ID: 9980
+// Function ID: 77134
 // Name: DoubleTapEmojiEditNudgeInner
-// Dependencies: [5, 31, 27, 4122, 1451, 653, 1852, 33, 4130, 689, 3803, 7656, 1453, 566, 1392, 9326, 675, 9339, 4126, 1212, 5151, 4660, 2]
+// Dependencies: [5, 31, 27, 4122, 1451, 653, 1852, 33, 4130, 689, 3803, 7745, 1453, 566, 1392, 9362, 675, 9375, 4126, 1212, 5151, 4660, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 9948 (DoubleTapEmojiEditNudgeInner)
+// Module 9980 (DoubleTapEmojiEditNudgeInner)
 import ME from "ME";
 import result from "result";
 import { View } from "get ActivityIndicator";
@@ -49,7 +49,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   }, items1);
   obj = { style: tmp3.doubleTapEmojiEditNudgeContainer };
   callback = React.useCallback(() => {
-    let obj = _location(9326);
+    let obj = _location(9362);
     obj = { pickerIntention: outer1_10.DEFAULT_REACT_EMOJI };
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = stateFromStores(tmp);

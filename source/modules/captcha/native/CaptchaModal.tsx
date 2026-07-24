@@ -1,10 +1,10 @@
-// Module ID: 15962
-// Function ID: 123281
+// Module ID: 16009
+// Function ID: 123603
 // Name: CaptchaModal
-// Dependencies: [31, 27, 14731, 14732, 33, 4130, 9197, 1508, 15963, 5187, 4541, 5807, 4126, 1212, 4543, 9446, 15964, 14739, 2]
+// Dependencies: [31, 27, 14778, 14779, 33, 4130, 9233, 1508, 16010, 5187, 4541, 5807, 4126, 1212, 4543, 9482, 16011, 14786, 2]
 // Exports: default
 
-// Module 15962 (CaptchaModal)
+// Module 16009 (CaptchaModal)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
@@ -49,7 +49,7 @@ export default function CaptchaModal(arg0) {
   let require;
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: result, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
-  let tmp = callback2(onReject(9197)());
+  let tmp = callback2(onReject(9233)());
   const tmp2 = onReject(1508)();
   let closure_8 = tmp2;
   const items = [tmp2];
@@ -68,7 +68,7 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  const callback = onReject(15963)({ onReject, analyticsType: memo });
+  const callback = onReject(16010)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     outer1_4.dismiss();
   }, []);

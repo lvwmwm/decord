@@ -1,9 +1,9 @@
-// Module ID: 6882
-// Function ID: 54539
+// Module ID: 6881
+// Function ID: 54547
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4044, 6758, 3768, 3767, 1849, 653, 6883, 4351, 6884, 21, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 4044, 6758, 3768, 3767, 1849, 653, 6882, 4351, 6883, 21, 566, 686, 2]
 
-// Module 6882 (_isNativeReflectConstruct)
+// Module 6881 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import initialize from "initialize";
@@ -55,9 +55,9 @@ function handleResetRemoteState() {
   handleReset({ keepLocalItems: true });
 }
 function toNotificationCenterItem(item) {
-  let tmp = item.item_enum === require(6883) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
+  let tmp = item.item_enum === require(6882) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
   if (tmp) {
-    tmp = item.type === require(6883) /* NotificationCenterScenes */.NotificationCenterItems.LIFECYCLE_ITEM;
+    tmp = item.type === require(6882) /* NotificationCenterScenes */.NotificationCenterItems.LIFECYCLE_ITEM;
   }
   if (tmp) {
     item.deeplink = "https://discord.com/feature/composeMessage";
@@ -534,7 +534,7 @@ obj = {
       if (tmp7) {
         const items = [];
         const arraySpreadResult = HermesBuiltin.arraySpread(obj.notifCenterLocalItems, 0);
-        obj = id(6884);
+        obj = id(6883);
         items[arraySpreadResult] = obj.incomingGameFriendRequestLocalItem(user, since, applicationId);
         const sum = arraySpreadResult + 1;
         obj.notifCenterLocalItems = items;
@@ -597,7 +597,7 @@ obj = {
     newBuild = newBuild.newBuild;
     let _require;
     if (null !== newBuild) {
-      const obj = _require(6884);
+      const obj = _require(6883);
       const result = obj.mobileNativeUpdateAvailableLocalItem(newBuild);
       _require = result;
       const prop = obj.notifCenterLocalItems;

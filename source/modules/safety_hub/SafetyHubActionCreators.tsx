@@ -1,10 +1,10 @@
-// Module ID: 11032
-// Function ID: 85853
+// Module ID: 11059
+// Function ID: 86042
 // Name: _getSafetyHubData
-// Dependencies: [5, 1194, 11026, 7544, 653, 686, 507, 4317, 7543, 2]
+// Dependencies: [5, 1194, 11053, 7589, 653, 686, 507, 4317, 7588, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11032 (_getSafetyHubData)
+// Module 11059 (_getSafetyHubData)
 import dispatcher from "dispatcher";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -44,7 +44,7 @@ function _setClassificationFlaggedContent(flagged_content) {
         items = [first];
       }
       flagged_content.flagged_content = items;
-      obj = require(7543) /* parseMessageEmbedForProps */;
+      obj = require(7588) /* parseMessageEmbedForProps */;
     }
   }
 }

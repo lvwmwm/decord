@@ -1,5 +1,5 @@
 // Module ID: 4762
-// Function ID: 41336
+// Function ID: 41340
 // Name: getByteAt
 // Dependencies: [4750]
 

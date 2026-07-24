@@ -1,10 +1,10 @@
-// Module ID: 5583
-// Function ID: 47404
+// Module ID: 5581
+// Function ID: 47401
 // Name: PostponeRender
-// Dependencies: [57, 31, 27, 33, 4130, 689, 4559, 5584, 5585, 5587, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4559, 5582, 5583, 5585, 2]
 // Exports: PostponeRender
 
-// Module 5583 (PostponeRender)
+// Module 5581 (PostponeRender)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -45,12 +45,12 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(5585).SceneLoadingIndicator, {});
+    children = jsx(first(5583).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
     let tmp10 = View;
   } else {
-    tmp10 = importDefault(5587);
+    tmp10 = importDefault(5585);
   }
   const obj = { style: items };
   items = [_createForOfIteratorHelperLoose().view, viewStyle];

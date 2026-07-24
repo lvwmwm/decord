@@ -1,9 +1,9 @@
-// Module ID: 11677
-// Function ID: 90513
+// Module ID: 11704
+// Function ID: 90751
 // Name: useDerivedColors
-// Dependencies: [57, 31, 27, 4122, 1348, 11103, 11104, 653, 1277, 11105, 33, 3991, 1273, 4660, 4126, 22, 8018, 4130, 689, 4973, 566, 3834, 1324, 5122, 1212, 4131, 4066, 3976, 4628, 10343, 11678, 5160, 1557, 4528, 4539, 1207, 11018, 1450, 10603, 11362, 4090, 11679, 4077, 10736, 2]
+// Dependencies: [57, 31, 27, 4122, 1348, 11130, 11131, 653, 1277, 11132, 33, 3991, 1273, 4660, 4126, 22, 8063, 4130, 689, 4973, 566, 3834, 1324, 5122, 1212, 4131, 4066, 3976, 4628, 10372, 11705, 5160, 1557, 4528, 4539, 1207, 11045, 1450, 10632, 11391, 4090, 11706, 4077, 10765, 2]
 
-// Module 11677 (useDerivedColors)
+// Module 11704 (useDerivedColors)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useSafeAreaInsetsKeyboardAware";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
@@ -340,7 +340,7 @@ function LockPill(safeAreaBottom) {
 let closure_19 = require("module_3991").createAnimatedComponent(require("Button").Icon);
 let closure_20 = require("module_3991").createAnimatedComponent(require("PressableBase").PressableOpacity);
 let closure_21 = require("module_3991").createAnimatedComponent(require("Text").Text);
-let closure_22 = require("useIsMobileVisualRefreshExperimentEnabled").memoize(() => importDefault(3991).createAnimatedComponent(require(8018) /* inlineStyles */.Ellipse));
+let closure_22 = require("useIsMobileVisualRefreshExperimentEnabled").memoize(() => importDefault(3991).createAnimatedComponent(require(8063) /* inlineStyles */.Ellipse));
 let closure_23 = _createForOfIteratorHelperLoose.createStyles((width) => {
   let obj = {};
   obj = { alignItems: "center" };
@@ -639,7 +639,7 @@ let closure_53 = importAllResult.memo((channelId) => {
       }
       if (!tmp) {
         const ComponentDispatch = channelId(1207).ComponentDispatch;
-        const obj = { isCancelling: true, cancelReason: channelId(11018).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
+        const obj = { isCancelling: true, cancelReason: channelId(11045).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
         ComponentDispatch.dispatchKeyed(outer2_12.VOICE_MESSAGE_SEND, closure_0, obj);
       }
     });
@@ -724,7 +724,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   F.__workletHash = 4588671012938;
   F.__initData = closure_50;
   const animatedStyle5 = obj6.useAnimatedStyle(F);
-  let obj7 = channelId(10603);
+  let obj7 = channelId(10632);
   const wakeLock = obj7.useWakeLock("VoiceMessageOverlay");
   let obj8 = channelId(3991);
   function ce() {
@@ -769,7 +769,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   obj7 = { style: animatedStyle1, source: exiting(4090), size: channelId(1273).Icon.Sizes.MEDIUM };
   obj6.children = callback2(closure_19, obj7);
   const items7 = [callback2(closure_20, obj6), , ];
-  obj8 = { style: tmp2.voiceChatContainer, children: callback2(exiting(11679), { isRecording: tmp5, initialAnimation, backgroundColor: useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.RED_500, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.BRAND_600) }) };
+  obj8 = { style: tmp2.voiceChatContainer, children: callback2(exiting(11706), { isRecording: tmp5, initialAnimation, backgroundColor: useDerivedColors(voiceMessageAnimationState, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.RED_500, exiting(689).unsafe_rawColors.BRAND_600, exiting(689).unsafe_rawColors.BRAND_600) }) };
   items7[1] = callback2(exiting(3991).View, obj8);
   const obj9 = { ref, style: items8, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, accessibilityRole: "button" };
   items8 = [tmp2.sendContainer, animatedStyle2];
@@ -783,7 +783,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   if (tmp5) {
     let tmp35 = 4077;
   } else {
-    tmp35 = 10736;
+    tmp35 = 10765;
   }
   obj10.source = exiting(tmp35);
   obj10.size = channelId(1273).Icon.Sizes.MEDIUM;

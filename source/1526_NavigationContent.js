@@ -1,5 +1,5 @@
 // Module ID: 1526
-// Function ID: 17486
+// Function ID: 17487
 // Name: NavigationContent
 // Dependencies: [31, 33]
 // Exports: default

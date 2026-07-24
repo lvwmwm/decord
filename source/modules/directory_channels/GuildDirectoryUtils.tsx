@@ -1,10 +1,10 @@
-// Module ID: 10034
-// Function ID: 77516
+// Module ID: 10066
+// Function ID: 77710
 // Name: orderByTotalMemberCount
-// Dependencies: [10035, 44, 22, 2]
+// Dependencies: [10067, 44, 22, 2]
 // Exports: guildDirectoryEntryFromServer, rankByDateAdded, rankGuildEntries
 
-// Module 10034 (orderByTotalMemberCount)
+// Module 10066 (orderByTotalMemberCount)
 import { DirectoryEntryTypes } from "DirectoryEntryTypes";
 
 function orderByTotalMemberCount(found) {

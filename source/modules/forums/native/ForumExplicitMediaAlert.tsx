@@ -1,10 +1,10 @@
-// Module ID: 8142
-// Function ID: 64414
+// Module ID: 8186
+// Function ID: 64642
 // Name: ForumExplicitMediaAlert
-// Dependencies: [31, 27, 33, 4130, 689, 4561, 4126, 1212, 4543, 5459, 8143, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4561, 4126, 1212, 4543, 8187, 2]
 // Exports: default
 
-// Module 8142 (ForumExplicitMediaAlert)
+// Module 8186 (ForumExplicitMediaAlert)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -60,10 +60,10 @@ export default function ForumExplicitMediaAlert(arg0) {
   obj3.children = intl4.format(require(onClose[7]).t["APQGZ+"], {
     handleFalsePositiveHook() {
       onClose();
-      const result = outer1_0(onClose[10]).handleSenderFalsePositiveFlow(closure_0, closure_1);
+      const result = outer1_0(onClose[9]).handleSenderFalsePositiveFlow(closure_0, closure_1);
     }
   });
-  items1[3] = callback(require(onClose[9]).TextWithIOSLinkWorkaround, obj3);
+  items1[3] = callback(require(onClose[6]).Text, obj3);
   obj.children = items1;
   return callback2(importDefault(onClose[5]), obj);
 };

@@ -1,13 +1,13 @@
-// Module ID: 15699
-// Function ID: 121057
+// Module ID: 15746
+// Function ID: 121379
 // Name: useBaseActivityPanelPIPView
-// Dependencies: [31, 27, 4122, 10620, 1348, 1347, 4155, 10226, 15700, 653, 10016, 33, 1273, 4130, 689, 1557, 566, 1450, 15695, 10019, 3991, 15701, 4476, 4131, 4542, 15702, 15703, 1212, 3842, 5217, 3748, 15697, 10601, 2]
+// Dependencies: [31, 27, 4122, 10649, 1348, 1347, 4155, 10256, 15747, 653, 10048, 33, 1273, 4130, 689, 1557, 566, 1450, 15742, 10051, 3991, 15748, 4476, 4131, 4542, 15749, 15750, 1212, 3842, 5217, 3748, 15744, 10630, 2]
 
-// Module 15699 (useBaseActivityPanelPIPView)
+// Module 15746 (useBaseActivityPanelPIPView)
 import importAllResult from "useActivityWebViewLock";
 import { View } from "getSystemLocale";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_10620 from "module_10620";
+import module_10649 from "module_10649";
 import closure_7 from "_isNativeReflectConstruct";
 import closure_8 from "_createForOfIteratorHelperLoose";
 import { ActivityLayoutMode } from "items3";

@@ -1,9 +1,9 @@
-// Module ID: 13059
-// Function ID: 100755
+// Module ID: 13111
+// Function ID: 101078
 // Name: items
-// Dependencies: [31, 33, 9791, 13060, 2]
+// Dependencies: [31, 33, 9823, 13112, 2]
 
-// Module 13059 (items)
+// Module 13111 (items)
 import { jsx } from "jsxProd";
 import importAllResult from "result";
 
@@ -11,9 +11,9 @@ const require = arg1;
 let closure_3 = ["I"];
 const items = [{ name: "all", start: 0, duration: 71 }];
 const forwardRefResult = require("result").forwardRef((arg0, ref) => {
-  const obj = { dotLottie: require(13060) /* registerAsset */, animation: "all", ref, layers: closure_3, markers: items };
+  const obj = { dotLottie: require(13112) /* registerAsset */, animation: "all", ref, layers: closure_3, markers: items };
   const merged = Object.assign(arg0);
-  return jsx(require(9791) /* LottieIcon */.LottieIcon, { dotLottie: require(13060) /* registerAsset */, animation: "all", ref, layers: closure_3, markers: items });
+  return jsx(require(9823) /* LottieIcon */.LottieIcon, { dotLottie: require(13112) /* registerAsset */, animation: "all", ref, layers: closure_3, markers: items });
 });
 const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/NitroGem2Lottie.tsx");
 

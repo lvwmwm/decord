@@ -1,10 +1,10 @@
-// Module ID: 10324
-// Function ID: 79693
+// Module ID: 10353
+// Function ID: 79884
 // Name: _uploadDebugLogFiles
-// Dependencies: [5, 1348, 653, 3, 27, 4029, 8857, 10325, 12, 10326, 10328, 1844, 3988, 10329, 10330, 10331, 507, 2]
+// Dependencies: [5, 1348, 653, 3, 27, 4029, 8896, 10354, 12, 10355, 10357, 1844, 3988, 10358, 10359, 10360, 507, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 10324 (_uploadDebugLogFiles)
+// Module 10353 (_uploadDebugLogFiles)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { Endpoints } from "ME";

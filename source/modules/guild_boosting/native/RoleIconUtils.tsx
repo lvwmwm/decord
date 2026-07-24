@@ -1,10 +1,10 @@
-// Module ID: 5488
-// Function ID: 46846
+// Module ID: 5486
+// Function ID: 46843
 // Name: useRoleIcon
-// Dependencies: [31, 1910, 1838, 33, 566, 5489, 5490, 1212, 2]
+// Dependencies: [31, 1910, 1838, 33, 566, 5487, 5488, 1212, 2]
 // Exports: getRoleIcon, useRoleIcon
 
-// Module 5488 (useRoleIcon)
+// Module 5486 (useRoleIcon)
 import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -82,9 +82,9 @@ export const getRoleIcon = function getRoleIcon(roleId) {
     if (null != roleId) {
       role = role.getRole(guild.id, roleId);
       if (null != role) {
-        let obj = require(5489) /* getRoleIconSource */;
+        let obj = require(5487) /* getRoleIconSource */;
         if (obj.canGuildUseRoleIcons(guild, role)) {
-          let roleIconData = require(5489) /* getRoleIconSource */.getRoleIconData(role);
+          let roleIconData = require(5487) /* getRoleIconSource */.getRoleIconData(role);
           if (null == roleIconData) {
             roleIconData = {};
           }

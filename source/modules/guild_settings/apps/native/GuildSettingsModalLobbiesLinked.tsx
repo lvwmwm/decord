@@ -1,10 +1,10 @@
-// Module ID: 16291
-// Function ID: 126813
+// Module ID: 16338
+// Function ID: 127137
 // Name: SyncingToGamesItem
-// Dependencies: [31, 3767, 1849, 653, 33, 1456, 5470, 5503, 5165, 4320, 4593, 3834, 689, 16214, 22, 7495, 4541, 5448, 2]
+// Dependencies: [31, 3767, 1849, 653, 33, 1456, 5468, 5501, 5165, 4320, 4593, 3834, 689, 16261, 22, 7636, 4541, 5448, 2]
 // Exports: default
 
-// Module 16291 (SyncingToGamesItem)
+// Module 16338 (SyncingToGamesItem)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -20,7 +20,7 @@ function SyncingToGamesItem(channels) {
   const isOnlySection = channels.isOnlySection;
   let obj = channels(1456);
   const dependencyMap = obj.useNavigation();
-  const getOrFetchApplication = channels(5470).useGetOrFetchApplication(channels.applicationId);
+  const getOrFetchApplication = channels(5468).useGetOrFetchApplication(channels.applicationId);
   let tmp3Result = null;
   if (0 !== channels.length) {
     obj = {};
@@ -52,7 +52,7 @@ function SyncingToGamesItem(channels) {
       };
       return outer1_6(channels(5165).TableRow, obj, id.id);
     });
-    tmp3Result = closure_6(channels(5503).TableRowGroup, obj);
+    tmp3Result = closure_6(channels(5501).TableRowGroup, obj);
     const tmp3 = closure_6;
   }
   return tmp3Result;
@@ -66,7 +66,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   ({ contentContainerStyle, guildId } = arg0);
   let obj = require(3834) /* map */;
   const token = obj.useToken(keys(689).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = require(16214) /* getChannelsAllowedToUnlink */;
+  let obj1 = require(16261) /* getChannelsAllowedToUnlink */;
   const channelsAllowedToUnlink = obj1.useChannelsAllowedToUnlink(guildId);
   let obj2 = keys(22);
   const groupByResult = obj2.groupBy(channelsAllowedToUnlink, (linkedLobby) => {
@@ -86,7 +86,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   obj.contentContainerStyle = items;
   obj2 = { style: { paddingHorizontal: token }, spacing: keys(689).space.PX_24, children: keys.map((applicationId) => outer1_6(outer1_9, { applicationId, channels: groupByResult[applicationId], isOnlySection: 1 === keys.length }, applicationId)) };
   obj.children = callback(require(4541) /* Stack */.Stack, obj2);
-  const items1 = [callback(require(7495) /* Form */.Form, obj), callback(require(5448) /* NavScrim */.NavScrim, {})];
+  const items1 = [callback(require(7636) /* Form */.Form, obj), callback(require(5448) /* NavScrim */.NavScrim, {})];
   obj.children = items1;
   return callback2(closure_7, obj);
 };

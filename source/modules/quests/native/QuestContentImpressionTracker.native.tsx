@@ -1,10 +1,10 @@
-// Module ID: 10929
-// Function ID: 84958
+// Module ID: 10956
+// Function ID: 85147
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 6651, 10470, 653, 7879, 8284, 566, 10468, 10469, 6970, 2]
+// Dependencies: [57, 31, 6651, 10499, 653, 7527, 8328, 566, 10497, 10498, 6969, 2]
 // Exports: QuestContentImpressionTrackerNative
 
-// Module 10929 (_createForOfIteratorHelperLoose)
+// Module 10956 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -159,7 +159,7 @@ function useVisibilityData(adContentIds) {
   const visibilityRef = adContentIds.visibilityRef;
   const overrideVisibility = adContentIds.overrideVisibility;
   const joined = adContentIds.join("_");
-  let obj = adContentIds(7879);
+  let obj = adContentIds(7527);
   const items = [joined];
   const tmp2 = callback(obj.useRecyclingState(false, items), 2);
   let first = tmp2[0];
@@ -222,7 +222,7 @@ function useVisibilityData(adContentIds) {
   if (null != overrideVisibility) {
     first = overrideVisibility;
   }
-  obj = { visible: first, visibleChanged: first !== visibilityRef(8284)(first) };
+  obj = { visible: first, visibleChanged: first !== visibilityRef(8328)(first) };
   return obj;
 }
 const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/QuestContentImpressionTracker.native.tsx");
@@ -232,13 +232,13 @@ export const QuestContentImpressionTrackerNative = function QuestContentImpressi
   const items = [_isNativeReflectConstruct];
   const tmp = obj.useStateFromStores(items, () => outer1_5.getState()) === AppStates.ACTIVE;
   const ref = React.useRef(null);
-  let obj1 = require(10468) /* useQuestImpressionRef */;
+  let obj1 = require(10497) /* useQuestImpressionRef */;
   const adContentImpressionTrackerProps = obj1.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   obj = {};
   const merged = Object.assign(skipRemountKey);
   obj["adContentIds"] = adContentIds;
-  const tmp3 = importDefault(8284)(tmp);
+  const tmp3 = importDefault(8328)(tmp);
   obj = {};
   const merged1 = Object.assign(skipRemountKey);
   const merged2 = Object.assign(useVisibilityData(obj));
@@ -255,11 +255,11 @@ export const QuestContentImpressionTrackerNative = function QuestContentImpressi
   obj1["key"] = key;
   obj1["adContentIds"] = adContentIds;
   if (tmp11) {
-    obj1["adCreativeType"] = require(6970) /* AdCreativeType */.AdCreativeType.QUEST;
+    obj1["adCreativeType"] = require(6969) /* AdCreativeType */.AdCreativeType.QUEST;
     let tmp13 = obj1;
   } else {
     obj1["adCreativeType"] = skipRemountKey.adCreativeType;
     tmp13 = obj1;
   }
-  return createElement(require(10469) /* getQuestPlacementCombinationKey */.QuestContentImpressionTracker, tmp13);
+  return createElement(require(10498) /* getQuestPlacementCombinationKey */.QuestContentImpressionTracker, tmp13);
 };

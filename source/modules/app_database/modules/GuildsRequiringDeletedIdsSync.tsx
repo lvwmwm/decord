@@ -1,9 +1,9 @@
-// Module ID: 6894
-// Function ID: 54807
+// Module ID: 6893
+// Function ID: 54815
 // Name: GuildsRequiringDeletedIdsSync
 // Dependencies: [5, 6, 7, 1882, 2]
 
-// Module 6894 (GuildsRequiringDeletedIdsSync)
+// Module 6893 (GuildsRequiringDeletedIdsSync)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";

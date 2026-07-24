@@ -1,10 +1,10 @@
-// Module ID: 8708
-// Function ID: 68936
+// Module ID: 8749
+// Function ID: 69154
 // Name: OrbsIcon
-// Dependencies: [31, 33, 689, 3833, 8709, 2]
+// Dependencies: [31, 33, 689, 3833, 8750, 2]
 // Exports: OrbsIcon
 
-// Module 8708 (OrbsIcon)
+// Module 8749 (OrbsIcon)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -20,7 +20,7 @@ export const OrbsIcon = function OrbsIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: require(8709) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(8750) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8709) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(8750) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 9313
-// Function ID: 72809
+// Module ID: 9349
+// Function ID: 73018
 // Name: getChatInputContainerHeight
 // Dependencies: [587, 621, 3989, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete
 
-// Module 9313 (getChatInputContainerHeight)
+// Module 9349 (getChatInputContainerHeight)
 import keys from "keys";
 
 function getChatInputContainerHeight() {

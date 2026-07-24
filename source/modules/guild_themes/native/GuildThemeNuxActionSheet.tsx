@@ -1,10 +1,10 @@
-// Module ID: 14992
-// Function ID: 114217
+// Module ID: 15039
+// Function ID: 114538
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 57, 31, 27, 3947, 4016, 1345, 33, 3, 4130, 689, 14993, 4062, 566, 4098, 1212, 5187, 14994, 4126, 7519, 7518, 1273, 4543, 2]
+// Dependencies: [5, 57, 31, 27, 3947, 4016, 1345, 33, 3, 4130, 689, 15040, 4062, 566, 4098, 1212, 5187, 15041, 4126, 7654, 7653, 1273, 4543, 2]
 // Exports: default
 
-// Module 14992 (GuildThemeNuxActionSheet)
+// Module 15039 (GuildThemeNuxActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -45,7 +45,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   guildId = guildId.guildId;
   const markAsDismissed = guildId.markAsDismissed;
   const tmp = _createForOfIteratorHelperLoose();
-  let tmp2 = callback2(React.useState(guildId(14993).getInitialGuildThemeNuxSelection), 2);
+  let tmp2 = callback2(React.useState(guildId(15040).getInitialGuildThemeNuxSelection), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];
   [tmp5, _isNativeReflectConstruct] = callback2(React.useState(null), 2);
@@ -114,7 +114,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   obj.dismissAccessibilityLabel = intl2.string(guildId(1212).t.cpT0Cq);
   obj.onDismiss = callback3;
   obj.contentStyles = tmp.container;
-  const items7 = [callback3(markAsDismissed(14994), { themeSettings: stateFromStores1, isPersonal: tmp8 }), , , , , , ];
+  const items7 = [callback3(markAsDismissed(15041), { themeSettings: stateFromStores1, isPersonal: tmp8 }), , , , , , ];
   obj = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title };
   const intl3 = guildId(1212).intl;
   obj.children = intl3.string(guildId(1212).t.Q9zFy9);
@@ -129,14 +129,14 @@ export default function GuildThemeNuxActionSheet(guildId) {
   const intl5 = guildId(1212).intl;
   obj4.label = intl5.string(guildId(1212).t.aN3RNQ);
   obj4.value = guildId(4062).GuildThemeSourcePreference.GUILD;
-  const items8 = [callback3(guildId(7518).TableRadioRow, obj4), ];
+  const items8 = [callback3(guildId(7653).TableRadioRow, obj4), ];
   const obj5 = {};
   const intl6 = guildId(1212).intl;
   obj5.label = intl6.string(guildId(1212).t.js8y7t);
   obj5.value = guildId(4062).GuildThemeSourcePreference.PERSONAL;
-  items8[1] = callback3(guildId(7518).TableRadioRow, obj5);
+  items8[1] = callback3(guildId(7653).TableRadioRow, obj5);
   obj3.children = items8;
-  obj2.children = callback4(guildId(7519).TableRadioGroup, obj3);
+  obj2.children = callback4(guildId(7654).TableRadioGroup, obj3);
   items7[3] = callback3(View, obj2);
   let tmp18 = null;
   if (tmp8) {

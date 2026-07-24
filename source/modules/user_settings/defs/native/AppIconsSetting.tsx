@@ -1,9 +1,9 @@
-// Module ID: 14355
-// Function ID: 109786
+// Module ID: 14405
+// Function ID: 110109
 // Name: route
-// Dependencies: [57, 31, 653, 1345, 33, 14356, 1334, 5802, 10095, 1212, 14357, 12380, 14359, 2]
+// Dependencies: [57, 31, 653, 1345, 33, 14406, 1334, 5802, 10127, 1212, 14407, 7443, 14409, 2]
 
-// Module 14355 (route)
+// Module 14405 (route)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -20,7 +20,7 @@ createToggle = {
   IconComponent: require("SettingsItemAppIcon"),
   useTrailing: function useAppIconSettingTrailing() {
     const obj = { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true };
-    return jsx(importDefault(14356), { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true });
+    return jsx(importDefault(14406), { dismissibleContent: require(1334) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, newPremiumStyle: true });
   },
   usePreNavigationAction: function useAppIconSettingPreNavigationAction() {
     const items = [first(1334).DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE];
@@ -36,14 +36,14 @@ createToggle = {
     }, items1);
   },
   usePredicate() {
-    return require(12380) /* fetchCurrentAppIcon */.isAppIconsSupported();
+    return require(7443) /* fetchCurrentAppIcon */.isAppIconsSupported();
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.APP_ICONS,
   getComponent() {
-    return require(14359).default;
+    return require(14409).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

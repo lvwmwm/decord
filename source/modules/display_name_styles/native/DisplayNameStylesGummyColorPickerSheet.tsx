@@ -1,10 +1,10 @@
-// Module ID: 14232
-// Function ID: 109339
+// Module ID: 14282
+// Function ID: 109662
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [57, 31, 27, 1861, 653, 33, 1860, 4130, 689, 8518, 1862, 620, 4099, 14233, 675, 4098, 5187, 5186, 4543, 1212, 13588, 9106, 2]
+// Dependencies: [57, 31, 27, 1861, 653, 33, 1860, 4130, 689, 8563, 1862, 620, 4099, 14283, 675, 4098, 5187, 5186, 4543, 1212, 13639, 9142, 2]
 // Exports: default
 
-// Module 14232 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14282 (DisplayNameStylesGummyColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -57,7 +57,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   let callback2;
   const tmp = wrapHue();
   const dependencyMap = tmp;
-  let obj = selectedColors(8518);
+  let obj = selectedColors(8563);
   let tmp3 = selectedColors.length > 0;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedColors(1862).DisplayNameEffect.GUMMY);
   if (tmp3) {
@@ -151,10 +151,10 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
     let tmp19Result = tmp19(closure_5, obj6);
   } else {
     const obj7 = { colors: first1 };
-    tmp19Result = tmp19(onSelectColors(13588), obj7);
+    tmp19Result = tmp19(onSelectColors(13639), obj7);
   }
   const items4 = [tmp19Result, ];
-  const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: callback2(closure_5, { style: tmp.customIconScrim, children: callback2(selectedColors(9106).PencilIcon, { color: "white", size: "sm" }) }) };
+  const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: callback2(closure_5, { style: tmp.customIconScrim, children: callback2(selectedColors(9142).PencilIcon, { color: "white", size: "sm" }) }) };
   items4[1] = callback2(closure_5, obj8);
   obj5.children = items4;
   obj4.children = closure_10(first1, obj5);

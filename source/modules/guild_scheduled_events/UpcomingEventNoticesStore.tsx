@@ -1,9 +1,9 @@
-// Module ID: 8456
-// Function ID: 67482
+// Module ID: 8500
+// Function ID: 67710
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 6758, 1354, 8457, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 6758, 1354, 8501, 566, 686, 2]
 
-// Module 8456 (_isNativeReflectConstruct)
+// Module 8500 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "GUILD_EVENT_MAX_NAME_LENGTH";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -139,7 +139,7 @@ tmp3 = new tmp3(require("dispatcher"), {
       if (null != guildScheduledEvent) {
         if (guildScheduledEvent.status === constants.SCHEDULED) {
           if (null == obj[guildEventId]) {
-            obj = require(8457) /* getNextShownUpcomingEventNoticeType */;
+            obj = require(8501) /* getNextShownUpcomingEventNoticeType */;
             if (obj.getNextShownUpcomingEventNoticeType(guildScheduledEvent, undefined, table[guildEventId], false) === constants2.NEW_EVENT) {
               obj = {};
               const merged = Object.assign(obj);

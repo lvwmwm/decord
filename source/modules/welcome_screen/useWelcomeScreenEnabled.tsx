@@ -1,10 +1,10 @@
-// Module ID: 11687
-// Function ID: 90652
+// Module ID: 11714
+// Function ID: 90890
 // Name: useWelcomeScreenEnabled
 // Dependencies: [1352, 1348, 1838, 1906, 653, 566, 2]
 // Exports: default
 
-// Module 11687 (useWelcomeScreenEnabled)
+// Module 11714 (useWelcomeScreenEnabled)
 import { isGuildTextChannelType } from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

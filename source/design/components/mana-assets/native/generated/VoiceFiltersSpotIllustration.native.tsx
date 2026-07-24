@@ -1,5 +1,5 @@
 // Module ID: 6610
-// Function ID: 50869
+// Function ID: 50880
 // Name: VoiceFiltersSpotIllustration
 // Dependencies: [33, 5085, 6611, 2]
 // Exports: VoiceFiltersSpotIllustration

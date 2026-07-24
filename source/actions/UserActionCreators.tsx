@@ -1,10 +1,10 @@
-// Module ID: 7889
-// Function ID: 62790
+// Module ID: 7976
+// Function ID: 63101
 // Name: _fetchProfile
 // Dependencies: [5, 1857, 1849, 653, 654, 3, 507, 686, 4942, 640, 44, 4029, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 7889 (_fetchProfile)
+// Module 7976 (_fetchProfile)
 import timestamp from "timestamp";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";

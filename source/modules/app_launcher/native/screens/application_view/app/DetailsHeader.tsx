@@ -1,8 +1,8 @@
-// Module ID: 9011
-// Function ID: 70913
-// Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 7919, 9012, 4663, 8284, 5122, 4126, 1212, 4131, 4134, 5109, 4554, 668, 2]
+// Module ID: 9050
+// Function ID: 71128
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 8006, 9051, 4663, 8328, 5122, 4126, 1212, 4131, 4134, 5109, 4554, 668, 2]
 
-// Module 9011
+// Module 9050
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let isScreenLandscape;
   let c18;
   let tmp = callback2();
-  let obj = ref(7919);
+  let obj = ref(8006);
   ref = importAllResult.useRef(null);
   const tmp4 = first1(importAllResult.useState(false), 2);
   const first = tmp4[0];
@@ -72,9 +72,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     obj.containerHeight = sharedValue;
     return obj;
   })());
-  let obj1 = ref(7919);
+  let obj1 = ref(8006);
   const sectionName = obj1.getSectionName(application);
-  let obj2 = ref(7919);
+  let obj2 = ref(8006);
   const str = obj2.getSectionDescription(application);
   let tmp80Result = null != str && str.trim().length > 0;
   const tmp11 = first1(tmp6[1].useState(null), 2);
@@ -107,14 +107,14 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   const memo = importAllResult.useMemo(() => {
     let result = null;
     if (null != str) {
-      result = ref(9012).parseBioReactWithCachedAST(str);
-      const obj = ref(9012);
+      result = ref(9051).parseBioReactWithCachedAST(str);
+      const obj = ref(9051);
     }
     return result;
   }, items);
   let obj3 = ref(4663);
   isScreenLandscape = obj3.useIsScreenLandscape();
-  const tmp21 = first(8284)(isScreenLandscape);
+  const tmp21 = first(8328)(isScreenLandscape);
   c18 = tmp21;
   const items1 = [isScreenLandscape, tmp21];
   const effect = importAllResult.useEffect(() => {

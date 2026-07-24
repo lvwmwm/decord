@@ -1,10 +1,10 @@
-// Module ID: 15244
-// Function ID: 116320
+// Module ID: 15291
+// Function ID: 116642
 // Name: CutoutGuildBanner
-// Dependencies: [57, 5, 31, 27, 4122, 1838, 8306, 653, 33, 15179, 689, 566, 1392, 1387, 7873, 5085, 5515, 8321, 3831, 1212, 5048, 4126, 4543, 15218, 9244, 2]
+// Dependencies: [57, 5, 31, 27, 4122, 1838, 8350, 653, 33, 15226, 689, 566, 1392, 1387, 7961, 5085, 5513, 8365, 3831, 1212, 5048, 4126, 4543, 15265, 9280, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 15244 (CutoutGuildBanner)
+// Module 15291 (CutoutGuildBanner)
 import _slicedToArray from "_slicedToArray";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import result from "result";
@@ -47,7 +47,7 @@ function CutoutGuildBanner(guild) {
   obj = { style: tmp.bannerImage };
   const memo = React.useMemo(() => guild(outer1_2[13]).fromClientDiscoverableGuild(guild), items1);
   obj = {};
-  obj1 = { shape: guild(7873).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  obj1 = { shape: guild(7961).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   const items2 = [obj1];
   obj.cutouts = items2;
   if (null != guild.banner) {
@@ -61,15 +61,15 @@ function CutoutGuildBanner(guild) {
     tmp15 = callback3(View, obj3);
   }
   obj.children = tmp15;
-  const items4 = [callback3(importDefault(7873), obj), ];
+  const items4 = [callback3(importDefault(7961), obj), ];
   const obj4 = { style: tmp.guildIcon, guild: memo };
   const tmp10 = View;
   const tmp11 = callback3;
-  const tmp12 = importDefault(7873);
+  const tmp12 = importDefault(7961);
   const tmp9 = closure_15;
-  obj4.size = guild(5515).GuildIconSizes.LARGE;
+  obj4.size = guild(5513).GuildIconSizes.LARGE;
   obj4.animate = !stateFromStores;
-  items4[1] = callback3(importDefault(5515), obj4);
+  items4[1] = callback3(importDefault(5513), obj4);
   obj.children = items4;
   return tmp9(tmp10, obj);
 }
@@ -129,8 +129,8 @@ function RecommendedGuildsRow(discoverableGuilds) {
     obj.horizontal = true;
     obj.listId = "recommended-servers-list";
     obj.showsHorizontalScrollIndicator = false;
-    tmp2 = callback3(importDefault(9244), obj);
-    const tmp6 = importDefault(9244);
+    tmp2 = callback3(importDefault(9280), obj);
+    const tmp6 = importDefault(9280);
   }
   return tmp2;
 }
@@ -179,7 +179,7 @@ export const ICYMIServerRecommendationRow = function ICYMIServerRecommendationRo
     const obj3 = { discoverableGuilds: stateFromStoresArray };
     items1[2] = callback3(RecommendedGuildsRow, obj3);
     obj.children = items1;
-    const items2 = [callback4(View, obj), callback3(require(15218) /* Separator */.Separator, {})];
+    const items2 = [callback4(View, obj), callback3(require(15265) /* Separator */.Separator, {})];
     obj.children = items2;
     tmp2 = callback4(closure_16, obj);
   }

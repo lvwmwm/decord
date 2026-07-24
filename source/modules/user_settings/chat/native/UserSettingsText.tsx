@@ -1,10 +1,10 @@
-// Module ID: 14295
-// Function ID: 109519
+// Module ID: 14345
+// Function ID: 109842
 // Name: trackSettingsUpdated
-// Dependencies: [31, 27, 1849, 3782, 1279, 1280, 653, 33, 4130, 689, 675, 3803, 7955, 3834, 566, 3776, 1456, 7375, 1273, 9611, 4126, 1212, 7495, 4541, 5503, 5504, 7519, 7518, 2]
+// Dependencies: [31, 27, 1849, 3782, 1279, 1280, 653, 33, 4130, 689, 675, 3803, 8042, 3834, 566, 3776, 1456, 7375, 1273, 9647, 4126, 1212, 7636, 4541, 5501, 5502, 7654, 7653, 2]
 // Exports: default, setLowQualityImageMode, setStickerAutocomplete
 
-// Module 14295 (trackSettingsUpdated)
+// Module 14345 (trackSettingsUpdated)
 import "result";
 import { View } from "TableRadioRow";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -31,12 +31,12 @@ function trackSettingsUpdated(data_saving_mode, videoUploadQuality, viewImageDes
 function setDataSavingMode(dataSavingMode) {
   dataSavingMode = dataSavingMode.dataSavingMode;
   trackSettingsUpdated("data_saving_mode", dataSavingMode.videoUploadQuality, dataSavingMode.viewImageDescriptions, dataSavingMode.lowQualityImageMode, dataSavingMode);
-  const result = importDefault(7955).updatedUnsyncedSettings({ dataSavingMode });
+  const result = importDefault(8042).updatedUnsyncedSettings({ dataSavingMode });
 }
 function setVideoUploadQuality(videoUploadQuality) {
   videoUploadQuality = videoUploadQuality.videoUploadQuality;
   trackSettingsUpdated("video_upload_quality", videoUploadQuality, videoUploadQuality.viewImageDescriptions, videoUploadQuality.lowQualityImageMode, videoUploadQuality.dataSavingMode);
-  const result = importDefault(7955).updatedUnsyncedSettings({ videoUploadQuality });
+  const result = importDefault(8042).updatedUnsyncedSettings({ videoUploadQuality });
 }
 function setImageDescriptions(viewImageDescriptions) {
   viewImageDescriptions = viewImageDescriptions.viewImageDescriptions;
@@ -241,7 +241,7 @@ export const setStickerAutocomplete = function setStickerAutocomplete(enabled) {
 export const setLowQualityImageMode = function setLowQualityImageMode(lowQualityImageMode) {
   lowQualityImageMode = lowQualityImageMode.lowQualityImageMode;
   trackSettingsUpdated("low_quality_image_mode", lowQualityImageMode.videoUploadQuality, lowQualityImageMode.viewImageDescriptions, lowQualityImageMode, lowQualityImageMode.dataSavingMode);
-  const result = importDefault(7955).updatedUnsyncedSettings({ lowQualityImageMode });
+  const result = importDefault(8042).updatedUnsyncedSettings({ lowQualityImageMode });
 };
 export { setDataSavingMode };
 export { setVideoUploadQuality };

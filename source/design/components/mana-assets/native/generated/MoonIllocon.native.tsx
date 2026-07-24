@@ -1,5 +1,5 @@
 // Module ID: 6304
-// Function ID: 50410
+// Function ID: 50421
 // Name: MoonIllocon
 // Dependencies: [33, 5085, 6305, 2]
 // Exports: MoonIllocon

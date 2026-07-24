@@ -1,10 +1,10 @@
-// Module ID: 10236
-// Function ID: 79082
+// Module ID: 10266
+// Function ID: 79273
 // Name: hasMedia
-// Dependencies: [31, 10237, 653, 22, 491, 478, 5679, 4324, 2]
+// Dependencies: [31, 10267, 653, 22, 491, 478, 5679, 4324, 2]
 // Exports: generateInAppNotificationId, getMessagePreviewTextVariant, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia
 
-// Module 10236 (hasMedia)
+// Module 10266 (hasMedia)
 import result from "result";
 import { REACTION_MILESTONE_COUNTS } from "set";
 import ME from "ME";

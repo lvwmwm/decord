@@ -1,10 +1,10 @@
-// Module ID: 8214
-// Function ID: 64938
+// Module ID: 8258
+// Function ID: 65166
 // Name: InfoBox
-// Dependencies: [31, 27, 33, 4130, 689, 4086, 7507, 4126, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 4086, 7577, 4126, 2]
 // Exports: default
 
-// Module 8214 (InfoBox)
+// Module 8258 (InfoBox)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function InfoBox(look) {
   obj = { color: importDefault(689).colors.TEXT_LINK };
   obj[obj2.INFO] = callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj);
   obj = { color: importDefault(689).colors.ICON_FEEDBACK_WARNING };
-  obj[obj2.WARNING] = callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, obj);
+  obj[obj2.WARNING] = callback(require(7577) /* CircleErrorIcon */.CircleErrorIcon, obj);
   const obj1 = {};
   const items2 = [style, ...{ [closure_7.INFO]: items, [closure_7.WARNING]: items1 }[INFO]];
   obj1.style = items2;

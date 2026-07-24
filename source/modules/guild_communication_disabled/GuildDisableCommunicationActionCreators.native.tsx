@@ -1,10 +1,10 @@
-// Module ID: 10984
-// Function ID: 85495
+// Module ID: 11011
+// Function ID: 85684
 // Name: openDisableCommunication
-// Dependencies: [31, 1849, 33, 4337, 10985, 1934, 4471, 10988, 2]
+// Dependencies: [31, 1849, 33, 4337, 11012, 1934, 4471, 11015, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 10984 (openDisableCommunication)
+// Module 11011 (openDisableCommunication)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export const openDisableCommunication = function openDisableCommunication(userId
   if (null != user) {
     let obj = importDefault(4337);
     obj = { guildId, user, cancelButtonCallback };
-    obj.pushLazy(require(1934) /* maybeLoadBundle */(10985, dependencyMap.paths), obj);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(11012, dependencyMap.paths), obj);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {

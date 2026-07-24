@@ -1,10 +1,10 @@
-// Module ID: 11073
-// Function ID: 86149
+// Module ID: 11100
+// Function ID: 86338
 // Name: Modal
-// Dependencies: [31, 33, 1557, 5519, 5084, 2]
+// Dependencies: [31, 33, 1557, 5517, 5084, 2]
 // Exports: Modal
 
-// Module 11073 (Modal)
+// Module 11100 (Modal)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -16,5 +16,5 @@ export const Modal = function Modal(arg0) {
   const merged = Object.assign(arg0);
   obj = { height: require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1557)().top };
   obj["headerStyle"] = obj;
-  return jsx(require(5519) /* NavigationStack */.Navigator, { height: require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1557)().top });
+  return jsx(require(5517) /* NavigationStack */.Navigator, { height: require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1557)().top });
 };

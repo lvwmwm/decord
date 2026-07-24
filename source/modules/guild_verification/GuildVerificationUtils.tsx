@@ -1,10 +1,10 @@
-// Module ID: 12356
-// Function ID: 96061
+// Module ID: 12383
+// Function ID: 96301
 // Name: inviteGuildHasPendingMemberDisabledVerification
-// Dependencies: [3948, 653, 3950, 1198, 9145, 2]
+// Dependencies: [3948, 653, 3950, 1198, 9181, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12356 (inviteGuildHasPendingMemberDisabledVerification)
+// Module 12383 (inviteGuildHasPendingMemberDisabledVerification)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 
@@ -38,5 +38,5 @@ export const openVerificationModalOrTransitionToApplication = function openVerif
       const obj2 = require(1198) /* shouldNavigate */;
     }
   }
-  const result = require(9145) /* openMemberVerificationModal */.openMemberVerificationModal(id);
+  const result = require(9181) /* openMemberVerificationModal */.openMemberVerificationModal(id);
 };

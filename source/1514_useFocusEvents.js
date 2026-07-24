@@ -1,5 +1,5 @@
 // Module ID: 1514
-// Function ID: 17404
+// Function ID: 17405
 // Name: useFocusEvents
 // Dependencies: [31, 1484]
 // Exports: default

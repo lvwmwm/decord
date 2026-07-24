@@ -1,10 +1,10 @@
-// Module ID: 8985
-// Function ID: 70804
+// Module ID: 9024
+// Function ID: 71019
 // Name: TwoWayLinkError
-// Dependencies: [31, 27, 33, 4130, 8943, 8986, 4126, 5121, 4541, 4543, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 8982, 9025, 4126, 5121, 4541, 4543, 1212, 2]
 // Exports: TwoWayLinkError
 
-// Module 8985 (TwoWayLinkError)
+// Module 9024 (TwoWayLinkError)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,12 +26,12 @@ export const TwoWayLinkError = function TwoWayLinkError(arg0) {
   let onRetry;
   let title;
   ({ onClose, title, body, onRetry } = arg0);
-  let obj = require(8943) /* styles */;
+  let obj = require(8982) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container };
   obj = { style: twoWayLinkStyles.content };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(8986), style: callback3().image }), , ];
+  const items = [callback(closure_3, { source: importDefault(9025), style: callback3().image }), , ];
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title };
   items[1] = callback(require(4126) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body };

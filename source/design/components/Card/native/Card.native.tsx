@@ -1,5 +1,5 @@
 // Module ID: 5167
-// Function ID: 44973
+// Function ID: 44978
 // Name: getCardBackgroundToken
 // Dependencies: [29, 31, 27, 33, 3991, 689, 5127, 4130, 1324, 3834, 477, 4542, 4546, 5168, 2]
 
@@ -60,7 +60,7 @@ class Card {
     if (null != radius) {
       token = radius;
     }
-    tmp5 = f44984(flag, flag2, str3, str, str2, token);
+    tmp5 = f44989(flag, flag2, str3, str, str2, token);
     items = [, , ];
     ({ spacing: arr[0], card: arr[1] } = tmp5);
     items[2] = merged.style;

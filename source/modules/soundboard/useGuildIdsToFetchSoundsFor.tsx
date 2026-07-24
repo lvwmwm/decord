@@ -1,5 +1,5 @@
 // Module ID: 5735
-// Function ID: 49295
+// Function ID: 49306
 // Name: _getGuildIdsToFetchSoundsFor
 // Dependencies: [31, 1838, 4578, 624, 2]
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor

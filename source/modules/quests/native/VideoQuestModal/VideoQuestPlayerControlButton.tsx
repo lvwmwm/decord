@@ -1,9 +1,9 @@
-// Module ID: 13921
-// Function ID: 106598
+// Module ID: 13972
+// Function ID: 106922
 // Name: VideoQuestPlayerControlButton
 // Dependencies: [31, 33, 4130, 689, 666, 4660, 4533, 2]
 
-// Module 13921 (VideoQuestPlayerControlButton)
+// Module 13972 (VideoQuestPlayerControlButton)
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import importAllResult from "result";

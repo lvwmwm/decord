@@ -1,10 +1,10 @@
-// Module ID: 10223
-// Function ID: 78985
+// Module ID: 10253
+// Function ID: 79176
 // Name: canViewPotentiallyNSFWChannel
 // Dependencies: [1348, 1849, 4345, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 10223 (canViewPotentiallyNSFWChannel)
+// Module 10253 (canViewPotentiallyNSFWChannel)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 

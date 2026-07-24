@@ -1,10 +1,10 @@
-// Module ID: 15084
-// Function ID: 114782
+// Module ID: 15131
+// Function ID: 115103
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [31, 6651, 653, 566, 4096, 8284, 3831, 1212, 2812, 2]
+// Dependencies: [31, 6651, 653, 566, 4096, 8328, 3831, 1212, 2812, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 15084 (useDefaultAuthorizationNotifiers)
+// Module 15131 (useDefaultAuthorizationNotifiers)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { AppStates } from "ME";

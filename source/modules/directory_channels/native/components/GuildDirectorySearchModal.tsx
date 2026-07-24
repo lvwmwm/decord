@@ -1,10 +1,10 @@
-// Module ID: 10031
-// Function ID: 77479
+// Module ID: 10063
+// Function ID: 77673
 // Name: GuildDirectorySearchModal
-// Dependencies: [31, 33, 10032, 5519, 5450, 2]
+// Dependencies: [31, 33, 10064, 5517, 5450, 2]
 // Exports: default
 
-// Module 10031 (GuildDirectorySearchModal)
+// Module 10063 (GuildDirectorySearchModal)
 import "result";
 import { jsx } from "jsxProd";
 
@@ -27,7 +27,7 @@ export default function GuildDirectorySearchModal(arg0) {
     })(closure_0)),
     initialRouteName: "SEARCH_SCREEN_KEY"
   };
-  return jsx(_require(5519).Navigator, {
+  return jsx(_require(5517).Navigator, {
     screens: importDefault(5450)(() => (function getScreens(closure_0) {
       const obj = {
         fullscreen: true,

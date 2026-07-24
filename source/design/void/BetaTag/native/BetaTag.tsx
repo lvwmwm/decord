@@ -1,10 +1,10 @@
-// Module ID: 7959
-// Function ID: 63488
+// Module ID: 8046
+// Function ID: 63800
 // Name: BetaTag
 // Dependencies: [31, 27, 6671, 33, 4130, 689, 4554, 668, 4126, 1212, 2]
 // Exports: default
 
-// Module 7959 (BetaTag)
+// Module 8046 (BetaTag)
 import "result";
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";

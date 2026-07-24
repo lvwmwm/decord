@@ -1,10 +1,10 @@
-// Module ID: 8229
-// Function ID: 65013
+// Module ID: 8273
+// Function ID: 65241
 // Name: NameplateInner
-// Dependencies: [31, 4122, 33, 4130, 566, 4066, 3991, 4131, 1873, 8230, 4554, 477, 7956, 5085, 2]
+// Dependencies: [31, 4122, 33, 4130, 566, 4066, 3991, 4131, 1873, 8274, 4554, 477, 8043, 5085, 2]
 // Exports: default
 
-// Module 8229 (NameplateInner)
+// Module 8273 (NameplateInner)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import jsxProd from "jsxProd";
@@ -81,7 +81,7 @@ function NameplateInner(isFocused) {
   const animatedStyle = obj2.useAnimatedStyle(fn);
   let obj3 = flag6(1873);
   const backgroundGradientColors = obj3.getBackgroundGradientColors(nameplate.palette, sharedValue(4066)());
-  let obj4 = flag6(8230);
+  let obj4 = flag6(8274);
   const nameplateAssets = obj4.getNameplateAssets(nameplate);
   ({ staticImageUrl, animatedImageUrl } = nameplateAssets);
   if (flag7) {
@@ -121,7 +121,7 @@ function NameplateInner(isFocused) {
   if (obj9.isAndroid()) {
     if (flag7) {
       obj2 = { url: str, style: tmp2.img, autoplay: true };
-      let tmp15 = callback(flag6(7956).APNGPlayer, obj2);
+      let tmp15 = callback(flag6(8043).APNGPlayer, obj2);
     }
     items4[1] = tmp15;
     obj.children = items4;

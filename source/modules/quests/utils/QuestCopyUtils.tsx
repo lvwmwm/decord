@@ -1,10 +1,10 @@
-// Module ID: 9468
-// Function ID: 73762
+// Module ID: 9504
+// Function ID: 73971
 // Name: getQuestUrl
-// Dependencies: [4976, 1212, 9449, 9450, 9451, 6970, 6959, 5492, 2]
+// Dependencies: [4976, 1212, 9485, 9486, 9487, 6969, 6958, 5490, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getSortMethodText
 
-// Module 9468 (getQuestUrl)
+// Module 9504 (getQuestUrl)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 
 let closure_2;
@@ -152,19 +152,19 @@ export const getCtaLink = function getCtaLink(config) {
 };
 export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
-  let obj = require(9449) /* apexExperiment */;
-  if (obj.shouldMigrateToAdAnalyticsInterface(require(9449) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    let tmpResult = tmp(9450);
-    obj = { type: tmp(9451).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(6970).AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent };
+  let obj = require(9485) /* apexExperiment */;
+  if (obj.shouldMigrateToAdAnalyticsInterface(require(9485) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
+    let tmpResult = tmp(9486);
+    obj = { type: tmp(9487).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(6969).AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent };
     ({ content: obj5.surfaceId, sourceQuestContent: obj5.sourceQuestContent, position: obj5.questContentPosition, impressionId: obj5.impressionId } = ctaContent);
     tmpResult.captureAdUserAction(obj);
   } else {
-    tmpResult = tmp(6959);
+    tmpResult = tmp(6958);
     obj = { questId: id, questContent: ctaContent.content, questContentCTA: ctaContent };
     ({ position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = ctaContent);
     const result = tmpResult.trackQuestContentClicked(obj);
   }
-  require(5492) /* _copy */.copy(getQuestUrl(id));
+  require(5490) /* _copy */.copy(getQuestUrl(id));
 };
 export const getDefaultReward = function getDefaultReward(config) {
   if (0 === config.rewardsConfig.rewards.length) {

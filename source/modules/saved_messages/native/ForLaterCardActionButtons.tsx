@@ -1,10 +1,10 @@
-// Module ID: 9922
-// Function ID: 76750
+// Module ID: 9954
+// Function ID: 76944
 // Name: ForLaterCardActionButtons
-// Dependencies: [31, 27, 33, 4130, 4098, 9923, 1934, 9911, 1212, 9926, 5119, 9106, 9302, 7771, 8969, 2]
+// Dependencies: [31, 27, 33, 4130, 4098, 9955, 1934, 9943, 1212, 9958, 5119, 9142, 9338, 7533, 9008, 2]
 // Exports: default
 
-// Module 9922 (ForLaterCardActionButtons)
+// Module 9954 (ForLaterCardActionButtons)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -41,7 +41,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }, items);
   let intl = savedMessage(1212).intl;
   obj.label = intl.string(savedMessage(1212).t["+TSRGD"]);
-  obj.IconComponent = savedMessage(9926).ChatArrowRightIcon;
+  obj.IconComponent = savedMessage(9958).ChatArrowRightIcon;
   obj.action = function action() {
     return jumpToMessage();
   };
@@ -64,7 +64,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
     obj = {};
     const intl3 = savedMessage(1212).intl;
     obj.label = intl3.string(savedMessage(1212).t.vrbqs1);
-    obj.IconComponent = savedMessage(9106).PencilIcon;
+    obj.IconComponent = savedMessage(9142).PencilIcon;
     obj.action = callback;
     items1.unshift(obj);
   }
@@ -87,7 +87,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
       return outer1_5(savedMessage(outer1_2[13]).IconButton, obj);
     }
   };
-  return <View style={callback().actionGroup}>{jsx(savedMessage(9302).ContextMenu, {
+  return <View style={callback().actionGroup}>{jsx(savedMessage(9338).ContextMenu, {
     items: items1,
     keyboardShouldPersistTaps: "handled",
     triggerOnTap: true,

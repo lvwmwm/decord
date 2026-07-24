@@ -1,5 +1,5 @@
 // Module ID: 1844
-// Function ID: 20240
+// Function ID: 20241
 // Name: isBlockedDomain
 // Dependencies: [1845, 2, 1847]
 // Exports: consumeLogs, getExperimentCacher, getHttpClientAPI, isBlockedDomain, isUnsupportedBrowser, startFetchingBlockedDomains

@@ -1,9 +1,9 @@
-// Module ID: 10511
-// Function ID: 82081
+// Module ID: 10540
+// Function ID: 82273
 // Name: NativeModules
-// Dependencies: [27, 477, 10512, 4110, 621, 682, 2]
+// Dependencies: [27, 477, 10541, 4110, 621, 682, 2]
 
-// Module 10511 (NativeModules)
+// Module 10540 (NativeModules)
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";
 import keys from "keys";
@@ -34,8 +34,8 @@ let closure_5 = keys.create((arg0) => {
   let obj = _require(477);
   if (obj.isAndroid()) {
     if (obj2.getSystemVersionMajor() >= 29) {
-      let resolved = Promise.resolve(updateThermalState(10512).getThermalState());
-      const obj3 = updateThermalState(10512);
+      let resolved = Promise.resolve(updateThermalState(10541).getThermalState());
+      const obj3 = updateThermalState(10541);
     } else {
       resolved = Promise.resolve(undefined);
     }

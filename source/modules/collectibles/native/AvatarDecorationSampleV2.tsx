@@ -1,10 +1,10 @@
-// Module ID: 8226
-// Function ID: 65005
+// Module ID: 8270
+// Function ID: 65233
 // Name: AvatarDecorationSampleV2
-// Dependencies: [31, 27, 33, 4130, 689, 44, 1876, 8227, 7872, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 44, 1876, 8271, 7960, 2]
 // Exports: default
 
-// Module 8226 (AvatarDecorationSampleV2)
+// Module 8270 (AvatarDecorationSampleV2)
 import "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -52,12 +52,12 @@ export default function AvatarDecorationSampleV2(arg0) {
   obj.style = items;
   obj.resizeMode = "contain";
   if (null == avatarSource) {
-    avatarSource = importDefault(8227);
+    avatarSource = importDefault(8271);
   }
   obj.source = avatarSource;
   obj.accessible = false;
   const items1 = [callback(closure_3, obj), ];
-  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: callback(importDefault(7872), { avatarDecoration: item, size, animate }) };
+  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: callback(importDefault(7960), { avatarDecoration: item, size, animate }) };
   items1[1] = callback(closure_4, obj);
   obj.children = items1;
   return closure_7(closure_6, obj);

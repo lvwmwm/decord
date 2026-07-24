@@ -1,10 +1,10 @@
-// Module ID: 11170
-// Function ID: 86834
+// Module ID: 11200
+// Function ID: 87103
 // Name: ApplicationsImage
-// Dependencies: [31, 27, 33, 4130, 689, 11171, 5085, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 11201, 5085, 2]
 // Exports: default
 
-// Module 11170 (ApplicationsImage)
+// Module 11200 (ApplicationsImage)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,12 +35,12 @@ export default function ApplicationsImage(arg0) {
   const tmp = _createForOfIteratorHelperLoose();
   let appLauncherIconSource = null;
   if (null != firstApplication) {
-    let obj = require(11171) /* handleApplicationSelected */;
+    let obj = require(11201) /* handleApplicationSelected */;
     appLauncherIconSource = obj.getAppLauncherIconSource(firstApplication);
   }
   let appLauncherIconSource1 = null;
   if (null != secondApplication) {
-    let obj1 = require(11171) /* handleApplicationSelected */;
+    let obj1 = require(11201) /* handleApplicationSelected */;
     appLauncherIconSource1 = obj1.getAppLauncherIconSource(secondApplication);
   }
   let tmp8 = null != appLauncherIconSource;

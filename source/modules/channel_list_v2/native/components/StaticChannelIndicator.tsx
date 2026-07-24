@@ -1,10 +1,10 @@
-// Module ID: 10304
-// Function ID: 79534
+// Module ID: 10333
+// Function ID: 79725
 // Name: ChannelIndicator
 // Dependencies: [27, 4326, 33, 4130, 689, 3834, 2]
 // Exports: default
 
-// Module 10304 (ChannelIndicator)
+// Module 10333 (ChannelIndicator)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";

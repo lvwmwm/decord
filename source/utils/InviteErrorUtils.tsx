@@ -1,10 +1,10 @@
-// Module ID: 11758
-// Function ID: 91295
+// Module ID: 11785
+// Function ID: 91533
 // Name: getDescriptiveInviteError
 // Dependencies: [1849, 653, 3776, 1212, 1920, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 11758 (getDescriptiveInviteError)
+// Module 11785 (getDescriptiveInviteError)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 

@@ -1,7 +1,7 @@
 // Module ID: 7160
-// Function ID: 57798
+// Function ID: 57827
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 5, 27, 7120, 1194, 5621, 653, 5622, 1851, 482, 3, 5624, 5638, 3813, 686, 3789, 3791, 4470, 1212, 675, 507, 2]
+// Dependencies: [29, 5, 27, 7119, 1194, 5619, 653, 5620, 1851, 482, 3, 5622, 5638, 3813, 686, 3789, 3791, 4470, 1212, 675, 507, 2]
 // Exports: downgradeSubscription, loadUserCountry, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
 // Module 7160 (_createForOfIteratorHelperLoose)
@@ -107,10 +107,10 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getPlanIdForProduct(arg0, arg1) {
   if (arg1) {
-    return require(5624) /* SubscriptionPlans */.getPlanIdForGift(arg0);
+    return require(5622) /* SubscriptionPlans */.getPlanIdForGift(arg0);
   } else {
     let basePlanId;
-    const tmp5 = require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems[arg0];
+    const tmp5 = require(5622) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems[arg0];
     if (null != tmp5) {
       basePlanId = tmp5.basePlanId;
     }

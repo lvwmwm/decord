@@ -1,10 +1,10 @@
-// Module ID: 7835
-// Function ID: 62461
+// Module ID: 7924
+// Function ID: 62780
 // Name: createMessageFailedEmbed
-// Dependencies: [7622, 653, 7635, 7836, 1212, 7837, 4670, 2]
+// Dependencies: [7711, 653, 7724, 7925, 1212, 7926, 4670, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 7835 (createMessageFailedEmbed)
+// Module 7924 (createMessageFailedEmbed)
 import { MessageFailureState } from "Changeset";
 import { MessageEmbedTypes } from "ME";
 
@@ -22,9 +22,9 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       obj.failureState = MessageFailureState.UNSPECIFIED;
       obj.disableBackgroundColor = true;
       obj.bodyTextColor = colors.failedMessageBodyTextColor;
-      colors = require(7635) /* frozen */.getAssetUriForEmbed;
-      obj.iconURL = colors(importDefault(7837));
-      const tmp16 = require(7635) /* frozen */;
+      colors = require(7724) /* frozen */.getAssetUriForEmbed;
+      obj.iconURL = colors(importDefault(7926));
+      const tmp16 = require(7724) /* frozen */;
     } else {
       obj = { type: MessageEmbedTypes.TEXT };
       const intl2 = require(1212) /* getSystemLocale */.intl;
@@ -51,6 +51,6 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
   }
 };
 export const createAutomodBlockedMessageEmbed = function createAutomodBlockedMessageEmbed(errorMessage) {
-  const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7836)) };
+  const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: require(7724) /* frozen */.getAssetUriForEmbed(importDefault(7925)) };
   return obj;
 };

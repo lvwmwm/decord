@@ -1,10 +1,10 @@
-// Module ID: 15551
-// Function ID: 119939
+// Module ID: 15598
+// Function ID: 120261
 // Name: ContextMenuCommandNavigator
-// Dependencies: [31, 27, 33, 9113, 4130, 689, 6707, 5519, 1557, 9122, 1212, 15552, 15554, 2]
+// Dependencies: [31, 27, 33, 9149, 4130, 689, 6707, 5517, 1557, 9158, 1212, 15599, 15601, 2]
 // Exports: default
 
-// Module 15551 (ContextMenuCommandNavigator)
+// Module 15598 (ContextMenuCommandNavigator)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,7 +30,7 @@ export default function ContextMenuCommandNavigator() {
   const tmp = createNativeStackNavigator();
   const require = tmp;
   const layoutEffect = React.useLayoutEffect(() => tmp(outer1_2[6]).trackAppUIViewed(), []);
-  let obj = require(5519) /* NavigationStack */;
+  let obj = require(5517) /* NavigationStack */;
   const importDefault = obj.useAccessibilityNativeStackOptions();
   const rect = importDefault(1557)();
   obj = { style: items };

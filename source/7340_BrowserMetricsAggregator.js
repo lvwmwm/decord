@@ -1,5 +1,5 @@
 // Module ID: 7340
-// Function ID: 59197
+// Function ID: 59226
 // Name: BrowserMetricsAggregator
 // Dependencies: [6, 7, 7333, 7250, 7337, 7338, 7241, 7339]
 

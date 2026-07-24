@@ -1,10 +1,10 @@
-// Module ID: 14180
-// Function ID: 108994
+// Module ID: 14230
+// Function ID: 109317
 // Name: MessagesHeaderItem
 // Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: default
 
-// Module 14180 (MessagesHeaderItem)
+// Module 14230 (MessagesHeaderItem)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,9 +1,9 @@
-// Module ID: 8843
-// Function ID: 69731
+// Module ID: 8882
+// Function ID: 69946
 // Name: getInputDeviceName
-// Dependencies: [5, 4201, 1348, 4177, 4202, 1906, 1849, 653, 8844, 4191, 3, 675, 574, 686, 8845, 8847, 8848, 8856, 2]
+// Dependencies: [5, 4201, 1348, 4177, 4202, 1906, 1849, 653, 8883, 4191, 3, 675, 574, 686, 8884, 8886, 8887, 8895, 2]
 
-// Module 8843 (getInputDeviceName)
+// Module 8882 (getInputDeviceName)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -242,7 +242,7 @@ obj = {
     if (STREAM === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    let obj = require(8845) /* snapVolumeToDefault */;
+    let obj = require(8884) /* snapVolumeToDefault */;
     const snapVolumeToDefaultResult = obj.snapVolumeToDefault(volume, DEFAULT);
     obj = { type: "AUDIO_SET_LOCAL_VOLUME", context: DEFAULT, userId: closure_0, volume: snapVolumeToDefaultResult };
     importDefault(686).dispatch(obj);
@@ -260,7 +260,7 @@ obj = {
   setSpatialAudio(arg0, arg1) {
     if (!callback3()) {
       const audioMixerSettings = store3.getAudioMixerSettings();
-      importDefault(8847)("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
+      importDefault(8886)("spatial_audio_enabled", arg0, audioMixerSettings.enabled, arg1);
       let obj = importDefault(686);
       obj = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: MediaEngineContextTypes.DEFAULT };
       obj = {};
@@ -481,8 +481,8 @@ obj = {
       if (null != activeInputProfile) {
         tmp7 = activeInputProfile;
       }
-      importDefault(8847)("active_input_profile", inputProfile, tmp7, analyticsLocations);
-      const tmp3 = importDefault(8847);
+      importDefault(8886)("active_input_profile", inputProfile, tmp7, analyticsLocations);
+      const tmp3 = importDefault(8886);
       obj = { type: "AUDIO_SET_ACTIVE_INPUT_PROFILE", inputProfile };
       importDefault(686).dispatch(obj);
       const obj2 = importDefault(686);
@@ -502,8 +502,8 @@ obj = {
     }
     const analyticsLocations = obj.analyticsLocations;
     if (!callback3()) {
-      importDefault(8847)("stream_attenuation_enabled", sidechainCompression, store3.getSidechainCompression(), analyticsLocations);
-      const tmp3 = importDefault(8847);
+      importDefault(8886)("stream_attenuation_enabled", sidechainCompression, store3.getSidechainCompression(), analyticsLocations);
+      const tmp3 = importDefault(8886);
       obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION", enabled: sidechainCompression };
       importDefault(686).dispatch(obj);
       const obj2 = importDefault(686);
@@ -516,8 +516,8 @@ obj = {
     }
     const analyticsLocations = obj.analyticsLocations;
     if (!callback3()) {
-      importDefault(8847)("stream_attenuation_strength", sidechainCompressionStrength, store3.getSidechainCompressionStrength(), analyticsLocations);
-      const tmp3 = importDefault(8847);
+      importDefault(8886)("stream_attenuation_strength", sidechainCompressionStrength, store3.getSidechainCompressionStrength(), analyticsLocations);
+      const tmp3 = importDefault(8886);
       obj = { type: "AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH", strength: sidechainCompressionStrength };
       importDefault(686).dispatch(obj);
       const obj2 = importDefault(686);
@@ -561,25 +561,25 @@ obj = {
       attenuateWhileSpeakingOthers = store3.getAttenuateWhileSpeakingOthers();
       if (attenuation !== attenuation) {
         attenuateWhileSpeakingSelf = dependencyMap;
-        importDefault(8847)("global_attenuation_strength", attenuation, attenuation);
+        importDefault(8886)("global_attenuation_strength", attenuation, attenuation);
         let obj = importDefault(686);
         obj = { type: "AUDIO_SET_ATTENUATION", attenuation, attenuateWhileSpeakingSelf, attenuateWhileSpeakingOthers };
         obj.dispatch(obj);
       } else if (attenuateWhileSpeakingSelf === attenuateWhileSpeakingSelf) {
         if (attenuateWhileSpeakingOthers !== attenuateWhileSpeakingOthers) {
-          importDefault(8847)("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
+          importDefault(8886)("global_attenuation_for_other_speak_enabled", attenuateWhileSpeakingOthers, attenuateWhileSpeakingOthers);
         }
       }
-      importDefault(8847)("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
+      importDefault(8886)("global_attenuation_for_self_speak_enabled", attenuateWhileSpeakingSelf, attenuateWhileSpeakingSelf);
     }
   },
   setQoS(enabled) {
     if (!callback3()) {
-      importDefault(8847)("quality_of_service_packets_enabled", enabled, store3.getQoS());
+      importDefault(8886)("quality_of_service_packets_enabled", enabled, store3.getQoS());
       let obj = importDefault(686);
       obj = { type: "AUDIO_SET_QOS", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8847);
+      const tmp3 = importDefault(8886);
     }
   },
   reset() {
@@ -591,11 +591,11 @@ obj = {
   },
   setSilenceWarning(enabled) {
     if (!callback3()) {
-      importDefault(8847)("silence_warning_enabled", enabled, store3.getEnableSilenceWarning());
+      importDefault(8886)("silence_warning_enabled", enabled, store3.getEnableSilenceWarning());
       let obj = importDefault(686);
       obj = { type: "AUDIO_SET_DISPLAY_SILENCE_WARNING", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8847);
+      const tmp3 = importDefault(8886);
     }
   },
   setDebugLogging(enabled) {
@@ -605,29 +605,29 @@ obj = {
   },
   setVideoHook(enabled) {
     if (!callback3()) {
-      importDefault(8847)("video_hook_enabled", enabled, store3.getVideoHook());
+      importDefault(8886)("video_hook_enabled", enabled, store3.getVideoHook());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_VIDEO_HOOK", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8847);
+      const tmp3 = importDefault(8886);
     }
   },
   setExperimentalSoundshare(enabled) {
     if (!callback3()) {
-      importDefault(8847)("experimental_soundshare_enabled", enabled, store3.getExperimentalSoundshare());
+      importDefault(8886)("experimental_soundshare_enabled", enabled, store3.getExperimentalSoundshare());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8847);
+      const tmp3 = importDefault(8886);
     }
   },
   setUseSystemScreensharePicker(enabled) {
     if (!callback3()) {
-      importDefault(8847)("system_screenshare_picker_enabled", enabled, store3.getUseSystemScreensharePicker());
+      importDefault(8886)("system_screenshare_picker_enabled", enabled, store3.getUseSystemScreensharePicker());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER", enabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8847);
+      const tmp3 = importDefault(8886);
     }
   },
   setAudioSubsystem(arg0) {
@@ -636,7 +636,7 @@ obj = {
     return callback(tmp)();
   },
   setVideoEnabled(enabled) {
-    let obj = require(8848) /* _getFilterBlob */;
+    let obj = require(8887) /* _getFilterBlob */;
     const result = obj.applyInitialVideoBackgroundOption();
     obj = { type: "MEDIA_ENGINE_SET_VIDEO_ENABLED", enabled };
     importDefault(686).dispatch(obj);
@@ -647,7 +647,7 @@ obj = {
       qualityOptions = closure_1.qualityOptions;
     }
     if (null != qualityOptions) {
-      let obj = require(8856) /* isPremiumRequirement */;
+      let obj = require(8895) /* isPremiumRequirement */;
       const preset = closure_1.qualityOptions.preset;
       const resolution = closure_1.qualityOptions.resolution;
       const frameRate = closure_1.qualityOptions.frameRate;
@@ -663,11 +663,11 @@ obj = {
   },
   setAecDump(aecDumpEnabled) {
     if (!callback3()) {
-      importDefault(8847)("diagnostic_audio_recording_enabled", aecDumpEnabled, store3.getAecDump());
+      importDefault(8886)("diagnostic_audio_recording_enabled", aecDumpEnabled, store3.getAecDump());
       let obj = importDefault(686);
       obj = { type: "MEDIA_ENGINE_SET_AEC_DUMP", enabled: aecDumpEnabled };
       obj.dispatch(obj);
-      const tmp3 = importDefault(8847);
+      const tmp3 = importDefault(8886);
     }
   },
   interact() {

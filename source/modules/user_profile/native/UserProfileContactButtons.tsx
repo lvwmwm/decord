@@ -1,10 +1,10 @@
-// Module ID: 12151
-// Function ID: 95158
+// Module ID: 12178
+// Function ID: 95398
 // Name: FlatFriendButton
-// Dependencies: [31, 27, 3767, 653, 33, 4130, 689, 4543, 5464, 8266, 11986, 566, 3969, 12152, 4068, 1212, 11653, 8923, 10886, 4098, 4337, 4140, 12154, 7771, 4629, 9085, 10110, 2]
+// Dependencies: [31, 27, 3767, 653, 33, 4130, 689, 4543, 5462, 8310, 12012, 566, 3969, 12179, 4068, 1212, 11680, 8962, 10913, 4098, 4337, 4140, 12181, 7533, 4629, 9123, 10142, 2]
 // Exports: default
 
-// Module 12151 (FlatFriendButton)
+// Module 12178 (FlatFriendButton)
 import "result";
 import { View } from "set";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

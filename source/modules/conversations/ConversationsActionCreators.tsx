@@ -1,10 +1,10 @@
-// Module ID: 9273
-// Function ID: 72431
+// Module ID: 9309
+// Function ID: 72640
 // Name: _fetchChannelConversations
-// Dependencies: [5, 6831, 9274, 6833, 653, 9271, 686, 507, 6691, 9275, 9276, 9283, 2]
+// Dependencies: [5, 6830, 9310, 6832, 653, 9307, 686, 507, 6691, 9311, 9312, 9319, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9273 (_fetchChannelConversations)
+// Module 9309 (_fetchChannelConversations)
 import useGuildHasFeature from "useGuildHasFeature";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -68,11 +68,11 @@ export const setConversationFeedbackRating = function setConversationFeedbackRat
 };
 export { fetchConversationMessages };
 export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
-  const ConversationsAnalytics = require(9275) /* channelProps */.ConversationsAnalytics;
+  const ConversationsAnalytics = require(9311) /* channelProps */.ConversationsAnalytics;
   const result = ConversationsAnalytics.trackEntrypointImpression({ channelId: id, conversationCount: stateFromStores1 });
   if (closure_5.shouldTriggerOnNextExposure()) {
-    importDefault(9276).fireSurveyAction(require(9283) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
-    const obj2 = importDefault(9276);
+    importDefault(9312).fireSurveyAction(require(9319) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
+    const obj2 = importDefault(9312);
   }
   importDefault(686).dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
 };

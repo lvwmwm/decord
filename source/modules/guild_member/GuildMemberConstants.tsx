@@ -1,5 +1,5 @@
 // Module ID: 3746
-// Function ID: 28589
+// Function ID: 28590
 // Name: GuildMemberFlags
 // Dependencies: [2]
 

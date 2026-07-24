@@ -1,10 +1,10 @@
-// Module ID: 16428
-// Function ID: 128017
+// Module ID: 16475
+// Function ID: 128341
 // Name: Header
-// Dependencies: [31, 27, 33, 4130, 689, 5121, 4126, 14106, 1212, 1557, 4543, 1456, 2]
+// Dependencies: [31, 27, 33, 4130, 689, 5121, 4126, 14156, 1212, 1557, 4543, 1456, 2]
 // Exports: default
 
-// Module 16428 (Header)
+// Module 16475 (Header)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ function Header(arg0) {
   const items = [callback(require(4126) /* Text */.Text, obj), , ];
   obj = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
   items[1] = callback(require(4126) /* Text */.Text, obj);
-  items[2] = callback(importDefault(14106), { style: tmp.separator });
+  items[2] = callback(importDefault(14156), { style: tmp.separator });
   obj.children = items;
   return callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }

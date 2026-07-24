@@ -1,10 +1,10 @@
-// Module ID: 11851
-// Function ID: 91826
+// Module ID: 11878
+// Function ID: 92064
 // Name: Spacer
-// Dependencies: [31, 27, 33, 689, 4130, 8589, 8600, 8594, 1212, 4126, 8626, 11852, 1450, 7879, 2]
+// Dependencies: [31, 27, 33, 689, 4130, 8632, 8642, 8636, 1212, 4126, 8668, 11879, 1450, 7527, 2]
 // Exports: default
 
-// Module 11851 (Spacer)
+// Module 11878 (Spacer)
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -117,10 +117,10 @@ export default function GameProfileSimilarGames(trackAction) {
   trackAction = trackAction.trackAction;
   let importDefault;
   const tmp = _createForOfIteratorHelperLoose();
-  const GameProfileSimilarGamesMobileExperiment = trackAction(8626).GameProfileSimilarGamesMobileExperiment;
+  const GameProfileSimilarGamesMobileExperiment = trackAction(8668).GameProfileSimilarGamesMobileExperiment;
   const config = GameProfileSimilarGamesMobileExperiment.useConfig({ location: "GameProfileSimilarGames" });
   ({ enabled, dense } = config);
-  const tmp3 = importDefault(11852)(trackAction.gameId, enabled);
+  const tmp3 = importDefault(11879)(trackAction.gameId, enabled);
   const similarGames = tmp3.similarGames;
   let num = 3;
   if (dense) {
@@ -148,7 +148,7 @@ export default function GameProfileSimilarGames(trackAction) {
       ListHeaderComponent: ListPadding,
       ListFooterComponent: ListPadding
     };
-    items[1] = callback(trackAction(7879).FlashList, obj1);
+    items[1] = callback(trackAction(7527).FlashList, obj1);
     obj.children = items;
     let tmp6 = callback2(closure_6, obj);
   } else {
@@ -174,7 +174,7 @@ export default function GameProfileSimilarGames(trackAction) {
         decelerationRate: "fast",
         snapToInterval: result + PX_12
       };
-      items1[1] = callback(trackAction(7879).FlashList, obj5);
+      items1[1] = callback(trackAction(7527).FlashList, obj5);
       obj2.children = items1;
       tmp6 = callback2(closure_6, obj2);
     }

@@ -1,10 +1,10 @@
-// Module ID: 15181
-// Function ID: 115575
+// Module ID: 15228
+// Function ID: 115897
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 31, 27, 4142, 8318, 8306, 653, 33, 4130, 689, 566, 8322, 5500, 5503, 1212, 5504, 8321, 5165, 7087, 669, 21, 5069, 4098, 8320, 4337, 15182, 1934, 15191, 2]
+// Dependencies: [5, 31, 27, 4142, 8362, 8350, 653, 33, 4130, 689, 566, 8366, 5498, 5501, 1212, 5502, 8365, 5165, 7086, 669, 21, 5069, 4098, 8364, 4337, 15229, 1934, 15238, 2]
 // Exports: default
 
-// Module 15181 (ICYMISettingsActionSheet)
+// Module 15228 (ICYMISettingsActionSheet)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import "result";
 import { View } from "ICYMI_CUSTOM_SCORES_MODAL_KEY";
@@ -33,7 +33,7 @@ export default function ICYMISettingsActionSheet() {
   let obj = stateFromStoresObject(566);
   const items = [closure_6];
   stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getState());
-  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8322).ICYMIStaffDebuggingUtilityExperiment;
+  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8366).ICYMIStaffDebuggingUtilityExperiment;
   obj = { showGradient: true, startExpanded: true };
   obj = {};
   const intl = stateFromStoresObject(1212).intl;
@@ -55,7 +55,7 @@ export default function ICYMISettingsActionSheet() {
       obj.setFilters(obj);
       const dehydrated = outer1_1(outer1_2[16]).fetchDehydrated();
     };
-    const items1 = [callback2(stateFromStoresObject(5504).TableSwitchRow, obj2), , ];
+    const items1 = [callback2(stateFromStoresObject(5502).TableSwitchRow, obj2), , ];
     let obj3 = {
       label: "Clear read states",
       onPress() {
@@ -110,9 +110,9 @@ export default function ICYMISettingsActionSheet() {
   };
   items2[1] = callback2(stateFromStoresObject(5165).TableRow, obj5);
   obj.children = items2;
-  const items3 = [closure_12(stateFromStoresObject(5503).TableRowGroup, obj), ];
+  const items3 = [closure_12(stateFromStoresObject(5501).TableRowGroup, obj), ];
   const tmp2 = _createForOfIteratorHelperLoose();
   items3[1] = callback2(View, { style: _createForOfIteratorHelperLoose().padding });
   obj.children = items3;
-  return closure_12(stateFromStoresObject(5500).ActionSheet, obj);
+  return closure_12(stateFromStoresObject(5498).ActionSheet, obj);
 };

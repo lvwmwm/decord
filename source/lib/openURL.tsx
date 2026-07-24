@@ -1,7 +1,7 @@
 // Module ID: 3821
-// Function ID: 31742
+// Function ID: 31743
 // Name: _openURL
-// Dependencies: [5, 3822, 8343, 1934, 2]
+// Dependencies: [5, 3822, 8387, 1934, 2]
 // Exports: default
 
 // Module 3821 (_openURL)

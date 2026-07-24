@@ -1,10 +1,10 @@
-// Module ID: 15769
-// Function ID: 121695
+// Module ID: 15816
+// Function ID: 122017
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4143, 4149, 1194, 10015, 15770, 4148, 10016, 10020, 12992, 689, 2]
+// Dependencies: [4143, 4149, 1194, 10047, 15817, 4148, 10048, 10052, 13044, 689, 2]
 // Exports: computePIPParticipantToShow, computePIPSize, getPIPMode
 
-// Module 15769 (_createForOfIteratorHelperLoose)
+// Module 15816 (_createForOfIteratorHelperLoose)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
@@ -357,7 +357,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
           if (!blockList.has(participant.user.id)) {
             const participant1 = store.getParticipant(channelId, participant.user.id);
             if (null != participant1) {
-              let obj = require(10020) /* participantHasVideo */;
+              let obj = require(10052) /* participantHasVideo */;
               if (obj.canRenderParticipantVideo(participant1)) {
                 obj = { id: participant1.id, type: ParticipantTypes.USER };
                 return obj;
@@ -435,7 +435,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
       type = participant2.type;
       if (ParticipantTypes.STREAM === type) {
         if (null != authStore.getActiveStreamForUser(participant2.user.id, participant2.stream.guildId)) {
-          let obj7 = require(10020) /* participantHasVideo */;
+          let obj7 = require(10052) /* participantHasVideo */;
           if (obj7.canRenderParticipantVideo(participant2)) {
             const obj4 = {};
             ({ id: obj9.id, type: obj9.type } = participant2);
@@ -458,7 +458,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
   const participant3 = store.getParticipant(channelId, id);
   if (!blockList.has(id)) {
     if (null != participant3) {
-      let obj9 = require(10020) /* participantHasVideo */;
+      let obj9 = require(10052) /* participantHasVideo */;
       if (obj9.canRenderParticipantVideo(participant3)) {
         obj7 = { id, type: ParticipantTypes.USER };
         return obj7;
@@ -473,7 +473,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
       if (!blockList.has(value.id)) {
         let tmp33 = require;
         let tmp34 = dependencyMap;
-        let obj12 = require(10020) /* participantHasVideo */;
+        let obj12 = require(10052) /* participantHasVideo */;
         if (obj12.canRenderParticipantVideo(value)) {
           break;
         }
@@ -524,7 +524,7 @@ export const getPIPMode = function getPIPMode(connected) {
               if (obj.canRenderParticipantVideo(tmp10)) {
                 return constants2.IN_PANEL;
               }
-              obj = require(10020) /* participantHasVideo */;
+              obj = require(10052) /* participantHasVideo */;
             }
           }
           if (tmp) {
@@ -540,7 +540,7 @@ export const getPIPMode = function getPIPMode(connected) {
                   if (value.id !== store2.getId()) {
                     let tmp13 = require;
                     let tmp14 = dependencyMap;
-                    let obj2 = require(10020) /* participantHasVideo */;
+                    let obj2 = require(10052) /* participantHasVideo */;
                     if (obj2.canRenderParticipantVideo(value)) {
                       break;
                     }

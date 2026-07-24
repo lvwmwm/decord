@@ -1,10 +1,10 @@
-// Module ID: 7883
-// Function ID: 62756
+// Module ID: 7970
+// Function ID: 63067
 // Name: useEditBannerSource
-// Dependencies: [7884, 1392, 665, 2]
+// Dependencies: [7971, 1392, 665, 2]
 // Exports: getAvatarSource, useEditBannerSource, useUserProfileBannerBackgroundColor
 
-// Module 7883 (useEditBannerSource)
+// Module 7970 (useEditBannerSource)
 const result = require("pad2").fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
 
 export const useEditBannerSource = function useEditBannerSource(arg0) {
@@ -12,7 +12,7 @@ export const useEditBannerSource = function useEditBannerSource(arg0) {
   let pendingBanner;
   ({ displayProfile, pendingBanner } = arg0);
   if (null != pendingBanner) {
-    return require(7884) /* useDominantRGBFromImage */.memoizedImageSource(pendingBanner);
+    return require(7971) /* useDominantRGBFromImage */.memoizedImageSource(pendingBanner);
   } else {
     if (null === pendingBanner) {
       let guildId;
@@ -49,10 +49,10 @@ export const useUserProfileBannerBackgroundColor = function useUserProfileBanner
   ({ user, pendingAvatarSrc, displayProfile } = arg0);
   if (null == user) {
     let primaryColor;
-    const obj3 = require(7884) /* useDominantRGBFromImage */;
-    const memoizedImageSourceResult = require(7884) /* useDominantRGBFromImage */.memoizedImageSource(null);
+    const obj3 = require(7971) /* useDominantRGBFromImage */;
+    const memoizedImageSourceResult = require(7971) /* useDominantRGBFromImage */.memoizedImageSource(null);
     const obj4 = require(665) /* pad2 */;
-    let rgb2intResult = obj4.rgb2int(require(7884) /* useDominantRGBFromImage */.useDominantColorFromImage(null, memoizedImageSourceResult));
+    let rgb2intResult = obj4.rgb2int(require(7971) /* useDominantRGBFromImage */.useDominantColorFromImage(null, memoizedImageSourceResult));
     if (null != displayProfile) {
       primaryColor = displayProfile.primaryColor;
     }
@@ -75,7 +75,7 @@ export const getAvatarSource = function getAvatarSource(guildId, guildId2, avata
   if (null == guildId) {
     return null;
   } else if (undefined === userAvatarURL) {
-    let obj = require(7884) /* useDominantRGBFromImage */;
+    let obj = require(7971) /* useDominantRGBFromImage */;
     let memoizedImageSourceResult = obj.memoizedImageSource(guildId.getAvatarURL(guildId2, 80, !acked));
   } else {
     if (null == userAvatarURL) {
@@ -85,7 +85,7 @@ export const getAvatarSource = function getAvatarSource(guildId, guildId2, avata
       userAvatarURL = require(1392) /* getAvatarURL */.getUserAvatarURL(obj);
       const obj3 = require(1392) /* getAvatarURL */;
     }
-    memoizedImageSourceResult = require(7884) /* useDominantRGBFromImage */.memoizedImageSource(userAvatarURL);
-    const obj2 = require(7884) /* useDominantRGBFromImage */;
+    memoizedImageSourceResult = require(7971) /* useDominantRGBFromImage */.memoizedImageSource(userAvatarURL);
+    const obj2 = require(7971) /* useDominantRGBFromImage */;
   }
 };

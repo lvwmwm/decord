@@ -1,9 +1,9 @@
-// Module ID: 16168
-// Function ID: 125401
+// Module ID: 16215
+// Function ID: 125725
 // Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 9532, 9535, 686, 664, 5078, 2]
+// Dependencies: [7, 6, 15, 17, 18, 9568, 9571, 686, 664, 5078, 2]
 
-// Module 16168 (_isNativeReflectConstruct)
+// Module 16215 (_isNativeReflectConstruct)
 import dispatcher from "dispatcher";
 import apexExperiment from "apexExperiment";
 import _possibleConstructorReturn from "_possibleConstructorReturn";

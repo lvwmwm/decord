@@ -1,10 +1,10 @@
-// Module ID: 10990
-// Function ID: 85536
+// Module ID: 11017
+// Function ID: 85725
 // Name: closeModal
-// Dependencies: [5, 31, 10991, 33, 10989, 480, 1212, 5087, 10992, 9194, 8438, 3830, 5519, 2]
+// Dependencies: [5, 31, 11018, 33, 11016, 480, 1212, 5087, 11019, 9230, 8482, 3830, 5517, 2]
 // Exports: default
 
-// Module 10990 (closeModal)
+// Module 11017 (closeModal)
 import isThrottled from "isThrottled";
 import result from "result";
 import TransferOwnershipModalScenes from "TransferOwnershipModalScenes";
@@ -14,7 +14,7 @@ let closure_5;
 let closure_6;
 const require = arg1;
 function closeModal() {
-  importDefault(10989).close();
+  importDefault(11016).close();
 }
 ({ TransferOwnershipModalScenes: closure_5, TransferOwnershipVerificationTypes: closure_6 } = TransferOwnershipModalScenes);
 let result = require("TransferOwnershipModalScenes").fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModal.tsx");
@@ -73,5 +73,5 @@ export default function TransferOwnershipModal(guild) {
   let obj = { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP };
   let intl = guild(1212).intl;
   obj.headerBackTitle = intl.string(guild(1212).t["13/7kX"]);
-  return jsx(guild(5519).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP });
+  return jsx(guild(5517).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP });
 };

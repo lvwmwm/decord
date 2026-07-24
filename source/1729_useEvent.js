@@ -1,5 +1,5 @@
 // Module ID: 1729
-// Function ID: 19394
+// Function ID: 19395
 // Name: useEvent
 // Dependencies: [31, 1687]
 // Exports: useEvent

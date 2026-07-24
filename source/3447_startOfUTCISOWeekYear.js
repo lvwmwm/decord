@@ -1,5 +1,5 @@
 // Module ID: 3447
-// Function ID: 26765
+// Function ID: 26766
 // Name: startOfUTCISOWeekYear
 // Dependencies: [3448, 3446, 3210]
 // Exports: default

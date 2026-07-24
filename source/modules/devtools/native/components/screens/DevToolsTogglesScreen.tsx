@@ -1,10 +1,10 @@
-// Module ID: 14678
-// Function ID: 111899
+// Module ID: 14725
+// Function ID: 112220
 // Name: fuzzySearchToggle
-// Dependencies: [57, 31, 27, 5090, 4129, 33, 5045, 4130, 689, 5165, 3831, 5505, 566, 5503, 14662, 5160, 14679, 4541, 14680, 5772, 2]
+// Dependencies: [57, 31, 27, 5090, 4129, 33, 5045, 4130, 689, 5165, 3831, 5503, 566, 5501, 14709, 5160, 14726, 4541, 14727, 5772, 2]
 // Exports: default
 
-// Module 14678 (fuzzySearchToggle)
+// Module 14725 (fuzzySearchToggle)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { ScrollView } from "get ActivityIndicator";
@@ -48,7 +48,7 @@ function ToggleTableRow(toggleName) {
       obj = { content: description, key: toggleName };
       obj.open(obj);
     },
-    trailing: callback2(toggleName(5505).FormSwitch, { value, onValueChange })
+    trailing: callback2(toggleName(5503).FormSwitch, { value, onValueChange })
   };
   return callback2(toggleName(5165).TableRow, obj, toggleName);
 }
@@ -83,7 +83,7 @@ function DevTogglesForCategory(category) {
           }, tmp);
         })
     };
-    tmp = callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
+    tmp = callback2(require(5501) /* TableRowGroupTitle */.TableRowGroup, obj);
   }
   return tmp;
 }
@@ -100,7 +100,7 @@ export default function DevToolsTogglesScreen() {
   const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(React.useState(""), 2);
   const first = tmp2[0];
-  let obj = first(14679);
+  let obj = first(14726);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj1 = first(566);
   const items = [_isNativeReflectConstruct];
@@ -134,7 +134,7 @@ export default function DevToolsTogglesScreen() {
   obj4.label = callback2(first(5772).SearchField, obj5);
   items3[1] = callback2(first(5165).TableRow, obj4);
   obj2.children = items3;
-  const items4 = [callback3(first(5503).TableRowGroup, obj2), , ];
+  const items4 = [callback3(first(5501).TableRowGroup, obj2), , ];
   let tmp8 = null;
   if (stateFromStores.length > 0) {
     const obj6 = {
@@ -155,7 +155,7 @@ export default function DevToolsTogglesScreen() {
           }, tmp);
         })
     };
-    tmp8 = callback2(first(5503).TableRowGroup, obj6);
+    tmp8 = callback2(first(5501).TableRowGroup, obj6);
   }
   items4[1] = tmp8;
   const entries = Object.entries(CATEGORY_LABELS);

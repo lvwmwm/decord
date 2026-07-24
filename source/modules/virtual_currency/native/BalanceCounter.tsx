@@ -1,9 +1,9 @@
-// Module ID: 9795
-// Function ID: 76107
+// Module ID: 9827
+// Function ID: 76301
 // Name: BalanceCounter
-// Dependencies: [57, 31, 33, 3991, 3849, 4542, 9796, 4126, 2]
+// Dependencies: [57, 31, 33, 3991, 3849, 4542, 9828, 4126, 2]
 
-// Module 9795 (BalanceCounter)
+// Module 9827 (BalanceCounter)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import closure_8 from "result";
@@ -51,7 +51,7 @@ class BalanceCounter {
     first1 = tmp7[0];
     c8 = first1;
     c9 = tmp7[1];
-    tmp9 = useCallback((set, targetHeight, duration) => {
+    tmp9 = useCallback((set, value, duration) => {
       callback(true);
       let obj = value(ref[5]);
       obj = { duration, damping: 15, stiffness: 150, mass: 1 };
@@ -62,7 +62,7 @@ class BalanceCounter {
       fn.__closure = obj;
       fn.__workletHash = 16153226572520;
       fn.__initData = closure_10;
-      const result = set.set(obj.withSpring(targetHeight, obj, "respect-motion-settings", fn));
+      const result = set.set(obj.withSpring(value, obj, "respect-motion-settings", fn));
     }, []);
     jsx = tmp9;
     items = [, , , , , ];

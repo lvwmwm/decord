@@ -1,10 +1,10 @@
-// Module ID: 11395
-// Function ID: 88578
+// Module ID: 11423
+// Function ID: 88817
 // Name: NewBadge
-// Dependencies: [31, 27, 33, 4130, 477, 689, 3976, 8830, 4066, 4126, 1212, 2]
+// Dependencies: [31, 27, 33, 4130, 477, 689, 3976, 8869, 4066, 4126, 1212, 2]
 // Exports: default
 
-// Module 11395 (NewBadge)
+// Module 11423 (NewBadge)
 import "result";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -35,7 +35,7 @@ let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  const tmp = importDefault(8830)();
+  const tmp = importDefault(8869)();
   const tmp2 = importDefault(4066)();
   const tmp3 = callback(tmp, tmp2);
   let obj = { style: tmp3.base };

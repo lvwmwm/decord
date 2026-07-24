@@ -1,9 +1,9 @@
-// Module ID: 9364
-// Function ID: 73079
+// Module ID: 9400
+// Function ID: 73288
 // Name: getEmojiItemUrl
-// Dependencies: [31, 27, 1278, 9329, 1314, 33, 4130, 689, 477, 666, 1392, 4652, 4660, 5085, 3976, 5152, 5153, 1273, 9365, 2]
+// Dependencies: [31, 27, 1278, 9365, 1314, 33, 4130, 689, 477, 666, 1392, 4652, 4660, 5085, 3976, 5152, 5153, 1273, 9401, 2]
 
-// Module 9364 (getEmojiItemUrl)
+// Module 9400 (getEmojiItemUrl)
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -189,7 +189,7 @@ let closure_10 = importAllResult.memo((emojis) => {
     }
   };
   obj = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
-  return callback(importDefault(9365), obj);
+  return callback(importDefault(9401), obj);
 });
 let closure_11 = importAllResult.memo((arg0) => {
   let animateEmoji;

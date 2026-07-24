@@ -1,10 +1,10 @@
-// Module ID: 5588
-// Function ID: 47425
+// Module ID: 5586
+// Function ID: 47422
 // Name: useNavigationTheme
 // Dependencies: [31, 3834, 689, 3976, 2]
 // Exports: useNavigationTheme
 
-// Module 5588 (useNavigationTheme)
+// Module 5586 (useNavigationTheme)
 import result from "result";
 
 const require = arg1;

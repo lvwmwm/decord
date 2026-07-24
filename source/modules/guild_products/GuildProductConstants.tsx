@@ -1,5 +1,5 @@
 // Module ID: 4708
-// Function ID: 40966
+// Function ID: 40970
 // Name: GUILD_PRODUCT_EDIT_MODAL_KEY
 // Dependencies: [2]
 

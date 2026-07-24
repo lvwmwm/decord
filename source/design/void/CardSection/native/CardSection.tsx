@@ -1,10 +1,10 @@
-// Module ID: 7532
-// Function ID: 60273
+// Module ID: 7667
+// Function ID: 60908
 // Name: CardSection
-// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 7533, 2]
+// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 7668, 2]
 // Exports: default
 
-// Module 7532 (CardSection)
+// Module 7667 (CardSection)
 import "result";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function CardSection(arg0) {
     obj.style = items1;
     obj.accessibilityRole = "header";
     obj.children = title;
-    tmp4 = callback(importDefault(7533), obj);
+    tmp4 = callback(importDefault(7668), obj);
   }
   const items2 = [tmp4, , ];
   let tmp8 = null;

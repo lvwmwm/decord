@@ -1,10 +1,10 @@
-// Module ID: 12312
-// Function ID: 95897
+// Module ID: 12339
+// Function ID: 96137
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: [31, 12313, 1825, 7820, 566, 12314, 2]
+// Dependencies: [31, 12340, 1825, 7909, 566, 12341, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12312 (_getPresenceActivityInviteCoverImageURL)
+// Module 12339 (_getPresenceActivityInviteCoverImageURL)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -29,8 +29,8 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     }
     let assetImage = null;
     if (null != invite_cover_image) {
-      assetImage = require(7820) /* _createForOfIteratorHelperLoose */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
-      const obj2 = require(7820) /* _createForOfIteratorHelperLoose */;
+      assetImage = require(7909) /* _createForOfIteratorHelperLoose */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
+      const obj2 = require(7909) /* _createForOfIteratorHelperLoose */;
     }
     if (null != assetImage) {
       coverImageURL = assetImage;
@@ -74,8 +74,8 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
   const imageURL = tmp.imageURL;
   if (tmp.cachedImageURL !== imageURL) {
     obj = { messageId, coverImageURL: imageURL };
-    importAll(12314).setCoverImageURL(obj);
-    const obj2 = importAll(12314);
+    importAll(12341).setCoverImageURL(obj);
+    const obj2 = importAll(12341);
   }
   return imageURL;
 };

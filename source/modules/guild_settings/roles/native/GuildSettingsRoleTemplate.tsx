@@ -1,10 +1,10 @@
-// Module ID: 16308
-// Function ID: 127199
+// Module ID: 16355
+// Function ID: 127523
 // Name: width
-// Dependencies: [57, 31, 27, 4122, 1838, 16304, 653, 33, 4130, 689, 8133, 675, 4324, 7523, 4660, 4126, 13093, 1273, 9985, 4543, 1212, 2]
+// Dependencies: [57, 31, 27, 4122, 1838, 16351, 653, 33, 4130, 689, 7423, 675, 4324, 7658, 4660, 4126, 13145, 1273, 10017, 4543, 1212, 2]
 // Exports: default
 
-// Module 16308 (width)
+// Module 16355 (width)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -85,7 +85,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   let _isNativeReflectConstruct = tmp6[1];
   const tmp8 = callback(ref.useState(closure_18), 2);
   let closure_9 = tmp8[1];
-  const tmp2 = importDefault(8133)();
+  const tmp2 = importDefault(7423)();
   [tmp10, closure_10] = callback(ref.useState(false), 2);
   const effect = ref.useEffect(() => {
     const result = screenReaderEnabled.isScreenReaderEnabled();
@@ -105,7 +105,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
     }
   };
   obj = { style: tmp.sliderContainer };
-  obj = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(7523), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
+  obj = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(7658), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
   let items = [callback2(first, obj), ];
   let obj1 = { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   const tmp12 = callback3;
@@ -243,7 +243,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   obj3.sliderWidth = first1;
   obj3.style = tmp.carousel;
   obj3.scrollEnabled = !tmp10;
-  items1[1] = tmp14(importDefault(13093), obj3);
+  items1[1] = tmp14(importDefault(13145), obj3);
   obj.children = items1;
   return tmp12(tmp13, obj);
 };

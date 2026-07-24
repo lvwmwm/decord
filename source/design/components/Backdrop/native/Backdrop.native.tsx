@@ -1,5 +1,5 @@
 // Module ID: 4531
-// Function ID: 39806
+// Function ID: 39807
 // Name: getBlurAmount
 // Dependencies: [31, 27, 33, 4130, 689, 1212, 3842, 1557, 3974, 3991, 4532, 2]
 // Exports: Backdrop

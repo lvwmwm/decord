@@ -1,10 +1,10 @@
-// Module ID: 7958
-// Function ID: 63482
+// Module ID: 8045
+// Function ID: 63794
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [57, 31, 3782, 6688, 1851, 653, 5464, 6661, 4451, 7374, 3830, 1212, 3989, 2]
+// Dependencies: [57, 31, 3782, 6688, 1851, 653, 5462, 6661, 4451, 7374, 3830, 1212, 3989, 2]
 // Exports: default
 
-// Module 7958 (usePremiumFeatureUpsellGetNitro)
+// Module 8045 (usePremiumFeatureUpsellGetNitro)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -22,7 +22,7 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
   const dependencyMap = arg3;
   const loading = callback(analyticsLocations.useState(false), 2);
   callback = loading[1];
-  analyticsLocations = importDefault(5464)().analyticsLocations;
+  analyticsLocations = importDefault(5462)().analyticsLocations;
   let _isNativeReflectConstruct = analyticsLocations.useRef(0);
   let items = [arg2, analyticsLocations, arg1, arg0, arg3];
   const onPress = analyticsLocations.useCallback(() => {

@@ -1,5 +1,5 @@
 // Module ID: 6296
-// Function ID: 50398
+// Function ID: 50409
 // Name: MicrophoneSpotIllustration
 // Dependencies: [33, 5085, 6297, 2]
 // Exports: MicrophoneSpotIllustration

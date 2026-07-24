@@ -1,17 +1,17 @@
-// Module ID: 14763
-// Function ID: 112624
+// Module ID: 14810
+// Function ID: 112945
 // Name: getWumpTrashSource
-// Dependencies: [31, 27, 33, 7403, 14764, 14765, 3976, 2]
+// Dependencies: [31, 27, 33, 7405, 14811, 14812, 3976, 2]
 // Exports: WumpTrash
 
-// Module 14763 (getWumpTrashSource)
+// Module 14810 (getWumpTrashSource)
 import "result";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function getWumpTrashSource(theme) {
-  let obj = require(7403) /* getIllustrationSource */;
+  let obj = require(7405) /* getIllustrationSource */;
   obj = {
     dark() {
       return outer1_0(outer1_1[4]);

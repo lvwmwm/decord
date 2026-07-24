@@ -1,10 +1,10 @@
-// Module ID: 6995
-// Function ID: 55939
+// Module ID: 6994
+// Function ID: 55948
 // Name: userRecordToServer
-// Dependencies: [6830, 1857, 1849, 653, 44, 6996, 2]
+// Dependencies: [6829, 1857, 1849, 653, 44, 6995, 2]
 // Exports: createBotMessage, default
 
-// Module 6995 (userRecordToServer)
+// Module 6994 (userRecordToServer)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { ReferencedMessageState } from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -33,6 +33,7 @@ export default function createMessage(tts) {
   let flags;
   let giftingPrompt;
   let mediaMention;
+  let mentionGames;
   let messageReference;
   let nonce;
   let poll;
@@ -49,7 +50,7 @@ export default function createMessage(tts) {
   }
   ({ messageReference, allowedMentions, author, nonce, state } = tts);
   const items = [];
-  ({ flags, poll, sharedCustomTheme, changelogId, giftingPrompt, boostingPrompt, mediaMention } = tts);
+  ({ flags, poll, sharedCustomTheme, changelogId, giftingPrompt, boostingPrompt, mediaMention, mentionGames } = tts);
   if (DEFAULT === constants2.REPLY) {
     importDefault(44)(null != messageReference, "Replies must have a message reference");
     if (null == allowedMentions) {
@@ -73,8 +74,8 @@ export default function createMessage(tts) {
   importDefault(44)(null != tmp9, "createMessage: author cannot be undefined");
   const obj = {};
   if (null == nonce) {
-    nonce = require(6996) /* snowflakeSequence */.createNonce();
-    const obj2 = require(6996) /* snowflakeSequence */;
+    nonce = require(6995) /* snowflakeSequence */.createNonce();
+    const obj2 = require(6995) /* snowflakeSequence */;
   }
   obj.id = nonce;
   obj.type = DEFAULT;
@@ -88,6 +89,7 @@ export default function createMessage(tts) {
   obj.mention_channels = [];
   obj.mention_roles = [];
   obj.mention_everyone = false;
+  obj.mention_games = mentionGames;
   obj.timestamp = new Date().toISOString();
   if (null == state) {
     state = constants.SENDING;
@@ -117,8 +119,8 @@ export const createBotMessage = function createBotMessage(arg0) {
   let obj = {};
   ({ channelId, content, loggingName } = arg0);
   if (null == messageId) {
-    messageId = require(6996) /* snowflakeSequence */.createNonce();
-    const obj2 = require(6996) /* snowflakeSequence */;
+    messageId = require(6995) /* snowflakeSequence */.createNonce();
+    const obj2 = require(6995) /* snowflakeSequence */;
   }
   obj.id = messageId;
   obj.type = constants2.DEFAULT;

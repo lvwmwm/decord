@@ -1,10 +1,10 @@
-// Module ID: 8710
-// Function ID: 68939
+// Module ID: 8751
+// Function ID: 69157
 // Name: WishlistButtonBase
-// Dependencies: [5, 57, 31, 27, 1194, 1849, 655, 482, 33, 3991, 4547, 4130, 689, 3842, 5513, 3976, 3849, 3831, 1212, 4131, 4542, 4546, 8711, 8674, 566, 8670, 8702, 8713, 8668, 2]
+// Dependencies: [5, 57, 31, 27, 1194, 1849, 655, 482, 33, 3991, 4547, 4130, 689, 3842, 5511, 3976, 3849, 3831, 1212, 4131, 4542, 4546, 8752, 8715, 566, 8711, 8743, 8754, 8709, 2]
 // Exports: default
 
-// Module 8710 (WishlistButtonBase)
+// Module 8751 (WishlistButtonBase)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _slicedToArray from "_slicedToArray";
 import result from "result";
@@ -46,7 +46,7 @@ class WishlistButtonBase {
     useState = undefined;
     c13 = undefined;
     c14 = undefined;
-    tmp = f68958(size);
+    tmp = f69176(size);
     c6 = tmp;
     tmp2 = require("ICON_SIZE").ICON_SIZE[jsxs[size]];
     obj = require("ManaContext");
@@ -177,7 +177,7 @@ class WishlistButtonBase {
     obj.SUBTLE_SPRING = require("SUBTLE_SPRING").SUBTLE_SPRING;
     J.__closure = obj;
     J.__workletHash = 1357254413161;
-    J.__initData = f68958;
+    J.__initData = f69176;
     animatedStyle = obj4.useAnimatedStyle(J);
     obj6 = require("module_3991");
     class Y {
@@ -207,7 +207,7 @@ class WishlistButtonBase {
     obj1.Extrapolation = require("module_3991").Extrapolation;
     Y.__closure = obj1;
     Y.__workletHash = 15039903885060;
-    Y.__initData = f68958;
+    Y.__initData = f69176;
     animatedStyle1 = obj6.useAnimatedStyle(Y);
     obj8 = require("module_3991");
     class K {
@@ -241,7 +241,7 @@ class WishlistButtonBase {
     obj2.Extrapolation = require("module_3991").Extrapolation;
     K.__closure = obj2;
     K.__workletHash = 12429379889426;
-    K.__initData = f68958;
+    K.__initData = f69176;
     obj3 = {
       style(pressed) {
             pressed = pressed.pressed;
@@ -438,8 +438,8 @@ export default function CollectiblesWishlistButton(selectedProduct) {
   obj.selectedProduct = 0;
   obj.onTrackPress = 0;
   const merged = Object.assign(selectedProduct, obj);
-  obj = require(8713) /* getProductPurchaseState */;
-  require(8668) /* getProductNameAndTypeFromSku */;
+  obj = require(8754) /* getProductPurchaseState */;
+  require(8709) /* getProductNameAndTypeFromSku */;
   if (!obj.useProductPurchaseState(selectedProduct).isPurchased) {
     obj = { skuId: selectedProduct.skuId, product: selectedProduct, disabled: !tmp5, onTrackPress: selectedProduct.onTrackPress };
     const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 7792
-// Function ID: 62167
+// Module ID: 7883
+// Function ID: 62488
 // Name: transformToRowGeneratedComponent
-// Dependencies: [29, 27, 4354, 7793, 7779, 1327, 1881, 4353, 1212, 7794, 7801, 7802, 7804, 7807, 7808, 4347, 4671, 7809, 7641, 4317, 1360, 4358, 7789, 7788, 1443, 1362, 664, 4120, 7824, 478, 3771, 2]
+// Dependencies: [29, 27, 4354, 7884, 7870, 1327, 1881, 4353, 1212, 7885, 7892, 7893, 7895, 7898, 7899, 4347, 4671, 7900, 7730, 4317, 1360, 4358, 7880, 7879, 1443, 1362, 664, 4120, 7913, 478, 3771, 2]
 // Exports: default
 
-// Module 7792 (transformToRowGeneratedComponent)
+// Module 7883 (transformToRowGeneratedComponent)
 import isWindows from "isWindows";
 import { processColor } from "combineAndInjectMentionRule";
 import { CheckpointVersions } from "CheckpointPersonas";
@@ -513,7 +513,7 @@ function transformToRowGeneratedComponent(message, type) {
   }
 }
 function getSelectAccessibilityLabel(type, found, arg2) {
-  let obj = require(7641) /* apexExperiment */;
+  let obj = require(7730) /* apexExperiment */;
   if (obj.shouldSkipAccessibilityLabels()) {
     return require(4353) /* _createForOfIteratorHelperLoose */.getSelectPlaceholder(type);
   } else {
@@ -541,10 +541,10 @@ function getUnfurledMediaItemType(arg0) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp3(7808).MediaGalleryItemType.IMAGE;
+            return tmp3(7899).MediaGalleryItemType.IMAGE;
           } else {
             if (tmp3Result.isVideoContentType(contentType)) {
-              return require(7808) /* MediaGalleryItemType */.MediaGalleryItemType.VIDEO;
+              return require(7899) /* MediaGalleryItemType */.MediaGalleryItemType.VIDEO;
             }
             tmp3Result = tmp3(4317);
           }
@@ -553,7 +553,7 @@ function getUnfurledMediaItemType(arg0) {
       }
     }
   }
-  return require(7808) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
+  return require(7899) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
 }
 function transformUnfurledMediaItem(file, shouldShowMedia) {
   let proxyUrl;
@@ -566,8 +566,8 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
     size.height = 0;
     size.width = 0;
   }
-  if (tmp === require(7808) /* MediaGalleryItemType */.MediaGalleryItemType.IMAGE) {
-    const obj2 = importDefault(7789);
+  if (tmp === require(7899) /* MediaGalleryItemType */.MediaGalleryItemType.IMAGE) {
+    const obj2 = importDefault(7880);
     ({ proxyUrl, width } = size);
     let num3 = 0;
     if (null != width) {
@@ -581,9 +581,9 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
     size.proxyUrl = obj2.getImageSrc(proxyUrl, num3, num4, !shouldShowMedia.shouldAutoPlayGifs);
   }
   const obj = require(1360) /* hasFlag */;
-  size.width = require(7788) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.width);
-  const obj3 = require(7788) /* sanitizeMediaDimension */;
-  size.height = require(7788) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.height);
+  size.width = require(7879) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.width);
+  const obj3 = require(7879) /* sanitizeMediaDimension */;
+  size.height = require(7879) /* sanitizeMediaDimension */.sanitizeMediaDimension(size.height);
   return size;
 }
 function renderMarkdownText(textDisplayComponent, id, content) {
@@ -606,7 +606,7 @@ let result = require("CheckpointPersonas").fileFinishedImporting("modules/messag
 
 export default function transformMessageComponents(message, arr) {
   let obj = { type: "textDisplayComponent" };
-  obj.parserState = obj(7779).getInitialParserStateFromMessage(message.message, closure_7);
+  obj.parserState = obj(7870).getInitialParserStateFromMessage(message.message, closure_7);
   obj = {};
   const merged = Object.assign(message);
   obj["markdownConfigs"] = { textDisplayComponent: obj };

@@ -1,10 +1,10 @@
-// Module ID: 11553
-// Function ID: 89944
+// Module ID: 11582
+// Function ID: 90185
 // Name: getGuildPowerupBannerImage
 // Dependencies: [4122, 566, 2]
 // Exports: default
 
-// Module 11553 (getGuildPowerupBannerImage)
+// Module 11582 (getGuildPowerupBannerImage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 const require = arg1;

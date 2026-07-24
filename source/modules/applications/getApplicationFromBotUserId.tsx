@@ -1,10 +1,10 @@
-// Module ID: 11634
-// Function ID: 90322
+// Module ID: 11661
+// Function ID: 90560
 // Name: useGetApplicationFromBotUserId
-// Dependencies: [6856, 653, 566, 2]
+// Dependencies: [6855, 653, 566, 2]
 // Exports: default
 
-// Module 11634 (useGetApplicationFromBotUserId)
+// Module 11661 (useGetApplicationFromBotUserId)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 

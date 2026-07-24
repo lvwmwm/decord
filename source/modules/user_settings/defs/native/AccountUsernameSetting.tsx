@@ -1,9 +1,9 @@
-// Module ID: 13660
-// Function ID: 104902
+// Module ID: 13711
+// Function ID: 105226
 // Name: route
-// Dependencies: [31, 1849, 7662, 653, 33, 566, 3969, 11016, 4126, 10095, 1212, 13661, 2]
+// Dependencies: [31, 1849, 7751, 653, 33, 566, 3969, 11043, 4126, 10127, 1212, 13712, 2]
 
-// Module 13660 (route)
+// Module 13711 (route)
 import "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ createToggle = {
     return require(566) /* initialize */.useStateFromStores(items, () => outer1_1(outer1_2[6]).getUserTag(outer1_3.getCurrentUser(), { decoration: "never" }));
   },
   useDescription: function useAccountUsernameSettingDescription() {
-    let obj = require(11016) /* useCurrentUserHasAutomodQuarantinedProfile */;
+    let obj = require(11043) /* useCurrentUserHasAutomodQuarantinedProfile */;
     const guildAutomodProfileQuarantineErrors = obj.useGuildAutomodProfileQuarantineErrors();
     let first;
     if (null != guildAutomodProfileQuarantineErrors) {
@@ -42,7 +42,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
   getComponent() {
-    return require(13661) /* UsernameStatusMessage */.default;
+    return require(13712) /* UsernameStatusMessage */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 9534
-// Function ID: 74272
+// Module ID: 9570
+// Function ID: 74481
 // Name: canForwardMessage
 // Dependencies: [1908, 1348, 1838, 3758, 653, 1360, 566, 2]
 // Exports: useCanForwardMessage
 
-// Module 9534 (canForwardMessage)
+// Module 9570 (canForwardMessage)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

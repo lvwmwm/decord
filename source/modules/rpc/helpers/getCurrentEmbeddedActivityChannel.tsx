@@ -1,10 +1,10 @@
-// Module ID: 13395
-// Function ID: 103019
+// Module ID: 13448
+// Function ID: 103346
 // Name: getCurrentEmbeddedActivityChannel
 // Dependencies: [1347, 1348, 2]
 // Exports: default
 
-// Module 13395 (getCurrentEmbeddedActivityChannel)
+// Module 13448 (getCurrentEmbeddedActivityChannel)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

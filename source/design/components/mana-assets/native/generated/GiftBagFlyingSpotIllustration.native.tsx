@@ -1,5 +1,5 @@
 // Module ID: 6188
-// Function ID: 50236
+// Function ID: 50247
 // Name: GiftBagFlyingSpotIllustration
 // Dependencies: [33, 5085, 6189, 2]
 // Exports: GiftBagFlyingSpotIllustration

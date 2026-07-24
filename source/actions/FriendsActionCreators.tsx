@@ -1,9 +1,9 @@
-// Module ID: 16164
-// Function ID: 125370
+// Module ID: 16211
+// Function ID: 125694
 // Name: setSection
-// Dependencies: [653, 686, 1198, 15440, 2]
+// Dependencies: [653, 686, 1198, 15487, 2]
 
-// Module 16164 (setSection)
+// Module 16211 (setSection)
 import { Routes } from "ME";
 
 function setSection(section) {
@@ -30,7 +30,7 @@ export default {
     setSection(PENDING);
     if (flag) {
       obj = { tab_opened: PENDING };
-      importDefault(15440)(obj);
+      importDefault(15487)(obj);
     }
   },
   setSection,

@@ -1,10 +1,10 @@
-// Module ID: 9005
-// Function ID: 70889
+// Module ID: 9044
+// Function ID: 71104
 // Name: EXAMPLE_DOMAIN
 // Dependencies: [2]
 // Exports: getDnsName, getHttpName
 
-// Module 9005 (EXAMPLE_DOMAIN)
+// Module 9044 (EXAMPLE_DOMAIN)
 const result = require("set").fileFinishedImporting("modules/connections/DomainVerifyUtils.tsx");
 
 export const EXAMPLE_DOMAIN = "example.com";

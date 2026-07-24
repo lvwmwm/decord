@@ -1,5 +1,5 @@
 // Module ID: 3418
-// Function ID: 26644
+// Function ID: 26645
 // Name: startOfMinute
 // Dependencies: [3209, 3210]
 // Exports: default

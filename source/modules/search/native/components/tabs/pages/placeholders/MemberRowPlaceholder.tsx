@@ -1,10 +1,10 @@
-// Module ID: 15373
-// Function ID: 117331
+// Module ID: 15420
+// Function ID: 117653
 // Name: MemberRowPlaceholderItem
-// Dependencies: [31, 33, 4130, 15367, 2]
+// Dependencies: [31, 33, 4130, 15414, 2]
 // Exports: default
 
-// Module 15373 (MemberRowPlaceholderItem)
+// Module 15420 (MemberRowPlaceholderItem)
 import "result";
 import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
@@ -14,5 +14,5 @@ const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting(
 
 export default function MemberRowPlaceholderItem() {
   const tmp = callback();
-  return jsx(importDefault(15367), { style: callback().container });
+  return jsx(importDefault(15414), { style: callback().container });
 };

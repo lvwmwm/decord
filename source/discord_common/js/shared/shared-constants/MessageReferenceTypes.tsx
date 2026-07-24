@@ -1,5 +1,5 @@
 // Module ID: 671
-// Function ID: 8275
+// Function ID: 8276
 // Name: MessageReferenceTypes
 // Dependencies: [2]
 

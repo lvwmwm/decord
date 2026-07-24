@@ -1,18 +1,17 @@
 // Module ID: 8109
-// Function ID: 64241
+// Function ID: 64216
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8110, 8095, 8042]
+// Dependencies: [6, 7, 15, 17, 18, 8079, 8102]
 
 // Module 8109 (_isNativeReflectConstruct)
-import jsxProd from "jsxProd";
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import "result";
-import { jsx } from "jsxProd";
-import tmp3 from "_isNativeReflectConstruct";
+import tmp2 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +21,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "RadialGradient";
-tmp3.defaultProps = { cx: "50%", cy: "50%", r: "50%" };
+tmp2.displayName = "FeDiffuseLighting";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
-export default tmp3;
+export default tmp2;

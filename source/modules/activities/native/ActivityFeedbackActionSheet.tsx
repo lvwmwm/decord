@@ -1,10 +1,10 @@
-// Module ID: 16028
-// Function ID: 124082
+// Module ID: 16075
+// Function ID: 124404
 // Name: ActivityFeedbackReasons
-// Dependencies: [31, 4155, 653, 9500, 33, 675, 16029, 9521, 1212, 9503, 3830, 16030, 2]
+// Dependencies: [31, 4155, 653, 9536, 33, 675, 16076, 9557, 1212, 9539, 3830, 16077, 2]
 // Exports: default
 
-// Module 16028 (ActivityFeedbackReasons)
+// Module 16075 (ActivityFeedbackReasons)
 import "result";
 import { ActivityFeedbackReasons } from "items3";
 import { AnalyticEvents } from "ME";
@@ -28,7 +28,7 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
     prop = embeddedActivityConfig.displays_advertisements;
   }
   let obj = {};
-  const tmp2 = importDefault(16029)(true, true === prop);
+  const tmp2 = importDefault(16076)(true, true === prop);
   const intl = activityApplication(1212).intl;
   obj = { applicationName: activityApplication.name };
   obj.headerLabel = intl.formatToPlainString(activityApplication(1212).t.QXYwoD, obj);
@@ -79,5 +79,5 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
       const tmp17 = outer1_1(outer1_2[11]);
     }
   };
-  return jsx(importDefault(9521), { applicationName: activityApplication.name });
+  return jsx(importDefault(9557), { applicationName: activityApplication.name });
 };

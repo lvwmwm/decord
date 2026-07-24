@@ -1,10 +1,10 @@
-// Module ID: 13573
-// Function ID: 104349
+// Module ID: 13624
+// Function ID: 104673
 // Name: HuePicker
-// Dependencies: [57, 31, 27, 33, 4130, 689, 13570, 3991, 5217, 4554, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 13621, 3991, 5217, 4554, 2]
 // Exports: default
 
-// Module 13573 (HuePicker)
+// Module 13624 (HuePicker)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import { View } from "get ActivityIndicator";

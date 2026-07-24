@@ -1,10 +1,10 @@
-// Module ID: 10041
-// Function ID: 77553
+// Module ID: 10073
+// Function ID: 77747
 // Name: GuildDirectoryCreateOrAddHeader
-// Dependencies: [57, 31, 27, 10042, 10040, 33, 4130, 689, 566, 5165, 5515, 10043, 8360, 1212, 4126, 8760, 1557, 4543, 1456, 5122, 10048, 10039, 2]
+// Dependencies: [57, 31, 27, 10074, 10072, 33, 4130, 689, 566, 5165, 5513, 10075, 8404, 1212, 4126, 8799, 1557, 4543, 1456, 5122, 10080, 10071, 2]
 // Exports: default
 
-// Module 10041 (GuildDirectoryCreateOrAddHeader)
+// Module 10073 (GuildDirectoryCreateOrAddHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "result";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -25,7 +25,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   let tabIndex;
   ({ directoryGuildName, tabIndex, setTabIndex } = arg0);
   const tmp = callback3();
-  let obj = require(8360) /* useSegmentedControlState */;
+  let obj = require(8404) /* useSegmentedControlState */;
   obj = { pageWidth: 0, defaultIndex: tabIndex, onSetActiveIndex: setTabIndex };
   const intl = require(1212) /* getSystemLocale */.intl;
   const items = [intl.string(require(1212) /* getSystemLocale */.t.FTe8HS), ];
@@ -42,7 +42,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   const intl4 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl4.string(require(1212) /* getSystemLocale */.t.pYFZ9p);
   items1[1] = callback(require(4126) /* Text */.Text, obj2);
-  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(8760) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
+  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(8799) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
   obj.children = items1;
   return callback2(closure_5, obj);
 }
@@ -93,8 +93,8 @@ let closure_13 = importAllResult.memo((guild) => {
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getDirectoryEntry(directoryChannelId, guild.id));
   obj = { label: guild.name };
   obj = { style: callback3().guildIcon, guild };
-  obj.icon = callback(directoryChannelId(5515), obj);
-  obj.trailing = callback(directoryChannelId(10043), { entry: stateFromStores });
+  obj.icon = callback(directoryChannelId(5513), obj);
+  obj.trailing = callback(directoryChannelId(10075), { entry: stateFromStores });
   obj.start = start;
   obj.end = end;
   return callback(guild(5165).TableRow, obj);
@@ -112,7 +112,7 @@ let closure_14 = importAllResult.memo((guild) => {
     label: guild.name
   };
   obj = { style: callback3().guildIcon, guild };
-  obj.icon = callback(handleItemPress(5515), obj);
+  obj.icon = callback(handleItemPress(5513), obj);
   obj.trailing = callback(guild(5165).TableRow.Arrow, {});
   obj.start = start;
   obj.end = end;

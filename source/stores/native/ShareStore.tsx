@@ -1,9 +1,9 @@
-// Module ID: 13328
-// Function ID: 102289
+// Module ID: 13381
+// Function ID: 102616
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 1838, 1906, 3947, 1849, 653, 1327, 8333, 480, 675, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 1838, 1906, 3947, 1849, 653, 1327, 8377, 480, 675, 566, 686, 2]
 
-// Module 13328 (_isNativeReflectConstruct)
+// Module 13381 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import expandLocation from "expandLocation";
@@ -72,9 +72,9 @@ tmp2 = new tmp2(require("dispatcher"), {
     return false;
   },
   LOGOUT: function handleLogout() {
-    importDefault(8333).setSelectedChannel(null, null);
-    const obj = importDefault(8333);
-    const obj2 = importDefault(8333);
+    importDefault(8377).setSelectedChannel(null, null);
+    const obj = importDefault(8377);
+    const obj2 = importDefault(8377);
     const result = obj2.setAuthenticationToken(null, importDefault(675).getSuperPropertiesBase64());
     let c5 = null;
     return false;
@@ -109,17 +109,17 @@ tmp2 = new tmp2(require("dispatcher"), {
           obj["recipients"] = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
           json1 = JSON.stringify(obj);
         }
-        importDefault(8333).setSelectedChannel(json1, json);
+        importDefault(8377).setSelectedChannel(json1, json);
         c3 = null;
         c4 = null;
-        const obj3 = importDefault(8333);
+        const obj3 = importDefault(8377);
       }
     }
     if (null != c5) {
       obj = { client_app_state: state };
       const result = require(480) /* isThrottled */.extendSuperProperties(obj);
       const obj4 = require(480) /* isThrottled */;
-      const obj6 = importDefault(8333);
+      const obj6 = importDefault(8377);
       const result1 = obj6.setAuthenticationToken(c5, importDefault(675).getSuperPropertiesBase64());
       if (state === AppStates.INACTIVE) {
         c5 = null;

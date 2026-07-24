@@ -1,10 +1,10 @@
-// Module ID: 9752
-// Function ID: 75873
+// Module ID: 9786
+// Function ID: 76085
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [31, 6778, 9753, 33, 8669, 566, 8668, 8672, 1876, 8673, 2]
+// Dependencies: [31, 6778, 9787, 33, 8710, 566, 8709, 8713, 1876, 8714, 2]
 // Exports: default
 
-// Module 9752 (CollectiblesWishlistItemCard)
+// Module 9786 (CollectiblesWishlistItemCard)
 import result from "result";
 import { transformSKUToCollectiblesItem as closure_4 } from "_createForOfIteratorHelperLoose";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

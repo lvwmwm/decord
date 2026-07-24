@@ -1,5 +1,5 @@
 // Module ID: 5219
-// Function ID: 45168
+// Function ID: 45173
 // Name: isStateChangeEvent
 // Dependencies: [27, 5220, 5222, 5223, 5225]
 // Exports: startListening

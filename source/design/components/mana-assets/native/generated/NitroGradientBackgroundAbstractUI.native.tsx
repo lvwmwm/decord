@@ -1,5 +1,5 @@
 // Module ID: 6332
-// Function ID: 50452
+// Function ID: 50463
 // Name: NitroGradientBackgroundAbstractUI
 // Dependencies: [33, 5085, 6333, 2]
 // Exports: NitroGradientBackgroundAbstractUI

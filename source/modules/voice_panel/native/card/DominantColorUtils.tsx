@@ -1,10 +1,10 @@
-// Module ID: 8213
-// Function ID: 64928
+// Module ID: 8257
+// Function ID: 65156
 // Name: getCachedSourceFromURI
 // Dependencies: [57, 31, 27, 1362, 3974, 689, 620, 2]
 // Exports: useDominantColorFromImage
 
-// Module 8213 (getCachedSourceFromURI)
+// Module 8257 (getCachedSourceFromURI)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import get_ActivityIndicator from "get ActivityIndicator";

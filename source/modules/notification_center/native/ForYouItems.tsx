@@ -1,9 +1,9 @@
-// Module ID: 15145
-// Function ID: 115378
+// Module ID: 15192
+// Function ID: 115700
 // Name: ForYouFooter
-// Dependencies: [5, 57, 31, 27, 4122, 4167, 1348, 1838, 1849, 15139, 653, 5593, 33, 4130, 4126, 689, 4562, 15144, 1212, 1360, 7729, 7003, 9854, 9636, 7586, 566, 7779, 1273, 11661, 15146, 1456, 4111, 12857, 6883, 675, 7915, 15147, 9497, 3831, 9520, 1934, 4098, 15149, 4089, 15141, 5497, 15150, 15151, 21, 4660, 15152, 6884, 12148, 1457, 3803, 3808, 15162, 15163, 15164, 15165, 15166, 15172, 787, 15173, 15174, 1327, 15143, 7879, 15175, 2]
+// Dependencies: [5, 57, 31, 27, 4122, 4167, 1348, 1838, 1849, 15186, 653, 5591, 33, 4130, 4126, 689, 4562, 15191, 1212, 1360, 7818, 7002, 9886, 9672, 7675, 566, 7870, 1273, 11688, 15193, 1456, 4111, 12909, 6882, 675, 8002, 15194, 9533, 3831, 9556, 1934, 4098, 15196, 4089, 15188, 5495, 15197, 15198, 21, 4660, 15199, 6883, 12175, 1457, 3803, 3808, 15209, 15210, 15211, 15212, 15213, 15219, 787, 15220, 15221, 1327, 15190, 7527, 15222, 2]
 
-// Module 15145 (ForYouFooter)
+// Module 15192 (ForYouFooter)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader";
 import importAllResult from "parseQuery";
@@ -36,17 +36,17 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15144) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15191) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
 function getMessagePreviewIcon(iconType) {
   if (constants2.ATTACHMENT === iconType) {
-    return importDefault(9854);
+    return importDefault(9886);
   } else if (constants2.STICKER === iconType) {
-    return importDefault(9636);
+    return importDefault(9672);
   } else if (constants2.VOICE_MESSAGE === iconType) {
-    return importDefault(7586);
+    return importDefault(7675);
   } else {
     return null;
   }
@@ -140,10 +140,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp25 = guild_id(7729)(first);
+    const tmp25 = guild_id(7818)(first);
     let result = stringResult;
     if (null != tmp25) {
-      let obj3 = item(7003);
+      let obj3 = item(7002);
       result = obj3.formatPollResultNotificationCenterText(tmp25);
     }
   } else if (stickers.length > 0) {
@@ -258,7 +258,7 @@ function ForYouMessagePreviewV2(item) {
     id = message10.author.id;
   }
   obj3.authorId = id;
-  const items5 = [item(7779).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj3, {}), ];
+  const items5 = [item(7870).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj3, {}), ];
   let tmp38 = null != iconType;
   if (tmp38) {
     const obj4 = { style: tmp.messagePreviewIconV2Container };
@@ -281,7 +281,7 @@ function ApplicationName(applicationId) {
     let tmp5 = callback(closure_7, {});
   } else {
     obj = { application: stateFromStores, textVariant: applicationId.textVariant, iconSize: 16 };
-    tmp5 = callback(importDefault(11661), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11688), obj, stateFromStores.id);
   }
   return tmp5;
 }

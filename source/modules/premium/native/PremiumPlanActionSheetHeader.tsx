@@ -1,7 +1,7 @@
 // Module ID: 6670
-// Function ID: 51410
+// Function ID: 51432
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [31, 27, 1851, 6671, 33, 4130, 6672, 6673, 3776, 4554, 668, 5085, 6674, 6675, 6676, 6677, 7115, 7116, 7117, 2]
+// Dependencies: [31, 27, 1851, 6671, 33, 4130, 6672, 6673, 3776, 4554, 668, 5085, 6674, 6675, 6676, 6677, 7114, 7115, 7116, 2]
 // Exports: default
 
 // Module 6670 (PremiumPlanActionSheetHeader)
@@ -104,11 +104,11 @@ export default function PremiumPlanActionSheetHeader(premiumType) {
   const tmp20 = importDefault(5085);
   const tmp38 = callback;
   if (closure_4.TIER_0 === premiumType) {
-    let tmp42 = importDefault(7115);
+    let tmp42 = importDefault(7114);
   } else if (closure_4.TIER_1 === premiumType) {
-    tmp42 = importDefault(7116);
+    tmp42 = importDefault(7115);
   } else if (closure_4.TIER_2 === premiumType) {
-    tmp42 = importDefault(7117);
+    tmp42 = importDefault(7116);
   }
   obj5.source = tmp42;
   const items2 = [tmp.imgWumpus, ];

@@ -1,10 +1,10 @@
-// Module ID: 15033
-// Function ID: 114514
+// Module ID: 15080
+// Function ID: 114835
 // Name: GuildRolesAndChannelsRow
-// Dependencies: [31, 27, 6764, 4142, 10260, 5055, 4326, 33, 4130, 689, 5730, 3946, 1334, 624, 6760, 4337, 9970, 1934, 11424, 11390, 1212, 12852, 2]
+// Dependencies: [31, 27, 6764, 4142, 10289, 5055, 4326, 33, 4130, 689, 5730, 3946, 1334, 624, 6760, 4337, 10002, 1934, 11452, 11418, 1212, 12904, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 15033 (GuildRolesAndChannelsRow)
+// Module 15080 (GuildRolesAndChannelsRow)
 import result from "result";
 import { View } from "get ActivityIndicator";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -42,14 +42,14 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
     obj = { guildId: id };
     obj.pushLazy(guild(outer1_2[17])(outer1_2[16], outer1_2.paths), obj, outer1_7);
   }, items2);
-  let SELECTED = guild(11424).ChannelModes.DEFAULT;
+  let SELECTED = guild(11452).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = guild(11424).ChannelModes.SELECTED;
+    SELECTED = guild(11452).ChannelModes.SELECTED;
   }
   let tmp10 = null;
   if (tmp9) {
-    obj = { style: tmp.channelInfoContainer, children: jsx(guild(11390).NewBadge, {}) };
-    tmp10 = <View style={tmp.channelInfoContainer}>{jsx(guild(11390).NewBadge, {})}</View>;
+    obj = { style: tmp.channelInfoContainer, children: jsx(guild(11418).NewBadge, {}) };
+    tmp10 = <View style={tmp.channelInfoContainer}>{jsx(guild(11418).NewBadge, {})}</View>;
   }
   obj = { onPress: callback, style: tmp.container, accessible: true };
   const intl = guild(1212).intl;
@@ -74,9 +74,9 @@ export const GuildRolesAndChannelsRow = function GuildRolesAndChannelsRow(guild)
   }
   obj1.name = string2Result;
   obj1.mode = SELECTED;
-  obj.name = jsx(guild(11424).BaseChannelName, {});
-  obj2 = { mode: SELECTED, IconComponent: guild(12852).ChannelListMagnifyingGlassIcon };
-  obj.icon = jsx(guild(11424).BaseChannelIcon, { mode: SELECTED, IconComponent: guild(12852).ChannelListMagnifyingGlassIcon });
+  obj.name = jsx(guild(11452).BaseChannelName, {});
+  obj2 = { mode: SELECTED, IconComponent: guild(12904).ChannelListMagnifyingGlassIcon };
+  obj.icon = jsx(guild(11452).BaseChannelIcon, { mode: SELECTED, IconComponent: guild(12904).ChannelListMagnifyingGlassIcon });
   obj.channelInfo = tmp10;
-  return jsx(id(11424), { onPress: callback, style: tmp.container, accessible: true });
+  return jsx(id(11452), { onPress: callback, style: tmp.container, accessible: true });
 };

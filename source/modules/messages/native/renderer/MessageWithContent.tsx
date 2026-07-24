@@ -1,10 +1,10 @@
-// Module ID: 7626
-// Function ID: 61077
+// Module ID: 7715
+// Function ID: 61363
 // Name: generateMessageRowData
-// Dependencies: [7627, 7622, 7628, 1212, 7789, 2]
+// Dependencies: [7716, 7711, 7717, 1212, 7880, 2]
 // Exports: generateMessageRowData
 
-// Module 7626 (generateMessageRowData)
+// Module 7715 (generateMessageRowData)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { RowType } from "Changeset";
 
@@ -39,7 +39,7 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     tmp3 = alwaysShowAddReaction;
   }
   let overrideBackgroundHighlight = canShowImages.overrideBackgroundHighlight;
-  obj = { type: RowType.MESSAGE, message: importDefault(7628)(obj), canAddNewReactions };
+  obj = { type: RowType.MESSAGE, message: importDefault(7717)(obj), canAddNewReactions };
   obj = { options, message, roleStyle, isFirst, isEditing, canShowImages: undefined === canShowImages || canShowImages, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed: canShowImages.showContentInventoryEntryFallbackEmbed };
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.addNewReactionAccessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lfIHs4);
@@ -53,15 +53,15 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   obj.alwaysShowAddReaction = tmp3;
   if (null == overrideBackgroundHighlight) {
     obj = { message, theme, isEditing, isAutomodBlockedMessage: null != message.getMessage(message.id) };
-    overrideBackgroundHighlight = importDefault(7789).createBackgroundHighlight(obj);
-    const obj3 = importDefault(7789);
+    overrideBackgroundHighlight = importDefault(7880).createBackgroundHighlight(obj);
+    const obj3 = importDefault(7880);
   }
   obj.backgroundHighlight = overrideBackgroundHighlight;
   let canReply = options.enableSwipeActions;
   if (canReply) {
     canReply = canShowImages.canReply;
   }
-  obj.swipeActions = importDefault(7789).createSwipeActions(canReply, options.enableSwipeActions && canShowImages.canEdit);
+  obj.swipeActions = importDefault(7880).createSwipeActions(canReply, options.enableSwipeActions && canShowImages.canEdit);
   const intl3 = require(1212) /* getSystemLocale */.intl;
   obj.replyAccessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t["5IEsGx"]);
   const intl4 = require(1212) /* getSystemLocale */.intl;

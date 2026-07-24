@@ -1,10 +1,10 @@
-// Module ID: 8914
-// Function ID: 70337
+// Module ID: 8953
+// Function ID: 70552
 // Name: SecureFramesCopyIcon
-// Dependencies: [31, 33, 3830, 5492, 7771, 4078, 1212, 2]
+// Dependencies: [31, 33, 3830, 5490, 7533, 4078, 1212, 2]
 // Exports: default
 
-// Module 8914 (SecureFramesCopyIcon)
+// Module 8953 (SecureFramesCopyIcon)
 import result from "result";
 import { jsx } from "jsxProd";
 

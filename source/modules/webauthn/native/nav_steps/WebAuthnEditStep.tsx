@@ -1,10 +1,10 @@
-// Module ID: 13640
-// Function ID: 104768
+// Module ID: 13691
+// Function ID: 105092
 // Name: EditCredentialModal
-// Dependencies: [57, 31, 33, 4130, 689, 1456, 5087, 7495, 1212, 1273, 4543, 5594, 3831, 9670, 4091, 2]
+// Dependencies: [57, 31, 33, 4130, 689, 1456, 5087, 7636, 1212, 1273, 4543, 5592, 3831, 9704, 4091, 2]
 // Exports: default
 
-// Module 13640 (EditCredentialModal)
+// Module 13691 (EditCredentialModal)
 import _slicedToArray from "_slicedToArray";
 import result from "result";
 import jsxProd from "jsxProd";
@@ -54,19 +54,19 @@ export default function EditCredentialModal(credential) {
   obj.showBorder = true;
   obj.required = true;
   obj.large = true;
-  const items1 = [callback(credential(7495).FormInput, obj), callback(credential(7495).FormDivider, {}), ];
+  const items1 = [callback(credential(7636).FormInput, obj), callback(credential(7636).FormDivider, {}), ];
   const obj1 = {
     onPress() {
       dependencyMap(true);
       callback(null);
-      const result = credential(5594).editWebAuthnCredential(credential.id, first1);
-      let obj = credential(5594);
+      const result = credential(5592).editWebAuthnCredential(credential.id, first1);
+      let obj = credential(5592);
       const nextPromise = result.then(() => {
         let obj = navigation(3831);
         obj = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY" };
         const intl = credential(1212).intl;
         obj.content = intl.string(credential(1212).t.IV13mH);
-        obj.icon = navigation(9670);
+        obj.icon = navigation(9704);
         obj.IconComponent = credential(4091).CircleCheckIcon;
         obj.iconColor = "status-positive";
         obj.open(obj);
@@ -77,7 +77,7 @@ export default function EditCredentialModal(credential) {
         obj = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY" };
         const intl = credential(1212).intl;
         obj.content = intl.string(credential(1212).t.IV13mH);
-        obj.icon = navigation(9670);
+        obj.icon = navigation(9704);
         obj.IconComponent = credential(4091).CircleCheckIcon;
         obj.iconColor = "status-positive";
         obj.open(obj);
@@ -101,5 +101,5 @@ export default function EditCredentialModal(credential) {
   obj1.grow = true;
   items1[2] = callback(credential(4543).Button, obj1);
   obj.children = items1;
-  return closure_6(credential(7495).Form, obj);
+  return closure_6(credential(7636).Form, obj);
 };

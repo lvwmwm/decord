@@ -1,9 +1,9 @@
-// Module ID: 13753
-// Function ID: 105477
+// Module ID: 13804
+// Function ID: 105801
 // Name: radio
-// Dependencies: [7662, 3803, 12113, 13754, 4098, 13755, 1934, 1212, 1282, 10095, 2]
+// Dependencies: [7751, 3803, 12139, 13805, 4098, 13806, 1934, 1212, 1282, 10127, 2]
 
-// Module 13753 (radio)
+// Module 13804 (radio)
 import createToggle from "createToggle";
 
 const radio = createToggle.createRadio({
@@ -22,16 +22,16 @@ const radio = createToggle.createRadio({
     const setting = ProfileVisibility.getSetting();
     const ProfileVisibility2 = require(3803) /* explicitContentFromProto */.ProfileVisibility;
     ProfileVisibility2.updateSetting(NumberResult);
-    let obj = require(12113) /* apexExperiment */;
+    let obj = require(12139) /* apexExperiment */;
     if (obj.getIsInPrivateProfilesExperiment("ProfilePrivacySetting")) {
-      const profileToActivityUpsell = require(13754) /* getPermissiveness */.computeProfileToActivityUpsell(setting, NumberResult);
+      const profileToActivityUpsell = require(13805) /* getPermissiveness */.computeProfileToActivityUpsell(setting, NumberResult);
       if (null != profileToActivityUpsell) {
         obj = {};
         ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds, settingName: obj4.settingName, mappedActivityValue: obj4.mappedActivityValue } = profileToActivityUpsell);
-        importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13755, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
+        importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13806, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
         const obj3 = importDefault(4098);
       }
-      const obj2 = require(13754) /* getPermissiveness */;
+      const obj2 = require(13805) /* getPermissiveness */;
     }
   },
   useOptions() {
@@ -59,7 +59,7 @@ const radio = createToggle.createRadio({
     return items;
   },
   usePredicate() {
-    return require(12113) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
+    return require(12139) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
   }
 });
 let obj = {
@@ -78,16 +78,16 @@ let obj = {
     const setting = ProfileVisibility.getSetting();
     const ProfileVisibility2 = require(3803) /* explicitContentFromProto */.ProfileVisibility;
     ProfileVisibility2.updateSetting(NumberResult);
-    let obj = require(12113) /* apexExperiment */;
+    let obj = require(12139) /* apexExperiment */;
     if (obj.getIsInPrivateProfilesExperiment("ProfilePrivacySetting")) {
-      const profileToActivityUpsell = require(13754) /* getPermissiveness */.computeProfileToActivityUpsell(setting, NumberResult);
+      const profileToActivityUpsell = require(13805) /* getPermissiveness */.computeProfileToActivityUpsell(setting, NumberResult);
       if (null != profileToActivityUpsell) {
         obj = {};
         ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds, settingName: obj4.settingName, mappedActivityValue: obj4.mappedActivityValue } = profileToActivityUpsell);
-        importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13755, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
+        importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13806, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
         const obj3 = importDefault(4098);
       }
-      const obj2 = require(13754) /* getPermissiveness */;
+      const obj2 = require(13805) /* getPermissiveness */;
     }
   },
   useOptions() {
@@ -115,7 +115,7 @@ let obj = {
     return items;
   },
   usePredicate() {
-    return require(12113) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
+    return require(12139) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
   }
 };
 const result = require("apexExperiment").fileFinishedImporting("modules/user_settings/defs/native/ProfilePrivacySetting.tsx");

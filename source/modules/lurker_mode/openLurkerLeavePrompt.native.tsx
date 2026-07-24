@@ -1,7 +1,7 @@
 // Module ID: 5699
-// Function ID: 49074
+// Function ID: 49084
 // Name: LurkerLeavePromptModal
-// Dependencies: [31, 27, 1348, 1838, 3759, 653, 33, 4472, 5515, 4130, 5700, 4475, 1212, 5701, 1273, 5713, 1282, 5715, 5048, 2]
+// Dependencies: [31, 27, 1348, 1838, 3759, 653, 33, 4472, 5513, 4130, 5700, 4475, 1212, 5701, 1273, 5713, 1282, 5715, 5048, 2]
 // Exports: openLurkerLeavePrompt
 
 // Module 5699 (LurkerLeavePromptModal)
@@ -33,10 +33,10 @@ function LurkerLeavePromptModal(guild) {
   obj.content = intl.string(guild(1212).t.I1yHxc);
   obj = { style: tmp.headerRoot };
   obj = { style: tmp.iconWrapper };
-  const obj1 = { guild, size: guild(5515).GuildIconSizes.XLARGE, value: guild.name };
-  const items1 = [callback(importDefault(5515), obj1), ];
+  const obj1 = { guild, size: guild(5513).GuildIconSizes.XLARGE, value: guild.name };
+  const items1 = [callback(importDefault(5513), obj1), ];
   const obj2 = { guild };
-  const tmp3 = importDefault(5515);
+  const tmp3 = importDefault(5513);
   obj2.size = guild(1273).Icon.Sizes.LARGE;
   obj2.style = closure_4.flatten(tmp.badgeOverlay);
   items1[1] = callback(importDefault(5701), obj2);

@@ -1,10 +1,10 @@
-// Module ID: 8507
-// Function ID: 67888
+// Module ID: 8552
+// Function ID: 68118
 // Name: useUserProfileGradientColors
-// Dependencies: [31, 4122, 566, 3842, 5486, 7893, 2]
+// Dependencies: [31, 4122, 566, 3842, 5484, 7980, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 8507 (useUserProfileGradientColors)
+// Module 8552 (useUserProfileGradientColors)
 import result from "result";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -19,7 +19,7 @@ export const useUserProfileGradientColors = function useUserProfileGradientColor
   const stateFromStores = _require(566).useStateFromStores(items, () => overlay.syncProfileThemeWithUserTheme);
   let obj = _require(566);
   let obj2 = _require(3842);
-  const profileThemeValues = _require(5486).useProfileThemeValues(obj2.useThemeContext().theme);
+  const profileThemeValues = _require(5484).useProfileThemeValues(obj2.useThemeContext().theme);
   if (stateFromStores) {
     let prop;
     if (!tmp3) {

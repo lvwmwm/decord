@@ -1,10 +1,10 @@
-// Module ID: 7604
-// Function ID: 60891
+// Module ID: 7693
+// Function ID: 61177
 // Name: getReportMenu
-// Dependencies: [5, 31, 4129, 653, 7483, 507, 7603, 7488, 686, 44, 7601, 4324, 2]
+// Dependencies: [5, 31, 4129, 653, 7563, 507, 7692, 7568, 686, 44, 7690, 4324, 2]
 // Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
 
-// Module 7604 (getReportMenu)
+// Module 7693 (getReportMenu)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import result from "result";
 import closure_5 from "_isNativeReflectConstruct";
@@ -129,30 +129,30 @@ async function _submitReportSecondLook(arg0, arg1) {
 }
 function getUnauthenticatedReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(require(7601) /* ReportNames */.UnauthenticatedReportNames);
+  const values = Object.values(require(7690) /* ReportNames */.UnauthenticatedReportNames);
   const hasItem = values.includes(name);
   importDefault(44)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(require(7601) /* ReportNames */.ReportNames);
+  const values = Object.values(require(7690) /* ReportNames */.ReportNames);
   const hasItem = values.includes(name);
   importDefault(44)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getModeratorReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(require(7601) /* ReportNames */.ModeratorReportNames);
+  const values = Object.values(require(7690) /* ReportNames */.ModeratorReportNames);
   const hasItem = values.includes(name);
   importDefault(44)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getModeratorReportEndpointSafely(name) {
-  const REPORT_TO_MOD = require(7603) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
+  const REPORT_TO_MOD = require(7692) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
   const hasItem = REPORT_TO_MOD.has(name.name);
   importDefault(44)(hasItem, "Invalid report type " + name.name);
-  if (name.name === require(7601) /* ReportNames */.ModeratorReportNames.MESSAGE) {
+  if (name.name === require(7690) /* ReportNames */.ModeratorReportNames.MESSAGE) {
     return closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id);
   } else {
     const _Error = Error;
@@ -207,11 +207,11 @@ function genSubmitData(language, name, arr, arg3) {
     })));
     return obj;
   }, {});
-  if (name.name !== require(7601) /* ReportNames */.ReportNames.MESSAGE) {
-    if (name.name !== require(7601) /* ReportNames */.ReportNames.FIRST_DM) {
-      if (name.name !== require(7601) /* ReportNames */.ReportNames.GUILD) {
-        if (name.name !== require(7601) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
-          if (name.name === require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
+  if (name.name !== require(7690) /* ReportNames */.ReportNames.MESSAGE) {
+    if (name.name !== require(7690) /* ReportNames */.ReportNames.FIRST_DM) {
+      if (name.name !== require(7690) /* ReportNames */.ReportNames.GUILD) {
+        if (name.name !== require(7690) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
+          if (name.name === require(7690) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
             obj = {};
             ({ guildId, channelId } = name.record);
             let merged = Object.assign(obj);
@@ -220,7 +220,7 @@ function genSubmitData(language, name, arr, arg3) {
             obj["channel_id"] = channelId;
             obj["guild_id"] = guildId;
             return obj;
-          } else if (name.name === require(7601) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
+          } else if (name.name === require(7690) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
             const obj1 = {};
             ({ id: id2, guild_id: guild_id2, channel_id } = name.record);
             let merged2 = Object.assign(obj);
@@ -230,7 +230,7 @@ function genSubmitData(language, name, arr, arg3) {
             obj1["guild_id"] = guild_id2;
             obj1["stage_instance_id"] = id2;
             return obj1;
-          } else if (name.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
+          } else if (name.name === require(7690) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
             const obj2 = {};
             ({ id, guild_id } = name.record);
             const merged4 = Object.assign(obj);
@@ -240,7 +240,7 @@ function genSubmitData(language, name, arr, arg3) {
             obj2["guild_scheduled_event_id"] = id;
             return obj2;
           } else {
-            if (name.name === require(7601) /* ReportNames */.ReportNames.USER) {
+            if (name.name === require(7690) /* ReportNames */.ReportNames.USER) {
               const obj3 = {};
               const merged6 = Object.assign(obj);
               const merged7 = Object.assign(obj);
@@ -248,7 +248,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj3["user_id"] = name.record.id;
               obj3["guild_id"] = name.contextualGuildId;
               let tmp3 = obj3;
-            } else if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.USER) {
+            } else if (name.name === require(7690) /* ReportNames */.UnauthenticatedReportNames.USER) {
               const obj4 = {};
               const merged8 = Object.assign(obj);
               const merged9 = Object.assign(obj);
@@ -257,7 +257,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj4["guild_id"] = name.contextualGuildId;
               obj4["email_token"] = arg3;
               tmp3 = obj4;
-            } else if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.MESSAGE) {
+            } else if (name.name === require(7690) /* ReportNames */.UnauthenticatedReportNames.MESSAGE) {
               const obj5 = {};
               const merged10 = Object.assign(obj);
               const merged11 = Object.assign(obj);
@@ -265,7 +265,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj5["message_id"] = name.record.id;
               obj5["email_token"] = arg3;
               tmp3 = obj5;
-            } else if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.GUILD) {
+            } else if (name.name === require(7690) /* ReportNames */.UnauthenticatedReportNames.GUILD) {
               const obj6 = {};
               const merged12 = Object.assign(obj);
               const merged13 = Object.assign(obj);
@@ -273,7 +273,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj6["guild_id"] = name.record.id;
               obj6["email_token"] = arg3;
               tmp3 = obj6;
-            } else if (name.name === require(7601) /* ReportNames */.ReportNames.APPLICATION) {
+            } else if (name.name === require(7690) /* ReportNames */.ReportNames.APPLICATION) {
               const obj7 = {};
               const merged14 = Object.assign(obj);
               const merged15 = Object.assign(obj);
@@ -283,7 +283,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj7["channel_id"] = name.contextualChannelId;
               obj7["entrypoint"] = name.entrypoint;
               tmp3 = obj7;
-            } else if (name.name === require(7601) /* ReportNames */.ReportNames.WIDGET) {
+            } else if (name.name === require(7690) /* ReportNames */.ReportNames.WIDGET) {
               const obj8 = {};
               const merged16 = Object.assign(obj);
               const merged17 = Object.assign(obj);
@@ -293,7 +293,7 @@ function genSubmitData(language, name, arr, arg3) {
               tmp3 = obj8;
             } else {
               tmp3 = null;
-              if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
+              if (name.name === require(7690) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
                 const obj9 = {};
                 const merged18 = Object.assign(obj);
                 const merged19 = Object.assign(obj);
@@ -340,7 +340,7 @@ export const submitReport = function submitReport(language, name, arr) {
   if (store.get("iar_skip_api_report_submit")) {
     let resolved = Promise.resolve();
   } else {
-    const REPORT_TO_MOD = require(7603) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
+    const REPORT_TO_MOD = require(7692) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
     if (REPORT_TO_MOD.has(name.name)) {
       resolved = (function submitModeratorReport(language, name, arr) {
         const tmp = (function genModeratorSubmitdata(language, name, arr) {
@@ -467,37 +467,37 @@ export { getModeratorReportEndpointSafely };
 export const trackCloseReportModalAnalytics = function trackCloseReportModalAnalytics(closure_0, c12, first) {
   let obj = importDefault(4324);
   obj = { report_type: closure_0.name, report_id: first, navigation_history: c12 };
-  if (closure_0.name === require(7601) /* ReportNames */.ReportNames.MESSAGE) {
+  if (closure_0.name === require(7690) /* ReportNames */.ReportNames.MESSAGE) {
     let id = closure_0.record.id;
   }
   obj.message_id = id;
   id = undefined;
-  if (closure_0.name === require(7601) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
+  if (closure_0.name === require(7690) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
     id = closure_0.record.id;
   }
   obj.stage_instance_id = id;
   let id1;
-  if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
+  if (closure_0.name === require(7690) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
     id1 = closure_0.record.id;
   }
   obj.guild_scheduled_event_id = id1;
-  if (closure_0.name !== require(7601) /* ReportNames */.ReportNames.GUILD) {
-    if (closure_0.name !== require(7601) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
-      if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
+  if (closure_0.name !== require(7690) /* ReportNames */.ReportNames.GUILD) {
+    if (closure_0.name !== require(7690) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
+      if (closure_0.name === require(7690) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
         let id2 = closure_0.record.guildId;
-      } else if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
+      } else if (closure_0.name === require(7690) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
         id2 = closure_0.record.guild_id;
       }
     }
     obj.guild_id = id2;
-    if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
+    if (closure_0.name === require(7690) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
       let channelId = closure_0.record.channel_id;
-    } else if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
+    } else if (closure_0.name === require(7690) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
       channelId = closure_0.record.channelId;
     }
     obj.channel_id = channelId;
     id2 = undefined;
-    if (closure_0.name === require(7601) /* ReportNames */.ReportNames.APPLICATION) {
+    if (closure_0.name === require(7690) /* ReportNames */.ReportNames.APPLICATION) {
       id2 = closure_0.record.id;
     }
     obj.application_id = id2;

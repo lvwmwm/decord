@@ -1,7 +1,7 @@
 // Module ID: 7185
-// Function ID: 57873
+// Function ID: 57902
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [31, 5621, 482, 566, 5624, 5618, 2]
+// Dependencies: [31, 5619, 482, 566, 5622, 5616, 2]
 // Exports: useDiscountedPremiumProductInfo
 
 // Module 7185 (useDiscountedPremiumProductInfo)

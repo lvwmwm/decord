@@ -1,9 +1,9 @@
-// Module ID: 15718
-// Function ID: 121228
+// Module ID: 15765
+// Function ID: 121550
 // Name: BaseLeaveActivityButton
-// Dependencies: [31, 10226, 33, 4543, 10655, 1212, 10525, 2]
+// Dependencies: [31, 10256, 33, 4543, 10684, 1212, 10554, 2]
 
-// Module 15718 (BaseLeaveActivityButton)
+// Module 15765 (BaseLeaveActivityButton)
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { jsx } from "jsxProd";
 import importAllResult from "result";

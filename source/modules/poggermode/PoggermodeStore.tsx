@@ -1,9 +1,9 @@
-// Module ID: 7073
-// Function ID: 56529
+// Module ID: 7072
+// Function ID: 56538
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1194, 1906, 6920, 6921, 653, 3754, 4015, 7074, 1207, 566, 686, 2]
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1906, 6919, 6920, 653, 3754, 4015, 7073, 1207, 566, 686, 2]
 
-// Module 7073 (_isNativeReflectConstruct)
+// Module 7072 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_3 from "_isNativeReflectConstruct";
 import dispatcher from "dispatcher";
@@ -299,13 +299,13 @@ tmp6 = new tmp6(require("dispatcher"), {
             if (null != mentions) {
               if (null != mentions.find((id) => id.id === id)) {
                 if (null != value) {
-                  const comboShakeIntensity = id(7074).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
+                  const comboShakeIntensity = id(7073).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
                   let num3 = 0.001;
                   if (null != comboShakeIntensity) {
                     num3 = comboShakeIntensity;
                   }
                   let result = num3;
-                  const obj2 = id(7074);
+                  const obj2 = id(7073);
                 } else {
                   const _Math = Math;
                   result = 4 * Math.random();

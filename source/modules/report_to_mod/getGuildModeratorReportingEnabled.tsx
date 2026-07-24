@@ -1,5 +1,5 @@
 // Module ID: 5647
-// Function ID: 48280
+// Function ID: 48290
 // Name: getGuildModeratorReportingEnabled
 // Dependencies: [2]
 // Exports: default

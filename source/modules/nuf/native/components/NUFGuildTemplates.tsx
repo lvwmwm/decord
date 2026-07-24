@@ -1,10 +1,10 @@
-// Module ID: 11735
-// Function ID: 91096
+// Module ID: 11762
+// Function ID: 91334
 // Name: onCreateGuild
-// Dependencies: [5, 31, 27, 3951, 653, 11736, 9227, 33, 5048, 11507, 10886, 11737, 11779, 675, 480, 5087, 11712, 1198, 11739, 11741, 10063, 1212, 11749, 11750, 11780, 11761, 5519, 2]
+// Dependencies: [5, 31, 27, 3951, 653, 11763, 9263, 33, 5048, 11537, 10913, 11764, 11806, 675, 480, 5087, 11739, 1198, 11766, 11768, 10095, 1212, 11776, 11777, 11807, 11788, 5517, 2]
 // Exports: default
 
-// Module 11735 (onCreateGuild)
+// Module 11762 (onCreateGuild)
 import GuildTemplateId from "GuildTemplateId";
 import result from "result";
 import { Keyboard } from "set";
@@ -205,5 +205,5 @@ export default function NUFGuildTemplates() {
   const intl = require(1212) /* getSystemLocale */.intl;
   obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
   obj.initialRouteName = constants.GUILD_TEMPLATES;
-  return jsx(require(5519) /* NavigationStack */.Navigator, { screens: React.useMemo(() => outer1_19(), []), onWillFocus: Keyboard.dismiss });
+  return jsx(require(5517) /* NavigationStack */.Navigator, { screens: React.useMemo(() => outer1_19(), []), onWillFocus: Keyboard.dismiss });
 };

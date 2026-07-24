@@ -1,5 +1,5 @@
 // Module ID: 1554
-// Function ID: 17594
+// Function ID: 17595
 // Name: getConstants
 // Dependencies: [27, 477, 649, 2]
 // Exports: getBuildNumberLabel, getConstants
@@ -26,10 +26,10 @@ export const getConstants = function getConstants() {
 };
 export const getBuildNumberLabel = function getBuildNumberLabel() {
   const items = ["0", "123456", "1234567890"];
-  let str = "6057";
-  if (items.includes("6057")) {
+  let str = "6065";
+  if (items.includes("6065")) {
     const _HermesInternal = HermesInternal;
-    str = "dev (" + "6057" + ")";
+    str = "dev (" + "6065" + ")";
   }
   return str;
 };

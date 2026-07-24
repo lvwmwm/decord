@@ -1,10 +1,10 @@
-// Module ID: 9466
-// Function ID: 73752
+// Module ID: 9502
+// Function ID: 73961
 // Name: items
 // Dependencies: [3776, 1865, 1867, 6788, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 9466 (items)
+// Module 9502 (items)
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", CREPE: "CREPE", INELIGIBLE: "INELIGIBLE" };
 obj = { NITRO: "nitro", CREPE: "crepe" };
 const items = [, ];

@@ -1,10 +1,10 @@
-// Module ID: 8736
-// Function ID: 69105
+// Module ID: 8775
+// Function ID: 69320
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
-// Dependencies: [6785, 6773, 4098, 8737, 1934, 2]
+// Dependencies: [6785, 6773, 4098, 8776, 1934, 2]
 // Exports: openProductDetailsActionSheet
 
-// Module 8736 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
+// Module 8775 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
 const result = require("showActionSheet").fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
 
 export const PRODUCT_DETAILS_ACTION_SHEET_KEY = "Shop Product Preview";
@@ -35,5 +35,5 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   require(6773) /* _createForOfIteratorHelperLoose */.productDetailsOpened(skuId);
   const obj2 = require(6773) /* _createForOfIteratorHelperLoose */;
   obj = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(8737, dependencyMap.paths), "Shop Product Preview", obj, stack);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(8776, dependencyMap.paths), "Shop Product Preview", obj, stack);
 };

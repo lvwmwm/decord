@@ -1,5 +1,5 @@
 // Module ID: 842
-// Function ID: 9360
+// Function ID: 9361
 // Name: withActiveSpan
 // Dependencies: [57, 77, 825, 832, 821, 843, 796, 817, 802, 818, 812, 811, 806, 808, 800, 801, 831, 833, 837, 797, 844, 813, 836, 816]
 // Exports: continueTrace, startInactiveSpan, startSpan, startSpanManual, suppressTracing
